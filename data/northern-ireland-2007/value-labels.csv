@@ -1,0 +1,1214 @@
+source_column,source_value,value_label
+status,1,participant
+status,2,non participant
+status,3,no show
+status,4,control group
+religall,1,catholic
+religall,2,protestant
+religall,3,muslim
+religall,4,jewish
+religall,5,other
+religall,6,dont know
+religall,7,no answer
+cathlc,0,no
+cathlc,1,yes
+protstnt,0,no
+protstnt,1,yes
+time1,1,time 1 questionnaire
+time1,10,control group questionnaire
+t1q1,1,yes
+t1q1,2,no
+t1q1,3,no answer
+t1q2,-1,no answer
+t1q3,1,male
+t1q3,2,female
+t1q3,3,no answer
+t1q4,1,single (never married)
+t1q4,2,married
+t1q4,3,living as married
+t1q4,4,separated
+t1q4,5,divorced
+t1q4,6,widowed
+t1q4,7,no answer
+t1q5,1,working full-time
+t1q5,2,working part-time
+t1q5,3,not working (seeking work)
+t1q5,4,on a government training scheme
+t1q5,5,retired
+t1q5,6,in full-time education
+t1q5,7,looking after the home
+t1q5,8,permanently sick or disabled
+t1q5,9,not working (and not seeking work)
+t1q5,10,caring for an elderly or disabled person full-time
+t1q5,11,other answers
+t1q5,12,no answer
+t1q6,1,working full-time
+t1q6,2,working part-time
+t1q6,3,not working (seeking work)
+t1q6,4,on a government training scheme
+t1q6,5,retired
+t1q6,6,in full-time education
+t1q6,7,looking after the home
+t1q6,8,permanently sick or disabled
+t1q6,9,not working (and not seeking work)
+t1q6,10,caring for an elderly or disabled person full-time
+t1q6,11,other answers
+t1q6,12,no answer
+t1q7a,1,age
+t1q7a,2,still at school/college
+t1q7a,3,no answer
+t1q7b,-1,no answer
+t1q7b,0,not applicable
+t1q8,1,degree level or higer
+t1q8,2,"btec (higher), bec (higher), tec (higher), hnc, hnd"
+t1q8,3,gce 'a' level including nvq level 3)
+t1q8,4,"btec (national), tec (national), onc, ond"
+t1q8,5,"gcse (including nvq level 2), gce 'o' level (including cse g"
+t1q8,6,cse (other than grade 1)
+t1q8,7,no formal qualification
+t1q8,8,other answers
+t1q8,9,no answer
+t1q10a,0,not
+t1q10a,1,child 1
+t1q10a_1,1,male
+t1q10a_1,2,female
+t1q10a_1,3,no answer
+t1q10b_1,-1,no answer
+t1q10c_1,1,yes
+t1q10c_1,2,no
+t1q10c_1,3,no answer
+t1q10d_1,1,yes
+t1q10d_1,2,no
+t1q10d_1,3,no answer
+t1q10e_1,1,yes
+t1q10e_1,2,no
+t1q10e_1,3,no answer
+t1q10f_1,1,maintained (catholic)
+t1q10f_1,2,controlled (state)
+t1q10f_1,3,integrated
+t1q10f_1,4,special
+t1q10f_1,5,irish-medium
+t1q10f_1,6,no answer/refused
+t1q10f_1,7,private
+t1q10g_1,1,yes
+t1q10g_1,2,no
+t1q10g_1,3,no answer
+t1q10h_1,1,controlled (state) secondary
+t1q10h_1,2,maintained (catholic) secondary
+t1q10h_1,3,controlled (state) grammar
+t1q10h_1,4,(voluntary) catholic grammar
+t1q10h_1,5,integrated
+t1q10h_1,6,irish-medium
+t1q10h_1,7,special
+t1q10h_1,8,fermanagh college
+t1q10h_1,9,no answer
+t1q10i_1,1,all boys/ all girls
+t1q10i_1,2,mixed boys and girls
+t1q10i_1,3,no answer
+t1q10b,0,not
+t1q10b,1,child 2
+t1q10a_2,1,male
+t1q10a_2,2,female
+t1q10a_2,3,no answer
+t1q10b_2,-1,no answer
+t1q10c_2,1,yes
+t1q10c_2,2,no
+t1q10c_2,3,no answer
+t1q10d_2,1,yes
+t1q10d_2,2,no
+t1q10d_2,3,no answer
+t1q10e_2,1,yes
+t1q10e_2,2,no
+t1q10e_2,3,no answer
+t1q10f_2,1,maintained (catholic)
+t1q10f_2,2,controlled (state)
+t1q10f_2,3,integrated
+t1q10f_2,4,special
+t1q10f_2,5,irish-medium
+t1q10f_2,6,no answer/refused
+t1q10f_2,7,private
+t1q10g_2,1,yes
+t1q10g_2,2,no
+t1q10g_2,3,no answer
+t1q10h_2,1,controlled (state) secondary
+t1q10h_2,2,maintained (catholic) secondary
+t1q10h_2,3,controlled (state) grammar
+t1q10h_2,4,(voluntary) catholic grammar
+t1q10h_2,5,integrated
+t1q10h_2,6,irish-medium
+t1q10h_2,7,special
+t1q10h_2,8,fermanagh college
+t1q10h_2,9,no answer
+t1q10i_2,1,all boys/ all girls
+t1q10i_2,2,mixed boys and girls
+t1q10i_2,3,no answer
+t1q10c,0,not
+t1q10c,1,child 3
+t1q10a_3,1,male
+t1q10a_3,2,female
+t1q10a_3,3,no answer
+t1q10b_3,-1,no answer
+t1q10c_3,1,yes
+t1q10c_3,2,no
+t1q10c_3,3,no answer
+t1q10d_3,1,yes
+t1q10d_3,2,no
+t1q10d_3,3,no answer
+t1q10e_3,1,yes
+t1q10e_3,2,no
+t1q10e_3,3,no answer
+t1q10f_3,1,maintained (catholic)
+t1q10f_3,2,controlled (state)
+t1q10f_3,3,integrated
+t1q10f_3,4,special
+t1q10f_3,5,irish-medium
+t1q10f_3,6,no answer
+t1q10g_3,1,yes
+t1q10g_3,2,no
+t1q10g_3,3,no answer
+t1q10h_3,1,controlled (state) secondary
+t1q10h_3,2,maintained (catholic) secondary
+t1q10h_3,3,controlled (state) grammar
+t1q10h_3,4,(voluntary) catholic grammar
+t1q10h_3,5,integrated
+t1q10h_3,6,irish-medium
+t1q10h_3,7,special
+t1q10h_3,8,fermanagh college
+t1q10h_3,9,no answer
+t1q10i_3,1,all boys/ all girls
+t1q10i_3,2,mixed boys and girls
+t1q10i_3,3,no answer
+t1q10d,0,not
+t1q10d,1,child 4
+t1q10a_4,1,male
+t1q10a_4,2,female
+t1q10a_4,3,no answer
+t1q10b_4,-1,no answer
+t1q10c_4,1,yes
+t1q10c_4,2,no
+t1q10c_4,3,no answer
+t1q10d_4,1,yes
+t1q10d_4,2,no
+t1q10d_4,3,no answer
+t1q10e_4,1,yes
+t1q10e_4,2,no
+t1q10e_4,3,no answer
+t1q10f_4,1,maintained (catholic)
+t1q10f_4,2,controlled (state)
+t1q10f_4,3,integrated
+t1q10f_4,4,special
+t1q10f_4,5,irish-medium
+t1q10f_4,6,no answer
+t1q10g_4,1,yes
+t1q10g_4,2,no
+t1q10g_4,3,no answer
+t1q10h_4,1,controlled (state) secondary
+t1q10h_4,2,maintained (catholic) secondary
+t1q10h_4,3,controlled (state) grammar
+t1q10h_4,4,(voluntary) catholic grammar
+t1q10h_4,5,integrated
+t1q10h_4,6,irish-medium
+t1q10h_4,7,special
+t1q10h_4,8,fermanagh college
+t1q10h_4,9,no answer
+t1q10i_4,1,all boys/ all girls
+t1q10i_4,2,mixed boys and girls
+t1q10i_4,3,no answer
+t1q10e,0,not
+t1q10e,1,child 5
+t1q10a_5,1,male
+t1q10a_5,2,female
+t1q10a_5,3,no answer
+t1q10b_5,-1,no answer
+t1q10c_5,1,yes
+t1q10c_5,2,no
+t1q10c_5,3,no answer
+t1q10d_5,1,yes
+t1q10d_5,2,no
+t1q10d_5,3,no answer
+t1q10e_5,1,yes
+t1q10e_5,2,no
+t1q10e_5,3,no answer
+t1q10f_5,1,maintained (catholic)
+t1q10f_5,2,controlled (state)
+t1q10f_5,3,integrated
+t1q10f_5,4,special
+t1q10f_5,5,irish-medium
+t1q10f_5,6,no answer
+t1q10g_5,1,yes
+t1q10g_5,2,no
+t1q10g_5,3,no answer
+t1q10h_5,1,controlled (state) secondary
+t1q10h_5,2,maintained (catholic) secondary
+t1q10h_5,3,controlled (state) grammar
+t1q10h_5,4,(voluntary) catholic grammar
+t1q10h_5,5,integrated
+t1q10h_5,6,irish-medium
+t1q10h_5,7,special
+t1q10h_5,8,fermanagh college
+t1q10h_5,9,no answer
+t1q10i_5,1,all boys/ all girls
+t1q10i_5,2,mixed boys and girls
+t1q10i_5,3,no answer
+t1q10f,0,not
+t1q10f,1,child 6
+t1q10a_6,1,male
+t1q10a_6,2,female
+t1q10a_6,3,no answer
+t1q10b_6,-1,no answer
+t1q10c_6,1,yes
+t1q10c_6,2,no
+t1q10c_6,3,no answer
+t1q10d_6,1,yes
+t1q10d_6,2,no
+t1q10d_6,3,no answer
+t1q10e_6,1,yes
+t1q10e_6,2,no
+t1q10e_6,3,no answer
+t1q10f_6,1,maintained (catholic)
+t1q10f_6,2,controlled (state)
+t1q10f_6,3,integrated
+t1q10f_6,4,special
+t1q10f_6,5,irish-medium
+t1q10f_6,6,no answer
+t1q10g_6,1,yes
+t1q10g_6,2,no
+t1q10g_6,3,no answer
+t1q10h_6,1,controlled (state) secondary
+t1q10h_6,2,maintained (catholic) secondary
+t1q10h_6,3,controlled (state) grammar
+t1q10h_6,4,(voluntary) catholic grammar
+t1q10h_6,5,integrated
+t1q10h_6,6,irish-medium
+t1q10h_6,7,special
+t1q10h_6,8,fermanagh college
+t1q10h_6,9,no answer
+t1q10i_6,1,all boys/ all girls
+t1q10i_6,2,mixed boys and girls
+t1q10i_6,3,no answer
+t1q11a,-1,no answer
+t1q11a,0,strongly oppose
+t1q11a,5,neither support nor oppose
+t1q11a,10,strongly support
+t1q11a,99,dont know
+t1q11b,-1,no answer
+t1q11b,0,strongly oppose
+t1q11b,5,neither support nor oppose
+t1q11b,10,strongly support
+t1q11b,99,dont know
+t1q11c,-1,no answer
+t1q11c,0,strongly oppose
+t1q11c,5,neither support nor oppose
+t1q11c,10,strongly support
+t1q11c,99,dont know
+t1q11d,-1,no answer
+t1q11d,0,strongly oppose
+t1q11d,5,neither support nor oppose
+t1q11d,10,strongly support
+t1q11d,99,dont know
+t1q11e,-1,no answer
+t1q11e,0,strongly oppose
+t1q11e,5,neither support nor oppose
+t1q11e,10,strongly support
+t1q11e,99,dont know
+t1q11f,-1,no answer
+t1q11f,0,strongly oppose
+t1q11f,5,neither support nor oppose
+t1q11f,10,strongly support
+t1q11f,99,dont know
+t1q11g,-1,no answer
+t1q11g,0,strongly oppose
+t1q11g,5,neither support nor oppose
+t1q11g,10,strongly support
+t1q11g,99,dont know
+t1q12a,-1,no answer
+t1q12a,0,attend schools only with other children of their own religio
+t1q12a,5,exactly in-between
+t1q12a,10,attend schools with balanced enrolment of protestant and cat
+t1q12a,99,dont know
+t1q12b,-1,no answer
+t1q12b,0,attend schools only with other children of their own religio
+t1q12b,5,exactly in-between
+t1q12b,10,attend schools with balanced enrolment of protestant and cat
+t1q12b,99,dont know
+t1q12c,-1,no answer
+t1q12c,0,attend schools only with other children of their own religio
+t1q12c,5,exactly in-between
+t1q12c,10,attend schools with balanced enrolment of protestant and cat
+t1q12c,99,dont know
+t1q13a,-1,no answer
+t1q13a,0,changes can equally benefit both communities
+t1q13a,5,exactly in-between
+t1q13a,10,changes can only benefit one community at the others expense
+t1q13a,99,dont know
+t1q13b,-1,no answer
+t1q13b,0,changes can equally benefit both communities
+t1q13b,5,exactly in-between
+t1q13b,10,changes can only benefit one community at the others expense
+t1q13b,99,dont know
+t1q13c,-1,no answer
+t1q13c,0,changes can equally benefit both communities
+t1q13c,5,exactly in-between
+t1q13c,10,changes can only benefit one community at the others expense
+t1q13c,99,dont know
+t1q14a,1,strongly disagree
+t1q14a,2,tend to disagree
+t1q14a,3,neither agree nor disagree
+t1q14a,4,tend to agree
+t1q14a,5,strongly agree
+t1q14a,6,6
+t1q14a,7,7
+t1q14a,8,8
+t1q14a,9,don't know
+t1q14a,10,no answer
+t1q14b,1,strongly disagree
+t1q14b,2,tend to disagree
+t1q14b,3,neither agree nor disagree
+t1q14b,4,tend to agree
+t1q14b,5,strongly agree
+t1q14b,6,6
+t1q14b,7,7
+t1q14b,8,8
+t1q14b,9,don't know
+t1q14b,10,no answer
+t1q14c,1,strongly disagree
+t1q14c,2,tend to disagree
+t1q14c,3,neither agree nor disagree
+t1q14c,4,tend to agree
+t1q14c,5,strongly agree
+t1q14c,6,6
+t1q14c,7,7
+t1q14c,8,8
+t1q14c,9,don't know
+t1q14c,10,no answer
+t1q15a,-1,no answer
+t1q15a,0,strongly oppose
+t1q15a,5,neither support nor oppose
+t1q15a,10,strongly support
+t1q15a,99,dont know
+t1q15b,-1,no answer
+t1q15b,0,strongly oppose
+t1q15b,5,neither support nor oppose
+t1q15b,10,strongly support
+t1q15b,99,dont know
+t1q15c,-1,no answer
+t1q15c,0,strongly oppose
+t1q15c,5,neither support nor oppose
+t1q15c,10,strongly support
+t1q15c,99,dont know
+t1q15d,-1,no answer
+t1q15d,0,strongly oppose
+t1q15d,5,neither support nor oppose
+t1q15d,10,strongly support
+t1q15d,99,dont know
+t1q15e,-1,no answer
+t1q15e,0,strongly oppose
+t1q15e,5,neither support nor oppose
+t1q15e,10,strongly support
+t1q15e,99,dont know
+t1q15f,-1,no answer
+t1q15f,0,strongly oppose
+t1q15f,5,neither support nor oppose
+t1q15f,10,strongly support
+t1q15f,99,dont know
+t1q15g,-1,no answer
+t1q15g,0,strongly oppose
+t1q15g,5,neither support nor oppose
+t1q15g,10,strongly support
+t1q15g,99,dont know
+t1q16a,-1,no answer
+t1q16a,0,unfavourably
+t1q16a,5,neither favourably nor unfavourably
+t1q16a,10,favourably
+t1q16a,99,dont know
+t1q16b,-1,no answer
+t1q16b,0,unfavourably
+t1q16b,5,neither favourably nor unfavourably
+t1q16b,10,favourably
+t1q16b,99,dont know
+t1q17a,-1,no answer
+t1q17a,0,more mixing of the two communities
+t1q17a,5,exactly in-between
+t1q17a,10,more separation
+t1q17a,99,dont know
+t1q17b,-1,no answer
+t1q17b,0,more mixing of the two communities
+t1q17b,5,exactly in-between
+t1q17b,10,more separation
+t1q17b,99,dont know
+t1q17c,-1,no answer
+t1q17c,0,more mixing of the two communities
+t1q17c,5,exactly in-between
+t1q17c,10,more separation
+t1q17c,99,dont know
+t1q18a,-1,no answer
+t1q18a,0,not open to reason
+t1q18a,5,exactly in-between
+t1q18a,10,open to reason
+t1q18a,99,dont know
+t1q18b,-1,no answer
+t1q18b,0,not open to reason
+t1q18b,5,exactly in-between
+t1q18b,10,open to reason
+t1q18b,99,dont know
+t1q19a,-1,no answer
+t1q19a,0,untrustworthy
+t1q19a,5,exactly in-between
+t1q19a,10,trustworthy
+t1q19a,99,dont know
+t1q19b,-1,no answer
+t1q19b,0,untrustworthy
+t1q19b,5,exactly in-between
+t1q19b,10,trustworthy
+t1q19b,99,dont know
+t1q20a,1,strongly disagree
+t1q20a,2,tend to disagree
+t1q20a,3,neither agree nor disagree
+t1q20a,4,tend to agree
+t1q20a,5,strongly agree
+t1q20a,6,6
+t1q20a,7,7
+t1q20a,8,8
+t1q20a,9,don't know
+t1q20a,10,no answer
+t1q20b,1,strongly disagree
+t1q20b,2,tend to disagree
+t1q20b,3,neither agree nor disagree
+t1q20b,4,tend to agree
+t1q20b,5,strongly agree
+t1q20b,6,6
+t1q20b,7,7
+t1q20b,8,8
+t1q20b,9,don't know
+t1q20b,10,no answer
+t1q21,1,more than 50%
+t1q21,2,40-50%
+t1q21,3,20-30%
+t1q21,4,5-10%
+t1q21,5,less than 1%
+t1q21,6,6
+t1q21,7,7
+t1q21,8,8
+t1q21,9,don't know
+t1q21,10,no answer
+t1q21ans,1,correct
+t1q21ans,2,incorrect
+t1q22,1,increased by 20%
+t1q22,2,increased by 10%
+t1q22,3,stayed about the same
+t1q22,4,decreased by 10%
+t1q22,5,decreased by 20%
+t1q22,6,6
+t1q22,7,7
+t1q22,8,8
+t1q22,9,don't know
+t1q22,10,no answer
+t1q22ans,1,correct
+t1q22ans,2,incorrect
+t1q23,1,every school provides all 14-year-olds with a choice of at l
+t1q23,2,every child has the right to attend any school his or her pa
+t1q23,3,every child be provided a free school meal every school day
+t1q23,4,every child receives free textbooks
+t1q23,5,5
+t1q23,6,6
+t1q23,7,7
+t1q23,8,8
+t1q23,9,don't know
+t1q23,10,no answer
+t1q23ans,1,correct
+t1q23ans,2,incorrect
+t1q24,1,every child receives tuition in the language of his or her p
+t1q24,2,every child receives free transportation to and from school
+t1q24,3,every denominational group has the right to run its own scho
+t1q24,4,one-third of all the subjects offered must be applied
+t1q24,5,5
+t1q24,6,6
+t1q24,7,7
+t1q24,8,8
+t1q24,9,don't know
+t1q24,10,no answer
+t1q24ans,1,correct
+t1q24ans,2,incorrect
+t1q25,1,about one-quarter go directly into employment
+t1q25,2,about one-quarter leave school to be unemployed
+t1q25,3,about three-quarters of grammar school pupils attend univers
+t1q25,4,about three-quarters of secondary school students attend fur
+t1q25,5,5
+t1q25,6,6
+t1q25,7,7
+t1q25,8,8
+t1q25,9,don't know
+t1q25,10,no answer
+t1q25ans,1,correct
+t1q25ans,2,incorrect
+t1q26,1,schools receive more funding for older pupils
+t1q26,2,"schools receive the same funding for all pupils, regardless"
+t1q26,3,schools receive more funding for younger pupils
+t1q26,4,4
+t1q26,5,5
+t1q26,6,6
+t1q26,7,7
+t1q26,8,8
+t1q26,9,don't know
+t1q26,10,no answer
+t1q26ans,1,correct
+t1q26ans,2,incorrect
+t1q27,1,the official employer for all teachers is the education and
+t1q27,2,the official employer for all teachers is the department of
+t1q27,3,the official employer for all teachers in catholic schools i
+t1q27,4,the official employer for all teachers in voluntary grammar
+t1q27,5,5
+t1q27,6,6
+t1q27,7,7
+t1q27,8,8
+t1q27,9,don't know
+t1q27,10,no answer
+t1q27ans,1,correct
+t1q27ans,2,incorrect
+t1q28,-1,no answer
+t1q28,0,be religious
+t1q28,5,exactly in-between
+t1q28,10,just try to lead good lives
+t1q28,99,dont know
+t1q29,-1,no answer
+t1q29,0,pursue economic growth regardless
+t1q29,5,exactly in-between
+t1q29,10,treat communities equally regardless
+t1q29,99,dont know
+t1q30,1,yes
+t1q30,2,no
+t1q30,3,refused/na
+t1q30,4,no answer
+t1q31,1,catholic
+t1q31,2,protestant
+t1q31,3,muslim
+t1q31,4,jewish
+t1q31,5,other
+t1q31,6,don't know
+t1q31,7,no answer
+t1q32,1,catholic
+t1q32,2,protestant
+t1q32,3,muslim
+t1q32,4,jewish
+t1q32,5,other
+t1q32,6,don't know
+t1q32,7,no answer
+religion,1,catholic
+religion,2,protestant
+religion,3,muslim
+religion,4,jewish
+religion,5,other
+religion,6,dont know
+religion,7,no answer
+t1q33,1,more than once a week
+t1q33,2,once a week
+t1q33,3,once a month
+t1q33,4,a few times a year
+t1q33,5,hardly ever
+t1q33,6,never
+t1q33,7,7
+t1q33,8,8
+t1q33,9,refused/na
+t1q33,10,no answer
+t1q34,1,unionist
+t1q34,2,nationalist
+t1q34,3,neither
+t1q34,4,other
+t1q34,5,5
+t1q34,6,6
+t1q34,7,7
+t1q34,8,8
+t1q34,9,don't know/ refused/ na
+t1q34,10,no answer
+t1qa,1,yes
+t1qa,2,no
+t1qa,3,maybe
+t1qa,4,no answer
+attend,1,participant
+attend,2,non participant
+attend,3,no show
+time2,2,time 2 questionnaire
+t2q1a,-1,no answer
+t2q1a,0,strongly oppose
+t2q1a,5,neither support nor oppose
+t2q1a,10,strongly support
+t2q1a,99,dont know
+t2q1b,-1,no answer
+t2q1b,0,strongly oppose
+t2q1b,5,neither support nor oppose
+t2q1b,10,strongly support
+t2q1b,99,dont know
+t2q1c,-1,no answer
+t2q1c,0,strongly oppose
+t2q1c,5,neither support nor oppose
+t2q1c,10,strongly support
+t2q1c,99,dont know
+t2q1d,-1,no answer
+t2q1d,0,strongly oppose
+t2q1d,5,neither support nor oppose
+t2q1d,10,strongly support
+t2q1d,99,dont know
+t2q1e,-1,no answer
+t2q1e,0,strongly oppose
+t2q1e,5,neither support nor oppose
+t2q1e,10,strongly support
+t2q1e,99,dont know
+t2q1f,-1,no answer
+t2q1f,0,strongly oppose
+t2q1f,5,neither support nor oppose
+t2q1f,10,strongly support
+t2q1f,99,dont know
+t2q1g,-1,no answer
+t2q1g,0,strongly oppose
+t2q1g,5,neither support nor oppose
+t2q1g,10,strongly support
+t2q1g,99,dont know
+t2q2a,-1,no answer
+t2q2a,0,attend schools only with other children of their own religio
+t2q2a,5,exactly in-between
+t2q2a,10,attend schools with balanced enrolment of protestant and cat
+t2q2a,99,dont know
+t2q2are,-1,no answer
+t2q2are,0,attend schools only with other children of their own religio
+t2q2are,0,exactly in-between
+t2q2are,1,attend schools with balanced enrolment of protestant and cat
+t2q2are,99,dont know
+t2q2b,-1,no answer
+t2q2b,0,attend schools only with other children of their own religio
+t2q2b,5,exactly in-between
+t2q2b,10,attend schools with balanced enrolment of protestant and cat
+t2q2b,99,dont know
+t2q2c,-1,no answer
+t2q2c,0,attend schools only with other children of their own religio
+t2q2c,5,exactly in-between
+t2q2c,10,attend schools with balanced enrolment of protestant and cat
+t2q2c,99,dont know
+t2q3a,-1,no answer
+t2q3a,0,changes can equally benefit both communities
+t2q3a,5,exactly in-between
+t2q3a,10,changes can only benefit one community at the others expense
+t2q3a,99,dont know
+t2q3are,-1,no answer
+t2q3are,0,changes can only benefit one community at the others expense
+t2q3are,0,exactly in-between
+t2q3are,1,changes can equally benefit both communities
+t2q3are,99,dont know
+t2q3b,-1,no answer
+t2q3b,0,changes can equally benefit both communities
+t2q3b,5,exactly in-between
+t2q3b,10,changes can only benefit one community at the others expense
+t2q3b,99,dont know
+t2q3c,-1,no answer
+t2q3c,0,changes can equally benefit both communities
+t2q3c,5,exactly in-between
+t2q3c,10,changes can only benefit one community at the others expense
+t2q3c,99,dont know
+t2q4a,1,strongly disagree
+t2q4a,2,tend to disagree
+t2q4a,3,neither agree nor disagree
+t2q4a,4,tend to agree
+t2q4a,5,strongly agree
+t2q4a,9,dont know
+t2q4a,10,no answer
+t2q4are,0,strongly disagree
+t2q4are,0,tend to disagree
+t2q4are,0,neither agree nor disagree
+t2q4are,0,tend to agree
+t2q4are,1,strongly agree
+t2q4are,9,dont know
+t2q4are,10,no answer
+t2q4b,1,strongly disagree
+t2q4b,2,tend to disagree
+t2q4b,3,neither agree nor disagree
+t2q4b,4,tend to agree
+t2q4b,5,strongly agree
+t2q4b,9,dont know
+t2q4b,10,no answer
+t2q4bre,0,strongly disagree
+t2q4bre,0,tend to disagree
+t2q4bre,0,neither agree nor disagree
+t2q4bre,0,tend to agree
+t2q4bre,1,strongly agree
+t2q4bre,9,dont know
+t2q4bre,10,no answer
+t2q4c,1,strongly disagree
+t2q4c,2,tend to disagree
+t2q4c,3,neither agree nor disagree
+t2q4c,4,tend to agree
+t2q4c,5,strongly agree
+t2q4c,9,dont know
+t2q4c,10,no answer
+t2q4cre,0,strongly disagree
+t2q4cre,0,tend to disagree
+t2q4cre,0,neither agree nor disagree
+t2q4cre,0,tend to agree
+t2q4cre,1,strongly agree
+t2q4cre,9,dont know
+t2q4cre,10,no answer
+t2q5a,-1,no answer
+t2q5a,0,strongly oppose
+t2q5a,5,neither support nor oppose
+t2q5a,10,strongly support
+t2q5a,99,dont know
+t2q5b,-1,no answer
+t2q5b,0,strongly oppose
+t2q5b,5,neither support nor oppose
+t2q5b,10,strongly support
+t2q5b,99,dont know
+t2q5c,-1,no answer
+t2q5c,0,strongly oppose
+t2q5c,5,neither support nor oppose
+t2q5c,10,strongly support
+t2q5c,99,dont know
+t2q5d,-1,no answer
+t2q5d,0,strongly oppose
+t2q5d,5,neither support nor oppose
+t2q5d,10,strongly support
+t2q5d,99,dont know
+t2q5e,-1,no answer
+t2q5e,0,strongly oppose
+t2q5e,5,neither support nor oppose
+t2q5e,10,strongly support
+t2q5e,99,dont know
+t2q5f,-1,no answer
+t2q5f,0,strongly oppose
+t2q5f,5,neither support nor oppose
+t2q5f,10,strongly support
+t2q5f,99,dont know
+t2q5g,-1,no answer
+t2q5g,0,strongly oppose
+t2q5g,5,neither support nor oppose
+t2q5g,10,strongly support
+t2q5g,99,dont know
+t2q6a,-1,no answer
+t2q6a,0,unfavourably
+t2q6a,5,exactly in-between
+t2q6a,10,favourably
+t2q6a,99,dont know
+t2q6are,-1,no answer
+t2q6are,0,unfavourably
+t2q6are,0,exactly in-between
+t2q6are,1,favourably
+t2q6are,99,dont know
+t2q6b,-1,no answer
+t2q6b,0,unfavourably
+t2q6b,5,exactly in-between
+t2q6b,10,favourably
+t2q6b,99,dont know
+t2q6bre,-1,no answer
+t2q6bre,0,unfavourably
+t2q6bre,0,exactly in-between
+t2q6bre,1,favourably
+t2q6bre,99,dont know
+t2q7a,-1,no answer
+t2q7a,0,more mixing of the two communities
+t2q7a,5,exactly in-between
+t2q7a,10,more separation
+t2q7a,99,dont know
+t2q7are,-1,no answer
+t2q7are,0,more separation
+t2q7are,0,exactly in-between
+t2q7are,1,more mixing of the two communities
+t2q7are,99,dont know
+t2q7b,-1,no answer
+t2q7b,0,more mixing of the two communities
+t2q7b,5,exactly in-between
+t2q7b,10,more separation
+t2q7b,99,dont know
+t2q7c,-1,no answer
+t2q7c,0,more mixing of the two communities
+t2q7c,5,exactly in-between
+t2q7c,10,more separation
+t2q7c,99,dont know
+t2q8a,-1,no answer
+t2q8a,0,not open to reason
+t2q8a,5,exactly in-between
+t2q8a,10,open to reason
+t2q8a,99,dont know
+t2q8are,-1,no answer
+t2q8are,0,not open to reason
+t2q8are,0,exactly in-between
+t2q8are,1,open to reason
+t2q8are,99,dont know
+t2q8b,-1,no answer
+t2q8b,0,not open to reason
+t2q8b,5,exactly in-between
+t2q8b,10,open to reason
+t2q8b,99,dont know
+t2q8bre,-1,no answer
+t2q8bre,0,not open to reason
+t2q8bre,0,exactly in-between
+t2q8bre,1,open to reason
+t2q8bre,99,dont know
+t2q9a,-1,no answer
+t2q9a,0,untrustworthy
+t2q9a,5,exactly in-between
+t2q9a,10,trustworthy
+t2q9a,99,dont know
+t2q9are,-1,no answer
+t2q9are,0,untrustworthy
+t2q9are,0,exactly in-between
+t2q9are,1,trustworthy
+t2q9are,99,dont know
+t2q9b,-1,no answer
+t2q9b,0,untrustworthy
+t2q9b,5,exactly in-between
+t2q9b,10,trustworthy
+t2q9b,99,dont know
+t2q9bre,-1,no answer
+t2q9bre,0,untrustworthy
+t2q9bre,0,exactly in-between
+t2q9bre,1,trustworthy
+t2q9bre,99,dont know
+t2q10a,1,strongly disagree
+t2q10a,2,tend to disagree
+t2q10a,3,neither agree nor disagree
+t2q10a,4,tend to agree
+t2q10a,5,strongly agree
+t2q10a,9,dont know
+t2q10a,10,no answer
+t2q10are,0,strongly disagree
+t2q10are,0,tend to disagree
+t2q10are,0,neither agree nor disagree
+t2q10are,0,tend to agree
+t2q10are,1,strongly agree
+t2q10are,9,dont know
+t2q10are,10,no answer
+t2q10b,1,strongly disagree
+t2q10b,2,tend to disagree
+t2q10b,3,neither agree nor disagree
+t2q10b,4,tend to agree
+t2q10b,5,strongly agree
+t2q10b,9,dont know
+t2q10b,10,no answer
+t2q10bre,0,strongly disagree
+t2q10bre,0,tend to disagree
+t2q10bre,0,neither agree nor disagree
+t2q10bre,0,tend to agree
+t2q10bre,1,strongly agree
+t2q10bre,9,dont know
+t2q10bre,10,no answer
+t2q11,1,40 - 50%
+t2q11,2,20 - 30%
+t2q11,3,5 - 10%
+t2q11,4,less than 1%
+t2q11,9,dont know
+t2q11,10,no answer
+t2q11ans,1,correct
+t2q11ans,2,incorrect
+t2q12,1,increased by 20%
+t2q12,2,increased by 10%
+t2q12,3,stayed about the same
+t2q12,4,decrease by 10%
+t2q12,5,decrease by 20%
+t2q12,9,dont know
+t2q12,10,no answer
+t2q12ans,1,correct
+t2q12ans,2,incorrect
+t2q13,1,every school provides all 14-year-olds with a choice of at l
+t2q13,2,every child has the right to attend any school his or her pa
+t2q13,3,every child be provided a free school meal every school day
+t2q13,4,every child receives free textbooks
+t2q13,9,dont know
+t2q13,10,no answer
+t2q13ans,1,correct
+t2q13ans,2,incorrect
+t2q14,1,every child receives tuition in the language of his or her p
+t2q14,2,every child receives free transportation to and from school
+t2q14,3,every denominational group has the right to run its own scho
+t2q14,4,one-third of all the subjects offered must be applied
+t2q14,9,dont know
+t2q14,10,no answer
+t2q14ans,1,correct
+t2q14ans,2,incorrect
+t2q15,1,about one-quarter go directly into employment
+t2q15,2,about one-quarter leave school to be unemployed
+t2q15,3,about three-quarters of grammar school pupils attend univers
+t2q15,4,about three-quarters of secondary school students attend fur
+t2q15,9,dont know
+t2q15,10,no answer
+t2q15ans,1,correct
+t2q15ans,2,incorrect
+t2q16,1,schools receive more funding for older pupils
+t2q16,2,"schools receive the same funding for all pupils, regardless"
+t2q16,3,schools receive more funding for younger pupils
+t2q16,9,dont know
+t2q16,10,no answer
+t2q16ans,1,correct
+t2q16ans,2,incorrect
+t2q17,1,the official employer for all teachers is the education and
+t2q17,2,the official employer for all teachers is the department of
+t2q17,3,the official employer for all teachers in catholic schools i
+t2q17,4,the official employer for all teachers in voluntary grammar
+t2q17,9,dont know
+t2q17,10,no answer
+t2q17ans,1,correct
+t2q17ans,2,incorrect
+t2q22a,1,a great deal
+t2q22a,2,somewhat
+t2q22a,3,only a little
+t2q22a,4,nothing at all
+t2q22a,5,dont know
+t2q22a,6,no answer
+t2q22b,1,a great deal
+t2q22b,2,somewhat
+t2q22b,3,only a little
+t2q22b,4,nothing at all
+t2q22b,5,dont know
+t2q22b,6,no answer
+t2q22c,1,a great deal
+t2q22c,2,somewhat
+t2q22c,3,only a little
+t2q22c,4,nothing at all
+t2q22c,5,dont know
+t2q22c,6,no answer
+t2q23a,-1,no answer
+t2q23a,0,generally a waste of time
+t2q23a,5,exactly in-between
+t2q23a,10,extremely valuable
+t2q23a,99,dont know
+t2q23b,-1,no answer
+t2q23b,0,generally a waste of time
+t2q23b,5,exactly in-between
+t2q23b,10,extremely valuable
+t2q23b,99,dont know
+t2q23c,-1,no answer
+t2q23c,0,generally a waste of time
+t2q23c,5,exactly in-between
+t2q23c,10,extremely valuable
+t2q23c,99,dont know
+t2q24a,1,strongly disagree
+t2q24a,2,tend to disagree
+t2q24a,3,neither agree nor disagree
+t2q24a,4,tend to agree
+t2q24a,5,strongly agree
+t2q24a,9,dont know
+t2q24a,10,no answer
+t2q24b,1,strongly disagree
+t2q24b,2,tend to disagree
+t2q24b,3,neither agree nor disagree
+t2q24b,4,tend to agree
+t2q24b,5,strongly agree
+t2q24b,9,dont know
+t2q24b,10,no answer
+t2q24c,1,strongly disagree
+t2q24c,2,tend to disagree
+t2q24c,3,neither agree nor disagree
+t2q24c,4,tend to agree
+t2q24c,5,strongly agree
+t2q24c,9,dont know
+t2q24c,10,no answer
+t2q24d,1,strongly disagree
+t2q24d,2,tend to disagree
+t2q24d,3,neither agree nor disagree
+t2q24d,4,tend to agree
+t2q24d,5,strongly agree
+t2q24d,9,dont know
+t2q24d,10,no answer
+t2q24e,1,strongly disagree
+t2q24e,2,tend to disagree
+t2q24e,3,neither agree nor disagree
+t2q24e,4,tend to agree
+t2q24e,5,strongly agree
+t2q24e,9,dont know
+t2q24e,10,no answer
+t2q24f,1,strongly disagree
+t2q24f,2,tend to disagree
+t2q24f,3,neither agree nor disagree
+t2q24f,4,tend to agree
+t2q24f,5,strongly agree
+t2q24f,9,dont know
+t2q24f,10,no answer
+t2q25,1,hadn’t read or had just glanced at them
+t2q25,2,had read less than half of them
+t2q25,3,had read about half of them
+t2q25,4,had read more than half of them
+t2q25,5,had read all or nearly all of them
+t2q25,6,no answer
+t2q26,1,hadn’t read or had just glanced at them
+t2q26,2,had read less than half of them
+t2q26,3,had read about half of them
+t2q26,4,had read more than half of them
+t2q26,5,had read all or nearly all of them
+t2q26,6,no answer
+t2q27,1,yes
+t2q27,2,no
+t2q27,3,refused or not applicable
+t2q27,4,no answer
+time3,3,time 3 questionnaire (treatment group)
+time3,4,time 3 questionnaire (control group)
+t3q1a,-1,no answer
+t3q1a,0,strongly oppose
+t3q1a,5,neither support nor oppose
+t3q1a,10,strongly support
+t3q1a,99,dont know
+t3q1b,-1,no answer
+t3q1b,0,strongly oppose
+t3q1b,5,neither support nor oppose
+t3q1b,10,strongly support
+t3q1b,99,dont know
+t3q4a,1,strongly disagree
+t3q4a,2,tend to disagree
+t3q4a,3,neither agree nor disagree
+t3q4a,4,tend to agree
+t3q4a,5,strongly agree
+t3q4a,9,dont know
+t3q4a,10,no answer
+t3q4b,1,strongly disagree
+t3q4b,2,tend to disagree
+t3q4b,3,neither agree nor disagree
+t3q4b,4,tend to agree
+t3q4b,5,strongly agree
+t3q4b,9,dont know
+t3q4b,10,no answer
+t3q10a,1,strongly disagree
+t3q10a,2,tend to disagree
+t3q10a,3,neither agree nor disagree
+t3q10a,4,tend to agree
+t3q10a,5,strongly agree
+t3q10a,9,dont know
+t3q10a,10,no answer
+t3q10b,1,strongly disagree
+t3q10b,2,tend to disagree
+t3q10b,3,neither agree nor disagree
+t3q10b,4,tend to agree
+t3q10b,5,strongly agree
+t3q10b,9,dont know
+t3q10b,10,no answer
+t3q11,1,40 - 50%
+t3q11,2,20 - 30%
+t3q11,3,5 - 10%
+t3q11,4,less than 1%
+t3q11,6,more than 50%
+t3q11,9,dont know
+t3q11,10,no answer
+t3q12,1,increased by 20%
+t3q12,2,increased by 10%
+t3q12,3,stayed about the same
+t3q12,4,decrease by 10%
+t3q12,5,decrease by 20%
+t3q12,9,dont know
+t3q12,10,no answer
+t3q13,1,every school provides all 14-year-olds with a choice of at l
+t3q13,2,every child has the right to attend any school his or her pa
+t3q13,3,every child be provided a free school meal every school day
+t3q13,4,every child receives free textbooks
+t3q13,9,dont know
+t3q13,10,no answer
+t3q14,1,every child receives tuition in the language of his or her p
+t3q14,2,every child receives free transportation to and from school
+t3q14,3,every denominational group has the right to run its own scho
+t3q14,4,one-third of all the subjects offered must be applied
+t3q14,9,dont know
+t3q14,10,no answer
+t3q15,1,about one-quarter go directly into employment
+t3q15,2,about one-quarter leave school to be unemployed
+t3q15,3,about three-quarters of grammar school pupils attend univers
+t3q15,4,about three-quarters of secondary school students attend fur
+t3q15,9,dont know
+t3q15,10,no answer
+t3q16,1,schools receive more funding for older pupils
+t3q16,2,"schools receive the same funding for all pupils, regardless"
+t3q16,3,schools receive more funding for younger pupils
+t3q16,9,dont know
+t3q16,10,no answer
+t3q17,1,the official employer for all teachers is the education and
+t3q17,2,the official employer for all teachers is the department of
+t3q17,3,the official employer for all teachers in catholic schools i
+t3q17,4,the official employer for all teachers in voluntary grammar
+t3q17,9,dont know
+t3q17,10,no answer
+cgq36,-1,no answer
+cgq36,0,be religious
+cgq36,5,exactly in-between
+cgq36,10,just try to lead good lives
+cgq36,99,dont know
+cgq37,-1,no answer
+cgq37,0,pursue economic growth regardless
+cgq37,5,exactly in-between
+cgq37,10,treat communities equally regardless
+cgq37,99,dont know
+cgq31,1,yes
+cgq31,2,no
+cgq31,3,refused/na
+cgq32,1,a great deal
+cgq32,2,somewhat
+cgq32,3,only a little
+cgq32,4,nothing at all
+cgq33,1,a great deal
+cgq33,2,somewhat
+cgq33,3,only a little
+cgq33,4,nothing at all
+cgq34,1,a great deal
+cgq34,2,somewhat
+cgq34,3,only a little
+cgq34,4,not at all
+cgq35a,1,a great deal
+cgq35a,2,somewhat
+cgq35a,3,only a little
+cgq35a,4,nothing at all
+cgq35a,5,dont know
+cgq35a,6,no answer
+cgq35b,1,a great deal
+cgq35b,2,somewhat
+cgq35b,3,only a little
+cgq35b,4,nothing at all
+cgq35b,5,dont know
+cgq35b,6,no answer
+cgq35c,1,a great deal
+cgq35c,2,somewhat
+cgq35c,3,only a little
+cgq35c,4,nothing at all
+cgq35c,5,dont know
+cgq35c,6,no answer
+cgq38,1,yes
+cgq38,2,no
+cgq38,3,refused/na
+cgq38,4,no answer
+cgq39,1,catholic
+cgq39,2,protestant
+cgq39,3,muslim
+cgq39,4,jewish
+cgq39,5,other
+cgq39,6,don't know/refused
+cgq39,7,no answer
+cgq40,1,catholic
+cgq40,2,protestant
+cgq40,3,muslim
+cgq40,4,jewish
+cgq40,5,other
+cgq40,6,don't know/refused
+cgq40,7,no answer
+cgreligi,1,catholic
+cgreligi,2,protestant
+cgreligi,3,muslim
+cgreligi,4,jewish
+cgreligi,5,other
+cgreligi,6,dont know/refused
+cgreligi,7,no answer
+cgq41,1,more than once a week
+cgq41,2,once a week
+cgq41,3,once a month
+cgq41,4,a few times a year
+cgq41,5,hardly ever
+cgq41,6,never
+cgq41,7,7
+cgq41,8,8
+cgq41,9,refused/na
+cgq41,10,no answer
+cgq42,1,unionist
+cgq42,2,nationalist
+cgq42,3,neither
+cgq42,4,other
+cgq42,5,5
+cgq42,6,6
+cgq42,7,7
+cgq42,8,8
+cgq42,9,don't know/ refused/ na
+cgq42,10,no answer
+cgq43,1,yes
+cgq43,2,no
+cgq43,3,refused or not applicable
+cgq43,4,no answer
+filter,0,not selected
+filter,1,selected

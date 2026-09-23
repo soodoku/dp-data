@@ -1,0 +1,529 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+cserial,double,numeric,float64,id number,%12.0g,,,TRUE,Retained
+status,double,haven_labelled|vctrs_vctr|double,float64,participation status of respondent,%8.0g,,,TRUE,Retained
+religall,double,haven_labelled|vctrs_vctr|double,float64,religion summary table from religion for participants/non-participants/no-shows,%8.0g,,,TRUE,Retained
+cathlc,double,haven_labelled|vctrs_vctr|double,float64,is respondent catholic or from catholic background? (from religall),%8.0g,,,TRUE,Retained
+protstnt,double,haven_labelled|vctrs_vctr|double,float64,is respondent protestant or from protestant background? (from religall),%8.0g,,,TRUE,Retained
+female,double,numeric,float64,is respondent female? (from t1q3),%8.0g,,,TRUE,Retained
+time1,double,haven_labelled|vctrs_vctr|double,float64,questionnaire,%8.0g,,,TRUE,Retained
+t1q1,double,haven_labelled|vctrs_vctr|double,float64,t1:q1 first may we ask if you have school age children?,%8.0g,,,TRUE,Retained
+t1q2,double,haven_labelled|vctrs_vctr|double,float64,t1:q2 what is your age?,%8.0g,,,TRUE,Retained
+t1q3,double,haven_labelled|vctrs_vctr|double,float64,t1:q3 gender,%8.0g,,,TRUE,Retained
+t1q4,double,haven_labelled|vctrs_vctr|double,float64,t1:q4. marital status?,%8.0g,,,TRUE,Retained
+t1q5,double,haven_labelled|vctrs_vctr|double,float64,t1:q5. how would you describe what you were doing last week (in the seven days e,%8.0g,,,TRUE,Retained
+t1q6,double,haven_labelled|vctrs_vctr|double,float64,t1:q6. and which of these descriptions applies to what your spouse/partner was d,%8.0g,,,TRUE,Retained
+t1q7a,double,haven_labelled|vctrs_vctr|double,float64,"t1:q7. how old were you when you completed your continuous full-time education,",%8.0g,,,TRUE,Retained
+t1q7b,double,haven_labelled|vctrs_vctr|double,float64,t1:q7. how old were you when you completed your continuous full-time education?,%8.0g,,,TRUE,Retained
+t1q8,double,haven_labelled|vctrs_vctr|double,float64,t1:q8. and what is your highest educational qualification?,%8.0g,,,TRUE,Retained
+t1q9,double,numeric,float64,t1:q9. how many school age children do you have?,%8.0g,,,TRUE,Retained
+t1q10a,double,haven_labelled|vctrs_vctr|double,float64,t1:q10. could you please give me details describing the schools your children ar,%8.0g,,,TRUE,Retained
+t1q10a_1,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10a child 1: gender,%8.0g,,,TRUE,Retained
+t1q10b_1,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10b child 1: age,%8.0g,,,TRUE,Retained
+t1q10c_1,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10c child 1: living with you,%8.0g,,,TRUE,Retained
+t1q10d_1,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10d child 1: school in omagh,%8.0g,,,TRUE,Retained
+t1q10e_1,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10e child 1: primary school,%8.0g,,,TRUE,Retained
+t1q10f_1,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10f child 1: type of primary school,%8.0g,,,TRUE,Retained
+t1q10g_1,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10g child 1: post-primary school,%8.0g,,,TRUE,Retained
+t1q10h_1,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10h child 1: type of post-primary school,%8.0g,,,TRUE,Retained
+t1q10i_1,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10i child 1: gender composition of school,%8.0g,,,TRUE,Retained
+t1q10b,double,haven_labelled|vctrs_vctr|double,float64,t1:q10. could you please give me details describing the schools your children ar,%8.0g,,,TRUE,Retained
+t1q10a_2,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10a child 2: gender,%8.0g,,,TRUE,Retained
+t1q10b_2,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10b child 2: age,%8.0g,,,TRUE,Retained
+t1q10c_2,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10c child 2: living with you,%8.0g,,,TRUE,Retained
+t1q10d_2,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10d child 2: school in omagh,%8.0g,,,TRUE,Retained
+t1q10e_2,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10e child 2: primary school,%8.0g,,,TRUE,Retained
+t1q10f_2,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10f child 2: type of primary school,%8.0g,,,TRUE,Retained
+t1q10g_2,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10g child 2: post-primary school,%8.0g,,,TRUE,Retained
+t1q10h_2,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10h child 2: type of post-primary school,%8.0g,,,TRUE,Retained
+t1q10i_2,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10i child 2: gender composition of school,%8.0g,,,TRUE,Retained
+t1q10c,double,haven_labelled|vctrs_vctr|double,float64,t1:q10. could you please give me details describing the schools your children ar,%8.0g,,,TRUE,Retained
+t1q10a_3,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10a child 3: gender,%8.0g,,,TRUE,Retained
+t1q10b_3,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10b child 3: age,%8.0g,,,TRUE,Retained
+t1q10c_3,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10c child 3: living with you,%8.0g,,,TRUE,Retained
+t1q10d_3,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10d child 3: school in omagh,%8.0g,,,TRUE,Retained
+t1q10e_3,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10e child 3: primary school,%8.0g,,,TRUE,Retained
+t1q10f_3,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10f child 3: type of primary school,%8.0g,,,TRUE,Retained
+t1q10g_3,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10g child 3: post-primary school,%8.0g,,,TRUE,Retained
+t1q10h_3,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10h child 3: type of post-primary school,%8.0g,,,TRUE,Retained
+t1q10i_3,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10i child 3: gender composition of school,%8.0g,,,TRUE,Retained
+t1q10d,double,haven_labelled|vctrs_vctr|double,float64,t1:q10. could you please give me details describing the schools your children ar,%8.0g,,,TRUE,Retained
+t1q10a_4,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10a child 4: gender,%8.0g,,,TRUE,Retained
+t1q10b_4,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10b child 4: age,%8.0g,,,TRUE,Retained
+t1q10c_4,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10c child 4: living with you,%8.0g,,,TRUE,Retained
+t1q10d_4,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10d child 4: school in omagh,%8.0g,,,TRUE,Retained
+t1q10e_4,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10e child 4: primary school,%8.0g,,,TRUE,Retained
+t1q10f_4,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10f child 4: type of primary school,%8.0g,,,TRUE,Retained
+t1q10g_4,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10g child 4: post-primary school,%8.0g,,,TRUE,Retained
+t1q10h_4,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10h child 4: type of post-primary school,%8.0g,,,TRUE,Retained
+t1q10i_4,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10i child 4: gender composition of school,%8.0g,,,TRUE,Retained
+t1q10e,double,haven_labelled|vctrs_vctr|double,float64,t1:q10. could you please give me details describing the schools your children ar,%8.0g,,,TRUE,Retained
+t1q10a_5,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10a child 5: gender,%8.0g,,,TRUE,Retained
+t1q10b_5,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10b child 5: age,%8.0g,,,TRUE,Retained
+t1q10c_5,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10c child 5: living with you,%8.0g,,,TRUE,Retained
+t1q10d_5,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10d child 5: school in omagh,%8.0g,,,TRUE,Retained
+t1q10e_5,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10e child 5: primary school,%8.0g,,,TRUE,Retained
+t1q10f_5,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10f child 5: type of primary school,%8.0g,,,TRUE,Retained
+t1q10g_5,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10g child 5: post-primary school,%8.0g,,,TRUE,Retained
+t1q10h_5,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10h child 5: type of post-primary school,%8.0g,,,TRUE,Retained
+t1q10i_5,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10i child 5: gender composition of school,%8.0g,,,TRUE,Retained
+t1q10f,double,haven_labelled|vctrs_vctr|double,float64,t1:q10. could you please give me details describing the schools your children ar,%8.0g,,,TRUE,Retained
+t1q10a_6,double,haven_labelled|vctrs_vctr|double,float64,t1q.10a child 6: gender,%8.0g,,,TRUE,Retained
+t1q10b_6,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10b child 6: age,%8.0g,,,TRUE,Retained
+t1q10c_6,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10c child 6: living with you,%8.0g,,,TRUE,Retained
+t1q10d_6,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10d child 6: school in omagh,%8.0g,,,TRUE,Retained
+t1q10e_6,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10e child 6: primary school,%8.0g,,,TRUE,Retained
+t1q10f_6,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10f child 6: type of primary school,%8.0g,,,TRUE,Retained
+t1q10g_6,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10g child 6: post-primary school,%8.0g,,,TRUE,Retained
+t1q10h_6,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10h child 6: type of post-primary school,%8.0g,,,TRUE,Retained
+t1q10i_6,double,haven_labelled|vctrs_vctr|double,float64,t1:q.10i child 6: gender composition of school,%8.0g,,,TRUE,Retained
+t1q11a,double,haven_labelled|vctrs_vctr|double,float64,t1:q11a having both academic schools and technical/vocational schools,%8.0g,,,TRUE,Retained
+t1q11b,double,haven_labelled|vctrs_vctr|double,float64,"t1:q11b having a system of specialist schools, each developing at least one area",%8.0g,,,TRUE,Retained
+t1q11c,double,haven_labelled|vctrs_vctr|double,float64,"t1:q11c having a system of all-ability schools, all providing the same wide curr",%8.0g,,,TRUE,Retained
+t1q11d,double,haven_labelled|vctrs_vctr|double,float64,t1:q11d schools sharing facilities like a technology lab or a sixth form,%8.0g,,,TRUE,Retained
+t1q11e,double,haven_labelled|vctrs_vctr|double,float64,t1:q11e schools sharing a campus while retaining distinct identities,%8.0g,,,TRUE,Retained
+t1q11f,double,haven_labelled|vctrs_vctr|double,float64,t1:q11f children travelling to neighbouring schools to be taught subjects unavai,%8.0g,,,TRUE,Retained
+t1q11g,double,haven_labelled|vctrs_vctr|double,float64,t1:q11g teachers travelling to neighbouring schools to teach subjects unavailabl,%8.0g,,,TRUE,Retained
+t1q12a,double,haven_labelled|vctrs_vctr|double,float64,t1:q12a (own views) importance for children to attend school with children of th,%8.0g,,,TRUE,Retained
+t1q12b,double,haven_labelled|vctrs_vctr|double,float64,t1:q12b (protestants views) importance for children to attend school with childr,%8.0g,,,TRUE,Retained
+t1q12c,double,haven_labelled|vctrs_vctr|double,float64,t1:q12c (catholics views) importance for children to attend school with children,%8.0g,,,TRUE,Retained
+t1q13a,double,haven_labelled|vctrs_vctr|double,float64,t1:q13a (own views) changes in omagh area’s education system can equally benefit,%8.0g,,,TRUE,Retained
+t1q13b,double,haven_labelled|vctrs_vctr|double,float64,t1:q13b (protestants views) changes in omagh area’s education system can equally,%8.0g,,,TRUE,Retained
+t1q13c,double,haven_labelled|vctrs_vctr|double,float64,t1:q13c (catholics views) changes in omagh area’s education system can equally b,%8.0g,,,TRUE,Retained
+t1q14a,double,haven_labelled|vctrs_vctr|double,float64,t1:q14a schools that are not mixed should be required to partner with a school w,%8.0g,,,TRUE,Retained
+t1q14b,double,haven_labelled|vctrs_vctr|double,float64,t1:q14b schools that need to partner to deliver the curriculum should be require,%8.0g,,,TRUE,Retained
+t1q14c,double,haven_labelled|vctrs_vctr|double,float64,"t1:q14c if schools of different religious composition enter partnerships, the ch",%8.0g,,,TRUE,Retained
+t1q15a,double,haven_labelled|vctrs_vctr|double,float64,"t1:q15a retaining all types of schools currently in the omagh area (controlled,",%8.0g,,,TRUE,Retained
+t1q15b,double,haven_labelled|vctrs_vctr|double,float64,"t1:q15b establishing jointly managed schools, with management shared between the",%8.0g,,,TRUE,Retained
+t1q15c,double,haven_labelled|vctrs_vctr|double,float64,"t1:q15c increasing the number of formal integrated schools, in which all the par",%8.0g,,,TRUE,Retained
+t1q15d,double,haven_labelled|vctrs_vctr|double,float64,t1:q15d keeping the traditional pattern of ages 11-18 and some ages 11-16 school,%8.0g,,,TRUE,Retained
+t1q15e,double,haven_labelled|vctrs_vctr|double,float64,t1:q15e having most schools 11-16 and converting one or two schools into 16-18 s,%8.0g,,,TRUE,Retained
+t1q15f,double,haven_labelled|vctrs_vctr|double,float64,t1:q15f switching to a system of junior high schools (11-14) and senior high sch,%8.0g,,,TRUE,Retained
+t1q15g,double,haven_labelled|vctrs_vctr|double,float64,"t1:q15g schools combining primary and post-primary pupils (for example, ages 7-1",%8.0g,,,TRUE,Retained
+t1q16a,double,haven_labelled|vctrs_vctr|double,float64,t1:q16a. how favourably or unfavourably do you feel about protestants (0=unfavou,%8.0g,,,TRUE,Retained
+t1q16b,double,haven_labelled|vctrs_vctr|double,float64,t1:q16b. how favourably or unfavourably do you feel about catholics (0=unfavoura,%8.0g,,,TRUE,Retained
+t1q17a,double,haven_labelled|vctrs_vctr|double,float64,t1:q17a. (own views) better relations between protestants and catholics will onl,%8.0g,,,TRUE,Retained
+t1q17b,double,haven_labelled|vctrs_vctr|double,float64,t1:q17b. (protestants views) better relations between protestants and catholics,%8.0g,,,TRUE,Retained
+t1q17c,double,haven_labelled|vctrs_vctr|double,float64,t1:q17c. (catholics views) better relations between protestants and catholics wi,%8.0g,,,TRUE,Retained
+t1q18a,double,haven_labelled|vctrs_vctr|double,float64,"t1:q18a. on a scale of 0 to 10 (0=not open to reason; 10=open to reason), where",%8.0g,,,TRUE,Retained
+t1q18b,double,haven_labelled|vctrs_vctr|double,float64,"t1:q18b. on a scale of 0 to 10 (0=not open to reason; 10=open to reason), where",%8.0g,,,TRUE,Retained
+t1q19a,double,haven_labelled|vctrs_vctr|double,float64,t1:q19a. on a scale of 0 to 10 (0=untrustworthy; 10=trustworthy) where would you,%8.0g,,,TRUE,Retained
+t1q19b,double,haven_labelled|vctrs_vctr|double,float64,t1:q19b. on a scale of 0 to 10 (0=untrustworthy; 10=trustworthy) where would you,%8.0g,,,TRUE,Retained
+t1q20a,double,haven_labelled|vctrs_vctr|double,float64,t1:q20a mixed education promotes mutual respect and understanding,%8.0g,,,TRUE,Retained
+t1q20b,double,haven_labelled|vctrs_vctr|double,float64,t1:q20b improvements in the educational system are necessary for economic growth,%8.0g,,,TRUE,Retained
+t1q21,double,haven_labelled|vctrs_vctr|double,float64,t1:q21 what percentage of majority-protestant or majority-catholic schools in no,%8.0g,,,TRUE,Retained
+t1q21ans,double,haven_labelled|vctrs_vctr|double,float64,t1:q21: correct/incorrect answer,%8.0g,,,TRUE,Retained
+t1q22,double,haven_labelled|vctrs_vctr|double,float64,t1:q22 by approximately what percentage has the number of children entering omag,%8.0g,,,TRUE,Retained
+t1q22ans,double,haven_labelled|vctrs_vctr|double,float64,t1:q22: correct/incorrect answer,%8.0g,,,TRUE,Retained
+t1q23,double,haven_labelled|vctrs_vctr|double,float64,t1:q23 the new entitlement framework requires that:,%8.0g,,,TRUE,Retained
+t1q23ans,double,haven_labelled|vctrs_vctr|double,float64,t1:q23: correct/incorrect answer,%8.0g,,,TRUE,Retained
+t1q24,double,haven_labelled|vctrs_vctr|double,float64,t1:q24 the new entitlement framework requires that:,%8.0g,,,TRUE,Retained
+t1q24ans,double,haven_labelled|vctrs_vctr|double,float64,t1:q24: correct/incorrect answer,%8.0g,,,TRUE,Retained
+t1q25,double,haven_labelled|vctrs_vctr|double,float64,t1:q25 which of the following is true of what pupils in northern ireland do afte,%8.0g,,,TRUE,Retained
+t1q25ans,double,haven_labelled|vctrs_vctr|double,float64,t1:q25: correct/incorrect answer,%8.0g,,,TRUE,Retained
+t1q26,double,haven_labelled|vctrs_vctr|double,float64,t1:q26 which of the following is true of current school funding?,%8.0g,,,TRUE,Retained
+t1q26ans,double,haven_labelled|vctrs_vctr|double,float64,t1:q26: correct/incorrect answer,%8.0g,,,TRUE,Retained
+t1q27,double,haven_labelled|vctrs_vctr|double,float64,t1:q27 which of the following is true of the employing authority in the schools?,%8.0g,,,TRUE,Retained
+t1q27ans,double,haven_labelled|vctrs_vctr|double,float64,t1:q27: correct/incorrect answer,%8.0g,,,TRUE,Retained
+t1q28,double,haven_labelled|vctrs_vctr|double,float64,t1:q28 some people think it is important that people be religious,%8.0g,,,TRUE,Retained
+t1q29,double,haven_labelled|vctrs_vctr|double,float64,"t1:q29 some people think it is important to pursue economic growth, regardless o",%8.0g,,,TRUE,Retained
+t1q30,double,haven_labelled|vctrs_vctr|double,float64,t1:q30 do you regard yourself as belonging to any particular religion?,%8.0g,,,TRUE,Retained
+t1q31,double,haven_labelled|vctrs_vctr|double,float64,t1:q31 what religion is that?,%8.0g,,,TRUE,Retained
+t1q32,double,haven_labelled|vctrs_vctr|double,float64,t1:q32 what is your community background?,%8.0g,,,TRUE,Retained
+religion,double,haven_labelled|vctrs_vctr|double,float64,t1:religion (summary table),%8.0g,,,TRUE,Retained
+t1q33,double,haven_labelled|vctrs_vctr|double,float64,"t1:q33 apart from special occasions like weddings, funerals, and baptisms, how o",%8.0g,,,TRUE,Retained
+t1q34,double,haven_labelled|vctrs_vctr|double,float64,"t1:q34 finally, generally speaking, do you usually think of yourself as a unioni",%8.0g,,,TRUE,Retained
+t1qa,double,haven_labelled|vctrs_vctr|double,float64,t1:qa would you be interested in taking part?,%8.0g,,,TRUE,Retained
+attend,double,haven_labelled|vctrs_vctr|double,float64,participation status of respondent - time 2,%8.0g,,,TRUE,Retained
+time2,double,haven_labelled|vctrs_vctr|double,float64,time 2 questionnaire,%8.0g,,,TRUE,Retained
+t2q1a,double,haven_labelled|vctrs_vctr|double,float64,t2:q1a having both academic schools and technical/vocational schools,%8.0g,,,TRUE,Retained
+t2q1b,double,haven_labelled|vctrs_vctr|double,float64,"t2:q1b having a system of specialist schools, each developing at least one area",%8.0g,,,TRUE,Retained
+t2q1c,double,haven_labelled|vctrs_vctr|double,float64,"t2:q1c having a system of all-ability schools, all providing the same wide curri",%8.0g,,,TRUE,Retained
+t2q1d,double,haven_labelled|vctrs_vctr|double,float64,t2:q1d schools sharing facilities like a technology lab or a sixth form,%8.0g,,,TRUE,Retained
+t2q1e,double,haven_labelled|vctrs_vctr|double,float64,t2:q1e schools sharing a campus while retaining distinct identities,%8.0g,,,TRUE,Retained
+t2q1f,double,haven_labelled|vctrs_vctr|double,float64,t2:q1f children travelling to neighbouring schools to be taught subjects unavail,%8.0g,,,TRUE,Retained
+t2q1g,double,haven_labelled|vctrs_vctr|double,float64,t2:q1g teachers travelling to neighbouring schools to teach subjects unavailable,%8.0g,,,TRUE,Retained
+t2q2a,double,haven_labelled|vctrs_vctr|double,float64,t2:q2a (own views) importance for children to attend school with children of the,%8.0g,,,TRUE,Retained
+t2q2are,double,haven_labelled|vctrs_vctr|double,float64,t2q2a recoded onto 0-1 scale: important for children to attend school only with,%9.0g,,,TRUE,Retained
+t2q2b,double,haven_labelled|vctrs_vctr|double,float64,t2:q2b (protestants views) importance for children to attend school with childre,%8.0g,,,TRUE,Retained
+t2q2c,double,haven_labelled|vctrs_vctr|double,float64,t2:q2c (catholics views) importance for children to attend school with children,%8.0g,,,TRUE,Retained
+t2q3a,double,haven_labelled|vctrs_vctr|double,float64,t2:q3a (own views) changes in omagh area’s education system can equally benefit,%8.0g,,,TRUE,Retained
+t2q3are,double,haven_labelled|vctrs_vctr|double,float64,t2q3a recoded onto 0-1 scale: changes in ed system can equally benefit kids from,%9.0g,,,TRUE,Retained
+t2q3b,double,haven_labelled|vctrs_vctr|double,float64,t2:q3b (protestants views) changes in omagh area’s education system can equally,%8.0g,,,TRUE,Retained
+t2q3c,double,haven_labelled|vctrs_vctr|double,float64,t2:q3c (catholics views) changes in omagh area’s education system can equally be,%8.0g,,,TRUE,Retained
+t2q4a,double,haven_labelled|vctrs_vctr|double,float64,t2:q4a schools that are not mixed should be required to partner with a school wi,%8.0g,,,TRUE,Retained
+t2q4are,double,haven_labelled|vctrs_vctr|double,float64,t2q4a recoded onto 0-1 scale: schools not mixed should be required to partner wi,%9.0g,,,TRUE,Retained
+t2q4b,double,haven_labelled|vctrs_vctr|double,float64,t2:q4b schools that need to partner to deliver the curriculum should be required,%8.0g,,,TRUE,Retained
+t2q4bre,double,haven_labelled|vctrs_vctr|double,float64,t2q4b recoded onto 0-1 scale: schools that need to partner should be required to,%9.0g,,,TRUE,Retained
+t2q4c,double,haven_labelled|vctrs_vctr|double,float64,"t2:q4c if schools of different religious composition enter partnerships, the chi",%8.0g,,,TRUE,Retained
+t2q4cre,double,haven_labelled|vctrs_vctr|double,float64,t2q4c recoded onto 0-1 scale: if schools of different religions enter partnershi,%9.0g,,,TRUE,Retained
+t2q5a,double,haven_labelled|vctrs_vctr|double,float64,"t2:q5a retaining all types of schools currently in the omagh area (controlled, m",%8.0g,,,TRUE,Retained
+t2q5b,double,haven_labelled|vctrs_vctr|double,float64,"t2:q5b establishing jointly managed schools, with management shared between the",%8.0g,,,TRUE,Retained
+t2q5c,double,haven_labelled|vctrs_vctr|double,float64,"t2:q5c increasing the number of formal integrated schools, in which all the part",%8.0g,,,TRUE,Retained
+t2q5d,double,haven_labelled|vctrs_vctr|double,float64,t2:q5d keeping the traditional pattern of ages 11-18 and some ages 11-16 schools,%8.0g,,,TRUE,Retained
+t2q5e,double,haven_labelled|vctrs_vctr|double,float64,t2:q5e having most schools 11-16 and converting one or two schools into 16-18 si,%8.0g,,,TRUE,Retained
+t2q5f,double,haven_labelled|vctrs_vctr|double,float64,t2:q5f switching to a system of junior high schools (11-14) and senior high scho,%8.0g,,,TRUE,Retained
+t2q5g,double,haven_labelled|vctrs_vctr|double,float64,"t2:q5g schools combining primary and post-primary pupils (for example, ages 7-14",%8.0g,,,TRUE,Retained
+t2q6a,double,haven_labelled|vctrs_vctr|double,float64,t2:q6a. how favourably or unfavourably do you feel about protestants (0=unfavour,%8.0g,,,TRUE,Retained
+t2q6are,double,haven_labelled|vctrs_vctr|double,float64,t2q6a recoded onto 0-1 scale: how favourably or unfavourably do you feel about p,%9.0g,,,TRUE,Retained
+t2q6b,double,haven_labelled|vctrs_vctr|double,float64,t2:q6b. how favourably or unfavourably do you feel about catholics (0=unfavourab,%8.0g,,,TRUE,Retained
+t2q6bre,double,haven_labelled|vctrs_vctr|double,float64,t2q6b recoded onto 0-1 scale: how favourably or unfavourably do you feel about c,%9.0g,,,TRUE,Retained
+t2q7a,double,haven_labelled|vctrs_vctr|double,float64,t2:q7a. (own views) better relations between protestants and catholics will only,%8.0g,,,TRUE,Retained
+t2q7are,double,haven_labelled|vctrs_vctr|double,float64,t2q7a recoded onto 0-1 scale: better relations btwn protestants and catholics wi,%9.0g,,,TRUE,Retained
+t2q7b,double,haven_labelled|vctrs_vctr|double,float64,t2:q7b. (protestants views) better relations between protestants and catholics w,%8.0g,,,TRUE,Retained
+t2q7c,double,haven_labelled|vctrs_vctr|double,float64,t2:q7c. (catholics views) better relations between protestants and catholics wil,%8.0g,,,TRUE,Retained
+t2q8a,double,haven_labelled|vctrs_vctr|double,float64,"t2:q8a. on a scale of 0 to 10 (0=not open to reason; 10=open to reason), where w",%8.0g,,,TRUE,Retained
+t2q8are,double,haven_labelled|vctrs_vctr|double,float64,"t2q8a recoded onto 0-1 scale: (0=not open to reason; 1=open to reason), where wo",%9.0g,,,TRUE,Retained
+t2q8b,double,haven_labelled|vctrs_vctr|double,float64,"t2:q8b. on a scale of 0 to 10 (0=not open to reason; 10=open to reason), where w",%8.0g,,,TRUE,Retained
+t2q8bre,double,haven_labelled|vctrs_vctr|double,float64,"t2q8a recoded onto 0-1 scale: (0=not open to reason; 1=open to reason), where wo",%9.0g,,,TRUE,Retained
+t2q9a,double,haven_labelled|vctrs_vctr|double,float64,t2:q9a. on a scale of 0 to 10 (0=untrustworthy; 10=trustworthy) where would you,%8.0g,,,TRUE,Retained
+t2q9are,double,haven_labelled|vctrs_vctr|double,float64,t2q9a recoded onto 0-1 scale: (0=untrustworthy; 1=trustworthy) where would you p,%9.0g,,,TRUE,Retained
+t2q9b,double,haven_labelled|vctrs_vctr|double,float64,t2:q9b. on a scale of 0 to 10 (0=untrustworthy; 10=trustworthy) where would you,%8.0g,,,TRUE,Retained
+t2q9bre,double,haven_labelled|vctrs_vctr|double,float64,t2q9a recoded onto 0-1 scale: (0=untrustworthy; 1=trustworthy) where would you p,%9.0g,,,TRUE,Retained
+t2q10a,double,haven_labelled|vctrs_vctr|double,float64,t2:q10a mixed education promotes mutual respect and understanding,%8.0g,,,TRUE,Retained
+t2q10are,double,haven_labelled|vctrs_vctr|double,float64,t2q10 recoded onto 0-1 scale: mixed education promotes mutual respect and unders,%9.0g,,,TRUE,Retained
+t2q10b,double,haven_labelled|vctrs_vctr|double,float64,t2:q10b improvements in the educational system are necessary for economic growth,%8.0g,,,TRUE,Retained
+t2q10bre,double,haven_labelled|vctrs_vctr|double,float64,t2q10b recoded onto 0-1 scale: improvements in the educational system are necess,%9.0g,,,TRUE,Retained
+t2q11,double,haven_labelled|vctrs_vctr|double,float64,t2:q11 what percentage of majority-protestant or majority-catholic schools in no,%8.0g,,,TRUE,Retained
+t2q11ans,double,haven_labelled|vctrs_vctr|double,float64,t2:q11: correct/incorrect answer,%8.0g,,,TRUE,Retained
+t2q12,double,haven_labelled|vctrs_vctr|double,float64,t2:q12 by approximately what percentage has the number of children entering omag,%8.0g,,,TRUE,Retained
+t2q12ans,double,haven_labelled|vctrs_vctr|double,float64,t2:q12: correct/incorrect answer,%8.0g,,,TRUE,Retained
+t2q13,double,haven_labelled|vctrs_vctr|double,float64,t2:q13 the new entitlement framework requires that:,%8.0g,,,TRUE,Retained
+t2q13ans,double,haven_labelled|vctrs_vctr|double,float64,t2:q13: correct/incorrect answer,%8.0g,,,TRUE,Retained
+t2q14,double,haven_labelled|vctrs_vctr|double,float64,t2:q14 the new entitlement framework requires that,%8.0g,,,TRUE,Retained
+t2q14ans,double,haven_labelled|vctrs_vctr|double,float64,t2:q14: correct/incorrect answer,%8.0g,,,TRUE,Retained
+t2q15,double,haven_labelled|vctrs_vctr|double,float64,t2:q15 which of the following is true of what pupils in northern ireland do afte,%8.0g,,,TRUE,Retained
+t2q15ans,double,haven_labelled|vctrs_vctr|double,float64,t2:q15: correct/incorrect answer,%8.0g,,,TRUE,Retained
+t2q16,double,haven_labelled|vctrs_vctr|double,float64,t2:q16 which of the following is true of current school funding?,%8.0g,,,TRUE,Retained
+t2q16ans,double,haven_labelled|vctrs_vctr|double,float64,t2:q16: correct/incorrect answer,%8.0g,,,TRUE,Retained
+t2q17,double,haven_labelled|vctrs_vctr|double,float64,t2:q17 which of the following is true of the employing authority in the schools,%8.0g,,,TRUE,Retained
+t2q17ans,double,haven_labelled|vctrs_vctr|double,float64,t2:q17: correct/incorrect answer,%8.0g,,,TRUE,Retained
+t2q18a1,character,character,,t2:q18a: reasons that people who strongly support having a system of all-ability,%95s,,,FALSE,Verbatim field excluded
+t2q18a2,character,character,,t2:q18a: reasons that people who strongly support having a system of all-ability,%118s,,,FALSE,Verbatim field excluded
+t2q18a3,character,character,,t2:q18a: reasons that people who strongly support having a system of all-ability,%91s,,,FALSE,Verbatim field excluded
+t2q18a4,character,character,,t2:q18a: reasons that people who strongly support having a system of all-ability,%138s,,,FALSE,Verbatim field excluded
+t2q18a5,character,character,,t2:q18a: reasons that people who strongly support having a system of all-ability,%47s,,,FALSE,Verbatim field excluded
+t2q18anu,double,numeric,float64,t2:q18a: number of reasons given,%8.0g,,,TRUE,Retained
+t2q18b1,character,character,,t2:q18b: reasons that people who strongly oppose having a system of all-ability,%132s,,,FALSE,Verbatim field excluded
+t2q18b2,character,character,,t2:q18b: reasons that people who strongly oppose having a system of all-ability,%161s,,,FALSE,Verbatim field excluded
+t2q18b3,character,character,,t2:q18b: reasons that people who strongly oppose having a system of all-ability,%87s,,,FALSE,Verbatim field excluded
+t2q18b4,character,character,,t2:q18b: reasons that people who strongly oppose having a system of all-ability,%136s,,,FALSE,Verbatim field excluded
+t2q18b5,character,character,,t2:q18b: reasons that people who strongly oppose having a system of all-ability,%81s,,,FALSE,Verbatim field excluded
+t2q18bnu,double,numeric,float64,t2:q18b: number of reasons given,%8.0g,,,TRUE,Retained
+t2q19a1,character,character,,t2:q19a: reasons that people who think that children should attend school only w,%94s,,,FALSE,Verbatim field excluded
+t2q19a2,character,character,,t2:q19a: reasons that people who think that children should attend school only w,%164s,,,FALSE,Verbatim field excluded
+t2q19a3,character,character,,t2:q19a: reasons that people who think that children should attend school only w,%72s,,,FALSE,Verbatim field excluded
+t2q19a4,character,character,,t2:q19a: reasons that people who think that children should attend school only w,%47s,,,FALSE,Verbatim field excluded
+t2q19a5,character,character,,t2:q19a: reasons that people who think that children should attend school only w,%44s,,,FALSE,Verbatim field excluded
+t2q19anu,double,numeric,float64,t2:q19a: number of reasons given,%8.0g,,,TRUE,Retained
+t2q19b1,character,character,,t2:q19b: reasons that people who think that children should attend schools with,%148s,,,FALSE,Verbatim field excluded
+t2q19b2,character,character,,t2:q19b: reasons that people who think that children should attend schools with,%91s,,,FALSE,Verbatim field excluded
+t2q19b3,character,character,,t2:q19b: reasons that people who think that children should attend schools with,%110s,,,FALSE,Verbatim field excluded
+t2q19b4,character,character,,t2:q19b: reasons that people who think that children should attend schools with,%129s,,,FALSE,Verbatim field excluded
+t2q19b5,character,character,,t2:q19b: reasons that people who think that children should attend schools with,%104s,,,FALSE,Verbatim field excluded
+t2q19bnu,double,numeric,float64,t2:q19b: number of reasons given,%8.0g,,,TRUE,Retained
+t2q20a1,character,character,,t2:q20a: reasons that people who strongly agree that children from schools of di,%126s,,,FALSE,Verbatim field excluded
+t2q20a2,character,character,,t2:q20a: reasons that people who strongly agree that children from schools of di,%101s,,,FALSE,Verbatim field excluded
+t2q20a3,character,character,,t2:q20a: reasons that people who strongly agree that children from schools of di,%87s,,,FALSE,Verbatim field excluded
+t2q20a4,character,character,,t2:q20a: reasons that people who strongly agree that children from schools of di,%67s,,,FALSE,Verbatim field excluded
+t2q20a5,character,character,,t2:q20a: reasons that people who strongly agree that children from schools of di,%33s,,,FALSE,Verbatim field excluded
+t2q20anu,double,numeric,float64,t2:q20a: number of reasons given,%8.0g,,,TRUE,Retained
+t2q20b1,character,character,,t2:q20b: reasons that people who strongly disagree that children from schools of,%106s,,,FALSE,Verbatim field excluded
+t2q20b2,character,character,,t2:q20b: reasons that people who strongly disagree that children from schools of,%83s,,,FALSE,Verbatim field excluded
+t2q20b3,character,character,,t2:q20b: reasons that people who strongly disagree that children from schools of,%103s,,,FALSE,Verbatim field excluded
+t2q20b4,character,character,,t2:q20b: reasons that people who strongly disagree that children from schools of,%40s,,,FALSE,Verbatim field excluded
+t2q20b5,character,character,,t2:q20b: reasons that people who strongly disagree that children from schools of,%11s,,,FALSE,Verbatim field excluded
+t2q20bnu,double,numeric,float64,t2:q20b: number of reasons given,%8.0g,,,TRUE,Retained
+t2q21a1,character,character,,t2:q21a: reasons that people who strongly support schools combining primary and,%128s,,,FALSE,Verbatim field excluded
+t2q21a2,character,character,,t2:q21a: reasons that people who strongly support schools combining primary and,%104s,,,FALSE,Verbatim field excluded
+t2q21a3,character,character,,t2:q21a: reasons that people who strongly support schools combining primary and,%103s,,,FALSE,Verbatim field excluded
+t2q21a4,character,character,,t2:q21a: reasons that people who strongly support schools combining primary and,%48s,,,FALSE,Verbatim field excluded
+t2q21a5,character,character,,t2:q21a: reasons that people who strongly support schools combining primary and,%21s,,,FALSE,Verbatim field excluded
+t2q21anu,double,numeric,float64,t2:q21a: number of reasons given,%8.0g,,,TRUE,Retained
+t2q21b1,character,character,,t2:q21b: reasons that people who strongly oppose schools combining primary and p,%242s,,,FALSE,Verbatim field excluded
+t2q21b2,character,character,,t2:q21b: reasons that people who strongly oppose schools combining primary and p,%80s,,,FALSE,Verbatim field excluded
+t2q21b3,character,character,,t2:q21b: reasons that people who strongly oppose schools combining primary and p,%177s,,,FALSE,Verbatim field excluded
+t2q21b4,character,character,,t2:q21b: reasons that people who strongly oppose schools combining primary and p,%33s,,,FALSE,Verbatim field excluded
+t2q21b5,character,character,,t2:q21b: reasons that people who strongly oppose schools combining primary and p,%1s,,,FALSE,Verbatim field excluded
+t2q21bnu,double,numeric,float64,t2:q21b: number of reasons given,%8.0g,,,TRUE,Retained
+t2q22a,double,haven_labelled|vctrs_vctr|double,float64,t2:q22a how much would you say you have read or heard about issues of education,%8.0g,,,TRUE,Retained
+t2q22b,double,haven_labelled|vctrs_vctr|double,float64,t2:q22b how much would you say you have discussed issues of education in norther,%8.0g,,,TRUE,Retained
+t2q22c,double,haven_labelled|vctrs_vctr|double,float64,t2:q22c how much would you say you have sought information about issues of educa,%8.0g,,,TRUE,Retained
+t2q23a,double,haven_labelled|vctrs_vctr|double,float64,t2:q23a how valuable was participating in the small group discussions in helping,%8.0g,,,TRUE,Retained
+t2q23b,double,haven_labelled|vctrs_vctr|double,float64,t2:q23b how valuable was meeting and talking to other participants outside of th,%8.0g,,,TRUE,Retained
+t2q23c,double,haven_labelled|vctrs_vctr|double,float64,t2:q23c how valuable was the event as a whole in helping you clarify your positi,%8.0g,,,TRUE,Retained
+t2q24a,double,haven_labelled|vctrs_vctr|double,float64,t2:q24a my small group moderator provided the opportunity for everyone to partic,%8.0g,,,TRUE,Retained
+t2q24b,double,haven_labelled|vctrs_vctr|double,float64,t2:q24b the members of my small group participated relatively equally in the dis,%8.0g,,,TRUE,Retained
+t2q24c,double,haven_labelled|vctrs_vctr|double,float64,t2:q24c my small group moderator sometimes tried to influence the group with his,%8.0g,,,TRUE,Retained
+t2q24d,double,haven_labelled|vctrs_vctr|double,float64,t2:q24d my small group moderator tried to make sure that opposing arguments were,%8.0g,,,TRUE,Retained
+t2q24e,double,haven_labelled|vctrs_vctr|double,float64,t2:q24e the important aspects of the issues were covered in the group discussion,%8.0g,,,TRUE,Retained
+t2q24f,double,haven_labelled|vctrs_vctr|double,float64,t2:q24f i learned a lot about people very different from me-about what they and,%8.0g,,,TRUE,Retained
+t2q25,double,haven_labelled|vctrs_vctr|double,float64,"t2:q25 before the deliberation started on saturday morning, about how much of th",%8.0g,,,TRUE,Retained
+t2q26,double,haven_labelled|vctrs_vctr|double,float64,"t2:q26 by the end of the deliberations on saturday, about how much of the discus",%8.0g,,,TRUE,Retained
+t2q27,double,haven_labelled|vctrs_vctr|double,float64,"t2:q27 and could you tell us, do you happen to work in or for a primary, seconda",%8.0g,,,TRUE,Retained
+t2supint,double,numeric,float64,"t2 ""support for required integration measures"" index: mean of t2q4are, t2q4bre,",%9.0g,,,TRUE,Retained
+t2valint,double,numeric,float64,"t2 ""value of integrated education"" index: mean of t2q2are, t2q10are",%9.0g,,,TRUE,Retained
+t2prots,double,numeric,float64,"t2 ""perception of protestants"" index: mean of t2q6are, t2q8are, t2q9are",%9.0g,,,TRUE,Retained
+t2caths,double,numeric,float64,"t2 ""perception of catholics"" index: mean of t2q6bre, t2q8bre, t2q9bre",%9.0g,,,TRUE,Retained
+time3,double,haven_labelled|vctrs_vctr|double,float64,time 3/control group questionnaire,%8.0g,,,TRUE,Retained
+t3q1a,double,haven_labelled|vctrs_vctr|double,float64,t3:q1a  how strongly would you support or oppose having both academic schools an,%8.0g,,,TRUE,Retained
+t3q1b,double,haven_labelled|vctrs_vctr|double,float64,t3:q1b  how strongly would you support or oppose having a system of specialist s,%8.0g,,,TRUE,Retained
+t3q1c,double,numeric,float64,t3:q1c  how strongly would you support or oppose having a system of all-ability,%8.0g,,,TRUE,Retained
+t3q1d,double,numeric,float64,t3:q1d  how strongly would you support or oppose schools sharing facilities like,%8.0g,,,TRUE,Retained
+t3q1e,double,numeric,float64,t3:q1e  how strongly would you support or oppose schools sharing a campus while,%8.0g,,,TRUE,Retained
+t3q1f,double,numeric,float64,t3:q1f  how strongly would you support or oppose children travelling to neighbou,%8.0g,,,TRUE,Retained
+t3q1g,double,numeric,float64,t3:q1g  how strongly would you support or oppose teachers travelling to neighbou,%8.0g,,,TRUE,Retained
+t3q2a,double,numeric,float64,t3:own views q2a importance for children to attend school only with other childr,%8.0g,,,TRUE,Retained
+t3q2b,double,numeric,float64,t3:most protestants views q2b importance for children to attend school only with,%8.0g,,,TRUE,Retained
+t3q2c,double,numeric,float64,t3:most catholics views q2c importance for children to attend school only with o,%8.0g,,,TRUE,Retained
+t3q3a,double,numeric,float64,t3:own views q3a changes in the omagh areas education system can equally benefit,%8.0g,,,TRUE,Retained
+t3q3b,double,numeric,float64,t3:most protestants views q3b changes in the omagh areas education system can eq,%8.0g,,,TRUE,Retained
+t3q3c,double,numeric,float64,t3:most catholics views q3c changes in the omagh areas education system can equa,%8.0g,,,TRUE,Retained
+t3q4a,double,haven_labelled|vctrs_vctr|double,float64,t3:q4a schools that are not mixed should be required to partner with a school wi,%8.0g,,,TRUE,Retained
+t3q4b,double,haven_labelled|vctrs_vctr|double,float64,t3:q4b schools that need to partner to deliver the curriculum should be required,%8.0g,,,TRUE,Retained
+t3q4c,double,numeric,float64,"t3:q4c if schools of different religious composition enter partnerships, the chi",%8.0g,,,TRUE,Retained
+t3q5a,double,numeric,float64,"t3:q5a retaining all types of schools currently in the omagh area (controlled, m",%8.0g,,,TRUE,Retained
+t3q5b,double,numeric,float64,"t3:q5b establishing jointly managed schools, with management shared between the",%8.0g,,,TRUE,Retained
+t3q5c,double,numeric,float64,"t3:q5c increasing the number of formal integrated schools, in which all the part",%8.0g,,,TRUE,Retained
+t3q5d,double,numeric,float64,t3:q5d keeping the traditional pattern of ages 11-18 and some ages 11-16 schools,%8.0g,,,TRUE,Retained
+t3q5e,double,numeric,float64,t3:q5e having most schools 11-16 and converting one or two schools into 16-18 si,%8.0g,,,TRUE,Retained
+t3q5f,double,numeric,float64,t3:q5f switching to a system of junior high schools (11-14) and senior high scho,%8.0g,,,TRUE,Retained
+t3q5g,double,numeric,float64,"t3:q5g schools combining primary and post-primary pupils (for example, ages 7-14",%8.0g,,,TRUE,Retained
+t3q6a,double,numeric,float64,t3:q6a how favourably or unfavourably do you feel about protestants,%8.0g,,,TRUE,Retained
+t3q6b,double,numeric,float64,t3:q6b how favourably or unfavourably do you feel about catholics,%8.0g,,,TRUE,Retained
+t3q7a,double,numeric,float64,t3:your views q7a better relations between protestants and catholics will only c,%8.0g,,,TRUE,Retained
+t3q7b,double,numeric,float64,t3:most protestants views q7b better relations between protestants and catholics,%8.0g,,,TRUE,Retained
+t3q7c,double,numeric,float64,t3:most catholics views q7c better relations between protestants and catholics w,%8.0g,,,TRUE,Retained
+t3q8a,double,numeric,float64,"t3:q8a on a scale of 0 to 10, where would you place most most protestants",%8.0g,,,TRUE,Retained
+t3q8b,double,numeric,float64,"t3:q8b  on a scale of 0 to 10, where would you place most most catholics",%8.0g,,,TRUE,Retained
+t3q9a,double,numeric,float64,"t3:q9a on a scale of 0 to 10, where would you place most most protestants",%8.0g,,,TRUE,Retained
+t3q9b,double,numeric,float64,"t3:q9b on a scale of 0 to 10, where would you place most most catholics",%8.0g,,,TRUE,Retained
+t3q10a,double,haven_labelled|vctrs_vctr|double,float64,t3:q10a mixed education promotes mutual respect and understanding,%8.0g,,,TRUE,Retained
+t3q10b,double,haven_labelled|vctrs_vctr|double,float64,t3:q10b improvements in the educational system are necessary for economic growth,%8.0g,,,TRUE,Retained
+t3q11,double,haven_labelled|vctrs_vctr|double,float64,t3:q11 what percentage of majority-protestant or majority-catholic schools in no,%8.0g,,,TRUE,Retained
+t3q11ans,double,numeric,float64,t3:q11 what percentage of majority-protestant or majority-catholic schools in no,%8.0g,,,TRUE,Retained
+t3q12,double,haven_labelled|vctrs_vctr|double,float64,t3:q12 by approximately what percentage has the number of children entering omag,%8.0g,,,TRUE,Retained
+t3q12ans,double,numeric,float64,t3:q12 by approximately what percentage has the number of children entering omag,%8.0g,,,TRUE,Retained
+t3q13,double,haven_labelled|vctrs_vctr|double,float64,t3:q13 the new entitlement framework requires that,%8.0g,,,TRUE,Retained
+t3q13ans,double,numeric,float64,t3:q13 the new entitlement framework requires that,%8.0g,,,TRUE,Retained
+t3q14,double,haven_labelled|vctrs_vctr|double,float64,t3:q14 the new entitlement framework requires that,%8.0g,,,TRUE,Retained
+t3q14ans,double,numeric,float64,t3:q14 the new entitlement framework requires that,%8.0g,,,TRUE,Retained
+t3q15,double,haven_labelled|vctrs_vctr|double,float64,t3:q15 which of the following is true of what pupils in northern ireland do afte,%8.0g,,,TRUE,Retained
+t3q15ans,double,numeric,float64,t3:q15 which of the following is true of what pupils in northern ireland do afte,%8.0g,,,TRUE,Retained
+t3q16,double,haven_labelled|vctrs_vctr|double,float64,t3:q16 which of the following is true of current school funding,%8.0g,,,TRUE,Retained
+t3q16ans,double,numeric,float64,t3:q16 which of the following is true of current school funding,%8.0g,,,TRUE,Retained
+t3q17,double,haven_labelled|vctrs_vctr|double,float64,t3:q17 which of the following is true of the employing authority in the schools,%8.0g,,,TRUE,Retained
+t3q17ans,double,numeric,float64,t3:q17 which of the following is true of the employing authority in the schools,%8.0g,,,TRUE,Retained
+t3q18a1,character,character,,t3:q18a: reasons that people who strongly support having a system of all-ability,%105s,,,FALSE,Verbatim field excluded
+t3q18a2,character,character,,t3:q18a: reasons that people who strongly support having a system of all-ability,%89s,,,FALSE,Verbatim field excluded
+t3q18a3,character,character,,t3:q18a: reasons that people who strongly support having a system of all-ability,%69s,,,FALSE,Verbatim field excluded
+t3q18a4,character,character,,t3:q18a: reasons that people who strongly support having a system of all-ability,%53s,,,FALSE,Verbatim field excluded
+t3q18a5,character,character,,t3:q18a: reasons that people who strongly support having a system of all-ability,%50s,,,FALSE,Verbatim field excluded
+t3q18anu,double,numeric,float64,t3:q18a: number of reasons given,%8.0g,,,TRUE,Retained
+t3q18b1,character,character,,t3:q18b: reasons that people who strongly oppose having a system of all-ability,%121s,,,FALSE,Verbatim field excluded
+t3q18b2,character,character,,t3:q18b: reasons that people who strongly oppose having a system of all-ability,%143s,,,FALSE,Verbatim field excluded
+t3q18b3,character,character,,t3:q18b: reasons that people who strongly oppose having a system of all-ability,%170s,,,FALSE,Verbatim field excluded
+t3q18b4,character,character,,t3:q18b: reasons that people who strongly oppose having a system of all-ability,%125s,,,FALSE,Verbatim field excluded
+t3q18b5,character,character,,t3:q18b: reasons that people who strongly oppose having a system of all-ability,%112s,,,FALSE,Verbatim field excluded
+t3q18bnu,double,numeric,float64,t3:q18b: number of reasons given,%8.0g,,,TRUE,Retained
+t3q19a1,character,character,,t3:q19a: reasons that people who think that children should attend school only w,%124s,,,FALSE,Verbatim field excluded
+t3q19a2,character,character,,t3:q19a: reasons that people who think that children should attend school only w,%113s,,,FALSE,Verbatim field excluded
+t3q19a3,character,character,,t3:q19a: reasons that people who think that children should attend school only w,%86s,,,FALSE,Verbatim field excluded
+t3q19a4,character,character,,t3:q19a: reasons that people who think that children should attend school only w,%75s,,,FALSE,Verbatim field excluded
+t3q19a5,character,character,,t3:q19a: reasons that people who think that children should attend school only w,%38s,,,FALSE,Verbatim field excluded
+t3q19anu,double,numeric,float64,t3:q19a: number of reasons given,%8.0g,,,TRUE,Retained
+t3q19b1,character,character,,t3:q19b: reasons that people who think that children should attend schools with,%168s,,,FALSE,Verbatim field excluded
+t3q19b2,character,character,,t3:q19b: reasons that people who think that children should attend schools with,%100s,,,FALSE,Verbatim field excluded
+t3q19b3,character,character,,t3:q19b: reasons that people who think that children should attend schools with,%59s,,,FALSE,Verbatim field excluded
+t3q19b4,character,character,,t3:q19b: reasons that people who think that children should attend schools with,%76s,,,FALSE,Verbatim field excluded
+t3q19b5,character,character,,t3:q19b: reasons that people who think that children should attend schools with,%49s,,,FALSE,Verbatim field excluded
+t3q19bnu,double,numeric,float64,t3:q19b: number of reasons given,%8.0g,,,TRUE,Retained
+t3q20a1,character,character,,t3:q20a: reasons that people who strongly agree that children from schools of di,%119s,,,FALSE,Verbatim field excluded
+t3q20a2,character,character,,t3:q20a: reasons that people who strongly agree that children from schools of di,%103s,,,FALSE,Verbatim field excluded
+t3q20a3,character,character,,t3:q20a: reasons that people who strongly agree that children from schools of di,%56s,,,FALSE,Verbatim field excluded
+t3q20a4,character,character,,t3:q20a: reasons that people who strongly agree that children from schools of di,%61s,,,FALSE,Verbatim field excluded
+t3q20a5,character,character,,t3:q20a: reasons that people who strongly agree that children from schools of di,%26s,,,FALSE,Verbatim field excluded
+t3q20anu,double,numeric,float64,t3:q20a: number of reasons given,%8.0g,,,TRUE,Retained
+t3q20b1,character,character,,t3:q20b: reasons that people who strongly disagree that children from schools of,%102s,,,FALSE,Verbatim field excluded
+t3q20b2,character,character,,t3:q20b: reasons that people who strongly disagree that children from schools of,%87s,,,FALSE,Verbatim field excluded
+t3q20b3,character,character,,t3:q20b: reasons that people who strongly disagree that children from schools of,%69s,,,FALSE,Verbatim field excluded
+t3q20b4,character,character,,t3:q20b: reasons that people who strongly disagree that children from schools of,%55s,,,FALSE,Verbatim field excluded
+t3q20b5,character,character,,t3:q20b: reasons that people who strongly disagree that children from schools of,%1s,,,FALSE,Verbatim field excluded
+t3q20bnu,double,numeric,float64,t3:q20b: number of reasons given,%8.0g,,,TRUE,Retained
+t3q21a1,character,character,,t3:q21a: reasons that people who strongly support schools combining primary and,%121s,,,FALSE,Verbatim field excluded
+t3q21a2,character,character,,t3:q21a: reasons that people who strongly support schools combining primary and,%87s,,,FALSE,Verbatim field excluded
+t3q21a3,character,character,,t3:q21a: reasons that people who strongly support schools combining primary and,%77s,,,FALSE,Verbatim field excluded
+t3q21a4,character,character,,t3:q21a: reasons that people who strongly support schools combining primary and,%41s,,,FALSE,Verbatim field excluded
+t3q21a5,character,character,,t3:q21a: reasons that people who strongly support schools combining primary and,%33s,,,FALSE,Verbatim field excluded
+t3q21anu,double,numeric,float64,t3:q21a: number of reasons given,%8.0g,,,TRUE,Retained
+t3q21b1,character,character,,t3:q21b: reasons that people who strongly oppose schools combining primary and p,%130s,,,FALSE,Verbatim field excluded
+t3q21b2,character,character,,t3:q21b: reasons that people who strongly oppose schools combining primary and p,%129s,,,FALSE,Verbatim field excluded
+t3q21b3,character,character,,t3:q21b: reasons that people who strongly oppose schools combining primary and p,%95s,,,FALSE,Verbatim field excluded
+t3q21b4,character,character,,t3:q21b: reasons that people who strongly oppose schools combining primary and p,%156s,,,FALSE,Verbatim field excluded
+t3q21b5,character,character,,t3:q21b: reasons that people who strongly oppose schools combining primary and p,%10s,,,FALSE,Verbatim field excluded
+t3q21bnu,double,numeric,float64,t3:q21b: number of reasons given,%8.0g,,,TRUE,Retained
+cgq36,double,haven_labelled|vctrs_vctr|double,float64,cg:q36 some people think it is important that people be religious,%8.0g,,,TRUE,Retained
+cgq37,double,haven_labelled|vctrs_vctr|double,float64,"cg:q37 some people think it is important to pursue economic growth, regardless o",%8.0g,,,TRUE,Retained
+cgq31,double,haven_labelled|vctrs_vctr|double,float64,cg: q31 have you heard anything about the deliberative poll on education in omag,%8.0g,,,TRUE,Retained
+cgq32,double,haven_labelled|vctrs_vctr|double,float64,cg: q32 how much have you read about the deliberative poll in newspapers and mag,%8.0g,,,TRUE,Retained
+cgq33,double,haven_labelled|vctrs_vctr|double,float64,cg: q33 how much have you seen or heard about the deliberative poll on televisio,%8.0g,,,TRUE,Retained
+cgq34,double,haven_labelled|vctrs_vctr|double,float64,"cg: q34 how much have you talked about the deliberative poll with family, friend",%8.0g,,,TRUE,Retained
+cgq35a,double,haven_labelled|vctrs_vctr|double,float64,cg:q35a how much would you say you have read or heard about issues of education,%8.0g,,,TRUE,Retained
+cgq35b,double,haven_labelled|vctrs_vctr|double,float64,cg:q35b how much would you say you have discussed issues of education in norther,%8.0g,,,TRUE,Retained
+cgq35c,double,haven_labelled|vctrs_vctr|double,float64,cg:q35c how much would you say you have sought information about issues of educa,%8.0g,,,TRUE,Retained
+cgq38,double,haven_labelled|vctrs_vctr|double,float64,cg:q38 do you regard yourself as belonging to any particular religion?,%8.0g,,,TRUE,Retained
+cgq39,double,haven_labelled|vctrs_vctr|double,float64,cg:q39 what religion is that?,%8.0g,,,TRUE,Retained
+cgq40,double,haven_labelled|vctrs_vctr|double,float64,cg:q40 what is your community background?,%8.0g,,,TRUE,Retained
+cgreligi,double,haven_labelled|vctrs_vctr|double,float64,cg:religion (summary table),%8.0g,,,TRUE,Retained
+cgq41,double,haven_labelled|vctrs_vctr|double,float64,"cg:q41 apart from special occasions like weddings, funerals, and baptisms, how o",%8.0g,,,TRUE,Retained
+cgq42,double,haven_labelled|vctrs_vctr|double,float64,"cg:q42 finally, generally speaking, do you usually think of yourself as a unioni",%8.0g,,,TRUE,Retained
+cgq43,double,haven_labelled|vctrs_vctr|double,float64,"cg:q43 and could you tell us, do you happen to work in or for a primary, seconda",%8.0g,,,TRUE,Retained
+intdate,double,Date,date32,,%dD_m_Y,,,TRUE,Retained
+filter,double,haven_labelled|vctrs_vctr|double,float64,participants vs. nonparticipants (NP includes no shows),%8.0g,,,TRUE,Retained
+part,double,numeric,float64,participants vs. control group,%9.0g,,,TRUE,Retained
+pcgfilter,double,numeric,float64,particpants vs. control group,%9.0g,,,TRUE,Retained
+single,double,numeric,float64,,%9.0g,,,TRUE,Retained
+married,double,numeric,float64,,%9.0g,,,TRUE,Retained
+sdw,double,numeric,float64,,%9.0g,,,TRUE,Retained
+fulltime,double,numeric,float64,,%9.0g,,,TRUE,Retained
+partime,double,numeric,float64,,%9.0g,,,TRUE,Retained
+seekwork,double,numeric,float64,,%9.0g,,,TRUE,Retained
+retired,double,numeric,float64,,%9.0g,,,TRUE,Retained
+homemaker,double,numeric,float64,,%9.0g,,,TRUE,Retained
+other,double,numeric,float64,,%9.0g,,,TRUE,Retained
+student,double,numeric,float64,,%9.0g,,,TRUE,Retained
+fulltimep,double,numeric,float64,,%9.0g,,,TRUE,Retained
+partimep,double,numeric,float64,,%9.0g,,,TRUE,Retained
+seekworkp,double,numeric,float64,,%9.0g,,,TRUE,Retained
+retiredp,double,numeric,float64,,%9.0g,,,TRUE,Retained
+homemakerp,double,numeric,float64,,%9.0g,,,TRUE,Retained
+otherp,double,numeric,float64,,%9.0g,,,TRUE,Retained
+studentp,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q11c_r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q12a_r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q12b_r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q12c_r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q13a_r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q13b_r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q13c_r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q14c_r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q15b_r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q15g_r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q17a_r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q17b_r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q17c_r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+degree,double,numeric,float64,,%9.0g,,,TRUE,Retained
+btechigh,double,numeric,float64,,%9.0g,,,TRUE,Retained
+gce,double,numeric,float64,,%9.0g,,,TRUE,Retained
+btechnat,double,numeric,float64,,%9.0g,,,TRUE,Retained
+gcse,double,numeric,float64,,%9.0g,,,TRUE,Retained
+cse,double,numeric,float64,,%9.0g,,,TRUE,Retained
+noeduc,double,numeric,float64,,%9.0g,,,TRUE,Retained
+othered,double,numeric,float64,,%9.0g,,,TRUE,Retained
+acceptndecliners,double,numeric,float64,,%9.0g,,,TRUE,Retained
+whsample,double,numeric,float64,,%9.0g,,,TRUE,Retained
+declinernparts,double,numeric,float64,,%9.0g,,,TRUE,Retained
+gcse_btecnat,double,numeric,float64,,%9.0g,,,TRUE,Retained
+noshow,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q25cor,double,numeric,float64,,%9.0g,,,TRUE,Retained
+cathprot,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q22cor,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q23cor,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q24cor,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q15are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q5are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3q5are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+test,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q15dre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q5dre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3q5dre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q11dre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q11ere,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q11fre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q11gre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q1dre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q1ere,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q1fre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q1gre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3q1dre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3q1ere,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3q1fre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3q1gre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3q10are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q20are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q15cre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q5cre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3q5cre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3q4bre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q14are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q14bre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3q4are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q12are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3q2are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q21cor,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q26cor,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q27cor,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1know,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2know,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3know,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q16are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q16bre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q18are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q18bre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q19are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q19bre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3q6are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3q6bre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3q8are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3q8bre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3q9are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t3q9bre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q17are,double,numeric,float64,reversed coded - see t2,%9.0g,,,TRUE,Retained
+t1q13are,double,numeric,float64,reversed coded see t2,%9.0g,,,TRUE,Retained
+t3q3are,double,numeric,float64,reversed coded see t2,%9.0g,,,TRUE,Retained
+t3q7are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2t1q5are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2t1q5dre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2t1q1dre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2t1q1ere,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2t1q1fre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2t1q1gre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2t1q5cre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2t1q4are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2t1q4bre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2t1q2are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2t1q10are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2t1q3are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2t1q7are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q11are,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q11bre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q11cre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q12bre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q12cre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q13bre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q13cre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q14cre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q15bre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q15ere,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q15fre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q15gre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q17bre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q17cre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q20bre,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q1dfilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q1efilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q1ffilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q1gfilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q10afilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q5cfilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q4afilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q2afilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q4bfilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q6afilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q6bfilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q8afilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q8bfilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q9afilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q9bfilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q3afilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q7afilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q34r,double,numeric,float64,,%9.0g,,,TRUE,Retained
