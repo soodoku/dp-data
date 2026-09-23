@@ -94,6 +94,28 @@ validate_metadata <- function() {
     ),
     error_fun = assertr::error_stop
   )
+  published <- artifacts |>
+    dplyr::filter(.data$publication_status == "published") |>
+    dplyr::mutate(
+      file_exists = fs::file_exists(project_path(.data$location)),
+      observed_sha256 = purrr::map_chr(
+        project_path(.data$location),
+        digest::digest,
+        file = TRUE,
+        algo = "sha256",
+        serialize = FALSE
+      )
+    )
+  assertr::verify(
+    published,
+    all(.data$file_exists),
+    error_fun = assertr::error_stop
+  )
+  assertr::verify(
+    published,
+    all(.data$sha256 == .data$observed_sha256),
+    error_fun = assertr::error_stop
+  )
   assertr::verify(
     recodes,
     all(.data$status %in% c("adopted", "legacy", "proposed", "rejected")),
