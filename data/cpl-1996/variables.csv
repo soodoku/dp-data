@@ -1,0 +1,196 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+gender,double,numeric,,RS GENDER,F9.2,,,TRUE,Retained
+part,double,numeric,,PARTICIPANT OR NON-PARTICIPANT?,F9.2,,,TRUE,Retained
+caseid,double,numeric,,CASE IDENTIFICATION NUMBER,F9.2,,,TRUE,Retained
+group,double,numeric,,RS GROUP,F9.2,,,TRUE,Retained
+future2,double,numeric,,"POST: PRESERVE COAL, GAS, OIL FOR FUTURE",F9.2,,,TRUE,Retained
+grow2,double,numeric,,POST: PROMOTE ECON GROWTH IN COMMUNITY,F9.2,,,TRUE,Retained
+poll2,double,numeric,,POST: REDUCE POLLUTION,F9.2,,,TRUE,Retained
+needs2,double,numeric,,POST:ENSURE EVERYONE HAS BASIC NEEDS MET,F9.2,,,TRUE,Retained
+invest2,double,numeric,,POST: MINIMIZE RISK WHEN INVESTING MONEY,F9.2,,,TRUE,Retained
+resch2,double,numeric,,POST: RESEARCH EVEN IF HIGHER ELEC RATES,F9.2,,,TRUE,Retained
+fedrch2,double,numeric,,POST: FED GOV RESEARCH NEW TECH (CPL),F9.2,,,TRUE,Retained
+reduce2,double,numeric,,"POST: REDUCE COAL, GAS BY EFFICIENT USE",F9.2,,,TRUE,Retained
+jobs2,double,numeric,,POST: NUMBER OF JOBS CREATED,F9.2,,,TRUE,Retained
+tax2,double,numeric,,POST: IMPACT ON COMMUNITYS TAX BASE,F9.2,,,TRUE,Retained
+lowinc2,double,numeric,,POST:LOW INOME CUSTOMERS TREATED FAIRLY,F9.2,,,TRUE,Retained
+growto2,double,numeric,,POST: TRADEOFF: ECO GROWTH & POLLUTION,F9.2,,,TRUE,Retained
+pollto2,double,numeric,,POST: TRADEOFF: REDUCE POLL & INC COSTS,F9.2,,,TRUE,Retained
+needto2,double,numeric,,POST: TRADEOFF: BASIC NEEDS & INC COSTS,F9.2,,,TRUE,Retained
+invsto2,double,numeric,,POST: TRADEOFF: MIN RISK & LOW RETURN,F9.2,,,TRUE,Retained
+lowest2,double,numeric,,POST: RESOURCES WITH LOWEST COST ELEC,F9.2,,,TRUE,Retained
+envmt2,double,numeric,,POST:RESOURCES THAT MAINTAIN ENVIRONMENT,F9.2,,,TRUE,Retained
+jobsst2,double,numeric,,POST:REOURCES CREATE JOBS IN S TX (CPL),F9.2,,,TRUE,Retained
+renew2,double,numeric,,"POST: RENEWABLE RESOURCES LIKE WIND, SUN",F9.2,,,TRUE,Retained
+im1cpl2,double,numeric,,POST: MOST IMP. FACTOR IN CPL SURVEY,F9.2,,,TRUE,Retained
+im2cpl2,double,numeric,,POST: 2ND MOST IMP. FACTOR IN CPL SURVEY,F9.2,,,TRUE,Retained
+im3cpl2,double,numeric,,POST: 3RD MOST IMP. FACTOR IN CPL SURVEY,F9.2,,,TRUE,Retained
+pref2,double,numeric,,POST: DOES R PREFER AN OPTION?,F9.2,,,TRUE,Retained
+pr12,double,numeric,,POST: RS FIRST PREFERENCE,F9.2,,,TRUE,Retained
+pr22,double,numeric,,POST: RS SECOND PREFERENCE,F9.2,,,TRUE,Retained
+pr32,double,numeric,,POST: RS THIRD PREFERENCE,F9.2,,,TRUE,Retained
+costs2,double,numeric,,POST: CONSTRCTN COSTS VS OPERATING COSTS,F9.2,,,TRUE,Retained
+stlteq2,double,numeric,,POST: SHORT VS LONG TERM SOLUTIONS (CPL),F9.2,,,TRUE,Retained
+winter2,double,numeric,,POST: RS WINTER ELECTRICITY COSTS,F9.2,,,TRUE,Retained
+summer2,double,numeric,,POST: RS SUMMER ELECTRICITY COSTS,F9.2,,,TRUE,Retained
+wind2,double,numeric,,POST: WIND AND SOLAR POWER,F9.2,,,TRUE,Retained
+addfac2,double,numeric,,POST: REDUCE NEED FOR ADD ELECTRIC FACS,F9.2,,,TRUE,Retained
+fuels2,double,numeric,,"POST: FUELS LIKE NATL GAS, COAL",F9.2,,,TRUE,Retained
+buypwr2,double,numeric,,POST: BUILD FACILITIES/BUY PWR ELSEWHERE,F9.2,,,TRUE,Retained
+envpct2,double,numeric,,POST: ADDITIONAL ENVIRONMENTAL PROTECTN,F9.2,,,TRUE,Retained
+paywnd2,double,numeric,,POST: HOW MUCH PAY: WIND AND SOLAR,F9.2,,,TRUE,Retained
+payfac2,double,numeric,,POST: HOW MUCH PAY: REDUCE NEED ADD FAC,F9.2,,,TRUE,Retained
+paygas2,double,numeric,,"POST: HOW MUCH PAY: NATL GAS, COAL",F9.2,,,TRUE,Retained
+paybuy2,double,numeric,,POST: HOW MUCH PAY: BUY POWER ELSEWHERE,F9.2,,,TRUE,Retained
+payenv2,double,numeric,,POST: HOW MUCH PAY: ADDL ENVIRON PROTECT,F9.2,,,TRUE,Retained
+paytot2,double,numeric,,POST: HOW MUCH PAY: TOTAL,F9.2,,,TRUE,Retained
+source2,double,numeric,,POST: THE SOURCE OF CPLS ELECTRICITY,F9.2,,,TRUE,Retained
+use2,double,numeric,,POST: GROUP USES MOST ELECTRICITY (CPL),F9.2,,,TRUE,Retained
+rt2,double,numeric,,POST: GROUP PAYS HIGHEST RATE (CPL),F9.2,,,TRUE,Retained
+smog2,double,numeric,,POST: WHICH CAUSES MOST AIR EMISSSIONS,F9.2,,,TRUE,Retained
+profit2,double,numeric,,POST: UTILITY PROFIT ON FUEL (CPL),F9.2,,,TRUE,Retained
+setrt2,double,numeric,,POST: AGENCY SETS ELEC RATES (OPEN END),F9.2,,,TRUE,Retained
+pctful2,double,numeric,,POST: PERCENT OF BILL FOR FUEL (CPL),F9.2,,,TRUE,Retained
+compet2,double,numeric,,POST: BENEFIT COMPETITION OVER REGULAT,F9.2,,,TRUE,Retained
+poor2,double,numeric,,POST: LOW INC. PAY MORE THAN FAIR SHARE,F9.2,,,TRUE,Retained
+impact2,double,numeric,,POST: FUELS HAVE NEG IMPACT ON ENVIRONT,F9.2,,,TRUE,Retained
+option2,double,numeric,,"POST: CPL DOING ENOUGH-RENEW,EFFICIENCY",F9.2,,,TRUE,Retained
+ccost2,double,numeric,,POST: CUST. COST DECREASE W/COMPETITION,F9.2,,,TRUE,Retained
+serv2,double,numeric,,POST: SERVICE IMPROVE W/COMPETITION,F9.2,,,TRUE,Retained
+ecodvt2,double,numeric,,POST: HIGH ELEC. BILLS HINDER ECON DEVT,F9.2,,,TRUE,Retained
+demand2,double,numeric,,POST: HIGH ELEC. BILLS DISCOURAGE USE,F9.2,,,TRUE,Retained
+usage2,double,numeric,,"POST: WIND, SOLAR REDUCE FUTURE COSTS",F9.2,,,TRUE,Retained
+glwarm2,double,numeric,,POST: HOW SERIOUS IS GLOBAL WARMING,F9.2,,,TRUE,Retained
+airpol2,double,numeric,,POST: HOW SERIOUS AIR POLLUTION IN TX,F9.2,,,TRUE,Retained
+polfut2,double,numeric,,POST: FUTURE AIR POLUTION,F9.2,,,TRUE,Retained
+wastetm,double,numeric,,OVERALL SUCCESS OF TOWN MEETING,F9.2,,,TRUE,Retained
+grpdisc,double,numeric,,VALUE OF GROUP DISCUSSIONS,F9.2,,,TRUE,Retained
+talking,double,numeric,,VALUE OF TALKING OUTSIDE DISCUSSIONS,F9.2,,,TRUE,Retained
+puccomm,double,numeric,,VALUE OF SESSION W/ PUC COMMISSIONERS,F9.2,,,TRUE,Retained
+glpart,double,numeric,,GROUP LEADER ALLOWED PARTICIPATION,F9.2,,,TRUE,Retained
+glinfl,double,numeric,,GROUP LEADER INFLUENCED GROUP,F9.2,,,TRUE,Retained
+openmind,double,numeric,,DISENTERS HAD GOOD REASONS,F9.2,,,TRUE,Retained
+readmat,double,numeric,,TIME SPENT READING MATERIALS BEFOREHAND,F9.2,,,TRUE,Retained
+biasmat,double,numeric,,WERE THE MATERIALS BALANCED,F9.2,,,TRUE,Retained
+biasdisc,double,numeric,,TOWN MEETING DISCUSSION WAS BALANCED,F9.2,,,TRUE,Retained
+ideology,double,numeric,,LIBERAL/CONSERVATIVE POLITICAL SCALE,F9.2,,,TRUE,Retained
+ownrent,double,numeric,,OWN OR RENT HOME,F9.2,,,TRUE,Retained
+whopays,double,numeric,,WHO PAYS ELECTRIC BILL,F9.2,,,TRUE,Retained
+whobuys,double,numeric,,WHO BUYS APPLIANCES,F9.2,,,TRUE,Retained
+insulate,double,numeric,,WHO PURCHASES INSULATION,F9.2,,,TRUE,Retained
+educ,double,numeric,,RS EDUCATION,F9.2,,,TRUE,Retained
+age,double,numeric,,RS AGE,F9.2,,,TRUE,Retained
+assist,double,numeric,,DOES R RECEIVE GOVERNMENT ASSISTANCE,F9.2,,,TRUE,Retained
+employed,double,numeric,,DOES R WORK OUTSIDE THE HOME,F9.2,,,TRUE,Retained
+job,double,numeric,,RS OCCUPATION,F9.2,,,TRUE,Retained
+manywork,double,numeric,,NUMBER OF EMPLOYEES AT RS WORK,F9.2,,,TRUE,Retained
+typework,double,numeric,,TYPE OF WORKPLACE,F9.2,,,TRUE,Retained
+income,double,numeric,,RS INCOME,F9.2,,,TRUE,Retained
+race,double,numeric,,RS RACE OR ETHNICITY,F9.2,,,TRUE,Retained
+zipcode,double,numeric,,RS ZIPCODE,F9.2,,,TRUE,Retained
+regcpl,double,numeric,,RS REGION (CPL),F9.2,,,TRUE,Retained
+study,double,numeric,,,F9.2,,,TRUE,Retained
+regwt,double,numeric,,RS REGION (WT),F9.2,,,TRUE,Retained
+strtto2,double,numeric,,"POST:TRADEOFF:SHORT & LONG (WT,SWEPCO)",F9.2,,,TRUE,Retained
+depend2,double,numeric,,"POST: MIX REDUCE DEPENDENCE(WT,SWEPCO)",F9.2,,,TRUE,Retained
+change2,double,numeric,,"POST: RES FLUCTUATE W/DEMAND(WT,SWEPCO)",F9.2,,,TRUE,Retained
+im12,double,numeric,,"POST: MOST IMPORTANT FACTOR (WT, SWEPCO)",F9.2,,,TRUE,Retained
+im22,double,numeric,,"POST: SECOND MOST IMP. FACTOR (WT, SWEPC",F9.2,,,TRUE,Retained
+im32,double,numeric,,"POST: THIRD MOST IMP. FACTOR (WT, SWEPCO",F9.2,,,TRUE,Retained
+im42,double,numeric,,"POST: FOURTH MOST IMP. FACTOR (WT, SWEPC",F9.2,,,TRUE,Retained
+stsol2,double,numeric,,"POST: SHORT TERM FLEX (WT,SWEPCO)",F9.2,,,TRUE,Retained
+ltsol2,double,numeric,,"POST: LONG TERM PREDICT (WT,SWEOCO)",F9.2,,,TRUE,Retained
+build2,double,numeric,,"POST: BUILDING A PLANT IN [WT,SWEPCO]",F9.2,,,TRUE,Retained
+paybld2,double,numeric,,"POST: HOW MUCH PAY: BUILD IN [WT,SWEPCO]",F9.2,,,TRUE,Retained
+cntrct2,double,numeric,,"POST: CNTRCT TERM IF IMPORT (WT,SWEPCP)",F9.2,,,TRUE,Retained
+regswep,double,numeric,,RS REGION (SWEPCO),F9.2,,,TRUE,Retained
+buyout2,double,numeric,,POST: OK IF BUILD OUTSIDE SWEPCO TER.?,F9.2,,,TRUE,Retained
+payex2,double,numeric,,POST: HOW MUCH PAY IF NOT BUILT IN SWEPC,F9.2,,,TRUE,Retained
+knowa2,double,numeric,,POST: DID R ANSWER SOURCE2 CORRECTLY?,F9.2,,,TRUE,Retained
+knowb2,double,numeric,,POST: DID R ANSWER USE2 CORRECTLY?,F9.2,,,TRUE,Retained
+knowc2,double,numeric,,POST: DID R ANSWER RT2 CORRECTLY?,F9.2,,,TRUE,Retained
+knowd2,double,numeric,,POST: DID R ANSWER SMOG2 CORRECTLY?,F9.2,,,TRUE,Retained
+knowe2,double,numeric,,POST: DID R ANSWER SETRT2 CORRECTLY?,F9.2,,,TRUE,Retained
+knowf2,double,numeric,,POST: DID R ANSWER PROFIT2 CORRECTLY?CPL,F9.2,,,TRUE,Retained
+knowg2,double,numeric,,POST: DID R ANSWER PCTFUL2 CORRECTLY?CPL,F9.2,,,TRUE,Retained
+future1,double,numeric,,"PRE: PRESERVE COAL, NATL GAS, OIL FOR FU",F9.2,,,TRUE,Retained
+grow1,double,numeric,,PRE: PROMOTE ECONOMIC GROWTH IN COMMUNIT,F9.2,,,TRUE,Retained
+poll1,double,numeric,,PRE: REDUCE POLLUTION,F9.2,,,TRUE,Retained
+needs1,double,numeric,,PRE: ENSURE EVERYONE HAS BASIC NEEDS MET,F9.2,,,TRUE,Retained
+invest1,double,numeric,,PRE: MINIMIZE RISK WHEN INVESTING MONEY,F9.2,,,TRUE,Retained
+resch1,double,numeric,,PRE: RESEARCH EVEN IF HIGHER ELEC RATES,F9.2,,,TRUE,Retained
+fedrch1,double,numeric,,PRE: FED GOV FUND RESEARCH NEW TECH (CPL,F9.2,,,TRUE,Retained
+reduce1,double,numeric,,"PRE: REDUCE COAL, NATL GAS BY EFFICIENT",F9.2,,,TRUE,Retained
+jobs1,double,numeric,,PRE: NUMBER OF JOBS CREATED,F9.2,,,TRUE,Retained
+tax1,double,numeric,,PRE: IMPACT ON COMMUNITYS TAX BASE,F9.2,,,TRUE,Retained
+lowinc1,double,numeric,,PRE: LOW INCOME CUSTOMERS ARE TREATED FA,F9.2,,,TRUE,Retained
+growto1,double,numeric,,PRE: TRADEOFF: ECO GROWTH & POLLUTION,F9.2,,,TRUE,Retained
+pollto1,double,numeric,,PRE: TRADEOFF: REDUCE POLLUTION & INC CO,F9.2,,,TRUE,Retained
+strtto1,double,numeric,,"PRE: TRADEOFF: SHORT & LONG TERM (WT,SWE",F9.2,,,TRUE,Retained
+needto1,double,numeric,,PRE: TRADEOFF: BASIC NEEDS MET & INC COS,F9.2,,,TRUE,Retained
+invsto1,double,numeric,,PRE: TRADEOFF: MIN INVEST RISK & LOW RET,F9.2,,,TRUE,Retained
+lowest1,double,numeric,,PRE: RESOURCES WITH LOWEST COST ELECTRIC,F9.2,,,TRUE,Retained
+envmt1,double,numeric,,PRE: RESOURCES THAT MAINTAIN ENVIRONMENT,F9.2,,,TRUE,Retained
+jobsst1,double,numeric,,PRE: REOURCES THAT CREATE JOBS IN S TX (,F9.2,,,TRUE,Retained
+depend1,double,numeric,,"PRE: MIX OF RESC REDUCE DEPENDENCE(WT,SW",F9.2,,,TRUE,Retained
+renew1,double,numeric,,"PRE: RENEWABLE RESOURCES SUCH AS WIND, S",F9.2,,,TRUE,Retained
+change1,double,numeric,,"PRE: RESOURCES FLUCTUATE W/DEMAND(WT,SWE",F9.2,,,TRUE,Retained
+im1cpl1,double,numeric,,PRE: MOST IMPORTANT FACTOR IN CPL SURVEY,F9.2,,,TRUE,Retained
+im2cpl1,double,numeric,,PRE: SECOND MOST IMP. FACTOR IN CPL SURV,F9.2,,,TRUE,Retained
+im3cpl1,double,numeric,,PRE: THRID MOST IMP. FACTOR IN CPL SURVE,F9.2,,,TRUE,Retained
+im11,double,numeric,,"PRE: MOST IMPORTANT FACTOR (WT, SWEPCO)",F9.2,,,TRUE,Retained
+im21,double,numeric,,"PRE: SECOND MOST IMP. FACTOR (WT, SWEPCO",F9.2,,,TRUE,Retained
+im31,double,numeric,,"PRE: THIRD MOST IMP. FACTOR (WT, SWEPCO)",F9.2,,,TRUE,Retained
+im41,double,numeric,,"PRE: FOURTH MOST IMP. FACTOR (WT, SWEPCO",F9.2,,,TRUE,Retained
+pref1,double,numeric,,PRE: DOES R PREFER AN OPTION?,F9.2,,,TRUE,Retained
+pr11,double,numeric,,PRE: RS FIRST PREFERENCE,F9.2,,,TRUE,Retained
+pr21,double,numeric,,PRE: RS SECOND PREFERENCE,F9.2,,,TRUE,Retained
+pr31,double,numeric,,PRE: RS THIRD PREFERENCE,F9.2,,,TRUE,Retained
+costs1,double,numeric,,PRE: CONSTRUCTION COSTS VS OPERATING COS,F9.2,,,TRUE,Retained
+stlteq1,double,numeric,,PRE: SHORT TERM VS LONG TERM SOLUTIONS (,F9.2,,,TRUE,Retained
+stsol1,double,numeric,,"PRE: SHORT TERM W/GREATER FLEX (WT,SWEPC",F9.2,,,TRUE,Retained
+ltsol1,double,numeric,,"PRE: LONG TERM W/GREATER PRED (WT,SWEPCO",F9.2,,,TRUE,Retained
+winter1,double,numeric,,PRE: RS WINTER ELECTRICITY COSTS,F9.2,,,TRUE,Retained
+summer1,double,numeric,,PRE: RS SUMMER ELECTRICITY COSTS,F9.2,,,TRUE,Retained
+wind1,double,numeric,,PRE: WIND AND SOLAR POWER,F9.2,,,TRUE,Retained
+addfac1,double,numeric,,PRE: REDUCE NEED FOR ADD ELECTRIC FACILI,F9.2,,,TRUE,Retained
+fuels1,double,numeric,,"PRE: FUELS LIKE NATL GAS, COAL",F9.2,,,TRUE,Retained
+buypwr1,double,numeric,,PRE: BUILD FACILITIES/BUY PWR FROM ELSEW,F9.2,,,TRUE,Retained
+envpct1,double,numeric,,PRE: ADDITIONAL ENVIRONMENTAL PROTECTION,F9.2,,,TRUE,Retained
+build1,double,numeric,,"PRE: BUILDING A POWER PLANT IN [WT,SWEPC",F9.2,,,TRUE,Retained
+paywnd1,double,numeric,,PRE: HOW MUCH PAY: WIND AND SOLAR,F9.2,,,TRUE,Retained
+payfac1,double,numeric,,PRE: HOW MUCH PAY: REDUCE NEED ADD FACIL,F9.2,,,TRUE,Retained
+paygas1,double,numeric,,"PRE: HOW MUCH PAY: FUELS LIKE NAT GAS, C",F9.2,,,TRUE,Retained
+paybuy1,double,numeric,,PRE: HOW MUCH PAY: BUY POWER FROM ELSEWH,F9.2,,,TRUE,Retained
+payenv1,double,numeric,,PRE: HOW MUCH PAY: ADDL ENVIRONMENT PROT,F9.2,,,TRUE,Retained
+paybld1,double,numeric,,"PRE: HOW MUCH PAY: BUILD PLANT IN [WT,SW",F9.2,,,TRUE,Retained
+paytot1,double,numeric,,PRE: HOW MUCH PAY: TOTAL,F9.2,,,TRUE,Retained
+cntrct1,double,numeric,,"PRE: CONTRACT LENGTH IF IMPORT PWR (WT,S",F9.2,,,TRUE,Retained
+source1,double,numeric,,PRE: WHICH SOURCE PRODUCES CPLS ELECTRIC,F9.2,,,TRUE,Retained
+knowa1,double,numeric,,DID R ANSWER SOURCE1 CORRECTLY?,F9.2,,,TRUE,Retained
+use1,double,numeric,,PRE: WHICH GROUP USES MOST ELECTRICITY,F9.2,,,TRUE,Retained
+knowb1,double,numeric,,DID R ANSWER USE1 CORRECTLY?,F9.2,,,TRUE,Retained
+rt1,double,numeric,,PRE: WHICH GROUP PAYS HIGHEST RATE,F9.2,,,TRUE,Retained
+knowc1,double,numeric,,DID R ANSWER RT1 CORRECTLY?,F9.2,,,TRUE,Retained
+smog1,double,numeric,,PRE: WHICH CAUSES THE MOST AIR EMISSSION,F9.2,,,TRUE,Retained
+knowd1,double,numeric,,DID R ANSWER SMOG1 CORRECTLY?,F9.2,,,TRUE,Retained
+profit1,double,numeric,,PRE: UTILITY PROFIT ON FUEL (CPL),F9.2,,,TRUE,Retained
+knowf1,double,numeric,,DID R ANSWER PROFIT1 CORRECTLY? (CPL),F9.2,,,TRUE,Retained
+setrt1,double,numeric,,PRE: AGENCY THAT SETS ELEC RATE (OPEN EN,F9.2,,,TRUE,Retained
+knowe1,double,numeric,,DID R ANSWER SETRT1 CORRECTLY?,F9.2,,,TRUE,Retained
+pctful1,double,numeric,,PRE: PERCENT OF BILL TO PAY FOR FUEL (CP,F9.2,,,TRUE,Retained
+knowg1,double,numeric,,DID R ANSWER PCTFUL1 CORRECTLY? (CPL),F9.2,,,TRUE,Retained
+compet1,double,numeric,,PRE: BENEFITS OF COMPETITION OVER REGULA,F9.2,,,TRUE,Retained
+poor1,double,numeric,,PRE: LOW INCOME PAY MORE THAN FAIR SHARE,F9.2,,,TRUE,Retained
+impact1,double,numeric,,PRE: FUELS HAVE NEG IMPACT ON ENVIRONMEN,F9.2,,,TRUE,Retained
+option1,double,numeric,,"PRE: CPL DOING ENOUGH: RENEWABLE, EFFICI",F9.2,,,TRUE,Retained
+ccost1,double,numeric,,PRE: CUSTOMER COSTS DECREASE W/COMPETITI,F9.2,,,TRUE,Retained
+serv1,double,numeric,,PRE: SERVICE IMPROVES W/COMPETITION,F9.2,,,TRUE,Retained
+ecodvt1,double,numeric,,PRE: HIGH ELECTRIC BILLS HINDER ECON. DE,F9.2,,,TRUE,Retained
+demand1,double,numeric,,PRE: HIGH ELECTRIC BILLS DISCOURAGE USE,F9.2,,,TRUE,Retained
+usage1,double,numeric,,"PRE: USE OF WIND, SOLAR REDUCE FUTURE CO",F9.2,,,TRUE,Retained
+glwarm1,double,numeric,,PRE: HOW SERIOUS IS GLOBAL WARMING,F9.2,,,TRUE,Retained
+airpol1,double,numeric,,PRE: HOW SERIOUS IS AIR POLLUTION IN TEX,F9.2,,,TRUE,Retained
+polfut1,double,numeric,,PRE: THE FUTURE OF AIR POLUTION IN TEXAS,F9.2,,,TRUE,Retained
+dopdate,double,numeric,,DATE DOP COMMENCED (YEAR/MONTH/DAY),F9.2,,,TRUE,Retained
+dopdays,double,numeric,,NUMBER OF DAYS OVER WHICH DOP OCCURRED,F9.2,,,TRUE,Retained
