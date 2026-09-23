@@ -1,5 +1,5 @@
 table,grain,primary_key,format,status,description
-respondents,one participant in one poll,poll_id + respondent_id,parquet,current,Reviewed knowledge samples with original survey identifiers
+respondents,one participant in one poll,poll_id + respondent_id,parquet,current,Reviewed knowledge samples with original survey IDs or documented file-scoped row IDs
 items,one fielded item in one poll,poll_id + item_id,parquet,planned,Question text construct response scale and answer key
 responses,one person-item-wave response,poll_id + respondent_id + wave + item_id,parquet,planned,Observed item responses with explicit missing codes
 indices,one index definition in one poll,poll_id + index_id,parquet,planned,Knowledge and attitude index definitions

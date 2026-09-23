@@ -358,8 +358,8 @@
             "type": "string"
           },
           {
-            "name": "correct_value",
-            "type": "number"
+            "name": "correct_values",
+            "type": "string"
           },
           {
             "name": "incorrect_values",

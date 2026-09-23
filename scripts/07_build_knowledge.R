@@ -14,13 +14,20 @@ tables <- purrr::map(table_names, function(name) {
 }) |>
   rlang::set_names(table_names)
 
-parity <- validate_knowledge_parity(tables)
+comparison <- compare_knowledge_batteries(tables)
+parity <- comparison$summary
 directory <- project_path("output")
 fs::dir_create(directory)
 manifest <- purrr::imap(tables, write_typed_export, directory = directory) |>
   purrr::list_rbind()
 readr::write_csv(manifest, file.path(directory, "manifest.csv"))
 readr::write_csv(parity, project_path("audit", "knowledge_parity.csv"))
+purrr::walk(c("differences", "score_changes"), function(name) {
+  readr::write_csv(
+    comparison[[name]],
+    project_path("audit", paste0("knowledge_", name, ".csv"))
+  )
+})
 
 counts <- tables$knowledge_responses |>
   dplyr::count(

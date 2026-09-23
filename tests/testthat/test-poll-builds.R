@@ -9,16 +9,16 @@ pilot_tables <- function() {
     })
 }
 
-test_that("reviewed surveys reproduce the deposited batteries", {
+test_that("survey comparisons expose only the documented monarchy change", {
   tables <- pilot_tables()
-  audit <- validate_knowledge_parity(tables)
-  expect_equal(sum(audit$item_differences), 0)
+  audit <- compare_knowledge_batteries(tables)$summary
+  expect_equal(sum(audit$item_differences), 58)
   expect_equal(sum(audit$female_differences), 0)
-  expect_equal(nrow(tables$respondents), 877L)
-  expect_equal(nrow(tables$knowledge_responses), 10922L)
-  expect_equal(nrow(tables$knowledge_scores), 1754L)
-  expect_equal(nrow(tables$memberships), 873L)
-  expect_equal(nrow(tables$groups), 70L)
+  expect_equal(nrow(tables$respondents), 2088L)
+  expect_equal(nrow(tables$knowledge_responses), 30944L)
+  expect_equal(nrow(tables$knowledge_scores), 4176L)
+  expect_equal(nrow(tables$memberships), 2084L)
+  expect_equal(nrow(tables$groups), 144L)
 })
 
 test_that("Northern Ireland retains its first headerless group record", {
@@ -74,12 +74,14 @@ test_that("unreviewed response codes cannot silently become missing", {
   )
 })
 
-test_that("parity checks detect a changed scored item", {
+test_that("benchmark comparisons report an additional changed scored item", {
   tables <- pilot_tables()
   row <- which(!is.na(tables$knowledge_responses$correct))[[1]]
   tables$knowledge_responses$correct[[row]] <-
     1L - tables$knowledge_responses$correct[[row]]
-  expect_error(validate_knowledge_parity(tables))
+  audit <- compare_knowledge_batteries(tables)
+  expect_equal(sum(audit$summary$item_differences), 59L)
+  expect_equal(nrow(audit$differences), 59L)
 })
 
 test_that("responses preserve missing codes and scores declare filling", {
@@ -94,10 +96,7 @@ test_that("responses preserve missing codes and scores declare filling", {
   expect_true(all(responses$correct[!missing] %in% 0:1))
 
   for (poll_id in unique(tables$respondents$poll_id)) {
-    battery <- readr::read_csv(
-      project_path("data", poll_id, "knowledge-battery.csv"),
-      col_types = readr::cols(.default = readr::col_double())
-    )
+    battery <- read_knowledge_battery(poll_id)
     people <- tables$respondents |>
       dplyr::filter(.data$poll_id == .env$poll_id) |>
       dplyr::arrange(.data$battery_row)
@@ -107,6 +106,11 @@ test_that("responses preserve missing codes and scores declare filling", {
       columns <- items$benchmark_column[items$wave == wave]
       expected <- as.matrix(battery[columns])
       expected[is.na(expected)] <- 0
+      if (poll_id == "uk-monarchy-1996" && wave == 2) {
+        source <- read_poll_survey(poll_id)
+        expected[, "knowc2raw"] <-
+          as.integer(source$R5C[people$source_row] == 1)
+      }
       scores <- tables$knowledge_scores |>
         dplyr::filter(
           .data$poll_id == .env$poll_id, .data$wave == .env$wave
@@ -255,4 +259,113 @@ test_that("new poll keys agree with source correctness for answered items", {
       )
     })
   })
+})
+
+test_that("Monarchy T2 uses R5C and the deposit demonstrably repeats Q5C", {
+  poll_id <- "uk-monarchy-1996"
+  source <- read_poll_survey(poll_id)
+  built <- build_poll_knowledge(poll_id)
+  people <- built$respondents |> dplyr::arrange(.data$battery_row)
+  battery <- read_knowledge_battery(poll_id)
+  score <- function(x) {
+    dplyr::case_when(x == 1 ~ 1L, x == 2 ~ 0L, TRUE ~ NA_integer_)
+  }
+  expect_identical(battery$knowc2raw, score(source$Q5C[people$source_row]))
+  observed <- built$knowledge_responses |>
+    dplyr::filter(.data$item_id == "knowledge-3", .data$wave == 2) |>
+    dplyr::arrange(.data$source_row)
+  expect_identical(observed$correct, score(source$R5C[people$source_row]))
+  comparison <- compare_knowledge_batteries(built)
+  expect_equal(nrow(comparison$differences), 58L)
+  expect_setequal(comparison$differences$source_column, "R5C")
+  change <- comparison$score_changes |>
+    dplyr::filter(.data$wave == 2)
+  expect_equal(change$changed_scores, 55L)
+  expect_equal(change$change_percentage_points, -100 * 5 / (258 * 8))
+  expect_identical(
+    knowledge_participants(poll_id, source),
+    knowledge_participants(poll_id, source[rev(seq_len(nrow(source))), ])
+  )
+})
+
+test_that("CPL retains explicit unknown codes and original respondent IDs", {
+  source <- read_poll_survey("cpl-1996")
+  built <- build_poll_knowledge("cpl-1996")
+  expect_equal(dim(source), c(1246L, 196L))
+  expect_equal(nrow(built$respondents), 216L)
+  unknown <- built$knowledge_responses |>
+    dplyr::filter(.data$raw_value == 99)
+  expect_equal(nrow(unknown), 759L)
+  expect_true(all(is.na(unknown$correct)))
+  expect_true(all(unknown$missing_code == "99"))
+  expect_true(all(unknown$response_status == "non_substantive"))
+  expect_equal(
+    built$respondents$respondent_id,
+    as.character(as.integer(source$caseid[source$part == 1]))
+  )
+})
+
+test_that("utility keys agree with original correctness fields", {
+  purrr::walk(c("cpl-1996", "swepco-1996", "wtu-1996"), function(poll_id) {
+    source <- read_poll_survey(poll_id)
+    built <- build_poll_knowledge(poll_id)
+    items <- read_metadata("knowledge_items") |>
+      dplyr::filter(.data$poll_id == .env$poll_id)
+    purrr::walk(seq_len(nrow(items)), function(row) {
+      item <- items[row, ]
+      scored_column <- sub("raw$", "", item$benchmark_column)
+      if (poll_id != "cpl-1996") scored_column <- toupper(scored_column)
+      observed <- built$knowledge_responses |>
+        dplyr::filter(.data$source_column == item$source_column)
+      expect_equal(
+        tidyr::replace_na(observed$correct, 0L),
+        as.numeric(source[[scored_column]][observed$source_row])
+      )
+    })
+    expect_identical(
+      knowledge_participants(poll_id, source),
+      knowledge_participants(poll_id, source[rev(seq_len(nrow(source))), ])
+    )
+  })
+})
+
+test_that("WTU includes the documented post-wave wholesale category", {
+  built <- build_poll_knowledge("wtu-1996")
+  wholesale <- built$knowledge_responses |>
+    dplyr::filter(.data$source_column == "USE2", .data$raw_value == 4)
+  expect_equal(nrow(wholesale), 2L)
+  expect_true(all(wholesale$correct == 0L))
+  expect_setequal(wholesale$respondent_id, c("20000100", "20001180"))
+})
+
+test_that("election scoring separates missing codes and party-placement keys", {
+  source <- read_poll_survey("uk-general-election-1997")
+  built <- build_poll_knowledge("uk-general-election-1997")
+  expect_equal(nrow(built$respondents), 275L)
+  expect_false("4416" %in% built$respondents$respondent_id)
+  expect_true(4416 %in% source$serial)
+  responses <- built$knowledge_responses
+  negative <- responses$raw_value %in% c(-8, -9)
+  expect_true(any(negative))
+  expect_true(all(is.na(responses$correct[negative])))
+  conservative <- grepl(
+    "^(redstc|taxc|wagec|euc)[12]$", responses$source_column
+  )
+  other_party <- grepl(
+    "^(redstl|taxl|wagel|eul|redstld|taxld|wageld|euld)[12]$",
+    responses$source_column
+  )
+  expect_equal(responses$correct[conservative & !negative],
+               as.integer(responses$raw_value[conservative & !negative] < 4))
+  expect_equal(responses$correct[other_party & !negative],
+               as.integer(responses$raw_value[other_party & !negative] > 4))
+  expect_identical(
+    knowledge_participants("uk-general-election-1997", source),
+    knowledge_participants(
+      "uk-general-election-1997", source[rev(seq_len(nrow(source))), ]
+    )
+  )
+  battery <- read_knowledge_battery("uk-general-election-1997")
+  expect_true(all(purrr::map_lgl(battery, is.integer)))
+  expect_equal(battery$redstc1raw[[1]], 1L)
 })

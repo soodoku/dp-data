@@ -141,7 +141,7 @@ import_reviewed_surveys <- function() {
   codebooks <- read_metadata("artifacts") |>
     dplyr::filter(
       .data$publication_status == "published",
-      basename(.data$location) == "codebook.txt"
+      basename(.data$location) %in% c("codebook.txt", "codebook.doc")
     )
   purrr::walk(seq_len(nrow(codebooks)), function(row) {
     record <- codebooks[row, ]
@@ -163,6 +163,9 @@ read_poll_survey <- function(poll_id) {
   path <- project_path(record$public_path)
   if (record$transformation == "exact-copy" && grepl("\\.sav$", path)) {
     haven::read_sav(path, user_na = TRUE) |>
+      dplyr::mutate(source_row = dplyr::row_number(), .before = 1)
+  } else if (record$transformation == "exact-copy" && grepl("\\.dta$", path)) {
+    haven::read_dta(path) |>
       dplyr::mutate(source_row = dplyr::row_number(), .before = 1)
   } else if (record$transformation == "exclude-verbatim") {
     arrow::read_parquet(path)

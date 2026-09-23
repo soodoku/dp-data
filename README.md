@@ -20,13 +20,14 @@ Direct identifiers were found in at least one historical raw file. The archive
 therefore cannot be published as an undifferentiated dump. See
 [`docs/disclosure.md`](docs/disclosure.md).
 
-The survey-based build covers UK Health 1998, Northern Ireland 2007, UK Crime
-1994, and UK–EU 1995: 877 participants, 10,922 item-wave responses, and 70 known
-discussion groups. It reproduces all four deposited knowledge batteries exactly
-and publishes typed Parquet tables in `output/`. Group membership is known for
-873 participants; four UK–EU attendees remain in the knowledge data without a
-group assignment. The [build notes](docs/knowledge-build.md) document the
-sources, scoring rules, and group-file corrections.
+The survey-based build now covers nine polls: 2,088 participants, 30,944
+item-wave responses, and 144 known discussion groups. It publishes five typed
+Parquet tables in `output/`. Eight batteries match their deposits; UK Monarchy
+corrects a repeated T1 field in the deposited T2 battery. Group membership is
+known for 2,084 participants; four UK–EU attendees remain without an assignment.
+The [build notes](docs/knowledge-build.md) describe the complete coverage.
+The [latest five-poll audit](docs/monarchy-election-utilities.md) explains the
+correction and the remaining source limitations.
 
 ## Reproduce
 
@@ -36,7 +37,7 @@ make check
 ```
 
 `make check` validates the Frictionless Data Package, source checksums,
-metadata contracts, the survey-based build and item-level parity, tests, and linting. `make inventory` is a local-only task
+metadata contracts, the survey-based build and item-level comparisons, tests, and linting. `make inventory` is a local-only task
 that rebuilds the CDD vault inventory from the untracked archive.
 
 The five original CDD ZIP exports stay untracked at the repository root.
@@ -49,7 +50,7 @@ an altered or missing bundle.
 | Location | Role |
 |---|---|
 | `data/<poll_id>/` | Reviewed data and metadata for one poll |
-| `evidence/benchmarks/` | Published downstream files used only for parity tests |
+| `evidence/benchmarks/` | Published downstream files used only for comparisons |
 | `evidence/deposits/` | Immutable public deposits awaiting poll-level extraction |
 | `metadata/` | Poll registry, source catalog, aliases, recodes, export contracts |
 | `datapackage.json` | Frictionless schemas for the tabular metadata |
@@ -93,4 +94,4 @@ knowledge-battery analysis; they cannot by themselves regenerate
 `polardata` or establish a respondent-level join to it. The original CDD
 survey files and scripts in the local vault must be audited poll by poll
 before the full aggregate is rebuilt. Published aggregates in
-`evidence/benchmarks/` remain parity targets, not build inputs.
+`evidence/benchmarks/` remain comparison targets, not build inputs.

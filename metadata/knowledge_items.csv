@@ -1,4 +1,4 @@
-poll_id,item_id,item_order,wave,source_column,benchmark_column,correct_value,incorrect_values,missing_values,evidence
+poll_id,item_id,item_order,wave,source_column,benchmark_column,correct_values,incorrect_values,missing_values,evidence
 uk-health-1998,knowledge-1,1,1,sopha1,sopha1r,0,1,-9|-8|-1,Source SPSS answera1 correctness labels and sopha1 response labels
 uk-health-1998,knowledge-2,2,1,sophb1,sophb1r,1,0,-9|-8|-1,Source SPSS answerb1 correctness labels and sophb1 response labels
 uk-health-1998,knowledge-3,3,1,sophc1,sophc1r,1,0,-9|-8|-1,Source SPSS answerc1 correctness labels and sophc1 response labels
@@ -49,3 +49,83 @@ uk-eu-1995,knowledge-2,2,2,swiss2,pk22raw,2,1,3|9,historical-cdd-scripts:scripts
 uk-eu-1995,knowledge-3,3,2,inctax2,pk32raw,2,1,3|9,historical-cdd-scripts:scripts/uk_eu.R lines 236-246
 uk-eu-1995,knowledge-4,4,2,elect2,pk42raw,1,2,3|9,historical-cdd-scripts:scripts/uk_eu.R lines 236-246
 uk-eu-1995,knowledge-5,5,2,ptyapp2,pk52raw,2,1,3|9,historical-cdd-scripts:scripts/uk_eu.R lines 236-246
+uk-monarchy-1996,knowledge-1,1,1,Q5A,knowa1raw,2,1,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
+uk-monarchy-1996,knowledge-2,2,1,Q5B,knowb1raw,2,1,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
+uk-monarchy-1996,knowledge-3,3,1,Q5C,knowc1raw,1,2,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
+uk-monarchy-1996,knowledge-4,4,1,Q5D,knowd1raw,2,1,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
+uk-monarchy-1996,knowledge-5,5,1,Q5E,knowe1raw,1,2,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
+uk-monarchy-1996,knowledge-6,6,1,Q5F,knowf1raw,1,2,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
+uk-monarchy-1996,knowledge-7,7,1,Q5G,knowg1raw,2,1,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
+uk-monarchy-1996,knowledge-8,8,1,Q5H,knowh1raw,1,2,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
+uk-general-election-1997,knowledge-1,1,1,inflat1,knowa1raw,1,2,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-2,2,1,intrst1,knowb1raw,2,1,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-3,3,1,ukempl1,knowc1raw,2,1,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-4,4,1,redstc1,redstc1raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-5,5,1,taxc1,taxc1raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-6,6,1,wagec1,wagec1raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-7,7,1,euc1,euc1raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-8,8,1,redstl1,redstl1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-9,9,1,taxl1,taxl1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-10,10,1,wagel1,wagel1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-11,11,1,eul1,eul1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-12,12,1,redstld1,redstld1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-13,13,1,taxld1,taxld1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-14,14,1,wageld1,wageld1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-15,15,1,euld1,euld1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+cpl-1996,knowledge-1,1,1,source1,knowa1raw,3,1|2|4|5|6,99,Archived utility script and source codebook correctness fields
+cpl-1996,knowledge-2,2,1,use1,knowb1raw,3,1|2,99,Archived utility script and source codebook correctness fields
+cpl-1996,knowledge-3,3,1,rt1,knowc1raw,2,1|3,99,Archived utility script and source codebook correctness fields
+cpl-1996,knowledge-4,4,1,smog1,knowd1raw,2,1|3,99,Archived utility script and source codebook correctness fields
+cpl-1996,knowledge-5,5,1,setrt1,knowe1raw,1,2|3|4|5|6,99,Archived utility script and source codebook correctness fields
+cpl-1996,knowledge-6,6,1,profit1,knowf1raw,0,1|2|3,99,Archived utility script and source codebook correctness fields
+cpl-1996,knowledge-7,7,1,pctful1,knowg1raw,2,1|3|4|5,99,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-1,1,1,SOURCE1,knowa1raw,1,2|3|4|5|6,,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-2,2,1,USE1,knowb1raw,3,1|2,,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-3,3,1,RT1,knowc1raw,1,2|3,,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-4,4,1,SMOG1,knowd1raw,2,1|3,,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-5,5,1,SETRT1,knowe1raw,1,2|3|4|5|6,,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-1,1,1,SOURCE1,knowa1raw,3,1|2|4|5|6,,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-2,2,1,USE1,knowb1raw,1,2|3,,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-3,3,1,RT1,knowc1raw,1,2|3,,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-4,4,1,SMOG1,knowd1raw,2,1|3,,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-5,5,1,SETRT1,knowe1raw,1,2|3|4|5|6,,Archived utility script and source codebook correctness fields
+uk-monarchy-1996,knowledge-1,1,2,R5A,knowa2raw,2,1,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
+uk-monarchy-1996,knowledge-2,2,2,R5B,knowb2raw,2,1,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
+uk-monarchy-1996,knowledge-3,3,2,R5C,knowc2raw,1,2,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
+uk-monarchy-1996,knowledge-4,4,2,R5D,knowd2raw,2,1,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
+uk-monarchy-1996,knowledge-5,5,2,R5E,knowe2raw,1,2,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
+uk-monarchy-1996,knowledge-6,6,2,R5F,knowf2raw,1,2,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
+uk-monarchy-1996,knowledge-7,7,2,R5G,knowg2raw,2,1,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
+uk-monarchy-1996,knowledge-8,8,2,R5H,knowh2raw,1,2,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
+uk-general-election-1997,knowledge-1,1,2,inflat2,knowa2raw,1,2,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-2,2,2,intrst2,knowb2raw,2,1,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-3,3,2,ukempl2,knowc2raw,2,1,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-4,4,2,redstc2,redstc2raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-5,5,2,taxc2,taxc2raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-6,6,2,wagec2,wagec2raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-7,7,2,euc2,euc2raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-8,8,2,redstl2,redstl2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-9,9,2,taxl2,taxl2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-10,10,2,wagel2,wagel2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-11,11,2,eul2,eul2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-12,12,2,redstld2,redstld2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-13,13,2,taxld2,taxld2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-14,14,2,wageld2,wageld2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-15,15,2,euld2,euld2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+cpl-1996,knowledge-1,1,2,source2,knowa2raw,3,1|2|4|5|6,99,Archived utility script and source codebook correctness fields
+cpl-1996,knowledge-2,2,2,use2,knowb2raw,3,1|2,99,Archived utility script and source codebook correctness fields
+cpl-1996,knowledge-3,3,2,rt2,knowc2raw,2,1|3,99,Archived utility script and source codebook correctness fields
+cpl-1996,knowledge-4,4,2,smog2,knowd2raw,2,1|3,99,Archived utility script and source codebook correctness fields
+cpl-1996,knowledge-5,5,2,setrt2,knowe2raw,1,2|3|4|5|6,99,Archived utility script and source codebook correctness fields
+cpl-1996,knowledge-6,6,2,profit2,knowf2raw,0,1|2|3,99,Archived utility script and source codebook correctness fields
+cpl-1996,knowledge-7,7,2,pctful2,knowg2raw,2,1|3|4|5,99,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-1,1,2,SOURCE2,knowa2raw,1,2|3|4|5|6,,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-2,2,2,USE2,knowb2raw,3,1|2,,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-3,3,2,RT2,knowc2raw,1,2|3,,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-4,4,2,SMOG2,knowd2raw,2,1|3,,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-5,5,2,SETRT2,knowe2raw,1,2|3|4|5|6,,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-1,1,2,SOURCE2,knowa2raw,3,1|2|4|5|6,,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-2,2,2,USE2,knowb2raw,1,2|3|4,,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-3,3,2,RT2,knowc2raw,1,2|3,,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-4,4,2,SMOG2,knowd2raw,2,1|3,,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-5,5,2,SETRT2,knowe2raw,1,2|3|4|5|6,,Archived utility script and source codebook correctness fields

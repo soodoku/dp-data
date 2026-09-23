@@ -1,9 +1,9 @@
 table,column,arrow_type,nullable,key,description
 respondents,poll_id,string,FALSE,TRUE,Stable poll identifier
-respondents,respondent_id,string,FALSE,TRUE,Poll-specific de-identified person identifier
+respondents,respondent_id,string,FALSE,TRUE,Original survey ID or documented file-scoped row ID
 respondents,arm,string,TRUE,FALSE,Observed participant status; does not assert random assignment
 respondents,source_row,int32,FALSE,FALSE,One-based row in the original poll survey
-respondents,battery_row,int32,FALSE,FALSE,Historical participant ordering for deposit parity only
+respondents,battery_row,int32,FALSE,FALSE,Historical participant ordering for deposit comparison only
 respondents,female,int32,TRUE,FALSE,Female indicator preserving the source coding
 items,poll_id,string,FALSE,TRUE,Stable poll identifier
 items,item_id,string,FALSE,TRUE,Stable item identifier within poll
@@ -14,7 +14,7 @@ items,scale_min,float64,TRUE,FALSE,Lowest substantive numeric response
 items,scale_max,float64,TRUE,FALSE,Highest substantive numeric response
 items,correct_value,string,TRUE,FALSE,Correct answer for a knowledge item
 responses,poll_id,string,FALSE,TRUE,Stable poll identifier
-responses,respondent_id,string,FALSE,TRUE,Poll-specific de-identified person identifier
+responses,respondent_id,string,FALSE,TRUE,Original survey ID or documented file-scoped row ID
 responses,wave,int32,FALSE,TRUE,Ordered measurement wave
 responses,item_id,string,FALSE,TRUE,Stable item identifier within poll
 responses,value_numeric,float64,TRUE,FALSE,Numeric response when applicable
@@ -33,12 +33,12 @@ groups,poll_id,string,FALSE,TRUE,Stable poll identifier
 groups,session_id,string,FALSE,TRUE,Stable deliberative session identifier
 groups,group_id,string,FALSE,TRUE,Stable group identifier within session
 memberships,poll_id,string,FALSE,TRUE,Stable poll identifier
-memberships,respondent_id,string,FALSE,TRUE,Poll-specific de-identified person identifier
+memberships,respondent_id,string,FALSE,TRUE,Original survey ID or documented file-scoped row ID
 memberships,session_id,string,FALSE,TRUE,Stable deliberative session identifier
 memberships,group_id,string,FALSE,TRUE,Stable group identifier within session
 memberships,weight,float64,FALSE,FALSE,Multiple-membership weight summing to one by person
 knowledge_responses,poll_id,string,FALSE,TRUE,Stable poll identifier
-knowledge_responses,respondent_id,string,FALSE,TRUE,Original survey identifier within poll
+knowledge_responses,respondent_id,string,FALSE,TRUE,Original survey ID or documented file-scoped row ID
 knowledge_responses,wave,int32,FALSE,TRUE,Source pre or post wave numbered 1 or 2
 knowledge_responses,item_id,string,FALSE,TRUE,Knowledge item identifier within poll
 knowledge_responses,source_row,int32,FALSE,FALSE,One-based row in original survey
@@ -48,7 +48,7 @@ knowledge_responses,correct,int32,TRUE,FALSE,Correct 1 or incorrect 0; non-subst
 knowledge_responses,response_status,string,FALSE,FALSE,answered or non_substantive or source_missing
 knowledge_responses,missing_code,string,TRUE,FALSE,Original special missing code or system; null for substantive responses
 knowledge_scores,poll_id,string,FALSE,TRUE,Stable poll identifier
-knowledge_scores,respondent_id,string,FALSE,TRUE,Original survey identifier within poll
+knowledge_scores,respondent_id,string,FALSE,TRUE,Original survey ID or documented file-scoped row ID
 knowledge_scores,wave,int32,FALSE,TRUE,Source pre or post wave numbered 1 or 2
 knowledge_scores,n_items,int32,FALSE,FALSE,Full battery denominator
 knowledge_scores,n_observed,int32,FALSE,FALSE,Number of substantively answered items

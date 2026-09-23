@@ -47,6 +47,47 @@ knowledge_participants <- function(poll_id, survey, groups = NULL) {
           as.character(as.integer(.data$group))
         )
       )
+  } else if (poll_id == "uk-monarchy-1996") {
+    stopifnot(all(survey$GROUP %in% c(-1, 2:16)))
+    participants <- survey |>
+      dplyr::filter(.data$GROUP > 0) |>
+      dplyr::arrange(.data$source_row) |>
+      dplyr::transmute(
+        source_row = .data$source_row,
+        respondent_id = paste0("source-row-", .data$source_row),
+        female = as.integer(.data$SEX == 2),
+        group_id = as.character(as.integer(.data$GROUP))
+      )
+  } else if (poll_id == "uk-general-election-1997") {
+    stopifnot(all(survey$serial == round(survey$serial)))
+    participants <- survey |>
+      dplyr::filter(.data$filter == 1) |>
+      dplyr::arrange(.data$source_row) |>
+      dplyr::transmute(
+        source_row = .data$source_row,
+        respondent_id = as.character(as.integer(.data$serial)),
+        female = as.integer(1 - .data$gender),
+        group_id = as.character(as.integer(.data$group))
+      )
+  } else if (poll_id %in% c("cpl-1996", "swepco-1996", "wtu-1996")) {
+    fields <- if (poll_id == "cpl-1996") {
+      c("caseid", "part", "group", "gender")
+    } else {
+      c("CASEID", "PART", "GROUP", "GENDER")
+    }
+    stopifnot(
+      all(survey[[fields[[1]]]] == round(survey[[fields[[1]]]])),
+      all(survey[[fields[[4]]]] %in% 1:2)
+    )
+    participants <- survey |>
+      dplyr::filter(.data[[fields[[2]]]] == 1) |>
+      dplyr::arrange(.data$source_row) |>
+      dplyr::transmute(
+        source_row = .data$source_row,
+        respondent_id = as.character(as.integer(.data[[fields[[1]]]])),
+        female = as.integer(.data[[fields[[4]]]] == 2),
+        group_id = as.character(as.integer(.data[[fields[[3]]]]))
+      )
   } else if (poll_id == "northern-ireland-2007") {
     if (is.null(groups)) {
       groups <- readr::read_csv(
@@ -108,15 +149,14 @@ knowledge_participants <- function(poll_id, survey, groups = NULL) {
 knowledge_code_lookup <- function(items) {
   codes <- items |>
     dplyr::select(
-      "poll_id", "wave", "item_id", "correct_value",
+      "poll_id", "wave", "item_id", "correct_values",
       "incorrect_values", "missing_values"
     ) |>
-    dplyr::mutate(correct_values = as.character(.data$correct_value)) |>
-    dplyr::select(-"correct_value") |>
     tidyr::pivot_longer(
       c("correct_values", "incorrect_values", "missing_values"),
       names_to = "rule", values_to = "raw_value"
     ) |>
+    dplyr::filter(!is.na(.data$raw_value), .data$raw_value != "") |>
     tidyr::separate_longer_delim("raw_value", delim = "|") |>
     dplyr::mutate(
       raw_value = as.numeric(.data$raw_value),
@@ -220,56 +260,96 @@ build_poll_knowledge <- function(poll_id) {
   )
 }
 
-validate_knowledge_parity <- function(tables) {
+read_knowledge_battery <- function(poll_id) {
+  data <- readr::read_csv(
+    project_path("data", poll_id, "knowledge-battery.csv"),
+    col_types = readr::cols(.default = readr::col_character()), na = "NA"
+  )
+  values <- unlist(data, use.names = FALSE)
+  stopifnot(all(is.na(values) | values %in% c("0", "1", "FALSE", "TRUE")))
+  data |>
+    dplyr::mutate(dplyr::across(dplyr::everything(), function(value) {
+      dplyr::if_else(
+        is.na(value), NA_integer_, as.integer(value %in% c("1", "TRUE"))
+      )
+    }))
+}
+
+compare_knowledge_batteries <- function(tables) {
   items <- read_metadata("knowledge_items")
   poll_ids <- unique(tables$respondents$poll_id)
-  audit <- purrr::map(poll_ids, function(poll_id) {
+  comparisons <- purrr::map(poll_ids, function(poll_id) {
     specification <- items |>
       dplyr::filter(.data$poll_id == .env$poll_id)
-    expected <- readr::read_csv(
-      project_path("data", poll_id, "knowledge-battery.csv"),
-      col_types = readr::cols(.default = readr::col_double())
-    )
+    expected <- read_knowledge_battery(poll_id)
     people <- tables$respondents |>
       dplyr::filter(.data$poll_id == .env$poll_id) |>
       dplyr::arrange(.data$battery_row)
-    actual <- tables$knowledge_responses |>
-      dplyr::filter(.data$poll_id == .env$poll_id) |>
-      dplyr::inner_join(
-        specification |>
-          dplyr::select("poll_id", "wave", "item_id", "benchmark_column"),
-        by = c("poll_id", "wave", "item_id"), relationship = "many-to-one"
-      ) |>
-      dplyr::inner_join(
-        people |> dplyr::select("respondent_id", "battery_row"),
-        by = "respondent_id", relationship = "many-to-one"
-      ) |>
-      dplyr::select("battery_row", "benchmark_column", "correct") |>
-      tidyr::pivot_wider(
-        names_from = "benchmark_column", values_from = "correct"
-      ) |>
-      dplyr::arrange(.data$battery_row) |>
-      dplyr::select(dplyr::all_of(specification$benchmark_column))
-    stopifnot(nrow(actual) == nrow(expected))
-    deposited <- as.matrix(expected[specification$benchmark_column])
-    rebuilt <- as.matrix(actual)
-    item_differences <- sum(xor(is.na(rebuilt), is.na(deposited))) +
-      sum(rebuilt != deposited, na.rm = TRUE)
+    stopifnot(nrow(expected) == nrow(people))
     female_differences <-
       sum(xor(is.na(people$female), is.na(expected$female))) +
       sum(people$female != expected$female, na.rm = TRUE)
-    tibble::tibble(
-      poll_id = poll_id, respondents = nrow(actual),
-      item_wave_columns = ncol(actual),
-      item_differences = item_differences,
+    deposited <- expected |>
+      dplyr::select(dplyr::all_of(specification$benchmark_column)) |>
+      dplyr::mutate(battery_row = dplyr::row_number()) |>
+      tidyr::pivot_longer(
+        -"battery_row", names_to = "benchmark_column",
+        values_to = "deposited_correct"
+      ) |>
+      dplyr::left_join(
+        people |> dplyr::select("battery_row", "respondent_id"),
+        by = "battery_row", relationship = "many-to-one"
+      ) |>
+      dplyr::left_join(
+        specification |>
+          dplyr::select("benchmark_column", "poll_id", "wave", "item_id"),
+        by = "benchmark_column", relationship = "many-to-one"
+      )
+    observed <- tables$knowledge_responses |>
+      dplyr::filter(.data$poll_id == .env$poll_id)
+    detail <- dplyr::inner_join(
+      observed, deposited,
+      by = c("poll_id", "respondent_id", "wave", "item_id"),
+      relationship = "one-to-one", unmatched = "error"
+    ) |>
+      dplyr::mutate(
+        differs = xor(is.na(.data$correct), is.na(.data$deposited_correct)) |
+          tidyr::replace_na(.data$correct != .data$deposited_correct, FALSE)
+      )
+    stopifnot(nrow(detail) == nrow(people) * nrow(specification))
+    summary <- tibble::tibble(
+      poll_id = poll_id, respondents = nrow(people),
+      item_wave_columns = nrow(specification),
+      item_differences = sum(detail$differs),
       female_differences = female_differences
     )
-  }) |>
-    purrr::list_rbind()
-  audit |>
-    assertr::verify(
-      all(.data$item_differences == 0 & .data$female_differences == 0),
-      error_fun = assertr::error_stop
+    scores <- detail |>
+      dplyr::group_by(.data$poll_id, .data$respondent_id, .data$wave) |>
+      dplyr::summarise(
+        deposited_score = sum(.data$deposited_correct, na.rm = TRUE) /
+          dplyr::n(),
+        rebuilt_score = sum(.data$correct, na.rm = TRUE) / dplyr::n(),
+        .groups = "drop"
+      ) |>
+      dplyr::group_by(.data$poll_id, .data$wave) |>
+      dplyr::summarise(
+        respondents = dplyr::n(),
+        deposited_mean = mean(.data$deposited_score),
+        rebuilt_mean = mean(.data$rebuilt_score),
+        changed_scores = sum(.data$deposited_score != .data$rebuilt_score),
+        change_percentage_points =
+          100 * mean(.data$rebuilt_score - .data$deposited_score),
+        .groups = "drop"
+      )
+    list(
+      summary = summary,
+      differences = detail |> dplyr::filter(.data$differs),
+      score_changes = scores
     )
-  audit
+  })
+  c("summary", "differences", "score_changes") |>
+    rlang::set_names() |>
+    purrr::map(function(name) {
+      purrr::map(comparisons, name) |> purrr::list_rbind()
+    })
 }

@@ -1,9 +1,9 @@
 # Knowledge data from reviewed survey packages
 
-`make knowledge` rebuilds four knowledge batteries from their published survey
-inputs: UK Health 1998, Northern Ireland 2007, UK Crime 1994, and UK–EU 1995. It produces five typed Parquet tables in `output/`,
-plus a checksum manifest. The Cor–Sood batteries are used only after the build
-to test parity.
+`make knowledge` rebuilds nine knowledge batteries from published poll-level
+survey inputs. It produces five typed Parquet tables in `output/`, plus a
+checksum manifest. The Cor–Sood batteries are comparison evidence, not build
+inputs or a requirement to reproduce a known error.
 
 | Poll | Published survey | Knowledge sample | Items per wave | Groups |
 |---|---|---:|---:|---:|
@@ -11,6 +11,11 @@ to test parity.
 | Northern Ireland 2007 | Structured extract: 868 rows, 448 retained fields plus source row | 124 participants | 7 | 20 |
 | UK Crime 1994 | Original SPSS file: 869 rows, 287 fields | 299 participants | 7 | 20 |
 | UK–EU 1995 | Original SPSS file: 900 rows, 175 fields | 224 participants | 5 | 15 known |
+| UK Monarchy 1996 | Original SPSS file: 857 rows, 417 fields | 258 participants | 8 | 15 |
+| UK General Election 1997 | Original SPSS file: 1,210 rows, 568 fields | 275 participants | 15 | 15 |
+| CPL 1996 | Original SPSS file: 1,246 rows, 195 fields | 216 participants | 7 | 16 |
+| SWEPCO 1996 | Original Stata file: 1,478 rows, 196 fields | 232 participants | 5 | 14 |
+| WTU 1996 | Original Stata file: 1,230 rows, 196 fields | 230 participants | 5 | 14 |
 
 The output covers attendees at the pre- and post-deliberation waves. Northern
 Ireland's larger source frame retains control and other records for subsequent
@@ -63,11 +68,14 @@ under the `historical-cdd-scripts` Git tag. T1 and T2 response categories differ
 for some questions, so their keys and non-substantive codes are wave-specific.
 
 `metadata/knowledge_items.csv` records each source column, item and wave,
-correct code, incorrect codes, and non-substantive codes. An observed code
+correct codes (`correct_values`), incorrect codes, and non-substantive codes.
+Multiple codes use a pipe delimiter. An observed code
 outside these lists stops the build. In `knowledge_responses`, `raw_value`
 preserves the original code, `correct` stays null for non-substantive responses,
 and `missing_code` distinguishes source codes from a system missing value.
-Descriptions of those codes are joined through the poll's value-label dictionary.
+Descriptions come from value-label dictionaries where available and the original
+codebooks otherwise. System-missing values in cleaned source files do not reveal
+which original nonresponse code was used.
 
 `knowledge_scores` provides `n_items`, `n_observed`, `n_correct`, and
 `score_zero_filled`. The last is the historical proportion-correct score:
@@ -99,15 +107,22 @@ The codebook identifies UK–EU group `99` as four attendees whose assignments
 were unavailable. They remain in the knowledge sample but have no membership
 rows; the build does not invent a sixteenth group.
 
+## Monarchy, General Election, and three utilities
+
+The [five-poll audit](monarchy-election-utilities.md) documents source selection,
+answer keys, and the Monarchy correction. Monarchy has no unique source person
+ID: `source-row-N` is explicitly a locator within that exact source file, not a
+cross-file linkage key. The other four polls retain their original identifiers.
+
 ## Output contract
 
 | Table | Rows | Unit |
 |---|---:|---|
-| `respondents` | 877 | Participant within poll |
-| `knowledge_responses` | 10,922 | Participant × item × wave |
-| `knowledge_scores` | 1,754 | Participant × wave |
-| `memberships` | 873 | Participant × discussion group |
-| `groups` | 70 | Discussion group within poll |
+| `respondents` | 2,088 | Participant within poll |
+| `knowledge_responses` | 30,944 | Participant × item × wave |
+| `knowledge_scores` | 4,176 | Participant × wave |
+| `memberships` | 2,084 | Participant × discussion group |
+| `groups` | 144 | Discussion group within poll |
 
 Keys, nullability, and Arrow types are recorded in
 `metadata/canonical_columns.csv`. `arm = participant` records observed status;
@@ -122,9 +137,11 @@ attitude-index build and the remaining polls are still pending.
 ## Reproduction and checks
 
 A checkout contains everything needed for `make restore` followed by
-`make check`. Checks rebuild the outputs, test every scored cell and female
-indicator against all four deposits, enforce keys and group-match counts, test
-missing and unknown codes, and round-trip Parquet types and values.
+`make check`. Checks rebuild the outputs, compare every scored cell and female indicator
+against all nine deposits, enforce keys and group-match counts, test missing and
+unknown codes, and round-trip Parquet types and values. Separate source-based
+tests verify answer keys, sample restrictions, and the corrected T2 field.
+The comparison reports differences rather than requiring zero differences.
 
 With the original ZIPs unpacked into the local vault:
 
@@ -136,9 +153,11 @@ make check
 
 The import verifies original file hashes before copying or converting.
 The archive audit checks every retained Northern Ireland value and the original
-UK Health bytes against the public files. It also regenerates and compares the
+exact-copy survey bytes against the public files. It also regenerates and compares the
 variable and value-label dictionaries. These local checks do not require uploading the archive.
 
 `audit/knowledge_parity.csv`, `audit/knowledge_join_checks.csv`, and
-`audit/knowledge_recode_counts.csv` are generated evidence. The recode counts
+`audit/knowledge_recode_counts.csv` are generated evidence.
+`audit/knowledge_differences.csv` identifies changed cells;
+`audit/knowledge_score_changes.csv` reports their effects on mean scores. The recode counts
 show old values, new scores, missing statuses, and counts for each source item.
