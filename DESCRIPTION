@@ -1,0 +1,27 @@
+Package: dpdata
+Type: Project
+Title: Source Data for Deliberative Poll Research
+Version: 0.1.0
+Authors@R: person("Gaurav", "Sood", role = c("aut", "cre"), email = "gsood07@gmail.com")
+Description: Audits, catalogs, standardizes, and exports source data used by
+    deliberative-poll research repositories.
+License: MIT + file LICENSE-CODE
+Encoding: UTF-8
+Imports:
+    assertr,
+    digest,
+    dplyr,
+    frictionless,
+    fs,
+    jsonlite,
+    purrr,
+    readr,
+    rlang,
+    rprojroot,
+    stringr,
+    tibble,
+    tidyr
+Suggests:
+    lintr,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

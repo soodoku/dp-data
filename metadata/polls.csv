@@ -1,0 +1,35 @@
+poll_id,title,year,place,topic,mode,collection
+uk-crime-1994,UK Crime,1994,Britain,Crime,face-to-face,cdd
+uk-eu-1995,UK EU,1995,Britain,Britain's future in Europe,face-to-face,cdd
+uk-monarchy-1996,UK Monarchy,1996,Britain,Future of the monarchy,face-to-face,cdd
+nic-1996,National Issues Convention,1996,United States,Foreign and economic policy,face-to-face,cdd
+cpl-1996,Central Power & Light,1996,Texas,Electricity choices,face-to-face,cdd
+wtu-1996,West Texas Utilities,1996,Texas,Electricity choices,face-to-face,cdd
+swepco-1996,Southwestern Electric Power,1996,Texas,Electricity choices,face-to-face,cdd
+uk-general-election-1997,UK General Election,1997,Britain,Electoral choice,face-to-face,cdd
+uk-health-1998,UK Health,1998,Britain,National Health Service,face-to-face,cdd
+australia-republic-1999,Australia Republic Referendum,1999,Australia,Becoming a republic,face-to-face,cdd
+denmark-euro-2000,Denmark: Euro,2000,Denmark,Adopting the euro,face-to-face,cdd
+nic2-2003,National Issues Convention 2,2003,United States,Foreign policy,face-to-face,cdd
+btp-national-2003,By the People: National,2003,United States,Foreign policy,online,cdd
+btp-online-primaries-2004,By the People 2004 Online Primaries,2004,United States,Presidential primaries,online,cdd
+btp-presidential-primaries-2004,By the People 2004 US Presidential Primaries,2004,United States,Presidential primaries,online,cdd
+btp-general-election-2004,By the People 2004 US General Election,2004,United States,Presidential election,online,cdd
+new-haven-2004,"New Haven, CT",2004,Connecticut,Airport and regional tax sharing,face-to-face,cdd
+btp-health-education-2005,By the People: Health and Education,2005,United States,Health care and education,online,cdd
+zeguo-2005,Zeguo Township,2005,China,Local infrastructure projects,face-to-face,cdd
+marousi-2006,"Marousi, Greece",2006,Greece,Choosing a mayoral candidate,face-to-face,cdd
+tomorrows-europe-2007,Tomorrow's Europe (EU),2007,European Union,"Pensions, globalization and enlargement",face-to-face,cdd
+bulgaria-2007,Bulgarian National,2007,Bulgaria,"Roma housing, crime and education",face-to-face,cdd
+northern-ireland-2007,Northern Ireland,2007,Northern Ireland,Local education,face-to-face,cdd
+vermont-energy-2007,Vermont Energy,2007,Vermont,Energy choices,face-to-face,cdd
+btp-2007,By the People 2007,2007,United States,Electoral reform,online,cdd
+san-mateo-2008,"San Mateo, CA",2008,California,Housing,face-to-face,cdd
+europolis-2009,Europolis,2009,European Union,Climate change and immigration,face-to-face,cdd
+michigan-2009,Michigan,2009,Michigan,Economy and budget,face-to-face,cdd
+california-whats-next-2011,California What's Next,2011,California,Government reform,face-to-face,cdd
+tanzania-2015,Tanzania,2015,Tanzania,Resource governance,face-to-face,public-replication
+america-in-one-room-2019,America in One Room,2019,United States,National policy,face-to-face,public-replication
+a1r-climate-2021,America in One Room: Climate,2021,United States,Climate and energy,face-to-face,public-replication
+amr-2024,Antimicrobial Resistance,2024,Six countries,Antimicrobial resistance,face-to-face,public-replication
+

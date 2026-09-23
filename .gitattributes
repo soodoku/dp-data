@@ -1,0 +1,11 @@
+*.csv text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.R text eol=lf
+*.tab text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.dta binary
+*.pdf binary
+*.zip binary
+

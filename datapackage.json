@@ -1,0 +1,288 @@
+{
+  "name": "deliberative-poll-data",
+  "title": "Deliberative Poll data",
+  "description": "Source metadata and contracts for Deliberative Poll research data.",
+  "version": "0.1.0",
+  "resources": [
+    {
+      "name": "artifact_types",
+      "path": "/private/tmp/dp-data-stage/metadata/artifact_types.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "artifact_type",
+            "type": "string"
+          },
+          {
+            "name": "directory",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "default_review",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "polls",
+      "path": "/private/tmp/dp-data-stage/metadata/polls.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "type": "number"
+          },
+          {
+            "name": "place",
+            "type": "string"
+          },
+          {
+            "name": "topic",
+            "type": "string"
+          },
+          {
+            "name": "mode",
+            "type": "string"
+          },
+          {
+            "name": "collection",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "poll_aliases",
+      "path": "/private/tmp/dp-data-stage/metadata/poll_aliases.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "system",
+            "type": "string"
+          },
+          {
+            "name": "alias",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "source_bundles",
+      "path": "/private/tmp/dp-data-stage/metadata/source_bundles.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "bundle_id",
+            "type": "string"
+          },
+          {
+            "name": "local_filename",
+            "type": "string"
+          },
+          {
+            "name": "bytes",
+            "type": "number"
+          },
+          {
+            "name": "sha256",
+            "type": "string"
+          },
+          {
+            "name": "file_count",
+            "type": "number"
+          },
+          {
+            "name": "uncompressed_bytes",
+            "type": "number"
+          },
+          {
+            "name": "publication_status",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "source_files",
+      "path": "/private/tmp/dp-data-stage/metadata/source_files.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "source_id",
+            "type": "string"
+          },
+          {
+            "name": "path",
+            "type": "string"
+          },
+          {
+            "name": "bytes",
+            "type": "number"
+          },
+          {
+            "name": "sha256",
+            "type": "string"
+          },
+          {
+            "name": "md5",
+            "type": "string"
+          },
+          {
+            "name": "doi",
+            "type": "string"
+          },
+          {
+            "name": "license",
+            "type": "string"
+          },
+          {
+            "name": "retrieved",
+            "type": "date"
+          },
+          {
+            "name": "role",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "recode_ledger",
+      "path": "/private/tmp/dp-data-stage/metadata/recode_ledger.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "recode_id",
+            "type": "string"
+          },
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "table",
+            "type": "string"
+          },
+          {
+            "name": "variable",
+            "type": "string"
+          },
+          {
+            "name": "input_condition",
+            "type": "string"
+          },
+          {
+            "name": "output_value",
+            "type": "string"
+          },
+          {
+            "name": "reason",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          },
+          {
+            "name": "code_location",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "downstream_contracts",
+      "path": "/private/tmp/dp-data-stage/metadata/downstream_contracts.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "repository",
+            "type": "string"
+          },
+          {
+            "name": "artifact",
+            "type": "string"
+          },
+          {
+            "name": "upstream_resource",
+            "type": "string"
+          },
+          {
+            "name": "target_path",
+            "type": "string"
+          },
+          {
+            "name": "schema_version",
+            "type": "number"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+artifact_type,directory,description,default_review
+data,data,Raw or deposited respondent group or item data,disclosure-and-rights
+questionnaire,questionnaires,Fielded instruments and wave-specific questionnaires,rights
+codebook,codebooks,Variable dictionaries coding guides and index definitions,rights
+briefing-material,briefing-materials,Balanced information supplied to participants,rights
+research-design,design,Sampling randomization recruitment and fieldwork documentation,rights
+event-report,reports,Post-event reports summaries and technical appendices,rights
+paper,papers,Research papers using the poll,redistribution-rights
+script,scripts,Original data management and analysis code,disclosure-and-rights
+other,other,Material that does not fit another registered role,manual
