@@ -9,3 +9,6 @@
 *.pdf binary
 *.zip binary
 data/*/knowledge-battery.csv -text
+*.sav binary
+*.parquet binary
+data/northern-ireland-2007/groups.csv -text

@@ -1,0 +1,1583 @@
+source_column,source_value,value_label
+serial_a,-9,not answered
+serial_a,-1,item not applicable
+field,-1,item not applicable
+field,0,area 0
+field,1,area 1
+field,2,area 2
+field,3,area 3
+field,4,area 4
+field,5,area 5
+field,6,area 6
+field,7,area 7
+field,8,area 8
+field,9,area 9
+region,-9,not answered
+region,-1,item not applicable
+tnc,-9,not answered
+tnc,-1,item not applicable
+units,-9,not answered
+units,-1,item not applicable
+selunit,-9,not answered
+selunit,-1,item not applicable
+adults,-9,not answered
+adults,-1,item not applicable
+selper,-9,not answered
+selper,-1,item not applicable
+recruit,-9,not answered
+recruit,-1,item not applicable
+recruit,1,no - definite refusal
+recruit,2,no - probable refusal
+recruit,3,provisional yes/maybe/uncertain
+recruit,4,yes will go
+passinfo,-9,not answered
+passinfo,-1,item not applicable
+passinfo,0,not agreed
+passinfo,1,agreed to pass on details
+recnumb,-9,not answered
+recnumb,-1,item not applicable
+recnumb,1,telephone number recorded
+recnumb,2,no telephone
+recnumb,3,telephone number refused
+agerange,-9,not answered
+agerange,-1,item not applicable
+agerange,1,18-29
+agerange,2,30-44
+agerange,3,45-64
+agerange,4,65+
+sex,-9,not answered
+sex,-1,item not applicable
+sex,1,male
+sex,2,female
+workstat,-9,not answered
+workstat,-1,item not applicable
+workstat,1,working ft/pt
+workstat,2,unemployed
+workstat,3,retired
+workstat,4,looking after home/family
+workstat,5,other
+class,-9,not answered
+class,-8,not known/can't classify
+class,-1,item not applicable
+class,1,professional/managerial (ab)
+class,2,junior manager/other non-manual (c1)
+class,3,skilled manual (c2)
+class,4,semi- or unskilled manual/unemployed/dependent on state (de)
+serial_m,-9,not answered
+serial_m,-1,item not applicable
+batch,-9,not answered
+batch,-1,item not applicable
+gender,-9,not answered
+gender,-1,item not applicable
+gender,1,male
+gender,2,female
+age,-9,not answered
+age,-8,do not know
+age,-7,refused
+age,-1,item not applicable
+kid,-9,not answered
+kid,-1,item not applicable
+kids5,-9,not answered
+kids5,-1,item not applicable
+kids11,-9,not answered
+kids11,-1,item not applicable
+kids15,-9,not answered
+kids15,-1,item not applicable
+kids17,-9,not answered
+kids17,-1,item not applicable
+marstat,-9,not answered
+marstat,-1,item not applicable
+marstat,1,married
+marstat,2,living as married
+marstat,3,separated or divorced
+marstat,4,widowed
+marstat,5,single and never married
+newsyn,-9,not answered
+newsyn,-1,item not applicable
+newsyn,0,no
+newsyn,1,yes
+newsp,-9,not answered
+newsp,-1,item not applicable
+newsp,1,(scottish) daily express
+newsp,2,daily mail
+newsp,3,daily mirror/record
+newsp,4,daily star
+newsp,5,the sun
+newsp,6,daily telegraph
+newsp,7,financial times
+newsp,8,the guardian
+newsp,9,the independent
+newsp,10,the times
+newsp,11,other daily morning paper (write in)
+gpappt,-9,not answered
+gpappt,-8,don't know/varies
+gpappt,-1,item not applicable
+gpappt,1,a lot of improvement
+gpappt,2,some improvement
+gpappt,3,satisfactory
+gpappt,4,very good
+qualgps,-9,not answered
+qualgps,-8,don't know/varies
+qualgps,-1,item not applicable
+qualgps,1,a lot of improvement
+qualgps,2,some improvement
+qualgps,3,satisfactory
+qualgps,4,very good
+waitlist,-9,not answered
+waitlist,-8,don't know/varies
+waitlist,-1,item not applicable
+waitlist,1,a lot of improvement
+waitlist,2,some improvement
+waitlist,3,satisfactory
+waitlist,4,very good
+qualhosp,-9,not answered
+qualhosp,-8,don't know/varies
+qualhosp,-1,item not applicable
+qualhosp,1,a lot of improvement
+qualhosp,2,some improvement
+qualhosp,3,satisfactory
+qualhosp,4,very good
+waitappt,-9,not answered
+waitappt,-8,don't know/varies
+waitappt,-1,item not applicable
+waitappt,1,a lot of improvement
+waitappt,2,some improvement
+waitappt,3,satisfactory
+waitappt,4,very good
+waitout,-9,not answered
+waitout,-8,don't know/varies
+waitout,-1,item not applicable
+waitout,1,a lot of improvement
+waitout,2,some improvement
+waitout,3,satisfactory
+waitout,4,very good
+waitacc,-9,not answered
+waitacc,-8,don't know/varies
+waitacc,-1,item not applicable
+waitacc,1,a lot of improvement
+waitacc,2,some improvement
+waitacc,3,satisfactory
+waitacc,4,very good
+fend,-9,not answered
+fend,-8,don't know/varies
+fend,-1,item not applicable
+fend,1,strongly disagree
+fend,2,disagree
+fend,3,neither agree/disagree
+fend,4,agree
+fend,5,agree strongly
+govsp,-9,not answered
+govsp,-8,don't know/varies
+govsp,-1,item not applicable
+govsp,1,strongly disagree
+govsp,2,disagree
+govsp,3,neither agree/disagree
+govsp,4,agree
+govsp,5,agree strongly
+earn,-9,not answered
+earn,-8,don't know/varies
+earn,-1,item not applicable
+earn,1,strongly disagree
+earn,2,disagree
+earn,3,neither agree/disagree
+earn,4,agree
+earn,5,agree strongly
+liveprs,-9,not answered
+liveprs,-8,don't know/varies
+liveprs,-1,item not applicable
+liveprs,1,strongly disagree
+liveprs,2,disagree
+liveprs,3,neither agree/disagree
+liveprs,4,agree
+liveprs,5,agree strongly
+pid,-9,not answered
+pid,-8,dont know
+pid,-7,refused
+pid,-1,item not applicable
+pid,0,none
+pid,1,conservative
+pid,2,labour
+pid,3,liberal democrat
+pid,4,scottish nationaist party
+pid,5,plaid cymru
+pid,6,green party
+pid,7,other
+pidlean,-9,not answered
+pidlean,-8,dont know
+pidlean,-7,refused
+pidlean,-1,item not applicable
+pidlean,0,none
+pidlean,1,conservative
+pidlean,2,labour
+pidlean,3,liberal democrat
+pidlean,4,scottish nationaist party
+pidlean,5,plaid cymru
+pidlean,6,green party
+pidlean,7,other
+employ,-9,not answered
+employ,-1,item not applicable
+employ,1,in full-time education
+employ,2,on government training/employment programme
+employ,3,in part-time work (up to 30 hours a week)
+employ,4,in full-time paid work (30+ hours a week)
+employ,5,waiting to take up paid job already obtained
+employ,6,unemployed and looking for work
+employ,7,"unemployed, but not looking for work"
+employ,8,permanently sick or disabled
+employ,9,wholly retired from work
+employ,10,looking after home or family
+employ,11,something else (write in)
+hshldsz,-9,not answered
+hshldsz,-1,item not applicable
+hshldsz,1,respondent only person aged 18+
+hshldsz,2,2+ adults in household
+cie,-9,not answered
+cie,-1,item not applicable
+cie,1,respondent is c.i.e
+cie,2,other household member is c.i.e
+cieemp,-9,not answered
+cieemp,-1,item not applicable
+cieemp,1,in full-time education
+cieemp,2,on government training/employment programme
+cieemp,3,in part-time work (up to 30 hours a week)
+cieemp,4,in full-time paid work (30+ hours a week)
+cieemp,5,waiting to take up paid job already obtained
+cieemp,6,unemployed and looking for work
+cieemp,7,"unemployed, but not looking for work"
+cieemp,8,permanently sick or disabled
+cieemp,9,wholly retired from work
+cieemp,10,looking after home or family
+cieemp,11,something else (write in)
+selfemp,-9,not answered
+selfemp,-1,item not applicable
+selfemp,1,an employee
+selfemp,2,self-employed
+selfemp,3,(never had a job)
+superv,-9,not answered
+superv,-1,item not applicable
+superv,0,none
+superv,1,1 to 24
+superv,2,25 or more
+manywork,-9,not answered
+manywork,-1,item not applicable
+manywork,1,1 to 24
+manywork,2,25 or more
+semanywk,-9,not answered
+semanywk,-1,item not applicable
+semanywk,0,none
+semanywk,1,1 to 24
+semanywk,2,25 or more
+soc,-9,not answered
+soc,-1,item not applicable
+es,-9,not answered
+es,-1,item not applicable
+es,1,self-employed (25+ employees)
+es,2,self-employed (1-24 employees)
+es,3,self-employed (no employees)
+es,4,self-employed (number of employees not known)
+es,5,manager (establishment of 25+ employees)
+es,6,manager (establishment of 1-24 employees)
+es,7,manager (size of establishment not known)
+es,8,foreman/supervisor
+es,9,other employee
+es,10,employee (not known if manager/foreman/other)
+es,11,na/insufficient information to code more specifically
+segfull,-9,not answered
+segfull,-1,item not applicable
+segfull,1,employers - large establishments
+segfull,2,managers - large establishments
+segfull,3,employers - small establishments
+segfull,4,managers - small establishments
+segfull,5,professional - self-employed
+segfull,6,professional - employees
+segfull,7,intermediate non-manual ancillary
+segfull,8,intermediate non-manual foremen
+segfull,9,junior non-manual
+segfull,10,personal service
+segfull,11,foremen and supervisors - manual
+segfull,12,skilled manual
+segfull,13,semi - skilled manual
+segfull,14,unskilled manual
+segfull,15,own account (other than professional)
+segfull,16,farmers - employers and managers
+segfull,17,farmers - own account
+segfull,18,agricultural
+segfull,19,armed forces
+segfull,20,inadequately described/not stated
+educa,-9,not answered
+educa,-1,item not applicable
+educa,0,no qualifications obtained
+educa,1,"gcse grades d-g, cse grades 2-5, gce 'o' level grades d-e or"
+educa,2,"gcse grades a-c, gse grade 1, gce 'o' level grades a-c or 1-"
+educa,3,"gce 'a' level, 's' level or 'as' level, higher school certif"
+educa,4,overseas school leaving exam/certificate
+educb,-9,not answered
+educb,-1,item not applicable
+educb,0,no qualifications obtained
+educb,1,nvq/svq level 1/gnvq foundation
+educb,2,"city & guilds craft/intermediate/ordinary/part1, nvq/svq lev"
+educb,3,nvq/svq level 3/gnvq advanced
+educb,4,bec/tec onc/ond/city & guilds advanced/final level/part ii o
+educb,5,rsa/other clerical and commercial
+educb,6,teachers training qualification
+educb,7,nursing qualification
+educb,8,professional qualification (membership awarded by profession
+educb,9,"degree, including higher degree"
+educb,10,nvq/svq level 5
+educb,11,other technical or business qualification/certificate
+educb,12,other (write in)
+pastgp,-9,not answered
+pastgp,-1,item not applicable
+pastgp,0,no
+pastgp,1,yes
+pastout,-9,not answered
+pastout,-1,item not applicable
+pastout,0,no
+pastout,1,yes
+pastin,-9,not answered
+pastin,-1,item not applicable
+pastin,0,no
+pastin,1,yes
+pastvis,-9,not answered
+pastvis,-1,item not applicable
+pastvis,0,no
+pastvis,1,yes
+pastpat,-9,not answered
+pastpat,-1,item not applicable
+pastpat,0,no
+pastpat,1,yes
+privins,-9,not answered
+privins,-8,(dont know)
+privins,-1,item not applicable
+privins,0,no
+privins,1,yes
+health,-9,not answered
+health,-1,item not applicable
+health,1,very bad
+health,2,bad
+health,3,fair
+health,4,fairly good
+health,5,very good
+wrryhlth,-9,not answered
+wrryhlth,-8,(don't know)
+wrryhlth,-1,item not applicable
+wrryhlth,1,"hardly ever, or never"
+wrryhlth,2,not very much
+wrryhlth,3,quite a lot
+wrryhlth,4,a lot
+smokstat,-9,not answered
+smokstat,-1,item not applicable
+smokstat,1,a non-smoker
+smokstat,2,a light smoker
+smokstat,3,a fairly heavy smoker
+smokstat,4,a very heavy smoker
+ethnic,-9,not answered
+ethnic,-1,item not applicable
+ethnic,1,white
+ethnic,2,black - caribbean
+ethnic,3,black - african
+ethnic,4,indian
+ethnic,5,pakistani
+ethnic,6,bangladeshi
+ethnic,7,chinese
+ethnic,8,other (write in)
+ethnic,97,(refused)
+income,-9,not answered
+income,-8,(don't know)
+income,-7,(refused)
+income,-1,item not applicable
+income,1,"<4,000"
+income,2,"4,000 - <6,000"
+income,3,"6,000 - <8,000"
+income,4,"8,000 - <10,000"
+income,5,"10,000 - <12,000"
+income,6,"12,000 - <15,000"
+income,7,"15,000 - <18,000"
+income,8,"18,000 - <20,000"
+income,9,"20,000 - <23,000"
+income,10,"23,000 - <26,000"
+income,11,"26,000 - <29,000"
+income,12,"29,000 - <32,000"
+income,13,"32,000 - <35,000"
+income,14,"35,000 - <38,000"
+income,15,"38,000 - <41,000"
+income,16,"41,000 and more"
+solpro,-9,not answered
+solpro,-8,(don't know)
+solpro,-1,item not applicable
+solpro,1,not at all confident?
+solpro,2,not very confident
+solpro,3,quite confident
+solpro,4,very confident
+trusta,-9,not answered
+trusta,-8,(dont know)
+trusta,-1,item not applicable
+trusta,1,almost never/never
+trusta,2,only some of the time
+trusta,3,most of the time
+trusta,4,just about always
+trustb,-9,not answered
+trustb,-8,(dont know)
+trustb,-1,item not applicable
+trustb,1,almost never/never
+trustb,2,only some of the time
+trustb,3,most of the time
+trustb,4,just about always
+trustc,-9,not answered
+trustc,-8,(dont know)
+trustc,-1,item not applicable
+trustc,1,almost never/never
+trustc,2,only some of the time
+trustc,3,most of the time
+trustc,4,just about always
+trustd,-9,not answered
+trustd,-8,(dont know)
+trustd,-1,item not applicable
+trustd,1,almost never/never
+trustd,2,only some of the time
+trustd,3,most of the time
+trustd,4,just about always
+truste,-9,not answered
+truste,-8,(dont know)
+truste,-1,item not applicable
+truste,1,almost never/never
+truste,2,only some of the time
+truste,3,most of the time
+truste,4,just about always
+phone,-9,not answered
+phone,-1,item not applicable
+phone,0,no
+phone,1,yes
+canring,-9,not answered
+canring,-1,item not applicable
+canring,0,number refused
+canring,1,number given
+duration,-9,not answered
+duration,-1,item not applicable
+dateofi,-9,not answered
+dateofi,-1,item not applicable
+interno,-9,not answered
+interno,-1,item not applicable
+soclss,-9,not answered
+soclss,-1,item not applicable
+mtneed1,-9,not answered
+mtneed1,-8,can't choose
+mtneed1,-1,item not applicable
+mtneed1,1,not at all well
+mtneed1,2,not very well
+mtneed1,3,adequately
+mtneed1,4,very well
+options1,-9,not answered
+options1,-8,can't choose
+options1,-1,item not applicable
+options1,1,spend less on the nhs and reduce taxes
+options1,2,keep spending on the nhs at about the same level as now
+options1,3,"spend more on the nhs, even if this means an increase in tax"
+comp1,-9,not answered
+comp1,-8,can't choose
+comp1,-1,item not applicable
+comp1,1,not at all likely
+comp1,2,not very likely
+comp1,3,fairly likely
+comp1,4,very likely
+well1,-9,not answered
+well1,-8,can't choose
+well1,-1,item not applicable
+well1,1,not at all likely
+well1,2,not very likely
+well1,3,fairly likely
+well1,4,very likely
+trtmt1,-9,not answered
+trtmt1,-8,can't choose
+trtmt1,-1,item not applicable
+trtmt1,1,not at all likely
+trtmt1,2,not very likely
+trtmt1,3,fairly likely
+trtmt1,4,very likely
+oper1,-9,not answered
+oper1,-8,can't choose
+oper1,-1,item not applicable
+oper1,1,not at all likely
+oper1,2,not very likely
+oper1,3,fairly likely
+oper1,4,very likely
+hlth1,-9,not answered
+hlth1,-8,can't choose
+hlth1,-1,item not applicable
+hlth1,1,health care should be the same for everyone
+hlth1,2,people who can afford it should be able to pay for better he
+payhlth1,-9,not answered
+payhlth1,-8,can't choose
+payhlth1,-1,item not applicable
+payhlth1,1,"the government should pay for everyone's health care, whatev"
+payhlth1,2,the government should pay for the health care of those who c
+payhlth1,3,everyone should pay for their own health care through privat
+payown1,-9,not answered
+payown1,-8,can't choose
+payown1,-1,item not applicable
+payown1,1,bad for the nhs
+payown1,2,"or, would it make no difference to the nhs?"
+payown1,3,good for the nhs
+cuts1,-9,not answered
+cuts1,-8,can't choose
+cuts1,-1,item not applicable
+cuts1,1,"with people living longer, the nhs will always have too many"
+cuts1,2,"everybody has a right to health care, so the nhs should neve"
+resrcs1,-9,not answered
+resrcs1,-8,can't choose
+resrcs1,-1,item not applicable
+resrcs1,0,the nhs will not have enough money and resources for everyon
+resrcs1,1,the nhs will have enough money and resources to provide ever
+sopha1,-9,not answered
+sopha1,-8,can't choose
+sopha1,-1,item not applicable
+sopha1,0,false
+sopha1,1,true
+sophb1,-9,not answered
+sophb1,-8,can't choose
+sophb1,-1,item not applicable
+sophb1,0,false
+sophb1,1,true
+sophc1,-9,not answered
+sophc1,-8,can't choose
+sophc1,-1,item not applicable
+sophc1,0,false
+sophc1,1,true
+sophd1,-9,not answered
+sophd1,-8,can't choose
+sophd1,-1,item not applicable
+sophd1,0,false
+sophd1,1,true
+sophe1,-9,not answered
+sophe1,-8,can't choose
+sophe1,-1,item not applicable
+sophe1,0,false
+sophe1,1,true
+sophf1,-9,not answered
+sophf1,-8,can't choose
+sophf1,-1,item not applicable
+sophf1,0,false
+sophf1,1,true
+prsmoka1,-9,not answered
+prsmoka1,-8,can't choose
+prsmoka1,-1,item not applicable
+prsmoka1,1,the non-smoker
+prsmoka1,2,the smoker
+prsmoka1,3,or would their smoking habits make no difference?
+prsmokb1,-9,not answered
+prsmokb1,-8,can't choose
+prsmokb1,-1,item not applicable
+prsmokb1,1,the non-smoker
+prsmokb1,2,the smoker
+prsmokb1,3,or would their smoking habits make no difference?
+agea1,-9,not answered
+agea1,-8,can't choose
+agea1,-1,item not applicable
+agea1,1,the 30 year old
+agea1,2,the 70 year old
+agea1,3,or would their ages make no difference?
+ageb1,-9,not answered
+ageb1,-8,can't choose
+ageb1,-1,item not applicable
+ageb1,1,the 30 year old
+ageb1,2,the 70 year old
+ageb1,3,or should their ages make no difference?
+treata1,-9,not answered
+treata1,-8,can't choose
+treata1,-1,item not applicable
+treata1,1,disagree strongly
+treata1,2,disagree
+treata1,3,neither agree nor disagree
+treata1,4,agree
+treata1,5,agree strongly
+treatb1,-9,not answered
+treatb1,-8,can't choose
+treatb1,-1,item not applicable
+treatb1,1,never
+treatb1,2,hardly ever
+treatb1,3,some of the time
+treatb1,4,always or most of the time
+lifea1,-9,not answered
+lifea1,-8,can't choose
+lifea1,-1,item not applicable
+lifea1,1,disagree strongly
+lifea1,2,disagree
+lifea1,3,neither agree nor disagree
+lifea1,4,agree
+lifea1,5,agree strongly
+lifeb1,-9,not answered
+lifeb1,-8,can't choose
+lifeb1,-1,item not applicable
+lifeb1,1,never
+lifeb1,2,hardly ever
+lifeb1,3,some of the time
+lifeb1,4,always or most of the time
+preva1,-9,not answered
+preva1,-8,can't choose
+preva1,-1,item not applicable
+preva1,1,disagree strongly
+preva1,2,disagree
+preva1,3,neither agree nor disagree
+preva1,4,agree
+preva1,5,agree strongly
+prevb1,-9,not answered
+prevb1,-8,can't choose
+prevb1,-1,item not applicable
+prevb1,1,never
+prevb1,2,hardly ever
+prevb1,3,some of the time
+prevb1,4,always or most of the time
+severa1,-9,not answered
+severa1,-8,can't choose
+severa1,-1,item not applicable
+severa1,1,disagree strongly
+severa1,2,disagree
+severa1,3,neither agree nor disagree
+severa1,4,agree
+severa1,5,agree strongly
+severb1,-9,not answered
+severb1,-8,can't choose
+severb1,-1,item not applicable
+severb1,1,never
+severb1,2,hardly ever
+severb1,3,some of the time
+severb1,4,always or most of the time
+lista1,-9,not answered
+lista1,-8,can't choose
+lista1,-1,item not applicable
+lista1,1,disagree strongly
+lista1,2,disagree
+lista1,3,neither agree nor disagree
+lista1,4,agree
+lista1,5,agree strongly
+listb1,-9,not answered
+listb1,-8,can't choose
+listb1,-1,item not applicable
+listb1,1,never
+listb1,2,hardly ever
+listb1,3,some of the time
+listb1,4,always or most of the time
+poora1,-9,not answered
+poora1,-8,can't choose
+poora1,-1,item not applicable
+poora1,1,disagree strongly
+poora1,2,disagree
+poora1,3,neither agree nor disagree
+poora1,4,agree
+poora1,5,agree strongly
+poorb1,-9,not answered
+poorb1,-8,can't choose
+poorb1,-1,item not applicable
+poorb1,1,never
+poorb1,2,hardly ever
+poorb1,3,some of the time
+poorb1,4,always or most of the time
+ingova1,-9,not answered
+ingova1,-8,can't choose
+ingova1,-1,item not applicable
+ingova1,1,none of the say
+ingova1,2,some of the say
+ingova1,3,all or most of the say
+ingpa1,-9,not answered
+ingpa1,-8,can't choose
+ingpa1,-1,item not applicable
+ingpa1,1,none of the say
+ingpa1,2,some of the say
+ingpa1,3,all or most of the say
+inhma1,-9,not answered
+inhma1,-8,can't choose
+inhma1,-1,item not applicable
+inhma1,1,none of the say
+inhma1,2,some of the say
+inhma1,3,all or most of the say
+indoca1,-9,not answered
+indoca1,-8,can't choose
+indoca1,-1,item not applicable
+indoca1,1,none of the say
+indoca1,2,some of the say
+indoca1,3,all or most of the say
+inpuba1,-9,not answered
+inpuba1,-8,can't choose
+inpuba1,-1,item not applicable
+inpuba1,1,none of the say
+inpuba1,2,some of the say
+inpuba1,3,all or most of the say
+ingovb1,-9,not answered
+ingovb1,-8,can't choose
+ingovb1,-1,item not applicable
+ingovb1,1,none of the say
+ingovb1,2,some of the say
+ingovb1,3,all or most of the say
+ingpb1,-9,not answered
+ingpb1,-8,can't choose
+ingpb1,-1,item not applicable
+ingpb1,1,none of the say
+ingpb1,2,some of the say
+ingpb1,3,all or most of the say
+inhmb1,-9,not answered
+inhmb1,-8,can't choose
+inhmb1,-1,item not applicable
+inhmb1,1,none of the say
+inhmb1,2,some of the say
+inhmb1,3,all or most of the say
+indocb1,-9,not answered
+indocb1,-8,can't choose
+indocb1,-1,item not applicable
+indocb1,1,none of the say
+indocb1,2,some of the say
+indocb1,3,all or most of the say
+inpubb1,-9,not answered
+inpubb1,-8,can't choose
+inpubb1,-1,item not applicable
+inpubb1,1,none of the say
+inpubb1,2,some of the say
+inpubb1,3,all or most of the say
+bestdec1,-9,not answered
+bestdec1,-8,can't choose
+bestdec1,-1,item not applicable
+bestdec1,1,there should be publicly available guidelines about who shou
+bestdec1,2,medical experts should be allowed to make these sorts of dec
+cthart1,-9,not answered
+cthart1,-8,can't choose
+cthart1,-1,item not applicable
+cthart1,1,strongly against
+cthart1,2,aganst
+cthart1,3,neither in favour nor against
+cthart1,4,in favour
+cthart1,5,strongly in favour
+ctnurs1,-9,not answered
+ctnurs1,-8,can't choose
+ctnurs1,-1,item not applicable
+ctnurs1,1,strongly against
+ctnurs1,2,aganst
+ctnurs1,3,neither in favour nor against
+ctnurs1,4,in favour
+ctnurs1,5,strongly in favour
+ctbaby1,-9,not answered
+ctbaby1,-8,can't choose
+ctbaby1,-1,item not applicable
+ctbaby1,1,strongly against
+ctbaby1,2,aganst
+ctbaby1,3,neither in favour nor against
+ctbaby1,4,in favour
+ctbaby1,5,strongly in favour
+ctfert1,-9,not answered
+ctfert1,-8,can't choose
+ctfert1,-1,item not applicable
+ctfert1,1,strongly against
+ctfert1,2,aganst
+ctfert1,3,neither in favour nor against
+ctfert1,4,in favour
+ctfert1,5,strongly in favour
+cthosp1,-9,not answered
+cthosp1,-8,can't choose
+cthosp1,-1,item not applicable
+cthosp1,1,strongly against
+cthosp1,2,aganst
+cthosp1,3,neither in favour nor against
+cthosp1,4,in favour
+cthosp1,5,strongly in favour
+ctcosm1,-9,not answered
+ctcosm1,-8,can't choose
+ctcosm1,-1,item not applicable
+ctcosm1,1,strongly against
+ctcosm1,2,aganst
+ctcosm1,3,neither in favour nor against
+ctcosm1,4,in favour
+ctcosm1,5,strongly in favour
+chgp1,-9,not answered
+chgp1,-8,can't choose
+chgp1,-1,item not applicable
+chgp1,1,strongly against
+chgp1,2,aganst
+chgp1,3,neither in favour nor against
+chgp1,4,in favour
+chgp1,5,strongly in favour
+chvis1,-9,not answered
+chvis1,-8,can't choose
+chvis1,-1,item not applicable
+chvis1,1,strongly against
+chvis1,2,aganst
+chvis1,3,neither in favour nor against
+chvis1,4,in favour
+chvis1,5,strongly in favour
+chmeal1,-9,not answered
+chmeal1,-8,can't choose
+chmeal1,-1,item not applicable
+chmeal1,1,strongly against
+chmeal1,2,aganst
+chmeal1,3,neither in favour nor against
+chmeal1,4,in favour
+chmeal1,5,strongly in favour
+chstay1,-9,not answered
+chstay1,-8,can't choose
+chstay1,-1,item not applicable
+chstay1,1,strongly against
+chstay1,2,aganst
+chstay1,3,neither in favour nor against
+chstay1,4,in favour
+chstay1,5,strongly in favour
+chamb1,-9,not answered
+chamb1,-8,can't choose
+chamb1,-1,item not applicable
+chamb1,1,strongly against
+chamb1,2,aganst
+chamb1,3,neither in favour nor against
+chamb1,4,in favour
+chamb1,5,strongly in favour
+effic1,-9,not answered
+effic1,-8,can't choose
+effic1,-1,item not applicable
+effic1,1,disagree strongly
+effic1,2,disagree
+effic1,3,neither agree nor disagree
+effic1,4,agree
+effic1,5,agree strongly
+say1,-9,not answered
+say1,-8,can't choose
+say1,-1,item not applicable
+say1,1,disagree strongly
+say1,2,disagree
+say1,3,neither agree nor disagree
+say1,4,agree
+say1,5,agree strongly
+older1,-9,not answered
+older1,-8,can't choose
+older1,-1,item not applicable
+older1,1,disagree strongly
+older1,2,disagree
+older1,3,neither agree nor disagree
+older1,4,agree
+older1,5,agree strongly
+expect1,-9,not answered
+expect1,-8,can't choose
+expect1,-1,item not applicable
+expect1,1,disagree strongly
+expect1,2,disagree
+expect1,3,neither agree nor disagree
+expect1,4,agree
+expect1,5,agree strongly
+save1,-9,not answered
+save1,-8,can't choose
+save1,-1,item not applicable
+save1,1,disagree strongly
+save1,2,disagree
+save1,3,neither agree nor disagree
+save1,4,agree
+save1,5,agree strongly
+ration1,-9,not answered
+ration1,-8,can't choose
+ration1,-1,item not applicable
+ration1,1,disagree strongly
+ration1,2,disagree
+ration1,3,neither agree nor disagree
+ration1,4,agree
+ration1,5,agree strongly
+best1,-9,not answered
+best1,-8,can't choose
+best1,-1,item not applicable
+best1,1,disagree strongly
+best1,2,disagree
+best1,3,neither agree nor disagree
+best1,4,agree
+best1,5,agree strongly
+social1,-9,not answered
+social1,-8,can't choose
+social1,-1,item not applicable
+social1,1,disagree strongly
+social1,2,disagree
+social1,3,neither agree nor disagree
+social1,4,agree
+social1,5,agree strongly
+natint1,-9,not answered
+natint1,-8,can't choose
+natint1,-1,item not applicable
+natint1,1,disagree strongly
+natint1,2,disagree
+natint1,3,neither agree nor disagree
+natint1,4,agree
+natint1,5,agree strongly
+blame1,-9,not answered
+blame1,-8,can't choose
+blame1,-1,item not applicable
+blame1,1,disagree strongly
+blame1,2,disagree
+blame1,3,neither agree nor disagree
+blame1,4,agree
+blame1,5,agree strongly
+succes1,-9,not answered
+succes1,-8,can't choose
+succes1,-1,item not applicable
+succes1,1,disagree strongly
+succes1,2,disagree
+succes1,3,neither agree nor disagree
+succes1,4,agree
+succes1,5,agree strongly
+govrl1,-9,not answered
+govrl1,-8,can't choose
+govrl1,-1,item not applicable
+govrl1,1,disagree strongly
+govrl1,2,disagree
+govrl1,3,neither agree nor disagree
+govrl1,4,agree
+govrl1,5,agree strongly
+country,-9,not answered
+country,-6,schedule not obtained
+country,-2,schedule not applicable
+country,-1,item not applicable
+country,1,england
+country,2,wales
+country,3,scotland
+agegp,-9,not answered
+agegp,-6,schedule not obtained
+agegp,-2,schedule not applicable
+agegp,-1,item not applicable
+agegp,1,18 to 34
+agegp,2,35 to 54
+agegp,3,55 plus
+agegp,9,ref/dk/na
+agesex,-9,not answered
+agesex,-6,schedule not obtained
+agesex,-2,schedule not applicable
+agesex,-1,item not applicable
+agesex,1,men - all
+agesex,2,men - 18-34
+agesex,3,men - 35-54
+agesex,4,men - 55 plus
+agesex,5,women - all
+agesex,6,women - 18-34
+agesex,7,women - 35-54
+agesex,8,women - 55 plus
+kids,-9,not answered
+kids,-6,schedule not obtained
+kids,-2,schedule not applicable
+kids,-1,item not applicable
+kids,1,children <17 in home
+kids,2,no children <17 in home 00
+party,-9,not answered
+party,-6,schedule not obtained
+party,-2,schedule not applicable
+party,-1,item not applicable
+party,1,none
+party,2,conservative
+party,3,labour
+party,4,liberal democrat
+party,5,snp
+party,6,other/ref/dk/na
+acqual,-9,not answered
+acqual,-6,schedule not obtained
+acqual,-2,schedule not applicable
+acqual,-1,item not applicable
+acqual,1,a-level plus
+acqual,2,other academic quals
+acqual,3,no academic quals
+degree,-9,not answered
+degree,-6,schedule not obtained
+degree,-2,schedule not applicable
+degree,-1,item not applicable
+degree,0,no degree
+degree,1,degree
+seg,-9,not answered
+seg,-6,schedule not obtained
+seg,-2,schedule not applicable
+seg,-1,item not applicable
+seg,1,professional
+seg,2,employers and managers
+seg,3,intermediate non-manual
+seg,4,junior non-manual
+seg,5,skilled manual
+seg,6,semi-skilled manual
+seg,7,unskilled manual
+seg,8,other occupation
+seg,99,unclassifiable
+segabr,-9,not answered
+segabr,-6,schedule not obtained
+segabr,-2,schedule not applicable
+segabr,-1,item not applicable
+segabr,1,non-manual
+segabr,2,manual
+segabr,3,other
+educ,-9,not answered
+educ,-6,schedule not obtained
+educ,-2,schedule not applicable
+educ,-1,item not applicable
+educ,1,a level/nvq3+
+educ,2,other quals
+educ,3,no quals
+hospexp,-9,not answere
+hospexp,-6,schedule not obtained
+hospexp,-2,schedule not applicable
+hospexp,-1,item not applicable
+hospexp,1,nhs in/oupatient experience in last year
+hospexp,2,no nhs in/outpatient experience in last year
+smoke,-9,not answered
+smoke,-6,schedule not obtained
+smoke,-2,schedule not applicable
+smoke,-1,item not applicable
+smoke,1,smoker
+smoke,2,non-smoker
+quiz,-9,not answered
+quiz,-6,schedule not obtained
+quiz,-2,schedule not applicable
+quiz,-1,item not applicable
+arrival,-9,not answered (9)
+arrival,-6,schedule not obtained
+arrival,-2,schedule not applicable
+arrival,-1,item not applicable
+group,-9,not answered
+group,-6,schedule not obtained
+group,-2,schedule not applicable
+group,-1,item not applicable
+manwkend,-9,not answered (9)
+manwkend,-6,schedule not obtained
+manwkend,-2,schedule not applicable
+manwkend,-1,item not applicable
+mtneed2,-9,not answered
+mtneed2,-8,can't choose
+mtneed2,-1,item not applicable
+mtneed2,1,not at all well
+mtneed2,2,not very well
+mtneed2,3,adequately
+mtneed2,4,very well
+options2,-9,not answered
+options2,-8,can't choose
+options2,-1,item not applicable
+options2,1,spend less on the nhs and reduce taxes
+options2,2,keep spending on the nhs at about the same level as now
+options2,3,"spend more on the nhs, even if this means an increase in tax"
+comp2,-9,not answered
+comp2,-8,can't choose
+comp2,-1,item not applicable
+comp2,1,not at all likely
+comp2,2,not very likely
+comp2,3,fairly likely
+comp2,4,very likely
+well2,-9,not answered
+well2,-8,can't choose
+well2,-1,item not applicable
+well2,1,not at all likely
+well2,2,not very likely
+well2,3,fairly likely
+well2,4,very likely
+trtmt2,-9,not answered
+trtmt2,-8,can't choose
+trtmt2,-1,item not applicable
+trtmt2,1,not at all likely
+trtmt2,2,not very likely
+trtmt2,3,fairly likely
+trtmt2,4,very likely
+oper2,-9,not answered
+oper2,-8,can't choose
+oper2,-1,item not applicable
+oper2,1,not at all likely
+oper2,2,not very likely
+oper2,3,fairly likely
+oper2,4,very likely
+hlth2,-9,not answered
+hlth2,-8,can't choose
+hlth2,-1,item not applicable
+hlth2,1,health care should be the same for everyone
+hlth2,2,people who can afford it should be able to pay for better he
+payhlth2,-9,not answered
+payhlth2,-8,can't choose
+payhlth2,-1,item not applicable
+payhlth2,1,"the government should pay for everyone's health care, whatev"
+payhlth2,2,the government should pay for the health care of those who c
+payhlth2,3,everyone should pay for their own health care through privat
+payown2,-9,not answered
+payown2,-8,can't choose
+payown2,-1,item not applicable
+payown2,1,bad for the nhs
+payown2,2,"or, would it make no difference to the nhs?"
+payown2,3,good for the nhs
+cuts2,-9,not answered
+cuts2,-8,can't choose
+cuts2,-1,item not applicable
+cuts2,1,"with people living longer, the nhs will always have too many"
+cuts2,2,"everybody has a right to health care, so the nhs should neve"
+resrcs2,-9,not answered
+resrcs2,-8,can't choose
+resrcs2,-1,item not applicable
+resrcs2,0,the nhs will not have enough money and resources for everyon
+resrcs2,1,the nhs will have enough money and resources to provide ever
+sopha2,-9,not answered
+sopha2,-8,can't choose
+sopha2,-1,item not applicable
+sopha2,0,false
+sopha2,1,true
+sophb2,-9,not answered
+sophb2,-8,can't choose
+sophb2,-1,item not applicable
+sophb2,0,false
+sophb2,1,true
+sophc2,-9,not answered
+sophc2,-8,can't choose
+sophc2,-1,item not applicable
+sophc2,0,false
+sophc2,1,true
+sophd2,-9,not answered
+sophd2,-8,can't choose
+sophd2,-1,item not applicable
+sophd2,0,false
+sophd2,1,true
+sophe2,-9,not answered
+sophe2,-8,can't choose
+sophe2,-1,item not applicable
+sophe2,0,false
+sophe2,1,true
+sophf2,-9,not answered
+sophf2,-8,can't choose
+sophf2,-1,item not applicable
+sophf2,0,false
+sophf2,1,true
+prsmoka2,-9,not answered
+prsmoka2,-8,can't choose
+prsmoka2,-1,item not applicable
+prsmoka2,1,the non-smoker
+prsmoka2,2,the smoker
+prsmoka2,3,or would their smoking habits make no difference?
+prsmokb2,-9,not answered
+prsmokb2,-8,can't choose
+prsmokb2,-1,item not applicable
+prsmokb2,1,the non-smoker
+prsmokb2,2,the smoker
+prsmokb2,3,or would their smoking habits make no difference?
+agea2,-9,not answered
+agea2,-8,can't choose
+agea2,-1,item not applicable
+agea2,1,the 30 year old
+agea2,2,the 70 year old
+agea2,3,or would their ages make no difference?
+ageb2,-9,not answered
+ageb2,-8,can't choose
+ageb2,-1,item not applicable
+ageb2,1,the 30 year old
+ageb2,2,the 70 year old
+ageb2,3,or should their ages make no difference?
+treata2,-9,not answered
+treata2,-8,can't choose
+treata2,-1,item not applicable
+treata2,1,disagree strongly
+treata2,2,disagree
+treata2,3,neither agree nor disagree
+treata2,4,agree
+treata2,5,agree strongly
+treatb2,-9,not answered
+treatb2,-8,can't choose
+treatb2,-1,item not applicable
+treatb2,1,never
+treatb2,2,hardly ever
+treatb2,3,some of the time
+treatb2,4,always or most of the time
+lifea2,-9,not answered
+lifea2,-8,can't choose
+lifea2,-1,item not applicable
+lifea2,1,disagree strongly
+lifea2,2,disagree
+lifea2,3,neither agree nor disagree
+lifea2,4,agree
+lifea2,5,agree strongly
+lifeb2,-9,not answered
+lifeb2,-8,can't choose
+lifeb2,-1,item not applicable
+lifeb2,1,never
+lifeb2,2,hardly ever
+lifeb2,3,some of the time
+lifeb2,4,always or most of the time
+preva2,-9,not answered
+preva2,-8,can't choose
+preva2,-1,item not applicable
+preva2,1,disagree strongly
+preva2,2,disagree
+preva2,3,neither agree nor disagree
+preva2,4,agree
+preva2,5,agree strongly
+prevb2,-9,not answered
+prevb2,-8,can't choose
+prevb2,-1,item not applicable
+prevb2,1,never
+prevb2,2,hardly ever
+prevb2,3,some of the time
+prevb2,4,always or most of the time
+severa2,-9,not answered
+severa2,-8,can't choose
+severa2,-1,item not applicable
+severa2,1,disagree strongly
+severa2,2,disagree
+severa2,3,neither agree nor disagree
+severa2,4,agree
+severa2,5,agree strongly
+severb2,-9,not answered
+severb2,-8,can't choose
+severb2,-1,item not applicable
+severb2,1,never
+severb2,2,hardly ever
+severb2,3,some of the time
+severb2,4,always or most of the time
+lista2,-9,not answered
+lista2,-8,can't choose
+lista2,-1,item not applicable
+lista2,1,disagree strongly
+lista2,2,disagree
+lista2,3,neither agree nor disagree
+lista2,4,agree
+lista2,5,agree strongly
+listb2,-9,not answered
+listb2,-8,can't choose
+listb2,-1,item not applicable
+listb2,1,never
+listb2,2,hardly ever
+listb2,3,some of the time
+listb2,4,always or most of the time
+poora2,-9,not answered
+poora2,-8,can't choose
+poora2,-1,item not applicable
+poora2,1,disagree strongly
+poora2,2,disagree
+poora2,3,neither agree nor disagree
+poora2,4,agree
+poora2,5,agree strongly
+poorb2,-9,not answered
+poorb2,-8,can't choose
+poorb2,-1,item not applicable
+poorb2,1,never
+poorb2,2,hardly ever
+poorb2,3,some of the time
+poorb2,4,always or most of the time
+ingova2,-9,not answered
+ingova2,-8,can't choose
+ingova2,-1,item not applicable
+ingova2,1,none of the say
+ingova2,2,some of the say
+ingova2,3,all or most of the say
+ingpa2,-9,not answered
+ingpa2,-8,can't choose
+ingpa2,-1,item not applicable
+ingpa2,1,none of the say
+ingpa2,2,some of the say
+ingpa2,3,all or most of the say
+inhma2,-9,not answered
+inhma2,-8,can't choose
+inhma2,-1,item not applicable
+inhma2,1,none of the say
+inhma2,2,some of the say
+inhma2,3,all or most of the say
+indoca2,-9,not answered
+indoca2,-8,can't choose
+indoca2,-1,item not applicable
+indoca2,1,none of the say
+indoca2,2,some of the say
+indoca2,3,all or most of the say
+inpuba2,-9,not answered
+inpuba2,-8,can't choose
+inpuba2,-1,item not applicable
+inpuba2,1,none of the say
+inpuba2,2,some of the say
+inpuba2,3,all or most of the say
+ingovb2,-9,not answered
+ingovb2,-8,can't choose
+ingovb2,-1,item not applicable
+ingovb2,1,none of the say
+ingovb2,2,some of the say
+ingovb2,3,all or most of the say
+ingpb2,-9,not answered
+ingpb2,-8,can't choose
+ingpb2,-1,item not applicable
+ingpb2,1,none of the say
+ingpb2,2,some of the say
+ingpb2,3,all or most of the say
+inhmb2,-9,not answered
+inhmb2,-8,can't choose
+inhmb2,-1,item not applicable
+inhmb2,1,none of the say
+inhmb2,2,some of the say
+inhmb2,3,all or most of the say
+indocb2,-9,not answered
+indocb2,-8,can't choose
+indocb2,-1,item not applicable
+indocb2,1,none of the say
+indocb2,2,some of the say
+indocb2,3,all or most of the say
+inpubb2,-9,not answered
+inpubb2,-8,can't choose
+inpubb2,-1,item not applicable
+inpubb2,1,none of the say
+inpubb2,2,some of the say
+inpubb2,3,all or most of the say
+bestdec2,-9,not answered
+bestdec2,-8,can't choose
+bestdec2,-1,item not applicable
+bestdec2,1,there should be publicly available guidelines about who shou
+bestdec2,2,medical experts should be allowed to make these sorts of dec
+cthart2,-9,not answered
+cthart2,-8,can't choose
+cthart2,-1,item not applicable
+cthart2,1,strongly against
+cthart2,2,aganst
+cthart2,3,neither in favour nor against
+cthart2,4,in favour
+cthart2,5,strongly in favour
+ctnurs2,-9,not answered
+ctnurs2,-8,can't choose
+ctnurs2,-1,item not applicable
+ctnurs2,1,strongly against
+ctnurs2,2,aganst
+ctnurs2,3,neither in favour nor against
+ctnurs2,4,in favour
+ctnurs2,5,strongly in favour
+ctbaby2,-9,not answered
+ctbaby2,-8,can't choose
+ctbaby2,-1,item not applicable
+ctbaby2,1,strongly against
+ctbaby2,2,aganst
+ctbaby2,3,neither in favour nor against
+ctbaby2,4,in favour
+ctbaby2,5,strongly in favour
+ctfert2,-9,not answered
+ctfert2,-8,can't choose
+ctfert2,-1,item not applicable
+ctfert2,1,strongly against
+ctfert2,2,aganst
+ctfert2,3,neither in favour nor against
+ctfert2,4,in favour
+ctfert2,5,strongly in favour
+cthosp2,-9,not answered
+cthosp2,-8,can't choose
+cthosp2,-1,item not applicable
+cthosp2,1,strongly against
+cthosp2,2,aganst
+cthosp2,3,neither in favour nor against
+cthosp2,4,in favour
+cthosp2,5,strongly in favour
+ctcosm2,-9,not answered
+ctcosm2,-8,can't choose
+ctcosm2,-1,item not applicable
+ctcosm2,1,strongly against
+ctcosm2,2,aganst
+ctcosm2,3,neither in favour nor against
+ctcosm2,4,in favour
+ctcosm2,5,strongly in favour
+chgp2,-9,not answered
+chgp2,-8,can't choose
+chgp2,-1,item not applicable
+chgp2,1,strongly against
+chgp2,2,aganst
+chgp2,3,neither in favour nor against
+chgp2,4,in favour
+chgp2,5,strongly in favour
+chvis2,-9,not answered
+chvis2,-8,can't choose
+chvis2,-1,item not applicable
+chvis2,1,strongly against
+chvis2,2,aganst
+chvis2,3,neither in favour nor against
+chvis2,4,in favour
+chvis2,5,strongly in favour
+chmeal2,-9,not answered
+chmeal2,-8,can't choose
+chmeal2,-1,item not applicable
+chmeal2,1,strongly against
+chmeal2,2,aganst
+chmeal2,3,neither in favour nor against
+chmeal2,4,in favour
+chmeal2,5,strongly in favour
+chstay2,-9,not answered
+chstay2,-8,can't choose
+chstay2,-1,item not applicable
+chstay2,1,strongly against
+chstay2,2,aganst
+chstay2,3,neither in favour nor against
+chstay2,4,in favour
+chstay2,5,strongly in favour
+chamb2,-9,not answered
+chamb2,-8,can't choose
+chamb2,-1,item not applicable
+chamb2,1,strongly against
+chamb2,2,aganst
+chamb2,3,neither in favour nor against
+chamb2,4,in favour
+chamb2,5,strongly in favour
+effic2,-9,not answered
+effic2,-8,can't choose
+effic2,-1,item not applicable
+effic2,1,disagree strongly
+effic2,2,disagree
+effic2,3,neither agree nor disagree
+effic2,4,agree
+effic2,5,agree strongly
+say2,-9,not answered
+say2,-8,can't choose
+say2,-1,item not applicable
+say2,1,disagree strongly
+say2,2,disagree
+say2,3,neither agree nor disagree
+say2,4,agree
+say2,5,agree strongly
+older2,-9,not answered
+older2,-8,can't choose
+older2,-1,item not applicable
+older2,1,disagree strongly
+older2,2,disagree
+older2,3,neither agree nor disagree
+older2,4,agree
+older2,5,agree strongly
+expect2,-9,not answered
+expect2,-8,can't choose
+expect2,-1,item not applicable
+expect2,1,disagree strongly
+expect2,2,disagree
+expect2,3,neither agree nor disagree
+expect2,4,agree
+expect2,5,agree strongly
+save2,-9,not answered
+save2,-8,can't choose
+save2,-1,item not applicable
+save2,1,disagree strongly
+save2,2,disagree
+save2,3,neither agree nor disagree
+save2,4,agree
+save2,5,agree strongly
+ration2,-9,not answered
+ration2,-8,can't choose
+ration2,-1,item not applicable
+ration2,1,disagree strongly
+ration2,2,disagree
+ration2,3,neither agree nor disagree
+ration2,4,agree
+ration2,5,agree strongly
+best2,-9,not answered
+best2,-8,can't choose
+best2,-1,item not applicable
+best2,1,disagree strongly
+best2,2,disagree
+best2,3,neither agree nor disagree
+best2,4,agree
+best2,5,agree strongly
+social2,-9,not answered
+social2,-8,can't choose
+social2,-1,item not applicable
+social2,1,disagree strongly
+social2,2,disagree
+social2,3,neither agree nor disagree
+social2,4,agree
+social2,5,agree strongly
+natint2,-9,not answered
+natint2,-8,can't choose
+natint2,-1,item not applicable
+natint2,1,disagree strongly
+natint2,2,disagree
+natint2,3,neither agree nor disagree
+natint2,4,agree
+natint2,5,agree strongly
+blame2,-9,not answered
+blame2,-8,can't choose
+blame2,-1,item not applicable
+blame2,1,disagree strongly
+blame2,2,disagree
+blame2,3,neither agree nor disagree
+blame2,4,agree
+blame2,5,agree strongly
+succes2,-9,not answered
+succes2,-8,can't choose
+succes2,-1,item not applicable
+succes2,1,disagree strongly
+succes2,2,disagree
+succes2,3,neither agree nor disagree
+succes2,4,agree
+succes2,5,agree strongly
+govrl2,-9,not answered
+govrl2,-8,can't choose
+govrl2,-1,item not applicable
+govrl2,1,disagree strongly
+govrl2,2,disagree
+govrl2,3,neither agree nor disagree
+govrl2,4,agree
+govrl2,5,agree strongly
+grpdisc,-9,not answered
+grpdisc,-1,item not applicable
+grpdisc,1,of little or no value
+grpdisc,2,somewhat valuable
+grpdisc,3,very valuable
+talking,-9,not answered
+talking,-1,item not applicable
+talking,1,of little or no value
+talking,2,somewhat valuable
+talking,3,very valuable
+experts,-9,not answered
+experts,-1,item not applicable
+experts,1,of little or no value
+experts,2,somewhat valuable
+experts,3,very valuable
+pols,-9,not answered
+pols,-1,item not applicable
+pols,1,of little or no value
+pols,2,somewhat valuable
+pols,3,very valuable
+modpart,-9,not answered
+modpart,-8,can't choose
+modpart,-1,item not applicable
+modpart,1,strongly disagree
+modpart,2,disagree
+modpart,3,neither agree or disagree
+modpart,4,agree
+modpart,5,strongly agree
+modinfl,-9,not answered
+modinfl,-8,can't choose
+modinfl,-1,item not applicable
+modinfl,1,strongly disagree
+modinfl,2,disagree
+modinfl,3,neither agree or disagree
+modinfl,4,agree
+modinfl,5,strongly agree
+biasmat,-9,not answered
+biasmat,-8,can't choose
+biasmat,-1,item not applicable
+biasmat,1,mostly balanced
+biasmat,2,favoured some positions over others
+dopint,-9,not answered
+dopint,-8,can't choose
+dopint,-1,item not applicable
+dopint,1,not at all interesting
+dopint,2,not very interesting
+dopint,3,quite interesting
+dopint,4,very interesting
+answera1,0,incorrect
+answera1,1,correct
+answera2,0,incorrect
+answera2,1,correct
+answerb1,0,incorrect
+answerb1,1,correct
+answerb2,0,incorrect
+answerb2,1,correct
+answerc1,0,incorrect
+answerc1,1,correct
+answerc2,0,incorrect
+answerc2,1,correct
+answerd1,0,incorrect
+answerd1,1,correct
+answerd2,0,incorrect
+answerd2,1,correct
+answere1,0,incorrect
+answere1,1,correct
+answere2,0,incorrect
+answere2,1,correct
+answerf1,0,incorrect
+answerf1,1,correct
+answerf2,0,incorrect
+answerf2,1,correct
+sophist1,0,none correct
+sophist1,1,one correct
+sophist1,2,two correct
+sophist1,3,three correct
+sophist1,4,four correct
+sophist1,5,five correct
+sophist1,6,six correct
+sophist2,0,none correct
+sophist2,1,one correct
+sophist2,2,two correct
+sophist2,3,three correct
+sophist2,4,four correct
+sophist2,5,five correct
+sophist2,6,six correct
+part,0,non-participant
+part,1,participant

@@ -1,0 +1,388 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+serial_a,double,haven_labelled|vctrs_vctr|double,,arf serial number  (serial_a),F8.0,,,TRUE,Retained
+field,double,haven_labelled|vctrs_vctr|double,,field area (field),F8.0,,,TRUE,Retained
+region,double,haven_labelled|vctrs_vctr|double,,region,F8.0,,,TRUE,Retained
+tnc,double,haven_labelled|vctrs_vctr|double,,total number of calls to complete interview (tnc),F8.0,,,TRUE,Retained
+units,double,haven_labelled|vctrs_vctr|double,,number of occupied dwelling units (arf3),F8.0,,,TRUE,Retained
+selunit,double,haven_labelled|vctrs_vctr|double,,selected dwelling unit  (arf8),F8.0,,,TRUE,Retained
+adults,double,haven_labelled|vctrs_vctr|double,,number of adults in household  (arf11),F8.0,,,TRUE,Retained
+selper,double,haven_labelled|vctrs_vctr|double,,person number of selected person  (arf15),F8.0,,,TRUE,Retained
+recruit,double,haven_labelled|vctrs_vctr|double,,outcome of recruitment to manchester  (arf19),F8.0,,,TRUE,Retained
+passinfo,double,haven_labelled|vctrs_vctr|double,,pass on information to  granada (arf20),F8.0,,,TRUE,Retained
+recnumb,double,haven_labelled|vctrs_vctr|double,,telephone number  (arf24a),F8.0,,,TRUE,Retained
+agerange,double,haven_labelled|vctrs_vctr|double,,respondents age  (arf25a),F8.0,,,TRUE,Retained
+sex,double,haven_labelled|vctrs_vctr|double,,respondents sex  (arf25c),F8.0,,,TRUE,Retained
+workstat,double,haven_labelled|vctrs_vctr|double,,respondent's working status (arf26),F8.0,,,TRUE,Retained
+class,double,haven_labelled|vctrs_vctr|double,,social class (arf27b),F8.0,,,TRUE,Retained
+serial_m,double,haven_labelled|vctrs_vctr|double,,serial number (serial_m),F8.0,,,TRUE,Retained
+batch,double,haven_labelled|vctrs_vctr|double,,batch number  (batch),F12.0,,,TRUE,Retained
+gender,double,haven_labelled|vctrs_vctr|double,,sex of respondent (a1),F8.0,,,TRUE,Retained
+age,double,haven_labelled|vctrs_vctr|double,,age in years (a2),F8.0,,,TRUE,Retained
+kid,double,haven_labelled|vctrs_vctr|double,,number of children aged 17 or younger (a3a),F8.0,,,TRUE,Retained
+kids5,double,haven_labelled|vctrs_vctr|double,,number of children under age 5 (a3b_i),F8.0,,,TRUE,Retained
+kids11,double,haven_labelled|vctrs_vctr|double,,number between 5 and 11 (a3b_ii),F8.0,,,TRUE,Retained
+kids15,double,haven_labelled|vctrs_vctr|double,,number of children between 12 and 15 (a3b_iii),F8.0,,,TRUE,Retained
+kids17,double,haven_labelled|vctrs_vctr|double,,number of children  between 16 and 17 (a3b_iv),F8.0,,,TRUE,Retained
+marstat,double,haven_labelled|vctrs_vctr|double,,marital status (a4),F8.0,,,TRUE,Retained
+newsyn,double,haven_labelled|vctrs_vctr|double,,read paper at least 3 times a week (a5a),F8.0,,,TRUE,Retained
+newsp,double,haven_labelled|vctrs_vctr|double,,newspaper read most frequently (a5b),F8.0,,,TRUE,Retained
+gpappt,double,haven_labelled|vctrs_vctr|double,,gps' appointment systems (a6a),F8.0,,,TRUE,Retained
+qualgps,double,haven_labelled|vctrs_vctr|double,,quality of medical treatment by gps (a6b),F8.0,,,TRUE,Retained
+waitlist,double,haven_labelled|vctrs_vctr|double,,hospital waiting lists for non-emergency (a6c),F8.0,,,TRUE,Retained
+qualhosp,double,haven_labelled|vctrs_vctr|double,,quality of medical treatment in hospitals (a6d),F8.0,,,TRUE,Retained
+waitappt,double,haven_labelled|vctrs_vctr|double,,waiting time for appointments (a6e),F8.0,,,TRUE,Retained
+waitout,double,haven_labelled|vctrs_vctr|double,,time spent waiting in outpatient depts  (a6f),F8.0,,,TRUE,Retained
+waitacc,double,haven_labelled|vctrs_vctr|double,,time spent waiting in a&e for doctor (a6g),F8.0,,,TRUE,Retained
+fend,double,haven_labelled|vctrs_vctr|double,,people should fend for themselves (a7a),F8.0,,,TRUE,Retained
+govsp,double,haven_labelled|vctrs_vctr|double,,govt spending to improve (a7b),F8.0,,,TRUE,Retained
+earn,double,haven_labelled|vctrs_vctr|double,,everyone should earn/keep as much as they can (a7c),F8.0,,,TRUE,Retained
+liveprs,double,haven_labelled|vctrs_vctr|double,,people should live for the present (a7d),F8.0,,,TRUE,Retained
+pid,double,haven_labelled|vctrs_vctr|double,,party id (b1a),F8.0,,,TRUE,Retained
+pidlean,double,haven_labelled|vctrs_vctr|double,,closer to a party (b1b),F8.0,,,TRUE,Retained
+employ,double,haven_labelled|vctrs_vctr|double,,employment status (b2),F8.0,,,TRUE,Retained
+hshldsz,double,haven_labelled|vctrs_vctr|double,,number of adults aged 18 or over in household (b3),F8.0,,,TRUE,Retained
+cie,double,haven_labelled|vctrs_vctr|double,,chief income earner (b4),F8.0,,,TRUE,Retained
+cieemp,double,haven_labelled|vctrs_vctr|double,,current status of chief income earner (b5),F8.0,,,TRUE,Retained
+selfemp,double,haven_labelled|vctrs_vctr|double,,employee or self-employed (b7),F8.0,,,TRUE,Retained
+superv,double,haven_labelled|vctrs_vctr|double,,supervisor or responsibility for others (b8),F8.0,,,TRUE,Retained
+manywork,double,haven_labelled|vctrs_vctr|double,,number of people at place of employment (b9a),F8.0,,,TRUE,Retained
+semanywk,double,haven_labelled|vctrs_vctr|double,,employees (b10a),F8.0,,,TRUE,Retained
+soc,double,haven_labelled|vctrs_vctr|double,,soc codes,F8.0,,,TRUE,Retained
+es,double,haven_labelled|vctrs_vctr|double,,employment status of respondent (es is a summary),F8.0,,,TRUE,Retained
+segfull,double,haven_labelled|vctrs_vctr|double,,seg codes,F8.0,,,TRUE,Retained
+educa,double,haven_labelled|vctrs_vctr|double,,highest qualification at or after school (b11),F8.0,,,TRUE,Retained
+educb,double,haven_labelled|vctrs_vctr|double,,highest qualification (b12),F8.0,,,TRUE,Retained
+pastgp,double,haven_labelled|vctrs_vctr|double,,visited an nhs gp (b13a),F8.0,,,TRUE,Retained
+pastout,double,haven_labelled|vctrs_vctr|double,,outpatient in an nhs hospital (b13b),F8.0,,,TRUE,Retained
+pastin,double,haven_labelled|vctrs_vctr|double,,inpatient in an nhs hospital (b13c),F8.0,,,TRUE,Retained
+pastvis,double,haven_labelled|vctrs_vctr|double,,visited patient in an nhs hospital (b13d),F8.0,,,TRUE,Retained
+pastpat,double,haven_labelled|vctrs_vctr|double,,treatment as a private patient (b13e),F8.0,,,TRUE,Retained
+privins,double,haven_labelled|vctrs_vctr|double,,private health insurance scheme (b14),F8.0,,,TRUE,Retained
+health,double,haven_labelled|vctrs_vctr|double,,general health for your age (b15a),F8.0,,,TRUE,Retained
+wrryhlth,double,haven_labelled|vctrs_vctr|double,,worry about your health (b15b),F8.0,,,TRUE,Retained
+smokstat,double,haven_labelled|vctrs_vctr|double,,smoking status (b16),F8.0,,,TRUE,Retained
+ethnic,double,haven_labelled|vctrs_vctr|double,,ethnic group (b17),F8.0,,,TRUE,Retained
+income,double,haven_labelled|vctrs_vctr|double,,total income of your household (b18),F8.0,,,TRUE,Retained
+solpro,double,haven_labelled|vctrs_vctr|double,,standard of living change (b19),F8.0,,,TRUE,Retained
+trusta,double,haven_labelled|vctrs_vctr|double,,trust govt nation over politics (b20a),F8.0,,,TRUE,Retained
+trustb,double,haven_labelled|vctrs_vctr|double,,trust british journalists (b20b),F8.0,,,TRUE,Retained
+trustc,double,haven_labelled|vctrs_vctr|double,,trust top civil servants (b20c),F8.0,,,TRUE,Retained
+trustd,double,haven_labelled|vctrs_vctr|double,,trust hospital doctors (b20d),F8.0,,,TRUE,Retained
+truste,double,haven_labelled|vctrs_vctr|double,,trust police (b20e),F8.0,,,TRUE,Retained
+phone,double,haven_labelled|vctrs_vctr|double,,telephone in household (b21a),F8.0,,,TRUE,Retained
+canring,double,haven_labelled|vctrs_vctr|double,,satisfactory interview check (b21b),F8.0,,,TRUE,Retained
+duration,double,haven_labelled|vctrs_vctr|double,,interview duration (b22b),F8.0,,,TRUE,Retained
+dateofi,double,haven_labelled|vctrs_vctr|double,,interview date (b22c),F8.0,,,TRUE,Retained
+interno,double,haven_labelled|vctrs_vctr|double,,interviewer number (b22f),F8.0,,,TRUE,Retained
+soclss,double,haven_labelled|vctrs_vctr|double,,social class,F8.0,,,TRUE,Retained
+mtneed1,double,haven_labelled|vctrs_vctr|double,,nhs meets everyone's medical needs t1 (q1),F8.0,,,TRUE,Retained
+options1,double,haven_labelled|vctrs_vctr|double,,government options t1 (q2),F8.0,,,TRUE,Retained
+comp1,double,haven_labelled|vctrs_vctr|double,,complaints taken seriously t1 (q3a),F8.0,,,TRUE,Retained
+well1,double,haven_labelled|vctrs_vctr|double,,well enough to leave hospital t1 (q3b),F8.0,,,TRUE,Retained
+trtmt1,double,haven_labelled|vctrs_vctr|double,,views on your treatment taken seriously t1 (q3c),F8.0,,,TRUE,Retained
+oper1,double,haven_labelled|vctrs_vctr|double,,operation at set time t1 (q3d),F8.0,,,TRUE,Retained
+hlth1,double,haven_labelled|vctrs_vctr|double,,views on health care t1 (q4),F8.0,,,TRUE,Retained
+payhlth1,double,haven_labelled|vctrs_vctr|double,,payment for health care t1 (q5),F8.0,,,TRUE,Retained
+payown1,double,haven_labelled|vctrs_vctr|double,,pay for own health care  t1 (q6),F8.0,,,TRUE,Retained
+cuts1,double,haven_labelled|vctrs_vctr|double,,cutting treatments t1 (q7),F8.0,,,TRUE,Retained
+resrcs1,double,haven_labelled|vctrs_vctr|double,,future nhs resources t1 (q8),F8.0,,,TRUE,Retained
+sopha1,double,haven_labelled|vctrs_vctr|double,,standard charge for prescription t1 (q9a),F8.0,,,TRUE,Retained
+sophb1,double,haven_labelled|vctrs_vctr|double,,proportion of old people getting larger t1 (q9b),F8.0,,,TRUE,Retained
+sophc1,double,haven_labelled|vctrs_vctr|double,,spending on nhs doubled in last 20 years t1 (q9c),F8.0,,,TRUE,Retained
+sophd1,double,haven_labelled|vctrs_vctr|double,,people use private medical treatment t1 (q9d),F8.0,,,TRUE,Retained
+sophe1,double,haven_labelled|vctrs_vctr|double,,free breast cancer screening t1 (q9e),F8.0,,,TRUE,Retained
+sophf1,double,haven_labelled|vctrs_vctr|double,,cosmetic surgery never available on nhs t1 (q9f),F8.0,,,TRUE,Retained
+prsmoka1,double,haven_labelled|vctrs_vctr|double,,smoking affects treatment priority t1 (q10a),F8.0,,,TRUE,Retained
+prsmokb1,double,haven_labelled|vctrs_vctr|double,,r's view on smoking and priority t1 (q10b),F8.0,,,TRUE,Retained
+agea1,double,haven_labelled|vctrs_vctr|double,,age matters in treatment priority t1 (q11a),F8.0,,,TRUE,Retained
+ageb1,double,haven_labelled|vctrs_vctr|double,,respondent's age priority t1 (q11b),F8.0,,,TRUE,Retained
+treata1,double,haven_labelled|vctrs_vctr|double,,lower priority to expensive treatments t1 (q12a),F8.0,,,TRUE,Retained
+treatb1,double,haven_labelled|vctrs_vctr|double,,nhs actions on expensive treatments t1 (q12b),F8.0,,,TRUE,Retained
+lifea1,double,haven_labelled|vctrs_vctr|double,,quality of life t1 (q13a),F8.0,,,TRUE,Retained
+lifeb1,double,haven_labelled|vctrs_vctr|double,,nhs priority to quality of life t1 (q13b),F8.0,,,TRUE,Retained
+preva1,double,haven_labelled|vctrs_vctr|double,,priority to prevention t1 (q14a),F8.0,,,TRUE,Retained
+prevb1,double,haven_labelled|vctrs_vctr|double,,nhs priority to prevention t1 (q14b),F8.0,,,TRUE,Retained
+severa1,double,haven_labelled|vctrs_vctr|double,,priority to severity t1 (q15a),F8.0,,,TRUE,Retained
+severb1,double,haven_labelled|vctrs_vctr|double,,respondent's priority to severity t1 (q15b),F8.0,,,TRUE,Retained
+lista1,double,haven_labelled|vctrs_vctr|double,,priority to waiting list t1 (q16a),F8.0,,,TRUE,Retained
+listb1,double,haven_labelled|vctrs_vctr|double,,nhs priority to waiting list t1 (q16b),F8.0,,,TRUE,Retained
+poora1,double,haven_labelled|vctrs_vctr|double,,priority to poor t1 (q17a),F8.0,,,TRUE,Retained
+poorb1,double,haven_labelled|vctrs_vctr|double,,nhs priority to the poor t1 (q17b),F8.0,,,TRUE,Retained
+ingova1,double,haven_labelled|vctrs_vctr|double,,amount of govt input t1 (q18a_a),F8.0,,,TRUE,Retained
+ingpa1,double,haven_labelled|vctrs_vctr|double,,amount of gp input t1 (q18a_b),F8.0,,,TRUE,Retained
+inhma1,double,haven_labelled|vctrs_vctr|double,,hospital or health service manager input t1 (q18a_c),F8.0,,,TRUE,Retained
+indoca1,double,haven_labelled|vctrs_vctr|double,,amount of doctor input t1 (q18a_d),F8.0,,,TRUE,Retained
+inpuba1,double,haven_labelled|vctrs_vctr|double,,amount of general public input t1 (q18a_e),F8.0,,,TRUE,Retained
+ingovb1,double,haven_labelled|vctrs_vctr|double,,amount of input govt does have t1 (q18b_a),F8.0,,,TRUE,Retained
+ingpb1,double,haven_labelled|vctrs_vctr|double,,amount of input gps have t1 (q18b_b_,F8.0,,,TRUE,Retained
+inhmb1,double,haven_labelled|vctrs_vctr|double,,input hospital or health service managers have t1 (q18b_c),F8.0,,,TRUE,Retained
+indocb1,double,haven_labelled|vctrs_vctr|double,,amount of input doctors have t1 (q18b_d),F8.0,,,TRUE,Retained
+inpubb1,double,haven_labelled|vctrs_vctr|double,,amount of input from general public t1 (q18b_e),F8.0,,,TRUE,Retained
+bestdec1,double,haven_labelled|vctrs_vctr|double,,best way to make decision t1 (q19),F8.0,,,TRUE,Retained
+cthart1,double,haven_labelled|vctrs_vctr|double,,nhs cut down on heart transplants t1 (q20_a),F8.0,,,TRUE,Retained
+ctnurs1,double,haven_labelled|vctrs_vctr|double,,nhs cut down on long term nursing care t1 (q20_b),F8.0,,,TRUE,Retained
+ctbaby1,double,haven_labelled|vctrs_vctr|double,,nhs cut down on intensive care for premature babies t1 (q20_c),F8.0,,,TRUE,Retained
+ctfert1,double,haven_labelled|vctrs_vctr|double,,nhs cut down on fertility treatment t1 (q21_a),F8.0,,,TRUE,Retained
+cthosp1,double,haven_labelled|vctrs_vctr|double,,nhs cut down on hospice care for terminal t1 (q21_b),F8.0,,,TRUE,Retained
+ctcosm1,double,haven_labelled|vctrs_vctr|double,,nhs cut down on cosmetic surgery t1 (q21_c),F8.0,,,TRUE,Retained
+chgp1,double,haven_labelled|vctrs_vctr|double,,charges for visiting your gp t1 (q22_a),F8.0,,,TRUE,Retained
+chvis1,double,haven_labelled|vctrs_vctr|double,,charges for your gp visiting t1 (q22_b),F8.0,,,TRUE,Retained
+chmeal1,double,haven_labelled|vctrs_vctr|double,,charges for hospital meals t1 (q22_c),F8.0,,,TRUE,Retained
+chstay1,double,haven_labelled|vctrs_vctr|double,,charges for accomodation in hospital t1 (q22_d),F8.0,,,TRUE,Retained
+chamb1,double,haven_labelled|vctrs_vctr|double,,introducing charges for non-emergency ambulance t1 (q22_e),F8.0,,,TRUE,Retained
+effic1,double,haven_labelled|vctrs_vctr|double,,nhs efficiency t1 (q23_a),F8.0,,,TRUE,Retained
+say1,double,haven_labelled|vctrs_vctr|double,,patients have more say t1 (q23_b),F8.0,,,TRUE,Retained
+older1,double,haven_labelled|vctrs_vctr|double,,older people have priority for treatment t1 (q23_c),F8.0,,,TRUE,Retained
+expect1,double,haven_labelled|vctrs_vctr|double,,expect too much of the nhs t1 (q23_d),F8.0,,,TRUE,Retained
+save1,double,haven_labelled|vctrs_vctr|double,,save life at any cost t1 (q23_e),F8.0,,,TRUE,Retained
+ration1,double,haven_labelled|vctrs_vctr|double,,ration treatments  t1 (q23_f),F8.0,,,TRUE,Retained
+best1,double,haven_labelled|vctrs_vctr|double,,nhs is best in the world t1 (q23_g),F8.0,,,TRUE,Retained
+social1,double,haven_labelled|vctrs_vctr|double,,improved social conditions reduce demands t1 (q23_h),F8.0,,,TRUE,Retained
+natint1,double,haven_labelled|vctrs_vctr|double,,vote based on national interests t1 (q24_a),F8.0,,,TRUE,Retained
+blame1,double,haven_labelled|vctrs_vctr|double,,poor people have themselves to blame t1 (q24_b),F8.0,,,TRUE,Retained
+succes1,double,haven_labelled|vctrs_vctr|double,,too concerned about unsuccessful t1 (q24_c),F8.0,,,TRUE,Retained
+govrl1,double,haven_labelled|vctrs_vctr|double,,life is never fair so no govt role t1 (q24_d),F8.0,,,TRUE,Retained
+country,double,haven_labelled|vctrs_vctr|double,,country (country),F8.0,,,TRUE,Retained
+agegp,double,haven_labelled|vctrs_vctr|double,,age grouped (agegp derived from  a2),F8.0,,,TRUE,Retained
+agesex,double,haven_labelled|vctrs_vctr|double,,,F8.0,,,TRUE,Retained
+kids,double,haven_labelled|vctrs_vctr|double,,children in household (kids),F8.0,,,TRUE,Retained
+party,double,haven_labelled|vctrs_vctr|double,,respondent's pid (derived from b1a and b1b),F8.0,,,TRUE,Retained
+acqual,double,haven_labelled|vctrs_vctr|double,,academic qualifications (acqual derived from b11),F8.0,,,TRUE,Retained
+degree,double,haven_labelled|vctrs_vctr|double,,respondent has degree (degree derived from b12),F8.0,,,TRUE,Retained
+seg,double,haven_labelled|vctrs_vctr|double,,grouped seg,F8.0,,,TRUE,Retained
+segabr,double,haven_labelled|vctrs_vctr|double,,,F8.0,,,TRUE,Retained
+educ,double,haven_labelled|vctrs_vctr|double,,highest educ qualification reached (educ),F8.0,,,TRUE,Retained
+hospexp,double,haven_labelled|vctrs_vctr|double,,hospital experience (hospexp),F8.0,,,TRUE,Retained
+smoke,double,haven_labelled|vctrs_vctr|double,,,F8.0,,,TRUE,Retained
+quiz,double,haven_labelled|vctrs_vctr|double,,,F8.0,,,TRUE,Retained
+arrival,double,haven_labelled|vctrs_vctr|double,,respondent booked on the friday (arrival),F8.0,,,TRUE,Retained
+group,double,haven_labelled|vctrs_vctr|double,,"respondent""s discussion group number (group)",F8.0,,,TRUE,Retained
+manwkend,double,haven_labelled|vctrs_vctr|double,,attended and completed post-wknd questionnaire (manwkend),F8.0,,,TRUE,Retained
+mtneed2,double,haven_labelled|vctrs_vctr|double,,nhs meets everyone's medical needs t2 (w1),F8.0,,,TRUE,Retained
+options2,double,haven_labelled|vctrs_vctr|double,,government options t2 (w2),F8.0,,,TRUE,Retained
+comp2,double,haven_labelled|vctrs_vctr|double,,complaints taken seriously t2 (w3a),F8.0,,,TRUE,Retained
+well2,double,haven_labelled|vctrs_vctr|double,,well enough to leave hospital t2 (w3b),F8.0,,,TRUE,Retained
+trtmt2,double,haven_labelled|vctrs_vctr|double,,views on your treatment taken seriously t2 (w3c),F8.0,,,TRUE,Retained
+oper2,double,haven_labelled|vctrs_vctr|double,,operation at set time t2 (w3d),F8.0,,,TRUE,Retained
+hlth2,double,haven_labelled|vctrs_vctr|double,,views on health care t2 (w4),F8.0,,,TRUE,Retained
+payhlth2,double,haven_labelled|vctrs_vctr|double,,payment for health care t2 (w5),F8.0,,,TRUE,Retained
+payown2,double,haven_labelled|vctrs_vctr|double,,pay for own health care t2 (w6),F8.0,,,TRUE,Retained
+cuts2,double,haven_labelled|vctrs_vctr|double,,cutting treatments t2 (w7),F8.0,,,TRUE,Retained
+resrcs2,double,haven_labelled|vctrs_vctr|double,,future nhs resources t2 (w8),F8.0,,,TRUE,Retained
+sopha2,double,haven_labelled|vctrs_vctr|double,,standard charge for prescription  t2 (w9a),F8.0,,,TRUE,Retained
+sophb2,double,haven_labelled|vctrs_vctr|double,,proportion of old people getting larger t2 (w9b),F8.0,,,TRUE,Retained
+sophc2,double,haven_labelled|vctrs_vctr|double,,spending on nhs doubled in last 20 years  t2 (w9c),F8.0,,,TRUE,Retained
+sophd2,double,haven_labelled|vctrs_vctr|double,,people use private medical treatment t2 (w9d),F8.0,,,TRUE,Retained
+sophe2,double,haven_labelled|vctrs_vctr|double,,free breast cancer screening t2 (w9e),F8.0,,,TRUE,Retained
+sophf2,double,haven_labelled|vctrs_vctr|double,,cosmetic surgery not available on nhs t2 (w9f),F8.0,,,TRUE,Retained
+prsmoka2,double,haven_labelled|vctrs_vctr|double,,smoking affects treatment priority t2 (w10a),F8.0,,,TRUE,Retained
+prsmokb2,double,haven_labelled|vctrs_vctr|double,,r's view on smoking and priority t2 (w10b),F8.0,,,TRUE,Retained
+agea2,double,haven_labelled|vctrs_vctr|double,,age matters in treatment priority t2 (w11a),F8.0,,,TRUE,Retained
+ageb2,double,haven_labelled|vctrs_vctr|double,,respondent's age priority t2 (w11b),F8.0,,,TRUE,Retained
+treata2,double,haven_labelled|vctrs_vctr|double,,lower priority to expensive treatments t2 (w12a),F8.0,,,TRUE,Retained
+treatb2,double,haven_labelled|vctrs_vctr|double,,nhs actions on expensive treatments t2 (w12b),F8.0,,,TRUE,Retained
+lifea2,double,haven_labelled|vctrs_vctr|double,,quality of life t2 (w13a),F8.0,,,TRUE,Retained
+lifeb2,double,haven_labelled|vctrs_vctr|double,,nhs priority to quality of life t2 (w13b),F8.0,,,TRUE,Retained
+preva2,double,haven_labelled|vctrs_vctr|double,,priority to prevention t2 (w14a),F8.0,,,TRUE,Retained
+prevb2,double,haven_labelled|vctrs_vctr|double,,nhs priority to prevention t2 (w14b),F8.0,,,TRUE,Retained
+severa2,double,haven_labelled|vctrs_vctr|double,,priority to severity t2 (w15a),F8.0,,,TRUE,Retained
+severb2,double,haven_labelled|vctrs_vctr|double,,nhs priority to severity t2 (w15b),F8.0,,,TRUE,Retained
+lista2,double,haven_labelled|vctrs_vctr|double,,priority to waiting list t2 (w16a),F8.0,,,TRUE,Retained
+listb2,double,haven_labelled|vctrs_vctr|double,,nhs priority to waiting list t2 (w16b),F8.0,,,TRUE,Retained
+poora2,double,haven_labelled|vctrs_vctr|double,,priority to poor t2 (w17a),F8.0,,,TRUE,Retained
+poorb2,double,haven_labelled|vctrs_vctr|double,,nhs priority to the poor t2 (w17b),F8.0,,,TRUE,Retained
+ingova2,double,haven_labelled|vctrs_vctr|double,,amount of govt input t2 (w18a_a),F8.0,,,TRUE,Retained
+ingpa2,double,haven_labelled|vctrs_vctr|double,,amount of gp input t2 (w18a_b),F8.0,,,TRUE,Retained
+inhma2,double,haven_labelled|vctrs_vctr|double,,hospital or health service managers input t2 (w18a_c),F8.0,,,TRUE,Retained
+indoca2,double,haven_labelled|vctrs_vctr|double,,amount of doctor input t2 (w18a_d),F8.0,,,TRUE,Retained
+inpuba2,double,haven_labelled|vctrs_vctr|double,,amount of general public input t2 (w18a_e),F8.0,,,TRUE,Retained
+ingovb2,double,haven_labelled|vctrs_vctr|double,,amount of input govt does have t2 (w18b_a),F8.0,,,TRUE,Retained
+ingpb2,double,haven_labelled|vctrs_vctr|double,,amount of input gps have tw (w18b_b),F8.0,,,TRUE,Retained
+inhmb2,double,haven_labelled|vctrs_vctr|double,,input hospital or health service managers have t2 (w18b_c),F8.0,,,TRUE,Retained
+indocb2,double,haven_labelled|vctrs_vctr|double,,amount of input doctors have t2 (w18b_d),F8.0,,,TRUE,Retained
+inpubb2,double,haven_labelled|vctrs_vctr|double,,amount of input from general public t2 (w18b_e),F8.0,,,TRUE,Retained
+bestdec2,double,haven_labelled|vctrs_vctr|double,,best way to make decisions t2 (w19),F8.0,,,TRUE,Retained
+cthart2,double,haven_labelled|vctrs_vctr|double,,nhs cut down on heart transplants t2 (w20_a),F8.0,,,TRUE,Retained
+ctnurs2,double,haven_labelled|vctrs_vctr|double,,nhs cut down on long term nursing care t2 (w20_b),F8.0,,,TRUE,Retained
+ctbaby2,double,haven_labelled|vctrs_vctr|double,,nhs cut down on intensive care for premature babies t2 (w20_c),F8.0,,,TRUE,Retained
+ctfert2,double,haven_labelled|vctrs_vctr|double,,nhs cut down on fertility treatment t2 (w21_a),F8.0,,,TRUE,Retained
+cthosp2,double,haven_labelled|vctrs_vctr|double,,nhs cut down on hospice care for terminal t2 (w21_b),F8.0,,,TRUE,Retained
+ctcosm2,double,haven_labelled|vctrs_vctr|double,,nhs cut down on cosmetic surgery t2 (w21_c),F8.0,,,TRUE,Retained
+chgp2,double,haven_labelled|vctrs_vctr|double,,charges for visiting your gp t2 (w22_a),F8.0,,,TRUE,Retained
+chvis2,double,haven_labelled|vctrs_vctr|double,,charges for your gp visiting t2 (w22_b),F8.0,,,TRUE,Retained
+chmeal2,double,haven_labelled|vctrs_vctr|double,,charges for hospital meals t2 (w22_c),F8.0,,,TRUE,Retained
+chstay2,double,haven_labelled|vctrs_vctr|double,,charges for accomodation in hospital t2 (w22_d),F8.0,,,TRUE,Retained
+chamb2,double,haven_labelled|vctrs_vctr|double,,charges for non-emergency ambulance t2 (w22_e),F8.0,,,TRUE,Retained
+effic2,double,haven_labelled|vctrs_vctr|double,,nhs efficiency t2 (w23_a),F8.0,,,TRUE,Retained
+say2,double,haven_labelled|vctrs_vctr|double,,patients have more say t2 (w23_b),F8.0,,,TRUE,Retained
+older2,double,haven_labelled|vctrs_vctr|double,,older people have priority for treatment t2 (w23_c),F8.0,,,TRUE,Retained
+expect2,double,haven_labelled|vctrs_vctr|double,,expect too much of nhs t2 (w23_d),F8.0,,,TRUE,Retained
+save2,double,haven_labelled|vctrs_vctr|double,,save life at any cost t2 (w23_e),F8.0,,,TRUE,Retained
+ration2,double,haven_labelled|vctrs_vctr|double,,ration treatments t2 (w23_f),F8.0,,,TRUE,Retained
+best2,double,haven_labelled|vctrs_vctr|double,, nhs is best in the world t2 (w23_g),F8.0,,,TRUE,Retained
+social2,double,haven_labelled|vctrs_vctr|double,,improving social conditions would reduce demand t2 (w23_h),F8.0,,,TRUE,Retained
+natint2,double,haven_labelled|vctrs_vctr|double,,vote based on national interests t2 (w24_a),F8.0,,,TRUE,Retained
+blame2,double,haven_labelled|vctrs_vctr|double,,poor people have themselves to blame t2 (w24_b),F8.0,,,TRUE,Retained
+succes2,double,haven_labelled|vctrs_vctr|double,,too concerned with the unsuccessful t2 (w24_c),F8.0,,,TRUE,Retained
+govrl2,double,haven_labelled|vctrs_vctr|double,,lfe is never fair so no govt role t2 (w24_d),F8.0,,,TRUE,Retained
+grpdisc,double,haven_labelled|vctrs_vctr|double,,value of group discussions t2 (ww25_a),F8.0,,,TRUE,Retained
+talking,double,haven_labelled|vctrs_vctr|double,,value:  talking outside group t2 (ww25_b),F8.0,,,TRUE,Retained
+experts,double,haven_labelled|vctrs_vctr|double,,value of the experts' sessions t2 (ww25_c),F8.0,,,TRUE,Retained
+pols,double,haven_labelled|vctrs_vctr|double,,value of the politcians' sessions t2 (ww25_d),F8.0,,,TRUE,Retained
+modpart,double,haven_labelled|vctrs_vctr|double,,moderator allowed participation t2 (ww26_a),F8.0,,,TRUE,Retained
+modinfl,double,haven_labelled|vctrs_vctr|double,,moderator influenced group t2 (ww26_b),F8.0,,,TRUE,Retained
+biasmat,double,haven_labelled|vctrs_vctr|double,,were the materials biased t2 (ww27),F8.0,,,TRUE,Retained
+dopint,double,haven_labelled|vctrs_vctr|double,,how interesting was the d.o.p. t2 (ww28),F8.0,,,TRUE,Retained
+answera1,double,haven_labelled|vctrs_vctr|double,,r was correct or not on sopha1,F8.0,,,TRUE,Retained
+answera2,double,haven_labelled|vctrs_vctr|double,,r correct or not on sopha2,F8.0,,,TRUE,Retained
+answerb1,double,haven_labelled|vctrs_vctr|double,,r correct or not on sophb1,F8.0,,,TRUE,Retained
+answerb2,double,haven_labelled|vctrs_vctr|double,,r correct or not on sophb2,F8.0,,,TRUE,Retained
+answerc1,double,haven_labelled|vctrs_vctr|double,,r correct or not on sophc1,F8.0,,,TRUE,Retained
+answerc2,double,haven_labelled|vctrs_vctr|double,,r correct or not on sophc2,F8.0,,,TRUE,Retained
+answerd1,double,haven_labelled|vctrs_vctr|double,,r correct or not on sophd1,F8.0,,,TRUE,Retained
+answerd2,double,haven_labelled|vctrs_vctr|double,,r correct or not on sophd2,F8.0,,,TRUE,Retained
+answere1,double,haven_labelled|vctrs_vctr|double,,r correct or not on sophe1,F8.0,,,TRUE,Retained
+answere2,double,haven_labelled|vctrs_vctr|double,,r correct or not on sophe2,F8.0,,,TRUE,Retained
+answerf1,double,haven_labelled|vctrs_vctr|double,,r correct or not on sophf1,F8.0,,,TRUE,Retained
+answerf2,double,haven_labelled|vctrs_vctr|double,,r correct or not on sophf2,F8.0,,,TRUE,Retained
+sophist1,double,haven_labelled|vctrs_vctr|double,,summary of r's knowledge of true and false qs (t1),F8.0,,,TRUE,Retained
+sophist2,double,haven_labelled|vctrs_vctr|double,,summary of r's knowledge of true and false qs (t2),F8.0,,,TRUE,Retained
+hknow1,double,numeric,,proportion of correct answers (true and false) (t1),F9.2,,,TRUE,Retained
+hknow2,double,numeric,,proportion of correct answers (true and false) (t2),F9.2,,,TRUE,Retained
+chhknow,double,numeric,,change in health knowledge (hknow2 - hknow1),F9.2,,,TRUE,Retained
+part,double,haven_labelled|vctrs_vctr|double,,"participant in dop, or not participant",F8.0,,,TRUE,Retained
+t1payhlt,double,numeric,,"T1 Healthcare Payer Index, recoded payhlth1, 0 to 1 scale, 0=govt pays, 1= indiv",F9.2,,,TRUE,Retained
+t2payhlt,double,numeric,,"T2 Healthcare Payer Index, recoded payhlth2, 0 to 1 scale, 0=govt pays, 1= indiv",F9.2,,,TRUE,Retained
+t1poora,double,numeric,,"T1 Priority to Poor Index, recoded poora1, 0 to 1 scale, 1=agree, 0= disagree",F9.2,,,TRUE,Retained
+t2poora,double,numeric,,"T2 Priority to Poor Index, recoded poora2, 0 to 1 scale, 1=agree, 0= disagree",F9.2,,,TRUE,Retained
+t1option,double,numeric,,"T1 Options Index, recoded options1, 0 to 1 scale, 1=spend more, 0= spend less",F9.2,,,TRUE,Retained
+t2option,double,numeric,,"T2 Options Index, recoded options2, 0 to 1 scale, 1=spend more, 0= spend less",F9.2,,,TRUE,Retained
+t1chgp,double,numeric,,"T1, recoded chgp1, 0 to 1 scale, 1=in favour, 0= against",F9.2,,,TRUE,Retained
+t2chgp,double,numeric,,"T2, recoded chgp2, 0 to 1 scale, 1=in favour, 0= against",F9.2,,,TRUE,Retained
+t1chvis,double,numeric,,"T1, recoded chvis1, 0 to 1 scale, 1=in favour, 0= against",F9.2,,,TRUE,Retained
+t2chvis,double,numeric,,"T2, recoded chvis2, 0 to 1 scale, 1=in favour, 0= against",F9.2,,,TRUE,Retained
+t1chmeal,double,numeric,,"T1, recoded chmeal1, 0 to 1 scale, 1=in favour, 0= against",F9.2,,,TRUE,Retained
+t2chmeal,double,numeric,,"T2, recoded chmeal2, 0 to 1 scale, 1=in favour, 0= against",F9.2,,,TRUE,Retained
+t1chstay,double,numeric,,"T1, recoded chstay1, 0 to 1 scale, 1=in favour, 0= against",F9.2,,,TRUE,Retained
+t2chstay,double,numeric,,"T2, recoded chstay2, 0 to 1 scale, 1=in favour, 0= against",F9.2,,,TRUE,Retained
+t1chamb,double,numeric,,"T1, recoded chamb1, 0 to 1 scale, 1=in favour, 0= against",F9.2,,,TRUE,Retained
+t2chamb,double,numeric,,"T2, recoded chamb2, 0 to 1 scale, 1=in favour, 0= against",F9.2,,,TRUE,Retained
+t1hlthfu,double,numeric,,"T1 Healthcare Funding Options Index: t1chgp, t1chvis, t1chmeal, t1stay, t1amb",F9.2,,,TRUE,Retained
+t2hlthfu,double,numeric,,"T2 Healthcare Funding Options Index: t2chgp, t2chvis, t2chmeal, t2stay, t2amb",F9.2,,,TRUE,Retained
+t1treata,double,numeric,,"T1, recoded treata, 1=everyone should have access to all, 0=lower priority on ex",F9.2,,,TRUE,Retained
+t2treata,double,numeric,,"T2, recoded treata, 1=everyone should have access to all, 0=lower priority on ex",F9.2,,,TRUE,Retained
+t1cuts,double,numeric,,"T1, recoded cuts1, 1=everyone has to right to access, 0=make cuts",F9.2,,,TRUE,Retained
+t2cuts,double,numeric,,"T2, recoded cuts1, 1=everyone has to right to access, 0=make cuts",F9.2,,,TRUE,Retained
+t1manage,double,numeric,,"T1 Managing Scarcity Index: t1treata, t1cuts",F9.2,,,TRUE,Retained
+t2manage,double,numeric,,"T2 Managing Scarcity Index: t2treata, t2cuts",F9.2,,,TRUE,Retained
+t1cthart,double,numeric,,"T1 recoded cthart1, 1= against cuts",F9.2,,,TRUE,Retained
+t2cthart,double,numeric,,"T2 recoded cthart2, 1= against cuts",F9.2,,,TRUE,Retained
+t1ctnurs,double,numeric,,"T1 recoded ctnurs1, 1= against cuts",F9.2,,,TRUE,Retained
+t2ctnurs,double,numeric,,"T2 recoded ctnurs2, 1= against cuts",F9.2,,,TRUE,Retained
+t1ctbaby,double,numeric,,"T1 recoded ctbaby1, 1= against cuts",F9.2,,,TRUE,Retained
+t2ctbaby,double,numeric,,"T2 recoded ctbaby2, 1= against cuts",F9.2,,,TRUE,Retained
+t1cutexp,double,numeric,,"T1 Cutting Expensive Treatments Index: t1cthart, t1ctnurs, t1ctbaby",F9.2,,,TRUE,Retained
+t2cutexp,double,numeric,,"T2 Cutting Expensive Treatments Index: t2cthart, t2ctnurs, t2ctbaby",F9.2,,,TRUE,Retained
+t1ctexpt,double,numeric,,T1 Cutting Expensive Treatments Version B: t1cutexptrtments t1treata,F9.2,,,TRUE,Retained
+t2ctexpt,double,numeric,,T2 Cutting Expensive Treatments Version B: t2cutexptrtments t2treata,F9.2,,,TRUE,Retained
+t1ctfert,double,numeric,,"T1 recoded ctfert1, 1= against cuts/privatization",F9.2,,,TRUE,Retained
+t2ctfert,double,numeric,,"T2 recoded ctfert2, 1= against cuts/privatization",F9.2,,,TRUE,Retained
+t1cthosp,double,numeric,,"T1 recoded cthosp1, 1= against cuts/privatization",F9.2,,,TRUE,Retained
+t2cthosp,double,numeric,,"T2 recoded cthosp2, 1= against cuts/privatization",F9.2,,,TRUE,Retained
+t1ctcosm,double,numeric,,"T1 recoded ctcosm1, 1= against cuts/privatization",F9.2,,,TRUE,Retained
+t2ctcosm,double,numeric,,"T2 recoded ctcosm2, 1= against cuts/privatization",F9.2,,,TRUE,Retained
+t1smking,double,numeric,,"T1 recoded prsmokb1, 1= no difference",F9.2,,,TRUE,Retained
+t2smking,double,numeric,,"T2 recoded prsmokb2, 1= no difference",F9.2,,,TRUE,Retained
+t1ageb,double,numeric,,"T1 recoded ageb1, 1= no difference",F9.2,,,TRUE,Retained
+t2ageb,double,numeric,,"T2 recoded ageb2, 1= no difference",F9.2,,,TRUE,Retained
+t1lista,double,numeric,,"T1 recoded lista1, 1=agree waiting list, no other considerations",F9.2,,,TRUE,Retained
+t2lista,double,numeric,,"T1 recoded lista1, 1=agree waiting list, no other considerations",F9.2,,,TRUE,Retained
+t1severa,double,numeric,,"T1 recoded severa1, 1=based on severity",F9.2,,,TRUE,Retained
+t2severa,double,numeric,,"T2 recoded severa2, 1=based on severity",F9.2,,,TRUE,Retained
+t1severi,double,numeric,,T1 Priority Based On Severity Index: t1lista t1severa - 1=based on severity,F9.2,,,TRUE,Retained
+t2severi,double,numeric,,T2 Priority Based On Severity Index: t2lista t2severa - 1=based on severity,F9.2,,,TRUE,Retained
+t1older,double,numeric,,"T1 recoded older1, 1= older people should have priority",F9.2,,,TRUE,Retained
+t2older,double,numeric,,"T2 recoded older2, 1= older people should have priority",F9.2,,,TRUE,Retained
+t1preven,double,numeric,,"T1 recoded preva1, 1= priority to prevention",F9.2,,,TRUE,Retained
+t2preven,double,numeric,,"T2 recoded preva2, 1= priority to prevention",F9.2,,,TRUE,Retained
+t1qoflif,double,numeric,,"T1 recoded lifea1, 1= quality of life would benefit most from treatment",F9.2,,,TRUE,Retained
+t1bestde,double,numeric,,"T1 recoded bestdec1, 1= medical experts, 0=public guidelines",F9.2,,,TRUE,Retained
+t2bestde,double,numeric,,"T2 recoded bestdec2, 1= medical experts, 0=public guidelines",F9.2,,,TRUE,Retained
+t1ingpa,double,numeric,,"T1 recoded ingpa1, 1=most/all say",F9.2,,,TRUE,Retained
+t2ingpa,double,numeric,,"T1 recoded ingpa2, 1=most/all say",F9.2,,,TRUE,Retained
+t1indoca,double,numeric,,"T1 recoded indoca1, 1=most/all say",F9.2,,,TRUE,Retained
+t2indoca,double,numeric,,"T2 recoded indoca2, 1=most/all say",F9.2,,,TRUE,Retained
+t1inpuba,double,numeric,,"T1 recoded inpuba1, 1=most/all say",F9.2,,,TRUE,Retained
+t2inpuba,double,numeric,,"T2 recoded inpuba2, 1=most/all say",F9.2,,,TRUE,Retained
+t1ingova,double,numeric,,"T1 recoded ingova1, 1=most/all say",F9.2,,,TRUE,Retained
+t2ingova,double,numeric,,"T2 recoded ingova2, 1=most/all say",F9.2,,,TRUE,Retained
+t1dispub,double,numeric,,T1 average t1inpuba t1ingova,F9.2,,,TRUE,Retained
+t2dispub,double,numeric,,T2 average t2inpuba t2ingova,F9.2,,,TRUE,Retained
+t1diffav,double,numeric,,T1 Difference btwn t1avg2 t1avg1 (for discretion index),F9.2,,,TRUE,Retained
+t2diffav,double,numeric,,T2 Difference btwn t2avg2 t2avg1 (for discretion index),F9.2,,,TRUE,Retained
+t1discre,double,numeric,,T1 Discretion Index: t1diffavg2avg1 t1bestdec,F9.2,,,TRUE,Retained
+t2discre,double,numeric,,T2 Discretion Index: t2diffavg2avg1 t2bestdec,F9.2,,,TRUE,Retained
+t1moresa,double,numeric,,"T1 recoded say1, 1=agree",F9.2,,,TRUE,Retained
+t2moresa,double,numeric,,"T2 recoded say2, 1=agree",F9.2,,,TRUE,Retained
+t1wl,double,numeric,,T1 average of t1smkingview t1ageb (for waiting list index),F9.2,,,TRUE,Retained
+t2wl,double,numeric,,T2 average of t2smkingview t2ageb (for waiting list index),F9.2,,,TRUE,Retained
+t1waitli,double,numeric,,T1 Waiting List Index: t1wl  t1lista,F9.2,,,TRUE,Retained
+t2waitli,double,numeric,,T2 Waiting List Index: t2wl  t2lista,F9.2,,,TRUE,Retained
+t2qoflif,double,numeric,," T2 recoded lifea2, 1 = strongly agree",F9.2,,,TRUE,Retained
+t1pritre,double,numeric,,"T1 Privatizing Some Treatments Index, ctfert & ctcosm, 1 = against cuts",F9.2,,,TRUE,Retained
+t2pritre,double,numeric,,"T2 Privatizing Some Treatments Index, ctfert & ctcosm, 1 = against cuts",F9.2,,,TRUE,Retained
+t1smkbtr,double,numeric,,"T1 recoded prsmokb, 0=smoker, .5=no difference, 1=nonsmoker",F9.2,,,TRUE,Retained
+t2smkbtr,double,numeric,,"T2 recoded prsmokb, 0=smoker, .5=no difference, 1=nonsmoker",F9.2,,,TRUE,Retained
+t1agebtr,double,numeric,,"T1 recoded ageb, 0=smoker, .5=no difference, 1=nonsmoker",F9.2,,,TRUE,Retained
+t2agebtr,double,numeric,,"T2 recoded ageb, 0=smoker, .5=no difference, 1=nonsmoker",F9.2,,,TRUE,Retained
+t1lowris,double,numeric,,"T1 Priority to Lower Risk Patients? - smkbtri, agebtri",F9.2,,,TRUE,Retained
+t2lowris,double,numeric,,"T2 Priority to Lower Risk Patients? - smkbtri, agebtri",F9.2,,,TRUE,Retained
+t1avgdis,double,numeric,,T1 Discretion: Doctors - Avg of ingpa & indoca,F9.2,,,TRUE,Retained
+t2avgdis,double,numeric,,T12 Discretion: Doctors - Avg of ingpa & indoca,F9.2,,,TRUE,Retained
+knowdiff,double,numeric,,,F8.2,,,TRUE,Retained
+gender_D,double,numeric,,Female Dummy,F8.2,,,TRUE,Retained
+Notmarried_D,double,numeric,,Not Married Dummy,F8.2,,,TRUE,Retained
+income_r,double,numeric,,Income,F8.2,,,TRUE,Retained
+educa_r,double,numeric,,Education,F8.2,,,TRUE,Retained
+DiffHealthPay,double,numeric,,Healthcare Payer 0govt pays 1 indiv,F8.2,,,TRUE,Retained
+PriorityPoorCh,double,numeric,,Priority to Poor,F8.2,,,TRUE,Retained
+OptionsCh,double,numeric,,Options 1 spend more 0 spend less,F8.2,,,TRUE,Retained
+HealthfundCh,double,numeric,,Healthcare Funding Options,F8.2,,,TRUE,Retained
+CuttingExpensiveCh,double,numeric,,Cutting Expensive Treatments,F8.2,,,TRUE,Retained
+PrivateTreatCh,double,numeric,,Privatizing Some Treatments,F8.2,,,TRUE,Retained
+WaitingList,double,numeric,,waiting list,F8.2,,,TRUE,Retained
+SeverityCh,double,numeric,,Priority Based On Severity,F8.2,,,TRUE,Retained
+PriorityPrevCh,double,numeric,,priority to prevention,F8.2,,,TRUE,Retained
+QualofLifeCh,double,numeric,,quality of life would benefit most from treatment,F8.2,,,TRUE,Retained
+DiscretionPubCh,double,numeric,,DISCRETION: PUBLIC & GOV’T,F8.2,,,TRUE,Retained
+DoctorDiscCh,double,numeric,,Doctors Discretion,F8.2,,,TRUE,Retained
+PatientSayCh,double,numeric,,Patients have more say,F8.2,,,TRUE,Retained
+AbsDiffHealthPay,double,numeric,,,F8.2,,,TRUE,Retained
+AbsPriorityPoorCh,double,numeric,,,F8.2,,,TRUE,Retained
+AbsOptionsCh,double,numeric,,,F8.2,,,TRUE,Retained
+AbsHealthfundCh,double,numeric,,,F8.2,,,TRUE,Retained
+AbsCuttingExpensiveCh,double,numeric,,,F8.2,,,TRUE,Retained
+AbsPrivateTreatCh,double,numeric,,,F8.2,,,TRUE,Retained
+AbsPriorityPrevCh,double,numeric,,,F8.2,,,TRUE,Retained
+AbsSeverityCh,double,numeric,,,F8.2,,,TRUE,Retained
+AbsWaitingList,double,numeric,,,F8.2,,,TRUE,Retained
+AbsQualofLifeCh,double,numeric,,,F8.2,,,TRUE,Retained
+AbsDiscretionPubCh,double,numeric,,,F8.2,,,TRUE,Retained
+AbsDoctorDiscCh,double,numeric,,,F8.2,,,TRUE,Retained
+AbsPatientSayCh,double,numeric,,,F8.2,,,TRUE,Retained
+class_R,double,numeric,,Working Class Dummy,F8.2,,,TRUE,Retained
+ethnic_R,double,numeric,,Non White Dummy,F8.2,,,TRUE,Retained
+selfemp_R,double,numeric,,Self Employed Dummy,F8.2,,,TRUE,Retained
+hshldsz_R,double,numeric,,Only 1 adult 18+ Dummy,F8.2,,,TRUE,Retained
+superv_R,double,numeric,,Supervise more than 1 person Dummy,F8.2,,,TRUE,Retained
+employ_R,double,numeric,,Not full time employed Dummy,F8.2,,,TRUE,Retained
+Working,double,numeric,,Full time or part time work,F8.2,,,TRUE,Retained
+kid_R,double,numeric,,Kids under 17 Dummy,F8.2,,,TRUE,Retained
+pollid,double,numeric,,,F8.2,,,TRUE,Retained
+mode,double,numeric,,,F8.2,,,TRUE,Retained
+t1knowlevel,double,numeric,,,F8.2,,,TRUE,Retained
+numitems,double,numeric,,,F8.2,,,TRUE,Retained
+pollid1,character,character,,,A4,,,TRUE,Retained
+group1,character,character,,,A4,,,TRUE,Retained
+pollgroup1,character,character,,,A8,,,TRUE,Retained
+pollgroup,double,numeric,,,F8.0,,,TRUE,Retained
