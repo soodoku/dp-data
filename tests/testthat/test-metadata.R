@@ -33,7 +33,7 @@ test_that("generated poll manifests match the central artifact catalog", {
 
   for (current_poll_id in unique(artifacts$poll_id)) {
     manifest <- readr::read_csv(
-      project_path("polls", current_poll_id, "manifest.csv"),
+      project_path("data", current_poll_id, "manifest.csv"),
       show_col_types = FALSE,
       col_types = readr::cols(.default = readr::col_character())
     )

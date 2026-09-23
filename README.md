@@ -39,11 +39,10 @@ an altered or missing bundle.
 
 | Location | Role |
 |---|---|
-| `sources/public/` | Immutable, licensed public inputs |
-| `polls/<poll_id>/` | Reviewed poll packages organized by artifact role |
+| `data/<poll_id>/` | Reviewed data and metadata for one poll |
+| `data/combined/` | Licensed inputs spanning several polls |
 | `metadata/` | Poll registry, source catalog, aliases, recodes, export contracts |
 | `datapackage.json` | Frictionless schemas for the tabular metadata |
-| `legacy/` | Preserved historical build code, added after source audit |
 | `R/`, `scripts/` | Validation and build code |
 | `exports/` | Generated, versioned downstream products |
 | `vault/` | Ignored local source archive, including restricted files |
@@ -55,3 +54,9 @@ The architecture and migration order are documented in
 `manifest.csv` files are generated from it, so descriptive metadata is not
 maintained twice. A blank `poll_id` denotes a collection-wide artifact rather
 than an unknown poll.
+
+`LICENSE` covers this repository's code. Data retain the license recorded for
+each input in `metadata/source_files.csv`; material without file-level rights
+clearance remains in the local vault. Exact historical CDD scripts are retained
+in Git history under the `historical-cdd-scripts` tag, not beside the maintained
+pipeline on `main`.

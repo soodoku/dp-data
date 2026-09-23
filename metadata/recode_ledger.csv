@@ -1,13 +1,13 @@
 recode_id,poll_id,table,variable,input_condition,output_value,reason,evidence,code_location,status
-legacy-001,new-haven-2004,respondents,age,age == 112,missing,Implausible age in an adult poll,Historical merge comment,legacy/merge_data_scripts/03_data.R,legacy
-legacy-002,uk-general-election-1997,respondents,political_interest,"value in {.25; .5; .75}","{.33; .66; 1}",Harmonize to common coding,Historical merge implementation,legacy/merge_data_scripts/03_data.R,legacy
-legacy-003,btp-general-election-2004,respondents,row,"t2 knowledge == 0 or attitude extremity missing",drop,Historical Nuri merge correction,Historical merge implementation,legacy/merge_data_scripts/03_data.R,legacy
-legacy-004,san-mateo-2008,respondents,mode,online,face-to-face,Correct event mode,Historical merge comment,legacy/merge_data_scripts/03_data.R,legacy
-legacy-005,uk-health-1998,index-values,ukhealth.t1severi; ukhealth.t2severi,legacy zero-one coding,zero-one rescale,Harmonize index range,Historical merge implementation,legacy/merge_data_scripts/05_fix_data.R,legacy
-legacy-006,wtu-1996,index-values,wtu.t1att6,legacy zero-one coding,zero-one rescale,Harmonize index range,Historical merge implementation,legacy/merge_data_scripts/05_fix_data.R,legacy
-legacy-007,swepco-1996,index-values,swp.t1att6,legacy zero-one coding,zero-one rescale,Harmonize index range,Historical merge implementation,legacy/merge_data_scripts/05_fix_data.R,legacy
-legacy-008,zeguo-2005,index-values,chi.t1att2,value > 1,missing,Reject value outside index range,Historical merge implementation,legacy/merge_data_scripts/05_fix_data.R,legacy
-legacy-009,marousi-2006,respondents,row,all rows,exclude from polardata,Original Distortions analysis excluded Greece,Historical merge implementation,legacy/merge_data_scripts/05_fix_data.R,legacy
+legacy-001,new-haven-2004,respondents,age,age == 112,missing,Implausible age in an adult poll,Historical merge comment,vault/cdd/merge_data_scripts/03_data.R,legacy
+legacy-002,uk-general-election-1997,respondents,political_interest,"value in {.25; .5; .75}","{.33; .66; 1}",Harmonize to common coding,Historical merge implementation,vault/cdd/merge_data_scripts/03_data.R,legacy
+legacy-003,btp-general-election-2004,respondents,row,"t2 knowledge == 0 or attitude extremity missing",drop,Historical Nuri merge correction,Historical merge implementation,vault/cdd/merge_data_scripts/03_data.R,legacy
+legacy-004,san-mateo-2008,respondents,mode,online,face-to-face,Correct event mode,Historical merge comment,vault/cdd/merge_data_scripts/03_data.R,legacy
+legacy-005,uk-health-1998,index-values,ukhealth.t1severi; ukhealth.t2severi,legacy zero-one coding,zero-one rescale,Harmonize index range,Historical merge implementation,vault/cdd/merge_data_scripts/05_fix_data.R,legacy
+legacy-006,wtu-1996,index-values,wtu.t1att6,legacy zero-one coding,zero-one rescale,Harmonize index range,Historical merge implementation,vault/cdd/merge_data_scripts/05_fix_data.R,legacy
+legacy-007,swepco-1996,index-values,swp.t1att6,legacy zero-one coding,zero-one rescale,Harmonize index range,Historical merge implementation,vault/cdd/merge_data_scripts/05_fix_data.R,legacy
+legacy-008,zeguo-2005,index-values,chi.t1att2,value > 1,missing,Reject value outside index range,Historical merge implementation,vault/cdd/merge_data_scripts/05_fix_data.R,legacy
+legacy-009,marousi-2006,respondents,row,all rows,exclude from polardata,Original Distortions analysis excluded Greece,Historical merge implementation,vault/cdd/merge_data_scripts/05_fix_data.R,legacy
 learning-001,nic-1996,respondents,mode,online,face-to-face,Held face to face in Austin in January 1996,Event documentation,dp-learning/docs/recode_ledger.csv,adopted
 learning-002,nic-1996,respondents,age,stored value is birth year,1996 minus stored value,Stored range is 1900 through 1989,Observed values,dp-learning/docs/recode_ledger.csv,adopted
 learning-003,,respondents,age,age < 16 or age > 100,missing,Deliberative Poll samples are adults,Observed Zeguo age 1 and Europolis age 109,dp-learning/docs/recode_ledger.csv,adopted
@@ -15,4 +15,3 @@ learning-004,btp-presidential-primaries-2004,respondents,row,exact duplicate row
 learning-005,marousi-2006,respondents,t2_knowledge,t2 == 0 and t1 > 0,missing,Implausible post score pattern,26 of 146 rows,dp-learning/docs/recode_ledger.csv,adopted
 learning-006,marousi-2006,respondents,education,code == 7,missing,Code is outside four documented categories,20 rows,dp-learning/docs/recode_ledger.csv,adopted
 learning-007,,respondents,t1_knowledge; t2_knowledge,value outside [0; 1] by floating error,round to 10 decimal places,Stored values include 1.0000000002,Two NIC rows,dp-learning/docs/recode_ledger.csv,adopted
-

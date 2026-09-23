@@ -8,7 +8,7 @@ artifacts |>
   dplyr::group_by(.data$poll_id) |>
   tidyr::nest() |>
   purrr::pwalk(function(poll_id, data) {
-    directory <- project_path("polls", poll_id)
+    directory <- project_path("data", poll_id)
     fs::dir_create(directory)
     readr::write_csv(
       dplyr::mutate(data, poll_id = poll_id, .before = 1),

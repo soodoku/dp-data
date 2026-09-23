@@ -11,9 +11,11 @@ The repository has three layers.
 3. **Exports** are named contracts for downstream repositories. A release tag,
    file checksum, and schema version identify an export completely.
 
-The historical merge scripts are evidence about prior decisions. They will be
-preserved verbatim under `legacy/`, then replaced one transformation at a time
-only after a parity test explains any difference.
+The historical merge scripts are evidence about prior decisions. Their exact
+bytes are retained in Git history under the `historical-cdd-scripts` tag and in
+the ignored local vault. They do not sit beside the maintained implementation
+on `main`. Each replacement transformation needs a parity test that explains
+any difference.
 
 ## Poll research packages
 
@@ -21,16 +23,16 @@ Reviewed historical material is organized for people who need both data and
 the record required to interpret it:
 
 ```text
-polls/<poll_id>/
+data/<poll_id>/
 ├── manifest.csv
-├── data/
-├── questionnaires/
-├── codebooks/
-├── briefing-materials/
-├── design/
-├── reports/
-├── papers/
-└── scripts/
+├── participants.csv
+├── questionnaire.pdf
+├── codebook.pdf
+├── briefing-material.pdf
+├── research-design.pdf
+├── event-report.pdf
+├── paper.pdf
+└── original-script.R
 ```
 
 The central artifact catalog records the original archive path, checksum,

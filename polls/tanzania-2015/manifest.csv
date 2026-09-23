@@ -1,2 +1,0 @@
-poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
-tanzania-2015,tanzania-public-participants,data,Tanzania participant data,sources/public/dvn-s3nrql/tanzania.dta,tanzania-2015,,38c7faf5bec7538e32e04c3f62b5c4c43b8ad4c2d2b10b5ef00cf80b577b7af8,public-license,approved-public,published,CC0 Dataverse deposit
