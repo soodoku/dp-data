@@ -158,7 +158,7 @@ validate_metadata <- function() {
   )
   assertr::verify(
     contracts,
-    all(.data$status %in% c("current", "planned", "retired")),
+    all(.data$status %in% c("current", "planned", "transitional", "retired")),
     error_fun = assertr::error_stop
   )
   invisible(TRUE)

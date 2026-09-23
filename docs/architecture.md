@@ -83,6 +83,11 @@ Legacy numeric IDs remain aliases; they are not primary keys.
 6. Publish a tagged, typed Parquet output.
 7. Update one downstream repository at a time to pin that tag and checksum.
 
+`dp-knowledge-linkage` is transitional. Keep it as a reproducible parity
+benchmark until `dp-data` can rebuild its knowledge-attitude panel from the
+audited poll-level sources. Archive it only after row, key, item, and derived
+value parity is documented; it must not become another permanent data layer.
+
 Submodules are deliberately avoided. A downstream analysis should be
 reproducible from an immutable release artifact even when this repository
 continues to evolve.
