@@ -10,6 +10,8 @@ The first release establishes provenance before changing any analysis:
 - the five historical CDD archive bundles are inventoried but remain in a
   local vault while files are reviewed poll by poll;
 - poll names and legacy numeric identifiers map to stable `poll_id` values;
+- data, questionnaires, codebooks, briefing materials, research designs,
+  event reports, papers, and scripts share one artifact contract;
 - every recode must have a ledger entry; and
 - downstream repositories consume a tagged export and verify its checksum.
 
@@ -43,3 +45,8 @@ that rebuilds the CDD vault inventory from the untracked archive.
 
 The architecture and migration order are documented in
 [`docs/architecture.md`](docs/architecture.md).
+
+`metadata/artifacts.csv` is the authoritative artifact catalog. Poll-level
+`manifest.csv` files are generated from it, so descriptive metadata is not
+maintained twice. A blank `poll_id` denotes a collection-wide artifact rather
+than an unknown poll.

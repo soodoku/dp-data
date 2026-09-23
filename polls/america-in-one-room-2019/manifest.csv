@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+america-in-one-room-2019,a1r-public-participants,data,America in One Room participant data,sources/public/dvn-kj8ih2/a1r.tab,a1r-2019,,06134deebb34b08ffac91068727b55c1ec4dde88df5f388e1552b0bfa54c6818,public-license,approved-public,published,CC0 Dataverse deposit

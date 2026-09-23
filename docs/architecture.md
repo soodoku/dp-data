@@ -33,10 +33,18 @@ polls/<poll_id>/
 └── scripts/
 ```
 
-The manifest records the original archive path, checksum, artifact type,
-license or rights evidence, disclosure decision, and any redaction lineage.
+The central artifact catalog records the original archive path, checksum,
+artifact type, license or rights evidence, disclosure decision, and any
+redaction lineage. Poll manifests are generated views of that catalog rather
+than independent copies.
 Published papers are linked rather than copied when redistribution rights are
 unclear.
+
+An artifact can be cataloged while remaining in `vault/`. Cataloging means we
+know what it is and where it came from; it does not mean that disclosure and
+rights review passed. Collection-wide material has a blank `poll_id` by
+design. Unresolved poll identity is recorded in `archive_collections.csv`
+instead of being silently guessed.
 
 ## Canonical tables
 

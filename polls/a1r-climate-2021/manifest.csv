@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+a1r-climate-2021,a1r-climate-public-participants,data,America in One Room climate participant data,sources/public/dvn-iioj1s/climate.tab,a1r-climate-2021,,5e95a85c1fe356673c2b0a56d1e9aa463ab40e1defe3b33f1940ff83e5eee83a,public-license,approved-public,published,CC0 Dataverse deposit

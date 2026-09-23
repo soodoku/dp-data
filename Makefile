@@ -1,12 +1,15 @@
 R = Rscript
 
-.PHONY: restore package inventory disclosure validate test lint check
+.PHONY: restore package manifests inventory disclosure validate test lint check
 
 restore:
 	$(R) -e 'renv::restore(prompt = FALSE)'
 
 package:
 	$(R) scripts/02_build_datapackage.R
+
+manifests:
+	$(R) scripts/05_build_poll_manifests.R
 
 inventory:
 	$(R) scripts/01_build_archive_inventory.R
@@ -23,4 +26,4 @@ test:
 lint:
 	$(R) -e 'results <- lintr::lint_dir("."); print(results); quit(status = length(results) > 0L)'
 
-check: package validate test lint
+check: package manifests validate test lint

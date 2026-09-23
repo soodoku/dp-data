@@ -6,7 +6,7 @@
   "resources": [
     {
       "name": "artifact_types",
-      "path": "/private/tmp/dp-data-stage/metadata/artifact_types.csv",
+      "path": "metadata/artifact_types.csv",
       "profile": "tabular-data-resource",
       "format": "csv",
       "mediatype": "text/csv",
@@ -33,8 +33,104 @@
       }
     },
     {
+      "name": "archive_collections",
+      "path": "metadata/archive_collections.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "collection_id",
+            "type": "string"
+          },
+          {
+            "name": "archive_prefix",
+            "type": "string"
+          },
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "scope",
+            "type": "string"
+          },
+          {
+            "name": "review_status",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "artifacts",
+      "path": "metadata/artifacts.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "artifact_id",
+            "type": "string"
+          },
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "artifact_type",
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "location",
+            "type": "string"
+          },
+          {
+            "name": "source_id",
+            "type": "string"
+          },
+          {
+            "name": "original_archive_path",
+            "type": "string"
+          },
+          {
+            "name": "sha256",
+            "type": "string"
+          },
+          {
+            "name": "rights_status",
+            "type": "string"
+          },
+          {
+            "name": "disclosure_status",
+            "type": "string"
+          },
+          {
+            "name": "publication_status",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
       "name": "polls",
-      "path": "/private/tmp/dp-data-stage/metadata/polls.csv",
+      "path": "metadata/polls.csv",
       "profile": "tabular-data-resource",
       "format": "csv",
       "mediatype": "text/csv",
@@ -74,7 +170,7 @@
     },
     {
       "name": "poll_aliases",
-      "path": "/private/tmp/dp-data-stage/metadata/poll_aliases.csv",
+      "path": "metadata/poll_aliases.csv",
       "profile": "tabular-data-resource",
       "format": "csv",
       "mediatype": "text/csv",
@@ -102,7 +198,7 @@
     },
     {
       "name": "source_bundles",
-      "path": "/private/tmp/dp-data-stage/metadata/source_bundles.csv",
+      "path": "metadata/source_bundles.csv",
       "profile": "tabular-data-resource",
       "format": "csv",
       "mediatype": "text/csv",
@@ -146,7 +242,7 @@
     },
     {
       "name": "source_files",
-      "path": "/private/tmp/dp-data-stage/metadata/source_files.csv",
+      "path": "metadata/source_files.csv",
       "profile": "tabular-data-resource",
       "format": "csv",
       "mediatype": "text/csv",
@@ -194,7 +290,7 @@
     },
     {
       "name": "recode_ledger",
-      "path": "/private/tmp/dp-data-stage/metadata/recode_ledger.csv",
+      "path": "metadata/recode_ledger.csv",
       "profile": "tabular-data-resource",
       "format": "csv",
       "mediatype": "text/csv",
@@ -246,7 +342,7 @@
     },
     {
       "name": "downstream_contracts",
-      "path": "/private/tmp/dp-data-stage/metadata/downstream_contracts.csv",
+      "path": "metadata/downstream_contracts.csv",
       "profile": "tabular-data-resource",
       "format": "csv",
       "mediatype": "text/csv",

@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+amr-2024,amr-public-participants,data,Antimicrobial resistance participant data,sources/public/sdr-sb639ms2957/amr.csv,amr-2024,,c2877392f6b4d2e6146d09e40625d8ccf5d51f12b6150e3d07f7ab824c97d065,public-license,approved-public,published,CC BY 4.0 Stanford Digital Repository deposit
