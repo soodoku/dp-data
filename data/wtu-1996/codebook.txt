@@ -1,0 +1,2914 @@
+This is the code book for the WT Deliberative Opinion Poll.
+
+List of Variables:
+
+Type of Respondent:
+  part     = Participant in DOP or non-participant
+
+Demographic Variables:
+  study    = The study in which the respondent participated
+  dopdate  = Date DOP occurred
+  dopdays  = Number of days over which DOP occurred
+  caseid   = Case identification number
+  group    = R's small group
+  gender   = R's gender
+  ideology = Liberal/conservative political scale
+  ownrent  = own or rent home
+  whopays  = Who pays electric bill
+  whobuys  = Who buys appliances
+  insulate = Who purchases insulation
+  educ     = R's education
+  age      = R's age
+  assist   = Does R receive government assistance
+  employed = Does R work outside the home
+  job      = R's occupation
+  manywork = Number of employees at R's work
+  typework = Type of workplace
+  income   = R's income
+  race     = R's race or ethnicity
+  zipcode  = R's zipcode
+  regswep  = R's region (SWEPCO)
+
+Survey Questions:  Note that the post-meeting variables end iwth a "2."  For example, the pre-meeting measure is "FUTURE1" and the post-meeting measure is "FUTURE2."
+
+Importance Variables:
+  future1  = Preserve coal, natural gas, oil for future T1 (Q1a)
+  future2  = Preserve coal, natural gas, oil for future T2 (Q1a)
+  grow1    = Promote economic growth in community T1 (Q1b)
+  grow2    = Promote economic growth in community T2 (Q1b)
+  poll1    = Reduce pollution T1 (Q1c)
+  poll2    = Reduce pollution T2 (Q1c)
+  needs1   = Ensure everyone has basic needs met T1 (Q1d)
+  needs2   = Ensure everyone has basic needs met T2 (Q1d)
+  invest1  = Minimize risk when investing money T1 (Q1e)
+  invest2  = Minimize risk when investing money T2 (Q1e)
+
+Importance Regarding Electric Power Variables:
+  resch1   = Research even if higher electric rates T1 (Q2a)
+  resch2   = Research even if higher electric rates T2 (Q2a)
+  reduce1  = Reduce coal, natural gas by efficient use T1 (Q2b)
+  reduce2  = Reduce coal, natural gas by efficient use T2 (Q2b)
+  jobs1    = Number of jobs created T1 (Q2c)
+  jobs2    = Number of jobs created T2 (Q2c)
+  tax1     = Impact on community's tax base T1 (Q2d)
+  tax2     = Impact on community's tax base T2 (Q2d)
+  lowinc1  = Low income customers are treated fairly T1 (Q2e)
+  lowinc2  = Low income customers are treated fairly T2 (Q2e)
+
+Tradeoff Importance Variables:
+  growto1  = Tradeoff:  Economic growth and pollution T1 (Q3a)
+  growto2  = Tradeoff:  Economic growth and pollution T2 (Q3a)
+  pollto1  = Tradeoff:  Reduced pollution and increased costs T1 (Q3b)
+  pollto2  = Tradeoff:  Reduced pollution and increased costs T2 (Q3b)
+  strtto1  = Tradeoff:  Best short term rate and long term uncertain T1 (Q3c)
+  strtto2  = Tradeoff:  Best short term rate and long term uncertain T2 (Q3c)
+  needto1  = Tradeoff:  Basic needs met and increased costs T1 (Q3d)
+  needto2  = Tradeoff:  Basic needs met and increased costs T2 (Q3d)
+  invsto1  = Tradeoff:  Minimize investment risk & lower return T1 (Q3e)  
+  invsto2  = Tradeoff:  Minimize investment risk & lower return T2 (Q3e)  
+
+Importance of Characteristics of Resources Variables:
+  lowest1  = Resources with lowest cost electricity T1 (Q4a)
+  lowest2  = Resources with lowest cost electricity T2 (Q4a)
+  envmt1   = Resources that maintain environment T1 (Q4b)
+  envmt2   = Resources that maintain environment T2 (Q4b)
+  depend1  = Mix of resources to avoid dependence T1 (Q4c)
+  depend2  = Mix of resources to avoid dependence T2 (Q4c)
+  renew1   = Renewable resources such as wind, sun T1 (Q4d)
+  renew2   = Renewable resources such as wind, sun T2 (Q4d)
+  change1  = Resources that can alter to meet needs T1 (Q4e)
+  change2  = Resources that can alter to meet needs T2 (Q4e)
+
+Most Important Resource Characteristic Variables:
+  IM11     = Most important factor in WT survey T1 (Q5a)
+  IM12     = Most important factor in WT survey T2 (Q5a)
+  IM21     = Second most important factor in WT survey T1 (Q5b)
+  IM22     = Second most important factor in WT survey T2 (Q5b)
+  IM31     = Third most important factor in WT survey T1 (Q5c)
+  IM32     = Third most important factor in WT survey T2 (Q5c)
+  IM41     = Fourth most important factor in WT survey T1 (Q5d)
+  IM42     = Fourth most important factor in WT survey T2 (Q5d)
+
+Preference Over Options Variables:
+  pref1    = Does R prefer an option? T1 (Q6)
+  pref2    = Does R prefer an option? T1 (Q6)
+  pr11     = R's first preference T1 (Q6a)
+  pr12     = R's first preference T2 (Q6a)
+  pr21     = R's second preference T1 (Q6b)
+  pr22     = R's second preference T2 (Q6b)
+  pr31     = R's third preference T1 (Q6c)
+  pr32     = R's third preference T2 (Q6c)
+
+Short Term vs. Long Term Cost Variables:
+  costs1   = Construction costs vs. operating costs T1 (Q7)
+  costs2   = Construction costs vs. operating costs T2 (Q7)
+  stsol1   = Short term solutions may be more flexible T1 (Q8)
+  stsol2   = Short term solutions may be more flexible T2 (Q8)
+  ltsol1   = Long term solutions may be more flexible T1 (Q8)
+  ltsol2   = Long term solutions may be more flexible T2 (Q8)
+
+Utility Consumption Variables:
+  winter1  = R's winter electricity costs T1 (Q9a)
+  winter2  = R's winter electricity costs T2 (Q9a)
+  summer1  = R's summer electricity costs T1 (Q9b)
+  summer2  = R's summer electricity costs T2 (Q9b)
+
+Importance of Including in Future Plans Variables:
+  wind1    = Wind and solar power T1 (Q10a)
+  wind2    = Wind and solar power T2 (Q10a)
+  addfac1  = Reduce need for additional electric facilities T1 (Q10b)
+  addfac2  = Reduce need for additional electric facilities T2 (Q10b)
+  fuels1   = Fuels like natural gas, coal T1 (Q10c)
+  fuels2   = Fuels like natural gas, coal T2 (Q10c)
+  buypwr1  = Build facilities/buy power from elsewhere T1 (Q10d)
+  buypwr2  = Build facilities/buy power from elsewhere T2 (Q10d)
+  envpct1  = Additional environmental protection T1 (Q10e)
+  envpct2  = Additional environmental protection T2 (Q10e)
+  build1   = Power plant built in SWEPCO territory T1 (Q10f)
+  build2   = Power plant built in SWEPCO territory T2 (Q10f)
+
+Amount Willing to Pay for Options Variables:
+  paywnd1  = How much pay:  wind and solar T1 (Q11a)
+  paywnd2  = How much pay:  wind and solar T2 (Q11a)
+  payfac1  = How much pay:  reduce need additional facility T1 (Q11b)
+  payfac2  = How much pay:  reduce need additional facility T2 (Q11b)
+  paygas1  = How much pay:  fuels like natural gas, coal T1 (Q11c)
+  paygas2  = How much pay:  fuels like natural gas, coal T2 (Q11c)
+  paybuy1  = How much pay:  buy power from elsewhere T1 (Q11d)
+  paybuy2  = How much pay:  buy power from elsewhere T2 (Q11d)
+  payenv1  = How much pay:  additional environment protection T1 (Q11e)
+  payenv2  = How much pay:  additional environment protection T2 (Q11e)
+  paybld1  = How much pay:  build power plant in territory T1 (Q11f)
+  paybld2  = How much pay:  build power plant in territory T2 (Q11f)
+  paytot1  = How much pay:  total T1 (Q12)
+  paytot2  = How much pay:  total T1 (Q12)
+  cntrct1  = Prefer short term, long term, or mix of contracts T1 (Q13)
+  cntrct2  = Prefer short term, long term, or mix of contracts T2 (Q13)
+
+Information/Knowledge Variables:
+  source1  = Which sources produces most electricity T1 (Q14)
+  knowA1   = Checkpoint:  Did R answer SOURCE1 correctly?
+  source2  = Which sources produces most electricity T2 (Q14)
+  knowA2   = Checkpoint:  Did R answer SOURCE2 correctly?
+  use1     = Which group uses most electricity? T1 (Q15)
+  knowB1   = Checkpoint:  Did R answer USE1 correctly?
+  use2     = Which group uses most electricity? T2 (Q15)
+  knowB2   = Checkpoint:  Did R answer USE2 correctly?
+  rt1      = Which group pays highest rate T1 (Q16)
+  knowC1   = Checkpoint:  Did R answer RT1 correctly?
+  rt2      = Which group pays highest rate T2 (Q16)
+  knowC2   = Checkpoint:  Did R answer RT2 correctly?
+  smog1    = Which causes the most air emissions T1 (Q17)
+  knowD1   = Checkpoint:  Did R answer SMOG1 correctly?
+  smog2    = Which causes the most air emissions T2 (Q17)
+  knowD2   = Checkpoint:  Did R answer SMOG2 correctly?
+  setrt1   = Agency that sets electric rate T1 (Q18)
+  knowE1   = Checkpoint:  Did R answer SETRT1 correctly?
+  setrt2   = Agency that sets electric rate T2 (Q18)
+  knowE2   = Checkpoint:  Did R answer SETRT2 correctly?
+
+Agree/Disagree Variables:
+  compet1  = Benefits of competition over regulation T1 (Q19a)
+  compet2  = Benefits of competition over regulation T2 (Q19a)
+  poor1    = Low income pay more than fair share T1 (Q19b)
+  poor2    = Low income pay more than fair share T2 (Q19b)
+  impact1  = Fuels have negative impact on environment T1 (Q19c)
+  impact2  = Fuels have negative impact on environment T2 (Q19c)
+  option1  = CPL doing enough:  renewable, efficiency T1 (Q19d)
+  option2  = CPL doing enough:  renewable, efficiency T2 (Q19d)
+  ccost1   = Customer costs decrease with competition T1 (Q19e)
+  ccost2   = Customer costs decrease with competition T2 (Q19e)
+  serv1    = Service improves with competition T1 (Q19f)
+  serv2    = Service improves with competition T2 (Q19f)
+  ecodvt1  = High electric bills hinder economic development T1 (Q19g)
+  ecodvt2  = High electric bills hinder economic development T2 (Q19g)
+  demand1  = High electric bills discourage use T1 (Q19h)
+  demand2  = High electric bills discourage use T2 (Q19h)
+  usage1   = Use of wind, solar reduce future costs T1 (Q19i)
+  usage2   = Use of wind, solar reduce future costs T2 (Q19i)
+
+Pollution Variables:
+  glwarm1  = How serious is global warming T1 (Q20)
+  glwarm2  = How serious is global warming T2 (Q20)
+  airpol1  = How serious is air pollution in Texas T1 (Q21)
+  airpol2  = How serious is air pollution in Texas T2 (Q21)
+  polfut1  = The future of air pollution in Texas T1 (Q22)
+  polfut2  = The future of air pollution in Texas T2 (Q22)
+
+Success of the Town Meeting Variables:
+  wastetm  = Overall success of Town Meeting T2 (Q23)
+  grpdisc  = Value of group discussions T2 (Q24a)
+  talking  = Value of talking outside discussions T2 (Q24b)
+  puccomm  = Value of session with PUC Commissioners T2 (Q24c)
+  glpart   = Group leader allowed participation T2 (Q25a)
+  glinfl   = Group leader influed group T2 (Q25b)
+  openmind = Dissenters had good reasons T2 (Q25c)
+  readmat  = Time spent reading materials beforehand T2 (Q26)
+  biasmat  = Were the materials balanced T2 (Q27)
+  biasdisc = Town Meeting discussion was balanced T2 (Q28)
+
+
+PART: Is the respondent a Participant or Non-Participant?
+ 
+                                                Cumulative  Cumulative
+                    PART   Frequency   Percent   Frequency    Percent 
+       ---------------------------------------------------------------
+       1 Participant            230      18.7         230       18.7  
+       2 Non-Participant       1000      81.3        1230      100.0  
+
+
+STUDY: Study in which the respondent participated.
+
+                                            Cumulative  Cumulative
+               STUDY   Frequency   Percent   Frequency    Percent 
+            ------------------------------------------------------
+            2 WTU          1230     100.0        1230      100.0  
+
+
+DOPDATE:  Date DOP Commenced (Year/Month/Day).
+ 
+                                                       Cumulative  Cumulative
+                        DOPDATE   Frequency   Percent   Frequency    Percent 
+ ----------------------------------------------------------------------------
+ 19960809 WTU/Abilene                 1230     100.0        1230      100.0  
+
+
+DOPDAYS:  Number of Days over which DOP occurred.
+ 
+                                           Cumulative  Cumulative
+            DOPDAYS   Frequency   Percent   Frequency    Percent 
+            -----------------------------------------------------
+                  2       1230     100.0        1230      100.0  
+
+
+CASEID:  Case Identification Number.
+ 
+                                            Cumulative  Cumulative
+              CASEID   Frequency   Percent   Frequency    Percent 
+            ------------------------------------------------------
+            20000010          1       0.1           1        0.1  
+              ...
+            20012300          1       0.1        1230      100.0  
+
+
+GROUP:  Rs Group.
+ 
+                                          Cumulative  Cumulative
+             GROUP   Frequency   Percent   Frequency    Percent 
+             ---------------------------------------------------
+               201         21       9.1          21        9.1  
+               202         20       8.7          41       17.8  
+               203         19       8.3          60       26.1  
+               204         19       8.3          79       34.3  
+               205         19       8.3          98       42.6  
+               206         20       8.7         118       51.3  
+               207         19       8.3         137       59.6  
+               208         21       9.1         158       68.7  
+               209         17       7.4         175       76.1  
+               210         17       7.4         192       83.5  
+               211          9       3.9         201       87.4  
+               212          9       3.9         210       91.3  
+               213          9       3.9         219       95.2  
+               214         11       4.8         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+GENDER:  Rs Gender.
+ 
+                                            Cumulative  Cumulative
+              GENDER   Frequency   Percent   Frequency    Percent 
+            ------------------------------------------------------
+            1 Male          520      42.3         520       42.3  
+            2 Female        710      57.7        1230      100.0  
+
+
+IDEOLOGY:  Liberal/Conservative Political Scale.
+ 
+                                                  Cumulative  Cumulative
+                  IDEOLOGY   Frequency   Percent   Frequency    Percent 
+      ------------------------------------------------------------------
+      0 Very Liberal               66       5.4          66        5.4  
+      1                             9       0.7          75        6.1  
+      2                            62       5.0         137       11.1  
+      3                            36       2.9         173       14.1  
+      4                            54       4.4         227       18.5  
+      5                           346      28.1         573       46.6  
+      6                            73       5.9         646       52.5  
+      7                           103       8.4         749       60.9  
+      8                            61       5.0         810       65.9  
+      9                            45       3.7         855       69.5  
+      10 Very Conservative        199      16.2        1054       85.7  
+      99 dk                       176      14.3        1230      100.0  
+
+
+OWNRENT:  Own or Rent Home.
+ 
+                                             Cumulative  Cumulative
+              OWNRENT   Frequency   Percent   Frequency    Percent 
+           --------------------------------------------------------
+           1 Own             968      78.7         968       78.7  
+           2 Rent            254      20.7        1222       99.3  
+           99 Refused          8       0.7        1230      100.0  
+
+
+WHOPAYS:  Who Pays Electric Bill.
+ 
+                                               Cumulative  Cumulative
+                WHOPAYS   Frequency   Percent   Frequency    Percent 
+         ------------------------------------------------------------
+         1 Respondent          963      78.3         963       78.3  
+         2 Someone Else        261      21.2        1224       99.5  
+         99 Refused              6       0.5        1230      100.0  
+
+
+WHOBUYS:  Who Buys Appliances.
+ 
+                                               Cumulative  Cumulative
+                WHOBUYS   Frequency   Percent   Frequency    Percent 
+         ------------------------------------------------------------
+         1 Respondent          672      54.6         672       54.6  
+         2 Someone Else        119       9.7         791       64.3  
+         3 Both                435      35.4        1226       99.7  
+         99 Refused              4       0.3        1230      100.0  
+
+
+INSULATE:  Who Purchases Insulation.
+ 
+                                               Cumulative  Cumulative
+               INSULATE   Frequency   Percent   Frequency    Percent 
+         ------------------------------------------------------------
+         1 Respondent          654      53.2         654       53.2  
+         2 Someone Else        292      23.7         946       76.9  
+         3 Both                273      22.2        1219       99.1  
+         99 Refused             11       0.9        1230      100.0  
+
+
+EDUC:  Rs Education.
+ 
+                                                 Cumulative  Cumulative
+                     EDUC   Frequency   Percent   Frequency    Percent 
+       ----------------------------------------------------------------
+       1 0 thru 8th               51       4.1          51        4.1  
+       2 9 thru 11th              89       7.2         140       11.4  
+       3 H.S. Graduate           402      32.7         542       44.1  
+       4 Some College            341      27.7         883       71.8  
+       5 College Graduate        224      18.2        1107       90.0  
+       6 Post-Grad Work          110       8.9        1217       98.9  
+       99 Refused                 13       1.1        1230      100.0  
+
+
+AGE:  Rs Age.
+
+                                                Cumulative  Cumulative
+                     AGE   Frequency   Percent   Frequency    Percent 
+        --------------------------------------------------------------
+                      16          1       0.1           1        0.1  
+                     ...
+                      90          1       0.1        1219       99.1  
+         999 missing/ref         11       0.9        1230      100.0  
+
+
+ASSIST:  Does R Receive Government Assistance.
+ 
+                                             Cumulative  Cumulative
+               ASSIST   Frequency   Percent   Frequency    Percent 
+           --------------------------------------------------------
+           1 No             1070      87.0        1070       87.0  
+           2 Yes             153      12.4        1223       99.4  
+           99 Refused          7       0.6        1230      100.0  
+
+
+EMPLOYED:   Does R Work Outside the Home.
+ 
+                                             Cumulative  Cumulative
+             EMPLOYED   Frequency   Percent   Frequency    Percent 
+           --------------------------------------------------------
+           1 No              453      36.8         453       36.8  
+           2 Yes             775      63.0        1228       99.8  
+           99 Refused          2       0.2        1230      100.0  
+
+
+JOB:  Rs Occupation.
+ 
+                                                  Cumulative  Cumulative
+                       JOB   Frequency   Percent   Frequency    Percent 
+      ------------------------------------------------------------------
+      1 White Collar/Prof.        133      10.8         133       10.8  
+      2 Blue Collar               251      20.4         384       31.2  
+      3 Teacher                    82       6.7         466       37.9  
+      4 Rancher/Farmer             32       2.6         498       40.5  
+      5 Nurse/Health Care          49       4.0         547       44.5  
+      6 Clerical/Admin.           134      10.9         681       55.4  
+      7 Self Employed              41       3.3         722       58.7  
+      10 Retired                    2       0.2         724       58.9  
+      11 Other                     37       3.0         761       61.9  
+      98 NA                       455      37.0        1216       98.9  
+      99 Refused                   14       1.1        1230      100.0  
+
+
+MANYWORK:  Number of Employees at Rs Work.
+ 
+                                              Cumulative  Cumulative
+              MANYWORK   Frequency   Percent   Frequency    Percent 
+         -----------------------------------------------------------
+         1 less than 5        206      16.7         206       16.7  
+         2 5-10               106       8.6         312       25.4  
+         3 11-20               88       7.2         400       32.5  
+         4 21-30               71       5.8         471       38.3  
+         5 31-50               70       5.7         541       44.0  
+         6 51-100              73       5.9         614       49.9  
+         7 101-200             36       2.9         650       52.8  
+         8 201-300             24       2.0         674       54.8  
+         9 301-500             16       1.3         690       56.1  
+         10 501-1000           16       1.3         706       57.4  
+         11 Over 1000          36       2.9         742       60.3  
+         98 NA                455      37.0        1197       97.3  
+         99 dk                 33       2.7        1230      100.0  
+
+
+TYPEWORK:  Type of Workplace.
+ 
+                                               Cumulative  Cumulative
+               TYPEWORK   Frequency   Percent   Frequency    Percent 
+         ------------------------------------------------------------
+         1 store                91       7.4          91        7.4  
+         2 office              142      11.5         233       18.9  
+         3 govt                117       9.5         350       28.5  
+         4 plant                74       6.0         424       34.5  
+         5 other                 8       0.7         432       35.1  
+         6 refused              11       0.9         443       36.0  
+         7 school              100       8.1         543       44.1  
+         9 farm/ranch           29       2.4         572       46.5  
+         10 hospital            53       4.3         625       50.8  
+         11 hotel/restaurant    24       2.0         649       52.8  
+         12 oil field           21       1.7         670       54.5  
+         13 other              104       8.5         774       62.9  
+         14                      1       0.1         775       63.0  
+         98 NA                 455      37.0        1230      100.0  
+
+
+INCOME:  Rs Income.
+ 
+                                                 Cumulative  Cumulative
+                   INCOME   Frequency   Percent   Frequency    Percent 
+       ----------------------------------------------------------------
+       1 Less Than $6000          67       5.4          67        5.4  
+       2 $6000 - 10000            74       6.0         141       11.5  
+       3 $10001 - 15000          119       9.7         260       21.1  
+       4 $15001 - 25000          218      17.7         478       38.9  
+       5 $25001 - 35000          223      18.1         701       57.0  
+       6 $35001 - 55000          214      17.4         915       74.4  
+       7 $55001 - 75000           95       7.7        1010       82.1  
+       8 more than $75000         52       4.2        1062       86.3  
+       99 refused                168      13.7        1230      100.0  
+
+
+RACE:  Rs Race or Ethnicity.
+ 
+                                                Cumulative  Cumulative
+                    RACE   Frequency   Percent   Frequency    Percent 
+       ---------------------------------------------------------------
+       1 Hispanic               155      12.6         155       12.6  
+       2 Black                   33       2.7         188       15.3  
+       3 Asian                    3       0.2         191       15.5  
+       4 Anglo                  977      79.4        1168       95.0  
+       6 Other                   41       3.3        1209       98.3  
+       99 Refused                21       1.7        1230      100.0  
+
+
+ZIPCODE:  Rs Zipcode.
+ 
+                                           Cumulative  Cumulative
+            ZIPCODE   Frequency   Percent   Frequency    Percent 
+            -----------------------------------------------------
+                201        308      25.0         308       25.0  
+                202         52       4.2         360       29.3  
+                203         89       7.2         449       36.5  
+                204         84       6.8         533       43.3  
+                205         34       2.8         567       46.1  
+                206         58       4.7         625       50.8  
+                207         51       4.1         676       55.0  
+                208         36       2.9         712       57.9  
+                209        283      23.0         995       80.9  
+                210         49       4.0        1044       84.9  
+                211         39       3.2        1083       88.0  
+                212         91       7.4        1174       95.4  
+                213         13       1.1        1187       96.5  
+                214         17       1.4        1204       97.9  
+                215         12       1.0        1216       98.9  
+                216         14       1.1        1230      100.0  
+
+
+REGWT:  Rs Region (WT)
+
+                                                Cumulative  Cumulative
+                   REGWT   Frequency   Percent   Frequency    Percent 
+        --------------------------------------------------------------
+        1 Central               425      34.6         425       34.6  
+        2 North                 264      21.5         689       56.0  
+        3 West                   78       6.3         767       62.4  
+        4 Missing/West2?         61       5.0         828       67.3  
+        5 South                 402      32.7        1230      100.0  
+
+
+Q1a-Q1e:  The following are some general questions about things some people might or might not consider important.  For each one, please rate how important you think it is using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  
+
+Q1a  FUTURE1:  The following are some general questions about things some people might or might not consider important.  For each one, please rate how important you think it is using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  To preserve resources like coal, natural gas, and oil for the future.
+
+            Pre: Preserve Coal, Gas, Oil for Future T1 (Q1a)
+ 
+                                               Cumulative  Cumulative
+                FUTURE1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         12       1.0          12        1.0  
+        1                        2       0.2          14        1.1  
+        2                        2       0.2          16        1.3  
+        3                       16       1.3          32        2.6  
+        4                       10       0.8          42        3.4  
+        5 Average              169      13.7         211       17.2  
+        6                       32       2.6         243       19.8  
+        7                       85       6.9         328       26.7  
+        8                      165      13.4         493       40.1  
+        9                       73       5.9         566       46.0  
+        10 Extremely           637      51.8        1203       97.8  
+        99 dk                   27       2.2        1230      100.0  
+
+
+           Post: Preserve Coal, Gas, Oil for Future T2 (Q1a)
+ 
+                                               Cumulative  Cumulative
+                FUTURE2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        1                        3       1.3           3        1.3  
+        2                        3       1.3           6        2.6  
+        3                        8       3.5          14        6.1  
+        4                        3       1.3          17        7.4  
+        5 Average               35      15.2          52       22.6  
+        6                       18       7.8          70       30.4  
+        7                       18       7.8          88       38.3  
+        8                       33      14.3         121       52.6  
+        9                       16       7.0         137       59.6  
+        10 Extremely            91      39.6         228       99.1  
+        99 dk                    2       0.9         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q1b  GROW1:  The following are some general questions about things some people might or might not consider important.  For each one, please rate how important you think it is using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  To promote economic growth in the community.
+
+            Pre: Promote Economic Growth in Community T1 (Q1b)
+ 
+                                               Cumulative  Cumulative
+                  GROW1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          6       0.5           6        0.5  
+        1                        5       0.4          11        0.9  
+        2                        8       0.7          19        1.5  
+        3                       13       1.1          32        2.6  
+        4                        6       0.5          38        3.1  
+        5 Average              136      11.1         174       14.1  
+        6                       28       2.3         202       16.4  
+        7                       93       7.6         295       24.0  
+        8                      193      15.7         488       39.7  
+        9                       92       7.5         580       47.2  
+        10 Extremely           632      51.4        1212       98.5  
+        99 dk                   18       1.5        1230      100.0  
+
+
+           Post: Promote Economic Growth in Community T2 (Q1b)
+ 
+                                               Cumulative  Cumulative
+                  GROW2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        1                        1       0.4           1        0.4  
+        2                        1       0.4           2        0.9  
+        3                        3       1.3           5        2.2  
+        4                        4       1.7           9        3.9  
+        5 Average               12       5.2          21        9.1  
+        6                       10       4.3          31       13.5  
+        7                       22       9.6          53       23.0  
+        8                       30      13.0          83       36.1  
+        9                       27      11.7         110       47.8  
+        10 Extremely           118      51.3         228       99.1  
+        99 dk                    2       0.9         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q1c  POLL1:  The following are some general questions about things some people might or might not consider important.  For each one, please rate how important you think it is using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  To reduce pollution.
+
+                    Pre: Reduce Pollution T1 (Q1c)
+ 
+                                               Cumulative  Cumulative
+                  POLL1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         15       1.2          15        1.2  
+        1                        4       0.3          19        1.5  
+        2                        7       0.6          26        2.1  
+        3                       13       1.1          39        3.2  
+        4                       15       1.2          54        4.4  
+        5 Average               87       7.1         141       11.5  
+        6                       24       2.0         165       13.4  
+        7                       58       4.7         223       18.1  
+        8                      126      10.2         349       28.4  
+        9                       71       5.8         420       34.1  
+        10 Extremely           802      65.2        1222       99.3  
+        99 dk                    8       0.7        1230      100.0  
+
+
+                      Post: Reduce Pollution T2 (Q1c)
+ 
+                                               Cumulative  Cumulative
+                  POLL2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        1                        1       0.4           1        0.4  
+        3                        6       2.6           7        3.0  
+        4                        3       1.3          10        4.3  
+        5 Average               16       7.0          26       11.3  
+        6                        2       0.9          28       12.2  
+        7                       13       5.7          41       17.8  
+        8                       21       9.1          62       27.0  
+        9                       21       9.1          83       36.1  
+        10 Extremely           145      63.0         228       99.1  
+        99 dk                    2       0.9         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q1d  NEEDS1:  The following are some general questions about things some people might or might not consider important.  For each one, please rate how important you think it is using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  To see to it everyone has their basic needs met.
+
+            Pre: Ensure Everyone Has Basic Needs Met T1 (Q1d)
+ 
+                                               Cumulative  Cumulative
+                 NEEDS1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         13       1.1          13        1.1  
+        2                        8       0.7          21        1.7  
+        3                       12       1.0          33        2.7  
+        4                        9       0.7          42        3.4  
+        5 Average              108       8.8         150       12.2  
+        6                       27       2.2         177       14.4  
+        7                       50       4.1         227       18.5  
+        8                      131      10.7         358       29.1  
+        9                       77       6.3         435       35.4  
+        10 Extremely           771      62.7        1206       98.0  
+        99 dk                   24       2.0        1230      100.0  
+
+
+             Post:Ensure Everyone Has Basic Needs Met T2 (Q1d)
+ 
+                                               Cumulative  Cumulative
+                 NEEDS2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          1       0.4           1        0.4  
+        1                        1       0.4           2        0.9  
+        3                        3       1.3           5        2.2  
+        4                        2       0.9           7        3.0  
+        5 Average               12       5.2          19        8.3  
+        6                        5       2.2          24       10.4  
+        7                        9       3.9          33       14.3  
+        8                       30      13.0          63       27.4  
+        9                       30      13.0          93       40.4  
+        10 Extremely           136      59.1         229       99.6  
+        99 dk                    1       0.4         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q1e  INVEST1:  The following are some general questions about things some people might or might not consider important.  For each one, please rate how important you think it is using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  To minimize risk when investing money.
+
+          Pre: Minimize Risk When Investing Money T1 (Q1e)
+ 
+                                               Cumulative  Cumulative
+                INVEST1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         10       0.8          10        0.8  
+        1                        3       0.2          13        1.1  
+        2                       10       0.8          23        1.9  
+        3                       10       0.8          33        2.7  
+        4                       17       1.4          50        4.1  
+        5 Average              181      14.7         231       18.8  
+        6                       55       4.5         286       23.3  
+        7                       75       6.1         361       29.3  
+        8                      154      12.5         515       41.9  
+        9                       61       5.0         576       46.8  
+        10 Extremely           602      48.9        1178       95.8  
+        99 dk                   52       4.2        1230      100.0  
+
+
+         Post: Minimize Risk When Investing Money T2 (Q1e)
+ 
+                                               Cumulative  Cumulative
+                INVEST2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          1       0.4           1        0.4  
+        1                        1       0.4           2        0.9  
+        2                        2       0.9           4        1.7  
+        3                        5       2.2           9        3.9  
+        4                        9       3.9          18        7.8  
+        5 Average               23      10.0          41       17.8  
+        6                       18       7.8          59       25.7  
+        7                       19       8.3          78       33.9  
+        8                       45      19.6         123       53.5  
+        9                       19       8.3         142       61.7  
+        10 Extremely            83      36.1         225       97.8  
+        99 dk                    5       2.2         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q2a-Q2e:  Now we'd like to ask you about things people might or might not consider important regarding electric power.  Again, please rate how important you think each one is using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  
+
+Q2a  RESCH1:  Now we'd like to ask you about things people might or might not consider important regarding electric power.  Again, please rate how important you think each one is using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  For electric utilities to carry out research to develop better ways of producing and delivering power to customers even if that means paying higher electric rates.
+
+             Pre: Research Even If Higher Elec Rates T1 (Q2a)
+ 
+                                               Cumulative  Cumulative
+                 RESCH1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         57       4.6          57        4.6  
+        1                       20       1.6          77        6.3  
+        2                       21       1.7          98        8.0  
+        3                       40       3.3         138       11.2  
+        4                       31       2.5         169       13.7  
+        5 Average              306      24.9         475       38.6  
+        6                       72       5.9         547       44.5  
+        7                      148      12.0         695       56.5  
+        8                      197      16.0         892       72.5  
+        9                       52       4.2         944       76.7  
+        10 Extremely           247      20.1        1191       96.8  
+        99 dk                   39       3.2        1230      100.0  
+
+
+            Post: Research Even If Higher Elec Rates T2 (Q2a)
+ 
+                                               Cumulative  Cumulative
+                 RESCH2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        1                        3       1.3           3        1.3  
+        3                        2       0.9           5        2.2  
+        4                        4       1.7           9        3.9  
+        5 Average               28      12.2          37       16.1  
+        6                        6       2.6          43       18.7  
+        7                       32      13.9          75       32.6  
+        8                       59      25.7         134       58.3  
+        9                       25      10.9         159       69.1  
+        10 Extremely            71      30.9         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q2b  REDUCE1:  Now we'd like to ask you about things people might or might not consider important regarding electric power.  Again, please rate how important you think each one is using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  For utilities to reduce their use of natural gas and coal by helping their customers use energy more efficiently.
+
+          Pre: Reduce Coal, Gas by Efficient Use T1 (Q2b)
+ 
+                                               Cumulative  Cumulative
+                REDUCE1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         10       0.8          10        0.8  
+        1                        5       0.4          15        1.2  
+        2                        9       0.7          24        2.0  
+        3                       14       1.1          38        3.1  
+        4                       11       0.9          49        4.0  
+        5 Average              161      13.1         210       17.1  
+        6                       61       5.0         271       22.0  
+        7                       99       8.0         370       30.1  
+        8                      220      17.9         590       48.0  
+        9                       81       6.6         671       54.6  
+        10 Extremely           522      42.4        1193       97.0  
+        99 dk                   37       3.0        1230      100.0  
+
+
+          Post: Reduce Coal, Gas by Efficient Use T2 (Q2b)
+ 
+                                               Cumulative  Cumulative
+                REDUCE2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        3                        3       1.3           3        1.3  
+        4                        8       3.5          11        4.8  
+        5 Average               18       7.8          29       12.6  
+        6                       14       6.1          43       18.7  
+        7                       17       7.4          60       26.1  
+        8                       39      17.0          99       43.0  
+        9                       43      18.7         142       61.7  
+        10 Extremely            88      38.3         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q2c  JOBS1:  Now we'd like to ask you about things people might or might not consider important regarding electric power.  Again, please rate how important you think each one is using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  For utilities to consider the number of jobs created when they make decisions about how to meet customers' energy needs.
+
+                    Pre: Number of Jobs Created T1 (Q2c)
+ 
+                                               Cumulative  Cumulative
+                  JOBS1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         10       0.8          10        0.8  
+        1                        3       0.2          13        1.1  
+        2                       18       1.5          31        2.5  
+        3                       16       1.3          47        3.8  
+        4                       20       1.6          67        5.4  
+        5 Average              169      13.7         236       19.2  
+        6                       66       5.4         302       24.6  
+        7                      121       9.8         423       34.4  
+        8                      201      16.3         624       50.7  
+        9                       87       7.1         711       57.8  
+        10 Extremely           465      37.8        1176       95.6  
+        99 dk                   54       4.4        1230      100.0  
+
+
+                  Post: Number of Jobs Created T2 (Q2c)
+ 
+                                               Cumulative  Cumulative
+                  JOBS2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          2       0.9           2        0.9  
+        1                        1       0.4           3        1.3  
+        2                        2       0.9           5        2.2  
+        3                        6       2.6          11        4.8  
+        4                        5       2.2          16        7.0  
+        5 Average               27      11.7          43       18.7  
+        6                       16       7.0          59       25.7  
+        7                       23      10.0          82       35.7  
+        8                       46      20.0         128       55.7  
+        9                       31      13.5         159       69.1  
+        10 Extremely            71      30.9         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q2d  TAX1:  Now we'd like to ask you about things people might or might not consider important regarding electric power.  Again, please rate how important you think each one is using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  For utilities to consider the impact on the community's tax base when they make decisions about how to meet customers' energy needs.
+
+               Pre: Impact on Community's Tax Base T1 (Q2d)
+ 
+                                               Cumulative  Cumulative
+                   TAX1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         18       1.5          18        1.5  
+        1                        5       0.4          23        1.9  
+        2                        3       0.2          26        2.1  
+        3                       10       0.8          36        2.9  
+        4                       12       1.0          48        3.9  
+        5 Average              156      12.7         204       16.6  
+        6                       76       6.2         280       22.8  
+        7                      117       9.5         397       32.3  
+        8                      187      15.2         584       47.5  
+        9                       85       6.9         669       54.4  
+        10 Extremely           499      40.6        1168       95.0  
+        99 dk                   62       5.0        1230      100.0  
+
+
+                Post: Impact on Community's Tax Base T2 (Q2d)
+ 
+                                               Cumulative  Cumulative
+                   TAX2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        2                        3       1.3           3        1.3  
+        3                        7       3.0          10        4.3  
+        4                        6       2.6          16        7.0  
+        5 Average               25      10.9          41       17.8  
+        6                       25      10.9          66       28.7  
+        7                       35      15.2         101       43.9  
+        8                       39      17.0         140       60.9  
+        9                       34      14.8         174       75.7  
+        10 Extremely            54      23.5         228       99.1  
+        99 dk                    2       0.9         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q2e  LOWINC1:  Now we'd like to ask you about things people might or might not consider important regarding electric power.  Again, please rate how important you think each one is using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  For utilities to tailor rates and energy management programs to make sure that low income customers are treated fairly.
+
+          Pre: Low Income Customers are Treated Fairly T1 (Q2e)
+ 
+                                               Cumulative  Cumulative
+                LOWINC1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         16       1.3          16        1.3  
+        1                        9       0.7          25        2.0  
+        2                        9       0.7          34        2.8  
+        3                        9       0.7          43        3.5  
+        4                        7       0.6          50        4.1  
+        5 Average              127      10.3         177       14.4  
+        6                       28       2.3         205       16.7  
+        7                       73       5.9         278       22.6  
+        8                      181      14.7         459       37.3  
+        9                      105       8.5         564       45.9  
+        10 Extremely           644      52.4        1208       98.2  
+        99 dk                   22       1.8        1230      100.0  
+
+
+         Post: Low Inome Customers Treated Fairly T2 (Q2e)
+ 
+                                               Cumulative  Cumulative
+                LOWINC2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          3       1.3           3        1.3  
+        1                        1       0.4           4        1.7  
+        3                        5       2.2           9        3.9  
+        4                        5       2.2          14        6.1  
+        5 Average               20       8.7          34       14.8  
+        6                       12       5.2          46       20.0  
+        7                       18       7.8          64       27.8  
+        8                       35      15.2          99       43.0  
+        9                       29      12.6         128       55.7  
+        10 Extremely           100      43.5         228       99.1  
+        99 dk                    2       0.9         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q3a-Q3e:  Many things that some people think are important may have some cost or tradeoff.  For each of the following, please rate how important you think it is, given the tradeoff, using a 0 to 10 scale where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  
+
+Q3a  GROWTO1:  Many things that some people think are important may have some cost or tradeoff.  For each of the following, please rate how important you think it is, given the tradeoff, using a 0 to 10 scale where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  To promote economic growth in the community even if it might create some additional pollution.
+
+            Pre: Tradeoff: Eco Growth & Pollution T1 (Q3a)
+ 
+                                               Cumulative  Cumulative
+                GROWTO1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important        115       9.3         115        9.3  
+        1                       33       2.7         148       12.0  
+        2                       58       4.7         206       16.7  
+        3                       74       6.0         280       22.8  
+        4                       76       6.2         356       28.9  
+        5 Average              359      29.2         715       58.1  
+        6                       80       6.5         795       64.6  
+        7                       98       8.0         893       72.6  
+        8                      137      11.1        1030       83.7  
+        9                       22       1.8        1052       85.5  
+        10 Extremely           132      10.7        1184       96.3  
+        99 dk                   46       3.7        1230      100.0  
+
+
+             Post: Tradeoff: Eco Growth & Pollution T2 (Q3a)
+ 
+                                               Cumulative  Cumulative
+                GROWTO2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         19       8.3          19        8.3  
+        1                        8       3.5          27       11.7  
+        2                       14       6.1          41       17.8  
+        3                       20       8.7          61       26.5  
+        4                       20       8.7          81       35.2  
+        5 Average               47      20.4         128       55.7  
+        6                       18       7.8         146       63.5  
+        7                       30      13.0         176       76.5  
+        8                       26      11.3         202       87.8  
+        9                       11       4.8         213       92.6  
+        10 Extremely            14       6.1         227       98.7  
+        99 dk                    3       1.3         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q3b  POLLTO1:  Many things that some people think are important may have some cost or tradeoff.  For each of the following, please rate how important you think it is, given the tradeoff, using a 0 to 10 scale where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  To reduce pollution even if it makes things more expensive.
+
+          Pre: Tradeoff: Reduce Pollution & Inc Costs T1 (Q3b)
+ 
+                                               Cumulative  Cumulative
+                POLLTO1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         38       3.1          38        3.1  
+        1                       16       1.3          54        4.4  
+        2                       18       1.5          72        5.9  
+        3                       35       2.8         107        8.7  
+        4                       25       2.0         132       10.7  
+        5 Average              305      24.8         437       35.5  
+        6                       81       6.6         518       42.1  
+        7                      128      10.4         646       52.5  
+        8                      211      17.2         857       69.7  
+        9                       48       3.9         905       73.6  
+        10 Extremely           299      24.3        1204       97.9  
+        99 dk                   26       2.1        1230      100.0  
+
+
+          Post: Tradeoff: Reduce Pollution & Inc Costs T2 (Q3b)
+ 
+                                               Cumulative  Cumulative
+                POLLTO2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          1       0.4           1        0.4  
+        1                        4       1.7           5        2.2  
+        2                        3       1.3           8        3.5  
+        3                        4       1.7          12        5.2  
+        4                        5       2.2          17        7.4  
+        5 Average               32      13.9          49       21.3  
+        6                       19       8.3          68       29.6  
+        7                       27      11.7          95       41.3  
+        8                       49      21.3         144       62.6  
+        9                       31      13.5         175       76.1  
+        10 Extremely            54      23.5         229       99.6  
+        99 dk                    1       0.4         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q3c  STRTTO1:  Many things that some people think are important may have some cost or tradeoff.  For each of the following, please rate how important you think it is, given the tradeoff, using a 0 to 10 scale where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  To get the best short term rate on an investment, even if the long term rate is uncertain.  
+
+           Pre: Tradeoff: Short & Long Term (WT,SWEPCO) T1 (Q3c)
+ 
+                                               Cumulative  Cumulative
+                STRTTO1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         41       3.3          41        3.3  
+        1                       19       1.5          60        4.9  
+        2                       27       2.2          87        7.1  
+        3                       56       4.6         143       11.6  
+        4                       39       3.2         182       14.8  
+        5 Average              365      29.7         547       44.5  
+        6                       78       6.3         625       50.8  
+        7                      110       8.9         735       59.8  
+        8                      165      13.4         900       73.2  
+        9                       44       3.6         944       76.7  
+        10 Extremely           151      12.3        1095       89.0  
+        99 dk                  135      11.0        1230      100.0  
+
+
+           Post: Tradeoff: Short & Long Term (WT,SWEPCO) T2 (Q3c)
+ 
+                                               Cumulative  Cumulative
+                STRTTO2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          7       3.0           7        3.0  
+        1                        5       2.2          12        5.2  
+        2                       10       4.3          22        9.6  
+        3                       15       6.5          37       16.1  
+        4                        9       3.9          46       20.0  
+        5 Average               55      23.9         101       43.9  
+        6                       20       8.7         121       52.6  
+        7                       33      14.3         154       67.0  
+        8                       22       9.6         176       76.5  
+        9                       10       4.3         186       80.9  
+        10 Extremely            31      13.5         217       94.3  
+        99 dk                   13       5.7         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q3d  NEEDTO1:  Many things that some people think are important may have some cost or tradeoff.  For each of the following, please rate how important you think it is, given the tradeoff, using a 0 to 10 scale where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  To see to it everyone has their basic needs met, even if that means the rest of us have to pay a little more.
+
+            Pre: Tradeoff: Basic Needs Met & Inc Costs T1 (Q3d)
+ 
+                                               Cumulative  Cumulative
+                NEEDTO1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         71       5.8          71        5.8  
+        1                       18       1.5          89        7.2  
+        2                       32       2.6         121        9.8  
+        3                       46       3.7         167       13.6  
+        4                       32       2.6         199       16.2  
+        5 Average              229      18.6         428       34.8  
+        6                       74       6.0         502       40.8  
+        7                      120       9.8         622       50.6  
+        8                      178      14.5         800       65.0  
+        9                       59       4.8         859       69.8  
+        10 Extremely           344      28.0        1203       97.8  
+        99 dk                   27       2.2        1230      100.0  
+
+
+           Post: Tradeoff: Basic Needs Met & Inc Costs T2 (Q3d)
+ 
+                                               Cumulative  Cumulative
+                NEEDTO2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          2       0.9           2        0.9  
+        1                        1       0.4           3        1.3  
+        2                        6       2.6           9        3.9  
+        3                        4       1.7          13        5.7  
+        4                       10       4.3          23       10.0  
+        5 Average               25      10.9          48       20.9  
+        6                       14       6.1          62       27.0  
+        7                       29      12.6          91       39.6  
+        8                       41      17.8         132       57.4  
+        9                       33      14.3         165       71.7  
+        10 Extremely            65      28.3         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q3e  INVSTO1:  Many things that some people think are important may have some cost or tradeoff.  For each of the following, please rate how important you think it is, given the tradeoff, using a 0 to 10 scale where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  To minimize risk when investing money even if that means earning less on your investment.
+
+             Pre: Tradeoff: Min Invest Risk & Low Return T1 (Q3e)
+ 
+                                               Cumulative  Cumulative
+                INVSTO1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         38       3.1          38        3.1  
+        1                        8       0.7          46        3.7  
+        2                       30       2.4          76        6.2  
+        3                       35       2.8         111        9.0  
+        4                       40       3.3         151       12.3  
+        5 Average              307      25.0         458       37.2  
+        6                       75       6.1         533       43.3  
+        7                      132      10.7         665       54.1  
+        8                      202      16.4         867       70.5  
+        9                       59       4.8         926       75.3  
+        10 Extremely           225      18.3        1151       93.6  
+        99 dk                   79       6.4        1230      100.0  
+
+
+          Post: Tradeoff: Min Invest Risk & Low Return T2 (Q3e)
+ 
+                                               Cumulative  Cumulative
+                INVSTO2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        1                        1       0.4           1        0.4  
+        3                        9       3.9          10        4.3  
+        4                       14       6.1          24       10.4  
+        5 Average               47      20.4          71       30.9  
+        6                       16       7.0          87       37.8  
+        7                       27      11.7         114       49.6  
+        8                       44      19.1         158       68.7  
+        9                       26      11.3         184       80.0  
+        10 Extremely            40      17.4         224       97.4  
+        99 dk                    6       2.6         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q4a-Q4e:  Below are some characteristics of different kinds of resources SWEPCO might consider in meeting the electric needs of its service territory, which includes parts of three states:  East Texas, Northwestern Louisiana, and Western Arkansas.  Please tell us, in your view, how important each of the following characteristics should be for the utility to consider, using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  
+
+Q4a  LOWEST1:  Below are some characteristics of different kinds of resources SWEPCO might consider in meeting the electric needs of its service territory, which includes parts of three states:  East Texas, Northwestern Louisiana, and Western Arkansas.  Please tell us, in your view, how important each of the following characteristics should be for the utility to consider, using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  Using resources which result in the lowest cost electricity.
+
+             Pre: Resources With Lowest Cost Electricity T1 (Q4a)
+ 
+                                               Cumulative  Cumulative
+                LOWEST1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          7       0.6           7        0.6  
+        1                        2       0.2           9        0.7  
+        2                        8       0.7          17        1.4  
+        3                        7       0.6          24        2.0  
+        4                       15       1.2          39        3.2  
+        5 Average              111       9.0         150       12.2  
+        6                       50       4.1         200       16.3  
+        7                       71       5.8         271       22.0  
+        8                      156      12.7         427       34.7  
+        9                       90       7.3         517       42.0  
+        10 Extremely           680      55.3        1197       97.3  
+        99 dk                   33       2.7        1230      100.0  
+
+
+           Post: Resources With Lowest Cost Electricity T2 (Q4a)
+ 
+                                               Cumulative  Cumulative
+                LOWEST2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          1       0.4           1        0.4  
+        1                        4       1.7           5        2.2  
+        2                        4       1.7           9        3.9  
+        3                        9       3.9          18        7.8  
+        4                        7       3.0          25       10.9  
+        5 Average               36      15.7          61       26.5  
+        6                       23      10.0          84       36.5  
+        7                       25      10.9         109       47.4  
+        8                       31      13.5         140       60.9  
+        9                       23      10.0         163       70.9  
+        10 Extremely            66      28.7         229       99.6  
+        99 dk                    1       0.4         230      100.0  
+
+                           Frequency Missing = 1000
+
+Q4b  ENVMT1:  Below are some characteristics of different kinds of resources SWEPCO might consider in meeting the electric needs of its service territory, which includes parts of three states:  East Texas, Northwestern Louisiana, and Western Arkansas.  Please tell us, in your view, how important each of the following characteristics should be for the utility to consider, using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.    Using resources that maintain current levels of environmental quality.
+  
+              Pre: Resources That Maintain Environment T1 (Q4b)
+ 
+                                               Cumulative  Cumulative
+                 ENVMT1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          5       0.4           5        0.4  
+        1                        1       0.1           6        0.5  
+        2                        7       0.6          13        1.1  
+        3                        7       0.6          20        1.6  
+        4                       19       1.5          39        3.2  
+        5 Average              124      10.1         163       13.3  
+        6                       52       4.2         215       17.5  
+        7                      112       9.1         327       26.6  
+        8                      200      16.3         527       42.8  
+        9                       89       7.2         616       50.1  
+        10 Extremely           582      47.3        1198       97.4  
+        99 dk                   32       2.6        1230      100.0  
+
+
+            Post: Resources That Maintain Environment T2 (Q4b)
+ 
+                                               Cumulative  Cumulative
+                 ENVMT2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        1                        1       0.4           1        0.4  
+        3                        1       0.4           2        0.9  
+        4                        5       2.2           7        3.0  
+        5 Average               26      11.3          33       14.3  
+        6                       11       4.8          44       19.1  
+        7                       25      10.9          69       30.0  
+        8                       43      18.7         112       48.7  
+        9                       31      13.5         143       62.2  
+        10 Extremely            85      37.0         228       99.1  
+        99 dk                    2       0.9         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q4c  DEPEND1:  Below are some characteristics of different kinds of resources SWEPCO might consider in meeting the electric needs of its service territory, which includes parts of three states:  East Texas, Northwestern Louisiana, and Western Arkansas.  Please tell us, in your view, how important each of the following characteristics should be for the utility to consider, using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  Using a mix of different kinds of energy resources to avoid dependence on a single type of resource.
+
+            Pre: Mix of Resc Reduce Dependence(WT,SWEPCO) T1 (Q4c)
+ 
+                                               Cumulative  Cumulative
+                DEPEND1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          7       0.6           7        0.6  
+        1                        1       0.1           8        0.7  
+        2                        2       0.2          10        0.8  
+        3                        2       0.2          12        1.0  
+        4                        5       0.4          17        1.4  
+        5 Average               84       6.8         101        8.2  
+        6                       43       3.5         144       11.7  
+        7                       81       6.6         225       18.3  
+        8                      194      15.8         419       34.1  
+        9                      115       9.3         534       43.4  
+        10 Extremely           634      51.5        1168       95.0  
+        99 dk                   62       5.0        1230      100.0  
+
+
+          Post: Mix of Resc Reduce Dependence(WT,SWEPCO) T1 (Q4c)
+ 
+                                               Cumulative  Cumulative
+                DEPEND2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        5 Average                6       2.6           6        2.6  
+        6                        6       2.6          12        5.2  
+        7                       12       5.2          24       10.4  
+        8                       31      13.5          55       23.9  
+        9                       39      17.0          94       40.9  
+        10 Extremely           136      59.1         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q4d  RENEW1:  Below are some characteristics of different kinds of resources SWEPCO might consider in meeting the electric needs of its service territory, which includes parts of three states:  East Texas, Northwestern Louisiana, and Western Arkansas.  Please tell us, in your view, how important each of the following characteristics should be for the utility to consider, using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  Using renewable resources such as the wind or sun.
+
+           Pre: Renewable Resources such as Wind, Sun T1 (Q4d)
+ 
+                                               Cumulative  Cumulative
+                 RENEW1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          2       0.2           2        0.2  
+        1                        1       0.1           3        0.2  
+        2                        2       0.2           5        0.4  
+        3                        3       0.2           8        0.7  
+        4                       12       1.0          20        1.6  
+        5 Average               60       4.9          80        6.5  
+        6                       23       1.9         103        8.4  
+        7                       48       3.9         151       12.3  
+        8                      142      11.5         293       23.8  
+        9                      119       9.7         412       33.5  
+        10 Extremely           799      65.0        1211       98.5  
+        99 dk                   19       1.5        1230      100.0  
+
+
+              Post: Renewable Resources like Wind, Sun T2 (Q4d)
+ 
+                                               Cumulative  Cumulative
+                 RENEW2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        2                        1       0.4           1        0.4  
+        3                        2       0.9           3        1.3  
+        4                        1       0.4           4        1.7  
+        5 Average               12       5.2          16        7.0  
+        6                        6       2.6          22        9.6  
+        7                        6       2.6          28       12.2  
+        8                       34      14.8          62       27.0  
+        9                       26      11.3          88       38.3  
+        10 Extremely           141      61.3         229       99.6  
+        99 dk                    1       0.4         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q4e  CHANGE1:  Below are some characteristics of different kinds of resources SWEPCO might consider in meeting the electric needs of its service territory, which includes parts of three states:  East Texas, Northwestern Louisiana, and Western Arkansas.  Please tell us, in your view, how important each of the following characteristics should be for the utility to consider, using a 0 to 10 scale, where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  Using resources that can be quickly increased or decreased in quantity as customers come into or leave the system.
+
+          Pre: Resources Fluctuate w/Demand(WT,SWEPCO) T1 (Q4e)
+ 
+                                               Cumulative  Cumulative
+                CHANGE1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         11       0.9          11        0.9  
+        1                        2       0.2          13        1.1  
+        2                        3       0.2          16        1.3  
+        3                        5       0.4          21        1.7  
+        4                        9       0.7          30        2.4  
+        5 Average              159      12.9         189       15.4  
+        6                       42       3.4         231       18.8  
+        7                       90       7.3         321       26.1  
+        8                      224      18.2         545       44.3  
+        9                       72       5.9         617       50.2  
+        10 Extremely           503      40.9        1120       91.1  
+        99 dk                  110       8.9        1230      100.0  
+
+
+          Post: Resources Fluctuate w/demand(WT,SWEPCO) T2 (Q4e)
+ 
+                                               Cumulative  Cumulative
+                CHANGE2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          1       0.4           1        0.4  
+        1                        1       0.4           2        0.9  
+        2                        1       0.4           3        1.3  
+        3                        1       0.4           4        1.7  
+        4                        2       0.9           6        2.6  
+        5 Average               24      10.4          30       13.0  
+        6                       13       5.7          43       18.7  
+        7                       42      18.3          85       37.0  
+        8                       41      17.8         126       54.8  
+        9                       34      14.8         160       69.6  
+        10 Extremely            64      27.8         224       97.4  
+        99 dk                    6       2.6         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q5a  IM11:  Please tell us which of these factors is the most important?
+
+           Pre: Most Important Factor (WT, SWEPCO) T1 (Q5a)
+ 
+                                                   Cumulative  Cumulative
+                       IM11   Frequency   Percent   Frequency    Percent 
+     --------------------------------------------------------------------
+     1 Lowest Cost                 287      23.3         287       23.3  
+     2 Maintain Environment        154      12.5         441       35.9  
+     3 Mix of Resources            173      14.1         614       49.9  
+     4 Renewable Resc.             444      36.1        1058       86.0  
+     5 Quick Change                 73       5.9        1131       92.0  
+     99 dk                          99       8.0        1230      100.0  
+
+
+         Post: Most Important Factor (WT, SWEPCO) T2 (Q5a)
+ 
+                                                   Cumulative  Cumulative
+                       IM12   Frequency   Percent   Frequency    Percent 
+     --------------------------------------------------------------------
+     1 Lowest Cost                  46      20.0          46       20.0  
+     2 Maintain Environment         36      15.7          82       35.7  
+     3 Mix of Resources             76      33.0         158       68.7  
+     4 Renewable Resc.              60      26.1         218       94.8  
+     5 Quick Change                 11       4.8         229       99.6  
+     99 dk                           1       0.4         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q5b  IM21:  Which is the second most important?
+
+            Pre: Second Most Imp. Factor (WT, SWEPCO) T1 (Q5b)
+ 
+                                                   Cumulative  Cumulative
+                       IM21   Frequency   Percent   Frequency    Percent 
+     --------------------------------------------------------------------
+     1 Lowest Cost                 205      16.7         205       16.7  
+     2 Maintain Environment        278      22.6         483       39.3  
+     3 Mix of Resources            228      18.5         711       57.8  
+     4 Renewable Resc.             248      20.2         959       78.0  
+     5 Quick Change                131      10.7        1090       88.6  
+     98 NA                          99       8.0        1189       96.7  
+     99 dk                          41       3.3        1230      100.0  
+
+
+            Post: Second Most Imp. Factor (WT, SWEPCO) T2 (Q5b)
+ 
+                                                   Cumulative  Cumulative
+                       IM22   Frequency   Percent   Frequency    Percent 
+     --------------------------------------------------------------------
+     1 Lowest Cost                  47      20.4          47       20.4  
+     2 Maintain Environment         51      22.2          98       42.6  
+     3 Mix of Resources             59      25.7         157       68.3  
+     4 Renewable Resc.              53      23.0         210       91.3  
+     5 Quick Change                 19       8.3         229       99.6  
+     98 NA                           1       0.4         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q5c  IM31:  Which is the third most important?
+
+            Pre: Third Most Imp. Factor (WT, SWEPCO) T1 (Q5c)
+ 
+                                                   Cumulative  Cumulative
+                       IM31   Frequency   Percent   Frequency    Percent 
+     --------------------------------------------------------------------
+     1 Lowest Cost                 219      17.8         219       17.8  
+     2 Maintain Environment        217      17.6         436       35.4  
+     3 Mix of Resources            246      20.0         682       55.4  
+     4 Renewable Resc.             173      14.1         855       69.5  
+     5 Quick Change                183      14.9        1038       84.4  
+     98 NA                         140      11.4        1178       95.8  
+     99 dk                          52       4.2        1230      100.0  
+
+
+           Post: Third Most Imp. Factor (WT, SWEPCO) T2 (Q5c)
+ 
+                                                   Cumulative  Cumulative
+                       IM32   Frequency   Percent   Frequency    Percent 
+     --------------------------------------------------------------------
+     1 Lowest Cost                  42      18.3          42       18.3  
+     2 Maintain Environment         63      27.4         105       45.7  
+     3 Mix of Resources             50      21.7         155       67.4  
+     4 Renewable Resc.              45      19.6         200       87.0  
+     5 Quick Change                 29      12.6         229       99.6  
+     98 NA                           1       0.4         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+
+Q5d  IM41:  Which is the fourth most important?
+
+              Pre: Fourth Most Imp. Factor (WT, SWEPCO) T1 (Q5d)
+ 
+                                                   Cumulative  Cumulative
+                       IM41   Frequency   Percent   Frequency    Percent 
+     --------------------------------------------------------------------
+     1 Lowest Cost                 210      17.1         210       17.1  
+     2 Maintain Environment        236      19.2         446       36.3  
+     3 Mix of Resources            232      18.9         678       55.1  
+     4 Renewable Resc.             152      12.4         830       67.5  
+     5 Quick Change                173      14.1        1003       81.5  
+     98 NA                         192      15.6        1195       97.2  
+     99 dk                          35       2.8        1230      100.0  
+
+
+             Post: Fourth Most Imp. Factor (WT, SWEPCO) T2 (Q5d)
+
+                                                   Cumulative  Cumulative
+                       IM42   Frequency   Percent   Frequency    Percent 
+     --------------------------------------------------------------------
+     1 Lowest Cost                  64      27.8          64       27.8  
+     2 Maintain Environment         47      20.4         111       48.3  
+     3 Mix of Resources             24      10.4         135       58.7  
+     4 Renewable Resc.              47      20.4         182       79.1  
+     5 Quick Change                 43      18.7         225       97.8  
+     98 NA                           1       0.4         226       98.3  
+     99 dk                           4       1.7         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+The next section concerns options which WTU might consider as it plans for the future.  We realize you may not know much about these options, so feel free to tell us if you don't have an opinion in response to these questions.
+
+Over the coming years WTU projects a need for additional resources. There are a number of options which the company might use to meet this need.  These options include:
+* Poviding programs or technologies which decrease the need for additional electric generation facilities,
+* Building electric generation facilities that use coal or natural gas,
+* Building electric generation facilities which rely on solar power or wind power, and
+* Buying wholesale electric power from another company.
+
+Q6  PREF1:  Assuming the cost is the same, can you first tell us, yes or no, whether you have any opinion about which of these options WTU should pursue?
+(If you answered "NO" or "DON'T KNOW" to Q6, skip to Q7).
+
+                 Pre: Does R Prefer An Option? T1 (Q6)
+ 
+                                          Cumulative  Cumulative
+             PREF1   Frequency   Percent   Frequency    Percent 
+             ---------------------------------------------------
+             1 No         331      26.9         331       26.9  
+             2 Yes        726      59.0        1057       85.9  
+             99 dk        173      14.1        1230      100.0  
+
+
+                  Post: Does R Prefer an Option? T2 (Q6)
+ 
+                                          Cumulative  Cumulative
+             PREF2   Frequency   Percent   Frequency    Percent 
+             ---------------------------------------------------
+             1 No           6       2.6           6        2.6  
+             2 Yes        208      90.4         214       93.0  
+             99 dk         16       7.0         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q6a  PR11:  Assuming the cost is the same: which of these four do you think your utility should pursue first?
+
+                      Pre: Rs First Preference T1 (Q6a)
+ 
+                                                Cumulative  Cumulative
+                    PR11   Frequency   Percent   Frequency    Percent 
+       ---------------------------------------------------------------
+       1 Decrease Need           59       4.8          59        4.8  
+       2 Build Fuel Fac.         88       7.2         147       12.0  
+       3 Build Renew Fac        503      40.9         650       52.8  
+       4 Import Power            59       4.8         709       57.6  
+       98 NA                    504      41.0        1213       98.6  
+       99 dk                     17       1.4        1230      100.0  
+
+
+                     Post: Rs First Preference T2 (Q6a)
+ 
+                                                Cumulative  Cumulative
+                    PR12   Frequency   Percent   Frequency    Percent 
+       ---------------------------------------------------------------
+       1 Decrease Need           69      30.0          69       30.0  
+       2 Build Fuel Fac.         37      16.1         106       46.1  
+       3 Build Renew Fac         79      34.3         185       80.4  
+       4 Import Power            40      17.4         225       97.8  
+       98 NA                      4       1.7         229       99.6  
+       99 dk                      1       0.4         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q6b  Assuming the cost is the same: which do you think they should pursue second?
+
+                  Pre: Rs Second Preference T1 (Q6b)
+ 
+                                                Cumulative  Cumulative
+                    PR21   Frequency   Percent   Frequency    Percent 
+       ---------------------------------------------------------------
+       1 Decrease Need          239      19.4         239       19.4  
+       2 Build Fuel Fac.        187      15.2         426       34.6  
+       3 Build Renew Fac        116       9.4         542       44.1  
+       4 Import Power            86       7.0         628       51.1  
+       98 NA                    521      42.4        1149       93.4  
+       99 dk                     81       6.6        1230      100.0  
+
+
+                  Post: Rs Second Preference T2 (Q6b)
+ 
+                                                Cumulative  Cumulative
+                    PR22   Frequency   Percent   Frequency    Percent 
+       ---------------------------------------------------------------
+       1 Decrease Need           53      23.0          53       23.0  
+       2 Build Fuel Fac.         48      20.9         101       43.9  
+       3 Build Renew Fac         68      29.6         169       73.5  
+       4 Import Power            55      23.9         224       97.4  
+       98 NA                      5       2.2         229       99.6  
+       99 dk                      1       0.4         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q6c  PR31:  Assuming the cost is the same: which do you think they should pursue third?
+
+                   Pre: Rs Third Preference T1 (Q6c)
+ 
+                                                Cumulative  Cumulative
+                    PR31   Frequency   Percent   Frequency    Percent 
+       ---------------------------------------------------------------
+       1 Decrease Need          181      14.7         181       14.7  
+       2 Build Fuel Fac.        158      12.8         339       27.6  
+       3 Build Renew Fac         63       5.1         402       32.7  
+       4 Import Power           157      12.8         559       45.4  
+       98 NA                    602      48.9        1161       94.4  
+       99 dk                     69       5.6        1230      100.0  
+
+
+                    Post: Rs Third Preference T2 (Q6c)
+ 
+                                                Cumulative  Cumulative
+                    PR32   Frequency   Percent   Frequency    Percent 
+       ---------------------------------------------------------------
+       1 Decrease Need           56      24.3          56       24.3  
+       2 Build Fuel Fac.         51      22.2         107       46.5  
+       3 Build Renew Fac         52      22.6         159       69.1  
+       4 Import Power            61      26.5         220       95.7  
+       98 NA                      6       2.6         226       98.3  
+       99 dk                      4       1.7         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q7  COSTS1:  Would you prefer for your utility to meet the area's electric needs with a project which has a higher construction cost but a very steady operating cost to run it, or a project which has a lower construction cost but a more preditable operating cost, or do you not have a preference for one over the other, or would you say you haven't thought much about it?
+
+            Pre: Construction Costs vs Operating Costs T1 (Q7)
+ 
+                                               Cumulative  Cumulative
+                 COSTS1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        1 Higher Costs         774      62.9         774       62.9  
+        2 Lower Costs           75       6.1         849       69.0  
+        3 No Preference         91       7.4         940       76.4  
+        99 No Thought          290      23.6        1230      100.0  
+
+
+            Post: Construction Costs vs Operating Costs T2 (Q7)
+ 
+                                               Cumulative  Cumulative
+                 COSTS2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        1 Higher Costs         195      84.8         195       84.8  
+        2 Lower Costs            8       3.5         203       88.3  
+        3 No Preference          8       3.5         211       91.7  
+        99 No Thought           19       8.3         230      100.0  
+
+                           Frequency Missing = 1000
+
+Q8  STSOL1:  As it works to meet customer needs for electricity, should WTU include short term solutions which may provide greater flexibility?
+
+              Pre: Short Term w/Greater Flex (WT,SWEPCO) T1 (Q8)
+ 
+                                           Cumulative  Cumulative
+             STSOL1   Frequency   Percent   Frequency    Percent 
+             ----------------------------------------------------
+             1 No          223      18.1         223       18.1  
+             2 Yes         755      61.4         978       79.5  
+             99 dk         252      20.5        1230      100.0  
+
+
+             Post: Short Term w/ Greater Flex (WT,SWEPCO) T2 (Q8)
+
+                                           Cumulative  Cumulative
+             STSOL2   Frequency   Percent   Frequency    Percent 
+             ----------------------------------------------------
+             1 No           33      14.3          33       14.3  
+             2 Yes         129      56.1         162       70.4  
+             99 dk          68      29.6         230      100.0  
+
+                           Frequency Missing = 1000
+
+LTSOL  Q8:  As it works to meet customer needs for electricity, should WTU include long term solutions which may provide greater flexibility?
+
+             Pre: Long Term w/Greater Pred (WT,SWEPCO) T1 (Q8)
+ 
+                                           Cumulative  Cumulative
+             LTSOL1   Frequency   Percent   Frequency    Percent 
+             ----------------------------------------------------
+             1 No           75       6.1          75        6.1  
+             2 Yes         996      81.0        1071       87.1  
+             99 dk         159      12.9        1230      100.0  
+
+
+            Post: Long Term w/ Greater Pred (WT,SWEOCO) T2 (Q8)
+ 
+                                           Cumulative  Cumulative
+             LTSOL2   Frequency   Percent   Frequency    Percent 
+             ----------------------------------------------------
+             1 No           19       8.3          19        8.3  
+             2 Yes         184      80.0         203       88.3  
+             99 dk          27      11.7         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q9a  WINTER1:  About how much do you pay for electricity in an average month in the winter?
+
+                  Pre: Rs Winter Electricity Costs T1 (Q9a)
+ 
+                                               Cumulative  Cumulative
+                WINTER1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                      0          1       0.1           1        0.1  
+                    ...
+                    500          1       0.1        1135       92.3  
+         999 missing/dk         95       7.7        1230      100.0  
+
+
+               Post: Rs Winter Electricity Costs T2 (Q9a)
+ 
+                                               Cumulative  Cumulative
+                WINTER2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                     17          1       0.4           1        0.4  
+                    ...
+                    400          1       0.4         222       96.5  
+         999 missing/dk          8       3.5         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q9b  SUMMER1:  About how much do you pay for electricity in an average month in the summer?
+
+              Pre: Rs Summer Electricity Costs T1 (Q9b)
+ 
+                                               Cumulative  Cumulative
+                SUMMER1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                      0          2       0.2           2        0.2  
+                    ...
+                    500          3       0.2        1164       94.6  
+         999 missing/dk         66       5.4        1230      100.0  
+
+
+               Post: Rs Summer Electricity Costs T2 (Q9b)
+ 
+                                               Cumulative  Cumulative
+                SUMMER2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                     20          1       0.4           1        0.4  
+                    ...
+                    795          1       0.4         222       96.5  
+         999 missing/dk          8       3.5         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q10a-Q10f:  Now we would like to ask you about some specific issues WTU might consider in planning to meet the area's need for electricity.  For each one, please tell us how important you think it is for WTU to include it in its plans, using a 0 to 10 scale where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  
+
+Q10a  WIND1:  Now we would like to ask you about some specific issues WTU might consider in planning to meet the area's need for electricity.  For each one, please tell us how important you think it is for WTU to include it in its plans, using a 0 to 10 scale where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  Generation by technologies such as wind and solar power.
+
+                   Pre: Wind and Solar Power T1 (Q10a)
+ 
+                                               Cumulative  Cumulative
+                  WIND1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         11       0.9          11        0.9  
+        1                        4       0.3          15        1.2  
+        2                        4       0.3          19        1.5  
+        3                       13       1.1          32        2.6  
+        4                        8       0.7          40        3.3  
+        5 Average               80       6.5         120        9.8  
+        6                       38       3.1         158       12.8  
+        7                       68       5.5         226       18.4  
+        8                      141      11.5         367       29.8  
+        9                      105       8.5         472       38.4  
+        10 Extremely           712      57.9        1184       96.3  
+        99 dk                   46       3.7        1230      100.0  
+
+
+                  Post: Wind and Solar Power T2 (Q10a)
+ 
+                                               Cumulative  Cumulative
+                  WIND2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        2                        2       0.9           2        0.9  
+        3                        2       0.9           4        1.7  
+        4                        4       1.7           8        3.5  
+        5 Average               13       5.7          21        9.1  
+        6                        7       3.0          28       12.2  
+        7                       15       6.5          43       18.7  
+        8                       24      10.4          67       29.1  
+        9                       24      10.4          91       39.6  
+        10 Extremely           137      59.6         228       99.1  
+        99 dk                    2       0.9         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q10b  ADDFAC1:  Now we would like to ask you about some specific issues WTU might consider in planning to meet the area's need for electricity.  For each one, please tell us how important you think it is for WTU to include it in its plans, using a 0 to 10 scale where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  Services and technologies which reduce the need for additional electric generation facilities.
+
+          Pre: Reduce Need for Add Electric Facilities T1 (Q10b)
+ 
+                                               Cumulative  Cumulative
+                ADDFAC1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         20       1.6          20        1.6  
+        1                        2       0.2          22        1.8  
+        2                       10       0.8          32        2.6  
+        3                       11       0.9          43        3.5  
+        4                       24       2.0          67        5.4  
+        5 Average              147      12.0         214       17.4  
+        6                       40       3.3         254       20.7  
+        7                      107       8.7         361       29.3  
+        8                      226      18.4         587       47.7  
+        9                       87       7.1         674       54.8  
+        10 Extremely           432      35.1        1106       89.9  
+        99 dk                  124      10.1        1230      100.0  
+
+
+         Post: Reduce Need for Add Electric Facilities T2 (Q10b)
+ 
+                                               Cumulative  Cumulative
+                ADDFAC2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          2       0.9           2        0.9  
+        1                        1       0.4           3        1.3  
+        2                        3       1.3           6        2.6  
+        3                        5       2.2          11        4.8  
+        4                        5       2.2          16        7.0  
+        5 Average               23      10.0          39       17.0  
+        6                       11       4.8          50       21.7  
+        7                       27      11.7          77       33.5  
+        8                       36      15.7         113       49.1  
+        9                       32      13.9         145       63.0  
+        10 Extremely            82      35.7         227       98.7  
+        99 dk                    3       1.3         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q10c  FUELS1:  Now we would like to ask you about some specific issues WTU might consider in planning to meet the area's need for electricity.  For each one, please tell us how important you think it is for WTU to include it in its plans, using a 0 to 10 scale where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  Generation by plants using fuels like natural gas or coal.
+
+               Pre: Fuels Like Natl Gas, Coal T1 (Q10c)
+ 
+                                               Cumulative  Cumulative
+                 FUELS1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         44       3.6          44        3.6  
+        1                       24       2.0          68        5.5  
+        2                       28       2.3          96        7.8  
+        3                       43       3.5         139       11.3  
+        4                       26       2.1         165       13.4  
+        5 Average              262      21.3         427       34.7  
+        6                       74       6.0         501       40.7  
+        7                      130      10.6         631       51.3  
+        8                      199      16.2         830       67.5  
+        9                       59       4.8         889       72.3  
+        10 Extremely           256      20.8        1145       93.1  
+        99 dk                   85       6.9        1230      100.0  
+
+
+               Post: Fuels Like Natl Gas, Coal T2 (Q10c)
+ 
+                                               Cumulative  Cumulative
+                 FUELS2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          6       2.6           6        2.6  
+        1                        6       2.6          12        5.2  
+        2                        6       2.6          18        7.8  
+        3                       11       4.8          29       12.6  
+        4                       10       4.3          39       17.0  
+        5 Average               49      21.3          88       38.3  
+        6                       19       8.3         107       46.5  
+        7                       31      13.5         138       60.0  
+        8                       36      15.7         174       75.7  
+        9                       16       7.0         190       82.6  
+        10 Extremely            38      16.5         228       99.1  
+        99 dk                    2       0.9         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q10d  BUYPWR1:  Now we would like to ask you about some specific issues WTU might consider in planning to meet the area's need for electricity.  For each one, please tell us how important you think it is for WTU to include it in its plans, using a 0 to 10 scale where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  Purchasing wholesale power from other companies.
+
+          Pre: Build Facilities/Buy Pwr from Elsewhere T1 (Q10d)
+ 
+                                               Cumulative  Cumulative
+                BUYPWR1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important        125      10.2         125       10.2  
+        1                       52       4.2         177       14.4  
+        2                       43       3.5         220       17.9  
+        3                       71       5.8         291       23.7  
+        4                       66       5.4         357       29.0  
+        5 Average              350      28.5         707       57.5  
+        6                       58       4.7         765       62.2  
+        7                       94       7.6         859       69.8  
+        8                      102       8.3         961       78.1  
+        9                       27       2.2         988       80.3  
+        10 Extremely           120       9.8        1108       90.1  
+        99 dk                  122       9.9        1230      100.0  
+
+
+        Post: Build Facilities/Buy Pwr from Elsewhere T2 (Q10d)
+ 
+                                               Cumulative  Cumulative
+                BUYPWR2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          5       2.2           5        2.2  
+        1                        1       0.4           6        2.6  
+        2                        6       2.6          12        5.2  
+        3                        7       3.0          19        8.3  
+        4                       12       5.2          31       13.5  
+        5 Average               42      18.3          73       31.7  
+        6                       23      10.0          96       41.7  
+        7                       24      10.4         120       52.2  
+        8                       35      15.2         155       67.4  
+        9                       30      13.0         185       80.4  
+        10 Extremely            41      17.8         226       98.3  
+        99 dk                    4       1.7         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q10e  ENVPCT1:  Now we would like to ask you about some specific issues WTU might consider in planning to meet the area's need for electricity.  For each one, please tell us how important you think it is for WTU to include it in its plans, using a 0 to 10 scale where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  Options that add an extra measure of environmental protection.
+
+           Pre: Additional Environmental Protection T1 (Q10e)
+ 
+                                               Cumulative  Cumulative
+                ENVPCT1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         17       1.4          17        1.4  
+        1                       12       1.0          29        2.4  
+        2                       11       0.9          40        3.3  
+        3                       27       2.2          67        5.4  
+        4                       16       1.3          83        6.7  
+        5 Average              148      12.0         231       18.8  
+        6                       52       4.2         283       23.0  
+        7                      111       9.0         394       32.0  
+        8                      192      15.6         586       47.6  
+        9                       96       7.8         682       55.4  
+        10 Extremely           499      40.6        1181       96.0  
+        99 dk                   49       4.0        1230      100.0  
+
+
+            Post: Additional Environmental Protection T2 (Q10e)
+ 
+                                               Cumulative  Cumulative
+                ENVPCT2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          1       0.4           1        0.4  
+        1                        4       1.7           5        2.2  
+        2                        2       0.9           7        3.0  
+        3                        3       1.3          10        4.3  
+        4                        5       2.2          15        6.5  
+        5 Average               17       7.4          32       13.9  
+        6                        7       3.0          39       17.0  
+        7                       18       7.8          57       24.8  
+        8                       41      17.8          98       42.6  
+        9                       34      14.8         132       57.4  
+        10 Extremely            95      41.3         227       98.7  
+        99 dk                    3       1.3         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q10f  BUILD1:  Now we would like to ask you about some specific issues WTU might consider in planning to meet the area's need for electricity.  For each one, please tell us how important you think it is for WTU to include it in its plans, using a 0 to 10 scale where 0 stands for not at all important, 10 stands for extremely important, and 5 stands for average importance.  Options that result in a power plant being built in West Texas.
+
+         Pre: Building a Power Plant in [WT,SWEPCO] T1 (Q10f)
+ 
+                                               Cumulative  Cumulative
+                 BUILD1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important         28       2.3          28        2.3  
+        1                        8       0.7          36        2.9  
+        2                        8       0.7          44        3.6  
+        3                       11       0.9          55        4.5  
+        4                       16       1.3          71        5.8  
+        5 Average              161      13.1         232       18.9  
+        6                       56       4.6         288       23.4  
+        7                      112       9.1         400       32.5  
+        8                      160      13.0         560       45.5  
+        9                       87       7.1         647       52.6  
+        10 Extremely           487      39.6        1134       92.2  
+        99 dk                   96       7.8        1230      100.0  
+
+
+        Post: Building a Power Plant in [WT,SWEPCO] T2 (Q10f)
+ 
+                                               Cumulative  Cumulative
+                 BUILD2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        0 Not Important          4       1.7           4        1.7  
+        1                        5       2.2           9        3.9  
+        2                        3       1.3          12        5.2  
+        3                        6       2.6          18        7.8  
+        4                        5       2.2          23       10.0  
+        5 Average               28      12.2          51       22.2  
+        6                       15       6.5          66       28.7  
+        7                       19       8.3          85       37.0  
+        8                       35      15.2         120       52.2  
+        9                       27      11.7         147       63.9  
+        10 Extremely            82      35.7         229       99.6  
+        99 dk                    1       0.4         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q11a-Q11f:  One effect of WTU incorporating some of the options mentioned above could be a electric bill for customers that is slightly higher in the long run.  Now we want to ask you how much more, if anything, you would be willing to pay on your monthly electric bill for your utility to meet each goal.  If you are unwilling to pay any more just write 0.  Please answer in terms of dollars per monthly bill.  
+
+Q11a  PAYWND1:  One effect of WTU incorporating some of the options mentioned above could be a electric bill for customers that is slightly higher in the long run.  Now we want to ask you how much more, if anything, you would be willing to pay on your monthly electric bill for your utility to meet each goal.  If you are unwilling to pay any more just write 0.  Please answer in terms of dollars per monthly bill.  Generation by technologies such as wind and solar power.
+
+                Pre: How Much Pay: Wind and Solar T1 (Q11a)
+ 
+                                               Cumulative  Cumulative
+                PAYWND1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                      0        545      44.3         545       44.3  
+                    ...
+                    500          1       0.1        1129       91.8  
+         999 missing/dk        101       8.2        1230      100.0  
+
+
+               Post: How Much Pay: Wind and Solar T2 (Q11a)
+
+                                               Cumulative  Cumulative
+                PAYWND2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                      0         26      11.3          26       11.3  
+                    ... 
+                     50          1       0.4         226       98.3  
+         999 missing/dk          4       1.7         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q11b  PAYFAC1:  One effect of WTU incorporating some of the options mentioned above could be a electric bill for customers that is slightly higher in the long run.  Now we want to ask you how much more, if anything, you would be willing to pay on your monthly electric bill for your utility to meet each goal.  If you are unwilling to pay any more just write 0.  Please answer in terms of dollars per monthly bill.  Services and technologies which reduce the need for additional electric generation facilities.
+
+           Pre: How Much Pay: Reduce Need Add Facililites T1 (Q11b)
+ 
+                                               Cumulative  Cumulative
+                PAYFAC1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                      0        627      51.0         627       51.0  
+                    ... 
+                    100          1       0.1        1101       89.5  
+         999 missing/dk        129      10.5        1230      100.0  
+
+
+           Post: How Much Pay: Reduce Need Add Facilities T2 (Q11b)
+ 
+                                               Cumulative  Cumulative
+                PAYFAC2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                      0         67      29.1          67       29.1  
+                    ... 
+                     40          1       0.4         227       98.7  
+         999 missing/dk          3       1.3         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q11c  PAYGAS1:  One effect of WTU incorporating some of the options mentioned above could be a electric bill for customers that is slightly higher in the long run.  Now we want to ask you how much more, if anything, you would be willing to pay on your monthly electric bill for your utility to meet each goal.  If you are unwilling to pay any more just write 0.  Please answer in terms of dollars per monthly bill.  Generation by plants using fuels like natural gas or coal.
+
+            Pre: How Much Pay: Fuels Like Nat Gas, Coal T1 (Q11c)
+ 
+                                               Cumulative  Cumulative
+                PAYGAS1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                      0        721      58.6         721       58.6  
+                    ... 
+                     50          6       0.5        1127       91.6  
+         999 missing/dk        103       8.4        1230      100.0  
+
+
+            Post: How Much Pay: Natl Gas, Coal T2 (Q11c)
+ 
+                                               Cumulative  Cumulative
+                PAYGAS2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                      0        121      52.6         121       52.6  
+                    ... 
+                     40          2       0.9         229       99.6  
+         999 missing/dk          1       0.4         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q11d  PAYBUY1:  One effect of WTU incorporating some of the options mentioned above could be a electric bill for customers that is slightly higher in the long run.  Now we want to ask you how much more, if anything, you would be willing to pay on your monthly electric bill for your utility to meet each goal.  If you are unwilling to pay any more just write 0.  Please answer in terms of dollars per monthly bill.  Purchasing wholesale power from other companies.
+
+          Pre: How Much Pay: Buy Power from Elsewhere T1 (Q11d)
+ 
+                                               Cumulative  Cumulative
+                PAYBUY1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                      0        846      68.8         846       68.8  
+                    ...
+                    500          1       0.1        1127       91.6  
+         999 missing/dk        103       8.4        1230      100.0  
+
+
+           Post: How Much Pay: Buy Power from Elsewhere T2 (Q11d)
+ 
+                                               Cumulative  Cumulative
+                PAYBUY2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                      0        133      57.8         133       57.8  
+                    ... 
+                     25          1       0.4         227       98.7  
+         999 missing/dk          3       1.3         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q11e  PAYENV1:  One effect of WTU incorporating some of the options mentioned above could be a electric bill for customers that is slightly higher in the long run.  Now we want to ask you how much more, if anything, you would be willing to pay on your monthly electric bill for your utility to meet each goal.  If you are unwilling to pay any more just write 0.  Please answer in terms of dollars per monthly bill.  Options that add an extra measure of environmental protection.
+
+           Pre: How Much Pay: Addl Environment Protection T1 (Q11e)
+ 
+                                               Cumulative  Cumulative
+                PAYENV1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                      0        487      39.6         487       39.6  
+                    ...
+                    300          1       0.1        1138       92.5  
+         999 missing/dk         92       7.5        1230      100.0  
+
+
+           Post: How Much Pay: Addl Environment Protection T2 (Q11e)
+ 
+                                               Cumulative  Cumulative
+                PAYENV2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                      0         53      23.0          53       23.0  
+                    ... 
+                     40          2       0.9         227       98.7  
+         999 missing/dk          3       1.3         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q11f  PAYBLD1:  One effect of WTU incorporating some of the options mentioned above could be a electric bill for customers that is slightly higher in the long run.  Now we want to ask you how much more, if anything, you would be willing to pay on your monthly electric bill for your utility to meet each goal.  If you are unwilling to pay any more just write 0.  Please answer in terms of dollars per monthly bill.  Options that result in a power plant being built in West Texas.
+
+           Pre: How Much Pay: Build Plant in [WT,SWEPCO] T1 (Q11f)
+ 
+                                               Cumulative  Cumulative
+                PAYBLD1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                      0        561      45.6         561       45.6  
+                    ... 
+                    500          1       0.1        1106       89.9  
+         999 missing/dk        124      10.1        1230      100.0  
+
+
+            Post: How Much Pay: Build Plant in [WT,SWEPCO] T2 (Q11f)
+ 
+                                               Cumulative  Cumulative
+                PAYBLD2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                      0         75      32.6          75       32.6  
+                    ... 
+                     40          2       0.9         225       97.8  
+         999 missing/dk          5       2.2         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q12  PAYTOT1:  Now thinking about all the things listed in Q11a-Q11f, what is the greatest total increase you would be willing to pay on your average monthly electric bill for WTU to meet these objectives?  Please answer in dollars per monthly bill.
+
+                     Pre: How Much Pay: Total T1 (Q12)
+ 
+                                               Cumulative  Cumulative
+                PAYTOT1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                      0        411      33.4         411       33.4  
+                    ...
+                    500          1       0.1        1131       92.0  
+         999 missing/dk         99       8.0        1230      100.0  
+
+
+                    Post: How Much Pay: Total T2 (Q12)
+ 
+                                               Cumulative  Cumulative
+                PAYTOT2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+                      0         16       7.0          16        7.0  
+                    ... 
+                     60          1       0.4         228       99.1  
+         999 missing/dk          2       0.9         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q13  CNTRCT:  Power can be purchased from other companies either on short term contracts (1 to 3 years) or on long term contracts (10 to 20 years).  If WTU were to purchase power from other companies would you prefer that they buy it on short term contracts, long term contracts, a mix of both, or would you say you haven't thought much about it?
+  
+           Pre: Contract Length if Import Pwr (WT,SWEPCO) T1 (Q13)
+ 
+                                              Cumulative  Cumulative
+               CNTRCT1   Frequency   Percent   Frequency    Percent 
+          ----------------------------------------------------------
+          1 Short Term        306      24.9         306       24.9  
+          2 Long Term         162      13.2         468       38.0  
+          3 Mix               224      18.2         692       56.3  
+          99 dk               538      43.7        1230      100.0  
+
+
+          Post: Contract Term if Import Pwr (WT,SWEPCO) T2 (Q13)
+ 
+                                              Cumulative  Cumulative
+               CNTRCT2   Frequency   Percent   Frequency    Percent 
+          ----------------------------------------------------------
+          1 Short Term         73      31.7          73       31.7  
+          2 Long Term          27      11.7         100       43.5  
+          3 Mix               119      51.7         219       95.2  
+          99 dk                11       4.8         230      100.0  
+
+                           Frequency Missing = 1000
+
+Q14-Q18:  The following questions are about the production and use of electricity.  We realize that not everybody has thought much about these things, so please just tell us if you don't know.  
+
+Q14  SOURCE1:  What energy source do you think produces the greatest amount of WTU's electricity; coal, wind, natural gas, fuel oil, nuclear, or solar?
+
+             Pre: Which Source Produces WTU Electricity T1 (Q14)
+ 
+                                              Cumulative  Cumulative
+               SOURCE1   Frequency   Percent   Frequency    Percent 
+         -----------------------------------------------------------
+         1 Coal               220      17.9         220       17.9  
+         2 Wind                14       1.1         234       19.0  
+         3 Natural Gas        319      25.9         553       45.0  
+         4 Fuel Oil           154      12.5         707       57.5  
+         5 Nuclear             27       2.2         734       59.7  
+         6 Solar               46       3.7         780       63.4  
+         99 dk                450      36.6        1230      100.0  
+
+
+KNOWA1:  Checkpoint:   Did R Answer SOURCE1 Correctly?
+ 
+                                                 Cumulative  Cumulative
+                   KNOWA1   Frequency   Percent   Frequency    Percent 
+       ----------------------------------------------------------------
+       0 No, Incorrect/dk        911      74.1         911       74.1  
+       1 Yes, Correct            319      25.9        1230      100.0  
+
+
+           Post: Which Source Produces WTU Electricity T2 (Q14)
+ 
+                                              Cumulative  Cumulative
+               SOURCE2   Frequency   Percent   Frequency    Percent 
+         -----------------------------------------------------------
+         1 Coal                31      13.5          31       13.5  
+         3 Natural Gas        169      73.5         200       87.0  
+         4 Fuel Oil             6       2.6         206       89.6  
+         99 dk                 24      10.4         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+KNOWA2:  Checkpoint:  Did R Answer SOURCE2 Correctly?
+ 
+                                                 Cumulative  Cumulative
+                   KNOWA2   Frequency   Percent   Frequency    Percent 
+       ----------------------------------------------------------------
+       0 No, Incorrect/dk         61      26.5          61       26.5  
+       1 Yes, Correct            169      73.5         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q15  USE1:  Overall, what group of WTU customers consume the most kilowatt hours of electricity; residential, commercial, or industrial?
+
+           Pre: Which Group Uses Most Electricity T1 (Q15)
+ 
+                                              Cumulative  Cumulative
+                  USE1   Frequency   Percent   Frequency    Percent 
+         -----------------------------------------------------------
+         1 Residential        306      24.9         306       24.9  
+         2 Commerical         220      17.9         526       42.8  
+         3 Industrial         559      45.4        1085       88.2  
+         99 dk                145      11.8        1230      100.0  
+
+
+KNOWB1:  Checkpoint:  Did R Answer USE1 Correctly?
+ 
+                                                 Cumulative  Cumulative
+                   KNOWB1   Frequency   Percent   Frequency    Percent 
+       ----------------------------------------------------------------
+       0 No, Incorrect/dk        924      75.1         924       75.1  
+       1 Yes, Correct            306      24.9        1230      100.0  
+
+
+           Post: Which Group Uses Most Electricity T2 (Q15)
+ 
+                                              Cumulative  Cumulative
+                  USE2   Frequency   Percent   Frequency    Percent 
+         -----------------------------------------------------------
+         1 Residential         76      33.0          76       33.0  
+         2 Commerical          13       5.7          89       38.7  
+         3 Industrial         123      53.5         212       92.2  
+         4 Wholesale            2       0.9         214       93.0  
+         99 dk                 16       7.0         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+KNOWB2:  Checkpoint:  Did R Answer USE2 correctly?
+ 
+                                                 Cumulative  Cumulative
+                   KNOWB2   Frequency   Percent   Frequency    Percent 
+       ----------------------------------------------------------------
+       0 No, Incorrect/dk        154      67.0         154       67.0  
+       1 Yes, Correct             76      33.0         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q16  RT1:  Which customer group pays the highest electric rates; residential, commercial, or industrial? 
+ 
+              Pre: Which Group Pays Highest Rate T1 (Q16)
+ 
+                                              Cumulative  Cumulative
+                   RT1   Frequency   Percent   Frequency    Percent 
+         -----------------------------------------------------------
+         1 Residential        501      40.7         501       40.7  
+         2 Commerical         245      19.9         746       60.7  
+         3 Industrial         244      19.8         990       80.5  
+         99 dk                240      19.5        1230      100.0  
+
+
+KNOWC1:  Checkpoint:  Did R Answer RT1 Correctly?
+ 
+                                                 Cumulative  Cumulative
+                   KNOWC1   Frequency   Percent   Frequency    Percent 
+       ----------------------------------------------------------------
+       0 No, Incorrect/dk        729      59.3         729       59.3  
+       1 Yes, Correct            501      40.7        1230      100.0  
+
+
+              Post: Which Group Pays Highest Rate T2 (Q16)
+ 
+                                              Cumulative  Cumulative
+                   RT2   Frequency   Percent   Frequency    Percent 
+         -----------------------------------------------------------
+         1 Residential        175      76.1         175       76.1  
+         2 Commerical          20       8.7         195       84.8  
+         3 Industrial          19       8.3         214       93.0  
+         99 dk                 16       7.0         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+KNOWC2:  Checkpoint:  Did R Answer RT2 Correctly?
+ 
+                                                 Cumulative  Cumulative
+                   KNOWC2   Frequency   Percent   Frequency    Percent 
+       ----------------------------------------------------------------
+       0 No, Incorrect/dk         55      23.9          55       23.9  
+       1 Yes, Correct            175      76.1         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q17  SMOG1:  Which of the following resources used to produce electricity produces the most air emissions; nuclear, coal, or natural gas?
+
+             Pre: Which Causes The Most Air Emisssion T1 (Q17)
+ 
+                                              Cumulative  Cumulative
+                 SMOG1   Frequency   Percent   Frequency    Percent 
+         -----------------------------------------------------------
+         1 Nuclear            103       8.4         103        8.4  
+         2 Coal               682      55.4         785       63.8  
+         3 Natural Gas        144      11.7         929       75.5  
+         99 dk                301      24.5        1230      100.0  
+
+
+KNOWD1:  Checkpoint:  Did R Answer SMOG1 Correctly?
+ 
+                                                 Cumulative  Cumulative
+                   KNOWD1   Frequency   Percent   Frequency    Percent 
+       ----------------------------------------------------------------
+       0 No, Incorrect/dk        548      44.6         548       44.6  
+       1 Yes, Correct            682      55.4        1230      100.0  
+
+
+            Post: Which Causes Most Air Emisssions T2 (Q17)
+ 
+                                              Cumulative  Cumulative
+                 SMOG2   Frequency   Percent   Frequency    Percent 
+         -----------------------------------------------------------
+         1 Nuclear             15       6.5          15        6.5  
+         2 Coal               174      75.7         189       82.2  
+         3 Natural Gas         12       5.2         201       87.4  
+         99 dk                 29      12.6         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+KNOWD1:  Checkpoint:  Did R Answer SMOG2 Correctly?
+ 
+                                                 Cumulative  Cumulative
+                   KNOWD2   Frequency   Percent   Frequency    Percent 
+       ----------------------------------------------------------------
+       0 No, Incorrect/dk         56      24.3          56       24.3  
+       1 Yes, Correct            174      75.7         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q18  SETRT1:  Which agency sets electric rates in your state?
+
+        Pre: Agency That Sets Elec Rate (open ended) T1 (Q18)
+ 
+                                                   Cumulative  Cumulative
+                     SETRT1   Frequency   Percent   Frequency    Percent 
+    ---------------------------------------------------------------------
+    1 PUC                          298      24.2         298       24.2  
+    2 Railroad Commission           75       6.1         373       30.3  
+    3 TX Utility Commission          5       0.4         378       30.7  
+    4 Government                     2       0.2         380       30.9  
+    5 CPL,WT,SWEPCO                  4       0.3         384       31.2  
+    6 Other                         17       1.4         401       32.6  
+    99 dk                          829      67.4        1230      100.0  
+
+
+KNOWE1:  Checkpoint:  Did R Answer SETRT1 Correctly?
+ 
+                                                 Cumulative  Cumulative
+                   KNOWE1   Frequency   Percent   Frequency    Percent 
+       ----------------------------------------------------------------
+       0 No, Incorrect/dk        932      75.8         932       75.8  
+       1 Yes, Correct            298      24.2        1230      100.0  
+
+
+        Post: Agency Sets Elec Rates (Open Ended) T2 (Q18)
+ 
+                                                   Cumulative  Cumulative
+                     SETRT2   Frequency   Percent   Frequency    Percent 
+    ---------------------------------------------------------------------
+    1 PUC                          196      85.2         196       85.2  
+    4 Government                     2       0.9         198       86.1  
+    5 CPL,WT,SWEPCO                 11       4.8         209       90.9  
+    6 Other                          3       1.3         212       92.2  
+    99 dk                           18       7.8         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+KNOWE2:  Checkpoint:  Did R Answer SETRT2 Correctly?
+ 
+                                                 Cumulative  Cumulative
+                   KNOWE2   Frequency   Percent   Frequency    Percent 
+       ----------------------------------------------------------------
+       0 No, Incorrect/dk         34      14.8          34       14.8  
+       1 Yes, Correct            196      85.2         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q19a-Q19i:  Now, for each of the following items please tell us if you agree strongly, agree mildly, neither agree nor disagree, disagree mildly, disagree strongly, or if you just haven't thought much about it.  
+
+Q19a  COMPET1:  Now, for each of the following items please tell us if you agree strongly, agree mildly, neither agree nor disagree, disagree mildly, disagree strongly, or if you just haven't thought much about it.  The benefits of competition in the utility industry are more important than protecting customers and utilities through regulation.
+
+        Pre: Benefits of Competition over Regulation T1 (Q19a)
+ 
+                                                 Cumulative  Cumulative
+                  COMPET1   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly        299      24.3         299       24.3  
+      2 Disagree Mildly          227      18.5         526       42.8  
+      3 Neither                   46       3.7         572       46.5  
+      4 Agree Mildly             182      14.8         754       61.3  
+      5 Agree Strongly           168      13.7         922       75.0  
+      99 dk                      308      25.0        1230      100.0  
+
+
+        Post: Benefit Competition over Regulation T2 (Q19a)
+ 
+                                                 Cumulative  Cumulative
+                  COMPET2   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly         73      31.7          73       31.7  
+      2 Disagree Mildly           41      17.8         114       49.6  
+      3 Neither                   36      15.7         150       65.2  
+      4 Agree Mildly              49      21.3         199       86.5  
+      5 Agree Strongly            17       7.4         216       93.9  
+      99 dk                       14       6.1         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q19b  POOR1:  Now, for each of the following items please tell us if you agree strongly, agree mildly, neither agree nor disagree, disagree mildly, disagree strongly, or if you just haven't thought much about it.  Low income customers pay more than their fair share of the cost of electricity.
+
+             Pre: Low Income Pay More than Fair Share T1 (Q19b)
+ 
+                                                 Cumulative  Cumulative
+                    POOR1   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly        349      28.4         349       28.4  
+      2 Disagree Mildly          335      27.2         684       55.6  
+      3 Neither                   44       3.6         728       59.2  
+      4 Agree Mildly             146      11.9         874       71.1  
+      5 Agree Strongly           197      16.0        1071       87.1  
+      99 dk                      159      12.9        1230      100.0  
+
+
+          Post: Low Income Pay More than Fair Share T2 (Q19b)
+ 
+                                                 Cumulative  Cumulative
+                    POOR2   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly         51      22.2          51       22.2  
+      2 Disagree Mildly           43      18.7          94       40.9  
+      3 Neither                   49      21.3         143       62.2  
+      4 Agree Mildly              43      18.7         186       80.9  
+      5 Agree Strongly            26      11.3         212       92.2  
+      99 dk                       18       7.8         230      100.0  
+
+                           Frequency Missing = 1000
+
+Q19c  IMPACT1:  Now, for each of the following items please tell us if you agree strongly, agree mildly, neither agree nor disagree, disagree mildly, disagree strongly, or if you just haven't thought much about it.  Using fuels like coal and natural gas has a negative impact on the environment.
+
+           Pre: Fuels Have Neg Impact on Environment T1 (Q19c)
+ 
+                                                 Cumulative  Cumulative
+                  IMPACT1   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly        172      14.0         172       14.0  
+      2 Disagree Mildly          233      18.9         405       32.9  
+      3 Neither                   43       3.5         448       36.4  
+      4 Agree Mildly             287      23.3         735       59.8  
+      5 Agree Strongly           293      23.8        1028       83.6  
+      99 dk                      202      16.4        1230      100.0  
+
+
+          Post: Fuels Have Neg Impact on Environment T2 (Q19c)
+ 
+                                                 Cumulative  Cumulative
+                  IMPACT2   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly         22       9.6          22        9.6  
+      2 Disagree Mildly           44      19.1          66       28.7  
+      3 Neither                   31      13.5          97       42.2  
+      4 Agree Mildly              61      26.5         158       68.7  
+      5 Agree Strongly            67      29.1         225       97.8  
+      99 dk                        5       2.2         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q19d  OPTION1:  Now, for each of the following items please tell us if you agree strongly, agree mildly, neither agree nor disagree, disagree mildly, disagree strongly, or if you just haven't thought much about it.  WTU is doing enough to develop renewable energy options like wind and solar power and to develop ways to use energy more effectively.
+
+           Pre: WTU Doing Enough: Renewable, Efficiency T1 (Q19d)
+ 
+                                                 Cumulative  Cumulative
+                  OPTION1   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly         88       7.2          88        7.2  
+      2 Disagree Mildly           67       5.4         155       12.6  
+      3 Neither                   57       4.6         212       17.2  
+      4 Agree Mildly             255      20.7         467       38.0  
+      5 Agree Strongly           282      22.9         749       60.9  
+      99 dk                      481      39.1        1230      100.0  
+
+
+         Post: CPL Doing Enough: Renewable ,Efficiency T2 (Q19d)
+ 
+                                                 Cumulative  Cumulative
+                  OPTION2   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly         40      17.4          40       17.4  
+      2 Disagree Mildly           67      29.1         107       46.5  
+      3 Neither                   25      10.9         132       57.4  
+      4 Agree Mildly              59      25.7         191       83.0  
+      5 Agree Strongly            27      11.7         218       94.8  
+      99 dk                       12       5.2         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q19e  CCOST1:  Now, for each of the following items please tell us if you agree strongly, agree mildly, neither agree nor disagree, disagree mildly, disagree strongly, or if you just haven't thought much about it.  Customers' cost for electricity will decrease with competition in the electric industry.
+
+         Pre: Customer Costs Decrease w/Competition T1 (19e)
+ 
+                                                 Cumulative  Cumulative
+                   CCOST1   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly        133      10.8         133       10.8  
+      2 Disagree Mildly          165      13.4         298       24.2  
+      3 Neither                   43       3.5         341       27.7  
+      4 Agree Mildly             306      24.9         647       52.6  
+      5 Agree Strongly           349      28.4         996       81.0  
+      99 dk                      234      19.0        1230      100.0  
+
+
+           Post: Customer Costs Decrease w/Competition T2 (Q19e)
+ 
+                                                 Cumulative  Cumulative
+                   CCOST2   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly         12       5.2          12        5.2  
+      2 Disagree Mildly           38      16.5          50       21.7  
+      3 Neither                   33      14.3          83       36.1  
+      4 Agree Mildly              81      35.2         164       71.3  
+      5 Agree Strongly            46      20.0         210       91.3  
+      99 dk                       20       8.7         230      100.0  
+
+                           Frequency Missing = 1000
+
+Q19f  SERV1:  Now, for each of the following items please tell us if you agree strongly, agree mildly, neither agree nor disagree, disagree mildly, disagree strongly, or if you just haven't thought much about it.  Service will improve as a result of competition in the electric industry.
+
+             Pre: Service Improves w/Competition T1 (Q19f)
+ 
+                                                 Cumulative  Cumulative
+                    SERV1   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly         98       8.0          98        8.0  
+      2 Disagree Mildly          115       9.3         213       17.3  
+      3 Neither                   25       2.0         238       19.3  
+      4 Agree Mildly             369      30.0         607       49.3  
+      5 Agree Strongly           450      36.6        1057       85.9  
+      99 dk                      173      14.1        1230      100.0  
+
+
+            Post: Service Improves w/Competition T2 (Q19f)
+ 
+                                                 Cumulative  Cumulative
+                    SERV2   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly         28      12.2          28       12.2  
+      2 Disagree Mildly           34      14.8          62       27.0  
+      3 Neither                   45      19.6         107       46.5  
+      4 Agree Mildly              62      27.0         169       73.5  
+      5 Agree Strongly            45      19.6         214       93.0  
+      99 dk                       16       7.0         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q19g  ECODVT1:  Now, for each of the following items please tell us if you agree strongly, agree mildly, neither agree nor disagree, disagree mildly, disagree strongly, or if you just haven't thought much about it.  Higher electric bills hinder economic development.
+
+        Pre: High Electric Bills Hinder Econ. Devt T1 (Q19g)
+ 
+                                                 Cumulative  Cumulative
+                  ECODVT1   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly        117       9.5         117        9.5  
+      2 Disagree Mildly          218      17.7         335       27.2  
+      3 Neither                   41       3.3         376       30.6  
+      4 Agree Mildly             271      22.0         647       52.6  
+      5 Agree Strongly           394      32.0        1041       84.6  
+      99 dk                      189      15.4        1230      100.0  
+
+
+        Post: High Electric Bills Hinder Econ Devt T2 (Q19g)
+ 
+                                                 Cumulative  Cumulative
+                  ECODVT2   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly          7       3.0           7        3.0  
+      2 Disagree Mildly           33      14.3          40       17.4  
+      3 Neither                   35      15.2          75       32.6  
+      4 Agree Mildly              83      36.1         158       68.7  
+      5 Agree Strongly            54      23.5         212       92.2  
+      99 dk                       18       7.8         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q19h  DEMAND1:  Now, for each of the following items please tell us if you agree strongly, agree mildly, neither agree nor disagree, disagree mildly, disagree strongly, or if you just haven't thought much about it.  Higher electric bills lead people to use less electricity.
+
+          Pre: High Electric Bills Discourage Use T1 (Q19h)
+ 
+                                                 Cumulative  Cumulative
+                  DEMAND1   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly        145      11.8         145       11.8  
+      2 Disagree Mildly          198      16.1         343       27.9  
+      3 Neither                   28       2.3         371       30.2  
+      4 Agree Mildly             286      23.3         657       53.4  
+      5 Agree Strongly           526      42.8        1183       96.2  
+      99 dk                       47       3.8        1230      100.0  
+
+
+           Post: High Electric Bills Discourage Use T2 (Q19h)
+ 
+                                                 Cumulative  Cumulative
+                  DEMAND2   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly          9       3.9           9        3.9  
+      2 Disagree Mildly           28      12.2          37       16.1  
+      3 Neither                   26      11.3          63       27.4  
+      4 Agree Mildly             103      44.8         166       72.2  
+      5 Agree Strongly            57      24.8         223       97.0  
+      99 dk                        7       3.0         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q19i  USAGE1:  Now, for each of the following items please tell us if you agree strongly, agree mildly, neither agree nor disagree, disagree mildly, disagree strongly, or if you just haven't thought much about it.  Increasing use of solar and wind power will make these options less expensive in the future.
+
+          Pre: Use of Wind, Solar Reduce Future Costs T1 (Q19i)
+ 
+                                                 Cumulative  Cumulative
+                   USAGE1   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly         33       2.7          33        2.7  
+      2 Disagree Mildly           61       5.0          94        7.6  
+      3 Neither                   23       1.9         117        9.5  
+      4 Agree Mildly             322      26.2         439       35.7  
+      5 Agree Strongly           600      48.8        1039       84.5  
+      99 dk                      191      15.5        1230      100.0  
+
+
+         Post: Use of Wind, Solar Reduce Future Costs T2 (Q19i)
+ 
+                                                 Cumulative  Cumulative
+                   USAGE2   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly          9       3.9           9        3.9  
+      2 Disagree Mildly           13       5.7          22        9.6  
+      3 Neither                   18       7.8          40       17.4  
+      4 Agree Mildly              74      32.2         114       49.6  
+      5 Agree Strongly           103      44.8         217       94.3  
+      99 dk                       13       5.7         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q20  GLWARM1:  Now we'd like your opinion about a few issues some people think might be problems.  In your opinion, how serious is the problem of global warming; would you say it is not very serious, somewhat serious, or very serious?
+
+             Pre: How Serious is Global Warming T1 (Q20)
+ 
+                                                 Cumulative  Cumulative
+                  GLWARM1   Frequency   Percent   Frequency    Percent 
+       ----------------------------------------------------------------
+       1 Not Very Serious        260      21.1         260       21.1  
+       2 Somewhat Serious        394      32.0         654       53.2  
+       3 Very Serious            426      34.6        1080       87.8  
+       99 dk                     150      12.2        1230      100.0  
+
+
+             Post: How Serious is Global Warming T2 (Q20)
+ 
+                                                 Cumulative  Cumulative
+                  GLWARM2   Frequency   Percent   Frequency    Percent 
+       ----------------------------------------------------------------
+       1 Not Very Serious         46      20.0          46       20.0  
+       2 Somewhat Serious         99      43.0         145       63.0  
+       3 Very Serious             62      27.0         207       90.0  
+       99 dk                      23      10.0         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q21  AIRPOL1:  Now we'd like your opinion about a few issues some people think might be problems.  How serious a problem is air pollution in Texas; would you say it is not very serious, somewhat serious, or very serious?
+
+           Pre: How Serious is Air Pollution in Tx T1 (Q21)
+ 
+                                                 Cumulative  Cumulative
+                  AIRPOL1   Frequency   Percent   Frequency    Percent 
+       ----------------------------------------------------------------
+       1 Not Very Serious        327      26.6         327       26.6  
+       2 Somewhat Serious        511      41.5         838       68.1  
+       3 Very Serious            351      28.5        1189       96.7  
+       99 dk                      41       3.3        1230      100.0  
+
+
+           Post: How Serious Air Pollution in TX T2 (Q21)
+ 
+                                                 Cumulative  Cumulative
+                  AIRPOL2   Frequency   Percent   Frequency    Percent 
+       ----------------------------------------------------------------
+       1 Not Very Serious         54      23.5          54       23.5  
+       2 Somewhat Serious        134      58.3         188       81.7  
+       3 Very Serious             38      16.5         226       98.3  
+       99 dk                       4       1.7         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q22  POLFUT1:  Now we'd like your opinion about a few issues some people think might be problems.  Do you think air pollution in Texas is likely to get better, stay the same, or get worse in the future?
+
+           Pre: The Future of Air Polution in Texas T1 (Q22)
+ 
+                                               Cumulative  Cumulative
+                POLFUT1   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        1 Get Better           215      17.5         215       17.5  
+        2 Stay the Same        263      21.4         478       38.9  
+        3 Get Worse            682      55.4        1160       94.3  
+        99 dk                   70       5.7        1230      100.0  
+
+
+             Post: Future Air Polution in Texas T2 (Q22)
+ 
+                                               Cumulative  Cumulative
+                POLFUT2   Frequency   Percent   Frequency    Percent 
+        -------------------------------------------------------------
+        1 Get Better            51      22.2          51       22.2  
+        2 Stay the Same         59      25.7         110       47.8  
+        3 Get Worse             99      43.0         209       90.9  
+        99 dk                   21       9.1         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q23-Q28:  In this final section we would like you to give your evaluation of WTU's West Texas Town Meeting on Electricity Issues.
+
+Please answer the following questions about your experience at the Town Meeting by circling a number on the response scale following each item.
+
+Q23  WASTETM:  Overall, for me the Town Meeting was...
+
+             Overall Success of Town Meeting T2 (Q23)
+ 
+                                                  Cumulative  Cumulative
+                   WASTETM   Frequency   Percent   Frequency    Percent 
+     -------------------------------------------------------------------
+     0 Waste of Time                1       0.4           1        0.4  
+                         4          1       0.4           2        0.9  
+                         5          1       0.4           3        1.3  
+                         6          4       1.7           7        3.0  
+                         7          6       2.6          13        5.7  
+                         8         19       8.3          32       13.9  
+                         9         31      13.5          63       27.4  
+     10 Extremely Valuable        164      71.3         227       98.7  
+     99 dk                          3       1.3         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q24a  GRPDISC:  How valuable in helping you clarify your positions on the issues were each of the following different parts of the Town Meeting listed below?  Participating in the group discussions.
+
+                    Value of Group Discussions T2 (Q24a)
+ 
+                                                 Cumulative  Cumulative
+                  GRPDISC   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Little/No Value            2       0.9           2        0.9  
+      2 Somewhat Valuable         34      14.8          36       15.7  
+      3 Very Valuable            193      83.9         229       99.6  
+      99 dk                        1       0.4         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q24b  TALKING:  How valuable in helping you clarify your positions on the issues were each of the following different parts of the Town Meeting listed below?  Meeting and talking to other delegates outside of the group discussion.
+
+                Value of Talking outside Discussions T2 (Q24b)
+ 
+                                                 Cumulative  Cumulative
+                  TALKING   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Little/No Value           10       4.3          10        4.3  
+      2 Somewhat Valuable         70      30.4          80       34.8  
+      3 Very Valuable            147      63.9         227       98.7  
+      99 dk                        3       1.3         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q24c  PUCCOMM:  How valuable in helping you clarify your positions on the issues were each of the following different parts of the Town Meeting listed below?  The session with the PUC Commissioners.
+
+             Value of Session w/ PUC Commissioners T2 (Q24c)
+ 
+                                                 Cumulative  Cumulative
+                  PUCCOMM   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Little/No Value           27      11.7          27       11.7  
+      2 Somewhat Valuable         98      42.6         125       54.3  
+      3 Very Valuable            102      44.3         227       98.7  
+      99 dk                        3       1.3         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q25a  GLPART:  Please indicate whether you agree or disagree with each of the following statements about the discussion groups.  The group leader provided the opportunity for everyone to participate in the discussion.
+
+                Group Leader allowed Participation T2 (Q25a)
+ 
+                                                 Cumulative  Cumulative
+                   GLPART   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly          1       0.4           1        0.4  
+      2 Disagree Mildly            1       0.4           2        0.9  
+      3 Neither                    2       0.9           4        1.7  
+      4 Agree Mildly              23      10.0          27       11.7  
+      5 Agree Strongly           203      88.3         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q25b  GLINFL:  Please indicate whether you agree or disagree with each of the following statements about the discussion groups.  The group leader often tried to influence the group with his or her own views.
+
+                 Group Leader Influenced Group T2 (Q25b)
+ 
+                                                 Cumulative  Cumulative
+                   GLINFL   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly        186      80.9         186       80.9  
+      2 Disagree Mildly           18       7.8         204       88.7  
+      3 Neither                    9       3.9         213       92.6  
+      4 Agree Mildly               7       3.0         220       95.7  
+      5 Agree Strongly             9       3.9         229       99.6  
+      99 dk                        1       0.4         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q25c  OPENMIND:  Please indicate whether you agree or disagree with each of the following statements about the discussion groups.  I discovered that people with views very different from mine often had very good reasons for their views.
+
+                     Disenters had Good Reasons T2 (Q25c)
+ 
+                                                 Cumulative  Cumulative
+                 OPENMIND   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Disagree Strongly          5       2.2           5        2.2  
+      2 Disagree Mildly           10       4.3          15        6.5  
+      3 Neither                   23      10.0          38       16.5  
+      4 Agree Mildly              73      31.7         111       48.3  
+      5 Agree Strongly           118      51.3         229       99.6  
+      99 dk                        1       0.4         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q26  READMAT:  Now think back to the time after you were interviewed by phone but before you came to the convention.  During that time period, about how much time did you spend reading the discussion materials that were sent to you?
+
+                Time Spent Reading Materials Beforehand T2 (Q26)
+ 
+                                                Cumulative  Cumulative
+                 READMAT   Frequency   Percent   Frequency    Percent 
+        --------------------------------------------------------------
+        1 Just Glanced           29      12.6          29       12.6  
+        2 Less Than Half         18       7.8          47       20.4  
+        3 About Half             41      17.8          88       38.3  
+        4 More Than Half         35      15.2         123       53.5  
+        5 Most                  107      46.5         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q27  BIASMAT:  Did you think the discussion materials were mostly balanced, or that they clearly favored some positions over others?
+
+                   Were the Materials Balanced T2 (Q27)
+ 
+                                                 Cumulative  Cumulative
+                  BIASMAT   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Mostly Balanced          191      83.0         191       83.0  
+      2 Favored Positions         34      14.8         225       97.8  
+      99 dk                        5       2.2         230      100.0  
+
+                           Frequency Missing = 1000
+
+
+Q28  BIASDISC:  Thinking about the Town Meeting as a whole, do you believe that there was a fair discussion of the issues or do you think some positions were favored over others?
+
+             Town Meeting Discussion was Balanced T2 (Q28)
+ 
+                                                 Cumulative  Cumulative
+                 BIASDISC   Frequency   Percent   Frequency    Percent 
+      -----------------------------------------------------------------
+      1 Fair Discussion          186      80.9         186       80.9  
+      2 Favored Positions         42      18.3         228       99.1  
+      99 dk                        2       0.9         230      100.0  
+
+                           Frequency Missing = 1000
+
