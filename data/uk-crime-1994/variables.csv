@@ -1,0 +1,288 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+area,double,numeric,,TYPE OF AREA,F9.2,,,TRUE,Retained
+region,double,numeric,,REGION,F9.2,,,TRUE,Retained
+region2,double,numeric,,"REGION, 5 CATS.",F9.2,,,TRUE,Retained
+sex,double,numeric,,SEX: 1 = MALE (A1),F9.2,,,TRUE,Retained
+age,double,numeric,,,F9.2,,,TRUE,Retained
+nchild,double,numeric,,NUMBER OF CHILDREN,F9.2,,,TRUE,Retained
+ageyoung,double,numeric,,AGE OF YOUNGEST CHILD,F9.2,,,TRUE,Retained
+marstat,double,numeric,,MARITAL STATUS (A4),F9.2,,,TRUE,Retained
+marstat2,double,numeric,,REVISED MARITAL STATUS,F9.2,,,TRUE,Retained
+worry,double,numeric,,WORRY BEING CRIME VICTIM? (A5),F9.2,,,TRUE,Retained
+walk,double,numeric,,HOW SAFE WALKING ALONE AFTER DARK? (A6),F9.2,,,TRUE,Retained
+howburg,double,numeric,,HOW MUCH BURGLARY IN THIS AREA? (A7),F9.2,,,TRUE,Retained
+howtheft,double,numeric,,HOW MUCH STREET ATTACKS & THEFTS? (A8),F9.2,,,TRUE,Retained
+worryatt,double,numeric,,HOW WORRIED BEING ATTACKED? (A9),F9.2,,,TRUE,Retained
+crimexp,double,numeric,,"EXPERIENCE OF CRIME, PAST 2 YRS.: 1=YES",F9.2,,,TRUE,Retained
+carstln,double,numeric,,"CAR, VAN, MOTOR STOLEN? 1=YES (A10A)",F9.2,,,TRUE,Retained
+carbrk,double,numeric,,"CAR, VAN, MOTOR BROKEN INTO? (A10B)",F9.2,,,TRUE,Retained
+hsestln,double,numeric,,"HOUSE BROKEN INTO, THINGS STOLEN? (A10C)",F9.2,,,TRUE,Retained
+carrystl,double,numeric,,SOMETHING CARRYING STOLEN? (A10D),F9.2,,,TRUE,Retained
+hityou,double,numeric,,HIT OR VIOLENTLY ATTACKED? (A10E),F9.2,,,TRUE,Retained
+rptcrime,double,numeric,,REPORTED CRIME/ACCIDENT? 1=YES (A11),F9.2,,,TRUE,Retained
+confpol,double,numeric,,HOW CONF. POLICE CATCHES BURGLAR (A12A),F9.2,,,TRUE,Retained
+confgds,double,numeric,,HOW CONF. STOLEN GOODS RETURN? (A12B),F9.2,,,TRUE,Retained
+confgov,double,numeric,,HOW CONF. GOV'T RIGHT POLICIES? (A13),F9.2,,,TRUE,Retained
+readpap,double,numeric,,READ DAILY AM NEWSPAPER? 1=YES (B1A),F9.2,,,TRUE,Retained
+news,double,numeric,,WHICH DAILY MORNING NEWSPAPER? (B1B),F9.2,,,TRUE,Retained
+pidprobe,double,numeric,,PROBE OF PARTY AFFILIATION (B2B),F9.2,,,TRUE,Retained
+pid,double,numeric,,PARTY AFFILIATION WITH PROBE,F9.2,,,TRUE,Retained
+pidstr,double,numeric,,STRENGTH OF PARTY AFFILIATION (B2C),F9.2,,,TRUE,Retained
+working,double,numeric,,EMPLOYMENT STATUS,F9.2,,,TRUE,Retained
+cie,double,numeric,,CHIEF INCOME EARNER (B5),F9.2,,,TRUE,Retained
+wkcienr,double,numeric,,"ACTIVITY STATUS CIE, NON-R (B6)",F9.2,,,TRUE,Retained
+wkcie,double,numeric,,EMPLOYMENT STATUS OF CIE (B5),F9.2,,,TRUE,Retained
+occ,double,numeric,,OCCUPATION (SOC OF CIE),F9.2,,,TRUE,Retained
+educ,double,numeric,,EDUCATION (B12),F9.2,,,TRUE,Retained
+educ7,double,numeric,,"EDUCATION, 7 CATS.",F9.2,,,TRUE,Retained
+race,double,numeric,,RACE/ETHNICITY (B13),F9.2,,,TRUE,Retained
+nonwhite,double,numeric,,NONWHITE 1 = NONWHITE,F9.2,,,TRUE,Retained
+v_inc,double,numeric,,SMALLER INCOME GAP (B14A),F9.2,,,TRUE,Retained
+v_fair,double,numeric,,LIFE NEVER TO BE MADE FAIR (B14B),F9.2,,,TRUE,Retained
+v_obey,double,numeric,,ALWAYS OBEY LAW (B14C),F9.2,,,TRUE,Retained
+v_achiev,double,numeric,,MAKE MORE OF LIFE (B14D),F9.2,,,TRUE,Retained
+v_viol,double,numeric,,RIGHT TO VIOLENCE (B14E),F9.2,,,TRUE,Retained
+v_symp,double,numeric,,LESS SYMPATHY FOR WRONGDOERS (B14F),F9.2,,,TRUE,Retained
+v_fend,double,numeric,,FEND FOR ONESELF (B14G),F9.2,,,TRUE,Retained
+punref1,double,numeric,,PUNISHMENT VS. REFORM (Q16A),F9.2,,,TRUE,Retained
+punref2,double,numeric,,PUNISHMENT VS. REFORM (QQ16A),F9.2,,,TRUE,Retained
+causapp1,double,numeric,,CAUSES VS. APPREHENSION (Q16B),F9.2,,,TRUE,Retained
+causapp2,double,numeric,,CAUSES VS. APPREHENSION (QQ16B),F9.2,,,TRUE,Retained
+peoppol1,double,numeric,,PROTECT PROP.: PEOPLE VS. POLICE (Q16C),F9.2,,,TRUE,Retained
+peoppol2,double,numeric,,PROTECT PROP.: PEOPLE VS. POLICE (QQ16C),F9.2,,,TRUE,Retained
+innglt1,double,numeric,,CONVICT INNOC. VS. NO PUN. GUILTY (Q17),F9.2,,,TRUE,Retained
+innglt2,double,numeric,,CONVICT INNOC. VS. NO PUN. GUILTY (QQ17),F9.2,,,TRUE,Retained
+unempl1,double,numeric,,REDUCE UNEMPLOYMENT (Q1A),F9.2,,,TRUE,Retained
+unempl2,double,numeric,,REDUCE UNEMPLOYMENT (QQ1A),F9.2,,,TRUE,Retained
+violtv1,double,numeric,,REDUCE TV VIOLENCE AND CRIME (Q1B),F9.2,,,TRUE,Retained
+violtv2,double,numeric,,REDUCE TV VIOLENCE AND CRIME (QQ1B),F9.2,,,TRUE,Retained
+timchld1,double,numeric,,SPEND MORE TIME W. CHILDREN (Q1D),F9.2,,,TRUE,Retained
+timchld2,double,numeric,,SPEND MORE TIME W. CHILDREN (QQ1D),F9.2,,,TRUE,Retained
+tchrt1,double,numeric,,TEACH CHILDREN RIGHT FROM WRONG (Q1F),F9.2,,,TRUE,Retained
+tchrt2,double,numeric,,TEACH CHILDREN RIGHT FROM WRONG (QQ1F),F9.2,,,TRUE,Retained
+schdisc1,double,numeric,,FIRMER SCHOOL DISCIPLINE (Q1H),F9.2,,,TRUE,Retained
+schdisc2,double,numeric,,FIRMER SCHOOL DISCIPLINE (QQ1H),F9.2,,,TRUE,Retained
+propsec1,double,numeric,,MAKE PROPERTY MORE SECURE (Q1C),F9.2,,,TRUE,Retained
+propsec2,double,numeric,,MAKE PROPERTY MORE SECURE (QQ1C),F9.2,,,TRUE,Retained
+watch1,double,numeric,,MORE NEIGHBORHOOD WATCH SCHEMES (Q1E),F9.2,,,TRUE,Retained
+watch2,double,numeric,,MORE NEIGHBORHOOD WATCH SCHEMES (QQ1E),F9.2,,,TRUE,Retained
+patrols1,double,numeric,,PUBLIC MORE ACTIVE: STREET PATROLS (Q3),F9.2,,,TRUE,Retained
+patrols2,double,numeric,,PUBLIC MORE ACTIVE: STREET PATROLS (QQ3),F9.2,,,TRUE,Retained
+outprsn1,double,numeric,,MORE OFFENDERS OUT OF PRISON (Q12A),F9.2,,,TRUE,Retained
+outprsn2,double,numeric,,MORE OFFENDERS OUT OF PRISON (QQ12A),F9.2,,,TRUE,Retained
+comserv1,double,numeric,,MORE OFFENDERS: COMMUNITY SERV. (Q12B),F9.2,,,TRUE,Retained
+comserv2,double,numeric,,MORE OFFENDERS: COMMUNITY SERV. (QQ12B),F9.2,,,TRUE,Retained
+milserv1,double,numeric,,MORE OFFENDERS: MILITARY SERV. (Q12C),F9.2,,,TRUE,Retained
+milserv2,double,numeric,,MORE OFFENDERS: MILITARY SERV. (QQ12C),F9.2,,,TRUE,Retained
+train1,double,numeric,,MORE OFFENDERS GET TRAINING (Q12D),F9.2,,,TRUE,Retained
+train2,double,numeric,,MORE OFFENDERS GET TRAINING (QQ12D),F9.2,,,TRUE,Retained
+morprsn1,double,numeric,,MORE OFFENDERS TO PRISON (Q1G),F9.2,,,TRUE,Retained
+morprsn2,double,numeric,,MORE OFFENDERS TO PRISON (QQ1G),F9.2,,,TRUE,Retained
+stiffer1,double,numeric,,STIFFER SENTENCES GENERALLY (Q1I),F9.2,,,TRUE,Retained
+stiffer2,double,numeric,,STIFFER SENTENCES GENERALLY (QQ1I),F9.2,,,TRUE,Retained
+fewpris1,double,numeric,,FEWER PEOPLE TO PRISON (Q8A),F9.2,,,TRUE,Retained
+fewpris2,double,numeric,,FEWER PEOPLE TO PRISON (QQ8A),F9.2,,,TRUE,Retained
+ptough1,double,numeric,,PRISON LIFE TOUGHER (Q8B),F9.2,,,TRUE,Retained
+ptough2,double,numeric,,PRISON LIFE TOUGHER (QQ8B),F9.2,,,TRUE,Retained
+pr_only1,double,numeric,,ONLY DANGEROUS CRIMINALS TO PRIS. (Q8C),F9.2,,,TRUE,Retained
+pr_only2,double,numeric,,ONLY DANGEROUS CRIMINALS TO PRIS. (QQ8C),F9.2,,,TRUE,Retained
+life1,double,numeric,,ALL MURDERERS LIFE SENTENCE (Q8D),F9.2,,,TRUE,Retained
+life2,double,numeric,,ALL MURDERERS LIFE SENTENCE (QQ8D),F9.2,,,TRUE,Retained
+s_tough1,double,numeric,,TOUGHER SENTENCES (Q8E),F9.2,,,TRUE,Retained
+s_tough2,double,numeric,,TOUGHER SENTENCES (QQ8E),F9.2,,,TRUE,Retained
+lifmean1,double,numeric,,LIFE SENTENCE MEANS LIFE (Q8F),F9.2,,,TRUE,Retained
+lifmean2,double,numeric,,LIFE SENTENCE MEANS LIFE (QQ8F),F9.2,,,TRUE,Retained
+refpris1,double,numeric,,TRY HARDER TO REFORM PRISONERS (Q8G),F9.2,,,TRUE,Retained
+refpris2,double,numeric,,TRY HARDER TO REFORM PRISONERS (QQ8G),F9.2,,,TRUE,Retained
+morecop1,double,numeric,,MORE POLICE ON THE BEAT (Q1J),F9.2,,,TRUE,Retained
+morecop2,double,numeric,,MORE POLICE ON THE BEAT (QQ1J),F9.2,,,TRUE,Retained
+copgun1,double,numeric,,ON-DUTY POLICE CARRY GUNS (Q7C),F9.2,,,TRUE,Retained
+copgun2,double,numeric,,ON-DUTY POLICE CARRY GUNS (QQ7C),F9.2,,,TRUE,Retained
+compl1,double,numeric,,INDEP. INVESTIG. POLICE COMPLAIN (Q7D),F9.2,,,TRUE,Retained
+compl2,double,numeric,,INDEP. INVESTIG. POLICE COMPLAIN (QQ7D),F9.2,,,TRUE,Retained
+copbend1,double,numeric,,POLICE ALLOWED TO BEND RULES (Q7E),F9.2,,,TRUE,Retained
+copbend2,double,numeric,,POLICE ALLOWED TO BEND RULES (QQ7E),F9.2,,,TRUE,Retained
+death1,double,numeric,,DEATH MOST APPROP. FOR SOME CRIMES (Q9),F9.2,,,TRUE,Retained
+death2,double,numeric,,DEATH MOST APPROP. FOR SOME CRIMES (QQ9),F9.2,,,TRUE,Retained
+legsoft1,double,numeric,,LEGALIZE SOFT DRUGS (Q5),F9.2,,,TRUE,Retained
+legsoft2,double,numeric,,LEGALIZE SOFT DRUGS (QQ5),F9.2,,,TRUE,Retained
+fewjury1,double,numeric,,FEWER JURY TRIALS (Q6A),F9.2,,,TRUE,Retained
+fewjury2,double,numeric,,FEWER JURY TRIALS (QQ6A),F9.2,,,TRUE,Retained
+ctrules1,double,numeric,,COURT RULES LESS ON SIDE ACCUSED (Q6C),F9.2,,,TRUE,Retained
+ctrules2,double,numeric,,COURT RULES LESS ON SIDE ACCUSED (QQ6C),F9.2,,,TRUE,Retained
+presum1,double,numeric,,END PRESUMPTION OF INNOCENCE (Q6D),F9.2,,,TRUE,Retained
+presum2,double,numeric,,END PRESUMPTION OF INNOCENCE (QQ6D),F9.2,,,TRUE,Retained
+confess1,double,numeric,,CONFESSIONS ALONE NOT CONVICT (Q6B),F9.2,,,TRUE,Retained
+confess2,double,numeric,,CONFESSIONS ALONE NOT CONVICT (QQ6B),F9.2,,,TRUE,Retained
+rtsil1,double,numeric,,RIGHT TO SILENCE (Q7A),F9.2,,,TRUE,Retained
+rtsil2,double,numeric,,RIGHT TO SILENCE (QQ7A),F9.2,,,TRUE,Retained
+mentsil1,double,numeric,,SILENCE MENTIONABLE IN COURT (Q7B),F9.2,,,TRUE,Retained
+mentsil2,double,numeric,,SILENCE MENTIONABLE IN COURT (QQ7B),F9.2,,,TRUE,Retained
+cb1warn1,double,numeric,,1ST-X CHILD BURGLAR: JUST WARN (Q13A),F9.2,,,TRUE,Retained
+cb1warn2,double,numeric,,1ST-X CHILD BURGLAR: JUST WARN (QQ13A),F9.2,,,TRUE,Retained
+cb1serv1,double,numeric,,1ST-X CHILD BURGLAR: COMM. SERV. (Q13B),F9.2,,,TRUE,Retained
+cb1serv2,double,numeric,,1ST-X CHILD BURGLAR: COMM. SERV. (QQ13B),F9.2,,,TRUE,Retained
+cb1inst1,double,numeric,,1ST-X CHILD BURGLAR: SPEC. INST. (Q13C),F9.2,,,TRUE,Retained
+cb1inst2,double,numeric,,1ST-X CHILD BURGLAR: SPEC. INST. (QQ13C),F9.2,,,TRUE,Retained
+cb1pris1,double,numeric,,1ST-X CHILD BURGLAR: ORD. PRISON (Q13D),F9.2,,,TRUE,Retained
+cb1pris2,double,numeric,,1ST-X CHILD BURGLAR: ORD. PRISON (QQ13D),F9.2,,,TRUE,Retained
+special1,double,numeric,,SPEC. TOUGH INST. REPEAT CH'D OFF. (Q14),F9.2,,,TRUE,Retained
+special2,double,numeric,,SPEC. TOUGH INST. REPEAT CH'D OF. (QQ14),F9.2,,,TRUE,Retained
+ageadlt1,double,numeric,,WHAT AGE YOUNG OFF. ADULS SENT. (Q15),F9.2,,,TRUE,Retained
+ageadlt2,double,numeric,,WHAT AGE YOUNG OFF. ADULS SENT. (QQ15),F9.2,,,TRUE,Retained
+lrunemp1,double,numeric,,REDUCE UNEMPLOY AND POVERTY (Q2A),F9.2,,,TRUE,Retained
+lrunemp2,double,numeric,,REDUCE UNEMPLOY AND POVERTY (QQ2A),F9.2,,,TRUE,Retained
+rstiff1,double,numeric,,STIFFER SENTENC. AND MORE PRISONS (Q2B),F9.2,,,TRUE,Retained
+rstiff2,double,numeric,,STIFFER SENTENC. AND MORE PRISONS (QQ2B),F9.2,,,TRUE,Retained
+rtime1,double,numeric,,PARENTS MORE TIME WITH CHILDREN (Q2C),F9.2,,,TRUE,Retained
+rtime2,double,numeric,,PARENTS MORE TIME WITH CHILDREN (QQ2C),F9.2,,,TRUE,Retained
+rpolice1,double,numeric,,POLICE MORE POWERS TO CATCH CRIM. (Q2D),F9.2,,,TRUE,Retained
+rpolice2,double,numeric,,POLICE MORE POWERS TO CATCH CRIM. (QQ2D),F9.2,,,TRUE,Retained
+rschl1,double,numeric,,SCHOOLS RESPON. FOR MORAL GUIDANCE (Q2E),F9.2,,,TRUE,Retained
+rschl2,double,numeric,,SCHOOLS RESPON. MORAL GUIDANCE (QQ2E),F9.2,,,TRUE,Retained
+rpovety1,double,numeric,,PEOPLE MORE RESPON. FOR PORPERTY (Q2F),F9.2,,,TRUE,Retained
+rpovety2,double,numeric,,PEOPLE MORE RESPON. FOR PORPERTY (QQ2F),F9.2,,,TRUE,Retained
+drugsce1,double,numeric,,ILLEGAL DRUGS MAJOR CRIME CAUSE (Q4),F9.2,,,TRUE,Retained
+drugsce2,double,numeric,,ILLEGAL DRUGS MAJOR CRIME CAUSE (QQ4),F9.2,,,TRUE,Retained
+prtoo1,double,numeric,,PRISON LIFE TOO SOFT/TOUGH (Q10),F9.2,,,TRUE,Retained
+prtoo2,double,numeric,,PRISON LIFE TOO SOFT/TOUGH (QQ10),F9.2,,,TRUE,Retained
+prhard1,double,numeric,,PRISON HARDENS CRIMINALS (Q11),F9.2,,,TRUE,Retained
+prhard2,double,numeric,,PRISON HARDENS CRIMINALS (QQ11),F9.2,,,TRUE,Retained
+lfact11,double,numeric,,DEATH SENTENCE IN BRITAIN?,F9.2,,,TRUE,Retained
+lfact12,double,numeric,,DEATH SENTENCE IN BRITAIN?,F9.2,,,TRUE,Retained
+lfact21,double,numeric,,BRITAIN LARGEST PRISON POPULATION,F9.2,,,TRUE,Retained
+lfact22,double,numeric,,BRITAIN LARGEST PRISON POPULATION,F9.2,,,TRUE,Retained
+lfact31,double,numeric,,BRITAIN MORE LIFE SENTENCES,F9.2,,,TRUE,Retained
+lfact32,double,numeric,,BRITAIN MORE LIFE SENTENCES,F9.2,,,TRUE,Retained
+lfact41,double,numeric,,JURY TRIAL IN LOCAL MAGISTRATE'S COURT?,F9.2,,,TRUE,Retained
+lfact42,double,numeric,,JURY TRIAL IN LOCAL MAGISTRATE'S COURT?,F9.2,,,TRUE,Retained
+lk1,double,numeric,,(LFACT11+LFACT21+LFACT31+LFACT41):4,F9.2,,,TRUE,Retained
+lk2,double,numeric,,(LFACT12+LFACT22+LFACT32+LFACT42):4,F9.2,,,TRUE,Retained
+pfact11,double,numeric,,NUMBER OF MP'S ABOUT 100?,F9.2,,,TRUE,Retained
+pfact12,double,numeric,,NUMBER OF MP'S ABOUT 100?,F9.2,,,TRUE,Retained
+pfact21,double,numeric,,MAX 4 YRS. BETWEEN GENERAL ELECTIONS?,F9.2,,,TRUE,Retained
+pfact22,double,numeric,,MAX 4 YRS. BETWEEN GENERAL ELECTIONS?,F9.2,,,TRUE,Retained
+pfact31,double,numeric,,BRITAIN HAS PROPORTIONAL REPRESENTATION?,F9.2,,,TRUE,Retained
+pfact32,double,numeric,,BRITAIN HAS PROPORTIONAL REPRESENTATION?,F9.2,,,TRUE,Retained
+pfact41,double,numeric,,NOT ELECTORAL REGISTER IN TWO DIFF. PLAC,F9.2,,,TRUE,Retained
+pfact42,double,numeric,,NOT ELECTORAL REGISTER IN TWO DIFF. PLAC,F9.2,,,TRUE,Retained
+pk1,double,numeric,,(PFACT11+PFACT21+PFACT31+PFACT41):4,F9.2,,,TRUE,Retained
+pk2,double,numeric,,(PFACT12+PFACT22+PFACT32+PFACT42):4,F9.2,,,TRUE,Retained
+partint,double,numeric,,HOW INTERESTING TAKING PART (QQ20),F9.2,,,TRUE,Retained
+partenj,double,numeric,,HOW ENJOYABLE (Q21),F9.2,,,TRUE,Retained
+partlrn,double,numeric,,HOW MUCH HAVE YOU LEARNED (Q22),F9.2,,,TRUE,Retained
+class,double,numeric,,`CLASS',F9.2,,,TRUE,Retained
+segful,double,numeric,,"SOCIO-ECONOMIC GROUP, FULL BREAKDOWN",F9.2,,,TRUE,Retained
+seg,double,numeric,,SOCIO-ECONOMIC GROUP,F9.2,,,TRUE,Retained
+unempl3,double,numeric,,REDUCE UNEMPLOYMENT (QD1A),F9.2,,,TRUE,Retained
+violtv3,double,numeric,,REDUCE TV VIOLENCE AND CRIME (QD1B),F9.2,,,TRUE,Retained
+propsec3,double,numeric,,MAKE PROPERTY MORE SECURE (QD1C),F9.2,,,TRUE,Retained
+timchld3,double,numeric,,SPEND MORE TIME W. CHILDREN (QD1D),F9.2,,,TRUE,Retained
+watch3,double,numeric,,MORE NEIGHBORHOOD WATCH SCHEMES (QD1E),F9.2,,,TRUE,Retained
+tchrt3,double,numeric,,TEACH CHILDREN RIGHT FROM WRONG (QD1F),F9.2,,,TRUE,Retained
+morprsn3,double,numeric,,MORE OFFENDERS TO PRISON (QD1G),F9.2,,,TRUE,Retained
+schdisc3,double,numeric,,FIRMER SCHOOL DISCIPLINE (QD1H),F9.2,,,TRUE,Retained
+stiffer3,double,numeric,,STIFFER SENTENCES GENERALLY (QD1I),F9.2,,,TRUE,Retained
+morecop3,double,numeric,,MORE POLICE ON THE BEAT (QD1J),F9.2,,,TRUE,Retained
+lrunemp3,double,numeric,,REDUCE UNEMPLOY AND POVERTY (QD2A),F9.2,,,TRUE,Retained
+rstiff3,double,numeric,,STIFFER SENTENC. AND MORE PRISONS (QD2B),F9.2,,,TRUE,Retained
+rtime3,double,numeric,,PARENTS MORE TIME WITH CHILDREN (QD2C),F9.2,,,TRUE,Retained
+rpolice3,double,numeric,,POLICE MORE POWERS TO CATCH CRIM. (QD2D),F9.2,,,TRUE,Retained
+rschl3,double,numeric,,SCHOOLS RESPON. MORAL GUIDANCE (QD2E),F9.2,,,TRUE,Retained
+rpovety3,double,numeric,,PEOPLE MORE RESPON. FOR PORPERTY (QD2F),F9.2,,,TRUE,Retained
+patrols3,double,numeric,,PUBLIC MORE ACTIVE: STREET PATROLS (QD3),F9.2,,,TRUE,Retained
+drugsce3,double,numeric,,ILLEGAL DRUGS MAJOR CRIME CAUSE (QD4),F9.2,,,TRUE,Retained
+legsoft3,double,numeric,,LEGALIZE SOFT DRUGS (QD5),F9.2,,,TRUE,Retained
+fewjury3,double,numeric,,FEWER JURY TRIALS (QD6A),F9.2,,,TRUE,Retained
+confess3,double,numeric,,CONFESSIONS ALONE NOT CONVICT (QD6B),F9.2,,,TRUE,Retained
+ctrules3,double,numeric,,COURT RULES LESS ON SIDE ACCUSED (QD6C),F9.2,,,TRUE,Retained
+presum3,double,numeric,,END PRESUMPTION OF INNOCENCE (QD6D),F9.2,,,TRUE,Retained
+rtsil3,double,numeric,,RIGHT TO SILENCE (QD7A),F9.2,,,TRUE,Retained
+mentsil3,double,numeric,,SILENCE MENTIONABLE IN COURT (QD7B),F9.2,,,TRUE,Retained
+copgun3,double,numeric,,ON-DUTY POLICE CARRY GUNS (QD7C),F9.2,,,TRUE,Retained
+compl3,double,numeric,,INDEP. INVESTIG. POLICE COMPLAIN (QD7D),F9.2,,,TRUE,Retained
+copbend3,double,numeric,,POLICE ALLOWED TO BEND RULES (QD7E),F9.2,,,TRUE,Retained
+fewpris3,double,numeric,,FEWER PEOPLE TO PRISON (QD8A),F9.2,,,TRUE,Retained
+ptough3,double,numeric,,PRISON LIFE TOUGHER (QD8B),F9.2,,,TRUE,Retained
+pr_only3,double,numeric,,ONLY DANGEROUS CRIMINALS TO PRIS. (QD8C),F9.2,,,TRUE,Retained
+life3,double,numeric,,ALL MURDERERS LIFE SENTENCE (QD8D),F9.2,,,TRUE,Retained
+s_tough3,double,numeric,,TOUGHER SENTENCES (QD8E),F9.2,,,TRUE,Retained
+lifmean3,double,numeric,,LIFE SENTENCE MEANS LIFE (QD8F),F9.2,,,TRUE,Retained
+refpris3,double,numeric,,TRY HARDER TO REFORM PRISONERS (QD8G),F9.2,,,TRUE,Retained
+death3,double,numeric,,DEATH MOST APPROP. FOR SOME CRIMES (QD9),F9.2,,,TRUE,Retained
+prtoo3,double,numeric,,PRISON LIFE TOO SOFT/TOUGH (QD10),F9.2,,,TRUE,Retained
+prhard3,double,numeric,,PRISON HARDENS CRIMINALS (QD11),F9.2,,,TRUE,Retained
+outprsn3,double,numeric,,MORE OFFENDERS OUT OF PRISON (QD12A),F9.2,,,TRUE,Retained
+comserv3,double,numeric,,MORE OFFENDERS: COMMUNITY SERV. (QD12B),F9.2,,,TRUE,Retained
+milserv3,double,numeric,,MORE OFFENDERS: MILITARY SERV. (QD12C),F9.2,,,TRUE,Retained
+train3,double,numeric,,MORE OFFENDERS GET TRAINING (QD12D),F9.2,,,TRUE,Retained
+cb1warn3,double,numeric,,1ST-X CHILD BURGLAR: JUST WARN (QD13A),F9.2,,,TRUE,Retained
+cb1serv3,double,numeric,,1ST-X CHILD BURGLAR: COMM. SERV. (QD13B),F9.2,,,TRUE,Retained
+cb1inst3,double,numeric,,1ST-X CHILD BURGLAR: SPEC. INST. (QD13C),F9.2,,,TRUE,Retained
+cb1pris3,double,numeric,,1ST-X CHILD BURGLAR: ORD. PRISON (QD13D),F9.2,,,TRUE,Retained
+special3,double,numeric,,SPEC. TOUGH INST. REPEAT CH'D OF. (QD14),F9.2,,,TRUE,Retained
+ageadlt3,double,numeric,,WHAT AGE YOUNG OFF. ADULS SENT. (QD15),F9.2,,,TRUE,Retained
+punref3,double,numeric,,PUNISHMENT VS. REFORM (QD16A),F9.2,,,TRUE,Retained
+causapp3,double,numeric,,CAUSES VS. APPREHENSION (QD16B),F9.2,,,TRUE,Retained
+peoppol3,double,numeric,,PROTECT PROP.: PEOPLE VS. POLICE (QD16C),F9.2,,,TRUE,Retained
+innglt3,double,numeric,,CONVICT INNOC. VS. NO PUN. GUILTY (QD17),F9.2,,,TRUE,Retained
+tv3,double,numeric,,WATCHED WEEKEND ON TV (QD20),F9.2,,,TRUE,Retained
+discuss3,double,numeric,,DISCUSSED WEEKEND (QD21),F9.2,,,TRUE,Retained
+interes3,double,numeric,,PARTIC. LED MORE/LESS INTEREST (QD22),F9.2,,,TRUE,Retained
+lfact13,double,numeric,,DEATH SENTENCE IN BRITAIN,F9.2,,,TRUE,Retained
+lfact23,double,numeric,,BRITAIN LARGEST PRISON POP.,F9.2,,,TRUE,Retained
+lfact33,double,numeric,,BRITAIN MORE LIFE SENTENCES,F9.2,,,TRUE,Retained
+lfact43,double,numeric,,JURY TRIAL LOCAL MAGIST'S COURT,F9.2,,,TRUE,Retained
+pfact13,double,numeric,,NUMBER OF MP'S ABOUT 100?,F9.2,,,TRUE,Retained
+pfact23,double,numeric,,MAX 4 YRS. BETWEEN GENERAL ELEC.,F9.2,,,TRUE,Retained
+pfact33,double,numeric,,BRITAIN HAS PROPORTIONAL REPRES.,F9.2,,,TRUE,Retained
+pfact43,double,numeric,,NOT ELEC. REGIST. 2 DIFF. PLACES,F9.2,,,TRUE,Retained
+pk3,double,numeric,,(PFACT12+PFACT22+PFACT32+PFACT42):4,F9.2,,,TRUE,Retained
+lk3,double,numeric,,(LFACT12+LFACT22+LFACT32+LFACT42):4,F9.2,,,TRUE,Retained
+resprop1,double,numeric,,,F9.2,,,TRUE,Retained
+resprop2,double,numeric,,,F9.2,,,TRUE,Retained
+caseid,double,numeric,,,F9.2,,,TRUE,Retained
+group,double,numeric,,SMALL GROUP NUMBER,F9.2,,,TRUE,Retained
+mosteff1,double,numeric,,MOST EFFECTIVE WAY OF REDUCING CRIME,F9.2,,,TRUE,Retained
+mosteff2,double,numeric,,MOST EFFECTIVE WAY OF REDUCING CRIME,F9.2,,,TRUE,Retained
+mosteff3,double,numeric,,MOST EFFECTIVE WAY OF REDUCING CRIME,F9.2,,,TRUE,Retained
+seceff1,double,numeric,,SECOND MOST EFFECTIVE WAY OF REDUCING CR,F9.2,,,TRUE,Retained
+seceff2,double,numeric,,SECOND MOST EFFECTIVE WAY OF REDUCING CR,F9.2,,,TRUE,Retained
+seceff3,double,numeric,,SECOND MOST EFFECTIVE WAY OF REDUCING CR,F9.2,,,TRUE,Retained
+thrdeff1,double,numeric,,THIRD MOST EFFECTIVE WAY OF REDUCING CRI,F9.2,,,TRUE,Retained
+thrdeff2,double,numeric,,THIRD MOST EFFECTIVE WAY OF REDUCING CRI,F9.2,,,TRUE,Retained
+thrdeff3,double,numeric,,THIRD MOST EFFECTIVE WAY OF REDUCING CRI,F9.2,,,TRUE,Retained
+pido,double,numeric,,,F9.2,,,TRUE,Retained
+pidt,double,numeric,,,F9.2,,,TRUE,Retained
+newstri,double,numeric,,,F9.2,,,TRUE,Retained
+eductri,double,numeric,,,F9.2,,,TRUE,Retained
+kw11,double,numeric,,DEATH SENTENCE PERMITTED IN BRITAIN (Q18,F9.2,,,TRUE,Retained
+kw12,double,numeric,,DEATH SENTENCE PERMITTED IN BRITAIN (QQ1,F9.2,,,TRUE,Retained
+kw13,double,numeric,,DEATH SENTENCE PERMITTED IN BRITAIN (QD1,F9.2,,,TRUE,Retained
+kw41,double,numeric,,JURY TRIAL LOCAL MAGIST'S COURT (Q18D),F9.2,,,TRUE,Retained
+kw42,double,numeric,,JURY TRIAL LOCAL MAGIST'S COURT (QQ18D),F9.2,,,TRUE,Retained
+kw43,double,numeric,,JURY TRIAL LOCAL MAGIST'S COURT (QD18D),F9.2,,,TRUE,Retained
+pkw11,double,numeric,,NUMBER OF MP'S ABOUT 100? (Q19A),F9.2,,,TRUE,Retained
+pkw12,double,numeric,,NUMBER OF MP'S ABOUT 100? (QQ19A),F9.2,,,TRUE,Retained
+pkw13,double,numeric,,NUMBER OF MP'S ABOUT 100? (QD19A),F9.2,,,TRUE,Retained
+pkw21,double,numeric,,MAX. 4 YRS. BETWEEN GENERAL ELEC.? (Q19B,F9.2,,,TRUE,Retained
+pkw22,double,numeric,,MAX. 4 YRS. BETWEEN GENERAL ELEC.? (QQ19,F9.2,,,TRUE,Retained
+pkw23,double,numeric,,MAX. 4 YRS. BETWEEN GENERAL ELEC.? (QD19,F9.2,,,TRUE,Retained
+pkw31,double,numeric,,BRITAIN HAS PROPORTIONAL REPRES. (Q19C),F9.2,,,TRUE,Retained
+pkw32,double,numeric,,BRITAIN HAS PROPORTIONAL REPRES. (QQ19C),F9.2,,,TRUE,Retained
+pkw33,double,numeric,,BRITAIN HAS PROPORTIONAL REPRES. (QD19C),F9.2,,,TRUE,Retained
+kw21,double,numeric,,BRITAIN LARGEST PRISON POPULATION (Q18B),F9.2,,,TRUE,Retained
+kw31,double,numeric,,BRITAIN MORE LIFE SENTENCES(Q18B),F9.2,,,TRUE,Retained
+kw22,double,numeric,,BRITAIN LARGEST PRISON POPULATION (QQ18B,F9.2,,,TRUE,Retained
+kw32,double,numeric,,BRITAIN MORE LIFE SENTENCES (QQ18C),F9.2,,,TRUE,Retained
+kw23,double,numeric,,BRITAIN LARGEST PRISON POPULATION (QD18B,F9.2,,,TRUE,Retained
+kw33,double,numeric,,BRITAIN MORE LIFE SENTENCES (QD18C),F9.2,,,TRUE,Retained
+pkw41,double,numeric,,NOT ELEC. REGIST. 2 DIFF. PLACES (Q19D),F9.2,,,TRUE,Retained
+pkw42,double,numeric,,NOT ELEC. REGIST. 2 DIFF. PLACES (QQ19D),F9.2,,,TRUE,Retained
+pkw43,double,numeric,,NOT ELEC. REGIST. 2 DIFF. PLACES (QD19D),F9.2,,,TRUE,Retained
+adults,double,numeric,,,F9.2,,,TRUE,Retained
+ciesup,double,numeric,,,F9.2,,,TRUE,Retained
+cowk,double,numeric,,,F9.2,,,TRUE,Retained
+empls,double,numeric,,,F9.2,,,TRUE,Retained
+part3,double,numeric,,,F9.2,,,TRUE,Retained
+part,double,numeric,,,F9.2,,,TRUE,Retained
