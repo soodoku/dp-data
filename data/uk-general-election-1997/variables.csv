@@ -1,0 +1,569 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+serial,double,numeric,,serial number,F8.0,,,TRUE,Retained
+group,double,numeric,,small group number,F8.0,,,TRUE,Retained
+interno,double,numeric,,interviewer number (qb23f),F8.0,,,TRUE,Retained
+totcals,double,numeric,,total # of calls to complete interview,F8.0,,,TRUE,Retained
+es,double,numeric,,employment status of r (summary),F8.0,,,TRUE,Retained
+seg,double,numeric,,socioeconomic group (occupation),F8.0,,,TRUE,Retained
+segdum,double,numeric,,dummy: recoded seg: middle class (1) [1 to 9 in seg]/working class (0) [10 to 19,F8.0,,,TRUE,Retained
+intday,double,numeric,,interview day of month,F8.0,,,TRUE,Retained
+intmonth,double,numeric,,month of interviewer,F8.0,,,TRUE,Retained
+intyear,double,numeric,,year of interview,F8.0,,,TRUE,Retained
+country,double,numeric,,country in britain,F8.0,,,TRUE,Retained
+party,double,numeric,,party id (from b1a and b1b),F8.0,,,TRUE,Retained
+educ,double,numeric,,highest educ qualification reached,F8.0,,,TRUE,Retained
+educreco,double,haven_labelled|vctrs_vctr|double,,recoded educ 0 to 1 scale,F9.2,,,TRUE,Retained
+gender,double,numeric,,gender (1=male) (qa1),F8.0,,,TRUE,Retained
+newsyn,double,numeric,,read daily am paper 3x week? (qa2a),F8.0,,,TRUE,Retained
+newsp,double,numeric,,which newspaper? (qa2b),F8.0,,,TRUE,Retained
+age,double,numeric,,age in years (qa3),F8.0,,,TRUE,Retained
+kids,double,numeric,,children < 17 at home? (qa4),F8.0,,,TRUE,Retained
+kids5,double,numeric,,children < 5? (qa4b),F8.0,,,TRUE,Retained
+kids110,double,numeric,,children >= 5 and <=11? (qa4b),F8.0,,,TRUE,Retained
+kids15,double,numeric,,children >=12 and <=15? (q4ab),F8.0,,,TRUE,Retained
+kids17,double,numeric,,children >=16 and <=17? (q4ab),F8.0,,,TRUE,Retained
+marstat,double,numeric,,marital status (qa5),F8.0,,,TRUE,Retained
+mastreco,double,haven_labelled|vctrs_vctr|double,,recoded marital status - dichotomous,F8.0,,,TRUE,Retained
+mardum,double,numeric,,married dummy - married/living as married (1)/other (0),F8.0,,,TRUE,Retained
+formardu,double,numeric,,formerly married dummy - divorced/separated/widowed (1)/other (0),F8.0,,,TRUE,Retained
+inf3t1,double,numeric,,t1 knowledge index - 3 factual items only,F9.2,,,TRUE,Retained
+inf12t1,double,numeric,,t1 knowledge index - factual items + party placements,F9.2,,,TRUE,Retained
+inf15t1,double,numeric,,t1 knowledge index - party placements only,F9.2,,,TRUE,Retained
+infcont1,double,numeric,,t1 conservative party knowledge index - how many conservative party placements a,F9.2,,,TRUE,Retained
+inflabt1,double,numeric,,t1 labour party knowledge index - how many labour party placements answered corr,F9.2,,,TRUE,Retained
+infldt1,double,numeric,,t1 liberal democrats party knowledge index - how many lib dem placements answere,F9.2,,,TRUE,Retained
+inf3t2,double,numeric,,t2 knowledge index - 3 factual items only,F9.2,,,TRUE,Retained
+inf15t2,double,numeric,,t2 knowledge index - factual items + party placements,F9.2,,,TRUE,Retained
+inf12t2,double,numeric,,t2 knowledge index - party placements only,F8.0,,,TRUE,Retained
+infcont2,double,numeric,,t2 conservative party knowledge index - how many conservative party placements a,F9.2,,,TRUE,Retained
+inflabt2,double,numeric,,t2 labour party knowledge index - how many labour party placements answered corr,F9.2,,,TRUE,Retained
+infldt2,double,numeric,,t2 liberal democrats party knowledge index - how many lib dem placements answere,F9.2,,,TRUE,Retained
+inft2wei,double,numeric,,t2 knowledge index with factual and party placement items weighted equally,F9.2,,,TRUE,Retained
+distrdst,double,numeric,,distance from group mean on rdstr1re at t1 (rdstr1re - gmnrdstr1re),F9.2,,,TRUE,Retained
+distrd_a,double,numeric,,distance from group mean on rdstr1redk at t1 (rdstr1redk - gmnrdstr1redk),F9.2,,,TRUE,Retained
+disttx1,double,numeric,,distance from group mean on txr1re at t1 (txr1re - gmntxr1re),F9.2,,,TRUE,Retained
+distwge1,double,numeric,,distance from group mean on wger1re at t1 (wger1re - gmnwger1re),F9.2,,,TRUE,Retained
+distwg_a,double,numeric,,distance from group mean on wger1redk at t1 (wger1redk - gmnwger1redk),F9.2,,,TRUE,Retained
+disteu1,double,numeric,,distance from group mean on eur1re at t1 (eur1re - gmneur1re),F9.2,,,TRUE,Retained
+disteu1d,double,numeric,,distance from group mean on eur1redk at t1 (eur1redk - gmneur1redk),F9.2,,,TRUE,Retained
+distrd_b,double,numeric,,distance from group mean on rdstc1redk at t1 (rdstc1redk - gmnrdstc1redk),F9.2,,,TRUE,Retained
+distrd_c,double,numeric,,distance from group mean on rdstl1redk at t1 (rdstl1redk - gmnrdstl1redk),F9.2,,,TRUE,Retained
+distrd_d,double,numeric,,distance from group mean on rdstld1redk at t1 (rdstld1redk - gmnrdstld1redk),F9.2,,,TRUE,Retained
+distwgec,double,numeric,,distance from group mean on wgec1redk at t1 (wgec1redk - gmnwgec1redk),F9.2,,,TRUE,Retained
+distwgel,double,numeric,,distance from group mean on wgeld1redk at t1 (wgeld1redk - gmnwgeld1redk),F9.2,,,TRUE,Retained
+disteul1,double,numeric,,distance from group mean on eul1redk at t1 (eul1redk - gmneul1redk),F9.2,,,TRUE,Retained
+disteuld,double,numeric,,distance from group mean on euld1redk at t1 (euld1redk - gmneuld1redk),F9.2,,,TRUE,Retained
+difrdstr,double,numeric,,t2 - t1 on rdstr (rdstr2re - rdstr1re),F9.2,,,TRUE,Retained
+difrds_a,double,numeric,,absolute value of t2 - t1 on rdstr (absolute value of difrdstr),F9.2,,,TRUE,Retained
+difrds_b,double,numeric,,t2 - t1 on rdstrdk (with dks at midpoint) (rdstr2redk - rdstr1redk),F9.2,,,TRUE,Retained
+diftxr,double,numeric,,t2 - t1 on tax (taxr2re - txr1re),F9.2,,,TRUE,Retained
+diftxrab,double,numeric,,absolute value of t2 - t1 on diftxr (absolute value of diftxr),F9.2,,,TRUE,Retained
+difwger,double,numeric,,t2 - t1 on wge (wger2re - wger1re),F9.2,,,TRUE,Retained
+difwgera,double,numeric,,absolute value of t2 - t1 on wger (absolute value of difwger),F9.2,,,TRUE,Retained
+difwgerd,double,numeric,,t2 - t1 on wgedk (with dks at midpoint) (wger2redk - wger1redk),F9.2,,,TRUE,Retained
+difeur,double,numeric,,t2 - t1 on eu (eur2re - eur1re),F9.2,,,TRUE,Retained
+difeurab,double,numeric,,absolute value of t2 - t1 on eur (absolute value of difeur),F9.2,,,TRUE,Retained
+difeurdk,double,numeric,,t2 - t1 on eu (with dks at midpoint) (eur2redk - eur1redk),F9.2,,,TRUE,Retained
+difrdstc,double,numeric,,t2 - t1 on rdstcdk (rdstc2redk - rdstc1redk) (with dks at midpt),F9.2,,,TRUE,Retained
+difrdstl,double,numeric,,t2 - t1 on rdstldk (rdstl2redk - rdstl1redk) (with dks at midpt),F9.2,,,TRUE,Retained
+difrds_c,double,numeric,,t2 - t1 on rdstlddk (rdstld2redk - rdstld1redk) (with dks at midpt),F9.2,,,TRUE,Retained
+difwgecd,double,numeric,,t2 - t1 on wgecdk (wgec2redk - wgec1redk) (with dks at midpoint),F9.2,,,TRUE,Retained
+difwgeld,double,numeric,,t2 - t1 on wgelddk (wgeld2redk - wgeld1redk) (with dks at midpoint),F9.2,,,TRUE,Retained
+difeuldk,double,numeric,,t2 - t1 on euldk (eul2redk - eul1redk) (with dks at midpoint),F9.2,,,TRUE,Retained
+difeuldd,double,numeric,,t2 - t1 on eulddk (euld2redk - euld1redk) (with dks at midpoint),F9.2,,,TRUE,Retained
+care,double,numeric,,care which party wins (qa6),F8.0,,,TRUE,Retained
+carereco,double,haven_labelled|vctrs_vctr|double,,recoded care,F9.2,,,TRUE,Retained
+handout,double,numeric,,v too many rely on gov hand-outs (q7a),F8.0,,,TRUE,Retained
+hndoreco,double,haven_labelled|vctrs_vctr|double,,recoded handout,F9.2,,,TRUE,Retained
+redist,double,numeric,,v gov should redistribute income (q7b),F8.0,,,TRUE,Retained
+rdstreco,double,haven_labelled|vctrs_vctr|double,,recoded redist,F9.2,,,TRUE,Retained
+bigbus,double,numeric,,v big business good only for ownrs (q7c),F8.0,,,TRUE,Retained
+bgbsreco,double,haven_labelled|vctrs_vctr|double,,recoded bigbus,F9.2,,,TRUE,Retained
+blokes,double,numeric,,v ordinary wrkrs not get fair share(q7d),F8.0,,,TRUE,Retained
+blksreco,double,haven_labelled|vctrs_vctr|double,,recoded blokes,F9.2,,,TRUE,Retained
+difflaw,double,numeric,,v different laws for rich and poor (q7e),F8.0,,,TRUE,Retained
+dflwreco,double,haven_labelled|vctrs_vctr|double,,recoded difflaw,F9.2,,,TRUE,Retained
+mgmt,double,numeric,,v management takes advantage (q7f),F8.0,,,TRUE,Retained
+mgmtreco,double,haven_labelled|vctrs_vctr|double,,recoded management,F9.2,,,TRUE,Retained
+dobest,double,numeric,,v people do what they think best (q7g),F8.0,,,TRUE,Retained
+dbstreco,double,haven_labelled|vctrs_vctr|double,,recoded dobest,F9.2,,,TRUE,Retained
+pid,double,numeric,,party id (qb1a),F8.0,,,TRUE,Retained
+pidreco,double,haven_labelled|vctrs_vctr|double,,recoded pid,F8.0,,,TRUE,Retained
+pidlean,double,numeric,,closest party if no pid (qb1b),F8.0,,,TRUE,Retained
+pilnreco,double,haven_labelled|vctrs_vctr|double,,recoded pidlean,F8.0,,,TRUE,Retained
+pidstrn,double,numeric,,strenth of pid (includes leaners) (qb1c),F8.0,,,TRUE,Retained
+pidsreco,double,haven_labelled|vctrs_vctr|double,,recoded pidstrn,F8.0,,,TRUE,Retained
+employ,double,numeric,,employment status of r (qb2),F8.0,,,TRUE,Retained
+empldum,double,numeric,,employment dummy variable - employed (1) [ft educ; gov train; ft; pt; waiting to,F8.0,,,TRUE,Retained
+emplreco,double,haven_labelled|vctrs_vctr|double,,recoded employment status,F8.0,,,TRUE,Retained
+hshldsz,double,numeric,,# adults in household (qb3),F8.0,,,TRUE,Retained
+cie,double,numeric,,r=chief income earner (cie)? (qb4),F8.0,,,TRUE,Retained
+ciereco,double,haven_labelled|vctrs_vctr|double,,recoded cie,F8.0,,,TRUE,Retained
+cieemp,double,numeric,,"if r not cie, is cie employed? (qb5)",F8.0,,,TRUE,Retained
+selfemp,double,numeric,,cie self-employed? (qb7),F8.0,,,TRUE,Retained
+superv,double,numeric,,how many does cie supervise(qb8),F8.0,,,TRUE,Retained
+manywork,double,numeric,,how many employees at cies work (qb9a),F8.0,,,TRUE,Retained
+semanywk,double,numeric,,"if self employeed, # of workers (qb10a)",F8.0,,,TRUE,Retained
+ageeduc,double,numeric,,age r finished education (qb11),F8.0,,,TRUE,Retained
+educa,double,numeric,,education - 5 (qb12a),F8.0,,,TRUE,Retained
+educb,double,numeric,,education - 12 (qb12b),F8.0,,,TRUE,Retained
+union,double,numeric,,union member? (from qb13),F8.0,,,TRUE,Retained
+ethnic,double,numeric,,ethnicity (qb14),F8.0,,,TRUE,Retained
+incgroup,double,numeric,,proclaimed income (qb15),F8.0,,,TRUE,Retained
+solret,double,numeric,,std of living up from past? (qb16a),F8.0,,,TRUE,Retained
+solpro,double,numeric,,std of living up in future? (qb16b),F8.0,,,TRUE,Retained
+enufinc,double,numeric,,comfortable on present income? (qb17),F8.0,,,TRUE,Retained
+assista,double,numeric,,"state benefits, 1st mention (qb18)",F8.0,,,TRUE,Retained
+assistb,double,numeric,,"state benefits, 2nd mention (qb18)",F8.0,,,TRUE,Retained
+assistc,double,numeric,,"state benefits, 3rd mention (qb18)",F8.0,,,TRUE,Retained
+assistd,double,numeric,,"state benefits, 4th mention (qb18)",F8.0,,,TRUE,Retained
+assiste,double,numeric,,"state benefits, 5th mention (qb18)",F8.0,,,TRUE,Retained
+income,double,numeric,,household income (in pounds) (qb19),F8.0,,,TRUE,Retained
+increco,double,haven_labelled|vctrs_vctr|double,,recoded income (collapsed),F8.0,,,TRUE,Retained
+trusta,double,numeric,,trust govt nation over politics (qb20a),F8.0,,,TRUE,Retained
+truareco,double,haven_labelled|vctrs_vctr|double,,recoded trusta,F9.2,,,TRUE,Retained
+trustb,double,numeric,,trust politicians to tell truth (qb20b),F8.0,,,TRUE,Retained
+trubreco,double,haven_labelled|vctrs_vctr|double,,trustb recoded,F9.2,,,TRUE,Retained
+health,double,numeric,,= health care or based on wealth (qb21a),F8.0,,,TRUE,Retained
+schools,double,numeric,,= education or based on wealth (qb21b),F8.0,,,TRUE,Retained
+pensions,double,numeric,,= pensions or based on wealth (qb21c),F8.0,,,TRUE,Retained
+phone,double,numeric,,does r have a phone (qb22),F8.0,,,TRUE,Retained
+canring,double,numeric,,supervisor ring to verify survey?(qb22b),F8.0,,,TRUE,Retained
+duration,double,numeric,,duration of inverview (inc self-comp),F8.0,,,TRUE,Retained
+dateofi,double,numeric,,date of interview,F12.0,,,TRUE,Retained
+int1,double,numeric,,interest in politics generally t1 (q1),F8.0,,,TRUE,Retained
+int1reco,double,haven_labelled|vctrs_vctr|double,,int1 recoded,F9.2,,,TRUE,Retained
+feelcon1,double,numeric,,feelings about conservative pty t1 (q2a),F8.0,,,TRUE,Retained
+flcn1rec,double,haven_labelled|vctrs_vctr|double,,recoded feelcon1,F9.2,,,TRUE,Retained
+feellab1,double,haven_labelled|vctrs_vctr|double,,feelings about labour party t1 (q2b),F8.0,,,TRUE,Retained
+flla1rec,double,haven_labelled|vctrs_vctr|double,,recoded feellab1,F9.2,,,TRUE,Retained
+feelld1,double,numeric,,feelings about liberal democrats t1(q2c),F8.0,,,TRUE,Retained
+flld1rec,double,haven_labelled|vctrs_vctr|double,,recoded feelld1,F9.2,,,TRUE,Retained
+feelref1,double,numeric,,feelings about referendum party t1 (q2d),F8.0,,,TRUE,Retained
+feelsco1,double,numeric,,"if scotish, feelings natlist pty t1(q2e)",F8.0,,,TRUE,Retained
+feelwal1,double,numeric,,"if welsh, feelings plaid cymru t1 (q2f)",F8.0,,,TRUE,Retained
+econret1,double,numeric,,strength of economy from past t1 (q3),F8.0,,,TRUE,Retained
+ecr1reco,double,haven_labelled|vctrs_vctr|double,,recoded econret1,F9.2,,,TRUE,Retained
+inflret1,double,numeric,,inflation rate up from past t1 (q4a),F8.0,,,TRUE,Retained
+inr1reco,double,haven_labelled|vctrs_vctr|double,,recoded inflret1,F9.2,,,TRUE,Retained
+unemret1,double,numeric,,unemployment rate up from past t1 (q4b),F8.0,,,TRUE,Retained
+unr1reco,double,haven_labelled|vctrs_vctr|double,,recoded unemret1,F9.2,,,TRUE,Retained
+taxret1,double,numeric,,tax rate up from past t1 (q4c),F8.0,,,TRUE,Retained
+txr1reco,double,haven_labelled|vctrs_vctr|double,,recoded taxret1,F9.2,,,TRUE,Retained
+hcret1,double,numeric,,ntl health service up from past t1 (q4d),F8.0,,,TRUE,Retained
+hcr1reco,double,haven_labelled|vctrs_vctr|double,,recoded hcret1,F9.2,,,TRUE,Retained
+educret1,double,numeric,,education up from past t1 (q4e),F8.0,,,TRUE,Retained
+edr1reco,double,haven_labelled|vctrs_vctr|double,,recoded educret1,F9.2,,,TRUE,Retained
+procon1,double,numeric,,fut strength of econ w/conserv t1 (q5),F8.0,,,TRUE,Retained
+prcn1rec,double,haven_labelled|vctrs_vctr|double,,recoded procon1,F9.2,,,TRUE,Retained
+prolab1,double,numeric,,fut strength of econ w/labour t1 (q6),F8.0,,,TRUE,Retained
+prlb1rec,double,haven_labelled|vctrs_vctr|double,,recoded prolab1,F9.2,,,TRUE,Retained
+proconi1,double,numeric,,inflation up in future w/consrv t1 (q7a),F8.0,,,TRUE,Retained
+prcni1re,double,haven_labelled|vctrs_vctr|double,,recoded proconi1,F9.2,,,TRUE,Retained
+proconu1,double,numeric,,unemploymnt up in future w/consv t1(q7b),F8.0,,,TRUE,Retained
+prcnu1re,double,haven_labelled|vctrs_vctr|double,,recoded proconu1,F9.2,,,TRUE,Retained
+procont1,double,numeric,,taxes up in future w/conserv. t1 (q7c),F8.0,,,TRUE,Retained
+prcnt1re,double,haven_labelled|vctrs_vctr|double,,recoded procont1,F9.2,,,TRUE,Retained
+proconh1,double,numeric,,quality health care in fut w/con t1(q7d),F8.0,,,TRUE,Retained
+prcnh1re,double,haven_labelled|vctrs_vctr|double,,recoded proconh1,F9.2,,,TRUE,Retained
+procone1,double,numeric,,std of education in fut w/consv t1 (q7e),F8.0,,,TRUE,Retained
+prcne1re,double,haven_labelled|vctrs_vctr|double,,recoded procone1,F9.2,,,TRUE,Retained
+prolabi1,double,numeric,,inflation up in future w/labour t1 (q8a),F8.0,,,TRUE,Retained
+prlbi1re,double,haven_labelled|vctrs_vctr|double,,recoded prolabi1,F9.2,,,TRUE,Retained
+prolabu1,double,numeric,,unemployment up in future w/lab t1 (q8b),F8.0,,,TRUE,Retained
+prlbu1re,double,haven_labelled|vctrs_vctr|double,,recoded prolabu1,F9.2,,,TRUE,Retained
+prolabt1,double,numeric,,taxes up in future w/labour t1 (q8c),F8.0,,,TRUE,Retained
+prlbt1re,double,haven_labelled|vctrs_vctr|double,,recoded prolabt1,F9.2,,,TRUE,Retained
+prolabh1,double,numeric,,quality health care in fut w/lab t1(q8d),F8.0,,,TRUE,Retained
+prlbh1re,double,haven_labelled|vctrs_vctr|double,,recoded prolabh1,F9.2,,,TRUE,Retained
+prolabe1,double,numeric,,std of educ in future w/labour t1 (q8e),F8.0,,,TRUE,Retained
+prlbe1re,double,haven_labelled|vctrs_vctr|double,,recoded prolabe1,F9.2,,,TRUE,Retained
+pocketb1,double,numeric,,personal econ situation in future t1(q9),F8.0,,,TRUE,Retained
+pcktb1re,double,haven_labelled|vctrs_vctr|double,,recoded pocketb1,F9.2,,,TRUE,Retained
+taxfair1,double,numeric,,how fair is british tax system t1 (q10),F8.0,,,TRUE,Retained
+txfr1rec,double,haven_labelled|vctrs_vctr|double,,recoded taxfair1,F9.2,,,TRUE,Retained
+taxrich1,double,numeric,,"incomes of l50,000 pay more tax t1 (q11)",F8.0,,,TRUE,Retained
+txrch1re,double,haven_labelled|vctrs_vctr|double,,recoded taxrich1,F9.2,,,TRUE,Retained
+redstr1,double,numeric,,position on inc. redistribution t1 (q12),F8.0,,,TRUE,Retained
+rdstr1re,double,haven_labelled|vctrs_vctr|double,,recoded redstr1,F9.2,,,TRUE,Retained
+rdstr1_a,double,haven_labelled|vctrs_vctr|double,,recoded redstr1 with dks placed at midpoint,F9.2,,,TRUE,Retained
+gmnrdstr,double,numeric,,group mean on rdstr1re (excl. respondent),F9.2,,,TRUE,Retained
+gmnrds_a,double,numeric,,group mean on rdstr1re (excl. respondent) with dks placed at midpoint,F9.2,,,TRUE,Retained
+redstc1,double,numeric,,conserv pty view of inc. redist t1 (q12),F8.0,,,TRUE,Retained
+rdstc1co,double,haven_labelled|vctrs_vctr|double,,did respondent correctly place conservative party on redistribution? (redstc1<4),F8.0,,,TRUE,Retained
+rdstc1re,double,haven_labelled|vctrs_vctr|double,,recoded redstc1,F9.2,,,TRUE,Retained
+rdstc1_a,double,haven_labelled|vctrs_vctr|double,,recoded redstc1 with dks placed at midpoint,F9.2,,,TRUE,Retained
+gmnrdstc,double,numeric,,group mean on rdstc1re (excl. respondent) with dks at midpoint,F9.2,,,TRUE,Retained
+redstl1,double,numeric,,labour party view of inc redist t1 (q12),F8.0,,,TRUE,Retained
+rdstl1co,double,haven_labelled|vctrs_vctr|double,,did respondent correctly place labour party on redistribution? (redstl1>=5),F8.0,,,TRUE,Retained
+rdstl1re,double,haven_labelled|vctrs_vctr|double,,recoded redstl1,F9.2,,,TRUE,Retained
+rdstl1_a,double,haven_labelled|vctrs_vctr|double,,recoded redstl1 with dks placed at midpoint,F9.2,,,TRUE,Retained
+gmnrdstl,double,numeric,,group mean on recoded redstl1 (excl. respondent) with dks at midpoint,F9.2,,,TRUE,Retained
+redstld1,double,numeric,,liberal dems view of inc redist t1 (q12),F8.0,,,TRUE,Retained
+rdstld1c,double,haven_labelled|vctrs_vctr|double,,did respondent correctly place lib dems on redistribution? (redstld1>=5),F8.0,,,TRUE,Retained
+rdstld1r,double,haven_labelled|vctrs_vctr|double,,recoded redstld1,F9.2,,,TRUE,Retained
+rdstld_a,double,haven_labelled|vctrs_vctr|double,,recoded redstld1 with dks placed at midpoint,F9.2,,,TRUE,Retained
+gmnrds_b,double,numeric,,group mean on recoded redstld1 (excl. respondent),F9.2,,,TRUE,Retained
+taxr1,double,numeric,,r: taxing for social services? t1 (q13),F8.0,,,TRUE,Retained
+txr1re,double,haven_labelled|vctrs_vctr|double,,recoded taxr1,F9.2,,,TRUE,Retained
+txr1redk,double,haven_labelled|vctrs_vctr|double,,recoded taxr1 with dks placed at midpoint,F9.2,,,TRUE,Retained
+gmntxr1r,double,numeric,,group mean on txr1re (excl. respondent),F9.2,,,TRUE,Retained
+gmntxr_a,double,numeric,,"group mean on txr1re (excl. respondent), with dks placed at midpoint",F8.0,,,TRUE,Retained
+taxc1,double,numeric,,conservative pty view of taxing t1 (q13),F8.0,,,TRUE,Retained
+taxc1cor,double,haven_labelled|vctrs_vctr|double,,did respondent correctly place conservative party on tax? (taxc1<4),F8.0,,,TRUE,Retained
+txc1re,double,haven_labelled|vctrs_vctr|double,,recoded taxc1,F9.2,,,TRUE,Retained
+txc1redk,double,haven_labelled|vctrs_vctr|double,,recoded taxc1 with dks placed at midpoint,F9.2,,,TRUE,Retained
+taxl1,double,numeric,,labour pty view of taxing t1 (q13),F8.0,,,TRUE,Retained
+taxl1cor,double,haven_labelled|vctrs_vctr|double,,did respondent correctly place labour party on tax? (taxl1>=5),F8.0,,,TRUE,Retained
+txl1re,double,haven_labelled|vctrs_vctr|double,,recoded taxl1,F9.2,,,TRUE,Retained
+txl1redk,double,haven_labelled|vctrs_vctr|double,,recoded taxl1 with dks placed at midpoint,F9.2,,,TRUE,Retained
+taxld1,double,numeric,,liberal democrat view of taxing t1 (q13),F8.0,,,TRUE,Retained
+taxld1co,double,haven_labelled|vctrs_vctr|double,,did respondent correctly place lib dems on tax? (taxld1>=5),F8.0,,,TRUE,Retained
+txld1re,double,haven_labelled|vctrs_vctr|double,,recoded taxld1,F9.2,,,TRUE,Retained
+txld1red,double,haven_labelled|vctrs_vctr|double,,recoded taxld1 with dks placed at midpoint,F9.2,,,TRUE,Retained
+wager1,double,numeric,,respondent's position on minimum wage,F8.0,,,TRUE,Retained
+wger1re,double,haven_labelled|vctrs_vctr|double,,recoded wager1,F9.2,,,TRUE,Retained
+wger1red,double,haven_labelled|vctrs_vctr|double,,recoded wager1 with dks placed at midpoint,F9.2,,,TRUE,Retained
+gmnwger1,double,numeric,,group mean on wger1re (excl. respondent),F9.2,,,TRUE,Retained
+gmnwge_a,double,numeric,,group mean on wger1re (excl. respondent) with dks placed at midpoint,F9.2,,,TRUE,Retained
+wagec1,double,numeric,,conserv pty view of min. wage t1 (q14),F8.0,,,TRUE,Retained
+wgec1cor,double,haven_labelled|vctrs_vctr|double,,did respondent correctly place conservative party on minimum wage? (wagec1<4),F8.0,,,TRUE,Retained
+wgec1re,double,haven_labelled|vctrs_vctr|double,,recoded wagec1,F9.2,,,TRUE,Retained
+wgec1red,double,haven_labelled|vctrs_vctr|double,,recoded wagec1 with dks placed at midpoint,F9.2,,,TRUE,Retained
+gmnwgec1,double,numeric,,group mean on wagec1 (excl. respondent) with dks placed at midpoint,F9.2,,,TRUE,Retained
+wagel1,double,numeric,,labour party view of min wage t1 (q14),F8.0,,,TRUE,Retained
+wgel1cor,double,haven_labelled|vctrs_vctr|double,,did respondent correctly place labour party on minimum wage? (wagel1>=5),F8.0,,,TRUE,Retained
+wgel1re,double,haven_labelled|vctrs_vctr|double,,recoded wagel1re,F9.2,,,TRUE,Retained
+wgel1red,double,haven_labelled|vctrs_vctr|double,,recoded wagel1 with dks placed at midpoint,F9.2,,,TRUE,Retained
+wageld1,double,numeric,,liberal dem. view of min wage t1 (q14),F8.0,,,TRUE,Retained
+wgeld1co,double,haven_labelled|vctrs_vctr|double,,did respondent correctly place lib dems on minimum wage? (wageld1>=5),F8.0,,,TRUE,Retained
+wgeld1re,double,haven_labelled|vctrs_vctr|double,,recoded wageld1,F9.2,,,TRUE,Retained
+wgeld1_a,double,haven_labelled|vctrs_vctr|double,,recoded wageld1 with dks placed at midpoint,F9.2,,,TRUE,Retained
+gmnwgeld,double,numeric,,group mean on wageld1 (excl. respondent) with dks placed at midpoint,F9.2,,,TRUE,Retained
+eur1,double,numeric,,r: role in european union? t1 (q15),F8.0,,,TRUE,Retained
+eur1re,double,haven_labelled|vctrs_vctr|double,,recoded eur1,F9.2,,,TRUE,Retained
+eur1redk,double,haven_labelled|vctrs_vctr|double,,recoded eur1 with dks placed at midpoint,F9.2,,,TRUE,Retained
+gmneur1r,double,numeric,,group mean on eur1re (excl. respondent),F9.2,,,TRUE,Retained
+gmneur_a,double,numeric,,group mean on eur1re (excl. respondent) with dks placed at midpoint,F9.2,,,TRUE,Retained
+euc1,double,numeric,,conservative pty view on e.u. t1 (q15),F8.0,,,TRUE,Retained
+euc1cor,double,haven_labelled|vctrs_vctr|double,,did respondent correctly place conservative party on eu? (euc1<4),F8.0,,,TRUE,Retained
+euc1re,double,haven_labelled|vctrs_vctr|double,,recoded euc1,F9.2,,,TRUE,Retained
+euc1redk,double,haven_labelled|vctrs_vctr|double,,recoded euc1 with dks placed at midpoint,F9.2,,,TRUE,Retained
+eul1,double,numeric,,labour pty view of europe union t1 (q15),F8.0,,,TRUE,Retained
+eul1cor,double,haven_labelled|vctrs_vctr|double,,did respondent correctly place labour party on eu? (eul1>=5),F8.0,,,TRUE,Retained
+eul1re,double,haven_labelled|vctrs_vctr|double,,recoded eul1re,F9.2,,,TRUE,Retained
+eul1redk,double,haven_labelled|vctrs_vctr|double,,recoded eul1 with dks placed at midpoint,F9.2,,,TRUE,Retained
+gmneul1r,double,numeric,,group mean on eul1redk (excl. respondent) with dks at midpoint,F9.2,,,TRUE,Retained
+euld1,double,numeric,,liberal democrat view of e.u. t1 (q15),F8.0,,,TRUE,Retained
+euld1cor,double,haven_labelled|vctrs_vctr|double,,did respondent correctly place lib dems on tax? (euld1>=5),F8.0,,,TRUE,Retained
+euld1re,double,haven_labelled|vctrs_vctr|double,,recoded euld1,F9.2,,,TRUE,Retained
+euld1red,double,haven_labelled|vctrs_vctr|double,,recoded euld1 with dks placed at midpoint,F9.2,,,TRUE,Retained
+gmneuld1,double,numeric,,group mean on euld1redk (excl. respondent) with dks at midpoint,F9.2,,,TRUE,Retained
+eutax1,double,numeric,,britain is overtaxed t1 (q16a),F8.0,,,TRUE,Retained
+eutax1re,double,haven_labelled|vctrs_vctr|double,,recoded eutax1,F9.2,,,TRUE,Retained
+eugov1,double,numeric,,brit spends little on pub svcs t1 (q16b),F8.0,,,TRUE,Retained
+eugov1re,double,haven_labelled|vctrs_vctr|double,,recoded eugov1,F9.2,,,TRUE,Retained
+eupound1,double,numeric,,britain must keep pound t1 (q16c),F8.0,,,TRUE,Retained
+eupnd1re,double,haven_labelled|vctrs_vctr|double,,recoded eupound1,F9.2,,,TRUE,Retained
+inflat1,double,numeric,,inflation has been < 5%? t1 (q17a),F8.0,,,TRUE,Retained
+intrst1,double,numeric,,bank of eng decides interest rt?t1(q17b),F8.0,,,TRUE,Retained
+ukempl1,double,numeric,,unemployment in uk > germany t1? (q17c),F8.0,,,TRUE,Retained
+conrich1,double,numeric,,"if cons wins, fate of high inc t1 (q18a)",F8.0,,,TRUE,Retained
+cnrch1re,double,haven_labelled|vctrs_vctr|double,,recoded conrich1,F9.2,,,TRUE,Retained
+conpoor1,double,numeric,,"if cons wins, fate of low inc t1 (q18b)",F8.0,,,TRUE,Retained
+cnpr1re,double,haven_labelled|vctrs_vctr|double,,recoded conpoor1,F9.2,,,TRUE,Retained
+conwelf1,double,numeric,,"if c wins,fate of ppl benefits t1 (q18c)",F8.0,,,TRUE,Retained
+cnwelf1r,double,haven_labelled|vctrs_vctr|double,,recoded conwelf1,F9.2,,,TRUE,Retained
+conpens1,double,numeric,,"if cons wins,fate of pensioners t1(q18d)",F8.0,,,TRUE,Retained
+cnpns1re,double,haven_labelled|vctrs_vctr|double,,recoded conpens1,F9.2,,,TRUE,Retained
+labrich1,double,numeric,,"if labour wins,fate of high inc t1(q19a)",F8.0,,,TRUE,Retained
+lbrch1re,double,haven_labelled|vctrs_vctr|double,,recoded labrich1,F9.2,,,TRUE,Retained
+labpoor1,double,numeric,,"if labour wins,fate of low inc t1 (q19b)",F8.0,,,TRUE,Retained
+lbpr1re,double,haven_labelled|vctrs_vctr|double,,recoded labpoor1,F9.2,,,TRUE,Retained
+labwelf1,double,numeric,,"if l wins,fate of ppl benefits t1 (q19c)",F8.0,,,TRUE,Retained
+lbwlf1re,double,haven_labelled|vctrs_vctr|double,,recoded labwelf1,F9.2,,,TRUE,Retained
+labpens1,double,numeric,,"if lab wins, fate of pensioners t1(q19d)",F8.0,,,TRUE,Retained
+lbpns1re,double,haven_labelled|vctrs_vctr|double,,recoded labpens1,F9.2,,,TRUE,Retained
+voteint1,double,numeric,,vote choice if election tomorrow t1(q20),F8.0,,,TRUE,Retained
+vtint1re,double,haven_labelled|vctrs_vctr|double,,recoded voteint1,F8.0,,,TRUE,Retained
+votesur1,double,numeric,,certainty of vote choice t1 (q21),F8.0,,,TRUE,Retained
+vtsr1re,double,haven_labelled|vctrs_vctr|double,,recoded votesur1,F9.2,,,TRUE,Retained
+turnout1,double,numeric,,liklihood of r voting t1 (q22),F8.0,,,TRUE,Retained
+trnt1re,double,haven_labelled|vctrs_vctr|double,,recoded turnout1,F9.2,,,TRUE,Retained
+ukdem1,double,numeric,,does democracy work in brit.? t1 (q23),F8.0,,,TRUE,Retained
+ukdm1re,double,haven_labelled|vctrs_vctr|double,,recoded ukdem1,F9.2,,,TRUE,Retained
+fearcon1,double,numeric,,fear future if conserv wins t1 (q24a),F8.0,,,TRUE,Retained
+frcn1re,double,haven_labelled|vctrs_vctr|double,,recoded fearcon1,F9.2,,,TRUE,Retained
+fearlab1,double,numeric,,fear future if labour wins t1 (q24b),F8.0,,,TRUE,Retained
+frlb1re,double,haven_labelled|vctrs_vctr|double,,recoded fearlab1,F9.2,,,TRUE,Retained
+econld1,double,numeric,,economy better with lib dems t1 (q24c),F8.0,,,TRUE,Retained
+ecld1re,double,haven_labelled|vctrs_vctr|double,,recoded econld1,F9.2,,,TRUE,Retained
+listen1,double,numeric,,pol opinions worth listening to t1(q24d),F8.0,,,TRUE,Retained
+lstn1re,double,haven_labelled|vctrs_vctr|double,,recoded listen1,F9.2,,,TRUE,Retained
+int2,double,numeric,,interest in politics generally t2 (q1),F8.0,,,TRUE,Retained
+feelcon2,double,numeric,,feelings about conservative pty t2 (q2a),F8.0,,,TRUE,Retained
+feellab2,double,numeric,,feelings about labour party t2 (q2b),F8.0,,,TRUE,Retained
+feelld2,double,numeric,,feelings about liberal democrats t2(q2c),F8.0,,,TRUE,Retained
+feelref2,double,numeric,,feelings about referendum party t2 (q2d),F8.0,,,TRUE,Retained
+feelsco2,double,numeric,,"if scotish, feelings natlist pty t2(q2e)",F8.0,,,TRUE,Retained
+feelwal2,double,numeric,,"if welsh, feelings plaid cymru t2 (q2f)",F8.0,,,TRUE,Retained
+econret2,double,numeric,,strength of economy from past t2 (q3),F8.0,,,TRUE,Retained
+ecr2reco,double,haven_labelled|vctrs_vctr|double,,recoded econret2,F9.2,,,TRUE,Retained
+inflret2,double,numeric,,inflation rate up from past t2 (q4a),F8.0,,,TRUE,Retained
+inr2reco,double,haven_labelled|vctrs_vctr|double,,recoded inflret2,F9.2,,,TRUE,Retained
+unemret2,double,numeric,,unemployment rate up from past t2 (q4b),F8.0,,,TRUE,Retained
+unr2reco,double,haven_labelled|vctrs_vctr|double,,recoded unemret2,F9.2,,,TRUE,Retained
+taxret2,double,numeric,,tax rate up from past t2 (q4c),F8.0,,,TRUE,Retained
+txr2reco,double,haven_labelled|vctrs_vctr|double,,recoded taxret2,F9.2,,,TRUE,Retained
+hcret2,double,numeric,,ntl health service up from past t2 (q4d),F8.0,,,TRUE,Retained
+hcr2reco,double,haven_labelled|vctrs_vctr|double,,recoded hcret2,F9.2,,,TRUE,Retained
+educret2,double,numeric,,education up from past t2 (q4e),F8.0,,,TRUE,Retained
+edr2reco,double,haven_labelled|vctrs_vctr|double,,recoded educret2,F9.2,,,TRUE,Retained
+procon2,double,numeric,,fut strength of econ w/conserv t2 (q5),F8.0,,,TRUE,Retained
+prcn2rec,double,haven_labelled|vctrs_vctr|double,,recoded procon2,F9.2,,,TRUE,Retained
+prolab2,double,numeric,,fut strength of econ w/labour t2 (q6),F8.0,,,TRUE,Retained
+prlb2rec,double,haven_labelled|vctrs_vctr|double,,recoded prolab2,F9.2,,,TRUE,Retained
+proconi2,double,numeric,,inflation up in future w/consrv t2 (q7a),F8.0,,,TRUE,Retained
+prcni2re,double,haven_labelled|vctrs_vctr|double,,recoded proconi2,F8.0,,,TRUE,Retained
+proconu2,double,numeric,,unemploymnt up in future w/consv t2(q7b),F8.0,,,TRUE,Retained
+prcnu2re,double,haven_labelled|vctrs_vctr|double,,recoded proconu2,F9.2,,,TRUE,Retained
+procont2,double,numeric,,taxes up in future w/conserv. t2 (q7c),F8.0,,,TRUE,Retained
+prcnt2re,double,haven_labelled|vctrs_vctr|double,,recoded procont2,F9.2,,,TRUE,Retained
+proconh2,double,numeric,,quality health care in fut w/con t2(q7d),F8.0,,,TRUE,Retained
+prcnh2re,double,haven_labelled|vctrs_vctr|double,,recoded proconh2,F9.2,,,TRUE,Retained
+procone2,double,numeric,,std of education in fut w/consv t2 (q7e),F8.0,,,TRUE,Retained
+prcne2re,double,haven_labelled|vctrs_vctr|double,,recoded procone2,F9.2,,,TRUE,Retained
+prolabi2,double,numeric,,inflation up in future w/labour t2 (q8a),F8.0,,,TRUE,Retained
+prlbi2re,double,haven_labelled|vctrs_vctr|double,,recoded prolabi2,F9.2,,,TRUE,Retained
+prolabu2,double,numeric,,unemployment up in future w/lab t2 (q8b),F8.0,,,TRUE,Retained
+prlbu2re,double,haven_labelled|vctrs_vctr|double,,recoded prolabu2,F9.2,,,TRUE,Retained
+prolabt2,double,numeric,,taxes up in future w/labour t2 (q8c),F8.0,,,TRUE,Retained
+prlbt2re,double,haven_labelled|vctrs_vctr|double,,recoded prolabt2,F9.2,,,TRUE,Retained
+prolabh2,double,numeric,,quality health care in fut w/lab t2(q8d),F8.0,,,TRUE,Retained
+prlbh2re,double,haven_labelled|vctrs_vctr|double,,recoded prolabh2,F9.2,,,TRUE,Retained
+prolabe2,double,numeric,,std of educ in future w/labour t2 (q8e),F8.0,,,TRUE,Retained
+prlbe2re,double,haven_labelled|vctrs_vctr|double,,recoded prolabe2,F9.2,,,TRUE,Retained
+pocketb2,double,numeric,,personal econ situation in future t2(q9),F8.0,,,TRUE,Retained
+pcktb2re,double,haven_labelled|vctrs_vctr|double,,recoded pocketb2,F9.2,,,TRUE,Retained
+taxfair2,double,numeric,,how fair is british tax system t2 (q10),F8.0,,,TRUE,Retained
+txfr2rec,double,haven_labelled|vctrs_vctr|double,,recoded taxfair2,F9.2,,,TRUE,Retained
+taxrich2,double,numeric,,"incomes of l50,000 pay more tax t2 (q11)",F8.0,,,TRUE,Retained
+txrch2re,double,haven_labelled|vctrs_vctr|double,,recoded taxrich2,F9.2,,,TRUE,Retained
+redstr2,double,numeric,,position on inc. redistribution t2 (q12),F8.0,,,TRUE,Retained
+rdstr2re,double,haven_labelled|vctrs_vctr|double,,recoded redstr2,F9.2,,,TRUE,Retained
+rdstr2_a,double,haven_labelled|vctrs_vctr|double,,recoded redstr2 with dks placed at midpoint,F9.2,,,TRUE,Retained
+redstc2,double,numeric,,conserv pty view of inc. redist t2 (q12),F8.0,,,TRUE,Retained
+rdstc2co,double,haven_labelled|vctrs_vctr|double,,t2 did respondent correctly place conservative party on redistribution? (redstc1,F8.0,,,TRUE,Retained
+rdstc2re,double,haven_labelled|vctrs_vctr|double,,recoded redstc2,F9.2,,,TRUE,Retained
+rdstc2_a,double,haven_labelled|vctrs_vctr|double,,recoded redstc2 with dks placed at midpoint,F9.2,,,TRUE,Retained
+redstl2,double,numeric,,labour party view of inc redist t2 (q12),F8.0,,,TRUE,Retained
+rdstl2co,double,haven_labelled|vctrs_vctr|double,,t2 did respondent correctly place labour party on redistribution? (redstl1>=5),F8.0,,,TRUE,Retained
+rdstl2re,double,haven_labelled|vctrs_vctr|double,,recoded redstl2,F9.2,,,TRUE,Retained
+rdstl2_a,double,haven_labelled|vctrs_vctr|double,,recoded redstl2 with dks placed at midpoint,F9.2,,,TRUE,Retained
+redstld2,double,numeric,,liberal dems view of inc redist t2 (q12),F8.0,,,TRUE,Retained
+rdstld2c,double,haven_labelled|vctrs_vctr|double,,t2 did respondent correctly place lib dems on redistribution? (redstld1>=5),F8.0,,,TRUE,Retained
+rdsld2re,double,haven_labelled|vctrs_vctr|double,,recoded redstld2,F9.2,,,TRUE,Retained
+rdsld2_a,double,haven_labelled|vctrs_vctr|double,,recoded redstld2 with dks placed at midpoint,F9.2,,,TRUE,Retained
+taxr2,double,numeric,,r: taxing for social services? t2 (q13),F8.0,,,TRUE,Retained
+taxr2re,double,haven_labelled|vctrs_vctr|double,,recoded taxr2,F9.2,,,TRUE,Retained
+taxr2red,double,haven_labelled|vctrs_vctr|double,,recoded taxr2 with dks placed at midpoint,F9.2,,,TRUE,Retained
+taxc2,double,numeric,,conservative pty view of taxing t2 (q13),F8.0,,,TRUE,Retained
+taxc2cor,double,haven_labelled|vctrs_vctr|double,,t2 did respondent correctly place conservative party on tax? (taxc1<4),F8.0,,,TRUE,Retained
+taxc2re,double,haven_labelled|vctrs_vctr|double,,recoded taxc2,F9.2,,,TRUE,Retained
+taxc2red,double,haven_labelled|vctrs_vctr|double,,recoded taxc2 with dks placed at midpoint,F9.2,,,TRUE,Retained
+taxl2,double,numeric,,labour pty view of taxing t2 (q13),F8.0,,,TRUE,Retained
+taxl2cor,double,haven_labelled|vctrs_vctr|double,,t2 did respondent correctly place labour party on tax? (taxl1>=5),F8.0,,,TRUE,Retained
+taxl2re,double,haven_labelled|vctrs_vctr|double,,recoded taxl2,F9.2,,,TRUE,Retained
+taxl2red,double,haven_labelled|vctrs_vctr|double,,recoded taxl2 with dks placed at midpoint,F9.2,,,TRUE,Retained
+taxld2,double,numeric,,liberal democrat view of taxing t2 (q13),F8.0,,,TRUE,Retained
+taxld2co,double,haven_labelled|vctrs_vctr|double,,t2 did respondent correctly place lib dems on tax? (taxld1>=5),F8.0,,,TRUE,Retained
+taxld2re,double,haven_labelled|vctrs_vctr|double,,recoded taxld2,F9.2,,,TRUE,Retained
+taxld2_a,double,haven_labelled|vctrs_vctr|double,,recoded taxld2 with dks placed at midpoint,F9.2,,,TRUE,Retained
+wager2,double,numeric,,view on introducing minimum wage t2(q14),F8.0,,,TRUE,Retained
+wger2re,double,haven_labelled|vctrs_vctr|double,,recoded wager2,F9.2,,,TRUE,Retained
+wger2red,double,haven_labelled|vctrs_vctr|double,,recoded wager2 with dks placed at midpoint,F9.2,,,TRUE,Retained
+wagec2,double,numeric,,conserv pty view of min. wage t2 (q14),F8.0,,,TRUE,Retained
+wgec2cor,double,haven_labelled|vctrs_vctr|double,,t2 did respondent correctly place conservative party on tax? (wagec1<4),F8.0,,,TRUE,Retained
+wgec2re,double,haven_labelled|vctrs_vctr|double,,recoded wagec2,F9.2,,,TRUE,Retained
+wgec2red,double,haven_labelled|vctrs_vctr|double,,recoded wagec2 with dks placed at midpoint,F9.2,,,TRUE,Retained
+wagel2,double,numeric,,labour party view of min wage t2 (q14),F8.0,,,TRUE,Retained
+wgel2cor,double,haven_labelled|vctrs_vctr|double,,t2 did respondent correctly place labour party on tax? (wagel1>=5),F8.0,,,TRUE,Retained
+wgel2re,double,haven_labelled|vctrs_vctr|double,,recoded wagel2,F9.2,,,TRUE,Retained
+wgel2red,double,haven_labelled|vctrs_vctr|double,,recoded wagel2 with dks placed at midpoint,F9.2,,,TRUE,Retained
+wageld2,double,numeric,,liberal dem. view of min wage t2 (q14),F8.0,,,TRUE,Retained
+wgeld2co,double,haven_labelled|vctrs_vctr|double,,t2 did respondent correctly place lib dems on minimum wage? (wageld1>=5),F8.0,,,TRUE,Retained
+wgeld2re,double,haven_labelled|vctrs_vctr|double,,recoded wageld2,F9.2,,,TRUE,Retained
+wgeld2_a,double,haven_labelled|vctrs_vctr|double,,recoded wageld2 with dks placed at midpoint,F9.2,,,TRUE,Retained
+eur2,double,numeric,,r: role in european union? t2 (q15),F8.0,,,TRUE,Retained
+eur2re,double,haven_labelled|vctrs_vctr|double,,recoded eur2,F9.2,,,TRUE,Retained
+eur2redk,double,haven_labelled|vctrs_vctr|double,,recoded eur2 with dks placed at midpoint,F9.2,,,TRUE,Retained
+euc2,double,numeric,,conservative pty view on e.u. t2 (q15),F8.0,,,TRUE,Retained
+euc2cor,double,haven_labelled|vctrs_vctr|double,,t2 did respondent correctly place conservative party on eu? (euc1<4),F8.0,,,TRUE,Retained
+euc2re,double,haven_labelled|vctrs_vctr|double,,recoded euc2,F9.2,,,TRUE,Retained
+euc2redk,double,haven_labelled|vctrs_vctr|double,,recoded euc2 with dks placed at midpoint,F9.2,,,TRUE,Retained
+eul2,double,numeric,,labour pty view of europe union t2 (q15),F8.0,,,TRUE,Retained
+eul2cor,double,haven_labelled|vctrs_vctr|double,,t2 did respondent correctly place labour party on eu? (eul1>=5),F8.0,,,TRUE,Retained
+eul2re,double,haven_labelled|vctrs_vctr|double,,recoded eul2re,F9.2,,,TRUE,Retained
+eul2redk,double,haven_labelled|vctrs_vctr|double,,recoded eul2 with dks placed at midpoint,F9.2,,,TRUE,Retained
+euld2,double,numeric,,liberal democrat view of e.u. t2 (q15),F8.0,,,TRUE,Retained
+euld2cor,double,haven_labelled|vctrs_vctr|double,,t2 did respondent correctly place lib dems on tax? (euld1>=5),F8.0,,,TRUE,Retained
+euld2re,double,haven_labelled|vctrs_vctr|double,,recoded euld2,F9.2,,,TRUE,Retained
+euld2red,double,haven_labelled|vctrs_vctr|double,,recoded euld2 with dks placed at midpoint,F9.2,,,TRUE,Retained
+eutax2,double,numeric,,britain is overtaxed t2 (q16a),F8.0,,,TRUE,Retained
+eutax2re,double,haven_labelled|vctrs_vctr|double,,recoded eutax2,F9.2,,,TRUE,Retained
+eugov2,double,numeric,,brit spends little on pub svcs t2 (q16b),F8.0,,,TRUE,Retained
+eugov2re,double,haven_labelled|vctrs_vctr|double,,recoded eugov2,F9.2,,,TRUE,Retained
+eupound2,double,numeric,,britain must keep pound t2 (q16c),F8.0,,,TRUE,Retained
+eupnd2re,double,haven_labelled|vctrs_vctr|double,,recoded eupound2,F9.2,,,TRUE,Retained
+inflat2,double,numeric,,inflation has been < 5% t2 (q17a),F8.0,,,TRUE,Retained
+intrst2,double,numeric,,bank of eng decides interest rt t2(q17b),F8.0,,,TRUE,Retained
+ukempl2,double,numeric,,unemployment in uk > germany t2 (q17c),F8.0,,,TRUE,Retained
+conrich2,double,numeric,,"if cons wins, fate of high inc t2 (q18a)",F8.0,,,TRUE,Retained
+cnrch2re,double,haven_labelled|vctrs_vctr|double,,recoded conrich2,F9.2,,,TRUE,Retained
+conpoor2,double,numeric,,"if cons wins, fate of low inc t2 (q18b)",F8.0,,,TRUE,Retained
+cnpr2re,double,haven_labelled|vctrs_vctr|double,,recoded conpoor2,F9.2,,,TRUE,Retained
+conwelf2,double,numeric,,"if c wins,fate of ppl benefits t2 (q18c)",F8.0,,,TRUE,Retained
+cnwlf2re,double,haven_labelled|vctrs_vctr|double,,recoded conwelf2,F9.2,,,TRUE,Retained
+conpens2,double,numeric,,"if cons wins,fate of pensioners t2(q18d)",F8.0,,,TRUE,Retained
+cnpns2re,double,haven_labelled|vctrs_vctr|double,,recoded conpens2,F9.2,,,TRUE,Retained
+labrich2,double,numeric,,"if labour wins,fate of high inc t2(q19a)",F8.0,,,TRUE,Retained
+lbrch2re,double,haven_labelled|vctrs_vctr|double,,recoded labrich2,F9.2,,,TRUE,Retained
+labpoor2,double,numeric,,"if labour wins,fate of low inc t2 (q19b)",F8.0,,,TRUE,Retained
+lbpr2re,double,haven_labelled|vctrs_vctr|double,,recoded labpoor2,F9.2,,,TRUE,Retained
+labwelf2,double,numeric,,"if l wins,fate of ppl benefits t2 (q19c)",F8.0,,,TRUE,Retained
+lbwlf2re,double,haven_labelled|vctrs_vctr|double,,recoded labwelf2,F9.2,,,TRUE,Retained
+labpens2,double,numeric,,"if lab wins, fate of pensioners t2(q19d)",F8.0,,,TRUE,Retained
+lbpns2re,double,haven_labelled|vctrs_vctr|double,,recoded labpens2,F9.2,,,TRUE,Retained
+voteint2,double,numeric,,vote choice next weeks election t2 (q20),F8.0,,,TRUE,Retained
+vtint2re,double,haven_labelled|vctrs_vctr|double,,recoded voteint2,F8.0,,,TRUE,Retained
+votesur2,double,numeric,,certainty of vote choice t2 (q21),F8.0,,,TRUE,Retained
+vtsr2re,double,haven_labelled|vctrs_vctr|double,,recoded votesur2,F9.2,,,TRUE,Retained
+turnout2,double,numeric,,liklihood of r voting t2 (q22),F8.0,,,TRUE,Retained
+trnt2re,double,haven_labelled|vctrs_vctr|double,,recoded turnout2,F9.2,,,TRUE,Retained
+ukdem2,double,numeric,,does democracy work in brit.? t2 (q23),F8.0,,,TRUE,Retained
+ukdm2re,double,haven_labelled|vctrs_vctr|double,,recoded ukdem2,F9.2,,,TRUE,Retained
+fearcon2,double,numeric,,fear future if conserv wins t2 (q24a),F8.0,,,TRUE,Retained
+frcn2re,double,haven_labelled|vctrs_vctr|double,,recoded fearcon2,F9.2,,,TRUE,Retained
+fearlab2,double,numeric,,fear future if labour wins t2 (q24b),F8.0,,,TRUE,Retained
+frlb2re,double,haven_labelled|vctrs_vctr|double,,recoded fearlab2,F9.2,,,TRUE,Retained
+econld2,double,numeric,,economy better with lib dems t2 (q24c),F8.0,,,TRUE,Retained
+ecnld2re,double,haven_labelled|vctrs_vctr|double,,recoded econld2,F8.0,,,TRUE,Retained
+listen2,double,numeric,,pol opinions worth listening to t2(q24d),F8.0,,,TRUE,Retained
+lstn2re,double,haven_labelled|vctrs_vctr|double,,recoded listen2,F9.2,,,TRUE,Retained
+grpdisc,double,numeric,,value of group discussions t2 (q25a),F8.0,,,TRUE,Retained
+grpdscre,double,haven_labelled|vctrs_vctr|double,,recoded grpdisc,F9.2,,,TRUE,Retained
+talking,double,numeric,,value: talking outside group t2 (q25b),F8.0,,,TRUE,Retained
+tlkngre,double,haven_labelled|vctrs_vctr|double,,recoded talking,F9.2,,,TRUE,Retained
+experts,double,numeric,,value of the experts sessions t2 (q25c),F8.0,,,TRUE,Retained
+xprtsre,double,haven_labelled|vctrs_vctr|double,,recoded experts,F9.2,,,TRUE,Retained
+pols,double,numeric,,value: the politicians sessions t2(q25d),F8.0,,,TRUE,Retained
+polsre,double,haven_labelled|vctrs_vctr|double,,recoded pols,F9.2,,,TRUE,Retained
+modpart,double,numeric,,moderator allowed participation t2(q26a),F8.0,,,TRUE,Retained
+mdprtre,double,haven_labelled|vctrs_vctr|double,,recoded modpart,F9.2,,,TRUE,Retained
+modinfl,double,numeric,,moderator influenced group t2 (q26b),F8.0,,,TRUE,Retained
+mdinflre,double,haven_labelled|vctrs_vctr|double,,recoded modinfl,F9.2,,,TRUE,Retained
+biasmat,double,numeric,,were the materials biased t2 (q27),F8.0,,,TRUE,Retained
+dopint,double,numeric,,how interesting was the d.o.p. t2 (q28),F8.0,,,TRUE,Retained
+dopintre,double,haven_labelled|vctrs_vctr|double,,recoded dopint,F9.2,,,TRUE,Retained
+turnout3,double,numeric,,post election: did r vote? t3,F8.0,,,TRUE,Retained
+vote3,double,numeric,,post election: rs vote choice t3,F8.0,,,TRUE,Retained
+vote3re,double,haven_labelled|vctrs_vctr|double,,recoded vote3,F8.0,,,TRUE,Retained
+recruit,double,numeric,,outcome of recruitment to manchester,F8.0,,,TRUE,Retained
+partic,double,numeric,,participant in the dop? (1=yes),F8.0,,,TRUE,Retained
+empsum,double,numeric,,summary employment status of cie,F8.0,,,TRUE,Retained
+selfempb,double,numeric,,"cie self-employed? (binary, 1=yes)",F8.0,,,TRUE,Retained
+unionstf,double,numeric,,union or staff assn. member? (from qb13),F8.0,,,TRUE,Retained
+white,double,numeric,,white or non-white (1=non-white),F8.0,,,TRUE,Retained
+unemploy,double,numeric,,receives unemployment benefits? (1=yes),F8.0,,,TRUE,Retained
+incsupp,double,numeric,,receives income support? (1=yes),F8.0,,,TRUE,Retained
+familycr,double,numeric,,receives family credit benefit? (1=yes),F8.0,,,TRUE,Retained
+oneprent,double,numeric,,receives one-parent benfits? (1=yes),F8.0,,,TRUE,Retained
+housing,double,numeric,,receives housing benefit? (1=yes),F8.0,,,TRUE,Retained
+sickpay,double,numeric,,receives statutory sick pay? (1=yes),F8.0,,,TRUE,Retained
+invalid,double,numeric,,receives invalidity benefit (1=yes),F8.0,,,TRUE,Retained
+disable,double,numeric,,receives disability living allowance?,F8.0,,,TRUE,Retained
+widows,double,numeric,,receives widows pension? (1=yes),F8.0,,,TRUE,Retained
+ctax,double,numeric,,receives council tax rebate? (1=yes),F8.0,,,TRUE,Retained
+attend,double,numeric,,receives attendance allowance? (1=yes),F8.0,,,TRUE,Retained
+sdisable,double,numeric,,receives severe disablement allowance?,F8.0,,,TRUE,Retained
+other,double,numeric,,receives assistance not listed above?,F8.0,,,TRUE,Retained
+totalass,double,numeric,,total # of state benefits recieved,F8.0,,,TRUE,Retained
+knowa1,double,numeric,,did r answer inflat1 correctly? (1=yes),F8.0,,,TRUE,Retained
+knowb1,double,numeric,,did r answer intrst1 correctly? (1=yes),F8.0,,,TRUE,Retained
+knowc1,double,numeric,,did r answer ukempl1 correctly? (1=yes),F8.0,,,TRUE,Retained
+knowa2,double,numeric,,did r answer inflat2 correctly? (1=yes),F8.0,,,TRUE,Retained
+knowb2,double,numeric,,did r answer intrst2 correctly? (1=yes),F8.0,,,TRUE,Retained
+knowc2,double,numeric,,did r answer ukempl2 correctly? (1=yes),F8.0,,,TRUE,Retained
+rdstcknc,double,haven_labelled|vctrs_vctr|double,,change in right/wrong on rdstccor from t1 to t2,F8.0,,,TRUE,Retained
+rdstlknc,double,haven_labelled|vctrs_vctr|double,,change in right/wrong on rdstlcor from t1 to t2,F8.0,,,TRUE,Retained
+rdstldkn,double,haven_labelled|vctrs_vctr|double,,change in right/wrong on rdstldcor from t1 to t2,F8.0,,,TRUE,Retained
+taxcknch,double,haven_labelled|vctrs_vctr|double,,change in right/wrong on taxccor from t1 to t2,F8.0,,,TRUE,Retained
+taxlknch,double,haven_labelled|vctrs_vctr|double,,change in right/wrong on taxlcor from t1 to t2,F8.0,,,TRUE,Retained
+taxldknc,double,haven_labelled|vctrs_vctr|double,,change in right/wrong on taxldcor from t1 to t2,F8.0,,,TRUE,Retained
+wgecknch,double,haven_labelled|vctrs_vctr|double,,change in right/wrong on wgeccor from t1 to t2,F8.0,,,TRUE,Retained
+wgelknch,double,haven_labelled|vctrs_vctr|double,,change in right/wrong on wgelcor from t1 to t2,F8.0,,,TRUE,Retained
+wgeldknc,double,haven_labelled|vctrs_vctr|double,,change in right/wrong on wgeldcor from t1 to t2,F8.0,,,TRUE,Retained
+eucknch,double,haven_labelled|vctrs_vctr|double,,change in right/wrong on euccor from t1 to t2,F8.0,,,TRUE,Retained
+eulknch,double,haven_labelled|vctrs_vctr|double,,change in right/wrong on eulcor from t1 to t2,F8.0,,,TRUE,Retained
+euldknch,double,haven_labelled|vctrs_vctr|double,,change in right/wrong on euldcor from t1 to t2,F8.0,,,TRUE,Retained
+rdstc1ab,double,numeric,,absolute difference between respondent and treatment group mean on rdstc at t1,F9.2,,,TRUE,Retained
+rdstl1ab,double,numeric,,,F9.2,,,TRUE,Retained
+rdstld1a,double,numeric,,,F9.2,,,TRUE,Retained
+taxc1abd,double,numeric,,,F9.2,,,TRUE,Retained
+taxl1abd,double,numeric,,,F9.2,,,TRUE,Retained
+taxld1ab,double,numeric,,,F9.2,,,TRUE,Retained
+wgec1abd,double,numeric,,,F9.2,,,TRUE,Retained
+wgel1abd,double,numeric,,,F9.2,,,TRUE,Retained
+wgeld1ab,double,numeric,,,F9.2,,,TRUE,Retained
+euc1abdi,double,numeric,,,F9.2,,,TRUE,Retained
+eul1abdi,double,numeric,,,F9.2,,,TRUE,Retained
+euld1abd,double,numeric,,,F9.2,,,TRUE,Retained
+rdstc2ab,double,numeric,,,F9.2,,,TRUE,Retained
+rdstl2ab,double,numeric,,,F9.2,,,TRUE,Retained
+rdstld2a,double,numeric,,,F9.2,,,TRUE,Retained
+taxc2abd,double,numeric,,,F9.2,,,TRUE,Retained
+taxl2abd,double,numeric,,,F9.2,,,TRUE,Retained
+taxld2ab,double,numeric,,,F9.2,,,TRUE,Retained
+wgec2abd,double,numeric,,,F9.2,,,TRUE,Retained
+wgel2abd,double,numeric,,,F9.2,,,TRUE,Retained
+wgeld2ab,double,numeric,,,F9.2,,,TRUE,Retained
+euc2abdi,double,numeric,,,F9.2,,,TRUE,Retained
+eul2abdi,double,numeric,,,F9.2,,,TRUE,Retained
+euld2abd,double,numeric,,,F9.2,,,TRUE,Retained
+rdstctab,double,numeric,,difference between t1 and t2 (t2 - t1) on abs val of dist from r's t1 pos & trtm,F9.2,,,TRUE,Retained
+rdstltab,double,numeric,,,F9.2,,,TRUE,Retained
+rdstldta,double,numeric,,,F9.2,,,TRUE,Retained
+taxctabd,double,numeric,,,F9.2,,,TRUE,Retained
+taxltabd,double,numeric,,,F9.2,,,TRUE,Retained
+taxldtab,double,numeric,,,F9.2,,,TRUE,Retained
+wgectabd,double,numeric,,,F9.2,,,TRUE,Retained
+wgeltabd,double,numeric,,,F9.2,,,TRUE,Retained
+wgeldtab,double,numeric,,,F9.2,,,TRUE,Retained
+euctabdi,double,numeric,,,F9.2,,,TRUE,Retained
+eultabdi,double,numeric,,,F9.2,,,TRUE,Retained
+euldtabd,double,numeric,,,F9.2,,,TRUE,Retained
+filter,double,haven_labelled|vctrs_vctr|double,,partic=1 (filter),F8.0,,,TRUE,Retained
+ecld2re,double,numeric,,,F9.2,,,TRUE,Retained
+t1redist,double,numeric,,t1 relabel rdstr1re - redistribution index,F9.2,,,TRUE,Retained
+t2redist,double,numeric,,t2 relabel rdstr2re - redistribution index,F9.2,,,TRUE,Retained
+t1tax,double,numeric,,t1 relabel txr1re - tax index,F9.2,,,TRUE,Retained
+t2tax,double,numeric,,t2 relabel txr2re - tax index,F9.2,,,TRUE,Retained
+t1wage,double,numeric,,t1 relabel wger1re - minimum wage index,F9.2,,,TRUE,Retained
+t2wage,double,numeric,,t2 relabel wger2re - minimum wage index,F9.2,,,TRUE,Retained
+t2eu,double,numeric,,t2 relabel eur2re - EU index,F9.2,,,TRUE,Retained
+t1eu,double,numeric,,t1 relabel eur1re - EU index,F9.2,,,TRUE,Retained
+educolle,double,numeric,,,F9.2,,,TRUE,Retained
+highinco,double,numeric,,,F9.2,,,TRUE,Retained
+ChangeRestr,double,numeric,,T2 -T1 change in redistribution,F8.2,,,TRUE,Retained
+ChangeTax,double,numeric,,T2 - T1 Change in attitudes for Tax,F8.2,,,TRUE,Retained
+ChangeWage,double,numeric,,T2 -T1 change in Wage,F8.2,,,TRUE,Retained
+ChangeEU,double,numeric,,t2 - t1 change in EU,F8.2,,,TRUE,Retained
+DummyEthnic,double,numeric,,White Non White Dummy,F8.2,,,TRUE,Retained
+CountryDummy,double,numeric,,Country Dummy,F8.2,,,TRUE,Retained
+AbsChRedestr,double,numeric,,Absolute Change in Redist t2-t1,F8.2,,,TRUE,Retained
+AbsChTax,double,numeric,,Absolute Change in Tax t2-t1,F8.2,,,TRUE,Retained
+AbsChWage,double,numeric,,Absolute Change in Wage t2-t1,F8.2,,,TRUE,Retained
+AbsChEU,double,numeric,,Absolute Change in EU t2-t1,F8.2,,,TRUE,Retained
+Education7Cat,double,numeric,,Education in 7 Categories,F8.2,,,TRUE,Retained
+KnowledgeChangeFact,double,numeric,,Change in Knowledge of Facts (3 Factual Questions),F8.2,,,TRUE,Retained
+KnowledgeChangeTot,double,numeric,,Knowledge Change in Facts plus Party Placements,F8.2,,,TRUE,Retained

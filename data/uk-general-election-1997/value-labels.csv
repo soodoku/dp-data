@@ -1,0 +1,726 @@
+source_column,source_value,value_label
+educreco,0,other quals
+educreco,1,a-levels/nvq3+
+mastreco,1,married/committed
+mastreco,2,single/divorced/widowed
+carereco,-9,not answered
+carereco,-8,don't know
+carereco,0,care a little
+carereco,1,care a lot
+hndoreco,-8,dk
+hndoreco,0,agree
+hndoreco,1,agree strongly
+rdstreco,-9,not answered
+rdstreco,-8,dk
+rdstreco,0,agree
+rdstreco,1,agree strongly
+bgbsreco,-9,not answered
+bgbsreco,-8,dk
+bgbsreco,0,agree
+bgbsreco,1,agree strongly
+blksreco,-9,not answered
+blksreco,-8,dk
+blksreco,0,agree
+blksreco,1,agree strongly
+dflwreco,-9,not answered
+dflwreco,-8,dk
+dflwreco,0,agree
+dflwreco,1,agree strongly
+mgmtreco,-9,not answered
+mgmtreco,-8,dk
+mgmtreco,0,agree
+mgmtreco,1,agree strongly
+dbstreco,-9,not answered
+dbstreco,-8,dk
+dbstreco,0,agree
+dbstreco,1,agree strongly
+pidreco,-9,not answered/dk/refused
+pidreco,0,none
+pidreco,1,conservative
+pidreco,2,labour
+pidreco,3,liberal democrat
+pidreco,4,other
+pilnreco,-9,refused/dk/no ans
+pilnreco,-1,n/a
+pilnreco,0,none
+pilnreco,1,conservative
+pilnreco,2,labour
+pilnreco,3,liberal democrat
+pilnreco,4,other
+pidsreco,-9,not answered/dk
+pidsreco,1,not v. strong
+pidsreco,2,fairly strong
+pidsreco,3,very strong
+emplreco,-9,missing
+emplreco,1,employed ft
+emplreco,2,employed pt
+emplreco,3,unemployed
+emplreco,4,retired
+emplreco,5,homemaker
+emplreco,6,education/training
+emplreco,7,perm disabled
+emplreco,8,other
+ciereco,0,no
+ciereco,1,yes
+increco,-9,not answered/dk
+increco,1,less than 10k
+increco,2,"10k to 19,999"
+increco,3,"20k to 31,999"
+increco,4,"32k to 40,999"
+increco,5,more than 41k
+truareco,0,most of the time
+truareco,1,just about always
+trubreco,0,most of the time
+trubreco,1,just about always
+int1reco,-9,not answered
+int1reco,-8,don't know
+int1reco,1,not at all
+int1reco,2,not very much
+int1reco,3,some
+int1reco,4,quite a lot
+int1reco,5,a great deal
+flcn1rec,-9,not ans/dk
+flcn1rec,0,in favour
+flcn1rec,1,strongly in favour
+feellab1,-9,not ans/dk
+feellab1,-8,don't know
+feellab1,0,in favour
+feellab1,1,strongly in favour
+flla1rec,-9,not ans/dk
+flla1rec,0,in favour
+flla1rec,1,strongly in favour
+flld1rec,-9,not ans/dk
+flld1rec,0,in favour
+flld1rec,1,strongly in favour
+ecr1reco,-9,not answered
+ecr1reco,-8,dk
+ecr1reco,0,got a little stronger
+ecr1reco,1,got a lot stronger
+inr1reco,-9,not answered
+inr1reco,-8,dk
+inr1reco,0,gone up a little
+inr1reco,1,gone up a lot
+unr1reco,-9,not answered
+unr1reco,-8,dk
+unr1reco,0,gone up a little
+unr1reco,1,gone up a lot
+txr1reco,-9,not answered
+txr1reco,-8,dk
+txr1reco,0,gone up a little
+txr1reco,1,gone up a lot
+hcr1reco,-9,not answered
+hcr1reco,-8,dk
+hcr1reco,0,gone up a little
+hcr1reco,1,gone up a lot
+edr1reco,-9,not answered
+edr1reco,-8,dk
+edr1reco,0,gone up a little
+edr1reco,1,gone up a lot
+prcn1rec,-9,not answered
+prcn1rec,-8,dk
+prcn1rec,0,get a little stronger
+prcn1rec,1,get a lot stronger
+prlb1rec,-9,not answered
+prlb1rec,-8,dk
+prlb1rec,0,get a little stronger
+prlb1rec,1,get a lot stronger
+prcni1re,-9,not answered
+prcni1re,-8,dk
+prcni1re,0,go up a little
+prcni1re,1,go up a lot
+prcnu1re,-9,not answered
+prcnu1re,-8,dk
+prcnu1re,0,go up a little
+prcnu1re,1,go up a lot
+prcnt1re,-9,not answered
+prcnt1re,-8,dk
+prcnt1re,0,go up a little
+prcnt1re,1,go up a lot
+prcnh1re,-9,not answered
+prcnh1re,-8,dk
+prcnh1re,0,go up a little
+prcnh1re,1,go up a lot
+prcne1re,-9,not answered
+prcne1re,-8,dk
+prcne1re,0,go up a little
+prcne1re,1,go up a lot
+prlbi1re,-9,not answered
+prlbi1re,-8,dk
+prlbi1re,0,go up a little
+prlbi1re,1,go up a lot
+prlbu1re,-9,not answered
+prlbu1re,-8,dk
+prlbu1re,0,go up a little
+prlbu1re,1,go up a lot
+prlbt1re,-9,not answered
+prlbt1re,-8,dk
+prlbt1re,0,go up a little
+prlbt1re,1,go up a lot
+prlbh1re,-9,not answered
+prlbh1re,-8,dk
+prlbh1re,0,go up a little
+prlbh1re,1,go up a lot
+prlbe1re,-9,not answered
+prlbe1re,-8,dk
+prlbe1re,0,go up a little
+prlbe1re,1,go up a lot
+pcktb1re,-9,not answered
+pcktb1re,-8,don't know
+pcktb1re,0,a little better of under labour than under conservative
+pcktb1re,1,much better off under labour than conservative
+txfr1rec,-9,not answered
+txfr1rec,-8,don't know
+txfr1rec,0,quite fair
+txfr1rec,1,very fair
+txrch1re,-9,not answered
+txrch1re,-8,don't know
+txrch1re,0,agree somewhat
+txrch1re,1,disagree somewhat
+rdstr1re,-9,not answered
+rdstr1re,-8,don't know
+rdstr1re,0,6/7
+rdstr1re,1,gov. try to hard to make income more equal (7/7)
+rdstr1_a,0,6/7
+rdstr1_a,1,gov. try to hard to make income more equal (7/7)
+rdstc1co,0,wrong/dk/not ans
+rdstc1co,1,correct
+rdstc1re,-9,not answered
+rdstc1re,-8,don't know
+rdstc1re,0,6/7
+rdstc1re,1,gov. try to hard to make income more equal (7/7)
+rdstc1_a,0,6/7
+rdstc1_a,1,gov. try to hard to make income more equal (7/7)
+rdstl1co,0,wrong/dk/not ans
+rdstl1co,1,correct
+rdstl1re,-9,not answered
+rdstl1re,-8,don't know
+rdstl1re,0,6/7
+rdstl1re,1,gov. try to hard to make income more equal (7/7)
+rdstl1_a,0,6/7
+rdstl1_a,1,gov. try to hard to make income more equal (7/7)
+rdstld1c,0,wrong/dk/not ans
+rdstld1c,1,correct
+rdstld1r,-9,not answered
+rdstld1r,-8,don't know
+rdstld1r,0,6/7
+rdstld1r,1,gov. try to hard to make income more equal (7/7)
+rdstld_a,0,6/7
+rdstld_a,1,gov. try to hard to make income more equal (7/7)
+txr1re,-9,not answered
+txr1re,-8,don't know
+txr1re,0,6/7
+txr1re,1,"gov. spend lot, tax lot (7/7)"
+txr1redk,0,6/7
+txr1redk,1,"gov. spend lot, tax lot (7/7)"
+taxc1cor,0,wrong/dk/not ans
+taxc1cor,1,correct
+txc1re,-9,not answered
+txc1re,-8,don't know
+txc1re,0,6/7
+txc1re,1,"gov. spend lot, tax lot (7/7)"
+txc1redk,0,6/7
+txc1redk,1,"gov. spend lot, tax lot (7/7)"
+taxl1cor,0,wrong/dk/not ans
+taxl1cor,1,correct
+txl1re,-9,not answered
+txl1re,-8,don't know
+txl1re,0,6/7
+txl1re,1,"gov. spend lot, tax lot (7/7)"
+txl1redk,0,6/7
+txl1redk,1,"gov. spend lot, tax lot (7/7)"
+taxld1co,0,wrong/dk/not ans
+taxld1co,1,correct
+txld1re,-9,not answered
+txld1re,-8,don't know
+txld1re,0,6/7
+txld1re,1,"gov. spend lot, tax lot (7/7)"
+txld1red,0,6/7
+txld1red,1,"gov. spend lot, tax lot (7/7)"
+wger1re,-9,not answered
+wger1re,-8,don't know
+wger1re,0,6/7
+wger1re,1,yes min wage (7/7)
+wger1red,0,6/7
+wger1red,1,yes min wage (7/7)
+wgec1cor,0,wrong/dk/not ans
+wgec1cor,1,correct
+wgec1re,-9,not answered
+wgec1re,-8,don't know
+wgec1re,0,6/7
+wgec1re,1,yes min wage (7/7)
+wgec1red,0,6/7
+wgec1red,1,yes min wage (7/7)
+wgel1cor,0,wrong/dk/not ans
+wgel1cor,1,correct
+wgel1re,-9,not answered
+wgel1re,-8,don't know
+wgel1re,0,6/7
+wgel1re,1,yes min wage (7/7)
+wgel1red,0,6/7
+wgel1red,1,yes min wage (7/7)
+wgeld1co,0,wrong/dk/not ans
+wgeld1co,1,correct
+wgeld1re,-9,not answered
+wgeld1re,-8,don't know
+wgeld1re,0,6/7
+wgeld1re,1,yes min wage (7/7)
+wgeld1_a,0,6/7
+wgeld1_a,1,yes min wage (7/7)
+eur1re,-9,not answered
+eur1re,-8,don't know
+eur1re,0,6/7
+eur1re,1,unite with eu (7/7)
+eur1redk,0,6/7
+eur1redk,1,unite with eu (7/7)
+euc1cor,0,wrong/dk/not ans
+euc1cor,1,correct
+euc1re,-9,not answered
+euc1re,-8,don't know
+euc1re,0,6/7
+euc1re,1,unite with eu (7/7)
+euc1redk,0,6/7
+euc1redk,1,unite with eu (7/7)
+eul1cor,0,wrong/dk/not ans
+eul1cor,1,correct
+eul1re,-9,not answered
+eul1re,-8,don't know
+eul1re,0,6/7
+eul1re,1,unite with eu (7/7)
+eul1redk,0,6/7
+eul1redk,1,unite with eu (7/7)
+euld1cor,0,wrong/dk/not ans
+euld1cor,1,correct
+euld1re,-9,not answered
+euld1re,-8,don't know
+euld1re,0,6/7
+euld1re,1,unite with eu (7/7)
+euld1red,0,6/7
+euld1red,1,unite with eu (7/7)
+eutax1re,-9,not answered
+eutax1re,-8,don't know
+eutax1re,0,agree somewhat
+eutax1re,1,disagree somewhat
+eugov1re,-9,not answered
+eugov1re,-8,don't know
+eugov1re,0,agree somewhat
+eugov1re,1,disagree somewhat
+eupnd1re,-9,not answered
+eupnd1re,-8,don't know
+eupnd1re,0,agree somewhat
+eupnd1re,1,disagree somewhat
+cnrch1re,-9,not answered
+cnrch1re,-8,don't know
+cnrch1re,0,a little better off
+cnrch1re,1,a lot better off
+cnpr1re,-9,not answered
+cnpr1re,-8,don't know
+cnpr1re,0,a little better off
+cnpr1re,1,a lot better off
+cnwelf1r,-9,not answered
+cnwelf1r,-8,don't know
+cnwelf1r,0,a little better off
+cnwelf1r,1,a lot better off
+cnpns1re,-9,not answered
+cnpns1re,-8,don't know
+cnpns1re,0,a little better off
+cnpns1re,1,a lot better off
+lbrch1re,-9,not answered
+lbrch1re,-8,don't know
+lbrch1re,0,a little better off
+lbrch1re,1,a lot better off
+lbpr1re,-9,not answered
+lbpr1re,-8,don't know
+lbpr1re,0,a little better off
+lbpr1re,1,a lot better off
+lbwlf1re,-9,not answered
+lbwlf1re,-8,don't know
+lbwlf1re,0,a little better off
+lbwlf1re,1,a lot better off
+lbpns1re,-9,not answered
+lbpns1re,-8,don't know
+lbpns1re,0,a little better off
+lbpns1re,1,a lot better off
+vtint1re,-9,not answered/would not vote
+vtint1re,-8,don't know
+vtint1re,1,conservative party
+vtint1re,2,labour party
+vtint1re,3,liberal democrats
+vtint1re,4,other party
+vtsr1re,-8,don't know
+vtsr1re,-1,n/a
+vtsr1re,0,reasonably sure
+vtsr1re,1,absolutely sure
+trnt1re,-9,not answered
+trnt1re,-8,don't know
+trnt1re,0,(6/7)
+trnt1re,1,definitely will vote
+ukdm1re,-9,not answered
+ukdm1re,-8,don't know
+ukdm1re,0,"works well, change some"
+ukdm1re,1,"works well, no change"
+frcn1re,-9,not answered
+frcn1re,-8,don't know
+frcn1re,0,agree somewhat
+frcn1re,1,agree strongly
+frlb1re,-9,not answered
+frlb1re,-8,don't know
+frlb1re,0,agree somewhat
+frlb1re,1,agree strongly
+ecld1re,-9,not answered
+ecld1re,-8,don't know
+ecld1re,0,agree somewhat
+ecld1re,1,agree strongly
+lstn1re,-9,not answered
+lstn1re,-8,don't know
+lstn1re,0,agree somewhat
+lstn1re,1,agree strongly
+ecr2reco,-9,not answered
+ecr2reco,-8,dk
+ecr2reco,0,got a little stronger
+ecr2reco,1,got a lot stronger
+inr2reco,-9,not answered
+inr2reco,-8,dk
+inr2reco,0,gone up a little
+inr2reco,1,gone up a lot
+unr2reco,-9,not answered
+unr2reco,-8,dk
+unr2reco,0,gone up a little
+unr2reco,1,gone up a lot
+txr2reco,-9,not answered
+txr2reco,-8,dk
+txr2reco,0,gone up a little
+txr2reco,1,gone up a lot
+hcr2reco,-9,not answered
+hcr2reco,-8,dk
+hcr2reco,0,gone up a little
+hcr2reco,1,gone up a lot
+edr2reco,-9,not answered
+edr2reco,-8,dk
+edr2reco,0,gone up a little
+edr2reco,1,gone up a lot
+prcn2rec,-9,not answered
+prcn2rec,-8,dk
+prcn2rec,0,get a little stronger
+prcn2rec,1,get a lot stronger
+prlb2rec,-9,not answered
+prlb2rec,-8,dk
+prlb2rec,0,get a little stronger
+prlb2rec,1,get a lot stronger
+prcni2re,-9,not answered
+prcni2re,-8,dk
+prcni2re,0,go up a little
+prcni2re,1,go up a lot
+prcnu2re,-9,not answered
+prcnu2re,-8,dk
+prcnu2re,0,go up a little
+prcnu2re,1,go up a lot
+prcnt2re,-9,not answered
+prcnt2re,-8,dk
+prcnt2re,0,go up a little
+prcnt2re,1,go up a lot
+prcnh2re,-9,not answered
+prcnh2re,-8,dk
+prcnh2re,0,go up a little
+prcnh2re,1,go up a lot
+prcne2re,-9,not answered
+prcne2re,-8,dk
+prcne2re,0,go up a little
+prcne2re,1,go up a lot
+prlbi2re,-9,not answered
+prlbi2re,-8,dk
+prlbi2re,0,go up a little
+prlbi2re,1,go up a lot
+prlbu2re,-9,not answered
+prlbu2re,-8,dk
+prlbu2re,0,go up a little
+prlbu2re,1,go up a lot
+prlbt2re,-9,not answered
+prlbt2re,-8,dk
+prlbt2re,0,go up a little
+prlbt2re,1,go up a lot
+prlbh2re,-9,not answered
+prlbh2re,-8,dk
+prlbh2re,0,go up a little
+prlbh2re,1,go up a lot
+prlbe2re,-9,not answered
+prlbe2re,-8,dk
+prlbe2re,0,go up a little
+prlbe2re,1,go up a lot
+pcktb2re,-9,not answered
+pcktb2re,-8,don't know
+pcktb2re,0,a little better of under labour than under conservative
+pcktb2re,1,much better off under labour than conservative
+txfr2rec,-9,not answered
+txfr2rec,-8,don't know
+txfr2rec,0,quite fair
+txfr2rec,1,very fair
+txrch2re,-9,not answered
+txrch2re,-8,don't know
+txrch2re,0,agree somewhat
+txrch2re,1,disagree somewhat
+rdstr2re,-9,not answered
+rdstr2re,-8,don't know
+rdstr2re,0,6/7
+rdstr2re,1,gov. try to hard to make income more equal (7/7)
+rdstr2_a,0,6/7
+rdstr2_a,1,gov. try to hard to make income more equal (7/7)
+rdstc2co,0,wrong/dk/not ans
+rdstc2co,1,correct
+rdstc2re,-9,not answered
+rdstc2re,-8,don't know
+rdstc2re,0,6/7
+rdstc2re,1,gov. try to hard to make income more equal (7/7)
+rdstc2_a,0,6/7
+rdstc2_a,1,gov. try to hard to make income more equal (7/7)
+rdstl2co,0,wrong/dk/not ans
+rdstl2co,1,correct
+rdstl2re,-9,not answered
+rdstl2re,-8,don't know
+rdstl2re,0,6/7
+rdstl2re,1,gov. try to hard to make income more equal (7/7)
+rdstl2_a,0,6/7
+rdstl2_a,1,gov. try to hard to make income more equal (7/7)
+rdstld2c,0,wrong/dk/not ans
+rdstld2c,1,correct
+rdsld2re,-9,not answered
+rdsld2re,-8,don't know
+rdsld2re,0,6/7
+rdsld2re,1,gov. try to hard to make income more equal (7/7)
+rdsld2_a,0,6/7
+rdsld2_a,1,gov. try to hard to make income more equal (7/7)
+taxr2re,-9,not answered
+taxr2re,-8,don't know
+taxr2re,0,6/7
+taxr2re,1,"gov. spend lot, tax lot (7/7)"
+taxr2red,0,6/7
+taxr2red,1,"gov. spend lot, tax lot (7/7)"
+taxc2cor,0,wrong/dk/not ans
+taxc2cor,1,correct
+taxc2re,-9,not answered
+taxc2re,-8,don't know
+taxc2re,0,6/7
+taxc2re,1,"gov. spend lot, tax lot (7/7)"
+taxc2red,0,6/7
+taxc2red,1,"gov. spend lot, tax lot (7/7)"
+taxl2cor,0,wrong/dk/not ans
+taxl2cor,1,correct
+taxl2re,-9,not answered
+taxl2re,-8,don't know
+taxl2re,0,6/7
+taxl2re,1,"gov. spend lot, tax lot (7/7)"
+taxl2red,0,6/7
+taxl2red,1,"gov. spend lot, tax lot (7/7)"
+taxld2co,0,wrong/dk/not ans
+taxld2co,1,correct
+taxld2re,-9,not answered
+taxld2re,-8,don't know
+taxld2re,0,6/7
+taxld2re,1,"gov. spend lot, tax lot (7/7)"
+taxld2_a,0,6/7
+taxld2_a,1,"gov. spend lot, tax lot (7/7)"
+wger2re,-9,not answered
+wger2re,-8,don't know
+wger2re,0,6/7
+wger2re,1,yes min wage (7/7)
+wger2red,0,6/7
+wger2red,1,yes min wage (7/7)
+wgec2cor,0,wrong/dk/not ans
+wgec2cor,1,correct
+wgec2re,-9,not answered
+wgec2re,-8,don't know
+wgec2re,0,6/7
+wgec2re,1,yes min wage (7/7)
+wgec2red,0,6/7
+wgec2red,1,yes min wage (7/7)
+wgel2cor,0,wrong/dk/not ans
+wgel2cor,1,correct
+wgel2re,-9,not answered
+wgel2re,-8,don't know
+wgel2re,0,6/7
+wgel2re,1,yes min wage (7/7)
+wgel2red,0,6/7
+wgel2red,1,yes min wage (7/7)
+wgeld2co,0,wrong/dk/not ans
+wgeld2co,1,correct
+wgeld2re,-9,not answered
+wgeld2re,-8,don't know
+wgeld2re,0,6/7
+wgeld2re,1,yes min wage (7/7)
+wgeld2_a,0,6/7
+wgeld2_a,1,yes min wage (7/7)
+eur2re,-9,not answered
+eur2re,-8,don't know
+eur2re,0,6/7
+eur2re,1,unite with eu (7/7)
+eur2redk,0,6/7
+eur2redk,1,unite with eu (7/7)
+euc2cor,0,wrong/dk/not ans
+euc2cor,1,correct
+euc2re,-9,not answered
+euc2re,-8,don't know
+euc2re,0,6/7
+euc2re,1,unite with eu (7/7)
+euc2redk,0,6/7
+euc2redk,1,unite with eu (7/7)
+eul2cor,0,wrong/dk/not ans
+eul2cor,1,correct
+eul2re,-9,not answered
+eul2re,-8,don't know
+eul2re,0,6/7
+eul2re,1,unite with eu (7/7)
+eul2redk,0,6/7
+eul2redk,1,unite with eu (7/7)
+euld2cor,0,wrong/dk/not ans
+euld2cor,1,correct
+euld2re,-9,not answered
+euld2re,-8,don't know
+euld2re,0,6/7
+euld2re,1,unite with eu (7/7)
+euld2red,0,6/7
+euld2red,1,unite with eu (7/7)
+eutax2re,-9,not answered
+eutax2re,-8,don't know
+eutax2re,0,agree somewhat
+eutax2re,1,disagree somewhat
+eugov2re,-9,not answered
+eugov2re,-8,don't know
+eugov2re,0,agree somewhat
+eugov2re,1,disagree somewhat
+eupnd2re,-9,not answered
+eupnd2re,-8,don't know
+eupnd2re,0,agree somewhat
+eupnd2re,1,disagree somewhat
+cnrch2re,-9,not answered
+cnrch2re,-8,don't know
+cnrch2re,0,a little better off
+cnrch2re,1,a lot better off
+cnpr2re,-9,not answered
+cnpr2re,-8,don't know
+cnpr2re,0,a little better off
+cnpr2re,1,a lot better off
+cnwlf2re,-9,not answered
+cnwlf2re,-8,don't know
+cnwlf2re,0,a little better off
+cnwlf2re,1,a lot better off
+cnpns2re,-9,not answered
+cnpns2re,-8,don't know
+cnpns2re,0,a little better off
+cnpns2re,1,a lot better off
+lbrch2re,-9,not answered
+lbrch2re,-8,don't know
+lbrch2re,0,a little better off
+lbrch2re,1,a lot better off
+lbpr2re,-9,not answered
+lbpr2re,-8,don't know
+lbpr2re,0,a little better off
+lbpr2re,1,a lot better off
+lbwlf2re,-9,not answered
+lbwlf2re,-8,don't know
+lbwlf2re,0,a little better off
+lbwlf2re,1,a lot better off
+lbpns2re,-9,not answered
+lbpns2re,-8,don't know
+lbpns2re,0,a little better off
+lbpns2re,1,a lot better off
+vtint2re,-9,not answered/would not vote
+vtint2re,-8,don't know
+vtint2re,1,conservative party
+vtint2re,2,labour party
+vtint2re,3,liberal democrats
+vtint2re,4,other party
+vtsr2re,-8,don't know
+vtsr2re,-1,n/a
+vtsr2re,0,reasonably sure
+vtsr2re,1,absolutely sure
+trnt2re,-9,not answered
+trnt2re,-8,don't know
+trnt2re,0,(6/7)
+trnt2re,1,definitely will vote
+ukdm2re,-9,not answered
+ukdm2re,-8,don't know
+ukdm2re,0,"works well, change some"
+ukdm2re,1,"works well, no change"
+frcn2re,-9,not answered
+frcn2re,-8,don't know
+frcn2re,0,agree somewhat
+frcn2re,1,agree strongly
+frlb2re,-9,not answered
+frlb2re,-8,don't know
+frlb2re,0,agree somewhat
+frlb2re,1,agree strongly
+ecnld2re,-9,not answered
+ecnld2re,-8,don't know
+ecnld2re,0,agree somewhat
+ecnld2re,1,agree strongly
+lstn2re,-9,not answered
+lstn2re,-8,don't know
+lstn2re,0,agree somewhat
+lstn2re,1,agree strongly
+grpdscre,-9,not answered
+grpdscre,0,somewhat valuable
+grpdscre,1,very valuable
+tlkngre,-9,not answered
+tlkngre,0,somewhat valuable
+tlkngre,1,very valuable
+xprtsre,-9,not answered
+xprtsre,0,somewhat valuable
+xprtsre,1,very valuable
+polsre,-9,not answered
+polsre,0,somewhat valuable
+polsre,1,very valuable
+mdprtre,-9,not answered
+mdprtre,-8,don't know
+mdprtre,0,agree somewhat
+mdprtre,1,agree strongly
+mdinflre,-9,not answered
+mdinflre,-8,don't know
+mdinflre,0,agree somewhat
+mdinflre,1,agree strongly
+dopintre,-9,not answered
+dopintre,-8,don't know
+dopintre,0,quite interesting
+dopintre,1,very interesting
+vote3re,-9,not answered/would not vote
+vote3re,-8,don't know
+vote3re,1,conservative party
+vote3re,2,labour party
+vote3re,3,liberal democrats
+vote3re,4,other party
+rdstcknc,-1,change from right to wrong
+rdstcknc,0,no change
+rdstcknc,1,change from wrong to right
+rdstlknc,-1,change from right to wrong
+rdstlknc,0,no change
+rdstlknc,1,change from wrong to right
+rdstldkn,-1,change from right to wrong
+rdstldkn,0,no change
+rdstldkn,1,change from wrong to right
+taxcknch,-1,change from right to wrong
+taxcknch,0,no change
+taxcknch,1,change from wrong to right
+taxlknch,-1,change from right to wrong
+taxlknch,0,no change
+taxlknch,1,change from wrong to right
+taxldknc,-1,change from right to wrong
+taxldknc,0,no change
+taxldknc,1,change from wrong to right
+wgecknch,-1,change from right to wrong
+wgecknch,0,no change
+wgecknch,1,change from wrong to right
+wgelknch,-1,change from right to wrong
+wgelknch,0,no change
+wgelknch,1,change from wrong to right
+wgeldknc,-1,change from right to wrong
+wgeldknc,0,no change
+wgeldknc,1,change from wrong to right
+eucknch,-1,change from right to wrong
+eucknch,0,no change
+eucknch,1,change from wrong to right
+eulknch,-1,change from right to wrong
+eulknch,0,no change
+eulknch,1,change from wrong to right
+euldknch,-1,change from right to wrong
+euldknch,0,no change
+euldknch,1,change from wrong to right
+filter,0,not selected
+filter,1,selected
