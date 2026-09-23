@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+europolis-2009,cor-sood-europolis-2009,data,Cor-Sood scored knowledge battery,data/europolis-2009/knowledge-battery.csv,cor-sood-europolis-2009,replication/data.zip:data/eu2009.csv,bd815c252072467e9da9f3fc6bf4e3c9d65dab01a582506ada66aa86b52a0258,public-license,approved-public,published,Scored binary items; row number is not a respondent identifier

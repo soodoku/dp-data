@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+san-mateo-2008,cor-sood-san-mateo-2008,data,Cor-Sood scored knowledge battery,data/san-mateo-2008/knowledge-battery.csv,cor-sood-san-mateo-2008,replication/data.zip:data/sm.csv,3644ebabb214868cd7b00fd002965bb161518ee15067a134a4cc309472f0eb45,public-license,approved-public,published,Scored binary items; row number is not a respondent identifier

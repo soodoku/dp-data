@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+tomorrows-europe-2007,cor-sood-tomorrows-europe-2007,data,Cor-Sood scored knowledge battery,data/tomorrows-europe-2007/knowledge-battery.csv,cor-sood-tomorrows-europe-2007,replication/data.zip:data/eu2007.csv,c003ca6cf5a2863a7d802563fe87bfa54e3efcdb260c8b3b7567af2842c30ed7,public-license,approved-public,published,Scored binary items; row number is not a respondent identifier

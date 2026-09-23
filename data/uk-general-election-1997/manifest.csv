@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+uk-general-election-1997,cor-sood-uk-general-election-1997,data,Cor-Sood scored knowledge battery,data/uk-general-election-1997/knowledge-battery.csv,cor-sood-uk-general-election-1997,replication/data.zip:data/ukbge.csv,8d371a1174d89df3ddb207e1e9e2242416a1753a5fd0e1d6aac0ebf8de91a2c5,public-license,approved-public,published,Scored binary items; row number is not a respondent identifier

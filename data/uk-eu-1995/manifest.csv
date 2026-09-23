@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+uk-eu-1995,cor-sood-uk-eu-1995,data,Cor-Sood scored knowledge battery,data/uk-eu-1995/knowledge-battery.csv,cor-sood-uk-eu-1995,replication/data.zip:data/ukeu.csv,9077fdea79264d77748337d3b8bb7197865391bb48d5850a9e060be761905a22,public-license,approved-public,published,Scored binary items; row number is not a respondent identifier

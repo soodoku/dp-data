@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+california-whats-next-2011,cor-sood-california-whats-next-2011,data,Cor-Sood scored knowledge battery,data/california-whats-next-2011/knowledge-battery.csv,cor-sood-california-whats-next-2011,replication/data.zip:data/ca.csv,bbc6a39043ff5be47e03abe4b29550ca29be08195cb6d51cb40f8d9971199063,public-license,approved-public,published,Scored binary items; row number is not a respondent identifier

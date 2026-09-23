@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+btp-general-election-2004,cor-sood-btp-general-election-2004,data,Cor-Sood scored knowledge battery,data/btp-general-election-2004/knowledge-battery.csv,cor-sood-btp-general-election-2004,replication/data.zip:data/btp04GE.csv,9db2f15672b73e74523e12cab74b55d8057ff396d28d968b943fb4ccf318f9e3,public-license,approved-public,published,Scored binary items; row number is not a respondent identifier

@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+wtu-1996,cor-sood-wtu-1996,data,Cor-Sood scored knowledge battery,data/wtu-1996/knowledge-battery.csv,cor-sood-wtu-1996,replication/data.zip:data/wtu.csv,6a4767801886badbbaf6c61ea96d26d917afe4237c169e58ffc1d546c9d68346,public-license,approved-public,published,Scored binary items; row number is not a respondent identifier

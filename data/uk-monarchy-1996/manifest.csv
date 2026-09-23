@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+uk-monarchy-1996,cor-sood-uk-monarchy-1996,data,Cor-Sood scored knowledge battery,data/uk-monarchy-1996/knowledge-battery.csv,cor-sood-uk-monarchy-1996,replication/data.zip:data/ukmon.csv,bd7f7e5196af15a5b1d499f1dff4e5aa12fb92b28d74a746cad110f468af873b,public-license,approved-public,published,Scored binary items; row number is not a respondent identifier

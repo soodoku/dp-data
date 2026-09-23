@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+btp-health-education-2005,cor-sood-btp-health-education-2005,data,Cor-Sood scored knowledge battery,data/btp-health-education-2005/knowledge-battery.csv,cor-sood-btp-health-education-2005,replication/data.zip:data/btp05.csv,318b5bc500f7140b339ff77f448a76555feab454db55e4f3aa63e83002aaec0b,public-license,approved-public,published,Scored binary items; row number is not a respondent identifier

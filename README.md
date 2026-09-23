@@ -4,9 +4,11 @@ This repository is the source catalog and build system for data shared across
 Deliberative Poll research projects. It separates immutable source files from
 documented transformations and versioned exports.
 
-The first release establishes provenance before changing any analysis:
+The repository establishes provenance before changing any analysis:
 
 - public replication deposits are stored byte-for-byte with checksums;
+- all 23 Cor–Sood poll-level scored knowledge batteries are extracted and cataloged;
+
 - the five historical CDD archive bundles are inventoried but remain in a
   local vault while files are reviewed poll by poll;
 - poll names and legacy numeric identifiers map to stable `poll_id` values;
@@ -67,3 +69,21 @@ inputs to the canonical build. Canonical long tables will be assembled from
 audited poll-level respondent, item, wave, group, and artifact records. Their
 released form can be typed Parquet, with small dictionaries and manifests kept
 as CSV for inspection and joins.
+
+## Cor–Sood knowledge batteries
+
+The 23 files in `data/<poll_id>/knowledge-battery.csv` are exact bytes from
+`replication/data.zip` inside the [public Cor–Sood Dataverse deposit](https://doi.org/10.7910/DVN/HZHVCU).
+`metadata/knowledge_batteries.csv` records the original ZIP member, paired
+pre/post item columns, respondent and item counts, and linkage status. For
+some polls the post-deliberation columns are named `t3`; the column map
+preserves those names rather than relabeling the actual survey wave.
+
+These files contain scored 0/1 item responses and `female`, but no original
+answer choices, respondent IDs, group assignments, or attitudes. A row number
+is only an index within that deposited CSV. The files can reproduce the
+knowledge-battery analysis; they cannot by themselves regenerate
+`polardata` or establish a respondent-level join to it. The original CDD
+survey files and scripts in the local vault must be audited poll by poll
+before the full aggregate is rebuilt. Published aggregates in
+`evidence/benchmarks/` remain parity targets, not build inputs.

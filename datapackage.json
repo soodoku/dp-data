@@ -201,6 +201,54 @@
       }
     },
     {
+      "name": "knowledge_batteries",
+      "path": "metadata/knowledge_batteries.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "source_id",
+            "type": "string"
+          },
+          {
+            "name": "original_archive_path",
+            "type": "string"
+          },
+          {
+            "name": "respondents",
+            "type": "number"
+          },
+          {
+            "name": "items",
+            "type": "number"
+          },
+          {
+            "name": "pre_columns",
+            "type": "string"
+          },
+          {
+            "name": "post_columns",
+            "type": "string"
+          },
+          {
+            "name": "demographic_column",
+            "type": "string"
+          },
+          {
+            "name": "linkage_status",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
       "name": "polls",
       "path": "metadata/polls.csv",
       "profile": "tabular-data-resource",

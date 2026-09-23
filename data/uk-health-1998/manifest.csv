@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+uk-health-1998,cor-sood-uk-health-1998,data,Cor-Sood scored knowledge battery,data/uk-health-1998/knowledge-battery.csv,cor-sood-uk-health-1998,replication/data.zip:data/ukhealth.csv,671bf82144935f33351d627b7996c05b91585f7adf192734b94a2e655ad960b2,public-license,approved-public,published,Scored binary items; row number is not a respondent identifier

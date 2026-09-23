@@ -12,6 +12,7 @@ test_that("the Frictionless package names every metadata table", {
       "artifacts",
       "canonical_tables",
       "canonical_columns",
+      "knowledge_batteries",
       "polls",
       "poll_aliases",
       "source_bundles",

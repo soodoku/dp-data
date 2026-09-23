@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+northern-ireland-2007,cor-sood-northern-ireland-2007,data,Cor-Sood scored knowledge battery,data/northern-ireland-2007/knowledge-battery.csv,cor-sood-northern-ireland-2007,replication/data.zip:data/ire.csv,2cd6a57ebb658aba67f10c98a316e9a6bcdd28f6acafa70af1d9850797d29cee,public-license,approved-public,published,Scored binary items; row number is not a respondent identifier

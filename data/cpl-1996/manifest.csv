@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+cpl-1996,cor-sood-cpl-1996,data,Cor-Sood scored knowledge battery,data/cpl-1996/knowledge-battery.csv,cor-sood-cpl-1996,replication/data.zip:data/cpl.csv,3b60766481ff3e3435e0d7621cec20e3120530e2191245f673dca22f41e51076,public-license,approved-public,published,Scored binary items; row number is not a respondent identifier

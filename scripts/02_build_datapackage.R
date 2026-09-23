@@ -6,6 +6,7 @@ resources <- c(
   "artifacts",
   "canonical_tables",
   "canonical_columns",
+  "knowledge_batteries",
   "polls",
   "poll_aliases",
   "source_bundles",

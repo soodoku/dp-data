@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+denmark-euro-2000,cor-sood-denmark-euro-2000,data,Cor-Sood scored knowledge battery,data/denmark-euro-2000/knowledge-battery.csv,cor-sood-denmark-euro-2000,replication/data.zip:data/dk.csv,b9d9892b5e0c406ae77c41ef54cb82479bb55506c5c806332f22f3029d1a2cbb,public-license,approved-public,published,Scored binary items; row number is not a respondent identifier

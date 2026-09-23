@@ -1,0 +1,2 @@
+poll_id,artifact_id,artifact_type,title,location,source_id,original_archive_path,sha256,rights_status,disclosure_status,publication_status,notes
+australia-republic-1999,cor-sood-australia-republic-1999,data,Cor-Sood scored knowledge battery,data/australia-republic-1999/knowledge-battery.csv,cor-sood-australia-republic-1999,replication/data.zip:data/aus.csv,c9cb05f1fb001335dcd846e50d91f4047c2d9fef888438b2a3456eb524ffb2c5,public-license,approved-public,published,Scored binary items; row number is not a respondent identifier
