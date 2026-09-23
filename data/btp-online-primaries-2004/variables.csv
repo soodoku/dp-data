@@ -1,0 +1,1576 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+username,character,character,,,%12s,,,FALSE,Excluded; see source_field_exclusions
+session,double,numeric,float64,session number,%8.0g,,,TRUE,Retained
+mtg1,double,haven_labelled|vctrs_vctr|double,float64,meeting 1 attendance,%8.0g,,,TRUE,Retained
+mtg2,double,haven_labelled|vctrs_vctr|double,float64,meeting 2 attendance,%8.0g,,,TRUE,Retained
+mtg3,double,haven_labelled|vctrs_vctr|double,float64,meeting 3 attendance,%8.0g,,,TRUE,Retained
+mtg4,double,haven_labelled|vctrs_vctr|double,float64,meeting 4 attendance,%8.0g,,,TRUE,Retained
+mtg5,double,haven_labelled|vctrs_vctr|double,float64,meeting 5 attendance,%8.0g,,,TRUE,Retained
+mtgatt,double,numeric,float64,number of meetings attended,%8.0g,,,TRUE,Retained
+stratanu,double,haven_labelled|vctrs_vctr|double,float64,strata (numeric),%8.0g,,,TRUE,Retained
+expcont,double,haven_labelled|vctrs_vctr|double,float64,control versus experimental,%8.0g,,,TRUE,Retained
+group,double,haven_labelled|vctrs_vctr|double,float64,group,%8.0g,,,TRUE,Retained
+husband,double,haven_labelled|vctrs_vctr|double,float64,husband participated for wife,%8.0g,,,TRUE,Retained
+jan2003,double,haven_labelled|vctrs_vctr|double,float64,dop january 2003 participant,%8.0g,,,TRUE,Retained
+sept2003,double,haven_labelled|vctrs_vctr|double,float64,dop september 2003 participant,%8.0g,,,TRUE,Retained
+compf1,double,haven_labelled|vctrs_vctr|double,float64,completed feb follow up survey - experimental and control (4 wave),%8.0g,,,TRUE,Retained
+b1dstart,double,numeric,float64,date interview started,%12.0g,,,TRUE,Retained
+b1tstart,double,numeric,float64,time interview started,%12.0g,,,TRUE,Retained
+b1dend,double,numeric,float64,date interview ended,%12.0g,,,TRUE,Retained
+b1tend,double,numeric,float64,time interview ended,%12.0g,,,TRUE,Retained
+b1dur,double,numeric,float64,duration of interview in minutes,%9.0g,,,TRUE,Retained
+b1durcat,double,haven_labelled|vctrs_vctr|double,float64,duration of interview (categorized in 5-minute intervals),%8.0g,,,TRUE,Retained
+ftchbus,double,numeric,float64,t1 to t2 change in bush's rating on feeling thermometer (q22_1),%8.0g,,,TRUE,Retained
+ftchker,double,numeric,float64,t1 to t2 change in kerry's rating on feeling thermometer (q22_3),%8.0g,,,TRUE,Retained
+ftchedw,double,numeric,float64,t1 to t2 change in ewards' rating on feeling thermometer (q22_6),%9.0g,,,TRUE,Retained
+ftchdean,double,numeric,float64,t1 to t2 change in dean's rating on feeling thermometer (q22_2),%9.0g,,,TRUE,Retained
+ftchclar,double,numeric,float64,t1 to t2 change in clark's rating on feeling thermometer (q22_4),%8.0g,,,TRUE,Retained
+ftchshar,double,numeric,float64,t1 to t2 change in sharpton's rating on feeling thermometer (q22_8),%9.0g,,,TRUE,Retained
+ftc50bus,double,numeric,float64,"t1 to t2 change in bush's rating on feeling thermometer, with all dks/refused pl",%8.0g,,,TRUE,Retained
+ftc50ker,double,numeric,float64,"t1 to t2 change in kerry's rating on feeling thermometer, with all dks/refused p",%8.0g,,,TRUE,Retained
+ftc50edw,double,numeric,float64,"t1 to t2 change in ewards' rating on feeling thermometer, with all dks/refused p",%9.0g,,,TRUE,Retained
+ftc50dea,double,numeric,float64,"t1 to t2 change in dean's rating on feeling thermometer, with all dks/refused pl",%9.0g,,,TRUE,Retained
+ftc50cla,double,numeric,float64,"t1 to t2 change in clark's rating on feeling thermometer, with all dks/refused p",%8.0g,,,TRUE,Retained
+ftc50sha,double,numeric,float64,"t1 to t2 change in sharpton's rating on feeling thermometer, with all dks/refuse",%9.0g,,,TRUE,Retained
+b1q1,double,haven_labelled|vctrs_vctr|double,float64," t1 by the time we leave iraq, the results will have been worth the cost in live",%8.0g,,,TRUE,Retained
+b1q2,double,haven_labelled|vctrs_vctr|double,float64, the us should share its control of iraq with other countries or the u.n. in ret,%8.0g,,,TRUE,Retained
+b1q3,double,haven_labelled|vctrs_vctr|double,float64," in general, the us should be willing to invade other countries we believe pose",%8.0g,,,TRUE,Retained
+b1q4,double,haven_labelled|vctrs_vctr|double,float64, the war in iraq has got in the way of the war on terror.,%8.0g,,,TRUE,Retained
+b1q5,double,haven_labelled|vctrs_vctr|double,float64, the next section concerns issues of international trade and the u.s. economy.wh,%8.0g,,,TRUE,Retained
+b1q6,double,haven_labelled|vctrs_vctr|double,float64, and how strongly would you agree or disagree with the following statements abou,%8.0g,,,TRUE,Retained
+b1q7,double,haven_labelled|vctrs_vctr|double,float64," on the whole, more free trade means more jobs, because we can sell more goods a",%8.0g,,,TRUE,Retained
+b1q8,double,haven_labelled|vctrs_vctr|double,float64, protecting existing american jobs and industries is more important than lowerin,%8.0g,,,TRUE,Retained
+b1q9,double,haven_labelled|vctrs_vctr|double,float64," thinking back over the past few months, would you say the national economy is:",%8.0g,,,TRUE,Retained
+b1q10,double,haven_labelled|vctrs_vctr|double,float64," now looking forward to the next few months, do you expect the national economy",%8.0g,,,TRUE,Retained
+b1q11,double,haven_labelled|vctrs_vctr|double,float64," generally speaking, do you think of yourself as a republican, democrat, or what",%8.0g,,,TRUE,Retained
+b1q11a,double,haven_labelled|vctrs_vctr|double,float64, would you say you are a:,%8.0g,,,TRUE,Retained
+b1q11b,double,haven_labelled|vctrs_vctr|double,float64, would you say you are a:,%8.0g,,,TRUE,Retained
+b1q12,double,haven_labelled|vctrs_vctr|double,float64," on a scale of 1 to 7, where 1 is very liberal, 7 is very conservative, and 4 is",%8.0g,,,TRUE,Retained
+b1q12a,double,haven_labelled|vctrs_vctr|double,float64," in the last presidential election in 2000, did you vote or did something come u",%8.0g,,,TRUE,Retained
+b1q12b,double,haven_labelled|vctrs_vctr|double,float64," did you vote for bush, gore, or some other candidate?",%8.0g,,,TRUE,Retained
+b1q13,double,haven_labelled|vctrs_vctr|double,float64, here are a few more statements with which we'd like to know how strongly you ag,%8.0g,,,TRUE,Retained
+b1q14,double,haven_labelled|vctrs_vctr|double,float64," because most people don't really know much about what's happening in the world,",%8.0g,,,TRUE,Retained
+b1q15,double,haven_labelled|vctrs_vctr|double,float64, people like me don't have any say about what the government does.,%8.0g,,,TRUE,Retained
+b1q16,double,haven_labelled|vctrs_vctr|double,float64," on average, how often would you say you participate in conversations about publ",%8.0g,,,TRUE,Retained
+b1q17,double,haven_labelled|vctrs_vctr|double,float64," during the last week, how many days did you watch the news on tv?",%8.0g,,,TRUE,Retained
+b1q18,double,haven_labelled|vctrs_vctr|double,float64, how interested would you say you generally are in politics in the u.s.,%8.0g,,,TRUE,Retained
+b1q19_1,double,haven_labelled|vctrs_vctr|double,float64,does sincere describe each candidate:  [george w. bush],%8.0g,,,TRUE,Retained
+b1q19_2,double,haven_labelled|vctrs_vctr|double,float64,does sincere describe each candidate:  [howard dean],%8.0g,,,TRUE,Retained
+b1q19_3,double,haven_labelled|vctrs_vctr|double,float64,does sincere describe each candidate:  [john kerry],%8.0g,,,TRUE,Retained
+b1q19_4,double,haven_labelled|vctrs_vctr|double,float64,does sincere describe each candidate:  [wesley clark],%8.0g,,,TRUE,Retained
+b1q19_5,double,haven_labelled|vctrs_vctr|double,float64,does sincere describe each candidate:  [richard gephardt],%8.0g,,,TRUE,Retained
+b1q19_6,double,haven_labelled|vctrs_vctr|double,float64,does sincere describe each candidate:  [john edwards],%8.0g,,,TRUE,Retained
+b1q19_7,double,haven_labelled|vctrs_vctr|double,float64,does sincere describe each candidate:  [joe lieberman],%8.0g,,,TRUE,Retained
+b1q19_8,double,haven_labelled|vctrs_vctr|double,float64,does sincere describe each candidate:  [al sharpton],%8.0g,,,TRUE,Retained
+b1q20_1,double,haven_labelled|vctrs_vctr|double,float64, the next word is intelligent. does intelligent describe each of them:   [george,%8.0g,,,TRUE,Retained
+b1q20_2,double,haven_labelled|vctrs_vctr|double,float64, the next word is intelligent. does intelligent describe each of them:   [howard,%8.0g,,,TRUE,Retained
+b1q20_3,double,haven_labelled|vctrs_vctr|double,float64, the next word is intelligent. does intelligent describe each of them:   [john k,%8.0g,,,TRUE,Retained
+b1q20_4,double,haven_labelled|vctrs_vctr|double,float64, the next word is intelligent. does intelligent describe each of them:   [wesley,%8.0g,,,TRUE,Retained
+b1q20_5,double,haven_labelled|vctrs_vctr|double,float64, the next word is intelligent. does intelligent describe each of them:   [richar,%8.0g,,,TRUE,Retained
+b1q20_6,double,haven_labelled|vctrs_vctr|double,float64, the next word is intelligent. does intelligent describe each of them:   [john e,%8.0g,,,TRUE,Retained
+b1q20_7,double,haven_labelled|vctrs_vctr|double,float64, the next word is intelligent. does intelligent describe each of them:   [joe li,%8.0g,,,TRUE,Retained
+b1q20_8,double,haven_labelled|vctrs_vctr|double,float64, the next word is intelligent. does intelligent describe each of them:   [al sha,%8.0g,,,TRUE,Retained
+b1q21_1,double,haven_labelled|vctrs_vctr|double,float64," next, how well does thinks like i do describe each of them:   [george w. bush]",%8.0g,,,TRUE,Retained
+b1q21_2,double,haven_labelled|vctrs_vctr|double,float64," next, how well does thinks like i do describe each of them:   [howard dean]",%8.0g,,,TRUE,Retained
+b1q21_3,double,haven_labelled|vctrs_vctr|double,float64," next, how well does thinks like i do describe each of them:   [john kerry]",%8.0g,,,TRUE,Retained
+b1q21_4,double,haven_labelled|vctrs_vctr|double,float64," next, how well does thinks like i do describe each of them:   [wesley clark]",%8.0g,,,TRUE,Retained
+b1q21_5,double,haven_labelled|vctrs_vctr|double,float64," next, how well does thinks like i do describe each of them:   [richard gephardt",%8.0g,,,TRUE,Retained
+b1q21_6,double,haven_labelled|vctrs_vctr|double,float64," next, how well does thinks like i do describe each of them:   [john edwards]",%8.0g,,,TRUE,Retained
+b1q21_7,double,haven_labelled|vctrs_vctr|double,float64," next, how well does thinks like i do describe each of them:   [joe lieberman]",%8.0g,,,TRUE,Retained
+b1q21_8,double,haven_labelled|vctrs_vctr|double,float64," next, how well does thinks like i do describe each of them:   [al sharpton]",%8.0g,,,TRUE,Retained
+ft150bus,double,haven_labelled|vctrs_vctr|double,float64,bush t1 feeling thermometer with dks/refused placed at midpoint (50),%8.0g,,,TRUE,Retained
+ft150ker,double,haven_labelled|vctrs_vctr|double,float64,kerry t1 feeling thermometer with dks/refused placed at midpoint (50),%8.0g,,,TRUE,Retained
+ft150edw,double,haven_labelled|vctrs_vctr|double,float64,edwards t1 feeling thermometer with dks/refused placed at midpoint (50),%9.0g,,,TRUE,Retained
+ft150dea,double,haven_labelled|vctrs_vctr|double,float64,dean t1 feeling thermometer with dks/refused placed at midpoint (50),%9.0g,,,TRUE,Retained
+ft150cla,double,haven_labelled|vctrs_vctr|double,float64,clark t1 feeling thermometer with dks/refused placed at midpoint (50),%8.0g,,,TRUE,Retained
+ft150sha,double,haven_labelled|vctrs_vctr|double,float64,sharpton t1 feeling thermometer with dks/refused placed at midpoint (50),%9.0g,,,TRUE,Retained
+b1q22_1,double,haven_labelled|vctrs_vctr|double,float64,q22:  [george w. bush - 0 - 100],%8.0g,,,TRUE,Retained
+b1q22_2,double,haven_labelled|vctrs_vctr|double,float64,q22:  [howard dean - 0 - 100],%9.0g,,,TRUE,Retained
+b1q22_3,double,haven_labelled|vctrs_vctr|double,float64,q22:  [john kerry - 0 - 100],%8.0g,,,TRUE,Retained
+b1q22_6,double,haven_labelled|vctrs_vctr|double,float64,q22:  [john edwards - 0 - 100],%9.0g,,,TRUE,Retained
+b1q22_4,double,haven_labelled|vctrs_vctr|double,float64,q22:  [wesley clark - 0 - 100],%8.0g,,,TRUE,Retained
+b1q22_5,double,haven_labelled|vctrs_vctr|double,float64,q22:  [richard gephardt - 0 - 100],%8.0g,,,TRUE,Retained
+b1q22_7,double,haven_labelled|vctrs_vctr|double,float64,q22:  [joe lieberman - 0 - 100],%8.0g,,,TRUE,Retained
+b1q22_8,double,haven_labelled|vctrs_vctr|double,float64,q22:  [al sharpton - 0 - 100],%9.0g,,,TRUE,Retained
+b1q22_9,double,haven_labelled|vctrs_vctr|double,float64,q22:  [carol moseley braun - 0 - 100],%8.0g,,,TRUE,Retained
+b1q22_10,double,haven_labelled|vctrs_vctr|double,float64,q22:  [dennis kucinich - 0 - 100],%9.0g,,,TRUE,Retained
+b1q23,double,haven_labelled|vctrs_vctr|double,float64, next are a couple of questions about president's bush's performance as presiden,%8.0g,,,TRUE,Retained
+b1q24,double,haven_labelled|vctrs_vctr|double,float64, how about bush's handing of the economy?,%8.0g,,,TRUE,Retained
+b1q25,double,haven_labelled|vctrs_vctr|double,float64, now we'd like you to think about some important issues. some people think the f,%8.0g,,,TRUE,Retained
+b1q26_1,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q26_2,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q26_3,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q26_4,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q26_5,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q26_6,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q26_7,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q26_8,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q27,double,haven_labelled|vctrs_vctr|double,float64, next think about the federal budget. some people believe that we should spend m,%8.0g,,,TRUE,Retained
+b1q28_1,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q28_2,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q28_3,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q28_4,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q28_5,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q28_6,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q28_7,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q28_8,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q29,double,haven_labelled|vctrs_vctr|double,float64, here's the next issue. some people feel the united states should intervene mili,%8.0g,,,TRUE,Retained
+b1q30_1,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q30_2,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q30_3,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q30_4,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q30_5,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q30_6,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q30_7,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q30_8,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q31,double,haven_labelled|vctrs_vctr|double,float64, here's the next one. some people feel that we should pursue increased free trad,%8.0g,,,TRUE,Retained
+b1q32_1,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q32_2,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q32_3,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q32_4,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q32_5,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q32_6,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q32_7,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q32_8,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+b1q33,double,haven_labelled|vctrs_vctr|double,float64, now we have some last questions about the upcoming election.who do you think wi,%8.0g,,,TRUE,Retained
+b1q34,double,haven_labelled|vctrs_vctr|double,float64, how close do you think the presidential vote will be?,%8.0g,,,TRUE,Retained
+b1q37,double,haven_labelled|vctrs_vctr|double,float64," if your state has a primary election, do you intend to vote?",%8.0g,,,TRUE,Retained
+b1q38,character,character,,who will you vote for in the primary,%44s,,,FALSE,Excluded; see source_field_exclusions
+b1q39,double,haven_labelled|vctrs_vctr|double,float64, we'd like to know how you intend to vote in the november presidential election.,%8.0g,,,TRUE,Retained
+b1q40,double,haven_labelled|vctrs_vctr|double,float64, how certain do you feel you will vote that way? are you:,%8.0g,,,TRUE,Retained
+b1q41a,double,haven_labelled|vctrs_vctr|double,float64," among the democrats, who would you most like to see win the nomination?",%8.0g,,,TRUE,Retained
+b1q41b,double,haven_labelled|vctrs_vctr|double,float64," of the remaining candidates, who would you most like to see win the nomination?",%8.0g,,,TRUE,Retained
+b1q41c,double,haven_labelled|vctrs_vctr|double,float64," of the remaining candidates, who would you most like to see win the nomination?",%8.0g,,,TRUE,Retained
+b1q42a,double,haven_labelled|vctrs_vctr|double,float64," among the democrats running for president, who do you think has the best chance",%8.0g,,,TRUE,Retained
+b1q42b,double,haven_labelled|vctrs_vctr|double,float64," of the remaining candidates, who do you think has the best chance of winning th",%8.0g,,,TRUE,Retained
+b1q42c,double,haven_labelled|vctrs_vctr|double,float64," of the remaining candidates, who do you think has the best chance of winning th",%8.0g,,,TRUE,Retained
+b1q43,double,haven_labelled|vctrs_vctr|double,float64," finally, we're interested in how much information people have picked up about t",%8.0g,,,TRUE,Retained
+b1q44,double,haven_labelled|vctrs_vctr|double,float64," as far as you know, what was wesley clark's most recent position in government?",%8.0g,,,TRUE,Retained
+b1q45,double,haven_labelled|vctrs_vctr|double,float64," as far as you know, did president bush end u.s. tariffs on imported steel becau",%8.0g,,,TRUE,Retained
+b1q46,double,haven_labelled|vctrs_vctr|double,float64, which one of the democratic presidential candidates served as majority leader i,%8.0g,,,TRUE,Retained
+b1q47,double,haven_labelled|vctrs_vctr|double,float64," since president bush took office, would you say that the rate of unemployment i",%8.0g,,,TRUE,Retained
+b1q48,double,haven_labelled|vctrs_vctr|double,float64, so far the number of americans killed in action in iraq can be numbered as:,%8.0g,,,TRUE,Retained
+b1q49,double,haven_labelled|vctrs_vctr|double,float64," as far as you know, what is the bush administration's position on creating a ne",%8.0g,,,TRUE,Retained
+f1dstart,double,numeric,float64,date interview started,%12.0g,,,TRUE,Retained
+f1tstart,double,numeric,float64,time interview started,%12.0g,,,TRUE,Retained
+f1dend,double,numeric,float64,date interview ended,%12.0g,,,TRUE,Retained
+f1tend,double,numeric,float64,time interview ended,%12.0g,,,TRUE,Retained
+f1dur,double,numeric,float64,duration of interview in minutes,%9.0g,,,TRUE,Retained
+f1durcat,double,haven_labelled|vctrs_vctr|double,float64,duration of interview (categorized in 5-minute intervals),%8.0g,,,TRUE,Retained
+f1q1fu_1,double,haven_labelled|vctrs_vctr|double,float64,q1:  [ensuring adequate energy supplies for the u.s. - 0 - 10],%8.0g,,,TRUE,Retained
+f1q1fu_2,double,haven_labelled|vctrs_vctr|double,float64,q1:  [preventing the spread of weapons of mass destruction - 0 - 10],%8.0g,,,TRUE,Retained
+f1q1fu_3,double,haven_labelled|vctrs_vctr|double,float64,q1:  [aiding the interests of u.s. business abroad - 0 - 10],%8.0g,,,TRUE,Retained
+f1q1fu_4,double,haven_labelled|vctrs_vctr|double,float64,q1:  [fighting terrorism - 0 - 10],%8.0g,,,TRUE,Retained
+f1q1fu_5,double,haven_labelled|vctrs_vctr|double,float64,q1:  [providing food and medical help to poor countries - 0 - 10],%8.0g,,,TRUE,Retained
+f1q1fu_6,double,haven_labelled|vctrs_vctr|double,float64,q1:  [protecting the u.s. from attack - 0 - 10],%8.0g,,,TRUE,Retained
+f1q1fu_7,double,haven_labelled|vctrs_vctr|double,float64,q1:  [protecting human rights in other countries - 0 - 10],%8.0g,,,TRUE,Retained
+f1q1fu_8,double,haven_labelled|vctrs_vctr|double,float64,q1:  [reducing world poverty - 0 - 10],%8.0g,,,TRUE,Retained
+f1q2fu,double,haven_labelled|vctrs_vctr|double,float64, next i'm going to read you a few statements america's role in world affairs. we,%8.0g,,,TRUE,Retained
+f1q3fu,double,haven_labelled|vctrs_vctr|double,float64, it is the job of the u.s. as a global leader to protect the world from countrie,%8.0g,,,TRUE,Retained
+f1q4fu,double,haven_labelled|vctrs_vctr|double,float64, it is the job of the u.s. as a global leader to protect the world from countrie,%8.0g,,,TRUE,Retained
+f1q1,double,haven_labelled|vctrs_vctr|double,float64," t2 by the time we leave iraq, the results will have been worth the cost in live",%8.0g,,,TRUE,Retained
+f1q2,double,haven_labelled|vctrs_vctr|double,float64, the us should share its control of iraq with other countries or the u.n. in ret,%8.0g,,,TRUE,Retained
+f1q3,double,haven_labelled|vctrs_vctr|double,float64," in general, the us should be willing to invade other countries we believe pose",%8.0g,,,TRUE,Retained
+f1q5,double,haven_labelled|vctrs_vctr|double,float64, the next section concerns issues of international trade and the u.s. economy.wh,%8.0g,,,TRUE,Retained
+f1q6,double,haven_labelled|vctrs_vctr|double,float64, and how strongly would you agree or disagree with the following statements abou,%8.0g,,,TRUE,Retained
+f1q7,double,haven_labelled|vctrs_vctr|double,float64," on the whole, more free trade means more jobs, because we can sell more goods a",%8.0g,,,TRUE,Retained
+f1q8,double,haven_labelled|vctrs_vctr|double,float64, protecting existing american jobs and industries is more important than lowerin,%8.0g,,,TRUE,Retained
+f1q9,double,haven_labelled|vctrs_vctr|double,float64," thinking back over the past few months, would you say the national economy is:",%8.0g,,,TRUE,Retained
+f1q10,double,haven_labelled|vctrs_vctr|double,float64," now looking forward to the next few months, do you expect the national economy",%8.0g,,,TRUE,Retained
+f1q11fu,double,haven_labelled|vctrs_vctr|double,float64, which one of these two statements do you agree with more stronglyÂ— or do you a,%8.0g,,,TRUE,Retained
+f1q12fu,double,haven_labelled|vctrs_vctr|double,float64, here's another pair: which one of these two statements do you agree with more s,%8.0g,,,TRUE,Retained
+f1q13,double,haven_labelled|vctrs_vctr|double,float64, here are a few more statements with which we'd like to know how strongly you ag,%8.0g,,,TRUE,Retained
+f1q14,double,haven_labelled|vctrs_vctr|double,float64," because most people don't really know much about what's happening in the world,",%8.0g,,,TRUE,Retained
+f1q15,double,haven_labelled|vctrs_vctr|double,float64, people like me don't have any say about what the government does.,%8.0g,,,TRUE,Retained
+f1q15a,double,haven_labelled|vctrs_vctr|double,float64, public officials don't care much what people like me think.,%8.0g,,,TRUE,Retained
+f1q15b,double,haven_labelled|vctrs_vctr|double,float64, some people say that candidates make promises just to get elected and that they,%8.0g,,,TRUE,Retained
+f1q15c,double,haven_labelled|vctrs_vctr|double,float64," some people say that no matter who people vote for, it won't make any differenc",%8.0g,,,TRUE,Retained
+f1q16,double,haven_labelled|vctrs_vctr|double,float64," on average, how often would you say you participate in conversations about publ",%8.0g,,,TRUE,Retained
+f1q17,double,haven_labelled|vctrs_vctr|double,float64," during the last week, how many days did you watch the news on tv?",%8.0g,,,TRUE,Retained
+f1q18,double,haven_labelled|vctrs_vctr|double,float64, how interested would you say you generally are in politics in the u.s.,%8.0g,,,TRUE,Retained
+f1q18a,double,haven_labelled|vctrs_vctr|double,float64, we're interested in your use of the cd we sent you containing information about,%8.0g,,,TRUE,Retained
+f1q18b,double,haven_labelled|vctrs_vctr|double,float64, how many times did you actually use the cd?,%8.0g,,,TRUE,Retained
+f1q19_1,double,haven_labelled|vctrs_vctr|double,float64, the next section concerns your impressions of the various candidates running fo,%8.0g,,,TRUE,Retained
+f1q19_2,double,haven_labelled|vctrs_vctr|double,float64, the next section concerns your impressions of the various candidates running fo,%8.0g,,,TRUE,Retained
+f1q19_3,double,haven_labelled|vctrs_vctr|double,float64, the next section concerns your impressions of the various candidates running fo,%8.0g,,,TRUE,Retained
+f1q19_4,double,haven_labelled|vctrs_vctr|double,float64, the next section concerns your impressions of the various candidates running fo,%8.0g,,,TRUE,Retained
+f1q19_6,double,haven_labelled|vctrs_vctr|double,float64, the next section concerns your impressions of the various candidates running fo,%8.0g,,,TRUE,Retained
+f1q19_8,double,haven_labelled|vctrs_vctr|double,float64, the next section concerns your impressions of the various candidates running fo,%8.0g,,,TRUE,Retained
+f1q20_1,double,haven_labelled|vctrs_vctr|double,float64, the next word is intelligent. does intelligent describe each of them:   [george,%8.0g,,,TRUE,Retained
+f1q20_2,double,haven_labelled|vctrs_vctr|double,float64, the next word is intelligent. does intelligent describe each of them:   [howard,%8.0g,,,TRUE,Retained
+f1q20_3,double,haven_labelled|vctrs_vctr|double,float64, the next word is intelligent. does intelligent describe each of them:   [john k,%8.0g,,,TRUE,Retained
+f1q20_4,double,haven_labelled|vctrs_vctr|double,float64, the next word is intelligent. does intelligent describe each of them:   [wesley,%8.0g,,,TRUE,Retained
+f1q20_6,double,haven_labelled|vctrs_vctr|double,float64, the next word is intelligent. does intelligent describe each of them:   [john e,%8.0g,,,TRUE,Retained
+f1q20_8,double,haven_labelled|vctrs_vctr|double,float64, the next word is intelligent. does intelligent describe each of them:   [al sha,%8.0g,,,TRUE,Retained
+f1q21_1,double,haven_labelled|vctrs_vctr|double,float64," next, how well does thinks like i do describe each of them:   [george w. bush]",%8.0g,,,TRUE,Retained
+f1q21_2,double,haven_labelled|vctrs_vctr|double,float64," next, how well does thinks like i do describe each of them:   [howard dean]",%8.0g,,,TRUE,Retained
+f1q21_3,double,haven_labelled|vctrs_vctr|double,float64," next, how well does thinks like i do describe each of them:   [john kerry]",%8.0g,,,TRUE,Retained
+f1q21_4,double,haven_labelled|vctrs_vctr|double,float64," next, how well does thinks like i do describe each of them:   [wesley clark]",%8.0g,,,TRUE,Retained
+f1q21_6,double,haven_labelled|vctrs_vctr|double,float64," next, how well does thinks like i do describe each of them:   [john edwards]",%8.0g,,,TRUE,Retained
+f1q21_8,double,haven_labelled|vctrs_vctr|double,float64," next, how well does thinks like i do describe each of them:   [al sharpton]",%8.0g,,,TRUE,Retained
+ft250bus,double,haven_labelled|vctrs_vctr|double,float64,bush t2 feeling thermometer with dks/refused placed at midpoint (50),%8.0g,,,TRUE,Retained
+ft250ker,double,haven_labelled|vctrs_vctr|double,float64,kerry t2 feeling thermometer with dks/refused placed at midpoint (50),%8.0g,,,TRUE,Retained
+ft250edw,double,haven_labelled|vctrs_vctr|double,float64,edwards t2 feeling thermometer with dks/refused placed at midpoint (50),%8.0g,,,TRUE,Retained
+ft250dea,double,haven_labelled|vctrs_vctr|double,float64,dean t2 feeling thermometer with dks/refused placed at midpoint (50),%8.0g,,,TRUE,Retained
+ft250cla,double,haven_labelled|vctrs_vctr|double,float64,clark t2 feeling thermometer with dks/refused placed at midpoint (50),%8.0g,,,TRUE,Retained
+ft250sha,double,haven_labelled|vctrs_vctr|double,float64,sharpton t2 feeling thermometer with dks/refused placed at midpoint (50),%8.0g,,,TRUE,Retained
+f1q22_1,double,haven_labelled|vctrs_vctr|double,float64,q22:  [george w. bush - 0 - 100],%8.0g,,,TRUE,Retained
+f1q22_2,double,haven_labelled|vctrs_vctr|double,float64,q22:  [howard dean - 0 - 100],%8.0g,,,TRUE,Retained
+f1q22_3,double,haven_labelled|vctrs_vctr|double,float64,q22:  [john kerry - 0 - 100],%8.0g,,,TRUE,Retained
+f1q22_6,double,haven_labelled|vctrs_vctr|double,float64,q22:  [john edwards - 0 - 100],%8.0g,,,TRUE,Retained
+f1q22_4,double,haven_labelled|vctrs_vctr|double,float64,q22:  [wesley clark - 0 - 100],%8.0g,,,TRUE,Retained
+f1q22_8,double,haven_labelled|vctrs_vctr|double,float64,q22:  [al sharpton - 0 - 100],%8.0g,,,TRUE,Retained
+f1q22_10,double,haven_labelled|vctrs_vctr|double,float64,q22:  [dennis kucinich - 0 - 100],%8.0g,,,TRUE,Retained
+f1q23,double,haven_labelled|vctrs_vctr|double,float64, next are a couple of questions about president's bush's performance as presiden,%8.0g,,,TRUE,Retained
+f1q24,double,haven_labelled|vctrs_vctr|double,float64, how about bush's handing of the economy?,%8.0g,,,TRUE,Retained
+f1q25,double,haven_labelled|vctrs_vctr|double,float64, now we'd like you to think about some important issues. some people think the f,%8.0g,,,TRUE,Retained
+f1q26_1,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q26_2,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q26_3,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q26_4,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q26_6,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q26_8,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q27,double,haven_labelled|vctrs_vctr|double,float64, next think about the federal budget. some people believe that we should spend m,%8.0g,,,TRUE,Retained
+f1q28_1,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q28_2,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q28_3,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q28_4,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q28_6,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q28_8,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q29,double,haven_labelled|vctrs_vctr|double,float64, here's the next issue. some people feel the united states should intervene mili,%8.0g,,,TRUE,Retained
+f1q30_1,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q30_2,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q30_3,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q30_4,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q30_6,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q30_8,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q31,double,haven_labelled|vctrs_vctr|double,float64, here's the next one. some people feel that we should pursue increased free trad,%8.0g,,,TRUE,Retained
+f1q32_1,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q32_2,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q32_3,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q32_4,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q32_6,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q32_8,double,haven_labelled|vctrs_vctr|double,float64," now, using the same scale, where would you place the following candidates? if y",%8.0g,,,TRUE,Retained
+f1q33,double,haven_labelled|vctrs_vctr|double,float64, now we have some last questions about the upcoming election.who do you think wi,%8.0g,,,TRUE,Retained
+f1q34,double,haven_labelled|vctrs_vctr|double,float64, how close do you think the presidential vote will be?,%8.0g,,,TRUE,Retained
+f1q37,double,haven_labelled|vctrs_vctr|double,float64, has your state held a presidential primary?,%8.0g,,,TRUE,Retained
+f1q37a,double,haven_labelled|vctrs_vctr|double,float64, did you vote in the presidential primary?,%8.0g,,,TRUE,Retained
+f1q37b,double,haven_labelled|vctrs_vctr|double,float64, which presidential candidate did you vote for?,%8.0g,,,TRUE,Retained
+f1q37c,double,haven_labelled|vctrs_vctr|double,float64, does your state have a presidential primary?,%8.0g,,,TRUE,Retained
+f1q37d,double,haven_labelled|vctrs_vctr|double,float64, do you intend to vote in your state's upcoming presidential primary?,%8.0g,,,TRUE,Retained
+f1q37e,double,haven_labelled|vctrs_vctr|double,float64, which presidential candidate will you vote for in the primary?,%8.0g,,,TRUE,Retained
+f1q39,double,haven_labelled|vctrs_vctr|double,float64, we'd like to know how you intend to vote in the november presidential election.,%8.0g,,,TRUE,Retained
+f1q40,double,haven_labelled|vctrs_vctr|double,float64, how certain do you feel you will vote that way? are you:,%8.0g,,,TRUE,Retained
+f1q41b,double,haven_labelled|vctrs_vctr|double,float64," of the remaining candidates, who would you most like to see win the nomination?",%8.0g,,,TRUE,Retained
+f1q41c,double,haven_labelled|vctrs_vctr|double,float64," of the remaining candidates, who would you most like to see win the nomination?",%8.0g,,,TRUE,Retained
+f1q42a,double,haven_labelled|vctrs_vctr|double,float64," among the democrats running for president, who do you think has the best chance",%8.0g,,,TRUE,Retained
+f1q42b,double,haven_labelled|vctrs_vctr|double,float64," of the remaining candidates, who do you think has the best chance of winning th",%8.0g,,,TRUE,Retained
+f1q42c,double,haven_labelled|vctrs_vctr|double,float64," of the remaining candidates, who do you think has the best chance of winning th",%8.0g,,,TRUE,Retained
+f1q41a,double,haven_labelled|vctrs_vctr|double,float64," among the democrats, who would you most like to see win the nomination?",%8.0g,,,TRUE,Retained
+f1q43,double,haven_labelled|vctrs_vctr|double,float64," finally, we're interested in how much information people have picked up about t",%8.0g,,,TRUE,Retained
+f1q44,double,haven_labelled|vctrs_vctr|double,float64," as far as you know, what was wesley clark's most recent position in government?",%8.0g,,,TRUE,Retained
+f1q45,double,haven_labelled|vctrs_vctr|double,float64," as far as you know, did president bush end u.s. tariffs on imported steel becau",%8.0g,,,TRUE,Retained
+f1q46,double,haven_labelled|vctrs_vctr|double,float64, which one of the democratic presidential candidates served as majority leader i,%8.0g,,,TRUE,Retained
+f1q47,double,haven_labelled|vctrs_vctr|double,float64," since president bush took office, would you say that the rate of unemployment i",%8.0g,,,TRUE,Retained
+f1q48,double,haven_labelled|vctrs_vctr|double,float64, so far the number of americans killed in action in iraq can be numbered as:,%8.0g,,,TRUE,Retained
+f1q49,double,haven_labelled|vctrs_vctr|double,float64," as far as you know, what is the bush administration's position on creating a ne",%8.0g,,,TRUE,Retained
+f1q49a,character,character,,identify this person:  clark,%90s,,,FALSE,Excluded; see source_field_exclusions
+f1q49b,character,character,,identify this person:  kucinich,%25s,,,FALSE,Excluded; see source_field_exclusions
+f1q49c,character,character,,identify this person:  sharpton,%37s,,,FALSE,Excluded; see source_field_exclusions
+f1q49d,character,character,,idenitfy this person:  gephardt,%33s,,,FALSE,Excluded; see source_field_exclusions
+f1q50,double,haven_labelled|vctrs_vctr|double,float64, now we'd like you to think about some possible candidate match-ups in november.,%8.0g,,,TRUE,Retained
+f1q51,double,haven_labelled|vctrs_vctr|double,float64, suppose john kerry is the democratic nominee; would you vote for kerry or bush,%8.0g,,,TRUE,Retained
+f1q52,double,haven_labelled|vctrs_vctr|double,float64, now suppose john edwards is the democratic nominee; would you vote for edwards,%8.0g,,,TRUE,Retained
+f1q53,double,haven_labelled|vctrs_vctr|double,float64," finally, what about wesley clark? if he is the democratic nominee, would you vo",%8.0g,,,TRUE,Retained
+ppage,double,haven_labelled|vctrs_vctr|double,float64,age,%8.0g,,,TRUE,Retained
+ppagect4,double,haven_labelled|vctrs_vctr|double,float64,age - 4 categories,%8.0g,,,TRUE,Retained
+ppagecat,double,haven_labelled|vctrs_vctr|double,float64,age - 7 categories,%8.0g,,,TRUE,Retained
+ppdualin,double,haven_labelled|vctrs_vctr|double,float64,dual income hh,%8.0g,,,TRUE,Retained
+ppeduc,double,haven_labelled|vctrs_vctr|double,float64,education (highest degree received),%8.0g,,,TRUE,Retained
+ppeducat,double,haven_labelled|vctrs_vctr|double,float64,education (categorical),%8.0g,,,TRUE,Retained
+ppeth,double,haven_labelled|vctrs_vctr|double,float64,race / ethnicity,%8.0g,,,TRUE,Retained
+ppgender,double,haven_labelled|vctrs_vctr|double,float64,gender,%8.0g,,,TRUE,Retained
+pphhhead,double,haven_labelled|vctrs_vctr|double,float64,household head,%8.0g,,,TRUE,Retained
+pphhsize,double,haven_labelled|vctrs_vctr|double,float64,household size,%8.0g,,,TRUE,Retained
+pphouse,double,haven_labelled|vctrs_vctr|double,float64,housing type,%8.0g,,,TRUE,Retained
+ppincimp,double,haven_labelled|vctrs_vctr|double,float64,household income,%8.0g,,,TRUE,Retained
+ppmarit,double,haven_labelled|vctrs_vctr|double,float64,marital status,%8.0g,,,TRUE,Retained
+ppmsacat,double,haven_labelled|vctrs_vctr|double,float64,msa status,%8.0g,,,TRUE,Retained
+ppreg4,double,haven_labelled|vctrs_vctr|double,float64,region 4 - based on state of residence,%8.0g,,,TRUE,Retained
+ppreg9,double,haven_labelled|vctrs_vctr|double,float64,region 9 - based on state of residence,%8.0g,,,TRUE,Retained
+pprent,double,haven_labelled|vctrs_vctr|double,float64,ownership status of living quarters,%8.0g,,,TRUE,Retained
+ppstaten,double,haven_labelled|vctrs_vctr|double,float64,state,%8.0g,,,TRUE,Retained
+ppt01,double,haven_labelled|vctrs_vctr|double,float64,presence of household members - children under 2,%8.0g,,,TRUE,Retained
+ppt1317,double,haven_labelled|vctrs_vctr|double,float64,presence of household members - children 13-17,%8.0g,,,TRUE,Retained
+ppt18ov,double,haven_labelled|vctrs_vctr|double,float64,presence of household members - adults 18+,%8.0g,,,TRUE,Retained
+ppt25,double,haven_labelled|vctrs_vctr|double,float64,presence of household members - children 2-5,%8.0g,,,TRUE,Retained
+ppt612,double,haven_labelled|vctrs_vctr|double,float64,presence of household members - children 6-12,%8.0g,,,TRUE,Retained
+ppwork,double,haven_labelled|vctrs_vctr|double,float64,current employment status,%8.0g,,,TRUE,Retained
+ethnicdm,double,haven_labelled|vctrs_vctr|double,float64,ethnicity dummy - white (0) or not white (1)?,%8.0g,,,TRUE,Retained
+maritdm,double,haven_labelled|vctrs_vctr|double,float64,marital status dummy - single v. married/divorced/widowed/separated,%8.0g,,,TRUE,Retained
+filter__,double,haven_labelled|vctrs_vctr|double,float64,(treat=0 or treat=1)and(deminddm=0 or deminddm=1) (filter),%8.0g,,,TRUE,Retained
+svcds2k1,double,numeric,float64,t1 r's squared distance from kerry on services scale (b1q25-b1q26_3)(b1q25-b1q26,%8.0g,,,TRUE,Retained
+svcds2e1,double,numeric,float64,t1 r's squared distance from edwards on services scale (b1q25-b1q26_6)(b1q25-b1q,%8.0g,,,TRUE,Retained
+svcds2d1,double,numeric,float64,t1 r's squared distance from dean on services scale (b1q25-b1q26_2)(b1q25-b1q26_,%8.0g,,,TRUE,Retained
+svcds2c1,double,numeric,float64,t1 r's squared distance from clark on services scale (b1q25-b1q26_4)(b1q25-b1q26,%8.0g,,,TRUE,Retained
+svcds2s1,double,numeric,float64,t1 r's squared distance from sharpton on services scale (b1q25-b1q26_8)(b1q25-b1,%8.0g,,,TRUE,Retained
+budds2k1,double,numeric,float64,t1 r's squared distance from kerry on budget scale (b1q27-b1q28_3)(b1q27-b1q28_3,%8.0g,,,TRUE,Retained
+budds2e1,double,numeric,float64,t1 r's squared distance from edwards on budget scale (b1q27-b1q28_6)(b1q27-b1q28,%8.0g,,,TRUE,Retained
+budds2d1,double,numeric,float64,t1 r's squared distance from dean on budget scale (b1q27-b1q28_2)(b1q27-b1q28_2),%8.0g,,,TRUE,Retained
+budds2c1,double,numeric,float64,t1 r's squared distance from clark on budget scale (b1q27-b1q28_4)(b1q27-b1q28_4,%8.0g,,,TRUE,Retained
+budds2s1,double,numeric,float64,t1 r's squared distance from sharpton on budget scale (b1q27-b1q28_8)(b1q27-b1q2,%8.0g,,,TRUE,Retained
+milds2k1,double,numeric,float64,t1 r's squared distance from kerry on military intervention scale (b1q29-b1q30_3,%8.0g,,,TRUE,Retained
+milds2e1,double,numeric,float64,t1 r's squared distance from edwards on military intervention scale (b1q29-b1q30,%8.0g,,,TRUE,Retained
+milds2d1,double,numeric,float64,t1 r's squared distance from dean on military intervention scale (b1q29-b1q30_2),%8.0g,,,TRUE,Retained
+milds2c1,double,numeric,float64,t1 r's squared distance from clark on military intervention scale (b1q29-b1q30_4,%8.0g,,,TRUE,Retained
+milds2s1,double,numeric,float64,t1 r's squared distance from sharpton on military intervention scale (b1q29-b1q3,%8.0g,,,TRUE,Retained
+trads2k1,double,numeric,float64,t1 r's squared distance from kerry on free trade scale (b1q31-b1q32_3)(b1q31-b1q,%8.0g,,,TRUE,Retained
+trads2e1,double,numeric,float64,t1 r's squared distance from edwards on free trade scale (b1q31-b1q32_6)(b1q31-b,%8.0g,,,TRUE,Retained
+trads2d1,double,numeric,float64,t1 r's squared distance from dean on free trade scale (b1q31-b1q32_2)(b1q31-b1q3,%8.0g,,,TRUE,Retained
+trads2c1,double,numeric,float64,t1 r's squared distance from clark on free trade scale (b1q31-b1q32_4)(b1q31-b1q,%8.0g,,,TRUE,Retained
+trads2s1,double,numeric,float64,t1 r's squared distance from sharpton on free trade scale (b1q31-b1q32_8)(b1q31-,%8.0g,,,TRUE,Retained
+polsumk1,double,numeric,float64,t1 kerry - sum of squared distances on each policy scale,%8.0g,,,TRUE,Retained
+polsume1,double,numeric,float64,t1 edwards - sum of squared distances on each policy scale,%8.0g,,,TRUE,Retained
+polsumd1,double,numeric,float64,t1 dean - sum of squared distances on each policy scale,%8.0g,,,TRUE,Retained
+polsumc1,double,numeric,float64,t1 clark - sum of squared distances on each policy scale,%8.0g,,,TRUE,Retained
+polsums1,double,numeric,float64,t1 sharpton - sum of squared distances on each policy scale,%8.0g,,,TRUE,Retained
+poldsk1,double,numeric,float64,r's euclidian policy distance from kerry at t1 (sqrt of polsumk1).,%9.0g,,,TRUE,Retained
+poldse1,double,numeric,float64,r's euclidian policy distance from edwards at t1 (sqrt of polsume1).,%9.0g,,,TRUE,Retained
+poldsd1,double,numeric,float64,r's euclidian policy distance from dean at t1 (sqrt of polsumd1).,%9.0g,,,TRUE,Retained
+poldsc1,double,numeric,float64,r's euclidian policy distance from clark at t1 (sqrt of polsumc1).,%9.0g,,,TRUE,Retained
+poldss1,double,numeric,float64,r's euclidian policy distance from sharpton at t1 (sqrt of polsums1).,%9.0g,,,TRUE,Retained
+minplds1,double,numeric,float64,"minimum policy distance (minimum of poldsk1, poldse1, poldsd1, poldsc1, poldss1)",%9.0g,,,TRUE,Retained
+polprox1,double,haven_labelled|vctrs_vctr|double,float64,which candidate is r closest to on policy positions at t1?,%8.0g,,,TRUE,Retained
+poldmk1,double,haven_labelled|vctrs_vctr|double,float64,dummy for closest policy proximity candidate out of 5 dems - kerry t1,%8.0g,,,TRUE,Retained
+poldme1,double,haven_labelled|vctrs_vctr|double,float64,dummy for closest policy proximity candidate out of 5 dems - edwards t1,%8.0g,,,TRUE,Retained
+poldmd1,double,haven_labelled|vctrs_vctr|double,float64,dummy for closest policy proximity candidate out of 5 dems - dean t1,%8.0g,,,TRUE,Retained
+poldmc1,double,haven_labelled|vctrs_vctr|double,float64,dummy for closest policy proximity candidate out of 5 dems - clark t1,%8.0g,,,TRUE,Retained
+poldms1,double,haven_labelled|vctrs_vctr|double,float64,dummy for closest policy proximity candidate out of 5 dems - sharpton t1,%8.0g,,,TRUE,Retained
+svcds2k2,double,numeric,float64,t2 r's squared distance from kerry on services scale (f1q25-f1q26_3)(f1q25-f1q26,%8.0g,,,TRUE,Retained
+svcds2e2,double,numeric,float64,t2 r's squared distance from edwards on services scale (f1q25-f1q26_6)(f1q25-f1q,%8.0g,,,TRUE,Retained
+svcds2d2,double,numeric,float64,t2 r's squared distance from dean on services scale (f1q25-f1q26_2)(f1q25-f1q26_,%8.0g,,,TRUE,Retained
+svcds2c2,double,numeric,float64,t2 r's squared distance from clark on services scale (f1q25-f1q26_4)(f1q25-f1q26,%8.0g,,,TRUE,Retained
+svcds2s2,double,numeric,float64,t2 r's squared distance from sharpton on services scale (f1q25-f1q26_8)(f1q25-f1,%8.0g,,,TRUE,Retained
+budds2k2,double,numeric,float64,t2 r's squared distance from kerry on budget scale (f1q27-f1q28_3)(f1q27-f1q28_3,%8.0g,,,TRUE,Retained
+budds2e2,double,numeric,float64,t2 r's squared distance from edwards on budget scale (f1q27-f1q28_6)(f1q27-f1q28,%8.0g,,,TRUE,Retained
+budds2d2,double,numeric,float64,t2 r's squared distance from dean on budget scale (f1q27-f1q28_2)(f1q27-f1q28_2),%8.0g,,,TRUE,Retained
+budds2c2,double,numeric,float64,t2 r's squared distance from clark on budget scale (f1q27-f1q28_4)(f1q27-f1q28_4,%8.0g,,,TRUE,Retained
+budds2s2,double,numeric,float64,t2 r's squared distance from sharpton on budget scale (f1q27-f1q28_8)(f1q27-f1q2,%8.0g,,,TRUE,Retained
+milds2k2,double,numeric,float64,t2 r's squared distance from kerry on military intervention scale (f1q29-f1q30_3,%8.0g,,,TRUE,Retained
+milds2e2,double,numeric,float64,t2 r's squared distance from edwards on military intervention scale (f1q29-f1q30,%8.0g,,,TRUE,Retained
+milds2d2,double,numeric,float64,t2 r's squared distance from dean on military intervention scale (f1q29-f1q30_2),%8.0g,,,TRUE,Retained
+milds2c2,double,numeric,float64,t2 r's squared distance from clark on military intervention scale (f1q29-f1q30_4,%8.0g,,,TRUE,Retained
+milds2s2,double,numeric,float64,t2 r's squared distance from sharpton on military intervention scale (f1q29-f1q3,%8.0g,,,TRUE,Retained
+trads2k2,double,numeric,float64,t2 r's squared distance from kerry on free trade scale (f1q31-f1q32_3)(f1q31-f1q,%8.0g,,,TRUE,Retained
+trads2e2,double,numeric,float64,t2 r's squared distance from edwards on free trade scale (f1q31-f1q32_6)(f1q31-f,%8.0g,,,TRUE,Retained
+trads2d2,double,numeric,float64,t2 r's squared distance from dean on free trade scale (f1q31-f1q32_2)(f1q31-f1q3,%8.0g,,,TRUE,Retained
+trads2c2,double,numeric,float64,t2 r's squared distance from clark on free trade scale (f1q31-f1q32_4)(f1q31-f1q,%8.0g,,,TRUE,Retained
+trads2s2,double,numeric,float64,t2 r's squared distance from sharpton on free trade scale (f1q31-f1q32_8)(f1q31-,%8.0g,,,TRUE,Retained
+polsumk2,double,numeric,float64,t2 kerry - sum of squared distances on each policy scale,%8.0g,,,TRUE,Retained
+polsume2,double,numeric,float64,t2 edwards - sum of squared distances on each policy scale,%8.0g,,,TRUE,Retained
+polsumd2,double,numeric,float64,t2 dean - sum of squared distances on each policy scale,%8.0g,,,TRUE,Retained
+polsumc2,double,numeric,float64,t2 clark - sum of squared distances on each policy scale,%8.0g,,,TRUE,Retained
+polsums2,double,numeric,float64,t2 sharpton - sum of squared distances on each policy scale,%8.0g,,,TRUE,Retained
+poldsk2,double,numeric,float64,r's euclidian policy distance from kerry at t2 (sqrt of polsumk2).,%9.0g,,,TRUE,Retained
+poldse2,double,numeric,float64,r's euclidian policy distance from edwards at t2 (sqrt of polsume2).,%9.0g,,,TRUE,Retained
+poldsd2,double,numeric,float64,r's euclidian policy distance from dean at t2 (sqrt of polsumd2).,%9.0g,,,TRUE,Retained
+poldsc2,double,numeric,float64,r's euclidian policy distance from clark at t2 (sqrt of polsumc2).,%9.0g,,,TRUE,Retained
+poldss2,double,numeric,float64,r's euclidian policy distance from sharpton at t2 (sqrt of polsums2).,%9.0g,,,TRUE,Retained
+minplds2,double,numeric,float64,"minimum policy distance (minimum of poldsk2, poldse2, poldsd2, poldsc2, poldss2)",%9.0g,,,TRUE,Retained
+polprox2,double,haven_labelled|vctrs_vctr|double,float64,which candidate is r closest to on policy positions at t2?,%8.0g,,,TRUE,Retained
+poldmk2,double,haven_labelled|vctrs_vctr|double,float64,dummy for closest policy proximity candidate out of 5 dems - kerry t2,%8.0g,,,TRUE,Retained
+poldme2,double,haven_labelled|vctrs_vctr|double,float64,dummy for closest policy proximity candidate out of 5 dems - edwards t2,%8.0g,,,TRUE,Retained
+poldmd2,double,haven_labelled|vctrs_vctr|double,float64,dummy for closest policy proximity candidate out of 5 dems - dean t2,%8.0g,,,TRUE,Retained
+poldmc2,double,haven_labelled|vctrs_vctr|double,float64,dummy for closest policy proximity candidate out of 5 dems - clark t2,%8.0g,,,TRUE,Retained
+poldms2,double,haven_labelled|vctrs_vctr|double,float64,dummy for closest policy proximity candidate out of 5 dems - sharpton t2,%8.0g,,,TRUE,Retained
+elecdmk2,double,haven_labelled|vctrs_vctr|double,float64,dummy for most electable candidate based on f1q33 - kerry t2 (with bush and shar,%8.0g,,,TRUE,Retained
+elecdme2,double,haven_labelled|vctrs_vctr|double,float64,dummy for most electable candidate based on f1q33 - edwards t2 (with bush and sh,%8.0g,,,TRUE,Retained
+elecdmd2,double,haven_labelled|vctrs_vctr|double,float64,dummy for most electable candidate based on f1q33 - dean t2 (with bush and sharp,%8.0g,,,TRUE,Retained
+elecdmc2,double,haven_labelled|vctrs_vctr|double,float64,dummy for most electable candidate based on f1q33 - clark t2 (with bush and shar,%8.0g,,,TRUE,Retained
+elecdms2,double,haven_labelled|vctrs_vctr|double,float64,dummy for most electable candidate based on f1q33 - sharpton t2,%8.0g,,,TRUE,Retained
+maxft2,double,numeric,float64,maximum t2 feeling thermometer rating across 5 dem candidates.,%8.0g,,,TRUE,Retained
+predvt2,double,haven_labelled|vctrs_vctr|double,float64,predicted vote choice at t2 based on feeling thermometer ratings (highest rating,%8.0g,,,TRUE,Retained
+regval,double,numeric,float64,number of variables out of those used in 5-category predicted vote multi logit r,%8.0g,,,TRUE,Retained
+el2dmk2,double,haven_labelled|vctrs_vctr|double,float64,dummy for most electable candidate based on f1q42a - kerry t2,%8.0g,,,TRUE,Retained
+el2dme2,double,haven_labelled|vctrs_vctr|double,float64,dummy for most electable candidate based on f1q42a - edwards t2,%8.0g,,,TRUE,Retained
+el2dmd2,double,haven_labelled|vctrs_vctr|double,float64,dummy for most electable candidate based on f1q42a - dean t2,%8.0g,,,TRUE,Retained
+el2dmc2,double,haven_labelled|vctrs_vctr|double,float64,dummy for most electable candidate based on f1q42a - clark t2,%8.0g,,,TRUE,Retained
+el2dms2,double,haven_labelled|vctrs_vctr|double,float64,dummy for most electable candidate based on f1q42a - sharpton t2,%8.0g,,,TRUE,Retained
+trexpcon,double,haven_labelled|vctrs_vctr|double,float64,control versus true treatment (based on trtcont),%8.0g,,,TRUE,Retained
+viaball1,double,numeric,float64,"t2 most viable candidate (from fq42a), for those respondents who answered f1q42a",%8.0g,,,TRUE,Retained
+viaball2,double,numeric,float64,"t2 second most viable candidate (from fq42b), for those respondents who answered",%8.0g,,,TRUE,Retained
+viaball3,double,numeric,float64,"t2 third most viable candidate (from fq42c), for those respondents who answered",%8.0g,,,TRUE,Retained
+viab21,double,numeric,float64,"t2 most viable candidate (from fq42a), for those respondents who answered f1q42a",%8.0g,,,TRUE,Retained
+viab22,double,numeric,float64,"t2 second most viable candidate (from fq42b), for those respondents who answered",%8.0g,,,TRUE,Retained
+viab1,double,numeric,float64,"t2 most viable candidate (from fq42a), for those respondents who answered f1q42a",%8.0g,,,TRUE,Retained
+val0,double,haven_labelled|vctrs_vctr|double,float64,"did respondent fail to answer all 3 viability questions (f1q42a, f1q42b, f1q42c)",%8.0g,,,TRUE,Retained
+viabker2,double,haven_labelled|vctrs_vctr|double,float64,"t2 kerry candidate viability measure calculated from f1q42a, f1q42b, f1q42c",%9.0g,,,TRUE,Retained
+viabedw2,double,haven_labelled|vctrs_vctr|double,float64,"t2 edwards candidate viability measure calculated from f1q42a, f1q42b, f1q42c",%9.0g,,,TRUE,Retained
+viabdea2,double,haven_labelled|vctrs_vctr|double,float64,"t2 dean candidate viability measure calculated from f1q42a, f1q42b, f1q42c",%9.0g,,,TRUE,Retained
+viabcla2,double,haven_labelled|vctrs_vctr|double,float64,"t2 clark candidate viability measure calculated from f1q42a, f1q42b, f1q42c",%9.0g,,,TRUE,Retained
+viabsha2,double,haven_labelled|vctrs_vctr|double,float64,"t2 sharpton candidate viability measure calculated from f1q42a, f1q42b, f1q42c",%9.0g,,,TRUE,Retained
+trtavgk2,double,numeric,float64,t2 average trait rating of kerry (from 1 = not very well to 4 = extremely well),%9.0g,,,TRUE,Retained
+trtavge2,double,numeric,float64,t2 average trait rating of edwards (from 1 = not very well to 4 = extremely well,%9.0g,,,TRUE,Retained
+trtavgd2,double,numeric,float64,t2 average trait rating of dean (from 1 = not very well to 4 = extremely well) o,%9.0g,,,TRUE,Retained
+trtavgc2,double,numeric,float64,t2 average trait rating of clark (from 1 = not very well to 4 = extremely well),%9.0g,,,TRUE,Retained
+trtavgs2,double,numeric,float64,t2 average trait rating of sharpton (from 1 = not very well to 4 = extremely wel,%9.0g,,,TRUE,Retained
+kerviab2,double,haven_labelled|vctrs_vctr|double,float64,"kerry ""viability"" at t2, based on f1q42a-f1q42c",%8.0g,,,TRUE,Retained
+edwviab2,double,haven_labelled|vctrs_vctr|double,float64,"edwards ""viability"" at t2, based on f1q42a-f1q42c",%8.0g,,,TRUE,Retained
+deaviab2,double,haven_labelled|vctrs_vctr|double,float64,"dean ""viability"" at t2, based on f1q42a-f1q42c",%8.0g,,,TRUE,Retained
+claviab2,double,haven_labelled|vctrs_vctr|double,float64,"clark ""viability"" at t2, based on f1q42a-f1q42c",%8.0g,,,TRUE,Retained
+shaviab2,double,haven_labelled|vctrs_vctr|double,float64,"sharpton ""viability"" at t2, based on f1q42a-f1q42c",%8.0g,,,TRUE,Retained
+pvdmke2,double,haven_labelled|vctrs_vctr|double,float64,"t2 dummy for predicted vote choice between kerry and edwards, based on t2 feelin",%8.0g,,,TRUE,Retained
+pvdmkd2,double,haven_labelled|vctrs_vctr|double,float64,"t2 dummy for predicted vote choice between kerry and dean, based on t2 feeling t",%8.0g,,,TRUE,Retained
+pvdmkc2,double,haven_labelled|vctrs_vctr|double,float64,"t2 dummy for predicted vote choice between kerry and clark, based on t2 feeling",%8.0g,,,TRUE,Retained
+pvdmks2,double,haven_labelled|vctrs_vctr|double,float64,"t2 dummy for predicted vote choice between kerry and sharpton, based on t2 feeli",%8.0g,,,TRUE,Retained
+pvdmed2,double,haven_labelled|vctrs_vctr|double,float64,"t2 dummy for predicted vote choice between edwards and dean, based on t2 feeling",%8.0g,,,TRUE,Retained
+pvdmec2,double,haven_labelled|vctrs_vctr|double,float64,"t2 dummy for predicted vote choice between edwards and clark, based on t2 feelin",%8.0g,,,TRUE,Retained
+pvdmes2,double,haven_labelled|vctrs_vctr|double,float64,"t2 dummy for predicted vote choice between edwards and sharpton, based on t2 fee",%8.0g,,,TRUE,Retained
+pvdmdc2,double,haven_labelled|vctrs_vctr|double,float64,"t2 dummy for predicted vote choice between dean and clark, based on t2 feeling t",%8.0g,,,TRUE,Retained
+pvdmds2,double,haven_labelled|vctrs_vctr|double,float64,"t2 dummy for predicted vote choice between dean and sharpton, based on t2 feelin",%8.0g,,,TRUE,Retained
+pvdmcs2,double,haven_labelled|vctrs_vctr|double,float64,"t2 dummy for predicted vote choice between clark and sharpton, based on t2 feeli",%8.0g,,,TRUE,Retained
+trtcont,double,haven_labelled|vctrs_vctr|double,float64,continuous variable for control....treatment (expcont+mtgatt),%8.0g,,,TRUE,Retained
+eledmkd2,double,haven_labelled|vctrs_vctr|double,float64,"t2 electability comparison of kerry and dean, based on f1q33",%8.0g,,,TRUE,Retained
+eledmkc2,double,haven_labelled|vctrs_vctr|double,float64,"t2 electability comparison of kerry and clark, based on f1q33",%8.0g,,,TRUE,Retained
+eledmks2,double,haven_labelled|vctrs_vctr|double,float64,"t2 electability comparison of kerry and sharpton, based on f1q33",%8.0g,,,TRUE,Retained
+eledmed2,double,haven_labelled|vctrs_vctr|double,float64,"t2 electability comparison of edwards and dean, based on f1q33",%8.0g,,,TRUE,Retained
+eledmec2,double,haven_labelled|vctrs_vctr|double,float64,"t2 electability comparison of edwards and clark, based on f1q33",%8.0g,,,TRUE,Retained
+eledmes2,double,haven_labelled|vctrs_vctr|double,float64,"t2 electability comparison of edwards and sharpton, based on f1q33",%8.0g,,,TRUE,Retained
+eledmdc2,double,haven_labelled|vctrs_vctr|double,float64,"t2 electability comparison of dean and clark, based on f1q33",%8.0g,,,TRUE,Retained
+eledmds2,double,haven_labelled|vctrs_vctr|double,float64,"t2 electability comparison of dean and sharpton, based on f1q33",%8.0g,,,TRUE,Retained
+eledmcs2,double,haven_labelled|vctrs_vctr|double,float64,"t2 electability comparison of clark and sharpton, based on f1q33",%8.0g,,,TRUE,Retained
+viabke2,double,haven_labelled|vctrs_vctr|double,float64,t2 pairwise viability comparison between kerry and edwards (based on f1q42a-f1qa,%8.0g,,,TRUE,Retained
+viabkd2,double,haven_labelled|vctrs_vctr|double,float64,t2 pairwise viability comparison between kerry and dean (based on f1q42a-f1qa2c),%8.0g,,,TRUE,Retained
+viabkc2,double,haven_labelled|vctrs_vctr|double,float64,t2 pairwise viability comparison between kerry and clark (based on f1q42a-f1qa2c,%8.0g,,,TRUE,Retained
+viabks2,double,haven_labelled|vctrs_vctr|double,float64,t2 pairwise viability comparison between kerry and sharpton (based on f1q42a-f1q,%8.0g,,,TRUE,Retained
+viabed2,double,haven_labelled|vctrs_vctr|double,float64,t2 pairwise viability comparison between edwards and dean (based on f1q42a-f1qa2,%8.0g,,,TRUE,Retained
+viabec2,double,haven_labelled|vctrs_vctr|double,float64,t2 pairwise viability comparison between edwards and clark (based on f1q42a-f1qa,%8.0g,,,TRUE,Retained
+viabes2,double,haven_labelled|vctrs_vctr|double,float64,t2 pairwise viability comparison between edwards and sharpton (based on f1q42a-f,%8.0g,,,TRUE,Retained
+viabdc2,double,haven_labelled|vctrs_vctr|double,float64,t2 pairwise viability comparison between dean and clark (based on f1q42a-f1qa2c),%8.0g,,,TRUE,Retained
+viabds2,double,haven_labelled|vctrs_vctr|double,float64,t2 pairwise viability comparison between dean and sharpton (based on f1q42a-f1qa,%8.0g,,,TRUE,Retained
+viabcs2,double,haven_labelled|vctrs_vctr|double,float64,t2 pairwise viability comparison between clark and sharpton (based on f1q42a-f1q,%8.0g,,,TRUE,Retained
+poldfkd2,double,numeric,float64,t2 distance between kerry and dean policy proximity to respondent (poldsk2-polds,%9.0g,,,TRUE,Retained
+poldfkc2,double,numeric,float64,t2 distance between kerry and clark policy proximity to respondent (poldsk2-pold,%9.0g,,,TRUE,Retained
+poldfks2,double,numeric,float64,t2 distance between kerry and sharpton policy proximity to respondent (poldsk2-p,%9.0g,,,TRUE,Retained
+poldfed2,double,numeric,float64,t2 distance between edwards and dean policy proximity to respondent (poldse2-pol,%9.0g,,,TRUE,Retained
+poldfec2,double,numeric,float64,t2 distance between edwards and clark policy proximity to respondent (poldse2-po,%9.0g,,,TRUE,Retained
+poldfes2,double,numeric,float64,t2 distance between edwards and sharpton policy proximity to respondent (poldse2,%9.0g,,,TRUE,Retained
+poldfdc2,double,numeric,float64,t2 distance between dean and clark policy proximity to respondent (poldsd2-polds,%9.0g,,,TRUE,Retained
+poldfds2,double,numeric,float64,t2 distance between dean and sharpton policy proximity to respondent (poldsd2-po,%9.0g,,,TRUE,Retained
+poldfcs2,double,numeric,float64,t2 distance between clark and sharpton policy proximity to respondent (poldsc2-p,%9.0g,,,TRUE,Retained
+pdkdrev2,double,numeric,float64,t2 difference in r's policy distance from kerry and from dean (dean - kerry) (po,%9.0g,,,TRUE,Retained
+pdkcrev2,double,numeric,float64,t2 difference in r's policy distance from kerry and from clark (clark - kerry) (,%9.0g,,,TRUE,Retained
+pdksrev2,double,numeric,float64,t2 difference in r's policy distance from kerry and from sharpton (sharpton - ke,%9.0g,,,TRUE,Retained
+pdedrev2,double,numeric,float64,t2 difference in r's policy distance from edwards and from dean (dean - edwards),%9.0g,,,TRUE,Retained
+pdecrev2,double,numeric,float64,t2 difference in r's policy distance from edwards and from clark (clark - edward,%9.0g,,,TRUE,Retained
+pdesrev2,double,numeric,float64,t2 difference in r's policy distance from edwards and from sharpton (sharpton -,%9.0g,,,TRUE,Retained
+pddcrev2,double,numeric,float64,t2 difference in r's policy distance from dean and from clark (clark - dean) (po,%9.0g,,,TRUE,Retained
+pddsrev2,double,numeric,float64,t2 difference in r's policy distance from dean and from sharpton (sharpton - dea,%9.0g,,,TRUE,Retained
+pdcsrev2,double,numeric,float64,t2 difference in r's policy distance from clark and from sharpton (sharpton - cl,%9.0g,,,TRUE,Retained
+trtdfkd2,double,numeric,float64,t2 difference between kerry and dean in average trait rating (trtavgk2-travgd2).,%9.0g,,,TRUE,Retained
+trtdfkc2,double,numeric,float64,t2 difference between kerry and clark in average trait rating (trtavgk2-travgc2),%9.0g,,,TRUE,Retained
+trtdfks2,double,numeric,float64,t2 difference between kerry and sharpton in average trait rating (trtavgk2-travg,%9.0g,,,TRUE,Retained
+trtdfed2,double,numeric,float64,t2 difference between edwards and dean in average trait rating (trtavge2-travgd2,%9.0g,,,TRUE,Retained
+trtdfec2,double,numeric,float64,t2 difference between edwards and clark in average trait rating (trtavge2-travgc,%9.0g,,,TRUE,Retained
+trtdfes2,double,numeric,float64,t2 difference between edwards and sharpton in average trait rating (trtavge2-tra,%9.0g,,,TRUE,Retained
+trtdfdc2,double,numeric,float64,t2 difference between dean and clark in average trait rating (trtavgd2-travgc2).,%9.0g,,,TRUE,Retained
+trtdfds2,double,numeric,float64,t2 difference between dean and sharpton in average trait rating (trtavgd2-travgs,%9.0g,,,TRUE,Retained
+trtdfcs2,double,numeric,float64,t2 difference between clark and sharpton in average trait rating (trtavgc2-travg,%9.0g,,,TRUE,Retained
+pvtrike1,double,haven_labelled|vctrs_vctr|double,float64,trichotomous kerry-edwards t1 vote choice based on t1 feeling thermometer,%8.0g,,,TRUE,Retained
+pvtrike2,double,haven_labelled|vctrs_vctr|double,float64,t2 trichotomous predicted vote between kerry and edwards based on t2 feeling the,%8.0g,,,TRUE,Retained
+pvtrikd2,double,haven_labelled|vctrs_vctr|double,float64,t2 trichotomous predicted vote between kerry and dean based on t2 feeling thermo,%8.0g,,,TRUE,Retained
+pvtrikc2,double,haven_labelled|vctrs_vctr|double,float64,t2 trichotomous predicted vote between kerry and clark based on t2 feeling therm,%8.0g,,,TRUE,Retained
+pvtriks2,double,haven_labelled|vctrs_vctr|double,float64,t2 trichotomous predicted vote between kerry and sharpton based on t2 feeling th,%8.0g,,,TRUE,Retained
+pvtried2,double,haven_labelled|vctrs_vctr|double,float64,t2 trichotomous predicted vote between edwards and dean based on t2 feeling ther,%8.0g,,,TRUE,Retained
+pvtriec2,double,haven_labelled|vctrs_vctr|double,float64,t2 trichotomous predicted vote between edwards and clark based on t2 feeling the,%8.0g,,,TRUE,Retained
+pvtries2,double,haven_labelled|vctrs_vctr|double,float64,t2 trichotomous predicted vote between edwards and sharpton based on t2 feeling,%8.0g,,,TRUE,Retained
+pvtridc2,double,haven_labelled|vctrs_vctr|double,float64,t2 trichotomous predicted vote between dean and clark based on t2 feeling thermo,%8.0g,,,TRUE,Retained
+pvtrids2,double,haven_labelled|vctrs_vctr|double,float64,t2 trichotomous predicted vote between dean and sharpton based on t2 feeling the,%8.0g,,,TRUE,Retained
+pvtrics2,double,haven_labelled|vctrs_vctr|double,float64,t2 trichotomous predicted vote between clark and sharpton based on t2 feeling th,%8.0g,,,TRUE,Retained
+kdftdif2,double,numeric,float64,t2 feeling thermometer difference between kerry and dean (with don't knows place,%8.0g,,,TRUE,Retained
+kcftdif2,double,numeric,float64,t2 feeling thermometer difference between kerry and clark (with don't knows plac,%8.0g,,,TRUE,Retained
+ksftdif2,double,numeric,float64,t2 feeling thermometer difference between kerry and sharpton (with don't knows p,%8.0g,,,TRUE,Retained
+edftdif2,double,numeric,float64,t2 feeling thermometer difference between edwards and dean (with don't knows pla,%8.0g,,,TRUE,Retained
+ecftdif2,double,numeric,float64,t2 feeling thermometer difference between edwards and clark (with don't knows pl,%8.0g,,,TRUE,Retained
+esftdif2,double,numeric,float64,t2 feeling thermometer difference between edwards and sharpton (with don't knows,%8.0g,,,TRUE,Retained
+dcftdif2,double,numeric,float64,t2 feeling thermometer difference between dean and clark (with don't knows place,%8.0g,,,TRUE,Retained
+dsftdif2,double,numeric,float64,t2 feeling thermometer difference between dean and sharpton (with don't knows pl,%8.0g,,,TRUE,Retained
+csftdif2,double,numeric,float64,t2 feeling thermometer difference between clark and sharpton (with don't knows p,%8.0g,,,TRUE,Retained
+trtrake2,double,numeric,float64,t2 kerry-edwards treatment-trait difference interaction term (treat*trtdfke2),%9.0g,,,TRUE,Retained
+trpolke2,double,numeric,float64,t2 kerry-edwards treatment-policy difference interaction term (treat*poldfke2),%9.0g,,,TRUE,Retained
+trpolker,double,numeric,float64,t2 kerry-edwards treatment-policy difference reversed interaction term (treat*pd,%9.0g,,,TRUE,Retained
+trviake2,double,numeric,float64,t2 kerry-edwards treatment-viability interaction term (treat*viabke2).,%8.0g,,,TRUE,Retained
+demelke2,double,numeric,float64,t2 kerry-edwards democrat/independent-electabilty difference interaction term (d,%8.0g,,,TRUE,Retained
+demvike2,double,numeric,float64,t2 kerry-edwards democrat/independent-viabilty difference interaction term (demi,%8.0g,,,TRUE,Retained
+treldeke,double,numeric,float64,t2 kerry-edwards treatment-democrat/independent-electabilty difference interacti,%8.0g,,,TRUE,Retained
+kerpv41,double,haven_labelled|vctrs_vctr|double,float64,t2 kerry vote from qf41a-qf41c,%8.0g,,,TRUE,Retained
+edwpv41,double,haven_labelled|vctrs_vctr|double,float64,t2 edwards vote from qf41a-qf41c,%8.0g,,,TRUE,Retained
+deapv41,double,haven_labelled|vctrs_vctr|double,float64,t2 dean vote from qf41a-qf41c,%8.0g,,,TRUE,Retained
+clapv41,double,haven_labelled|vctrs_vctr|double,float64,t2 clark vote from qf41a-qf41c,%8.0g,,,TRUE,Retained
+shapv41,double,haven_labelled|vctrs_vctr|double,float64,t2 sharpton vote from qf41a-qf41c,%8.0g,,,TRUE,Retained
+pvf41ke,double,haven_labelled|vctrs_vctr|double,float64,t2 kerry-edwards pairwise predicted vote based on fq41a - fq41c.,%8.0g,,,TRUE,Retained
+pvf41kd,double,haven_labelled|vctrs_vctr|double,float64,t2 kerry-dean pairwise predicted vote based on fq41a - fq41c.,%8.0g,,,TRUE,Retained
+pvf41kc,double,haven_labelled|vctrs_vctr|double,float64,t2 kerry-clark pairwise predicted vote based on fq41a - fq41c.,%8.0g,,,TRUE,Retained
+pvf41ks,double,haven_labelled|vctrs_vctr|double,float64,t2 kerry-sharpton pairwise predicted vote based on fq41a - fq41c.,%8.0g,,,TRUE,Retained
+pvf41ed,double,haven_labelled|vctrs_vctr|double,float64,t2 edwards-dean pairwise predicted vote based on fq41a - fq41c.,%8.0g,,,TRUE,Retained
+pvf41ec,double,haven_labelled|vctrs_vctr|double,float64,t2 edwards-clark pairwise predicted vote based on fq41a - fq41c.,%8.0g,,,TRUE,Retained
+pvf41es,double,haven_labelled|vctrs_vctr|double,float64,t2 edwards-sharpton pairwise predicted vote based on fq41a - fq41c.,%8.0g,,,TRUE,Retained
+pvf41dc,double,haven_labelled|vctrs_vctr|double,float64,t2 dean-clark pairwise predicted vote based on fq41a - fq41c.,%8.0g,,,TRUE,Retained
+pvf41ds,double,haven_labelled|vctrs_vctr|double,float64,t2 dean-sharpton pairwise predicted vote based on fq41a - fq41c.,%8.0g,,,TRUE,Retained
+pvf41cs,double,haven_labelled|vctrs_vctr|double,float64,t2 clark-sharpton pairwise predicted vote based on fq41a - fq41c.,%8.0g,,,TRUE,Retained
+kbftdif2,double,numeric,float64,t2 feeling thermometer difference between kerry and bush (with don't knows place,%8.0g,,,TRUE,Retained
+poldfke2,double,numeric,float64,t2 distance between kerry and edwards policy proximity to respondent (kerry - ed,%9.0g,,,TRUE,Retained
+pdkerev2,double,numeric,float64,t2 difference in r's policy distance from kerry and from edwards (edwards - kerr,%9.0g,,,TRUE,Retained
+pldf1ke2,double,numeric,float64,"projected on to a -1 to +1 scale (""poldfke2""/12): t2 distance between kerry and",%9.0g,,,TRUE,Retained
+trtdfke2,double,numeric,float64,t2 difference between kerry and edwards in average trait rating (trtavgk2-travge,%9.0g,,,TRUE,Retained
+treat,double,haven_labelled|vctrs_vctr|double,float64,control versus experimental,%8.0g,,,TRUE,Retained
+trtstrct,double,haven_labelled|vctrs_vctr|double,float64,"control versus experimental, with only those who attended at least one meeting i",%8.0g,,,TRUE,Retained
+demothdm,double,haven_labelled|vctrs_vctr|double,float64,"dummy with democrat=1; and independent, other, & refused = 0.",%8.0g,,,TRUE,Retained
+sou,double,haven_labelled|vctrs_vctr|double,float64,dummy for residents of the south,%8.0g,,,TRUE,Retained
+trtr1ke2,double,numeric,float64,interaction term: treatment*t2 kerry-edwards (-1 to +1) trait rating difference,%9.0g,,,TRUE,Retained
+treleke2,double,numeric,float64,t2 kerry-edwards treatment-electabilty difference interaction term (treat*eledmk,%8.0g,,,TRUE,Retained
+trpd1ke2,double,numeric,float64,interaction term: treatment*t2 edwards-kerry (-1 to +1) policy proximity differe,%9.0g,,,TRUE,Retained
+f1q25md,double,haven_labelled|vctrs_vctr|double,float64,f1q25 (r's own t2 placement on taxes/services scale) recoded to place dks/refuse,%8.0g,,,TRUE,Retained
+f1q26_3m,double,haven_labelled|vctrs_vctr|double,float64,f1q26_3 (r's t2 placement of kerry on taxes/services scale) recoded to place dks,%8.0g,,,TRUE,Retained
+f1q26_6m,double,haven_labelled|vctrs_vctr|double,float64,f1q26_6 (r's t2 placement of edwards on taxes/services scale) recoded to place d,%8.0g,,,TRUE,Retained
+f1q27md,double,haven_labelled|vctrs_vctr|double,float64,f1q27 (r's own t2 placement on defense/domestic spending scale) recoded to place,%8.0g,,,TRUE,Retained
+f1q28_3m,double,haven_labelled|vctrs_vctr|double,float64,f1q28_3 (r's t2 placement of kerry on defense/domestic spending scale) recoded t,%8.0g,,,TRUE,Retained
+f1q28_6m,double,haven_labelled|vctrs_vctr|double,float64,f1q28_6 (r's t2 placement of edwards on defense/domestic spending scale) recoded,%8.0g,,,TRUE,Retained
+f1q29md,double,haven_labelled|vctrs_vctr|double,float64,f1q29 (r's own t2 placement on unilateral/multilateral intervention scale) recod,%8.0g,,,TRUE,Retained
+f1q30_3m,double,haven_labelled|vctrs_vctr|double,float64,f1q30_3 (r's t2 placement of kerry on unilateral/multilateral intervention scale,%8.0g,,,TRUE,Retained
+f1q30_6m,double,haven_labelled|vctrs_vctr|double,float64,f1q30_6 (r's t2 placement of edwards on unilateral/multilateral intervention sca,%8.0g,,,TRUE,Retained
+f1q31md,double,haven_labelled|vctrs_vctr|double,float64,f1q31 (r's own t2 placement on free trade/protectionism scale) recoded to place,%8.0g,,,TRUE,Retained
+f1q32_3m,double,haven_labelled|vctrs_vctr|double,float64,f1q32_3 (r's t2 placement of kerry on free trade/protectionism scale) recoded to,%8.0g,,,TRUE,Retained
+f1q32_6m,double,haven_labelled|vctrs_vctr|double,float64,f1q32_6 (r's t2 placement of edwards on free trade/protectionism scale) recoded,%8.0g,,,TRUE,Retained
+f1q19_3m,double,haven_labelled|vctrs_vctr|double,float64,"f1q19_3 recoded to place dks at midpoint: does ""sincere"" describe each candidate",%8.0g,,,TRUE,Retained
+f1q19_6m,double,haven_labelled|vctrs_vctr|double,float64,"f1q19_6 recoded to place dks at midpoint: does ""sincere"" describe each candidate",%8.0g,,,TRUE,Retained
+f1q20_3m,double,haven_labelled|vctrs_vctr|double,float64,"f1q20_3 recoded to place dks at midpoint: does ""intelligent"" describe each of th",%8.0g,,,TRUE,Retained
+f1q20_6m,double,haven_labelled|vctrs_vctr|double,float64,"f1q20_6 recoded to place dks at midpoint: does ""intelligent"" describe each of th",%8.0g,,,TRUE,Retained
+f1q21_3m,double,haven_labelled|vctrs_vctr|double,float64,"f1q21_3 recoded to place dks at midpoint: does ""thinks like i do"" describe each",%8.0g,,,TRUE,Retained
+f1q21_6m,double,haven_labelled|vctrs_vctr|double,float64,"f1q21_6 recoded to place dks at midpoint: does ""thinks like i do"" describe each",%8.0g,,,TRUE,Retained
+b1q43cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on b1q43,%8.0g,,,TRUE,Retained
+b1q44cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on b1q44,%8.0g,,,TRUE,Retained
+b1q45cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on b1q45,%8.0g,,,TRUE,Retained
+b1q46cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on b1q46,%8.0g,,,TRUE,Retained
+b1q47cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on b1q47,%8.0g,,,TRUE,Retained
+b1q48cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on b1q48,%8.0g,,,TRUE,Retained
+b1q49cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on b1q49,%8.0g,,,TRUE,Retained
+f1q43cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on f1q43,%8.0g,,,TRUE,Retained
+f1q44cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on f1q44,%8.0g,,,TRUE,Retained
+f1q45cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on f1q45,%8.0g,,,TRUE,Retained
+f1q46cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on f1q46,%8.0g,,,TRUE,Retained
+f1q47cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on f1q47,%8.0g,,,TRUE,Retained
+f1q48cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on f1q48,%8.0g,,,TRUE,Retained
+f1q49cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on f1q49,%8.0g,,,TRUE,Retained
+b261cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of bush on taxes/services scale,%8.0g,,,TRUE,Retained
+b262cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of dean on taxes/services scale,%8.0g,,,TRUE,Retained
+b263cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of kerry on taxes/services scale,%8.0g,,,TRUE,Retained
+b264cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of clark on taxes/services scale,%8.0g,,,TRUE,Retained
+b266cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of edwards on taxes/services scale,%8.0g,,,TRUE,Retained
+b268cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of sharpton on taxes/services scale,%8.0g,,,TRUE,Retained
+b281cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of bush on defense/domestic spending scale,%8.0g,,,TRUE,Retained
+b282cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of dean on defense/domestic spending scale,%8.0g,,,TRUE,Retained
+b283cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of kerry on defense/domestic spending scale,%8.0g,,,TRUE,Retained
+b284cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of clark on defense/domestic spending scale,%8.0g,,,TRUE,Retained
+b286cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of edwards on defense/domestic spending scale,%8.0g,,,TRUE,Retained
+b288cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of sharpton on defense/domestic spending scale,%8.0g,,,TRUE,Retained
+b301cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of bush on unilateral/multilateral spending sc,%8.0g,,,TRUE,Retained
+b302cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of dean on unilateral/multilateral spending sc,%8.0g,,,TRUE,Retained
+b303cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of kerry on unilateral/multilateral spending s,%8.0g,,,TRUE,Retained
+b304cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of clark on unilateral/multilateral spending s,%8.0g,,,TRUE,Retained
+b306cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of edwards on unilateral/multilateral spending,%8.0g,,,TRUE,Retained
+b308cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of sharpton on unilateral/multilateral spendin,%8.0g,,,TRUE,Retained
+b321cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of bush on free trade/protectionism spending s,%8.0g,,,TRUE,Retained
+b322cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of dean on free trade/protectionism spending s,%8.0g,,,TRUE,Retained
+b323cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of kerry on free trade/protectionism spending,%8.0g,,,TRUE,Retained
+b324cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of clark on free trade/protectionism spending,%8.0g,,,TRUE,Retained
+b326cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of edwards on free trade/protectionism spendin,%8.0g,,,TRUE,Retained
+b328cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t1 placement of sharpton on free trade/protectionism spendi,%8.0g,,,TRUE,Retained
+f261cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of bush on taxes/services scale,%8.0g,,,TRUE,Retained
+f262cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of dean on taxes/services scale,%8.0g,,,TRUE,Retained
+f263cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of kerry on taxes/services scale,%8.0g,,,TRUE,Retained
+f264cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of clark on taxes/services scale,%8.0g,,,TRUE,Retained
+f266cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of edwards on taxes/services scale,%8.0g,,,TRUE,Retained
+f268cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of sharpton on taxes/services scale,%8.0g,,,TRUE,Retained
+f281cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of bush on defense/domestic spending scale,%8.0g,,,TRUE,Retained
+f282cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of dean on defense/domestic spending scale,%8.0g,,,TRUE,Retained
+f283cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of kerry on defense/domestic spending scale,%8.0g,,,TRUE,Retained
+f284cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of clark on defense/domestic spending scale,%8.0g,,,TRUE,Retained
+f286cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of edwards on defense/domestic spending scale,%8.0g,,,TRUE,Retained
+f288cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of sharpton on defense/domestic spending scale,%8.0g,,,TRUE,Retained
+f301cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of bush on unilateral/multilateral spending sc,%8.0g,,,TRUE,Retained
+f302cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of dean on unilateral/multilateral spending sc,%8.0g,,,TRUE,Retained
+f303cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of kerry on unilateral/multilateral spending s,%8.0g,,,TRUE,Retained
+f304cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of clark on unilateral/multilateral spending s,%8.0g,,,TRUE,Retained
+f306cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of edwards on unilateral/multilateral spending,%8.0g,,,TRUE,Retained
+f308cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of sharpton on unilateral/multilateral spendin,%8.0g,,,TRUE,Retained
+f321cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of bush on free trade/protectionism spending s,%8.0g,,,TRUE,Retained
+f322cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of dean on free trade/protectionism spending s,%8.0g,,,TRUE,Retained
+f323cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of kerry on free trade/protectionism spending,%8.0g,,,TRUE,Retained
+f324cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of clark on free trade/protectionism spending,%8.0g,,,TRUE,Retained
+f326cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of edwards on free trade/protectionism spendin,%8.0g,,,TRUE,Retained
+f328cor,double,haven_labelled|vctrs_vctr|double,float64,correct/incorrect on t2 placement of sharpton on free trade/protectionism spendi,%8.0g,,,TRUE,Retained
+t1avgkno,double,numeric,float64,"t1 factual knowledge index [mean(b1q43cor, b1q44cor, b1q45cor, b1q46cor, b1q47co",%9.0g,,,TRUE,Retained
+t2avgkno,double,numeric,float64,"t2 factual knowledge index [mean(f1q43cor, f1q44cor, f1q45cor, f1q46cor, f1q47co",%9.0g,,,TRUE,Retained
+t1polkno,double,numeric,float64,t2 placement knowledge index (mean correct placement of bush & 5 dems on 4 polic,%9.0g,,,TRUE,Retained
+t2polkno,double,numeric,float64,t2 placement knowledge index (mean correct placement of bush & 5 dems on 4 polic,%9.0g,,,TRUE,Retained
+avgknoch,double,numeric,float64,t2-t1 change in factual knowledge index (t2avgkno - t1avgkno),%9.0g,,,TRUE,Retained
+polknoch,double,numeric,float64,t2-t1 change in placement knowledge index (t2polkno - t1polkno),%9.0g,,,TRUE,Retained
+top20kno,double,haven_labelled|vctrs_vctr|double,float64,is r in the 80th percentile or above on t2avgkno?,%8.0g,,,TRUE,Retained
+keftdif1,double,numeric,float64,t1 feeling thermometer difference between kerry and edwards (with don't knows pl,%9.0g,,,TRUE,Retained
+keftdif2,double,numeric,float64,t2 feeling thermometer difference between kerry and edwards (with don't knows pl,%8.0g,,,TRUE,Retained
+keftdf12,double,numeric,float64,t2-t1 kerry-edwards feeling thermometer difference (with dks at midpoint),%9.0g,,,TRUE,Retained
+strpid1,double,haven_labelled|vctrs_vctr|double,float64,"t1 strength of party id (based on b1q11, b1q11a, b1q11b)",%8.0g,,,TRUE,Retained
+extride1,double,numeric,float64,t1 extremity of ideology at t1 (based on b1q12 -- absolute value of r's distance,%8.0g,,,TRUE,Retained
+polintr1,double,haven_labelled|vctrs_vctr|double,float64,t1 level of interest in politics (based on b1q18 - reverse-coded so that higher,%8.0g,,,TRUE,Retained
+ktrtmd2,double,numeric,float64,t2 kerry trait index using trait ratings with dks at midpoint (mean of f1q19_3md,%9.0g,,,TRUE,Retained
+etrtmd2,double,numeric,float64,t2 edward trait index using trait ratings with dks at midpoint (mean of f1q19_6m,%9.0g,,,TRUE,Retained
+ketrmdf2,double,numeric,float64,kerry - edwards t2 trait index difference (using ratings with dk at midpoint) (k,%9.0g,,,TRUE,Retained
+kprxmd2,double,numeric,float64,"r's t2 euclidian policy distance from kerry, using policy placements with dks pl",%9.0g,,,TRUE,Retained
+eprxmd2,double,numeric,float64,"r's t2 euclidian policy distance from edwards, using policy placements with dks",%9.0g,,,TRUE,Retained
+keprmdf2,double,numeric,float64,t2 edwards - kerry policy proximity difference (eprxmd2-kprxmd2).,%9.0g,,,TRUE,Retained
+ketm1df2,double,numeric,float64,projected onto a -1 to +1 scale: kerry - edwards t2 trait index difference (usin,%9.0g,,,TRUE,Retained
+kepm1df2,double,numeric,float64,projected onto a -1 to +1 scale: t2 edwards - kerry policy proximity difference,%9.0g,,,TRUE,Retained
+trtm1ke2,double,numeric,float64,"interaction term: treatment*t2 kerry-edwards (-1 to +1, with dks at mid) trait r",%9.0g,,,TRUE,Retained
+trpm1ke2,double,numeric,float64,"interaction term: treatment*t2 edwards-kerry (-1 to +1, with dks at mid) policy",%9.0g,,,TRUE,Retained
+vetdum,double,haven_labelled|vctrs_vctr|double,float64,dummy for veteran participants (those who participated in jan 2003 dpoll),%8.0g,,,TRUE,Retained
+novdum,double,haven_labelled|vctrs_vctr|double,float64,dummy for novice participants (those who did not participate in jan 2003 dpoll),%8.0g,,,TRUE,Retained
+vttm1ke2,double,numeric,float64,"interaction term: veteran dummy*t2 kerry-edwards (-1 to +1, with dks at mid) tra",%9.0g,,,TRUE,Retained
+vtelke2,double,numeric,float64,interaction term: veteran dummy*t2 kerry-edwards electabilty comparison (vetdum*,%8.0g,,,TRUE,Retained
+vtpm1ke2,double,numeric,float64,"interaction term: veteran dummy*t2 edwards-kerry (-1 to +1, with dks at mid) pol",%9.0g,,,TRUE,Retained
+nvtm1ke2,double,numeric,float64,"interaction term: novice dummy*t2 kerry-edwards (-1 to +1, with dks at mid) trai",%9.0g,,,TRUE,Retained
+nvelke2,double,numeric,float64,interaction term: novice dummy*t2 kerry-edwards electabilty comparison (novdum*e,%8.0g,,,TRUE,Retained
+nvpm1ke2,double,numeric,float64,"interaction term: novice dummy*t2 edwards-kerry (-1 to +1, with dks at mid) poli",%9.0g,,,TRUE,Retained
+vttr1ke2,double,numeric,float64,"interaction term: veteran dummy*t2 kerry-edwards (-1 to +1, with dks excluded) t",%9.0g,,,TRUE,Retained
+vtpd1ke2,double,numeric,float64,"interaction term: veteran dummy*t2 edwards-kerry (-1 to +1, with dks excluded) p",%9.0g,,,TRUE,Retained
+nvtr1ke2,double,numeric,float64,"interaction term: novice dummy*t2 kerry-edwards (-1 to +1, with dks excluded) tr",%9.0g,,,TRUE,Retained
+nvpd1ke2,double,numeric,float64,"interaction term: novice dummy*t2 edwards-kerry (-1 to +1, with dks excluded) po",%9.0g,,,TRUE,Retained
+trtavgk1,double,numeric,float64,t1 average trait rating of kerry (from 1 = not very well to 4 = extremely well),%9.0g,,,TRUE,Retained
+trtavge1,double,numeric,float64,t1 average trait rating of edwards (from 1 = not very well to 4 = extremely well,%9.0g,,,TRUE,Retained
+trtdfke1,double,numeric,float64,t1 difference between kerry and edwards in average trait rating (trtavgk1-travge,%9.0g,,,TRUE,Retained
+trdf1ke1,double,numeric,float64,projected on to a -1 to +1 scale (trtdfke1/3): t1 difference between kerry and e,%9.0g,,,TRUE,Retained
+trdf1ke2,double,numeric,float64,projected on to a -1 to +1 scale (trtdfke2/3): t2 difference between kerry and e,%9.0g,,,TRUE,Retained
+eledmke1,double,haven_labelled|vctrs_vctr|double,float64,"t1 electability comparison of kerry and edwards, based on b1q33",%8.0g,,,TRUE,Retained
+eledmke2,double,haven_labelled|vctrs_vctr|double,float64,"t2 electability comparison of kerry and edwards, based on f1q33",%8.0g,,,TRUE,Retained
+pd1kerv1,double,numeric,float64,projected on to a -1 to +1 scale (poldse1-poldsk1/12): t1 difference in r's poli,%9.0g,,,TRUE,Retained
+pd1kerv2,double,numeric,float64,"projected on to a -1 to +1 scale (""pdkerev2""/12): t2 difference in r's policy di",%9.0g,,,TRUE,Retained
+trdfkech,double,numeric,float64,t2 - t1 change in difference between kerry and edwards average trait rating (on,%9.0g,,,TRUE,Retained
+pd1kerch,double,numeric,float64,t2 - t1 change in difference between r's policy proximity to edwards and kerry (,%9.0g,,,TRUE,Retained
+q25ch,double,numeric,float64,t2 - t1 change on q25 (r's self-placement on taxes/services scale),%8.0g,,,TRUE,Retained
+q263ch,double,numeric,float64,t2 - t1 change on q26_3 (r's placement of kerry on taxes/services scale),%8.0g,,,TRUE,Retained
+q266ch,double,numeric,float64,t2 - t1 change on q26_6 (r's placement of edwards on taxes/services scale),%8.0g,,,TRUE,Retained
+q27ch,double,numeric,float64,t2 - t1 change on q27 (r's self-placement on defense/domestic spending scale),%8.0g,,,TRUE,Retained
+q283ch,double,numeric,float64,t2 - t1 change on q28_3 (r's placement of kerry on defense/domestic spending sca,%8.0g,,,TRUE,Retained
+q286ch,double,numeric,float64,t2 - t1 change on q28_6 (r's placement of edwards on defense/domestic spending s,%8.0g,,,TRUE,Retained
+q29ch,double,numeric,float64,t2 - t1 change on q29 (r's self-placement on unilateralism/multilateralism scale,%8.0g,,,TRUE,Retained
+q303ch,double,numeric,float64,t2 - t1 change on q30_3 (r's placement of kerry on unilateralism/multilateralism,%8.0g,,,TRUE,Retained
+q306ch,double,numeric,float64,t2 - t1 change on q30_6 (r's placement of edwards on unilateralism/multilaterali,%8.0g,,,TRUE,Retained
+q31ch,double,numeric,float64,t2 - t1 change on q31 (r's self-placement on free trade/protectionism scale),%8.0g,,,TRUE,Retained
+q323ch,double,numeric,float64,t2 - t1 change on q32_3 (r's placement of kerry on free trade/protectionism scal,%8.0g,,,TRUE,Retained
+q326ch,double,numeric,float64,t2 - t1 change on q32_6 (r's placement of edwards on free trade/protectionism sc,%8.0g,,,TRUE,Retained
+eldmkech,double,numeric,float64,"t1 to t2 change in kerry-edwards electability comparison, based on q33 (eledmke2",%8.0g,,,TRUE,Retained
+pvtrkech,double,numeric,float64,"t1 to t2 change in kerry-edwards trichotomized predicted vote, based on feeling",%8.0g,,,TRUE,Retained
+svdsqke1,double,numeric,float64,(kerry - edwards placement on taxes/services scale at t1) squared,%8.0g,,,TRUE,Retained
+spdsqke1,double,numeric,float64,(kerry - edwards placement on defense/domestic spending scale at t1) squared,%8.0g,,,TRUE,Retained
+undsqke1,double,numeric,float64,(kerry - edwards placement on unilateralism/multilateralism scale at t1) squared,%8.0g,,,TRUE,Retained
+ftdsqke1,double,numeric,float64,(kerry - edwards placement on free trade/protectionism scale at t1) squared,%8.0g,,,TRUE,Retained
+pldsqke1,double,numeric,float64,"t1 sum of squared kerry-edwards policy placements [sum(svdsqke1, undsqke1, ftdsq",%8.0g,,,TRUE,Retained
+poldske1,double,numeric,float64,t1 euclidian kerry-edwards distance on policy placement scales [sqrt(pldsqke1)],%9.0g,,,TRUE,Retained
+svdsqke2,double,numeric,float64,(kerry - edwards placement on taxes/services scale at t2) squared,%8.0g,,,TRUE,Retained
+spdsqke2,double,numeric,float64,(kerry - edwards placement on defense/domestic spending scale at t2) squared,%8.0g,,,TRUE,Retained
+undsqke2,double,numeric,float64,(kerry - edwards placement on unilateralism/multilateralism scale at t2) squared,%8.0g,,,TRUE,Retained
+ftdsqke2,double,numeric,float64,(kerry - edwards placement on free trade/protectionism scale at t2) squared,%8.0g,,,TRUE,Retained
+pldsqke2,double,numeric,float64,"t2 sum of squared kerry-edwards policy placements [sum(svdsqke2, undsqke2, ftdsq",%8.0g,,,TRUE,Retained
+poldske2,double,numeric,float64,t2 euclidian kerry-edwards distance on policy placement scales [sqrt(pldsqke2)],%9.0g,,,TRUE,Retained
+pldskech,double,numeric,float64,t2-t1 change in kerry-edwards euclidian policy distance (poldske2-poldske1),%9.0g,,,TRUE,Retained
+kerpol1,double,numeric,float64,"t1 kerry average policy placement [mean(26_3, 28_3, 30_3, 32_3)]",%9.0g,,,TRUE,Retained
+kerpol2,double,numeric,float64,"t2 kerry average policy placement [mean(26_3, 28_3, 30_3, 32_3)]",%9.0g,,,TRUE,Retained
+edwpol1,double,numeric,float64,"t1 edwards average policy placement [mean(26_6, 28_6, 30_6, 32_6)]",%9.0g,,,TRUE,Retained
+edwpol2,double,numeric,float64,"t2 edwards average policy placement [mean(26_6, 28_6, 30_6, 32_6)]",%9.0g,,,TRUE,Retained
+svdsqrd2,double,numeric,float64,rs t2 distance from dean on fewer-more taxes & services scale -- squared (f1q25-,%8.0g,,,TRUE,Retained
+spdsqrd2,double,numeric,float64,rs t2 distance from dean on defense-domestic spending scale -- squared (f1q27-f1,%8.0g,,,TRUE,Retained
+undsqrd2,double,numeric,float64,rs t2 distance from dean on unilateralism-multilateralism scale -- squared (f1q2,%8.0g,,,TRUE,Retained
+ftdsqrd2,double,numeric,float64,rs t2 distance from dean on free trade-protectionism scale -- squared (f1q31-f1q,%8.0g,,,TRUE,Retained
+pldsqrd2,double,numeric,float64,sum of rs t2 squared distance from dean on individual policy scales [sum(svdsqrd,%8.0g,,,TRUE,Retained
+poldsrd2,double,numeric,float64,"rs euclidian policy distance from dean at t2 -- version 2, incorporating number",%9.0g,,,TRUE,Retained
+svdsqrc2,double,numeric,float64,rs t2 distance from clark on fewer-more taxes & services scale -- squared (f1q25,%8.0g,,,TRUE,Retained
+spdsqrc2,double,numeric,float64,rs t2 distance from clark on defense-domestic spending scale -- squared (f1q27-f,%8.0g,,,TRUE,Retained
+undsqrc2,double,numeric,float64,rs t2 distance from clark on unilateralism-multilateralism scale -- squared (f1q,%8.0g,,,TRUE,Retained
+ftdsqrc2,double,numeric,float64,rs t2 distance from clark on free trade-protectionism scale -- squared (f1q31-f1,%8.0g,,,TRUE,Retained
+pldsqrc2,double,numeric,float64,sum of rs t2 squared distance from clark on individual policy scales [sum(svdsqr,%8.0g,,,TRUE,Retained
+svdsqrs2,double,numeric,float64,rs t2 distance from sharpton on fewer-more taxes & services scale -- squared (f1,%8.0g,,,TRUE,Retained
+spdsqrs2,double,numeric,float64,rs t2 distance from sharpton on defense-domestic spending scale -- squared (f1q2,%8.0g,,,TRUE,Retained
+undsqrs2,double,numeric,float64,rs t2 distance from sharpton on unilateralism-multilateralism scale -- squared (,%8.0g,,,TRUE,Retained
+ftdsqrs2,double,numeric,float64,rs t2 distance from sharpton on free trade-protectionism scale -- squared (f1q31,%8.0g,,,TRUE,Retained
+pldsqrs2,double,numeric,float64,sum of rs t2 squared distance from sharpton on individual policy scales [sum(svd,%8.0g,,,TRUE,Retained
+svdsqrl1,double,numeric,float64,rs t1 distance from lieberman on fewer-more taxes & services scale -- squared (b,%8.0g,,,TRUE,Retained
+spdsqrl1,double,numeric,float64,rs t1 distance from lieberman on defense-domestic spending scale -- squared (b1q,%8.0g,,,TRUE,Retained
+undsqrl1,double,numeric,float64,rs t1 distance from lieberman on unilateralism-multilateralism scale -- squared,%8.0g,,,TRUE,Retained
+ftdsqrl1,double,numeric,float64,rs t1 distance from lieberman on free trade-protectionism scale -- squared (b1q3,%8.0g,,,TRUE,Retained
+pldsqrl1,double,numeric,float64,sum of rs t1 squared distance from lieberman on individual policy scales [sum(sv,%8.0g,,,TRUE,Retained
+poldsrc2,double,numeric,float64,rs euclidian policy distance from clark at t2 [sqrt(pldsqrc2)],%9.0g,,,TRUE,Retained
+poldsrs2,double,numeric,float64,rs euclidian policy distance from sharpton at t2 [sqrt(pldsqrs2)],%9.0g,,,TRUE,Retained
+poldsrl1,double,numeric,float64,rs euclidian policy distance from lieberman at t1 [sqrt(pldsqrl1)],%9.0g,,,TRUE,Retained
+plrd2val,double,numeric,float64,number of valid r-dean t2 policy placements,%8.0g,,,TRUE,Retained
+pldsrd2v,double,numeric,float64,"rs euclidian policy distance from dean at t2 -- version 2, incorporating number",%9.0g,,,TRUE,Retained
+svdsqrk2,double,numeric,float64,rs t2 distance from kerry on fewer-more taxes & services scale -- squared (f1q25,%8.0g,,,TRUE,Retained
+spdsqrk2,double,numeric,float64,rs t2 distance from kerry on defense-domestic spending scale -- squared (f1q27-f,%8.0g,,,TRUE,Retained
+undsqrk2,double,numeric,float64,rs t2 distance from kerry on unilateralism-multilateralism scale -- squared (f1q,%8.0g,,,TRUE,Retained
+ftdsqrk2,double,numeric,float64,rs t2 distance from kerry on free trade-protectionism scale -- squared (f1q31-f1,%8.0g,,,TRUE,Retained
+pldsqrk2,double,numeric,float64,sum of r's t2 distances from kerry on policy scales,%8.0g,,,TRUE,Retained
+plrk2val,double,numeric,float64,number of valid r-kerry t2 policy placements,%8.0g,,,TRUE,Retained
+pldsrk2v,double,numeric,float64,"rs euclidian policy distance from kerry at t2 -- version 2, incorporating number",%9.0g,,,TRUE,Retained
+svdsqre2,double,numeric,float64,rs t2 distance from edwards on fewer-more taxes & services scale -- squared (f1q,%8.0g,,,TRUE,Retained
+spdsqre2,double,numeric,float64,rs t2 distance from edwards on defense-domestic spending scale -- squared (f1q27,%8.0g,,,TRUE,Retained
+undsqre2,double,numeric,float64,rs t2 distance from edwards on unilateralism-multilateralism scale -- squared (f,%8.0g,,,TRUE,Retained
+ftdsqre2,double,numeric,float64,rs t2 distance from edwards on free trade-protectionism scale -- squared (f1q31-,%8.0g,,,TRUE,Retained
+pldsqre2,double,numeric,float64,"rs euclidian policy distance from edwards at t2 -- version 2, incorporating numb",%8.0g,,,TRUE,Retained
+plre2val,double,numeric,float64,number of valid r-edwards t2 policy placements,%8.0g,,,TRUE,Retained
+pldsre2v,double,numeric,float64,"rs euclidian policy distance from edwards at t2 -- version 2, incorporating numb",%9.0g,,,TRUE,Retained
+plrc2val,double,numeric,float64,number of valid r-clark t2 policy placements,%8.0g,,,TRUE,Retained
+pldsrc2v,double,numeric,float64,"rs euclidian policy distance from clark at t2 -- version 2, incorporating number",%9.0g,,,TRUE,Retained
+plrs2val,double,numeric,float64,number of valid r-sharpton t2 policy placements,%8.0g,,,TRUE,Retained
+pldsrs2v,double,numeric,float64,"rs euclidian policy distance from sharpton at t2 -- version 2, incorporating num",%9.0g,,,TRUE,Retained
+plrl1val,double,numeric,float64,number of valid r-lieberman t1 policy placements,%8.0g,,,TRUE,Retained
+pldsrl1v,double,numeric,float64,"rs euclidian policy distance from lieberman at t1 -- version 2, incorporating nu",%9.0g,,,TRUE,Retained
+pldfvke2,double,numeric,float64,t2 difference: r's distance from edwards - r's distance from kerry (new version,%9.0g,,,TRUE,Retained
+pldfvkd2,double,numeric,float64,t2 difference: r's distance from dean - r's distance from kerry (new version of,%9.0g,,,TRUE,Retained
+pldfvkc2,double,numeric,float64,t2 difference: r's distance from clark - r's distance from kerry (new version of,%9.0g,,,TRUE,Retained
+pldfvks2,double,numeric,float64,t2 difference: r's distance from sharpton - r's distance from kerry (new version,%9.0g,,,TRUE,Retained
+pldfvkl2,double,numeric,float64,difference: r's distance from lieberman (t1) - r's distance from kerry (t2) (new,%9.0g,,,TRUE,Retained
+pldfvek2,double,numeric,float64,t2 difference: r's distance from kerry - r's distance from edwards (new version,%9.0g,,,TRUE,Retained
+pldfved2,double,numeric,float64,t2 difference: r's distance from dean - r's distance from edwards (new version o,%9.0g,,,TRUE,Retained
+pldfvec2,double,numeric,float64,t2 difference: r's distance from clark - r's distance from edwards (new version,%9.0g,,,TRUE,Retained
+pldfves2,double,numeric,float64,t2 difference: r's distance from sharpton - r's distance from edwards (new versi,%9.0g,,,TRUE,Retained
+pldfvel2,double,numeric,float64,difference: r's distance from lieberman (t1) - r's distance from edwards (t2) (n,%9.0g,,,TRUE,Retained
+pldfvsk2,double,numeric,float64,t2 difference: r's distance from kerry - r's distance from sharpton (new version,%9.0g,,,TRUE,Retained
+pldfse2,double,numeric,float64,t2 difference: r's distance from edwards - r's distance from sharpton (new versi,%9.0g,,,TRUE,Retained
+pldfvsd2,double,numeric,float64,t2 difference: r's distance from dean - r's distance from sharpton (new version,%9.0g,,,TRUE,Retained
+pldfvsc2,double,numeric,float64,t2 difference: r's distance from clark - r's distance from sharpton (new version,%9.0g,,,TRUE,Retained
+pldfvsl2,double,numeric,float64,difference: r's distance from lieberman (t1) - r's distance from sharpton (t2) (,%9.0g,,,TRUE,Retained
+pldfvck2,double,numeric,float64,t2 difference: r's distance from kerry - r's distance from clark (new version of,%9.0g,,,TRUE,Retained
+pldfce2,double,numeric,float64,t2 difference: r's distance from edwards - r's distance from clark (new version,%9.0g,,,TRUE,Retained
+pldfvcd2,double,numeric,float64,t2 difference: r's distance from dean - r's distance from clark (new version of,%9.0g,,,TRUE,Retained
+pldfvcs2,double,numeric,float64,t2 difference: r's distance from sharpton - r's distance from clark (new version,%9.0g,,,TRUE,Retained
+pldfvcl2,double,numeric,float64,difference: r's distance from lieberman (t1) - r's distance from clark (t2) (new,%9.0g,,,TRUE,Retained
+pldfvlk1,double,numeric,float64,difference: r's distance from kerry (t2) - r's distance from lieberman (t1) (new,%9.0g,,,TRUE,Retained
+pldfle1,double,numeric,float64,difference: r's distance from edwards (t2) - r's distance from lieberman (t1) (n,%9.0g,,,TRUE,Retained
+pldfvld1,double,numeric,float64,difference: r's distance from dean (t2) - r's distance from lieberman (t1) (new,%9.0g,,,TRUE,Retained
+pldfvlc2,double,numeric,float64,difference: r's distance from clark (t2) - r's distance from lieberman (t1) (new,%9.0g,,,TRUE,Retained
+pldfvls1,double,numeric,float64,difference: r's distance from sharpton (t2) - r's distance from lieberman (t1) (,%9.0g,,,TRUE,Retained
+trpv1ke2,double,numeric,float64,interaction term: treatment*[r's distance from edwards - r's distance from kerry,%9.0g,,,TRUE,Retained
+svdsqrk1,double,numeric,float64,rs t1 distance from kerry on fewer-more taxes & services scale -- squared (b1q25,%8.0g,,,TRUE,Retained
+spdsqrk1,double,numeric,float64,rs t1 distance from kerry on defense-domestic spending scale -- squared (b1q27-b,%8.0g,,,TRUE,Retained
+undsqrk1,double,numeric,float64,rs t1 distance from kerry on unilateralism-multilateralism scale -- squared (b1q,%8.0g,,,TRUE,Retained
+ftdsqrk1,double,numeric,float64,rs t1 distance from kerry on free trade-protectionism scale -- squared (b1q31-b1,%8.0g,,,TRUE,Retained
+pldsqrk1,double,numeric,float64,sum of r's t1 distances from kerry on policy scales,%8.0g,,,TRUE,Retained
+plrk1val,double,numeric,float64,number of valid r-kerry t1 policy placements,%8.0g,,,TRUE,Retained
+pldsrk1v,double,numeric,float64,"rs euclidian policy distance from kerry at t1 -- version 2, incorporating number",%9.0g,,,TRUE,Retained
+svdsqre1,double,numeric,float64,rs t1 distance from edwards on fewer-more taxes & services scale -- squared (b1q,%8.0g,,,TRUE,Retained
+spdsqre1,double,numeric,float64,rs t1 distance from edwards on defense-domestic spending scale -- squared (b1q27,%8.0g,,,TRUE,Retained
+undsqre1,double,numeric,float64,rs t1 distance from edwards on unilateralism-multilateralism scale -- squared (b,%8.0g,,,TRUE,Retained
+ftdsqre1,double,numeric,float64,rs t1 distance from edwards on free trade-protectionism scale -- squared (b1q31-,%8.0g,,,TRUE,Retained
+pldsqre1,double,numeric,float64,sum of r's t1 distances from edwards on policy scales,%8.0g,,,TRUE,Retained
+plre1val,double,numeric,float64,number of valid r-edwards t1 policy placements,%8.0g,,,TRUE,Retained
+pldsre1v,double,numeric,float64,"rs euclidian policy distance from edwards at t1 -- version 2, incorporating numb",%9.0g,,,TRUE,Retained
+svdsqrd1,double,numeric,float64,rs t1 distance from dean on fewer-more taxes & services scale -- squared (b1q25-,%8.0g,,,TRUE,Retained
+spdsqrd1,double,numeric,float64,rs t1 distance from dean on defense-domestic spending scale -- squared (b1q27-b1,%8.0g,,,TRUE,Retained
+undsqrd1,double,numeric,float64,rs t1 distance from dean on unilateralism-multilateralism scale -- squared (b1q2,%8.0g,,,TRUE,Retained
+ftdsqrd1,double,numeric,float64,rs t1 distance from dean on free trade-protectionism scale -- squared (b1q31-b1q,%8.0g,,,TRUE,Retained
+pldsqrd1,double,numeric,float64,sum of r's t1 distances from dean on policy scales,%8.0g,,,TRUE,Retained
+plrd1val,double,numeric,float64,number of valid r-dean t1 policy placements,%8.0g,,,TRUE,Retained
+pldsrd1v,double,numeric,float64,"rs euclidian policy distance from dean at t1 -- version 2, incorporating number",%9.0g,,,TRUE,Retained
+svdsqrc1,double,numeric,float64,rs t1 distance from clark on fewer-more taxes & services scale -- squared (b1q25,%8.0g,,,TRUE,Retained
+spdsqrc1,double,numeric,float64,rs t1 distance from clark on defense-domestic spending scale -- squared (b1q27-b,%8.0g,,,TRUE,Retained
+undsqrc1,double,numeric,float64,rs t1 distance from clark on unilateralism-multilateralism scale -- squared (b1q,%8.0g,,,TRUE,Retained
+ftdsqrc1,double,numeric,float64,rs t1 distance from clark on free trade-protectionism scale -- squared (b1q31-b1,%8.0g,,,TRUE,Retained
+pldsqrc1,double,numeric,float64,sum of r's t1 distances from clark on policy scales,%8.0g,,,TRUE,Retained
+plrc1val,double,numeric,float64,number of valid r-clark t1 policy placements,%8.0g,,,TRUE,Retained
+pldsrc1v,double,numeric,float64,"rs euclidian policy distance from clark at t1 -- version 2, incorporating number",%9.0g,,,TRUE,Retained
+svdsqrs1,double,numeric,float64,rs t1 distance from sharpton on fewer-more taxes & services scale -- squared (b1,%8.0g,,,TRUE,Retained
+spdsqrs1,double,numeric,float64,rs t1 distance from sharpton on defense-domestic spending scale -- squared (b1q2,%8.0g,,,TRUE,Retained
+undsqrs1,double,numeric,float64,rs t1 distance from sharpton on unilateralism-multilateralism scale -- squared (,%8.0g,,,TRUE,Retained
+ftdsqrs1,double,numeric,float64,rs t1 distance from sharpton on free trade-protectionism scale -- squared (b1q31,%8.0g,,,TRUE,Retained
+pldsqrs1,double,numeric,float64,sum of r's t1 distances from sharpton on policy scales,%8.0g,,,TRUE,Retained
+plrs1val,double,numeric,float64,number of valid r-sharpton t1 policy placements,%8.0g,,,TRUE,Retained
+pldsrs1v,double,numeric,float64,"rs euclidian policy distance from sharpton at t1 -- version 2, incorporating num",%9.0g,,,TRUE,Retained
+pld1rk1v,double,numeric,float64,pldsrk1v put on to 0-1 scale (pldsrk1v/6),%9.0g,,,TRUE,Retained
+pld1re1v,double,numeric,float64,pldsre1v put on to 0-1 scale (pldsre1v/6),%9.0g,,,TRUE,Retained
+pld1rd1v,double,numeric,float64,pldsrd1v put on to 0-1 scale (pldsrd1v/6),%9.0g,,,TRUE,Retained
+pld1rc1v,double,numeric,float64,pldsrc1v put on to 0-1 scale (pldsrc1v/6),%9.0g,,,TRUE,Retained
+pld1rs1v,double,numeric,float64,pldsrs1v put on to 0-1 scale (pldsrs1v/6),%9.0g,,,TRUE,Retained
+pld1rl1v,double,numeric,float64,pldsrl1v put on to 0-1 scale (pldsrl1v/6) (r's t1 new version of policy distance,%9.0g,,,TRUE,Retained
+pld1rk2v,double,numeric,float64,pldsrk2v put on to 0-1 scale (pldsrk2v/6) (r's t2 new version of policy distance,%9.0g,,,TRUE,Retained
+pld1re2v,double,numeric,float64,pldsre2v put on to 0-1 scale (pldsre2v/6) (r's t2 new version of policy distance,%9.0g,,,TRUE,Retained
+pld1rd2v,double,numeric,float64,pldsrd2v put on to 0-1 scale (pldsrd2v/6) (r's t2 new version of policy distance,%9.0g,,,TRUE,Retained
+pld1rc2v,double,numeric,float64,pldsrc2v put on to 0-1 scale (pldsrc2v/6) (r's t2 new version of policy distance,%9.0g,,,TRUE,Retained
+pld1rs2v,double,numeric,float64,pldsrs2v put on to 0-1 scale (pldsrs2v/6) (r's t2 new version of policy distance,%9.0g,,,TRUE,Retained
+plds1k1,double,numeric,float64,projected onto a 0-1 scale: r's original euclidian policy distance from kerry at,%9.0g,,,TRUE,Retained
+plds1e1,double,numeric,float64,projected onto a 0-1 scale: r's original euclidian policy distance from edwards,%9.0g,,,TRUE,Retained
+plds1d1,double,numeric,float64,projected onto a 0-1 scale: r's original euclidian policy distance from dean at,%9.0g,,,TRUE,Retained
+plds1c1,double,numeric,float64,projected onto a 0-1 scale: r's original euclidian policy distance from clark at,%9.0g,,,TRUE,Retained
+plds1s1,double,numeric,float64,projected onto a 0-1 scale: r's original euclidian policy distance from sharpton,%9.0g,,,TRUE,Retained
+plds1l1,double,numeric,float64,projected onto a 0-1 scale: r's original euclidian policy distance from lieberma,%9.0g,,,TRUE,Retained
+plds1k2,double,numeric,float64,projected onto a 0-1 scale: r's original euclidian policy distance from kerry at,%9.0g,,,TRUE,Retained
+plds1e2,double,numeric,float64,projected onto a 0-1 scale: r's original euclidian policy distance from edwards,%9.0g,,,TRUE,Retained
+plds1d2,double,numeric,float64,projected onto a 0-1 scale: r's original euclidian policy distance from dean at,%9.0g,,,TRUE,Retained
+plds1c2,double,numeric,float64,projected onto a 0-1 scale: r's original euclidian policy distance from clark at,%9.0g,,,TRUE,Retained
+plds1s2,double,numeric,float64,projected onto a 0-1 scale: r's original euclidian policy distance from sharpton,%9.0g,,,TRUE,Retained
+pld1ke1,double,numeric,float64,t1 difference: r's distance from edwards - r's distance from kerry (old version,%9.0g,,,TRUE,Retained
+pld1kd1,double,numeric,float64,t1 difference: r's distance from dean - r's distance from kerry (old version of,%9.0g,,,TRUE,Retained
+pld1kc1,double,numeric,float64,t1 difference: r's distance from clark - r's distance from kerry (old version of,%9.0g,,,TRUE,Retained
+pld1ks1,double,numeric,float64,t1 difference: r's distance from sharpton - r's distance from kerry (old version,%9.0g,,,TRUE,Retained
+pld1kl1,double,numeric,float64,t1 difference: r's distance from lieberman - r's distance from kerry (old versio,%9.0g,,,TRUE,Retained
+pld1ek1,double,numeric,float64,t1 difference: r's distance from kerry - r's distance from edwards (old version,%9.0g,,,TRUE,Retained
+pld1ed1,double,numeric,float64,t1 difference: r's distance from dean - r's distance from edwards (old version o,%9.0g,,,TRUE,Retained
+pld1ec1,double,numeric,float64,t1 difference: r's distance from clark - r's distance from edwards (old version,%9.0g,,,TRUE,Retained
+pld1es1,double,numeric,float64,t1 difference: r's distance from sharpton - r's distance from edwards (old versi,%9.0g,,,TRUE,Retained
+pld1el1,double,numeric,float64,t1 difference: r's distance from lieberman - r's distance from edwards (old vers,%9.0g,,,TRUE,Retained
+pld1dk1,double,numeric,float64,t1 difference: r's distance from kerry - r's distance from dean (old version of,%9.0g,,,TRUE,Retained
+pld1de1,double,numeric,float64,t1 difference: r's distance from edwards - r's distance from dean (old version o,%9.0g,,,TRUE,Retained
+pld1dc1,double,numeric,float64,t1 difference: r's distance from clark - r's distance from dean (old version of,%9.0g,,,TRUE,Retained
+pld1ds1,double,numeric,float64,t1 difference: r's distance from sharpton - r's distance from dean (old version,%9.0g,,,TRUE,Retained
+pld1dl1,double,numeric,float64,t1 difference: r's distance from lieberman - r's distance from dean (old version,%9.0g,,,TRUE,Retained
+pld1ck1,double,numeric,float64,t1 difference: r's distance from kerry - r's distance from clark (old version of,%9.0g,,,TRUE,Retained
+pld1ce1,double,numeric,float64,t1 difference: r's distance from edwards - r's distance from clark (old version,%9.0g,,,TRUE,Retained
+pld1cd1,double,numeric,float64,t1 difference: r's distance from dean - r's distance from clark (old version of,%9.0g,,,TRUE,Retained
+pld1cs1,double,numeric,float64,t1 difference: r's distance from sharpton - r's distance from clark (old version,%9.0g,,,TRUE,Retained
+pld1cl1,double,numeric,float64,t1 difference: r's distance from lieberman - r's distance from clark (old versio,%9.0g,,,TRUE,Retained
+pld1sk1,double,numeric,float64,t1 difference: r's distance from kerry - r's distance from sharpton (old version,%9.0g,,,TRUE,Retained
+pld1se1,double,numeric,float64,t1 difference: r's distance from edwards - r's distance from sharpton (old versi,%9.0g,,,TRUE,Retained
+pld1sd1,double,numeric,float64,t1 difference: r's distance from dean - r's distance from sharpton (old version,%9.0g,,,TRUE,Retained
+pld1sc1,double,numeric,float64,t1 difference: r's distance from clark - r's distance from sharpton (old version,%9.0g,,,TRUE,Retained
+pld1sl1,double,numeric,float64,t1 difference: r's distance from lieberman - r's distance from sharpton (old ver,%9.0g,,,TRUE,Retained
+pld1lk1,double,numeric,float64,t1 difference: r's distance from kerry - r's distance from lieberman (old versio,%9.0g,,,TRUE,Retained
+pld1le1,double,numeric,float64,t1 difference: r's distance from edwards - r's distance from lieberman (old vers,%9.0g,,,TRUE,Retained
+pld1ld1,double,numeric,float64,t1 difference: r's distance from dean - r's distance from lieberman (old version,%9.0g,,,TRUE,Retained
+pld1lc1,double,numeric,float64,t1 difference: r's distance from clark - r's distance from lieberman (old versio,%9.0g,,,TRUE,Retained
+pld1ls1,double,numeric,float64,t1 difference: r's distance from sharpton - r's distance from lieberman (old ver,%9.0g,,,TRUE,Retained
+pld1ke2,double,numeric,float64,t2 difference: r's distance from edwards - r's distance from kerry (old version,%9.0g,,,TRUE,Retained
+pld1kd2,double,numeric,float64,t2 difference: r's distance from dean - r's distance from kerry (old version of,%9.0g,,,TRUE,Retained
+pld1kc2,double,numeric,float64,t2 difference: r's distance from clark - r's distance from kerry (old version of,%9.0g,,,TRUE,Retained
+pld1ks2,double,numeric,float64,t2 difference: r's distance from sharpton - r's distance from kerry (old version,%9.0g,,,TRUE,Retained
+pld1kl12,double,numeric,float64,difference: r's distance from lieberman (t1) - r's distance from kerry (t2) (old,%9.0g,,,TRUE,Retained
+pld1ek2,double,numeric,float64,t2 difference: r's distance from kerry - r's distance from edwards (old version,%9.0g,,,TRUE,Retained
+pld1ed2,double,numeric,float64,t2 difference: r's distance from dean - r's distance from edwards (old version o,%9.0g,,,TRUE,Retained
+pld1ec2,double,numeric,float64,t2 difference: r's distance from clark - r's distance from edwards (old version,%9.0g,,,TRUE,Retained
+pld1es2,double,numeric,float64,t2 difference: r's distance from sharpton - r's distance from edwards (old versi,%9.0g,,,TRUE,Retained
+pld1el12,double,numeric,float64,difference: r's distance from lieberman (t1) - r's distance from edwards (t2) (o,%9.0g,,,TRUE,Retained
+pld1dk2,double,numeric,float64,t2 difference: r's distance from kerry - r's distance from dean (old version of,%9.0g,,,TRUE,Retained
+pld1de2,double,numeric,float64,t2 difference: r's distance from edwards - r's distance from dean (old version o,%9.0g,,,TRUE,Retained
+pld1dc2,double,numeric,float64,t2 difference: r's distance from clark - r's distance from dean (old version of,%9.0g,,,TRUE,Retained
+pld1ds2,double,numeric,float64,t2 difference: r's distance from sharpton - r's distance from dean (old version,%9.0g,,,TRUE,Retained
+pld1dl12,double,numeric,float64,difference: r's distance from lieberman (t1) - r's distance from dean (t2) (old,%9.0g,,,TRUE,Retained
+pld1ck2,double,numeric,float64,t2 difference: r's distance from kerry - r's distance from clark (old version of,%9.0g,,,TRUE,Retained
+pld1ce2,double,numeric,float64,t2 difference: r's distance from edwards - r's distance from clark (old version,%9.0g,,,TRUE,Retained
+pld1cd2,double,numeric,float64,t2 difference: r's distance from dean - r's distance from clark (old version of,%9.0g,,,TRUE,Retained
+pld1cs2,double,numeric,float64,t2 difference: r's distance from sharpton - r's distance from clark (old version,%9.0g,,,TRUE,Retained
+pld1cl12,double,numeric,float64,difference: r's distance from lieberman (t1) - r's distance from clark (t2) (old,%9.0g,,,TRUE,Retained
+pld1sk2,double,numeric,float64,t2 difference: r's distance from kerry - r's distance from sharpton (old version,%9.0g,,,TRUE,Retained
+pld1se2,double,numeric,float64,t2 difference: r's distance from edwards - r's distance from sharpton (old versi,%9.0g,,,TRUE,Retained
+pld1sd2,double,numeric,float64,t2 difference: r's distance from dean - r's distance from sharpton (old version,%9.0g,,,TRUE,Retained
+pld1sc2,double,numeric,float64,t2 difference: r's distance from clark - r's distance from sharpton (old version,%9.0g,,,TRUE,Retained
+pld1sl12,double,numeric,float64,difference: r's distance from lieberman (t1) - r's distance from sharpton (t2) (,%9.0g,,,TRUE,Retained
+pld1lk12,double,numeric,float64,difference: r's distance from kerry (t2) - r's distance from lieberman (t1) (old,%9.0g,,,TRUE,Retained
+pld1le12,double,numeric,float64,difference: r's distance from edwards (t2) - r's distance from lieberman (t1) (o,%9.0g,,,TRUE,Retained
+pld1ld12,double,numeric,float64,difference: r's distance from dean (t2) - r's distance from lieberman (t1) (old,%9.0g,,,TRUE,Retained
+pld1lc12,double,numeric,float64,difference: r's distance from clark (t2) - r's distance from lieberman (t1) (old,%9.0g,,,TRUE,Retained
+pld1ls12,double,numeric,float64,difference: r's distance from sharpton (t2) - r's distance from lieberman (t1) (,%9.0g,,,TRUE,Retained
+t2sumfkno,double,numeric,float64,T2 Number of Correct Factual Knowledge Qs,%9.0g,,,TRUE,Retained
+t2sumpkno,double,numeric,float64,T2 Number of Correct Placement Knowledge Qs,%9.0g,,,TRUE,Retained
+t2avgfpkno1,double,numeric,float64,T2  (t2sumpkno + t2sumpkno)/31 (Total No. of F & P Qs),%9.0g,,,TRUE,Retained
+t2avgfpkno2,double,numeric,float64,T2 (( t2sumfkno/7) + ( t2sumpkno/24))/2,%9.0g,,,TRUE,Retained
+t2trichotknov1,double,numeric,float64,"version 1 knowledge (see t2avgfpkno1) with low,mid, high",%9.0g,,,TRUE,Retained
+t2trichotknov2,double,numeric,float64,"version 2 knowledge (see t2avgfpkno2) with low,mid, high",%9.0g,,,TRUE,Retained
+trait,double,numeric,float64,trdk1ke with DKs @ midpoint,%9.0g,,,TRUE,Retained
+elect,double,numeric,float64,eledmke with DKs @ midpoint,%9.0g,,,TRUE,Retained
+policy,double,numeric,float64,pd1kerv2 with DKs @ midpoint,%9.0g,,,TRUE,Retained
+traitXtreat,double,numeric,float64, trtr1ke2 with DKs @ midpoint,%9.0g,,,TRUE,Retained
+electXtreat,double,numeric,float64,  trtr1ke2 with DKs @ midpoint,%9.0g,,,TRUE,Retained
+policyXtreat,double,numeric,float64, trpd1ke2 with DKs @ midpoint,%9.0g,,,TRUE,Retained
+trichotknov1Xpolicy,double,numeric,float64,the trichotomized info score * policy scale,%9.0g,,,TRUE,Retained
+triknov1XpolXtr,double,numeric,float64,the trich' info score * policy scale * treatment,%9.0g,,,TRUE,Retained
+trichotknov2Xpolicy,double,numeric,float64,the trichotomized info score * policy scale,%9.0g,,,TRUE,Retained
+triknov2XpolXtr,double,numeric,float64,the trich' info score * policy scale * treatment,%9.0g,,,TRUE,Retained
+inc60plus,double,numeric,float64,"recode ppincimp, more than 60k =1, for IA",%9.0g,,,TRUE,Retained
+racewh,double,numeric,float64,"recode ppeth, 1=white, 0 otherwise, for IA",%9.0g,,,TRUE,Retained
+educollege,double,numeric,float64," 1=BA or higher, 0=otherwise",%9.0g,,,TRUE,Retained
+t1q25,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q25,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q27,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q27,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q29,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q29,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q31,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q31,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1sumfkno,double,numeric,float64,T1 Number of Correct Factual Knowledge Qs,%9.0g,,,TRUE,Retained
+t1sumpkno,double,numeric,float64,T1 Number of Correct Placement Knowledge Qs,%9.0g,,,TRUE,Retained
+t1avgfpkno1,double,numeric,float64,T1  (t1sumpkno + t1sumpkno)/31 (Total No. of F & P Qs),%9.0g,,,TRUE,Retained
+t1avgfpkno2,double,numeric,float64,T1 (( t1sumfkno/7) + ( t1sumpkno/24))/2,%9.0g,,,TRUE,Retained
+t1diknowv2,double,numeric,float64,"T1 Knowledge, dichot 1= high knowledge",%9.0g,,,TRUE,Retained
+no_spokens1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+inaudibles1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+total_wordss1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1time_secs_,double,numeric,float64,,%8.0g,,,TRUE,Retained
+no_spokens2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+inaudibles2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+total_wordss2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2time_secs_,double,numeric,float64,,%8.0g,,,TRUE,Retained
+no_spokens3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+inaudibles3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+total_wordss3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3time_secs_,double,numeric,float64,,%8.0g,,,TRUE,Retained
+no_spokens4,double,numeric,float64,,%8.0g,,,TRUE,Retained
+inaudibles4,double,numeric,float64,,%8.0g,,,TRUE,Retained
+total_wordss4,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4time_secs_,double,numeric,float64,,%8.0g,,,TRUE,Retained
+no_spokens5,double,numeric,float64,,%8.0g,,,TRUE,Retained
+inaudibles5,double,numeric,float64,,%8.0g,,,TRUE,Retained
+total_wordss5,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5time_secs_,double,numeric,float64,,%8.0g,,,TRUE,Retained
+moderator,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t1triknowv1,double,numeric,float64,"T1 Trichot Knowledge Index Verison 1- (-1=0-.333, 1=2/3 to 1)",%9.0g,,,TRUE,Retained
+t1triknowv2,double,numeric,float64,"T1 Trichot Knowledge Index Version 2 - (-1=0-.333, 1=2/3 to 1)",%9.0g,,,TRUE,Retained
+t1trikXpolicy,double,numeric,float64,T1 Trichot Knowledge Index V1*Policy,%9.0g,,,TRUE,Retained
+t1tk1XpXtr,double,numeric,float64,T1 Trichot Knowledge Index V1*Policy*Treat,%9.0g,,,TRUE,Retained
+t1tk2Xpolicy,double,numeric,float64,T1 Trichot Knowledge Index V2*Policy,%9.0g,,,TRUE,Retained
+t1tk2XpXtr,double,numeric,float64,T1 Trichot Knowledge Index V2*policy*treat,%9.0g,,,TRUE,Retained
+t2kminusb,double,numeric,float64,T2 Kerry Minus Bush,%9.0g,,,TRUE,Retained
+t1kminusb50,double,numeric,float64,"T1 Kerry Minus Bush, DK/MD=50",%9.0g,,,TRUE,Retained
+t2kminusb50,double,numeric,float64,"T2 Kerry Minus Bush, DK/MD=50",%9.0g,,,TRUE,Retained
+b1q22_3r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1kminusbr,double,numeric,float64,T1 Kerry Minus Bush,%9.0g,,,TRUE,Retained
+t2t1kmb,double,numeric,float64,T2-T1 Kerry Minus Bush,%9.0g,,,TRUE,Retained
+t1usshare,double,numeric,float64,T1 Recode Q2: US should share control/military/financial with others. 0 to 1 sca,%9.0g,,,TRUE,Retained
+t2usshare,double,numeric,float64,T2 Recode Q2: US should share control/military/financial with others. 0 to 1 sca,%9.0g,,,TRUE,Retained
+t1invade,double,numeric,float64,"T1 Recode Q3: US should invade w/o intl support. 0 to 1 scale, DK missing",%9.0g,,,TRUE,Retained
+t2invade,double,numeric,float64,"T2 Recode Q3: US should invade w/o intl support. 0 to 1 scale, DK missing",%9.0g,,,TRUE,Retained
+t1worth,double,numeric,float64,"T1 Recode Q1, Worth $/Lives. 0 to 1 scale. 1=disagree. DKmissing",%9.0g,,,TRUE,Retained
+t2worth,double,numeric,float64,"T2 Recode Q1, Worth $/Lives. 0 to 1 scale. 1=disagree. DKmissing",%9.0g,,,TRUE,Retained
+t1subsidy,double,numeric,float64,"T1 Recode Q6: US reduce subsidy. 0 to 1, 1=disagree, DKmissing",%9.0g,,,TRUE,Retained
+t2subsidy,double,numeric,float64,"T2 Recode Q6: US reduce subsidy. 0 to 1, 1=disagree, DKmissing",%9.0g,,,TRUE,Retained
+t1multi,double,numeric,float64,"T1 Recode Q29: Intervene Own or w/UN -Self-Placement. 0 to 1 scale, DK missing",%9.0g,,,TRUE,Retained
+t2multi,double,numeric,float64,"T2 Recode Q29: Intervene Own or w/UN -Self-Placement. 0 to 1 scale, DK missing",%9.0g,,,TRUE,Retained
+t1mindex,double,numeric,float64,"T1 Multilaterialism Index, usshare, invade, multi",%9.0g,,,TRUE,Retained
+t2mindex,double,numeric,float64,"T2 Multilaterialism Index, usshare, invade, multi",%9.0g,,,TRUE,Retained
+t1trade,double,numeric,float64,"T1 Recode Q31: Trade -Self-Placement. 0 to 1(protect) scale, DK missing",%9.0g,,,TRUE,Retained
+t2trade,double,numeric,float64,"T2 Recode Q31: Trade -Self-Placement. 0 to 1(protect) scale, DK missing",%9.0g,,,TRUE,Retained
+t1services,double,numeric,float64,"T1 Recode Q25: Services-SP 1=more services, DK missing",%9.0g,,,TRUE,Retained
+t2services,double,numeric,float64,"T2 Recode Q25: Services-SP 1=more services, DK missing",%9.0g,,,TRUE,Retained
+t1spend,double,numeric,float64,"T1 Recode Q27: Spending-SP 1=decrease def spending, DK missing",%9.0g,,,TRUE,Retained
+t2spend,double,numeric,float64,"T2 Recode Q27: Spending-SP 1=decrease def spending, DK missing",%9.0g,,,TRUE,Retained
+t1enafta,double,numeric,float64,T1 Nafta on Economy. 1=hurt a lot. DKmissing,%9.0g,,,TRUE,Retained
+t2enafta,double,numeric,float64,T2 Nafta on Economy. 1=hurt a lot. DKmissing,%9.0g,,,TRUE,Retained
+t1jobs,double,numeric,float64,"T1 Recode Q7, Free Trade=More Jobs, 1=disagree. DKmissing",%9.0g,,,TRUE,Retained
+t2jobs,double,numeric,float64,"T2 Recode Q7, Free Trade=More Jobs, 1=disagree. DKmissing",%9.0g,,,TRUE,Retained
+t1prjobs,double,numeric,float64,"T1 Protect US Jobs, 1=strongly agree. DKmissing",%9.0g,,,TRUE,Retained
+t2prjobs,double,numeric,float64,"T1 Protect US Jobs, 1=strongly agree. DKmissing",%9.0g,,,TRUE,Retained
+t2ftev,double,numeric,float64,"T2 Free Trade - EV - enafta,jobs,prjobs 1=protect US",%9.0g,,,TRUE,Retained
+t1ftev,double,numeric,float64,"T1 Free Trade - EV - enafta,jobs,prjobs 1=protect US",%9.0g,,,TRUE,Retained
+t1ftdv,double,numeric,float64,"T1 Free Trade - DV - subsidy, trade 1=protect US",%9.0g,,,TRUE,Retained
+t2ftdv,double,numeric,float64,"T2 Free Trade - DV - subsidy, trade 1=protect US",%9.0g,,,TRUE,Retained
+t1pecon,double,numeric,float64,"T1 Recode Q9, Past Economy. 1=much worse shapre, DKmissing",%9.0g,,,TRUE,Retained
+t2pecon,double,numeric,float64,"T2 Recode Q9, Past Economy. 1=much worse shapre, DKmissing",%9.0g,,,TRUE,Retained
+t1fecon,double,numeric,float64,"T1 Recode Q9, Future Economy. 1=much worse shapre, DKmissing",%9.0g,,,TRUE,Retained
+t2fecon,double,numeric,float64,"T2 Recode Q9, Future Economy. 1=much worse shapre, DKmissing",%9.0g,,,TRUE,Retained
+t1econ,double,numeric,float64,T1 Economy Index  -EV- 1=worse shape.DKmissing,%9.0g,,,TRUE,Retained
+t2econ,double,numeric,float64,T2 Economy Index  -EV- 1=worse shape.DKmissing,%9.0g,,,TRUE,Retained
+t1ftrade,double,numeric,float64,T1 Free Trade (DV) Q6 & Q31,%9.0g,,,TRUE,Retained
+t2ftrade,double,numeric,float64,T2 Free Trade (DV) Q6 & Q31,%9.0g,,,TRUE,Retained
+dem,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1gevibush,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1geviker,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2gevibush,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2geviker,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1sbush,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1sker,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1ibush,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1iker,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1tbush,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1tker,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1b3trt,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1k3trt,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2sbush,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2sker,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2ibush,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2iker,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2tbush,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2tker,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2b3trt,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2k3trt,double,numeric,float64,,%9.0g,,,TRUE,Retained
+tgrpfilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1tvdays,double,numeric,float64,T1 4 or more days watching news on TV=1,%9.0g,,,TRUE,Retained
+t1polint,double,numeric,float64,"T1 Political Interest, very interested=1",%9.0g,,,TRUE,Retained
+t1polconv,double,numeric,float64,T1 Political Conversations,%9.0g,,,TRUE,Retained
+groupnumc,double,numeric,float64,,%8.0g,,,TRUE,Retained
+transcriptname,character,character,,,%14s,,,FALSE,Excluded; see source_field_exclusions
+tgrp,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_nspoken,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_words,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_secs,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_nspoken,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_words,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_secs,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_nspoken,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_words,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_secs,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_nspoken,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_words,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_secs,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_nspoken,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_words,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_secs,double,numeric,float64,,%8.0g,,,TRUE,Retained
+filter,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t1know,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2know,double,numeric,float64,,%9.0g,,,TRUE,Retained
+avgtime,double,numeric,float64,,%9.0g,,,TRUE,Retained
+avgwords,double,numeric,float64,,%9.0g,,,TRUE,Retained
+avgstments,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q24a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q24a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+chq25,double,numeric,float64,,%8.0g,,,TRUE,Retained
+chq27,double,numeric,float64,,%8.0g,,,TRUE,Retained
+chq29,double,numeric,float64,,%8.0g,,,TRUE,Retained
+chq31,double,numeric,float64,,%8.0g,,,TRUE,Retained
+totaltime,double,numeric,float64,,%8.0g,,,TRUE,Retained
+totalwords,double,numeric,float64,,%8.0g,,,TRUE,Retained
+totalstments,double,numeric,float64,,%8.0g,,,TRUE,Retained
+chkb,double,numeric,float64,,%8.0g,,,TRUE,Retained
+ch50kb,double,numeric,float64,,%8.0g,,,TRUE,Retained
+rep,double,numeric,float64,,%8.0g,,,TRUE,Retained
+ind,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t1q31_r,double,numeric,float64,"T1 Q31, reversed coded 1=pro trade",%9.0g,,,TRUE,Retained
+t2q31_r,double,numeric,float64,"T2 Q31, reversed coded 1=pro trade",%9.0g,,,TRUE,Retained
+s1_nj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_ij,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_qj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_sj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_agr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_agr2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_dis,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_dis2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_dis3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_que,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_qa,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_def0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_def1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_tr0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_tr1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_h0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_h1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_def0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_def0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_def1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_def1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_tr0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s_tr0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_tr1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_tr1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_h0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_h0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s_h1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_h1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_nj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_ij,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_qj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_sj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_agr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_agr2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_dis,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_dis2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_dis3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_que,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_qa,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_def0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_def1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_tr0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_tr1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_h0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_h1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_def0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_def0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_def1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_def1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_tr0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_tr0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_tr1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_tr1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_h0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_h0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_h1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_h1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_nj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_ij,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_qj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_sj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_agr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_agr2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_dis,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_dis2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_dis3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_que,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_qa,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_def0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_def1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_tr0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_tr1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_h0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_h1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_def0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_def0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_def1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_def1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_tr0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_tr0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_tr1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_tr1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_h0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_h0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_h1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_h1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_nj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_ij,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_qj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_sj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_agr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_agr2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_dis,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_dis2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_dis3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_que,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_qa,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_def0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_def1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_tr0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_tr1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_h0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4h1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_def0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_def0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_def1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_def1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_tr0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_tr0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_tr1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_tr1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_h0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_h0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_h1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_h1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_nj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_ij,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_qj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_sj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_agr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_agr2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_dis,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_dis2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_dis5,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_que,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_qa,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_def0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_def1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_tr0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_tr1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_h0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_h1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_def0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_def0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_def1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_def1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_tr0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_tr0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_tr1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_tr1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_h0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_h0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_h1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_h1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+totalnj,double,numeric,float64,"sum, no of nj over 8 sessions",%9.0g,,,TRUE,Retained
+totalqj,double,numeric,float64,"sum, no of qj over 8 sessions",%9.0g,,,TRUE,Retained
+totalsj,double,numeric,float64,"sum, no of sj over 8 sessions",%9.0g,,,TRUE,Retained
+totalagr,double,numeric,float64,"sum, no of agr over 8 sessions",%9.0g,,,TRUE,Retained
+totalagr2,double,numeric,float64,"sum, no of agr2 over 8 sessions",%9.0g,,,TRUE,Retained
+totaldis,double,numeric,float64,"sum, no of dis over 8 sessions",%9.0g,,,TRUE,Retained
+totaldis2,double,numeric,float64,"sum, no of dis2 over 8 sessions",%9.0g,,,TRUE,Retained
+totaldis3,double,numeric,float64,"sum, no of dis3 over 8 sessions",%9.0g,,,TRUE,Retained
+totalque,double,numeric,float64,"sum, no of que over 8 sessions",%9.0g,,,TRUE,Retained
+totalqa,double,numeric,float64,"sum, no of qa over 8 sessions",%9.0g,,,TRUE,Retained
+totaldef0,double,numeric,float64,"sum, no of def0 over 8 sessions",%9.0g,,,TRUE,Retained
+totaldef1,double,numeric,float64,"sum, no of def1 over 8 sessions",%9.0g,,,TRUE,Retained
+totaltr0,double,numeric,float64,"sum, no of tr0 over 8 sessions",%9.0g,,,TRUE,Retained
+totaltr1,double,numeric,float64,"sum, no of tr1 over 8 sessions",%9.0g,,,TRUE,Retained
+totalh0,double,numeric,float64,"sum, no of h0 over 8 sessions",%9.0g,,,TRUE,Retained
+totalh1,double,numeric,float64,"sum, no of h1 over 8 sessions",%9.0g,,,TRUE,Retained
+totaldef0nj,double,numeric,float64,"sum, no of def0n0 over 8 sessions",%9.0g,,,TRUE,Retained
+totaldef0qj,double,numeric,float64,"sum, no of def0qj over 8 sessions",%9.0g,,,TRUE,Retained
+totaldef1nj,double,numeric,float64,"sum, no of def1n0 over 8 sessions",%9.0g,,,TRUE,Retained
+totaldef1qj,double,numeric,float64,"sum, no of def1qj over 8 sessions",%9.0g,,,TRUE,Retained
+totaltr0nj,double,numeric,float64,"sum, no of tr0n0 over 8 sessions",%9.0g,,,TRUE,Retained
+totaltr0qj,double,numeric,float64,"sum, no of tr0qj over 8 sessions",%9.0g,,,TRUE,Retained
+totaltr1nj,double,numeric,float64,"sum, no of tr1n0 over 8 sessions",%9.0g,,,TRUE,Retained
+totaltr1qj,double,numeric,float64,"sum, no of tr1qj over 8 sessions",%9.0g,,,TRUE,Retained
+totalh0nj,double,numeric,float64,"sum, no of h0n0 over 8 sessions",%9.0g,,,TRUE,Retained
+totalh0qj,double,numeric,float64,"sum, no of h0qj over 8 sessions",%9.0g,,,TRUE,Retained
+totalh1nj,double,numeric,float64,"sum, no of h1n0 over 8 sessions",%9.0g,,,TRUE,Retained
+totalh1qj,double,numeric,float64,"sum, no of h1qj over 8 sessions",%9.0g,,,TRUE,Retained
+totaldfjus,double,numeric,float64,"Total No. of Justified Statements, C&L, Defense",%9.0g,,,TRUE,Retained
+totaltrjus,double,numeric,float64,"Total No. of Justified Statements, C&L, Trade",%9.0g,,,TRUE,Retained
+totalhejus,double,numeric,float64,"Total No. of Justified Statements, C&L, Health",%9.0g,,,TRUE,Retained
+totaldfujus,double,numeric,float64,"Total No. of Unjustified Statements, C&L, Defense",%9.0g,,,TRUE,Retained
+totaltrujus,double,numeric,float64,"Total No. of Unjustified Statements, C&L, Trade",%9.0g,,,TRUE,Retained
+totalheujus,double,numeric,float64,"Total No. of Unjustified Statements, C&L, Health",%9.0g,,,TRUE,Retained
+totaldfagr,double,numeric,float64,"Total No, of Defense Justified/UnJustified Arguments",%9.0g,,,TRUE,Retained
+totaltragr,double,numeric,float64,"Total No, of Trade Justified/UnJustified Arguments",%9.0g,,,TRUE,Retained
+totalheagr,double,numeric,float64,"Total No, of Health Justified/UnJustified Arguments",%9.0g,,,TRUE,Retained
+dfjusbal,double,numeric,float64,"Defense, Justified Balance",%9.0g,,,TRUE,Retained
+trjusbal,double,numeric,float64,"Trade, Justified Balance",%9.0g,,,TRUE,Retained
+hejusbal,double,numeric,float64,"Health, Justified Balance",%9.0g,,,TRUE,Retained
+hegrpsum,double,numeric,float64,,%9.0g,,,TRUE,Retained
+dfgrpsum,double,numeric,float64,,%9.0g,,,TRUE,Retained
+trgrpsum,double,numeric,float64,,%9.0g,,,TRUE,Retained
+mindex_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+mindex_ch2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+totalsqj,double,numeric,float64,,%9.0g,,,TRUE,Retained
+totalnqsj,double,numeric,float64,,%9.0g,,,TRUE,Retained
+jusbal,double,numeric,float64,,%9.0g,,,TRUE,Retained
+trade_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+services_ch2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+totaldflib,double,numeric,float64,"Total No. of Liberal Statements, J&Uj, Defense",%9.0g,,,TRUE,Retained
+totaltrlib,double,numeric,float64,"Total No. of Liberal Statements, J&Uj, Trade",%9.0g,,,TRUE,Retained
+totalhelib,double,numeric,float64,"Total No. of Libearl Statements, J&Uj, Health",%9.0g,,,TRUE,Retained
+totaldfcon,double,numeric,float64,"Total No. of Conservative Statements, J&Uj, Defense",%9.0g,,,TRUE,Retained
+totaltrcon,double,numeric,float64,"Total No. of Conservative Statements, J&Uj, Trade",%9.0g,,,TRUE,Retained
+totalhecon,double,numeric,float64,"Total No. of Conservative Statements, J&Uj, Health",%9.0g,,,TRUE,Retained
+totdflibagr,double,numeric,float64,"Total No, of Liberal/Cons Defense Arguments",%9.0g,,,TRUE,Retained
+tottrlibagr,double,numeric,float64,"Total No, of Liberal/Cons Trade Arguments",%9.0g,,,TRUE,Retained
+tothelibagr,double,numeric,float64,"Total No, of Liberal/Cons Health Arguments",%9.0g,,,TRUE,Retained
+dflibbal,double,numeric,float64,"Defense, Liberal Balance",%9.0g,,,TRUE,Retained
+trlibbal,double,numeric,float64,"Trade, Liberal Balance",%9.0g,,,TRUE,Retained
+helibbal,double,numeric,float64,"Health, Liberal Balance",%9.0g,,,TRUE,Retained
+sumdefagr,double,numeric,float64,rsum (totaldf0nj totaldf0qj totaldf1qj totaldf1nj),%9.0g,,,TRUE,Retained
+sumtrdagr,double,numeric,float64,rsum (totaltr0nj totaltr0qj totaltr1qj totaltr1nj),%9.0g,,,TRUE,Retained
+sumheaagr,double,numeric,float64,rsum (totalhe0nj totalhe0qj totalhe1qj totalhe1nj),%9.0g,,,TRUE,Retained
+libjusdf,double,numeric,float64,(totaldf1qj-totaldf0qj)/(sumdefagr),%9.0g,,,TRUE,Retained
+libjustr,double,numeric,float64,(totaltr1qj-totaltr0qj)/sumtrdagr,%9.0g,,,TRUE,Retained
+libjushe,double,numeric,float64,totalh1qj-totalh0qj/sumtrdagr,%9.0g,,,TRUE,Retained
+dflcgrpsum,double,numeric,float64,,%9.0g,,,TRUE,Retained
+trlcgrpsum,double,numeric,float64,,%9.0g,,,TRUE,Retained
+helcgrpsum,double,numeric,float64,,%9.0g,,,TRUE,Retained
+dflcidm,double,numeric,float64,,%9.0g,,,TRUE,Retained
+dfjlcgrpsum,double,numeric,float64,,%9.0g,,,TRUE,Retained
+dfjlcidm,double,numeric,float64,,%9.0g,,,TRUE,Retained
+mgrpsum,double,numeric,float64,,%9.0g,,,TRUE,Retained
+midm,double,numeric,float64,,%9.0g,,,TRUE,Retained
+gevib_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+geviker_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+jbgrpsum,double,numeric,float64,,%9.0g,,,TRUE,Retained
+jbgrpN,double,numeric,float64,,%9.0g,,,TRUE,Retained
+jbidm,double,numeric,float64,,%9.0g,,,TRUE,Retained
+trade_ch2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+dfgrpN,double,numeric,float64,,%9.0g,,,TRUE,Retained
+dfidm,double,numeric,float64,,%9.0g,,,TRUE,Retained
+hegrpN,double,numeric,float64,,%9.0g,,,TRUE,Retained
+heidm,double,numeric,float64,,%9.0g,,,TRUE,Retained
+trgrpN,double,numeric,float64,,%9.0g,,,TRUE,Retained
+tridm,double,numeric,float64,,%9.0g,,,TRUE,Retained
+totalib,double,numeric,float64,,%9.0g,,,TRUE,Retained
+totalconv,double,numeric,float64,,%9.0g,,,TRUE,Retained
+totallc,double,numeric,float64,,%9.0g,,,TRUE,Retained
+lcbal,double,numeric,float64,,%9.0g,,,TRUE,Retained
+lcgrpsum,double,numeric,float64,,%9.0g,,,TRUE,Retained
+lcgrpN,double,numeric,float64,,%9.0g,,,TRUE,Retained
+lcidm,double,numeric,float64,,%9.0g,,,TRUE,Retained
+services_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+male99,double,numeric,float64,,%9.0g,,,TRUE,Retained
+tfilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1diknow1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+chknow1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+male,double,numeric,float64,,%9.0g,,,TRUE,Retained
+educollege99,double,numeric,float64,,%9.0g,,,TRUE,Retained
+racewh99,double,numeric,float64,,%9.0g,,,TRUE,Retained
+inc60plus99,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1complicated,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2complicated,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1fpexperts,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2fpexperts,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1nosay,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2nosay,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2val3,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1val3,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1val2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2val2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+complicated_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+fpexperts_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+nosay_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q5_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q7_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q9_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q10_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q13_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q14_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q15_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q16_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q17_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q18_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q19_1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q19_2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q19_3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q19_4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q19_5_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q19_6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q19_7_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q19_8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q20_1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q20_2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q20_3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q20_4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q20_5_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q20_6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q20_7_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q20_8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q21_1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q21_2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q21_3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q21_4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q21_5_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q21_6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q21_7_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q21_8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q22_1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q22_2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q22_3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q22_4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q22_5_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q22_6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q22_7_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q22_8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q22_9_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q22_10_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q23_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q24_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q25_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q26_1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q26_2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q26_3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q26_4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q26_5_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q26_6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q26_7_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q26_8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q27_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q28_1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q28_2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q28_3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q28_4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q28_5_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q28_6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q28_7_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q28_8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q29_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q30_1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q30_2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q30_3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q30_4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q30_5_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q30_6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q30_7_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q30_8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q31_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q32_1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q32_2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q32_3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q32_4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q32_5_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q32_6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q32_7_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q32_8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q33_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q34_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q37_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q39_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q40_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q41a_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q41b_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q41c_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q42a_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q42b_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q42c_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q43_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q44_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q45_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q46_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q47_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q48_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q49_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q1fu_1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q1fu_2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q1fu_3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q1fu_4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q1fu_5_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q1fu_6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q1fu_7_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q1fu_8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q2fu_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q3fu_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q4fu_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q5_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q7_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q9_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q10_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q11fu_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q12fu_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q13_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q14_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q15_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q15a_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q15b_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q15c_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q16_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q17_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q18_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q18a_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q18b_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q19_1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q19_2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q19_3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q19_4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q19_6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q19_8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q20_1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q20_2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q20_3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q20_4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q20_6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q20_8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q21_1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q21_2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q21_3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q21_4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q21_6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q21_8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q22_1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q22_2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q22_3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q22_4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q22_6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q22_8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q22_10_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q23_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q24_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q25_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q26_1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q26_2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q26_3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q26_4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q26_6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q26_8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q27_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q28_1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q28_2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q28_3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q28_4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q28_6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q28_8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q29_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q30_1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q30_2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q30_3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q30_4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q30_6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q30_8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q31_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q32_1_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q32_2_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q32_3_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q32_4_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q32_6_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q32_8_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q33_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q34_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q37_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q37a_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q37b_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q37c_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q37d_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q37e_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q39_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q40_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q41a_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q41b_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q41c_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q42a_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q42b_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q42c_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q43_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q44_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q45_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q46_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q47_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q48_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q49_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q50_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q51_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q52_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q53_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q_ans,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q_pro,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q_pro,double,numeric,float64,,%9.0g,,,TRUE,Retained
+s,double,numeric,float64,pro,%9.0g,,,TRUE,Retained
+w,double,numeric,float64,pro,%9.0g,,,TRUE,Retained
+t1mXspk,double,numeric,float64,t1mindex*s,%9.0g,,,TRUE,Retained
+t1tXspk,double,numeric,float64,t1trade*s,%9.0g,,,TRUE,Retained
+t1sXspk,double,numeric,float64,t1services*s,%9.0g,,,TRUE,Retained
+t1mXwrd,double,numeric,float64,t1mindex*w,%9.0g,,,TRUE,Retained
+t1tXwrd,double,numeric,float64,t1trade*w,%9.0g,,,TRUE,Retained
+t1sXwrd,double,numeric,float64,t1services*w,%9.0g,,,TRUE,Retained
+t,double,numeric,float64,pro,%9.0g,,,TRUE,Retained
+t1mXtim,double,numeric,float64,t1mindex*t,%9.0g,,,TRUE,Retained
+t1tXtim,double,numeric,float64,t1trade*t,%9.0g,,,TRUE,Retained
+t1sXtim,double,numeric,float64,t1services*t,%9.0g,,,TRUE,Retained
+m_s_gsum,double,numeric,float64,Weighted Grp Sum of Multi Index for No. of Statements,%9.0g,,,TRUE,Retained
+t_s_gsum,double,numeric,float64,Weighted Grp Sum of Trade Index for No. of Statements,%9.0g,,,TRUE,Retained
+h_s_gsum,double,numeric,float64,Weighted Grp Sum of Health Index for No. of Statements,%9.0g,,,TRUE,Retained
+m_w_gsum,double,numeric,float64,Weighted Grp Sum of Multi Index for No. of Words,%9.0g,,,TRUE,Retained
+t_w_gsum,double,numeric,float64,Weighted Grp Sum of Trade Index for No. of Words,%9.0g,,,TRUE,Retained
+h_w_gsum,double,numeric,float64,Weighted Grp Sum of Health Index for No. of Words,%9.0g,,,TRUE,Retained
+m_t_gsum,double,numeric,float64,Weighted Grp Sum of Multi Index for Amt of time,%9.0g,,,TRUE,Retained
+t_t_gsum,double,numeric,float64,Weighted Grp Sum of Trade Index for Amt of time,%9.0g,,,TRUE,Retained
+h_t_gsum,double,numeric,float64,Weighted Grp Sum of Health Index for Amt of time,%9.0g,,,TRUE,Retained
+session_N,double,numeric,float64,No. of Participants in Small Groups (tfilter),%9.0g,,,TRUE,Retained
+m_s_pdm,double,numeric,float64,"Weighted R's distance from Grp mean-Multi Index,Statements",%9.0g,,,TRUE,Retained
+t_s_pdm,double,numeric,float64,"Weighted R's distance from Grp mean-Trade Index,Statements",%9.0g,,,TRUE,Retained
+h_s_pdm,double,numeric,float64,"Weighted R's distance from Grp mean-Health Index,Statements",%9.0g,,,TRUE,Retained
+m_w_pdm,double,numeric,float64,"Weighted R's distance from Grp mean-Multi Index,Words",%9.0g,,,TRUE,Retained
+t_w_pdm,double,numeric,float64,"Weighted R's distance from Grp mean-Trade Index,Words",%9.0g,,,TRUE,Retained
+h_w_pdm,double,numeric,float64,"Weighted R's distance from Grp mean-Health Index,Words",%9.0g,,,TRUE,Retained
+m_t_pdm,double,numeric,float64,"Weighted R's distance from Grp mean-Multi Index,Time",%9.0g,,,TRUE,Retained
+t_t_pdm,double,numeric,float64,"Weighted R's distance from Grp mean-Trade Index,Time",%9.0g,,,TRUE,Retained
+h_t_pdm,double,numeric,float64,"Weighted R's distance from Grp mean-Health Index,Time",%9.0g,,,TRUE,Retained
+m_gsum_u,double,numeric,float64,Grp Sum of Multi Index,%9.0g,,,TRUE,Retained
+h_gsum_u,double,numeric,float64,Grp Sum of Health Index,%9.0g,,,TRUE,Retained
+t_gsum_u,double,numeric,float64,Grp Sum of Trade Index,%9.0g,,,TRUE,Retained
+m_pdm_u,double,numeric,float64,R's distance from Grp mean-Multi Index,%9.0g,,,TRUE,Retained
+t_pdm_u,double,numeric,float64,R's distance from Grp mean-Trade Index,%9.0g,,,TRUE,Retained
+h_pdm_u,double,numeric,float64,R's distance from Grp mean-Health Index,%9.0g,,,TRUE,Retained
+nurifilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+nurifilter2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2pkind,double,numeric,float64,,%9.0g,,,TRUE,Retained
+pkind,double,numeric,float64,,%9.0g,,,TRUE,Retained
+pollid,double,numeric,float64,,%9.0g,,,TRUE,Retained
+pollgroup,double,numeric,float64,,%9.0g,,,TRUE,Retained
+id,double,numeric,float64,,%9.0g,,,TRUE,Retained
+pollid2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+caseid,double,numeric,float64,,%9.0g,,,TRUE,Retained
