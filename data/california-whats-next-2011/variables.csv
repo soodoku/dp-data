@@ -1,0 +1,343 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+t3q46,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2t3filter,double,numeric,float64,,%8.0g,,,TRUE,Retained
+fromt2t3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q42,double,numeric,float64,,%8.0g,,,TRUE,Retained
+id,double,numeric,float64,t3_Participant Number,%8.0g,,,TRUE,Retained
+idnum,double,numeric,float64,idnum,%12.0g,,,TRUE,Retained
+q1,double,haven_labelled|vctrs_vctr|double,float64,"1 ALL IN ALL, HOW WELL OR POORLY WOULD YOU SAY THE SYSTEM OF DEMOCRACY IN CALIFO",%8.0g,,,TRUE,Retained
+q2,double,haven_labelled|vctrs_vctr|double,float64,2 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  INCREASING THE NUMBER OF LEGIS,%8.0g,,,TRUE,Retained
+q3,double,haven_labelled|vctrs_vctr|double,float64,3 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  MAKING THE STATE LEGISLATURE A,%8.0g,,,TRUE,Retained
+q4,double,haven_labelled|vctrs_vctr|double,float64,4 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  INCREASING ASSEMBLY TERMS FROM,%8.0g,,,TRUE,Retained
+q5,double,haven_labelled|vctrs_vctr|double,float64,5 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  ALLOWING INITIATIVE PROPONENTS,%8.0g,,,TRUE,Retained
+q6,double,haven_labelled|vctrs_vctr|double,float64,6 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  ALLOWING INITIATIVE PROPONENTS,%8.0g,,,TRUE,Retained
+q7,double,haven_labelled|vctrs_vctr|double,float64,7 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  ALLOWING THE LEGISLATURE TO EN,%8.0g,,,TRUE,Retained
+q8,double,haven_labelled|vctrs_vctr|double,float64,8 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  PUTTING ALL INITIATIVE DEALING,%8.0g,,,TRUE,Retained
+q9,double,haven_labelled|vctrs_vctr|double,float64,9 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  ALLOWING SIGNATURES FOR INITIA,%8.0g,,,TRUE,Retained
+q10,double,haven_labelled|vctrs_vctr|double,float64,10 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  REQUIRING THAT INITIATIVES SA,%8.0g,,,TRUE,Retained
+q11,double,haven_labelled|vctrs_vctr|double,float64,11 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  PROHIBITING INITIATIVES THAT,%8.0g,,,TRUE,Retained
+q12,double,haven_labelled|vctrs_vctr|double,float64,12 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  REQUIRING ELECTION CAMPAIGN C,%8.0g,,,TRUE,Retained
+q13,double,haven_labelled|vctrs_vctr|double,float64,13 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  ALLOWING VOTERS TO RANK THEIR,%8.0g,,,TRUE,Retained
+q14,double,haven_labelled|vctrs_vctr|double,float64,14 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  PERMITTING PETITIONS FOR BALL,%8.0g,,,TRUE,Retained
+q15,double,haven_labelled|vctrs_vctr|double,float64,15 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  REDUCING THE NUMBER OF BILLS,%8.0g,,,TRUE,Retained
+q16,double,haven_labelled|vctrs_vctr|double,float64,16 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  REDUCING THE LENGTH OF THE ST,%8.0g,,,TRUE,Retained
+q17,double,haven_labelled|vctrs_vctr|double,float64,17 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  APPOINTING ALL CALIFORNIA JUD,%8.0g,,,TRUE,Retained
+q18,double,haven_labelled|vctrs_vctr|double,float64,18 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  APPLYING THE SALES TAX TO SER,%8.0g,,,TRUE,Retained
+q19,double,haven_labelled|vctrs_vctr|double,float64,19 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  FLATTENING THE STATE INCOME T,%8.0g,,,TRUE,Retained
+q20,double,haven_labelled|vctrs_vctr|double,float64,20 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  TAXING NON-RESIDENTIAL PROPER,%8.0g,,,TRUE,Retained
+q21,double,haven_labelled|vctrs_vctr|double,float64,21 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  INCREASING THE VEHICLE LICENS,%8.0g,,,TRUE,Retained
+q22,double,haven_labelled|vctrs_vctr|double,float64,22 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  REQUIRING THAT CHANGES IN COM,%8.0g,,,TRUE,Retained
+q23,double,haven_labelled|vctrs_vctr|double,float64,23 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  REQUIRING THE SAME 55 PERCENT,%8.0g,,,TRUE,Retained
+q24,double,haven_labelled|vctrs_vctr|double,float64,24 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  ASSIGNING RESPONSIBILITY FOR,%8.0g,,,TRUE,Retained
+q25,double,haven_labelled|vctrs_vctr|double,float64,25 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  GIVING CONTROL OF THE FUNDING,%8.0g,,,TRUE,Retained
+q26,double,haven_labelled|vctrs_vctr|double,float64,26 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  MAKING IT EASIER FOR LOCAL GO,%8.0g,,,TRUE,Retained
+q27,double,haven_labelled|vctrs_vctr|double,float64,27 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  ALLOW LOCAL GOVERNMENTS TO RA,%8.0g,,,TRUE,Retained
+q28,double,haven_labelled|vctrs_vctr|double,float64,28 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  ESTABLISHING A PROCESS TO CON,%8.0g,,,TRUE,Retained
+q29,double,haven_labelled|vctrs_vctr|double,float64,29 HOW MUCH OR LITTLE WOULD YOU SAY THE CALIFORNIA STATE LEGISLATURE IS ABLE TO,%8.0g,,,TRUE,Retained
+q30,double,haven_labelled|vctrs_vctr|double,float64,30 TO WHAT EXTENT IS THE ABILITY OF THE STATE LEGISLATURE TO GET THINGS DONE AFF,%8.0g,,,TRUE,Retained
+q31,double,haven_labelled|vctrs_vctr|double,float64,31 HOW MUCH DECISION-MAKING AUTHORITY SHOULD THERE BE AT THE LOCAL LEVEL VERSUS,%8.0g,,,TRUE,Retained
+q32,double,haven_labelled|vctrs_vctr|double,float64,32 HOW MUCH TAXATION POWER SHOULD THERE BE AT THE LOCAL VERSUS STATE LEVEL?,%8.0g,,,TRUE,Retained
+q33,double,haven_labelled|vctrs_vctr|double,float64,33 HOW MUCH OF THE STATE'S MAJOR DECISIONS SHOULD BE MADE BY VOTERS IN REFERENDU,%8.0g,,,TRUE,Retained
+q34,double,haven_labelled|vctrs_vctr|double,float64,34 TO WHAT EXTENT DO YOU AGREE OR DISAGREE WITH THE FOLLOWING STATEMENT?  PEOPLE,%8.0g,,,TRUE,Retained
+q35,double,haven_labelled|vctrs_vctr|double,float64,35 TO WHAT EXTENT DO YOU AGREE OR DISAGREE WITH THE FOLLOWING STATEMENT?  PUBLIC,%8.0g,,,TRUE,Retained
+q36,double,haven_labelled|vctrs_vctr|double,float64,36 TO WHAT EXTENT DO YOU AGREE OR DISAGREE WITH THE FOLLOWING STATEMENT?  MOST P,%8.0g,,,TRUE,Retained
+q37,double,haven_labelled|vctrs_vctr|double,float64,"37 WHICH POLITICAL PARTY HOLDS THE MAJORITY IN THE CALIFORNIA STATE SENATE, OR C",%8.0g,,,TRUE,Retained
+q38,double,haven_labelled|vctrs_vctr|double,float64,"38 WHICH POLITICAL PARTY HOLDS THE MAJORITY IN THE CALIFORNIA STATE ASSEMBLY, OR",%8.0g,,,TRUE,Retained
+q39,double,haven_labelled|vctrs_vctr|double,float64,39 HOW LARGE A MAJORITY OF THE STATE LEGISLATURE IS NEEDED TO APPROVE A PROPOSED,%8.0g,,,TRUE,Retained
+q40,double,haven_labelled|vctrs_vctr|double,float64,40 HOW LARGE A MAJORITY OF THE STATE LEGISLATURE IS NEEDED TO INCREASE TAXES?,%8.0g,,,TRUE,Retained
+q41,double,haven_labelled|vctrs_vctr|double,float64,41 BALLOT MEASURES CAN BE SIGNED BY...,%8.0g,,,TRUE,Retained
+q42,double,haven_labelled|vctrs_vctr|double,float64,42 WHAT IS THE MAXIMUM INCREASE IN ASSESSED PROPERTY VALUE WHEN PROPERTY CHANGES,%8.0g,,,TRUE,Retained
+q43,double,haven_labelled|vctrs_vctr|double,float64,43 THE MAJORITY OF REVENUE FOR THE STATE'S GENERAL FUND COMES FROM WHICH OF THE,%8.0g,,,TRUE,Retained
+q44,double,haven_labelled|vctrs_vctr|double,float64,44 THE LARGEST SINGLE SHARE OF THE STATE'S GENERAL FUND GOES TO WHICH OF THE FOL,%8.0g,,,TRUE,Retained
+q45,double,haven_labelled|vctrs_vctr|double,float64,"45 GENERALLY SPEAKING, HOW INTERESTED WOULD YOU SAY YOU ARE IN POLITICS AND PUBL",%8.0g,,,TRUE,Retained
+q46,double,haven_labelled|vctrs_vctr|double,float64,"46 GENERALLY SPEAKING, HOW INTERESTED WOULD YOU SAY YOU ARE IN POLITICS AND PUBL",%8.0g,,,TRUE,Retained
+q48,double,haven_labelled|vctrs_vctr|double,float64,"48 ON AVERAGE, ON HOW MANY OF THE PAST 7 DAYS WOULD YOU SAY YOU WATCHED THE NEWS",%8.0g,,,TRUE,Retained
+q49,double,haven_labelled|vctrs_vctr|double,float64,"49 ON AVERAGE, ON HOW MANY OF THE PAST 7 DAYS DID YOU READ A DAILY NEWSPAPER?",%8.0g,,,TRUE,Retained
+q50,double,haven_labelled|vctrs_vctr|double,float64,"50 ON AVERAGE, ON HOW MANY OF THE PAST 7 DAYS DID YOU READ THE NEWS ON THE INTER",%8.0g,,,TRUE,Retained
+q51,double,haven_labelled|vctrs_vctr|double,float64,"51 ON AVERAGE, ON HOW MANY OF THE PAST 7 DAYS DID YOU TALK WITH PEOPLE ABOUT POL",%8.0g,,,TRUE,Retained
+q52,double,haven_labelled|vctrs_vctr|double,float64,52 HOW WOULD YOU RATE THE FOLLOWING ON A SCALE FROM 0 TO 100 DEGREES?  THE DEMOC,%8.0g,,,TRUE,Retained
+q53,double,haven_labelled|vctrs_vctr|double,float64,53 HOW WOULD YOU RATE THE FOLLOWING ON A SCALE FROM 0 TO 100 DEGREES?  THE REPUB,%8.0g,,,TRUE,Retained
+q54,double,haven_labelled|vctrs_vctr|double,float64,54 HOW WOULD YOU RATE THE FOLLOWING ON A SCALE FROM 0 TO 100 DEGREES?  THE GOVER,%8.0g,,,TRUE,Retained
+q55,double,haven_labelled|vctrs_vctr|double,float64,55 HOW WOULD YOU RATE THE FOLLOWING ON A SCALE FROM 0 TO 100 DEGREES?  THE STATE,%8.0g,,,TRUE,Retained
+q56,double,haven_labelled|vctrs_vctr|double,float64,56 HOW WOULD YOU RATE THE FOLLOWING ON A SCALE FROM 0 TO 100 DEGREES?  THE STATE,%8.0g,,,TRUE,Retained
+q57,double,haven_labelled|vctrs_vctr|double,float64,57 HOW WOULD YOU RATE THE FOLLOWING ON A SCALE FROM 0 TO 100 DEGREES?  THE STATE,%8.0g,,,TRUE,Retained
+q58,double,haven_labelled|vctrs_vctr|double,float64,58 EDUCATION LEVEL,%8.0g,,,TRUE,Retained
+q62,double,haven_labelled|vctrs_vctr|double,float64,62 AGE GROUP,%8.0g,,,TRUE,Retained
+q62age,double,numeric,float64,62 ACTUAL AGE,%8.0g,,,TRUE,Retained
+q63,double,haven_labelled|vctrs_vctr|double,float64,63 EMPLOYMENT STATUS,%8.0g,,,TRUE,Retained
+q64,double,haven_labelled|vctrs_vctr|double,float64,64 WHICH OF THE FOLLOWING BEST DESCRIBES YOUR EMPLOYMENT?,%8.0g,,,TRUE,Retained
+q64oth,character,character,,Phone: Name: 64 Which of the following best describes your employment? (READ LIS,%38s,,,FALSE,Excluded; see source_field_exclusions
+q65,double,haven_labelled|vctrs_vctr|double,float64,65 HOW OFTEN WOULD YOU SAY YOU ATTEND RELIGIOUS SERVICES?,%8.0g,,,TRUE,Retained
+q66,double,haven_labelled|vctrs_vctr|double,float64,66 ARE YOU CURRENTLY MARRIED AND LIVING WITH YOUR SPOUSE?,%8.0g,,,TRUE,Retained
+q67,double,haven_labelled|vctrs_vctr|double,float64,67 ARE YOU LIVING WITH A PARTNER?,%8.0g,,,TRUE,Retained
+q68,double,haven_labelled|vctrs_vctr|double,float64,68 HOW MANY CHILDREN DO YOU HAVE UNDER 18 LIVING AT HOME?,%8.0g,,,TRUE,Retained
+q69,double,haven_labelled|vctrs_vctr|double,float64,69 ANNUAL HOUSEHOLD INCOME,%8.0g,,,TRUE,Retained
+q70,double,haven_labelled|vctrs_vctr|double,float64,70 ETHNICITY,%8.0g,,,TRUE,Retained
+q70oth,character,character,,,%23s,,,FALSE,Excluded; see source_field_exclusions
+q71,double,haven_labelled|vctrs_vctr|double,float64,71 POLITICAL IDEOLOGY,%8.0g,,,TRUE,Retained
+q72,double,haven_labelled|vctrs_vctr|double,float64,72 PARTY AFFILIATION,%8.0g,,,TRUE,Retained
+q72oth,character,character,,,%18s,,,FALSE,Excluded; see source_field_exclusions
+q73,double,haven_labelled|vctrs_vctr|double,float64,73 GENDER,%8.0g,,,TRUE,Retained
+q74,double,haven_labelled|vctrs_vctr|double,float64,74 REGION,%8.0g,,,TRUE,Retained
+attend,double,haven_labelled|vctrs_vctr|double,float64,ATTENDANCE AS OF 6/24 PRIOR TO EVENT,%8.0g,,,TRUE,Retained
+press,double,haven_labelled|vctrs_vctr|double,float64,SPEAKING WITH THE PRESS,%8.0g,,,TRUE,Retained
+fname,character,character,,fname,%15s,,,FALSE,Excluded; see source_field_exclusions
+lname,character,character,,lname,%15s,,,FALSE,Excluded; see source_field_exclusions
+variabl0,character,character,,add,%36s,,,FALSE,Excluded; see source_field_exclusions
+city,character,character,,city,%22s,,,FALSE,Excluded; see source_field_exclusions
+zipcode,character,character,,zipcode,%5s,,,FALSE,Excluded; see source_field_exclusions
+phone,character,character,,phone,%10s,,,FALSE,Excluded; see source_field_exclusions
+email,character,character,,email,%51s,,,FALSE,Excluded; see source_field_exclusions
+date,double,numeric,float64,,%12.0g,,,TRUE,Retained
+t2_ParticipantNumber,double,numeric,float64,t2_Participant Number,%8.0g,,,TRUE,Retained
+t2_GroupNumber,double,numeric,float64,t2_Group Number,%8.0g,,,TRUE,Retained
+t2q1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2h,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2i,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2j,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2k,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2l,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2m,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2n,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2o,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2p,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2q,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2s,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2t,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2u,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2v,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2w,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2x,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2y,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2z,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2aa,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2ab,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2ac,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2ad,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2ae,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2af,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2ag,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2ah,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2ai,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2aj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2ak,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2al,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2am,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q4,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q5,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q6,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q7,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q8,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q9,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q10,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q11,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q12,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q13a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q13b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q14a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q14b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q14c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q14d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q15a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q15b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q16a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q16b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q16c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q16d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q16e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q16f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q16g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q16h,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q16i,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q17a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q17b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q18,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q19,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q20,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q21,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q22,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23h,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23i,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23j,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23k,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23l,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23m,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23n,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q24a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q24b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q24c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q24d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q26a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q26b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q26c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q27,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q28,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q29,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q30,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q31,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q32,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q33,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q34,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q35,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q36,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q37,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q38,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q39,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q40,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3id,double,numeric,float64,t3_Participant Number,%8.0g,,,TRUE,Retained
+t2q41,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3_ParticipantNumber,double,numeric,float64,t3_Participant Number,%8.0g,,,TRUE,Retained
+t3_GroupNumber,double,numeric,float64,t3_Group Number,%8.0g,,,TRUE,Retained
+t3q1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2h,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2i,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2j,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2k,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2l,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2m,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2n,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2o,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2p,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2q,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2s,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2t,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2u,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2v,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2w,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2x,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2y,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2z,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2aa,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2ab,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2ac,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2ad,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2ae,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2af,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2ag,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2ah,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2ai,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2aj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2ak,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2al,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2am,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q4,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q5,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q6,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q7,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q8,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q9,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q10,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q11,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q12,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q13a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q13b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q14a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q14b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q14c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q14d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q15a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q15b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q16a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q16b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q16c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q16d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q16e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q16f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q16g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q16h,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q16i,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q17a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q17b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q18,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q19,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q20,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q21,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q22,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23h,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23i,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23j,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23k,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23l,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23m,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23n,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q24a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q24b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q24c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q24d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q26a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q26b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q26c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q27,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q28,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q29,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q30,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q31,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q32,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q33,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q34,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q35,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q36,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q37,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q38,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q39,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q40,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q41,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q42,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q43a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q43b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q43c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q43d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q44a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q44b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q44c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q44d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q44e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q44f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q44g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q44h,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q45,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q47,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q48,double,numeric,float64,,%8.0g,,,TRUE,Retained
+part,double,numeric,float64,,%8.0g,,,TRUE,Retained

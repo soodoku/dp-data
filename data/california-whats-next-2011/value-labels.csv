@@ -1,0 +1,645 @@
+source_column,source_value,value_label
+q1,0,0 - Extremely Poorly
+q1,1,1
+q1,2,2
+q1,3,3
+q1,4,4
+q1,5,5 - Exactly in the Middle
+q1,6,6
+q1,7,7
+q1,8,8
+q1,9,9
+q1,10,10 - Extremely Well
+q1,98,No Answer
+q1,99,No Opinion
+q2,0,0 - Extremely Undesirable
+q2,1,1
+q2,2,2
+q2,3,3
+q2,4,4
+q2,5,5 - Exactly in the Middle
+q2,6,6
+q2,7,7
+q2,8,8
+q2,9,9
+q2,10,10 - Extremely Desirable
+q2,98,No Answer
+q2,99,No Opinion
+q3,0,0 - Extremely Undesirable
+q3,1,1
+q3,2,2
+q3,3,3
+q3,4,4
+q3,5,5 - Exactly in the Middle
+q3,6,6
+q3,7,7
+q3,8,8
+q3,9,9
+q3,10,10 - Extremely Desirable
+q3,98,No Answer
+q3,99,No Opinion
+q4,0,0 - Extremely Undesirable
+q4,1,1
+q4,2,2
+q4,3,3
+q4,4,4
+q4,5,5 - Exactly in the Middle
+q4,6,6
+q4,7,7
+q4,8,8
+q4,9,9
+q4,10,10 - Extremely Desirable
+q4,98,No Answer
+q4,99,No Opinion
+q5,0,0 - Extremely Undesirable
+q5,1,1
+q5,2,2
+q5,3,3
+q5,4,4
+q5,5,5 - Exactly in the Middle
+q5,6,6
+q5,7,7
+q5,8,8
+q5,9,9
+q5,10,10 - Extremely Desirable
+q5,98,No Answer
+q5,99,No Opinion
+q6,0,0 - Extremely Undesirable
+q6,1,1
+q6,2,2
+q6,3,3
+q6,4,4
+q6,5,5 - Exactly in the Middle
+q6,6,6
+q6,7,7
+q6,8,8
+q6,9,9
+q6,10,10 - Extremely Desirable
+q6,98,No Answer
+q6,99,No Opinion
+q7,0,0 - Extremely Undesirable
+q7,1,1
+q7,2,2
+q7,3,3
+q7,4,4
+q7,5,5 - Exactly in the Middle
+q7,6,6
+q7,7,7
+q7,8,8
+q7,9,9
+q7,10,10 - Extremely Desirable
+q7,98,No Answer
+q7,99,No Opinion
+q8,0,0 - Extremely Undesirable
+q8,1,1
+q8,2,2
+q8,3,3
+q8,4,4
+q8,5,5 - Exactly in the Middle
+q8,6,6
+q8,7,7
+q8,8,8
+q8,9,9
+q8,10,10 - Extremely Desirable
+q8,98,No Answer
+q8,99,No Opinion
+q9,0,0 - Extremely Undesirable
+q9,1,1
+q9,2,2
+q9,3,3
+q9,4,4
+q9,5,5 - Exactly in the Middle
+q9,6,6
+q9,7,7
+q9,8,8
+q9,9,9
+q9,10,10 - Extremely Desirable
+q9,98,No Answer
+q9,99,No Opinion
+q10,0,0 - Extremely Undesirable
+q10,1,1
+q10,2,2
+q10,3,3
+q10,4,4
+q10,5,5 - Exactly in the Middle
+q10,6,6
+q10,7,7
+q10,8,8
+q10,9,9
+q10,10,10 - Extremely Desirable
+q10,98,No Answer
+q10,99,No Opinion
+q11,0,0 - Extremely Undesirable
+q11,1,1
+q11,2,2
+q11,3,3
+q11,4,4
+q11,5,5 - Exactly in the Middle
+q11,6,6
+q11,7,7
+q11,8,8
+q11,9,9
+q11,10,10 - Extremely Desirable
+q11,98,No Answer
+q11,99,No Opinion
+q12,0,0 - Extremely Undesirable
+q12,1,1
+q12,2,2
+q12,3,3
+q12,4,4
+q12,5,5 - Exactly in the Middle
+q12,6,6
+q12,7,7
+q12,8,8
+q12,9,9
+q12,10,10 - Extremely Desirable
+q12,98,No Answer
+q12,99,No Opinion
+q13,0,0 - Extremely Undesirable
+q13,1,1
+q13,2,2
+q13,3,3
+q13,4,4
+q13,5,5 - Exactly in the Middle
+q13,6,6
+q13,7,7
+q13,8,8
+q13,9,9
+q13,10,10 - Extremely Desirable
+q13,98,No Answer
+q13,99,No Opinion
+q14,0,0 - Extremely Undesirable
+q14,1,1
+q14,2,2
+q14,3,3
+q14,4,4
+q14,5,5 - Exactly in the Middle
+q14,6,6
+q14,7,7
+q14,8,8
+q14,9,9
+q14,10,10 - Extremely Desirable
+q14,98,No Answer
+q14,99,No Opinion
+q15,0,0 - Extremely Undesirable
+q15,1,1
+q15,2,2
+q15,3,3
+q15,4,4
+q15,5,5 - Exactly in the Middle
+q15,6,6
+q15,7,7
+q15,8,8
+q15,9,9
+q15,10,10 - Extremely Desirable
+q15,98,No Answer
+q15,99,No Opinion
+q16,0,0 - Extremely Undesirable
+q16,1,1
+q16,2,2
+q16,3,3
+q16,4,4
+q16,5,5 - Exactly in the Middle
+q16,6,6
+q16,7,7
+q16,8,8
+q16,9,9
+q16,10,10 - Extremely Desirable
+q16,98,No Answer
+q16,99,No Opinion
+q17,0,0 - Extremely Undesirable
+q17,1,1
+q17,2,2
+q17,3,3
+q17,4,4
+q17,5,5 - Exactly in the Middle
+q17,6,6
+q17,7,7
+q17,8,8
+q17,9,9
+q17,10,10 - Extremely Desirable
+q17,98,No Answer
+q17,99,No Opinion
+q18,0,0 - Extremely Undesirable
+q18,1,1
+q18,2,2
+q18,3,3
+q18,4,4
+q18,5,5 - Exactly in the Middle
+q18,6,6
+q18,7,7
+q18,8,8
+q18,9,9
+q18,10,10 - Extremely Desirable
+q18,98,No Answer
+q18,99,No Opinion
+q19,0,0 - Extremely Undesirable
+q19,1,1
+q19,2,2
+q19,3,3
+q19,4,4
+q19,5,5 - Exactly in the Middle
+q19,6,6
+q19,7,7
+q19,8,8
+q19,9,9
+q19,10,10 - Extremely Desirable
+q19,98,No Answer
+q19,99,No Opinion
+q20,0,0 - Extremely Undesirable
+q20,1,1
+q20,2,2
+q20,3,3
+q20,4,4
+q20,5,5 - Exactly in the Middle
+q20,6,6
+q20,7,7
+q20,8,8
+q20,9,9
+q20,10,10 - Extremely Desirable
+q20,98,No Answer
+q20,99,No Opinion
+q21,0,0 - Extremely Undesirable
+q21,1,1
+q21,2,2
+q21,3,3
+q21,4,4
+q21,5,5 - Exactly in the Middle
+q21,6,6
+q21,7,7
+q21,8,8
+q21,9,9
+q21,10,10 - Extremely Desirable
+q21,98,No Answer
+q21,99,No Opinion
+q22,0,0 - Extremely Undesirable
+q22,1,1
+q22,2,2
+q22,3,3
+q22,4,4
+q22,5,5 - Exactly in the Middle
+q22,6,6
+q22,7,7
+q22,8,8
+q22,9,9
+q22,10,10 - Extremely Desirable
+q22,98,No Answer
+q22,99,No Opinion
+q23,0,0 - Extremely Undesirable
+q23,1,1
+q23,2,2
+q23,3,3
+q23,4,4
+q23,5,5 - Exactly in the Middle
+q23,6,6
+q23,7,7
+q23,8,8
+q23,9,9
+q23,10,10 - Extremely Desirable
+q23,98,No Answer
+q23,99,No Opinion
+q24,0,0 - Extremely Undesirable
+q24,1,1
+q24,2,2
+q24,3,3
+q24,4,4
+q24,5,5 - Exactly in the Middle
+q24,6,6
+q24,7,7
+q24,8,8
+q24,9,9
+q24,10,10 - Extremely Desirable
+q24,98,No Answer
+q24,99,No Opinion
+q25,0,0 - Extremely Undesirable
+q25,1,1
+q25,2,2
+q25,3,3
+q25,4,4
+q25,5,5 - Exactly in the Middle
+q25,6,6
+q25,7,7
+q25,8,8
+q25,9,9
+q25,10,10 - Extremely Desirable
+q25,98,No Answer
+q25,99,No Opinion
+q26,0,0 - Extremely Undesirable
+q26,1,1
+q26,2,2
+q26,3,3
+q26,4,4
+q26,5,5 - Exactly in the Middle
+q26,6,6
+q26,7,7
+q26,8,8
+q26,9,9
+q26,10,10 - Extremely Desirable
+q26,98,No Answer
+q26,99,No Opinion
+q27,0,0 - Extremely Undesirable
+q27,1,1
+q27,2,2
+q27,3,3
+q27,4,4
+q27,5,5 - Exactly in the Middle
+q27,6,6
+q27,7,7
+q27,8,8
+q27,9,9
+q27,10,10 - Extremely Desirable
+q27,98,No Answer
+q27,99,No Opinion
+q28,0,0 - Extremely Undesirable
+q28,1,1
+q28,2,2
+q28,3,3
+q28,4,4
+q28,5,5 - Exactly in the Middle
+q28,6,6
+q28,7,7
+q28,8,8
+q28,9,9
+q28,10,10 - Extremely Desirable
+q28,98,No Answer
+q28,99,No Opinion
+q29,0,0 - Not at All
+q29,1,1
+q29,2,2
+q29,3,3
+q29,4,4
+q29,5,5 - Exactly in the Middle
+q29,6,6
+q29,7,7
+q29,8,8
+q29,9,9
+q29,10,10 - As Much As Could Reasonably Be Expected
+q29,98,No Answer
+q29,99,No Opinion
+q30,0,0 - Not at All
+q30,1,1
+q30,2,2
+q30,3,3
+q30,4,4
+q30,5,5 - Exactly in the Middle
+q30,6,6
+q30,7,7
+q30,8,8
+q30,9,9
+q30,10,10 - Completely
+q30,98,No Answer
+q30,99,No Opinion
+q31,0,0 - Completely at the Local Level
+q31,1,1
+q31,2,2
+q31,3,3
+q31,4,4
+q31,5,5 - Exactly in the Middle
+q31,6,6
+q31,7,7
+q31,8,8
+q31,9,9
+q31,10,10 - Completely at the State Level
+q31,98,No Answer
+q31,99,No Opinion
+q32,0,0 - Completely at the Local Level
+q32,1,1
+q32,2,2
+q32,3,3
+q32,4,4
+q32,5,5 - Exactly in the Middle
+q32,6,6
+q32,7,7
+q32,8,8
+q32,9,9
+q32,10,10 - Completely at the State Level
+q32,98,No Answer
+q32,99,No Opinion
+q33,0,0 - Completely by Voters in Referendum
+q33,1,1
+q33,2,2
+q33,3,3
+q33,4,4
+q33,5,5 - Exactly in the Middle
+q33,6,6
+q33,7,7
+q33,8,8
+q33,9,9
+q33,10,10 - Completely by the State Legislature
+q33,98,No Answer
+q33,99,No Opinion
+q34,1,Strongly Agree
+q34,2,Somewhat Agree
+q34,3,Neither Agree nor Disagree
+q34,4,Somewhat Disagree
+q34,5,Strongly Disagree
+q34,98,No Answer
+q34,99,No Opinion
+q35,1,Strongly Agree
+q35,2,Somewhat Agree
+q35,3,Neither Agree nor Disagree
+q35,4,Somewhat Disagree
+q35,5,Strongly Disagree
+q35,98,No Answer
+q35,99,No Opinion
+q36,1,Strongly Agree
+q36,2,Somewhat Agree
+q36,3,Neither Agree nor Disagree
+q36,4,Somewhat Disagree
+q36,5,Strongly Disagree
+q36,98,No Answer
+q36,99,No Opinion
+q37,1,Republican Party
+q37,2,Democratic Party
+q37,98,Don't Know/ Couldn't Say
+q37,99,No Answer
+q38,1,Republican Party
+q38,2,Democratic Party
+q38,98,Don't Know/ Couldn't Say
+q38,99,No Answer
+q39,1,Simple Majority of Both Houses
+q39,2,Simple Majority Assembly & Two-Thirds Senate
+q39,3,Two-Thirds of Both Houses
+q39,4,Three-Fourths of Both Houses
+q39,98,Don't Know/ Couldn't Say
+q39,99,No Answer
+q40,1,Simple Majority of Both Houses
+q40,2,Simple Majority Assembly & Two-Thirds Senate
+q40,3,Two-Thirds of Both Houses
+q40,4,Three-Fourths of Both Houses
+q40,98,Don't Know/ Couldn't Say
+q40,99,No Answer
+q41,1,Anyone 18+
+q41,2,Any Citizen 18+
+q41,3,Only Registered Voters
+q41,4,Only Registered Voters Who Voted in Last Election
+q41,98,Don't Know/ Couldn't Say
+q41,99,No Answer
+q42,1,1%
+q42,2,3%
+q42,3,5%
+q42,4,7%
+q42,98,Don't Know/ Couldn't Say
+q42,99,No Answer
+q43,1,Personal Income Tax
+q43,2,Retail Sales and Use Tax
+q43,3,Corporation Tax
+q43,4,Local Income Tax
+q43,98,Don't Know/ Couldn't Say
+q43,99,No Answer
+q44,1,Higher Education
+q44,2,K-12 Education
+q44,3,Health & Human Services
+q44,4,State Pensions
+q44,98,Don't Know/ Couldn't Say
+q44,99,No Answer
+q45,1,Very Interested
+q45,2,Somewhat Interested
+q45,3,Not Very Interested
+q45,4,Not at All Interested
+q45,98,No Answer
+q45,99,No Opinion
+q46,1,Very Interested
+q46,2,Somewhat Interested
+q46,3,Not Very Interested
+q46,4,Not at All Interested
+q46,98,No Answer
+q46,99,No Opinion
+q48,0,None
+q48,1,1 Day
+q48,2,2 Days
+q48,3,3 Days
+q48,4,4 Days
+q48,5,5 Days
+q48,6,6 Days
+q48,7,7 Days
+q48,99,No Answer
+q49,0,None
+q49,1,1 Day
+q49,2,2 Days
+q49,3,3 Days
+q49,4,4 Days
+q49,5,5 Days
+q49,6,6 Days
+q49,7,7 Days
+q49,99,No Answer
+q50,0,None
+q50,1,1 Day
+q50,2,2 Days
+q50,3,3 Days
+q50,4,4 Days
+q50,5,5 Days
+q50,6,6 Days
+q50,7,7 Days
+q50,99,No Answer
+q51,0,None
+q51,1,1 Day
+q51,2,2 Days
+q51,3,3 Days
+q51,4,4 Days
+q51,5,5 Days
+q51,6,6 Days
+q51,7,7 Days
+q51,99,No Answer
+q52,999,Can't Say/ No Opinion
+q53,999,Can't Say/ No Opinion
+q54,999,Can't Say/ No Opinion
+q55,999,Can't Say/ No Opinion
+q56,999,Can't Say/ No Opinion
+q57,999,Can't Say/ No Opinion
+q58,1,Less than High School Graduate
+q58,2,High School Diploma
+q58,3,Some University/ College
+q58,4,University/ College Graduate
+q58,5,Some Graduate Work
+q58,6,Graduate Degree
+q58,7,Other
+q58,99,No Answer
+q62,1,18 to 24
+q62,2,25 to 34
+q62,3,35 to 44
+q62,4,45 to 54
+q62,5,55 to 64
+q62,6,65 or Older
+q63,1,Employed Full-Time
+q63,2,Employed Part-Time
+q63,3,Unemployed
+q63,4,Student
+q63,5,Not Actively Looking for Work
+q63,99,No Answer
+q64,1,Self Employed
+q64,2,Business Fewer than 25 Employees
+q64,3,Business with 25 or More Employees
+q64,4,Government
+q64,5,Other
+q64,99,No Answer
+q65,1,Every Week
+q65,2,Almost Every Week
+q65,3,Once or Twice a Month
+q65,4,A Few Times a Year
+q65,5,Never
+q65,99,No Answer
+q66,1,Yes
+q66,2,No
+q66,99,No Answer
+q67,1,Yes
+q67,2,No
+q67,99,No Answer
+q68,0,None
+q68,1,One
+q68,2,Two
+q68,3,Three
+q68,4,Four
+q68,5,Five
+q68,6,Six
+q68,7,Seven
+q68,8,Eight
+q68,99,No Answer
+q69,1,"Less than $25,000"
+q69,2,"$25,000 to $49,999"
+q69,3,"$50,000 to $74,999"
+q69,4,"$75,000 to $99,999"
+q69,5,"$100,000 to $124,999"
+q69,6,"$125,000 to $149,999"
+q69,7,"$150,000 or More"
+q69,98,No Answer
+q69,99,Don't Know
+q70,1,White
+q70,2,Black
+q70,3,Hispanic
+q70,4,Asian/ Pacific Islander
+q70,5,Native American
+q70,6,Other
+q70,99,No Answer
+q71,0,0 - Extremely Liberal
+q71,1,1
+q71,2,2
+q71,3,3
+q71,4,4
+q71,5,5 - Exactly in the Middle
+q71,6,6
+q71,7,7
+q71,8,8
+q71,9,9
+q71,10,10 - Extremely Conservative
+q71,98,No Answer
+q71,99,No Opinion
+q72,1,Republican
+q72,2,Democrat
+q72,3,Other
+q72,4,Independent
+q73,1,Male
+q73,2,Female
+q74,1,LA County
+q74,2,Orange County
+q74,3,Inland Empire
+q74,4,San Diego County
+q74,5,Central Coast
+q74,6,Central/ Fresno
+q74,7,Greater Sacramento
+q74,8,Bay Area
+q74,9,North
+attend,1,Attendee
+attend,2,Cancel
+press,1,Agreed
+press,2,Did Not Agree
