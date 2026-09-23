@@ -8,3 +8,4 @@
 *.dta binary
 *.pdf binary
 *.zip binary
+data/*/knowledge-battery.csv -text
