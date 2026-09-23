@@ -1,0 +1,1125 @@
+source_column,source_value,value_label
+part,0,No
+part,1,Yes
+region,-1,Not applicable
+region,1,North
+region,2,North West
+region,3,Yorks+Humberside
+region,4,West Mids
+region,5,East Mids
+region,6,East Anglia
+region,7,South West
+region,8,South East
+region,9,G.London
+region,10,Wales
+region,11,Scotland
+region,99,Not answered
+sex,-1,Not applicable
+sex,0,Male
+sex,1,Female
+age,-1,Not applicable
+age,96,96+
+age,97,Refused
+age,98,Dont know
+age,99,Not answered
+child17,-1,Not applicable
+child17,0,None
+child17,99,Not answered
+child5,-1,Not applicable
+child5,0,NONE
+child5,9,Not answered
+child511,-1,Not applicable
+child511,0,NONE
+child511,9,Not answered
+child12,-1,Not applicable
+child12,0,NONE
+child12,9,Not answered
+child16,-1,Not applicable
+child16,0,NONE
+child16,9,Not answered
+marital,-1,Not applicable
+marital,1,"Married,"
+marital,2,"Living as married,"
+marital,3,Separated or divorced
+marital,4,Widowed
+marital,5,Single and never married
+marital,9,Not answered
+readnews,-1,Not applicable
+readnews,0,No
+readnews,1,Yes
+readnews,9,Not answered
+whichpap,-1,Not applicable
+whichpap,1,(Scottish) Daily Express
+whichpap,2,Daily Mail
+whichpap,3,Daily Mirror/Record
+whichpap,4,Daily Star
+whichpap,5,The Sun
+whichpap,6,Today
+whichpap,7,Daily Telegraph
+whichpap,8,Financial Times
+whichpap,9,The Guardian
+whichpap,10,The Independent
+whichpap,11,The Times
+whichpap,12,Other daily morning paper
+whichpap,99,Not answered
+genint,-1,Not applicable
+genint,1,Not at all interested
+genint,2,Not very interested
+genint,3,Fairly interested
+genint,4,Very interested
+genint,8,Can't say
+genint,9,Not answered
+futint,-1,Not applicable
+futint,1,Not at all interested
+futint,2,Not very interested
+futint,3,Fairly interested
+futint,4,Very interested
+futint,8,Can't say
+futint,9,Not answered
+majknowl,-1,Not applicable
+majknowl,1,Not at all knowledgeable
+majknowl,2,Not very knowledgeable
+majknowl,3,Fairly knowledgeable
+majknowl,4,Very knowledgeable
+majknowl,8,Can't say
+majknowl,9,Not answered
+ownknowl,-1,Not applicable
+ownknowl,1,Not at all knowledgeable
+ownknowl,2,Not very knowledgeable
+ownknowl,3,Fairly knowledgeable
+ownknowl,4,Very knowledgeable
+ownknowl,8,Can't say
+ownknowl,9,Not answered
+ptyalleg,-1,Not applicable
+ptyalleg,0,None/No
+ptyalleg,1,Conservative
+ptyalleg,2,Labour
+ptyalleg,3,Liberal Democrat
+ptyalleg,4,Scottish Nationalist
+ptyalleg,5,Plaid Cymru
+ptyalleg,6,Green Party
+ptyalleg,7,Other party
+ptyalleg,97,Refused
+ptyalleg,98,Don't know
+ptyalleg,99,Not answered
+closer,-1,Not applicable
+closer,0,None/No
+closer,1,Conservative
+closer,2,Labour
+closer,3,Liberal Democrat
+closer,4,Scottish Nationnalist
+closer,5,Plaid Cymru
+closer,6,Green Party
+closer,7,Other party
+closer,97,Refused
+closer,98,Don't know
+closer,99,Not answered
+strength,-1,Not applicable
+strength,1,Not very strong
+strength,2,Fairly strong
+strength,3,Very strong
+strength,8,Don't know
+strength,9,Not answered
+votejune,-1,Not applicable
+votejune,0,"No, did not vote"
+votejune,1,"Yes, voted"
+votejune,8,Can't remember
+votejune,9,Not answered
+whatdo,-1,Not applicable
+whatdo,1,In full-time education
+whatdo,2,On government training/employment programme
+whatdo,3,In part-time work (up to 30 hours a week)
+whatdo,4,In full-time paid work (30+ hours a week)
+whatdo,5,Waiting to take up paid job already obtained
+whatdo,6,Unemployed and looking for work
+whatdo,7,"Unemployed, but not looking for work"
+whatdo,8,Permanently sick or disabled
+whatdo,9,Wholly retired from work
+whatdo,10,Looking after home or family
+whatdo,11,Something else
+whatdo,99,Not answered
+numadult,-1,Not applicable
+numadult,1,Respondent only person aged 18
+numadult,2,2+ adults in household
+numadult,9,Not answered
+chfincom,-1,Not applicable
+chfincom,1,Respondent is C.I.E
+chfincom,2,Other household member is C.I.E
+chfincom,9,Not answered
+actcie,-1,Not applicable
+actcie,1,In full-time education
+actcie,2,On government training/employment programme
+actcie,3,In part-time work (up to 30 hours a week)
+actcie,4,In full-time paid work (30+ hours a week)
+actcie,5,Waiting to take up paid job already obtained
+actcie,6,Unemployed and looking for work
+actcie,7,"Unemployed, but not looking for work"
+actcie,8,Permanently sick or disabled
+actcie,9,Wholly retired from work
+actcie,10,Looking after home or family
+actcie,11,Something else
+actcie,99,Not answered
+employ,-1,Not applicable
+employ,1,An employee
+employ,2,Self-employed
+employ,3,Never worked
+employ,9,Not answered
+super,-1,Not applicable
+super,0,None
+super,2,1 to 24
+super,3,25 or more
+super,9,Not answered
+numempl,-1,Not applicable
+numempl,2,1 to 24
+numempl,3,25 or more
+numempl,9,Not answered
+numemp,-1,Not applicable
+numemp,0,None
+numemp,2,1 to 24
+numemp,3,25 or more
+numemp,9,Not answered
+seg,-1,Not applicable
+seg,1,Employers-large establishment
+seg,2,Managers-large establishment
+seg,3,Employers-small establishment
+seg,4,Managers-small establishment
+seg,5,Professional-self-employed
+seg,6,Professional-employer
+seg,7,Intermediate non-manual
+seg,8,Intermediate non-manual
+seg,9,Junior non-manual
+seg,10,Personal service
+seg,11,Foremen and supervisors
+seg,12,Skilled manual
+seg,13,Semi-skilled manual
+seg,14,Unskilled manual
+seg,15,Own account (other than self-employed)
+seg,16,Farmers-employers
+seg,17,Farmers-own account
+seg,18,Agricultural
+seg,19,Armed forces
+seg,20,Inadequately described
+ageeduc,-1,Not applicable
+ageeduc,1,Not yet finished
+ageeduc,2,Never went to school
+ageeduc,3,14 or under
+ageeduc,4,15
+ageeduc,5,16
+ageeduc,6,17
+ageeduc,7,18
+ageeduc,8,19 or over
+ageeduc,9,Not answered
+educ,-1,Not applicable
+educ,0,NO QUALIFICATIONS OBTAINED
+educ,1,CSE Grades 2-5 GCSE Grades D-G
+educ,2,CSE Grade 1 GCE `O level GCSE Grades A-C School Certificate
+educ,3,GCE A level/S level Higher School Certificate  Matriculation
+educ,4,Overseas School Leaving Exam/Certificate
+educ,5,ONC/OND/City & Guilds Advanced/Final level/Part II or III
+educ,6,HNC/HND/City & Guilds Full Technological Certificate
+educ,7,RSA/Other clerical and commercial
+educ,8,Teachers training qualification
+educ,9,Nursing qualification
+educ,10,Professional qualification (membership awarded by profession
+educ,11,"Degree, including higher degree"
+educ,12,Other technical or business qualification/certificate
+educ,13,Other
+educ,99,Not answered
+ethnic,-1,Not applicable
+ethnic,1,White
+ethnic,2,Black - Caribbean
+ethnic,3,Black - African
+ethnic,4,Indian
+ethnic,6,Bangladeshi
+ethnic,7,Chinese
+ethnic,8,Other
+ethnic,97,Refused
+ethnic,99,Not answered
+goabroad,-1,Not applicable
+goabroad,0,No
+goabroad,1,Yes
+goabroad,9,Not answered
+lstabrod,-1,Not applicable
+lstabrod,1,Within last year
+lstabrod,2,"Over 1, up to 2 years ago"
+lstabrod,3,"Over 2, up to 5 years ago"
+lstabrod,4,"Over 5, up to 10 years ago"
+lstabrod,5,"Over 10, up to 20 years ago"
+lstabrod,6,20 years ago or longer
+lstabrod,8,Can't remember
+lstabrod,9,Not answered
+language,-1,Not applicable
+language,0,No
+language,1,"Yes, at least 1 language fluently"
+language,9,Not answered
+slight,-1,Not applicable
+slight,0,"No, none"
+slight,1,"Yes, at least one slightly"
+slight,9,Not answered
+religion,-1,Not applicable
+religion,1,No religion
+religion,2,Christian - no denomination
+religion,3,Roman Catholic
+religion,4,Anglican/C of E
+religion,5,Methodist
+religion,6,Baptist
+religion,7,Presbyterian/Church of Scotland
+religion,8,Free presbyterian
+religion,9,Brethren
+religion,10,United Reform Church (URC)/Congregational
+religion,11,Other protestant
+religion,12,Other Christian
+religion,13,Hindu
+religion,14,Jewish
+religion,15,Islam/Muslim
+religion,16,Sikh
+religion,17,Buddhist
+religion,18,Other non-Christian
+religion,99,Not answered
+move1,1,very unwilling
+move1,2,fairly unwilling
+move1,3,neither willing nor unwilling
+move1,4,fairly willing
+move1,5,very willing
+move1,8,can't say
+moveeur1,1,very unwilling
+moveeur1,2,fairly unwilling
+moveeur1,3,neither willing nor unwilling
+moveeur1,4,fairly willing
+moveeur1,5,very willing
+moveeur1,8,can't say
+moveus1,1,very unwilling
+moveus1,2,fairly unwilling
+moveus1,3,neither willing nor unwilling
+moveus1,4,fairly willing
+moveus1,5,very willing
+moveus1,8,can't say
+moveoth1,1,very unwilling
+moveoth1,2,fairly unwilling
+moveoth1,3,neither willing nor unwilling
+moveoth1,4,fairly willing
+moveoth1,5,very willing
+moveoth1,8,can't say
+britcit1,1,Disagree strongly
+britcit1,2,Disagree
+britcit1,3,Neither agree nor disagree
+britcit1,4,Agree
+britcit1,5,Agree strongly
+britcit1,8,Can't say
+britcit1,9,Not answered
+ashame1,1,Disagree strongly
+ashame1,2,Disagree
+ashame1,3,Neither agree nor disagree
+ashame1,4,Agree
+ashame1,5,Agree strongly
+ashame1,8,Can't say
+ashame1,9,Not answered
+better1,1,Disagree strongly
+better1,2,Disagree
+better1,3,Neither agree nor disagree
+better1,4,Agree
+better1,5,Agree strongly
+better1,8,Can't say
+better1,9,Not answered
+usbet1,1,Disagree strongly
+usbet1,2,Disagree
+usbet1,3,Neither agree nor disagree
+usbet1,4,Agree
+usbet1,5,Agree strongly
+usbet1,8,Can't say
+usbet1,9,Not answered
+support1,1,Disagree strongly
+support1,2,Disagree
+support1,3,Neither agree nor disagree
+support1,4,Agree
+support1,5,Agree strongly
+support1,8,Can't say
+support1,9,Not answered
+lessgap1,1,Disagree strongly
+lessgap1,2,Disagree
+lessgap1,3,Neither agree nor disagree
+lessgap1,4,Agree
+lessgap1,5,Agree strongly
+lessgap1,8,Can't say
+lessgap1,9,Not answered
+ownint1,1,Disagree strongly
+ownint1,2,Disagree
+ownint1,3,Neither agree nor disagree
+ownint1,4,Agree
+ownint1,5,Agree strongly
+ownint1,8,Can't say
+ownint1,9,Not answered
+sacfut1,1,Disagree strongly
+sacfut1,2,Disagree
+sacfut1,3,Neither agree nor disagree
+sacfut1,4,Agree
+sacfut1,5,Agree strongly
+sacfut1,8,Can't say
+sacfut1,9,Not answered
+stdliv1,1,Disagree strongly
+stdliv1,2,Disagree
+stdliv1,3,Neither agree nor disagree
+stdliv1,4,Agree
+stdliv1,5,Agree strongly
+stdliv1,8,Can't say
+stdliv1,9,Not answered
+fend1,1,Disagree strongly
+fend1,2,Disagree
+fend1,3,Neither agree nor disagree
+fend1,4,Agree
+fend1,5,Agree strongly
+fend1,8,Can't say
+fend1,9,Not answered
+phone,-1,Not applicable
+phone,0,No
+phone,1,Yes
+phone,9,Not answered
+givenum,-1,Not applicable
+givenum,1,Number given
+givenum,2,Number refused
+givenum,9,Not answered
+inttime,-1,Not applicable
+inttime,999,Not answered
+intdate,-1,Not applicable
+intdate,999999,Not answered
+intname,-1,Not applicable
+intname,9999,Not answered
+releu1,-1,Not applicable
+releu1,1,Much less close
+releu1,2,A little less close
+releu1,3,About right
+releu1,4,A little closer
+releu1,5,Much closer
+releu1,8,Can't choose
+releu1,9,Not answered
+influ1,-1,Not applicable
+influ1,1,Much less influence
+influ1,2,A little less influence
+influ1,3,It would make no difference
+influ1,4,A little more influence
+influ1,5,Much more influence
+influ1,8,(Cant choose)
+influ1,9,Not answered
+strecon1,-1,Not applicable
+strecon1,1,Much weaker economically
+strecon1,2,A little weaker economically
+strecon1,3,It would make no difference
+strecon1,4,A little stronger economically
+strecon1,5,Much stronger economically
+strecon1,8,(Cant choose)
+strecon1,9,Not answered
+longpol1,-1,Not applicable
+longpol1,1,Britain should leave the European Union
+longpol1,2,Britain should stay in the EU and try to reduce the EUs powe
+longpol1,3,Things should be left as they are
+longpol1,4,Britain should stay in the EU and try to increase the EUs po
+longpol1,5,Britain should stay in the EU and work towards the formation
+longpol1,8,(Cant choose)
+longpol1,9,Not answered
+futpnd1,-1,Not applicable
+futpnd1,1,The pound should be replaced by a single European currency
+futpnd1,2,Both the pound and a new European currency should be used in
+futpnd1,3,The pound should be kept as the only currency for Britain
+futpnd1,8,(Cant choose)
+futpnd1,9,Not answered
+owncurr1,1,Disagree strongly
+owncurr1,2,Disagree
+owncurr1,3,Neither agree nor disagree
+owncurr1,4,Agree
+owncurr1,5,Agree strongly
+owncurr1,8,Can't say
+owncurr1,9,Not answered
+trabloc1,1,Disagree strongly
+trabloc1,2,Disagree
+trabloc1,3,Neither agree nor disagree
+trabloc1,4,Agree
+trabloc1,5,Agree strongly
+trabloc1,8,Can't say
+trabloc1,9,Not answered
+getnuff1,1,Disagree strongly
+getnuff1,2,Disagree
+getnuff1,3,Neither agree nor disagree
+getnuff1,4,Agree
+getnuff1,5,Agree strongly
+getnuff1,8,Can't say
+getnuff1,9,Not answered
+bettoff1,1,Disagree strongly
+bettoff1,2,Disagree
+bettoff1,3,Neither agree nor disagree
+bettoff1,4,Agree
+bettoff1,5,Agree strongly
+bettoff1,8,Can't say
+bettoff1,9,Not answered
+tradit1,1,Disagree strongly
+tradit1,2,Disagree
+tradit1,3,Neither agree nor diagree
+tradit1,4,Agree
+tradit1,5,Agree strongly
+tradit1,8,Can't say
+tradit1,9,Not answered
+costliv1,1,Disagree strongly
+costliv1,2,Disagree
+costliv1,3,Neither agree nor disagree
+costliv1,4,Agree
+costliv1,5,Agree strongly
+costliv1,8,Can't say
+costliv1,9,Not answered
+peace1,1,Disagree strongly
+peace1,2,Disagree
+peace1,3,Neither agree nor disagree
+peace1,4,Agree
+peace1,5,Agree strongly
+peace1,8,Can't say
+peace1,9,Not answered
+germans1,1,Disagree strongly
+germans1,2,Disagree
+germans1,3,Neither agree nor disagree
+germans1,4,Agree
+germans1,5,Agree strongly
+germans1,8,Can't say
+germans1,9,Not answered
+leave1,1,Disagree strongly
+leave1,2,Disagree
+leave1,3,Neither agree nor disagree
+leave1,4,Agree
+leave1,5,Agree strongly
+leave1,8,Can't say
+leave1,9,Not answered
+united1,1,Disagree strongly
+united1,2,Disagree
+united1,3,Neither agree nor disagree
+united1,4,Agree
+united1,5,Agree strongly
+united1,8,Can't say
+united1,9,Not answered
+modern1,1,Disagree strongly
+modern1,2,Disagree
+modern1,3,Neither agree nor disagree
+modern1,4,Agree
+modern1,5,Agree strongly
+modern1,8,Can't say
+modern1,9,Not answered
+control1,1,Disagree strongly
+control1,2,Disagree
+control1,3,Neither agree nor disagree
+control1,4,Agree
+control1,5,Agree strongly
+control1,8,Can't say
+control1,9,Not answered
+unemp1,1,Disagree strongly
+unemp1,2,Disagree
+unemp1,3,Neither agree nor disagree
+unemp1,4,Agree
+unemp1,5,Agree strongly
+unemp1,8,Can't say
+unemp1,9,Not answered
+nufinfo1,-1,Not applicable
+nufinfo1,0,No not enough
+nufinfo1,1,Yes enough information
+nufinfo1,8,Can't choose
+nufinfo1,9,Not answered
+refinfo1,-1,Not applicable
+refinfo1,0,No not enough
+refinfo1,1,Yes enough information
+refinfo1,8,Can't choose
+refinfo1,9,Not answered
+favref1,-1,Not applicable
+favref1,1,Strongly against
+favref1,2,Against
+favref1,3,CC/Neither in favour nor against
+favref1,4,In favour
+favref1,5,Strongly in favour
+favref1,8,Can't choose
+favref1,9,Not answered
+voteref1,-1,Not applicable
+voteref1,1,Definitely would not vote
+voteref1,2,Unlikely to vote
+voteref1,3,Quite likely to vote
+voteref1,4,Very likely to vote
+voteref1,5,Definitely would vote
+voteref1,8,Can't say
+voteref1,9,Not answered
+howvote1,-1,Not applicable
+howvote1,1,To weaken links with EU
+howvote1,2,To keep things just as they are
+howvote1,3,To strengthen links with EU
+howvote1,8,Can't choose
+howvote1,9,Not answered
+taxes1,1,Mostly by EU
+taxes1,2,Made equally
+taxes1,3,Mostly by countries
+taxes1,8,Can't choose
+taxes1,9,not answered
+pollute1,1,Mostly by EU
+pollute1,2,Made equally
+pollute1,3,Mostly by countries
+pollute1,8,Can't choose
+pollute1,9,not answered
+defence1,1,Mostly by EU
+defence1,2,Made equally
+defence1,3,Mostly by countries
+defence1,8,Can't choose
+defence1,9,not answered
+rights1,1,Mostly by EU
+rights1,2,Made equally
+rights1,3,Mostly by countries
+rights1,8,Can't choose
+rights1,9,not answered
+immig1,1,Mostly by EU
+immig1,2,Made equally
+immig1,3,Mostly by countries
+immig1,8,Can't choose
+immig1,9,not answered
+fish1,1,Disagree strongly
+fish1,2,Disagree
+fish1,3,Neither agree nor disagree
+fish1,4,Agree
+fish1,5,Agree strongly
+fish1,8,Can't say
+fish1,9,Not answered
+work1,1,Disagree strongly
+work1,2,Disagree
+work1,3,Neither agree nor disagree
+work1,4,Agree
+work1,5,Agree strongly
+work1,8,Can't say
+work1,9,Not answered
+commies1,1,Disagree strongly
+commies1,2,Disagree
+commies1,3,Neither agree nor disagree
+commies1,4,Agree
+commies1,5,Agree strongly
+commies1,8,Can't say
+commies1,9,Not answered
+rules1,1,Disagree strongly
+rules1,2,Disagree
+rules1,3,Neither agree nor disagree
+rules1,4,Agree
+rules1,5,Agree strongly
+rules1,8,Can't say
+rules1,9,Not answered
+jobs1,1,Disagree strongly
+jobs1,2,Disagree
+jobs1,3,Neither agree nor disagree
+jobs1,4,Agree
+jobs1,5,Agree strongly
+jobs1,8,Can't say
+jobs1,9,Not answered
+unite1,1,Definitely not
+unite1,2,Probably not
+unite1,3,Not sure
+unite1,4,Probably
+unite1,5,Definitely
+unite1,8,Can't choose
+unite1,9,not answered
+nomore1,1,Definitely not
+nomore1,2,Probably not
+nomore1,3,Not sure
+nomore1,4,Probably
+nomore1,5,Definitely
+nomore1,8,Can't choose
+nomore1,9,not answered
+tootax1,1,Disagree strongly
+tootax1,2,Disagree
+tootax1,3,Neither agree nor disagree
+tootax1,4,Agree
+tootax1,5,Agree strongly
+tootax1,8,Can't say
+tootax1,9,Not answered
+onlybus1,1,Disagree strongly
+onlybus1,2,Disagree
+onlybus1,3,Neither agree nor disagree
+onlybus1,4,Agree
+onlybus1,5,Agree strongly
+onlybus1,8,Can't say
+onlybus1,9,Not answered
+mortgag1,1,Disagree strongly
+mortgag1,2,Disagree
+mortgag1,3,Neither agree nor disagree
+mortgag1,4,Agree
+mortgag1,5,Agree strongly
+mortgag1,8,Can't say
+mortgag1,9,Not answered
+farmers1,1,Disagree strongly
+farmers1,2,Disagree
+farmers1,3,Neither agree nor disagree
+farmers1,4,Agree
+farmers1,5,Agree strongly
+farmers1,8,Can't say
+farmers1,9,Not answered
+pasport1,1,Disagree strongly
+pasport1,2,Disagree
+pasport1,3,Neither agree nor disagree
+pasport1,4,Agree
+pasport1,5,Agree strongly
+pasport1,8,Can't say
+pasport1,9,Not answered
+benefit1,-1,Not applicable
+benefit1,1,Britain is benefitting most
+benefit1,2,Both are benefitting equally
+benefit1,3,Other European countries are benefitting most
+benefit1,7,Don't know
+benefit1,9,Not answered
+conserv1,-1,Not applicable
+conserv1,1,Very united
+conserv1,2,Somewhat united
+conserv1,3,CC/Neither united nor divided
+conserv1,4,Somewhat divided
+conserv1,5,Very divided
+conserv1,8,Can't choose
+conserv1,9,Not answered
+labour1,-1,Not applicable
+labour1,1,Very united
+labour1,2,Somewhat united
+labour1,3,CC/Neither united nor divided
+labour1,4,Somewhat divided
+labour1,5,Very divided
+labour1,8,Can't choose
+labour1,9,Not answered
+libdem1,-1,Not applicable
+libdem1,1,Very united
+libdem1,2,Somewhat united
+libdem1,3,CC/Neither united nor divided
+libdem1,4,Somewhat divided
+libdem1,5,Very divided
+libdem1,8,Can't choose
+libdem1,9,Not answered
+eusize1,-1,Not applicable
+eusize1,1,True
+eusize1,2,False
+eusize1,8,Don't know
+eusize1,9,Not answered
+pk11,0,Incorrect/DK/NA
+pk11,1,Correct
+swiss1,-1,Not applicable
+swiss1,1,True
+swiss1,2,False
+swiss1,8,Don't know
+swiss1,9,Not answered
+pk21,0,Incorrect/DK/NA
+pk21,1,Correct
+inctax1,-1,Not applicable
+inctax1,1,True
+inctax1,2,False
+inctax1,8,Don't know
+inctax1,9,Not answered
+pk31,0,Incorrect/DK/NA
+pk31,1,Correct
+elect1,-1,Not applicable
+elect1,1,True
+elect1,2,False
+elect1,8,Don't know
+elect1,9,Not answered
+pk41,0,Incorrect/DK/NA
+pk41,1,Correct
+ptyapp1,-1,Not applicable
+ptyapp1,1,True
+ptyapp1,2,False
+ptyapp1,8,Don't know
+ptyapp1,9,Not answered
+pk51,0,Incorrect/DK/NA
+pk51,1,Correct
+releu2,-1,Not applicable
+releu2,1,Much less close
+releu2,2,A little less close
+releu2,3,About right
+releu2,4,A little closer
+releu2,5,Much closer
+releu2,6,Can't choose
+releu2,9,Not answered
+influ2,-1,Not applicable
+influ2,1,Much less influence
+influ2,2,A little less influence
+influ2,3,It would make no difference
+influ2,4,A little more influence
+influ2,5,Much more influence
+influ2,6,Can't choose
+influ2,9,Not answered
+strecon2,-1,Not applicable
+strecon2,1,Much weaker economically
+strecon2,2,A little weaker economically
+strecon2,3,It would make no difference
+strecon2,4,A little stronger economically
+strecon2,5,Much stronger economically
+strecon2,6,Can't choose
+strecon2,9,Not answered
+longpol2,-1,Not applicable
+longpol2,1,Britain should leave the European Union
+longpol2,2,Britain should stay in the EU and try to reduce the EUs powe
+longpol2,3,Things should be left as they are
+longpol2,4,Britain should stay in the EU and try to increase the EUs po
+longpol2,5,Britain should stay in the EU and work towards the formation
+longpol2,6,Can't choose
+longpol2,9,Not answered
+futpnd2,-1,Not applicable
+futpnd2,1,The pound should be replaced by a single European currency
+futpnd2,2,Both the pound and a new European currency should be used in
+futpnd2,3,The pound should be kept as the only currency for Britain
+futpnd2,4,Can't choose
+futpnd2,9,Not answered
+owncurr2,-1,Not applicable
+owncurr2,1,Disagree strongly
+owncurr2,2,Disagree
+owncurr2,3,Neither agree nor disagree
+owncurr2,4,Agree
+owncurr2,5,Agree strongly
+owncurr2,8,Can't say
+owncurr2,9,Not answered
+trabloc2,-1,Not applicable
+trabloc2,1,Disagree strongly
+trabloc2,2,Disagree
+trabloc2,3,Neither agree nor disagree
+trabloc2,4,Agree
+trabloc2,5,Agree strongly
+trabloc2,8,Can't say
+trabloc2,9,Not answered
+getnuff2,-1,Not applicable
+getnuff2,1,Disagree strongly
+getnuff2,2,Disagree
+getnuff2,3,Neither agree nor disagree
+getnuff2,4,Agree
+getnuff2,5,Agree strongly
+getnuff2,8,Can't say
+getnuff2,9,Not answered
+bettoff2,-1,Not applicable
+bettoff2,1,Disagree strongly
+bettoff2,2,Disagree
+bettoff2,3,Neither agree nor disagree
+bettoff2,4,Agree
+bettoff2,5,Agree strongly
+bettoff2,8,Can't say
+bettoff2,9,Not answered
+tradit2,-1,Not applicable
+tradit2,1,Disagree strongly
+tradit2,2,Disagree
+tradit2,3,Neither agree nor disagree
+tradit2,4,Agree
+tradit2,5,Agree strongly
+tradit2,8,Can't say
+tradit2,9,Not answered
+costliv2,-1,Not applicable
+costliv2,1,Disagree strongly
+costliv2,2,Disagree
+costliv2,3,Neither agree nor disagree
+costliv2,4,Agree
+costliv2,5,Agree strongly
+costliv2,8,Can't say
+costliv2,9,Not answered
+peace2,-1,Not applicable
+peace2,1,Disagree strongly
+peace2,2,Disagree
+peace2,3,Neither agree nor disagree
+peace2,4,Agree
+peace2,5,Agree strongly
+peace2,8,Can't say
+peace2,9,Not answered
+germans2,-1,Not applicable
+germans2,1,Disagree strongly
+germans2,2,Disagree
+germans2,3,Neither agree nor disagree
+germans2,4,Agree
+germans2,5,Agree strongly
+germans2,8,Can't say
+germans2,9,Not answered
+leave2,-1,Not applicable
+leave2,1,Disagree strongly
+leave2,2,Disagree
+leave2,3,Neither agree nor disagree
+leave2,4,Agree
+leave2,5,Agree strongly
+leave2,8,Can't say
+leave2,9,Not answered
+united2,-1,Not applicable
+united2,1,Disagree strongly
+united2,2,Disagree
+united2,3,Neither agree nor disagree
+united2,4,Agree
+united2,5,Agree strongly
+united2,8,Can't say
+united2,9,Not answered
+modern2,-1,Not applicable
+modern2,1,Disagree strongly
+modern2,2,Disagree
+modern2,3,Neither agree nor disagree
+modern2,4,Agree
+modern2,5,Agree strongly
+modern2,8,Can't say
+modern2,9,Not answered
+control2,-1,Not applicable
+control2,1,Disagree strongly
+control2,2,Disagree
+control2,3,Neither agree nor disagree
+control2,4,Agree
+control2,5,Agree strongly
+control2,8,Can't say
+control2,9,Not answered
+unemp2,-1,Not applicable
+unemp2,1,Disagree strongly
+unemp2,2,Disagree
+unemp2,3,Neither agree nor disagree
+unemp2,4,Agree
+unemp2,5,Agree strongly
+unemp2,8,Can't say
+unemp2,9,Not answered
+nufinfo2,-1,Not applicable
+nufinfo2,0,No not enough
+nufinfo2,1,Yes enough information
+nufinfo2,3,Can't choose
+nufinfo2,9,Not answered
+refinfo2,-1,Not applicable
+refinfo2,0,No not enough
+refinfo2,1,Yes enough information
+refinfo2,3,Can't choose
+refinfo2,9,Not answered
+favref2,-1,Not applicable
+favref2,1,Strongly against
+favref2,2,Against
+favref2,3,CC/Neither in favour nor against
+favref2,4,In favour
+favref2,5,Strongly in favour
+favref2,6,Can't choose
+favref2,9,Not answered
+voteref2,-1,Not applicable
+voteref2,1,Definitely would not vote
+voteref2,2,Unlikely to vote
+voteref2,3,Cuite likely to vote
+voteref2,4,Very likely to vote
+voteref2,5,Definitely would vote
+voteref2,6,Can't say
+voteref2,9,Not answered
+howvote2,-1,Not applicable
+howvote2,1,To weaken links with EU
+howvote2,2,To keep things just as they are
+howvote2,3,To strengthen links with EU
+howvote2,8,Can't choose
+howvote2,9,Not answered
+taxes2,-1,Not applicable
+taxes2,1,Mostly made by EU
+taxes2,2,Made by both equally
+taxes2,3,Mostly made by individual govts.
+taxes2,4,Can't choose
+taxes2,9,Not answered
+pollute2,-1,Not applicable
+pollute2,1,Mostly made by EU
+pollute2,2,Made by both equally
+pollute2,3,Mostly made by individual govts.
+pollute2,4,Can't choose
+pollute2,9,Not answered
+defence2,-1,Not applicable
+defence2,1,Mostly made by EU
+defence2,2,Made by both equally
+defence2,3,Mostly made by individual govts.
+defence2,4,Can't choose
+defence2,9,Not answered
+rights2,-1,Not applicable
+rights2,1,Mostly made by EU
+rights2,2,Made by both equally
+rights2,3,Mostly made by individual govts.
+rights2,4,Can't choose
+rights2,9,Not answered
+immig2,-1,Not applicable
+immig2,1,Mostly made by EU
+immig2,2,Made by both equally
+immig2,3,Mostly made by individual govts.
+immig2,4,Can't choose
+immig2,9,Not answered
+fish2,-1,Not applicable
+fish2,1,Disagree strongly
+fish2,2,Disagree
+fish2,3,Neither agree nor disagree
+fish2,4,Agree
+fish2,5,Agree strongly
+fish2,8,Can't say
+fish2,9,Not answered
+work2,-1,Not applicable
+work2,1,Disagree strongly
+work2,2,Disagree
+work2,3,Neither agree nor disagree
+work2,4,Agree
+work2,5,Agree strongly
+work2,8,Can't say
+work2,9,Not answered
+commies2,-1,Not applicable
+commies2,1,Disagree strongly
+commies2,2,Disagree
+commies2,3,Neither agree nor disagree
+commies2,4,Agree
+commies2,5,Agree strongly
+commies2,8,Can't say
+commies2,9,Not answered
+rules2,-1,Not applicable
+rules2,1,Disagree strongly
+rules2,2,Disagree
+rules2,3,Neither agree nor disagree
+rules2,4,Agree
+rules2,5,Agree strongly
+rules2,8,Can't say
+rules2,9,Not answered
+jobs2,-1,Not applicable
+jobs2,1,Disagree strongly
+jobs2,2,Disagree
+jobs2,3,Neither agree nor disagree
+jobs2,4,Agree
+jobs2,5,Agree strongly
+jobs2,8,Can't say
+jobs2,9,Not answered
+unite2,-1,Not applicable
+unite2,1,Definitely not
+unite2,2,Probably not
+unite2,3,Not sure
+unite2,4,Probably
+unite2,5,Definitely
+unite2,8,Can't choose
+unite2,9,not answered
+nomore2,-1,Not applicable
+nomore2,1,Definitely not
+nomore2,2,Probably not
+nomore2,3,Not sure
+nomore2,4,Probably
+nomore2,5,Definitely
+nomore2,8,Can't choose
+nomore2,9,not answered
+tootax2,-1,Not applicable
+tootax2,1,Disagree strongly
+tootax2,2,Disagree
+tootax2,3,Neither agree nor disagree
+tootax2,4,Agree
+tootax2,5,Agree strongly
+tootax2,8,Can't say
+tootax2,9,Not answered
+onlybus2,-1,Not applicable
+onlybus2,1,Disagree strongly
+onlybus2,2,Disagree
+onlybus2,3,Neither agree nor disagree
+onlybus2,4,Agree
+onlybus2,5,Agree strongly
+onlybus2,8,Can't say
+onlybus2,9,Not answered
+mortgag2,-1,Not applicable
+mortgag2,1,Disagree strongly
+mortgag2,2,Disagree
+mortgag2,3,Neither agree nor disagree
+mortgag2,4,Agree
+mortgag2,5,Agree strongly
+mortgag2,8,Can't say
+mortgag2,9,Not answered
+farmers2,-1,Not applicable
+farmers2,1,Disagree strongly
+farmers2,2,Disagree
+farmers2,3,Neither agree nor disagree
+farmers2,4,Agree
+farmers2,5,Agree strongly
+farmers2,8,Can't say
+farmers2,9,Not answered
+pasport2,-1,Not applicable
+pasport2,1,Disagree strongly
+pasport2,2,Disagree
+pasport2,3,Neither agree nor disagree
+pasport2,4,Agree
+pasport2,5,Agree strongly
+pasport2,8,Can't say
+pasport2,9,Not answered
+benefit2,-1,Not applicable
+benefit2,1,Britain is benefitting most
+benefit2,2,Both are benefitting equally
+benefit2,3,Other European countries are benefitting most
+benefit2,9,Not answered
+conserv2,-1,Not applicable
+conserv2,1,Very united
+conserv2,2,Somewhat united
+conserv2,3,CC/Neither united nor divided
+conserv2,4,Somewhat divided
+conserv2,5,Very divided
+conserv2,6,Can't choose
+conserv2,9,Not answered
+labour2,-1,Not applicable
+labour2,1,Very united
+labour2,2,Somewhat united
+labour2,3,CC/Neither united nor divided
+labour2,4,Somewhat divided
+labour2,5,Very divided
+labour2,6,Can't choose
+labour2,9,Not answered
+libdem2,-1,Not applicable
+libdem2,1,Very united
+libdem2,2,Somewhat united
+libdem2,3,CC/Neither united nor divided
+libdem2,4,Somewhat divided
+libdem2,5,Very divided
+libdem2,6,Can't choose
+libdem2,9,Not answered
+eusize2,-1,Not applicable
+eusize2,1,True
+eusize2,2,False
+eusize2,3,Don't know
+eusize2,9,not answered
+pk12,0,Incorrect/DK/NA
+pk12,1,Correct
+swiss2,-1,Not applicable
+swiss2,1,True
+swiss2,2,False
+swiss2,3,Don't know
+swiss2,9,not answered
+pk22,0,Incorrect/DK/NA
+pk22,1,Correct
+inctax2,-1,Not applicable
+inctax2,1,True
+inctax2,2,False
+inctax2,3,Don't know
+inctax2,9,not answered
+pk32,0,Incorrect/DK/NA
+pk32,1,Correct
+elect2,-1,Not applicable
+elect2,1,True
+elect2,2,False
+elect2,3,Don't know
+elect2,9,not answered
+pk42,0,Incorrect/DK/NA
+pk42,1,Correct
+ptyapp2,-1,Not applicable
+ptyapp2,1,True
+ptyapp2,2,False
+ptyapp2,3,Don't know
+ptyapp2,9,not answered
+pk52,0,Incorrect/DK/NA
+pk52,1,Correct
+dpint2,-1,Not applicable
+dpint2,1,Not at all interesti
+dpint2,2,Not very interesting
+dpint2,3,Cuite interesting
+dpint2,4,Very interesting
+dpint2,5,Can't say
+dpint2,9,Not answered
+learn2,-1,Not applicable
+learn2,1,Hardly anything at all
+learn2,2,Not very much
+learn2,3,Quite a bit
+learn2,4,... a great deal
+learn2,5,Can't say
+learn2,9,Not answered
+segfull,-1,Not applicable
+segfull,1,"Professional, employers,managers"
+segfull,2,Intermediate/junior non-man
+segfull,3,Skilled manual & own account non-proffs
+segfull,4,Semi-skilled manual & personal service
+segfull,5,Unskilled manual
+segfull,6,Army/insuff info
+segfull,7,Never worked
+segfull,99,Not answered
+class,-1,Not applicable
+class,1,Middle class
+class,2,Working class
+class,3,Never worked/Insuff.info/NA
+class,99,Not answered
+reg,-1,Not applicable
+reg,1,London/S.East
+reg,2,North
+reg,3,Midlands/E.Anglia
+reg,4,Scotland
+reg,5,Wales/S.West
+reg,99,Not answered
+area,-1,Not applicable
+area,1,Rural
+area,2,Urban
+area,3,City
+area,99,Not answered

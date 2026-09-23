@@ -1,0 +1,176 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+caseid,double,numeric,,Case identification number,F8.0,,,TRUE,Retained
+group,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Small group number,F8.0,-1,,TRUE,Retained
+part,double,haven_labelled|vctrs_vctr|double,,Participant in DOP? (1=Yes),F8.0,,,TRUE,Retained
+region,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Standard Region,F8.0,-1|99,,TRUE,Retained
+sex,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Sex of respondent (A1 IAQ),F8.0,-1,,TRUE,Retained
+age,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Age of respondent (A2 IAQ),F8.0,-1,97|99,TRUE,Retained
+child17,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Number of children 0-17 (A3a IAQ),F8.0,-1|99,,TRUE,Retained
+child5,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,How many are aged under 5? (A3b IAQ),F8.0,-1|9,,TRUE,Retained
+child511,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,How many are aged between 5 and 11? (A3b IAQ),F8.0,-1|9,,TRUE,Retained
+child12,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,How many are aged between 12 and 15? (A3b IAQ),F8.0,-1|9,,TRUE,Retained
+child16,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,How many are aged between 16 and 17? (A3b IAQ),F8.0,-1|9,,TRUE,Retained
+marital,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Marital status (A4 IAQ),F8.0,-1|9,,TRUE,Retained
+readnews,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Do you normally read any daily morning newspaper a least three times a week? (A5a IAQ),F8.0,-1|9,,TRUE,Retained
+whichpap,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Which paper do you normally read (A5b IAQ),F8.0,-1|99,,TRUE,Retained
+genint,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,How interested would you say you are in politics generally ... (A6 IAQ),F8.0,-1|9|8,,TRUE,Retained
+futint,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,And how interested would you say you are in the future of Britain in Europe ... (A7 IAQ),F8.0,-1|9|8,,TRUE,Retained
+majknowl,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,How knowledgeable British public are about stronger links with Europe (A8a IAQ),F8.0,-1|9|8,,TRUE,Retained
+ownknowl,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,How knowledgeable personally about stronger links with Europe (A8b IAQ),F8.0,-1|9|8,,TRUE,Retained
+ptyalleg,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Party allegiance (B1a IAQ),F8.0,-1,97|99,TRUE,Retained
+closer,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,closer to one of the parties? (B1b IAQ),F8.0,-1,97|99,TRUE,Retained
+strength,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Strength of allegiance (B1c IAQ),F8.0,-1|9|8,,TRUE,Retained
+votejune,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,"Can I check, did you vote in the European elections last year in June? (B2 IAQ)",F8.0,-1|9|8,,TRUE,Retained
+whatdo,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Activity status (B3 IAQ),F8.0,-1|99,,TRUE,Retained
+numadult,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Number of adults 18+ in HH (B4 IAQ),F8.0,-1|9,,TRUE,Retained
+chfincom,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Chief income earner (B5 IAQ),F8.0,-1|9,,TRUE,Retained
+actcie,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Activity status if C.I.E. (B6 IAQ),F8.0,-1|99,,TRUE,Retained
+employ,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Employment status of C.I.E. in current/last job (B8 IAQ),F8.0,-1|9,,TRUE,Retained
+super,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Supervision status of C.I.E. in current/last job (B9 IAQ),F8.0,-1|9,,TRUE,Retained
+numempl,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Establishment size - current/last job of C.I.E. (B10a IAQ),F8.0,-1|9,,TRUE,Retained
+numemp,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Number of employees - current/last job of C.I.E. (B11a IAQ),F8.0,-1|9,,TRUE,Retained
+seg,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Socioeconomic Group of chief income earner,F8.0,-1|20,,TRUE,Retained
+ageeduc,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Age at which respondent finished school (B12 IAQ),F8.0,-1|9,,TRUE,Retained
+educ,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Highest qualification (B13 IAQ),F8.0,-1|99,,TRUE,Retained
+ethnic,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Ethnic group (B14 IAQ),F8.0,-1|99|97,,TRUE,Retained
+goabroad,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Travel abroad (B15 IAQ),F8.0,-1|9,,TRUE,Retained
+lstabrod,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,When did you last go abroad? (B15b IAQ),F8.0,-1|9|8,,TRUE,Retained
+language,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Languages fluently (B16a IAQ),F8.0,-1|9,,TRUE,Retained
+slight,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Languages slightly (B16b IAQ),F8.0,-1|9,,TRUE,Retained
+religion,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Do you regard yourself as belonging to any particular religion? (B17 IAQ),F8.0,-1|99,,TRUE,Retained
+move1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Willingness to move in Britain (B18a IAQ),F8.0,8,,TRUE,Retained
+moveeur1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Willingness to move to Europe (B18b IAQ),F8.0,8,,TRUE,Retained
+moveus1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Willingness to move to USA/Canada (B18c IAQ),F8.0,8,,TRUE,Retained
+moveoth1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Willingness to move to another part of the world (B18d IAQ),F8.0,8,,TRUE,Retained
+britcit1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Rather be British citizen (B19a IAQ),F8.0,9|8,,TRUE,Retained
+ashame1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Ashamed of Britain (B19b IAQ),F8.0,9|8,,TRUE,Retained
+better1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,World better if more like Britain (B19c IAQ),F8.0,9|8,,TRUE,Retained
+usbet1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britain better (B19d IAQ),F8.0,9|8,,TRUE,Retained
+support1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Support country even if wrong (B19e IAQ),F8.0,9|8,,TRUE,Retained
+lessgap1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Pro smaller income gap (B20a IAQ),F8.0,9|8,,TRUE,Retained
+ownint1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Own country should come first (B20b IAQ),F8.0,9|8,,TRUE,Retained
+sacfut1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,People should make more sacrifices for the future (B20c IAQ),F8.0,8|9,,TRUE,Retained
+stdliv1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Standard of living paramount (B20d IAQ),F8.0,9|8,,TRUE,Retained
+fend1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,People should fend for themselves (B20e IAQ),F8.0,9|8,,TRUE,Retained
+phone,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Telephone in accommodation (B21a IAQ),F8.0,-1|9,,TRUE,Retained
+givenum,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Telephone number for checking (B21b IAQ),F8.0,-1|9,,TRUE,Retained
+inttime,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Duration of Interview (B22b IAQ),F8.0,-1|999,,TRUE,Retained
+intdate,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,DATE OF INTERVIEW (B22c IAQ),F6.0,-1|999999|1304,,TRUE,Retained
+revdate,double,numeric,,"interview date revised: year, month, day",F8.0,,,TRUE,Retained
+intname,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,INTERVIEWER NAME (B22d IAQ),F8.0,-1|9999,,TRUE,Retained
+releu1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britains relationship with the European Union T1 (Q1 SAQ1),F8.0,-1|9|8,,TRUE,Retained
+influ1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britains influence in the world T1 (Q2 SAQ1),F8.0,-1|9|8,,TRUE,Retained
+strecon1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Stronger or weaker economically T1 (Q3 SAQ1),F8.0,-1|9|8,,TRUE,Retained
+longpol1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britains long term policy T1 (Q4 SAQ1),F8.0,-1|9|8,,TRUE,Retained
+futpnd1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Future of the pound T1 (Q5 SAQ1),F8.0,-1|9|8,,TRUE,Retained
+owncurr1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britain will lose control of economic policy T1 (Q6a SAQ1),F8.0,9|8,,TRUE,Retained
+trabloc1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,EU should be more than a trading bloc T1 (Q6b SAQ1),F8.0,9|8,,TRUE,Retained
+getnuff1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britain does not get enough out of the EU T1 (Q6c SAQ1),F8.0,9|8,,TRUE,Retained
+bettoff1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britain is a lot better off in the EU T1 (Q6d SAQ1),F8.0,9|8,,TRUE,Retained
+tradit1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,British traditions would have to be given up T1 (Q6e SAQ1),F8.0,9|8,,TRUE,Retained
+costliv1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Cost of living in Britain would rise T1 (Q6f SAQ1),F8.0,9|8,,TRUE,Retained
+peace1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Peace is more secure as member of EU T1 (Q6g SAQ1),F8.0,9|8,,TRUE,Retained
+germans1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Only the Germans will gain from single currency T1 (Q6h SAQ1),F8.0,9|8,,TRUE,Retained
+leave1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Outside EU Britain would lose best chance of real progress T1 (Q7a SAQ1),F8.0,9,,TRUE,Retained
+united1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Nations will lose their culture and individuality T1 (Q7b SAQ1),F8.0,9|8,,TRUE,Retained
+modern1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Competition in EU makes Britain more efficient T1 (Q7c SAQ1),F8.0,9|8,,TRUE,Retained
+control1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britain will lose control over decisions T1 (Q7d SAQ1),F8.0,9|8,,TRUE,Retained
+unemp1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Serious unemployment if we left EU T1 (Q7e SAQ1),F8.0,9|8,,TRUE,Retained
+nufinfo1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,British public has enough information T1 (Q8 SAQ1),F8.0,-1|9|8,,TRUE,Retained
+refinfo1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Personally have enough information T1 (Q9 SAQ1),F8.0,-1|9|8,,TRUE,Retained
+favref1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Favor a referendum T1 (Q10 SAQ1),F8.0,-1|9|8,,TRUE,Retained
+voteref1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Likelihood of voting in a referendum T1 (Q11 SAQ1),F8.0,-1|9|8,,TRUE,Retained
+howvote1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,How would vote in referendum T1 (Q12 SAQ1),F8.0,-1|9|8,,TRUE,Retained
+taxes1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Countries make decisions about taxes T1 (Q13a SAQ1),F8.0,9|8,,TRUE,Retained
+pollute1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Countries make decisions about controlling pollution T1 (Q13b SAQ1),F8.0,9|8,,TRUE,Retained
+defence1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Countries make decisions about defence T1 (Q13c SAQ1),F8.0,9|8,,TRUE,Retained
+rights1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Countries make decisions about the rights of people at work T1 (Q13d SAQ1),F8.0,9|8,,TRUE,Retained
+immig1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Countries make decisions about immigration T1 (Q13e SAQ1),F8.0,9|8,,TRUE,Retained
+fish1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,British seas should only be open to British fishing boats T1 (Q14a SAQ1),F8.0,9|8,,TRUE,Retained
+work1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britain should sign up for the Social Chapter T1 (Q14b SAQ1),F8.0,8|9,,TRUE,Retained
+commies1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,EU should include some Eastern European countries T1 (Q14c SAQ1),F8.0,9|8,,TRUE,Retained
+rules1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,EU has too many petty rules and regulations T1 (Q14d SAQ1),F8.0,9|8,,TRUE,Retained
+jobs1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Social Chapter would cost jobs T1 (Q14e SAQ1),F8.0,9|8,,TRUE,Retained
+unite1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britain should unite fully with EU T1 (Q15 SAQ1),F8.0,9|8,,TRUE,Retained
+nomore1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,EU should be no more than a trading bloc T1 (Q16 SAQ1),F8.0,9|8,,TRUE,Retained
+tootax1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Taxpayers in Europe are paying too much for EU T1 (Q17a SAQ1),F8.0,9|8,,TRUE,Retained
+onlybus1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Only businessmen benefit from EU T1 (Q17b SAQ1),F8.0,9|8,,TRUE,Retained
+mortgag1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Mortgage rates would rise with single currency T1 (Q17c SAQ1),F8.0,9|8,,TRUE,Retained
+farmers1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,EU rules fairer to British farmers than others in EU T1 (Q17d SAQ1),F8.0,9|8,,TRUE,Retained
+pasport1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Passport controls in EU should be removed T1 (Q17e SAQ1),F8.0,9|8,,TRUE,Retained
+benefit1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Other countries benefit most at present from EU T1 (Q18 SAQ1),F8.0,-1|9|7,,TRUE,Retained
+conserv1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Divisiveness of Conservative party and Europe T1 (Q19a SAQ1),F8.0,-1|9|8,,TRUE,Retained
+labour1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Divisiveness of Labour party and Europe T1 (Q19b SAQ1),F8.0,-1|9|8,,TRUE,Retained
+libdem1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Divisiveness of Liberal Democrats and Europe T1 (Q19c SAQ1),F8.0,-1|9|8,,TRUE,Retained
+eusize1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,EU has recently expanded to 15 T1 (Q20a SAQ1),F8.0,-1,,TRUE,Retained
+pk11,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Respondent correct on EUSIZE1,F8.0,9,,TRUE,Retained
+swiss1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Switzerland is to join EU T1 (Q20b SAQ1),F8.0,-1,,TRUE,Retained
+pk21,double,haven_labelled|vctrs_vctr|double,,Respondent correct on SWISS1,F8.0,,,TRUE,Retained
+inctax1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britains income tax rates decided in Brussels T1 (Q20c SAQ1),F8.0,-1,,TRUE,Retained
+pk31,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Respondent correct on INCTAX1,F8.0,9,,TRUE,Retained
+elect1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Elections to European Parliament every 5 years T1 (Q20d SAQ1),DOT8,-1,,TRUE,Retained
+pk41,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Respondent correct on ELECT1,F8.0,9,,TRUE,Retained
+ptyapp1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Liberal Democrats least in favour of EU T1 (Q20e SAQ1),F8.0,-1,,TRUE,Retained
+pk51,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Respondent correct on PTYAPP1,F8.0,9,,TRUE,Retained
+pktot1,double,numeric,,Total political knowledge T1,F8.2,,,TRUE,Retained
+releu2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britains relationship with the European Union T2 (Q1 SAQ2),F8.0,-1|6|9,,TRUE,Retained
+influ2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britains influence in the world  T2 (Q2 SAQ2),F8.0,-1|9|6,,TRUE,Retained
+strecon2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Stronger or weaker economically T2 (Q3 SAQ2),F8.0,-1|9|6,,TRUE,Retained
+longpol2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britains long term policy T2 (Q4 SAQ2),F8.0,-1|9|6,,TRUE,Retained
+futpnd2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Future of the pound T2 (Q5 SAQ2),F8.0,-1|9|4,,TRUE,Retained
+owncurr2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britain will lose control of economic policy T2 (Q6a SAQ2),F8.0,9|-1|8,,TRUE,Retained
+trabloc2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,EU should be more than a trading bloc T2 (Q6b SAQ2),F8.0,9|-1|8,,TRUE,Retained
+getnuff2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britain does not get enough out of the EU T2 (Q6c SAQ2),F8.0,9|-1|8,,TRUE,Retained
+bettoff2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britain is a lot better off in the EU T2 (Q6d SAQ2),F8.0,9|-1|8,,TRUE,Retained
+tradit2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,British traditions would have to be given up T2 (Q7a SAQ2),F8.0,9|-1|8,,TRUE,Retained
+costliv2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Cost of living in Britain would rise T2 (Q7b SAQ2),F8.0,9|-1|8,,TRUE,Retained
+peace2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Peace is more secure as member of EU T2 (Q7c SAQ2),F8.0,9|-1|8,,TRUE,Retained
+germans2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Only the Germans will gain from single currency T2 (Q7d SAQ2),F8.0,9|-1|8,,TRUE,Retained
+leave2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Outside EU Britain would lose best chance of real progress T2 (Q7e SAQ2),F8.0,9|-1|8,,TRUE,Retained
+united2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Nations will lose their culture and individuality T2 (Q7f SAQ2),F8.0,9|-1|8,,TRUE,Retained
+modern2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Competition in EU makes Britain more efficient T2 (Q7g SAQ2),F8.0,9|-1|8,,TRUE,Retained
+control2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britain will lose control over decisions T2 (Q7h SAQ2),F8.0,9|-1|8,,TRUE,Retained
+unemp2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Serious unemployment if we left EU T2 (Q7i SAQ2),F8.0,9|-1|8,,TRUE,Retained
+nufinfo2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,British public has enough information T2 (Q8 SAQ2),F8.0,-1|9|3,,TRUE,Retained
+refinfo2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Personally have enough information T2 (Q9 SAQ2),F8.0,-1|9|3,,TRUE,Retained
+favref2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Favor a referendum T2 (Q10 SAQ2),F8.0,-1|9|6,,TRUE,Retained
+voteref2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Likelihood of voting in a referendum T2 (Q11 SAQ2),F8.0,-1|9|6,,TRUE,Retained
+howvote2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,How would vote in referendum T2 (Q12 SAQ2),F8.0,-1|9|8,,TRUE,Retained
+taxes2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Countries make decisions about taxes T2 (Q13a SAQ2),F8.0,-1|9|4,,TRUE,Retained
+pollute2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Countries make decisions about controlling pollution T2 (Q13b SAQ2),F8.0,-1|9|4,,TRUE,Retained
+defence2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Countries make decisions about defence T2 (Q13c SAQ2),F8.0,-1|9|4,,TRUE,Retained
+rights2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Countries make decisions about the rights of people at work T2 (Q13d SAQ2),F8.0,-1|9|4,,TRUE,Retained
+immig2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Countries make decisions about immigration T2 (Q13e SAQ2),F8.0,-1|9|4,,TRUE,Retained
+fish2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,British seas should only be open to British fishing boats T2 (Q14a SAQ2),F8.0,9|-1|8,,TRUE,Retained
+work2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britain should sign up for the Social Chapter T2 (Q14b SAQ2),F8.0,9|-1|8,,TRUE,Retained
+commies2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,EU should include some Eastern European countries T2 (Q14c SAQ2),F8.0,9|-1|8,,TRUE,Retained
+rules2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,EU has too many petty rules and regulations T2 (Q14d SAQ2),F8.0,9|-1|8,,TRUE,Retained
+jobs2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Social Chapter would cost jobs T2 (Q14e SAQ2),F8.0,9|-1|8,,TRUE,Retained
+unite2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britain should unite fully with EU T2 (Q15 SAQ2),F8.0,9|-1|8,,TRUE,Retained
+nomore2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,EU should be no more than a trading bloc T2 (Q16 SAQ2),F8.0,9|-1|8,,TRUE,Retained
+tootax2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Taxpayers in Europe are paying too much for EU T2 (Q17a SAQ2),F8.0,9|-1|8,,TRUE,Retained
+onlybus2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Only businessmen benefit from EU T2 (Q17b SAQ2),F8.0,9|-1|8,,TRUE,Retained
+mortgag2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Mortgage rates would rise with single currency T2 (Q17c SAQ2),F8.0,9|-1|8,,TRUE,Retained
+farmers2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,EU rules fairer to British farmers than others in EU T2 (Q17d SAQ2),F8.0,9|-1|8,,TRUE,Retained
+pasport2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Passport controls in EU should be removed T2 (Q17e SAQ2),F8.0,9|-1|8,,TRUE,Retained
+benefit2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Other countries benefit most at present from EU T2 (Q18 SAQ2),F8.0,-1|9,,TRUE,Retained
+conserv2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Divisiveness of Conservative party and Europe T2 (Q19a SAQ2),F8.0,-1|9|6,,TRUE,Retained
+labour2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Divisiveness of Labour party and Europe T2 (Q19b SAQ2),F8.0,-1|9|6,,TRUE,Retained
+libdem2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Divisiveness of Liberal Democrats and Europe T2 (Q19c SAQ2),F8.0,-1|9|6,,TRUE,Retained
+eusize2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,EU has recently expanded to 15 T2 (Q20a SAQ2),F8.0,9|-1,,TRUE,Retained
+pk12,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Respondent correct on EUSIZE2,F8.0,9,,TRUE,Retained
+swiss2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Switzerland is to join EU T2 (Q20b SAQ2),F8.0,9|-1,,TRUE,Retained
+pk22,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Respondent correct on SWISS2,F8.0,9,,TRUE,Retained
+inctax2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Britains income tax rates decided in Brussels T2 (Q20c SAQ2),F8.0,9|-1,,TRUE,Retained
+pk32,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Respondent correct on INCTAX2,F8.0,9,,TRUE,Retained
+elect2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Elections to European Parliament every 5 years T2 (Q20d SAQ2),F8.0,9|-1,,TRUE,Retained
+pk42,double,haven_labelled|vctrs_vctr|double,,Respondent correct on ELECT2,F8.0,,,TRUE,Retained
+ptyapp2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Liberal Democrats least in favour of EU T2 (Q20e SAQ2),F8.0,9|-1,,TRUE,Retained
+pk52,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Respondent correct on PTYAPP2,F8.0,9,,TRUE,Retained
+pktot2,double,numeric,,Total political knowledge T2,F8.2,,,TRUE,Retained
+dpint2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,How interesting did you find the weekend  T2 (Q21 SAQ2),F8.0,-1|9|5,,TRUE,Retained
+learn2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,How much have you learned T2 (Q22 SAQ2),F8.0,-1|9|5,,TRUE,Retained
+segfull,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Full SEG breakdown,F8.0,-1|99,,TRUE,Retained
+class,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Summary class (based on SEG),F8.0,-1|99,,TRUE,Retained
+reg,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Summary region,F8.0,-1|99,,TRUE,Retained
+area,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Type of area,F8.0,-1|99,,TRUE,Retained
