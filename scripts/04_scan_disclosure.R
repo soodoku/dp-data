@@ -18,6 +18,11 @@ identifier_pattern <- paste(
   sep = "|"
 )
 
+stable_error <- function(error) {
+  conditionMessage(error) |>
+    stringr::str_replace_all(stringr::fixed(project_path()), ".")
+}
+
 scan_frame <- function(data, path, component) {
   labels <- purrr::map_chr(data, function(column) {
     label <- attr(column, "label")
@@ -44,15 +49,33 @@ scan_tabular <- function(path) {
   extension <- tolower(fs::path_ext(path))
   reader <- switch(
     extension,
-    dta = function(path) haven::read_dta(path, n_max = 1),
-    sav = function(path) haven::read_sav(path, n_max = 1),
-    por = function(path) haven::read_por(path, n_max = 1),
-    sas7bdat = function(path) haven::read_sas(path, n_max = 1),
+    dta = function(path) {
+      haven::read_dta(path, n_max = 1, .name_repair = "minimal")
+    },
+    sav = function(path) {
+      haven::read_sav(path, n_max = 1, .name_repair = "minimal")
+    },
+    por = function(path) {
+      haven::read_por(path, n_max = 1, .name_repair = "minimal")
+    },
+    sas7bdat = function(path) {
+      haven::read_sas(path, n_max = 1, .name_repair = "minimal")
+    },
     csv = function(path) {
-      readr::read_csv(path, n_max = 1, show_col_types = FALSE)
+      readr::read_csv(
+        path,
+        n_max = 1,
+        show_col_types = FALSE,
+        name_repair = "minimal"
+      )
     },
     tab = function(path) {
-      readr::read_tsv(path, n_max = 1, show_col_types = FALSE)
+      readr::read_tsv(
+        path,
+        n_max = 1,
+        show_col_types = FALSE,
+        name_repair = "minimal"
+      )
     },
     NULL
   )
@@ -72,7 +95,7 @@ scan_tabular <- function(path) {
         flagged_columns = NA_character_,
         flagged_labels = NA_character_,
         scan_status = "unreadable",
-        error = conditionMessage(error)
+        error = stable_error(error)
       )
     }
   )
@@ -83,7 +106,12 @@ scan_excel <- function(path) {
     {
       readxl::excel_sheets(path) |>
         purrr::map(
-          ~ readxl::read_excel(path, sheet = .x, n_max = 1) |>
+          ~ readxl::read_excel(
+            path,
+            sheet = .x,
+            n_max = 1,
+            .name_repair = "minimal"
+          ) |>
             scan_frame(path, .x)
         ) |>
         purrr::list_rbind()
@@ -96,7 +124,7 @@ scan_excel <- function(path) {
         flagged_columns = NA_character_,
         flagged_labels = NA_character_,
         scan_status = "unreadable",
-        error = conditionMessage(error)
+        error = stable_error(error)
       )
     }
   )
@@ -125,7 +153,7 @@ scan_rdata <- function(path) {
         flagged_columns = NA_character_,
         flagged_labels = NA_character_,
         scan_status = "unreadable",
-        error = conditionMessage(error)
+        error = stable_error(error)
       )
     }
   )

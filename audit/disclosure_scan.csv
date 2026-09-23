@@ -25,13 +25,13 @@ data/BTP/2005/data/2005alice.dta,data,737,,,no_name_label_hit,NA
 data/BTP/2005/data/btp05_caseid.dta,data,69,,,no_name_label_hit,NA
 data/BTP/2005/data/btp05_hlm.dta,data,840,,,no_name_label_hit,NA
 data/BTP/2007/2007BTP ygpm dataset.dta,data,285,,,no_name_label_hit,NA
-"data/BTP/2007/BTP online democracy DP Oct 2007 on 0-1 scales, 1-1-07.sav",data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/BTP/2007/BTP online democracy DP Oct 2007 on 0-1 scales, 1-1-07.sav: Invalid file, or file has unsupported features."
-"data/BTP/2007/BTP online democracy DP Oct 2007, 10-31-07.sav",data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/BTP/2007/BTP online democracy DP Oct 2007, 10-31-07.sav: Invalid file, or file has unsupported features."
+"data/BTP/2007/BTP online democracy DP Oct 2007 on 0-1 scales, 1-1-07.sav",data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/BTP/2007/BTP online democracy DP Oct 2007 on 0-1 scales, 1-1-07.sav: Invalid file, or file has unsupported features."
+"data/BTP/2007/BTP online democracy DP Oct 2007, 10-31-07.sav",data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/BTP/2007/BTP online democracy DP Oct 2007, 10-31-07.sav: Invalid file, or file has unsupported features."
 "data/BTP/2007/BTP_online_democracy_DP_Oct_2007,_10-31-07.sav",data,243,,,no_name_label_hit,NA
 "data/BTP/2007/BTP_online_democracy_DP_Oct_2007_on_0-1_scales,_1-1-07.sav",data,323,,,no_name_label_hit,NA
 data/BTP/2007/data/2007BTP ygpm dataset.dta,data,285,,,no_name_label_hit,NA
-"data/BTP/2007/data/BTP online democracy DP Oct 2007 on 0-1 scales, 1-1-07.sav",data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/BTP/2007/data/BTP online democracy DP Oct 2007 on 0-1 scales, 1-1-07.sav: Invalid file, or file has unsupported features."
-"data/BTP/2007/data/BTP online democracy DP Oct 2007, 10-31-07.sav",data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/BTP/2007/data/BTP online democracy DP Oct 2007, 10-31-07.sav: Invalid file, or file has unsupported features."
+"data/BTP/2007/data/BTP online democracy DP Oct 2007 on 0-1 scales, 1-1-07.sav",data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/BTP/2007/data/BTP online democracy DP Oct 2007 on 0-1 scales, 1-1-07.sav: Invalid file, or file has unsupported features."
+"data/BTP/2007/data/BTP online democracy DP Oct 2007, 10-31-07.sav",data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/BTP/2007/data/BTP online democracy DP Oct 2007, 10-31-07.sav: Invalid file, or file has unsupported features."
 "data/BTP/2007/data/BTP_online_democracy_DP_Oct_2007,_10-31-07.sav",data,243,,,no_name_label_hit,NA
 "data/BTP/2007/data/BTP_online_democracy_DP_Oct_2007_on_0-1_scales,_1-1-07.sav",data,323,,,no_name_label_hit,NA
 data/BTP/2007/data/final.sav,data,404,,,no_name_label_hit,NA
@@ -165,7 +165,7 @@ data/China/2008/China Merged Dataset.dta,data,941,d2031;d2032;d2031p;d2032p;d203
 data/China/2008/zeguo2008_dataset_indices_info.dta,data,286,,,no_name_label_hit,NA
 data/China/China Merged Dataset.sav,data,1073,D2031;D2032;D2031P;D2032P;D2031B;D2032B;D2031A;D2032A;D2031BMI;D2031AMI;D2032BMI;D2032AMI;DK31;DK32;DK31P;DK32P;Q31;Q32;Q31P;Q32P,"q31: demonstrative street t1;q32: old street reconstruction t1;q31: demonstrative street t2;q32: old street reconstruction t2;q31: demonstrative street t1 o version;q32: old street reconstruction t1 o version;q31: demonstrative street t2 o version;q32: old street reconstruction t2 o version;q31: demonstrative street t1 midpt version;q31: demonstrative street t2 midpt version;q32: old street reconstruction t1 midpt version;q32: old street reconstruction t2 midpt version;demonstrative street, t1, dk/missing=1 and non-dk=0;old street reconstruction, t1, dk/missing=1 and non-dk=0;demonstrative street, t2, dk/missing=1 and non-dk=0;old street reconstruction, t2, dk/missing=1 and non-dk=0;demonstrative street, t1, 0 to 1 scale;old street reconstruction, t1, 0 to 1 scale;demonstrative street, t2, 0 to 1 scale;old street reconstruction, t2, 0 to 1 scale",review_required,NA
 data/Denmark/data/t0 english.xls,workbook,NA,NA,NA,unreadable,"
-  filepath: /private/tmp/dp-data-stage/vault/cdd/data/Denmark/data/t0 english.xls
+  filepath: ./vault/cdd/data/Denmark/data/t0 english.xls
   libxls error: Unable to open file"
 data/Denmark/data/t0.sav,data,112,,,no_name_label_hit,NA
 data/Denmark/data/t0denmark.rdata,t0den,112,,,no_name_label_hit,NA
@@ -204,7 +204,7 @@ data/Ireland/Clean/nireland_merged.rdata,nireland_merged,534,,,no_name_label_hit
 data/Ireland/groups.csv,data,2,,,no_name_label_hit,NA
 data/Ireland/ire.rdata,ire,1399,,,no_name_label_hit,NA
 data/Ireland/nireland.rdata,nireland,531,,,no_name_label_hit,NA
-data/Ireland/nireland_merged.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Ireland/nireland_merged.por: Invalid file, or file has unsupported features."
+data/Ireland/nireland_merged.por,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/Ireland/nireland_merged.por: Invalid file, or file has unsupported features."
 data/Ireland/nireland_merged.rdata,nireland_merged,531,,,no_name_label_hit,NA
 data/Ireland/open.c.rdata,open.c,35,,,no_name_label_hit,NA
 data/Ireland/orig_data/NIreland data merged - rawSPSSexport.xlsx,Sheet1,532,,,no_name_label_hit,NA
@@ -251,13 +251,13 @@ data/Michigan/data/sunday.xls,Sheet1,151,,,no_name_label_hit,NA
 data/Michigan/pk/pkmi.csv,data,10,,,no_name_label_hit,NA
 data/Utilities/cpl/MasterData/residen.xls,RESIDENT,149,,,no_name_label_hit,NA
 data/Utilities/cpl/cpl.eval.rdata,cpl.eval,67,,,no_name_label_hit,NA
-data/Utilities/cpl/cpl.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Utilities/cpl/cpl.por: Invalid file, or file has unsupported features."
+data/Utilities/cpl/cpl.por,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/Utilities/cpl/cpl.por: Invalid file, or file has unsupported features."
 data/Utilities/cpl/cpl.sav,data,195,zipcode,RS ZIPCODE,review_required,NA
-data/Utilities/cpl/cpl2.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Utilities/cpl/cpl2.por: Invalid file, or file has unsupported features."
+data/Utilities/cpl/cpl2.por,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/Utilities/cpl/cpl2.por: Invalid file, or file has unsupported features."
 data/Utilities/cpl/cpl2.sav,data,196,zipcode,RS ZIPCODE,review_required,NA
-data/Utilities/cpl/cpl_data/cpl.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Utilities/cpl/cpl_data/cpl.por: Invalid file, or file has unsupported features."
+data/Utilities/cpl/cpl_data/cpl.por,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/Utilities/cpl/cpl_data/cpl.por: Invalid file, or file has unsupported features."
 data/Utilities/cpl/cpl_data/cpl2.dta,data,196,ZIPCODE,Rs Zipcode,review_required,NA
-data/Utilities/cpl/cpl_data/cpl2.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Utilities/cpl/cpl_data/cpl2.por: Invalid file, or file has unsupported features."
+data/Utilities/cpl/cpl_data/cpl2.por,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/Utilities/cpl/cpl_data/cpl2.por: Invalid file, or file has unsupported features."
 data/Utilities/entergy/MasterData/Entergy Open Ended Responses.xls,ENTtext,1,,,no_name_label_hit,NA
 data/Utilities/entergy/MasterData/entall master.xls,alldata,78,,,no_name_label_hit,NA
 data/Utilities/entergy/MasterData/entevent master.xls,Pre and Post Data Combined,159,,,no_name_label_hit,NA
@@ -308,9 +308,9 @@ data/Utilities/sps/sps_data/sps2.sav,data,NA,NA,NA,unreadable,"ℹ In index: 1.
 ℹ With name: CASEID.
 Caused by error:
 ! Result must be length 1, not 8."
-data/Utilities/swepco/swepco_data/swepco.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Utilities/swepco/swepco_data/swepco.por: Invalid file, or file has unsupported features."
+data/Utilities/swepco/swepco_data/swepco.por,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/Utilities/swepco/swepco_data/swepco.por: Invalid file, or file has unsupported features."
 data/Utilities/swepco/swepco_data/swepco2.dta,data,196,ZIPCODE,Rs Zipcode,review_required,NA
-data/Utilities/swepco/swepco_data/swepco2.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Utilities/swepco/swepco_data/swepco2.por: Invalid file, or file has unsupported features."
+data/Utilities/swepco/swepco_data/swepco2.por,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/Utilities/swepco/swepco_data/swepco2.por: Invalid file, or file has unsupported features."
 data/Utilities/swepco/swepcoalice2.sav,data,196,ZIPCODE,Rs Zipcode,review_required,NA
 data/Utilities/tu/MasterData/tuall master.xls,tuall,66,,,no_name_label_hit,NA
 data/Utilities/tu/MasterData/tuevent master.xls,tuevent,182,,,no_name_label_hit,NA
@@ -324,9 +324,9 @@ data/Utilities/tu/tu_data/tu2.sav,data,NA,NA,NA,unreadable,"ℹ In index: 1.
 ℹ With name: CASEID.
 Caused by error:
 ! Result must be length 1, not 8."
-data/Utilities/wt/wt_data/wt.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Utilities/wt/wt_data/wt.por: Invalid file, or file has unsupported features."
+data/Utilities/wt/wt_data/wt.por,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/Utilities/wt/wt_data/wt.por: Invalid file, or file has unsupported features."
 data/Utilities/wt/wt_data/wt2.dta,data,196,ZIPCODE,Rs Zipcode,review_required,NA
-data/Utilities/wt/wt_data/wt2.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Utilities/wt/wt_data/wt2.por: Invalid file, or file has unsupported features."
+data/Utilities/wt/wt_data/wt2.por,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/Utilities/wt/wt_data/wt2.por: Invalid file, or file has unsupported features."
 data/Vermont/data/VT-All (Rescaled).sav,data,310,,,no_name_label_hit,NA
 data/Vermont/data/vt.rdata,vt,306,,,no_name_label_hit,NA
 data/Vermont/data/vt.sav,data,306,,,no_name_label_hit,NA
@@ -356,10 +356,10 @@ data/agg/past/kyudata.rdata,kyudata,375,,,no_name_label_hit,NA
 data/agg/past/kyudata2.rdata,kyudata,287,,,no_name_label_hit,NA
 data/agg/polardata.csv,data,364,,,no_name_label_hit,NA
 data/australia_aboriginal/aus.rdata,aus,130,,,no_name_label_hit,NA
-data/australia_aboriginal/data/MergedNONrecoded.sav,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_aboriginal/data/MergedNONrecoded.sav: Invalid file, or file has unsupported features."
+data/australia_aboriginal/data/MergedNONrecoded.sav,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/australia_aboriginal/data/MergedNONrecoded.sav: Invalid file, or file has unsupported features."
 data/australia_aboriginal/data/MergedRecoded.sav,data,130,AO#A;AO#B;DC#C,QC4.HOW HAVE CONTACT WITH PEOPLE OF ABORIGINAL ORIGIN - THROUGH WORK;QC4.HOW HAVE CONTACT WITH PEOPLE OF ABORIGINAL ORIGIN - THROUGH FRIENDS;QD3.AGREE/DISAGREE WITH STATEMENT ABOUT DISCUSSION GROUPS - FOUND COMMENTS OF OTHER GROUP MEMBERS USEFUL IN YOUR THINKING ABOUT THE ISSUES,review_required,NA
-data/australia_aboriginal/data/PRE-MERGENonIndigenous.sav,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_aboriginal/data/PRE-MERGENonIndigenous.sav: Invalid file, or file has unsupported features."
-data/australia_aboriginal/data/PREMergeIndigenous.sav,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_aboriginal/data/PREMergeIndigenous.sav: Invalid file, or file has unsupported features."
+data/australia_aboriginal/data/PRE-MERGENonIndigenous.sav,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/australia_aboriginal/data/PRE-MERGENonIndigenous.sav: Invalid file, or file has unsupported features."
+data/australia_aboriginal/data/PREMergeIndigenous.sav,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/australia_aboriginal/data/PREMergeIndigenous.sav: Invalid file, or file has unsupported features."
 data/australia_aboriginal/data/aus.rdata,aus,130,,,no_name_label_hit,NA
 data/australia_aboriginal/data/indig.sav,data,327,AO#A;AO#B;AY#;CI#D;CM#I;CT#C;CU#C,QC4.HOW HAVE CONTACT WITH PEOPLE OF ABORIGINAL ORIGIN - THROUGH WORK;QC4.HOW HAVE CONTACT WITH PEOPLE OF ABORIGINAL ORIGIN - THROUGH FRIENDS;QC14.TELEPHONE NUMBER;QC1.ISSUES LEARNED DURING DELIBERATION THAT HAD THE MOST IMPACT ON YOUR THINKING - MANY AUSTRALIANS DONT UNDERSTAND/HAVE HAD NO CONTACT WITH ABORIGINAL PEOPLE;QC5a.CIRCUMSTANCES WOULD AGREE TO COMPENSATION OF STOLEN GENERATION - COMPENSATE WHEN INDIVIDUALS HAVE NOT HAD CONTACT WITH PARENTS;STATEMENTS ABOUT DISCUSSION GROUPS - FOUND COMMENTS OF OTHER GROUP MEMBERS USEFUL IN YOUR THINKING ABOUT THE ISSUES;QD3.AGREE/DISAGREE WITH STATEMENT ABOUT DISCUSSION GROUPS - FOUND COMMENTS OF OTHER GROUP MEMBERS USEFUL IN YOUR THINKING ABOUT THE ISSUES,review_required,NA
 data/australia_aboriginal/data/non-indig.sav,data,382,AM#A;AM#B;AM#C;CN#C;CO#C,QC4.HOW HAVE CONTACT WITH PEOPLE OF ABORIGINAL ORIGIN - THROUGH WORK;QC4.HOW HAVE CONTACT WITH PEOPLE OF ABORIGINAL ORIGIN - THROUGH FRIENDS;QC4.HOW HAVE CONTACT WITH PEOPLE OF ABORIGINAL ORIGIN - NONE/DONT KNOW;STATEMENTS ABOUT DISCUSSION GROUPS - FOUND COMMENTS OF OTHER GROUP MEMBERS USEFUL IN YOUR THINKING ABOUT THE ISSUES;QD3.AGREE/DISAGREE WITH STATEMENT - FOUND COMMENTS OF OTHER GROUP MEMBERS USEFUL IN YOUR THINKING ABOUT THE ISSUES,review_required,NA
@@ -376,10 +376,10 @@ data/australia_republic/Australia2004.sav,data,NA,NA,NA,unreadable,"ℹ In index
 ℹ With name: elecdiv3.
 Caused by error:
 ! Result must be length 1, not 149."
-data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_13_July_2000.sav,data,NA,NA,NA,unreadable,Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_13_July_2000.sav: Unable to convert string to the requested encoding (invalid byte sequence).
-data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_15_Feb_2000.por,data,NA,NA,NA,unreadable,Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_15_Feb_2000.por: The file's timestamp string is invalid.
-data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_16_Feb_2000.por,data,NA,NA,NA,unreadable,Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_16_Feb_2000.por: The file's timestamp string is invalid.
-data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_21_March_2000.por,data,NA,NA,NA,unreadable,Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_21_March_2000.por: The file's timestamp string is invalid.
+data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_13_July_2000.sav,data,NA,NA,NA,unreadable,Failed to parse ./vault/cdd/data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_13_July_2000.sav: Unable to convert string to the requested encoding (invalid byte sequence).
+data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_15_Feb_2000.por,data,NA,NA,NA,unreadable,Failed to parse ./vault/cdd/data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_15_Feb_2000.por: The file's timestamp string is invalid.
+data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_16_Feb_2000.por,data,NA,NA,NA,unreadable,Failed to parse ./vault/cdd/data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_16_Feb_2000.por: The file's timestamp string is invalid.
+data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_21_March_2000.por,data,NA,NA,NA,unreadable,Failed to parse ./vault/cdd/data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_21_March_2000.por: The file's timestamp string is invalid.
 data/australia_republic/MasterData/Australia_DP/Australia master dataset with knowledge indices July 29 2004.sav,data,NA,NA,NA,unreadable,"ℹ In index: 448.
 ℹ With name: elecdiv3.
 Caused by error:
@@ -405,10 +405,10 @@ data/australia_republic/OZ_Data/oz2_t1t2t3_June17.sav,data,NA,NA,NA,unreadable,"
 ℹ With name: elecdiv3.
 Caused by error:
 ! Result must be length 1, not 149."
-data/australia_republic/OZ_Data/temporary/oz.sav,data,NA,NA,NA,unreadable,Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_republic/OZ_Data/temporary/oz.sav: Unable to convert string to the requested encoding (invalid byte sequence).
+data/australia_republic/OZ_Data/temporary/oz.sav,data,NA,NA,NA,unreadable,Failed to parse ./vault/cdd/data/australia_republic/OZ_Data/temporary/oz.sav: Unable to convert string to the requested encoding (invalid byte sequence).
 data/australia_republic/OZ_Data/temporary/oz2.sav,data,166,POSTCODE;COMMENT2,Postcode T1 (QF7);Comments of other group members useful T2 (WF3c),review_required,NA
-data/australia_republic/OZ_Data/temporary/t3oz.sav,data,NA,NA,NA,unreadable,Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_republic/OZ_Data/temporary/t3oz.sav: Unable to convert string to the requested encoding (invalid byte sequence).
-data/australia_republic/OZ_Data/temporary/t3oz2.sav,data,NA,NA,NA,unreadable,Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_republic/OZ_Data/temporary/t3oz2.sav: Unable to convert string to the requested encoding (invalid byte sequence).
+data/australia_republic/OZ_Data/temporary/t3oz.sav,data,NA,NA,NA,unreadable,Failed to parse ./vault/cdd/data/australia_republic/OZ_Data/temporary/t3oz.sav: Unable to convert string to the requested encoding (invalid byte sequence).
+data/australia_republic/OZ_Data/temporary/t3oz2.sav,data,NA,NA,NA,unreadable,Failed to parse ./vault/cdd/data/australia_republic/OZ_Data/temporary/t3oz2.sav: Unable to convert string to the requested encoding (invalid byte sequence).
 data/australia_republic/OZ_Data/temporary/t3oz2_1.sav,data,NA,NA,NA,unreadable,"ℹ In index: 167.
 ℹ With name: ELECDIV3.
 Caused by error:
@@ -447,7 +447,7 @@ data/british_crime/analyses/crimeoutput.xls,Table 1,15,,,no_name_label_hit,NA
 data/british_crime/analyses/crimeoutput.xls,Table 3,13,,,no_name_label_hit,NA
 data/british_crime/analyses/crimeoutput.xls,Table 4,0,,,no_name_label_hit,NA
 data/british_crime/crime_data/crime.dta,data,287,HOWTHEFT;PATROLS1;PATROLS2;PATROLS3,How much street attacks & thefts? (A8);Public more active: street patrols (Q3);Public more active: street patrols (QQ3);Public more active: street patrols (QD3),review_required,NA
-data/british_crime/crime_data/crime.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/british_crime/crime_data/crime.por: Invalid file, or file has unsupported features."
+data/british_crime/crime_data/crime.por,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/british_crime/crime_data/crime.por: Invalid file, or file has unsupported features."
 data/british_crime/crime_data/uk-crime.sav,data,287,howtheft;patrols1;patrols2;patrols3,HOW MUCH STREET ATTACKS & THEFTS? (A8);PUBLIC MORE ACTIVE: STREET PATROLS (Q3);PUBLIC MORE ACTIVE: STREET PATROLS (QQ3);PUBLIC MORE ACTIVE: STREET PATROLS (QD3),review_required,NA
 data/british_crime/ukcrime.eval.rdata,ukcrime.eval,67,,,no_name_label_hit,NA
 data/british_europe/Clean/ukeu_clean.Rdata,ukeu,176,phone,,review_required,NA
@@ -480,7 +480,7 @@ data/british_general_election/General_data/bge variables for kyu june 17.dta,dat
 data/british_general_election/General_data/gencode.por,data,233,PHONE,DOES R HAVE A PHONE (QB22),review_required,NA
 data/british_general_election/General_data/gencode2.csv,data,233,PHONE,,review_required,NA
 data/british_general_election/General_data/gencode2.dta,data,233,PHONE,Does R have a Phone (QB22),review_required,NA
-data/british_general_election/General_data/gencode2.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/british_general_election/General_data/gencode2.por: Invalid file, or file has unsupported features."
+data/british_general_election/General_data/gencode2.por,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/british_general_election/General_data/gencode2.por: Invalid file, or file has unsupported features."
 data/british_general_election/General_data/gencode2_kh_Feb15.dta,data,513,PHONE,Does R have a Phone (QB22),review_required,NA
 data/british_general_election/General_data/mvspss.por,data,NA,NA,NA,unreadable,"ℹ In index: 1.
 ℹ With name: FLDAREA.
@@ -698,7 +698,7 @@ data/nic_1/MasterData/NRDD.SAV,data,NA,NA,NA,unreadable,"ℹ In index: 105.
 Caused by error:
 ! Result must be length 1, not 2."
 data/nic_1/Master_nic_123.sav,data,388,USEFULC2;Q40_OTHE;Q45_OTHE,OTHERS COMMENTS WERE USEFUL;OTHER MODERATOR (VERBATIM);OTHER MODERATOR (VERBATIM),review_required,NA
-data/nic_1/NIC_Data/iaqdate.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/nic_1/NIC_Data/iaqdate.por: Invalid file, or file has unsupported features."
+data/nic_1/NIC_Data/iaqdate.por,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/nic_1/NIC_Data/iaqdate.por: Invalid file, or file has unsupported features."
 data/nic_1/NIC_Data/iaqdate.sav,data,10,,,no_name_label_hit,NA
 data/nic_1/NIC_Data/nic123.por,data,424,USEFULC2;Q40_OTHE;Q45_OTHE;INT2,OTHERS COMMENTS WERE USEFUL T2 (Q39C SAQ;OTHER MODERATOR (VERBATIM);OTHER MODERATOR (VERBATIM);R INTERVIEWED AT T2 BY PHONE?,review_required,NA
 data/nic_1/NIC_Data/nic123_2.por,data,425,USEFULC2;Q40_OTHE;Q45_OTHE;INT2,OTHERS COMMENTS WERE USEFUL T2 (Q39c SAQ2);OTHER MODERATOR (VERBATIM);OTHER MODERATOR (VERBATIM);R Interviewed at T2 By Phone?,review_required,NA
@@ -708,7 +708,7 @@ data/nic_1/NRDD.SAV,data,NA,NA,NA,unreadable,"ℹ In index: 105.
 ℹ With name: GENDER.
 Caused by error:
 ! Result must be length 1, not 2."
-data/nic_1/iaqdate.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/nic_1/iaqdate.por: Invalid file, or file has unsupported features."
+data/nic_1/iaqdate.por,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/nic_1/iaqdate.por: Invalid file, or file has unsupported features."
 data/nic_1/nic123.por,data,424,USEFULC2;Q40_OTHE;Q45_OTHE;INT2,OTHERS COMMENTS WERE USEFUL T2 (Q39C SAQ;OTHER MODERATOR (VERBATIM);OTHER MODERATOR (VERBATIM);R INTERVIEWED AT T2 BY PHONE?,review_required,NA
 data/nic_1/nic123_2_r.sav,data,429,USEFULC2;Q40_OTHE;Q45_OTHE;INT2,OTHERS COMMENTS WERE USEFUL T2 (Q39c SAQ2);OTHER MODERATOR (VERBATIM);OTHER MODERATOR (VERBATIM);R Interviewed at T2 By Phone?,review_required,NA
 data/nic_1/nic2_caseid.dta,data,82,,,no_name_label_hit,NA
@@ -786,16 +786,16 @@ data/pkdat/ukeun.Rdata,ukeun,42,,,no_name_label_hit,NA
 data/pkdat/wtun.Rdata,wtun,42,,,no_name_label_hit,NA
 data/san_mateo/sm_caseid.dta,data,68,,,no_name_label_hit,NA
 data/san_mateo/smdp 3-18-08.dta,data,330,ZCODE;COMMENT1,Zipcode;,review_required,NA
-data/us_2004_general_election/DATA/Online dpoll Oct 04 dataset with control group from Jan 04 dpoll included 06 14.sav,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/us_2004_general_election/DATA/Online dpoll Oct 04 dataset with control group from Jan 04 dpoll included 06 14.sav: Invalid file, or file has unsupported features."
-data/us_2004_general_election/DATA/Online dpoll Oct 04 dataset with control group from Jan 04 dpoll included 06 14_r.sav,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/us_2004_general_election/DATA/Online dpoll Oct 04 dataset with control group from Jan 04 dpoll included 06 14_r.sav: Invalid file, or file has unsupported features."
+data/us_2004_general_election/DATA/Online dpoll Oct 04 dataset with control group from Jan 04 dpoll included 06 14.sav,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/us_2004_general_election/DATA/Online dpoll Oct 04 dataset with control group from Jan 04 dpoll included 06 14.sav: Invalid file, or file has unsupported features."
+data/us_2004_general_election/DATA/Online dpoll Oct 04 dataset with control group from Jan 04 dpoll included 06 14_r.sav,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/us_2004_general_election/DATA/Online dpoll Oct 04 dataset with control group from Jan 04 dpoll included 06 14_r.sav: Invalid file, or file has unsupported features."
 data/us_2004_general_election/DATA/caseid.dta,data,1528,w1qb13;w1qf13;w2qb13;w2qf13,w1 baseline. w1qb13. how about requiring higher mileage from automobiles (as a w;w1 followup. w1qf13. how about requiring higher mileage from automobiles (as a w;w2 baseline. w2qb13.  how about requiring higher mileage from automobiles (as a;w2 followup w2qf13.  how about requiring higher mileage from automobiles (as a w,review_required,NA
-data/us_2004_general_election/DATA/dopall_final.sav,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/us_2004_general_election/DATA/dopall_final.sav: Invalid file, or file has unsupported features."
+data/us_2004_general_election/DATA/dopall_final.sav,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/us_2004_general_election/DATA/dopall_final.sav: Invalid file, or file has unsupported features."
 data/us_2004_general_election/DATA/dopall_final1.dta,data,1529,w1qb13;w1qf13;w2qb13;w2qf13,w1 baseline. w1qb13. how about requiring higher mileage from automobiles (as a w;w1 followup. w1qf13. how about requiring higher mileage from automobiles (as a w;w2 baseline. w2qb13.  how about requiring higher mileage from automobiles (as a;w2 followup w2qf13.  how about requiring higher mileage from automobiles (as a w,review_required,NA
 data/us_2004_general_election/DATA/dopall_final1.sav,data,1292,w1qb13;w1qf13;w2qb13;w2qf13,W1 Baseline. w1qb13. How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines. Do you...;W1 Followup. w1qf13. How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines. Do you...;W2 Baseline. w2qb13.  How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines.Do you...;W2 Followup w2qf13.  How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines.Do you...,review_required,NA
 data/us_2004_general_election/DATA/dopall_final1_w4only.dta,data,1026,,,no_name_label_hit,NA
 data/us_2004_general_election/DATA/dopall_final1_w4only_amelia.dta,data,26,,,no_name_label_hit,NA
 data/us_2004_general_election/DATA/dopall_final1_w4only_matched.dta,data,1024,,,no_name_label_hit,NA
-data/us_2004_general_election/DATA/dopall_final_wsummer_tracking_data.sav,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/us_2004_general_election/DATA/dopall_final_wsummer_tracking_data.sav: Invalid file, or file has unsupported features."
+data/us_2004_general_election/DATA/dopall_final_wsummer_tracking_data.sav,data,NA,NA,NA,unreadable,"Failed to parse ./vault/cdd/data/us_2004_general_election/DATA/dopall_final_wsummer_tracking_data.sav: Invalid file, or file has unsupported features."
 data/us_2004_general_election/DATA/matching_09192006.dta,data,1021,,,no_name_label_hit,NA
 data/us_2004_general_election/DATA/outdata1.dta,data,27,,,no_name_label_hit,NA
 data/us_2004_general_election/DATA/outdata2.dta,data,27,,,no_name_label_hit,NA
@@ -833,11 +833,11 @@ data/us_fp_online/online_data/jennifer_online_march14.sav,data,720,QB13;QF13,qb1
 data/us_fp_online/online_data/kn_ind_cm_online.dta,data,7,,,no_name_label_hit,NA
 data/us_fp_online/online_data/lse_f2f.sav,data,10,,,no_name_label_hit,NA
 data/us_fp_online/online_data/lse_f2f.xls,workbook,NA,NA,NA,unreadable,"
-  filepath: /private/tmp/dp-data-stage/vault/cdd/data/us_fp_online/online_data/lse_f2f.xls
+  filepath: ./vault/cdd/data/us_fp_online/online_data/lse_f2f.xls
   libxls error: Unable to open file"
 data/us_fp_online/online_data/lse_online.sav,data,10,,,no_name_label_hit,NA
 data/us_fp_online/online_data/lse_online.xls,workbook,NA,NA,NA,unreadable,"
-  filepath: /private/tmp/dp-data-stage/vault/cdd/data/us_fp_online/online_data/lse_online.xls
+  filepath: ./vault/cdd/data/us_fp_online/online_data/lse_online.xls
   libxls error: Unable to open file"
 data/us_fp_online/online_data/online study.sav,data,343,QB13;QF13,QB13. How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines. Do you...;QF13. How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines. Do you...,review_required,NA
 data/us_fp_online/online_data/online_Jennifer_April08.sav,data,307,qb13;qf13,QB13. How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines. Do you...;QF13. How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines. Do you...,review_required,NA
