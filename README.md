@@ -30,6 +30,16 @@ three unresolved sample-size differences, Europolis's unordered match, and
 Vermont's ambiguous answer key. These outputs do not yet rebuild the full
 attitude aggregate or the control-arm batteries.
 
+The historical knowledge–attitude linkage is also built here with `make linkage`.
+Its five CSV products and checksum manifest live in `output/linkage/`, replacing
+the standalone linkage repository. It retains historical `polardata` scores and
+links for now; see the [linkage contract](docs/knowledge-build.md#historical-knowledgeattitude-linkage).
+
+Known measurement, sample, linkage, and provenance questions are collected in the
+[poll-level issue register](docs/poll-issues.md). It distinguishes documented
+choices from unresolved concerns and existing upstream differences; this review
+preserves current scores pending instrument-level verification.
+
 ## Reproduce
 
 ```sh
@@ -38,7 +48,7 @@ make check
 ```
 
 `make check` validates the Frictionless Data Package, source checksums,
-metadata contracts, the survey-based build and item-level comparisons, tests, and linting. `make inventory` is a local-only task
+metadata contracts, the survey-based build, historical linkage, item-level comparisons, tests, and linting. `make inventory` is a local-only task
 that rebuilds the CDD vault inventory from the untracked archive.
 
 The five original CDD ZIP exports stay untracked at the repository root.

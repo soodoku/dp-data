@@ -6,7 +6,7 @@ args <- commandArgs(trailingOnly = TRUE)
 root <- if (length(args)) args[[1]] else dirname(project_path())
 repositories <- c(
   "dp-distortions", "dp-learning", "dp-nireland",
-  "guessing-and-forgetting", "dp-knowledge-linkage",
+  "guessing-and-forgetting",
   "dp-steadier-not-closer", "dp-deliberately"
 )
 directories <- file.path(root, repositories)

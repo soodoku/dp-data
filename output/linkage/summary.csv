@@ -1,0 +1,13 @@
+measure,value
+cor_sood_polls,23
+distortions_polls,21
+overlapping_polls,16
+distortions_only_polls,5
+cor_sood_only_polls,7
+validated_person_link_polls,6
+mean_alpha_t1,0.4951926876
+mean_alpha_t2,0.5606561056
+polls_with_higher_t2_alpha,18
+linked_respondents,1661
+linked_attitude_indices,43
+linked_respondent_attitude_rows,12627

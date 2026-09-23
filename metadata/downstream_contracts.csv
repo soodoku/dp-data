@@ -5,5 +5,5 @@ soodoku/dp-learning,participant-analysis,participants-wide,data/raw/polardata.ta
 soodoku/dp-learning,knowledge-items,knowledge-responses-long,data/raw/cor-sood-replication.zip,1,planned,Replace archive extraction after item-level comparison and review of scoring differences
 soodoku/dp-nireland,northern-ireland-source,northern-ireland,data/orig_data,1,planned,Preserve paper-specific coding separately
 soodoku/guessing-and-forgetting,knowledge-items,knowledge-responses-long,data,1,planned,Keep the Dataverse baseline tag in the downstream history
-soodoku/dp-knowledge-linkage,linked-panel,knowledge-attitude-panel,data/processed/knowledge_attitude_panel.csv,1,transitional,Retain as a parity benchmark until dp-data reproduces the linked panel from audited poll sources; then archive the repository
 finite-sample/dp-steadier-not-closer,latent-model-input,latent-change-input,data,1,planned,Include item responses attitudes arms and group memberships
+finite-sample/dp-steadier-not-closer,historical-linked-panel,historical-knowledge-attitude-panel,output/linkage/knowledge_attitude_panel.csv,1,current,Upstream build from historical polardata and deposited batteries; exact pre-migration output parity; canonical replacement deferred

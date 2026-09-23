@@ -17,9 +17,11 @@ the ignored local vault. They do not sit beside the maintained implementation
 on `main`. Each replacement transformation needs a parity test that explains
 any difference.
 
-Published aggregate files are also evidence. They live under
-`evidence/benchmarks/` and may appear only on the expected side of parity tests;
-they are not inputs to the canonical transformation graph. Multi-poll deposits
+Published aggregate files live under `evidence/benchmarks/` and remain comparison
+targets for the canonical transformation graph. The historical linkage build is
+an explicit exception: `make linkage` reads `polardata.tab` and
+`attitude-indices.tab` to preserve the established cross-archive linkage while
+the source-based attitude rebuild remains pending. Multi-poll deposits
 under `evidence/deposits/` must be unpacked and assigned to poll packages before
 their respondent or item data can enter that graph.
 
@@ -83,10 +85,11 @@ Legacy numeric IDs remain aliases; they are not primary keys.
 6. Publish a tagged, typed Parquet output.
 7. Update one downstream repository at a time to pin that tag and checksum.
 
-`dp-knowledge-linkage` is transitional. Keep it as a reproducible parity
-benchmark until `dp-data` can rebuild its knowledge-attitude panel from the
-audited poll-level sources. Archive it only after row, key, item, and derived
-value parity is documented; it must not become another permanent data layer.
+The cross-archive linkage now belongs to this repository. Its build, tests, and
+five CSV products are maintained here under `output/linkage/`. Frozen output
+checksums test parity with the former standalone implementation. Replacing the
+historical aggregates with audited poll-level inputs is a subsequent change;
+any differences in keys, items, missingness, or derived values must be explained.
 
 Submodules are deliberately avoided. A downstream analysis should be
 reproducible from an immutable release artifact even when this repository

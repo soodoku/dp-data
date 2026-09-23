@@ -7,6 +7,6 @@ dp-nireland,data/orig_data/*Questionnaire*.doc,archive-only-metadata,audit/downs
 dp-nireland,data/open_ended/,candidate-source-review,audit/downstream_source_inventory.csv: coding files and documentation lack exact published matches,Distinguish codebooks and adjudication from verbatim responses and derived outputs
 dp-nireland,data/ninis/,candidate-source-review,audit/downstream_source_inventory.csv: six census workbooks lack exact catalog matches,Establish source releases and reuse terms before porting
 dp-distortions,data/*.csv,comparison-evidence,audit/downstream_source_inventory.csv: CSV bytes differ from tab-delimited benchmark files,Verify conversion provenance; do not use aggregate files as canonical build inputs
-dp-knowledge-linkage,data/processed/,downstream-derived,audit/downstream_source_inventory.csv; downstream path convention,Keep as comparison evidence pending a verified upstream replacement
+dp-knowledge-linkage,data/processed/,downstream-derived,audit/downstream_source_inventory.csv; downstream path convention,Replaced by output/linkage/; five CSVs match baseline checksums; standalone repository can be deleted
 dp-steadier-not-closer,data/ and inst/extdata/,no-tracked-candidates,audit/downstream_repository_coverage.csv,Inspect future data contracts before attaching real survey sources
 dp-deliberately,data/ and inst/extdata/,no-tracked-candidates,audit/downstream_repository_coverage.csv,This directory scope does not establish absence of fixtures or generated examples elsewhere

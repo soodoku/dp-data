@@ -169,3 +169,44 @@ variable and value-label dictionaries. These local checks do not require uploadi
 `audit/knowledge_differences.csv` identifies changed cells;
 `audit/knowledge_score_changes.csv` reports their effects on mean scores. The recode counts
 show old values, new scores, missing statuses, and counts for each source item.
+
+## Historical knowledge–attitude linkage
+
+`make linkage` reproduces the former standalone linkage build. It reads the
+checksummed historical `polardata.tab` and `attitude-indices.tab` under
+`evidence/benchmarks/`, plus the 23 deposited `knowledge-battery.csv` files
+already cataloged in poll packages. It does not consume the rebuilt canonical
+knowledge scores, whose deliberate scoring differences are documented above.
+
+The outputs in `output/linkage/` are `poll_crosswalk.csv`,
+`knowledge_reliability.csv`, `respondent_items.csv`,
+`knowledge_attitude_panel.csv`, and `summary.csv`. `manifest.csv` records their
+shapes, checksums, and historical basis; formatted audit tables are in `tables/`.
+`make check` builds these products and tests their exact values against the
+pre-migration checksums in `tests/fixtures/linkage_checksums.csv`.
+
+The crosswalk covers 28 polls. Reliability covers 23 polls and 177 items; mean
+Cronbach's alpha is 0.495 at T1 and 0.561 at T2. The panel contains six linked
+polls, 1,661 respondents, 43 poll-specific attitude indices, and 12,627 rows.
+Each panel row is keyed by `dpnum`, `caseid`, and `attitude_index`; item rows are
+keyed by `dpnum`, `caseid`, `item_id`, and `wave`.
+
+Deposited item files have no respondent IDs. Positional links require equal
+respondent counts and row-by-row agreement in T1 scores, T2 scores, and observed
+gender. Other overlaps remain at poll level with mismatch reasons. This
+validation preserves the historical linkage rule; it cannot distinguish two
+respondents with identical observed validation fields. Missing item responses
+are scored zero in this historical bridge; that convention is separate from the
+canonical response tables' missingness policy. T1/T2 attitude values and group
+identifiers are retained from the historical aggregate.
+
+The bridge supports descriptive knowledge–attitude analysis. The older archive
+lacks the control-arm and session-roster fields needed for the full causal
+multiple-membership model. Downstream consumers should pin an upstream revision
+and verify `manifest.csv`; a later source-based rebuild must explain any changes.
+
+Reference manuscripts: [Cor and Sood](https://gsood.com/research/papers/guess.pdf)
+(MD5 `3e80da54bdfaba3d5c7f9fa3a4303b4a`) and
+[Luskin, Sood, Fishkin, and Hahn](https://gsood.com/research/papers/DeliberativeDistortions.pdf)
+(MD5 `d1e62fbd13340ee1d75791a115f2ab59`). The reliability checks reproduce the
+rounded values on page 17 of the Cor–Sood manuscript.

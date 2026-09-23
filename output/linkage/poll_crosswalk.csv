@@ -1,0 +1,29 @@
+file_key,cor_poll_name,dpnum,match_status,mismatch_reason,respondents,items,alpha_t1,alpha_t2,score_correlation,alpha_change,alpha_t2_higher,pollid,pollname,numitems,polardata_respondents
+ukeu,UK EU,1,poll_only_count_mismatch,Item file has 224 rows; polardata has 238 retained rows.,224,5,0.560161391,0.6708043412,0.4482516295,0.1106429502,TRUE,20,UK EU,5,238
+ukhealth,UK Health,2,validated_person_link,,230,6,0.5226832074,0.6790395581,0.5445515376,0.1563563508,TRUE,22,UK Health,6,230
+ukmon,UK Monarchy,3,poll_only_battery_mismatch,Deposited battery has 8 items; polardata score uses 9 items.,258,8,0.4976527425,0.5642259968,0.6167194703,0.0665732544,TRUE,23,UK Monarchy,9,258
+ukbge,UK General Election,4,poll_only_score_mismatch,T1 reconstructs exactly; T2 scores differ slightly for some rows.,275,15,0.705714471,0.7093079804,0.5347193748,0.0035935094,TRUE,25,UK General Election,15,275
+aus,Australia Constitutional Referendum,5,poll_only_battery_mismatch,Deposited battery has 10 items; polardata score uses a larger battery.,347,10,0.6142338455,0.6687455589,0.3357260028,0.0545117134,TRUE,26,Australia Republic Referendum,11,347
+ukcrime,UK Crime,6,validated_person_link,,299,7,0.5237752881,0.627109428,0.6140481041,0.1033341399,TRUE,27,UK Crime,7,299
+eu2007,Tomorrow's Europe (EU),7,poll_only_count_mismatch,Item file has 335 rows; polardata has 344 retained rows.,335,11,0.5096321515,0.6005922369,0.4678351999,0.0909600855,TRUE,28,Tomorrow's Europe (EU),11,344
+cpl,Central Power & Light,8,validated_person_link,,216,7,0.3503311706,0.2617524441,0.2698887528,-0.0885787265,FALSE,29,Central Power & Light,7,216
+,,9,distortions_only,No matching public item matrix was found in the Cor-Sood deposit.,,,,,,,,52,Zeguo Township,4,233
+bul,Bulgaria,10,poll_only_row_order_mismatch,"Battery and score distribution agree, but public row order does not.",278,7,0.5917584236,0.580418505,0.2884605541,-0.0113399187,FALSE,53,Bulgarian National,7,278
+eu2009,Europolis,11,poll_only_row_order_mismatch,"Battery and score distribution agree, but public row order does not.",348,6,0.0526029236,0.3126176079,0.2115622139,0.2600146842,TRUE,71,Europolis,6,348
+,,12,distortions_only,No matching public item matrix was found in the Cor-Sood deposit.,,,,,,,,91,"New Haven, CT",8,132
+,,13,distortions_only,No matching public item matrix was found in the Cor-Sood deposit.,,,,,,,,92,National Issues Convention 2,11,340
+,,14,distortions_only,No matching public item matrix was found in the Cor-Sood deposit.,,,,,,,,93,By the People: National,11,245
+btp04GE,By the People 2004 General Election,15,poll_only_count_mismatch,Item file has 250 rows; polardata has 246 retained rows.,250,9,0.7845075034,0.7821715282,0.7500881265,-0.0023359752,FALSE,94,By the People 2004 US General Election,9,246
+,,16,distortions_only,No matching public item matrix was found in the Cor-Sood deposit.,,,,,,,,95,By the People 2004 US Presidential Primaries,7,217
+sm,San Mateo,17,poll_only_score_mismatch,T1 reconstructs exactly; T2 scores differ for some rows.,239,8,0.3612475866,0.4788206257,0.1054432143,0.1175730391,TRUE,96,"San Mateo, CA",8,239
+btp05,By the People 2005,18,validated_person_link,,454,6,0.3156289587,0.2162185581,0.3901192151,-0.0994104006,FALSE,97,By the People: Health and Education,6,454
+wtu,West Texas Utilities,19,validated_person_link,,230,5,0.300166128,0.4453711147,0.3864973316,0.1452049866,TRUE,986,West Texas Utilities,5,230
+nic1,National Issues Convention,20,poll_only_battery_mismatch,Deposited battery has 8 items; polardata score uses 11 items.,466,8,0.5693678747,0.6423494355,0.5398004258,0.0729815609,TRUE,1001,National Issues Convention,11,466
+swp,Southwestern Electric Power,21,validated_person_link,,232,5,0.2376592195,0.4692250089,0.2234577802,0.2315657895,TRUE,3000,Southwestern Electric Power,5,232
+btp04,By the People 2004 Online Primaries,,cor_sood_only,Poll is absent from polardata.,328,7,0.7142731499,0.8134471233,0.6057365024,0.0991739734,TRUE,,,,
+btp07,By the People 2007,,cor_sood_only,Poll is absent from polardata.,301,8,0.5527628599,0.5655714979,0.6439432991,0.012808638,TRUE,,,,
+ca,California What's Next,,cor_sood_only,Poll is absent from polardata.,401,5,0.5666340714,0.6452675174,0.4302945559,0.078633446,TRUE,,,,
+dk,Denmark: Euro,,cor_sood_only,Poll is absent from polardata.,363,9,0.4046984646,0.652370057,0.3827426678,0.2476715924,TRUE,,,,
+ire,Northern Ireland,,cor_sood_only,Poll is absent from polardata.,124,7,0.5277428458,0.5830196473,0.448041678,0.0552768015,TRUE,,,,
+mi,Michigan,,cor_sood_only,Poll is absent from polardata.,310,9,0.5841212705,0.6851744642,0.5201361285,0.1010531937,TRUE,,,,
+vt,Vermont Energy,,cor_sood_only,Poll is absent from polardata.,146,9,0.5420762675,0.2414701925,0.2400089281,-0.300606075,FALSE,,,,
