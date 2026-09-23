@@ -1,0 +1,1899 @@
+source_column,source_value,value_label
+PRE_Q1,1,I did not vote
+PRE_Q1,2,"I thought about voting, but didn't"
+PRE_Q1,3,"I usually vote, but didn't that time"
+PRE_Q1,4,I am sure I voted
+PRE_Q1,99,Don't know
+PRE_Q1,998,Skipped
+PRE_Q1,999,T2 only group
+PRE_Q2x,1,Very unlikely
+PRE_Q2x,2,Somewhat unlikely
+PRE_Q2x,3,Neither likely nor unlikely
+PRE_Q2x,4,Somewhat likely
+PRE_Q2x,5,Very likely
+PRE_Q2x,99,Don't know
+PRE_Q2x,998,Skipped
+PRE_Q2x,999,T2 only group
+PRE_Q3x,1,Very unlikely
+PRE_Q3x,2,Somewhat unlikely
+PRE_Q3x,3,Neither likely nor unlikely
+PRE_Q3x,4,Somewhat likely
+PRE_Q3x,5,Very likely
+PRE_Q3x,99,Don't know
+PRE_Q3x,998,Skipped
+PRE_Q3x,999,T2 only group
+PRE_Q4a,0,Completely unimportant0
+PRE_Q4a,1,1
+PRE_Q4a,2,2
+PRE_Q4a,3,3
+PRE_Q4a,4,4
+PRE_Q4a,5,Neither important nor unimportant5
+PRE_Q4a,6,6
+PRE_Q4a,7,7
+PRE_Q4a,8,8
+PRE_Q4a,9,9
+PRE_Q4a,10,Extremely important10
+PRE_Q4a,99,No opinion
+PRE_Q4a,998,Skipped
+PRE_Q4a,999,T2 only group
+PRE_Q4b,0,Completely unimportant0
+PRE_Q4b,1,1
+PRE_Q4b,2,2
+PRE_Q4b,3,3
+PRE_Q4b,4,4
+PRE_Q4b,5,Neither important nor unimportant5
+PRE_Q4b,6,6
+PRE_Q4b,7,7
+PRE_Q4b,8,8
+PRE_Q4b,9,9
+PRE_Q4b,10,Extremely important10
+PRE_Q4b,99,No opinion
+PRE_Q4b,998,Skipped
+PRE_Q4b,999,T2 only group
+PRE_Q4c,0,Completely unimportant0
+PRE_Q4c,1,1
+PRE_Q4c,2,2
+PRE_Q4c,3,3
+PRE_Q4c,4,4
+PRE_Q4c,5,Neither important nor unimportant5
+PRE_Q4c,6,6
+PRE_Q4c,7,7
+PRE_Q4c,8,8
+PRE_Q4c,9,9
+PRE_Q4c,10,Extremely important10
+PRE_Q4c,99,No opinion
+PRE_Q4c,998,Skipped
+PRE_Q4c,999,T2 only group
+PRE_Q4d,0,Completely unimportant0
+PRE_Q4d,1,1
+PRE_Q4d,2,2
+PRE_Q4d,3,3
+PRE_Q4d,4,4
+PRE_Q4d,5,Neither important nor unimportant5
+PRE_Q4d,6,6
+PRE_Q4d,7,7
+PRE_Q4d,8,8
+PRE_Q4d,9,9
+PRE_Q4d,10,Extremely important10
+PRE_Q4d,99,No opinion
+PRE_Q4d,998,Skipped
+PRE_Q4d,999,T2 only group
+PRE_Q5a,1,Favor strongly
+PRE_Q5a,2,Favor somewhat
+PRE_Q5a,3,Neither favor nor oppose
+PRE_Q5a,4,Oppose somewhat
+PRE_Q5a,5,Oppose strongly
+PRE_Q5a,99,No opinion
+PRE_Q5a,998,Skipped
+PRE_Q5a,999,T2 only group
+PRE_Q5b,1,Favor strongly
+PRE_Q5b,2,Favor somewhat
+PRE_Q5b,3,Neither favor nor oppose
+PRE_Q5b,4,Oppose somewhat
+PRE_Q5b,5,Oppose strongly
+PRE_Q5b,99,No opinion
+PRE_Q5b,998,Skipped
+PRE_Q5b,999,T2 only group
+PRE_Q5c,1,Favor strongly
+PRE_Q5c,2,Favor somewhat
+PRE_Q5c,3,Neither favor nor oppose
+PRE_Q5c,4,Oppose somewhat
+PRE_Q5c,5,Oppose strongly
+PRE_Q5c,99,No opinion
+PRE_Q5c,998,Skipped
+PRE_Q5c,999,T2 only group
+PRE_Q5d,1,Favor strongly
+PRE_Q5d,2,Favor somewhat
+PRE_Q5d,3,Neither favor nor oppose
+PRE_Q5d,4,Oppose somewhat
+PRE_Q5d,5,Oppose strongly
+PRE_Q5d,99,No opinion
+PRE_Q5d,998,Skipped
+PRE_Q5d,999,T2 only group
+PRE_Q5e,1,Favor strongly
+PRE_Q5e,2,Favor somewhat
+PRE_Q5e,3,Neither favor nor oppose
+PRE_Q5e,4,Oppose somewhat
+PRE_Q5e,5,Oppose strongly
+PRE_Q5e,99,No opinion
+PRE_Q5e,998,Skipped
+PRE_Q5e,999,T2 only group
+PRE_Q6a,0,Completely ineffective0
+PRE_Q6a,1,1
+PRE_Q6a,2,2
+PRE_Q6a,3,3
+PRE_Q6a,4,4
+PRE_Q6a,5,Neither effective nor ineffective5
+PRE_Q6a,6,6
+PRE_Q6a,7,7
+PRE_Q6a,8,8
+PRE_Q6a,9,9
+PRE_Q6a,10,Completely effective10
+PRE_Q6a,99,No opinion
+PRE_Q6a,998,Skipped
+PRE_Q6a,999,T2 only group
+PRE_Q6b,0,Completely ineffective0
+PRE_Q6b,1,1
+PRE_Q6b,2,2
+PRE_Q6b,3,3
+PRE_Q6b,4,4
+PRE_Q6b,5,Neither effective nor ineffective5
+PRE_Q6b,6,6
+PRE_Q6b,7,7
+PRE_Q6b,8,8
+PRE_Q6b,9,9
+PRE_Q6b,10,Completely effective10
+PRE_Q6b,99,No opinion
+PRE_Q6b,998,Skipped
+PRE_Q6b,999,T2 only group
+PRE_Q6c,0,Completely ineffective0
+PRE_Q6c,1,1
+PRE_Q6c,2,2
+PRE_Q6c,3,3
+PRE_Q6c,4,4
+PRE_Q6c,5,Neither effective nor ineffective5
+PRE_Q6c,6,6
+PRE_Q6c,7,7
+PRE_Q6c,8,8
+PRE_Q6c,9,9
+PRE_Q6c,10,Completely effective10
+PRE_Q6c,99,No opinion
+PRE_Q6c,998,Skipped
+PRE_Q6c,999,T2 only group
+PRE_Q6d,0,Completely ineffective0
+PRE_Q6d,1,1
+PRE_Q6d,2,2
+PRE_Q6d,3,3
+PRE_Q6d,4,4
+PRE_Q6d,5,Neither effective nor ineffective5
+PRE_Q6d,6,6
+PRE_Q6d,7,7
+PRE_Q6d,8,8
+PRE_Q6d,9,9
+PRE_Q6d,10,Completely effective10
+PRE_Q6d,99,No opinion
+PRE_Q6d,998,Skipped
+PRE_Q6d,999,T2 only group
+PRE_Q6e,0,Completely ineffective0
+PRE_Q6e,1,1
+PRE_Q6e,2,2
+PRE_Q6e,3,3
+PRE_Q6e,4,4
+PRE_Q6e,5,Neither effective nor ineffective5
+PRE_Q6e,6,6
+PRE_Q6e,7,7
+PRE_Q6e,8,8
+PRE_Q6e,9,9
+PRE_Q6e,10,Completely effective10
+PRE_Q6e,99,No opinion
+PRE_Q6e,998,Skipped
+PRE_Q6e,999,T2 only group
+PRE_Q7x,0,Completely unimportant0
+PRE_Q7x,1,1
+PRE_Q7x,2,2
+PRE_Q7x,3,3
+PRE_Q7x,4,4
+PRE_Q7x,5,Neither important nor unimportant5
+PRE_Q7x,6,6
+PRE_Q7x,7,7
+PRE_Q7x,8,8
+PRE_Q7x,9,9
+PRE_Q7x,10,Extremely important10
+PRE_Q7x,99,No opinion
+PRE_Q7x,998,Skipped
+PRE_Q7x,999,T2 only group
+PRE_Q8a,1,Agree strongly
+PRE_Q8a,2,Agree somewhat
+PRE_Q8a,3,Neither agree nor disagree
+PRE_Q8a,4,Disagree somewhat
+PRE_Q8a,5,Disagree strongly
+PRE_Q8a,99,No opinion
+PRE_Q8a,998,Skipped
+PRE_Q8a,999,T2 only group
+PRE_Q8b,1,Agree strongly
+PRE_Q8b,2,Agree somewhat
+PRE_Q8b,3,Neither agree nor disagree
+PRE_Q8b,4,Disagree somewhat
+PRE_Q8b,5,Disagree strongly
+PRE_Q8b,99,No opinion
+PRE_Q8b,998,Skipped
+PRE_Q8b,999,T2 only group
+PRE_Q8c,1,Agree strongly
+PRE_Q8c,2,Agree somewhat
+PRE_Q8c,3,Neither agree nor disagree
+PRE_Q8c,4,Disagree somewhat
+PRE_Q8c,5,Disagree strongly
+PRE_Q8c,99,No opinion
+PRE_Q8c,998,Skipped
+PRE_Q8c,999,T2 only group
+PRE_Q8d,1,Agree strongly
+PRE_Q8d,2,Agree somewhat
+PRE_Q8d,3,Neither agree nor disagree
+PRE_Q8d,4,Disagree somewhat
+PRE_Q8d,5,Disagree strongly
+PRE_Q8d,99,No opinion
+PRE_Q8d,998,Skipped
+PRE_Q8d,999,T2 only group
+PRE_Q9a,1,Favor strongly
+PRE_Q9a,2,Favor somewhat
+PRE_Q9a,3,Neither favor nor oppose
+PRE_Q9a,4,Oppose somewhat
+PRE_Q9a,5,Oppose strongly
+PRE_Q9a,99,No opinion
+PRE_Q9a,998,Skipped
+PRE_Q9a,999,T2 only group
+PRE_Q9b,1,Favor strongly
+PRE_Q9b,2,Favor somewhat
+PRE_Q9b,3,Neither favor nor oppose
+PRE_Q9b,4,Oppose somewhat
+PRE_Q9b,5,Oppose strongly
+PRE_Q9b,99,No opinion
+PRE_Q9b,998,Skipped
+PRE_Q9b,999,T2 only group
+PRE_Q9c,1,Favor strongly
+PRE_Q9c,2,Favor somewhat
+PRE_Q9c,3,Neither favor nor oppose
+PRE_Q9c,4,Oppose somewhat
+PRE_Q9c,5,Oppose strongly
+PRE_Q9c,99,No opinion
+PRE_Q9c,998,Skipped
+PRE_Q9c,999,T2 only group
+PRE_Q9d,1,Favor strongly
+PRE_Q9d,2,Favor somewhat
+PRE_Q9d,3,Neither favor nor oppose
+PRE_Q9d,4,Oppose somewhat
+PRE_Q9d,5,Oppose strongly
+PRE_Q9d,99,No opinion
+PRE_Q9d,998,Skipped
+PRE_Q9d,999,T2 only group
+PRE_Q9e,1,Favor strongly
+PRE_Q9e,2,Favor somewhat
+PRE_Q9e,3,Neither favor nor oppose
+PRE_Q9e,4,Oppose somewhat
+PRE_Q9e,5,Oppose strongly
+PRE_Q9e,99,No opinion
+PRE_Q9e,998,Skipped
+PRE_Q9e,999,T2 only group
+PRE_Q10a,0,Completely ineffective0
+PRE_Q10a,1,1
+PRE_Q10a,2,2
+PRE_Q10a,3,3
+PRE_Q10a,4,4
+PRE_Q10a,5,Neither effective nor ineffective5
+PRE_Q10a,6,6
+PRE_Q10a,7,7
+PRE_Q10a,8,8
+PRE_Q10a,9,9
+PRE_Q10a,10,Completely effective10
+PRE_Q10a,99,No opinion
+PRE_Q10a,998,Skipped
+PRE_Q10a,999,T2 only group
+PRE_Q10b,0,Completely ineffective0
+PRE_Q10b,1,1
+PRE_Q10b,2,2
+PRE_Q10b,3,3
+PRE_Q10b,4,4
+PRE_Q10b,5,Neither effective nor ineffective5
+PRE_Q10b,6,6
+PRE_Q10b,7,7
+PRE_Q10b,8,8
+PRE_Q10b,9,9
+PRE_Q10b,10,Completely effective10
+PRE_Q10b,99,No opinion
+PRE_Q10b,998,Skipped
+PRE_Q10b,999,T2 only group
+PRE_Q10c,0,Completely ineffective0
+PRE_Q10c,1,1
+PRE_Q10c,2,2
+PRE_Q10c,3,3
+PRE_Q10c,4,4
+PRE_Q10c,5,Neither effective nor ineffective5
+PRE_Q10c,6,6
+PRE_Q10c,7,7
+PRE_Q10c,8,8
+PRE_Q10c,9,9
+PRE_Q10c,10,Completely effective10
+PRE_Q10c,99,No opinion
+PRE_Q10c,998,Skipped
+PRE_Q10c,999,T2 only group
+PRE_Q10d,0,Completely ineffective0
+PRE_Q10d,1,1
+PRE_Q10d,2,2
+PRE_Q10d,3,3
+PRE_Q10d,4,4
+PRE_Q10d,5,Neither effective nor ineffective5
+PRE_Q10d,6,6
+PRE_Q10d,7,7
+PRE_Q10d,8,8
+PRE_Q10d,9,9
+PRE_Q10d,10,Completely effective10
+PRE_Q10d,99,No opinion
+PRE_Q10d,998,Skipped
+PRE_Q10d,999,T2 only group
+PRE_Q10e,0,Completely ineffective0
+PRE_Q10e,1,1
+PRE_Q10e,2,2
+PRE_Q10e,3,3
+PRE_Q10e,4,4
+PRE_Q10e,5,Neither effective nor ineffective5
+PRE_Q10e,6,6
+PRE_Q10e,7,7
+PRE_Q10e,8,8
+PRE_Q10e,9,9
+PRE_Q10e,10,Completely effective10
+PRE_Q10e,99,No opinion
+PRE_Q10e,998,Skipped
+PRE_Q10e,999,T2 only group
+PRE_Q11a,1,Agree strongly
+PRE_Q11a,2,Agree somewhat
+PRE_Q11a,3,Neither agree nor disagree
+PRE_Q11a,4,Disagree somewhat
+PRE_Q11a,5,Disagree strongly
+PRE_Q11a,99,No opinion
+PRE_Q11a,998,Skipped
+PRE_Q11a,999,T2 only group
+PRE_Q11b,1,Agree strongly
+PRE_Q11b,2,Agree somewhat
+PRE_Q11b,3,Neither agree nor disagree
+PRE_Q11b,4,Disagree somewhat
+PRE_Q11b,5,Disagree strongly
+PRE_Q11b,99,No opinion
+PRE_Q11b,998,Skipped
+PRE_Q11b,999,T2 only group
+PRE_Q11c,1,Agree strongly
+PRE_Q11c,2,Agree somewhat
+PRE_Q11c,3,Neither agree nor disagree
+PRE_Q11c,4,Disagree somewhat
+PRE_Q11c,5,Disagree strongly
+PRE_Q11c,99,No opinion
+PRE_Q11c,998,Skipped
+PRE_Q11c,999,T2 only group
+PRE_Q11d,1,Agree strongly
+PRE_Q11d,2,Agree somewhat
+PRE_Q11d,3,Neither agree nor disagree
+PRE_Q11d,4,Disagree somewhat
+PRE_Q11d,5,Disagree strongly
+PRE_Q11d,99,No opinion
+PRE_Q11d,998,Skipped
+PRE_Q11d,999,T2 only group
+PRE_Q11e,1,Agree strongly
+PRE_Q11e,2,Agree somewhat
+PRE_Q11e,3,Neither agree nor disagree
+PRE_Q11e,4,Disagree somewhat
+PRE_Q11e,5,Disagree strongly
+PRE_Q11e,99,No opinion
+PRE_Q11e,998,Skipped
+PRE_Q11e,999,T2 only group
+PRE_Q11f,1,Agree strongly
+PRE_Q11f,2,Agree somewhat
+PRE_Q11f,3,Neither agree nor disagree
+PRE_Q11f,4,Disagree somewhat
+PRE_Q11f,5,Disagree strongly
+PRE_Q11f,99,No opinion
+PRE_Q11f,998,Skipped
+PRE_Q11f,999,T2 only group
+PRE_Q11g,1,Agree strongly
+PRE_Q11g,2,Agree somewhat
+PRE_Q11g,3,Neither agree nor disagree
+PRE_Q11g,4,Disagree somewhat
+PRE_Q11g,5,Disagree strongly
+PRE_Q11g,99,No opinion
+PRE_Q11g,998,Skipped
+PRE_Q11g,999,T2 only group
+PRE_Q12a,1,Favor strongly
+PRE_Q12a,2,Favor somewhat
+PRE_Q12a,3,Neither favor nor oppose
+PRE_Q12a,4,Oppose somewhat
+PRE_Q12a,5,Oppose strongly
+PRE_Q12a,99,No opinion
+PRE_Q12a,998,Skipped
+PRE_Q12a,999,T2 only group
+PRE_Q12b,1,Favor strongly
+PRE_Q12b,2,Favor somewhat
+PRE_Q12b,3,Neither favor nor oppose
+PRE_Q12b,4,Oppose somewhat
+PRE_Q12b,5,Oppose strongly
+PRE_Q12b,99,No opinion
+PRE_Q12b,998,Skipped
+PRE_Q12b,999,T2 only group
+PRE_Q12c,1,Favor strongly
+PRE_Q12c,2,Favor somewhat
+PRE_Q12c,3,Neither favor nor oppose
+PRE_Q12c,4,Oppose somewhat
+PRE_Q12c,5,Oppose strongly
+PRE_Q12c,99,No opinion
+PRE_Q12c,998,Skipped
+PRE_Q12c,999,T2 only group
+PRE_Q12d,1,Favor strongly
+PRE_Q12d,2,Favor somewhat
+PRE_Q12d,3,Neither favor nor oppose
+PRE_Q12d,4,Oppose somewhat
+PRE_Q12d,5,Oppose strongly
+PRE_Q12d,99,No opinion
+PRE_Q12d,998,Skipped
+PRE_Q12d,999,T2 only group
+PRE_Q13a,0,Completely ineffective0
+PRE_Q13a,1,1
+PRE_Q13a,2,2
+PRE_Q13a,3,3
+PRE_Q13a,4,4
+PRE_Q13a,5,Neither effective nor ineffective5
+PRE_Q13a,6,6
+PRE_Q13a,7,7
+PRE_Q13a,8,8
+PRE_Q13a,9,9
+PRE_Q13a,10,Completely effective10
+PRE_Q13a,99,No opinion
+PRE_Q13a,998,Skipped
+PRE_Q13a,999,T2 only group
+PRE_Q13b,0,Completely ineffective0
+PRE_Q13b,1,1
+PRE_Q13b,2,2
+PRE_Q13b,3,3
+PRE_Q13b,4,4
+PRE_Q13b,5,Neither effective nor ineffective5
+PRE_Q13b,6,6
+PRE_Q13b,7,7
+PRE_Q13b,8,8
+PRE_Q13b,9,9
+PRE_Q13b,10,Completely effective10
+PRE_Q13b,99,No opinion
+PRE_Q13b,998,Skipped
+PRE_Q13b,999,T2 only group
+PRE_Q13c,0,Completely ineffective0
+PRE_Q13c,1,1
+PRE_Q13c,2,2
+PRE_Q13c,3,3
+PRE_Q13c,4,4
+PRE_Q13c,5,Neither effective nor ineffective5
+PRE_Q13c,6,6
+PRE_Q13c,7,7
+PRE_Q13c,8,8
+PRE_Q13c,9,9
+PRE_Q13c,10,Completely effective10
+PRE_Q13c,99,No opinion
+PRE_Q13c,998,Skipped
+PRE_Q13c,999,T2 only group
+PRE_Q13d,0,Completely ineffective0
+PRE_Q13d,1,1
+PRE_Q13d,2,2
+PRE_Q13d,3,3
+PRE_Q13d,4,4
+PRE_Q13d,5,Neither effective nor ineffective5
+PRE_Q13d,6,6
+PRE_Q13d,7,7
+PRE_Q13d,8,8
+PRE_Q13d,9,9
+PRE_Q13d,10,Completely effective10
+PRE_Q13d,99,No opinion
+PRE_Q13d,998,Skipped
+PRE_Q13d,999,T2 only group
+PRE_Q14x,0,Completely unimportant0
+PRE_Q14x,1,1
+PRE_Q14x,2,2
+PRE_Q14x,3,3
+PRE_Q14x,4,4
+PRE_Q14x,5,Neither important nor unimportant5
+PRE_Q14x,6,6
+PRE_Q14x,7,7
+PRE_Q14x,8,8
+PRE_Q14x,9,9
+PRE_Q14x,10,Extremely important10
+PRE_Q14x,99,No opinion
+PRE_Q14x,998,Skipped
+PRE_Q14x,999,T2 only group
+PRE_Q15a,1,Agree strongly
+PRE_Q15a,2,Agree somewhat
+PRE_Q15a,3,Neither agree nor disagree
+PRE_Q15a,4,Disagree somewhat
+PRE_Q15a,5,Disagree strongly
+PRE_Q15a,99,No opinion
+PRE_Q15a,998,Skipped
+PRE_Q15a,999,T2 only group
+PRE_Q15b,1,Agree strongly
+PRE_Q15b,2,Agree somewhat
+PRE_Q15b,3,Neither agree nor disagree
+PRE_Q15b,4,Disagree somewhat
+PRE_Q15b,5,Disagree strongly
+PRE_Q15b,99,No opinion
+PRE_Q15b,998,Skipped
+PRE_Q15b,999,T2 only group
+PRE_Q16a,1,Favor strongly
+PRE_Q16a,2,Favor somewhat
+PRE_Q16a,3,Neither favor nor oppose
+PRE_Q16a,4,Oppose somewhat
+PRE_Q16a,5,Oppose strongly
+PRE_Q16a,99,No opinion
+PRE_Q16a,998,Skipped
+PRE_Q16a,999,T2 only group
+PRE_Q16b,1,Favor strongly
+PRE_Q16b,2,Favor somewhat
+PRE_Q16b,3,Neither favor nor oppose
+PRE_Q16b,4,Oppose somewhat
+PRE_Q16b,5,Oppose strongly
+PRE_Q16b,99,No opinion
+PRE_Q16b,998,Skipped
+PRE_Q16b,999,T2 only group
+PRE_Q16c,1,Favor strongly
+PRE_Q16c,2,Favor somewhat
+PRE_Q16c,3,Neither favor nor oppose
+PRE_Q16c,4,Oppose somewhat
+PRE_Q16c,5,Oppose strongly
+PRE_Q16c,99,No opinion
+PRE_Q16c,998,Skipped
+PRE_Q16c,999,T2 only group
+PRE_Q16d,1,Favor strongly
+PRE_Q16d,2,Favor somewhat
+PRE_Q16d,3,Neither favor nor oppose
+PRE_Q16d,4,Oppose somewhat
+PRE_Q16d,5,Oppose strongly
+PRE_Q16d,99,No opinion
+PRE_Q16d,998,Skipped
+PRE_Q16d,999,T2 only group
+PRE_Q17a,1,Agree strongly
+PRE_Q17a,2,Agree somewhat
+PRE_Q17a,3,Neither agree nor disagree
+PRE_Q17a,4,Disagree somewhat
+PRE_Q17a,5,Disagree strongly
+PRE_Q17a,99,No opinion
+PRE_Q17a,998,Skipped
+PRE_Q17a,999,T2 only group
+PRE_Q17b,1,Agree strongly
+PRE_Q17b,2,Agree somewhat
+PRE_Q17b,3,Neither agree nor disagree
+PRE_Q17b,4,Disagree somewhat
+PRE_Q17b,5,Disagree strongly
+PRE_Q17b,99,No opinion
+PRE_Q17b,998,Skipped
+PRE_Q17b,999,T2 only group
+PRE_Q17c,1,Agree strongly
+PRE_Q17c,2,Agree somewhat
+PRE_Q17c,3,Neither agree nor disagree
+PRE_Q17c,4,Disagree somewhat
+PRE_Q17c,5,Disagree strongly
+PRE_Q17c,99,No opinion
+PRE_Q17c,998,Skipped
+PRE_Q17c,999,T2 only group
+PRE_Q17d,1,Agree strongly
+PRE_Q17d,2,Agree somewhat
+PRE_Q17d,3,Neither agree nor disagree
+PRE_Q17d,4,Disagree somewhat
+PRE_Q17d,5,Disagree strongly
+PRE_Q17d,99,No opinion
+PRE_Q17d,998,Skipped
+PRE_Q17d,999,T2 only group
+PRE_Q17e,1,Agree strongly
+PRE_Q17e,2,Agree somewhat
+PRE_Q17e,3,Neither agree nor disagree
+PRE_Q17e,4,Disagree somewhat
+PRE_Q17e,5,Disagree strongly
+PRE_Q17e,99,No opinion
+PRE_Q17e,998,Skipped
+PRE_Q17e,999,T2 only group
+PRE_Q18a,1,Agree strongly
+PRE_Q18a,2,Agree somewhat
+PRE_Q18a,3,Neither agree nor disagree
+PRE_Q18a,4,Disagree somewhat
+PRE_Q18a,5,Disagree strongly
+PRE_Q18a,99,No opinion
+PRE_Q18a,998,Skipped
+PRE_Q18a,999,T2 only group
+PRE_Q18b,1,Agree strongly
+PRE_Q18b,2,Agree somewhat
+PRE_Q18b,3,Neither agree nor disagree
+PRE_Q18b,4,Disagree somewhat
+PRE_Q18b,5,Disagree strongly
+PRE_Q18b,99,No opinion
+PRE_Q18b,998,Skipped
+PRE_Q18b,999,T2 only group
+PRE_Q18c,1,Agree strongly
+PRE_Q18c,2,Agree somewhat
+PRE_Q18c,3,Neither agree nor disagree
+PRE_Q18c,4,Disagree somewhat
+PRE_Q18c,5,Disagree strongly
+PRE_Q18c,99,No opinion
+PRE_Q18c,998,Skipped
+PRE_Q18c,999,T2 only group
+PRE_Q18d,1,Agree strongly
+PRE_Q18d,2,Agree somewhat
+PRE_Q18d,3,Neither agree nor disagree
+PRE_Q18d,4,Disagree somewhat
+PRE_Q18d,5,Disagree strongly
+PRE_Q18d,99,No opinion
+PRE_Q18d,998,Skipped
+PRE_Q18d,999,T2 only group
+PRE_Q18e,1,Agree strongly
+PRE_Q18e,2,Agree somewhat
+PRE_Q18e,3,Neither agree nor disagree
+PRE_Q18e,4,Disagree somewhat
+PRE_Q18e,5,Disagree strongly
+PRE_Q18e,99,No opinion
+PRE_Q18e,998,Skipped
+PRE_Q18e,999,T2 only group
+PRE_Q18f,1,Agree strongly
+PRE_Q18f,2,Agree somewhat
+PRE_Q18f,3,Neither agree nor disagree
+PRE_Q18f,4,Disagree somewhat
+PRE_Q18f,5,Disagree strongly
+PRE_Q18f,99,No opinion
+PRE_Q18f,998,Skipped
+PRE_Q18f,999,T2 only group
+PRE_Q19,1,"50,000"
+PRE_Q19,2,"500,000"
+PRE_Q19,3,"5,000,000"
+PRE_Q19,4,"15,000,000"
+PRE_Q19,99,Couldn't say
+PRE_Q19,998,Skipped
+PRE_Q19,999,T2 only group
+PRE_Q20,1,Increase electoral competition
+PRE_Q20,2,Ensure a majority for one party over another
+PRE_Q20,3,Include independents in the primary process
+PRE_Q20,4,Make them much smaller
+PRE_Q20,99,Couldn't say
+PRE_Q20,998,Skipped
+PRE_Q20,999,T2 only group
+PRE_Q21,1,10%
+PRE_Q21,2,30%
+PRE_Q21,3,50%
+PRE_Q21,4,70%
+PRE_Q21,99,Couldn't say
+PRE_Q21,998,Skipped
+PRE_Q21,999,T2 only group
+PRE_Q22,1,Ireland
+PRE_Q22,2,United Kingdom
+PRE_Q22,3,Australia
+PRE_Q22,4,South Korea
+PRE_Q22,99,Couldn't say
+PRE_Q22,998,Skipped
+PRE_Q22,999,T2 only group
+PRE_Q23,1,Nobody
+PRE_Q23,2,Men between 18 and 25 years old
+PRE_Q23,3,Both men and women between 18 and 25 years old
+PRE_Q23,4,Men and women who receive federal grants for education
+PRE_Q23,99,Couldn't say
+PRE_Q23,998,Skipped
+PRE_Q23,999,T2 only group
+PRE_Q24,1,Gets more votes than any other candidate
+PRE_Q24,2,Gets a majority of all the votes cast
+PRE_Q24,3,Gets more Electoral College votes than any other candidate
+PRE_Q24,4,Gets a majority of Electoral College votes
+PRE_Q24,99,Couldn't say
+PRE_Q24,998,Skipped
+PRE_Q24,999,T2 only group
+PRE_Q25,1,Every 5 years
+PRE_Q25,2,Every 10 years
+PRE_Q25,3,Every 15 years
+PRE_Q25,4,Every 20 years
+PRE_Q25,99,Couldn't say
+PRE_Q25,998,Skipped
+PRE_Q25,999,T2 only group
+PRE_Q26,1,Nevada and South Carolina
+PRE_Q26,2,Iowa and New Hampshire
+PRE_Q26,3,Indiana and New Mexico
+PRE_Q26,4,Wyoming and Delaware
+PRE_Q26,5,Michigan and Florida
+PRE_Q26,99,Couldn't say
+PRE_Q26,998,Skipped
+PRE_Q26,999,T2 only group
+PRE_Q27a,1,None
+PRE_Q27a,2,1-2 days
+PRE_Q27a,4,3-4 days
+PRE_Q27a,5,Almost every day
+PRE_Q27a,8,Skipped
+PRE_Q27a,9,T2 only group
+PRE_Q27b,1,None
+PRE_Q27b,2,1-2 days
+PRE_Q27b,4,3-4 days
+PRE_Q27b,5,Almost every day
+PRE_Q27b,8,Skipped
+PRE_Q27b,9,T2 only group
+PRE_Q27c,1,None
+PRE_Q27c,2,1-2 days
+PRE_Q27c,4,3-4 days
+PRE_Q27c,5,Almost every day
+PRE_Q27c,8,Skipped
+PRE_Q27c,9,T2 only group
+PRE_Q28,1,Practically never
+PRE_Q28,2,About once a month
+PRE_Q28,3,About once a week
+PRE_Q28,4,Several times a week
+PRE_Q28,5,Almost every day
+PRE_Q28,8,Skipped
+PRE_Q28,9,T2 only group
+PRE_Q29,1,Not at all interested
+PRE_Q29,2,Not very interested
+PRE_Q29,3,Somewhat interested
+PRE_Q29,4,Very interested
+PRE_Q29,8,Skipped
+PRE_Q29,9,T2 only group
+PRE_Q30,1,"No, have never served"
+PRE_Q30,2,"Yes, served in the past"
+PRE_Q30,3,"Yes, serving currently"
+PRE_Q30,8,Skipped
+PRE_Q30,9,T2 only group
+POST_Q1,1,I did not vote
+POST_Q1,2,"I thought about voting, but didn't"
+POST_Q1,3,"I usually vote, but didn't that time"
+POST_Q1,4,I am sure I voted
+POST_Q1,99,Don't know
+POST_Q1,998,Skipped
+POST_Q1,999,Not Asked
+POST_Q2x,1,Very unlikely
+POST_Q2x,2,Somewhat unlikely
+POST_Q2x,3,Neither likely nor unlikely
+POST_Q2x,4,Somewhat likely
+POST_Q2x,5,Very likely
+POST_Q2x,99,Don't know
+POST_Q2x,998,Skipped
+POST_Q2x,999,Not Asked
+POST_Q3x,1,Very unlikely
+POST_Q3x,2,Somewhat unlikely
+POST_Q3x,3,Neither likely nor unlikely
+POST_Q3x,4,Somewhat likely
+POST_Q3x,5,Very likely
+POST_Q3x,99,Don't know
+POST_Q3x,998,Skipped
+POST_Q3x,999,Not Asked
+POST_Q4a,0,Completely unimportant0
+POST_Q4a,1,1
+POST_Q4a,2,2
+POST_Q4a,3,3
+POST_Q4a,4,4
+POST_Q4a,5,Neither important nor unimportant5
+POST_Q4a,6,6
+POST_Q4a,7,7
+POST_Q4a,8,8
+POST_Q4a,9,9
+POST_Q4a,10,Extremely important10
+POST_Q4a,99,No opinion
+POST_Q4a,998,Skipped
+POST_Q4a,999,Not Asked
+POST_Q4b,0,Completely unimportant0
+POST_Q4b,1,1
+POST_Q4b,2,2
+POST_Q4b,3,3
+POST_Q4b,4,4
+POST_Q4b,5,Neither important nor unimportant5
+POST_Q4b,6,6
+POST_Q4b,7,7
+POST_Q4b,8,8
+POST_Q4b,9,9
+POST_Q4b,10,Extremely important10
+POST_Q4b,99,No opinion
+POST_Q4b,998,Skipped
+POST_Q4b,999,Not Asked
+POST_Q4c,0,Completely unimportant0
+POST_Q4c,1,1
+POST_Q4c,2,2
+POST_Q4c,3,3
+POST_Q4c,4,4
+POST_Q4c,5,Neither important nor unimportant5
+POST_Q4c,6,6
+POST_Q4c,7,7
+POST_Q4c,8,8
+POST_Q4c,9,9
+POST_Q4c,10,Extremely important10
+POST_Q4c,99,No opinion
+POST_Q4c,998,Skipped
+POST_Q4c,999,Not Asked
+POST_Q4d,0,Completely unimportant0
+POST_Q4d,1,1
+POST_Q4d,2,2
+POST_Q4d,3,3
+POST_Q4d,4,4
+POST_Q4d,5,Neither important nor unimportant5
+POST_Q4d,6,6
+POST_Q4d,7,7
+POST_Q4d,8,8
+POST_Q4d,9,9
+POST_Q4d,10,Extremely important10
+POST_Q4d,99,No opinion
+POST_Q4d,998,Skipped
+POST_Q4d,999,Not Asked
+POST_Q5a,1,Favor strongly
+POST_Q5a,2,Favor somewhat
+POST_Q5a,3,Neither favor nor oppose
+POST_Q5a,4,Oppose somewhat
+POST_Q5a,5,Oppose strongly
+POST_Q5a,99,No opinion
+POST_Q5a,998,Skipped
+POST_Q5a,999,Not Asked
+POST_Q5b,1,Favor strongly
+POST_Q5b,2,Favor somewhat
+POST_Q5b,3,Neither favor nor oppose
+POST_Q5b,4,Oppose somewhat
+POST_Q5b,5,Oppose strongly
+POST_Q5b,99,No opinion
+POST_Q5b,998,Skipped
+POST_Q5b,999,Not Asked
+POST_Q5c,1,Favor strongly
+POST_Q5c,2,Favor somewhat
+POST_Q5c,3,Neither favor nor oppose
+POST_Q5c,4,Oppose somewhat
+POST_Q5c,5,Oppose strongly
+POST_Q5c,99,No opinion
+POST_Q5c,998,Skipped
+POST_Q5c,999,Not Asked
+POST_Q5d,1,Favor strongly
+POST_Q5d,2,Favor somewhat
+POST_Q5d,3,Neither favor nor oppose
+POST_Q5d,4,Oppose somewhat
+POST_Q5d,5,Oppose strongly
+POST_Q5d,99,No opinion
+POST_Q5d,998,Skipped
+POST_Q5d,999,Not Asked
+POST_Q5e,1,Favor strongly
+POST_Q5e,2,Favor somewhat
+POST_Q5e,3,Neither favor nor oppose
+POST_Q5e,4,Oppose somewhat
+POST_Q5e,5,Oppose strongly
+POST_Q5e,99,No opinion
+POST_Q5e,998,Skipped
+POST_Q5e,999,Not Asked
+POST_Q6a,0,Completely ineffective0
+POST_Q6a,1,1
+POST_Q6a,2,2
+POST_Q6a,3,3
+POST_Q6a,4,4
+POST_Q6a,5,Neither effective nor ineffective5
+POST_Q6a,6,6
+POST_Q6a,7,7
+POST_Q6a,8,8
+POST_Q6a,9,9
+POST_Q6a,10,Completely effective10
+POST_Q6a,99,No opinion
+POST_Q6a,998,Skipped
+POST_Q6a,999,Not Asked
+POST_Q6b,0,Completely ineffective0
+POST_Q6b,1,1
+POST_Q6b,2,2
+POST_Q6b,3,3
+POST_Q6b,4,4
+POST_Q6b,5,Neither effective nor ineffective5
+POST_Q6b,6,6
+POST_Q6b,7,7
+POST_Q6b,8,8
+POST_Q6b,9,9
+POST_Q6b,10,Completely effective10
+POST_Q6b,99,No opinion
+POST_Q6b,998,Skipped
+POST_Q6b,999,Not Asked
+POST_Q6c,0,Completely ineffective0
+POST_Q6c,1,1
+POST_Q6c,2,2
+POST_Q6c,3,3
+POST_Q6c,4,4
+POST_Q6c,5,Neither effective nor ineffective5
+POST_Q6c,6,6
+POST_Q6c,7,7
+POST_Q6c,8,8
+POST_Q6c,9,9
+POST_Q6c,10,Completely effective10
+POST_Q6c,99,No opinion
+POST_Q6c,998,Skipped
+POST_Q6c,999,Not Asked
+POST_Q6d,0,Completely ineffective0
+POST_Q6d,1,1
+POST_Q6d,2,2
+POST_Q6d,3,3
+POST_Q6d,4,4
+POST_Q6d,5,Neither effective nor ineffective5
+POST_Q6d,6,6
+POST_Q6d,7,7
+POST_Q6d,8,8
+POST_Q6d,9,9
+POST_Q6d,10,Completely effective10
+POST_Q6d,99,No opinion
+POST_Q6d,998,Skipped
+POST_Q6d,999,Not Asked
+POST_Q6e,0,Completely ineffective0
+POST_Q6e,1,1
+POST_Q6e,2,2
+POST_Q6e,3,3
+POST_Q6e,4,4
+POST_Q6e,5,Neither effective nor ineffective5
+POST_Q6e,6,6
+POST_Q6e,7,7
+POST_Q6e,8,8
+POST_Q6e,9,9
+POST_Q6e,10,Completely effective10
+POST_Q6e,99,No opinion
+POST_Q6e,998,Skipped
+POST_Q6e,999,Not Asked
+POST_Q7x,0,Completely unimportant0
+POST_Q7x,1,1
+POST_Q7x,2,2
+POST_Q7x,3,3
+POST_Q7x,4,4
+POST_Q7x,5,Neither important nor unimportant5
+POST_Q7x,6,6
+POST_Q7x,7,7
+POST_Q7x,8,8
+POST_Q7x,9,9
+POST_Q7x,10,Extremely important10
+POST_Q7x,99,No opinion
+POST_Q7x,998,Skipped
+POST_Q7x,999,Not Asked
+POST_Q8a,1,Agree strongly
+POST_Q8a,2,Agree somewhat
+POST_Q8a,3,Neither agree nor disagree
+POST_Q8a,4,Disagree somewhat
+POST_Q8a,5,Disagree strongly
+POST_Q8a,99,No opinion
+POST_Q8a,998,Skipped
+POST_Q8a,999,Not Asked
+POST_Q8b,1,Agree strongly
+POST_Q8b,2,Agree somewhat
+POST_Q8b,3,Neither agree nor disagree
+POST_Q8b,4,Disagree somewhat
+POST_Q8b,5,Disagree strongly
+POST_Q8b,99,No opinion
+POST_Q8b,998,Skipped
+POST_Q8b,999,Not Asked
+POST_Q8c,1,Agree strongly
+POST_Q8c,2,Agree somewhat
+POST_Q8c,3,Neither agree nor disagree
+POST_Q8c,4,Disagree somewhat
+POST_Q8c,5,Disagree strongly
+POST_Q8c,99,No opinion
+POST_Q8c,998,Skipped
+POST_Q8c,999,Not Asked
+POST_Q8d,1,Agree strongly
+POST_Q8d,2,Agree somewhat
+POST_Q8d,3,Neither agree nor disagree
+POST_Q8d,4,Disagree somewhat
+POST_Q8d,5,Disagree strongly
+POST_Q8d,99,No opinion
+POST_Q8d,998,Skipped
+POST_Q8d,999,Not Asked
+POST_Q9a,1,Favor strongly
+POST_Q9a,2,Favor somewhat
+POST_Q9a,3,Neither favor nor oppose
+POST_Q9a,4,Oppose somewhat
+POST_Q9a,5,Oppose strongly
+POST_Q9a,99,No opinion
+POST_Q9a,998,Skipped
+POST_Q9a,999,Not Asked
+POST_Q9b,1,Favor strongly
+POST_Q9b,2,Favor somewhat
+POST_Q9b,3,Neither favor nor oppose
+POST_Q9b,4,Oppose somewhat
+POST_Q9b,5,Oppose strongly
+POST_Q9b,99,No opinion
+POST_Q9b,998,Skipped
+POST_Q9b,999,Not Asked
+POST_Q9c,1,Favor strongly
+POST_Q9c,2,Favor somewhat
+POST_Q9c,3,Neither favor nor oppose
+POST_Q9c,4,Oppose somewhat
+POST_Q9c,5,Oppose strongly
+POST_Q9c,99,No opinion
+POST_Q9c,998,Skipped
+POST_Q9c,999,Not Asked
+POST_Q9d,1,Favor strongly
+POST_Q9d,2,Favor somewhat
+POST_Q9d,3,Neither favor nor oppose
+POST_Q9d,4,Oppose somewhat
+POST_Q9d,5,Oppose strongly
+POST_Q9d,99,No opinion
+POST_Q9d,998,Skipped
+POST_Q9d,999,Not Asked
+POST_Q9e,1,Favor strongly
+POST_Q9e,2,Favor somewhat
+POST_Q9e,3,Neither favor nor oppose
+POST_Q9e,4,Oppose somewhat
+POST_Q9e,5,Oppose strongly
+POST_Q9e,99,No opinion
+POST_Q9e,998,Skipped
+POST_Q9e,999,Not Asked
+POST_Q10a,0,Completely ineffective0
+POST_Q10a,1,1
+POST_Q10a,2,2
+POST_Q10a,3,3
+POST_Q10a,4,4
+POST_Q10a,5,Neither effective nor ineffective5
+POST_Q10a,6,6
+POST_Q10a,7,7
+POST_Q10a,8,8
+POST_Q10a,9,9
+POST_Q10a,10,Completely effective10
+POST_Q10a,99,No opinion
+POST_Q10a,998,Skipped
+POST_Q10a,999,Not Asked
+POST_Q10b,0,Completely ineffective0
+POST_Q10b,1,1
+POST_Q10b,2,2
+POST_Q10b,3,3
+POST_Q10b,4,4
+POST_Q10b,5,Neither effective nor ineffective5
+POST_Q10b,6,6
+POST_Q10b,7,7
+POST_Q10b,8,8
+POST_Q10b,9,9
+POST_Q10b,10,Completely effective10
+POST_Q10b,99,No opinion
+POST_Q10b,998,Skipped
+POST_Q10b,999,Not Asked
+POST_Q10c,0,Completely ineffective0
+POST_Q10c,1,1
+POST_Q10c,2,2
+POST_Q10c,3,3
+POST_Q10c,4,4
+POST_Q10c,5,Neither effective nor ineffective5
+POST_Q10c,6,6
+POST_Q10c,7,7
+POST_Q10c,8,8
+POST_Q10c,9,9
+POST_Q10c,10,Completely effective10
+POST_Q10c,99,No opinion
+POST_Q10c,998,Skipped
+POST_Q10c,999,Not Asked
+POST_Q10d,0,Completely ineffective0
+POST_Q10d,1,1
+POST_Q10d,2,2
+POST_Q10d,3,3
+POST_Q10d,4,4
+POST_Q10d,5,Neither effective nor ineffective5
+POST_Q10d,6,6
+POST_Q10d,7,7
+POST_Q10d,8,8
+POST_Q10d,9,9
+POST_Q10d,10,Completely effective10
+POST_Q10d,99,No opinion
+POST_Q10d,998,Skipped
+POST_Q10d,999,Not Asked
+POST_Q10e,0,Completely ineffective0
+POST_Q10e,1,1
+POST_Q10e,2,2
+POST_Q10e,3,3
+POST_Q10e,4,4
+POST_Q10e,5,Neither effective nor ineffective5
+POST_Q10e,6,6
+POST_Q10e,7,7
+POST_Q10e,8,8
+POST_Q10e,9,9
+POST_Q10e,10,Completely effective10
+POST_Q10e,99,No opinion
+POST_Q10e,998,Skipped
+POST_Q10e,999,Not Asked
+POST_Q11a,1,Agree strongly
+POST_Q11a,2,Agree somewhat
+POST_Q11a,3,Neither agree nor disagree
+POST_Q11a,4,Disagree somewhat
+POST_Q11a,5,Disagree strongly
+POST_Q11a,99,No opinion
+POST_Q11a,998,Skipped
+POST_Q11a,999,Not Asked
+POST_Q11b,1,Agree strongly
+POST_Q11b,2,Agree somewhat
+POST_Q11b,3,Neither agree nor disagree
+POST_Q11b,4,Disagree somewhat
+POST_Q11b,5,Disagree strongly
+POST_Q11b,99,No opinion
+POST_Q11b,998,Skipped
+POST_Q11b,999,Not Asked
+POST_Q11c,1,Agree strongly
+POST_Q11c,2,Agree somewhat
+POST_Q11c,3,Neither agree nor disagree
+POST_Q11c,4,Disagree somewhat
+POST_Q11c,5,Disagree strongly
+POST_Q11c,99,No opinion
+POST_Q11c,998,Skipped
+POST_Q11c,999,Not Asked
+POST_Q11d,1,Agree strongly
+POST_Q11d,2,Agree somewhat
+POST_Q11d,3,Neither agree nor disagree
+POST_Q11d,4,Disagree somewhat
+POST_Q11d,5,Disagree strongly
+POST_Q11d,99,No opinion
+POST_Q11d,998,Skipped
+POST_Q11d,999,Not Asked
+POST_Q11e,1,Agree strongly
+POST_Q11e,2,Agree somewhat
+POST_Q11e,3,Neither agree nor disagree
+POST_Q11e,4,Disagree somewhat
+POST_Q11e,5,Disagree strongly
+POST_Q11e,99,No opinion
+POST_Q11e,998,Skipped
+POST_Q11e,999,Not Asked
+POST_Q11f,1,Agree strongly
+POST_Q11f,2,Agree somewhat
+POST_Q11f,3,Neither agree nor disagree
+POST_Q11f,4,Disagree somewhat
+POST_Q11f,5,Disagree strongly
+POST_Q11f,99,No opinion
+POST_Q11f,998,Skipped
+POST_Q11f,999,Not Asked
+POST_Q11g,1,Agree strongly
+POST_Q11g,2,Agree somewhat
+POST_Q11g,3,Neither agree nor disagree
+POST_Q11g,4,Disagree somewhat
+POST_Q11g,5,Disagree strongly
+POST_Q11g,99,No opinion
+POST_Q11g,998,Skipped
+POST_Q11g,999,Not Asked
+POST_Q12a,1,Favor strongly
+POST_Q12a,2,Favor somewhat
+POST_Q12a,3,Neither favor nor oppose
+POST_Q12a,4,Oppose somewhat
+POST_Q12a,5,Oppose strongly
+POST_Q12a,99,No opinion
+POST_Q12a,998,Skipped
+POST_Q12a,999,Not Asked
+POST_Q12b,1,Favor strongly
+POST_Q12b,2,Favor somewhat
+POST_Q12b,3,Neither favor nor oppose
+POST_Q12b,4,Oppose somewhat
+POST_Q12b,5,Oppose strongly
+POST_Q12b,99,No opinion
+POST_Q12b,998,Skipped
+POST_Q12b,999,Not Asked
+POST_Q12c,1,Favor strongly
+POST_Q12c,2,Favor somewhat
+POST_Q12c,3,Neither favor nor oppose
+POST_Q12c,4,Oppose somewhat
+POST_Q12c,5,Oppose strongly
+POST_Q12c,99,No opinion
+POST_Q12c,998,Skipped
+POST_Q12c,999,Not Asked
+POST_Q12d,1,Favor strongly
+POST_Q12d,2,Favor somewhat
+POST_Q12d,3,Neither favor nor oppose
+POST_Q12d,4,Oppose somewhat
+POST_Q12d,5,Oppose strongly
+POST_Q12d,99,No opinion
+POST_Q12d,998,Skipped
+POST_Q12d,999,Not Asked
+POST_Q13a,0,Completely ineffective0
+POST_Q13a,1,1
+POST_Q13a,2,2
+POST_Q13a,3,3
+POST_Q13a,4,4
+POST_Q13a,5,Neither effective nor ineffective5
+POST_Q13a,6,6
+POST_Q13a,7,7
+POST_Q13a,8,8
+POST_Q13a,9,9
+POST_Q13a,10,Completely effective10
+POST_Q13a,99,No opinion
+POST_Q13a,998,Skipped
+POST_Q13a,999,Not Asked
+POST_Q13b,0,Completely ineffective0
+POST_Q13b,1,1
+POST_Q13b,2,2
+POST_Q13b,3,3
+POST_Q13b,4,4
+POST_Q13b,5,Neither effective nor ineffective5
+POST_Q13b,6,6
+POST_Q13b,7,7
+POST_Q13b,8,8
+POST_Q13b,9,9
+POST_Q13b,10,Completely effective10
+POST_Q13b,99,No opinion
+POST_Q13b,998,Skipped
+POST_Q13b,999,Not Asked
+POST_Q13c,0,Completely ineffective0
+POST_Q13c,1,1
+POST_Q13c,2,2
+POST_Q13c,3,3
+POST_Q13c,4,4
+POST_Q13c,5,Neither effective nor ineffective5
+POST_Q13c,6,6
+POST_Q13c,7,7
+POST_Q13c,8,8
+POST_Q13c,9,9
+POST_Q13c,10,Completely effective10
+POST_Q13c,99,No opinion
+POST_Q13c,998,Skipped
+POST_Q13c,999,Not Asked
+POST_Q13d,0,Completely ineffective0
+POST_Q13d,1,1
+POST_Q13d,2,2
+POST_Q13d,3,3
+POST_Q13d,4,4
+POST_Q13d,5,Neither effective nor ineffective5
+POST_Q13d,6,6
+POST_Q13d,7,7
+POST_Q13d,8,8
+POST_Q13d,9,9
+POST_Q13d,10,Completely effective10
+POST_Q13d,99,No opinion
+POST_Q13d,998,Skipped
+POST_Q13d,999,Not Asked
+POST_Q14x,0,Completely unimportant0
+POST_Q14x,1,1
+POST_Q14x,2,2
+POST_Q14x,3,3
+POST_Q14x,4,4
+POST_Q14x,5,Neither important nor unimportant5
+POST_Q14x,6,6
+POST_Q14x,7,7
+POST_Q14x,8,8
+POST_Q14x,9,9
+POST_Q14x,10,Extremely important10
+POST_Q14x,99,No opinion
+POST_Q14x,998,Skipped
+POST_Q14x,999,Not Asked
+POST_Q15a,1,Agree strongly
+POST_Q15a,2,Agree somewhat
+POST_Q15a,3,Neither agree nor disagree
+POST_Q15a,4,Disagree somewhat
+POST_Q15a,5,Disagree strongly
+POST_Q15a,99,No opinion
+POST_Q15a,998,Skipped
+POST_Q15a,999,Not Asked
+POST_Q15b,1,Agree strongly
+POST_Q15b,2,Agree somewhat
+POST_Q15b,3,Neither agree nor disagree
+POST_Q15b,4,Disagree somewhat
+POST_Q15b,5,Disagree strongly
+POST_Q15b,99,No opinion
+POST_Q15b,998,Skipped
+POST_Q15b,999,Not Asked
+POST_Q16a,1,Favor strongly
+POST_Q16a,2,Favor somewhat
+POST_Q16a,3,Neither favor nor oppose
+POST_Q16a,4,Oppose somewhat
+POST_Q16a,5,Oppose strongly
+POST_Q16a,99,No opinion
+POST_Q16a,998,Skipped
+POST_Q16a,999,Not Asked
+POST_Q16b,1,Favor strongly
+POST_Q16b,2,Favor somewhat
+POST_Q16b,3,Neither favor nor oppose
+POST_Q16b,4,Oppose somewhat
+POST_Q16b,5,Oppose strongly
+POST_Q16b,99,No opinion
+POST_Q16b,998,Skipped
+POST_Q16b,999,Not Asked
+POST_Q16c,1,Favor strongly
+POST_Q16c,2,Favor somewhat
+POST_Q16c,3,Neither favor nor oppose
+POST_Q16c,4,Oppose somewhat
+POST_Q16c,5,Oppose strongly
+POST_Q16c,99,No opinion
+POST_Q16c,998,Skipped
+POST_Q16c,999,Not Asked
+POST_Q16d,1,Favor strongly
+POST_Q16d,2,Favor somewhat
+POST_Q16d,3,Neither favor nor oppose
+POST_Q16d,4,Oppose somewhat
+POST_Q16d,5,Oppose strongly
+POST_Q16d,99,No opinion
+POST_Q16d,998,Skipped
+POST_Q16d,999,Not Asked
+POST_Q17a,1,Agree strongly
+POST_Q17a,2,Agree somewhat
+POST_Q17a,3,Neither agree nor disagree
+POST_Q17a,4,Disagree somewhat
+POST_Q17a,5,Disagree strongly
+POST_Q17a,99,No opinion
+POST_Q17a,998,Skipped
+POST_Q17a,999,Not Asked
+POST_Q17b,1,Agree strongly
+POST_Q17b,2,Agree somewhat
+POST_Q17b,3,Neither agree nor disagree
+POST_Q17b,4,Disagree somewhat
+POST_Q17b,5,Disagree strongly
+POST_Q17b,99,No opinion
+POST_Q17b,998,Skipped
+POST_Q17b,999,Not Asked
+POST_Q17c,1,Agree strongly
+POST_Q17c,2,Agree somewhat
+POST_Q17c,3,Neither agree nor disagree
+POST_Q17c,4,Disagree somewhat
+POST_Q17c,5,Disagree strongly
+POST_Q17c,99,No opinion
+POST_Q17c,998,Skipped
+POST_Q17c,999,Not Asked
+POST_Q17d,1,Agree strongly
+POST_Q17d,2,Agree somewhat
+POST_Q17d,3,Neither agree nor disagree
+POST_Q17d,4,Disagree somewhat
+POST_Q17d,5,Disagree strongly
+POST_Q17d,99,No opinion
+POST_Q17d,998,Skipped
+POST_Q17d,999,Not Asked
+POST_Q17e,1,Agree strongly
+POST_Q17e,2,Agree somewhat
+POST_Q17e,3,Neither agree nor disagree
+POST_Q17e,4,Disagree somewhat
+POST_Q17e,5,Disagree strongly
+POST_Q17e,99,No opinion
+POST_Q17e,998,Skipped
+POST_Q17e,999,Not Asked
+POST_Q18a,1,Agree strongly
+POST_Q18a,2,Agree somewhat
+POST_Q18a,3,Neither agree nor disagree
+POST_Q18a,4,Disagree somewhat
+POST_Q18a,5,Disagree strongly
+POST_Q18a,99,No opinion
+POST_Q18a,998,Skipped
+POST_Q18a,999,Not Asked
+POST_Q18b,1,Agree strongly
+POST_Q18b,2,Agree somewhat
+POST_Q18b,3,Neither agree nor disagree
+POST_Q18b,4,Disagree somewhat
+POST_Q18b,5,Disagree strongly
+POST_Q18b,99,No opinion
+POST_Q18b,998,Skipped
+POST_Q18b,999,Not Asked
+POST_Q18c,1,Agree strongly
+POST_Q18c,2,Agree somewhat
+POST_Q18c,3,Neither agree nor disagree
+POST_Q18c,4,Disagree somewhat
+POST_Q18c,5,Disagree strongly
+POST_Q18c,99,No opinion
+POST_Q18c,998,Skipped
+POST_Q18c,999,Not Asked
+POST_Q18d,1,Agree strongly
+POST_Q18d,2,Agree somewhat
+POST_Q18d,3,Neither agree nor disagree
+POST_Q18d,4,Disagree somewhat
+POST_Q18d,5,Disagree strongly
+POST_Q18d,99,No opinion
+POST_Q18d,998,Skipped
+POST_Q18d,999,Not Asked
+POST_Q18e,1,Agree strongly
+POST_Q18e,2,Agree somewhat
+POST_Q18e,3,Neither agree nor disagree
+POST_Q18e,4,Disagree somewhat
+POST_Q18e,5,Disagree strongly
+POST_Q18e,99,No opinion
+POST_Q18e,998,Skipped
+POST_Q18e,999,Not Asked
+POST_Q18f,1,Agree strongly
+POST_Q18f,2,Agree somewhat
+POST_Q18f,3,Neither agree nor disagree
+POST_Q18f,4,Disagree somewhat
+POST_Q18f,5,Disagree strongly
+POST_Q18f,99,No opinion
+POST_Q18f,998,Skipped
+POST_Q18f,999,Not Asked
+POST_Q19,1,"50,000"
+POST_Q19,2,"500,000"
+POST_Q19,3,"5,000,000"
+POST_Q19,4,"15,000,000"
+POST_Q19,99,Couldn't say
+POST_Q19,998,Skipped
+POST_Q19,999,Not Asked
+POST_Q20,1,Increase electoral competition
+POST_Q20,2,Ensure a majority for one party over another
+POST_Q20,3,Include independents in the primary process
+POST_Q20,4,Make them much smaller
+POST_Q20,99,Couldn't say
+POST_Q20,998,Skipped
+POST_Q20,999,Not Asked
+POST_Q21,1,10%
+POST_Q21,2,30%
+POST_Q21,3,50%
+POST_Q21,4,70%
+POST_Q21,99,Couldn't say
+POST_Q21,998,Skipped
+POST_Q21,999,Not Asked
+POST_Q22,1,Ireland
+POST_Q22,2,United Kingdom
+POST_Q22,3,Australia
+POST_Q22,4,South Korea
+POST_Q22,99,Couldn't say
+POST_Q22,998,Skipped
+POST_Q22,999,Not Asked
+POST_Q23,1,Nobody
+POST_Q23,2,Men between 18 and 25 years old
+POST_Q23,3,Both men and women between 18 and 25 years old
+POST_Q23,4,Men and women who receive federal grants for education
+POST_Q23,99,Couldn't say
+POST_Q23,998,Skipped
+POST_Q23,999,Not Asked
+POST_Q24,1,Gets more votes than any other candidate
+POST_Q24,2,Gets a majority of all the votes cast
+POST_Q24,3,Gets more Electoral College votes than any other candidate
+POST_Q24,4,Gets a majority of Electoral College votes
+POST_Q24,99,Couldn't say
+POST_Q24,998,Skipped
+POST_Q24,999,Not Asked
+POST_Q25,1,Every 5 years
+POST_Q25,2,Every 10 years
+POST_Q25,3,Every 15 years
+POST_Q25,4,Every 20 years
+POST_Q25,99,Couldn't say
+POST_Q25,998,Skipped
+POST_Q25,999,Not Asked
+POST_Q26,1,Nevada and South Carolina
+POST_Q26,2,Iowa and New Hampshire
+POST_Q26,3,Indiana and New Mexico
+POST_Q26,4,Wyoming and Delaware
+POST_Q26,5,Michigan and Florida
+POST_Q26,99,Couldn't say
+POST_Q26,998,Skipped
+POST_Q26,999,Not Asked
+POST_Q27a,1,None
+POST_Q27a,2,1-2 days
+POST_Q27a,4,3-4 days
+POST_Q27a,5,Almost every day
+POST_Q27a,8,Skipped
+POST_Q27a,9,Not Asked
+POST_Q27b,1,None
+POST_Q27b,2,1-2 days
+POST_Q27b,4,3-4 days
+POST_Q27b,5,Almost every day
+POST_Q27b,8,Skipped
+POST_Q27b,9,Not Asked
+POST_Q27c,1,None
+POST_Q27c,2,1-2 days
+POST_Q27c,4,3-4 days
+POST_Q27c,5,Almost every day
+POST_Q27c,8,Skipped
+POST_Q27c,9,Not Asked
+POST_Q28,1,Practically never
+POST_Q28,2,About once a month
+POST_Q28,3,About once a week
+POST_Q28,4,Several times a week
+POST_Q28,5,Almost every day
+POST_Q28,8,Skipped
+POST_Q28,9,Not Asked
+POST_Q29,1,Not at all interested
+POST_Q29,2,Not very interested
+POST_Q29,3,Somewhat interested
+POST_Q29,4,Very interested
+POST_Q29,8,Skipped
+POST_Q29,9,Not Asked
+POST_Q30a_groups,0,A waste of time0
+POST_Q30a_groups,1,1
+POST_Q30a_groups,2,2
+POST_Q30a_groups,3,3
+POST_Q30a_groups,4,4
+POST_Q30a_groups,5,Exactly in the middle5
+POST_Q30a_groups,6,6
+POST_Q30a_groups,7,7
+POST_Q30a_groups,8,8
+POST_Q30a_groups,9,9
+POST_Q30a_groups,10,Extremely valuable10
+POST_Q30a_groups,99,No opinion
+POST_Q30a_groups,998,Skipped
+POST_Q30a_groups,999,Not in discussion group
+POST_Q30b_groups,0,A waste of time0
+POST_Q30b_groups,1,1
+POST_Q30b_groups,2,2
+POST_Q30b_groups,3,3
+POST_Q30b_groups,4,4
+POST_Q30b_groups,5,Exactly in the middle5
+POST_Q30b_groups,6,6
+POST_Q30b_groups,7,7
+POST_Q30b_groups,8,8
+POST_Q30b_groups,9,9
+POST_Q30b_groups,10,Extremely valuable10
+POST_Q30b_groups,99,No opinion
+POST_Q30b_groups,998,Skipped
+POST_Q30b_groups,999,Not in discussion group
+POST_Q30c_groups,0,A waste of time0
+POST_Q30c_groups,1,1
+POST_Q30c_groups,2,2
+POST_Q30c_groups,3,3
+POST_Q30c_groups,4,4
+POST_Q30c_groups,5,Exactly in the middle5
+POST_Q30c_groups,6,6
+POST_Q30c_groups,7,7
+POST_Q30c_groups,8,8
+POST_Q30c_groups,9,9
+POST_Q30c_groups,10,Extremely valuable10
+POST_Q30c_groups,99,No opinion
+POST_Q30c_groups,998,Skipped
+POST_Q30c_groups,999,Not in discussion group
+POST_Q30d_groups,0,A waste of time0
+POST_Q30d_groups,1,1
+POST_Q30d_groups,2,2
+POST_Q30d_groups,3,3
+POST_Q30d_groups,4,4
+POST_Q30d_groups,5,Exactly in the middle5
+POST_Q30d_groups,6,6
+POST_Q30d_groups,7,7
+POST_Q30d_groups,8,8
+POST_Q30d_groups,9,9
+POST_Q30d_groups,10,Extremely valuable10
+POST_Q30d_groups,99,No opinion
+POST_Q30d_groups,998,Skipped
+POST_Q30d_groups,999,Not in discussion group
+POST_Q31a_groups,1,Agree strongly
+POST_Q31a_groups,2,Agree somewhat
+POST_Q31a_groups,3,Neither agree nor disagree
+POST_Q31a_groups,4,Disagree somewhat
+POST_Q31a_groups,5,Disagree strongly
+POST_Q31a_groups,99,No opinion
+POST_Q31a_groups,998,Skipped
+POST_Q31a_groups,999,Not in discussion group
+POST_Q31b_groups,1,Agree strongly
+POST_Q31b_groups,2,Agree somewhat
+POST_Q31b_groups,3,Neither agree nor disagree
+POST_Q31b_groups,4,Disagree somewhat
+POST_Q31b_groups,5,Disagree strongly
+POST_Q31b_groups,99,No opinion
+POST_Q31b_groups,998,Skipped
+POST_Q31b_groups,999,Not in discussion group
+POST_Q31c_groups,1,Agree strongly
+POST_Q31c_groups,2,Agree somewhat
+POST_Q31c_groups,3,Neither agree nor disagree
+POST_Q31c_groups,4,Disagree somewhat
+POST_Q31c_groups,5,Disagree strongly
+POST_Q31c_groups,99,No opinion
+POST_Q31c_groups,998,Skipped
+POST_Q31c_groups,999,Not in discussion group
+POST_Q31d_groups,1,Agree strongly
+POST_Q31d_groups,2,Agree somewhat
+POST_Q31d_groups,3,Neither agree nor disagree
+POST_Q31d_groups,4,Disagree somewhat
+POST_Q31d_groups,5,Disagree strongly
+POST_Q31d_groups,99,No opinion
+POST_Q31d_groups,998,Skipped
+POST_Q31d_groups,999,Not in discussion group
+POST_Q31e_groups,1,Agree strongly
+POST_Q31e_groups,2,Agree somewhat
+POST_Q31e_groups,3,Neither agree nor disagree
+POST_Q31e_groups,4,Disagree somewhat
+POST_Q31e_groups,5,Disagree strongly
+POST_Q31e_groups,99,No opinion
+POST_Q31e_groups,998,Skipped
+POST_Q31e_groups,999,Not in discussion group
+POST_Q31f_groups,1,Agree strongly
+POST_Q31f_groups,2,Agree somewhat
+POST_Q31f_groups,3,Neither agree nor disagree
+POST_Q31f_groups,4,Disagree somewhat
+POST_Q31f_groups,5,Disagree strongly
+POST_Q31f_groups,99,No opinion
+POST_Q31f_groups,998,Skipped
+POST_Q31f_groups,999,Not in discussion group
+POST_Q32_groups,1,Hadn't read or had just glanced at it
+POST_Q32_groups,2,Had read less than half of it
+POST_Q32_groups,3,Had read about half of it
+POST_Q32_groups,4,Had read more than half of it
+POST_Q32_groups,99,Had read all or nearly all of it
+POST_Q32_groups,998,Skipped
+POST_Q32_groups,999,Not in discussion group
+POST_Q33_groups,1,Hadn't read or had just glanced at it
+POST_Q33_groups,2,Had read less than half of it
+POST_Q33_groups,3,Had read about half of it
+POST_Q33_groups,4,Had read more than half of it
+POST_Q33_groups,99,Had read all or nearly all of it
+POST_Q33_groups,998,Skipped
+POST_Q33_groups,999,Not in discussion group
+POST_Q34_groups,1,Mostly balanced
+POST_Q34_groups,2,Favored some positions over others
+POST_Q34_groups,99,Don't Know
+POST_Q34_groups,998,Skipped
+POST_Q34_groups,999,Not in discussion group
+POST_Q30x_readers,0,A waste of time0
+POST_Q30x_readers,1,1
+POST_Q30x_readers,2,2
+POST_Q30x_readers,3,3
+POST_Q30x_readers,4,4
+POST_Q30x_readers,5,Exactly in the middle5
+POST_Q30x_readers,6,6
+POST_Q30x_readers,7,7
+POST_Q30x_readers,8,8
+POST_Q30x_readers,9,9
+POST_Q30x_readers,10,Extremely valuable10
+POST_Q30x_readers,99,No opinion
+POST_Q30x_readers,998,Skipped
+POST_Q30x_readers,999,Not in reading group
+POST_Q32_readers,1,Hadn't read or had just glanced at it
+POST_Q32_readers,2,Had read less than half of it
+POST_Q32_readers,3,Had read about half of it
+POST_Q32_readers,4,Had read more than half of it
+POST_Q32_readers,99,Had read all or nearly all of it
+POST_Q32_readers,998,Skipped
+POST_Q32_readers,999,Not in reading group
+POST_Q33_readers,1,Hadn't read or had just glanced at it
+POST_Q33_readers,2,Had read less than half of it
+POST_Q33_readers,3,Had read about half of it
+POST_Q33_readers,4,Had read more than half of it
+POST_Q33_readers,99,Had read all or nearly all of it
+POST_Q33_readers,998,Skipped
+POST_Q33_readers,999,Not in reading group
+POST_Q34_readers,1,Mostly balanced
+POST_Q34_readers,2,Favored some positions over others
+POST_Q34_readers,99,Don't Know
+POST_Q34_readers,998,Skipped
+POST_Q34_readers,999,Not in reading group
+group,1,Discussion treatment
+group,2,Control group
+group,3,Reading only treatment
+group,4,T2 only measurement
+S1,1,"Monday, October 01, 03:00 PM Pacific, 06:00 PM Eastern"
+S1,2,"Monday, October 01, 03:30 PM Pacific, 06:30 PM Eastern"
+S1,3,"Monday, October 01, 03:30 PM Pacific, 06:30 PM Eastern"
+S1,4,"Monday, October 01, 04:30 PM Pacific, 07:30 PM Eastern"
+S1,5,"Monday, October 01, 06:00 PM Pacific, 09:00 PM Eastern"
+S1,6,"Monday, October 01, 06:30 PM Pacific, 09:30 PM Eastern"
+S1,7,"Tuesday, October 02, 03:30 PM Pacific, 06:30 PM Eastern"
+S1,8,"Tuesday, October 02, 04:00 PM Pacific, 07:00 PM Eastern"
+S1,9,"Tuesday, October 02, 06:00 PM Pacific, 09:00 PM Eastern"
+S1,10,"Wednesday, October 03, 04:00 PM Pacific, 07:00 PM Eastern"
+S1,11,"Wednesday, October 03, 04:30 PM Pacific, 07:30 PM Eastern"
+S1,12,"Wednesday, October 03, 05:30 PM Pacific, 08:30 PM Eastern"
+S1,13,"Wednesday, October 03, 06:00 PM Pacific, 09:00 PM Eastern"
+S1,14,"Wednesday, October 03, 06:30 PM Pacific, 09:30 PM Eastern"
+S1,15,"Thursday, October 04, 03:30 PM Pacific, 06:30 PM Eastern"
+S1,16,"Thursday, October 04, 04:00 PM Pacific, 07:00 PM Eastern"
+S1,17,"Thursday, October 04, 04:30 PM Pacific, 07:30 PM Eastern"
+S1,18,"Thursday, October 04, 05:30 PM Pacific, 08:30 PM Eastern"
+S1,19,"Thursday, October 04, 06:00 PM Pacific, 09:00 PM Eastern"
+S1,20,"Thursday, October 04, 06:30 PM Pacific, 09:30 PM Eastern"
+S1,99,Not in discussion group
+S2,1,"Monday, October 08, 03:00 PM Pacific, 06:00 PM Eastern"
+S2,2,"Monday, October 08, 03:30 PM Pacific, 06:30 PM Eastern"
+S2,3,"Monday, October 08, 03:30 PM Pacific, 06:30 PM Eastern"
+S2,4,"Monday, October 08, 04:30 PM Pacific, 07:30 PM Eastern"
+S2,5,"Monday, October 08, 06:00 PM Pacific, 09:00 PM Eastern"
+S2,6,"Monday, October 08, 06:30 PM Pacific, 09:30 PM Eastern"
+S2,7,"Tuesday, October 09, 03:30 PM Pacific, 06:30 PM Eastern"
+S2,8,"Tuesday, October 09, 04:00 PM Pacific, 07:00 PM Eastern"
+S2,9,"Tuesday, October 09, 06:00 PM Pacific, 09:00 PM Eastern"
+S2,10,"Wednesday, October 10, 04:00 PM Pacific, 07:00 PM Eastern"
+S2,11,"Wednesday, October 10, 04:30 PM Pacific, 07:30 PM Eastern"
+S2,12,"Wednesday, October 10, 05:30 PM Pacific, 08:30 PM Eastern"
+S2,13,"Wednesday, October 10, 06:00 PM Pacific, 09:00 PM Eastern"
+S2,14,"Wednesday, October 10, 06:30 PM Pacific, 09:30 PM Eastern"
+S2,15,"Thursday, October 11, 03:30 PM Pacific, 06:30 PM Eastern"
+S2,16,"Thursday, October 11, 04:00 PM Pacific, 07:00 PM Eastern"
+S2,17,"Thursday, October 11, 04:30 PM Pacific, 07:30 PM Eastern"
+S2,18,"Thursday, October 11, 05:30 PM Pacific, 08:30 PM Eastern"
+S2,19,"Thursday, October 11, 06:00 PM Pacific, 09:00 PM Eastern"
+S2,20,"Thursday, October 11, 06:30 PM Pacific, 09:30 PM Eastern"
+S2,99,Not in discussion group
+S3,1,"Monday, October 15, 03:00 PM Pacific, 06:00 PM Eastern"
+S3,2,"Monday, October 15, 03:30 PM Pacific, 06:30 PM Eastern"
+S3,3,"Monday, October 15, 03:30 PM Pacific, 06:30 PM Eastern"
+S3,4,"Monday, October 15, 04:30 PM Pacific, 07:30 PM Eastern"
+S3,5,"Monday, October 15, 06:00 PM Pacific, 09:00 PM Eastern"
+S3,6,"Monday, October 15, 06:30 PM Pacific, 09:30 PM Eastern"
+S3,7,"Tuesday, October 16, 03:30 PM Pacific, 06:30 PM Eastern"
+S3,8,"Tuesday, October 16, 04:00 PM Pacific, 07:00 PM Eastern"
+S3,9,"Tuesday, October 16, 06:00 PM Pacific, 09:00 PM Eastern"
+S3,10,"Wednesday, October 17, 04:00 PM Pacific, 07:00 PM Eastern"
+S3,11,"Wednesday, October 17, 04:30 PM Pacific, 07:30 PM Eastern"
+S3,12,"Wednesday, October 17, 05:30 PM Pacific, 08:30 PM Eastern"
+S3,13,"Wednesday, October 17, 06:00 PM Pacific, 09:00 PM Eastern"
+S3,14,"Wednesday, October 17, 06:30 PM Pacific, 09:30 PM Eastern"
+S3,15,"Thursday, October 18, 03:30 PM Pacific, 06:30 PM Eastern"
+S3,16,"Thursday, October 18, 04:00 PM Pacific, 07:00 PM Eastern"
+S3,17,"Thursday, October 18, 04:30 PM Pacific, 07:30 PM Eastern"
+S3,18,"Thursday, October 18, 05:30 PM Pacific, 08:30 PM Eastern"
+S3,19,"Thursday, October 18, 06:00 PM Pacific, 09:00 PM Eastern"
+S3,20,"Thursday, October 18, 06:30 PM Pacific, 09:30 PM Eastern"
+S3,99,Not in discussion group
+S4,1,"Monday, October 22, 03:00 PM Pacific, 06:00 PM Eastern"
+S4,2,"Monday, October 22, 03:30 PM Pacific, 06:30 PM Eastern"
+S4,3,"Monday, October 22, 03:30 PM Pacific, 06:30 PM Eastern"
+S4,4,"Monday, October 22, 04:30 PM Pacific, 07:30 PM Eastern"
+S4,5,"Monday, October 22, 06:00 PM Pacific, 09:00 PM Eastern"
+S4,6,"Monday, October 22, 06:30 PM Pacific, 09:30 PM Eastern"
+S4,7,"Tuesday, October 23, 03:30 PM Pacific, 06:30 PM Eastern"
+S4,8,"Tuesday, October 23, 04:00 PM Pacific, 07:00 PM Eastern"
+S4,9,"Tuesday, October 23, 06:00 PM Pacific, 09:00 PM Eastern"
+S4,10,"Wednesday, October 24, 04:00 PM Pacific, 07:00 PM Eastern"
+S4,11,"Wednesday, October 24, 04:30 PM Pacific, 07:30 PM Eastern"
+S4,12,"Wednesday, October 24, 05:30 PM Pacific, 08:30 PM Eastern"
+S4,13,"Wednesday, October 24, 06:00 PM Pacific, 09:00 PM Eastern"
+S4,14,"Wednesday, October 24, 06:30 PM Pacific, 09:30 PM Eastern"
+S4,15,"Thursday, October 25, 03:30 PM Pacific, 06:30 PM Eastern"
+S4,16,"Thursday, October 25, 04:00 PM Pacific, 07:00 PM Eastern"
+S4,17,"Thursday, October 25, 04:30 PM Pacific, 07:30 PM Eastern"
+S4,18,"Thursday, October 25, 05:30 PM Pacific, 08:30 PM Eastern"
+S4,19,"Thursday, October 25, 06:00 PM Pacific, 09:00 PM Eastern"
+S4,20,"Thursday, October 25, 06:30 PM Pacific, 09:30 PM Eastern"
+S4,99,Not in discussion group
+w1visit,99,Not in discussion or reading group
+w2visit,99,Not in discussion or reading group
+w3visit,99,Not in discussion or reading group
+w4visit,99,Not in discussion or reading group
+w1time,9999999999,Not in discussion or reading group
+w2time,9999999999,Not in discussion or reading group
+w3time,9999999999,Not in discussion or reading group
+w4time,9999999999,Not in discussion or reading group
+discuss1,99,Not in discussion group
+discuss2,99,Not in discussion group
+discuss3,99,Not in discussion group
+discuss4,99,Not in discussion group
+dtime1,9999999999,Not in discussion group
+dtime2,9999999999,Not in discussion group
+dtime3,9999999999,Not in discussion group
+dtime4,9999999999,Not in discussion group
+post,99,Not in discussion group
+birthyr,9998,Skipped
+birthyr,9999,Not Asked
+gender,1,Male
+gender,2,Female
+gender,8,Skipped
+gender,9,Not Asked
+pid7,1,Strong Democrat
+pid7,2,Not very strong Democrat
+pid7,3,Lean Democrat
+pid7,4,Independent
+pid7,5,Lean Republican
+pid7,6,Not very strong Republican
+pid7,7,Strong Republican
+pid7,8,Not sure
+pid7,9,Not Asked
+pid3,1,Democrat
+pid3,2,Republican
+pid3,3,Independent
+pid3,4,Other
+pid3,5,Not sure
+pid3,8,Skipped
+pid3,9,Not Asked
+race,1,White
+race,2,Black
+race,3,Hispanic
+race,4,Asian
+race,5,Native American
+race,6,Mixed
+race,7,Other
+race,8,Middle Eastern
+race,98,Skipped
+race,99,Not Asked
+educ,1,No HS
+educ,2,High school graduate
+educ,3,Some college
+educ,4,2-year
+educ,5,4-year
+educ,6,Post-grad
+educ,8,Skipped
+educ,9,Not Asked
+marstat,1,Married
+marstat,2,Separated
+marstat,3,Divorced
+marstat,4,Widowed
+marstat,5,Single
+marstat,6,Domestic partnership
+marstat,8,Skipped
+marstat,9,Not Asked
+ideo5,1,Very liberal
+ideo5,2,Liberal
+ideo5,3,Moderate
+ideo5,4,Conservative
+ideo5,5,Very Conservative
+ideo5,6,Not sure
+ideo5,8,Skipped
+ideo5,9,Not Asked
+churatd,1,Once a week or more
+churatd,2,A few times a month
+churatd,3,Less than once a month
+churatd,4,Almost never or never
+churatd,5,Not sure
+churatd,8,Skipped
+churatd,9,Not Asked
+religion,1,Protestant
+religion,2,Catholic
+religion,3,Jewish
+religion,4,Muslim
+religion,5,None
+religion,6,Some other religion (please specify):
+religion,7,Other Christian
+religion,8,Skipped
+religion,9,Not Asked
+polinterest,1,Very much interested
+polinterest,2,Somewhat interested
+polinterest,3,Not much interested
+polinterest,4,Not sure
+polinterest,8,Skipped
+polinterest,9,Not Asked
+income,1,"less than $10,000"
+income,2,"$10,000 - $14,999"
+income,3,"$15,000 - $19,999"
+income,4,"$20,000 - $24,999"
+income,5,"$25,000 - $29,999"
+income,6,"$30,000 - $39,999"
+income,7,"$40,000 - $49,999"
+income,8,"$50,000 - $59,999"
+income,9,"$60,000 - $69,999"
+income,10,"$70,000 - $79,999"
+income,11,"$80,000 - $99,999"
+income,12,"$100,000 - $119,999"
+income,13,"$120,000 - $149,999"
+income,14,"$150,000 or more"
+income,15,Prefer not to say
+income,98,Skipped
+income,99,Not Asked
+inputstate,1,Alabama
+inputstate,2,Alaska
+inputstate,4,Arizona
+inputstate,5,Arkansas
+inputstate,6,California
+inputstate,8,Colorado
+inputstate,9,Connecticut
+inputstate,10,Delaware
+inputstate,11,District of Columbia
+inputstate,12,Florida
+inputstate,13,Georgia
+inputstate,15,Hawaii
+inputstate,16,Idaho
+inputstate,17,Illinois
+inputstate,18,Indiana
+inputstate,19,Iowa
+inputstate,20,Kansas
+inputstate,21,Kentucky
+inputstate,22,Louisiana
+inputstate,23,Maine
+inputstate,24,Maryland
+inputstate,25,Massachusetts
+inputstate,26,Michigan
+inputstate,27,Minnesota
+inputstate,28,Mississippi
+inputstate,29,Missouri
+inputstate,30,Montana
+inputstate,31,Nebraska
+inputstate,32,Nevada
+inputstate,33,New Hampshire
+inputstate,34,New Jersey
+inputstate,35,New Mexico
+inputstate,36,New York
+inputstate,37,North Carolina
+inputstate,38,North Dakota
+inputstate,39,Ohio
+inputstate,40,Oklahoma
+inputstate,41,Oregon
+inputstate,42,Pennsylvania
+inputstate,44,Rhode Island
+inputstate,45,South Carolina
+inputstate,46,South Dakota
+inputstate,47,Tennessee
+inputstate,48,Texas
+inputstate,49,Utah
+inputstate,50,Vermont
+inputstate,51,Virginia
+inputstate,53,Washington
+inputstate,54,West Virginia
+inputstate,55,Wisconsin
+inputstate,56,Wyoming
+inputstate,60,American Samoa
+inputstate,64,Federated States of Micronesia
+inputstate,66,Guam
+inputstate,68,Marshall Islands
+inputstate,69,Northern Mariana Islands
+inputstate,70,Palau
+inputstate,72,Puerto Rico
+inputstate,74,U.S. Minor Outlying Islands
+inputstate,78,Virgin Islands
+inputstate,81,Alberta
+inputstate,82,British Columbia
+inputstate,83,Manitoba
+inputstate,84,New Brunswick
+inputstate,85,Newfoundland
+inputstate,86,Northwest Territories
+inputstate,87,Nova Scotia
+inputstate,88,Nunavut
+inputstate,89,Ontario
+inputstate,90,Prince Edward Island
+inputstate,91,Quebec
+inputstate,92,Saskatchewan
+inputstate,93,Yukon Territory
+inputstate,99,Not in the U.S. or Canada
+inputstate,998,Skipped
+inputstate,999,Not Asked
+votereg,1,Yes
+votereg,2,No
+votereg,3,Don't know
+votereg,8,Skipped
+votereg,9,Not Asked
+filter_$,0,Not Selected
+filter_$,1,Selected
