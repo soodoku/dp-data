@@ -1,0 +1,21 @@
+source_column,source_value,value_label
+NDFU,0,DELEGATE
+NDFU,1,NOT IN FU SAMPLE
+NDFU,2,REFUSED FU SURVEY
+NDFU,3,INITIAL REFUSAL
+NDFU,4,EXPRESSED INTEREST
+TICKET,0,all other non-participants
+TICKET,1,having tickets
+TICKET,2,no tickets
+PARTINTT,1,Participant
+PARTINTT,2,Non-Participant w/ ticket
+PARTINTT,3,Non-Participant intending to come
+PARTINTT,4,Pure Non-Participant
+PARTINTF,1,Participant
+PARTINTF,2,Non-Participant_Interested
+PARTINTF,3,Non-Participant_Not interested
+PARTINTF,8,Not sampled
+PARTINTF,9,Refused FU survey
+PARTINTC,1,Participant
+PARTINTC,2,Interested Non-Participant
+PARTINTC,3,Pure Non-Participant
