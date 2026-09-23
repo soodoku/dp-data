@@ -37,3 +37,11 @@ cdd-northern-ireland-survey,data/northern-ireland-2007/survey.parquet,256057,b7d
 cdd-northern-ireland-variables,data/northern-ireland-2007/variables.csv,60700,4083d1971969d65683c19c61d06535b42a0dfd869c262de20273ec6efcb96bec,7f20efe4c8955c4125eb6a1e6b709468,,not-specified,2026-09-22,source-dictionary
 cdd-northern-ireland-value-labels,data/northern-ireland-2007/value-labels.csv,31294,5bf170055ce60f92dc6dd8dfd2d2ce097cfa2a77c42aaa9a1655906db3164804,ef9f5cc1f7ac7f518cfba900d8ff9db1,,not-specified,2026-09-22,source-dictionary
 cdd-northern-ireland-groups,data/northern-ireland-2007/groups.csv,1240,cf7f63cb0c41bdf03f510e9a006b931d818e702bbd0ecd29ad029942b7ead6a1,0627f43cd90bd52ceda474918ca419d1,,not-specified,2026-09-22,group-roster
+cdd-uk-crime-survey,data/uk-crime-1994/survey.sav,300911,edbe1a694b6b1c0a90ec55c5c147465aa28ae727e6280f0423ac297f8883f242,1b0388d82ca59bb0a74b03a1702273f7,,not-specified,2026-09-22,survey-data
+cdd-uk-crime-variables,data/uk-crime-1994/variables.csv,22354,ca415c2a74265318662d0b8255d7e8a39260e976e938e516c880054d69d56789,50127140fab4eb96f4e388b865791f33,,not-specified,2026-09-22,source-dictionary
+cdd-uk-crime-value-labels,data/uk-crime-1994/value-labels.csv,39,355d2acaa276d4e050435819cd1870270f3a2cccddab59f6368ca593c0bf550c,1fbb35404cf034178732aed8554914b3,,not-specified,2026-09-22,source-dictionary
+cdd-uk-crime-codebook,data/uk-crime-1994/codebook.txt,249352,41c760118293d078623e26647b1c81443e4e4321e24ff0c2bc125287aadde3fa,37f1b900ef2e7cde26869be297c8b7ff,,not-specified,2026-09-22,source-dictionary
+cdd-uk-eu-survey,data/uk-eu-1995/survey.sav,232585,6ef6ef79903df1cce6c70db4e63025b15b66d500afa757815c7138d47a614166,a81a018448e9f4dba7694cb4bd213f1f,,not-specified,2026-09-22,survey-data
+cdd-uk-eu-variables,data/uk-eu-1995/variables.csv,24790,c2a3a68926df6b8d044dfc67b8937960e0fbed62552862893f1c0c40c0bb6f37,46f6ece73f24f3c6affb5bc4d4a08df3,,not-specified,2026-09-22,source-dictionary
+cdd-uk-eu-value-labels,data/uk-eu-1995/value-labels.csv,29217,c16f8fa90437a5dc9571f41055d9e8a80bd03270569f5fcf4f63a1f1a0731231,d9a9b15f91b9c8ec29d7f1647168e7f1,,not-specified,2026-09-22,source-dictionary
+cdd-uk-eu-codebook,data/uk-eu-1995/codebook.txt,185640,b80e89ba317d7775fd23970fab6d5f8b2a87b50ad0fca6592c274f20ab6b387a,0abe41097e37c49870b7d579dcc4e787,,not-specified,2026-09-22,source-dictionary

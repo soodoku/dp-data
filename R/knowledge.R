@@ -12,6 +12,41 @@ knowledge_participants <- function(poll_id, survey, groups = NULL) {
         ),
         group_id = as.character(as.integer(.data$group))
       )
+  } else if (poll_id == "uk-crime-1994") {
+    stopifnot(
+      all(abs(survey$caseid - round(survey$caseid)) < 1e-8),
+      !anyNA(survey$caseid), !anyDuplicated(round(survey$caseid)),
+      all(survey$sex %in% 0:1),
+      all(survey$group[!is.na(survey$group)] %in% 1:20)
+    )
+    participants <- survey |>
+      dplyr::filter(.data$part == 1, !is.na(.data$group)) |>
+      dplyr::arrange(.data$source_row) |>
+      dplyr::transmute(
+        source_row = .data$source_row,
+        respondent_id = as.character(as.integer(round(.data$caseid))),
+        female = as.integer(1 - .data$sex),
+        group_id = as.character(as.integer(.data$group))
+      )
+  } else if (poll_id == "uk-eu-1995") {
+    stopifnot(
+      all(survey$caseid == round(survey$caseid)),
+      !anyNA(survey$caseid), !anyDuplicated(survey$caseid),
+      all(as.numeric(survey$sex) %in% 0:1),
+      all(as.numeric(survey$group[survey$part == 1]) %in% c(1:15, 99))
+    )
+    participants <- survey |>
+      dplyr::filter(.data$part == 1, as.numeric(.data$eusize2) != -1) |>
+      dplyr::arrange(.data$source_row) |>
+      dplyr::transmute(
+        source_row = .data$source_row,
+        respondent_id = as.character(as.integer(.data$caseid)),
+        female = as.integer(.data$sex),
+        group_id = dplyr::if_else(
+          as.numeric(.data$group) == 99, NA_character_,
+          as.character(as.integer(.data$group))
+        )
+      )
   } else if (poll_id == "northern-ireland-2007") {
     if (is.null(groups)) {
       groups <- readr::read_csv(

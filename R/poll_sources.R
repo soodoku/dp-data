@@ -66,7 +66,7 @@ survey_value_labels <- function(data) {
     tibble::tibble(
       source_column = rep(name, length(labels)),
       source_value = as.character(unname(labels)),
-      value_label = names(labels)
+      value_label = as.character(names(labels))
     )
   }) |>
     purrr::list_rbind()
@@ -138,17 +138,34 @@ import_reviewed_surveys <- function() {
     groups, project_path("data", "northern-ireland-2007", "groups.csv"),
     overwrite = TRUE
   )
+  codebooks <- read_metadata("artifacts") |>
+    dplyr::filter(
+      .data$publication_status == "published",
+      basename(.data$location) == "codebook.txt"
+    )
+  purrr::walk(seq_len(nrow(codebooks)), function(row) {
+    record <- codebooks[row, ]
+    original <- project_path("vault", "cdd", record$original_archive_path)
+    stopifnot(
+      digest::digest(file = original, algo = "sha256") == record$sha256
+    )
+    fs::file_copy(original, project_path(record$location), overwrite = TRUE)
+  })
   invisible(TRUE)
 }
 
 read_poll_survey <- function(poll_id) {
-  if (poll_id == "uk-health-1998") {
-    haven::read_sav(
-      project_path("data", poll_id, "survey.sav"), user_na = TRUE
-    ) |>
+  record <- read_metadata("survey_sources") |>
+    dplyr::filter(.data$poll_id == .env$poll_id)
+  if (nrow(record) != 1L) {
+    stop("No reviewed survey reader for ", poll_id)
+  }
+  path <- project_path(record$public_path)
+  if (record$transformation == "exact-copy" && grepl("\\.sav$", path)) {
+    haven::read_sav(path, user_na = TRUE) |>
       dplyr::mutate(source_row = dplyr::row_number(), .before = 1)
-  } else if (poll_id == "northern-ireland-2007") {
-    arrow::read_parquet(project_path("data", poll_id, "survey.parquet"))
+  } else if (record$transformation == "exclude-verbatim") {
+    arrow::read_parquet(path)
   } else {
     stop("No reviewed survey reader for ", poll_id)
   }

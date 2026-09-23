@@ -1,10 +1,10 @@
 table,grain,primary_key,format,status,description
-respondents,one participant in one poll,poll_id + respondent_id,parquet,current,UK Health and Northern Ireland attendees with original survey identifiers
+respondents,one participant in one poll,poll_id + respondent_id,parquet,current,Reviewed knowledge samples with original survey identifiers
 items,one fielded item in one poll,poll_id + item_id,parquet,planned,Question text construct response scale and answer key
 responses,one person-item-wave response,poll_id + respondent_id + wave + item_id,parquet,planned,Observed item responses with explicit missing codes
 indices,one index definition in one poll,poll_id + index_id,parquet,planned,Knowledge and attitude index definitions
 index_items,one item contribution to an index,poll_id + index_id + item_id,parquet,planned,Index membership weight and direction
 groups,one discussion group in one session,poll_id + session_id + group_id,parquet,current,Group and session identifiers
 memberships,one person's group membership in one session,poll_id + respondent_id + session_id + group_id,parquet,current,Fixed or multiple membership weights
-knowledge_responses,one participant-item-wave response,poll_id + respondent_id + wave + item_id,parquet,current,Raw codes and scored responses rebuilt from the two reviewed survey inputs
+knowledge_responses,one participant-item-wave response,poll_id + respondent_id + wave + item_id,parquet,current,Raw codes and scored responses rebuilt from reviewed survey inputs
 knowledge_scores,one participant-wave score,poll_id + respondent_id + wave,parquet,current,Proportion correct with explicit zero-filled denominator and missing counts

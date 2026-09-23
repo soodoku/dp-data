@@ -20,12 +20,13 @@ Direct identifiers were found in at least one historical raw file. The archive
 therefore cannot be published as an undifferentiated dump. See
 [`docs/disclosure.md`](docs/disclosure.md).
 
-The first survey-based build covers **UK Health 1998** and **Northern Ireland
-2007**: 354 participants, 4,496 item responses, and 35 discussion groups. It
-reproduces both deposited knowledge batteries exactly and publishes typed
-Parquet tables in `output/`. The [build notes](docs/knowledge-build.md) document
-the source files, dictionaries, scoring rules, and a Northern Ireland roster
-parser correction that restores one participant's group.
+The survey-based build covers UK Health 1998, Northern Ireland 2007, UK Crime
+1994, and UK–EU 1995: 877 participants, 10,922 item-wave responses, and 70 known
+discussion groups. It reproduces all four deposited knowledge batteries exactly
+and publishes typed Parquet tables in `output/`. Group membership is known for
+873 participants; four UK–EU attendees remain in the knowledge data without a
+group assignment. The [build notes](docs/knowledge-build.md) document the
+sources, scoring rules, and group-file corrections.
 
 ## Reproduce
 
@@ -35,7 +36,7 @@ make check
 ```
 
 `make check` validates the Frictionless Data Package, source checksums,
-metadata contracts, the two-poll build and item-level parity, tests, and linting. `make inventory` is a local-only task
+metadata contracts, the survey-based build and item-level parity, tests, and linting. `make inventory` is a local-only task
 that rebuilds the CDD vault inventory from the untracked archive.
 
 The five original CDD ZIP exports stay untracked at the repository root.

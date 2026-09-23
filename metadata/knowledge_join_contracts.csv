@@ -1,3 +1,5 @@
 poll_id,left_universe,left_key,right_source_id,right_key,cardinality,expected_left_rows,expected_matches,unmatched_policy
 uk-health-1998,All rows of the published survey,serial_m,cdd-uk-health-survey,serial_m,one-to-one,230,230,Retain participant with missing group
 northern-ireland-2007,attend equals 1 in the published survey,cserial,cdd-northern-ireland-groups,column_1,one-to-one,124,124,Fail if any attendee lacks a group
+uk-crime-1994,part equals 1 and group is observed,caseid rounded within 1e-8,cdd-uk-crime-survey,caseid,one-to-one,299,299,Exclude the one attendee without a group to reproduce deposited battery
+uk-eu-1995,part equals 1 and raw eusize2 differs from -1,caseid,cdd-uk-eu-survey,caseid,one-to-one,224,220,Retain four documented group-99 attendees without assigning a fictitious group

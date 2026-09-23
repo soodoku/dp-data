@@ -1,6 +1,6 @@
 pilot_tables <- function() {
   polls <- purrr::map(
-    c("uk-health-1998", "northern-ireland-2007"), build_poll_knowledge
+    read_metadata("survey_sources")$poll_id, build_poll_knowledge
   )
   names(polls[[1]]) |>
     rlang::set_names() |>
@@ -9,16 +9,16 @@ pilot_tables <- function() {
     })
 }
 
-test_that("the two survey builds exactly reproduce the deposited batteries", {
+test_that("reviewed surveys reproduce the deposited batteries", {
   tables <- pilot_tables()
   audit <- validate_knowledge_parity(tables)
   expect_equal(sum(audit$item_differences), 0)
   expect_equal(sum(audit$female_differences), 0)
-  expect_equal(nrow(tables$respondents), 354L)
-  expect_equal(nrow(tables$knowledge_responses), 4496L)
-  expect_equal(nrow(tables$knowledge_scores), 708L)
-  expect_equal(nrow(tables$memberships), 354L)
-  expect_equal(nrow(tables$groups), 35L)
+  expect_equal(nrow(tables$respondents), 877L)
+  expect_equal(nrow(tables$knowledge_responses), 10922L)
+  expect_equal(nrow(tables$knowledge_scores), 1754L)
+  expect_equal(nrow(tables$memberships), 873L)
+  expect_equal(nrow(tables$groups), 70L)
 })
 
 test_that("Northern Ireland retains its first headerless group record", {
@@ -173,5 +173,86 @@ test_that("UK Health keys agree with the original correctness variables", {
       ),
       as.numeric(survey[[answer_column]])
     )
+  })
+})
+
+test_that("Crime uses validated original IDs and the deposited sample", {
+  survey <- read_poll_survey("uk-crime-1994")
+  selected <- knowledge_participants("uk-crime-1994", survey)
+  expect_equal(sum(survey$part == 1), 300)
+  expect_equal(sum(survey$part == 1 & is.na(survey$group)), 1)
+  expect_equal(nrow(selected), 299L)
+  expect_equal(as.integer(selected$respondent_id), selected$source_row)
+  expect_identical(
+    selected,
+    knowledge_participants("uk-crime-1994", dplyr::arrange(
+      survey, dplyr::desc(.data$source_row)
+    ))
+  )
+  damaged <- survey
+  damaged$caseid[[1]] <- 1.2
+  expect_error(knowledge_participants("uk-crime-1994", damaged))
+  damaged$caseid[[1]] <- damaged$caseid[[2]]
+  expect_error(knowledge_participants("uk-crime-1994", damaged))
+})
+
+test_that("EU excludes inapplicable batteries without inventing group 99", {
+  survey <- read_poll_survey("uk-eu-1995")
+  attendees <- survey |> dplyr::filter(.data$part == 1)
+  excluded <- attendees |> dplyr::filter(as.numeric(.data$eusize2) == -1)
+  post <- paste0(c("eusize", "swiss", "inctax", "elect", "ptyapp"), 2)
+  expect_equal(nrow(attendees), 238L)
+  expect_equal(nrow(excluded), 14L)
+  expect_true(all(purrr::map_lgl(excluded[post], ~ all(as.numeric(.x) == -1))))
+  built <- build_poll_knowledge("uk-eu-1995")
+  expect_equal(nrow(built$respondents), 224L)
+  expect_equal(nrow(built$memberships), 220L)
+  expect_setequal(built$groups$group_id, as.character(1:15))
+  unmatched <- dplyr::anti_join(
+    built$respondents, built$memberships,
+    by = c("poll_id", "respondent_id")
+  )
+  expect_setequal(unmatched$respondent_id, c("1008", "3132", "4316", "5022"))
+  expect_equal(
+    sum(built$knowledge_responses$respondent_id %in% unmatched$respondent_id),
+    40L
+  )
+  expect_true(all(built$knowledge_responses$raw_value %in% c(1, 2, 3, 8, 9)))
+  people <- knowledge_participants("uk-eu-1995", survey)
+  expect_identical(people, knowledge_participants(
+    "uk-eu-1995", dplyr::arrange(survey, dplyr::desc(.data$source_row))
+  ))
+  damaged <- survey
+  damaged$group <- as.numeric(damaged$group)
+  damaged$group[which(damaged$part == 1)[[1]]] <- 16
+  expect_error(knowledge_participants("uk-eu-1995", damaged))
+})
+
+test_that("empty source value labels retain their dictionary schema", {
+  labels <- survey_value_labels(read_poll_survey("uk-crime-1994"))
+  expect_equal(nrow(labels), 0L)
+  expect_named(labels, c("source_column", "source_value", "value_label"))
+  expect_true(all(purrr::map_lgl(labels, is.character)))
+})
+
+test_that("new poll keys agree with source correctness for answered items", {
+  purrr::walk(c("uk-crime-1994", "uk-eu-1995"), function(poll_id) {
+    survey <- read_poll_survey(poll_id)
+    items <- read_metadata("knowledge_items") |>
+      dplyr::filter(.data$poll_id == .env$poll_id)
+    responses <- build_poll_knowledge(poll_id)$knowledge_responses
+    purrr::walk(seq_len(nrow(items)), function(row) {
+      item <- items[row, ]
+      observed <- responses |>
+        dplyr::filter(
+          .data$source_column == item$source_column,
+          .data$response_status == "answered"
+        )
+      scored_column <- sub("raw$", "", item$benchmark_column)
+      expect_equal(
+        observed$correct,
+        as.numeric(survey[[scored_column]][observed$source_row])
+      )
+    })
   })
 })
