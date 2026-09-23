@@ -301,6 +301,82 @@
       }
     },
     {
+      "name": "survey_components",
+      "path": "metadata/survey_components.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "source_id",
+            "type": "string"
+          },
+          {
+            "name": "archive_path",
+            "type": "string"
+          },
+          {
+            "name": "source_sha256",
+            "type": "string"
+          },
+          {
+            "name": "source_rows",
+            "type": "number"
+          },
+          {
+            "name": "source_columns",
+            "type": "number"
+          },
+          {
+            "name": "public_path",
+            "type": "string"
+          },
+          {
+            "name": "transformation",
+            "type": "string"
+          },
+          {
+            "name": "publication_status",
+            "type": "string"
+          },
+          {
+            "name": "review_note",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "component_field_exclusions",
+      "path": "metadata/component_field_exclusions.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "source_column",
+            "type": "string"
+          },
+          {
+            "name": "reason",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
       "name": "source_field_exclusions",
       "path": "metadata/source_field_exclusions.csv",
       "profile": "tabular-data-resource",

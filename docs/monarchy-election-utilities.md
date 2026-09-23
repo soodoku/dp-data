@@ -102,8 +102,9 @@ free text. Review included field names, labels, values, and contact-like
 fields; CPL's ZIP field is geography, not a contact number. Publication is
 owner-authorized; the source catalog does not invent a reuse license.
 
-Across all nine implemented polls, outputs contain 2,088 participants, 30,944
+At the nine-poll stage, outputs contained 2,088 participants, 30,944
 item-wave responses, 4,176 participant-wave scores, 2,084 memberships, and 144
-groups. Four UK–EU attendees still lack known groups. Downstream analyses have
-not been switched to these outputs; attitude recodes and the remaining polls
-are still pending.
+groups. Four UK–EU attendees lack known groups. The
+[remaining-poll audit](remaining-polls.md) extends coverage to all 23 knowledge
+batteries. Downstream analyses have not been switched; attitude recodes remain
+pending.

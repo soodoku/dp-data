@@ -54,3 +54,4 @@ knowledge_scores,n_items,int32,FALSE,FALSE,Full battery denominator
 knowledge_scores,n_observed,int32,FALSE,FALSE,Number of substantively answered items
 knowledge_scores,n_correct,int32,FALSE,FALSE,Number correct among all battery items
 knowledge_scores,score_zero_filled,float64,FALSE,FALSE,n_correct divided by n_items; missing responses count as zero only in this score
+knowledge_responses,raw_text,string,TRUE,FALSE,Original reviewed text response; null for numeric items

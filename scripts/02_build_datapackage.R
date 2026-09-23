@@ -8,6 +8,8 @@ resources <- c(
   "canonical_columns",
   "knowledge_batteries",
   "survey_sources",
+  "survey_components",
+  "component_field_exclusions",
   "source_field_exclusions",
   "knowledge_items",
   "knowledge_join_contracts",

@@ -79,16 +79,16 @@ cpl-1996,knowledge-4,4,1,smog1,knowd1raw,2,1|3,99,Archived utility script and so
 cpl-1996,knowledge-5,5,1,setrt1,knowe1raw,1,2|3|4|5|6,99,Archived utility script and source codebook correctness fields
 cpl-1996,knowledge-6,6,1,profit1,knowf1raw,0,1|2|3,99,Archived utility script and source codebook correctness fields
 cpl-1996,knowledge-7,7,1,pctful1,knowg1raw,2,1|3|4|5,99,Archived utility script and source codebook correctness fields
-swepco-1996,knowledge-1,1,1,SOURCE1,knowa1raw,1,2|3|4|5|6,,Archived utility script and source codebook correctness fields
-swepco-1996,knowledge-2,2,1,USE1,knowb1raw,3,1|2,,Archived utility script and source codebook correctness fields
-swepco-1996,knowledge-3,3,1,RT1,knowc1raw,1,2|3,,Archived utility script and source codebook correctness fields
-swepco-1996,knowledge-4,4,1,SMOG1,knowd1raw,2,1|3,,Archived utility script and source codebook correctness fields
-swepco-1996,knowledge-5,5,1,SETRT1,knowe1raw,1,2|3|4|5|6,,Archived utility script and source codebook correctness fields
-wtu-1996,knowledge-1,1,1,SOURCE1,knowa1raw,3,1|2|4|5|6,,Archived utility script and source codebook correctness fields
-wtu-1996,knowledge-2,2,1,USE1,knowb1raw,1,2|3,,Archived utility script and source codebook correctness fields
-wtu-1996,knowledge-3,3,1,RT1,knowc1raw,1,2|3,,Archived utility script and source codebook correctness fields
-wtu-1996,knowledge-4,4,1,SMOG1,knowd1raw,2,1|3,,Archived utility script and source codebook correctness fields
-wtu-1996,knowledge-5,5,1,SETRT1,knowe1raw,1,2|3|4|5|6,,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-1,1,1,SOURCE1,knowa1raw,1,2|3|4|5|6,NA,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-2,2,1,USE1,knowb1raw,3,1|2,NA,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-3,3,1,RT1,knowc1raw,1,2|3,NA,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-4,4,1,SMOG1,knowd1raw,2,1|3,NA,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-5,5,1,SETRT1,knowe1raw,1,2|3|4|5|6,NA,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-1,1,1,SOURCE1,knowa1raw,3,1|2|4|5|6,NA,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-2,2,1,USE1,knowb1raw,1,2|3,NA,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-3,3,1,RT1,knowc1raw,1,2|3,NA,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-4,4,1,SMOG1,knowd1raw,2,1|3,NA,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-5,5,1,SETRT1,knowe1raw,1,2|3|4|5|6,NA,Archived utility script and source codebook correctness fields
 uk-monarchy-1996,knowledge-1,1,2,R5A,knowa2raw,2,1,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
 uk-monarchy-1996,knowledge-2,2,2,R5B,knowb2raw,2,1,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
 uk-monarchy-1996,knowledge-3,3,2,R5C,knowc2raw,1,2,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
@@ -119,13 +119,237 @@ cpl-1996,knowledge-4,4,2,smog2,knowd2raw,2,1|3,99,Archived utility script and so
 cpl-1996,knowledge-5,5,2,setrt2,knowe2raw,1,2|3|4|5|6,99,Archived utility script and source codebook correctness fields
 cpl-1996,knowledge-6,6,2,profit2,knowf2raw,0,1|2|3,99,Archived utility script and source codebook correctness fields
 cpl-1996,knowledge-7,7,2,pctful2,knowg2raw,2,1|3|4|5,99,Archived utility script and source codebook correctness fields
-swepco-1996,knowledge-1,1,2,SOURCE2,knowa2raw,1,2|3|4|5|6,,Archived utility script and source codebook correctness fields
-swepco-1996,knowledge-2,2,2,USE2,knowb2raw,3,1|2,,Archived utility script and source codebook correctness fields
-swepco-1996,knowledge-3,3,2,RT2,knowc2raw,1,2|3,,Archived utility script and source codebook correctness fields
-swepco-1996,knowledge-4,4,2,SMOG2,knowd2raw,2,1|3,,Archived utility script and source codebook correctness fields
-swepco-1996,knowledge-5,5,2,SETRT2,knowe2raw,1,2|3|4|5|6,,Archived utility script and source codebook correctness fields
-wtu-1996,knowledge-1,1,2,SOURCE2,knowa2raw,3,1|2|4|5|6,,Archived utility script and source codebook correctness fields
-wtu-1996,knowledge-2,2,2,USE2,knowb2raw,1,2|3|4,,Archived utility script and source codebook correctness fields
-wtu-1996,knowledge-3,3,2,RT2,knowc2raw,1,2|3,,Archived utility script and source codebook correctness fields
-wtu-1996,knowledge-4,4,2,SMOG2,knowd2raw,2,1|3,,Archived utility script and source codebook correctness fields
-wtu-1996,knowledge-5,5,2,SETRT2,knowe2raw,1,2|3|4|5|6,,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-1,1,2,SOURCE2,knowa2raw,1,2|3|4|5|6,NA,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-2,2,2,USE2,knowb2raw,3,1|2,NA,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-3,3,2,RT2,knowc2raw,1,2|3,NA,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-4,4,2,SMOG2,knowd2raw,2,1|3,NA,Archived utility script and source codebook correctness fields
+swepco-1996,knowledge-5,5,2,SETRT2,knowe2raw,1,2|3|4|5|6,NA,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-1,1,2,SOURCE2,knowa2raw,3,1|2|4|5|6,NA,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-2,2,2,USE2,knowb2raw,1,2|3|4,NA,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-3,3,2,RT2,knowc2raw,1,2|3,NA,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-4,4,2,SMOG2,knowd2raw,2,1|3,NA,Archived utility script and source codebook correctness fields
+wtu-1996,knowledge-5,5,2,SETRT2,knowe2raw,1,2|3|4|5|6,NA,Archived utility script and source codebook correctness fields
+australia-republic-1999,knowledge-1,1,1,rempres1,rpfact1r,2,1|3|4|96,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-2,2,1,qrole1,qrfact1r,4,1|2|3|96,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-3,3,1,ggrole1,ggfact1r,4,1|2|3|96,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-4,4,1,presrol1,prfact1r,4,1|2|3|96,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-5,5,1,busines1,busfact1r,1,2|3|96,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-6,6,1,welfare1,welfact1r,3,1|2|96,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-7,7,1,flagchg1,flagchg1r,1,2,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-8,8,1,anthem1,anthem1r,1,2,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-9,9,1,wdroyal1,wdroyal1r,2,1,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-10,10,1,pargame1,pargame1r,1,2,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-1,1,2,rempres2,rpfact2r,2,1|3|4|96,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-2,2,2,qrole2,qrfact2r,4,1|2|3|96,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-3,3,2,ggrole2,ggfact2r,4,1|2|3|96,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-4,4,2,presrol2,prfact2r,4,1|2|3|96,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-5,5,2,busines2,busfact2r,1,2|3|96,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-6,6,2,welfare2,welfact2r,3,1|2|96,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-7,7,2,flagchg2,flagchg2r,1,2,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-8,8,2,anthem2,anthem2r,1,2,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-9,9,2,wdroyal2,wdroyal2r,2,1,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+australia-republic-1999,knowledge-10,10,2,pargame2,pargame2r,1,2,97|98|99|100,Original survey labels; Australia codebook; aus_republic.R. dkchg wave flag overrides four change-item responses.
+btp-2007,knowledge-1,1,1,PRE_Q19,t1know1raw,3,1|2|4,99|998|999,2007 BTP codebook and original correctness fields; source codes not factor positions
+btp-2007,knowledge-2,2,1,PRE_Q20,t1know2raw,2,1|3|4,99|998|999,2007 BTP codebook and original correctness fields; source codes not factor positions
+btp-2007,knowledge-3,3,1,PRE_Q21,t1know3raw,3,1|2|4,99|998|999,2007 BTP codebook and original correctness fields; source codes not factor positions
+btp-2007,knowledge-4,4,1,PRE_Q22,t1know4raw,3,1|2|4,99|998|999,2007 BTP codebook and original correctness fields; source codes not factor positions
+btp-2007,knowledge-5,5,1,PRE_Q23,t1know5raw,2,1|3|4,99|998|999,2007 BTP codebook and original correctness fields; source codes not factor positions
+btp-2007,knowledge-6,6,1,PRE_Q24,t1know6raw,4,1|2|3,99|998|999,2007 BTP codebook and original correctness fields; source codes not factor positions
+btp-2007,knowledge-7,7,1,PRE_Q25,t1know7raw,2,1|3|4,99|998|999,2007 BTP codebook and original correctness fields; source codes not factor positions
+btp-2007,knowledge-8,8,1,PRE_Q26,t1know8raw,2,1|3|4|5,99|998|999,2007 BTP codebook and original correctness fields; source codes not factor positions
+btp-2007,knowledge-1,1,2,POST_Q19,t3know1raw,3,1|2|4,99|998|999,2007 BTP codebook and original correctness fields; source codes not factor positions
+btp-2007,knowledge-2,2,2,POST_Q20,t3know2raw,2,1|3|4,99|998|999,2007 BTP codebook and original correctness fields; source codes not factor positions
+btp-2007,knowledge-3,3,2,POST_Q21,t3know3raw,3,1|2|4,99|998|999,2007 BTP codebook and original correctness fields; source codes not factor positions
+btp-2007,knowledge-4,4,2,POST_Q22,t3know4raw,3,1|2|4,99|998|999,2007 BTP codebook and original correctness fields; source codes not factor positions
+btp-2007,knowledge-5,5,2,POST_Q23,t3know5raw,2,1|3|4,99|998|999,2007 BTP codebook and original correctness fields; source codes not factor positions
+btp-2007,knowledge-6,6,2,POST_Q24,t3know6raw,4,1|2|3,99|998|999,2007 BTP codebook and original correctness fields; source codes not factor positions
+btp-2007,knowledge-7,7,2,POST_Q25,t3know7raw,2,1|3|4,99|998|999,2007 BTP codebook and original correctness fields; source codes not factor positions
+btp-2007,knowledge-8,8,2,POST_Q26,t3know8raw,2,1|3|4|5,99|998|999,2007 BTP codebook and original correctness fields; source codes not factor positions
+btp-general-election-2004,knowledge-1,1,1,w4b60,t1know1raw,1,2|3,-4|-3|-2|-1|4|5,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-general-election-2004,knowledge-2,2,1,w4b61,t1know2raw,2,1|3|4,-4|-3|-2|-1|5|6,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-general-election-2004,knowledge-3,3,1,w4b62,t1know3raw,2,1,-4|-3|-2|-1|3|4,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-general-election-2004,knowledge-4,4,1,w4b63,t1know4raw,2,1,-4|-3|-2|-1|3|4,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-general-election-2004,knowledge-5,5,1,w4b64,t1know5raw,2,1,-4|-3|-2|-1|3|4,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-general-election-2004,knowledge-6,6,1,w4b65,t1know6raw,4,1|2|3,-4|-3|-2|-1|5|6,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-general-election-2004,knowledge-7,7,1,w4b66,t1know7raw,2,1|3|4,-4|-3|-2|-1|5|6,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-general-election-2004,knowledge-8,8,1,w4b68,t1know8raw,4,1|2|3,-4|-3|-2|-1|5|6,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-general-election-2004,knowledge-9,9,1,w4b69,t1know9raw,3,1|2|4,-4|-3|-2|-1|5|6,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-general-election-2004,knowledge-1,1,2,w4f60,t3know1raw,1,2|3,-4|-3|-2|-1|4|5,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-general-election-2004,knowledge-2,2,2,w4f61,t3know2raw,2,1|3|4,-4|-3|-2|-1|5|6,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-general-election-2004,knowledge-3,3,2,w4f62,t3know3raw,2,1,-4|-3|-2|-1|3|4,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-general-election-2004,knowledge-4,4,2,w4f63,t3know4raw,2,1,-4|-3|-2|-1|3|4,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-general-election-2004,knowledge-5,5,2,w4f64,t3know5raw,2,1,-4|-3|-2|-1|3|4,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-general-election-2004,knowledge-6,6,2,w4f65,t3know6raw,4,1|2|3,-4|-3|-2|-1|5|6,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-general-election-2004,knowledge-7,7,2,w4f66,t3know7raw,2,1|3|4,-4|-3|-2|-1|5|6,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-general-election-2004,knowledge-8,8,2,w4f68,t3know8raw,4,1|2|3,-4|-3|-2|-1|5|6,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-general-election-2004,knowledge-9,9,2,w4f69,t3know9raw,3,1|2|4,-4|-3|-2|-1|5|6,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
+btp-health-education-2005,knowledge-1,1,1,q15,t1know1raw,2,1|3|4,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
+btp-health-education-2005,knowledge-2,2,1,q16,t1know2raw,1,2|3,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
+btp-health-education-2005,knowledge-3,3,1,q17,t1know3raw,1,2|3,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
+btp-health-education-2005,knowledge-4,4,1,q26,t1know4raw,3,1|2|4|5,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
+btp-health-education-2005,knowledge-5,5,1,q27,t1know5raw,3,1|2|4,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
+btp-health-education-2005,knowledge-6,6,1,q28,t1know6raw,3,1|2|4,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
+btp-health-education-2005,knowledge-1,1,2,q15post,t3know1raw,2,1|3|4,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
+btp-health-education-2005,knowledge-2,2,2,q16post,t3know2raw,1,2|3,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
+btp-health-education-2005,knowledge-3,3,2,q17post,t3know3raw,1,2|3,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
+btp-health-education-2005,knowledge-4,4,2,q26post,t3know4raw,3,1|2|4|5,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
+btp-health-education-2005,knowledge-5,5,2,q27post,t3know5raw,3,1|2|4,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
+btp-health-education-2005,knowledge-6,6,2,q28post,t3know6raw,3,1|2|4,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
+btp-online-primaries-2004,knowledge-1,1,1,b1q43,t1know1raw,1,2|3,-2|-1|4,Original Stata labels and btp04_online_primaries.R; factor positions translated; refusal retained as missing
+btp-online-primaries-2004,knowledge-2,2,1,b1q44,t1know2raw,3,1|2|4,-2|-1|5,Original Stata labels and btp04_online_primaries.R; factor positions translated; refusal retained as missing
+btp-online-primaries-2004,knowledge-3,3,1,b1q45,t1know3raw,2,1|3|4,-2|-1|5,Original Stata labels and btp04_online_primaries.R; factor positions translated; refusal retained as missing
+btp-online-primaries-2004,knowledge-4,4,1,b1q46,t1know4raw,4,1|2|3,-2|-1|5,Original Stata labels and btp04_online_primaries.R; factor positions translated; refusal retained as missing
+btp-online-primaries-2004,knowledge-5,5,1,b1q47,t1know5raw,3,1|2,-2|-1|4,Original Stata labels and btp04_online_primaries.R; factor positions translated; refusal retained as missing
+btp-online-primaries-2004,knowledge-6,6,1,b1q48,t1know6raw,2,1|3|4,-2|-1|5,Original Stata labels and btp04_online_primaries.R; factor positions translated; refusal retained as missing
+btp-online-primaries-2004,knowledge-7,7,1,b1q49,t1know7raw,1,2|3,-2|-1|4,Original Stata labels and btp04_online_primaries.R; factor positions translated; refusal retained as missing
+btp-online-primaries-2004,knowledge-1,1,2,f1q43,t3know1raw,1,2|3,-2|-1|4,Original Stata labels and btp04_online_primaries.R; factor positions translated; refusal retained as missing
+btp-online-primaries-2004,knowledge-2,2,2,f1q44,t3know2raw,3,1|2|4,-2|-1|5,Original Stata labels and btp04_online_primaries.R; factor positions translated; refusal retained as missing
+btp-online-primaries-2004,knowledge-3,3,2,f1q45,t3know3raw,2,1|3|4,-2|-1|5,Original Stata labels and btp04_online_primaries.R; factor positions translated; refusal retained as missing
+btp-online-primaries-2004,knowledge-4,4,2,f1q46,t3know4raw,4,1|2|3,-2|-1|5,Original Stata labels and btp04_online_primaries.R; factor positions translated; refusal retained as missing
+btp-online-primaries-2004,knowledge-5,5,2,f1q47,t3know5raw,3,1|2,-2|-1|4,Original Stata labels and btp04_online_primaries.R; factor positions translated; refusal retained as missing
+btp-online-primaries-2004,knowledge-6,6,2,f1q48,t3know6raw,2,1|3|4,-2|-1|5,Original Stata labels and btp04_online_primaries.R; factor positions translated; refusal retained as missing
+btp-online-primaries-2004,knowledge-7,7,2,f1q49,t3know7raw,1,2|3,-2|-1|4,Original Stata labels and btp04_online_primaries.R; factor positions translated; refusal retained as missing
+bulgaria-crime-2002,knowledge-1,1,1,q12_1,t1q12_1r,2,1,99,Bulgaria knowledge index and source True/False labels; archived bulgaria.r
+bulgaria-crime-2002,knowledge-2,2,1,q12_2,t1q12_2r,2,1,99,Bulgaria knowledge index and source True/False labels; archived bulgaria.r
+bulgaria-crime-2002,knowledge-3,3,1,q12_3,t1q12_3r,2,1,99,Bulgaria knowledge index and source True/False labels; archived bulgaria.r
+bulgaria-crime-2002,knowledge-4,4,1,q12_4,t1q12_4r,2,1,99,Bulgaria knowledge index and source True/False labels; archived bulgaria.r
+bulgaria-crime-2002,knowledge-5,5,1,q12_5,t1q12_5r,1,2,99,Bulgaria knowledge index and source True/False labels; archived bulgaria.r
+bulgaria-crime-2002,knowledge-6,6,1,q12_6,t1q12_6r,2,1,99,Bulgaria knowledge index and source True/False labels; archived bulgaria.r
+bulgaria-crime-2002,knowledge-7,7,1,q12_7,t1q12_7r,1,2,99,Bulgaria knowledge index and source True/False labels; archived bulgaria.r
+bulgaria-crime-2002,knowledge-1,1,2,q12_1p,t2q12_1r,2,1,99,Bulgaria knowledge index and source True/False labels; archived bulgaria.r
+bulgaria-crime-2002,knowledge-2,2,2,q12_2p,t2q12_2r,2,1,99,Bulgaria knowledge index and source True/False labels; archived bulgaria.r
+bulgaria-crime-2002,knowledge-3,3,2,q12_3p,t2q12_3r,2,1,99,Bulgaria knowledge index and source True/False labels; archived bulgaria.r
+bulgaria-crime-2002,knowledge-4,4,2,q12_4p,t2q12_4r,2,1,99,Bulgaria knowledge index and source True/False labels; archived bulgaria.r
+bulgaria-crime-2002,knowledge-5,5,2,q12_5p,t2q12_5r,1,2,99,Bulgaria knowledge index and source True/False labels; archived bulgaria.r
+bulgaria-crime-2002,knowledge-6,6,2,q12_6p,t2q12_6r,2,1,99,Bulgaria knowledge index and source True/False labels; archived bulgaria.r
+bulgaria-crime-2002,knowledge-7,7,2,q12_7p,t2q12_7r,1,2,99,Bulgaria knowledge index and source True/False labels; archived bulgaria.r
+california-whats-next-2011,knowledge-1,1,1,q37,t1know1raw,2,1,98|99,California T1 and departure questionnaires; independent is a substantive incorrect party answer
+california-whats-next-2011,knowledge-2,2,1,q38,t1know2raw,2,1,98|99,California T1 and departure questionnaires; independent is a substantive incorrect party answer
+california-whats-next-2011,knowledge-3,3,1,q39,t1know3raw,3,1|2|4,98|99,California T1 and departure questionnaires; independent is a substantive incorrect party answer
+california-whats-next-2011,knowledge-4,4,1,q40,t1know4raw,3,1|2|4,98|99,California T1 and departure questionnaires; independent is a substantive incorrect party answer
+california-whats-next-2011,knowledge-5,5,1,q41,t1know5raw,3,1|2|4,98|99,California T1 and departure questionnaires; independent is a substantive incorrect party answer
+california-whats-next-2011,knowledge-1,1,2,t3q27,t3know1raw,1,2|3,4|88|98|99,California T1 and departure questionnaires; independent is a substantive incorrect party answer
+california-whats-next-2011,knowledge-2,2,2,t3q28,t3know2raw,1,2|3,4|88|98|99,California T1 and departure questionnaires; independent is a substantive incorrect party answer
+california-whats-next-2011,knowledge-3,3,2,t3q29,t3know3raw,2,1|3|4,5|88|98|99,California T1 and departure questionnaires; independent is a substantive incorrect party answer
+california-whats-next-2011,knowledge-4,4,2,t3q30,t3know4raw,2,1|3|4,5|88|98|99,California T1 and departure questionnaires; independent is a substantive incorrect party answer
+california-whats-next-2011,knowledge-5,5,2,t3q31,t3know5raw,3,1|2|4,5|88|98|99,California T1 and departure questionnaires; independent is a substantive incorrect party answer
+europolis-2009,knowledge-1,1,1,V1Q43,t1pk1raw,2,1|3|4,5|8|9|98|99|997|998|999,Europolis source labels and eu_2009.R; six paired items in deposited definition
+europolis-2009,knowledge-2,2,1,V1Q44,t1pk2raw,1,2|3|4,5|8|9|98|99|997|998|999,Europolis source labels and eu_2009.R; six paired items in deposited definition
+europolis-2009,knowledge-3,3,1,V1Q46,t1pk4raw,2,1|3|4,5|8|9|98|99|997|998|999,Europolis source labels and eu_2009.R; six paired items in deposited definition
+europolis-2009,knowledge-4,4,1,V1Q47,t1pk5raw,1,2|3|4,5|8|9|98|99|997|998|999,Europolis source labels and eu_2009.R; six paired items in deposited definition
+europolis-2009,knowledge-5,5,1,V1Q49,t1pk7raw,4,1|2|3,5|8|9|98|99|997|998|999,Europolis source labels and eu_2009.R; six paired items in deposited definition
+europolis-2009,knowledge-6,6,1,V1Q50,t1pk8raw,1,2|3|4,5|8|9|98|99|997|998|999,Europolis source labels and eu_2009.R; six paired items in deposited definition
+europolis-2009,knowledge-1,1,2,V3Q43,t3pk1raw,2,1|3|4,5|8|9|98|99|997|998|999,Europolis source labels and eu_2009.R; six paired items in deposited definition
+europolis-2009,knowledge-2,2,2,V3Q44,t3pk2raw,1,2|3|4,5|8|9|98|99|997|998|999,Europolis source labels and eu_2009.R; six paired items in deposited definition
+europolis-2009,knowledge-3,3,2,V3Q46,t3pk4raw,2,1|3|4,5|8|9|98|99|997|998|999,Europolis source labels and eu_2009.R; six paired items in deposited definition
+europolis-2009,knowledge-4,4,2,V3Q47,t3pk5raw,1,2|3|4,5|8|9|98|99|997|998|999,Europolis source labels and eu_2009.R; six paired items in deposited definition
+europolis-2009,knowledge-5,5,2,V3Q49,t3pk7raw,4,1|2|3,5|8|9|98|99|997|998|999,Europolis source labels and eu_2009.R; six paired items in deposited definition
+europolis-2009,knowledge-6,6,2,V3Q50,t3pk8raw,1,2|3|4,5|8|9|98|99|997|998|999,Europolis source labels and eu_2009.R; six paired items in deposited definition
+nic-1996,knowledge-1,1,1,SPEND1,efact1raw,3,1|2|4,8|9,NIC source questionnaire fields and nic1.R; round only storage noise within 1e-8; spending answer 3 scores 1
+nic-1996,knowledge-2,2,1,TRADE1,ffact1raw,1,2|3|4,8|9,NIC source questionnaire fields and nic1.R; round only storage noise within 1e-8; spending answer 3 scores 1
+nic-1996,knowledge-3,3,1,TROOPSA1,ftfact11raw,1,0,8|9,NIC source questionnaire fields and nic1.R; round only storage noise within 1e-8; spending answer 3 scores 1
+nic-1996,knowledge-4,4,1,TROOPSB1,ftfact21raw,1,0,8|9,NIC source questionnaire fields and nic1.R; round only storage noise within 1e-8; spending answer 3 scores 1
+nic-1996,knowledge-5,5,1,TROOPSC1,ftfact31raw,0,1,8|9,NIC source questionnaire fields and nic1.R; round only storage noise within 1e-8; spending answer 3 scores 1
+nic-1996,knowledge-6,6,1,TROOPSD1,ftfact41raw,1,0,8|9,NIC source questionnaire fields and nic1.R; round only storage noise within 1e-8; spending answer 3 scores 1
+nic-1996,knowledge-7,7,1,POLREP1,repfact1raw,5|6|7,1|2|3|4,8|9,NIC source questionnaire fields and nic1.R; round only storage noise within 1e-8; spending answer 3 scores 1
+nic-1996,knowledge-8,8,1,POLDEM1,demfact1raw,1|2|3,4|5|6|7,8|9,NIC source questionnaire fields and nic1.R; round only storage noise within 1e-8; spending answer 3 scores 1
+nic-1996,knowledge-1,1,2,SPEND2,efact2raw,3,1|2|4,8|9,NIC source questionnaire fields and nic1.R; round only storage noise within 1e-8; spending answer 3 scores 1
+nic-1996,knowledge-2,2,2,TRADE2,ffact2raw,1,2|3|4,8|9,NIC source questionnaire fields and nic1.R; round only storage noise within 1e-8; spending answer 3 scores 1
+nic-1996,knowledge-3,3,2,TROOPSA2,ftfact12raw,1,0,8|9,NIC source questionnaire fields and nic1.R; round only storage noise within 1e-8; spending answer 3 scores 1
+nic-1996,knowledge-4,4,2,TROOPSB2,ftfact22raw,1,0,8|9,NIC source questionnaire fields and nic1.R; round only storage noise within 1e-8; spending answer 3 scores 1
+nic-1996,knowledge-5,5,2,TROOPSC2,ftfact32raw,0,1,8|9,NIC source questionnaire fields and nic1.R; round only storage noise within 1e-8; spending answer 3 scores 1
+nic-1996,knowledge-6,6,2,TROOPSD2,ftfact42raw,1,0,8|9,NIC source questionnaire fields and nic1.R; round only storage noise within 1e-8; spending answer 3 scores 1
+nic-1996,knowledge-7,7,2,POLREP2,repfact2raw,5|6|7,1|2|3|4,8|9,NIC source questionnaire fields and nic1.R; round only storage noise within 1e-8; spending answer 3 scores 1
+nic-1996,knowledge-8,8,2,POLDEM2,demfact2raw,1|2|3,4|5|6|7,8|9,NIC source questionnaire fields and nic1.R; round only storage noise within 1e-8; spending answer 3 scores 1
+tomorrows-europe-2007,knowledge-1,1,1,q16_1,t1q16r,3,1|2|4,5|6|8,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-2,2,1,q17_1,t1q17r,1,2|3|4,5|6|8,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-3,3,1,q18_1,t1q18r,2,1|3|4,5|6|8,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-4,4,1,q19_1,t1q19r,4,1|2|3,5|6|8,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-5,5,1,q20_1,t1q20r,1,2|3|4,5|6|8,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-6,6,1,q21_1,t1q21r,4,1|2|3|5,6|7|8,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-7,7,1,q22_1,t1q22r,2,1|3|4|5,6|7|8,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-8,8,1,q23_1,t1q23r,1,2|3|4|5,6|7|8,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-9,9,1,q24_1,t1q24r,4,1|2|3,5|6|8,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-10,10,1,q33a_1,t1q33ar,7|8|9|10|11,1|2|3|4|5|6,12|13,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-11,11,1,q33b_1,t1q33br,1|2|3|4|5,6|7|8|9|10|11,12|13,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-1,1,2,t3q19,t3q19r,3,1|2|4,0|6|24|44|99|1004,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-2,2,2,t3q20,t3q20r,1,2|3|4,24|44|99|1004,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-3,3,2,t3q21,t3q21r,2,1|3|4,24|44|99|1004,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-4,4,2,t3q22,t3q22r,4,1|2|3,24|44|99|1004,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-5,5,2,t3q23,t3q23r,1,2|3|4,24|44|99|1004,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-6,6,2,t3q24,t3q24r,4,1|2|3|5,24|44|99|1004,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-7,7,2,t3q25,t3q25r,2,1|3|4|5,24|44|99|1004,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-8,8,2,t3q26,t3q26r,1,2|3|4|5,24|44|99|1004,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-9,9,2,t3q27,t3q27r,4,1|2|3,24|44|99|1004,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-10,10,2,t3q36a,t3q36ar,6|7|8|9|10,0|1|2|3|4|5,24|44|99|1004,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+tomorrows-europe-2007,knowledge-11,11,2,t3q36b,t3q36br,0|1|2|3|4,5|6|7|8|9|10,24|44|99|1004,EU 2007 original survey and T3 questionnaire; placement scale 1-11 at T1 and 0-10 at departure; documented anomalous codes missing
+vermont-energy-2007,knowledge-1,1,1,Q77,t1know1raw,2,1|3|4|5,8|9,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+vermont-energy-2007,knowledge-2,2,1,Q78,t1know2raw,3,1|2|4|5,8|9,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+vermont-energy-2007,knowledge-3,3,1,Q79,t1know3raw,2|3,1|4,8|9,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+vermont-energy-2007,knowledge-4,4,1,Q80,t1know4raw,4,1|2|3,8|9,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+vermont-energy-2007,knowledge-5,5,1,Q81,t1know5raw,2,1|3|4,8|9,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+vermont-energy-2007,knowledge-6,6,1,Q82,t1know6raw,3,1|2|4,8|9,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+vermont-energy-2007,knowledge-7,7,1,Q83,t1know7raw,4,1|2|3|5,8|9,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+vermont-energy-2007,knowledge-8,8,1,Q84,t1know8raw,2,1|3|4,8|9,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+vermont-energy-2007,knowledge-9,9,1,Q85,t1know9raw,2,1|3|4,8|9,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+vermont-energy-2007,knowledge-1,1,2,Q030T3,t3know1raw,2,1|3|4|5,88|99,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+vermont-energy-2007,knowledge-2,2,2,Q031T3,t3know2raw,3,1|2|4|5,88|99,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+vermont-energy-2007,knowledge-3,3,2,Q032T3,t3know3raw,2|3,1|4,88|99,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+vermont-energy-2007,knowledge-4,4,2,Q033T3,t3know4raw,4,1|2|3,88|99,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+vermont-energy-2007,knowledge-5,5,2,Q034T3,t3know5raw,2,1|3|4,88|99,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+vermont-energy-2007,knowledge-6,6,2,Q035T3,t3know6raw,3,1|2|4,88|99,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+vermont-energy-2007,knowledge-7,7,2,Q036T3,t3know7raw,4,1|2|3|5,88|99,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+vermont-energy-2007,knowledge-8,8,2,Q037T3,t3know8raw,2,1|3|4,88|99,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+vermont-energy-2007,knowledge-9,9,2,Q038T3,t3know9raw,2,1|3|4,88|99,Starred Vermont T3 answer key: efficiency 50 percent; renewables both 15 and 25 percent starred (explicit ambiguity); valid alternatives not missing
+san-mateo-2008,knowledge-1,1,1,Q19,t1q19raw,3,1|2|4|5,6|8|9,"Original San Mateo questionnaire and source correctness fields; codes 8/9 on T2Q20/T2Q26 are undocumented invalid values, retained but not scored"
+san-mateo-2008,knowledge-2,2,1,Q20,t1q20raw,5,1|2|3|4,6|8|9,"Original San Mateo questionnaire and source correctness fields; codes 8/9 on T2Q20/T2Q26 are undocumented invalid values, retained but not scored"
+san-mateo-2008,knowledge-3,3,1,Q21,t1q21raw,1,2|3|4|5,6|8|9,"Original San Mateo questionnaire and source correctness fields; codes 8/9 on T2Q20/T2Q26 are undocumented invalid values, retained but not scored"
+san-mateo-2008,knowledge-4,4,1,Q22,t1q22raw,3,1|2|4|5,6|8|9,"Original San Mateo questionnaire and source correctness fields; codes 8/9 on T2Q20/T2Q26 are undocumented invalid values, retained but not scored"
+san-mateo-2008,knowledge-5,5,1,Q23,t1q23raw,4,1|2|3|5,6|8|9,"Original San Mateo questionnaire and source correctness fields; codes 8/9 on T2Q20/T2Q26 are undocumented invalid values, retained but not scored"
+san-mateo-2008,knowledge-6,6,1,Q24,t1q24raw,3,1|2|4|5,6|8|9,"Original San Mateo questionnaire and source correctness fields; codes 8/9 on T2Q20/T2Q26 are undocumented invalid values, retained but not scored"
+san-mateo-2008,knowledge-7,7,1,Q25,t1q25raw,1,2|3|4,5|8|9,"Original San Mateo questionnaire and source correctness fields; codes 8/9 on T2Q20/T2Q26 are undocumented invalid values, retained but not scored"
+san-mateo-2008,knowledge-8,8,1,Q26,t1q26raw,5,1|2|3|4,6|8|9,"Original San Mateo questionnaire and source correctness fields; codes 8/9 on T2Q20/T2Q26 are undocumented invalid values, retained but not scored"
+san-mateo-2008,knowledge-1,1,2,t2Q19,t2q19raw,3,1|2|4|5,6|8|9,"Original San Mateo questionnaire and source correctness fields; codes 8/9 on T2Q20/T2Q26 are undocumented invalid values, retained but not scored"
+san-mateo-2008,knowledge-2,2,2,t2Q20,t2q20raw,5,1|2|3|4,6|8|9,"Original San Mateo questionnaire and source correctness fields; codes 8/9 on T2Q20/T2Q26 are undocumented invalid values, retained but not scored"
+san-mateo-2008,knowledge-3,3,2,t2Q21,t2q21raw,1,2|3|4|5,6|8|9,"Original San Mateo questionnaire and source correctness fields; codes 8/9 on T2Q20/T2Q26 are undocumented invalid values, retained but not scored"
+san-mateo-2008,knowledge-4,4,2,t2Q22,t2q22raw,3,1|2|4|5,6|8|9,"Original San Mateo questionnaire and source correctness fields; codes 8/9 on T2Q20/T2Q26 are undocumented invalid values, retained but not scored"
+san-mateo-2008,knowledge-5,5,2,t2Q23,t2q23raw,4,1|2|3|5,6|8|9,"Original San Mateo questionnaire and source correctness fields; codes 8/9 on T2Q20/T2Q26 are undocumented invalid values, retained but not scored"
+san-mateo-2008,knowledge-6,6,2,t2Q24,t2q24raw,3,1|2|4|5,6|8|9,"Original San Mateo questionnaire and source correctness fields; codes 8/9 on T2Q20/T2Q26 are undocumented invalid values, retained but not scored"
+san-mateo-2008,knowledge-7,7,2,t2Q25,t2q25raw,1,2|3|4,5|8|9,"Original San Mateo questionnaire and source correctness fields; codes 8/9 on T2Q20/T2Q26 are undocumented invalid values, retained but not scored"
+san-mateo-2008,knowledge-8,8,2,t2Q26,t2q26raw,5,1|2|3|4,6|8|9,"Original San Mateo questionnaire and source correctness fields; codes 8/9 on T2Q20/T2Q26 are undocumented invalid values, retained but not scored"
+denmark-euro-2000,knowledge-1,1,1,s_18,t0pk1raw,1,2,3,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+denmark-euro-2000,knowledge-2,2,1,s_19,t0pk2raw,2,1,3,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+denmark-euro-2000,knowledge-3,3,1,s_20,t0pk3raw,1,2,3,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+denmark-euro-2000,knowledge-4,4,1,s_21,t0pk4raw,2,1|3|4,5,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+denmark-euro-2000,knowledge-5,5,1,s_22,t0pk5raw,3,1|2,4,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+denmark-euro-2000,knowledge-6,6,1,s_23,t0pk6raw,1,2,3,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+denmark-euro-2000,knowledge-7,7,1,s_25_07,t0ppk7raw,2,1,3,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+denmark-euro-2000,knowledge-8,8,1,s_25_09,t0ppk9raw,2,1,3,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+denmark-euro-2000,knowledge-9,9,1,s_25_11,t0ppk11raw,2,1,3,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+denmark-euro-2000,knowledge-1,1,2,T2_S4_2,t2pk1raw,1,2,3,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+denmark-euro-2000,knowledge-2,2,2,T2_S5_2,t2pk2raw,2,1,3,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+denmark-euro-2000,knowledge-3,3,2,T2_S6_2,t2pk3raw,1,2,3,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+denmark-euro-2000,knowledge-4,4,2,T2_S7_2,t2pk4raw,2,1|3|4,5,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+denmark-euro-2000,knowledge-5,5,2,T2_S8_2,t2pk5raw,3,1|2,4,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+denmark-euro-2000,knowledge-6,6,2,T2_S9_2,t2pk6raw,1,2,3,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+denmark-euro-2000,knowledge-7,7,2,T2_S11_7_2,t2ppk7raw,2,1,3,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+denmark-euro-2000,knowledge-8,8,2,T2_S11_9_2,t2ppk9raw,2,1,3,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+denmark-euro-2000,knowledge-9,9,2,T2_S11_11_2,t2ppk11raw,2,1,3,Original Danish wave questionnaires and denmark.R factual/party keys; T0 baseline joined to T2 departure by DELNR
+michigan-2009,knowledge-1,1,1,q14,t1q14raw,2,1,98|99,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"
+michigan-2009,knowledge-2,2,1,q15,t1q15raw,1,2,98|99,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"
+michigan-2009,knowledge-3,3,1,q16,t1q16raw,1,2|3|4,98|99,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"
+michigan-2009,knowledge-4,4,1,q17,t1q17raw,1,2|3|4,98|99,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"
+michigan-2009,knowledge-5,5,1,q18,t1q18raw,3,1|2|4,98|99,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"
+michigan-2009,knowledge-6,6,1,q4,t1q4raw,5|6|7,1|2|3|4,98|99,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"
+michigan-2009,knowledge-7,7,1,q5,t1q5raw,1|2|3,4|5|6|7,98|99,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"
+michigan-2009,knowledge-8,8,1,q7,t1q7raw,1|2|3,4|5|6|7,98|99,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"
+michigan-2009,knowledge-9,9,1,q8,t1q8raw,5|6|7,1|2|3|4,98|99,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"
+michigan-2009,knowledge-1,1,2,t3q38,t3q38raw,r|rep|repgop|repub|republic|republican|republicanparty|republicans|rethuglican|gop|reb|repiblican,d|dem|demo|democrat|democrates|demcrates|democrate|democratic|democratics|democraticparty|democrats|dems|legislative|nazis,<blank>|cantrecall|cantsay|cannotsay|couldntsay|donotknow|dontknow|idontknow|na|nest|no|notsure|so|unknow|unsure|38|sc|same,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"
+michigan-2009,knowledge-2,2,2,t3q39,t3q39raw,d|dem|demo|democrat|democrates|demcrates|democrate|democratic|democratics|democraticparty|democrats|dems,r|rep|repgop|repub|republic|republican|republicanparty|republicans|rethuglican|gop|reb|repiblican,<blank>|cantrecall|cantsay|cannotsay|couldntsay|donotknow|dontknow|idontknow|na|nest|no|notsure|so|unknow|unsure|38|sc|same,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"
+michigan-2009,knowledge-3,3,2,t3q40,t3q40raw,a,b|c|d,<blank>|e|f|na,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"
+michigan-2009,knowledge-4,4,2,t3q41,t3q41raw,a,b|c|d,<blank>|e|f|na,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"
+michigan-2009,knowledge-5,5,2,t3q42,t3q42raw,c,a|b|d,<blank>|e|f|na,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"
+michigan-2009,knowledge-6,6,2,t3q10,t3q10raw,5|6|7,1|2|3|4,98|99,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"
+michigan-2009,knowledge-7,7,2,t3q11,t3q11raw,1|2|3,4|5|6|7,98|99,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"
+michigan-2009,knowledge-8,8,2,t3q13,t3q13raw,1|2|3,4|5|6|7,98|99,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"
+michigan-2009,knowledge-9,9,2,t3q14,t3q14raw,5|6|7,1|2|3|4,98|99,"Michigan departure questionnaire and mi.R; explicit party spellings only; option e is could-not-say and f is invalid, not substantive incorrect"

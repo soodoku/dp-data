@@ -1,0 +1,7 @@
+poll_id,scenario,wave,respondents,item_responses,mean_zero_filled
+vermont-energy-2007,both_starred,1,146,1314,0.2222222222222222
+vermont-energy-2007,both_starred,2,146,1314,0.6012176560121766
+vermont-energy-2007,only_15_percent,1,146,1314,0.2100456621004566
+vermont-energy-2007,only_15_percent,2,146,1314,0.5700152207001522
+vermont-energy-2007,only_25_percent,1,146,1314,0.2024353120243531
+vermont-energy-2007,only_25_percent,2,146,1314,0.5646879756468798

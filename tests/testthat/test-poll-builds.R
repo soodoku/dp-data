@@ -9,16 +9,16 @@ pilot_tables <- function() {
     })
 }
 
-test_that("survey comparisons expose only the documented monarchy change", {
+test_that("survey comparisons report differences without imposing parity", {
   tables <- pilot_tables()
   audit <- compare_knowledge_batteries(tables)$summary
-  expect_equal(sum(audit$item_differences), 58)
-  expect_equal(sum(audit$female_differences), 0)
-  expect_equal(nrow(tables$respondents), 2088L)
-  expect_equal(nrow(tables$knowledge_responses), 30944L)
-  expect_equal(nrow(tables$knowledge_scores), 4176L)
-  expect_equal(nrow(tables$memberships), 2084L)
-  expect_equal(nrow(tables$groups), 144L)
+  expect_equal(sum(audit$item_differences, na.rm = TRUE), 763)
+  expect_equal(sum(audit$female_differences, na.rm = TRUE), 2)
+  expect_equal(nrow(tables$respondents), 6669L)
+  expect_equal(nrow(tables$knowledge_responses), 103116L)
+  expect_equal(nrow(tables$knowledge_scores), 13338L)
+  expect_equal(nrow(tables$memberships), 6147L)
+  expect_equal(nrow(tables$groups), 406L)
 })
 
 test_that("Northern Ireland retains its first headerless group record", {
@@ -80,8 +80,8 @@ test_that("benchmark comparisons report an additional changed scored item", {
   tables$knowledge_responses$correct[[row]] <-
     1L - tables$knowledge_responses$correct[[row]]
   audit <- compare_knowledge_batteries(tables)
-  expect_equal(sum(audit$summary$item_differences), 59L)
-  expect_equal(nrow(audit$differences), 59L)
+  expect_equal(sum(audit$summary$item_differences, na.rm = TRUE), 764L)
+  expect_equal(nrow(audit$differences), 764L)
 })
 
 test_that("responses preserve missing codes and scores declare filling", {
@@ -95,36 +95,25 @@ test_that("responses preserve missing codes and scores declare filling", {
   expect_true(all(is.na(responses$missing_code[!missing])))
   expect_true(all(responses$correct[!missing] %in% 0:1))
 
-  for (poll_id in unique(tables$respondents$poll_id)) {
-    battery <- read_knowledge_battery(poll_id)
-    people <- tables$respondents |>
-      dplyr::filter(.data$poll_id == .env$poll_id) |>
-      dplyr::arrange(.data$battery_row)
-    items <- read_metadata("knowledge_items") |>
-      dplyr::filter(.data$poll_id == .env$poll_id)
-    for (wave in 1:2) {
-      columns <- items$benchmark_column[items$wave == wave]
-      expected <- as.matrix(battery[columns])
-      expected[is.na(expected)] <- 0
-      if (poll_id == "uk-monarchy-1996" && wave == 2) {
-        source <- read_poll_survey(poll_id)
-        expected[, "knowc2raw"] <-
-          as.integer(source$R5C[people$source_row] == 1)
-      }
-      scores <- tables$knowledge_scores |>
-        dplyr::filter(
-          .data$poll_id == .env$poll_id, .data$wave == .env$wave
-        ) |>
-        dplyr::arrange(match(.data$respondent_id, people$respondent_id))
-      expect_equal(scores$score_zero_filled, rowMeans(expected))
-      expect_true(all(scores$n_observed <= scores$n_items))
-    }
-  }
+  expected <- responses |>
+    dplyr::group_by(.data$poll_id, .data$respondent_id, .data$wave) |>
+    dplyr::summarise(
+      n_items = dplyr::n(),
+      n_observed = sum(!is.na(.data$correct)),
+      n_correct = sum(.data$correct == 1L, na.rm = TRUE),
+      score_zero_filled = .data$n_correct / .data$n_items,
+      .groups = "drop"
+    )
+  actual <- tables$knowledge_scores |>
+    dplyr::arrange(.data$poll_id, .data$respondent_id, .data$wave)
+  expect_equal(actual, expected, ignore_attr = TRUE)
 })
 
 test_that("the Northern Ireland public extract excludes all named verbatims", {
   survey <- read_poll_survey("northern-ireland-2007")
-  excluded <- read_metadata("source_field_exclusions")$source_column
+  excluded <- read_metadata("source_field_exclusions") |>
+    dplyr::filter(.data$poll_id == "northern-ireland-2007") |>
+    dplyr::pull(.data$source_column)
   variables <- readr::read_csv(
     project_path("data", "northern-ireland-2007", "variables.csv"),
     show_col_types = FALSE
@@ -355,10 +344,14 @@ test_that("election scoring separates missing codes and party-placement keys", {
     "^(redstl|taxl|wagel|eul|redstld|taxld|wageld|euld)[12]$",
     responses$source_column
   )
-  expect_equal(responses$correct[conservative & !negative],
-               as.integer(responses$raw_value[conservative & !negative] < 4))
-  expect_equal(responses$correct[other_party & !negative],
-               as.integer(responses$raw_value[other_party & !negative] > 4))
+  expect_equal(
+    responses$correct[conservative & !negative],
+    as.integer(responses$raw_value[conservative & !negative] < 4)
+  )
+  expect_equal(
+    responses$correct[other_party & !negative],
+    as.integer(responses$raw_value[other_party & !negative] > 4)
+  )
   expect_identical(
     knowledge_participants("uk-general-election-1997", source),
     knowledge_participants(

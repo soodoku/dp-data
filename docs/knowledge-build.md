@@ -1,6 +1,6 @@
 # Knowledge data from reviewed survey packages
 
-`make knowledge` rebuilds nine knowledge batteries from published poll-level
+`make knowledge` rebuilds all 23 knowledge batteries from published poll-level
 survey inputs. It produces five typed Parquet tables in `output/`, plus a
 checksum manifest. The Cor–Sood batteries are comparison evidence, not build
 inputs or a requirement to reproduce a known error.
@@ -17,6 +17,10 @@ inputs or a requirement to reproduce a known error.
 | SWEPCO 1996 | Original Stata file: 1,478 rows, 196 fields | 232 participants | 5 | 14 |
 | WTU 1996 | Original Stata file: 1,230 rows, 196 fields | 230 participants | 5 | 14 |
 
+The remaining fourteen polls are documented in the
+[poll-by-poll audit](remaining-polls.md), including source selection, scoring
+corrections, and unresolved sample and answer-key differences.
+
 The output covers attendees at the pre- and post-deliberation waves. Northern
 Ireland's larger source frame retains control and other records for subsequent
 work. The current knowledge output does not estimate a treatment effect or
@@ -24,7 +28,7 @@ contain the control-wave battery.
 
 ## Inputs and provenance
 
-`metadata/survey_sources.csv` identifies the exact original ZIP member and its
+`metadata/survey_sources.csv` and `metadata/survey_components.csv` identify the exact original ZIP member and its
 SHA-256, the published path, and the import rule. The original data ZIP is
 registered in `metadata/source_bundles.csv`. File-level hashes for the published
 surveys and dictionaries are in `metadata/source_files.csv`.
@@ -71,7 +75,8 @@ for some questions, so their keys and non-substantive codes are wave-specific.
 correct codes (`correct_values`), incorrect codes, and non-substantive codes.
 Multiple codes use a pipe delimiter. An observed code
 outside these lists stops the build. In `knowledge_responses`, `raw_value`
-preserves the original code, `correct` stays null for non-substantive responses,
+preserves the original numeric code; `raw_text` preserves reviewed written
+answers. `correct` stays null for non-substantive responses,
 and `missing_code` distinguishes source codes from a system missing value.
 Descriptions come from value-label dictionaries where available and the original
 codebooks otherwise. System-missing values in cleaned source files do not reveal
@@ -118,27 +123,30 @@ cross-file linkage key. The other four polls retain their original identifiers.
 
 | Table | Rows | Unit |
 |---|---:|---|
-| `respondents` | 2,088 | Participant within poll |
-| `knowledge_responses` | 30,944 | Participant × item × wave |
-| `knowledge_scores` | 4,176 | Participant × wave |
-| `memberships` | 2,084 | Participant × discussion group |
-| `groups` | 144 | Discussion group within poll |
+| `respondents` | 6,669 | Participant within poll |
+| `knowledge_responses` | 103,116 | Participant × item × wave |
+| `knowledge_scores` | 13,338 | Participant × wave |
+| `memberships` | 6,147 | Participant × discussion group |
+| `groups` | 406 | Discussion group within poll |
 
 Keys, nullability, and Arrow types are recorded in
 `metadata/canonical_columns.csv`. `arm = participant` records observed status;
 it does not assert random assignment. Respondent IDs are unique only together
 with `poll_id`. `battery_row` is the reconstructed ordering used to check the
-deposited battery and must not be used as an ID in another dataset.
+deposited battery where alignment is established and must not be used as an ID
+in another dataset. It is only local ordering for different-size samples and
+Europolis. Canonical waves 1/2 mean selected pre/post measurements, not literal
+source wave numbers; source column names remain in the item map.
 
 The stored `output/manifest.csv` provides the checksum of each exported file.
 Consumers should pin a repository commit and verify those checksums. The
-attitude-index build and the remaining polls are still pending.
+attitude-index and control-battery builds are still pending.
 
 ## Reproduction and checks
 
 A checkout contains everything needed for `make restore` followed by
 `make check`. Checks rebuild the outputs, compare every scored cell and female indicator
-against all nine deposits, enforce keys and group-match counts, test missing and
+against deposits where row alignment is established, enforce keys and group-match counts, test missing and
 unknown codes, and round-trip Parquet types and values. Separate source-based
 tests verify answer keys, sample restrictions, and the corrected T2 field.
 The comparison reports differences rather than requiring zero differences.
@@ -152,7 +160,7 @@ make check
 ```
 
 The import verifies original file hashes before copying or converting.
-The archive audit checks every retained Northern Ireland value and the original
+The archive audit checks every retained value in all structured extracts and the original
 exact-copy survey bytes against the public files. It also regenerates and compares the
 variable and value-label dictionaries. These local checks do not require uploading the archive.
 

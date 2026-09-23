@@ -197,53 +197,53 @@ t2q16,double,haven_labelled|vctrs_vctr|double,float64,t2:q16 which of the follow
 t2q16ans,double,haven_labelled|vctrs_vctr|double,float64,t2:q16: correct/incorrect answer,%8.0g,,,TRUE,Retained
 t2q17,double,haven_labelled|vctrs_vctr|double,float64,t2:q17 which of the following is true of the employing authority in the schools,%8.0g,,,TRUE,Retained
 t2q17ans,double,haven_labelled|vctrs_vctr|double,float64,t2:q17: correct/incorrect answer,%8.0g,,,TRUE,Retained
-t2q18a1,character,character,,t2:q18a: reasons that people who strongly support having a system of all-ability,%95s,,,FALSE,Verbatim field excluded
-t2q18a2,character,character,,t2:q18a: reasons that people who strongly support having a system of all-ability,%118s,,,FALSE,Verbatim field excluded
-t2q18a3,character,character,,t2:q18a: reasons that people who strongly support having a system of all-ability,%91s,,,FALSE,Verbatim field excluded
-t2q18a4,character,character,,t2:q18a: reasons that people who strongly support having a system of all-ability,%138s,,,FALSE,Verbatim field excluded
-t2q18a5,character,character,,t2:q18a: reasons that people who strongly support having a system of all-ability,%47s,,,FALSE,Verbatim field excluded
+t2q18a1,character,character,,t2:q18a: reasons that people who strongly support having a system of all-ability,%95s,,,FALSE,Excluded; see source_field_exclusions
+t2q18a2,character,character,,t2:q18a: reasons that people who strongly support having a system of all-ability,%118s,,,FALSE,Excluded; see source_field_exclusions
+t2q18a3,character,character,,t2:q18a: reasons that people who strongly support having a system of all-ability,%91s,,,FALSE,Excluded; see source_field_exclusions
+t2q18a4,character,character,,t2:q18a: reasons that people who strongly support having a system of all-ability,%138s,,,FALSE,Excluded; see source_field_exclusions
+t2q18a5,character,character,,t2:q18a: reasons that people who strongly support having a system of all-ability,%47s,,,FALSE,Excluded; see source_field_exclusions
 t2q18anu,double,numeric,float64,t2:q18a: number of reasons given,%8.0g,,,TRUE,Retained
-t2q18b1,character,character,,t2:q18b: reasons that people who strongly oppose having a system of all-ability,%132s,,,FALSE,Verbatim field excluded
-t2q18b2,character,character,,t2:q18b: reasons that people who strongly oppose having a system of all-ability,%161s,,,FALSE,Verbatim field excluded
-t2q18b3,character,character,,t2:q18b: reasons that people who strongly oppose having a system of all-ability,%87s,,,FALSE,Verbatim field excluded
-t2q18b4,character,character,,t2:q18b: reasons that people who strongly oppose having a system of all-ability,%136s,,,FALSE,Verbatim field excluded
-t2q18b5,character,character,,t2:q18b: reasons that people who strongly oppose having a system of all-ability,%81s,,,FALSE,Verbatim field excluded
+t2q18b1,character,character,,t2:q18b: reasons that people who strongly oppose having a system of all-ability,%132s,,,FALSE,Excluded; see source_field_exclusions
+t2q18b2,character,character,,t2:q18b: reasons that people who strongly oppose having a system of all-ability,%161s,,,FALSE,Excluded; see source_field_exclusions
+t2q18b3,character,character,,t2:q18b: reasons that people who strongly oppose having a system of all-ability,%87s,,,FALSE,Excluded; see source_field_exclusions
+t2q18b4,character,character,,t2:q18b: reasons that people who strongly oppose having a system of all-ability,%136s,,,FALSE,Excluded; see source_field_exclusions
+t2q18b5,character,character,,t2:q18b: reasons that people who strongly oppose having a system of all-ability,%81s,,,FALSE,Excluded; see source_field_exclusions
 t2q18bnu,double,numeric,float64,t2:q18b: number of reasons given,%8.0g,,,TRUE,Retained
-t2q19a1,character,character,,t2:q19a: reasons that people who think that children should attend school only w,%94s,,,FALSE,Verbatim field excluded
-t2q19a2,character,character,,t2:q19a: reasons that people who think that children should attend school only w,%164s,,,FALSE,Verbatim field excluded
-t2q19a3,character,character,,t2:q19a: reasons that people who think that children should attend school only w,%72s,,,FALSE,Verbatim field excluded
-t2q19a4,character,character,,t2:q19a: reasons that people who think that children should attend school only w,%47s,,,FALSE,Verbatim field excluded
-t2q19a5,character,character,,t2:q19a: reasons that people who think that children should attend school only w,%44s,,,FALSE,Verbatim field excluded
+t2q19a1,character,character,,t2:q19a: reasons that people who think that children should attend school only w,%94s,,,FALSE,Excluded; see source_field_exclusions
+t2q19a2,character,character,,t2:q19a: reasons that people who think that children should attend school only w,%164s,,,FALSE,Excluded; see source_field_exclusions
+t2q19a3,character,character,,t2:q19a: reasons that people who think that children should attend school only w,%72s,,,FALSE,Excluded; see source_field_exclusions
+t2q19a4,character,character,,t2:q19a: reasons that people who think that children should attend school only w,%47s,,,FALSE,Excluded; see source_field_exclusions
+t2q19a5,character,character,,t2:q19a: reasons that people who think that children should attend school only w,%44s,,,FALSE,Excluded; see source_field_exclusions
 t2q19anu,double,numeric,float64,t2:q19a: number of reasons given,%8.0g,,,TRUE,Retained
-t2q19b1,character,character,,t2:q19b: reasons that people who think that children should attend schools with,%148s,,,FALSE,Verbatim field excluded
-t2q19b2,character,character,,t2:q19b: reasons that people who think that children should attend schools with,%91s,,,FALSE,Verbatim field excluded
-t2q19b3,character,character,,t2:q19b: reasons that people who think that children should attend schools with,%110s,,,FALSE,Verbatim field excluded
-t2q19b4,character,character,,t2:q19b: reasons that people who think that children should attend schools with,%129s,,,FALSE,Verbatim field excluded
-t2q19b5,character,character,,t2:q19b: reasons that people who think that children should attend schools with,%104s,,,FALSE,Verbatim field excluded
+t2q19b1,character,character,,t2:q19b: reasons that people who think that children should attend schools with,%148s,,,FALSE,Excluded; see source_field_exclusions
+t2q19b2,character,character,,t2:q19b: reasons that people who think that children should attend schools with,%91s,,,FALSE,Excluded; see source_field_exclusions
+t2q19b3,character,character,,t2:q19b: reasons that people who think that children should attend schools with,%110s,,,FALSE,Excluded; see source_field_exclusions
+t2q19b4,character,character,,t2:q19b: reasons that people who think that children should attend schools with,%129s,,,FALSE,Excluded; see source_field_exclusions
+t2q19b5,character,character,,t2:q19b: reasons that people who think that children should attend schools with,%104s,,,FALSE,Excluded; see source_field_exclusions
 t2q19bnu,double,numeric,float64,t2:q19b: number of reasons given,%8.0g,,,TRUE,Retained
-t2q20a1,character,character,,t2:q20a: reasons that people who strongly agree that children from schools of di,%126s,,,FALSE,Verbatim field excluded
-t2q20a2,character,character,,t2:q20a: reasons that people who strongly agree that children from schools of di,%101s,,,FALSE,Verbatim field excluded
-t2q20a3,character,character,,t2:q20a: reasons that people who strongly agree that children from schools of di,%87s,,,FALSE,Verbatim field excluded
-t2q20a4,character,character,,t2:q20a: reasons that people who strongly agree that children from schools of di,%67s,,,FALSE,Verbatim field excluded
-t2q20a5,character,character,,t2:q20a: reasons that people who strongly agree that children from schools of di,%33s,,,FALSE,Verbatim field excluded
+t2q20a1,character,character,,t2:q20a: reasons that people who strongly agree that children from schools of di,%126s,,,FALSE,Excluded; see source_field_exclusions
+t2q20a2,character,character,,t2:q20a: reasons that people who strongly agree that children from schools of di,%101s,,,FALSE,Excluded; see source_field_exclusions
+t2q20a3,character,character,,t2:q20a: reasons that people who strongly agree that children from schools of di,%87s,,,FALSE,Excluded; see source_field_exclusions
+t2q20a4,character,character,,t2:q20a: reasons that people who strongly agree that children from schools of di,%67s,,,FALSE,Excluded; see source_field_exclusions
+t2q20a5,character,character,,t2:q20a: reasons that people who strongly agree that children from schools of di,%33s,,,FALSE,Excluded; see source_field_exclusions
 t2q20anu,double,numeric,float64,t2:q20a: number of reasons given,%8.0g,,,TRUE,Retained
-t2q20b1,character,character,,t2:q20b: reasons that people who strongly disagree that children from schools of,%106s,,,FALSE,Verbatim field excluded
-t2q20b2,character,character,,t2:q20b: reasons that people who strongly disagree that children from schools of,%83s,,,FALSE,Verbatim field excluded
-t2q20b3,character,character,,t2:q20b: reasons that people who strongly disagree that children from schools of,%103s,,,FALSE,Verbatim field excluded
-t2q20b4,character,character,,t2:q20b: reasons that people who strongly disagree that children from schools of,%40s,,,FALSE,Verbatim field excluded
-t2q20b5,character,character,,t2:q20b: reasons that people who strongly disagree that children from schools of,%11s,,,FALSE,Verbatim field excluded
+t2q20b1,character,character,,t2:q20b: reasons that people who strongly disagree that children from schools of,%106s,,,FALSE,Excluded; see source_field_exclusions
+t2q20b2,character,character,,t2:q20b: reasons that people who strongly disagree that children from schools of,%83s,,,FALSE,Excluded; see source_field_exclusions
+t2q20b3,character,character,,t2:q20b: reasons that people who strongly disagree that children from schools of,%103s,,,FALSE,Excluded; see source_field_exclusions
+t2q20b4,character,character,,t2:q20b: reasons that people who strongly disagree that children from schools of,%40s,,,FALSE,Excluded; see source_field_exclusions
+t2q20b5,character,character,,t2:q20b: reasons that people who strongly disagree that children from schools of,%11s,,,FALSE,Excluded; see source_field_exclusions
 t2q20bnu,double,numeric,float64,t2:q20b: number of reasons given,%8.0g,,,TRUE,Retained
-t2q21a1,character,character,,t2:q21a: reasons that people who strongly support schools combining primary and,%128s,,,FALSE,Verbatim field excluded
-t2q21a2,character,character,,t2:q21a: reasons that people who strongly support schools combining primary and,%104s,,,FALSE,Verbatim field excluded
-t2q21a3,character,character,,t2:q21a: reasons that people who strongly support schools combining primary and,%103s,,,FALSE,Verbatim field excluded
-t2q21a4,character,character,,t2:q21a: reasons that people who strongly support schools combining primary and,%48s,,,FALSE,Verbatim field excluded
-t2q21a5,character,character,,t2:q21a: reasons that people who strongly support schools combining primary and,%21s,,,FALSE,Verbatim field excluded
+t2q21a1,character,character,,t2:q21a: reasons that people who strongly support schools combining primary and,%128s,,,FALSE,Excluded; see source_field_exclusions
+t2q21a2,character,character,,t2:q21a: reasons that people who strongly support schools combining primary and,%104s,,,FALSE,Excluded; see source_field_exclusions
+t2q21a3,character,character,,t2:q21a: reasons that people who strongly support schools combining primary and,%103s,,,FALSE,Excluded; see source_field_exclusions
+t2q21a4,character,character,,t2:q21a: reasons that people who strongly support schools combining primary and,%48s,,,FALSE,Excluded; see source_field_exclusions
+t2q21a5,character,character,,t2:q21a: reasons that people who strongly support schools combining primary and,%21s,,,FALSE,Excluded; see source_field_exclusions
 t2q21anu,double,numeric,float64,t2:q21a: number of reasons given,%8.0g,,,TRUE,Retained
-t2q21b1,character,character,,t2:q21b: reasons that people who strongly oppose schools combining primary and p,%242s,,,FALSE,Verbatim field excluded
-t2q21b2,character,character,,t2:q21b: reasons that people who strongly oppose schools combining primary and p,%80s,,,FALSE,Verbatim field excluded
-t2q21b3,character,character,,t2:q21b: reasons that people who strongly oppose schools combining primary and p,%177s,,,FALSE,Verbatim field excluded
-t2q21b4,character,character,,t2:q21b: reasons that people who strongly oppose schools combining primary and p,%33s,,,FALSE,Verbatim field excluded
-t2q21b5,character,character,,t2:q21b: reasons that people who strongly oppose schools combining primary and p,%1s,,,FALSE,Verbatim field excluded
+t2q21b1,character,character,,t2:q21b: reasons that people who strongly oppose schools combining primary and p,%242s,,,FALSE,Excluded; see source_field_exclusions
+t2q21b2,character,character,,t2:q21b: reasons that people who strongly oppose schools combining primary and p,%80s,,,FALSE,Excluded; see source_field_exclusions
+t2q21b3,character,character,,t2:q21b: reasons that people who strongly oppose schools combining primary and p,%177s,,,FALSE,Excluded; see source_field_exclusions
+t2q21b4,character,character,,t2:q21b: reasons that people who strongly oppose schools combining primary and p,%33s,,,FALSE,Excluded; see source_field_exclusions
+t2q21b5,character,character,,t2:q21b: reasons that people who strongly oppose schools combining primary and p,%1s,,,FALSE,Excluded; see source_field_exclusions
 t2q21bnu,double,numeric,float64,t2:q21b: number of reasons given,%8.0g,,,TRUE,Retained
 t2q22a,double,haven_labelled|vctrs_vctr|double,float64,t2:q22a how much would you say you have read or heard about issues of education,%8.0g,,,TRUE,Retained
 t2q22b,double,haven_labelled|vctrs_vctr|double,float64,t2:q22b how much would you say you have discussed issues of education in norther,%8.0g,,,TRUE,Retained
@@ -313,53 +313,53 @@ t3q16,double,haven_labelled|vctrs_vctr|double,float64,t3:q16 which of the follow
 t3q16ans,double,numeric,float64,t3:q16 which of the following is true of current school funding,%8.0g,,,TRUE,Retained
 t3q17,double,haven_labelled|vctrs_vctr|double,float64,t3:q17 which of the following is true of the employing authority in the schools,%8.0g,,,TRUE,Retained
 t3q17ans,double,numeric,float64,t3:q17 which of the following is true of the employing authority in the schools,%8.0g,,,TRUE,Retained
-t3q18a1,character,character,,t3:q18a: reasons that people who strongly support having a system of all-ability,%105s,,,FALSE,Verbatim field excluded
-t3q18a2,character,character,,t3:q18a: reasons that people who strongly support having a system of all-ability,%89s,,,FALSE,Verbatim field excluded
-t3q18a3,character,character,,t3:q18a: reasons that people who strongly support having a system of all-ability,%69s,,,FALSE,Verbatim field excluded
-t3q18a4,character,character,,t3:q18a: reasons that people who strongly support having a system of all-ability,%53s,,,FALSE,Verbatim field excluded
-t3q18a5,character,character,,t3:q18a: reasons that people who strongly support having a system of all-ability,%50s,,,FALSE,Verbatim field excluded
+t3q18a1,character,character,,t3:q18a: reasons that people who strongly support having a system of all-ability,%105s,,,FALSE,Excluded; see source_field_exclusions
+t3q18a2,character,character,,t3:q18a: reasons that people who strongly support having a system of all-ability,%89s,,,FALSE,Excluded; see source_field_exclusions
+t3q18a3,character,character,,t3:q18a: reasons that people who strongly support having a system of all-ability,%69s,,,FALSE,Excluded; see source_field_exclusions
+t3q18a4,character,character,,t3:q18a: reasons that people who strongly support having a system of all-ability,%53s,,,FALSE,Excluded; see source_field_exclusions
+t3q18a5,character,character,,t3:q18a: reasons that people who strongly support having a system of all-ability,%50s,,,FALSE,Excluded; see source_field_exclusions
 t3q18anu,double,numeric,float64,t3:q18a: number of reasons given,%8.0g,,,TRUE,Retained
-t3q18b1,character,character,,t3:q18b: reasons that people who strongly oppose having a system of all-ability,%121s,,,FALSE,Verbatim field excluded
-t3q18b2,character,character,,t3:q18b: reasons that people who strongly oppose having a system of all-ability,%143s,,,FALSE,Verbatim field excluded
-t3q18b3,character,character,,t3:q18b: reasons that people who strongly oppose having a system of all-ability,%170s,,,FALSE,Verbatim field excluded
-t3q18b4,character,character,,t3:q18b: reasons that people who strongly oppose having a system of all-ability,%125s,,,FALSE,Verbatim field excluded
-t3q18b5,character,character,,t3:q18b: reasons that people who strongly oppose having a system of all-ability,%112s,,,FALSE,Verbatim field excluded
+t3q18b1,character,character,,t3:q18b: reasons that people who strongly oppose having a system of all-ability,%121s,,,FALSE,Excluded; see source_field_exclusions
+t3q18b2,character,character,,t3:q18b: reasons that people who strongly oppose having a system of all-ability,%143s,,,FALSE,Excluded; see source_field_exclusions
+t3q18b3,character,character,,t3:q18b: reasons that people who strongly oppose having a system of all-ability,%170s,,,FALSE,Excluded; see source_field_exclusions
+t3q18b4,character,character,,t3:q18b: reasons that people who strongly oppose having a system of all-ability,%125s,,,FALSE,Excluded; see source_field_exclusions
+t3q18b5,character,character,,t3:q18b: reasons that people who strongly oppose having a system of all-ability,%112s,,,FALSE,Excluded; see source_field_exclusions
 t3q18bnu,double,numeric,float64,t3:q18b: number of reasons given,%8.0g,,,TRUE,Retained
-t3q19a1,character,character,,t3:q19a: reasons that people who think that children should attend school only w,%124s,,,FALSE,Verbatim field excluded
-t3q19a2,character,character,,t3:q19a: reasons that people who think that children should attend school only w,%113s,,,FALSE,Verbatim field excluded
-t3q19a3,character,character,,t3:q19a: reasons that people who think that children should attend school only w,%86s,,,FALSE,Verbatim field excluded
-t3q19a4,character,character,,t3:q19a: reasons that people who think that children should attend school only w,%75s,,,FALSE,Verbatim field excluded
-t3q19a5,character,character,,t3:q19a: reasons that people who think that children should attend school only w,%38s,,,FALSE,Verbatim field excluded
+t3q19a1,character,character,,t3:q19a: reasons that people who think that children should attend school only w,%124s,,,FALSE,Excluded; see source_field_exclusions
+t3q19a2,character,character,,t3:q19a: reasons that people who think that children should attend school only w,%113s,,,FALSE,Excluded; see source_field_exclusions
+t3q19a3,character,character,,t3:q19a: reasons that people who think that children should attend school only w,%86s,,,FALSE,Excluded; see source_field_exclusions
+t3q19a4,character,character,,t3:q19a: reasons that people who think that children should attend school only w,%75s,,,FALSE,Excluded; see source_field_exclusions
+t3q19a5,character,character,,t3:q19a: reasons that people who think that children should attend school only w,%38s,,,FALSE,Excluded; see source_field_exclusions
 t3q19anu,double,numeric,float64,t3:q19a: number of reasons given,%8.0g,,,TRUE,Retained
-t3q19b1,character,character,,t3:q19b: reasons that people who think that children should attend schools with,%168s,,,FALSE,Verbatim field excluded
-t3q19b2,character,character,,t3:q19b: reasons that people who think that children should attend schools with,%100s,,,FALSE,Verbatim field excluded
-t3q19b3,character,character,,t3:q19b: reasons that people who think that children should attend schools with,%59s,,,FALSE,Verbatim field excluded
-t3q19b4,character,character,,t3:q19b: reasons that people who think that children should attend schools with,%76s,,,FALSE,Verbatim field excluded
-t3q19b5,character,character,,t3:q19b: reasons that people who think that children should attend schools with,%49s,,,FALSE,Verbatim field excluded
+t3q19b1,character,character,,t3:q19b: reasons that people who think that children should attend schools with,%168s,,,FALSE,Excluded; see source_field_exclusions
+t3q19b2,character,character,,t3:q19b: reasons that people who think that children should attend schools with,%100s,,,FALSE,Excluded; see source_field_exclusions
+t3q19b3,character,character,,t3:q19b: reasons that people who think that children should attend schools with,%59s,,,FALSE,Excluded; see source_field_exclusions
+t3q19b4,character,character,,t3:q19b: reasons that people who think that children should attend schools with,%76s,,,FALSE,Excluded; see source_field_exclusions
+t3q19b5,character,character,,t3:q19b: reasons that people who think that children should attend schools with,%49s,,,FALSE,Excluded; see source_field_exclusions
 t3q19bnu,double,numeric,float64,t3:q19b: number of reasons given,%8.0g,,,TRUE,Retained
-t3q20a1,character,character,,t3:q20a: reasons that people who strongly agree that children from schools of di,%119s,,,FALSE,Verbatim field excluded
-t3q20a2,character,character,,t3:q20a: reasons that people who strongly agree that children from schools of di,%103s,,,FALSE,Verbatim field excluded
-t3q20a3,character,character,,t3:q20a: reasons that people who strongly agree that children from schools of di,%56s,,,FALSE,Verbatim field excluded
-t3q20a4,character,character,,t3:q20a: reasons that people who strongly agree that children from schools of di,%61s,,,FALSE,Verbatim field excluded
-t3q20a5,character,character,,t3:q20a: reasons that people who strongly agree that children from schools of di,%26s,,,FALSE,Verbatim field excluded
+t3q20a1,character,character,,t3:q20a: reasons that people who strongly agree that children from schools of di,%119s,,,FALSE,Excluded; see source_field_exclusions
+t3q20a2,character,character,,t3:q20a: reasons that people who strongly agree that children from schools of di,%103s,,,FALSE,Excluded; see source_field_exclusions
+t3q20a3,character,character,,t3:q20a: reasons that people who strongly agree that children from schools of di,%56s,,,FALSE,Excluded; see source_field_exclusions
+t3q20a4,character,character,,t3:q20a: reasons that people who strongly agree that children from schools of di,%61s,,,FALSE,Excluded; see source_field_exclusions
+t3q20a5,character,character,,t3:q20a: reasons that people who strongly agree that children from schools of di,%26s,,,FALSE,Excluded; see source_field_exclusions
 t3q20anu,double,numeric,float64,t3:q20a: number of reasons given,%8.0g,,,TRUE,Retained
-t3q20b1,character,character,,t3:q20b: reasons that people who strongly disagree that children from schools of,%102s,,,FALSE,Verbatim field excluded
-t3q20b2,character,character,,t3:q20b: reasons that people who strongly disagree that children from schools of,%87s,,,FALSE,Verbatim field excluded
-t3q20b3,character,character,,t3:q20b: reasons that people who strongly disagree that children from schools of,%69s,,,FALSE,Verbatim field excluded
-t3q20b4,character,character,,t3:q20b: reasons that people who strongly disagree that children from schools of,%55s,,,FALSE,Verbatim field excluded
-t3q20b5,character,character,,t3:q20b: reasons that people who strongly disagree that children from schools of,%1s,,,FALSE,Verbatim field excluded
+t3q20b1,character,character,,t3:q20b: reasons that people who strongly disagree that children from schools of,%102s,,,FALSE,Excluded; see source_field_exclusions
+t3q20b2,character,character,,t3:q20b: reasons that people who strongly disagree that children from schools of,%87s,,,FALSE,Excluded; see source_field_exclusions
+t3q20b3,character,character,,t3:q20b: reasons that people who strongly disagree that children from schools of,%69s,,,FALSE,Excluded; see source_field_exclusions
+t3q20b4,character,character,,t3:q20b: reasons that people who strongly disagree that children from schools of,%55s,,,FALSE,Excluded; see source_field_exclusions
+t3q20b5,character,character,,t3:q20b: reasons that people who strongly disagree that children from schools of,%1s,,,FALSE,Excluded; see source_field_exclusions
 t3q20bnu,double,numeric,float64,t3:q20b: number of reasons given,%8.0g,,,TRUE,Retained
-t3q21a1,character,character,,t3:q21a: reasons that people who strongly support schools combining primary and,%121s,,,FALSE,Verbatim field excluded
-t3q21a2,character,character,,t3:q21a: reasons that people who strongly support schools combining primary and,%87s,,,FALSE,Verbatim field excluded
-t3q21a3,character,character,,t3:q21a: reasons that people who strongly support schools combining primary and,%77s,,,FALSE,Verbatim field excluded
-t3q21a4,character,character,,t3:q21a: reasons that people who strongly support schools combining primary and,%41s,,,FALSE,Verbatim field excluded
-t3q21a5,character,character,,t3:q21a: reasons that people who strongly support schools combining primary and,%33s,,,FALSE,Verbatim field excluded
+t3q21a1,character,character,,t3:q21a: reasons that people who strongly support schools combining primary and,%121s,,,FALSE,Excluded; see source_field_exclusions
+t3q21a2,character,character,,t3:q21a: reasons that people who strongly support schools combining primary and,%87s,,,FALSE,Excluded; see source_field_exclusions
+t3q21a3,character,character,,t3:q21a: reasons that people who strongly support schools combining primary and,%77s,,,FALSE,Excluded; see source_field_exclusions
+t3q21a4,character,character,,t3:q21a: reasons that people who strongly support schools combining primary and,%41s,,,FALSE,Excluded; see source_field_exclusions
+t3q21a5,character,character,,t3:q21a: reasons that people who strongly support schools combining primary and,%33s,,,FALSE,Excluded; see source_field_exclusions
 t3q21anu,double,numeric,float64,t3:q21a: number of reasons given,%8.0g,,,TRUE,Retained
-t3q21b1,character,character,,t3:q21b: reasons that people who strongly oppose schools combining primary and p,%130s,,,FALSE,Verbatim field excluded
-t3q21b2,character,character,,t3:q21b: reasons that people who strongly oppose schools combining primary and p,%129s,,,FALSE,Verbatim field excluded
-t3q21b3,character,character,,t3:q21b: reasons that people who strongly oppose schools combining primary and p,%95s,,,FALSE,Verbatim field excluded
-t3q21b4,character,character,,t3:q21b: reasons that people who strongly oppose schools combining primary and p,%156s,,,FALSE,Verbatim field excluded
-t3q21b5,character,character,,t3:q21b: reasons that people who strongly oppose schools combining primary and p,%10s,,,FALSE,Verbatim field excluded
+t3q21b1,character,character,,t3:q21b: reasons that people who strongly oppose schools combining primary and p,%130s,,,FALSE,Excluded; see source_field_exclusions
+t3q21b2,character,character,,t3:q21b: reasons that people who strongly oppose schools combining primary and p,%129s,,,FALSE,Excluded; see source_field_exclusions
+t3q21b3,character,character,,t3:q21b: reasons that people who strongly oppose schools combining primary and p,%95s,,,FALSE,Excluded; see source_field_exclusions
+t3q21b4,character,character,,t3:q21b: reasons that people who strongly oppose schools combining primary and p,%156s,,,FALSE,Excluded; see source_field_exclusions
+t3q21b5,character,character,,t3:q21b: reasons that people who strongly oppose schools combining primary and p,%10s,,,FALSE,Excluded; see source_field_exclusions
 t3q21bnu,double,numeric,float64,t3:q21b: number of reasons given,%8.0g,,,TRUE,Retained
 cgq36,double,haven_labelled|vctrs_vctr|double,float64,cg:q36 some people think it is important that people be religious,%8.0g,,,TRUE,Retained
 cgq37,double,haven_labelled|vctrs_vctr|double,float64,"cg:q37 some people think it is important to pursue economic growth, regardless o",%8.0g,,,TRUE,Retained

@@ -1,4 +1,5 @@
 knowledge_participants <- function(poll_id, survey, groups = NULL) {
+  survey <- survey |> dplyr::arrange(.data$source_row)
   if (poll_id == "uk-health-1998") {
     stopifnot(all(survey$group > 0))
     participants <- survey |>
@@ -118,12 +119,13 @@ knowledge_participants <- function(poll_id, survey, groups = NULL) {
         female = as.integer(.data$female)
       ) |>
       dplyr::left_join(
-        groups, by = "respondent_id",
+        groups,
+        by = "respondent_id",
         relationship = "one-to-one", na_matches = "never"
       )
     stopifnot(all(groups$respondent_id %in% participants$respondent_id))
   } else {
-    stop("No participant selection rule for ", poll_id)
+    participants <- remaining_participants(poll_id, survey)
   }
 
   participants <- participants |>
@@ -154,12 +156,11 @@ knowledge_code_lookup <- function(items) {
     ) |>
     tidyr::pivot_longer(
       c("correct_values", "incorrect_values", "missing_values"),
-      names_to = "rule", values_to = "raw_value"
+      names_to = "rule", values_to = "raw_code"
     ) |>
-    dplyr::filter(!is.na(.data$raw_value), .data$raw_value != "") |>
-    tidyr::separate_longer_delim("raw_value", delim = "|") |>
+    dplyr::filter(!is.na(.data$raw_code), .data$raw_code != "") |>
+    tidyr::separate_longer_delim("raw_code", delim = "|") |>
     dplyr::mutate(
-      raw_value = as.numeric(.data$raw_value),
       correct = dplyr::case_when(
         .data$rule == "correct_values" ~ 1L,
         .data$rule == "incorrect_values" ~ 0L,
@@ -171,13 +172,18 @@ knowledge_code_lookup <- function(items) {
     ) |>
     dplyr::select(-"rule")
   stopifnot(
-    !anyNA(codes$raw_value),
-    !anyDuplicated(codes[c("poll_id", "wave", "item_id", "raw_value")])
+    !anyNA(codes$raw_code),
+    !anyDuplicated(codes[c("poll_id", "wave", "item_id", "raw_code")])
   )
   codes
 }
 
 score_knowledge_responses <- function(raw, items) {
+  if (!"raw_text" %in% names(raw)) raw$raw_text <- NA_character_
+  raw <- raw |>
+    dplyr::mutate(raw_code = knowledge_raw_code(
+      .data$poll_id, .data$raw_value, .data$raw_text
+    ))
   scored <- raw |>
     dplyr::left_join(
       items |>
@@ -187,27 +193,32 @@ score_knowledge_responses <- function(raw, items) {
     ) |>
     dplyr::left_join(
       knowledge_code_lookup(items),
-      by = c("poll_id", "wave", "item_id", "raw_value"),
+      by = c("poll_id", "wave", "item_id", "raw_code"),
       relationship = "many-to-one", na_matches = "never"
     )
-  if (any(!is.na(scored$raw_value) & is.na(scored$response_status))) {
+  if (any(!is.na(scored$raw_code) & is.na(scored$response_status))) {
+    bad <- scored |>
+      dplyr::filter(!is.na(.data$raw_code), is.na(.data$response_status)) |>
+      dplyr::distinct(.data$poll_id, .data$source_column, .data$raw_code)
+    print(bad, n = Inf)
     stop("Unmapped response code; update the reviewed item rules.")
   }
   scored |>
     dplyr::mutate(
       response_status = dplyr::if_else(
-        is.na(.data$raw_value), "source_missing", .data$response_status
+        is.na(.data$raw_code), "source_missing", .data$response_status
       ),
       missing_code = dplyr::case_when(
-        is.na(.data$raw_value) ~ "system",
+        is.na(.data$raw_code) ~ "system",
         .data$response_status == "non_substantive" ~
-          as.character(.data$raw_value),
+          dplyr::coalesce(.data$raw_text, as.character(.data$raw_value)),
         TRUE ~ NA_character_
       )
     ) |>
     dplyr::select(
       "poll_id", "respondent_id", "wave", "item_id", "source_row",
-      "source_column", "raw_value", "correct", "response_status", "missing_code"
+      "source_column", "raw_value", "raw_text", "correct",
+      "response_status", "missing_code"
     ) |>
     dplyr::arrange(
       .data$poll_id, .data$respondent_id, .data$wave, .data$item_id
@@ -219,20 +230,22 @@ build_poll_knowledge <- function(poll_id) {
   participants <- knowledge_participants(poll_id, survey)
   items <- read_metadata("knowledge_items") |>
     dplyr::filter(.data$poll_id == .env$poll_id)
-  values <- survey |>
-    dplyr::select("source_row", dplyr::all_of(items$source_column)) |>
-    dplyr::mutate(
-      dplyr::across(dplyr::all_of(items$source_column), as.numeric)
+  raw <- purrr::map(items$source_column, function(column) {
+    values <- survey[[column]]
+    tibble::tibble(
+      source_row = survey$source_row, source_column = column,
+      raw_value = if (is.character(values)) NA_real_ else as.numeric(values),
+      raw_text = if (is.character(values)) values else NA_character_
     )
-  raw <- participants |>
-    dplyr::select("poll_id", "respondent_id", "source_row") |>
-    dplyr::inner_join(values, by = "source_row", relationship = "one-to-one") |>
-    tidyr::pivot_longer(
-      dplyr::all_of(items$source_column),
-      names_to = "source_column", values_to = "raw_value"
+  }) |>
+    purrr::list_rbind() |>
+    dplyr::inner_join(
+      participants |> dplyr::select("poll_id", "respondent_id", "source_row"),
+      by = "source_row", relationship = "many-to-one"
     )
   stopifnot(nrow(raw) == nrow(participants) * nrow(items))
-  responses <- score_knowledge_responses(raw, items)
+  responses <- score_knowledge_responses(raw, items) |>
+    apply_knowledge_overrides(poll_id, survey)
   respondents <- participants |>
     dplyr::select(
       "poll_id", "respondent_id", "arm", "source_row", "battery_row", "female"
@@ -285,7 +298,61 @@ compare_knowledge_batteries <- function(tables) {
     people <- tables$respondents |>
       dplyr::filter(.data$poll_id == .env$poll_id) |>
       dplyr::arrange(.data$battery_row)
-    stopifnot(nrow(expected) == nrow(people))
+    if (nrow(expected) != nrow(people)) {
+      return(list(
+        summary = tibble::tibble(
+          poll_id = poll_id, respondents = nrow(people),
+          item_wave_columns = nrow(specification),
+          item_differences = NA_integer_, female_differences = NA_integer_,
+          benchmark_respondents = nrow(expected),
+          comparison_status = "unlinked-sample-difference"
+        ),
+        differences = NULL, score_changes = NULL
+      ))
+    }
+
+    if (poll_id == "europolis-2009") {
+      rebuilt <- tables$knowledge_responses |>
+        dplyr::filter(.data$poll_id == .env$poll_id) |>
+        dplyr::left_join(
+          specification |> dplyr::select("wave", "item_id", "benchmark_column"),
+          by = c("wave", "item_id"), relationship = "many-to-one"
+        ) |>
+        dplyr::select("respondent_id", "benchmark_column", "correct") |>
+        tidyr::pivot_wider(
+          names_from = "benchmark_column", values_from = "correct"
+        ) |>
+        dplyr::left_join(
+          people |> dplyr::select("respondent_id", "female"),
+          by = "respondent_id", relationship = "one-to-one"
+        ) |>
+        dplyr::select(-"respondent_id")
+      counts <- dplyr::full_join(
+        rebuilt |>
+          dplyr::count(dplyr::across(dplyr::everything()), name = "rebuilt"),
+        expected |>
+          dplyr::count(dplyr::across(dplyr::everything()), name = "deposited"),
+        by = names(expected), relationship = "one-to-one"
+      )
+      same <- all(
+        !is.na(counts$rebuilt), !is.na(counts$deposited),
+        counts$rebuilt == counts$deposited
+      )
+      return(list(
+        summary = tibble::tibble(
+          poll_id = poll_id, respondents = nrow(people),
+          item_wave_columns = nrow(specification),
+          item_differences = NA_integer_, female_differences = NA_integer_,
+          benchmark_respondents = nrow(expected),
+          comparison_status = if (same) {
+            "unordered-exact-match"
+          } else {
+            "unordered-different"
+          }
+        ),
+        differences = NULL, score_changes = NULL
+      ))
+    }
     female_differences <-
       sum(xor(is.na(people$female), is.na(expected$female))) +
       sum(people$female != expected$female, na.rm = TRUE)
@@ -293,7 +360,8 @@ compare_knowledge_batteries <- function(tables) {
       dplyr::select(dplyr::all_of(specification$benchmark_column)) |>
       dplyr::mutate(battery_row = dplyr::row_number()) |>
       tidyr::pivot_longer(
-        -"battery_row", names_to = "benchmark_column",
+        -"battery_row",
+        names_to = "benchmark_column",
         values_to = "deposited_correct"
       ) |>
       dplyr::left_join(
@@ -321,7 +389,8 @@ compare_knowledge_batteries <- function(tables) {
       poll_id = poll_id, respondents = nrow(people),
       item_wave_columns = nrow(specification),
       item_differences = sum(detail$differs),
-      female_differences = female_differences
+      female_differences = female_differences,
+      benchmark_respondents = nrow(expected), comparison_status = "row-aligned"
     )
     scores <- detail |>
       dplyr::group_by(.data$poll_id, .data$respondent_id, .data$wave) |>

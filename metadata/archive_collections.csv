@@ -9,7 +9,7 @@ cdd-british-europe,data/british_europe,uk-eu-1995,poll,review-required,"Historic
 cdd-british-general-election,data/british_general_election,uk-general-election-1997,poll,review-required,"Historical source directory"
 cdd-british-health,data/british_health,uk-health-1998,poll,review-required,"Historical source directory"
 cdd-british-monarchy,data/british_monarchy,uk-monarchy-1996,poll,review-required,"Historical source directory"
-cdd-bulgaria,data/Bulgaria,bulgaria-2007,poll,review-required,"Historical source directory"
+cdd-bulgaria,data/Bulgaria,,poll,review-required,"Mixed crime 2002 and Roma 2007 materials; assign individual artifacts after review"
 cdd-california,data/California,california-whats-next-2011,poll,vault-only,"Historical source directory; identifier-like fields require review"
 cdd-denmark,data/Denmark,denmark-euro-2000,poll,review-required,"Historical source directory"
 cdd-europolis,data/eu_2009,europolis-2009,poll,review-required,"Historical source directory"

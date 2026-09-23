@@ -1,0 +1,2 @@
+poll_id,source_id,archive_path,source_sha256,source_rows,source_columns,public_path,transformation,publication_status,review_note
+denmark-euro-2000,cdd-denmark-euro-2000-departure,data/Denmark/data/t2.sav,9046fedd5abebedfc91107db35de8b6de04b4d4486c212879394182b51215771,359,126,data/denmark-euro-2000/departure.parquet,exclude-verbatim,approved-redacted,Departure wave; exclude four text fields; join by DELNR with baseline delnr

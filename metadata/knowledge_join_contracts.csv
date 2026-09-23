@@ -8,3 +8,17 @@ uk-general-election-1997,filter equals 1,serial,cdd-uk-general-election-1997-sur
 cpl-1996,group is observed,caseid,cdd-cpl-1996-survey,caseid,one-to-one,216,216,Fail if a selected participant lacks a known group
 swepco-1996,PART equals 1,CASEID,cdd-swepco-1996-survey,CASEID,one-to-one,232,232,Fail if a selected participant lacks a known group
 wtu-1996,PART equals 1,CASEID,cdd-wtu-1996-survey,CASEID,one-to-one,230,230,Fail if a selected participant lacks a known group
+australia-republic-1999,group in 1:24,caseid,cdd-australia-republic-1999-survey,caseid,one-to-one,347,347,Retain respondents; missing groups remain unknown
+btp-2007,group equals 1,CaseID,cdd-btp-2007-survey,CaseID,one-to-one,301,301,Retain respondents; missing groups remain unknown
+btp-general-election-2004,dop4part equals 1 and t1know/t2know nonmissing,caseid_original,cdd-btp-general-election-2004-survey,caseid_original,one-to-one,250,250,Retain respondents; missing groups remain unknown
+btp-health-education-2005,All 454 source rows,id,cdd-btp-health-education-2005-survey,id,one-to-one,454,454,Retain respondents; missing groups remain unknown
+btp-online-primaries-2004,expcont equals 1,id,cdd-btp-online-primaries-2004-survey,id,one-to-one,328,315,Retain respondents; missing groups remain unknown
+bulgaria-crime-2002,All 278 source rows,id,cdd-bulgaria-crime-2002-survey,id,one-to-one,278,278,Retain respondents; missing groups remain unknown
+california-whats-next-2011,t2t3filter equals 1 and part nonmissing,id,cdd-california-whats-next-2011-survey,id,one-to-one,396,396,Retain respondents; missing groups remain unknown
+europolis-2009,GROUP_T1BIS equals 1,UniqueID,cdd-europolis-2009-survey,UniqueID,one-to-one,348,348,Retain respondents; missing groups remain unknown
+nic-1996,PART equals 1,CASEID rounded within 1e-8; source-row fallback when absent,cdd-nic-1996-survey,source_row (CASEID fallback),one-to-one,466,466,Retain respondents; missing groups remain unknown
+tomorrows-europe-2007,t3part equals 1,v_b,cdd-tomorrows-europe-2007-survey,v_b,one-to-one,359,359,Retain respondents; missing groups remain unknown
+vermont-energy-2007,PART equals 1,CASEID,cdd-vermont-energy-2007-survey,CASEID,one-to-one,146,0,Retain respondents; missing groups remain unknown
+san-mateo-2008,participant equals 1,PARTICIPANTID,cdd-san-mateo-2008-survey,PARTICIPANTID,one-to-one,239,239,Retain respondents; missing groups remain unknown
+denmark-euro-2000,Departure DELNR matches baseline delnr; retain matched departures,delnr,cdd-denmark-euro-2000-survey,delnr,one-to-one,359,0,Retain respondents; missing groups remain unknown
+michigan-2009,postit nonmissing,postit,cdd-michigan-2009-survey,postit,one-to-one,310,310,Retain respondents; missing groups remain unknown

@@ -1,0 +1,5 @@
+poll_id,source_column,reason
+denmark-euro-2000,S30_2,Departure text field retained only in local archive
+denmark-euro-2000,S35A_2,Departure text field retained only in local archive
+denmark-euro-2000,S35B_2,Departure text field retained only in local archive
+denmark-euro-2000,S35C_2,Departure text field retained only in local archive

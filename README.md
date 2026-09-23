@@ -20,14 +20,15 @@ Direct identifiers were found in at least one historical raw file. The archive
 therefore cannot be published as an undifferentiated dump. See
 [`docs/disclosure.md`](docs/disclosure.md).
 
-The survey-based build now covers nine polls: 2,088 participants, 30,944
-item-wave responses, and 144 known discussion groups. It publishes five typed
-Parquet tables in `output/`. Eight batteries match their deposits; UK Monarchy
-corrects a repeated T1 field in the deposited T2 battery. Group membership is
-known for 2,084 participants; four UK–EU attendees remain without an assignment.
-The [build notes](docs/knowledge-build.md) describe the complete coverage.
-The [latest five-poll audit](docs/monarchy-election-utilities.md) explains the
-correction and the remaining source limitations.
+The survey-based build covers all 23 knowledge batteries: 6,669 participants,
+103,116 item-wave responses, and 406 known discussion groups. Five typed
+Parquet tables in `output/` preserve source answers, scoring decisions and
+missing values. Group membership is available for 6,147 participants.
+The [build notes](docs/knowledge-build.md) describe the output contract.
+The [fourteen-poll audit](docs/remaining-polls.md) explains corrected scores,
+three unresolved sample-size differences, Europolis's unordered match, and
+Vermont's ambiguous answer key. These outputs do not yet rebuild the full
+attitude aggregate or the control-arm batteries.
 
 ## Reproduce
 
