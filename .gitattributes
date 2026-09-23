@@ -8,4 +8,4 @@
 *.dta binary
 *.pdf binary
 *.zip binary
-
+legacy/** -text
