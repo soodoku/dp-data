@@ -1,0 +1,485 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+caseid,double,numeric,,Case identification number,F8.0,,,TRUE,Retained
+caseid3,double,numeric,,ACRS Case Identification Number (use to match with ACRS data),F8.0,,,TRUE,Retained
+apcht1t2,double,numeric,,"recoded approve1 and approve 2, for t1 and t2",F8.2,,,TRUE,Retained
+knind1_1,double,numeric,,Knowledge index 1 (with 4 debatable items) at t1,F8.2,,,TRUE,Retained
+knind2_1,double,numeric,,Knowledge index 2 (w/out 4 debatable items) at t1,F8.2,,,TRUE,Retained
+knind1_t2,double,numeric,,Knowledge index 1 (with 4 debatable items) at t2,F8.4,,,TRUE,Retained
+knind2_t2,double,numeric,,Knowledge index 2 (w/out 4 debatable items) at t2,F8.4,,,TRUE,Retained
+knind1_t3,double,numeric,,Knowledge index 1(with 4 debatable items) at t3,F8.4,,,TRUE,Retained
+knind2_t3,double,numeric,,Knowledge index 2 (w/out 4 debatable items) at t3,F8.4,,,TRUE,Retained
+Autind1,double,numeric,,"T1 ""National autonomy"" index - average: ""moreindr,"" ""stanworr,"" ""qbritinr""",F8.4,,,TRUE,Retained
+workind1,double,numeric,,"T1 ""Workability"" index - average: ""pmpowerr,"" ""polstabr,"" ""confronr,"" ""stweakr,"" ""repexpr, ""constrdr""",F8.4,,,TRUE,Retained
+Demind1,double,numeric,,"T1 ""Democracy"" index - average: ""moredemr,"" ""quedemr""",F8.4,,,TRUE,Retained
+Tradind1,double,numeric,,"T1 ""Tradition"" index - average: ""britherr,"" ""preservr""",F8.4,,,TRUE,Retained
+Polind1,double,numeric,,"T1 ""Politicization"" index - average: ""prespolr,"" ""ppchprer""",F8.4,,,TRUE,Retained
+autind2,double,numeric,,"T2 ""National autonomy"" index - average: ""moreindr,"" ""stanworr,"" ""qbritinr""",F8.4,,,TRUE,Retained
+workind2,double,numeric,,"T2 ""Workability"" index - average: ""pmpowerr,"" ""polstabr,"" ""confronr,"" ""stweakr,"" ""repexpr, ""constrdr""",F8.4,,,TRUE,Retained
+demind2,double,numeric,,"T2 ""Democracy"" index - average: ""moredemr,"" ""quedemr""",F8.4,,,TRUE,Retained
+tradind2,double,numeric,,"T2 ""Tradition"" index - average: ""britherr,"" ""preservr""",F8.4,,,TRUE,Retained
+polind2,double,numeric,,"T2 ""Politicization"" index - average: ""prespolr,"" ""ppchprer""",F8.4,,,TRUE,Retained
+autind3,double,numeric,,"T3 ""National autonomy"" index - average: ""moreindr,"" ""stanworr,"" ""qbritinr""",F8.4,,,TRUE,Retained
+workind3,double,numeric,,"T3 ""Workability"" index - average: ""pmpowerr,"" ""polstabr,"" ""confronr,"" ""stweakr,"" ""repexpr, ""constrdr""",F8.4,,,TRUE,Retained
+demind3,double,numeric,,"T3 ""Democracy"" index - average: ""moredemr,"" ""quedemr""",F8.4,,,TRUE,Retained
+polind3,double,numeric,,"T3 ""Politicization"" index - average: ""prespolr,"" ""ppchprer""",F8.4,,,TRUE,Retained
+morind1r,double,haven_labelled|vctrs_vctr|double,,"T1 Recoded moreind1 -- 0-1 scale, strong agree = 1",F8.4,,,TRUE,Retained
+morind2r,double,haven_labelled|vctrs_vctr|double,,"T2 Recoded moreind2 -- 0-1 scale, strong agree = 1",F8.4,,,TRUE,Retained
+morind3r,double,haven_labelled|vctrs_vctr|double,,"T3 Recoded moreind3 -- 0-1 scale, strong agree = 1",F8.4,,,TRUE,Retained
+stanwor1r,double,haven_labelled|vctrs_vctr|double,,"T1 recoded stanwor1 -- 0-1 scale, strong agree = 1",F8.4,,,TRUE,Retained
+stanwor2r,double,haven_labelled|vctrs_vctr|double,,"T2 recoded stanwor2 -- 0-1 scale, strong agree = 1",F8.4,,,TRUE,Retained
+stanwor3r,double,haven_labelled|vctrs_vctr|double,,"T3 recoded stanwor3 -- 0-1 scale, strong agree = 1",F8.4,,,TRUE,Retained
+qbritn1r,double,haven_labelled|vctrs_vctr|double,,"T1 recoded qbritin1 -- 0-1 scale, strong agree = 1",F8.4,,,TRUE,Retained
+qbritn2r,double,haven_labelled|vctrs_vctr|double,,"T2 recoded qbritin2 -- 0-1 scale, strong agree = 1",F8.4,,,TRUE,Retained
+qbritn3r,double,haven_labelled|vctrs_vctr|double,,"T3 recoded qbritin3 -- 0-1 scale, strong agree = 1",F8.4,,,TRUE,Retained
+pmpwr1r,double,haven_labelled|vctrs_vctr|double,,"T1 Recoded pmpower1 -- on to 0-1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+ipmpw1r,double,numeric,,"Indicator variable for pmpwr1r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+pmpwr2r,double,haven_labelled|vctrs_vctr|double,,"T2 Recoded pmpower2 -- on to 0-1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+ipmpw2r,double,numeric,,"Indicator variable for pmpwr2r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+pmpwr3r,double,haven_labelled|vctrs_vctr|double,,"T3 Recoded pmpower3 -- on to 0-1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+ipmpw3r,double,numeric,,"Indicator variable for pmpwr3r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+polstb1r,double,haven_labelled|vctrs_vctr|double,,"T1 recoded polstab1 -- on 0 to 1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+ipolst1r,double,haven_labelled|vctrs_vctr|double,,"Indicator variable for polstb1r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+polstb2r,double,haven_labelled|vctrs_vctr|double,,"T2 recoded polstab2 -- on 0 to 1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+ipolst2r,double,haven_labelled|vctrs_vctr|double,,"Indicator variable for polstb2r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+polstb3r,double,haven_labelled|vctrs_vctr|double,,"T3 recoded polstab3 -- on 0 to 1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+ipolst3r,double,haven_labelled|vctrs_vctr|double,,"Indicator variable for polstb3r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+cnfrn1r,double,haven_labelled|vctrs_vctr|double,,"T1 recoded confron1 -- on 0 to 1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+icnfrn1r,double,haven_labelled|vctrs_vctr|double,,"Indicator variable for cnfrn1r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+cnfrn2r,double,haven_labelled|vctrs_vctr|double,,"T2 recoded confron2 -- on 0 to 1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+icnfrn2r,double,haven_labelled|vctrs_vctr|double,,"Indicator variable for cnfrn2r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+cnfrn3r,double,haven_labelled|vctrs_vctr|double,,"T3 recoded confron3 -- on 0 to 1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+icnfrn3r,double,haven_labelled|vctrs_vctr|double,,"Indicator variable for cnfrn3r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+stweak1r,double,haven_labelled|vctrs_vctr|double,,"T1 recoded stweak1 -- on 0 to 1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+istwea1r,double,haven_labelled|vctrs_vctr|double,,"Indicator variable for stweak1r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+stweak2r,double,haven_labelled|vctrs_vctr|double,,"T2 recoded stweak2 -- on 0 to 1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+istwea2r,double,haven_labelled|vctrs_vctr|double,,"Indicator variable for stweak2r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+stweak3r,double,haven_labelled|vctrs_vctr|double,,"T3 recoded stweak3 -- on 0 to 1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+istwea3r,double,haven_labelled|vctrs_vctr|double,,"Indicator variable for stweak3r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+repexp1r,double,haven_labelled|vctrs_vctr|double,,"T1 recoded repexp1 -- on 0 to 1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+irepxp1r,double,haven_labelled|vctrs_vctr|double,,"Indicator variable for repexp1r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+repexp2r,double,haven_labelled|vctrs_vctr|double,,"T2 recoded repexp2 -- on 0 to 1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+irepxp2r,double,haven_labelled|vctrs_vctr|double,,"Indicator variable for repexp2r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+repexp3r,double,haven_labelled|vctrs_vctr|double,,"T3 recoded repexp3 -- on 0 to 1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+irepxp3r,double,haven_labelled|vctrs_vctr|double,,"Indicator variable for repexp3r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+constr1r,double,haven_labelled|vctrs_vctr|double,,"T1 recoded constrd1 -- on 0 to 1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+icnstr1r,double,haven_labelled|vctrs_vctr|double,,"Indicator variable for constr1r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+constr2r,double,haven_labelled|vctrs_vctr|double,,"T2 recoded constrd2 -- on 0 to 1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+icnstr2r,double,haven_labelled|vctrs_vctr|double,,"Indicator variable for constr2r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+constr3r,double,haven_labelled|vctrs_vctr|double,,"T3 recoded constrd3 -- on 0 to 1 scale, strong disagree=1",F8.2,,,TRUE,Retained
+icnstr3r,double,haven_labelled|vctrs_vctr|double,,"Indicator variable for constr3r (1 if valid value, 0 if missing data/DK/refused, etc)",F8.2,,,TRUE,Retained
+mordem1r,double,haven_labelled|vctrs_vctr|double,,"T1 recoded moredem1 -- on 0 to 1 scale, 1=strong agree",F8.2,,,TRUE,Retained
+mordem2r,double,haven_labelled|vctrs_vctr|double,,"T2 recoded moredem2 -- on 0 to 1 scale, 1=strong agree",F8.2,,,TRUE,Retained
+mordem3r,double,haven_labelled|vctrs_vctr|double,,"T3 recoded moredem3 -- on 0 to 1 scale, 1=strong agree",F8.2,,,TRUE,Retained
+quedem1r,double,haven_labelled|vctrs_vctr|double,,"T1 recoded quedem1 -- on 0 to 1 scale, 1=strong disagree",F8.2,,,TRUE,Retained
+quedem2r,double,haven_labelled|vctrs_vctr|double,,"T2 recoded quedem2 -- on 0 to 1 scale, 1=strong disagree",F8.2,,,TRUE,Retained
+quedem3r,double,haven_labelled|vctrs_vctr|double,,"T3 recoded quedem3 -- on 0 to 1 scale, 1=strong disagree",F8.2,,,TRUE,Retained
+brther1r,double,haven_labelled|vctrs_vctr|double,,"T1 recoded brither1 -- on 0 to 1 scale, 1=strongly agree",F8.2,,,TRUE,Retained
+brther2r,double,haven_labelled|vctrs_vctr|double,,"T2 recoded brither2 -- on 0 to 1 scale, 1=strongly agree",F8.2,,,TRUE,Retained
+presrv1r,double,haven_labelled|vctrs_vctr|double,,"T1 recoded preserv1 -- on 0 to 1 scale, 1=strongly agree",F8.2,,,TRUE,Retained
+presrv2r,double,haven_labelled|vctrs_vctr|double,,"T2 recoded preserv2 -- on 0 to 1 scale, 1=strongly agree",F8.2,,,TRUE,Retained
+prespl1r,double,haven_labelled|vctrs_vctr|double,,"T1 recoded prespol1 -- on 0 to 1 scale, 1=strongly disagree",F8.2,,,TRUE,Retained
+prespl2r,double,haven_labelled|vctrs_vctr|double,,"T2 recoded prespol2 -- on 0 to 1 scale, 1=strongly disagree",F8.2,,,TRUE,Retained
+prespl3r,double,haven_labelled|vctrs_vctr|double,,"T3 recoded prespol3 -- on 0 to 1 scale, 1=strongly disagree",F8.2,,,TRUE,Retained
+ppchpr1r,double,haven_labelled|vctrs_vctr|double,,"T1 recoded ppchpre1 -- on 0 to 1 scale, 1= strongly agree",F8.2,,,TRUE,Retained
+ppchpr2r,double,haven_labelled|vctrs_vctr|double,,"T2 recoded ppchpre2 -- on 0 to 1 scale, 1= strongly agree",F8.2,,,TRUE,Retained
+ppchpr3r,double,haven_labelled|vctrs_vctr|double,,"T3 recoded ppchpre3 -- on 0 to 1 scale, 1= strongly agree",F8.2,,,TRUE,Retained
+votetri,double,haven_labelled|vctrs_vctr|double,,Trichotomous variable for change in vote preference,F8.2,,,TRUE,Retained
+dichvt1,double,haven_labelled|vctrs_vctr|double,,Dichotmous vote intention T1 (Yes or No),F8.4,,,TRUE,Retained
+gmndicvt,double,numeric,,Small group mean on T1 vote intention (excluding respondent),F8.4,,,TRUE,Retained
+distvt1,double,numeric,,Respondent's distance from small group mean on vote intention at T1 (dichvt1 - gmdicvt),F8.4,,,TRUE,Retained
+difautin,double,numeric,,T2 - T1 difference on autonomy index (autind2 - autind1),F8.4,,,TRUE,Retained
+gmnaut1,double,numeric,,Small group T1 mean on autonomy index (excluding respondent),F8.4,,,TRUE,Retained
+distaut1,double,numeric,,Respondent's distance from small group mean on autonomy index at T1 (autind1 - gmnaut1),F8.4,,,TRUE,Retained
+difwrkin,double,numeric,,T2 - T1 difference on workability index (workind2 - workind1),F8.4,,,TRUE,Retained
+gmnwrk1,double,numeric,,Small group T1 mean on workability index (excluding respondent),F8.4,,,TRUE,Retained
+distwrk1,double,numeric,,Respondent's distance from small group mean on workabilityy index at T1 (workind1 - gmnwrk1),F8.4,,,TRUE,Retained
+difdema,double,numeric,,T2 - T1 difference on democracy index version A (mordem2r - mordem1r),F8.4,,,TRUE,Retained
+gmndema1,double,numeric,,Small group T1 mean on democracy index version A -- mordem1r (excluding respondent),F8.4,,,TRUE,Retained
+distdma1,double,numeric,,Respondent's distance from small group mean on democracy index version A at T1 (mordem1r - gmndema1),F8.4,,,TRUE,Retained
+difdemb,double,numeric,,T2 - T1 difference on democracy index version B (quedem2r - quedem1r),F8.4,,,TRUE,Retained
+gmndemb1,double,numeric,,Small group T1 mean on democracy index version B -- quedem1r (excluding respondent),F8.4,,,TRUE,Retained
+distdmb1,double,numeric,,Respondent's distance from small group mean on democracy index version B at T1 quedem1r - gmndemb1),F8.4,,,TRUE,Retained
+diftrad,double,numeric,,T2 - T1 difference on tradition index (tradind2 - tradind1),F8.4,,,TRUE,Retained
+gmntrad1,double,numeric,,Small group T1 mean on tradition index (excluding respondent),F8.4,,,TRUE,Retained
+disttra1,double,numeric,,Respondent's distance from small group mean on tradition index at T1 (tradind1 - gmntrad1),F8.4,,,TRUE,Retained
+difpola,double,numeric,,T2 - T1 difference on politicization index version A (prespl2r - prespl1r),F8.4,,,TRUE,Retained
+gmnpola1,double,numeric,,Small group T1 mean on politicization index version A -- prespl1r (excluding respondent),F8.4,,,TRUE,Retained
+dispola1,double,numeric,,Respondent's distance from small group mean on politicization index version A at T1 (prespl1r - gmnpola1),F8.4,,,TRUE,Retained
+difpolb,double,numeric,,T2 - T1 difference on politicization index version B (ppchpr2r - ppchpr1r),F8.4,,,TRUE,Retained
+gmnpolb1,double,numeric,,Small group T1 mean on politicization index version B -- ppchpr1r (excluding respondent),F8.4,,,TRUE,Retained
+dispolb1,double,numeric,,Respondent's distance from small group mean on politicization index version B at T1 (ppchpr1r - gmnpolb1),F8.4,,,TRUE,Retained
+part,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Participant in T2,F8.0,,94|103,TRUE,Retained
+partfull,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Full Breakdown Participant in T2,F8.0,,94|103,TRUE,Retained
+region,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Region in which R resides T1,F8.0,,94|103,TRUE,Retained
+eligvote,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Are you eligible to vote T1 (Q1),F8.0,,94|103,TRUE,Retained
+gender,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,R's gender T1 (Q2),F8.0,,94|103,TRUE,Retained
+agecat,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,R's age category T1 (Q3),F8.0,,94|103,TRUE,Retained
+age,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,R's age T1 (Q4),F8.0,,94|103,TRUE,Retained
+workstat,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Employment status T1 (Q5),F8.0,,94|103,TRUE,Retained
+aware,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Awareness of referendum T1 (QA1),F8.0,,94|103,TRUE,Retained
+approve1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Approve of proposed proposed alteration T1 (QA2a),F8.0,,98|103,TRUE,Retained
+apprv1r,double,haven_labelled|vctrs_vctr|double,,Recoded approve1 (DKs/refused = missing data),F8.2,,,TRUE,Retained
+apptend1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Tend to approve of proposed alteration T1 (QA2b),F8.0,,94|103,TRUE,Retained
+aprove1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Approve or tend to approve of referendum T1,F8.0,,94|103,TRUE,Retained
+amthr1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Read/heard about referendum T1 (QA3),F8.0,,94|103,TRUE,Retained
+amtdis1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Discussed referendum T1 (QA4),F8.0,,94|103,TRUE,Retained
+votknow1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Know enough to vote or not T1 (QA5a),F8.0,,94|103,TRUE,Retained
+morinfo1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,"If want more info., how much? T1 (QA5b)",F8.0,,94|103,TRUE,Retained
+votinfo1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Want more info on referendum T1 (QA5c),F8.0,,94|103,TRUE,Retained
+firstop1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,First option on change to a republic T1 (QA6a),F8.0,,94|103,TRUE,Retained
+frstop1r,double,haven_labelled|vctrs_vctr|double,,Recoded firstop1 (DKs/refused = missing data),F8.2,,,TRUE,Retained
+secop1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Second option on change to a republic T1  (QA6b),F8.0,,94|103,TRUE,Retained
+prespow1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,President same powers as Governor General T1 (QA7),F8.0,,94|103,TRUE,Retained
+tiesbr1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Keep constitutional ties with Britain T1 (QA8a),F8.0,,94|103,TRUE,Retained
+presout1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,President someone outside of politics T1 (QA8b),F8.0,,94|103,TRUE,Retained
+headaus1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Head of State Australian T1 (QA8c),F8.0,,94|103,TRUE,Retained
+distrac1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Debate a distraction from real problems T1 (QA8d),F8.0,,94|103,TRUE,Retained
+qrole1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Queen appoints Gov. General on advice of P.M. T1 (QB1),F8.0,,94|103,TRUE,Retained
+qrfact1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about Queen appointing Gov. General T1,F8.0,,94|103,TRUE,Retained
+ggrole1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Governor General can dismiss government T1 (QB2),F8.0,,94|103,TRUE,Retained
+ggfact1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about Gov. General dismissing govt. T1,F8.0,,94|103,TRUE,Retained
+presrol1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,President like Governor General T1 (QB3),F8.0,,94|103,TRUE,Retained
+prfact1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about President like Gov. General T1,F8.0,,94|103,TRUE,Retained
+rempres1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Prime Minister cannot remove President T1 (QB4),F8.0,,94|103,TRUE,Retained
+rpfact1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct that P.M. can remove President any time w/ later aprroval T1,F8.0,,94|103,TRUE,Retained
+party1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Labor party more in favor of republic T1 (QB5),F8.0,,94|103,TRUE,Retained
+pfact1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about Labor party more in favor of republic T1,F8.0,,94|103,TRUE,Retained
+pmpower1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Prime minister more powerful T1 (QC1a),F8.0,,94|103,TRUE,Retained
+prezpow1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,President no more powerful than Governor General T1 (QC1b),F8.0,,94|103,TRUE,Retained
+repexp1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Change to republic expensive T1 (QC1c),F8.0,,94|103,TRUE,Retained
+common1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Remain member of Commonwealth T1 (QC1d),F8.0,,94|103,TRUE,Retained
+polstab1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Political stability endangered T1 (QC1e),F8.0,,94|103,TRUE,Retained
+constrd1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Constitutional reform more difficult T1 (QC1f),F8.0,,94|103,TRUE,Retained
+moreind1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Become a more independent country T1 (QC1g),F8.0,,94|103,TRUE,Retained
+stanwor1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Standing in world would be improved T1 (QC1h),F8.0,,94|103,TRUE,Retained
+confron1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Confrontations with P.M. more likely T1 (QC1i),F8.0,,94|103,TRUE,Retained
+stweak1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,States in federal system weakened T1 (QC1j),F8.0,,94|103,TRUE,Retained
+moredem1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Government more democratic T1 (QC1k),F8.0,,94|103,TRUE,Retained
+quedem1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Queen plays important part guaranteeing democratic rights T1 (QC2a),F8.0,,94|103,TRUE,Retained
+qbritin1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Queen promotes British interests T1 (QC2b),F8.0,,94|103,TRUE,Retained
+prespol1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,President less likely a politician T1 (QC3a),F8.0,,94|103,TRUE,Retained
+ppchpre1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Parties play greater role in choosing president T1 (QC3b),F8.0,,94|103,TRUE,Retained
+flagchg1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Australian flag change T1 (QC4a),F8.0,,94|103,TRUE,Retained
+anthem1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,National anthem change T1 (QC4b),F8.0,,94|103,TRUE,Retained
+wdroyal1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Change in use of word 'royal' T1 (QC4c),F8.0,,94|103,TRUE,Retained
+pargame1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Change in participation in Commonwealth Games T1 (QC4d),F8.0,,94|103,TRUE,Retained
+dkchg1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,None/don't know if change T1 (QC4e),F8.0,,94|103,TRUE,Retained
+intpol1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Interest in politics T1 (QD1),F8.0,,94|103,TRUE,Retained
+partyid1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,R's party identification T1 (QD2),F8.0,,94|103,TRUE,Retained
+parsupp1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Strength of support for party T1 (QD3),F8.0,,94|103,TRUE,Retained
+welfare1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Labor party more concerned with welfare issues T1 (QD4),F8.0,,94|103,TRUE,Retained
+welfact1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about Labor party more concerned with welfare T1,F8.0,,94|103,TRUE,Retained
+busines1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Liberal party closer to business T1 (QD5),F8.0,,94|103,TRUE,Retained
+busfact1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about Liberal party closer to business T1,F8.0,,94|103,TRUE,Retained
+democra1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Satisfied with way democracy works T1 (QD6),F8.0,,94|103,TRUE,Retained
+ridgewy1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Role of Aden Ridgeway T1 (QD7),F8.0,,94|103,TRUE,Retained
+rfact1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about role of Aden Ridgeway T1,F8.0,,94|103,TRUE,Retained
+jgeorge1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Role of Jennie George T1 (QD8),F8.0,,94|103,TRUE,Retained
+jgfact1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about role of Jennie George T1,F8.0,,94|103,TRUE,Retained
+polfeel1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Feeling toward politicians T1 (QD9a),F8.0,,94|103,TRUE,Retained
+monarch1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Feeling toward monarchists T1 (QD9b),F8.0,,94|103,TRUE,Retained
+repub1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Feeling toward republicans T1 (QD9c),F8.0,,94|103,TRUE,Retained
+saygov1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,No say about what govt. does T1 (QD10a),F8.0,,94|103,TRUE,Retained
+opinion1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Opinions worth listening to T1 (QD10b),F8.0,,94|103,TRUE,Retained
+brither1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,British heritage important T1 (QE1a),F8.0,,94|103,TRUE,Retained
+preserv1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Preserve traditional ways T1 (QE1b),F8.0,,94|103,TRUE,Retained
+majorit1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Do what majority wants T1 (QE1c),F8.0,,94|103,TRUE,Retained
+schage,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Age of leaving school T1 (QF1),F8.0,,94|103,TRUE,Retained
+edulev,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Education level T1 (QF2),F8.0,,94|103,TRUE,Retained
+marital,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Marital status T1 (QF3),F8.0,,94|103,TRUE,Retained
+country,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Country of birth T1 (QF4a),F8.0,,94|103,TRUE,Retained
+overseas,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,English speaking if born overseas T1 (QF4b),F8.0,,94|103,TRUE,Retained
+parcoun,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Parents country of birth T1 (QF4c),F8.0,,94|103,TRUE,Retained
+parenta,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Overseas parent born in English speaking country T1 (QF4d),F8.0,,94|103,TRUE,Retained
+parentb,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Overseas parent born in non-English speaking country T1 (QF4e),F8.0,,94|103,TRUE,Retained
+pardk,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Don't know if parents born in Australia or overseas T1 (QF4f),F8.0,,94|103,TRUE,Retained
+parovsdk,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Don't know where overseas parent born T1 (QF4g),F8.0,,94|103,TRUE,Retained
+occup,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Occupation T1 (QF5a),F8.0,,94|103,TRUE,Retained
+likeatt,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Likely to attend DOP,F8.0,,94|103,TRUE,Retained
+income,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Household income T1 (QF6),F8.0,,94|103,TRUE,Retained
+postcode,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Postcode T1 (QF7),F8.0,,94|103,TRUE,Retained
+passname,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Pass name for more info T1 (QF8a),F8.0,,94|103,TRUE,Retained
+group,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Group#,F8.0,,94|103,TRUE,Retained
+approve2r,double,haven_labelled|vctrs_vctr|double,,"Recoded approve2 -- 0=No, 1=Yes",F8.2,,,TRUE,Retained
+approve2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Approve of proposed constitution alteration T2 (WA1),F8.0,,98|103,TRUE,Retained
+apprv2r,double,haven_labelled|vctrs_vctr|double,,Recoded approve2 (DKs/refused = missing data),F8.2,,,TRUE,Retained
+amthr2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Read/heard about referendum T2 (WA2),F8.0,,94|103,TRUE,Retained
+amtdis2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Discussed referendum T2 (WA3),F8.0,,94|103,TRUE,Retained
+votinfo2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Want more infor on referndum T2 (WA4),F8.0,,94|103,TRUE,Retained
+firstop2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,First option to change to a republic T2 (WA5a),F8.0,,94|103,TRUE,Retained
+frstop2r,double,haven_labelled|vctrs_vctr|double,,Recoded firstop2 (DKs/refused = missing data),F8.2,,,TRUE,Retained
+secop2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Second option to change to a republic T2 (WA5b),F8.0,,94|103,TRUE,Retained
+prespow2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,President same powers as Governor General T2 (WA6),F8.0,,94|103,TRUE,Retained
+tiesbr2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Keep constitutional ties with Britain T2 (WA7a),F8.0,,94|103,TRUE,Retained
+presout2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,President someone outside of politics T2 (WA7b),F8.0,,94|103,TRUE,Retained
+headaus2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Head of State Australian T2 (WA7c),F8.0,,94|103,TRUE,Retained
+distrac2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Debate a distraction from real problems T2 (WA7d),F8.0,,94|103,TRUE,Retained
+qrole2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Queen appoints Gen Governor on advice of P.M. T2 (WB1),F8.0,,94|103,TRUE,Retained
+qrfact2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about Queen appointing Gov. General T2,F8.0,,94|103,TRUE,Retained
+ggrole2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Governor General can dismiss government T2 (WB2),F8.0,,94|103,TRUE,Retained
+ggfact2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about Gov. General dismissing govt. T2,F8.0,,94|103,TRUE,Retained
+presrol2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,President like Governor General T2 (WB3),F8.0,,94|103,TRUE,Retained
+prfact2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about President like Gov. General T2,F8.0,,94|103,TRUE,Retained
+rempres2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Prime Minister cannot remove President T2 (WB4),F8.0,,94|103,TRUE,Retained
+rpfact2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct that P.M. can remove President any time w/ later approval T2,F8.0,,94|103,TRUE,Retained
+party2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Labor party more in favor of republic T2 (WB5),F8.0,,94|103,TRUE,Retained
+pfact2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about Labor party more in favor of republic T2,F8.0,,94|103,TRUE,Retained
+pmpower2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Prime Minister more powerful T2 (WC1a),F8.0,,94|103,TRUE,Retained
+prezpow2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,President no more powerful than Governor General T2 (WC1b),F8.0,,94|103,TRUE,Retained
+repexp2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Change to republic expensive T2 (WC1c),F8.0,,94|103,TRUE,Retained
+common2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Remain member of Commonwealth T2 (WC1d),F8.0,,94|103,TRUE,Retained
+polstab2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Political stability endangered T2 (WC1e),F8.0,,94|103,TRUE,Retained
+constrd2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Constitutional reform more difficult T2 (WC1f),F8.0,,94|103,TRUE,Retained
+moreind2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Become a more independent country T2 (WC1g),F8.0,,94|103,TRUE,Retained
+stanwor2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Standing in world would be improved T2 (WC1h),F8.0,,94|103,TRUE,Retained
+confron2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Confrontation with P.M. more likely T2 (WC1i),F8.0,,94|103,TRUE,Retained
+stweak2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,States in federal system weakened T2 (WC1j),F8.0,,94|103,TRUE,Retained
+moredem2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Government more democratic T2 (WC1k),F8.0,,94|103,TRUE,Retained
+quedem2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Queen plays important part guaranteeing democratic rights T2 (WC2a),F8.0,,94|103,TRUE,Retained
+qbritin2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Queen promotes British interests T2 (WC2b),F8.0,,94|103,TRUE,Retained
+prespol2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,President less likely a politician T2 (WC3a),F8.0,,94|103,TRUE,Retained
+ppchpre2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Parties play greater role in choosing president T2 (WC3b),F8.0,,94|103,TRUE,Retained
+flagchg2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Australian flag change T2 (WC4a),F8.0,,94|103,TRUE,Retained
+anthem2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,National anthem change T2 (WC4b),F8.0,,94|103,TRUE,Retained
+wdroyal2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Change in use of word 'royal' T2 (WC4c),F8.0,,94|103,TRUE,Retained
+pargame2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Change in participation in Commenweath Games T2 (WC4d),F8.0,,94|103,TRUE,Retained
+dkchg2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Something will change T2 (WC4e),F8.0,,94|103,TRUE,Retained
+intpol2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Interest in politics T2 (WD1),F8.0,,94|103,TRUE,Retained
+partyid2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,R's party identification T2 (WD2),F8.0,,94|103,TRUE,Retained
+parsupp2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Strength of support for party T2 (WD3),F8.0,,94|103,TRUE,Retained
+welfare2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Labor party more concerned with welfare issues T2 (WD4),F8.0,,94|103,TRUE,Retained
+welfact2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about Labor party more concerned with welfare T2,F8.0,,94|103,TRUE,Retained
+busines2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Liberal party closer to business T2 (WD5),F8.0,,94|103,TRUE,Retained
+busfact2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about Liberal party closer to business T2,F8.0,,94|103,TRUE,Retained
+democra2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Satisfied with way democracy works T2 (WD6),F8.0,,94|103,TRUE,Retained
+ridgewy2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Role of Aden Ridgeway T2 (WD7),F8.0,,94|103,TRUE,Retained
+rfact2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about role of Aden Ridgeway T2,F8.0,,94|103,TRUE,Retained
+jgeorge2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Role of Jennie George T2 (WD8),F8.0,,94|103,TRUE,Retained
+jgfact2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about role of Jennie George T2,F8.0,,94|103,TRUE,Retained
+polfeel2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Feeling toward politicians T2 (WD9a),F8.0,,94|103,TRUE,Retained
+monarch2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Feeling toward monarchists T2 (WD9b),F8.0,,94|103,TRUE,Retained
+repub2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Feeling toward republicans T2 (WD9c),F8.0,,94|103,TRUE,Retained
+saygov2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,No say about what govt. does T2 (WD10a),F8.0,,94|103,TRUE,Retained
+opinion2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Opinions worth listening to T2 (WD10b),F8.0,,94|103,TRUE,Retained
+brither2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,British heritage important T2 (WE1a),F8.0,,94|103,TRUE,Retained
+preserv2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Preserve traditional ways T2 (WE1b),F8.0,,94|103,TRUE,Retained
+majorit2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Do what majority wants T2 (WE1c),F8.0,,94|103,TRUE,Retained
+opinpol2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Opinion of DOP T2 (WF1),F8.0,,94|103,TRUE,Retained
+valgdis2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Value of participating in group discussions T2 (WF2a),F8.0,,94|103,TRUE,Retained
+valoutg2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Value of discussion w/ delegates outside group T2 (WF2b),F8.0,,94|103,TRUE,Retained
+valplen2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Value of plenary sessions T2 (WF2c),F8.0,,94|103,TRUE,Retained
+grlead2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Group leader provided opportunity to participate T2 (WF3a),F8.0,,94|103,TRUE,Retained
+aspects2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Important aspects of each issue covered in groups T2 (WF3b),F8.0,,94|103,TRUE,Retained
+comment2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Comments of other group members useful T2 (WF3c),F8.0,,94|103,TRUE,Retained
+glinflu2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Group leader tried to influence group T2 (WF3d),F8.0,,94|103,TRUE,Retained
+difview2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,People with different views had good reasons T2 (WF3e),F8.0,,94|103,TRUE,Retained
+talkoth2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Talk with others before DOB T2 (WF4a),F8.0,,94|103,TRUE,Retained
+read2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Read about referendum before DOB T2 (WF4b),F8.0,,94|103,TRUE,Retained
+televis2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Watched news on T.V. before DOB T2 (WF4c),F8.0,,94|103,TRUE,Retained
+readmat2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Time spent reading discussion materials T2 (WF5),F8.0,,94|103,TRUE,Retained
+balance2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Were discussion materials balanced? T2 (WF6),F8.0,,94|103,TRUE,Retained
+acc3,double,numeric,,Accension I.D. number,F4.0,,,TRUE,Retained
+retday3,double,numeric,,Day of return,F2.0,,,TRUE,Retained
+retmo3,double,haven_labelled|vctrs_vctr|double,,Month of return,F2.0,,,TRUE,Retained
+retyear3,double,haven_labelled|vctrs_vctr|double,,Year of return,F2.0,,,TRUE,Retained
+samplet3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Respondents sample,F1.0,,94|103,TRUE,Retained
+st3full,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Full Breakdown Respondents sample,F1.0,,94|103,TRUE,Retained
+intpol3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Interest in politics T3 (ZA1),F1.0,,94|103,TRUE,Retained
+newspap3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Attention to newspaper reports T3 (ZA2),F1.0,,94|103,TRUE,Retained
+televis3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Followed referendum on T.V. T3 (ZA3a),F1.0,,94|103,TRUE,Retained
+radio3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Followed referendum on radio T3 (ZA3b),F1.0,,94|103,TRUE,Retained
+amthr3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Read/heard about referendum T3,F8.0,,94|103,TRUE,Retained
+intref3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Interest taken in referendum T3 (ZA4),F1.0,,94|103,TRUE,Retained
+amtdis3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Discussed referendum T3 (ZA5),F1.0,,94|103,TRUE,Retained
+tvcovdp3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Follwed T.V. coverage of DP T3 (ZA6a),F1.0,,94|103,TRUE,Retained
+racovdp3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Followed radio coverage of DP T3 (ZA6b),F1.0,,94|103,TRUE,Retained
+sixmin3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,See 60 Minutes program on DP T3 (ZA7),F1.0,,94|103,TRUE,Retained
+compuls3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Referendums compulsory or not T3 (ZA8),F1.0,,94|103,TRUE,Retained
+votcom3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Voted if not compulsory T3 (ZA9),F1.0,,94|103,TRUE,Retained
+care3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Cared about outcome of referendum T3 (ZA10),F1.0,,94|103,TRUE,Retained
+decide3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Decide when to vote T3 (ZA11),F1.0,,94|103,TRUE,Retained
+approve3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Voted for constitution alteration T3 (ZA12),F1.0,,98|103,TRUE,Retained
+apprv3r,double,haven_labelled|vctrs_vctr|double,,Recoded approve3 (DKs/refused = missing data),F8.2,,,TRUE,Retained
+preambl3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Voted for addition to Preamble T3 (ZA13),F1.0,,94|103,TRUE,Retained
+firstop3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,First option on change to a republic T3 (ZA14a),F1.0,,94|103,TRUE,Retained
+frstop3r,double,haven_labelled|vctrs_vctr|double,,Recoded firstop3 (Dks/refused = missing data),F8.2,,,TRUE,Retained
+secop3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Second option on change to a republic T3 (ZA14b),F1.0,,94|103,TRUE,Retained
+prespow3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,President same powers as Governor General T3 (ZA15),F1.0,,94|103,TRUE,Retained
+votinfo3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Wanted more info on referendum T3 (ZA16),F1.0,,94|103,TRUE,Retained
+votdif3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Though might vote differently on referendum T3 (ZA17),F1.0,,94|103,TRUE,Retained
+partyid3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,R's party identification T3 (ZB1),F2.0,,94|103,TRUE,Retained
+parsupp3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Strength of support for party T3 (ZB2),F1.0,,94|103,TRUE,Retained
+democra3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Satisfied with way democracy works T3 (ZB3),F1.0,,94|103,TRUE,Retained
+lrposit3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Own left-right positions T3 (WB4),F2.0,,94|103,TRUE,Retained
+housepr3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Party voted for last Federal Election T3 (ZB5),F1.0,,94|103,TRUE,Retained
+vothous3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,"If election today, who vote for T3 (ZB6)",F1.0,,94|103,TRUE,Retained
+feellib3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Like/Dislike: Liberal Party T3 (ZB7a),F2.0,,94|103,TRUE,Retained
+feellab3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Like/Dislike: Labor Party T3 (ZB7b),F2.0,,94|103,TRUE,Retained
+feelnat3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Like/Dislike: National Party T3 (ZB7c),F2.0,,94|103,TRUE,Retained
+feel1nt3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Like/Dislike: One Nation T3 (ZB7d),F2.0,,94|103,TRUE,Retained
+feeldem3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Like/Dislike: Democrats T3 (ZB7e),F2.0,,94|103,TRUE,Retained
+feelmon3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Like/Dislike: Monarchists T3 (ZB7f),F2.0,,94|103,TRUE,Retained
+feelrep3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Like/Dislike: Republicans T3 (ZB7g),F2.0,,94|103,TRUE,Retained
+likekb3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Like/Dislike: Kim Beazley T3 (ZB8a),F2.0,,94|103,TRUE,Retained
+likejh3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Like/Dislike: John Howard T3 (ZD8b),F2.0,,94|103,TRUE,Retained
+likeml3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Like/Dislike: Meg Lees T3 (ZB8c),F2.0,,94|103,TRUE,Retained
+likeph3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Like/Dislike: Pauline Hanson T3 (ZB8d),F2.0,,94|103,TRUE,Retained
+likemt3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Like/Dislike: Malcolm Turnbull T3 (ZB8e),F2.0,,94|103,TRUE,Retained
+likekj3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Like/Dislike: Kerry Jones T3 (ZB8f),F2.0,,94|103,TRUE,Retained
+govlook3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Government trusted/Look after selves T3 (ZB9),F1.0,,94|103,TRUE,Retained
+fedpolk3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Federal Politicians know what people think T3 (ZB10a),F1.0,,94|103,TRUE,Retained
+votdiff3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,"No matter who vote for, can/won't make difference T3 (ZB10b)",F1.0,,94|103,TRUE,Retained
+impborn3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Truly Australian be born in Aust T3 (ZC1a),F1.0,,94|103,TRUE,Retained
+impciti3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Truly Australian be citizen T3 (ZC1b),F1.0,,94|103,TRUE,Retained
+implive3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Truly Australian live in Aust T3 (ZC1c),F1.0,,94|103,TRUE,Retained
+impspek3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Truly Australian speak English T3 (ZC1d),F1.0,,94|103,TRUE,Retained
+impchr3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Truly Australian be Christian T3 (ZC1e),F1.0,,94|103,TRUE,Retained
+implaw3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Truly Australian respect law T3 (ZC1f),F1.0,,94|103,TRUE,Retained
+impfeel3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Truly Australian feel Aust T3 (ZC1g),F1.0,,94|103,TRUE,Retained
+prddem3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Proud of Australian democracy T3 (ZC2a),F1.0,,94|103,TRUE,Retained
+prdinf3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Proud of Australian influence T3 (ZC2b),F1.0,,94|103,TRUE,Retained
+prdeco3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Proud of Australian economics T3 (ZC2c),F1.0,,94|103,TRUE,Retained
+prdsoc3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Proud of Australian social sec T3 (ZC2d),F1.0,,94|103,TRUE,Retained
+prdsci3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Proud of Australian science T3 (ZC2e),F1.0,,94|103,TRUE,Retained
+prdhis3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Proud of Australian history T3 (ZC2f),F1.0,,94|103,TRUE,Retained
+prdarm3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Proud of Australian armed forces T3 (ZC2g),F1.0,,94|103,TRUE,Retained
+prdspo3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Proud of Australian sports T3 (ZC2h),F1.0,,94|103,TRUE,Retained
+prdart3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Proud of Australian art T3 (ZC2i),F1.0,,94|103,TRUE,Retained
+queimp3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Importance of Queen T3 (ZC3),F1.0,,94|103,TRUE,Retained
+flag3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Change or retain Aust flag T3 (ZC4),F1.0,,94|103,TRUE,Retained
+tiesbr3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Keep constitutional ites with Britain T3 (ZC5a),F1.0,,94|103,TRUE,Retained
+presout3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,President someone outside of politics T3 (ZC5b),F1.0,,94|103,TRUE,Retained
+headaus3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Head of State Australian T3 (ZC5b),F1.0,,94|103,TRUE,Retained
+distrac3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Debate a distraction from real problems T3 (ZC5d),F1.0,,94|103,TRUE,Retained
+citaus3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Rather be Aust citizen than else T3 (ZC6a),F1.0,,94|103,TRUE,Retained
+sportpr3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Proud of Aust sports performances T3 (ZC6b),F1.0,,94|103,TRUE,Retained
+btworld3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,World better if more like Aust T3 (ZC6c),F1.0,,94|103,TRUE,Retained
+ausbett3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Aust better than other counties T3 (ZC6d),F1.0,,94|103,TRUE,Retained
+descndc3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,R descended from convicts T3 (ZC7),F1.0,,94|103,TRUE,Retained
+learnfm3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,How interested in learning about family T3 (ZC8),F1.0,,94|103,TRUE,Retained
+faminfo3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Search WWW for family history T3 (ZC9),F1.0,,94|103,TRUE,Retained
+qrole3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Queen appoints Gov. General on advice of P.M. T3 (ZC10),F1.0,,94|103,TRUE,Retained
+qrfact3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about Queen appointing Gov. General T3,F8.0,,94|103,TRUE,Retained
+ggrole3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Governor General can dismiss govt. T3 (ZC11),F1.0,,94|103,TRUE,Retained
+ggfact3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about Gov. General dismissing govt. T3,F8.0,,94|103,TRUE,Retained
+presrol3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,President like Governor General T3 (ZC12),F1.0,,94|103,TRUE,Retained
+prfact3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about President like Gov. General T3,F8.0,,94|103,TRUE,Retained
+rempres3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Prime Minister cannot remove President T3 (ZC13),F1.0,,94|103,TRUE,Retained
+rpfact3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct that P.M. cannot remove President T23,F8.0,,94|103,TRUE,Retained
+party3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Labor party more in favor of a republic T3 (ZC14),F1.0,,94|103,TRUE,Retained
+pfact3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Correct about Labor party more in favor of republic T3,F8.0,,94|103,TRUE,Retained
+pmpower3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Prime Minister more powerful T3 (ZC15a),F1.0,,94|103,TRUE,Retained
+prezpow3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,President no more powerful than Governor General T3 (ZC15b),F1.0,,94|103,TRUE,Retained
+repexp3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Change to a republic expensive T3 (ZC15c),F1.0,,94|103,TRUE,Retained
+common3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Remain member of Commonwealth T3 (ZC15d),F1.0,,94|103,TRUE,Retained
+polstab3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Political stability endangered T3 (ZC15e),F1.0,,94|103,TRUE,Retained
+constrd3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Constitutional reform more difficult T3 (ZC15f),F1.0,,94|103,TRUE,Retained
+moreind3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Become a more independent country T3 (ZC15g),F1.0,,94|103,TRUE,Retained
+stanwor3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Standing in world would be improved T3 (ZC15h),F1.0,,94|103,TRUE,Retained
+confron3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Confrontations with P.M. more likely T3 (ZC15i),F1.0,,94|103,TRUE,Retained
+stweak3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,States in federal system weakened T3 (ZC15j),F1.0,,94|103,TRUE,Retained
+moredem3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Government more democratic T3 (ZC15k),F1.0,,94|103,TRUE,Retained
+quedem3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Queen plays important part guaranteeing democratic rights T3 (ZC16a),F1.0,,94|103,TRUE,Retained
+qbritin3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Queen promotes British interests T3 (ZC16b),F1.0,,94|103,TRUE,Retained
+prespol3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,President less likely a politician T3 (ZC17a),F1.0,,94|103,TRUE,Retained
+ppchpre3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Parties play great role in choosing president T3 (ZC17b),F1.0,,94|103,TRUE,Retained
+flagchg3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Australian flag change T3 (ZC18a),F1.0,,94|103,TRUE,Retained
+anthem3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,National anthem change T3 (ZC18b),F1.0,,94|103,TRUE,Retained
+wdroyal3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Change in use of word 'royal' T3 (ZC18c),F1.0,,94|103,TRUE,Retained
+pargame3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Change in participation in Commonwealth Games T3 (ZC18d),F1.0,,94|103,TRUE,Retained
+dkchg3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,None/don't know if change T3 (ZC18e),F1.0,,94|103,TRUE,Retained
+inctax3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,High tax people work less T3 (ZD1a),F1.0,,94|103,TRUE,Retained
+unionpw3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Trade unions have too much power T3 (ZD1b),F1.0,,94|103,TRUE,Retained
+bigbus3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Big business has too much power T3 (ZD1c),F1.0,,94|103,TRUE,Retained
+redistr3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Income & wealth should be redistributed T3 (ZD1d),F1.0,,94|103,TRUE,Retained
+regulat3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Stricter laws to regulate trade unions T3 (ZD1e),F1.0,,94|103,TRUE,Retained
+deathpn3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Death penalty reintroduced for murder T3 (ZD1f),F1.0,,94|103,TRUE,Retained
+stiffsn3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Stiffer sentences if break law T3 (ZD1g),F1.0,,94|103,TRUE,Retained
+wompref3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Women given preferential treatment T3 (ZD1h),F1.0,,94|103,TRUE,Retained
+eqlopm3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Equal opportunities for migrants T3 (ZD2a),F1.0,,94|103,TRUE,Retained
+landrit3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Aboriginal land rights T3 (ZD2b),F1.0,,94|103,TRUE,Retained
+eqlopw3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Equal opportunities for women T3 (ZD2c),F1.0,,94|103,TRUE,Retained
+nummigr3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,No. of migrants allowed into Australia T3 (ZD2d),F1.0,,94|103,TRUE,Retained
+helpabr3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Government help for aborigines T3 (ZD2e),F1.0,,94|103,TRUE,Retained
+closrel3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Building closer links with Asia T3 (ZD2f),F1.0,,94|103,TRUE,Retained
+frstaim3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Aims of Australia - first choice T3 (ZD3a),F1.0,,94|103,TRUE,Retained
+secaim3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Aims of Australia - second choice T3 (ZD3b),F1.0,,94|103,TRUE,Retained
+impauth3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Important-strengthen respect for authority T2 (ZD4a),F1.0,,94|103,TRUE,Retained
+impeql3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Important-equal employment opportunity T3 (ZD4b),F1.0,,94|103,TRUE,Retained
+impminr3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Important-protect minorities T3 (ZD4c),F1.0,,94|103,TRUE,Retained
+impeqmw3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Important-equality between men & women T3 (ZD4d),F1.0,,94|103,TRUE,Retained
+imptrad3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Important-preserving traditional ideas T3 (ZD4e),F1.0,,94|103,TRUE,Retained
+shouldb3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,"Ideally, Aust society should be... T3 (ZD5)",F1.0,,94|103,TRUE,Retained
+nature3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Government by its nature... T3 (ZD8),F1.0,,94|103,TRUE,Retained
+emphasm3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Too much emphasis placed on... T3 (ZC7),F1.0,,94|103,TRUE,Retained
+lawsaim3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Laws should aim to... T3 (ZD8),F1.0,,94|103,TRUE,Retained
+emphasl3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Too little emphasis placed on... T3 (ZD9),F1.0,,94|103,TRUE,Retained
+agesec3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Age left secondary school T3 (ZE1),F2.0,,94|103,TRUE,Retained
+tersch3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,No. years tertiary education T3 (ZE2),F2.0,,94|103,TRUE,Retained
+qual3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Highest qual obtained since leaving school T3 (ZE3),F1.0,,94|103,TRUE,Retained
+workst3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Occupation last week T3 (ZE4),F1.0,,94|103,TRUE,Retained
+jobtit3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Respondent Job Titile T3 (ZE5a),F2.0,,94|103,TRUE,Retained
+jobpos3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Position in organisation T3 (ZE5d),F1.0,,94|103,TRUE,Retained
+employ3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Employer T3 (ZE5e),F1.0,,94|103,TRUE,Retained
+supresp3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Supervisory responsibility T3 (ZE5f),F1.0,,94|103,TRUE,Retained
+tradeun3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Belong to a trade union T3 (ZE6),F1.0,,94|103,TRUE,Retained
+gender3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,R's Gender T3 (ZF1),F1.0,,94|103,TRUE,Retained
+ybirth3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Year of birth T3 (ZF2),F2.0,,94|103,TRUE,Retained
+counbir3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Country of birth T3 (ZF3a),F2.0,,94|103,TRUE,Retained
+mcounb3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Mothers country of birth T3 (ZF3b),F2.0,,94|103,TRUE,Retained
+fcounb3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Fathers country of birth T3 (ZF3c),F2.0,,94|103,TRUE,Retained
+fpid3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Fathers party ID at 14 T3 (ZF4a),F1.0,,94|103,TRUE,Retained
+mpid3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Mothers party ID at 14 T3 (ZF4b),F1.0,,94|103,TRUE,Retained
+relig3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,R's Religion T3 (ZF5),F1.0,,94|103,TRUE,Retained
+religat3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Religious attendance T3 (ZF6),F1.0,,94|103,TRUE,Retained
+marital3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Marital status T3 (ZF7),F1.0,,94|103,TRUE,Retained
+shelter3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,"Own, buying or rent home T3 (ZF8)",F1.0,,94|103,TRUE,Retained
+compute3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Own a personal computer T3 (ZF9),F1.0,,94|103,TRUE,Retained
+firearm3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Own a firearm T3 (ZF10),F1.0,,94|103,TRUE,Retained
+cycle3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Own a motor cycle T3 (ZF11),F1.0,,94|103,TRUE,Retained
+class3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Social class T3 (ZF12),F1.0,,94|103,TRUE,Retained
+locate3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Live rural or urban T3 (ZF13),F1.0,,94|103,TRUE,Retained
+income3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Household Income T3 (ZF14),F2.0,,94|103,TRUE,Retained
+spousw3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Spouse working T3 (ZF15),F1.0,,94|103,TRUE,Retained
+spoccup3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Spouse Occupation T3 9ZF16),F2.0,,94|103,TRUE,Retained
+semploy3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Spouse employer T3 (ZF17),F1.0,,94|103,TRUE,Retained
+spsuper3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Does spouse supervise people at work T3 (ZF18),F1.0,,94|103,TRUE,Retained
+sptrade3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Spouse member of trade union T3 (ZF19),F1.0,,94|103,TRUE,Retained
+state3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,State,F1.0,,94|103,TRUE,Retained
+elecdiv3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,,F3.0,99,,TRUE,Retained
+region3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,Region,F1.0,99,,TRUE,Retained
+post3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,,,F4.0,99,,TRUE,Retained
+refknow3,double,numeric,,,F8.2,,,TRUE,Retained
+filter_$,double,haven_labelled|vctrs_vctr|double,,partfull=1 (FILTER),F1.0,,,TRUE,Retained
+knind1_t1,double,numeric,,Knowledge index 1(with 4 debatable items) at t1,F8.4,,,TRUE,Retained
+knind2_t1,double,numeric,,Knowledge index 2 (w/out 4 debatable items) at t1,F8.4,,,TRUE,Retained
+approve1r,double,haven_labelled|vctrs_vctr|double,,Recoded approve1 -- from 0 to 1,F8.2,,,TRUE,Retained
+chfirstopt1t2,double,haven_labelled|vctrs_vctr|double,,change in firstop1 and firstop2,F8.2,,,TRUE,Retained
+firstopCOt1,double,numeric,,"for CO model, respondent's score",F8.4,,,TRUE,Retained
+cocht1t2,double,haven_labelled|vctrs_vctr|double,,"for CO model, change in vote intention t1 to t2",F8.2,,,TRUE,Retained
+chvtt1t2,double,haven_labelled|vctrs_vctr|double,,Change in Vote Intention from t1 to t2 -- (approve1 and approve2),F8.2,,,TRUE,Retained
+apt1co,double,numeric,,"CO Model, R's score - [(sum of sm grp - r's score)/n-1]",F8.3,,,TRUE,Retained
+gender_D,double,numeric,,Female Dummy,F8.2,,,TRUE,Retained
+knowdiff,double,numeric,,,F8.2,,,TRUE,Retained
+Marital_D,double,numeric,,Not Married Dummy,F8.2,,,TRUE,Retained
+edulev_R,double,numeric,,University or above Dummy,F8.2,,,TRUE,Retained
+age_r,double,numeric,,,F8.2,,,TRUE,Retained
+age_r1,double,numeric,,Age split in 5,F8.2,,,TRUE,Retained
+knowdiff2,double,numeric,,,F8.2,,,TRUE,Retained
+knowdiff3,double,numeric,,,F8.2,,,TRUE,Retained
+gender_D1,double,numeric,,Male Dummy,F8.2,,,TRUE,Retained
+occup_R,double,numeric,,Professional Managerial Dummy,F8.2,,,TRUE,Retained
+AutonomyCh,double,numeric,,,F8.2,,,TRUE,Retained
+WorkabilityCh,double,numeric,,,F8.2,,,TRUE,Retained
+DemocracyCh,double,numeric,,,F8.2,,,TRUE,Retained
+TraditionCh,double,numeric,,,F8.2,,,TRUE,Retained
+PoliticizationCh,double,numeric,,,F8.2,,,TRUE,Retained
+AbsAutonomyCh,double,numeric,,,F8.2,,,TRUE,Retained
+AbsWorkabilityCh,double,numeric,,,F8.2,,,TRUE,Retained
+AbsDemocracyCh,double,numeric,,,F8.2,,,TRUE,Retained
+AbsTraditionCh,double,numeric,,,F8.2,,,TRUE,Retained
+AbsPoliticizationCh,double,numeric,,,F8.2,,,TRUE,Retained
+locate3_R,double,numeric,,Rural Dummy,F8.2,,,TRUE,Retained
+country_R,double,numeric,,Overseas Birth Dummy,F8.2,,,TRUE,Retained
+parcoun_R,double,numeric,,Overseas Parent Dummy,F8.2,,,TRUE,Retained
+counbir3_R,double,numeric,,Foreign Birth Dummy,F8.2,,,TRUE,Retained

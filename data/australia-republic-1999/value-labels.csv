@@ -1,0 +1,2439 @@
+source_column,source_value,value_label
+morind1r,0,Strongly disagree
+morind1r,0.25,Somewhat disagree
+morind1r,0.5,Neither agree nor disagree
+morind1r,0.75,Somewhat agree
+morind1r,1,Strongly agree
+morind2r,0,Strongly disagree
+morind2r,0.25,Somewhat disagree
+morind2r,0.5,Neither agree nor disagree
+morind2r,0.75,Somewhat agree
+morind2r,1,Strongly agree
+morind3r,0,Strongly disagree
+morind3r,0.25,Somewhat disagree
+morind3r,0.5,Neither agree nor disagree
+morind3r,0.75,Somewhat agree
+morind3r,1,Strongly agree
+stanwor1r,0,Strongly disagree
+stanwor1r,0.25,Somewhat disagree
+stanwor1r,0.5,Neither agree nor disagree
+stanwor1r,0.75,Somewhat agree
+stanwor1r,1,Strongly agree
+stanwor2r,0,Strongly disagree
+stanwor2r,0.25,Somewhat disagree
+stanwor2r,0.5,Neither agree nor disagree
+stanwor2r,0.75,Somewhat agree
+stanwor2r,1,Strongly agree
+stanwor3r,0,Strongly disagree
+stanwor3r,0.25,Somewhat disagree
+stanwor3r,0.5,Neither agree nor disagree
+stanwor3r,0.75,Somewhat agree
+stanwor3r,1,Strongly agree
+qbritn1r,0,Strongly disagree
+qbritn1r,0.25,Somewhat disagree
+qbritn1r,0.5,Neither agree nor disagree
+qbritn1r,0.75,Somewhat agree
+qbritn1r,1,Strongly agree
+qbritn2r,0,Strongly disagree
+qbritn2r,0.25,Somewhat disagree
+qbritn2r,0.5,Neither agree nor disagree
+qbritn2r,0.75,Somewhat agree
+qbritn2r,1,Strongly agree
+qbritn3r,0,Strongly disagree
+qbritn3r,0.25,Somewhat disagree
+qbritn3r,0.5,Neither agree nor disagree
+qbritn3r,0.75,Somewhat agree
+qbritn3r,1,Strongly agree
+pmpwr1r,0,strongly agree
+pmpwr1r,0.25,somewhat agree
+pmpwr1r,0.5,Neither
+pmpwr1r,0.75,somewhat disagree
+pmpwr1r,1,Strongly disagree
+pmpwr2r,0,strongly agree
+pmpwr2r,0.25,somewhat agree
+pmpwr2r,0.5,Neither
+pmpwr2r,0.75,somewhat disagree
+pmpwr2r,1,Strongly disagree
+pmpwr3r,0,strongly agree
+pmpwr3r,0.25,somewhat agree
+pmpwr3r,0.5,Neither
+pmpwr3r,0.75,somewhat disagree
+pmpwr3r,1,Strongly disagree
+polstb1r,0,strongly agree
+polstb1r,0.25,somewhat agree
+polstb1r,0.5,Neither
+polstb1r,0.75,somewhat disagree
+polstb1r,1,Strongly disagree
+ipolst1r,0,Indicated variable did not have valid data
+ipolst1r,1,Indicated variable did have valid data
+polstb2r,0,strongly agree
+polstb2r,0.25,somewhat agree
+polstb2r,0.5,Neither
+polstb2r,0.75,somewhat disagree
+polstb2r,1,Strongly disagree
+ipolst2r,0,Indicated variable did not have valid data
+ipolst2r,1,Indicated variable did have valid data
+polstb3r,0,strongly agree
+polstb3r,0.25,somewhat agree
+polstb3r,0.5,Neither
+polstb3r,0.75,somewhat disagree
+polstb3r,1,Strongly disagree
+ipolst3r,0,Indicated variable did not have valid data
+ipolst3r,1,Indicated variable did have valid data
+cnfrn1r,0,strongly agree
+cnfrn1r,0.25,somewhat agree
+cnfrn1r,0.5,Neither
+cnfrn1r,0.75,somewhat disagree
+cnfrn1r,1,Strongly disagree
+icnfrn1r,0,Indicated variable did not have valid data
+icnfrn1r,1,Indicated variable did have valid data
+cnfrn2r,0,strongly agree
+cnfrn2r,0.25,somewhat agree
+cnfrn2r,0.5,Neither
+cnfrn2r,0.75,somewhat disagree
+cnfrn2r,1,Strongly disagree
+icnfrn2r,0,Indicated variable did not have valid data
+icnfrn2r,1,Indicated variable did have valid data
+cnfrn3r,0,strongly agree
+cnfrn3r,0.25,somewhat agree
+cnfrn3r,0.5,Neither
+cnfrn3r,0.75,somewhat disagree
+cnfrn3r,1,Strongly disagree
+icnfrn3r,0,Indicated variable did not have valid data
+icnfrn3r,1,Indicated variable did have valid data
+stweak1r,0,strongly agree
+stweak1r,0.25,somewhat agree
+stweak1r,0.5,Neither
+stweak1r,0.75,somewhat disagree
+stweak1r,1,Strongly disagree
+istwea1r,0,Indicated variable did not have valid data
+istwea1r,1,Indicated variable did have valid data
+stweak2r,0,strongly agree
+stweak2r,0.25,somewhat agree
+stweak2r,0.5,Neither
+stweak2r,0.75,somewhat disagree
+stweak2r,1,Strongly disagree
+istwea2r,0,Indicated variable did not have valid data
+istwea2r,1,Indicated variable did have valid data
+stweak3r,0,strongly agree
+stweak3r,0.25,somewhat agree
+stweak3r,0.5,Neither
+stweak3r,0.75,somewhat disagree
+stweak3r,1,Strongly disagree
+istwea3r,0,Indicated variable did not have valid data
+istwea3r,1,Indicated variable did have valid data
+repexp1r,0,strongly agree
+repexp1r,0.25,somewhat agree
+repexp1r,0.5,Neither
+repexp1r,0.75,somewhat disagree
+repexp1r,1,Strongly disagree
+irepxp1r,0,Indicated variable did not have valid data
+irepxp1r,1,Indicated variable did have valid data
+repexp2r,0,strongly agree
+repexp2r,0.25,somewhat agree
+repexp2r,0.5,Neither
+repexp2r,0.75,somewhat disagree
+repexp2r,1,Strongly disagree
+irepxp2r,0,Indicated variable did not have valid data
+irepxp2r,1,Indicated variable did have valid data
+repexp3r,0,strongly agree
+repexp3r,0.25,somewhat agree
+repexp3r,0.5,Neither
+repexp3r,0.75,somewhat disagree
+repexp3r,1,Strongly disagree
+irepxp3r,0,Indicated variable did not have valid data
+irepxp3r,1,Indicated variable did have valid data
+constr1r,0,strongly agree
+constr1r,0.25,somewhat agree
+constr1r,0.5,Neither
+constr1r,0.75,somewhat disagree
+constr1r,1,Strongly disagree
+icnstr1r,0,Indicated variable did not have valid data
+icnstr1r,1,Indicated variable did have valid data
+constr2r,0,strongly agree
+constr2r,0.25,somewhat agree
+constr2r,0.5,Neither
+constr2r,0.75,somewhat disagree
+constr2r,1,Strongly disagree
+icnstr2r,0,Indicated variable did not have valid data
+icnstr2r,1,Indicated variable did have valid data
+constr3r,0,strongly agree
+constr3r,0.25,somewhat agree
+constr3r,0.5,Neither
+constr3r,0.75,somewhat disagree
+constr3r,1,Strongly disagree
+icnstr3r,0,Indicated variable did not have valid data
+icnstr3r,1,Indicated variable did have valid data
+mordem1r,0,Strongly disagree
+mordem1r,0.25,Somewhat disagree
+mordem1r,0.5,Neither agree nor disagree
+mordem1r,0.75,Somewhat agree
+mordem1r,1,Strongly agree
+mordem2r,0,Strongly disagree
+mordem2r,0.25,Somewhat disagree
+mordem2r,0.5,Neither agree nor disagree
+mordem2r,0.75,Somewhat agree
+mordem2r,1,Strongly agree
+mordem3r,0,Strongly disagree
+mordem3r,0.25,Somewhat disagree
+mordem3r,0.5,Neither agree nor disagree
+mordem3r,0.75,Somewhat agree
+mordem3r,1,Strongly agree
+quedem1r,0,strongly agree
+quedem1r,0.25,somewhat agree
+quedem1r,0.5,Neither
+quedem1r,0.75,somewhat disagree
+quedem1r,1,Strongly disagree
+quedem2r,0,strongly agree
+quedem2r,0.25,somewhat agree
+quedem2r,0.5,Neither
+quedem2r,0.75,somewhat disagree
+quedem2r,1,Strongly disagree
+quedem3r,0,strongly agree
+quedem3r,0.25,somewhat agree
+quedem3r,0.5,Neither
+quedem3r,0.75,somewhat disagree
+quedem3r,1,Strongly disagree
+brther1r,0,Strongly disagree
+brther1r,0.25,Somewhat disagree
+brther1r,0.5,Neither agree nor disagree
+brther1r,0.75,Somewhat agree
+brther1r,1,Strongly agree
+brther2r,0,Strongly disagree
+brther2r,0.25,Somewhat disagree
+brther2r,0.5,Neither agree nor disagree
+brther2r,0.75,Somewhat agree
+brther2r,1,Strongly agree
+presrv1r,0,Strongly disagree
+presrv1r,0.25,Somewhat disagree
+presrv1r,0.5,Neither agree nor disagree
+presrv1r,0.75,Somewhat agree
+presrv1r,1,Strongly agree
+presrv2r,0,Strongly disagree
+presrv2r,0.25,Somewhat disagree
+presrv2r,0.5,Neither agree nor disagree
+presrv2r,0.75,Somewhat agree
+presrv2r,1,Strongly agree
+prespl1r,0,strongly agree
+prespl1r,0.25,somewhat agree
+prespl1r,0.5,Neither
+prespl1r,0.75,somewhat disagree
+prespl1r,1,Strongly disagree
+prespl2r,0,strongly agree
+prespl2r,0.25,somewhat agree
+prespl2r,0.5,Neither
+prespl2r,0.75,somewhat disagree
+prespl2r,1,Strongly disagree
+prespl3r,0,strongly agree
+prespl3r,0.25,somewhat agree
+prespl3r,0.5,Neither
+prespl3r,0.75,somewhat disagree
+prespl3r,1,Strongly disagree
+ppchpr1r,0,Strongly disagree
+ppchpr1r,0.25,Somewhat disagree
+ppchpr1r,0.5,Neither agree nor disagree
+ppchpr1r,0.75,Somewhat agree
+ppchpr1r,1,Strongly agree
+ppchpr2r,0,Strongly disagree
+ppchpr2r,0.25,Somewhat disagree
+ppchpr2r,0.5,Neither agree nor disagree
+ppchpr2r,0.75,Somewhat agree
+ppchpr2r,1,Strongly agree
+ppchpr3r,0,Strongly disagree
+ppchpr3r,0.25,Somewhat disagree
+ppchpr3r,0.5,Neither agree nor disagree
+ppchpr3r,0.75,Somewhat agree
+ppchpr3r,1,Strongly agree
+votetri,-1,"Yes at T1, No at T2"
+votetri,0,"Yes at T1, Yes at T2 OR No at T1, No at T2"
+votetri,1,"No at T1, Yes at T2"
+dichvt1,0,No
+dichvt1,1,Yes
+part,0,NONPARTICIPANT
+part,1,PARTICIPANT
+partfull,0,NONPARTICIPANT
+partfull,1,"PARTICIPANT, Turned in T2 Q'aire"
+partfull,2,"PARTICIPANT, but No T2 Q'aire"
+region,1,BRISBANE
+region,2,REST QLD
+region,3,SYDNEY
+region,4,REST NSW
+region,5,ACT (Canberra)
+region,6,MELBOURNE
+region,7,REST VIC
+region,8,ADELAIDE
+region,9,REST SA
+region,10,PERTH
+region,11,REST WA
+region,12,TASMANIA
+region,13,NORTHERN TERRITORY
+eligvote,1,YES
+eligvote,2,NO
+gender,1,MALE
+gender,2,FEMALE
+agecat,1,18-24
+agecat,2,25-34
+agecat,3,35-49
+agecat,4,50+
+agecat,98,REFUSED
+age,1,   1
+age,2,   2
+age,3,   3
+age,4,   4
+age,5,   5
+age,6,   6
+age,7,   7
+age,8,   8
+age,9,   9
+age,10,  10
+age,11,  11
+age,12,  12
+age,13,  13
+age,14,  14
+age,15,  15
+age,16,  16
+age,17,  17
+age,18,  18
+age,19,  19
+age,20,  20
+age,21,  21
+age,22,  22
+age,23,  23
+age,24,  24
+age,25,  25
+age,26,  26
+age,27,  27
+age,28,  28
+age,29,  29
+age,30,  30
+age,31,  31
+age,32,  32
+age,33,  33
+age,34,  34
+age,35,  35
+age,36,  36
+age,37,  37
+age,38,  38
+age,39,  39
+age,40,  40
+age,41,  41
+age,42,  42
+age,43,  43
+age,44,  44
+age,45,  45
+age,46,  46
+age,47,  47
+age,48,  48
+age,49,  49
+age,50,  50
+age,51,  51
+age,52,  52
+age,53,  53
+age,54,  54
+age,55,  55
+age,56,  56
+age,57,  57
+age,58,  58
+age,59,  59
+age,60,  60
+age,61,  61
+age,62,  62
+age,63,  63
+age,64,  64
+age,65,  65
+age,66,  66
+age,67,  67
+age,68,  68
+age,69,  69
+age,70,  70
+age,71,  71
+age,72,  72
+age,73,  73
+age,74,  74
+age,75,  75
+age,76,  76
+age,77,  77
+age,78,  78
+age,79,  79
+age,80,  80
+age,81,  81
+age,82,  82
+age,83,  83
+age,98,REFUSED
+workstat,1,NOT AT ALL
+workstat,2,PART TIME
+workstat,3,FULL TIME
+aware,1,NOT AWARE
+aware,2,AWARE
+aware,97,DON'T KNOW
+approve1,1,NO
+approve1,2,YES
+approve1,97,DON'T KNOW
+approve1,98,REFUSED
+apprv1r,1,No
+apprv1r,2,Yes
+apptend1,1,NO
+apptend1,2,YES
+apptend1,97,DON'T KNOW
+apptend1,98,REFUSED
+apptend1,100,NOT APPLICABLE
+aprove1,1,DISAPPROVE
+aprove1,2,TEND TO DISAPPROVE
+aprove1,3,TEND TO APPROVE
+aprove1,4,APPROVE
+aprove1,100,NOT APPLICABLE
+amthr1,1,NOTHING AT ALL
+amthr1,2,NOT MUCH
+amthr1,3,SOME
+amthr1,4,A LOT
+amthr1,97,DON'T KNOW
+amthr1,99,NOT ANSWERED
+amtdis1,1,NOT AT ALL
+amtdis1,2,NOT MUCH
+amtdis1,3,SOME
+amtdis1,4,A LOT
+amtdis1,97,DON'T KNOW
+amtdis1,99,NOT ANSWERED
+votknow1,1,KNOW ENOUGH
+votknow1,2,WANT MORE INFO
+votknow1,97,DON'T KNOW
+morinfo1,1,LITTLE MORE
+morinfo1,2,LOT MORE
+morinfo1,97,DON'T KNOW
+morinfo1,100,NOT APPLICABLE
+votinfo1,1,KNOW ENOUGH
+votinfo1,2,LITTLE MORE
+votinfo1,3,LOT MORE
+votinfo1,97,DON'T KNOW
+firstop1,1,PEOPLE ELECT PREZ
+firstop1,2,PARLIAMENT APPT. PREZ
+firstop1,3,KEEP STATUS QUO
+firstop1,97,NONE/DON'T KNOW
+frstop1r,1,PEOPLE ELECT PREZ
+frstop1r,2,PARLIAMENT APPT. PREZ
+frstop1r,3,KEEP STATUS QUO
+secop1,1,PEOPLE ELECT PREZ
+secop1,2,PARLIAMENT APPT. PREZ
+secop1,3,KEEP STATUS QUO
+secop1,97,NONE/DON'T KNOW
+secop1,100,NOT APPLICABLE
+prespow1,1,FEWER
+prespow1,2,SAME
+prespow1,3,GREATER
+prespow1,97,NONE/DON'T KNOW
+tiesbr1,1,STRONGLY DISAGREE
+tiesbr1,2,SOMEWHAT DISAGREE
+tiesbr1,3,NEITHER
+tiesbr1,4,SOMEWHAT AGREE
+tiesbr1,5,STRONGLY AGREE
+tiesbr1,97,DON'T KNOW
+presout1,1,STRONGLY DISAGREE
+presout1,2,SOMEWHAT DISAGREE
+presout1,3,NEITHER
+presout1,4,SOMEWHAT AGREE
+presout1,5,STRONGLY AGREE
+presout1,97,DON'T KNOW
+headaus1,1,STRONGLY DISAGREE
+headaus1,2,SOMEWHAT DISAGREE
+headaus1,3,NEITHER
+headaus1,4,SOMEWHAT AGREE
+headaus1,5,STRONGLY AGREE
+headaus1,97,DON'T KNOW
+distrac1,1,STRONGLY DISAGREE
+distrac1,2,SOMEWHAT DISAGREE
+distrac1,3,NEITHER
+distrac1,4,SOMEWHAT AGREE
+distrac1,5,STRONGLY AGREE
+distrac1,97,DON'T KNOW
+qrole1,1,CHOOSES GOV GENERAL
+qrole1,2,NO ROLE
+qrole1,3,APPTS ON RECOMMEND OF PARLIAMENT
+qrole1,4,APPTS ON ADVICE OF P.M. (correct)
+qrole1,96,NONE
+qrole1,97,DON'T KNOW
+qrfact1,0,INCORRECT/DK
+qrfact1,1,CORRECT
+ggrole1,1,CONTROLS GOVERNMENT
+ggrole1,2,ACTS ON QUEEN'S INSTRUCTIONS
+ggrole1,3,PERFORMS ONLY CEREMONIAL DUTIES
+ggrole1,4,CAN DECIDE TO DISMISS GOVERNMENT (correct)
+ggrole1,96,NONE
+ggrole1,97,DON'T KNOW
+ggfact1,0,INCORRECT/DK
+ggfact1,1,CORRECT
+presrol1,1,BRITISH PRIME MINISTER
+presrol1,2,AUSTRALIAN PRIME MINISTER
+presrol1,3,AMERICAN PRESIDENT
+presrol1,4,GOVERNOR GENERAL (correct)
+presrol1,96,NONE
+presrol1,97,DON'T KNOW
+prfact1,0,INCORRECT/DK
+prfact1,1,CORRECT
+rempres1,1,ANYTIME W/O REPORT TO HOUSE
+rempres1,2,ANYTIME W/ LATER HOUSE APPROVE (correct)
+rempres1,3,AFTER FAIR TRIAL IN PARLIAMENT
+rempres1,4,CANNOT REMOVE
+rempres1,96,NONE
+rempres1,97,DON'T KNOW
+rpfact1,0,INCORRECT/DK
+rpfact1,1,CORRECT
+party1,1,LIBERAL PARTY MORE
+party1,2,EQUALLY IN FAVOR
+party1,3,LABOR PARTY MORE (correct)
+party1,96,NONE
+party1,97,NOT MUCH IMPRESSION/DON'T KNOW
+pfact1,0,INCORRECT/DK
+pfact1,1,CORRECT
+pmpower1,1,STRONGLY DISAGREE
+pmpower1,2,SOMEWHAT DISAGREE
+pmpower1,3,NEITHER
+pmpower1,4,SOMEWHAT AGREE
+pmpower1,5,STRONGLY AGREE
+pmpower1,97,DON'T KNOW
+prezpow1,1,STRONGLY DISAGREE
+prezpow1,2,SOMEWHAT DISAGREE
+prezpow1,3,NEITHER
+prezpow1,4,SOMEWHAT AGREE
+prezpow1,5,STRONGLY AGREE
+prezpow1,97,DON'T KNOW
+repexp1,1,STRONGLY DISAGREE
+repexp1,2,SOMEWHAT DISAGREE
+repexp1,3,NEITHER
+repexp1,4,SOMEWHAT AGREE
+repexp1,5,STRONGLY AGREE
+repexp1,97,DON'T KNOW
+common1,1,STRONGLY DISAGREE
+common1,2,SOMEWHAT DISAGREE
+common1,3,NEITHER
+common1,4,SOMEWHAT AGREE
+common1,5,STRONGLY AGREE
+common1,97,DON'T KNOW
+polstab1,1,STRONGLY DISAGREE
+polstab1,2,SOMEWHAT DISAGREE
+polstab1,3,NEITHER
+polstab1,4,SOMEWHAT AGREE
+polstab1,5,STRONGLY AGREE
+polstab1,97,DON'T KNOW
+constrd1,1,STRONGLY DISAGREE
+constrd1,2,SOMEWHAT DISAGREE
+constrd1,3,NEITHER
+constrd1,4,SOMEWHAT AGREE
+constrd1,5,STRONGLY AGREE
+constrd1,97,DON'T KNOW
+moreind1,1,STRONGLY DISAGREE
+moreind1,2,SOMEWHAT DISAGREE
+moreind1,3,NEITHER
+moreind1,4,SOMEWHAT AGREE
+moreind1,5,STRONGLY AGREE
+moreind1,97,DON'T KNOW
+stanwor1,1,STRONGLY DISAGREE
+stanwor1,2,SOMEWHAT DISAGREE
+stanwor1,3,NEITHER
+stanwor1,4,SOMEWHAT AGREE
+stanwor1,5,STRONGLY AGREE
+stanwor1,97,DON'T KNOW
+confron1,1,STRONGLY DISAGREE
+confron1,2,SOMEWHAT DISAGREE
+confron1,3,NEITHER
+confron1,4,SOMEWHAT AGREE
+confron1,5,STRONGLY AGREE
+confron1,97,DON'T KNOW
+stweak1,1,STRONGLY DISAGREE
+stweak1,2,SOMEWHAT DISAGREE
+stweak1,3,NEITHER
+stweak1,4,SOMEWHAT AGREE
+stweak1,5,STRONGLY AGREE
+stweak1,97,DON'T KNOW
+moredem1,1,STRONGLY DISAGREE
+moredem1,2,SOMEWHAT DISAGREE
+moredem1,3,NEITHER
+moredem1,4,SOMEWHAT AGREE
+moredem1,5,STRONGLY AGREE
+moredem1,97,DON'T KNOW
+quedem1,1,STRONGLY DISAGREE
+quedem1,2,SOMEWHAT DISAGREE
+quedem1,3,NEITHER
+quedem1,4,SOMEWHAT AGREE
+quedem1,5,STRONGLY AGREE
+quedem1,97,DON'T KNOW
+qbritin1,1,STRONGLY DISAGREE
+qbritin1,2,SOMEWHAT DISAGREE
+qbritin1,3,NEITHER
+qbritin1,4,SOMEWHAT AGREE
+qbritin1,5,STRONGLY AGREE
+qbritin1,97,DON'T KNOW
+prespol1,1,STRONGLY DISAGREE
+prespol1,2,SOMEWHAT DISAGREE
+prespol1,3,NEITHER
+prespol1,4,SOMEWHAT AGREE
+prespol1,5,STRONGLY AGREE
+prespol1,97,DON'T KNOW
+ppchpre1,1,STRONGLY DISAGREE
+ppchpre1,2,SOMEWHAT DISAGREE
+ppchpre1,3,NEITHER
+ppchpre1,4,SOMEWHAT AGREE
+ppchpre1,5,STRONGLY AGREE
+ppchpre1,97,DON'T KNOW
+flagchg1,1,NO
+flagchg1,2,YES
+anthem1,1,NO
+anthem1,2,YES
+wdroyal1,1,NO
+wdroyal1,2,YES
+pargame1,1,NO
+pargame1,2,YES
+dkchg1,1,NONE/DON'T KNOW IF CHANGE
+dkchg1,2,KNOW IF CHANGE
+intpol1,1,NOT AT ALL INTERESTED
+intpol1,2,NOT PARTICULARLY INTERESTED
+intpol1,3,SOMEWHAT INTERESTED
+intpol1,4,VERY INTERESTED
+intpol1,97,NONE/DON'T KNOW
+partyid1,1,LIBERAL PARTY
+partyid1,2,LABOR PARTY
+partyid1,3,NATIONAL PARTY
+partyid1,4,AUSTRALIAN DEMOCRATS
+partyid1,5,GREENS
+partyid1,6,ONE NATION
+partyid1,7,OTHER
+partyid1,8,NONE/DONT KNOW
+partyid1,97,NONE/DON'T KNOW
+parsupp1,1,NOT STRONG
+parsupp1,2,MODERATELY STRONG
+parsupp1,3,VERY STRONG
+parsupp1,97,NONE/DON'T KNOW
+parsupp1,100,NOT APPLICABLE
+welfare1,1,LIBERAL PARTY MORE
+welfare1,2,EQUALLY CONCERNED
+welfare1,3,LABOR PARTY MORE (correct)
+welfare1,96,NONE
+welfare1,97,NOT MUCH IMPRESSION/DONT KNOW
+welfact1,0,INCORRECT/DK
+welfact1,1,CORRECT
+busines1,1,LIBERAL PARTY MORE (correct)
+busines1,2,EQUALLY CLOSE
+busines1,3,LABOR PARTY MORE
+busines1,96,NONE
+busines1,97,NOT MUCH IMPRESSION/DON'T KNOW
+busfact1,0,INCORRECT/DK
+busfact1,1,CORRECT
+democra1,1,NOT AT ALL
+democra1,2,NOT PARTICULARLY
+democra1,3,SOMEWHAT
+democra1,4,VERY
+democra1,97,NONE/DON'T KNOW
+ridgewy1,1,LEADER OF FEDERAL OPPOSITION
+ridgewy1,2,LEADER OF DEMOCRATS
+ridgewy1,3,JUSTICE OF THE HIGH COURT
+ridgewy1,4,ABORIGINAL SENATOR IN PARLIAMENT (correct)
+ridgewy1,5,NONE OF THESE
+ridgewy1,6,DONT KNOW
+ridgewy1,97,DON'T KNOW
+rfact1,0,INCORRECT/DK
+rfact1,1,CORRECT
+jgeorge1,1,SECRETARY OF TEACHERS FEDERATION
+jgeorge1,2,LABOR MEMBER OF FEDERAL PARLIAMENT
+jgeorge1,3,LEADER OF WORKERS' UNION
+jgeorge1,4,PRESIDENT OF ACTU (correct)
+jgeorge1,5,NONE OF THESE
+jgeorge1,97,DON'T KNOW
+jgfact1,0,INCORRECT/DK
+jgfact1,1,CORRECT
+polfeel1,1,STRONGLY UNFAVORABLE
+polfeel1,2,SOMEWHAT UNFAVORABLE
+polfeel1,3,NEUTRAL
+polfeel1,4,SOMEWHAT FAVORABLE
+polfeel1,5,STRONGLY FAVORABLE
+polfeel1,97,DON'T KNOW
+monarch1,1,STRONGLY UNFAVORABLE
+monarch1,2,SOMEWHAT UNFAVORABLE
+monarch1,3,NEUTRAL
+monarch1,4,SOMEWHAT FAVORABLE
+monarch1,5,STRONGLY FAVORABLE
+monarch1,97,DON'T KNOW
+repub1,1,STRONG UNFAVORABLE
+repub1,2,SOMEWHAT UNFAVORABLE
+repub1,3,NEUTRAL
+repub1,4,SOMEWHAT FAVORABLE
+repub1,5,STRONGLY FAVORABLE
+repub1,97,DON'T KNOW
+saygov1,1,STRONGLY DISAGREE
+saygov1,2,SOMEWHAT DISAGREE
+saygov1,3,NEITHER
+saygov1,4,SOMEWHAT AGREE
+saygov1,5,STRONGLY AGREE
+saygov1,97,DON'T KNOW
+opinion1,1,STRONGLY DISAGREE
+opinion1,2,SOMEWHAT DISAGREE
+opinion1,3,NEITHER
+opinion1,4,SOMEWHAT AGREE
+opinion1,5,STRONGLY AGREE
+opinion1,97,DON'T KNOW
+brither1,1,STRONGLY DISAGREE
+brither1,2,SOMEWHAT DISAGREE
+brither1,3,NEITHER
+brither1,4,SOMETHAT AGREE
+brither1,5,STRONGLY AGREE
+brither1,97,DON'T KNOW
+preserv1,1,STRONGLY DISAGREE
+preserv1,2,SOMEWHAT DISAGREE
+preserv1,3,NEITHER
+preserv1,4,SOMEWHAT AGREE
+preserv1,5,STRONGLY AGREE
+preserv1,97,DON'T KNOW
+majorit1,1,STRONGLY DISAGREE
+majorit1,2,SOMEWHAT DISAGREE
+majorit1,3,NEITHER
+majorit1,4,SOMEWHAT AGREE
+majorit1,5,STRONGLY AGREE
+majorit1,97,DON'T KNOW
+schage,1,DID NOT ATTEND
+schage,2,  12 YEARS
+schage,3,  13 YEARS
+schage,4,  14 YEARS
+schage,5,  15 YEARS
+schage,6,  16 YEARS
+schage,7,  17 YEARS
+schage,8,  18 YEARS
+schage,9,19+ YEARS
+schage,10,STILL AT SCHOOL
+schage,98,REFUSED
+edulev,1,PRIMARY SCHOOL
+edulev,2,SOME HIGH SCHOOL
+edulev,3,HSC/MATRICULATION
+edulev,4,COLLEGE/TECH/UNIVERSITY
+edulev,5,POST GRADUATE DEGREE
+edulev,98,REFUSED
+marital,1,NEVER MARRIED
+marital,2,DEFACTO/LIVING TOGETHER
+marital,3,MARRIED
+marital,4,SEPARATED BUT NOT DIVORCED
+marital,5,DIVORCED
+marital,6,WIDOWED
+marital,98,REFUSED
+country,1,OVERSEAS
+country,2,AUSTRALIA
+country,97,DON'T KNOW
+overseas,1,NON ENGLISH SPEAKING
+overseas,2,ENGLISH SPEAKING
+overseas,97,DON'T KNOW
+overseas,100,NOT APPLICABLE
+parcoun,1,OVERSEAS
+parcoun,2,AUSTRALIA
+parcoun,100,NOT APPLICABLE
+parenta,1,NO
+parenta,2,YES
+parenta,100,NOT APPLICABLE
+parentb,1,NO
+parentb,2,YES
+parentb,100,NOT APPLICABLE
+pardk,1,NO
+pardk,2,YES
+parovsdk,1,NO
+parovsdk,2,YES
+occup,1,STUDENT/HOUSEWIFE/UNEMPLOYED/PENSIONER/RETIRED
+occup,2,LABOURER/RELATED WORKER
+occup,3,PLANT/MACHINE OPERATOR/DRIVER
+occup,4,SALESPERSON/PERSONAL SERVICE WORKER
+occup,5,CLERK
+occup,6,TRADESPERSON
+occup,7,PARA-PROFESSIONAL
+occup,8,PROFESSIONAL
+occup,9,MANAGER/ADMINISTRATOR
+likeatt,1,NO
+likeatt,2,YES
+income,1,LESS THAN $20000
+income,2,$20000-$29999
+income,3,$30000-$39999
+income,4,$40000-$49999
+income,5,$50000-$69999
+income,6,$70000 OR MORE
+income,97,DON'T KNOW
+income,98,REFUSED
+passname,1,NO
+passname,2,YES
+passname,97,DON'T KNOW
+group,1,0001
+group,2,0002
+group,3,0003
+group,4,0004
+group,5,0005
+group,6,0006
+group,7,0007
+group,8,0008
+group,9,0009
+group,10,0010
+group,11,0011
+group,12,0012
+group,13,0013
+group,14,0014
+group,15,0015
+group,16,0016
+group,17,0017
+group,18,0018
+group,19,0019
+group,20,0020
+group,21,0021
+group,22,0022
+group,23,0023
+group,24,0024
+group,100,NOT APPLICABLE
+approve2r,0,No
+approve2r,1,Yes
+approve2,1,NO
+approve2,2,YES
+approve2,99,NOT ANSWERED
+approve2,100,NOT APPLICABLE
+apprv2r,1,No
+apprv2r,2,Yes
+amthr2,1,NOTHING AT ALL
+amthr2,2,NOT MUCH
+amthr2,3,SOME
+amthr2,4,A LOT
+amthr2,97,DON'T KNOW
+amthr2,99,NOT ANSWERED
+amthr2,100,NOT APPLICABLE
+amtdis2,1,NOT AT ALL
+amtdis2,2,NOT MUCH
+amtdis2,3,SOME
+amtdis2,4,A LOT
+amtdis2,97,DON'T KNOW
+amtdis2,99,NOT ANSWERED
+amtdis2,100,NOT APPLICABLE
+votinfo2,1,KNOW ENOUGH
+votinfo2,2,LITTLE MORE
+votinfo2,3,LOT MORE
+votinfo2,97,DON'T KNOW
+votinfo2,99,NOT ANSWERED
+votinfo2,100,NOT APPLICABLE
+firstop2,1,PEOPLE ELECT PREZ
+firstop2,2,PARLIAMENT APPT. PREZ
+firstop2,3,KEEP STATUS QUO
+firstop2,97,DON'T KNOW
+firstop2,99,NOT ANSWERED
+firstop2,100,NOT APPLICABLE
+frstop2r,1,PEOPLE ELECT PREZ
+frstop2r,2,PARLIAMENT APPT. PREZ
+frstop2r,3,KEEP STATUS QUO
+secop2,1,PEOPLE ELECT PREZ
+secop2,2,PARLIAMENT APPT. PREZ
+secop2,3,KEEP STATUS QUO
+secop2,97,DON'T KNOW
+secop2,99,NOT ANSWERED
+secop2,100,NOT APPLICABLE
+prespow2,1,FEWER
+prespow2,2,SAME
+prespow2,3,GREATER
+prespow2,97,DON'T KNOW
+prespow2,99,NOT ANSWERED
+prespow2,100,NOT APPLICABLE
+tiesbr2,1,STRONGLY DISAGREE
+tiesbr2,2,SOMEWHAT DISAGREE
+tiesbr2,3,NEITHER
+tiesbr2,4,SOMEWHAT AGREE
+tiesbr2,5,STRONGLY AGREE
+tiesbr2,97,DON'T KNOW
+tiesbr2,99,NOT ANSWERED
+tiesbr2,100,NOT APPLICABLE
+presout2,1,STRONGLY DISAGREE
+presout2,2,SOMEWHAT DISAGREE
+presout2,3,NEITHER
+presout2,4,SOMEWHAT AGREE
+presout2,5,STRONGLY AGREE
+presout2,97,DON'T KNOW
+presout2,99,NOT ANSWERED
+presout2,100,NOT APPLICABLE
+headaus2,1,STRONGLY DISAGREE
+headaus2,2,SOMEWHAT DISAGREE
+headaus2,3,NEITHER
+headaus2,4,SOMEWHAT AGREE
+headaus2,5,STRONGLY AGREE
+headaus2,97,DON'T KNOW
+headaus2,99,NOT ANSWERED
+headaus2,100,NOT APPLICABLE
+distrac2,1,STRONGLY DISAGREE
+distrac2,2,SOMEWHAT DISAGREE
+distrac2,3,NEITHER
+distrac2,4,SOMEWHAT AGREE
+distrac2,5,STRONGLY AGREE
+distrac2,97,DON'T KNOW
+distrac2,99,NOT ANSWERED
+distrac2,100,NOT APPLICABLE
+qrole2,1,CHOOSES GOV GENERAL
+qrole2,2,NO ROLE
+qrole2,3,APPTS ON RECOMMEND OF PARLIAMENT
+qrole2,4,APPT ON ADVICE OF P.M. (correct)
+qrole2,97,DON'T KNOW
+qrole2,99,NOT ANSWERED
+qrole2,100,NOT APPLICABLE
+qrfact2,0,INCORRECT/DK/NOT ANSW
+qrfact2,1,CORRECT
+qrfact2,100,NOT APPLICABLE
+ggrole2,1,CONTROLS GOVERNMENT
+ggrole2,2,ACTS ON QUEEN'S INSTRUCTIONS
+ggrole2,3,PERFORMS ONLY CEREMONIAL DUTIES
+ggrole2,4,CAN DECIDE TO DISMISS GOVERNMENT (correct)
+ggrole2,97,DON'T KNOW
+ggrole2,99,NOT ANSWERED
+ggrole2,100,NOT APPLICABLE
+ggfact2,0,INCORRECT/DK/NOT ANSW
+ggfact2,1,CORRECT
+ggfact2,100,NOT APPLICABLE
+presrol2,1,BRITISH PRIME MINISTER
+presrol2,2,AUSTRALIAN PRIME MINISTER
+presrol2,3,AMERICAN PRESIDENT
+presrol2,4,GOVERNOR GENERAL (correct)
+presrol2,97,DON'T KNOW
+presrol2,99,NOT ANSWERED
+presrol2,100,NOT APPLICABLE
+prfact2,0,INCORRECT/DK/NOT ANSW
+prfact2,1,CORRECT
+prfact2,100,NOT APPLICABLE
+rempres2,1,ANYTIME W/O REPORT TO HOUSE
+rempres2,2,ANYTIME W/ LATER HOUSE APPROVE (correct)
+rempres2,3,AFTER FAIR TRIAL IN PARLIAMENT
+rempres2,4,CANNOT REMOVE
+rempres2,97,DON'T KNOW
+rempres2,99,NOT ANSWERED
+rempres2,100,NOT APPLICABLE
+rpfact2,0,INCORRECT/DK/NOT ANSW
+rpfact2,1,CORRECT
+rpfact2,100,NOT APPLICABLE
+party2,1,LIBERAL PARTY MORE
+party2,2,EQUALLY IN FAVOR
+party2,3,LABOR PARTY MORE (correct)
+party2,4,NOT MUCH IMPRESSION
+party2,97,NOT MUCH IMPRESSION/DON'T KNOW
+party2,99,NOT ANSWERED
+party2,100,NOT APPLICABLE
+pfact2,0,INCORRECT/DK
+pfact2,1,CORRECT
+pmpower2,1,STRONGLY DISAGREE
+pmpower2,2,SOMEWHAT DISAGREE
+pmpower2,3,NEITHER
+pmpower2,4,SOMEWHAT AGREE
+pmpower2,5,STRONGLY AGREE
+pmpower2,97,DON'T KNOW
+pmpower2,99,NOT ANSWERED
+pmpower2,100,NOT APPLICABLE
+prezpow2,1,STRONGLY DISAGREE
+prezpow2,2,SOMEWHAT DISAGREE
+prezpow2,3,NEITHER
+prezpow2,4,SOMEWHAT AGREE
+prezpow2,5,STRONGLY AGREE
+prezpow2,97,DON'T KNOW
+prezpow2,99,NOT ANSWERED
+prezpow2,100,NOT APPLICABLE
+repexp2,1,STRONGLY DISAGREE
+repexp2,2,SOMEWHAT DISAGREE
+repexp2,3,NEITHER
+repexp2,4,SOMEWHAT AGREE
+repexp2,5,STRONGLY AGREE
+repexp2,97,DON'T KNOW
+repexp2,99,NOT ANSWERED
+repexp2,100,NOT APPLICABLE
+common2,1,STRONGLY DISAGREE
+common2,2,SOMEWHAT DISAGREE
+common2,3,NEITHER
+common2,4,SOMEWHAT AGREE
+common2,5,STRONGLY AGREE
+common2,97,DON'T KNOW
+common2,99,NOT ANSWERED
+common2,100,NOT APPLICABLE
+polstab2,1,STRONGLY DISAGREE
+polstab2,2,SOMEWHAT DISAGREE
+polstab2,3,NEITHER
+polstab2,4,SOMEWHAT AGREE
+polstab2,5,STRONGLY AGREE
+polstab2,97,DON'T KNOW
+polstab2,99,NOT ANSWERED
+polstab2,100,NOT APPLICABLE
+constrd2,1,STRONGLY DISAGREE
+constrd2,2,SOMEWHAT DISAGREE
+constrd2,3,NEITHER
+constrd2,4,SOMEWHAT AGREE
+constrd2,5,STRONGLY AGREE
+constrd2,97,DON'T KNOW
+constrd2,99,NOT ANSWERED
+constrd2,100,NOT APPLICABLE
+moreind2,1,STRONGLY DISAGREE
+moreind2,2,SOMEWHAT DISAGREE
+moreind2,3,NEITHER
+moreind2,4,SOMEWHAT AGREE
+moreind2,5,STRONGLY AGREE
+moreind2,97,DON'T KNOW
+moreind2,99,NOT ANSWERED
+moreind2,100,NOT APPLICABLE
+stanwor2,1,STRONGLY DISAGREE
+stanwor2,2,SOMEWHAT DISAGREE
+stanwor2,3,NEITHER
+stanwor2,4,SOMEWHAT AGREE
+stanwor2,5,STRONGLY AGREE
+stanwor2,97,DON'T KNOW
+stanwor2,99,NOT ANSWERED
+stanwor2,100,NOT APPLICABLE
+confron2,1,STRONGLY DISAGREE
+confron2,2,SOMEWHAT DISAGREE
+confron2,3,NEITHER
+confron2,4,SOMEWHAT AGREE
+confron2,5,STRONGLY AGREE
+confron2,97,DON'T KNOW
+confron2,99,NOT ANSWERED
+confron2,100,NOT APPLICABLE
+stweak2,1,STRONGLY DISAGREE
+stweak2,2,SOMEWHAT DISAGREE
+stweak2,3,NEITHER
+stweak2,4,SOMEWHAT AGREE
+stweak2,5,STRONGLY AGREE
+stweak2,97,DON'T KNOW
+stweak2,99,NOT ANSWERED
+stweak2,100,NOT APPLICABLE
+moredem2,1,STRONGLY DISAGREE
+moredem2,2,SOMEWHAT DISAGREE
+moredem2,3,NEITHER
+moredem2,4,SOMEWHAT AGREE
+moredem2,5,STRONGLY AGREE
+moredem2,97,DON'T KNOW
+moredem2,99,NOT ANSWERED
+moredem2,100,NOT APPLICABLE
+quedem2,1,STONGLY DISAGREE
+quedem2,2,SOMEWHAT DISAGREE
+quedem2,3,NEITHER
+quedem2,4,SOMEWHAT AGREE
+quedem2,5,STRONGLY AGREE
+quedem2,97,DON'T KNOW
+quedem2,99,NOT ANSWERED
+quedem2,100,NOT APPLICABLE
+qbritin2,1,STRONGLY DISAGREE
+qbritin2,2,SOMEWHAT DISAGREE
+qbritin2,3,NEITHER
+qbritin2,4,SOMEWHAT AGREE
+qbritin2,5,STRONGLY AGREE
+qbritin2,97,DON'T KNOW
+qbritin2,99,NOT ANSWERED
+qbritin2,100,NOT APPLICABLE
+prespol2,1,STRONGLY DISAGREE
+prespol2,2,SOMEWHAT DISAGREE
+prespol2,3,NEITHER
+prespol2,4,SOMEWHAT AGREE
+prespol2,5,STRONGLY AGREE
+prespol2,97,DON'T KNOW
+prespol2,99,NOT ANSWERED
+prespol2,100,NOT APPLICABLE
+ppchpre2,1,STRONGLY DISAGREE
+ppchpre2,2,SOMEWHAT DISAGREE
+ppchpre2,3,NEITHER
+ppchpre2,4,SOMEWHAT AGREE
+ppchpre2,5,STRONGLY AGREE
+ppchpre2,97,DON'T KNOW
+ppchpre2,99,NOT ANSWERED
+ppchpre2,100,NOT APPLICABLE
+flagchg2,1,NO
+flagchg2,2,YES
+flagchg2,99,NOT ANSWERED
+flagchg2,100,NOT APPLICABLE
+anthem2,1,NO
+anthem2,2,YES
+anthem2,99,NOT ANSWERED
+anthem2,100,NOT APPLICABLE
+wdroyal2,1,NO
+wdroyal2,2,YES
+wdroyal2,99,NOT ANSWERED
+wdroyal2,100,NOT APPLICABLE
+pargame2,1,NO
+pargame2,2,YES
+pargame2,99,NOT ANSWERED
+pargame2,100,NOT APPLICABLE
+dkchg2,1,NOTHING WILL CHANGE
+dkchg2,2,SOMETHING WILL CHANGE
+dkchg2,99,NOT ANSWERED
+dkchg2,100,NOT APPLICABLE
+intpol2,1,NOT AT ALL INTERESTED
+intpol2,2,NOT PARTICULARLY INTERESTED
+intpol2,3,SOMEWHAT INTERESTED
+intpol2,4,VERY INTERESTED
+intpol2,97,DON'T KNOW
+intpol2,99,NOT ANSWERED
+intpol2,100,NOT APPLICABLE
+partyid2,1,LIBERAL
+partyid2,2,LABOR
+partyid2,3,NATIONAL
+partyid2,4,OTHER
+partyid2,97,DON'T KNOW
+partyid2,99,NOT ANSWERED
+partyid2,100,NOT APPLICABLE
+parsupp2,1,NOT STRONG
+parsupp2,2,MODERATELY STRONG
+parsupp2,3,VERY STRONG
+parsupp2,97,DON'T KNOW
+parsupp2,99,NOT ANSWERED
+parsupp2,100,NOT APPLICABLE
+welfare2,1,LIBERAL PARTY MORE
+welfare2,2,EQUALLY CONCERNED
+welfare2,3,LABOR PARTY MORE (correct)
+welfare2,97,NOT MUCH IMPRESSION
+welfare2,99,NOT ANSWERED
+welfare2,100,NOT APPLICABLE
+welfact2,0,INCORRECT/DK
+welfact2,1,CORRECT
+welfact2,100,NOT APPLICABLE
+busines2,1,LIBERAL PARTY MORE (correct)
+busines2,2,EQUALLY CLOSE
+busines2,3,LABOR PARTY MORE
+busines2,97,NOT MUCH IMPRESSION
+busines2,99,NOT ANSWERED
+busines2,100,NOT APPLICABLE
+busfact2,0,INCORRECT/DK
+busfact2,1,CORRECT
+busfact2,100,NOT APPLICABLE
+democra2,1,NOT AT ALL SATISFIED
+democra2,2,NOT PARTICULARLY SATISFIED
+democra2,3,SOMEWHAT SATISFIED
+democra2,4,VERY SATISFIED
+democra2,97,DONT KNOW
+democra2,99,NOT ANSWERED
+democra2,100,NOT APPLICABLE
+ridgewy2,1,LEADER OF FEDERAL OPPOSITION
+ridgewy2,2,LEADER OF DEMOCRATS
+ridgewy2,3,JUSTICE OF THE HIGH COURT
+ridgewy2,4,ABORIGINAL SENATOR IN PARLIAMENT (correct)
+ridgewy2,96,NONE
+ridgewy2,97,DON'T KNOW
+ridgewy2,99,NOT ANSWERED
+ridgewy2,100,NOT APPLICABLE
+rfact2,0,INCORRECT/DK/NOT ANSW
+rfact2,1,CORRECT
+rfact2,100,NOT APPLICABLE
+jgeorge2,1,SECRETARY OF TEACHERS FEDERATION
+jgeorge2,2,LABOR MEMBER OF FEDERAL PARLIAMENT
+jgeorge2,3,LEADER OF WORKERS UNION
+jgeorge2,4,PRESIDENT OF ACTU (correct)
+jgeorge2,96,NONE
+jgeorge2,97,DON'T KNOW
+jgeorge2,99,NOT ANSWERED
+jgeorge2,100,NOT APPLICABLE
+jgfact2,0,INCORRECT/DK/NOT ANSW
+jgfact2,1,CORRECT
+jgfact2,100,NOT APPLICABLE
+polfeel2,1,STRONGLY UNFAVORABLE
+polfeel2,2,SOMEWHAT UNFAVORABLE
+polfeel2,3,NEUTRAL
+polfeel2,4,SOMEWHAT FAVORABLE
+polfeel2,5,STONRGLY FAVORABLE
+polfeel2,97,DON'T KNOW
+polfeel2,99,NOT ANSWERED
+polfeel2,100,NOT APPLICABLE
+monarch2,1,STRONGLY UNFAVORABLE
+monarch2,2,SOMEWHAT UNFAVORABLE
+monarch2,3,NEUTRAL
+monarch2,4,SOMEWHAT FAVORABLE
+monarch2,5,STRONGLY FAVORABLE
+monarch2,97,DON'T KNOW
+monarch2,99,NOT ANSWERED
+monarch2,100,NOT APPLICABLE
+repub2,1,STRONGLY UNFAVORABLE
+repub2,2,SOMEWHAT UNFAVORABLE
+repub2,3,NEUTRAL
+repub2,4,SOMEWHAT FAVORABLE
+repub2,5,STRONGLY FAVORABLE
+repub2,97,DON'T KNOW
+repub2,99,NOT ANSWERED
+repub2,100,NOT APPLICABLE
+saygov2,1,STRONGLY DISAGREE
+saygov2,2,SOMEWHAT DISAGREE
+saygov2,3,NEITHER
+saygov2,4,SOMEWHAT AGREE
+saygov2,5,STRONGLY AGREE
+saygov2,97,DON'T KNOW
+saygov2,99,NOT ANSWERED
+saygov2,100,NOT APPLICABLE
+opinion2,1,STRONGLY DISAGREE
+opinion2,2,SOMEWHAT DISAGREE
+opinion2,3,NEITHER
+opinion2,4,SOMEWHAT AGREE
+opinion2,5,STRONGLY AGREE
+opinion2,97,DON'T KNOW
+opinion2,99,NOT ANSWERED
+opinion2,100,NOT APPLICABLE
+brither2,1,STRONGLY DISAGREE
+brither2,2,SOMEWHAT DISAGREE
+brither2,3,NEITHER
+brither2,4,SOMEWHAT AGREE
+brither2,5,STRONGLY AGREE
+brither2,97,DON'T KNOW
+brither2,99,NOT ANSWERED
+brither2,100,NOT APPLICABLE
+preserv2,1,STRONGLY DISAGREE
+preserv2,2,SOMEWHAT DISAGREE
+preserv2,3,NEITHER
+preserv2,4,SOMEWHAT AGREE
+preserv2,5,STRONGLY AGREE
+preserv2,97,DON'T KNOW
+preserv2,99,NOT ANSWERED
+preserv2,100,NOT APPLICABLE
+majorit2,1,STRONGLY DISAGREE
+majorit2,2,SOMEWHAT DISAGREE
+majorit2,3,NEITHER
+majorit2,4,SOMEWHAT AGREE
+majorit2,5,STRONGLY AGREE
+majorit2,97,DON'T KNOW
+majorit2,99,NOT ANSWERED
+majorit2,100,NOT APPLICABLE
+opinpol2,1,  1 - GENERALLY A WASTE OF TIME
+opinpol2,2,   2
+opinpol2,3,   3
+opinpol2,4,   4
+opinpol2,5,   5
+opinpol2,6,   6
+opinpol2,7,   7
+opinpol2,8,   8
+opinpol2,9,  9 - AN EXTREMELY VALUABLE EXPERIENCE
+opinpol2,99,NOT ANSWERED
+opinpol2,100,NOT APPLICABLE
+valgdis2,1,LITTLE/NO VALUE
+valgdis2,2,SOMEWHAT VALUABLE
+valgdis2,3,VERY VALUABLE
+valgdis2,99,NOT ANSWERED
+valgdis2,100,NOT APPLICABLE
+valoutg2,1,LITTLE/NO VALUE
+valoutg2,2,SOMEWHAT VALUABLE
+valoutg2,3,VERY VALUABLE
+valoutg2,99,NOT ANSWERED
+valoutg2,100,NOT APPLICABLE
+valplen2,1,LITTLE/NO VALUE
+valplen2,2,SOMEWHAT VALUABLE
+valplen2,3,VERY VALUABLE
+valplen2,99,NOT ANSWERED
+valplen2,100,NOT APPLICABLE
+grlead2,1,STRONGLY DISAGREE
+grlead2,2,SOMEWHAT DISAGREE
+grlead2,3,NEITHER
+grlead2,4,SOMEWHAT AGREE
+grlead2,5,STRONGLY AGREE
+grlead2,99,NOT ANSWERED
+grlead2,100,NOT APPLICABLE
+aspects2,1,STRONGLY DISAGREE
+aspects2,2,SOMEWHAT DISAGREE
+aspects2,3,NEITHER
+aspects2,4,SOMEWHAT AGREE
+aspects2,5,STRONGLY AGREE
+aspects2,99,NOT ANSWERED
+aspects2,100,NOT APPLICABLE
+comment2,1,STRONGLY DISAGREE
+comment2,2,SOMEWHAT DISAGREE
+comment2,3,NEITHER
+comment2,4,SOMEWHAT AGREE
+comment2,5,STRONGLY AGREE
+comment2,97,DONT KNOW
+comment2,99,NOT ANSWERED
+comment2,100,NOT APPLICABLE
+glinflu2,1,STRONGLY DISAGREE
+glinflu2,2,SOMEWHAT DISAGREE
+glinflu2,3,NEITHER
+glinflu2,4,SOMEWHAT AGREE
+glinflu2,5,STRONGLY AGREE
+glinflu2,97,DONT KNOW
+glinflu2,99,NOT ANSWERED
+glinflu2,100,NOT APPLICABLE
+difview2,1,STRONGLY DISAGREE
+difview2,2,SOMEWHAT DISAGREE
+difview2,3,NEITHER
+difview2,4,SOMEWHAT AGREE
+difview2,5,STRONGLY AGREE
+difview2,97,DONT KNOW
+difview2,99,NOT ANSWERED
+difview2,100,NOT APPLICABLE
+talkoth2,1,LITTLE LESS THAN USUAL
+talkoth2,2,ABOUT THE SAME AS USUAL
+talkoth2,3,LITTLE MORE THAN USUAL
+talkoth2,99,NOT ANSWERED
+talkoth2,100,NOT APPLICABLE
+read2,1,LITTLE LESS THAN USUAL
+read2,2,ABOUT THE SAME AS USUAL
+read2,3,LITTLE MORE THAN USUAL
+read2,99,NOT ANSWERED
+read2,100,NOT APPLICABLE
+televis2,1,LITTLE LESS THAN USUAL
+televis2,2,ABOUT THE SAME AS USUAL
+televis2,3,LITTLE MORE THAN USUAL
+televis2,99,NOT ANSWERED
+televis2,100,NOT APPLICABLE
+readmat2,1,JUST GLANCED AT THE MATERIALS
+readmat2,2,READ LESS THAN HALF OF THE MATERIALS
+readmat2,3,READ ABOUT HALF OF THE MATERIALS
+readmat2,4,READ MORE THAN HALF OF THE MATERIALS
+readmat2,5,READ MOST/ALL OF THE MATERIALS
+readmat2,99,NOT ANSWERED
+readmat2,100,NOT APPLICABLE
+balance2,1,FAVORED SOME POSITIONS
+balance2,2,MOSTLY BALANCED
+balance2,97,DON'T KNOW
+balance2,99,NOT ANSWERED
+balance2,100,NOT APPLICABLE
+retmo3,1,JANUARY
+retmo3,2,FEBRUARY
+retmo3,3,MARCH
+retmo3,11,NOVEMBER
+retmo3,12,DECEMBER
+retyear3,0,2000
+retyear3,99,1999
+samplet3,1,ATTENDED DP
+samplet3,2,NOT ATTEND DP
+samplet3,3,ACRS99
+samplet3,4,UNKNOWN - ID REMOVED
+st3full,1,ATTENDED DP
+st3full,2,NOT ATTEND DP
+st3full,3,ACRS99
+st3full,4,UNKNOWN - ID REMOVED
+st3full,5,"ATTENDED DP, but No T2 Q'aire"
+intpol3,1,NOT AT ALL INTERESTED
+intpol3,2,NOT PARTICULARLY INTERESTED
+intpol3,3,SOMEWHAT INTERESTED
+intpol3,4,VERY INTERESTED
+intpol3,99,NOT ANSWERED
+newspap3,1,NOTHING AT ALL
+newspap3,2,NOT MUCH
+newspap3,3,SOME
+newspap3,4,A LOT
+newspap3,99,NOT ANSWERED
+televis3,1,NOTHING AT ALL
+televis3,2,NOT MUCH
+televis3,3,SOME
+televis3,4,A LOT
+televis3,99,NOT ANSWERED
+radio3,1,NOTHING AT ALL
+radio3,2,NOT MUCH
+radio3,3,SOME
+radio3,4,A LOT
+radio3,99,NOT ANSWERED
+amthr3,1,NOTHING AT ALL
+amthr3,2,NOT MUCH
+amthr3,3,SOME
+amthr3,4,A LOT
+amthr3,99,NOT ANSWERED
+intref3,1,NONE
+intref3,2,NOT MUCH
+intref3,3,SOME
+intref3,4,A GOOD DEAL
+intref3,99,NOT ANSWERED
+amtdis3,1,NOT AT ALL
+amtdis3,2,NOT MUCH
+amtdis3,3,SOME
+amtdis3,4,A LOT
+amtdis3,99,NOT ANSWERED
+tvcovdp3,1,DID NOT FOLLOW
+tvcovdp3,2,FOLLOWED HARDLY ANY
+tvcovdp3,3,FOLLOWED SOME
+tvcovdp3,4,FOLLOWED MOST
+tvcovdp3,99,NOT ANSWERED
+racovdp3,1,DID NOT FOLLOW
+racovdp3,2,FOLLOWED HARDLY ANY
+racovdp3,3,FOLLOWED SOME
+racovdp3,4,FOLLOWED MOST
+racovdp3,99,NOT ANSWERED
+sixmin3,1,NO
+sixmin3,2,YES
+sixmin3,99,NOT ANSWERED
+compuls3,1,STR FAVOR PEOPLE VOTE IF WANT
+compuls3,2,FAVOR VOTE IF WANT
+compuls3,3,FAVOR COMP VOTE
+compuls3,4,STR FAVOR COMP VOTE
+compuls3,99,NOT ANSWERED
+votcom3,1,DEFINITELY NOT
+votcom3,2,PROBABLY NOT
+votcom3,3,"MIGHT, MIGHT NOT"
+votcom3,4,PROBABLY WOULD HAVE
+votcom3,5,DEFINITELY WOULD HAVE
+votcom3,99,NOT ANSWERED
+care3,1,DID NOT CARE AT ALL
+care3,2,DID NOT CARE VERY MUCH
+care3,3,CARED A GOOD DEAL
+care3,99,NOT ANSWERED
+decide3,1,A LONG TIME AGO
+decide3,2,FEW MONTHS AGO
+decide3,3,RECENT WEEKS
+decide3,4,FEW DAYS BEFORE POLLING
+decide3,5,POLLING DAY
+decide3,99,NOT ANSWERED
+approve3,1,NO
+approve3,2,YES
+approve3,96,VOTED INFORMAL/DID NOT VOTE
+approve3,99,NOT ANSWERED
+apprv3r,1,No
+apprv3r,2,Yes
+preambl3,1,NO
+preambl3,2,YES
+preambl3,96,VOTED INFORMAL/DID NOT VOTE
+preambl3,99,NOT ANSWERED
+firstop3,1,PEOPLE ELECT PREZ.
+firstop3,2,PARLIAMENT APPT. PREZ
+firstop3,3,KEEP STATUS QUO
+firstop3,97,DON'T KNOW
+firstop3,99,NOT ANSWERED
+frstop3r,1,PEOPLE ELECT PREZ.
+frstop3r,2,PARLIAMENT APPT. PREZ
+frstop3r,3,KEEP STATUS QUO
+secop3,1,PEOPLE ELECT PREZ
+secop3,2,PARLIAMENT APPT. PREZ
+secop3,3,KEEP STATUS QUO
+secop3,97,DON'T KNOW
+secop3,99,NOT ANSWERED
+prespow3,1,FEWER
+prespow3,2,SAME
+prespow3,3,GREATER
+prespow3,99,NOT ANSWERED
+votinfo3,1,KNEW ENOUGH
+votinfo3,2,LITTLE MORE
+votinfo3,3,LOT MORE
+votinfo3,99,NOT ANSWERED
+votdif3,1,NO
+votdif3,2,YES
+votdif3,99,NOT ANSWERED
+partyid3,1,LIBERAL
+partyid3,2,LABOR
+partyid3,3,NATIONAL PARTY
+partyid3,4,AUSTRALIAN DEMOCRATS
+partyid3,5,GREENS
+partyid3,6,ONE NATION
+partyid3,7,OTHER
+partyid3,97,NONE/DON'T KNOW
+partyid3,99,NOT ANSWERED
+parsupp3,1,NOT STRONG
+parsupp3,2,MODERATELY STRONG
+parsupp3,3,VERY STRONG
+parsupp3,99,NOT ANSWERED
+parsupp3,100,NOT APPLICABLE
+democra3,1,NOT AT ALL
+democra3,2,NOT PARTICULARLY
+democra3,3,SOMEWHAT
+democra3,4,VERY
+democra3,99,NOT ANSWERED
+lrposit3,99,NOT ANSWERED
+housepr3,1,LIBERAL
+housepr3,2,LABOR
+housepr3,3,NATIONAL
+housepr3,4,DEMOCRATES
+housepr3,5,GREENS
+housepr3,6,ONE NATION
+housepr3,7,OTHER
+housepr3,96,NONE/DID NOT VOTE
+housepr3,99,NOT ANSWERED
+vothous3,1,LIBERAL
+vothous3,2,LABOR
+vothous3,3,NATIONAL
+vothous3,4,DEMOCRATES
+vothous3,5,GREENS
+vothous3,6,ONE NATION
+vothous3,7,OTHER
+vothous3,96,NONE/WOULD NOT VOTE
+vothous3,99,NOT ANSWERED
+feellib3,0,STRONGLY DISLIKE
+feellib3,5,NEUTRAL
+feellib3,10,STRONGLY LIKE
+feellib3,99,NOT ANSWERED
+feellab3,0,STRONGLY DISLIKE
+feellab3,5,NEUTRAL
+feellab3,10,STRONGLY LIKE
+feellab3,99,NOT ANSWERED
+feelnat3,0,STRONGLY DISLIKE
+feelnat3,5,NEUTRAL
+feelnat3,10,STRONGLY LIKE
+feelnat3,99,NOT ANSWERED
+feel1nt3,0,STRONGLY DISLIKE
+feel1nt3,5,NEUTRAL
+feel1nt3,10,STRONGLY LIKE
+feel1nt3,99,NOT ANSWERED
+feeldem3,0,STRONGLY DISLIKE
+feeldem3,5,NEUTRAL
+feeldem3,10,STRONGLY LIKE
+feeldem3,99,NOT ANSWERED
+feelmon3,0,STRONGLY DISLIKE
+feelmon3,5,NEUTRAL
+feelmon3,10,STRONGLY LIKE
+feelmon3,99,NOT ANSWERED
+feelrep3,0,STRONGLY DISLIKE
+feelrep3,5,NEUTRAL
+feelrep3,10,STRONGLY LIKE
+feelrep3,99,NOT ANSWERED
+likekb3,0,STRONGLY DISLIKE
+likekb3,5,NEUTRAL
+likekb3,10,STRONGLY LIKE
+likekb3,99,NOT ANSWERED
+likejh3,0,STRONGLY DISLIKE
+likejh3,5,NEUTRAL
+likejh3,10,STRONGLY LIKE
+likejh3,99,NOT ANSWERED
+likeml3,0,STRONGLY DISLIKE
+likeml3,5,NEUTRAL
+likeml3,10,STRONGLY LIKE
+likeml3,99,NOT ANSWERED
+likeph3,0,STRONGLY DISLIKE
+likeph3,5,NEUTRAL
+likeph3,10,STRONGLY LIKE
+likeph3,99,NOT ANSWERED
+likemt3,0,STRONGLY DISLIKE
+likemt3,5,NEUTRAL
+likemt3,10,STRONGLY LIKE
+likemt3,99,NOT ANSWERED
+likekj3,0,STRONGLY DISLIKE
+likekj3,5,NEUTRAL
+likekj3,10,STRONGLY LIKE
+likekj3,99,NOT ANSWERED
+govlook3,1,USUALLY LOOK AFTER THEMSELVES
+govlook3,2,SOMETIMES LOOK AFTER THEMSELVES
+govlook3,3,SOMETIMES TRUSTED
+govlook3,4,USUALLY TRUSTED
+govlook3,98,NOT ANSWERED
+fedpolk3,1,DON'T KNOW
+fedpolk3,5,KNOW
+fedpolk3,99,NOT ANSWERED
+votdiff3,1,WON'T MAKE DIFFERENCE
+votdiff3,5,CAN MAKE DIFFERENCE
+votdiff3,98,NOT ANSWERED
+impborn3,1,NOT AT ALL IMPORTANT
+impborn3,2,NOT VERY IMPORTANT
+impborn3,3,FAIRLY IMPORTANT
+impborn3,4,VERY IMPORTANT
+impborn3,99,NOT ANSWERED
+impciti3,1,NOT AT ALL IMPORTANT
+impciti3,2,NOT VERY IMPORTANT
+impciti3,3,FAIRLY IMPORTANT
+impciti3,4,VERY IMPORTANT
+impciti3,99,NOT ANSWERED
+implive3,1,NOT AT ALL IMPORTANT
+implive3,2,NOT VERY IMPORTANT
+implive3,3,FAIRLY IMPORTANT
+implive3,4,VERY IMPORTANT
+implive3,99,NOT ANSWERED
+impspek3,1,NOT AT ALL IMPORTANT
+impspek3,2,NOT VERY IMPORTANT
+impspek3,3,FAIRLY IMPORTANT
+impspek3,4,VERY IMPORTANT
+impspek3,99,NOT ANSWERED
+impchr3,1,NOT AT ALL IMPORTANT
+impchr3,2,NOT VERY IMPORTANT
+impchr3,3,FAIRLY IMPORTANT
+impchr3,4,VERY IMPORTANT
+impchr3,99,NOT ANSWERED
+implaw3,1,NOT AT ALL IMPORTANT
+implaw3,2,NOT VERY IMPORTANT
+implaw3,3,FAIRLY IMPORTANT
+implaw3,4,VERY IMPORTANT
+implaw3,99,NOT ANSWERED
+impfeel3,1,NOT AT ALL IMPORTANT
+impfeel3,2,NOT VERY IMPORTANT
+impfeel3,3,FAIRLY IMPORTANT
+impfeel3,4,VERY IMPORTANT
+impfeel3,99,NOT ANSWERED
+prddem3,1,NOT PROUD AT ALL
+prddem3,2,NOT VERY PROUD
+prddem3,3,FAIRLY PROUD
+prddem3,4,VERY PROUD
+prddem3,99,NOT ANSWERED
+prdinf3,1,NOT PROUD AT ALL
+prdinf3,2,NOT VERY PROUD
+prdinf3,3,FAIRLY PROUD
+prdinf3,4,VERY PROUD
+prdinf3,99,NOT ANSWERED
+prdeco3,1,NOT PROUD AT ALL
+prdeco3,2,NOT VERY PROUD
+prdeco3,3,FAIRLY PROUD
+prdeco3,4,VERY PROUD
+prdeco3,99,NOT ANSWERED
+prdsoc3,1,NOT PROUD AT ALL
+prdsoc3,2,NOT VERY PROUD
+prdsoc3,3,FAIRLY PROUD
+prdsoc3,4,VERY PROUD
+prdsoc3,99,NOT ANSWERED
+prdsci3,1,NOT PROUD AT ALL
+prdsci3,2,NOT VERY PROUD
+prdsci3,3,FAIRLY PROUD
+prdsci3,4,VERY PROUD
+prdsci3,99,NOT ANSWERED
+prdhis3,1,NOT PROUD AT ALL
+prdhis3,2,NOT VERY PROUD
+prdhis3,3,FAIRLY PROUD
+prdhis3,4,VERY PROUD
+prdhis3,99,NOT ANSWERED
+prdarm3,1,NOT PROUD AT ALL
+prdarm3,2,NOT VERY PROUD
+prdarm3,3,FAIRLY PROUD
+prdarm3,4,VERY PROUD
+prdarm3,99,NOT ANSWERED
+prdspo3,1,NOT PROUD AT ALL
+prdspo3,2,NOT VERY PROUD
+prdspo3,3,FAIRLY PROUD
+prdspo3,4,VERY PROUD
+prdspo3,99,NOT ANSWERED
+prdart3,1,NOT PROUD AT ALL
+prdart3,2,NOT VERY PROUD
+prdart3,3,FAIRLY PROUD
+prdart3,4,VERY PROUD
+prdart3,99,NOT ANSWERED
+queimp3,1,NOT VERY
+queimp3,2,FAIRLY
+queimp3,3,VERY
+queimp3,99,NOT ANSWERED
+flag3,1,STRONGLY FAVOR RETAIN
+flag3,2,FAVOR RETAIN
+flag3,3,FAVOR CHANGE
+flag3,4,STRONGLY FAVOR CHANGE
+flag3,99,NOT ANSWERED
+tiesbr3,1,STRONGLY DISAGREE
+tiesbr3,2,SOMEWHAT DISAGREE
+tiesbr3,3,NEITHER
+tiesbr3,4,SOMEWHAT AGREE
+tiesbr3,5,STRONGLY AGREE
+tiesbr3,99,NOT ANSWERED
+presout3,1,STRONGLY DISAGREE
+presout3,2,SOMEWHAT DISAGREE
+presout3,3,NEITHER
+presout3,4,SOMEWHAT AGREE
+presout3,5,STRONGLY AGREE
+presout3,99,NOT ANSWERED
+headaus3,1,STRONGLY DISAGREE
+headaus3,2,SOMEWHAT DISAGREE
+headaus3,3,NEITHER
+headaus3,4,SOMEWHAT AGREE
+headaus3,5,STRONGLY AGREE
+headaus3,99,NOT ANSWERED
+distrac3,1,STRONGLY DISAGREE
+distrac3,2,SOMEWHAT DISAGREE
+distrac3,3,NEITHER
+distrac3,4,SOMEWHAT AGREE
+distrac3,5,STRONGLY AGREE
+distrac3,99,NOT ANSWERED
+citaus3,1,STRONGLY DISAGREE
+citaus3,2,SOMEWHAT DISAGREE
+citaus3,3,NEITHER
+citaus3,4,SOMEWHAT AGREE
+citaus3,5,STRONGLY AGREE
+citaus3,99,NOT ANSWERED
+sportpr3,1,STRONGLY DISAGREE
+sportpr3,2,SOMEWHAT DISAGREE
+sportpr3,3,NEITHER
+sportpr3,4,SOMEWHAT AGREE
+sportpr3,5,STRONGLY AGREE
+sportpr3,99,NOT ANSWERED
+btworld3,1,STRONGLY DISAGREE
+btworld3,2,SOMEWHAT DISAGREE
+btworld3,3,NEITHER
+btworld3,4,SOMEWHAT AGREE
+btworld3,5,STRONGLY AGREE
+btworld3,99,NOT ANSWERED
+ausbett3,1,STRONGLY DISAGREE
+ausbett3,2,SOMEWHAT DISAGREE
+ausbett3,3,NEITHER
+ausbett3,4,SOMEWHAT AGREE
+ausbett3,5,STRONGLY AGREE
+ausbett3,99,NOT ANSWERED
+descndc3,1,NO
+descndc3,2,I MAY BE
+descndc3,3,YES
+descndc3,97,DON'T KNOW
+descndc3,99,NOT ANSWERED
+learnfm3,1,NOT AT ALL
+learnfm3,2,SOMEWHAT
+learnfm3,3,VERY
+learnfm3,99,NOT ANSWERED
+faminfo3,1,NEVER
+faminfo3,2,ONCE OR TWICE
+faminfo3,3,MORE OFTEN
+faminfo3,99,NOT ANSWERED
+qrole3,1,CHOOSES GOV GENERAL
+qrole3,2,NO ROLE
+qrole3,3,APPTS ON RECOMMEND PARLIAMENT
+qrole3,4,APPTS ON ADVICE OF PM (correct)
+qrole3,97,DON'T KNOW
+qrole3,99,NOT ANSWERED
+qrfact3,0,INCORRECT/DK/NOT ANSW
+qrfact3,1,CORRECT
+ggrole3,1,CONTROLS GOVERNMENT
+ggrole3,2,ACTS ON QUEEN'S INSTRUCTIONS
+ggrole3,3,PERFORMS ONLY CEREMONIAL DUTIES
+ggrole3,4,CAN DECIDE TO DISMISS GOVT. (correct)
+ggrole3,97,DON'T KNOW
+ggrole3,99,NOT ANSWERED
+ggfact3,0,INCORRECT/DK/NOT ANSW
+ggfact3,1,CORRECT
+presrol3,1,BRITISH PRIME MINISTER
+presrol3,2,AUSTRALIAN PRIME MINISTER
+presrol3,3,AMERICAN PRESIDENT
+presrol3,4,GOVERNOR GENERAL (correct)
+presrol3,97,DON'T KNOW
+presrol3,99,NOT ANSWERED
+prfact3,0,INCORRECT/DK/NOT ANSW
+prfact3,1,CORRETN
+rempres3,1,ANYTIME W/O REPORT TO HOUSE
+rempres3,2,ANYTIME W/ LATER HOUSE APPROVE (correct)
+rempres3,3,AFTER FAIR TRIAL IN PARLIAMENT
+rempres3,4,CANNOT REMOVE
+rempres3,97,DON'T KNOW
+rempres3,99,NOT ANSWERED
+rpfact3,0,INCORRECT/DK/NOT ANSW
+rpfact3,1,CORRECT
+party3,1,LIBERAL PARTY MORE
+party3,2,EQUALLY IN FAVOR
+party3,3,LABOR PARTY MORE (correct)
+party3,97,NOT MUCH IMPRESSION
+party3,99,NOT ANSWERED
+pfact3,0,INCORRECT/DK/NOT ANSW
+pfact3,1,CORRECT
+pmpower3,1,STRONGLY DISAGREE
+pmpower3,2,SOMEWHAT DISAGREE
+pmpower3,3,NEITHER
+pmpower3,4,SOMEWHAT AGREE
+pmpower3,5,STRONGLY AGREE
+pmpower3,99,NOT ANSWERED
+prezpow3,1,STRONGLY DISAGREE
+prezpow3,2,SOMEWHAT DISAGREE
+prezpow3,3,NEITHER
+prezpow3,4,SOMEWHAT AGREE
+prezpow3,5,STRONGLY AGREE
+prezpow3,99,NOT ANSWERED
+repexp3,1,STRONGLY DISAGREE
+repexp3,2,SOMEWHAT DISAGREE
+repexp3,3,NEITHER
+repexp3,4,SOMEWHAT AGREE
+repexp3,5,STRONGLY AGREE
+repexp3,99,NOT ANSWERED
+common3,1,STRONGLY DISAGREE
+common3,2,SOMEWHAT DISAGREE
+common3,3,NEITHER
+common3,4,SOMEWHAT AGREE
+common3,5,STRONGLY AGREE
+common3,99,NOT ANSWERED
+polstab3,1,STRONGLY DISAGREE
+polstab3,2,SOMEWHAT DISAGREE
+polstab3,3,NEITHER
+polstab3,4,SOMEWHAT AGREE
+polstab3,5,STRONGLY AGREE
+polstab3,99,NOT ANSWERED
+constrd3,1,STRONGLY DISAGREE
+constrd3,2,SOMEWHAT DISAGREE
+constrd3,3,NEITHER
+constrd3,4,SOMEWHAT AGREE
+constrd3,5,STRONGLY AGREE
+constrd3,99,NOT ANSWERED
+moreind3,1,STRONGLY DISAGREE
+moreind3,2,SOMEWHAT DISAGREE
+moreind3,3,NEITHER
+moreind3,4,SOMEWHAT AGREE
+moreind3,5,STRONGLY AGREE
+moreind3,99,NOT ANSWERED
+stanwor3,1,STRONGLY DISAGREE
+stanwor3,2,SOMEWHAT DISAGREE
+stanwor3,3,NEITHER
+stanwor3,4,SOMEWHAT AGREE
+stanwor3,5,STRONGLY AGREE
+stanwor3,99,NOT ANSWERED
+confron3,1,STRONGLY DISAGREE
+confron3,2,SOMEWHAT DISAGREE
+confron3,3,NEITHER
+confron3,4,SOMEWHAT AGREE
+confron3,5,STRONGLY AGREE
+confron3,99,NOT ANSWERED
+stweak3,1,STRONGLY DISAGREE
+stweak3,2,SOMEWHAT DISAGREE
+stweak3,3,NEITHER
+stweak3,4,SOMEWHAT AGREE
+stweak3,5,STRONGLY AGREE
+stweak3,99,NOT ANSWERED
+moredem3,1,STRONGLY DISAGREE
+moredem3,2,SOMEWHAT DISAGREE
+moredem3,3,NEITHER
+moredem3,4,SOMEWHAT AGREE
+moredem3,5,STRONGLY AGREE
+moredem3,99,NOT ANSWERED
+quedem3,1,STRONGLY DISAGREE
+quedem3,2,SOMEWHAT DISAGREE
+quedem3,3,NEITHER
+quedem3,4,SOMEWHAT AGREE
+quedem3,5,STRONGLY AGREE
+quedem3,99,NOT ANSWERED
+qbritin3,1,STRONGLY DISAGREE
+qbritin3,2,SOMEWHAT DISAGREE
+qbritin3,3,NEITHER
+qbritin3,4,SOMEWHAT AGREE
+qbritin3,5,STRONGLY AGREE
+qbritin3,99,NOT ANSWERED
+prespol3,1,STRONGLY DISAGREE
+prespol3,2,SOMEWHAT DISAGREE
+prespol3,3,NEITHER
+prespol3,4,SOMEWHAT AGREE
+prespol3,5,STRONGLY AGREE
+prespol3,99,NOT ANSWERED
+ppchpre3,1,STRONGLY DISAGREE
+ppchpre3,2,SOMEWHAT DISAGREE
+ppchpre3,3,NEITHER
+ppchpre3,4,SOMEWHAT AGREE
+ppchpre3,5,STRONGLY AGREE
+ppchpre3,99,NOT ANSWERED
+flagchg3,1,NO
+flagchg3,2,YES
+flagchg3,99,NOT ANSWERED
+anthem3,1,NO
+anthem3,2,YES
+anthem3,99,NOT ANSWERED
+wdroyal3,1,NO
+wdroyal3,2,YES
+wdroyal3,99,NOT ANSWERED
+pargame3,1,NO
+pargame3,2,YES
+pargame3,99,NOT ANSWERED
+dkchg3,1,NO
+dkchg3,2,YES
+dkchg3,99,NOT ANSWERED
+inctax3,1,STRONGLY DISAGREE
+inctax3,2,DISAGREE
+inctax3,3,NEITHER
+inctax3,4,AGREE
+inctax3,5,STRONGLY AGREE
+inctax3,99,NOT ANSWERED
+inctax3,101,NON-PARTICIPANT
+unionpw3,1,STRONGLY DISAGREE
+unionpw3,2,DISAGREE
+unionpw3,3,NEITHER
+unionpw3,4,AGREE
+unionpw3,5,STRONGLY AGREE
+unionpw3,99,NOT ANSWERED
+unionpw3,101,NON-PARTICIPANT
+bigbus3,1,STRONGLY DISAGREE
+bigbus3,2,DISAGREE
+bigbus3,3,NEITHER
+bigbus3,4,AGREE
+bigbus3,5,STRONGLY AGREE
+bigbus3,99,NOT ANSWERED
+bigbus3,101,NON-PARTICIPANT
+redistr3,1,STRONGLY DISAGREE
+redistr3,2,DISAGREE
+redistr3,3,NEITHER
+redistr3,4,AGREE
+redistr3,5,STRONGLY AGREE
+redistr3,99,NOT ANSWERED
+redistr3,101,NON-PARTICIPANT
+regulat3,1,STRONGLY DISAGREE
+regulat3,2,DISAGREE
+regulat3,3,NEITHER
+regulat3,4,AGREE
+regulat3,5,STRONGLY AGREE
+regulat3,99,NOT ANSWERED
+regulat3,101,NON-PARTICIPANT
+deathpn3,1,STRONGLY DISAGREE
+deathpn3,2,DISAGREE
+deathpn3,3,NEITHER
+deathpn3,4,AGREE
+deathpn3,5,STRONGLY AGREE
+deathpn3,99,NOT ANSWERED
+deathpn3,101,NON-PARTICIPANT
+stiffsn3,1,STRONGLY DISAGREE
+stiffsn3,2,DISAGREE
+stiffsn3,3,NEITHER
+stiffsn3,4,AGREE
+stiffsn3,5,STRONGLY AGREE
+stiffsn3,99,NOT ANSWERED
+stiffsn3,101,NON-PARTICIPANT
+wompref3,1,STRONGLY DISAGREE
+wompref3,2,DISAGREE
+wompref3,3,NEITHER
+wompref3,4,AGREE
+wompref3,5,STRONGLY AGREE
+wompref3,99,NOT ANSWERED
+wompref3,101,NON-PARTICIPANT
+eqlopm3,1,NOT GONE NEARLY FAR ENOUGH
+eqlopm3,2,NOT GONE FAR ENOUGH
+eqlopm3,3,ABOUT RIGHT
+eqlopm3,4,GONE TOO FAR
+eqlopm3,5,GONE MUCH TOO FAR
+eqlopm3,99,NOT ANSWERED
+eqlopm3,101,NON-PARTICIPANT
+landrit3,1,NOT GONE NEARLY FAR ENOUGH
+landrit3,2,NOT GONE FAR ENOUGH
+landrit3,3,ABOUT RIGHT
+landrit3,4,GONE TOO FAR
+landrit3,5,GONE MUCH TOO FAR
+landrit3,99,NOT ANSWERED
+landrit3,101,NON-PARTICIPANT
+eqlopw3,1,NOT GONE NEARLY FAR ENOUGH
+eqlopw3,2,NOT GONE FAR ENOUGH
+eqlopw3,3,ABOUT RIGHT
+eqlopw3,4,GONE TOO FAR
+eqlopw3,5,GONE MUCH TOO FAR
+eqlopw3,99,NOT ANSWERED
+eqlopw3,101,NON-PARTICIPANT
+nummigr3,1,NOT GONE NEARLY FAR ENOUGH
+nummigr3,2,NOT GONE FAR ENOUGH
+nummigr3,3,ABOUT RIGHT
+nummigr3,4,GONE TOO FAR
+nummigr3,5,GONE MUCH TOO FAR
+nummigr3,99,NOT ANSWERED
+nummigr3,101,NON-PARTICIPANT
+helpabr3,1,NOT GONE NEARLY FAR ENOUGH
+helpabr3,2,NOT GONE FAR ENOUGH
+helpabr3,3,ABOUT RIGHT
+helpabr3,4,GONE TOO FAR
+helpabr3,5,GONE MUCH TOO FAR
+helpabr3,99,NOT ANSWERED
+helpabr3,101,NON-PARTICIPANT
+closrel3,1,NOT GONE NEARLY FAR ENOUGH
+closrel3,2,NOT GONE FAR ENOUGH
+closrel3,3,ABOUT RIGHT
+closrel3,4,GONE TOO FAR
+closrel3,5,GONE MUCH TOO FAR
+closrel3,99,NOT ANSWERED
+closrel3,101,NON-PARTICIPANT
+frstaim3,1,MAINTAIN ORDER
+frstaim3,2,GIVE PEOPLE MORE SAY
+frstaim3,3,FIGHT RISING PRICES
+frstaim3,4,PROTECT FREE SPEECH
+frstaim3,99,NOT ANSWERED
+frstaim3,101,NON-PARTICIPANT
+secaim3,1,MAINTAIN ORDER
+secaim3,2,GIVE PEOPLE MORE SAY
+secaim3,3,FIGHT RISING PRICES
+secaim3,4,PROTECT FREE SPEECH
+secaim3,99,NOT ANSWERED
+secaim3,101,NON-PARTICIPANT
+impauth3,1,NOT
+impauth3,2,SOMEWHAT
+impauth3,3,VERY
+impauth3,99,NOT ANSWERED
+impauth3,101,NON-PARTICIPANT
+impeql3,1,NOT
+impeql3,2,SOMEWHAT
+impeql3,3,VERY
+impeql3,99,NOT ANSWERED
+impeql3,101,NON-PARTICIPANT
+impminr3,1,NOT
+impminr3,2,SOMEWHAT
+impminr3,3,VERY
+impminr3,99,NOT ANSWERED
+impminr3,101,NON-PARTICIPANT
+impeqmw3,1,NOT
+impeqmw3,2,SOMEWHAT
+impeqmw3,3,VERY
+impeqmw3,99,NOT ANSWERED
+impeqmw3,101,NON-PARTICIPANT
+imptrad3,1,NOT
+imptrad3,2,SOMEWHAT
+imptrad3,3,VERY
+imptrad3,99,NOT ANSWERED
+imptrad3,101,NON-PARTICIPANT
+shouldb3,1,UNIFIED BODY
+shouldb3,2,COLLECTION OF PEOPLE
+shouldb3,3,"NEITHER, UNDECIDED"
+shouldb3,99,NOT ANSWERED
+shouldb3,101,NON-PARTICIPANT
+nature3,1,PROMOTES INTERESTS OF SOCIETY
+nature3,2,THREATENS RIGHTS
+nature3,3,"NEITHER, UNDECIDED"
+nature3,99,NOT ANSWERED
+nature3,101,NON-PARTICIPANT
+emphasm3,1,FREEDOM
+emphasm3,2,CONFORMITY
+emphasm3,3,"NEITHER,UNDECIDED"
+emphasm3,99,NOT ANSWERED
+emphasm3,101,NON-PARTICIPANT
+lawsaim3,1,ENFORCE COMM STANDARDS
+lawsaim3,2,PROTECT RIGHT TO LIVE BY ANY MORAL STANDARDS
+lawsaim3,3,"NEITHER,UNDECIDED"
+lawsaim3,99,NOT ANSWERED
+lawsaim3,101,NON-PARTICIPANT
+emphasl3,1,RESPECT INSTITUTIONS
+emphasl3,2,RIGHTS OF INDIVIDUALS
+emphasl3,3,"NEITHER,UNDECIDED"
+emphasl3,99,NOT ANSWERED
+emphasl3,101,NON-PARTICIPANT
+agesec3,40,NO FORMAL SCHOOLING
+agesec3,41,PRIMARY SCHOOL ONLY
+agesec3,42,STILL AT SCHOOL
+agesec3,99,NOT ANSWERED
+agesec3,101,NON-PARTICIPANTS
+tersch3,9,9 YEARS AND OVER
+tersch3,100,NOT APPLICABLE
+tersch3,101,NON-PARTICIPANT
+qual3,1,NO QUALIFICATION
+qual3,2,POSTGRADUATE DEGREE
+qual3,3,BACHELOR DEGREE
+qual3,4,UNDERGRADUATE DIPLOMA
+qual3,5,ASSOCIATE DIPLOMA
+qual3,6,TRADE QUALIFICATION
+qual3,7,NON-TRADE QUALIFICATION
+qual3,99,NOT ANSWERED
+qual3,101,NON-PARTICIPANT
+workst3,1,WORKING FT FOR PAY
+workst3,2,WORKING PT FOR PAY
+workst3,3,LOOKING FOR FT WORK
+workst3,4,LOOKING FOR PT WORK
+workst3,5,RETIRED
+workst3,6,AT SCHOOL OR UNIV
+workst3,7,KEEPING HOUSE
+workst3,8,OTHER
+workst3,98,NOT ANSWERED
+workst3,101,NON-PARTICIPANT
+jobtit3,10,Managers and Administrators
+jobtit3,11,Generalist Managers
+jobtit3,12,Specialist Managers
+jobtit3,13,Farmers and Farm Managers
+jobtit3,20,Professionals
+jobtit3,21,"Science, Building and Engineering Professionals"
+jobtit3,22,Business and Information Professionals
+jobtit3,23,Health Professionals
+jobtit3,24,Education Professionals
+jobtit3,25,"Social, Arts and Miscellaneous Professionals"
+jobtit3,30,Associate Professionals
+jobtit3,31,"Science, Engineering and Related Associate Professionals"
+jobtit3,32,Business and Administration Associate Professionals
+jobtit3,33,Managing Supervisors (Sales and Service)
+jobtit3,34,Health and Welfare Associate Professionals
+jobtit3,39,Other Associate Professionals
+jobtit3,40,Tradespersons and Related Workers
+jobtit3,41,Mechanical and Fabrication Engineering Tradespersons
+jobtit3,42,Automotive Tradespersons
+jobtit3,43,Electrical and Electronics Tradespersons
+jobtit3,44,Construction Tradespersons
+jobtit3,45,Food Tradespersons
+jobtit3,46,Skilled Agricultural and Horticultural Workers
+jobtit3,49,Other Tradespersons and Related Workers
+jobtit3,50,Advanced Clerical and Service Workers
+jobtit3,51,Secretaries and Personal Assistants
+jobtit3,59,Other Advanced Clerical and Service Workers
+jobtit3,60,"Intermediate Clerical, Sales and Service Workers"
+jobtit3,61,Intermediate Clerical Workers
+jobtit3,62,Intermediate Sales and Related Workers
+jobtit3,63,Intermediate Service Workers
+jobtit3,70,Intermediate Production and Transport Workers
+jobtit3,71,Intermediate Plant Operators
+jobtit3,72,Intermediate Machine Operators
+jobtit3,73,Road and Rail Transport Drivers
+jobtit3,79,Other Intermediate Production and Transport Workers
+jobtit3,80,"Elementary Clerical, Sales and Service Workers"
+jobtit3,81,Elementary Clerks
+jobtit3,82,Elementary Sales Workers
+jobtit3,83,Elementary Service Workers
+jobtit3,84,Labourers and Related Workers
+jobtit3,85,Cleaners
+jobtit3,86,Factory Labourers
+jobtit3,87,Other Labourers and Related Workers
+jobtit3,88,Student
+jobtit3,96,Not in Labour Force
+jobtit3,97,Inadequately described
+jobtit3,99,Not answered
+jobtit3,100,Not applicable
+jobtit3,101,Non-participant
+jobpos3,1,NON-SUPERVISORY
+jobpos3,2,SUPERVISORY
+jobpos3,3,LOWER MANAGERIAL
+jobpos3,4,MIDDLE MANAGERIAL
+jobpos3,5,UPPER MANAGERIAL
+jobpos3,99,NOT ANSWERED
+jobpos3,101,NON-PARTICIPANT
+employ3,1,SELF-EMPLOYED
+employ3,2,PRIVATE EMPLOYEE
+employ3,3,FED/STATE/LOCAL GOVT
+employ3,4,FAMILY BUSINESS/FARM
+employ3,99,NOT ANSWERED
+employ3,101,NON-PARTICIPANT
+supresp3,1,NO
+supresp3,2,YES
+supresp3,99,NOT ANSWERED
+supresp3,101,NON-PARTICIPANT
+tradeun3,1,NO
+tradeun3,2,YES
+tradeun3,99,NOT ANSWERED
+tradeun3,101,NON-PARTICIPANT
+gender3,1,MALE
+gender3,2,FEMALE
+gender3,99,NOT ANSWERED
+gender3,101,NON-PARTICIPANT
+ybirth3,99,NOT ANSWERED
+ybirth3,101,NON-PARTICIPANT
+counbir3,1,Australia
+counbir3,2,New Zealand
+counbir3,3,United Kingdom
+counbir3,4,Republic of Ireland
+counbir3,5,Italy
+counbir3,6,Germany
+counbir3,7,Greece
+counbir3,8,Malta
+counbir3,9,Netherlands
+counbir3,10,Poland
+counbir3,11,Yugoslavia (former)
+counbir3,12,Vietnam
+counbir3,13,Other
+counbir3,99,Not answered
+counbir3,101,Non-participant
+mcounb3,1,Australia
+mcounb3,2,New Zealand
+mcounb3,3,United Kingdom
+mcounb3,4,Republic of Ireland
+mcounb3,5,Italy
+mcounb3,6,Germany
+mcounb3,7,Greece
+mcounb3,8,Malta
+mcounb3,9,Netherlands
+mcounb3,10,Poland
+mcounb3,11,Yugoslavia (former)
+mcounb3,12,Vietnam
+mcounb3,13,Other
+mcounb3,99,Not answered
+mcounb3,101,Non-participant
+fcounb3,1,Australia
+fcounb3,2,New Zealand
+fcounb3,3,United Kingdom
+fcounb3,4,Republic of Ireland
+fcounb3,5,Italy
+fcounb3,6,Germany
+fcounb3,7,Greece
+fcounb3,8,Malta
+fcounb3,9,Netherlands
+fcounb3,10,Poland
+fcounb3,11,Yugoslavia (former)
+fcounb3,12,Vietnam
+fcounb3,13,Other
+fcounb3,99,Not answered
+fcounb3,101,Non-participant
+fpid3,1,LIBERAL
+fpid3,2,LABOR
+fpid3,3,NATIONAL/COUNTRY
+fpid3,4,DEMOCRATIC LABOR
+fpid3,5,AUST DEMOCRATICS
+fpid3,6,OTHER PARTIES
+fpid3,97,DON'T KNOW
+fpid3,99,NOT ANSWERED
+fpid3,101,NON-PARTICIPANT
+mpid3,1,LIBERAL
+mpid3,2,LABOR
+mpid3,3,NATIONAL/COUNTRY
+mpid3,4,DEMOCRATIC LABOR
+mpid3,5,AUST DEMOCRATS
+mpid3,6,OTHER PARTIES
+mpid3,97,DON'T KNOW
+mpid3,99,NOT ANSWERED
+mpid3,101,NON-PARTICIPANT
+relig3,1,ROMAN CATHOLIC
+relig3,2,ANGLICAN/C OF E
+relig3,3,UNITING/METHODIST
+relig3,4,ORTHODOX CHURCH
+relig3,5,PRESBYTERIAN
+relig3,6,OTHER
+relig3,9,NO RELIGION
+relig3,99,NOT ANSWERED
+relig3,101,NON-PARTICIPANT
+religat3,1,NEVER
+religat3,2,LESS THAN ONCE/YEAR
+religat3,3,AT LEAST ONCE/YEAR
+religat3,4,SEVERAL TIMES/YEAR
+religat3,5,AT LEAST ONCE/MONTH
+religat3,6,AT LEAST ONCE/WEEK
+religat3,99,NOT ANSWERED
+marital3,1,NEVER MARRIED
+marital3,2,NOW MARRIED/DE FACTO
+marital3,3,DIVORCED/SEPARATED
+marital3,4,WIDOWED
+marital3,99,NOT ANSWERED
+marital3,101,NON-PARTICIPANT
+shelter3,1,OWN OUTRIGHT
+shelter3,2,PAYING OFF MORTGAGE
+shelter3,3,RENT FROM PRIVATE
+shelter3,4,RENT FROM PUBLIC
+shelter3,5,OTHER
+shelter3,99,NOT ANSWERED
+shelter3,101,NON=PARTICIPANT
+compute3,1,NO
+compute3,2,YES
+compute3,99,NOT ANSWERED
+compute3,101,NON-PARTICIPANT
+firearm3,1,NO
+firearm3,2,YES
+firearm3,99,NOT ANSWERED
+firearm3,101,NON-PARTICIPANT
+cycle3,1,NO
+cycle3,2,YES
+cycle3,99,NOT ANSWERED
+cycle3,101,NON-PARTICIPANT
+class3,1,UPPER CLASS
+class3,2,MIDDLE CLASS
+class3,3,WORKING CLASS
+class3,4,NONE
+class3,99,NOT ANSWERED
+class3,101,NON=PARTICIPANT
+locate3,1,RURAL/VILLAGE
+locate3,2,SMALL COUNTRY TOWN
+locate3,3,LARGER COUNTRY TOWN
+locate3,4,LARGE TOWN
+locate3,5,MAJOR CITY
+locate3,99,NOT ANSWERED
+locate3,101,NON-PARTICIPANT
+income3,1,LESS THAN  $5000
+income3,2,$5001 TO $10000
+income3,3,$10001 TO $15000
+income3,4,$15001 TO $20000
+income3,5,$20001 TO $25000
+income3,6,$25001 TO $30000
+income3,7,$30001 TO $35000
+income3,8,$35001 TO $40000
+income3,9,$40001 TO $45000
+income3,10,$45001 TO $50000
+income3,11,$50001 TO $60000
+income3,12,$60001 TO $70000
+income3,13,$70001 TO $80000
+income3,14,$80001 TO $90000
+income3,15,$90001 TO $100000
+income3,16,MORE THAN  $100000
+income3,99,NOT ANSWERED
+income3,101,NON-PARTICIPANT
+spousw3,1,WORKING FT FOR PAY
+spousw3,2,WORKING PT FOR PAY
+spousw3,3,UNEMPLOYED - LOOK FOR FT
+spousw3,4,UNEMPLOYED - LOOK FOR PT
+spousw3,5,RETIRED
+spousw3,6,AT SCHOOL OR UNI
+spousw3,7,KEEPING HOUSE
+spousw3,8,OTHER
+spousw3,99,NOT ANSWERED
+spousw3,101,NON-PARTICIPANT
+spoccup3,10,Managers and Administrators
+spoccup3,11,Generalist Managers
+spoccup3,12,Specialist Managers
+spoccup3,13,Farmers and Farm Managers
+spoccup3,20,Professionals
+spoccup3,21,"Science, Building and Engineering Professionals"
+spoccup3,22,Business and Information Professionals
+spoccup3,23,Health Professionals
+spoccup3,24,Education Professionals
+spoccup3,25,"Social, Arts and Miscellaneous Professionals"
+spoccup3,30,Associate Professionals
+spoccup3,31,"Science, Engineering and Related Associate Professionals"
+spoccup3,32,Business and Administration Associate Professionals
+spoccup3,33,Managing Supervisors (Sales and Service)
+spoccup3,34,Health and Welfare Associate Professionals
+spoccup3,39,Other Associate Professionals
+spoccup3,40,Tradespersons and Related Workers
+spoccup3,41,Mechanical and Fabrication Engineering Tradespersons
+spoccup3,42,Automotive Tradespersons
+spoccup3,43,Electrical and Electronics Tradespersons
+spoccup3,44,Construction Tradespersons
+spoccup3,45,Food Tradespersons
+spoccup3,46,Skilled Agricultural and Horticultural Workers
+spoccup3,49,Other Tradespersons and Related Workers
+spoccup3,50,Advanced Clerical and Service Workers
+spoccup3,51,Secretaries and Personal Assistants
+spoccup3,59,Other Advanced Clerical and Service Workers
+spoccup3,60,"Intermediate Clerical, Sales and Service Workers"
+spoccup3,61,Intermediate Clerical Workers
+spoccup3,62,Intermediate Sales and Related Workers
+spoccup3,63,Intermediate Service Workers
+spoccup3,70,Intermediate Production and Transport Workers
+spoccup3,71,Intermediate Plant Operators
+spoccup3,72,Intermediate Machine Operators
+spoccup3,73,Road and Rail Transport Drivers
+spoccup3,79,Other Intermediate Production and Transport Workers
+spoccup3,80,"Elementary Clerical, Sales and Service Workers"
+spoccup3,81,Elementary Clerks
+spoccup3,82,Elementary Sales Workers
+spoccup3,83,Elementary Service Workers
+spoccup3,84,Labourers and Related Workers
+spoccup3,85,Cleaners
+spoccup3,86,Factory Labourers
+spoccup3,87,Other Labourers and Related Workers
+spoccup3,88,Student
+spoccup3,96,Not in Labour Force
+spoccup3,97,Inadequately described
+spoccup3,99,Not answered
+spoccup3,100,Not applicable
+spoccup3,101,Non-participant
+semploy3,1,SELF-EMPLOYED
+semploy3,2,EMPLOYEE-PRIVATE COMPANY
+semploy3,3,EMPLOYEE-GOVERNMENT
+semploy3,4,EMPLOYEE-FAMILY BUSINESS
+semploy3,99,NOT ANSWERED
+spsuper3,1,NO
+spsuper3,2,YEST
+spsuper3,99,NOT ANSWERED
+spsuper3,101,NON-PARTICIPANT
+sptrade3,1,NO
+sptrade3,2,YES
+sptrade3,99,NOT ANSWERED
+sptrade3,101,NON-PARTICIPANT
+state3,1,New South Wales
+state3,2,Victoria
+state3,3,Queensland
+state3,4,South Australia
+state3,5,Western Australia
+state3,6,Tasmania
+state3,7,Aust. Capital Territory
+state3,8,Northern Territory
+state3,99,NOT ANSWERED
+elecdiv3,99,NOT ANSWERED
+elecdiv3,101,Banks
+elecdiv3,102,Barton
+elecdiv3,103,Bennelong
+elecdiv3,104,Berowra
+elecdiv3,105,Blaxland
+elecdiv3,106,Bradfield
+elecdiv3,107,Calare
+elecdiv3,108,Charlton
+elecdiv3,109,Chifley
+elecdiv3,110,Cook
+elecdiv3,111,Cowper
+elecdiv3,112,Cunningham
+elecdiv3,113,Dobell
+elecdiv3,114,Eden-Monaro
+elecdiv3,115,Farrer
+elecdiv3,116,Fowler
+elecdiv3,117,Gilmore
+elecdiv3,118,Grayndler
+elecdiv3,119,Greenway
+elecdiv3,120,Gwydir
+elecdiv3,121,Hughes
+elecdiv3,122,Hume
+elecdiv3,123,Hunter
+elecdiv3,124,Kingsford-Smith
+elecdiv3,125,Lindsay
+elecdiv3,126,Lowe
+elecdiv3,127,Lyne
+elecdiv3,128,Macarthur
+elecdiv3,129,Mackellar
+elecdiv3,130,Macquarie
+elecdiv3,131,Mitchell
+elecdiv3,132,New England
+elecdiv3,133,Newcastle
+elecdiv3,134,North Sydney
+elecdiv3,135,Page
+elecdiv3,136,Parkes
+elecdiv3,137,Parramatta
+elecdiv3,138,Paterson
+elecdiv3,139,Prospect
+elecdiv3,140,Reid
+elecdiv3,141,Richmond
+elecdiv3,142,Riverina
+elecdiv3,143,Robertson
+elecdiv3,144,Shortland
+elecdiv3,145,Sydney
+elecdiv3,146,Throsby
+elecdiv3,147,Warringah
+elecdiv3,148,Watson
+elecdiv3,149,Wentworth
+elecdiv3,150,Werriwa
+elecdiv3,201,Aston
+elecdiv3,202,Ballarat
+elecdiv3,203,Batman
+elecdiv3,204,Bendigo
+elecdiv3,205,Bruce
+elecdiv3,206,Burke
+elecdiv3,207,Calwell
+elecdiv3,208,Casey
+elecdiv3,209,Chisholm
+elecdiv3,210,Corangamite
+elecdiv3,211,Corio
+elecdiv3,212,Deakin
+elecdiv3,213,Dunkley
+elecdiv3,214,Flinders
+elecdiv3,215,Gellibrand
+elecdiv3,216,Gippsland
+elecdiv3,217,Goldstein
+elecdiv3,218,Higgins
+elecdiv3,219,Holt
+elecdiv3,220,Hotham
+elecdiv3,221,Indi
+elecdiv3,222,Isaacs
+elecdiv3,223,Jagajaga
+elecdiv3,224,Kooyong
+elecdiv3,225,La Trobe
+elecdiv3,226,Lalor
+elecdiv3,227,Mallee
+elecdiv3,228,Maribyrnong
+elecdiv3,229,McEwen
+elecdiv3,230,McMillan
+elecdiv3,231,Melbourne
+elecdiv3,232,Melbourne Ports
+elecdiv3,233,Menzies
+elecdiv3,234,Murray
+elecdiv3,235,Scullin
+elecdiv3,236,Wannon
+elecdiv3,237,Wills
+elecdiv3,301,Blair
+elecdiv3,302,Bowman
+elecdiv3,303,Brisbane
+elecdiv3,304,Capricornia
+elecdiv3,305,Dawson
+elecdiv3,306,Dickson
+elecdiv3,307,Fadden
+elecdiv3,308,Fairfax
+elecdiv3,309,Fisher
+elecdiv3,310,Forde
+elecdiv3,311,Griffith
+elecdiv3,312,Groom
+elecdiv3,313,Herbert
+elecdiv3,314,Hinkler
+elecdiv3,315,Kennedy
+elecdiv3,316,Leichardt
+elecdiv3,317,Lilley
+elecdiv3,318,Longman
+elecdiv3,319,Maranoa
+elecdiv3,320,McPherson
+elecdiv3,321,Moncrieff
+elecdiv3,322,Moreton
+elecdiv3,323,Oxley
+elecdiv3,324,Petrie
+elecdiv3,325,Rankin
+elecdiv3,326,Ryan
+elecdiv3,327,Wide Bay
+elecdiv3,401,Adelaide
+elecdiv3,402,Barker
+elecdiv3,403,Bonython
+elecdiv3,404,Boothby
+elecdiv3,405,Grey
+elecdiv3,406,Hindmarsh
+elecdiv3,407,Kingston
+elecdiv3,408,Makin
+elecdiv3,409,Mayo
+elecdiv3,410,Port Adelaide
+elecdiv3,411,Sturt
+elecdiv3,412,Wakefield
+elecdiv3,501,Brand
+elecdiv3,502,Canning
+elecdiv3,503,Cowan
+elecdiv3,504,Curtin
+elecdiv3,505,Forrest
+elecdiv3,506,Fremantle
+elecdiv3,507,Kalgoorlie
+elecdiv3,508,Moore
+elecdiv3,509,O'Connor
+elecdiv3,510,Pearce
+elecdiv3,511,Perth
+elecdiv3,512,Stirling
+elecdiv3,513,Swan
+elecdiv3,514,Tangney
+elecdiv3,601,Bass
+elecdiv3,602,Braddon
+elecdiv3,603,Denison
+elecdiv3,604,Franklin
+elecdiv3,605,Lyons
+elecdiv3,701,Canberra
+elecdiv3,702,Fraser
+elecdiv3,801,Northern Territory
+region3,1,Inner Metropolitan
+region3,2,Outer Metropolitan
+region3,3,Provincial
+region3,4,Rural
+region3,99,NOT ANSWERED
+filter_$,0,Not Selected
+filter_$,1,Selected
+approve1r,0,No
+approve1r,1,Yes
+chfirstopt1t2,0,"1->1, 2->2, 3->3"
+chfirstopt1t2,0.16,1->3
+chfirstopt1t2,0.32,2->3
+chfirstopt1t2,0.48,1->2
+chfirstopt1t2,0.64,3->2
+chfirstopt1t2,0.8,2->1
+chfirstopt1t2,0.96,3->1
+cocht1t2,-1,Yes to No
+cocht1t2,0,"Yes to Yes, No to No"
+cocht1t2,1,No to Yes
+chvtt1t2,1,Yes to Yes
+chvtt1t2,2,Yes to No
+chvtt1t2,3,No to Yes
+chvtt1t2,4,No to No
