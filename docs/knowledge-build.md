@@ -226,7 +226,7 @@ is an investigation trigger; do not update the benchmark to make it pass.
 
 The current increment writes
 `output/polardata/uk-health-1998.parquet`: 230 rows, one per UK Health
-respondent in the reviewed participant survey, with 47 columns. This is a
+respondent in the reviewed participant survey, with 73 columns. This is a
 partial reconstruction, not a complete UK Health record or full `polardata`.
 No downstream consumer reads it yet. Historical benchmarks, canonical knowledge
 tables and linkage outputs remain unchanged.
@@ -266,7 +266,7 @@ without being endorsed or corrected. The supplied survey is already a merged
 participant file; reconstructing its earlier field-file merge remains unfinished.
 
 The comparison joins on unique `caseid` within dpnum 2 and requires the same 230
-IDs on both sides. No unmatched or duplicated IDs are allowed. All 45 reconstructed non-key
+IDs on both sides. No unmatched or duplicated IDs are allowed. All 71 reconstructed non-key
 columns must have identical missingness and values within absolute tolerance
 `1e-10` before an output is written. `audit/polardata_parity.csv` records counts,
 missingness differences, numerical differences and maximum absolute error for
@@ -274,7 +274,7 @@ each field. The benchmark is read only for this check; it supplies no rebuilt
 values. A Parquet round trip must preserve values and types exactly.
 
 
-The remaining 23 reconstructed fields preserve these historical definitions:
+The 23 demographic and attitude-summary fields preserve these historical definitions:
 
 | Fields | Sources and definitions |
 |---|---|
@@ -299,7 +299,49 @@ group. There are 15 groups with 13–17 respondents each. The codebook's A1/A2,
 B11/B17/B18 and Q18/Q23 items, the V6 index memo, the poll script, and merge
 scripts 03/05/06 establish the definitions and assignment order. Issues UKH-07–10
 record the retained index inventory, differing income thresholds, attitude-summary
-versions and the pending knowledge-precision question. This output replaces the
+versions and the knowledge-precision question. This output replaces the
 initial attitudes-only partial file; no old values are dropped or revised.
-Knowledge measures, their group summaries, entropy, generalized variance and
-remaining poll descriptors are still outside this partial reconstruction.
+Entropy, generalized variance and remaining poll descriptors are still outside
+this partial reconstruction.
+
+
+The next 26 fields reproduce historical knowledge and peer quantities from the
+six raw Q9A–F responses. Keys are false/true/true/false/false/false (numeric
+0/1/1/0/0/0) in both waves. Raw -9/-8/-1 and system missing score zero, preserving
+the original six-item denominator. Other codes stop the build. These keys match
+all stored correctness fields after the historical missing-to-zero conversion;
+the Q9E printed-codebook conflict remains unresolved under UKH-12.
+
+| Fields | Historical definition |
+|---|---|
+| t1know, t2know | Proportion correct among all six items in the respective wave |
+| t1knowcor | Mean of itemwise T1-correct × T2-correct; uses departure answers to revise baseline correctness |
+| grpgain | Across items not correct under that joint-wave rule, mean of other group members' joint-wave correctness; missing when no such items remain |
+| meant1know, meant2know, meant1knowcor | Group means of the corresponding respondent scores, including zero-filled answers |
+| meant1know_ind, meant1knowcor_ind | (group mean × group size - own score)/(group size - 1) |
+| t1knowlevel | Poll mean after rounding individual T1 scores to two decimals and converting to 32-bit floating point, reproducing stored hknow1 exactly (UKH-10) |
+| t1knowlevelcor, t2knowlevel | Poll means of unrounded t1knowcor and t2know |
+| knowgain, knowgain2 | t2know minus t1know, or minus t1knowcor |
+| logpk, loggain | Natural log of t1knowcor or grpgain, replacing only nonpositive values with .0001; preserve missing values |
+| tobitpk | Numeric indicator t1knowcor > .6 |
+| t1knowr, t2knowr, t1knowrcor, grpgainr | Historical UK Health aliases of t1know, t2know, t1knowcor and grpgain |
+| meant1knowr, meant1knowrcor, t1knowlevelrcor | Aliases of the corresponding means without r |
+| knowgainr, knowgainr2 | Aliases of knowgain and knowgain2 |
+
+All 26 columns are doubles. The peer calculation follows `groupgain()` in the
+archived `hlmFunc.R`, then its normalization in `03_data.R`. For a respondent
+with an incorrect joint-wave answer, their contribution to that item's group
+correctness sum is zero; dividing that sum by group size minus one therefore
+excludes self. Averaging across only that person's incorrect joint-wave items
+reproduces the merged `grpgain`. Twelve people have no such items and retain a
+missing gain; fourteen have observed zero gains. No gain is imputed for a missing
+denominator. UKH-11 records the interpretation and post-wave dependence.
+
+Neither the aggregate nor stored survey scores/correctness fields supply these
+rebuilt values. Tests remove the stored fields and require unchanged results,
+check correctness against the archived fields separately, and verify all 230
+reconstructed rounded scores against stored `hknow1`. The 32-bit conversion
+reproduces the observed numeric representation; the original command that created
+that representation remains unverified. Numeric parity does not adjudicate the
+answer-key conflict or justify treating an adjusted score as a baseline-only
+measure. Those investigations remain separate from reproduction.

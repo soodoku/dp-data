@@ -379,7 +379,8 @@ and missing-component denominators. Historical summaries remain unchanged.
 
 ### UKH-10: Poll-level and respondent-level knowledge have different precision
 
-**Status:** preserve / investigate before extending the knowledge reconstruction.
+**Status:** numerical representation reproduced; preserve / review the intended
+precision and original generating command.
 
 The archived poll script sets `t1knowlevel <- mean(hknow1)`, using the survey's
 stored score, but separately computes respondent `t1know` from six correctness
@@ -394,7 +395,98 @@ not proof that display rounding caused every underlying value difference.
 score distributions; recover the score-generation and export precision rules.
 Determine whether the poll mean deliberately used a published rounded measure.
 Do not replace it with the mean of reconstructed individual scores solely because
-that is convenient. This field is not yet included in the partial reconstruction.
+that is convenient.
+
+**Reconstruction follow-up:** rounding the six-item raw-answer T1 score to two
+decimals, then representing it as a 32-bit floating-point value, matches all 230
+stored `hknow1` values exactly. Rounding alone leaves maximum error
+`1.66893e-8`. Averaging the reproduced representation matches `t1knowlevel`
+within `4.5e-16`. The codebook summary also prints the seven rounded values
+0/.17/.33/.50/.67/.83/1. This establishes a source-only numerical reconstruction,
+now implemented, but does not establish which original command or export step
+introduced the precision. The input key remains subject to UKH-12.
+
+### UKH-11: Adjusted baseline knowledge and peer scores use departure answers
+
+**Status:** preserve / review interpretation; the adjustment is explicit in the
+original code, not a newly discovered accidental multiplication.
+
+The [poll script](../vault/cdd/scripts/uk_health.R) labels a guessing adjustment:
+a T1-correct/T2-incorrect answer becomes incorrect at T1. It computes itemwise
+`T1 correct * T2 correct`, then averages all six items as `t1knowcor`.
+The [helper](../vault/cdd/scripts/hlmFunc.R) and
+[merge](../vault/cdd/merge_data_scripts/03_data.R) use the same jointly correct
+items to compute and normalize `grpgain`. No new adjustment is introduced here.
+
+There are 104 correct-to-incorrect item transitions across 74 people. The mean
+baseline score falls from 0.6579710145 to 0.5826086957 under the documented rule.
+Mean unadjusted gain is 0.0789855072; mean adjusted gain is 0.1543478261.
+Unadjusted gain is negative for 45 people; adjusted gain is nonnegative by
+construction because `T1 correct * T2 correct <= T2 correct` item by item.
+These are properties of the measurement definition, not evidence of a treatment
+effect or a determination that the adjustment is inappropriate.
+
+`grpgain` is the mean of other group members' jointly correct responses over
+items the focal person did not answer correctly under the joint-wave rule.
+It is not a realized before/after change in the group's average score.
+Twelve respondents have all six jointly correct answers, making the normalized
+denominator zero; the historical export has missing `grpgain` and `loggain`
+for them. Fourteen have observed zero `grpgain`. The log transformation replaces
+these zeros with .0001 before taking logs; 13 zero adjusted-baseline scores
+receive the analogous treatment in `logpk`.
+
+**Missingness:** 184 T1 item responses across 99 people and 151 T2 responses
+across 70 people are nonresponse or system missing and are scored zero in this
+historical definition. Two respondents (source IDs 3809 and 4307) have all six
+T2 raw answers system missing, yet their scores remain zero in the 230-person
+universe. Establishing whether these represent absent interviews needs the wave
+roster; all-missing answers alone do not settle the reason.
+
+**Before changing:** recover the authors' guessing/forgetting rationale and the
+paper's definitions. Check whether any model treats `t1knowcor` or its peer
+counterpart as information measured only before deliberation; both depend on
+T2. Assess nonresponse, interview absence, zero-denominator selection and log
+replacement separately. Compare downstream samples and estimates under explicit
+alternatives, retaining the original definition until that review is complete.
+
+### UKH-12: Breast-screening correctness conflicts across source versions
+
+**Status:** preserve / investigate source and key versions; no rekeying authorized.
+
+Codebook Q9E asks whether all British women can get free breast cancer screening
+on the NHS. The printed T1 `SOPHE1` table has 669 true and 181 false responses;
+its `ANSWERE1` table counts 669 correct. The printed T2 tables similarly count
+125 true responses and 125 correct. Thus those printed correctness counts align
+with true as the key, for samples of 955 initially and 231 at departure.
+
+The actual 230-person `britishhealth.sav` used by the historical aggregate and
+published as `data/uk-health-1998/survey.sav` labels the correctness fields
+0 incorrect / 1 correct and instead codes **false** as correct in both waves.
+Cross-tabs of raw answer against stored correctness show:
+
+| Wave | False, scored correct | True, scored incorrect | Nonresponse/system missing |
+|---|---:|---:|---:|
+| T1 | 43 | 164 | 23 |
+| T2 | 85 | 124 | 21 |
+
+This is more than the different total sample counts: the mapping from raw answer
+to correctness differs. The preserved key reproduces every stored correctness
+field (with missing scored zero), the deposited battery and historical scores.
+A diagnostic rekey to true would change the six-item score for 207 T1 and 209
+T2 respondents. Means would move from 0.6579710145 to 0.7456521739 at T1 and
+from 0.7369565217 to 0.7652173913 at T2. Those are hypothetical score differences,
+not corrected results; adjusted scores and downstream models have not been
+re-estimated under that candidate.
+
+**Before changing:** recover the fielded wording, contemporaneous briefing and
+screening-eligibility information, codebook revision dates and original key
+syntax. Determine whether the printed tables contain an error, the key was
+subsequently revised, or the documents describe different question versions.
+Another visible codebook anomaly labels both ANSWERB1 categories with code 0;
+this cautions against treating a printed table as an infallible executed key.
+Neither the historical stored key nor the printed key should prevail solely
+because it reproduces a convenient benchmark. Preserve false for reproduction
+until independent source evidence and numerical consequences are assessed.
 
 ## UK Crime 1994 — uk-crime-1994
 

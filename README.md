@@ -41,9 +41,8 @@ choices from unresolved concerns and existing upstream differences; this review
 preserves current scores pending instrument-level verification.
 
 The first historical aggregate reconstruction is available with `make polardata`: it
-rebuilds 45 UK Health attitude, demographic and group-summary fields for 230
-respondents from survey answers,
-with person-level parity checks. See the [reconstruction contract](docs/knowledge-build.md#historical-aggregate-reconstruction).
+rebuilds 71 UK Health attitude, demographic, knowledge and group-summary fields
+for 230 respondents from survey answers, with person-level parity checks. See the [reconstruction contract](docs/knowledge-build.md#historical-aggregate-reconstruction).
 This partial output preserves historical recodes and does not replace downstream
 inputs.
 

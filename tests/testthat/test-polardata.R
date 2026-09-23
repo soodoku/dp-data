@@ -7,11 +7,11 @@ health_reference <- function() {
   )
 }
 
-test_that("UK Health raw answers reproduce all 45 reconstructed fields", {
+test_that("UK Health raw answers reproduce all 71 reconstructed fields", {
   rebuilt <- build_health_polardata()
   parity <- compare_health_polardata(rebuilt, health_reference())
-  expect_equal(dim(rebuilt), c(230L, 47L))
-  expect_equal(nrow(parity), 45L)
+  expect_equal(dim(rebuilt), c(230L, 73L))
+  expect_equal(nrow(parity), 71L)
   expect_true(all(parity$missingness_differences == 0L))
   expect_true(all(parity$value_differences == 0L))
   path <- tempfile(fileext = ".parquet")
@@ -23,7 +23,7 @@ test_that("UK Health raw answers reproduce all 45 reconstructed fields", {
 test_that("stored indices cannot supply the reconstruction", {
   survey <- read_poll_survey("uk-health-1998")
   expected <- build_health_polardata(survey)
-  derived <- grep("^t[12]", names(survey), value = TRUE)
+  derived <- grep("^(t[12]|hknow|answer)", names(survey), value = TRUE)
   expect_gt(length(derived), 0L)
   survey[derived] <- NULL
   expect_identical(build_health_polardata(survey), expected)
@@ -83,5 +83,48 @@ test_that("historical summary vintages remain distinct", {
   expect_error(compare_health_polardata(incomplete, health_reference()))
   changed <- rebuilt
   changed$educ4[1] <- .123
+  expect_error(compare_health_polardata(changed, health_reference()), "differs")
+})
+
+
+test_that("raw knowledge keys reproduce stored correctness and precision", {
+  survey <- read_poll_survey("uk-health-1998")
+  for (wave in 1:2) {
+    scores <- historical_health_items(survey, wave)
+    stored <- vapply(letters[1:6], function(item) {
+      value <- as.numeric(survey[[paste0("answer", item, wave)]])
+      value[is.na(value)] <- 0
+      value
+    }, numeric(nrow(survey)))
+    expect_identical(scores, stored)
+  }
+  before <- rowMeans(historical_health_items(survey, 1L))
+  expect_identical(
+    historical_health_precision(before), as.numeric(survey$hknow1)
+  )
+  survey$sopha1 <- rep(999, nrow(survey))
+  expect_error(historical_health_items(survey, 1L), "Unreviewed")
+})
+
+test_that("group gain conditions on unknown items and excludes self", {
+  corrected <- rbind(c(1, 0), c(0, 0), c(1, 1))
+  expect_equal(historical_group_gain(corrected, rep(1, 3)), c(.5, .75, NA))
+  expect_error(historical_group_gain(corrected, 1:3))
+  expect_error(historical_group_gain(corrected, c(1, NA, 1)))
+  corrected[1, 1] <- NA_real_
+  expect_error(historical_group_gain(corrected, rep(1, 3)))
+})
+
+test_that("knowledge transformations preserve missing and zero cases", {
+  rebuilt <- build_health_polardata()
+  expect_identical(is.na(rebuilt$grpgain), rebuilt$t1knowcor == 1)
+  expect_true(all(rebuilt$knowgain2 >= 0))
+  expect_true(all(rebuilt$t1knowcor <= rebuilt$t1know))
+  expect_equal(
+    historical_log_score(c(0, .00005, 1, NA)),
+    c(log(.0001), log(.00005), 0, NA)
+  )
+  changed <- rebuilt
+  changed$t1knowlevel <- mean(changed$t1know)
   expect_error(compare_health_polardata(changed, health_reference()), "differs")
 })

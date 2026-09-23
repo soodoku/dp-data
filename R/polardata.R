@@ -61,7 +61,8 @@ build_health_polardata <- function(
     names(indices) <- paste0("ukhealth.t", wave, names(indices))
     result <- dplyr::bind_cols(result, tibble::as_tibble(indices))
   }
-  health_polardata_demographics(result, survey)
+  result <- health_polardata_demographics(result, survey)
+  health_polardata_knowledge(result, survey)
 }
 
 health_polardata_demographics <- function(result, survey) {
@@ -120,6 +121,93 @@ health_polardata_demographics <- function(result, survey) {
   result
 }
 
+historical_health_items <- function(survey, wave) {
+  key <- c(a = 0, b = 1, c = 1, d = 0, e = 0, f = 0)
+  vapply(names(key), function(item) {
+    field <- paste0("soph", item, wave)
+    if (!field %in% names(survey)) stop("Missing source field: ", field)
+    value <- as.numeric(survey[[field]])
+    if (any(!is.na(value) & !value %in% c(-9, -8, -1, 0, 1))) {
+      stop("Unreviewed UK Health knowledge code: ", field)
+    }
+    as.numeric(value %in% key[[item]])
+  }, numeric(nrow(survey)))
+}
+
+historical_group_gain <- function(corrected, group) {
+  stopifnot(
+    is.matrix(corrected), nrow(corrected) == length(group),
+    ncol(corrected) > 0L, !anyNA(group), all(corrected %in% c(0, 1))
+  )
+  size <- ave(rep(1, length(group)), group, FUN = sum)
+  stopifnot(all(size > 1))
+  peer_means <- apply(corrected, 2, function(value) {
+    ave(value, group, FUN = mean) * size / (size - 1)
+  })
+  unknown <- 1 - corrected
+  gain <- rowSums(unknown * peer_means) / rowSums(unknown)
+  gain[is.nan(gain)] <- NA_real_
+  gain
+}
+
+historical_log_score <- function(value) {
+  value[!is.na(value) & value <= 0] <- .0001
+  log(value)
+}
+
+historical_health_precision <- function(value) {
+  # This numeric representation matches every stored hknow1 value (UKH-10).
+  bytes <- writeBin(round(value, 2), raw(), size = 4)
+  readBin(bytes, what = "double", n = length(value), size = 4)
+}
+
+health_polardata_knowledge <- function(result, survey) {
+  before <- historical_health_items(survey, 1L)
+  after <- historical_health_items(survey, 2L)
+  corrected <- before * after
+  group_mean <- function(value) ave(value, result$pollgroup, FUN = mean)
+  result$t1know <- rowMeans(before)
+  result$t2know <- rowMeans(after)
+  result$t1knowcor <- rowMeans(corrected)
+  result$grpgain <- historical_group_gain(corrected, result$pollgroup)
+  result$meant1know <- group_mean(result$t1know)
+  result$meant2know <- group_mean(result$t2know)
+  result$meant1knowcor <- group_mean(result$t1knowcor)
+  result$t1knowlevel <- mean(historical_health_precision(result$t1know))
+  result$t1knowlevelcor <- mean(result$t1knowcor)
+  result$t2knowlevel <- mean(result$t2know)
+  result$meant1know_ind <- (
+    result$meant1know * result$groupsize - result$t1know
+  ) / (result$groupsize - 1)
+  result$meant1knowcor_ind <- (
+    result$meant1knowcor * result$groupsize - result$t1knowcor
+  ) / (result$groupsize - 1)
+  result$knowgain <- result$t2know - result$t1know
+  result$knowgain2 <- result$t2know - result$t1knowcor
+  result$logpk <- historical_log_score(result$t1knowcor)
+  result$loggain <- historical_log_score(result$grpgain)
+  result$tobitpk <- as.numeric(result$t1knowcor > .6)
+  aliases <- c(
+    t1knowr = "t1know", t2knowr = "t2know", t1knowrcor = "t1knowcor",
+    grpgainr = "grpgain", meant1knowr = "meant1know",
+    meant1knowrcor = "meant1knowcor", t1knowlevelrcor = "t1knowlevelcor",
+    knowgainr = "knowgain", knowgainr2 = "knowgain2"
+  )
+  for (name in names(aliases)) result[[name]] <- result[[aliases[[name]]]]
+  result
+}
+
+health_knowledge_fields <- function() {
+  c(
+    "t1know", "t2know", "t1knowcor", "grpgain", "meant1know", "meant2know",
+    "meant1knowcor", "t1knowlevel", "t1knowlevelcor", "t2knowlevel",
+    "meant1know_ind", "meant1knowcor_ind", "knowgain", "knowgain2", "logpk",
+    "loggain", "tobitpk", "t1knowr", "t2knowr", "t1knowrcor", "grpgainr",
+    "meant1knowr", "meant1knowrcor", "t1knowlevelrcor",
+    "knowgainr", "knowgainr2"
+  )
+}
+
 health_polardata_fields <- function() {
   attitudes <- unlist(lapply(1:2, function(wave) {
     paste0("ukhealth.t", wave, c(
@@ -130,7 +218,8 @@ health_polardata_fields <- function() {
   c(attitudes, "female", "minority", "ppage", "educ4", "educ3", "bettered",
     "hhincome", "highinc", "pollgroup", "groupsize", "pfemale", "pminority",
     "varfemale", "sdfemale", "vareduc", "sdeduc", "meaned", "meanage",
-    "phighinc", "pfemale_ind", "attextreme", "meanxtreme", "avgsd"
+    "phighinc", "pfemale_ind", "attextreme", "meanxtreme", "avgsd",
+    health_knowledge_fields()
   )
 }
 
