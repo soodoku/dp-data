@@ -1,0 +1,1098 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+pollid,double,numeric,,,%9.0g,,,TRUE,Retained
+pollgroup,double,numeric,,,%9.0g,,,TRUE,Retained
+country,double,numeric,,,%9.0g,,,TRUE,Retained
+mode,double,numeric,,,%9.0g,,,TRUE,Retained
+t1knowlevel,double,numeric,,,%9.0g,,,TRUE,Retained
+numitems,double,numeric,,,%9.0g,,,TRUE,Retained
+group,double,numeric,,,%9.0g,,,TRUE,Retained
+groupsize,double,numeric,,,%9.0g,,,TRUE,Retained
+pfemale,double,numeric,,,%9.0g,,,TRUE,Retained
+pwhite,double,numeric,,,%9.0g,,,TRUE,Retained
+pminority,double,numeric,,,%9.0g,,,TRUE,Retained
+phighknow,double,numeric,,,%9.0g,,,TRUE,Retained
+phigheduc,double,numeric,,,%9.0g,,,TRUE,Retained
+meant1know,double,numeric,,,%9.0g,,,TRUE,Retained
+meant2know,double,numeric,,,%9.0g,,,TRUE,Retained
+t1know,double,numeric,,,%9.0g,,,TRUE,Retained
+t2know,double,numeric,,,%9.0g,,,TRUE,Retained
+age,double,numeric,,,%9.0g,,,TRUE,Retained
+female,double,numeric,,,%9.0g,,,TRUE,Retained
+minority,double,numeric,,,%9.0g,,,TRUE,Retained
+educ4,double,numeric,,,%9.0g,,,TRUE,Retained
+ppeducat,double,haven_labelled|vctrs_vctr|double,,education (categorical),%8.0g,,,TRUE,Retained
+hhincome,double,numeric,,,%9.0g,,,TRUE,Retained
+ppincimp,double,haven_labelled|vctrs_vctr|double,,hh income (profile and imputed),%8.0g,,,TRUE,Retained
+sqrtavgvar,double,numeric,,,%9.0g,,,TRUE,Retained
+caseid_original,double,numeric,,case identification number,%8.0g,,,TRUE,Retained
+dop1,double,haven_labelled|vctrs_vctr|double,,jan 2003 session participant,%8.0g,,,TRUE,Retained
+dop2,double,haven_labelled|vctrs_vctr|double,,sept 2003 session participant,%8.0g,,,TRUE,Retained
+dop3,double,haven_labelled|vctrs_vctr|double,,january 2004 session participant,%8.0g,,,TRUE,Retained
+dop4,double,haven_labelled|vctrs_vctr|double,,sept 2004 session participant,%8.0g,,,TRUE,Retained
+dop1pct,double,haven_labelled|vctrs_vctr|double,,dop1 participation level  (sessions attended #/total # of sessions [8]),%9.0g,,,TRUE,Retained
+dop2pct,double,haven_labelled|vctrs_vctr|double,,participation level  (sessions attended #/total # of sessions [3]),%9.0g,,,TRUE,Retained
+dop3pct,double,haven_labelled|vctrs_vctr|double,,participation level  (sessions attended #/total # of sessions [5]),%9.0g,,,TRUE,Retained
+dop4pct,double,haven_labelled|vctrs_vctr|double,,participation level  (sessions attended #/total # of sessions [5]),%9.0g,,,TRUE,Retained
+dop1_no,double,haven_labelled|vctrs_vctr|double,,number of dop 1 sessions,%8.0g,,,TRUE,Retained
+dop2_no,double,haven_labelled|vctrs_vctr|double,,number of dop 2 sessions,%8.0g,,,TRUE,Retained
+dop3_no,double,haven_labelled|vctrs_vctr|double,,number of dop 3 sessions,%8.0g,,,TRUE,Retained
+dop4_no,double,haven_labelled|vctrs_vctr|double,,number of dop 4 sessions,%8.0g,,,TRUE,Retained
+w4allstr,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  wave iii strata versus wave iv strata (indicating treatment),%8.0g,,,TRUE,Retained
+dopever,double,haven_labelled|vctrs_vctr|double,,"dop participant status across waves (0=never a dop participant, 1=dop participan",%8.0g,,,TRUE,Retained
+w1serial,double,numeric,,w1 baseline. w2serial. case identification number,%8.0g,,,TRUE,Retained
+w2serial,double,numeric,,w2 baseline. w2serial. case identification number,%8.0g,,,TRUE,Retained
+w3serial,double,haven_labelled|vctrs_vctr|double,,w3 baseline. w3serial. case identification number,%8.0g,,,TRUE,Retained
+w4serial,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  case identification number,%8.0g,,,TRUE,Retained
+w1bdtst,double,haven_labelled|vctrs_vctr|double,,w1 baseline. w1bdtst. date interview started,%12.0g,,,TRUE,Retained
+w1btmst,double,haven_labelled|vctrs_vctr|double,,w1 baseline. w1btmst. time interview started,%12.0g,,,TRUE,Retained
+w1bdtend,double,haven_labelled|vctrs_vctr|double,,w1 baseline. w1bdtend. date interview ended,%12.0g,,,TRUE,Retained
+w1tmend,double,haven_labelled|vctrs_vctr|double,,w1 baseline. w1tmend. time interview ended,%12.0g,,,TRUE,Retained
+w1bdur,double,haven_labelled|vctrs_vctr|double,,w1 baseline. w1bdur. duration of interview in minutes (baseline),%8.0g,,,TRUE,Retained
+w1bres,double,haven_labelled|vctrs_vctr|double,,w1 baseline. w1bres. interview type (baseline),%8.0g,,,TRUE,Retained
+w1a_stdt,double,haven_labelled|vctrs_vctr|double,,wave 1a. date interview started,%12.0g,,,TRUE,Retained
+w1a_sttm,double,haven_labelled|vctrs_vctr|double,,wave 1a. time interview started,%12.0g,,,TRUE,Retained
+w1a_endt,double,haven_labelled|vctrs_vctr|double,,wave 1a. date interview ended,%12.0g,,,TRUE,Retained
+w1a_entm,double,haven_labelled|vctrs_vctr|double,,wave 1a. time interview ended,%12.0g,,,TRUE,Retained
+w1a_dur,double,haven_labelled|vctrs_vctr|double,,wave 1a. duration of interview in minutes,%8.0g,,,TRUE,Retained
+w1a_res,double,haven_labelled|vctrs_vctr|double,,wave 1a. interview type,%8.0g,,,TRUE,Retained
+w1a_q1,double,haven_labelled|vctrs_vctr|double,,wave 1a. most political issues are so complicated that a person like me can't re,%8.0g,,,TRUE,Retained
+w1a_q2,double,haven_labelled|vctrs_vctr|double,,wave 1a. because most people don't really know much about what's happening in th,%8.0g,,,TRUE,Retained
+w2bdtst,double,haven_labelled|vctrs_vctr|double,,w2 baseline. w2bdtst. date interview started,%12.0g,,,TRUE,Retained
+w2btmst,double,haven_labelled|vctrs_vctr|double,,w2 baseline. w2btmst. time interview started,%12.0g,,,TRUE,Retained
+w2bdtend,double,haven_labelled|vctrs_vctr|double,,w2 baseline. w2bdtend. date interview ended,%12.0g,,,TRUE,Retained
+w2btmend,double,haven_labelled|vctrs_vctr|double,,w2 baseline. w2btmend. time interview ended,%12.0g,,,TRUE,Retained
+w2bdur,double,haven_labelled|vctrs_vctr|double,,w2 baseline. w2bdur. duration of interview in minutes,%9.0g,,,TRUE,Retained
+w2bdurct,double,haven_labelled|vctrs_vctr|double,,w2 baseline. w2bdurct. duration of interview (categorized in 5-minute intervals),%8.0g,,,TRUE,Retained
+w3jan03,double,haven_labelled|vctrs_vctr|double,,w3 baseline. w3jan03. dop january 2003 participant,%8.0g,,,TRUE,Retained
+w3sep03,double,haven_labelled|vctrs_vctr|double,,w3 baseline. w3sep03. dop september 2003 participant,%8.0g,,,TRUE,Retained
+w3jan03s,double,haven_labelled|vctrs_vctr|double,,w3 baseline. w3jan03s. strata - dop jan 2003,%8.0g,,,TRUE,Retained
+w3compf1,double,haven_labelled|vctrs_vctr|double,,w3 baseline. w3compf1. completed feb follow up survey - experimental and control,%8.0g,,,TRUE,Retained
+w3bdst,double,haven_labelled|vctrs_vctr|double,,w3 baseline. w3bdst. date interview started,%12.0g,,,TRUE,Retained
+w3btst,double,haven_labelled|vctrs_vctr|double,,w3 baseline. w3btst. time interview started,%12.0g,,,TRUE,Retained
+w3bdend,double,haven_labelled|vctrs_vctr|double,,w3 baseline. w3bdend. date interview ended,%12.0g,,,TRUE,Retained
+w3btend,double,haven_labelled|vctrs_vctr|double,,w3 baseline. w3btend. time interview ended,%12.0g,,,TRUE,Retained
+w3bdur,double,haven_labelled|vctrs_vctr|double,,w3 baseline. w3bdur. duration of interview in minutes,%9.0g,,,TRUE,Retained
+w3bdurct,double,haven_labelled|vctrs_vctr|double,,w3 baseline. w3bdurct. duration of interview (categorized in 5-minute intervals),%8.0g,,,TRUE,Retained
+w4comsta,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  completion status,%8.0g,,,TRUE,Retained
+w4bstart,double,Date,,w4 baseline.  start date and time of interview,%dD_m_Y,,,TRUE,Retained
+w4bend,double,Date,,w4 baseline.  end date and time of interview,%dD_m_Y,,,TRUE,Retained
+w4bdur,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  duration of interview in minutes,%9.0g,,,TRUE,Retained
+w4bres,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  interview type,%8.0g,,,TRUE,Retained
+w4b1,double,haven_labelled|vctrs_vctr|double,,"w4 baseline.  q1:first of all, how likely are you to vote in the presidential el",%8.0g,,,TRUE,Retained
+w4b2,double,haven_labelled|vctrs_vctr|double,,"w4 baseline.  q2:assuming you vote, how would you expect to vote? would you vote",%8.0g,,,TRUE,Retained
+w4b3,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q3:how sure are you of that choice? would you say you are...,%8.0g,,,TRUE,Retained
+w4b4,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q4:we must not hesitate to invade other countries when we think th,%8.0g,,,TRUE,Retained
+w4b5,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q5:we must not hesitate to invade other countries that pose a seri,%8.0g,,,TRUE,Retained
+w4b6,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q6:the u.s. should be willing to intervene in the affairs of other,%8.0g,,,TRUE,Retained
+w4b7,double,haven_labelled|vctrs_vctr|double,,"w4 baseline.  q7:by the time we leave iraq, the results will have been worth the",%8.0g,,,TRUE,Retained
+w4b8,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q8:the war in iraq has gotten in the way of the war on terror. wou,%8.0g,,,TRUE,Retained
+w4b9,double,haven_labelled|vctrs_vctr|double,,"w4 baseline.  q9:next, how much, on the whole, would you say that the war with i",%8.0g,,,TRUE,Retained
+w4b10,double,haven_labelled|vctrs_vctr|double,,"w4 baseline.  q10:and how much, on the whole, would you say the war with iraq ha",%8.0g,,,TRUE,Retained
+w4b11,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q11:how successful or unsuccessful would you say the u.s. has been,%8.0g,,,TRUE,Retained
+w4b12,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q12:and how about afghanistan? how successful or unsuccessful woul,%8.0g,,,TRUE,Retained
+w4b13,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q13:protecting existing american jobs and industries is more impor,%8.0g,,,TRUE,Retained
+w4b14,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q14:the u.s. should actively pursue more free trade agreements lik,%8.0g,,,TRUE,Retained
+w4b15,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q15:american companies should be penalized for moving jobs to othe,%8.0g,,,TRUE,Retained
+w4b16,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q16:the bush administration tax cuts should be made permanent. wou,%8.0g,,,TRUE,Retained
+w4b17,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q17:the bush administration's tax cuts have helped most taxpayers.,%8.0g,,,TRUE,Retained
+w4b18,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q18:the bush administration's tax cuts have made the federal defic,%8.0g,,,TRUE,Retained
+w4b19,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q19:the bush administrations tax cuts have stimulated the economy.,%8.0g,,,TRUE,Retained
+w4b20,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q20:the bush administration tax cuts have mainly helped the rich.,%8.0g,,,TRUE,Retained
+w4b212210,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q21_q22:how well does sincere describe ... [george w. bush],%8.0g,,,TRUE,Retained
+w4b21222,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q21_q22:how well does sincere describe ... [john kerry],%8.0g,,,TRUE,Retained
+w4b23241,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q23_q24:how well does intelligent describe ... [george w. bush],%8.0g,,,TRUE,Retained
+w4b23242,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q23_q24:how well does intelligent describe ... [john kerry],%8.0g,,,TRUE,Retained
+w4b25261,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q25_q26:how well does thinks like i do describe ... [george w. bus,%8.0g,,,TRUE,Retained
+w4b25262,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q25_q26:how well does thinks like i do describe ... [john kerry],%8.0g,,,TRUE,Retained
+w4b2281,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q27_q28:how well does strong leader describe ... [george w. bush],%8.0g,,,TRUE,Retained
+w4b27282,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q27_q28:how well does strong leader describe ... [john kerry],%8.0g,,,TRUE,Retained
+w4b29301,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q29_q30:how well does religious describe ... [george w. bush],%8.0g,,,TRUE,Retained
+w4b29302,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q29_q30:how well does religious describe ... [john kerry],%8.0g,,,TRUE,Retained
+w4b3132a,double,haven_labelled|vctrs_vctr|double,,w4 baseline.   q31_q32: txloop=[lq31_q32] can't say  [not familiar],%8.0g,,,TRUE,Retained
+w4b3132b,double,haven_labelled|vctrs_vctr|double,,w4 baseline.   q31_q32: txloop=[lq31_q32] thermometer.,%8.0g,,,TRUE,Retained
+w4b3132c,double,haven_labelled|vctrs_vctr|double,,w4 baseline.   q31_q32: george w. bush thermometer.,%8.0g,,,TRUE,Retained
+w4b3132d,double,haven_labelled|vctrs_vctr|double,,w4 baseline.   q31_q32: george w. bush can't say  [not familiar],%8.0g,,,TRUE,Retained
+w4b3132e,double,haven_labelled|vctrs_vctr|double,,w4 baseline.   how do you feel about george w. bush?,%8.0g,,,TRUE,Retained
+w4b3132f,double,haven_labelled|vctrs_vctr|double,,w4 baseline.   [can't say],%8.0g,,,TRUE,Retained
+w4b3132g,double,haven_labelled|vctrs_vctr|double,,w4 baseline.   how do you feel about george w. bush?,%8.0g,,,TRUE,Retained
+w4b3132h,double,haven_labelled|vctrs_vctr|double,,w4 baseline.   [can't say],%8.0g,,,TRUE,Retained
+w4b3132i,double,haven_labelled|vctrs_vctr|double,,w4 baseline.   q31_q32: john kerry thermometer.,%8.0g,,,TRUE,Retained
+w4b3132j,double,haven_labelled|vctrs_vctr|double,,w4 baseline.   q31_q32: john kerry can't say  [not familiar],%8.0g,,,TRUE,Retained
+w4b3132k,double,haven_labelled|vctrs_vctr|double,,w4 baseline.   how do you feel about john kerry?,%8.0g,,,TRUE,Retained
+w4b3132l,double,haven_labelled|vctrs_vctr|double,,w4 baseline.   [can't say],%8.0g,,,TRUE,Retained
+w4b3132m,double,haven_labelled|vctrs_vctr|double,,w4 baseline.   how do you feel about john kerry?,%8.0g,,,TRUE,Retained
+w4b3132n,double,haven_labelled|vctrs_vctr|double,,w4 baseline.   [can't say],%8.0g,,,TRUE,Retained
+w4b33811,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4b33812,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4b33821,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4b33822,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4b33831,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4b33832,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4b33841,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4b33842,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4b33851,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4b33852,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4b33861,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4b33862,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4b39,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q39:how well or poorly would you say that things in general have b,%8.0g,,,TRUE,Retained
+w4b40,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q40:and much better or worse would you say the nation's economy ha,%8.0g,,,TRUE,Retained
+w4b42,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q42:federal government should lower taxes...where would you place,%8.0g,,,TRUE,Retained
+w4b43441,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q43_q44:federal government should lower taxes...where would you pl,%8.0g,,,TRUE,Retained
+w4b43442,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q43_q44:federal government should lower taxes...where would you pl,%8.0g,,,TRUE,Retained
+w4b45,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q45:united states should intervene militarily....using the scale s,%8.0g,,,TRUE,Retained
+w4b46471,double,haven_labelled|vctrs_vctr|double,,"w4 baseline.  q46_q47:united states should intervene militarily...now, using the",%8.0g,,,TRUE,Retained
+w4b46472,double,haven_labelled|vctrs_vctr|double,,"w4 baseline.  q46_q47:united states should intervene militarily...now, using the",%8.0g,,,TRUE,Retained
+w4b48,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q48:pursue free trade...where would you place yourself on this iss,%8.0g,,,TRUE,Retained
+w4b49501,double,haven_labelled|vctrs_vctr|double,,"w4 baseline.  q49_q50:pursue free trade...using the same scale, where would you",%8.0g,,,TRUE,Retained
+w4b49502,double,haven_labelled|vctrs_vctr|double,,"w4 baseline.  q49_q50:pursue free trade...using the same scale, where would you",%8.0g,,,TRUE,Retained
+w4b51,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q51:ensure people's constitutional rights...where would you place,%8.0g,,,TRUE,Retained
+w4b52531,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q52_q53:ensure people's constitutional rights... [george w. bush],%8.0g,,,TRUE,Retained
+w4b52532,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q52_q53:ensure people's constitutional rights... [john kerry],%8.0g,,,TRUE,Retained
+w4b54,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q54:adequate health insurance...where would you place yourself on,%8.0g,,,TRUE,Retained
+w4b55561,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q55_q56:adequate health insurance...where would you place the foll,%8.0g,,,TRUE,Retained
+w4b55562,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q55_q56:adequate health insurance...where would you place the foll,%8.0g,,,TRUE,Retained
+w4b57,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q57:same sex marriage...where would you place yourself on this sca,%8.0g,,,TRUE,Retained
+w4b58591,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q58_q59:same sex marriage...where would you place the following ca,%8.0g,,,TRUE,Retained
+w4b58592,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q58_q59:same sex marriage...where would you place the following ca,%8.0g,,,TRUE,Retained
+w4b60,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q60:how did john kerry vote in the senate on the resolution author,%8.0g,,,TRUE,Retained
+w4b61,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q61:which of the following countries now harbors the most al qaeda,%8.0g,,,TRUE,Retained
+w4b62,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q62:iraq was directly involved in the attacks on the world trade c,%8.0g,,,TRUE,Retained
+w4b63,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q63:large quantities of weapons of mass destruction have been foun,%8.0g,,,TRUE,Retained
+w4b64,double,haven_labelled|vctrs_vctr|double,,"w4 baseline.  q64:on average, prescription drugs cost more in canada than in the",%8.0g,,,TRUE,Retained
+w4b65,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q65:which of the following was true of george w. bush during the v,%8.0g,,,TRUE,Retained
+w4b66,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q66:which of the following was true of john kerry during the vietn,%8.0g,,,TRUE,Retained
+w4b68,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q68:a major destination for white collar jobs that have gone to ot,%8.0g,,,TRUE,Retained
+w4b69,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q69:which of the following is closest to the number of americans k,%8.0g,,,TRUE,Retained
+w4b70,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q70:america's interests should always come first...where would you,%8.0g,,,TRUE,Retained
+w4b71,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q71:help other people...where would you put yourself on this scale,%8.0g,,,TRUE,Retained
+w4b72,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q72:do whatever with their property...where would you put yourself,%8.0g,,,TRUE,Retained
+w4b73,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q73:most political issues are so complicated that a person like me,%8.0g,,,TRUE,Retained
+w4b74,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q74:because most people don't really know much about what's happen,%8.0g,,,TRUE,Retained
+w4b75,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q75:people like me don't have any say about what the government do,%8.0g,,,TRUE,Retained
+w4b76,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q76:generally speaking do you usually think of yourself as a democ,%8.0g,,,TRUE,Retained
+w4b77,double,haven_labelled|vctrs_vctr|double,,"w4 baseline.  q77:where would you place yourself on the following scale, where 1",%8.0g,,,TRUE,Retained
+w4b78,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q78:have you ever served in the military of the united states?,%8.0g,,,TRUE,Retained
+w4b79,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q79:would you say you attend religious services...,%8.0g,,,TRUE,Retained
+w4b80,double,haven_labelled|vctrs_vctr|double,,w4 baseline.  q80:here are four statements about the bible. please indicate whic,%8.0g,,,TRUE,Retained
+w4b81,double,haven_labelled|vctrs_vctr|double,,"w4 baseline.  q81:have you ever served on active duty in the u.s. armed forces,",%8.0g,,,TRUE,Retained
+w4fstart,double,Date,,w4 followup.  start date and time of interview,%dD_m_Y,,,TRUE,Retained
+w4fend,double,Date,,w4 followup.  end date and time of interview,%dD_m_Y,,,TRUE,Retained
+w4fdur,double,haven_labelled|vctrs_vctr|double,,w4 followup.  duration of interview in minutes,%9.0g,,,TRUE,Retained
+w4fres,double,haven_labelled|vctrs_vctr|double,,w4 followup.  interview type,%8.0g,,,TRUE,Retained
+w4f1,double,haven_labelled|vctrs_vctr|double,,"w4 followup.  q1:first of all, how likely are you to vote in the presidential el",%8.0g,,,TRUE,Retained
+w4f2,double,haven_labelled|vctrs_vctr|double,,"w4 followup.  q2:assuming you vote, how would you expect to vote? would you vote",%8.0g,,,TRUE,Retained
+w4f3,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q3:how sure are you of that choice? would you say you are...,%8.0g,,,TRUE,Retained
+w4f4,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q4:we must not hesitate to invade other countries when we think th,%8.0g,,,TRUE,Retained
+w4f5,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q5:we must not hesitate to invade other countries that pose a seri,%8.0g,,,TRUE,Retained
+w4f6,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q6:the u.s. should be willing to intervene in the affairs of other,%8.0g,,,TRUE,Retained
+w4f7,double,haven_labelled|vctrs_vctr|double,,"w4 followup.  q7:by the time we leave iraq, the results will have been worth the",%8.0g,,,TRUE,Retained
+w4f8,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q8:the war in iraq has gotten in the way of the war on terror. wou,%8.0g,,,TRUE,Retained
+w4f9,double,haven_labelled|vctrs_vctr|double,,"w4 followup.  q9:next, how much, on the whole, would you say that the war with i",%8.0g,,,TRUE,Retained
+w4f10,double,haven_labelled|vctrs_vctr|double,,"w4 followup.  q10:and how much, on the whole, would you say the war with iraq ha",%8.0g,,,TRUE,Retained
+w4f11,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q11:how successful or unsuccessful would you say the u.s. has been,%8.0g,,,TRUE,Retained
+w4f12,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q12:and how about afghanistan? how successful or unsuccessful woul,%8.0g,,,TRUE,Retained
+w4f13,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q13:protecting existing american jobs and industries is more impor,%8.0g,,,TRUE,Retained
+w4f14,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q14:the u.s. should actively pursue more free trade agreements lik,%8.0g,,,TRUE,Retained
+w4f15,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q15:american companies should be penalized for moving jobs to othe,%8.0g,,,TRUE,Retained
+w4f16,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q16:the bush administration tax cuts should be made permanent. wou,%8.0g,,,TRUE,Retained
+w4f17,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q17:the bush administration's tax cuts have helped most taxpayers.,%8.0g,,,TRUE,Retained
+w4f18,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q18:the bush administration's tax cuts have made the federal defic,%8.0g,,,TRUE,Retained
+w4f19,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q19:the bush administration's tax cuts have stimulated the economy,%8.0g,,,TRUE,Retained
+w4f20,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q20:the bush administration's tax cuts have mainly helped the rich,%8.0g,,,TRUE,Retained
+w4f212210,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q21_q22:how well does sincere describe ... [george w. bush],%8.0g,,,TRUE,Retained
+w4f21222,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q21_q22:how well does sincere describe ... [john kerry],%8.0g,,,TRUE,Retained
+w4f23241,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q23_q24:how well does intelligent describe ... [george w. bush],%8.0g,,,TRUE,Retained
+w4f23242,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q23_q24:how well does intelligent describe ... [john kerry],%8.0g,,,TRUE,Retained
+w4f25261,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q25_q26:how well does thinks like i do describe ... [george w. bus,%8.0g,,,TRUE,Retained
+w4f25262,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q25_q26:how well does thinks like i do describe ... [john kerry],%8.0g,,,TRUE,Retained
+w4f2281,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q27_q28:how well does strong leader describe ... [george w. bush],%8.0g,,,TRUE,Retained
+w4f27282,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q27_q28:how well does strong leader describe ... [john kerry],%8.0g,,,TRUE,Retained
+w4f29301,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q29_q30:how well does religious describe ... [george w. bush],%8.0g,,,TRUE,Retained
+w4f29302,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q29_q30:how well does religious describe ... [john kerry],%8.0g,,,TRUE,Retained
+w4f3132a,double,haven_labelled|vctrs_vctr|double,,w4 followup.   q31_q32: txloop=[q31_q32] can't say  [not familiar],%8.0g,,,TRUE,Retained
+w4f3132b,double,haven_labelled|vctrs_vctr|double,,w4 followup.   q31_q32: txloop=[q31_q32] thermometer.,%8.0g,,,TRUE,Retained
+w4f3132c,double,haven_labelled|vctrs_vctr|double,,w4 followup.   q31_q32: george w. bush thermometer.,%8.0g,,,TRUE,Retained
+w4f3132d,double,haven_labelled|vctrs_vctr|double,,w4 followup.   q31_q32: george w. bush can't say  [not familiar],%8.0g,,,TRUE,Retained
+w4f3132e,double,haven_labelled|vctrs_vctr|double,,w4 followup.   how do you feel about george w. bush?,%8.0g,,,TRUE,Retained
+w4f3132f,double,haven_labelled|vctrs_vctr|double,,w4 followup.   [can't say],%8.0g,,,TRUE,Retained
+w4f3132g,double,haven_labelled|vctrs_vctr|double,,w4 followup.   how do you feel about george w. bush?,%8.0g,,,TRUE,Retained
+w4f3132h,double,haven_labelled|vctrs_vctr|double,,w4 followup.   [can't say],%8.0g,,,TRUE,Retained
+w4f3132i,double,haven_labelled|vctrs_vctr|double,,w4 followup.   q31_q32: john kerry thermometer.,%8.0g,,,TRUE,Retained
+w4f3132j,double,haven_labelled|vctrs_vctr|double,,w4 followup.   q31_q32: john kerry can't say  [not familiar],%8.0g,,,TRUE,Retained
+w4f3132k,double,haven_labelled|vctrs_vctr|double,,w4 followup.   how do you feel about john kerry?,%8.0g,,,TRUE,Retained
+w4f3132l,double,haven_labelled|vctrs_vctr|double,,w4 followup.   [can't say],%8.0g,,,TRUE,Retained
+w4f3132m,double,haven_labelled|vctrs_vctr|double,,w4 followup.   how do you feel about john kerry?,%8.0g,,,TRUE,Retained
+w4f3132n,double,haven_labelled|vctrs_vctr|double,,w4 followup.   [can't say],%8.0g,,,TRUE,Retained
+w4f33811,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4f33812,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4f33821,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4f33822,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4f33831,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4f33832,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4f33841,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4f33842,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4f33851,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4f33852,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4f33861,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4f33862,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q33_q38:how well do you think george w. bush and john kerry would,%8.0g,,,TRUE,Retained
+w4f39,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q39:how well or poorly would you say that things in general have b,%8.0g,,,TRUE,Retained
+w4f40,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q40:and how much better or worse would you say the nation's econom,%8.0g,,,TRUE,Retained
+w4f42,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q42:federal government should lower taxes...where would you place,%8.0g,,,TRUE,Retained
+w4f43441,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q43_q44:federal government should lower taxes...where would you pl,%8.0g,,,TRUE,Retained
+w4f43442,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q43_q44:federal government should lower taxes...where would you pl,%8.0g,,,TRUE,Retained
+w4f45,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q45:united states should intervene militarily....using the scale s,%8.0g,,,TRUE,Retained
+w4f46471,double,haven_labelled|vctrs_vctr|double,,"w4 followup.  q46_q47:united states should intervene militarily...now, using the",%8.0g,,,TRUE,Retained
+w4f46472,double,haven_labelled|vctrs_vctr|double,,"w4 followup.  q46_q47:united states should intervene militarily...now, using the",%8.0g,,,TRUE,Retained
+w4f48,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q48:pursue free trade...where would you place yourself on this iss,%8.0g,,,TRUE,Retained
+w4f49501,double,haven_labelled|vctrs_vctr|double,,"w4 followup.  q49_q50:pursue free trade...using the same scale, where would you",%8.0g,,,TRUE,Retained
+w4f49502,double,haven_labelled|vctrs_vctr|double,,"w4 followup.  q49_q50:pursue free trade...using the same scale, where would you",%8.0g,,,TRUE,Retained
+w4f51,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q51:ensure people's constitutional rights...where would you place,%8.0g,,,TRUE,Retained
+w4f52531,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q52_q53:ensure people's constitutional rights... [george w. bush],%8.0g,,,TRUE,Retained
+w4f52532,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q52_q53:ensure people's constitutional rights... [john kerry],%8.0g,,,TRUE,Retained
+w4f54,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q54:adequate health insurance...where would you place yourself on,%8.0g,,,TRUE,Retained
+w4f55561,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q55_q56:adequate health insurance...where would you place the foll,%8.0g,,,TRUE,Retained
+w4f55562,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q55_q56:adequate health insurance...where would you place the foll,%8.0g,,,TRUE,Retained
+w4f57,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q57:same sex marriage...where would you place yourself on this sca,%8.0g,,,TRUE,Retained
+w4f58591,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q58_q59:same sex marriage...where would you place the following ca,%8.0g,,,TRUE,Retained
+w4f58592,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q58_q59:same sex marriage...where would you place the following ca,%8.0g,,,TRUE,Retained
+w4funew1,double,haven_labelled|vctrs_vctr|double,,w4 followup.  qfu_new1:president must be consistent over time...where would you,%8.0g,,,TRUE,Retained
+w4funew2,double,haven_labelled|vctrs_vctr|double,,w4 followup.  qfu_new2:president must be consistent over time...where would you,%8.0g,,,TRUE,Retained
+w4funew3,double,haven_labelled|vctrs_vctr|double,,w4 followup.  qfu_new3:president must be consistent over time...where would you,%8.0g,,,TRUE,Retained
+w4f60,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q60:how did john kerry vote in the senate on the resolution author,%8.0g,,,TRUE,Retained
+w4f61,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q61:which of the following countries now harbors the most al qaeda,%8.0g,,,TRUE,Retained
+w4f62,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q62:iraq was directly involved in the attacks on the world trade c,%8.0g,,,TRUE,Retained
+w4f63,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q63:large quantities of weapons of mass destruction have been foun,%8.0g,,,TRUE,Retained
+w4f64,double,haven_labelled|vctrs_vctr|double,,"w4 followup.  q64:on average, prescription drugs cost more in canada than in the",%8.0g,,,TRUE,Retained
+w4f65,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q65:which of the following was true of george w. bush during the v,%8.0g,,,TRUE,Retained
+w4f66,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q66:which of the following was true of john kerry during the vietn,%8.0g,,,TRUE,Retained
+w4f68,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q68:a major destination for white collar jobs that have gone to ot,%8.0g,,,TRUE,Retained
+w4f69,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q69:which of the following is closest to the number of americans k,%8.0g,,,TRUE,Retained
+w4f70,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q70:america's interests should always come first...where would you,%8.0g,,,TRUE,Retained
+w4f71,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q71:help other people...where would you put yourself on this scale,%8.0g,,,TRUE,Retained
+w4f72,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q72:do whatever with their property...where would you put yourself,%8.0g,,,TRUE,Retained
+w4f73,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q73:most political issues are so complicated that a person like me,%8.0g,,,TRUE,Retained
+w4f74,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q74:because most people don't really know much about what's happen,%8.0g,,,TRUE,Retained
+w4f75,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q75:people like me don't have any say about what the government do,%8.0g,,,TRUE,Retained
+w4f76,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q76:generally speaking do you usually think of yourself as a democ,%8.0g,,,TRUE,Retained
+w4f77,double,haven_labelled|vctrs_vctr|double,,"w4 followup.  q77:where would you place yourself on the following scale, where 1",%8.0g,,,TRUE,Retained
+w4f78,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q78:have you ever served in the military of the united states?,%8.0g,,,TRUE,Retained
+w4f79,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q79:would you say you attend religious services...,%8.0g,,,TRUE,Retained
+w4f80,double,haven_labelled|vctrs_vctr|double,,w4 followup.  q80:here are four statements about the bible. please indicate whic,%8.0g,,,TRUE,Retained
+w4f81,double,haven_labelled|vctrs_vctr|double,,"w4 followup.  q81:have you ever served on active duty in the u.s. armed forces,",%8.0g,,,TRUE,Retained
+smgrpnumber,double,haven_labelled|vctrs_vctr|double,,w4 dop session data.  session_id,%8.0g,,,TRUE,Retained
+w4mtg1,double,haven_labelled|vctrs_vctr|double,,w4 dop session data.  meeting1,%8.0g,,,TRUE,Retained
+w4mtg2,double,haven_labelled|vctrs_vctr|double,,w4 dop session data.  meeting2,%8.0g,,,TRUE,Retained
+w4mtg3,double,haven_labelled|vctrs_vctr|double,,w4 dop session data.  meeting3,%8.0g,,,TRUE,Retained
+w4mtg4,double,haven_labelled|vctrs_vctr|double,,w4 dop session data.  meeting4,%8.0g,,,TRUE,Retained
+w4mtg5,double,haven_labelled|vctrs_vctr|double,,w4 dop session data.  meeting5,%8.0g,,,TRUE,Retained
+w4total,double,haven_labelled|vctrs_vctr|double,,w4 dop session data.  total dop sessions attended,%8.0g,,,TRUE,Retained
+w4cd_no,double,haven_labelled|vctrs_vctr|double,,w4 cd_followup.  cd identification number,%12.0g,,,TRUE,Retained
+w4cd_grp,double,haven_labelled|vctrs_vctr|double,,w4 cd_followup.  cd dop or control group treatment,%8.0g,,,TRUE,Retained
+w4track,double,haven_labelled|vctrs_vctr|double,,w4 cd_followup.  tracking file upload status (stanford has file in hand-n or y),%8.0g,,,TRUE,Retained
+w4cdrecd,double,haven_labelled|vctrs_vctr|double,,w4 cd_followup.   we're interested in your use of the cd we sent you containing,%8.0g,,,TRUE,Retained
+w4cdnuse,double,haven_labelled|vctrs_vctr|double,,w4 cd_followup.   how many times did you actually use the cd?,%8.0g,,,TRUE,Retained
+w4cdwhy,double,haven_labelled|vctrs_vctr|double,,w4 cd_followup.   why did you not use the cd?,%8.0g,,,TRUE,Retained
+w4cdhelp,double,haven_labelled|vctrs_vctr|double,,"w4 cd_followup.   did the cd help you make a decision, or move closer to making",%8.0g,,,TRUE,Retained
+w4cdup,double,haven_labelled|vctrs_vctr|double,,w4 cd_followup.   were you able to successfully upload the tracking file for the,%8.0g,,,TRUE,Retained
+w4cd_use,double,haven_labelled|vctrs_vctr|double,,w4 cd_followup.  cd tracking file uploaded or r reported cd use in survey,%8.0g,,,TRUE,Retained
+cd_no,double,numeric,,tracking id,%12.0g,,,TRUE,Retained
+firstuse,double,numeric,,days from sept.0 of first cd use,%8.0g,,,TRUE,Retained
+lastuse,double,numeric,,days from sept.0 of last cd use,%8.0g,,,TRUE,Retained
+paget,double,numeric,,pages viewed,%8.0g,,,TRUE,Retained
+vidt,double,numeric,,videos viewed,%8.0g,,,TRUE,Retained
+bio,double,numeric,,order of biography and overview chapter,%8.0g,,,TRUE,Retained
+eco,double,numeric,,order of economy and jobs chapter,%8.0g,,,TRUE,Retained
+ene,double,numeric,,order of energy chapter,%8.0g,,,TRUE,Retained
+hea,double,numeric,,order of healthcare chapter,%8.0g,,,TRUE,Retained
+hom,double,numeric,,order of homeland security chapter,%8.0g,,,TRUE,Retained
+ira,double,numeric,,order of iraq chapter,%8.0g,,,TRUE,Retained
+npage,double,numeric,,neutral pages viewed,%8.0g,,,TRUE,Retained
+bpage,double,numeric,,bush pages viewed,%8.0g,,,TRUE,Retained
+bvid,double,numeric,,bush videos viewed,%8.0g,,,TRUE,Retained
+kpage,double,numeric,,kerry pages viewed,%8.0g,,,TRUE,Retained
+kvid,double,numeric,,kerry videos viewed,%8.0g,,,TRUE,Retained
+votpage,double,numeric,,intro pages viewed,%8.0g,,,TRUE,Retained
+biopage,double,numeric,,biography pages viewed (included nomination speeches),%8.0g,,,TRUE,Retained
+biovid,double,numeric,,biography videos viewed,%8.0g,,,TRUE,Retained
+ecopage,double,numeric,,economy pages viewed,%8.0g,,,TRUE,Retained
+ecovid,double,numeric,,economy videos viewed,%8.0g,,,TRUE,Retained
+enepage,double,numeric,,energy pages viewed,%8.0g,,,TRUE,Retained
+enevid,double,numeric,,energy videos viewed,%8.0g,,,TRUE,Retained
+heapage,double,numeric,,healthcare pages viewed,%8.0g,,,TRUE,Retained
+heavid,double,numeric,,healthcare videos viewed,%8.0g,,,TRUE,Retained
+hompage,double,numeric,,homeland security pages viewed,%8.0g,,,TRUE,Retained
+homvid,double,numeric,,homeland security videos viewed,%8.0g,,,TRUE,Retained
+irapage,double,numeric,,iraq pages viewed,%8.0g,,,TRUE,Retained
+iravid,double,numeric,,iraq videos viewed,%8.0g,,,TRUE,Retained
+votint,double,numeric,,intro chapter header viewed,%8.0g,,,TRUE,Retained
+bioint,double,numeric,,biography chapter header viewed,%8.0g,,,TRUE,Retained
+ecoint,double,numeric,,economy chapter header viewed,%8.0g,,,TRUE,Retained
+eneint,double,numeric,,energy chapter header viewed,%8.0g,,,TRUE,Retained
+heaint,double,numeric,,healthcare chapter header viewed,%8.0g,,,TRUE,Retained
+homint,double,numeric,,homeland security chapter header viewed,%8.0g,,,TRUE,Retained
+iraint,double,numeric,,iraq chapter header viewed,%8.0g,,,TRUE,Retained
+bbiopage,double,numeric,,bush biography pages viewed,%8.0g,,,TRUE,Retained
+bbiovid,double,numeric,,bush biography videos viewed,%8.0g,,,TRUE,Retained
+becopage,double,numeric,,bush economy pages viewed,%8.0g,,,TRUE,Retained
+becovid,double,numeric,,bush economy videos viewed,%8.0g,,,TRUE,Retained
+benepage,double,numeric,,bush energy pages viewed,%8.0g,,,TRUE,Retained
+benevid,double,numeric,,bush energy videos viewed,%8.0g,,,TRUE,Retained
+bheapage,double,numeric,,bush healthcare pages viewed,%8.0g,,,TRUE,Retained
+bheavid,double,numeric,,bush healthcare videos viewed,%8.0g,,,TRUE,Retained
+bhompage,double,numeric,,bush healthcare pages viewed,%8.0g,,,TRUE,Retained
+bhomvid,double,numeric,,bush homeland security videos viewed,%8.0g,,,TRUE,Retained
+birapage,double,numeric,,bush homeland security pages viewed,%8.0g,,,TRUE,Retained
+biravid,double,numeric,,bush iraq videos viewed,%8.0g,,,TRUE,Retained
+kbiopage,double,numeric,,kerry biography pages viewed,%8.0g,,,TRUE,Retained
+kbiovid,double,numeric,,kerry biography videos viewed,%8.0g,,,TRUE,Retained
+kecopage,double,numeric,,kerry economy pages viewed,%8.0g,,,TRUE,Retained
+kecovid,double,numeric,,kerry economy videos viewed,%8.0g,,,TRUE,Retained
+kenepage,double,numeric,,kerry energy pages viewed,%8.0g,,,TRUE,Retained
+kenevid,double,numeric,,kerry energy videos viewed,%8.0g,,,TRUE,Retained
+kheapage,double,numeric,,kerry healthcare pages viewed,%8.0g,,,TRUE,Retained
+kheavid,double,numeric,,kerry healthcare videos viewed,%8.0g,,,TRUE,Retained
+khompage,double,numeric,,kerry homeland security pages viewed,%8.0g,,,TRUE,Retained
+khomvid,double,numeric,,kerry homeland security videos viewed,%8.0g,,,TRUE,Retained
+kirapage,double,numeric,,kerry iraq pages viewed,%8.0g,,,TRUE,Retained
+kiravid,double,numeric,,kerry iraq videos viewed,%8.0g,,,TRUE,Retained
+badsbio1,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badsbio2,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badsbio3,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badsbio4,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badsbio5,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badsbio6,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badsbio7,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badsbio8,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badsbio9,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badseco1,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badseco2,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badseco3,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badseco4,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badseco5,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badseco6,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badseco7,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badseco8,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badseco9,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badsene1,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badshea1,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badshom1,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badshom2,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badshom3,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badshom4,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badshom5,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badshom6,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badshom7,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badshom8,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badsira1,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badsira2,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badsira3,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badsira4,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badsira5,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badsira6,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+badsira7,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsbio1,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsbio2,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsbio3,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsbio4,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsbio5,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsbio6,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsbio7,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsbio8,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsbio9,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsbi10,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsbi11,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsbi12,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsbi13,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsbi14,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsbi15,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsbi16,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsbi17,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadseco1,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadseco2,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadseco3,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadseco4,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadseco5,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadseco6,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadseco7,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadseco8,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadseco9,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsec10,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsene1,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsene2,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadshea1,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadshea2,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadshea3,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadshom1,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadshom2,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadshom3,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadshom4,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+kadsira1,double,numeric,,specific ad viewed (by order in list),%8.0g,,,TRUE,Retained
+cstart,double,Date,,start date and time of interview,%dD_m_Y,,,TRUE,Retained
+cend,double,Date,,end date and time of interview,%dD_m_Y,,,TRUE,Retained
+cdur,double,numeric,,duration of interview in minutes,%9.0g,,,TRUE,Retained
+cresume,double,haven_labelled|vctrs_vctr|double,,interview type,%8.0g,,,TRUE,Retained
+c_cd_grp,double,haven_labelled|vctrs_vctr|double,,summer cd dop or control group treatment,%8.0g,,,TRUE,Retained
+c_cd_no,double,numeric,,summer cd identification number,%8.0g,,,TRUE,Retained
+c_track,double,haven_labelled|vctrs_vctr|double,,summer tracking file upload status (stanford has file in hand-n or y),%8.0g,,,TRUE,Retained
+c1_1,double,haven_labelled|vctrs_vctr|double,,"on that 0 to 10 scale, how important an issue is:  [terrorism]",%8.0g,,,TRUE,Retained
+c1_2,double,haven_labelled|vctrs_vctr|double,,"on that 0 to 10 scale, how important an issue is:  [international trade]",%8.0g,,,TRUE,Retained
+c1_3,double,haven_labelled|vctrs_vctr|double,,"on that 0 to 10 scale, how important an issue is:  [the environment]",%8.0g,,,TRUE,Retained
+c1_4,double,haven_labelled|vctrs_vctr|double,,"on that 0 to 10 scale, how important an issue is:  [energy]",%8.0g,,,TRUE,Retained
+c1_5,double,haven_labelled|vctrs_vctr|double,,"on that 0 to 10 scale, how important an issue is:  [healthcare]",%8.0g,,,TRUE,Retained
+c1_6,double,haven_labelled|vctrs_vctr|double,,"on that 0 to 10 scale, how important an issue is:  [iraq]",%8.0g,,,TRUE,Retained
+c1_7,double,haven_labelled|vctrs_vctr|double,,"on that 0 to 10 scale, how important an issue is:  [unemployment]",%8.0g,,,TRUE,Retained
+c1_8,double,haven_labelled|vctrs_vctr|double,,"on that 0 to 10 scale, how important an issue is:  [crime]",%8.0g,,,TRUE,Retained
+cgbq2da,double,haven_labelled|vctrs_vctr|double,, q2: george w. bush thermometer.,%8.0g,,,TRUE,Retained
+cjkq2da,double,haven_labelled|vctrs_vctr|double,, q2: john kerry thermometer.,%8.0g,,,TRUE,Retained
+cdrq2da,double,haven_labelled|vctrs_vctr|double,, q2: donald rumsfeld thermometer.,%8.0g,,,TRUE,Retained
+ctkq2da,double,haven_labelled|vctrs_vctr|double,, q2: ted kennedy thermometer.,%8.0g,,,TRUE,Retained
+crlq2da,double,haven_labelled|vctrs_vctr|double,, q2: rush limbaugh thermometer.,%8.0g,,,TRUE,Retained
+cbcq2da,double,haven_labelled|vctrs_vctr|double,, q2: bill clinton thermometer.,%8.0g,,,TRUE,Retained
+crpq2da,double,haven_labelled|vctrs_vctr|double,, q2: the republican party thermometer.,%8.0g,,,TRUE,Retained
+cdpq2da,double,haven_labelled|vctrs_vctr|double,, q2: the democratic party thermometer.,%8.0g,,,TRUE,Retained
+c3a,double,haven_labelled|vctrs_vctr|double,, now we'd like you to think about some other important issues. some people think,%8.0g,,,TRUE,Retained
+c3b_1,double,haven_labelled|vctrs_vctr|double,," now, using the same scale, where would you place the presidential candidates? [",%8.0g,,,TRUE,Retained
+c3b_2,double,haven_labelled|vctrs_vctr|double,," now, using the same scale, where would you place the presidential candidates? .",%8.0g,,,TRUE,Retained
+c4a,double,haven_labelled|vctrs_vctr|double,, here's the next issue. some people feel the united states should feel free to i,%8.0g,,,TRUE,Retained
+c4b_1,double,haven_labelled|vctrs_vctr|double,," now, using the same scale, where would you place the following candidates? .  [",%8.0g,,,TRUE,Retained
+c4b_2,double,haven_labelled|vctrs_vctr|double,," now, using the same scale, where would you place the following candidates? .  [",%8.0g,,,TRUE,Retained
+c5a,double,haven_labelled|vctrs_vctr|double,, here's the next one. some people feel that we should pursue free trade even if,%8.0g,,,TRUE,Retained
+c5b_1,double,haven_labelled|vctrs_vctr|double,," now, using the same scale, where would you place the following candidates? .  [",%8.0g,,,TRUE,Retained
+c5b_2,double,haven_labelled|vctrs_vctr|double,," now, using the same scale, where would you place the following candidates? .  [",%8.0g,,,TRUE,Retained
+c6a,double,haven_labelled|vctrs_vctr|double,,there is concern these days about medical and hospital costs. some people feel t,%8.0g,,,TRUE,Retained
+c6b_1,double,haven_labelled|vctrs_vctr|double,," now, using the same scale, where would you place the following candidates? .  [",%8.0g,,,TRUE,Retained
+c6b_2,double,haven_labelled|vctrs_vctr|double,," now, using the same scale, where would you place the following candidates? .  [",%8.0g,,,TRUE,Retained
+c7a,double,haven_labelled|vctrs_vctr|double,, do you intend to vote in the upcoming presidential election?,%8.0g,,,TRUE,Retained
+c7b,double,haven_labelled|vctrs_vctr|double,," if the election were held today, whom would you vote for?",%8.0g,,,TRUE,Retained
+c7c,double,haven_labelled|vctrs_vctr|double,, how certain are you of this choice?,%8.0g,,,TRUE,Retained
+c8,double,haven_labelled|vctrs_vctr|double,, we're interested in how much information people have picked up about the issues,%8.0g,,,TRUE,Retained
+c9,double,haven_labelled|vctrs_vctr|double,, there is a place called abu ghraib. can you tell us whether it is:,%8.0g,,,TRUE,Retained
+c10,double,haven_labelled|vctrs_vctr|double,, which of the following countries is in a state of civil war?,%8.0g,,,TRUE,Retained
+c11,double,haven_labelled|vctrs_vctr|double,, which of the following was true of george w. bush during the vietnam war?,%8.0g,,,TRUE,Retained
+c12,double,haven_labelled|vctrs_vctr|double,, which of the following was true of john kerry during the vietnam war?,%8.0g,,,TRUE,Retained
+c13,double,haven_labelled|vctrs_vctr|double,, which of the following countries has been drawing the largest number of white c,%8.0g,,,TRUE,Retained
+c14_01,double,haven_labelled|vctrs_vctr|double,," is anyone in your immediate family, or anybody you know currently serving in th",%8.0g,,,TRUE,Retained
+c14_02,double,haven_labelled|vctrs_vctr|double,," is anyone in your immediate family, or anybody you know currently serving in th",%8.0g,,,TRUE,Retained
+c14_03,double,haven_labelled|vctrs_vctr|double,," is anyone in your immediate family, or anybody you know currently serving in th",%8.0g,,,TRUE,Retained
+c15,double,haven_labelled|vctrs_vctr|double,," on average, how many miles do you drive each week?",%8.0g,,,TRUE,Retained
+c16,double,haven_labelled|vctrs_vctr|double,," now thinking about the economy in the country as a whole, would you say that ov",%8.0g,,,TRUE,Retained
+c17,double,haven_labelled|vctrs_vctr|double,," now think about the war in iraq. would you say that, over the past few months,",%8.0g,,,TRUE,Retained
+c18,double,haven_labelled|vctrs_vctr|double,," over the past year, have you been covered continuously by some form of health i",%8.0g,,,TRUE,Retained
+c19,double,haven_labelled|vctrs_vctr|double,, next are a couple of questions about president bush's performance as president.,%8.0g,,,TRUE,Retained
+c20,double,haven_labelled|vctrs_vctr|double,, how would you evaluate president bush's performance with respect to the war in,%8.0g,,,TRUE,Retained
+c21,double,haven_labelled|vctrs_vctr|double,, how about bush's handling of the economy?,%8.0g,,,TRUE,Retained
+c22,double,haven_labelled|vctrs_vctr|double,, how about bush's handling of the war on terrorism?,%8.0g,,,TRUE,Retained
+c23a,double,haven_labelled|vctrs_vctr|double,, we're interested in your use of the cd we sent you containing information about,%8.0g,,,TRUE,Retained
+c23b,double,haven_labelled|vctrs_vctr|double,, how many times did you actually use the cd?,%8.0g,,,TRUE,Retained
+c23c,double,haven_labelled|vctrs_vctr|double,, why did you not use the cd?,%8.0g,,,TRUE,Retained
+c23d,double,haven_labelled|vctrs_vctr|double,," did the cd help you make a decision, or move closer to making a decision, about",%8.0g,,,TRUE,Retained
+c23e,double,haven_labelled|vctrs_vctr|double,, were you able to successfully upload the tracking file for the usage of the cd?,%8.0g,,,TRUE,Retained
+ppgender,double,haven_labelled|vctrs_vctr|double,,gender,%8.0g,,,TRUE,Retained
+ppage,double,haven_labelled|vctrs_vctr|double,,age,%8.0g,,,TRUE,Retained
+ppagecat,double,haven_labelled|vctrs_vctr|double,,age - 7 categories,%8.0g,,,TRUE,Retained
+ppagect4,double,haven_labelled|vctrs_vctr|double,,age - 4 categories,%8.0g,,,TRUE,Retained
+ppeth,double,haven_labelled|vctrs_vctr|double,,race / ethnicity,%8.0g,,,TRUE,Retained
+ppeduc,double,haven_labelled|vctrs_vctr|double,,education (highest degree received),%8.0g,,,TRUE,Retained
+pphouse,double,haven_labelled|vctrs_vctr|double,,housing type,%8.0g,,,TRUE,Retained
+pprent,double,haven_labelled|vctrs_vctr|double,,ownership status of living quarters,%8.0g,,,TRUE,Retained
+ppdualin,double,haven_labelled|vctrs_vctr|double,,dual income hh,%8.0g,,,TRUE,Retained
+ppmarit,double,haven_labelled|vctrs_vctr|double,,marital status,%8.0g,,,TRUE,Retained
+pphhhead,double,haven_labelled|vctrs_vctr|double,,household head,%8.0g,,,TRUE,Retained
+pphhsize,double,haven_labelled|vctrs_vctr|double,,household size (from recruitment),%8.0g,,,TRUE,Retained
+ppt01,double,haven_labelled|vctrs_vctr|double,,total number of hh members age 1 or younger,%8.0g,,,TRUE,Retained
+ppt1317,double,haven_labelled|vctrs_vctr|double,,total number of hh members age 13 to 17,%8.0g,,,TRUE,Retained
+ppt18ov,double,haven_labelled|vctrs_vctr|double,,total number of hh members age 18 or older,%8.0g,,,TRUE,Retained
+ppt25,double,haven_labelled|vctrs_vctr|double,,total number of hh members age 2 to 5,%8.0g,,,TRUE,Retained
+ppt612,double,haven_labelled|vctrs_vctr|double,,total number of hh members age 6 to 12,%8.0g,,,TRUE,Retained
+ppwork,double,haven_labelled|vctrs_vctr|double,,current employment status,%8.0g,,,TRUE,Retained
+ppstaten,double,haven_labelled|vctrs_vctr|double,,state (numeric),%8.0g,,,TRUE,Retained
+ppreg4,double,haven_labelled|vctrs_vctr|double,,region 4 (based on state of residence),%8.0g,,,TRUE,Retained
+ppreg9,double,haven_labelled|vctrs_vctr|double,,region 9 (based on state of residence),%8.0g,,,TRUE,Retained
+ppmsacat,double,haven_labelled|vctrs_vctr|double,,msa status,%8.0g,,,TRUE,Retained
+w4bvote,double,numeric,,w4 t1 vote choice,%9.0g,,,TRUE,Retained
+w4fvote,double,numeric,,,%9.0g,,,TRUE,Retained
+w4cond,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bturnout,double,numeric,,w4 t1 vote intention,%9.0g,,,TRUE,Retained
+w4fturnout,double,numeric,,,%9.0g,,,TRUE,Retained
+w4difturnout,double,numeric,,,%9.0g,,,TRUE,Retained
+region1,double,numeric,,ppreg4==northeast,%8.0g,,,TRUE,Retained
+region2,double,numeric,,ppreg4==midwest,%8.0g,,,TRUE,Retained
+region3,double,numeric,,ppreg4==south,%8.0g,,,TRUE,Retained
+region4,double,numeric,,ppreg4==west,%8.0g,,,TRUE,Retained
+w4b60r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b68r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b61r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b62r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b63r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b64r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b65r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b66r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b69r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f60r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f68r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f61r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f62r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f63r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f64r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f65r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f66r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f69r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fsinb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fsink,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fintb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fintk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fleadb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fleadk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fthinkb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fthinkk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bsinb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bsink,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bintb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bintk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bleadb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bleadk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bthinkb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bthinkk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bperbindex,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bperkindex,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fperbindex,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fperkindex,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bperdiff,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fperdiff,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btherb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btherk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftherb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftherk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btherdiff,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftherdiff,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btaxR,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btaxb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btaxk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btaxRb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btaxRk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bmilR,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bmilb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bmilk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bmilRb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bmilRk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btrdR,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btrdb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btrdk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btrdRb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btrdRk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4brhtR,double,numeric,,,%9.0g,,,TRUE,Retained
+w4brhtb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4brhtk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4brhtRb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4brhtRk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bhthR,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bhthb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bhthk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bhthRb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bhthRk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bsexR,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bsexb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bsexk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bsexRb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bsexRk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftaxR,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftaxb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftaxk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftaxRb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftaxRk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fmilR,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fmilb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fmilk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fmilRb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fmilRk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftrdR,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftrdb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftrdk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftrdRb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftrdRk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4frhtR,double,numeric,,,%9.0g,,,TRUE,Retained
+w4frhtb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4frhtk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4frhtRb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4frhtRk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fhthR,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fhthb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fhthk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fhthRb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fhthRk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fsexR,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fsexb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fsexk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fsexRb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fsexRk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bpolicydiff,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fpolicydiff,double,numeric,,,%9.0g,,,TRUE,Retained
+w4treat,double,numeric,,,%9.0g,,,TRUE,Retained
+treat_w4fperdiff,double,numeric,,,%9.0g,,,TRUE,Retained
+treat_w4fpolicydiff,double,numeric,,,%9.0g,,,TRUE,Retained
+pid,double,numeric,,,%9.0g,,,TRUE,Retained
+pid2,double,numeric,,,%9.0g,,,TRUE,Retained
+south,double,numeric,,,%9.0g,,,TRUE,Retained
+knowdiff,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bperbindexr,double,numeric,,revised t1 Bush personal attribute index,%9.0g,,,TRUE,Retained
+w4bperkindexr,double,numeric,,revised t1 Kerry personal attribute index,%9.0g,,,TRUE,Retained
+w4fperbindexr,double,numeric,,revised t2 Bush personal attribute index,%9.0g,,,TRUE,Retained
+w4fperkindexr,double,numeric,,revised t2 Kerry personal attribute index,%9.0g,,,TRUE,Retained
+w4bperdiffr,double,numeric,,revised t1 diff personal attribute index,%9.0g,,,TRUE,Retained
+w4fperdiffr,double,numeric,,revised t2 diff personal attribute index,%9.0g,,,TRUE,Retained
+t1tax,double,numeric,,,%9.0g,,,TRUE,Retained
+t1mil,double,numeric,,,%9.0g,,,TRUE,Retained
+t1trd,double,numeric,,,%9.0g,,,TRUE,Retained
+t1rht,double,numeric,,,%9.0g,,,TRUE,Retained
+t1hth,double,numeric,,,%9.0g,,,TRUE,Retained
+t1sex,double,numeric,,,%9.0g,,,TRUE,Retained
+t2tax,double,numeric,,,%9.0g,,,TRUE,Retained
+t2mil,double,numeric,,,%9.0g,,,TRUE,Retained
+t2trd,double,numeric,,,%9.0g,,,TRUE,Retained
+t2rht,double,numeric,,,%9.0g,,,TRUE,Retained
+t2hth,double,numeric,,,%9.0g,,,TRUE,Retained
+t2sex,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bpolicydiffr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fpolicydiffr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4t2_t1turnout,double,numeric,,,%9.0g,,,TRUE,Retained
+w4t2_t1know,double,numeric,,,%9.0g,,,TRUE,Retained
+w4t2_t1ther,double,numeric,,,%9.0g,,,TRUE,Retained
+w4t2_t1policy,double,numeric,,,%9.0g,,,TRUE,Retained
+w4t2_t1per,double,numeric,,,%9.0g,,,TRUE,Retained
+cond_t2t1know,double,numeric,,,%9.0g,,,TRUE,Retained
+cond_t2know,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b62mis,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b63mis,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f62mis,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f63mis,double,numeric,,,%9.0g,,,TRUE,Retained
+dem,double,numeric,,pid==    -1.0000,%8.0g,,,TRUE,Retained
+indep,double,numeric,,pid==     0.0000,%8.0g,,,TRUE,Retained
+rep,double,numeric,,pid==     1.0000,%8.0g,,,TRUE,Retained
+dem2,double,numeric,,pid2==    -1.0000,%8.0g,,,TRUE,Retained
+indep2,double,numeric,,pid2==     0.0000,%8.0g,,,TRUE,Retained
+rep2,double,numeric,,pid2==     1.0000,%8.0g,,,TRUE,Retained
+w4b60mis,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f60mis,double,numeric,,,%9.0g,,,TRUE,Retained
+w4t2_t1policyr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4t2_t1perr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b60rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b68rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b61rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b62rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b63rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b64rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b65rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b66rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b69rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f60rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f68rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f61rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f62rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f63rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f64rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f65rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f66rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f69rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4comstar,double,numeric,,,%9.0g,,,TRUE,Retained
+comstat1,double,numeric,,w4comstar==     1.0000,%8.0g,,,TRUE,Retained
+comstat2,double,numeric,,w4comstar==     2.0000,%8.0g,,,TRUE,Retained
+comstat3,double,numeric,,w4comstar==     3.0000,%8.0g,,,TRUE,Retained
+w4b60rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b61rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b62rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b63rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b64rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b65rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b66rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b68rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b69rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f60rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f61rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f62rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f63rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f64rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f65rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f66rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f68rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f69rrr,double,numeric,,,%9.0g,,,TRUE,Retained
+t1vt,double,numeric,,,%9.0g,,,TRUE,Retained
+t2vt,double,numeric,,,%9.0g,,,TRUE,Retained
+t2treat_issprx,double,numeric,,,%9.0g,,,TRUE,Retained
+t2treat_per,double,numeric,,,%9.0g,,,TRUE,Retained
+w4nsess,double,numeric,,,%9.0g,,,TRUE,Retained
+t2nsess_issprx,double,numeric,,,%9.0g,,,TRUE,Retained
+t2nsess_per,double,numeric,,,%9.0g,,,TRUE,Retained
+t2bushvt,double,numeric,,t2vt==     1.0000,%8.0g,,,TRUE,Retained
+t2vt2,double,numeric,,t2vt==     2.0000,%8.0g,,,TRUE,Retained
+t2vt4,double,numeric,,t2vt==     4.0000,%8.0g,,,TRUE,Retained
+t2vt5,double,numeric,,t2vt==     6.0000,%8.0g,,,TRUE,Retained
+w4smgrp,double,numeric,,,%9.0g,,,TRUE,Retained
+smsum,double,numeric,,,%9.0g,,,TRUE,Retained
+smgrptest,double,numeric,,,%9.0g,,,TRUE,Retained
+smgrpn,double,numeric,,,%9.0g,,,TRUE,Retained
+smsum_R,double,numeric,,,%9.0g,,,TRUE,Retained
+smgrpmean,double,numeric,,,%9.0g,,,TRUE,Retained
+devsmgrpmena,double,numeric,,,%9.0g,,,TRUE,Retained
+knowt2_nsess,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btaxbi,double,numeric,,t1 bush position on tax,%9.0g,,,TRUE,Retained
+w4btaxki,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bmilbi,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bmilki,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btrdbi,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btrdki,double,numeric,,,%9.0g,,,TRUE,Retained
+w4brhtbi,double,numeric,,,%9.0g,,,TRUE,Retained
+w4brhtki,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bhthbi,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bhthki,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bsexbi,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bsexki,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftaxbi,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftaxki,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fmilbi,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fmilki,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftrdbi,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftrdki,double,numeric,,,%9.0g,,,TRUE,Retained
+w4frhtbi,double,numeric,,,%9.0g,,,TRUE,Retained
+w4frhtki,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fhthbi,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fhthki,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fsexbi,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fsexki,double,numeric,,t2 Kerry position on gay marriage,%9.0g,,,TRUE,Retained
+t1knowbi,double,numeric,,t1 knowledge on bush issue position,%9.0g,,,TRUE,Retained
+t1knowki,double,numeric,,t1 knowledge on Kerry issue position,%9.0g,,,TRUE,Retained
+t2knowbi,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowki,double,numeric,,,%9.0g,,,TRUE,Retained
+t1knowi,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowi,double,numeric,,,%9.0g,,,TRUE,Retained
+t1knowtot,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowtot,double,numeric,,,%9.0g,,,TRUE,Retained
+w4cond_t2knowtot,double,numeric,,,%9.0g,,,TRUE,Retained
+w4nsess_t2knowtot,double,numeric,,,%9.0g,,,TRUE,Retained
+w4cond_t2knowi,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowt_t2perdiff,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowt_t2poldiff,double,numeric,,,%9.0g,,,TRUE,Retained
+t2know_t2perdiff,double,numeric,,,%9.0g,,,TRUE,Retained
+t2know_t2poldiff,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowi_t2perdiff,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowi_t2poldiff,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b39r,double,numeric,,t1 general retro evaluation,%9.0g,,,TRUE,Retained
+w4f39r,double,numeric,,t2 general retro evaluation,%9.0g,,,TRUE,Retained
+w4b40r,double,numeric,,t1 econ retro evaluation,%9.0g,,,TRUE,Retained
+w4f40r,double,numeric,,t2 econ retro evaluation,%9.0g,,,TRUE,Retained
+t2treat_geneva,double,numeric,,,%9.0g,,,TRUE,Retained
+t2nsess_retindex,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowt_t2retindex,double,numeric,,,%9.0g,,,TRUE,Retained
+t2know_t2retindex,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowi_t2retindex,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b8r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b10r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f8r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f10r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b7r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b9r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b11r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b12r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f7r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f9r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f11r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f12r,double,numeric,,,%9.0g,,,TRUE,Retained
+t1warindex,double,numeric,,,%9.0g,,,TRUE,Retained
+t2warindex,double,numeric,,,%9.0g,,,TRUE,Retained
+t2treat_t2warindex,double,numeric,,,%9.0g,,,TRUE,Retained
+test,double,numeric,,,%9.0g,,,TRUE,Retained
+test1,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bperbindexrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bperkindexrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fperbindexrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fperkindexrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bperdiffrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fperdiffrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fpolicydiffrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f39rr,double,numeric,,,%9.0g,,,TRUE,Retained
+nsess_issuerr,double,numeric,,,%9.0g,,,TRUE,Retained
+nsess_perrr,double,numeric,,,%9.0g,,,TRUE,Retained
+nsess_ret,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b39rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bpolicydiffrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btaxRbr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btaxRkr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bmilRbr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bmilRkr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btrdRbr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btrdRkr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4brhtRbr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4brhtRkr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bhthRbr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bhthRkr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bsexRbr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bsexRkr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftaxRbr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftaxRkr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fmilRbr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fmilRkr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftrdRbr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftrdRkr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4frhtRbr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4frhtRkr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fhthRbr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fhthRkr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fsexRbr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fsexRkr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bpolb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fpolb,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bpolk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fpolk,double,numeric,,,%9.0g,,,TRUE,Retained
+cw4bpolb,double,numeric,,,%9.0g,,,TRUE,Retained
+cw4fpolb,double,numeric,,,%9.0g,,,TRUE,Retained
+cw4bpolk,double,numeric,,,%9.0g,,,TRUE,Retained
+cw4fpolk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bpolbk,double,numeric,,Revised t1 issue proximity difference,%9.0g,,,TRUE,Retained
+w4fpolbk,double,numeric,,Revised t2 issue proximity difference,%9.0g,,,TRUE,Retained
+w4cond_polbk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4nsess_polbk,double,numeric,,,%9.0g,,,TRUE,Retained
+t2treat_perrr,double,numeric,,,%9.0g,,,TRUE,Retained
+t1knowt_t1polbk,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowt_t2polbk,double,numeric,,,%9.0g,,,TRUE,Retained
+t1know_t1polbk,double,numeric,,,%9.0g,,,TRUE,Retained
+t2know_t2polbk,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowt_t2ret,double,numeric,,,%9.0g,,,TRUE,Retained
+t1knowi_t1polbk,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowi_t2polbk,double,numeric,,,%9.0g,,,TRUE,Retained
+t2know_t2ret,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowi_t2ret,double,numeric,,,%9.0g,,,TRUE,Retained
+diffknow,double,numeric,,diff in factual knoweldge,%9.0g,,,TRUE,Retained
+diffknowi,double,numeric,,diff in placement knoweldge,%9.0g,,,TRUE,Retained
+diffknowtot,double,numeric,,diff in total knoweldge,%9.0g,,,TRUE,Retained
+difftherb,double,numeric,,t2-t1 diff. in Bush theremometer ratings,%9.0g,,,TRUE,Retained
+difftherk,double,numeric,,t2-t1 diff. in Kerry theremometer ratings,%9.0g,,,TRUE,Retained
+t2treat_pid,double,numeric,,,%9.0g,,,TRUE,Retained
+t2know_pid,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowtotcat,double,numeric,,,%9.0g,,,TRUE,Retained
+w4f40rr,double,numeric,,,%9.0g,,,TRUE,Retained
+pid_w4f40rr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2treat_w4f40rr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2retindex,double,numeric,,,%9.0g,,,TRUE,Retained
+t2treat_retindex,double,numeric,,,%9.0g,,,TRUE,Retained
+t2treat_w4f39rr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2t1difftherb,double,numeric,,,%9.0g,,,TRUE,Retained
+t2t1difftherk,double,numeric,,,%9.0g,,,TRUE,Retained
+t2t1polb,double,numeric,,,%9.0g,,,TRUE,Retained
+t2t1polk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4condr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4condrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4cond1,double,numeric,,,%9.0g,,,TRUE,Retained
+w4cond11,double,numeric,,w4cond1==     0.0000,%8.0g,,,TRUE,Retained
+w4cond12,double,numeric,,w4cond1==     1.0000,%8.0g,,,TRUE,Retained
+w4cond13,double,numeric,,w4cond1==     2.0000,%8.0g,,,TRUE,Retained
+sess_polbk,double,numeric,,,%9.0g,,,TRUE,Retained
+sess_w4fperdiffrr,double,numeric,,,%9.0g,,,TRUE,Retained
+sess_t2retindex,double,numeric,,,%9.0g,,,TRUE,Retained
+sess_pid,double,numeric,,,%9.0g,,,TRUE,Retained
+cond12_polbk,double,numeric,,,%9.0g,,,TRUE,Retained
+cond12_w4fperdiffrr,double,numeric,,,%9.0g,,,TRUE,Retained
+cond12_t2retindex,double,numeric,,,%9.0g,,,TRUE,Retained
+cond12_pid,double,numeric,,,%9.0g,,,TRUE,Retained
+cond13_polbk,double,numeric,,,%9.0g,,,TRUE,Retained
+cond13_w4fperdiffrr,double,numeric,,,%9.0g,,,TRUE,Retained
+cond13_t2retindex,double,numeric,,,%9.0g,,,TRUE,Retained
+cond13_pid,double,numeric,,,%9.0g,,,TRUE,Retained
+condr_polbk,double,numeric,,,%9.0g,,,TRUE,Retained
+condr_w4fperdiffrr,double,numeric,,,%9.0g,,,TRUE,Retained
+condr_t2retindex,double,numeric,,,%9.0g,,,TRUE,Retained
+condr_pid,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b40rr,double,numeric,,,%9.0g,,,TRUE,Retained
+t1retindex,double,numeric,,,%9.0g,,,TRUE,Retained
+t2t1perdiffrr,double,numeric,,t2 minus t1 personality diff,%9.0g,,,TRUE,Retained
+t2t1polbk,double,numeric,,,%9.0g,,,TRUE,Retained
+t2t139rr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2t1retindex,double,numeric,,,%9.0g,,,TRUE,Retained
+t2t1therdiff,double,numeric,,,%9.0g,,,TRUE,Retained
+t1vote,double,numeric,,,%9.0g,,,TRUE,Retained
+t2vote,double,numeric,,,%9.0g,,,TRUE,Retained
+t1bvt,double,numeric,,,%9.0g,,,TRUE,Retained
+t1kvt,double,numeric,,,%9.0g,,,TRUE,Retained
+t2bvt,double,numeric,,,%9.0g,,,TRUE,Retained
+t2kvt,double,numeric,,,%9.0g,,,TRUE,Retained
+nsess_pid,double,numeric,,,%9.0g,,,TRUE,Retained
+nsess_t2retindex,double,numeric,,,%9.0g,,,TRUE,Retained
+w4condr_w4fperdiffrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4condr_polbk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4condr_w4f39rr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4condr_t2retindex,double,numeric,,,%9.0g,,,TRUE,Retained
+w4condr_pid,double,numeric,,,%9.0g,,,TRUE,Retained
+test10,double,numeric,,,%9.0g,,,TRUE,Retained
+testw4ftaxbi,double,numeric,,,%9.0g,,,TRUE,Retained
+testw4ftaxki,double,numeric,,,%9.0g,,,TRUE,Retained
+testw4fmilbi,double,numeric,,,%9.0g,,,TRUE,Retained
+testw4fmilki,double,numeric,,,%9.0g,,,TRUE,Retained
+testw4ftrdbi,double,numeric,,,%9.0g,,,TRUE,Retained
+testw4ftrdki,double,numeric,,,%9.0g,,,TRUE,Retained
+testw4frhtbi,double,numeric,,,%9.0g,,,TRUE,Retained
+testw4frhtki,double,numeric,,,%9.0g,,,TRUE,Retained
+testw4fhthbi,double,numeric,,,%9.0g,,,TRUE,Retained
+testw4fhthki,double,numeric,,,%9.0g,,,TRUE,Retained
+testw4fsexbi,double,numeric,,,%9.0g,,,TRUE,Retained
+testw4fsexki,double,numeric,,,%9.0g,,,TRUE,Retained
+t2bvtr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2treat_rep,double,numeric,,,%9.0g,,,TRUE,Retained
+t2treat_dem,double,numeric,,,%9.0g,,,TRUE,Retained
+t2pid,double,numeric,,,%9.0g,,,TRUE,Retained
+t2treat_t2pid,double,numeric,,,%9.0g,,,TRUE,Retained
+t2bush,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fpolbk_r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bpolbk_r,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btrdkir,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftrdkir,double,numeric,,,%9.0g,,,TRUE,Retained
+w4brhtkir,double,numeric,,,%9.0g,,,TRUE,Retained
+w4frhtkir,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bsexkir,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fsexkir,double,numeric,,,%9.0g,,,TRUE,Retained
+t1knowbir,double,numeric,,,%9.0g,,,TRUE,Retained
+t1knowkir,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowbir,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowkir,double,numeric,,,%9.0g,,,TRUE,Retained
+t1knowir,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowir,double,numeric,,,%9.0g,,,TRUE,Retained
+t1knowtotr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowtotr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2t1_knowir,double,numeric,,,%9.0g,,,TRUE,Retained
+t2t1_knowtotr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftaxirel,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fmilirel,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftrdirel,double,numeric,,,%9.0g,,,TRUE,Retained
+w4frhtirel,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fhthirel,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fsexirel,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btaxirel,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bmilirel,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btrdirel,double,numeric,,,%9.0g,,,TRUE,Retained
+w4brhtirel,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bhthirel,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bsexirel,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btaxirelc,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bmilirelc,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btrdirelc,double,numeric,,,%9.0g,,,TRUE,Retained
+w4brhtirelc,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bhthirelc,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bsexirelc,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftaxirelc,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fmilirelc,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftrdirelc,double,numeric,,,%9.0g,,,TRUE,Retained
+w4frhtirelc,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fhthirelc,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fsexirelc,double,numeric,,,%9.0g,,,TRUE,Retained
+t1knowirr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowirr,double,numeric,,,%9.0g,,,TRUE,Retained
+t1knowtotrr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowtotrr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2t1_knowirr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2t1_knowtotrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btaxirelc1,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bmilirelc1,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btrdirelc1,double,numeric,,,%9.0g,,,TRUE,Retained
+w4brhtirelc1,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bhthirelc1,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bsexirelc1,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftaxirelc1,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fmilirelc1,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftrdirelc1,double,numeric,,,%9.0g,,,TRUE,Retained
+w4frhtirelc1,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fhthirelc1,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fsexirelc1,double,numeric,,,%9.0g,,,TRUE,Retained
+t1knowirrr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowirrr,double,numeric,,,%9.0g,,,TRUE,Retained
+t1knowtotrrr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowtotrrr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2t1_knowirrr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2t1_knowtotrrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btaxirelc2,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bmilirelc2,double,numeric,,,%9.0g,,,TRUE,Retained
+w4btrdirelc2,double,numeric,,,%9.0g,,,TRUE,Retained
+w4brhtirelc2,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bhthirelc2,double,numeric,,,%9.0g,,,TRUE,Retained
+w4bsexirelc2,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftaxirelc2,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fmilirelc2,double,numeric,,,%9.0g,,,TRUE,Retained
+w4ftrdirelc2,double,numeric,,,%9.0g,,,TRUE,Retained
+w4frhtirelc2,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fhthirelc2,double,numeric,,,%9.0g,,,TRUE,Retained
+w4fsexirelc2,double,numeric,,,%9.0g,,,TRUE,Retained
+t1knowirrrr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowirrrr,double,numeric,,,%9.0g,,,TRUE,Retained
+t1knowtotrrrr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowtotrrrr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2t1_knowirrrr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2t1_knowtotrrrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4condr_rep,double,numeric,,,%9.0g,,,TRUE,Retained
+w4condr_dem,double,numeric,,,%9.0g,,,TRUE,Retained
+t2knowtotrrcat,double,numeric,,,%9.0g,,,TRUE,Retained
+w4condr_w4bperdiffrr,double,numeric,,,%9.0g,,,TRUE,Retained
+w4condr_w4bpolbk,double,numeric,,,%9.0g,,,TRUE,Retained
+w4condr_t1retindex,double,numeric,,,%9.0g,,,TRUE,Retained
+t1bvtr,double,numeric,,,%9.0g,,,TRUE,Retained
+t1bvtrr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2bvtrr,double,numeric,,,%9.0g,,,TRUE,Retained
+t1bvtf,double,numeric,,,%9.0g,,,TRUE,Retained
+t2bvtf,double,numeric,,,%9.0g,,,TRUE,Retained
+vtvalid,double,numeric,,,%9.0g,,,TRUE,Retained
+dop1part,double,numeric,,,%9.0g,,,TRUE,Retained
+dop2part,double,numeric,,,%9.0g,,,TRUE,Retained
+dop3part,double,numeric,,,%9.0g,,,TRUE,Retained
+dop4part,double,numeric,,,%9.0g,,,TRUE,Retained
+dopprev,double,numeric,,,%9.0g,,,TRUE,Retained
+filter,double,numeric,,,%9.0g,,,TRUE,Retained
+racewh,double,numeric,,,%9.0g,,,TRUE,Retained
+rr_racewh,double,numeric,,,%9.0g,,,TRUE,Retained
+afemale,double,numeric,,,%9.0g,,,TRUE,Retained
+cfemale,double,numeric,,,%9.0g,,,TRUE,Retained
+aracewh,double,numeric,,,%9.0g,,,TRUE,Retained
+cwhite,double,numeric,,,%9.0g,,,TRUE,Retained
+ahigheduc,double,numeric,,educ4 == 4,%8.0g,,,TRUE,Retained
+chigheduc,double,numeric,,,%9.0g,,,TRUE,Retained
+aminority,double,numeric,,,%9.0g,,,TRUE,Retained
+cminority,double,numeric,,,%9.0g,,,TRUE,Retained
+highknow,double,numeric,,,%9.0g,,,TRUE,Retained
+chighknow,double,numeric,,,%9.0g,,,TRUE,Retained
+vart1serv,double,numeric,,,%9.0g,,,TRUE,Retained
+vart1multi,double,numeric,,,%9.0g,,,TRUE,Retained
+vart1freetrd,double,numeric,,,%9.0g,,,TRUE,Retained
+vart1const,double,numeric,,,%9.0g,,,TRUE,Retained
+vart1healthins,double,numeric,,,%9.0g,,,TRUE,Retained
+vart1gaymar,double,numeric,,,%9.0g,,,TRUE,Retained
+avgvar,double,numeric,,,%9.0g,,,TRUE,Retained
+highinc,double,numeric,,,%9.0g,,,TRUE,Retained
+ahighinc,double,numeric,,,%9.0g,,,TRUE,Retained
+chighinc,double,numeric,,,%9.0g,,,TRUE,Retained
+phighinc,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b60r_cor,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b61r_cor,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b62r_cor,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b63r_cor,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b64r_cor,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b65r_cor,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b66r_cor,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b68r_cor,double,numeric,,,%9.0g,,,TRUE,Retained
+w4b69r_cor,double,numeric,,,%9.0g,,,TRUE,Retained
+t1know_cor_btp04,double,numeric,,,%9.0g,,,TRUE,Retained
+sdt1serv,double,numeric,,,%9.0g,,,TRUE,Retained
+sdt1multi,double,numeric,,,%9.0g,,,TRUE,Retained
+sdt1freetrd,double,numeric,,,%9.0g,,,TRUE,Retained
+sdt1const,double,numeric,,,%9.0g,,,TRUE,Retained
+sdt1healthins,double,numeric,,,%9.0g,,,TRUE,Retained
+sdt1gaymar,double,numeric,,,%9.0g,,,TRUE,Retained
+avgsd_btp04ge,double,numeric,,,%9.0g,,,TRUE,Retained
+btp04_ext1,double,numeric,,,%9.0g,,,TRUE,Retained
+btp04_ext2,double,numeric,,,%9.0g,,,TRUE,Retained
+btp04_ext3,double,numeric,,,%9.0g,,,TRUE,Retained
+btp04_ext4,double,numeric,,,%9.0g,,,TRUE,Retained
+btp04_ext5,double,numeric,,,%9.0g,,,TRUE,Retained
+btp04_ext6,double,numeric,,,%9.0g,,,TRUE,Retained
+btp04_attextreme,double,numeric,,,%9.0g,,,TRUE,Retained
+attextreme,double,numeric,,,%9.0g,,,TRUE,Retained
+timebtw,double,numeric,,,%9.0g,,,TRUE,Retained
+length,double,numeric,,,%9.0g,,,TRUE,Retained
+readbrief,double,numeric,,,%9.0g,,,TRUE,Retained
+t1polint,double,numeric,,,%9.0g,,,TRUE,Retained
+id,double,numeric,,,%9.0g,,,TRUE,Retained
+pollid2,double,numeric,,,%9.0g,,,TRUE,Retained
+caseid,double,numeric,,,%9.0g,,,TRUE,Retained

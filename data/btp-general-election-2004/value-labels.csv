@@ -1,0 +1,2658 @@
+source_column,source_value,value_label
+ppeducat,1,less than hs
+ppeducat,2,hs
+ppeducat,3,some college
+ppeducat,4,bachelor's degree or higher
+ppeducat,99,missing
+ppincimp,1,"less than $5,000"
+ppincimp,2,"$5,000 to $7,499"
+ppincimp,3,"$7,500 to $9,999"
+ppincimp,4,"$10,000 to $12,499"
+ppincimp,5,"$12,500 to $14,999"
+ppincimp,6,"$15,000 to $19,999"
+ppincimp,7,"$20,000 to $24,999"
+ppincimp,8,"$25,000 to $29,999"
+ppincimp,9,"$30,000 to $34,999"
+ppincimp,10,"$35,000 to $39,999"
+ppincimp,11,"$40,000 to $49,999"
+ppincimp,12,"$50,000 to $59,999"
+ppincimp,13,"$60,000 to $74,999"
+ppincimp,14,"$75,000 to $84,999"
+ppincimp,15,"$85,000 to $99,999"
+ppincimp,16,"$100,000 to $124,999"
+ppincimp,17,"$125,000 or more"
+ppincimp,99,missing
+dop1,0,"dop participant, but not in this wave"
+dop1,1,dop participant in this wave
+dop1,2,control case in this wave
+dop1,3,control case not in this wave
+dop2,0,"dop participant, but not in this wave"
+dop2,1,dop participant in this wave
+dop2,2,control case in this wave
+dop2,3,control case not in this wave
+dop3,0,"dop participant, but not in this wave"
+dop3,1,dop participant in this wave
+dop3,2,control case in this wave
+dop3,3,control case not in this wave
+dop4,0,"dop participant, but not in this wave"
+dop4,1,dop participant in this wave
+dop4,2,control case in this wave
+dop4,3,control case not in this wave
+dop1pct,-4,n/a:  control case
+dop1pct,-3,n/a as not a dop member within this wave
+dop2pct,-4,n/a:  control case
+dop2pct,-3,n/a as not a dop member within this wave
+dop3pct,-4,n/a:  control case
+dop3pct,-3,n/a as not a dop member within this wave
+dop4pct,-4,n/a:  control case
+dop4pct,-3,n/a as not a dop member within this wave
+dop1_no,-4,n/a:  control case
+dop1_no,-3,n/a as not a dop member within this wave
+dop2_no,-4,n/a:  control case
+dop2_no,-3,n/a as not a dop member within this wave
+dop3_no,-4,n/a:  control case
+dop3_no,-3,n/a as not a dop member within this wave
+dop4_no,-4,n/a:  control case
+dop4_no,-3,n/a as not a dop member within this wave
+w4allstr,-4,case in not in wave of data collection
+w4allstr,-3,"case in wave, no survey on file"
+w4allstr,1,chat session participant (previous)
+w4allstr,2,chat session participant (fresh)
+w4allstr,3,control group (fall baseline/followup) partial treatment
+w4allstr,4,control group (fall baseline/followup) no treatment
+w4allstr,5,control group (fall followup only)
+dopever,0,never a dop participant
+dopever,1,dop participant at least once
+w3serial,-4,case in not in wave of data collection
+w3serial,-3,"case in wave, no survey on file"
+w4serial,-4,case in not in wave of data collection
+w4serial,-3,"case in wave, no survey on file"
+w1bdtst,-4,case in not in wave of data collection
+w1bdtst,-3,"case in wave, no survey on file"
+w1btmst,-4,case in not in wave of data collection
+w1btmst,-3,"case in wave, no survey on file"
+w1bdtend,-4,case in not in wave of data collection
+w1bdtend,-3,"case in wave, no survey on file"
+w1tmend,-4,case in not in wave of data collection
+w1tmend,-3,"case in wave, no survey on file"
+w1bdur,-4,case in not in wave of data collection
+w1bdur,-3,"case in wave, no survey on file"
+w1bres,-4,case in not in wave of data collection
+w1bres,-3,"case in wave, no survey on file"
+w1bres,0,not a resumed interview (duration less than 100 minutes)
+w1bres,1,resumed interview (duration 100 minutes or more)
+w1a_stdt,-4,case in not in wave of data collection
+w1a_stdt,-3,"case in wave, no survey on file"
+w1a_sttm,-4,case in not in wave of data collection
+w1a_sttm,-3,"case in wave, no survey on file"
+w1a_endt,-4,case in not in wave of data collection
+w1a_endt,-3,"case in wave, no survey on file"
+w1a_entm,-4,case in not in wave of data collection
+w1a_entm,-3,"case in wave, no survey on file"
+w1a_dur,-4,case in not in wave of data collection
+w1a_dur,-3,"case in wave, no survey on file"
+w1a_res,-4,case in not in wave of data collection
+w1a_res,-3,"case in wave, no survey on file"
+w1a_res,0,not a resumed interview (duration less than 100 minutes)
+w1a_res,1,resumed interview (duration 100 minutes or more)
+w1a_q1,-4,case in not in wave of data collection
+w1a_q1,-3,"case in wave, no survey on file"
+w1a_q1,-2,not asked
+w1a_q1,-1,refused
+w1a_q1,1,agree strongly
+w1a_q1,2,agree somewhat
+w1a_q1,3,neither agree nor disagree
+w1a_q1,4,disagree somewhat
+w1a_q1,5,disagree strongly
+w1a_q1,6,don't know
+w1a_q2,-4,case in not in wave of data collection
+w1a_q2,-3,"case in wave, no survey on file"
+w1a_q2,-2,not asked
+w1a_q2,-1,refused
+w1a_q2,1,agree strongly
+w1a_q2,2,agree somewhat
+w1a_q2,3,neither agree nor disagree
+w1a_q2,4,disagree somewhat
+w1a_q2,5,disagree strongly
+w1a_q2,6,don't know
+w2bdtst,-4,case in not in wave of data collection
+w2bdtst,-3,"case in wave, no survey on file"
+w2btmst,-4,case in not in wave of data collection
+w2btmst,-3,"case in wave, no survey on file"
+w2bdtend,-4,case in not in wave of data collection
+w2bdtend,-3,"case in wave, no survey on file"
+w2btmend,-4,case in not in wave of data collection
+w2btmend,-3,"case in wave, no survey on file"
+w2bdur,-4,case in not in wave of data collection
+w2bdur,-3,"case in wave, no survey on file"
+w2bdurct,-4,case in not in wave of data collection
+w2bdurct,-3,"case in wave, no survey on file"
+w2bdurct,1,less than 5 minutes
+w2bdurct,2,5 - 9:59
+w2bdurct,3,10 - 14:59
+w2bdurct,4,15 - 19:59
+w2bdurct,5,20 - 24:59
+w2bdurct,6,25 - 29:59
+w2bdurct,7,30 - 34:59
+w2bdurct,8,35 - 39:59
+w2bdurct,9,40 - 44:59
+w2bdurct,10,45 - 49:59
+w2bdurct,11,50 - 54:59
+w2bdurct,12,55 - 59:59
+w2bdurct,13,60 - 64:59
+w2bdurct,14,65 - 69:59
+w2bdurct,15,70 - 74:59
+w2bdurct,16,75 - 79:59
+w2bdurct,17,80 - 84:59
+w2bdurct,18,85 - 89:59
+w2bdurct,19,90 - 94:59
+w2bdurct,20,95 - 99:59
+w2bdurct,21,more than 100 minutes
+w3jan03,-4,case in not in wave of data collection
+w3jan03,-3,"case in wave, no survey on file"
+w3jan03,1,yes
+w3jan03,2,no
+w3sep03,-4,case in not in wave of data collection
+w3sep03,-3,"case in wave, no survey on file"
+w3sep03,1,yes
+w3sep03,2,no
+w3jan03s,-4,case in not in wave of data collection
+w3jan03s,-3,"case in wave, no survey on file"
+w3jan03s,1,broadband
+w3jan03s,2,dialup
+w3jan03s,3,pc
+w3compf1,-4,case in not in wave of data collection
+w3compf1,-3,"case in wave, no survey on file"
+w3compf1,1,yes
+w3compf1,2,no
+w3bdst,-4,case in not in wave of data collection
+w3bdst,-3,"case in wave, no survey on file"
+w3btst,-4,case in not in wave of data collection
+w3btst,-3,"case in wave, no survey on file"
+w3bdend,-4,case in not in wave of data collection
+w3bdend,-3,"case in wave, no survey on file"
+w3btend,-4,case in not in wave of data collection
+w3btend,-3,"case in wave, no survey on file"
+w3bdur,-4,case in not in wave of data collection
+w3bdur,-3,"case in wave, no survey on file"
+w3bdurct,-4,case in not in wave of data collection
+w3bdurct,-3,"case in wave, no survey on file"
+w3bdurct,1,less than 5 minutes
+w3bdurct,2,5 - 9:59
+w3bdurct,3,10 - 14:59
+w3bdurct,4,15 - 19:59
+w3bdurct,5,20 - 24:59
+w3bdurct,6,25 - 29:59
+w3bdurct,7,30 - 34:59
+w3bdurct,8,35 - 39:59
+w3bdurct,9,40 - 44:59
+w3bdurct,10,45 - 49:59
+w3bdurct,11,50 - 54:59
+w3bdurct,12,55 - 59:59
+w3bdurct,13,60 - 64:59
+w3bdurct,14,65 - 69:59
+w3bdurct,15,70 - 74:59
+w3bdurct,16,75 - 79:59
+w3bdurct,17,80 - 84:59
+w3bdurct,18,85 - 89:59
+w3bdurct,19,90 - 94:59
+w3bdurct,20,95 - 99:59
+w3bdurct,21,more than 100 minutes
+w4comsta,-4,case in not in wave of data collection
+w4comsta,-3,"case in wave, no survey on file"
+w4comsta,1,both
+w4comsta,2,baseline only
+w4comsta,3,followup only
+w4bstart,-4,case in not in wave of data collection
+w4bstart,-3,"case in wave, no survey on file"
+w4bend,-4,case in not in wave of data collection
+w4bend,-3,"case in wave, no survey on file"
+w4bdur,-4,case in not in wave of data collection
+w4bdur,-3,"case in wave, no survey on file"
+w4bres,-4,case in not in wave of data collection
+w4bres,-3,"case in wave, no survey on file"
+w4bres,0,not a resumed interview (duration less than 100 minutes)
+w4bres,1,resumed interview (duration 100 minutes or more)
+w4b1,-4,case in not in wave of data collection
+w4b1,-3,"case in wave, no survey on file"
+w4b1,-2,not asked
+w4b1,-1,refused
+w4b1,1,certain to vote
+w4b1,2,likely to vote
+w4b1,3,about as likely to vote as not
+w4b1,4,likely not to vote
+w4b1,5,certain not to vote
+w4b2,-4,case in not in wave of data collection
+w4b2,-3,"case in wave, no survey on file"
+w4b2,-2,not asked
+w4b2,-1,refused
+w4b2,1,george w. bush
+w4b2,2,john kerry
+w4b2,3,ralph nader
+w4b2,4,someone else
+w4b2,5,blank
+w4b2,6,not sure
+w4b3,-4,case in not in wave of data collection
+w4b3,-3,"case in wave, no survey on file"
+w4b3,-2,not asked
+w4b3,-1,refused
+w4b3,1,completely sure
+w4b3,2,reasonably sure
+w4b3,3,not very sure
+w4b4,-4,case in not in wave of data collection
+w4b4,-3,"case in wave, no survey on file"
+w4b4,-2,not asked
+w4b4,-1,refused
+w4b4,1,agree strongly
+w4b4,2,agree somewhat
+w4b4,3,neither agree nor disagree
+w4b4,4,disagree somewhat
+w4b4,5,disagree strongly
+w4b4,6,blank
+w4b4,7,i haven't thought much about this
+w4b5,-4,case in not in wave of data collection
+w4b5,-3,"case in wave, no survey on file"
+w4b5,-2,not asked
+w4b5,-1,refused
+w4b5,1,agree strongly
+w4b5,2,agree somewhat
+w4b5,3,neither agree nor disagree
+w4b5,4,disagree somewhat
+w4b5,5,disagree strongly
+w4b5,6,blank
+w4b5,7,i haven't thought much about this
+w4b6,-4,case in not in wave of data collection
+w4b6,-3,"case in wave, no survey on file"
+w4b6,-2,not asked
+w4b6,-1,refused
+w4b6,1,agree strongly
+w4b6,2,agree somewhat
+w4b6,3,neither agree nor disagree
+w4b6,4,disagree somewhat
+w4b6,5,disagree strongly
+w4b6,6,blank
+w4b6,7,i haven't thought much about this
+w4b7,-4,case in not in wave of data collection
+w4b7,-3,"case in wave, no survey on file"
+w4b7,-2,not asked
+w4b7,-1,refused
+w4b7,1,agree strongly
+w4b7,2,agree somewhat
+w4b7,3,neither agree nor disagree
+w4b7,4,disagree somewhat
+w4b7,5,disagree strongly
+w4b7,6,blank
+w4b7,7,i haven't thought much about this
+w4b8,-4,case in not in wave of data collection
+w4b8,-3,"case in wave, no survey on file"
+w4b8,-2,not asked
+w4b8,-1,refused
+w4b8,1,agree strongly
+w4b8,2,agree somewhat
+w4b8,3,neither agree nor disagree
+w4b8,4,disagree somewhat
+w4b8,5,disagree strongly
+w4b8,6,blank
+w4b8,7,i haven't thought much about this
+w4b9,-4,case in not in wave of data collection
+w4b9,-3,"case in wave, no survey on file"
+w4b9,-2,not asked
+w4b9,-1,refused
+w4b9,1,strengthened it a lot
+w4b9,2,strengthened it somewhat
+w4b9,3,neither strengthened nor weakened it
+w4b9,4,weakened it somewhat
+w4b9,5,weakened it a lot
+w4b9,6,blank
+w4b9,7,i haven't thought much about this
+w4b10,-4,case in not in wave of data collection
+w4b10,-3,"case in wave, no survey on file"
+w4b10,-2,not asked
+w4b10,-1,refused
+w4b10,1,increased their power a lot
+w4b10,2,increased their power somewhat
+w4b10,3,neither increased nor decreased their power
+w4b10,4,decreased their power somewhat
+w4b10,5,decreased their power a lot
+w4b10,6,blank
+w4b10,7,i haven't thought much about this
+w4b11,-4,case in not in wave of data collection
+w4b11,-3,"case in wave, no survey on file"
+w4b11,-2,not asked
+w4b11,-1,refused
+w4b11,1,very successful
+w4b11,2,somewhat successful
+w4b11,3,neither successful nor unsuccessful
+w4b11,4,somewhat unsuccessful
+w4b11,5,very unsuccessful
+w4b11,6,blank
+w4b11,7,i haven't thought much about this
+w4b12,-4,case in not in wave of data collection
+w4b12,-3,"case in wave, no survey on file"
+w4b12,-2,not asked
+w4b12,-1,refused
+w4b12,1,very successful
+w4b12,2,somewhat successful
+w4b12,3,neither successful nor unsuccessful
+w4b12,4,somewhat unsuccessful
+w4b12,5,very unsuccessful
+w4b12,6,blank
+w4b12,7,i haven't thought much about this
+w4b13,-4,case in not in wave of data collection
+w4b13,-3,"case in wave, no survey on file"
+w4b13,-2,not asked
+w4b13,-1,refused
+w4b13,1,agree strongly
+w4b13,2,agree somewhat
+w4b13,3,neither agree nor disagree
+w4b13,4,disagree somewhat
+w4b13,5,disagree strongly
+w4b13,6,blank
+w4b13,7,i haven't thought much about this
+w4b14,-4,case in not in wave of data collection
+w4b14,-3,"case in wave, no survey on file"
+w4b14,-2,not asked
+w4b14,-1,refused
+w4b14,1,agree strongly
+w4b14,2,agree somewhat
+w4b14,3,neither agree nor disagree
+w4b14,4,disagree somewhat
+w4b14,5,disagree strongly
+w4b14,6,blank
+w4b14,7,i haven't thought much about this
+w4b15,-4,case in not in wave of data collection
+w4b15,-3,"case in wave, no survey on file"
+w4b15,-2,not asked
+w4b15,-1,refused
+w4b15,1,agree strongly
+w4b15,2,agree somewhat
+w4b15,3,neither agree nor disagree
+w4b15,4,disagree somewhat
+w4b15,5,disagree strongly
+w4b15,6,blank
+w4b15,7,i haven't thought much about this
+w4b16,-4,case in not in wave of data collection
+w4b16,-3,"case in wave, no survey on file"
+w4b16,-2,not asked
+w4b16,-1,refused
+w4b16,1,agree strongly
+w4b16,2,agree somewhat
+w4b16,3,neither agree nor disagree
+w4b16,4,disagree somewhat
+w4b16,5,disagree strongly
+w4b16,6,blank
+w4b16,7,i haven't thought much about this
+w4b17,-4,case in not in wave of data collection
+w4b17,-3,"case in wave, no survey on file"
+w4b17,-2,not asked
+w4b17,-1,refused
+w4b17,1,agree strongly
+w4b17,2,agree somewhat
+w4b17,3,neither agree nor disagree
+w4b17,4,disagree somewhat
+w4b17,5,disagree strongly
+w4b17,6,blank
+w4b17,7,i haven't thought much about this
+w4b18,-4,case in not in wave of data collection
+w4b18,-3,"case in wave, no survey on file"
+w4b18,-2,not asked
+w4b18,-1,refused
+w4b18,1,agree strongly
+w4b18,2,agree somewhat
+w4b18,3,neither agree nor disagree
+w4b18,4,disagree somewhat
+w4b18,5,disagree strongly
+w4b18,6,blank
+w4b18,7,i haven't thought much about this
+w4b19,-4,case in not in wave of data collection
+w4b19,-3,"case in wave, no survey on file"
+w4b19,-2,not asked
+w4b19,-1,refused
+w4b19,1,agree strongly
+w4b19,2,agree somewhat
+w4b19,3,neither agree nor disagree
+w4b19,4,disagree somewhat
+w4b19,5,disagree strongly
+w4b19,6,blank
+w4b19,7,i haven't thought much about this
+w4b20,-4,case in not in wave of data collection
+w4b20,-3,"case in wave, no survey on file"
+w4b20,-2,not asked
+w4b20,-1,refused
+w4b20,1,agree strongly
+w4b20,2,agree somewhat
+w4b20,3,neither agree nor disagree
+w4b20,4,disagree somewhat
+w4b20,5,disagree strongly
+w4b20,6,blank
+w4b20,7,i haven't thought much about this
+w4b212210,-4,case in not in wave of data collection
+w4b212210,-3,"case in wave, no survey on file"
+w4b212210,-2,not asked
+w4b212210,-1,refused
+w4b212210,1,extremely well
+w4b212210,2,pretty well
+w4b212210,3,not too well
+w4b212210,4,not well at all
+w4b212210,5,don't know
+w4b21222,-4,case in not in wave of data collection
+w4b21222,-3,"case in wave, no survey on file"
+w4b21222,-2,not asked
+w4b21222,-1,refused
+w4b21222,1,extremely well
+w4b21222,2,pretty well
+w4b21222,3,not too well
+w4b21222,4,not well at all
+w4b21222,5,don't know
+w4b23241,-4,case in not in wave of data collection
+w4b23241,-3,"case in wave, no survey on file"
+w4b23241,-2,not asked
+w4b23241,-1,refused
+w4b23241,1,extremely well
+w4b23241,2,pretty well
+w4b23241,3,not too well
+w4b23241,4,not well at all
+w4b23241,5,don't know
+w4b23242,-4,case in not in wave of data collection
+w4b23242,-3,"case in wave, no survey on file"
+w4b23242,-2,not asked
+w4b23242,-1,refused
+w4b23242,1,extremely well
+w4b23242,2,pretty well
+w4b23242,3,not too well
+w4b23242,4,not well at all
+w4b23242,5,don't know
+w4b25261,-4,case in not in wave of data collection
+w4b25261,-3,"case in wave, no survey on file"
+w4b25261,-2,not asked
+w4b25261,-1,refused
+w4b25261,1,extremely well
+w4b25261,2,pretty well
+w4b25261,3,not too well
+w4b25261,4,not well at all
+w4b25261,5,don't know
+w4b25262,-4,case in not in wave of data collection
+w4b25262,-3,"case in wave, no survey on file"
+w4b25262,-2,not asked
+w4b25262,-1,refused
+w4b25262,1,extremely well
+w4b25262,2,pretty well
+w4b25262,3,not too well
+w4b25262,4,not well at all
+w4b25262,5,don't know
+w4b2281,-4,case in not in wave of data collection
+w4b2281,-3,"case in wave, no survey on file"
+w4b2281,-2,not asked
+w4b2281,-1,refused
+w4b2281,1,extremely well
+w4b2281,2,pretty well
+w4b2281,3,not too well
+w4b2281,4,not well at all
+w4b2281,5,don't know
+w4b27282,-4,case in not in wave of data collection
+w4b27282,-3,"case in wave, no survey on file"
+w4b27282,-2,not asked
+w4b27282,-1,refused
+w4b27282,1,extremely well
+w4b27282,2,pretty well
+w4b27282,3,not too well
+w4b27282,4,not well at all
+w4b27282,5,don't know
+w4b29301,-4,case in not in wave of data collection
+w4b29301,-3,"case in wave, no survey on file"
+w4b29301,-2,not asked
+w4b29301,-1,refused
+w4b29301,1,extremely well
+w4b29301,2,pretty well
+w4b29301,3,not too well
+w4b29301,4,not well at all
+w4b29301,5,don't know
+w4b29302,-4,case in not in wave of data collection
+w4b29302,-3,"case in wave, no survey on file"
+w4b29302,-2,not asked
+w4b29302,-1,refused
+w4b29302,1,extremely well
+w4b29302,2,pretty well
+w4b29302,3,not too well
+w4b29302,4,not well at all
+w4b29302,5,don't know
+w4b3132a,-4,case in not in wave of data collection
+w4b3132a,-3,"case in wave, no survey on file"
+w4b3132a,-2,not asked not familiar
+w4b3132a,-1,refused not familiar
+w4b3132a,0,no not familiar
+w4b3132a,1,not familiar
+w4b3132b,-4,case in not in wave of data collection
+w4b3132b,-3,"case in wave, no survey on file"
+w4b3132b,-2,not asked
+w4b3132b,-1,refused
+w4b3132c,-4,case in not in wave of data collection
+w4b3132c,-3,"case in wave, no survey on file"
+w4b3132c,-2,not asked
+w4b3132c,-1,refused
+w4b3132d,-4,case in not in wave of data collection
+w4b3132d,-3,"case in wave, no survey on file"
+w4b3132d,-2,not asked not familiar
+w4b3132d,-1,refused not familiar
+w4b3132d,0,no not familiar
+w4b3132d,1,not familiar
+w4b3132e,-4,case in not in wave of data collection
+w4b3132e,-3,"case in wave, no survey on file"
+w4b3132e,-2,not asked
+w4b3132e,-1,refused
+w4b3132f,-4,case in not in wave of data collection
+w4b3132f,-3,"case in wave, no survey on file"
+w4b3132f,-2,not asked can't say
+w4b3132f,-1,refused can't say
+w4b3132f,0,no can't say
+w4b3132f,1,can't say
+w4b3132g,-4,case in not in wave of data collection
+w4b3132g,-3,"case in wave, no survey on file"
+w4b3132g,-2,not asked
+w4b3132g,-1,refused
+w4b3132h,-4,case in not in wave of data collection
+w4b3132h,-3,"case in wave, no survey on file"
+w4b3132h,-2,not asked can't say
+w4b3132h,-1,refused can't say
+w4b3132h,0,no can't say
+w4b3132h,1,can't say
+w4b3132i,-4,case in not in wave of data collection
+w4b3132i,-3,"case in wave, no survey on file"
+w4b3132i,-2,not asked
+w4b3132i,-1,refused
+w4b3132j,-4,case in not in wave of data collection
+w4b3132j,-3,"case in wave, no survey on file"
+w4b3132j,-2,not asked not familiar
+w4b3132j,-1,refused not familiar
+w4b3132j,0,no not familiar
+w4b3132j,1,not familiar
+w4b3132k,-4,case in not in wave of data collection
+w4b3132k,-3,"case in wave, no survey on file"
+w4b3132k,-2,not asked
+w4b3132k,-1,refused
+w4b3132l,-4,case in not in wave of data collection
+w4b3132l,-3,"case in wave, no survey on file"
+w4b3132l,-2,not asked can't say
+w4b3132l,-1,refused can't say
+w4b3132l,0,no can't say
+w4b3132l,1,can't say
+w4b3132m,-4,case in not in wave of data collection
+w4b3132m,-3,"case in wave, no survey on file"
+w4b3132m,-2,not asked
+w4b3132m,-1,refused
+w4b3132n,-4,case in not in wave of data collection
+w4b3132n,-3,"case in wave, no survey on file"
+w4b3132n,-2,not asked can't say
+w4b3132n,-1,refused can't say
+w4b3132n,0,no can't say
+w4b3132n,1,can't say
+w4b33811,-4,case in not in wave of data collection
+w4b33811,-3,"case in wave, no survey on file"
+w4b33811,-2,not asked
+w4b33811,-1,refused
+w4b33812,-4,case in not in wave of data collection
+w4b33812,-3,"case in wave, no survey on file"
+w4b33812,-2,not asked
+w4b33812,-1,refused
+w4b33821,-4,case in not in wave of data collection
+w4b33821,-3,"case in wave, no survey on file"
+w4b33821,-2,not asked
+w4b33821,-1,refused
+w4b33822,-4,case in not in wave of data collection
+w4b33822,-3,"case in wave, no survey on file"
+w4b33822,-2,not asked
+w4b33822,-1,refused
+w4b33831,-4,case in not in wave of data collection
+w4b33831,-3,"case in wave, no survey on file"
+w4b33831,-2,not asked
+w4b33831,-1,refused
+w4b33832,-4,case in not in wave of data collection
+w4b33832,-3,"case in wave, no survey on file"
+w4b33832,-2,not asked
+w4b33832,-1,refused
+w4b33841,-4,case in not in wave of data collection
+w4b33841,-3,"case in wave, no survey on file"
+w4b33841,-2,not asked
+w4b33841,-1,refused
+w4b33842,-4,case in not in wave of data collection
+w4b33842,-3,"case in wave, no survey on file"
+w4b33842,-2,not asked
+w4b33842,-1,refused
+w4b33851,-4,case in not in wave of data collection
+w4b33851,-3,"case in wave, no survey on file"
+w4b33851,-2,not asked
+w4b33851,-1,refused
+w4b33852,-4,case in not in wave of data collection
+w4b33852,-3,"case in wave, no survey on file"
+w4b33852,-2,not asked
+w4b33852,-1,refused
+w4b33861,-4,case in not in wave of data collection
+w4b33861,-3,"case in wave, no survey on file"
+w4b33861,-2,not asked
+w4b33861,-1,refused
+w4b33862,-4,case in not in wave of data collection
+w4b33862,-3,"case in wave, no survey on file"
+w4b33862,-2,not asked
+w4b33862,-1,refused
+w4b39,-4,case in not in wave of data collection
+w4b39,-3,"case in wave, no survey on file"
+w4b39,-2,not asked
+w4b39,-1,refused
+w4b39,1,very well
+w4b39,2,pretty well
+w4b39,3,neither well nor poorly
+w4b39,4,pretty poorly
+w4b39,5,very poorly
+w4b39,6,blank
+w4b39,7,i haven't thought much about this
+w4b40,-4,case in not in wave of data collection
+w4b40,-3,"case in wave, no survey on file"
+w4b40,-2,not asked
+w4b40,-1,refused
+w4b40,1,much better
+w4b40,2,somewhat better
+w4b40,3,neither better nor worse
+w4b40,4,somewhat worse
+w4b40,5,much worse
+w4b40,6,blank
+w4b40,7,i haven't thought much about this
+w4b42,-4,case in not in wave of data collection
+w4b42,-3,"case in wave, no survey on file"
+w4b42,-2,not asked
+w4b42,-1,refused
+w4b42,1,fewerservices/lowertaxes1
+w4b42,2,2
+w4b42,3,3
+w4b42,4,4
+w4b42,5,5
+w4b42,6,6
+w4b42,7,moreservices/highertaxes7
+w4b42,8,blank
+w4b42,9,haven't thought much about this
+w4b43441,-4,case in not in wave of data collection
+w4b43441,-3,"case in wave, no survey on file"
+w4b43441,-2,not asked
+w4b43441,-1,refused
+w4b43441,1,fewerservices/lowertaxes1
+w4b43441,2,2
+w4b43441,3,3
+w4b43441,4,4
+w4b43441,5,5
+w4b43441,6,6
+w4b43441,7,moreservices/highertaxes7
+w4b43441,8,blank
+w4b43441,9,can't say
+w4b43442,-4,case in not in wave of data collection
+w4b43442,-3,"case in wave, no survey on file"
+w4b43442,-2,not asked
+w4b43442,-1,refused
+w4b43442,1,fewerservices/lowertaxes1
+w4b43442,2,2
+w4b43442,3,3
+w4b43442,4,4
+w4b43442,5,5
+w4b43442,6,6
+w4b43442,7,moreservices/highertaxes7
+w4b43442,8,blank
+w4b43442,9,can't say
+w4b45,-4,case in not in wave of data collection
+w4b45,-3,"case in wave, no survey on file"
+w4b45,-2,not asked
+w4b45,-1,refused
+w4b45,1,intervene on our own1
+w4b45,2,2
+w4b45,3,3
+w4b45,4,4
+w4b45,5,5
+w4b45,6,6
+w4b45,7,intervene with un approval7
+w4b45,8,blank
+w4b45,9,haven't thought much about this
+w4b46471,-4,case in not in wave of data collection
+w4b46471,-3,"case in wave, no survey on file"
+w4b46471,-2,not asked
+w4b46471,-1,refused
+w4b46471,1,intervene on our own1
+w4b46471,2,2
+w4b46471,3,3
+w4b46471,4,4
+w4b46471,5,5
+w4b46471,6,6
+w4b46471,7,intervene with un approval7
+w4b46471,8,blank
+w4b46471,9,can't say
+w4b46472,-4,case in not in wave of data collection
+w4b46472,-3,"case in wave, no survey on file"
+w4b46472,-2,not asked
+w4b46472,-1,refused
+w4b46472,1,intervene on our own1
+w4b46472,2,2
+w4b46472,3,3
+w4b46472,4,4
+w4b46472,5,5
+w4b46472,6,6
+w4b46472,7,intervene with un approval7
+w4b46472,8,blank
+w4b46472,9,can't say
+w4b48,-4,case in not in wave of data collection
+w4b48,-3,"case in wave, no survey on file"
+w4b48,-2,not asked
+w4b48,-1,refused
+w4b48,1,pursue free trade1
+w4b48,2,2
+w4b48,3,3
+w4b48,4,4
+w4b48,5,5
+w4b48,6,6
+w4b48,7,protect us industries7
+w4b48,8,blank
+w4b48,9,haven't thought much about this
+w4b49501,-4,case in not in wave of data collection
+w4b49501,-3,"case in wave, no survey on file"
+w4b49501,-2,not asked
+w4b49501,-1,refused
+w4b49501,1,pursue free trade1
+w4b49501,2,2
+w4b49501,3,3
+w4b49501,4,4
+w4b49501,5,5
+w4b49501,6,6
+w4b49501,7,protect us industries7
+w4b49501,8,blank
+w4b49501,9,can't say
+w4b49502,-4,case in not in wave of data collection
+w4b49502,-3,"case in wave, no survey on file"
+w4b49502,-2,not asked
+w4b49502,-1,refused
+w4b49502,1,pursue free trade1
+w4b49502,2,2
+w4b49502,3,3
+w4b49502,4,4
+w4b49502,5,5
+w4b49502,6,6
+w4b49502,7,protect us industries7
+w4b49502,8,blank
+w4b49502,9,can't say
+w4b51,-4,case in not in wave of data collection
+w4b51,-3,"case in wave, no survey on file"
+w4b51,-2,not asked
+w4b51,-1,refused
+w4b51,1,ensure constitutional rights1
+w4b51,2,2
+w4b51,3,3
+w4b51,4,4
+w4b51,5,5
+w4b51,6,6
+w4b51,7,find every terrorist7
+w4b51,8,blank
+w4b51,9,haven't thought much about this
+w4b52531,-4,case in not in wave of data collection
+w4b52531,-3,"case in wave, no survey on file"
+w4b52531,-2,not asked
+w4b52531,-1,refused
+w4b52531,1,ensure constitutional rights1
+w4b52531,2,2
+w4b52531,3,3
+w4b52531,4,4
+w4b52531,5,5
+w4b52531,6,6
+w4b52531,7,find every terrorist7
+w4b52531,8,blank
+w4b52531,9,can't say
+w4b52532,-4,case in not in wave of data collection
+w4b52532,-3,"case in wave, no survey on file"
+w4b52532,-2,not asked
+w4b52532,-1,refused
+w4b52532,1,ensure constitutional rights1
+w4b52532,2,2
+w4b52532,3,3
+w4b52532,4,4
+w4b52532,5,5
+w4b52532,6,6
+w4b52532,7,find every terrorist7
+w4b52532,8,blank
+w4b52532,9,can't say
+w4b54,-4,case in not in wave of data collection
+w4b54,-3,"case in wave, no survey on file"
+w4b54,-2,not asked
+w4b54,-1,refused
+w4b54,1,government plan1
+w4b54,2,2
+w4b54,3,3
+w4b54,4,4
+w4b54,5,5
+w4b54,6,6
+w4b54,7,individuals & insurance companies7
+w4b54,8,blank
+w4b54,9,haven't thought much about this
+w4b55561,-4,case in not in wave of data collection
+w4b55561,-3,"case in wave, no survey on file"
+w4b55561,-2,not asked
+w4b55561,-1,refused
+w4b55561,1,government plan1
+w4b55561,2,2
+w4b55561,3,3
+w4b55561,4,4
+w4b55561,5,5
+w4b55561,6,6
+w4b55561,7,individuals & insurance companies7
+w4b55561,8,blank
+w4b55561,9,can't say
+w4b55562,-4,case in not in wave of data collection
+w4b55562,-3,"case in wave, no survey on file"
+w4b55562,-2,not asked
+w4b55562,-1,refused
+w4b55562,1,government plan1
+w4b55562,2,2
+w4b55562,3,3
+w4b55562,4,4
+w4b55562,5,5
+w4b55562,6,6
+w4b55562,7,individuals & insurance companies7
+w4b55562,8,blank
+w4b55562,9,can't say
+w4b57,-4,case in not in wave of data collection
+w4b57,-3,"case in wave, no survey on file"
+w4b57,-2,not asked
+w4b57,-1,refused
+w4b57,1,marry like anyone else1
+w4b57,2,2
+w4b57,3,3
+w4b57,4,4
+w4b57,5,5
+w4b57,6,6
+w4b57,7,constitutional amendment to prohibit gay marriage7
+w4b57,8,blank
+w4b57,9,haven't thought much about this
+w4b58591,-4,case in not in wave of data collection
+w4b58591,-3,"case in wave, no survey on file"
+w4b58591,-2,not asked
+w4b58591,-1,refused
+w4b58591,1,marry like anyone else1
+w4b58591,2,2
+w4b58591,3,3
+w4b58591,4,4
+w4b58591,5,5
+w4b58591,6,6
+w4b58591,7,constitutional amendment to prohibit gay marriage7
+w4b58591,8,blank
+w4b58591,9,can't say
+w4b58592,-4,case in not in wave of data collection
+w4b58592,-3,"case in wave, no survey on file"
+w4b58592,-2,not asked
+w4b58592,-1,refused
+w4b58592,1,marry like anyone else1
+w4b58592,2,2
+w4b58592,3,3
+w4b58592,4,4
+w4b58592,5,5
+w4b58592,6,6
+w4b58592,7,constitutional amendment to prohibit gay marriage7
+w4b58592,8,blank
+w4b58592,9,can't say
+w4b60,-4,case in not in wave of data collection
+w4b60,-3,"case in wave, no survey on file"
+w4b60,-2,not asked
+w4b60,-1,refused
+w4b60,1,vote for it
+w4b60,2,vote against it
+w4b60,3,not vote on it
+w4b60,4,blank
+w4b60,5,don't know
+w4b61,-4,case in not in wave of data collection
+w4b61,-3,"case in wave, no survey on file"
+w4b61,-2,not asked
+w4b61,-1,refused
+w4b61,1,india
+w4b61,2,pakistan
+w4b61,3,sri lanka
+w4b61,4,indonesia
+w4b61,5,blank
+w4b61,6,don't know
+w4b62,-4,case in not in wave of data collection
+w4b62,-3,"case in wave, no survey on file"
+w4b62,-2,not asked
+w4b62,-1,refused
+w4b62,1,true
+w4b62,2,false
+w4b62,3,blank
+w4b62,4,don't know
+w4b63,-4,case in not in wave of data collection
+w4b63,-3,"case in wave, no survey on file"
+w4b63,-2,not asked
+w4b63,-1,refused
+w4b63,1,true
+w4b63,2,false
+w4b63,3,blank
+w4b63,4,don't know
+w4b64,-4,case in not in wave of data collection
+w4b64,-3,"case in wave, no survey on file"
+w4b64,-2,not asked
+w4b64,-1,refused
+w4b64,1,true
+w4b64,2,false
+w4b64,3,blank
+w4b64,4,don't know
+w4b65,-4,case in not in wave of data collection
+w4b65,-3,"case in wave, no survey on file"
+w4b65,-2,not asked
+w4b65,-1,refused
+w4b65,1,he was drafted but never went to vietnam
+w4b65,2,he was a decorated officer serving in vietnam
+w4b65,3,he was ineligible to serve in the military because of a medi
+w4b65,4,he served in the texas air national guard
+w4b65,5,blank
+w4b65,6,don't know
+w4b66,-4,case in not in wave of data collection
+w4b66,-3,"case in wave, no survey on file"
+w4b66,-2,not asked
+w4b66,-1,refused
+w4b66,1,he was drafted but never went to vietnam
+w4b66,2,he was a decorated officer serving in vietnam
+w4b66,3,he was ineligible to serve in the military because of a medi
+w4b66,4,he served in the massachusetts air national guard
+w4b66,5,blank
+w4b66,6,don't know
+w4b68,-4,case in not in wave of data collection
+w4b68,-3,"case in wave, no survey on file"
+w4b68,-2,not asked
+w4b68,-1,refused
+w4b68,1,south africa
+w4b68,2,japan
+w4b68,3,brazil
+w4b68,4,india
+w4b68,5,blank
+w4b68,6,don't know
+w4b69,-4,case in not in wave of data collection
+w4b69,-3,"case in wave, no survey on file"
+w4b69,-2,not asked
+w4b69,-1,refused
+w4b69,1,100
+w4b69,2,500
+w4b69,3,"1,000"
+w4b69,4,"10,000"
+w4b69,5,blank
+w4b69,6,don't know
+w4b70,-4,case in not in wave of data collection
+w4b70,-3,"case in wave, no survey on file"
+w4b70,-2,not asked
+w4b70,-1,refused
+w4b70,1,america's interests always first1
+w4b70,2,2
+w4b70,3,3
+w4b70,4,4
+w4b70,5,5
+w4b70,6,6
+w4b70,7,other countries' interests too7
+w4b70,8,blank
+w4b70,9,haven't thought much about this
+w4b71,-4,case in not in wave of data collection
+w4b71,-3,"case in wave, no survey on file"
+w4b71,-2,not asked
+w4b71,-1,refused
+w4b71,1,help others1
+w4b71,2,2
+w4b71,3,3
+w4b71,4,4
+w4b71,5,5
+w4b71,6,6
+w4b71,7,look out for family7
+w4b71,8,blank
+w4b71,9,haven't thought much about this
+w4b72,-4,case in not in wave of data collection
+w4b72,-3,"case in wave, no survey on file"
+w4b72,-2,not asked
+w4b72,-1,refused
+w4b72,1,do whatever you want 1
+w4b72,2,2
+w4b72,3,3
+w4b72,4,4
+w4b72,5,5
+w4b72,6,6
+w4b72,7,community can sometimes say7
+w4b72,8,blank
+w4b72,9,haven't thought much about this
+w4b73,-4,case in not in wave of data collection
+w4b73,-3,"case in wave, no survey on file"
+w4b73,-2,not asked
+w4b73,-1,refused
+w4b73,1,agree strongly
+w4b73,2,agree somewhat
+w4b73,3,neither agree nor disagree
+w4b73,4,disagree somewhat
+w4b73,5,disagree strongly
+w4b73,6,blank
+w4b73,7,i haven't thought much about this
+w4b74,-4,case in not in wave of data collection
+w4b74,-3,"case in wave, no survey on file"
+w4b74,-2,not asked
+w4b74,-1,refused
+w4b74,1,agree strongly
+w4b74,2,agree somewhat
+w4b74,3,neither agree nor disagree
+w4b74,4,disagree somewhat
+w4b74,5,disagree strongly
+w4b74,6,blank
+w4b74,7,i haven't thought much about this
+w4b75,-4,case in not in wave of data collection
+w4b75,-3,"case in wave, no survey on file"
+w4b75,-2,not asked
+w4b75,-1,refused
+w4b75,1,agree strongly
+w4b75,2,agree somewhat
+w4b75,3,neither agree nor disagree
+w4b75,4,disagree somewhat
+w4b75,5,disagree strongly
+w4b75,6,blank
+w4b75,7,i haven't thought much about this
+w4b76,-4,case in not in wave of data collection
+w4b76,-3,"case in wave, no survey on file"
+w4b76,-2,not asked
+w4b76,-1,refused
+w4b76,1,democrat
+w4b76,2,republican
+w4b76,3,independent
+w4b76,4,other
+w4b76,5,no preference
+w4b77,-4,case in not in wave of data collection
+w4b77,-3,"case in wave, no survey on file"
+w4b77,-2,not asked
+w4b77,-1,refused
+w4b77,1,very liberal
+w4b77,2,liberal
+w4b77,3,slightly liberal
+w4b77,4,moderate
+w4b77,5,slightly conservative
+w4b77,6,conservative
+w4b77,7,very conservative
+w4b77,8,blank
+w4b77,9,i haven't thought much about this
+w4b78,-4,case in not in wave of data collection
+w4b78,-3,"case in wave, no survey on file"
+w4b78,-2,not asked
+w4b78,-1,refused
+w4b78,1,yes
+w4b78,2,no
+w4b79,-4,case in not in wave of data collection
+w4b79,-3,"case in wave, no survey on file"
+w4b79,-2,not asked
+w4b79,-1,refused
+w4b79,1,every week
+w4b79,2,almost every week
+w4b79,3,once or twice a month
+w4b79,4,a few times a year
+w4b79,5,never
+w4b80,-4,case in not in wave of data collection
+w4b80,-3,"case in wave, no survey on file"
+w4b80,-2,not asked
+w4b80,-1,refused
+w4b80,1,the bible is god's word and all it says is true
+w4b80,2,the bible was written by men inspired by god but contains so
+w4b80,3,"the bible is a good book because it was written by wise men,"
+w4b80,4,the bible was written by men who lived so long ago that it i
+w4b80,5,blank
+w4b80,6,i haven't thought much about this
+w4b81,-4,case in not in wave of data collection
+w4b81,-3,"case in wave, no survey on file"
+w4b81,-2,not asked
+w4b81,-1,refused
+w4b81,1,i am now on active duty
+w4b81,2,"i was on active duty in the past, but not now"
+w4b81,3,"i have trained for the reserves or national guard, but have"
+w4b81,4,i have never served in the military
+w4fstart,-4,case in not in wave of data collection
+w4fstart,-3,"case in wave, no survey on file"
+w4fend,-4,case in not in wave of data collection
+w4fend,-3,"case in wave, no survey on file"
+w4fdur,-4,case in not in wave of data collection
+w4fdur,-3,"case in wave, no survey on file"
+w4fres,-4,case in not in wave of data collection
+w4fres,-3,"case in wave, no survey on file"
+w4fres,0,not a resumed interview (duration less than 100 minutes)
+w4fres,1,resumed interview (duration 100 minutes or more)
+w4f1,-4,case in not in wave of data collection
+w4f1,-3,"case in wave, no survey on file"
+w4f1,-2,not asked
+w4f1,-1,refused
+w4f1,1,certain to vote
+w4f1,2,likely to vote
+w4f1,3,about as likely to vote as not
+w4f1,4,likely not to vote
+w4f1,5,certain not to vote
+w4f2,-4,case in not in wave of data collection
+w4f2,-3,"case in wave, no survey on file"
+w4f2,-2,not asked
+w4f2,-1,refused
+w4f2,1,george w. bush
+w4f2,2,john kerry
+w4f2,3,ralph nader
+w4f2,4,someone else
+w4f2,5,blank
+w4f2,6,not sure
+w4f3,-4,case in not in wave of data collection
+w4f3,-3,"case in wave, no survey on file"
+w4f3,-2,not asked
+w4f3,-1,refused
+w4f3,1,completely sure
+w4f3,2,reasonably sure
+w4f3,3,not very sure
+w4f4,-4,case in not in wave of data collection
+w4f4,-3,"case in wave, no survey on file"
+w4f4,-2,not asked
+w4f4,-1,refused
+w4f4,1,agree strongly
+w4f4,2,agree somewhat
+w4f4,3,neither agree nor disagree
+w4f4,4,disagree somewhat
+w4f4,5,disagree strongly
+w4f4,6,blank
+w4f4,7,i haven't thought much about this
+w4f5,-4,case in not in wave of data collection
+w4f5,-3,"case in wave, no survey on file"
+w4f5,-2,not asked
+w4f5,-1,refused
+w4f5,1,agree strongly
+w4f5,2,agree somewhat
+w4f5,3,neither agree nor disagree
+w4f5,4,disagree somewhat
+w4f5,5,disagree strongly
+w4f5,6,blank
+w4f5,7,i haven't thought much about this
+w4f6,-4,case in not in wave of data collection
+w4f6,-3,"case in wave, no survey on file"
+w4f6,-2,not asked
+w4f6,-1,refused
+w4f6,1,agree strongly
+w4f6,2,agree somewhat
+w4f6,3,neither agree nor disagree
+w4f6,4,disagree somewhat
+w4f6,5,disagree strongly
+w4f6,6,blank
+w4f6,7,i haven't thought much about this
+w4f7,-4,case in not in wave of data collection
+w4f7,-3,"case in wave, no survey on file"
+w4f7,-2,not asked
+w4f7,-1,refused
+w4f7,1,agree strongly
+w4f7,2,agree somewhat
+w4f7,3,neither agree nor disagree
+w4f7,4,disagree somewhat
+w4f7,5,disagree strongly
+w4f7,6,blank
+w4f7,7,i haven't thought much about this
+w4f8,-4,case in not in wave of data collection
+w4f8,-3,"case in wave, no survey on file"
+w4f8,-2,not asked
+w4f8,-1,refused
+w4f8,1,agree strongly
+w4f8,2,agree somewhat
+w4f8,3,neither agree nor disagree
+w4f8,4,disagree somewhat
+w4f8,5,disagree strongly
+w4f8,6,blank
+w4f8,7,i haven't thought much about this
+w4f9,-4,case in not in wave of data collection
+w4f9,-3,"case in wave, no survey on file"
+w4f9,-2,not asked
+w4f9,-1,refused
+w4f9,1,strengthened it a lot
+w4f9,2,strengthened it somewhat
+w4f9,3,neither strengthened nor weakened it
+w4f9,4,weakened it somewhat
+w4f9,5,weakened it a lot
+w4f9,6,blank
+w4f9,7,i haven't thought much about this
+w4f10,-4,case in not in wave of data collection
+w4f10,-3,"case in wave, no survey on file"
+w4f10,-2,not asked
+w4f10,-1,refused
+w4f10,1,increased their power a lot
+w4f10,2,increased their power somewhat
+w4f10,3,neither increased nor decreased their power
+w4f10,4,decreased their power somewhat
+w4f10,5,decreased their power a lot
+w4f10,6,blank
+w4f10,7,i haven't thought much about this
+w4f11,-4,case in not in wave of data collection
+w4f11,-3,"case in wave, no survey on file"
+w4f11,-2,not asked
+w4f11,-1,refused
+w4f11,1,very successful
+w4f11,2,somewhat successful
+w4f11,3,neither successful nor unsuccessful
+w4f11,4,somewhat unsuccessful
+w4f11,5,very unsuccessful
+w4f11,6,blank
+w4f11,7,i haven't thought much about this
+w4f12,-4,case in not in wave of data collection
+w4f12,-3,"case in wave, no survey on file"
+w4f12,-2,not asked
+w4f12,-1,refused
+w4f12,1,very successful
+w4f12,2,somewhat successful
+w4f12,3,neither successful nor unsuccessful
+w4f12,4,somewhat unsuccessful
+w4f12,5,very unsuccessful
+w4f12,6,blank
+w4f12,7,i haven't thought much about this
+w4f13,-4,case in not in wave of data collection
+w4f13,-3,"case in wave, no survey on file"
+w4f13,-2,not asked
+w4f13,-1,refused
+w4f13,1,agree strongly
+w4f13,2,agree somewhat
+w4f13,3,neither agree nor disagree
+w4f13,4,disagree somewhat
+w4f13,5,disagree strongly
+w4f13,6,blank
+w4f13,7,i haven't thought much about this
+w4f14,-4,case in not in wave of data collection
+w4f14,-3,"case in wave, no survey on file"
+w4f14,-2,not asked
+w4f14,-1,refused
+w4f14,1,agree strongly
+w4f14,2,agree somewhat
+w4f14,3,neither agree nor disagree
+w4f14,4,disagree somewhat
+w4f14,5,disagree strongly
+w4f14,6,blank
+w4f14,7,i haven't thought much about this
+w4f15,-4,case in not in wave of data collection
+w4f15,-3,"case in wave, no survey on file"
+w4f15,-2,not asked
+w4f15,-1,refused
+w4f15,1,agree strongly
+w4f15,2,agree somewhat
+w4f15,3,neither agree nor disagree
+w4f15,4,disagree somewhat
+w4f15,5,disagree strongly
+w4f15,6,blank
+w4f15,7,i haven't thought much about this
+w4f16,-4,case in not in wave of data collection
+w4f16,-3,"case in wave, no survey on file"
+w4f16,-2,not asked
+w4f16,-1,refused
+w4f16,1,agree strongly
+w4f16,2,agree somewhat
+w4f16,3,neither agree nor disagree
+w4f16,4,disagree somewhat
+w4f16,5,disagree strongly
+w4f16,6,blank
+w4f16,7,i haven't thought much about this
+w4f17,-4,case in not in wave of data collection
+w4f17,-3,"case in wave, no survey on file"
+w4f17,-2,not asked
+w4f17,-1,refused
+w4f17,1,agree strongly
+w4f17,2,agree somewhat
+w4f17,3,neither agree nor disagree
+w4f17,4,disagree somewhat
+w4f17,5,disagree strongly
+w4f17,6,blank
+w4f17,7,i haven't thought much about this
+w4f18,-4,case in not in wave of data collection
+w4f18,-3,"case in wave, no survey on file"
+w4f18,-2,not asked
+w4f18,-1,refused
+w4f18,1,agree strongly
+w4f18,2,agree somewhat
+w4f18,3,neither agree nor disagree
+w4f18,4,disagree somewhat
+w4f18,5,disagree strongly
+w4f18,6,blank
+w4f18,7,i haven't thought much about this
+w4f19,-4,case in not in wave of data collection
+w4f19,-3,"case in wave, no survey on file"
+w4f19,-2,not asked
+w4f19,-1,refused
+w4f19,1,agree strongly
+w4f19,2,agree somewhat
+w4f19,3,neither agree nor disagree
+w4f19,4,disagree somewhat
+w4f19,5,disagree strongly
+w4f19,6,blank
+w4f19,7,i haven't thought much about this
+w4f20,-4,case in not in wave of data collection
+w4f20,-3,"case in wave, no survey on file"
+w4f20,-2,not asked
+w4f20,-1,refused
+w4f20,1,agree strongly
+w4f20,2,agree somewhat
+w4f20,3,neither agree nor disagree
+w4f20,4,disagree somewhat
+w4f20,5,disagree strongly
+w4f20,6,blank
+w4f20,7,i haven't thought much about this
+w4f212210,-4,case in not in wave of data collection
+w4f212210,-3,"case in wave, no survey on file"
+w4f212210,-2,not asked
+w4f212210,-1,refused
+w4f212210,1,extremely well
+w4f212210,2,pretty well
+w4f212210,3,not too well
+w4f212210,4,not well at all
+w4f212210,5,don't know
+w4f21222,-4,case in not in wave of data collection
+w4f21222,-3,"case in wave, no survey on file"
+w4f21222,-2,not asked
+w4f21222,-1,refused
+w4f21222,1,extremely well
+w4f21222,2,pretty well
+w4f21222,3,not too well
+w4f21222,4,not well at all
+w4f21222,5,don't know
+w4f23241,-4,case in not in wave of data collection
+w4f23241,-3,"case in wave, no survey on file"
+w4f23241,-2,not asked
+w4f23241,-1,refused
+w4f23241,1,extremely well
+w4f23241,2,pretty well
+w4f23241,3,not too well
+w4f23241,4,not well at all
+w4f23241,5,don't know
+w4f23242,-4,case in not in wave of data collection
+w4f23242,-3,"case in wave, no survey on file"
+w4f23242,-2,not asked
+w4f23242,-1,refused
+w4f23242,1,extremely well
+w4f23242,2,pretty well
+w4f23242,3,not too well
+w4f23242,4,not well at all
+w4f23242,5,don't know
+w4f25261,-4,case in not in wave of data collection
+w4f25261,-3,"case in wave, no survey on file"
+w4f25261,-2,not asked
+w4f25261,-1,refused
+w4f25261,1,extremely well
+w4f25261,2,pretty well
+w4f25261,3,not too well
+w4f25261,4,not well at all
+w4f25261,5,don't know
+w4f25262,-4,case in not in wave of data collection
+w4f25262,-3,"case in wave, no survey on file"
+w4f25262,-2,not asked
+w4f25262,-1,refused
+w4f25262,1,extremely well
+w4f25262,2,pretty well
+w4f25262,3,not too well
+w4f25262,4,not well at all
+w4f25262,5,don't know
+w4f2281,-4,case in not in wave of data collection
+w4f2281,-3,"case in wave, no survey on file"
+w4f2281,-2,not asked
+w4f2281,-1,refused
+w4f2281,1,extremely well
+w4f2281,2,pretty well
+w4f2281,3,not too well
+w4f2281,4,not well at all
+w4f2281,5,don't know
+w4f27282,-4,case in not in wave of data collection
+w4f27282,-3,"case in wave, no survey on file"
+w4f27282,-2,not asked
+w4f27282,-1,refused
+w4f27282,1,extremely well
+w4f27282,2,pretty well
+w4f27282,3,not too well
+w4f27282,4,not well at all
+w4f27282,5,don't know
+w4f29301,-4,case in not in wave of data collection
+w4f29301,-3,"case in wave, no survey on file"
+w4f29301,-2,not asked
+w4f29301,-1,refused
+w4f29301,1,extremely well
+w4f29301,2,pretty well
+w4f29301,3,not too well
+w4f29301,4,not well at all
+w4f29301,5,don't know
+w4f29302,-4,case in not in wave of data collection
+w4f29302,-3,"case in wave, no survey on file"
+w4f29302,-2,not asked
+w4f29302,-1,refused
+w4f29302,1,extremely well
+w4f29302,2,pretty well
+w4f29302,3,not too well
+w4f29302,4,not well at all
+w4f29302,5,don't know
+w4f3132a,-4,case in not in wave of data collection
+w4f3132a,-3,"case in wave, no survey on file"
+w4f3132a,-2,not asked not familiar
+w4f3132a,-1,refused not familiar
+w4f3132a,0,no not familiar
+w4f3132a,1,not familiar
+w4f3132b,-4,case in not in wave of data collection
+w4f3132b,-3,"case in wave, no survey on file"
+w4f3132b,-2,not asked
+w4f3132b,-1,refused
+w4f3132c,-4,case in not in wave of data collection
+w4f3132c,-3,"case in wave, no survey on file"
+w4f3132c,-2,not asked
+w4f3132c,-1,refused
+w4f3132d,-4,case in not in wave of data collection
+w4f3132d,-3,"case in wave, no survey on file"
+w4f3132d,-2,not asked not familiar
+w4f3132d,-1,refused not familiar
+w4f3132d,0,no not familiar
+w4f3132d,1,not familiar
+w4f3132e,-4,case in not in wave of data collection
+w4f3132e,-3,"case in wave, no survey on file"
+w4f3132e,-2,not asked
+w4f3132e,-1,refused
+w4f3132f,-4,case in not in wave of data collection
+w4f3132f,-3,"case in wave, no survey on file"
+w4f3132f,-2,not asked can't say
+w4f3132f,-1,refused can't say
+w4f3132f,0,no can't say
+w4f3132f,1,can't say
+w4f3132g,-4,case in not in wave of data collection
+w4f3132g,-3,"case in wave, no survey on file"
+w4f3132g,-2,not asked
+w4f3132g,-1,refused
+w4f3132h,-4,case in not in wave of data collection
+w4f3132h,-3,"case in wave, no survey on file"
+w4f3132h,-2,not asked can't say
+w4f3132h,-1,refused can't say
+w4f3132h,0,no can't say
+w4f3132h,1,can't say
+w4f3132i,-4,case in not in wave of data collection
+w4f3132i,-3,"case in wave, no survey on file"
+w4f3132i,-2,not asked
+w4f3132i,-1,refused
+w4f3132j,-4,case in not in wave of data collection
+w4f3132j,-3,"case in wave, no survey on file"
+w4f3132j,-2,not asked not familiar
+w4f3132j,-1,refused not familiar
+w4f3132j,0,no not familiar
+w4f3132j,1,not familiar
+w4f3132k,-4,case in not in wave of data collection
+w4f3132k,-3,"case in wave, no survey on file"
+w4f3132k,-2,not asked
+w4f3132k,-1,refused
+w4f3132l,-4,case in not in wave of data collection
+w4f3132l,-3,"case in wave, no survey on file"
+w4f3132l,-2,not asked can't say
+w4f3132l,-1,refused can't say
+w4f3132l,0,no can't say
+w4f3132l,1,can't say
+w4f3132m,-4,case in not in wave of data collection
+w4f3132m,-3,"case in wave, no survey on file"
+w4f3132m,-2,not asked
+w4f3132m,-1,refused
+w4f3132n,-4,case in not in wave of data collection
+w4f3132n,-3,"case in wave, no survey on file"
+w4f3132n,-2,not asked can't say
+w4f3132n,-1,refused can't say
+w4f3132n,0,no can't say
+w4f3132n,1,can't say
+w4f33811,-4,case in not in wave of data collection
+w4f33811,-3,"case in wave, no survey on file"
+w4f33811,-2,not asked
+w4f33811,-1,refused
+w4f33812,-4,case in not in wave of data collection
+w4f33812,-3,"case in wave, no survey on file"
+w4f33812,-2,not asked
+w4f33812,-1,refused
+w4f33821,-4,case in not in wave of data collection
+w4f33821,-3,"case in wave, no survey on file"
+w4f33821,-2,not asked
+w4f33821,-1,refused
+w4f33822,-4,case in not in wave of data collection
+w4f33822,-3,"case in wave, no survey on file"
+w4f33822,-2,not asked
+w4f33822,-1,refused
+w4f33831,-4,case in not in wave of data collection
+w4f33831,-3,"case in wave, no survey on file"
+w4f33831,-2,not asked
+w4f33831,-1,refused
+w4f33832,-4,case in not in wave of data collection
+w4f33832,-3,"case in wave, no survey on file"
+w4f33832,-2,not asked
+w4f33832,-1,refused
+w4f33841,-4,case in not in wave of data collection
+w4f33841,-3,"case in wave, no survey on file"
+w4f33841,-2,not asked
+w4f33841,-1,refused
+w4f33842,-4,case in not in wave of data collection
+w4f33842,-3,"case in wave, no survey on file"
+w4f33842,-2,not asked
+w4f33842,-1,refused
+w4f33851,-4,case in not in wave of data collection
+w4f33851,-3,"case in wave, no survey on file"
+w4f33851,-2,not asked
+w4f33851,-1,refused
+w4f33852,-4,case in not in wave of data collection
+w4f33852,-3,"case in wave, no survey on file"
+w4f33852,-2,not asked
+w4f33852,-1,refused
+w4f33861,-4,case in not in wave of data collection
+w4f33861,-3,"case in wave, no survey on file"
+w4f33861,-2,not asked
+w4f33861,-1,refused
+w4f33862,-4,case in not in wave of data collection
+w4f33862,-3,"case in wave, no survey on file"
+w4f33862,-2,not asked
+w4f33862,-1,refused
+w4f39,-4,case in not in wave of data collection
+w4f39,-3,"case in wave, no survey on file"
+w4f39,-2,not asked
+w4f39,-1,refused
+w4f39,1,very well
+w4f39,2,pretty well
+w4f39,3,neither well nor poorly
+w4f39,4,pretty poorly
+w4f39,5,very poorly
+w4f39,6,blank
+w4f39,7,i haven't thought much about this
+w4f40,-4,case in not in wave of data collection
+w4f40,-3,"case in wave, no survey on file"
+w4f40,-2,not asked
+w4f40,-1,refused
+w4f40,1,much better
+w4f40,2,somewhat better
+w4f40,3,neither better nor worse
+w4f40,4,somewhat worse
+w4f40,5,much worse
+w4f40,6,blank
+w4f40,7,i haven't thought much about this
+w4f42,-4,case in not in wave of data collection
+w4f42,-3,"case in wave, no survey on file"
+w4f42,-2,not asked
+w4f42,-1,refused
+w4f42,1,fewerservices/lowertaxes1
+w4f42,2,2
+w4f42,3,3
+w4f42,4,4
+w4f42,5,5
+w4f42,6,6
+w4f42,7,moreservices/highertaxes7
+w4f42,8,blank
+w4f42,9,haven't thought much about this
+w4f43441,-4,case in not in wave of data collection
+w4f43441,-3,"case in wave, no survey on file"
+w4f43441,-2,not asked
+w4f43441,-1,refused
+w4f43441,1,fewerservices/lowertaxes1
+w4f43441,2,2
+w4f43441,3,3
+w4f43441,4,4
+w4f43441,5,5
+w4f43441,6,6
+w4f43441,7,moreservices/highertaxes7
+w4f43441,8,blank
+w4f43441,9,can't say
+w4f43442,-4,case in not in wave of data collection
+w4f43442,-3,"case in wave, no survey on file"
+w4f43442,-2,not asked
+w4f43442,-1,refused
+w4f43442,1,fewerservices/lowertaxes1
+w4f43442,2,2
+w4f43442,3,3
+w4f43442,4,4
+w4f43442,5,5
+w4f43442,6,6
+w4f43442,7,moreservices/highertaxes7
+w4f43442,8,blank
+w4f43442,9,can't say
+w4f45,-4,case in not in wave of data collection
+w4f45,-3,"case in wave, no survey on file"
+w4f45,-2,not asked
+w4f45,-1,refused
+w4f45,1,intervene on our own1
+w4f45,2,2
+w4f45,3,3
+w4f45,4,4
+w4f45,5,5
+w4f45,6,6
+w4f45,7,intervene with un approval7
+w4f45,8,blank
+w4f45,9,haven't thought much about this
+w4f46471,-4,case in not in wave of data collection
+w4f46471,-3,"case in wave, no survey on file"
+w4f46471,-2,not asked
+w4f46471,-1,refused
+w4f46471,1,intervene on our own1
+w4f46471,2,2
+w4f46471,3,3
+w4f46471,4,4
+w4f46471,5,5
+w4f46471,6,6
+w4f46471,7,intervene with un approval7
+w4f46471,8,blank
+w4f46471,9,can't say
+w4f46472,-4,case in not in wave of data collection
+w4f46472,-3,"case in wave, no survey on file"
+w4f46472,-2,not asked
+w4f46472,-1,refused
+w4f46472,1,intervene on our own1
+w4f46472,2,2
+w4f46472,3,3
+w4f46472,4,4
+w4f46472,5,5
+w4f46472,6,6
+w4f46472,7,intervene with un approval7
+w4f46472,8,blank
+w4f46472,9,can't say
+w4f48,-4,case in not in wave of data collection
+w4f48,-3,"case in wave, no survey on file"
+w4f48,-2,not asked
+w4f48,-1,refused
+w4f48,1,pursue free trade1
+w4f48,2,2
+w4f48,3,3
+w4f48,4,4
+w4f48,5,5
+w4f48,6,6
+w4f48,7,protect us industries7
+w4f48,8,blank
+w4f48,9,haven't thought much about this
+w4f49501,-4,case in not in wave of data collection
+w4f49501,-3,"case in wave, no survey on file"
+w4f49501,-2,not asked
+w4f49501,-1,refused
+w4f49501,1,pursue free trade1
+w4f49501,2,2
+w4f49501,3,3
+w4f49501,4,4
+w4f49501,5,5
+w4f49501,6,6
+w4f49501,7,protect us industries7
+w4f49501,8,blank
+w4f49501,9,can't say
+w4f49502,-4,case in not in wave of data collection
+w4f49502,-3,"case in wave, no survey on file"
+w4f49502,-2,not asked
+w4f49502,-1,refused
+w4f49502,1,pursue free trade1
+w4f49502,2,2
+w4f49502,3,3
+w4f49502,4,4
+w4f49502,5,5
+w4f49502,6,6
+w4f49502,7,protect us industries7
+w4f49502,8,blank
+w4f49502,9,can't say
+w4f51,-4,case in not in wave of data collection
+w4f51,-3,"case in wave, no survey on file"
+w4f51,-2,not asked
+w4f51,-1,refused
+w4f51,1,ensure constitutional rights1
+w4f51,2,2
+w4f51,3,3
+w4f51,4,4
+w4f51,5,5
+w4f51,6,6
+w4f51,7,find every terrorist7
+w4f51,8,blank
+w4f51,9,haven't thought much about this
+w4f52531,-4,case in not in wave of data collection
+w4f52531,-3,"case in wave, no survey on file"
+w4f52531,-2,not asked
+w4f52531,-1,refused
+w4f52531,1,ensure constitutional rights1
+w4f52531,2,2
+w4f52531,3,3
+w4f52531,4,4
+w4f52531,5,5
+w4f52531,6,6
+w4f52531,7,find every terrorist7
+w4f52531,8,blank
+w4f52531,9,can't say
+w4f52532,-4,case in not in wave of data collection
+w4f52532,-3,"case in wave, no survey on file"
+w4f52532,-2,not asked
+w4f52532,-1,refused
+w4f52532,1,ensure constitutional rights1
+w4f52532,2,2
+w4f52532,3,3
+w4f52532,4,4
+w4f52532,5,5
+w4f52532,6,6
+w4f52532,7,find every terrorist7
+w4f52532,8,blank
+w4f52532,9,can't say
+w4f54,-4,case in not in wave of data collection
+w4f54,-3,"case in wave, no survey on file"
+w4f54,-2,not asked
+w4f54,-1,refused
+w4f54,1,government plan1
+w4f54,2,2
+w4f54,3,3
+w4f54,4,4
+w4f54,5,5
+w4f54,6,6
+w4f54,7,individuals & insurance companies7
+w4f54,8,blank
+w4f54,9,haven't thought much about this
+w4f55561,-4,case in not in wave of data collection
+w4f55561,-3,"case in wave, no survey on file"
+w4f55561,-2,not asked
+w4f55561,-1,refused
+w4f55561,1,government plan1
+w4f55561,2,2
+w4f55561,3,3
+w4f55561,4,4
+w4f55561,5,5
+w4f55561,6,6
+w4f55561,7,individuals & insurance companies7
+w4f55561,8,blank
+w4f55561,9,can't say
+w4f55562,-4,case in not in wave of data collection
+w4f55562,-3,"case in wave, no survey on file"
+w4f55562,-2,not asked
+w4f55562,-1,refused
+w4f55562,1,government plan1
+w4f55562,2,2
+w4f55562,3,3
+w4f55562,4,4
+w4f55562,5,5
+w4f55562,6,6
+w4f55562,7,individuals & insurance companies7
+w4f55562,8,blank
+w4f55562,9,can't say
+w4f57,-4,case in not in wave of data collection
+w4f57,-3,"case in wave, no survey on file"
+w4f57,-2,not asked
+w4f57,-1,refused
+w4f57,1,marry like anyone else1
+w4f57,2,2
+w4f57,3,3
+w4f57,4,4
+w4f57,5,5
+w4f57,6,6
+w4f57,7,constitutional amendment to prohibit gay marriage7
+w4f57,8,blank
+w4f57,9,haven't thought much about this
+w4f58591,-4,case in not in wave of data collection
+w4f58591,-3,"case in wave, no survey on file"
+w4f58591,-2,not asked
+w4f58591,-1,refused
+w4f58591,1,marry like anyone else1
+w4f58591,2,2
+w4f58591,3,3
+w4f58591,4,4
+w4f58591,5,5
+w4f58591,6,6
+w4f58591,7,constitutional amendment to prohibit gay marriage7
+w4f58591,8,blank
+w4f58591,9,can't say
+w4f58592,-4,case in not in wave of data collection
+w4f58592,-3,"case in wave, no survey on file"
+w4f58592,-2,not asked
+w4f58592,-1,refused
+w4f58592,1,marry like anyone else1
+w4f58592,2,2
+w4f58592,3,3
+w4f58592,4,4
+w4f58592,5,5
+w4f58592,6,6
+w4f58592,7,constitutional amendment to prohibit gay marriage7
+w4f58592,8,blank
+w4f58592,9,can't say
+w4funew1,-4,case in not in wave of data collection
+w4funew1,-3,"case in wave, no survey on file"
+w4funew1,-2,not asked
+w4funew1,-1,refused
+w4funew1,1,president must be consistent over time1
+w4funew1,2,2
+w4funew1,3,3
+w4funew1,4,4
+w4funew1,5,5
+w4funew1,6,6
+w4funew1,7,president must adapt to changing circumstances and informati
+w4funew1,8,blank
+w4funew1,9,haven't thought much about this
+w4funew2,-4,case in not in wave of data collection
+w4funew2,-3,"case in wave, no survey on file"
+w4funew2,-2,not asked
+w4funew2,-1,refused
+w4funew2,1,president must be consistent over time1
+w4funew2,2,2
+w4funew2,3,3
+w4funew2,4,4
+w4funew2,5,5
+w4funew2,6,6
+w4funew2,7,president must adapt to changing circumstances and informati
+w4funew2,8,blank
+w4funew2,9,haven't thought much about this
+w4funew3,-4,case in not in wave of data collection
+w4funew3,-3,"case in wave, no survey on file"
+w4funew3,-2,not asked
+w4funew3,-1,refused
+w4funew3,1,president must be consistent over time1
+w4funew3,2,2
+w4funew3,3,3
+w4funew3,4,4
+w4funew3,5,5
+w4funew3,6,6
+w4funew3,7,president must adapt to changing circumstances and informati
+w4funew3,8,blank
+w4funew3,9,haven't thought much about this
+w4f60,-4,case in not in wave of data collection
+w4f60,-3,"case in wave, no survey on file"
+w4f60,-2,not asked
+w4f60,-1,refused
+w4f60,1,vote for it
+w4f60,2,vote against it
+w4f60,3,not vote on it
+w4f60,4,blank
+w4f60,5,don't know
+w4f61,-4,case in not in wave of data collection
+w4f61,-3,"case in wave, no survey on file"
+w4f61,-2,not asked
+w4f61,-1,refused
+w4f61,1,india
+w4f61,2,pakistan
+w4f61,3,sri lanka
+w4f61,4,indonesia
+w4f61,5,blank
+w4f61,6,don't know
+w4f62,-4,case in not in wave of data collection
+w4f62,-3,"case in wave, no survey on file"
+w4f62,-2,not asked
+w4f62,-1,refused
+w4f62,1,true
+w4f62,2,false
+w4f62,3,blank
+w4f62,4,don't know
+w4f63,-4,case in not in wave of data collection
+w4f63,-3,"case in wave, no survey on file"
+w4f63,-2,not asked
+w4f63,-1,refused
+w4f63,1,true
+w4f63,2,false
+w4f63,3,blank
+w4f63,4,don't know
+w4f64,-4,case in not in wave of data collection
+w4f64,-3,"case in wave, no survey on file"
+w4f64,-2,not asked
+w4f64,-1,refused
+w4f64,1,true
+w4f64,2,false
+w4f64,3,blank
+w4f64,4,don't know
+w4f65,-4,case in not in wave of data collection
+w4f65,-3,"case in wave, no survey on file"
+w4f65,-2,not asked
+w4f65,-1,refused
+w4f65,1,he was drafted but never went to vietnam
+w4f65,2,he was a decorated officer serving in vietnam
+w4f65,3,he was ineligible to serve in the military because of a medi
+w4f65,4,he served in the texas air national guard
+w4f65,5,blank
+w4f65,6,don't know
+w4f66,-4,case in not in wave of data collection
+w4f66,-3,"case in wave, no survey on file"
+w4f66,-2,not asked
+w4f66,-1,refused
+w4f66,1,he was drafted but never went to vietnam
+w4f66,2,he was a decorated officer serving in vietnam
+w4f66,3,he was ineligible to serve in the military because of a medi
+w4f66,4,he served in the massachusetts air national guard
+w4f66,5,blank
+w4f66,6,don't know
+w4f68,-4,case in not in wave of data collection
+w4f68,-3,"case in wave, no survey on file"
+w4f68,-2,not asked
+w4f68,-1,refused
+w4f68,1,south africa
+w4f68,2,japan
+w4f68,3,brazil
+w4f68,4,india
+w4f68,5,blank
+w4f68,6,don't know
+w4f69,-4,case in not in wave of data collection
+w4f69,-3,"case in wave, no survey on file"
+w4f69,-2,not asked
+w4f69,-1,refused
+w4f69,1,100
+w4f69,2,500
+w4f69,3,"1,000"
+w4f69,4,"10,000"
+w4f69,5,blank
+w4f69,6,don't know
+w4f70,-4,case in not in wave of data collection
+w4f70,-3,"case in wave, no survey on file"
+w4f70,-2,not asked
+w4f70,-1,refused
+w4f70,1,america's interests always first1
+w4f70,2,2
+w4f70,3,3
+w4f70,4,4
+w4f70,5,5
+w4f70,6,6
+w4f70,7,other countries' interests too7
+w4f70,8,blank
+w4f70,9,haven't thought much about this
+w4f71,-4,case in not in wave of data collection
+w4f71,-3,"case in wave, no survey on file"
+w4f71,-2,not asked
+w4f71,-1,refused
+w4f71,1,help others1
+w4f71,2,2
+w4f71,3,3
+w4f71,4,4
+w4f71,5,5
+w4f71,6,6
+w4f71,7,look out for family7
+w4f71,8,blank
+w4f71,9,haven't thought much about this
+w4f72,-4,case in not in wave of data collection
+w4f72,-3,"case in wave, no survey on file"
+w4f72,-2,not asked
+w4f72,-1,refused
+w4f72,1,do whatever you want 1
+w4f72,2,2
+w4f72,3,3
+w4f72,4,4
+w4f72,5,5
+w4f72,6,6
+w4f72,7,community can sometimes say7
+w4f72,8,blank
+w4f72,9,haven't thought much about this
+w4f73,-4,case in not in wave of data collection
+w4f73,-3,"case in wave, no survey on file"
+w4f73,-2,not asked
+w4f73,-1,refused
+w4f73,1,agree strongly
+w4f73,2,agree somewhat
+w4f73,3,neither agree nor disagree
+w4f73,4,disagree somewhat
+w4f73,5,disagree strongly
+w4f73,6,blank
+w4f73,7,i haven't thought much about this
+w4f74,-4,case in not in wave of data collection
+w4f74,-3,"case in wave, no survey on file"
+w4f74,-2,not asked
+w4f74,-1,refused
+w4f74,1,agree strongly
+w4f74,2,agree somewhat
+w4f74,3,neither agree nor disagree
+w4f74,4,disagree somewhat
+w4f74,5,disagree strongly
+w4f74,6,blank
+w4f74,7,i haven't thought much about this
+w4f75,-4,case in not in wave of data collection
+w4f75,-3,"case in wave, no survey on file"
+w4f75,-2,not asked
+w4f75,-1,refused
+w4f75,1,agree strongly
+w4f75,2,agree somewhat
+w4f75,3,neither agree nor disagree
+w4f75,4,disagree somewhat
+w4f75,5,disagree strongly
+w4f75,6,blank
+w4f75,7,i haven't thought much about this
+w4f76,-4,case in not in wave of data collection
+w4f76,-3,"case in wave, no survey on file"
+w4f76,-2,not asked
+w4f76,-1,refused
+w4f76,1,democrat
+w4f76,2,republican
+w4f76,3,independent
+w4f76,4,other
+w4f76,5,no preference
+w4f77,-4,case in not in wave of data collection
+w4f77,-3,"case in wave, no survey on file"
+w4f77,-2,not asked
+w4f77,-1,refused
+w4f77,1,1 very liberal
+w4f77,2,2 liberal
+w4f77,3,3 slightly liberal
+w4f77,4,4 moderate
+w4f77,5,5 slightly conservative
+w4f77,6,6 conservative
+w4f77,7,7 very conservative
+w4f77,8,blank
+w4f77,9,i haven't thought much about this
+w4f78,-4,case in not in wave of data collection
+w4f78,-3,"case in wave, no survey on file"
+w4f78,-2,not asked
+w4f78,-1,refused
+w4f78,1,yes
+w4f78,2,no
+w4f79,-4,case in not in wave of data collection
+w4f79,-3,"case in wave, no survey on file"
+w4f79,-2,not asked
+w4f79,-1,refused
+w4f79,1,every week
+w4f79,2,almost every week
+w4f79,3,once or twice a month
+w4f79,4,a few times a year
+w4f79,5,never
+w4f80,-4,case in not in wave of data collection
+w4f80,-3,"case in wave, no survey on file"
+w4f80,-2,not asked
+w4f80,-1,refused
+w4f80,1,the bible is god's word and all it says is true
+w4f80,2,the bible was written by men inspired by god but contains so
+w4f80,3,"the bible is a good book because it was written by wise men,"
+w4f80,4,the bible was written by men who lived so long ago that it i
+w4f80,5,blank
+w4f80,6,i haven't thought much about this
+w4f81,-4,case in not in wave of data collection
+w4f81,-3,"case in wave, no survey on file"
+w4f81,-2,not asked
+w4f81,-1,refused
+w4f81,1,i am now on active duty
+w4f81,2,"i was on active duty in the past, but not now"
+w4f81,3,"i have trained for the reserves or national guard, but have"
+w4f81,4,i have never served in the military
+smgrpnumber,-4,case in not in wave of data collection
+smgrpnumber,-3,"case in wave, no survey on file"
+w4mtg1,-4,case in not in wave of data collection
+w4mtg1,-3,"case in wave, no survey on file"
+w4mtg1,0,did not attend
+w4mtg1,1,attended
+w4mtg1,2,"tech problem or extenuating situation (hurricane, etc)"
+w4mtg2,-4,case in not in wave of data collection
+w4mtg2,-3,"case in wave, no survey on file"
+w4mtg2,0,did not attend
+w4mtg2,1,attended
+w4mtg2,2,"tech problem or extenuating situation (hurricane, etc)"
+w4mtg3,-4,case in not in wave of data collection
+w4mtg3,-3,"case in wave, no survey on file"
+w4mtg3,0,did not attend
+w4mtg3,1,attended
+w4mtg3,2,"tech problem or extenuating situation (hurricane, etc)"
+w4mtg4,-4,case in not in wave of data collection
+w4mtg4,-3,"case in wave, no survey on file"
+w4mtg4,0,did not attend
+w4mtg4,1,attended
+w4mtg4,2,"tech problem or extenuating situation (hurricane, etc)"
+w4mtg5,-4,case in not in wave of data collection
+w4mtg5,-3,"case in wave, no survey on file"
+w4mtg5,0,did not attend
+w4mtg5,1,attended
+w4mtg5,2,"tech problem or extenuating situation (hurricane, etc)"
+w4total,-4,case in not in wave of data collection
+w4total,-3,"case in wave, no survey on file"
+w4cd_no,-4,case in not in wave of data collection
+w4cd_no,-3,"case in wave, no survey on file"
+w4cd_grp,-4,case in not in wave of data collection
+w4cd_grp,-3,"case in wave, no survey on file"
+w4cd_grp,1,dop
+w4cd_grp,2,control
+w4track,-4,case in not in wave of data collection
+w4track,-3,"case in wave, no survey on file"
+w4track,0,no tracking file uploaded to stanford
+w4track,1,"yes, tracking file uploaded to stanford"
+w4track,2,case not in cd treatment group
+w4cdrecd,-4,case in not in wave of data collection
+w4cdrecd,-3,"case in wave, no survey on file"
+w4cdrecd,-2,not asked
+w4cdrecd,-1,refused
+w4cdrecd,1,yes
+w4cdrecd,2,no
+w4cdnuse,-4,case in not in wave of data collection
+w4cdnuse,-3,"case in wave, no survey on file"
+w4cdnuse,-2,not asked
+w4cdnuse,-1,refused
+w4cdnuse,1,never
+w4cdnuse,2,once or twice
+w4cdnuse,3,about once a week
+w4cdnuse,4,several times
+w4cdwhy,-4,case in not in wave of data collection
+w4cdwhy,-3,"case in wave, no survey on file"
+w4cdwhy,-2,not asked
+w4cdwhy,-1,refused
+w4cdwhy,1,i did not use the cd as i did not have access to a computer
+w4cdwhy,2,i did not use the cd for some other reason
+w4cdhelp,-4,case in not in wave of data collection
+w4cdhelp,-3,"case in wave, no survey on file"
+w4cdhelp,-2,not asked
+w4cdhelp,-1,refused
+w4cdhelp,1,yes
+w4cdhelp,2,no
+w4cdup,-4,case in not in wave of data collection
+w4cdup,-3,"case in wave, no survey on file"
+w4cdup,-2,not asked
+w4cdup,-1,refused
+w4cdup,1,"yes, the file has been uploaded"
+w4cdup,2,"no, i have not yet uploaded the file"
+w4cdup,3,"no, i am unable to upload the file"
+w4cd_use,-4,case in not in wave of data collection
+w4cd_use,-3,"case in wave, no survey on file"
+w4cd_use,0,participant stated did not use or no upload
+w4cd_use,1,self report of cd use or successful file upload
+cresume,0,not a resumed interview (duration less than 100 minutes)
+cresume,1,resumed interview (duration 100 minutes or more)
+c_cd_grp,1,dop experimental
+c_cd_grp,2, control
+c_track,0,no tracking file uploaded to stanford
+c_track,1,"yes, tracking file uploaded to stanford"
+c1_1,-2,not asked
+c1_1,-1,refused
+c1_1,1,0
+c1_1,2,1
+c1_1,3,2
+c1_1,4,3
+c1_1,5,4
+c1_1,6,5
+c1_1,7,6
+c1_1,8,7
+c1_1,9,8
+c1_1,10,9
+c1_1,11,10
+c1_2,-2,not asked
+c1_2,-1,refused
+c1_2,1,0
+c1_2,2,1
+c1_2,3,2
+c1_2,4,3
+c1_2,5,4
+c1_2,6,5
+c1_2,7,6
+c1_2,8,7
+c1_2,9,8
+c1_2,10,9
+c1_2,11,10
+c1_3,-2,not asked
+c1_3,-1,refused
+c1_3,1,0
+c1_3,2,1
+c1_3,3,2
+c1_3,4,3
+c1_3,5,4
+c1_3,6,5
+c1_3,7,6
+c1_3,8,7
+c1_3,9,8
+c1_3,10,9
+c1_3,11,10
+c1_4,-2,not asked
+c1_4,-1,refused
+c1_4,1,0
+c1_4,2,1
+c1_4,3,2
+c1_4,4,3
+c1_4,5,4
+c1_4,6,5
+c1_4,7,6
+c1_4,8,7
+c1_4,9,8
+c1_4,10,9
+c1_4,11,10
+c1_5,-2,not asked
+c1_5,-1,refused
+c1_5,1,0
+c1_5,2,1
+c1_5,3,2
+c1_5,4,3
+c1_5,5,4
+c1_5,6,5
+c1_5,7,6
+c1_5,8,7
+c1_5,9,8
+c1_5,10,9
+c1_5,11,10
+c1_6,-2,not asked
+c1_6,-1,refused
+c1_6,1,0
+c1_6,2,1
+c1_6,3,2
+c1_6,4,3
+c1_6,5,4
+c1_6,6,5
+c1_6,7,6
+c1_6,8,7
+c1_6,9,8
+c1_6,10,9
+c1_6,11,10
+c1_7,-2,not asked
+c1_7,-1,refused
+c1_7,1,0
+c1_7,2,1
+c1_7,3,2
+c1_7,4,3
+c1_7,5,4
+c1_7,6,5
+c1_7,7,6
+c1_7,8,7
+c1_7,9,8
+c1_7,10,9
+c1_7,11,10
+c1_8,-2,not asked
+c1_8,-1,refused
+c1_8,1,0
+c1_8,2,1
+c1_8,3,2
+c1_8,4,3
+c1_8,5,4
+c1_8,6,5
+c1_8,7,6
+c1_8,8,7
+c1_8,9,8
+c1_8,10,9
+c1_8,11,10
+cgbq2da,-2,not asked
+cgbq2da,-1,refused
+cgbq2da,999,can't say
+cjkq2da,-2,not asked
+cjkq2da,-1,refused
+cjkq2da,999,can't say
+cdrq2da,-2,not asked
+cdrq2da,-1,refused
+cdrq2da,999,can't say
+ctkq2da,-2,not asked
+ctkq2da,-1,refused
+ctkq2da,999,can't say
+crlq2da,-2,not asked
+crlq2da,-1,refused
+crlq2da,999,can't say
+cbcq2da,-2,not asked
+cbcq2da,-1,refused
+cbcq2da,999,can't say
+crpq2da,-2,not asked
+crpq2da,-1,refused
+crpq2da,999,can't say
+cdpq2da,-2,not asked
+cdpq2da,-1,refused
+cdpq2da,999,can't say
+c3a,-2,not asked
+c3a,-1,refused
+c3a,1,fewer services/lower taxes1
+c3a,2,2
+c3a,3,3
+c3a,4,4
+c3a,5,5
+c3a,6,6
+c3a,7,more services/higher taxes7
+c3a,8,haven't thought much about this8
+c3b_1,-2,not asked
+c3b_1,-1,refused
+c3b_1,1,fewer services/lower taxes1
+c3b_1,2,2
+c3b_1,3,3
+c3b_1,4,4
+c3b_1,5,5
+c3b_1,6,6
+c3b_1,7,more services/higher taxes7
+c3b_1,8,can't say8
+c3b_2,-2,not asked
+c3b_2,-1,refused
+c3b_2,1,fewer services/lower taxes1
+c3b_2,2,2
+c3b_2,3,3
+c3b_2,4,4
+c3b_2,5,5
+c3b_2,6,6
+c3b_2,7,more services/higher taxes7
+c3b_2,8,can't say8
+c4a,-2,not asked
+c4a,-1,refused
+c4a,1,intervene on our own1
+c4a,2,2
+c4a,3,3
+c4a,4,4
+c4a,5,5
+c4a,6,6
+c4a,7,intervene with approval & cooperation7
+c4a,8,haven't thought much about this8
+c4b_1,-2,not asked
+c4b_1,-1,refused
+c4b_1,1,intervene on our own1
+c4b_1,2,2
+c4b_1,3,3
+c4b_1,4,4
+c4b_1,5,5
+c4b_1,6,6
+c4b_1,7,intervene with approval & cooperation7
+c4b_1,8,can't say8
+c4b_2,-2,not asked
+c4b_2,-1,refused
+c4b_2,1,intervene on our own1
+c4b_2,2,2
+c4b_2,3,3
+c4b_2,4,4
+c4b_2,5,5
+c4b_2,6,6
+c4b_2,7,intervene with approval & cooperation7
+c4b_2,8,can't say8
+c5a,-2,not asked
+c5a,-1,refused
+c5a,1,pursue free trade1
+c5a,2,2
+c5a,3,3
+c5a,4,4
+c5a,5,5
+c5a,6,6
+c5a,7,protect us industries7
+c5a,8,haven't thought much about this8
+c5b_1,-2,not asked
+c5b_1,-1,refused
+c5b_1,1,pursue free trade1
+c5b_1,2,2
+c5b_1,3,3
+c5b_1,4,4
+c5b_1,5,5
+c5b_1,6,6
+c5b_1,7,protect us industries7
+c5b_1,8,can't say8
+c5b_2,-2,not asked
+c5b_2,-1,refused
+c5b_2,1,pursue free trade1
+c5b_2,2,2
+c5b_2,3,3
+c5b_2,4,4
+c5b_2,5,5
+c5b_2,6,6
+c5b_2,7,protect us industries7
+c5b_2,8,can't say8
+c6a,-2,not asked
+c6a,-1,refused
+c6a,1,govt. plan1
+c6a,2,2
+c6a,3,3
+c6a,4,4
+c6a,5,5
+c6a,6,6
+c6a,7,private plans7
+c6a,8,haven't thought much about this8
+c6b_1,-2,not asked
+c6b_1,-1,refused
+c6b_1,1,govt. plan1
+c6b_1,2,2
+c6b_1,3,3
+c6b_1,4,4
+c6b_1,5,5
+c6b_1,6,6
+c6b_1,7,private plans7
+c6b_1,8,can't say8
+c6b_2,-2,not asked
+c6b_2,-1,refused
+c6b_2,1,govt. plan1
+c6b_2,2,2
+c6b_2,3,3
+c6b_2,4,4
+c6b_2,5,5
+c6b_2,6,6
+c6b_2,7,private plans7
+c6b_2,8,can't say8
+c7a,-2,not asked
+c7a,-1,refused
+c7a,1,yes
+c7a,2,no
+c7a,3,not sure
+c7a,4,don't know
+c7b,-2,not asked
+c7b,-1,refused
+c7b,1,george w. bush
+c7b,2,john kerry
+c7b,3,ralph nader
+c7b,4,another candidate
+c7b,5,would not vote
+c7c,-2,not asked
+c7c,-1,refused
+c7c,1,absolutely certain
+c7c,2,reasonably certain
+c7c,3,not very certain
+c7c,4,very uncertain
+c8,-2,not asked
+c8,-1,refused
+c8,1,kofi annan
+c8,2,pervez musharaff
+c8,3,ahmed chalabi
+c8,4,hosni mubarak
+c9,-2,not asked
+c9,-1,refused
+c9,1,a taliban stronghold
+c9,2,a terrorist training camp
+c9,3,a prison
+c9,4,the site of a terrorist attack
+c10,-2,not asked
+c10,-1,refused
+c10,1,bangladesh
+c10,2,costa rica
+c10,3,sudan
+c10,4,bulgaria
+c11,-2,not asked
+c11,-1,refused
+c11,1,he was drafted but never went to vietnam
+c11,2,he was a decorated officer serving in vietnam
+c11,3,he was ineligible to serve in the military because of a medi
+c11,4,he served in the texas air national guard
+c12,-2,not asked
+c12,-1,refused
+c12,1,he was drafted but never went to vietnam
+c12,2,he was a decorated officer serving in vietnam
+c12,3,he was ineligible to serve in the military because of a medi
+c12,4,he served in the massachusetts air national guard
+c13,-2,not asked
+c13,-1,refused
+c13,1,south africa
+c13,2,japan
+c13,3,brazil
+c13,4,india
+c14_01,-2,not asked someone in my family
+c14_01,-1,refused someone in my family
+c14_01,0,no someone in my family
+c14_01,1,someone in my family
+c14_02,-2,not asked someone i know
+c14_02,-1,refused someone i know
+c14_02,0,no someone i know
+c14_02,1,someone i know
+c14_03,-2,not asked i don't know anyone currently serving...
+c14_03,-1,refused i don't know anyone currently serving...
+c14_03,0,no i don't know anyone currently serving in the military
+c14_03,1,i don't know anyone currently serving in the military
+c15,-2,not asked
+c15,-1,refused
+c15,1,fewer than 30
+c15,2,between 30 and 100
+c15,3,more than 100 but less than 200
+c15,4,more than 200
+c16,-2,not asked
+c16,-1,refused
+c16,1,much worse
+c16,2,somewhat worse
+c16,3,stayed about the same
+c16,4,somewhat better
+c16,5,much better
+c17,-2,not asked
+c17,-1,refused
+c17,1,much worse
+c17,2,somewhat worse
+c17,3,stayed about the same
+c17,4,somewhat better
+c17,5,much better
+c18,-2,not asked
+c18,-1,refused
+c18,1,"yes, i have been covered by my employer/a family member's em"
+c18,2,"yes, i or a member of my family has been purchasing individu"
+c18,3,"no, i have not been covered continuously"
+c19,-2,not asked
+c19,-1,refused
+c19,1,very good
+c19,2,good
+c19,3,fair
+c19,4,poor
+c19,5,very poor
+c19,6,not sure/can't say
+c20,-2,not asked
+c20,-1,refused
+c20,1,very good
+c20,2,good
+c20,3,fair
+c20,4,poor
+c20,5,very poor
+c20,6,not sure/can't say
+c21,-2,not asked
+c21,-1,refused
+c21,1,very good
+c21,2,good
+c21,3,fair
+c21,4,poor
+c21,5,very poor
+c21,6,not sure/can't say
+c22,-2,not asked
+c22,-1,refused
+c22,1,very good
+c22,2,good
+c22,3,fair
+c22,4,poor
+c22,5,very poor
+c22,6,not sure/can't say
+c23a,-2,not asked
+c23a,-1,refused
+c23a,1,yes
+c23a,2,no
+c23b,-2,not asked
+c23b,-1,refused
+c23b,1,never
+c23b,2,once or twice
+c23b,3,about once a week
+c23b,4,several times
+c23c,-2,not asked
+c23c,-1,refused
+c23c,1,i did not use the cd as i did not have access to a computer
+c23c,2,i did not use the cd for some other reason
+c23d,-2,not asked
+c23d,-1,refused
+c23d,1,yes
+c23d,2,no
+c23e,-2,not asked
+c23e,-1,refused
+c23e,1,"yes, the file has been uploaded"
+c23e,2,"no, i have not yet uploaded the file"
+c23e,3,"no, i am unable to upload the file"
+ppgender,1,male
+ppgender,2,female
+ppgender,99,missing
+ppage,999,missing
+ppagecat,1,18-24
+ppagecat,2,25-34
+ppagecat,3,35-44
+ppagecat,4,45-54
+ppagecat,5,55-64
+ppagecat,6,65-74
+ppagecat,7,75+
+ppagecat,99,age missing/under 18
+ppagect4,1,18-29
+ppagect4,2,30-44
+ppagect4,3,45-59
+ppagect4,4,60+
+ppagect4,99,age missing/under 18
+ppeth,1,"white, non-hispanic"
+ppeth,2,"black, non-hispanic"
+ppeth,3,"other, non-hispanic"
+ppeth,4,hispanic
+ppeth,99,missing
+ppeduc,1,less than hs
+ppeduc,2,"some hs, no diploma"
+ppeduc,3,graduated from hs - diploma or equivalent (ged)
+ppeduc,4,"some college, no degree"
+ppeduc,5,"associate degree (aa, as)"
+ppeduc,6,bachelor's degree
+ppeduc,7,master's degree
+ppeduc,8,"professional degree (md, dds, llb, jd)"
+ppeduc,9,doctorate degree
+ppeduc,99,missing
+pphouse,1,a single-family house detached
+pphouse,2,a single-family house attached
+pphouse,3,an apartment
+pphouse,4,a condominium or co-op
+pphouse,5,college dormitory
+pphouse,6,a manufactured or mobile home
+pphouse,7,other
+pphouse,99,missing
+pprent,1,own
+pprent,2,rent
+pprent,3,do not pay for housing
+pprent,99,missing
+ppdualin,0,no
+ppdualin,1,yes
+ppdualin,99,missing
+ppmarit,1,married
+ppmarit,2,single (never married)
+ppmarit,3,divorced
+ppmarit,4,widowed
+ppmarit,5,separated
+ppmarit,99,missing
+pphhhead,0,no
+pphhhead,1,yes
+pphhhead,99,missing
+pphhsize,99,missing
+ppt01,99,missing
+ppt1317,99,missing
+ppt18ov,99,missing
+ppt25,99,missing
+ppt612,99,missing
+ppwork,1,i work as a paid employee
+ppwork,2,i am self-employed
+ppwork,3,"i am an owner/partner in small business, prof practice, farm"
+ppwork,4,i work at least 15 hrs/wk w/o pay in family business/farm
+ppwork,5,"i am unemployed, temporarily laid off, but looking for work"
+ppwork,6,i am retired
+ppwork,7,i am disabled
+ppwork,8,i am a homemaker
+ppwork,9,other
+ppwork,99,missing
+ppstaten,11,me
+ppstaten,12,nh
+ppstaten,13,vt
+ppstaten,14,ma
+ppstaten,15,ri
+ppstaten,16,ct
+ppstaten,21,ny
+ppstaten,22,nj
+ppstaten,23,pa
+ppstaten,31,oh
+ppstaten,32,in
+ppstaten,33,il
+ppstaten,34,mi
+ppstaten,35,wi
+ppstaten,41,mn
+ppstaten,42,ia
+ppstaten,43,mo
+ppstaten,44,nd
+ppstaten,45,sd
+ppstaten,46,ne
+ppstaten,47,ks
+ppstaten,51,de
+ppstaten,52,md
+ppstaten,53,dc
+ppstaten,54,va
+ppstaten,55,wv
+ppstaten,56,nc
+ppstaten,57,sc
+ppstaten,58,ga
+ppstaten,59,fl
+ppstaten,61,ky
+ppstaten,62,tn
+ppstaten,63,al
+ppstaten,64,ms
+ppstaten,71,ar
+ppstaten,72,la
+ppstaten,73,ok
+ppstaten,74,tx
+ppstaten,81,mt
+ppstaten,82,id
+ppstaten,83,wy
+ppstaten,84,co
+ppstaten,85,nm
+ppstaten,86,az
+ppstaten,87,ut
+ppstaten,88,nv
+ppstaten,91,wa
+ppstaten,92,or
+ppstaten,93,ca
+ppstaten,94,ak
+ppstaten,95,hi
+ppstaten,99,missing
+ppreg4,1,northeast
+ppreg4,2,midwest
+ppreg4,3,south
+ppreg4,4,west
+ppreg4,99,missing
+ppreg9,1,new england
+ppreg9,2,mid-atlantic
+ppreg9,3,east-north central
+ppreg9,4,west-north central
+ppreg9,5,south atlantic
+ppreg9,6,east-south central
+ppreg9,7,west-south central
+ppreg9,8,mountain
+ppreg9,9,pacific
+ppreg9,99,missing
+ppmsacat,0,non-metro
+ppmsacat,1,metro
+ppmsacat,99,missing
