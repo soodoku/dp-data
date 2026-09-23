@@ -1,0 +1,4915 @@
+source_column,source_value,value_label
+WAVE,1,T1 - Recruitment
+WAVE,2,T2 - Arrival
+WAVE,3,T3 - Departure
+WAVE,4,T4 - Post-election
+GROUP_T1,1,Test Group
+GROUP_T1,2,Control Group
+GROUP_T1BIS,1, Test Group participants
+GROUP_T1BIS,2, Test Group Non-participants
+GROUP_T1BIS,3, Control Group
+COUNTRY1,1,Austria
+COUNTRY1,2,Beglium
+COUNTRY1,3,Bulgaria
+COUNTRY1,4,Cyprus
+COUNTRY1,5,Czech republic
+COUNTRY1,6,Denmark
+COUNTRY1,7,Estonia
+COUNTRY1,8,Finland
+COUNTRY1,9,France
+COUNTRY1,10,Germany
+COUNTRY1,11,Greece
+COUNTRY1,12,Hungary
+COUNTRY1,13,Ireland
+COUNTRY1,14,Italy
+COUNTRY1,15,Latvia
+COUNTRY1,16,Lithuania
+COUNTRY1,17,Luxembourg
+COUNTRY1,18,Malta
+COUNTRY1,19,The Netheralands
+COUNTRY1,20,Poland
+COUNTRY1,21,Portugal
+COUNTRY1,22,Romania
+COUNTRY1,23,Slovak republic
+COUNTRY1,24,Slovenia
+COUNTRY1,25,Spain
+COUNTRY1,26,Sweden
+COUNTRY1,27,United Kingdom
+COUNTRY2,1,Belgium
+COUNTRY2,2,Denmark
+COUNTRY2,3,Germany
+COUNTRY2,4,Greece
+COUNTRY2,5,Spain
+COUNTRY2,6,Finland
+COUNTRY2,7,France
+COUNTRY2,8,Ireland
+COUNTRY2,9,Italy
+COUNTRY2,10,Luxembourg
+COUNTRY2,11,The Netherlands
+COUNTRY2,12,Austria
+COUNTRY2,13,Portugal
+COUNTRY2,14,Sweden
+COUNTRY2,15,United Kingdom
+COUNTRY2,31,Bulgaria
+COUNTRY2,32,Cyprus
+COUNTRY2,33,Czech republic
+COUNTRY2,34,Estonia
+COUNTRY2,35,Hungary
+COUNTRY2,36,Latvia
+COUNTRY2,37,Lithuania
+COUNTRY2,38,Malta
+COUNTRY2,39,Poland
+COUNTRY2,40,Romania
+COUNTRY2,41,Slovakia
+COUNTRY2,42,Slovenia
+TYPE,1, TGP_INT
+TYPE,2, TGP_NOT_INT
+TYPE,3, TGNP_INT
+TYPE,4, TGNP_NOT_INT
+TYPE,5, CG_TGP_INT
+TYPE,6, CG_TGP_NOT_INT
+TYPE,7, CG_TGNP_INT
+TYPE,8, CG_TGNP_NOT_INT
+TYPE,9, CG_INT
+TYPE,10, CG_NOT_INT
+Q1_A1,1,Refusal by respondent/Declined to do the interview
+Q1_A1,2,Refusal by other household member
+Q1_A1,3,Series of broken appointments to avoid interview
+Q1_A1,4,Telephone line problems (telephone only)/ no answer at the d
+Q1_A1,5,Refusal by respondent to go on with the interview
+Q1_B1,1,No reason given
+Q1_B1,2,Generic reason:
+sex1,1,Male
+sex1,2,Female
+educ1,0,Still studying
+educ1,1,No education
+educ1,997,Refusal
+educ1,999,Don't know
+class1,1,Upper class
+class1,2,Upper middle class
+class1,3,Lower middle class
+class1,4,Working class
+class1,5,None of these (SP.)
+class1,997,Refusal (SP.)
+class1,999,DK (SP.)
+reli1,1,Catholic
+reli1,2,Orthodox
+reli1,3,Protestant
+reli1,4,Other Christian
+reli1,5,Jewish
+reli1,6,Muslim
+reli1,7,Sikh
+reli1,8,Buddhist
+reli1,9,Hindu
+reli1,10,Atheist\ Non believer\ Agnostic
+reli1,996,Other
+reli1,997,Refusal
+reli1,999,DK 
+religiosity1,1,More than once a week
+religiosity1,2,Once a week
+religiosity1,3,About once a month
+religiosity1,4,Once every 2 or 3 months
+religiosity1,5,Only on special holy days
+religiosity1,6,About once a year
+religiosity1,7,Less often
+religiosity1,8,Never
+religiosity1,997,Refusal (SP.)
+religiosity1,999,DK(SP.)
+birth1,1,In [COUNTRY]
+birth1,2,In another Member country of the European Union
+birth1,3,In another European country that is not a Member of the Euro
+birth1,4,"In Asia, Africa or Latin America"
+birth1,5,"In Northern America, Japan or Oceania"
+birth1,997,Refusal (SP.)
+birth1,999,DK (SP.)
+parentsbirth1,1,Your mother and your father were born in [COUNTRY]
+parentsbirth1,2,One of your parents was born in [COUNTRY] and the other was
+parentsbirth1,3,Your mother and your father were born in another Member Stat
+parentsbirth1,4,At least one of your parents was born outside the European U
+parentsbirth1,999,DK/Refusal (SP.)
+leftright14,0,Left
+leftright14,1,1
+leftright14,2,2
+leftright14,3,3
+leftright14,4,4
+leftright14,5,5
+leftright14,6,6
+leftright14,7,7
+leftright14,8,8
+leftright14,9,9
+leftright14,10,Right
+leftright14,999,DK (SP.)
+nat1_1,0,No
+nat1_1,1,yes
+nat1_2,0,No
+nat1_2,1,yes
+nat1_3,0,No
+nat1_3,1,yes
+nat1_4,0,No
+nat1_4,1,yes
+nat1_5,0,No
+nat1_5,1,yes
+nat1_6,0,No
+nat1_6,1,yes
+nat1_7,0,No
+nat1_7,1,yes
+nat1_8,0,No
+nat1_8,1,yes
+nat1_9,0,No
+nat1_9,1,yes
+nat1_10,0,No
+nat1_10,1,yes
+nat1_11,0,No
+nat1_11,1,yes
+nat1_12,0,No
+nat1_12,1,yes
+nat1_13,0,No
+nat1_13,1,yes
+nat1_14,0,No
+nat1_14,1,yes
+nat1_15,0,No
+nat1_15,1,yes
+nat1_16,0,No
+nat1_16,1,yes
+nat1_17,0,No
+nat1_17,1,yes
+nat1_18,0,No
+nat1_18,1,yes
+nat1_19,0,No
+nat1_19,1,yes
+nat1_20,0,No
+nat1_20,1,yes
+nat1_21,0,No
+nat1_21,1,yes
+nat1_22,0,No
+nat1_22,1,yes
+nat1_23,0,No
+nat1_23,1,yes
+nat1_24,0,No
+nat1_24,1,yes
+nat1_25,0,No
+nat1_25,1,yes
+nat1_26,0,No
+nat1_26,1,yes
+nat1_27,0,No
+nat1_27,1,yes
+nat1_28,0,No
+nat1_28,1,yes
+nat1_29,0,No
+nat1_29,1,yes
+V1Q1,0,Definitely won't vote
+V1Q1,1,1
+V1Q1,2,2
+V1Q1,3,3
+V1Q1,4,4
+V1Q1,5,5
+V1Q1,6,6
+V1Q1,7,7
+V1Q1,8,8
+V1Q1,9,9
+V1Q1,10,Definitely will vote
+V1Q1,999,DK (SP.)
+V1Q2,101,SPÖ
+V1Q2,102,ÖVP
+V1Q2,103,FPÖ
+V1Q2,104,BZÖ
+V1Q2,105,GRÜNE
+V1Q2,106,LINKE
+V1Q2,107,Hans-Peter Martin
+V1Q2,201,Christen-Democratisch en Vlaams (Christian-Democratic and Fl
+V1Q2,202,"Nieuw-Vlaamse Alliantie (New-Flemish Alliance), N-VA"
+V1Q2,203,Groen! (Green!)
+V1Q2,204,Socialistische Partij - Anders (Socialist Party – Different)
+V1Q2,205,"Sociaal-Liberale Partij (Social Liberal Party), SLP"
+V1Q2,206,"Vlaams Belang (Flemish Interest), VB"
+V1Q2,207,Open Vlaamse Liberalen en Democraten (Open Flemish Liberals
+V1Q2,208,Lijst Dedecker (Dedecker list)
+V1Q2,209,"Partij van de Arbeid (Workers' Party of Belgium), PvdA"
+V1Q2,210,"Parti Socialiste (Socialist Party), PS"
+V1Q2,211,"Mouvement Réformateur (Reformist Movement), MR"
+V1Q2,212,"Centre Démocrate Humaniste (Humanist Democratic Centre), CDh"
+V1Q2,213,Ecolo (Ecology)
+V1Q2,214,"Front National (National Front), FN"
+V1Q2,215,"Parti du Travail de Belgique (Workers' Party of Belgium), PT"
+V1Q2,301,(Bulgarian Socialist Party) BSP
+V1Q2,302,National Movement for stability and prosperity) NDSV
+V1Q2,303,Movement for Rights and Freedoms) DPS
+V1Q2,304,Attack Party
+V1Q2,305," Coalition of Union of Democratic Forces (SDS), Democrats fo"
+V1Q2,306,Citizens for the European Development of Bulgaria) GERB
+V1Q2,307,The New Time
+V1Q2,308,Euroroma
+V1Q2,314,"Order, Lawfulness, Justice (RZS) and coalition: Union of Fre"
+V1Q2,401,Progressive Party of Working People
+V1Q2,402,Democratic Rally
+V1Q2,403,Democratic Party
+V1Q2,404,Movement for Social Democracy United Democratic Union of Cen
+V1Q2,405,European party
+V1Q2,406,Ecological and Environmental Movement
+V1Q2,501,Ceská strana sociálne demokratická (Czech Social Democratic
+V1Q2,502,Krestanská a demokratická unie – Ceskoslovenská strana lidov
+V1Q2,503,Komunistická strana Cech a Moravy (Communist Party of Bohemi
+V1Q2,504,"Obcanská demokratická strana (Civic Democratic Party), ODS"
+V1Q2,505,"Strana Zelených (Green Party), SZ"
+V1Q2,601,"Socialdemokratiet (Social Democrats), A"
+V1Q2,602,"Det Radikale Venstre (Radical Liberal Party), B"
+V1Q2,603,"Det Konservative Folkeparti (Conservative People's Party), C"
+V1Q2,604,"Socialistisk Folkeparti (Socialist People's Party), SF"
+V1Q2,605,"Ny/Liberal Alliance (New/Liberal Alliance), I"
+V1Q2,606,"Junibevægelsen (June Movement), J"
+V1Q2,607,"Folkebevægelsen mod EU (People's Movement against the EU), N"
+V1Q2,608,"Dansk Folkeparti (Danish People's Party), O"
+V1Q2,609,"Venstre - Danmarks liberale parti (Venstre, Denmark's Libera"
+V1Q2,610,"Enhedslisten - de Rød-Grønne (Red-Green Alliance), Ø"
+V1Q2,701,Reformierakond (Estonian Reform Party)
+V1Q2,702,"Keskerakond (Centre Party of Estonia), KESK"
+V1Q2,703,Isamaa ja Res Publica Liit (Union of Pro Patria and Res Publ
+V1Q2,704,"Sotsiaaldemokraatlik Erakond (Social Democratic Party), SDE"
+V1Q2,705,"Erakond Eestimaa Rohelised (Estonian Greens), EER"
+V1Q2,706,"Eestimaa Rahvaliit (People's Union of Estonia), ER"
+V1Q2,707,"Eesti Kristlikud Demokraadid (Estonian Christian Democrats),"
+V1Q2,708,"Eesti Iseseisvuspartei (Estonian Independence Party), EI"
+V1Q2,709,"Vene Erakond Eestis (Russian Party in Estonia), VEE"
+V1Q2,710,"Eestimaa Ühendatud Vasakpartei (Estonian United Left Party),"
+V1Q2,801,"Suomen Keskusta (Centre Party), KESK"
+V1Q2,802,"Kansallinen Kokoomus (National Coalition Party), KOK"
+V1Q2,803,Suomen Sosialidemokraattinen Puolue (Social Democratic Party
+V1Q2,804,"Vasemmistoliitto (Left Alliance), VAS"
+V1Q2,805,"Vihreä liitto (Green League), VIHR"
+V1Q2,806,"Ruotsalainen kansanpuolue (Swedish People's Party), RKP"
+V1Q2,807,"Kristillisdemokraatit (Christian Democrats in Finland), KD"
+V1Q2,808,"Perussuomalaiset (True Finns), PS"
+V1Q2,901,"Lutte ouvrière (Workers' struggle), LO"
+V1Q2,902,"Nouveau Parti anticapitaliste (New Anticapitalist Party), NP"
+V1Q2,903,Parti communiste/Parti de gauche (Communist Party/Party of t
+V1Q2,904,"Parti socialiste (Socialist Party), PS"
+V1Q2,905,Europe écologie (Europe Ecology)
+V1Q2,906,"Mouvement démocrate (Democratic Movement), MODEM"
+V1Q2,907,Union pour un Mouvement Populaire - Nouveau Centre (Union fo
+V1Q2,908,"Debout la République (Arise the Republic), DLR"
+V1Q2,909,“Libertas” - Mouvement pour la France (Movement for France)
+V1Q2,910,"Front national (National Front), FN"
+V1Q2,996,Üksikkandidaat (Independent candidate)
+V1Q2,997,refusal;
+V1Q2,998,Not Asked
+V1Q2,999,don’t know;
+V1Q2,1001,Christlich Demokratische Union/Christlich-Soziale Union (Chr
+V1Q2,1002,Sozialdemokratische Partei Deutschlands (Social Democratic P
+V1Q2,1003,"Freie Demokratische Partei (Free Democratic Party), FDP"
+V1Q2,1004,Die Linke (The Left)
+V1Q2,1005,Bündnis 90 / Die Grünen (Alliance '90/The Greens)
+V1Q2,1006,"Republikaner (Republicans), REP"
+V1Q2,1007,"Deutsche Volksunion (German People's Union), DVU"
+V1Q2,1008,Nationaldemokratische Partei Deutschlands (National Democrat
+V1Q2,1009,"Freie Wähler (Free Voter), FW"
+V1Q2,1101,New Democracy ND
+V1Q2,1102,Panhellenic Socialist Movement PASOK
+V1Q2,1103,Greek Communist Party ???
+V1Q2,1104,Coalition of Radical Left SYRIZA
+V1Q2,1105,Popular Orthodox Rally LAOS
+V1Q2,1106,Ecologists Green
+V1Q2,1107,Union of Centrists
+V1Q2,1108,Movement for the Reorganization of the Communist Party o f G
+V1Q2,1109,Fighting Socialist Party of Greece  ?S??/ASKE
+V1Q2,1110,Ecologists Greece
+V1Q2,1111,ANTARSIA
+V1Q2,1112,Democratic Revival
+V1Q2,1113,Drasis
+V1Q2,1114,European Liberal Alliance -Rainbow party
+V1Q2,1115,Chrysi Avgi
+V1Q2,1116,Greek Hunter’s Party
+V1Q2,1201,"Magyar Szocialista Párt (Hungarian Socialist Party), MSZP"
+V1Q2,1202,Magyar Polgári Szövetség és Kereszténydemokrata Néppárt közö
+V1Q2,1203,"Szabad Demokraták Szövetsége (Alliance of Free Democrats), S"
+V1Q2,1204,"Magyar Demokrata Fórum (Hungarian Democratic Forum), MDF"
+V1Q2,1205,Magyar Igazság és Élet Pártja (Hungarian Truth and Life Part
+V1Q2,1206,"Magyar Kommunista Munkáspárt (Communist Worker's Party), Mun"
+V1Q2,1207,"MCP Roma Összefogás Párt (Gipsy Union Party), MCF"
+V1Q2,1208,"Jobbik Magyarországért Mozgalom (Jobbik, The Movement For a"
+V1Q2,1209,Humanista Párt/ Lehet Más a Politika (Humanist Party/The pol
+V1Q2,1210,Centrum Összefogás Magyarországért és Magyarországi Szociáld
+V1Q2,1211,"Független Kisgazda-, Földmunkás és Polgári Párt (Independent"
+V1Q2,1212,"Független Kisgazda-, Nemzeti Egység Párt (Independent Smallh"
+V1Q2,1213,Magyar Republikánus Politikai Párt (Hungarian Republican Par
+V1Q2,1214,"Szociáldemokrata Párt (Social Democratic Party), SZDP"
+V1Q2,1215,"Magyar Szociális Zöld Párt (Hungarian Social Green Party), M"
+V1Q2,1216,Magyarországi Kisebbségek Pártja (Hungarian Ethnic Minority
+V1Q2,1217,"Internetes Demokrácia Pártja (Internet Democracy Party), IDE"
+V1Q2,1218,Megújult Magyarországi Roma Összefogás Párt (Renewed Hungari
+V1Q2,1219,Szent Koronát Szolgálók Szövetsége (Alliance of Saint Crown
+V1Q2,1220,"Zöldek Pártja (Green Party), ZÖLDEK"
+V1Q2,1301,"Fianna Fail, FF"
+V1Q2,1302,"Fianna Gael, FG"
+V1Q2,1303,"Labour, LP"
+V1Q2,1304,"Green Party, GP"
+V1Q2,1305,"Sinn Fein, SF"
+V1Q2,1306,Libertas
+V1Q2,1401,Italia dei Valori – Lista Di Pietro (Italy of Values – Di Pi
+V1Q2,1402,"La Destra - Fiamma Tricolore (The Right - Tricolour Flame),"
+V1Q2,1403,"Lega Nord (Northern League), LN"
+V1Q2,1404,"Rifondazione Comunista (Communist Refoundation Party), PRC"
+V1Q2,1405,Partito dei Comunisti Italiani (Party of Italian Communists)
+V1Q2,1406,Verdi (Greens)
+V1Q2,1407,"Partito Democratico (Democratic Party), PD"
+V1Q2,1408,"Partito Socialista (Socialist Party), PS"
+V1Q2,1409,"Il Popolo della Libertà (The People of Freedom), PDL"
+V1Q2,1410,"Partito Comunista dei Lavoratori (Workers' Communist Party),"
+V1Q2,1411,"Unione di Centro (Union of Centre), UDC"
+V1Q2,1412,"Sinistra e Libertà (Left and Freedom), SL"
+V1Q2,1501,Jaunais laiks
+V1Q2,1502,Tautas partija
+V1Q2,1503,Apvieniba “Par cilveka tiesibam vienota Latvija”
+V1Q2,1504,„Saskanas centrs”
+V1Q2,1505,Apvieniba “Tevzemei un Brivibai”/LNNK
+V1Q2,1506,Latvijas Pirma partija /“Latvijas celš
+V1Q2,1507,Latvijas Socialdemokratiska stradnieku partija
+V1Q2,1508,Zalo un zemnieku savieniba
+V1Q2,1509,Latvijas Socialistiska partija
+V1Q2,1510,Politiska patriotiska apvieniba 'DZIMTENE'
+V1Q2,1511,„Pilsoniska savieniba
+V1Q2,1512,„Sabiedriba citai politikai
+V1Q2,1513,„Jaunie demokrati”/ demokrati lv
+V1Q2,1514,Visu Latvijai!
+V1Q2,1601,"Darbo partija (Labour Party), DP"
+V1Q2,1602,Krikšcioniu konservatoriu socialine sajunga (Christian Conse
+V1Q2,1603,"Leiboristu partija (Labour Party), LP"
+V1Q2,1604,"Liberalu ir centro sajunga (Liberal and Centre Union), LiCS"
+V1Q2,1605,Lietuvos centro partija (Lithuanian Centre Party)
+V1Q2,1606,Lietuvos lenku rinkimu akcija (Electoral Action of Poles in
+V1Q2,1607,Lietuvos Respublikos liberalu sajudis (Liberals' Movement of
+V1Q2,1608,Lietuvos socialdemokratu partija (Social Democratic Party of
+V1Q2,1609,Lietuvos socialdemokratu sajunga (Social Democratic Union of
+V1Q2,1610,Lietuvos valstieciu liaudininku sajunga (Union of Lithuanian
+V1Q2,1611,Partija „Tvarka ir teisingumas“-Liberaldemokratu partija (Or
+V1Q2,1612,Pilietines demokratijos partija (Party of Civic Democracy)
+V1Q2,1613,Politine partija 'Frontas' (Political party 'Frontas')
+V1Q2,1614,Tautine partija 'Lietuvos kelias' (National party 'The way o
+V1Q2,1615,Tautos prisikelimo partija (Rising Nation Party)
+V1Q2,1616,Tevynes sajunga - Lietuvos krikšcionys demokratai (Homeland
+V1Q2,1618,Žemaiciu partija
+V1Q2,1701,"Kommunistesch Partei Lëtzebuerg (Communist Party), KPL"
+V1Q2,1702,Déi Gréng (Green party)
+V1Q2,1703,Alternativ Demokratesch Reformpartei (Alternative Democratic
+V1Q2,1704,Lëtzebuerger Sozialistesch Aarbechterpartei (Social Labour p
+V1Q2,1705,"Demokratesch Partei (Democratic Party), DP"
+V1Q2,1706,Déi Lénk (Left party)
+V1Q2,1707,Chrëschtlech-Sozial Volkspartei (Christian Social People's P
+V1Q2,1708,Biergerlëscht (Citiziens List)
+V1Q2,1801,"Il-Partit Nazzjonalista (Nationalist Party), PN"
+V1Q2,1802,"Il-Partit Laburista (Labour Party), PL"
+V1Q2,1803,"Alternattiva Demokratika (Democratic Alternative), AD"
+V1Q2,1804,"Alleanza Nazzjonali (National Alliance), AN"
+V1Q2,1901,"Christen-Democratisch Appèl (Christian Democratic Appeal), C"
+V1Q2,1902,"Partij van de Arbeid (Labour Party), PVDA"
+V1Q2,1903,"Socialistische Partij (Socialist Party), SP"
+V1Q2,1904,Volkspartij voor Vrijheid en Democratie (People's Party for
+V1Q2,1905,"Groen Links (Green Left), GL"
+V1Q2,1906,"Partij voor de Vrijheid (Party for Freedom), PVV"
+V1Q2,1907,Christen Unie/Staatskundig Gereformeerde Partij (Christian U
+V1Q2,1908,"Democraten 66 (Democrats 66), D'66"
+V1Q2,1909,"Partij voor de Dieren (Party for Animals), PvdD"
+V1Q2,1910,Partij Newropeans
+V1Q2,2001,NAPRZÓD POLSKO – PIAST! (Agrarian)
+V1Q2,2002,Koalicyjny Komitet Wyborczy PdP - CentroLewica (Coalition Pd
+V1Q2,2003,Koalicyjny Komitet Wyborczy Sojusz Lewicy Demokratycznej – U
+V1Q2,2004,"Demokratycznej Partii Lewicy (Party of the Democratic Left),"
+V1Q2,2005,Libertas
+V1Q2,2006,"Liga Polskich Rodzin (League of Polish Families), LPR"
+V1Q2,2007,"Partia Kobiet (Women's Party), PK"
+V1Q2,2008,"Platforma Obywatelska (Civic Platform), PO"
+V1Q2,2009,"Polska Partia Pracy (Polish Labour Party), PPP"
+V1Q2,2010,"Polska Partia Socjalistyczna (Polish Socialist Party), PPS"
+V1Q2,2011,"Polska Patriotyczna (Patriotic Poland), PP"
+V1Q2,2012,"Polskie Stronnictwo Ludowe (Polish People's Party), PSL"
+V1Q2,2013,"Prawica Rzeczypospolitej (Republic Right Party), PRz"
+V1Q2,2014,"Prawo i Sprawiedliwosc (Law and Justice), PiS"
+V1Q2,2015,Samoobrona Rzeczpospolitej Polskiej (Self-Defense of the Rep
+V1Q2,2016,"Unia Polityki Realnej (Union of Real Politics), UPR"
+V1Q2,2101,"Bloco de Esquerda (Left Bloc), BE"
+V1Q2,2102,Centro Democrático Social /Partido Popular (Social Democrati
+V1Q2,2103,Coligação Democrática Unitária- Partido Comunista Português-
+V1Q2,2104,"Partido Socialista (Socialist Party), PS"
+V1Q2,2105,"Partido Social Democrata (Social Democratic Party), PSD"
+V1Q2,2201,"Partidul Democrat-Liberal (Democratic-Liberal Party), PD-L"
+V1Q2,2202,Alianta Electorala Partidul Social Democrat-Partidul Conserv
+V1Q2,2203,"Partidul National Liberal (National Liberal Party), PNL"
+V1Q2,2204,Uniunea Democrata a Maghiarilor din România (Democratic Alli
+V1Q2,2205,Partidul National Taranesc-Crestin Democrat (Christian-Democ
+V1Q2,2206,Partidul Noua Generatie-Crestin si Democrat (New Generation
+V1Q2,2207,"Partidul România Mare (Great Romania Party), PRM"
+V1Q2,2301,SMER - sociálna demokracia (Direction - Social Democracy)
+V1Q2,2302,Slovenská demokratická a krestanská únia - Demokratická stra
+V1Q2,2303,"Slovenská národná strana (Slovak national party), SNS"
+V1Q2,2304,Krestanskodemokratické hnutie (Christian Democratic Movement
+V1Q2,2305,"Strana madarskej koalície (Party of Hungarian Coalition), SK"
+V1Q2,2306,Ludová strana - Hnutie za demokratické Slovensko  (People's
+V1Q2,2307,"Strana zelených (Green Party), SZ"
+V1Q2,2308,"Komunistická strana Slovenska (Communist Party of Slovakia),"
+V1Q2,2309,"Slobodné Fórum (Free Forum), SF"
+V1Q2,2310,Konzervatívni demokrati Slovenska - Obcianska konzervatívna
+V1Q2,2311,"Sloboda a Solidarita (Freedom and Solidarity), SAS"
+V1Q2,2312,"Demokratická strana (Democratic Party), DS"
+V1Q2,2313,"Obciansko-liberálna strana (Civic-Liberal Party), LIGA"
+V1Q2,2314,"Strana demokratickej lavice (Party of Democratic Left), SDL"
+V1Q2,2315,"Agrárna strana vidieka (Agrarian Party), ASV"
+V1Q2,2316,"Rómska iniciatíva Slovenska (Roma Initiative of Slovakia), R"
+V1Q2,2317,MISIA 21 - Hnutie krestanskej solidarity (Mission 21 - Movem
+V1Q2,2401,"Slovenska demokratska stranka (Slovenian Democratic party),"
+V1Q2,2402,Liberalna demokracija Slovenije (Liberal democracy of Sloven
+V1Q2,2403,"Slovenska ljudska stranka (Slovenian People's Party), SLS"
+V1Q2,2404,"Socialni demokrati (Social democrats), SD"
+V1Q2,2405,ZARES - Nova politika (New Politics)
+V1Q2,2406,"Slovenska nacionalna stranka (Slovenian national party), SNS"
+V1Q2,2407,Demokraticna stranka upokojencev (Democratic party of pensio
+V1Q2,2408,Stranka mladih Slovenije (Democratic party of pensioners of
+V1Q2,2409,Nova Slovenija - kršcanska ljudska stranka (New Slovenia - C
+V1Q2,2501,"Partido Popular (People's Party), PP"
+V1Q2,2502,Partido Socialista Obrero Español (Spanish Socialist Workers
+V1Q2,2503,"Izquierda Unida (United Left), IU"
+V1Q2,2504,Los Verdes (The Greens)
+V1Q2,2505,"Convergència i unió (Convergence and Union), CIU"
+V1Q2,2506,"Eusko Alkartasuna, EA"
+V1Q2,2507,Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco (Basque N
+V1Q2,2508,Convergència Democràtica de Catalunya (Democratic Convergenc
+V1Q2,2509,Iniciativa per Catalunya Verds -Esquerra Unida i Alternativa
+V1Q2,2510,Europa de los pueblos (Europe of the peoples)
+V1Q2,2511,Coalición Europea (European coalition)
+V1Q2,2601,"Vänsterpartiet (Left Party), V"
+V1Q2,2602,Sveriges Socialdemokratiska arbetarparti (Social Democratic
+V1Q2,2603,"Centerpartiet (Centre Party), C"
+V1Q2,2604,"Folkpartiet Liberalerna (Liberal People's Party), FP"
+V1Q2,2605,"Moderaterna (Moderate Party), M"
+V1Q2,2606,"Kristdemokraterna (Christian Democrats), KD"
+V1Q2,2607,"Miljöpartiet de Gröna (Environment Party the Greens), MP"
+V1Q2,2608,"Junilistan (June List), JL"
+V1Q2,2609,"Sverigedemokraterna (Sweden Democrats), SD"
+V1Q2,2610,"Piratpartiet (Pirate party), PP"
+V1Q2,2701,Labour Party
+V1Q2,2702,Conservative Party
+V1Q2,2703,Liberal Democrats
+V1Q2,2704,"UK Independence Party, UKIP"
+V1Q2,2705,The Green party
+V1Q2,2706,"Scottish National Party, SNP"
+V1Q2,2707,Plaid Cymru (The Party of Wales)
+V1Q7,0,No problem at all
+V1Q7,1,1
+V1Q7,2,2
+V1Q7,3,3
+V1Q7,4,4
+V1Q7,5,5
+V1Q7,6,6
+V1Q7,7,7
+V1Q7,8,8
+V1Q7,9,9
+V1Q7,10,The most serious problem
+V1Q7,999,DK (SP.)
+V1Q8a,0,back from the country they came from
+V1Q8a,1,1
+V1Q8a,2,2
+V1Q8a,3,3
+V1Q8a,4,4
+V1Q8a,5,5
+V1Q8a,6,6
+V1Q8a,7,7
+V1Q8a,8,8
+V1Q8a,9,9
+V1Q8a,10,Legalize illegal immigrants
+V1Q8a,999,You haven't thought much about that
+V1Q9_1,1,Agree strongly
+V1Q9_1,2,Agree somewhat
+V1Q9_1,3,Neither agree nor disagree
+V1Q9_1,4,Disagree somewhat
+V1Q9_1,5,Disagree strongly
+V1Q9_1,997,Refusal (SP.)
+V1Q9_1,999,DK (SP.)
+V1Q9_2,1,Agree strongly
+V1Q9_2,2,Agree somewhat
+V1Q9_2,3,Neither agree nor disagree
+V1Q9_2,4,Disagree somewhat
+V1Q9_2,5,Disagree strongly
+V1Q9_2,997,Refusal (SP.)
+V1Q9_2,999,DK (SP.)
+V1Q9_3,1,Agree strongly
+V1Q9_3,2,Agree somewhat
+V1Q9_3,3,Neither agree nor disagree
+V1Q9_3,4,Disagree somewhat
+V1Q9_3,5,Disagree strongly
+V1Q9_3,997,Refusal (SP.)
+V1Q9_3,999,DK (SP.)
+V1Q10_1,0,extremely unimportant
+V1Q10_1,1,1
+V1Q10_1,2,2
+V1Q10_1,3,3
+V1Q10_1,4,4
+V1Q10_1,5,5
+V1Q10_1,6,6
+V1Q10_1,7,7
+V1Q10_1,8,8
+V1Q10_1,9,9
+V1Q10_1,10,extremely important
+V1Q10_1,999,DK (SP.)
+V1Q10_2,0,extremely unimportant
+V1Q10_2,1,1
+V1Q10_2,2,2
+V1Q10_2,3,3
+V1Q10_2,4,4
+V1Q10_2,5,5
+V1Q10_2,6,6
+V1Q10_2,7,7
+V1Q10_2,8,8
+V1Q10_2,9,9
+V1Q10_2,10,extremely important
+V1Q10_2,999,DK (SP.)
+V1Q10_3,0,extremely unimportant
+V1Q10_3,1,1
+V1Q10_3,2,2
+V1Q10_3,3,3
+V1Q10_3,4,4
+V1Q10_3,5,5
+V1Q10_3,6,6
+V1Q10_3,7,7
+V1Q10_3,8,8
+V1Q10_3,9,9
+V1Q10_3,10,extremely important
+V1Q10_3,999,DK (SP.)
+V1Q10_4,0,extremely unimportant
+V1Q10_4,1,1
+V1Q10_4,2,2
+V1Q10_4,3,3
+V1Q10_4,4,4
+V1Q10_4,5,5
+V1Q10_4,6,6
+V1Q10_4,7,7
+V1Q10_4,8,8
+V1Q10_4,9,9
+V1Q10_4,10,extremely important
+V1Q10_4,999,DK (SP.)
+V1Q10_5,0,extremely unimportant
+V1Q10_5,1,1
+V1Q10_5,2,2
+V1Q10_5,3,3
+V1Q10_5,4,4
+V1Q10_5,5,5
+V1Q10_5,6,6
+V1Q10_5,7,7
+V1Q10_5,8,8
+V1Q10_5,9,9
+V1Q10_5,10,extremely important
+V1Q10_5,999,DK (SP.)
+V1Q10_6,0,extremely unimportant
+V1Q10_6,1,1
+V1Q10_6,2,2
+V1Q10_6,3,3
+V1Q10_6,4,4
+V1Q10_6,5,5
+V1Q10_6,6,6
+V1Q10_6,7,7
+V1Q10_6,8,8
+V1Q10_6,9,9
+V1Q10_6,10,extremely important
+V1Q10_6,999,DK (SP.)
+V1Q10_7,0,extremely unimportant
+V1Q10_7,1,1
+V1Q10_7,2,2
+V1Q10_7,3,3
+V1Q10_7,4,4
+V1Q10_7,5,5
+V1Q10_7,6,6
+V1Q10_7,7,7
+V1Q10_7,8,8
+V1Q10_7,9,9
+V1Q10_7,10,extremely important
+V1Q10_7,999,DK (SP.)
+V1Q10_8,0,extremely unimportant
+V1Q10_8,1,1
+V1Q10_8,2,2
+V1Q10_8,3,3
+V1Q10_8,4,4
+V1Q10_8,5,5
+V1Q10_8,6,6
+V1Q10_8,7,7
+V1Q10_8,8,8
+V1Q10_8,9,9
+V1Q10_8,10,extremely important
+V1Q10_8,999,DK (SP.)
+V1Q11_1,1,Favour strongly
+V1Q11_1,2,Favour somewhat
+V1Q11_1,3,Neither favour nor oppose
+V1Q11_1,4,Oppose somewhat
+V1Q11_1,5,Oppose strongly
+V1Q11_1,997,Refusal (SP.)
+V1Q11_1,999,DK (SP.)
+V1Q11_2,1,Favour strongly
+V1Q11_2,2,Favour somewhat
+V1Q11_2,3,Neither favour nor oppose
+V1Q11_2,4,Oppose somewhat
+V1Q11_2,5,Oppose strongly
+V1Q11_2,997,Refusal (SP.)
+V1Q11_2,999,DK (SP.)
+V1Q12,1,Far too many
+V1Q12,2,Somewhat too many
+V1Q12,3,About the right number
+V1Q12,4,Somewhat too few
+V1Q12,5,Far too few
+V1Q12,997,Refusal (SP.)
+V1Q12,999,DK (SP.)
+V1Q13_1,1,Agree strongly
+V1Q13_1,2,Agree somewhat
+V1Q13_1,3,Neither agree nor disagree
+V1Q13_1,4,Disagree somewhat
+V1Q13_1,5,Disagree strongly
+V1Q13_1,997,Refusal (SP.)
+V1Q13_1,999,DK (SP.)
+V1Q13_2,1,Agree strongly
+V1Q13_2,2,Agree somewhat
+V1Q13_2,3,Neither agree nor disagree
+V1Q13_2,4,Disagree somewhat
+V1Q13_2,5,Disagree strongly
+V1Q13_2,997,Refusal (SP.)
+V1Q13_2,999,DK (SP.)
+V1Q13_3,1,Agree strongly
+V1Q13_3,2,Agree somewhat
+V1Q13_3,3,Neither agree nor disagree
+V1Q13_3,4,Disagree somewhat
+V1Q13_3,5,Disagree strongly
+V1Q13_3,997,Refusal (SP.)
+V1Q13_3,999,DK (SP.)
+V1Q15,0,Muslim immigrants have a lot to offer to [COUNTRY]'s cultura
+V1Q15,1,1
+V1Q15,2,2
+V1Q15,3,3
+V1Q15,4,4
+V1Q15,5,5
+V1Q15,6,6
+V1Q15,7,7
+V1Q15,8,8
+V1Q15,9,9
+V1Q15,10,Muslim immigrants threaten [NATIONALITY] culture
+V1Q15,999,You haven't thought much about that
+V1Q16,0,Immigrants take native's jobs
+V1Q16,1,1
+V1Q16,2,2
+V1Q16,3,3
+V1Q16,4,4
+V1Q16,5,5
+V1Q16,6,6
+V1Q16,7,7
+V1Q16,8,8
+V1Q16,9,9
+V1Q16,10,Immigrants take jobs native don't want
+V1Q16,999,You haven't thought much about that
+V1Q20,0,No problem at all
+V1Q20,1,1
+V1Q20,2,2
+V1Q20,3,3
+V1Q20,4,4
+V1Q20,5,5
+V1Q20,6,6
+V1Q20,7,7
+V1Q20,8,8
+V1Q20,9,9
+V1Q20,10,The most serious problem
+V1Q20,999,DK (SP.)
+V1Q21,0,We should do everything possible to combat climate change
+V1Q21,1,1
+V1Q21,2,2
+V1Q21,3,3
+V1Q21,4,4
+V1Q21,5,5
+V1Q21,6,6
+V1Q21,7,7
+V1Q21,8,8
+V1Q21,9,9
+V1Q21,10,We should do everything possible to maximize economic growth
+V1Q21,999,You haven't thought much about that
+V1Q22a,1,Agree strongly
+V1Q22a,2,Agree somewhat
+V1Q22a,3,Neither agree nor disagree
+V1Q22a,4,Disagree somewhat
+V1Q22a,5,Disagree strongly
+V1Q22a,997,Refusal (SP.)
+V1Q22a,999,DK (SP.)
+V1Q30_1,1,Regional level
+V1Q30_1,2,National level
+V1Q30_1,3,EU level
+V1Q30_1,4,Not an area to be dealt with by any level of government (SP.
+V1Q30_1,5,More than one (SP.)
+V1Q30_1,997,Refusal (SP.)
+V1Q30_1,999,DK (SP.)
+V1Q30_2,1,Regional level
+V1Q30_2,2,National level
+V1Q30_2,3,EU level
+V1Q30_2,4,Not an area to be dealt with by any level of government (SP.
+V1Q30_2,5,More than one (SP.)
+V1Q30_2,997,Refusal (SP.)
+V1Q30_2,999,DK (SP.)
+V1Q30_3,1,Regional level
+V1Q30_3,2,National level
+V1Q30_3,3,EU level
+V1Q30_3,4,Not an area to be dealt with by any level of government (SP.
+V1Q30_3,5,More than one (SP.)
+V1Q30_3,997,Refusal (SP.)
+V1Q30_3,999,DK (SP.)
+V1Q30_4,1,Regional level
+V1Q30_4,2,National level
+V1Q30_4,3,EU level
+V1Q30_4,4,Not an area to be dealt with by any level of government (SP.
+V1Q30_4,5,More than one (SP.)
+V1Q30_4,997,Refusal (SP.)
+V1Q30_4,999,DK (SP.)
+V1Q33a,0,Not at all
+V1Q33a,1,1
+V1Q33a,2,2
+V1Q33a,3,3
+V1Q33a,4,4
+V1Q33a,5,5
+V1Q33a,6,6
+V1Q33a,7,7
+V1Q33a,8,8
+V1Q33a,9,9
+V1Q33a,10,Completely
+V1Q33a,999,DK (SP.)
+V1Q33b,0,Not at all
+V1Q33b,1,1
+V1Q33b,2,2
+V1Q33b,3,3
+V1Q33b,4,4
+V1Q33b,5,5
+V1Q33b,6,6
+V1Q33b,7,7
+V1Q33b,8,8
+V1Q33b,9,9
+V1Q33b,10,Completely
+V1Q33b,999,DK (SP.)
+V1Q34,1,[NATIONALITY] only
+V1Q34,2,[NATIONALITY] and European
+V1Q34,3,European and [NATIONALITY]
+V1Q34,4,European only
+V1Q34,5,None of the above (SP.)
+V1Q34,997,Refusal (SP.)
+V1Q34,999,DK (SP.)
+V1Q35,1,A very good thing
+V1Q35,2,A fairly good thing
+V1Q35,3,Neither good nor bad
+V1Q35,4,A fairly bad thing
+V1Q35,5,A very bad thing
+V1Q35,997,Refusal (SP.)
+V1Q35,999,DK (SP.)
+V1Q36,0,Not benefited at all
+V1Q36,1,1
+V1Q36,2,2
+V1Q36,3,3
+V1Q36,4,4
+V1Q36,5,5
+V1Q36,6,6
+V1Q36,7,7
+V1Q36,8,8
+V1Q36,9,9
+V1Q36,10,Benefited enormously
+V1Q36,999,DK (SP.)
+V1Q37,0,Not at all
+V1Q37,1,1
+V1Q37,2,2
+V1Q37,3,3
+V1Q37,4,4
+V1Q37,5,5
+V1Q37,6,6
+V1Q37,7,7
+V1Q37,8,8
+V1Q37,9,9
+V1Q37,10,Passionately
+V1Q37,999,DK (SP.)
+V1Q38,1,Very satisfied
+V1Q38,2,Somewhat satisfied
+V1Q38,3,Neither satisfied nor dissatisfied
+V1Q38,4,Somewhat dissatisfied
+V1Q38,5,Very dissatisfied
+V1Q38,997,Refusal (SP.)
+V1Q38,999,DK (SP.)
+V1Q39,1,Very satisfied
+V1Q39,2,Somewhat satisfied
+V1Q39,3,Neither satisfied nor dissatisfied
+V1Q39,4,Somewhat dissatisfied
+V1Q39,5,Very dissatisfied
+V1Q39,997,Refusal (SP.)
+V1Q39,999,DK (SP.)
+V1Q43,1,European Commission
+V1Q43,2,Council of Ministers
+V1Q43,3,European Parliament
+V1Q43,4,European Court of Auditors
+V1Q43,999,You couldn’t say
+V1Q44,1,It passes all EU laws
+V1Q44,2,It can dismiss the European Commission
+V1Q44,3,It can reject the budget proposed by the Council of Minister
+V1Q44,4,It is involved in decisions about the admission of new Membe
+V1Q44,999,You couldn’t say
+V1Q46,1,They can work anywhere in the EU
+V1Q46,2,They must have a university education
+V1Q46,3,They cannot bring family members to join them any faster tha
+V1Q46,4,They are subject to the Returns Directive
+V1Q46,999,You couldn’t say
+V1Q47,1,The EU sets the basic rules about entry and residency requir
+V1Q47,2,The EU decides how many immigrants can be admitted to each c
+V1Q47,3,Work permits for immigrants must be approved by the EU
+V1Q47,4,The EU plays no role in immigration policy.
+V1Q47,999,You couldn’t say
+V1Q49,1,50%
+V1Q49,2,60%
+V1Q49,3,70%
+V1Q49,4,80%
+V1Q49,999,You couldn’t say
+V1Q50,1,China
+V1Q50,2,The European Union
+V1Q50,3,The United States
+V1Q50,4,India
+V1Q50,999,You couldn’t say
+V1Q62,101, SPÖ
+V1Q62,102,ÖVP
+V1Q62,103,FPÖ
+V1Q62,104,BZÖ
+V1Q62,105,GRÜNE
+V1Q62,108,FRITZ
+V1Q62,109,KPÖ
+V1Q62,110,LIF
+V1Q62,201,Christen-Democratisch en Vlaams (Christian-Democratic and Fl
+V1Q62,203,Groen! (Green!)
+V1Q62,206,"Vlaams Belang (Flemish Interest), VB"
+V1Q62,207,Open Vlaamse Liberalen en Democraten (Open Flemish Liberals
+V1Q62,208,Lijst Dedecker (Dedecker list)
+V1Q62,210,"Parti Socialiste (Socialist Party), PS"
+V1Q62,211,"Mouvement Réformateur (Reformist Movement), MR"
+V1Q62,212,"Centre Démocrate Humaniste (Humanist Democratic Centre), CDh"
+V1Q62,213,Ecolo (Ecology)
+V1Q62,214,"Front National (National Front), FN"
+V1Q62,216,Christen-Democratisch en Vlaams-Nieuw-Vlaamse Alliantie (Chr
+V1Q62,217,Socialistische Partij - Anders-Spirit (Socialist Party – Dif
+V1Q62,301,(Bulgarian Socialist Party) BSP
+V1Q62,302,National Movement for stability and prosperity) NDSV
+V1Q62,303,Movement for Rights and Freedoms) DPS
+V1Q62,304,Attack Party
+V1Q62,305," Coalition of Union of Democratic Forces (SDS), Democrats fo"
+V1Q62,307,The New Time
+V1Q62,308,Euroroma
+V1Q62,309,Democrats for a Strong Bulgaria DSB
+V1Q62,310,Bulgarian People’s Union - BNS (Union of Free Democrats (SSD
+V1Q62,313,"Coalition of the Rose - Bulgarian Socialdemocrats (BSD), Nat"
+V1Q62,401,Progressive Party of Working People
+V1Q62,402,Democratic Rally
+V1Q62,403,Democratic Party
+V1Q62,404,Movement for Social Democracy United Democratic Union of Cen
+V1Q62,405,European party
+V1Q62,406,Ecological and Environmental Movement
+V1Q62,407,United Democrats
+V1Q62,408,European Democracy
+V1Q62,409,Movement of Free Citizens
+V1Q62,410,Popular Socialist Movement
+V1Q62,411,"Hunters, Workers, and Farmers"
+V1Q62,412,Anexartetoi Ipopsefioi
+V1Q62,501,Ceská strana sociálne demokratická (Czech Social Democratic
+V1Q62,502,Krestanská a demokratická unie – Ceskoslovenská strana lidov
+V1Q62,503,Komunistická strana Cech a Moravy (Communist Party of Bohemi
+V1Q62,504,"Obcanská demokratická strana (Civic Democratic Party), ODS"
+V1Q62,505,"Strana Zelených (Green Party), SZ"
+V1Q62,601,"Socialdemokratiet (Social Democrats), A"
+V1Q62,602,"Det Radikale Venstre (Radical Liberal Party), B"
+V1Q62,603,"Det Konservative Folkeparti (Conservative People's Party), C"
+V1Q62,604,"Socialistisk Folkeparti (Socialist People's Party), SF"
+V1Q62,605,"Ny/Liberal Alliance (New/Liberal Alliance), I"
+V1Q62,606,"Junibevægelsen (June Movement), J"
+V1Q62,608,"Dansk Folkeparti (Danish People's Party), O"
+V1Q62,609,"Venstre - Danmarks liberale parti (Venstre, Denmark's Libera"
+V1Q62,610,"Enhedslisten - de Rød-Grønne (Red-Green Alliance), Ø"
+V1Q62,611,"Kristendemokraterne (Christian Democrats), K"
+V1Q62,701,Reformierakond (Estonian Reform Party)
+V1Q62,702,"Keskerakond (Centre Party of Estonia), KESK"
+V1Q62,703,Isamaa ja Res Publica Liit (Union of Pro Patria and Res Publ
+V1Q62,704,"Sotsiaaldemokraatlik Erakond (Social Democratic Party), SDE"
+V1Q62,705,"Erakond Eestimaa Rohelised (Estonian Greens), EER"
+V1Q62,706,"Eestimaa Rahvaliit (People's Union of Estonia), ER"
+V1Q62,707,"Eesti Kristlikud Demokraadid (Estonian Christian Democrats),"
+V1Q62,708,"Eesti Iseseisvuspartei (Estonian Independence Party), EI"
+V1Q62,709,"Vene Erakond Eestis (Russian Party in Estonia), VEE"
+V1Q62,710,"Eestimaa Ühendatud Vasakpartei (Estonian United Left Party),"
+V1Q62,711,Konstitutsioonierakond (Constitutional Party)
+V1Q62,712,"Eestimaa Vasakpartei (Estonian Left Party), EV"
+V1Q62,801,"Suomen Keskusta (Centre Party), KESK"
+V1Q62,802,"Kansallinen Kokoomus (National Coalition Party), KOK"
+V1Q62,803,Suomen Sosialidemokraattinen Puolue (Social Democratic Party
+V1Q62,804,"Vasemmistoliitto (Left Alliance), VAS"
+V1Q62,805,"Vihreä liitto (Green League), VIHR                         "
+V1Q62,806,"Ruotsalainen kansanpuolue (Swedish People's Party), RKP     "
+V1Q62,807,"Kristillisdemokraatit (Christian Democrats in Finland), KD  "
+V1Q62,808,"Perussuomalaiset (True Finns), PS"
+V1Q62,901,"Lutte ouvrière (Workers' struggle), LO"
+V1Q62,904,"Parti socialiste (Socialist Party), PS"
+V1Q62,906,"Mouvement démocrate (Democratic Movement), MODEM"
+V1Q62,909,“Libertas” - Mouvement pour la France (Movement for France)
+V1Q62,910,"Front national (National Front), FN"
+V1Q62,914,Les Verts (Greens)
+V1Q62,916,"Nouveau Centre (New Centre), NC"
+V1Q62,917,Union pour un Mouvement Populaire (Union for a Popular Movem
+V1Q62,918,Mouvement National Républicain (National Republican Movement
+V1Q62,919,Ligue communiste révolutionnaire (Revolutionary Communist Le
+V1Q62,920,"Parti communiste (Communist Party), PCF"
+V1Q62,921,"Parti radical de gauche (Radical Party of the Left), PRG"
+V1Q62,922,"Génération écologie, Mouvement écologiste indépendant (Gener"
+V1Q62,996,Other (specify);
+V1Q62,997,refusal;
+V1Q62,998,Not Asked
+V1Q62,999,don’t know;
+V1Q62,1001,Christlich Demokratische Union/Christlich-Soziale Union (Chr
+V1Q62,1002,Sozialdemokratische Partei Deutschlands (Social Democratic P
+V1Q62,1003,"Freie Demokratische Partei (Free Democratic Party), FDP"
+V1Q62,1004,Die Linke (The Left)
+V1Q62,1005,Bündnis 90 / Die Grünen (Alliance '90/The Greens)
+V1Q62,1006,"Republikaner (Republicans), REP"
+V1Q62,1007,"Deutsche Volksunion (German People's Union), DVU"
+V1Q62,1008,Nationaldemokratische Partei Deutschlands (National Democrat
+V1Q62,1101,New Democracy ND
+V1Q62,1102,Panhellenic Socialist Movement PASOK
+V1Q62,1103,Greek Communist Party ???
+V1Q62,1104,Coalition of Radical Left SYRIZA
+V1Q62,1105,Popular Orthodox Rally LAOS
+V1Q62,1106,Ecologists Green
+V1Q62,1201,"Magyar Szocialista Párt (Hungarian Socialist Party), MSZP"
+V1Q62,1202,Magyar Polgári Szövetség és Kereszténydemokrata Néppárt közö
+V1Q62,1203,"Szabad Demokraták Szövetsége (Alliance of Free Democrats), S"
+V1Q62,1204,"Magyar Demokrata Fórum (Hungarian Democratic Forum), MDF"
+V1Q62,1205,Magyar Igazság és Élet Pártja (Hungarian Truth and Life Part
+V1Q62,1206,"Magyar Kommunista Munkáspárt (Communist Worker's Party), Mun"
+V1Q62,1210,Centrum Összefogás Magyarországért és Magyarországi Szociáld
+V1Q62,1211,"Független Kisgazda-, Földmunkás és Polgári Párt (Independent"
+V1Q62,1301,"Fianna Fail, FF"
+V1Q62,1302,"Fianna Gael, FG"
+V1Q62,1303,"Labour, LP"
+V1Q62,1304,"Green Party, GP"
+V1Q62,1305,"Sinn Fein, SF"
+V1Q62,1307,"Worker's Party, WP"
+V1Q62,1308,"Progressive Democrats, PD"
+V1Q62,1309,"Socialist Party, SP"
+V1Q62,1310,Socialist Worker's Party
+V1Q62,1401,Italia dei Valori – Lista Di Pietro (Italy of Values – Di Pi
+V1Q62,1403,"Lega Nord (Northern League), LN"
+V1Q62,1407,"Partito Democratico (Democratic Party), PD"
+V1Q62,1409,"Il Popolo della Libertà (The People of Freedom), PDL"
+V1Q62,1411,"Unione di Centro (Union of Centre), UDC"
+V1Q62,1501,Jaunais laiks
+V1Q62,1502,Tautas partija
+V1Q62,1503,Apvieniba “Par cilveka tiesibam vienota Latvija”
+V1Q62,1504,„Saskanas centrs”
+V1Q62,1505,Apvieniba “Tevzemei un Brivibai”/LNNK
+V1Q62,1506,Latvijas Pirma partija /“Latvijas celš
+V1Q62,1507,Latvijas Socialdemokratiska stradnieku partija
+V1Q62,1508,Zalo un zemnieku savieniba
+V1Q62,1510,Politiska patriotiska apvieniba 'DZIMTENE'
+V1Q62,1513,„Jaunie demokrati”/ demokrati.lv
+V1Q62,1514,„Visu Latvijai!”
+V1Q62,1515,Politiska organizacija 'PENSIONARU UN SENIORU PARTIJA'
+V1Q62,1516,MARAS ZEME
+V1Q62,1517,Politiska organizacija (partija) 'Eiroskeptiki'
+V1Q62,1518,Partija 'Musu zeme'
+V1Q62,1519,Sociala Taisniguma partija
+V1Q62,1603,"Leiboristu partija (Labour Party), LP"
+V1Q62,1604,"Liberalu ir centro sajunga (Liberal and Centre Union), LiCS"
+V1Q62,1605,Lietuvos centro partija (Lithuanian Centre Party)
+V1Q62,1606,Lietuvos lenku rinkimu akcija (Electoral Action of Poles in
+V1Q62,1607,Lietuvos Respublikos liberalu sajudis (Liberals' Movement of
+V1Q62,1608,Lietuvos socialdemokratu partija (Social Democratic Party of
+V1Q62,1609,Lietuvos socialdemokratu sajunga (Social Democratic Union of
+V1Q62,1610,Lietuvos valstieciu liaudininku sajunga (Union of Lithuanian
+V1Q62,1611,Partija „Tvarka ir teisingumas“-Liberaldemokratu partija (Or
+V1Q62,1612,Pilietines demokratijos partija (Party of Civic Democracy)
+V1Q62,1613,Politine partija 'Frontas' (Political party 'Frontas')
+V1Q62,1615,Tautos prisikelimo partija (Rising Nation Party)
+V1Q62,1616,Tevynes sajunga - Lietuvos krikšcionys demokratai (Homeland
+V1Q62,1617,"Naujoji sajunga-socialliberalai (New Union-Social Liberals),"
+V1Q62,1619,Koalicija Darbo partija + Jaunimas (Coalition Labour Party +
+V1Q62,1620,"Lietuvos laisves sajunga (Lithuanian Freedom Union), LLS"
+V1Q62,1621,Lietuvos liaudies sajunga 'Už teisinga Lietuva' (Lithuanian
+V1Q62,1622,"Lietuvos rusu sajunga (Union of the Russians of Lithuania),"
+V1Q62,1623,Jaunoji Lietuva (Young Lithuania)
+V1Q62,1701,"Kommunistesch Partei Lëtzebuerg (Communist Party), KPL"
+V1Q62,1702,Déi Gréng (Green party)
+V1Q62,1703,Alternativ Demokratesch Reformpartei (Alternative Democratic
+V1Q62,1704,Lëtzebuerger Sozialistesch Aarbechterpartei (Social Labour p
+V1Q62,1705,"Demokratesch Partei (Democratic Party), DP"
+V1Q62,1706,Déi Lénk (Left party)
+V1Q62,1709,"Fräi Partei Lëtzebuerg (Free Party of Luxembourg), FPL"
+V1Q62,1801,"Il-Partit Nazzjonalista (Nationalist Party), PN"
+V1Q62,1802,"Il-Partit Laburista (Labour Party), PL"
+V1Q62,1803,"Alternattiva Demokratika (Democratic Alternative), AD"
+V1Q62,1804,"Alleanza Nazzjonali (National Alliance), AN"
+V1Q62,1805,Alpha - Liberali Demokratiku (Alpha – Liberal Democrats)
+V1Q62,1806,"Forza Malta (Forward Malta), FM"
+V1Q62,1901,"Christen-Democratisch Appèl (Christian Democratic Appeal), C"
+V1Q62,1902,"Partij van de Arbeid (Labour Party), PVDA"
+V1Q62,1903,"Socialistische Partij (Socialist Party), SP"
+V1Q62,1904,Volkspartij voor Vrijheid en Democratie (People's Party for
+V1Q62,1905,"Groen Links (Green Left), GL"
+V1Q62,1906,"Partij voor de Vrijheid (Party for Freedom), PVV"
+V1Q62,1908,"Democraten 66 (Democrats 66), D'66"
+V1Q62,1909,"Partij voor de Dieren (Party for Animals), PvdD"
+V1Q62,1911,"Christen Unie (Christian Union), CU"
+V1Q62,1912,Staatskundig Gereformeerde Partij (Reformed Political Party)
+V1Q62,1913,"Lijst Pim Fortuyn (Pim Fortuyn List), LPF"
+V1Q62,1914,"Eén Nederlands (One Netherlands), EN"
+V1Q62,1915,Partij van Nederlands (Party of the Netherlands)
+V1Q62,2006,"Liga Polskich Rodzin (League of Polish Families), LPR"
+V1Q62,2008,"Platforma Obywatelska (Civic Platform), PO"
+V1Q62,2009,"Polska Partia Pracy (Polish Labour Party), PPP"
+V1Q62,2012,"Polskie Stronnictwo Ludowe (Polish People's Party), PSL"
+V1Q62,2014,"Prawo i Sprawiedliwosc (Law and Justice), PiS"
+V1Q62,2015,Samoobrona Rzeczpospolitej Polskiej (Self-Defense of the Rep
+V1Q62,2020,"Lewica i Demokraci (Left and Democrats), LiD"
+V1Q62,2101,"Bloco de Esquerda (Left Bloc), BE"
+V1Q62,2102,Centro Democrático Social /Partido Popular (Social Democrati
+V1Q62,2103,Coligação Democrática Unitária- Partido Comunista Português-
+V1Q62,2104,"Partido Socialista (Socialist Party), PS"
+V1Q62,2105,"Partido Social Democrata (Social Democratic Party), PSD"
+V1Q62,2201,"Partidul Democrat-Liberal (Democratic-Liberal Party), PD-L"
+V1Q62,2202,Alianta Electorala Partidul Social Democrat-Partidul Conserv
+V1Q62,2203,"Partidul National Liberal (National Liberal Party), PNL"
+V1Q62,2204,Uniunea Democrata a Maghiarilor din România (Democratic Alli
+V1Q62,2205,Partidul National Taranesc-Crestin Democrat (Christian-Democ
+V1Q62,2206,Partidul Noua Generatie-Crestin si Democrat (New Generation
+V1Q62,2207,"Partidul România Mare (Great Romania Party), PRM"
+V1Q62,2301,SMER - sociálna demokracia (Direction - Social Democracy)
+V1Q62,2302,Slovenská demokratická a krestanská únia - Demokratická stra
+V1Q62,2303,"Slovenská národná strana (Slovak national party), SNS"
+V1Q62,2304,Krestanskodemokratické hnutie (Christian Democratic Movement
+V1Q62,2305,"Strana madarskej koalície (Party of Hungarian Coalition), SK"
+V1Q62,2306,Ludová strana - Hnutie za demokratické Slovensko  (People's
+V1Q62,2308,"Komunistická strana Slovenska (Communist Party of Slovakia),"
+V1Q62,2309,"Slobodné Fórum (Free Forum), SF"
+V1Q62,2314,"Strana demokratickej lavice (Party of Democratic Left), SDL"
+V1Q62,2315,"Agrárna strana vidieka (Agrarian Party), ASV"
+V1Q62,2318,"Hnutie za demokraciu (Movement for Democracy), HZD"
+V1Q62,2319,"Obcianska konzervatívna strana (Civic Conservative Party), O"
+V1Q62,2320,"Aliancia nového obcana (Alliance of new citizen), ANO"
+V1Q62,2321,"Slovenská ludová strana (Slovak People's Party), SLS"
+V1Q62,2322,Združenie robotníkov Slovenska (Association of workmen of Sl
+V1Q62,2323,"Lavicový blok (Left block), LB"
+V1Q62,2401,"Slovenska demokratska stranka (Slovenian Democratic party),"
+V1Q62,2402,Liberalna demokracija Slovenije (Liberal democracy of Sloven
+V1Q62,2403,"Slovenska ljudska stranka (Slovenian People's Party), SLS"
+V1Q62,2404,"Socialni demokrati (Social democrats), SD"
+V1Q62,2405,ZARES - Nova politika (New Politics)
+V1Q62,2406,"Slovenska nacionalna stranka (Slovenian national party), SNS"
+V1Q62,2407,Demokraticna stranka upokojencev (Democratic party of pensio
+V1Q62,2408,Stranka mladih Slovenije (Democratic party of pensioners of
+V1Q62,2409,Nova Slovenija - kršcanska ljudska stranka (New Slovenia - C
+V1Q62,2410,"Stranka slovenskega naroda (Party of Slovenian nation), SSN"
+V1Q62,2411,Lipa (Linden)
+V1Q62,2412,Akacije (Acacias)
+V1Q62,2413,Lista za cisto pitno vodo (List for clean drinking water)
+V1Q62,2414,Lista za pravicnost in razvoj (List for equality and develop
+V1Q62,2415,"Kršcansko demokratska stranka (Christian democratic party),"
+V1Q62,2416,"Zeleni Slovenije (Greens of Slovenia), Zsi"
+V1Q62,2417,"Zelena stranka (Green party), ZS"
+V1Q62,2418,"Zeleni progres (Green advancement), ZP"
+V1Q62,2419,"Naprej Slovenija (Forward Slovenia), NPS"
+V1Q62,2501,"Partido Popular (People's Party), PP"
+V1Q62,2502,Partido Socialista Obrero Español (Spanish Socialist Workers
+V1Q62,2503,"Izquierda Unida (United Left), IU"
+V1Q62,2504,Los Verdes (The Greens)
+V1Q62,2505,"Convergència i unió (Convergence and Union), CIU"
+V1Q62,2506,"Eusko Alkartasuna, EA"
+V1Q62,2507,Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco (Basque N
+V1Q62,2512,"Bloque Nacionalista Galego (Galician Nationalist Bloc), BNG"
+V1Q62,2513,Coalición Canaria-Partido Nacionalista Canario (Canary Coali
+V1Q62,2514,ERC (Esquerra Republicana de Catalunya)
+V1Q62,2515,"Nafarroa Bai (Navarre Yes), NA-BAI"
+V1Q62,2516,"Unión Progreso y Democracia (Union, Progress and Democracy),"
+V1Q62,2517,"Chunta Aragonesista, CHA"
+V1Q62,2518,Ciudadanos-Partido de la Ciudadania (Citizens – Party of the
+V1Q62,2519,"Coalición Andalucista (Andalusan Coalition), CA"
+V1Q62,2601,"Vänsterpartiet (Left Party), V"
+V1Q62,2602,Sveriges Socialdemokratiska arbetarparti (Social Democratic
+V1Q62,2603,"Centerpartiet (Centre Party), C"
+V1Q62,2604,"Folkpartiet Liberalerna (Liberal People's Party), FP"
+V1Q62,2605,"Moderaterna (Moderate Party), M"
+V1Q62,2606,"Kristdemokraterna (Christian Democrats), KD"
+V1Q62,2607,"Miljöpartiet de Gröna (Environment Party the Greens), MP"
+V1Q62,2608,"Junilistan (June List), JL"
+V1Q62,2609,"Sverigedemokraterna (Sweden Democrats), SD"
+V1Q62,2701,Labour Party
+V1Q62,2702,Conservative Party
+V1Q62,2703,Liberal Democrats
+V1Q62,2704,"UK Independence Party, UKIP"
+V1Q62,2705,The Green party
+V1Q62,2706,"Scottish National Party, SNP"
+V1Q62,2707,Plaid Cymru (The Party of Wales)
+qc1,1,Yes
+qc1,2,No
+qc1,3,Maybe (probe for reasons and record)
+qd1_1,0,No
+qd1_1,1,yes
+qd1_2,0,No
+qd1_2,1,yes
+qd1_3,0,No
+qd1_3,1,yes
+qd1_4,0,No
+qd1_4,1,yes
+qd1_5,0,No
+qd1_5,1,yes
+qd1_6,0,No
+qd1_6,1,yes
+qd1_7,0,No
+qd1_7,1,yes
+qd1_8,0,No
+qd1_8,1,yes
+qd1_9,0,No
+qd1_9,1,yes
+p4,1,Excellent
+p4,2,Fair
+p4,3,Average
+p4,4,Bad
+p5,1,Big cities
+p5,2,Other cities
+p5,3,Secundary municipalities
+p5,4,Other localities
+p5,5,< 6000
+p5,6,6000 - 10000
+p5,7,> 10000
+p5,8,CAPITAL
+p5,9,Bigger town
+p5,10,other town
+p5,11,rural area
+p5,12,Capital (Riga)
+p5,13,Other cities
+p5,14,Rural areas
+p5,15,0 to 2500
+p5,16,2501 to 5000
+p5,17,5001 to 10000
+p5,18,10001 to 20000
+p5,19,20001 to 50000
+p5,20,50001 to 99999
+p6,1,West-Vlaanderen -- Oost-Vlaanderen
+p6,2,Antwerpen -- Vlaams-Brabant -- Limburg
+p6,3,Brussel
+p6,4,Henegouwen -- Waals-Brabant
+p6,5,Namen -- Luik -- Luxemburg
+p6,6,Region Hovedstaden
+p6,7,Region Sjælland
+p6,8,Region Syddanmark
+p6,9,Region Midtjylland
+p6,10,Region Nordjylland
+p6,11, Schleswig-Holstein
+p6,12, Hamburg
+p6,13, Lower Saxony
+p6,14, Bremen
+p6,15, North Rhine-Westphalia
+p6,16, Hesse
+p6,17, Rhineland-Palatinate
+p6,18, Baden-Wuerttemberg
+p6,19, Bavaria
+p6,20, Saarland
+p6,21, Berlin
+p6,22, Brandenburg
+p6,23, Mecklenburg-Western Pomerania
+p6,24, Saxony
+p6,25, Saxony-Anhalt
+p6,26, Thuringia
+p6,27,Anatoliki Makedonia & Thraki
+p6,28,Kentriki Makedonia
+p6,29,Ditiki Makedonia
+p6,30,Thessalia
+p6,31, Ipiros
+p6,32,Ionia islands
+p6,33,Ditiki Ellada
+p6,34,Sterea Ellada
+p6,35,Peloponnisos
+p6,36, Attiki
+p6,37,Vorio Egeo
+p6,38,Notio Egeo
+p6,39,Kriti
+p6,40,Andalucía
+p6,41,Aragón
+p6,42,Asturias
+p6,43,Baleares
+p6,44,Canarias
+p6,45,Cantabria
+p6,46,Castilla la Mancha
+p6,47,Castilla León
+p6,48,Cataluña
+p6,49,Valencia
+p6,50,Extremadura
+p6,51,Galicia
+p6,52,Madrid
+p6,53,Murcia
+p6,54,Navarra
+p6,55,País Vasco
+p6,56,La Rioja
+p6,57,Southern Finland
+p6,58,Western Finland
+p6,59,Eastern Finland
+p6,60,Northern Finland
+p6,61,Ile-de-France
+p6,62,Champagne-Ardennes
+p6,63,Picardie
+p6,64,Haute-Normandie
+p6,65,Centre
+p6,66,Basse-Normandie
+p6,67,Bourgogne
+p6,68,Nord-Pas-de-Calais
+p6,69,Lorraine
+p6,70,Alsace
+p6,71,Franche-Comté
+p6,72,Pays de la Loire
+p6,73,Bretagne
+p6,74,Poitou-Charentes
+p6,75,Aquitaine
+p6,76,Midi-Pyrénées
+p6,77,Limousin
+p6,78,Rhône-Alpes
+p6,79,Auvergne
+p6,80,Languedoc-Roussillon
+p6,81,Provence-Alpes-Côte d'Azur
+p6,82,Corse
+p6,83,Dublin
+p6,84,Rest of Leinster
+p6,85,Munster
+p6,86,Connaught/ Ulster
+p6,87,LIGURIA
+p6,88,LOMBARDIA
+p6,89,PIEMONTE
+p6,90,VAL D'AOSTA
+p6,91,EMILIA ROMAGNA
+p6,92,FRIULI VENEZIA GIULIA
+p6,93,TRENTINO ALTO ADIGE
+p6,94,VENETO
+p6,95,LAZIO
+p6,96,MARCHE
+p6,97,TOSCANA
+p6,98,UMBRIA
+p6,99,ABRUZZO
+p6,100,BASILICATA
+p6,101,CALABRIA
+p6,102,CAMPANIA
+p6,103,MOLISE
+p6,104,PUGLIA
+p6,105,SARDEGNA
+p6,106,SICILIA
+p6,107,"Three largest agglomerations (Amsterdam, Rotterdam, The Hagu"
+p6,108,Western region (excluding 1)
+p6,109,Northern region    
+p6,110,Eastern region
+p6,111,Southern region
+p6,112,Luxembourg-Ville
+p6,113,Reste Centre
+p6,114,Sud
+p6,115,Nord
+p6,116,Est
+p6,117,Vorarlberg
+p6,118,Tirol
+p6,119,Salzburg
+p6,120,Oberösterreich
+p6,121,Kärnten
+p6,122,Steiermark
+p6,123,Burgenland
+p6,124,Niederösterreich
+p6,125,Wien
+p6,126,Stockholm
+p6,127,Östra Mellansverige
+p6,128,Småland med öarna
+p6,129,Sydsverige
+p6,130,Västsverige
+p6,131,Norra Mellansverige
+p6,132,Mellersta och Övre Norrland
+p6,133,Norte
+p6,134,Centro
+p6,135,Lisboa e Vale do Tejo
+p6,136,Alentejo
+p6,137,Algarve
+p6,138,Scotland
+p6,139,North East
+p6,140,North West
+p6,141,Yorkshire
+p6,142,East midlands
+p6,143,West midlands
+p6,144,Wales 
+p6,145,Eastern
+p6,146,London 
+p6,147,South East
+p6,148,South West
+p6,149,Northern Ireland
+p6,150,Vratsa
+p6,151,Pazardzhik
+p6,152,Ruse
+p6,153,Silistra
+p6,154,Sliven
+p6,155,Sofia
+p6,156,Nicosia
+p6,157,Limassol
+p6,158,Larnaca
+p6,159,Famagusta
+p6,160,Paphos
+p6,161,Prague
+p6,162,Central Bohemian Region
+p6,163,Karlovy Vary Region
+p6,164,Plzen Region
+p6,165,South Bohemian Region
+p6,166,Ústí nad Labem Region
+p6,167,Pardubice Region
+p6,168,Liberec Region
+p6,169,Hradec Králové Region
+p6,170,South Moravian Region
+p6,171,Moravian-Silesian Region
+p6,172,Vysocina Region
+p6,173,Zlín Region
+p6,174,Olomouc Region
+p6,175,Tallinn
+p6,176,Harjumaa
+p6,177,Järvamaa
+p6,178,Raplamaa
+p6,179,Ida-Virumaa
+p6,180,Lääne-Virumaa
+p6,181,Läänemaa
+p6,182,Hiiumaa
+p6,183,Saaremaa
+p6,184,Pärnumaa
+p6,185,Viljandimaa
+p6,186,Tartumaa
+p6,187,Jõgevamaa
+p6,188,Võrumaa
+p6,189,Valgamaa
+p6,190,Põlvamaa
+p6,191,Central region
+p6,192,North-Hungary
+p6,193,North-East Hungary
+p6,194,South-East Hungary
+p6,195,South-Transdanubia
+p6,196,North-Transdanubia
+p6,197,West-Transdanubia
+p6,198,Riga (Capital)
+p6,199,Pieriga (Centre)
+p6,200,Vidzeme (North)
+p6,201,Kurzeme (West)
+p6,202,Zemgale (South)
+p6,203,Latgale (East)
+p6,204,Central South Lithuania
+p6,205,West Lithuania
+p6,206,North Lithuania
+p6,207,East Lithuania
+p6,208,Southern Harbour
+p6,209,Northern Harbour
+p6,210,South Eastern
+p6,211,Western
+p6,212,Northern
+p6,213,Gozo and Comino
+p6,214,Dolnoslaskie
+p6,215,Kujawsko-Pomorskie
+p6,216,Lubelskie
+p6,217,Lubuskie
+p6,218,Lódzkie
+p6,219,Malopolskie
+p6,220,Mazowieckie
+p6,221,Opolskie
+p6,222,Podkarpackie
+p6,223,Podlaskie
+p6,224,Pomorskie
+p6,225,Slaskie
+p6,226,Swietokrzyskie
+p6,227,Warminsko-Mazurskie
+p6,228,Wielkopolskie
+p6,229,Zachodniopomorskie
+p6,230,Nord-Est (North-East)
+p6,231,Sud-Est (South-East)
+p6,232,Sud (South)
+p6,233,Sud-Vest (South-West)
+p6,234,Vest (West)
+p6,235,Nord-Vest (North-West)
+p6,236,Centru (Center)
+p6,237,Bucuresti-Ilfov (Bucharest-Ilfov)
+p6,238,Bratislava region
+p6,239,Trnava region
+p6,240,Trencín region
+p6,241,Nitra region
+p6,242,Žilina region
+p6,243,Banská Bystrica region
+p6,244,Košice region
+p6,245,Prešov region
+p6,246,Pomurska
+p6,247,Podravska
+p6,248,Koroška
+p6,249,Savinjska
+p6,250,Zasavska
+p6,251,Spodnjeposavska
+p6,252,Jugovzhodna Slovenija
+p6,253,Osrednjeslovenska
+p6,254,Gorenjska
+p6,255,Notranjsko-kraška
+p6,256,Goriška
+p6,257,Obalno-kraška
+p10,1,Dutch
+p10,2,FR
+p10,3,Maltese
+p10,4,EN
+p10,5,Estonian
+p10,6,Russian
+p10,7,LV
+p10,8,RU
+p10,9,French
+p10,10,Luxemburgish
+V2Q1,0,Definitely won't vote
+V2Q1,1,1
+V2Q1,2,2
+V2Q1,3,3
+V2Q1,4,4
+V2Q1,5,5
+V2Q1,6,6
+V2Q1,7,7
+V2Q1,8,8
+V2Q1,9,9
+V2Q1,10,Definitely will vote
+V2Q1,999,DK (SP.)
+V2Q2,101,Sozialdemokratische Partei Österreichs (Social Democratic Pa
+V2Q2,102,Österreichische Volkspartei
+V2Q2,103,Freiheitliche Partei Österreichs
+V2Q2,104,Bündnis Zukunft Österreich
+V2Q2,105,GRÜNE
+V2Q2,106,LINKE (Left)
+V2Q2,107,Hans-Peter Martin
+V2Q2,108,Bürgerforum
+V2Q2,109,Kommunistische Partei Österreichs
+V2Q2,110,Liberales Forum
+V2Q2,201,Christen-Democratisch en Vlaams
+V2Q2,202,Nieuw-Vlaamse Alliantie
+V2Q2,203,Groen!
+V2Q2,204,Socialistische Partij - Anders
+V2Q2,205,Sociaal-Liberale Partij
+V2Q2,206,Vlaams Belang
+V2Q2,207,Open Vlaamse Liberalen en Democraten
+V2Q2,208,Lijst Dedecker
+V2Q2,209,Partij van de Arbeid
+V2Q2,210,Parti Socialiste
+V2Q2,211,Mouvement Réformateur
+V2Q2,212,Centre Démocrate Humaniste
+V2Q2,213,Ecolo (Ecology)
+V2Q2,214,"Front National (National Front), FN"
+V2Q2,215,"Parti du Travail de Belgique (Workers' Party of Belgium), PT"
+V2Q2,216,Christen-Democratisch en Vlaams-Nieuw-Vlaamse Alliantie
+V2Q2,217,Socialistische Partij - Anders-Spirit
+V2Q2,301,Bulgarian Socialist Party
+V2Q2,302,National Movement for stability and prosperity
+V2Q2,303,Movement for Rights and Freedoms
+V2Q2,304,Attack Party
+V2Q2,305,Coalition of Union of Democratic Forces
+V2Q2,306,Citizens for the European Development of Bulgaria
+V2Q2,307,The New Time
+V2Q2,308,Euroroma
+V2Q2,309,Democrats for a Strong Bulgaria
+V2Q2,310,BNS-SSD-BZNS-VMRO
+V2Q2,311,"Order, Lawfulness, Justice"
+V2Q2,312,Bulgarian Agrarian People’s Union
+V2Q2,313,Coalition of the Rose -BSD-NDPS-OBT
+V2Q2,314,RZS-SSD-BZNS
+V2Q2,401,Progressive Party of Working People
+V2Q2,402,Democratic Rally
+V2Q2,403,Democratic Party
+V2Q2,404,Movement for Social Democracy United Democratic Union of Cen
+V2Q2,405,European party
+V2Q2,406,Ecological and Environmental Movement
+V2Q2,407,United Democrats
+V2Q2,408,European Democracy
+V2Q2,409,Movement of Free Citizens
+V2Q2,410,Popular Socialist Movement
+V2Q2,411,"Hunters, Workers, and Farmers"
+V2Q2,501,Czech Social Democratic Party
+V2Q2,502,Christian and Democratic Union – Czechoslovak People's Party
+V2Q2,503,Communist Party of Bohemia and Moravia
+V2Q2,504,Civic Democratic Party
+V2Q2,505,Green Party
+V2Q2,601,Socialdemokratiet
+V2Q2,602,Det Radikale Venstre
+V2Q2,603,Det Konservative Folkeparti
+V2Q2,604,Socialistisk Folkeparti
+V2Q2,605,Ny/Liberal Alliance
+V2Q2,606,Junibevægelsen
+V2Q2,607,Folkebevægelsen mod EU
+V2Q2,608,Dansk Folkeparti (Danish People's Party)
+V2Q2,609,Venstre - Danmarks liberale parti
+V2Q2,610,Enhedslisten - de Rød-Grønne
+V2Q2,611,Kristendemokraterne
+V2Q2,701,Reformierakond
+V2Q2,702,Keskerakond
+V2Q2,703,Isamaa ja Res Publica Liit
+V2Q2,704,Sotsiaaldemokraatlik Erakond
+V2Q2,705,Erakond Eestimaa Rohelised
+V2Q2,706,Eestimaa Rahvaliit
+V2Q2,707,Eesti Kristlikud Demokraadid
+V2Q2,708,Eesti Iseseisvuspartei
+V2Q2,709,Vene Erakond Eestis
+V2Q2,710,Eestimaa Ühendatud Vasakpartei
+V2Q2,711,Konstitutsioonierakond
+V2Q2,712,Eestimaa Vasakpartei
+V2Q2,801,Suomen Keskusta
+V2Q2,802,Kansallinen Kokoomus
+V2Q2,803,Suomen Sosialidemokraattinen Puolue
+V2Q2,804,Vasemmistoliitto
+V2Q2,805,Vihreä liitto
+V2Q2,806,Ruotsalainen kansanpuolue
+V2Q2,807,Kristillisdemokraatit
+V2Q2,808,Perussuomalaiset
+V2Q2,901,Lutte ouvrière
+V2Q2,902,Nouveau Parti Anticapitaliste
+V2Q2,903,Parti communiste/Parti de gauche
+V2Q2,904,Parti socialiste
+V2Q2,905,Europe écologie
+V2Q2,906,Mouvement démocrate
+V2Q2,907,Union pour un Mouvement Populaire - Nouveau Centre
+V2Q2,908,Debout la République
+V2Q2,909," ""Libertas"" - Mouvement pour la France MPF/CPNT"
+V2Q2,910,Front national
+V2Q2,914,Les Verts
+V2Q2,916,Nouveau Centre
+V2Q2,917,Union pour un Mouvement Populaire
+V2Q2,918,Mouvement National Républicain
+V2Q2,919,Ligue communiste révolutionnaire
+V2Q2,920,Parti communiste
+V2Q2,921,Parti radical de gauche
+V2Q2,922,"Génération écologie, Mouvement écologiste indépendant"
+V2Q2,996,Other
+V2Q2,1001,CDU/CSU
+V2Q2,1002,Sozialdemokratische Partei Deutschlands
+V2Q2,1003,Freie Demokratische Partei
+V2Q2,1004,Die Linke
+V2Q2,1005,Bündnis 90 / Die Grünen
+V2Q2,1006,Republikaner
+V2Q2,1007,Deutsche Volksunion
+V2Q2,1008,Nationaldemokratische Partei Deutschlands
+V2Q2,1009,Freie Wähler
+V2Q2,1101,New Democracy
+V2Q2,1102,Panhellenic Socialist Movement
+V2Q2,1103,Greek Communist Party
+V2Q2,1104,Coalition of Radical Left
+V2Q2,1105,Popular Orthodox Rally
+V2Q2,1106,Ecologists Green
+V2Q2,1107,Union of Centrists
+V2Q2,1108,Movement for the Reorganization of the Communist Party of GR
+V2Q2,1109,Fighting Socialist Party of Greece
+V2Q2,1110,Ecologists Greece
+V2Q2,1111,NTARSIA
+V2Q2,1112,Democratic Revival
+V2Q2,1113,Drasis
+V2Q2,1114,European Liberal Alliance -Rainbow party
+V2Q2,1115,Chrysi Avgi
+V2Q2,1116,Greek Hunter’s Party
+V2Q2,1201,"Magyar Szocialista Párt (Hungarian Socialist Party), MSZP"
+V2Q2,1202,FIDESZ- KDNP
+V2Q2,1203,Szabad Demokraták Szövetsége
+V2Q2,1204,Magyar Demokrata Fórum
+V2Q2,1205,Magyar Igazság és Élet Pártja
+V2Q2,1206,Magyar Kommunista Munkáspárt
+V2Q2,1207,MCP Roma Összefogás Párt
+V2Q2,1208,Jobbik Magyarországért Mozgalom
+V2Q2,1209,Humanista Párt/Lehet Más a Politika
+V2Q2,1210,Centrum- MSZDP
+V2Q2,1211,"Független Kisgazda-, Földmunkás és Polgári Párt"
+V2Q2,1212,"Független Kisgazda-, Nemzeti Egység Párt"
+V2Q2,1213,Magyar Republikánus Politikai Párt
+V2Q2,1214,Szociáldemokrata Párt
+V2Q2,1215,Magyar Szociális Zöld Párt
+V2Q2,1216,Magyarországi Kisebbségek Pártja
+V2Q2,1217,Internetes Demokrácia Pártja
+V2Q2,1218,Megújult Magyarországi Roma Összefogás Párt
+V2Q2,1219,Szent Koronát Szolgálók Szövetsége
+V2Q2,1220,Zöldek Pártja
+V2Q2,1221,FIDESZ - Magyar Polgári Szövetség
+V2Q2,1222,Kereszténydemokrata Néppárt közös lista
+V2Q2,1301,"Fianna Fail, FF"
+V2Q2,1302,"Fianna Gael, FG"
+V2Q2,1303,"Labour, LP"
+V2Q2,1304,"Green Party, GP"
+V2Q2,1305,"Sinn Fein, SF"
+V2Q2,1306,Libertas
+V2Q2,1307,"Worker's Party, WP"
+V2Q2,1308,"Progressive Democrats, PD"
+V2Q2,1309,"Socialist Party, SP"
+V2Q2,1310,Socialist Worker's Party
+V2Q2,1401,Italia dei Valori – Lista Di Pietro
+V2Q2,1402,La Destra - Fiamma Tricolore
+V2Q2,1403,Lega Nord
+V2Q2,1404,Rifondazione Comunista
+V2Q2,1405,Partito dei Comunisti Italiani
+V2Q2,1406,Verdi
+V2Q2,1407,Partito Democratico
+V2Q2,1408,Partito Socialista
+V2Q2,1409,Il Popolo della Libertà
+V2Q2,1410,Partito Comunista dei Lavoratori
+V2Q2,1411,Unione di Centro
+V2Q2,1412,Sinistra e Libertà
+V2Q2,1501,Jaunais laiks
+V2Q2,1502,Tautas partija
+V2Q2,1503,Apvieniba “Par cilveka tiesibam vienota Latvija”
+V2Q2,1504,„Saskanas centrs”
+V2Q2,1505,Apvieniba “Tevzemei un Brivibai”/LNNK
+V2Q2,1506,Latvijas Pirma partija /“Latvijas celš
+V2Q2,1507,Latvijas Socialdemokratiska stradnieku partija
+V2Q2,1508,Zalo un zemnieku savieniba
+V2Q2,1509,Latvijas Socialistiska partija
+V2Q2,1510,"Politiska patriotiska apvieniba ""DZIMTENE"""
+V2Q2,1511,„Pilsoniska savieniba
+V2Q2,1512,„Sabiedriba citai politikai
+V2Q2,1513,„Jaunie demokrati”/ demokrati.lv
+V2Q2,1514,„Visu Latvijai!”
+V2Q2,1515,"Politiska organizacija ""PENSION?RU UN SENIORU PARTIJA"""
+V2Q2,1516,MARAS ZEME
+V2Q2,1517,"Politiska organizacija (partija) ""Eiroskepti?i"""
+V2Q2,1518,"Partija ""Musu zeme"""
+V2Q2,1519,Sociala Taisniguma partija
+V2Q2,1601,"Darbo Partija (Labour Party),DP"
+V2Q2,1602,Christian Conservative Social Union
+V2Q2,1603,"Leiboristu partija (Labour Party), LP"
+V2Q2,1604,Liberal and Centre Union
+V2Q2,1605,Lithuanian Centre Party
+V2Q2,1606,Electoral Action of Poles in Lithuania
+V2Q2,1607,Liberals' Movement of the Republic of Lithuania
+V2Q2,1608,Social Democratic Party of Lithuania
+V2Q2,1609,Social Democratic Union of Lithuania
+V2Q2,1610,Union of Lithuanian Peasants and Peoples
+V2Q2,1611,Order and Justice-Liberal Democrats
+V2Q2,1612,Party of Civic Democracy
+V2Q2,1613,"Political party ""Frontas"
+V2Q2,1614,"National party ""The way of Lithuania"""
+V2Q2,1615,Rising Nation Party
+V2Q2,1616,Homeland Union – Lithuanian Christian Democrats
+V2Q2,1617,New Union-Social Liberals
+V2Q2,1618,Žemaiciu partija
+V2Q2,1619,Coalition Labour Party + Youth
+V2Q2,1620,Lithuanian Freedom Union)
+V2Q2,1621,"Lithuanian People's Union ""For the right of Lithuania"
+V2Q2,1622,Union of the Russians of Lithuania)
+V2Q2,1623,Young Lithuania
+V2Q2,1701,Kommunistesch Partei Lëtzebuerg
+V2Q2,1702,Déi Gréng
+V2Q2,1703,Alternativ Demokratesch Reformpartei
+V2Q2,1704,Lëtzebuerger Sozialistesch Aarbechterpartei
+V2Q2,1705,Demokratesch Partei
+V2Q2,1706,Déi Lénk
+V2Q2,1707,Chrëschtlech-Sozial Volkspartei
+V2Q2,1708,Biergerlëscht
+V2Q2,1709,Fräi Partei Lëtzebuerg
+V2Q2,1801,Il-Partit Nazzjonalista
+V2Q2,1802,Il-Partit Laburista
+V2Q2,1803,Alternattiva Demokratika
+V2Q2,1804,Alleanza Nazzjonali
+V2Q2,1805,Alpha - Liberali Demokratiku
+V2Q2,1806,Forza Malta
+V2Q2,1901,Christen-Democratisch Appèl
+V2Q2,1902,Partij van de Arbeid
+V2Q2,1903,Socialistische Partij
+V2Q2,1904,Volkspartij voor Vrijheid en Democratie
+V2Q2,1905,Groen Links
+V2Q2,1906,Partij voor de Vrijheid
+V2Q2,1907,Christen Unie/Staatskundig Gereformeerde Partij
+V2Q2,1908,Democraten 66
+V2Q2,1909,Partij voor de Dieren
+V2Q2,1910,Partij Newropeans
+V2Q2,1911,Christen Unie
+V2Q2,1912,Staatskundig Gereformeerde Partij
+V2Q2,1913,Lijst Pim Fortuyn
+V2Q2,1914,Eén Nederlands
+V2Q2,1915,Partij van Nederlands
+V2Q2,2001,NAPRZÓD POLSKO – PIAST! (Agrarian)
+V2Q2,2002,Koalicyjny Komitet Wyborczy PdP - CentroLewica
+V2Q2,2003,Koalicyjny Komitet Wyborczy Sojusz Lewicy Demokratycznej  UP
+V2Q2,2004,Demokratycznej Partii Lewicy
+V2Q2,2005,Libertas
+V2Q2,2006,Liga Polskich Rodzin
+V2Q2,2007,Partia Kobiet
+V2Q2,2008,Platforma Obywatelska
+V2Q2,2009,Polska Partia Pracy
+V2Q2,2010,Polska Partia Socjalistyczn
+V2Q2,2011,Polska Patriotyczna
+V2Q2,2012,Polskie Stronnictwo Ludowe
+V2Q2,2013,Prawica Rzeczypospolitej
+V2Q2,2014,Prawo i Sprawiedliwosc
+V2Q2,2015,Samoobrona Rzeczpospolitej Polskiej
+V2Q2,2016,Unia Polityki Realnej
+V2Q2,2017,Sojusz Lewicy Demokratycznej
+V2Q2,2018,Socjaldemokracja Polska
+V2Q2,2019,Partia Demokratyczna
+V2Q2,2020,Lewica i Demokraci
+V2Q2,2101,Bloco de Esquerda
+V2Q2,2102,Centro Democrático Social /Partido Popular
+V2Q2,2103,CDU-PCP-PEV
+V2Q2,2104,Partido Socialista
+V2Q2,2105,Partido Social Democrata
+V2Q2,2201,Partidul Democrat-Liberal
+V2Q2,2202,Electoral Alliance Social Democratic Party + Conservative Pa
+V2Q2,2203,National Liberal Party
+V2Q2,2204,Democratic Alliance of Hungarians in Romania
+V2Q2,2205,Christian-Democratic National Peasants’ Party
+V2Q2,2206,New Generation Party – Christian Democratic
+V2Q2,2207,Great Romania Party
+V2Q2,2208,Social Democratic Party
+V2Q2,2209,Conservative Party
+V2Q2,2301,SMER - sociálna demokracia
+V2Q2,2302,SDKÚ-DS
+V2Q2,2303,Slovenská národná strana
+V2Q2,2304,Christian Democratic Movement
+V2Q2,2305,Party of Hungarian Coalition
+V2Q2,2306,People's Party - Movement for Democratic Slovakia
+V2Q2,2307,Green Party
+V2Q2,2308,Communist Party of Slovakia
+V2Q2,2309,Free Forum
+V2Q2,2310,Conservative Democrats of SK - Civic Conservative Party
+V2Q2,2311,Freedom and Solidarity
+V2Q2,2312,Democratic Party
+V2Q2,2313,Civic-Liberal Party
+V2Q2,2314,Party of Democratic Left
+V2Q2,2315,Agrarian Party
+V2Q2,2316,Roma Initiative of Slovakia
+V2Q2,2317,Mission 21 - Movement of Christian Solidarity
+V2Q2,2318,Movement for Democracy
+V2Q2,2319,Civic Conservative Party)
+V2Q2,2320,Alliance of new citizen
+V2Q2,2321,Slovak People's Party
+V2Q2,2322,Association of workmen of Slovakia
+V2Q2,2323,Left block
+V2Q2,2401,Slovenska demokratska stranka
+V2Q2,2402,Liberalna demokracija Slovenije
+V2Q2,2403,Slovenska ljudska stranka
+V2Q2,2404,Socialni demokrati
+V2Q2,2405,ZARES - Nova politika
+V2Q2,2406,Slovenska nacionalna stranka
+V2Q2,2407,Demokraticna stranka upokojencev
+V2Q2,2408,Stranka mladih Slovenije
+V2Q2,2409,Nova Slovenija - krš?anska ljudska stranka
+V2Q2,2410,Stranka slovenskega naroda
+V2Q2,2411,Lipa (Linden)
+V2Q2,2412,Akacije (Acacias)
+V2Q2,2413,Lista za cisto pitno vodo
+V2Q2,2414,Lista za pravicnost in razvoj
+V2Q2,2415,Kršcansko demokratska stranka
+V2Q2,2416,Zeleni Slovenije
+V2Q2,2417,Zelena stranka
+V2Q2,2418,Zeleni progres
+V2Q2,2419,Naprej Slovenija
+V2Q2,2501,Partido Popular
+V2Q2,2502,Partido Socialista Obrero Español
+V2Q2,2503,Izquierda Unida
+V2Q2,2504,Los Verdes
+V2Q2,2505,Convergència i unió
+V2Q2,2506,Eusko Alkartasuna
+V2Q2,2507,Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco
+V2Q2,2508,Convergència Democràtica de Catalunya
+V2Q2,2509,Iniciativa per Catalunya Verds -Esquerra Unida i Alternativa
+V2Q2,2510,Europa de los pueblos
+V2Q2,2511,Coalición Europea
+V2Q2,2512,Bloque Nacionalista Galego
+V2Q2,2513,Coalición Canaria-Partido Nacionalista Canario
+V2Q2,2514,ERC
+V2Q2,2515,Nafarroa Bai
+V2Q2,2516,Unión Progreso y Democracia
+V2Q2,2517,"Chunta Aragonesista, CHA"
+V2Q2,2518,Ciudadanos-Partido de la Ciudadania
+V2Q2,2519,Coalición Andalucista
+V2Q2,2601,Vänsterpartiet
+V2Q2,2602,Sveriges Socialdemokratiska arbetarparti
+V2Q2,2603,Centerpartiet
+V2Q2,2604,Folkpartiet Liberalerna
+V2Q2,2605,Moderaterna
+V2Q2,2606,Kristdemokraterna
+V2Q2,2607,Miljöpartiet de Gröna
+V2Q2,2608,Junilistan
+V2Q2,2609,Sverigedemokraterna
+V2Q2,2610,Piratpartiet
+V2Q2,2701,Labour Party
+V2Q2,2702,Conservative Party
+V2Q2,2703,Liberal Democrats
+V2Q2,2704,"UK Independence Party, UKIP"
+V2Q2,2705,The Green party
+V2Q2,2706,"Scottish National Party, SNP"
+V2Q2,2707,Plaid Cymru (The Party of Wales)
+V2Q2,2708,"Ulster Unionist Party, UUP"
+V2Q2,2709,"Democratic Unionist Party, DUP"
+V2Q2,2710,"Sinn Fein, SF"
+V2Q6_1,0,Would never vote for it
+V2Q6_1,1,1
+V2Q6_1,2,2
+V2Q6_1,3,3
+V2Q6_1,4,4
+V2Q6_1,5,5
+V2Q6_1,6,6
+V2Q6_1,7,7
+V2Q6_1,8,8
+V2Q6_1,9,9
+V2Q6_1,10,Would always vote for it
+V2Q6_1,999,DK (SP)
+V2Q6_2,0,Would never vote for it
+V2Q6_2,1,1
+V2Q6_2,2,2
+V2Q6_2,3,3
+V2Q6_2,4,4
+V2Q6_2,5,5
+V2Q6_2,6,6
+V2Q6_2,7,7
+V2Q6_2,8,8
+V2Q6_2,9,9
+V2Q6_2,10,Would always vote for it
+V2Q6_2,999,DK (SP)
+V2Q6_3,0,Would never vote for it
+V2Q6_3,1,1
+V2Q6_3,2,2
+V2Q6_3,3,3
+V2Q6_3,4,4
+V2Q6_3,5,5
+V2Q6_3,6,6
+V2Q6_3,7,7
+V2Q6_3,8,8
+V2Q6_3,9,9
+V2Q6_3,10,Would always vote for it
+V2Q6_3,999,DK (SP)
+V2Q6_4,0,Would never vote for it
+V2Q6_4,1,1
+V2Q6_4,2,2
+V2Q6_4,3,3
+V2Q6_4,4,4
+V2Q6_4,5,5
+V2Q6_4,6,6
+V2Q6_4,7,7
+V2Q6_4,8,8
+V2Q6_4,9,9
+V2Q6_4,10,Would always vote for it
+V2Q6_4,999,DK (SP)
+V2Q6_5,0,Would never vote for it
+V2Q6_5,1,1
+V2Q6_5,2,2
+V2Q6_5,3,3
+V2Q6_5,4,4
+V2Q6_5,5,5
+V2Q6_5,6,6
+V2Q6_5,7,7
+V2Q6_5,8,8
+V2Q6_5,9,9
+V2Q6_5,10,Would always vote for it
+V2Q6_5,999,DK (SP)
+V2Q6_6,0,Would never vote for it
+V2Q6_6,1,1
+V2Q6_6,2,2
+V2Q6_6,3,3
+V2Q6_6,4,4
+V2Q6_6,5,5
+V2Q6_6,6,6
+V2Q6_6,7,7
+V2Q6_6,8,8
+V2Q6_6,9,9
+V2Q6_6,10,Would always vote for it
+V2Q6_6,999,DK (SP)
+V2Q6_7,0,Would never vote for it
+V2Q6_7,1,1
+V2Q6_7,2,2
+V2Q6_7,3,3
+V2Q6_7,4,4
+V2Q6_7,5,5
+V2Q6_7,6,6
+V2Q6_7,7,7
+V2Q6_7,8,8
+V2Q6_7,9,9
+V2Q6_7,10,Would always vote for it
+V2Q6_7,999,DK (SP)
+V2Q6_8,0,Would never vote for it
+V2Q6_8,1,1
+V2Q6_8,2,2
+V2Q6_8,3,3
+V2Q6_8,4,4
+V2Q6_8,5,5
+V2Q6_8,6,6
+V2Q6_8,7,7
+V2Q6_8,8,8
+V2Q6_8,9,9
+V2Q6_8,10,Would always vote for it
+V2Q6_8,999,DK (SP)
+V2Q6_9,0,Would never vote for it
+V2Q6_9,1,1
+V2Q6_9,2,2
+V2Q6_9,3,3
+V2Q6_9,4,4
+V2Q6_9,5,5
+V2Q6_9,6,6
+V2Q6_9,7,7
+V2Q6_9,8,8
+V2Q6_9,9,9
+V2Q6_9,10,Would always vote for it
+V2Q6_9,999,DK (SP)
+V2Q6_10,0,Would never vote for it
+V2Q6_10,1,1
+V2Q6_10,2,2
+V2Q6_10,3,3
+V2Q6_10,4,4
+V2Q6_10,5,5
+V2Q6_10,6,6
+V2Q6_10,7,7
+V2Q6_10,8,8
+V2Q6_10,9,9
+V2Q6_10,10,Would always vote for it
+V2Q6_10,999,DK (SP)
+V2Q6_11,0,Would never vote for it
+V2Q6_11,1,1
+V2Q6_11,2,2
+V2Q6_11,3,3
+V2Q6_11,4,4
+V2Q6_11,5,5
+V2Q6_11,6,6
+V2Q6_11,7,7
+V2Q6_11,8,8
+V2Q6_11,9,9
+V2Q6_11,10,Would always vote for it
+V2Q6_11,999,DK (SP)
+V2Q6_12,0,Would never vote for it
+V2Q6_12,1,1
+V2Q6_12,2,2
+V2Q6_12,3,3
+V2Q6_12,4,4
+V2Q6_12,5,5
+V2Q6_12,6,6
+V2Q6_12,7,7
+V2Q6_12,8,8
+V2Q6_12,9,9
+V2Q6_12,10,Would always vote for it
+V2Q6_12,999,DK (SP)
+V2Q6_13,0,Would never vote for it
+V2Q6_13,1,1
+V2Q6_13,2,2
+V2Q6_13,3,3
+V2Q6_13,4,4
+V2Q6_13,5,5
+V2Q6_13,6,6
+V2Q6_13,7,7
+V2Q6_13,8,8
+V2Q6_13,9,9
+V2Q6_13,10,Would always vote for it
+V2Q6_13,999,DK (SP)
+V2Q6_14,0,Would never vote for it
+V2Q6_14,1,1
+V2Q6_14,2,2
+V2Q6_14,3,3
+V2Q6_14,4,4
+V2Q6_14,5,5
+V2Q6_14,6,6
+V2Q6_14,7,7
+V2Q6_14,8,8
+V2Q6_14,9,9
+V2Q6_14,10,Would always vote for it
+V2Q6_14,999,DK (SP)
+V2Q6_15,0,Would never vote for it
+V2Q6_15,1,1
+V2Q6_15,2,2
+V2Q6_15,3,3
+V2Q6_15,4,4
+V2Q6_15,5,5
+V2Q6_15,6,6
+V2Q6_15,7,7
+V2Q6_15,8,8
+V2Q6_15,9,9
+V2Q6_15,10,Would always vote for it
+V2Q6_15,999,DK (SP)
+V2Q6_16,0,Would never vote for it
+V2Q6_16,1,1
+V2Q6_16,2,2
+V2Q6_16,3,3
+V2Q6_16,4,4
+V2Q6_16,5,5
+V2Q6_16,6,6
+V2Q6_16,7,7
+V2Q6_16,8,8
+V2Q6_16,9,9
+V2Q6_16,10,Would always vote for it
+V2Q6_16,999,DK (SP)
+V2Q6_17,0,Would never vote for it
+V2Q6_17,1,1
+V2Q6_17,2,2
+V2Q6_17,3,3
+V2Q6_17,4,4
+V2Q6_17,5,5
+V2Q6_17,6,6
+V2Q6_17,7,7
+V2Q6_17,8,8
+V2Q6_17,9,9
+V2Q6_17,10,Would always vote for it
+V2Q6_17,999,DK (SP)
+V2Q6_18,0,Would never vote for it
+V2Q6_18,1,1
+V2Q6_18,2,2
+V2Q6_18,3,3
+V2Q6_18,4,4
+V2Q6_18,5,5
+V2Q6_18,6,6
+V2Q6_18,7,7
+V2Q6_18,8,8
+V2Q6_18,9,9
+V2Q6_18,10,Would always vote for it
+V2Q6_18,999,DK (SP)
+V2Q6_19,0,Would never vote for it
+V2Q6_19,1,1
+V2Q6_19,2,2
+V2Q6_19,3,3
+V2Q6_19,4,4
+V2Q6_19,5,5
+V2Q6_19,6,6
+V2Q6_19,7,7
+V2Q6_19,8,8
+V2Q6_19,9,9
+V2Q6_19,10,Would always vote for it
+V2Q6_19,999,DK (SP)
+V2Q6_20,0,Would never vote for it
+V2Q6_20,1,1
+V2Q6_20,2,2
+V2Q6_20,3,3
+V2Q6_20,4,4
+V2Q6_20,5,5
+V2Q6_20,6,6
+V2Q6_20,7,7
+V2Q6_20,8,8
+V2Q6_20,9,9
+V2Q6_20,10,Would always vote for it
+V2Q6_20,999,DK (SP)
+V2Q6_21,0,Would never vote for it
+V2Q6_21,1,1
+V2Q6_21,2,2
+V2Q6_21,3,3
+V2Q6_21,4,4
+V2Q6_21,5,5
+V2Q6_21,6,6
+V2Q6_21,7,7
+V2Q6_21,8,8
+V2Q6_21,9,9
+V2Q6_21,10,Would always vote for it
+V2Q6_21,999,DK (SP)
+V2Q6_22,0,Would never vote for it
+V2Q6_22,1,1
+V2Q6_22,2,2
+V2Q6_22,3,3
+V2Q6_22,4,4
+V2Q6_22,5,5
+V2Q6_22,6,6
+V2Q6_22,7,7
+V2Q6_22,8,8
+V2Q6_22,9,9
+V2Q6_22,10,Would always vote for it
+V2Q6_22,999,DK (SP)
+V2Q6_23,0,Would never vote for it
+V2Q6_23,1,1
+V2Q6_23,2,2
+V2Q6_23,3,3
+V2Q6_23,4,4
+V2Q6_23,5,5
+V2Q6_23,6,6
+V2Q6_23,7,7
+V2Q6_23,8,8
+V2Q6_23,9,9
+V2Q6_23,10,Would always vote for it
+V2Q6_23,999,DK (SP)
+V2Q7,0,No problem at all
+V2Q7,1,1
+V2Q7,2,2
+V2Q7,3,3
+V2Q7,4,4
+V2Q7,5,5
+V2Q7,6,6
+V2Q7,7,7
+V2Q7,8,8
+V2Q7,9,9
+V2Q7,10,The most serious problem
+V2Q7,999,DK (SP.)
+V2Q8b,0,Send all illegal immigrants back to the countries they came
+V2Q8b,1,1
+V2Q8b,2,2
+V2Q8b,3,3
+V2Q8b,4,4
+V2Q8b,5,5
+V2Q8b,6,6
+V2Q8b,7,7
+V2Q8b,8,8
+V2Q8b,9,9
+V2Q8b,10,Legalise all the illegal immigrants currently there
+V2Q9_1,1,AGREE STRONGLY
+V2Q9_1,2,AGREE SOMEWHAT
+V2Q9_1,3,NEITHER AGREE NOR DISAGREE
+V2Q9_1,4,DISAGREE SOMEWHAT
+V2Q9_1,5,DISAGREE STRONGLY
+V2Q9_2,1,AGREE STRONGLY
+V2Q9_2,2,AGREE SOMEWHAT
+V2Q9_2,3,NEITHER AGREE NOR DISAGREE
+V2Q9_2,4,DISAGREE SOMEWHAT
+V2Q9_2,5,DISAGREE STRONGLY
+V2Q9_3,1,AGREE STRONGLY
+V2Q9_3,2,AGREE SOMEWHAT
+V2Q9_3,3,NEITHER AGREE NOR DISAGREE
+V2Q9_3,4,DISAGREE SOMEWHAT
+V2Q9_3,5,DISAGREE STRONGLY
+V2Q10_1,0,extremely unimportant
+V2Q10_1,1,1
+V2Q10_1,2,2
+V2Q10_1,3,3
+V2Q10_1,4,4
+V2Q10_1,5,5
+V2Q10_1,6,6
+V2Q10_1,7,7
+V2Q10_1,8,8
+V2Q10_1,9,9
+V2Q10_1,10,extremely important
+V2Q10_1,999,DK (SP.)
+V2Q10_2,0,extremely unimportant
+V2Q10_2,1,1
+V2Q10_2,2,2
+V2Q10_2,3,3
+V2Q10_2,4,4
+V2Q10_2,5,5
+V2Q10_2,6,6
+V2Q10_2,7,7
+V2Q10_2,8,8
+V2Q10_2,9,9
+V2Q10_2,10,extremely important
+V2Q10_2,999,DK (SP.)
+V2Q10_3,0,extremely unimportant
+V2Q10_3,1,1
+V2Q10_3,2,2
+V2Q10_3,3,3
+V2Q10_3,4,4
+V2Q10_3,5,5
+V2Q10_3,6,6
+V2Q10_3,7,7
+V2Q10_3,8,8
+V2Q10_3,9,9
+V2Q10_3,10,extremely important
+V2Q10_3,999,DK (SP.)
+V2Q10_4,0,extremely unimportant
+V2Q10_4,1,1
+V2Q10_4,2,2
+V2Q10_4,3,3
+V2Q10_4,4,4
+V2Q10_4,5,5
+V2Q10_4,6,6
+V2Q10_4,7,7
+V2Q10_4,8,8
+V2Q10_4,9,9
+V2Q10_4,10,extremely important
+V2Q10_4,999,DK (SP.)
+V2Q10_5,0,extremely unimportant
+V2Q10_5,1,1
+V2Q10_5,2,2
+V2Q10_5,3,3
+V2Q10_5,4,4
+V2Q10_5,5,5
+V2Q10_5,6,6
+V2Q10_5,7,7
+V2Q10_5,8,8
+V2Q10_5,9,9
+V2Q10_5,10,extremely important
+V2Q10_5,999,DK (SP.)
+V2Q10_6,0,extremely unimportant
+V2Q10_6,1,1
+V2Q10_6,2,2
+V2Q10_6,3,3
+V2Q10_6,4,4
+V2Q10_6,5,5
+V2Q10_6,6,6
+V2Q10_6,7,7
+V2Q10_6,8,8
+V2Q10_6,9,9
+V2Q10_6,10,extremely important
+V2Q10_6,999,DK (SP.)
+V2Q10_7,0,extremely unimportant
+V2Q10_7,1,1
+V2Q10_7,2,2
+V2Q10_7,3,3
+V2Q10_7,4,4
+V2Q10_7,5,5
+V2Q10_7,6,6
+V2Q10_7,7,7
+V2Q10_7,8,8
+V2Q10_7,9,9
+V2Q10_7,10,extremely important
+V2Q10_7,999,DK (SP.)
+V2Q10_8,0,extremely unimportant
+V2Q10_8,1,1
+V2Q10_8,2,2
+V2Q10_8,3,3
+V2Q10_8,4,4
+V2Q10_8,5,5
+V2Q10_8,6,6
+V2Q10_8,7,7
+V2Q10_8,8,8
+V2Q10_8,9,9
+V2Q10_8,10,extremely important
+V2Q10_8,999,DK (SP.)
+V2Q11_1,1,FAVOUR STRONGLY
+V2Q11_1,2,FAVOUR SOMEWHAT
+V2Q11_1,3,NEITHER FAVOUR NOR OPPOSE
+V2Q11_1,4,OPPOSE SOMEWHAT
+V2Q11_1,5,OPPOSE STRONGLY
+V2Q11_2,1,FAVOUR STRONGLY
+V2Q11_2,2,FAVOUR SOMEWHAT
+V2Q11_2,3,NEITHER FAVOUR NOR OPPOSE
+V2Q11_2,4,OPPOSE SOMEWHAT
+V2Q11_2,5,OPPOSE STRONGLY
+V2Q12,1,FAR TOO MANY
+V2Q12,2,SOMEWHAT TOO MANY
+V2Q12,3,ABOUT THE RIGHT NUMBER
+V2Q12,4,SOMEWHAT TOO FEW
+V2Q12,5,FAR TOO FEW
+V2Q13_1,1,AGREE STRONGLY
+V2Q13_1,2,AGREE SOMEWHAT
+V2Q13_1,3,NEITHER AGREE NOR DISAGREE
+V2Q13_1,4,DISAGREE SOMEWHAT
+V2Q13_1,5,DISAGREE STRONGLY
+V2Q13_2,1,AGREE STRONGLY
+V2Q13_2,2,AGREE SOMEWHAT
+V2Q13_2,3,NEITHER AGREE NOR DISAGREE
+V2Q13_2,4,DISAGREE SOMEWHAT
+V2Q13_2,5,DISAGREE STRONGLY
+V2Q13_3,1,AGREE STRONGLY
+V2Q13_3,2,AGREE SOMEWHAT
+V2Q13_3,3,NEITHER AGREE NOR DISAGREE
+V2Q13_3,4,DISAGREE SOMEWHAT
+V2Q13_3,5,DISAGREE STRONGLY
+V2Q14,0,Immigrants have a lot to offer to NATION
+V2Q14,10,Immigrants threaten NATION culture
+V2Q15,0,Muslim immigrants have a lot to offer to [COUNTRY]'s cultura
+V2Q15,1,1
+V2Q15,2,2
+V2Q15,3,3
+V2Q15,4,4
+V2Q15,5,5
+V2Q15,6,6
+V2Q15,7,7
+V2Q15,8,8
+V2Q15,9,9
+V2Q15,10,Muslim immigrants threaten [NATIONALITY] culture
+V2Q15,999,You haven't thought much about that
+V2Q16,0,Immigrants take native's jobs
+V2Q16,1,1
+V2Q16,2,2
+V2Q16,3,3
+V2Q16,4,4
+V2Q16,5,5
+V2Q16,6,6
+V2Q16,7,7
+V2Q16,8,8
+V2Q16,9,9
+V2Q16,10,Immigrants take jobs native don't want
+V2Q16,999,You haven't thought much about that
+V2Q18,0,Immigrants contribute more in taxes
+V2Q18,10,Immigrants benefit more from health and welfare services tha
+V2Q19_1,0,Not at all
+V2Q19_1,10,Completely
+V2Q19_2,0,Not at all
+V2Q19_2,10,Completely
+V2Q19_3,0,Not at all
+V2Q19_3,10,Completely
+V2Q19_4,0,Not at all
+V2Q19_4,10,Completely
+V2Q19_5,0,Not at all
+V2Q19_5,10,Completely
+V2Q20,0,No problem at all
+V2Q20,1,1
+V2Q20,2,2
+V2Q20,3,3
+V2Q20,4,4
+V2Q20,5,5
+V2Q20,6,6
+V2Q20,7,7
+V2Q20,8,8
+V2Q20,9,9
+V2Q20,10,The most serious problem
+V2Q20,999,DK (SP.)
+V2Q21,0,We should do everything possible to combat climate change
+V2Q21,1,1
+V2Q21,2,2
+V2Q21,3,3
+V2Q21,4,4
+V2Q21,5,5
+V2Q21,6,6
+V2Q21,7,7
+V2Q21,8,8
+V2Q21,9,9
+V2Q21,10,We should do everything possible to maximize economic growth
+V2Q21,999,You haven't thought much about that
+V2Q22b_1,1,AGREE STRONGLY
+V2Q22b_1,2,AGREE SOMEWHAT
+V2Q22b_1,3,NEITHER AGREE NOR DISAGREE
+V2Q22b_1,4,DISAGREE SOMEWHAT
+V2Q22b_1,5,DISAGREE STRONGLY
+V2Q22b_2,1,AGREE STRONGLY
+V2Q22b_2,2,AGREE SOMEWHAT
+V2Q22b_2,3,NEITHER AGREE NOR DISAGREE
+V2Q22b_2,4,DISAGREE SOMEWHAT
+V2Q22b_2,5,DISAGREE STRONGLY
+V2Q23,1,INCREASE THEM GREATLY
+V2Q23,2,INCREASE THEM SOMEWHAT
+V2Q23,3,LEAVE THEM AS THEY ARE
+V2Q23,4,DECREASE THEM SOMEWHAT
+V2Q23,5,DECREASE THEM GREATLY
+V2Q24,0,Produced in ways that minimize greenhouse gas emissions
+V2Q24,10,Produced as cheaply as possible
+V2Q25,0,NATION should do as much as it can to halt climate change
+V2Q25,10,NATION should only do as much as other
+V2Q26,0,Reduce greenhouse gas emission
+V2Q26,10,Make no effort
+V2Q27_1,0,Not priority at all
+V2Q27_1,10,The highest priority
+V2Q27_2,0,Not priority at all
+V2Q27_2,10,The highest priority
+V2Q27_3,0,Not priority at all
+V2Q27_3,10,The highest priority
+V2Q27_4,0,Not priority at all
+V2Q27_4,10,The highest priority
+V2Q27_5,0,Not priority at all
+V2Q27_5,10,The highest priority
+V2Q27_6,0,Not priority at all
+V2Q27_6,10,The highest priority
+V2Q27_7,0,Not priority at all
+V2Q27_7,10,The highest priority
+V2Q27_8,0,Not priority at all
+V2Q27_8,10,The highest priority
+V2Q27_9,0,Not priority at all
+V2Q27_9,10,The highest priority
+V2Q31_1,0,Entirely at the EU level
+V2Q31_1,10,Entirely by the individual member states
+V2Q31_2,0,Entirely at the EU level
+V2Q31_2,10,Entirely by the individual member states
+V2Q31_3,0,Entirely at the EU level
+V2Q31_3,10,Entirely by the individual member states
+V2Q31_4,0,Entirely at the EU level
+V2Q31_4,10,Entirely by the individual member states
+V2Q32_1,0,Unanimous agreement of all the member states
+V2Q32_1,10,Only agreement of member states representing a large majorit
+V2Q32_2,0,Unanimous agreement of all the member states
+V2Q32_2,10,Only agreement of member states representing a large majorit
+V2Q32_3,0,Unanimous agreement of all the member states
+V2Q32_3,10,Only agreement of member states representing a large majorit
+V2Q33a,0,Not at all
+V2Q33a,10,Completely
+V2Q33b,0,Not at all
+V2Q33b,10,Completely
+V2Q34,1,NATIONALITY ONLY
+V2Q34,2,NATIONALITY AND EUROPEAN
+V2Q34,3,EUROPEAN AND NATIONALITY
+V2Q34,4,EUROPEAN ONLY
+V2Q34,5,NONE OF THE ABOVE
+V2Q35,1,VERY GOOD THING
+V2Q35,2,FAIRLY GOOD THING
+V2Q35,3,NEITHER GOOD NOR BAD
+V2Q35,4,FAIRLY BAD THING
+V2Q35,5,VERY BAD THING
+V2Q36,0,Not benefited at all
+V2Q36,1,1
+V2Q36,2,2
+V2Q36,3,3
+V2Q36,4,4
+V2Q36,5,5
+V2Q36,6,6
+V2Q36,7,7
+V2Q36,8,8
+V2Q36,9,9
+V2Q36,10,Benefited enormously
+V2Q36,999,DK (SP.)
+V2Q40,1,A GREAT DEAL OF DIFFERENCE
+V2Q40,2,SOME DIFFERENCE
+V2Q40,3,NOT MUCH DIFFERENCE
+V2Q40,4,NO DIFFERENCE AT ALL
+V2Q41,1,A GREAT DEAL
+V2Q41,2,SOMEWHAT
+V2Q41,3,NOT VERY MUCH
+V2Q41,4,NOT AT ALL
+V2Q42_1,1,AGREE STRONGLY
+V2Q42_1,2,AGREE SOMEWHAT
+V2Q42_1,3,NEITHER AGREE NOR DISAGREE
+V2Q42_1,4,DISAGREE SOMEWHAT
+V2Q42_1,5,DISAGREE STRONGLY
+V2Q42_2,1,AGREE STRONGLY
+V2Q42_2,2,AGREE SOMEWHAT
+V2Q42_2,3,NEITHER AGREE NOR DISAGREE
+V2Q42_2,4,DISAGREE SOMEWHAT
+V2Q42_2,5,DISAGREE STRONGLY
+V2Q42_3,1,AGREE STRONGLY
+V2Q42_3,2,AGREE SOMEWHAT
+V2Q42_3,3,NEITHER AGREE NOR DISAGREE
+V2Q42_3,4,DISAGREE SOMEWHAT
+V2Q42_3,5,DISAGREE STRONGLY
+V2Q43,1,EUROPEAN COMMISSION
+V2Q43,2,COUNCIL OF MINISTERS
+V2Q43,3,EUROPEAN PARLIAMENT
+V2Q43,4,EUROPEAN COURT OF AUDITORS
+V2Q44,1,It passes all EU laws
+V2Q44,2,It can dismiss the European Commission
+V2Q44,3,It can reject the budget
+V2Q44,4,It is involved in admission of MS
+V2Q45,1,EUROPEAN COMMISSION
+V2Q45,2,COUNCIL OF MINISTERS
+V2Q45,3,EUROPEAN PARLIAMENT
+V2Q45,4,EUROPEAN COURT OF AUDITORS
+V2Q46,1,They can work anywhere in EU
+V2Q46,2,They must have a university education
+V2Q46,3,They cannot bring family members
+V2Q46,4,They are subject to the Returns Directive
+V2Q47,1,The EU set basic rules
+V2Q47,2,The EU decides how many
+V2Q47,3,Work permits must be approved
+V2Q47,4,The EU plays no role in immigration
+V2Q48,1,Most illegal immigrants enter the EU legally
+V2Q48,2,Roughly 9% of EU's total population
+V2Q48,3,Because of immigration the EU total
+V2Q48,4,There are more illegal than legal
+V2Q49,1,50%
+V2Q49,2,60%
+V2Q49,3,70%
+V2Q49,4,80%
+V2Q50,1,CHINA
+V2Q50,2,THE EUROPEAN UNION
+V2Q50,3,THE UNITED STATES
+V2Q50,4,INDIA
+V2Q51,1,PRODUCED OFF-SHORE
+V2Q51,2,INCREASING 30%
+V2Q51,3,THREE TIMES OF SOLAR POWER
+V2Q51,4,CONSUMPTION ABOUT 5%
+V2Q52_1,0,Not at all important
+V2Q52_1,10,Extremely important
+V2Q52_2,0,Not at all important
+V2Q52_2,10,Extremely important
+V2Q52_3,0,Not at all important
+V2Q52_3,10,Extremely important
+V2Q52_4,0,Not at all important
+V2Q52_4,10,Extremely important
+V2Q52_5,0,Not at all important
+V2Q52_5,10,Extremely important
+V2Q52_6,0,Not at all important
+V2Q52_6,10,Extremely important
+V2Q63,1,HAVE NOT READ IT
+V2Q63,2,HAVE READ LESS THAN HALF OF IT
+V2Q63,3,HAD READ ABOUT HALF OF IT
+V2Q63,4,HAD READ MORE THAN HALF OF IT
+V2Q63,5,HAVE READ ALL
+V2Q64,0,Clearly favoured some positions over others
+V2Q64,10,Completely balanced
+V3Q1,0,Definitely won't vote
+V3Q1,1,1
+V3Q1,2,2
+V3Q1,3,3
+V3Q1,4,4
+V3Q1,5,5
+V3Q1,6,6
+V3Q1,7,7
+V3Q1,8,8
+V3Q1,9,9
+V3Q1,10,Definitely will vote
+V3Q1,999,DK (SP.)
+V3Q2,101,Sozialdemokratische Partei Österreichs (Social Democratic Pa
+V3Q2,102,Österreichische Volkspartei
+V3Q2,103,Freiheitliche Partei Österreichs
+V3Q2,104,Bündnis Zukunft Österreich
+V3Q2,105,GRÜNE
+V3Q2,106,LINKE (Left)
+V3Q2,107,Hans-Peter Martin
+V3Q2,108,Bürgerforum
+V3Q2,109,Kommunistische Partei Österreichs
+V3Q2,110,Liberales Forum
+V3Q2,201,Christen-Democratisch en Vlaams
+V3Q2,202,Nieuw-Vlaamse Alliantie
+V3Q2,203,Groen!
+V3Q2,204,Socialistische Partij - Anders
+V3Q2,205,Sociaal-Liberale Partij
+V3Q2,206,Vlaams Belang
+V3Q2,207,Open Vlaamse Liberalen en Democraten
+V3Q2,208,Lijst Dedecker
+V3Q2,209,Partij van de Arbeid
+V3Q2,210,Parti Socialiste
+V3Q2,211,Mouvement Réformateur
+V3Q2,212,Centre Démocrate Humaniste
+V3Q2,213,Ecolo (Ecology)
+V3Q2,214,"Front National (National Front), FN"
+V3Q2,215,"Parti du Travail de Belgique (Workers' Party of Belgium), PT"
+V3Q2,216,Christen-Democratisch en Vlaams-Nieuw-Vlaamse Alliantie
+V3Q2,217,Socialistische Partij - Anders-Spirit
+V3Q2,301,Bulgarian Socialist Party
+V3Q2,302,National Movement for stability and prosperity
+V3Q2,303,Movement for Rights and Freedoms
+V3Q2,304,Attack Party
+V3Q2,305,Coalition of Union of Democratic Forces
+V3Q2,306,Citizens for the European Development of Bulgaria
+V3Q2,307,The New Time
+V3Q2,308,Euroroma
+V3Q2,309,Democrats for a Strong Bulgaria
+V3Q2,310,BNS-SSD-BZNS-VMRO
+V3Q2,311,"Order, Lawfulness, Justice"
+V3Q2,312,Bulgarian Agrarian People’s Union
+V3Q2,313,Coalition of the Rose -BSD-NDPS-OBT
+V3Q2,314,RZS-SSD-BZNS
+V3Q2,401,Progressive Party of Working People
+V3Q2,402,Democratic Rally
+V3Q2,403,Democratic Party
+V3Q2,404,Movement for Social Democracy United Democratic Union of Cen
+V3Q2,405,European party
+V3Q2,406,Ecological and Environmental Movement
+V3Q2,407,United Democrats
+V3Q2,408,European Democracy
+V3Q2,409,Movement of Free Citizens
+V3Q2,410,Popular Socialist Movement
+V3Q2,411,"Hunters, Workers, and Farmers"
+V3Q2,501,Czech Social Democratic Party
+V3Q2,502,Christian and Democratic Union – Czechoslovak People's Party
+V3Q2,503,Communist Party of Bohemia and Moravia
+V3Q2,504,Civic Democratic Party
+V3Q2,505,Green Party
+V3Q2,601,Socialdemokratiet
+V3Q2,602,Det Radikale Venstre
+V3Q2,603,Det Konservative Folkeparti
+V3Q2,604,Socialistisk Folkeparti
+V3Q2,605,Ny/Liberal Alliance
+V3Q2,606,Junibevægelsen
+V3Q2,607,Folkebevægelsen mod EU
+V3Q2,608,Dansk Folkeparti (Danish People's Party)
+V3Q2,609,Venstre - Danmarks liberale parti
+V3Q2,610,Enhedslisten - de Rød-Grønne
+V3Q2,611,Kristendemokraterne
+V3Q2,701,Reformierakond
+V3Q2,702,Keskerakond
+V3Q2,703,Isamaa ja Res Publica Liit
+V3Q2,704,Sotsiaaldemokraatlik Erakond
+V3Q2,705,Erakond Eestimaa Rohelised
+V3Q2,706,Eestimaa Rahvaliit
+V3Q2,707,Eesti Kristlikud Demokraadid
+V3Q2,708,Eesti Iseseisvuspartei
+V3Q2,709,Vene Erakond Eestis
+V3Q2,710,Eestimaa Ühendatud Vasakpartei
+V3Q2,711,Konstitutsioonierakond
+V3Q2,712,Eestimaa Vasakpartei
+V3Q2,801,Suomen Keskusta
+V3Q2,802,Kansallinen Kokoomus
+V3Q2,803,Suomen Sosialidemokraattinen Puolue
+V3Q2,804,Vasemmistoliitto
+V3Q2,805,Vihreä liitto
+V3Q2,806,Ruotsalainen kansanpuolue
+V3Q2,807,Kristillisdemokraatit
+V3Q2,808,Perussuomalaiset
+V3Q2,901,Lutte ouvrière
+V3Q2,902,Nouveau Parti Anticapitaliste
+V3Q2,903,Parti communiste/Parti de gauche
+V3Q2,904,Parti socialiste
+V3Q2,905,Europe écologie
+V3Q2,906,Mouvement démocrate
+V3Q2,907,Union pour un Mouvement Populaire - Nouveau Centre
+V3Q2,908,Debout la République
+V3Q2,909," ""Libertas"" - Mouvement pour la France MPF/CPNT"
+V3Q2,910,Front national
+V3Q2,914,Les Verts
+V3Q2,916,Nouveau Centre
+V3Q2,917,Union pour un Mouvement Populaire
+V3Q2,918,Mouvement National Républicain
+V3Q2,919,Ligue communiste révolutionnaire
+V3Q2,920,Parti communiste
+V3Q2,921,Parti radical de gauche
+V3Q2,922,"Génération écologie, Mouvement écologiste indépendant"
+V3Q2,996,Other
+V3Q2,1001,CDU/CSU
+V3Q2,1002,Sozialdemokratische Partei Deutschlands
+V3Q2,1003,Freie Demokratische Partei
+V3Q2,1004,Die Linke
+V3Q2,1005,Bündnis 90 / Die Grünen
+V3Q2,1006,Republikaner
+V3Q2,1007,Deutsche Volksunion
+V3Q2,1008,Nationaldemokratische Partei Deutschlands
+V3Q2,1009,Freie Wähler
+V3Q2,1101,New Democracy
+V3Q2,1102,Panhellenic Socialist Movement
+V3Q2,1103,Greek Communist Party
+V3Q2,1104,Coalition of Radical Left
+V3Q2,1105,Popular Orthodox Rally
+V3Q2,1106,Ecologists Green
+V3Q2,1107,Union of Centrists
+V3Q2,1108,Movement for the Reorganization of the Communist Party of GR
+V3Q2,1109,Fighting Socialist Party of Greece
+V3Q2,1110,Ecologists Greece
+V3Q2,1111,NTARSIA
+V3Q2,1112,Democratic Revival
+V3Q2,1113,Drasis
+V3Q2,1114,European Liberal Alliance -Rainbow party
+V3Q2,1115,Chrysi Avgi
+V3Q2,1116,Greek Hunter’s Party
+V3Q2,1201,"Magyar Szocialista Párt (Hungarian Socialist Party), MSZP"
+V3Q2,1202,FIDESZ- KDNP
+V3Q2,1203,Szabad Demokraták Szövetsége
+V3Q2,1204,Magyar Demokrata Fórum
+V3Q2,1205,Magyar Igazság és Élet Pártja
+V3Q2,1206,Magyar Kommunista Munkáspárt
+V3Q2,1207,MCP Roma Összefogás Párt
+V3Q2,1208,Jobbik Magyarországért Mozgalom
+V3Q2,1209,Humanista Párt/Lehet Más a Politika
+V3Q2,1210,Centrum- MSZDP
+V3Q2,1211,"Független Kisgazda-, Földmunkás és Polgári Párt"
+V3Q2,1212,"Független Kisgazda-, Nemzeti Egység Párt"
+V3Q2,1213,Magyar Republikánus Politikai Párt
+V3Q2,1214,Szociáldemokrata Párt
+V3Q2,1215,Magyar Szociális Zöld Párt
+V3Q2,1216,Magyarországi Kisebbségek Pártja
+V3Q2,1217,Internetes Demokrácia Pártja
+V3Q2,1218,Megújult Magyarországi Roma Összefogás Párt
+V3Q2,1219,Szent Koronát Szolgálók Szövetsége
+V3Q2,1220,Zöldek Pártja
+V3Q2,1221,FIDESZ - Magyar Polgári Szövetség
+V3Q2,1222,Kereszténydemokrata Néppárt közös lista
+V3Q2,1301,"Fianna Fail, FF"
+V3Q2,1302,"Fianna Gael, FG"
+V3Q2,1303,"Labour, LP"
+V3Q2,1304,"Green Party, GP"
+V3Q2,1305,"Sinn Fein, SF"
+V3Q2,1306,Libertas
+V3Q2,1307,"Worker's Party, WP"
+V3Q2,1308,"Progressive Democrats, PD"
+V3Q2,1309,"Socialist Party, SP"
+V3Q2,1310,Socialist Worker's Party
+V3Q2,1401,Italia dei Valori – Lista Di Pietro
+V3Q2,1402,La Destra - Fiamma Tricolore
+V3Q2,1403,Lega Nord
+V3Q2,1404,Rifondazione Comunista
+V3Q2,1405,Partito dei Comunisti Italiani
+V3Q2,1406,Verdi
+V3Q2,1407,Partito Democratico
+V3Q2,1408,Partito Socialista
+V3Q2,1409,Il Popolo della Libertà
+V3Q2,1410,Partito Comunista dei Lavoratori
+V3Q2,1411,Unione di Centro
+V3Q2,1412,Sinistra e Libertà
+V3Q2,1501,Jaunais laiks
+V3Q2,1502,Tautas partija
+V3Q2,1503,Apvieniba “Par cilveka tiesibam vienota Latvija”
+V3Q2,1504,„Saskanas centrs”
+V3Q2,1505,Apvieniba “Tevzemei un Brivibai”/LNNK
+V3Q2,1506,Latvijas Pirma partija /“Latvijas celš
+V3Q2,1507,Latvijas Socialdemokratiska stradnieku partija
+V3Q2,1508,Zalo un zemnieku savieniba
+V3Q2,1509,Latvijas Socialistiska partija
+V3Q2,1510,"Politiska patriotiska apvieniba ""DZIMTENE"""
+V3Q2,1511,„Pilsoniska savieniba
+V3Q2,1512,„Sabiedriba citai politikai
+V3Q2,1513,„Jaunie demokrati”/ demokrati.lv
+V3Q2,1514,„Visu Latvijai!”
+V3Q2,1515,"Politiska organizacija ""PENSION?RU UN SENIORU PARTIJA"""
+V3Q2,1516,MARAS ZEME
+V3Q2,1517,"Politiska organizacija (partija) ""Eiroskepti?i"""
+V3Q2,1518,"Partija ""Musu zeme"""
+V3Q2,1519,Sociala Taisniguma partija
+V3Q2,1601,"Darbo Partija (Labour Party),DP"
+V3Q2,1602,Christian Conservative Social Union
+V3Q2,1603,"Leiboristu partija (Labour Party), LP"
+V3Q2,1604,Liberal and Centre Union
+V3Q2,1605,Lithuanian Centre Party
+V3Q2,1606,Electoral Action of Poles in Lithuania
+V3Q2,1607,Liberals' Movement of the Republic of Lithuania
+V3Q2,1608,Social Democratic Party of Lithuania
+V3Q2,1609,Social Democratic Union of Lithuania
+V3Q2,1610,Union of Lithuanian Peasants and Peoples
+V3Q2,1611,Order and Justice-Liberal Democrats
+V3Q2,1612,Party of Civic Democracy
+V3Q2,1613,"Political party ""Frontas"
+V3Q2,1614,"National party ""The way of Lithuania"""
+V3Q2,1615,Rising Nation Party
+V3Q2,1616,Homeland Union – Lithuanian Christian Democrats
+V3Q2,1617,New Union-Social Liberals
+V3Q2,1618,Žemaiciu partija
+V3Q2,1619,Coalition Labour Party + Youth
+V3Q2,1620,Lithuanian Freedom Union)
+V3Q2,1621,"Lithuanian People's Union ""For the right of Lithuania"
+V3Q2,1622,Union of the Russians of Lithuania)
+V3Q2,1623,Young Lithuania
+V3Q2,1701,Kommunistesch Partei Lëtzebuerg
+V3Q2,1702,Déi Gréng
+V3Q2,1703,Alternativ Demokratesch Reformpartei
+V3Q2,1704,Lëtzebuerger Sozialistesch Aarbechterpartei
+V3Q2,1705,Demokratesch Partei
+V3Q2,1706,Déi Lénk
+V3Q2,1707,Chrëschtlech-Sozial Volkspartei
+V3Q2,1708,Biergerlëscht
+V3Q2,1709,Fräi Partei Lëtzebuerg
+V3Q2,1801,Il-Partit Nazzjonalista
+V3Q2,1802,Il-Partit Laburista
+V3Q2,1803,Alternattiva Demokratika
+V3Q2,1804,Alleanza Nazzjonali
+V3Q2,1805,Alpha - Liberali Demokratiku
+V3Q2,1806,Forza Malta
+V3Q2,1901,Christen-Democratisch Appèl
+V3Q2,1902,Partij van de Arbeid
+V3Q2,1903,Socialistische Partij
+V3Q2,1904,Volkspartij voor Vrijheid en Democratie
+V3Q2,1905,Groen Links
+V3Q2,1906,Partij voor de Vrijheid
+V3Q2,1907,Christen Unie/Staatskundig Gereformeerde Partij
+V3Q2,1908,Democraten 66
+V3Q2,1909,Partij voor de Dieren
+V3Q2,1910,Partij Newropeans
+V3Q2,1911,Christen Unie
+V3Q2,1912,Staatskundig Gereformeerde Partij
+V3Q2,1913,Lijst Pim Fortuyn
+V3Q2,1914,Eén Nederlands
+V3Q2,1915,Partij van Nederlands
+V3Q2,2001,NAPRZÓD POLSKO – PIAST! (Agrarian)
+V3Q2,2002,Koalicyjny Komitet Wyborczy PdP - CentroLewica
+V3Q2,2003,Koalicyjny Komitet Wyborczy Sojusz Lewicy Demokratycznej  UP
+V3Q2,2004,Demokratycznej Partii Lewicy
+V3Q2,2005,Libertas
+V3Q2,2006,Liga Polskich Rodzin
+V3Q2,2007,Partia Kobiet
+V3Q2,2008,Platforma Obywatelska
+V3Q2,2009,Polska Partia Pracy
+V3Q2,2010,Polska Partia Socjalistyczn
+V3Q2,2011,Polska Patriotyczna
+V3Q2,2012,Polskie Stronnictwo Ludowe
+V3Q2,2013,Prawica Rzeczypospolitej
+V3Q2,2014,Prawo i Sprawiedliwosc
+V3Q2,2015,Samoobrona Rzeczpospolitej Polskiej
+V3Q2,2016,Unia Polityki Realnej
+V3Q2,2017,Sojusz Lewicy Demokratycznej
+V3Q2,2018,Socjaldemokracja Polska
+V3Q2,2019,Partia Demokratyczna
+V3Q2,2020,Lewica i Demokraci
+V3Q2,2101,Bloco de Esquerda
+V3Q2,2102,Centro Democrático Social /Partido Popular
+V3Q2,2103,CDU-PCP-PEV
+V3Q2,2104,Partido Socialista
+V3Q2,2105,Partido Social Democrata
+V3Q2,2201,Partidul Democrat-Liberal
+V3Q2,2202,Electoral Alliance Social Democratic Party + Conservative Pa
+V3Q2,2203,National Liberal Party
+V3Q2,2204,Democratic Alliance of Hungarians in Romania
+V3Q2,2205,Christian-Democratic National Peasants’ Party
+V3Q2,2206,New Generation Party – Christian Democratic
+V3Q2,2207,Great Romania Party
+V3Q2,2208,Social Democratic Party
+V3Q2,2209,Conservative Party
+V3Q2,2301,SMER - sociálna demokracia
+V3Q2,2302,SDKÚ-DS
+V3Q2,2303,Slovenská národná strana
+V3Q2,2304,Christian Democratic Movement
+V3Q2,2305,Party of Hungarian Coalition
+V3Q2,2306,People's Party - Movement for Democratic Slovakia
+V3Q2,2307,Green Party
+V3Q2,2308,Communist Party of Slovakia
+V3Q2,2309,Free Forum
+V3Q2,2310,Conservative Democrats of SK - Civic Conservative Party
+V3Q2,2311,Freedom and Solidarity
+V3Q2,2312,Democratic Party
+V3Q2,2313,Civic-Liberal Party
+V3Q2,2314,Party of Democratic Left
+V3Q2,2315,Agrarian Party
+V3Q2,2316,Roma Initiative of Slovakia
+V3Q2,2317,Mission 21 - Movement of Christian Solidarity
+V3Q2,2318,Movement for Democracy
+V3Q2,2319,Civic Conservative Party)
+V3Q2,2320,Alliance of new citizen
+V3Q2,2321,Slovak People's Party
+V3Q2,2322,Association of workmen of Slovakia
+V3Q2,2323,Left block
+V3Q2,2401,Slovenska demokratska stranka
+V3Q2,2402,Liberalna demokracija Slovenije
+V3Q2,2403,Slovenska ljudska stranka
+V3Q2,2404,Socialni demokrati
+V3Q2,2405,ZARES - Nova politika
+V3Q2,2406,Slovenska nacionalna stranka
+V3Q2,2407,Demokraticna stranka upokojencev
+V3Q2,2408,Stranka mladih Slovenije
+V3Q2,2409,Nova Slovenija - krš?anska ljudska stranka
+V3Q2,2410,Stranka slovenskega naroda
+V3Q2,2411,Lipa (Linden)
+V3Q2,2412,Akacije (Acacias)
+V3Q2,2413,Lista za cisto pitno vodo
+V3Q2,2414,Lista za pravicnost in razvoj
+V3Q2,2415,Kršcansko demokratska stranka
+V3Q2,2416,Zeleni Slovenije
+V3Q2,2417,Zelena stranka
+V3Q2,2418,Zeleni progres
+V3Q2,2419,Naprej Slovenija
+V3Q2,2501,Partido Popular
+V3Q2,2502,Partido Socialista Obrero Español
+V3Q2,2503,Izquierda Unida
+V3Q2,2504,Los Verdes
+V3Q2,2505,Convergència i unió
+V3Q2,2506,Eusko Alkartasuna
+V3Q2,2507,Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco
+V3Q2,2508,Convergència Democràtica de Catalunya
+V3Q2,2509,Iniciativa per Catalunya Verds -Esquerra Unida i Alternativa
+V3Q2,2510,Europa de los pueblos
+V3Q2,2511,Coalición Europea
+V3Q2,2512,Bloque Nacionalista Galego
+V3Q2,2513,Coalición Canaria-Partido Nacionalista Canario
+V3Q2,2514,ERC
+V3Q2,2515,Nafarroa Bai
+V3Q2,2516,Unión Progreso y Democracia
+V3Q2,2517,"Chunta Aragonesista, CHA"
+V3Q2,2518,Ciudadanos-Partido de la Ciudadania
+V3Q2,2519,Coalición Andalucista
+V3Q2,2601,Vänsterpartiet
+V3Q2,2602,Sveriges Socialdemokratiska arbetarparti
+V3Q2,2603,Centerpartiet
+V3Q2,2604,Folkpartiet Liberalerna
+V3Q2,2605,Moderaterna
+V3Q2,2606,Kristdemokraterna
+V3Q2,2607,Miljöpartiet de Gröna
+V3Q2,2608,Junilistan
+V3Q2,2609,Sverigedemokraterna
+V3Q2,2610,Piratpartiet
+V3Q2,2701,Labour Party
+V3Q2,2702,Conservative Party
+V3Q2,2703,Liberal Democrats
+V3Q2,2704,"UK Independence Party, UKIP"
+V3Q2,2705,The Green party
+V3Q2,2706,"Scottish National Party, SNP"
+V3Q2,2707,Plaid Cymru (The Party of Wales)
+V3Q2,2708,"Ulster Unionist Party, UUP"
+V3Q2,2709,"Democratic Unionist Party, DUP"
+V3Q2,2710,"Sinn Fein, SF"
+V3Q7,0,No problem at all
+V3Q7,1,1
+V3Q7,2,2
+V3Q7,3,3
+V3Q7,4,4
+V3Q7,5,5
+V3Q7,6,6
+V3Q7,7,7
+V3Q7,8,8
+V3Q7,9,9
+V3Q7,10,The most serious problem
+V3Q7,999,DK (SP.)
+V3Q8b,0,Send all illegal immigrants back to the countries they came
+V3Q8b,1,1
+V3Q8b,2,2
+V3Q8b,3,3
+V3Q8b,4,4
+V3Q8b,5,5
+V3Q8b,6,6
+V3Q8b,7,7
+V3Q8b,8,8
+V3Q8b,9,9
+V3Q8b,10,Legalise all the illegal immigrants currently there
+V3Q9_1,1,AGREE STRONGLY
+V3Q9_1,2,AGREE SOMEWHAT
+V3Q9_1,3,NEITHER AGREE NOR DISAGREE
+V3Q9_1,4,DISAGREE SOMEWHAT
+V3Q9_1,5,DISAGREE STRONGLY
+V3Q9_2,1,AGREE STRONGLY
+V3Q9_2,2,AGREE SOMEWHAT
+V3Q9_2,3,NEITHER AGREE NOR DISAGREE
+V3Q9_2,4,DISAGREE SOMEWHAT
+V3Q9_2,5,DISAGREE STRONGLY
+V3Q9_3,1,AGREE STRONGLY
+V3Q9_3,2,AGREE SOMEWHAT
+V3Q9_3,3,NEITHER AGREE NOR DISAGREE
+V3Q9_3,4,DISAGREE SOMEWHAT
+V3Q9_3,5,DISAGREE STRONGLY
+V3Q10_1,0,extremely unimportant
+V3Q10_1,1,1
+V3Q10_1,2,2
+V3Q10_1,3,3
+V3Q10_1,4,4
+V3Q10_1,5,5
+V3Q10_1,6,6
+V3Q10_1,7,7
+V3Q10_1,8,8
+V3Q10_1,9,9
+V3Q10_1,10,extremely important
+V3Q10_1,999,DK (SP.)
+V3Q10_2,0,extremely unimportant
+V3Q10_2,1,1
+V3Q10_2,2,2
+V3Q10_2,3,3
+V3Q10_2,4,4
+V3Q10_2,5,5
+V3Q10_2,6,6
+V3Q10_2,7,7
+V3Q10_2,8,8
+V3Q10_2,9,9
+V3Q10_2,10,extremely important
+V3Q10_2,999,DK (SP.)
+V3Q10_3,0,extremely unimportant
+V3Q10_3,1,1
+V3Q10_3,2,2
+V3Q10_3,3,3
+V3Q10_3,4,4
+V3Q10_3,5,5
+V3Q10_3,6,6
+V3Q10_3,7,7
+V3Q10_3,8,8
+V3Q10_3,9,9
+V3Q10_3,10,extremely important
+V3Q10_3,999,DK (SP.)
+V3Q10_4,0,extremely unimportant
+V3Q10_4,1,1
+V3Q10_4,2,2
+V3Q10_4,3,3
+V3Q10_4,4,4
+V3Q10_4,5,5
+V3Q10_4,6,6
+V3Q10_4,7,7
+V3Q10_4,8,8
+V3Q10_4,9,9
+V3Q10_4,10,extremely important
+V3Q10_4,999,DK (SP.)
+V3Q10_5,0,extremely unimportant
+V3Q10_5,1,1
+V3Q10_5,2,2
+V3Q10_5,3,3
+V3Q10_5,4,4
+V3Q10_5,5,5
+V3Q10_5,6,6
+V3Q10_5,7,7
+V3Q10_5,8,8
+V3Q10_5,9,9
+V3Q10_5,10,extremely important
+V3Q10_5,999,DK (SP.)
+V3Q10_6,0,extremely unimportant
+V3Q10_6,1,1
+V3Q10_6,2,2
+V3Q10_6,3,3
+V3Q10_6,4,4
+V3Q10_6,5,5
+V3Q10_6,6,6
+V3Q10_6,7,7
+V3Q10_6,8,8
+V3Q10_6,9,9
+V3Q10_6,10,extremely important
+V3Q10_6,999,DK (SP.)
+V3Q10_7,0,extremely unimportant
+V3Q10_7,1,1
+V3Q10_7,2,2
+V3Q10_7,3,3
+V3Q10_7,4,4
+V3Q10_7,5,5
+V3Q10_7,6,6
+V3Q10_7,7,7
+V3Q10_7,8,8
+V3Q10_7,9,9
+V3Q10_7,10,extremely important
+V3Q10_7,999,DK (SP.)
+V3Q10_8,0,extremely unimportant
+V3Q10_8,1,1
+V3Q10_8,2,2
+V3Q10_8,3,3
+V3Q10_8,4,4
+V3Q10_8,5,5
+V3Q10_8,6,6
+V3Q10_8,7,7
+V3Q10_8,8,8
+V3Q10_8,9,9
+V3Q10_8,10,extremely important
+V3Q10_8,999,DK (SP.)
+V3Q11_1,1,FAVOUR STRONGLY
+V3Q11_1,2,FAVOUR SOMEWHAT
+V3Q11_1,3,NEITHER FAVOUR NOR OPPOSE
+V3Q11_1,4,OPPOSE SOMEWHAT
+V3Q11_1,5,OPPOSE STRONGLY
+V3Q11_2,1,FAVOUR STRONGLY
+V3Q11_2,2,FAVOUR SOMEWHAT
+V3Q11_2,3,NEITHER FAVOUR NOR OPPOSE
+V3Q11_2,4,OPPOSE SOMEWHAT
+V3Q11_2,5,OPPOSE STRONGLY
+V3Q12,1,FAR TOO MANY
+V3Q12,2,SOMEWHAT TOO MANY
+V3Q12,3,ABOUT THE RIGHT NUMBER
+V3Q12,4,SOMEWHAT TOO FEW
+V3Q12,5,FAR TOO FEW
+V3Q13_1,1,AGREE STRONGLY
+V3Q13_1,2,AGREE SOMEWHAT
+V3Q13_1,3,NEITHER AGREE NOR DISAGREE
+V3Q13_1,4,DISAGREE SOMEWHAT
+V3Q13_1,5,DISAGREE STRONGLY
+V3Q13_2,1,AGREE STRONGLY
+V3Q13_2,2,AGREE SOMEWHAT
+V3Q13_2,3,NEITHER AGREE NOR DISAGREE
+V3Q13_2,4,DISAGREE SOMEWHAT
+V3Q13_2,5,DISAGREE STRONGLY
+V3Q13_3,1,AGREE STRONGLY
+V3Q13_3,2,AGREE SOMEWHAT
+V3Q13_3,3,NEITHER AGREE NOR DISAGREE
+V3Q13_3,4,DISAGREE SOMEWHAT
+V3Q13_3,5,DISAGREE STRONGLY
+V3Q14,0,Immigrants have a lot to offer to NATION
+V3Q14,10,Immigrants threaten NATION culture
+V3Q15,0,Muslim immigrants have a lot to offer to [COUNTRY]'s cultura
+V3Q15,1,1
+V3Q15,2,2
+V3Q15,3,3
+V3Q15,4,4
+V3Q15,5,5
+V3Q15,6,6
+V3Q15,7,7
+V3Q15,8,8
+V3Q15,9,9
+V3Q15,10,Muslim immigrants threaten [NATIONALITY] culture
+V3Q15,999,You haven't thought much about that
+V3Q16,0,Immigrants take native's jobs
+V3Q16,1,1
+V3Q16,2,2
+V3Q16,3,3
+V3Q16,4,4
+V3Q16,5,5
+V3Q16,6,6
+V3Q16,7,7
+V3Q16,8,8
+V3Q16,9,9
+V3Q16,10,Immigrants take jobs native don't want
+V3Q16,999,You haven't thought much about that
+V3Q18,0,Immigrants contribute more in taxes
+V3Q18,10,Immigrants benefit more from health and welfare services tha
+V3Q19_1,0,Not at all
+V3Q19_1,10,Completely
+V3Q19_2,0,Not at all
+V3Q19_2,10,Completely
+V3Q19_3,0,Not at all
+V3Q19_3,10,Completely
+V3Q19_4,0,Not at all
+V3Q19_4,10,Completely
+V3Q19_5,0,Not at all
+V3Q19_5,10,Completely
+V3Q20,0,No problem at all
+V3Q20,1,1
+V3Q20,2,2
+V3Q20,3,3
+V3Q20,4,4
+V3Q20,5,5
+V3Q20,6,6
+V3Q20,7,7
+V3Q20,8,8
+V3Q20,9,9
+V3Q20,10,The most serious problem
+V3Q20,999,DK (SP.)
+V3Q21,0,We should do everything possible to combat climate change
+V3Q21,1,1
+V3Q21,2,2
+V3Q21,3,3
+V3Q21,4,4
+V3Q21,5,5
+V3Q21,6,6
+V3Q21,7,7
+V3Q21,8,8
+V3Q21,9,9
+V3Q21,10,We should do everything possible to maximize economic growth
+V3Q21,999,You haven't thought much about that
+V3Q22b_1,1,AGREE STRONGLY
+V3Q22b_1,2,AGREE SOMEWHAT
+V3Q22b_1,3,NEITHER AGREE NOR DISAGREE
+V3Q22b_1,4,DISAGREE SOMEWHAT
+V3Q22b_1,5,DISAGREE STRONGLY
+V3Q22b_2,1,AGREE STRONGLY
+V3Q22b_2,2,AGREE SOMEWHAT
+V3Q22b_2,3,NEITHER AGREE NOR DISAGREE
+V3Q22b_2,4,DISAGREE SOMEWHAT
+V3Q22b_2,5,DISAGREE STRONGLY
+V3Q23,1,INCREASE THEM GREATLY
+V3Q23,2,INCREASE THEM SOMEWHAT
+V3Q23,3,LEAVE THEM AS THEY ARE
+V3Q23,4,DECREASE THEM SOMEWHAT
+V3Q23,5,DECREASE THEM GREATLY
+V3Q24,0,Produced in ways that minimize greenhouse gas emissions
+V3Q24,10,Produced as cheaply as possible
+V3Q25,0,NATION should do as much as it can to halt climate change
+V3Q25,10,NATION should only do as much as other
+V3Q26,0,Reduce greenhouse gas emission
+V3Q26,10,Make no effort
+V3Q27_1,0,Not priority at all
+V3Q27_1,10,The highest priority
+V3Q27_2,0,Not priority at all
+V3Q27_2,10,The highest priority
+V3Q27_3,0,Not priority at all
+V3Q27_3,10,The highest priority
+V3Q27_4,0,Not priority at all
+V3Q27_4,10,The highest priority
+V3Q27_5,0,Not priority at all
+V3Q27_5,10,The highest priority
+V3Q27_6,0,Not priority at all
+V3Q27_6,10,The highest priority
+V3Q27_7,0,Not priority at all
+V3Q27_7,10,The highest priority
+V3Q27_8,0,Not priority at all
+V3Q27_8,10,The highest priority
+V3Q27_9,0,Not priority at all
+V3Q27_9,10,The highest priority
+V3Q31_1,0,Entirely at the EU level
+V3Q31_1,10,Entirely by the individual member states
+V3Q31_2,0,Entirely at the EU level
+V3Q31_2,10,Entirely by the individual member states
+V3Q31_3,0,Entirely at the EU level
+V3Q31_3,10,Entirely by the individual member states
+V3Q31_4,0,Entirely at the EU level
+V3Q31_4,10,Entirely by the individual member states
+V3Q32_1,0,Unanimous agreement of all the member states
+V3Q32_1,10,Only agreement of member states representing a large majorit
+V3Q32_2,0,Unanimous agreement of all the member states
+V3Q32_2,10,Only agreement of member states representing a large majorit
+V3Q32_3,0,Unanimous agreement of all the member states
+V3Q32_3,10,Only agreement of member states representing a large majorit
+V3Q33a,0,Not at all
+V3Q33a,10,Completely
+V3Q33b,0,Not at all
+V3Q33b,10,Completely
+V3Q34,1,NATIONALITY ONLY
+V3Q34,2,NATIONALITY AND EUROPEAN
+V3Q34,3,EUROPEAN AND NATIONALITY
+V3Q34,4,EUROPEAN ONLY
+V3Q34,5,NONE OF THE ABOVE
+V3Q35,1,VERY GOOD THING
+V3Q35,2,FAIRLY GOOD THING
+V3Q35,3,NEITHER GOOD NOR BAD
+V3Q35,4,FAIRLY BAD THING
+V3Q35,5,VERY BAD THING
+V3Q36,0,Not benefited at all
+V3Q36,1,1
+V3Q36,2,2
+V3Q36,3,3
+V3Q36,4,4
+V3Q36,5,5
+V3Q36,6,6
+V3Q36,7,7
+V3Q36,8,8
+V3Q36,9,9
+V3Q36,10,Benefited enormously
+V3Q36,999,DK (SP.)
+V3Q37,0,Not at all
+V3Q37,10,Passionately
+V3Q40,1,A GREAT DEAL OF DIFFERENCE
+V3Q40,2,SOME DIFFERENCE
+V3Q40,3,NOT MUCH DIFFERENCE
+V3Q40,4,NO DIFFERENCE AT ALL
+V3Q41,1,A GREAT DEAL
+V3Q41,2,SOMEWHAT
+V3Q41,3,NOT VERY MUCH
+V3Q41,4,NOT AT ALL
+V3Q42_1,1,AGREE STRONGLY
+V3Q42_1,2,AGREE SOMEWHAT
+V3Q42_1,3,NEITHER AGREE NOR DISAGREE
+V3Q42_1,4,DISAGREE SOMEWHAT
+V3Q42_1,5,DISAGREE STRONGLY
+V3Q42_2,1,AGREE STRONGLY
+V3Q42_2,2,AGREE SOMEWHAT
+V3Q42_2,3,NEITHER AGREE NOR DISAGREE
+V3Q42_2,4,DISAGREE SOMEWHAT
+V3Q42_2,5,DISAGREE STRONGLY
+V3Q42_3,1,AGREE STRONGLY
+V3Q42_3,2,AGREE SOMEWHAT
+V3Q42_3,3,NEITHER AGREE NOR DISAGREE
+V3Q42_3,4,DISAGREE SOMEWHAT
+V3Q42_3,5,DISAGREE STRONGLY
+V3Q43,1,EUROPEAN COMMISSION
+V3Q43,2,COUNCIL OF MINISTERS
+V3Q43,3,EUROPEAN PARLIAMENT
+V3Q43,4,EUROPEAN COURT OF AUDITORS
+V3Q44,1,It passes all EU laws
+V3Q44,2,It can dismiss the European Commission
+V3Q44,3,It can reject the budget
+V3Q44,4,It is involved in admission of MS
+V3Q45,1,EUROPEAN COMMISSION
+V3Q45,2,COUNCIL OF MINISTERS
+V3Q45,3,EUROPEAN PARLIAMENT
+V3Q45,4,EUROPEAN COURT OF AUDITORS
+V3Q46,1,They can work anywhere in EU
+V3Q46,2,They must have a university education
+V3Q46,3,They cannot bring family members
+V3Q46,4,They are subject to the Returns Directive
+V3Q47,1,The EU set basic rules
+V3Q47,2,The EU decides how many
+V3Q47,3,Work permits must be approved
+V3Q47,4,The EU plays no role in immigration
+V3Q48,1,Most illegal immigrants enter the EU legally
+V3Q48,2,Roughly 9% of EU's total population
+V3Q48,3,Because of immigration the EU total
+V3Q48,4,There are more illegal than legal
+V3Q49,1,50%
+V3Q49,2,60%
+V3Q49,3,70%
+V3Q49,4,80%
+V3Q50,1,CHINA
+V3Q50,2,THE EUROPEAN UNION
+V3Q50,3,THE UNITED STATES
+V3Q50,4,INDIA
+V3Q51,1,PRODUCED OFF-SHORE
+V3Q51,2,INCREASING 30%
+V3Q51,3,THREE TIMES OF SOLAR POWER
+V3Q51,4,CONSUMPTION ABOUT 5%
+V3Q52_1,0,Not at all important
+V3Q52_1,10,Extremely important
+V3Q52_2,0,Not at all important
+V3Q52_2,10,Extremely important
+V3Q52_3,0,Not at all important
+V3Q52_3,10,Extremely important
+V3Q52_4,0,Not at all important
+V3Q52_4,10,Extremely important
+V3Q52_5,0,Not at all important
+V3Q52_5,10,Extremely important
+V3Q52_6,0,Not at all important
+V3Q52_6,10,Extremely important
+V3Q63,1,HAVE NOT READ IT
+V3Q63,2,HAVE READ LESS THAN HALF OF IT
+V3Q63,3,HAD READ ABOUT HALF OF IT
+V3Q63,4,HAD READ MORE THAN HALF OF IT
+V3Q63,5,HAVE READ ALL
+V3Q64,0,Clearly favoured some positions over others
+V3Q64,10,Completely balanced
+V3Q65_1,0,Complete waste of time
+V3Q65_1,10,Extremely Useful
+V3Q65_2,0,Complete waste of time
+V3Q65_2,10,Extremely Useful
+V3Q65_3,0,Complete waste of time
+V3Q65_3,10,Extremely Useful
+V3Q65_4,0,Complete waste of time
+V3Q65_4,10,Extremely Useful
+V3Q65_5,0,Complete waste of time
+V3Q65_5,10,Extremely Useful
+V3Q65_6,0,Complete waste of time
+V3Q65_6,10,Extremely Useful
+V3Q66_1,0,Completely disagree
+V3Q66_1,10,Completely agree
+V3Q66_2,0,Completely disagree
+V3Q66_2,10,Completely agree
+V3Q66_3,0,Completely disagree
+V3Q66_3,10,Completely agree
+V3Q66_4,0,Completely disagree
+V3Q66_4,10,Completely agree
+V3Q66_5,0,Completely disagree
+V3Q66_5,10,Completely agree
+V3Q66_6,0,Completely disagree
+V3Q66_6,10,Completely agree
+V3Q66_7,0,Completely disagree
+V3Q66_7,10,Completely agree
+V3Q66_8,0,Completely disagree
+V3Q66_8,10,Completely agree
+V3Q66_9,0,Completely disagree
+V3Q66_9,10,Completely agree
+V3Q66_10,0,Completely disagree
+V3Q66_10,10,Completely agree
+V3Q66_11,0,Completely disagree
+V3Q66_11,10,Completely agree
+V3Q66_12,0,Completely disagree
+V3Q66_12,10,Completely agree
+V4_A1,1,Refusal by respondent/Declined to do the interview
+V4_A1,2,Refusal by other household member
+V4_A1,3,Series of broken appointments to avoid interview
+V4_A1,4,Telephone line problems (telephone only)/ no answer at the d
+V4_A1,5,Refusal by respondent to go on with the interview
+V4_B1,1,No reason given
+V4_B1,2,Generic reason:
+V4Q3,1,"Yes, I voted"
+V4Q3,2,"No,I did not vote"
+V4Q3,999,DK (SP.)
+V4Q4,18,Voted blank or nil (SP.)
+V4Q4,19,Did not vote (SP.)
+V4Q4,20,Do not remember (SP.)
+V4Q4,101,SPÖ
+V4Q4,102,ÖVP
+V4Q4,103,FPÖ
+V4Q4,104,BZÖ
+V4Q4,105,GRÜNE
+V4Q4,106,LINKE
+V4Q4,107,Hans-Peter Martin
+V4Q4,201,Christen-Democratisch en Vlaams (Christian-Democratic and Fl
+V4Q4,202,"Nieuw-Vlaamse Alliantie (New-Flemish Alliance), N-VA"
+V4Q4,203,Groen! (Green!)
+V4Q4,204,Socialistische Partij - Anders (Socialist Party – Different)
+V4Q4,205,"Sociaal-Liberale Partij (Social Liberal Party), SLP"
+V4Q4,206,"Vlaams Belang (Flemish Interest), VB"
+V4Q4,207,Open Vlaamse Liberalen en Democraten (Open Flemish Liberals
+V4Q4,208,Lijst Dedecker (Dedecker list)
+V4Q4,209,"Partij van de Arbeid (Workers' Party of Belgium), PvdA"
+V4Q4,210,"Parti Socialiste (Socialist Party), PS"
+V4Q4,211,"Mouvement Réformateur (Reformist Movement), MR"
+V4Q4,212,"Centre Démocrate Humaniste (Humanist Democratic Centre), CDh"
+V4Q4,213,Ecolo (Ecology)
+V4Q4,214,"Front National (National Front), FN"
+V4Q4,215,"Parti du Travail de Belgique (Workers' Party of Belgium), PT"
+V4Q4,301,BSP / Coalition for Bulgaria
+V4Q4,302,NDSV
+V4Q4,303,DPS
+V4Q4,304,Attack
+V4Q4,305,The Blue coalition / SDS / ODS
+V4Q4,306,GERB
+V4Q4,307,The New Time
+V4Q4,308,Euroroma
+V4Q4,311,RZS
+V4Q4,401,AKEL
+V4Q4,402,DISY
+V4Q4,403,DIKO
+V4Q4,404,EDEK
+V4Q4,405,EK
+V4Q4,406,KOP
+V4Q4,501,CSSD
+V4Q4,502,KDU-CSL
+V4Q4,503,KSCM
+V4Q4,504,ODS
+V4Q4,505,SZ
+V4Q4,601,"Socialdemokratiet (Social Democrats), A"
+V4Q4,602,"Det Radikale Venstre (Radical Liberal Party), B"
+V4Q4,603,"Det Konservative Folkeparti (Conservative People's Party), C"
+V4Q4,604,"Socialistisk Folkeparti (Socialist People's Party), SF"
+V4Q4,605,"Ny/Liberal Alliance (New/Liberal Alliance), I"
+V4Q4,606,"Junibevægelsen (June Movement), J"
+V4Q4,607,"Folkebevægelsen mod EU (People's Movement against the EU), N"
+V4Q4,608,"Dansk Folkeparti (Danish People's Party), O"
+V4Q4,609,"Venstre - Danmarks liberale parti (Venstre, Denmark's Libera"
+V4Q4,701,Reformierakond (Estonian Reform Party)
+V4Q4,702,"Keskerakond (Centre Party of Estonia), KESK"
+V4Q4,703,Isamaa ja Res Publica Liit (Union of Pro Patria and Res Publ
+V4Q4,704,"Sotsiaaldemokraatlik Erakond (Social Democratic Party), SDE"
+V4Q4,705,"Erakond Eestimaa Rohelised (Estonian Greens), EER"
+V4Q4,706,"Eestimaa Rahvaliit (People's Union of Estonia), ER"
+V4Q4,707,"Eesti Kristlikud Demokraadid (Estonian Christian Democrats),"
+V4Q4,708,"Eesti Iseseisvuspartei (Estonian Independence Party), EI"
+V4Q4,709,"Vene Erakond Eestis (Russian Party in Estonia), VEE"
+V4Q4,710,"Eestimaa Ühendatud Vasakpartei (Estonian United Left Party),"
+V4Q4,801,"Suomen Keskusta (Centre Party), KESK"
+V4Q4,802,"Kansallinen Kokoomus (National Coalition Party), KOK"
+V4Q4,803,Suomen Sosialidemokraattinen Puolue (Social Democratic Party
+V4Q4,804,"Vasemmistoliitto (Left Alliance), VAS"
+V4Q4,805,"Vihreä liitto (Green League), VIHR                         "
+V4Q4,806,"Ruotsalainen kansanpuolue (Swedish People's Party), RKP     "
+V4Q4,807,"Kristillisdemokraatit (Christian Democrats in Finland), KD  "
+V4Q4,808,"Perussuomalaiset (True Finns), PS"
+V4Q4,901,"Lutte ouvrière (Workers' struggle), LO"
+V4Q4,902,"Nouveau Parti anticapitaliste (New Anticapitalist Party), NP"
+V4Q4,903,Parti communiste/Parti de gauche (Communist Party/Party of t
+V4Q4,904,"Parti socialiste (Socialist Party), PS"
+V4Q4,905,Europe écologie (Europe Ecology)
+V4Q4,906,"Mouvement démocrate (Democratic Movement), MODEM"
+V4Q4,907,Union pour un Mouvement Populaire - Nouveau Centre (Union fo
+V4Q4,908,"Debout la République (Arise the Republic), DLR"
+V4Q4,909,“Libertas” - Mouvement pour la France (Movement for France)
+V4Q4,910,"Front national (National Front), FN"
+V4Q4,996,Üksikkandidaat (Independent candidate)
+V4Q4,997,Refusal (SP.)
+V4Q4,998,No answer (SP.)
+V4Q4,1001,Christlich Demokratische Union/Christlich-Soziale Union (Chr
+V4Q4,1002,Sozialdemokratische Partei Deutschlands (Social Democratic P
+V4Q4,1003,"Freie Demokratische Partei (Free Democratic Party), FDP"
+V4Q4,1004,Die Linke (The Left)
+V4Q4,1005,Bündnis 90 / Die Grünen (Alliance '90/The Greens)
+V4Q4,1006,"Republikaner (Republicans), REP"
+V4Q4,1007,"Deutsche Volksunion (German People's Union), DVU"
+V4Q4,1008,Nationaldemokratische Partei Deutschlands (National Democrat
+V4Q4,1009,"Freie Wähler (Free Voter), FW"
+V4Q4,1101,ND
+V4Q4,1102,PASOK
+V4Q4,1103,KKE
+V4Q4,1104,SYRIZA
+V4Q4,1105,LAOS
+V4Q4,1106,OP
+V4Q4,1107,EK
+V4Q4,1108,OAKKE
+V4Q4,1109,ASKE
+V4Q4,1110,EO
+V4Q4,1111,ANTARSIA
+V4Q4,1112,DA
+V4Q4,1113,Drasis
+V4Q4,1114,EES-OT
+V4Q4,1115,Chrysi Avgi
+V4Q4,1116,KEK
+V4Q4,1201,"Magyar Szocialista Párt (Hungarian Socialist Party), MSZP"
+V4Q4,1202,Magyar Polgári Szövetség és Kereszténydemokrata Néppárt közö
+V4Q4,1203,"Szabad Demokraták Szövetsége (Alliance of Free Democrats), S"
+V4Q4,1204,"Magyar Demokrata Fórum (Hungarian Democratic Forum), MDF"
+V4Q4,1205,Magyar Igazság és Élet Pártja (Hungarian Truth and Life Part
+V4Q4,1206,"Magyar Kommunista Munkáspárt (Communist Worker's Party), Mun"
+V4Q4,1207,"MCP Roma Összefogás Párt (Gipsy Union Party), MCF"
+V4Q4,1208,"Jobbik Magyarországért Mozgalom (Jobbik, The Movement For a"
+V4Q4,1209,Humanista Párt/ Lehet Más a Politika (Humanist Party/The pol
+V4Q4,1210,Centrum Összefogás Magyarországért és Magyarországi Szociáld
+V4Q4,1211,"Független Kisgazda-, Földmunkás és Polgári Párt (Independent"
+V4Q4,1212,"Független Kisgazda-, Nemzeti Egység Párt (Independent Smallh"
+V4Q4,1213,Magyar Republikánus Politikai Párt (Hungarian Republican Par
+V4Q4,1214,"Szociáldemokrata Párt (Social Democratic Party), SZDP"
+V4Q4,1215,"Magyar Szociális Zöld Párt (Hungarian Social Green Party), M"
+V4Q4,1216,Magyarországi Kisebbségek Pártja (Hungarian Ethnic Minority
+V4Q4,1217,"Internetes Demokrácia Pártja (Internet Democracy Party), IDE"
+V4Q4,1218,Megújult Magyarországi Roma Összefogás Párt (Renewed Hungari
+V4Q4,1219,Szent Koronát Szolgálók Szövetsége (Alliance of Saint Crown
+V4Q4,1220,"Zöldek Pártja (Green Party), ZÖLDEK"
+V4Q4,1301,"Fianna Fail, FF"
+V4Q4,1302,"Fianna Gael, FG"
+V4Q4,1303,"Labour, LP"
+V4Q4,1304,"Green Party, GP"
+V4Q4,1305,"Sinn Fein, SF"
+V4Q4,1306,Libertas
+V4Q4,1401,Italia dei Valori – Lista Di Pietro (Italy of Values – Di Pi
+V4Q4,1402,"La Destra - Fiamma Tricolore (The Right - Tricolour Flame),"
+V4Q4,1403,"Lega Nord (Northern League), LN"
+V4Q4,1404,"Rifondazione Comunista (Communist Refoundation Party), PRC"
+V4Q4,1405,Partito dei Comunisti Italiani (Party of Italian Communists)
+V4Q4,1406,Verdi (Greens)
+V4Q4,1407,"Partito Democratico (Democratic Party), PD"
+V4Q4,1408,"Partito Socialista (Socialist Party), PS"
+V4Q4,1409,"Il Popolo della Libertà (The People of Freedom), PDL"
+V4Q4,1410,"Partito Comunista dei Lavoratori (Workers' Communist Party),"
+V4Q4,1411,"Unione di Centro (Union of Centre), UDC"
+V4Q4,1412,"Sinistra e Libertà (Left and Freedom), SL"
+V4Q4,1501,Jaunais Laiks (JL)
+V4Q4,1502,Tautas partija
+V4Q4,1503,Apvieniba “Par cilveka tiesibam vienota Latvija” (PCTVL)
+V4Q4,1504,Politisko partiju apvieniba „Saskanas Centrs” (SC)
+V4Q4,1505,Apvieniba “Tevzemei un Brivibai”/LNNK
+V4Q4,1506,Latvijas Pirma Partija/Latvijas Celš (LPP/LC)
+V4Q4,1507,Latvijas Socialdemokratiska Stradnieku Partija
+V4Q4,1508,Zalo un Zemnieku savieniba
+V4Q4,1509,Latvijas Socialistiska partija
+V4Q4,1510,Politiska patriotiska apvieniba DZIMTENE (PAR DZIMTENI)
+V4Q4,1511,„Pilsoniska savieniba
+V4Q4,1512,„Sabiedriba citai politikai
+V4Q4,1513,„Jaunie demokrati”/ demokrati.lv
+V4Q4,1514,„Visu Latvijai!”
+V4Q4,1601,"Darbo partija (Labour Party), DP"
+V4Q4,1602,Krikšcioniu konservatoriu socialine sajunga (Christian Conse
+V4Q4,1603,"Leiboristu partija (Labour Party), LP"
+V4Q4,1604,"Liberalu ir centro sajunga (Liberal and Centre Union), LiCS"
+V4Q4,1605,Lietuvos centro partija (Lithuanian Centre Party)
+V4Q4,1606,Lietuvos lenku rinkimu akcija (Electoral Action of Poles in
+V4Q4,1607,Lietuvos Respublikos liberalu sajudis (Liberals' Movement of
+V4Q4,1608,Lietuvos socialdemokratu partija (Social Democratic Party of
+V4Q4,1609,Lietuvos socialdemokratu sajunga (Social Democratic Union of
+V4Q4,1610,Lietuvos valstieciu liaudininku sajunga (Union of Lithuanian
+V4Q4,1611,Partija „Tvarka ir teisingumas“-Liberaldemokratu partija (Or
+V4Q4,1612,Pilietines demokratijos partija (Party of Civic Democracy)
+V4Q4,1613,Politine partija 'Frontas' (Political party Frontas)
+V4Q4,1614,Tautine partija Lietuvos kelias' (National party The way of
+V4Q4,1615,Tautos prisikelimo partija (Rising Nation Party)
+V4Q4,1616,Tevynes sajunga - Lietuvos krikšcionys demokratai (Homeland
+V4Q4,1618,Žemaiciu partija (Samogitians Party)
+V4Q4,1701,"Kommunistesch Partei Lëtzebuerg (Communist Party), KPL"
+V4Q4,1702,Déi Gréng (Green party)
+V4Q4,1703,Alternativ Demokratesch Reformpartei (Alternative Democratic
+V4Q4,1704,Lëtzebuerger Sozialistesch Aarbechterpartei (Social Labour p
+V4Q4,1705,"Demokratesch Partei (Democratic Party), DP"
+V4Q4,1706,Déi Lénk (Left party)
+V4Q4,1707,Chrëschtlech-Sozial Volkspartei (Christian Social People's P
+V4Q4,1708,Biergerlëscht (Citiziens List)
+V4Q4,1801,"Il-Partit Nazzjonalista (Nationalist Party), PN"
+V4Q4,1802,"Il-Partit Laburista (Labour Party), PL"
+V4Q4,1803,"Alternattiva Demokratika (Democratic Alternative), AD"
+V4Q4,1804,"Alleanza Nazzjonali (National Alliance), AN"
+V4Q4,1901,"Christen-Democratisch Appèl (Christian Democratic Appeal), C"
+V4Q4,1902,"Partij van de Arbeid (Labour Party), PVDA"
+V4Q4,1903,"Socialistische Partij (Socialist Party), SP"
+V4Q4,1904,Volkspartij voor Vrijheid en Democratie (People's Party for
+V4Q4,1905,"Groen Links (Green Left), GL"
+V4Q4,1906,"Partij voor de Vrijheid (Party for Freedom), PVV"
+V4Q4,1907,Christen Unie/Staatskundig Gereformeerde Partij (Christian U
+V4Q4,1908,"Democraten 66 (Democrats 66), D'66"
+V4Q4,1909,"Partij voor de Dieren (Party for Animals), PvdD"
+V4Q4,1910,Partij Newropeans
+V4Q4,2001,NAPRZÓD POLSKO – PIAST! (Agrarian)
+V4Q4,2002,Koalicyjny Komitet Wyborczy PdP - CentroLewica (Coalition Pd
+V4Q4,2003,Koalicyjny Komitet Wyborczy Sojusz Lewicy Demokratycznej – U
+V4Q4,2005,Libertas
+V4Q4,2008,"Platforma Obywatelska (Civic Platform), PO"
+V4Q4,2009,"Polska Partia Pracy (Polish Labour Party), PPP"
+V4Q4,2010,"Polska Partia Socjalistyczna (Polish Socialist Party), PPS"
+V4Q4,2012,"Polskie Stronnictwo Ludowe (Polish People's Party), PSL"
+V4Q4,2013,"Prawica Rzeczypospolitej (Republic Right Party), PRz"
+V4Q4,2014,"Prawo i Sprawiedliwosc (Law and Justice), PiS"
+V4Q4,2015,Samoobrona Rzeczpospolitej Polskiej (Self-Defense of the Rep
+V4Q4,2016,"Unia Polityki Realnej (Union of Real Politics), UPR"
+V4Q4,2101,"Bloco de Esquerda (Left Block), BE"
+V4Q4,2102,Centro Democrático Social /Partido Popular (Social Democrati
+V4Q4,2103,Coligação Democrática Unitária- Partido Comunista Português-
+V4Q4,2104,"Partido Socialista (Socialist Party), PS"
+V4Q4,2105,"Partido Social Democrata (Social Democratic Party), PSD"
+V4Q4,2201,"Partidul Democrat-Liberal (Democratic-Liberal Party), PD-L"
+V4Q4,2202,Alianta Electorala Partidul Social Democrat-Partidul Conserv
+V4Q4,2203,"Partidul National Liberal (National Liberal Party), PNL"
+V4Q4,2204,Uniunea Democrata a Maghiarilor din România (Democratic Alli
+V4Q4,2205,Partidul National Taranesc-Crestin Democrat (Christian-Democ
+V4Q4,2206,Partidul Noua Generatie-Crestin si Democrat (New Generation
+V4Q4,2207,"Partidul România Mare (Great Romania Party), PRM"
+V4Q4,2301,SMER - sociálna demokracia (Direction - Social Democracy)
+V4Q4,2302,Slovenská demokratická a krestanská únia - Demokratická stra
+V4Q4,2303,"Slovenská národná strana (Slovak national party), SNS"
+V4Q4,2304,Krestanskodemokratické hnutie (Christian Democratic Movement
+V4Q4,2305,"Strana madarskej koalície (Party of Hungarian Coalition), SK"
+V4Q4,2306,Ludová strana - Hnutie za demokratické Slovensko  (People's
+V4Q4,2307,"Strana zelených (Green Party), SZ"
+V4Q4,2308,"Komunistická strana Slovenska (Communist Party of Slovakia),"
+V4Q4,2309,"Slobodné Fórum (Free Forum), SF"
+V4Q4,2310,Konzervatívni demokrati Slovenska - Obcianska konzervatívna
+V4Q4,2311,"Sloboda a Solidarita (Freedom and Solidarity), SAS"
+V4Q4,2312,"Demokratická strana (Democratic Party), DS"
+V4Q4,2313,"Obciansko-liberálna strana (Civic-Liberal Party), LIGA"
+V4Q4,2314,"Strana demokratickej lavice (Party of Democratic Left), SDL"
+V4Q4,2315,"Agrárna strana vidieka (Agrarian Party), ASV"
+V4Q4,2316,"Rómska iniciatíva Slovenska (Roma Initiative of Slovakia), R"
+V4Q4,2317,MISIA 21 - Hnutie krestanskej solidarity (Mission 21 - Movem
+V4Q4,2401,"Slovenska demokratska stranka (Slovenian Democratic party),"
+V4Q4,2402,Liberalna demokracija Slovenije (Liberal democracy of Sloven
+V4Q4,2403,"Slovenska ljudska stranka (Slovenian People's Party), SLS"
+V4Q4,2404,"Socialni demokrati (Social democrats), SD"
+V4Q4,2405,ZARES - Nova politika (New Politics)
+V4Q4,2406,"Slovenska nacionalna stranka (Slovenian national party), SNS"
+V4Q4,2407,Demokraticna stranka upokojencev (Democratic party of pensio
+V4Q4,2408,Stranka mladih Slovenije (Democratic party of pensioners of
+V4Q4,2409,Nova Slovenija - kršcanska ljudska stranka (New Slovenia - C
+V4Q4,2501,"Partido Popular (People's Party), PP"
+V4Q4,2502,Partido Socialista Obrero Español (Spanish Socialist Workers
+V4Q4,2503,"Izquierda Unida (United Left), IU"
+V4Q4,2504,Los Verdes (The Greens)
+V4Q4,2505,"Convergència i unió (Convergence and Union), CIU"
+V4Q4,2506,"Eusko Alkartasuna, EA"
+V4Q4,2507,Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco (Basque N
+V4Q4,2508,Convergència Democràtica de Catalunya (Democratic Convergenc
+V4Q4,2509,Iniciativa per Catalunya Verds -Esquerra Unida i Alternativa
+V4Q4,2510,Europa de los pueblos (Europe of the peoples)
+V4Q4,2511,Coalición Europea (European coalition)
+V4Q4,2601,"Vänsterpartiet (Left Party), V"
+V4Q4,2602,"Socialdemokraterna (Social Democratic Party), S"
+V4Q4,2603,"Centerpartiet (Centre Party), C"
+V4Q4,2604,"Folkpartiet Liberalerna (Liberal Party), FP"
+V4Q4,2605,"Moderata Samlingspartiet (Moderate Party), M"
+V4Q4,2606,"Kristdemokraterna (Christian Democrats), KD"
+V4Q4,2607,"Miljöpartiet de Gröna (Green Party), MP"
+V4Q4,2608,"Junilistan (June List), JL"
+V4Q4,2609,"Sverigedemokraterna (Sweden Democrats), SD"
+V4Q4,2610,"Piratpartiet (Pirate party), PP"
+V4Q4,2701,Labour Party
+V4Q4,2702,Conservative Party
+V4Q4,2703,Liberal Democrats
+V4Q4,2704,"UK Independence Party, UKIP"
+V4Q4,2705,The Green party
+V4Q4,2706,"Scottish National Party, SNP"
+V4Q4,2707,Plaid Cymru (The Party of Wales)
+V4Q4,2708,"""Democratic Unionist Party, DUP"""
+V4Q5,18,Would have voted blank or nil (SP.)
+V4Q5,19,Would not vote (SP.)
+V4Q5,101,SPÖ
+V4Q5,102,ÖVP
+V4Q5,103,FPÖ
+V4Q5,104,BZÖ
+V4Q5,105,GRÜNE
+V4Q5,106,LINKE
+V4Q5,107,Hans-Peter Martin
+V4Q5,201,Christen-Democratisch en Vlaams (Christian-Democratic and Fl
+V4Q5,202,"Nieuw-Vlaamse Alliantie (New-Flemish Alliance), N-VA"
+V4Q5,203,Groen! (Green!)
+V4Q5,204,Socialistische Partij - Anders (Socialist Party – Different)
+V4Q5,205,"Sociaal-Liberale Partij (Social Liberal Party), SLP"
+V4Q5,206,"Vlaams Belang (Flemish Interest), VB"
+V4Q5,207,Open Vlaamse Liberalen en Democraten (Open Flemish Liberals
+V4Q5,208,Lijst Dedecker (Dedecker list)
+V4Q5,209,"Partij van de Arbeid (Workers' Party of Belgium), PvdA"
+V4Q5,210,"Parti Socialiste (Socialist Party), PS"
+V4Q5,211,"Mouvement Réformateur (Reformist Movement), MR"
+V4Q5,212,"Centre Démocrate Humaniste (Humanist Democratic Centre), CDh"
+V4Q5,213,Ecolo (Ecology)
+V4Q5,214,"Front National (National Front), FN"
+V4Q5,215,"Parti du Travail de Belgique (Workers' Party of Belgium), PT"
+V4Q5,301,BSP / Coalition for Bulgaria
+V4Q5,302,NDSV
+V4Q5,303,DPS
+V4Q5,304,Attack
+V4Q5,305,The Blue coalition / SDS / ODS
+V4Q5,306,GERB
+V4Q5,307,The New Time
+V4Q5,308,Euroroma
+V4Q5,311,RZS
+V4Q5,401,AKEL
+V4Q5,402,DISY
+V4Q5,403,DIKO
+V4Q5,404,EDEK
+V4Q5,405,EK
+V4Q5,406,KOP
+V4Q5,501,CSSD
+V4Q5,502,KDU-CSL
+V4Q5,503,KSCM
+V4Q5,504,ODS
+V4Q5,505,SZ
+V4Q5,601,"Socialdemokratiet (Social Democrats), A"
+V4Q5,602,"Det Radikale Venstre (Radical Liberal Party), B"
+V4Q5,603,"Det Konservative Folkeparti (Conservative People's Party), C"
+V4Q5,604,"Socialistisk Folkeparti (Socialist People's Party), SF"
+V4Q5,605,"Ny/Liberal Alliance (New/Liberal Alliance), I"
+V4Q5,606,"Junibevægelsen (June Movement), J"
+V4Q5,607,"Folkebevægelsen mod EU (People's Movement against the EU), N"
+V4Q5,608,"Dansk Folkeparti (Danish People's Party), O"
+V4Q5,609,"Venstre - Danmarks liberale parti (Venstre, Denmark's Libera"
+V4Q5,701,Reformierakond (Estonian Reform Party)
+V4Q5,702,"Keskerakond (Centre Party of Estonia), KESK"
+V4Q5,703,Isamaa ja Res Publica Liit (Union of Pro Patria and Res Publ
+V4Q5,704,"Sotsiaaldemokraatlik Erakond (Social Democratic Party), SDE"
+V4Q5,705,"Erakond Eestimaa Rohelised (Estonian Greens), EER"
+V4Q5,706,"Eestimaa Rahvaliit (People's Union of Estonia), ER"
+V4Q5,707,"Eesti Kristlikud Demokraadid (Estonian Christian Democrats),"
+V4Q5,708,"Eesti Iseseisvuspartei (Estonian Independence Party), EI"
+V4Q5,709,"Vene Erakond Eestis (Russian Party in Estonia), VEE"
+V4Q5,710,"Eestimaa Ühendatud Vasakpartei (Estonian United Left Party),"
+V4Q5,801,"Suomen Keskusta (Centre Party), KESK"
+V4Q5,802,"Kansallinen Kokoomus (National Coalition Party), KOK"
+V4Q5,803,Suomen Sosialidemokraattinen Puolue (Social Democratic Party
+V4Q5,804,"Vasemmistoliitto (Left Alliance), VAS"
+V4Q5,805,"Vihreä liitto (Green League), VIHR                         "
+V4Q5,806,"Ruotsalainen kansanpuolue (Swedish People's Party), RKP     "
+V4Q5,807,"Kristillisdemokraatit (Christian Democrats in Finland), KD  "
+V4Q5,808,"Perussuomalaiset (True Finns), PS"
+V4Q5,901,"Lutte ouvrière (Workers' struggle), LO"
+V4Q5,902,"Nouveau Parti anticapitaliste (New Anticapitalist Party), NP"
+V4Q5,903,Parti communiste/Parti de gauche (Communist Party/Party of t
+V4Q5,904,"Parti socialiste (Socialist Party), PS"
+V4Q5,905,Europe écologie (Europe Ecology)
+V4Q5,906,"Mouvement démocrate (Democratic Movement), MODEM"
+V4Q5,907,Union pour un Mouvement Populaire - Nouveau Centre (Union fo
+V4Q5,908,"Debout la République (Arise the Republic), DLR"
+V4Q5,909,“Libertas” - Mouvement pour la France (Movement for France)
+V4Q5,910,"Front national (National Front), FN"
+V4Q5,996,Üksikkandidaat (Independent candidate)
+V4Q5,997,Refusal (SP.)
+V4Q5,998,No answer (SP.)
+V4Q5,1001,Christlich Demokratische Union/Christlich-Soziale Union (Chr
+V4Q5,1002,Sozialdemokratische Partei Deutschlands (Social Democratic P
+V4Q5,1003,"Freie Demokratische Partei (Free Democratic Party), FDP"
+V4Q5,1004,Die Linke (The Left)
+V4Q5,1005,Bündnis 90 / Die Grünen (Alliance '90/The Greens)
+V4Q5,1006,"Republikaner (Republicans), REP"
+V4Q5,1007,"Deutsche Volksunion (German People's Union), DVU"
+V4Q5,1008,Nationaldemokratische Partei Deutschlands (National Democrat
+V4Q5,1009,"Freie Wähler (Free Voter), FW"
+V4Q5,1101,ND
+V4Q5,1102,PASOK
+V4Q5,1103,KKE
+V4Q5,1104,SYRIZA
+V4Q5,1105,LAOS
+V4Q5,1106,OP
+V4Q5,1107,EK
+V4Q5,1108,OAKKE
+V4Q5,1109,ASKE
+V4Q5,1110,EO
+V4Q5,1111,ANTARSIA
+V4Q5,1112,DA
+V4Q5,1113,Drasis
+V4Q5,1114,EES-OT
+V4Q5,1115,Chrysi Avgi
+V4Q5,1116,KEK
+V4Q5,1201,"Magyar Szocialista Párt (Hungarian Socialist Party), MSZP"
+V4Q5,1202,Magyar Polgári Szövetség és Kereszténydemokrata Néppárt közö
+V4Q5,1203,"Szabad Demokraták Szövetsége (Alliance of Free Democrats), S"
+V4Q5,1204,"Magyar Demokrata Fórum (Hungarian Democratic Forum), MDF"
+V4Q5,1205,Magyar Igazság és Élet Pártja (Hungarian Truth and Life Part
+V4Q5,1206,"Magyar Kommunista Munkáspárt (Communist Worker's Party), Mun"
+V4Q5,1207,"MCP Roma Összefogás Párt (Gipsy Union Party), MCF"
+V4Q5,1208,"Jobbik Magyarországért Mozgalom (Jobbik, The Movement For a"
+V4Q5,1209,Humanista Párt/ Lehet Más a Politika (Humanist Party/The pol
+V4Q5,1210,Centrum Összefogás Magyarországért és Magyarországi Szociáld
+V4Q5,1211,"Független Kisgazda-, Földmunkás és Polgári Párt (Independent"
+V4Q5,1212,"Független Kisgazda-, Nemzeti Egység Párt (Independent Smallh"
+V4Q5,1213,Magyar Republikánus Politikai Párt (Hungarian Republican Par
+V4Q5,1214,"Szociáldemokrata Párt (Social Democratic Party), SZDP"
+V4Q5,1215,"Magyar Szociális Zöld Párt (Hungarian Social Green Party), M"
+V4Q5,1216,Magyarországi Kisebbségek Pártja (Hungarian Ethnic Minority
+V4Q5,1217,"Internetes Demokrácia Pártja (Internet Democracy Party), IDE"
+V4Q5,1218,Megújult Magyarországi Roma Összefogás Párt (Renewed Hungari
+V4Q5,1219,Szent Koronát Szolgálók Szövetsége (Alliance of Saint Crown
+V4Q5,1220,"Zöldek Pártja (Green Party), ZÖLDEK"
+V4Q5,1301,"Fianna Fail, FF"
+V4Q5,1302,"Fianna Gael, FG"
+V4Q5,1303,"Labour, LP"
+V4Q5,1304,"Green Party, GP"
+V4Q5,1305,"Sinn Fein, SF"
+V4Q5,1306,Libertas
+V4Q5,1401,Italia dei Valori – Lista Di Pietro (Italy of Values – Di Pi
+V4Q5,1402,"La Destra - Fiamma Tricolore (The Right - Tricolour Flame),"
+V4Q5,1403,"Lega Nord (Northern League), LN"
+V4Q5,1404,"Rifondazione Comunista (Communist Refoundation Party), PRC"
+V4Q5,1405,Partito dei Comunisti Italiani (Party of Italian Communists)
+V4Q5,1406,Verdi (Greens)
+V4Q5,1407,"Partito Democratico (Democratic Party), PD"
+V4Q5,1408,"Partito Socialista (Socialist Party), PS"
+V4Q5,1409,"Il Popolo della Libertà (The People of Freedom), PDL"
+V4Q5,1410,"Partito Comunista dei Lavoratori (Workers' Communist Party),"
+V4Q5,1411,"Unione di Centro (Union of Centre), UDC"
+V4Q5,1412,"Sinistra e Libertà (Left and Freedom), SL"
+V4Q5,1501,Jaunais Laiks (JL)
+V4Q5,1502,Tautas partija
+V4Q5,1503,Apvieniba “Par cilveka tiesibam vienota Latvija” (PCTVL)
+V4Q5,1504,Politisko partiju apvieniba „Saskanas Centrs” (SC)
+V4Q5,1505,Apvieniba “Tevzemei un Brivibai”/LNNK
+V4Q5,1506,Latvijas Pirma Partija/Latvijas Celš (LPP/LC)
+V4Q5,1507,Latvijas Socialdemokratiska Stradnieku Partija
+V4Q5,1508,Zalo un Zemnieku savieniba
+V4Q5,1509,Latvijas Socialistiska partija
+V4Q5,1510,Politiska patriotiska apvieniba DZIMTENE (PAR DZIMTENI)
+V4Q5,1511,„Pilsoniska savieniba
+V4Q5,1512,„Sabiedriba citai politikai
+V4Q5,1513,„Jaunie demokrati”/ demokrati.lv
+V4Q5,1514,„Visu Latvijai!”
+V4Q5,1601,"Darbo partija (Labour Party), DP"
+V4Q5,1602,Krikšcioniu konservatoriu socialine sajunga (Christian Conse
+V4Q5,1603,"Leiboristu partija (Labour Party), LP"
+V4Q5,1604,"Liberalu ir centro sajunga (Liberal and Centre Union), LiCS"
+V4Q5,1605,Lietuvos centro partija (Lithuanian Centre Party)
+V4Q5,1606,Lietuvos lenku rinkimu akcija (Electoral Action of Poles in
+V4Q5,1607,Lietuvos Respublikos liberalu sajudis (Liberals' Movement of
+V4Q5,1608,Lietuvos socialdemokratu partija (Social Democratic Party of
+V4Q5,1609,Lietuvos socialdemokratu sajunga (Social Democratic Union of
+V4Q5,1610,Lietuvos valstieciu liaudininku sajunga (Union of Lithuanian
+V4Q5,1611,Partija „Tvarka ir teisingumas“-Liberaldemokratu partija (Or
+V4Q5,1612,Pilietines demokratijos partija (Party of Civic Democracy)
+V4Q5,1613,Politine partija 'Frontas' (Political party Frontas)
+V4Q5,1614,Tautine partija 'Lietuvos kelias' (National party The way of
+V4Q5,1615,Tautos prisikelimo partija (Rising Nation Party)
+V4Q5,1616,Tevynes sajunga - Lietuvos krikšcionys demokratai (Homeland
+V4Q5,1618,Žemaiciu partija (Samogitians Party)
+V4Q5,1701,"Kommunistesch Partei Lëtzebuerg (Communist Party), KPL"
+V4Q5,1702,Déi Gréng (Green party)
+V4Q5,1703,Alternativ Demokratesch Reformpartei (Alternative Democratic
+V4Q5,1704,Lëtzebuerger Sozialistesch Aarbechterpartei (Social Labour p
+V4Q5,1705,"Demokratesch Partei (Democratic Party), DP"
+V4Q5,1706,Déi Lénk (Left party)
+V4Q5,1707,Chrëschtlech-Sozial Volkspartei (Christian Social People's P
+V4Q5,1708,Biergerlëscht (Citiziens List)
+V4Q5,1801,"Il-Partit Nazzjonalista (Nationalist Party), PN"
+V4Q5,1802,"Il-Partit Laburista (Labour Party), PL"
+V4Q5,1803,"Alternattiva Demokratika (Democratic Alternative), AD"
+V4Q5,1804,"Alleanza Nazzjonali (National Alliance), AN"
+V4Q5,1901,"Christen-Democratisch Appèl (Christian Democratic Appeal), C"
+V4Q5,1902,"Partij van de Arbeid (Labour Party), PVDA"
+V4Q5,1903,"Socialistische Partij (Socialist Party), SP"
+V4Q5,1904,Volkspartij voor Vrijheid en Democratie (People's Party for
+V4Q5,1905,"Groen Links (Green Left), GL"
+V4Q5,1906,"Partij voor de Vrijheid (Party for Freedom), PVV"
+V4Q5,1907,Christen Unie/Staatskundig Gereformeerde Partij (Christian U
+V4Q5,1908,"Democraten 66 (Democrats 66), D'66"
+V4Q5,1909,"Partij voor de Dieren (Party for Animals), PvdD"
+V4Q5,1910,Partij Newropeans
+V4Q5,2001,NAPRZÓD POLSKO – PIAST! (Agrarian)
+V4Q5,2002,Koalicyjny Komitet Wyborczy PdP - CentroLewica (Coalition Pd
+V4Q5,2003,Koalicyjny Komitet Wyborczy Sojusz Lewicy Demokratycznej – U
+V4Q5,2005,Libertas
+V4Q5,2008,"Platforma Obywatelska (Civic Platform), PO"
+V4Q5,2009,"Polska Partia Pracy (Polish Labour Party), PPP"
+V4Q5,2010,"Polska Partia Socjalistyczna (Polish Socialist Party), PPS"
+V4Q5,2012,"Polskie Stronnictwo Ludowe (Polish People's Party), PSL"
+V4Q5,2013,"Prawica Rzeczypospolitej (Republic Right Party), PRz"
+V4Q5,2014,"Prawo i Sprawiedliwosc (Law and Justice), PiS"
+V4Q5,2015,Samoobrona Rzeczpospolitej Polskiej (Self-Defense of the Rep
+V4Q5,2016,"Unia Polityki Realnej (Union of Real Politics), UPR"
+V4Q5,2101,"Bloco de Esquerda (Left Block), BE"
+V4Q5,2102,Centro Democrático Social /Partido Popular (Social Democrati
+V4Q5,2103,Coligação Democrática Unitária- Partido Comunista Português-
+V4Q5,2104,"Partido Socialista (Socialist Party), PS"
+V4Q5,2105,"Partido Social Democrata (Social Democratic Party), PSD"
+V4Q5,2201,"Partidul Democrat-Liberal (Democratic-Liberal Party), PD-L"
+V4Q5,2202,Alianta Electorala Partidul Social Democrat-Partidul Conserv
+V4Q5,2203,"Partidul National Liberal (National Liberal Party), PNL"
+V4Q5,2204,Uniunea Democrata a Maghiarilor din România (Democratic Alli
+V4Q5,2205,Partidul National Taranesc-Crestin Democrat (Christian-Democ
+V4Q5,2206,Partidul Noua Generatie-Crestin si Democrat (New Generation
+V4Q5,2207,"Partidul România Mare (Great Romania Party), PRM"
+V4Q5,2301,SMER - sociálna demokracia (Direction - Social Democracy)
+V4Q5,2302,Slovenská demokratická a krestanská únia - Demokratická stra
+V4Q5,2303,"Slovenská národná strana (Slovak national party), SNS"
+V4Q5,2304,Krestanskodemokratické hnutie (Christian Democratic Movement
+V4Q5,2305,"Strana madarskej koalície (Party of Hungarian Coalition), SK"
+V4Q5,2306,Ludová strana - Hnutie za demokratické Slovensko  (People's
+V4Q5,2307,"Strana zelených (Green Party), SZ"
+V4Q5,2308,"Komunistická strana Slovenska (Communist Party of Slovakia),"
+V4Q5,2309,"Slobodné Fórum (Free Forum), SF"
+V4Q5,2310,Konzervatívni demokrati Slovenska - Obcianska konzervatívna
+V4Q5,2311,"Sloboda a Solidarita (Freedom and Solidarity), SAS"
+V4Q5,2312,"Demokratická strana (Democratic Party), DS"
+V4Q5,2313,"Obciansko-liberálna strana (Civic-Liberal Party), LIGA"
+V4Q5,2314,"Strana demokratickej lavice (Party of Democratic Left), SDL"
+V4Q5,2315,"Agrárna strana vidieka (Agrarian Party), ASV"
+V4Q5,2316,"Rómska iniciatíva Slovenska (Roma Initiative of Slovakia), R"
+V4Q5,2317,MISIA 21 - Hnutie krestanskej solidarity (Mission 21 - Movem
+V4Q5,2401,"Slovenska demokratska stranka (Slovenian Democratic party),"
+V4Q5,2402,Liberalna demokracija Slovenije (Liberal democracy of Sloven
+V4Q5,2403,"Slovenska ljudska stranka (Slovenian People's Party), SLS"
+V4Q5,2404,"Socialni demokrati (Social democrats), SD"
+V4Q5,2405,ZARES - Nova politika (New Politics)
+V4Q5,2406,"Slovenska nacionalna stranka (Slovenian national party), SNS"
+V4Q5,2407,Demokraticna stranka upokojencev (Democratic party of pensio
+V4Q5,2408,Stranka mladih Slovenije (Democratic party of pensioners of
+V4Q5,2409,Nova Slovenija - kršcanska ljudska stranka (New Slovenia - C
+V4Q5,2501,"Partido Popular (People's Party), PP"
+V4Q5,2502,Partido Socialista Obrero Español (Spanish Socialist Workers
+V4Q5,2503,"Izquierda Unida (United Left), IU"
+V4Q5,2504,Los Verdes (The Greens)
+V4Q5,2505,"Convergència i unió (Convergence and Union), CIU"
+V4Q5,2506,"Eusko Alkartasuna, EA"
+V4Q5,2507,Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco (Basque N
+V4Q5,2508,Convergència Democràtica de Catalunya (Democratic Convergenc
+V4Q5,2509,Iniciativa per Catalunya Verds -Esquerra Unida i Alternativa
+V4Q5,2510,Europa de los pueblos (Europe of the peoples)
+V4Q5,2511,Coalición Europea (European coalition)
+V4Q5,2601,"Vänsterpartiet (Left Party), V"
+V4Q5,2602,"Socialdemokraterna (Social Democratic Party), S"
+V4Q5,2603,"Centerpartiet (Centre Party), C"
+V4Q5,2604,"Folkpartiet Liberalerna (Liberal Party), FP"
+V4Q5,2605,"Moderata Samlingspartiet (Moderate Party), M"
+V4Q5,2606,"Kristdemokraterna (Christian Democrats), KD"
+V4Q5,2607,"Miljöpartiet de Gröna (Green Party), MP"
+V4Q5,2608,"Junilistan (June List), JL"
+V4Q5,2609,"Sverigedemokraterna (Sweden Democrats), SD"
+V4Q5,2610,"Piratpartiet (Pirate party), PP"
+V4Q5,2701,Labour Party
+V4Q5,2702,Conservative Party
+V4Q5,2703,Liberal Democrats
+V4Q5,2704,"UK Independence Party, UKIP"
+V4Q5,2705,The Green party
+V4Q5,2706,"Scottish National Party, SNP"
+V4Q5,2707,Plaid Cymru (The Party of Wales)
+V4Q5,2708,"Democratic Unionist Party, DUP"
+V4Q6_1,0,Would never vote for it
+V4Q6_1,1,1
+V4Q6_1,2,2
+V4Q6_1,3,3
+V4Q6_1,4,4
+V4Q6_1,5,5
+V4Q6_1,6,6
+V4Q6_1,7,7
+V4Q6_1,8,8
+V4Q6_1,9,9
+V4Q6_1,10,Would always vote for it
+V4Q6_1,999,DK (SP)
+V4Q6_2,0,Would never vote for it
+V4Q6_2,1,1
+V4Q6_2,2,2
+V4Q6_2,3,3
+V4Q6_2,4,4
+V4Q6_2,5,5
+V4Q6_2,6,6
+V4Q6_2,7,7
+V4Q6_2,8,8
+V4Q6_2,9,9
+V4Q6_2,10,Would always vote for it
+V4Q6_2,999,DK (SP)
+V4Q6_3,0,Would never vote for it
+V4Q6_3,1,1
+V4Q6_3,2,2
+V4Q6_3,3,3
+V4Q6_3,4,4
+V4Q6_3,5,5
+V4Q6_3,6,6
+V4Q6_3,7,7
+V4Q6_3,8,8
+V4Q6_3,9,9
+V4Q6_3,10,Would always vote for it
+V4Q6_3,999,DK (SP)
+V4Q6_4,0,Would never vote for it
+V4Q6_4,1,1
+V4Q6_4,2,2
+V4Q6_4,3,3
+V4Q6_4,4,4
+V4Q6_4,5,5
+V4Q6_4,6,6
+V4Q6_4,7,7
+V4Q6_4,8,8
+V4Q6_4,9,9
+V4Q6_4,10,Would always vote for it
+V4Q6_4,999,DK (SP)
+V4Q6_5,0,Would never vote for it
+V4Q6_5,1,1
+V4Q6_5,2,2
+V4Q6_5,3,3
+V4Q6_5,4,4
+V4Q6_5,5,5
+V4Q6_5,6,6
+V4Q6_5,7,7
+V4Q6_5,8,8
+V4Q6_5,9,9
+V4Q6_5,10,Would always vote for it
+V4Q6_5,999,DK (SP)
+V4Q6_6,0,Would never vote for it
+V4Q6_6,1,1
+V4Q6_6,2,2
+V4Q6_6,3,3
+V4Q6_6,4,4
+V4Q6_6,5,5
+V4Q6_6,6,6
+V4Q6_6,7,7
+V4Q6_6,8,8
+V4Q6_6,9,9
+V4Q6_6,10,Would always vote for it
+V4Q6_6,999,DK (SP)
+V4Q6_7,0,Would never vote for it
+V4Q6_7,1,1
+V4Q6_7,2,2
+V4Q6_7,3,3
+V4Q6_7,4,4
+V4Q6_7,5,5
+V4Q6_7,6,6
+V4Q6_7,7,7
+V4Q6_7,8,8
+V4Q6_7,9,9
+V4Q6_7,10,Would always vote for it
+V4Q6_7,999,DK (SP)
+V4Q6_8,0,Would never vote for it
+V4Q6_8,1,1
+V4Q6_8,2,2
+V4Q6_8,3,3
+V4Q6_8,4,4
+V4Q6_8,5,5
+V4Q6_8,6,6
+V4Q6_8,7,7
+V4Q6_8,8,8
+V4Q6_8,9,9
+V4Q6_8,10,Would always vote for it
+V4Q6_8,999,DK (SP)
+V4Q6_9,0,Would never vote for it
+V4Q6_9,1,1
+V4Q6_9,2,2
+V4Q6_9,3,3
+V4Q6_9,4,4
+V4Q6_9,5,5
+V4Q6_9,6,6
+V4Q6_9,7,7
+V4Q6_9,8,8
+V4Q6_9,9,9
+V4Q6_9,10,Would always vote for it
+V4Q6_9,999,DK (SP)
+V4Q6_10,0,Would never vote for it
+V4Q6_10,1,1
+V4Q6_10,2,2
+V4Q6_10,3,3
+V4Q6_10,4,4
+V4Q6_10,5,5
+V4Q6_10,6,6
+V4Q6_10,7,7
+V4Q6_10,8,8
+V4Q6_10,9,9
+V4Q6_10,10,Would always vote for it
+V4Q6_10,999,DK (SP)
+V4Q7,0,No problem at all
+V4Q7,1,1
+V4Q7,2,2
+V4Q7,3,3
+V4Q7,4,4
+V4Q7,5,5
+V4Q7,6,6
+V4Q7,7,7
+V4Q7,8,8
+V4Q7,9,9
+V4Q7,10,The most serious problem
+V4Q7,999,DK (SP.)
+V4Q8a,0,back from the country they came from
+V4Q8a,1,1
+V4Q8a,2,2
+V4Q8a,3,3
+V4Q8a,4,4
+V4Q8a,5,5
+V4Q8a,6,6
+V4Q8a,7,7
+V4Q8a,8,8
+V4Q8a,9,9
+V4Q8a,10,Legalize illegal immigrants
+V4Q8a,999,You haven't thought much about that
+V4Q9_1,1,Agree strongly
+V4Q9_1,2,Agree somewhat
+V4Q9_1,3,Neither agree nor disagree
+V4Q9_1,4,Disagree somewhat
+V4Q9_1,5,Disagree strongly
+V4Q9_1,997,Refusal (SP.)
+V4Q9_1,999,DK (SP.)
+V4Q9_2,1,Agree strongly
+V4Q9_2,2,Agree somewhat
+V4Q9_2,3,Neither agree nor disagree
+V4Q9_2,4,Disagree somewhat
+V4Q9_2,5,Disagree strongly
+V4Q9_2,997,Refusal (SP.)
+V4Q9_2,999,DK (SP.)
+V4Q9_3,1,Agree strongly
+V4Q9_3,2,Agree somewhat
+V4Q9_3,3,Neither agree nor disagree
+V4Q9_3,4,Disagree somewhat
+V4Q9_3,5,Disagree strongly
+V4Q9_3,997,Refusal (SP.)
+V4Q9_3,999,DK (SP.)
+V4Q10_1,0,extremely unimportant
+V4Q10_1,1,1
+V4Q10_1,2,2
+V4Q10_1,3,3
+V4Q10_1,4,4
+V4Q10_1,5,5
+V4Q10_1,6,6
+V4Q10_1,7,7
+V4Q10_1,8,8
+V4Q10_1,9,9
+V4Q10_1,10,extremely important
+V4Q10_1,999,DK (SP.)
+V4Q10_2,0,extremely unimportant
+V4Q10_2,1,1
+V4Q10_2,2,2
+V4Q10_2,3,3
+V4Q10_2,4,4
+V4Q10_2,5,5
+V4Q10_2,6,6
+V4Q10_2,7,7
+V4Q10_2,8,8
+V4Q10_2,9,9
+V4Q10_2,10,extremely important
+V4Q10_2,999,DK (SP.)
+V4Q10_3,0,extremely unimportant
+V4Q10_3,1,1
+V4Q10_3,2,2
+V4Q10_3,3,3
+V4Q10_3,4,4
+V4Q10_3,5,5
+V4Q10_3,6,6
+V4Q10_3,7,7
+V4Q10_3,8,8
+V4Q10_3,9,9
+V4Q10_3,10,extremely important
+V4Q10_3,999,DK (SP.)
+V4Q10_4,0,extremely unimportant
+V4Q10_4,1,1
+V4Q10_4,2,2
+V4Q10_4,3,3
+V4Q10_4,4,4
+V4Q10_4,5,5
+V4Q10_4,6,6
+V4Q10_4,7,7
+V4Q10_4,8,8
+V4Q10_4,9,9
+V4Q10_4,10,extremely important
+V4Q10_4,999,DK (SP.)
+V4Q10_5,0,extremely unimportant
+V4Q10_5,1,1
+V4Q10_5,2,2
+V4Q10_5,3,3
+V4Q10_5,4,4
+V4Q10_5,5,5
+V4Q10_5,6,6
+V4Q10_5,7,7
+V4Q10_5,8,8
+V4Q10_5,9,9
+V4Q10_5,10,extremely important
+V4Q10_5,999,DK (SP.)
+V4Q10_6,0,extremely unimportant
+V4Q10_6,1,1
+V4Q10_6,2,2
+V4Q10_6,3,3
+V4Q10_6,4,4
+V4Q10_6,5,5
+V4Q10_6,6,6
+V4Q10_6,7,7
+V4Q10_6,8,8
+V4Q10_6,9,9
+V4Q10_6,10,extremely important
+V4Q10_6,999,DK (SP.)
+V4Q10_7,0,extremely unimportant
+V4Q10_7,1,1
+V4Q10_7,2,2
+V4Q10_7,3,3
+V4Q10_7,4,4
+V4Q10_7,5,5
+V4Q10_7,6,6
+V4Q10_7,7,7
+V4Q10_7,8,8
+V4Q10_7,9,9
+V4Q10_7,10,extremely important
+V4Q10_7,999,DK (SP.)
+V4Q10_8,0,extremely unimportant
+V4Q10_8,1,1
+V4Q10_8,2,2
+V4Q10_8,3,3
+V4Q10_8,4,4
+V4Q10_8,5,5
+V4Q10_8,6,6
+V4Q10_8,7,7
+V4Q10_8,8,8
+V4Q10_8,9,9
+V4Q10_8,10,extremely important
+V4Q10_8,999,DK (SP.)
+V4Q11_1,1,Favour strongly
+V4Q11_1,2,Favour somewhat
+V4Q11_1,3,Neither favour nor oppose
+V4Q11_1,4,Oppose somewhat
+V4Q11_1,5,Oppose strongly
+V4Q11_1,997,Refusal (SP.)
+V4Q11_1,999,DK (SP.)
+V4Q11_2,1,Favour strongly
+V4Q11_2,2,Favour somewhat
+V4Q11_2,3,Neither favour nor oppose
+V4Q11_2,4,Oppose somewhat
+V4Q11_2,5,Oppose strongly
+V4Q11_2,997,Refusal (SP.)
+V4Q11_2,999,DK (SP.)
+V4Q12,1,Far too many
+V4Q12,2,Somewhat too many
+V4Q12,3,About the right number
+V4Q12,4,Somewhat too few
+V4Q12,5,Far too few
+V4Q12,997,Refusal (SP.)
+V4Q12,999,DK (SP.)
+V4Q13_1,1,Agree strongly
+V4Q13_1,2,Agree somewhat
+V4Q13_1,3,Neither agree nor disagree
+V4Q13_1,4,Disagree somewhat
+V4Q13_1,5,Disagree strongly
+V4Q13_1,997,Refusal (SP.)
+V4Q13_1,999,DK (SP.)
+V4Q13_2,1,Agree strongly
+V4Q13_2,2,Agree somewhat
+V4Q13_2,3,Neither agree nor disagree
+V4Q13_2,4,Disagree somewhat
+V4Q13_2,5,Disagree strongly
+V4Q13_2,997,Refusal (SP.)
+V4Q13_2,999,DK (SP.)
+V4Q13_3,1,Agree strongly
+V4Q13_3,2,Agree somewhat
+V4Q13_3,3,Neither agree nor disagree
+V4Q13_3,4,Disagree somewhat
+V4Q13_3,5,Disagree strongly
+V4Q13_3,997,Refusal (SP.)
+V4Q13_3,999,DK (SP.)
+V4Q15,0,Muslim immigrants have a lot to offer to [COUNTRY]'s cultura
+V4Q15,1,1
+V4Q15,2,2
+V4Q15,3,3
+V4Q15,4,4
+V4Q15,5,5
+V4Q15,6,6
+V4Q15,7,7
+V4Q15,8,8
+V4Q15,9,9
+V4Q15,10,Muslim immigrants threaten [NATIONALITY] culture
+V4Q15,999,You haven't thought much about that
+V4Q16,0,Immigrants take native's jobs
+V4Q16,1,1
+V4Q16,2,2
+V4Q16,3,3
+V4Q16,4,4
+V4Q16,5,5
+V4Q16,6,6
+V4Q16,7,7
+V4Q16,8,8
+V4Q16,9,9
+V4Q16,10,Immigrants take jobs native don't want
+V4Q16,999,You haven't thought much about that
+V4Q20,0,No problem at all
+V4Q20,1,1
+V4Q20,2,2
+V4Q20,3,3
+V4Q20,4,4
+V4Q20,5,5
+V4Q20,6,6
+V4Q20,7,7
+V4Q20,8,8
+V4Q20,9,9
+V4Q20,10,The most serious problem
+V4Q20,999,DK (SP.)
+V4Q21,0,We should do everything possible to combat climate change
+V4Q21,1,1
+V4Q21,2,2
+V4Q21,3,3
+V4Q21,4,4
+V4Q21,5,5
+V4Q21,6,6
+V4Q21,7,7
+V4Q21,8,8
+V4Q21,9,9
+V4Q21,10,We should do everything possible to maximize economic growth
+V4Q21,999,You haven't thought much about that
+V4Q22a,1,Agree strongly
+V4Q22a,2,Agree somewhat
+V4Q22a,3,Neither agree nor disagree
+V4Q22a,4,Disagree somewhat
+V4Q22a,5,Disagree strongly
+V4Q22a,997,Refusal (SP.)
+V4Q22a,999,DK (SP.)
+V4Q23,1,Increase them greatly
+V4Q23,2,Increase them somewhat
+V4Q23,3,Leave them as they are
+V4Q23,4,Decrease them somewhat
+V4Q23,5,Decrease them greatly
+V4Q23,997,Refusal (SP.)
+V4Q23,999,DK (SP.)
+V4Q30_1,1,Regional level
+V4Q30_1,2,National level
+V4Q30_1,3,EU level
+V4Q30_1,4,Not an area to be dealt with by any level of government (SP.
+V4Q30_1,5,More than one (SP.)
+V4Q30_1,997,Refusal (SP.)
+V4Q30_1,999,DK (SP.)
+V4Q30_2,1,Regional level
+V4Q30_2,2,National level
+V4Q30_2,3,EU level
+V4Q30_2,4,Not an area to be dealt with by any level of government (SP.
+V4Q30_2,5,More than one (SP.)
+V4Q30_2,997,Refusal (SP.)
+V4Q30_2,999,DK (SP.)
+V4Q30_3,1,Regional level
+V4Q30_3,2,National level
+V4Q30_3,3,EU level
+V4Q30_3,4,Not an area to be dealt with by any level of government (SP.
+V4Q30_3,5,More than one (SP.)
+V4Q30_3,997,Refusal (SP.)
+V4Q30_3,999,DK (SP.)
+V4Q30_4,1,Regional level
+V4Q30_4,2,National level
+V4Q30_4,3,EU level
+V4Q30_4,4,Not an area to be dealt with by any level of government (SP.
+V4Q30_4,5,More than one (SP.)
+V4Q30_4,997,Refusal (SP.)
+V4Q30_4,999,DK (SP.)
+V4Q33a,0,Not at all
+V4Q33a,1,1
+V4Q33a,2,2
+V4Q33a,3,3
+V4Q33a,4,4
+V4Q33a,5,5
+V4Q33a,6,6
+V4Q33a,7,7
+V4Q33a,8,8
+V4Q33a,9,9
+V4Q33a,10,Completely
+V4Q33a,999,DK (SP.)
+V4Q33b,0,Not at all
+V4Q33b,1,1
+V4Q33b,2,2
+V4Q33b,3,3
+V4Q33b,4,4
+V4Q33b,5,5
+V4Q33b,6,6
+V4Q33b,7,7
+V4Q33b,8,8
+V4Q33b,9,9
+V4Q33b,10,Completely
+V4Q33b,999,DK (SP.)
+V4Q34,1,[NATIONALITY] only
+V4Q34,2,[NATIONALITY] and European
+V4Q34,3,European and [NATIONALITY]
+V4Q34,4,European only
+V4Q34,5,None of the above (SP.)
+V4Q34,997,Refusal (SP.)
+V4Q34,999,DK (SP.)
+V4Q35,1,A very good thing
+V4Q35,2,A fairly good thing
+V4Q35,3,Neither good nor bad
+V4Q35,4,A fairly bad thing
+V4Q35,5,A very bad thing
+V4Q35,997,Refusal (SP.)
+V4Q35,999,DK (SP.)
+V4Q36,0,Not benefited at all
+V4Q36,1,1
+V4Q36,2,2
+V4Q36,3,3
+V4Q36,4,4
+V4Q36,5,5
+V4Q36,6,6
+V4Q36,7,7
+V4Q36,8,8
+V4Q36,9,9
+V4Q36,10,Benefited enormously
+V4Q36,999,DK (SP.)
+V4Q37,0,Not at all
+V4Q37,1,1
+V4Q37,2,2
+V4Q37,3,3
+V4Q37,4,4
+V4Q37,5,5
+V4Q37,6,6
+V4Q37,7,7
+V4Q37,8,8
+V4Q37,9,9
+V4Q37,10,Passionately
+V4Q37,999,DK (SP.)
+V4Q38,1,Very satisfied
+V4Q38,2,Somewhat satisfied
+V4Q38,3,Neither satisfied nor dissatisfied
+V4Q38,4,Somewhat dissatisfied
+V4Q38,5,Very dissatisfied
+V4Q38,997,Refusal (SP.)
+V4Q38,999,DK (SP.)
+V4Q39,1,Very satisfied
+V4Q39,2,Somewhat satisfied
+V4Q39,3,Neither satisfied nor dissatisfied
+V4Q39,4,Somewhat dissatisfied
+V4Q39,5,Very dissatisfied
+V4Q39,997,Refusal (SP.)
+V4Q39,999,DK (SP.)
+V4Q40,1,A great deal of difference
+V4Q40,2,Some difference
+V4Q40,3,Not much difference
+V4Q40,4,No difference at all
+V4Q40,997,Refusal (SP.)
+V4Q40,999,DK (SP.)
+V4Q41,1,A great deal
+V4Q41,2,Somewhat
+V4Q41,3,Not very much
+V4Q41,4,No at all
+V4Q41,997,Refusal (SP.)
+V4Q41,999,DK (SP.)
+V4Q42_1,1,Agree strongly
+V4Q42_1,2,Agree somewhat
+V4Q42_1,3,Neither agree nor disagree
+V4Q42_1,4,Disagree somewhat
+V4Q42_1,5,Disagree strongly
+V4Q42_1,997,Refusal (SP.)
+V4Q42_1,999,DK (SP.)
+V4Q42_2,1,Agree strongly
+V4Q42_2,2,Agree somewhat
+V4Q42_2,3,Neither agree nor disagree
+V4Q42_2,4,Disagree somewhat
+V4Q42_2,5,Disagree strongly
+V4Q42_2,997,Refusal (SP.)
+V4Q42_2,999,DK (SP.)
+V4Q42_3,1,Agree strongly
+V4Q42_3,2,Agree somewhat
+V4Q42_3,3,Neither agree nor disagree
+V4Q42_3,4,Disagree somewhat
+V4Q42_3,5,Disagree strongly
+V4Q42_3,997,Refusal (SP.)
+V4Q42_3,999,DK (SP.)
+V4Q43,1,European Commission
+V4Q43,2,Council of Ministers
+V4Q43,3,European Parliament
+V4Q43,4,European Court of Auditors
+V4Q43,999,You couldn’t say
+V4Q44,1,It passes all EU laws
+V4Q44,2,It can dismiss the European Commission
+V4Q44,3,It can reject the budget proposed by the Council of Minister
+V4Q44,4,It is involved in decisions about the admission of new Membe
+V4Q44,999,You couldn’t say
+V4Q46,1,They can work anywhere in the EU
+V4Q46,2,They must have a university education
+V4Q46,3,They cannot bring family members to join them any faster tha
+V4Q46,4,They are subject to the Returns Directive
+V4Q46,999,You couldn’t say
+V4Q47,1,The EU sets the basic rules about entry and residency requir
+V4Q47,2,The EU decides how many immigrants can be admitted to each c
+V4Q47,3,Work permits for immigrants must be approved by the EU
+V4Q47,4,The EU plays no role in immigration policy
+V4Q47,999,You couldn’t say
+V4Q49,1,50%
+V4Q49,2,60%
+V4Q49,3,70%
+V4Q49,4,80%
+V4Q49,999,You couldn’t say
+V4Q50,1,China
+V4Q50,2,The European Union
+V4Q50,3,The United States
+V4Q50,4,India
+V4Q50,999,You couldn’t say
+V4_leftright14,0,Left
+V4_leftright14,1,1
+V4_leftright14,2,2
+V4_leftright14,3,3
+V4_leftright14,4,4
+V4_leftright14,5,5
+V4_leftright14,6,6
+V4_leftright14,7,7
+V4_leftright14,8,8
+V4_leftright14,9,9
+V4_leftright14,10,Right
+V4_leftright14,999,DK (SP.)
+V4_p4,1,Excellent
+V4_p4,2,Fair
+V4_p4,3,Average
+V4_p4,4,Bad
+V4_p6,101,Vorarlberg
+V4_p6,102,Tirol
+V4_p6,103,Salzburg
+V4_p6,104,Oberösterreich
+V4_p6,105,Kärnten
+V4_p6,106,Steiermark
+V4_p6,107,Burgenland
+V4_p6,108,Niederösterreich
+V4_p6,109,Wien
+V4_p6,201,West-Vlaanderen -- Oost-Vlaanderen
+V4_p6,202,Antwerpen -- Vlaams-Brabant -- Limburg
+V4_p6,203,Brussel
+V4_p6,204,Henegouwen -- Waals-Brabant
+V4_p6,205,Namen -- Luik -- Luxemburg
+V4_p6,302,Burgas
+V4_p6,304,Veliko Tarnovo
+V4_p6,306,Vratsa
+V4_p6,308,Dobritch
+V4_p6,312,Montana
+V4_p6,313,Pazardzhik
+V4_p6,316,Plovdiv
+V4_p6,318,Ruse
+V4_p6,319,Silistra
+V4_p6,320,Sliven
+V4_p6,321,Smolian
+V4_p6,322,Sofia
+V4_p6,401,Nicosia
+V4_p6,402,Limassol
+V4_p6,403,Larnaca
+V4_p6,404,Famagusta
+V4_p6,405,Paphos
+V4_p6,501,Prague
+V4_p6,502,Central Bohemian Region
+V4_p6,503,Karlovy Vary Region
+V4_p6,504,Plzen Region
+V4_p6,505,South Bohemian Region
+V4_p6,506,Ústí nad Labem Region
+V4_p6,507,Pardubice Region
+V4_p6,508,Liberec Region
+V4_p6,509,Hradec Králové Region
+V4_p6,510,South Moravian Region
+V4_p6,511,Moravian-Silesian Region
+V4_p6,512,Vysocina Region
+V4_p6,513,Zlín Region
+V4_p6,514,Olomouc Region
+V4_p6,601,Schleswig-Holstein
+V4_p6,602,Hamburg
+V4_p6,603,Lower Saxony
+V4_p6,604,Bremen
+V4_p6,605,North Rhine-Westphalia
+V4_p6,606,Hesse
+V4_p6,607,Rhineland-Palatinate
+V4_p6,608,Baden-Wuerttemberg
+V4_p6,609,Bavaria
+V4_p6,610,Saarland
+V4_p6,611,Berlin
+V4_p6,612,Brandenburg
+V4_p6,613,Mecklenburg-Western Pomerania
+V4_p6,614,Saxony
+V4_p6,615,Saxony-Anhalt
+V4_p6,616,Thuringia
+V4_p6,701,Region Hovedstaden
+V4_p6,702,Region Sjælland
+V4_p6,703,Region Syddanmark
+V4_p6,704,Region Midtjylland
+V4_p6,705,Region Nordjylland
+V4_p6,801,Tallinn
+V4_p6,802,Harjumaa
+V4_p6,803,Järvamaa
+V4_p6,804,Raplamaa
+V4_p6,805,Ida-Virumaa
+V4_p6,806,Lääne-Virumaa
+V4_p6,807,Läänemaa
+V4_p6,808,Hiiumaa
+V4_p6,809,Saaremaa
+V4_p6,810,Pärnumaa
+V4_p6,811,Viljandimaa
+V4_p6,812,Tartumaa
+V4_p6,813,Jõgevamaa
+V4_p6,814,Võrumaa
+V4_p6,815,Valgamaa
+V4_p6,816,Põlvamaa
+V4_p6,901,Anatoliki Makedonia & Thraki
+V4_p6,902,Kentriki Makedonia
+V4_p6,903,Ditiki Makedonia
+V4_p6,904,Thessalia
+V4_p6,905,Ipiros
+V4_p6,906,Ionia islands
+V4_p6,907,Ditiki Ellada
+V4_p6,908,Sterea Ellada
+V4_p6,909,Peloponnisos
+V4_p6,910,Attiki
+V4_p6,911,Vorio Egeo
+V4_p6,912,Notio Egeo
+V4_p6,913,Kriti
+V4_p6,1001,Andalucía
+V4_p6,1002,Aragón
+V4_p6,1003,Asturias
+V4_p6,1004,Baleares
+V4_p6,1005,Canarias
+V4_p6,1006,Cantabria
+V4_p6,1007,Castilla la Mancha
+V4_p6,1008,Castilla León
+V4_p6,1009,Cataluña
+V4_p6,1010,Valencia
+V4_p6,1011,Extremadura
+V4_p6,1012,Galicia
+V4_p6,1013,Madrid
+V4_p6,1014,Murcia
+V4_p6,1015,Navarra
+V4_p6,1016,País Vasco
+V4_p6,1017,La Rioja
+V4_p6,1101,Southern Finland
+V4_p6,1102,Western Finland
+V4_p6,1103,Eastern Finland
+V4_p6,1104,Northern Finland
+V4_p6,1201,Ile-de-France
+V4_p6,1202,Champagne-Ardennes
+V4_p6,1203,Picardie
+V4_p6,1204,Haute-Normandie
+V4_p6,1205,Centre
+V4_p6,1206,Basse-Normandie
+V4_p6,1207,Bourgogne
+V4_p6,1208,Nord-Pas-de-Calais
+V4_p6,1209,Lorraine
+V4_p6,1210,Alsace
+V4_p6,1211,Franche-Comté
+V4_p6,1212,Pays de la Loire
+V4_p6,1213,Bretagne
+V4_p6,1214,Poitou-Charentes
+V4_p6,1215,Aquitaine
+V4_p6,1216,Midi-Pyrénées
+V4_p6,1217,Limousin
+V4_p6,1218,Rhône-Alpes
+V4_p6,1219,Auvergne
+V4_p6,1220,Languedoc-Roussillon
+V4_p6,1221,Provence-Alpes-Côte d'Azur
+V4_p6,1222,Corse
+V4_p6,1301,Central region
+V4_p6,1302,North-Hungary
+V4_p6,1303,North-East Hungary
+V4_p6,1304,South-East Hungary
+V4_p6,1305,South-Transdanubia
+V4_p6,1306,North-Transdanubia
+V4_p6,1307,West-Transdanubia
+V4_p6,1401,LIGURIA
+V4_p6,1402,LOMBARDIA
+V4_p6,1403,PIEMONTE
+V4_p6,1404,VAL D'AOSTA
+V4_p6,1405,EMILIA ROMAGNA
+V4_p6,1406,FRIULI VENEZIA GIULIA
+V4_p6,1407,TRENTINO ALTO ADIGE
+V4_p6,1408,VENETO
+V4_p6,1409,LAZIO
+V4_p6,1410,MARCHE
+V4_p6,1411,TOSCANA
+V4_p6,1412,UMBRIA
+V4_p6,1413,ABRUZZO
+V4_p6,1414,BASILICATA
+V4_p6,1415,CALABRIA
+V4_p6,1416,CAMPANIA
+V4_p6,1417,MOLISE
+V4_p6,1418,PUGLIA
+V4_p6,1419,SARDEGNA
+V4_p6,1420,SICILIA
+V4_p6,1501,Dublin
+V4_p6,1502,Rest of Leinster
+V4_p6,1503,Munster
+V4_p6,1504,Connaught/ Ulster
+V4_p6,1601,Luxembourg-Ville
+V4_p6,1602,Reste Centre
+V4_p6,1603,Sud
+V4_p6,1604,Nord
+V4_p6,1605,Est
+V4_p6,1701,Central South Lithuania
+V4_p6,1702,West Lithuania
+V4_p6,1703,North Lithuania
+V4_p6,1704,East Lithuania
+V4_p6,1801,Riga (Capital)
+V4_p6,1802,Pieriga (Centre)
+V4_p6,1803,Vidzeme (North)
+V4_p6,1804,Kurzeme (West)
+V4_p6,1805,Zemgale (South)
+V4_p6,1806,Latgale (East)
+V4_p6,1901,Southern Harbour
+V4_p6,1902,Northern Harbour
+V4_p6,1903,South Eastern
+V4_p6,1904,Western
+V4_p6,1905,Northern
+V4_p6,1906,Gozo and Comino
+V4_p6,2001,"Three largest agglomerations (Amsterdam, Rotterdam, The Hagu"
+V4_p6,2002,Western region (excluding 1)
+V4_p6,2003,Northern region    
+V4_p6,2004,Eastern region
+V4_p6,2005,Southern region
+V4_p6,2101,Dolnoslaskie
+V4_p6,2102,Kujawsko-Pomorskie
+V4_p6,2103,Lubelskie
+V4_p6,2104,Lubuskie
+V4_p6,2105,Lódzkie
+V4_p6,2106,Malopolskie
+V4_p6,2107,Mazowieckie
+V4_p6,2108,Opolskie
+V4_p6,2109,Podkarpackie
+V4_p6,2110,Podlaskie
+V4_p6,2111,Pomorskie
+V4_p6,2112,Slaskie
+V4_p6,2113,Swietokrzyskie
+V4_p6,2114,Warminsko-Mazurskie
+V4_p6,2115,Wielkopolskie
+V4_p6,2116,Zachodniopomorskie
+V4_p6,2201,Norte
+V4_p6,2202,Centro
+V4_p6,2203,Lisboa e Vale do Tejo
+V4_p6,2204,Alentejo
+V4_p6,2205,Algarve
+V4_p6,2301,Nord-Est (North-East)
+V4_p6,2302,Sud-Est (South-East)
+V4_p6,2303,Sud (South)
+V4_p6,2304,Sud-Vest (South-West)
+V4_p6,2305,Vest (West)
+V4_p6,2306,Nord-Vest (North-West)
+V4_p6,2307,Centru (Center)
+V4_p6,2308,Bucuresti-Ilfov (Bucharest-Ilfov)
+V4_p6,2401,Stockholm
+V4_p6,2402,Östra Mellansverige
+V4_p6,2403,Småland med öarna
+V4_p6,2404,Sydsverige
+V4_p6,2405,Västsverige
+V4_p6,2406,Norra Mellansverige
+V4_p6,2407,Mellersta och Övre Norrland
+V4_p6,2408,Övre Norrland
+V4_p6,2501,Pomurska
+V4_p6,2502,Podravska
+V4_p6,2503,Koroška
+V4_p6,2504,Savinjska
+V4_p6,2505,Zasavska
+V4_p6,2506,Spodnjeposavska
+V4_p6,2507,Jugovzhodna Slovenija
+V4_p6,2508,Osrednjeslovenska
+V4_p6,2509,Gorenjska
+V4_p6,2510,Notranjsko-kraška
+V4_p6,2511,Goriška
+V4_p6,2512,Obalno-kraška
+V4_p6,2601,Bratislava region
+V4_p6,2602,Trnava region
+V4_p6,2603,Trencín region
+V4_p6,2604,Nitra region
+V4_p6,2605,Žilina region
+V4_p6,2606,Banská Bystrica region
+V4_p6,2607,Košice region
+V4_p6,2608,Prešov region
+V4_p6,2701,Scotland
+V4_p6,2702,North East
+V4_p6,2703,North West
+V4_p6,2704,Yorkshire
+V4_p6,2705,East midlands
+V4_p6,2706,West midlands
+V4_p6,2707,Wales
+V4_p6,2708,Eastern
+V4_p6,2709,London
+V4_p6,2710,South East
+V4_p6,2711,South West
+V4_p6,2712,Northern Ireland
+V4_p10,1,Dutch
+V4_p10,2,French
+V4_p10,3,Luxembourgish
+V4_p10,4,French
+V4_p10,5,German
+V4_p10,6,Latvian
+V4_p10,7,Russian
+V4_p10,8,Maltest
+V4_p10,9,English
+filter_$,0,Not Selected
+filter_$,1,Selected
+V4Q6_1bis,0,Would never vote for it
+V4Q6_1bis,1,1
+V4Q6_1bis,2,2
+V4Q6_1bis,3,3
+V4Q6_1bis,4,4
+V4Q6_1bis,5,5
+V4Q6_1bis,6,6
+V4Q6_1bis,7,7
+V4Q6_1bis,8,8
+V4Q6_1bis,9,9
+V4Q6_1bis,10,Would always vote for it
+V4Q6_1bis,999,DK (SP)
+V4Q6_2bis,0,Would never vote for it
+V4Q6_2bis,1,1
+V4Q6_2bis,2,2
+V4Q6_2bis,3,3
+V4Q6_2bis,4,4
+V4Q6_2bis,5,5
+V4Q6_2bis,6,6
+V4Q6_2bis,7,7
+V4Q6_2bis,8,8
+V4Q6_2bis,9,9
+V4Q6_2bis,10,Would always vote for it
+V4Q6_2bis,999,DK (SP)
+V4Q6_3bis,0,Would never vote for it
+V4Q6_3bis,1,1
+V4Q6_3bis,2,2
+V4Q6_3bis,3,3
+V4Q6_3bis,4,4
+V4Q6_3bis,5,5
+V4Q6_3bis,6,6
+V4Q6_3bis,7,7
+V4Q6_3bis,8,8
+V4Q6_3bis,9,9
+V4Q6_3bis,10,Would always vote for it
+V4Q6_3bis,999,DK (SP)
+V4Q6_4bis,0,Would never vote for it
+V4Q6_4bis,1,1
+V4Q6_4bis,2,2
+V4Q6_4bis,3,3
+V4Q6_4bis,4,4
+V4Q6_4bis,5,5
+V4Q6_4bis,6,6
+V4Q6_4bis,7,7
+V4Q6_4bis,8,8
+V4Q6_4bis,9,9
+V4Q6_4bis,10,Would always vote for it
+V4Q6_4bis,999,DK (SP)
+V4Q6_5bis,0,Would never vote for it
+V4Q6_5bis,1,1
+V4Q6_5bis,2,2
+V4Q6_5bis,3,3
+V4Q6_5bis,4,4
+V4Q6_5bis,5,5
+V4Q6_5bis,6,6
+V4Q6_5bis,7,7
+V4Q6_5bis,8,8
+V4Q6_5bis,9,9
+V4Q6_5bis,10,Would always vote for it
+V4Q6_5bis,999,DK (SP)
+V4Q6_6bis,0,Would never vote for it
+V4Q6_6bis,1,1
+V4Q6_6bis,2,2
+V4Q6_6bis,3,3
+V4Q6_6bis,4,4
+V4Q6_6bis,5,5
+V4Q6_6bis,6,6
+V4Q6_6bis,7,7
+V4Q6_6bis,8,8
+V4Q6_6bis,9,9
+V4Q6_6bis,10,Would always vote for it
+V4Q6_6bis,999,DK (SP)
+V4Q6_7bis,0,Would never vote for it
+V4Q6_7bis,1,1
+V4Q6_7bis,2,2
+V4Q6_7bis,3,3
+V4Q6_7bis,4,4
+V4Q6_7bis,5,5
+V4Q6_7bis,6,6
+V4Q6_7bis,7,7
+V4Q6_7bis,8,8
+V4Q6_7bis,9,9
+V4Q6_7bis,10,Would always vote for it
+V4Q6_7bis,999,DK (SP)
+V4Q6_8bis,0,Would never vote for it
+V4Q6_8bis,1,1
+V4Q6_8bis,2,2
+V4Q6_8bis,3,3
+V4Q6_8bis,4,4
+V4Q6_8bis,5,5
+V4Q6_8bis,6,6
+V4Q6_8bis,7,7
+V4Q6_8bis,8,8
+V4Q6_8bis,9,9
+V4Q6_8bis,10,Would always vote for it
+V4Q6_8bis,999,DK (SP)
+V4Q6_9bis,0,Would never vote for it
+V4Q6_9bis,1,1
+V4Q6_9bis,2,2
+V4Q6_9bis,3,3
+V4Q6_9bis,4,4
+V4Q6_9bis,5,5
+V4Q6_9bis,6,6
+V4Q6_9bis,7,7
+V4Q6_9bis,8,8
+V4Q6_9bis,9,9
+V4Q6_9bis,10,Would always vote for it
+V4Q6_9bis,999,DK (SP)
+V4Q6_10bis,0,Would never vote for it
+V4Q6_10bis,1,1
+V4Q6_10bis,2,2
+V4Q6_10bis,3,3
+V4Q6_10bis,4,4
+V4Q6_10bis,5,5
+V4Q6_10bis,6,6
+V4Q6_10bis,7,7
+V4Q6_10bis,8,8
+V4Q6_10bis,9,9
+V4Q6_10bis,10,Would always vote for it
+V4Q6_10bis,999,DK (SP)
+V4Q6_11bis,0,Would never vote for it
+V4Q6_11bis,1,1
+V4Q6_11bis,2,2
+V4Q6_11bis,3,3
+V4Q6_11bis,4,4
+V4Q6_11bis,5,5
+V4Q6_11bis,6,6
+V4Q6_11bis,7,7
+V4Q6_11bis,8,8
+V4Q6_11bis,9,9
+V4Q6_11bis,10,Would always vote for it
+V4Q6_11bis,999,DK (SP)
+V4Q6_12bis,0,Would never vote for it
+V4Q6_12bis,1,1
+V4Q6_12bis,2,2
+V4Q6_12bis,3,3
+V4Q6_12bis,4,4
+V4Q6_12bis,5,5
+V4Q6_12bis,6,6
+V4Q6_12bis,7,7
+V4Q6_12bis,8,8
+V4Q6_12bis,9,9
+V4Q6_12bis,10,Would always vote for it
+V4Q6_12bis,999,DK (SP)
+V4Q6_13bis,0,Would never vote for it
+V4Q6_13bis,1,1
+V4Q6_13bis,2,2
+V4Q6_13bis,3,3
+V4Q6_13bis,4,4
+V4Q6_13bis,5,5
+V4Q6_13bis,6,6
+V4Q6_13bis,7,7
+V4Q6_13bis,8,8
+V4Q6_13bis,9,9
+V4Q6_13bis,10,Would always vote for it
+V4Q6_13bis,999,DK (SP)
+V4Q6_14bis,0,Would never vote for it
+V4Q6_14bis,1,1
+V4Q6_14bis,2,2
+V4Q6_14bis,3,3
+V4Q6_14bis,4,4
+V4Q6_14bis,5,5
+V4Q6_14bis,6,6
+V4Q6_14bis,7,7
+V4Q6_14bis,8,8
+V4Q6_14bis,9,9
+V4Q6_14bis,10,Would always vote for it
+V4Q6_14bis,999,DK (SP)
+V4Q6_15bis,0,Would never vote for it
+V4Q6_15bis,1,1
+V4Q6_15bis,2,2
+V4Q6_15bis,3,3
+V4Q6_15bis,4,4
+V4Q6_15bis,5,5
+V4Q6_15bis,6,6
+V4Q6_15bis,7,7
+V4Q6_15bis,8,8
+V4Q6_15bis,9,9
+V4Q6_15bis,10,Would always vote for it
+V4Q6_15bis,999,DK (SP)
+V4Q6_16bis,0,Would never vote for it
+V4Q6_16bis,1,1
+V4Q6_16bis,2,2
+V4Q6_16bis,3,3
+V4Q6_16bis,4,4
+V4Q6_16bis,5,5
+V4Q6_16bis,6,6
+V4Q6_16bis,7,7
+V4Q6_16bis,8,8
+V4Q6_16bis,9,9
+V4Q6_16bis,10,Would always vote for it
+V4Q6_16bis,999,DK (SP)
+V4Q6_17bis,0,Would never vote for it
+V4Q6_17bis,1,1
+V4Q6_17bis,2,2
+V4Q6_17bis,3,3
+V4Q6_17bis,4,4
+V4Q6_17bis,5,5
+V4Q6_17bis,6,6
+V4Q6_17bis,7,7
+V4Q6_17bis,8,8
+V4Q6_17bis,9,9
+V4Q6_17bis,10,Would always vote for it
+V4Q6_17bis,999,DK (SP)
+V4Q6_18bis,0,Would never vote for it
+V4Q6_18bis,1,1
+V4Q6_18bis,2,2
+V4Q6_18bis,3,3
+V4Q6_18bis,4,4
+V4Q6_18bis,5,5
+V4Q6_18bis,6,6
+V4Q6_18bis,7,7
+V4Q6_18bis,8,8
+V4Q6_18bis,9,9
+V4Q6_18bis,10,Would always vote for it
+V4Q6_18bis,999,DK (SP)
+V4Q6_19bis,0,Would never vote for it
+V4Q6_19bis,1,1
+V4Q6_19bis,2,2
+V4Q6_19bis,3,3
+V4Q6_19bis,4,4
+V4Q6_19bis,5,5
+V4Q6_19bis,6,6
+V4Q6_19bis,7,7
+V4Q6_19bis,8,8
+V4Q6_19bis,9,9
+V4Q6_19bis,10,Would always vote for it
+V4Q6_19bis,999,DK (SP)
+V4Q6_20bis,0,Would never vote for it
+V4Q6_20bis,1,1
+V4Q6_20bis,2,2
+V4Q6_20bis,3,3
+V4Q6_20bis,4,4
+V4Q6_20bis,5,5
+V4Q6_20bis,6,6
+V4Q6_20bis,7,7
+V4Q6_20bis,8,8
+V4Q6_20bis,9,9
+V4Q6_20bis,10,Would always vote for it
+V4Q6_20bis,999,DK (SP)
