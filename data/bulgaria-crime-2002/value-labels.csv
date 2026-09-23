@@ -1,0 +1,1449 @@
+source_column,source_value,value_label
+age,1,18-30
+age,2,31-40
+age,3,41-50
+age,4,51-60
+age,5,61+
+agep,1,18-30
+agep,2,31-40
+agep,3,41-50
+agep,4,51-60
+agep,5,61+
+children,99,No
+edu,1,University degree
+edu,2,College degree
+edu,3,High-school
+edu,4,Primary
+edu,5,Lower
+edup,1,university degree
+edup,2,college degree
+edup,3,high-school
+edup,4,primary
+edup,5,lower
+ethnos,1,Bulgarian
+ethnos,2,Turkish
+ethnos,3,Roma
+ethnos,4,Other
+ethnosp,1,bulgarian
+ethnosp,2,turkish
+ethnosp,3,roma
+ethnosp,4,other
+group,1,Student
+group,2,Worker
+group,3,Public servant
+group,4,Working freelance
+group,5,Private businessman
+group,6,Farmer
+group,7,Unemployed
+group,8,Pensioner
+group,9,Other
+groupp,1,student
+groupp,2,worker
+groupp,3,public servant
+groupp,4,working freelance
+groupp,5,private businessman
+groupp,6,farmer
+groupp,7,unemployed
+groupp,8,pensioner
+groupp,9,other
+incomes,0,No answer
+incomes,1,Under 50 BGN
+incomes,2,50 - 100 BGN
+incomes,3,100 - 150 BGN
+incomes,4,150 - 200 BGN
+incomes,5,200 - 300 BGN
+incomes,6,Above 300 BGN
+incomesp,0,no answer
+incomesp,1,under 50 bgn
+incomesp,2,50 - 100 bgn
+incomesp,3,100 - 150 bgn
+incomesp,4,150 - 200 bgn
+incomesp,5,200 - 300 bgn
+incomesp,6,above 300 bgn
+q1,1,Safer
+q1,2,Neither
+q1,3,Less safe
+q1,99,Can't say
+q3,1,Very much
+q3,2,Somewhat
+q3,3,Not much
+q3,99,I am not interested
+q6,0,No answer
+q6,1,Yes
+q6,2,No
+q7,0,No answer
+q7,1,Yes
+q7,2,No
+q9,1,Crime is dependent on drug trafficking to a great extent
+q9,2,Crime is dependent on drug trafficking to some extent
+q9,3,Crime is dependent on drug trafficking to a lesser extent
+q9,4,Crime is not at all dependent on drug trafficking
+q9,99,Can't say
+q11,1,The first statement
+q11,2,The first rather than the second
+q11,3,Both
+q11,4,The second rather than the first
+q11,5,The second statement
+q11,99,Íå ìîãà äà ïðåöåíÿ
+q16,1,The first statement
+q16,2,The first rather than the second
+q16,3,Both
+q16,4,The second rather than the first
+q16,5,The second statement
+q16,99,Can't say
+q18,1,Strongly agree
+q18,2,Somewhat agree
+q18,3,Somewhat disagree
+q18,4,Strongly disagree
+q18,99,Can't say
+q19,1,Strongly agree
+q19,2,Somewhat agree
+q19,3,Somewhat disagree
+q19,4,Strongly disagree
+q19,99,Can't say
+q20,1,The first statement
+q20,2,The first rather than the second
+q20,3,Both
+q20,4,The second rather than the first
+q20,5,The second statement
+q20,99,Can't say
+q21,1,"The system is good, the problem is with the people in it"
+q21,2,What is necessary is institutional changes
+q21,3,Can't say
+q22,1,It is better if the Investigation service is within the MI
+q22,2,It is better if the Investigation service remains independen
+q22,3,Can't say
+q23,1,The Prosecution should be part of the executive branch
+q23,2,The Prosecution should remain as it is now
+q23,3,The Prosecution should be accountable to Parliament
+q23,4,Can't say
+q28,1,Entirely right
+q28,2,Right
+q28,3,Wrong
+q28,4,Entirely wrong
+q28,99,Can't say
+q29,1,National Movement Simeon II
+q29,2,United Democratic Forces
+q29,3,The Bulgarian Socialist Party
+q29,4,The Movement for Rights and Freedoms
+q29,5,Other
+q29,6,None
+q29,7,Can't tell
+q30,1,Extreme left
+q30,10,Extreme right
+q31,1,Extreme left
+q31,10,Extreme right
+q32,1,Extreme left
+q32,10,Extreme right
+q33,1,Extreme left
+q33,10,Extreme right
+q34,1,Extreme left
+q34,10,Extreme right
+q37,1,To a great extent
+q37,2,To some extent
+q37,3,Very little
+q37,99,Not interested
+q10_1,1,Strongly disagree
+q10_1,2,Somewhat disagree
+q10_1,3,Neither agree nor disagree
+q10_1,4,Somewhat agree
+q10_1,5,Strongly agree
+q10_1,99,Can't say
+q10_2,1,Strongly disagree
+q10_2,2,Somewhat disagree
+q10_2,3,Neither agree nor disagree
+q10_2,4,Somewhat agree
+q10_2,5,Strongly agree
+q10_2,99,Can't say
+q10_3,1,Strongly disagree
+q10_3,2,Somewhat disagree
+q10_3,3,Neither agree nor disagree
+q10_3,4,Somewhat agree
+q10_3,5,Strongly agree
+q10_3,99,Can't say
+q10_4,1,Strongly disagree
+q10_4,2,Somewhat disagree
+q10_4,3,Neither agree nor disagree
+q10_4,4,Somewhat agree
+q10_4,5,Strongly agree
+q10_4,99,Can't say
+q10_1p,1,strongly disagree
+q10_1p,2,somewhat disagree
+q10_1p,3,neither agree nor disagree
+q10_1p,4,somewhat agree
+q10_1p,5,strongly agree
+q10_1p,99,can't say
+q10_2p,1,strongly disagree
+q10_2p,2,somewhat disagree
+q10_2p,3,neither agree nor disagree
+q10_2p,4,somewhat agree
+q10_2p,5,strongly agree
+q10_2p,99,can't say
+q10_3p,1,strongly disagree
+q10_3p,2,somewhat disagree
+q10_3p,3,neither agree nor disagree
+q10_3p,4,somewhat agree
+q10_3p,5,strongly agree
+q10_3p,99,can't say
+q10_4p,1,strongly disagree
+q10_4p,2,somewhat disagree
+q10_4p,3,neither agree nor disagree
+q10_4p,4,somewhat agree
+q10_4p,5,strongly agree
+q10_4p,99,can't say
+q11p,1,the first statement
+q11p,2,the first rather than the second
+q11p,3,both
+q11p,4,the second rather than the first
+q11p,5,the second statement
+q11p,99,Íå ìîãà äà ïðåöåíÿ
+q12_1,1,True
+q12_1,2,False
+q12_1,99,Can't say
+q12_2,1,True
+q12_2,2,False
+q12_2,99,Can't say
+q12_3,1,True
+q12_3,2,False
+q12_3,99,Can't say
+q12_4,1,True
+q12_4,2,False
+q12_4,99,Can't say
+q12_5,1,True
+q12_5,2,False
+q12_5,99,Can't say
+q12_6,1,True
+q12_6,2,False
+q12_6,99,Can't say
+q12_7,1,True
+q12_7,2,False
+q12_7,99,Can't say
+q12_1p,1,true
+q12_1p,2,false
+q12_1p,99,can't say
+q12_2p,1,true
+q12_2p,2,false
+q12_2p,99,can't say
+q12_3p,1,true
+q12_3p,2,false
+q12_3p,99,can't say
+q12_4p,1,true
+q12_4p,2,false
+q12_4p,99,can't say
+q12_5p,1,true
+q12_5p,2,false
+q12_5p,99,can't say
+q12_6p,1,true
+q12_6p,2,false
+q12_6p,99,can't say
+q12_7p,1,true
+q12_7p,2,false
+q12_7p,99,can't say
+q13_1,1,"Technical equipment for the police - cars, choppers, etc."
+q13_1,2,More weapons for the police
+q13_1,3,Surveillance and undercover measures
+q13_1,4,For the Investigation
+q13_1,5,For the economic and financial police
+q13_1,6,For more patrolling policemen
+q13_1,7,For the courts to assure speedier trials
+q13_1,8,For breaking the drug production and dealing networks
+q13_1,9,For increasing the capacity of prisons
+q13_2,1,"Technical equipment for the police - cars, choppers, etc."
+q13_2,2,More weapons for the police
+q13_2,3,Surveillance and undercover measures
+q13_2,4,For the Investigation
+q13_2,5,For the economic and financial police
+q13_2,6,For more patrolling policemen
+q13_2,7,For the courts to assure speedier trials
+q13_2,8,For breaking the drug production and dealing networks
+q13_2,9,For increasing the capacity of prisons
+q13_3,1,"Technical equipment for the police - cars, choppers, etc."
+q13_3,2,More weapons for the police
+q13_3,3,Surveillance and undercover measures
+q13_3,4,For the Investigation
+q13_3,5,For the economic and financial police
+q13_3,6,For more patrolling policemen
+q13_3,7,For the courts to assure speedier trials
+q13_3,8,For breaking the drug production and dealing networks
+q13_3,9,For increasing the capacity of prisons
+q13_4,1,"Technical equipment for the police - cars, choppers, etc."
+q13_4,2,More weapons for the police
+q13_4,3,Surveillance and undercover measures
+q13_4,4,For the Investigation
+q13_4,5,For the economic and financial police
+q13_4,6,For more patrolling policemen
+q13_4,7,For the courts to assure speedier trials
+q13_4,8,For breaking the drug production and dealing networks
+q13_4,9,For increasing the capacity of prisons
+q13_5,1,"Technical equipment for the police - cars, choppers, etc."
+q13_5,2,More weapons for the police
+q13_5,3,Surveillance and undercover measures
+q13_5,4,For the Investigation
+q13_5,5,For the economic and financial police
+q13_5,6,For more patrolling policemen
+q13_5,7,For the courts to assure speedier trials
+q13_5,8,For breaking the drug production and dealing networks
+q13_5,9,For increasing the capacity of prisons
+q13_6,1,"Technical equipment for the police - cars, choppers, etc."
+q13_6,2,More weapons for the police
+q13_6,3,Surveillance and undercover measures
+q13_6,4,For the Investigation
+q13_6,5,For the economic and financial police
+q13_6,6,For more patrolling policemen
+q13_6,7,For the courts to assure speedier trials
+q13_6,8,For breaking the drug production and dealing networks
+q13_6,9,For increasing the capacity of prisons
+q13_7,1,"Technical equipment for the police - cars, choppers, etc."
+q13_7,2,More weapons for the police
+q13_7,3,Surveillance and undercover measures
+q13_7,4,For the Investigation
+q13_7,5,For the economic and financial police
+q13_7,6,For more patrolling policemen
+q13_7,7,For the courts to assure speedier trials
+q13_7,8,For breaking the drug production and dealing networks
+q13_7,9,For increasing the capacity of prisons
+q13_8,1,"Technical equipment for the police - cars, choppers, etc."
+q13_8,2,More weapons for the police
+q13_8,3,Surveillance and undercover measures
+q13_8,4,For the Investigation
+q13_8,5,For the economic and financial police
+q13_8,6,For more patrolling policemen
+q13_8,7,For the courts to assure speedier trials
+q13_8,8,For breaking the drug production and dealing networks
+q13_8,9,For increasing the capacity of prisons
+q13_9,1,"Technical equipment for the police - cars, choppers, etc."
+q13_9,2,More weapons for the police
+q13_9,3,Surveillance and undercover measures
+q13_9,4,For the Investigation
+q13_9,5,For the economic and financial police
+q13_9,6,For more patrolling policemen
+q13_9,7,For the courts to assure speedier trials
+q13_9,8,For breaking the drug production and dealing networks
+q13_9,9,For increasing the capacity of prisons
+q13_1p,1,"technical equipment for the police - cars, choppers, etc."
+q13_1p,2,more weapons for the police
+q13_1p,3,surveillance and undercover measures
+q13_1p,4,for the investigation
+q13_1p,5,for the economic and financial police
+q13_1p,6,for more patrolling policemen
+q13_1p,7,for the courts to assure speedier trials
+q13_1p,8,for breaking the drug production and dealing networks
+q13_1p,9,for increasing the capacity of prisons
+q13_2p,1,"technical equipment for the police - cars, choppers, etc."
+q13_2p,2,more weapons for the police
+q13_2p,3,surveillance and undercover measures
+q13_2p,4,for the investigation
+q13_2p,5,for the economic and financial police
+q13_2p,6,for more patrolling policemen
+q13_2p,7,for the courts to assure speedier trials
+q13_2p,8,for breaking the drug production and dealing networks
+q13_2p,9,for increasing the capacity of prisons
+q13_3p,1,"technical equipment for the police - cars, choppers, etc."
+q13_3p,2,more weapons for the police
+q13_3p,3,surveillance and undercover measures
+q13_3p,4,for the investigation
+q13_3p,5,for the economic and financial police
+q13_3p,6,for more patrolling policemen
+q13_3p,7,for the courts to assure speedier trials
+q13_3p,8,for breaking the drug production and dealing networks
+q13_3p,9,for increasing the capacity of prisons
+q13_4p,1,"technical equipment for the police - cars, choppers, etc."
+q13_4p,2,more weapons for the police
+q13_4p,3,surveillance and undercover measures
+q13_4p,4,for the investigation
+q13_4p,5,for the economic and financial police
+q13_4p,6,for more patrolling policemen
+q13_4p,7,for the courts to assure speedier trials
+q13_4p,8,for breaking the drug production and dealing networks
+q13_4p,9,for increasing the capacity of prisons
+q13_5p,1,"technical equipment for the police - cars, choppers, etc."
+q13_5p,2,more weapons for the police
+q13_5p,3,surveillance and undercover measures
+q13_5p,4,for the investigation
+q13_5p,5,for the economic and financial police
+q13_5p,6,for more patrolling policemen
+q13_5p,7,for the courts to assure speedier trials
+q13_5p,8,for breaking the drug production and dealing networks
+q13_5p,9,for increasing the capacity of prisons
+q13_6p,1,"technical equipment for the police - cars, choppers, etc."
+q13_6p,2,more weapons for the police
+q13_6p,3,surveillance and undercover measures
+q13_6p,4,for the investigation
+q13_6p,5,for the economic and financial police
+q13_6p,6,for more patrolling policemen
+q13_6p,7,for the courts to assure speedier trials
+q13_6p,8,for breaking the drug production and dealing networks
+q13_6p,9,for increasing the capacity of prisons
+q13_7p,1,"technical equipment for the police - cars, choppers, etc."
+q13_7p,2,more weapons for the police
+q13_7p,3,surveillance and undercover measures
+q13_7p,4,for the investigation
+q13_7p,5,for the economic and financial police
+q13_7p,6,for more patrolling policemen
+q13_7p,7,for the courts to assure speedier trials
+q13_7p,8,for breaking the drug production and dealing networks
+q13_7p,9,for increasing the capacity of prisons
+q13_8p,1,"technical equipment for the police - cars, choppers, etc."
+q13_8p,2,more weapons for the police
+q13_8p,3,surveillance and undercover measures
+q13_8p,4,for the investigation
+q13_8p,5,for the economic and financial police
+q13_8p,6,for more patrolling policemen
+q13_8p,7,for the courts to assure speedier trials
+q13_8p,8,for breaking the drug production and dealing networks
+q13_8p,9,for increasing the capacity of prisons
+q13_9p,1,"technical equipment for the police - cars, choppers, etc."
+q13_9p,2,more weapons for the police
+q13_9p,3,surveillance and undercover measures
+q13_9p,4,for the investigation
+q13_9p,5,for the economic and financial police
+q13_9p,6,for more patrolling policemen
+q13_9p,7,for the courts to assure speedier trials
+q13_9p,8,for breaking the drug production and dealing networks
+q13_9p,9,for increasing the capacity of prisons
+q14_1,1,Strongly disagree
+q14_1,2,Somewhat disagree
+q14_1,3,Neither
+q14_1,4,Somewhat agree
+q14_1,5,Strongly agree
+q14_1,99,Can't say
+q14_2,1,Strongly disagree
+q14_2,2,Somewhat disagree
+q14_2,3,Neither
+q14_2,4,Somewhat agree
+q14_2,5,Strongly agree
+q14_2,99,Can't say
+q14_3,1,Strongly disagree
+q14_3,2,Somewhat disagree
+q14_3,3,Neither
+q14_3,4,Somewhat agree
+q14_3,5,Strongly agree
+q14_3,99,Can't say
+q14_4,1,Strongly disagree
+q14_4,2,Somewhat disagree
+q14_4,3,Neither
+q14_4,4,Somewhat agree
+q14_4,5,Strongly agree
+q14_4,99,Can't say
+q14_1p,1,strongly disagree
+q14_1p,2,somewhat disagree
+q14_1p,3,neither
+q14_1p,4,somewhat agree
+q14_1p,5,strongly agree
+q14_1p,99,can't say
+q14_2p,1,strongly disagree
+q14_2p,2,somewhat disagree
+q14_2p,3,neither
+q14_2p,4,somewhat agree
+q14_2p,5,strongly agree
+q14_2p,99,can't say
+q14_3p,1,strongly disagree
+q14_3p,2,somewhat disagree
+q14_3p,3,neither
+q14_3p,4,somewhat agree
+q14_3p,5,strongly agree
+q14_3p,99,can't say
+q14_4p,1,strongly disagree
+q14_4p,2,somewhat disagree
+q14_4p,3,neither
+q14_4p,4,somewhat agree
+q14_4p,5,strongly agree
+q14_4p,99,can't say
+q15_1,1,Strongly disagree
+q15_1,2,Somewhat disagree
+q15_1,3,Neither
+q15_1,4,Somewhat agree
+q15_1,5,Strongly agree
+q15_1,99,Can't say
+q15_2,1,Strongly disagree
+q15_2,2,Somewhat disagree
+q15_2,3,Neither
+q15_2,4,Somewhat agree
+q15_2,5,Strongly agree
+q15_2,99,Can't say
+q15_3,1,Strongly disagree
+q15_3,2,Somewhat disagree
+q15_3,3,Neither
+q15_3,4,Somewhat agree
+q15_3,5,Strongly agree
+q15_3,99,Can't say
+q15_4,1,Strongly disagree
+q15_4,2,Somewhat disagree
+q15_4,3,Neither
+q15_4,4,Somewhat agree
+q15_4,5,Strongly agree
+q15_4,99,Can't say
+q15_5,1,Strongly disagree
+q15_5,2,Somewhat disagree
+q15_5,3,Neither
+q15_5,4,Somewhat agree
+q15_5,5,Strongly agree
+q15_5,99,Can't say
+q15_6,1,Strongly disagree
+q15_6,2,Somewhat disagree
+q15_6,3,Neither
+q15_6,4,Somewhat agree
+q15_6,5,Strongly agree
+q15_6,99,Can't say
+q15_1p,1,strongly disagree
+q15_1p,2,somewhat disagree
+q15_1p,3,neither
+q15_1p,4,somewhat agree
+q15_1p,5,strongly agree
+q15_1p,99,can't say
+q15_2p,1,strongly disagree
+q15_2p,2,somewhat disagree
+q15_2p,3,neither
+q15_2p,4,somewhat agree
+q15_2p,5,strongly agree
+q15_2p,99,can't say
+q15_3p,1,strongly disagree
+q15_3p,2,somewhat disagree
+q15_3p,3,neither
+q15_3p,4,somewhat agree
+q15_3p,5,strongly agree
+q15_3p,99,can't say
+q15_4p,1,strongly disagree
+q15_4p,2,somewhat disagree
+q15_4p,3,neither
+q15_4p,4,somewhat agree
+q15_4p,5,strongly agree
+q15_4p,99,can't say
+q15_5p,1,strongly disagree
+q15_5p,2,somewhat disagree
+q15_5p,3,neither
+q15_5p,4,somewhat agree
+q15_5p,5,strongly agree
+q15_5p,99,can't say
+q15_6p,1,strongly disagree
+q15_6p,2,somewhat disagree
+q15_6p,3,neither
+q15_6p,4,somewhat agree
+q15_6p,5,strongly agree
+q15_6p,99,can't say
+q16p,1,the first statement
+q16p,2,the first rather than the second
+q16p,3,both
+q16p,4,the second rather than the first
+q16p,5,the second statement
+q16p,99,can't say
+q17_1,1,Strongly disagree
+q17_1,2,Somewhat disagree
+q17_1,3,Neither
+q17_1,4,Somewhat agree
+q17_1,5,Strongly agree
+q17_1,99,Can't say
+q17_2,1,Strongly disagree
+q17_2,2,Somewhat disagree
+q17_2,3,Neither
+q17_2,4,Somewhat agree
+q17_2,5,Strongly agree
+q17_2,99,Can't say
+q17_3,1,Strongly disagree
+q17_3,2,Somewhat disagree
+q17_3,3,Neither
+q17_3,4,Somewhat agree
+q17_3,5,Strongly agree
+q17_3,99,Can't say
+q17_4,1,Strongly disagree
+q17_4,2,Somewhat disagree
+q17_4,3,Neither
+q17_4,4,Somewhat agree
+q17_4,5,Strongly agree
+q17_4,99,Can't say
+q17_1p,1,strongly disagree
+q17_1p,2,somewhat disagree
+q17_1p,3,neither
+q17_1p,4,somewhat agree
+q17_1p,5,strongly agree
+q17_1p,99,can't say
+q17_2p,1,strongly disagree
+q17_2p,2,somewhat disagree
+q17_2p,3,neither
+q17_2p,4,somewhat agree
+q17_2p,5,strongly agree
+q17_2p,99,can't say
+q17_3p,1,strongly disagree
+q17_3p,2,somewhat disagree
+q17_3p,3,neither
+q17_3p,4,somewhat agree
+q17_3p,5,strongly agree
+q17_3p,99,can't say
+q17_4p,1,strongly disagree
+q17_4p,2,somewhat disagree
+q17_4p,3,neither
+q17_4p,4,somewhat agree
+q17_4p,5,strongly agree
+q17_4p,99,can't say
+q18p,1,strongly agree
+q18p,2,somewhat agree
+q18p,3,somewhat disagree
+q18p,4,strongly disagree
+q18p,99,can't say
+q19p,1,strongly agree
+q19p,2,somewhat agree
+q19p,3,somewhat disagree
+q19p,4,strongly disagree
+q19p,99,can't say
+q1p,1,safer
+q1p,2,neither
+q1p,3,less safe
+q1p,99,can't say
+q2_1,1,Common
+q2_1,2,Sometimes
+q2_1,3,Rare
+q2_1,4,Does not happen
+q2_1,99,I don't know
+q2_2,1,Common
+q2_2,2,Sometimes
+q2_2,3,Rare
+q2_2,4,Does not happen
+q2_2,99,I don't know
+q2_3,1,Common
+q2_3,2,Sometimes
+q2_3,3,Rare
+q2_3,4,Does not happen
+q2_3,99,I don't know
+q2_4,1,Common
+q2_4,2,Sometimes
+q2_4,3,Rare
+q2_4,4,Does not happen
+q2_4,99,I don't know
+q2_5,1,Common
+q2_5,2,Sometimes
+q2_5,3,Rare
+q2_5,4,Does not happen
+q2_5,99,I don't know
+q2_6,1,Common
+q2_6,2,Sometimes
+q2_6,3,Rare
+q2_6,4,Does not happen
+q2_6,99,I don't know
+q2_7,1,Common
+q2_7,2,Sometimes
+q2_7,3,Rare
+q2_7,4,Does not happen
+q2_7,99,I don't know
+q2_8,1,Common
+q2_8,2,Sometimes
+q2_8,3,Rare
+q2_8,4,Does not happen
+q2_8,99,I don't know
+q2_1p,1,common
+q2_1p,2,sometimes
+q2_1p,3,rare
+q2_1p,4,does not happen
+q2_1p,99,i don't know
+q2_2p,1,common
+q2_2p,2,sometimes
+q2_2p,3,rare
+q2_2p,4,does not happen
+q2_2p,99,i don't know
+q2_3p,1,common
+q2_3p,2,sometimes
+q2_3p,3,rare
+q2_3p,4,does not happen
+q2_3p,99,i don't know
+q2_4p,1,common
+q2_4p,2,sometimes
+q2_4p,3,rare
+q2_4p,4,does not happen
+q2_4p,99,i don't know
+q2_5p,1,common
+q2_5p,2,sometimes
+q2_5p,3,rare
+q2_5p,4,does not happen
+q2_5p,99,i don't know
+q2_6p,1,common
+q2_6p,2,sometimes
+q2_6p,3,rare
+q2_6p,4,does not happen
+q2_6p,99,i don't know
+q2_7p,1,common
+q2_7p,2,sometimes
+q2_7p,3,rare
+q2_7p,4,does not happen
+q2_7p,99,i don't know
+q2_8p,1,common
+q2_8p,2,sometimes
+q2_8p,3,rare
+q2_8p,4,does not happen
+q2_8p,99,i don't know
+q20p,1,the first statement
+q20p,2,the first rather than the second
+q20p,3,both
+q20p,4,the second rather than the first
+q20p,5,the second statement
+q20p,99,can't say
+q21p,1,"the system is good, the problem is with the people in it"
+q21p,2,what is necessary is institutional changes
+q21p,3,can't say
+q22p,1,it is better if the investigation service is within the mi
+q22p,2,it is better if the investigation service remains independen
+q22p,3,can't say
+q23p,1,the prosecution should be part of the executive branch
+q23p,2,the prosecution should remain as it is now
+q23p,3,the prosecution should be accountable to parliament
+q23p,4,can't say
+q24_1,1,Strongly disagree
+q24_1,2,Somewhat disagree
+q24_1,3,Neither
+q24_1,4,Somewhat agree
+q24_1,5,Strongly agree
+q24_1,99,Can't say
+q24_2,1,Strongly disagree
+q24_2,2,Somewhat disagree
+q24_2,3,Neither
+q24_2,4,Somewhat agree
+q24_2,5,Strongly agree
+q24_2,99,Can't say
+q24_3,1,Strongly disagree
+q24_3,2,Somewhat disagree
+q24_3,3,Neither
+q24_3,4,Somewhat agree
+q24_3,5,Strongly agree
+q24_3,99,Can't say
+q24_4,1,Strongly disagree
+q24_4,2,Somewhat disagree
+q24_4,3,Neither
+q24_4,4,Somewhat agree
+q24_4,5,Strongly agree
+q24_4,99,Can't say
+q24_1p,1,strongly disagree
+q24_1p,2,somewhat disagree
+q24_1p,3,neither
+q24_1p,4,somewhat agree
+q24_1p,5,strongly agree
+q24_1p,99,can't say
+q24_2p,1,strongly disagree
+q24_2p,2,somewhat disagree
+q24_2p,3,neither
+q24_2p,4,somewhat agree
+q24_2p,5,strongly agree
+q24_2p,99,can't say
+q24_3p,1,strongly disagree
+q24_3p,2,somewhat disagree
+q24_3p,3,neither
+q24_3p,4,somewhat agree
+q24_3p,5,strongly agree
+q24_3p,99,can't say
+q24_4p,1,strongly disagree
+q24_4p,2,somewhat disagree
+q24_4p,3,neither
+q24_4p,4,somewhat agree
+q24_4p,5,strongly agree
+q24_4p,99,can't say
+q25_1,1,Strongly disagree
+q25_1,2,Somewhat disagree
+q25_1,3,Neither
+q25_1,4,Somewhat agree
+q25_1,5,Strongly agree
+q25_1,99,Can't say
+q25_2,1,Strongly disagree
+q25_2,2,Somewhat disagree
+q25_2,3,Neither
+q25_2,4,Somewhat agree
+q25_2,5,Strongly agree
+q25_2,99,Can't say
+q25_3,1,Strongly disagree
+q25_3,2,Somewhat disagree
+q25_3,3,Neither
+q25_3,4,Somewhat agree
+q25_3,5,Strongly agree
+q25_3,99,Can't say
+q25_4,1,Strongly disagree
+q25_4,2,Somewhat disagree
+q25_4,3,Neither
+q25_4,4,Somewhat agree
+q25_4,5,Strongly agree
+q25_4,99,Can't say
+q25_5,1,Strongly disagree
+q25_5,2,Somewhat disagree
+q25_5,3,Neither
+q25_5,4,Somewhat agree
+q25_5,5,Strongly agree
+q25_5,99,Can't say
+q25_6,1,Strongly disagree
+q25_6,2,Somewhat disagree
+q25_6,3,Neither
+q25_6,4,Somewhat agree
+q25_6,5,Strongly agree
+q25_6,99,Can't say
+q25_7,1,Strongly disagree
+q25_7,2,Somewhat disagree
+q25_7,3,Neither
+q25_7,4,Somewhat agree
+q25_7,5,Strongly agree
+q25_7,99,Can't say
+q25_8,1,Strongly disagree
+q25_8,2,Somewhat disagree
+q25_8,3,Neither
+q25_8,4,Somewhat agree
+q25_8,5,Strongly agree
+q25_8,99,Can't say
+q25_9,1,Strongly disagree
+q25_9,2,Somewhat disagree
+q25_9,3,Neither
+q25_9,4,Somewhat agree
+q25_9,5,Strongly agree
+q25_9,99,Can't say
+q25_1p,1,strongly disagree
+q25_1p,2,somewhat disagree
+q25_1p,3,neither
+q25_1p,4,somewhat agree
+q25_1p,5,strongly agree
+q25_1p,99,can't say
+q25_2p,1,strongly disagree
+q25_2p,2,somewhat disagree
+q25_2p,3,neither
+q25_2p,4,somewhat agree
+q25_2p,5,strongly agree
+q25_2p,99,can't say
+q25_3p,1,strongly disagree
+q25_3p,2,somewhat disagree
+q25_3p,3,neither
+q25_3p,4,somewhat agree
+q25_3p,5,strongly agree
+q25_3p,99,can't say
+q25_4p,1,strongly disagree
+q25_4p,2,somewhat disagree
+q25_4p,3,neither
+q25_4p,4,somewhat agree
+q25_4p,5,strongly agree
+q25_4p,99,can't say
+q25_5p,1,strongly disagree
+q25_5p,2,somewhat disagree
+q25_5p,3,neither
+q25_5p,4,somewhat agree
+q25_5p,5,strongly agree
+q25_5p,99,can't say
+q25_6p,1,strongly disagree
+q25_6p,2,somewhat disagree
+q25_6p,3,neither
+q25_6p,4,somewhat agree
+q25_6p,5,strongly agree
+q25_6p,99,can't say
+q25_7p,1,strongly disagree
+q25_7p,2,somewhat disagree
+q25_7p,3,neither
+q25_7p,4,somewhat agree
+q25_7p,5,strongly agree
+q25_7p,99,can't say
+q25_8p,1,strongly disagree
+q25_8p,2,somewhat disagree
+q25_8p,3,neither
+q25_8p,4,somewhat agree
+q25_8p,5,strongly agree
+q25_8p,99,can't say
+q25_9p,1,strongly disagree
+q25_9p,2,somewhat disagree
+q25_9p,3,neither
+q25_9p,4,somewhat agree
+q25_9p,5,strongly agree
+q25_9p,99,can't say
+q26_1,1,Strongly disagree
+q26_1,2,Somewhat disagree
+q26_1,3,Neither
+q26_1,4,Somewhat agree
+q26_1,5,Strongly agree
+q26_1,99,Can't say
+q26_2,1,Strongly disagree
+q26_2,2,Somewhat disagree
+q26_2,3,Neither
+q26_2,4,Somewhat agree
+q26_2,5,Strongly agree
+q26_2,99,Can't say
+q26_3,1,Strongly disagree
+q26_3,2,Somewhat disagree
+q26_3,3,Neither
+q26_3,4,Somewhat agree
+q26_3,5,Strongly agree
+q26_3,99,Can't say
+q26_4,1,Strongly disagree
+q26_4,2,Somewhat disagree
+q26_4,3,Neither
+q26_4,4,Somewhat agree
+q26_4,5,Strongly agree
+q26_4,99,Can't say
+q26_5,1,Strongly disagree
+q26_5,2,Somewhat disagree
+q26_5,3,Neither
+q26_5,4,Somewhat agree
+q26_5,5,Strongly agree
+q26_5,99,Can't say
+q26_1p,1,strongly disagree
+q26_1p,2,somewhat disagree
+q26_1p,3,neither
+q26_1p,4,somewhat agree
+q26_1p,5,strongly agree
+q26_1p,99,can't say
+q26_2p,1,strongly disagree
+q26_2p,2,somewhat disagree
+q26_2p,3,neither
+q26_2p,4,somewhat agree
+q26_2p,5,strongly agree
+q26_2p,99,can't say
+q26_3p,1,strongly disagree
+q26_3p,2,somewhat disagree
+q26_3p,3,neither
+q26_3p,4,somewhat agree
+q26_3p,5,strongly agree
+q26_3p,99,can't say
+q26_4p,1,strongly disagree
+q26_4p,2,somewhat disagree
+q26_4p,3,neither
+q26_4p,4,somewhat agree
+q26_4p,5,strongly agree
+q26_4p,99,can't say
+q26_5p,1,strongly disagree
+q26_5p,2,somewhat disagree
+q26_5p,3,neither
+q26_5p,4,somewhat agree
+q26_5p,5,strongly agree
+q26_5p,99,can't say
+q27_1,1,Strongly disagree
+q27_1,2,Somewhat disagree
+q27_1,3,Neither
+q27_1,4,Somewhat agree
+q27_1,5,Strongly agree
+q27_1,99,Can't say
+q27_2,1,Strongly disagree
+q27_2,2,Somewhat disagree
+q27_2,3,Neither
+q27_2,4,Somewhat agree
+q27_2,5,Strongly agree
+q27_2,99,Can't say
+q27_3,1,Strongly disagree
+q27_3,2,Somewhat disagree
+q27_3,3,Neither
+q27_3,4,Somewhat agree
+q27_3,5,Strongly agree
+q27_3,99,Can't say
+q27_4,1,Strongly disagree
+q27_4,2,Somewhat disagree
+q27_4,3,Neither
+q27_4,4,Somewhat agree
+q27_4,5,Strongly agree
+q27_4,99,Can't say
+q27_5,1,Strongly disagree
+q27_5,2,Somewhat disagree
+q27_5,3,Neither
+q27_5,4,Somewhat agree
+q27_5,5,Strongly agree
+q27_5,99,Can't say
+q27_6,1,Strongly disagree
+q27_6,2,Somewhat disagree
+q27_6,3,Neither
+q27_6,4,Somewhat agree
+q27_6,5,Strongly agree
+q27_6,99,Can't say
+q27_7,1,Strongly disagree
+q27_7,2,Somewhat disagree
+q27_7,3,Neither
+q27_7,4,Somewhat agree
+q27_7,5,Strongly agree
+q27_7,99,Can't say
+q27_1p,1,strongly disagree
+q27_1p,2,somewhat disagree
+q27_1p,3,neither
+q27_1p,4,somewhat agree
+q27_1p,5,strongly agree
+q27_1p,99,can't say
+q27_2p,1,strongly disagree
+q27_2p,2,somewhat disagree
+q27_2p,3,neither
+q27_2p,4,somewhat agree
+q27_2p,5,strongly agree
+q27_2p,99,can't say
+q27_3p,1,strongly disagree
+q27_3p,2,somewhat disagree
+q27_3p,3,neither
+q27_3p,4,somewhat agree
+q27_3p,5,strongly agree
+q27_3p,99,can't say
+q27_4p,1,strongly disagree
+q27_4p,2,somewhat disagree
+q27_4p,3,neither
+q27_4p,4,somewhat agree
+q27_4p,5,strongly agree
+q27_4p,99,can't say
+q27_5p,1,strongly disagree
+q27_5p,2,somewhat disagree
+q27_5p,3,neither
+q27_5p,4,somewhat agree
+q27_5p,5,strongly agree
+q27_5p,99,can't say
+q27_6p,1,strongly disagree
+q27_6p,2,somewhat disagree
+q27_6p,3,neither
+q27_6p,4,somewhat agree
+q27_6p,5,strongly agree
+q27_6p,99,can't say
+q27_7p,1,strongly disagree
+q27_7p,2,somewhat disagree
+q27_7p,3,neither
+q27_7p,4,somewhat agree
+q27_7p,5,strongly agree
+q27_7p,99,can't say
+q28p,1,entirely right
+q28p,2,right
+q28p,3,wrong
+q28p,4,entirely wrong
+q28p,99,can't say
+q29p,1,national movement simeon ii
+q29p,2,united democratic forces
+q29p,3,the bulgarian socialist party
+q29p,4,the movement for rights and freedoms
+q29p,5,other
+q29p,6,none
+q29p,7,can't tell
+q30p,1,extreme left
+q30p,10,extreme right
+q31p,1,extreme left
+q31p,10,extreme right
+q32p,1,extreme left
+q32p,10,extreme right
+q33p,1,extreme left
+q33p,10,extreme right
+q34p,1,extreme left
+q34p,10,extreme right
+q35_1,1,Strongly disagree
+q35_1,2,Somewhat disagree
+q35_1,3,Neither
+q35_1,4,Somewhat agree
+q35_1,5,Strongly agree
+q35_1,99,Can't say
+q35_2,1,Strongly disagree
+q35_2,2,Somewhat disagree
+q35_2,3,Neither
+q35_2,4,Somewhat agree
+q35_2,5,Strongly agree
+q35_2,99,Can't say
+q35_3,1,Strongly disagree
+q35_3,2,Somewhat disagree
+q35_3,3,Neither
+q35_3,4,Somewhat agree
+q35_3,5,Strongly agree
+q35_3,99,Can't say
+q35_4,1,Strongly disagree
+q35_4,2,Somewhat disagree
+q35_4,3,Neither
+q35_4,4,Somewhat agree
+q35_4,5,Strongly agree
+q35_4,99,Can't say
+q35_5,1,Strongly disagree
+q35_5,2,Somewhat disagree
+q35_5,3,Neither
+q35_5,4,Somewhat agree
+q35_5,5,Strongly agree
+q35_5,99,Can't say
+q35_6,1,Strongly disagree
+q35_6,2,Somewhat disagree
+q35_6,3,Neither
+q35_6,4,Somewhat agree
+q35_6,5,Strongly agree
+q35_6,99,Can't say
+q35_7,1,Strongly disagree
+q35_7,2,Somewhat disagree
+q35_7,3,Neither
+q35_7,4,Somewhat agree
+q35_7,5,Strongly agree
+q35_7,99,Can't say
+q35_60,1,strongly disagree
+q35_60,2,somewhat disagree
+q35_60,3,neither
+q35_60,4,somewhat agree
+q35_60,5,strongly agree
+q35_60,99,can't say
+q35_1p,1,strongly disagree
+q35_1p,2,somewhat disagree
+q35_1p,3,neither
+q35_1p,4,somewhat agree
+q35_1p,5,strongly agree
+q35_1p,99,can't say
+q35_2p,1,strongly disagree
+q35_2p,2,somewhat disagree
+q35_2p,3,neither
+q35_2p,4,somewhat agree
+q35_2p,5,strongly agree
+q35_2p,99,can't say
+q35_3p,1,strongly disagree
+q35_3p,2,somewhat disagree
+q35_3p,3,neither
+q35_3p,4,somewhat agree
+q35_3p,5,strongly agree
+q35_3p,99,can't say
+q35_4p,1,strongly disagree
+q35_4p,2,somewhat disagree
+q35_4p,3,neither
+q35_4p,4,somewhat agree
+q35_4p,5,strongly agree
+q35_4p,99,can't say
+q35_5p,1,strongly disagree
+q35_5p,2,somewhat disagree
+q35_5p,3,neither
+q35_5p,4,somewhat agree
+q35_5p,5,strongly agree
+q35_5p,99,can't say
+q35_7p,1,strongly disagree
+q35_7p,2,somewhat disagree
+q35_7p,3,neither
+q35_7p,4,somewhat agree
+q35_7p,5,strongly agree
+q35_7p,99,can't say
+q36_1,1,Hard core supporter
+q36_1,2,Moderate
+q36_1,3,Do not support a party
+q36_1,99,Can't say
+q36_2,1,Hard core supporter
+q36_2,2,Moderate
+q36_2,3,Do not support a party
+q36_2,99,Can't say
+q36_3,1,Hard core supporter
+q36_3,2,Moderate
+q36_3,3,Do not support a party
+q36_3,99,Can't say
+q36_4,1,Hard core supporter
+q36_4,2,Moderate
+q36_4,3,Do not support a party
+q36_4,99,Can't say
+q36_5,1,Hard core supporter
+q36_5,2,Moderate
+q36_5,3,Do not support a party
+q36_5,99,Can't say
+q36_88,88,Do not support a political party
+q36_1p,1,hard core supporter
+q36_1p,2,moderate
+q36_1p,3,do not support a party
+q36_1p,99,can't say
+q36_2p,1,hard core supporter
+q36_2p,2,moderate
+q36_2p,3,do not support a party
+q36_2p,99,can't say
+q36_3p,1,hard core supporter
+q36_3p,2,moderate
+q36_3p,3,do not support a party
+q36_3p,99,can't say
+q36_4p,1,hard core supporter
+q36_4p,2,moderate
+q36_4p,3,do not support a party
+q36_4p,99,can't say
+q36_5p,1,hard core supporter
+q36_5p,2,moderate
+q36_5p,3,do not support a party
+q36_5p,99,can't say
+q36_88p,88,do not support a political party
+q37p,1,to a great extent
+q37p,2,to some extent
+q37p,3,very little
+q37p,99,not interested
+q38_1p,1,generally a waste of time
+q38_1p,10,extremely valuable
+q38_2p,1,generally a waste of time
+q38_2p,10,extremely valuable
+q38_3p,1,generally a waste of time
+q38_3p,10,extremely valuable
+q38_4p,1,generally a waste of time
+q38_4p,10,extremely valuable
+q38_5p,1,generally a waste of time
+q38_5p,10,extremely valuable
+q39_1p,1,strongly disagree
+q39_1p,2,somewhat disagree
+q39_1p,3,neither
+q39_1p,4,somewhat agree
+q39_1p,5,strongly agree
+q39_1p,99,can't say
+q39_2p,1,strongly disagree
+q39_2p,2,somewhat disagree
+q39_2p,3,neither
+q39_2p,4,somewhat agree
+q39_2p,5,strongly agree
+q39_2p,99,can't say
+q39_3p,1,strongly disagree
+q39_3p,2,somewhat disagree
+q39_3p,3,neither
+q39_3p,4,somewhat agree
+q39_3p,5,strongly agree
+q39_3p,99,can't say
+q39_4p,1,strongly disagree
+q39_4p,2,somewhat disagree
+q39_4p,3,neither
+q39_4p,4,somewhat agree
+q39_4p,5,strongly agree
+q39_4p,99,can't say
+q39_5p,1,strongly disagree
+q39_5p,2,somewhat disagree
+q39_5p,3,neither
+q39_5p,4,somewhat agree
+q39_5p,5,strongly agree
+q39_5p,99,can't say
+q39_6p,1,strongly disagree
+q39_6p,2,somewhat disagree
+q39_6p,3,neither
+q39_6p,4,somewhat agree
+q39_6p,5,strongly agree
+q39_6p,99,can't say
+q39_7p,1,strongly disagree
+q39_7p,2,somewhat disagree
+q39_7p,3,neither
+q39_7p,4,somewhat agree
+q39_7p,5,strongly agree
+q39_7p,99,can't say
+q3p,1,very much
+q3p,2,somewhat
+q3p,3,not much
+q3p,99,i am not interested
+q40p,1,a great deal
+q40p,2,some
+q40p,3,a little
+q40p,4,almost nothing at all
+q40p,99,can't say
+q41p,1,didn't read or just glanced at them
+q41p,2,read less than half of them
+q41p,3,read about half of them
+q41p,4,read more than half of them
+q41p,5,read all or nearly all of them
+q42_1p,1,much less than usual
+q42_1p,2,less than usual
+q42_1p,3,about as much as usual
+q42_1p,4,more than usual
+q42_1p,5,much more than usual
+q42_1p,99,can't say
+q42_2p,1,much less than usual
+q42_2p,2,less than usual
+q42_2p,3,about as much as usual
+q42_2p,4,more than usual
+q42_2p,5,much more than usual
+q42_2p,99,can't say
+q42_3p,1,much less than usual
+q42_3p,2,less than usual
+q42_3p,3,about as much as usual
+q42_3p,4,more than usual
+q42_3p,5,much more than usual
+q42_3p,99,can't say
+q4ap,99,no
+q5_1,1,Very unlikely
+q5_1,2,Somewhat unlikely
+q5_1,3,"Neither likely, nor unlikely"
+q5_1,4,Somewhat likely
+q5_1,5,Very likely
+q5_1,99,Can't say
+q5_2,1,Very unlikely
+q5_2,2,Somewhat unlikely
+q5_2,3,"Neither likely, nor unlikely"
+q5_2,4,Somewhat likely
+q5_2,5,Very likely
+q5_2,99,Can't say
+q5_3,1,Very unlikely
+q5_3,2,Somewhat unlikely
+q5_3,3,"Neither likely, nor unlikely"
+q5_3,4,Somewhat likely
+q5_3,5,Very likely
+q5_3,99,Can't say
+q5_4,1,Very unlikely
+q5_4,2,Somewhat unlikely
+q5_4,3,"Neither likely, nor unlikely"
+q5_4,4,Somewhat likely
+q5_4,5,Very likely
+q5_4,99,Can't say
+q5_1p,1,very unlikely
+q5_1p,2,somewhat unlikely
+q5_1p,3,"neither likely, nor unlikely"
+q5_1p,4,somewhat likely
+q5_1p,5,very likely
+q5_1p,99,can't say
+q5_2p,1,very unlikely
+q5_2p,2,somewhat unlikely
+q5_2p,3,"neither likely, nor unlikely"
+q5_2p,4,somewhat likely
+q5_2p,5,very likely
+q5_2p,99,can't say
+q5_3p,1,very unlikely
+q5_3p,2,somewhat unlikely
+q5_3p,3,"neither likely, nor unlikely"
+q5_3p,4,somewhat likely
+q5_3p,5,very likely
+q5_3p,99,can't say
+q5_4p,1,very unlikely
+q5_4p,2,somewhat unlikely
+q5_4p,3,"neither likely, nor unlikely"
+q5_4p,4,somewhat likely
+q5_4p,5,very likely
+q5_4p,99,can't say
+q6p,0,no answer
+q6p,1,yes
+q6p,2,no
+q7p,0,no answer
+q7p,1,yes
+q7p,2,no
+q8_1,1,Very inefficient
+q8_1,2,Somewhat inefficient
+q8_1,3,Neither
+q8_1,4,Somewhat efficient
+q8_1,5,Very efficient
+q8_1,99,Can't say
+q8_2,1,Very inefficient
+q8_2,2,Somewhat inefficient
+q8_2,3,"Neither efficient, nor inefficient"
+q8_2,4,Somewhat efficient
+q8_2,5,Very efficient
+q8_2,99,Can't say
+q8_3,1,Very inefficient
+q8_3,2,Somewhat inefficient
+q8_3,3,"Neither efficient, nor inefficient"
+q8_3,4,Somewhat efficient
+q8_3,5,Very efficient
+q8_3,99,Can't say
+q8_4,1,Very inefficient
+q8_4,2,Somewhat inefficient
+q8_4,3,"Neither efficient, nor inefficient"
+q8_4,4,Somewhat efficient
+q8_4,5,Very efficient
+q8_4,99,Can't say
+q8_5,1,Very inefficient
+q8_5,2,Somewhat inefficient
+q8_5,3,"Neither efficient, nor inefficient"
+q8_5,4,Somewhat efficient
+q8_5,5,Very efficient
+q8_5,99,Can't say
+q8_6,1,Very inefficient
+q8_6,2,Somewhat inefficient
+q8_6,3,"Neither efficient, nor inefficient"
+q8_6,4,Somewhat efficient
+q8_6,5,Very efficient
+q8_6,99,Can't say
+q8_7,1,Very inefficient
+q8_7,2,Somewhat inefficient
+q8_7,3,"Neither efficient, nor inefficient"
+q8_7,4,Somewhat efficient
+q8_7,5,Very efficient
+q8_7,99,Can't say
+q8_8,1,Very inefficient
+q8_8,2,Somewhat inefficient
+q8_8,3,"Neither efficient, nor inefficient"
+q8_8,4,Somewhat efficient
+q8_8,5,Very efficient
+q8_8,99,Can't say
+q8_9,1,Very inefficient
+q8_9,2,Somewhat inefficient
+q8_9,3,"Neither efficient, nor inefficient"
+q8_9,4,Somewhat efficient
+q8_9,5,Very efficient
+q8_9,99,Can't say
+q8_10,1,Very inefficient
+q8_10,2,Somewhat inefficient
+q8_10,3,"Neither efficient, nor inefficient"
+q8_10,4,Somewhat efficient
+q8_10,5,Very efficient
+q8_10,99,Can't say
+q8_11,1,Very inefficient
+q8_11,2,Somewhat inefficient
+q8_11,3,"Neither efficient, nor inefficient"
+q8_11,4,Somewhat efficient
+q8_11,5,Very efficient
+q8_11,99,Can't say
+q8_10p,1,very inefficient
+q8_10p,2,somewhat inefficient
+q8_10p,3,"neither efficient, nor inefficient"
+q8_10p,4,somewhat efficient
+q8_10p,5,very efficient
+q8_10p,99,can't say
+q8_11p,1,very inefficient
+q8_11p,2,somewhat inefficient
+q8_11p,3,"neither efficient, nor inefficient"
+q8_11p,4,somewhat efficient
+q8_11p,5,very efficient
+q8_11p,99,can't say
+q8_1p,1,very inefficient
+q8_1p,2,somewhat inefficient
+q8_1p,3,neither
+q8_1p,4,somewhat efficient
+q8_1p,5,very efficient
+q8_1p,99,can't say
+q8_2p,1,very inefficient
+q8_2p,2,somewhat inefficient
+q8_2p,3,"neither efficient, nor inefficient"
+q8_2p,4,somewhat efficient
+q8_2p,5,very efficient
+q8_2p,99,can't say
+q8_3p,1,very inefficient
+q8_3p,2,somewhat inefficient
+q8_3p,3,"neither efficient, nor inefficient"
+q8_3p,4,somewhat efficient
+q8_3p,5,very efficient
+q8_3p,99,can't say
+q8_4p,1,very inefficient
+q8_4p,2,somewhat inefficient
+q8_4p,3,"neither efficient, nor inefficient"
+q8_4p,4,somewhat efficient
+q8_4p,5,very efficient
+q8_4p,99,can't say
+q8_5p,1,very inefficient
+q8_5p,2,somewhat inefficient
+q8_5p,3,"neither efficient, nor inefficient"
+q8_5p,4,somewhat efficient
+q8_5p,5,very efficient
+q8_5p,99,can't say
+q8_6p,1,very inefficient
+q8_6p,2,somewhat inefficient
+q8_6p,3,"neither efficient, nor inefficient"
+q8_6p,4,somewhat efficient
+q8_6p,5,very efficient
+q8_6p,99,can't say
+q8_7p,1,very inefficient
+q8_7p,2,somewhat inefficient
+q8_7p,3,"neither efficient, nor inefficient"
+q8_7p,4,somewhat efficient
+q8_7p,5,very efficient
+q8_7p,99,can't say
+q8_8p,1,very inefficient
+q8_8p,2,somewhat inefficient
+q8_8p,3,"neither efficient, nor inefficient"
+q8_8p,4,somewhat efficient
+q8_8p,5,very efficient
+q8_8p,99,can't say
+q8_9p,1,very inefficient
+q8_9p,2,somewhat inefficient
+q8_9p,3,"neither efficient, nor inefficient"
+q8_9p,4,somewhat efficient
+q8_9p,5,very efficient
+q8_9p,99,can't say
+q9p,1,crime is dependent on drug trafficking to a great extent
+q9p,2,crime is dependent on drug trafficking to some extent
+q9p,3,crime is dependent on drug trafficking to a lesser extent
+q9p,4,crime is not at all dependent on drug trafficking
+q9p,99,can't say
+religio,1,Orthodox Christian
+religio,2,Muslim
+religio,3,Other
+religio,4,None
+religiop,1,orthodox christian
+religiop,2,muslim
+religiop,3,other
+religiop,4,none
+sector,1,Public
+sector,2,Private
+sector,3,"Do not work at the moment/pensioner, unemployed, student.../"
+sectorp,1,public
+sectorp,2,private
+sectorp,3,"do not work at the moment/pensioner, unemployed, student.../"
+sem,1,Married
+sem,2,Living as married
+sem,3,Single
+sem,4,Divorced/separated/widowed
+semp,1,married
+semp,2,living as married
+semp,3,single
+semp,4,divorced/separated/widowed
+sex,1,Male
+sex,2,Female
+sexp,1,male
+sexp,2,female
+type,1,Sofia
+type,2,Regional center
+type,3,Small town
+type,4,Village
+typep,1,sofia
+typep,2,regional center
+typep,3,small town
+typep,4,village

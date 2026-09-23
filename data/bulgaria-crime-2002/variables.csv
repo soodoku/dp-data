@@ -1,0 +1,534 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+@_merge,double,numeric,,,F8.0,,,TRUE,Retained
+age,double,haven_labelled|vctrs_vctr|double,,Age,F8.0,,,TRUE,Retained
+age_ful0,double,numeric,,,F8.0,,,TRUE,Retained
+age_full,double,numeric,,,F8.0,,,TRUE,Retained
+agep,double,haven_labelled|vctrs_vctr|double,,age,F8.0,,,TRUE,Retained
+bulgaria,double,numeric,,,F9.2,,,TRUE,Retained
+card_id,double,numeric,,,F8.0,,,TRUE,Retained
+card_idp,double,numeric,,,F8.0,,,TRUE,Retained
+ch_age1,double,numeric,,If there are children 18 or under please record their age?The age of the first c,F8.0,,,TRUE,Retained
+ch_age2,double,numeric,,If there are children 18 or under please record their age?The age of the second,F8.0,,,TRUE,Retained
+ch_age3,double,numeric,,If there are children 18 or under please record their age?The age of the third c,F8.0,,,TRUE,Retained
+ch_age4,double,numeric,,If there are children 18 or under please record their age?The age of the fourth,F8.0,,,TRUE,Retained
+children,double,haven_labelled|vctrs_vctr|double,,Do you have children aged 18 or younger living in this household?,F8.0,,,TRUE,Retained
+edu,double,haven_labelled|vctrs_vctr|double,,Education:,F8.0,,,TRUE,Retained
+educolle,double,numeric,,,F9.2,,,TRUE,Retained
+edup,double,haven_labelled|vctrs_vctr|double,,education:,F8.0,,,TRUE,Retained
+ethnos,double,haven_labelled|vctrs_vctr|double,,Ethnicity,F8.0,,,TRUE,Retained
+ethnosp,double,haven_labelled|vctrs_vctr|double,,ethnicity,F8.0,,,TRUE,Retained
+gender,double,numeric,,"1=male, 2=female",F9.2,,,TRUE,Retained
+group,double,haven_labelled|vctrs_vctr|double,,Occupation,F8.0,,,TRUE,Retained
+group0,double,numeric,,,F9.2,,,TRUE,Retained
+groupp,double,haven_labelled|vctrs_vctr|double,,occupation,F8.0,,,TRUE,Retained
+id,double,numeric,,,F8.0,,,TRUE,Retained
+idp,double,numeric,,,F8.0,,,TRUE,Retained
+inc150pl,double,numeric,,,F9.2,,,TRUE,Retained
+incomes,double,haven_labelled|vctrs_vctr|double,,Approximate monthly income per household member:,F8.0,,,TRUE,Retained
+incomesp,double,haven_labelled|vctrs_vctr|double,,approximate monthly income per household member:,F8.0,,,TRUE,Retained
+q1,double,haven_labelled|vctrs_vctr|double,,Do you feel more or less safe about yourself in the area that you live in compar,F8.0,,,TRUE,Retained
+q3,double,haven_labelled|vctrs_vctr|double,,Are you interested in the issues related to crime?,F8.0,,,TRUE,Retained
+q6,double,haven_labelled|vctrs_vctr|double,,In the past two year /since September 2000/ have you are anyone else in your fam,F8.0,,,TRUE,Retained
+q7,double,haven_labelled|vctrs_vctr|double,,"If you or a member of family were a victim of crime, did you report it to the po",F8.0,,,TRUE,Retained
+q9,double,haven_labelled|vctrs_vctr|double,,In your opinion how does drug trafficking and dealing affect the crime rate in B,F8.0,,,TRUE,Retained
+q11,double,haven_labelled|vctrs_vctr|double,,Which of the following two statements would you support? /about young drug users,F8.0,,,TRUE,Retained
+q16,double,haven_labelled|vctrs_vctr|double,,Which of the following two positions do you support? about taking the law in peo,F8.0,,,TRUE,Retained
+q18,double,haven_labelled|vctrs_vctr|double,,More powers to the police to detain and question suspects will result in improve,F8.0,,,TRUE,Retained
+q19,double,haven_labelled|vctrs_vctr|double,,The death penalty is the only punishment for certain types of crime?,F8.0,,,TRUE,Retained
+q20,double,haven_labelled|vctrs_vctr|double,,Which of the following is worse? It is worse to convict an innocent man-It is wo,F8.0,,,TRUE,Retained
+q21,double,haven_labelled|vctrs_vctr|double,,Which is closest to yours?,F8.0,,,TRUE,Retained
+q22,double,haven_labelled|vctrs_vctr|double,,In your opinion:,F8.0,,,TRUE,Retained
+q23,double,haven_labelled|vctrs_vctr|double,,Which of the following opinions is closest to yours?,F8.0,,,TRUE,Retained
+q28,double,haven_labelled|vctrs_vctr|double,,"In your opinion, the government's overall policy for fighting crime is heading i",F8.0,,,TRUE,Retained
+q29,double,haven_labelled|vctrs_vctr|double,,Which party has the clearest positions regarding the measures that are necessary,F8.0,,,TRUE,Retained
+q30,double,haven_labelled|vctrs_vctr|double,,How would you rate your political views on a left - right scale?,F8.0,,,TRUE,Retained
+q31,double,haven_labelled|vctrs_vctr|double,,Where would you put NMS on this scale?,F8.0,,,TRUE,Retained
+q32,double,haven_labelled|vctrs_vctr|double,,Where would you put UDF on this scale?,F8.0,,,TRUE,Retained
+q33,double,haven_labelled|vctrs_vctr|double,,Where would you put BSP on this scale?,F8.0,,,TRUE,Retained
+q34,double,haven_labelled|vctrs_vctr|double,,Where would you put MRF on this scale?,F8.0,,,TRUE,Retained
+q37,double,haven_labelled|vctrs_vctr|double,,To what extent are you interested in politics?,F8.0,,,TRUE,Retained
+q10_1,double,haven_labelled|vctrs_vctr|double,,"The so called ""soft"" drugs like cannabis should be legalized and sold at special",F8.0,,,TRUE,Retained
+q10_2,double,haven_labelled|vctrs_vctr|double,,Hard drugs like heroin should be legalized and sold at special places,F8.0,,,TRUE,Retained
+q10_3,double,haven_labelled|vctrs_vctr|double,,"There should be penalties not only for drug dealing, but also for drug taking",F8.0,,,TRUE,Retained
+q10_4,double,haven_labelled|vctrs_vctr|double,,More money to be allocated for breaking the drug trafficking networks,F8.0,,,TRUE,Retained
+q10_1p,double,haven_labelled|vctrs_vctr|double,,"the so called ""soft"" drugs like cannabis should be legalized and sold at special",F8.0,,,TRUE,Retained
+q10_2p,double,haven_labelled|vctrs_vctr|double,,hard drugs like heroin should be legalized and sold at special places,F8.0,,,TRUE,Retained
+q10_3p,double,haven_labelled|vctrs_vctr|double,,"there should be penalties not only for drug dealing, but also for drug taking",F8.0,,,TRUE,Retained
+q10_4p,double,haven_labelled|vctrs_vctr|double,,more money to be allocated for breaking the drug trafficking networks,F8.0,,,TRUE,Retained
+q11p,double,haven_labelled|vctrs_vctr|double,,which of the following two statements would you support? /about young drug users,F8.0,,,TRUE,Retained
+q12_1,double,haven_labelled|vctrs_vctr|double,,"If a policeman wants to detain a citizen for questioning at any time, the citize",F8.0,,,TRUE,Retained
+q12_2,double,haven_labelled|vctrs_vctr|double,,The Court has the right to detain suspects as long as needed to prove if they ar,F8.0,,,TRUE,Retained
+q12_3,double,haven_labelled|vctrs_vctr|double,,"The prosecution has the right to detain suspects, until the crime is solved",F8.0,,,TRUE,Retained
+q12_4,double,haven_labelled|vctrs_vctr|double,,The Chief Prosecutor is responsible and accountable to Parliament,F8.0,,,TRUE,Retained
+q12_5,double,haven_labelled|vctrs_vctr|double,,The police do not have the right to use violence against a detainee even if prov,F8.0,,,TRUE,Retained
+q12_6,double,haven_labelled|vctrs_vctr|double,,The police has the right to keep you in detention for three days,F8.0,,,TRUE,Retained
+q12_7,double,haven_labelled|vctrs_vctr|double,,A confession is not enough to find the defendant guilty,F8.0,,,TRUE,Retained
+q12_1p,double,haven_labelled|vctrs_vctr|double,,"if a policeman wants to detain a citizen for questioning at any time, the citize",F8.0,,,TRUE,Retained
+q12_2p,double,haven_labelled|vctrs_vctr|double,,the court has the right to detain suspects as long as needed to prove if they ar,F8.0,,,TRUE,Retained
+q12_3p,double,haven_labelled|vctrs_vctr|double,,"the prosecution has the right to detain suspects, until the crime is solved",F8.0,,,TRUE,Retained
+q12_4p,double,haven_labelled|vctrs_vctr|double,,the chief prosecutor is responsible and accountable to parliament,F8.0,,,TRUE,Retained
+q12_5p,double,haven_labelled|vctrs_vctr|double,,the police do not have the right to use violence against a detainee even if prov,F8.0,,,TRUE,Retained
+q12_6p,double,haven_labelled|vctrs_vctr|double,,the police has the right to keep you in detention for three days,F8.0,,,TRUE,Retained
+q12_7p,double,haven_labelled|vctrs_vctr|double,,a confession is not enough to find the defendant guilty,F8.0,,,TRUE,Retained
+q13_1,double,haven_labelled|vctrs_vctr|double,,"In your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q13_2,double,haven_labelled|vctrs_vctr|double,,"In your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q13_3,double,haven_labelled|vctrs_vctr|double,,"In your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q13_4,double,haven_labelled|vctrs_vctr|double,,"In your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q13_5,double,haven_labelled|vctrs_vctr|double,,"In your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q13_6,double,haven_labelled|vctrs_vctr|double,,"In your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q13_7,double,haven_labelled|vctrs_vctr|double,,"In your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q13_8,double,haven_labelled|vctrs_vctr|double,,"In your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q13_9,double,haven_labelled|vctrs_vctr|double,,"In your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q13_1p,double,haven_labelled|vctrs_vctr|double,,"in your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q13_2p,double,haven_labelled|vctrs_vctr|double,,"in your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q13_3p,double,haven_labelled|vctrs_vctr|double,,"in your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q13_4p,double,haven_labelled|vctrs_vctr|double,,"in your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q13_5p,double,haven_labelled|vctrs_vctr|double,,"in your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q13_6p,double,haven_labelled|vctrs_vctr|double,,"in your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q13_7p,double,haven_labelled|vctrs_vctr|double,,"in your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q13_8p,double,haven_labelled|vctrs_vctr|double,,"in your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q13_9p,double,haven_labelled|vctrs_vctr|double,,"in your opinion, if the government has to choose, which of the following activit",F8.0,,,TRUE,Retained
+q14_1,double,haven_labelled|vctrs_vctr|double,,Keeping more defendants in custody reduces the number of crimes.,F8.0,,,TRUE,Retained
+q14_2,double,haven_labelled|vctrs_vctr|double,,Keeping a defendant in custody is not a guarantee that the defendant will be con,F8.0,,,TRUE,Retained
+q14_3,double,haven_labelled|vctrs_vctr|double,,Softer custody restriction for first time offenders or juveniles encourages crim,F8.0,,,TRUE,Retained
+q14_4,double,haven_labelled|vctrs_vctr|double,,People should be kept in detention only as a last resort because the stay in pri,F8.0,,,TRUE,Retained
+q14_1p,double,haven_labelled|vctrs_vctr|double,,keeping more defendants in custody reduces the number of crimes.,F8.0,,,TRUE,Retained
+q14_2p,double,haven_labelled|vctrs_vctr|double,,keeping a defendant in custody is not a guarantee that the defendant will be con,F8.0,,,TRUE,Retained
+q14_3p,double,haven_labelled|vctrs_vctr|double,,softer custody restriction for first time offenders or juveniles encourages crim,F8.0,,,TRUE,Retained
+q14_4p,double,haven_labelled|vctrs_vctr|double,,people should be kept in detention only as a last resort because the stay in pri,F8.0,,,TRUE,Retained
+q15_1,double,haven_labelled|vctrs_vctr|double,,Keep defendants in detention even when they are not proven guilty,F8.0,,,TRUE,Retained
+q15_2,double,haven_labelled|vctrs_vctr|double,,The laws and courts should be less on the side of the defendants,F8.0,,,TRUE,Retained
+q15_3,double,haven_labelled|vctrs_vctr|double,,Defendants should not be treated as innocent until proven guilty,F8.0,,,TRUE,Retained
+q15_4,double,haven_labelled|vctrs_vctr|double,,A confession should not be deemed as evidence of guilt,F8.0,,,TRUE,Retained
+q15_5,double,haven_labelled|vctrs_vctr|double,,The laws and regulations regarding collection of evidence should be strictly obs,F8.0,,,TRUE,Retained
+q15_6,double,haven_labelled|vctrs_vctr|double,,A constitutional amendment needs to be passed to make the law enforcement more e,F8.0,,,TRUE,Retained
+q15_1p,double,haven_labelled|vctrs_vctr|double,,keep defendants in detention even when they are not proven guilty,F8.0,,,TRUE,Retained
+q15_2p,double,haven_labelled|vctrs_vctr|double,,the laws and courts should be less on the side of the defendants,F8.0,,,TRUE,Retained
+q15_3p,double,haven_labelled|vctrs_vctr|double,,defendants should not be treated as innocent until proven guilty,F8.0,,,TRUE,Retained
+q15_4p,double,haven_labelled|vctrs_vctr|double,,a confession should not be deemed as evidence of guilt,F8.0,,,TRUE,Retained
+q15_5p,double,haven_labelled|vctrs_vctr|double,,the laws and regulations regarding collection of evidence should be strictly obs,F8.0,,,TRUE,Retained
+q15_6p,double,haven_labelled|vctrs_vctr|double,,a constitutional amendment needs to be passed to make the law enforcement more e,F8.0,,,TRUE,Retained
+q16p,double,haven_labelled|vctrs_vctr|double,,which of the following two positions do you support? about taking the law in peo,F8.0,,,TRUE,Retained
+q17_1,double,haven_labelled|vctrs_vctr|double,,The police should sometimes be able to resort to violence to get a conviction an,F8.0,,,TRUE,Retained
+q17_2,double,haven_labelled|vctrs_vctr|double,,Violence is acceptable only if it results in a confession by the offenders,F8.0,,,TRUE,Retained
+q17_3,double,haven_labelled|vctrs_vctr|double,,"Every citizen, including the offender, has rights and the police has to observe",F8.0,,,TRUE,Retained
+q17_4,double,haven_labelled|vctrs_vctr|double,,"If someone has broken the law, the police does not have to observe his/her right",F8.0,,,TRUE,Retained
+q17_1p,double,haven_labelled|vctrs_vctr|double,,the police should sometimes be able to resort to violence to get a conviction an,F8.0,,,TRUE,Retained
+q17_2p,double,haven_labelled|vctrs_vctr|double,,violence is acceptable only if it results in a confession by the offenders,F8.0,,,TRUE,Retained
+q17_3p,double,haven_labelled|vctrs_vctr|double,,"every citizen, including the offender, has rights and the police has to observe",F8.0,,,TRUE,Retained
+q17_4p,double,haven_labelled|vctrs_vctr|double,,"if someone has broken the law, the police does not have to observe his/her right",F8.0,,,TRUE,Retained
+q18p,double,haven_labelled|vctrs_vctr|double,,more powers to the police to detain and question suspects will result in improve,F8.0,,,TRUE,Retained
+q19p,double,haven_labelled|vctrs_vctr|double,,the death penalty is the only punishment for certain types of crime?,F8.0,,,TRUE,Retained
+q1p,double,haven_labelled|vctrs_vctr|double,,do you feel more or less safe about yourself in the area that you live in compar,F8.0,,,TRUE,Retained
+q2_1,double,haven_labelled|vctrs_vctr|double,,Burglaries,F8.0,,,TRUE,Retained
+q2_2,double,haven_labelled|vctrs_vctr|double,,Car theft,F8.0,,,TRUE,Retained
+q2_3,double,haven_labelled|vctrs_vctr|double,,Drug sales,F8.0,,,TRUE,Retained
+q2_4,double,haven_labelled|vctrs_vctr|double,,Assaults in the streets at night,F8.0,,,TRUE,Retained
+q2_5,double,haven_labelled|vctrs_vctr|double,,"Violent crimes - rapes, murders",F8.0,,,TRUE,Retained
+q2_6,double,haven_labelled|vctrs_vctr|double,,Shootings between organized crime groupings,F8.0,,,TRUE,Retained
+q2_7,double,haven_labelled|vctrs_vctr|double,,"Bribes, abuse of power /corruption",F8.0,,,TRUE,Retained
+q2_8,double,haven_labelled|vctrs_vctr|double,,"Economic crimes /illegal privatization, illegal construction, etc./",F8.0,,,TRUE,Retained
+q2_1p,double,haven_labelled|vctrs_vctr|double,,burglaries,F8.0,,,TRUE,Retained
+q2_2p,double,haven_labelled|vctrs_vctr|double,,car theft,F8.0,,,TRUE,Retained
+q2_3p,double,haven_labelled|vctrs_vctr|double,,drug sales,F8.0,,,TRUE,Retained
+q2_4p,double,haven_labelled|vctrs_vctr|double,,assaults in the streets at night,F8.0,,,TRUE,Retained
+q2_5p,double,haven_labelled|vctrs_vctr|double,,"violent crimes - rapes, murders",F8.0,,,TRUE,Retained
+q2_6p,double,haven_labelled|vctrs_vctr|double,,shootings between organized crime groupings,F8.0,,,TRUE,Retained
+q2_7p,double,haven_labelled|vctrs_vctr|double,,"bribes, abuse of power /corruption",F8.0,,,TRUE,Retained
+q2_8p,double,haven_labelled|vctrs_vctr|double,,"economic crimes /illegal privatization, illegal construction, etc./",F8.0,,,TRUE,Retained
+q20p,double,haven_labelled|vctrs_vctr|double,,which of the following is worse? it is worse to convict an innocent man-it is wo,F8.0,,,TRUE,Retained
+q21p,double,haven_labelled|vctrs_vctr|double,,which is closest to yours?,F8.0,,,TRUE,Retained
+q22p,double,haven_labelled|vctrs_vctr|double,,in your opinion:,F8.0,,,TRUE,Retained
+q23p,double,haven_labelled|vctrs_vctr|double,,which of the following opinions is closest to yours?,F8.0,,,TRUE,Retained
+q24_1,double,haven_labelled|vctrs_vctr|double,,Media should provide information even about the most heinous of crimes,F8.0,,,TRUE,Retained
+q24_2,double,haven_labelled|vctrs_vctr|double,,Violence shown by the media triggers off similar behavior in young people and ch,F8.0,,,TRUE,Retained
+q24_3,double,haven_labelled|vctrs_vctr|double,,The media should carefully check their stories before publishing even if that ta,F8.0,,,TRUE,Retained
+q24_4,double,haven_labelled|vctrs_vctr|double,,It is more important for the media to provide quick information even if that wou,F8.0,,,TRUE,Retained
+q24_1p,double,haven_labelled|vctrs_vctr|double,,media should provide information even about the most heinous of crimes,F8.0,,,TRUE,Retained
+q24_2p,double,haven_labelled|vctrs_vctr|double,,violence shown by the media triggers off similar behavior in young people and ch,F8.0,,,TRUE,Retained
+q24_3p,double,haven_labelled|vctrs_vctr|double,,the media should carefully check their stories before publishing even if that ta,F8.0,,,TRUE,Retained
+q24_4p,double,haven_labelled|vctrs_vctr|double,,it is more important for the media to provide quick information even if that wou,F8.0,,,TRUE,Retained
+q25_1,double,haven_labelled|vctrs_vctr|double,,Police often detains people without evidence that they have committed a crime,F8.0,,,TRUE,Retained
+q25_2,double,haven_labelled|vctrs_vctr|double,,Prisons in Bulgaria are overcrowded,F8.0,,,TRUE,Retained
+q25_3,double,haven_labelled|vctrs_vctr|double,,Keeping a prisoner in prison costs too much to the taxpayer,F8.0,,,TRUE,Retained
+q25_4,double,haven_labelled|vctrs_vctr|double,,The prison term changes the offender for the better,F8.0,,,TRUE,Retained
+q25_5,double,haven_labelled|vctrs_vctr|double,,The courts release a great number of offenders without sufficient argumentation,F8.0,,,TRUE,Retained
+q25_6,double,haven_labelled|vctrs_vctr|double,,The most serious obstacle to convicting the offenders is insufficient evidence,F8.0,,,TRUE,Retained
+q25_7,double,haven_labelled|vctrs_vctr|double,,The prosecution does not exert sufficient control over the investigation,F8.0,,,TRUE,Retained
+q25_8,double,haven_labelled|vctrs_vctr|double,,The social conditions in Bulgaria make people commit crimes,F8.0,,,TRUE,Retained
+q25_9,double,haven_labelled|vctrs_vctr|double,,Everybody in Bulgaria is equal before the law,F8.0,,,TRUE,Retained
+q25_1p,double,haven_labelled|vctrs_vctr|double,,police often detains people without evidence that they have committed a crime,F8.0,,,TRUE,Retained
+q25_2p,double,haven_labelled|vctrs_vctr|double,,prisons in bulgaria are overcrowded,F8.0,,,TRUE,Retained
+q25_3p,double,haven_labelled|vctrs_vctr|double,,keeping a prisoner in prison costs too much to the taxpayer,F8.0,,,TRUE,Retained
+q25_4p,double,haven_labelled|vctrs_vctr|double,,the prison term changes the offender for the better,F8.0,,,TRUE,Retained
+q25_5p,double,haven_labelled|vctrs_vctr|double,,the courts release a great number of offenders without sufficient argumentation,F8.0,,,TRUE,Retained
+q25_6p,double,haven_labelled|vctrs_vctr|double,,the most serious obstacle to convicting the offenders is insufficient evidence,F8.0,,,TRUE,Retained
+q25_7p,double,haven_labelled|vctrs_vctr|double,,the prosecution does not exert sufficient control over the investigation,F8.0,,,TRUE,Retained
+q25_8p,double,haven_labelled|vctrs_vctr|double,,the social conditions in bulgaria make people commit crimes,F8.0,,,TRUE,Retained
+q25_9p,double,haven_labelled|vctrs_vctr|double,,everybody in bulgaria is equal before the law,F8.0,,,TRUE,Retained
+q26_1,double,haven_labelled|vctrs_vctr|double,,Law needs to be observed even if you do not agree with it,F8.0,,,TRUE,Retained
+q26_2,double,haven_labelled|vctrs_vctr|double,,The judgment about right and wrong depends on the situation,F8.0,,,TRUE,Retained
+q26_3,double,haven_labelled|vctrs_vctr|double,,People do what they consider right even if the others do not agree with them,F8.0,,,TRUE,Retained
+q26_4,double,haven_labelled|vctrs_vctr|double,,People should learn to cope on their own and not rely on other people,F8.0,,,TRUE,Retained
+q26_5,double,haven_labelled|vctrs_vctr|double,,People have the right to use violence if forced to,F8.0,,,TRUE,Retained
+q26_1p,double,haven_labelled|vctrs_vctr|double,,law needs to be observed even if you do not agree with it,F8.0,,,TRUE,Retained
+q26_2p,double,haven_labelled|vctrs_vctr|double,,the judgment about right and wrong depends on the situation,F8.0,,,TRUE,Retained
+q26_3p,double,haven_labelled|vctrs_vctr|double,,people do what they consider right even if the others do not agree with them,F8.0,,,TRUE,Retained
+q26_4p,double,haven_labelled|vctrs_vctr|double,,people should learn to cope on their own and not rely on other people,F8.0,,,TRUE,Retained
+q26_5p,double,haven_labelled|vctrs_vctr|double,,people have the right to use violence if forced to,F8.0,,,TRUE,Retained
+q27_1,double,haven_labelled|vctrs_vctr|double,,Those people do not have enough information,F8.0,,,TRUE,Retained
+q27_2,double,haven_labelled|vctrs_vctr|double,,They have different views on the advantages and disadvantages of a given measure,F8.0,,,TRUE,Retained
+q27_3,double,haven_labelled|vctrs_vctr|double,,They do not think carefully enough about the issues,F8.0,,,TRUE,Retained
+q27_4,double,haven_labelled|vctrs_vctr|double,,They have different views about life,F8.0,,,TRUE,Retained
+q27_5,double,haven_labelled|vctrs_vctr|double,,They would not give up on their initial views,F8.0,,,TRUE,Retained
+q27_6,double,haven_labelled|vctrs_vctr|double,,They only care about their personal interest,F8.0,,,TRUE,Retained
+q27_7,double,haven_labelled|vctrs_vctr|double,,They are lead by party interests,F8.0,,,TRUE,Retained
+q27_1p,double,haven_labelled|vctrs_vctr|double,,those people do not have enough information,F8.0,,,TRUE,Retained
+q27_2p,double,haven_labelled|vctrs_vctr|double,,they have different views on the advantages and disadvantages of a given measure,F8.0,,,TRUE,Retained
+q27_3p,double,haven_labelled|vctrs_vctr|double,,they do not think carefully enough about the issues,F8.0,,,TRUE,Retained
+q27_4p,double,haven_labelled|vctrs_vctr|double,,they have different views about life,F8.0,,,TRUE,Retained
+q27_5p,double,haven_labelled|vctrs_vctr|double,,they would not give up on their initial views,F8.0,,,TRUE,Retained
+q27_6p,double,haven_labelled|vctrs_vctr|double,,they only care about their personal interest,F8.0,,,TRUE,Retained
+q27_7p,double,haven_labelled|vctrs_vctr|double,,they are lead by party interests,F8.0,,,TRUE,Retained
+q28p,double,haven_labelled|vctrs_vctr|double,,"in your opinion, the government's overall policy for fighting crime is heading i",F8.0,,,TRUE,Retained
+q29p,double,haven_labelled|vctrs_vctr|double,,which party has the clearest positions regarding the measures that are necessary,F8.0,,,TRUE,Retained
+q30p,double,haven_labelled|vctrs_vctr|double,,how would you rate your political views on a left - right scale?,F8.0,,,TRUE,Retained
+q31p,double,haven_labelled|vctrs_vctr|double,,where would you put nms on this scale?,F8.0,,,TRUE,Retained
+q32p,double,haven_labelled|vctrs_vctr|double,,where would you put udf on this scale?,F8.0,,,TRUE,Retained
+q33p,double,haven_labelled|vctrs_vctr|double,,where would you put bsp on this scale?,F8.0,,,TRUE,Retained
+q34p,double,haven_labelled|vctrs_vctr|double,,where would you put mrf on this scale?,F8.0,,,TRUE,Retained
+q35_1,double,haven_labelled|vctrs_vctr|double,,It is better to have redistribution of the income in such a manner that there wi,F8.0,,,TRUE,Retained
+q35_2,double,haven_labelled|vctrs_vctr|double,,It is normal some people to earn a lot more than others.,F8.0,,,TRUE,Retained
+q35_3,double,haven_labelled|vctrs_vctr|double,,The politicians do care about what people like me think.,F8.0,,,TRUE,Retained
+q35_4,double,haven_labelled|vctrs_vctr|double,,I would share my views on some policy issues as long as there is someone to list,F8.0,,,TRUE,Retained
+q35_5,double,haven_labelled|vctrs_vctr|double,,"If more people like me express their opinion, the politicians would listen.",F8.0,,,TRUE,Retained
+q35_6,double,haven_labelled|vctrs_vctr|double,,It is important to participate in discussions and meetings about issues that aff,F8.0,,,TRUE,Retained
+q35_7,double,haven_labelled|vctrs_vctr|double,,It makes sense to vote.,F8.0,,,TRUE,Retained
+q35_60,double,haven_labelled|vctrs_vctr|double,,it is important to participate in discussions and meetings about issues that aff,F8.0,,,TRUE,Retained
+q35_1p,double,haven_labelled|vctrs_vctr|double,,it is better to have redistribution of the income in such a manner that there wi,F8.0,,,TRUE,Retained
+q35_2p,double,haven_labelled|vctrs_vctr|double,,it is normal some people to earn a lot more than others.,F8.0,,,TRUE,Retained
+q35_3p,double,haven_labelled|vctrs_vctr|double,,the politicians do care about what people like me think.,F8.0,,,TRUE,Retained
+q35_4p,double,haven_labelled|vctrs_vctr|double,,i would share my views on some policy issues as long as there is someone to list,F8.0,,,TRUE,Retained
+q35_5p,double,haven_labelled|vctrs_vctr|double,,"if more people like me express their opinion, the politicians would listen.",F8.0,,,TRUE,Retained
+q35_7p,double,haven_labelled|vctrs_vctr|double,,it makes sense to vote.,F8.0,,,TRUE,Retained
+q36_1,double,haven_labelled|vctrs_vctr|double,,BSP,F8.0,,,TRUE,Retained
+q36_2,double,haven_labelled|vctrs_vctr|double,,UDF,F8.0,,,TRUE,Retained
+q36_3,double,haven_labelled|vctrs_vctr|double,,NMSII,F8.0,,,TRUE,Retained
+q36_4,double,haven_labelled|vctrs_vctr|double,,MRF,F8.0,,,TRUE,Retained
+q36_5,double,haven_labelled|vctrs_vctr|double,,Other,F8.0,,,TRUE,Retained
+q36_88,double,haven_labelled|vctrs_vctr|double,,What is your political affiliation?,F8.0,,,TRUE,Retained
+q36_1p,double,haven_labelled|vctrs_vctr|double,,bsp,F8.0,,,TRUE,Retained
+q36_2p,double,haven_labelled|vctrs_vctr|double,,udf,F8.0,,,TRUE,Retained
+q36_3p,double,haven_labelled|vctrs_vctr|double,,nmsii,F8.0,,,TRUE,Retained
+q36_4p,double,haven_labelled|vctrs_vctr|double,,mrf,F8.0,,,TRUE,Retained
+q36_5p,double,haven_labelled|vctrs_vctr|double,,other,F8.0,,,TRUE,Retained
+q36_88p,double,haven_labelled|vctrs_vctr|double,,what is your political affiliation?,F8.0,,,TRUE,Retained
+q37p,double,haven_labelled|vctrs_vctr|double,,to what extent are you interested in politics?,F8.0,,,TRUE,Retained
+q38_1p,double,haven_labelled|vctrs_vctr|double,,participating in the small group discussions at the regional dialogue,F8.0,,,TRUE,Retained
+q38_2p,double,haven_labelled|vctrs_vctr|double,,meeting and talking to other delegates outside of the formal discussions,F8.0,,,TRUE,Retained
+q38_3p,double,haven_labelled|vctrs_vctr|double,,the large group sessions with experts,F8.0,,,TRUE,Retained
+q38_4p,double,haven_labelled|vctrs_vctr|double,,the large group sessions with politics,F8.0,,,TRUE,Retained
+q38_5p,double,haven_labelled|vctrs_vctr|double,,the regional dialogue as a whole,F8.0,,,TRUE,Retained
+q39_1p,double,haven_labelled|vctrs_vctr|double,,my small group moderator provided the opportunity for everyone to participate in,F8.0,,,TRUE,Retained
+q39_2p,double,haven_labelled|vctrs_vctr|double,,the members of my small group did in fact participate relatively equally in the,F8.0,,,TRUE,Retained
+q39_3p,double,haven_labelled|vctrs_vctr|double,,my small group moderator sometimes tried to influence the group with his or her,F8.0,,,TRUE,Retained
+q39_4p,double,haven_labelled|vctrs_vctr|double,,the small group moderator tried to make sure that opposing arguments were consid,F8.0,,,TRUE,Retained
+q39_5p,double,haven_labelled|vctrs_vctr|double,,the important aspects of each issue were covered in the group discussions,F8.0,,,TRUE,Retained
+q39_6p,double,haven_labelled|vctrs_vctr|double,,i learned a lot about people very different from me-about what they and their li,F8.0,,,TRUE,Retained
+q39_7p,double,haven_labelled|vctrs_vctr|double,,i discovered that people with views very different from mine often had very good,F8.0,,,TRUE,Retained
+q3p,double,haven_labelled|vctrs_vctr|double,,are you interested in the issues related to crime?,F8.0,,,TRUE,Retained
+q4_1,double,numeric,,"Fighting petty, everyday crime /Ranks according to priority/",F8.0,,,TRUE,Retained
+q4_2,double,numeric,,"Fighting organized crime /drug dealing, organized crime groupings/ Ranks accordi",F8.0,,,TRUE,Retained
+q4_3,double,numeric,,"Fighting economic crime /corruption, illegal privatization, etc./Ranks according",F8.0,,,TRUE,Retained
+q4_1p,double,numeric,,"fighting petty, everyday crime /ranks according to priority/",F8.0,,,TRUE,Retained
+q4_2p,double,numeric,,"fighting organized crime /drug dealing, organized crime groupings/ ranks accordi",F8.0,,,TRUE,Retained
+q4_3p,double,numeric,,"fighting economic crime /corruption, illegal privatization, etc./ranks according",F8.0,,,TRUE,Retained
+q40p,double,haven_labelled|vctrs_vctr|double,,"overall, how much did you learn about the different positions towards discussed",F8.0,,,TRUE,Retained
+q41p,double,haven_labelled|vctrs_vctr|double,,about how much of the discussion materials that were sent to you would you say y,F8.0,,,TRUE,Retained
+q42_1p,double,haven_labelled|vctrs_vctr|double,,read other books or articles relating to the crime,F8.0,,,TRUE,Retained
+q42_2p,double,haven_labelled|vctrs_vctr|double,,"talked with family, friends, colleagues or neighbours about the crime",F8.0,,,TRUE,Retained
+q42_3p,double,haven_labelled|vctrs_vctr|double,,watched or listened to stories on tv or radio about the crime,F8.0,,,TRUE,Retained
+q4ap,double,haven_labelled|vctrs_vctr|double,,do you have children aged 18 or younger living in this household?,F8.0,,,TRUE,Retained
+q4b_1p,double,numeric,,if there are children 18 or under please record their age?the age of the first c,F8.0,,,TRUE,Retained
+q4b_2p,double,numeric,,if there are children 18 or under please record their age?the age of the second,F8.0,,,TRUE,Retained
+q4b_3p,double,numeric,,if there are children 18 or under please record their age?the age of the third c,F8.0,,,TRUE,Retained
+q4b_4p,double,numeric,,if there are children 18 or under please record their age?the age of the fourth,F8.0,,,TRUE,Retained
+q5_1,double,haven_labelled|vctrs_vctr|double,,Your home to be burgled and your property stolen,F8.0,,,TRUE,Retained
+q5_2,double,haven_labelled|vctrs_vctr|double,,You or a member of your family to become a victim of an assault,F8.0,,,TRUE,Retained
+q5_3,double,haven_labelled|vctrs_vctr|double,,"If you become a victim of a crime, the offender will be caught",F8.0,,,TRUE,Retained
+q5_4,double,haven_labelled|vctrs_vctr|double,,The offender will be convicted in court,F8.0,,,TRUE,Retained
+q5_1p,double,haven_labelled|vctrs_vctr|double,,your home to be burgled and your property stolen,F8.0,,,TRUE,Retained
+q5_2p,double,haven_labelled|vctrs_vctr|double,,you or a member of your family to become a victim of an assault,F8.0,,,TRUE,Retained
+q5_3p,double,haven_labelled|vctrs_vctr|double,,"if you become a victim of a crime, the offender will be caught",F8.0,,,TRUE,Retained
+q5_4p,double,haven_labelled|vctrs_vctr|double,,the offender will be convicted in court,F8.0,,,TRUE,Retained
+q6p,double,haven_labelled|vctrs_vctr|double,,in the past two year /since september 2000/ have you are anyone else in your fam,F8.0,,,TRUE,Retained
+q7p,double,haven_labelled|vctrs_vctr|double,,"if you or a member of family were a victim of crime, did you report it to the po",F8.0,,,TRUE,Retained
+q8_1,double,haven_labelled|vctrs_vctr|double,,Reducing poverty and unemployment,F8.0,,,TRUE,Retained
+q8_2,double,haven_labelled|vctrs_vctr|double,,More prevention and community service for juveniles instead of prison sentences,F8.0,,,TRUE,Retained
+q8_3,double,haven_labelled|vctrs_vctr|double,,Introducing tougher custody measures for defendants even for smaller crimes,F8.0,,,TRUE,Retained
+q8_4,double,haven_labelled|vctrs_vctr|double,,Restoring the death penalty,F8.0,,,TRUE,Retained
+q8_5,double,haven_labelled|vctrs_vctr|double,,Tougher sentences for all offenders,F8.0,,,TRUE,Retained
+q8_6,double,haven_labelled|vctrs_vctr|double,,Tougher sentences for juvenile offenders,F8.0,,,TRUE,Retained
+q8_7,double,haven_labelled|vctrs_vctr|double,,Showing less violence in the media,F8.0,,,TRUE,Retained
+q8_8,double,haven_labelled|vctrs_vctr|double,,Programs for adaptation and rehabilitation of prisoners who served their terms,F8.0,,,TRUE,Retained
+q8_9,double,haven_labelled|vctrs_vctr|double,,Restriction of the rights of certain groups exhibiting criminal behavior,F8.0,,,TRUE,Retained
+q8_10,double,haven_labelled|vctrs_vctr|double,,More discipline in the family and in schools,F8.0,,,TRUE,Retained
+q8_11,double,haven_labelled|vctrs_vctr|double,,Speedier trials following a simplified procedure,F8.0,,,TRUE,Retained
+q8_10p,double,haven_labelled|vctrs_vctr|double,,more discipline in the family and in schools,F8.0,,,TRUE,Retained
+q8_11p,double,haven_labelled|vctrs_vctr|double,,speedier trials following a simplified procedure,F8.0,,,TRUE,Retained
+q8_1p,double,haven_labelled|vctrs_vctr|double,,reducing poverty and unemployment,F8.0,,,TRUE,Retained
+q8_2p,double,haven_labelled|vctrs_vctr|double,,more prevention and community service for juveniles instead of prison sentences,F8.0,,,TRUE,Retained
+q8_3p,double,haven_labelled|vctrs_vctr|double,,introducing tougher custody measures for defendants even for smaller crimes,F8.0,,,TRUE,Retained
+q8_4p,double,haven_labelled|vctrs_vctr|double,,restoring the death penalty,F8.0,,,TRUE,Retained
+q8_5p,double,haven_labelled|vctrs_vctr|double,,tougher sentences for all offenders,F8.0,,,TRUE,Retained
+q8_6p,double,haven_labelled|vctrs_vctr|double,,tougher sentences for juvenile offenders,F8.0,,,TRUE,Retained
+q8_7p,double,haven_labelled|vctrs_vctr|double,,showing less violence in the media,F8.0,,,TRUE,Retained
+q8_8p,double,haven_labelled|vctrs_vctr|double,,programs for adaptation and rehabilitation of prisoners who served their terms,F8.0,,,TRUE,Retained
+q8_9p,double,haven_labelled|vctrs_vctr|double,,restriction of the rights of certain groups exhibiting criminal behavior,F8.0,,,TRUE,Retained
+q9p,double,haven_labelled|vctrs_vctr|double,,in your opinion how does drug trafficking and dealing affect the crime rate in b,F8.0,,,TRUE,Retained
+religio,double,haven_labelled|vctrs_vctr|double,,Your religious affiliation,F8.0,,,TRUE,Retained
+religiop,double,haven_labelled|vctrs_vctr|double,,your religious affiliation,F8.0,,,TRUE,Retained
+sector,double,haven_labelled|vctrs_vctr|double,,Employment sector,F8.0,,,TRUE,Retained
+sectorp,double,haven_labelled|vctrs_vctr|double,,employment sector,F8.0,,,TRUE,Retained
+sem,double,haven_labelled|vctrs_vctr|double,,Family status,F8.0,,,TRUE,Retained
+semp,double,haven_labelled|vctrs_vctr|double,,family status,F8.0,,,TRUE,Retained
+sex,double,haven_labelled|vctrs_vctr|double,,Sex,F8.0,,,TRUE,Retained
+sexp,double,haven_labelled|vctrs_vctr|double,,sex,F8.0,,,TRUE,Retained
+t1antia1,double,numeric,,"T1 Anti-Authortarian, 2 variables",F9.2,,,TRUE,Retained
+t1antia0,double,numeric,,"T1 Anti-Authortarian Ver B, 3 variables",F9.2,,,TRUE,Retained
+t1antiau,double,numeric,,T1 Anti-Authoritarian Index - 5 variables,F9.2,,,TRUE,Retained
+t1attcr0,double,numeric,,T1 EV Att Toward Crime Ver B - see draft 5,F9.2,,,TRUE,Retained
+t1attcri,double,numeric,," T1 EV Attitude Toward Crime - 25_1-9, 14_1-3, 9, 24_2",F9.2,,,TRUE,Retained
+t1attpr0,double,numeric,,"T1 Attitude Toward Crime, 2 variables",F9.2,,,TRUE,Retained
+t1attpri,double,numeric,,T1 Attitude Toward Prison,F9.2,,,TRUE,Retained
+t1bsp,double,numeric,,T1 Placement of BSP,F9.2,,,TRUE,Retained
+t1cc,double,numeric,,"T1 Combating Crime Index, 1 =tougher on criminals",F9.2,,,TRUE,Retained
+t1clibe,double,numeric,,"T1 Civil Liberties Ver E, 5 variables",F9.2,,,TRUE,Retained
+t1custod,double,numeric,,"T1 Custody Index, q14_1/2/3",F9.2,,,TRUE,Retained
+t1dlegal,double,numeric,,"T1 Drug Legalization Index, q10_1 & q10_2, 1= legalization",F9.2,,,TRUE,Retained
+t1drugs,double,numeric,,"T1 More on Drugs Index, 10_1, 10_2, 10_4, 11",F9.2,,,TRUE,Retained
+t1drugsb,double,numeric,,T1 More on Drugs Ver B,F9.2,,,TRUE,Retained
+t1ki,double,numeric,,T1 Knowledge Index T/F & L/R,F9.2,,,TRUE,Retained
+t1legals,double,numeric,,,F9.2,,,TRUE,Retained
+t1lessc0,double,numeric,,"T1 Less restrictions on custody, 3 variables",F9.2,,,TRUE,Retained
+t1lesscu,double,numeric,,T1 Less restrictions on custody - 4 variables,F9.2,,,TRUE,Retained
+t1lrplac,double,numeric,,T2 L/R Placement,F9.2,,,TRUE,Retained
+t1mrf,double,numeric,,T1 Placement of MRF,F9.2,,,TRUE,Retained
+t1nms,double,numeric,,T1 Placement of NMS,F9.2,,,TRUE,Retained
+t1pjusti,double,numeric,,,F9.2,,,TRUE,Retained
+t1prisk,double,numeric,,"T1 Perceived Risk Index, 1 = very likely, q5_1, q5_2",F9.2,,,TRUE,Retained
+t1q9,double,numeric,,"T1 recoded Q9, 1=great extent",F9.2,,,TRUE,Retained
+t1q11,double,numeric,," T1 recoded Q11, 1=fighter harder against drugs, including youth",F9.2,,,TRUE,Retained
+t1q18,double,numeric,,"T1 recoded Q18, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q20,double,numeric,,"T1 recoded Q20, 0=A",F9.2,,,TRUE,Retained
+t1q21,double,numeric,," T1 recoded Q21, 1st = 0, 2nd = 1",F9.2,,,TRUE,Retained
+t1q23,double,numeric,,"T1 Place of Prosecution (Q23) Binary, 1 = accountable to Parliament",F9.2,,,TRUE,Retained
+t1q28,double,numeric,,"T1 recoded Q28, 1 =right direction",F9.2,,,TRUE,Retained
+t1q10_1,double,numeric,,"T1 recoded Q10_1, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q10_2,double,numeric,,"T1 recoded Q10_2, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q10_3,double,numeric,,"T1 recoded Q10_3, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q10_4,double,numeric,,"T1 recoded Q10_4, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q10_1r,double,numeric,,"T1 recode 10_1, 1 = strongly disagree",F9.2,,,TRUE,Retained
+t1q10_2r,double,numeric,,"T1 recode 10_2, 1 = strongly disagree",F9.2,,,TRUE,Retained
+t1q10_4r,double,numeric,,"T1 recoded Q10_4, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q12_1,double,numeric,," T1 Q12_1 T/F Q, False=1",F9.2,,,TRUE,Retained
+t1q12_2,double,numeric,," T1 Q12_2 T/F Q, False=1",F9.2,,,TRUE,Retained
+t1q12_3,double,numeric,," T1 Q12_3 T/F Q, False=1",F9.2,,,TRUE,Retained
+t1q12_4,double,numeric,," T1 Q12_4 T/F Q, False=1",F9.2,,,TRUE,Retained
+t1q12_5,double,numeric,," T1 Q12_5 T/F Q, True=1",F9.2,,,TRUE,Retained
+t1q12_6,double,numeric,," T1 Q12_6 T/F Q, False=1",F9.2,,,TRUE,Retained
+t1q12_7,double,numeric,," T1 Q12_7 T/F Q, True=1",F9.2,,,TRUE,Retained
+t1q14_1,double,numeric,,"T1 recoded Q14_1, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q14_2,double,numeric,,"T1 recoded Q14_2, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q14_3,double,numeric,,"T1 recoded Q14_3, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q14_1r,double,numeric,,"T1 recoded Q14_1- 0 to 1 scale, 1=strongly disagree",F9.2,,,TRUE,Retained
+t1q14_3r,double,numeric,,"T1 recoded Q14_3- 0 to 1 scale, 1=strongly disagree",F9.2,,,TRUE,Retained
+t1q15_1,double,numeric,,"T1 recoded Q15_1, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q15_2,double,numeric,,"T1 recoded Q15_2, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q15_3,double,numeric,,"T1 recoded Q15_3, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q15_4,double,numeric,,"T1 recoded Q15_4, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q15_5,double,numeric,,"T1 recoded Q15_5, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q15_6,double,numeric,,"T1 recoded Q15_6, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q15_4r,double,numeric,,"T1 recoded Q15_4, 0 to 1 scale,0=strongly agree",F9.2,,,TRUE,Retained
+t1q15_6r,double,numeric,,"T1 recoded Q15_6, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q16r,double,numeric,,"T1 recoded Q16, 0 = first statement",F9.2,,,TRUE,Retained
+t1q17_1,double,numeric,,"T1 recoded Q17_1, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q17_2,double,numeric,,"T2 recoded Q17_2, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q17_3,double,numeric,,"T1 recoded Q17_3, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q17_4,double,numeric,,"T1 recoded Q17_4, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q17_3r,double,numeric,,"T1 recoded 17_3, 1=strongly DISagree",F9.2,,,TRUE,Retained
+t1q19r,double,numeric,,"T1 recoded Q19, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q22r,double,numeric,,"T1 recoded Q22, 0 = first statement",F9.2,,,TRUE,Retained
+t1q23n,double,numeric,,T1 recoded Q23,F9.2,,,TRUE,Retained
+t1q24_1,double,numeric,,"T2 recoded Q24_1, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q24_2,double,numeric,,"T2 recoded Q24_2, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q24_3,double,numeric,,"T1 recoded Q24_3, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q24_4,double,numeric,,"T1 recoded Q24_4, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q24_1r,double,numeric,,"T1 recoded Q24_1, 0 to 1 scale, 0 = strongly agree",F9.2,,,TRUE,Retained
+t1q24_2r,double,numeric,,"T2 recoded Q24_2, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q24_3r,double,numeric,,"T1 recoded Q24_3, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q24_4r,double,numeric,,"T1 recoded Q24_4, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q25_1,double,numeric,,"T1 recoded Q25_1, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q25_2,double,numeric,,"T1 recoded Q25_2, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q25_3,double,numeric,,"T1 recoded Q25_3, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q25_4,double,numeric,,"T1 recoded Q25_4, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q25_5,double,numeric,,"T1 recoded Q25_5, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q25_6,double,numeric,,"T1 recoded Q25_6, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q25_7,double,numeric,,"T1 recoded Q25_7, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q25_8,double,numeric,,"T1 recoded Q25_8, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q25_9,double,numeric,,"T1 recoded Q25_9, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q25_4r,double,numeric,,"T1 recoded Q25_4 - 0 to 1 scale, 1=strongly disagree",F9.2,,,TRUE,Retained
+t1q25_5r,double,numeric,,"T1 recoded Q25_5 - 0 to 1 scale, 1=strongly disagree",F9.2,,,TRUE,Retained
+t1q25_7r,double,numeric,,"T1 recoded Q25_7 - 0 to 1 scale, 1=strongly disagree",F9.2,,,TRUE,Retained
+t1q26_1,double,numeric,,"T1 recoded Q26_1, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q26_2,double,numeric,,"T1 recoded Q26_2, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q26_3,double,numeric,,"T1 recoded Q26_3, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q26_4,double,numeric,,"T1 recoded Q26_4, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q26_5,double,numeric,,"T1 recoded Q26_5, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q26_2r,double,numeric,,"T1 Q26_2 recoded, 1=strongly disagree",F9.2,,,TRUE,Retained
+t1q26_5r,double,numeric,,"Recoded t1q26_5, 1=strongly disagree",F9.2,,,TRUE,Retained
+t1q5_1,double,numeric,,"T1 recoded Q5_1, 0 to 1 scale, 1=very likely",F9.2,,,TRUE,Retained
+t1q5_2,double,numeric,,"T1 recoded Q5_2, 0 to 1 scale, 1=very likely",F9.2,,,TRUE,Retained
+t1q5_3,double,numeric,,"T1 recoded Q5_3, 0 to 1 scale, 1=very likely",F9.2,,,TRUE,Retained
+t1q5_4,double,numeric,,"T1 recoded Q5_4, 0 to 1 scale, 1=very likely",F9.2,,,TRUE,Retained
+t1q8_1,double,numeric,,"T1 recoded Q8_1, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t1q8_2,double,numeric,,"T2 recoded Q8_2, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t1q8_3,double,numeric,,"T1 recoded Q8_3, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t1q8_4,double,numeric,,"T1 recoded Q8_4, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t1q8_5,double,numeric,,"T1 recoded Q8_5, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t1q8_6,double,numeric,,"T1 recoded Q8_6, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t1q8_7,double,numeric,,"T1 recoded Q8_7, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t1q8_8,double,numeric,,"T1 recoded Q8_8, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t1q8_9,double,numeric,,"T1 recoded Q8_9, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t1q8_10,double,numeric,,"T1 recoded Q8_10, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t1q8_11,double,numeric,,"T1 recoded Q8_11, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t1q8_11r,double,numeric,,"T1 recoded Q8_11, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q8_1r,double,numeric,,"T1 recoded Q8_1, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q8_2r,double,numeric,,"T1 recoded Q8_2, 0 to 1 scale, 1 = very INefficient",F9.2,,,TRUE,Retained
+t1q8_7r,double,numeric,,"T1 recoded Q8_7, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1q8_8r,double,numeric,,"T1 recoded Q8_8, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t1tfknow,double,numeric,,T1 True/False Knowledge Index,F9.2,,,TRUE,Retained
+t1tghpc,double,numeric,,T1 Tougher Punishment Ver C 8_3-8_6),F9.2,,,TRUE,Retained
+t1todrug,double,numeric,,T1 Tougher on Drugs Index,F9.2,,,TRUE,Retained
+t1udf,double,numeric,,T1 Placement of UDF,F9.2,,,TRUE,Retained
+t1values,double,numeric,,T1 Value Questions,F9.2,,,TRUE,Retained
+t2antia1,double,numeric,,"T2 Anti-Authortarian, 2 variables",F9.2,,,TRUE,Retained
+t2antia0,double,numeric,,"T2 Anti-Authortarian Ver B, 3 variables",F9.2,,,TRUE,Retained
+t2antiau,double,numeric,,T2 Anti-Authoritarian Index - 5 variables,F9.2,,,TRUE,Retained
+t2attcr0,double,numeric,,T2 EV Att Toward Crime Ver B - see draft 5,F9.2,,,TRUE,Retained
+t2attcri,double,numeric,," T2 EV Attitude Toward Crime - 25_1-9, 14_1-3, 9, 24_2",F9.2,,,TRUE,Retained
+t2attpr0,double,numeric,,"T2 Attitude Toward Crime, 2 variables",F9.2,,,TRUE,Retained
+t2attpri,double,numeric,,T2 Attitude Toward Prison,F9.2,,,TRUE,Retained
+t2bsp,double,numeric,,T2 Placement of BSP,F9.2,,,TRUE,Retained
+t2cc,double,numeric,,"T2 Combating Crime Index, 1 =tougher on criminals",F9.2,,,TRUE,Retained
+t2clibe,double,numeric,,"T2 Civil Liberties Ver E, 5 variables",F9.2,,,TRUE,Retained
+t2custod,double,numeric,,"T1 Custody Index, q14_1/2/3",F9.2,,,TRUE,Retained
+t2dlegal,double,numeric,,"T2 Drug Legalization Index, q10_1 & q10_2, 1= legalization",F9.2,,,TRUE,Retained
+t2drugs,double,numeric,,"T2 More on Drugs Index, 10_1, 10_2, 10_4, 11",F9.2,,,TRUE,Retained
+t2drugsb,double,numeric,,T2 More on Drugs Ver B,F9.2,,,TRUE,Retained
+t2ki,double,numeric,,T2 Knowledge Index T/F & L/R,F9.2,,,TRUE,Retained
+t2legals,double,numeric,,,F9.2,,,TRUE,Retained
+t2lessc0,double,numeric,,"T2 Less restrictions on custody, 3 variables",F9.2,,,TRUE,Retained
+t2lesscu,double,numeric,,T2 Less restrictions on custody - 4 variables,F9.2,,,TRUE,Retained
+t2lrplac,double,numeric,,,F9.2,,,TRUE,Retained
+t2mrf,double,numeric,,T2 Placement of MRF,F9.2,,,TRUE,Retained
+t2nms,double,numeric,,T2 Placement of NMS,F9.2,,,TRUE,Retained
+t2pjusti,double,numeric,,,F9.2,,,TRUE,Retained
+t2prisk,double,numeric,,"T2 Perceived Risk Index, 1 = very likely, q5_1, q5_2",F9.2,,,TRUE,Retained
+t2q9,double,numeric,,"T2recoded Q9, 1=great extent",F9.2,,,TRUE,Retained
+t2q11,double,numeric,," T2 recoded Q11, 1=fighter harder against drugs, including youth",F9.2,,,TRUE,Retained
+t2q18,double,numeric,,"T2 recoded q18p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q20,double,numeric,,"T2 recoded q20p, 0=A",F9.2,,,TRUE,Retained
+t2q21,double,numeric,," T2 recoded Q21, 1st = 0, 2nd = 1",F9.2,,,TRUE,Retained
+t2q23,double,numeric,,"T2 Place of Prosecution (Q23) Binary, 1 = accountable to Parliament",F9.2,,,TRUE,Retained
+t2q28,double,numeric,,"T1 recoded q28p, 1 =right direction",F9.2,,,TRUE,Retained
+t2q10_1,double,numeric,,"T2 recoded q10_1p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q10_2,double,numeric,,"T2 recoded q10_2p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q10_3,double,numeric,,"T2 recoded q10_3p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q10_4,double,numeric,,"T2 recoded q10_4p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q10_1r,double,numeric,,"T2 recode 10_1, 1 = strongly disagree",F9.2,,,TRUE,Retained
+t2q10_2r,double,numeric,,"T2 recode 10_2, 1 = strongly disagree",F9.2,,,TRUE,Retained
+t2q10_4r,double,numeric,,"T2 recoded q10_4p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q12_1,double,numeric,," T2 Q12_1 T/F Q, False=1",F9.2,,,TRUE,Retained
+t2q12_2,double,numeric,," T2 Q12_2 T/F Q, False=1",F9.2,,,TRUE,Retained
+t2q12_3,double,numeric,," T2 Q12_3 T/F Q, False=1",F9.2,,,TRUE,Retained
+t2q12_4,double,numeric,," T2 Q12_4 T/F Q, False=1",F9.2,,,TRUE,Retained
+t2q12_5,double,numeric,," T2 Q12_5 T/F Q, True=1",F9.2,,,TRUE,Retained
+t2q12_6,double,numeric,," T2 Q12_6 T/F Q, False=1",F9.2,,,TRUE,Retained
+t2q12_7,double,numeric,," T2 Q12_7 T/F Q, True=1",F9.2,,,TRUE,Retained
+t2q14_1,double,numeric,,"T2 recoded q14_1p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q14_2,double,numeric,,"T2 recoded q14_2p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q14_3,double,numeric,,"T2 recoded q14_3p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q14_1r,double,numeric,,"T2 recoded Q14_1- 0 to 1 scale, 1=strongly disagree",F9.2,,,TRUE,Retained
+t2q14_3r,double,numeric,,"T2 recoded Q14_3- 0 to 1 scale, 1=strongly disagree",F9.2,,,TRUE,Retained
+t2q15_1,double,numeric,,"T2 recoded q15_1p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q15_2,double,numeric,,"T2 recoded q15_2p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q15_3,double,numeric,,"T2 recoded q15_3p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q15_4,double,numeric,,"T2 recoded q15_4p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q15_5,double,numeric,,"T2 recoded q15_5p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q15_6,double,numeric,,"T6 recoded q15_6p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q15_4r,double,numeric,,"T2 recoded q15_4p, 0 to 1 scale, 0=strongly agree",F9.2,,,TRUE,Retained
+t2q15_6r,double,numeric,,"T6 recoded q15_6p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q16r,double,numeric,,"T2 recoded q16p, 0 = first statement",F9.2,,,TRUE,Retained
+t2q17_1,double,numeric,,"T2 recoded q17_1p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q17_2,double,numeric,,"T2 recoded q17_2p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q17_3,double,numeric,,"T2 recoded q17_3p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q17_4,double,numeric,,"T2 recoded q17_4p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q17_3r,double,numeric,,"T2 recoded 17_3, 1=strongly DISagree",F9.2,,,TRUE,Retained
+t2q19r,double,numeric,,"T2 recoded Q19, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q22r,double,numeric,,"T2 recoded q22p, 0 = first statement",F9.2,,,TRUE,Retained
+t2q23n,double,numeric,,T2 recoded Q23,F9.2,,,TRUE,Retained
+t2q24_1,double,numeric,,"T2 recoded q24_1p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q24_2,double,numeric,,"T2 recoded q24_2p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q24_3,double,numeric,,"T2 recoded q24_3p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q24_4,double,numeric,,"T2 recoded q24_4p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q24_1r,double,numeric,,"T2 recoded Q24_1, 0 to 1 scale, 0 = strongly agree",F9.2,,,TRUE,Retained
+t2q24_2r,double,numeric,,"T2 recoded q24_2p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q24_3r,double,numeric,,"T2 recoded q24_3p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q24_4r,double,numeric,,"T2 recoded q24_4p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q25_1,double,numeric,,"T2 recoded q25_1p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q25_2,double,numeric,,"T2 recoded q25_2p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q25_3,double,numeric,,"T2 recoded q25_3p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q25_4,double,numeric,,"T2 recoded q25_4p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q25_5,double,numeric,,"T2 recoded q25_5p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q25_6,double,numeric,,"T2 recoded q25_6p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q25_7,double,numeric,,"T2 recoded q25_7p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q25_8,double,numeric,,"T2 recoded q25_8p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q25_9,double,numeric,,"T2 recoded q25_9p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q25_4r,double,numeric,,"T2 recoded Q25_4 - 0 to 1 scale, 1=strongly disagree",F9.2,,,TRUE,Retained
+t2q25_5r,double,numeric,,"T2 recoded Q25_5 - 0 to 1 scale, 1=strongly disagree",F9.2,,,TRUE,Retained
+t2q25_7r,double,numeric,,"T2 recoded Q25_7 - 0 to 1 scale, 1=strongly disagree",F9.2,,,TRUE,Retained
+t2q26_1,double,numeric,,"T2 recoded q26_1p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q26_2,double,numeric,,"T2 recoded q26_2p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q26_3,double,numeric,,"T2 recoded q26_3p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q26_4,double,numeric,,"T2 recoded q26_4p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q26_5,double,numeric,,"T2 recoded q26_5p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q26_2r,double,numeric,,"T2 Q26_2 recoded, 1=strongly disagree",F9.2,,,TRUE,Retained
+t2q26_5r,double,numeric,,"Recoded t2q26_5, 1=strongly disagree",F9.2,,,TRUE,Retained
+t2q5_1,double,numeric,,"T2 recoded q5_1p, 0 to 1 scale, 1=very likely",F9.2,,,TRUE,Retained
+t2q5_2,double,numeric,,"T2 recoded q5_2p, 0 to 1 scale, 1=very likely",F9.2,,,TRUE,Retained
+t2q5_3,double,numeric,,"T2 recoded q5_3p, 0 to 1 scale, 1=very likely",F9.2,,,TRUE,Retained
+t2q5_4,double,numeric,,"T2 recoded q5_4p, 0 to 1 scale, 1=very likely",F9.2,,,TRUE,Retained
+t2q8_1,double,numeric,,"T2 recoded Q8_1, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t2q8_2,double,numeric,,"T2 recoded Q8_2, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t2q8_3,double,numeric,,"T2 recoded Q8_3, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t2q8_4,double,numeric,,"T2 recoded Q8_4, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t2q8_5,double,numeric,,"T2 recoded Q8_5, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t2q8_6,double,numeric,,"T2 recoded Q8_6, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t2q8_7,double,numeric,,"T2 recoded Q8_7, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t2q8_8,double,numeric,,"T2 recoded Q8_8, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t2q8_9,double,numeric,,"T2 recoded Q8_9, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t2q8_10,double,numeric,,"T2 recoded Q8_10, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t2q8_11,double,numeric,,"T2 recoded Q8_11, 0 to 1 scale, 1=very efficient",F9.2,,,TRUE,Retained
+t2q8_11r,double,numeric,,"T2 recoded q8_11p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q8_1r,double,numeric,,"T2 recoded q8_1p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q8_2r,double,numeric,,"T2 recoded 8_2, 0 to 1 scale, 1 = very INefficient",F9.2,,,TRUE,Retained
+t2q8_7r,double,numeric,,"T2 recoded q8_7p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2q8_8r,double,numeric,,"T2 recoded q8_8p, 0 to 1 scale, 1=strongly agree",F9.2,,,TRUE,Retained
+t2tfknow,double,numeric,,T2 True/False Knowledge Index,F9.2,,,TRUE,Retained
+t2tghpc,double,numeric,,T2 Tougher Punishment Ver C 8_3-8_6),F9.2,,,TRUE,Retained
+t2todrug,double,numeric,,T2 Tougher on Drugs Index,F9.2,,,TRUE,Retained
+t2udf,double,numeric,,T2 Placement of UDF,F9.2,,,TRUE,Retained
+t2values,double,numeric,,T2 Value Questions,F9.2,,,TRUE,Retained
+type,double,haven_labelled|vctrs_vctr|double,,Type of area/city/village,F8.0,,,TRUE,Retained
+typep,double,haven_labelled|vctrs_vctr|double,,type of area/city/village,F8.0,,,TRUE,Retained
