@@ -1,0 +1,930 @@
+path,component,column_count,flagged_columns,flagged_labels,scan_status,error
+data/BTP/2002/2002onlinefp.dta,data,835,qb13;qf13,qb13. how about requiring higher mileage from automobiles (as a way of reducing;qf13. how about requiring higher mileage from automobiles (as a way of reducing,review_required,NA
+data/BTP/2002/2002onlinefp_hlmnew.dta,data,949,qb13;qf13,qb13. how about requiring higher mileage from automobiles (as a way of reducing;qf13. how about requiring higher mileage from automobiles (as a way of reducing,review_required,NA
+data/BTP/2003/btp03_caseid.dta,data,63,,,no_name_label_hit,NA
+data/BTP/2003/nic2.dta,data,1357,nphon_a;nphon_b;nphon_s;rans;eanyo;ranyo,all phones in home have same number;number of unique phone numbers;number of unique phone numbers - summary;number of times respondent contacted;number contacts before enumeration;number of contacts after enumeration,review_required,NA
+data/BTP/2004.GE/2004 online GE_hlm.dta,data,1097,,,no_name_label_hit,NA
+data/BTP/2004.GE/2004GE.dta,data,1021,,,no_name_label_hit,NA
+data/BTP/2004.GE/2004findat.dta,data,1567,,,no_name_label_hit,NA
+data/BTP/2004.GE/btp04_caseid.dta,data,77,,,no_name_label_hit,NA
+data/BTP/2004.Online.Primaries/2004 online primaries_hlm.dta,data,1575,,,no_name_label_hit,NA
+data/BTP/2004.Online.Primaries/2004 online primaries_small_caseid.dta,data,135,,,no_name_label_hit,NA
+data/BTP/2004.Online.Primaries/btp04_caseid.dta,data,77,,,no_name_label_hit,NA
+data/BTP/2004GE/data/2004 online GE_hlm.dta,data,1097,,,no_name_label_hit,NA
+data/BTP/2004GE/data/2004GE.dta,data,1021,,,no_name_label_hit,NA
+data/BTP/2004GE/data/2004findat.dta,data,1567,,,no_name_label_hit,NA
+data/BTP/2004GE/data/btp04.rdata,btp04,32,,,no_name_label_hit,NA
+data/BTP/2004GE/data/btp04_caseid.dta,data,77,,,no_name_label_hit,NA
+data/BTP/2004OnlinePrimaries/data/2004 online primaries_hlm.dta,data,1575,,,no_name_label_hit,NA
+data/BTP/2004OnlinePrimaries/data/2004 online primaries_small_caseid.dta,data,135,,,no_name_label_hit,NA
+data/BTP/2004OnlinePrimaries/data/btp04_caseid.dta,data,77,,,no_name_label_hit,NA
+data/BTP/2005 Health Education/2005alice.dta,data,737,,,no_name_label_hit,NA
+data/BTP/2005 Health Education/btp05_caseid.dta,data,69,,,no_name_label_hit,NA
+data/BTP/2005 Health Education/btp05_hlm.dta,data,840,,,no_name_label_hit,NA
+data/BTP/2005/data/2005alice.dta,data,737,,,no_name_label_hit,NA
+data/BTP/2005/data/btp05_caseid.dta,data,69,,,no_name_label_hit,NA
+data/BTP/2005/data/btp05_hlm.dta,data,840,,,no_name_label_hit,NA
+data/BTP/2007/2007BTP ygpm dataset.dta,data,285,,,no_name_label_hit,NA
+"data/BTP/2007/BTP online democracy DP Oct 2007 on 0-1 scales, 1-1-07.sav",data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/BTP/2007/BTP online democracy DP Oct 2007 on 0-1 scales, 1-1-07.sav: Invalid file, or file has unsupported features."
+"data/BTP/2007/BTP online democracy DP Oct 2007, 10-31-07.sav",data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/BTP/2007/BTP online democracy DP Oct 2007, 10-31-07.sav: Invalid file, or file has unsupported features."
+"data/BTP/2007/BTP_online_democracy_DP_Oct_2007,_10-31-07.sav",data,243,,,no_name_label_hit,NA
+"data/BTP/2007/BTP_online_democracy_DP_Oct_2007_on_0-1_scales,_1-1-07.sav",data,323,,,no_name_label_hit,NA
+data/BTP/2007/data/2007BTP ygpm dataset.dta,data,285,,,no_name_label_hit,NA
+"data/BTP/2007/data/BTP online democracy DP Oct 2007 on 0-1 scales, 1-1-07.sav",data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/BTP/2007/data/BTP online democracy DP Oct 2007 on 0-1 scales, 1-1-07.sav: Invalid file, or file has unsupported features."
+"data/BTP/2007/data/BTP online democracy DP Oct 2007, 10-31-07.sav",data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/BTP/2007/data/BTP online democracy DP Oct 2007, 10-31-07.sav: Invalid file, or file has unsupported features."
+"data/BTP/2007/data/BTP_online_democracy_DP_Oct_2007,_10-31-07.sav",data,243,,,no_name_label_hit,NA
+"data/BTP/2007/data/BTP_online_democracy_DP_Oct_2007_on_0-1_scales,_1-1-07.sav",data,323,,,no_name_label_hit,NA
+data/BTP/2007/data/final.sav,data,404,,,no_name_label_hit,NA
+data/BTP/2007/final.sav,data,404,,,no_name_label_hit,NA
+data/BTP/BTP2/dp10_Jan24.sav,data,111,ZIPCODE;NPHN@SUM;QEVAL3,Respondent's zipcode (Pre);Summary of number of hh phone lines (Pre);Rate contact w/other delegates (Post participant),review_required,NA
+data/BTP/BTP2/dp10_jan24.dta,data,128,zipcode;nphn_sum;qeval3,respondent's zipcode (pre);summary of number of hh phone lines (pre);rate contact w/other delegates (post participant),review_required,NA
+data/BTP/BTP_Cities/10City/Seattle/Delib-poll.xls,Dpoll Data,6,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/10City/Seattle/Delib-poll.xls,Sheet2,0,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/10City/Seattle/Delib-poll.xls,Sheet3,0,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/10City/Seattle/Last_minute_questions.xls,#37,6,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/10City/Seattle/Last_minute_questions.xls,#38,6,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/10City/Seattle/Last_minute_questions.xls,By the People ,2,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/10City/Seattle/Raw_Data/dp10_Jan24.sav,data,111,ZIPCODE;NPHN@SUM;QEVAL3,Respondent's zipcode (Pre);Summary of number of hh phone lines (Pre);Rate contact w/other delegates (Post participant),review_required,NA
+data/BTP/BTP_Cities/10City/Seattle/Raw_Data/dp10_jan24.dta,data,128,zipcode;nphn_sum;qeval3,respondent's zipcode (pre);summary of number of hh phone lines (pre);rate contact w/other delegates (post participant),review_required,NA
+data/BTP/BTP_Cities/10City/Seattle/Tables/00_aggregate1.xls,Dpoll Data,6,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/10City/Seattle/Tables/01_baton_rouge1.xls,Dpoll Data,6,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/10City/Seattle/Tables/03_green_bay1.xls,Dpoll Data,6,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/10City/Seattle/Tables/04_minneapolis1.xls,Dpoll Data,6,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/10City/Seattle/Tables/05_pittsburgh1.xls,Dpoll Data,6,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/10City/Seattle/Tables/06_sarasota1.xls,Dpoll Data,6,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/10City/Seattle/Tables/07_seattle1.xls,Dpoll Data,6,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/10City/Seattle/Tables/08_rochester1.xls,Dpoll Data,6,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/10City/Seattle/Tables/09_kansas_city1.xls,Dpoll Data,6,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/10City/Seattle/Tables/10_san_diego1.xls,Dpoll Data,6,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/10City/Seattle/Tables/11_kearney1.xls,Dpoll Data,6,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/10City/Seattle/template.xls,Dpoll Data,6,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Lincoln/Delibpoll redo.sav,data,NA,NA,NA,unreadable,"ℹ In index: 6.
+ℹ With name: brief.
+Caused by error:
+! Result must be length 1, not 3."
+data/BTP/BTP_Cities/17City/Lincoln/final redo.sav,data,NA,NA,NA,unreadable,"ℹ In index: 6.
+ℹ With name: brief.
+Caused by error:
+! Result must be length 1, not 3."
+data/BTP/BTP_Cities/17City/Lincoln/final working file0718 for analysis purpose.sav,data,NA,NA,NA,unreadable,"ℹ In index: 6.
+ℹ With name: brief.
+Caused by error:
+! Result must be length 1, not 3."
+data/BTP/BTP_Cities/17City/New-haven/Master Data/NH_Data_pre-mid-post.xls,Mid,78,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/New-haven/Master Data/NH_Data_pre-mid-post.xls,Post,143,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/New-haven/Master Data/NH_Data_pre-mid-post.xls,Pre,122,STREET;COMMENTS;PHONE,;;,review_required,NA
+data/BTP/BTP_Cities/17City/New-haven/Questionnaire/NH_questionnaire_1.xls,Sheet1,2,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/New-haven/Questionnaire/NH_questionnaire_1.xls,Sheet2,0,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/New-haven/Questionnaire/NH_questionnaire_1.xls,Sheet3,0,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/New-haven/Questionnaire/NH_questionnaire_2.xls,Sheet1,2,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/New-haven/Questionnaire/NH_questionnaire_2.xls,Sheet2,0,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/New-haven/Questionnaire/NH_questionnaire_2.xls,Sheet3,0,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/PostPortlandPart.xls,CATI Script,1,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/PostPortlandPart.xls,Chart9,2,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/PostPortlandPart.xls,Custom Charts,3,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/PostPortlandPart.xls,Profile,4,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/PostPortlandPart.xls,Questions,4,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/PostPortlandPart.xls,Source,66,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/PrePortlandAll.xls,CATI Script,1,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/PrePortlandAll.xls,Custom Charts,0,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/PrePortlandAll.xls,Profile,4,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/PrePortlandAll.xls,Questions,4,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/PrePortlandAll.xls,Source,63,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/PrePortlandPart.xls,CATI Script,1,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/PrePortlandPart.xls,Custom Charts,3,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/PrePortlandPart.xls,Profile,4,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/PrePortlandPart.xls,Questions,4,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/PrePortlandPart.xls,Source,63,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/postportlandpart.por,data,4,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/preportlandall.por,data,3,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/MasterData/preportlandpart.por,data,4,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/portland_data/portlandpost.sas7bdat,data,68,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/portland_data/portlandpost.xls,Sheet1,68,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/portland_data/portlandpost.xls,Sheet2,0,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/portland_data/portlandpost.xls,Sheet3,0,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/portland_data/portlandpre.sas7bdat,data,63,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/portland_data/portlandpre.xls,Sheet1,63,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/portland_data/portlandpre.xls,Sheet2,0,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/portland_data/portlandpre.xls,Sheet3,0,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/portland_data/postpartdata.sas7bdat,data,66,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/portland_data/postpartdata.xls,Sheet1,66,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/portland_data/postpartdata.xls,Sheet2,0,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/portland_data/postpartdata.xls,Sheet3,0,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/portland_data/prepartdata.sas7bdat,data,63,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/portland_data/prepartdata.xls,Sheet1,63,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/portland_data/prepartdata.xls,Sheet2,0,,,no_name_label_hit,NA
+data/BTP/BTP_Cities/17City/Portland/portland_data/prepartdata.xls,Sheet3,0,,,no_name_label_hit,NA
+data/BTP/btp.sav,data,431,,,no_name_label_hit,NA
+data/Brazil/brazil_eval.rdata,brazil,64,,,no_name_label_hit,NA
+data/Brazil/recoded_brazil.rdata,brazil,68,,,no_name_label_hit,NA
+data/Bulgaria/Master Data/After_discussion_eng.sav,data,154,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/Master Data/Before_discussion_eng.sav,data,137,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/Master Data/DelPoll_control_eng.sav,data,136,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/Master Data/DelPoll_eng.sav,data,136,q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/Master Data/after_discussion_eng.dta,data,154,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/Master Data/before_discussion_eng.dta,data,137,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/Master Data/delpoll_control_eng.dta,data,136,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/Master Data/delpoll_eng.dta,data,136,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/data/After_discussion_eng.sav,data,154,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/data/Before_discussion_eng.sav,data,137,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/data/DelPoll_control_eng.sav,data,136,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/data/DelPoll_eng.sav,data,136,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/data/after_discussion_eng.dta,data,154,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/data/before_discussion_eng.dta,data,137,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/data/bu.after.sav,data,154,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/data/bu.before.sav,data,137,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/data/bu.control.sav,data,136,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/data/bu.part.rdata,bu.part,290,,,no_name_label_hit,NA
+data/Bulgaria/data/bulgaria.eval.rdata,bulgaria.eval,67,,,no_name_label_hit,NA
+data/Bulgaria/data/bulgaria.sav,data,533,q2_4;q2_4p,Assaults in the streets at night;assaults in the streets at night,review_required,NA
+data/Bulgaria/data/delpoll_control_eng.dta,data,136,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/data/delpoll_eng.dta,data,136,Q2_4,Assaults in the streets at night,review_required,NA
+data/Bulgaria/data/recoded_bulgaria.rdata,bulgaria,68,,,no_name_label_hit,NA
+data/California/ca.match/ca.match.rdata,ca,115,zipcode;phone;email,;;,review_required,NA
+data/California/ca.match/ca.sav,data,105,q64oth;zipcode;phone;email,Phone: Name: 64 Which of the following best describes your employment? (READ LIST);ZIPCODE;PHONE;EMAIL,review_required,NA
+data/California/data/CAL_DP_MERGED_dataset_v3_2011Jun28 1400(cleaned_arrival + cleaned_departure).xls,CalArrive,118,,,no_name_label_hit,NA
+data/California/data/CAL_DP_MERGED_dataset_v3_2011Jun28 1400(cleaned_arrival + cleaned_departure).xls,CalDep,134,,,no_name_label_hit,NA
+data/California/data/CAL_DP_MERGED_dataset_v3_2011Jun28 1400(cleaned_arrival + cleaned_departure).xls,Merged,252,,,no_name_label_hit,NA
+data/California/data/California_Merged_t1-t2-t3_6-28-11.dta,data,342,q64oth;zipcode;phone;email,Phone: Name: 64 Which of the following best describes your employment? (READ LIS;zipcode;phone;email,review_required,NA
+data/California/data/California_Merged_t1-t2-t3_6-28-11.sav,data,342,q64oth;zipcode;phone;email,Phone: Name: 64 Which of the following best describes your employment? (READ LIST);ZIPCODE;PHONE;EMAIL,review_required,NA
+data/California/data/June 2012 Poll Deliberation Questions-Thad_s survey.dta,data,48,,,no_name_label_hit,NA
+data/California/data/Stata Files/CA_midpoint.dta,data,881,q64oth;zipcode;phone;email,Phone: Name: 64 Which of the following best describes your employment? (READ LIS;zipcode;phone;email,review_required,NA
+data/California/data/Stata Files/sur tables (1).xls,sur.txt,3,,,no_name_label_hit,NA
+data/California/data/deliberative_polling_dataset.xls,CalArrive,118,,,no_name_label_hit,NA
+data/California/data/deliberative_polling_dataset.xls,CalDep,134,,,no_name_label_hit,NA
+data/California/data/deliberative_polling_dataset.xls,Merged,252,,,no_name_label_hit,NA
+data/China/2005/China Dpoll POST.sav,data,64,,,no_name_label_hit,NA
+data/China/2005/China Dpoll PRE.sav,data,55,,,no_name_label_hit,NA
+data/China/2005/China Merged Dataset.dta,data,941,d2031;d2032;d2031p;d2032p;d2031b;d2032b;d2031a;d2032a;d2031bmi;d2031ami;d2032bmi;d2032ami;dk31;dk32;dk31p;dk32p;q31;q32;q31p;q32p,"q31: demonstrative street t1;q32: old street reconstruction t1;q31: demonstrative street t2;q32: old street reconstruction t2;q31: demonstrative street t1 o version;q32: old street reconstruction t1 o version;q31: demonstrative street t2 o version;q32: old street reconstruction t2 o version;q31: demonstrative street t1 midpt version;q31: demonstrative street t2 midpt version;q32: old street reconstruction t1 midpt version;q32: old street reconstruction t2 midpt version;demonstrative street, t1, dk/missing=1 and non-dk=0;old street reconstruction, t1, dk/missing=1 and non-dk=0;demonstrative street, t2, dk/missing=1 and non-dk=0;old street reconstruction, t2, dk/missing=1 and non-dk=0;demonstrative street, t1, 0 to 1 scale;old street reconstruction, t1, 0 to 1 scale;demonstrative street, t2, 0 to 1 scale;old street reconstruction, t2, 0 to 1 scale",review_required,NA
+data/China/2005/recoded_china05 (2).rdata,china05,68,,,no_name_label_hit,NA
+data/China/2005/recoded_china05.rdata,china05,64,,,no_name_label_hit,NA
+data/China/2006/China II Zegou Dpoll 2006 Merged.sav,data,139,d2016;d2016p,"second road to demonstrative street, changing roads;second road to demonstrative street, changing roads",review_required,NA
+data/China/2008/China Dpoll POST.sav,data,64,,,no_name_label_hit,NA
+data/China/2008/China Dpoll PRE.sav,data,55,,,no_name_label_hit,NA
+data/China/2008/China Merged Dataset.dta,data,941,d2031;d2032;d2031p;d2032p;d2031b;d2032b;d2031a;d2032a;d2031bmi;d2031ami;d2032bmi;d2032ami;dk31;dk32;dk31p;dk32p;q31;q32;q31p;q32p,"q31: demonstrative street t1;q32: old street reconstruction t1;q31: demonstrative street t2;q32: old street reconstruction t2;q31: demonstrative street t1 o version;q32: old street reconstruction t1 o version;q31: demonstrative street t2 o version;q32: old street reconstruction t2 o version;q31: demonstrative street t1 midpt version;q31: demonstrative street t2 midpt version;q32: old street reconstruction t1 midpt version;q32: old street reconstruction t2 midpt version;demonstrative street, t1, dk/missing=1 and non-dk=0;old street reconstruction, t1, dk/missing=1 and non-dk=0;demonstrative street, t2, dk/missing=1 and non-dk=0;old street reconstruction, t2, dk/missing=1 and non-dk=0;demonstrative street, t1, 0 to 1 scale;old street reconstruction, t1, 0 to 1 scale;demonstrative street, t2, 0 to 1 scale;old street reconstruction, t2, 0 to 1 scale",review_required,NA
+data/China/2008/zeguo2008_dataset_indices_info.dta,data,286,,,no_name_label_hit,NA
+data/China/China Merged Dataset.sav,data,1073,D2031;D2032;D2031P;D2032P;D2031B;D2032B;D2031A;D2032A;D2031BMI;D2031AMI;D2032BMI;D2032AMI;DK31;DK32;DK31P;DK32P;Q31;Q32;Q31P;Q32P,"q31: demonstrative street t1;q32: old street reconstruction t1;q31: demonstrative street t2;q32: old street reconstruction t2;q31: demonstrative street t1 o version;q32: old street reconstruction t1 o version;q31: demonstrative street t2 o version;q32: old street reconstruction t2 o version;q31: demonstrative street t1 midpt version;q31: demonstrative street t2 midpt version;q32: old street reconstruction t1 midpt version;q32: old street reconstruction t2 midpt version;demonstrative street, t1, dk/missing=1 and non-dk=0;old street reconstruction, t1, dk/missing=1 and non-dk=0;demonstrative street, t2, dk/missing=1 and non-dk=0;old street reconstruction, t2, dk/missing=1 and non-dk=0;demonstrative street, t1, 0 to 1 scale;old street reconstruction, t1, 0 to 1 scale;demonstrative street, t2, 0 to 1 scale;old street reconstruction, t2, 0 to 1 scale",review_required,NA
+data/Denmark/data/t0 english.xls,workbook,NA,NA,NA,unreadable,"
+  filepath: /private/tmp/dp-data-stage/vault/cdd/data/Denmark/data/t0 english.xls
+  libxls error: Unable to open file"
+data/Denmark/data/t0.sav,data,112,,,no_name_label_hit,NA
+data/Denmark/data/t0denmark.rdata,t0den,112,,,no_name_label_hit,NA
+data/Denmark/data/t0english.sav,data,112,,,no_name_label_hit,NA
+data/Denmark/data/t1.sav,data,93,,,no_name_label_hit,NA
+data/Denmark/data/t1denmark.rdata,t1den,94,,,no_name_label_hit,NA
+data/Denmark/data/t2.sav,data,126,,,no_name_label_hit,NA
+data/Denmark/data/t2ctrl.rdata,t2ctrl,93,,,no_name_label_hit,NA
+data/Denmark/data/t2ctrl.sav,data,92,,,no_name_label_hit,NA
+data/Denmark/data/t2denmark.rdata,t2den,127,,,no_name_label_hit,NA
+data/Denmark/data/t3.sav,data,84,,,no_name_label_hit,NA
+data/Denmark/data/t3denmark.rdata,den,415,,,no_name_label_hit,NA
+data/Denmark/den.rdata,den,510,,,no_name_label_hit,NA
+data/Denmark/questionnaire/Pairup.1.xlsx,Ark1,1,,,no_name_label_hit,NA
+data/Greece/data/Greece_data_all_final.sav,data,1026,,,no_name_label_hit,NA
+data/Greece/data/data_all_final.dta,data,294,,,no_name_label_hit,NA
+data/Greece/data/data_all_final.sav,data,293,,,no_name_label_hit,NA
+data/Greece/data/data_all_final2.sav,data,293,,,no_name_label_hit,NA
+data/Greece/data/data_all_final_alice.dta,data,352,,,no_name_label_hit,NA
+data/Greece/data/data_issue_priority.dta,data,449,,,no_name_label_hit,NA
+data/Greece/outs/REPRESENTATIVE_ANALYSIS_TABLE (Gaurav Sood_s conflicted copy 2013-09-29).xls,Sheet5,4,,,no_name_label_hit,NA
+data/Greece/outs/REPRESENTATIVE_ANALYSIS_TABLE (Gaurav Sood_s conflicted copy 2013-09-29).xls,Thermometer Ratings,4,,,no_name_label_hit,NA
+data/Greece/outs/REPRESENTATIVE_ANALYSIS_TABLE (Gaurav Sood_s conflicted copy 2013-09-29).xls,issue priority,3,,,no_name_label_hit,NA
+data/Greece/outs/REPRESENTATIVE_ANALYSIS_TABLE (Gaurav Sood_s conflicted copy 2013-09-29).xls,knowledge,4,,,no_name_label_hit,NA
+data/Greece/outs/REPRESENTATIVE_ANALYSIS_TABLE (Gaurav Sood_s conflicted copy 2013-09-29).xls,party and demographics,4,,,no_name_label_hit,NA
+data/Greece/outs/REPRESENTATIVE_ANALYSIS_TABLE.xls,Sheet5,4,,,no_name_label_hit,NA
+data/Greece/outs/REPRESENTATIVE_ANALYSIS_TABLE.xls,Thermometer Ratings,4,,,no_name_label_hit,NA
+data/Greece/outs/REPRESENTATIVE_ANALYSIS_TABLE.xls,issue priority,3,,,no_name_label_hit,NA
+data/Greece/outs/REPRESENTATIVE_ANALYSIS_TABLE.xls,knowledge,4,,,no_name_label_hit,NA
+data/Greece/outs/REPRESENTATIVE_ANALYSIS_TABLE.xls,party and demographics,4,,,no_name_label_hit,NA
+data/Hungary/MasterData/Hungarian Post Dataset.sav,data,168,,,no_name_label_hit,NA
+data/Hungary/MasterData/Hungarian Pre Dataset.sav,data,221,,,no_name_label_hit,NA
+data/Hungary/MasterData/delib_send_new_moderatorokkal.sav,data,168,,,no_name_label_hit,NA
+data/Hungary/Other Datasets/hungarian merged.dta,data,390,,,no_name_label_hit,NA
+data/Ireland/Clean/nireland_merged.rdata,nireland_merged,534,,,no_name_label_hit,NA
+data/Ireland/groups.csv,data,2,,,no_name_label_hit,NA
+data/Ireland/ire.rdata,ire,1399,,,no_name_label_hit,NA
+data/Ireland/nireland.rdata,nireland,531,,,no_name_label_hit,NA
+data/Ireland/nireland_merged.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Ireland/nireland_merged.por: Invalid file, or file has unsupported features."
+data/Ireland/nireland_merged.rdata,nireland_merged,531,,,no_name_label_hit,NA
+data/Ireland/open.c.rdata,open.c,35,,,no_name_label_hit,NA
+data/Ireland/orig_data/NIreland data merged - rawSPSSexport.xlsx,Sheet1,532,,,no_name_label_hit,NA
+data/Ireland/orig_data/NIreland data merged - rawSPSSexport.xlsx,Sheet2,0,,,no_name_label_hit,NA
+data/Ireland/orig_data/NIreland data merged - rawSPSSexport.xlsx,Sheet3,0,,,no_name_label_hit,NA
+data/Ireland/orig_data/nireland.csv,data,528,,,no_name_label_hit,NA
+data/Ireland/orig_data/nireland.dta,data,528,,,no_name_label_hit,NA
+data/Japan/analyses/pkjp.csv,data,10,,,no_name_label_hit,NA
+data/Japan/cdd.codebook.gs.xlsx,caseid_match,3,,,no_name_label_hit,NA
+data/Japan/cdd.codebook.gs.xlsx,t2,53,,,no_name_label_hit,NA
+data/Japan/cdd.codebook.gs.xlsx,t3,62,,,no_name_label_hit,NA
+data/Japan/data/jprecode.rdata,jp,170,,,no_name_label_hit,NA
+data/Japan/data/jpt2t3indices.dta,data,169,,,no_name_label_hit,NA
+data/Japan/data/t1.xlsx,Sheet1,28,,,no_name_label_hit,NA
+data/Japan/data/t1jp.csv,data,28,,,no_name_label_hit,NA
+data/Japan/data/t1jp.rdata,jp,28,,,no_name_label_hit,NA
+data/Japan/data/t2 and t3 data entry form.xlsx,caseid_match,3,,,no_name_label_hit,NA
+data/Japan/data/t2 and t3 data entry form.xlsx,t2,53,,,no_name_label_hit,NA
+data/Japan/data/t2 and t3 data entry form.xlsx,t3,62,,,no_name_label_hit,NA
+data/Japan/data/t2 and t3_final.xlsx,t2,53,,,no_name_label_hit,NA
+data/Japan/data/t2 and t3_final.xlsx,t2t3merged,114,,,no_name_label_hit,NA
+data/Japan/data/t2 and t3_final.xlsx,t3,62,,,no_name_label_hit,NA
+data/Japan/data/t2t3jp.csv,data,114,,,no_name_label_hit,NA
+data/Japan/data/t2t3jp.rdata,t2t3jp,114,,,no_name_label_hit,NA
+data/Japan/jp.rosetta.stone.xlsx,Sheet1,4,,,no_name_label_hit,NA
+data/Japan/jp.rosetta.stone.xlsx,Sheet2,0,,,no_name_label_hit,NA
+data/Japan/jp.rosetta.stone.xlsx,Sheet3,0,,,no_name_label_hit,NA
+data/Japan/jp.rosetta.stone.xlsx,Sheet4,0,,,no_name_label_hit,NA
+data/Japan/jp.rosetta.stone.xlsx,Sheet5,0,,,no_name_label_hit,NA
+data/Michigan/data/Michigan Match.xls,Sheet1,6,,,no_name_label_hit,NA
+data/Michigan/data/Michigan Non-Participant Survey - SPSS Data (n=300).sav,data,69,Q13D;ZIPCODE;PHONE,13D HOW MUCH RESPONSIBILITY DOES THE FOLLOWING BEAR FOR MICHIGAN'S CURRENT ECONOMIC PROBLEMS?  WALL STREET;ZIPCODE;PHONE,review_required,NA
+data/Michigan/data/Michigan Recruit Survey - SPSS Data (n=375).sav,data,73,q13d;zipcode;phone1;phone2;email,13D HOW MUCH RESPONSIBILITY DOES THE FOLLOWING BEAR FOR MICHIGAN'S CURRENT ECONOMIC PROBLEMS?  WALL STREET;ZIPCODE;PHONE1;PHONE2;EMAIL,review_required,NA
+data/Michigan/data/arrive.rdata,arrive,135,,,no_name_label_hit,NA
+data/Michigan/data/arrive.xls,Sheet1,134,,,no_name_label_hit,NA
+data/Michigan/data/mi.rdata,mi,74,zipcode;phone1;phone2;email,;;;,review_required,NA
+data/Michigan/data/mi.sav,data,74,q13d;zipcode;phone1;phone2;email,13D HOW MUCH RESPONSIBILITY DOES THE FOLLOWING BEAR FOR MICHIGAN'S CURRENT ECONOMIC PROBLEMS?  WALL STREET;ZIPCODE;PHONE1;PHONE2;EMAIL,review_required,NA
+data/Michigan/data/mi_t1.sav,data,70,q13d;zipcode,13D HOW MUCH RESPONSIBILITY DOES THE FOLLOWING BEAR FOR MICHIGAN'S CURRENT ECONOMIC PROBLEMS?  WALL STREET;ZIPCODE,review_required,NA
+data/Michigan/data/mifin.dta,data,358,zipcode;phone1;phone2;email,;;;,review_required,NA
+data/Michigan/data/mifin.rdata,mifin,357,zipcode;phone1;phone2;email,;;;,review_required,NA
+data/Michigan/data/nonpart.rdata,nonpart,67,zipcode,,review_required,NA
+data/Michigan/data/nonpart.sav,data,67,q13d;zipcode,13D HOW MUCH RESPONSIBILITY DOES THE FOLLOWING BEAR FOR MICHIGAN'S CURRENT ECONOMIC PROBLEMS?  WALL STREET;ZIPCODE,review_required,NA
+data/Michigan/data/sunday.rdata,sunday,151,,,no_name_label_hit,NA
+data/Michigan/data/sunday.xls,Sheet1,151,,,no_name_label_hit,NA
+data/Michigan/pk/pkmi.csv,data,10,,,no_name_label_hit,NA
+data/Utilities/cpl/MasterData/residen.xls,RESIDENT,149,,,no_name_label_hit,NA
+data/Utilities/cpl/cpl.eval.rdata,cpl.eval,67,,,no_name_label_hit,NA
+data/Utilities/cpl/cpl.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Utilities/cpl/cpl.por: Invalid file, or file has unsupported features."
+data/Utilities/cpl/cpl.sav,data,195,zipcode,RS ZIPCODE,review_required,NA
+data/Utilities/cpl/cpl2.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Utilities/cpl/cpl2.por: Invalid file, or file has unsupported features."
+data/Utilities/cpl/cpl2.sav,data,196,zipcode,RS ZIPCODE,review_required,NA
+data/Utilities/cpl/cpl_data/cpl.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Utilities/cpl/cpl_data/cpl.por: Invalid file, or file has unsupported features."
+data/Utilities/cpl/cpl_data/cpl2.dta,data,196,ZIPCODE,Rs Zipcode,review_required,NA
+data/Utilities/cpl/cpl_data/cpl2.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Utilities/cpl/cpl_data/cpl2.por: Invalid file, or file has unsupported features."
+data/Utilities/entergy/MasterData/Entergy Open Ended Responses.xls,ENTtext,1,,,no_name_label_hit,NA
+data/Utilities/entergy/MasterData/entall master.xls,alldata,78,,,no_name_label_hit,NA
+data/Utilities/entergy/MasterData/entevent master.xls,Pre and Post Data Combined,159,,,no_name_label_hit,NA
+data/Utilities/entergy/entergy_data/ent.sav,data,NA,NA,NA,unreadable,"ℹ In index: 1.
+ℹ With name: CASEID.
+Caused by error:
+! Result must be length 1, not 8."
+data/Utilities/entergy/entergy_data/ent2.dta,data,163,PHONE1;FRIEND1;PROFRIE1;APAUTO1;PHONE2;FRIEND2;PROFRIE2;APAUTO2,Easy to Reach by Pohne T1 (Q23f);Courteous and helpful when R Contacts T1;Good Service When R Contacts Company T1;Contribution of Automobiles to Air Pollu;Easy to Reach by Phone T2 (Q23f);Courteous and helpful when R Contacts T2;Good Service When R Contacts Company T2;Contribution of Automobiles to Air Pollu,review_required,NA
+data/Utilities/entergy/entergy_data/ent2.sav,data,NA,NA,NA,unreadable,"ℹ In index: 1.
+ℹ With name: CASEID.
+Caused by error:
+! Result must be length 1, not 8."
+data/Utilities/epe/MasterData/epeall master.xls,EL PASO PRE EVENT DATA,88,,,no_name_label_hit,NA
+data/Utilities/epe/MasterData/epeevent master.xls,Pre Data - All Respondents,89,,,no_name_label_hit,NA
+data/Utilities/epe/MasterData/epeevent master.xls,Pre and Post Data Combined,172,,,no_name_label_hit,NA
+data/Utilities/epe/epe_data/epe.sav,data,NA,NA,NA,unreadable,"ℹ In index: 1.
+ℹ With name: CASEID.
+Caused by error:
+! Result must be length 1, not 8."
+data/Utilities/epe/epe_data/epe2.dta,data,178,FRIEND1;PROFRIE1;SVCPH1;CHPHONE1;CONTACT1;FRIEND2;PROFRIE2;SVCPH2;SVC1,Courteous and helpful when R Contacts? T;Good Service When R Contacts Company? T1;Compare EPE Service w/ Local Phone? T1;Changed Phone Companies since Dereg? T1;Contacted EPE in Last Year? T1;Courteous and helpful when R Contacts? T;Good Service When R Contacts Company? T2;Compare EPE Service with Local Phone Co.;Satisfaction w/ Svc. if Contact? T1,review_required,NA
+data/Utilities/epe/epe_data/epe2.sav,data,NA,NA,NA,unreadable,"ℹ In index: 1.
+ℹ With name: CASEID.
+Caused by error:
+! Result must be length 1, not 8."
+data/Utilities/hlp/MasterData/hlpall master.xls,HLPRESI,65,,,no_name_label_hit,NA
+data/Utilities/hlp/MasterData/hlpall_inferior.xls,HLPRESI,64,,,no_name_label_hit,NA
+data/Utilities/hlp/MasterData/hlpevent master.xls,hlpdata,125,,,no_name_label_hit,NA
+data/Utilities/hlp/MasterData/hlpevent_inferior.xls,hlpdata,124,,,no_name_label_hit,NA
+data/Utilities/hlp/hlp_data/hlp.sav,data,NA,NA,NA,unreadable,"ℹ In index: 1.
+ℹ With name: CASEID.
+Caused by error:
+! Result must be length 1, not 8."
+data/Utilities/hlp/hlp_data/hlp2.dta,data,133,APAUTO1;APAUTO2,Contribution of Automobiles to Air Pollu;Contribution of Automobiles to Air Pollu,review_required,NA
+data/Utilities/hlp/hlp_data/hlp2.sav,data,NA,NA,NA,unreadable,"ℹ In index: 1.
+ℹ With name: CASEID.
+Caused by error:
+! Result must be length 1, not 8."
+data/Utilities/sps/MasterData/spsall master.xls,ALLRESI,74,,,no_name_label_hit,NA
+data/Utilities/sps/MasterData/spsall_inferior.xls,ALLRESI,73,,,no_name_label_hit,NA
+data/Utilities/sps/MasterData/spsevent master.xls,Pre and Post Event Data,192,,,no_name_label_hit,NA
+data/Utilities/sps/MasterData/spsevent_inferior.xls,Pre and Post Event Data,191,,,no_name_label_hit,NA
+data/Utilities/sps/sps_data/sps.sav,data,NA,NA,NA,unreadable,"ℹ In index: 1.
+ℹ With name: CASEID.
+Caused by error:
+! Result must be length 1, not 8."
+data/Utilities/sps/sps_data/sps2.dta,data,184,AGPHONE1;APAUTO1;AGPHONE2;APAUTO2,Reason Against Competition: Telemarketin;Contribution of Automobiles to Air Pollu;Argument Against Competiton: Telemarketi;Contribution of Automobiles to Air Pollu,review_required,NA
+data/Utilities/sps/sps_data/sps2.sav,data,NA,NA,NA,unreadable,"ℹ In index: 1.
+ℹ With name: CASEID.
+Caused by error:
+! Result must be length 1, not 8."
+data/Utilities/swepco/swepco_data/swepco.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Utilities/swepco/swepco_data/swepco.por: Invalid file, or file has unsupported features."
+data/Utilities/swepco/swepco_data/swepco2.dta,data,196,ZIPCODE,Rs Zipcode,review_required,NA
+data/Utilities/swepco/swepco_data/swepco2.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Utilities/swepco/swepco_data/swepco2.por: Invalid file, or file has unsupported features."
+data/Utilities/swepco/swepcoalice2.sav,data,196,ZIPCODE,Rs Zipcode,review_required,NA
+data/Utilities/tu/MasterData/tuall master.xls,tuall,66,,,no_name_label_hit,NA
+data/Utilities/tu/MasterData/tuevent master.xls,tuevent,182,,,no_name_label_hit,NA
+data/Utilities/tu/MasterData/tuevent_inferior.xls,tuevent,182,,,no_name_label_hit,NA
+data/Utilities/tu/tu_data/tu.sav,data,NA,NA,NA,unreadable,"ℹ In index: 1.
+ℹ With name: CASEID.
+Caused by error:
+! Result must be length 1, not 8."
+data/Utilities/tu/tu_data/tu2.dta,data,189,AGPHONE1;AGPHONE2;PROFRIE2,Reason Against Competition: Telemarketin;Argument Against Compet: Telemarketing C;Good Service When R Contacts Company? T2,review_required,NA
+data/Utilities/tu/tu_data/tu2.sav,data,NA,NA,NA,unreadable,"ℹ In index: 1.
+ℹ With name: CASEID.
+Caused by error:
+! Result must be length 1, not 8."
+data/Utilities/wt/wt_data/wt.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Utilities/wt/wt_data/wt.por: Invalid file, or file has unsupported features."
+data/Utilities/wt/wt_data/wt2.dta,data,196,ZIPCODE,Rs Zipcode,review_required,NA
+data/Utilities/wt/wt_data/wt2.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/Utilities/wt/wt_data/wt2.por: Invalid file, or file has unsupported features."
+data/Vermont/data/VT-All (Rescaled).sav,data,310,,,no_name_label_hit,NA
+data/Vermont/data/vt.rdata,vt,306,,,no_name_label_hit,NA
+data/Vermont/data/vt.sav,data,306,,,no_name_label_hit,NA
+data/agg/bypoll/ausmonkyu.rdata,ausmonkyu,56,,,no_name_label_hit,NA
+data/agg/bypoll/btp04kyu.rdata,btp04kyu,48,,,no_name_label_hit,NA
+data/agg/bypoll/bulgariakyu.rdata,bulgariakyu,66,,,no_name_label_hit,NA
+data/agg/bypoll/chikyu.rdata,chikyu,60,,,no_name_label_hit,NA
+data/agg/bypoll/cplkyu.rdata,cplkyu,56,,,no_name_label_hit,NA
+data/agg/bypoll/eu09kyu.rdata,eu09kyu,46,,,no_name_label_hit,NA
+data/agg/bypoll/eukyu.rdata,eukyu,73,,,no_name_label_hit,NA
+data/agg/bypoll/grkkyu.rdata,grkkyu,54,,,no_name_label_hit,NA
+data/agg/bypoll/monarchykyu.rdata,monarchykyu,50,,,no_name_label_hit,NA
+data/agg/bypoll/nic1kyu.rdata,nic1kyu,60,,,no_name_label_hit,NA
+data/agg/bypoll/nurikyu.rdata,nurikyu,122,,,no_name_label_hit,NA
+data/agg/bypoll/swepkyu.rdata,swepkyu,56,,,no_name_label_hit,NA
+data/agg/bypoll/ukbgekyu.rdata,ukbgekyu,50,,,no_name_label_hit,NA
+data/agg/bypoll/ukcrimekyu.rdata,ukcrimekyu,52,,,no_name_label_hit,NA
+data/agg/bypoll/ukeukyu.rdata,ukeukyu,50,,,no_name_label_hit,NA
+data/agg/bypoll/ukhealthkyu.rdata,ukhealthkyu,64,,,no_name_label_hit,NA
+data/agg/bypoll/wtukyu.rdata,wtukyu,56,,,no_name_label_hit,NA
+data/agg/kyudata.csv,data,384,,,no_name_label_hit,NA
+data/agg/kyudata.rdata,kyudata,383,,,no_name_label_hit,NA
+data/agg/past/kyu17DPs.rdata,data,17,,,no_name_label_hit,NA
+data/agg/past/kyudata.csv,data,288,,,no_name_label_hit,NA
+data/agg/past/kyudata.dta,data,376,,,no_name_label_hit,NA
+data/agg/past/kyudata.rdata,kyudata,375,,,no_name_label_hit,NA
+data/agg/past/kyudata2.rdata,kyudata,287,,,no_name_label_hit,NA
+data/agg/polardata.csv,data,364,,,no_name_label_hit,NA
+data/australia_aboriginal/aus.rdata,aus,130,,,no_name_label_hit,NA
+data/australia_aboriginal/data/MergedNONrecoded.sav,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_aboriginal/data/MergedNONrecoded.sav: Invalid file, or file has unsupported features."
+data/australia_aboriginal/data/MergedRecoded.sav,data,130,AO#A;AO#B;DC#C,QC4.HOW HAVE CONTACT WITH PEOPLE OF ABORIGINAL ORIGIN - THROUGH WORK;QC4.HOW HAVE CONTACT WITH PEOPLE OF ABORIGINAL ORIGIN - THROUGH FRIENDS;QD3.AGREE/DISAGREE WITH STATEMENT ABOUT DISCUSSION GROUPS - FOUND COMMENTS OF OTHER GROUP MEMBERS USEFUL IN YOUR THINKING ABOUT THE ISSUES,review_required,NA
+data/australia_aboriginal/data/PRE-MERGENonIndigenous.sav,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_aboriginal/data/PRE-MERGENonIndigenous.sav: Invalid file, or file has unsupported features."
+data/australia_aboriginal/data/PREMergeIndigenous.sav,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_aboriginal/data/PREMergeIndigenous.sav: Invalid file, or file has unsupported features."
+data/australia_aboriginal/data/aus.rdata,aus,130,,,no_name_label_hit,NA
+data/australia_aboriginal/data/indig.sav,data,327,AO#A;AO#B;AY#;CI#D;CM#I;CT#C;CU#C,QC4.HOW HAVE CONTACT WITH PEOPLE OF ABORIGINAL ORIGIN - THROUGH WORK;QC4.HOW HAVE CONTACT WITH PEOPLE OF ABORIGINAL ORIGIN - THROUGH FRIENDS;QC14.TELEPHONE NUMBER;QC1.ISSUES LEARNED DURING DELIBERATION THAT HAD THE MOST IMPACT ON YOUR THINKING - MANY AUSTRALIANS DONT UNDERSTAND/HAVE HAD NO CONTACT WITH ABORIGINAL PEOPLE;QC5a.CIRCUMSTANCES WOULD AGREE TO COMPENSATION OF STOLEN GENERATION - COMPENSATE WHEN INDIVIDUALS HAVE NOT HAD CONTACT WITH PARENTS;STATEMENTS ABOUT DISCUSSION GROUPS - FOUND COMMENTS OF OTHER GROUP MEMBERS USEFUL IN YOUR THINKING ABOUT THE ISSUES;QD3.AGREE/DISAGREE WITH STATEMENT ABOUT DISCUSSION GROUPS - FOUND COMMENTS OF OTHER GROUP MEMBERS USEFUL IN YOUR THINKING ABOUT THE ISSUES,review_required,NA
+data/australia_aboriginal/data/non-indig.sav,data,382,AM#A;AM#B;AM#C;CN#C;CO#C,QC4.HOW HAVE CONTACT WITH PEOPLE OF ABORIGINAL ORIGIN - THROUGH WORK;QC4.HOW HAVE CONTACT WITH PEOPLE OF ABORIGINAL ORIGIN - THROUGH FRIENDS;QC4.HOW HAVE CONTACT WITH PEOPLE OF ABORIGINAL ORIGIN - NONE/DONT KNOW;STATEMENTS ABOUT DISCUSSION GROUPS - FOUND COMMENTS OF OTHER GROUP MEMBERS USEFUL IN YOUR THINKING ABOUT THE ISSUES;QD3.AGREE/DISAGREE WITH STATEMENT - FOUND COMMENTS OF OTHER GROUP MEMBERS USEFUL IN YOUR THINKING ABOUT THE ISSUES,review_required,NA
+data/australia_republic/Australia PK.xls,PM,3,,,no_name_label_hit,NA
+data/australia_republic/Australia PK.xls,Questionnaire,2,,,no_name_label_hit,NA
+data/australia_republic/Australia PK.xls,SPSS,2,,,no_name_label_hit,NA
+data/australia_republic/Australia PK.xls,cdd,4,,,no_name_label_hit,NA
+data/australia_republic/Australia.sav,data,NA,NA,NA,unreadable,"ℹ In index: 448.
+ℹ With name: elecdiv3.
+Caused by error:
+! Result must be length 1, not 149."
+data/australia_republic/Australia2000.sav,data,209,AZ#;DJ#C;DK#C,QF7.POSTCODE;STATEMENT - FOUND MANY COMMENTS OF OTHER GROUP MEMBERS USEFUL IN THINKING ABOUT ISSUES;QF3.AGREE/DISAGREE WITH STATEMENT - FOUND MANY COMMENTS OF OTHER GROUP MEMBERS USEFUL IN THINKING ABOUT ISSUES,review_required,NA
+data/australia_republic/Australia2004.sav,data,NA,NA,NA,unreadable,"ℹ In index: 448.
+ℹ With name: elecdiv3.
+Caused by error:
+! Result must be length 1, not 149."
+data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_13_July_2000.sav,data,NA,NA,NA,unreadable,Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_13_July_2000.sav: Unable to convert string to the requested encoding (invalid byte sequence).
+data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_15_Feb_2000.por,data,NA,NA,NA,unreadable,Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_15_Feb_2000.por: The file's timestamp string is invalid.
+data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_16_Feb_2000.por,data,NA,NA,NA,unreadable,Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_16_Feb_2000.por: The file's timestamp string is invalid.
+data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_21_March_2000.por,data,NA,NA,NA,unreadable,Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_republic/MasterData/ACRS_t3/AustralianCRS1018_21_March_2000.por: The file's timestamp string is invalid.
+data/australia_republic/MasterData/Australia_DP/Australia master dataset with knowledge indices July 29 2004.sav,data,NA,NA,NA,unreadable,"ℹ In index: 448.
+ℹ With name: elecdiv3.
+Caused by error:
+! Result must be length 1, not 149."
+data/australia_republic/MasterData/Australia_DP/Australia_Master_2_Nov_1999.sav,data,203,AZ#;DJ#C;DK#C,QF7.POSTCODE;STATEMENT - FOUND MANY COMMENTS OF OTHER GROUP MEMBERS USEFUL IN THINKING ABOUT ISSUES;QF3.AGREE/DISAGREE WITH STATEMENT - FOUND MANY COMMENTS OF OTHER GROUP MEMBERS USEFUL IN THINKING ABOUT ISSUES,review_required,NA
+data/australia_republic/MasterData/Australia_DP/Australia_Master_Corrected_10_Jan_2000.sav,data,209,AZ#;DJ#C;DK#C,QF7.POSTCODE;STATEMENT - FOUND MANY COMMENTS OF OTHER GROUP MEMBERS USEFUL IN THINKING ABOUT ISSUES;QF3.AGREE/DISAGREE WITH STATEMENT - FOUND MANY COMMENTS OF OTHER GROUP MEMBERS USEFUL IN THINKING ABOUT ISSUES,review_required,NA
+data/australia_republic/MasterData/Australia_DP/ozidpart_master.sav,data,5,,,no_name_label_hit,NA
+data/australia_republic/MasterData/Kyu/australia_master_2_nov_1999.dta,data,203,az_;dj_c;dk_c,qf7.postcode;statement - found many comments of other group members useful in thinking about;qf3.agree/disagree with statement - found many comments of other group members u,review_required,NA
+data/australia_republic/MasterData/Kyu/australia_master_corrected_10_jan_2000.dta,data,209,az_;dj_c;dk_c,qf7.postcode;statement - found many comments of other group members useful in thinking about;qf3.agree/disagree with statement - found many comments of other group members u,review_required,NA
+data/australia_republic/MasterData/Kyu/ozidpart_master.dta,data,5,,,no_name_label_hit,NA
+data/australia_republic/MasterData/qualitative_991102/R991102.sav,data,155,,,no_name_label_hit,NA
+data/australia_republic/OZ_Data/ACRS_t3/t3oz.sav,data,NA,NA,NA,unreadable,"ℹ In index: 168.
+ℹ With name: ELECDIV3.
+Caused by error:
+! Result must be length 1, not 149."
+data/australia_republic/OZ_Data/ACRS_t3/t3oz2.sav,data,NA,NA,NA,unreadable,"ℹ In index: 168.
+ℹ With name: elecdiv3.
+Caused by error:
+! Result must be length 1, not 149."
+data/australia_republic/OZ_Data/oz.sav,data,167,POSTCODE;COMMENT2,Postcode T1 (QF7);Comments of other group members useful T2 (WF3c),review_required,NA
+data/australia_republic/OZ_Data/oz2.sav,data,167,postcode;comment2,Postcode T1 (QF7);Comments of other group members useful T2 (WF3c),review_required,NA
+data/australia_republic/OZ_Data/oz2_t1t2t3_June17.sav,data,NA,NA,NA,unreadable,"ℹ In index: 334.
+ℹ With name: elecdiv3.
+Caused by error:
+! Result must be length 1, not 149."
+data/australia_republic/OZ_Data/temporary/oz.sav,data,NA,NA,NA,unreadable,Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_republic/OZ_Data/temporary/oz.sav: Unable to convert string to the requested encoding (invalid byte sequence).
+data/australia_republic/OZ_Data/temporary/oz2.sav,data,166,POSTCODE;COMMENT2,Postcode T1 (QF7);Comments of other group members useful T2 (WF3c),review_required,NA
+data/australia_republic/OZ_Data/temporary/t3oz.sav,data,NA,NA,NA,unreadable,Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_republic/OZ_Data/temporary/t3oz.sav: Unable to convert string to the requested encoding (invalid byte sequence).
+data/australia_republic/OZ_Data/temporary/t3oz2.sav,data,NA,NA,NA,unreadable,Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/australia_republic/OZ_Data/temporary/t3oz2.sav: Unable to convert string to the requested encoding (invalid byte sequence).
+data/australia_republic/OZ_Data/temporary/t3oz2_1.sav,data,NA,NA,NA,unreadable,"ℹ In index: 167.
+ℹ With name: ELECDIV3.
+Caused by error:
+! Result must be length 1, not 149."
+data/australia_republic/aus.Rdata,aus,706,postcode;comment2,;,review_required,NA
+data/australia_republic/codebooks/Australia PK.xls,PM,3,,,no_name_label_hit,NA
+data/australia_republic/codebooks/Australia PK.xls,Questionnaire,2,,,no_name_label_hit,NA
+data/australia_republic/codebooks/Australia PK.xls,SPSS,2,,,no_name_label_hit,NA
+data/australia_republic/codebooks/Australia PK.xls,cdd,4,,,no_name_label_hit,NA
+data/australia_republic/oz2_t1t2t3_June17.sav,data,NA,NA,NA,unreadable,"ℹ In index: 334.
+ℹ With name: elecdiv3.
+Caused by error:
+! Result must be length 1, not 149."
+data/australia_republic/qualitative_991102/R991102.sav,data,155,,,no_name_label_hit,NA
+data/british_crime/MasterData/Crime.sav,data,NA,NA,NA,unreadable,"ℹ In index: 380.
+ℹ With name: CHH1G.
+Caused by error:
+! Result must be length 1, not 3."
+data/british_crime/MasterData/oldfiles/crime13.sav,data,NA,NA,NA,unreadable,"ℹ In index: 8.
+ℹ With name: AGE.
+Caused by error:
+! Result must be length 1, not 2."
+data/british_crime/MasterData/oldfiles/crime14.sav,data,NA,NA,NA,unreadable,"ℹ In index: 8.
+ℹ With name: AGE.
+Caused by error:
+! Result must be length 1, not 2."
+data/british_crime/MasterData/oldfiles/crime3.por,data,NA,NA,NA,unreadable,"ℹ In index: 139.
+ℹ With name: NEWS2.
+Caused by error:
+! Result must be length 1, not 3."
+data/british_crime/analyses/Brit Crime PK.xls,Sheet1,7,,,no_name_label_hit,NA
+data/british_crime/analyses/Brit Crime PK.xls,Sheet2,0,,,no_name_label_hit,NA
+data/british_crime/analyses/Brit Crime PK.xls,Sheet3,0,,,no_name_label_hit,NA
+data/british_crime/analyses/crime-pk-learning.xls,Marginal PK,9,,,no_name_label_hit,NA
+data/british_crime/analyses/crimeoutput.xls,Table 1,15,,,no_name_label_hit,NA
+data/british_crime/analyses/crimeoutput.xls,Table 3,13,,,no_name_label_hit,NA
+data/british_crime/analyses/crimeoutput.xls,Table 4,0,,,no_name_label_hit,NA
+data/british_crime/crime_data/crime.dta,data,287,HOWTHEFT;PATROLS1;PATROLS2;PATROLS3,How much street attacks & thefts? (A8);Public more active: street patrols (Q3);Public more active: street patrols (QQ3);Public more active: street patrols (QD3),review_required,NA
+data/british_crime/crime_data/crime.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/british_crime/crime_data/crime.por: Invalid file, or file has unsupported features."
+data/british_crime/crime_data/uk-crime.sav,data,287,howtheft;patrols1;patrols2;patrols3,HOW MUCH STREET ATTACKS & THEFTS? (A8);PUBLIC MORE ACTIVE: STREET PATROLS (Q3);PUBLIC MORE ACTIVE: STREET PATROLS (QQ3);PUBLIC MORE ACTIVE: STREET PATROLS (QD3),review_required,NA
+data/british_crime/ukcrime.eval.rdata,ukcrime.eval,67,,,no_name_label_hit,NA
+data/british_europe/Clean/ukeu_clean.Rdata,ukeu,176,phone,,review_required,NA
+data/british_europe/MasterData/europe.sav,data,NA,NA,NA,unreadable,"ℹ In index: 269.
+ℹ With name: patband.
+Caused by error:
+! Result must be length 1, not 5."
+data/british_europe/europe_data/Europe-6-10-07.sav,data,209,phone;givenum,Telephone in accommodation (B21a IAQ);Telephone number for checking (B21b IAQ),review_required,NA
+data/british_europe/europe_data/europe.dta,data,462,phone;givenum,telephone in accommodation (b21a iaq);telephone number for checking (b21b iaq),review_required,NA
+data/british_europe/europe_data/europe.por,data,175,PHONE;GIVENUM,Telephone in accommodation (B21a IAQ);Telephone number for checking (B21b IAQ),review_required,NA
+data/british_europe/europe_data/europe.sav,data,NA,NA,NA,unreadable,"ℹ In index: 269.
+ℹ With name: patband.
+Caused by error:
+! Result must be length 1, not 5."
+data/british_europe/europe_data/europe_2.dta,data,175,PHONE;GIVENUM,Telephone in accommodation (B21a IAQ);Telephone number for checking (B21b IAQ),review_required,NA
+data/british_europe/europe_data/europe_2.por,data,175,PHONE;GIVENUM,Telephone in accommodation (B21a IAQ);Telephone number for checking (B21b IAQ),review_required,NA
+data/british_europe/europe_data/europe_small_group_data_Aug31.dta,data,463,phone;givenum,telephone in accommodation (b21a iaq);telephone number for checking (b21b iaq),review_required,NA
+data/british_europe/europe_data/uk-eu-11-12.sav,data,219,phone;givenum,Telephone in accommodation (B21a IAQ);Telephone number for checking (B21b IAQ),review_required,NA
+data/british_europe/europe_data/ukeu.sav,data,235,phone;givenum,Telephone in accommodation (B21a IAQ);Telephone number for checking (B21b IAQ),review_required,NA
+data/british_europe/uk-eu.sav,data,175,phone;givenum,Telephone in accommodation (B21a IAQ);Telephone number for checking (B21b IAQ),review_required,NA
+data/british_europe/ukeu.eval.rdata,ukeu.eval,67,,,no_name_label_hit,NA
+data/british_general_election/General_data/BGE 12-item knowledge index for Kyu.sav,data,2,,,no_name_label_hit,NA
+data/british_general_election/General_data/BGE 3 T1 knowledge indices for Kyu June 17.sav,data,4,,,no_name_label_hit,NA
+data/british_general_election/General_data/BGE general data file.sav,data,499,phone,Does R have a Phone (QB22),review_required,NA
+data/british_general_election/General_data/BGE variables for Kyu June 17.sav,data,20,,,no_name_label_hit,NA
+data/british_general_election/General_data/bge 12-item knowledge index for kyu.dta,data,2,,,no_name_label_hit,NA
+data/british_general_election/General_data/bge 3 t1 knowledge indices for kyu june 17.dta,data,4,,,no_name_label_hit,NA
+data/british_general_election/General_data/bge general data file.dta,data,523,phone,does r have a phone (qb22),review_required,NA
+data/british_general_election/General_data/bge variables for kyu june 17.dta,data,20,,,no_name_label_hit,NA
+data/british_general_election/General_data/gencode.por,data,233,PHONE,DOES R HAVE A PHONE (QB22),review_required,NA
+data/british_general_election/General_data/gencode2.csv,data,233,PHONE,,review_required,NA
+data/british_general_election/General_data/gencode2.dta,data,233,PHONE,Does R have a Phone (QB22),review_required,NA
+data/british_general_election/General_data/gencode2.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/british_general_election/General_data/gencode2.por: Invalid file, or file has unsupported features."
+data/british_general_election/General_data/gencode2_kh_Feb15.dta,data,513,PHONE,Does R have a Phone (QB22),review_required,NA
+data/british_general_election/General_data/mvspss.por,data,NA,NA,NA,unreadable,"ℹ In index: 1.
+ℹ With name: FLDAREA.
+Caused by error:
+! Result must be length 1, not 12."
+data/british_general_election/master_data/gencode.por,data,233,PHONE,DOES R HAVE A PHONE (QB22),review_required,NA
+data/british_general_election/master_data/orig.data.por,data,NA,NA,NA,unreadable,"ℹ In index: 1.
+ℹ With name: FLDAREA.
+Caused by error:
+! Result must be length 1, not 12."
+data/british_general_election/master_data/orig.data.sav,data,NA,NA,NA,unreadable,"ℹ In index: 1.
+ℹ With name: fldarea.
+Caused by error:
+! Result must be length 1, not 12."
+data/british_general_election/uk -bge-know-gain-5-21-08.sav,data,575,phone,does r have a phone (qb22),review_required,NA
+data/british_general_election/uk-bge sociodem.xls,Sheet1,1,,,no_name_label_hit,NA
+data/british_general_election/uk-bge sociodem.xls,Sheet2,1,,,no_name_label_hit,NA
+data/british_general_election/uk-bge sociodem.xls,Sheet3,0,,,no_name_label_hit,NA
+data/british_general_election/uk-crime.sav,data,287,howtheft;patrols1;patrols2;patrols3,HOW MUCH STREET ATTACKS & THEFTS? (A8);PUBLIC MORE ACTIVE: STREET PATROLS (Q3);PUBLIC MORE ACTIVE: STREET PATROLS (QQ3);PUBLIC MORE ACTIVE: STREET PATROLS (QD3),review_required,NA
+data/british_general_election/ukbge.eval.rdata,ukbge.eval,67,,,no_name_label_hit,NA
+data/british_general_election/ukbge.sav,data,568,phone,does r have a phone (qb22),review_required,NA
+data/british_health/Data_corrected/health1.sav,data,NA,NA,NA,unreadable,"ℹ In index: 146.
+ℹ With name: AGESEX.
+Caused by error:
+! Result must be length 1, not 12."
+data/british_health/Data_corrected/health2.sav,data,NA,NA,NA,unreadable,"ℹ In index: 146.
+ℹ With name: AGESEX.
+Caused by error:
+! Result must be length 1, not 12."
+data/british_health/Health_Data/health1.dta,data,NA,NA,NA,unreadable,"ℹ In index: 146.
+ℹ With name: AGESEX.
+Caused by error:
+! Result must be length 1, not 12."
+data/british_health/Health_Data/health1.sav,data,NA,NA,NA,unreadable,"ℹ In index: 146.
+ℹ With name: AGESEX.
+Caused by error:
+! Result must be length 1, not 12."
+data/british_health/Health_Data/health2.sav,data,NA,NA,NA,unreadable,"ℹ In index: 146.
+ℹ With name: AGESEX.
+Caused by error:
+! Result must be length 1, not 12."
+data/british_health/Health_Data/health3.sav,data,NA,NA,NA,unreadable,"ℹ In index: 146.
+ℹ With name: AGESEX.
+Caused by error:
+! Result must be length 1, not 12."
+data/british_health/MasterData/SPSS.POR,data,NA,NA,NA,unreadable,"ℹ In index: 186.
+ℹ With name: COUNTRY.
+Caused by error:
+! Result must be length 1, not 7."
+data/british_health/britishhealth.sav,data,NA,NA,NA,unreadable,"ℹ In index: 146.
+ℹ With name: agesex.
+Caused by error:
+! Result must be length 1, not 12."
+data/british_health/health1.dta,data,NA,NA,NA,unreadable,"ℹ In index: 146.
+ℹ With name: AGESEX.
+Caused by error:
+! Result must be length 1, not 12."
+data/british_health/health1.sav,data,NA,NA,NA,unreadable,"ℹ In index: 146.
+ℹ With name: AGESEX.
+Caused by error:
+! Result must be length 1, not 12."
+data/british_health/health2.sav,data,NA,NA,NA,unreadable,"ℹ In index: 146.
+ℹ With name: AGESEX.
+Caused by error:
+! Result must be length 1, not 12."
+data/british_health/health3.sav,data,NA,NA,NA,unreadable,"ℹ In index: 146.
+ℹ With name: AGESEX.
+Caused by error:
+! Result must be length 1, not 12."
+data/british_health/ukhealth.POR,data,NA,NA,NA,unreadable,"ℹ In index: 186.
+ℹ With name: COUNTRY.
+Caused by error:
+! Result must be length 1, not 7."
+data/british_health/ukhealth.eval.rdata,ukhealth.eval,67,,,no_name_label_hit,NA
+data/british_health/ukhealth.sav,data,NA,NA,NA,unreadable,"ℹ In index: 186.
+ℹ With name: country.
+Caused by error:
+! Result must be length 1, not 7."
+data/british_monarchy/Clean/ukmonarchy.Rdata,monarchy,599,,,no_name_label_hit,NA
+data/british_monarchy/MasterData/monarchy.dta,data,379,b25a;b25b,b25a  telephone in accommodation;b25b  telephone nummber for checking,review_required,NA
+data/british_monarchy/MasterData/monarchy.sav,data,379,B25A;B25B,B25A  Telephone in accommodation;B25B  Telephone nummber for checking,review_required,NA
+data/british_monarchy/monarchy_data/monarchy1.dta,data,211,teleacc;telenum,telephone in accommodation (qb25a);telephone nummber for checking (qb25b),review_required,NA
+data/british_monarchy/monarchy_data/monarchy1.sas7bdat,data,211,TELEACC;TELENUM,Telephone in accommodation (QB25a);Telephone nummber for checking (QB25b),review_required,NA
+data/british_monarchy/monarchy_data/monarchy1.sav,data,211,TELEACC;TELENUM,Telephone in accommodation (QB25a);Telephone nummber for checking (QB25b),review_required,NA
+data/british_monarchy/monarchy_data/monarchy2.dta,data,213,TELEACC;TELENUM,Telephone in accommodation (QB25a);Telephone nummber for checking (QB25b),review_required,NA
+data/british_monarchy/monarchy_data/monarchy2.sas7bdat,data,213,TELEACC;TELENUM,Telephone in accommodation (QB25a);Telephone nummber for checking (QB25b),review_required,NA
+data/british_monarchy/monarchy_data/monarchy2.sav,data,213,TELEACC;TELENUM,Telephone in accommodation (QB25a);Telephone nummber for checking (QB25b),review_required,NA
+data/british_monarchy/monarchy_data/monarchy2a.dta,data,215,TELEACC;TELENUM,Telephone in accommodation (QB25a);Telephone nummber for checking (QB25b),review_required,NA
+data/british_monarchy/monarchy_data/monarchy3.dta,data,213,teleacc;telenum,telephone in accommodation (qb25a);telephone nummber for checking (qb25b),review_required,NA
+data/british_monarchy/monarchy_data/monarchy3.sas7bdat,data,213,TELEACC;TELENUM,Telephone in accommodation (QB25a);Telephone nummber for checking (QB25b),review_required,NA
+data/british_monarchy/monarchy_data/monarchy3.sav,data,213,TELEACC;TELENUM,Telephone in accommodation (QB25a);Telephone nummber for checking (QB25b),review_required,NA
+data/british_monarchy/monarchy_final.sav,data,417,B25A;B25B,b25a  telephone in accommodation;b25b  telephone nummber for checking,review_required,NA
+data/british_monarchy/other data/L3-British-Monarchy.sav,data,5,,,no_name_label_hit,NA
+data/british_monarchy/other data/monarchy.sav,data,379,B25A;B25B,B25A  Telephone in accommodation;B25B  Telephone nummber for checking,review_required,NA
+data/british_monarchy/other data/monarchy1.sav,data,211,TELEACC;TELENUM,Telephone in accommodation (QB25a);Telephone nummber for checking (QB25b),review_required,NA
+data/british_monarchy/other data/monarchy2.sav,data,213,TELEACC;TELENUM,Telephone in accommodation (QB25a);Telephone nummber for checking (QB25b),review_required,NA
+data/british_monarchy/other data/uk-monarchy.sav,data,452,b25a;b25b,b25a  telephone in accommodation;b25b  telephone nummber for checking,review_required,NA
+data/british_power/data/STAN0026_OUTPUT.sav,data,75,,,no_name_label_hit,NA
+data/british_power/data/STAN0026_OUTPUT_control2.sav,data,134,q5c,"Desirability - Allowing voters to vote by telephone, text message, or online",review_required,NA
+data/british_power/data/STAN0026_recruit1.sav,data,82,s2,Telephone number,review_required,NA
+data/british_power/data/STAN0026_recruit_all_names.sav,data,88,s2;email,Telephone number;Email address,review_required,NA
+data/british_power/data/STAN0026_recruit_plus_control.sav,data,87,s2;email,Telephone number;Email address,review_required,NA
+data/british_power/data/UK_t1_t2_t3_(participants)_merged-corrected_recode.sav,data,285,,,no_name_label_hit,NA
+data/british_power/data/UK_t1_t2_t3_participants_merged_corrected2.xlsx,Sheet1,286,,,no_name_label_hit,NA
+data/british_power/data/full_t1_merged.sav,data,75,,,no_name_label_hit,NA
+data/british_power/data/t1_final.sav,data,NA,NA,NA,unreadable,"ℹ In index: 3.
+ℹ With name: filter.
+Caused by error:
+! Result must be length 1, not 2."
+data/british_power/data/uk_t1_t2_t3_participants_merged.rdata,uk_t1_t2_t3_participants_merged,256,,,no_name_label_hit,NA
+data/british_power/data/uk_t1_t2_t3_participants_merged_corrected.rdata,uk_t1_t2_t3_participants_merged_corrected,256,,,no_name_label_hit,NA
+data/british_power/data/uk_t1_t2_t3_participants_merged_corrected2.rdata,uk_t1_t2_t3_participants_merged_corrected2,286,,,no_name_label_hit,NA
+data/british_power/freq.csv,data,10,,,no_name_label_hit,NA
+data/british_power/knowAnalyses/pkukpow.csv,data,10,,,no_name_label_hit,NA
+data/british_power/pkukpow.csv,data,10,,,no_name_label_hit,NA
+data/british_power/rep.analyses/template_rep.xlsx,Sheet1,3,,,no_name_label_hit,NA
+data/british_power/repAnalyses/template_rep.xlsx,Sheet1,3,,,no_name_label_hit,NA
+data/eu_2007/EU DP Codebook-rev2.xls,All,5,,,no_name_label_hit,NA
+data/eu_2007/EU DP Codebook-rev2.xls,Empirical Premise Indices,8,,,no_name_label_hit,NA
+data/eu_2007/EU DP Codebook-rev2.xls,Other Variables,1,,,no_name_label_hit,NA
+data/eu_2007/EU DP Codebook-rev2.xls,Policy Indices,9,,,no_name_label_hit,NA
+data/eu_2007/EU DP Codebook-rev2.xls,Value Indices,1,,,no_name_label_hit,NA
+data/eu_2007/eu.sav,data,1625,,,no_name_label_hit,NA
+data/eu_2007/eu_5_25_08.rdata,eu2007,1625,,,no_name_label_hit,NA
+data/eu_2007/euirt.rdata,euirt,153,,,no_name_label_hit,NA
+data/eu_2009/Codebook-new-OCT_2010.xls,Foglio1,4,,,no_name_label_hit,NA
+data/eu_2009/Codebook-new-OCT_2010.xls,Foglio2,2,,,no_name_label_hit,NA
+data/eu_2009/Master Q_Main_final_clean.xls,List of Parties,27,,,no_name_label_hit,NA
+data/eu_2009/Master Q_Main_final_clean.xls,MASTER,6,,,no_name_label_hit,NA
+data/eu_2009/MasterData/europe.sav,data,NA,NA,NA,unreadable,"ℹ In index: 269.
+ℹ With name: patband.
+Caused by error:
+! Result must be length 1, not 5."
+data/eu_2009/europe_data/EU2009_APSA.dta,data,NA,NA,NA,unreadable,"ℹ In index: 829.
+ℹ With name: filter.
+Caused by error:
+! Result must be length 1, not 4."
+data/eu_2009/europe_data/EUROPOLIS-DATA-NEW-OCT-2010.sav,data,444,V2Q22b_1;V3Q22b_1,"V2Q22b_1 How strongly would you agree or disagree with each of following statements? Manufacturers should be required to produce automobiles that need less fuel per mile driven, even if that means that they cost more to buy.;V3Q22b_1 How strongly would you agree or disagree with each of following statements? Manufacturers should be required to produce automobiles that need less fuel per mile driven, even if that means that they cost more to buy.",review_required,NA
+data/eu_2009/europe_data/MasterData/europe.sav,data,NA,NA,NA,unreadable,"ℹ In index: 269.
+ℹ With name: patband.
+Caused by error:
+! Result must be length 1, not 5."
+data/eu_2009/europe_data/europe.dta,data,462,phone;givenum,telephone in accommodation (b21a iaq);telephone number for checking (b21b iaq),review_required,NA
+data/eu_2009/europe_data/europe.por,data,175,PHONE;GIVENUM,Telephone in accommodation (B21a IAQ);Telephone number for checking (B21b IAQ),review_required,NA
+data/eu_2009/europe_data/europe_2.dta,data,175,PHONE;GIVENUM,Telephone in accommodation (B21a IAQ);Telephone number for checking (B21b IAQ),review_required,NA
+data/eu_2009/europe_data/europe_2.por,data,175,PHONE;GIVENUM,Telephone in accommodation (B21a IAQ);Telephone number for checking (B21b IAQ),review_required,NA
+data/eu_2009/europe_data/europe_small_group_data_Aug31.dta,data,463,phone;givenum,telephone in accommodation (b21a iaq);telephone number for checking (b21b iaq),review_required,NA
+data/eu_2009/europe_data/global-final2_USE THIS FILE.dta,data,NA,NA,NA,unreadable,"ℹ In index: 115.
+ℹ With name: t2bis.
+Caused by error:
+! Result must be length 1, not 3."
+data/eu_2009/europe_data/recoded_eu09.rdata,eu09,68,,,no_name_label_hit,NA
+data/eu_2009/eurpolis_replication_via_alice/Europolis-ReplicationDataset-Feb2014-b.dta,data,NA,NA,NA,unreadable,"ℹ In index: 592.
+ℹ With name: filter.
+Caused by error:
+! Result must be length 1, not 4."
+data/eu_2009/fishkin_luskin_siu_paper/rest1.csv,data,11,,,no_name_label_hit,NA
+data/eu_2009/fishkin_luskin_siu_paper/rest3.csv,data,11,,,no_name_label_hit,NA
+data/eu_2009/questionnaires/t1 t2 t3 converter/T1 T2 T3 Question Number Comparison-revised.xls,Sheet1,5,,,no_name_label_hit,NA
+data/eu_2009/questionnaires/t1 t2 t3 converter/T1 T2 T3 Question Number Comparison-revised.xls,Sheet2,0,,,no_name_label_hit,NA
+data/eu_2009/questionnaires/t1 t2 t3 converter/T1 T2 T3 Question Number Comparison-revised.xls,Sheet3,0,,,no_name_label_hit,NA
+data/eu_2009/questionnaires/t1 t2 t3 converter/T1 T2 T3 Question Number Comparison.xls,Sheet1,5,,,no_name_label_hit,NA
+data/eu_2009/questionnaires/t1 t2 t3 converter/T1 T2 T3 Question Number Comparison.xls,Sheet2,0,,,no_name_label_hit,NA
+data/eu_2009/questionnaires/t1 t2 t3 converter/T1 T2 T3 Question Number Comparison.xls,Sheet3,0,,,no_name_label_hit,NA
+data/eu_2009/questionnaires/t1 t2 t3 converter/T1 T2 T3 Question converter with full question text.xls,Sheet1,10,,,no_name_label_hit,NA
+data/eu_2009/questionnaires/t1 t2 t3 converter/T1 T2 T3 Question converter with full question text.xls,Sheet2,0,,,no_name_label_hit,NA
+data/eu_2009/questionnaires/t1 t2 t3 converter/T1 T2 T3 Question converter with full question text.xls,Sheet3,0,,,no_name_label_hit,NA
+data/netherlands/data/data.sav,data,313,t1.phone;t1.Commentaar,Is this a phoneinterview;,review_required,NA
+data/netherlands/data/working-data-interviews.sav,data,80,t1.phone;t1.Commentaar,Is dit een telefooninterview;,review_required,NA
+data/netherlands/data/working-data-participants.sav,data,342,t1.phone;t1.Commentaar,Is dit een telefooninterview;,review_required,NA
+data/new_haven/data/NH_Data_pre-mid-post.csv,data,122,STREET;COMMENTS;PHONE,;;,review_required,NA
+data/new_haven/data/NH_Data_pre-mid-post.xls,Mid,78,,,no_name_label_hit,NA
+data/new_haven/data/NH_Data_pre-mid-post.xls,Post,143,,,no_name_label_hit,NA
+data/new_haven/data/NH_Data_pre-mid-post.xls,Pre,122,STREET;COMMENTS;PHONE,;;,review_required,NA
+data/new_haven/data/nh-data-new.sav,data,14,,,no_name_label_hit,NA
+data/new_haven/data/nh_caseid.dta,data,NA,NA,NA,unreadable,"ℹ In index: 14.
+ℹ With name: hhincome.
+Caused by error:
+! Result must be length 1, not 11."
+data/new_haven/data/nh_data_06_05_07.sav,data,357,STREET;COMMENTS;PHONE,;;,review_required,NA
+data/new_haven/data/nh_data_06_23_07.dta,data,434,street;comments;phone,;;,review_required,NA
+data/new_haven/data/nh_data_09_22_06.sav,data,336,STREET;COMMENTS;PHONE,;;,review_required,NA
+data/new_haven/data/nh_data_09_22_061.sav,data,336,street;comments;phone,;;,review_required,NA
+data/new_haven/data/nh_hlm_smallnew.dta,data,NA,NA,NA,unreadable,"ℹ In index: 14.
+ℹ With name: hhincome.
+Caused by error:
+! Result must be length 1, not 11."
+data/new_haven/orig/nh_data_06_23_07.dta,data,NA,NA,NA,unreadable,"ℹ In index: 435.
+ℹ With name: income.
+Caused by error:
+! Result must be length 1, not 11."
+data/new_haven/questionnaire/NH_questionnaire_1.xls,Sheet1,2,,,no_name_label_hit,NA
+data/new_haven/questionnaire/NH_questionnaire_1.xls,Sheet2,0,,,no_name_label_hit,NA
+data/new_haven/questionnaire/NH_questionnaire_1.xls,Sheet3,0,,,no_name_label_hit,NA
+data/new_haven/questionnaire/NH_questionnaire_2 (2).xls,Sheet1,2,,,no_name_label_hit,NA
+data/new_haven/questionnaire/NH_questionnaire_2 (2).xls,Sheet2,0,,,no_name_label_hit,NA
+data/new_haven/questionnaire/NH_questionnaire_2 (2).xls,Sheet3,0,,,no_name_label_hit,NA
+data/new_haven/questionnaire/NH_questionnaire_2.xls,Sheet1,2,,,no_name_label_hit,NA
+data/new_haven/questionnaire/NH_questionnaire_2.xls,Sheet2,0,,,no_name_label_hit,NA
+data/new_haven/questionnaire/NH_questionnaire_2.xls,Sheet3,0,,,no_name_label_hit,NA
+data/new_haven/questionnaire/Pre-Event Respondents with Questionnaire IDs.xls,CATI Script,1,,,no_name_label_hit,NA
+data/new_haven/questionnaire/Pre-Event Respondents with Questionnaire IDs.xls,Custom Charts,0,,,no_name_label_hit,NA
+data/new_haven/questionnaire/Pre-Event Respondents with Questionnaire IDs.xls,DeltStat Data,0,,,no_name_label_hit,NA
+data/new_haven/questionnaire/Pre-Event Respondents with Questionnaire IDs.xls,DeltStat Format,0,,,no_name_label_hit,NA
+data/new_haven/questionnaire/Pre-Event Respondents with Questionnaire IDs.xls,File Layout,8,,,no_name_label_hit,NA
+data/new_haven/questionnaire/Pre-Event Respondents with Questionnaire IDs.xls,Open Ended Responses,0,,,no_name_label_hit,NA
+data/new_haven/questionnaire/Pre-Event Respondents with Questionnaire IDs.xls,Profile,4,,,no_name_label_hit,NA
+data/new_haven/questionnaire/Pre-Event Respondents with Questionnaire IDs.xls,Questions,4,,,no_name_label_hit,NA
+data/new_haven/questionnaire/Pre-Event Respondents with Questionnaire IDs.xls,Source,109,STREET;COMMENTS;PHONE,;;,review_required,NA
+data/nic_1/Data_revised/nic123_2_r.sav,data,429,USEFULC2;Q40_OTHE;Q45_OTHE;INT2,OTHERS COMMENTS WERE USEFUL T2 (Q39c SAQ2);OTHER MODERATOR (VERBATIM);OTHER MODERATOR (VERBATIM);R Interviewed at T2 By Phone?,review_required,NA
+data/nic_1/Data_revised/nic123_r.sav,data,428,USEFULC2;Q40_OTHE;Q45_OTHE;INT2,OTHERS COMMENTS WERE USEFUL T2 (Q39C SAQ;OTHER MODERATOR (VERBATIM);OTHER MODERATOR (VERBATIM);R INTERVIEWED AT T2 BY PHONE?,review_required,NA
+data/nic_1/MasterData/Master_nic_123.sav,data,388,USEFULC2;Q40_OTHE;Q45_OTHE,OTHERS COMMENTS WERE USEFUL;OTHER MODERATOR (VERBATIM);OTHER MODERATOR (VERBATIM),review_required,NA
+data/nic_1/MasterData/NRDD.SAV,data,NA,NA,NA,unreadable,"ℹ In index: 105.
+ℹ With name: GENDER.
+Caused by error:
+! Result must be length 1, not 2."
+data/nic_1/Master_nic_123.sav,data,388,USEFULC2;Q40_OTHE;Q45_OTHE,OTHERS COMMENTS WERE USEFUL;OTHER MODERATOR (VERBATIM);OTHER MODERATOR (VERBATIM),review_required,NA
+data/nic_1/NIC_Data/iaqdate.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/nic_1/NIC_Data/iaqdate.por: Invalid file, or file has unsupported features."
+data/nic_1/NIC_Data/iaqdate.sav,data,10,,,no_name_label_hit,NA
+data/nic_1/NIC_Data/nic123.por,data,424,USEFULC2;Q40_OTHE;Q45_OTHE;INT2,OTHERS COMMENTS WERE USEFUL T2 (Q39C SAQ;OTHER MODERATOR (VERBATIM);OTHER MODERATOR (VERBATIM);R INTERVIEWED AT T2 BY PHONE?,review_required,NA
+data/nic_1/NIC_Data/nic123_2.por,data,425,USEFULC2;Q40_OTHE;Q45_OTHE;INT2,OTHERS COMMENTS WERE USEFUL T2 (Q39c SAQ2);OTHER MODERATOR (VERBATIM);OTHER MODERATOR (VERBATIM);R Interviewed at T2 By Phone?,review_required,NA
+data/nic_1/NIC_Data/nicrdd.por,data,121,,,no_name_label_hit,NA
+data/nic_1/NIC_Data/nicrdd_2.por,data,121,,,no_name_label_hit,NA
+data/nic_1/NRDD.SAV,data,NA,NA,NA,unreadable,"ℹ In index: 105.
+ℹ With name: GENDER.
+Caused by error:
+! Result must be length 1, not 2."
+data/nic_1/iaqdate.por,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/nic_1/iaqdate.por: Invalid file, or file has unsupported features."
+data/nic_1/nic123.por,data,424,USEFULC2;Q40_OTHE;Q45_OTHE;INT2,OTHERS COMMENTS WERE USEFUL T2 (Q39C SAQ;OTHER MODERATOR (VERBATIM);OTHER MODERATOR (VERBATIM);R INTERVIEWED AT T2 BY PHONE?,review_required,NA
+data/nic_1/nic123_2_r.sav,data,429,USEFULC2;Q40_OTHE;Q45_OTHE;INT2,OTHERS COMMENTS WERE USEFUL T2 (Q39c SAQ2);OTHER MODERATOR (VERBATIM);OTHER MODERATOR (VERBATIM);R Interviewed at T2 By Phone?,review_required,NA
+data/nic_1/nic2_caseid.dta,data,82,,,no_name_label_hit,NA
+data/nic_1/nic_hlm_small.dta,data,61,,,no_name_label_hit,NA
+data/nic_1/old.data/02_NIC_L1.sav,data,23,,,no_name_label_hit,NA
+data/nic_1/old.data/02_NIC_L2.sav,data,11,,,no_name_label_hit,NA
+data/nic_1/old.data/02_NIC_L3.sav,data,NA,NA,NA,unreadable,"ℹ In index: 2.
+ℹ With name: country.
+Caused by error:
+! Result must be length 1, not 3."
+data/nic_2/analyses/nic ii.xls,Pivot,2,,,no_name_label_hit,NA
+data/nic_2/analyses/nic ii.xls,nic ii,18,,,no_name_label_hit,NA
+data/nic_2/data.dta,data,1159,nphon_a;nphon_b;nphon_s;rans;eanyo;ranyo;qb13;qf13,all phones in home have same number;number of unique phone numbers;number of unique phone numbers - summary;number of times respondent contacted;number contacts before enumeration;number of contacts after enumeration;qb13. how about requiring higher mileage from automobiles (as a way of reducing;qf13. how about requiring higher mileage from automobiles (as a way of reducing,review_required,NA
+data/nic_2/data.sav,data,1029,NPHON_A;NPHON_B;NPHON_S;RANS;EANYO;RANYO,all phones in home have same number;number of unique phone numbers;number of unique phone numbers - summary;number of times respondent contacted;number contacts before enumeration;number of contacts after enumeration,review_required,NA
+data/nic_2/data/dat2.por,data,891,NPHON_A;NPHON_B;NPHON_S;RANS;EANYO;RANYO,all phones in home have same number;number of unique phone numbers;number of unique phone numbers - summary;number of times respondent contacted;number contacts before enumeration;number of contacts after enumeration,review_required,NA
+data/nic_2/data/dat2.sav,data,891,NPHON_A;NPHON_B;NPHON_S;RANS;EANYO;RANYO,all phones in home have same number;number of unique phone numbers;number of unique phone numbers - summary;number of times respondent contacted;number contacts before enumeration;number of contacts after enumeration,review_required,NA
+data/nic_2/data/data.dta,data,439,nphon_a;nphon_b;nphon_s;rans;eanyo;ranyo,all phones in home have same number;number of unique phone numbers;number of unique phone numbers - summary;number of times respondent contacted;number contacts before enumeration;number of contacts after enumeration,review_required,NA
+data/nic_2/data/data.sav,data,439,NPHON_A;NPHON_B;NPHON_S;RANS;EANYO;RANYO,All phones in home have same number;Number of unique phone numbers;Number of unique phone numbers - Summary;Number of times respondent contacted;Number contacts before enumeration;Number of contacts after enumeration,review_required,NA
+data/nic_2/data/data_rev.dta,data,439,nphon_a;nphon_b;nphon_s;rans;eanyo;ranyo,all phones in home have same number;number of unique phone numbers;number of unique phone numbers - summary;number of times respondent contacted;number contacts before enumeration;number of contacts after enumeration,review_required,NA
+data/nic_2/data/data_rev.sav,data,439,nphon_a;nphon_b;nphon_s;rans;eanyo;ranyo,All phones in home have same number;Number of unique phone numbers;Number of unique phone numbers - Summary;Number of times respondent contacted;Number contacts before enumeration;Number of contacts after enumeration,review_required,NA
+data/nic_2/data/f2f_cont.dta,data,439,nphon_a;nphon_b;nphon_s;rans;eanyo;ranyo,all phones in home have same number;number of unique phone numbers;number of unique phone numbers - summary;number of times respondent contacted;number contacts before enumeration;number of contacts after enumeration,review_required,NA
+data/nic_2/data/f2f_treat.dta,data,439,nphon_a;nphon_b;nphon_s;rans;eanyo;ranyo,all phones in home have same number;number of unique phone numbers;number of unique phone numbers - summary;number of times respondent contacted;number contacts before enumeration;number of contacts after enumeration,review_required,NA
+data/nic_2/data/jen09.dta,data,768,nphon_a;nphon_b;nphon_s;rans;eanyo;ranyo,all phones in home have same number;number of unique phone numbers;number of unique phone numbers - summary;number of times respondent contacted;number contacts before enumeration;number of contacts after enumeration,review_required,NA
+data/nic_2/data/jenf2f.sav,data,764,NPHON_A;NPHON_B;NPHON_S;RANS;EANYO;RANYO,all phones in home have same number;number of unique phone numbers;number of unique phone numbers - summary;number of times respondent contacted;number contacts before enumeration;number of contacts after enumeration,review_required,NA
+data/nic_2/data/knf2f.dta,data,8,,,no_name_label_hit,NA
+data/nic_2/data/lsef2f.dta,data,10,,,no_name_label_hit,NA
+data/nic_2/data/trade_items.dta,data,8,,,no_name_label_hit,NA
+data/nic_2/indices/index_offline.xls,index_offline,23,,,no_name_label_hit,NA
+data/nic_2/orig/nic2 (2).dta,data,1344,nphon_a;nphon_b;nphon_s;rans;eanyo;ranyo,all phones in home have same number;number of unique phone numbers;number of unique phone numbers - summary;number of times respondent contacted;number contacts before enumeration;number of contacts after enumeration,review_required,NA
+data/nic_2/orig/nic2.dta,data,1357,nphon_a;nphon_b;nphon_s;rans;eanyo;ranyo,all phones in home have same number;number of unique phone numbers;number of unique phone numbers - summary;number of times respondent contacted;number contacts before enumeration;number of contacts after enumeration,review_required,NA
+data/nova_scotia/MasterData/Nova Scotia Participants - Post Results.xls,% Breakdown for EA Question,4,,,no_name_label_hit,NA
+data/nova_scotia/MasterData/Nova Scotia Participants - Post Results.xls,Code Book,1,,,no_name_label_hit,NA
+data/nova_scotia/MasterData/Nova Scotia Participants - Post Results.xls,Raw Data,121,,,no_name_label_hit,NA
+data/nova_scotia/MasterData/Nova Scotia Participants - Pre Results.xls,Blank,0,,,no_name_label_hit,NA
+data/nova_scotia/MasterData/Nova Scotia Participants - Pre Results.xls,Code Book,3,,,no_name_label_hit,NA
+data/nova_scotia/MasterData/Nova Scotia Participants - Pre Results.xls,Raw Data,28,,,no_name_label_hit,NA
+data/nuri/Nuri.Codebook.xls,Att. Indices,5,Comments,,review_required,NA
+data/nuri/Nuri.Codebook.xls,Knowledge Items,4,,,no_name_label_hit,NA
+data/nuri/agg_nuri_caseid.rdata,agg_nuri_caseid,591,,,no_name_label_hit,NA
+data/nuri/bypoll/2004.online.primaries.dta,data,135,,,no_name_label_hit,NA
+data/nuri/bypoll/2004GE_hlm.dta,data,1097,,,no_name_label_hit,NA
+data/nuri/bypoll/btp04.rdata,btp04,32,,,no_name_label_hit,NA
+data/nuri/bypoll/btp04_caseid.dta,data,77,,,no_name_label_hit,NA
+data/nuri/codebook/List of Attitude Indices (all polls).xls,Sheet1,7,Comments,,review_required,NA
+data/nuri/codebook/List of Knowledge Indices (all polls).xls,Knowledge Items,4,,,no_name_label_hit,NA
+data/nuri/codebook/Nuri.Codebook.xls,Att. Indices,5,Comments,,review_required,NA
+data/nuri/codebook/Nuri.Codebook.xls,Knowledge Items,4,,,no_name_label_hit,NA
+data/nuri/nuri.Rdata,nuri,32,,,no_name_label_hit,NA
+data/nuri/nurikyu.rdata,nurikyu,122,,,no_name_label_hit,NA
+data/nuri/oldnuri/agg_data_0831.dta,data,114,,,no_name_label_hit,NA
+data/nuri/oldnuri/agg_nuri.rdata,agg_nuri_newknow_dropmiss_grpgain,555,,,no_name_label_hit,NA
+data/nuri/pnuri.Rdata,nuri,32,,,no_name_label_hit,NA
+data/nuri/speaktimedata/btp_opmin.dta,data,NA,NA,NA,unreadable,"ℹ In index: 127.
+ℹ With name: t1mindex_libcongrp.
+Caused by error:
+! Result must be length 1, not 2."
+data/nuri/temp.rdata,nuri1,556,,,no_name_label_hit,NA
+data/pkdat/agg_data.Rdata,agg_data,68,,,no_name_label_hit,NA
+data/pkdat/ausn.Rdata,ausn,42,,,no_name_label_hit,NA
+data/pkdat/bulgaria.crm.Rdata,bulgaria.crm,42,,,no_name_label_hit,NA
+data/pkdat/chinan.Rdata,chinan,42,,,no_name_label_hit,NA
+data/pkdat/cplr.Rdata,cplr,42,,,no_name_label_hit,NA
+data/pkdat/eu2009.Rdata,eu2009,42,,,no_name_label_hit,NA
+data/pkdat/eun.Rdata,eun,42,,,no_name_label_hit,NA
+data/pkdat/gaurav.Rdata,gaurav,36,,,no_name_label_hit,NA
+data/pkdat/greecen.Rdata,greecen,42,,,no_name_label_hit,NA
+data/pkdat/healthybrits.Rdata,healthybrits,42,,,no_name_label_hit,NA
+data/pkdat/monarchyn.Rdata,monarchyn,42,,,no_name_label_hit,NA
+data/pkdat/nic1n.Rdata,nic1n,42,,,no_name_label_hit,NA
+data/pkdat/nuri.Rdata,nuri,32,,,no_name_label_hit,NA
+data/pkdat/swepcon.Rdata,swepcon,42,,,no_name_label_hit,NA
+data/pkdat/ukbgen.Rdata,ukbgen,42,,,no_name_label_hit,NA
+data/pkdat/ukcrimen.Rdata,ukcrimen,42,,,no_name_label_hit,NA
+data/pkdat/ukeun.Rdata,ukeun,42,,,no_name_label_hit,NA
+data/pkdat/wtun.Rdata,wtun,42,,,no_name_label_hit,NA
+data/san_mateo/sm_caseid.dta,data,68,,,no_name_label_hit,NA
+data/san_mateo/smdp 3-18-08.dta,data,330,ZCODE;COMMENT1,Zipcode;,review_required,NA
+data/us_2004_general_election/DATA/Online dpoll Oct 04 dataset with control group from Jan 04 dpoll included 06 14.sav,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/us_2004_general_election/DATA/Online dpoll Oct 04 dataset with control group from Jan 04 dpoll included 06 14.sav: Invalid file, or file has unsupported features."
+data/us_2004_general_election/DATA/Online dpoll Oct 04 dataset with control group from Jan 04 dpoll included 06 14_r.sav,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/us_2004_general_election/DATA/Online dpoll Oct 04 dataset with control group from Jan 04 dpoll included 06 14_r.sav: Invalid file, or file has unsupported features."
+data/us_2004_general_election/DATA/caseid.dta,data,1528,w1qb13;w1qf13;w2qb13;w2qf13,w1 baseline. w1qb13. how about requiring higher mileage from automobiles (as a w;w1 followup. w1qf13. how about requiring higher mileage from automobiles (as a w;w2 baseline. w2qb13.  how about requiring higher mileage from automobiles (as a;w2 followup w2qf13.  how about requiring higher mileage from automobiles (as a w,review_required,NA
+data/us_2004_general_election/DATA/dopall_final.sav,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/us_2004_general_election/DATA/dopall_final.sav: Invalid file, or file has unsupported features."
+data/us_2004_general_election/DATA/dopall_final1.dta,data,1529,w1qb13;w1qf13;w2qb13;w2qf13,w1 baseline. w1qb13. how about requiring higher mileage from automobiles (as a w;w1 followup. w1qf13. how about requiring higher mileage from automobiles (as a w;w2 baseline. w2qb13.  how about requiring higher mileage from automobiles (as a;w2 followup w2qf13.  how about requiring higher mileage from automobiles (as a w,review_required,NA
+data/us_2004_general_election/DATA/dopall_final1.sav,data,1292,w1qb13;w1qf13;w2qb13;w2qf13,W1 Baseline. w1qb13. How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines. Do you...;W1 Followup. w1qf13. How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines. Do you...;W2 Baseline. w2qb13.  How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines.Do you...;W2 Followup w2qf13.  How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines.Do you...,review_required,NA
+data/us_2004_general_election/DATA/dopall_final1_w4only.dta,data,1026,,,no_name_label_hit,NA
+data/us_2004_general_election/DATA/dopall_final1_w4only_amelia.dta,data,26,,,no_name_label_hit,NA
+data/us_2004_general_election/DATA/dopall_final1_w4only_matched.dta,data,1024,,,no_name_label_hit,NA
+data/us_2004_general_election/DATA/dopall_final_wsummer_tracking_data.sav,data,NA,NA,NA,unreadable,"Failed to parse /private/tmp/dp-data-stage/vault/cdd/data/us_2004_general_election/DATA/dopall_final_wsummer_tracking_data.sav: Invalid file, or file has unsupported features."
+data/us_2004_general_election/DATA/matching_09192006.dta,data,1021,,,no_name_label_hit,NA
+data/us_2004_general_election/DATA/outdata1.dta,data,27,,,no_name_label_hit,NA
+data/us_2004_general_election/DATA/outdata2.dta,data,27,,,no_name_label_hit,NA
+data/us_2004_general_election/DATA/outdata3.dta,data,27,,,no_name_label_hit,NA
+data/us_2004_general_election/DATA/outdata4.dta,data,27,,,no_name_label_hit,NA
+data/us_2004_general_election/DATA/outdata5.dta,data,27,,,no_name_label_hit,NA
+data/us_2004_general_election/DATA/pre_mid_post_merged3_rev.dta,data,267,street;comment1,;,review_required,NA
+data/us_2004_general_election/DATA/pre_mid_post_merged3_rev.sav,data,267,STREET;COMMENT1,;,review_required,NA
+data/us_2004_general_election/DATA/usgen2004.RData,amelia.data,26,,,no_name_label_hit,NA
+data/us_2004_general_election/OUTPUT/OUTPUT_06032006.xls,Sheet1,4,,,no_name_label_hit,NA
+data/us_2004_general_election/OUTPUT/OUTPUT_06032006.xls,Sheet2,0,,,no_name_label_hit,NA
+data/us_2004_general_election/OUTPUT/OUTPUT_06032006.xls,Sheet3,0,,,no_name_label_hit,NA
+data/us_fp_online/master_data/Both_Waves_Final_Client.sav,data,270,QB13;QF13,QB13. How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines. Do you...;QF13. How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines. Do you...,review_required,NA
+data/us_fp_online/master_data/DOP1_Exp+Control_Client.sav,data,156,,,no_name_label_hit,NA
+data/us_fp_online/master_data/both_waves_final_client.dta,data,270,qb13;qf13,qb13. how about requiring higher mileage from automobiles (as a way of reducing;qf13. how about requiring higher mileage from automobiles (as a way of reducing,review_required,NA
+data/us_fp_online/master_data/dop1_exp+control_client.dta,data,156,,,no_name_label_hit,NA
+data/us_fp_online/online_data/DOP1_Exp+Control_Client.sav,data,156,,,no_name_label_hit,NA
+data/us_fp_online/online_data/Jennifer_April08.sav,data,301,qb13;qf13,QB13. How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines. Do you...;QF13. How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines. Do you...,review_required,NA
+data/us_fp_online/online_data/Jennifer_online_Aug01.dta,data,882,qb13;qf13,qb13. how about requiring higher mileage from automobiles (as a way of reducing;qf13. how about requiring higher mileage from automobiles (as a way of reducing,review_required,NA
+data/us_fp_online/online_data/Jennifer_online_March07.dta,data,402,qb13;qf13,qb13. how about requiring higher mileage from automobiles (as a way of reducing;qf13. how about requiring higher mileage from automobiles (as a way of reducing,review_required,NA
+data/us_fp_online/online_data/Jennifer_online_March14.dta,data,867,qb13;qf13,qb13. how about requiring higher mileage from automobiles (as a way of reducing;qf13. how about requiring higher mileage from automobiles (as a way of reducing,review_required,NA
+data/us_fp_online/online_data/Jennifer_online_March14_milmulti_group_mean.dta,data,792,qb13;qf13,qb13. how about requiring higher mileage from automobiles (as a way of reducing;qf13. how about requiring higher mileage from automobiles (as a way of reducing,review_required,NA
+data/us_fp_online/online_data/Jennifer_values_April08.dta,data,11,,,no_name_label_hit,NA
+data/us_fp_online/online_data/LSE_online.dta,data,10,,,no_name_label_hit,NA
+data/us_fp_online/online_data/ONLINE_INDEX.dta,data,867,qb13;qf13,qb13. how about requiring higher mileage from automobiles (as a way of reducing;qf13. how about requiring higher mileage from automobiles (as a way of reducing,review_required,NA
+data/us_fp_online/online_data/both_waves_final_client.dta,data,792,qb13;qf13,qb13. how about requiring higher mileage from automobiles (as a way of reducing;qf13. how about requiring higher mileage from automobiles (as a way of reducing,review_required,NA
+data/us_fp_online/online_data/dop1_exp+control_client.dta,data,156,,,no_name_label_hit,NA
+data/us_fp_online/online_data/dop1_exp+control_client_working.dta,data,156,,,no_name_label_hit,NA
+data/us_fp_online/online_data/index_merged.dta,data,21,,,no_name_label_hit,NA
+data/us_fp_online/online_data/index_online.dta,data,20,,,no_name_label_hit,NA
+data/us_fp_online/online_data/jennifer_april08.dta,data,301,qb13;qf13,qb13. how about requiring higher mileage from automobiles (as a way of reducing;qf13. how about requiring higher mileage from automobiles (as a way of reducing,review_required,NA
+data/us_fp_online/online_data/jennifer_f2f_march07.sav,data,558,NPHON_A;NPHON_B;NPHON_S;RANS;EANYO;RANYO,all phones in home have same number;number of unique phone numbers;number of unique phone numbers - summary;number of times respondent contacted;number contacts before enumeration;number of contacts after enumeration,review_required,NA
+data/us_fp_online/online_data/jennifer_online_march07.sav,data,386,QB13;QF13,qb13. how about requiring higher mileage from automobiles (as a way of reducing;qf13. how about requiring higher mileage from automobiles (as a way of reducing,review_required,NA
+data/us_fp_online/online_data/jennifer_online_march14.sav,data,720,QB13;QF13,qb13. how about requiring higher mileage from automobiles (as a way of reducing;qf13. how about requiring higher mileage from automobiles (as a way of reducing,review_required,NA
+data/us_fp_online/online_data/kn_ind_cm_online.dta,data,7,,,no_name_label_hit,NA
+data/us_fp_online/online_data/lse_f2f.sav,data,10,,,no_name_label_hit,NA
+data/us_fp_online/online_data/lse_f2f.xls,workbook,NA,NA,NA,unreadable,"
+  filepath: /private/tmp/dp-data-stage/vault/cdd/data/us_fp_online/online_data/lse_f2f.xls
+  libxls error: Unable to open file"
+data/us_fp_online/online_data/lse_online.sav,data,10,,,no_name_label_hit,NA
+data/us_fp_online/online_data/lse_online.xls,workbook,NA,NA,NA,unreadable,"
+  filepath: /private/tmp/dp-data-stage/vault/cdd/data/us_fp_online/online_data/lse_online.xls
+  libxls error: Unable to open file"
+data/us_fp_online/online_data/online study.sav,data,343,QB13;QF13,QB13. How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines. Do you...;QF13. How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines. Do you...,review_required,NA
+data/us_fp_online/online_data/online_Jennifer_April08.sav,data,307,qb13;qf13,QB13. How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines. Do you...;QF13. How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines. Do you...,review_required,NA
+data/us_fp_online/online_data/online_March14_group.dta,data,855,qb13;qf13,qb13. how about requiring higher mileage from automobiles (as a way of reducing;qf13. how about requiring higher mileage from automobiles (as a way of reducing,review_required,NA
+data/us_fp_online/online_data/online_March14_group_final.dta,data,143,,,no_name_label_hit,NA
+data/us_fp_online/online_data/online_group_analysis_Aug01.dta,data,961,qb13;qf13,qb13. how about requiring higher mileage from automobiles (as a way of reducing;qf13. how about requiring higher mileage from automobiles (as a way of reducing,review_required,NA
+data/us_fp_online/online_data/online_group_analysis_Aug01_reduced.dta,data,962,qb13;qf13,qb13. how about requiring higher mileage from automobiles (as a way of reducing;qf13. how about requiring higher mileage from automobiles (as a way of reducing,review_required,NA
+data/us_fp_online/online_data/online_t1_t4.dta,data,591,q2b13;q2f13, how about requiring higher mileage from automobiles (as a way of reducing green; how about requiring higher mileage from automobiles (as a way of reducing green,review_required,NA
+data/us_fp_online/online_data/online_t1_t4.sav,data,591,Q2B13;Q2F13, How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines.Do you...; How about Requiring higher mileage from automobiles (as a way of reducing greenhouse gases) even if that means less powerful automobile engines.Do you...,review_required,NA
+data/us_fp_online/online_data/pid_march29.dta,data,4,,,no_name_label_hit,NA
+data/us_fp_online/online_data/test.dta,data,791,qb13;qf13,qb13. how about requiring higher mileage from automobiles (as a way of reducing;qf13. how about requiring higher mileage from automobiles (as a way of reducing,review_required,NA
+data/us_fp_online/online_data/test1.dta,data,22,,,no_name_label_hit,NA
+data/us_fp_online/online_data/trade_index_online.dta,data,15,,,no_name_label_hit,NA
+data/us_online_primaries/data/Data differences variables only.sav,data,13,,,no_name_label_hit,NA
+data/us_online_primaries/data/Dop2004_b1f1_Client.sav,data,273,,,no_name_label_hit,NA
+data/us_online_primaries/data/Dop2004_b1f1_Client_022604.sav,data,273,,,no_name_label_hit,NA
+data/us_online_primaries/data/New Dummy variable  - 50 on Ed thermometer time 2.sav,data,2,,,no_name_label_hit,NA
+data/us_online_primaries/data/T2 Edwards - Kerry on traits and thermometer.sav,data,3,,,no_name_label_hit,NA
+data/us_online_primaries/data/Time 2 candidate trait index ratings -2 to +2 scale.sav,data,4,,,no_name_label_hit,NA
+data/us_online_primaries/data/data T2 Bush v dem diff variables only.sav,data,5,,,no_name_label_hit,NA
+data/us_online_primaries/data/jennifer.sav,data,185,,,no_name_label_hit,NA
+"data/us_online_primaries/data/prelim dataset recoded, deltd and t2 minus t1 calculated.sav",data,218,,,no_name_label_hit,NA
+meta_data/attitude_indices/AllPollIndices.csv,data,7,,,no_name_label_hit,NA
+meta_data/attitude_indices/AllPollIndices_withEmpiricalPremises.csv,data,7,,,no_name_label_hit,NA
+meta_data/attitude_indices/cdd.codebook.gs.xlsx,Sheet1,5,,,no_name_label_hit,NA
+meta_data/attitude_indices/cdd.codebook.gs.xlsx,Sheet2,0,,,no_name_label_hit,NA
+meta_data/attitude_indices/cdd.codebook.gs.xlsx,Sheet3,0,,,no_name_label_hit,NA
+meta_data/attitude_indices/cdd.codebook.gs.xlsx,Sheet4,0,,,no_name_label_hit,NA
+meta_data/attitude_indices/cdd.codebook.gs.xlsx,Sheet5,0,,,no_name_label_hit,NA
+meta_data/attitude_indices/past_versions/All.Poll.Indices (Gaurav Sood_s conflicted copy 2014-11-13).xls,Attitude Indices,7,Comments,,review_required,NA
+meta_data/attitude_indices/past_versions/All.Poll.Indices (updated).xls,Attitude Indices,7,Comments,,review_required,NA
+meta_data/attitude_indices/past_versions/All.Poll.Indices (신혜리와(과) 충돌하는 사본 2014-11-15).xls,Attitude Indices,7,Comments,,review_required,NA
+meta_data/attitude_indices/past_versions/All.Poll.Indices.4.15.10 (2).xlsx,Indices,8,,,no_name_label_hit,NA
+meta_data/attitude_indices/past_versions/All.Poll.Indices.4.15.10 (2).xlsx,pk,7,,,no_name_label_hit,NA
+meta_data/attitude_indices/past_versions/All.Poll.Indices.4.15.10 (2).xlsx,sociodem,10,,,no_name_label_hit,NA
+meta_data/attitude_indices/past_versions/All.Poll.Indices.4.15.10 (3).xlsx,Indices,8,,,no_name_label_hit,NA
+meta_data/attitude_indices/past_versions/All.Poll.Indices.4.15.10 (3).xlsx,pk,7,,,no_name_label_hit,NA
+meta_data/attitude_indices/past_versions/All.Poll.Indices.4.15.10 (3).xlsx,sociodem,10,,,no_name_label_hit,NA
+meta_data/attitude_indices/past_versions/All.Poll.Indices.4.15.10.xlsx,Indices,8,,,no_name_label_hit,NA
+meta_data/attitude_indices/past_versions/All.Poll.Indices.4.15.10.xlsx,pk,7,,,no_name_label_hit,NA
+meta_data/attitude_indices/past_versions/All.Poll.Indices.4.15.10.xlsx,sociodem,10,,,no_name_label_hit,NA
+meta_data/attitude_indices/past_versions/All.Poll.Indices.xls,Attitude Indices,7,Comments,,review_required,NA
+meta_data/attitude_indices/past_versions/Attitude_Indices.xls,Attitude Indices,8,Comments,,review_required,NA
+meta_data/attitude_indices/past_versions/List of Attitude Indices (all polls).xls,Attitude Indices,7,Comments,,review_required,NA
+meta_data/attitude_indices/past_versions/Study_AttIndexName_AttIndexVar.csv,data,5,,,no_name_label_hit,NA
+meta_data/attitude_indices/past_versions/att codebook.xls,Sheet1,5,Comments,,review_required,NA
+meta_data/checklist/checklist.xlsx,Sheet1,8,,,no_name_label_hit,NA
+meta_data/checklist/checklist.xlsx,Sheet2,0,,,no_name_label_hit,NA
+meta_data/checklist/checklist.xlsx,Sheet3,0,,,no_name_label_hit,NA
+meta_data/checklist/data and command file checklist.xlsx,Sheet1,3,,,no_name_label_hit,NA
+meta_data/checklist/data and command file checklist.xlsx,Sheet2,0,,,no_name_label_hit,NA
+meta_data/checklist/data and command file checklist.xlsx,Sheet3,0,,,no_name_label_hit,NA
+meta_data/dp_eval_qs.xlsx,Sheet1,1,,,no_name_label_hit,NA
+meta_data/dp_eval_qs.xlsx,Sheet2,0,,,no_name_label_hit,NA
+meta_data/dp_eval_qs.xlsx,Sheet3,0,,,no_name_label_hit,NA
+meta_data/dp_eval_qs.xlsx,Sheet4,0,,,no_name_label_hit,NA
+meta_data/dp_eval_qs.xlsx,Sheet5,0,,,no_name_label_hit,NA
+meta_data/hlm_codebook/hlmcodebook-2.xlsx,Sheet1,5,,,no_name_label_hit,NA
+meta_data/hlm_codebook/hlmcodebook-2.xlsx,Sheet2,0,,,no_name_label_hit,NA
+meta_data/hlm_codebook/hlmcodebook-2.xlsx,Sheet3,0,,,no_name_label_hit,NA
+meta_data/hlm_codebook/hlmcodebook-2.xlsx,Sheet4,0,,,no_name_label_hit,NA
+meta_data/hlm_codebook/hlmcodebook-2.xlsx,Sheet5,0,,,no_name_label_hit,NA
+meta_data/hlm_codebook/hlmcodebook_v10.xls,main,1,,,no_name_label_hit,NA
+meta_data/hlm_codebook/hlmcodebook_v10.xls,past discussions,1,,,no_name_label_hit,NA
+meta_data/hlm_codebook/hlmcodebook_v2.xls,Sheet1,1,,,no_name_label_hit,NA
+meta_data/hlm_codebook/hlmcodebook_v4.xls,Sheet1,1,,,no_name_label_hit,NA
+meta_data/hlm_codebook/hlmcodebook_v5-1.xls,main,1,,,no_name_label_hit,NA
+meta_data/hlm_codebook/hlmcodebook_v5-1.xls,past discussions,1,,,no_name_label_hit,NA
+meta_data/hlm_codebook/hlmcodebook_v7.xls,main,1,,,no_name_label_hit,NA
+meta_data/hlm_codebook/hlmcodebook_v7.xls,past discussions,1,,,no_name_label_hit,NA
+meta_data/hlm_codebook/hlmcodebook_v8.xls,main,1,,,no_name_label_hit,NA
+meta_data/hlm_codebook/hlmcodebook_v8.xls,past discussions,1,,,no_name_label_hit,NA
+meta_data/hlm_codebook/hlmcodebook_v9.xlsx,main,1,,,no_name_label_hit,NA
+meta_data/hlm_codebook/hlmcodebook_v9.xlsx,past discussions,1,,,no_name_label_hit,NA
+meta_data/knowledge_indices/List of Knowledge Indices (all polls).xls,Knowledge Items,4,,,no_name_label_hit,NA
+meta_data/knowledge_indices/pk rosetta stone.xls,Sheet1,10,,,no_name_label_hit,NA
+meta_data/knowledge_indices/pk rosetta stone.xls,Sheet2,1,,,no_name_label_hit,NA
+meta_data/knowledge_indices/pk rosetta stone.xls,Sheet3,7,,,no_name_label_hit,NA
+meta_data/poll_details/pollid_pollname.csv,data,2,,,no_name_label_hit,NA
+meta_data/rosetta_stone/Rosetta Stone (2).xls,0-1 Indices,2,,,no_name_label_hit,NA
+meta_data/rosetta_stone/Rosetta Stone.xls,0-1 Indices,2,,,no_name_label_hit,NA
+pete/data/all17DPs_individual.rdata,data.i,19,,,no_name_label_hit,NA
+pete/data/groupleveldataframe.rdata,data,17,,,no_name_label_hit,NA
+pete/data/indleveldataframe.rdata,data.i,20,,,no_name_label_hit,NA
+pete/data/kyudata.rdata,kyudata,285,,,no_name_label_hit,NA
+pete/data/mohantydata.RData,master,365,,,no_name_label_hit,NA
+pete/data/recoded_china05.rdata,china05,64,,,no_name_label_hit,NA
+pete/poll ids.xlsx,Sheet1,2,,,no_name_label_hit,NA
+pete/poll ids.xlsx,Sheet2,0,,,no_name_label_hit,NA
+pete/poll ids.xlsx,Sheet3,0,,,no_name_label_hit,NA

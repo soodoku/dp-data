@@ -7,7 +7,13 @@ if (!fs::dir_exists(vault)) {
   )
 }
 
-paths <- fs::dir_ls(vault, recurse = TRUE, type = "file", fail = TRUE)
+paths <- fs::dir_ls(
+  vault,
+  all = TRUE,
+  recurse = TRUE,
+  type = "file",
+  fail = TRUE
+)
 relative <- fs::path_rel(paths, start = vault)
 hashes <- purrr::map_chr(
   paths,
@@ -30,4 +36,5 @@ inventory <- tibble::tibble(
   ) |>
   dplyr::arrange(.data$path)
 
+fs::dir_create(project_path("audit"))
 readr::write_csv(inventory, project_path("audit", "cdd_archive_files.csv"))

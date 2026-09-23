@@ -1,6 +1,6 @@
 R = Rscript
 
-.PHONY: restore package inventory validate test lint check
+.PHONY: restore package inventory disclosure validate test lint check
 
 restore:
 	$(R) -e 'renv::restore(prompt = FALSE)'
@@ -10,6 +10,9 @@ package:
 
 inventory:
 	$(R) scripts/01_build_archive_inventory.R
+
+disclosure:
+	$(R) scripts/04_scan_disclosure.R
 
 validate:
 	$(R) scripts/03_validate.R
