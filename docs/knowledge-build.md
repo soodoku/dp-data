@@ -210,3 +210,63 @@ Reference manuscripts: [Cor and Sood](https://gsood.com/research/papers/guess.pd
 [Luskin, Sood, Fishkin, and Hahn](https://gsood.com/research/papers/DeliberativeDistortions.pdf)
 (MD5 `d1e62fbd13340ee1d75791a115f2ab59`). The reliability checks reproduce the
 rounded values on page 17 of the Cor–Sood manuscript.
+
+
+## Historical aggregate reconstruction
+
+Release `v0.1.0` preserves the aggregate and historical linkage before source
+reconstruction. `make polardata` begins the next stage: reproducing existing
+values from reviewed poll-level responses. Corrections and a broader schema
+remain later stages, governed by the [issue register](poll-issues.md).
+New discrepancies or questionable definitions discovered while building must be
+recorded there with source/version, code location, affected records, numerical
+impact, plausible explanations and the evidence still needed. Matching the old
+aggregate does not clear a definition for substantive use. A failed parity check
+is an investigation trigger; do not update the benchmark to make it pass.
+
+The first increment writes
+`output/polardata/uk-health-1998-attitudes.parquet`: 230 rows, one per UK Health
+respondent in the reviewed participant survey, with 20 columns. This is a
+partial reconstruction, not a complete UK Health record or full `polardata`.
+No downstream consumer reads it yet. Historical benchmarks, canonical knowledge
+tables and linkage outputs remain unchanged.
+
+`dpnum` is integer 2 and `caseid` is the survey's numeric `serial_m`, verified
+equal to `serial_a`, unique and nonmissing. The remaining double columns use
+exact historical names `ukhealth.t{1,2}{suffix}` and take values in [0, 1] or
+missing. Source wave suffixes 1 and 2 are retained. Their definitions are:
+
+| Suffix | Raw source stems, separately in each wave | Historical formula |
+|---|---|---|
+| payhlt | payhlth | Three-category scaling; higher means individual payment |
+| poora | poora | Five-category scaling; higher means more priority to the poor |
+| option | options | Three-category scaling; higher means spending more |
+| hlthfu | chgp, chvis, chmeal, chstay, chamb | Available-item mean of five-category scores |
+| ctexpt | treata, cthart, ctnurs, ctbaby | Available-item mean of reversed five-category scores |
+| pritre | ctfert, cthosp, ctcosm | Available-item mean of reversed five-category scores |
+| severi | lista, severa | Scaled lista minus scaled severa, then empirical min–max scaling within each wave over all 230 source records with both answers |
+| preven | preva | Five-category scaling; higher means more priority to prevention |
+| dispub | ingova, inpuba | Available-item mean after mapping raw 1 and 3 to 1, raw 2 to 0.5 |
+
+Ordinary k-category scaling is `(raw - 1) / (k - 1)`; reversal is `1 - score`.
+Raw -9 (not answered) and -8 (cannot choose), plus system missing values, become
+missing. Any other unreviewed code stops the build. Available-item means use
+only observed components; all-missing rows remain missing. The severity contrast
+requires both components. Original raw missing codes remain in the immutable
+survey and its dictionaries; this historical-format output does not distinguish
+them. Denominator expansion belongs to the later schema review.
+
+The builder reads original response fields from the public survey, not its stored
+indices. The codebook and V6 index memo were consulted; their differences from the
+historical aggregate remain recorded under UKH-01–04. In particular, the severity
+direction, wave-specific rescaling, and non-monotonic discretion map are reproduced
+without being endorsed or corrected. The supplied survey is already a merged
+participant file; reconstructing its earlier field-file merge remains unfinished.
+
+The comparison joins on unique `caseid` within dpnum 2 and requires the same 230
+IDs on both sides. No unmatched or duplicated IDs are allowed. All 18 attitude
+columns must have identical missingness and values within absolute tolerance
+`1e-10` before an output is written. `audit/polardata_parity.csv` records counts,
+missingness differences, numerical differences and maximum absolute error for
+each field. The benchmark is read only for this check; it supplies no rebuilt
+values. A Parquet round trip must preserve values and types exactly.

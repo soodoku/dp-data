@@ -40,6 +40,12 @@ Known measurement, sample, linkage, and provenance questions are collected in th
 choices from unresolved concerns and existing upstream differences; this review
 preserves current scores pending instrument-level verification.
 
+The first historical aggregate reconstruction is available with `make polardata`: it
+rebuilds UK Health's 18 attitude columns for 230 respondents from survey answers,
+with person-level parity checks. See the [reconstruction contract](docs/knowledge-build.md#historical-aggregate-reconstruction).
+This partial output preserves historical recodes and does not replace downstream
+inputs.
+
 ## Reproduce
 
 ```sh
@@ -49,7 +55,8 @@ make check
 
 `make check` validates the Frictionless Data Package, source checksums,
 metadata contracts, the survey-based build, historical linkage, item-level
-comparisons, tests, and linting. `make inventory` is a local-only task
+comparisons, partial aggregate reconstruction, tests, and linting.
+`make inventory` is a local-only task
 that rebuilds the CDD vault inventory from the untracked archive.
 
 The five original CDD ZIP exports stay untracked at the repository root.

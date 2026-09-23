@@ -7,8 +7,11 @@ coverage of the 23 existing knowledge builds and the UK Health attitude pilot.
 
 Preserve current scoring, sample definitions, and downstream results. This file
 records evidence and review tasks; it does not authorize a recode. The provisional
-UK Health attitude implementation was set aside. Existing upstream knowledge
-changes predate this review and are explicitly identified below; neither adopting
+UK Health attitude implementation that would change definitions was set aside.
+After the preservation release `v0.1.0`, `make polardata` implements only the
+unchanged historical formulas for the 18 UK Health attitude columns; see the
+[reconstruction contract](knowledge-build.md#historical-aggregate-reconstruction).
+Existing upstream knowledge changes predate this review and are explicitly identified below; neither adopting
 those changes downstream nor reverting them is part of this pass.
 
 A surprising transformation can be deliberate. Before changing it, recover the
@@ -17,6 +20,14 @@ specific file version actually used. Distinguish a computational discrepancy
 from a direction convention, a different estimand, a sample restriction, or a
 label that drifted away from the intended definition. Numerical agreement does
 not establish validity, and disagreement does not establish an error.
+
+Coding errors are plausible and should be expected in a pipeline of this size.
+The original analysts' expertise is a reason to investigate their intent carefully,
+not a reason to dismiss evidence of an error. Record newly discovered concerns
+here as the poll-to-aggregate build proceeds, even when parity passes. Keep the
+observed behavior separate from the suspected cause and proposed remedy.
+A reproduction commit preserves the historical definition; a later correction
+commit needs instrument evidence, assessed alternatives, and quantified effects.
 
 This is an inventory of currently known issues and coverage gaps, not a claim
 that every field or every questionnaire has been audited. “No discrepancy in the
