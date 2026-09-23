@@ -1,8 +1,8 @@
 source_id,path,bytes,sha256,md5,doi,license,retrieved,role
 dp-learning-greece,data/marousi-2006/participants.csv,107752,32a031325309136318ba9ab8f2a500956df05f0e2bdaa75b78ee2bff4aa23bb2,adde068512852c8094af82f5920bf353,,CC0-1.0,2026-09-22,participant-data
-distortions-participants,data/combined/polardata.tab,6566439,98153f8fcde1d9c2bcb56b6179d66210834ab344790c835ddcf5f1f1039b448a,8e2b8aa45f9ebb71d73d88e2ecf3dbdb,10.7910/DVN/D7G1LO,CC0-1.0,2026-09-11,participant-data
-distortions-indices,data/combined/attitude-indices.tab,11978,e849d6a0926712e0193d2f1d7fecd17352170c510fa9c995529566162a206e4a,cb262ca053f88d0119757a5c1039ba18,10.7910/DVN/D7G1LO,CC0-1.0,2026-09-11,index-metadata
-cor-sood-replication,data/combined/guessing-and-forgetting.zip,468335,6cb0fe9b9e0e6f1a381e200277665ad32f78c24b93346c48e55598c156633e7c,80b59acf267496b42f48756a1b3d9a5c,10.7910/DVN/HZHVCU,CC0-1.0,2026-09-11,item-responses-and-code
+distortions-participants,evidence/benchmarks/polardata.tab,6566439,98153f8fcde1d9c2bcb56b6179d66210834ab344790c835ddcf5f1f1039b448a,8e2b8aa45f9ebb71d73d88e2ecf3dbdb,10.7910/DVN/D7G1LO,CC0-1.0,2026-09-11,validation-benchmark
+distortions-indices,evidence/benchmarks/attitude-indices.tab,11978,e849d6a0926712e0193d2f1d7fecd17352170c510fa9c995529566162a206e4a,cb262ca053f88d0119757a5c1039ba18,10.7910/DVN/D7G1LO,CC0-1.0,2026-09-11,validation-benchmark
+cor-sood-replication,evidence/deposits/guessing-and-forgetting.zip,468335,6cb0fe9b9e0e6f1a381e200277665ad32f78c24b93346c48e55598c156633e7c,80b59acf267496b42f48756a1b3d9a5c,10.7910/DVN/HZHVCU,CC0-1.0,2026-09-11,replication-deposit
 a1r-2019,data/america-in-one-room-2019/participants.tab,1861247,06134deebb34b08ffac91068727b55c1ec4dde88df5f388e1552b0bfa54c6818,d2e20231908fe5b06a4e29d23b9b29f0,10.7910/DVN/KJ8IH2,CC0-1.0,2026-09-11,participant-data
 a1r-climate-2021,data/a1r-climate-2021/participants.tab,10262042,5e95a85c1fe356673c2b0a56d1e9aa463ab40e1defe3b33f1940ff83e5eee83a,17f8c740fd7eb9009d90814c443d7b2e,10.7910/DVN/IIOG1S,CC0-1.0,2026-09-11,participant-data
 tanzania-2015,data/tanzania-2015/participants.dta,1267735,38c7faf5bec7538e32e04c3f62b5c4c43b8ad4c2d2b10b5ef00cf80b577b7af8,1cffe0785ca8600c6277ecf8bf07ac83,10.7910/DVN/S3NRQL,CC0-1.0,2026-09-11,participant-data

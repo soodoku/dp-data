@@ -1,0 +1,36 @@
+table,column,arrow_type,nullable,key,description
+respondents,poll_id,string,FALSE,TRUE,Stable poll identifier
+respondents,respondent_id,string,FALSE,TRUE,Poll-specific de-identified person identifier
+respondents,arm,string,TRUE,FALSE,Randomized or observed study arm
+items,poll_id,string,FALSE,TRUE,Stable poll identifier
+items,item_id,string,FALSE,TRUE,Stable item identifier within poll
+items,item_type,string,FALSE,FALSE,Knowledge attitude process or demographic item
+items,question_text,string,TRUE,FALSE,Fielded wording
+items,construct,string,TRUE,FALSE,Measured construct
+items,scale_min,float64,TRUE,FALSE,Lowest substantive numeric response
+items,scale_max,float64,TRUE,FALSE,Highest substantive numeric response
+items,correct_value,string,TRUE,FALSE,Correct answer for a knowledge item
+responses,poll_id,string,FALSE,TRUE,Stable poll identifier
+responses,respondent_id,string,FALSE,TRUE,Poll-specific de-identified person identifier
+responses,wave,int32,FALSE,TRUE,Ordered measurement wave
+responses,item_id,string,FALSE,TRUE,Stable item identifier within poll
+responses,value_numeric,float64,TRUE,FALSE,Numeric response when applicable
+responses,value_text,string,TRUE,FALSE,Text or categorical response when applicable
+responses,missing_code,string,TRUE,FALSE,Explicit source missing-value code
+indices,poll_id,string,FALSE,TRUE,Stable poll identifier
+indices,index_id,string,FALSE,TRUE,Stable index identifier within poll
+indices,construct,string,FALSE,FALSE,Knowledge or attitude construct
+indices,scoring_method,string,FALSE,FALSE,Named scoring rule
+index_items,poll_id,string,FALSE,TRUE,Stable poll identifier
+index_items,index_id,string,FALSE,TRUE,Stable index identifier within poll
+index_items,item_id,string,FALSE,TRUE,Stable item identifier within poll
+index_items,weight,float64,FALSE,FALSE,Item weight in the index
+index_items,direction,int32,FALSE,FALSE,One for aligned and minus one for reversed coding
+groups,poll_id,string,FALSE,TRUE,Stable poll identifier
+groups,session_id,string,FALSE,TRUE,Stable deliberative session identifier
+groups,group_id,string,FALSE,TRUE,Stable group identifier within session
+memberships,poll_id,string,FALSE,TRUE,Stable poll identifier
+memberships,respondent_id,string,FALSE,TRUE,Poll-specific de-identified person identifier
+memberships,session_id,string,FALSE,TRUE,Stable deliberative session identifier
+memberships,group_id,string,FALSE,TRUE,Stable group identifier within session
+memberships,weight,float64,FALSE,FALSE,Multiple-membership weight summing to one by person

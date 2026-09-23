@@ -40,11 +40,12 @@ an altered or missing bundle.
 | Location | Role |
 |---|---|
 | `data/<poll_id>/` | Reviewed data and metadata for one poll |
-| `data/combined/` | Licensed inputs spanning several polls |
+| `evidence/benchmarks/` | Published downstream files used only for parity tests |
+| `evidence/deposits/` | Immutable public deposits awaiting poll-level extraction |
 | `metadata/` | Poll registry, source catalog, aliases, recodes, export contracts |
 | `datapackage.json` | Frictionless schemas for the tabular metadata |
 | `R/`, `scripts/` | Validation and build code |
-| `exports/` | Generated, versioned downstream products |
+| `output/` | Typed Parquet products built from audited poll-level inputs |
 | `vault/` | Ignored local source archive, including restricted files |
 
 The architecture and migration order are documented in
@@ -60,3 +61,9 @@ each input in `metadata/source_files.csv`; material without file-level rights
 clearance remains in the local vault. Exact historical CDD scripts are retained
 in Git history under the `historical-cdd-scripts` tag, not beside the maintained
 pipeline on `main`.
+
+The aggregate `polardata` and attitude-index files are validation targets, not
+inputs to the canonical build. Canonical long tables will be assembled from
+audited poll-level respondent, item, wave, group, and artifact records. Their
+released form can be typed Parquet, with small dictionaries and manifests kept
+as CSV for inspection and joins.

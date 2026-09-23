@@ -4,6 +4,8 @@ resources <- c(
   "artifact_types",
   "archive_collections",
   "artifacts",
+  "canonical_tables",
+  "canonical_columns",
   "polls",
   "poll_aliases",
   "source_bundles",

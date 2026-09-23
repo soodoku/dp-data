@@ -1,0 +1,8 @@
+table,grain,primary_key,format,status,description
+respondents,one person in one poll,poll_id + respondent_id,parquet,planned,De-identified people and randomized arm
+items,one fielded item in one poll,poll_id + item_id,parquet,planned,Question text construct response scale and answer key
+responses,one person-item-wave response,poll_id + respondent_id + wave + item_id,parquet,planned,Observed item responses with explicit missing codes
+indices,one index definition in one poll,poll_id + index_id,parquet,planned,Knowledge and attitude index definitions
+index_items,one item contribution to an index,poll_id + index_id + item_id,parquet,planned,Index membership weight and direction
+groups,one discussion group in one session,poll_id + session_id + group_id,parquet,planned,Group and session identifiers
+memberships,one person's group membership in one session,poll_id + respondent_id + session_id + group_id,parquet,planned,Fixed or multiple membership weights

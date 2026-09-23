@@ -129,6 +129,78 @@
       }
     },
     {
+      "name": "canonical_tables",
+      "path": "metadata/canonical_tables.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "table",
+            "type": "string"
+          },
+          {
+            "name": "grain",
+            "type": "string"
+          },
+          {
+            "name": "primary_key",
+            "type": "string"
+          },
+          {
+            "name": "format",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "canonical_columns",
+      "path": "metadata/canonical_columns.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "table",
+            "type": "string"
+          },
+          {
+            "name": "column",
+            "type": "string"
+          },
+          {
+            "name": "arrow_type",
+            "type": "string"
+          },
+          {
+            "name": "nullable",
+            "type": "boolean"
+          },
+          {
+            "name": "key",
+            "type": "boolean"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
       "name": "polls",
       "path": "metadata/polls.csv",
       "profile": "tabular-data-resource",

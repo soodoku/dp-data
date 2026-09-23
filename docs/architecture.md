@@ -8,7 +8,7 @@ The repository has three layers.
    it never overwrites the original.
 2. **Canonical tables** use stable identifiers, explicit missing values, and
    typed schemas. Transformations are functions with tests and ledger entries.
-3. **Exports** are named contracts for downstream repositories. A release tag,
+3. **Outputs** are named contracts for downstream repositories. A release tag,
    file checksum, and schema version identify an export completely.
 
 The historical merge scripts are evidence about prior decisions. Their exact
@@ -16,6 +16,12 @@ bytes are retained in Git history under the `historical-cdd-scripts` tag and in
 the ignored local vault. They do not sit beside the maintained implementation
 on `main`. Each replacement transformation needs a parity test that explains
 any difference.
+
+Published aggregate files are also evidence. They live under
+`evidence/benchmarks/` and may appear only on the expected side of parity tests;
+they are not inputs to the canonical transformation graph. Multi-poll deposits
+under `evidence/deposits/` must be unpacked and assigned to poll packages before
+their respondent or item data can enter that graph.
 
 ## Poll research packages
 
@@ -74,7 +80,7 @@ Legacy numeric IDs remain aliases; they are not primary keys.
 4. Register variables and index definitions.
 5. Reimplement the historical merge as typed transformations with a recode
    ledger and parity tests against `polardata`.
-6. Publish a tagged export.
+6. Publish a tagged, typed Parquet output.
 7. Update one downstream repository at a time to pin that tag and checksum.
 
 Submodules are deliberately avoided. A downstream analysis should be

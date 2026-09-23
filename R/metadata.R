@@ -11,6 +11,8 @@ validate_metadata <- function() {
   artifact_types <- read_metadata("artifact_types")
   archive_collections <- read_metadata("archive_collections")
   artifacts <- read_metadata("artifacts")
+  canonical_tables <- read_metadata("canonical_tables")
+  canonical_columns <- read_metadata("canonical_columns")
   sources <- read_metadata("source_files")
   recodes <- read_metadata("recode_ledger")
   contracts <- read_metadata("downstream_contracts")
@@ -48,6 +50,39 @@ validate_metadata <- function() {
   assertr::verify(
     artifacts,
     !anyDuplicated(.data$artifact_id),
+    error_fun = assertr::error_stop
+  )
+  assertr::verify(
+    canonical_tables,
+    !anyDuplicated(.data$table),
+    error_fun = assertr::error_stop
+  )
+  assertr::verify(
+    canonical_tables,
+    all(.data$format %in% c("csv", "parquet")),
+    error_fun = assertr::error_stop
+  )
+  assertr::verify(
+    canonical_tables,
+    all(.data$status %in% c("current", "planned")),
+    error_fun = assertr::error_stop
+  )
+  assertr::verify(
+    canonical_columns,
+    all(.data$table %in% canonical_tables$table),
+    error_fun = assertr::error_stop
+  )
+  assertr::verify(
+    canonical_columns,
+    !anyDuplicated(paste(.data$table, .data$column)),
+    error_fun = assertr::error_stop
+  )
+  assertr::verify(
+    canonical_columns,
+    all(
+      .data$arrow_type %in%
+        c("bool", "float64", "int32", "string")
+    ),
     error_fun = assertr::error_stop
   )
   assertr::verify(
