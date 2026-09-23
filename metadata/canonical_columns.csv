@@ -1,7 +1,10 @@
 table,column,arrow_type,nullable,key,description
 respondents,poll_id,string,FALSE,TRUE,Stable poll identifier
 respondents,respondent_id,string,FALSE,TRUE,Poll-specific de-identified person identifier
-respondents,arm,string,TRUE,FALSE,Randomized or observed study arm
+respondents,arm,string,TRUE,FALSE,Observed participant status; does not assert random assignment
+respondents,source_row,int32,FALSE,FALSE,One-based row in the original poll survey
+respondents,battery_row,int32,FALSE,FALSE,Historical participant ordering for deposit parity only
+respondents,female,int32,TRUE,FALSE,Female indicator preserving the source coding
 items,poll_id,string,FALSE,TRUE,Stable poll identifier
 items,item_id,string,FALSE,TRUE,Stable item identifier within poll
 items,item_type,string,FALSE,FALSE,Knowledge attitude process or demographic item
@@ -34,3 +37,20 @@ memberships,respondent_id,string,FALSE,TRUE,Poll-specific de-identified person i
 memberships,session_id,string,FALSE,TRUE,Stable deliberative session identifier
 memberships,group_id,string,FALSE,TRUE,Stable group identifier within session
 memberships,weight,float64,FALSE,FALSE,Multiple-membership weight summing to one by person
+knowledge_responses,poll_id,string,FALSE,TRUE,Stable poll identifier
+knowledge_responses,respondent_id,string,FALSE,TRUE,Original survey identifier within poll
+knowledge_responses,wave,int32,FALSE,TRUE,Source pre or post wave numbered 1 or 2
+knowledge_responses,item_id,string,FALSE,TRUE,Knowledge item identifier within poll
+knowledge_responses,source_row,int32,FALSE,FALSE,One-based row in original survey
+knowledge_responses,source_column,string,FALSE,FALSE,Original survey variable
+knowledge_responses,raw_value,float64,TRUE,FALSE,Original numeric response including special missing codes
+knowledge_responses,correct,int32,TRUE,FALSE,Correct 1 or incorrect 0; non-substantive and system missing stay null
+knowledge_responses,response_status,string,FALSE,FALSE,answered or non_substantive or source_missing
+knowledge_responses,missing_code,string,TRUE,FALSE,Original special missing code or system; null for substantive responses
+knowledge_scores,poll_id,string,FALSE,TRUE,Stable poll identifier
+knowledge_scores,respondent_id,string,FALSE,TRUE,Original survey identifier within poll
+knowledge_scores,wave,int32,FALSE,TRUE,Source pre or post wave numbered 1 or 2
+knowledge_scores,n_items,int32,FALSE,FALSE,Full battery denominator
+knowledge_scores,n_observed,int32,FALSE,FALSE,Number of substantively answered items
+knowledge_scores,n_correct,int32,FALSE,FALSE,Number correct among all battery items
+knowledge_scores,score_zero_filled,float64,FALSE,FALSE,n_correct divided by n_items; missing responses count as zero only in this score

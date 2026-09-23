@@ -8,6 +8,7 @@ Description: Audits, catalogs, standardizes, and exports source data used by
 License: MIT + file LICENSE
 Encoding: UTF-8
 Imports:
+    arrow,
     assertr,
     digest,
     dplyr,
@@ -25,5 +26,6 @@ Imports:
     tidyr
 Suggests:
     lintr,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    withr
 Config/testthat/edition: 3

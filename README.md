@@ -8,7 +8,6 @@ The repository establishes provenance before changing any analysis:
 
 - public replication deposits are stored byte-for-byte with checksums;
 - all 23 Cor–Sood poll-level scored knowledge batteries are extracted and cataloged;
-
 - the five historical CDD archive bundles are inventoried but remain in a
   local vault while files are reviewed poll by poll;
 - poll names and legacy numeric identifiers map to stable `poll_id` values;
@@ -21,6 +20,13 @@ Direct identifiers were found in at least one historical raw file. The archive
 therefore cannot be published as an undifferentiated dump. See
 [`docs/disclosure.md`](docs/disclosure.md).
 
+The first survey-based build covers **UK Health 1998** and **Northern Ireland
+2007**: 354 participants, 4,496 item responses, and 35 discussion groups. It
+reproduces both deposited knowledge batteries exactly and publishes typed
+Parquet tables in `output/`. The [build notes](docs/knowledge-build.md) document
+the source files, dictionaries, scoring rules, and a Northern Ireland roster
+parser correction that restores one participant's group.
+
 ## Reproduce
 
 ```sh
@@ -29,7 +35,7 @@ make check
 ```
 
 `make check` validates the Frictionless Data Package, source checksums,
-metadata contracts, tests, and linting. `make inventory` is a local-only task
+metadata contracts, the two-poll build and item-level parity, tests, and linting. `make inventory` is a local-only task
 that rebuilds the CDD vault inventory from the untracked archive.
 
 The five original CDD ZIP exports stay untracked at the repository root.

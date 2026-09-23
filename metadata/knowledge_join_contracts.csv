@@ -1,0 +1,3 @@
+poll_id,left_universe,left_key,right_source_id,right_key,cardinality,expected_left_rows,expected_matches,unmatched_policy
+uk-health-1998,All rows of the published survey,serial_m,cdd-uk-health-survey,serial_m,one-to-one,230,230,Retain participant with missing group
+northern-ireland-2007,attend equals 1 in the published survey,cserial,cdd-northern-ireland-groups,column_1,one-to-one,124,124,Fail if any attendee lacks a group

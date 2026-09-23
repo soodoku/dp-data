@@ -1,0 +1,27 @@
+poll_id,item_id,item_order,wave,source_column,benchmark_column,correct_value,incorrect_values,missing_values,evidence
+uk-health-1998,knowledge-1,1,1,sopha1,sopha1r,0,1,-9|-8|-1,Source SPSS answera1 correctness labels and sopha1 response labels
+uk-health-1998,knowledge-2,2,1,sophb1,sophb1r,1,0,-9|-8|-1,Source SPSS answerb1 correctness labels and sophb1 response labels
+uk-health-1998,knowledge-3,3,1,sophc1,sophc1r,1,0,-9|-8|-1,Source SPSS answerc1 correctness labels and sophc1 response labels
+uk-health-1998,knowledge-4,4,1,sophd1,sophd1r,0,1,-9|-8|-1,Source SPSS answerd1 correctness labels and sophd1 response labels
+uk-health-1998,knowledge-5,5,1,sophe1,sophe1r,0,1,-9|-8|-1,Source SPSS answere1 correctness labels and sophe1 response labels
+uk-health-1998,knowledge-6,6,1,sophf1,sophf1r,0,1,-9|-8|-1,Source SPSS answerf1 correctness labels and sophf1 response labels
+uk-health-1998,knowledge-1,1,2,sopha2,sopha2r,0,1,-9|-8|-1,Source SPSS answera2 correctness labels and sopha2 response labels
+uk-health-1998,knowledge-2,2,2,sophb2,sophb2r,1,0,-9|-8|-1,Source SPSS answerb2 correctness labels and sophb2 response labels
+uk-health-1998,knowledge-3,3,2,sophc2,sophc2r,1,0,-9|-8|-1,Source SPSS answerc2 correctness labels and sophc2 response labels
+uk-health-1998,knowledge-4,4,2,sophd2,sophd2r,0,1,-9|-8|-1,Source SPSS answerd2 correctness labels and sophd2 response labels
+uk-health-1998,knowledge-5,5,2,sophe2,sophe2r,0,1,-9|-8|-1,Source SPSS answere2 correctness labels and sophe2 response labels
+uk-health-1998,knowledge-6,6,2,sophf2,sophf2r,0,1,-9|-8|-1,Source SPSS answerf2 correctness labels and sophf2 response labels
+northern-ireland-2007,knowledge-1,1,1,t1q21,t1q21raw,4,1|2|3|5,9|10,historical-cdd-scripts:scripts/n_ireland.R lines 511
+northern-ireland-2007,knowledge-2,2,1,t1q22,t1q22raw,4,1|2|3|5,9|10,historical-cdd-scripts:scripts/n_ireland.R lines 512
+northern-ireland-2007,knowledge-3,3,1,t1q23,t1q23raw,1,2|3|4|5,9|10,historical-cdd-scripts:scripts/n_ireland.R lines 513
+northern-ireland-2007,knowledge-4,4,1,t1q24,t1q24raw,4,1|2|3|5,9|10,historical-cdd-scripts:scripts/n_ireland.R lines 514
+northern-ireland-2007,knowledge-5,5,1,t1q25,t1q25raw,3,1|2|4|5,9|10,historical-cdd-scripts:scripts/n_ireland.R lines 515
+northern-ireland-2007,knowledge-6,6,1,t1q26,t1q26raw,1,2|3|4|5,9|10,historical-cdd-scripts:scripts/n_ireland.R lines 516
+northern-ireland-2007,knowledge-7,7,1,t1q27,t1q27raw,4,1|2|3|5,9|10,historical-cdd-scripts:scripts/n_ireland.R lines 517
+northern-ireland-2007,knowledge-1,1,2,t2q11,t2q11raw,3,1|2|4,5|6|9|10,historical-cdd-scripts:scripts/n_ireland.R lines 519
+northern-ireland-2007,knowledge-2,2,2,t2q12,t2q12raw,4,1|2|3|5,6|9|10,historical-cdd-scripts:scripts/n_ireland.R lines 520
+northern-ireland-2007,knowledge-3,3,2,t2q13,t2q13raw,1,2|3|4,5|6|9|10,historical-cdd-scripts:scripts/n_ireland.R lines 521
+northern-ireland-2007,knowledge-4,4,2,t2q14,t2q14raw,4,1|2|3,5|6|9|10,historical-cdd-scripts:scripts/n_ireland.R lines 522
+northern-ireland-2007,knowledge-5,5,2,t2q15,t2q15raw,3,1|2|4,5|6|9|10,historical-cdd-scripts:scripts/n_ireland.R lines 523
+northern-ireland-2007,knowledge-6,6,2,t2q16,t2q16raw,1,2|3,4|5|6|9|10,historical-cdd-scripts:scripts/n_ireland.R lines 524
+northern-ireland-2007,knowledge-7,7,2,t2q17,t2q17raw,4,1|2|3,5|6|9|10,historical-cdd-scripts:scripts/n_ireland.R lines 525

@@ -249,6 +249,182 @@
       }
     },
     {
+      "name": "survey_sources",
+      "path": "metadata/survey_sources.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "source_id",
+            "type": "string"
+          },
+          {
+            "name": "archive_path",
+            "type": "string"
+          },
+          {
+            "name": "source_sha256",
+            "type": "string"
+          },
+          {
+            "name": "source_rows",
+            "type": "number"
+          },
+          {
+            "name": "source_columns",
+            "type": "number"
+          },
+          {
+            "name": "public_path",
+            "type": "string"
+          },
+          {
+            "name": "transformation",
+            "type": "string"
+          },
+          {
+            "name": "publication_status",
+            "type": "string"
+          },
+          {
+            "name": "review_note",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "source_field_exclusions",
+      "path": "metadata/source_field_exclusions.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "source_column",
+            "type": "string"
+          },
+          {
+            "name": "reason",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "knowledge_items",
+      "path": "metadata/knowledge_items.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "item_id",
+            "type": "string"
+          },
+          {
+            "name": "item_order",
+            "type": "number"
+          },
+          {
+            "name": "wave",
+            "type": "number"
+          },
+          {
+            "name": "source_column",
+            "type": "string"
+          },
+          {
+            "name": "benchmark_column",
+            "type": "string"
+          },
+          {
+            "name": "correct_value",
+            "type": "number"
+          },
+          {
+            "name": "incorrect_values",
+            "type": "string"
+          },
+          {
+            "name": "missing_values",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "knowledge_join_contracts",
+      "path": "metadata/knowledge_join_contracts.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "left_universe",
+            "type": "string"
+          },
+          {
+            "name": "left_key",
+            "type": "string"
+          },
+          {
+            "name": "right_source_id",
+            "type": "string"
+          },
+          {
+            "name": "right_key",
+            "type": "string"
+          },
+          {
+            "name": "cardinality",
+            "type": "string"
+          },
+          {
+            "name": "expected_left_rows",
+            "type": "number"
+          },
+          {
+            "name": "expected_matches",
+            "type": "number"
+          },
+          {
+            "name": "unmatched_policy",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
       "name": "polls",
       "path": "metadata/polls.csv",
       "profile": "tabular-data-resource",

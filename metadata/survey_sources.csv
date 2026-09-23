@@ -1,0 +1,3 @@
+poll_id,source_id,archive_path,source_sha256,source_rows,source_columns,public_path,transformation,publication_status,review_note
+uk-health-1998,cdd-uk-health-survey,data/british_health/britishhealth.sav,d6c46a1c9c83930a8779a5ae6a9b5cec3cf0ef0399d6f340e8b28371d1f8d234,230,387,data/uk-health-1998/survey.sav,exact-copy,approved-public,"Three string fields are poll/group codes; recnumb and phone are categorical telephone-status fields"
+northern-ireland-2007,cdd-northern-ireland-survey,data/Ireland/orig_data/nireland.dta,305c8646632cfc36ca55177771a89aa2aa38149f5ab394ec14428bf9ffa7fffa,868,528,data/northern-ireland-2007/survey.parquet,exclude-verbatim,approved-redacted,"Exclude the 80 named T2/T3 verbatim fields; retain remaining fields and original row order"

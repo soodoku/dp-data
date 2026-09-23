@@ -1,6 +1,6 @@
 R = Rscript
 
-.PHONY: restore package manifests vault inventory disclosure validate test lint check
+.PHONY: restore package manifests vault inventory disclosure validate test lint check import-surveys knowledge audit-surveys
 
 restore:
 	$(R) -e 'renv::restore(prompt = FALSE)'
@@ -29,4 +29,13 @@ test:
 lint:
 	$(R) -e 'results <- lintr::lint_dir("."); print(results); quit(status = length(results) > 0L)'
 
-check: package manifests validate test lint
+import-surveys:
+	$(R) scripts/06_import_surveys.R
+
+audit-surveys:
+	$(R) scripts/08_validate_archive_surveys.R
+
+knowledge:
+	$(R) scripts/07_build_knowledge.R
+
+check: package manifests validate knowledge test lint
