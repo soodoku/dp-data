@@ -7,11 +7,11 @@ health_reference <- function() {
   )
 }
 
-test_that("UK Health raw answers reproduce all 18 historical attitude fields", {
+test_that("UK Health raw answers reproduce all 45 reconstructed fields", {
   rebuilt <- build_health_polardata()
   parity <- compare_health_polardata(rebuilt, health_reference())
-  expect_equal(dim(rebuilt), c(230L, 20L))
-  expect_equal(nrow(parity), 18L)
+  expect_equal(dim(rebuilt), c(230L, 47L))
+  expect_equal(nrow(parity), 45L)
   expect_true(all(parity$missingness_differences == 0L))
   expect_true(all(parity$value_differences == 0L))
   path <- tempfile(fileext = ".parquet")
@@ -64,4 +64,24 @@ test_that("unreviewed survey codes stop the build", {
   survey$payhlth1 <- as.numeric(survey$payhlth1)
   survey$payhlth1[1] <- 999
   expect_error(build_health_polardata(survey), "Unreviewed")
+})
+
+
+test_that("historical summary vintages remain distinct", {
+  rebuilt <- build_health_polardata()
+  final_share <- ave(as.numeric(rebuilt$highinc), rebuilt$pollgroup,
+    FUN = function(x) mean(x, na.rm = TRUE)
+  )
+  expect_true(all(abs(final_share - rebuilt$phighinc) > 1e-10))
+  final_attitudes <- as.matrix(
+    rebuilt[grep("^ukhealth[.]t1", names(rebuilt))]
+  )
+  recalculated <- historical_available_mean(abs(final_attitudes - .5))
+  expect_gt(sum(abs(recalculated - rebuilt$attextreme) > 1e-10), 0L)
+  incomplete <- rebuilt
+  incomplete$educ4 <- NULL
+  expect_error(compare_health_polardata(incomplete, health_reference()))
+  changed <- rebuilt
+  changed$educ4[1] <- .123
+  expect_error(compare_health_polardata(changed, health_reference()), "differs")
 })

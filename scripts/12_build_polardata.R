@@ -12,7 +12,7 @@ benchmark <- readr::read_tsv(
 )
 parity <- compare_health_polardata(rebuilt, benchmark)
 
-path <- project_path("output", "polardata", "uk-health-1998-attitudes.parquet")
+path <- project_path("output", "polardata", "uk-health-1998.parquet")
 fs::dir_create(dirname(path))
 arrow::write_parquet(rebuilt, path)
 stopifnot(identical(rebuilt, arrow::read_parquet(path)))

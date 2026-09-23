@@ -9,7 +9,7 @@ Preserve current scoring, sample definitions, and downstream results. This file
 records evidence and review tasks; it does not authorize a recode. The provisional
 UK Health attitude implementation that would change definitions was set aside.
 After the preservation release `v0.1.0`, `make polardata` implements only the
-unchanged historical formulas for the 18 UK Health attitude columns; see the
+unchanged historical formulas for the UK Health fields currently reconstructed; see the
 [reconstruction contract](knowledge-build.md#historical-aggregate-reconstruction).
 Existing upstream knowledge changes predate this review and are explicitly identified below; neither adopting
 those changes downstream nor reverting them is part of this pass.
@@ -235,7 +235,8 @@ as the available-item mean of three (`ctfert`, `cthosp`, `ctcosm`). A stored sur
 index with a similar name may use a different composition or weighting. Equal
 names do not establish equal estimands.
 
-All nine final aggregate attitude variables in both waves can be reconstructed
+All nine attitude indices selected by the downstream index list, in both waves,
+can be reconstructed
 from the 230 raw survey records to absolute tolerance `1e-10`, including the
 historical behavior in UKH-01–03. All respondent IDs match `serial_m` and
 `serial_a` in this file; this equality must be checked rather than assumed for
@@ -289,6 +290,111 @@ The six-item knowledge battery currently matches the deposit at both waves.
 original wave merge; record eligibility and actual interview completion separately.
 All-missing post answers alone do not establish why an interview is absent.
 No complete-population claim should be based on the attendee-only knowledge export.
+
+### UKH-07: Nine selected indices are not the full aggregate inventory
+
+**Status:** preserve / review; the earlier description of nine “final aggregate”
+indices was too broad and has been corrected here.
+
+`attitude-indices.tab` selects nine indices for UK Health. The actual historical
+`polardata.tab` retains 11 in both waves, including `ukhealth.t{1,2}avgdis`
+(doctor discretion) and `ukhealth.t{1,2}moresa` (patients' say), and `numindices`
+remains 11. The UK Health section of
+[05_fix_data.R](../vault/cdd/merge_data_scripts/05_fix_data.R) lists those two
+indices in comments and says the number should fall to nine, but contains no
+executed deletion or count update for them. A selected analysis battery and
+an aggregate's complete inventory can legitimately differ; the comments alone
+do not settle whether the retained fields or count were unintended.
+
+The V6 memo sections 12–13 and codebook Q18A_B/Q18A_D and Q23_B define the added
+constructs. Raw `say` uses 1 strongly disagree through 5 strongly agree;
+`(say - 1) / 4` exactly reconstructs `moresa`. Doctor discretion averages available
+`ingpa` and `indoca` components. Like UKH-03, both components reproduce the stored
+index only with codes 1 and 3 mapped to 1 and code 2 mapped to 0.5. Codebook and
+memo describe none/some/all-or-most say, so the rationale for folding remains
+unresolved. The four added aggregate columns now reproduce exactly.
+
+| Doctor discretion | T1 | T2 |
+|---|---:|---:|
+| Nonmissing respondents | 216 | 218 |
+| Historical mean | 0.7731481481 | 0.7786697248 |
+| Diagnostic monotonic-map mean | 0.7592592593 | 0.7511467890 |
+| Respondents changing under diagnostic map | 5 | 8 |
+
+**Before changing:** verify which battery each paper uses, whether `numindices`
+means stored or selected indices, recover the original component syntax, and
+check the fielded instruments and index versions. Do not drop the two fields or
+replace the folded map while reproducing the historical aggregate.
+
+### UKH-08: Individual and group high-income fields use different thresholds
+
+**Status:** preserve / review; assignment sequence and numerical difference verified.
+
+Codebook B18 defines 16 household-income bands before tax. In this participant
+file, `(income - 1) / 15`, with raw -9/-8/-7 missing, reconstructs `hhincome`
+for 206 respondents. The [poll script](../vault/cdd/scripts/uk_health.R) uses
+`hhincome > .8`; [03_data.R](../vault/cdd/merge_data_scripts/03_data.R) computes
+`phighinc` from that flag. Then
+[06_add_more_vars.R](../vault/cdd/merge_data_scripts/06_add_more_vars.R) changes
+individual `highinc` to `hhincome > .34` without recomputing `phighinc`.
+
+The early threshold selects raw bands 14–16 (35,000 and above), while the final
+threshold selects bands 7–16 (15,000 and above). The high-income count rises from
+22 to 97 among 206 observed people: 75 individual flags differ. All 230 stored
+group shares match the early threshold. Recomputing them from final `highinc`
+would change all 15 discussion groups, hence all 230 group-share entries.
+These are income bands, not cardinal income or necessarily a percentile cut.
+
+**Before changing:** recover why thresholds were revised and which definition
+was intended for individual and group covariates. Check paper definitions and
+whether deliberately distinct constructs were given similar names. Compare
+estimates separately under each threshold and under a consistent group/individual
+pair; do not silently harmonize them. Both vintages are now explicitly preserved
+in the source build. Missing income remains missing, and group means omit it.
+
+### UKH-09: Attitude summaries precede the final severity rescaling
+
+**Status:** preserve / review; a reproducible sequence, not yet a judged correction.
+
+The poll script computes `attextreme` as the available-item mean of
+`abs(index - .5)` over **11** T1 indices, with severity still equal to
+`scaled lista - scaled severa`. It computes `avgsd` as the mean of the 11
+within-group sample standard deviations. `03_data.R` then computes the group
+mean `meanxtreme`. Later, `05_fix_data.R` rescales the exported severity column
+without recomputing these summaries. Replaying that order reconstructs all three
+fields for every respondent.
+
+Using the 11 final exported T1 columns instead would change `attextreme` for
+203 people: its mean becomes 0.2584546160 rather than 0.3034622428; the maximum
+absolute individual difference is 0.1428571429. This diagnostic changes only the
+severity version, not the number of indices. Applying a nine-index definition
+would be another separate decision. No downstream models were refitted.
+
+**Before changing:** establish the intended neutral point of the difference
+index, which index versions entered the published summaries, and whether
+extremity and dispersion were intentionally retained from the earlier scale.
+The zero of a contrast need not share the .5 midpoint of an ordinary 0–1 item.
+Compare downstream effects while separating scale, midpoint, item membership,
+and missing-component denominators. Historical summaries remain unchanged.
+
+### UKH-10: Poll-level and respondent-level knowledge have different precision
+
+**Status:** preserve / investigate before extending the knowledge reconstruction.
+
+The archived poll script sets `t1knowlevel <- mean(hknow1)`, using the survey's
+stored score, but separately computes respondent `t1know` from six correctness
+indicators. The aggregate constant is 0.657782610279062, matching the stored-score
+mean. The mean of final respondent `t1know` is 0.657971014492754. At tolerance
+`1e-10`, stored `hknow1` and final `t1know` differ for 171 people, with maximum
+absolute difference 0.003333350022634. The source dictionary labels `hknow1` as a
+proportion correct with display format F9.2. That format is evidence to inspect,
+not proof that display rounding caused every underlying value difference.
+
+**Before changing:** compare raw answers, stored correctness fields and both
+score distributions; recover the score-generation and export precision rules.
+Determine whether the poll mean deliberately used a published rounded measure.
+Do not replace it with the mean of reconstructed individual scores solely because
+that is convenient. This field is not yet included in the partial reconstruction.
 
 ## UK Crime 1994 — uk-crime-1994
 
