@@ -1,0 +1,10 @@
+repository,byte_match,files
+dp-distortions,no-exact-match,2
+dp-knowledge-linkage,no-exact-match,7
+dp-knowledge-linkage,published-exact,3
+dp-learning,no-exact-match,1
+dp-learning,published-exact,4
+dp-nireland,archive-exact-only,5
+dp-nireland,no-exact-match,50
+guessing-and-forgetting,no-exact-match,24
+guessing-and-forgetting,published-exact,3

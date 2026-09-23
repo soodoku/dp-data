@@ -1,8 +1,8 @@
 repository,artifact,upstream_resource,target_path,schema_version,status,notes
-soodoku/dp-distortions,participant-analysis,participants-wide,data/polardata.csv,1,planned,Switch only after value-level parity with the public deposit
+soodoku/dp-distortions,participant-analysis,participants-wide,data/polardata.csv,1,planned,Switch after source-based build and explained value/sample differences; exact parity is not required
 soodoku/dp-distortions,attitude-index-registry,attitude-indices,data/poll_indices.csv,1,planned,Retain published index definitions
 soodoku/dp-learning,participant-analysis,participants-wide,data/raw/polardata.tab,1,planned,Pin a tagged upstream release and SHA-256
-soodoku/dp-learning,knowledge-items,knowledge-responses-long,data/raw/cor-sood-replication.zip,1,planned,Replace archive extraction after item-level parity
+soodoku/dp-learning,knowledge-items,knowledge-responses-long,data/raw/cor-sood-replication.zip,1,planned,Replace archive extraction after item-level comparison and review of scoring differences
 soodoku/dp-nireland,northern-ireland-source,northern-ireland,data/orig_data,1,planned,Preserve paper-specific coding separately
 soodoku/guessing-and-forgetting,knowledge-items,knowledge-responses-long,data,1,planned,Keep the Dataverse baseline tag in the downstream history
 soodoku/dp-knowledge-linkage,linked-panel,knowledge-attitude-panel,data/processed/knowledge_attitude_panel.csv,1,transitional,Retain as a parity benchmark until dp-data reproduces the linked panel from audited poll sources; then archive the repository

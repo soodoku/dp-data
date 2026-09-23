@@ -1,0 +1,9 @@
+{
+  "scope": "Tracked files under data/ and inst/extdata/; README excluded",
+  "unit": "One working-tree file in one downstream repository",
+  "limits": "Not a dependency audit; generated files may occur in these directories. No exact match does not establish new content or permission to publish. Text comparison ignores line terminators but does not parse data. Reviewed-source matches identify a source of a published extract; they do not establish equivalence between raw and redacted files. No respondent scores or downstream inputs are changed.",
+  "checked_at_utc": "2026-09-23 10:58:55 UTC",
+  "upstream_catalog_sha256": "c1e430b320f61453842e384168b9de2ab0e6a1b19d18f2f5f6fd276e16a7a7ba",
+  "archive_inventory_sha256": "3dc98e9c80e3d8294840c693ae8dd57fe7b49a4ce44837b84a510666ed876d6b",
+  "inventory_sha256": "d7cc7411227253a813b5ee9aef17cc53a86595252e8a21e9ad3a331f05996bc9"
+}

@@ -23,6 +23,8 @@ test_that("the Frictionless package names every metadata table", {
       "poll_aliases",
       "source_bundles",
       "source_files",
+      "source_findings",
+      "downstream_porting_review",
       "recode_ledger",
       "downstream_contracts"
     )

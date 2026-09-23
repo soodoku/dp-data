@@ -1,6 +1,6 @@
 R = Rscript
 
-.PHONY: restore package manifests vault inventory disclosure validate test lint check import-surveys knowledge audit-surveys
+.PHONY: restore package manifests vault inventory disclosure validate test lint check import-surveys knowledge audit-surveys audit-downstream
 
 restore:
 	$(R) -e 'renv::restore(prompt = FALSE)'
@@ -39,3 +39,6 @@ knowledge:
 	$(R) scripts/07_build_knowledge.R
 
 check: package manifests validate knowledge test lint
+
+audit-downstream:
+	$(R) scripts/09_audit_downstream_sources.R

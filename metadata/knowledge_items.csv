@@ -11,44 +11,44 @@ uk-health-1998,knowledge-3,3,2,sophc2,sophc2r,1,0,-9|-8|-1,Source SPSS answerc2 
 uk-health-1998,knowledge-4,4,2,sophd2,sophd2r,0,1,-9|-8|-1,Source SPSS answerd2 correctness labels and sophd2 response labels
 uk-health-1998,knowledge-5,5,2,sophe2,sophe2r,0,1,-9|-8|-1,Source SPSS answere2 correctness labels and sophe2 response labels
 uk-health-1998,knowledge-6,6,2,sophf2,sophf2r,0,1,-9|-8|-1,Source SPSS answerf2 correctness labels and sophf2 response labels
-northern-ireland-2007,knowledge-1,1,1,t1q21,t1q21raw,4,1|2|3|5,9|10,historical-cdd-scripts:scripts/n_ireland.R lines 511
-northern-ireland-2007,knowledge-2,2,1,t1q22,t1q22raw,4,1|2|3|5,9|10,historical-cdd-scripts:scripts/n_ireland.R lines 512
-northern-ireland-2007,knowledge-3,3,1,t1q23,t1q23raw,1,2|3|4|5,9|10,historical-cdd-scripts:scripts/n_ireland.R lines 513
-northern-ireland-2007,knowledge-4,4,1,t1q24,t1q24raw,4,1|2|3|5,9|10,historical-cdd-scripts:scripts/n_ireland.R lines 514
-northern-ireland-2007,knowledge-5,5,1,t1q25,t1q25raw,3,1|2|4|5,9|10,historical-cdd-scripts:scripts/n_ireland.R lines 515
-northern-ireland-2007,knowledge-6,6,1,t1q26,t1q26raw,1,2|3|4|5,9|10,historical-cdd-scripts:scripts/n_ireland.R lines 516
-northern-ireland-2007,knowledge-7,7,1,t1q27,t1q27raw,4,1|2|3|5,9|10,historical-cdd-scripts:scripts/n_ireland.R lines 517
-northern-ireland-2007,knowledge-1,1,2,t2q11,t2q11raw,3,1|2|4,5|6|9|10,historical-cdd-scripts:scripts/n_ireland.R lines 519
-northern-ireland-2007,knowledge-2,2,2,t2q12,t2q12raw,4,1|2|3|5,6|9|10,historical-cdd-scripts:scripts/n_ireland.R lines 520
-northern-ireland-2007,knowledge-3,3,2,t2q13,t2q13raw,1,2|3|4,5|6|9|10,historical-cdd-scripts:scripts/n_ireland.R lines 521
-northern-ireland-2007,knowledge-4,4,2,t2q14,t2q14raw,4,1|2|3,5|6|9|10,historical-cdd-scripts:scripts/n_ireland.R lines 522
-northern-ireland-2007,knowledge-5,5,2,t2q15,t2q15raw,3,1|2|4,5|6|9|10,historical-cdd-scripts:scripts/n_ireland.R lines 523
-northern-ireland-2007,knowledge-6,6,2,t2q16,t2q16raw,1,2|3,4|5|6|9|10,historical-cdd-scripts:scripts/n_ireland.R lines 524
-northern-ireland-2007,knowledge-7,7,2,t2q17,t2q17raw,4,1|2|3,5|6|9|10,historical-cdd-scripts:scripts/n_ireland.R lines 525
-uk-crime-1994,knowledge-1,1,1,kw11,lfact11raw,0,1,8|9,historical-cdd-scripts:scripts/uk_crime.R lines 293-309
-uk-crime-1994,knowledge-2,2,1,kw21,lfact21raw,1,0,8|9,historical-cdd-scripts:scripts/uk_crime.R lines 293-309
-uk-crime-1994,knowledge-3,3,1,kw31,lfact31raw,1,0,8|9,historical-cdd-scripts:scripts/uk_crime.R lines 293-309
-uk-crime-1994,knowledge-4,4,1,kw41,lfact41raw,0,1,8|9,historical-cdd-scripts:scripts/uk_crime.R lines 293-309
-uk-crime-1994,knowledge-5,5,1,pkw11,pfact11raw,0,1,8|9,historical-cdd-scripts:scripts/uk_crime.R lines 293-309
-uk-crime-1994,knowledge-6,6,1,pkw21,pfact21raw,0,1,8|9,historical-cdd-scripts:scripts/uk_crime.R lines 293-309
-uk-crime-1994,knowledge-7,7,1,pkw31,pfact31raw,0,1,8|9,historical-cdd-scripts:scripts/uk_crime.R lines 293-309
-uk-eu-1995,knowledge-1,1,1,eusize1,pk11raw,1,2,8|9,historical-cdd-scripts:scripts/uk_eu.R lines 236-246
-uk-eu-1995,knowledge-2,2,1,swiss1,pk21raw,2,1,8|9,historical-cdd-scripts:scripts/uk_eu.R lines 236-246
-uk-eu-1995,knowledge-3,3,1,inctax1,pk31raw,2,1,8|9,historical-cdd-scripts:scripts/uk_eu.R lines 236-246
-uk-eu-1995,knowledge-4,4,1,elect1,pk41raw,1,2,8|9,historical-cdd-scripts:scripts/uk_eu.R lines 236-246
-uk-eu-1995,knowledge-5,5,1,ptyapp1,pk51raw,2,1,8|9,historical-cdd-scripts:scripts/uk_eu.R lines 236-246
-uk-crime-1994,knowledge-1,1,2,kw12,lfact12raw,0,1,8|9,historical-cdd-scripts:scripts/uk_crime.R lines 293-309
-uk-crime-1994,knowledge-2,2,2,kw22,lfact22raw,1,0,8|9,historical-cdd-scripts:scripts/uk_crime.R lines 293-309
-uk-crime-1994,knowledge-3,3,2,kw32,lfact32raw,1,0,8|9,historical-cdd-scripts:scripts/uk_crime.R lines 293-309
-uk-crime-1994,knowledge-4,4,2,kw42,lfact42raw,0,1,8|9,historical-cdd-scripts:scripts/uk_crime.R lines 293-309
-uk-crime-1994,knowledge-5,5,2,pkw12,pfact12raw,0,1,8|9,historical-cdd-scripts:scripts/uk_crime.R lines 293-309
-uk-crime-1994,knowledge-6,6,2,pkw22,pfact22raw,0,1,8|9,historical-cdd-scripts:scripts/uk_crime.R lines 293-309
-uk-crime-1994,knowledge-7,7,2,pkw32,pfact32raw,0,1,8|9,historical-cdd-scripts:scripts/uk_crime.R lines 293-309
-uk-eu-1995,knowledge-1,1,2,eusize2,pk12raw,1,2,3|9,historical-cdd-scripts:scripts/uk_eu.R lines 236-246
-uk-eu-1995,knowledge-2,2,2,swiss2,pk22raw,2,1,3|9,historical-cdd-scripts:scripts/uk_eu.R lines 236-246
-uk-eu-1995,knowledge-3,3,2,inctax2,pk32raw,2,1,3|9,historical-cdd-scripts:scripts/uk_eu.R lines 236-246
-uk-eu-1995,knowledge-4,4,2,elect2,pk42raw,1,2,3|9,historical-cdd-scripts:scripts/uk_eu.R lines 236-246
-uk-eu-1995,knowledge-5,5,2,ptyapp2,pk52raw,2,1,3|9,historical-cdd-scripts:scripts/uk_eu.R lines 236-246
+northern-ireland-2007,knowledge-1,1,1,t1q21,t1q21raw,4,1|2|3|5,9|10,historical-cdd-scripts:legacy/poll_scripts/n_ireland.R lines 511
+northern-ireland-2007,knowledge-2,2,1,t1q22,t1q22raw,4,1|2|3|5,9|10,historical-cdd-scripts:legacy/poll_scripts/n_ireland.R lines 512
+northern-ireland-2007,knowledge-3,3,1,t1q23,t1q23raw,1,2|3|4|5,9|10,historical-cdd-scripts:legacy/poll_scripts/n_ireland.R lines 513
+northern-ireland-2007,knowledge-4,4,1,t1q24,t1q24raw,4,1|2|3|5,9|10,historical-cdd-scripts:legacy/poll_scripts/n_ireland.R lines 514
+northern-ireland-2007,knowledge-5,5,1,t1q25,t1q25raw,3,1|2|4|5,9|10,historical-cdd-scripts:legacy/poll_scripts/n_ireland.R lines 515
+northern-ireland-2007,knowledge-6,6,1,t1q26,t1q26raw,1,2|3|4|5,9|10,historical-cdd-scripts:legacy/poll_scripts/n_ireland.R lines 516
+northern-ireland-2007,knowledge-7,7,1,t1q27,t1q27raw,4,1|2|3|5,9|10,historical-cdd-scripts:legacy/poll_scripts/n_ireland.R lines 517
+northern-ireland-2007,knowledge-1,1,2,t2q11,t2q11raw,3,1|2|4,5|6|9|10,historical-cdd-scripts:legacy/poll_scripts/n_ireland.R lines 519
+northern-ireland-2007,knowledge-2,2,2,t2q12,t2q12raw,4,1|2|3|5,6|9|10,historical-cdd-scripts:legacy/poll_scripts/n_ireland.R lines 520
+northern-ireland-2007,knowledge-3,3,2,t2q13,t2q13raw,1,2|3|4,5|6|9|10,historical-cdd-scripts:legacy/poll_scripts/n_ireland.R lines 521
+northern-ireland-2007,knowledge-4,4,2,t2q14,t2q14raw,4,1|2|3,5|6|9|10,historical-cdd-scripts:legacy/poll_scripts/n_ireland.R lines 522
+northern-ireland-2007,knowledge-5,5,2,t2q15,t2q15raw,3,1|2|4,5|6|9|10,historical-cdd-scripts:legacy/poll_scripts/n_ireland.R lines 523
+northern-ireland-2007,knowledge-6,6,2,t2q16,t2q16raw,1,2|3,4|5|6|9|10,historical-cdd-scripts:legacy/poll_scripts/n_ireland.R lines 524
+northern-ireland-2007,knowledge-7,7,2,t2q17,t2q17raw,4,1|2|3,5|6|9|10,historical-cdd-scripts:legacy/poll_scripts/n_ireland.R lines 525
+uk-crime-1994,knowledge-1,1,1,kw11,lfact11raw,0,1,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_crime.R lines 293-309
+uk-crime-1994,knowledge-2,2,1,kw21,lfact21raw,1,0,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_crime.R lines 293-309
+uk-crime-1994,knowledge-3,3,1,kw31,lfact31raw,1,0,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_crime.R lines 293-309
+uk-crime-1994,knowledge-4,4,1,kw41,lfact41raw,0,1,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_crime.R lines 293-309
+uk-crime-1994,knowledge-5,5,1,pkw11,pfact11raw,0,1,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_crime.R lines 293-309
+uk-crime-1994,knowledge-6,6,1,pkw21,pfact21raw,0,1,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_crime.R lines 293-309
+uk-crime-1994,knowledge-7,7,1,pkw31,pfact31raw,0,1,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_crime.R lines 293-309
+uk-eu-1995,knowledge-1,1,1,eusize1,pk11raw,1,2,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_eu.R lines 236-246
+uk-eu-1995,knowledge-2,2,1,swiss1,pk21raw,2,1,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_eu.R lines 236-246
+uk-eu-1995,knowledge-3,3,1,inctax1,pk31raw,2,1,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_eu.R lines 236-246
+uk-eu-1995,knowledge-4,4,1,elect1,pk41raw,1,2,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_eu.R lines 236-246
+uk-eu-1995,knowledge-5,5,1,ptyapp1,pk51raw,2,1,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_eu.R lines 236-246
+uk-crime-1994,knowledge-1,1,2,kw12,lfact12raw,0,1,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_crime.R lines 293-309
+uk-crime-1994,knowledge-2,2,2,kw22,lfact22raw,1,0,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_crime.R lines 293-309
+uk-crime-1994,knowledge-3,3,2,kw32,lfact32raw,1,0,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_crime.R lines 293-309
+uk-crime-1994,knowledge-4,4,2,kw42,lfact42raw,0,1,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_crime.R lines 293-309
+uk-crime-1994,knowledge-5,5,2,pkw12,pfact12raw,0,1,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_crime.R lines 293-309
+uk-crime-1994,knowledge-6,6,2,pkw22,pfact22raw,0,1,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_crime.R lines 293-309
+uk-crime-1994,knowledge-7,7,2,pkw32,pfact32raw,0,1,8|9,historical-cdd-scripts:legacy/poll_scripts/uk_crime.R lines 293-309
+uk-eu-1995,knowledge-1,1,2,eusize2,pk12raw,1,2,3|9,historical-cdd-scripts:legacy/poll_scripts/uk_eu.R lines 236-246
+uk-eu-1995,knowledge-2,2,2,swiss2,pk22raw,2,1,3|9,historical-cdd-scripts:legacy/poll_scripts/uk_eu.R lines 236-246
+uk-eu-1995,knowledge-3,3,2,inctax2,pk32raw,2,1,3|9,historical-cdd-scripts:legacy/poll_scripts/uk_eu.R lines 236-246
+uk-eu-1995,knowledge-4,4,2,elect2,pk42raw,1,2,3|9,historical-cdd-scripts:legacy/poll_scripts/uk_eu.R lines 236-246
+uk-eu-1995,knowledge-5,5,2,ptyapp2,pk52raw,2,1,3|9,historical-cdd-scripts:legacy/poll_scripts/uk_eu.R lines 236-246
 uk-monarchy-1996,knowledge-1,1,1,Q5A,knowa1raw,2,1,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
 uk-monarchy-1996,knowledge-2,2,1,Q5B,knowb1raw,2,1,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
 uk-monarchy-1996,knowledge-3,3,1,Q5C,knowc1raw,1,2,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
@@ -57,21 +57,21 @@ uk-monarchy-1996,knowledge-5,5,1,Q5E,knowe1raw,1,2,3|4,Monarchy source and codeb
 uk-monarchy-1996,knowledge-6,6,1,Q5F,knowf1raw,1,2,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
 uk-monarchy-1996,knowledge-7,7,1,Q5G,knowg1raw,2,1,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
 uk-monarchy-1996,knowledge-8,8,1,Q5H,knowh1raw,1,2,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
-uk-general-election-1997,knowledge-1,1,1,inflat1,knowa1raw,1,2,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-2,2,1,intrst1,knowb1raw,2,1,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-3,3,1,ukempl1,knowc1raw,2,1,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-4,4,1,redstc1,redstc1raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-5,5,1,taxc1,taxc1raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-6,6,1,wagec1,wagec1raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-7,7,1,euc1,euc1raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-8,8,1,redstl1,redstl1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-9,9,1,taxl1,taxl1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-10,10,1,wagel1,wagel1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-11,11,1,eul1,eul1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-12,12,1,redstld1,redstld1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-13,13,1,taxld1,taxld1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-14,14,1,wageld1,wageld1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-15,15,1,euld1,euld1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-1,1,1,inflat1,knowa1raw,1,2,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-2,2,1,intrst1,knowb1raw,2,1,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-3,3,1,ukempl1,knowc1raw,2,1,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-4,4,1,redstc1,redstc1raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-5,5,1,taxc1,taxc1raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-6,6,1,wagec1,wagec1raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-7,7,1,euc1,euc1raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-8,8,1,redstl1,redstl1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-9,9,1,taxl1,taxl1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-10,10,1,wagel1,wagel1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-11,11,1,eul1,eul1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-12,12,1,redstld1,redstld1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-13,13,1,taxld1,taxld1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-14,14,1,wageld1,wageld1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-15,15,1,euld1,euld1raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
 cpl-1996,knowledge-1,1,1,source1,knowa1raw,3,1|2|4|5|6,99,Archived utility script and source codebook correctness fields
 cpl-1996,knowledge-2,2,1,use1,knowb1raw,3,1|2,99,Archived utility script and source codebook correctness fields
 cpl-1996,knowledge-3,3,1,rt1,knowc1raw,2,1|3,99,Archived utility script and source codebook correctness fields
@@ -97,21 +97,21 @@ uk-monarchy-1996,knowledge-5,5,2,R5E,knowe2raw,1,2,3|4,Monarchy source and codeb
 uk-monarchy-1996,knowledge-6,6,2,R5F,knowf2raw,1,2,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
 uk-monarchy-1996,knowledge-7,7,2,R5G,knowg2raw,2,1,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
 uk-monarchy-1996,knowledge-8,8,2,R5H,knowh2raw,1,2,3|4,Monarchy source and codebook; use R5C at T2 rather than duplicated Q5C in archived script
-uk-general-election-1997,knowledge-1,1,2,inflat2,knowa2raw,1,2,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-2,2,2,intrst2,knowb2raw,2,1,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-3,3,2,ukempl2,knowc2raw,2,1,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-4,4,2,redstc2,redstc2raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-5,5,2,taxc2,taxc2raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-6,6,2,wagec2,wagec2raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-7,7,2,euc2,euc2raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-8,8,2,redstl2,redstl2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-9,9,2,taxl2,taxl2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-10,10,2,wagel2,wagel2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-11,11,2,eul2,eul2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-12,12,2,redstld2,redstld2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-13,13,2,taxld2,taxld2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-14,14,2,wageld2,wageld2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
-uk-general-election-1997,knowledge-15,15,2,euld2,euld2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-1,1,2,inflat2,knowa2raw,1,2,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-2,2,2,intrst2,knowb2raw,2,1,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-3,3,2,ukempl2,knowc2raw,2,1,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-4,4,2,redstc2,redstc2raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-5,5,2,taxc2,taxc2raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-6,6,2,wagec2,wagec2raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-7,7,2,euc2,euc2raw,1|2|3,4|5|6|7,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-8,8,2,redstl2,redstl2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-9,9,2,taxl2,taxl2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-10,10,2,wagel2,wagel2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-11,11,2,eul2,eul2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-12,12,2,redstld2,redstld2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-13,13,2,taxld2,taxld2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-14,14,2,wageld2,wageld2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
+uk-general-election-1997,knowledge-15,15,2,euld2,euld2raw,5|6|7,1|2|3|4,-8|-9,historical-cdd-scripts:legacy/poll_scripts/uk_bge.R lines 81-86 and 247-282; gencode codebook
 cpl-1996,knowledge-1,1,2,source2,knowa2raw,3,1|2|4|5|6,99,Archived utility script and source codebook correctness fields
 cpl-1996,knowledge-2,2,2,use2,knowb2raw,3,1|2,99,Archived utility script and source codebook correctness fields
 cpl-1996,knowledge-3,3,2,rt2,knowc2raw,2,1|3,99,Archived utility script and source codebook correctness fields

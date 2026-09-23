@@ -1,0 +1,12 @@
+repository,path_scope,disposition,evidence,next_check
+dp-learning,data/raw/,already-published,audit/downstream_source_inventory.csv: four exact published matches,Pin upstream source checksums before changing consumers
+guessing-and-forgetting,data/*.csv battery files,transport-equivalent,audit/downstream_text_transport.csv: all 23 batteries have identical text lines,Keep deposited bytes as the baseline; do not replace them with corrected knowledge outputs silently
+dp-nireland,data/groups.csv,transport-equivalent,audit/downstream_text_transport.csv: identical 124-record roster text,Preserve the headerless parsing contract
+dp-nireland,data/orig_data/nireland.dta,reviewed-source-of-redacted-extract,metadata/survey_sources.csv: exact original SHA-256,Confirm downstream requires no excluded verbatim fields before switching
+dp-nireland,data/orig_data/*Questionnaire*.doc,archive-only-metadata,audit/downstream_source_inventory.csv: three original questionnaire matches,Review and publish questionnaires with source hashes
+dp-nireland,data/open_ended/,candidate-source-review,audit/downstream_source_inventory.csv: coding files and documentation lack exact published matches,Distinguish codebooks and adjudication from verbatim responses and derived outputs
+dp-nireland,data/ninis/,candidate-source-review,audit/downstream_source_inventory.csv: six census workbooks lack exact catalog matches,Establish source releases and reuse terms before porting
+dp-distortions,data/*.csv,comparison-evidence,audit/downstream_source_inventory.csv: CSV bytes differ from tab-delimited benchmark files,Verify conversion provenance; do not use aggregate files as canonical build inputs
+dp-knowledge-linkage,data/processed/,downstream-derived,audit/downstream_source_inventory.csv; downstream path convention,Keep as comparison evidence pending a verified upstream replacement
+dp-steadier-not-closer,data/ and inst/extdata/,no-tracked-candidates,audit/downstream_repository_coverage.csv,Inspect future data contracts before attaching real survey sources
+dp-deliberately,data/ and inst/extdata/,no-tracked-candidates,audit/downstream_repository_coverage.csv,This directory scope does not establish absence of fixtures or generated examples elsewhere

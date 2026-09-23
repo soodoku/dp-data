@@ -1,0 +1,3 @@
+finding_id,poll_id,finding_type,evidence,observed,interpretation,implementation_status
+uk-crime-post-field,uk-crime-1994,source-column-mismatch,historical-cdd-scripts:legacy/poll_scripts/uk_crime.R line 143; data/uk-crime-1994/codebook.txt TIMCHLD2 and MORECOP1 sections,timchld2r reads morecop1 in archived script,Archived code substitutes a baseline police item for the post-wave children item,documented-not-implemented
+historical-script-paths,,citation-path,git ls-tree historical-cdd-scripts,Archived poll scripts are under legacy/poll_scripts rather than scripts,Metadata citations corrected to resolvable historical paths,corrected-metadata-only

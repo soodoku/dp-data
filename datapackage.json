@@ -661,6 +661,78 @@
       }
     },
     {
+      "name": "source_findings",
+      "path": "metadata/source_findings.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "finding_id",
+            "type": "string"
+          },
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "finding_type",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          },
+          {
+            "name": "observed",
+            "type": "string"
+          },
+          {
+            "name": "interpretation",
+            "type": "string"
+          },
+          {
+            "name": "implementation_status",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "downstream_porting_review",
+      "path": "metadata/downstream_porting_review.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "repository",
+            "type": "string"
+          },
+          {
+            "name": "path_scope",
+            "type": "string"
+          },
+          {
+            "name": "disposition",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          },
+          {
+            "name": "next_check",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
       "name": "recode_ledger",
       "path": "metadata/recode_ledger.csv",
       "profile": "tabular-data-resource",
