@@ -1,0 +1,1719 @@
+source_column,source_value,value_label
+q1,1,fail
+q1,2,d
+q1,3,c
+q1,4,b
+q1,5,a
+q1,7,dk
+q1,8,skipped
+q1,9,not asked
+q2,1,fail
+q2,2,d
+q2,3,c
+q2,4,b
+q2,5,a
+q2,7,dk
+q2,8,skipped
+q2,9,not asked
+q3,1,reform
+q3,2,alternative
+q3,7,dk
+q3,8,skipped
+q3,9,not asked
+q4,1,not enough
+q4,2,about right
+q4,3,too much
+q4,7,dk
+q4,8,skipped
+q4,9,not asked
+q5,0,very bad
+q5,1,1
+q5,2,2
+q5,3,3
+q5,4,4
+q5,5,neither bad nor good
+q5,6,6
+q5,7,7
+q5,8,8
+q5,9,9
+q5,10,very good
+q5,77,dk
+q5,98,skipped
+q5,99,not asked
+q6,1,state
+q6,2,local
+q6,7,dk
+q6,8,skipped
+q6,9,not asked
+q7_a,0,strongly oppose
+q7_a,1,1
+q7_a,2,2
+q7_a,3,3
+q7_a,4,4
+q7_a,5,neither oppose nor support
+q7_a,6,6
+q7_a,7,7
+q7_a,8,8
+q7_a,9,9
+q7_a,10,strongly support
+q7_a,77,dk
+q7_a,98,skipped
+q7_a,99,not asked
+q7_b,0,strongly oppose
+q7_b,1,1
+q7_b,2,2
+q7_b,3,3
+q7_b,4,4
+q7_b,5,neither oppose nor support
+q7_b,6,6
+q7_b,7,7
+q7_b,8,8
+q7_b,9,9
+q7_b,10,strongly support
+q7_b,77,dk
+q7_b,98,skipped
+q7_b,99,not asked
+q7_c,0,strongly oppose
+q7_c,1,1
+q7_c,2,2
+q7_c,3,3
+q7_c,4,4
+q7_c,5,neither oppose nor support
+q7_c,6,6
+q7_c,7,7
+q7_c,8,8
+q7_c,9,9
+q7_c,10,strongly support
+q7_c,77,dk
+q7_c,98,skipped
+q7_c,99,not asked
+q7_d,0,strongly oppose
+q7_d,1,1
+q7_d,2,2
+q7_d,3,3
+q7_d,4,4
+q7_d,5,neither oppose nor support
+q7_d,6,6
+q7_d,7,7
+q7_d,8,8
+q7_d,9,9
+q7_d,10,strongly support
+q7_d,77,dk
+q7_d,98,skipped
+q7_d,99,not asked
+q7_e,0,strongly oppose
+q7_e,1,1
+q7_e,2,2
+q7_e,3,3
+q7_e,4,4
+q7_e,5,neither oppose nor support
+q7_e,6,6
+q7_e,7,7
+q7_e,8,8
+q7_e,9,9
+q7_e,10,strongly support
+q7_e,77,dk
+q7_e,98,skipped
+q7_e,99,not asked
+q7_f,0,strongly oppose
+q7_f,1,1
+q7_f,2,2
+q7_f,3,3
+q7_f,4,4
+q7_f,5,neither oppose nor support
+q7_f,6,6
+q7_f,7,7
+q7_f,8,8
+q7_f,9,9
+q7_f,10,strongly support
+q7_f,77,dk
+q7_f,98,skipped
+q7_f,99,not asked
+q8_a,0,completely unimportant
+q8_a,1,1
+q8_a,2,2
+q8_a,3,3
+q8_a,4,4
+q8_a,5,midway in between
+q8_a,6,6
+q8_a,7,7
+q8_a,8,8
+q8_a,9,9
+q8_a,10,extremely important
+q8_a,77,dk
+q8_a,98,skipped
+q8_a,99,not asked
+q8_b,0,completely unimportant
+q8_b,1,1
+q8_b,2,2
+q8_b,3,3
+q8_b,4,4
+q8_b,5,midway in between
+q8_b,6,6
+q8_b,7,7
+q8_b,8,8
+q8_b,9,9
+q8_b,10,extremely important
+q8_b,77,dk
+q8_b,98,skipped
+q8_b,99,not asked
+q8_c,0,completely unimportant
+q8_c,1,1
+q8_c,2,2
+q8_c,3,3
+q8_c,4,4
+q8_c,5,midway in between
+q8_c,6,6
+q8_c,7,7
+q8_c,8,8
+q8_c,9,9
+q8_c,10,extremely important
+q8_c,77,dk
+q8_c,98,skipped
+q8_c,99,not asked
+q8_d,0,completely unimportant
+q8_d,1,1
+q8_d,2,2
+q8_d,3,3
+q8_d,4,4
+q8_d,5,midway in between
+q8_d,6,6
+q8_d,7,7
+q8_d,8,8
+q8_d,9,9
+q8_d,10,extremely important
+q8_d,77,dk
+q8_d,98,skipped
+q8_d,99,not asked
+q8_e,0,completely unimportant
+q8_e,1,1
+q8_e,2,2
+q8_e,3,3
+q8_e,4,4
+q8_e,5,midway in between
+q8_e,6,6
+q8_e,7,7
+q8_e,8,8
+q8_e,9,9
+q8_e,10,extremely important
+q8_e,77,dk
+q8_e,98,skipped
+q8_e,99,not asked
+q8_f,0,completely unimportant
+q8_f,1,1
+q8_f,2,2
+q8_f,3,3
+q8_f,4,4
+q8_f,5,midway in between
+q8_f,6,6
+q8_f,7,7
+q8_f,8,8
+q8_f,9,9
+q8_f,10,extremely important
+q8_f,77,dk
+q8_f,98,skipped
+q8_f,99,not asked
+q8_g,0,completely unimportant
+q8_g,1,1
+q8_g,2,2
+q8_g,3,3
+q8_g,4,4
+q8_g,5,midway in between
+q8_g,6,6
+q8_g,7,7
+q8_g,8,8
+q8_g,9,9
+q8_g,10,extremely important
+q8_g,77,dk
+q8_g,98,skipped
+q8_g,99,not asked
+q8_h,0,completely unimportant
+q8_h,1,1
+q8_h,2,2
+q8_h,3,3
+q8_h,4,4
+q8_h,5,midway in between
+q8_h,6,6
+q8_h,7,7
+q8_h,8,8
+q8_h,9,9
+q8_h,10,extremely important
+q8_h,77,dk
+q8_h,98,skipped
+q8_h,99,not asked
+q9,1,academic standards
+q9,2,class size
+q9,3,parental involvement
+q9,4,quality of teachers
+q9,5,school administration
+q9,6,funding
+q9,7,safety
+q9,8,use of technology
+q9,98,skipped
+q9,99,not asked
+q10,1,academic standards
+q10,2,class size
+q10,3,parental involvement
+q10,4,quality of teachers
+q10,5,school administration
+q10,6,funding
+q10,7,safety
+q10,8,use of technology
+q10,98,skipped
+q10,99,not asked
+q11,0,completely different
+q11,1,1
+q11,2,2
+q11,3,3
+q11,4,4
+q11,5,half and half
+q11,6,6
+q11,7,7
+q11,8,8
+q11,9,9
+q11,10,completely the same
+q11,77,dk
+q11,98,skipped
+q11,99,not asked
+q12,1,disapprove strongly
+q12,2,disapprove somewhat
+q12,3,neither
+q12,4,approve somewhat
+q12,5,approve strongly
+q12,7,dk
+q12,8,skipped
+q12,9,not asked
+q13,1,hardly
+q13,2,very little
+q13,3,somewhat
+q13,4,great deal
+q13,7,dk
+q13,8,skipped
+q13,9,not asked
+q14,1,disagree strongly
+q14,2,disagree somewhat
+q14,3,neither agree nor disagree
+q14,4,agree somewhat
+q14,5,strongly agree
+q14,7,dk
+q14,8,skipped
+q14,9,not asked
+q15,1,bottom 3
+q15,2,bottom 10
+q15,3,top 10
+q15,4,top 3
+q15,7,dk
+q15,8,skipped
+q15,9,not asked
+q16,1,harder
+q16,2,same
+q16,3,easier
+q16,7,dk
+q16,8,skipped
+q16,9,not asked
+q17,1,increasing
+q17,2,same
+q17,3,decreasing
+q17,7,dk
+q17,8,skipped
+q17,9,not asked
+q19_a,0,completely unimportant
+q19_a,1,1
+q19_a,2,2
+q19_a,3,3
+q19_a,4,4
+q19_a,5,midway in between
+q19_a,6,6
+q19_a,7,7
+q19_a,8,8
+q19_a,9,9
+q19_a,10,extremely important
+q19_a,77,dk
+q19_a,98,skipped
+q19_a,99,not asked
+q19_b,0,completely unimportant
+q19_b,1,1
+q19_b,2,2
+q19_b,3,3
+q19_b,4,4
+q19_b,5,midway in between
+q19_b,6,6
+q19_b,7,7
+q19_b,8,8
+q19_b,9,9
+q19_b,10,extremely important
+q19_b,77,dk
+q19_b,98,skipped
+q19_b,99,not asked
+q19_c,0,completely unimportant
+q19_c,1,1
+q19_c,2,2
+q19_c,3,3
+q19_c,4,4
+q19_c,5,midway in between
+q19_c,6,6
+q19_c,7,7
+q19_c,8,8
+q19_c,9,9
+q19_c,10,extremely important
+q19_c,77,dk
+q19_c,98,skipped
+q19_c,99,not asked
+q19_d,0,completely unimportant
+q19_d,1,1
+q19_d,2,2
+q19_d,3,3
+q19_d,4,4
+q19_d,5,midway in between
+q19_d,6,6
+q19_d,7,7
+q19_d,8,8
+q19_d,9,9
+q19_d,10,extremely important
+q19_d,77,dk
+q19_d,98,skipped
+q19_d,99,not asked
+q19_e,0,completely unimportant
+q19_e,1,1
+q19_e,2,2
+q19_e,3,3
+q19_e,4,4
+q19_e,5,midway in between
+q19_e,6,6
+q19_e,7,7
+q19_e,8,8
+q19_e,9,9
+q19_e,10,extremely important
+q19_e,77,dk
+q19_e,98,skipped
+q19_e,99,not asked
+q19_f,0,completely unimportant
+q19_f,1,1
+q19_f,2,2
+q19_f,3,3
+q19_f,4,4
+q19_f,5,midway in between
+q19_f,6,6
+q19_f,7,7
+q19_f,8,8
+q19_f,9,9
+q19_f,10,extremely important
+q19_f,77,dk
+q19_f,98,skipped
+q19_f,99,not asked
+q20,1,cost of insurance
+q20,2,number of uninsured
+q20,3,cost of drugs
+q20,4,medical errors
+q20,5,malpractice
+q20,6,quality of care
+q20,8,skipped
+q20,9,not asked
+q21,1,cost of insurance
+q21,2,number of uninsured
+q21,3,cost of drugs
+q21,4,medical errors
+q21,5,malpractice
+q21,6,quality of care
+q21,8,skipped
+q21,9,not asked
+q22,0,completely different
+q22,1,1
+q22,2,2
+q22,3,3
+q22,4,4
+q22,5,half and half
+q22,6,6
+q22,7,7
+q22,8,8
+q22,9,9
+q22,10,completely the same
+q22,77,dk
+q22,98,skipped
+q22,99,not asked
+q23,1,slightly more
+q23,2,significantly more
+q23,3,no more
+q23,7,dk
+q23,8,skipped
+q23,9,not asked
+q24a,1,disagree strongly
+q24a,2,disagree somewhat
+q24a,3,neither agree nor disagree
+q24a,4,agree somewhat
+q24a,5,agree strongly
+q24a,7,dk
+q24a,8,skipped
+q24a,9,not asked
+q24b,1,disagree strongly
+q24b,2,disagree somewhat
+q24b,3,neither agree nor disagree
+q24b,4,agree somewhat
+q24b,5,agree strongly
+q24b,7,dk
+q24b,8,skipped
+q24b,9,not asked
+q24c,1,disagree strongly
+q24c,2,disagree somewhat
+q24c,3,neither agree nor disagree
+q24c,4,agree somewhat
+q24c,5,agree strongly
+q24c,7,dk
+q24c,8,skipped
+q24c,9,not asked
+q24d,1,disagree strongly
+q24d,2,disagree somewhat
+q24d,3,neither agree nor disagree
+q24d,4,agree somewhat
+q24d,5,agree strongly
+q24d,7,dk
+q24d,8,skipped
+q24d,9,not asked
+q24e,1,disagree strongly
+q24e,2,disagree somewhat
+q24e,3,neither agree nor disagree
+q24e,4,agree somewhat
+q24e,5,agree strongly
+q24e,7,dk
+q24e,8,skipped
+q24e,9,not asked
+q24f,1,disagree strongly
+q24f,2,disagree somewhat
+q24f,3,neither agree nor disagree
+q24f,4,agree somewhat
+q24f,5,agree strongly
+q24f,7,dk
+q24f,8,skipped
+q24f,9,not asked
+q25_a,1,very ineffective
+q25_a,2,somewhat ineffective
+q25_a,3,neither effective nor ineffective
+q25_a,4,somewhat effective
+q25_a,5,very effective
+q25_a,7,dk
+q25_a,8,skipped
+q25_a,9,not asked
+q25_b,1,very ineffective
+q25_b,2,somewhat ineffective
+q25_b,3,neither effective nor ineffective
+q25_b,4,somewhat effective
+q25_b,5,very effective
+q25_b,7,dk
+q25_b,8,skipped
+q25_b,9,not asked
+q25_c,1,very ineffective
+q25_c,2,somewhat ineffective
+q25_c,3,neither effective nor ineffective
+q25_c,4,somewhat effective
+q25_c,5,very effective
+q25_c,7,dk
+q25_c,8,skipped
+q25_c,9,not asked
+q25_d,1,very ineffective
+q25_d,2,somewhat ineffective
+q25_d,3,neither effective nor ineffective
+q25_d,4,somewhat effective
+q25_d,5,very effective
+q25_d,7,dk
+q25_d,8,skipped
+q25_d,9,not asked
+q26,1,1 million
+q26,2,25 million
+q26,3,45 million
+q26,4,65 million
+q26,5,85 million
+q26,7,dk
+q26,8,skipped
+q26,9,not asked
+q27,1,stay about the same
+q27,2,increase by about half
+q27,3,double
+q27,4,triple
+q27,7,dk
+q27,8,skipped
+q27,9,not asked
+q28,1,a quarter
+q28,2,fifty per cent
+q28,3,two thirds
+q28,4,ninety per cent
+q28,7,dk
+q28,8,skipped
+q28,9,not asked
+q29a,1,disagree strongly
+q29a,2,disagree somewhat
+q29a,3,neither agree nor disagree
+q29a,4,agree somewhat
+q29a,5,agree strongly
+q29a,7,dk
+q29a,8,skipped
+q29a,9,not asked
+q29b,1,disagree strongly
+q29b,2,disagree somewhat
+q29b,3,neither agree nor disagree
+q29b,4,agree somewhat
+q29b,5,agree strongly
+q29b,7,dk
+q29b,8,skipped
+q29b,9,not asked
+q29c,1,disagree strongly
+q29c,2,disagree somewhat
+q29c,3,neither agree nor disagree
+q29c,4,agree somewhat
+q29c,5,agree strongly
+q29c,7,dk
+q29c,8,skipped
+q29c,9,not asked
+q30a,1,strongly disagree
+q30a,2,disagree
+q30a,3,neither
+q30a,4,agree
+q30a,5,strongly agree
+q30a,7,dk
+q30a,8,skipped
+q30a,9,not asked
+q30b,1,strongly disagree
+q30b,2,disagree
+q30b,3,neither
+q30b,4,agree
+q30b,5,strongly agree
+q30b,7,dk
+q30b,8,skipped
+q30b,9,not asked
+q30c,1,strongly disagree
+q30c,2,disagree
+q30c,3,neither
+q30c,4,agree
+q30c,5,strongly agree
+q30c,7,dk
+q30c,8,skipped
+q30c,9,not asked
+q32,1,yes
+q32,2,no
+q32,8,skipped
+q32,9,not asked
+q33,1,disagree strongly
+q33,2,disagree somewhat
+q33,3,neither agree nor disagree
+q33,4,agree somewhat
+q33,5,agree strongly
+q33,7,dk
+q33,8,skipped
+q33,9,not asked
+q34,1,democrat
+q34,2,independent
+q34,3,republican
+q34,4,other
+q34,5,dk
+q34,8,skipped
+q34,9,not asked
+q34a,1,strong democrat
+q34a,2,not very strong democrat
+q34a,3,lean democrat
+q34a,4,pure independent
+q34a,5,lean republican
+q34a,6,not very strong republican
+q34a,7,strong republican
+q34a,8,skipped
+q34a,9,not asked
+q35,1,extremely liberal
+q35,2,liberal
+q35,3,slightly liberal
+q35,4,moderate
+q35,5,slightly conservative
+q35,6,conservative
+q35,7,extremely conservative
+q35,77,dk
+q35,98,skipped
+q35,99,not asked
+q36,1,zero
+q36,2,1-2 days
+q36,3,3-4 days
+q36,4,almost every day
+q36,8,skipped
+q36,9,not asked
+q37,1,zero
+q37,2,1-2 days
+q37,3,3-4 days
+q37,4,almost every day
+q37,8,skipped
+q37,9,not asked
+q38,1,zero
+q38,2,1-2 days
+q38,3,3-4 days
+q38,4,almost every day
+q38,8,skipped
+q38,9,not asked
+q39,1,practically never
+q39,2,at least once a month
+q39,3,at least once a week
+q39,4,several times a week
+q39,5,almost every day
+q39,8,skipped
+q39,9,not asked
+q40,1,not at all
+q40,2,not very interested
+q40,3,somewhat interested
+q40,4,very interested
+q40,8,skipped
+q40,9,not asked
+q41a,1,never
+q41a,2,a few times a year
+q41a,3,once or twice a month
+q41a,4,almost every week
+q41a,5,every week
+q41a,8,skipped
+q41a,9,not asked
+q1post,1,fail
+q1post,2,d
+q1post,3,c
+q1post,4,b
+q1post,5,a
+q1post,7,dk
+q1post,8,skipped
+q1post,9,not asked
+q2post,1,fail
+q2post,2,d
+q2post,3,c
+q2post,4,b
+q2post,5,a
+q2post,7,dk
+q2post,8,skipped
+q2post,9,not asked
+q3post,1,reform
+q3post,2,alternative
+q3post,7,dk
+q3post,8,skipped
+q3post,9,not asked
+q4post,1,not enough
+q4post,2,about right
+q4post,3,too much
+q4post,7,dk
+q4post,8,skipped
+q4post,9,not asked
+q5post_m,0,very bad
+q5post_m,1,1
+q5post_m,2,2
+q5post_m,3,3
+q5post_m,4,4
+q5post_m,5,neither bad nor good
+q5post_m,6,6
+q5post_m,7,7
+q5post_m,8,8
+q5post_m,9,9
+q5post_m,10,very good
+q5post_m,77,dk
+q5post_m,98,skipped
+q5post_m,99,not asked
+q6post,1,state
+q6post,2,local
+q6post,7,dk
+q6post,8,skipped
+q6post,9,not asked
+q7post_a,0,strongly oppose
+q7post_a,1,1
+q7post_a,2,2
+q7post_a,3,3
+q7post_a,4,4
+q7post_a,5,neither oppose nor support
+q7post_a,6,6
+q7post_a,7,7
+q7post_a,8,8
+q7post_a,9,9
+q7post_a,10,strongly support
+q7post_a,77,dk
+q7post_a,98,skipped
+q7post_a,99,not asked
+q7post_b,0,strongly oppose
+q7post_b,1,1
+q7post_b,2,2
+q7post_b,3,3
+q7post_b,4,4
+q7post_b,5,neither oppose nor support
+q7post_b,6,6
+q7post_b,7,7
+q7post_b,8,8
+q7post_b,9,9
+q7post_b,10,strongly support
+q7post_b,77,dk
+q7post_b,98,skipped
+q7post_b,99,not asked
+q7post_c,0,strongly oppose
+q7post_c,1,1
+q7post_c,2,2
+q7post_c,3,3
+q7post_c,4,4
+q7post_c,5,neither oppose nor support
+q7post_c,6,6
+q7post_c,7,7
+q7post_c,8,8
+q7post_c,9,9
+q7post_c,10,strongly support
+q7post_c,77,dk
+q7post_c,98,skipped
+q7post_c,99,not asked
+q7post_d,0,strongly oppose
+q7post_d,1,1
+q7post_d,2,2
+q7post_d,3,3
+q7post_d,4,4
+q7post_d,5,neither oppose nor support
+q7post_d,6,6
+q7post_d,7,7
+q7post_d,8,8
+q7post_d,9,9
+q7post_d,10,strongly support
+q7post_d,77,dk
+q7post_d,98,skipped
+q7post_d,99,not asked
+q7post_e,0,strongly oppose
+q7post_e,1,1
+q7post_e,2,2
+q7post_e,3,3
+q7post_e,4,4
+q7post_e,5,neither oppose nor support
+q7post_e,6,6
+q7post_e,7,7
+q7post_e,8,8
+q7post_e,9,9
+q7post_e,10,strongly support
+q7post_e,77,dk
+q7post_e,98,skipped
+q7post_e,99,not asked
+q7post_f,0,strongly oppose
+q7post_f,1,1
+q7post_f,2,2
+q7post_f,3,3
+q7post_f,4,4
+q7post_f,5,neither oppose nor support
+q7post_f,6,6
+q7post_f,7,7
+q7post_f,8,8
+q7post_f,9,9
+q7post_f,10,strongly support
+q7post_f,77,dk
+q7post_f,98,skipped
+q7post_f,99,not asked
+q8post_a,0,completely unimportant
+q8post_a,1,1
+q8post_a,2,2
+q8post_a,3,3
+q8post_a,4,4
+q8post_a,5,midway in between
+q8post_a,6,6
+q8post_a,7,7
+q8post_a,8,8
+q8post_a,9,9
+q8post_a,10,extremely important
+q8post_a,77,dk
+q8post_a,98,skipped
+q8post_a,99,not asked
+q8post_b,0,completely unimportant
+q8post_b,1,1
+q8post_b,2,2
+q8post_b,3,3
+q8post_b,4,4
+q8post_b,5,midway in between
+q8post_b,6,6
+q8post_b,7,7
+q8post_b,8,8
+q8post_b,9,9
+q8post_b,10,extremely important
+q8post_b,77,dk
+q8post_b,98,skipped
+q8post_b,99,not asked
+q8post_c,0,completely unimportant
+q8post_c,1,1
+q8post_c,2,2
+q8post_c,3,3
+q8post_c,4,4
+q8post_c,5,midway in between
+q8post_c,6,6
+q8post_c,7,7
+q8post_c,8,8
+q8post_c,9,9
+q8post_c,10,extremely important
+q8post_c,77,dk
+q8post_c,98,skipped
+q8post_c,99,not asked
+q8post_d,0,completely unimportant
+q8post_d,1,1
+q8post_d,2,2
+q8post_d,3,3
+q8post_d,4,4
+q8post_d,5,midway in between
+q8post_d,6,6
+q8post_d,7,7
+q8post_d,8,8
+q8post_d,9,9
+q8post_d,10,extremely important
+q8post_d,77,dk
+q8post_d,98,skipped
+q8post_d,99,not asked
+q8post_e,0,completely unimportant
+q8post_e,1,1
+q8post_e,2,2
+q8post_e,3,3
+q8post_e,4,4
+q8post_e,5,midway in between
+q8post_e,6,6
+q8post_e,7,7
+q8post_e,8,8
+q8post_e,9,9
+q8post_e,10,extremely important
+q8post_e,77,dk
+q8post_e,98,skipped
+q8post_e,99,not asked
+q8post_f,0,completely unimportant
+q8post_f,1,1
+q8post_f,2,2
+q8post_f,3,3
+q8post_f,4,4
+q8post_f,5,midway in between
+q8post_f,6,6
+q8post_f,7,7
+q8post_f,8,8
+q8post_f,9,9
+q8post_f,10,extremely important
+q8post_f,77,dk
+q8post_f,98,skipped
+q8post_f,99,not asked
+q8post_g,0,completely unimportant
+q8post_g,1,1
+q8post_g,2,2
+q8post_g,3,3
+q8post_g,4,4
+q8post_g,5,midway in between
+q8post_g,6,6
+q8post_g,7,7
+q8post_g,8,8
+q8post_g,9,9
+q8post_g,10,extremely important
+q8post_g,77,dk
+q8post_g,98,skipped
+q8post_g,99,not asked
+q8post_h,0,completely unimportant
+q8post_h,1,1
+q8post_h,2,2
+q8post_h,3,3
+q8post_h,4,4
+q8post_h,5,midway in between
+q8post_h,6,6
+q8post_h,7,7
+q8post_h,8,8
+q8post_h,9,9
+q8post_h,10,extremely important
+q8post_h,77,dk
+q8post_h,98,skipped
+q8post_h,99,not asked
+q9post,1,academic standards
+q9post,2,class size
+q9post,3,parental involvement
+q9post,4,quality of teachers
+q9post,5,school administration
+q9post,6,funding
+q9post,7,safety
+q9post,8,use of technology
+q9post,98,skipped
+q9post,99,not asked
+q10post,1,academic standards
+q10post,2,class size
+q10post,3,parental involvement
+q10post,4,quality of teachers
+q10post,5,school administration
+q10post,6,funding
+q10post,7,safety
+q10post,8,use of technology
+q10post,98,skipped
+q10post,99,not asked
+q11post,0,completely different
+q11post,1,1
+q11post,2,2
+q11post,3,3
+q11post,4,4
+q11post,5,half and half
+q11post,6,6
+q11post,7,7
+q11post,8,8
+q11post,9,9
+q11post,10,completely the same
+q11post,77,dk
+q11post,98,skipped
+q11post,99,not asked
+q12post,1,disapprove strongly
+q12post,2,disapprove somewhat
+q12post,3,neither
+q12post,4,approve somewhat
+q12post,5,approve strongly
+q12post,7,dk
+q12post,8,skipped
+q12post,9,not asked
+q13post,1,hardly
+q13post,2,very little
+q13post,3,somewhat
+q13post,4,great deal
+q13post,7,dk
+q13post,8,skipped
+q13post,9,not asked
+q14post,1,disagree strongly
+q14post,2,disagree somewhat
+q14post,3,neither agree nor disagree
+q14post,4,agree somewhat
+q14post,5,strongly agree
+q14post,7,dk
+q14post,8,skipped
+q14post,9,not asked
+q15post,1,bottom 3
+q15post,2,bottom 10
+q15post,3,top 10
+q15post,4,top 3
+q15post,7,dk
+q15post,8,skipped
+q15post,9,not asked
+q16post,1,harder
+q16post,2,same
+q16post,3,easier
+q16post,7,dk
+q16post,8,skipped
+q16post,9,not asked
+q17post,1,increasing
+q17post,2,same
+q17post,3,decreasing
+q17post,7,dk
+q17post,8,skipped
+q17post,9,not asked
+q19post,0,completely unimportant
+q19post,1,1
+q19post,2,2
+q19post,3,3
+q19post,4,4
+q19post,5,midway in between
+q19post,6,6
+q19post,7,7
+q19post,8,8
+q19post,9,9
+q19post,10,extremely important
+q19post,77,dk
+q19post,98,skipped
+q19post,99,not asked
+q19pos_a,0,completely unimportant
+q19pos_a,1,1
+q19pos_a,2,2
+q19pos_a,3,3
+q19pos_a,4,4
+q19pos_a,5,midway in between
+q19pos_a,6,6
+q19pos_a,7,7
+q19pos_a,8,8
+q19pos_a,9,9
+q19pos_a,10,extremely important
+q19pos_a,77,dk
+q19pos_a,98,skipped
+q19pos_a,99,not asked
+q19pos_b,0,completely unimportant
+q19pos_b,1,1
+q19pos_b,2,2
+q19pos_b,3,3
+q19pos_b,4,4
+q19pos_b,5,midway in between
+q19pos_b,6,6
+q19pos_b,7,7
+q19pos_b,8,8
+q19pos_b,9,9
+q19pos_b,10,extremely important
+q19pos_b,77,dk
+q19pos_b,98,skipped
+q19pos_b,99,not asked
+q19pos_c,0,completely unimportant
+q19pos_c,1,1
+q19pos_c,2,2
+q19pos_c,3,3
+q19pos_c,4,4
+q19pos_c,5,midway in between
+q19pos_c,6,6
+q19pos_c,7,7
+q19pos_c,8,8
+q19pos_c,9,9
+q19pos_c,10,extremely important
+q19pos_c,77,dk
+q19pos_c,98,skipped
+q19pos_c,99,not asked
+q19pos_d,0,completely unimportant
+q19pos_d,1,1
+q19pos_d,2,2
+q19pos_d,3,3
+q19pos_d,4,4
+q19pos_d,5,midway in between
+q19pos_d,6,6
+q19pos_d,7,7
+q19pos_d,8,8
+q19pos_d,9,9
+q19pos_d,10,extremely important
+q19pos_d,77,dk
+q19pos_d,98,skipped
+q19pos_d,99,not asked
+q19pos_e,0,completely unimportant
+q19pos_e,1,1
+q19pos_e,2,2
+q19pos_e,3,3
+q19pos_e,4,4
+q19pos_e,5,midway in between
+q19pos_e,6,6
+q19pos_e,7,7
+q19pos_e,8,8
+q19pos_e,9,9
+q19pos_e,10,extremely important
+q19pos_e,77,dk
+q19pos_e,98,skipped
+q19pos_e,99,not asked
+q20post,1,cost of insurance
+q20post,2,number of uninsured
+q20post,3,cost of drugs
+q20post,4,medical errors
+q20post,5,malpractice
+q20post,6,quality of care
+q20post,8,skipped
+q20post,9,not asked
+q21post,1,cost of insurance
+q21post,2,number of uninsured
+q21post,3,cost of drugs
+q21post,4,medical errors
+q21post,5,malpractice
+q21post,6,quality of care
+q21post,8,skipped
+q21post,9,not asked
+q22post,0,completely different
+q22post,1,1
+q22post,2,2
+q22post,3,3
+q22post,4,4
+q22post,5,half and half
+q22post,6,6
+q22post,7,7
+q22post,8,8
+q22post,9,9
+q22post,10,completely the same
+q22post,77,dk
+q22post,98,skipped
+q22post,99,not asked
+q23post,1,slightly more
+q23post,2,significantly more
+q23post,3,no more
+q23post,7,dk
+q23post,8,skipped
+q23post,9,not asked
+q24apost,1,disagree strongly
+q24apost,2,disagree somewhat
+q24apost,3,neither agree nor disagree
+q24apost,4,agree somewhat
+q24apost,5,agree strongly
+q24apost,7,dk
+q24apost,8,skipped
+q24apost,9,not asked
+q24bpost,1,disagree strongly
+q24bpost,2,disagree somewhat
+q24bpost,3,neither agree nor disagree
+q24bpost,4,agree somewhat
+q24bpost,5,agree strongly
+q24bpost,7,dk
+q24bpost,8,skipped
+q24bpost,9,not asked
+q24cpost,1,disagree strongly
+q24cpost,2,disagree somewhat
+q24cpost,3,neither agree nor disagree
+q24cpost,4,agree somewhat
+q24cpost,5,agree strongly
+q24cpost,7,dk
+q24cpost,8,skipped
+q24cpost,9,not asked
+q24dpost,1,disagree strongly
+q24dpost,2,disagree somewhat
+q24dpost,3,neither agree nor disagree
+q24dpost,4,agree somewhat
+q24dpost,5,agree strongly
+q24dpost,7,dk
+q24dpost,8,skipped
+q24dpost,9,not asked
+q24epost,1,disagree strongly
+q24epost,2,disagree somewhat
+q24epost,3,neither agree nor disagree
+q24epost,4,agree somewhat
+q24epost,5,agree strongly
+q24epost,7,dk
+q24epost,8,skipped
+q24epost,9,not asked
+q24fpost,1,disagree strongly
+q24fpost,2,disagree somewhat
+q24fpost,3,neither agree nor disagree
+q24fpost,4,agree somewhat
+q24fpost,5,agree strongly
+q24fpost,7,dk
+q24fpost,8,skipped
+q24fpost,9,not asked
+q25post,1,very ineffective
+q25post,2,somewhat ineffective
+q25post,3,neither effective nor ineffective
+q25post,4,somewhat effective
+q25post,5,very effective
+q25post,7,dk
+q25post,8,skipped
+q25post,9,not asked
+q25pos_a,1,very ineffective
+q25pos_a,2,somewhat ineffective
+q25pos_a,3,neither effective nor ineffective
+q25pos_a,4,somewhat effective
+q25pos_a,5,very effective
+q25pos_a,7,dk
+q25pos_a,8,skipped
+q25pos_a,9,not asked
+q25pos_b,1,very ineffective
+q25pos_b,2,somewhat ineffective
+q25pos_b,3,neither effective nor ineffective
+q25pos_b,4,somewhat effective
+q25pos_b,5,very effective
+q25pos_b,7,dk
+q25pos_b,8,skipped
+q25pos_b,9,not asked
+q25pos_c,1,very ineffective
+q25pos_c,2,somewhat ineffective
+q25pos_c,3,neither effective nor ineffective
+q25pos_c,4,somewhat effective
+q25pos_c,5,very effective
+q25pos_c,7,dk
+q25pos_c,8,skipped
+q25pos_c,9,not asked
+q26post,1,1 million
+q26post,2,25 million
+q26post,3,45 million
+q26post,4,65 million
+q26post,5,85 million
+q26post,7,dk
+q26post,8,skipped
+q26post,9,not asked
+q27post,1,stay about the same
+q27post,2,increase by about half
+q27post,3,double
+q27post,4,triple
+q27post,7,dk
+q27post,8,skipped
+q27post,9,not asked
+q28post,1,a quarter
+q28post,2,fifty per cent
+q28post,3,two thirds
+q28post,4,ninety per cent
+q28post,7,dk
+q28post,8,skipped
+q28post,9,not asked
+q29apost,1,disagree strongly
+q29apost,2,disagree somewhat
+q29apost,3,neither agree nor disagree
+q29apost,4,agree somewhat
+q29apost,5,agree strongly
+q29apost,7,dk
+q29apost,8,skipped
+q29apost,9,not asked
+q29bpost,1,disagree strongly
+q29bpost,2,disagree somewhat
+q29bpost,3,neither agree nor disagree
+q29bpost,4,agree somewhat
+q29bpost,5,agree strongly
+q29bpost,7,dk
+q29bpost,8,skipped
+q29bpost,9,not asked
+q29cpost,1,disagree strongly
+q29cpost,2,disagree somewhat
+q29cpost,3,neither agree nor disagree
+q29cpost,4,agree somewhat
+q29cpost,5,agree strongly
+q29cpost,7,dk
+q29cpost,8,skipped
+q29cpost,9,not asked
+q30apos0,1,strongly disagree
+q30apos0,2,disagree
+q30apos0,3,neither
+q30apos0,4,agree
+q30apos0,5,strongly agree
+q30apos0,7,dk
+q30apos0,8,skipped
+q30apos0,9,not asked
+q30bpost,1,strongly disagree
+q30bpost,2,disagree
+q30bpost,3,neither
+q30bpost,4,agree
+q30bpost,5,strongly agree
+q30bpost,7,dk
+q30bpost,8,skipped
+q30bpost,9,not asked
+q30cpost,1,strongly disagree
+q30cpost,2,disagree
+q30cpost,3,neither
+q30cpost,4,agree
+q30cpost,5,strongly agree
+q30cpost,7,dk
+q30cpost,8,skipped
+q30cpost,9,not asked
+q33post,1,disagree strongly
+q33post,2,disagree somewhat
+q33post,3,neither agree nor disagree
+q33post,4,agree somewhat
+q33post,5,agree strongly
+q33post,7,dk
+q33post,8,skipped
+q33post,9,not asked
+q34post,1,democrat
+q34post,2,independent
+q34post,3,republican
+q34post,4,other
+q34post,5,dk
+q34post,8,skipped
+q34post,9,not asked
+q34apost,1,strong democrat
+q34apost,2,not very strong democrat
+q34apost,3,lean democrat
+q34apost,4,pure independent
+q34apost,5,lean republican
+q34apost,6,not very strong republican
+q34apost,7,strong republican
+q34apost,8,skipped
+q34apost,9,not asked
+q35post,1,extremely liberal
+q35post,2,liberal
+q35post,3,slightly liberal
+q35post,4,moderate
+q35post,5,slightly conservative
+q35post,6,conservative
+q35post,7,extremely conservative
+q35post,77,dk
+q35post,98,skipped
+q35post,99,not asked
+q36post,1,zero
+q36post,2,1-2 days
+q36post,3,3-4 days
+q36post,4,almost every day
+q36post,8,skipped
+q36post,9,not asked
+q37post,1,zero
+q37post,2,1-2 days
+q37post,3,3-4 days
+q37post,4,almost every day
+q37post,8,skipped
+q37post,9,not asked
+q38post,1,zero
+q38post,2,1-2 days
+q38post,3,3-4 days
+q38post,4,almost every day
+q38post,8,skipped
+q38post,9,not asked
+q39post,1,practically never
+q39post,2,at least once a month
+q39post,3,at least once a week
+q39post,4,several times a week
+q39post,5,almost every day
+q39post,8,skipped
+q39post,9,not asked
+q40post,1,not at all
+q40post,2,not very interested
+q40post,3,somewhat interested
+q40post,4,very interested
+q40post,8,skipped
+q40post,9,not asked
+q41post,1,yes
+q41post,2,no
+q41post,8,skipped
+q41post,9,not asked
+q42post,1,retired
+q42post,2,homemaker
+q42post,3,looking
+q42post,4,part-time
+q42post,5,student
+q42post,6,unable
+q42post,8,skipped
+q42post,9,not asked
+q43post,1,private
+q43post,2,government
+q43post,3,non-profit
+q43post,4,self
+q43post,8,skipped
+q43post,9,not asked
+z1apost,1,1 - not valuable at all
+z1apost,2,2
+z1apost,3,3
+z1apost,4,4
+z1apost,5,5 - very valuable
+z1apost,7,couldn't say
+z1apost,8,skipped
+z1apost,9,not asked
+z1bpost,1,1 - not valuable at all
+z1bpost,2,2
+z1bpost,3,3
+z1bpost,4,4
+z1bpost,5,5 - very valuable
+z1bpost,7,couldn't say
+z1bpost,8,skipped
+z1bpost,9,not asked
+z1cpost,1,1 - not valuable at all
+z1cpost,2,2
+z1cpost,3,3
+z1cpost,4,4
+z1cpost,5,5 - very valuable
+z1cpost,7,couldn't say
+z1cpost,8,skipped
+z1cpost,9,not asked
+z2post_a,1,no problems
+z2post_a,2,minor problems
+z2post_a,3,major problems
+z2post_a,8,skipped
+z2post_a,9,not asked
+z2post_b,1,no problems
+z2post_b,2,minor problems
+z2post_b,3,major problems
+z2post_b,8,skipped
+z2post_b,9,not asked
+z2post_c,1,no problems
+z2post_c,2,minor problems
+z2post_c,3,major problems
+z2post_c,8,skipped
+z2post_c,9,not asked
+z3post,1,very difficult
+z3post,2,fairly difficult
+z3post,3,fairly easy
+z3post,4,very easy
+z3post,8,skipped
+z3post,9,not asked
+s1,1,monday 3:00
+s1,2,monday 3:30
+s1,3,monday 4:00
+s1,4,monday 4:30
+s1,5,monday 5:00
+s1,6,monday 5:30
+s1,7,monday 6:00
+s1,8,monday 6:30
+s1,9,monday 7:00
+s1,10,monday 7:30
+s1,11,tuesday 3:00
+s1,12,tuesday 3:30
+s1,13,tuesday 4:00
+s1,14,tuesday 4:30
+s1,15,tuesday 5:00
+s1,16,tuesday 5:30
+s1,17,tuesday 6:00
+s1,18,tuesday 6:30
+s1,19,tuesday 7:00
+s1,20,tuesday 7:30
+s1,21,wednesday 3:00
+s1,22,wednesday 3:30
+s1,23,wednesday 4:00
+s1,24,wednesday 4:30
+s1,25,wednesday 5:00
+s1,26,wednesday 5:30
+s1,27,wednesday 6:00
+s1,28,wednesday 6:30
+s1,29,wednesday 7:00
+s1,30,wednesday 7:30
+s1,97,invalid case
+s1,98,skipped session
+s1,99,not invited
+s2,1,monday 3:00
+s2,2,monday 3:30
+s2,3,monday 4:00
+s2,4,monday 4:30
+s2,5,monday 5:00
+s2,6,monday 5:30
+s2,7,monday 6:00
+s2,8,monday 6:30
+s2,9,monday 7:00
+s2,10,monday 7:30
+s2,11,tuesday 3:00
+s2,12,tuesday 3:30
+s2,13,tuesday 4:00
+s2,14,tuesday 4:30
+s2,15,tuesday 5:00
+s2,16,tuesday 5:30
+s2,17,tuesday 6:00
+s2,18,tuesday 6:30
+s2,19,tuesday 7:00
+s2,20,tuesday 7:30
+s2,21,wednesday 3:00
+s2,22,wednesday 3:30
+s2,23,wednesday 4:00
+s2,24,wednesday 4:30
+s2,25,wednesday 5:00
+s2,26,wednesday 5:30
+s2,27,wednesday 6:00
+s2,28,wednesday 6:30
+s2,29,wednesday 7:00
+s2,30,wednesday 7:30
+s2,97,invalid case
+s2,98,skipped session
+s2,99,not invited
+s3,1,monday 3:00
+s3,2,monday 3:30
+s3,3,monday 4:00
+s3,4,monday 4:30
+s3,5,monday 5:00
+s3,6,monday 5:30
+s3,7,monday 6:00
+s3,8,monday 6:30
+s3,9,monday 7:00
+s3,10,monday 7:30
+s3,11,tuesday 3:00
+s3,12,tuesday 3:30
+s3,13,tuesday 4:00
+s3,14,tuesday 4:30
+s3,15,tuesday 5:00
+s3,16,tuesday 5:30
+s3,17,tuesday 6:00
+s3,18,tuesday 6:30
+s3,19,tuesday 7:00
+s3,20,tuesday 7:30
+s3,21,wednesday 3:00
+s3,22,wednesday 3:30
+s3,23,wednesday 4:00
+s3,24,wednesday 4:30
+s3,25,wednesday 5:00
+s3,26,wednesday 5:30
+s3,27,wednesday 6:00
+s3,28,wednesday 6:30
+s3,29,wednesday 7:00
+s3,30,wednesday 7:30
+s3,97,invalid case
+s3,98,skipped session
+s3,99,not invited
+s4,1,monday 3:00
+s4,2,monday 3:30
+s4,3,monday 4:00
+s4,4,monday 4:30
+s4,5,monday 5:00
+s4,6,monday 5:30
+s4,7,monday 6:00
+s4,8,monday 6:30
+s4,9,monday 7:00
+s4,10,monday 7:30
+s4,11,tuesday 3:00
+s4,12,tuesday 3:30
+s4,13,tuesday 4:00
+s4,14,tuesday 4:30
+s4,15,tuesday 5:00
+s4,16,tuesday 5:30
+s4,17,tuesday 6:00
+s4,18,tuesday 6:30
+s4,19,tuesday 7:00
+s4,20,tuesday 7:30
+s4,21,wednesday 3:00
+s4,22,wednesday 3:30
+s4,23,wednesday 4:00
+s4,24,wednesday 4:30
+s4,25,wednesday 5:00
+s4,26,wednesday 5:30
+s4,27,wednesday 6:00
+s4,28,wednesday 6:30
+s4,29,wednesday 7:00
+s4,30,wednesday 7:30
+s4,97,invalid case
+s4,98,skipped session
+s4,99,not invited
+s5,1,monday 3:00
+s5,2,monday 3:30
+s5,3,monday 4:00
+s5,4,monday 4:30
+s5,5,monday 5:00
+s5,6,monday 5:30
+s5,7,monday 6:00
+s5,8,monday 6:30
+s5,9,monday 7:00
+s5,10,monday 7:30
+s5,11,tuesday 3:00
+s5,12,tuesday 3:30
+s5,13,tuesday 4:00
+s5,14,tuesday 4:30
+s5,15,tuesday 5:00
+s5,16,tuesday 5:30
+s5,17,tuesday 6:00
+s5,18,tuesday 6:30
+s5,19,tuesday 7:00
+s5,20,tuesday 7:30
+s5,21,wednesday 3:00
+s5,22,wednesday 3:30
+s5,23,wednesday 4:00
+s5,24,wednesday 4:30
+s5,25,wednesday 5:00
+s5,26,wednesday 5:30
+s5,27,wednesday 6:00
+s5,28,wednesday 6:30
+s5,29,wednesday 7:00
+s5,30,wednesday 7:30
+s5,97,invalid case
+s5,98,skipped session
+s5,99,not invited
+m1,1,asiu
+m1,2,chutcher
+m1,3,jmcgrady
+m1,4,kjmurray
+m1,5,mhhunter
+m1,6,mja
+m1,7,neilm
+m1,8,weiksner
+m1,97,invalid case
+m1,98,skipped
+m1,99,not invited
+m2,1,asiu
+m2,2,chutcher
+m2,3,jmcgrady
+m2,4,kjmurray
+m2,5,mhhunter
+m2,6,mja
+m2,7,neilm
+m2,8,weiksner
+m2,97,invalid case
+m2,98,skipped
+m2,99,not invited
+m3,1,asiu
+m3,2,chutcher
+m3,3,jmcgrady
+m3,4,kjmurray
+m3,5,mhhunter
+m3,6,mja
+m3,7,neilm
+m3,8,weiksner
+m3,97,invalid case
+m3,98,skipped
+m3,99,not invited
+m4,1,asiu
+m4,2,chutcher
+m4,3,jmcgrady
+m4,4,kjmurray
+m4,5,mhhunter
+m4,6,mja
+m4,7,neilm
+m4,8,weiksner
+m4,97,invalid case
+m4,98,skipped
+m4,99,not invited
+m5,1,asiu
+m5,2,chutcher
+m5,3,jmcgrady
+m5,4,kjmurray
+m5,5,mhhunter
+m5,6,mja
+m5,7,neilm
+m5,8,weiksner
+m5,97,invalid case
+m5,98,skipped
+m5,99,not invited
+state,1,al
+state,2,ak
+state,4,az
+state,5,ar
+state,6,ca
+state,8,co
+state,9,ct
+state,10,de
+state,11,dc
+state,12,fl
+state,13,ga
+state,15,hi
+state,16,id
+state,17,il
+state,18,in
+state,19,ia
+state,20,ks
+state,21,ky
+state,22,la
+state,23,me
+state,24,md
+state,25,ma
+state,26,mi
+state,27,mn
+state,28,ms
+state,29,mo
+state,30,mt
+state,31,ne
+state,32,nv
+state,33,nh
+state,34,nj
+state,35,nm
+state,36,ny
+state,37,nc
+state,38,nd
+state,39,oh
+state,40,ok
+state,41,or
+state,42,pa
+state,44,ri
+state,45,sc
+state,46,sd
+state,47,tn
+state,48,tx
+state,49,ut
+state,50,vt
+state,51,va
+state,53,wa
+state,54,wv
+state,55,wi
+state,56,wy
+state,60,as
+state,66,gu
+state,72,pr
+state,78,vi
+pid7,1,strong democrat
+pid7,2,democrat
+pid7,3,lean democrat
+pid7,4,independent
+pid7,5,lean republican
+pid7,6,republican
+pid7,7,strong republican
+pid7,8,not sure
+pid7,98,skipped
+pid7,99,na
+gender,1,male
+gender,2,female
+gender,8,skipped
+gender,9,na
+race,1,white
+race,2,black
+race,3,latino
+race,4,asian
+race,5,native american
+race,6,mixed
+race,7,other
+race,8,skipped
+race,9,na
+educ,1,no hs
+educ,2,hs graduate
+educ,3,some college
+educ,4,2 year college
+educ,5,college graduate
+educ,6,postgrad
+educ,8,skipped
+educ,9,na
+marstat,1,married
+marstat,2,separated
+marstat,3,divorced
+marstat,4,widowed
+marstat,5,never married
+marstat,6,partnership
+marstat,8,skipped
+marstat,9,na
+religion,1,protestant
+religion,2,catholic
+religion,3,jewish
+religion,4,muslim
+religion,5,none
+religion,6,other
+religion,8,skipped
+religion,9,na
+churatd,1,once a week
+churatd,2,few times a month
+churatd,3,once a month
+churatd,4,never
+churatd,5,dk
+churatd,8,skipped
+churatd,9,na
+ideo5,1,very liberal
+ideo5,2,liberal
+ideo5,3,moderate
+ideo5,4,conservative
+ideo5,5,very conservative
+ideo5,8,not sure
+ideo5,9,na
+control,1,treatment
+control,2,control

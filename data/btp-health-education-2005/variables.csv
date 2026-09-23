@@ -1,0 +1,841 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+caseid_original,double,numeric,float64,case identifier,%12.0g,,,TRUE,Retained
+q1,double,haven_labelled|vctrs_vctr|double,float64,q1pre:  community public school grade,%8.0g,,,TRUE,Retained
+q2,double,haven_labelled|vctrs_vctr|double,float64,q2pre:  national public school grade,%8.0g,,,TRUE,Retained
+q3,double,haven_labelled|vctrs_vctr|double,float64,q3pre:  reform current or find alternative system,%8.0g,,,TRUE,Retained
+q4,double,haven_labelled|vctrs_vctr|double,float64,q4pre:  emphasis on standardized testing,%8.0g,,,TRUE,Retained
+q5,double,haven_labelled|vctrs_vctr|double,float64,q5pre:  increase standardized testing,%8.0g,,,TRUE,Retained
+q6,double,haven_labelled|vctrs_vctr|double,float64,q6pre:  state or local decision on testing,%8.0g,,,TRUE,Retained
+q7_a,double,haven_labelled|vctrs_vctr|double,float64,q7apre:  fund charter schools with public school money,%8.0g,,,TRUE,Retained
+q7_b,double,haven_labelled|vctrs_vctr|double,float64,q7bpre:  provide vouchers to defer private school cost,%8.0g,,,TRUE,Retained
+q7_c,double,haven_labelled|vctrs_vctr|double,float64,q7cpre:  provide more money to troubled schools,%8.0g,,,TRUE,Retained
+q7_d,double,haven_labelled|vctrs_vctr|double,float64,q7dpre:  provide more money for smaller classrooms,%8.0g,,,TRUE,Retained
+q7_e,double,haven_labelled|vctrs_vctr|double,float64,q7epre:  provide more money for new technology,%8.0g,,,TRUE,Retained
+q7_f,double,haven_labelled|vctrs_vctr|double,float64,q7fpre:  provide more money to pay teachers,%8.0g,,,TRUE,Retained
+q8_a,double,haven_labelled|vctrs_vctr|double,float64,q8apre:  importance of academic standards,%8.0g,,,TRUE,Retained
+q8_b,double,haven_labelled|vctrs_vctr|double,float64,q8bpre:  importance of class size,%8.0g,,,TRUE,Retained
+q8_c,double,haven_labelled|vctrs_vctr|double,float64,q8cpre:  importance of parental involvement,%8.0g,,,TRUE,Retained
+q8_d,double,haven_labelled|vctrs_vctr|double,float64,q8dpre:  importance of teacher quality,%8.0g,,,TRUE,Retained
+q8_e,double,haven_labelled|vctrs_vctr|double,float64,q8epre:  importance of school administration,%8.0g,,,TRUE,Retained
+q8_f,double,haven_labelled|vctrs_vctr|double,float64,q8fpre:  importance of funding,%8.0g,,,TRUE,Retained
+q8_g,double,haven_labelled|vctrs_vctr|double,float64,q8gpre:  importance of safety,%8.0g,,,TRUE,Retained
+q8_h,double,haven_labelled|vctrs_vctr|double,float64,q8hpre:  importance of technology,%8.0g,,,TRUE,Retained
+q9,double,haven_labelled|vctrs_vctr|double,float64,q9pre:  most important priority for schools,%8.0g,,,TRUE,Retained
+q10,double,haven_labelled|vctrs_vctr|double,float64,q10pre:  second most important priority for schools,%8.0g,,,TRUE,Retained
+q11,double,haven_labelled|vctrs_vctr|double,float64,q11pre:  washington representatives share respondent educat,%8.0g,,,TRUE,Retained
+q12,double,haven_labelled|vctrs_vctr|double,float64,q12pre:  nclb approval,%8.0g,,,TRUE,Retained
+q13,double,haven_labelled|vctrs_vctr|double,float64,q13pre:  effect of money on education,%8.0g,,,TRUE,Retained
+q14,double,haven_labelled|vctrs_vctr|double,float64,q14pre:  class size affects student performance,%8.0g,,,TRUE,Retained
+q15,double,haven_labelled|vctrs_vctr|double,float64,q15pre:  us rank in math skills,%8.0g,,,TRUE,Retained
+q16,double,haven_labelled|vctrs_vctr|double,float64,q16pre:  ease of foreign obtainment of work permits,%8.0g,,,TRUE,Retained
+q17,double,haven_labelled|vctrs_vctr|double,float64,q17pre:  gap between minorities and whites,%8.0g,,,TRUE,Retained
+q19_a,double,haven_labelled|vctrs_vctr|double,float64,q19apre:  importance of health insurance cost,%8.0g,,,TRUE,Retained
+q19_b,double,haven_labelled|vctrs_vctr|double,float64,q19bpre:  importance of uninsured americans,%8.0g,,,TRUE,Retained
+q19_c,double,haven_labelled|vctrs_vctr|double,float64,q19cpre:  importance of prescription drug cost,%8.0g,,,TRUE,Retained
+q19_d,double,haven_labelled|vctrs_vctr|double,float64,q19dpre:  importance of medical errors,%8.0g,,,TRUE,Retained
+q19_e,double,haven_labelled|vctrs_vctr|double,float64,q19epre:  importance of malpractice system,%8.0g,,,TRUE,Retained
+q19_f,double,haven_labelled|vctrs_vctr|double,float64,q19fpre:  importance of quality of services to the insured,%8.0g,,,TRUE,Retained
+q20,double,haven_labelled|vctrs_vctr|double,float64,q20pre:  most important priority for health care,%8.0g,,,TRUE,Retained
+q21,double,haven_labelled|vctrs_vctr|double,float64,q21pre:  second most important priority for health care,%8.0g,,,TRUE,Retained
+q22,double,haven_labelled|vctrs_vctr|double,float64,q22pre:  washington representatives share respondent health,%8.0g,,,TRUE,Retained
+q23,double,haven_labelled|vctrs_vctr|double,float64,q23pre:  would respondent pay more so others have coverage,%8.0g,,,TRUE,Retained
+q24a,double,haven_labelled|vctrs_vctr|double,float64,q24apre:  single payer system adoption,%8.0g,,,TRUE,Retained
+q24b,double,haven_labelled|vctrs_vctr|double,float64,q24bpre:  require employer-sponsored coverage,%8.0g,,,TRUE,Retained
+q24c,double,haven_labelled|vctrs_vctr|double,float64,q24cpre:  require individual coverage,%8.0g,,,TRUE,Retained
+q24d,double,haven_labelled|vctrs_vctr|double,float64,q24dpre:  financial assistance to the uninsured,%8.0g,,,TRUE,Retained
+q24e,double,haven_labelled|vctrs_vctr|double,float64,q24epre:  financial breaks for businesses to offset insuran,%8.0g,,,TRUE,Retained
+q24f,double,haven_labelled|vctrs_vctr|double,float64,q24fpre:  increase medicare and medicaid funding,%8.0g,,,TRUE,Retained
+q25_a,double,haven_labelled|vctrs_vctr|double,float64,q25apre:  effectiveness of increasing co-pays,%8.0g,,,TRUE,Retained
+q25_b,double,haven_labelled|vctrs_vctr|double,float64,q25bpre:  effectiveness of relying on managed care,%8.0g,,,TRUE,Retained
+q25_c,double,haven_labelled|vctrs_vctr|double,float64,q25cpre:  effectiveness of limiting government funds,%8.0g,,,TRUE,Retained
+q25_d,double,haven_labelled|vctrs_vctr|double,float64,q25dpre:  effectiveness of increasing government control,%8.0g,,,TRUE,Retained
+q26,double,haven_labelled|vctrs_vctr|double,float64,q26pre:  number of uninsured americans,%8.0g,,,TRUE,Retained
+q27,double,haven_labelled|vctrs_vctr|double,float64,q27pre:  number of aging,%8.0g,,,TRUE,Retained
+q28,double,haven_labelled|vctrs_vctr|double,float64,q28pre:  share of uninsured from low-income,%8.0g,,,TRUE,Retained
+q29a,double,haven_labelled|vctrs_vctr|double,float64,q29apre:  first priority to help the worst off,%8.0g,,,TRUE,Retained
+q29b,double,haven_labelled|vctrs_vctr|double,float64,q29bpre:  first priority to help country prosper,%8.0g,,,TRUE,Retained
+q29c,double,haven_labelled|vctrs_vctr|double,float64,q29cpre:  first priority to let people make choices,%8.0g,,,TRUE,Retained
+q30a,double,haven_labelled|vctrs_vctr|double,float64,q30apre:  issues are too complicated,%8.0g,,,TRUE,Retained
+q30b,double,haven_labelled|vctrs_vctr|double,float64,q30bpre:  public officials care about people like me,%8.0g,,,TRUE,Retained
+q30c,double,haven_labelled|vctrs_vctr|double,float64,q30cpre:  people like me do not have a say,%8.0g,,,TRUE,Retained
+q32,double,haven_labelled|vctrs_vctr|double,float64,q32:  school age children,%8.0g,,,TRUE,Retained
+q33,double,haven_labelled|vctrs_vctr|double,float64,q33pre:  people with views different from mine have good re,%8.0g,,,TRUE,Retained
+q34,double,haven_labelled|vctrs_vctr|double,float64,q34pre:  3 point party identification,%8.0g,,,TRUE,Retained
+q34a,double,haven_labelled|vctrs_vctr|double,float64,q34apre:  7 point party identification,%8.0g,,,TRUE,Retained
+q35,double,haven_labelled|vctrs_vctr|double,float64,q35pre:  7 point ideology,%8.0g,,,TRUE,Retained
+q36,double,haven_labelled|vctrs_vctr|double,float64,q36pre:  tv news in the past 7 days,%8.0g,,,TRUE,Retained
+q37,double,haven_labelled|vctrs_vctr|double,float64,q37pre:  newspaper in the past 7 days,%8.0g,,,TRUE,Retained
+q38,double,haven_labelled|vctrs_vctr|double,float64,q38pre:  newspaper online in the past 7 days,%8.0g,,,TRUE,Retained
+q39,double,haven_labelled|vctrs_vctr|double,float64,q39pre:  frequency of conversations about political affairs,%8.0g,,,TRUE,Retained
+q40,double,haven_labelled|vctrs_vctr|double,float64,q40pre:  interest in us politics,%8.0g,,,TRUE,Retained
+q41a,double,haven_labelled|vctrs_vctr|double,float64,q41a:  religious services attendance,%8.0g,,,TRUE,Retained
+q1post,double,haven_labelled|vctrs_vctr|double,float64,q1post:  community public school grade,%8.0g,,,TRUE,Retained
+q2post,double,haven_labelled|vctrs_vctr|double,float64,q2post:  national public school grade,%8.0g,,,TRUE,Retained
+q3post,double,haven_labelled|vctrs_vctr|double,float64,q3post:  reform current or find alternative system,%8.0g,,,TRUE,Retained
+q4post,double,haven_labelled|vctrs_vctr|double,float64,q4post:  emphasis on standardized testing,%8.0g,,,TRUE,Retained
+q5post_m,double,haven_labelled|vctrs_vctr|double,float64,q5post:  increase standardized testing,%8.0g,,,TRUE,Retained
+q6post,double,haven_labelled|vctrs_vctr|double,float64,q6post:  state or local decision on testing,%8.0g,,,TRUE,Retained
+q7post_a,double,haven_labelled|vctrs_vctr|double,float64,q7apost:  fund charter schools with public school money,%8.0g,,,TRUE,Retained
+q7post_b,double,haven_labelled|vctrs_vctr|double,float64,q7bpost:  provide vouchers to defer private school cost,%8.0g,,,TRUE,Retained
+q7post_c,double,haven_labelled|vctrs_vctr|double,float64,q7cpost:  provide more money to troubled schools,%8.0g,,,TRUE,Retained
+q7post_d,double,haven_labelled|vctrs_vctr|double,float64,q7dpost:  provide more money for smaller classrooms,%8.0g,,,TRUE,Retained
+q7post_e,double,haven_labelled|vctrs_vctr|double,float64,q7epost:  provide more money for new technology,%8.0g,,,TRUE,Retained
+q7post_f,double,haven_labelled|vctrs_vctr|double,float64,q7fpost:  provide more money to pay teachers,%8.0g,,,TRUE,Retained
+q8post_a,double,haven_labelled|vctrs_vctr|double,float64,q8apost:  importance of academic standards,%8.0g,,,TRUE,Retained
+q8post_b,double,haven_labelled|vctrs_vctr|double,float64,q8bpost:  importance of class size,%8.0g,,,TRUE,Retained
+q8post_c,double,haven_labelled|vctrs_vctr|double,float64,q8cpost:  importance of parental involvement,%8.0g,,,TRUE,Retained
+q8post_d,double,haven_labelled|vctrs_vctr|double,float64,q8dpost:  importance of teacher quality,%8.0g,,,TRUE,Retained
+q8post_e,double,haven_labelled|vctrs_vctr|double,float64,q8epost:  importance of school administration,%8.0g,,,TRUE,Retained
+q8post_f,double,haven_labelled|vctrs_vctr|double,float64,q8fpost:  importance of funding,%8.0g,,,TRUE,Retained
+q8post_g,double,haven_labelled|vctrs_vctr|double,float64,q8gpost:  importance of safety,%8.0g,,,TRUE,Retained
+q8post_h,double,haven_labelled|vctrs_vctr|double,float64,q8hpost:  importance of technology,%8.0g,,,TRUE,Retained
+q9post,double,haven_labelled|vctrs_vctr|double,float64,q9post:  most important priority for schools,%8.0g,,,TRUE,Retained
+q10post,double,haven_labelled|vctrs_vctr|double,float64,q10post:  second most important priority for schools,%8.0g,,,TRUE,Retained
+q11post,double,haven_labelled|vctrs_vctr|double,float64,q11post:  washington representatives share respondent educat,%8.0g,,,TRUE,Retained
+q12post,double,haven_labelled|vctrs_vctr|double,float64,q12post:  nclb approval,%8.0g,,,TRUE,Retained
+q13post,double,haven_labelled|vctrs_vctr|double,float64,q13post:  effect of money on education,%8.0g,,,TRUE,Retained
+q14post,double,haven_labelled|vctrs_vctr|double,float64,q14post:  class size affects student performance,%8.0g,,,TRUE,Retained
+q15post,double,haven_labelled|vctrs_vctr|double,float64,q15post:  us rank in math skills,%8.0g,,,TRUE,Retained
+q16post,double,haven_labelled|vctrs_vctr|double,float64,q16post:  ease of foreign obtainment of work permits,%8.0g,,,TRUE,Retained
+q17post,double,haven_labelled|vctrs_vctr|double,float64,q17post:  gap between minorities and whites,%8.0g,,,TRUE,Retained
+q19post,double,haven_labelled|vctrs_vctr|double,float64,q19apost:  importance of health insurance cost,%8.0g,,,TRUE,Retained
+q19pos_a,double,haven_labelled|vctrs_vctr|double,float64,q19bpost:  importance of uninsured americans,%8.0g,,,TRUE,Retained
+q19pos_b,double,haven_labelled|vctrs_vctr|double,float64,q19cpost:  importance of prescription drug cost,%8.0g,,,TRUE,Retained
+q19pos_c,double,haven_labelled|vctrs_vctr|double,float64,q19dpost:  importance of medical errors,%8.0g,,,TRUE,Retained
+q19pos_d,double,haven_labelled|vctrs_vctr|double,float64,q19epost:  importance of malpractice system,%8.0g,,,TRUE,Retained
+q19pos_e,double,haven_labelled|vctrs_vctr|double,float64,q19fpost:  importance of quality of services to the insured,%8.0g,,,TRUE,Retained
+q20post,double,haven_labelled|vctrs_vctr|double,float64,q20post:  most important priority for health care,%8.0g,,,TRUE,Retained
+q21post,double,haven_labelled|vctrs_vctr|double,float64,q21post:  second most important priority for health care,%8.0g,,,TRUE,Retained
+q22post,double,haven_labelled|vctrs_vctr|double,float64,q22post:  washington representatives share respondent health,%8.0g,,,TRUE,Retained
+q23post,double,haven_labelled|vctrs_vctr|double,float64,q23post:  would respondent pay more so others have coverage,%8.0g,,,TRUE,Retained
+q24apost,double,haven_labelled|vctrs_vctr|double,float64,q24apost:  single payer system adoption,%8.0g,,,TRUE,Retained
+q24bpost,double,haven_labelled|vctrs_vctr|double,float64,q24bpost:  require employer-sponsored coverage,%8.0g,,,TRUE,Retained
+q24cpost,double,haven_labelled|vctrs_vctr|double,float64,q24cpost:  require individual coverage,%8.0g,,,TRUE,Retained
+q24dpost,double,haven_labelled|vctrs_vctr|double,float64,q24dpost:  financial assistance to the uninsured,%8.0g,,,TRUE,Retained
+q24epost,double,haven_labelled|vctrs_vctr|double,float64,q24epost:  financial breaks for businesses to offset insuran,%8.0g,,,TRUE,Retained
+q24fpost,double,haven_labelled|vctrs_vctr|double,float64,q24fpost:  increase medicare and medicaid funding,%8.0g,,,TRUE,Retained
+q25post,double,haven_labelled|vctrs_vctr|double,float64,q25apost:  effectiveness of increasing co-pays,%8.0g,,,TRUE,Retained
+q25pos_a,double,haven_labelled|vctrs_vctr|double,float64,q25bpost:  effectiveness of relying on managed care,%8.0g,,,TRUE,Retained
+q25pos_b,double,haven_labelled|vctrs_vctr|double,float64,q25cpost:  effectiveness of limiting government funds,%8.0g,,,TRUE,Retained
+q25pos_c,double,haven_labelled|vctrs_vctr|double,float64,q25dpost:  effectiveness of increasing government control,%8.0g,,,TRUE,Retained
+q26post,double,haven_labelled|vctrs_vctr|double,float64,q26post:  number of uninsured americans,%8.0g,,,TRUE,Retained
+q27post,double,haven_labelled|vctrs_vctr|double,float64,q27post:  number of aging,%8.0g,,,TRUE,Retained
+q28post,double,haven_labelled|vctrs_vctr|double,float64,q28post:  share of uninsured from low-income,%8.0g,,,TRUE,Retained
+q29apost,double,haven_labelled|vctrs_vctr|double,float64,q29apost:  first priority to help the worst off,%8.0g,,,TRUE,Retained
+q29bpost,double,haven_labelled|vctrs_vctr|double,float64,q29bpost:  first priority to help country prosper,%8.0g,,,TRUE,Retained
+q29cpost,double,haven_labelled|vctrs_vctr|double,float64,q29cpost:  first priority to let people make choices,%8.0g,,,TRUE,Retained
+q30apos0,double,haven_labelled|vctrs_vctr|double,float64,q30apost:  issues are too complicated,%8.0g,,,TRUE,Retained
+q30bpost,double,haven_labelled|vctrs_vctr|double,float64,q30bpost:  public officials care about people like me,%8.0g,,,TRUE,Retained
+q30cpost,double,haven_labelled|vctrs_vctr|double,float64,q30cpost:  people like me do not have a say,%8.0g,,,TRUE,Retained
+q33post,double,haven_labelled|vctrs_vctr|double,float64,q33post:  people with views different from mine have good re,%8.0g,,,TRUE,Retained
+q34post,double,haven_labelled|vctrs_vctr|double,float64,q34post:  3 point party identification,%8.0g,,,TRUE,Retained
+q34apost,double,haven_labelled|vctrs_vctr|double,float64,q34apost:  7 point party identification,%8.0g,,,TRUE,Retained
+q35post,double,haven_labelled|vctrs_vctr|double,float64,q35post:  7 point ideology,%8.0g,,,TRUE,Retained
+q36post,double,haven_labelled|vctrs_vctr|double,float64,q36post:  tv news in the past 7 days,%8.0g,,,TRUE,Retained
+q37post,double,haven_labelled|vctrs_vctr|double,float64,q37post:  newspaper in the past 7 days,%8.0g,,,TRUE,Retained
+q38post,double,haven_labelled|vctrs_vctr|double,float64,q38post:  newspaper online in the past 7 days,%8.0g,,,TRUE,Retained
+q39post,double,haven_labelled|vctrs_vctr|double,float64,q39post:  frequency of conversations about political affairs,%8.0g,,,TRUE,Retained
+q40post,double,haven_labelled|vctrs_vctr|double,float64,q40post:  interest in us politics,%8.0g,,,TRUE,Retained
+q41post,double,haven_labelled|vctrs_vctr|double,float64,q41post: full-time employment,%8.0g,,,TRUE,Retained
+q42post,double,haven_labelled|vctrs_vctr|double,float64,q42post: status of those not employed full-time,%8.0g,,,TRUE,Retained
+q43post,double,haven_labelled|vctrs_vctr|double,float64,q43post: classification of respondent employer,%8.0g,,,TRUE,Retained
+q44post,character,character,,q44post: description of occupation,%64s,,,FALSE,Excluded; see source_field_exclusions
+q45post,character,character,,q45post: description of job duties,%64s,,,FALSE,Excluded; see source_field_exclusions
+z1apost,double,haven_labelled|vctrs_vctr|double,float64,z1apost:  value of the overall experience,%8.0g,,,TRUE,Retained
+z1bpost,double,haven_labelled|vctrs_vctr|double,float64,z1bpost:  value of the briefing document,%8.0g,,,TRUE,Retained
+z1cpost,double,haven_labelled|vctrs_vctr|double,float64,z1cpost:  value of the online discussions,%8.0g,,,TRUE,Retained
+z2post_a,double,haven_labelled|vctrs_vctr|double,float64,z2apost:  entering or staying in meeting difficulties,%8.0g,,,TRUE,Retained
+z2post_b,double,haven_labelled|vctrs_vctr|double,float64,z2bpost:  audio difficulties,%8.0g,,,TRUE,Retained
+z2post_c,double,haven_labelled|vctrs_vctr|double,float64,z2cpost:  other difficulties,%8.0g,,,TRUE,Retained
+z3post,double,haven_labelled|vctrs_vctr|double,float64,z3post:  ease or difficulty of the online software,%8.0g,,,TRUE,Retained
+s1,double,haven_labelled|vctrs_vctr|double,float64,session 1 day/time,%8.0g,,,TRUE,Retained
+s2,double,haven_labelled|vctrs_vctr|double,float64,session 2 day/time,%8.0g,,,TRUE,Retained
+s3,double,haven_labelled|vctrs_vctr|double,float64,session 3 day/time,%8.0g,,,TRUE,Retained
+s4,double,haven_labelled|vctrs_vctr|double,float64,session 4 day/time,%8.0g,,,TRUE,Retained
+s5,double,haven_labelled|vctrs_vctr|double,float64,session 5 day/time,%8.0g,,,TRUE,Retained
+stotal,double,numeric,float64,sessions attended,%8.0g,,,TRUE,Retained
+m1,double,haven_labelled|vctrs_vctr|double,float64,moderator wk 1,%8.0g,,,TRUE,Retained
+m2,double,haven_labelled|vctrs_vctr|double,float64,moderator wk 2,%8.0g,,,TRUE,Retained
+m3,double,haven_labelled|vctrs_vctr|double,float64,moderator wk 3,%8.0g,,,TRUE,Retained
+m4,double,haven_labelled|vctrs_vctr|double,float64,moderator wk 4,%8.0g,,,TRUE,Retained
+m5,double,haven_labelled|vctrs_vctr|double,float64,moderator wk 5,%8.0g,,,TRUE,Retained
+city,character,character,,respondent city at time of registration,%20s,,,FALSE,Excluded; see source_field_exclusions
+state,double,haven_labelled|vctrs_vctr|double,float64,respondent state at time of registration,%8.0g,,,TRUE,Retained
+zip,character,character,,zip code,%10s,,,FALSE,Excluded; see source_field_exclusions
+pid7,double,haven_labelled|vctrs_vctr|double,float64,7-category party id,%8.0g,,,TRUE,Retained
+gender,double,haven_labelled|vctrs_vctr|double,float64,gender,%8.0g,,,TRUE,Retained
+race,double,haven_labelled|vctrs_vctr|double,float64,race,%8.0g,,,TRUE,Retained
+educ,double,haven_labelled|vctrs_vctr|double,float64,education,%8.0g,,,TRUE,Retained
+marstat,double,haven_labelled|vctrs_vctr|double,float64,marital status,%8.0g,,,TRUE,Retained
+religion,double,haven_labelled|vctrs_vctr|double,float64,religion,%8.0g,,,TRUE,Retained
+churatd,double,haven_labelled|vctrs_vctr|double,float64,religious attendance regularity,%8.0g,,,TRUE,Retained
+ideo5,double,haven_labelled|vctrs_vctr|double,float64,ideology,%8.0g,,,TRUE,Retained
+birthyr,double,numeric,float64,birth year,%8.0g,,,TRUE,Retained
+control,double,haven_labelled|vctrs_vctr|double,float64,treatment or control,%8.0g,,,TRUE,Retained
+q7_cr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q7_dr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q7_er,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q7_fr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q7post_0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q7post_1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q7post_2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q7post_3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q23r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q23postr,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q24fr,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q24fpos0,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q24dr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q24dpos0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q24er,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q24epos0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q4r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q4postr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q5r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q5postr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q12r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q12postr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q7_ar,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q7post_4,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q7_br,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q7post_5,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q24ar,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q24apos0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q24br,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q24bpos0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q24cr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q24cpos0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q29ar,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q29apos0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q29br,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q29bpos0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q29cr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q29cpos0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q15r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q15postr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q16r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q16postr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q17r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q17postr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q30ar,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q30post0,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q30br,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q30postb,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q30cr,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q30postc,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q36r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q36postr,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q37r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q37postr,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q38r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q38postr,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q39r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q39postr,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q40r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q40postr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q33r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q33postr,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q25_ar,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q25pos_0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q25_br,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q25pos_1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q25_cr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q25pos_2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q1r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q1postr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q2r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q2postr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q3r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q3postr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q26r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q26postr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q27r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q27postr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q28r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q28postr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t1pubspe,double,numeric,float64,t1 public spirited education index,%9.0g,,,TRUE,Retained
+t2pubspe,double,numeric,float64,t2 public spirited education index,%9.0g,,,TRUE,Retained
+t1pubsph,double,numeric,float64,t1 public spirited health index,%9.0g,,,TRUE,Retained
+t2pubsph,double,numeric,float64,t2 public spirited health index,%9.0g,,,TRUE,Retained
+difpubsp,double,numeric,float64,,%9.0g,,,TRUE,Retained
+difpubs0,double,numeric,float64,,%9.0g,,,TRUE,Retained
+difknow,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1eff,double,numeric,float64,t1 efficacy index,%9.0g,,,TRUE,Retained
+t2eff,double,numeric,float64,t2 efficacy index,%9.0g,,,TRUE,Retained
+difeff,double,numeric,float64,,%9.0g,,,TRUE,Retained
+s1r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1rr0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2rr0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3rr0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4rr0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5rr0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+sessed,double,numeric,float64,,%8.0g,,,TRUE,Retained
+sesshth,double,numeric,float64,,%8.0g,,,TRUE,Retained
+sess2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+sess3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+mtg1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+mtg2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+mtg3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+mtg4,double,numeric,float64,,%8.0g,,,TRUE,Retained
+mtg5,double,numeric,float64,,%8.0g,,,TRUE,Retained
+groupnum,double,numeric,float64,,%8.0g,,,TRUE,Retained
+filter,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t1q3,double,numeric,float64," T1 Reforum Public Schools Index, 1=reform",%8.0g,,,TRUE,Retained
+t2q3,double,numeric,float64," T2 Reforum Public Schools Index, 1=reform",%8.0g,,,TRUE,Retained
+t1q7a,double,numeric,float64,t1 recoded q7a,%9.0g,,,TRUE,Retained
+t2q7a,double,numeric,float64,t2 recoded q7a,%9.0g,,,TRUE,Retained
+t1q7b,double,numeric,float64,t1 recoded q7b,%9.0g,,,TRUE,Retained
+t2q7b,double,numeric,float64,t2 recoded q7b,%9.0g,,,TRUE,Retained
+t2fcvsch,double,numeric,float64,t2 fund charter & voucher schools index,%9.0g,,,TRUE,Retained
+t1fcvsch,double,numeric,float64,t1 fund charter & voucher schools index,%9.0g,,,TRUE,Retained
+t1q7c,double,numeric,float64,t1 recoded q7c,%9.0g,,,TRUE,Retained
+t2q7c,double,numeric,float64,t2 recoded q7c,%9.0g,,,TRUE,Retained
+t1q7d,double,numeric,float64,t1 recoded q7d,%9.0g,,,TRUE,Retained
+t1q7e,double,numeric,float64,t1 recoded q7e,%9.0g,,,TRUE,Retained
+t2q7e,double,numeric,float64,t2 recoded q7e,%9.0g,,,TRUE,Retained
+t2q7d,double,numeric,float64,t2 recoded q7d,%9.0g,,,TRUE,Retained
+t1q7f,double,numeric,float64,t1 recoded q7f,%9.0g,,,TRUE,Retained
+t2q7f,double,numeric,float64,t2 recoded q7f,%9.0g,,,TRUE,Retained
+t1q4,double,numeric,float64,t1 recoded q4,%9.0g,,,TRUE,Retained
+t2q4,double,numeric,float64,t2 recoded q4,%9.0g,,,TRUE,Retained
+t2q5,double,numeric,float64,t2 recoded q5,%9.0g,,,TRUE,Retained
+t1q5,double,numeric,float64,t1 recoded q5,%9.0g,,,TRUE,Retained
+t1q6,double,numeric,float64,"T1 Testing, State or Local Control? Index",%8.0g,,,TRUE,Retained
+t2q6,double,numeric,float64,"T2 Testing, State or Local Control? Index",%8.0g,,,TRUE,Retained
+t1q12,double,numeric,float64,T1 NCLB Index,%9.0g,,,TRUE,Retained
+t2q12,double,numeric,float64,T2 NCLB Index,%9.0g,,,TRUE,Retained
+t1q19a,double,numeric,float64,T1 Health Insurance Costs Index,%9.0g,,,TRUE,Retained
+t2q19b,double,numeric,float64,T2 Americans w/o Health Insurance Index,%9.0g,,,TRUE,Retained
+t1q19b,double,numeric,float64,T1 Americans w/o Health Insurance Index,%9.0g,,,TRUE,Retained
+t2q19c,double,numeric,float64,T2 Prescription Drug Costs Index,%9.0g,,,TRUE,Retained
+t1q19c,double,numeric,float64,T1 Prescription Drug Costs Index,%9.0g,,,TRUE,Retained
+t2q19d,double,numeric,float64,T2 Medical Errors/Mistakes Index,%9.0g,,,TRUE,Retained
+t1q19d,double,numeric,float64,T1 Medical Errors/Mistakes Index,%9.0g,,,TRUE,Retained
+t2q19e,double,numeric,float64,T2 Medical Malpractice System Index,%9.0g,,,TRUE,Retained
+t1q19e,double,numeric,float64,T1 Medical Malpractice System Index,%9.0g,,,TRUE,Retained
+t2q19f,double,numeric,float64,T2 Quality of Care for Insured Index,%9.0g,,,TRUE,Retained
+t1q23,double,numeric,float64,T1 Willingness to pay more for others Index,%9.0g,,,TRUE,Retained
+t2q23,double,numeric,float64,T2 Willingness to pay more for others Index,%9.0g,,,TRUE,Retained
+t1q24a,double,numeric,float64,T1 Single Payer System Index,%9.0g,,,TRUE,Retained
+t2q24a,double,numeric,float64,T2 Single Payer System Index,%9.0g,,,TRUE,Retained
+t1q24b,double,numeric,float64,T1 Employer Pays Index,%9.0g,,,TRUE,Retained
+t2q24b,double,numeric,float64,T2 Employer Pays Index,%9.0g,,,TRUE,Retained
+t1q24e,double,numeric,float64,T1 Govt Tax Incentives Index,%9.0g,,,TRUE,Retained
+t2q24e,double,numeric,float64,T2 Govt Tax Incentives Index,%9.0g,,,TRUE,Retained
+t1q24c,double,numeric,float64,T1 Individual Pays Index,%9.0g,,,TRUE,Retained
+t2q24c,double,numeric,float64,T2 Individual Pays Index,%9.0g,,,TRUE,Retained
+t1q24d,double,numeric,float64,T1 Govt Provide Incentives for Insurance Index,%9.0g,,,TRUE,Retained
+t2q24d,double,numeric,float64,T2 Govt Provide Incentives for Insurance Index,%9.0g,,,TRUE,Retained
+t1q8a,double,numeric,float64,t1 recoded q8a,%9.0g,,,TRUE,Retained
+t2q8a,double,numeric,float64,t2 recoded q8a,%9.0g,,,TRUE,Retained
+t1q8b,double,numeric,float64,t1 recoded q8b,%9.0g,,,TRUE,Retained
+t2q8b,double,numeric,float64,t2 recoded q8b,%9.0g,,,TRUE,Retained
+t1q8c,double,numeric,float64,t1 recoded q8c,%9.0g,,,TRUE,Retained
+t2q8c,double,numeric,float64,t2 recoded q8c,%9.0g,,,TRUE,Retained
+t1q8d,double,numeric,float64,t1 recoded q8d,%9.0g,,,TRUE,Retained
+t2q8d,double,numeric,float64,t2 recoded q8d,%9.0g,,,TRUE,Retained
+t1q8e,double,numeric,float64,t1 recoded q8e,%9.0g,,,TRUE,Retained
+t2q8e,double,numeric,float64,t2 recoded q8e,%9.0g,,,TRUE,Retained
+t1q8f,double,numeric,float64,t1 recoded q8f,%9.0g,,,TRUE,Retained
+t2q8f,double,numeric,float64,t2 recoded q8f,%9.0g,,,TRUE,Retained
+t1q8g,double,numeric,float64,t1 recoded q8g,%9.0g,,,TRUE,Retained
+t2q8g,double,numeric,float64,t2 recoded q8g,%9.0g,,,TRUE,Retained
+t1q8h,double,numeric,float64,t1 recoded q8h,%9.0g,,,TRUE,Retained
+t2q8h,double,numeric,float64,t2 recoded q8h,%9.0g,,,TRUE,Retained
+t1q29a,double,numeric,float64,t1 recode q29a,%9.0g,,,TRUE,Retained
+t2q29a,double,numeric,float64,t2 recode q29a,%9.0g,,,TRUE,Retained
+t1q29b,double,numeric,float64,t1 recode q29b,%9.0g,,,TRUE,Retained
+t2q29b,double,numeric,float64,t2 recode q29b,%9.0g,,,TRUE,Retained
+t1q29c,double,numeric,float64,t1 recode q29c,%9.0g,,,TRUE,Retained
+t2q29c,double,numeric,float64,t2 recode q29c,%9.0g,,,TRUE,Retained
+t1q1,double,numeric,float64,t1 recoded q1,%8.0g,,,TRUE,Retained
+t2q1,double,numeric,float64,t2 recoded q1,%8.0g,,,TRUE,Retained
+t1q2,double,numeric,float64,t1 recoded q2,%8.0g,,,TRUE,Retained
+t2q2,double,numeric,float64,t2 recoded q2,%8.0g,,,TRUE,Retained
+t1q13,double,numeric,float64,t1 recoded q13,%9.0g,,,TRUE,Retained
+t2q13,double,numeric,float64,t2 recoded q13,%9.0g,,,TRUE,Retained
+t1q14,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q14,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q24f,double,numeric,float64,T1 Increase Funding for Medicare and Medicaid Index,%9.0g,,,TRUE,Retained
+t2q24f,double,numeric,float64,T2 Increase Funding for Medicare and Medicaid Index,%9.0g,,,TRUE,Retained
+t1q25a,double,numeric,float64,"t1 recoded q25a, 0=very ineffective, 1=very effective",%9.0g,,,TRUE,Retained
+t2q25b,double,numeric,float64,"t2 recoded q25b, 0=very ineffective, 1=very effective",%9.0g,,,TRUE,Retained
+t1q25b,double,numeric,float64,"t1 recoded q25b, 0=very ineffective, 1=very effective",%9.0g,,,TRUE,Retained
+t2q25c,double,numeric,float64,"t2 recoded q25c, 0=very ineffective, 1=very effective",%9.0g,,,TRUE,Retained
+t1q25c,double,numeric,float64,"t1 recoded q25c, 0=very ineffective, 1=very effective",%9.0g,,,TRUE,Retained
+t2q25d,double,numeric,float64,"t2 recoded q25d, 0=very ineffective, 1=very effective",%9.0g,,,TRUE,Retained
+t1q25d,double,numeric,float64,"t1 recoded q25d, 0=very ineffective, 1=very effective",%9.0g,,,TRUE,Retained
+t2q25a,double,numeric,float64,"t2 recoded q25a, 0=very ineffective, 1=very effective",%9.0g,,,TRUE,Retained
+t2values,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1values,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2mmtaxe,double,numeric,float64,t2 more money from taxes index,%9.0g,,,TRUE,Retained
+t1mmtaxe,double,numeric,float64,t1 more money from taxes index,%9.0g,,,TRUE,Retained
+t1q4r,double,numeric,float64,"t1 recoded q4, reversed, 1=too much, 0 = not enough",%9.0g,,,TRUE,Retained
+t2q4r,double,numeric,float64,"t2 recoded q4, reversed, 1=too much, 0 = not enough",%9.0g,,,TRUE,Retained
+t2stest,double,numeric,float64,t2 standardized tests,%9.0g,,,TRUE,Retained
+t1stest,double,numeric,float64,t1 standardized tests,%9.0g,,,TRUE,Retained
+q1difft2,double,numeric,float64, q1 difference between q1 at t2 and t1,%8.0g,,,TRUE,Retained
+q2difft2,double,numeric,float64, q2 difference between q2 at t2 and t1,%8.0g,,,TRUE,Retained
+t1diffq1,double,numeric,float64,t1 difference between q1 and q2,%8.0g,,,TRUE,Retained
+t2diffq1,double,numeric,float64,t2 difference between q1 and q2,%8.0g,,,TRUE,Retained
+t1q19f,double,numeric,float64,T1 Quality of Care for Insured Index,%9.0g,,,TRUE,Retained
+t2q19a,double,numeric,float64,T2 Health Insurance Costs Index,%9.0g,,,TRUE,Retained
+t1sumq19,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2sumq19,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q19ap,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q19ap,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q19bp,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q19bp,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q19cp,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q19cp,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q19dp,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q19dp,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q19ep,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q19ep,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q19fp,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2q19fp,double,numeric,float64,,%9.0g,,,TRUE,Retained
+mtg1c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+mtg2c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+mtg3c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+mtg4c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+mtg5c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+groupnumc,double,numeric,float64,,%8.0g,,,TRUE,Retained
+tgrp,double,numeric,float64,,%8.0g,,,TRUE,Retained
+caseid0,double,numeric,float64,,%12.0g,,,TRUE,Retained
+username,character,character,,,%16s,,,FALSE,Excluded; see source_field_exclusions
+s1_nspoken,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_words,double,numeric,float64,,%9.0g,,,TRUE,Retained
+s1_secs,double,numeric,float64,,%9.0g,,,TRUE,Retained
+s2_nspoken,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_words,double,numeric,float64,,%9.0g,,,TRUE,Retained
+s2_secs,double,numeric,float64,,%9.0g,,,TRUE,Retained
+s3_nspoken,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_words,double,numeric,float64,,%9.0g,,,TRUE,Retained
+s3_secs,double,numeric,float64,,%9.0g,,,TRUE,Retained
+s4_nspoken,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_words,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_secs,double,numeric,float64,,%9.0g,,,TRUE,Retained
+s5_nspoken,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_words,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_secs,double,numeric,float64,,%9.0g,,,TRUE,Retained
+male,double,numeric,float64,,%9.0g,,,TRUE,Retained
+racewh,double,numeric,float64,,%9.0g,,,TRUE,Retained
+educollege,double,numeric,float64,,%9.0g,,,TRUE,Retained
+rep,double,numeric,float64,,%9.0g,,,TRUE,Retained
+dem,double,numeric,float64,,%9.0g,,,TRUE,Retained
+ind,double,numeric,float64,,%9.0g,,,TRUE,Retained
+age,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q24a_r,double,numeric,float64,"T1 Q24A, reversed code 0=agree",%9.0g,,,TRUE,Retained
+t2q24a_r,double,numeric,float64,"T2 Q24A, reversed code 0=agree",%9.0g,,,TRUE,Retained
+pid,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1polconv,double,numeric,float64,T1 Political Conversations,%9.0g,,,TRUE,Retained
+s1_nj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_ij,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_qj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_sj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_agr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_agr2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_dis,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_dis2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_dis3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_que,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_qa,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_ed0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1_ed1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1ed0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1ed0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1ed1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s1ed1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_nj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_ij,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_qj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_sj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_agr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_agr2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_dis,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_dis2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_dis3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_que,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_qa,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_ed0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_ed1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_h0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2_h1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2ed0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2ed0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2ed1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2ed1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2h0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2h0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2h1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s2h1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_nj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_ij,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_qj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_sj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_agr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_agr2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_dis,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_dis2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_dis3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_que,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_qa,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_ed0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_ed1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_h0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3_h1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3ed0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3ed0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3ed1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3ed1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3h0inj0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3h0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3h1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s3h1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_nj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_ij,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_qj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_sj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_agr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_agr2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_dis,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_dis2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_dis4,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_que,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_qa,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_h0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4_h1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4h0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4h0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4h1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s4h1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_nj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_ij,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_qj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_sj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_agr,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_agr2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_dis,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_dis2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_dis3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_que,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_qa,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_ed0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_ed1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_h0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5_h1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5ed0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5ed0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5ed1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5ed1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5h0inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5h0sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5h1inj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+s5h1sqj,double,numeric,float64,,%8.0g,,,TRUE,Retained
+avgstments,double,numeric,float64,Average No. of Statements Across 5 sessions,%9.0g,,,TRUE,Retained
+totalstments,double,numeric,float64,Total No. of Statements Over 5 sessions,%9.0g,,,TRUE,Retained
+avgwords,double,numeric,float64,Average No. of Words Across 5 sessions,%9.0g,,,TRUE,Retained
+totalwords,double,numeric,float64,Total No. of Words Over 5 sessions,%9.0g,,,TRUE,Retained
+avgtime,double,numeric,float64,Average No. of Secs Across 5 sessions,%9.0g,,,TRUE,Retained
+totaltime,double,numeric,float64,Total No. of Secs Over 5 sessions,%9.0g,,,TRUE,Retained
+chknow,double,numeric,float64,,%9.0g,,,TRUE,Retained
+xtabgrps,double,numeric,float64,,%8.0g,,,TRUE,Retained
+grpno_526,double,numeric,float64,,%9.0g,,,TRUE,Retained
+totalnj,double,numeric,float64,"sum, no of nj over 5 sessions",%9.0g,,,TRUE,Retained
+totalqj,double,numeric,float64,"sum, no of qj over 5 sessions",%9.0g,,,TRUE,Retained
+totalsj,double,numeric,float64,"sum, no of sj over 5 sessions",%9.0g,,,TRUE,Retained
+totalagr,double,numeric,float64,"sum, no of agr over 5 sessions",%9.0g,,,TRUE,Retained
+totalagr2,double,numeric,float64,"sum, no of agr2 over 5 sessions",%9.0g,,,TRUE,Retained
+totaldis,double,numeric,float64,"sum, no of dis over 5 sessions",%9.0g,,,TRUE,Retained
+totaldis2,double,numeric,float64,"sum, no of dis2 over 5 sessions",%9.0g,,,TRUE,Retained
+totaldis3,double,numeric,float64,"sum, no of dis3 over 5 sessions",%9.0g,,,TRUE,Retained
+totalque,double,numeric,float64,"sum, no of que over 5 sessions",%9.0g,,,TRUE,Retained
+totalqa,double,numeric,float64,"sum, no of qa over 5 sessions",%9.0g,,,TRUE,Retained
+totaled0,double,numeric,float64,"sum, no of ed0 over 5 sessions",%9.0g,,,TRUE,Retained
+totaled1,double,numeric,float64,"sum, no of ed1 over 5 sessions",%9.0g,,,TRUE,Retained
+totalh0,double,numeric,float64,"sum, no of h0 over 5 sessions",%9.0g,,,TRUE,Retained
+totalh1,double,numeric,float64,"sum, no of h1 over 5 sessions",%9.0g,,,TRUE,Retained
+totaled0nj,double,numeric,float64,"sum, no of ed0n0 over 5 sessions",%9.0g,,,TRUE,Retained
+totaled0qj,double,numeric,float64,"sum, no of ed0qj over 5 sessions",%9.0g,,,TRUE,Retained
+totaled1nj,double,numeric,float64,"sum, no of ed1n0 over 5 sessions",%9.0g,,,TRUE,Retained
+totaled1qj,double,numeric,float64,"sum, no of ed1qj over 5 sessions",%9.0g,,,TRUE,Retained
+totalh0nj,double,numeric,float64,"sum, no of h0n0 over 5 sessions",%9.0g,,,TRUE,Retained
+totalh0qj,double,numeric,float64,"sum, no of h0qj over 5 sessions",%9.0g,,,TRUE,Retained
+totalh1nj,double,numeric,float64,"sum, no of h1n0 over 5 sessions",%9.0g,,,TRUE,Retained
+totalh1qj,double,numeric,float64,"sum, no of h1qj over 5 sessions",%9.0g,,,TRUE,Retained
+totalhejus,double,numeric,float64,"Total No. of Justified Statements, C&L, Health",%9.0g,,,TRUE,Retained
+totaledjus,double,numeric,float64,"Total No. of Justified Statements, C&L, Educ",%9.0g,,,TRUE,Retained
+totalheujus,double,numeric,float64,"Total No. of Unjustified Statements, C&L, Health",%9.0g,,,TRUE,Retained
+totaledujus,double,numeric,float64,"Total No. of Unjustified Statements, C&L, Educ",%9.0g,,,TRUE,Retained
+totalheagr,double,numeric,float64,"Total No, of Health Justified/UnJustified Arguments",%9.0g,,,TRUE,Retained
+totaledagr,double,numeric,float64,"Total No, of Educ Justified/UnJustified Arguments",%9.0g,,,TRUE,Retained
+hejusbal,double,numeric,float64,"Health, Justified Balance",%9.0g,,,TRUE,Retained
+edjusbal,double,numeric,float64,"Educ, Justified Balance",%9.0g,,,TRUE,Retained
+totalhelib,double,numeric,float64,"Total No. of Libearl Statements, J&Uj, Health",%9.0g,,,TRUE,Retained
+totaledlib,double,numeric,float64,"Total No. of Libearl Statements, J&Uj, Educ",%9.0g,,,TRUE,Retained
+totalhecon,double,numeric,float64,"Total No. of Conservative Statements, J&Uj, Health",%9.0g,,,TRUE,Retained
+totaledcon,double,numeric,float64,"Total No. of Conservative Statements, J&Uj, Educ",%9.0g,,,TRUE,Retained
+tothelibagr,double,numeric,float64,"Total No, of Liberal/Cons Health Arguments",%9.0g,,,TRUE,Retained
+totedlibagr,double,numeric,float64,"Total No, of Liberal/Cons Educ Arguments",%9.0g,,,TRUE,Retained
+helibbal,double,numeric,float64,"Health, Liberal Balance",%9.0g,,,TRUE,Retained
+sumheaagr,double,numeric,float64,rsum (totalhe0nj totalhe0qj totalhe1qj totalhe1nj),%9.0g,,,TRUE,Retained
+sumedaagr,double,numeric,float64,rsum (totaled0nj totaled0qj totaled1qj totaled1nj),%9.0g,,,TRUE,Retained
+libjushe,double,numeric,float64,totalh1qj-totalh0qj/sumtrdagr,%9.0g,,,TRUE,Retained
+libjused,double,numeric,float64,totaled1qj-totaled0qj/sumedaagr,%9.0g,,,TRUE,Retained
+totalsqj,double,numeric,float64,,%9.0g,,,TRUE,Retained
+totalnqsj,double,numeric,float64,,%9.0g,,,TRUE,Retained
+jusbal,double,numeric,float64,,%9.0g,,,TRUE,Retained
+totalib,double,numeric,float64,,%9.0g,,,TRUE,Retained
+totalconv,double,numeric,float64,,%9.0g,,,TRUE,Retained
+totallc,double,numeric,float64,,%9.0g,,,TRUE,Retained
+lcbal,double,numeric,float64,,%9.0g,,,TRUE,Retained
+xfilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+truegrp,double,numeric,float64,,%9.0g,,,TRUE,Retained
+truefilter,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q6_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+female,double,numeric,float64,,%9.0g,,,TRUE,Retained
+noeduc,double,numeric,float64,,%9.0g,,,TRUE,Retained
+nowhite,double,numeric,float64,,%9.0g,,,TRUE,Retained
+jbgrpsum,double,numeric,float64,,%9.0g,,,TRUE,Retained
+jbgrpN,double,numeric,float64,,%9.0g,,,TRUE,Retained
+jbidm,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q3_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+fcvsch_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q12_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q19a_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q19b_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q19c_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q19d_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q19e_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q19f_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q23_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q24a_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q24b_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q24c_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q24d_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q24e_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q24f_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+mmtaxe_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+stest_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q3_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+fcvsch_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q12_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q19a_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q19b_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q19c_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q19d_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q19e_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q19f_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q23_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q24a_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q24b_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q24c_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q24d_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q24e_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q24f_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+mmtaxe_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+stest_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q6_cha,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1complicated,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2complicated,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1pubcare,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2pubcare,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1nosay,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2nosay,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1diffviews,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2diffviews,double,numeric,float64,,%9.0g,,,TRUE,Retained
+nosay_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+complicated_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+pubcare_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+diffviews_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1stest_r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2stest_r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1fcvsch_r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2fcvsch_r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1educ,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2educ,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t,double,numeric,float64,pro,%9.0g,,,TRUE,Retained
+s,double,numeric,float64,pro,%9.0g,,,TRUE,Retained
+w,double,numeric,float64,pro,%9.0g,,,TRUE,Retained
+t1eXtim,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1eXwrd,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1eXspk,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1hXtim,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1hXwrd,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1hXspk,double,numeric,float64,,%9.0g,,,TRUE,Retained
+h_s_gsum,double,numeric,float64,Weighted Grp Sum of Health Index for No. of Statements,%9.0g,,,TRUE,Retained
+h_w_gsum,double,numeric,float64,Weighted Grp Sum of Health Index for No. of Words,%9.0g,,,TRUE,Retained
+h_t_gsum,double,numeric,float64,Weighted Grp Sum of Health Index for Amt of time,%9.0g,,,TRUE,Retained
+e_s_gsum,double,numeric,float64,Weighted Grp Sum of Educ Index for No. of Statements,%9.0g,,,TRUE,Retained
+e_w_gsum,double,numeric,float64,Weighted Grp Sum of Educ Index for No. of Words,%9.0g,,,TRUE,Retained
+e_t_gsum,double,numeric,float64,Weighted Grp Sum of Educ Index for No. of Time,%9.0g,,,TRUE,Retained
+truegrp_N,double,numeric,float64,No. of Participants in Small Groups,%9.0g,,,TRUE,Retained
+h_s_pdm,double,numeric,float64,"Weighted R's distance from Grp mean-Health Index,Statements",%9.0g,,,TRUE,Retained
+h_w_pdm,double,numeric,float64,"Weighted R's distance from Grp mean-Health Index,Words",%9.0g,,,TRUE,Retained
+h_t_pdm,double,numeric,float64,"Weighted R's distance from Grp mean-Health Index,Time",%9.0g,,,TRUE,Retained
+e_s_pdm,double,numeric,float64,"Weighted R's distance from Grp mean-Educ Index,Statements",%9.0g,,,TRUE,Retained
+e_w_pdm,double,numeric,float64,"Weighted R's distance from Grp mean-Educ Index,words",%9.0g,,,TRUE,Retained
+e_t_pdm,double,numeric,float64,"Weighted R's distance from Grp mean-Educ Index,time",%9.0g,,,TRUE,Retained
+educ_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+h_gsum_u,double,numeric,float64,Grp Sum of Health Index,%9.0g,,,TRUE,Retained
+e_gsum_u,double,numeric,float64,Grp Sum of Educ Index,%9.0g,,,TRUE,Retained
+h_pdm_u,double,numeric,float64,R's distance from Grp mean-Health Index,%9.0g,,,TRUE,Retained
+e_pdm_u,double,numeric,float64,R's distance from Grp mean-Educ Index,%9.0g,,,TRUE,Retained
+t2k_h,double,numeric,float64,T2 Health Knowledge Qs,%9.0g,,,TRUE,Retained
+t1k_h,double,numeric,float64,T1 Health Knowledge Qs,%9.0g,,,TRUE,Retained
+t2k_e,double,numeric,float64,T2 Educ Knowledge Qs,%9.0g,,,TRUE,Retained
+t1k_e,double,numeric,float64,T1 Educ Knowledge Qs,%9.0g,,,TRUE,Retained
+age50plus,double,numeric,float64,,%9.0g,,,TRUE,Retained
+h_s_p1g1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+h_t_p1g1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+h_w_p1g1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+e_s_p1g1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+e_t_p1g1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+e_w_p1g1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+h_pdm_p1g1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+e_pdm_p1g1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+h_s_pdm_ru,double,numeric,float64,,%9.0g,,,TRUE,Retained
+h_w_pdm_ru,double,numeric,float64,,%9.0g,,,TRUE,Retained
+h_t_pdm_ru,double,numeric,float64,,%9.0g,,,TRUE,Retained
+e_s_pdm_ru,double,numeric,float64,,%9.0g,,,TRUE,Retained
+e_w_pdm_ru,double,numeric,float64,,%9.0g,,,TRUE,Retained
+e_t_pdm_ru,double,numeric,float64,,%9.0g,,,TRUE,Retained
+h_s_pdm_p1g1_ru,double,numeric,float64,,%9.0g,,,TRUE,Retained
+h_w_pdm_p1g1_ru,double,numeric,float64,,%9.0g,,,TRUE,Retained
+h_t_pdm_p1g1_ru,double,numeric,float64,,%9.0g,,,TRUE,Retained
+e_s_pdm_p1g1_ru,double,numeric,float64,,%9.0g,,,TRUE,Retained
+e_w_pdm_p1g1_ru,double,numeric,float64,,%9.0g,,,TRUE,Retained
+e_t_pdm_p1g1_ru,double,numeric,float64,,%9.0g,,,TRUE,Retained
+genderXeducollege,double,numeric,float64,,%9.0g,,,TRUE,Retained
+genderXracewh,double,numeric,float64,,%9.0g,,,TRUE,Retained
+genderXdem,double,numeric,float64,,%9.0g,,,TRUE,Retained
+genderXrep,double,numeric,float64,,%9.0g,,,TRUE,Retained
+genderXage,double,numeric,float64,,%9.0g,,,TRUE,Retained
+genderXt1know,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1knowXeducollege,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1knowXracewh,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1knowXdem,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1knowXrep,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1knowXage,double,numeric,float64,,%9.0g,,,TRUE,Retained
+totalmins,double,numeric,float64,,%9.0g,,,TRUE,Retained
+libjused2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+libjused2Xt2know,double,numeric,float64,,%9.0g,,,TRUE,Retained
+libujed2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+edlibbal2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+libujed2Xt2know,double,numeric,float64,,%9.0g,,,TRUE,Retained
+edlibbal2Xt2know,double,numeric,float64,,%9.0g,,,TRUE,Retained
+health_ch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+lnage,double,numeric,float64,,%9.0g,,,TRUE,Retained
+educXrace,double,numeric,float64,,%9.0g,,,TRUE,Retained
+educXdem,double,numeric,float64,,%9.0g,,,TRUE,Retained
+educXrep,double,numeric,float64,,%9.0g,,,TRUE,Retained
+educXlnage,double,numeric,float64,,%9.0g,,,TRUE,Retained
+group,double,numeric,float64,,%9.0g,,,TRUE,Retained
+groupsize,double,numeric,float64,,%9.0g,,,TRUE,Retained
+afemale,double,numeric,float64,,%9.0g,,,TRUE,Retained
+cfemale,double,numeric,float64,,%9.0g,,,TRUE,Retained
+pfemale,double,numeric,float64,,%9.0g,,,TRUE,Retained
+highknow,double,numeric,float64,,%9.0g,,,TRUE,Retained
+chighknow,double,numeric,float64,,%9.0g,,,TRUE,Retained
+phighknow,double,numeric,float64,,%9.0g,,,TRUE,Retained
+minority,double,numeric,float64,,%9.0g,,,TRUE,Retained
+aminority,double,numeric,float64,,%9.0g,,,TRUE,Retained
+cminority,double,numeric,float64,,%9.0g,,,TRUE,Retained
+pminority,double,numeric,float64,,%9.0g,,,TRUE,Retained
+educ4,double,numeric,float64,,%9.0g,,,TRUE,Retained
+ahigheduc,double,numeric,float64,educ4 == 4,%8.0g,,,TRUE,Retained
+chigheduc,double,numeric,float64,,%9.0g,,,TRUE,Retained
+phigheduc,double,numeric,float64,,%9.0g,,,TRUE,Retained
+meant1know,double,numeric,float64,,%9.0g,,,TRUE,Retained
+meant2know,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1costcov,double,numeric,float64,mean(unstandardized items),%9.0g,,,TRUE,Retained
+t2costcov,double,numeric,float64,mean(unstandardized items),%9.0g,,,TRUE,Retained
+t1medqual,double,numeric,float64,mean(unstandardized items),%9.0g,,,TRUE,Retained
+t2medqual,double,numeric,float64,mean(unstandardized items),%9.0g,,,TRUE,Retained
+t1govinv,double,numeric,float64,mean(unstandardized items),%9.0g,,,TRUE,Retained
+t2govinv,double,numeric,float64,mean(unstandardized items),%9.0g,,,TRUE,Retained
+t1reform_sd,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1fcvsch_sd,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1mmtaxe_sd,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1stest_sd,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1testsl_sd,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1nclb_sd,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1costcov_sd,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1medqual_sd,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1govinv_sd,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1emplypay_sd,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1indivpay_sd,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1reform_var,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1fcvsch_var,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1mmtaxe_var,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1stest_var,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1testsl_var,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1nclb_var,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1costcov_var,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1medqual_var,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1govinv_var,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1emplypay_var,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1indivpay_var,double,numeric,float64,,%9.0g,,,TRUE,Retained
+avgvar,double,numeric,float64,,%9.0g,,,TRUE,Retained
+sqrtavgvar,double,numeric,float64,,%9.0g,,,TRUE,Retained
+genvar,double,numeric,float64,,%9.0g,,,TRUE,Retained
+ppage,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1reform,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2reform,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1testsl,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2testsl,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1nclb,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2nclb,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1emplypay,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2emplypay,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1indivpay,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2indivpay,double,numeric,float64,,%9.0g,,,TRUE,Retained
+ext1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+ext2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+ext3,double,numeric,float64,,%9.0g,,,TRUE,Retained
+ext4,double,numeric,float64,,%9.0g,,,TRUE,Retained
+ext5,double,numeric,float64,,%9.0g,,,TRUE,Retained
+ext6,double,numeric,float64,,%9.0g,,,TRUE,Retained
+ext7,double,numeric,float64,,%9.0g,,,TRUE,Retained
+ext8,double,numeric,float64,,%9.0g,,,TRUE,Retained
+ext9,double,numeric,float64,,%9.0g,,,TRUE,Retained
+ext10,double,numeric,float64,,%9.0g,,,TRUE,Retained
+ext11,double,numeric,float64,,%9.0g,,,TRUE,Retained
+attextreme,double,numeric,float64,,%9.0g,,,TRUE,Retained
+readbrief,double,numeric,float64,,%9.0g,,,TRUE,Retained
+diff_reform,double,numeric,float64,,%9.0g,,,TRUE,Retained
+diff_mmtaxe,double,numeric,float64,,%9.0g,,,TRUE,Retained
+diff_fcvsch,double,numeric,float64,,%9.0g,,,TRUE,Retained
+diff_stest,double,numeric,float64,,%9.0g,,,TRUE,Retained
+diff_testsl,double,numeric,float64,,%9.0g,,,TRUE,Retained
+diff_nclb,double,numeric,float64,,%9.0g,,,TRUE,Retained
+diff_costcov,double,numeric,float64,,%9.0g,,,TRUE,Retained
+diff_medqual,double,numeric,float64,,%9.0g,,,TRUE,Retained
+diff_govinv,double,numeric,float64,,%9.0g,,,TRUE,Retained
+diff_emplypay,double,numeric,float64,,%9.0g,,,TRUE,Retained
+diff_indivpay,double,numeric,float64,,%9.0g,,,TRUE,Retained
+higheduc,double,numeric,float64,educ4 == 4,%8.0g,,,TRUE,Retained
+normsd,double,numeric,float64,,%9.0g,,,TRUE,Retained
+hhincome,double,numeric,float64,,%9.0g,,,TRUE,Retained
+highinc,double,numeric,float64,,%9.0g,,,TRUE,Retained
+phighinc,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1polint,double,numeric,float64,,%9.0g,,,TRUE,Retained
+country,double,numeric,float64,,%9.0g,,,TRUE,Retained
+mode,double,numeric,float64,,%9.0g,,,TRUE,Retained
+timebtw,double,numeric,float64,,%9.0g,,,TRUE,Retained
+length,double,numeric,float64,,%9.0g,,,TRUE,Retained
+numitems,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1knowlevel,double,numeric,float64,,%9.0g,,,TRUE,Retained
+pollgroup,double,numeric,float64,,%9.0g,,,TRUE,Retained
+avgsd,double,numeric,float64,,%9.0g,,,TRUE,Retained
+id,double,numeric,float64,,%9.0g,,,TRUE,Retained
+pollid,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q15rr,double,numeric,float64,,%9.0g,,,TRUE,Retained
+q15postrr,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1know,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t2know,double,numeric,float64,,%9.0g,,,TRUE,Retained
+pollid2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+caseid,double,numeric,float64,,%9.0g,,,TRUE,Retained
