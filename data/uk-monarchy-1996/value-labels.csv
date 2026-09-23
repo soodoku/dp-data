@@ -1,0 +1,1683 @@
+source_column,source_value,value_label
+ARF22,1,yes - will go
+ARF22,2,provisional/unsure
+ARF22,3,no - probable refusa
+ARF22,4,no - definite refusa
+WEEKEND,1,weekend
+AGEGP,1,18-34
+AGEGP,2,35-49
+AGEGP,3,50+
+AGEGP,4,ref/dk/na
+AGESEX,1,men 18-34
+AGESEX,2,men 35-49
+AGESEX,3,men 50+
+AGESEX,4,women 18-34
+AGESEX,5,women 35-49
+AGESEX,6,women 50+
+AGESEX,7,ref/dk/na
+CHILD,1,no children < 18
+CHILD,2,1 child
+CHILD,3,2 plus children
+CHILD,4,not answered
+YCHILD,1,no children <18
+YCHILD,2,youngest 0-4
+YCHILD,3,youngest 5-11
+YCHILD,4,youngest 12-17
+YCHILD,5,not answered
+MARSTAT,1,married/living as
+MARSTAT,2,sep/div/widowed
+MARSTAT,3,"single, never marrie"
+MARSTAT,4,not answered
+NEWSPAP,1,none read regularly
+NEWSPAP,2,tory tabloid
+NEWSPAP,3,other tabloid
+NEWSPAP,4,broadsheet
+NEWSPAP,5,"other, na"
+POLINT,1,very/fairly interest
+POLINT,2,not very/not at all
+POLINT,3,can't say/na
+PARTY,1,conservative
+PARTY,2,labour
+PARTY,3,liberal democrat
+PARTY,4,other/none/ref/dk/na
+PARTY,5,not answered
+STATUS,1,working
+STATUS,2,unemployed
+STATUS,3,retired
+STATUS,4,looking after home/f
+STATUS,5,other
+STATUS,6,not answered
+SEGFULL,1,"professional, employ"
+SEGFULL,2,intermediate/junior
+SEGFULL,3,skilled manual & own
+SEGFULL,4,semi-skilled manual
+SEGFULL,5,unskilled manual
+SEGFULL,6,armed forces/insuff
+SEGFULL,7,never had job
+SEGFULL,8,not answered
+CLASS,1,non manual
+CLASS,2,manual
+CLASS,3,never had job/armed
+CLASS,4,not answered
+EDUCAGE,1,14 or under
+EDUCAGE,2,15-16
+EDUCAGE,3,17-18
+EDUCAGE,4,19+
+EDUCAGE,5,not yet fin
+EDUCAGE,6,not answered
+ACQUALS,1,a-level or higher
+ACQUALS,2,other academic quals
+ACQUALS,3,no academic quals
+ACQUALS,4,not answered
+VOQUALS,1,nvq level 3 or highe
+VOQUALS,2,other vocational qua
+VOQUALS,3,no vocational quals
+VOQUALS,4,not answered
+QUALSUM,1,a level/nvq3 or high
+QUALSUM,2,other qualifications
+QUALSUM,3,no qualifications
+QUALSUM,4,not answered
+IDENT,1,british
+IDENT,2,english
+IDENT,3,scottish
+IDENT,4,welsh
+IDENT,5,irish
+IDENT,6,northern irish
+IDENT,7,european
+IDENT,8,other
+IDENT,9,none of these
+IDENT,10,not answered
+RELIG,1,c of e
+RELIG,2,roman catholic
+RELIG,3,other christian
+RELIG,4,non-christian
+RELIG,5,no religion
+RELIG,6,not answered
+TRUST,1,11-16 low trust
+TRUST,2,4-10 higher trust
+TRUST,3,not answered
+PATRIOT,1,5-12 more patriotic
+PATRIOT,2,13-17 middle
+PATRIOT,3,18-25 less patriotic
+PATRIOT,4,not answered
+CHANCES,1,wrong that wealth gi
+CHANCES,2,ok that wealth gives
+CHANCES,3,neither/dk/na
+TRADS,1,gb should stick to t
+TRADS,2,gb should leave past
+TRADS,3,neither/dk/na
+SCHOOLS,1,education should be
+SCHOOLS,2,parents should be ab
+SCHOOLS,3,neither/dk/na
+WEALTH,1,wrong that rich so r
+WEALTH,2,nothing wrong that r
+WEALTH,3,neither/dk/na
+REG,1,london/south east
+REG,2,north
+REG,3,midlands/east anglia
+REG,4,wales/south west
+REG,5,scotland
+REG,6,not answered
+CNTRY,1,england
+CNTRY,2,scotland
+CNTRY,3,wales
+CNTRY,4,not answered
+GROUP,1,00
+GROUP,2,01
+GROUP,3,02
+GROUP,4,03
+GROUP,5,04
+GROUP,6,05
+GROUP,7,06
+GROUP,8,07
+GROUP,9,08
+GROUP,10,09
+GROUP,11,10
+GROUP,12,11
+GROUP,13,12
+GROUP,14,13
+GROUP,15,14
+GROUP,16,15
+REGION,1,north
+REGION,2,yorks+humberside
+REGION,3,north west
+REGION,4,east mids
+REGION,5,west mids
+REGION,6,east anglia
+REGION,7,south east
+REGION,8,south west
+REGION,9,wales
+REGION,10,scotland
+REGION,11,greater london
+REGION,12,not answered
+SEX,1,male
+SEX,2,female
+AGEB,1,96+
+AGEB,2,18-19
+AGEB,3,20-29
+AGEB,4,30-39
+AGEB,5,40-49
+AGEB,6,50-59
+AGEB,7,60-69
+AGEB,8,70-79
+AGEB,9,80-89
+AGEB,10,90+
+AGEB,11,refused
+AGEB,12,don't know
+AGEB,13,not answered
+A3AB,1,none
+A3AB,2,01
+A3AB,3,02
+A3AB,4,03
+A3AB,5,04
+A3AB,6,05
+A3AB,7,06
+A3AB,8,07
+A3AB,9,08
+A3AB,10,09
+A3AB,11,10
+A3AB,12,not answered
+A3B_1B,1,none
+A3B_1B,2,1
+A3B_1B,3,2
+A3B_1B,4,3
+A3B_1B,5,4
+A3B_1B,6,5
+A3B_1B,7,6
+A3B_1B,8,7
+A3B_1B,9,8
+A3B_1B,10,not answered
+A3B_2B,1,none
+A3B_2B,2,1
+A3B_2B,3,2
+A3B_2B,4,3
+A3B_2B,5,4
+A3B_2B,6,5
+A3B_2B,7,6
+A3B_2B,8,7
+A3B_2B,9,8
+A3B_2B,10,not answered
+A3B_3B,1,none
+A3B_3B,2,1
+A3B_3B,3,2
+A3B_3B,4,3
+A3B_3B,5,4
+A3B_3B,6,5
+A3B_3B,7,6
+A3B_3B,8,7
+A3B_3B,9,8
+A3B_3B,10,not answered
+A3B_4B,1,none
+A3B_4B,2,1
+A3B_4B,3,2
+A3B_4B,4,3
+A3B_4B,5,4
+A3B_4B,6,5
+A3B_4B,7,6
+A3B_4B,8,7
+A3B_4B,9,8
+A3B_4B,10,not answered
+A4,1,"married,"
+A4,2,"living as married,"
+A4,3,separated or divorce
+A4,4,widowed
+A4,5,single and never mar
+A4,6,not answered
+A5A,1,yes
+A5A,2,no
+A5A,3,not answered
+A5B,1,(scottish) daily exp
+A5B,2,daily mail
+A5B,3,daily mirror/record
+A5B,4,daily star
+A5B,5,the sun
+A5B,6,today
+A5B,7,daily telegraph
+A5B,8,financial times
+A5B,9,the guardian
+A5B,10,the independent
+A5B,11,the times
+A5B,12,other daily morning
+A5B,13,not answered
+A6,1,very interested
+A6,2,fairly interested
+A6,3,not very interested
+A6,4,not at all intereste
+A6,5,can't say
+A6,6,not answered
+A7A,1,agree strongly
+A7A,2,agree
+A7A,3,neither agree nor di
+A7A,4,disagree
+A7A,5,disagree strongly
+A7A,6,not answered
+A7B,1,agree strongly
+A7B,2,agree
+A7B,3,neither agree nor di
+A7B,4,disagree
+A7B,5,disagree strongly
+A7B,6,not answered
+A7C,1,agree strongly
+A7C,2,agree
+A7C,3,neither agree nor di
+A7C,4,disagree
+A7C,5,disagree strongly
+A7C,6,not answered
+A7D,1,agree strongly
+A7D,2,agree
+A7D,3,neither agree nor di
+A7D,4,disagree
+A7D,5,disagree strongly
+A7D,6,not answered
+B1A,1,none/no
+B1A,2,conservative
+B1A,3,labour
+B1A,4,liberal democrat
+B1A,5,scottish nationnalis
+B1A,6,plaid cymru
+B1A,7,green party
+B1A,8,other party
+B1A,9,refused
+B1A,10,don't know
+B1A,11,not answered
+B1B,1,none/no
+B1B,2,conservative
+B1B,3,labour
+B1B,4,liberal democrat
+B1B,5,scottish nationnalis
+B1B,6,plaid cymru
+B1B,7,green party
+B1B,8,other party
+B1B,9,refused
+B1B,10,don't know
+B1B,11,not answered
+B1C,1,very strong
+B1C,2,fairly strong
+B1C,3,not very strong
+B1C,4,don't know
+B1C,5,not answered
+B2,1,in full-time educati
+B2,2,on government traini
+B2,3,in part-time work (u
+B2,4,in full-time paid wo
+B2,5,waiting to take up p
+B2,6,unemployed and looki
+B2,7,"unemployed, but not"
+B2,8,permanently sick or
+B2,9,wholly retired from
+B2,10,looking after home o
+B2,11,something else
+B2,12,not answered
+B3,1,respondent only pers
+B3,2,2+ adults in househo
+B3,3,not answered
+B4,1,respondent is c.i.e
+B4,2,other household memb
+B4,3,not answered
+B5,1,in full-time educati
+B5,2,on government traini
+B5,3,in part-time work (u
+B5,4,in full-time paid wo
+B5,5,waiting to take up p
+B5,6,unemployed and looki
+B5,7,"unemployed, but not"
+B5,8,permanently sick or
+B5,9,wholly retired from
+B5,10,looking after home o
+B5,11,something else
+B5,12,not answered
+B7,1,an employee
+B7,2,self-employed
+B7,3,never worked
+B7,4,not answered
+B8,1,none
+B8,2,1 to 24
+B8,3,25 or more
+B8,4,not answered
+B9,1,1 to 24
+B9,2,25 or more
+B9,3,not known
+B9,4,not answered
+B10A,1,none
+B10A,2,1 to 24
+B10A,3,25 or more
+B10A,4,not answered
+SOC,1,managers and adminis
+SOC,2,professional occupat
+SOC,3,assoc professional a
+SOC,4,clerical & secretari
+SOC,5,craft & related occu
+SOC,6,personal & protectiv
+SOC,7,sales occupations
+SOC,8,plant & machine oper
+SOC,9,other occupations
+SOC,10,never had job
+SOC,11,not answered/inadequ
+ES,1,01  self-employed (2
+ES,2,02  self-employed (1
+ES,3,03  self-employed (n
+ES,4,04  self-employed (n
+ES,5,05  manager (establi
+ES,6,06  manager (establi
+ES,7,07  manager (size of
+ES,8,08  foreman/supervis
+ES,9,09  other employee
+ES,10,10  employee (not kn
+ES,11,11  na/insufficient
+SEG,1,01  employers - larg
+SEG,2,02  managers - large
+SEG,3,03  employers - smal
+SEG,4,04  managers - small
+SEG,5,05  professional - s
+SEG,6,06  professional - e
+SEG,7,07  intermediate non
+SEG,8,08  intermediate non
+SEG,9,09  junior non-manua
+SEG,10,10  personal service
+SEG,11,11  foremen and supe
+SEG,12,12  skilled manual
+SEG,13,13  semi - skilled m
+SEG,14,14  unskilled manual
+SEG,15,15  own account (oth
+SEG,16,16  farmers - employ
+SEG,17,17  farmers - own ac
+SEG,18,18  agricultural
+SEG,19,19  armed forces
+SEG,20,20  inadequately des
+B11,1,not yet finished
+B11,2,never went to school
+B11,3,14 or under
+B11,4,15
+B11,5,16
+B11,6,17
+B11,7,18
+B11,8,19 or over
+B11,9,not answered
+B12A,1,no qualifications ob
+B12A,2,cse grades 2-5 gcse
+B12A,3,cse grade 1 gce `o'
+B12A,4,gce 'a' level/'s' le
+B12A,5,overseas school leav
+B12A,6,not answered
+B12B,1,no qualifications ob
+B12B,2,nvq/svq level 1/gnvq
+B12B,3,city & guilds craft/
+B12B,4,nvq/svq level 3/gnvq
+B12B,5,nvq/svq level 4
+B12B,6,rsa/other clerical a
+B12B,7,teachers training qu
+B12B,8,nursing qualificatio
+B12B,9,professional qualifi
+B12B,10,"degree, including hi"
+B12B,11,nvq/svq level 5
+B12B,12,other technical or b
+B12B,13,other
+B12B,14,not answered
+B14,1,one code ringed
+B14,2,more than one code
+B14,3,not answered
+B15,1,british
+B15,2,english
+B15,3,scottish
+B15,4,welsh
+B15,5,irish
+B15,6,northern irish
+B15,7,european
+B15,8,other
+B15,9,none of these
+B15,10,not answered
+B16,1,white
+B16,2,black - caribbean
+B16,3,black - african
+B16,4,india
+B16,5,bangladesh
+B16,6,chinese
+B16,7,other
+B16,8,refused
+B16,9,not answered
+B17,1,no religion
+B17,2,christian - no denom
+B17,3,roman catholic
+B17,4,anglican/c of e
+B17,5,methodist
+B17,6,baptist
+B17,7,presbyterian/church
+B17,8,free presbyterian
+B17,9,brethren
+B17,10,united reform church
+B17,11,other protestant
+B17,12,other christian
+B17,13,hindu
+B17,14,jewish
+B17,15,islam/muslim
+B17,16,sikh
+B17,17,buddhist
+B17,18,other non-christian
+B17,19,not answered
+B18A,1,just about always
+B18A,2,most of the time
+B18A,3,some of the time
+B18A,4,almost never
+B18A,5,not answered
+B18B,1,just about always
+B18B,2,most of the time
+B18B,3,some of the time
+B18B,4,almost never
+B18B,5,not answered
+B18C,1,just about always
+B18C,2,most of the time
+B18C,3,some of the time
+B18C,4,almost never
+B18C,5,not answered
+B18D,1,just about always
+B18D,2,most of the time
+B18D,3,some of the time
+B18D,4,almost never
+B18D,5,not answered
+B19A,1,agree strongly
+B19A,2,agree
+B19A,3,neither agree or dis
+B19A,4,disagree
+B19A,5,disagree strongly
+B19A,6,can't say
+B19A,7,not answered
+B19B,1,agree strongly
+B19B,2,agree
+B19B,3,neither agree or dis
+B19B,4,disagree
+B19B,5,disagree strongly
+B19B,6,can't say
+B19B,7,not answered
+B19C,1,agree strongly
+B19C,2,agree
+B19C,3,neither agree or dis
+B19C,4,disagree
+B19C,5,disagree strongly
+B19C,6,can't say
+B19C,7,not answered
+B19D,1,agree strongly
+B19D,2,agree
+B19D,3,neither agree or dis
+B19D,4,disagree
+B19D,5,disagree strongly
+B19D,6,can't say
+B19D,7,not answered
+B19E,1,agree strongly
+B19E,2,agree
+B19E,3,neither agree or dis
+B19E,4,disagree
+B19E,5,disagree strongly
+B19E,6,can't say
+B19E,7,not answered
+B20A,1,wrong to have better
+B20A,2,good luck to them
+B20A,3,can't choose/neither
+B20A,4,not answered
+B20B,1,strongly agree
+B20B,2,just agree
+B20B,3,not answered
+B20C,1,strongly agree
+B20C,2,just agree
+B20C,3,not answered
+B21A,1,stick to traditional
+B21A,2,leave past behind
+B21A,3,can't choose/neither
+B21A,4,not answered
+B21B,1,strongly agree
+B21B,2,just agree
+B21B,3,not answered
+B21C,1,strongly agree
+B21C,2,just agree
+B21C,3,not answered
+B22A,1,should be same for a
+B22A,2,parents should be ab
+B22A,3,can't choose/neither
+B22A,4,not answered
+B22B,1,strongly agree
+B22B,2,just agree
+B22B,3,not answered
+B22C,1,strongly agree
+B22C,2,just agree
+B22C,3,not answered
+B23A,1,rich should not keep
+B23A,2,nothing wrong with i
+B23A,3,can't choose/neither
+B23A,4,not answered
+B23B,1,strongly agree
+B23B,2,just agree
+B23B,3,not answered
+B23C,1,strongly agree
+B23C,2,just agree
+B23C,3,not answered
+B24A,1,agree strongly
+B24A,2,agree
+B24A,3,neither agree nor di
+B24A,4,disagree
+B24A,5,disagree strongly
+B24A,6,can't say
+B24A,7,not answered
+B24B,1,agree strongly
+B24B,2,agree
+B24B,3,neither agree nor di
+B24B,4,disagree
+B24B,5,disagree strongly
+B24B,6,can't say
+B24B,7,not answered
+B25A,1,yes
+B25A,2,no
+B25A,3,not answered
+B25B,1,number given
+B25B,2,number refused
+B25B,3,not answered
+G1,1,more pro-monarchy
+G1,2,no change
+G1,3,more anti-monarchy
+G2A,1,more important role
+G2A,2,no change
+G2A,3,less important role
+G2B,1,more important role
+G2B,2,no change
+G2B,3,less important role
+G2C,1,more important role
+G2C,2,no change
+G2C,3,less important role
+G2D,1,more important role
+G2D,2,no change
+G2D,3,less important role
+G2E,1,more important role
+G2E,2,no change
+G2E,3,less important role
+G2F,1,more important role
+G2F,2,no change
+G2F,3,less important role
+G2G,1,more important role
+G2G,2,no change
+G2G,3,less important role
+G2H,1,more important role
+G2H,2,no change
+G2H,3,less important role
+G3A,1,more pro-monarchy
+G3A,2,no change
+G3A,3,more anti-monarchy
+G3B,1,more pro-monarchy
+G3B,2,no change
+G3B,3,more anti-monarchy
+G3C,1,more pro-monarchy
+G3C,2,no change
+G3C,3,more anti-monarchy
+G3D,1,more pro-monarchy
+G3D,2,no change
+G3D,3,more anti-monarchy
+G3E,1,more pro-monarchy
+G3E,2,no change
+G3E,3,more anti-monarchy
+G3F,1,more pro-monarchy
+G3F,2,no change
+G3F,3,more anti-monarchy
+G3G,1,more pro-monarchy
+G3G,2,no change
+G3G,3,more anti-monarchy
+G4,1,more political influ
+G4,2,no change
+G4,3,less political influ
+GSCORE,1,knowledge improved
+GSCORE,2,no change
+GSCORE,3,knowledge decreased
+G6A,1,agree more
+G6A,2,no change
+G6A,3,agree less
+G6B,1,agree more
+G6B,2,no change
+G6B,3,agree less
+G6C,1,agree more
+G6C,2,no change
+G6C,3,agree less
+G6D,1,agree more
+G6D,2,no change
+G6D,3,agree less
+G6E,1,agree more
+G6E,2,no change
+G6E,3,agree less
+G6F,1,agree more
+G6F,2,no change
+G6F,3,agree less
+G7A,1,agree more
+G7A,2,no change
+G7A,3,agree less
+G7B,1,agree more
+G7B,2,no change
+G7B,3,agree less
+G7C,1,agree more
+G7C,2,no change
+G7C,3,agree less
+G9,1,more pro-monarchy
+G9,2,no change
+G9,3,more pro-president
+G10,1,will survive longer
+G10,2,no change
+G10,3,will survive shorter
+G11,1,wants to survive lon
+G11,2,no change
+G11,3,wants to survive sho
+G13A,1,agree more
+G13A,2,no change
+G13A,3,agree less
+G13B,1,agree more
+G13B,2,no change
+G13B,3,agree less
+G13C,1,agree more
+G13C,2,no change
+G13C,3,agree less
+G13D,1,agree more
+G13D,2,no change
+G13D,3,agree less
+G13E,1,agree more
+G13E,2,no change
+G13E,3,agree less
+G13F,1,agree more
+G13F,2,no change
+G13F,3,agree less
+G13G,1,agree more
+G13G,2,no change
+G13G,3,agree less
+G14,1,more pro-referendum
+G14,2,no change
+G14,3,more anti-referendum
+G15,1,more pro-monarchy
+G15,2,no change
+G15,3,more anti-monarchy
+G16,1,more in nation's int
+G16,2,no change
+G16,3,more in monarchy's i
+G17,1,more pro-monarchy
+G17,2,no change
+G17,3,more pro-president
+G18,1,more pro-hol
+G18,2,no change
+G18,3,more anti-hol
+G19A,1,more pro-life peers
+G19A,2,no change
+G19A,3,more anti-life peers
+G19B,1,more pro-life peers
+G19B,2,no change
+G19B,3,more anti-life peers
+G20,1,more pro-monarchy
+G20,2,no change
+G20,3,more anti-monarchy
+G21,1,works better
+G21,2,no change
+G21,3,works less well
+G22A,1,agree more
+G22A,2,no change
+G22A,3,agree less
+G22B,1,agree more
+G22B,2,no change
+G22B,3,agree less
+G22C,1,agree more
+G22C,2,no change
+G22C,3,agree less
+G22D,1,agree more
+G22D,2,no change
+G22D,3,agree less
+Q1,1,1   the monarchy sho
+Q1,2,2   the monarchy sho
+Q1,3,3   the monarchy sho
+Q1,4,8   can't choose
+Q1,5,9   not answered
+Q2A,1,1   very important
+Q2A,2,2   quite important
+Q2A,3,3   not very importa
+Q2A,4,4   not at all impor
+Q2A,5,8   can't choose
+Q2A,6,9   not answered
+Q2B,1,1   very important
+Q2B,2,2   quite important
+Q2B,3,3   not very importa
+Q2B,4,4   not at all impor
+Q2B,5,8   can't choose
+Q2B,6,9   not answered
+Q2C,1,1   very important
+Q2C,2,2   quite important
+Q2C,3,3   not very importa
+Q2C,4,4   not at all impor
+Q2C,5,8   can't choose
+Q2C,6,9   not answered
+Q2D,1,1   very important
+Q2D,2,2   quite important
+Q2D,3,3   not very importa
+Q2D,4,4   not at all impor
+Q2D,5,8   can't choose
+Q2D,6,9   not answered
+Q2E,1,1   very important
+Q2E,2,2   quite important
+Q2E,3,3   not very importa
+Q2E,4,4   not at all impor
+Q2E,5,8   can't choose
+Q2E,6,9   not answered
+Q2F,1,1   very important
+Q2F,2,2   quite important
+Q2F,3,3   not very importa
+Q2F,4,4   not at all impor
+Q2F,5,8   can't choose
+Q2F,6,9   not answered
+Q2G,1,1   very important
+Q2G,2,2   quite important
+Q2G,3,3   not very importa
+Q2G,4,4   not at all impor
+Q2G,5,8   can't choose
+Q2G,6,9   not answered
+Q2H,1,1   very important
+Q2H,2,2   quite important
+Q2H,3,3   not very importa
+Q2H,4,4   not at all impor
+Q2H,5,8   can't choose
+Q2H,6,9   not answered
+Q3A,1,1   strongly agree
+Q3A,2,2   agree
+Q3A,3,3   neither agree or
+Q3A,4,4   disagree
+Q3A,5,5   strongly disagre
+Q3A,6,9   not answered
+Q3B,1,1   strongly agree
+Q3B,2,2   agree
+Q3B,3,3   neither agree or
+Q3B,4,4   disagree
+Q3B,5,5   strongly disagre
+Q3B,6,9   not answered
+Q3C,1,1   strongly agree
+Q3C,2,2   agree
+Q3C,3,3   neither agree or
+Q3C,4,4   disagree
+Q3C,5,5   strongly disagre
+Q3C,6,9   not answered
+Q3D,1,1   strongly agree
+Q3D,2,2   agree
+Q3D,3,3   neither agree or
+Q3D,4,4   disagree
+Q3D,5,5   strongly disagre
+Q3D,6,9   not answered
+Q3E,1,1   strongly agree
+Q3E,2,2   agree
+Q3E,3,3   neither agree or
+Q3E,4,4   disagree
+Q3E,5,5   strongly disagre
+Q3E,6,9   not answered
+Q3F,1,1   strongly agree
+Q3F,2,2   agree
+Q3F,3,3   neither agree or
+Q3F,4,4   disagree
+Q3F,5,5   strongly disagre
+Q3F,6,9   not answered
+Q3G,1,1   strongly agree
+Q3G,2,2   agree
+Q3G,3,3   neither agree or
+Q3G,4,4   disagree
+Q3G,5,5   strongly disagre
+Q3G,6,9   not answered
+Q4,1,1   a great deal of
+Q4,2,2   quite a lot of i
+Q4,3,3   some influence
+Q4,4,4   not very much in
+Q4,5,5   no influence at
+Q4,6,8   can't say
+Q4,7,9   not answered
+Q5A,1,1   true
+Q5A,2,2   false
+Q5A,3,3   don't know
+Q5A,4,9   not answered
+Q5B,1,1   true
+Q5B,2,2   false
+Q5B,3,3   don't know
+Q5B,4,9   not answered
+Q5C,1,1   true
+Q5C,2,2   false
+Q5C,3,3   don't know
+Q5C,4,9   not answered
+Q5D,1,1   true
+Q5D,2,2   false
+Q5D,3,3   don't know
+Q5D,4,9   not answered
+Q5E,1,1   true
+Q5E,2,2   false
+Q5E,3,3   don't know
+Q5E,4,9   not answered
+Q5F,1,1   true
+Q5F,2,2   false
+Q5F,3,3   don't know
+Q5F,4,9   not answered
+Q5G,1,1   true
+Q5G,2,2   false
+Q5G,3,3   don't know
+Q5G,4,9   not answered
+Q5H,1,1   true
+Q5H,2,2   false
+Q5H,3,3   don't know
+Q5H,4,9   not answered
+Q6A,1,1   strongly agree
+Q6A,2,2   agree
+Q6A,3,3   neither agree or
+Q6A,4,4   disagree
+Q6A,5,5   strongly disagre
+Q6A,6,9   not answered
+Q6B,1,1   strongly agree
+Q6B,2,2   agree
+Q6B,3,3   neither agree or
+Q6B,4,4   disagree
+Q6B,5,5   strongly disagre
+Q6B,6,9   not answered
+Q6C,1,1   strongly agree
+Q6C,2,2   agree
+Q6C,3,3   neither agree or
+Q6C,4,4   disagree
+Q6C,5,5   strongly disagre
+Q6C,6,9   not answered
+Q6D,1,1   strongly agree
+Q6D,2,2   agree
+Q6D,3,3   neither agree or
+Q6D,4,4   disagree
+Q6D,5,5   strongly disagre
+Q6D,6,9   not answered
+Q6E,1,1   strongly agree
+Q6E,2,2   agree
+Q6E,3,3   neither agree or
+Q6E,4,4   disagree
+Q6E,5,5   strongly disagre
+Q6E,6,9   not answered
+Q6F,1,1   strongly agree
+Q6F,2,2   agree
+Q6F,3,3   neither agree or
+Q6F,4,4   disagree
+Q6F,5,5   strongly disagre
+Q6F,6,9   not answered
+Q7A,1,1   strongly agree
+Q7A,2,2   agree
+Q7A,3,3   neither agree or
+Q7A,4,4   disagree
+Q7A,5,5   strongly disagre
+Q7A,6,9   not answered
+Q7B,1,1   strongly agree
+Q7B,2,2   agree
+Q7B,3,3   neither agree or
+Q7B,4,4   disagree
+Q7B,5,5   strongly disagre
+Q7B,6,9   not answered
+Q7C,1,1   strongly agree
+Q7C,2,2   agree
+Q7C,3,3   neither agree or
+Q7C,4,4   disagree
+Q7C,5,5   strongly disagre
+Q7C,6,9   not answered
+Q8A,1,1   brother or siste
+Q8A,2,2   eldest brother
+Q8A,3,3   eldest sister
+Q8A,4,4   eldest child
+Q8A,5,5   eldest son
+Q8A,6,6   eldest daughter
+Q8A,7,7   none of these
+Q8A,8,8   can't choose
+Q8A,9,9   not answered
+Q8B,1,1   brother or siste
+Q8B,2,2   eldest brother
+Q8B,3,3   eldest sister
+Q8B,4,4   eldest child
+Q8B,5,5   eldest son
+Q8B,6,6   eldest daughter
+Q8B,7,7   none of these
+Q8B,8,8   can't choose
+Q8B,9,9   not answered
+Q9,1,1   to continue to h
+Q9,2,2   to have a presid
+Q9,3,8   can't choose
+Q9,4,9   not answered
+Q10,1,1   at least another
+Q10,2,2   at least another
+Q10,3,3   at least another
+Q10,4,4   at least another
+Q10,5,5   at least another
+Q10,6,6   less than 5 year
+Q10,7,8   can't choose
+Q10,8,9   not answered
+Q11,1,1   at least another
+Q11,2,2   at least another
+Q11,3,3   at least another
+Q11,4,4   at least another
+Q11,5,5   at least another
+Q11,6,6   less than 5 year
+Q11,7,8   can't choose
+Q11,8,9   not answered
+Q12A,1,1   a different styl
+Q12A,2,2   an elected head
+Q12A,3,3   an elected head
+Q12A,4,8   can't choose
+Q12A,5,9   not answered
+Q12B,1,1   a different styl
+Q12B,2,2   an elected head
+Q12B,3,3   an elected head
+Q12B,4,8   can't choose
+Q12B,5,9   not answered
+Q13A,1,1   strongly agree
+Q13A,2,2   agree
+Q13A,3,3   neither agree or
+Q13A,4,4   disagree
+Q13A,5,5   strongly disagre
+Q13A,6,9   not answered
+Q13B,1,1   strongly agree
+Q13B,2,2   agree
+Q13B,3,3   neither agree or
+Q13B,4,4   disagree
+Q13B,5,5   strongly disagre
+Q13B,6,9   not answered
+Q13C,1,1   strongly agree
+Q13C,2,2   agree
+Q13C,3,3   neither agree or
+Q13C,4,4   disagree
+Q13C,5,5   strongly disagre
+Q13C,6,9   not answered
+Q13D,1,1   strongly agree
+Q13D,2,2   agree
+Q13D,3,3   neither agree or
+Q13D,4,4   disagree
+Q13D,5,5   strongly disagre
+Q13D,6,9   not answered
+Q13E,1,1   strongly agree
+Q13E,2,2   agree
+Q13E,3,3   neither agree or
+Q13E,4,4   disagree
+Q13E,5,5   strongly disagre
+Q13E,6,9   not answered
+Q13F,1,1   strongly agree
+Q13F,2,2   agree
+Q13F,3,3   neither agree or
+Q13F,4,4   disagree
+Q13F,5,5   strongly disagre
+Q13F,6,9   not answered
+Q13G,1,1   strongly agree
+Q13G,2,2   agree
+Q13G,3,3   neither agree or
+Q13G,4,4   disagree
+Q13G,5,5   strongly disagre
+Q13G,6,9   not answered
+Q14,1,1   definitely
+Q14,2,2   probably
+Q14,3,3   definitely not
+Q14,4,4   probably not
+Q14,5,8   can't say
+Q14,6,9   not answered
+Q15,1,1   the queen should
+Q15,2,2   there should be
+Q15,3,8   can't choose
+Q15,4,9   not answered
+Q16,1,1   definitely the r
+Q16,2,2   probably the roy
+Q16,3,3   probably the nat
+Q16,4,4   definitely the n
+Q16,5,8   can't choose
+Q16,6,9   not answered
+Q17,1,1   a king or queen
+Q17,2,2   an elected presi
+Q17,3,8   can't choose
+Q17,4,9   not answered
+Q18,1,1   the house of lor
+Q18,2,2   the house of lor
+Q18,3,3   the house of lor
+Q18,4,8   can't choose
+Q18,5,9   not answered
+Q19A,1,1   hereditary peers
+Q19A,2,2   the fact that so
+Q19A,3,8   can't choose
+Q19A,4,9   not answered
+Q19B,1,1   should continue
+Q19B,2,2   all members of t
+Q19B,3,8   can't choose
+Q19B,4,9   not answered
+Q20,1,1   agree strongly
+Q20,2,2   agree
+Q20,3,3   neither agree no
+Q20,4,4   disagree
+Q20,5,5   disagree strongl
+Q20,6,8   can't choose
+Q20,7,9   not answered
+Q21,1,1   it works well an
+Q21,2,2   it works well bu
+Q21,3,3   it does not work
+Q21,4,4   it does not work
+Q21,5,8   can't choose
+Q21,6,9   not answered
+Q22A,1,1   strongly agree
+Q22A,2,2   agree
+Q22A,3,3   neither agree or
+Q22A,4,4   disagree
+Q22A,5,5   strongly disagre
+Q22A,6,9   not answered
+Q22B,1,1   strongly agree
+Q22B,2,2   agree
+Q22B,3,3   neither agree or
+Q22B,4,4   disagree
+Q22B,5,5   strongly disagre
+Q22B,6,9   not answered
+Q22C,1,1   strongly agree
+Q22C,2,2   agree
+Q22C,3,3   neither agree or
+Q22C,4,4   disagree
+Q22C,5,5   strongly disagre
+Q22C,6,9   not answered
+Q22D,1,1   strongly agree
+Q22D,2,2   agree
+Q22D,3,3   neither agree or
+Q22D,4,4   disagree
+Q22D,5,5   strongly disagre
+Q22D,6,9   not answered
+QSCORE,1,0 correct
+QSCORE,2,1 correct
+QSCORE,3,2 correct
+QSCORE,4,3 correct
+QSCORE,5,4 correct
+QSCORE,6,5 correct
+QSCORE,7,6 correct
+QSCORE,8,7 correct
+QSCORE,9,8 correct
+QKNOWL,1,0-3 correct
+QKNOWL,2,4-5 correct
+QKNOWL,3,6-8 correct
+QQ2A,1,important
+QQ2A,2,not important
+QQ2A,3,can't say
+QQ2B,1,important
+QQ2B,2,not important
+QQ2B,3,can't say
+QQ2C,1,important
+QQ2C,2,not important
+QQ2C,3,can't say
+QQ2D,1,important
+QQ2D,2,not important
+QQ2D,3,can't say
+QQ2E,1,important
+QQ2E,2,not important
+QQ2E,3,can't say
+QQ2F,1,important
+QQ2F,2,not important
+QQ2F,3,can't say
+QQ2G,1,important
+QQ2G,2,not important
+QQ2G,3,can't say
+QQ2H,1,important
+QQ2H,2,not important
+QQ2H,3,can't say
+QQ3A,1,agree
+QQ3A,2,neither
+QQ3A,3,disagree
+QQ3B,1,agree
+QQ3B,2,neither
+QQ3B,3,disagree
+QQ3C,1,agree
+QQ3C,2,neither
+QQ3C,3,disagree
+QQ3D,1,agree
+QQ3D,2,neither
+QQ3D,3,disagree
+QQ3E,1,agree
+QQ3E,2,neither
+QQ3E,3,disagree
+QQ3F,1,agree
+QQ3F,2,neither
+QQ3F,3,disagree
+QQ3G,1,agree
+QQ3G,2,neither
+QQ3G,3,disagree
+QQ4,1,great deal/a lot
+QQ4,2,some
+QQ4,3,not much/none
+QQ4,4,can't say
+QQ6A,1,agree
+QQ6A,2,neither
+QQ6A,3,disagree
+QQ6B,1,agree
+QQ6B,2,neither
+QQ6B,3,disagree
+QQ6C,1,agree
+QQ6C,2,neither
+QQ6C,3,disagree
+QQ6D,1,agree
+QQ6D,2,neither
+QQ6D,3,disagree
+QQ6E,1,agree
+QQ6E,2,neither
+QQ6E,3,disagree
+QQ6F,1,agree
+QQ6F,2,neither
+QQ6F,3,disagree
+QQ7A,1,agree
+QQ7A,2,neither
+QQ7A,3,disagree
+QQ7B,1,agree
+QQ7B,2,neither
+QQ7B,3,disagree
+QQ7C,1,agree
+QQ7C,2,neither
+QQ7C,3,disagree
+QQ13A,1,agree
+QQ13A,2,neither
+QQ13A,3,disagree
+QQ13B,1,agree
+QQ13B,2,neither
+QQ13B,3,disagree
+QQ13C,1,agree
+QQ13C,2,neither
+QQ13C,3,disagree
+QQ13D,1,agree
+QQ13D,2,neither
+QQ13D,3,disagree
+QQ13E,1,agree
+QQ13E,2,neither
+QQ13E,3,disagree
+QQ13F,1,agree
+QQ13F,2,neither
+QQ13F,3,disagree
+QQ13G,1,agree
+QQ13G,2,neither
+QQ13G,3,disagree
+QQ14,1,referendum
+QQ14,2,no referendum
+QQ14,3,can't say
+QQ16,1,royal family
+QQ16,2,nation
+QQ16,3,can't say
+QQ20,1,agree
+QQ20,2,neither
+QQ20,3,disagree
+QQ21,1,works well
+QQ21,2,doesn't work well
+QQ21,3,can't say
+QQ22A,1,agree
+QQ22A,2,neither
+QQ22A,3,disagree
+QQ22B,1,agree
+QQ22B,2,neither
+QQ22B,3,disagree
+QQ22C,1,agree
+QQ22C,2,neither
+QQ22C,3,disagree
+QQ22D,1,agree
+QQ22D,2,neither
+QQ22D,3,disagree
+R1,1,1   the monarchy sho
+R1,2,2   the monarchy sho
+R1,3,3   the monarchy sho
+R1,4,8   can't choose
+R1,5,9   not answered
+R2A,1,1   very important
+R2A,2,2   quite important
+R2A,3,3   not very importa
+R2A,4,4   not at all impor
+R2A,5,8   can't choose
+R2A,6,9   not answered
+R2B,1,1   very important
+R2B,2,2   quite important
+R2B,3,3   not very importa
+R2B,4,4   not at all impor
+R2B,5,8   can't choose
+R2B,6,9   not answered
+R2C,1,1   very important
+R2C,2,2   quite important
+R2C,3,3   not very importa
+R2C,4,4   not at all impor
+R2C,5,8   can't choose
+R2C,6,9   not answered
+R2D,1,1   very important
+R2D,2,2   quite important
+R2D,3,3   not very importa
+R2D,4,4   not at all impor
+R2D,5,8   can't choose
+R2D,6,9   not answered
+R2E,1,1   very important
+R2E,2,2   quite important
+R2E,3,3   not very importa
+R2E,4,4   not at all impor
+R2E,5,8   can't choose
+R2E,6,9   not answered
+R2F,1,1   very important
+R2F,2,2   quite important
+R2F,3,3   not very importa
+R2F,4,4   not at all impor
+R2F,5,8   can't choose
+R2F,6,9   not answered
+R2G,1,1   very important
+R2G,2,2   quite important
+R2G,3,3   not very importa
+R2G,4,4   not at all impor
+R2G,5,8   can't choose
+R2G,6,9   not answered
+R2H,1,1   very important
+R2H,2,2   quite important
+R2H,3,3   not very importa
+R2H,4,4   not at all impor
+R2H,5,8   can't choose
+R2H,6,9   not answered
+R3A,1,1   strongly agree
+R3A,2,2   agree
+R3A,3,3   neither agree or
+R3A,4,4   disagree
+R3A,5,5   strongly disagre
+R3A,6,9   not answered
+R3B,1,1   strongly agree
+R3B,2,2   agree
+R3B,3,3   neither agree or
+R3B,4,4   disagree
+R3B,5,5   strongly disagre
+R3B,6,9   not answered
+R3C,1,1   strongly agree
+R3C,2,2   agree
+R3C,3,3   neither agree or
+R3C,4,4   disagree
+R3C,5,5   strongly disagre
+R3C,6,9   not answered
+R3D,1,1   strongly agree
+R3D,2,2   agree
+R3D,3,3   neither agree or
+R3D,4,4   disagree
+R3D,5,5   strongly disagre
+R3D,6,9   not answered
+R3E,1,1   strongly agree
+R3E,2,2   agree
+R3E,3,3   neither agree or
+R3E,4,4   disagree
+R3E,5,5   strongly disagre
+R3E,6,9   not answered
+R3F,1,1   strongly agree
+R3F,2,2   agree
+R3F,3,3   neither agree or
+R3F,4,4   disagree
+R3F,5,5   strongly disagre
+R3F,6,9   not answered
+R3G,1,1   strongly agree
+R3G,2,2   agree
+R3G,3,3   neither agree or
+R3G,4,4   disagree
+R3G,5,5   strongly disagre
+R3G,6,9   not answered
+R4,1,1   a great deal of
+R4,2,2   quite a lot of i
+R4,3,3   some influence
+R4,4,4   not very much in
+R4,5,5   no influence at
+R4,6,8   can't say
+R4,7,9   not answered
+R5A,1,1   true
+R5A,2,2   false
+R5A,3,3   don't know
+R5A,4,9   not answered
+R5B,1,1   true
+R5B,2,2   false
+R5B,3,3   don't know
+R5B,4,9   not answered
+R5C,1,1   true
+R5C,2,2   false
+R5C,3,3   don't know
+R5C,4,9   not answered
+R5D,1,1   true
+R5D,2,2   false
+R5D,3,3   don't know
+R5D,4,9   not answered
+R5E,1,1   true
+R5E,2,2   false
+R5E,3,3   don't know
+R5E,4,9   not answered
+R5F,1,1   true
+R5F,2,2   false
+R5F,3,3   don't know
+R5F,4,9   not answered
+R5G,1,1   true
+R5G,2,2   false
+R5G,3,3   don't know
+R5G,4,9   not answered
+R5H,1,1   true
+R5H,2,2   false
+R5H,3,3   don't know
+R5H,4,9   not answered
+R6A,1,1   strongly agree
+R6A,2,2   agree
+R6A,3,3   neither agree or
+R6A,4,4   disagree
+R6A,5,5   strongly disagre
+R6A,6,9   not answered
+R6B,1,1   strongly agree
+R6B,2,2   agree
+R6B,3,3   neither agree or
+R6B,4,4   disagree
+R6B,5,5   strongly disagre
+R6B,6,9   not answered
+R6C,1,1   strongly agree
+R6C,2,2   agree
+R6C,3,3   neither agree or
+R6C,4,4   disagree
+R6C,5,5   strongly disagre
+R6C,6,9   not answered
+R6D,1,1   strongly agree
+R6D,2,2   agree
+R6D,3,3   neither agree or
+R6D,4,4   disagree
+R6D,5,5   strongly disagre
+R6D,6,9   not answered
+R6E,1,1   strongly agree
+R6E,2,2   agree
+R6E,3,3   neither agree or
+R6E,4,4   disagree
+R6E,5,5   strongly disagre
+R6E,6,9   not answered
+R6F,1,1   strongly agree
+R6F,2,2   agree
+R6F,3,3   neither agree or
+R6F,4,4   disagree
+R6F,5,5   strongly disagre
+R6F,6,9   not answered
+R7A,1,1   strongly agree
+R7A,2,2   agree
+R7A,3,3   neither agree or
+R7A,4,4   disagree
+R7A,5,5   strongly disagre
+R7A,6,9   not answered
+R7B,1,1   strongly agree
+R7B,2,2   agree
+R7B,3,3   neither agree or
+R7B,4,4   disagree
+R7B,5,5   strongly disagre
+R7B,6,9   not answered
+R7C,1,1   strongly agree
+R7C,2,2   agree
+R7C,3,3   neither agree or
+R7C,4,4   disagree
+R7C,5,5   strongly disagre
+R7C,6,9   not answered
+R8A,1,1   brother or siste
+R8A,2,2   eldest brother
+R8A,3,3   eldest sister
+R8A,4,4   eldest child
+R8A,5,5   eldest son
+R8A,6,6   eldest daughter
+R8A,7,7   none of these
+R8A,8,8   can't choose
+R8A,9,9   not answered
+R8B,1,1   brother or siste
+R8B,2,2   eldest brother
+R8B,3,3   eldest sister
+R8B,4,4   eldest child
+R8B,5,5   eldest son
+R8B,6,6   eldest daughter
+R8B,7,7   none of these
+R8B,8,8   can't choose
+R8B,9,9   not answered
+R9,1,1   to continue to h
+R9,2,2   to have a presid
+R9,3,8   can't choose
+R9,4,9   not answered
+R10,1,1   at least another
+R10,2,2   at least another
+R10,3,3   at least another
+R10,4,4   at least another
+R10,5,5   at least another
+R10,6,6   less than 5 year
+R10,7,8   can't choose
+R10,8,9   not answered
+R11,1,1   at least another
+R11,2,2   at least another
+R11,3,3   at least another
+R11,4,4   at least another
+R11,5,5   at least another
+R11,6,6   less than 5 year
+R11,7,8   can't choose
+R11,8,9   not answered
+R12A,1,1   a different styl
+R12A,2,2   an elected head
+R12A,3,3   an elected head
+R12A,4,8   can't choose
+R12A,5,9   not answered
+R12B,1,1   a different styl
+R12B,2,2   an elected head
+R12B,3,3   an elected head
+R12B,4,8   can't choose
+R12B,5,9   not answered
+R13A,1,1   strongly agree
+R13A,2,2   agree
+R13A,3,3   neither agree or
+R13A,4,4   disagree
+R13A,5,5   strongly disagre
+R13A,6,9   not answered
+R13B,1,1   strongly agree
+R13B,2,2   agree
+R13B,3,3   neither agree or
+R13B,4,4   disagree
+R13B,5,5   strongly disagre
+R13B,6,9   not answered
+R13C,1,1   strongly agree
+R13C,2,2   agree
+R13C,3,3   neither agree or
+R13C,4,4   disagree
+R13C,5,5   strongly disagre
+R13C,6,9   not answered
+R13D,1,1   strongly agree
+R13D,2,2   agree
+R13D,3,3   neither agree or
+R13D,4,4   disagree
+R13D,5,5   strongly disagre
+R13D,6,9   not answered
+R13E,1,1   strongly agree
+R13E,2,2   agree
+R13E,3,3   neither agree or
+R13E,4,4   disagree
+R13E,5,5   strongly disagre
+R13E,6,9   not answered
+R13F,1,1   strongly agree
+R13F,2,2   agree
+R13F,3,3   neither agree or
+R13F,4,4   disagree
+R13F,5,5   strongly disagre
+R13F,6,9   not answered
+R13G,1,1   strongly agree
+R13G,2,2   agree
+R13G,3,3   neither agree or
+R13G,4,4   disagree
+R13G,5,5   strongly disagre
+R13G,6,9   not answered
+R14,1,1   definitely
+R14,2,2   probably
+R14,3,3   definitely not
+R14,4,4   probably not
+R14,5,8   can't say
+R14,6,9   not answered
+R15,1,1   the queen should
+R15,2,2   there should be
+R15,3,8   can't choose
+R15,4,9   not answered
+R16,1,1   definitely the r
+R16,2,2   probably the roy
+R16,3,3   probably the nat
+R16,4,4   definitely the n
+R16,5,8   can't choose
+R16,6,9   not answered
+R17,1,1   a king or queen
+R17,2,2   an elected presi
+R17,3,8   can't choose
+R17,4,9   not answered
+R18,1,1   the house of lor
+R18,2,2   the house of lor
+R18,3,3   the house of lor
+R18,4,8   can't choose
+R18,5,9   not answered
+R19A,1,1   hereditary peers
+R19A,2,2   the fact that so
+R19A,3,8   can't choose
+R19A,4,9   not answered
+R19B,1,1   should continue
+R19B,2,2   all members of t
+R19B,3,8   can't choose
+R19B,4,9   not answered
+R20,1,1   agree strongly
+R20,2,2   agree
+R20,3,3   neither agree no
+R20,4,4   disagree
+R20,5,5   disagree strongl
+R20,6,8   can't choose
+R20,7,9   not answered
+R21,1,1   it works well an
+R21,2,2   it works well bu
+R21,3,3   it does not work
+R21,4,4   it does not work
+R21,5,8   can't choose
+R21,6,9   not answered
+R22A,1,1   strongly agree
+R22A,2,2   agree
+R22A,3,3   neither agree or
+R22A,4,4   disagree
+R22A,5,5   strongly disagre
+R22A,6,9   not answered
+R22B,1,1   strongly agree
+R22B,2,2   agree
+R22B,3,3   neither agree or
+R22B,4,4   disagree
+R22B,5,5   strongly disagre
+R22B,6,9   not answered
+R22C,1,1   strongly agree
+R22C,2,2   agree
+R22C,3,3   neither agree or
+R22C,4,4   disagree
+R22C,5,5   strongly disagre
+R22C,6,9   not answered
+R22D,1,1   strongly agree
+R22D,2,2   agree
+R22D,3,3   neither agree or
+R22D,4,4   disagree
+R22D,5,5   strongly disagre
+R22D,6,9   not answered
+RSCORE,1,0 correct
+RSCORE,2,1 correct
+RSCORE,3,2 correct
+RSCORE,4,3 correct
+RSCORE,5,4 correct
+RSCORE,6,5 correct
+RSCORE,7,6 correct
+RSCORE,8,7 correct
+RSCORE,9,8 correct
+RKNOWL,1,0-3 correct
+RKNOWL,2,4-5 correct
+RKNOWL,3,6-8 correct
+RR2A,1,important
+RR2A,2,not important
+RR2A,3,can't say
+RR2B,1,important
+RR2B,2,not important
+RR2B,3,can't say
+RR2C,1,important
+RR2C,2,not important
+RR2C,3,can't say
+RR2D,1,important
+RR2D,2,not important
+RR2D,3,can't say
+RR2E,1,important
+RR2E,2,not important
+RR2E,3,can't say
+RR2F,1,important
+RR2F,2,not important
+RR2F,3,can't say
+RR2G,1,important
+RR2G,2,not important
+RR2G,3,can't say
+RR2H,1,important
+RR2H,2,not important
+RR2H,3,can't say
+RR3A,1,agree
+RR3A,2,neither
+RR3A,3,disagree
+RR3B,1,agree
+RR3B,2,neither
+RR3B,3,disagree
+RR3C,1,agree
+RR3C,2,neither
+RR3C,3,disagree
+RR3D,1,agree
+RR3D,2,neither
+RR3D,3,disagree
+RR3E,1,agree
+RR3E,2,neither
+RR3E,3,disagree
+RR3F,1,agree
+RR3F,2,neither
+RR3F,3,disagree
+RR3G,1,agree
+RR3G,2,neither
+RR3G,3,disagree
+RR4,1,great deal/a lot
+RR4,2,some
+RR4,3,not much/none
+RR4,4,can't say
+RR6A,1,agree
+RR6A,2,neither
+RR6A,3,disagree
+RR6B,1,agree
+RR6B,2,neither
+RR6B,3,disagree
+RR6C,1,agree
+RR6C,2,neither
+RR6C,3,disagree
+RR6D,1,agree
+RR6D,2,neither
+RR6D,3,disagree
+RR6E,1,agree
+RR6E,2,neither
+RR6E,3,disagree
+RR6F,1,agree
+RR6F,2,neither
+RR6F,3,disagree
+RR7A,1,agree
+RR7A,2,neither
+RR7A,3,disagree
+RR7B,1,agree
+RR7B,2,neither
+RR7B,3,disagree
+RR7C,1,agree
+RR7C,2,neither
+RR7C,3,disagree
+RR13A,1,agree
+RR13A,2,neither
+RR13A,3,disagree
+RR13B,1,agree
+RR13B,2,neither
+RR13B,3,disagree
+RR13C,1,agree
+RR13C,2,neither
+RR13C,3,disagree
+RR13D,1,agree
+RR13D,2,neither
+RR13D,3,disagree
+RR13E,1,agree
+RR13E,2,neither
+RR13E,3,disagree
+RR13F,1,agree
+RR13F,2,neither
+RR13F,3,disagree
+RR13G,1,agree
+RR13G,2,neither
+RR13G,3,disagree
+RR14,1,referendum
+RR14,2,no referendum
+RR14,3,can't say
+RR16,1,royal family
+RR16,2,nation
+RR16,3,can't say
+RR20,1,agree
+RR20,2,neither
+RR20,3,disagree
+RR21,1,works well
+RR21,2,doesn't work well
+RR21,3,can't say
+RR22A,1,agree
+RR22A,2,neither
+RR22A,3,disagree
+RR22B,1,agree
+RR22B,2,neither
+RR22B,3,disagree
+RR22C,1,agree
+RR22C,2,neither
+RR22C,3,disagree
+RR22D,1,agree
+RR22D,2,neither
+RR22D,3,disagree

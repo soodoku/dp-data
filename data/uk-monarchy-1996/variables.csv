@@ -1,0 +1,418 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+ARF22,double,haven_labelled|vctrs_vctr|double,,outcome of recruitment attempt,F8.0,,,TRUE,Retained
+TOTAL,double,numeric,,,F8.0,,,TRUE,Retained
+WEEKEND,double,haven_labelled|vctrs_vctr|double,,attended weekend,F8.0,,,TRUE,Retained
+AGEGP,double,haven_labelled|vctrs_vctr|double,,agegp  age summary,F8.0,,,TRUE,Retained
+AGESEX,double,haven_labelled|vctrs_vctr|double,,agesex  age group within sex,F8.0,,,TRUE,Retained
+CHILD,double,haven_labelled|vctrs_vctr|double,,child  children in h/hold (a3a/b),F8.0,,,TRUE,Retained
+YCHILD,double,haven_labelled|vctrs_vctr|double,,ychild  age of youngest child (a3b),F8.0,,,TRUE,Retained
+MARSTAT,double,haven_labelled|vctrs_vctr|double,,marstat  summary marital status (a4),F8.0,,,TRUE,Retained
+NEWSPAP,double,haven_labelled|vctrs_vctr|double,,newspap  summary newspaper readership (a,F8.0,,,TRUE,Retained
+POLINT,double,haven_labelled|vctrs_vctr|double,,polint  interest in politics (a6),F8.0,,,TRUE,Retained
+PARTY,double,haven_labelled|vctrs_vctr|double,,party  party identity (b1a),F8.0,,,TRUE,Retained
+STATUS,double,haven_labelled|vctrs_vctr|double,,status  activity status (b3),F8.0,,,TRUE,Retained
+SEGFULL,double,haven_labelled|vctrs_vctr|double,,segfull  full seg breakdown,F8.0,,,TRUE,Retained
+CLASS,double,haven_labelled|vctrs_vctr|double,,class  summary class (based on seg),F8.0,,,TRUE,Retained
+EDUCAGE,double,haven_labelled|vctrs_vctr|double,,educage  age left ft ed (b11),F8.0,,,TRUE,Retained
+ACQUALS,double,haven_labelled|vctrs_vctr|double,,acquals  academic qualifications (b12a),F8.0,,,TRUE,Retained
+VOQUALS,double,haven_labelled|vctrs_vctr|double,,vocquals  vocational qualifications (b12,F8.0,,,TRUE,Retained
+QUALSUM,double,haven_labelled|vctrs_vctr|double,,qualsum qualifications summary (b12b),F8.0,,,TRUE,Retained
+IDENT,double,haven_labelled|vctrs_vctr|double,,natid  national identity,F8.0,,,TRUE,Retained
+RELIG,double,haven_labelled|vctrs_vctr|double,,relig  religion (b17),F8.0,,,TRUE,Retained
+TRUST,double,haven_labelled|vctrs_vctr|double,,trust  trust scale,F8.0,,,TRUE,Retained
+PATRIOT,double,haven_labelled|vctrs_vctr|double,,patriot patriotism scale,F8.0,,,TRUE,Retained
+CHANCES,double,haven_labelled|vctrs_vctr|double,,chances  meritocracy1,F8.0,,,TRUE,Retained
+TRADS,double,haven_labelled|vctrs_vctr|double,,trads  traditionalism,F8.0,,,TRUE,Retained
+SCHOOLS,double,haven_labelled|vctrs_vctr|double,,schools  meritocracy2,F8.0,,,TRUE,Retained
+WEALTH,double,haven_labelled|vctrs_vctr|double,,wealth  inequality,F8.0,,,TRUE,Retained
+REG,double,haven_labelled|vctrs_vctr|double,,reg  summary region,F8.0,,,TRUE,Retained
+CNTRY,double,haven_labelled|vctrs_vctr|double,,cntry  country,F8.0,,,TRUE,Retained
+GROUP,double,haven_labelled|vctrs_vctr|double,,group  group,F8.0,,,TRUE,Retained
+REGION,double,haven_labelled|vctrs_vctr|double,,region  standard region,F8.0,,,TRUE,Retained
+SEX,double,haven_labelled|vctrs_vctr|double,,sex  sex of respondent,F8.0,,,TRUE,Retained
+AGEB,double,haven_labelled|vctrs_vctr|double,,axis : ageb  age of respondent,F8.0,,,TRUE,Retained
+A3AB,double,haven_labelled|vctrs_vctr|double,,axis : a3ab  number of children 0-17,F8.0,,,TRUE,Retained
+A3B_1B,double,haven_labelled|vctrs_vctr|double,,axis : a3b_1b  how many are aged under 5,F8.0,,,TRUE,Retained
+A3B_2B,double,haven_labelled|vctrs_vctr|double,,axis : a3b_2b  how many are aged between,F8.0,,,TRUE,Retained
+A3B_3B,double,haven_labelled|vctrs_vctr|double,,axis : a3b_3b  how many are aged between,F8.0,,,TRUE,Retained
+A3B_4B,double,haven_labelled|vctrs_vctr|double,,axis : a3b_4b  how many are aged between,F8.0,,,TRUE,Retained
+A4,double,haven_labelled|vctrs_vctr|double,,a4  can i just check whether at present,F8.0,,,TRUE,Retained
+A5A,double,haven_labelled|vctrs_vctr|double,,a5a  normally read any daily morning new,F8.0,,,TRUE,Retained
+A5B,double,haven_labelled|vctrs_vctr|double,,a5b  which one do you normally read?,F8.0,,,TRUE,Retained
+A6,double,haven_labelled|vctrs_vctr|double,,a6  how interested would you say you are,F8.0,,,TRUE,Retained
+A7A,double,haven_labelled|vctrs_vctr|double,,a7a the queen has been let down by some,F8.0,,,TRUE,Retained
+A7B,double,haven_labelled|vctrs_vctr|double,,"a7b on the whole, the royal family sets",F8.0,,,TRUE,Retained
+A7C,double,haven_labelled|vctrs_vctr|double,,a7c journalists damaging reputation of r,F8.0,,,TRUE,Retained
+A7D,double,haven_labelled|vctrs_vctr|double,,a7d newspapers should be less harsh on t,F8.0,,,TRUE,Retained
+B1A,double,haven_labelled|vctrs_vctr|double,,b1a  party allegiance (1),F8.0,,,TRUE,Retained
+B1B,double,haven_labelled|vctrs_vctr|double,,b1b  party allegiance (2),F8.0,,,TRUE,Retained
+B1C,double,haven_labelled|vctrs_vctr|double,,b1c  strength of allegiance,F8.0,,,TRUE,Retained
+B2,double,haven_labelled|vctrs_vctr|double,,b2  economic activity status,F8.0,,,TRUE,Retained
+B3,double,haven_labelled|vctrs_vctr|double,,b3  number of adults 18+ in hh,F8.0,,,TRUE,Retained
+B4,double,haven_labelled|vctrs_vctr|double,,b4  chief income earner,F8.0,,,TRUE,Retained
+B5,double,haven_labelled|vctrs_vctr|double,,b5  economic activity status if c.i.e.,F8.0,,,TRUE,Retained
+B7,double,haven_labelled|vctrs_vctr|double,,b7  employment status of c.i.e. in curre,F8.0,,,TRUE,Retained
+B8,double,haven_labelled|vctrs_vctr|double,,b8  supervision status of c.i.e. in curr,F8.0,,,TRUE,Retained
+B9,double,haven_labelled|vctrs_vctr|double,,b9  establishment size - current/last jo,F8.0,,,TRUE,Retained
+B10A,double,haven_labelled|vctrs_vctr|double,,b10a  number of employees - current/last,F8.0,,,TRUE,Retained
+SOC,double,haven_labelled|vctrs_vctr|double,,soc  standard occupational classificatio,F8.0,,,TRUE,Retained
+ES,double,haven_labelled|vctrs_vctr|double,,es  employment status coding - c.i.e.,F8.0,,,TRUE,Retained
+SEG,double,haven_labelled|vctrs_vctr|double,,seg  seg of c.i.e.,F8.0,,,TRUE,Retained
+B11,double,haven_labelled|vctrs_vctr|double,,b11  at what age finished full-time educ,F8.0,,,TRUE,Retained
+B12A,double,haven_labelled|vctrs_vctr|double,,b12a  highest qualification,F8.0,,,TRUE,Retained
+B12B,double,haven_labelled|vctrs_vctr|double,,b12b  highest qualification,F8.0,,,TRUE,Retained
+@__B131,double,numeric,,british,F8.0,,,TRUE,Retained
+@__B132,double,numeric,,english,F8.0,,,TRUE,Retained
+@__B133,double,numeric,,scottish,F8.0,,,TRUE,Retained
+@__B134,double,numeric,,welsh,F8.0,,,TRUE,Retained
+@__B135,double,numeric,,irish,F8.0,,,TRUE,Retained
+@__B136,double,numeric,,northern irish,F8.0,,,TRUE,Retained
+@__B137,double,numeric,,european,F8.0,,,TRUE,Retained
+@__B138,double,numeric,,other,F8.0,,,TRUE,Retained
+@__B139,double,numeric,,none of these,F8.0,,,TRUE,Retained
+@__B1310,double,numeric,,not answered,F8.0,,,TRUE,Retained
+B14,double,haven_labelled|vctrs_vctr|double,,b14  how many codes ringed at b13,F8.0,,,TRUE,Retained
+B15,double,haven_labelled|vctrs_vctr|double,,b15  which description best describes -,F8.0,,,TRUE,Retained
+B16,double,haven_labelled|vctrs_vctr|double,,b16  ethnic group,F8.0,,,TRUE,Retained
+B17,double,haven_labelled|vctrs_vctr|double,,b17  do you regard yourself as belonging,F8.0,,,TRUE,Retained
+B18A,double,haven_labelled|vctrs_vctr|double,,b18a  trust government/party to place ne,F8.0,,,TRUE,Retained
+B18B,double,haven_labelled|vctrs_vctr|double,,b18b  trust journalists on national news,F8.0,,,TRUE,Retained
+B18C,double,haven_labelled|vctrs_vctr|double,,b18c  trust top civil servants to stand,F8.0,,,TRUE,Retained
+B18D,double,haven_labelled|vctrs_vctr|double,,b18d  trust politicians to tell truth wh,F8.0,,,TRUE,Retained
+B19A,double,haven_labelled|vctrs_vctr|double,,b19a  rather be a citizen of britain,F8.0,,,TRUE,Retained
+B19B,double,haven_labelled|vctrs_vctr|double,,b19b  ashamed of some things about brita,F8.0,,,TRUE,Retained
+B19C,double,haven_labelled|vctrs_vctr|double,,b19c  world better place if people more,F8.0,,,TRUE,Retained
+B19D,double,haven_labelled|vctrs_vctr|double,,b19d  britain generally better,F8.0,,,TRUE,Retained
+B19E,double,haven_labelled|vctrs_vctr|double,,b19e  should support country even if wro,F8.0,,,TRUE,Retained
+B20A,double,haven_labelled|vctrs_vctr|double,,b20a  attitude to those born into wealth,F8.0,,,TRUE,Retained
+B20B,double,haven_labelled|vctrs_vctr|double,,b20b  wrong for those born into wealth t,F8.0,,,TRUE,Retained
+B20C,double,haven_labelled|vctrs_vctr|double,,b20c  good luck to those born into wealt,F8.0,,,TRUE,Retained
+B21A,double,haven_labelled|vctrs_vctr|double,,b21a  best way forward for britain,F8.0,,,TRUE,Retained
+B21B,double,haven_labelled|vctrs_vctr|double,,b21b  stick to traditional ways,F8.0,,,TRUE,Retained
+B21C,double,haven_labelled|vctrs_vctr|double,,b21c  leave the past behind,F8.0,,,TRUE,Retained
+B22A,double,haven_labelled|vctrs_vctr|double,,b23a  quality of education,F8.0,,,TRUE,Retained
+B22B,double,haven_labelled|vctrs_vctr|double,,b23b  quality of education should be sam,F8.0,,,TRUE,Retained
+B22C,double,haven_labelled|vctrs_vctr|double,,b23c  parents should be able to pay for,F8.0,,,TRUE,Retained
+B23A,double,haven_labelled|vctrs_vctr|double,,b23a  inequalities in wealth,F8.0,,,TRUE,Retained
+B23B,double,haven_labelled|vctrs_vctr|double,,b23b  very rich should not be allowed to,F8.0,,,TRUE,Retained
+B23C,double,haven_labelled|vctrs_vctr|double,,b23c  nothing wrong with some people hav,F8.0,,,TRUE,Retained
+B24A,double,haven_labelled|vctrs_vctr|double,,b24a  each generation should choose new,F8.0,,,TRUE,Retained
+B24B,double,haven_labelled|vctrs_vctr|double,,b24a  success in britain depends more on,F8.0,,,TRUE,Retained
+B25A,double,haven_labelled|vctrs_vctr|double,,b25a  telephone in accommodation,F8.0,,,TRUE,Retained
+B25B,double,haven_labelled|vctrs_vctr|double,,b25b  telephone nummber for checking,F8.0,,,TRUE,Retained
+G1,double,haven_labelled|vctrs_vctr|double,,"Thinking about the monarchy or the royal family in Britain, which of the followi",F8.0,,,TRUE,Retained
+G2A,double,haven_labelled|vctrs_vctr|double,,g2a how important do you think the monar,F8.0,,,TRUE,Retained
+G2B,double,haven_labelled|vctrs_vctr|double,,g2b how important do you think the monar,F8.0,,,TRUE,Retained
+G2C,double,haven_labelled|vctrs_vctr|double,,g2c how important do you think the monar,F8.0,,,TRUE,Retained
+G2D,double,haven_labelled|vctrs_vctr|double,,g2d how important do you think the monar,F8.0,,,TRUE,Retained
+G2E,double,haven_labelled|vctrs_vctr|double,,g2e how important do you think the monar,F8.0,,,TRUE,Retained
+G2F,double,haven_labelled|vctrs_vctr|double,,g2f how important do you think the monar,F8.0,,,TRUE,Retained
+G2G,double,haven_labelled|vctrs_vctr|double,,g2g how important do you think the monar,F8.0,,,TRUE,Retained
+G2H,double,haven_labelled|vctrs_vctr|double,,g2h how important do you think the monar,F8.0,,,TRUE,Retained
+G3A,double,haven_labelled|vctrs_vctr|double,,g3a how much do you agree or disagree th,F8.0,,,TRUE,Retained
+G3B,double,haven_labelled|vctrs_vctr|double,,g3b how much do you agree or disagree th,F8.0,,,TRUE,Retained
+G3C,double,haven_labelled|vctrs_vctr|double,,g3c how much do you agree or disagree th,F8.0,,,TRUE,Retained
+G3D,double,haven_labelled|vctrs_vctr|double,,g3d how much do you agree or disagree th,F8.0,,,TRUE,Retained
+G3E,double,haven_labelled|vctrs_vctr|double,,g3e how much do you agree or disagree th,F8.0,,,TRUE,Retained
+G3F,double,haven_labelled|vctrs_vctr|double,,g3f how much do you agree or disagree th,F8.0,,,TRUE,Retained
+G3G,double,haven_labelled|vctrs_vctr|double,,g3g how much do you agree or disagree th,F8.0,,,TRUE,Retained
+G4,double,haven_labelled|vctrs_vctr|double,,"g4 as far as you know, how much influenc",F8.0,,,TRUE,Retained
+GSCORE,double,haven_labelled|vctrs_vctr|double,,gscore knowledge score,F8.0,,,TRUE,Retained
+G6A,double,haven_labelled|vctrs_vctr|double,,g6a how much do you agree or disagree th,F8.0,,,TRUE,Retained
+G6B,double,haven_labelled|vctrs_vctr|double,,g6b how much do you agree or disagree th,F8.0,,,TRUE,Retained
+G6C,double,haven_labelled|vctrs_vctr|double,,g6c how much do you agree or disagree th,F8.0,,,TRUE,Retained
+G6D,double,haven_labelled|vctrs_vctr|double,,g6d how much do you agree or disagree th,F8.0,,,TRUE,Retained
+G6E,double,haven_labelled|vctrs_vctr|double,,g6e how much do you agree or disagree th,F8.0,,,TRUE,Retained
+G6F,double,haven_labelled|vctrs_vctr|double,,g6f how much do you agree or disagree th,F8.0,,,TRUE,Retained
+G7A,double,haven_labelled|vctrs_vctr|double,,g7a how much do you agree or disagree th,F8.0,,,TRUE,Retained
+G7B,double,haven_labelled|vctrs_vctr|double,,g7b how much do you agree or disagree th,F8.0,,,TRUE,Retained
+G7C,double,haven_labelled|vctrs_vctr|double,,g7c how much do you agree or disagree th,F8.0,,,TRUE,Retained
+G9,double,haven_labelled|vctrs_vctr|double,,g9 what do you think would be best for b,F8.0,,,TRUE,Retained
+G10,double,haven_labelled|vctrs_vctr|double,,"g10 in your view, how long will the brit",F8.0,,,TRUE,Retained
+G11,double,haven_labelled|vctrs_vctr|double,,g11 and how long do you personally want,F8.0,,,TRUE,Retained
+@__G12A1,double,numeric,,more pro-monarchy,F8.0,,,TRUE,Retained
+@__G12A2,double,numeric,,- from hos as q,F8.0,,,TRUE,Retained
+@__G12A3,double,numeric,,- from hos as q and pm,F8.0,,,TRUE,Retained
+@__G12A4,double,numeric,,more pro hos as q,F8.0,,,TRUE,Retained
+@__G12A5,double,numeric,,- from monarchy,F8.0,,,TRUE,Retained
+@__G12A6,double,numeric,,- from hos as q and pm,F8.0,,,TRUE,Retained
+@__G12A7,double,numeric,,more pro hos as q and pm,F8.0,,,TRUE,Retained
+@__G12A8,double,numeric,,- from monarchy,F8.0,,,TRUE,Retained
+@__G12A9,double,numeric,,- from hos as q,F8.0,,,TRUE,Retained
+@__G12A0,double,numeric,,no change,F8.0,,,TRUE,Retained
+@__G12B1,double,numeric,,more anti-monarchy,F8.0,,,TRUE,Retained
+@__G12B2,double,numeric,,- from anti-hos as q,F8.0,,,TRUE,Retained
+@__G12B3,double,numeric,,- from anti-hos as q and pm,F8.0,,,TRUE,Retained
+@__G12B4,double,numeric,,more anti hos as q,F8.0,,,TRUE,Retained
+@__G12B5,double,numeric,,- from anti-monarchy,F8.0,,,TRUE,Retained
+@__G12B6,double,numeric,,- from anti-hos as q and pm,F8.0,,,TRUE,Retained
+@__G12B7,double,numeric,,more anti hos as q and pm,F8.0,,,TRUE,Retained
+@__G12B8,double,numeric,,- from anti-monarchy,F8.0,,,TRUE,Retained
+@__G12B9,double,numeric,,- from anti-hos as q,F8.0,,,TRUE,Retained
+@__G12B0,double,numeric,,no change,F8.0,,,TRUE,Retained
+G13A,double,haven_labelled|vctrs_vctr|double,,g13a how much do you agree or disagree t,F8.0,,,TRUE,Retained
+G13B,double,haven_labelled|vctrs_vctr|double,,g13b how much do you agree or disagree t,F8.0,,,TRUE,Retained
+G13C,double,haven_labelled|vctrs_vctr|double,,g13c how much do you agree or disagree t,F8.0,,,TRUE,Retained
+G13D,double,haven_labelled|vctrs_vctr|double,,g13d how much do you agree or disagree t,F8.0,,,TRUE,Retained
+G13E,double,haven_labelled|vctrs_vctr|double,,g13e how much do you agree or disagree t,F8.0,,,TRUE,Retained
+G13F,double,haven_labelled|vctrs_vctr|double,,g13f how much do you agree or disagree t,F8.0,,,TRUE,Retained
+G13G,double,haven_labelled|vctrs_vctr|double,,g13g how much do you agree or disagree t,F8.0,,,TRUE,Retained
+G14,double,haven_labelled|vctrs_vctr|double,,"g14 in your opinion, do you think there",F8.0,,,TRUE,Retained
+G15,double,haven_labelled|vctrs_vctr|double,,g15 if after a general election no party,F8.0,,,TRUE,Retained
+G16,double,haven_labelled|vctrs_vctr|double,,g16 suppose there were circumstances whe,F8.0,,,TRUE,Retained
+G17,double,haven_labelled|vctrs_vctr|double,,g17 comparing a king or queen with an el,F8.0,,,TRUE,Retained
+G18,double,haven_labelled|vctrs_vctr|double,,g18 now thinking about the house of lord,F8.0,,,TRUE,Retained
+G19A,double,haven_labelled|vctrs_vctr|double,,g19a the present house of lords contains,F8.0,,,TRUE,Retained
+G19B,double,haven_labelled|vctrs_vctr|double,,g19b and if you had to choose between th,F8.0,,,TRUE,Retained
+G20,double,haven_labelled|vctrs_vctr|double,,g20 what is your opinion of the followin,F8.0,,,TRUE,Retained
+G21,double,haven_labelled|vctrs_vctr|double,,"g21 all in all, how well or badly do you",F8.0,,,TRUE,Retained
+G22A,double,haven_labelled|vctrs_vctr|double,,g22a do you agree or disagree that peopl,F8.0,,,TRUE,Retained
+G22B,double,haven_labelled|vctrs_vctr|double,,g22b do you agree or disagree that you h,F8.0,,,TRUE,Retained
+G22C,double,haven_labelled|vctrs_vctr|double,,g22c do you agree or disagree that in br,F8.0,,,TRUE,Retained
+G22D,double,haven_labelled|vctrs_vctr|double,,g22d do you agree or disagree that you t,F8.0,,,TRUE,Retained
+Q1,double,haven_labelled|vctrs_vctr|double,," T2 Thinking about the monarchy or the royal family in Britain, which of the fol",F8.0,,,TRUE,Retained
+Q2A,double,haven_labelled|vctrs_vctr|double,,q2a how important do you think the monar,F8.0,,,TRUE,Retained
+Q2B,double,haven_labelled|vctrs_vctr|double,,q2b how important do you think the monar,F8.0,,,TRUE,Retained
+Q2C,double,haven_labelled|vctrs_vctr|double,,q2c how important do you think the monar,F8.0,,,TRUE,Retained
+Q2D,double,haven_labelled|vctrs_vctr|double,,q2d how important do you think the monar,F8.0,,,TRUE,Retained
+Q2E,double,haven_labelled|vctrs_vctr|double,,q2e how important do you think the monar,F8.0,,,TRUE,Retained
+Q2F,double,haven_labelled|vctrs_vctr|double,,q2f how important do you think the monar,F8.0,,,TRUE,Retained
+Q2G,double,haven_labelled|vctrs_vctr|double,,q2g how important do you think the monar,F8.0,,,TRUE,Retained
+Q2H,double,haven_labelled|vctrs_vctr|double,,q2h how important do you think the monar,F8.0,,,TRUE,Retained
+Q3A,double,haven_labelled|vctrs_vctr|double,,q3a how much do you agree or disagree th,F8.0,,,TRUE,Retained
+Q3B,double,haven_labelled|vctrs_vctr|double,,q3b how much do you agree or disagree th,F8.0,,,TRUE,Retained
+Q3C,double,haven_labelled|vctrs_vctr|double,,q3c how much do you agree or disagree th,F8.0,,,TRUE,Retained
+Q3D,double,haven_labelled|vctrs_vctr|double,,q3d how much do you agree or disagree th,F8.0,,,TRUE,Retained
+Q3E,double,haven_labelled|vctrs_vctr|double,,q3e how much do you agree or disagree th,F8.0,,,TRUE,Retained
+Q3F,double,haven_labelled|vctrs_vctr|double,,q3f how much do you agree or disagree th,F8.0,,,TRUE,Retained
+Q3G,double,haven_labelled|vctrs_vctr|double,,q3g how much do you agree or disagree th,F8.0,,,TRUE,Retained
+Q4,double,haven_labelled|vctrs_vctr|double,,"q4 as far as you know, how much influenc",F8.0,,,TRUE,Retained
+Q5A,double,haven_labelled|vctrs_vctr|double,,q5a do you think it is true or false tha,F8.0,,,TRUE,Retained
+Q5B,double,haven_labelled|vctrs_vctr|double,,q5b do you think it is true or false tha,F8.0,,,TRUE,Retained
+Q5C,double,haven_labelled|vctrs_vctr|double,,q5c do you think it is true or false tha,F8.0,,,TRUE,Retained
+Q5D,double,haven_labelled|vctrs_vctr|double,,q5d do you think it is true or false tha,F8.0,,,TRUE,Retained
+Q5E,double,haven_labelled|vctrs_vctr|double,,q5e do you think it is true or false tha,F8.0,,,TRUE,Retained
+Q5F,double,haven_labelled|vctrs_vctr|double,,q5f do you think it is true or false tha,F8.0,,,TRUE,Retained
+Q5G,double,haven_labelled|vctrs_vctr|double,,q5g do you think it is true or false tha,F8.0,,,TRUE,Retained
+Q5H,double,haven_labelled|vctrs_vctr|double,,q5h do you think it is true or false tha,F8.0,,,TRUE,Retained
+Q6A,double,haven_labelled|vctrs_vctr|double,,q6a how much do you agree or disagree th,F8.0,,,TRUE,Retained
+Q6B,double,haven_labelled|vctrs_vctr|double,,q6b how much do you agree or disagree th,F8.0,,,TRUE,Retained
+Q6C,double,haven_labelled|vctrs_vctr|double,,q6c how much do you agree or disagree th,F8.0,,,TRUE,Retained
+Q6D,double,haven_labelled|vctrs_vctr|double,,q6d how much do you agree or disagree th,F8.0,,,TRUE,Retained
+Q6E,double,haven_labelled|vctrs_vctr|double,,q6e how much do you agree or disagree th,F8.0,,,TRUE,Retained
+Q6F,double,haven_labelled|vctrs_vctr|double,,q6f how much do you agree or disagree th,F8.0,,,TRUE,Retained
+Q7A,double,haven_labelled|vctrs_vctr|double,,q7a how much do you agree or disagree th,F8.0,,,TRUE,Retained
+Q7B,double,haven_labelled|vctrs_vctr|double,,q7b how much do you agree or disagree th,F8.0,,,TRUE,Retained
+Q7C,double,haven_labelled|vctrs_vctr|double,,q7c how much do you agree or disagree th,F8.0,,,TRUE,Retained
+Q8A,double,haven_labelled|vctrs_vctr|double,,"q8a if a british monarch dies, which of",F8.0,,,TRUE,Retained
+Q8B,double,haven_labelled|vctrs_vctr|double,,"q8b if a british monarch dies, which of",F8.0,,,TRUE,Retained
+Q9,double,haven_labelled|vctrs_vctr|double,,q9 what do you think would be best for b,F8.0,,,TRUE,Retained
+Q10,double,haven_labelled|vctrs_vctr|double,,"q10 in your view, how long will the brit",F8.0,,,TRUE,Retained
+Q11,double,haven_labelled|vctrs_vctr|double,,q11 and how long do you personally want,F8.0,,,TRUE,Retained
+Q12A,double,haven_labelled|vctrs_vctr|double,,q12a suppose britain did change its pres,F8.0,,,TRUE,Retained
+Q12B,double,haven_labelled|vctrs_vctr|double,,q12b and which of the same three possibi,F8.0,,,TRUE,Retained
+Q13A,double,haven_labelled|vctrs_vctr|double,,q13a how much do you agree or disagree t,F8.0,,,TRUE,Retained
+Q13B,double,haven_labelled|vctrs_vctr|double,,q13b how much do you agree or disagree t,F8.0,,,TRUE,Retained
+Q13C,double,haven_labelled|vctrs_vctr|double,,q13c how much do you agree or disagree t,F8.0,,,TRUE,Retained
+Q13D,double,haven_labelled|vctrs_vctr|double,,q13d how much do you agree or disagree t,F8.0,,,TRUE,Retained
+Q13E,double,haven_labelled|vctrs_vctr|double,,q13e how much do you agree or disagree t,F8.0,,,TRUE,Retained
+Q13F,double,haven_labelled|vctrs_vctr|double,,q13f how much do you agree or disagree t,F8.0,,,TRUE,Retained
+Q13G,double,haven_labelled|vctrs_vctr|double,,q13g how much do you agree or disagree t,F8.0,,,TRUE,Retained
+Q14,double,haven_labelled|vctrs_vctr|double,,"q14 in your opinion, do you think there",F8.0,,,TRUE,Retained
+Q15,double,haven_labelled|vctrs_vctr|double,,q15 if after a general election no party,F8.0,,,TRUE,Retained
+Q16,double,haven_labelled|vctrs_vctr|double,,q16 suppose there were circumstances whe,F8.0,,,TRUE,Retained
+Q17,double,haven_labelled|vctrs_vctr|double,,q17 comparing a king or queen with an el,F8.0,,,TRUE,Retained
+Q18,double,haven_labelled|vctrs_vctr|double,,q18 now thinking about the house of lord,F8.0,,,TRUE,Retained
+Q19A,double,haven_labelled|vctrs_vctr|double,,q19a the present house of lords contains,F8.0,,,TRUE,Retained
+Q19B,double,haven_labelled|vctrs_vctr|double,,q19b and if you had to choose between th,F8.0,,,TRUE,Retained
+Q20,double,haven_labelled|vctrs_vctr|double,,q20 what is your opinion of the followin,F8.0,,,TRUE,Retained
+Q21,double,haven_labelled|vctrs_vctr|double,,"q21 all in all, how well or badly do you",F8.0,,,TRUE,Retained
+Q22A,double,haven_labelled|vctrs_vctr|double,,q22a do you agree or disagree that peopl,F8.0,,,TRUE,Retained
+Q22B,double,haven_labelled|vctrs_vctr|double,,q22b do you agree or disagree that you h,F8.0,,,TRUE,Retained
+Q22C,double,haven_labelled|vctrs_vctr|double,,q22c do you agree or disagree that in br,F8.0,,,TRUE,Retained
+Q22D,double,haven_labelled|vctrs_vctr|double,,q22d do you agree or disagree that you t,F8.0,,,TRUE,Retained
+QSCORE,double,haven_labelled|vctrs_vctr|double,,qscore  knowledge scale,F8.0,,,TRUE,Retained
+QKNOWL,double,haven_labelled|vctrs_vctr|double,,qknowl  knowledge scale - banded,F8.0,,,TRUE,Retained
+QQ2A,double,haven_labelled|vctrs_vctr|double,,qq2a how important do you think the mona,F8.0,,,TRUE,Retained
+QQ2B,double,haven_labelled|vctrs_vctr|double,,qq2b how important do you think the mona,F8.0,,,TRUE,Retained
+QQ2C,double,haven_labelled|vctrs_vctr|double,,qq2c how important do you think the mona,F8.0,,,TRUE,Retained
+QQ2D,double,haven_labelled|vctrs_vctr|double,,qq2d how important do you think the mona,F8.0,,,TRUE,Retained
+QQ2E,double,haven_labelled|vctrs_vctr|double,,qq2e how important do you think the mona,F8.0,,,TRUE,Retained
+QQ2F,double,haven_labelled|vctrs_vctr|double,,qq2f how important do you think the mona,F8.0,,,TRUE,Retained
+QQ2G,double,haven_labelled|vctrs_vctr|double,,qq2g how important do you think the mona,F8.0,,,TRUE,Retained
+QQ2H,double,haven_labelled|vctrs_vctr|double,,qq2h how important do you think the mona,F8.0,,,TRUE,Retained
+QQ3A,double,haven_labelled|vctrs_vctr|double,,qq3a how much do you agree or disagree t,F8.0,,,TRUE,Retained
+QQ3B,double,haven_labelled|vctrs_vctr|double,,qq3b how much do you agree or disagree t,F8.0,,,TRUE,Retained
+QQ3C,double,haven_labelled|vctrs_vctr|double,,qq3c how much do you agree or disagree t,F8.0,,,TRUE,Retained
+QQ3D,double,haven_labelled|vctrs_vctr|double,,qq3d how much do you agree or disagree t,F8.0,,,TRUE,Retained
+QQ3E,double,haven_labelled|vctrs_vctr|double,,qq3e how much do you agree or disagree t,F8.0,,,TRUE,Retained
+QQ3F,double,haven_labelled|vctrs_vctr|double,,qq3f how much do you agree or disagree t,F8.0,,,TRUE,Retained
+QQ3G,double,haven_labelled|vctrs_vctr|double,,qq3g how much do you agree or disagree t,F8.0,,,TRUE,Retained
+QQ4,double,haven_labelled|vctrs_vctr|double,,"qq4 as far as you know, how much influen",F8.0,,,TRUE,Retained
+QQ6A,double,haven_labelled|vctrs_vctr|double,,qq6a how much do you agree or disagree t,F8.0,,,TRUE,Retained
+QQ6B,double,haven_labelled|vctrs_vctr|double,,qq6b how much do you agree or disagree t,F8.0,,,TRUE,Retained
+QQ6C,double,haven_labelled|vctrs_vctr|double,,qq6c how much do you agree or disagree t,F8.0,,,TRUE,Retained
+QQ6D,double,haven_labelled|vctrs_vctr|double,,qq6d how much do you agree or disagree t,F8.0,,,TRUE,Retained
+QQ6E,double,haven_labelled|vctrs_vctr|double,,qq6e how much do you agree or disagree t,F8.0,,,TRUE,Retained
+QQ6F,double,haven_labelled|vctrs_vctr|double,,qq6f how much do you agree or disagree t,F8.0,,,TRUE,Retained
+QQ7A,double,haven_labelled|vctrs_vctr|double,,qq7a how much do you agree or disagree t,F8.0,,,TRUE,Retained
+QQ7B,double,haven_labelled|vctrs_vctr|double,,qq7b how much do you agree or disagree t,F8.0,,,TRUE,Retained
+QQ7C,double,haven_labelled|vctrs_vctr|double,,qq7c how much do you agree or disagree t,F8.0,,,TRUE,Retained
+QQ13A,double,haven_labelled|vctrs_vctr|double,,qq13a how much do you agree or disagree,F8.0,,,TRUE,Retained
+QQ13B,double,haven_labelled|vctrs_vctr|double,,qq13b how much do you agree or disagree,F8.0,,,TRUE,Retained
+QQ13C,double,haven_labelled|vctrs_vctr|double,,qq13c how much do you agree or disagree,F8.0,,,TRUE,Retained
+QQ13D,double,haven_labelled|vctrs_vctr|double,,qq13d how much do you agree or disagree,F8.0,,,TRUE,Retained
+QQ13E,double,haven_labelled|vctrs_vctr|double,,qq13e how much do you agree or disagree,F8.0,,,TRUE,Retained
+QQ13F,double,haven_labelled|vctrs_vctr|double,,qq13f how much do you agree or disagree,F8.0,,,TRUE,Retained
+QQ13G,double,haven_labelled|vctrs_vctr|double,,qq13g how much do you agree or disagree,F8.0,,,TRUE,Retained
+QQ14,double,haven_labelled|vctrs_vctr|double,,"qq14 in your opinion, do you think there",F8.0,,,TRUE,Retained
+QQ16,double,haven_labelled|vctrs_vctr|double,,qq16 suppose there were circumstances wh,F8.0,,,TRUE,Retained
+QQ20,double,haven_labelled|vctrs_vctr|double,,qq20 what is your opinion of the followi,F8.0,,,TRUE,Retained
+QQ21,double,haven_labelled|vctrs_vctr|double,,"qq21 all in all, how well or badly do yo",F8.0,,,TRUE,Retained
+QQ22A,double,haven_labelled|vctrs_vctr|double,,qq22a do you agree or disagree that peop,F8.0,,,TRUE,Retained
+QQ22B,double,haven_labelled|vctrs_vctr|double,,qq22b do you agree or disagree that you,F8.0,,,TRUE,Retained
+QQ22C,double,haven_labelled|vctrs_vctr|double,,qq22c do you agree or disagree that in b,F8.0,,,TRUE,Retained
+QQ22D,double,haven_labelled|vctrs_vctr|double,,qq22d do you agree or disagree that you,F8.0,,,TRUE,Retained
+R1,double,haven_labelled|vctrs_vctr|double,,r1 thinking about the monarchy or the ro,F8.0,,,TRUE,Retained
+R2A,double,haven_labelled|vctrs_vctr|double,,r2a how important do you think the monar,F8.0,,,TRUE,Retained
+R2B,double,haven_labelled|vctrs_vctr|double,,r2b how important do you think the monar,F8.0,,,TRUE,Retained
+R2C,double,haven_labelled|vctrs_vctr|double,,r2c how important do you think the monar,F8.0,,,TRUE,Retained
+R2D,double,haven_labelled|vctrs_vctr|double,,r2d how important do you think the monar,F8.0,,,TRUE,Retained
+R2E,double,haven_labelled|vctrs_vctr|double,,r2e how important do you think the monar,F8.0,,,TRUE,Retained
+R2F,double,haven_labelled|vctrs_vctr|double,,r2f how important do you think the monar,F8.0,,,TRUE,Retained
+R2G,double,haven_labelled|vctrs_vctr|double,,r2g how important do you think the monar,F8.0,,,TRUE,Retained
+R2H,double,haven_labelled|vctrs_vctr|double,,r2h how important do you think the monar,F8.0,,,TRUE,Retained
+R3A,double,haven_labelled|vctrs_vctr|double,,r3a how much do you agree or disagree th,F8.0,,,TRUE,Retained
+R3B,double,haven_labelled|vctrs_vctr|double,,r3b how much do you agree or disagree th,F8.0,,,TRUE,Retained
+R3C,double,haven_labelled|vctrs_vctr|double,,r3c how much do you agree or disagree th,F8.0,,,TRUE,Retained
+R3D,double,haven_labelled|vctrs_vctr|double,,r3d how much do you agree or disagree th,F8.0,,,TRUE,Retained
+R3E,double,haven_labelled|vctrs_vctr|double,,r3e how much do you agree or disagree th,F8.0,,,TRUE,Retained
+R3F,double,haven_labelled|vctrs_vctr|double,,r3f how much do you agree or disagree th,F8.0,,,TRUE,Retained
+R3G,double,haven_labelled|vctrs_vctr|double,,r3g how much do you agree or disagree th,F8.0,,,TRUE,Retained
+R4,double,haven_labelled|vctrs_vctr|double,,"r4 as far as you know, how much influenc",F8.0,,,TRUE,Retained
+R5A,double,haven_labelled|vctrs_vctr|double,,r5a do you think it is true or false tha,F8.0,,,TRUE,Retained
+R5B,double,haven_labelled|vctrs_vctr|double,,r5b do you think it is true or false tha,F8.0,,,TRUE,Retained
+R5C,double,haven_labelled|vctrs_vctr|double,,r5c do you think it is true or false tha,F8.0,,,TRUE,Retained
+R5D,double,haven_labelled|vctrs_vctr|double,,r5d do you think it is true or false tha,F8.0,,,TRUE,Retained
+R5E,double,haven_labelled|vctrs_vctr|double,,r5e do you think it is true or false tha,F8.0,,,TRUE,Retained
+R5F,double,haven_labelled|vctrs_vctr|double,,r5f do you think it is true or false tha,F8.0,,,TRUE,Retained
+R5G,double,haven_labelled|vctrs_vctr|double,,r5g do you think it is true or false tha,F8.0,,,TRUE,Retained
+R5H,double,haven_labelled|vctrs_vctr|double,,r5h do you think it is true or false tha,F8.0,,,TRUE,Retained
+R6A,double,haven_labelled|vctrs_vctr|double,,r6a how much do you agree or disagree th,F8.0,,,TRUE,Retained
+R6B,double,haven_labelled|vctrs_vctr|double,,r6b how much do you agree or disagree th,F8.0,,,TRUE,Retained
+R6C,double,haven_labelled|vctrs_vctr|double,,r6c how much do you agree or disagree th,F8.0,,,TRUE,Retained
+R6D,double,haven_labelled|vctrs_vctr|double,,r6d how much do you agree or disagree th,F8.0,,,TRUE,Retained
+R6E,double,haven_labelled|vctrs_vctr|double,,r6e how much do you agree or disagree th,F8.0,,,TRUE,Retained
+R6F,double,haven_labelled|vctrs_vctr|double,,r6f how much do you agree or disagree th,F8.0,,,TRUE,Retained
+R7A,double,haven_labelled|vctrs_vctr|double,,r7a how much do you agree or disagree th,F8.0,,,TRUE,Retained
+R7B,double,haven_labelled|vctrs_vctr|double,,r7b how much do you agree or disagree th,F8.0,,,TRUE,Retained
+R7C,double,haven_labelled|vctrs_vctr|double,,r7c how much do you agree or disagree th,F8.0,,,TRUE,Retained
+R8A,double,haven_labelled|vctrs_vctr|double,,"r8a if a british monarch dies, which of",F8.0,,,TRUE,Retained
+R8B,double,haven_labelled|vctrs_vctr|double,,"r8b if a british monarch dies, which of",F8.0,,,TRUE,Retained
+R9,double,haven_labelled|vctrs_vctr|double,,r9 what do you think would be best for b,F8.0,,,TRUE,Retained
+R10,double,haven_labelled|vctrs_vctr|double,,"r10 in your view, how long will the brit",F8.0,,,TRUE,Retained
+R11,double,haven_labelled|vctrs_vctr|double,,r11 and how long do you personally want,F8.0,,,TRUE,Retained
+R12A,double,haven_labelled|vctrs_vctr|double,,r12a suppose britain did change its pres,F8.0,,,TRUE,Retained
+R12B,double,haven_labelled|vctrs_vctr|double,,r12b and which of the same three possibi,F8.0,,,TRUE,Retained
+R13A,double,haven_labelled|vctrs_vctr|double,,r13a how much do you agree or disagree t,F8.0,,,TRUE,Retained
+R13B,double,haven_labelled|vctrs_vctr|double,,r13b how much do you agree or disagree t,F8.0,,,TRUE,Retained
+R13C,double,haven_labelled|vctrs_vctr|double,,r13c how much do you agree or disagree t,F8.0,,,TRUE,Retained
+R13D,double,haven_labelled|vctrs_vctr|double,,r13d how much do you agree or disagree t,F8.0,,,TRUE,Retained
+R13E,double,haven_labelled|vctrs_vctr|double,,r13e how much do you agree or disagree t,F8.0,,,TRUE,Retained
+R13F,double,haven_labelled|vctrs_vctr|double,,r13f how much do you agree or disagree t,F8.0,,,TRUE,Retained
+R13G,double,haven_labelled|vctrs_vctr|double,,r13g how much do you agree or disagree t,F8.0,,,TRUE,Retained
+R14,double,haven_labelled|vctrs_vctr|double,,"r14 in your opinion, do you think there",F8.0,,,TRUE,Retained
+R15,double,haven_labelled|vctrs_vctr|double,,r15 if after a general election no party,F8.0,,,TRUE,Retained
+R16,double,haven_labelled|vctrs_vctr|double,,r16 suppose there were circumstances whe,F8.0,,,TRUE,Retained
+R17,double,haven_labelled|vctrs_vctr|double,,r17 comparing a king or queen with an el,F8.0,,,TRUE,Retained
+R18,double,haven_labelled|vctrs_vctr|double,,r18 now thinking about the house of lord,F8.0,,,TRUE,Retained
+R19A,double,haven_labelled|vctrs_vctr|double,,r19a the present house of lords contains,F8.0,,,TRUE,Retained
+R19B,double,haven_labelled|vctrs_vctr|double,,r19b and if you had to choose between th,F8.0,,,TRUE,Retained
+R20,double,haven_labelled|vctrs_vctr|double,,r20 what is your opinion of the followin,F8.0,,,TRUE,Retained
+R21,double,haven_labelled|vctrs_vctr|double,,"r21 all in all, how well or badly do you",F8.0,,,TRUE,Retained
+R22A,double,haven_labelled|vctrs_vctr|double,,r22a do you agree or disagree that peopl,F8.0,,,TRUE,Retained
+R22B,double,haven_labelled|vctrs_vctr|double,,r22b do you agree or disagree that you h,F8.0,,,TRUE,Retained
+R22C,double,haven_labelled|vctrs_vctr|double,,r22c do you agree or disagree that in br,F8.0,,,TRUE,Retained
+R22D,double,haven_labelled|vctrs_vctr|double,,r22d do you agree or disagree that you t,F8.0,,,TRUE,Retained
+RSCORE,double,haven_labelled|vctrs_vctr|double,,rscore  knowledge scale,F8.0,,,TRUE,Retained
+RKNOWL,double,haven_labelled|vctrs_vctr|double,,rknowl  knowledge scale,F8.0,,,TRUE,Retained
+RR2A,double,haven_labelled|vctrs_vctr|double,,rr2a how important do you think the mona,F8.0,,,TRUE,Retained
+RR2B,double,haven_labelled|vctrs_vctr|double,,rr2b how important do you think the mona,F8.0,,,TRUE,Retained
+RR2C,double,haven_labelled|vctrs_vctr|double,,rr2c how important do you think the mona,F8.0,,,TRUE,Retained
+RR2D,double,haven_labelled|vctrs_vctr|double,,rr2d how important do you think the mona,F8.0,,,TRUE,Retained
+RR2E,double,haven_labelled|vctrs_vctr|double,,rr2e how important do you think the mona,F8.0,,,TRUE,Retained
+RR2F,double,haven_labelled|vctrs_vctr|double,,rr2f how important do you think the mona,F8.0,,,TRUE,Retained
+RR2G,double,haven_labelled|vctrs_vctr|double,,rr2g how important do you think the mona,F8.0,,,TRUE,Retained
+RR2H,double,haven_labelled|vctrs_vctr|double,,rr2h how important do you think the mona,F8.0,,,TRUE,Retained
+RR3A,double,haven_labelled|vctrs_vctr|double,,rr3a how much do you agree or disagree t,F8.0,,,TRUE,Retained
+RR3B,double,haven_labelled|vctrs_vctr|double,,rr3b how much do you agree or disagree t,F8.0,,,TRUE,Retained
+RR3C,double,haven_labelled|vctrs_vctr|double,,rr3c how much do you agree or disagree t,F8.0,,,TRUE,Retained
+RR3D,double,haven_labelled|vctrs_vctr|double,,rr3d how much do you agree or disagree t,F8.0,,,TRUE,Retained
+RR3E,double,haven_labelled|vctrs_vctr|double,,rr3e how much do you agree or disagree t,F8.0,,,TRUE,Retained
+RR3F,double,haven_labelled|vctrs_vctr|double,,rr3f how much do you agree or disagree t,F8.0,,,TRUE,Retained
+RR3G,double,haven_labelled|vctrs_vctr|double,,rr3g how much do you agree or disagree t,F8.0,,,TRUE,Retained
+RR4,double,haven_labelled|vctrs_vctr|double,,"rr4 as far as you know, how much influen",F8.0,,,TRUE,Retained
+RR6A,double,haven_labelled|vctrs_vctr|double,,rr6a how much do you agree or disagree t,F8.0,,,TRUE,Retained
+RR6B,double,haven_labelled|vctrs_vctr|double,,rr6b how much do you agree or disagree t,F8.0,,,TRUE,Retained
+RR6C,double,haven_labelled|vctrs_vctr|double,,rr6c how much do you agree or disagree t,F8.0,,,TRUE,Retained
+RR6D,double,haven_labelled|vctrs_vctr|double,,rr6d how much do you agree or disagree t,F8.0,,,TRUE,Retained
+RR6E,double,haven_labelled|vctrs_vctr|double,,rr6e how much do you agree or disagree t,F8.0,,,TRUE,Retained
+RR6F,double,haven_labelled|vctrs_vctr|double,,rr6f how much do you agree or disagree t,F8.0,,,TRUE,Retained
+RR7A,double,haven_labelled|vctrs_vctr|double,,rr7a how much do you agree or disagree t,F8.0,,,TRUE,Retained
+RR7B,double,haven_labelled|vctrs_vctr|double,,rr7b how much do you agree or disagree t,F8.0,,,TRUE,Retained
+RR7C,double,haven_labelled|vctrs_vctr|double,,rr7c how much do you agree or disagree t,F8.0,,,TRUE,Retained
+RR13A,double,haven_labelled|vctrs_vctr|double,,rr13a how much do you agree or disagree,F8.0,,,TRUE,Retained
+RR13B,double,haven_labelled|vctrs_vctr|double,,rr13b how much do you agree or disagree,F8.0,,,TRUE,Retained
+RR13C,double,haven_labelled|vctrs_vctr|double,,rr13c how much do you agree or disagree,F8.0,,,TRUE,Retained
+RR13D,double,haven_labelled|vctrs_vctr|double,,rr13d how much do you agree or disagree,F8.0,,,TRUE,Retained
+RR13E,double,haven_labelled|vctrs_vctr|double,,rr13e how much do you agree or disagree,F8.0,,,TRUE,Retained
+RR13F,double,haven_labelled|vctrs_vctr|double,,rr13f how much do you agree or disagree,F8.0,,,TRUE,Retained
+RR13G,double,haven_labelled|vctrs_vctr|double,,rr13g how much do you agree or disagree,F8.0,,,TRUE,Retained
+RR14,double,haven_labelled|vctrs_vctr|double,,"rr14 in your opinion, do you think there",F8.0,,,TRUE,Retained
+RR16,double,haven_labelled|vctrs_vctr|double,,rr16 suppose there were circumstances wh,F8.0,,,TRUE,Retained
+RR20,double,haven_labelled|vctrs_vctr|double,,rr20 what is your opinion of the followi,F8.0,,,TRUE,Retained
+RR21,double,haven_labelled|vctrs_vctr|double,,"rr21 all in all, how well or badly do yo",F8.0,,,TRUE,Retained
+RR22A,double,haven_labelled|vctrs_vctr|double,,rr22a do you agree or disagree that peop,F8.0,,,TRUE,Retained
+RR22B,double,haven_labelled|vctrs_vctr|double,,rr22b do you agree or disagree that you,F8.0,,,TRUE,Retained
+RR22C,double,haven_labelled|vctrs_vctr|double,,rr22c do you agree or disagree that in b,F8.0,,,TRUE,Retained
+RR22D,double,haven_labelled|vctrs_vctr|double,,rr22d do you agree or disagree that you,F8.0,,,TRUE,Retained
+PREWT,double,numeric,,prewt,F9.2,,,TRUE,Retained
+@__WEIGH,double,numeric,,,F9.2,,,TRUE,Retained
+T1MONARC,double,numeric,,"T1 What to do with monarchy - 0=abolish, 1=status quo, 0 to 1 scale",F9.2,,,TRUE,Retained
+T2MONARC,double,numeric,,"T2 What to do with monarchy - 0=abolish, 1=status quo, 0 to 1 scale",F9.2,,,TRUE,Retained
+T1WANTSU,double,numeric,,"T1 Wantsur - how long should monarchy continue, 100=1,50,20,10,5,less5yrs=0",F9.2,,,TRUE,Retained
+T2WANTSU,double,numeric,,"T2 Wantsur - how long should monarchy continue, 100=1,50,20,10,5,less5yrs=0",F9.2,,,TRUE,Retained
+T1BEST,double,numeric,,"T1 Best for britain when queen's reign ends - 1=continue, 0=elect president",F9.2,,,TRUE,Retained
+T2BEST,double,numeric,,"T2 Best for britain when queen's reign ends - 1=continue, 0=elect president",F9.2,,,TRUE,Retained
+T1REFERE,double,numeric,,"T1 Referendum about future of monarchy - 1=definitely not, 0=definitely",F9.2,,,TRUE,Retained
+T2REFERE,double,numeric,,"T2 Referendum about future of monarchy - 1=definitely not, 0=definitely",F9.2,,,TRUE,Retained
+T1SUPMON,double,numeric,,"T1 Support for Monarchy Index, 1=higher sup for monarchy",F9.2,,,TRUE,Retained
+T2SUPMON,double,numeric,,"T2 Support for Monarchy Index, 1=higher sup for monarchy",F9.2,,,TRUE,Retained
+T1MIX,double,numeric,,T1 Royal family should mix more - 1=strongly agree,F9.2,,,TRUE,Retained
+T2MIX,double,numeric,,T2 Royal family should mix more - 1=strongly agree,F9.2,,,TRUE,Retained
+T1RETIRE,double,numeric,,T1 monarch should retire like ordinary people - 1=strongly agree,F9.2,,,TRUE,Retained
+T2RETIRE,double,numeric,,T2 monarch should retire like ordinary people - 1=strongly agree,F9.2,,,TRUE,Retained
+T1TAXES,double,numeric,,T1 monarch should pay taxes - 1=strongly agree,F9.2,,,TRUE,Retained
+T2TAXES,double,numeric,,T2 monarch should pay taxes - 1=strongly agree,F9.2,,,TRUE,Retained
+T1GLAMOU,double,numeric,,T1 no pt in royal fmaily without glamour - 1=strongly disagree,F9.2,,,TRUE,Retained
+T2GLAMOU,double,numeric,,T2 no pt in royal fmaily without glamour - 1=strongly disagree,F9.2,,,TRUE,Retained
+T1SUPPOR,double,numeric,,T1 monarch must have popular support - 1=strongly agree,F9.2,,,TRUE,Retained
+T2SUPPOR,double,numeric,,T2 monarch must have popular support - 1=strongly agree,F9.2,,,TRUE,Retained
+T1PUBLIC,double,numeric,,T1 public should have say in succession - 1=strongly agree,F9.2,,,TRUE,Retained
+T2PUBLIC,double,numeric,,T2 public should have say in succession - 1=strongly agree,F9.2,,,TRUE,Retained
+T1MPOP,double,numeric,,T1 Monarchy and Populism Index,F9.2,,,TRUE,Retained
+T2MPOP,double,numeric,,T2 Monarchy and Populism Index,F9.2,,,TRUE,Retained
+T1CHOOSP,double,numeric,,T1 Queen choose PM if no majority - 1=queen,F9.2,,,TRUE,Retained
+T2CHOOSP,double,numeric,,T2 Queen choose PM if no majority - 1=queen,F9.2,,,TRUE,Retained
+T1MOREPO,double,numeric,,T1 good if queen has more powers - 1=strongly agree,F9.2,,,TRUE,Retained
+T2MOREPO,double,numeric,,T2 good if queen has more powers - 1=strongly agree,F9.2,,,TRUE,Retained
+T1PWRM,double,numeric,,T1 Power of Monarchy Index,F9.2,,,TRUE,Retained
+T2PWRM,double,numeric,,T2 Power of Monarchy Index,F9.2,,,TRUE,Retained
+T1LORDVO,double,numeric,,T1 should hereditary peers have vote in house of lords - 1=no,F9.2,,,TRUE,Retained
+T2LORDVO,double,numeric,,T2 should hereditary peers have vote in house of lords - 1=no,F9.2,,,TRUE,Retained
+T1LORDAP,double,numeric,,T1 appointed or elected house of lords - 1 = elected,F9.2,,,TRUE,Retained
+T2LORDAP,double,numeric,,T2 appointed or elected house of lords - 1 = elected,F9.2,,,TRUE,Retained
+T1LORDS,double,numeric,,"what should happen to HOL, 1=abolish",F9.2,,,TRUE,Retained
+T2LORDS,double,numeric,,"what should happen to HOL, 1=abolish",F9.2,,,TRUE,Retained
+T1REFLOR,double,numeric,,T1 Reform HOL Index,F9.2,,,TRUE,Retained
+T2REFLOR,double,numeric,,T2 Reform HOL Index,F9.2,,,TRUE,Retained

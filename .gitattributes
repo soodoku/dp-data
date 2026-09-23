@@ -13,3 +13,4 @@ data/*/knowledge-battery.csv -text
 *.parquet binary
 data/northern-ireland-2007/groups.csv -text
 data/*/codebook.txt -text
+*.doc binary
