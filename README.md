@@ -30,6 +30,11 @@ make check
 metadata contracts, tests, and linting. `make inventory` is a local-only task
 that rebuilds the CDD vault inventory from the untracked archive.
 
+The five original CDD ZIP exports stay untracked at the repository root.
+`make vault` verifies their byte counts and SHA-256 checksums before unpacking
+them into the ignored `vault/cdd/` directory. It will stop rather than unpack
+an altered or missing bundle.
+
 ## Repository roles
 
 | Location | Role |

@@ -1,6 +1,6 @@
 R = Rscript
 
-.PHONY: restore package manifests inventory disclosure validate test lint check
+.PHONY: restore package manifests vault inventory disclosure validate test lint check
 
 restore:
 	$(R) -e 'renv::restore(prompt = FALSE)'
@@ -10,6 +10,9 @@ package:
 
 manifests:
 	$(R) scripts/05_build_poll_manifests.R
+
+vault:
+	$(R) scripts/00_unpack_vault.R
 
 inventory:
 	$(R) scripts/01_build_archive_inventory.R
