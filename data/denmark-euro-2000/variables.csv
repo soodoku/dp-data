@@ -1,0 +1,113 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+ipnr,double,numeric,float64,IPnr,F11.0,,,TRUE,Retained
+s_01,double,haven_labelled|vctrs_vctr|double,float64,Gender,F8.2,,,TRUE,Retained
+s_02,double,numeric,float64,In what year are you born?,F8.2,,,TRUE,Retained
+s_03_01,double,numeric,float64,Children living at home in your household -- No Children,F8.2,,,TRUE,Retained
+s_03_02,double,numeric,float64,"Children, ages 0 to 1",F8.2,,,TRUE,Retained
+s_03_03,double,numeric,float64,"Children, ages 2 to 5",F8.2,,,TRUE,Retained
+s_03_04,double,numeric,float64,"Children, ages 6 to 15",F8.2,,,TRUE,Retained
+s_03_05,double,numeric,float64,"Young People, ages 16 to 19",F8.2,,,TRUE,Retained
+s_03_06,double,numeric,float64,"Young People, ages 20 to 30",F8.2,,,TRUE,Retained
+s_03_07,double,numeric,float64,Over 30,F8.2,,,TRUE,Retained
+s_04_01,double,numeric,float64,Are you a relative of older people who live in -- Senior Citizen Housing,F8.2,,,TRUE,Retained
+s_04_02,double,numeric,float64,Are you a relative of older people who live in -- Sheltered housing for the elderly,F8.2,,,TRUE,Retained
+s_04_03,double,numeric,float64,Are you a relative of older people who live in -- Nursing Home,F8.2,,,TRUE,Retained
+s_04_04,double,numeric,float64,Are you a relative of older people who live in -- No,F8.2,,,TRUE,Retained
+s_05_01,double,numeric,float64,Are you a relative of older people who receive or use -- home help,F8.2,,,TRUE,Retained
+s_05_02,double,numeric,float64,Are you a relative of older people who receive or use -- nursing at home,F8.2,,,TRUE,Retained
+s_05_03,double,numeric,float64,Are you a relative of older people who receive or use -- senior citizen center,F8.2,,,TRUE,Retained
+s_05_04,double,numeric,float64,Are you a relative of older people who receive or use -- No,F8.2,,,TRUE,Retained
+s_06_01,double,numeric,float64,Do you have children living at home who are in a day care or nursery,F8.2,,,TRUE,Retained
+s_06_02,double,numeric,float64,Do you have children living at home who are in preschool,F8.2,,,TRUE,Retained
+s_06_03,double,numeric,float64,Do you have children living at home who are in a day care in a private home,F8.2,,,TRUE,Retained
+s_06_04,double,numeric,float64,Do you have children living at home who are in a integrate institution,F8.2,,,TRUE,Retained
+s_06_05,double,numeric,float64,Do you have children living at home who are on leave,F8.2,,,TRUE,Retained
+s_06_06,double,numeric,float64,Do you have children living at home who are --No,F8.2,,,TRUE,Retained
+s_07_01,double,numeric,float64,Do you have children living at home who are in elementary or middle school,F8.2,,,TRUE,Retained
+s_07_02,double,numeric,float64,Do you have children living at home who will start elementary next year,F8.2,,,TRUE,Retained
+s_07_03,double,numeric,float64,Do you have children living at home who are --No,F8.2,,,TRUE,Retained
+s_08_01,double,numeric,float64,Do you have children living at home who are in high school,F8.2,,,TRUE,Retained
+s_08_02,double,numeric,float64,Do you have children living at home who will start high school in the next year,F8.2,,,TRUE,Retained
+s_08_03,double,numeric,float64,Do you have children living at home -- No,F8.2,,,TRUE,Retained
+s_09_01,double,numeric,float64,Are you living in senior citizen housing?,F8.2,,,TRUE,Retained
+s_09_02,double,numeric,float64,Are you living in sheltered housing for the elderly,F8.2,,,TRUE,Retained
+s_09_03,double,numeric,float64,Are you living in a nursing home,F8.2,,,TRUE,Retained
+s_09_04,double,numeric,float64,I am not living in any of the above three,F8.2,,,TRUE,Retained
+s_10_01,double,numeric,float64,Do you use home care?,F8.2,,,TRUE,Retained
+s_10_02,double,numeric,float64,Do you use care from a visiting nurse?,F8.2,,,TRUE,Retained
+s_10_03,double,numeric,float64,Do you use care from a senior citizen center?,F8.2,,,TRUE,Retained
+s_10_04,double,numeric,float64,I do not use any of the above care,F8.2,,,TRUE,Retained
+s_11,double,haven_labelled|vctrs_vctr|double,float64,What is your job situation at the moment,F8.2,,,TRUE,Retained
+s_11b,double,haven_labelled|vctrs_vctr|double,float64,In what type of occupation are you currently employed,F8.2,,,TRUE,Retained
+s_11c,double,haven_labelled|vctrs_vctr|double,float64,Are you employed in a public/private company? or are you self employed?,F8.2,,,TRUE,Retained
+s_12,double,haven_labelled|vctrs_vctr|double,float64,What is your highest level of education,F8.2,,,TRUE,Retained
+s_13,double,haven_labelled|vctrs_vctr|double,float64,what is the population of the community where you live?,F8.2,,,TRUE,Retained
+s_14,double,haven_labelled|vctrs_vctr|double,float64,Approximately how much was the gross income before taxes in your household in 1999?,F8.2,,,TRUE,Retained
+s_14b,double,numeric,float64,14b. Husstandens samlede årlige indkomst før skat i 1999? -- N/A in survey,F8.2,,,TRUE,Retained
+s_15,double,haven_labelled|vctrs_vctr|double,float64,"Due to the special opt-outs/exemptions, Denmark does not currently participate in the single currency. How",F8.2,,,TRUE,Retained
+s_15b,double,haven_labelled|vctrs_vctr|double,float64,If you had to decide for or against Danish participation in the single currency how would you vote?,F8.2,,,TRUE,Retained
+s_16,double,haven_labelled|vctrs_vctr|double,float64,Is it likely that you will change your opinion as a result of the debate about the euro before the referendum,F8.2,,,TRUE,Retained
+s_17_01,double,haven_labelled|vctrs_vctr|double,float64,Being a member of the EU would be a positive thing for Denmark.,F8.2,,,TRUE,Retained
+s_17_02,double,haven_labelled|vctrs_vctr|double,float64,It is an important priority for the EU to include additional countries in the Union as soon as possible.,F8.2,,,TRUE,Retained
+s_17_03,double,haven_labelled|vctrs_vctr|double,float64,Danish participation in the single currency reduces Denmark's independence.,F8.2,,,TRUE,Retained
+s_17_04,double,haven_labelled|vctrs_vctr|double,float64,Danish participation in the single currency would create better conditions for the Danish business community.,F8.2,,,TRUE,Retained
+s_17_05,double,haven_labelled|vctrs_vctr|double,float64,Danish participation in the single currency would pose a threat to the Danish national feeling.,F8.2,,,TRUE,Retained
+s_17_06,double,haven_labelled|vctrs_vctr|double,float64,Danish participation in the single currency lowers the current Danish interest rates.,F8.2,,,TRUE,Retained
+s_17_07,double,haven_labelled|vctrs_vctr|double,float64,Danish participation in the single currency weakens the Danish welfare system.,F8.2,,,TRUE,Retained
+s_17_08,double,haven_labelled|vctrs_vctr|double,float64,Danish participation in the single currency would give Denmark a stronger say in EU decisions.,F8.2,,,TRUE,Retained
+s_17_09,double,haven_labelled|vctrs_vctr|double,float64,Keeping our own currency (the Danish krone) is more important than possible economic gain from,F8.2,,,TRUE,Retained
+s_17_10,double,haven_labelled|vctrs_vctr|double,float64,"The single currency is a step toward ""The United States of Europe"".",F8.2,,,TRUE,Retained
+s_17_11,double,haven_labelled|vctrs_vctr|double,float64,Danish participation in the single currency is beneficial to the Danish economy.,F8.2,,,TRUE,Retained
+s_17_12,double,haven_labelled|vctrs_vctr|double,float64,Danish participation in the single currency would weaken the workers' situation.,F8.2,,,TRUE,Retained
+s_17_13,double,haven_labelled|vctrs_vctr|double,float64,Danish participation in the single currency would improve the position of the disadvantage groups in society.,F8.2,,,TRUE,Retained
+s_17_14,double,haven_labelled|vctrs_vctr|double,float64,If Denmark joins the single currency it cannot resign at a later point in time.,F8.2,,,TRUE,Retained
+s_17_15,double,haven_labelled|vctrs_vctr|double,float64,Having the EU promotes peace and stability in Europe.,F8.2,,,TRUE,Retained
+s_17_16,double,haven_labelled|vctrs_vctr|double,float64,The cooperation within the single currency is undemocratic.,F8.2,,,TRUE,Retained
+s_17_17,double,haven_labelled|vctrs_vctr|double,float64,"All things considered, participating in the single currency would be beneficial to Denmark.",F8.2,,,TRUE,Retained
+s_18,double,haven_labelled|vctrs_vctr|double,float64,"As a member of the monetary union, Denmark could be fined if the national fiscal deficit is too large. Is that",F8.2,,,TRUE,Retained
+s_19,double,haven_labelled|vctrs_vctr|double,float64,Denmark can decide its own interest rates if we join the monetary union. Is that true or false?,F8.2,,,TRUE,Retained
+s_20,double,haven_labelled|vctrs_vctr|double,float64,Denmark can decide its own rates of taxation if we join the single currency. Is that true or false?,F8.2,,,TRUE,Retained
+s_21,double,haven_labelled|vctrs_vctr|double,float64,"If we vote yes at the polls on Sept. 28 will the single currency then enter into circulation starting in 2001,",F8.2,,,TRUE,Retained
+s_22,double,haven_labelled|vctrs_vctr|double,float64,"If Denmark joins the single currency will the Danish National Bank then be closed down, continue to",F8.2,,,TRUE,Retained
+s_23,double,haven_labelled|vctrs_vctr|double,float64,Will the euro coins have a national side?,F8.2,,,TRUE,Retained
+s_24,double,haven_labelled|vctrs_vctr|double,float64,Is Denmark already involved in a monetary union where the countries/members help each other when the,F8.2,,,TRUE,Retained
+s_25_01,double,haven_labelled|vctrs_vctr|double,float64,Folkebevægelsen mod unionen,F8.2,,,TRUE,Retained
+s_25_02,double,haven_labelled|vctrs_vctr|double,float64,Junibevægelsen,F8.2,,,TRUE,Retained
+s_25_03,double,haven_labelled|vctrs_vctr|double,float64,Socialdemokratiet,F8.2,,,TRUE,Retained
+s_25_04,double,haven_labelled|vctrs_vctr|double,float64,Det Radikale Venstre,F8.2,,,TRUE,Retained
+s_25_05,double,haven_labelled|vctrs_vctr|double,float64,Det Konservative Folkeparti,F8.2,,,TRUE,Retained
+s_25_06,double,haven_labelled|vctrs_vctr|double,float64,CentrumDemokraterne,F8.2,,,TRUE,Retained
+s_25_07,double,haven_labelled|vctrs_vctr|double,float64,Socialistisk Folkeparti,F8.2,,,TRUE,Retained
+s_25_08,double,haven_labelled|vctrs_vctr|double,float64,Dansk Folkeparti,F8.2,,,TRUE,Retained
+s_25_09,double,haven_labelled|vctrs_vctr|double,float64,Kristelig Folkeparti,F8.2,,,TRUE,Retained
+s_25_10,double,haven_labelled|vctrs_vctr|double,float64,Venstre - Danmarks Liberale Parti,F8.2,,,TRUE,Retained
+s_25_11,double,haven_labelled|vctrs_vctr|double,float64,Fremskridtspartiet,F8.2,,,TRUE,Retained
+s_25_12,double,haven_labelled|vctrs_vctr|double,float64,Enhedslisten,F8.2,,,TRUE,Retained
+s_25_13,double,haven_labelled|vctrs_vctr|double,float64,Frihed 2000,F8.2,,,TRUE,Retained
+s_26_01,double,haven_labelled|vctrs_vctr|double,float64,Do you agree or disagree that citizens such as yourself have no say when it comes to decisions made by The Danish Parliament,F8.2,,,TRUE,Retained
+s_26_02,double,haven_labelled|vctrs_vctr|double,float64,Do you agree or disagree that citizens such as yourself have no say when it comes to decisions made by the EU?,F8.2,,,TRUE,Retained
+s_26_03,double,haven_labelled|vctrs_vctr|double,float64,Do you agree or disagree that citizens such as yourself are qualified to participate in a debate about the euro?,F8.2,,,TRUE,Retained
+s_26_04,double,haven_labelled|vctrs_vctr|double,float64,Do you agree or disagree that citizens such as yourself hold political viewpoints that are worth taking into consideration?,F8.2,,,TRUE,Retained
+s_26_05,double,haven_labelled|vctrs_vctr|double,float64,Do you agree or disagree that lack of knowledge is the reason why fellow citizens have political viewpoints that differ from yours?,F8.2,,,TRUE,Retained
+s_26_06,double,haven_labelled|vctrs_vctr|double,float64,Do you agree or disagree that other citizens present valid arguments that support political viewpoints that differ from yours?,F8.2,,,TRUE,Retained
+s_27_01,double,haven_labelled|vctrs_vctr|double,float64,To what extent do you feel well-informed about the euro?,F8.2,,,TRUE,Retained
+s_27_02,double,haven_labelled|vctrs_vctr|double,float64,To what extent do you pay attention to the political debate about the euro?,F8.2,,,TRUE,Retained
+s_27_03,double,haven_labelled|vctrs_vctr|double,float64,To what extent are you interested in politics?,F8.2,,,TRUE,Retained
+s_27_04,double,haven_labelled|vctrs_vctr|double,float64,To what extent do you trust the Danish politicians?,F8.2,,,TRUE,Retained
+s_28,double,haven_labelled|vctrs_vctr|double,float64,"Within your circle of friends, do you often, once in a while, or never discuss political issues?",F8.2,,,TRUE,Retained
+s_29,double,haven_labelled|vctrs_vctr|double,float64,"If you were invited to be a candidate for the European Parliament, Folketinget (The Danish parliament), or city or country govt would you say yes or no?",F8.2,,,TRUE,Retained
+s_30,double,haven_labelled|vctrs_vctr|double,float64,"In politics we often use the words ""left"" and ""right"". Using a scale of 0 to 10 where. 0 means most left-wing",F8.2,,,TRUE,Retained
+s_31,double,haven_labelled|vctrs_vctr|double,float64,Are you a member of a political party or group?,F8.2,,,TRUE,Retained
+s_32,double,haven_labelled|vctrs_vctr|double,float64,Which political party would you vote for if a parliamentary election were held tomorrow?,F8.2,,,TRUE,Retained
+s_33,double,haven_labelled|vctrs_vctr|double,float64,Which party did you vote for in the last parliamentary election?,F8.2,,,TRUE,Retained
+s_34,double,haven_labelled|vctrs_vctr|double,float64,How did you vote in the last EU-election about the Treaty of Amsterdam?,F8.2,,,TRUE,Retained
+s_35_01,double,haven_labelled|vctrs_vctr|double,float64,Democracy should for and foremost be a method of choosing leaders who will then make the necessary political decisions,F8.2,,,TRUE,Retained
+s_35_02,double,haven_labelled|vctrs_vctr|double,float64,Democracy should for and foremost be the citizens' active participation in making a great number of the political decisions,F8.2,,,TRUE,Retained
+s_35_03,double,haven_labelled|vctrs_vctr|double,float64,"Democracy should for and foremost protect the citizens against political decisions that are too wide-ranging.Through the constituion or in some other way, democracy should provide narrow and specific rules that govern what issues can be decided through a",F8.2,,,TRUE,Retained
+s_36,double,haven_labelled|vctrs_vctr|double,float64,"If you were to choose between the viewpoints presented by A, B and C with whom would you most agree?",F8.2,,,TRUE,Retained
+s_37,double,haven_labelled|vctrs_vctr|double,float64,Would you be interested in participating in such an event?,F8.2,,,TRUE,Retained
+s_38,double,haven_labelled|vctrs_vctr|double,float64,Write down if the respondent wishes to attend and needs to have the information mailed or wants to particiapte,F8.2,,,TRUE,Retained
+kmnkode,double,numeric,float64,kmnkode,F11.0,,,TRUE,Retained
+kommunen,character,character,,Kommunenavn,A255,,,FALSE,Excluded; see source_field_exclusions
+amt,character,character,,Amt,A50,,,FALSE,Excluded; see source_field_exclusions
+delnr,double,numeric,float64,Deltagernr.,F11.0,,,TRUE,Retained

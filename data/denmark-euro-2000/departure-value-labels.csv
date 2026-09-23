@@ -1,0 +1,667 @@
+source_column,source_value,value_label
+S1_2,1,"For, dansk deltagelse i den fælles mønt"
+S1_2,2,"Imod, dansk deltagelse i den fælles mønt"
+S1_2,3,stemmer blankt
+S1_2,4,Ikke stemme
+S1_2,5,Ved ikke / Har du ikke besluttet dig
+S1B_2,1,"For, dansk deltagelse i den fælles mønt"
+S1B_2,2,"Imod, dansk deltagelse i den fælles mønt"
+S1B_2,3,Ved ikke
+S2_2,1,Meget usandsynligt
+S2_2,2,Usandsynligt
+S2_2,3,Hverken eller
+S2_2,4,Sandsynligt
+S2_2,5,Meget sandsynligt
+S2_2,6,Ved ikke
+S3A_2,1,Helt enig
+S3A_2,2,Delvis enig
+S3A_2,3,Hverken/ eller
+S3A_2,4,Delvis uenig
+S3A_2,5,Helt uenig
+S3A_2,6,Ved ikke
+S3B_2,1,Helt enig
+S3B_2,2,Delvis enig
+S3B_2,3,Hverken/ eller
+S3B_2,4,Delvis uenig
+S3B_2,5,Helt uenig
+S3B_2,6,Ved ikke
+S3C_2,1,Helt enig
+S3C_2,2,Delvis enig
+S3C_2,3,Hverken/ eller
+S3C_2,4,Delvis uenig
+S3C_2,5,Helt uenig
+S3C_2,6,Ved ikke
+S3D_2,1,Helt enig
+S3D_2,2,Delvis enig
+S3D_2,3,Hverken/ eller
+S3D_2,4,Delvis uenig
+S3D_2,5,Helt uenig
+S3D_2,6,Ved ikke
+S3E_2,1,Helt enig
+S3E_2,2,Delvis enig
+S3E_2,3,Hverken/ eller
+S3E_2,4,Delvis uenig
+S3E_2,5,Helt uenig
+S3E_2,6,Ved ikke
+S3F_2,1,Helt enig
+S3F_2,2,Delvis enig
+S3F_2,3,Hverken/ eller
+S3F_2,4,Delvis uenig
+S3F_2,5,Helt uenig
+S3F_2,6,Ved ikke
+S3G_2,1,Helt enig
+S3G_2,2,Delvis enig
+S3G_2,3,Hverken/ eller
+S3G_2,4,Delvis uenig
+S3G_2,5,Helt uenig
+S3G_2,6,Ved ikke
+S3H_2,1,Helt enig
+S3H_2,2,Delvis enig
+S3H_2,3,Hverken/ eller
+S3H_2,4,Delvis uenig
+S3H_2,5,Helt uenig
+S3H_2,6,Ved ikke
+S3I_2,1,Helt enig
+S3I_2,2,Delvis enig
+S3I_2,3,Hverken/ eller
+S3I_2,4,Delvis uenig
+S3I_2,5,Helt uenig
+S3I_2,6,Ved ikke
+S3J_2,1,Helt enig
+S3J_2,2,Delvis enig
+S3J_2,3,Hverken/ eller
+S3J_2,4,Delvis uenig
+S3J_2,5,Helt uenig
+S3J_2,6,Ved ikke
+S3K_2,1,Helt enig
+S3K_2,2,Delvis enig
+S3K_2,3,Hverken/ eller
+S3K_2,4,Delvis uenig
+S3K_2,5,Helt uenig
+S3K_2,6,Ved ikke
+S3L_2,1,Helt enig
+S3L_2,2,Delvis enig
+S3L_2,3,Hverken/ eller
+S3L_2,4,Delvis uenig
+S3L_2,5,Helt uenig
+S3L_2,6,Ved ikke
+S3M_2,1,Helt enig
+S3M_2,2,Delvis enig
+S3M_2,3,Hverken/ eller
+S3M_2,4,Delvis uenig
+S3M_2,5,Helt uenig
+S3M_2,6,Ved ikke
+S3N_2,1,Helt enig
+S3N_2,2,Delvis enig
+S3N_2,3,Hverken/ eller
+S3N_2,4,Delvis uenig
+S3N_2,5,Helt uenig
+S3N_2,6,Ved ikke
+S3O_2,1,Helt enig
+S3O_2,2,Delvis enig
+S3O_2,3,Hverken/ eller
+S3O_2,4,Delvis uenig
+S3O_2,5,Helt uenig
+S3O_2,6,Ved ikke
+S3P_2,1,Helt enig
+S3P_2,2,Delvis enig
+S3P_2,3,Hverken/ eller
+S3P_2,4,Delvis uenig
+S3P_2,5,Helt uenig
+S3P_2,6,Ved ikke
+S3Q_2,1,Helt enig
+S3Q_2,2,Delvis enig
+S3Q_2,3,Hverken/ eller
+S3Q_2,4,Delvis uenig
+S3Q_2,5,Helt uenig
+S3Q_2,6,Ved ikke
+S3R_2,1,Helt enig
+S3R_2,2,Delvis enig
+S3R_2,3,Hverken/ eller
+S3R_2,4,Delvis uenig
+S3R_2,5,Helt uenig
+S3R_2,6,Ved ikke
+S4_2,1,Det er rigtigt (korrekt svar)
+S4_2,2,Det er forkert
+S4_2,3,Ved ikke
+S5_2,1,Det er rigtigt
+S5_2,2,Det er forkert (korrekt svar)
+S5_2,3,Ved ikke
+S6_2,1,Det er rigtigt (korrekt svar)
+S6_2,2,Det er forkert
+S6_2,3,Ved ikke
+S7_2,1,2001
+S7_2,2,2004 (korrekt svar)
+S7_2,3,2005
+S7_2,4,2007
+S7_2,5,Ved ikke
+S8_2,1,Bliver nedlagt
+S8_2,2,Fortsætte stort set som i dag
+S8_2,3,Bliver en del af den Europæiske Centralbank (korrekt svar)
+S8_2,4,Ved ikke
+S9_2,1,Ja (korrekt svar)
+S9_2,2,Nej
+S9_2,3,Ved ikke
+S10_2,1,Ja (korrekt svar)
+S10_2,2,Nej
+S10_2,3,Ved ikke
+S11_1_2,1,Anbefaler et Ja
+S11_1_2,2,Anbefaler et Nej
+S11_1_2,3,Ved ikke
+S11_2_2,1,Anbefaler et Ja
+S11_2_2,2,Anbefaler et Nej
+S11_2_2,3,Ved ikke
+S11_3_2,1,Anbefaler et Ja
+S11_3_2,2,Anbefaler et Nej
+S11_3_2,3,Ved ikke
+S11_4_2,1,Anbefaler et Ja
+S11_4_2,2,Anbefaler et Nej
+S11_4_2,3,Ved ikke
+S11_5_2,1,Anbefaler et Ja
+S11_5_2,2,Anbefaler et Nej
+S11_5_2,3,Ved ikke
+S11_6_2,1,Anbefaler et Ja
+S11_6_2,2,Anbefaler et Nej
+S11_6_2,3,Ved ikke
+S11_7_2,1,Anbefaler et Ja
+S11_7_2,2,Anbefaler et Nej
+S11_7_2,3,Ved ikke
+S11_8_2,1,Anbefaler et Ja
+S11_8_2,2,Anbefaler et Nej
+S11_8_2,3,Ved ikke
+S11_9_2,1,Anbefaler et Ja
+S11_9_2,2,Anbefaler et Nej
+S11_9_2,3,Ved ikke
+S11_10_2,1,Anbefaler et Ja
+S11_10_2,2,Anbefaler et Nej
+S11_10_2,3,Ved ikke
+S11_11_2,1,Anbefaler et Ja
+S11_11_2,2,Anbefaler et Nej
+S11_11_2,3,Ved ikke
+S11_12_2,1,Anbefaler et Ja
+S11_12_2,2,Anbefaler et Nej
+S11_12_2,3,Ved ikke
+S11_13_2,1,Anbefaler et Ja
+S11_13_2,2,Anbefaler et Nej
+S11_13_2,3,Ved ikke
+S12A_2,1,Helt enig
+S12A_2,2,Delvis enig
+S12A_2,3,Hverken enig eller uenig
+S12A_2,4,Delvis uenig
+S12A_2,5,Helt uenig
+S12A_2,6,Ved ikke
+S12B_2,1,Helt enig
+S12B_2,2,Delvis enig
+S12B_2,3,Hverken enig eller uenig
+S12B_2,4,Delvis uenig
+S12B_2,5,Helt uenig
+S12B_2,6,Ved ikke
+S12C_2,1,Helt enig
+S12C_2,2,Delvis enig
+S12C_2,3,Hverken enig eller uenig
+S12C_2,4,Delvis uenig
+S12C_2,5,Helt uenig
+S12C_2,6,Ved ikke
+S12D_2,1,Helt enig
+S12D_2,2,Delvis enig
+S12D_2,3,Hverken enig eller uenig
+S12D_2,4,Delvis uenig
+S12D_2,5,Helt uenig
+S12D_2,6,Ved ikke
+S12E_2,1,Helt enig
+S12E_2,2,Delvis enig
+S12E_2,3,Hverken enig eller uenig
+S12E_2,4,Delvis uenig
+S12E_2,5,Helt uenig
+S12E_2,6,Ved ikke
+S12F_2,1,Helt enig
+S12F_2,2,Delvis enig
+S12F_2,3,Hverken enig eller uenig
+S12F_2,4,Delvis uenig
+S12F_2,5,Helt uenig
+S12F_2,6,Ved ikke
+S13A_2,1,I meget høj grad
+S13A_2,2,I høj grad
+S13A_2,3,I nogen grad
+S13A_2,4,I ringe grad
+S13A_2,5,Slet ikke
+S13A_2,6,Ved ikke
+S13B_2,1,I meget høj grad
+S13B_2,2,I høj grad
+S13B_2,3,I nogen grad
+S13B_2,4,I ringe grad
+S13B_2,5,Slet ikke
+S13B_2,6,Ved ikke
+S13C_2,1,I meget høj grad
+S13C_2,2,I høj grad
+S13C_2,3,I nogen grad
+S13C_2,4,I ringe grad
+S13C_2,5,Slet ikke
+S13C_2,6,Ved ikke
+S13D_2,1,I meget høj grad
+S13D_2,2,I høj grad
+S13D_2,3,I nogen grad
+S13D_2,4,I ringe grad
+S13D_2,5,Slet ikke
+S13D_2,6,Ved ikke
+S14_2,1,Ofte
+S14_2,2,Nu og da
+S14_2,3,Aldrig
+S14_2,4,Ved ikke
+S15_2,1,Ja
+S15_2,2,Overveje det
+S15_2,3,Nej
+S15_2,4,Ved ikke
+S16_2,0,0 (Venstre)
+S16_2,1,1
+S16_2,2,2
+S16_2,3,3
+S16_2,4,4
+S16_2,5,5
+S16_2,6,6
+S16_2,7,7
+S16_2,8,8
+S16_2,9,9
+S16_2,10,10 (Højre)
+S16_2,99,Ved ikke
+S17_2,1,Socialdemokratiet
+S17_2,2,Det Radikale Venstre
+S17_2,3,Det Konservative Folkeparti
+S17_2,4,CentrumDemokraterne
+S17_2,5,Socialistisk Folkeparti
+S17_2,6,Dansk Folkeparti
+S17_2,7,Kristeligt Folkeparti
+S17_2,8,Venstre - Danmarks Liberale Parti
+S17_2,9,Fremskridtspartiet
+S17_2,10,Enhedslisten
+S17_2,11,Frihed 2000
+S17_2,12,Andre
+S17_2,13,Ville stemme blankt
+S17_2,14,Vil ikke stemme
+S17_2,15,Ved ikke
+S17_2,16,Vil ikke svare
+S18A_2,1,Helt enig
+S18A_2,2,Delvis enig
+S18A_2,3,Hverken enig eller uenig
+S18A_2,4,Delvis uenig
+S18A_2,5,Helt uenig
+S18A_2,6,Ved ikke
+S18B_2,1,Helt enig
+S18B_2,2,Delvis enig
+S18B_2,3,Hverken enig eller uenig
+S18B_2,4,Delvis uenig
+S18B_2,5,Helt uenig
+S18B_2,6,Ved ikke
+S18C_2,1,Helt enig
+S18C_2,2,Delvis enig
+S18C_2,3,Hverken enig eller uenig
+S18C_2,4,Delvis uenig
+S18C_2,5,Helt uenig
+S18C_2,6,Ved ikke
+S19_2,1,Mest enig med A
+S19_2,2,Mest enig med B
+S19_2,3,Mest enig med C
+S19_2,4,Ikke enig med nogen af dem
+S19_2,5,Ved ikke
+S20_2,1,"1, Spild af tid"
+S20_2,2,2
+S20_2,3,3
+S20_2,4,4
+S20_2,5,5
+S20_2,6,6
+S20_2,7,7
+S20_2,8,8
+S20_2,9,"9, En yderst værdifuld erfaring"
+S21_2,1,Meget
+S21_2,2,Noget
+S21_2,3,Lidt
+S21_2,4,Stort set ingenting
+S21_2,5,Ved ikke
+S22A_2,1,Af meget stor betydning
+S22A_2,2,Af stor betydning
+S22A_2,3,Af nogen betydning
+S22A_2,4,Af ringe betydning
+S22A_2,5,Uden betydning
+S22A_2,6,Ved ikke
+S22B_2,1,Af meget stor betydning
+S22B_2,2,Af stor betydning
+S22B_2,3,Af nogen betydning
+S22B_2,4,Af ringe betydning
+S22B_2,5,Uden betydning
+S22B_2,6,Ved ikke
+S22C_2,1,Af meget stor betydning
+S22C_2,2,Af stor betydning
+S22C_2,3,Af nogen betydning
+S22C_2,4,Af ringe betydning
+S22C_2,5,Uden betydning
+S22C_2,6,Ved ikke
+S22D_2,1,Af meget stor betydning
+S22D_2,2,Af stor betydning
+S22D_2,3,Af nogen betydning
+S22D_2,4,Af ringe betydning
+S22D_2,5,Uden betydning
+S22D_2,6,Ved ikke
+S22E_2,1,Af meget stor betydning
+S22E_2,2,Af stor betydning
+S22E_2,3,Af nogen betydning
+S22E_2,4,Af ringe betydning
+S22E_2,5,Uden betydning
+S22E_2,6,Ved ikke
+S22F_2,1,Af meget stor betydning
+S22F_2,2,Af stor betydning
+S22F_2,3,Af nogen betydning
+S22F_2,4,Af ringe betydning
+S22F_2,5,Uden betydning
+S22F_2,6,Ved ikke
+S22G_2,1,Af meget stor betydning
+S22G_2,2,Af stor betydning
+S22G_2,3,Af nogen betydning
+S22G_2,4,Af ringe betydning
+S22G_2,5,Uden betydning
+S22G_2,6,Ved ikke
+S23A_2,1,Helt enig
+S23A_2,2,Delvis enig
+S23A_2,3,Hverken/ eller
+S23A_2,4,Delvis uenig
+S23A_2,5,Helt uenig
+S23A_2,6,Ved ikke
+S23B_2,1,Helt enig
+S23B_2,2,Delvis enig
+S23B_2,3,Hverken/ eller
+S23B_2,4,Delvis uenig
+S23B_2,5,Helt uenig
+S23B_2,6,Ved ikke
+S23C_2,1,Helt enig
+S23C_2,2,Delvis enig
+S23C_2,3,Hverken/ eller
+S23C_2,4,Delvis uenig
+S23C_2,5,Helt uenig
+S23C_2,6,Ved ikke
+S23D_2,1,Helt enig
+S23D_2,2,Delvis enig
+S23D_2,3,Hverken/ eller
+S23D_2,4,Delvis uenig
+S23D_2,5,Helt uenig
+S23D_2,6,Ved ikke
+S23E_2,1,Helt enig
+S23E_2,2,Delvis enig
+S23E_2,3,Hverken/ eller
+S23E_2,4,Delvis uenig
+S23E_2,5,Helt uenig
+S23E_2,6,Ved ikke
+S23F_2,1,Helt enig
+S23F_2,2,Delvis enig
+S23F_2,3,Hverken/ eller
+S23F_2,4,Delvis uenig
+S23F_2,5,Helt uenig
+S23F_2,6,Ved ikke
+S24_2,1,Panel-debatterne favoriserede i meget høj grad nej-siden
+S24_2,2,Panel-debatterne favoriserede i høj grad nej-siden
+S24_2,3,Panel-debatterne tilgodeså begge sider i debatten
+S24_2,4,Panel-debatterne favoriserede i høj grad ja-siden
+S24_2,5,Panel-debatterne favoriserede i meget høj grad ja-siden
+S24_2,6,Ved ikke
+S25A_2,1,Helt enig
+S25A_2,2,Delvis enig
+S25A_2,3,Hverken/ eller
+S25A_2,4,Delvis uenig
+S25A_2,5,Helt uenig
+S25A_2,6,Ved ikke
+S25B_2,1,Helt enig
+S25B_2,2,Delvis enig
+S25B_2,3,Hverken/ eller
+S25B_2,4,Delvis uenig
+S25B_2,5,Helt uenig
+S25B_2,6,Ved ikke
+S25C_2,1,Helt enig
+S25C_2,2,Delvis enig
+S25C_2,3,Hverken/ eller
+S25C_2,4,Delvis uenig
+S25C_2,5,Helt uenig
+S25C_2,6,Ved ikke
+S25D_2,1,Helt enig
+S25D_2,2,Delvis enig
+S25D_2,3,Hverken/ eller
+S25D_2,4,Delvis uenig
+S25D_2,5,Helt uenig
+S25D_2,6,Ved ikke
+S25E_2,1,Helt enig
+S25E_2,2,Delvis enig
+S25E_2,3,Hverken/ eller
+S25E_2,4,Delvis uenig
+S25E_2,5,Helt uenig
+S25E_2,6,Ved ikke
+S26A_2,1,Helt enig
+S26A_2,2,Delvis enig
+S26A_2,3,Hverken/ eller
+S26A_2,4,Delvis uenig
+S26A_2,5,Helt uenig
+S26A_2,6,Ved ikke
+S26B_2,1,Helt enig
+S26B_2,2,Delvis enig
+S26B_2,3,Hverken/ eller
+S26B_2,4,Delvis uenig
+S26B_2,5,Helt uenig
+S26B_2,6,Ved ikke
+S26C_2,1,Helt enig
+S26C_2,2,Delvis enig
+S26C_2,3,Hverken/ eller
+S26C_2,4,Delvis uenig
+S26C_2,5,Helt uenig
+S26C_2,6,Ved ikke
+S26D_2,1,Helt enig
+S26D_2,2,Delvis enig
+S26D_2,3,Hverken/ eller
+S26D_2,4,Delvis uenig
+S26D_2,5,Helt uenig
+S26D_2,6,Ved ikke
+S26E_2,1,Helt enig
+S26E_2,2,Delvis enig
+S26E_2,3,Hverken/ eller
+S26E_2,4,Delvis uenig
+S26E_2,5,Helt uenig
+S26E_2,6,Ved ikke
+S26F_2,1,Helt enig
+S26F_2,2,Delvis enig
+S26F_2,3,Hverken/ eller
+S26F_2,4,Delvis uenig
+S26F_2,5,Helt uenig
+S26F_2,6,Ved ikke
+S26G_2,1,Helt enig
+S26G_2,2,Delvis enig
+S26G_2,3,Hverken/ eller
+S26G_2,4,Delvis uenig
+S26G_2,5,Helt uenig
+S26G_2,6,Ved ikke
+S26H_2,1,Helt enig
+S26H_2,2,Delvis enig
+S26H_2,3,Hverken/ eller
+S26H_2,4,Delvis uenig
+S26H_2,5,Helt uenig
+S26H_2,6,Ved ikke
+S26I_2,1,Helt enig
+S26I_2,2,Delvis enig
+S26I_2,3,Hverken/ eller
+S26I_2,4,Delvis uenig
+S26I_2,5,Helt uenig
+S26I_2,6,Ved ikke
+S26J_2,1,Helt enig
+S26J_2,2,Delvis enig
+S26J_2,3,Hverken/ eller
+S26J_2,4,Delvis uenig
+S26J_2,5,Helt uenig
+S26J_2,6,Ved ikke
+S26K_2,1,Helt enig
+S26K_2,2,Delvis enig
+S26K_2,3,Hverken/ eller
+S26K_2,4,Delvis uenig
+S26K_2,5,Helt uenig
+S26K_2,6,Ved ikke
+S26L_2,1,Helt enig
+S26L_2,2,Delvis enig
+S26L_2,3,Hverken/ eller
+S26L_2,4,Delvis uenig
+S26L_2,5,Helt uenig
+S26L_2,6,Ved ikke
+S26M_2,1,Helt enig
+S26M_2,2,Delvis enig
+S26M_2,3,Hverken/ eller
+S26M_2,4,Delvis uenig
+S26M_2,5,Helt uenig
+S26M_2,6,Ved ikke
+S26N_2,1,Helt enig
+S26N_2,2,Delvis enig
+S26N_2,3,Hverken/ eller
+S26N_2,4,Delvis uenig
+S26N_2,5,Helt uenig
+S26N_2,6,Ved ikke
+S26O_2,1,Helt enig
+S26O_2,2,Delvis enig
+S26O_2,3,Hverken/ eller
+S26O_2,4,Delvis uenig
+S26O_2,5,Helt uenig
+S26O_2,6,Ved ikke
+S26P_2,1,Helt enig
+S26P_2,2,Delvis enig
+S26P_2,3,Hverken/ eller
+S26P_2,4,Delvis uenig
+S26P_2,5,Helt uenig
+S26P_2,6,Ved ikke
+S26Q_2,1,Helt enig
+S26Q_2,2,Delvis enig
+S26Q_2,3,Hverken/ eller
+S26Q_2,4,Delvis uenig
+S26Q_2,5,Helt uenig
+S26Q_2,6,Ved ikke
+S27A_2,1,Helt enig
+S27A_2,2,Delvis enig
+S27A_2,3,Hverken/ eller
+S27A_2,4,Delvis uenig
+S27A_2,5,Helt uenig
+S27A_2,6,Ved ikke
+S27B_2,1,Helt enig
+S27B_2,2,Delvis enig
+S27B_2,3,Hverken/ eller
+S27B_2,4,Delvis uenig
+S27B_2,5,Helt uenig
+S27B_2,6,Ved ikke
+S27C_2,1,Helt enig
+S27C_2,2,Delvis enig
+S27C_2,3,Hverken/ eller
+S27C_2,4,Delvis uenig
+S27C_2,5,Helt uenig
+S27C_2,6,Ved ikke
+S27D_2,1,Helt enig
+S27D_2,2,Delvis enig
+S27D_2,3,Hverken/ eller
+S27D_2,4,Delvis uenig
+S27D_2,5,Helt uenig
+S27D_2,6,Ved ikke
+S27E_2,1,Helt enig
+S27E_2,2,Delvis enig
+S27E_2,3,Hverken/ eller
+S27E_2,4,Delvis uenig
+S27E_2,5,Helt uenig
+S27E_2,6,Ved ikke
+S27F_2,1,Helt enig
+S27F_2,2,Delvis enig
+S27F_2,3,Hverken/ eller
+S27F_2,4,Delvis uenig
+S27F_2,5,Helt uenig
+S27F_2,6,Ved ikke
+S27G_2,1,Helt enig
+S27G_2,2,Delvis enig
+S27G_2,3,Hverken/ eller
+S27G_2,4,Delvis uenig
+S27G_2,5,Helt uenig
+S27G_2,6,Ved ikke
+S28A_2,1,Helt enig
+S28A_2,2,Delvis enig
+S28A_2,3,Hverken/ eller
+S28A_2,4,Delvis uenig
+S28A_2,5,Helt uenig
+S28A_2,6,Ved ikke
+S28B_2,1,Helt enig
+S28B_2,2,Delvis enig
+S28B_2,3,Hverken/ eller
+S28B_2,4,Delvis uenig
+S28B_2,5,Helt uenig
+S28B_2,6,Ved ikke
+S28C_2,1,Helt enig
+S28C_2,2,Delvis enig
+S28C_2,3,Hverken/ eller
+S28C_2,4,Delvis uenig
+S28C_2,5,Helt uenig
+S28C_2,6,Ved ikke
+S28D_2,1,Helt enig
+S28D_2,2,Delvis enig
+S28D_2,3,Hverken/ eller
+S28D_2,4,Delvis uenig
+S28D_2,5,Helt uenig
+S28D_2,6,Ved ikke
+S28E_2,1,Helt enig
+S28E_2,2,Delvis enig
+S28E_2,3,Hverken/ eller
+S28E_2,4,Delvis uenig
+S28E_2,5,Helt uenig
+S28E_2,6,Ved ikke
+S28F_2,1,Helt enig
+S28F_2,2,Delvis enig
+S28F_2,3,Hverken/ eller
+S28F_2,4,Delvis uenig
+S28F_2,5,Helt uenig
+S28F_2,6,Ved ikke
+S28G_2,1,Helt enig
+S28G_2,2,Delvis enig
+S28G_2,3,Hverken/ eller
+S28G_2,4,Delvis uenig
+S28G_2,5,Helt uenig
+S28G_2,6,Ved ikke
+S28H_2,1,Helt enig
+S28H_2,2,Delvis enig
+S28H_2,3,Hverken/ eller
+S28H_2,4,Delvis uenig
+S28H_2,5,Helt uenig
+S28H_2,6,Ved ikke
+S29_2,1,Ja
+S29_2,2,Nej
+S29_2,3,Ved ikke
+S31_2,1,Ja
+S31_2,2,Måske
+S31_2,3,Nej
+S32_2,1,Ja
+S32_2,2,Måske
+S32_2,3,Nej
+S33_2,1,Ja
+S33_2,2,Måske
+S33_2,3,Nej
+S34A_2,1,Helt enig
+S34A_2,2,Delvis enig
+S34A_2,3,Hverken/ eller
+S34A_2,4,Delvis uenig
+S34A_2,5,Helt uenig
+S34A_2,6,Ved ikke
+S34B_2,1,Helt enig
+S34B_2,2,Delvis enig
+S34B_2,3,Hverken/ eller
+S34B_2,4,Delvis uenig
+S34B_2,5,Helt uenig
+S34B_2,6,Ved ikke
+S34C_2,1,Helt enig
+S34C_2,2,Delvis enig
+S34C_2,3,Hverken/ eller
+S34C_2,4,Delvis uenig
+S34C_2,5,Helt uenig
+S34C_2,6,Ved ikke
+S34D_2,1,Helt enig
+S34D_2,2,Delvis enig
+S34D_2,3,Hverken/ eller
+S34D_2,4,Delvis uenig
+S34D_2,5,Helt uenig
+S34D_2,6,Ved ikke
+S34E_2,1,Helt enig
+S34E_2,2,Delvis enig
+S34E_2,3,Hverken/ eller
+S34E_2,4,Delvis uenig
+S34E_2,5,Helt uenig
+S34E_2,6,Ved ikke

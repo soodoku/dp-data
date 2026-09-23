@@ -1,0 +1,383 @@
+source_column,source_value,value_label
+s_01,1,Mand
+s_01,2,Kvinde
+s_11,1,"Workman, unskilled"
+s_11,2,"Workman, skilled"
+s_11,3,"salaried worker,public servant, solider"
+s_11,4,self-employed
+s_11,5,apprentice
+s_11,6,"protected job,job rotation"
+s_11,7,student
+s_11,8,unemployed
+s_11,9,"Recipent of SS, early retirement/disability benefits"
+s_11,10,homemaker/spouse without a career
+s_11,11,person who helps spouse with business
+s_11,12,Don't want to answer
+s_11b,1,"farming, hunting, fishing, forestry or mining"
+s_11b,2,manufacturing
+s_11b,3,building or landscaping industry
+s_11b,4,"retail, wholesale, service, or repair industry"
+s_11b,5,hotel or restaurant industry
+s_11b,6,transportation
+s_11b,7,"banking, investment, or insurance industry"
+s_11b,8,"real estate, rentals, research, architecture, engineering"
+s_11b,9,public administration
+s_11b,10,education
+s_11b,11,pedagogy/chidcare
+s_11b,12,health services
+s_11b,13,other
+s_11b,14,don't know
+s_11c,1,self employed
+s_11c,2,privately employed
+s_11c,3,publicly employed
+s_11c,4,"other, semi public interest grp"
+s_11c,5,don't know
+s_12,1,no education
+s_12,2,"elementary (7th grade), middle school(8/9/10th)"
+s_12,3,EFG/HG/technical school (1 yr program for teenagers
+s_12,4,HH/Studentereksamen/HF/HTX (three year HS programs)
+s_12,5,vocational training
+s_12,6,short higher education
+s_12,7,middle length higher education (3-4 years)
+s_12,8,long higher education ( 5+ years)
+s_12,9,other
+s_12,10,don't want to answer
+s_13,1,lives out in the country
+s_13,2,Under 1.000
+s_13,3,1.001 - 2.000
+s_13,4,2.001 - 10.000
+s_13,5,Over 10.000
+s_13,6,Ved ikke
+s_14,1,income in danish kroner
+s_14,2,Ved ikke
+s_14,3,dont' want to answer
+s_15,1,"Yes, in favor of the Danish participation in the single curr"
+s_15,2,"No, against Danish participation in the single currency"
+s_15,3,return a blank ballot
+s_15,4,will not vote
+s_15,5,don't know/have not yet decided
+s_15b,1,"yes, in favor of danish participation in single currency"
+s_15b,2,"no, against danish participation in the single currency"
+s_15b,3,don't know
+s_16,1,very unlikely
+s_16,2,unlikely
+s_16,3,"neither, nor"
+s_16,4,likely
+s_16,5,very likely
+s_16,6,don't know
+s_17_01,1,strongly agree
+s_17_01,2,somewhat agree
+s_17_01,3,neither agree nor disagree
+s_17_01,4,somewhat disagree
+s_17_01,5,strongly disagree
+s_17_01,6,don't know
+s_17_02,1,strongly agree
+s_17_02,2,somewhat agree
+s_17_02,3,neither agree nor disagree
+s_17_02,4,somewhat disagree
+s_17_02,5,strongly disagree
+s_17_02,6,don't know
+s_17_03,1,strongly agree
+s_17_03,2,somewhat agree
+s_17_03,3,neither agree nor disagree
+s_17_03,4,somewhat disagree
+s_17_03,5,strongly disagree
+s_17_03,6,don't know
+s_17_04,1,strongly agree
+s_17_04,2,somewhat agree
+s_17_04,3,neither agree nor disagree
+s_17_04,4,somewhat disagree
+s_17_04,5,strongly disagree
+s_17_04,6,don't know
+s_17_05,1,strongly agree
+s_17_05,2,somewhat agree
+s_17_05,3,neither agree nor disagree
+s_17_05,4,somewhat disagree
+s_17_05,5,strongly disagree
+s_17_05,6,don't know
+s_17_06,1,strongly agree
+s_17_06,2,somewhat agree
+s_17_06,3,neither agree nor disagree
+s_17_06,4,somewhat disagree
+s_17_06,5,strongly disagree
+s_17_06,6,don't know
+s_17_07,1,strongly agree
+s_17_07,2,somewhat agree
+s_17_07,3,neither agree nor disagree
+s_17_07,4,somewhat disagree
+s_17_07,5,strongly disagree
+s_17_07,6,don't know
+s_17_08,1,strongly agree
+s_17_08,2,somewhat agree
+s_17_08,3,neither agree nor disagree
+s_17_08,4,somewhat disagree
+s_17_08,5,strongly disagree
+s_17_08,6,don't know
+s_17_09,1,strongly agree
+s_17_09,2,somewhat agree
+s_17_09,3,neither agree nor disagree
+s_17_09,4,somewhat disagree
+s_17_09,5,strongly disagree
+s_17_09,6,don't know
+s_17_10,1,strongly agree
+s_17_10,2,somewhat agree
+s_17_10,3,neither agree nor disagree
+s_17_10,4,somewhat disagree
+s_17_10,5,strongly disagree
+s_17_10,6,don't know
+s_17_11,1,strongly agree
+s_17_11,2,somewhat agree
+s_17_11,3,neither agree nor disagree
+s_17_11,4,somewhat disagree
+s_17_11,5,strongly disagree
+s_17_11,6,don't know
+s_17_12,1,strongly agree
+s_17_12,2,somewhat agree
+s_17_12,3,neither agree nor disagree
+s_17_12,4,somewhat disagree
+s_17_12,5,strongly disagree
+s_17_12,6,don't know
+s_17_13,1,strongly agree
+s_17_13,2,somewhat agree
+s_17_13,3,neither agree nor disagree
+s_17_13,4,somewhat disagree
+s_17_13,5,strongly disagree
+s_17_13,6,don't know
+s_17_14,1,strongly agree
+s_17_14,2,somewhat agree
+s_17_14,3,neither agree nor disagree
+s_17_14,4,somewhat disagree
+s_17_14,5,strongly disagree
+s_17_14,6,don't know
+s_17_15,1,strongly agree
+s_17_15,2,somewhat agree
+s_17_15,3,neither agree nor disagree
+s_17_15,4,somewhat disagree
+s_17_15,5,strongly disagree
+s_17_15,6,don't know
+s_17_16,1,strongly agree
+s_17_16,2,somewhat agree
+s_17_16,3,neither agree nor disagree
+s_17_16,4,somewhat disagree
+s_17_16,5,strongly disagree
+s_17_16,6,don't know
+s_17_17,1,strongly agree
+s_17_17,2,somewhat agree
+s_17_17,3,neither agree nor disagree
+s_17_17,4,somewhat disagree
+s_17_17,5,strongly disagree
+s_17_17,6,don't know
+s_18,1,true
+s_18,2,false
+s_18,3,don't know
+s_19,1,true
+s_19,2,false
+s_19,3,don't know
+s_20,1,true
+s_20,2,false
+s_20,3,don't know
+s_21,1,2001
+s_21,2,2004 (korrekt svar)
+s_21,3,2005
+s_21,4,2007
+s_21,5,don't know
+s_22,1,be close down
+s_22,2,continue to operate pretty much like now
+s_22,3,become part of european central bank
+s_22,4,don't know
+s_23,1,Yes
+s_23,2,no
+s_23,3,don't know
+s_24,1,Yes
+s_24,2,no
+s_24,3,don't know
+s_25_01,1,Recommend Yes
+s_25_01,2,Recommend No
+s_25_01,3,Don't know
+s_25_02,1,Recommend Yes
+s_25_02,2,Recommend No
+s_25_02,3,Don't know
+s_25_03,1,Recommend Yes
+s_25_03,2,Recommend No
+s_25_03,3,Don't know
+s_25_04,1,Recommend Yes
+s_25_04,2,Recommend No
+s_25_04,3,Don't know
+s_25_05,1,Recommend Yes
+s_25_05,2,Recommend No
+s_25_05,3,Don't know
+s_25_06,1,Recommend Yes
+s_25_06,2,Recommend No
+s_25_06,3,Don't know
+s_25_07,1,Recommend Yes
+s_25_07,2,Recommend No
+s_25_07,3,Don't know
+s_25_08,1,Recommend Yes
+s_25_08,2,Recommend No
+s_25_08,3,Don't know
+s_25_09,1,Recommend Yes
+s_25_09,2,Recommend No
+s_25_09,3,Don't know
+s_25_10,1,Recommend Yes
+s_25_10,2,Recommend No
+s_25_10,3,Don't know
+s_25_11,1,Recommend Yes
+s_25_11,2,Recommend No
+s_25_11,3,Don't know
+s_25_12,1,Recommend Yes
+s_25_12,2,Recommend No
+s_25_12,3,Don't know
+s_25_13,1,Recommend Yes
+s_25_13,2,Recommend No
+s_25_13,3,Don't know
+s_26_01,1,strongly agree
+s_26_01,2,somewhat agree
+s_26_01,3,neither agree nor disagree
+s_26_01,4,somewhat disagree
+s_26_01,5,strongly disagree
+s_26_01,6,don't know
+s_26_02,1,strongly agree
+s_26_02,2,somewhat agree
+s_26_02,3,neither agree nor disagree
+s_26_02,4,somewhat disagree
+s_26_02,5,strongly disagree
+s_26_02,6,don't know
+s_26_03,1,strongly agree
+s_26_03,2,somewhat agree
+s_26_03,3,neither agree nor disagree
+s_26_03,4,somewhat disagree
+s_26_03,5,strongly disagree
+s_26_03,6,don't know
+s_26_04,1,strongly agree
+s_26_04,2,somewhat agree
+s_26_04,3,neither agree nor disagree
+s_26_04,4,somewhat disagree
+s_26_04,5,strongly disagree
+s_26_04,6,don't know
+s_26_05,1,strongly agree
+s_26_05,2,somewhat agree
+s_26_05,3,neither agree nor disagree
+s_26_05,4,somewhat disagree
+s_26_05,5,strongly disagree
+s_26_05,6,don't know
+s_26_06,1,strongly agree
+s_26_06,2,somewhat agree
+s_26_06,3,neither agree nor disagree
+s_26_06,4,somewhat disagree
+s_26_06,5,strongly disagree
+s_26_06,6,don't know
+s_27_01,1,very high extent
+s_27_01,2,high extent
+s_27_01,3,some extent
+s_27_01,4,low extent
+s_27_01,5,not at all
+s_27_01,6,don't know
+s_27_02,1,very high extent
+s_27_02,2,high extent
+s_27_02,3,some extent
+s_27_02,4,low extent
+s_27_02,5,not at all
+s_27_02,6,don't know
+s_27_03,1,very high extent
+s_27_03,2,high extent
+s_27_03,3,some extent
+s_27_03,4,low extent
+s_27_03,5,not at all
+s_27_03,6,don't know
+s_27_04,1,very high extent
+s_27_04,2,high extent
+s_27_04,3,some extent
+s_27_04,4,low extent
+s_27_04,5,not at all
+s_27_04,6,don't know
+s_28,1,Often
+s_28,2,once in a while
+s_28,3,never
+s_28,4,don't know
+s_29,1,yes
+s_29,2,consider it
+s_29,3,No
+s_29,4,don't know
+s_30,1,0 (left wing)
+s_30,2,1
+s_30,3,2
+s_30,4,3
+s_30,5,4
+s_30,6,5
+s_30,7,6
+s_30,8,7
+s_30,9,8
+s_30,10,9
+s_30,11,10 (right wing)
+s_30,12,don't know
+s_31,1,Yes
+s_31,2,No
+s_31,3,don't know
+s_32,1,Socialdemokratiet
+s_32,2,Det Radikale Venstre
+s_32,3,Det Konservative Folkeparti
+s_32,4,CentrumDemokraterne
+s_32,5,Socialistisk Folkeparti
+s_32,6,Dansk Folkeparti
+s_32,7,Kristeligt Folkeparti
+s_32,8,Venstre - Danmarks Liberale Parti
+s_32,9,Fremskridtspartiet
+s_32,10,Enhedslisten
+s_32,11,Frihed 2000
+s_32,12,other
+s_32,13,would return a blank ballot
+s_32,14,would not vote
+s_32,15,don't know
+s_32,16,don't want to answer
+s_33,1,Socialdemokratiet
+s_33,2,Det Radikale Venstre
+s_33,3,Det Konservative Folkeparti
+s_33,4,CentrumDemokraterne
+s_33,5,Socialistisk Folkeparti
+s_33,6,Dansk Folkeparti
+s_33,7,Kristeligt Folkeparti
+s_33,8,Venstre - Danmarks Liberale Parti
+s_33,9,Fremskridtspartiet
+s_33,10,Enhedslisten
+s_33,11,Frihed 2000
+s_33,12,other
+s_33,13,returned a blank ballot
+s_33,14,did not vote
+s_33,15,don't know/don't remember
+s_33,16,don't want to answer
+s_34,1,voted for danish participation
+s_34,2,voted against danish participation
+s_34,3,returned a blank ballot
+s_34,4,did not vote
+s_34,5,did not have the right to vote
+s_34,6,don't know/ cannot remember
+s_34,7,don't want to answer
+s_35_01,1,strongly agree
+s_35_01,2,somewhat agree
+s_35_01,3,neither agree nor disagree
+s_35_01,4,somewhat disagree
+s_35_01,5,strongly disagree
+s_35_01,6,don't know
+s_35_02,1,strongly agree
+s_35_02,2,somewhat agree
+s_35_02,3,neither agree nor disagree
+s_35_02,4,somewhat disagree
+s_35_02,5,strongly disagree
+s_35_02,6,don't know
+s_35_03,1,strongly agree
+s_35_03,2,somewhat agree
+s_35_03,3,neither agree nor disagree
+s_35_03,4,somewhat disagree
+s_35_03,5,strongly disagree
+s_35_03,6,don't know
+s_36,1,Agree most with A
+s_36,2,Agree most with B
+s_36,3,Agree most with C
+s_36,4,don't agree with any of them
+s_36,5,dont know
+s_37,1,Yes
+s_37,2,Don't know
+s_37,3,No
+s_38,1,Yes
+s_38,2,Don't know
+s_38,3,No

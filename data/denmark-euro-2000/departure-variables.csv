@@ -1,0 +1,127 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+DELNR,double,numeric,float64,Deltagernr.,F11.0,,,TRUE,Retained
+S1_2,double,haven_labelled|vctrs_vctr|double,float64,"1. Danmark deltager på grund af sit forbehold ikke i den fælles mønt, euroen. Hvad vil du stemme til folkeafstemningen den 28. september om dansk deltagelse i den fælles mønt? Vil du stemme...?",F8.0,,,TRUE,Retained
+S1B_2,double,haven_labelled|vctrs_vctr|double,float64,"1b. Hvis du skulle tage stilling for eller imod dansk deltagelse i den fælles mønt, euroen, hvad ville du så vælge?",F8.0,,,TRUE,Retained
+S2_2,double,haven_labelled|vctrs_vctr|double,float64,"2. Er det sandsynligt, at du vil ændre holdning på baggrund af euro-debatten inden folkeafstemningen den 28. september?",F8.0,,,TRUE,Retained
+S3A_2,double,haven_labelled|vctrs_vctr|double,float64,3a. Medlemskab af EU er positivt for Danmark,F8.0,,,TRUE,Retained
+S3B_2,double,haven_labelled|vctrs_vctr|double,float64,3b. Det er en vigtig opgave for EU at få nye lande optaget i unionen hurtigst muligt,F8.0,,,TRUE,Retained
+S3C_2,double,haven_labelled|vctrs_vctr|double,float64,3c. Dansk deltagelse i den fælles mønt forringer dansk selvstændighed,F8.0,,,TRUE,Retained
+S3D_2,double,haven_labelled|vctrs_vctr|double,float64,3d. Dansk deltagelse i den fælles mønt giver bedre vilkår for dansk erhvervsliv,F8.0,,,TRUE,Retained
+S3E_2,double,haven_labelled|vctrs_vctr|double,float64,3e. Dansk deltagelse i den fælles mønt er en trussel mod danskheden,F8.0,,,TRUE,Retained
+S3F_2,double,haven_labelled|vctrs_vctr|double,float64,3f. Dansk deltagelse i den fælles mønt giver en lavere rente i Danmark end i dag,F8.0,,,TRUE,Retained
+S3G_2,double,haven_labelled|vctrs_vctr|double,float64,3g. Dansk deltagelse i den fælles mønt vil medføre forringelse i den danske velfærdsmodel,F8.0,,,TRUE,Retained
+S3H_2,double,haven_labelled|vctrs_vctr|double,float64,3h. Dansk deltagelse i den fælles mønt giver mere indflydelse for Danmark på EUs beslutninger,F8.0,,,TRUE,Retained
+S3I_2,double,haven_labelled|vctrs_vctr|double,float64,3i. Det at have en dansk krone er vigtigere end en eventuel økonomisk gevinst ved deltagelse i den fælles mønt,F8.0,,,TRUE,Retained
+S3J_2,double,haven_labelled|vctrs_vctr|double,float64,3j. Euro-samarbejdet er et skridt mod Europas forenede stater,F8.0,,,TRUE,Retained
+S3K_2,double,haven_labelled|vctrs_vctr|double,float64,3k. Dansk deltagelse i den fælles mønt giver en økonomisk gevinst for Danmark,F8.0,,,TRUE,Retained
+S3L_2,double,haven_labelled|vctrs_vctr|double,float64,3l. Dansk deltagelse i den fælles mønt forringer lønmodtagernes vilkår,F8.0,,,TRUE,Retained
+S3M_2,double,haven_labelled|vctrs_vctr|double,float64,3m. Dansk deltagelse i den fælles mønt forbedrer de svage gruppers vilkår,F8.0,,,TRUE,Retained
+S3N_2,double,haven_labelled|vctrs_vctr|double,float64,"3n. Hvis Danmark går med i den fælles mønt, kan vi ikke melde os ud igen",F8.0,,,TRUE,Retained
+S3O_2,double,haven_labelled|vctrs_vctr|double,float64,3o. Euro-samarbejde understøtter fred og stabilitet i Europa,F8.0,,,TRUE,Retained
+S3P_2,double,haven_labelled|vctrs_vctr|double,float64,3p. Euro-samarbejdet er udemokratisk,F8.0,,,TRUE,Retained
+S3Q_2,double,haven_labelled|vctrs_vctr|double,float64,3q. Alt i alt er det fælles mønt-samarbejde positivt for Danmark,F8.0,,,TRUE,Retained
+S3R_2,double,haven_labelled|vctrs_vctr|double,float64,3r. Danmark bør vente med at tilslutte sig den fælles mønt,F8.0,,,TRUE,Retained
+S4_2,double,haven_labelled|vctrs_vctr|double,float64,"4. Danmark kan som medlem af euro-samarbejdet blive idømt bøder, hvis vi har et for stort underskud på statens finanser. Er det rigtigt eller forkert?",F8.0,,,TRUE,Retained
+S5_2,double,haven_labelled|vctrs_vctr|double,float64,"5. Danmark kan selv bestemme rentens størrelse, hvis vi tilslutter os den fælles mønt? Er det rigtigt eller forkert?",F8.0,,,TRUE,Retained
+S6_2,double,haven_labelled|vctrs_vctr|double,float64,"6. Danmark kan selv bestemme skatteniveauet, hvis vi tilslutter os den fælles mønt? Er det rigtigt eller forkert?",F8.0,,,TRUE,Retained
+S7_2,double,haven_labelled|vctrs_vctr|double,float64,"7. Hvis vi stemmer ja ved folkeafstemningen den 28. september, vil den fælles mønt så være i omløb i Danmark fra år 2001, 2004, 2005 eller 2007?",F8.0,,,TRUE,Retained
+S8_2,double,haven_labelled|vctrs_vctr|double,float64,"8. Hvis Danmark tilslutter sig den fælles mønt, vil den danske nationalbank så blive nedlagt, fortsætte stort set som i dag, eller bliver den en del af den Europæiske Centralbank?",F8.0,,,TRUE,Retained
+S9_2,double,haven_labelled|vctrs_vctr|double,float64,9. Vil euro-mønter få en national side?,F8.0,,,TRUE,Retained
+S10_2,double,haven_labelled|vctrs_vctr|double,float64,"10. Er Danmark med i et valuta-samarbejde i dag, hvor landene hjælper hinanden ved uro på valutamarkedet?",F8.0,,,TRUE,Retained
+S11_1_2,double,haven_labelled|vctrs_vctr|double,float64,Folkebevægelsen mod unionen,F8.0,,,TRUE,Retained
+S11_2_2,double,haven_labelled|vctrs_vctr|double,float64,Junibevægelsen,F8.0,,,TRUE,Retained
+S11_3_2,double,haven_labelled|vctrs_vctr|double,float64,Socialdemokratiet,F8.0,,,TRUE,Retained
+S11_4_2,double,haven_labelled|vctrs_vctr|double,float64,Det Radikale Venstre,F8.0,,,TRUE,Retained
+S11_5_2,double,haven_labelled|vctrs_vctr|double,float64,Det Konservative Folkeparti,F8.0,,,TRUE,Retained
+S11_6_2,double,haven_labelled|vctrs_vctr|double,float64,CentrumDemokraterne,F8.0,,,TRUE,Retained
+S11_7_2,double,haven_labelled|vctrs_vctr|double,float64,Socialistisk Folkeparti,F8.0,,,TRUE,Retained
+S11_8_2,double,haven_labelled|vctrs_vctr|double,float64,Dansk Folkeparti,F8.0,,,TRUE,Retained
+S11_9_2,double,haven_labelled|vctrs_vctr|double,float64,Kristeligt Folkeparti,F8.0,,,TRUE,Retained
+S11_10_2,double,haven_labelled|vctrs_vctr|double,float64,Venstre - Danmarks Liberale Parti,F8.0,,,TRUE,Retained
+S11_11_2,double,haven_labelled|vctrs_vctr|double,float64,Fremskridtspartiet,F8.0,,,TRUE,Retained
+S11_12_2,double,haven_labelled|vctrs_vctr|double,float64,Enhedslisten,F8.0,,,TRUE,Retained
+S11_13_2,double,haven_labelled|vctrs_vctr|double,float64,Frihed 2000,F8.0,,,TRUE,Retained
+S12A_2,double,haven_labelled|vctrs_vctr|double,float64,12a. Borgere som dig selv ikke har indflydelse på Folketingets og Regeringens beslutninger?,F8.0,,,TRUE,Retained
+S12B_2,double,haven_labelled|vctrs_vctr|double,float64,12b. Borgere som dig selv ikke har indflydelse på EUs beslutninger?,F8.0,,,TRUE,Retained
+S12C_2,double,haven_labelled|vctrs_vctr|double,float64,12c. Borgere som dig selv er kvalificeret til at deltage i en debat om euroen?,F8.0,,,TRUE,Retained
+S12D_2,double,haven_labelled|vctrs_vctr|double,float64,"12d. Borgere som dig selv har en mening om politik, som er værd at lytte til?",F8.0,,,TRUE,Retained
+S12E_2,double,haven_labelled|vctrs_vctr|double,float64,"12e. Manglende viden er grunden til, at andre borgere har en anden opfattelse af politik end dig selv?",F8.0,,,TRUE,Retained
+S12F_2,double,haven_labelled|vctrs_vctr|double,float64,12f. Andre borgere har gode argumenter for at have en anderledes opfattelse af politik end du selv har?,F8.0,,,TRUE,Retained
+S13A_2,double,haven_labelled|vctrs_vctr|double,float64,13a. I hvor høj grad føler du dig velinformeret om euroen?,F8.0,,,TRUE,Retained
+S13B_2,double,haven_labelled|vctrs_vctr|double,float64,13b. I hvor høj grad følger du med i den politiske debat om euroen?,F8.0,,,TRUE,Retained
+S13C_2,double,haven_labelled|vctrs_vctr|double,float64,13c. I hvor høj grad er du politisk interesseret?,F8.0,,,TRUE,Retained
+S13D_2,double,haven_labelled|vctrs_vctr|double,float64,13d. I hvor høj grad har du tillid til danske politikere?,F8.0,,,TRUE,Retained
+S14_2,double,haven_labelled|vctrs_vctr|double,float64,"14. I din omgangskreds sker det så ofte, nu og da eller aldrig, at I taler om politiske forhold?",F8.0,,,TRUE,Retained
+S15_2,double,haven_labelled|vctrs_vctr|double,float64,"15. Hvis du blev opfordret til at stille op på en liste til Europa-parlamentet, Folketinget, amts- eller kommunalbestyrelse ville du sige ja, overveje det eller sige nej?",F8.0,,,TRUE,Retained
+S16_2,double,haven_labelled|vctrs_vctr|double,float64,"16. I politik tales der ofte om venstre og højre. Hvor vil du placere dig selv på en skala, hvor 0 er mest venstreorienteret og 10 er mest højreorienteret?-Politisk skala",F8.0,,,TRUE,Retained
+S17_2,double,haven_labelled|vctrs_vctr|double,float64,"17. Hvilket parti ville du stemme på, hvis der var folketingsvalg i morgen?",F8.0,,,TRUE,Retained
+S18A_2,double,haven_labelled|vctrs_vctr|double,float64,A siger,F8.0,,,TRUE,Retained
+S18B_2,double,haven_labelled|vctrs_vctr|double,float64,B siger,F8.0,,,TRUE,Retained
+S18C_2,double,haven_labelled|vctrs_vctr|double,float64,C siger,F8.0,,,TRUE,Retained
+S19_2,double,haven_labelled|vctrs_vctr|double,float64,"19. Hvis du skulle vælge mellem A, B eller C´s holdninger, hvem er du så mest enig med?",F8.0,,,TRUE,Retained
+S20_2,double,haven_labelled|vctrs_vctr|double,float64,20. Hvordan vil du vurdere udbyttet af din deltagelse på folkehøringen? Folkehøringen var for mig...,F8.0,,,TRUE,Retained
+S21_2,double,haven_labelled|vctrs_vctr|double,float64,21. Hvor meget lærte du om euroen i forbindelse med folkehøringen?,F8.0,,,TRUE,Retained
+S22A_2,double,haven_labelled|vctrs_vctr|double,float64,22a. Oplysningsmaterialet,F8.0,,,TRUE,Retained
+S22B_2,double,haven_labelled|vctrs_vctr|double,float64,22b. At deltage i gruppediskussioner,F8.0,,,TRUE,Retained
+S22C_2,double,haven_labelled|vctrs_vctr|double,float64,22c. Svarene fra ekspertpanelet,F8.0,,,TRUE,Retained
+S22D_2,double,haven_labelled|vctrs_vctr|double,float64,22d. Svarene fra Europaparlamentspolitikerne,F8.0,,,TRUE,Retained
+S22E_2,double,haven_labelled|vctrs_vctr|double,float64,22e. Svarene fra Folketingspolitikerne,F8.0,,,TRUE,Retained
+S22F_2,double,haven_labelled|vctrs_vctr|double,float64,22f. Svarene fra de 4 top-politikere,F8.0,,,TRUE,Retained
+S22G_2,double,haven_labelled|vctrs_vctr|double,float64,22g. At mødes og diskutere med andre deltagere på folkehøringen uden for gruppediskussionerne,F8.0,,,TRUE,Retained
+S23A_2,double,haven_labelled|vctrs_vctr|double,float64,23a. Der var et højt informationsniveau på folkehøringen,F8.0,,,TRUE,Retained
+S23B_2,double,haven_labelled|vctrs_vctr|double,float64,23b. At være med til denne folkehøring har øget min forståelse for euro-spørgsmålet,F8.0,,,TRUE,Retained
+S23C_2,double,haven_labelled|vctrs_vctr|double,float64,23c. Folkehøringen tilføjede ikke ret meget til min viden om euro-spørgsmålet,F8.0,,,TRUE,Retained
+S23D_2,double,haven_labelled|vctrs_vctr|double,float64,23d. Deltagelsen i folkehøringen har styrket min forståelse for såvel ja-argumenter som nej-argumenter til euroen,F8.0,,,TRUE,Retained
+S23E_2,double,haven_labelled|vctrs_vctr|double,float64,23e. Der var et pres for at deltagerne skulle ændre holdning i en bestemt retning,F8.0,,,TRUE,Retained
+S23F_2,double,haven_labelled|vctrs_vctr|double,float64,23f. Deltagelsen i folkehøringen har medført at min holdning til euroen er blevet mere nuanceret,F8.0,,,TRUE,Retained
+S24_2,double,haven_labelled|vctrs_vctr|double,float64,24. Synes du at såvel nej-siden som ja-siden var repræsenterede under panel-debatterne?,F8.0,,,TRUE,Retained
+S25A_2,double,haven_labelled|vctrs_vctr|double,float64,25a. Forsamlingen var for stor til at det var muligt at få svar på spørgsmålene,F8.0,,,TRUE,Retained
+S25B_2,double,haven_labelled|vctrs_vctr|double,float64,25b. Formen med at deltagerne stillede spørgsmål til politikere og eksperter var god,F8.0,,,TRUE,Retained
+S25C_2,double,haven_labelled|vctrs_vctr|double,float64,25c. Jeg ville foretrække et oplæg fra eksperter og politikere fremfor selv at stille spørgsmål,F8.0,,,TRUE,Retained
+S25D_2,double,haven_labelled|vctrs_vctr|double,float64,"25d. Ordstyrerne sikrede at alle kom til orde såvel deltagere, politikere som eksperter",F8.0,,,TRUE,Retained
+S25E_2,double,haven_labelled|vctrs_vctr|double,float64,25e. Danmarks Radios tilstedeværelse var et forstyrrende element i panel-debatterne,F8.0,,,TRUE,Retained
+S26A_2,double,haven_labelled|vctrs_vctr|double,float64,26a. Diskussionerne var overfladiske,F8.0,,,TRUE,Retained
+S26B_2,double,haven_labelled|vctrs_vctr|double,float64,26b. Diskussionerne var konkrete,F8.0,,,TRUE,Retained
+S26C_2,double,haven_labelled|vctrs_vctr|double,float64,26c. Der var en positiv stemning i gruppen,F8.0,,,TRUE,Retained
+S26D_2,double,haven_labelled|vctrs_vctr|double,float64,26d. Der var enighed i gruppen fra starten i går,F8.0,,,TRUE,Retained
+S26E_2,double,haven_labelled|vctrs_vctr|double,float64,26e. Der var enighed i gruppen mod slutningen i dag,F8.0,,,TRUE,Retained
+S26F_2,double,haven_labelled|vctrs_vctr|double,float64,26f. Der var enighed i gruppen om måden at diskutere på,F8.0,,,TRUE,Retained
+S26G_2,double,haven_labelled|vctrs_vctr|double,float64,26g. Nogle få deltagere i gruppen dominerede diskussionerne,F8.0,,,TRUE,Retained
+S26H_2,double,haven_labelled|vctrs_vctr|double,float64,26h. Diskussionerne var livlige i gruppen fra starten i går,F8.0,,,TRUE,Retained
+S26I_2,double,haven_labelled|vctrs_vctr|double,float64,26i. Diskussionerne var livlige i gruppen mod slutningen af i dag,F8.0,,,TRUE,Retained
+S26J_2,double,haven_labelled|vctrs_vctr|double,float64,26j. Diskussionerne var præget af usikkerhed om faktuelle detaljer,F8.0,,,TRUE,Retained
+S26K_2,double,haven_labelled|vctrs_vctr|double,float64,26k. Diskussionerne var præget af lydhørhed over for andres argumenter,F8.0,,,TRUE,Retained
+S26L_2,double,haven_labelled|vctrs_vctr|double,float64,26l. Der opstod alliancer mellem nogle af deltagerne,F8.0,,,TRUE,Retained
+S26M_2,double,haven_labelled|vctrs_vctr|double,float64,26m. Der opstod forståelse for andres argumenter selv om de var modsat ens egne,F8.0,,,TRUE,Retained
+S26N_2,double,haven_labelled|vctrs_vctr|double,float64,26n. Det var svært at blive enige om hvilke spørgsmål gruppen ønskede at stille på panel-debatterne,F8.0,,,TRUE,Retained
+S26O_2,double,haven_labelled|vctrs_vctr|double,float64,26o. Diskussionerne i gruppen handlede mere om EU generelt end euroen,F8.0,,,TRUE,Retained
+S26P_2,double,haven_labelled|vctrs_vctr|double,float64,26p. Der var for lidt tid til at diskutere,F8.0,,,TRUE,Retained
+S26Q_2,double,haven_labelled|vctrs_vctr|double,float64,26q. Gruppen var for stor til at alle kunne komme til orde,F8.0,,,TRUE,Retained
+S27A_2,double,haven_labelled|vctrs_vctr|double,float64,27a. Deltagerne i gruppen argumenterede ved at henvise til hvad der var bedst for deltagerne selv,F8.0,,,TRUE,Retained
+S27B_2,double,haven_labelled|vctrs_vctr|double,float64,27b. Deltagerne i gruppen argumenterede for en sag ved at henvise til almen retfærdighed og generelle principper,F8.0,,,TRUE,Retained
+S27C_2,double,haven_labelled|vctrs_vctr|double,float64,27c. Deltagerne argumenterede for en sag ved at advare om negative konsekvenser ved et ja eller nej til euroen,F8.0,,,TRUE,Retained
+S27D_2,double,haven_labelled|vctrs_vctr|double,float64,27d. Deltagerne i gruppen argumenterede for hvad der var bedst og mest retfærdigt for alle borgere,F8.0,,,TRUE,Retained
+S27E_2,double,haven_labelled|vctrs_vctr|double,float64,27e. Alle holdninger i gruppen blev betragtet som ligeværdige,F8.0,,,TRUE,Retained
+S27F_2,double,haven_labelled|vctrs_vctr|double,float64,27f. Alle aspekter ved euro-debatten blev dækket i gruppediskussionerne,F8.0,,,TRUE,Retained
+S27G_2,double,haven_labelled|vctrs_vctr|double,float64,27g. Mange af de andre gruppedeltageres argumenter var brugbare for min egen stillingtagen,F8.0,,,TRUE,Retained
+S28A_2,double,haven_labelled|vctrs_vctr|double,float64,28a. Gruppelederen informerede klart om formål og hensigt med gruppediskussionerne,F8.0,,,TRUE,Retained
+S28B_2,double,haven_labelled|vctrs_vctr|double,float64,28b. Gruppelederen sikrede at alle kom til orde,F8.0,,,TRUE,Retained
+S28C_2,double,haven_labelled|vctrs_vctr|double,float64,28c. Gruppelederen forsøgte at påvirke diskussionerne med sine egne holdninger,F8.0,,,TRUE,Retained
+S28D_2,double,haven_labelled|vctrs_vctr|double,float64,28d. Gruppelederen favoriserede bestemte argumenter,F8.0,,,TRUE,Retained
+S28E_2,double,haven_labelled|vctrs_vctr|double,float64,28e. Gruppelederen bidrog til at gruppen belyste spørgsmålet om euroen fra flere vinkler,F8.0,,,TRUE,Retained
+S28F_2,double,haven_labelled|vctrs_vctr|double,float64,28f. Gruppelederen sørgede for en positiv stemning i gruppen,F8.0,,,TRUE,Retained
+S28G_2,double,haven_labelled|vctrs_vctr|double,float64,28g. Gruppelederen var behjælpelig med at få deltagernes syn frem,F8.0,,,TRUE,Retained
+S28H_2,double,haven_labelled|vctrs_vctr|double,float64,28h. Gruppelederen var for passiv,F8.0,,,TRUE,Retained
+S29_2,double,haven_labelled|vctrs_vctr|double,float64,29. Har du ændret holdning på et eller flere punkter til euro-spørgsmålet siden i går formiddag?,F8.0,,,TRUE,Retained
+S30_2,character,character,,30. Hvad er det vigtigste tema for din stillingtagen til euroen?,A255,,,FALSE,Excluded; see source_field_exclusions
+S31_2,double,haven_labelled|vctrs_vctr|double,float64,31. Vil du være villig til at argumentere for den holdning som du har givet udtryk for her i skemaet overfor andre?,F8.0,,,TRUE,Retained
+S32_2,double,haven_labelled|vctrs_vctr|double,float64,32. Kunne du tænke dig at deltage i folkehøringer i fremtiden måske om andre emner?,F8.0,,,TRUE,Retained
+S33_2,double,haven_labelled|vctrs_vctr|double,float64,33. Vil du anbefale din omgangskreds at deltage i folkehøringer i fremtiden måske om andre emner?,F8.0,,,TRUE,Retained
+S34A_2,double,haven_labelled|vctrs_vctr|double,float64,34a. Folkehøringers resultater bør være bindende for politiske beslutninger også selvom de går imod et flertal blandt politikerne,F8.0,,,TRUE,Retained
+S34B_2,double,haven_labelled|vctrs_vctr|double,float64,34b. Folkehøringers resultater bør kun være en form for information blandt mange til politikerne,F8.0,,,TRUE,Retained
+S34C_2,double,haven_labelled|vctrs_vctr|double,float64,34c. Folkehøringer bør ikke anvendes,F8.0,,,TRUE,Retained
+S34D_2,double,haven_labelled|vctrs_vctr|double,float64,34d. Som deltager i folkehøringer taler man også for borgere som ikke har mulighed for at deltage,F8.0,,,TRUE,Retained
+S34E_2,double,haven_labelled|vctrs_vctr|double,float64,34e. Som deltager i folkehøringer taler man kun for sig selv,F8.0,,,TRUE,Retained
+S35A_2,character,character,,"35. Til sidst: Vil du beskrive med egne ord, hvordan det påvirkede dig at skulle argumentere for dine holdninger med andre borgere i løbet af denne weekend?",A255,,,FALSE,Excluded; see source_field_exclusions
+S35B_2,character,character,,"35. Til sidst: Vil du beskrive med egne ord, hvordan det påvirkede dig at skulle argumentere for dine holdninger med andre borgere i løbet af denne weekend?",A255,,,FALSE,Excluded; see source_field_exclusions
+S35C_2,character,character,,"35. Til sidst: Vil du beskrive med egne ord, hvordan det påvirkede dig at skulle argumentere for dine holdninger med andre borgere i løbet af denne weekend?",A255,,,FALSE,Excluded; see source_field_exclusions
