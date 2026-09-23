@@ -1,0 +1,975 @@
+source_column,source_value,value_label
+Q1,1,1 Create more housing
+Q1,2,2
+Q1,3,3
+Q1,4,4 Exactly in the middle
+Q1,5,5
+Q1,6,6
+Q1,7,7 Restrict housing
+Q1,8,8 Dont know
+Q2,1,1  Already developed rezoned to
+Q2,2,2
+Q2,3,3
+Q2,4,4 Exactly in the middle
+Q2,5,5
+Q2,6,6
+Q2,7,7 Exactly in Havent thought areas
+Q2,8,8 Dont know
+Q3,1,1  Attract jobs to the county
+Q3,2,2
+Q3,3,3
+Q3,4,4 Exactly in the middle
+Q3,5,5
+Q3,6,6
+Q3,7,7 Restrict commuters
+Q3,8,8 Dont know
+Q4,1,1 Portion devoted to below market rate housing
+Q4,2,2
+Q4,3,3
+Q4,4,4 Exactly in the middle
+Q4,5,5
+Q4,6,6
+Q4,7,7 Market rate only
+Q4,8,8 Dont know
+Q5,1,Each town or city
+Q5,2,A countywide authority
+Q5,3,The state government of California
+Q5,4,Or havent you thought much about this
+Q6,1,Each town or city
+Q6,2,A countywide authority
+Q6,3,The state government of California
+Q6,4,Or havent you thought much about this
+Q7,0,0 Completely unimportant
+Q7,1,1
+Q7,2,2
+Q7,3,3
+Q7,4,4
+Q7,5,5 Exactly in the middle
+Q7,6,6
+Q7,7,7
+Q7,8,8
+Q7,9,9
+Q7,10,10 Extremely important
+Q7,11,11 Dont know
+Q8,1,1 Local control
+Q8,2,2
+Q8,3,3
+Q8,4,4 Exactly in the middle
+Q8,5,5
+Q8,6,6
+Q8,7,7 Regional coordination
+Q8,8,8 Dont know
+Q9,1,1 County-level
+Q9,2,2
+Q9,3,3
+Q9,4,4 Exactly in the middle
+Q9,5,5
+Q9,6,6
+Q9,7,7 State-level
+Q9,8,8 Dont know
+Q10,1,Strongly support it
+Q10,2,Somewhat support it
+Q10,3,Neither support nor oppose it
+Q10,4,Somewhat oppose it
+Q10,5,Strongly oppose it
+Q10,6,Or havent you thought much about this
+Q11,1,Existing Bay Area regional agencies
+Q11,2,County government
+Q11,3,Local governments collaborating voluntarily
+Q11,4,A new countywide authority for housing issues
+Q11,5,Or havent you thought much about this
+Q12A,1,"Greatly increase,"
+Q12A,2,"Somewhat increase,"
+Q12A,3,"Neither increase nor decrease,"
+Q12A,4,Somewhat decrease or
+Q12A,5,Greatly decrease the quality of life
+Q12A,6,"No response, dont know"
+Q12B,1,"Greatly increase,"
+Q12B,2,"Somewhat increase,"
+Q12B,3,"Neither increase nor decrease,"
+Q12B,4,Somewhat decrease or
+Q12B,5,Greatly decrease economic vitality
+Q12B,6,"No response, dont know"
+Q12C,1,"Greatly increase,"
+Q12C,2,"Somewhat increase,"
+Q12C,3,"Neither increase nor decrease,"
+Q12C,4,Somewhat decrease or
+Q12C,5,Greatly decrease social and family connections
+Q12C,6,"No response, dont know"
+Q12D,1,"Greatly increase,"
+Q12D,2,"Somewhat increase,"
+Q12D,3,"Neither increase nor decrease,"
+Q12D,4,Somewhat decrease or
+Q12D,5,Greatly decrease property values
+Q12D,6,"No response, dont know"
+Q12E,1,"Greatly increase,"
+Q12E,2,"Somewhat increase,"
+Q12E,3,"Neither increase nor decrease,"
+Q12E,4,Somewhat decrease or
+Q12E,5,Greatly decrease civic life
+Q12E,6,"No response, dont know"
+Q12F,1,"Greatly increase,"
+Q12F,2,"Somewhat increase,"
+Q12F,3,"Neither increase nor decrease,"
+Q12F,4,Somewhat decrease or
+Q12F,5,Greatly decrease the quality of schools
+Q12F,6,"No response, dont know"
+Q12G,1,"Greatly increase,"
+Q12G,2,"Somewhat increase,"
+Q12G,3,"Neither increase nor decrease,"
+Q12G,4,Somewhat decrease or
+Q12G,5,Greatly decrease city and county tax revenues
+Q12G,6,"No response, dont know"
+Q12H,1,"Greatly increase,"
+Q12H,2,"Somewhat increase,"
+Q12H,3,"Neither increase nor decrease,"
+Q12H,4,Somewhat decrease or
+Q12H,5,Greatly decrease infrastructure costs
+Q12H,6,"No response, dont know"
+Q13,1,A large budget surplus
+Q13,2,A small budget surplus
+Q13,3,Neither a budget deficit nor a budget surplus
+Q13,4,A small budget deficit
+Q13,5,A large budget deficit or
+Q13,6,Havent you thought much about this
+Q14,0,0 Extremely bad
+Q14,1,1
+Q14,2,2
+Q14,3,3
+Q14,4,4
+Q14,5,5 Exactly in the middle
+Q14,6,6
+Q14,7,7
+Q14,8,8
+Q14,9,9
+Q14,10,10 Extremely good
+Q14,11,11 Dont know
+Q15,0,0 Not at all
+Q15,1,1
+Q15,2,2
+Q15,3,3
+Q15,4,4
+Q15,5,5 Exactly in the middle
+Q15,6,6
+Q15,7,7
+Q15,8,8
+Q15,9,9
+Q15,10,10 A very great deal
+Q15,11,11 Dont know
+Q16,0,0 Not at all
+Q16,1,1
+Q16,2,2
+Q16,3,3
+Q16,4,4
+Q16,5,5 Exactly in the middle
+Q16,6,6
+Q16,7,7
+Q16,8,8
+Q16,9,9
+Q16,10,10 A very great deal
+Q16,11,11 Dont know
+Q17A,1,Agree strongly
+Q17A,2,Agree somewhat
+Q17A,3,Neither agree nor disagree
+Q17A,4,Disagree somewhat
+Q17A,5,Disagree strongly
+Q17A,6,HavenÆt thought much about it
+Q17B,1,Agree strongly
+Q17B,2,Agree somewhat
+Q17B,3,Neither agree nor disagree
+Q17B,4,Disagree somewhat
+Q17B,5,Disagree strongly
+Q17B,6,HavenÆt thought much about it
+Q17C,1,Agree strongly
+Q17C,2,Agree somewhat
+Q17C,3,Neither agree nor disagree
+Q17C,4,Disagree somewhat
+Q17C,5,Disagree strongly
+Q17C,6,HavenÆt thought much about it
+Q17D,1,Agree strongly
+Q17D,2,Agree somewhat
+Q17D,3,Neither agree nor disagree
+Q17D,4,Disagree somewhat
+Q17D,5,Disagree strongly
+Q17D,6,HavenÆt thought much about it
+Q17E1,1,Agree strongly
+Q17E1,2,Agree somewhat
+Q17E1,3,Neither agree nor disagree
+Q17E1,4,Disagree somewhat
+Q17E1,5,Disagree strongly
+Q17E1,6,HavenÆt thought much about it
+Q17E2,1,Agree strongly
+Q17E2,2,Agree somewhat
+Q17E2,3,Neither agree nor disagree
+Q17E2,4,Disagree somewhat
+Q17E2,5,Disagree strongly
+Q17E2,6,HavenÆt thought much about it
+Q17F,1,Agree strongly
+Q17F,2,Agree somewhat
+Q17F,3,Neither agree nor disagree
+Q17F,4,Disagree somewhat
+Q17F,5,Disagree strongly
+Q17F,6,HavenÆt thought much about it
+Q17G,1,Agree strongly
+Q17G,2,Agree somewhat
+Q17G,3,Neither agree nor disagree
+Q17G,4,Disagree somewhat
+Q17G,5,Disagree strongly
+Q17G,6,HavenÆt thought much about it
+Q17H1,1,Agree strongly
+Q17H1,2,Agree somewhat
+Q17H1,3,Neither agree nor disagree
+Q17H1,4,Disagree somewhat
+Q17H1,5,Disagree strongly
+Q17H1,6,HavenÆt thought much about it
+Q17H2,1,Agree strongly
+Q17H2,2,Agree somewhat
+Q17H2,3,Neither agree nor disagree
+Q17H2,4,Disagree somewhat
+Q17H2,5,Disagree strongly
+Q17H2,6,HavenÆt thought much about it
+Q17I1,1,Agree strongly
+Q17I1,2,Agree somewhat
+Q17I1,3,Neither agree nor disagree
+Q17I1,4,Disagree somewhat
+Q17I1,5,Disagree strongly
+Q17I1,6,HavenÆt thought much about it
+Q17I2,1,Agree strongly
+Q17I2,2,Agree somewhat
+Q17I2,3,Neither agree nor disagree
+Q17I2,4,Disagree somewhat
+Q17I2,5,Disagree strongly
+Q17I2,6,HavenÆt thought much about it
+Q18A,0,0 Completely unimportant
+Q18A,1,1
+Q18A,2,2
+Q18A,3,3
+Q18A,4,4
+Q18A,5,5 Exactly in the middle
+Q18A,6,6
+Q18A,7,7
+Q18A,8,8
+Q18A,9,9
+Q18A,10,10 Extremely important
+Q18A,11,11 Dont know
+Q18B,0,0 Completely unimportant
+Q18B,1,1
+Q18B,2,2
+Q18B,3,3
+Q18B,4,4
+Q18B,5,5 Exactly in the middle
+Q18B,6,6
+Q18B,7,7
+Q18B,8,8
+Q18B,9,9
+Q18B,10,10 Extremely important
+Q18B,11,11 Dont know
+Q18C,0,0 Completely unimportant
+Q18C,1,1
+Q18C,2,2
+Q18C,3,3
+Q18C,4,4
+Q18C,5,5 Exactly in the middle
+Q18C,6,6
+Q18C,7,7
+Q18C,8,8
+Q18C,9,9
+Q18C,10,10 Extremely important
+Q18C,11,11 Dont know
+Q18D,0,0 Completely unimportant
+Q18D,1,1
+Q18D,2,2
+Q18D,3,3
+Q18D,4,4
+Q18D,5,5 Exactly in the middle
+Q18D,6,6
+Q18D,7,7
+Q18D,8,8
+Q18D,9,9
+Q18D,10,10 Extremely important
+Q18D,11,11 Dont know
+Q18E,0,0 Completely unimportant
+Q18E,1,1
+Q18E,2,2
+Q18E,3,3
+Q18E,4,4
+Q18E,5,5 Exactly in the middle
+Q18E,6,6
+Q18E,7,7
+Q18E,8,8
+Q18E,9,9
+Q18E,10,10 Extremely important
+Q18E,11,11 Dont know
+Q18F,0,0 Completely unimportant
+Q18F,1,1
+Q18F,2,2
+Q18F,3,3
+Q18F,4,4
+Q18F,5,5 Exactly in the middle
+Q18F,6,6
+Q18F,7,7
+Q18F,8,8
+Q18F,9,9
+Q18F,10,10 Extremely important
+Q18F,11,11 Dont know
+Q18G,0,0 Completely unimportant
+Q18G,1,1
+Q18G,2,2
+Q18G,3,3
+Q18G,4,4
+Q18G,5,5 Exactly in the middle
+Q18G,6,6
+Q18G,7,7
+Q18G,8,8
+Q18G,9,9
+Q18G,10,10 Extremely important
+Q18G,11,11 Dont know
+Q18H,0,0 Completely unimportant
+Q18H,1,1
+Q18H,2,2
+Q18H,3,3
+Q18H,4,4
+Q18H,5,5 Exactly in the middle
+Q18H,6,6
+Q18H,7,7
+Q18H,8,8
+Q18H,9,9
+Q18H,10,10 Extremely important
+Q18H,11,11 Dont know
+Q19,1,about 200
+Q19,2,about 500
+Q19,3,"about 1,000"
+Q19,4,"about 5,000"
+Q19,5,"about 8,000"
+Q19,6,Or couldnÆt you say about that?
+Q20,1,"550,000"
+Q20,2,"680,000"
+Q20,3,"750,000"
+Q20,4,"830,000"
+Q20,5,"950,000"
+Q20,6,Or couldnÆt you say about that?
+Q21,1,12%
+Q21,2,23%
+Q21,3,37%
+Q21,4,43%
+Q21,5,55%
+Q21,6,Or couldnÆt you say about that?
+Q22,1,"$1,100"
+Q22,2,"$1,300"
+Q22,3,"$1,700"
+Q22,4,"$2,200"
+Q22,5,"$3,000"
+Q22,6,Or couldnÆt you say about that?
+Q23,1,"20,000"
+Q23,2,"40,000"
+Q23,3,"60,000"
+Q23,4,"70,000"
+Q23,5,"90,000"
+Q23,6,Or couldnÆt you say about that?
+Q24,1,Less than one-third
+Q24,2,Less than one-half
+Q24,3,About half
+Q24,4,More than one-half
+Q24,5,More than two-thirds
+Q24,6,Or couldnÆt you say about that?
+Q25,1,"25,000"
+Q25,2,"50,000"
+Q25,3,"75,000"
+Q25,4,"100,000"
+Q25,5,Or couldnÆt you say about that?
+Q26,1,less than 25%
+Q26,2,33%
+Q26,3,58%
+Q26,4,67%
+Q26,5,more than 75%
+Q26,6,Or couldnÆt you say about that?
+Q128,1,Less than high school
+Q128,2,High school
+Q128,3,Some university / college
+Q128,4,University / college graduate
+Q128,5,Some graduate work
+Q128,6,Graduate degree
+Q128,7,Other [specify]
+Q128,8,Refused/No answer
+Q130A,1,Employed full-time
+Q130A,2,Employed part-time
+Q130A,3,"Not employed, but actively looking for work; or"
+Q130A,4,Student
+Q130A,5,Not actively looking for work
+Q130A,6,Refused
+Q130B,1,Self employed
+Q130B,2,Business under 25 employees
+Q130B,3,Business with 25 or more employees
+Q130B,4,Government
+Q130B,5,Other
+Q131,1,"Less than 23,000"
+Q131,2,"23,001 to 40,000"
+Q131,3,"40,001 to 55,000"
+Q131,4,"55,001 to 75,000"
+Q131,5,"75,001 to 95,000"
+Q131,6,"95,001 to 125,000"
+Q131,7,"More than 125,000"
+Q131,8,Refused
+Q132,1,White (Non-Hispanic/Latino)
+Q132,2,Black/African American
+Q132,3,Hispanic/Latino(a)
+Q132,4,American Indian/Alaskan Native
+Q132,5,Asian
+Q132,6,Native Hawaiian/Pacific Islander
+Q132,7,Other
+Q132,8,Refused
+Q135,1,Male
+Q135,2,Female
+Q135,3,Indeterminate
+Female,0,Male
+Female,1,Female
+Q136,1,Every week
+Q136,2,Almost every week
+Q136,3,Once or twice a month
+Q136,4,A few times a year
+Q136,5,Never
+Q136,6,Refused
+t2Q1,1,1 Create more housing
+t2Q1,2,2
+t2Q1,3,3
+t2Q1,4,4 Exactly in the middle
+t2Q1,5,5
+t2Q1,6,6
+t2Q1,7,7 Restrict housing
+t2Q1,8,8 Dont know
+t2Q2,1,1  Already developed areas
+t2Q2,2,2
+t2Q2,3,3
+t2Q2,4,4 Exactly in the middle
+t2Q2,5,5
+t2Q2,6,6
+t2Q2,7,7 Open space
+t2Q2,8,8 Dont know
+t2Q3,1,1  Attract jobs to the county
+t2Q3,2,2
+t2Q3,3,3
+t2Q3,4,4 Exactly in the middle
+t2Q3,5,5
+t2Q3,6,6
+t2Q3,7,7 Restrict commuters
+t2Q3,8,8 Dont know
+t2Q4,1,1 Portion devoted to below market rate housing
+t2Q4,2,2
+t2Q4,3,3
+t2Q4,4,4 Exactly in the middle
+t2Q4,5,5
+t2Q4,6,6
+t2Q4,7,7 Market rate only
+t2Q4,8,8 Dont know
+t2Q5,1,Each town or city
+t2Q5,2,A countywide authority
+t2Q5,3,The state government of California
+t2Q5,4,Or havent you thought much about this
+t2Q6,1,Each town or city
+t2Q6,2,A countywide authority
+t2Q6,3,The state government of California
+t2Q6,4,Or havent you thought much about this
+t2Q7,0,0 Completely unimportant
+t2Q7,1,1
+t2Q7,2,2
+t2Q7,3,3
+t2Q7,4,4
+t2Q7,5,5 Exactly in the middle
+t2Q7,6,6
+t2Q7,7,7
+t2Q7,8,8
+t2Q7,9,9
+t2Q7,10,10 Extremely important
+t2Q7,11,11 Dont know
+t2Q8,1,1 Local control
+t2Q8,2,2
+t2Q8,3,3
+t2Q8,4,4 Exactly in the middle
+t2Q8,5,5
+t2Q8,6,6
+t2Q8,7,7 Regional coordination
+t2Q8,8,8 Dont know
+t2Q9,1,1 County-level
+t2Q9,2,2
+t2Q9,3,3
+t2Q9,4,4 Exactly in the middle
+t2Q9,5,5
+t2Q9,6,6
+t2Q9,7,7 State-level
+t2Q9,8,8 Dont know
+t2Q10,1,Strongly support it
+t2Q10,2,Somewhat support it
+t2Q10,3,Neither support nor oppose it
+t2Q10,4,Somewhat oppose it
+t2Q10,5,Strongly oppose it
+t2Q10,6,Or havent you thought much about this
+t2Q11,1,Existing Bay Area agencies
+t2Q11,2,County government
+t2Q11,3,Local governments collaborating voluntarily
+t2Q11,4,A new countywide authority for housing issues
+t2Q11,5,Or havent you thought much about this
+t2Q12A,1,"Greatly increase,"
+t2Q12A,2,"Somewhat increase,"
+t2Q12A,3,"Neither increase nor decrease,"
+t2Q12A,4,Somewhat decrease or
+t2Q12A,5,Greatly decrease the quality of life
+t2Q12A,6,"No response, dont know"
+t2Q12B,1,"Greatly increase,"
+t2Q12B,2,"Somewhat increase,"
+t2Q12B,3,"Neither increase nor decrease,"
+t2Q12B,4,Somewhat decrease or
+t2Q12B,5,Greatly decrease economic vitality
+t2Q12B,6,"No response, dont know"
+t2Q12C,1,"Greatly increase,"
+t2Q12C,2,"Somewhat increase,"
+t2Q12C,3,"Neither increase nor decrease,"
+t2Q12C,4,Somewhat decrease or
+t2Q12C,5,Greatly decrease social and family connections
+t2Q12C,6,"No response, dont know"
+t2Q12D,1,"Greatly increase,"
+t2Q12D,2,"Somewhat increase,"
+t2Q12D,3,"Neither increase nor decrease,"
+t2Q12D,4,Somewhat decrease or
+t2Q12D,5,Greatly decrease property values
+t2Q12D,6,"No response, dont know"
+t2Q12E,1,"Greatly increase,"
+t2Q12E,2,"Somewhat increase,"
+t2Q12E,3,"Neither increase nor decrease,"
+t2Q12E,4,Somewhat decrease or
+t2Q12E,5,Greatly decrease civic life
+t2Q12E,6,"No response, dont know"
+t2Q12F,1,"Greatly increase,"
+t2Q12F,2,"Somewhat increase,"
+t2Q12F,3,"Neither increase nor decrease,"
+t2Q12F,4,Somewhat decrease or
+t2Q12F,5,Greatly decrease the quality of schools
+t2Q12F,6,"No response, dont know"
+t2Q12G,1,"Greatly increase,"
+t2Q12G,2,"Somewhat increase,"
+t2Q12G,3,"Neither increase nor decrease,"
+t2Q12G,4,Somewhat decrease or
+t2Q12G,5,Greatly decrease city and county tax revenues
+t2Q12G,6,"No response, dont know"
+t2Q12H,1,"Greatly increase,"
+t2Q12H,2,"Somewhat increase,"
+t2Q12H,3,"Neither increase nor decrease,"
+t2Q12H,4,Somewhat decrease or
+t2Q12H,5,Greatly decrease infrastructure costs
+t2Q12H,6,"No response, dont know"
+t2Q13,1,A large budget surplus
+t2Q13,2,A small budget surplus
+t2Q13,3,Neither a budget deficit nor a budget surplus
+t2Q13,4,A small budget deficit
+t2Q13,5,A large budget deficit or
+t2Q13,6,Havent you thought much about this
+t2Q14,0,0 Extremely bad
+t2Q14,1,1
+t2Q14,2,2
+t2Q14,3,3
+t2Q14,4,4
+t2Q14,5,5 Exactly in the middle
+t2Q14,6,6
+t2Q14,7,7
+t2Q14,8,8
+t2Q14,9,9
+t2Q14,10,10 Extremely good
+t2Q14,11,11 Dont know
+t2Q15,0,0 Not at all
+t2Q15,1,1
+t2Q15,2,2
+t2Q15,3,3
+t2Q15,4,4
+t2Q15,5,5 Exactly in the middle
+t2Q15,6,6
+t2Q15,7,7
+t2Q15,8,8
+t2Q15,9,9
+t2Q15,10,10 A very great deal
+t2Q15,11,11 Dont know
+t2Q16,0,0 Not at all
+t2Q16,1,1
+t2Q16,2,2
+t2Q16,3,3
+t2Q16,4,4
+t2Q16,5,5 Exactly in the middle
+t2Q16,6,6
+t2Q16,7,7
+t2Q16,8,8
+t2Q16,9,9
+t2Q16,10,10 A very great deal
+t2Q16,11,11 Dont know
+t2Q17A,1,Agree strongly
+t2Q17A,2,Agree somewhat
+t2Q17A,3,Neither agree nor disagree
+t2Q17A,4,Disagree somewhat
+t2Q17A,5,Disagree strongly
+t2Q17A,6,HavenÆt thought much about it
+t2Q17B,1,Agree strongly
+t2Q17B,2,Agree somewhat
+t2Q17B,3,Neither agree nor disagree
+t2Q17B,4,Disagree somewhat
+t2Q17B,5,Disagree strongly
+t2Q17B,6,HavenÆt thought much about it
+t2Q17C,1,Agree strongly
+t2Q17C,2,Agree somewhat
+t2Q17C,3,Neither agree nor disagree
+t2Q17C,4,Disagree somewhat
+t2Q17C,5,Disagree strongly
+t2Q17C,6,HavenÆt thought much about it
+t2Q17D,1,Agree strongly
+t2Q17D,2,Agree somewhat
+t2Q17D,3,Neither agree nor disagree
+t2Q17D,4,Disagree somewhat
+t2Q17D,5,Disagree strongly
+t2Q17D,6,HavenÆt thought much about it
+t2Q17E,1,Agree strongly
+t2Q17E,2,Agree somewhat
+t2Q17E,3,Neither agree nor disagree
+t2Q17E,4,Disagree somewhat
+t2Q17E,5,Disagree strongly
+t2Q17E,6,HavenÆt thought much about it
+t2Q17F,1,Agree strongly
+t2Q17F,2,Agree somewhat
+t2Q17F,3,Neither agree nor disagree
+t2Q17F,4,Disagree somewhat
+t2Q17F,5,Disagree strongly
+t2Q17F,6,HavenÆt thought much about it
+t2Q17G,1,Agree strongly
+t2Q17G,2,Agree somewhat
+t2Q17G,3,Neither agree nor disagree
+t2Q17G,4,Disagree somewhat
+t2Q17G,5,Disagree strongly
+t2Q17G,6,HavenÆt thought much about it
+t2Q17H,1,Agree strongly
+t2Q17H,2,Agree somewhat
+t2Q17H,3,Neither agree nor disagree
+t2Q17H,4,Disagree somewhat
+t2Q17H,5,Disagree strongly
+t2Q17H,6,HavenÆt thought much about it
+t2Q17i,1,Agree strongly
+t2Q17i,2,Agree somewhat
+t2Q17i,3,Neither agree nor disagree
+t2Q17i,4,Disagree somewhat
+t2Q17i,5,Disagree strongly
+t2Q17i,6,HavenÆt thought much about it
+t2Q18B,0,0 Completely unimportant
+t2Q18B,1,1
+t2Q18B,2,2
+t2Q18B,3,3
+t2Q18B,4,4
+t2Q18B,5,5 Exactly in the middle
+t2Q18B,6,6
+t2Q18B,7,7
+t2Q18B,8,8
+t2Q18B,9,9
+t2Q18B,10,10 Extremely important
+t2Q18B,11,11 Dont know
+t2Q18C,0,0 Completely unimportant
+t2Q18C,1,1
+t2Q18C,2,2
+t2Q18C,3,3
+t2Q18C,4,4
+t2Q18C,5,5 Exactly in the middle
+t2Q18C,6,6
+t2Q18C,7,7
+t2Q18C,8,8
+t2Q18C,9,9
+t2Q18C,10,10 Extremely important
+t2Q18C,11,11 Dont know
+t2Q18D,0,0 Completely unimportant
+t2Q18D,1,1
+t2Q18D,2,2
+t2Q18D,3,3
+t2Q18D,4,4
+t2Q18D,5,5 Exactly in the middle
+t2Q18D,6,6
+t2Q18D,7,7
+t2Q18D,8,8
+t2Q18D,9,9
+t2Q18D,10,10 Extremely important
+t2Q18D,11,11 Dont know
+t2Q18E,0,0 Completely unimportant
+t2Q18E,1,1
+t2Q18E,2,2
+t2Q18E,3,3
+t2Q18E,4,4
+t2Q18E,5,5 Exactly in the middle
+t2Q18E,6,6
+t2Q18E,7,7
+t2Q18E,8,8
+t2Q18E,9,9
+t2Q18E,10,10 Extremely important
+t2Q18E,11,11 Dont know
+t2Q18F,0,0 Completely unimportant
+t2Q18F,1,1
+t2Q18F,2,2
+t2Q18F,3,3
+t2Q18F,4,4
+t2Q18F,5,5 Exactly in the middle
+t2Q18F,6,6
+t2Q18F,7,7
+t2Q18F,8,8
+t2Q18F,9,9
+t2Q18F,10,10 Extremely important
+t2Q18F,11,11 Dont know
+t2Q18G,0,0 Completely unimportant
+t2Q18G,1,1
+t2Q18G,2,2
+t2Q18G,3,3
+t2Q18G,4,4
+t2Q18G,5,5 Exactly in the middle
+t2Q18G,6,6
+t2Q18G,7,7
+t2Q18G,8,8
+t2Q18G,9,9
+t2Q18G,10,10 Extremely important
+t2Q18G,11,11 Dont know
+t2Q18H,0,0 Completely unimportant
+t2Q18H,1,1
+t2Q18H,2,2
+t2Q18H,3,3
+t2Q18H,4,4
+t2Q18H,5,5 Exactly in the middle
+t2Q18H,6,6
+t2Q18H,7,7
+t2Q18H,8,8
+t2Q18H,9,9
+t2Q18H,10,10 Extremely important
+t2Q18H,11,11 Dont know
+t2Q19,1,about 200
+t2Q19,2,about 500
+t2Q19,3,"about 1,000"
+t2Q19,4,"about 5,000"
+t2Q19,5,"about 8,000"
+t2Q19,6,Or couldnÆt you say about that?
+t2Q20,1,"550,000"
+t2Q20,2,"680,000"
+t2Q20,3,"750,000"
+t2Q20,4,"830,000"
+t2Q20,5,"950,000"
+t2Q20,6,Or couldnÆt you say about that?
+t2Q21,1,12%
+t2Q21,2,23%
+t2Q21,3,37%
+t2Q21,4,43%
+t2Q21,5,55%
+t2Q21,6,Or couldnÆt you say about that?
+t2Q22,1,"$1,100"
+t2Q22,2,"$1,300"
+t2Q22,3,"$1,700"
+t2Q22,4,"$2,200"
+t2Q22,5,"$3,000"
+t2Q22,6,Or couldnÆt you say about that?
+t2Q23,1,"20,000"
+t2Q23,2,"40,000"
+t2Q23,3,"60,000"
+t2Q23,4,"70,000"
+t2Q23,5,"90,000"
+t2Q23,6,Or couldnÆt you say about that?
+t2Q24,1,Less than one-third
+t2Q24,2,Less than one-half
+t2Q24,3,About half
+t2Q24,4,More than one-half
+t2Q24,5,More than two-thirds
+t2Q24,6,Or couldnÆt you say about that?
+t2Q25,1,"25,000"
+t2Q25,2,"50,000"
+t2Q25,3,"75,000"
+t2Q25,4,"100,000"
+t2Q25,5,Or couldnÆt you say about that?
+t2Q26,1,less than 25%
+t2Q26,2,33%
+t2Q26,3,58%
+t2Q26,4,67%
+t2Q26,5,more than 75%
+t2Q26,6,Or couldnÆt you say about that?
+t2Q27A,1,Agree strongly
+t2Q27A,2,Agree somewhat
+t2Q27A,3,Neither agree nor disagree
+t2Q27A,4,Disagree somewhat
+t2Q27A,5,Disagree strongly
+t2Q27A,6,Dont know
+t2Q27B,1,Agree strongly
+t2Q27B,2,Agree somewhat
+t2Q27B,3,Neither agree nor disagree
+t2Q27B,4,Disagree somewhat
+t2Q27B,5,Disagree strongly
+t2Q27B,6,Dont know
+t2Q27D,1,Agree strongly
+t2Q27D,2,Agree somewhat
+t2Q27D,3,Neither agree nor disagree
+t2Q27D,4,Disagree somewhat
+t2Q27D,5,Disagree strongly
+t2Q27D,6,Dont know
+t2Q27E,1,Agree strongly
+t2Q27E,2,Agree somewhat
+t2Q27E,3,Neither agree nor disagree
+t2Q27E,4,Disagree somewhat
+t2Q27E,5,Disagree strongly
+t2Q27E,6,Dont know
+t2q28,1,Favor strongly
+t2q28,2,Favor somewhat
+t2q28,3,Neither favor nor oppose
+t2q28,4,Oppose somewhat
+t2q28,5,Oppose strongly
+t2q28,99,Dont know
+t2q29,1,Favor strongly
+t2q29,2,Favor somewhat
+t2q29,3,Neither favor nor oppose
+t2q29,4,Oppose somewhat
+t2q29,5,Oppose strongly
+t2q29,99,Dont know
+t2q30,0,0 Never happen
+t2q30,6,Exactly in the middle
+t2q30,10,Certain to happen
+t2q30,99,Dont know
+t2q31a,1,Strongly oppose it
+t2q31a,2,Somewhat oppose it
+t2q31a,3,Neither support nor oppose it
+t2q31a,4,Somewhat support it
+t2q31a,5,Strongly support it
+t2q31a,6,Or havent you thought much about this
+t2q31b,1,Strongly oppose it
+t2q31b,2,Somewhat oppose it
+t2q31b,3,Neither support nor oppose it
+t2q31b,4,Somewhat support it
+t2q31b,5,Strongly support it
+t2q31b,6,Or havent you thought much about this
+t2q31c,1,Strongly oppose it
+t2q31c,2,Somewhat oppose it
+t2q31c,3,Neither support nor oppose it
+t2q31c,4,Somewhat support it
+t2q31c,5,Strongly support it
+t2q31c,6,Or havent you thought much about this
+t2q31d,1,Strongly oppose it
+t2q31d,2,Somewhat oppose it
+t2q31d,3,Neither support nor oppose it
+t2q31d,4,Somewhat support it
+t2q31d,5,Strongly support it
+t2q31d,6,Or havent you thought much about this
+t2q31e,1,Strongly oppose it
+t2q31e,2,Somewhat oppose it
+t2q31e,3,Neither support nor oppose it
+t2q31e,4,Somewhat support it
+t2q31e,5,Strongly support it
+t2q31e,6,Or havent you thought much about this
+t2q31f,1,Strongly oppose it
+t2q31f,2,Somewhat oppose it
+t2q31f,3,Neither support nor oppose it
+t2q31f,4,Somewhat support it
+t2q31f,5,Strongly support it
+t2q31f,6,Or havent you thought much about this
+t2q32a,1,Strongly support it
+t2q32a,2,Somewhat support it
+t2q32a,3,Neither support nor oppose it
+t2q32a,4,Somewhat oppose it
+t2q32a,5,Strongly oppose it
+t2q32a,6,Or havent you thought much about this
+t2q32b,1,Strongly support it
+t2q32b,2,Somewhat support it
+t2q32b,3,Neither support nor oppose it
+t2q32b,4,Somewhat oppose it
+t2q32b,5,Strongly oppose it
+t2q32b,6,Or havent you thought much about this
+t2q32c,1,Strongly support it
+t2q32c,2,Somewhat support it
+t2q32c,3,Neither support nor oppose it
+t2q32c,4,Somewhat oppose it
+t2q32c,5,Strongly oppose it
+t2q32c,6,Or havent you thought much about this
+t2q32d,1,Strongly support it
+t2q32d,2,Somewhat support it
+t2q32d,3,Neither support nor oppose it
+t2q32d,4,Somewhat oppose it
+t2q32d,5,Strongly oppose it
+t2q32d,6,Or havent you thought much about this
+t2q32e,1,Strongly support it
+t2q32e,2,Somewhat support it
+t2q32e,3,Neither support nor oppose it
+t2q32e,4,Somewhat oppose it
+t2q32e,5,Strongly oppose it
+t2q32e,6,Or havent you thought much about this
+t2q33,1,Very often
+t2q33,2,Now and then
+t2q33,3,Only a few times
+t2q33,4,Never
+t2q33,99,Dont know
+t2q34,1,Very often
+t2q34,2,Now and then
+t2q34,3,Only a few times
+t2q34,4,Never
+t2q34,99,Dont know
+t2q35a,0,0 A waste of time
+t2q35a,5,5 '5 Exactly in the middle'
+t2q35a,10,10 Extremely valuable
+t2q35b,0,0 A waste of time
+t2q35b,5,5 '5 Exactly in the middle'
+t2q35b,10,10 Extremely valuable
+t2q35c,0,0 A waste of time
+t2q35c,5,5 '5 Exactly in the middle'
+t2q35c,10,10 Extremely valuable
+t2q35d,0,0 A waste of time
+t2q35d,5,5 '5 Exactly in the middle'
+t2q35d,10,10 Extremely valuable
+t2q36a,1,Agree strongly
+t2q36a,2,Agree somewhat
+t2q36a,3,Neither agree nor disagree
+t2q36a,4,Disagree somewhat
+t2q36a,5,Disagree strongly
+t2q36a,6,Dont know
+t2q36b,1,Agree strongly
+t2q36b,2,Agree somewhat
+t2q36b,3,Neither agree nor disagree
+t2q36b,4,Disagree somewhat
+t2q36b,5,Disagree strongly
+t2q36b,6,Dont know
+t2q36c,1,Agree strongly
+t2q36c,2,Agree somewhat
+t2q36c,3,Neither agree nor disagree
+t2q36c,4,Disagree somewhat
+t2q36c,5,Disagree strongly
+t2q36c,6,Dont know
+t2q36d,1,Agree strongly
+t2q36d,2,Agree somewhat
+t2q36d,3,Neither agree nor disagree
+t2q36d,4,Disagree somewhat
+t2q36d,5,Disagree strongly
+t2q36d,6,Dont know
+t2q36e,1,Agree strongly
+t2q36e,2,Agree somewhat
+t2q36e,3,Neither agree nor disagree
+t2q36e,4,Disagree somewhat
+t2q36e,5,Disagree strongly
+t2q36e,6,Dont know
+t2q36f,1,Agree strongly
+t2q36f,2,Agree somewhat
+t2q36f,3,Neither agree nor disagree
+t2q36f,4,Disagree somewhat
+t2q36f,5,Disagree strongly
+t2q36f,6,Dont know
+t2q37,1,Hadnt read or had just glanced at it
+t2q37,2,Had read less than half of it
+t2q37,3,Had read about half of it
+t2q37,4,Had read more than half of it
+t2q37,5,Had read all or nearly all of it
+t2q38,1,Hadnt read or had just glanced at it
+t2q38,2,Had read less than half of it
+t2q38,3,Had read about half of it
+t2q38,4,Had read more than half of it
+t2q38,5,Had read all or nearly all of it
+t2q39,1,Mostly balanced
+t2q39,2,Favored some positions over others
+t2q39,99, Dont know
+t2q40,1,Clear
+t2q40,2,Unclear
+t2q40,99, Dont know
+t2q41,1,Too short
+t2q41,2,Sufficient
+t2q41,3,Too long
+t2q41,99, Dont know
+t2q42,1,Too short
+t2q42,2,Sufficient
+t2q42,3,Too long
+t2q42,99, Dont know
+filter__,0,Not Selected
+filter__,1,Selected

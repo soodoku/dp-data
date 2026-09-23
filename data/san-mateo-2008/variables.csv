@@ -1,0 +1,331 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+RESPNUM,double,numeric,float64,*RESPNUM,%10.0g,,,TRUE,Retained
+DISPOS,double,numeric,float64,*DISPOS,%10.0g,,,TRUE,Retained
+COMFIRMEDSTATUS,double,numeric,float64,COMFIRMED STATUS,%10.0g,,,TRUE,Retained
+RANKING,double,numeric,float64,Likelihood of attending the DP,%10.0g,,,TRUE,Retained
+PARTICIPANTID,double,numeric,float64,PARTICIPANT ID,%10.0g,,,TRUE,Retained
+GRP,double,numeric,float64,Small Group #,%10.0g,,,TRUE,Retained
+CITY,character,character,,City,%20s,,,FALSE,Excluded; see source_field_exclusions
+ZCODE,character,character,,Zipcode,%12s,,,FALSE,Excluded; see source_field_exclusions
+ALTPHN,character,character,,,%45s,,,FALSE,Excluded; see source_field_exclusions
+BSTTIM,character,character,,,%68s,,,FALSE,Excluded; see source_field_exclusions
+COMMENT1,character,character,,,%244s,,,FALSE,Excluded; see source_field_exclusions
+SRVYINV,character,character,,,%22s,,,FALSE,Excluded; see source_field_exclusions
+Q1,double,haven_labelled|vctrs_vctr|double,float64,T1 More housing or restrict housing (Policy Scale),%10.0g,,,TRUE,Retained
+Q2,double,haven_labelled|vctrs_vctr|double,float64,T1 Already developed or open space? (policy scale),%10.0g,,,TRUE,Retained
+Q3,double,haven_labelled|vctrs_vctr|double,float64,T1 Attract jobs or minimize commuters? (policy scale),%10.0g,,,TRUE,Retained
+Q4,double,haven_labelled|vctrs_vctr|double,float64,T1 Below market housing or marketing housing? (policy scale),%10.0g,,,TRUE,Retained
+Q5,double,haven_labelled|vctrs_vctr|double,float64,T1 Who should have the most say in planning and approving new housing developmen,%10.0g,,,TRUE,Retained
+Q6,double,haven_labelled|vctrs_vctr|double,float64,T1 Who should have the least say in planning and approving new housing?,%10.0g,,,TRUE,Retained
+Q7,double,haven_labelled|vctrs_vctr|double,float64,T1 Importance of improving public consultation in housing (policy scale),%10.0g,,,TRUE,Retained
+Q8,double,haven_labelled|vctrs_vctr|double,float64,T1 Housing is a county- or state-level issue? (policy scale),%10.0g,,,TRUE,Retained
+Q9,double,haven_labelled|vctrs_vctr|double,float64,T1 Housing is a county- or state-level issue? (policy scale),%10.0g,,,TRUE,Retained
+Q10,double,haven_labelled|vctrs_vctr|double,float64,T1 Support or oppose more regional authority over housing policy? (policy scale),%10.0g,,,TRUE,Retained
+Q11,double,haven_labelled|vctrs_vctr|double,float64,T1 Who should be most responsible for ensuring regional cooperation? (policy sca,%10.0g,,,TRUE,Retained
+Q12A,double,haven_labelled|vctrs_vctr|double,float64,T1 Impact of new housing on quality of life (empricial premise),%10.0g,,,TRUE,Retained
+Q12B,double,haven_labelled|vctrs_vctr|double,float64,T1 Impact of new housing development on economic vitality? (empirical premise),%10.0g,,,TRUE,Retained
+Q12C,double,haven_labelled|vctrs_vctr|double,float64,T1 Impact of new housing development on social/family connections? (empirical pr,%10.0g,,,TRUE,Retained
+Q12D,double,haven_labelled|vctrs_vctr|double,float64,T1 Impact of new housing development on property values? (empirical premise),%10.0g,,,TRUE,Retained
+Q12E,double,haven_labelled|vctrs_vctr|double,float64,T1 Impact of new housing development on civic participation? (empirical premise),%10.0g,,,TRUE,Retained
+Q12F,double,haven_labelled|vctrs_vctr|double,float64,T1 Impact of new housing development on quality of schools? (empirical premise),%10.0g,,,TRUE,Retained
+Q12G,double,haven_labelled|vctrs_vctr|double,float64,T1 Impact of new housing development on local taxes?,%10.0g,,,TRUE,Retained
+Q12H,double,haven_labelled|vctrs_vctr|double,float64,T1 Impact of new housing development on infrastructure costs? (empirical premise,%10.0g,,,TRUE,Retained
+Q13,double,haven_labelled|vctrs_vctr|double,float64,T1 Impact of new housing development on local govt budgets,%10.0g,,,TRUE,Retained
+Q14,double,haven_labelled|vctrs_vctr|double,float64,T1 How good/bad for the environment is infill? (empirical premise),%10.0g,,,TRUE,Retained
+Q15,double,haven_labelled|vctrs_vctr|double,float64,T1 How much restricting development causes jobs to move away (empirical premise),%10.0g,,,TRUE,Retained
+Q16,double,haven_labelled|vctrs_vctr|double,float64,T1 How much restricting housing causes vitial services to suffer? (empirical pre,%10.0g,,,TRUE,Retained
+Q17A,double,haven_labelled|vctrs_vctr|double,float64,T1 Local review of housing projects is the only way communities can hold develop,%10.0g,,,TRUE,Retained
+Q17B,double,haven_labelled|vctrs_vctr|double,float64,T1 Local government is too responsive to the most vocal residents,%10.0g,,,TRUE,Retained
+Q17C,double,haven_labelled|vctrs_vctr|double,float64,T1 Countywide approaches create new options unavailable to any individual city,%10.0g,,,TRUE,Retained
+Q17D,double,haven_labelled|vctrs_vctr|double,float64,T1 Countywide approaches allow for sharing resources across cities,%10.0g,,,TRUE,Retained
+Q17E1,double,haven_labelled|vctrs_vctr|double,float64,T1 San Mateo County can have job growth without housing growth,%10.0g,,,TRUE,Retained
+Q17E2,double,haven_labelled|vctrs_vctr|double,float64,T1 San Mateo County cannot accommodate job growth without housing growth.,%10.0g,,,TRUE,Retained
+Q17F,double,haven_labelled|vctrs_vctr|double,float64,T1 Requiring developers to include housing priced at below the market rate will,%10.0g,,,TRUE,Retained
+Q17G,double,haven_labelled|vctrs_vctr|double,float64,T1 Rezoning some currently protected open space areas to allow housing developme,%10.0g,,,TRUE,Retained
+Q17H1,double,haven_labelled|vctrs_vctr|double,float64,T1 Public funding for housing developments will bring the price down to what mos,%10.0g,,,TRUE,Retained
+Q17H2,double,haven_labelled|vctrs_vctr|double,float64,T1 Public funding for housing developments will not be enough to bring the price,%10.0g,,,TRUE,Retained
+Q17I1,double,haven_labelled|vctrs_vctr|double,float64,T1 Public funding for housing developments can be allocated fairly,%10.0g,,,TRUE,Retained
+Q17I2,double,haven_labelled|vctrs_vctr|double,float64,T1 It is impossible to allocate public funding for housing developments fairly,%10.0g,,,TRUE,Retained
+ab1,double,numeric,float64,,%10.0g,,,TRUE,Retained
+ab2,double,numeric,float64,,%10.0g,,,TRUE,Retained
+ab3,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q18A,double,haven_labelled|vctrs_vctr|double,float64,T1 How important Making sure that everyone has a place to live(value questions),%10.0g,,,TRUE,Retained
+Q18B,double,haven_labelled|vctrs_vctr|double,float64,T1 How important Preserving open space(value questions),%10.0g,,,TRUE,Retained
+Q18C,double,haven_labelled|vctrs_vctr|double,float64,T1 How important Encouraging economic growth(value questions),%10.0g,,,TRUE,Retained
+Q18D,double,haven_labelled|vctrs_vctr|double,float64,T1 How important Maintaining the current character of our communities(value ques,%10.0g,,,TRUE,Retained
+Q18E,double,haven_labelled|vctrs_vctr|double,float64,T1 How important Having middle income workers in the community(value questions),%10.0g,,,TRUE,Retained
+Q18F,double,haven_labelled|vctrs_vctr|double,float64,T1 How important Making it possible for people who grew up here  to live here(va,%10.0g,,,TRUE,Retained
+Q18G,double,haven_labelled|vctrs_vctr|double,float64,T1 How important Slowing the growth of suburban sprawl(value questions),%10.0g,,,TRUE,Retained
+Q18H,double,haven_labelled|vctrs_vctr|double,float64,T1 How important Having lower income workers in the community(value questions),%10.0g,,,TRUE,Retained
+Q19,double,haven_labelled|vctrs_vctr|double,float64,T1 Gap between new homes needed and produced (PK),%10.0g,,,TRUE,Retained
+Q20,double,haven_labelled|vctrs_vctr|double,float64,T1 Median price home in 2007 (PK),%10.0g,,,TRUE,Retained
+Q21,double,haven_labelled|vctrs_vctr|double,float64,T1 Perc who can afford median home in 2006 (PK),%10.0g,,,TRUE,Retained
+Q22,double,haven_labelled|vctrs_vctr|double,float64,T1 Avg rent for 2bed in 2007 (PK),%10.0g,,,TRUE,Retained
+Q23,double,haven_labelled|vctrs_vctr|double,float64,T1 Grow in projected housing gap to 2025? (PK),%10.0g,,,TRUE,Retained
+Q24,double,haven_labelled|vctrs_vctr|double,float64,T1 Perc of new houses for low income? (PK),%10.0g,,,TRUE,Retained
+Q25,double,haven_labelled|vctrs_vctr|double,float64,T1 Projected new homes by 2025? (PK),%10.0g,,,TRUE,Retained
+Q26,double,haven_labelled|vctrs_vctr|double,float64,T1 Perc of land that is open space? (PK),%10.0g,,,TRUE,Retained
+Q127,double,numeric,float64,Number of times at new housing meetings,%10.0g,,,TRUE,Retained
+Q128,double,haven_labelled|vctrs_vctr|double,float64,Education,%10.0g,,,TRUE,Retained
+Q128OTHER,character,character,,Education - Other,%18s,,,FALSE,Excluded; see source_field_exclusions
+Q129,double,numeric,float64,Year born,%10.0g,,,TRUE,Retained
+Q130A,double,haven_labelled|vctrs_vctr|double,float64,Employment status,%10.0g,,,TRUE,Retained
+Q130B,double,haven_labelled|vctrs_vctr|double,float64,Type of employer,%10.0g,,,TRUE,Retained
+Q131,double,haven_labelled|vctrs_vctr|double,float64,Income,%10.0g,,,TRUE,Retained
+Q132,double,haven_labelled|vctrs_vctr|double,float64,Ethnicity,%10.0g,,,TRUE,Retained
+Q133,double,numeric,float64,Number of people in household,%10.0g,,,TRUE,Retained
+Q134,double,numeric,float64,No. of children,%10.0g,,,TRUE,Retained
+Q135,double,haven_labelled|vctrs_vctr|double,float64,Gender,%10.0g,,,TRUE,Retained
+Female,double,haven_labelled|vctrs_vctr|double,float64,"Female? 1=Yes, 2=Male",%10.0g,,,TRUE,Retained
+Q136,double,haven_labelled|vctrs_vctr|double,float64,Religious attendance,%10.0g,,,TRUE,Retained
+END,double,numeric,float64,,%10.0g,,,TRUE,Retained
+INTDATE,character,character,,,%8s,,,FALSE,Excluded; see source_field_exclusions
+PHNNUM,character,character,,,%22s,,,FALSE,Excluded; see source_field_exclusions
+QSTGRP,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+Q14r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q15r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q16r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q18Ar,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q18Br,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q18Cr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q18Dr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q18Er,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q18Fr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q18Gr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q18Hr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q1r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q2r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q3r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q4r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q7r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q8r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q9r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q19_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q20_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q21_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q22_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q23_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q24_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q25_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q26_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q1I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
+Q2I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
+Q3I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
+Q4I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
+Q7I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
+Q8I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
+Q9I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
+t2QSTGRP,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q1,double,haven_labelled|vctrs_vctr|double,float64,T2 More housing or restrict housing (Policy Scale),%10.0g,,,TRUE,Retained
+t2Q2,double,haven_labelled|vctrs_vctr|double,float64,T2 Already developed or open space? (policy scale),%10.0g,,,TRUE,Retained
+t2Q3,double,haven_labelled|vctrs_vctr|double,float64,T2 Attract jobs or minimize commuters? (policy scale),%10.0g,,,TRUE,Retained
+t2Q4,double,haven_labelled|vctrs_vctr|double,float64,T2 Below market housing or marketing housing? (policy scale),%10.0g,,,TRUE,Retained
+t2Q5,double,haven_labelled|vctrs_vctr|double,float64,T2 Who should have the most say in planning and approving new housing developmen,%10.0g,,,TRUE,Retained
+t2Q6,double,haven_labelled|vctrs_vctr|double,float64,T2 Who should have the least say in planning and approving new housing?,%10.0g,,,TRUE,Retained
+t2Q7,double,haven_labelled|vctrs_vctr|double,float64,T2 Importance of improving public consultation in housing (policy scale),%10.0g,,,TRUE,Retained
+t2Q8,double,haven_labelled|vctrs_vctr|double,float64,T2 Housing is a county- or state-level issue? (policy scale),%10.0g,,,TRUE,Retained
+t2Q9,double,haven_labelled|vctrs_vctr|double,float64,T2 Housing is a county- or state-level issue? (policy scale),%10.0g,,,TRUE,Retained
+t2Q10,double,haven_labelled|vctrs_vctr|double,float64,T2 Support or oppose more regional authority over housing policy? (policy scale),%10.0g,,,TRUE,Retained
+t2Q11,double,haven_labelled|vctrs_vctr|double,float64,T2 Who should be most responsible for ensuring regional cooperation? (policy sca,%10.0g,,,TRUE,Retained
+t2Q12A,double,haven_labelled|vctrs_vctr|double,float64,T2 Impact of new housing on quality of life (empricial premise),%10.0g,,,TRUE,Retained
+t2Q12B,double,haven_labelled|vctrs_vctr|double,float64,T2 Impact of new housing development on economic vitality? (empirical premise),%10.0g,,,TRUE,Retained
+t2Q12C,double,haven_labelled|vctrs_vctr|double,float64,T2 Impact of new housing development on social/family connections? (empirical pr,%10.0g,,,TRUE,Retained
+t2Q12D,double,haven_labelled|vctrs_vctr|double,float64,T2 Impact of new housing development on property values? (empirical premise),%10.0g,,,TRUE,Retained
+t2Q12E,double,haven_labelled|vctrs_vctr|double,float64,T2 Impact of new housing development on civic participation? (empirical premise),%10.0g,,,TRUE,Retained
+t2Q12F,double,haven_labelled|vctrs_vctr|double,float64,T2 Impact of new housing development on quality of schools? (empirical premise),%10.0g,,,TRUE,Retained
+t2Q12G,double,haven_labelled|vctrs_vctr|double,float64,T2 Impact of new housing development on local taxes?,%10.0g,,,TRUE,Retained
+t2Q12H,double,haven_labelled|vctrs_vctr|double,float64,T2 Impact of new housing development on infrastructure costs? (empirical premise,%10.0g,,,TRUE,Retained
+t2Q13,double,haven_labelled|vctrs_vctr|double,float64,T2 Impact of new housing development on local govt budgets,%10.0g,,,TRUE,Retained
+t2Q14,double,haven_labelled|vctrs_vctr|double,float64,T2 How good/bad for the environment is infill? (empirical premise),%10.0g,,,TRUE,Retained
+t2Q15,double,haven_labelled|vctrs_vctr|double,float64,T2 How much restricting development causes jobs to move away (empirical premise),%10.0g,,,TRUE,Retained
+t2Q16,double,haven_labelled|vctrs_vctr|double,float64,T2 How much restricting housing causes vitial services to suffer? (empirical pre,%10.0g,,,TRUE,Retained
+t2Q17A,double,haven_labelled|vctrs_vctr|double,float64,T2 Local review of housing projects is the only way communities can hold develop,%10.0g,,,TRUE,Retained
+t2Q17B,double,haven_labelled|vctrs_vctr|double,float64,T2 Local government is too responsive to the most vocal residents,%10.0g,,,TRUE,Retained
+t2Q17C,double,haven_labelled|vctrs_vctr|double,float64,T2 Countywide approaches create new options unavailable to any individual city,%10.0g,,,TRUE,Retained
+t2Q17D,double,haven_labelled|vctrs_vctr|double,float64,T2 Countywide approaches allow for sharing resources across cities,%10.0g,,,TRUE,Retained
+t2Q17E,double,haven_labelled|vctrs_vctr|double,float64,T2 San Mateo County can have job growth without housing growth,%10.0g,,,TRUE,Retained
+t2Q17e1,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q17e2,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q17F,double,haven_labelled|vctrs_vctr|double,float64,T2 Requiring developers to include housing priced at below the market rate will,%10.0g,,,TRUE,Retained
+t2Q17G,double,haven_labelled|vctrs_vctr|double,float64,T2 Rezoning some currently protected open space areas to allow housing developme,%10.0g,,,TRUE,Retained
+t2Q17H,double,haven_labelled|vctrs_vctr|double,float64,T2 Public funding for housing developments will bring the price down to what mos,%10.0g,,,TRUE,Retained
+t2Q17h1,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q17h2,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q17i,double,haven_labelled|vctrs_vctr|double,float64,T2 Public funding for housing developments can be allocated fairly,%10.0g,,,TRUE,Retained
+t2Q17i1,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q17i2,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2ab1,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2ab2,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2ab3,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2t1ab1,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2t1ab2,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2t1ab3,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q18A,double,numeric,float64,T2 How important Making sure that everyone has a place to live(value questions),%10.0g,,,TRUE,Retained
+t2Q18B,double,haven_labelled|vctrs_vctr|double,float64,T2 How important Preserving open space(value questions),%10.0g,,,TRUE,Retained
+t2Q18C,double,haven_labelled|vctrs_vctr|double,float64,T2 How important Encouraging economic growth(value questions),%10.0g,,,TRUE,Retained
+t2Q18D,double,haven_labelled|vctrs_vctr|double,float64,T2 How important Maintaining the current character of our communities(value ques,%10.0g,,,TRUE,Retained
+t2Q18E,double,haven_labelled|vctrs_vctr|double,float64,T2 How important Having middle income workers in the community(value questions),%10.0g,,,TRUE,Retained
+t2Q18F,double,haven_labelled|vctrs_vctr|double,float64,T2 How important Making it possible for people who grew up here  to live here(va,%10.0g,,,TRUE,Retained
+t2Q18G,double,haven_labelled|vctrs_vctr|double,float64,t2 How important Slowing the growth of suburban sprawl(value questions),%10.0g,,,TRUE,Retained
+t2Q18H,double,haven_labelled|vctrs_vctr|double,float64,t2 How important Having lower income workers in the community(value questions),%10.0g,,,TRUE,Retained
+t2Q19,double,haven_labelled|vctrs_vctr|double,float64,T2 Gap between new homes needed and produced (PK),%10.0g,,,TRUE,Retained
+t2Q20,double,haven_labelled|vctrs_vctr|double,float64,T2 Median price home in 2007 (PK),%10.0g,,,TRUE,Retained
+t2Q21,double,haven_labelled|vctrs_vctr|double,float64,T2 Perc who can afford median home in 2006 (PK),%10.0g,,,TRUE,Retained
+t2Q22,double,haven_labelled|vctrs_vctr|double,float64,T2 Avg rent for 2bed in 2007 (PK),%10.0g,,,TRUE,Retained
+t2Q23,double,haven_labelled|vctrs_vctr|double,float64,T2 Grow in projected housing gap to 2025? (PK),%10.0g,,,TRUE,Retained
+t2Q24,double,haven_labelled|vctrs_vctr|double,float64,T2 Perc of new houses for low income? (PK),%10.0g,,,TRUE,Retained
+t2Q25,double,haven_labelled|vctrs_vctr|double,float64,T2 Projected new homes by 2025? (PK),%10.0g,,,TRUE,Retained
+t2Q26,double,haven_labelled|vctrs_vctr|double,float64,T2 Perc of land that is open space? (PK),%10.0g,,,TRUE,Retained
+t2Q27A,double,haven_labelled|vctrs_vctr|double,float64,New local transportation options could reduce traffic congestion from new housin,%10.0g,,,TRUE,Retained
+t2Q27B,double,haven_labelled|vctrs_vctr|double,float64,New regional transportation could reduce long distance commuting,%10.0g,,,TRUE,Retained
+t2Q27D,double,haven_labelled|vctrs_vctr|double,float64,Higher density good for downtown,%10.0g,,,TRUE,Retained
+t2Q27E,double,haven_labelled|vctrs_vctr|double,float64,Higher density harm character,%10.0g,,,TRUE,Retained
+t2q28,double,haven_labelled|vctrs_vctr|double,float64,Favor (oppose) Building housing near transportation,%10.0g,,,TRUE,Retained
+t2q29,double,haven_labelled|vctrs_vctr|double,float64,Favor (oppose) Mixed commercial / residential,%10.0g,,,TRUE,Retained
+t2q30,double,haven_labelled|vctrs_vctr|double,float64,Likelihood that higher density housing near transit?,%10.0g,,,TRUE,Retained
+t2q31a,double,haven_labelled|vctrs_vctr|double,float64,Support/Oppose faster and cheaper housing approval,%10.0g,,,TRUE,Retained
+t2q31b,double,haven_labelled|vctrs_vctr|double,float64,Support/Oppose public funding for housing development,%10.0g,,,TRUE,Retained
+t2q31c,double,haven_labelled|vctrs_vctr|double,float64,Support/Oppose subsidies for affordable housing,%10.0g,,,TRUE,Retained
+t2q31d,double,haven_labelled|vctrs_vctr|double,float64,Support/Oppose requiring developers to build affordable housing,%10.0g,,,TRUE,Retained
+t2q31e,double,haven_labelled|vctrs_vctr|double,float64,Support/Oppose enforcing state laws for housing plans,%10.0g,,,TRUE,Retained
+t2q31f,double,haven_labelled|vctrs_vctr|double,float64,Support/Oppose country-wide appeal process for developers,%10.0g,,,TRUE,Retained
+t2q32a,double,haven_labelled|vctrs_vctr|double,float64,Support/Oppose document fee,%10.0g,,,TRUE,Retained
+t2q32b,double,haven_labelled|vctrs_vctr|double,float64,Support/Oppose increase property taxes,%10.0g,,,TRUE,Retained
+t2q32c,double,haven_labelled|vctrs_vctr|double,float64,Increase sales tax,%10.0g,,,TRUE,Retained
+t2q32d,double,haven_labelled|vctrs_vctr|double,float64,State support for affordable housing,%10.0g,,,TRUE,Retained
+t2q32e,double,haven_labelled|vctrs_vctr|double,float64,Support/Oppose $1 per square foot fee on new development,%10.0g,,,TRUE,Retained
+t2q33,double,haven_labelled|vctrs_vctr|double,float64,Frequency of talking about housing,%10.0g,,,TRUE,Retained
+t2q34,double,haven_labelled|vctrs_vctr|double,float64,Participate in planning process last 5 years,%10.0g,,,TRUE,Retained
+t2q35a,double,haven_labelled|vctrs_vctr|double,float64,How valuable: small group,%10.0g,,,TRUE,Retained
+t2q35b,double,haven_labelled|vctrs_vctr|double,float64,How valuable: chatting,%10.0g,,,TRUE,Retained
+t2q35c,double,haven_labelled|vctrs_vctr|double,float64,How valuable: plenary,%10.0g,,,TRUE,Retained
+t2q35d,double,haven_labelled|vctrs_vctr|double,float64,How valuable: event as whole,%10.0g,,,TRUE,Retained
+t2q36a,double,haven_labelled|vctrs_vctr|double,float64,a. My small group moderator provided the opportunity for everyone to participate,%10.0g,,,TRUE,Retained
+t2q36b,double,haven_labelled|vctrs_vctr|double,float64,b. The members of my small group participated relatively equally in the discussi,%10.0g,,,TRUE,Retained
+t2q36c,double,haven_labelled|vctrs_vctr|double,float64,c. My small group moderator sometimes tried to influence the group with this or,%10.0g,,,TRUE,Retained
+t2q36d,double,haven_labelled|vctrs_vctr|double,float64,d. My small group moderator tried to make sure that opposing arguments were cons,%10.0g,,,TRUE,Retained
+t2q36e,double,haven_labelled|vctrs_vctr|double,float64,e. The important aspects of the issues were covered in the group discussions,%10.0g,,,TRUE,Retained
+t2q36f,double,haven_labelled|vctrs_vctr|double,float64,f. I learned a lot about people very different from me-about what they and their,%10.0g,,,TRUE,Retained
+t2q37,double,haven_labelled|vctrs_vctr|double,float64,"Before the deliberation started, how much of the briefing material you were sent",%10.0g,,,TRUE,Retained
+t2q38,double,haven_labelled|vctrs_vctr|double,float64,"And by the end of the deliberations, how much of the briefing material you were",%10.0g,,,TRUE,Retained
+t2q39,double,haven_labelled|vctrs_vctr|double,float64,"Would you say that the briefing material was mostly balanced, or that it clearly",%10.0g,,,TRUE,Retained
+t2q40,double,haven_labelled|vctrs_vctr|double,float64,"Would you say that the briefing material was mostly clear, or unclear?",%10.0g,,,TRUE,Retained
+t2q41,double,haven_labelled|vctrs_vctr|double,float64,"Would you say that the length of the small group sessions was too short, suffici",%10.0g,,,TRUE,Retained
+t2q42,double,haven_labelled|vctrs_vctr|double,float64,"Would you say that the length of the plenary sessions was too short, sufficient,",%10.0g,,,TRUE,Retained
+prob,double,numeric,float64,Is there a problem with the data entry (1=yes),%10.0g,,,TRUE,Retained
+participant,double,numeric,float64,,%10.0g,,,TRUE,Retained
+DataEnteror,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q14r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q15r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q16r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q18Ar,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q18Br,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q18Cr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q18Dr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q18Er,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q18Fr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q18Hr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q1r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q2r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q3r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q4r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q7r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q8r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q9r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q19_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q20_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q21_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q22_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q23_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q24_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q25_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q26_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
+age,double,numeric,float64,,%10.0g,,,TRUE,Retained
+filter__,double,haven_labelled|vctrs_vctr|double,float64,t2Q17e1*t2Q17e2>0 (FILTER),%10.0g,,,TRUE,Retained
+pkind,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2pkind,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q12Ar,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q12Br,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q12Cr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q12Dr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q12Er,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q12Fr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q12Gr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q12Hr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q13r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q17Ar,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q17Br,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q17Cr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q17Dr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q17E1r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q17E2r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q17Fr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q17Gr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q17H1r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q17H2r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q17I1r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q17I2r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q10r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q12Ar,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q12Br,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q12Cr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q12Dr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q12Er,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q12Fr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q12Gr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q12Hr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q13r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q17Ar,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q17Br,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q17Cr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q17Dr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q17E1r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q17E2r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q17Fr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q17Gr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q17H1r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q17I1r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+Q10r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q1I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
+t2Q2I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
+t2Q3I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
+t2Q4I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
+t2Q7I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
+t2Q8I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
+t2Q9I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
+t2Q17H2r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q17I2r,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q18Gr,double,numeric,float64,,%10.0g,,,TRUE,Retained
+q5local,double,numeric,float64,,%10.0g,,,TRUE,Retained
+q5county,double,numeric,float64,,%10.0g,,,TRUE,Retained
+q5state,double,numeric,float64,,%10.0g,,,TRUE,Retained
+q6local,double,numeric,float64,,%10.0g,,,TRUE,Retained
+q6county,double,numeric,float64,,%10.0g,,,TRUE,Retained
+q6state,double,numeric,float64,,%10.0g,,,TRUE,Retained
+q11existing,double,numeric,float64,,%10.0g,,,TRUE,Retained
+q11county,double,numeric,float64,,%10.0g,,,TRUE,Retained
+q11local,double,numeric,float64,,%10.0g,,,TRUE,Retained
+q11new,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q5local,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q5county,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q5state,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q6local,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q6county,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2Q6state,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2q11existing,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2q11county,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2q11local,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2q11new,double,numeric,float64,,%10.0g,,,TRUE,Retained
+ab11,double,numeric,float64,,%10.0g,,,TRUE,Retained
+ab12,double,numeric,float64,,%10.0g,,,TRUE,Retained
+ab21,double,numeric,float64,,%10.0g,,,TRUE,Retained
+ab22,double,numeric,float64,,%10.0g,,,TRUE,Retained
+ab31,double,numeric,float64,,%10.0g,,,TRUE,Retained
+ab32,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2ab11,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2ab12,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2ab21,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2ab22,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2ab31,double,numeric,float64,,%10.0g,,,TRUE,Retained
+t2ab32,double,numeric,float64,,%10.0g,,,TRUE,Retained
+meeting,double,numeric,float64,,%10.0g,,,TRUE,Retained
