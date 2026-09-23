@@ -1,0 +1,1409 @@
+source_column,source_value,value_label
+Q1,0,Not at all
+Q1,5,Exactly in the middle
+Q1,10,A great deal
+Q1,88,No opinion / Don't Know
+Q1,99,No Answer / Refused
+Q2,1,Increase efficiency
+Q2,4,Exactly in the middle
+Q2,7,Generate and buy more
+Q2,8,No Opinion / Don't Know
+Q2,9,No Answer / Refused
+Q3,888,No Opinion / Don't Know
+Q3,999,No Answer / Refused
+Q4,888,No Opinion / Don't Know
+Q4,999,No Answer / Refused
+Q5,888,No Opinion / Don't Know
+Q5,999,No Answer / Refused
+Q6,888,No Opinion / Don't Know
+Q6,999,No Answer / Refused
+Q7,888,No Opinion / Don't Know
+Q7,999,No Answer / Refused
+Q8,888,No Opinion / Don't Know
+Q8,999,No Answer / Refused
+Q9,888,No Opinion / Don't Know
+Q9,999,No Answer / Refused
+Q10,888,No Opinion / Don't Know
+Q10,999,No Answer / Refused
+Q11,888,No Opinion / Don't Know
+Q11,999,No Answer / Refused
+Q12,1,Agree strongly
+Q12,2,Agree somewhat
+Q12,3,Neither agree nor disagree
+Q12,4,Disagree somewhat
+Q12,5,Disagree strongly
+Q12,8,No Opinion / Don't Know
+Q12,9,No Answer / Refused
+Q13,1,Agree strongly
+Q13,2,Agree somewhat
+Q13,3,Neither agree nor disagree
+Q13,4,Disagree somewhat
+Q13,5,Disagree strongly
+Q13,8,No Opinion / Don't Know
+Q13,9,No Answer / Refused
+Q14,1,Agree strongly
+Q14,2,Agree somewhat
+Q14,3,Neither agree nor disagree
+Q14,4,Disagree somewhat
+Q14,5,Disagree strongly
+Q14,8,No Opinion / Don't Know
+Q14,9,No Answer / Refused
+Q15,1,Agree strongly
+Q15,2,Agree somewhat
+Q15,3,Neither agree nor disagree
+Q15,4,Disagree somewhat
+Q15,5,Disagree strongly
+Q15,8,No Opinion / Don't Know
+Q15,9,No Answer / Refused
+Q16,888,No Opinion / Don't Know
+Q16,999,No Answer / Refused
+Q17,0,Strongly opposed
+Q17,5,Exactly in the middle
+Q17,10,Strongly in favor
+Q17,88,No Opinion / Don't Know
+Q17,99,No Answer / Refused
+Q18,0,Strongly opposed
+Q18,5,Exactly in the middle
+Q18,10,Strongly in favor
+Q18,88,No Opinion / Don't Know
+Q18,99,No Answer / Refused
+Q19,0,Strongly opposed
+Q19,5,Exactly in the middle
+Q19,10,Strongly in favor
+Q19,88,No Opinion / Don't Know
+Q19,99,No Answer / Refused
+Q20,0,Strongly opposed
+Q20,5,Exactly in the middle
+Q20,10,Strongly in favor
+Q20,88,No Opinion / Don't Know
+Q20,99,No Answer / Refused
+Q21,0,Strongly opposed
+Q21,5,Exactly in the middle
+Q21,10,Strongly in favor
+Q21,88,No Opinion / Don't Know
+Q21,99,No Answer / Refused
+Q22,0,Strongly opposed
+Q22,5,Exactly in the middle
+Q22,10,Strongly in favor
+Q22,88,No Opinion / Don't Know
+Q22,99,No Answer / Refused
+Q23,1,Bills dont change
+Q23,4,Exactly in the middle
+Q23,7,Generate and buy more
+Q23,8,No Opinion / Don't Know
+Q23,9,No Answer / Refused
+Q24,1,Fewer larger plants
+Q24,4,Exactly in the middle
+Q24,7,More smaller plants
+Q24,8,No Opinion / Don't Know
+Q24,9,No Answer / Refused
+Q25,1,Support strongly
+Q25,2,Support somewhat
+Q25,3,Neither support nor oppose
+Q25,4,Oppose somewhat
+Q25,5,Oppose strongly
+Q25,8,No Opinion / Don't Know
+Q25,9,No Answer / Refused
+Q26,1,Increase it
+Q26,2,Keep about same
+Q26,3,Decrease it
+Q26,8,No Opinion / Don't Know
+Q26,9,No Answer / Refused
+Q27,1,Increase it
+Q27,2,Keep about same
+Q27,3,Decrease it
+Q27,8,No Opinion / Don't Know
+Q27,9,No Answer / Refused
+Q28,8888,No Opinion / Don't Know
+Q28,9999,No Answer / Refused
+Q29,1,Divide costs
+Q29,4,Exactly in the middle
+Q29,7,Buy only enough to meet demand
+Q29,8,No Opinion / Don't Know
+Q29,9,No Answer / Refused
+Q30,0,Extremely unfriendly
+Q30,5,Exactly in the middle
+Q30,10,Extremely friendly
+Q30,88,No Opinion / Don't Know
+Q30,99,No Answer / Refused
+Q31,0,Extremely unfriendly
+Q31,5,Exactly in the middle
+Q31,10,Extremely friendly
+Q31,88,No Opinion / Don't Know
+Q31,99,No Answer / Refused
+Q32,0,Extremely unfriendly
+Q32,5,Exactly in the middle
+Q32,10,Extremely friendly
+Q32,88,No Opinion / Don't Know
+Q32,99,No Answer / Refused
+Q33,0,Extremely unfriendly
+Q33,5,Exactly in the middle
+Q33,10,Extremely friendly
+Q33,88,No Opinion / Don't Know
+Q33,99,No Answer / Refused
+Q34,0,Extremely unfriendly
+Q34,5,Exactly in the middle
+Q34,10,Extremely friendly
+Q34,88,No Opinion / Don't Know
+Q34,99,No Answer / Refused
+Q35,0,Extremely unfriendly
+Q35,5,Exactly in the middle
+Q35,10,Extremely friendly
+Q35,88,No Opinion / Don't Know
+Q35,99,No Answer / Refused
+Q36,0,Extremely unfriendly
+Q36,5,Exactly in the middle
+Q36,10,Extremely friendly
+Q36,88,No Opinion / Don't Know
+Q36,99,No Answer / Refused
+Q37,0,Extremely unfriendly
+Q37,5,Exactly in the middle
+Q37,10,Extremely friendly
+Q37,88,No Opinion / Don't Know
+Q37,99,No Answer / Refused
+Q38,0,Extremely unfriendly
+Q38,5,Exactly in the middle
+Q38,10,Extremely friendly
+Q38,88,No Opinion / Don't Know
+Q38,99,No Answer / Refused
+Q39,0,Extremely unfriendly
+Q39,5,Exactly in the middle
+Q39,10,Extremely friendly
+Q39,88,No Opinion / Don't Know
+Q39,99,No Answer / Refused
+Q40,0,Extremely unconcerned
+Q40,5,Exactly in the middle
+Q40,10,Extremely concerned
+Q40,88,No Opinion / Don't Know
+Q40,99,No Answer / Refused
+Q41,0,Extremely unconcerned
+Q41,5,Exactly in the middle
+Q41,10,Extremely concerned
+Q41,88,No Opinion / Don't Know
+Q41,99,No Answer / Refused
+Q42,0,Extremely unconcerned
+Q42,5,Exactly in the middle
+Q42,10,Extremely concerned
+Q42,88,No Opinion / Don't Know
+Q42,99,No Answer / Refused
+Q43,0,Extremely unconcerned
+Q43,5,Exactly in the middle
+Q43,10,Extremely concerned
+Q43,88,No Opinion / Don't Know
+Q43,99,No Answer / Refused
+Q44,0,Extremely unconcerned
+Q44,5,Exactly in the middle
+Q44,10,Extremely concerned
+Q44,88,No Opinion / Don't Know
+Q44,99,No Answer / Refused
+Q45,0,No threat at all
+Q45,5,Exactly in the middle
+Q45,10,Extremely serious threat
+Q45,88,No Opinion / Don't Know
+Q45,99,No Answer / Refused
+Q46,0,No threat at all
+Q46,5,Exactly in the middle
+Q46,10,Extremely serious threat
+Q46,88,No Opinion / Don't Know
+Q46,99,No Answer / Refused
+Q47,0,No threat at all
+Q47,5,Exactly in the middle
+Q47,10,Extremely serious threat
+Q47,88,No Opinion / Don't Know
+Q47,99,No Answer / Refused
+Q48,0,No threat at all
+Q48,5,Exactly in the middle
+Q48,10,Extremely serious threat
+Q48,88,No Opinion / Don't Know
+Q48,99,No Answer / Refused
+Q49,0,No threat at all
+Q49,5,Exactly in the middle
+Q49,10,Extremely serious threat
+Q49,88,No Opinion / Don't Know
+Q49,99,No Answer / Refused
+Q50,888,No Opinion / Don't Know
+Q50,999,No Answer / Refused
+Q52,888,No Opinion / Don't Know
+Q52,999,No Answer / Refused
+Q53,888,No Opinion / Don't Know
+Q53,999,No Answer / Refused
+Q54,888,No Opinion / Don't Know
+Q54,999,No Answer / Refused
+Q55,888,No Opinion / Don't Know
+Q55,999,No Answer / Refused
+Q56,888,No Opinion / Don't Know
+Q56,999,No Answer / Refused
+Q57,888,No Opinion / Don't Know
+Q57,999,No Answer / Refused
+Q58,888,No Opinion / Don't Know
+Q58,999,No Answer / Refused
+Q59,888,No Opinion / Don't Know
+Q59,999,No Answer / Refused
+Q60,888,No Opinion / Don't Know
+Q60,999,No Answer / Refused
+Q61,1,Agree strongly
+Q61,2,Agree somewhat
+Q61,3,Neither agree nor disagree
+Q61,4,Disagree somewhat
+Q61,5,Disagree strongly
+Q61,8,No Opinion / Don't Know
+Q61,9,No Answer / Refused
+Q62,1,Agree strongly
+Q62,2,Agree somewhat
+Q62,3,Neither agree nor disagree
+Q62,4,Disagree somewhat
+Q62,5,Disagree strongly
+Q62,8,No Opinion / Don't Know
+Q62,9,No Answer / Refused
+Q63,1,Normal variation
+Q63,4,Exactly in the middle
+Q63,7,Lasting climate change
+Q63,8,No Opinion / Don't Know
+Q63,9,No Answer / Refused
+Q64,1,Human activity
+Q64,4,Exactly in the middle
+Q64,7,Natural causes
+Q64,8,No Opinion / Don't Know
+Q64,9,No Answer / Refused
+Q65,1,Direct costs
+Q65,4,Exactly in the middle
+Q65,7,Indirect costs as well
+Q65,8,No Opinion / Don't Know
+Q65,9,No Answer / Refused
+Q66,0,Not at all important
+Q66,5,Exactly in the middle
+Q66,10,Critically important
+Q66,88,No Opinion / Don't Know
+Q66,99,No Answer / Refused
+Q67,0,Not at all important
+Q67,5,Exactly in the middle
+Q67,10,Critically important
+Q67,88,No Opinion / Don't Know
+Q67,99,No Answer / Refused
+Q68,0,Not at all important
+Q68,5,Exactly in the middle
+Q68,10,Critically important
+Q68,88,No Opinion / Don't Know
+Q68,99,No Answer / Refused
+Q69,0,Not at all important
+Q69,5,Exactly in the middle
+Q69,10,Critically important
+Q69,88,No Opinion / Don't Know
+Q69,99,No Answer / Refused
+Q70,0,Not at all important
+Q70,5,Exactly in the middle
+Q70,10,Critically important
+Q70,88,No Opinion / Don't Know
+Q70,99,No Answer / Refused
+Q71,0,Not at all important
+Q71,5,Exactly in the middle
+Q71,10,Critically important
+Q71,88,No Opinion / Don't Know
+Q71,99,No Answer / Refused
+Q72,0,Not at all important
+Q72,5,Exactly in the middle
+Q72,10,Critically important
+Q72,88,No Opinion / Don't Know
+Q72,99,No Answer / Refused
+Q73,0,Not at all important
+Q73,5,Exactly in the middle
+Q73,10,Critically important
+Q73,88,No Opinion / Don't Know
+Q73,99,No Answer / Refused
+Q74,0,Not at all important
+Q74,5,Exactly in the middle
+Q74,10,Critically important
+Q74,88,No Opinion / Don't Know
+Q74,99,No Answer / Refused
+Q75,0,Not at all important
+Q75,5,Exactly in the middle
+Q75,10,Critically important
+Q75,88,No Opinion / Don't Know
+Q75,99,No Answer / Refused
+Q76,0,Not at all important
+Q76,5,Exactly in the middle
+Q76,10,Critically important
+Q76,88,No Opinion / Don't Know
+Q76,99,No Answer / Refused
+Q77,1,Almost no impact
+Q77,2,Reduced by 20%
+Q77,3,Reduced by 50%
+Q77,4,Reduced by 70%
+Q77,5,Reduced by 90%
+Q77,8,No Opinion / Don't Know
+Q77,9,No Answer / Refused
+Q78,1,Almost no impact
+Q78,2,Reduced by 20%
+Q78,3,Reduced by 50%
+Q78,4,Reduced by 70%
+Q78,5,Reduced by 90%
+Q78,8,No Opinion / Don't Know
+Q78,9,No Answer / Refused
+Q79,1,5%
+Q79,2,15%
+Q79,3,25%
+Q79,4,40%
+Q79,8,No Opinion / Don't Know
+Q79,9,No Answer / Refused
+Q80,1,5%
+Q80,2,15%
+Q80,3,25%
+Q80,4,40%
+Q80,8,No Opinion / Don't Know
+Q80,9,No Answer / Refused
+Q81,1,5%
+Q81,2,15%
+Q81,3,25%
+Q81,4,40%
+Q81,8,No Opinion / Don't Know
+Q81,9,No Answer / Refused
+Q82,1,5%
+Q82,2,15%
+Q82,3,25%
+Q82,4,40%
+Q82,8,No Opinion / Don't Know
+Q82,9,No Answer / Refused
+Q83,1,Roughly 10% higher
+Q83,2,Roughly 20% higher
+Q83,3,About the same
+Q83,4,Roughly 10% lower
+Q83,5,Roughly 20% lower
+Q83,8,No Opinion / Don't Know
+Q83,9,No Answer / Refused
+Q84,1,Roughly $60
+Q84,2,Roughly $80
+Q84,3,Roughly $120
+Q84,4,Roughly $180
+Q84,8,No Opinion / Don't Know
+Q84,9,No Answer / Refused
+Q85,1,2010
+Q85,2,2012
+Q85,3,2018
+Q85,4,2025
+Q85,8,No Opinion / Don't Know
+Q85,9,No Answer / Refused
+Q86,1,Less than high school
+Q86,2,High School
+Q86,3,Some college
+Q86,4,College graduate
+Q86,5,Some graduate work
+Q86,6,Graduate degree
+Q86,7,Other
+Q86,9,No Answer / Refused
+Q87,98,Don't Know
+Q87,99,No Answer / Refused
+Q88,1,Employed full time
+Q88,2,Employed part time
+Q88,3,"Not employed, looking"
+Q88,4,Student
+Q88,5,Not looking for work
+Q88,9,No Answer / Refused
+Q89,1,Self employed
+Q89,2,Business under 25 employees
+Q89,3,Business with more than 25
+Q89,4,Govermnet
+Q89,5,Other
+Q89,9,No Answer / Refused
+Q90,9999,No Answer / Refused
+Q91,1,"Less than $25,000"
+Q91,2,"$25,001 - 50,000"
+Q91,3,"$50,001 - 75,000"
+Q91,4,"$75,001 - 100,000"
+Q91,5,"$100,001 - 125,000"
+Q91,6,"$125,001 - 150,000"
+Q91,7,"More than $150,000"
+Q91,8,Don't Know
+Q91,9,No Answer / Refused
+Q92,1,Extremely Liberal
+Q92,4,Exactly in the middle
+Q92,7,Extremely Conservative
+Q92,8,Don't Know / No Opinion
+Q92,9,No Answer / Refused
+Q93,1,Democrat
+Q93,2,Republican
+Q93,3,Independent
+Q93,4,Other
+Q93,8,Don't Know / No Opinion
+Q93,9,No Answer / Refused
+Q94,1,MALE
+Q94,2,FEMALE
+SHOUSE,1,NSON
+SHOUSE,2,OSR
+PART,0,No
+PART,1,Yes
+LONG,0,Short Form
+LONG,1,Long Form
+TYPE,1,Non-participant
+TYPE,2,LF participant
+TYPE,3,SF participant
+Q001T2,0,Not at all
+Q001T2,5,Exactly in the middle
+Q001T2,10,A great deal
+Q001T2,88,No answer
+Q001T2,99,No opinion
+Q002T2,1,Increase efficiency
+Q002T2,4,Exactly in the middle
+Q002T2,7,Generate and buy more
+Q002T2,88,No answer
+Q002T2,99,No opinion
+Q003AT2,888,No answer
+Q003AT2,999,No opinion
+Q003BT2,888,No answer
+Q003BT2,999,No opinion
+Q003CT2,888,No answer
+Q003CT2,999,No opinion
+Q003DT2,888,No answer
+Q003DT2,999,No opinion
+Q003ET2,888,No answer
+Q003ET2,999,No opinion
+Q003FT2,888,No answer
+Q003FT2,999,No opinion
+Q003GT2,888,No answer
+Q003GT2,999,No opinion
+Q003HT2,888,No answer
+Q003HT2,999,No opinion
+Q003IT2,888,No answer
+Q003IT2,999,No opinion
+Q004T2,1,Agree strongly
+Q004T2,2,Agree somewhat
+Q004T2,3,Neither agree nor disagree
+Q004T2,4,Disagree somewhat
+Q004T2,5,Disagree strongly
+Q004T2,88,No answer
+Q004T2,99,No opinion
+Q005T2,1,Buy from other providers
+Q005T2,4,Exactly in the middle
+Q005T2,7,Build own facilities
+Q005T2,88,No answer
+Q005T2,99,No opinion
+Q006AT2,1,Agree strongly
+Q006AT2,2,Agree somewhat
+Q006AT2,3,Neither agree nor disagree
+Q006AT2,4,Disagree somewhat
+Q006AT2,5,Disagree strongly
+Q006AT2,88,No answer
+Q006AT2,99,No opinion
+Q006BT2,1,Agree strongly
+Q006BT2,2,Agree somewhat
+Q006BT2,3,Neither agree nor disagree
+Q006BT2,4,Disagree somewhat
+Q006BT2,5,Disagree strongly
+Q006BT2,88,No answer
+Q006BT2,99,No opinion
+Q006CT2,1,Agree strongly
+Q006CT2,2,Agree somewhat
+Q006CT2,3,Neither agree nor disagree
+Q006CT2,4,Disagree somewhat
+Q006CT2,5,Disagree strongly
+Q006CT2,88,No answer
+Q006CT2,99,No opinion
+Q006DT2,1,Agree strongly
+Q006DT2,2,Agree somewhat
+Q006DT2,3,Neither agree nor disagree
+Q006DT2,4,Disagree somewhat
+Q006DT2,5,Disagree strongly
+Q006DT2,88,No answer
+Q006DT2,99,No opinion
+Q006ET2,1,Agree strongly
+Q006ET2,2,Agree somewhat
+Q006ET2,3,Neither agree nor disagree
+Q006ET2,4,Disagree somewhat
+Q006ET2,5,Disagree strongly
+Q006ET2,88,No answer
+Q006ET2,99,No opinion
+Q007T2,888,No answer
+Q007T2,999,No opinion
+Q008T2,1,Entirely inside VT
+Q008T2,2,Mostly inside VT
+Q008T2,3,Half inside/half outside
+Q008T2,4,Mostly outside VT
+Q008T2,5,Entirely outside VT
+Q008T2,88,No answer
+Q008T2,99,No opinion
+Q009AT2,0,Strongly opposed
+Q009AT2,5,Exactly in the middle
+Q009AT2,10,Strongly in favor
+Q009AT2,88,No answer
+Q009AT2,99,No opinion
+Q009BT2,0,Strongly opposed
+Q009BT2,5,Exactly in the middle
+Q009BT2,10,Strongly in favor
+Q009BT2,88,No answer
+Q009BT2,99,No opinion
+Q009CT2,0,Strongly opposed
+Q009CT2,5,Exactly in the middle
+Q009CT2,10,Strongly in favor
+Q009CT2,88,No answer
+Q009CT2,99,No opinion
+Q009DT2,0,Strongly opposed
+Q009DT2,5,Exactly in the middle
+Q009DT2,10,Strongly in favor
+Q009DT2,88,No answer
+Q009DT2,99,No opinion
+Q009ET2,0,Strongly opposed
+Q009ET2,5,Exactly in the middle
+Q009ET2,10,Strongly in favor
+Q009ET2,88,No answer
+Q009ET2,99,No opinion
+Q009FT2,0,Strongly opposed
+Q009FT2,5,Exactly in the middle
+Q009FT2,10,Strongly in favor
+Q009FT2,88,No answer
+Q009FT2,99,No opinion
+Q010T2,1,Stable bills
+Q010T2,4,Exactly in the middle
+Q010T2,7,Market price
+Q010T2,88,No answer
+Q010T2,99,No opinion
+Q011T2,1,Fewer larger plants
+Q011T2,4,Exactly in the middle
+Q011T2,7,More smaller plants
+Q011T2,88,No answer
+Q011T2,99,No opinion
+Q012T2,1,Support strongly
+Q012T2,2,Support somewhat
+Q012T2,3,Neither support nor oppose
+Q012T2,4,Oppose somewhat
+Q012T2,5,Oppose strongly
+Q012T2,8,No answer
+Q012T2,9,No opinion
+Q013T2,1,Increase it
+Q013T2,2,Keep about same
+Q013T2,3,Decrease it
+Q013T2,8,No answer
+Q013T2,9,No opinion
+Q014T2,1,Increase it
+Q014T2,2,Keep about same
+Q014T2,3,Decrease it
+Q014T2,8,No answer
+Q014T2,9,No opinion
+Q015T2,8888,No answer
+Q015T2,9999,No opinion
+Q016T2,8888,No answer
+Q016T2,9999,No opinion
+Q017T2,8888,No answer
+Q017T2,9999,No opinion
+Q018T2,8888,No answer
+Q018T2,9999,No opinion
+Q019T2,1,Divide cost of renewable energy among all
+Q019T2,4,Exactly in the middle
+Q019T2,7,Buy only enough to meet demand
+Q019T2,88,No answer
+Q019T2,99,No opinion
+Q020AT2,0,Extremely unfriendly
+Q020AT2,5,Exactly in the middle
+Q020AT2,10,Extremely friendly
+Q020AT2,88,No answer
+Q020AT2,99,No opinion
+Q020BT2,0,Extremely unfriendly
+Q020BT2,5,Exactly in the middle
+Q020BT2,10,Extremely friendly
+Q020BT2,88,No answer
+Q020BT2,99,No opinion
+Q020CT2,0,Extremely unfriendly
+Q020CT2,5,Exactly in the middle
+Q020CT2,10,Extremely friendly
+Q020CT2,88,No answer
+Q020CT2,99,No opinion
+Q020DT2,0,Extremely unfriendly
+Q020DT2,5,Exactly in the middle
+Q020DT2,10,Extremely friendly
+Q020DT2,88,No answer
+Q020DT2,99,No opinion
+Q020ET2,0,Extremely unfriendly
+Q020ET2,5,Exactly in the middle
+Q020ET2,10,Extremely friendly
+Q020ET2,88,No answer
+Q020ET2,99,No opinion
+Q020FT2,0,Extremely unfriendly
+Q020FT2,5,Exactly in the middle
+Q020FT2,10,Extremely friendly
+Q020FT2,88,No answer
+Q020FT2,99,No opinion
+Q020GT2,0,Extremely unfriendly
+Q020GT2,5,Exactly in the middle
+Q020GT2,10,Extremely friendly
+Q020GT2,88,No answer
+Q020GT2,99,No opinion
+Q020HT2,0,Extremely unfriendly
+Q020HT2,5,Exactly in the middle
+Q020HT2,10,Extremely friendly
+Q020HT2,88,No answer
+Q020HT2,99,No opinion
+Q020IT2,0,Extremely unfriendly
+Q020IT2,5,Exactly in the middle
+Q020IT2,10,Extremely friendly
+Q020IT2,88,No answer
+Q020IT2,99,No opinion
+Q020JT2,0,Extremely unfriendly
+Q020JT2,5,Exactly in the middle
+Q020JT2,10,Extremely friendly
+Q020JT2,88,No answer
+Q020JT2,99,No opinion
+Q021AT2,0,Extremely unconcerned
+Q021AT2,5,Exactly in the middle
+Q021AT2,10,Extremely concerned
+Q021AT2,88,No answer
+Q021AT2,99,No opinion
+Q021BT2,0,Extremely unconcerned
+Q021BT2,5,Exactly in the middle
+Q021BT2,10,Extremely concerned
+Q021BT2,88,No answer
+Q021BT2,99,No opinion
+Q021CT2,0,Extremely unconcerned
+Q021CT2,5,Exactly in the middle
+Q021CT2,10,Extremely concerned
+Q021CT2,88,No answer
+Q021CT2,99,No opinion
+Q021DT2,0,Extremely unconcerned
+Q021DT2,5,Exactly in the middle
+Q021DT2,10,Extremely concerned
+Q021DT2,88,No answer
+Q021DT2,99,No opinion
+Q021ET2,0,Extremely unconcerned
+Q021ET2,5,Exactly in the middle
+Q021ET2,10,Extremely concerned
+Q021ET2,88,No answer
+Q021ET2,99,No opinion
+Q022AT2,0,Extremely unconcerned
+Q022AT2,5,Exactly in the middle
+Q022AT2,10,Extremely concerned
+Q022AT2,88,No answer
+Q022AT2,99,No opinion
+Q022BT2,0,Extremely unconcerned
+Q022BT2,5,Exactly in the middle
+Q022BT2,10,Extremely concerned
+Q022BT2,88,No answer
+Q022BT2,99,No opinion
+Q022CT2,0,Extremely unconcerned
+Q022CT2,5,Exactly in the middle
+Q022CT2,10,Extremely concerned
+Q022CT2,88,No answer
+Q022CT2,99,No opinion
+Q022DT2,0,Extremely unconcerned
+Q022DT2,5,Exactly in the middle
+Q022DT2,10,Extremely concerned
+Q022DT2,88,No answer
+Q022DT2,99,No opinion
+Q022ET2,0,Extremely unconcerned
+Q022ET2,5,Exactly in the middle
+Q022ET2,10,Extremely concerned
+Q022ET2,88,No answer
+Q022ET2,99,No opinion
+Q023T2,888,No answer
+Q023T2,999,No opinion
+Q024AT2,888,No answer
+Q024AT2,999,No opinion
+Q024BT2,888,No answer
+Q024BT2,999,No opinion
+Q024CT2,888,No answer
+Q024CT2,999,No opinion
+Q024DT2,888,No answer
+Q024DT2,999,No opinion
+Q024ET2,888,No answer
+Q024ET2,999,No opinion
+Q024FT2,888,No answer
+Q024FT2,999,No opinion
+Q024GT2,888,No answer
+Q024GT2,999,No opinion
+Q024HT2,888,No answer
+Q024HT2,999,No opinion
+Q024IT2,888,No answer
+Q024IT2,999,No opinion
+Q025AT2,1,Agree strongly
+Q025AT2,2,Agree somewhat
+Q025AT2,3,Neither agree nor disagree
+Q025AT2,4,Disagree somewhat
+Q025AT2,5,Disagree strongly
+Q025AT2,88,No answer
+Q025AT2,99,No opinion
+Q025BT2,1,Agree strongly
+Q025BT2,2,Agree somewhat
+Q025BT2,3,Neither agree nor disagree
+Q025BT2,4,Disagree somewhat
+Q025BT2,5,Disagree strongly
+Q025BT2,88,No answer
+Q025BT2,99,No opinion
+Q025CT2,1,Agree strongly
+Q025CT2,2,Agree somewhat
+Q025CT2,3,Neither agree nor disagree
+Q025CT2,4,Disagree somewhat
+Q025CT2,5,Disagree strongly
+Q025CT2,88,No answer
+Q025CT2,99,No opinion
+Q025DT2,1,Agree strongly
+Q025DT2,2,Agree somewhat
+Q025DT2,3,Neither agree nor disagree
+Q025DT2,4,Disagree somewhat
+Q025DT2,5,Disagree strongly
+Q025DT2,88,No answer
+Q025DT2,99,No opinion
+Q026T2,1,Normal variation
+Q026T2,4,Exactly in the middle
+Q026T2,7,Lasting climate change
+Q026T2,88,No answer
+Q026T2,99,No opinion
+Q027T2,1,Human activity
+Q027T2,4,Exacly in the middle
+Q027T2,7,Natural causes
+Q027T2,88,No answer
+Q027T2,99,No opinion
+Q028T2,1,Only direct costs
+Q028T2,4,Exactly in the middle
+Q028T2,7,Indirect costs as well
+Q028T2,88,No answer
+Q028T2,99,No opinion
+Q029AT2,0,Not at all important
+Q029AT2,5,Exactly in the middle
+Q029AT2,10,Critically important
+Q029AT2,88,No answer
+Q029AT2,99,No opinion
+Q029BT2,0,Not at all important
+Q029BT2,5,Exactly in the middle
+Q029BT2,10,Critically important
+Q029BT2,88,No answer
+Q029BT2,99,No opinion
+Q029CT2,0,Not at all important
+Q029CT2,5,Exactly in the middle
+Q029CT2,10,Critically important
+Q029CT2,88,No answer
+Q029CT2,99,No opinion
+Q029DT2,0,Not at all important
+Q029DT2,5,Exactly in the middle
+Q029DT2,10,Critically important
+Q029DT2,88,No answer
+Q029DT2,99,No opinion
+Q029ET2,0,Not at all important
+Q029ET2,5,Exactly in the middle
+Q029ET2,10,Critically important
+Q029ET2,88,No answer
+Q029ET2,99,No opinion
+Q029FT2,0,Not at all important
+Q029FT2,5,Exactly in the middle
+Q029FT2,10,Critically important
+Q029FT2,88,No answer
+Q029FT2,99,No opinion
+Q029GT2,0,Not at all important
+Q029GT2,5,Exactly in the middle
+Q029GT2,10,Critically important
+Q029GT2,88,No answer
+Q029GT2,99,No opinion
+Q029HT2,0,Not at all important
+Q029HT2,5,Exactly in the middle
+Q029HT2,10,Critically important
+Q029HT2,88,No answer
+Q029HT2,99,No opinion
+Q029IT2,0,Not at all important
+Q029IT2,5,Exactly in the middle
+Q029IT2,10,Critically important
+Q029IT2,88,No answer
+Q029IT2,99,No opinion
+Q029JT2,0,Not at all important
+Q029JT2,5,Exactly in the middle
+Q029JT2,10,Critically important
+Q029JT2,88,No answer
+Q029JT2,99,No opinion
+Q029KT2,0,Not at all important
+Q029KT2,5,Exactly in the middle
+Q029KT2,10,Critically important
+Q029KT2,88,No answer
+Q029KT2,99,No opinion
+Q030T2,1,No surcharge
+Q030T2,2,About .005 cents per kwh
+Q030T2,3,About .02 cents per kwh
+Q030T2,4,About .5 cents per kwh
+Q030T2,5,About 75 cents per kwh
+Q030T2,88,No answer
+Q030T2,99,Could not say
+Q031T2,1,Almost no impact
+Q031T2,2,Reduced by 20%
+Q031T2,3,Reduced by 50%
+Q031T2,4,Reduced by 70%
+Q031T2,5,Reduced by 90%
+Q031T2,88,No answer
+Q031T2,99,Could not say
+Q032T2,1,5%
+Q032T2,2,15%
+Q032T2,3,25%
+Q032T2,4,40%
+Q032T2,88,No answer
+Q032T2,99,Could not say
+Q033T2,1,5%
+Q033T2,2,10%
+Q033T2,3,20%
+Q033T2,4,33%
+Q033T2,88,No answer
+Q033T2,99,Could not say
+Q034T2,1,15%
+Q034T2,2,33%
+Q034T2,3,45%
+Q034T2,4,60%
+Q034T2,88,No answer
+Q034T2,99,Could not say
+Q035T2,1,12%
+Q035T2,2,33%
+Q035T2,3,55%
+Q035T2,4,72%
+Q035T2,88,No answer
+Q035T2,99,Could not say
+Q036T2,1,Roughly 20% higher
+Q036T2,2,Roughly 10% higher
+Q036T2,3,About the same
+Q036T2,4,Roughly 10% lower
+Q036T2,5,Roughly 20% lower
+Q036T2,88,No answer
+Q036T2,99,Could not say
+Q037T2,1,Roughly $60
+Q037T2,2,Roughly $80
+Q037T2,3,Roughly $120
+Q037T2,4,Roughly $180
+Q037T2,88,No answer
+Q037T2,99,Could not say
+Q038T2,1,2010
+Q038T2,2,2012
+Q038T2,3,2018
+Q038T2,4,2025
+Q038T2,88,No answer
+Q038T2,99,Could not say
+Q001T3,0,Not at all
+Q001T3,5,Exactly in the middle
+Q001T3,10,A great deal
+Q001T3,88,No answer
+Q001T3,99,No opinion
+Q002T3,1,Increase efficiency
+Q002T3,4,Exactly in the middle
+Q002T3,7,Generate and buy more
+Q002T3,88,No answer
+Q002T3,99,No opinion
+Q003AT3,888,No answer
+Q003AT3,999,No opinion
+Q003BT3,888,No answer
+Q003BT3,999,No opinion
+Q003CT3,888,No answer
+Q003CT3,999,No opinion
+Q003DT3,888,No answer
+Q003DT3,999,No opinion
+Q003ET3,888,No answer
+Q003ET3,999,No opinion
+Q003FT3,888,No answer
+Q003FT3,999,No opinion
+Q003GT3,888,No answer
+Q003GT3,999,No opinion
+Q003HT3,888,No answer
+Q003HT3,999,No opinion
+Q003IT3,888,No answer
+Q003IT3,999,No opinion
+Q004T3,1,Agree strongly
+Q004T3,2,Agree somewhat
+Q004T3,3,Neither agree nor disagree
+Q004T3,4,Disagree somewhat
+Q004T3,5,Disagree strongly
+Q004T3,88,No answer
+Q004T3,99,No opinion
+Q005T3,1,Buy from other providers
+Q005T3,4,Exactly in the middle
+Q005T3,7,Build own facilities
+Q005T3,88,No answer
+Q005T3,99,No opinion
+Q006AT3,1,Agree strongly
+Q006AT3,2,Agree somewhat
+Q006AT3,3,Neither agree nor disagree
+Q006AT3,4,Disagree somewhat
+Q006AT3,5,Disagree strongly
+Q006AT3,88,No answer
+Q006AT3,99,No opinion
+Q006BT3,1,Agree strongly
+Q006BT3,2,Agree somewhat
+Q006BT3,3,Neither agree nor disagree
+Q006BT3,4,Disagree somewhat
+Q006BT3,5,Disagree strongly
+Q006BT3,88,No answer
+Q006BT3,99,No opinion
+Q006CT3,1,Agree strongly
+Q006CT3,2,Agree somewhat
+Q006CT3,3,Neither agree nor disagree
+Q006CT3,4,Disagree somewhat
+Q006CT3,5,Disagree strongly
+Q006CT3,88,No answer
+Q006CT3,99,No opinion
+Q006DT3,1,Agree strongly
+Q006DT3,2,Agree somewhat
+Q006DT3,3,Neither agree nor disagree
+Q006DT3,4,Disagree somewhat
+Q006DT3,5,Disagree strongly
+Q006DT3,88,No answer
+Q006DT3,99,No opinion
+Q006ET3,1,Agree strongly
+Q006ET3,2,Agree somewhat
+Q006ET3,3,Neither agree nor disagree
+Q006ET3,4,Disagree somewhat
+Q006ET3,5,Disagree strongly
+Q006ET3,88,No answer
+Q006ET3,99,No opinion
+Q007T3,888,No answer
+Q007T3,999,No opinion
+Q008T3,1,Entirely inside VT
+Q008T3,2,Mostly inside VT
+Q008T3,3,Half inside/half outside
+Q008T3,4,Mostly outside VT
+Q008T3,5,Entirely outside VT
+Q008T3,88,No answer
+Q008T3,99,No opinion
+Q009AT3,0,Strongly opposed
+Q009AT3,5,Exactly in the middle
+Q009AT3,10,Strongly in favor
+Q009AT3,88,No answer
+Q009AT3,99,No opinion
+Q009BT3,0,Strongly opposed
+Q009BT3,5,Exactly in the middle
+Q009BT3,10,Strongly in favor
+Q009BT3,88,No answer
+Q009BT3,99,No opinion
+Q009CT3,0,Strongly opposed
+Q009CT3,5,Exactly in the middle
+Q009CT3,10,Strongly in favor
+Q009CT3,88,No answer
+Q009CT3,99,No opinion
+Q009DT3,0,Strongly opposed
+Q009DT3,5,Exactly in the middle
+Q009DT3,10,Strongly in favor
+Q009DT3,88,No answer
+Q009DT3,99,No opinion
+Q009ET3,0,Strongly opposed
+Q009ET3,5,Exactly in the middle
+Q009ET3,10,Strongly in favor
+Q009ET3,88,No answer
+Q009ET3,99,No opinion
+Q009FT3,0,Strongly opposed
+Q009FT3,5,Exactly in the middle
+Q009FT3,10,Strongly in favor
+Q009FT3,88,No answer
+Q009FT3,99,No opinion
+Q010T3,1,Stable bills
+Q010T3,4,Exactly in the middle
+Q010T3,7,Market price
+Q010T3,88,No answer
+Q010T3,99,No opinion
+Q011T3,1,Fewer larger plants
+Q011T3,4,Exactly in the middle
+Q011T3,7,More smaller plants
+Q011T3,88,No answer
+Q011T3,99,No opinion
+Q012T3,1,Support strongly
+Q012T3,2,Support somewhat
+Q012T3,3,Neither support nor oppose
+Q012T3,4,Oppose somewhat
+Q012T3,5,Oppose strongly
+Q012T3,8,No answer
+Q012T3,9,No opinion
+Q013T3,1,Increase it
+Q013T3,2,Keep about same
+Q013T3,3,Decrease it
+Q013T3,8,No answer
+Q013T3,9,No opinion
+Q014T3,1,Increase it
+Q014T3,2,Keep about same
+Q014T3,3,Decrease it
+Q014T3,8,No answer
+Q014T3,9,No opinion
+Q015T3,8888,No answer
+Q015T3,9999,No opinion
+Q016T3,8888,No answer
+Q016T3,9999,No opinion
+Q017T3,8888,No answer
+Q017T3,9999,No opinion
+Q018T3,8888,No answer
+Q018T3,9999,No opinion
+Q019T3,1,Divide cost of renewable energy among all
+Q019T3,4,Exactly in the middle
+Q019T3,7,Buy only enough to meet demand
+Q019T3,88,No answer
+Q019T3,99,No opinion
+Q020AT3,0,Extremely unfriendly
+Q020AT3,5,Exactly in the middle
+Q020AT3,10,Extremely friendly
+Q020AT3,88,No answer
+Q020AT3,99,No opinion
+Q020BT3,0,Extremely unfriendly
+Q020BT3,5,Exactly in the middle
+Q020BT3,10,Extremely friendly
+Q020BT3,88,No answer
+Q020BT3,99,No opinion
+Q020CT3,0,Extremely unfriendly
+Q020CT3,5,Exactly in the middle
+Q020CT3,10,Extremely friendly
+Q020CT3,88,No answer
+Q020CT3,99,No opinion
+Q020DT3,0,Extremely unfriendly
+Q020DT3,5,Exactly in the middle
+Q020DT3,10,Extremely friendly
+Q020DT3,88,No answer
+Q020DT3,99,No opinion
+Q020ET3,0,Extremely unfriendly
+Q020ET3,5,Exactly in the middle
+Q020ET3,10,Extremely friendly
+Q020ET3,88,No answer
+Q020ET3,99,No opinion
+Q020FT3,0,Extremely unfriendly
+Q020FT3,5,Exactly in the middle
+Q020FT3,10,Extremely friendly
+Q020FT3,88,No answer
+Q020FT3,99,No opinion
+Q020GT3,0,Extremely unfriendly
+Q020GT3,5,Exactly in the middle
+Q020GT3,10,Extremely friendly
+Q020GT3,88,No answer
+Q020GT3,99,No opinion
+Q020HT3,0,Extremely unfriendly
+Q020HT3,5,Exactly in the middle
+Q020HT3,10,Extremely friendly
+Q020HT3,88,No answer
+Q020HT3,99,No opinion
+Q020IT3,0,Extremely unfriendly
+Q020IT3,5,Exactly in the middle
+Q020IT3,10,Extremely friendly
+Q020IT3,88,No answer
+Q020IT3,99,No opinion
+Q020JT3,0,Extremely unfriendly
+Q020JT3,5,Exactly in the middle
+Q020JT3,10,Extremely friendly
+Q020JT3,88,No answer
+Q020JT3,99,No opinion
+Q021AT3,0,Extremely unconcerned
+Q021AT3,5,Exactly in the middle
+Q021AT3,10,Extremely concerned
+Q021AT3,88,No answer
+Q021AT3,99,No opinion
+Q021BT3,0,Extremely unconcerned
+Q021BT3,5,Exactly in the middle
+Q021BT3,10,Extremely concerned
+Q021BT3,88,No answer
+Q021BT3,99,No opinion
+Q021CT3,0,Extremely unconcerned
+Q021CT3,5,Exactly in the middle
+Q021CT3,10,Extremely concerned
+Q021CT3,88,No answer
+Q021CT3,99,No opinion
+Q021DT3,0,Extremely unconcerned
+Q021DT3,5,Exactly in the middle
+Q021DT3,10,Extremely concerned
+Q021DT3,88,No answer
+Q021DT3,99,No opinion
+Q021ET3,0,Extremely unconcerned
+Q021ET3,5,Exactly in the middle
+Q021ET3,10,Extremely concerned
+Q021ET3,88,No answer
+Q021ET3,99,No opinion
+Q022AT3,0,Extremely unconcerned
+Q022AT3,5,Exactly in the middle
+Q022AT3,10,Extremely concerned
+Q022AT3,88,No answer
+Q022AT3,99,No opinion
+Q022BT3,0,Extremely unconcerned
+Q022BT3,5,Exactly in the middle
+Q022BT3,10,Extremely concerned
+Q022BT3,88,No answer
+Q022BT3,99,No opinion
+Q022CT3,0,Extremely unconcerned
+Q022CT3,5,Exactly in the middle
+Q022CT3,10,Extremely concerned
+Q022CT3,88,No answer
+Q022CT3,99,No opinion
+Q022DT3,0,Extremely unconcerned
+Q022DT3,5,Exactly in the middle
+Q022DT3,10,Extremely concerned
+Q022DT3,88,No answer
+Q022DT3,99,No opinion
+Q022ET3,0,Extremely unconcerned
+Q022ET3,5,Exactly in the middle
+Q022ET3,10,Extremely concerned
+Q022ET3,88,No answer
+Q022ET3,99,No opinion
+Q023T3,888,No answer
+Q023T3,999,No opinion
+Q024AT3,888,No answer
+Q024AT3,999,No opinion
+Q024BT3,888,No answer
+Q024BT3,999,No opinion
+Q024CT3,888,No answer
+Q024CT3,999,No opinion
+Q024DT3,888,No answer
+Q024DT3,999,No opinion
+Q024ET3,888,No answer
+Q024ET3,999,No opinion
+Q024FT3,888,No answer
+Q024FT3,999,No opinion
+Q024GT3,888,No answer
+Q024GT3,999,No opinion
+Q024HT3,888,No answer
+Q024HT3,999,No opinion
+Q024IT3,888,No answer
+Q024IT3,999,No opinion
+Q025AT3,1,Agree strongly
+Q025AT3,2,Agree somewhat
+Q025AT3,3,Neither agree nor disagree
+Q025AT3,4,Disagree somewhat
+Q025AT3,5,Disagree strongly
+Q025AT3,88,No answer
+Q025AT3,99,No opinion
+Q025BT3,1,Agree strongly
+Q025BT3,2,Agree somewhat
+Q025BT3,3,Neither agree nor disagree
+Q025BT3,4,Disagree somewhat
+Q025BT3,5,Disagree strongly
+Q025BT3,88,No answer
+Q025BT3,99,No opinion
+Q025CT3,1,Agree strongly
+Q025CT3,2,Agree somewhat
+Q025CT3,3,Neither agree nor disagree
+Q025CT3,4,Disagree somewhat
+Q025CT3,5,Disagree strongly
+Q025CT3,88,No answer
+Q025CT3,99,No opinion
+Q025DT3,1,Agree strongly
+Q025DT3,2,Agree somewhat
+Q025DT3,3,Neither agree nor disagree
+Q025DT3,4,Disagree somewhat
+Q025DT3,5,Disagree strongly
+Q025DT3,88,No answer
+Q025DT3,99,No opinion
+Q026T3,1,Normal variation
+Q026T3,4,Exactly in the middle
+Q026T3,7,Lasting climate change
+Q026T3,88,No answer
+Q026T3,99,No opinion
+Q027T3,1,Human activity
+Q027T3,4,Exacly in the middle
+Q027T3,7,Natural causes
+Q027T3,88,No answer
+Q027T3,99,No opinion
+Q028T3,1,Only direct costs
+Q028T3,4,Exactly in the middle
+Q028T3,7,Indirect costs as well
+Q028T3,88,No answer
+Q028T3,99,No opinion
+Q029AT3,0,Not at all important
+Q029AT3,5,Exactly in the middle
+Q029AT3,10,Critically important
+Q029AT3,88,No answer
+Q029AT3,99,No opinion
+Q029BT3,0,Not at all important
+Q029BT3,5,Exactly in the middle
+Q029BT3,10,Critically important
+Q029BT3,88,No answer
+Q029BT3,99,No opinion
+Q029CT3,0,Not at all important
+Q029CT3,5,Exactly in the middle
+Q029CT3,10,Critically important
+Q029CT3,88,No answer
+Q029CT3,99,No opinion
+Q029DT3,0,Not at all important
+Q029DT3,5,Exactly in the middle
+Q029DT3,10,Critically important
+Q029DT3,88,No answer
+Q029DT3,99,No opinion
+Q029ET3,0,Not at all important
+Q029ET3,5,Exactly in the middle
+Q029ET3,10,Critically important
+Q029ET3,88,No answer
+Q029ET3,99,No opinion
+Q029FT3,0,Not at all important
+Q029FT3,5,Exactly in the middle
+Q029FT3,10,Critically important
+Q029FT3,88,No answer
+Q029FT3,99,No opinion
+Q029GT3,0,Not at all important
+Q029GT3,5,Exactly in the middle
+Q029GT3,10,Critically important
+Q029GT3,88,No answer
+Q029GT3,99,No opinion
+Q029HT3,0,Not at all important
+Q029HT3,5,Exactly in the middle
+Q029HT3,10,Critically important
+Q029HT3,88,No answer
+Q029HT3,99,No opinion
+Q029IT3,0,Not at all important
+Q029IT3,5,Exactly in the middle
+Q029IT3,10,Critically important
+Q029IT3,88,No answer
+Q029IT3,99,No opinion
+Q029JT3,0,Not at all important
+Q029JT3,5,Exactly in the middle
+Q029JT3,10,Critically important
+Q029JT3,88,No answer
+Q029JT3,99,No opinion
+Q029KT3,0,Not at all important
+Q029KT3,5,Exactly in the middle
+Q029KT3,10,Critically important
+Q029KT3,88,No answer
+Q029KT3,99,No opinion
+Q030T3,1,No surcharge
+Q030T3,2,About .005 cents per kwh
+Q030T3,3,About .02 cents per kwh
+Q030T3,4,About .5 cents per kwh
+Q030T3,5,About 75 cents per kwh
+Q030T3,88,No answer
+Q030T3,99,Could not say
+Q031T3,1,Almost no impact
+Q031T3,2,Reduced by 20%
+Q031T3,3,Reduced by 50%
+Q031T3,4,Reduced by 70%
+Q031T3,5,Reduced by 90%
+Q031T3,88,No answer
+Q031T3,99,Could not say
+Q032T3,1,5%
+Q032T3,2,15%
+Q032T3,3,25%
+Q032T3,4,40%
+Q032T3,88,No answer
+Q032T3,99,Could not say
+Q033T3,1,5%
+Q033T3,2,10%
+Q033T3,3,20%
+Q033T3,4,33%
+Q033T3,88,No answer
+Q033T3,99,Could not say
+Q034T3,1,15%
+Q034T3,2,33%
+Q034T3,3,45%
+Q034T3,4,60%
+Q034T3,88,No answer
+Q034T3,99,Could not say
+Q035T3,1,12%
+Q035T3,2,33%
+Q035T3,3,55%
+Q035T3,4,72%
+Q035T3,88,No answer
+Q035T3,99,Could not say
+Q036T3,1,Roughly 20% higher
+Q036T3,2,Roughly 10% higher
+Q036T3,3,About the same
+Q036T3,4,Roughly 10% lower
+Q036T3,5,Roughly 20% lower
+Q036T3,88,No answer
+Q036T3,99,Could not say
+Q037T3,1,Roughly $60
+Q037T3,2,Roughly $80
+Q037T3,3,Roughly $120
+Q037T3,4,Roughly $180
+Q037T3,88,No answer
+Q037T3,99,Could not say
+Q038T3,1,2010
+Q038T3,2,2012
+Q038T3,3,2018
+Q038T3,4,2025
+Q038T3,88,No answer
+Q038T3,99,Could not say
+Q039AT3,0,A waste of time
+Q039AT3,10,Extremely valuable
+Q039AT3,88,No answer
+Q039AT3,99,No opinion
+Q039BT3,0,A waste of time
+Q039BT3,10,Extremely valuable
+Q039BT3,88,No answer
+Q039BT3,99,No opinion
+Q039CT3,0,A waste of time
+Q039CT3,10,Extremely valuable
+Q039CT3,88,No answer
+Q039CT3,99,No opinion
+Q040AT3,1,Agree strongly
+Q040AT3,2,Agree somewhat
+Q040AT3,3,Neither agree nor disagree
+Q040AT3,4,Disagree somewhat
+Q040AT3,5,Disagree strongly
+Q040AT3,88,No answer
+Q040AT3,99,No opinion
+Q040BT3,1,Agree strongly
+Q040BT3,2,Agree somewhat
+Q040BT3,3,Neither agree nor disagree
+Q040BT3,4,Disagree somewhat
+Q040BT3,5,Disagree strongly
+Q040BT3,88,No answer
+Q040BT3,99,No opinion
+Q040CT3,1,Agree strongly
+Q040CT3,2,Agree somewhat
+Q040CT3,3,Neither agree nor disagree
+Q040CT3,4,Disagree somewhat
+Q040CT3,5,Disagree strongly
+Q040CT3,88,No answer
+Q040CT3,99,No opinion
+Q040DT3,1,Agree strongly
+Q040DT3,2,Agree somewhat
+Q040DT3,3,Neither agree nor disagree
+Q040DT3,4,Disagree somewhat
+Q040DT3,5,Disagree strongly
+Q040DT3,88,No answer
+Q040DT3,99,No opinion
+Q040ET3,1,Agree strongly
+Q040ET3,2,Agree somewhat
+Q040ET3,3,Neither agree nor disagree
+Q040ET3,4,Disagree somewhat
+Q040ET3,5,Disagree strongly
+Q040ET3,88,No answer
+Q040ET3,99,No opinion
+Q040FT3,1,Agree strongly
+Q040FT3,2,Agree somewhat
+Q040FT3,3,Neither agree nor disagree
+Q040FT3,4,Disagree somewhat
+Q040FT3,5,Disagree strongly
+Q040FT3,88,No answer
+Q040FT3,99,No opinion
+Q040GT3,1,Agree strongly
+Q040GT3,2,Agree somewhat
+Q040GT3,3,Neither agree nor disagree
+Q040GT3,4,Disagree somewhat
+Q040GT3,5,Disagree strongly
+Q040GT3,88,No answer
+Q040GT3,99,No opinion
+Q041T3,1,Had not read or had just glanced at it
+Q041T3,2,Had read less than half of it
+Q041T3,3,Had read about half of it
+Q041T3,4,Had read more than half of it
+Q041T3,5,Had read all or nearly all of it
+Q041T3,88,No answer
+Q042T3,1,Had not read or had just glanced at it
+Q042T3,2,Had read less than half of it
+Q042T3,3,Had read about half of it
+Q042T3,4,Had read more than half of it
+Q042T3,5,Had read all or nearly all of it
+Q042T3,88,No answer
+Q043AT3,0,Not important at all
+Q043AT3,10,Extremely important
+Q043AT3,88,No answer
+Q043AT3,99,No opinion
+Q043BT3,0,Not important at all
+Q043BT3,10,Extremely important
+Q043BT3,88,No answer
+Q043BT3,99,No opinion
+Q043CT3,0,Not important at all
+Q043CT3,10,Extremely important
+Q043CT3,88,No answer
+Q043CT3,99,No opinion
+Q043DT3,0,Not important at all
+Q043DT3,10,Extremely important
+Q043DT3,88,No answer
+Q043DT3,99,No opinion
+Q043ET3,0,Not important at all
+Q043ET3,10,Extremely important
+Q043ET3,88,No answer
+Q043ET3,99,No opinion
+Q043FT3,0,Not important at all
+Q043FT3,10,Extremely important
+Q043FT3,88,No answer
+Q043FT3,99,No opinion
+Q043GT3,0,Not important at all
+Q043GT3,10,Extremely important
+Q043GT3,88,No answer
+Q043GT3,99,No opinion
+Q043HT3,0,Not important at all
+Q043HT3,10,Extremely important
+Q043HT3,88,No answer
+Q043HT3,99,No opinion
+Q043IT3,0,Not important at all
+Q043IT3,10,Extremely important
+Q043IT3,88,No answer
+Q043IT3,99,No opinion
+Q043JT3,0,Not important at all
+Q043JT3,10,Extremely important
+Q043JT3,88,No answer
+Q043JT3,99,No opinion

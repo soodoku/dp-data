@@ -1,0 +1,307 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+CASEID,double,numeric,,,F15.0,,,TRUE,Retained
+Q1,double,haven_labelled|vctrs_vctr|double,,How much do you care about how electricity is produced,F2.0,,,TRUE,Retained
+Q2,double,haven_labelled|vctrs_vctr|double,,Increasing efficiency vs buying/generating power,F1.0,,,TRUE,Retained
+Q3,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from wind,F3.0,,,TRUE,Retained
+Q4,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from oil,F3.0,,,TRUE,Retained
+Q5,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from natural gas,F3.0,,,TRUE,Retained
+Q6,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from coal,F3.0,,,TRUE,Retained
+Q7,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from nuclear,F3.0,,,TRUE,Retained
+Q8,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from solar,F3.0,,,TRUE,Retained
+Q9,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from hydro,F3.0,,,TRUE,Retained
+Q10,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from wood,F3.0,,,TRUE,Retained
+Q11,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from methane,F3.0,,,TRUE,Retained
+Q12,double,haven_labelled|vctrs_vctr|double,,Continue to buy electricity from Hydro Quebec,F1.0,,,TRUE,Retained
+Q13,double,haven_labelled|vctrs_vctr|double,,Continue to buy electricity from VT Yankee nuclear,F1.0,,,TRUE,Retained
+Q14,double,haven_labelled|vctrs_vctr|double,,Continue to buy electricity from independent producers,F1.0,,,TRUE,Retained
+Q15,double,haven_labelled|vctrs_vctr|double,,Should require minimum from renewable resources,F1.0,,,TRUE,Retained
+Q16,double,haven_labelled|vctrs_vctr|double,,What percentage mandated from renewables,F3.0,,,TRUE,Retained
+Q17,double,haven_labelled|vctrs_vctr|double,,Build facilities for wind power,F2.0,,,TRUE,Retained
+Q18,double,haven_labelled|vctrs_vctr|double,,Build facilities for natural gas,F2.0,,,TRUE,Retained
+Q19,double,haven_labelled|vctrs_vctr|double,,Build facilities for biomass,F2.0,,,TRUE,Retained
+Q20,double,haven_labelled|vctrs_vctr|double,,Build facilities for hydropower,F2.0,,,TRUE,Retained
+Q21,double,haven_labelled|vctrs_vctr|double,,Build facilities for oil,F2.0,,,TRUE,Retained
+Q22,double,haven_labelled|vctrs_vctr|double,,Build facilities for methane,F2.0,,,TRUE,Retained
+Q23,double,haven_labelled|vctrs_vctr|double,,Stable electric bills vs. market price,F1.0,,,TRUE,Retained
+Q24,double,haven_labelled|vctrs_vctr|double,,Few large plants vs. many small ones,F1.0,,,TRUE,Retained
+Q25,double,haven_labelled|vctrs_vctr|double,,Support or oppose visible wind farm,F1.0,,,TRUE,Retained
+Q26,double,haven_labelled|vctrs_vctr|double,,Increase or decrease funding for efficiency program,F1.0,,,TRUE,Retained
+Q27,double,haven_labelled|vctrs_vctr|double,,Increase or decrease electricity from renewables,F1.0,,,TRUE,Retained
+Q28,double,haven_labelled|vctrs_vctr|double,,How many dollars per month for no greenhouse gases,F4.0,,,TRUE,Retained
+Q29,double,haven_labelled|vctrs_vctr|double,,Divide costs among all vs. buy only enough to meet demand,F1.0,,,TRUE,Retained
+Q30,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is wind,F2.0,,,TRUE,Retained
+Q31,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is oil,F2.0,,,TRUE,Retained
+Q32,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is natural gas,F2.0,,,TRUE,Retained
+Q33,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is coal,F2.0,,,TRUE,Retained
+Q34,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is nuclear,F2.0,,,TRUE,Retained
+Q35,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is solar,F2.0,,,TRUE,Retained
+Q36,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is hydro,F2.0,,,TRUE,Retained
+Q37,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is wood,F2.0,,,TRUE,Retained
+Q38,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is methane,F2.0,,,TRUE,Retained
+Q39,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is energy efficiency,F2.0,,,TRUE,Retained
+Q40,double,haven_labelled|vctrs_vctr|double,,How concerned - radioactive waste,F2.0,,,TRUE,Retained
+Q41,double,haven_labelled|vctrs_vctr|double,,How concerned - greenhouse gases,F2.0,,,TRUE,Retained
+Q42,double,haven_labelled|vctrs_vctr|double,,How concerned - other air pollution,F2.0,,,TRUE,Retained
+Q43,double,haven_labelled|vctrs_vctr|double,,How concerned - damage to river habitats,F2.0,,,TRUE,Retained
+Q44,double,haven_labelled|vctrs_vctr|double,,How concerned - visual impact of wind farms,F2.0,,,TRUE,Retained
+Q45,double,haven_labelled|vctrs_vctr|double,,How much threat - coal fired plant,F2.0,,,TRUE,Retained
+Q46,double,haven_labelled|vctrs_vctr|double,,How much threat - natural gas plant,F2.0,,,TRUE,Retained
+Q47,double,haven_labelled|vctrs_vctr|double,,How much threat - utility wind farm,F2.0,,,TRUE,Retained
+Q48,double,haven_labelled|vctrs_vctr|double,,How much threat - residential wind farm,F2.0,,,TRUE,Retained
+Q49,double,haven_labelled|vctrs_vctr|double,,How much threat - transmission lines,F2.0,,,TRUE,Retained
+Q50,double,haven_labelled|vctrs_vctr|double,,What percentage reduced by 2017 through efficiency,F3.0,,,TRUE,Retained
+Q52,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - wind,F3.0,,,TRUE,Retained
+Q53,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - oil,F3.0,,,TRUE,Retained
+Q54,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - natural gas,F3.0,,,TRUE,Retained
+Q55,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - coal,F3.0,,,TRUE,Retained
+Q56,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - nuclear,F3.0,,,TRUE,Retained
+Q57,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - solar,F3.0,,,TRUE,Retained
+Q58,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - hydro,F3.0,,,TRUE,Retained
+Q59,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - wood,F3.0,,,TRUE,Retained
+Q60,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - methane,F3.0,,,TRUE,Retained
+Q61,double,haven_labelled|vctrs_vctr|double,,Cleaner energy costs more in short run,F1.0,,,TRUE,Retained
+Q62,double,haven_labelled|vctrs_vctr|double,,Cleaner energy costs more in long run,F1.0,,,TRUE,Retained
+Q63,double,haven_labelled|vctrs_vctr|double,,Normal variation vs. lasting climate change,F1.0,,,TRUE,Retained
+Q64,double,haven_labelled|vctrs_vctr|double,,Human activity or natural causes,F1.0,,,TRUE,Retained
+Q65,double,haven_labelled|vctrs_vctr|double,,Only direct costs vs. indirect costs as well,F1.0,,,TRUE,Retained
+Q66,double,haven_labelled|vctrs_vctr|double,,How important - low rates,F2.0,,,TRUE,Retained
+Q67,double,haven_labelled|vctrs_vctr|double,,How important - stable rates,F11.0,,,TRUE,Retained
+Q68,double,haven_labelled|vctrs_vctr|double,,How important - reducing foreign dependence,F2.0,,,TRUE,Retained
+Q69,double,haven_labelled|vctrs_vctr|double,,How important - minimizing air pollution,F2.0,,,TRUE,Retained
+Q70,double,haven_labelled|vctrs_vctr|double,,How important - using power produced in Vermont,F2.0,,,TRUE,Retained
+Q71,double,haven_labelled|vctrs_vctr|double,,How important - keeping scenic beauty,F2.0,,,TRUE,Retained
+Q72,double,haven_labelled|vctrs_vctr|double,,How important - reducing emissions,F2.0,,,TRUE,Retained
+Q73,double,haven_labelled|vctrs_vctr|double,,How important - reliable supply,F2.0,,,TRUE,Retained
+Q74,double,haven_labelled|vctrs_vctr|double,,How important - reducing radioactive wastes,F2.0,,,TRUE,Retained
+Q75,double,haven_labelled|vctrs_vctr|double,,How important - creating jobs in Vermont,F1.0,,,TRUE,Retained
+Q76,double,haven_labelled|vctrs_vctr|double,,How important - resources that will never be used up,F2.0,,,TRUE,Retained
+Q77,double,haven_labelled|vctrs_vctr|double,,What is the surcharge on VT electric bill,F1.0,,,TRUE,Retained
+Q78,double,haven_labelled|vctrs_vctr|double,,Efficiency program impact,F1.0,,,TRUE,Retained
+Q79,double,haven_labelled|vctrs_vctr|double,,What percentage from renewables,F1.0,,,TRUE,Retained
+Q80,double,haven_labelled|vctrs_vctr|double,,What percentage from Yankee nuclear plant,F1.0,,,TRUE,Retained
+Q81,double,haven_labelled|vctrs_vctr|double,,What percentage from Hydro Quebec,F1.0,,,TRUE,Retained
+Q82,double,haven_labelled|vctrs_vctr|double,,What percentage from within Vermont,F1.0,,,TRUE,Retained
+Q83,double,haven_labelled|vctrs_vctr|double,,Rates compared to rest of New England,F1.0,,,TRUE,Retained
+Q84,double,haven_labelled|vctrs_vctr|double,,Average bill for Vermonter,F1.0,,,TRUE,Retained
+Q85,double,haven_labelled|vctrs_vctr|double,,Contract with Yankee Nuclear expires,F1.0,,,TRUE,Retained
+Q86,double,haven_labelled|vctrs_vctr|double,,Education,F2.0,,,TRUE,Retained
+Q87,double,haven_labelled|vctrs_vctr|double,,Age,F2.0,,,TRUE,Retained
+Q88,double,haven_labelled|vctrs_vctr|double,,Employment,F1.0,,,TRUE,Retained
+Q89,double,haven_labelled|vctrs_vctr|double,,Describe employment,F1.0,,,TRUE,Retained
+Q90,double,haven_labelled|vctrs_vctr|double,,Monthly electric bill,F4.0,,,TRUE,Retained
+Q91,double,haven_labelled|vctrs_vctr|double,,Household income,F1.0,,,TRUE,Retained
+Q92,double,haven_labelled|vctrs_vctr|double,,Ideology,F1.0,,,TRUE,Retained
+Q93,double,haven_labelled|vctrs_vctr|double,,Political affiliation,F1.0,,,TRUE,Retained
+Q94,double,haven_labelled|vctrs_vctr|double,,Gender,F1.0,,,TRUE,Retained
+SHOUSE,double,haven_labelled|vctrs_vctr|double,,Survey House,F6.0,,,TRUE,Retained
+PART,double,haven_labelled|vctrs_vctr|double,,Participated in deliberations,F8.0,,,TRUE,Retained
+LONG,double,haven_labelled|vctrs_vctr|double,,Long form,F8.0,,,TRUE,Retained
+TYPE,double,haven_labelled|vctrs_vctr|double,,Type of respondent,F8.0,,,TRUE,Retained
+Q001T2,double,haven_labelled|vctrs_vctr|double,,How much do you care about how electricity is produced (T2),F11.0,,,TRUE,Retained
+Q002T2,double,haven_labelled|vctrs_vctr|double,,Increasing efficiency vs buying/generating power (T2),F11.0,,,TRUE,Retained
+Q003AT2,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from wind (T2),F11.0,,,TRUE,Retained
+Q003BT2,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from oil (T2),F11.0,,,TRUE,Retained
+Q003CT2,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from natural gas (T2),F11.0,,,TRUE,Retained
+Q003DT2,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from coal (T2),F11.0,,,TRUE,Retained
+Q003ET2,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from nuclear (T2),F11.0,,,TRUE,Retained
+Q003FT2,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from solar (T2),F11.0,,,TRUE,Retained
+Q003GT2,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from hydro (T2),F11.0,,,TRUE,Retained
+Q003HT2,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from wood (T2),F11.0,,,TRUE,Retained
+Q003IT2,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from methane (T2),F11.0,,,TRUE,Retained
+Q004T2,double,haven_labelled|vctrs_vctr|double,,People who disagree may have good reasons (T2),F15.0,,,TRUE,Retained
+Q005T2,double,haven_labelled|vctrs_vctr|double,,Buy from other providers vs. build own facilities (T2),F11.0,,,TRUE,Retained
+Q006AT2,double,haven_labelled|vctrs_vctr|double,,Continue to buy electricity from Hydro Quebec (T2),F11.0,,,TRUE,Retained
+Q006BT2,double,haven_labelled|vctrs_vctr|double,,Continue to buy electricity from VT Yankee nuclear (T2),F11.0,,,TRUE,Retained
+Q006CT2,double,haven_labelled|vctrs_vctr|double,,Continue to buy electricity from independent producers (T2),F11.0,,,TRUE,Retained
+Q006DT2,double,haven_labelled|vctrs_vctr|double,,Higher/lower costs should mean higher/lower prices (T2),F11.0,,,TRUE,Retained
+Q006ET2,double,haven_labelled|vctrs_vctr|double,,Should require minimum from renewable resources (T2),F11.0,,,TRUE,Retained
+Q007T2,double,haven_labelled|vctrs_vctr|double,,What percentage mandated from renewables (T2),F11.0,,,TRUE,Retained
+Q008T2,double,haven_labelled|vctrs_vctr|double,,Produce electricity entirely in VT (T2),F15.0,,,TRUE,Retained
+Q009AT2,double,haven_labelled|vctrs_vctr|double,,Build facilities for wind power in VT (T2),F11.0,,,TRUE,Retained
+Q009BT2,double,haven_labelled|vctrs_vctr|double,,Build facilities for natural gas in VT (T2),F11.0,,,TRUE,Retained
+Q009CT2,double,haven_labelled|vctrs_vctr|double,,Build facilities for biomass in VT (T2),F11.0,,,TRUE,Retained
+Q009DT2,double,haven_labelled|vctrs_vctr|double,,Build facilities for hydropower in VT (T2),F11.0,,,TRUE,Retained
+Q009ET2,double,haven_labelled|vctrs_vctr|double,,Build facilities for oil in VT in VT (T2),F11.0,,,TRUE,Retained
+Q009FT2,double,haven_labelled|vctrs_vctr|double,,Build facilities for methane in VT (T2),F11.0,,,TRUE,Retained
+Q010T2,double,haven_labelled|vctrs_vctr|double,,Stable electric bills vs. market price (T2),F11.0,,,TRUE,Retained
+Q011T2,double,haven_labelled|vctrs_vctr|double,,Few large plants vs. many small ones (T2),F11.0,,,TRUE,Retained
+Q012T2,double,haven_labelled|vctrs_vctr|double,,Support or oppose visible wind farm (T2),F11.0,,,TRUE,Retained
+Q013T2,double,haven_labelled|vctrs_vctr|double,,Increase or decrease funding for efficiency program (T2),F11.0,,,TRUE,Retained
+Q014T2,double,haven_labelled|vctrs_vctr|double,,Increase or decrease electricity from renewables (T2),F11.0,,,TRUE,Retained
+Q015T2,double,haven_labelled|vctrs_vctr|double,,How many dollars per month for no greenhouse gases (T2),F11.0,,,TRUE,Retained
+Q016T2,double,haven_labelled|vctrs_vctr|double,,How many dollars per month for only wind from HQ (T2),F11.0,,,TRUE,Retained
+Q017T2,double,haven_labelled|vctrs_vctr|double,,How many dollars per month for only in-state electricity (T2),F11.0,,,TRUE,Retained
+Q018T2,double,haven_labelled|vctrs_vctr|double,,How many dollars per month for decentralized plants (T2),F11.0,,,TRUE,Retained
+Q019T2,double,haven_labelled|vctrs_vctr|double,,Divide costs among all vs. buy only enough to meet demand (T2),F15.0,,,TRUE,Retained
+Q020AT2,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is wind (T2),F11.0,,,TRUE,Retained
+Q020BT2,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is oil (T2),F11.0,,,TRUE,Retained
+Q020CT2,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is natural gas (T2),F11.0,,,TRUE,Retained
+Q020DT2,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is coal (T2),F11.0,,,TRUE,Retained
+Q020ET2,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is nuclear (T2),F11.0,,,TRUE,Retained
+Q020FT2,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is solar (T2),F11.0,,,TRUE,Retained
+Q020GT2,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is hydro (T2),F11.0,,,TRUE,Retained
+Q020HT2,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is wood (T2),F11.0,,,TRUE,Retained
+Q020IT2,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is methane (T2),F11.0,,,TRUE,Retained
+Q020JT2,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is energy efficiency (T2),F11.0,,,TRUE,Retained
+Q021AT2,double,haven_labelled|vctrs_vctr|double,,How concerned - radioactive waste (T2),F11.0,,,TRUE,Retained
+Q021BT2,double,haven_labelled|vctrs_vctr|double,,How concerned - greenhouse gases (T2),F11.0,,,TRUE,Retained
+Q021CT2,double,haven_labelled|vctrs_vctr|double,,How concerned - other air pollution (T2),F11.0,,,TRUE,Retained
+Q021DT2,double,haven_labelled|vctrs_vctr|double,,How concerned - damage to river habitats (T2),F11.0,,,TRUE,Retained
+Q021ET2,double,haven_labelled|vctrs_vctr|double,,How concerned - visual impact of wind farms (T2),F11.0,,,TRUE,Retained
+Q022AT2,double,haven_labelled|vctrs_vctr|double,,Threat to scenic beauty - coal fired plant (T2),F11.0,,,TRUE,Retained
+Q022BT2,double,haven_labelled|vctrs_vctr|double,,Threat to scenic beauty - natural gas plant (T2),F11.0,,,TRUE,Retained
+Q022CT2,double,haven_labelled|vctrs_vctr|double,,Threat to scenic beauty - utility wind farm (T2),F11.0,,,TRUE,Retained
+Q022DT2,double,haven_labelled|vctrs_vctr|double,,Threat to scenic beauty - residential wind farm (T2),F11.0,,,TRUE,Retained
+Q022ET2,double,haven_labelled|vctrs_vctr|double,,Threat to scenic beauty - transmission lines (T2),F11.0,,,TRUE,Retained
+Q023T2,double,haven_labelled|vctrs_vctr|double,,What percentage reduced by 2017 through efficiency (T2),F11.0,,,TRUE,Retained
+Q024AT2,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - wind (T2),F11.0,,,TRUE,Retained
+Q024BT2,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - oil (T2),F11.0,,,TRUE,Retained
+Q024CT2,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - natural gas (T2),F11.0,,,TRUE,Retained
+Q024DT2,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - coal (T2),F11.0,,,TRUE,Retained
+Q024ET2,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - nuclear (T2),F11.0,,,TRUE,Retained
+Q024FT2,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - solar (T2),F11.0,,,TRUE,Retained
+Q024GT2,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - hydro (T2),F11.0,,,TRUE,Retained
+Q024HT2,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - wood (T2),F11.0,,,TRUE,Retained
+Q024IT2,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - methane (T2),F11.0,,,TRUE,Retained
+Q025AT2,double,haven_labelled|vctrs_vctr|double,,Cleaner energy costs more in short run (T2),F11.0,,,TRUE,Retained
+Q025BT2,double,haven_labelled|vctrs_vctr|double,,Cleaner energy costs more in long run (T2),F11.0,,,TRUE,Retained
+Q025CT2,double,haven_labelled|vctrs_vctr|double,,"Non-HQ power replaced by gas, coal, nuclear, or oil (T2)",F11.0,,,TRUE,Retained
+Q025DT2,double,haven_labelled|vctrs_vctr|double,,"Non-VT Yankee power replaced by gas, coal, nuclear, or oil (T2)",F11.0,,,TRUE,Retained
+Q026T2,double,haven_labelled|vctrs_vctr|double,,Normal variation vs. lasting climate change (T2),F11.0,,,TRUE,Retained
+Q027T2,double,haven_labelled|vctrs_vctr|double,,Human activity vs. natural causes (T2),F11.0,,,TRUE,Retained
+Q028T2,double,haven_labelled|vctrs_vctr|double,,Only direct costs vs. indirect costs as well (T2),F11.0,,,TRUE,Retained
+Q029AT2,double,haven_labelled|vctrs_vctr|double,,How important - low rates (T2),F11.0,,,TRUE,Retained
+Q029BT2,double,haven_labelled|vctrs_vctr|double,,How important - stable rates (T2),F11.0,,,TRUE,Retained
+Q029CT2,double,haven_labelled|vctrs_vctr|double,,How important - reducing foreign dependence (T2),F11.0,,,TRUE,Retained
+Q029DT2,double,haven_labelled|vctrs_vctr|double,,How important - minimizing air pollution (T2),F11.0,,,TRUE,Retained
+Q029ET2,double,haven_labelled|vctrs_vctr|double,,How important - using power produced in Vermont (T2),F11.0,,,TRUE,Retained
+Q029FT2,double,haven_labelled|vctrs_vctr|double,,How important - keeping scenic beauty (T2),F11.0,,,TRUE,Retained
+Q029GT2,double,haven_labelled|vctrs_vctr|double,,How important - reducing GHG emissions (T2),F11.0,,,TRUE,Retained
+Q029HT2,double,haven_labelled|vctrs_vctr|double,,How important - reliable supply (T2),F11.0,,,TRUE,Retained
+Q029IT2,double,haven_labelled|vctrs_vctr|double,,How important - reducing radioactive wastes (T2),F11.0,,,TRUE,Retained
+Q029JT2,double,haven_labelled|vctrs_vctr|double,,How important - creating jobs in Vermont (T2),F11.0,,,TRUE,Retained
+Q029KT2,double,haven_labelled|vctrs_vctr|double,,How important - resources that will never be used up (T2),F11.0,,,TRUE,Retained
+Q030T2,double,haven_labelled|vctrs_vctr|double,,What is the surcharge on VT electric bill (T2),F11.0,,,TRUE,Retained
+Q031T2,double,haven_labelled|vctrs_vctr|double,,Efficiency program impact (T2),F11.0,,,TRUE,Retained
+Q032T2,double,haven_labelled|vctrs_vctr|double,,What percentage from renewables (T2),F11.0,,,TRUE,Retained
+Q033T2,double,haven_labelled|vctrs_vctr|double,,What percentage from Yankee nuclear plant (T2),F11.0,,,TRUE,Retained
+Q034T2,double,haven_labelled|vctrs_vctr|double,,What percentage from Hydro Quebec (T2),F11.0,,,TRUE,Retained
+Q035T2,double,haven_labelled|vctrs_vctr|double,,What percentage from within Vermont (T2),F11.0,,,TRUE,Retained
+Q036T2,double,haven_labelled|vctrs_vctr|double,,Rates compared to rest of New England (T2),F11.0,,,TRUE,Retained
+Q037T2,double,haven_labelled|vctrs_vctr|double,,Average bill for Vermonter (T2),F11.0,,,TRUE,Retained
+Q038T2,double,haven_labelled|vctrs_vctr|double,,Contract with Yankee Nuclear expires (T2),F11.0,,,TRUE,Retained
+Q001T3,double,haven_labelled|vctrs_vctr|double,,How much do you care about how electricity is produced (T3),F11.0,,,TRUE,Retained
+Q002T3,double,haven_labelled|vctrs_vctr|double,,Increasing efficiency vs buying/generating power (T3),F11.0,,,TRUE,Retained
+Q003AT3,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from wind (T3),F11.0,,,TRUE,Retained
+Q003BT3,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from oil (T3),F11.0,,,TRUE,Retained
+Q003CT3,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from natural gas (T3),F11.0,,,TRUE,Retained
+Q003DT3,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from coal (T3),F11.0,,,TRUE,Retained
+Q003ET3,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from nuclear (T3),F11.0,,,TRUE,Retained
+Q003FT3,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from solar (T3),F11.0,,,TRUE,Retained
+Q003GT3,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from hydro (T3),F11.0,,,TRUE,Retained
+Q003HT3,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from wood (T3),F11.0,,,TRUE,Retained
+Q003IT3,double,haven_labelled|vctrs_vctr|double,,What percentage would you like from methane (T3),F11.0,,,TRUE,Retained
+Q004T3,double,haven_labelled|vctrs_vctr|double,,People who disagree may have good reasons (T3),F11.0,,,TRUE,Retained
+Q005T3,double,haven_labelled|vctrs_vctr|double,,Buy from other providers vs. build own facilities (T3),F11.0,,,TRUE,Retained
+Q006AT3,double,haven_labelled|vctrs_vctr|double,,Continue to buy electricity from Hydro Quebec (T3),F11.0,,,TRUE,Retained
+Q006BT3,double,haven_labelled|vctrs_vctr|double,,Continue to buy electricity from VT Yankee nuclear (T3),F11.0,,,TRUE,Retained
+Q006CT3,double,haven_labelled|vctrs_vctr|double,,Continue to buy electricity from independent producers (T3),F11.0,,,TRUE,Retained
+Q006DT3,double,haven_labelled|vctrs_vctr|double,,Higher/lower costs should mean higher/lower prices (T3),F11.0,,,TRUE,Retained
+Q006ET3,double,haven_labelled|vctrs_vctr|double,,Should require minimum from renewable resources (T3),F11.0,,,TRUE,Retained
+Q007T3,double,haven_labelled|vctrs_vctr|double,,What percentage mandated from renewables (T3),F11.0,,,TRUE,Retained
+Q008T3,double,haven_labelled|vctrs_vctr|double,,Produce electricity entirely in VT (T3),F11.0,,,TRUE,Retained
+Q009AT3,double,haven_labelled|vctrs_vctr|double,,Build facilities for wind power in VT (T3),F11.0,,,TRUE,Retained
+Q009BT3,double,haven_labelled|vctrs_vctr|double,,Build facilities for natural gas in VT (T3),F11.0,,,TRUE,Retained
+Q009CT3,double,haven_labelled|vctrs_vctr|double,,Build facilities for biomass in VT (T3),F11.0,,,TRUE,Retained
+Q009DT3,double,haven_labelled|vctrs_vctr|double,,Build facilities for hydropower in VT (T3),F11.0,,,TRUE,Retained
+Q009ET3,double,haven_labelled|vctrs_vctr|double,,Build facilities for oil in VT in VT (T3),F11.0,,,TRUE,Retained
+Q009FT3,double,haven_labelled|vctrs_vctr|double,,Build facilities for methane in VT (T3),F11.0,,,TRUE,Retained
+Q010T3,double,haven_labelled|vctrs_vctr|double,,Stable electric bills vs. market price (T3),F11.0,,,TRUE,Retained
+Q011T3,double,haven_labelled|vctrs_vctr|double,,Few large plants vs. many small ones (T3),F11.0,,,TRUE,Retained
+Q012T3,double,haven_labelled|vctrs_vctr|double,,Support or oppose visible wind farm (T3),F11.0,,,TRUE,Retained
+Q013T3,double,haven_labelled|vctrs_vctr|double,,Increase or decrease funding for efficiency program (T3),F11.0,,,TRUE,Retained
+Q014T3,double,haven_labelled|vctrs_vctr|double,,Increase or decrease electricity from renewables (T3),F11.0,,,TRUE,Retained
+Q015T3,double,haven_labelled|vctrs_vctr|double,,How many dollars per month for no greenhouse gases (T3),F11.0,,,TRUE,Retained
+Q016T3,double,haven_labelled|vctrs_vctr|double,,How many dollars per month for only wind from HQ (T3),F11.0,,,TRUE,Retained
+Q017T3,double,haven_labelled|vctrs_vctr|double,,How many dollars per month for only in-state electricity (T3),F11.0,,,TRUE,Retained
+Q018T3,double,haven_labelled|vctrs_vctr|double,,How many dollars per month for decentralized plants (T3),F11.0,,,TRUE,Retained
+Q019T3,double,haven_labelled|vctrs_vctr|double,,Divide costs among all vs. buy only enough to meet demand (T3),F11.0,,,TRUE,Retained
+Q020AT3,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is wind (T3),F11.0,,,TRUE,Retained
+Q020BT3,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is oil (T3),F11.0,,,TRUE,Retained
+Q020CT3,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is natural gas (T3),F11.0,,,TRUE,Retained
+Q020DT3,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is coal (T3),F11.0,,,TRUE,Retained
+Q020ET3,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is nuclear (T3),F11.0,,,TRUE,Retained
+Q020FT3,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is solar (T3),F11.0,,,TRUE,Retained
+Q020GT3,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is hydro (T3),F11.0,,,TRUE,Retained
+Q020HT3,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is wood (T3),F11.0,,,TRUE,Retained
+Q020IT3,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is methane (T3),F11.0,,,TRUE,Retained
+Q020JT3,double,haven_labelled|vctrs_vctr|double,,How environmentally friendly is energy efficiency (T3),F11.0,,,TRUE,Retained
+Q021AT3,double,haven_labelled|vctrs_vctr|double,,How concerned - radioactive waste (T3),F11.0,,,TRUE,Retained
+Q021BT3,double,haven_labelled|vctrs_vctr|double,,How concerned - greenhouse gases (T3),F11.0,,,TRUE,Retained
+Q021CT3,double,haven_labelled|vctrs_vctr|double,,How concerned - other air pollution (T3),F11.0,,,TRUE,Retained
+Q021DT3,double,haven_labelled|vctrs_vctr|double,,How concerned - damage to river habitats (T3),F11.0,,,TRUE,Retained
+Q021ET3,double,haven_labelled|vctrs_vctr|double,,How concerned - visual impact of wind farms (T3),F11.0,,,TRUE,Retained
+Q022AT3,double,haven_labelled|vctrs_vctr|double,,Threat to scenic beauty - coal fired plant (T3),F11.0,,,TRUE,Retained
+Q022BT3,double,haven_labelled|vctrs_vctr|double,,Threat to scenic beauty - natural gas plant (T3),F11.0,,,TRUE,Retained
+Q022CT3,double,haven_labelled|vctrs_vctr|double,,Threat to scenic beauty - utility wind farm (T3),F11.0,,,TRUE,Retained
+Q022DT3,double,haven_labelled|vctrs_vctr|double,,Threat to scenic beauty - residential wind farm (T3),F11.0,,,TRUE,Retained
+Q022ET3,double,haven_labelled|vctrs_vctr|double,,Threat to scenic beauty - transmission lines (T3),F11.0,,,TRUE,Retained
+Q023T3,double,haven_labelled|vctrs_vctr|double,,What percentage reduced by 2017 through efficiency (T3),F11.0,,,TRUE,Retained
+Q024AT3,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - wind (T3),F11.0,,,TRUE,Retained
+Q024BT3,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - oil (T3),F11.0,,,TRUE,Retained
+Q024CT3,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - natural gas (T3),F11.0,,,TRUE,Retained
+Q024DT3,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - coal (T3),F11.0,,,TRUE,Retained
+Q024ET3,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - nuclear (T3),F11.0,,,TRUE,Retained
+Q024FT3,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - solar (T3),F11.0,,,TRUE,Retained
+Q024GT3,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - hydro (T3),F11.0,,,TRUE,Retained
+Q024HT3,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - wood (T3),F11.0,,,TRUE,Retained
+Q024IT3,double,haven_labelled|vctrs_vctr|double,,Percentage possible by 2017 - methane (T3),F11.0,,,TRUE,Retained
+Q025AT3,double,haven_labelled|vctrs_vctr|double,,Cleaner energy costs more in short run (T3),F11.0,,,TRUE,Retained
+Q025BT3,double,haven_labelled|vctrs_vctr|double,,Cleaner energy costs more in long run (T3),F11.0,,,TRUE,Retained
+Q025CT3,double,haven_labelled|vctrs_vctr|double,,"Non-HQ power replaced by gas, coal, nuclear, or oil (T3)",F11.0,,,TRUE,Retained
+Q025DT3,double,haven_labelled|vctrs_vctr|double,,"Non-VT Yankee power replaced by gas, coal, nuclear, or oil (T3)",F11.0,,,TRUE,Retained
+Q026T3,double,haven_labelled|vctrs_vctr|double,,Normal variation vs. lasting climate change (T3),F11.0,,,TRUE,Retained
+Q027T3,double,haven_labelled|vctrs_vctr|double,,Human activity vs. natural causes (T3),F11.0,,,TRUE,Retained
+Q028T3,double,haven_labelled|vctrs_vctr|double,,Only direct costs vs. indirect costs as well (T3),F11.0,,,TRUE,Retained
+Q029AT3,double,haven_labelled|vctrs_vctr|double,,How important - low rates (T3),F11.0,,,TRUE,Retained
+Q029BT3,double,haven_labelled|vctrs_vctr|double,,How important - stable rates (T3),F11.0,,,TRUE,Retained
+Q029CT3,double,haven_labelled|vctrs_vctr|double,,How important - reducing foreign dependence (T3),F11.0,,,TRUE,Retained
+Q029DT3,double,haven_labelled|vctrs_vctr|double,,How important - minimizing air pollution (T3),F11.0,,,TRUE,Retained
+Q029ET3,double,haven_labelled|vctrs_vctr|double,,How important - using power produced in Vermont (T3),F11.0,,,TRUE,Retained
+Q029FT3,double,haven_labelled|vctrs_vctr|double,,How important - keeping scenic beauty (T3),F11.0,,,TRUE,Retained
+Q029GT3,double,haven_labelled|vctrs_vctr|double,,How important - reducing GHG emissions (T3),F11.0,,,TRUE,Retained
+Q029HT3,double,haven_labelled|vctrs_vctr|double,,How important - reliable supply (T3),F11.0,,,TRUE,Retained
+Q029IT3,double,haven_labelled|vctrs_vctr|double,,How important - reducing radioactive wastes (T3),F11.0,,,TRUE,Retained
+Q029JT3,double,haven_labelled|vctrs_vctr|double,,How important - creating jobs in Vermont (T3),F11.0,,,TRUE,Retained
+Q029KT3,double,haven_labelled|vctrs_vctr|double,,How important - resources that will never be used up (T3),F11.0,,,TRUE,Retained
+Q030T3,double,haven_labelled|vctrs_vctr|double,,What is the surcharge on VT electric bill (T3),F11.0,,,TRUE,Retained
+Q031T3,double,haven_labelled|vctrs_vctr|double,,Efficiency program impact (T3),F11.0,,,TRUE,Retained
+Q032T3,double,haven_labelled|vctrs_vctr|double,,What percentage from renewables (T3),F11.0,,,TRUE,Retained
+Q033T3,double,haven_labelled|vctrs_vctr|double,,What percentage from Yankee nuclear plant (T3),F11.0,,,TRUE,Retained
+Q034T3,double,haven_labelled|vctrs_vctr|double,,What percentage from Hydro Quebec (T3),F11.0,,,TRUE,Retained
+Q035T3,double,haven_labelled|vctrs_vctr|double,,What percentage from within Vermont (T3),F11.0,,,TRUE,Retained
+Q036T3,double,haven_labelled|vctrs_vctr|double,,Rates compared to rest of New England (T3),F11.0,,,TRUE,Retained
+Q037T3,double,haven_labelled|vctrs_vctr|double,,Average bill for Vermonter (T3),F11.0,,,TRUE,Retained
+Q038T3,double,haven_labelled|vctrs_vctr|double,,Contract with Yankee Nuclear expires (T3),F11.0,,,TRUE,Retained
+Q039AT3,double,haven_labelled|vctrs_vctr|double,,Valuable - small group discussions,F11.0,,,TRUE,Retained
+Q039BT3,double,haven_labelled|vctrs_vctr|double,,Valuable - talking outside formal discussions,F11.0,,,TRUE,Retained
+Q039CT3,double,haven_labelled|vctrs_vctr|double,,Valuable - event as a whole,F11.0,,,TRUE,Retained
+Q040AT3,double,haven_labelled|vctrs_vctr|double,,Moderator allowed equal participation,F11.0,,,TRUE,Retained
+Q040BT3,double,haven_labelled|vctrs_vctr|double,,Small group members participated equally,F11.0,,,TRUE,Retained
+Q040CT3,double,haven_labelled|vctrs_vctr|double,,Moderator influenced group with own views,F11.0,,,TRUE,Retained
+Q040DT3,double,haven_labelled|vctrs_vctr|double,,Moderator ensured consideration of opposing arguments,F11.0,,,TRUE,Retained
+Q040ET3,double,haven_labelled|vctrs_vctr|double,,Important aspects covered,F11.0,,,TRUE,Retained
+Q040FT3,double,haven_labelled|vctrs_vctr|double,,I learned a lot about people different from me,F11.0,,,TRUE,Retained
+Q040GT3,double,haven_labelled|vctrs_vctr|double,,Briefing document fair,F11.0,,,TRUE,Retained
+Q041T3,double,haven_labelled|vctrs_vctr|double,,How much read before deliberations,F11.0,,,TRUE,Retained
+Q042T3,double,haven_labelled|vctrs_vctr|double,,How much read at end of deliberations,F11.0,,,TRUE,Retained
+Q043AT3,double,haven_labelled|vctrs_vctr|double,,Motive - chance to discuss important topic,F11.0,,,TRUE,Retained
+Q043BT3,double,haven_labelled|vctrs_vctr|double,,Motive - meeting people from across state,F11.0,,,TRUE,Retained
+Q043CT3,double,haven_labelled|vctrs_vctr|double,,Motive - mention in newspaper,F11.0,,,TRUE,Retained
+Q043DT3,double,haven_labelled|vctrs_vctr|double,,Motive - being seen on TV,F11.0,,,TRUE,Retained
+Q043ET3,double,haven_labelled|vctrs_vctr|double,,Motive - questioning experts,F11.0,,,TRUE,Retained
+Q043FT3,double,haven_labelled|vctrs_vctr|double,,Motive - honorarium,F11.0,,,TRUE,Retained
+Q043GT3,double,haven_labelled|vctrs_vctr|double,,Motive - hotel weekend,F11.0,,,TRUE,Retained
+Q043HT3,double,haven_labelled|vctrs_vctr|double,,Motive - weekend in Burlington,F11.0,,,TRUE,Retained
+Q043IT3,double,haven_labelled|vctrs_vctr|double,,Motive - making your voice heard,F11.0,,,TRUE,Retained
+Q043JT3,double,haven_labelled|vctrs_vctr|double,,Motive - chance to affect energy policy,F11.0,,,TRUE,Retained
