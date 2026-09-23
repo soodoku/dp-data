@@ -1,0 +1,359 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+rownames,double,numeric,float64,,%8.0g,,,TRUE,Retained
+postit,double,numeric,float64,,%8.0g,,,TRUE,Retained
+idnum,double,numeric,float64,,%12.0g,,,TRUE,Retained
+q1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q4,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q5,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q6,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q7,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q8,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q9,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q10,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q11a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q11b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q11c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q11d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q12a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q12b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q12c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q12d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q12e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q13a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q13b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q13c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q13d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q13e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q13f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q14,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q15,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q16,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q17,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q18,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q19,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q20,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q21,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q22,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q23,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q24,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q25,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q26,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q26oth,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+q27by,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q27aa,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q27grp,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q28,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q29,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q30,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q31,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q32,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q32oth,character,character,,,%32s,,,FALSE,Excluded; see source_field_exclusions
+q33,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q34,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q35,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q36,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q37,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q38,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q39,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q40,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q40oth,character,character,,,%23s,,,FALSE,Excluded; see source_field_exclusions
+q41,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q42,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q42oth,character,character,,,%11s,,,FALSE,Excluded; see source_field_exclusions
+q43,double,numeric,float64,,%8.0g,,,TRUE,Retained
+q44,double,numeric,float64,,%8.0g,,,TRUE,Retained
+city,character,character,,,%19s,,,FALSE,Excluded; see source_field_exclusions
+st,character,character,,,%2s,,,FALSE,Excluded; see source_field_exclusions
+zipcode,character,character,,,%5s,,,FALSE,Excluded; see source_field_exclusions
+weight,double,numeric,float64,,%9.0g,,,TRUE,Retained
+fname,character,character,,,%12s,,,FALSE,Excluded; see source_field_exclusions
+lname,character,character,,,%18s,,,FALSE,Excluded; see source_field_exclusions
+variabl0,character,character,,,%32s,,,FALSE,Excluded; see source_field_exclusions
+phone1,character,character,,,%12s,,,FALSE,Excluded; see source_field_exclusions
+phone2,character,character,,,%12s,,,FALSE,Excluded; see source_field_exclusions
+email,character,character,,,%32s,,,FALSE,Excluded; see source_field_exclusions
+coder_initials_x,character,character,,,%3s,,,FALSE,Excluded; see source_field_exclusions
+group_number,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3filter_early,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3filter_bad,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q4,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q5,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q6,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q7,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q8,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q9,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q10,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q11,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q12,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q13,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q14,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q15a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q15b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q15c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q15d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q15e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q16,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t3q17,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t3q18,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t3q19,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t3q20a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q20b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q20c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q20d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q20e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q20f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q21,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q22,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q23h,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q24a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q24b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q24c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q24d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q24e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q24f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q24g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q24h,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q24i,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25h,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25i,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25j,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25k,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25l,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25m,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25n,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25o,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25p,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25q,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25s,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q25t,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q26a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q26b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q26c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q27a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q27b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q27c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q27d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q27e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q27f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q28a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q28b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q28c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q28d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q29,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q30,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q31,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q32a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q32b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q32c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q32d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q32e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q32f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q32g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q33a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q33b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q33c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q33d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q33e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q33f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q34a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q34b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q34c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q34d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q34e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q34f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q34g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q34h,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q34i,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q34j,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q34k,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q34l,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q34m,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q35a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q35b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q35c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q35d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q36,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q37,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q38,character,character,string,,%16s,,,TRUE,Retained
+t3q39,character,character,string,,%16s,,,TRUE,Retained
+t3q40,character,character,string,,%1s,,,TRUE,Retained
+t3q41,character,character,string,,%1s,,,TRUE,Retained
+t3q42,character,character,string,,%1s,,,TRUE,Retained
+t3q43a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q43b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q43c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q43d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q44a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q44b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q44c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q44d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q44e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q44f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q44g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q44h,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q45,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t3q46,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t3q47,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t3q48,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t3q49a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q49b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q49c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q49d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q49e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q49f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q49g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q49h,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t3q49oth,character,character,,,%144s,,,FALSE,Excluded; see source_field_exclusions
+coder_initials_y,character,character,,,%3s,,,FALSE,Excluded; see source_field_exclusions
+t2filter_late,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t2q1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q4,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q5,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q6,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q7,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q8,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q9,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q10,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q11,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q12,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q13,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q14,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q15a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q15b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q15c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q15d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q15e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q16,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t2q17,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t2q18,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t2q19,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t2q20a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q20b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q20c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q20d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q20e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q20f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q21,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q22,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q23h,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q24a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q24b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q24c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q24d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q24e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q24f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q24g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q24h,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q24i,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25h,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25i,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25j,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25k,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25l,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25m,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25n,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25o,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25p,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25q,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25s,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q25t,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q26a,character,character,,,%2s,,,FALSE,Excluded; see source_field_exclusions
+t2q26b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q26c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q27a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q27b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q27c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q27d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q27e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q27f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q28a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q28b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q28c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q28d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q29,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q30,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q31,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q32a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q32b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q32c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q32d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q32e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q32f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q32g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q33a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q33b,character,character,,,%2s,,,FALSE,Excluded; see source_field_exclusions
+t2q33c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q33d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q33e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q33f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q34a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q34b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q34c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q34d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q34e,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q34f,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q34g,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q34h,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q34i,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q34j,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q34k,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q34l,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q34m,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q35a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q35b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q35c,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q35d,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q36,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q37,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q38,character,character,,,%26s,,,FALSE,Excluded; see source_field_exclusions
+t2q39,character,character,,,%20s,,,FALSE,Excluded; see source_field_exclusions
+t2q40,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t2q41,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t2q42,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t2q43,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q44,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q45,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q46,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q47,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2q49,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t2q50,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t2q51,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t2q51oth,character,character,,,%58s,,,FALSE,Excluded; see source_field_exclusions
+c135,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
