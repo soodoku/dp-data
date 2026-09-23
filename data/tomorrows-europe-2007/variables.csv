@@ -1,0 +1,1626 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+v_b,double,numeric,float64,B Interview number,F5.0,,,TRUE,Retained
+qa,double,haven_labelled|vctrs_vctr|double,float64,A  Country code,F5.0,,,TRUE,Retained
+v_a,double,numeric,float64,A  Country code - Numeric,F2.0,,,TRUE,Retained
+qrs,double,haven_labelled|vctrs_vctr|double,float64,RS  Nationality,F5.0,,,TRUE,Retained
+q35,double,haven_labelled|vctrs_vctr|double,float64,Q35  Gender,F5.0,,,TRUE,Retained
+q36,double,haven_labelled|vctrs_vctr|double,float64,Q36  Age,F5.0,,,TRUE,Retained
+v_q36,double,numeric,float64,Q36  Age - Numeric,F4.0,,,TRUE,Retained
+q37,double,haven_labelled|vctrs_vctr|double,float64,Q37  Marital status,F5.0,,,TRUE,Retained
+q38,double,haven_labelled|vctrs_vctr|double,float64,Q38  Occupation,F5.0,,,TRUE,Retained
+q39,double,haven_labelled|vctrs_vctr|double,float64,Q39  Education level,F5.0,,,TRUE,Retained
+qqa,double,haven_labelled|vctrs_vctr|double,float64,QA  Participation intention,F5.0,,,TRUE,Retained
+qlg,double,haven_labelled|vctrs_vctr|double,float64,LG  Interview language,F5.0,,,TRUE,Retained
+qp1,double,haven_labelled|vctrs_vctr|double,float64,P1  Date of interview,F5.0,,,TRUE,Retained
+v_p3,double,numeric,float64,P3 Length of interview,F3.0,,,TRUE,Retained
+q1_1,double,haven_labelled|vctrs_vctr|double,float64,Q1_1  Opinion about own country EU membership,F5.0,,,TRUE,Retained
+v_q1_1,double,numeric,float64,Q1_1  Opinion about own country EU membership - Numeric,F2.0,,,TRUE,Retained
+q2_1,double,haven_labelled|vctrs_vctr|double,float64,Q2_1  Opinion about work flexibility,F5.0,,,TRUE,Retained
+v_q2_1,double,numeric,float64,Q2_1  Opinion about work flexibility - Numeric,F2.0,,,TRUE,Retained
+q3a_1,double,haven_labelled|vctrs_vctr|double,float64,Q3a_1  Allowing employers more freedom in hiring and firing increases economic growth,F5.0,,,TRUE,Retained
+q3a_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q3a_1  Allowing employers more freedom in hiring and firing increases economic growth  ** ST Agree,F2.0,,,TRUE,Retained
+q3a_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q3a_1  Allowing employers more freedom in hiring and firing increases economic growth  ** ST Disagree,F2.0,,,TRUE,Retained
+q3b_1,double,haven_labelled|vctrs_vctr|double,float64,Q3b_1  Increasing job security allows all workers to become more skilled,F5.0,,,TRUE,Retained
+q3b_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q3b_1  Increasing job security allows all workers to become more skilled  ** ST Agree,F2.0,,,TRUE,Retained
+q3b_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q3b_1  Increasing job security allows all workers to become more skilled  ** ST Disagree,F2.0,,,TRUE,Retained
+q4_1,double,haven_labelled|vctrs_vctr|double,float64,Q4_1  Opinion about retirement pensions,F5.0,,,TRUE,Retained
+v_q4_1,double,numeric,float64,Q4_1  Opinion about retirement pensions - Numeric,F2.0,,,TRUE,Retained
+q5a_1,double,haven_labelled|vctrs_vctr|double,float64,Q5a_1  Letting more immigrants enter the labour market,F5.0,,,TRUE,Retained
+q5a_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q5a_1  Letting more immigrants enter the labour market  ** ST Favour,F2.0,,,TRUE,Retained
+q5a_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q5a_1  Letting more immigrants enter the labour market  ** ST Oppose,F2.0,,,TRUE,Retained
+q5b_1,double,haven_labelled|vctrs_vctr|double,float64,Q5b_1  Making it more attractive to work longer before retiring,F5.0,,,TRUE,Retained
+q5b_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q5b_1  Making it more attractive to work longer before retiring  ** ST Favour,F2.0,,,TRUE,Retained
+q5b_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q5b_1  Making it more attractive to work longer before retiring  ** ST Oppose,F2.0,,,TRUE,Retained
+q5c_1,double,haven_labelled|vctrs_vctr|double,float64,Q5c_1  Raising the retirement age,F5.0,,,TRUE,Retained
+q5c_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q5c_1  Raising the retirement age  ** ST Favour,F2.0,,,TRUE,Retained
+q5c_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q5c_1  Raising the retirement age  ** ST Oppose,F2.0,,,TRUE,Retained
+q6a_1,double,haven_labelled|vctrs_vctr|double,float64,Q6a_1  Keeping the retirement rules the way they are will bankrupt the retirement system,F5.0,,,TRUE,Retained
+q6a_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q6a_1  Keeping the retirement rules the way they are will bankrupt the retirement system  ** ST Agree,F2.0,,,TRUE,Retained
+q6a_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q6a_1  Keeping the retirement rules the way they are will bankrupt the retirement system  ** ST Disagree,F2.0,,,TRUE,Retained
+q6b_1,double,haven_labelled|vctrs_vctr|double,float64,"Q6b_1  People who have worked all their lives should have a comfortable retirement, even if that Means larger contributions from those still working",F5.0,,,TRUE,Retained
+q6b_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,"Q6b_1  People who have worked all their lives should have a comfortable retirement, even if that Means larger contributions from those still working  ** ST Agree",F2.0,,,TRUE,Retained
+q6b_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,"Q6b_1  People who have worked all their lives should have a comfortable retirement, even if that Means larger contributions from those still working  ** ST Disagree",F2.0,,,TRUE,Retained
+q7a_1,double,haven_labelled|vctrs_vctr|double,float64,Q7a_1  Increasing taxes on imported products,F5.0,,,TRUE,Retained
+q7a_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q7a_1  Increasing taxes on imported products  ** ST Favour,F2.0,,,TRUE,Retained
+q7a_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q7a_1  Increasing taxes on imported products  ** ST Oppose,F2.0,,,TRUE,Retained
+q7b_1,double,haven_labelled|vctrs_vctr|double,float64,Q7b_1  Pressing for stricter international standards regarding child labour and environmental impacts,F5.0,,,TRUE,Retained
+q7b_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q7b_1  Pressing for stricter international standards regarding child labour and environmental impacts  ** ST Favour,F2.0,,,TRUE,Retained
+q7b_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q7b_1  Pressing for stricter international standards regarding child labour and environmental impacts  ** ST Oppose,F2.0,,,TRUE,Retained
+q7c_1,double,haven_labelled|vctrs_vctr|double,float64,Q7c_1  Making it easier for workers to move between EU countries,F5.0,,,TRUE,Retained
+q7c_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q7c_1  Making it easier for workers to move between EU countries  ** ST Favour,F2.0,,,TRUE,Retained
+q7c_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q7c_1  Making it easier for workers to move between EU countries  ** ST Oppose,F2.0,,,TRUE,Retained
+q8_1,double,haven_labelled|vctrs_vctr|double,float64,Q8_1  Opinion about protecting/opening up home industries to global competition,F5.0,,,TRUE,Retained
+v_q8_1,double,numeric,float64,Q8_1  Opinion about protecting/opening up home industries to global competition - Numeric,F2.0,,,TRUE,Retained
+q9a_1,double,haven_labelled|vctrs_vctr|double,float64,Q9a_1  Freer trade expands the markets for our products,F5.0,,,TRUE,Retained
+q9a_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q9a_1  Freer trade expands the markets for our products  ** ST Agree,F2.0,,,TRUE,Retained
+q9a_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q9a_1  Freer trade expands the markets for our products  ** ST Disagree,F2.0,,,TRUE,Retained
+q9b_1,double,haven_labelled|vctrs_vctr|double,float64,Q9b_1  Freer trade costs more jobs than it creates at home,F5.0,,,TRUE,Retained
+q9b_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q9b_1  Freer trade costs more jobs than it creates at home  ** ST Agree,F2.0,,,TRUE,Retained
+q9b_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q9b_1  Freer trade costs more jobs than it creates at home  ** ST Disagree,F2.0,,,TRUE,Retained
+q10a_1,double,haven_labelled|vctrs_vctr|double,float64,Q10a_1  Peace and security abilities : the UN,F5.0,,,TRUE,Retained
+v_q10_1_1_,double,numeric,float64,Q10a_1  Peace and security abilities : the UN - Numeric,F2.0,,,TRUE,Retained
+q10b_1,double,haven_labelled|vctrs_vctr|double,float64,Q10b_1  Peace and security abilities : the US,F5.0,,,TRUE,Retained
+v_q10_1_2_,double,numeric,float64,Q10b_1  Peace and security abilities : the US - Numeric,F2.0,,,TRUE,Retained
+q10c_1,double,haven_labelled|vctrs_vctr|double,float64,Q10c_1  Peace and security abilities : the EU,F5.0,,,TRUE,Retained
+v_q10_1_3_,double,numeric,float64,Q10c_1  Peace and security abilities : the EU - Numeric,F2.0,,,TRUE,Retained
+q10d_1,double,haven_labelled|vctrs_vctr|double,float64,Q10d_1  Peace and security abilities : NATO,F5.0,,,TRUE,Retained
+v_q10_1_4_,double,numeric,float64,Q10d_1  Peace and security abilities : NATO - Numeric,F2.0,,,TRUE,Retained
+q10e_1,double,haven_labelled|vctrs_vctr|double,float64,Q10e_1  Peace and security abilities : local country,F5.0,,,TRUE,Retained
+v_q10_1_5_,double,numeric,float64,Q10e_1  Peace and security abilities : local country - Numeric,F2.0,,,TRUE,Retained
+q11a_1,double,haven_labelled|vctrs_vctr|double,float64,Q11a_1  Local country should strengthen its military power,F5.0,,,TRUE,Retained
+q11a_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q11a_1  Local country should strengthen its military power  ** ST Agree,F2.0,,,TRUE,Retained
+q11a_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q11a_1  Local country should strengthen its military power  ** ST Disagree,F2.0,,,TRUE,Retained
+q11b_1,double,haven_labelled|vctrs_vctr|double,float64,Q11b_1  Military action by EU countries is never justifiable,F5.0,,,TRUE,Retained
+q11b_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q11b_1  Military action by EU countries is never justifiable  ** ST Agree,F2.0,,,TRUE,Retained
+q11b_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q11b_1  Military action by EU countries is never justifiable  ** ST Disagree,F2.0,,,TRUE,Retained
+q11c_1,double,haven_labelled|vctrs_vctr|double,float64,Q11c_1  EU countries may sometimes have to use force without a UN mandate,F5.0,,,TRUE,Retained
+q11c_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q11c_1  EU countries may sometimes have to use force without a UN mandate  ** ST Agree,F2.0,,,TRUE,Retained
+q11c_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q11c_1  EU countries may sometimes have to use force without a UN mandate  ** ST Disagree,F2.0,,,TRUE,Retained
+q12a_1,double,haven_labelled|vctrs_vctr|double,float64,Q12a_1  To prevent genocide in other countries,F5.0,,,TRUE,Retained
+v_q12_1_1_,double,numeric,float64,Q12a_1  To prevent genocide in other countries - Numeric,F2.0,,,TRUE,Retained
+q12b_1,double,haven_labelled|vctrs_vctr|double,float64,Q12b_1  To remove the threat of weapons of mass destruction,F5.0,,,TRUE,Retained
+v_q12_1_2_,double,numeric,float64,Q12b_1  To remove the threat of weapons of mass destruction - Numeric,F2.0,,,TRUE,Retained
+q12c_1,double,haven_labelled|vctrs_vctr|double,float64,Q12c_1  To defend economic interests,F5.0,,,TRUE,Retained
+v_q12_1_3_,double,numeric,float64,Q12c_1  To defend economic interests - Numeric,F2.0,,,TRUE,Retained
+q12d_1,double,haven_labelled|vctrs_vctr|double,float64,Q12d_1  To defend another EU country against military attack,F5.0,,,TRUE,Retained
+v_q12_1_4_,double,numeric,float64,Q12d_1  To defend another EU country against military attack - Numeric,F2.0,,,TRUE,Retained
+q13a_1,double,haven_labelled|vctrs_vctr|double,float64,Q13a_1  Additional countries that meet all the political and economic conditions for membership should be admitted to the EU,F5.0,,,TRUE,Retained
+q13a_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q13a_1  Additional countries that meet all the political and economic conditions for membership should be admitted to the EU  ** ST Agree,F2.0,,,TRUE,Retained
+q13a_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q13a_1  Additional countries that meet all the political and economic conditions for membership should be admitted to the EU  ** ST Disagree,F2.0,,,TRUE,Retained
+q13b_1,double,haven_labelled|vctrs_vctr|double,float64,"Q13b_1  If it meets all the political and economic conditions for membership, Turkey should be admitted to the EU",F5.0,,,TRUE,Retained
+q13b_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,"Q13b_1  If it meets all the political and economic conditions for membership, Turkey should be admitted to the EU  ** ST Agree",F2.0,,,TRUE,Retained
+q13b_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,"Q13b_1  If it meets all the political and economic conditions for membership, Turkey should be admitted to the EU  ** ST Disagree",F2.0,,,TRUE,Retained
+q13c_1,double,haven_labelled|vctrs_vctr|double,float64,"Q13c_1  If it meets all the political and economic conditions for membership, Ukraine should be admitted to the EU",F5.0,,,TRUE,Retained
+q13c_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,"Q13c_1  If it meets all the political and economic conditions for membership, Ukraine should be admitted to the EU  ** ST Agree",F2.0,,,TRUE,Retained
+q13c_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,"Q13c_1  If it meets all the political and economic conditions for membership, Ukraine should be admitted to the EU  ** ST Disagree",F2.0,,,TRUE,Retained
+q13d_1,double,haven_labelled|vctrs_vctr|double,float64,Q13d_1  Adding a Muslim country to the EU would improve the EU s relations with the Muslim world,F5.0,,,TRUE,Retained
+q13d_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q13d_1  Adding a Muslim country to the EU would improve the EU s relations with the Muslim world  ** ST Agree,F2.0,,,TRUE,Retained
+q13d_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q13d_1  Adding a Muslim country to the EU would improve the EU s relations with the Muslim world  ** ST Disagree,F2.0,,,TRUE,Retained
+q13e_1,double,haven_labelled|vctrs_vctr|double,float64,Q13e_1  Adding a Muslim country to the EU would make the EU too diverse,F5.0,,,TRUE,Retained
+q13e_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q13e_1  Adding a Muslim country to the EU would make the EU too diverse  ** ST Agree,F2.0,,,TRUE,Retained
+q13e_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q13e_1  Adding a Muslim country to the EU would make the EU too diverse  ** ST Disagree,F2.0,,,TRUE,Retained
+q14a_1,double,haven_labelled|vctrs_vctr|double,float64,Q14a_1  Level of decision : Immigration,F5.0,,,TRUE,Retained
+v_q14_1_1_,double,numeric,float64,Q14a_1  Level of decision : Immigration - Numeric,F2.0,,,TRUE,Retained
+q14b_1,double,haven_labelled|vctrs_vctr|double,float64,Q14b_1  Level of decision : International trade,F5.0,,,TRUE,Retained
+v_q14_1_2_,double,numeric,float64,Q14b_1  Level of decision : International trade - Numeric,F2.0,,,TRUE,Retained
+q14c_1,double,haven_labelled|vctrs_vctr|double,float64,Q14c_1  Level of decision : Employment,F5.0,,,TRUE,Retained
+v_q14_1_3_,double,numeric,float64,Q14c_1  Level of decision : Employment - Numeric,F2.0,,,TRUE,Retained
+q14d_1,double,haven_labelled|vctrs_vctr|double,float64,Q14d_1  Level of decision : Pensions,F5.0,,,TRUE,Retained
+v_q14_1_4_,double,numeric,float64,Q14d_1  Level of decision : Pensions - Numeric,F2.0,,,TRUE,Retained
+q14e_1,double,haven_labelled|vctrs_vctr|double,float64,Q14e_1  Level of decision : Military action,F5.0,,,TRUE,Retained
+v_q14_1_5_,double,numeric,float64,Q14e_1  Level of decision : Military action - Numeric,F2.0,,,TRUE,Retained
+q14f_1,double,haven_labelled|vctrs_vctr|double,float64,Q14f_1  Level of decision : Climate change,F5.0,,,TRUE,Retained
+v_q14_1_6_,double,numeric,float64,Q14f_1  Level of decision : Climate change - Numeric,F2.0,,,TRUE,Retained
+q14g_1,double,haven_labelled|vctrs_vctr|double,float64,Q14g_1  Level of decision : Foreign aid,F5.0,,,TRUE,Retained
+v_q14_1_7_,double,numeric,float64,Q14g_1  Level of decision : Foreign aid - Numeric,F2.0,,,TRUE,Retained
+q14h_1,double,haven_labelled|vctrs_vctr|double,float64,Q14h_1  Level of decision : Taxation,F5.0,,,TRUE,Retained
+v_q14_1_8_,double,numeric,float64,Q14h_1  Level of decision : Taxation - Numeric,F2.0,,,TRUE,Retained
+q14i_1,double,haven_labelled|vctrs_vctr|double,float64,Q14i_1  Level of decision : Energy supply,F5.0,,,TRUE,Retained
+v_q14_1_9_,double,numeric,float64,Q14i_1  Level of decision : Energy supply - Numeric,F2.0,,,TRUE,Retained
+q14j_1,double,haven_labelled|vctrs_vctr|double,float64,Q14j_1  Level of decision : Diplomatic relations,F5.0,,,TRUE,Retained
+v_q14_1_10_,double,numeric,float64,Q14j_1  Level of decision : Diplomatic relations - Numeric,F2.0,,,TRUE,Retained
+q15a_1,double,haven_labelled|vctrs_vctr|double,float64,Q15a_1  Decision rule : taxation decisions,F5.0,,,TRUE,Retained
+v_q15_1_1_,double,numeric,float64,Q15a_1  Decision rule : taxation decisions - Numeric,F2.0,,,TRUE,Retained
+q15b_1,double,haven_labelled|vctrs_vctr|double,float64,Q15b_1  Decision rule : social policy decisions,F5.0,,,TRUE,Retained
+v_q15_1_2_,double,numeric,float64,Q15b_1  Decision rule : social policy decisions - Numeric,F2.0,,,TRUE,Retained
+q15c_1,double,haven_labelled|vctrs_vctr|double,float64,Q15c_1  Decision rule : foreign policy decisions,F5.0,,,TRUE,Retained
+v_q15_1_3_,double,numeric,float64,Q15c_1  Decision rule : foreign policy decisions - Numeric,F2.0,,,TRUE,Retained
+q15d_1,double,haven_labelled|vctrs_vctr|double,float64,Q15d_1  Decision rule : defence decisions,F5.0,,,TRUE,Retained
+v_q15_1_4_,double,numeric,float64,Q15d_1  Decision rule : defence decisions - Numeric,F2.0,,,TRUE,Retained
+q16_1,double,haven_labelled|vctrs_vctr|double,float64,Q16_1  Official candidate to join EU,F5.0,,,TRUE,Retained
+q17_1,double,haven_labelled|vctrs_vctr|double,float64,Q17_1  Election mode of MEPs,F5.0,,,TRUE,Retained
+q18_1,double,haven_labelled|vctrs_vctr|double,float64,Q18_1  EU employment law adoption mode,F5.0,,,TRUE,Retained
+q19_1,double,haven_labelled|vctrs_vctr|double,float64,Q19_1  EU s role regarding unemployment benefits,F5.0,,,TRUE,Retained
+q20_1,double,haven_labelled|vctrs_vctr|double,float64,Q20_1  EU budget allocation,F5.0,,,TRUE,Retained
+q21_1,double,haven_labelled|vctrs_vctr|double,float64,Q21_1  EU citizen over 65 : 2050 projection,F5.0,,,TRUE,Retained
+q22_1,double,haven_labelled|vctrs_vctr|double,float64,Q22_1  Foreign aid given by EU vs  US,F5.0,,,TRUE,Retained
+q23_1,double,haven_labelled|vctrs_vctr|double,float64,Q23_1  Percentage of total spending by EU governments given to foreign aid,F5.0,,,TRUE,Retained
+q24_1,double,haven_labelled|vctrs_vctr|double,float64,Q24_1  Country which does NOT possess nuclear weapon,F5.0,,,TRUE,Retained
+q25_1,double,haven_labelled|vctrs_vctr|double,float64,Q25_1  Attention to political issues on TV,F5.0,,,TRUE,Retained
+q26_1,double,haven_labelled|vctrs_vctr|double,float64,Q26_1  Attention to political issues in newspapers,F5.0,,,TRUE,Retained
+q27_1,double,haven_labelled|vctrs_vctr|double,float64,"Q27_1  Political issues discussed with friends, family, etc",F5.0,,,TRUE,Retained
+q28_1,double,haven_labelled|vctrs_vctr|double,float64,Q28_1  Political issues discussed with citizens from other EU countries,F5.0,,,TRUE,Retained
+q29_1,double,haven_labelled|vctrs_vctr|double,float64,Q29_1  People who disagree with [respondent] completely often have good reasons for their views,F5.0,,,TRUE,Retained
+q29_1_ST1,double,haven_labelled|vctrs_vctr|double,float64,Q29_1  People who disagree with [respondent] completely often have good reasons for their views  ** ST Agree,F2.0,,,TRUE,Retained
+q29_1_ST2,double,haven_labelled|vctrs_vctr|double,float64,Q29_1  People who disagree with [respondent] completely often have good reasons for their views  ** ST Disagree,F2.0,,,TRUE,Retained
+q30_1,double,haven_labelled|vctrs_vctr|double,float64,Q30_1  Likeliness of voting in the next election for EU Parliament,F5.0,,,TRUE,Retained
+v_q30_1,double,numeric,float64,Q30_1  Likeliness of voting in the next election for EU Parliament - Numeric,F2.0,,,TRUE,Retained
+q31_1,double,haven_labelled|vctrs_vctr|double,float64,Q31_1  Interest in politics and foreign affairs,F5.0,,,TRUE,Retained
+v_q31_1,double,numeric,float64,Q31_1  Interest in politics and foreign affairs - Numeric,F2.0,,,TRUE,Retained
+q32_1,double,haven_labelled|vctrs_vctr|double,float64,Q32_1  Left/right positioning,F5.0,,,TRUE,Retained
+v_q32_1,double,numeric,float64,Q32_1  Left/right positioning - Numeric,F2.0,,,TRUE,Retained
+q33a_1,double,haven_labelled|vctrs_vctr|double,float64,Q33a_1  Nicolas Sarkozy s left/right positioning,F5.0,,,TRUE,Retained
+v_q33_1_1_,double,numeric,float64,Q33a_1  Nicolas Sarkozy s left/right positioning - Numeric,F2.0,,,TRUE,Retained
+q33b_1,double,haven_labelled|vctrs_vctr|double,float64,Q33b_1  Gordon Brown s left/right positioning,F5.0,,,TRUE,Retained
+v_q33_1_2_,double,numeric,float64,Q33b_1  Gordon Brown s left/right positioning - Numeric,F2.0,,,TRUE,Retained
+q34a_1,double,haven_labelled|vctrs_vctr|double,float64,Q34a_1  How much would you  think of yourself as European,F5.0,,,TRUE,Retained
+v_q34_1_1_,double,numeric,float64,Q34a_1  How much would you  think of yourself as European - Numeric,F2.0,,,TRUE,Retained
+q34b_1,double,haven_labelled|vctrs_vctr|double,float64,Q34b_1  How much would you  think of yourself as [name of your country],F5.0,,,TRUE,Retained
+v_q34_1_2_,double,numeric,float64,Q34b_1  How much would you  think of yourself as [name of your country] - Numeric,F2.0,,,TRUE,Retained
+wmid1,double,numeric,float64,WEIGHT,F15.4,,,TRUE,Retained
+part,character,character,,,A15,,,FALSE,Excluded; see source_field_exclusions
+invited,double,numeric,float64,Case source is id numbers_all.sav [DataSet2],F1.0,,,TRUE,Retained
+source,character,character,,,A15,,,FALSE,Excluded; see source_field_exclusions
+group_no,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q1,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q2,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q2_1,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q3a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q3b,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q3c,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q3d,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q3e,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q4,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q4_1,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q5a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q5b,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q5c,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q5d,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q6a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q6b,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q6c,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q6d,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q7a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q7b,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q7c,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q7d,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q7e,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q7f,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q7g,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q8,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q8_1,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q9a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q9b,double,numeric,float64,,F10.1,,,TRUE,Retained
+t2q9c,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q9d,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q9e,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q9f,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q9g,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q10a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q10b,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q10c,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q10d,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q10e,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q11a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q11b,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q11c,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q11d,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q11e,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q12a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q12b,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q12c,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q12d,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q13a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q13b,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q13c,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q13d,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q14a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q14b,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q14c,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q15a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q15b,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q16a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q16b,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q16c,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q16d,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q16e,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q16f,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q16g,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q16h,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q16i,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q16j,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q17a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q17b,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q17c,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q17d,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q17e,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q17f,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q17g,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q17h,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q17i,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q17j,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q18a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q18b,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q18c,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q18d,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q19,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q20,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q21,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q22,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q23,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q24,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q25,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q26,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q27,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q28,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q29,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q30,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q31,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q32,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q33,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q33_1,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q34,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q35,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q36a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q36b,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q37a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q37b,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q38a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q38b,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q38c,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q38d,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q38e,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q38f,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q38g,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q38h,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q38i,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q38j,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q38k,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q38l,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q38m,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q38n,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q38o,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q39a,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q39b,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q39c,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q39d,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q39e,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q39f,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q39g,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q39h,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q39i,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q39j,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q39k,double,numeric,float64,,F10.2,,,TRUE,Retained
+t2q39l,double,numeric,float64,,F10.2,,,TRUE,Retained
+late,double,numeric,float64,t2 questionnaires submitted late,F8.2,,,TRUE,Retained
+time2,double,numeric,float64,Case source is t2 integrated data.sav [DataSet1],F1.0,,,TRUE,Retained
+euparlat,double,numeric,float64,,F13.2,,,TRUE,Retained
+time2ep,double,numeric,float64,Case source is participants attending.sav [DataSet3],F1.0,,,TRUE,Retained
+t1q1,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q2,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q4,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q8,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q10a,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q10b,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q10c,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q10d,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q10e,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q12a,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q12b,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q12c,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q12d,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q14a,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q14b,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q14c,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q14d,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q14e,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q14f,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q14g,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q14h,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q14i,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q14j,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q15a,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q15b,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q15c,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q15d,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q30,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q31,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q32,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q33a,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q33b,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q34a,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q34b,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q3a,double,numeric,float64,,F9.2,,,TRUE,Retained
+t1q3b,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q5a,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q5b,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q5c,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q6a,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q6b,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q7a,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q7b,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q7c,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q9a,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q9b,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q11a,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q11b,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q11c,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q13a,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q13b,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q13c,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q13d,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q13e,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q29,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q16cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q17cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q18cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q19cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q20cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q21cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q22cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q23cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q24cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q25,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q26,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q27,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q28,double,numeric,float64,,F8.2,,,TRUE,Retained
+male,double,numeric,float64,,F8.2,,,TRUE,Retained
+age,double,numeric,float64,,F8.2,,,TRUE,Retained
+single,double,numeric,float64,,F8.2,,,TRUE,Retained
+married,double,numeric,float64,,F8.2,,,TRUE,Retained
+unmarried,double,numeric,float64,,F8.2,,,TRUE,Retained
+divorced,double,numeric,float64,,F8.2,,,TRUE,Retained
+widowed,double,numeric,float64,,F8.2,,,TRUE,Retained
+fulltime,double,numeric,float64,,F8.2,,,TRUE,Retained
+parttime,double,numeric,float64,,F8.2,,,TRUE,Retained
+unemployed,double,numeric,float64,,F8.2,,,TRUE,Retained
+gtraining,double,numeric,float64,,F8.2,,,TRUE,Retained
+retired,double,numeric,float64,,F8.2,,,TRUE,Retained
+student,double,numeric,float64,,F8.2,,,TRUE,Retained
+homemaker,double,numeric,float64,,F8.2,,,TRUE,Retained
+disabled,double,numeric,float64,,F8.2,,,TRUE,Retained
+notworking,double,numeric,float64,,F8.2,,,TRUE,Retained
+carer,double,numeric,float64,,F8.2,,,TRUE,Retained
+other,double,numeric,float64,,F8.2,,,TRUE,Retained
+nosec,double,numeric,float64,,F8.2,,,TRUE,Retained
+second,double,numeric,float64,,F8.2,,,TRUE,Retained
+someuniv,double,numeric,float64,,F8.2,,,TRUE,Retained
+university,double,numeric,float64,,F8.2,,,TRUE,Retained
+somepg,double,numeric,float64,,F8.2,,,TRUE,Retained
+postgrad,double,numeric,float64,,F8.2,,,TRUE,Retained
+yespart,double,numeric,float64,,F8.2,,,TRUE,Retained
+nopart,double,numeric,float64,,F8.2,,,TRUE,Retained
+maypart,double,numeric,float64,,F8.2,,,TRUE,Retained
+dkpart,double,numeric,float64,,F8.2,,,TRUE,Retained
+AT,double,numeric,float64,,F8.2,,,TRUE,Retained
+BE,double,numeric,float64,,F8.2,,,TRUE,Retained
+BG,double,numeric,float64,,F8.2,,,TRUE,Retained
+CH,double,numeric,float64,,F8.2,,,TRUE,Retained
+CY,double,numeric,float64,,F8.2,,,TRUE,Retained
+CZ,double,numeric,float64,,F8.2,,,TRUE,Retained
+DK,double,numeric,float64,,F8.2,,,TRUE,Retained
+EE,double,numeric,float64,,F8.2,,,TRUE,Retained
+EL,double,numeric,float64,,F8.2,,,TRUE,Retained
+ES,double,numeric,float64,,F8.2,,,TRUE,Retained
+FI,double,numeric,float64,,F8.2,,,TRUE,Retained
+FR,double,numeric,float64,,F8.2,,,TRUE,Retained
+GB,double,numeric,float64,,F8.2,,,TRUE,Retained
+HR,double,numeric,float64,,F8.2,,,TRUE,Retained
+HU,double,numeric,float64,,F8.2,,,TRUE,Retained
+IE,double,numeric,float64,,F8.2,,,TRUE,Retained
+IS,double,numeric,float64,,F8.2,,,TRUE,Retained
+IT,double,numeric,float64,,F8.2,,,TRUE,Retained
+LU,double,numeric,float64,,F8.2,,,TRUE,Retained
+LV,double,numeric,float64,,F8.2,,,TRUE,Retained
+MT,double,numeric,float64,,F8.2,,,TRUE,Retained
+NC,double,numeric,float64,,F8.2,,,TRUE,Retained
+NI,double,numeric,float64,,F8.2,,,TRUE,Retained
+NL,double,numeric,float64,,F8.2,,,TRUE,Retained
+NO,double,numeric,float64,,F8.2,,,TRUE,Retained
+PL,double,numeric,float64,,F8.2,,,TRUE,Retained
+PT,double,numeric,float64,,F8.2,,,TRUE,Retained
+RO,double,numeric,float64,,F8.2,,,TRUE,Retained
+SE,double,numeric,float64,,F8.2,,,TRUE,Retained
+SI,double,numeric,float64,,F8.2,,,TRUE,Retained
+SK,double,numeric,float64,,F8.2,,,TRUE,Retained
+TR,double,numeric,float64,,F8.2,,,TRUE,Retained
+DKCC,double,numeric,float64,,F8.2,,,TRUE,Retained
+filter_$,double,haven_labelled|vctrs_vctr|double,float64,t3part (FILTER),F1.0,,,TRUE,Retained
+mfgender,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q3ar,double,numeric,float64, T2 Allowing employers more freedom in hiring and firing increases economic growth,F8.2,,,TRUE,Retained
+t2q3br,double,numeric,float64,T2 Increasing job security allows workers to become more skilled,F8.2,,,TRUE,Retained
+t2q3cr,double,numeric,float64,T2 Allowing employers more freedom in hiring and firing increases the number of jobs,F8.2,,,TRUE,Retained
+t2q3dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q3er,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q4_1r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q5ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q5br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q5cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q5dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q6ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q6br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q6cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q6dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q7ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q7br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q7cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q7dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q7er,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q7fr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q7gr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q8_1r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q9ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q9br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q9cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q9dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q9er,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q9fr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q9gr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q14ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q14br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q14cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q15ar,double,numeric,float64,T2 important a problem Europe’s dependency on Russian energy supplies,F8.2,,,TRUE,Retained
+t2q15br,double,numeric,float64,T2 important a problem Russian interference in Eastern European and Central Asian,F8.2,,,TRUE,Retained
+t2q16ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q16br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q16cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q16dr,double,numeric,float64,T2 Adding Muslim country to EU would improve relations with Muslim world,F8.2,,,TRUE,Retained
+t2q16er,double,numeric,float64,T2 Adding a Muslim country to the EU would make the EU too diverse,F8.2,,,TRUE,Retained
+t2q16fr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q16gr,double,numeric,float64,T2 Adding more countries to the EU would help our economy,F8.2,,,TRUE,Retained
+t2q16hr,double,numeric,float64,T2 Adding more countries to the EU  would help our security,F8.2,,,TRUE,Retained
+t2q16ir,double,numeric,float64,T2 Adding more countries to the EU would make it more difficult for the EU to make decisions,F8.2,,,TRUE,Retained
+t2q16jr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q32r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q19cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q20cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q21cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q22cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q23cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q24cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q25cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q26cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q27cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q28r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q29r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q30r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q31r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q1r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q2r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q4r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q8r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q10ar,double,numeric,float64,T2 UN -relied on to protect your country’s peace and security,F8.2,,,TRUE,Retained
+t2q10br,double,numeric,float64,T2 US -relied on to protect your country’s peace and security,F8.2,,,TRUE,Retained
+t2q10cr,double,numeric,float64,T2 EU -relied on to protect your country’s peace and security,F8.2,,,TRUE,Retained
+t2q10dr,double,numeric,float64,T2 NATO- relied on to protect your country’s peace and security,F8.2,,,TRUE,Retained
+t2q10er,double,numeric,float64,T2 Your Country -relied on to protect your country’s peace and security,F8.2,,,TRUE,Retained
+t2q11ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q11br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q11cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q11dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q11er,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q12ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q12br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q12cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q12dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q13ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q13br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q13cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q13dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q17ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q17br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q17cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q17dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q17er,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q17fr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q17gr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q17hr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q17ir,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q17jr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q18ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q18br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q18cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q18dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q33r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q34r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q35r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q36ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q36br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q37ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q37br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q38ar,double,numeric,float64,T2 Values - Ensuring equal opportunity,F8.2,,,TRUE,Retained
+t2q38br,double,numeric,float64,T2 Values -Making sure nobody goes hungry or lacks medical care,F8.2,,,TRUE,Retained
+t2q38cr,double,numeric,float64,t3 t2 Diff value Preserving traditional industries,F8.2,,,TRUE,Retained
+t2q39ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39er,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39fr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39gr,double,numeric,float64,T2 Turks Like Dislike,F8.2,,,TRUE,Retained
+t2q39hr,double,numeric,float64,T2 Americans Like Dislike,F8.2,,,TRUE,Retained
+t2q39ir,double,numeric,float64,T2 Chinese Like Dislike,F8.2,,,TRUE,Retained
+t2q39jr,double,numeric,float64,T2 Russia Like Dislike,F8.2,,,TRUE,Retained
+t2q39kr,double,numeric,float64,T2 EU Like Dislike,F8.2,,,TRUE,Retained
+t2q39lr,double,numeric,float64,T2 UN Like Dislike,F8.2,,,TRUE,Retained
+t2q33_1r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3grp,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q1,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q2,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q2_1,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q3a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q3b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q3c,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q3d,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q3e,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q4,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q4_1,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q5a,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q5b,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q5c,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q5d,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q6a,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q6b,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q6c,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q6d,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q7a,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q7b,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q7c,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q7d,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q7e,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q7f,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q7g,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q8,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q8_1,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q9a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q9b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q9c,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q9d,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q9e,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q9f,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q9g,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q10a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q10b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q10c,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q10d,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q10e,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q11a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q11b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q11c,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q11d,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q11e,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q12a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q12b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q12c,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q12d,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q13a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q13b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q13c,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q13d,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q14a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q14b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q14c,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q15a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q15b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q16a,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q16b,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q16c,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q16d,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q16e,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q16f,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q16g,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q16h,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q16i,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q16j,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q17a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q17b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q17c,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q17d,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q17e,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q17f,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q17g,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q17h,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q17i,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q17j,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q18a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q18b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q18c,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q18d,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q19,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q20,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q21,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q22,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q23,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q24,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q25,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q26,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q27,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q28,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q29,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q30,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q31,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q32,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q33,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q33_1,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q34,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q35,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q36a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q36b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q37a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q37b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q38a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q38b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q38c,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q38d,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q38e,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q38f,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q38g,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q38h,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q38i,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q38j,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q38k,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q38l,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q38m,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q38n,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q38o,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q39a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q39b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q39c,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q39d,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q39e,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q39f,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q39g,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q39h,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q39i,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q39j,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q39k,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q39l,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q40a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q40b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q40c,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q40d,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q40e,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q41a,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q41b,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q41c,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q41d,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q41e,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q41f,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q42,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q43,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q44,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q45,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q46,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q47,double,numeric,float64,,F1.0,,,TRUE,Retained
+t3q48a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q48b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q48c,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q48d,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q48e,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q49a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q49b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q49c,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q49d,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q49e,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q49f,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q50a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q50b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q50c,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q51a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q51b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q51c,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q52a,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q52b,double,numeric,float64,,F2.0,,,TRUE,Retained
+t3q52c,double,numeric,float64,,F2.0,,,TRUE,Retained
+coder_name,character,character,,,A9,,,FALSE,Excluded; see source_field_exclusions
+t3q1r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q2r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q4r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q8r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q10ar,double,numeric,float64,T3 UN -relied on to protect your country’s peace and security,F8.2,,,TRUE,Retained
+t3q10br,double,numeric,float64,T3 US -relied on to protect your country’s peace and security,F8.2,,,TRUE,Retained
+t3q10cr,double,numeric,float64,T3 EU -relied on to protect your country’s peace and security,F8.2,,,TRUE,Retained
+t3q10dr,double,numeric,float64,T3 NATO- relied on to protect your country’s peace and security,F8.2,,,TRUE,Retained
+t3q10er,double,numeric,float64,T3 Your Country -relied on to protect your country’s peace and security,F8.2,,,TRUE,Retained
+t3q11ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q11br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q11cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q11dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q11er,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q12ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q12br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q12cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q12dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q13ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q13br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q13cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q13dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17er,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17fr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17gr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17hr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17ir,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17jr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q18ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q18br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q18cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q18dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q33r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q34r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q35r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q36ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q36br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q37ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q37br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q38ar,double,numeric,float64,T3 Values - Ensuring equal opportunity,F8.2,,,TRUE,Retained
+t3q38br,double,numeric,float64,T3 Values -Making sure nobody goes hungry or lacks medical care,F8.2,,,TRUE,Retained
+t3q38cr,double,numeric,float64,T3 Values - autonomy Preserving traditional industries - 38c,F8.2,,,TRUE,Retained
+t3q38dr,double,numeric,float64,T3 Values - Minimizing the gap between rich and poor,F8.2,,,TRUE,Retained
+t3q38er,double,numeric,float64,T3 Keeping prices down - important for themselves or society to have,F8.2,,,TRUE,Retained
+t3q38fr,double,numeric,float64,T3 Values - autonomy Leaving people and companies free to compete economically - 38f,F8.2,,,TRUE,Retained
+t3q38gr,double,numeric,float64,T3 Values - autonomy Making ones own choices 38g,F8.2,,,TRUE,Retained
+t3q38hr,double,numeric,float64,T3 Values - autonomy Preserving traditions and customs 38h,F8.2,,,TRUE,Retained
+t3q38ir,double,numeric,float64,T3 Values - Promoting economic growth,F8.2,,,TRUE,Retained
+t3q38jr,double,numeric,float64,T3 Not having to worry about being fired - important for themselves or society to have,F8.2,,,TRUE,Retained
+t3q38kr,double,numeric,float64,T3 Values - Making our economy competitive in the global arena,F8.2,,,TRUE,Retained
+t3q38lr,double,numeric,float64,T3 Values - Earning as much money as possible,F8.2,,,TRUE,Retained
+t3q38mr,double,numeric,float64,T3 Values - Helping people in other parts of the world,F8.2,,,TRUE,Retained
+t3q38nr,double,numeric,float64,T3 Values - Having Europe play a larger role in the world,F8.2,,,TRUE,Retained
+t3q38or,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39er,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39fr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39gr,double,numeric,float64,T3 Turks Like Dislike,F8.2,,,TRUE,Retained
+t3q39hr,double,numeric,float64,T3 Americans Like Dislike,F8.2,,,TRUE,Retained
+t3q39ir,double,numeric,float64,T3 Chinese Like Dislike,F8.2,,,TRUE,Retained
+t3q39jr,double,numeric,float64,T3 Russia Like Dislike,F8.2,,,TRUE,Retained
+t3q39kr,double,numeric,float64,T3 EU Like Dislike,F8.2,,,TRUE,Retained
+t3q39lr,double,numeric,float64,T3 UN Like Dislike,F8.2,,,TRUE,Retained
+t3q33_1r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q3ar,double,numeric,float64,T3 Allowing employers more freedom in hiring and firing increases economic growth,F8.2,,,TRUE,Retained
+t3q3br,double,numeric,float64,T3 Increasing job security allows workers to become more skilled,F8.2,,,TRUE,Retained
+t3q3cr,double,numeric,float64,T3 Allowing employers more freedom in hiring and firing increases the number of jobs,F8.2,,,TRUE,Retained
+t3q3dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q3er,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q4_1r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q5ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q5br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q5cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q5dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q6ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q6br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q6cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q6dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q7ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q7br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q7cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q7dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q7er,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q7fr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q7gr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q8_1r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q9ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q9br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q9cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q9dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q9er,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q9fr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q9gr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q14ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q14br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q14cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q15ar,double,numeric,float64,T3 important a problem Europe’s dependency on Russian energy supplies,F8.2,,,TRUE,Retained
+t3q15br,double,numeric,float64,T3 important a problem Russian interference in Eastern European and Central Asian,F8.2,,,TRUE,Retained
+t3q16ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q16br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q16cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q16dr,double,numeric,float64,T3 Adding Muslim country to EU would improve relations with Muslim world,F8.2,,,TRUE,Retained
+t3q16er,double,numeric,float64,T3 Adding a Muslim country to the EU would make the EU too diverse,F8.2,,,TRUE,Retained
+t3q16fr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q16gr,double,numeric,float64,T3 Adding more countries to the EU would help our economy,F8.2,,,TRUE,Retained
+t3q16hr,double,numeric,float64,T3 Adding more countries to the EU  would help our security,F8.2,,,TRUE,Retained
+t3q16ir,double,numeric,float64,T3 Adding more countries to the EU would make it more difficult for the EU to make decisions,F8.2,,,TRUE,Retained
+t3q16jr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q32r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q19cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q20cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q21cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q22cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q23cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q24cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q25cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q26cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q27cor,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q28r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q29r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q30r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q31r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q52cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q52br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q52ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q51cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q51br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q51ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q50cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q50br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q50ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q49fr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q49er,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q49dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q49cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q49br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q49ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q48er,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q48dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q48cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q48br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q48ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q40er,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q40dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q40cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q40br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q40ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q43r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q42r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q41fr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q41er,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q41dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q41cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q41br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q41ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q47r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q46r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q45r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q44r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q38dr,double,numeric,float64,T2 Values - Minimizing the gap between rich and poor,F8.2,,,TRUE,Retained
+t2q38er,double,numeric,float64,T2 Keeping prices down - important for themselves or society to have,F8.2,,,TRUE,Retained
+t2q38fr,double,numeric,float64,t3 t2 Diff value Leaving people and companies free to compete economically,F8.2,,,TRUE,Retained
+t2q38gr,double,numeric,float64,t3 t2 Diff value Making ones own choices,F8.2,,,TRUE,Retained
+t2q38hr,double,numeric,float64,t3 t2 Diff value Preserving traditions and customs,F8.2,,,TRUE,Retained
+t2q38ir,double,numeric,float64,t3 t2 Diff value Promoting economic growth,F8.2,,,TRUE,Retained
+t2q38jr,double,numeric,float64,t3 t2 Diff value Not having to worry about being fired,F8.2,,,TRUE,Retained
+t2q38kr,double,numeric,float64,T2 Values - Making our economy competitive in the global arena,F8.2,,,TRUE,Retained
+t2q38lr,double,numeric,float64,T2 Values - Earning as much money as possible,F8.2,,,TRUE,Retained
+t2q38mr,double,numeric,float64,T2 Values - Helping people in other parts of the world,F8.2,,,TRUE,Retained
+t2q38nr,double,numeric,float64,T2 Values - Having Europe play a larger role in the world,F8.2,,,TRUE,Retained
+t2q38or,double,numeric,float64,t3 t2 Diff value Being able to retire comfortably,F8.2,,,TRUE,Retained
+t3part,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1knowind,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2knowind,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3knowind,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q2_1r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q2_1r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t239EUind,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q7ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q7br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q7cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q_1r,double,numeric,float64,,F8.2,,,TRUE,Retained
+test,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q5ar,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q5br,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q5cr,double,numeric,float64,,F8.2,,,TRUE,Retained
+oldnew,double,numeric,float64,Old EU Dummy,F8.2,,,TRUE,Retained
+t1q13cI,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q13aI,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q6aI,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q34aI,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q1I,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q13eI,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q30I,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q13bI,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q11bI,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q12bI,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q12dI,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q3aI,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q13dI,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q15bI,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q15dI,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q3bI,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q16cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q16ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q6ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q37ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q1ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q16eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q33ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q16bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q11bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q12bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q12dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q3ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q16dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q18bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q3bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q16cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q16ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q6ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q37ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q1ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q16eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q33ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q16bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q11bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q12bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q12dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q3ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q16dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q18bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q3bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q16hri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q16hri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q7eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q7fri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q7dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q7gri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q9dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q16iri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q15bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q7eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q7fri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q7dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q7gri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q9dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q16iri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q15bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q2_1ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q2_1ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q2ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q4ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q5qri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q5ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q5bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q5cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q5dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q1ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q2ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q3ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q3bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q4ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q5ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q5bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q5cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q6ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q6bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q7ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q7bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q7cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q8ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q9ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q9bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q10ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q10bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q10cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q10dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q10eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q11ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q11bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q11cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q12ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q12bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q12cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q12dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q13ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q13bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q13cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q13dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q13eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q14ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q14bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q14cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q14dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q14eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q14fri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q15ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q15bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q15cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q15dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q25ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q26ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q27ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q28ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q29ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q30ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q31ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q32ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q33ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q33bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q34ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q34bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q6bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q7ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q7bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q7cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q8ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q9ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q9bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q10ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q10bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q10cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q10dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q10eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q11ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q11cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q12ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q12cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17fri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q18ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q18cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q18dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q28ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q29ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q30ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q31ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q32ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q34ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q35ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q36ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q36bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q37bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q3cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q3dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q3eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q4_1ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q5dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q5cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q6dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q8_1ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q9cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q9eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q9fri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q9gri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q11dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q11eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q13ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q13bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q13cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q13dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q14ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q14bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q14cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q15ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q16fri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q16gri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q16jri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q17gri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q17hri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q17iri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q17jri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q33_1ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q38ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q38bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q38cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q38dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q38eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q38fri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q38gri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q38hri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q38iri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q38jri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q38kri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q38lri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q38mri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q38nri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q38ori,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39fri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39gri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39hri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39iri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39jri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39kri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q39lri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q3cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q3dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q3eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q4_1ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q6dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q8_1ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q9cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q9eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q9fri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q9gri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q11dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q11eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q13ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q13bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q13cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q13dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q14ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q14bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q14cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q15ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q16fri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q16gri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q16jri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17gri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17hri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17iri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q17jri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q33_1ri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q38ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q38bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q38cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q38dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q38eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q38fri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q38gri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q38hri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q38iri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q38jri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q38kri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q38lri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q38mri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q38nri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q38ori,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39ari,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39bri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39cri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39dri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39eri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39fri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39gri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39hri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39iri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39jri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39kri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q39lri,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1t3diffq1,double,numeric,float64,T1 T3 Difference q1,F8.2,,,TRUE,Retained
+t1t3diffq2,double,numeric,float64,T1 T3 Difference q2,F8.2,,,TRUE,Retained
+t1t3diffq2_1,double,numeric,float64,T1 T3 Difference q2_1,F8.2,,,TRUE,Retained
+t1t3diffq3a,double,numeric,float64,T1 T3 Difference q3a,F8.2,,,TRUE,Retained
+t1t3diffq3b,double,numeric,float64,T1 T3 Difference q3b,F8.2,,,TRUE,Retained
+t1t3diffq4,double,numeric,float64,T1 T3 Difference q4,F8.2,,,TRUE,Retained
+t1t3diffq5a,double,numeric,float64,T1 T3 Difference q5a,F8.2,,,TRUE,Retained
+t1t3diffq5b,double,numeric,float64,T1 T3 Difference q5b,F8.2,,,TRUE,Retained
+t1t3diffq5c,double,numeric,float64,T1 T3 Difference q5c,F8.2,,,TRUE,Retained
+t1t3diffq6a,double,numeric,float64,T1 T3 Difference q6a,F8.2,,,TRUE,Retained
+t1t3diffq6b,double,numeric,float64,T1 T3 Difference q6b,F8.2,,,TRUE,Retained
+t1t3diffq7a,double,numeric,float64,T1 T3 Difference q7a,F8.2,,,TRUE,Retained
+t1t3diffq7b,double,numeric,float64,T1 T3 Difference q7b,F8.2,,,TRUE,Retained
+t1t3diffq7c,double,numeric,float64,T1 T3 Difference q7c,F8.2,,,TRUE,Retained
+t1t3diffq8,double,numeric,float64,T1 T3 Difference q8,F8.2,,,TRUE,Retained
+t1t3diffq9a,double,numeric,float64,T1 T3 Difference q9a,F8.2,,,TRUE,Retained
+t1t3diffq9b,double,numeric,float64,T1 T3 Difference q9b,F8.2,,,TRUE,Retained
+t2t3diffq3c,double,numeric,float64,T2 T3 Difference q3c,F8.2,,,TRUE,Retained
+t2t3diffq3d,double,numeric,float64,T2 T3 Difference q3d,F8.2,,,TRUE,Retained
+t2t3diffq3e,double,numeric,float64,T2 T3 Difference q3e,F8.2,,,TRUE,Retained
+t2t3diffq4_1,double,numeric,float64,T2 T3 Difference q4_1,F8.2,,,TRUE,Retained
+t2t3diffq5d,double,numeric,float64,T2 T3 Difference q5d,F8.2,,,TRUE,Retained
+t2t3diffq6c,double,numeric,float64,T2 T3 Difference q6c,F8.2,,,TRUE,Retained
+t2t3diffq6d,double,numeric,float64,T2 T3 Difference q6d,F8.2,,,TRUE,Retained
+t2t3diffq7d,double,numeric,float64,T2 T3 Difference q7d,F8.2,,,TRUE,Retained
+t2t3diffq7e,double,numeric,float64,T2 T3 Difference q7e,F8.2,,,TRUE,Retained
+t2t3diffq7f,double,numeric,float64,T2 T3 Difference q7f,F8.2,,,TRUE,Retained
+t2t3diffq7g,double,numeric,float64,T2 T3 Difference q7g,F8.2,,,TRUE,Retained
+t2t3diffq8_1,double,numeric,float64,T2 T3 Difference q8_1,F8.2,,,TRUE,Retained
+t2t3diffq9c,double,numeric,float64,T2 T3 Difference q9c,F8.2,,,TRUE,Retained
+t2t3diffq9d,double,numeric,float64,T2 T3 Difference q9d,F8.2,,,TRUE,Retained
+t2t3diffq9e,double,numeric,float64,T2 T3 Difference q9e,F8.2,,,TRUE,Retained
+t2t3diffq9f,double,numeric,float64,T2 T3 Difference q9f,F8.2,,,TRUE,Retained
+t2t3diffq9g,double,numeric,float64,T2 T3 Difference q9g,F8.2,,,TRUE,Retained
+t1t3diffq10a,double,numeric,float64,T1 T3 Difference q10a,F8.2,,,TRUE,Retained
+t1t3diffq10b,double,numeric,float64,T1 T3 Difference q10b,F8.2,,,TRUE,Retained
+t1t3diffq10c,double,numeric,float64,T1 T3 Difference q10c,F8.2,,,TRUE,Retained
+t1t3diffq10d,double,numeric,float64,T1 T3 Difference q10d,F8.2,,,TRUE,Retained
+t1t3diffq10e,double,numeric,float64,T1 T3 Difference q10e,F8.2,,,TRUE,Retained
+t1t3diffq12a,double,numeric,float64,T1 T3 Difference q12a,F8.2,,,TRUE,Retained
+t1t3diffq12b,double,numeric,float64,T1 T3 Difference q12b,F8.2,,,TRUE,Retained
+t1t3diffq12c,double,numeric,float64,T1 T3 Difference q12c,F8.2,,,TRUE,Retained
+t2t3diffq13a,double,numeric,float64,T2 T3 Difference q13a,F8.2,,,TRUE,Retained
+t2t3diffq13b,double,numeric,float64,T2 T3 Difference q13b,F8.2,,,TRUE,Retained
+t2t3diffq13c,double,numeric,float64,T2 T3 Difference q13c,F8.2,,,TRUE,Retained
+t2t3diffq13d,double,numeric,float64,T2 T3 Difference q13d,F8.2,,,TRUE,Retained
+t1t3diffq11a,double,numeric,float64,T1 T3 Difference q11a,F8.2,,,TRUE,Retained
+t1t3diffq11b,double,numeric,float64,T1 T3 Difference q11b,F8.2,,,TRUE,Retained
+t1t3diffq11c,double,numeric,float64,T1 T3 Difference q11c,F8.2,,,TRUE,Retained
+t2t3diffq11d,double,numeric,float64,T2 T3 Difference q11d,F8.2,,,TRUE,Retained
+t2t3diffq14a,double,numeric,float64,T2 T3 Difference q14a,F8.2,,,TRUE,Retained
+t2t3diffq14b,double,numeric,float64,T2 T3 Difference q14b,F8.2,,,TRUE,Retained
+t2t3diffq14c,double,numeric,float64,T2 T3 Difference q14c,F8.2,,,TRUE,Retained
+t2t3diffq15a,double,numeric,float64,T2 T3 Difference q15a,F8.2,,,TRUE,Retained
+t2t3diffq15b,double,numeric,float64,T2 T3 Difference q15b,F8.2,,,TRUE,Retained
+t2t3diffq11e,double,numeric,float64,T2 T3 Difference q11e,F8.2,,,TRUE,Retained
+t1t3diffq16a,double,numeric,float64,T1 T3 Difference t3q16a t1q13a,F8.2,,,TRUE,Retained
+t1t3diffq16b,double,numeric,float64,T1 T3 Difference q16b,F8.2,,,TRUE,Retained
+t1t3diffq16c,double,numeric,float64,T1 T3 Difference q16c,F8.2,,,TRUE,Retained
+t1t3diffq16d,double,numeric,float64,T1 T3 Difference q16d,F8.2,,,TRUE,Retained
+t1t3diffq16e,double,numeric,float64,T1 T3 Difference q16e,F8.2,,,TRUE,Retained
+t2t3diffq16f,double,numeric,float64,T2 T3 Difference q16f,F8.2,,,TRUE,Retained
+t2t3diffq16g,double,numeric,float64,T2 T3 Difference q16g,F8.2,,,TRUE,Retained
+t2t3diffq16h,double,numeric,float64,T2 T3 Difference q16h,F8.2,,,TRUE,Retained
+t2t3diffq16i,double,numeric,float64,T2 T3 Difference q16i,F8.2,,,TRUE,Retained
+t2t3diffq16j,double,numeric,float64,T2 T3 Difference q16j,F8.2,,,TRUE,Retained
+t1t3diffq17a,double,numeric,float64,T1 T3 Difference t3q17a t1q14a,F8.2,,,TRUE,Retained
+t1t3diffq17b,double,numeric,float64,T1 T3 Difference q17b,F8.2,,,TRUE,Retained
+t1t3diffq17c,double,numeric,float64,T1 T3 Difference q17c,F8.2,,,TRUE,Retained
+t1t3diffq17d,double,numeric,float64,T1 T3 Difference q17d,F8.2,,,TRUE,Retained
+t1t3diffq17e,double,numeric,float64,T1 T3 Difference q17e,F8.2,,,TRUE,Retained
+t2t3diffq17f,double,numeric,float64,T2 T3 Difference q17f,F8.2,,,TRUE,Retained
+t2t3diffq17g,double,numeric,float64,T2 T3 Difference q17g,F8.2,,,TRUE,Retained
+t2t3diffq17h,double,numeric,float64,T2 T3 Difference q17h,F8.2,,,TRUE,Retained
+t2t3diffq17i,double,numeric,float64,T2 T3 Difference q17i,F8.2,,,TRUE,Retained
+t2t3diffq17j,double,numeric,float64,T2 T3 Difference q17j,F8.2,,,TRUE,Retained
+t1t3diffq18a,double,numeric,float64,T1 T3 Difference t3q18a t1q15a,F8.2,,,TRUE,Retained
+t1t3diffq18b,double,numeric,float64,T1 T3 Difference q18b,F8.2,,,TRUE,Retained
+t1t3diffq18c,double,numeric,float64,T1 T3 Difference q18c,F8.2,,,TRUE,Retained
+t1t3diffq18d,double,numeric,float64,T1 T3 Difference q18d,F8.2,,,TRUE,Retained
+t2t3diffq39a,double,numeric,float64,T2 T3 Difference q39a,F8.2,,,TRUE,Retained
+t2t3diffq39b,double,numeric,float64,T2 T3 Difference q39b,F8.2,,,TRUE,Retained
+t2t3diffq39d,double,numeric,float64,T2 T3 Difference q39d,F8.2,,,TRUE,Retained
+t2t3diffq39e,double,numeric,float64,T2 T3 Difference q39e,F8.2,,,TRUE,Retained
+t2t3diffq39f,double,numeric,float64,T2 T3 Difference q39f,F8.2,,,TRUE,Retained
+t2t3diffq39g,double,numeric,float64,T2 T3 Difference q39g,F8.2,,,TRUE,Retained
+t2t3diffq39h,double,numeric,float64,T2 T3 Difference q39h,F8.2,,,TRUE,Retained
+t2t3diffq39i,double,numeric,float64,T2 T3 Difference q39i,F8.2,,,TRUE,Retained
+t2t3diffq39j,double,numeric,float64,T2 T3 Difference q39j,F8.2,,,TRUE,Retained
+t2t3diffq39k,double,numeric,float64,T2 T3 Difference q39k,F8.2,,,TRUE,Retained
+t2t3diffq39l,double,numeric,float64,T2 T3 Difference q39l,F8.2,,,TRUE,Retained
+t2t3diffq39c,double,numeric,float64,T2 T3 Difference q39c,F8.2,,,TRUE,Retained
+t2q4op,double,numeric,float64,t2q4op,F8.2,,,TRUE,Retained
+t1q4op,double,numeric,float64,t1q4op,F8.2,,,TRUE,Retained
+t2q7dop,double,numeric,float64,t2q7dop,F8.2,,,TRUE,Retained
+t3q7dop,double,numeric,float64,t3q7dop,F8.2,,,TRUE,Retained
+t3q5dop,double,numeric,float64,t3q5dop,F8.2,,,TRUE,Retained
+t2q8op,double,numeric,float64,t2q8op,F8.2,,,TRUE,Retained
+t3q14op,double,numeric,float64,t3q14op,F8.2,,,TRUE,Retained
+t3q16eop,double,numeric,float64,t3q16eop,F8.2,,,TRUE,Retained
+t2q16eop,double,numeric,float64,t2q16eop,F8.2,,,TRUE,Retained
+t1q13eop,double,numeric,float64, t1q13eop,F8.2,,,TRUE,Retained
+t2q3eop,double,numeric,float64,t2q3eop,F8.2,,,TRUE,Retained
+t3q3eop,double,numeric,float64,t3q3eop,F8.2,,,TRUE,Retained
+t2q5bcmean,double,numeric,float64,t2q5bcmean,F8.2,,,TRUE,Retained
+t2q5admean,double,numeric,float64,t2q5admean,F8.2,,,TRUE,Retained
+t2q5bcMinadmean,double,numeric,float64,t2q5bcMinadmean,F8.2,,,TRUE,Retained
+t3q7cop,double,numeric,float64,t3q7cop,F8.2,,,TRUE,Retained
+t1q11cop,double,numeric,float64,t1q11cop,F8.2,,,TRUE,Retained
+t2q11cop,double,numeric,float64,t2q11cop,F8.2,,,TRUE,Retained
+t3q11cop,double,numeric,float64,t3q11cop,F8.2,,,TRUE,Retained
+Support_EU_Membership_t1,double,numeric,float64,Support for EU Membership policy at T1 Index,F8.2,,,TRUE,Retained
+Support_EU_Membership_t2,double,numeric,float64,Support for EU Membership policy at T2 Index,F8.2,,,TRUE,Retained
+Support_EU_Membership_t3,double,numeric,float64,Support for EU Membership policy at T3 Index,F8.2,,,TRUE,Retained
+Support_EU_Membershipt1t3diff,double,numeric,float64,Diff. in support for EU Membership policy T3 and T1,F8.2,,,TRUE,Retained
+Support_EU_Membershipt1t3diff_r,double,numeric,float64,Rescaled Diff. in support for EU Membership policy T3 and T1,F8.2,,,TRUE,Retained
+Att_towards_privatization_t1,double,numeric,float64,Attitude towards Privatization policy at T1 Index,F8.2,,,TRUE,Retained
+Att_towards_privatization_t2,double,numeric,float64,Attitude towards Privatization policy at T2 Index,F8.2,,,TRUE,Retained
+Att_towards_privatization_t3,double,numeric,float64,Attitude towards Privatization policy at T3 Index,F8.2,,,TRUE,Retained
+Att_towards_privatization_t3t1Diff,double,numeric,float64,Attitude towards privatization t3t1 Diff policy,F8.2,,,TRUE,Retained
+Att_towards_privatization_recoded,double,numeric,float64,Att_towards_privatization_recoded t3t1 Diff policy,F8.2,,,TRUE,Retained
+mean5bc_t1,double,numeric,float64,,F8.2,,,TRUE,Retained
+mean5bc_t2,double,numeric,float64,,F8.2,,,TRUE,Retained
+mean5ad_t2,double,numeric,float64,,F8.2,,,TRUE,Retained
+mean5bc_t3,double,numeric,float64,,F8.2,,,TRUE,Retained
+mean5ad_t3,double,numeric,float64,,F8.2,,,TRUE,Retained
+Pay_for_pension_1_t2,double,numeric,float64,Pay for pension single item at T2 Index mean 5bc minus mean 5ad,F8.2,,,TRUE,Retained
+Pay_for_pension_1_t3,double,numeric,float64,Pay for pension single item at T3 Index mean 5bc minus mean 5ad,F8.2,,,TRUE,Retained
+Pay_for_pension_single_item_t1,double,numeric,float64,Pay for pension single item at T1 Index mean 5bc minus mean 5a,F8.2,,,TRUE,Retained
+Pay_for_pension_t3t2Diff,double,numeric,float64,Pay for pension single item t3 t2 Diff,F8.2,,,TRUE,Retained
+Pay_for_pension_t3t2Diff_rescale,double,numeric,float64,Rescaled Pay for pension single item t3 t2 Diff,F8.2,,,TRUE,Retained
+Attitude_towards_migration_t1,double,numeric,float64,Attitude towards migration policy at T1 Index,F8.2,,,TRUE,Retained
+Attitude_towards_migration_t2,double,numeric,float64,Support for Open Migration at t2,F8.2,,,TRUE,Retained
+Attitude_towards_migration_t3,double,numeric,float64,Support for Open Migration at t3,F8.2,,,TRUE,Retained
+att_migration_difft3t1,double,numeric,float64,Diff. Attitude towards migration policy,F8.2,,,TRUE,Retained
+att_migration_difft3t1_rescale,double,numeric,float64,Rescaled Diff Attitude towards migration policy,F8.2,,,TRUE,Retained
+diff7ad_t2,double,numeric,float64,,F8.2,,,TRUE,Retained
+diff7ad_t3,double,numeric,float64,,F8.2,,,TRUE,Retained
+diff7ad_t2_rescale,double,numeric,float64,,F8.2,,,TRUE,Retained
+diff7ad_t3_rescale,double,numeric,float64,,F8.2,,,TRUE,Retained
+Free_trade_index_t2,double,numeric,float64,Attitudes towards Free trade at t2,F8.2,,,TRUE,Retained
+Free_trade_index_t3,double,numeric,float64,Attitudes towards Free trade at t3,F8.2,,,TRUE,Retained
+Mil_Att_11_t1,double,numeric,float64,Mil Att at T1 Index 11ac,F8.2,,,TRUE,Retained
+Mil_Att_11_t2,double,numeric,float64,Mil Att at T2 Index 11ac,F8.2,,,TRUE,Retained
+Mil_Att_11_t3,double,numeric,float64,Mil Att at T3 Index 11ac,F8.2,,,TRUE,Retained
+mil_att_11_diff_t3t1,double,numeric,float64,,F8.2,,,TRUE,Retained
+mil_att_11_diff_t3t1_rescaled,double,numeric,float64,,F8.2,,,TRUE,Retained
+Mil_Att_12_t1,double,numeric,float64,Mil Att at T1 Index 12abcd - grounds for intervention,F8.2,,,TRUE,Retained
+Mil_Att_12_t2,double,numeric,float64,Mil Att at T2 Index 12abcd - grounds for intervention,F8.2,,,TRUE,Retained
+Mil_Att_12_t3,double,numeric,float64,Mil Att at T3 Index 12abcd  - grounds for intervention,F8.2,,,TRUE,Retained
+mil_att_12_diff_t3t1,double,numeric,float64,,F8.2,,,TRUE,Retained
+mil_att_12_diff_t3t1_rescaled,double,numeric,float64,,F8.2,,,TRUE,Retained
+Turkey_Enlargement_Att_t1,double,numeric,float64,Turkey_Enlargement_Att at T1 Index 13b,F8.2,,,TRUE,Retained
+Turkey_Enlargement_Att_t2,double,numeric,float64,Turkey_Enlargement_Att at T2 Index 16b,F8.2,,,TRUE,Retained
+Turkey_Enlargement_Att_t3,double,numeric,float64,Turkey_Enlargement_Att at T3 Index 16b,F8.2,,,TRUE,Retained
+turkey_att_diff_t3t1,double,numeric,float64,,F8.2,,,TRUE,Retained
+turkey_att_diff_t3t1_rescale,double,numeric,float64,,F8.2,,,TRUE,Retained
+General_Enlargement_Att_t2,double,numeric,float64,General_Enlargement_Att at T2 Index 16bcf,F8.2,,,TRUE,Retained
+General_Enlargement_Att_f_t2,double,numeric,float64,General_Enlargement_Att at T2 Index 16a bcf,F8.2,,,TRUE,Retained
+General_Enlargement_Att_t3,double,numeric,float64,General_Enlargement_Att at T3 Index 16bcf,F8.2,,,TRUE,Retained
+General_Enlargement_Att_f_t3,double,numeric,float64,General_Enlargement_Att at T3 Index 16a bcf,F8.2,,,TRUE,Retained
+general_enlarg_att_diff_t3t2,double,numeric,float64,,F8.2,,,TRUE,Retained
+EU_Level_Decision_Making_t2,double,numeric,float64,EU_Level_Decision_Making at T2 Index,F8.2,,,TRUE,Retained
+EU_Level_Decision_Making_t3,double,numeric,float64,EU_Level_Decision_Making at T3 Index,F8.2,,,TRUE,Retained
+eu_level_decision_diff_t3t2,double,numeric,float64,,F8.2,,,TRUE,Retained
+EU_Veto_Support_t1,double,numeric,float64,EU Veto Support at T1 Index,F8.2,,,TRUE,Retained
+EU_Veto_Support_t2,double,numeric,float64,EU Veto Support at T2 Index,F8.2,,,TRUE,Retained
+EU_Veto_Support_t3,double,numeric,float64,EU Veto Support at T3 Index,F8.2,,,TRUE,Retained
+EU_Veto_Support_diff_t3t1,double,numeric,float64,,F8.2,,,TRUE,Retained
+mil_att_11_12_t1,double,numeric,float64,,F8.2,,,TRUE,Retained
+mil_att_11_12_t2,double,numeric,float64,,F8.2,,,TRUE,Retained
+mil_att_11_12_t3,double,numeric,float64,,F8.2,,,TRUE,Retained
+mil_att_11_12_t1_f,double,numeric,float64,Combined Mil q11 and 12 att at t1,F8.2,,,TRUE,Retained
+mil_att_11_12_t2_f,double,numeric,float64,Combined Mil q11 and 12 att at t2,F8.2,,,TRUE,Retained
+mil_att_11_12_t3_f,double,numeric,float64,Combined Mil q11 and 12 att at t3,F8.2,,,TRUE,Retained
+Pay_for_pension_1_t2_rescale,double,numeric,float64,,F8.2,,,TRUE,Retained
+Pay_for_pension_1_t3_rescale,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2pkindex,double,numeric,float64,T2 Knowledge average,F8.2,,,TRUE,Retained
+t1pkindex,double,numeric,float64,T1 Knowledge average,F8.2,,,TRUE,Retained
+t3pkindex,double,numeric,float64,T3 Knowledge average,F8.2,,,TRUE,Retained
+t1meangroupknowledge,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2meangroupknowledge,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3meangroupknowledge,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1meangroupSupportEU,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2meangroupSupportEU,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3meangroupSupportEU,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1meanGrpSupEUminInd,double,numeric,float64,EU Supp group Mean minus Ind. Att t1,F8.2,,,TRUE,Retained
+t2meanGrpSupEUminInd,double,numeric,float64,EU Supp group Mean minus Ind. Att t2,F8.2,,,TRUE,Retained
+t3meanGrpSupEUminInd,double,numeric,float64,EU Supp group Mean minus Ind. Att t3,F8.2,,,TRUE,Retained
+t1meangroupAttPriv,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2meangroupAttPriv,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3meangroupAttPriv,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1meanGrpAttPrivminInd,double,numeric,float64,Att Priv  group Mean minus Ind. Att t1,F8.2,,,TRUE,Retained
+t2meanGrpAttPrivminInd,double,numeric,float64,Att Priv group Mean minus Ind. Att t2,F8.2,,,TRUE,Retained
+t3meanGrpAttPrivminInd,double,numeric,float64,Att Priv  group Mean minus Ind. Att t3,F8.2,,,TRUE,Retained
+t2meangroupPension,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3meangroupPension,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2meanGrpPensionminInd,double,numeric,float64,Pension group Mean minus Ind. Att t2,F8.2,,,TRUE,Retained
+t3meanGrpPensionminInd,double,numeric,float64,Pension  group Mean minus Ind. Att t3,F8.2,,,TRUE,Retained
+t1meangroupMigration,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1meanGrpMigrationminInd,double,numeric,float64,Migration group Mean minus Ind. Att t1,F8.2,,,TRUE,Retained
+t2meangroupFreeTrade,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2meanGrpFreeTrademinInd,double,numeric,float64,FreeTrade group Mean minus Ind. Att t2,F8.2,,,TRUE,Retained
+t1meangroupTurkey,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1meanGrpTurkeyminInd,double,numeric,float64,Turkey group Mean minus Ind. Att t1,F8.2,,,TRUE,Retained
+t2meangroupEnlgment,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2meanGrpEnlgmentminInd,double,numeric,float64,Enlgment group Mean minus Ind. Att t2,F8.2,,,TRUE,Retained
+t2meangroupLevelEU,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2meanGrpLevelEUminInd,double,numeric,float64,LevelEU group Mean minus Ind. Att t2,F8.2,,,TRUE,Retained
+t1meangroupVeto,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1meanGrpVetominInd,double,numeric,float64,Veto group Mean minus Ind. Att t1,F8.2,,,TRUE,Retained
+Att_towards_privatization_t3t1Diff_rescale,double,numeric,float64,,F8.2,,,TRUE,Retained
+Support_EU_Membershipt1t3diff_rescale,double,numeric,float64,,F8.2,,,TRUE,Retained
+useless,double,numeric,float64,,F8.2,,,TRUE,Retained
+varPenmin,double,numeric,float64,Pension group Mean minus Ind. Att t2,F8.2,,,TRUE,Retained
+varPenmax,double,numeric,float64,Pension group Mean minus Ind. Att t2,F8.2,,,TRUE,Retained
+t2meanGrpPensionminInd_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+varPrivmin,double,numeric,float64,Att Priv  group Mean minus Ind. Att t1,F8.2,,,TRUE,Retained
+varPrivmax,double,numeric,float64,Att Priv  group Mean minus Ind. Att t1,F8.2,,,TRUE,Retained
+t2meanGrpPrivminInd_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1meanGrpPrivminInd_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+varEULevmin,double,numeric,float64,,F8.2,,,TRUE,Retained
+varEULevmax,double,numeric,float64,,F8.2,,,TRUE,Retained
+eu_level_decision_diff_t3t2_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+EU_Veto_Support_diff_t3t1_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+varSupEUmin,double,numeric,float64,Diff. in support for EU Membership policy T3 and T1,F8.2,,,TRUE,Retained
+varSupEUmax,double,numeric,float64,Diff. in support for EU Membership policy T3 and T1,F8.2,,,TRUE,Retained
+varEUSmin,double,numeric,float64,EU Supp group Mean minus Ind. Att t1,F8.2,,,TRUE,Retained
+varEUSmax,double,numeric,float64,EU Supp group Mean minus Ind. Att t1,F8.2,,,TRUE,Retained
+t1meanGrpSupEUminInd_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3growprosper,double,numeric,float64,Growth & Prosperity Values T3,F8.2,,,TRUE,Retained
+t3protectlwoff,double,numeric,float64,Protect Less Well off Values Index T3,F8.2,,,TRUE,Retained
+t3traditional,double,numeric,float64,Traditionalism Values Index T3,F8.2,,,TRUE,Retained
+t3autonomy,double,numeric,float64,Autonomy Values Index T3,F8.2,,,TRUE,Retained
+t2growprosper,double,numeric,float64,Growth & Prosperity Values T2,F8.2,,,TRUE,Retained
+t2protectlwoff,double,numeric,float64,Protect Less Well off Values Index T2,F8.2,,,TRUE,Retained
+t2traditional,double,numeric,float64,Traditionalism Values Index T2,F8.2,,,TRUE,Retained
+t2autonomy,double,numeric,float64,Autonomy Values Index T2,F8.2,,,TRUE,Retained
+oldnew_mean_by_group,double,numeric,float64,Proportion of Old EU per group,F8.2,,,TRUE,Retained
+turkey_att_t3t1change,double,numeric,float64,,F8.2,,,TRUE,Retained
+ukraine_att_t3t1change,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3t1liketurks,double,numeric,float64,,F8.2,,,TRUE,Retained
+OldnewbygroupBin,double,numeric,float64,Old New By Group Binary,F8.2,,,TRUE,Retained
+t2q39gMissing,double,numeric,float64,t2q39g Missing,F8.2,,,TRUE,Retained
+t3q39gMissing,double,numeric,float64,t3q39g Missing,F8.2,,,TRUE,Retained
+q38recode,double,numeric,float64,occupation recode,F8.2,,,TRUE,Retained
+q37recode,double,numeric,float64,marital recode,F8.2,,,TRUE,Retained
+turkey_att_t3t1changeR,double,numeric,float64,turkey_att_t3t1changeR,F8.2,,,TRUE,Retained
+t2q39gr_r,double,numeric,float64,t2q39g missing recoded to midpoint,F8.2,,,TRUE,Retained
+t3q39gr_r,double,numeric,float64,t3q39g missing recoded to midpoint,F8.2,,,TRUE,Retained
+t3t2q16irdiff,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3t2q39gDiff,double,numeric,float64,T3 t2 Diff Like Turks,F8.2,,,TRUE,Retained
+t3t2q15b,double,numeric,float64,,F8.2,,,TRUE,Retained
+ukraine_att_t3t2change,double,numeric,float64,,F8.2,,,TRUE,Retained
+turkey_att_t3t2change,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3t2q7c,double,numeric,float64,,F8.2,,,TRUE,Retained
+Support_EU_Membership_t3t1_Diff,double,numeric,float64,Diff. in support for EU Membership policy T3 and T1,F8.2,,,TRUE,Retained
+var111,double,numeric,float64,,F8.2,,,TRUE,Retained
+var1_max,double,numeric,float64,Diff. in support for EU Membership policy T3 and T1,F8.2,,,TRUE,Retained
+var1_min,double,numeric,float64,Diff. in support for EU Membership policy T3 and T1,F8.2,,,TRUE,Retained
+Support_EU_Membership_t3t1_Diff_r,double,numeric,float64,Rescaled Diff. in support for EU Membership policy T3 and T1,F8.2,,,TRUE,Retained
+Att_towards_privatization_t3t1_Diff,double,numeric,float64,Diff Attitude towards pension privatization t3t1  policy,F8.2,,,TRUE,Retained
+Att_towards_privatization_t3t1_Diff_r,double,numeric,float64,Att_towards_privatization_recoded t3t1 Diff policy,F8.2,,,TRUE,Retained
+Pay_for_pension_1_t2_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+Pay_for_pension_1_t3_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+Pay_for_pension_t3t2_Diff,double,numeric,float64,Pay for pension single item t3 t2 Diff,F8.2,,,TRUE,Retained
+Pay_for_pension_t3t2Diff_r,double,numeric,float64,Rescaled Pay for pension single item t3 t2 Diff,F8.2,,,TRUE,Retained
+att_migration_t3t1_Diff,double,numeric,float64,Diff. Attitude towards migration policy,F8.2,,,TRUE,Retained
+att_migration_t3t1_Diff_r,double,numeric,float64,Rescaled Diff Attitude towards migration policy t3 t1,F8.2,,,TRUE,Retained
+Pay_for_pension_t3t2_Diff_r,double,numeric,float64,Rescaled Pay for pension single item t3 t2 Diff,F8.2,,,TRUE,Retained
+Attitude_towards_migration_t3t1_Diff_r,double,numeric,float64,Rescaled Diff Attitude towards migration policy t3 t1,F8.2,,,TRUE,Retained
+Free_trade_index_t3t2_Diff,double,numeric,float64,Diff of Attitudes towards Free trade between t3 and t2,F8.2,,,TRUE,Retained
+var1111,double,numeric,float64,,F8.2,,,TRUE,Retained
+var11_max,double,numeric,float64,Diff of Attitudes towards Free trade between t3 and t2,F8.2,,,TRUE,Retained
+var11_min,double,numeric,float64,Diff of Attitudes towards Free trade between t3 and t2,F8.2,,,TRUE,Retained
+Free_trade_index_t3t2_Diff_r,double,numeric,float64,Rescaled Diff. in support for Free trade T3 and T2,F8.2,,,TRUE,Retained
+Mil_Att_11_t3t1_Diff,double,numeric,float64,Mil Att at T3 Index 11ac,F8.2,,,TRUE,Retained
+Mil_Att_11_t3t1_Diff_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+Mil_Att_12_t3t1_Diff,double,numeric,float64,Diff in Mil Att at T3 T1 q12 - grounds for intervention,F8.2,,,TRUE,Retained
+var121,double,numeric,float64,,F8.2,,,TRUE,Retained
+var12_max,double,numeric,float64,Diff in Mil Att at T3 T1 q12 - grounds for intervention,F8.2,,,TRUE,Retained
+var12_min,double,numeric,float64,Diff in Mil Att at T3 T1 q12 - grounds for intervention,F8.2,,,TRUE,Retained
+Mil_Att_12_t3t1_Diff_r,double,numeric,float64,Rescaled Diff. in q12 - grounds for intervention - T3 and T1,F8.2,,,TRUE,Retained
+Mil_Att_11_12_t3t1_Diff,double,numeric,float64,Diff btw Combined Mil q11 and 12 att t3 t1,F8.2,,,TRUE,Retained
+var122,double,numeric,float64,,F8.2,,,TRUE,Retained
+var13_max,double,numeric,float64,Diff btw Combined Mil q11 and 12 att t3 t1,F8.2,,,TRUE,Retained
+var13_min,double,numeric,float64,Diff btw Combined Mil q11 and 12 att t3 t1,F8.2,,,TRUE,Retained
+Mil_Att_11_12_t3t1_Diff_r,double,numeric,float64,Rescaled Diff. in Combined 11 and 12 - mil - T3 and T1,F8.2,,,TRUE,Retained
+Turkey_Enlargement_Att_t3t1_Diff_r,double,numeric,float64,Diff Turkey_Enlargement_Att  T3 t1,F8.2,,,TRUE,Retained
+var123,double,numeric,float64,,F8.2,,,TRUE,Retained
+var14_max,double,numeric,float64,,F8.2,,,TRUE,Retained
+var14_min,double,numeric,float64,,F8.2,,,TRUE,Retained
+General_Enlargement_Att_t3t2_Diff_r,double,numeric,float64,Rescaled Diff. in general enlargement t3 and t2,F8.2,,,TRUE,Retained
+var124,double,numeric,float64,,F8.2,,,TRUE,Retained
+var15_max,double,numeric,float64,,F8.2,,,TRUE,Retained
+var15_min,double,numeric,float64,,F8.2,,,TRUE,Retained
+EU_Level_Decision_Making_t3t2_Diff,double,numeric,float64,Diff EU_Level_Decision_Making T3 T1 Index,F8.2,,,TRUE,Retained
+var125,double,numeric,float64,,F8.2,,,TRUE,Retained
+var16_max,double,numeric,float64,Diff EU_Level_Decision_Making T3 T1 Index,F8.2,,,TRUE,Retained
+var16_min,double,numeric,float64,Diff EU_Level_Decision_Making T3 T1 Index,F8.2,,,TRUE,Retained
+EU_Level_Decision_Making_t3t2_Diff_r,double,numeric,float64,Rescaled Diff. in EU Level of Descision Making t3 t2,F8.2,,,TRUE,Retained
+var126,double,numeric,float64,,F8.2,,,TRUE,Retained
+var17_max,double,numeric,float64,,F8.2,,,TRUE,Retained
+var17_min,double,numeric,float64,,F8.2,,,TRUE,Retained
+EU_Veto_Support_t3t1_Diff_r,double,numeric,float64,Rescaled Diff. in EU veto support t3 t1,F8.2,,,TRUE,Retained
+mint3q9dr,double,numeric,float64,,F8.2,,,TRUE,Retained
+mint3q9gr,double,numeric,float64,,F8.2,,,TRUE,Retained
+mint3q9fr,double,numeric,float64,,F8.2,,,TRUE,Retained
+OldNewKnowt3Interaction,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q16ghmean,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q16ghmean,double,numeric,float64,,F8.2,,,TRUE,Retained
+Free_Trade_Positive_t2,double,numeric,float64,Free Trade positive outcome empirics t2,F8.2,,,TRUE,Retained
+Free_Trade_Positive_t3,double,numeric,float64,Free Trade positive outcome empirics t3,F8.2,,,TRUE,Retained
+Free_Trade_Negative_t2,double,numeric,float64,Free Trade negative outcome empirics t2,F8.2,,,TRUE,Retained
+Free_Trade_Negative_t3,double,numeric,float64,Free Trade negative outcome empirics t3,F8.2,,,TRUE,Retained
+t3econknowledge,double,numeric,float64,,F8.2,,,TRUE,Retained
+t310bd,double,numeric,float64,,F8.2,,,TRUE,Retained
+t210bd,double,numeric,float64,,F8.2,,,TRUE,Retained
+Free_Trade_Negative_t3t2_Diff,double,numeric,float64,Free Trade negative Diff outcome empirical premise t3t2,F8.2,,,TRUE,Retained
+Free_Trade_Negative_t3t2_Diff_r,double,numeric,float64,Recoded Free Trade negative Diff outcome empirical premise t3t2,F8.2,,,TRUE,Retained
+Free_Trade_Positive_t3t2_Diff,double,numeric,float64,Free Trade positive  Diff outcome empirical premise t3t2,F8.2,,,TRUE,Retained
+Free_Trade_Positive_t3t2_Diff_r,double,numeric,float64,Recoded Free Trade Positive Diff outcome empirical premise t3t2,F8.2,,,TRUE,Retained
+q16dt3t2Diff,double,numeric,float64,,F8.2,,,TRUE,Retained
+q16et3t2Diff,double,numeric,float64,,F8.2,,,TRUE,Retained
+q16gt3t2Diff,double,numeric,float64,,F8.2,,,TRUE,Retained
+q16ht3t2Diff,double,numeric,float64,,F8.2,,,TRUE,Retained
+q16it3t2Diff,double,numeric,float64,,F8.2,,,TRUE,Retained
+q16jt3t2Diff,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3t2growprosper,double,numeric,float64,Diff. Growth & Prosperity Values T3 T2,F8.2,,,TRUE,Retained
+t3t2protectlwoff,double,numeric,float64,Diff. Protect Less Well off Values Index T3 T2,F8.2,,,TRUE,Retained
+t3t2traditional,double,numeric,float64,Diff. Traditionalism Values Index T3 T2,F8.2,,,TRUE,Retained
+t3t2autonomy,double,numeric,float64,Diff. Autonomy Values Index T3 T2,F8.2,,,TRUE,Retained
+t3t2growprosper_r,double,numeric,float64,Recoded Diff. Growth & Prosperity Values T3 T2,F8.2,,,TRUE,Retained
+q10bdt3t2Diff,double,numeric,float64,,F8.2,,,TRUE,Retained
+att_migration_t3t2_Diff,double,numeric,float64,Diff. Attitude towards migration policy t3 t2,F8.2,,,TRUE,Retained
+q39recode,double,numeric,float64,Education University or above dummy,F8.2,,,TRUE,Retained
+q38r,double,numeric,float64,occupation recode,F8.2,,,TRUE,Retained
+AvgLikeWesternEUT3,double,numeric,float64,Average Like Dislike Western Europe Countries at T3,F8.2,,,TRUE,Retained
+AvgLikeWesternEUT2,double,numeric,float64,Average Like Dislike Western Europe Countries at T2,F8.2,,,TRUE,Retained
+q16dt3t2Diff_r,double,numeric,float64,T3 T2 Diff. Recoded Adding a Muslim country to the EU would improve the EU’s relations with the Muslim world,F8.2,,,TRUE,Retained
+q16et3t2Diff_r,double,numeric,float64,T3 T2 Diff. Recoded Adding a Muslim country to the EU would make the EU too diverse,F8.2,,,TRUE,Retained
+q16gt3t2Diff_r,double,numeric,float64,T3 T2 Diff.  Recoded Adding more countries to the EU would help our economy,F8.2,,,TRUE,Retained
+q16ht3t2Diff_r,double,numeric,float64,T3 T2 Diff.  Recoded Adding more countries to the EU  would help our security,F8.2,,,TRUE,Retained
+q16it3t2Diff_r,double,numeric,float64,T3 T2 Diff.  Recoded Adding more countries to the EU would make it more difficult for the EU to make decisions,F8.2,,,TRUE,Retained
+att_migration_t3t2_Diff_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+q10at3t2Diff,double,numeric,float64,,F8.2,,,TRUE,Retained
+q10bt3t2Diff,double,numeric,float64,,F8.2,,,TRUE,Retained
+q10ct3t2Diff,double,numeric,float64,,F8.2,,,TRUE,Retained
+q10dt3t2Diff,double,numeric,float64,,F8.2,,,TRUE,Retained
+q10et3t2Diff,double,numeric,float64,,F8.2,,,TRUE,Retained
+q10at3t2Diff_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+q10dt3t2Diff_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+q10et3t2Diff_r,double,numeric,float64,T3 T2 Diff. Your country can provide security,F8.2,,,TRUE,Retained
+q10bt3t2Diff_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+AvgLikeWesternEUT3T2Diff,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3t2q39krDiff,double,numeric,float64,T3 T2 Diff. EU Like Dislike,F8.2,,,TRUE,Retained
+t3t2q39jrDiff,double,numeric,float64,T3 T2 Diff.Russia Like Dislike,F8.2,,,TRUE,Retained
+t3t2q39irDiff,double,numeric,float64,T3 T2 Diff. Chinese Like Dislike,F8.2,,,TRUE,Retained
+t3t2q39hrDiff,double,numeric,float64,T3 T2 Diff.  Americans Like Dislike,F8.2,,,TRUE,Retained
+t3t2q39lrDiff,double,numeric,float64,T3 T2 Diff.  UN Like Dislike,F8.2,,,TRUE,Retained
+turkeyt3t2Diff,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3t2q3aDiff,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3t2q3bDiff,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3t2q3cDiff,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3t2q9cDiff,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3t2q38eDiff,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3t2q38jDiff,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3t2q15aDiff,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3t2q15bDiff,double,numeric,float64,,F8.2,,,TRUE,Retained
+gent3t2Diff,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q33a_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q36ar_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q36ar_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1q33b_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2q36br_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3q36br_r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1knowindnew,double,numeric,float64,,F8.2,,,TRUE,Retained
+t2knowindnew,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3knowindnew,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3t1knowdiff,double,numeric,float64,,F8.2,,,TRUE,Retained
+q35r,double,numeric,float64,,F8.2,,,TRUE,Retained
+q39r,double,numeric,float64,,F8.2,,,TRUE,Retained
+t1econknow,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3econknow,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3t1econknowdiff,double,numeric,float64,,F8.2,,,TRUE,Retained
+high_ed_by_group,double,numeric,float64,,F8.2,,,TRUE,Retained
+q38adiff,double,numeric,float64,t3 t2 Diff value Ensuring equal opportunity,F8.2,,,TRUE,Retained
+q38bdiff,double,numeric,float64,t3 t2 Diff value Making sure nobody goes hungry or lacks medical care,F8.2,,,TRUE,Retained
+q38cdiff,double,numeric,float64,t3 t2 Diff value Preserving traditional industries,F8.2,,,TRUE,Retained
+q38ddiff,double,numeric,float64,t3 t2 Diff value Minimizing the gap between rich and poor,F8.2,,,TRUE,Retained
+q38ediff,double,numeric,float64,t3 t2 Diff value Keeping prices down,F8.2,,,TRUE,Retained
+q38fdiff,double,numeric,float64,t3 t2 Diff value Leaving people and companies free to compete economically,F8.2,,,TRUE,Retained
+q38gdiff,double,numeric,float64,t3 t2 Diff value Making ones own choices,F8.2,,,TRUE,Retained
+q38hdiff,double,numeric,float64,t3 t2 Diff value Preserving traditions and customs,F8.2,,,TRUE,Retained
+q38idiff,double,numeric,float64,t3 t2 Diff value Promoting economic growth,F8.2,,,TRUE,Retained
+q38jdiff,double,numeric,float64,t3 t2 Diff value Not having to worry about being fired,F8.2,,,TRUE,Retained
+q38kdiff,double,numeric,float64,t3 t2 Diff value Making our economy competitive in the global arena,F8.2,,,TRUE,Retained
+q38ldiff,double,numeric,float64,t3 t2 Diff value Earning as much money as possible,F8.2,,,TRUE,Retained
+q38mdiff,double,numeric,float64,t3 t2 Diff value Helping people in other parts of the world,F8.2,,,TRUE,Retained
+q38ndiff,double,numeric,float64,t3 t2 Diff value Having Europe play a larger role in the world,F8.2,,,TRUE,Retained
+q38odiff,double,numeric,float64,t3 t2 Diff value Being able to retire comfortably,F8.2,,,TRUE,Retained
+Ukraine3t2Diff,double,numeric,float64,,F8.2,,,TRUE,Retained
+t3geneconval,double,numeric,float64,T3 General Economic Growth Value,F8.2,,,TRUE,Retained
+t3perseconval,double,numeric,float64,T3 Personal Economic Growth Value,F8.2,,,TRUE,Retained
+t2geneconval,double,numeric,float64,T2 General Economic Growth Value,F8.2,,,TRUE,Retained
+t2perseconval,double,numeric,float64,T2 Personal Economic Growth Value,F8.2,,,TRUE,Retained
+t3protectlessoff,double,numeric,float64,T3 Protect Less well off Value,F8.2,,,TRUE,Retained
+t2protectlessoff,double,numeric,float64,T2 Protect Less well off Value,F8.2,,,TRUE,Retained
+t3t2geneconval,double,numeric,float64,T3 T2 Diff General Econ Value,F8.2,,,TRUE,Retained
+t3t2perseconval,double,numeric,float64,T3 T2 Diff Personal Econ Value,F8.2,,,TRUE,Retained
+t3t2protectlessoff,double,numeric,float64,T3 T2 Protect Less well off Value,F8.2,,,TRUE,Retained
+per,double,numeric,float64,,F8.2,,,TRUE,Retained
+h16,double,numeric,float64,,F8.2,,,TRUE,Retained
+n,double,numeric,float64,,F8.2,,,TRUE,Retained
+n4,double,numeric,float64,,F8.2,,,TRUE,Retained
+n5,double,numeric,float64,,F8.2,,,TRUE,Retained
+n6,double,numeric,float64,,F8.2,,,TRUE,Retained
+n7,double,numeric,float64,,F8.2,,,TRUE,Retained
+n8,double,numeric,float64,,F8.2,,,TRUE,Retained
+n9,double,numeric,float64,,F8.2,,,TRUE,Retained
+n10,double,numeric,float64,,F8.2,,,TRUE,Retained
+OldnewEd,double,numeric,float64,Education Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3q16er,double,numeric,float64,T3 Adding a Muslim country to the EU would make the EU too diverse Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3q16gr,double,numeric,float64,T3 Adding more countries to the EU would help our economy Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3q16hr,double,numeric,float64,T3 Adding more countries to the EU  would help our security Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3q16ir,double,numeric,float64,T3 Adding more countries to the EU would make it more difficult for the EU to make decisions Interacted with oldnew,F8.2,,,TRUE,Retained
+OldAttitude_towards_migration_t3,double,numeric,float64,Attitude towards open migration policy at T3 Index Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3q10er,double,numeric,float64,T3 Your Country -relied on to protect your country’s peace and security Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3q38er,double,numeric,float64,T3 Keeping prices down - important for themselves or society to have  Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3q38mr,double,numeric,float64,T3 Values - Helping people in other parts of the world Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3q38nr,double,numeric,float64,T3 Values - Having Europe play a larger role in the world Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3geneconval,double,numeric,float64,T3 General Economic Growth Value Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3perseconval,double,numeric,float64,T3 Personal Economic Growth Value Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3autonomy,double,numeric,float64,Autonomy Values Index T3 Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3traditional,double,numeric,float64,Traditionalism Values Index T3 Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3protectlessoff,double,numeric,float64,T3 Protect Less well off Value Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3q39gr,double,numeric,float64,T3 Turks Like Dislike Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3q16dr,double,numeric,float64,T3 Adding Muslim country to EU would improve relations with Muslim world Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3pkindexnew,double,numeric,float64,T3 Pk Index Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3knowindnew,double,numeric,float64,T3 Knowledge Index Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldtt3q39jr,double,numeric,float64,T3 Russia Like Dislike Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3q39jr,double,numeric,float64,T3 Russia Like Dislike Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3q15ar,double,numeric,float64,T3 important a problem Europe’s dependency on Russian energy supplies Interacted with oldnew,F8.2,,,TRUE,Retained
+Oldt3q15br,double,numeric,float64,T3 important a problem Russian interference in Eastern European and Central Asian Interacted with oldnew,F8.2,,,TRUE,Retained

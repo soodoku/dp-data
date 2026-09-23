@@ -1,0 +1,887 @@
+source_column,source_value,value_label
+qa,1,AT
+qa,2,BE
+qa,3,BG
+qa,4,CH
+qa,5,CY
+qa,6,CZ
+qa,7,DK
+qa,8,EE
+qa,9,EG/WG
+qa,10,EL
+qa,11,ES
+qa,12,FI
+qa,13,FR
+qa,14,GB
+qa,15,HR
+qa,16,HU
+qa,17,IE
+qa,18,IS
+qa,19,IT
+qa,20,LT
+qa,21,LU
+qa,22,LV
+qa,23,MT
+qa,24,NC
+qa,25,NI
+qa,26,NL
+qa,27,NO
+qa,28,PL
+qa,29,PT
+qa,30,RO
+qa,31,SE
+qa,32,SI
+qa,33,SK
+qa,34,TR
+qa,35,DK
+qrs,1,National
+qrs,2,National plus other nationalities
+qrs,3,NOT a national
+qrs,4,DK
+qrs,5,Refused
+q35,1,Male
+q35,2,Female
+q35,3,DK
+q36,1,18 - 24 years old
+q36,2,25 - 39 years old
+q36,3,40 - 54 years old
+q36,4,55 - 69 years old
+q36,5,70 years old and more
+q36,6,DK
+q37,1,Single (never married)
+q37,2,Married
+q37,3,Unmarried but living with a partner
+q37,4,Separated or divorced
+q37,5,Widowed
+q37,6,No answer
+q38,1,Working full-time
+q38,2,Working part-time
+q38,3,Not working (seeking work)
+q38,4,On a government training scheme
+q38,5,Retired
+q38,6,In full-time education
+q38,7,Looking after the home
+q38,8,Permanently sick or disabled
+q38,9,Not working (and not seeking work)
+q38,10,Caring for an elderly or disabled person full-time
+q38,11,Other
+q38,12,No answer
+q39,1,Did not finish secondary school
+q39,2,Finished secondary school
+q39,3,Some university
+q39,4,University degree
+q39,5,Some postgraduate
+q39,6,Postgraduate degree
+q39,7,No answer
+qqa,1,Yes
+qqa,2,No
+qqa,3,Maybe
+qqa,4,DK
+qlg,1,Bulgarian
+qlg,2,Czech
+qlg,3,Danish
+qlg,4,Dutch
+qlg,5,English
+qlg,6,Estonian
+qlg,7,Finnish
+qlg,8,French
+qlg,9,German
+qlg,10,Greek
+qlg,11,Hungarian
+qlg,12,Italian
+qlg,13,Latvian
+qlg,14,Lithuanian
+qlg,15,Polish
+qlg,16,Portuguese
+qlg,17,Romanian
+qlg,18,Slovak
+qlg,19,Slovenian
+qlg,20,Spanish
+qlg,21,Swedish
+qlg,22,DK
+qp1,1,08/25
+qp1,2,08/26
+qp1,3,08/27
+qp1,4,08/28
+qp1,5,08/29
+qp1,6,08/30
+qp1,7,08/31
+qp1,8,09/01
+qp1,9,09/02
+qp1,10,09/03
+qp1,11,09/04
+qp1,12,09/05
+qp1,13,09/06
+qp1,14,09/07
+qp1,15,09/08
+qp1,16,09/09
+qp1,17,09/10
+qp1,18,09/11
+qp1,19,09/12
+q1_1,1,0
+q1_1,2,1
+q1_1,3,2
+q1_1,4,3
+q1_1,5,4
+q1_1,6,5
+q1_1,7,6
+q1_1,8,7
+q1_1,9,8
+q1_1,10,9
+q1_1,11,10
+q1_1,12,REF
+q1_1,13,DK
+q2_1,1,0
+q2_1,2,1
+q2_1,3,2
+q2_1,4,3
+q2_1,5,4
+q2_1,6,5
+q2_1,7,6
+q2_1,8,7
+q2_1,9,8
+q2_1,10,9
+q2_1,11,10
+q2_1,12,REF
+q2_1,13,DK
+q3a_1,1,Agree strongly
+q3a_1,2,Agree somewhat
+q3a_1,3,Neither agree nor disagree
+q3a_1,4,Disagree somewhat
+q3a_1,5,Disagree strongly
+q3a_1,6,No opinion
+q3a_1,7,REF
+q3a_1_ST1,0,No
+q3a_1_ST1,1,Yes
+q3a_1_ST2,0,No
+q3a_1_ST2,1,Yes
+q3b_1,1,Agree strongly
+q3b_1,2,Agree somewhat
+q3b_1,3,Neither agree nor disagree
+q3b_1,4,Disagree somewhat
+q3b_1,5,Disagree strongly
+q3b_1,6,No opinion
+q3b_1,7,REF
+q3b_1_ST1,0,No
+q3b_1_ST1,1,Yes
+q3b_1_ST2,0,No
+q3b_1_ST2,1,Yes
+q4_1,1,0
+q4_1,2,1
+q4_1,3,2
+q4_1,4,3
+q4_1,5,4
+q4_1,6,5
+q4_1,7,6
+q4_1,8,7
+q4_1,9,8
+q4_1,10,9
+q4_1,11,10
+q4_1,12,REF
+q4_1,13,DK
+q5a_1,1,Favour it strongly
+q5a_1,2,Favour it somewhat
+q5a_1,3,Neither favour nor oppose it
+q5a_1,4,Oppose it somewhat
+q5a_1,5,Oppose it strongly
+q5a_1,6,No opinion
+q5a_1,7,REF
+q5a_1_ST1,0,No
+q5a_1_ST1,1,Yes
+q5a_1_ST2,0,No
+q5a_1_ST2,1,Yes
+q5b_1,1,Favour it strongly
+q5b_1,2,Favour it somewhat
+q5b_1,3,Neither favour nor oppose it
+q5b_1,4,Oppose it somewhat
+q5b_1,5,Oppose it strongly
+q5b_1,6,No opinion
+q5b_1,7,REF
+q5b_1_ST1,0,No
+q5b_1_ST1,1,Yes
+q5b_1_ST2,0,No
+q5b_1_ST2,1,Yes
+q5c_1,1,Favour it strongly
+q5c_1,2,Favour it somewhat
+q5c_1,3,Neither favour nor oppose it
+q5c_1,4,Oppose it somewhat
+q5c_1,5,Oppose it strongly
+q5c_1,6,No opinion
+q5c_1,7,REF
+q5c_1_ST1,0,No
+q5c_1_ST1,1,Yes
+q5c_1_ST2,0,No
+q5c_1_ST2,1,Yes
+q6a_1,1,Agree strongly
+q6a_1,2,Agree somewhat
+q6a_1,3,Neither agree nor disagree
+q6a_1,4,Disagree somewhat
+q6a_1,5,Disagree strongly
+q6a_1,6,No opinion
+q6a_1,7,REF
+q6a_1_ST1,0,No
+q6a_1_ST1,1,Yes
+q6a_1_ST2,0,No
+q6a_1_ST2,1,Yes
+q6b_1,1,Agree strongly
+q6b_1,2,Agree somewhat
+q6b_1,3,Neither agree nor disagree
+q6b_1,4,Disagree somewhat
+q6b_1,5,Disagree strongly
+q6b_1,6,No opinion
+q6b_1,7,REF
+q6b_1_ST1,0,No
+q6b_1_ST1,1,Yes
+q6b_1_ST2,0,No
+q6b_1_ST2,1,Yes
+q7a_1,1,Favour it strongly
+q7a_1,2,Favour it somewhat
+q7a_1,3,Neither favour nor oppose it
+q7a_1,4,Oppose it somewhat
+q7a_1,5,Oppose it strongly
+q7a_1,6,No opinion
+q7a_1,7,REF
+q7a_1_ST1,0,No
+q7a_1_ST1,1,Yes
+q7a_1_ST2,0,No
+q7a_1_ST2,1,Yes
+q7b_1,1,Favour it strongly
+q7b_1,2,Favour it somewhat
+q7b_1,3,Neither favour nor oppose it
+q7b_1,4,Oppose it somewhat
+q7b_1,5,Oppose it strongly
+q7b_1,6,No opinion
+q7b_1,7,REF
+q7b_1_ST1,0,No
+q7b_1_ST1,1,Yes
+q7b_1_ST2,0,No
+q7b_1_ST2,1,Yes
+q7c_1,1,Favour it strongly
+q7c_1,2,Favour it somewhat
+q7c_1,3,Neither favour nor oppose it
+q7c_1,4,Oppose it somewhat
+q7c_1,5,Oppose it strongly
+q7c_1,6,No opinion
+q7c_1,7,REF
+q7c_1_ST1,0,No
+q7c_1_ST1,1,Yes
+q7c_1_ST2,0,No
+q7c_1_ST2,1,Yes
+q8_1,1,0
+q8_1,2,1
+q8_1,3,2
+q8_1,4,3
+q8_1,5,4
+q8_1,6,5
+q8_1,7,6
+q8_1,8,7
+q8_1,9,8
+q8_1,10,9
+q8_1,11,10
+q8_1,12,REF
+q8_1,13,DK
+q9a_1,1,Agree strongly
+q9a_1,2,Agree somewhat
+q9a_1,3,Neither agree nor disagree
+q9a_1,4,Disagree somewhat
+q9a_1,5,Disagree strongly
+q9a_1,6,No opinion
+q9a_1,7,REF
+q9a_1_ST1,0,No
+q9a_1_ST1,1,Yes
+q9a_1_ST2,0,No
+q9a_1_ST2,1,Yes
+q9b_1,1,Agree strongly
+q9b_1,2,Agree somewhat
+q9b_1,3,Neither agree nor disagree
+q9b_1,4,Disagree somewhat
+q9b_1,5,Disagree strongly
+q9b_1,6,No opinion
+q9b_1,7,REF
+q9b_1_ST1,0,No
+q9b_1_ST1,1,Yes
+q9b_1_ST2,0,No
+q9b_1_ST2,1,Yes
+q10a_1,1,0
+q10a_1,2,1
+q10a_1,3,2
+q10a_1,4,3
+q10a_1,5,4
+q10a_1,6,5
+q10a_1,7,6
+q10a_1,8,7
+q10a_1,9,8
+q10a_1,10,9
+q10a_1,11,10
+q10a_1,12,REF
+q10a_1,13,DK
+q10b_1,1,0
+q10b_1,2,1
+q10b_1,3,2
+q10b_1,4,3
+q10b_1,5,4
+q10b_1,6,5
+q10b_1,7,6
+q10b_1,8,7
+q10b_1,9,8
+q10b_1,10,9
+q10b_1,11,10
+q10b_1,12,REF
+q10b_1,13,DK
+q10c_1,1,0
+q10c_1,2,1
+q10c_1,3,2
+q10c_1,4,3
+q10c_1,5,4
+q10c_1,6,5
+q10c_1,7,6
+q10c_1,8,7
+q10c_1,9,8
+q10c_1,10,9
+q10c_1,11,10
+q10c_1,12,REF
+q10c_1,13,DK
+q10d_1,1,0
+q10d_1,2,1
+q10d_1,3,2
+q10d_1,4,3
+q10d_1,5,4
+q10d_1,6,5
+q10d_1,7,6
+q10d_1,8,7
+q10d_1,9,8
+q10d_1,10,9
+q10d_1,11,10
+q10d_1,12,REF
+q10d_1,13,DK
+q10e_1,1,0
+q10e_1,2,1
+q10e_1,3,2
+q10e_1,4,3
+q10e_1,5,4
+q10e_1,6,5
+q10e_1,7,6
+q10e_1,8,7
+q10e_1,9,8
+q10e_1,10,9
+q10e_1,11,10
+q10e_1,12,REF
+q10e_1,13,DK
+q11a_1,1,Agree strongly
+q11a_1,2,Agree somewhat
+q11a_1,3,Neither agree nor disagree
+q11a_1,4,Disagree somewhat
+q11a_1,5,Disagree strongly
+q11a_1,6,No opinion
+q11a_1,7,REF
+q11a_1_ST1,0,No
+q11a_1_ST1,1,Yes
+q11a_1_ST2,0,No
+q11a_1_ST2,1,Yes
+q11b_1,1,Agree strongly
+q11b_1,2,Agree somewhat
+q11b_1,3,Neither agree nor disagree
+q11b_1,4,Disagree somewhat
+q11b_1,5,Disagree strongly
+q11b_1,6,No opinion
+q11b_1,7,REF
+q11b_1_ST1,0,No
+q11b_1_ST1,1,Yes
+q11b_1_ST2,0,No
+q11b_1_ST2,1,Yes
+q11c_1,1,Agree strongly
+q11c_1,2,Agree somewhat
+q11c_1,3,Neither agree nor disagree
+q11c_1,4,Disagree somewhat
+q11c_1,5,Disagree strongly
+q11c_1,6,No opinion
+q11c_1,7,REF
+q11c_1_ST1,0,No
+q11c_1_ST1,1,Yes
+q11c_1_ST2,0,No
+q11c_1_ST2,1,Yes
+q12a_1,1,0
+q12a_1,2,1
+q12a_1,3,2
+q12a_1,4,3
+q12a_1,5,4
+q12a_1,6,5
+q12a_1,7,6
+q12a_1,8,7
+q12a_1,9,8
+q12a_1,10,9
+q12a_1,11,10
+q12a_1,12,REF
+q12a_1,13,DK
+q12b_1,1,0
+q12b_1,2,1
+q12b_1,3,2
+q12b_1,4,3
+q12b_1,5,4
+q12b_1,6,5
+q12b_1,7,6
+q12b_1,8,7
+q12b_1,9,8
+q12b_1,10,9
+q12b_1,11,10
+q12b_1,12,REF
+q12b_1,13,DK
+q12c_1,1,0
+q12c_1,2,1
+q12c_1,3,2
+q12c_1,4,3
+q12c_1,5,4
+q12c_1,6,5
+q12c_1,7,6
+q12c_1,8,7
+q12c_1,9,8
+q12c_1,10,9
+q12c_1,11,10
+q12c_1,12,REF
+q12c_1,13,DK
+q12d_1,1,0
+q12d_1,2,1
+q12d_1,3,2
+q12d_1,4,3
+q12d_1,5,4
+q12d_1,6,5
+q12d_1,7,6
+q12d_1,8,7
+q12d_1,9,8
+q12d_1,10,9
+q12d_1,11,10
+q12d_1,12,REF
+q12d_1,13,DK
+q13a_1,1,Agree strongly
+q13a_1,2,Agree somewhat
+q13a_1,3,Neither agree nor disagree
+q13a_1,4,Disagree somewhat
+q13a_1,5,Disagree strongly
+q13a_1,6,No opinion
+q13a_1,7,REF
+q13a_1_ST1,0,No
+q13a_1_ST1,1,Yes
+q13a_1_ST2,0,No
+q13a_1_ST2,1,Yes
+q13b_1,1,Agree strongly
+q13b_1,2,Agree somewhat
+q13b_1,3,Neither agree nor disagree
+q13b_1,4,Disagree somewhat
+q13b_1,5,Disagree strongly
+q13b_1,6,No opinion
+q13b_1,7,REF
+q13b_1_ST1,0,No
+q13b_1_ST1,1,Yes
+q13b_1_ST2,0,No
+q13b_1_ST2,1,Yes
+q13c_1,1,Agree strongly
+q13c_1,2,Agree somewhat
+q13c_1,3,Neither agree nor disagree
+q13c_1,4,Disagree somewhat
+q13c_1,5,Disagree strongly
+q13c_1,6,No opinion
+q13c_1,7,REF
+q13c_1_ST1,0,No
+q13c_1_ST1,1,Yes
+q13c_1_ST2,0,No
+q13c_1_ST2,1,Yes
+q13d_1,1,Agree strongly
+q13d_1,2,Agree somewhat
+q13d_1,3,Neither agree nor disagree
+q13d_1,4,Disagree somewhat
+q13d_1,5,Disagree strongly
+q13d_1,6,No opinion
+q13d_1,7,REF
+q13d_1_ST1,0,No
+q13d_1_ST1,1,Yes
+q13d_1_ST2,0,No
+q13d_1_ST2,1,Yes
+q13e_1,1,Agree strongly
+q13e_1,2,Agree somewhat
+q13e_1,3,Neither agree nor disagree
+q13e_1,4,Disagree somewhat
+q13e_1,5,Disagree strongly
+q13e_1,6,No opinion
+q13e_1,7,REF
+q13e_1_ST1,0,No
+q13e_1_ST1,1,Yes
+q13e_1_ST2,0,No
+q13e_1_ST2,1,Yes
+q14a_1,1,0
+q14a_1,2,1
+q14a_1,3,2
+q14a_1,4,3
+q14a_1,5,4
+q14a_1,6,5
+q14a_1,7,6
+q14a_1,8,7
+q14a_1,9,8
+q14a_1,10,9
+q14a_1,11,10
+q14a_1,12,REF
+q14a_1,13,DK
+q14b_1,1,0
+q14b_1,2,1
+q14b_1,3,2
+q14b_1,4,3
+q14b_1,5,4
+q14b_1,6,5
+q14b_1,7,6
+q14b_1,8,7
+q14b_1,9,8
+q14b_1,10,9
+q14b_1,11,10
+q14b_1,12,REF
+q14b_1,13,DK
+q14c_1,1,0
+q14c_1,2,1
+q14c_1,3,2
+q14c_1,4,3
+q14c_1,5,4
+q14c_1,6,5
+q14c_1,7,6
+q14c_1,8,7
+q14c_1,9,8
+q14c_1,10,9
+q14c_1,11,10
+q14c_1,12,REF
+q14c_1,13,DK
+q14d_1,1,0
+q14d_1,2,1
+q14d_1,3,2
+q14d_1,4,3
+q14d_1,5,4
+q14d_1,6,5
+q14d_1,7,6
+q14d_1,8,7
+q14d_1,9,8
+q14d_1,10,9
+q14d_1,11,10
+q14d_1,12,REF
+q14d_1,13,DK
+q14e_1,1,0
+q14e_1,2,1
+q14e_1,3,2
+q14e_1,4,3
+q14e_1,5,4
+q14e_1,6,5
+q14e_1,7,6
+q14e_1,8,7
+q14e_1,9,8
+q14e_1,10,9
+q14e_1,11,10
+q14e_1,12,REF
+q14e_1,13,DK
+q14f_1,1,0
+q14f_1,2,1
+q14f_1,3,2
+q14f_1,4,3
+q14f_1,5,4
+q14f_1,6,5
+q14f_1,7,6
+q14f_1,8,7
+q14f_1,9,8
+q14f_1,10,9
+q14f_1,11,10
+q14f_1,12,REF
+q14f_1,13,DK
+q14g_1,1,0
+q14g_1,2,1
+q14g_1,3,2
+q14g_1,4,3
+q14g_1,5,4
+q14g_1,6,5
+q14g_1,7,6
+q14g_1,8,7
+q14g_1,9,8
+q14g_1,10,9
+q14g_1,11,10
+q14g_1,12,REF
+q14g_1,13,DK
+q14h_1,1,0
+q14h_1,2,1
+q14h_1,3,2
+q14h_1,4,3
+q14h_1,5,4
+q14h_1,6,5
+q14h_1,7,6
+q14h_1,8,7
+q14h_1,9,8
+q14h_1,10,9
+q14h_1,11,10
+q14h_1,12,REF
+q14h_1,13,DK
+q14i_1,1,0
+q14i_1,2,1
+q14i_1,3,2
+q14i_1,4,3
+q14i_1,5,4
+q14i_1,6,5
+q14i_1,7,6
+q14i_1,8,7
+q14i_1,9,8
+q14i_1,10,9
+q14i_1,11,10
+q14i_1,12,REF
+q14i_1,13,DK
+q14j_1,1,0
+q14j_1,2,1
+q14j_1,3,2
+q14j_1,4,3
+q14j_1,5,4
+q14j_1,6,5
+q14j_1,7,6
+q14j_1,8,7
+q14j_1,9,8
+q14j_1,10,9
+q14j_1,11,10
+q14j_1,12,REF
+q14j_1,13,DK
+q15a_1,1,0
+q15a_1,2,1
+q15a_1,3,2
+q15a_1,4,3
+q15a_1,5,4
+q15a_1,6,5
+q15a_1,7,6
+q15a_1,8,7
+q15a_1,9,8
+q15a_1,10,9
+q15a_1,11,10
+q15a_1,12,REF
+q15a_1,13,DK
+q15b_1,1,0
+q15b_1,2,1
+q15b_1,3,2
+q15b_1,4,3
+q15b_1,5,4
+q15b_1,6,5
+q15b_1,7,6
+q15b_1,8,7
+q15b_1,9,8
+q15b_1,10,9
+q15b_1,11,10
+q15b_1,12,REF
+q15b_1,13,DK
+q15c_1,1,0
+q15c_1,2,1
+q15c_1,3,2
+q15c_1,4,3
+q15c_1,5,4
+q15c_1,6,5
+q15c_1,7,6
+q15c_1,8,7
+q15c_1,9,8
+q15c_1,10,9
+q15c_1,11,10
+q15c_1,12,REF
+q15c_1,13,DK
+q15d_1,1,0
+q15d_1,2,1
+q15d_1,3,2
+q15d_1,4,3
+q15d_1,5,4
+q15d_1,6,5
+q15d_1,7,6
+q15d_1,8,7
+q15d_1,9,8
+q15d_1,10,9
+q15d_1,11,10
+q15d_1,12,REF
+q15d_1,13,DK
+q16_1,1,Romania
+q16_1,2,Montenegro
+q16_1,3,Croatia
+q16_1,4,Morocco
+q16_1,5,Or couldn t you say about that ?
+q16_1,6,REF
+q16_1,7,DK
+q17_1,1,Directly elected by the citizens of their country
+q17_1,2,Elected for three year terms
+q17_1,3,Elected by the parliament of their country
+q17_1,4,Appointed by their national head of government
+q17_1,5,Or couldn t you say about that ?
+q17_1,6,REF
+q17_1,7,DK
+q18_1,1,"The European Commission, in some cases with the European Parliament"
+q18_1,2,"The Council of Ministers, in some cases with the European Parliament"
+q18_1,3,The European Parliament by itself
+q18_1,4,The European commission by itself
+q18_1,5,Or couldn t you say about that ?
+q18_1,6,REF
+q18_1,7,DK
+q19_1,1,Finance the member states  unemployment benefit systems
+q19_1,2,Decide the level and length of unemployment benefits in the member states
+q19_1,3,Require that the member states merge their unemployment benefit systems by 2010
+q19_1,4,Guarantee that all EU citizens have access to unemployment benefits where they live
+q19_1,5,Or couldn t say about that ?
+q19_1,6,REF
+q19_1,7,DK
+q20_1,1,Helping the EU s less prosperous regions
+q20_1,2,Subsidizing the EU s fishing industry
+q20_1,3,Financing diplomatic missions abroad
+q20_1,4,Maintaining the EU s administration and bureaucracy
+q20_1,5,Or couldn t you say about that ?
+q20_1,6,REF
+q20_1,7,DK
+q21_1,1,About one quarter of what it is now
+q21_1,2,About half of what it is now
+q21_1,3,About the same as what it is now
+q21_1,4,About twice what it is now
+q21_1,5,About four times what it is now
+q21_1,6,Or couldn t you say about that ?
+q21_1,7,REF
+q21_1,8,DK
+q22_1,1,The EU and its member states give roughly four times as much
+q22_1,2,The EU and its member states give roughly twice as much
+q22_1,3,The EU and its member states and the US give about the same amount
+q22_1,4,The US gives roughly twice as much
+q22_1,5,The US gives roughly four times as much
+q22_1,6,Or couldn t you say about that ?
+q22_1,7,REF
+q22_1,8,DK
+q23_1,1,About 1%
+q23_1,2,About  5%
+q23_1,3,About  9%
+q23_1,4,About 13%
+q23_1,5,About 17%
+q23_1,6,Or couldn t you say about that ?
+q23_1,7,REF
+q23_1,8,DK
+q24_1,1,Pakistan
+q24_1,2,India
+q24_1,3,North Korea
+q24_1,4,Japan
+q24_1,5,Or couldn t you say about that ?
+q24_1,6,REF
+q24_1,7,DK
+q25_1,1,A great deal
+q25_1,2,Quite a bit
+q25_1,3,Some
+q25_1,4,Very little
+q25_1,5,None
+q25_1,6,DK
+q25_1,7,REF
+q26_1,1,A great deal
+q26_1,2,Quite a bit
+q26_1,3,Some
+q26_1,4,Very little
+q26_1,5,None
+q26_1,6,DK
+q26_1,7,REF
+q27_1,1,Very often
+q27_1,2,Fairly often
+q27_1,3,Just a few times
+q27_1,4,Never
+q27_1,5,DK
+q27_1,6,REF
+q28_1,1,Very often
+q28_1,2,Fairly often
+q28_1,3,Just a few times
+q28_1,4,Never
+q28_1,5,DK
+q28_1,6,REF
+q29_1,1,Agree strongly
+q29_1,2,Agree somewhat
+q29_1,3,Neither agree nor disagree
+q29_1,4,Disagree somewhat
+q29_1,5,Disagree strongly
+q29_1,6,No opinion
+q29_1,7,REF
+q29_1_ST1,0,No
+q29_1_ST1,1,Yes
+q29_1_ST2,0,No
+q29_1_ST2,1,Yes
+q30_1,1,0
+q30_1,2,1
+q30_1,3,2
+q30_1,4,3
+q30_1,5,4
+q30_1,6,5
+q30_1,7,6
+q30_1,8,7
+q30_1,9,8
+q30_1,10,9
+q30_1,11,10
+q30_1,12,REF
+q30_1,13,DK
+q31_1,1,0
+q31_1,2,1
+q31_1,3,2
+q31_1,4,3
+q31_1,5,4
+q31_1,6,5
+q31_1,7,6
+q31_1,8,7
+q31_1,9,8
+q31_1,10,9
+q31_1,11,10
+q31_1,12,REF
+q31_1,13,DK
+q32_1,1,0
+q32_1,2,1
+q32_1,3,2
+q32_1,4,3
+q32_1,5,4
+q32_1,6,5
+q32_1,7,6
+q32_1,8,7
+q32_1,9,8
+q32_1,10,9
+q32_1,11,10
+q32_1,12,REF
+q32_1,13,DK
+q33a_1,1,0
+q33a_1,2,1
+q33a_1,3,2
+q33a_1,4,3
+q33a_1,5,4
+q33a_1,6,5
+q33a_1,7,6
+q33a_1,8,7
+q33a_1,9,8
+q33a_1,10,9
+q33a_1,11,10
+q33a_1,12,REF
+q33a_1,13,DK
+q33b_1,1,0
+q33b_1,2,1
+q33b_1,3,2
+q33b_1,4,3
+q33b_1,5,4
+q33b_1,6,5
+q33b_1,7,6
+q33b_1,8,7
+q33b_1,9,8
+q33b_1,10,9
+q33b_1,11,10
+q33b_1,12,REF
+q33b_1,13,DK
+q34a_1,1,0
+q34a_1,2,1
+q34a_1,3,2
+q34a_1,4,3
+q34a_1,5,4
+q34a_1,6,5
+q34a_1,7,6
+q34a_1,8,7
+q34a_1,9,8
+q34a_1,10,9
+q34a_1,11,10
+q34a_1,12,REF
+q34a_1,13,DK
+q34b_1,1,0
+q34b_1,2,1
+q34b_1,3,2
+q34b_1,4,3
+q34b_1,5,4
+q34b_1,6,5
+q34b_1,7,6
+q34b_1,8,7
+q34b_1,9,8
+q34b_1,10,9
+q34b_1,11,10
+q34b_1,12,REF
+q34b_1,13,DK
+filter_$,0,Not Selected
+filter_$,1,Selected
