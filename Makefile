@@ -1,6 +1,6 @@
 R = Rscript
 
-.PHONY: polardata linkage restore package manifests vault inventory disclosure validate test lint check import-surveys knowledge audit-surveys audit-downstream
+.PHONY: compare-respondents respondents polardata linkage restore package manifests vault inventory disclosure validate test lint check import-surveys knowledge audit-surveys audit-downstream
 
 restore:
 	$(R) -e 'renv::restore(prompt = FALSE)'
@@ -45,7 +45,13 @@ linkage:
 polardata:
 	$(R) scripts/12_build_polardata.R
 
-check: package manifests validate knowledge linkage polardata test lint
+respondents:
+	$(R) scripts/13_build_respondents.R
+
+compare-respondents:
+	$(R) scripts/14_compare_respondents.R
+
+check: package manifests validate knowledge linkage polardata respondents compare-respondents test lint
 
 audit-downstream:
 	$(R) scripts/09_audit_downstream_sources.R

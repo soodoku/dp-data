@@ -73,6 +73,78 @@ The target model separates entities that the wide historical file combines:
 
 Legacy numeric IDs remain aliases; they are not primary keys.
 
+## Respondent reconstruction before aggregation
+
+`make respondents` builds the first stage from reviewed public surveys and
+versioned definitions. It does not read `polardata`, the archived derived
+objects, or the existing knowledge output. `make compare-respondents` is a
+separate historical comparison. Both run in `make check`.
+
+The scope is the 21 historical `polardata` polls. The
+[source contracts](../metadata/respondent_sources.csv) identify reviewed inputs
+and unresolved source versions. The generated
+[coverage report](../audit/respondent_coverage.csv) distinguishes source-record
+coverage, built definitions, and implemented historical fields. A reviewed
+source is not a claim that its respondent recodes are finished.
+
+| New table in `output/respondent/` | Grain and interpretation |
+|---|---|
+| `people` | One record from a reviewed source, keyed by poll and respondent ID; retains source ID and row locator |
+| `sample_memberships` | One person and named sample; `TRUE` included, `FALSE` excluded by that rule, null unresolved |
+| `source_responses` | One person and reviewed input field; original numeric/text value, literal wave, response status and missing code |
+| `respondent_measures` | One person and versioned definition; value and input-field counts |
+| `respondent_memberships` | One documented person/session/group membership; absence does not establish control status |
+
+These exports retain **all rows** of the reviewed sources in scope. A missing or
+nonunique source ID gets a file-scoped source-row identifier, with its basis
+recorded. This identifies a source record, not a resolved identity across files.
+Numeric source IDs use the existing integer tolerance; the immutable source
+retains their exact stored representation. A different source version needs
+an explicit ID crosswalk. Never join separate polls on respondent ID alone.
+
+The original `output/respondents.parquet` remains the selected knowledge-sample
+contract. The new `people` table has a broader universe. Its response table
+currently includes registered knowledge inputs for reviewed polls and the
+additional inputs of implemented respondent definitions; it is not an export
+of every survey column. Source files and their dictionaries retain the rest.
+Response status uses both declared missing values and missing ranges. Numeric
+category classification tolerates integer storage drift below 1e-8 while
+`raw_numeric` retains the original number. Unknown knowledge codes stay marked
+`unreviewed-code`; expanding the sample does not silently assign an answer key.
+Known group assignments initially follow the reviewed knowledge contracts;
+UK–EU also includes the 14 historical attendees excluded from that knowledge
+sample. This is not a complete roster reconstruction for every poll.
+
+[Measure definitions](../metadata/measure_definitions.csv) name the scoring,
+missingness, denominator, source-wave and calibration policies. Their
+[input dependencies](../metadata/measure_inputs.csv) name source fields.
+`post_dependent` means any later-wave response enters the formula, including
+scores labelled as baseline knowledge but adjusted using post responses.
+An explicitly absent historical measure has a constant-missing definition;
+an unimplemented measure has no fabricated values. `n_observed_fields` counts
+source fields classified as answered; it is **not** a universal scoring
+denominator. The scoring rule can deliberately include a non-substantive code
+or score a missing knowledge answer as zero. Such historical choices remain
+visible in the definitions and issue register.
+
+[The field inventory](../metadata/polardata_fields.csv) assigns every historical
+column to respondent data, identifiers, group or poll calculations, poll
+metadata, or export artifacts. Aliases are conditional: Australia and UK Crime
+retain distinct issue-specific knowledge measures. Use the
+[poll-specific targets](../metadata/polardata_targets.csv), not a global column
+rename, when producing a future wide `polardata` version. The twelve `grk.*`
+columns are entirely missing in the historical benchmark; their poll is outside
+this 21-poll scope, so they remain inventoried without invented poll targets.
+
+UK Health and UK–EU currently implement all their applicable respondent-field
+targets, including intentional missing fields. Empirical scale limits are
+explicit historical calibration constants, so selecting or reordering rows
+cannot change an individual's score. The separate
+[parity report](../audit/respondent_parity.csv) checks values, missingness and
+historical sample identities. Group means, entropy, generalized variance and
+poll summaries belong in a later stage. The existing UK Health partial wide
+export still adds its previously implemented summaries for regression checks.
+
 ## Migration order
 
 1. Inventory and hash the archive bundles.

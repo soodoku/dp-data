@@ -7,6 +7,11 @@ test_that("the Frictionless package names every metadata table", {
   expect_setequal(
     frictionless::resource_names(package),
     c(
+      "respondent_sources",
+      "polardata_fields",
+      "polardata_targets",
+      "measure_definitions",
+      "measure_inputs",
       "artifact_types",
       "archive_collections",
       "artifacts",

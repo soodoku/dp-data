@@ -55,3 +55,33 @@ knowledge_scores,n_observed,int32,FALSE,FALSE,Number of substantively answered i
 knowledge_scores,n_correct,int32,FALSE,FALSE,Number correct among all battery items
 knowledge_scores,score_zero_filled,float64,FALSE,FALSE,n_correct divided by n_items; missing responses count as zero only in this score
 knowledge_responses,raw_text,string,TRUE,FALSE,Original reviewed text response; null for numeric items
+people,poll_id,string,FALSE,TRUE,poll id
+people,respondent_id,string,FALSE,TRUE,respondent id
+people,source_id,string,FALSE,FALSE,source id
+people,source_row,int32,FALSE,FALSE,source row
+people,source_respondent_id,string,TRUE,FALSE,source respondent id
+people,identity_basis,string,FALSE,FALSE,Unique original ID or immutable-source row fallback; no inferred cross-file identity
+sample_memberships,poll_id,string,FALSE,TRUE,poll id
+sample_memberships,respondent_id,string,FALSE,TRUE,respondent id
+sample_memberships,sample_id,string,FALSE,TRUE,sample id
+sample_memberships,included,bool,TRUE,FALSE,TRUE included; FALSE excluded by this named sample rule; NA unresolved
+sample_memberships,evidence,string,FALSE,FALSE,evidence
+source_responses,poll_id,string,FALSE,TRUE,poll id
+source_responses,respondent_id,string,FALSE,TRUE,respondent id
+source_responses,source_column,string,FALSE,TRUE,source column
+source_responses,source_wave,string,TRUE,FALSE,Literal source wave or form marker where reviewed; unknown stays missing
+source_responses,raw_numeric,float64,TRUE,FALSE,raw numeric
+source_responses,raw_text,string,TRUE,FALSE,raw text
+source_responses,response_status,string,FALSE,FALSE,response status
+source_responses,missing_code,string,TRUE,FALSE,missing code
+respondent_measures,poll_id,string,FALSE,TRUE,poll id
+respondent_measures,respondent_id,string,FALSE,TRUE,respondent id
+respondent_measures,definition_id,string,FALSE,TRUE,definition id
+respondent_measures,value_numeric,float64,TRUE,FALSE,value numeric
+respondent_measures,n_source_fields,int32,FALSE,FALSE,n source fields
+respondent_measures,n_observed_fields,int32,FALSE,FALSE,Substantive input fields; not automatically the scoring denominator
+respondent_memberships,poll_id,string,FALSE,TRUE,poll id
+respondent_memberships,respondent_id,string,FALSE,TRUE,respondent id
+respondent_memberships,session_id,string,FALSE,TRUE,session id
+respondent_memberships,group_id,string,FALSE,TRUE,group id
+respondent_memberships,weight,float64,FALSE,FALSE,weight

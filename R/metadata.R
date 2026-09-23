@@ -161,5 +161,52 @@ validate_metadata <- function() {
     all(.data$status %in% c("current", "planned", "transitional", "retired")),
     error_fun = assertr::error_stop
   )
+  validate_respondent_metadata()
+  invisible(TRUE)
+}
+
+
+validate_respondent_metadata <- function() {
+  contracts <- read_metadata("respondent_sources")
+  surveys <- read_metadata("survey_sources")
+  fields <- read_metadata("polardata_fields")
+  targets <- read_metadata("polardata_targets")
+  definitions <- read_metadata("measure_definitions")
+  inputs <- read_metadata("measure_inputs")
+  reviewed <- contracts[contracts$status == "reviewed-source", ]
+  defined <- paste(definitions$poll_id, definitions$definition_id)
+  dependencies <- paste(inputs$poll_id, inputs$definition_id)
+  implemented <- targets[targets$status == "implemented", ]
+  constant <- definitions$scoring_rule == "historical-constant-missing"
+  stopifnot(
+    !anyDuplicated(contracts$poll_id), !anyDuplicated(contracts$dpnum),
+    setequal(contracts$dpnum, 1:21),
+    all(contracts$status %in% c("reviewed-source", "source-unresolved")),
+    all(paste(reviewed$poll_id, reviewed$source_id) %in%
+          paste(surveys$poll_id, surveys$source_id)),
+    !anyDuplicated(fields$legacy_field),
+    all(fields$layer %in% c("identifier", "export-artifact", "respondent",
+          "group-derived", "poll-derived", "poll-metadata"
+        )),
+    all(targets$poll_id %in% contracts$poll_id),
+    !anyDuplicated(targets[c("poll_id", "legacy_field")]),
+    all(targets$legacy_field %in% fields$legacy_field[
+      fields$layer == "respondent"
+    ]),
+    all(targets$status %in% c("implemented", "not-yet-reconstructed",
+          "source-unresolved"
+        )),
+    !anyDuplicated(defined), !anyDuplicated(inputs),
+    all(definitions$poll_id %in% reviewed$poll_id),
+    all(dependencies %in% defined),
+    setequal(defined[!constant], dependencies),
+    all(paste(implemented$poll_id, implemented$canonical_definition) %in%
+          defined),
+    all(!is.na(targets$blocker[targets$status != "implemented"])),
+    all(!is.na(definitions$scoring_rule)),
+    all(!is.na(definitions$missing_policy)),
+    all(!is.na(definitions$denominator_policy)),
+    all(definitions$post_dependent == grepl("T2|T3", definitions$source_waves))
+  )
   invisible(TRUE)
 }

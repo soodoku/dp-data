@@ -1,6 +1,11 @@
 source("R/paths.R")
 
 resources <- c(
+  "respondent_sources",
+  "polardata_fields",
+  "polardata_targets",
+  "measure_definitions",
+  "measure_inputs",
   "artifact_types",
   "archive_collections",
   "artifacts",

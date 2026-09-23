@@ -64,6 +64,9 @@ test_that("unreviewed survey codes stop the build", {
   survey$payhlth1 <- as.numeric(survey$payhlth1)
   survey$payhlth1[1] <- 999
   expect_error(build_health_polardata(survey), "Unreviewed")
+  survey <- read_poll_survey("uk-health-1998")
+  survey$group <- rep(999, nrow(survey))
+  expect_error(build_health_polardata(survey), "Unreviewed UK Health group")
 })
 
 

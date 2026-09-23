@@ -1,0 +1,79 @@
+poll_id,definition_id,measure_id,source_waves,scoring_rule,missing_policy,denominator_policy,post_dependent,calibration_sample,evidence
+uk-health-1998,ukhealth.t1payhlt@historical-v1,ukhealth.t1payhlt,T1,linear-three,-9|-8|system,available-components,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t1poora@historical-v1,ukhealth.t1poora,T1,linear-five,-9|-8|system,available-components,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t1option@historical-v1,ukhealth.t1option,T1,linear-three,-9|-8|system,available-components,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t1hlthfu@historical-v1,ukhealth.t1hlthfu,T1,available-mean-linear-five,-9|-8|system,available-components,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t1ctexpt@historical-v1,ukhealth.t1ctexpt,T1,available-mean-reverse-five,-9|-8|system,available-components,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t1pritre@historical-v1,ukhealth.t1pritre,T1,available-mean-reverse-five,-9|-8|system,available-components,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t1severi@historical-v1,ukhealth.t1severi,T1,historical-calibrated-difference,-9|-8|system,both-required,FALSE,"uk-health-1998:historical-230; limits=-1,1",docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t1preven@historical-v1,ukhealth.t1preven,T1,linear-five,-9|-8|system,available-components,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t1dispub@historical-v1,ukhealth.t1dispub,T1,available-mean-folded-three,-9|-8|system,available-components,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t1avgdis@historical-v1,ukhealth.t1avgdis,T1,available-mean-folded-three,-9|-8|system,available-components,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t1moresa@historical-v1,ukhealth.t1moresa,T1,linear-five,-9|-8|system,available-components,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t2payhlt@historical-v1,ukhealth.t2payhlt,T2,linear-three,-9|-8|system,available-components,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t2poora@historical-v1,ukhealth.t2poora,T2,linear-five,-9|-8|system,available-components,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t2option@historical-v1,ukhealth.t2option,T2,linear-three,-9|-8|system,available-components,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t2hlthfu@historical-v1,ukhealth.t2hlthfu,T2,available-mean-linear-five,-9|-8|system,available-components,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t2ctexpt@historical-v1,ukhealth.t2ctexpt,T2,available-mean-reverse-five,-9|-8|system,available-components,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t2pritre@historical-v1,ukhealth.t2pritre,T2,available-mean-reverse-five,-9|-8|system,available-components,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t2severi@historical-v1,ukhealth.t2severi,T2,historical-calibrated-difference,-9|-8|system,both-required,TRUE,"uk-health-1998:historical-230; limits=-1,0.5",docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t2preven@historical-v1,ukhealth.t2preven,T2,linear-five,-9|-8|system,available-components,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t2dispub@historical-v1,ukhealth.t2dispub,T2,available-mean-folded-three,-9|-8|system,available-components,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t2avgdis@historical-v1,ukhealth.t2avgdis,T2,available-mean-folded-three,-9|-8|system,available-components,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t2moresa@historical-v1,ukhealth.t2moresa,T2,linear-five,-9|-8|system,available-components,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,female@historical-v1,female,T1,gender-2,none-in-reviewed-source,not-applicable,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,minority@historical-v1,minority,T1,ethnic-not-1,none-in-reviewed-source,not-applicable,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ppage@historical-v1,ppage,T1,identity-years,none-in-reviewed-source,not-applicable,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,educ4@historical-v1,educ4,T1,school-qualification-ordinal,-9,not-applicable,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,educ3@historical-v1,educ3,T1,collapse-educ4-middle,-9,not-applicable,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,bettered@historical-v1,bettered,T1,educ4-at-least-.66,-9,not-applicable,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,hhincome@historical-v1,hhincome,T1,income-band-linear-sixteen,-9|-8|-7,not-applicable,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,highinc@historical-v1,highinc,T1,income-normalized-above-.34,-9|-8|-7,not-applicable,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,highinc_early@historical-v1,highinc_early,T1,income-normalized-above-.8,-9|-8|-7,not-applicable,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,severity_t1_unscaled@historical-v1,severity_t1_unscaled,T1,linear-five-difference,-9|-8|system,both-required,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,severity_t2_unscaled@historical-v1,severity_t2_unscaled,T2,linear-five-difference,-9|-8|system,both-required,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,attextreme@historical-v1,attextreme,T1,mean-absolute-distance-.5-of-11-early-indices,-9|-8|system,available-indices,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,t1know@historical-v1,t1know,T1,six-item-mean,-9|-8|-1|system:score-zero,six-items,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,t2know@historical-v1,t2know,T2,six-item-mean,-9|-8|-1|system:score-zero,six-items,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,t1knowcor@historical-v1,t1knowcor,T1|T2,joint-correctness-mean,-9|-8|-1|system:score-zero,six-items,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,knowgain@historical-v1,knowgain,T1|T2,post-minus-pre,-9|-8|-1|system:score-zero,six-items,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,knowgain2@historical-v1,knowgain2,T1|T2,post-minus-joint,-9|-8|-1|system:score-zero,six-items,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,logpk@historical-v1,logpk,T1|T2,log-joint-zero-replaced-.0001,-9|-8|-1|system:score-zero,six-items,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,tobitpk@historical-v1,tobitpk,T1|T2,joint-above-.6,-9|-8|-1|system:score-zero,six-items,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,t1know_rounded@historical-v1,t1know_rounded,T1,two-decimal-float32,-9|-8|-1|system:score-zero,six-items,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,readbrief@historical-v1,readbrief,not-measured,historical-constant-missing,always-missing,not-applicable,FALSE,,uk_health.R lines 126-127 and 234-235
+uk-health-1998,t1polint@historical-v1,t1polint,not-measured,historical-constant-missing,always-missing,not-applicable,FALSE,,uk_health.R lines 126-127 and 234-235
+uk-health-1998,t1knowcor2@historical-v1,t1knowcor2,not-measured,historical-constant-missing,always-missing,not-applicable,FALSE,,uk_health.R lines 126-127 and 234-235
+uk-health-1998,t12know@historical-v1,t12know,not-measured,historical-constant-missing,always-missing,not-applicable,FALSE,,uk_health.R lines 126-127 and 234-235
+uk-health-1998,t12knowcor@historical-v1,t12knowcor,not-measured,historical-constant-missing,always-missing,not-applicable,FALSE,,uk_health.R lines 126-127 and 234-235
+uk-health-1998,attextreme2@historical-v1,attextreme2,not-measured,historical-constant-missing,always-missing,not-applicable,FALSE,,uk_health.R lines 126-127 and 234-235
+uk-eu-1995,ukeu.eurelat1g@historical-v1,ukeu.eurelat1g,T1,available-mean-linear,-1|8|9|system; code6 included at T2,available-components,FALSE,"uk-eu-1995:all-900; all=[1,5]",R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,ukeu.euscope1g@historical-v1,ukeu.euscope1g,T1,available-mean-linear,8|9|system; -1 included at T2,available-components,FALSE,"uk-eu-1995:all-900; all=[1,5]",R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,ukeu.commies1r@historical-v1,ukeu.commies1r,T1,linear,system only; code9 retained,available-components,FALSE,"uk-eu-1995:all-900; [1,9]",R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,ukeu.favref1r@historical-v1,ukeu.favref1r,T1,linear,system only; code9 retained,available-components,FALSE,"uk-eu-1995:all-900; [1,9]",R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,ukeu.eurelat2g@historical-v1,ukeu.eurelat2g,T2,available-mean-linear,-1|8|9|system; code6 included at T2,available-components,TRUE,"uk-eu-1995:all-900; releu/longpol=[1,6]; unite=[1,5]",R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,ukeu.euscope2g@historical-v1,ukeu.euscope2g,T2,available-mean-linear,8|9|system; -1 included at T2,available-components,TRUE,"uk-eu-1995:all-900; all=[-1,5]",R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,ukeu.commies2r@historical-v1,ukeu.commies2r,T2,linear,-1|8|9|system,available-components,TRUE,"uk-eu-1995:all-900; [1,5]",R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,ukeu.favref2r@historical-v1,ukeu.favref2r,T2,linear,-1|8|9|system,available-components,TRUE,"uk-eu-1995:all-900; [1,5]",R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,female@historical-v1,female,T1,identity-0-male-1-female,system,not-applicable,FALSE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,minority@historical-v1,minority,T1,ethnic-not-1,-1|8|97|99|system,not-applicable,FALSE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,ppage@historical-v1,ppage,T1,identity-years,-1|97|98|99|system,not-applicable,FALSE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,educ4@historical-v1,educ4,T1,qualification-ordinal-0-.33-.66-1,-1|13|99|system,not-applicable,FALSE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,educ3@historical-v1,educ3,T1,collapse-educ4-middle,-1|13|99|system,not-applicable,FALSE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,bettered@historical-v1,bettered,T1,educ4-at-least-.33,-1|13|99|system,not-applicable,FALSE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,t1polint@historical-v1,t1polint,T1,1:4-to-0-.33-.66-1,-1|8|9|system,not-applicable,FALSE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,attextreme@historical-v1,attextreme,T1,mean-absolute-distance-.5-of-four-historical-indices,per-input historical policy,available-indices,FALSE,uk-eu-1995:all-900; same component calibrations as attitude definitions,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,t1know@historical-v1,t1know,T1,five-item-mean,noncorrect including -1|8|9 at T1; -1|3|9 at T2; system:score-zero,five-items,FALSE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,t2know@historical-v1,t2know,T2,five-item-mean,noncorrect including -1|8|9 at T1; -1|3|9 at T2; system:score-zero,five-items,TRUE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,t1knowcor@historical-v1,t1knowcor,T1|T2,joint-correctness-mean,noncorrect including -1|8|9 at T1; -1|3|9 at T2; system:score-zero,five-items,TRUE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,knowgain@historical-v1,knowgain,T1|T2,post-minus-pre,noncorrect including -1|8|9 at T1; -1|3|9 at T2; system:score-zero,five-items,TRUE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,knowgain2@historical-v1,knowgain2,T1|T2,post-minus-joint,noncorrect including -1|8|9 at T1; -1|3|9 at T2; system:score-zero,five-items,TRUE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,logpk@historical-v1,logpk,T1|T2,log-joint-zero-replaced-.0001,noncorrect including -1|8|9 at T1; -1|3|9 at T2; system:score-zero,five-items,TRUE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,tobitpk@historical-v1,tobitpk,T1|T2,joint-above-.6,noncorrect including -1|8|9 at T1; -1|3|9 at T2; system:score-zero,five-items,TRUE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,readbrief@historical-v1,readbrief,not-measured,historical-constant-missing,always-missing,not-applicable,FALSE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,hhincome@historical-v1,hhincome,not-measured,historical-constant-missing,always-missing,not-applicable,FALSE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,highinc@historical-v1,highinc,not-measured,historical-constant-missing,always-missing,not-applicable,FALSE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,t1knowcor2@historical-v1,t1knowcor2,not-measured,historical-constant-missing,always-missing,not-applicable,FALSE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,t12know@historical-v1,t12know,not-measured,historical-constant-missing,always-missing,not-applicable,FALSE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,t12knowcor@historical-v1,t12knowcor,not-measured,historical-constant-missing,always-missing,not-applicable,FALSE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05
+uk-eu-1995,attextreme2@historical-v1,attextreme2,not-measured,historical-constant-missing,always-missing,not-applicable,FALSE,,R/respondent_eu.R; historical-cdd-scripts:legacy/poll_scripts/uk_eu.R; docs/poll-issues.md UKEU-02-05

@@ -8,3 +8,8 @@ groups,one discussion group in one session,poll_id + session_id + group_id,parqu
 memberships,one person's group membership in one session,poll_id + respondent_id + session_id + group_id,parquet,current,Fixed or multiple membership weights
 knowledge_responses,one participant-item-wave response,poll_id + respondent_id + wave + item_id,parquet,current,Raw codes and scored responses rebuilt from reviewed survey inputs
 knowledge_scores,one participant-wave score,poll_id + respondent_id + wave,parquet,current,Proportion correct with explicit zero-filled denominator and missing counts
+people,One reviewed source respondent record,poll_id + respondent_id,parquet,current,One reviewed source respondent record; see docs/architecture.md
+sample_memberships,One source record and named sample,poll_id + respondent_id + sample_id,parquet,current,One source record and named sample; see docs/architecture.md
+source_responses,One reviewed source field for one respondent,poll_id + respondent_id + source_column,parquet,current,One reviewed source field for one respondent; see docs/architecture.md
+respondent_measures,One respondent and versioned measure definition,poll_id + respondent_id + definition_id,parquet,current,One respondent and versioned measure definition; see docs/architecture.md
+respondent_memberships,One known discussion group for a source record,poll_id + respondent_id + session_id + group_id,parquet,current,One known discussion group for a source record; see docs/architecture.md

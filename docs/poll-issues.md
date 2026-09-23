@@ -1,7 +1,8 @@
 # Poll-level issue register
 
 Review date: 2026-09-23. Scope: the 34 polls in the current registry, with detailed
-coverage of the 23 existing knowledge builds and the UK Health attitude pilot.
+coverage of the 23 existing knowledge builds and the UK Health and UK–EU
+respondent reconstructions.
 
 ## Decision for this pass
 
@@ -539,6 +540,79 @@ all 238 source attendees in a broader respondent table, and retain the four
 missing group assignments. Review questionnaire-specific negative and refusal
 codes separately by wave; do not adopt one cross-poll missing-code list.
 
+**UKEU-02 — preserve baseline scale compression; investigate missing-code
+normalization.** The 900-row `survey.sav` contains `commies1` codes 1–5 plus
+12 code-9 nonanswers and `favref1` codes 1–5 plus four code-9 nonanswers. The
+archived `uk_eu.R` first creates a missing-cleaned `commies1r`, then overwrites
+it with `zero1(ukeu$commies1)`; it likewise applies `zero1` directly to
+`favref1`. The historical participant values match `(raw - 1) / 8` exactly,
+consistent with normalization across the full 900 records including code 9.
+All 238 attendees answered both items with substantive codes, but their
+resulting scores run only from 0 to .5. Fixed [1,9] calibration in the new
+historical definition reproduces this behavior without re-estimating bounds
+when selecting rows. For the wider source sample, the historical formula also
+maps code-9 nonanswers to 1; the response table still flags them as missing.
+
+The codebook's Q14c SAQ1 (`COMMIES1`) and Q10 SAQ1 (`FAVREF1`) distinguish
+five substantive ordered categories from not-answered code 9. A hypothetical
+[1,5] normalization would change 228 and 235 of the 238 participant values,
+respectively, by up to .5, with no participant-level missingness change. It
+would also change extremity, variances and downstream attitude effects.
+Do not apply that change yet: recover the original `zero1` implementation and
+reader behavior at the script's execution date, the actual SAQ instruments,
+and any index-direction memorandum. An intentional scaling choice or a
+historical reader treating labelled missing codes differently remains a rival
+explanation. The codebook also says the supplier collapsed “can't choose”
+with the midpoint for `FAVREF`; the separated original responses cannot be
+recovered from this file. Rescaling cannot undo that prior collapse.
+
+**UKEU-03 — preserve post-wave “can't choose” in the EU-relations index.**
+`RELEU2` (Q1 SAQ2) and `LONGPOL2` (Q4 SAQ2) label code 6 “can't choose,” with
+five and six such answers among attendees. `uk_eu.R` removes -1/8/9 but not 6,
+then normalizes these two fields over [1,6]; `UNITE2` uses [1,5]. The average
+matches every nonmissing historical `ukeu.eurelat2g` value. Thus code 6 enters
+as the endpoint 1, and substantive code 5 enters the first two components as
+.8. The corresponding baseline components use [1,5]. A sensitivity calculation
+that treats code 6 as missing and scales substantive 1–5 answers over [1,5]
+changes 211 of the 238 participant values, with no index-level missingness
+changes and maximum absolute change 1/3. This is diagnostic only. Check the
+actual T2 form, the codebook's inconsistent LONGPOL2 note referring to code 8,
+the response-label revisions and intended index polarity before deciding
+whether the difference is a coding error, source-version mismatch, or intended
+handling of uncertainty. Review the baseline/post comparability of the index.
+
+**UKEU-04 — preserve inapplicable post responses in the EU-scope index.**
+For `trabloc2`/`pasport2`, `uk_eu.R` removes 8/9 but leaves -1. The observed
+full-source range is [-1,5], so the historical components are `(raw + 1) / 6`.
+The 14 attendees without a post knowledge interview also have inapplicable
+responses here, which become index value zero rather than missing. This
+explains why `ukeu.euscope2g` has 238 nonmissing participant values while the
+other post attitude indices have at most 224. Recode -1 as missing and normalize
+substantive 1–5 responses only in a diagnostic calculation: 14 index values
+become missing and 209 remaining values change, by up to 1/3. Check Q6b and
+Q17e SAQ2 against wave-completion records and the original SPSS import behavior.
+Do not silently substitute the knowledge sample or equate zero with a measured
+opinion. The historical definition and raw -1 values are preserved separately.
+
+**UKEU-05 — preserve the ethnicity exclusion and education threshold.** The
+codebook's B14 IAQ ethnicity question calls code 8 “Other,” with 19 source
+records and five attendees. `uk_eu.R` explicitly excludes 8 along with
+97/99/-1 before `ethnic != 1`, leaving 233 historical minority values. This
+could reflect intentional exclusion of an ambiguous category; it should not
+be changed just because the label appears substantive. Recover the original
+response categories and any coding note, assess which respondents would enter
+the denominator, and compare group shares before proposing a recode. Likewise,
+`educ4` maps school qualifications 0/1/2 to 0, 3/4/5 to .33, 6/7/8/9/10/12 to
+.66, degree category 11 to 1, and other category 13 to missing. The later merge
+sets `bettered` to `educ4 >= .33` for this poll (90 of 230 nonmissing attendee
+values). It is not a uniform college-degree indicator across polls.
+
+The new respondent build reconstructs all 35 applicable UK–EU historical
+respondent fields, including aliases and seven deliberately missing fields.
+It uses all 900 source rows and separately verifies the 238-person historical
+sample; the old 224-person knowledge outputs are unchanged. These parity checks
+establish reproduction, not questionnaire validity or downstream robustness.
+
 ## UK Monarchy 1996 — uk-monarchy-1996
 
 **UKM-01 — existing upstream divergence; re-verify the post-wave field.** The
@@ -926,11 +1000,49 @@ the experiments, answer keys, causal claims, weighting, or original field-file m
 
 ### X-01: Knowledge eligibility is not the respondent universe
 
-Current respondent exports select knowledge samples. A comprehensive service
+The original `output/respondents.parquet` selects knowledge samples. The new
+`output/respondent/people.parquet` retains all 24,361 records from the 16 reviewed
+sources in the historical 21-poll scope. A comprehensive service
 needs all reviewed source people, separate eligibility/assignment/attendance
 fields, explicit interview completion, and named analysis samples. Preserve each
 historical sample as a view. Missing a group, a post interview, a score or a weight
 must not silently delete the person from the master respondent table.
+
+The expanded universe exposes missing identity information: Australia has
+3,439 missing `caseid` values among 4,659 source rows; San Mateo has 1,096 missing
+`PARTICIPANTID` values among 1,806 rows; NIC1 has one missing `CASEID` among
+911 rows; and no reviewed original respondent-ID column has been established
+for the 857-row Monarchy source. File-scoped source-row IDs preserve all these
+records. They cannot support cross-file identity joins until an instrument,
+roster or original merge establishes a crosswalk. Reordering source rows must
+not silently create a new version under the same source ID. For polls other
+than UK Health and UK–EU, historical sample membership remains explicitly
+unknown; no aggregate row order is used to invent identity.
+
+The five historical polls without a reviewed respondent source have concrete
+next investigations:
+
+- **Zeguo 2005:** `china_2005.r` reads `China Merged Dataset.dta`, filters on
+  `groupnum` and `preandpost`, and constructs `caseid` from `p`. Reconcile the
+  archived SAV/DTA versions, translated instruments and filter coding before
+  assigning a reviewed public input or claiming coverage.
+- **New Haven 2004:** `new_haven.R` overwrites the same object from three
+  successive inputs, ending with `orig/nh_data_06_23_07.dta`. Identify the
+  executed version and multiwave IDs before using an earlier CSV or DTA.
+- **NIC2 2003:** `nic2.R` targets misinformation and `dat2.por`; that script
+  alone does not establish the Nuri aggregate's respondent/attitude formulas.
+  Recover the executed scoring syntax and match it to the fielded wave files.
+- **BTP National 2003:** `us_fp.R` mixes R and Stata statements and includes
+  empty recodes. Recover the executed online source and Nuri syntax, with the
+  correct national-event instruments and sample restrictions.
+- **BTP Presidential Primaries 2004:** `04_kyu.R` combines Nuri objects and
+  `btp04kyu` names that can be confused with the general-election and separate
+  online-primaries material. Establish event/mode, source file and identity
+  before selecting a public source. Similar names are not a valid crosswalk.
+
+The other 14 reviewed polls' remaining respondent recodes are marked
+`not-yet-reconstructed` in the field-target registry; that is unfinished work,
+not a finding that the underlying sources or formulas are unavailable.
 
 ### X-02: Preserve literal waves and fieldwork meaning
 

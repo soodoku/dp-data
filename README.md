@@ -46,6 +46,14 @@ for 230 respondents from survey answers, with person-level parity checks. See th
 This partial output preserves historical recodes and does not replace downstream
 inputs.
 
+The respondent stage is available with `make respondents`. It retains all
+reviewed source records for the historical poll scope, separates named samples
+from people, and builds versioned individual measures for UK Health and UK–EU.
+`make compare-respondents` checks these measures against historical values;
+[group and poll summaries follow later](docs/architecture.md#respondent-reconstruction-before-aggregation).
+The [coverage report](audit/respondent_coverage.csv) lists unfinished poll recodes
+and source gaps. Existing downstream products remain unchanged.
+
 ## Reproduce
 
 ```sh
@@ -55,7 +63,7 @@ make check
 
 `make check` validates the Frictionless Data Package, source checksums,
 metadata contracts, the survey-based build, historical linkage, item-level
-comparisons, partial aggregate reconstruction, tests, and linting.
+comparisons, respondent and partial aggregate reconstruction, tests, and linting.
 `make inventory` is a local-only task
 that rebuilds the CDD vault inventory from the untracked archive.
 

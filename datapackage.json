@@ -5,6 +5,194 @@
   "version": "0.1.0",
   "resources": [
     {
+      "name": "respondent_sources",
+      "path": "metadata/respondent_sources.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "dpnum",
+            "type": "number"
+          },
+          {
+            "name": "source_id",
+            "type": "string"
+          },
+          {
+            "name": "id_column",
+            "type": "string"
+          },
+          {
+            "name": "poll_script",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "blocker",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "polardata_fields",
+      "path": "metadata/polardata_fields.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "legacy_field",
+            "type": "string"
+          },
+          {
+            "name": "layer",
+            "type": "string"
+          },
+          {
+            "name": "alias_of",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "polardata_targets",
+      "path": "metadata/polardata_targets.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "legacy_field",
+            "type": "string"
+          },
+          {
+            "name": "historical_rows",
+            "type": "number"
+          },
+          {
+            "name": "historical_observed",
+            "type": "number"
+          },
+          {
+            "name": "canonical_definition",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          },
+          {
+            "name": "blocker",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "measure_definitions",
+      "path": "metadata/measure_definitions.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "definition_id",
+            "type": "string"
+          },
+          {
+            "name": "measure_id",
+            "type": "string"
+          },
+          {
+            "name": "source_waves",
+            "type": "string"
+          },
+          {
+            "name": "scoring_rule",
+            "type": "string"
+          },
+          {
+            "name": "missing_policy",
+            "type": "string"
+          },
+          {
+            "name": "denominator_policy",
+            "type": "string"
+          },
+          {
+            "name": "post_dependent",
+            "type": "boolean"
+          },
+          {
+            "name": "calibration_sample",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "measure_inputs",
+      "path": "metadata/measure_inputs.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "definition_id",
+            "type": "string"
+          },
+          {
+            "name": "source_column",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
       "name": "artifact_types",
       "path": "metadata/artifact_types.csv",
       "profile": "tabular-data-resource",

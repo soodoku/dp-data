@@ -345,3 +345,31 @@ reproduces the observed numeric representation; the original command that create
 that representation remains unverified. Numeric parity does not adjudicate the
 answer-key conflict or justify treating an adjusted score as a baseline-only
 measure. Those investigations remain separate from reproduction.
+
+
+## Broader respondent layer
+
+The original knowledge outputs keep their existing samples and scoring rules.
+`make respondents` creates separate tables in `output/respondent/` for all
+reviewed source records within the 21-poll historical scope. Its UK Health and
+UK–EU definitions reproduce historical respondent measures; other polls retain
+raw registered knowledge fields while respondent reconstruction remains pending.
+See the [stage contracts](architecture.md#respondent-reconstruction-before-aggregation),
+[coverage](../audit/respondent_coverage.csv), and
+[historical comparison](../audit/respondent_parity.csv).
+
+UK–EU's source has 900 rows. Its historical `part == 1` view contains 238 people,
+including the 14 excluded from the 224-person knowledge battery. `caseid`
+identifies all 238 historical records exactly. Known group assignments cover
+234 of those attendees; marker 99 remains unresolved for four. All source rows
+remain in the broader table, including the 662 nonattendees; exclusion from an
+attendance sample does not establish randomized control assignment.
+
+Historical UK–EU formulas use raw factual responses with keys 1/2/2/1/2 for
+`eusize`, `swiss`, `inctax`, `elect`, and `ptyapp`. Noncorrect and missing answers
+score zero with a five-item denominator. The corrected baseline is the mean
+of itemwise T1–T2 correctness products. Age, education, sex, ethnicity, political
+interest, eight attitude measures, and their individual transformations follow
+`uk_eu.R` and the later merge scripts. Explicitly absent fields stay missing.
+The surprising attitude normalizations and ethnicity exclusion are preserved
+and detailed in [UKEU-02–05](poll-issues.md#uk–eu-1995--uk-eu-1995).
