@@ -45,17 +45,32 @@ test_that("Data Package paths are portable", {
 
 test_that("generated poll manifests match the central artifact catalog", {
   artifacts <- read_metadata("artifacts") |>
-    dplyr::filter(!is.na(.data$poll_id))
+    dplyr::mutate(directory = dplyr::coalesce(.data$poll_id, "shared"))
 
-  for (current_poll_id in unique(artifacts$poll_id)) {
+  for (current_directory in unique(artifacts$directory)) {
     manifest <- readr::read_csv(
-      project_path("data", current_poll_id, "manifest.csv"),
+      project_path("data", current_directory, "manifest.csv"),
       show_col_types = FALSE,
       col_types = readr::cols(.default = readr::col_character())
     )
     expected <- artifacts |>
-      dplyr::filter(.data$poll_id == current_poll_id) |>
+      dplyr::filter(.data$directory == current_directory) |>
+      dplyr::select(-"directory") |>
       dplyr::select("poll_id", dplyr::everything())
     expect_equal(manifest, expected)
   }
+})
+
+test_that("source materials are preserved once and every reference resolves", {
+  materials <- source_files() |>
+    dplyr::filter(startsWith(.data$source_id, "material-"))
+  artifacts <- read_metadata("artifacts") |>
+    dplyr::filter(startsWith(.data$source_id, "material-"))
+  expect_equal(anyDuplicated(materials$sha256), 0L)
+  expect_true(all(startsWith(materials$path, "data/")))
+  sources <- match(artifacts$source_id, materials$source_id)
+  expect_false(anyNA(sources))
+  expect_equal(artifacts$location, materials$path[sources])
+  expect_equal(artifacts$sha256, materials$sha256[sources])
+  expect_true(all(materials$source_id %in% artifacts$source_id))
 })

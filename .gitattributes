@@ -14,3 +14,13 @@ data/*/knowledge-battery.csv -text
 data/northern-ireland-2007/groups.csv -text
 data/*/codebook.txt -text
 *.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+data/*/questionnaires/** -text -whitespace
+data/*/codebooks/** -text -whitespace
+data/*/briefing-materials/** -text -whitespace
+data/*/papers/** -text -whitespace
+data/*/reports/** -text -whitespace
+data/*/design/** -text -whitespace
+data/*/other/** -text -whitespace

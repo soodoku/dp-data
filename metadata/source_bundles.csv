@@ -1,7 +1,6 @@
 bundle_id,local_filename,bytes,sha256,file_count,uncompressed_bytes,publication_status,notes
 cdd-data-20260923,data-20260923T001825Z-1-001.zip,233921875,5dde554c16bd4bfdea5bf55962c3652b198df19d67646ad9d25df423d423992a,1676,911564993,vault_only,Contains raw poll material and at least one file with direct identifiers
 cdd-merge-scripts-20260923,merge_data_scripts-20260923T001901Z-1-001.zip,9876,5c42b8a0c0c35edd0f3cb2c9747d21f0817964d655fd63bddb831f53b7689bc3,7,30097,review_required,Historical aggregate build scripts
-cdd-metadata-20260923,meta_data-20260923T002047Z-1-001.zip,197491712,09a66a7f9d36b4494077bfef7e4cd3db577442b5631f67dfc13e6f02d1092265,113,203427002,review_required,Codebooks index definitions papers and briefing material
+cdd-metadata-20260923,meta_data-20260923T233458Z-1-001.zip,197497843,11372ed023a8abd3d4b489d136c5b28dac92db88adee848c8e7fabbe4855bd44,113,203427002,review_required,Re-download of meta_data-20260923T002047Z-1-001.zip (SHA256 09a66a7f9d36b4494077bfef7e4cd3db577442b5631f67dfc13e6f02d1092265); all 113 member files verified byte-identical. 107 distinct member hashes; no replacement of source contents.
 cdd-pete-20260923,pete-20260923T002222Z-1-001.zip,1137825,32762284f5fff8286fb29f559403143be183f452757761ef3b873fe20f47ff89,13,6933232,review_required,Historical analysis branch
 cdd-poll-scripts-20260923,scripts-20260923T002026Z-1-001.zip,98677,0f538b703653c3ef09f7f8d22122e661810b18c952317dfa80bba5963273554d,35,324423,review_required,Poll-level harmonization scripts
-

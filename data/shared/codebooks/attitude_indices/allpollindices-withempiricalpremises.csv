@@ -1,0 +1,151 @@
+poll_id,poll_name,n_indices,att_index,t1var,t2_t3var,details
+91,New Haven,2,Mandatory vs. Voluntary Revenue Sharing,nh.t1manvol,nh.t2manvol,
+91,New Haven,2,Expanding vs. Ending Airport Service,nh.t1endexp,nh.t2endexp,
+92,NIC2,9,Protecting the Environment Index,nic2.t1envir,nic2.t2envir,"This pre-averages two items asking whether the respondent supports or opposes “requiring higher mileage from automobiles even if that means less powerful automobile engines” and “requiring cleaner production of electricity, even if that means higher electricity rates” as ways of reducing greenhouse gases, then averages that with items asking what priority, on a scale from 0 to 10, should be accorded “protecting the global environment” as “as a long range foreign policy goal” and to what extent “global warming is not really a problem so there is no need to do anything about it” versus “a serious problem [about which] we need to act now (both initially on 0 to 10 scales).[i]  Chronbach’s alpha is .78 face-to-face and .73 online. // [i]Here as in a number of other cases, we “pre-average” subsets of items reflecting side attitudes, prior to averaging the whole set.  In the present case, one might want to reduce greenhouse gases but oppose higher mileage from automobiles even if that means less powerful automobile engines” and “requiring cleaner production of electricity, even if that means higher electricity rates” as a way of doing so.  We do better, if the object is gauge the attitude toward reducing greenhouse gasses, to average across the asked-about ways of doing so.  The indices constructed without pre-averaging these items cohere less well."
+92,NIC2,9,Fighting Terrorism Index,nic2.t1usseca,nic2.t2usseca,"This index pre-averages four items asking how much importance should the U.S. place on “encouraging more democracy in Middle East countries like Egypt and Saudi Arabia,” “increased foreign aid to countries that may be breeding grounds for terrorism,” “working with other countries to identify and combat terrorism,” and “building up our intelligence capabilities” as “ways of reducing future terrorism directed against the U.S.”  The remaining ingredients are items asking what priority, again on a scale from 0 to 10, should be accorded “preventing the spread of weapons of mass destruction,” “fighting terrorism,” and “protecting the U.S. from attack” as “long range foreign policy goal[s]” and to “discouraging countries from trying to develop nuclear weapons” as a reason for “provid[ing] foreign aid to other countries.”  Cronbach’s alpha is .82 face-to-face and .83 online."
+92,NIC2,9,Increasing Foreign Aid Index,nic2.t1humrh2,nic2.t2humrh2,"[Single Item] This is a single item asking whether “the amount of money the U.S. is now devoting to foreign aid should be increased, reduced, or kept about the same.”  Some of the items in the next index may also be thought relevant, but empirically this item, with its explicit reference to spending and silence about purposes, stands apart.  "
+92,NIC2,9,Internationalism Index,nic2.t1multi,nic2.t2multi,"[Single Item] Here too we have only a single item, in this case asking how much one agrees or disagrees that “this country would be better off if we just stayed home and did not concern ourselves with problems in other areas of the world.”"
+92,NIC2,9,Multilateralism Index,nic2.t1inter,nic2.t2inter,"Two of this index’s ingredients are the differences between the strength with which the respondent supports or opposes American military action “with United Nations support” versus “acting alone” to “prevent mass killings in foreign countries” and to “prevent the spread of weapons of mass destruction to countries that might use them.”  These differences then averaged with the responses to questions asking how strongly the respondent agrees or disagrees that “the only way to solve environmental problems like global warming is through international agreements, requiring countries to work together;” how important it is to “work with other countries to identify and combat terrorism”; whether it is best to “work with groups of countries through international institutions like the World Trade Organization,” “to work with other countries one by one to establish agreements,” or “to leave things as they are” in dealing with international trade;  and whether “the U.S. acting by itself,” “the U.S. acting with close allies like NATO,” “the U.S. & its close allies acting through the United Nations,” “the United Nations,” or “nobody” should “take the lead” in “trying to resolve international conflicts” and in “providing foreign assistance to other countries.”[i]  Cronbach’s Alpha is .63 face-to-face and .75 online. //[i]Nobody’s taking the lead, chosen by only a few percent anyway, is treated as missing data."
+92,NIC2,9,Democracy Index,nic2.t1global,nic2.t2global,"This index averages items asking whether the respondent agrees more that “the U.S. should be promoting democracy in other countries” or that “how other countries are governed is not our concern,” the priority that should be given to “helping newly democratic countries develop their democratic institutions” as a reason for “provid[ing] foreign aid to other countries,” and the pre-average of the importance that should be placed each of six “possible ways the U.S. might promote democracy outside of the U.S.” (“help[ing] with building democratic institutions,” “increasing trade,” “trade penalties for human rights violations,” “foreign aid,” “provid[ing] U.S. troops to help keep the peace,” and “increased support for organizations like the Peace Corps that send Americans abroad to help other countries”).  Cronbach’s alpha is .77 face-to-face and .72 online."
+92,NIC2,9,Fighting Poverty and Suffering Index,nic2.t1demo,nic2.t2demo,"This variable specifically concerns foreign aid for food, medicine, and the alleviation of poverty.  The index averages the priorities given to “providing food and medical help to poor countries” and “reducing world poverty” as “long range foreign policy goal[s],” and then pre-averages (a) the priorities given to “reducing hunger and disease in poor countries” and “helping poor countries develop their economies” as reasons for “provid[ing] foreign aid to other countries” and (b) the responses to questions asking whether the U.S., “as a global leader,” should spend more money to help fight world hunger in developing countries” and “to help fight the AIDS epidemic in developing countries” versus “concentrate[ing] on dealing with problems at home first.”  Cronbach’s Alpha is .84 face-to-face and .82 online.  "
+92,NIC2,9,Human Rights Index,nic2.t1forai1,nic2.t2forai1,[Single Item] This is a single item asking what priority should be given to “protecting human rights in other countries.” 
+92,NIC2,9,Liberalizing Trade Index,nic2.t1trade_b,nic2.t2trade_b,"[Single Item] This is a single item asking whether the U.S. should “repeal the North American Free Trade Agreement, called NAFTA,” “leave NAFTA the way it is,” “adopt agreements like NAFTA but with more Latin American countries.” "
+1001,NIC 1,9,Protecting the Environment Index,nic1.t1att1,nic1.t2att1,(Same as NIC2)
+1001,NIC 1,9,Fighting Terrorism Index,nic1.t1att2,nic1.t2att2,(Same as NIC2)
+1001,NIC 1,9,Increasing Foreign Aid Index,nic1.t1att3,nic1.t2att3,(Same as NIC2)
+1001,NIC 1,9,Internationalism Index,nic1.t1att4,nic1.t2att4,(Same as NIC2)
+1001,NIC 1,9,Multilateralism Index,nic1.t1att5,nic1.t2att5,(Same as NIC2)
+1001,NIC 1,9,Democracy Index,nic1.t1att6,nic1.t2att6,(Same as NIC2)
+1001,NIC 1,9,Fighting Poverty and Suffering Index,nic1.t1att7,nic1.t2att7,(Same as NIC2)
+1001,NIC 1,9,Human Rights Index,nic1.t1att8,nic1.t2att8,(Same as NIC2)
+1001,NIC 1,9,Liberalizing Trade Index,nic1.t1att9,nic1.t2att9,(Same as NIC2)
+94,BTP 2004 Election,6,More services / Higher taxes,btp04.w4b42,btp04.w4f42,"[Single Item] Some people think the federal government should lower taxes, even if that means providing fewer services like health care and education. Suppose these people are at one end of a scale, at point 1. Other people think the federal government should provide more services like health care and education, even if even that means raising taxes. Suppose these people are at the other end, at point 7.  People who are exactly in the middle are at point 4, and of course other people have positions at points 2, 3, 5, or 6.  Where would you place yourself on this scale, or haven't you thought much about this?"
+94,BTP 2004 Election,6,Multilateralism (intervene with UN approval),btp04.w4b45,btp04.w4f45,"[Single Item] Here's the next issue.  Some people feel the United States should intervene militarily when its interests are threatened without working through international organizations such as the U.N and NATO.  Suppose these people are at point 1. Other people feel that we should not intervene without first obtaining international approval and cooperation.  Suppose these people are at point 7.  Using the scale shown below, where would you place yourself, or haven't you thought much about this?"
+94,BTP 2004 Election,6,Free trade vs. Protectionism ,btp04.w4b48,btp04.w4f48,"[Single Item] Here's the next one.  Some people feel that we should pursue free trade even if that means some current American jobs are lost to companies abroad. Other people feel that we should protect American industries even if that means we lose markets for our goods abroad. And of course, other people fall somewhere in between. Where would you place yourself on this issue, or haven't you thought much about this?"
+94,BTP 2004 Election,6,Constitutional rights vs. Find everypotential terrorist ,btp04.w4b51,btp04.w4f51,"[Single Item] When it comes to protecting the country from terrorism, some people say it is important to ensure people’s constitutional rights, even if it means that some suspected terrorists aren’t found.  Suppose these people are at point 1. Others say it s important to find every potential terrorist, even if some innocent people are falsely accused, interrogated, or imprisoned.  Suppose these people are at point 7. Where would you place yourself on this scale, or haven't you thought much about this?"
+94,BTP 2004 Election,6,Health insutrance: Govt  vs. Private,btp04.w4b54,btp04.w4f54,"[Single Item] Some people feel that the federal government should make sure that everyone has adequate health  insurance. Suppose these people are at one end of a scale, at point 1. Other people feel that health insurance should be left up to individuals and their employers.  Suppose these people are at point 7. Where would you place yourself on this scale, or haven't you thought much about this?"
+94,BTP 2004 Election,6,Gay marriage: Allow marriage vs. Constitutional amendment to ban gay marriage ,btp04.w4b57,btp04.w4f57,"[Single Item] Finally, some people believe that two people of the same sex should be able to marry just like anyone else.  Suppose these people are at point 1. Other people think there should be a constitutional amendment to prohibit gay marriage.  Suppose these people are at point 7. Where would you place yourself on this scale, or haven't you thought much about this?"
+96,San Mateo,7,Create more housing,sm.t1more,sm.t2more,"[Single Item] Some people think we should create more housing in the county.    Suppose people who believe this are at one end of a scale, at point 1.  Other people think we should restrict housing growth in the county. Suppose people who believe this are at the other end, at point 7.  People who are exactly in the middle are at point 4, and of course other people are at points 2, 3, 5, or 6.  Where would you place yourself on this scale, or haven't you thought much about this? (reverse coded)"
+96,San Mateo,7,Require some homes to be sold below market rate,sm.t1belowmrkt,sm.t2belowmrkt,"[Single Item] Some people think developers should be required to provide a certain portion of their homes at prices below the market rate.  Suppose people who believe this are at one end of a scale, at point 1. Other people think developers should be allowed to sell homes at whatever price the market will support.   Suppose people who believe this are at the other end, at point 7.  People who are exactly in the middle are at point 4.  Where would you place yourself on this scale, or haven't you thought much about this?(reverse coded)"
+96,San Mateo,7,Open space areas rezoned to allow housing,sm.t1openspace,sm.t2openspace,"[Single Item] Some people think that any new housing should be located in already developed areas.  Suppose people who believe this are at one end of a scale, at point 1.  Other people think that any new housing should be located in currently protected open space areas rezoned to allow housing developments. Suppose people who believe this are at the other end, at point 7.  People who are exactly in the middle are at point 4, and of course other people are at points 2, 3, 5, or 6.  Where would you place yourself on this scale, or haven't you thought much about this?"
+96,San Mateo,7,Attract jobs v. Restrict commuters,sm.t1lesscommute,sm.t2lesscommute,"[Single Item] If new housing is restricted, some people think we should still try to attract new jobs to the county, even if that increases the number of commuters.  Suppose people who believe this are at one end of a scale, at point 1.  Other people think we should try to minimize the number of commuters, even if that reduces job growth.  Suppose people who believe this are at the other end, at point 7.  People who are exactly in the middle are at point 4.  Where would you place yourself on this scale, or haven't you thought much about this?"
+96,San Mateo,7,Increase public consultation,sm.t1consult,sm.t2consult,"[Single Item] On a scale of 0 to 10, where 0 is completely unimportant, 10 is extremely important, and 5 is exactly in the middle, how important would you say it is to increase public consultation in the planning and approval of new housing development?"
+96,San Mateo,7,Land use: Local control v. regional coordination within county,sm.t1countyl,sm.t2countyl,"[Single Item] Some people think local communities should retain control over land use.  Suppose people who believe this are at one end of a scale, at point 1.  Other people think land use policies should be coordinated countywide.  Suppose people who believe this are at the other end, at point 7.  People who are exactly in the middle are at point 4.  Where would you place yourself on this scale, or haven't you thought much about this?"
+96,San Mateo,7,Housing issue: County level v. state-level,sm.t1countys,sm.t2countys,"[Single Item] Some people think housing is a county-level issue.  Suppose people who believe this are at one end of a scale, at point 1.  Other people think housing is a broader, state-level issue.  Suppose people who believe this are at the other end, at point 7.  People who are exactly in the middle are at point 4.  Where would you place yourself on this scale, or haven't you thought much about this? (reverse coded)"
+97,BTP 2005 Health Education,11,Education Reform,btp05.t1reform,btp05.t2reform,"[Single Item]  ""In order to improve public education in America, some people think the focus should be on reforming the existing public school system. Others believe the focus should be on finding an alternative to the existing public school system. Which approach do you think is preferable? (0 = Finding an alternative system; 1 = Reforming the existing system)"""
+97,BTP 2005 Health Education,11,Charter School or Vouchers,btp05.t1fcvsch,btp05.t2fcvsch,"""Fund more charter schools with money from the public school system (1=Strongly agree)""; ""Provide vouchers to pay some or all of the cost of private schools with money from the public school system (1=Strongly agree)""
+"
+97,BTP 2005 Health Education,11,Tax Money to Pub Schools,btp05.t1mmtaxe,btp05.t2mmtaxe,"""Provide more money for the most troubled public schools even if this means raising taxes (1=Strongly support)""; ""Provide more money for public schools to pay for smaller class sizes even if this means raising taxes (1=Strongly support)""; ""Provide more money for public schools to pay for new technology even if this means raising taxes (1=Strongly support)""; ""Provide more money for public schools to pay teachers even if this means raising taxes (1=Strongly support)""; ""How important would you say it is that the nation's schools focus on improving the following?: Funding (1=Extremely important)""
+"
+97,BTP 2005 Health Education,11,Standardized Testing,btp05.t1stest,btp05.t2stest,"""In your opinion is there too much emphasis on standardized testing in the public schools in your community, about the right amount, or not enough emphasis? (0 = Too much, .5 = About the right amount, 1 = Not enough)""; ""Some people think increased use of standardized tests in the public schools is good because it helps evaluate the performance of students and schools. Some people think it is bad because it forces teachers to emphasize only what is measured in the tests. Indicate whether you think it would be bad or good to increase the use of standardized tests in the public schools.""
+"
+97,BTP 2005 Health Education,11,Testing Local/State,btp05.t1testsl,btp05.t2testsl,"[Single Item] ""Some people think that tests for student achievement should be set at the state level and applied in the same way to all students in the state. Others think that local school boards should make these decisions in each community. Which do you think? (0 = Decisions about testing should be made at the state level; 1 = Decisions should be made by local school boards in each community)"""
+97,BTP 2005 Health Education,11,No Child Left Behind,btp05.t1nclb,btp05.t2nclb,"[Single Item] ""From what you know or have heard about the No Child Left Behind Act, do you approve or disapprove of it or couldn't you say? (5-pt scale; 0 = strongly approve, 1 = strongly disapprove)"""
+97,BTP 2005 Health Education,11,Health - CostCov,btp05.t1costcov,btp05.t2costcov,"""The cost of health insurance (0=completely unimportant; 1=extremely important)""; 
+""The number of Americans without health insurance (0=completely unimportant; 1=extremely important)""; ""The cost of prescription drugs (0=completely unimportant; 1=extremely important)""; ""Would you be willing to pay more than you do now for health care if this meant that many more Americans would have health insurance coverage? (0 = No; .5 = Yes, at least slightly more; 1 = Yes, significantly more)""
+"
+97,BTP 2005 Health Education,11,Health - Government Involvement,btp05.t1govinv,btp05.t2govinv,"""The US should adopt a single-payer system, where a government entity accepts all healthcare fees and pays out all healthcare costs for everyone. (5-pt scale; 1 = strongly agree, 0 = strongly disagree)""; ""The US should increase funding for Medicare and Medicaid even if this means increases in taxes. (5-pt scale; 1 = strongly agree, 0 = strongly disagree)"""
+97,BTP 2005 Health Education,11,Health - MedQuality,btp05.t1medqual,btp05.t2medqual,"""Medical errors or mistakes (0=completely unimportant; 1=extremely important)""; 
+""The medical malpractice system (0=completely unimportant; 1=extremely important)""; ""Quality of health care provided to those with insurance (0=completely unimportant; 1=extremely important)"""
+97,BTP 2005 Health Education,11,Health - EmplyPayIns,btp05.t1emplypay,btp05.t2emplypay,"[Single Item] ""The US should require employer coverage of health care, where every employer must provide insurance for all workers. (5-pt scale; 1 = strongly agree, 0 = strongly """
+97,BTP 2005 Health Education,11,Health - Individuals Pay Insurance,btp05.t1indivpay,btp05.t2indivpay,"[Single Item] ""The US should require individual coverage, where individuals must buy minimal coverage, perhaps funded by a tax credit. (5-pt scale; 1 = strongly agree, 0 = strongly disagree)"""
+20,UK EU,4,Relations with EU,ukeu.eurelat1g,ukeu.eurelat2g,
+20,UK EU,4,Scope of EU,ukeu.euscope1g,ukeu.euscope2g,
+20,UK EU,4,EU should include some Eastern European countries ,ukeu.commies1r,ukeu.commies2r,
+20,UK EU,4,Favor a Referendum,ukeu.favref1r,ukeu.favref2r,
+22,UK Health,11,Healthcare Payer,ukhealth.t1payhlt,ukhealth.t2payhlt,
+22,UK Health,11,Priority to Poor,ukhealth.t1poora,ukhealth.t2poora,
+22,UK Health,11,Healthcare Options,ukhealth.t1option,ukhealth.t2option,
+22,UK Health,11,Healthcare Funding Options,ukhealth.t1hlthfu,ukhealth.t2hlthfu,
+22,UK Health,11,Cutting Expensive Treatments,ukhealth.t1ctexpt,ukhealth.t2ctexpt,
+22,UK Health,11,Privatizing Some Treatments,ukhealth.t1pritre,ukhealth.t2pritre,
+22,UK Health,11,Priority Based On Severity,ukhealth.t1severi,ukhealth.t2severi,
+22,UK Health,11,Priority to Prevention,ukhealth.t1preven,ukhealth.t2preven,
+22,UK Health,11,Discretion,ukhealth.t1dispub,ukhealth.t2dispub,
+22,UK Health,11,Doctors Discretion,ukhealth.t1avgdis,ukhealth.t2avgdis,
+22,UK Health,11,Patients have more say,ukhealth.t1moresa,ukhealth.t2moresa,
+23,UK Monarchy,4,Support for Monarchy,ukmonarchy.t1supmon,ukmonarchy.t2supmon,
+23,UK Monarchy,4,Power of Monarchy,ukmonarchy.t1mpop,ukmonarchy.t2mpop,
+23,UK Monarchy,4,Monarchy and Populism,ukmonarchy.t1pwrm,ukmonarchy.t2pwrm,
+23,UK Monarchy,4,Reform HOL ,ukmonarchy.t1reflor,ukmonarchy.t2reflor,
+25,UK GE ,4,Redistribution,ukbge.t1redist,ukbge.t2redist,
+25,UK GE ,4,Tax,ukbge.t1tax,ukbge.t2tax,
+25,UK GE ,4,Minimum Wage,ukbge.t1wage,ukbge.t2wage,
+25,UK GE ,4,EU,ukbge.t1eu,ukbge.t2eu,
+26,AU Monarchy,5,National Autonomy,aus.autind1,aus.autind2,
+26,AU Monarchy,5,Workability,aus.workind1,aus.workind2,
+26,AU Monarchy,5,Democracy,aus.demind1,aus.demind2,
+26,AU Monarchy,5,Tradition,aus.tradind1,aus.tradind2,
+26,AU Monarchy,5,Politicization,aus.polind1,aus.polind2,
+27,UK Crime,5,Social Root Causes,ukcrime.rootcauset1,ukcrime.rootcauset2,
+27,UK Crime,5,Police,ukcrime.policet1,ukcrime.policet2,
+27,UK Crime,5,Punishment,ukcrime.punisht1,ukcrime.punisht2,
+27,UK Crime,5,Procedural Rights,ukcrime.procrightst1,ukcrime.procrightst2,
+27,UK Crime,5,Self-Protection,ukcrime.selfprotectt1,ukcrime.selfprotectt2,
+28,EU 2007,7,EU Membership,eu.support_eu_membership_t1,eu.support_eu_membership_t2,
+28,EU 2007,7,Privatization of pension,eu.att_towards_privatization_t1,eu.att_towards_privatization_t2,
+28,EU 2007,7,Immigration,eu.attitude_towards_migration_t1,eu.attitude_towards_migration_t2,
+28,EU 2007,7,Militarism,eu.mil_att_11_12_t1,eu.mil_att_11_12_t2,
+28,EU 2007,7,Pacifist EU,eu.t1q11b,eu.t2q11br,
+28,EU 2007,7,Include Turkey in EU,eu.turkey_enlargement_att_t1,eu.turkey_enlargement_att_t2,
+28,EU 2007,7,Countries Should have Veto,eu.eu_veto_support_t1,eu.eu_veto_support_t2,
+29,CPL,7,Research,cpl.t1res,cpl.t2res,
+29,CPL,7,Conservation,cpl.t1cons,cpl.t2cons,
+29,CPL,7,Helping Low Income Customer,cpl.t1poor,cpl.t2poor,
+29,CPL,7,Use Renewables,cpl.t1renew,cpl.t2renew,
+29,CPL,7,Build Fossil Fuel Plant,cpl.t1fossil,cpl.t2fossil,
+29,CPL,7,Buying/Importing Power,cpl.t1buypwr,cpl.t2buypwr,
+29,CPL,7,Competition is Good,cpl.t1compet,cpl.t2compet,
+986,WTU,7,Buying/Importing Power,wtu.t1att1,wtu.t2att1,
+986,WTU,7,Competition is Good,wtu.t1att2,wtu.t2att2,
+986,WTU,7,Minimize Environmental Impact,wtu.t1att3,wtu.t2att3,
+986,WTU,7,Decreasing Need through Efficiency,wtu.t1att4,wtu.t2att4,
+986,WTU,7,Use Renewables,wtu.t1att5,wtu.t2att5,
+986,WTU,7,Research,wtu.t1att6,wtu.t2att6,
+986,WTU,7,Build Fossil Fuel Plant,wtu.t1att7,wtu.t2att7,
+3000,SWEPCO,7,Buying/Importing Power,swp.t1att1,swp.t2att1,
+3000,SWEPCO,7,Competition is Good,swp.t1att2,swp.t2att2,
+3000,SWEPCO,7,Minimize Environmental Impact,swp.t1att3,swp.t2att3,
+3000,SWEPCO,7,Decreasing Need through Efficiency,swp.t1att4,swp.t2att4,
+3000,SWEPCO,7,Use Renewables,swp.t1att5,swp.t2att5,
+3000,SWEPCO,7,Research,swp.t1att6,swp.t2att6,
+3000,SWEPCO,7,Build Fossil Fuel Plant,swp.t1att7,swp.t2att7,
+2000,Greece,6,Alexandris,grk.t1att1,grk.t2att1,
+2000,Greece,6,Veloudos,grk.t1att2,grk.t2att2,
+2000,Greece,6,Vlachos,grk.t1att3,grk.t2att3,
+2000,Greece,6,Diakoliou,grk.t1att4,grk.t2att4,
+2000,Greece,6,Karanasou,grk.t1att5,grk.t2att5,
+2000,Greece,6,Breyiannis,grk.t1att6,grk.t2att6,
+53,Bulgaria,12,Tougher Punishment,bulgaria.bulgaria.t1tghpc,bulgaria.bulgaria.t2tghpc,
+53,Bulgaria,12,Civil Liberties,bulgaria.bulgaria.t1clibe,bulgaria.bulgaria.t2clibe,
+53,Bulgaria,12,Social Root Causes,bulgaria.bulgaria.t1q8_7,bulgaria.bulgaria.t2q8_7,
+53,Bulgaria,12,Economic Root Causes,bulgaria.bulgaria.t1q8_1,bulgaria.bulgaria.t2q8_1,
+53,Bulgaria,12,Rehabilitation,bulgaria.bulgaria.t1q8_8,bulgaria.bulgaria.t2q8_8,
+53,Bulgaria,12,Streamlining,bulgaria.bulgaria.t1q8_11,bulgaria.bulgaria.t2q8_11,
+53,Bulgaria,12,Drug Legalization,bulgaria.bulgaria.t1q10_3,bulgaria.bulgaria.t2q10_3,
+53,Bulgaria,12,Penalty for Drug Taking,bulgaria.bulgaria.t1q16,bulgaria.bulgaria.t2q16,
+53,Bulgaria,12,Vigilantism,bulgaria.bulgaria.t1q21,bulgaria.bulgaria.t2q21,
+53,Bulgaria,12,Institutional Change,bulgaria.bulgaria.t1q22,bulgaria.bulgaria.t2q22,
+53,Bulgaria,12,Independence of Investigation Service,bulgaria.bulgaria.t1q23,bulgaria.bulgaria.t2q23,
+53,Bulgaria,12,Place of Prosecution,bulgaria.bulgaria.t1q19,bulgaria.bulgaria.t2q19,
+52,China,9,Industrial Roads,chi.t1att1,chi.t2att1,
+52,China,9,Village Roads,chi.t1att2,chi.t2att2,
+52,China,9,Main Roads,chi.t1att3,chi.t2att3,
+52,China,9,Commercial Roads,chi.t1att4,chi.t2att4,
+52,China,9,Wenchang Main Avenue,chi.t1att5,chi.t2att5,
+52,China,9,Other Parks,chi.t1att6,chi.t2att6,
+52,China,9,Township Image,chi.t1att7,chi.t2att7,
+52,China,9,Cultural Heritage,chi.t1att8,chi.t2att8,
+52,China,9,Sewage Treatment,chi.t1att9,chi.t2att9,
+95,BTP 2004 Online Primaries,3,Free Trade,btp04pr.t1trade,btp04pr.t2trade,
+95,BTP 2004 Online Primaries,3,Multilateralism,btp04pr.t1mindex,btp04pr.t2mindex,
+95,BTP 2004 Online Primaries,3,Services vs. Taxes,btp04pr.t1services,btp04pr.t2services,
+93,BTP 2003,9,Fighting Poverty and Suffering,btp03.olt1usseca,btp03.olt2usseca,
+93,BTP 2003,9,Human Rights,btp03.olt1humrh2,btp03.olt2humrh2,
+93,BTP 2003,9,Protecting the Environment,btp03.olt1envir,btp03.olt2envir,
+93,BTP 2003,9,Internationalism,btp03.olt1inter,btp03.olt2inter,
+93,BTP 2003,9,Multilateralism,btp03.olt1multi,btp03.olt2multi,
+93,BTP 2003,9,Democracy,btp03.olt1demo,btp03.olt2demo,
+93,BTP 2003,9,Increasing Foreign Aid,btp03.olt1forai1,btp03.olt2forai1,
+93,BTP 2003,9,Fighting Terrorism,btp03.olt1global,btp03.olt2global,
+93,BTP 2003,9,Liberalizing Trade,btp03.olt1trade,btp03.olt2trade,

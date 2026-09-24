@@ -2,16 +2,16 @@ source("R/paths.R")
 source("R/metadata.R")
 
 artifacts <- read_metadata("artifacts") |>
-  dplyr::filter(!is.na(.data$poll_id))
+  dplyr::mutate(directory = dplyr::coalesce(.data$poll_id, "shared"))
 
 artifacts |>
-  dplyr::group_by(.data$poll_id) |>
+  dplyr::group_by(.data$directory) |>
   tidyr::nest() |>
-  purrr::pwalk(function(poll_id, data) {
-    directory <- project_path("data", poll_id)
+  purrr::pwalk(function(directory, data) {
+    directory <- project_path("data", directory)
     fs::dir_create(directory)
     readr::write_csv(
-      dplyr::mutate(data, poll_id = poll_id, .before = 1),
+      dplyr::select(data, "poll_id", dplyr::everything()),
       file.path(directory, "manifest.csv"),
       na = ""
     )
