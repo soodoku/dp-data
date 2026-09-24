@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.1
+
+- Make the provenance test create its own Git fixture so `make check` also runs
+  from a downloaded source archive. Data and recoding behavior are unchanged.
+
 ## 0.2.0
 
 - Add a respondent layer retaining 24,361 source records from 16 reviewed polls,

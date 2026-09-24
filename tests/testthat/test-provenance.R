@@ -36,20 +36,40 @@ test_that("empty source catalogs do not drop input candidates", {
 })
 
 test_that("the local inventory hashes tracked files without reading records", {
-  files <- inventory_repository_files(root)
-  expect_gt(nrow(files), 0L)
+  repository <- withr::local_tempdir()
+  dir.create(file.path(repository, "data"))
+  writeLines("source bytes", file.path(repository, "data", "source.txt"))
+  writeLines("excluded readme", file.path(repository, "data", "README.md"))
+  git <- function(args) {
+    status <- system2(
+      "git", c("-C", shQuote(repository), args),
+      stdout = FALSE, stderr = FALSE
+    )
+    stopifnot(status == 0L)
+  }
+  git(c("init", "--quiet"))
+  git(c("add", "data"))
+  git(c(
+    "-c", "user.name=Test", "-c", "user.email=test@example.invalid",
+    "-c", "commit.gpgsign=false", "commit", "--quiet", "-m", "fixture"
+  ))
+  writeLines("untracked", file.path(repository, "data", "untracked.txt"))
+  files <- inventory_repository_files(repository)
+  expect_equal(nrow(files), 1L)
+  expect_identical(files$path, "data/source.txt")
+  expect_false(any(files$working_tree_dirty))
   expect_equal(anyDuplicated(files[c("repository", "path")]), 0L)
   expect_true(all(grepl("^[a-f0-9]{64}$", files$sha256)))
   expect_true(all(grepl("^[a-f0-9]{40}$", files$repository_commit)))
   expect_true(all(grepl("^(data/|inst/extdata/)", files$path)))
   selected <- files |> dplyr::filter(
-    .data$path == "data/uk-crime-1994/codebook.txt"
+    .data$path == "data/source.txt"
   )
   expect_equal(nrow(selected), 1L)
   expect_identical(
     selected$sha256,
     digest::digest(
-      file = file.path(root, selected$path), algo = "sha256"
+      file = file.path(repository, selected$path), algo = "sha256"
     )
   )
 })
