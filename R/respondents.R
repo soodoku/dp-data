@@ -461,10 +461,14 @@ validate_respondent_tables <- function(tables) {
     all(is.na(measures$value_numeric) | is.finite(measures$value_numeric))
   )
   inputs <- read_metadata("measure_inputs")
+  measure_lookup <- purrr::map(
+    split(measures, measures$poll_id),
+    function(poll) split(poll, poll$definition_id)
+  )
   for (i in seq_len(nrow(definitions))) {
     definition <- definitions[i, ]
-    rows <- measures[measures$poll_id == definition$poll_id &
-                       measures$definition_id == definition$definition_id, ]
+    rows <- measure_lookup[[definition$poll_id]][[definition$definition_id]]
+    stopifnot(!is.null(rows))
     dependencies <- inputs$source_column[
       inputs$poll_id == definition$poll_id &
         inputs$definition_id == definition$definition_id
