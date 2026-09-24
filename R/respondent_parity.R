@@ -21,6 +21,10 @@ compare_respondent_measures <- function(measures, people, samples, reference,
   targets <- read_metadata("polardata_targets")
   targets <- targets[targets$status == "implemented", ]
   contracts <- read_metadata("respondent_sources")
+  measure_lookup <- purrr::map(
+    split(measures, measures$poll_id),
+    function(poll) split(poll, poll$definition_id)
+  )
   purrr::map(seq_len(nrow(targets)), function(i) {
     target <- targets[i, ]
     poll <- target$poll_id
@@ -50,10 +54,8 @@ compare_respondent_measures <- function(measures, people, samples, reference,
       persons$historical_respondent_id,
       as.character(expected$caseid)
     ), ][[target$legacy_field]]
-    actual <- measures[
-      measures$poll_id == poll &
-        measures$definition_id == target$canonical_definition,
-    ]
+    actual <- measure_lookup[[poll]][[target$canonical_definition]]
+    stopifnot(!is.null(actual))
     stopifnot(
       !anyDuplicated(actual$respondent_id),
       all(persons$respondent_id %in% actual$respondent_id)

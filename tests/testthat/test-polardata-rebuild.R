@@ -60,3 +60,18 @@ test_that("numerical exceptions cannot hide changed aggregate values", {
   parity <- compare_historical_polardata(data, reference, audit)
   expect_equal(sum(parity$unexplained_differences), 1L)
 })
+
+
+test_that("regenerated export row numbers cannot be corrupted", {
+  data <- full_polardata()
+  reference <- readr::read_tsv(project_path(
+    "evidence", "benchmarks", "polardata.tab"
+  ), show_col_types = FALSE)
+  audit <- readr::read_csv(project_path(
+    "audit", "polardata_covariances.csv"
+  ), show_col_types = FALSE)
+  data$X[[1]] <- 999999L
+  expect_error(compare_historical_polardata(data, reference, audit))
+  data$X[[1]] <- NA_integer_
+  expect_error(compare_historical_polardata(data, reference, audit))
+})

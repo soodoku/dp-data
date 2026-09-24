@@ -1,7 +1,8 @@
 compare_historical_polardata <- function(rebuilt, reference, numerical_audit,
                                          tolerance = 1e-10) {
   stopifnot(identical(names(rebuilt), names(reference)),
-    nrow(rebuilt) == nrow(reference), nrow(rebuilt) == 6084L
+    nrow(rebuilt) == nrow(reference), nrow(rebuilt) == 6084L,
+    !anyNA(rebuilt$X), all(rebuilt$X == seq_len(nrow(rebuilt)))
   )
   contracts <- read_metadata("respondent_sources")
   purrr::map_dfr(seq_len(nrow(contracts)), function(index) {
