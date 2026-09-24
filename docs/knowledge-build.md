@@ -224,12 +224,22 @@ impact, plausible explanations and the evidence still needed. Matching the old
 aggregate does not clear a definition for substantive use. A failed parity check
 is an investigation trigger; do not update the benchmark to make it pass.
 
-The current increment writes
-`output/polardata/uk-health-1998.parquet`: 230 rows, one per UK Health
-respondent in the reviewed participant survey, with 73 columns. This is a
-partial reconstruction, not a complete UK Health record or full `polardata`.
-No downstream consumer reads it yet. Historical benchmarks, canonical knowledge
-tables and linkage outputs remain unchanged.
+The full build writes `output/polardata/polardata.parquet` and `polardata.tab`
+with 6,084 rows and the 364 historical columns, plus the 129-row attitude catalog
+and typed derived measures. All 21 polls build from public source materials;
+`make compare-polardata` evaluates historical agreement separately. Generalized
+variance has explicitly audited numerical exceptions in 24 groups, and export
+row numbers are regenerated. See the [architecture](architecture.md) and
+[poll issue register](poll-issues.md) for samples, historical quirks and
+comparison rules. No downstream consumer is switched by this release.
+Historical benchmarks, canonical knowledge tables and linkage outputs remain
+unchanged.
+
+### UK Health worked example
+
+The earlier `output/polardata/uk-health-1998.parquet` remains a regression
+fixture produced from source: 230 rows and 73 columns. The following details
+explain that subset; the full export includes the remaining registered fields.
 
 `dpnum` is integer 2 and `caseid` is the survey's numeric `serial_m`, verified
 equal to `serial_a`, unique and nonmissing. The 22 attitude columns are doubles, use

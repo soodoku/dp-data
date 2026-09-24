@@ -1,0 +1,1358 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+nicid,double,numeric,,src's case id for nic recruitment,%9.0g,,,TRUE,Retained
+fp1,double,haven_labelled|vctrs_vctr|double,,america after september 11th,%9.0g,,,TRUE,Retained
+fp2a_a,double,haven_labelled|vctrs_vctr|double,,fp goals: protect global environment (pre),%9.0g,,,TRUE,Retained
+fp2a_b,double,haven_labelled|vctrs_vctr|double,,fp goals: ensure us energy supply (pre),%9.0g,,,TRUE,Retained
+fp2a_c,double,haven_labelled|vctrs_vctr|double,,fp goals: promote democracy (pre),%9.0g,,,TRUE,Retained
+fp2b_a,double,haven_labelled|vctrs_vctr|double,,fp goals: prevent spread of weapons (pre),%9.0g,,,TRUE,Retained
+fp2b_b,double,haven_labelled|vctrs_vctr|double,,fp goals: aid u.s. business abroad (pre),%9.0g,,,TRUE,Retained
+fp2b_c,double,haven_labelled|vctrs_vctr|double,,fp goals: fight terrorism (pre),%9.0g,,,TRUE,Retained
+fp2b_d,double,haven_labelled|vctrs_vctr|double,,fp goals: aid to poor countries (pre),%9.0g,,,TRUE,Retained
+fp2c_a,double,haven_labelled|vctrs_vctr|double,,fp goals: protect u.s. from attack (pre),%9.0g,,,TRUE,Retained
+fp2c_b,double,haven_labelled|vctrs_vctr|double,,fp goals: protect human rights (pre),%9.0g,,,TRUE,Retained
+fp2c_c,double,haven_labelled|vctrs_vctr|double,,fp goals: protect weaker nations (pre),%9.0g,,,TRUE,Retained
+fp2c_d,double,haven_labelled|vctrs_vctr|double,,fp goals: reduce world poverty (pre),%9.0g,,,TRUE,Retained
+fp3a_a,double,haven_labelled|vctrs_vctr|double,,better to stay at home (pre),%9.0g,,,TRUE,Retained
+fp3a_b,double,haven_labelled|vctrs_vctr|double,,agree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+fp3a_c,double,haven_labelled|vctrs_vctr|double,,disagree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+fp3a_s,double,haven_labelled|vctrs_vctr|double,,better to stay at home - summary (pre),%9.0g,,,TRUE,Retained
+fp3b_a,double,haven_labelled|vctrs_vctr|double,,protect world from weapons (pre),%9.0g,,,TRUE,Retained
+fp3b_b,double,haven_labelled|vctrs_vctr|double,,agree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+fp3b_c,double,haven_labelled|vctrs_vctr|double,,disagree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+fp3b_s,double,haven_labelled|vctrs_vctr|double,,protect world from weapons - summary (pre),%9.0g,,,TRUE,Retained
+fp3c_a,double,haven_labelled|vctrs_vctr|double,,protects world from terrorists (pre),%9.0g,,,TRUE,Retained
+fp3c_b,double,haven_labelled|vctrs_vctr|double,,agree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+fp3c_c,double,haven_labelled|vctrs_vctr|double,,disagree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+fp3c_s,double,haven_labelled|vctrs_vctr|double,,protects world from terrorists - summary (pre),%9.0g,,,TRUE,Retained
+fp3d_a,double,haven_labelled|vctrs_vctr|double,,intervene with support (pre),%9.0g,,,TRUE,Retained
+fp3d_b,double,haven_labelled|vctrs_vctr|double,,agree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+fp3d_c,double,haven_labelled|vctrs_vctr|double,,disagree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+fp3d_s,double,haven_labelled|vctrs_vctr|double,,intervene with support - summary (pre),%9.0g,,,TRUE,Retained
+fp4a_a,double,haven_labelled|vctrs_vctr|double,,iraq: build economy (pre),%9.0g,,,TRUE,Retained
+fp4a_b,double,haven_labelled|vctrs_vctr|double,,iraq: gov't friendly to us interests (pre),%9.0g,,,TRUE,Retained
+fp4b_a,double,haven_labelled|vctrs_vctr|double,,iraq: gov't democratic (pre),%9.0g,,,TRUE,Retained
+fp4b_b,double,haven_labelled|vctrs_vctr|double,,iraq: involve the u.n. (pre),%9.0g,,,TRUE,Retained
+wrm1_a,double,haven_labelled|vctrs_vctr|double,,global warming and u.s. quality of life (pre),%9.0g,,,TRUE,Retained
+wrm1_b,double,haven_labelled|vctrs_vctr|double,,cause of global warming (pre),%9.0g,,,TRUE,Retained
+wrm2a_a,double,haven_labelled|vctrs_vctr|double,,require higher mileage from autos (pre),%9.0g,,,TRUE,Retained
+wrm2a_b,double,haven_labelled|vctrs_vctr|double,,support strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+wrm2a_c,double,haven_labelled|vctrs_vctr|double,,oppose strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+wrm2a_s,double,haven_labelled|vctrs_vctr|double,,require higher mileage - summary (pre),%9.0g,,,TRUE,Retained
+wrm2b_a,double,haven_labelled|vctrs_vctr|double,,require cleaner electricity production (pre),%9.0g,,,TRUE,Retained
+wrm2b_b,double,haven_labelled|vctrs_vctr|double,,support strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+wrm2b_c,double,haven_labelled|vctrs_vctr|double,,oppose strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+wrm2b_s,double,haven_labelled|vctrs_vctr|double,,require cleaner electricity - summary (pre),%9.0g,,,TRUE,Retained
+wrm3_a,double,haven_labelled|vctrs_vctr|double,,action on global warming - self (pre),%9.0g,,,TRUE,Retained
+wrm3_b,double,haven_labelled|vctrs_vctr|double,,action on global warming - dem. party (pre),%9.0g,,,TRUE,Retained
+wrm3_c,double,haven_labelled|vctrs_vctr|double,,action on global warming - rep. party (pre),%9.0g,,,TRUE,Retained
+wrm4a_a,double,haven_labelled|vctrs_vctr|double,,solving environmental problems (pre),%9.0g,,,TRUE,Retained
+wrm4a_b,double,haven_labelled|vctrs_vctr|double,,agree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+wrm4a_c,double,haven_labelled|vctrs_vctr|double,,disagree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+wrm4a_s,double,haven_labelled|vctrs_vctr|double,,solving environmental problems - summary (pre),%9.0g,,,TRUE,Retained
+wrm4b_a,double,haven_labelled|vctrs_vctr|double,,agreement would hurt the u.s. (pre),%9.0g,,,TRUE,Retained
+wrm4b_b,double,haven_labelled|vctrs_vctr|double,,agree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+wrm4b_c,double,haven_labelled|vctrs_vctr|double,,disagree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+wrm4b_s,double,haven_labelled|vctrs_vctr|double,,agreement would hurt the u.s. - summary (pre),%9.0g,,,TRUE,Retained
+wrm5,double,haven_labelled|vctrs_vctr|double,,bush position on global warming (pre),%9.0g,,,TRUE,Retained
+hngr,double,haven_labelled|vctrs_vctr|double,,how serious is problem of world hunger (pre),%9.0g,,,TRUE,Retained
+pair1_a,double,haven_labelled|vctrs_vctr|double,,world hunger or problems at home (pre),%9.0g,,,TRUE,Retained
+pair1_b,double,haven_labelled|vctrs_vctr|double,,agree with position strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+pair2_a,double,haven_labelled|vctrs_vctr|double,,world aids or problems at home (pre),%9.0g,,,TRUE,Retained
+pair2_b,double,haven_labelled|vctrs_vctr|double,,agree with position strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+pair3_a,double,haven_labelled|vctrs_vctr|double,,world democracy or not our concern (pre),%9.0g,,,TRUE,Retained
+pair3_b,double,haven_labelled|vctrs_vctr|double,,agree with position strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+pdem1_a,double,haven_labelled|vctrs_vctr|double,,building democratic institutions (pre),%9.0g,,,TRUE,Retained
+pdem1_b,double,haven_labelled|vctrs_vctr|double,,increasing trade (pre),%9.0g,,,TRUE,Retained
+pdem1_c,double,haven_labelled|vctrs_vctr|double,,penalties for human rights violations (pre),%9.0g,,,TRUE,Retained
+pdem2_a,double,haven_labelled|vctrs_vctr|double,,foreign aid (pre),%9.0g,,,TRUE,Retained
+pdem2_b,double,haven_labelled|vctrs_vctr|double,,provide troops to help keep the peace (pre),%9.0g,,,TRUE,Retained
+pdem2_c,double,haven_labelled|vctrs_vctr|double,,organizations like the peace corps (pre),%9.0g,,,TRUE,Retained
+aid1,double,haven_labelled|vctrs_vctr|double,,spending on foreign aid (pre),%9.0g,,,TRUE,Retained
+aid2a_a,double,haven_labelled|vctrs_vctr|double,,increase u.s. influence abroad (pre),%9.0g,,,TRUE,Retained
+aid2a_b,double,haven_labelled|vctrs_vctr|double,,discourage nuclear weapons development (pre),%9.0g,,,TRUE,Retained
+aid2a_c,double,haven_labelled|vctrs_vctr|double,,develop democratic institutions abroad (pre),%9.0g,,,TRUE,Retained
+aid2b_a,double,haven_labelled|vctrs_vctr|double,,reduce hunger and disease abroad (pre),%9.0g,,,TRUE,Retained
+aid2b_b,double,haven_labelled|vctrs_vctr|double,,develop poor economies abroad (pre),%9.0g,,,TRUE,Retained
+aid3,double,haven_labelled|vctrs_vctr|double,,bush position on foreign aid (pre),%9.0g,,,TRUE,Retained
+mact1_a,double,haven_labelled|vctrs_vctr|double,,un support - mass killings (pre),%9.0g,,,TRUE,Retained
+mact1_b,double,haven_labelled|vctrs_vctr|double,,support strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+mact1_c,double,haven_labelled|vctrs_vctr|double,,oppose strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+mact1_s,double,haven_labelled|vctrs_vctr|double,,un support - mass killings - summary (pre),%9.0g,,,TRUE,Retained
+mact2_a,double,haven_labelled|vctrs_vctr|double,,un support - weapons (pre),%9.0g,,,TRUE,Retained
+mact2_b,double,haven_labelled|vctrs_vctr|double,,support strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+mact2_c,double,haven_labelled|vctrs_vctr|double,,oppose strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+mact2_s,double,haven_labelled|vctrs_vctr|double,,un support - weapons - summary (pre),%9.0g,,,TRUE,Retained
+mact3_a,double,haven_labelled|vctrs_vctr|double,,un support - terrorism (pre),%9.0g,,,TRUE,Retained
+mact3_b,double,haven_labelled|vctrs_vctr|double,,support strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+mact3_c,double,haven_labelled|vctrs_vctr|double,,oppose strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+mact3_s,double,haven_labelled|vctrs_vctr|double,,un support - terrorism - summary (pre),%9.0g,,,TRUE,Retained
+mact4_a,double,haven_labelled|vctrs_vctr|double,,u.s. alone - mass killings (pre),%9.0g,,,TRUE,Retained
+mact4_b,double,haven_labelled|vctrs_vctr|double,,support strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+mact4_c,double,haven_labelled|vctrs_vctr|double,,oppose strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+mact4_s,double,haven_labelled|vctrs_vctr|double,,u.s. alone - mass killings - summary (pre),%9.0g,,,TRUE,Retained
+mact5_a,double,haven_labelled|vctrs_vctr|double,,u.s. alone - weapons (pre),%9.0g,,,TRUE,Retained
+mact5_b,double,haven_labelled|vctrs_vctr|double,,support strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+mact5_c,double,haven_labelled|vctrs_vctr|double,,oppose strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+mact5_s,double,haven_labelled|vctrs_vctr|double,,u.s. alone - weapons - summary (pre),%9.0g,,,TRUE,Retained
+mact6_a,double,haven_labelled|vctrs_vctr|double,,u.s. alone - terrorism (pre),%9.0g,,,TRUE,Retained
+mact6_b,double,haven_labelled|vctrs_vctr|double,,support strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+mact6_c,double,haven_labelled|vctrs_vctr|double,,oppose strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+mact6_s,double,haven_labelled|vctrs_vctr|double,,u.s. alone - terrorism - summary (pre),%9.0g,,,TRUE,Retained
+trd1_a,double,haven_labelled|vctrs_vctr|double,,trade agreements - first choice (pre),%9.0g,,,TRUE,Retained
+trd1_b,double,haven_labelled|vctrs_vctr|double,,trade agreements - second choice (pre),%9.0g,,,TRUE,Retained
+trd2,double,haven_labelled|vctrs_vctr|double,,options related to nafta (pre),%9.0g,,,TRUE,Retained
+trd3_a,double,haven_labelled|vctrs_vctr|double,,impact on employment of easier imports (pre),%9.0g,,,TRUE,Retained
+trd3_b,double,haven_labelled|vctrs_vctr|double,,impact on employment of easier exports (pre),%9.0g,,,TRUE,Retained
+trd4,double,haven_labelled|vctrs_vctr|double,,trade barriers in u.s. and abroad (pre),%9.0g,,,TRUE,Retained
+int1a_a,double,haven_labelled|vctrs_vctr|double,,encourage democracy to reduce terrorism (pre),%9.0g,,,TRUE,Retained
+int1a_b,double,haven_labelled|vctrs_vctr|double,,increase aid to reduce terrorism (pre),%9.0g,,,TRUE,Retained
+int1b_a,double,haven_labelled|vctrs_vctr|double,,favor palestinians to reduce terrorism (pre),%9.0g,,,TRUE,Retained
+int1b_b,double,haven_labelled|vctrs_vctr|double,,build military to reduce terrorism (pre),%9.0g,,,TRUE,Retained
+int1b_c,double,haven_labelled|vctrs_vctr|double,,work with others to reduce terrorism (pre),%9.0g,,,TRUE,Retained
+int1b_d,double,haven_labelled|vctrs_vctr|double,,build intelligence to reduce terrorism (pre),%9.0g,,,TRUE,Retained
+int2a,double,haven_labelled|vctrs_vctr|double,,lead role in resolving conflicts (pre),%9.0g,,,TRUE,Retained
+int2b,double,haven_labelled|vctrs_vctr|double,,lead role in foreign assistance (pre),%9.0g,,,TRUE,Retained
+int3,double,haven_labelled|vctrs_vctr|double,,cooperation in fighting terrorism (pre),%9.0g,,,TRUE,Retained
+kno1_a,double,haven_labelled|vctrs_vctr|double,,knowledge of military spending (pre),%9.0g,,,TRUE,Retained
+kno1_b,double,haven_labelled|vctrs_vctr|double,,knowledge of foreign aid spending (pre),%9.0g,,,TRUE,Retained
+kno2_a,double,haven_labelled|vctrs_vctr|double,,knowledge of export value (pre),%9.0g,,,TRUE,Retained
+kno2_b,double,haven_labelled|vctrs_vctr|double,,knowledge of african aids rate (pre),%9.0g,,,TRUE,Retained
+kno3_a,double,haven_labelled|vctrs_vctr|double,,knowledge of u.s. and wto (pre),%9.0g,,,TRUE,Retained
+kno3_b,double,haven_labelled|vctrs_vctr|double,,knowledge of u.s. and un security council (pre),%9.0g,,,TRUE,Retained
+prtyid_a,double,haven_labelled|vctrs_vctr|double,,political party identification (pre),%9.0g,,,TRUE,Retained
+prtyid_b,double,haven_labelled|vctrs_vctr|double,,strong or not strong democrat (pre),%9.0g,,,TRUE,Retained
+prtyid_c,double,haven_labelled|vctrs_vctr|double,,strong or not strong republican (pre),%9.0g,,,TRUE,Retained
+prtyid_d,double,haven_labelled|vctrs_vctr|double,,closer to which party (pre),%9.0g,,,TRUE,Retained
+party,double,haven_labelled|vctrs_vctr|double,,political party identification - summary (pre),%9.0g,,,TRUE,Retained
+amer1_a,double,haven_labelled|vctrs_vctr|double,,being an american 1 (pre),%9.0g,,,TRUE,Retained
+amer1_b,double,haven_labelled|vctrs_vctr|double,,agree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+amer1_c,double,haven_labelled|vctrs_vctr|double,,disagree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+amer1_s,double,haven_labelled|vctrs_vctr|double,,being an american 1 - summary (pre),%9.0g,,,TRUE,Retained
+amer2_a,double,haven_labelled|vctrs_vctr|double,,being an american 2 (pre),%9.0g,,,TRUE,Retained
+amer2_b,double,haven_labelled|vctrs_vctr|double,,agree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+amer2_c,double,haven_labelled|vctrs_vctr|double,,disagree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+amer2_s,double,haven_labelled|vctrs_vctr|double,,being an american 2 - summary (pre),%9.0g,,,TRUE,Retained
+ideo_a,double,haven_labelled|vctrs_vctr|double,,political ideology of respondent (pre),%9.0g,,,TRUE,Retained
+ideo_b,double,haven_labelled|vctrs_vctr|double,,political ideology of democrats (pre),%9.0g,,,TRUE,Retained
+ideo_c,double,haven_labelled|vctrs_vctr|double,,political ideology of republicans (pre),%9.0g,,,TRUE,Retained
+news1_a,double,haven_labelled|vctrs_vctr|double,,watch news on tv in the last 7 days (pre),%9.0g,,,TRUE,Retained
+news1_b,double,haven_labelled|vctrs_vctr|double,,attention to foreign affairs on tv news (pre),%9.0g,,,TRUE,Retained
+news2_a,double,haven_labelled|vctrs_vctr|double,,read daily newspaper in the last 7 days (pre),%9.0g,,,TRUE,Retained
+news2_b,double,haven_labelled|vctrs_vctr|double,,attention to foreign affairs in newspaper (pre),%9.0g,,,TRUE,Retained
+pint_a,double,haven_labelled|vctrs_vctr|double,,interested in foreign affairs (pre),%9.0g,,,TRUE,Retained
+pint_b,double,haven_labelled|vctrs_vctr|double,,interested in politics in the u.s. (pre),%9.0g,,,TRUE,Retained
+pdsc,double,haven_labelled|vctrs_vctr|double,,had conversation about public affairs (pre),%9.0g,,,TRUE,Retained
+val1_a,double,haven_labelled|vctrs_vctr|double,,help others even if have to sacrifice (pre),%9.0g,,,TRUE,Retained
+val1_b,double,haven_labelled|vctrs_vctr|double,,agree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+val1_c,double,haven_labelled|vctrs_vctr|double,,disagree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+val1_s,double,haven_labelled|vctrs_vctr|double,,help others - summary (pre),%9.0g,,,TRUE,Retained
+val2_a,double,haven_labelled|vctrs_vctr|double,,own interests come first (pre),%9.0g,,,TRUE,Retained
+val2_b,double,haven_labelled|vctrs_vctr|double,,agree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+val2_c,double,haven_labelled|vctrs_vctr|double,,disagree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+val2_s,double,haven_labelled|vctrs_vctr|double,,own interests come first - summary (pre),%9.0g,,,TRUE,Retained
+val3_a,double,haven_labelled|vctrs_vctr|double,,willing to sacrifice (pre),%9.0g,,,TRUE,Retained
+val3_b,double,haven_labelled|vctrs_vctr|double,,agree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+val3_c,double,haven_labelled|vctrs_vctr|double,,disagree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+val3_s,double,haven_labelled|vctrs_vctr|double,,willing to sacrifice - summary (pre),%9.0g,,,TRUE,Retained
+val4_a,double,haven_labelled|vctrs_vctr|double,,respondent has opinions (pre),%9.0g,,,TRUE,Retained
+val4_b,double,haven_labelled|vctrs_vctr|double,,agree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+val4_c,double,haven_labelled|vctrs_vctr|double,,disagree strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+val4_s,double,haven_labelled|vctrs_vctr|double,,respondent has opinions - summary (pre),%9.0g,,,TRUE,Retained
+pair4_a,double,haven_labelled|vctrs_vctr|double,,u.s. first or consider others' interests (pre),%9.0g,,,TRUE,Retained
+pair4_b,double,haven_labelled|vctrs_vctr|double,,agree with position strongly or somewhat (pre),%9.0g,,,TRUE,Retained
+dsagr1_a,double,haven_labelled|vctrs_vctr|double,,disagree because facts are wrong (pre),%9.0g,,,TRUE,Retained
+dsagr1_b,double,haven_labelled|vctrs_vctr|double,,disagree because see things differently (pre),%9.0g,,,TRUE,Retained
+dsagr2_a,double,haven_labelled|vctrs_vctr|double,,disagree because not thought through (pre),%9.0g,,,TRUE,Retained
+dsagr2_b,double,haven_labelled|vctrs_vctr|double,,disagree because of self-interest (pre),%9.0g,,,TRUE,Retained
+dsagr2_c,double,haven_labelled|vctrs_vctr|double,,disagree because not patriotic (pre),%9.0g,,,TRUE,Retained
+yearborn,double,haven_labelled|vctrs_vctr|double,,year of respondent's birth (pre),%9.0g,,,TRUE,Retained
+ppage,double,haven_labelled|vctrs_vctr|double,,respondent's calculated age (pre),%9.0g,,,TRUE,Retained
+educ_a,double,haven_labelled|vctrs_vctr|double,,highest grade of school completed (pre),%9.0g,,,TRUE,Retained
+educ_b,double,haven_labelled|vctrs_vctr|double,,received high school diploma or ged (pre),%9.0g,,,TRUE,Retained
+mandc_a,double,haven_labelled|vctrs_vctr|double,,respondent's marital status (pre),%9.0g,,,TRUE,Retained
+mandc_b,double,haven_labelled|vctrs_vctr|double,,any children under 18 living at home (pre),%9.0g,,,TRUE,Retained
+mandc_c,double,haven_labelled|vctrs_vctr|double,,number of minor children living at home (pre),%9.0g,,,TRUE,Retained
+hisp,double,haven_labelled|vctrs_vctr|double,,of hispanic origin (pre),%9.0g,,,TRUE,Retained
+race,double,haven_labelled|vctrs_vctr|double,,respondent's race (pre),%9.0g,,,TRUE,Retained
+pborn_a,double,haven_labelled|vctrs_vctr|double,,both of r's parents born in the us (pre),%9.0g,,,TRUE,Retained
+pborn_b,double,haven_labelled|vctrs_vctr|double,,mother's country of birth (pre),%9.0g,,,TRUE,Retained
+pborn_c,double,haven_labelled|vctrs_vctr|double,,father's country of birth (pre),%9.0g,,,TRUE,Retained
+empl,double,haven_labelled|vctrs_vctr|double,,respondent's employment status (pre),%9.0g,,,TRUE,Retained
+lastw,double,haven_labelled|vctrs_vctr|double,,when last worked at regular job (pre),%9.0g,,,TRUE,Retained
+etyp,double,haven_labelled|vctrs_vctr|double,,type of employment (pre),%9.0g,,,TRUE,Retained
+eocc,double,haven_labelled|vctrs_vctr|double,,respondent's occupation (pre),%9.0g,,,TRUE,Retained
+milt_a,double,haven_labelled|vctrs_vctr|double,,ever served in the u.s. military (pre),%9.0g,,,TRUE,Retained
+milt_b,double,haven_labelled|vctrs_vctr|double,,length of time in active service (pre),%9.0g,,,TRUE,Retained
+milt_c,double,haven_labelled|vctrs_vctr|double,,length of time in reserves (pre),%9.0g,,,TRUE,Retained
+abrd_a,double,haven_labelled|vctrs_vctr|double,,more than 6 months abroad (pre),%9.0g,,,TRUE,Retained
+abrd_b,double,haven_labelled|vctrs_vctr|double,,more than 2 years abroad (pre),%9.0g,,,TRUE,Retained
+rel1_a,double,haven_labelled|vctrs_vctr|double,,more than occasional church attendance (pre),%9.0g,,,TRUE,Retained
+rel1_b,double,haven_labelled|vctrs_vctr|double,,part of a particular church (pre),%9.0g,,,TRUE,Retained
+rel1_c,double,haven_labelled|vctrs_vctr|double,,frequency of church attendance (pre),%9.0g,,,TRUE,Retained
+rel2,double,haven_labelled|vctrs_vctr|double,,respondent's religion (pre),%9.0g,,,TRUE,Retained
+union_a,double,haven_labelled|vctrs_vctr|double,,union member in family (pre),%9.0g,,,TRUE,Retained
+union_b,double,haven_labelled|vctrs_vctr|double,,respondent a union member (pre),%9.0g,,,TRUE,Retained
+live,double,haven_labelled|vctrs_vctr|double,,respondent's neighborhood description (pre),%9.0g,,,TRUE,Retained
+sex,double,haven_labelled|vctrs_vctr|double,,respondent's gender (pre),%9.0g,,,TRUE,Retained
+isum,double,haven_labelled|vctrs_vctr|double,,household income - summary (pre),%9.0g,,,TRUE,Retained
+nphon_a,double,haven_labelled|vctrs_vctr|double,,all phones in home have same number,%9.0g,,,TRUE,Retained
+nphon_b,double,haven_labelled|vctrs_vctr|double,,number of unique phone numbers,%9.0g,,,TRUE,Retained
+nphon_s,double,haven_labelled|vctrs_vctr|double,,number of unique phone numbers - summary,%9.0g,,,TRUE,Retained
+zrep,double,numeric,,replicate number,%9.0g,,,TRUE,Retained
+regn,double,haven_labelled|vctrs_vctr|double,,census geographic region (pre),%9.0g,,,TRUE,Retained
+dvsn,double,haven_labelled|vctrs_vctr|double,,census geographic division (pre),%9.0g,,,TRUE,Retained
+prmg,double,haven_labelled|vctrs_vctr|double,,sample flag: privacy manager,%9.0g,,,TRUE,Retained
+zdnc,double,haven_labelled|vctrs_vctr|double,,"sample flag: on ""do not call"" list",%9.0g,,,TRUE,Retained
+stcd,character,character,,alphabetic abbreviation of state,%2s,,,TRUE,Retained
+fips2,double,haven_labelled|vctrs_vctr|double,,first 2 digits of fips code: state code (pre),%9.0g,,,TRUE,Retained
+msc,double,haven_labelled|vctrs_vctr|double,,sample metropolitan status code,%9.0g,,,TRUE,Retained
+time,character,character,,interview time,%4s,,,TRUE,Retained
+htime,double,numeric,,total case handling time,%9.0g,,,TRUE,Retained
+inum,double,numeric,,interviewer number,%9.0g,,,TRUE,Retained
+ctyp,double,haven_labelled|vctrs_vctr|double,,case type (4 categories),%9.0g,,,TRUE,Retained
+ctyp2,double,haven_labelled|vctrs_vctr|double,,case type (3 categories),%9.0g,,,TRUE,Retained
+nctyp,double,haven_labelled|vctrs_vctr|double,,case type (4 categories - saq),%9.0g,,,TRUE,Retained
+nctyp2,double,haven_labelled|vctrs_vctr|double,,case type (3 categories - saq),%9.0g,,,TRUE,Retained
+casetype,double,haven_labelled|vctrs_vctr|double,,case type (4 categories - saq),%9.0g,,,TRUE,Retained
+newid,double,numeric,,case id for the by-the-people event,%9.0g,,,TRUE,Retained
+tdif,double,haven_labelled|vctrs_vctr|double,,time zone,%9.0g,,,TRUE,Retained
+date,double,numeric,,date of interview,%9.0g,,,TRUE,Retained
+dow,double,haven_labelled|vctrs_vctr|double,,interview day of the week,%9.0g,,,TRUE,Retained
+stime,double,numeric,,total substantive interview time,%9.0g,,,TRUE,Retained
+tcnt,double,numeric,,total calls,%9.0g,,,TRUE,Retained
+anyo,double,numeric,,number of times anyone answered,%9.0g,,,TRUE,Retained
+rans,double,numeric,,number of times respondent contacted,%9.0g,,,TRUE,Retained
+rbef,double,numeric,,number refusals before case enumerated,%9.0g,,,TRUE,Retained
+raft,double,numeric,,number refusals after case enumerated,%9.0g,,,TRUE,Retained
+etcnt,double,numeric,,total calls made until enumeration,%9.0g,,,TRUE,Retained
+atcnt,double,numeric,,total calls made until first answer,%9.0g,,,TRUE,Retained
+htcnt,double,numeric,,total calls made to determine hh,%9.0g,,,TRUE,Retained
+rcls,double,numeric,,number of calls dialing for respondent,%9.0g,,,TRUE,Retained
+eanyo,double,numeric,,number contacts before enumeration,%9.0g,,,TRUE,Retained
+ranyo,double,numeric,,number of contacts after enumeration,%9.0g,,,TRUE,Retained
+rnum,double,numeric,,random number for respondent selection,%9.0g,,,TRUE,Retained
+htot,double,numeric,,total number of adults in hh,%9.0g,,,TRUE,Retained
+s1dx,double,numeric,,enumeration position,%9.0g,,,TRUE,Retained
+cnfm2_a,double,haven_labelled|vctrs_vctr|double,,respondent's country of birth,%9.0g,,,TRUE,Retained
+cnfm2_b,double,haven_labelled|vctrs_vctr|double,,is respondent a u.s. citizen,%9.0g,,,TRUE,Retained
+observ1,double,haven_labelled|vctrs_vctr|double,,interviewer obs: understand,%9.0g,,,TRUE,Retained
+observ2,double,haven_labelled|vctrs_vctr|double,,interviewer obs: accuracy,%9.0g,,,TRUE,Retained
+observ3,double,haven_labelled|vctrs_vctr|double,,interviewer obs: honesty,%9.0g,,,TRUE,Retained
+okpa2,double,haven_labelled|vctrs_vctr|double,,interested in attending workshop,%9.0g,,,TRUE,Retained
+okhap,double,haven_labelled|vctrs_vctr|double,,confirm: r accepted the invitation,%9.0g,,,TRUE,Retained
+think_a,double,haven_labelled|vctrs_vctr|double,,send info to help r decide,%9.0g,,,TRUE,Retained
+sampwt,double,numeric,,sample weight,%9.0g,,,TRUE,Retained
+age3,double,haven_labelled|vctrs_vctr|double,,age in 3 categories (pre),%9.0g,,,TRUE,Retained
+sexage,double,haven_labelled|vctrs_vctr|double,,gender + age in 3 categories (pre),%9.0g,,,TRUE,Retained
+educ4,double,haven_labelled|vctrs_vctr|double,,education in 4 categories (pre),%9.0g,,,TRUE,Retained
+educ5,double,haven_labelled|vctrs_vctr|double,,education in 5 categories (pre),%9.0g,,,TRUE,Retained
+race4,double,haven_labelled|vctrs_vctr|double,,ethnicity in 4 categories (pre),%9.0g,,,TRUE,Retained
+fbornus,double,haven_labelled|vctrs_vctr|double,,r's father born in us (pre),%9.0g,,,TRUE,Retained
+mbornus,double,haven_labelled|vctrs_vctr|double,,r's mother born in us (pre),%9.0g,,,TRUE,Retained
+pborn_s,double,haven_labelled|vctrs_vctr|double,,summary: r's parent born in us (pre),%9.0g,,,TRUE,Retained
+qfp1,double,haven_labelled|vctrs_vctr|double,,america after september 11th (post),%9.0g,,,TRUE,Retained
+qfp2a_a,double,haven_labelled|vctrs_vctr|double,,fp goals: protect global environment (post),%9.0g,,,TRUE,Retained
+qfp2a_b,double,haven_labelled|vctrs_vctr|double,,fp goals: ensure us energy supply (post),%9.0g,,,TRUE,Retained
+qfp2a_c,double,haven_labelled|vctrs_vctr|double,,fp goals: promote democracy (post),%9.0g,,,TRUE,Retained
+qfp2b_a,double,haven_labelled|vctrs_vctr|double,,fp goals: prevent spread of weapons (post),%9.0g,,,TRUE,Retained
+qfp2b_b,double,haven_labelled|vctrs_vctr|double,,fp goals: aid u.s. business abroad (post),%9.0g,,,TRUE,Retained
+qfp2b_c,double,haven_labelled|vctrs_vctr|double,,fp goals: fight terrorism (post),%9.0g,,,TRUE,Retained
+qfp2b_d,double,haven_labelled|vctrs_vctr|double,,fp goals: aid to poor countries (post),%9.0g,,,TRUE,Retained
+qfp2c_a,double,haven_labelled|vctrs_vctr|double,,fp goals: protect u.s. from attack (post),%9.0g,,,TRUE,Retained
+qfp2c_b,double,haven_labelled|vctrs_vctr|double,,fp goals: protect human rights (post),%9.0g,,,TRUE,Retained
+qfp2c_c,double,haven_labelled|vctrs_vctr|double,,fp goals: protect weaker nations (post),%9.0g,,,TRUE,Retained
+qfp2c_d,double,haven_labelled|vctrs_vctr|double,,fp goals: reduce world poverty (post),%9.0g,,,TRUE,Retained
+qfp3a_s,double,haven_labelled|vctrs_vctr|double,,better to stay at home - summary (post),%9.0g,,,TRUE,Retained
+qfp3b_s,double,haven_labelled|vctrs_vctr|double,,protect world from weapons - summary (post),%9.0g,,,TRUE,Retained
+qfp3c_s,double,haven_labelled|vctrs_vctr|double,,protects world from terrorists - summary (post),%9.0g,,,TRUE,Retained
+qfp3d_s,double,haven_labelled|vctrs_vctr|double,,intervene with support - summary (post),%9.0g,,,TRUE,Retained
+qfp4a_a,double,haven_labelled|vctrs_vctr|double,,iraq: build economy (post),%9.0g,,,TRUE,Retained
+qfp4a_b,double,haven_labelled|vctrs_vctr|double,,iraq: gov't friendly to us interests (post),%9.0g,,,TRUE,Retained
+qfp4b_a,double,haven_labelled|vctrs_vctr|double,,iraq: gov't democratic (post),%9.0g,,,TRUE,Retained
+qfp4b_b,double,haven_labelled|vctrs_vctr|double,,iraq: involve the u.n. (post),%9.0g,,,TRUE,Retained
+qwrm1_a,double,haven_labelled|vctrs_vctr|double,,global warming and u.s. quality of life (post),%9.0g,,,TRUE,Retained
+qwrm1_b,double,haven_labelled|vctrs_vctr|double,,cause of global warming (post),%9.0g,,,TRUE,Retained
+qwrm2a_s,double,haven_labelled|vctrs_vctr|double,,require higher mileage - summary (post),%9.0g,,,TRUE,Retained
+qwrm2b_s,double,haven_labelled|vctrs_vctr|double,,require cleaner electricity - summary (post),%9.0g,,,TRUE,Retained
+qwrm3_a,double,haven_labelled|vctrs_vctr|double,,action on global warming - self (post),%9.0g,,,TRUE,Retained
+qwrm3_b,double,haven_labelled|vctrs_vctr|double,,action on global warming - dem. party (post),%9.0g,,,TRUE,Retained
+qwrm3_c,double,haven_labelled|vctrs_vctr|double,,action on global warming - rep. party (post),%9.0g,,,TRUE,Retained
+qwrm4a_s,double,haven_labelled|vctrs_vctr|double,,solving environmental problems - summary (post),%9.0g,,,TRUE,Retained
+qwrm4b_s,double,haven_labelled|vctrs_vctr|double,,agreement would hurt the u.s. - summary (post),%9.0g,,,TRUE,Retained
+qwrm5,double,haven_labelled|vctrs_vctr|double,,bush position on global warming (post),%9.0g,,,TRUE,Retained
+qhngr,double,haven_labelled|vctrs_vctr|double,,how serious is problem of world hunger (post),%9.0g,,,TRUE,Retained
+qpair1_a,double,haven_labelled|vctrs_vctr|double,,world hunger or problems at home (post),%9.0g,,,TRUE,Retained
+qpair1_b,double,haven_labelled|vctrs_vctr|double,,agree with position strongly or somewhat (post),%9.0g,,,TRUE,Retained
+qpair2_a,double,haven_labelled|vctrs_vctr|double,,world aids or problems at home (post),%9.0g,,,TRUE,Retained
+qpair2_b,double,haven_labelled|vctrs_vctr|double,,agree with position strongly or somewhat (post),%9.0g,,,TRUE,Retained
+qpair3_a,double,haven_labelled|vctrs_vctr|double,,world democracy or not our concern (post),%9.0g,,,TRUE,Retained
+qpair3_b,double,haven_labelled|vctrs_vctr|double,,agree with position strongly or somewhat (post),%9.0g,,,TRUE,Retained
+qpdem1_a,double,haven_labelled|vctrs_vctr|double,,building democratic institutions (post),%9.0g,,,TRUE,Retained
+qpdem1_b,double,haven_labelled|vctrs_vctr|double,,increasing trade (post),%9.0g,,,TRUE,Retained
+qpdem1_c,double,haven_labelled|vctrs_vctr|double,,penalties for human rights violations (post),%9.0g,,,TRUE,Retained
+qpdem2_a,double,haven_labelled|vctrs_vctr|double,,foreign aid (post),%9.0g,,,TRUE,Retained
+qpdem2_b,double,haven_labelled|vctrs_vctr|double,,provide troops to help keep the peace (post),%9.0g,,,TRUE,Retained
+qpdem2_c,double,haven_labelled|vctrs_vctr|double,,organizations like the peace corps (post),%9.0g,,,TRUE,Retained
+qaid1,double,haven_labelled|vctrs_vctr|double,,spending on foreign aid (post),%9.0g,,,TRUE,Retained
+qaid2a_a,double,haven_labelled|vctrs_vctr|double,,increase u.s. influence abroad (post),%9.0g,,,TRUE,Retained
+qaid2a_b,double,haven_labelled|vctrs_vctr|double,,discourage nuclear weapons development (post),%9.0g,,,TRUE,Retained
+qaid2a_c,double,haven_labelled|vctrs_vctr|double,,develop democratic institutions abroad (post),%9.0g,,,TRUE,Retained
+qaid2b_a,double,haven_labelled|vctrs_vctr|double,,reduce hunger and disease abroad (post),%9.0g,,,TRUE,Retained
+qaid2b_b,double,haven_labelled|vctrs_vctr|double,,develop poor economies abroad (post),%9.0g,,,TRUE,Retained
+qaid3,double,haven_labelled|vctrs_vctr|double,,bush position on foreign aid (post),%9.0g,,,TRUE,Retained
+qmact1_s,double,haven_labelled|vctrs_vctr|double,,un support - mass killings - summary (post),%9.0g,,,TRUE,Retained
+qmact2_s,double,haven_labelled|vctrs_vctr|double,,un support - weapons - summary (post),%9.0g,,,TRUE,Retained
+qmact3_s,double,haven_labelled|vctrs_vctr|double,,un support - terrorism - summary (post),%9.0g,,,TRUE,Retained
+qmact4_s,double,haven_labelled|vctrs_vctr|double,,u.s. alone - mass killings - summary (post),%9.0g,,,TRUE,Retained
+qmact5_s,double,haven_labelled|vctrs_vctr|double,,u.s. alone - weapons - summary (post),%9.0g,,,TRUE,Retained
+qmact6_s,double,haven_labelled|vctrs_vctr|double,,u.s. alone - terrorism - summary (post),%9.0g,,,TRUE,Retained
+qtrd1_a,double,haven_labelled|vctrs_vctr|double,,trade agreements - first choice (post),%9.0g,,,TRUE,Retained
+qtrd1_b,double,haven_labelled|vctrs_vctr|double,,trade agreements - second choice (post),%9.0g,,,TRUE,Retained
+qtrd2,double,haven_labelled|vctrs_vctr|double,,options related to nafta (post),%9.0g,,,TRUE,Retained
+qtrd3_a,double,haven_labelled|vctrs_vctr|double,,impact on employment of easier imports (post),%9.0g,,,TRUE,Retained
+qtrd3_b,double,haven_labelled|vctrs_vctr|double,,impact on employment of easier exports (post),%9.0g,,,TRUE,Retained
+qtrd4,double,haven_labelled|vctrs_vctr|double,,trade barriers in u.s. and abroad (post),%9.0g,,,TRUE,Retained
+qint1a_a,double,haven_labelled|vctrs_vctr|double,,encourage democracy to reduce terrorism (post),%9.0g,,,TRUE,Retained
+qint1a_b,double,haven_labelled|vctrs_vctr|double,,increase aid to reduce terrorism (post),%9.0g,,,TRUE,Retained
+qint1b_a,double,haven_labelled|vctrs_vctr|double,,favor palestinians to reduce terrorism (post),%9.0g,,,TRUE,Retained
+qint1b_b,double,haven_labelled|vctrs_vctr|double,,build military to reduce terrorism (post),%9.0g,,,TRUE,Retained
+qint1b_c,double,haven_labelled|vctrs_vctr|double,,work with others to reduce terrorism (post),%9.0g,,,TRUE,Retained
+qint1b_d,double,haven_labelled|vctrs_vctr|double,,build intelligence to reduce terrorism (post),%9.0g,,,TRUE,Retained
+qint2a,double,haven_labelled|vctrs_vctr|double,,lead role in resolving conflicts (post),%9.0g,,,TRUE,Retained
+qint2b,double,haven_labelled|vctrs_vctr|double,,lead role in foreign assistance (post),%9.0g,,,TRUE,Retained
+qint3,double,haven_labelled|vctrs_vctr|double,,cooperation in fighting terrorism (post),%9.0g,,,TRUE,Retained
+qkno1_a,double,haven_labelled|vctrs_vctr|double,,knowledge of military spending (post),%9.0g,,,TRUE,Retained
+qkno1_b,double,haven_labelled|vctrs_vctr|double,,knowledge of foreign aid spending (post),%9.0g,,,TRUE,Retained
+qkno2_a,double,haven_labelled|vctrs_vctr|double,,knowledge of export value (post),%9.0g,,,TRUE,Retained
+qkno2_b,double,haven_labelled|vctrs_vctr|double,,knowledge of african aids rate (post),%9.0g,,,TRUE,Retained
+qkno3_a,double,haven_labelled|vctrs_vctr|double,,knowledge of u.s. and wto (post),%9.0g,,,TRUE,Retained
+qkno3_b,double,haven_labelled|vctrs_vctr|double,,knowledge of u.s. and un security council (post),%9.0g,,,TRUE,Retained
+qparty,double,haven_labelled|vctrs_vctr|double,,political party identification - summary (post),%9.0g,,,TRUE,Retained
+qamer1_s,double,haven_labelled|vctrs_vctr|double,,being an american 1 - summary (post),%9.0g,,,TRUE,Retained
+qamer2_s,double,haven_labelled|vctrs_vctr|double,,being an american 2 - summary (post),%9.0g,,,TRUE,Retained
+qideo_a,double,haven_labelled|vctrs_vctr|double,,political ideology of respondent (post),%9.0g,,,TRUE,Retained
+qideo_b,double,haven_labelled|vctrs_vctr|double,,political ideology of democrats (post),%9.0g,,,TRUE,Retained
+qideo_c,double,haven_labelled|vctrs_vctr|double,,political ideology of republicans (post),%9.0g,,,TRUE,Retained
+qnews1_a,double,haven_labelled|vctrs_vctr|double,,watch news on tv in the last 7 days (post),%9.0g,,,TRUE,Retained
+qnews1_b,double,haven_labelled|vctrs_vctr|double,,attention to foreign affairs on tv news (post),%9.0g,,,TRUE,Retained
+qnews2_a,double,haven_labelled|vctrs_vctr|double,,read daily newspaper in the last 7 days (post),%9.0g,,,TRUE,Retained
+qnews2_b,double,haven_labelled|vctrs_vctr|double,,attention to foreign affairs in newspaper (post),%9.0g,,,TRUE,Retained
+qpint_a,double,haven_labelled|vctrs_vctr|double,,interested in foreign affairs (post),%9.0g,,,TRUE,Retained
+qpint_b,double,haven_labelled|vctrs_vctr|double,,interested in politics in the u.s. (post),%9.0g,,,TRUE,Retained
+qpdsc,double,haven_labelled|vctrs_vctr|double,,had conversation about public affairs (post),%9.0g,,,TRUE,Retained
+qval1_s,double,haven_labelled|vctrs_vctr|double,,help others - summary (post),%9.0g,,,TRUE,Retained
+qval2_s,double,haven_labelled|vctrs_vctr|double,,own interests come first - summary (post),%9.0g,,,TRUE,Retained
+qval3_s,double,haven_labelled|vctrs_vctr|double,,willing to sacrifice - summary (post),%9.0g,,,TRUE,Retained
+qval4_s,double,haven_labelled|vctrs_vctr|double,,respondent has opinions - summary (post),%9.0g,,,TRUE,Retained
+qpair4_a,double,haven_labelled|vctrs_vctr|double,,u.s. first or consider others' interests (post),%9.0g,,,TRUE,Retained
+qpair4_b,double,haven_labelled|vctrs_vctr|double,,agree with position strongly or somewhat (post),%9.0g,,,TRUE,Retained
+qdsagr1a,double,haven_labelled|vctrs_vctr|double,,disagree because facts are wrong (post),%9.0g,,,TRUE,Retained
+qdsagr1b,double,haven_labelled|vctrs_vctr|double,,disagree because see things differently (post),%9.0g,,,TRUE,Retained
+qdsagr2a,double,haven_labelled|vctrs_vctr|double,,disagree because not thought through (post),%9.0g,,,TRUE,Retained
+qdsagr2b,double,haven_labelled|vctrs_vctr|double,,disagree because of self-interest (post),%9.0g,,,TRUE,Retained
+qdsagr2c,double,haven_labelled|vctrs_vctr|double,,disagree because not patriotic (post),%9.0g,,,TRUE,Retained
+qage,double,haven_labelled|vctrs_vctr|double,,respondent's calculated age (post),%9.0g,,,TRUE,Retained
+qeduc_a,double,haven_labelled|vctrs_vctr|double,,highest grade of school completed (post),%9.0g,,,TRUE,Retained
+qeduc_b,double,haven_labelled|vctrs_vctr|double,,received high school diploma or ged (post),%9.0g,,,TRUE,Retained
+qmandc_a,double,haven_labelled|vctrs_vctr|double,,respondent's marital status (post),%9.0g,,,TRUE,Retained
+qmandc_b,double,haven_labelled|vctrs_vctr|double,,any children under 18 living at home (post),%9.0g,,,TRUE,Retained
+qmandc_c,double,haven_labelled|vctrs_vctr|double,,number of minor children living at home (post),%9.0g,,,TRUE,Retained
+qhisp,double,haven_labelled|vctrs_vctr|double,,of hispanic origin (post),%9.0g,,,TRUE,Retained
+qrace,double,haven_labelled|vctrs_vctr|double,,respondent's race (post),%9.0g,,,TRUE,Retained
+qpborn_a,double,haven_labelled|vctrs_vctr|double,,both of r's parents born in the us (post),%9.0g,,,TRUE,Retained
+qpborn_b,double,haven_labelled|vctrs_vctr|double,,mother's country of birth (post),%9.0g,,,TRUE,Retained
+qpborn_c,double,haven_labelled|vctrs_vctr|double,,father's country of birth (post),%9.0g,,,TRUE,Retained
+qempl,double,haven_labelled|vctrs_vctr|double,,respondent's employment status (post),%9.0g,,,TRUE,Retained
+qlastw,double,haven_labelled|vctrs_vctr|double,,when last worked at regular job (post),%9.0g,,,TRUE,Retained
+qetyp,double,haven_labelled|vctrs_vctr|double,,type of employment (post),%9.0g,,,TRUE,Retained
+qeocc,double,haven_labelled|vctrs_vctr|double,,respondent's occupation (post),%9.0g,,,TRUE,Retained
+qmilt_a,double,haven_labelled|vctrs_vctr|double,,ever served in the u.s. military (post),%9.0g,,,TRUE,Retained
+qmilt_b,double,haven_labelled|vctrs_vctr|double,,length of time in active service (post),%9.0g,,,TRUE,Retained
+qmilt_c,double,haven_labelled|vctrs_vctr|double,,length of time in reserves (post),%9.0g,,,TRUE,Retained
+qabrd_a,double,haven_labelled|vctrs_vctr|double,,more than 6 months abroad (post),%9.0g,,,TRUE,Retained
+qabrd_b,double,haven_labelled|vctrs_vctr|double,,more than 2 years abroad (post),%9.0g,,,TRUE,Retained
+qrel1_a,double,haven_labelled|vctrs_vctr|double,,more than occasional church attendance (post),%9.0g,,,TRUE,Retained
+qrel1_b,double,haven_labelled|vctrs_vctr|double,,part of a particular church (post),%9.0g,,,TRUE,Retained
+qrel1_c,double,haven_labelled|vctrs_vctr|double,,frequency of church attendance (post),%9.0g,,,TRUE,Retained
+qrel2,double,haven_labelled|vctrs_vctr|double,,respondent's religion (post),%9.0g,,,TRUE,Retained
+qunion_a,double,haven_labelled|vctrs_vctr|double,,union member in family (post),%9.0g,,,TRUE,Retained
+qunion_b,double,haven_labelled|vctrs_vctr|double,,respondent a union member (post),%9.0g,,,TRUE,Retained
+qlive,double,haven_labelled|vctrs_vctr|double,,respondent's neighborhood description (post),%9.0g,,,TRUE,Retained
+qsex,double,haven_labelled|vctrs_vctr|double,,respondent's gender (post),%9.0g,,,TRUE,Retained
+qisum,double,haven_labelled|vctrs_vctr|double,,household income - summary (post),%9.0g,,,TRUE,Retained
+qregn,double,haven_labelled|vctrs_vctr|double,,census geographic region (post),%9.0g,,,TRUE,Retained
+qdvsn,double,haven_labelled|vctrs_vctr|double,,census geographic division (post),%9.0g,,,TRUE,Retained
+qstcd,character,character,,alphabetic abbreviation of state,%2s,,,TRUE,Retained
+qfips2,double,haven_labelled|vctrs_vctr|double,,first 2 digits of fips code: state code (post),%9.0g,,,TRUE,Retained
+qmsc,double,haven_labelled|vctrs_vctr|double,,sample metropolitian status code,%9.0g,,,TRUE,Retained
+qnewid,double,numeric,,case id for the by-the-people event,%9.0g,,,TRUE,Retained
+qcnfm2_a,double,haven_labelled|vctrs_vctr|double,,respondent's country of birth,%9.0g,,,TRUE,Retained
+qcnfm2_b,double,haven_labelled|vctrs_vctr|double,,is respondent a u.s. citizen,%9.0g,,,TRUE,Retained
+eval1a,double,haven_labelled|vctrs_vctr|double,,scale: small group discussions (post),%9.0g,,,TRUE,Retained
+eval1b,double,haven_labelled|vctrs_vctr|double,,scale: meeting/talking to others (post),%9.0g,,,TRUE,Retained
+eval1c,double,haven_labelled|vctrs_vctr|double,,scale: large group sessions (post),%9.0g,,,TRUE,Retained
+eval1d,double,haven_labelled|vctrs_vctr|double,,scale: the convention as a whole (post),%9.0g,,,TRUE,Retained
+eval2a,double,haven_labelled|vctrs_vctr|double,,moderator gave opp for all to participate (post),%9.0g,,,TRUE,Retained
+eval2b,double,haven_labelled|vctrs_vctr|double,,members of small group participated equally (post),%9.0g,,,TRUE,Retained
+eval2c,double,haven_labelled|vctrs_vctr|double,,moderator sometimes tried to influence (post),%9.0g,,,TRUE,Retained
+eval2d,double,haven_labelled|vctrs_vctr|double,,small grps covered the major points (post),%9.0g,,,TRUE,Retained
+eval2e,double,haven_labelled|vctrs_vctr|double,,moderator made sure opposing args considered (post),%9.0g,,,TRUE,Retained
+eval2f,double,haven_labelled|vctrs_vctr|double,,few members dominated discussion (post),%9.0g,,,TRUE,Retained
+eval2g,double,haven_labelled|vctrs_vctr|double,,learned a lot about people (post),%9.0g,,,TRUE,Retained
+eval2h,double,haven_labelled|vctrs_vctr|double,,missed some major portions (post),%9.0g,,,TRUE,Retained
+eval2i,double,haven_labelled|vctrs_vctr|double,,good reasons for different views (post),%9.0g,,,TRUE,Retained
+eval3,double,haven_labelled|vctrs_vctr|double,,materials read by end of convention (post),%9.0g,,,TRUE,Retained
+eval4,double,haven_labelled|vctrs_vctr|double,,how carefully read (post),%9.0g,,,TRUE,Retained
+eval5,double,haven_labelled|vctrs_vctr|double,,materials read between interview & event (post),%9.0g,,,TRUE,Retained
+eval6,double,haven_labelled|vctrs_vctr|double,,how carefully read (post),%9.0g,,,TRUE,Retained
+eval7a,double,haven_labelled|vctrs_vctr|double,,other fp materials between interview & event (post),%9.0g,,,TRUE,Retained
+eval7b,double,haven_labelled|vctrs_vctr|double,,talked fp between interview & event (post),%9.0g,,,TRUE,Retained
+eval7c,double,haven_labelled|vctrs_vctr|double,,tv/radio fp between interview & event (post),%9.0g,,,TRUE,Retained
+eval7d,double,haven_labelled|vctrs_vctr|double,,web fp between interview & event (post),%9.0g,,,TRUE,Retained
+eval8,double,haven_labelled|vctrs_vctr|double,,learned about fp between interview & event (post),%9.0g,,,TRUE,Retained
+eval9,double,haven_labelled|vctrs_vctr|double,,changed views (text) (post),%9.0g,,,TRUE,Retained
+sq1a,double,haven_labelled|vctrs_vctr|double,,iraq: prevent having weapons (post),%9.0g,,,TRUE,Retained
+sq1b,double,haven_labelled|vctrs_vctr|double,,iraq: remove saddam hussein (post),%9.0g,,,TRUE,Retained
+sq1c,double,haven_labelled|vctrs_vctr|double,,iraq: making a democracy (post),%9.0g,,,TRUE,Retained
+sq2a,double,haven_labelled|vctrs_vctr|double,,invade if evidence for us & un (post),%9.0g,,,TRUE,Retained
+sq2b,double,haven_labelled|vctrs_vctr|double,,invade if evidence for us but not un (post),%9.0g,,,TRUE,Retained
+sq2c,double,haven_labelled|vctrs_vctr|double,,invade if reason but no evidence (post),%9.0g,,,TRUE,Retained
+sq2d,double,haven_labelled|vctrs_vctr|double,,invade under no circumstances (post),%9.0g,,,TRUE,Retained
+sq3a,double,haven_labelled|vctrs_vctr|double,,threat: iran (post),%9.0g,,,TRUE,Retained
+sq3b,double,haven_labelled|vctrs_vctr|double,,threat: russia (post),%9.0g,,,TRUE,Retained
+sq3c,double,haven_labelled|vctrs_vctr|double,,threat: iraq (post),%9.0g,,,TRUE,Retained
+sq3d,double,haven_labelled|vctrs_vctr|double,,threat: north korea (post),%9.0g,,,TRUE,Retained
+sq3e,double,haven_labelled|vctrs_vctr|double,,threat: china (post),%9.0g,,,TRUE,Retained
+sq3f,double,haven_labelled|vctrs_vctr|double,,threat: terrorists (post),%9.0g,,,TRUE,Retained
+sq4,double,haven_labelled|vctrs_vctr|double,,invasion's impact on war on terrorism (post),%9.0g,,,TRUE,Retained
+sq5a,double,haven_labelled|vctrs_vctr|double,,shift focus from iraq to terrorism (post),%9.0g,,,TRUE,Retained
+sq5b,double,haven_labelled|vctrs_vctr|double,,shift focus from iraq to north korea (post),%9.0g,,,TRUE,Retained
+group,double,numeric,,randomly assigned nic group number,%9.0g,,,TRUE,Retained
+qage3,double,haven_labelled|vctrs_vctr|double,,age in 3 categories (post),%9.0g,,,TRUE,Retained
+qsexage,double,haven_labelled|vctrs_vctr|double,,gender + age in 3 categories (post),%9.0g,,,TRUE,Retained
+qeduc4,double,haven_labelled|vctrs_vctr|double,,education in 4 categories (post),%9.0g,,,TRUE,Retained
+qeduc5,double,haven_labelled|vctrs_vctr|double,,education in 5 categories (post),%9.0g,,,TRUE,Retained
+qrace4,double,haven_labelled|vctrs_vctr|double,,ethnicity in 4 categories (post),%9.0g,,,TRUE,Retained
+qfbornus,double,haven_labelled|vctrs_vctr|double,,r's father born in us (post),%9.0g,,,TRUE,Retained
+qmbornus,double,haven_labelled|vctrs_vctr|double,,r's mother born in us (post),%9.0g,,,TRUE,Retained
+qpborn_s,double,haven_labelled|vctrs_vctr|double,,summary: r's parent born in us (post),%9.0g,,,TRUE,Retained
+samp,double,haven_labelled|vctrs_vctr|double,,source of sample,%9.0g,,,TRUE,Retained
+caseid,double,numeric,,sample and case identification number,%9.0g,,,TRUE,Retained
+prenvir1,double,numeric,,fp2a_a/Q2a,%9.0g,,,TRUE,Retained
+prenvir2,double,numeric,,wrm2a_s/Q13,%9.0g,,,TRUE,Retained
+prenvir3,double,numeric,,wrm2b_s/Q14,%9.0g,,,TRUE,Retained
+prenvir4,double,numeric,,wrm3_a/Q15,%9.0g,,,TRUE,Retained
+usecon1,double,numeric,,fp2a_b: pre goal - eusure US energy supply,%9.0g,,,TRUE,Retained
+usecon2,double,numeric,,fp2b_b: pre goal - aid US business abroad,%9.0g,,,TRUE,Retained
+ussec1,double,numeric,,fp2b_a/Q2c,%9.0g,,,TRUE,Retained
+ussec2,double,numeric,,fp2b_c/Q2e,%9.0g,,,TRUE,Retained
+ussec3,double,numeric,,fp2c_a/Q2g,%9.0g,,,TRUE,Retained
+ussec4,double,numeric,,aid2a_b/Q25b,%9.0g,,,TRUE,Retained
+ussec5,double,numeric,,int1a_a/Q37a,%9.0g,,,TRUE,Retained
+ussec6,double,numeric,,int1a_b/Q37b,%9.0g,,,TRUE,Retained
+ussec7,double,numeric,,int1b_b/Q37d,%9.0g,,,TRUE,Retained
+ussec8,double,numeric,,int1b_c/Q37e,%9.0g,,,TRUE,Retained
+ussec9,double,numeric,,int1b_d/Q37f,%9.0g,,,TRUE,Retained
+aveQ37abdef,double,numeric,,,%9.0g,,,TRUE,Retained
+aveQ37def,double,numeric,,,%9.0g,,,TRUE,Retained
+usinf2,double,numeric,,aid2a_a:  pre increase US influence abroad,%9.0g,,,TRUE,Retained
+usinf1,double,numeric,,fp4a_b:  pre Iraq - gov't freindly to US interests,%9.0g,,,TRUE,Retained
+foraid1,double,numeric,,pair1_a/Q20,%9.0g,,,TRUE,Retained
+foraid2,double,numeric,,pair2_a/Q21,%9.0g,,,TRUE,Retained
+foraid3,double,numeric,,aid1/Q24,%9.0g,,,TRUE,Retained
+avgQ20Q21,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt1,double,numeric,,fp2b_d/Q2f,%9.0g,,,TRUE,Retained
+globalt2,double,numeric,,fp2c_d/Q2j,%9.0g,,,TRUE,Retained
+globalt3,double,numeric,,fp2b_a/Q25d,%9.0g,,,TRUE,Retained
+globalt4,double,numeric,,fp2b_b/Q25e,%9.0g,,,TRUE,Retained
+globalt5,double,numeric,,fp4a_a/Q7,%9.0g,,,TRUE,Retained
+avgQ25de,double,numeric,,,%9.0g,,,TRUE,Retained
+humrht1,double,numeric,,fp2c_b/Q2h,%9.0g,,,TRUE,Retained
+humrht2,double,numeric,,fp2c_c/Q2i,%9.0g,,,TRUE,Retained
+inter1,double,numeric,,fp3a_s/Q3,%9.0g,,,TRUE,Retained
+inter4,double,numeric,,pair1_a/Q20,%9.0g,,,TRUE,Retained
+inter5,double,numeric,,pair2_a/Q21,%9.0g,,,TRUE,Retained
+inter6,double,numeric,,int2a/Q38,%9.0g,,,TRUE,Retained
+inter7,double,numeric,,int2b/Q39,%9.0g,,,TRUE,Retained
+multi3,double,numeric,,wrm4a_s/Q16,%9.0g,,,TRUE,Retained
+multi4,double,numeric,,mact1_s/Q27,%9.0g,,,TRUE,Retained
+multi5,double,numeric,,mact4_s/Q30,%9.0g,,,TRUE,Retained
+multi6,double,numeric,,mact2_s/Q28,%9.0g,,,TRUE,Retained
+multi7,double,numeric,,mact5_s/Q31,%9.0g,,,TRUE,Retained
+multi8,double,numeric,,mact3_s/Q29,%9.0g,,,TRUE,Retained
+multi9,double,numeric,,mact6_s/Q32,%9.0g,,,TRUE,Retained
+multi10,double,numeric,,int1b_c/Q37e,%9.0g,,,TRUE,Retained
+multi11,double,numeric,,int2a/Q38,%9.0g,,,TRUE,Retained
+multi12,double,numeric,,int2b/Q39,%9.0g,,,TRUE,Retained
+multi13,double,numeric,,trd1_a/Q32a,%9.0g,,,TRUE,Retained
+demo2,double,numeric,,pair3_a/Q22,%9.0g,,,TRUE,Retained
+demo3,double,numeric,,pdem1_a/Q23a,%9.0g,,,TRUE,Retained
+demo4,double,numeric,,pdem1_b/Q23b,%9.0g,,,TRUE,Retained
+trade1,double,numeric,,,%9.0g,,,TRUE,Retained
+trade2,double,numeric,,,%9.0g,,,TRUE,Retained
+demo3456789,double,numeric,,,%9.0g,,,TRUE,Retained
+aveQ13Q14,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec10,double,numeric,,fp3b_s/Q4,%9.0g,,,TRUE,Retained
+ussec11,double,numeric,,fp3c_s/Q5,%9.0g,,,TRUE,Retained
+ussec1011,double,numeric,,,%9.0g,,,TRUE,Retained
+inter3,double,numeric,,fp3c_s/Q5,%9.0g,,,TRUE,Retained
+envir1_r,double,numeric,,,%9.0g,,,TRUE,Retained
+envir4_r,double,numeric,,,%9.0g,,,TRUE,Retained
+usecon1_r,double,numeric,,,%9.0g,,,TRUE,Retained
+usecon2_r,double,numeric,,,%9.0g,,,TRUE,Retained
+usinf1_r,double,numeric,,,%9.0g,,,TRUE,Retained
+usinf2_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt1_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt2_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt3_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt4_r,double,numeric,,,%9.0g,,,TRUE,Retained
+humrht1_r,double,numeric,,,%9.0g,,,TRUE,Retained
+humrht2_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter1_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter3_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter4_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter5_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter6_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter7_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi3_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi4_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi5_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi6_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi7_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi8_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi9_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi10_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi11_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi12_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi13_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo2_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo3_r,double,numeric,,,%9.0g,,,TRUE,Retained
+trade1_r,double,numeric,,,%9.0g,,,TRUE,Retained
+trade2_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt34_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo3456789_r,double,numeric,,,%9.0g,,,TRUE,Retained
+envi_index,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec56789_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter45_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter2,double,numeric,,fp3b_s/Q4,%9.0g,,,TRUE,Retained
+inter2_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter2345_r,double,numeric,,,%9.0g,,,TRUE,Retained
+int2345,double,numeric,,,%9.0g,,,TRUE,Retained
+inter23_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo1,double,numeric,,fp4b_a/Q9,%9.0g,,,TRUE,Retained
+demo1_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter6a,double,numeric,,,%9.0g,,,TRUE,Retained
+inter7a,double,numeric,,,%9.0g,,,TRUE,Retained
+inter6a_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter7a_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi1,double,numeric,,fp3d_s/Q6,%9.0g,,,TRUE,Retained
+multi1_r,double,numeric,,,%9.0g,,,TRUE,Retained
+test6_7,double,numeric,,,%9.0g,,,TRUE,Retained
+test8_9,double,numeric,,,%9.0g,,,TRUE,Retained
+test4_5,double,numeric,,,%9.0g,,,TRUE,Retained
+multi4_5,double,numeric,,,%9.0g,,,TRUE,Retained
+multi6_7,double,numeric,,,%9.0g,,,TRUE,Retained
+multi8_9,double,numeric,,,%9.0g,,,TRUE,Retained
+multi4_5_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi6_7_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi8_9_r,double,numeric,,,%9.0g,,,TRUE,Retained
+index1,double,numeric,,,%9.0g,,,TRUE,Retained
+index2,double,numeric,,,%9.0g,,,TRUE,Retained
+index3,double,numeric,,,%9.0g,,,TRUE,Retained
+index4,double,numeric,,,%9.0g,,,TRUE,Retained
+index5,double,numeric,,,%9.0g,,,TRUE,Retained
+index6,double,numeric,,,%9.0g,,,TRUE,Retained
+index7,double,numeric,,,%9.0g,,,TRUE,Retained
+index8,double,numeric,,,%9.0g,,,TRUE,Retained
+index9,double,numeric,,,%9.0g,,,TRUE,Retained
+index10,double,numeric,,,%9.0g,,,TRUE,Retained
+index11,double,numeric,,,%9.0g,,,TRUE,Retained
+index12,double,numeric,,,%9.0g,,,TRUE,Retained
+index13,double,numeric,,,%9.0g,,,TRUE,Retained
+index14,double,numeric,,,%9.0g,,,TRUE,Retained
+index15,double,numeric,,,%9.0g,,,TRUE,Retained
+index16,double,numeric,,,%9.0g,,,TRUE,Retained
+index17,double,numeric,,,%9.0g,,,TRUE,Retained
+index18,double,numeric,,,%9.0g,,,TRUE,Retained
+index20,double,numeric,,,%9.0g,,,TRUE,Retained
+index19,double,numeric,,,%9.0g,,,TRUE,Retained
+avg2021,double,numeric,,,%9.0g,,,TRUE,Retained
+avg25de,double,numeric,,,%9.0g,,,TRUE,Retained
+int23,double,numeric,,,%9.0g,,,TRUE,Retained
+envir1p,double,numeric,,qfp2a_a/Q2a,%9.0g,,,TRUE,Retained
+envir2p,double,numeric,,qwrm2a_s/Q13,%9.0g,,,TRUE,Retained
+envir3p,double,numeric,,qwrm2b_s/Q14,%9.0g,,,TRUE,Retained
+envir23p,double,numeric,,,%9.0g,,,TRUE,Retained
+usecon1p,double,numeric,,,%9.0g,,,TRUE,Retained
+usecon2p,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec1p,double,numeric,,qfp2b_a/Q2c,%9.0g,,,TRUE,Retained
+ussec2p,double,numeric,,qfp2b_c/Q2e,%9.0g,,,TRUE,Retained
+ussec3p,double,numeric,,qfp2c_a/Q2g,%9.0g,,,TRUE,Retained
+ussec4p,double,numeric,,qaid2a_b/Q25b,%9.0g,,,TRUE,Retained
+ussec5p,double,numeric,,qint1a_a/Q37a,%9.0g,,,TRUE,Retained
+ussec6p,double,numeric,,qint1a_b/Q37b,%9.0g,,,TRUE,Retained
+ussec7p,double,numeric,,qint1b_b/Q37d,%9.0g,,,TRUE,Retained
+ussec8p,double,numeric,,qint1b_c/Q37e,%9.0g,,,TRUE,Retained
+ussec9p,double,numeric,,qint1b_d/Q37f,%9.0g,,,TRUE,Retained
+ussec10p,double,numeric,,qfp3b_s/Q4,%9.0g,,,TRUE,Retained
+ussec11p,double,numeric,,qfp3c_s/Q5,%9.0g,,,TRUE,Retained
+ussec56789p,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec1011p,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec789p,double,numeric,,,%9.0g,,,TRUE,Retained
+usinf1p,double,numeric,,,%9.0g,,,TRUE,Retained
+usinf2p,double,numeric,,,%9.0g,,,TRUE,Retained
+foraid1p,double,numeric,,qpair1_a/Q20,%9.0g,,,TRUE,Retained
+foraid2p,double,numeric,,qpair2_a/Q21,%9.0g,,,TRUE,Retained
+foraid3p,double,numeric,,qaid1/Q24,%9.0g,,,TRUE,Retained
+foraid12p,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt1p,double,numeric,,qfp2b_d/Q2f,%9.0g,,,TRUE,Retained
+globalt2p,double,numeric,,qfp2c_d/Q2j,%9.0g,,,TRUE,Retained
+globalt3p,double,numeric,,qaid2b_a/Q25d,%9.0g,,,TRUE,Retained
+globalt4p,double,numeric,,qfp2b_b/Q25e,%9.0g,,,TRUE,Retained
+globalt5p,double,numeric,,qfp4a_a/Q7,%9.0g,,,TRUE,Retained
+globalt34p,double,numeric,,,%9.0g,,,TRUE,Retained
+humrht1p,double,numeric,,qfp2c_b/Q2h,%9.0g,,,TRUE,Retained
+humrht2p,double,numeric,,qfp2c_c/Q2i,%9.0g,,,TRUE,Retained
+inter1p,double,numeric,,qfp3a_s/Q3,%9.0g,,,TRUE,Retained
+inter2p,double,numeric,,qfp3b_s/Q4,%9.0g,,,TRUE,Retained
+inter3p,double,numeric,,qfp3c_s/Q5,%9.0g,,,TRUE,Retained
+inter4p,double,numeric,,qpair1_a/Q20,%9.0g,,,TRUE,Retained
+inter5p,double,numeric,,qpair2_a/Q21,%9.0g,,,TRUE,Retained
+inter6p,double,numeric,,qint2a/Q38,%9.0g,,,TRUE,Retained
+inter7p,double,numeric,,qint2b/Q39,%9.0g,,,TRUE,Retained
+inter2345p,double,numeric,,,%9.0g,,,TRUE,Retained
+multi1p,double,numeric,,qfp3d_s/Q6,%9.0g,,,TRUE,Retained
+multi3p,double,numeric,,qwrm4a_s/Q16,%9.0g,,,TRUE,Retained
+multi4p,double,numeric,,qmact1_s/Q27,%9.0g,,,TRUE,Retained
+multi5p,double,numeric,,qmact4_s/Q30,%9.0g,,,TRUE,Retained
+multi6p,double,numeric,,qmact2_s/Q28,%9.0g,,,TRUE,Retained
+multi7p,double,numeric,,qmact5_s/Q31,%9.0g,,,TRUE,Retained
+multi8p,double,numeric,,qmact3_s/Q29,%9.0g,,,TRUE,Retained
+multi9p,double,numeric,,qmact6_s/Q32,%9.0g,,,TRUE,Retained
+multi10p,double,numeric,,qint1b_c/Q37e,%9.0g,,,TRUE,Retained
+multi11p,double,numeric,,qint2a/Q38,%9.0g,,,TRUE,Retained
+multi12p,double,numeric,,qint2b/Q39,%9.0g,,,TRUE,Retained
+multi13p,double,numeric,,qtrd1_a/Q32a,%9.0g,,,TRUE,Retained
+multi6_7p,double,numeric,,,%9.0g,,,TRUE,Retained
+multi8_9p,double,numeric,,,%9.0g,,,TRUE,Retained
+demo1p,double,numeric,,qfp4b_a/Q9,%9.0g,,,TRUE,Retained
+demo2p,double,numeric,,qpair3_a/Q22,%9.0g,,,TRUE,Retained
+demo3p,double,numeric,,qpdem1_a/Q23a,%9.0g,,,TRUE,Retained
+demo4p,double,numeric,,qpdem1_b/Q23b,%9.0g,,,TRUE,Retained
+demo5p,double,numeric,,qpdem1_c/Q23c,%9.0g,,,TRUE,Retained
+demo6p,double,numeric,,qpdem2_a/Q23d,%9.0g,,,TRUE,Retained
+demo7p,double,numeric,,qpdem2_b/Q23e,%9.0g,,,TRUE,Retained
+demo8p,double,numeric,,qpdem2_c/Q23f,%9.0g,,,TRUE,Retained
+demo9p,double,numeric,,qaid2a_c/Q25c,%9.0g,,,TRUE,Retained
+demo10p,double,numeric,,qint1a_a/Q37a,%9.0g,,,TRUE,Retained
+demo3456789p,double,numeric,,,%9.0g,,,TRUE,Retained
+trade1p,double,numeric,,,%9.0g,,,TRUE,Retained
+trade2p,double,numeric,,,%9.0g,,,TRUE,Retained
+envir1p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+usecon1p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+usecon2p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+usinf1p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+usinf2p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt1p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt2p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt3p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt4p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+humrht1p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+humrht2p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter1p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter2p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter3p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter4p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter5p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter6p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter7p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi1p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi3p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi4p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi5p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi6p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi7p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi8p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi9p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi10p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi11p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi12p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi13p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo1p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo2p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo3p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo4p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo5p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo6p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo7p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo8p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo9p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo10p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+trade1p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+trade2p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+envir23p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec56789p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt34p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter2345p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+inter23p,double,numeric,,,%9.0g,,,TRUE,Retained
+inter23p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi4_5p,double,numeric,,,%9.0g,,,TRUE,Retained
+multi4_5p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi6_7p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi8_9p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo345678p,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec56789,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec789,double,numeric,,,%9.0g,,,TRUE,Retained
+foraid12,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt34,double,numeric,,,%9.0g,,,TRUE,Retained
+inter2345,double,numeric,,,%9.0g,,,TRUE,Retained
+demo345678,double,numeric,,,%9.0g,,,TRUE,Retained
+multi2,double,numeric,,fp4b_b/Q10,%9.0g,,,TRUE,Retained
+multi2p,double,numeric,,qfp4b_b/Q10,%9.0g,,,TRUE,Retained
+multi2_r,double,numeric,,,%9.0g,,,TRUE,Retained
+multi2p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt5_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt5p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt6,double,numeric,,int1a_b/Q37b,%9.0g,,,TRUE,Retained
+globalt6p,double,numeric,,qint1a_b/Q37b,%9.0g,,,TRUE,Retained
+globalt6_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt6p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+envir4p,double,numeric,,qwrm3_a/Q15,%9.0g,,,TRUE,Retained
+envir4p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+cond,double,numeric,,,%9.0g,,,TRUE,Retained
+demo5,double,numeric,,pdem1_c/Q23c,%9.0g,,,TRUE,Retained
+demo6,double,numeric,,pdem2_a/Q23d,%9.0g,,,TRUE,Retained
+demo7,double,numeric,,pdem2_b/Q23e,%9.0g,,,TRUE,Retained
+demo8,double,numeric,,pdem2_c/Q23f,%9.0g,,,TRUE,Retained
+demo9,double,numeric,,aid2a_c/Q25c,%9.0g,,,TRUE,Retained
+demo10,double,numeric,,int1a_a/Q37a,%9.0g,,,TRUE,Retained
+demo4_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo5_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo6_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo7_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo8_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo9_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo10_r,double,numeric,,,%9.0g,,,TRUE,Retained
+prenvir2_r,double,numeric,,,%9.0g,,,TRUE,Retained
+prenvir3_r,double,numeric,,,%9.0g,,,TRUE,Retained
+prenvir23_r,double,numeric,,,%9.0g,,,TRUE,Retained
+a1,double,numeric,,,%9.0g,,,TRUE,Retained
+a23,double,numeric,,,%9.0g,,,TRUE,Retained
+a4,double,numeric,,,%9.0g,,,TRUE,Retained
+a_n,double,numeric,,,%9.0g,,,TRUE,Retained
+a1p,double,numeric,,,%9.0g,,,TRUE,Retained
+a23p,double,numeric,,,%9.0g,,,TRUE,Retained
+a4p,double,numeric,,,%9.0g,,,TRUE,Retained
+a_np,double,numeric,,,%9.0g,,,TRUE,Retained
+c7mis_r,double,numeric,,,%9.0g,,,TRUE,Retained
+c8mis_r,double,numeric,,,%9.0g,,,TRUE,Retained
+c9mis_r,double,numeric,,,%9.0g,,,TRUE,Retained
+c10mis_r,double,numeric,,,%9.0g,,,TRUE,Retained
+c11mis_r,double,numeric,,,%9.0g,,,TRUE,Retained
+c1,double,numeric,,,%9.0g,,,TRUE,Retained
+c2,double,numeric,,,%9.0g,,,TRUE,Retained
+c3,double,numeric,,,%9.0g,,,TRUE,Retained
+c4,double,numeric,,,%9.0g,,,TRUE,Retained
+c7,double,numeric,,,%9.0g,,,TRUE,Retained
+c8,double,numeric,,,%9.0g,,,TRUE,Retained
+c9,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec789_r,double,numeric,,,%9.0g,,,TRUE,Retained
+c789,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec1011_r,double,numeric,,,%9.0g,,,TRUE,Retained
+c1011,double,numeric,,,%9.0g,,,TRUE,Retained
+c_n,double,numeric,,,%9.0g,,,TRUE,Retained
+c7pmis_r,double,numeric,,,%9.0g,,,TRUE,Retained
+c8pmis_r,double,numeric,,,%9.0g,,,TRUE,Retained
+c9pmis_r,double,numeric,,,%9.0g,,,TRUE,Retained
+c10pmis_r,double,numeric,,,%9.0g,,,TRUE,Retained
+c11pmis_r,double,numeric,,,%9.0g,,,TRUE,Retained
+c1p,double,numeric,,,%9.0g,,,TRUE,Retained
+c2p,double,numeric,,,%9.0g,,,TRUE,Retained
+c3p,double,numeric,,,%9.0g,,,TRUE,Retained
+c4p,double,numeric,,,%9.0g,,,TRUE,Retained
+c7p,double,numeric,,,%9.0g,,,TRUE,Retained
+c8p,double,numeric,,,%9.0g,,,TRUE,Retained
+c9p,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec789p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec1011p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+c789p,double,numeric,,,%9.0g,,,TRUE,Retained
+c1011p,double,numeric,,,%9.0g,,,TRUE,Retained
+c_np,double,numeric,,,%9.0g,,,TRUE,Retained
+g1,double,numeric,,,%9.0g,,,TRUE,Retained
+g2,double,numeric,,,%9.0g,,,TRUE,Retained
+g_n,double,numeric,,,%9.0g,,,TRUE,Retained
+g1p,double,numeric,,,%9.0g,,,TRUE,Retained
+g2p,double,numeric,,,%9.0g,,,TRUE,Retained
+g_np,double,numeric,,,%9.0g,,,TRUE,Retained
+j3,double,numeric,,,%9.0g,,,TRUE,Retained
+j4,double,numeric,,,%9.0g,,,TRUE,Retained
+j5,double,numeric,,,%9.0g,,,TRUE,Retained
+j6,double,numeric,,,%9.0g,,,TRUE,Retained
+j7,double,numeric,,,%9.0g,,,TRUE,Retained
+j8,double,numeric,,,%9.0g,,,TRUE,Retained
+j_n,double,numeric,,,%9.0g,,,TRUE,Retained
+j3p,double,numeric,,,%9.0g,,,TRUE,Retained
+j4p,double,numeric,,,%9.0g,,,TRUE,Retained
+j5p,double,numeric,,,%9.0g,,,TRUE,Retained
+j6p,double,numeric,,,%9.0g,,,TRUE,Retained
+j7p,double,numeric,,,%9.0g,,,TRUE,Retained
+j8p,double,numeric,,,%9.0g,,,TRUE,Retained
+j_np,double,numeric,,,%9.0g,,,TRUE,Retained
+multi1112_r,double,numeric,,,%9.0g,,,TRUE,Retained
+i1,double,numeric,,,%9.0g,,,TRUE,Retained
+i2,double,numeric,,,%9.0g,,,TRUE,Retained
+i3,double,numeric,,,%9.0g,,,TRUE,Retained
+i4_5,double,numeric,,,%9.0g,,,TRUE,Retained
+i6_7,double,numeric,,,%9.0g,,,TRUE,Retained
+i1112,double,numeric,,,%9.0g,,,TRUE,Retained
+i_n,double,numeric,,,%9.0g,,,TRUE,Retained
+multi1112p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+i1p,double,numeric,,,%9.0g,,,TRUE,Retained
+i2p,double,numeric,,,%9.0g,,,TRUE,Retained
+i3p,double,numeric,,,%9.0g,,,TRUE,Retained
+i4_5p,double,numeric,,,%9.0g,,,TRUE,Retained
+i6_7p,double,numeric,,,%9.0g,,,TRUE,Retained
+i1112p,double,numeric,,,%9.0g,,,TRUE,Retained
+i_np,double,numeric,,,%9.0g,,,TRUE,Retained
+f1,double,numeric,,,%9.0g,,,TRUE,Retained
+f2,double,numeric,,,%9.0g,,,TRUE,Retained
+f34,double,numeric,,,%9.0g,,,TRUE,Retained
+f_n,double,numeric,,,%9.0g,,,TRUE,Retained
+f1p,double,numeric,,,%9.0g,,,TRUE,Retained
+f2p,double,numeric,,,%9.0g,,,TRUE,Retained
+f34p,double,numeric,,,%9.0g,,,TRUE,Retained
+f_np,double,numeric,,,%9.0g,,,TRUE,Retained
+envir1,double,numeric,,,%9.0g,,,TRUE,Retained
+envir2,double,numeric,,,%9.0g,,,TRUE,Retained
+envir3,double,numeric,,,%9.0g,,,TRUE,Retained
+envir4,double,numeric,,,%9.0g,,,TRUE,Retained
+envir23,double,numeric,,,%9.0g,,,TRUE,Retained
+envir2_r,double,numeric,,,%9.0g,,,TRUE,Retained
+envir3_r,double,numeric,,,%9.0g,,,TRUE,Retained
+envir23_r,double,numeric,,,%9.0g,,,TRUE,Retained
+exp_cond,double,numeric,,,%9.0g,,,TRUE,Retained
+envms1,double,numeric,,,%9.0g,,,TRUE,Retained
+envms23,double,numeric,,,%9.0g,,,TRUE,Retained
+envms4,double,numeric,,,%9.0g,,,TRUE,Retained
+envms1p,double,numeric,,,%9.0g,,,TRUE,Retained
+envms23p,double,numeric,,,%9.0g,,,TRUE,Retained
+envms4p,double,numeric,,,%9.0g,,,TRUE,Retained
+ussecms1,double,numeric,,,%9.0g,,,TRUE,Retained
+ussecms2,double,numeric,,,%9.0g,,,TRUE,Retained
+ussecms3,double,numeric,,,%9.0g,,,TRUE,Retained
+ussecms4,double,numeric,,,%9.0g,,,TRUE,Retained
+ussecms789,double,numeric,,,%9.0g,,,TRUE,Retained
+ussecms1011,double,numeric,,,%9.0g,,,TRUE,Retained
+ussecms1p,double,numeric,,,%9.0g,,,TRUE,Retained
+ussecms2p,double,numeric,,,%9.0g,,,TRUE,Retained
+ussecms3p,double,numeric,,,%9.0g,,,TRUE,Retained
+ussecms4p,double,numeric,,,%9.0g,,,TRUE,Retained
+ussecms789p,double,numeric,,,%9.0g,,,TRUE,Retained
+ussecms1011p,double,numeric,,,%9.0g,,,TRUE,Retained
+humms1,double,numeric,,,%9.0g,,,TRUE,Retained
+humms2,double,numeric,,,%9.0g,,,TRUE,Retained
+humms1p,double,numeric,,,%9.0g,,,TRUE,Retained
+humms2p,double,numeric,,,%9.0g,,,TRUE,Retained
+demoms3,double,numeric,,,%9.0g,,,TRUE,Retained
+demoms4,double,numeric,,,%9.0g,,,TRUE,Retained
+demoms5,double,numeric,,,%9.0g,,,TRUE,Retained
+demoms6,double,numeric,,,%9.0g,,,TRUE,Retained
+demoms7,double,numeric,,,%9.0g,,,TRUE,Retained
+demoms8,double,numeric,,,%9.0g,,,TRUE,Retained
+demoms3p,double,numeric,,,%9.0g,,,TRUE,Retained
+demoms4p,double,numeric,,,%9.0g,,,TRUE,Retained
+demoms5p,double,numeric,,,%9.0g,,,TRUE,Retained
+demoms6p,double,numeric,,,%9.0g,,,TRUE,Retained
+demoms7p,double,numeric,,,%9.0g,,,TRUE,Retained
+demoms8p,double,numeric,,,%9.0g,,,TRUE,Retained
+multims1,double,numeric,,,%9.0g,,,TRUE,Retained
+multims2,double,numeric,,,%9.0g,,,TRUE,Retained
+multims3,double,numeric,,,%9.0g,,,TRUE,Retained
+multims4_5,double,numeric,,,%9.0g,,,TRUE,Retained
+multims6_7,double,numeric,,,%9.0g,,,TRUE,Retained
+multims1112,double,numeric,,,%9.0g,,,TRUE,Retained
+multims1p,double,numeric,,,%9.0g,,,TRUE,Retained
+multims2p,double,numeric,,,%9.0g,,,TRUE,Retained
+multims3p,double,numeric,,,%9.0g,,,TRUE,Retained
+multims4_5p,double,numeric,,,%9.0g,,,TRUE,Retained
+multims6_7p,double,numeric,,,%9.0g,,,TRUE,Retained
+multims1112p,double,numeric,,,%9.0g,,,TRUE,Retained
+globaltms1,double,numeric,,,%9.0g,,,TRUE,Retained
+globaltms2,double,numeric,,,%9.0g,,,TRUE,Retained
+globaltms34,double,numeric,,,%9.0g,,,TRUE,Retained
+globaltms1p,double,numeric,,,%9.0g,,,TRUE,Retained
+globaltms2p,double,numeric,,,%9.0g,,,TRUE,Retained
+globaltms34p,double,numeric,,,%9.0g,,,TRUE,Retained
+part,double,numeric,,,%9.0g,,,TRUE,Retained
+kn2,double,numeric,,,%9.0g,,,TRUE,Retained
+kn3,double,numeric,,,%9.0g,,,TRUE,Retained
+kn4,double,numeric,,,%9.0g,,,TRUE,Retained
+kn5,double,numeric,,,%9.0g,,,TRUE,Retained
+kn6,double,numeric,,,%9.0g,,,TRUE,Retained
+kn7,double,numeric,,,%9.0g,,,TRUE,Retained
+kn8,double,numeric,,,%9.0g,,,TRUE,Retained
+kn9,double,numeric,,,%9.0g,,,TRUE,Retained
+kn11,double,numeric,,,%9.0g,,,TRUE,Retained
+t2kn2,double,numeric,,,%9.0g,,,TRUE,Retained
+t2kn3,double,numeric,,,%9.0g,,,TRUE,Retained
+t2kn4,double,numeric,,,%9.0g,,,TRUE,Retained
+t2kn5,double,numeric,,,%9.0g,,,TRUE,Retained
+t2kn6,double,numeric,,,%9.0g,,,TRUE,Retained
+t2kn7,double,numeric,,,%9.0g,,,TRUE,Retained
+t2kn8,double,numeric,,,%9.0g,,,TRUE,Retained
+t2kn9,double,numeric,,,%9.0g,,,TRUE,Retained
+t2kn11,double,numeric,,,%9.0g,,,TRUE,Retained
+know_ind1,double,numeric,,,%9.0g,,,TRUE,Retained
+know_ind2,double,numeric,,,%9.0g,,,TRUE,Retained
+kn1b,double,numeric,,,%9.0g,,,TRUE,Retained
+t2kn1b,double,numeric,,,%9.0g,,,TRUE,Retained
+t2kn10b,double,numeric,,,%9.0g,,,TRUE,Retained
+kn1a,double,numeric,,,%9.0g,,,TRUE,Retained
+kn10a,double,numeric,,,%9.0g,,,TRUE,Retained
+t2kn1a,double,numeric,,,%9.0g,,,TRUE,Retained
+t2kn10a,double,numeric,,,%9.0g,,,TRUE,Retained
+kn10b,double,numeric,,,%9.0g,,,TRUE,Retained
+kn_ind1,double,numeric,,,%9.0g,,,TRUE,Retained
+kn_ind2,double,numeric,,,%9.0g,,,TRUE,Retained
+kn_ind2c,double,numeric,,,%9.0g,,,TRUE,Retained
+kn_ind1r,double,numeric,,,%9.0g,,,TRUE,Retained
+kn_ind2r,double,numeric,,,%9.0g,,,TRUE,Retained
+kn_ind2cr,double,numeric,,,%9.0g,,,TRUE,Retained
+cond1,double,numeric,,,%9.0g,,,TRUE,Retained
+grenv1,double,numeric,,,%9.0g,,,TRUE,Retained
+difenv1,double,numeric,,,%9.0g,,,TRUE,Retained
+grsec1,double,numeric,,,%9.0g,,,TRUE,Retained
+difsec1,double,numeric,,,%9.0g,,,TRUE,Retained
+grfor1,double,numeric,,,%9.0g,,,TRUE,Retained
+diffor1,double,numeric,,,%9.0g,,,TRUE,Retained
+grhum1,double,numeric,,,%9.0g,,,TRUE,Retained
+difhum1,double,numeric,,,%9.0g,,,TRUE,Retained
+grdemo1,double,numeric,,,%9.0g,,,TRUE,Retained
+difdemo1,double,numeric,,,%9.0g,,,TRUE,Retained
+grmulti1,double,numeric,,,%9.0g,,,TRUE,Retained
+difmulti1,double,numeric,,,%9.0g,,,TRUE,Retained
+grglob1,double,numeric,,,%9.0g,,,TRUE,Retained
+difglob1,double,numeric,,,%9.0g,,,TRUE,Retained
+grinter1,double,numeric,,,%9.0g,,,TRUE,Retained
+difinter1,double,numeric,,,%9.0g,,,TRUE,Retained
+env_dif,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec_dif,double,numeric,,,%9.0g,,,TRUE,Retained
+for_dif,double,numeric,,,%9.0g,,,TRUE,Retained
+hum_dif,double,numeric,,,%9.0g,,,TRUE,Retained
+demo_dif,double,numeric,,,%9.0g,,,TRUE,Retained
+multi_dif,double,numeric,,,%9.0g,,,TRUE,Retained
+glob_dif,double,numeric,,,%9.0g,,,TRUE,Retained
+inter_dif,double,numeric,,,%9.0g,,,TRUE,Retained
+kn_ind1rr,double,numeric,,,%9.0g,,,TRUE,Retained
+kn_ind2rr,double,numeric,,,%9.0g,,,TRUE,Retained
+chg,double,numeric,,,%9.0g,,,TRUE,Retained
+galt1,double,numeric,,,%9.0g,,,TRUE,Retained
+pgalt1,double,numeric,,,%9.0g,,,TRUE,Retained
+v2_s,double,numeric,,,%9.0g,,,TRUE,Retained
+v1_s,double,numeric,,,%9.0g,,,TRUE,Retained
+v3_s,double,numeric,,,%9.0g,,,TRUE,Retained
+pv2_s,double,numeric,,,%9.0g,,,TRUE,Retained
+pv1_s,double,numeric,,,%9.0g,,,TRUE,Retained
+pv3_s,double,numeric,,,%9.0g,,,TRUE,Retained
+al1,double,numeric,,,%9.0g,,,TRUE,Retained
+al2,double,numeric,,,%9.0g,,,TRUE,Retained
+al3,double,numeric,,,%9.0g,,,TRUE,Retained
+al4,double,numeric,,,%9.0g,,,TRUE,Retained
+pal1,double,numeric,,,%9.0g,,,TRUE,Retained
+pal2,double,numeric,,,%9.0g,,,TRUE,Retained
+pal3,double,numeric,,,%9.0g,,,TRUE,Retained
+pal4,double,numeric,,,%9.0g,,,TRUE,Retained
+palt1,double,numeric,,,%9.0g,,,TRUE,Retained
+palt2,double,numeric,,,%9.0g,,,TRUE,Retained
+palt3,double,numeric,,,%9.0g,,,TRUE,Retained
+palt4,double,numeric,,,%9.0g,,,TRUE,Retained
+alt_it2,double,numeric,,,%9.0g,,,TRUE,Retained
+alt1,double,numeric,,,%9.0g,,,TRUE,Retained
+alt2,double,numeric,,,%9.0g,,,TRUE,Retained
+alt3,double,numeric,,,%9.0g,,,TRUE,Retained
+alt4,double,numeric,,,%9.0g,,,TRUE,Retained
+alt_it1,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt7,double,numeric,,pair1_a/Q20,%9.0g,,,TRUE,Retained
+globalt8,double,numeric,,pair2_a/Q21,%9.0g,,,TRUE,Retained
+globalt7p,double,numeric,,qpair1_a/Q20,%9.0g,,,TRUE,Retained
+globalt8p,double,numeric,,qpair2_a/Q21,%9.0g,,,TRUE,Retained
+lntest3,double,numeric,,,%9.0g,,,TRUE,Retained
+envtest,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt7_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt7p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt8_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt8p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+envir2p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+envir3p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+c5,double,numeric,,,%9.0g,,,TRUE,Retained
+c6,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec5689p,double,numeric,,,%9.0g,,,TRUE,Retained
+c5689,double,numeric,,,%9.0g,,,TRUE,Retained
+c5p,double,numeric,,,%9.0g,,,TRUE,Retained
+c6p,double,numeric,,,%9.0g,,,TRUE,Retained
+c5689p,double,numeric,,,%9.0g,,,TRUE,Retained
+t1usseca,double,numeric,,T1 Fighting Terrorism Index - Use This One,%9.0g,,,TRUE,Retained
+t2usseca,double,numeric,,T2 Fighting Terrorism Index - Use This One,%9.0g,,,TRUE,Retained
+e1,double,numeric,,,%9.0g,,,TRUE,Retained
+e2,double,numeric,,,%9.0g,,,TRUE,Retained
+e3,double,numeric,,,%9.0g,,,TRUE,Retained
+e1p,double,numeric,,,%9.0g,,,TRUE,Retained
+e2p,double,numeric,,,%9.0g,,,TRUE,Retained
+e3p,double,numeric,,,%9.0g,,,TRUE,Retained
+foraid12_r,double,numeric,,,%9.0g,,,TRUE,Retained
+e12,double,numeric,,,%9.0g,,,TRUE,Retained
+e12p,double,numeric,,,%9.0g,,,TRUE,Retained
+test_f1,double,numeric,,,%9.0g,,,TRUE,Retained
+foraid12p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+test_f2,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec89_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec89p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+c89,double,numeric,,,%9.0g,,,TRUE,Retained
+c89p,double,numeric,,,%9.0g,,,TRUE,Retained
+t1ussec1b,double,numeric,,,%9.0g,,,TRUE,Retained
+t2ussec1b,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva1,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva2,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva3,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva7,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva9,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva10,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva4,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva5,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva6,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva8,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva1r,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva2r,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva3r,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva4r,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva5r,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva6r,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva7r,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva8r,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva9r,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva10r,double,numeric,,,%9.0g,,,TRUE,Retained
+wareva_ind,double,numeric,,,%9.0g,,,TRUE,Retained
+t1envir_c,double,numeric,,,%9.0g,,,TRUE,Retained
+t2envir_c,double,numeric,,,%9.0g,,,TRUE,Retained
+t1humrh2,double,numeric,, T1 Human Rights Index - Use This One,%9.0g,,,TRUE,Retained
+t2humrh2,double,numeric,, T2 Human Rights Index - Use This One,%9.0g,,,TRUE,Retained
+t1humrht_c,double,numeric,,,%9.0g,,,TRUE,Retained
+t2humrht_c,double,numeric,,,%9.0g,,,TRUE,Retained
+demo345678_r,double,numeric,,,%9.0g,,,TRUE,Retained
+demo345678p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+t1demo,double,numeric,, T1 Promoting Democracy Index - Use This One,%9.0g,,,TRUE,Retained
+t2demo,double,numeric,, T2 Promoting Democracy Index - Use This One,%9.0g,,,TRUE,Retained
+t1multi,double,numeric,,T1 Multilateralism Index - Use This One,%9.0g,,,TRUE,Retained
+t2multi,double,numeric,,T2 Multilateralism Index - Use This One,%9.0g,,,TRUE,Retained
+t1multi_c,double,numeric,,,%9.0g,,,TRUE,Retained
+t2multi_c,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt78_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt78p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+t1globalt,double,numeric,,,%9.0g,,,TRUE,Retained
+t2globalt,double,numeric,,,%9.0g,,,TRUE,Retained
+t1globalt_c,double,numeric,,,%9.0g,,,TRUE,Retained
+t2globalt_c,double,numeric,,,%9.0g,,,TRUE,Retained
+t1inter,double,numeric,,T1 Internationalism Index - Use This One,%9.0g,,,TRUE,Retained
+t2inter,double,numeric,,T2 Internationalism Index - Use This One,%9.0g,,,TRUE,Retained
+t1inter_c,double,numeric,,,%9.0g,,,TRUE,Retained
+t2inter_c,double,numeric,,,%9.0g,,,TRUE,Retained
+t1trade,double,numeric,,,%9.0g,,,TRUE,Retained
+t2trade,double,numeric,,,%9.0g,,,TRUE,Retained
+t1trade_c,double,numeric,,,%9.0g,,,TRUE,Retained
+trade2_cm,double,numeric,,,%9.0g,,,TRUE,Retained
+envtest23_r,double,numeric,,,%9.0g,,,TRUE,Retained
+envtest23p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+t1envir,double,numeric,,T1 Proctecting the Environment Index - Use This One,%9.0g,,,TRUE,Retained
+t2envir,double,numeric,,T2 Proctecting the Environment Index - Use This One,%9.0g,,,TRUE,Retained
+ussec1_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec2_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec3_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec4_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec5_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec6_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec7_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec8_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec9_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec10_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec11_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec1p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec2p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec3p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec4p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec5p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec6p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec7p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec8p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec9p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec10p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec11p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+foraid1_r,double,numeric,,,%9.0g,,,TRUE,Retained
+foraid2_r,double,numeric,,,%9.0g,,,TRUE,Retained
+foraid3_r,double,numeric,,,%9.0g,,,TRUE,Retained
+foraid1p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+foraid2p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+foraid3p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec5689_r,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec5689p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+t1ussec,double,numeric,,,%9.0g,,,TRUE,Retained
+t2ussec,double,numeric,,,%9.0g,,,TRUE,Retained
+t1ussec_c,double,numeric,,,%9.0g,,,TRUE,Retained
+t2ussec_c,double,numeric,,,%9.0g,,,TRUE,Retained
+t1forai1,double,numeric,,T1 Increasing Foreign Aid Index - Use This One,%9.0g,,,TRUE,Retained
+t2forai1,double,numeric,,T2 Increasing Foreign Aid Index - Use This One,%9.0g,,,TRUE,Retained
+DIF_trade,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_envir,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_ussec,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_humrht,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_multi,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_globalt,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_inter,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_foraid,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_demo,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt56_r,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt56p_r,double,numeric,,,%9.0g,,,TRUE,Retained
+t1global,double,numeric,,T1 Fighting Poverty and Suffering Index - Use This One,%9.0g,,,TRUE,Retained
+t2global,double,numeric,,T1 Fighting Poverty and Suffering Index - Use This One,%9.0g,,,TRUE,Retained
+sumt1envir,double,numeric,,,%9.0g,,,TRUE,Retained
+sumt1ussec,double,numeric,,,%9.0g,,,TRUE,Retained
+sumt1foraid,double,numeric,,,%9.0g,,,TRUE,Retained
+sumt1globalta,double,numeric,,,%9.0g,,,TRUE,Retained
+sumt1globalt,double,numeric,,,%9.0g,,,TRUE,Retained
+sumt1humrht,double,numeric,,,%9.0g,,,TRUE,Retained
+sumt1multi,double,numeric,,,%9.0g,,,TRUE,Retained
+sumt1inter,double,numeric,,,%9.0g,,,TRUE,Retained
+sumt1demo,double,numeric,,,%9.0g,,,TRUE,Retained
+sumt1trd,double,numeric,,,%9.0g,,,TRUE,Retained
+envircnt,double,numeric,,,%9.0g,,,TRUE,Retained
+envir_n,double,numeric,,,%9.0g,,,TRUE,Retained
+usseccnt,double,numeric,,,%9.0g,,,TRUE,Retained
+ussec_n,double,numeric,,,%9.0g,,,TRUE,Retained
+foraidcnt,double,numeric,,,%9.0g,,,TRUE,Retained
+foraid_n,double,numeric,,,%9.0g,,,TRUE,Retained
+globaltacnt,double,numeric,,,%9.0g,,,TRUE,Retained
+globalta_n,double,numeric,,,%9.0g,,,TRUE,Retained
+globaltcnt,double,numeric,,,%9.0g,,,TRUE,Retained
+globalt_n,double,numeric,,,%9.0g,,,TRUE,Retained
+humrhtcnt,double,numeric,,,%9.0g,,,TRUE,Retained
+humrht_n,double,numeric,,,%9.0g,,,TRUE,Retained
+multicnt,double,numeric,,,%9.0g,,,TRUE,Retained
+multi_n,double,numeric,,,%9.0g,,,TRUE,Retained
+intercnt,double,numeric,,,%9.0g,,,TRUE,Retained
+inter_n,double,numeric,,,%9.0g,,,TRUE,Retained
+democnt,double,numeric,,,%9.0g,,,TRUE,Retained
+demo_n,double,numeric,,,%9.0g,,,TRUE,Retained
+tradecnt,double,numeric,,,%9.0g,,,TRUE,Retained
+trade_n,double,numeric,,,%9.0g,,,TRUE,Retained
+grp_envir,double,numeric,,,%9.0g,,,TRUE,Retained
+grp_ussec,double,numeric,,,%9.0g,,,TRUE,Retained
+grp_foraid,double,numeric,,,%9.0g,,,TRUE,Retained
+grp_globalt,double,numeric,,,%9.0g,,,TRUE,Retained
+grp_globalta,double,numeric,,,%9.0g,,,TRUE,Retained
+grp_humrht,double,numeric,,,%9.0g,,,TRUE,Retained
+grp_multi,double,numeric,,,%9.0g,,,TRUE,Retained
+grp_inter,double,numeric,,,%9.0g,,,TRUE,Retained
+grp_demo,double,numeric,,,%9.0g,,,TRUE,Retained
+grp_trade,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_env_grp,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_ussec_grp,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_foraid_grp,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_globalt_grp,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_humrht_grp,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_multi_grp,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_inter_grp,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_demo_grp,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_trd_grp,double,numeric,,,%9.0g,,,TRUE,Retained
+kn_ind1c,double,numeric,,,%9.0g,,,TRUE,Retained
+kn_ind1cm,double,numeric,,,%9.0g,,,TRUE,Retained
+kn_ind2cm,double,numeric,,,%9.0g,,,TRUE,Retained
+t1know,double,numeric,,T1 Knowledge Index - all items,%9.0g,,,TRUE,Retained
+t2know,double,numeric,,T2 Knowledge Index - all items,%9.0g,,,TRUE,Retained
+merge_know,double,numeric,,,%8.0g,,,TRUE,Retained
+DIF_globalta_grp,double,numeric,,,%9.0g,,,TRUE,Retained
+t1humrhta,double,numeric,,,%9.0g,,,TRUE,Retained
+t2humrhta,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_humrhta,double,numeric,,,%9.0g,,,TRUE,Retained
+DIF_globalta,double,numeric,,,%9.0g,,,TRUE,Retained
+t1tradetest,double,numeric,,,%9.0g,,,TRUE,Retained
+t2tradetest,double,numeric,,,%9.0g,,,TRUE,Retained
+trade1_rtest,double,numeric,,,%9.0g,,,TRUE,Retained
+trade1p_rtest,double,numeric,,,%9.0g,,,TRUE,Retained
+t1trade_a,double,numeric,,,%9.0g,,,TRUE,Retained
+t2trade_a,double,numeric,,,%9.0g,,,TRUE,Retained
+t2trade_b,double,numeric,,"T2 Liberalizing Trade - Use This One, 1=more liberal",%9.0g,,,TRUE,Retained
+t1rade_c,double,numeric,,,%9.0g,,,TRUE,Retained
+t2trade_c,double,numeric,,,%9.0g,,,TRUE,Retained
+t1trade_b,double,numeric,,"T1 Liberalizing Trade - Use This One, 1=more liberal",%9.0g,,,TRUE,Retained
+test1,double,numeric,,,%9.0g,,,TRUE,Retained
+test2,double,numeric,,,%9.0g,,,TRUE,Retained
+t1tradetesta,double,numeric,,,%9.0g,,,TRUE,Retained
+t2tradetesta,double,numeric,,,%9.0g,,,TRUE,Retained
+t1tradetestc,double,numeric,,,%9.0g,,,TRUE,Retained
+t2tradetestc,double,numeric,,,%9.0g,,,TRUE,Retained
+tradedif1,double,numeric,,,%9.0g,,,TRUE,Retained
+tradedif2,double,numeric,,,%9.0g,,,TRUE,Retained
+tradedif3,double,numeric,,,%9.0g,,,TRUE,Retained
+testtrd2,double,numeric,,,%9.0g,,,TRUE,Retained
+testtrd2p,double,numeric,,,%9.0g,,,TRUE,Retained
+t1amer1_s_r,double,numeric,,,%9.0g,,,TRUE,Retained
+t2amer1_s_r,double,numeric,,,%9.0g,,,TRUE,Retained
+t1amer2_s_r,double,numeric,,,%9.0g,,,TRUE,Retained
+t2amer2_s_r,double,numeric,,,%9.0g,,,TRUE,Retained
+t1val1_s_r,double,numeric,,,%9.0g,,,TRUE,Retained
+t2val1_s_r,double,numeric,,,%9.0g,,,TRUE,Retained
+t1val2_s_r,double,numeric,,,%9.0g,,,TRUE,Retained
+t2val2_s_r,double,numeric,,,%9.0g,,,TRUE,Retained
+t1val3_s_r,double,numeric,,,%9.0g,,,TRUE,Retained
+t2val3_s_r,double,numeric,,,%9.0g,,,TRUE,Retained
+t1amerint_s,double,numeric,,,%9.0g,,,TRUE,Retained
+t2amerint_s,double,numeric,,,%9.0g,,,TRUE,Retained
+t1amerint_s_r,double,numeric,,,%9.0g,,,TRUE,Retained
+t2amerint_s_r,double,numeric,,,%9.0g,,,TRUE,Retained
+t1nationalism,double,numeric,,,%9.0g,,,TRUE,Retained
+t2nationalism,double,numeric,,,%9.0g,,,TRUE,Retained
+amer_merge,double,numeric,,,%8.0g,,,TRUE,Retained
+ide10pt,double,numeric,,,%9.0g,,,TRUE,Retained
+educat,double,numeric,,,%9.0g,,,TRUE,Retained
+married,double,numeric,,,%9.0g,,,TRUE,Retained
+child,double,numeric,,,%9.0g,,,TRUE,Retained
+minority,double,numeric,,,%9.0g,,,TRUE,Retained
+forparent,double,numeric,,,%9.0g,,,TRUE,Retained
+employed,double,numeric,,,%9.0g,,,TRUE,Retained
+vet,double,numeric,,,%9.0g,,,TRUE,Retained
+church,double,numeric,,,%9.0g,,,TRUE,Retained
+female,double,numeric,,,%9.0g,,,TRUE,Retained
+hhincome,double,numeric,,,%9.0g,,,TRUE,Retained
+absDIF_envir,double,numeric,,,%9.0g,,,TRUE,Retained
+absDIF_ussec,double,numeric,,,%9.0g,,,TRUE,Retained
+absDIF_humrht,double,numeric,,,%9.0g,,,TRUE,Retained
+absDIF_multi,double,numeric,,,%9.0g,,,TRUE,Retained
+absDIF_globalt,double,numeric,,,%9.0g,,,TRUE,Retained
+absDIF_inter,double,numeric,,,%9.0g,,,TRUE,Retained
+absDIF_foraid,double,numeric,,,%9.0g,,,TRUE,Retained
+absDIF_demo,double,numeric,,,%9.0g,,,TRUE,Retained
+absDIF_trade,double,numeric,,,%9.0g,,,TRUE,Retained
+exp_cond1,double,numeric,,,%9.0g,,,TRUE,Retained
+filter,double,numeric,,,%9.0g,,,TRUE,Retained
+pid,double,numeric,,,%9.0g,,,TRUE,Retained
+dem,double,numeric,,,%9.0g,,,TRUE,Retained
+gender,double,numeric,,Gender,%9.0g,,,TRUE,Retained
+racewh,double,numeric,,"1=white, 0=otherwise",%9.0g,,,TRUE,Retained
+inc70plus,double,numeric,,"1=70k plus, 0=otherwise",%9.0g,,,TRUE,Retained
+rep,double,numeric,,,%9.0g,,,TRUE,Retained
+ind,double,numeric,,,%9.0g,,,TRUE,Retained
+t1inter2,double,numeric,,,%9.0g,,,TRUE,Retained
+t2inter2,double,numeric,,,%9.0g,,,TRUE,Retained
+educollege1,double,numeric,,,%9.0g,,,TRUE,Retained
+t1polint,double,numeric,,"T1 Political Interest, very interested=1",%9.0g,,,TRUE,Retained
+t1polconv,double,numeric,,T1 Political Conversations,%9.0g,,,TRUE,Retained
+t1tvdays,double,numeric,,T1 4 or more days watching news on TV=1,%9.0g,,,TRUE,Retained
+t1sacrifice,double,numeric,,,%9.0g,,,TRUE,Retained
+t2sacrifice,double,numeric,,,%9.0g,,,TRUE,Retained
+t1owninterest,double,numeric,,,%9.0g,,,TRUE,Retained
+t2owninterest,double,numeric,,,%9.0g,,,TRUE,Retained
+t1sacworld,double,numeric,,,%9.0g,,,TRUE,Retained
+t2sacworld,double,numeric,,,%9.0g,,,TRUE,Retained
+t1fpworth,double,numeric,,,%9.0g,,,TRUE,Retained
+t2fpworth,double,numeric,,,%9.0g,,,TRUE,Retained
+t1pairoth,double,numeric,,,%9.0g,,,TRUE,Retained
+t2pairoth,double,numeric,,,%9.0g,,,TRUE,Retained
+t1disfacts,double,numeric,,,%9.0g,,,TRUE,Retained
+t2disfacts,double,numeric,,,%9.0g,,,TRUE,Retained
+t1discb,double,numeric,,,%9.0g,,,TRUE,Retained
+t2discb,double,numeric,,,%9.0g,,,TRUE,Retained
+t1disthought,double,numeric,,,%9.0g,,,TRUE,Retained
+t2disthought,double,numeric,,,%9.0g,,,TRUE,Retained
+t1disownint,double,numeric,,,%9.0g,,,TRUE,Retained
+t2disownint,double,numeric,,,%9.0g,,,TRUE,Retained
+t1dispat,double,numeric,,,%9.0g,,,TRUE,Retained
+t2dispat,double,numeric,,,%9.0g,,,TRUE,Retained
+t2disindex,double,numeric,,,%9.0g,,,TRUE,Retained
+t1disindex,double,numeric,,,%9.0g,,,TRUE,Retained
+t2val5,double,numeric,,,%9.0g,,,TRUE,Retained
+t2val4,double,numeric,,,%9.0g,,,TRUE,Retained
+t1val5,double,numeric,,,%9.0g,,,TRUE,Retained
+t1val4,double,numeric,,,%9.0g,,,TRUE,Retained
+highknow,double,numeric,,,%9.0g,,,TRUE,Retained
+chenvir,double,numeric,,,%9.0g,,,TRUE,Retained
+chussec,double,numeric,,,%9.0g,,,TRUE,Retained
+chforaid,double,numeric,,,%9.0g,,,TRUE,Retained
+chglobal,double,numeric,,,%9.0g,,,TRUE,Retained
+chhumrh,double,numeric,,,%9.0g,,,TRUE,Retained
+chinter,double,numeric,,,%9.0g,,,TRUE,Retained
+chmulti,double,numeric,,,%9.0g,,,TRUE,Retained
+chdemo,double,numeric,,,%9.0g,,,TRUE,Retained
+chtrade,double,numeric,,,%9.0g,,,TRUE,Retained
+dXk,double,numeric,,,%9.0g,,,TRUE,Retained
+rXk,double,numeric,,,%9.0g,,,TRUE,Retained
+usdad,double,numeric,,,%9.0g,,,TRUE,Retained
+usmom,double,numeric,,,%9.0g,,,TRUE,Retained
+catholic,double,numeric,,,%9.0g,,,TRUE,Retained
+ageXk,double,numeric,,,%9.0g,,,TRUE,Retained
+genderXk,double,numeric,,,%9.0g,,,TRUE,Retained
+raceXk,double,numeric,,,%9.0g,,,TRUE,Retained
+incXk,double,numeric,,,%9.0g,,,TRUE,Retained
+marriedXk,double,numeric,,,%9.0g,,,TRUE,Retained
+childXk,double,numeric,,,%9.0g,,,TRUE,Retained
+employedXk,double,numeric,,,%9.0g,,,TRUE,Retained
+usdadXk,double,numeric,,,%9.0g,,,TRUE,Retained
+usmomXk,double,numeric,,,%9.0g,,,TRUE,Retained
+t1val_2,double,numeric,,,%9.0g,,,TRUE,Retained
+t1val_3,double,numeric,,,%9.0g,,,TRUE,Retained
+t1val_1,double,numeric,,,%9.0g,,,TRUE,Retained
+t1val_4,double,numeric,,,%9.0g,,,TRUE,Retained
+t2val_1,double,numeric,,,%9.0g,,,TRUE,Retained
+t2val_2,double,numeric,,,%9.0g,,,TRUE,Retained
+t2val_3,double,numeric,,,%9.0g,,,TRUE,Retained
+t2val_4,double,numeric,,,%9.0g,,,TRUE,Retained
+protestant,double,numeric,,,%9.0g,,,TRUE,Retained
+otherreg,double,numeric,,,%9.0g,,,TRUE,Retained
+proXk,double,numeric,,,%9.0g,,,TRUE,Retained
+catXk,double,numeric,,,%9.0g,,,TRUE,Retained
+t1amer_1,double,numeric,,,%9.0g,,,TRUE,Retained
+t1amer_2,double,numeric,,,%9.0g,,,TRUE,Retained
+t2amer_1,double,numeric,,,%9.0g,,,TRUE,Retained
+t2amer_2,double,numeric,,,%9.0g,,,TRUE,Retained
+t1ezimp,double,numeric,,,%9.0g,,,TRUE,Retained
+t1ezexp,double,numeric,,,%9.0g,,,TRUE,Retained
+t1trbar,double,numeric,,,%9.0g,,,TRUE,Retained
+t2ezimp,double,numeric,,,%9.0g,,,TRUE,Retained
+t2ezexp,double,numeric,,,%9.0g,,,TRUE,Retained
+t2trbar,double,numeric,,,%9.0g,,,TRUE,Retained
+t1hngr,double,numeric,,,%9.0g,,,TRUE,Retained
+t2hngr,double,numeric,,,%9.0g,,,TRUE,Retained
+t1int3,double,numeric,,,%9.0g,,,TRUE,Retained
+t2int3,double,numeric,,,%9.0g,,,TRUE,Retained
+t1wrm4b,double,numeric,,,%9.0g,,,TRUE,Retained
+t2wrm4b,double,numeric,,,%9.0g,,,TRUE,Retained
+t1wrm1a,double,numeric,,,%9.0g,,,TRUE,Retained
+t2wrm1a,double,numeric,,,%9.0g,,,TRUE,Retained
+t1wrm1b,double,numeric,,,%9.0g,,,TRUE,Retained
+t2wrm1b,double,numeric,,,%9.0g,,,TRUE,Retained
+t1val_5,double,numeric,,,%9.0g,,,TRUE,Retained
+t2val_5,double,numeric,,,%9.0g,,,TRUE,Retained
+t1altru,double,numeric,, t1 altruism index t1val_1 t1val_3,%9.0g,,,TRUE,Retained
+t2altru,double,numeric,, t2 altruism index t2val_1 t2val_3,%9.0g,,,TRUE,Retained
+t1amerID,double,numeric,, t1 altruism index t1val_2 t1val_5,%9.0g,,,TRUE,Retained
+t2amerID,double,numeric,, t2 altruism index t2val_2 t2val_5,%9.0g,,,TRUE,Retained
+t1beamer,double,numeric,,t1 being american index t1amer_1 t1amer_2,%9.0g,,,TRUE,Retained
+t2beamer,double,numeric,,t2 being american index t2amer_1 t2amer_2,%9.0g,,,TRUE,Retained
+t1congw,double,numeric,,t2 concerns of global warming q11 q12,%9.0g,,,TRUE,Retained
+t2congw,double,numeric,,,%9.0g,,,TRUE,Retained
+t1relattend,double,numeric,,religious attendance,%9.0g,,,TRUE,Retained
+inter2_ch,double,numeric,,,%9.0g,,,TRUE,Retained
+trade_ch,double,numeric,,,%9.0g,,,TRUE,Retained
+mindex_ch,double,numeric,,,%9.0g,,,TRUE,Retained
+demo_ch,double,numeric,,,%9.0g,,,TRUE,Retained
+t1global_dich,double,numeric,,,%9.0g,,,TRUE,Retained
+t1usseca_dich,double,numeric,,,%9.0g,,,TRUE,Retained
+t1foraid_dich,double,numeric,,,%9.0g,,,TRUE,Retained
+t1humrt_dich,double,numeric,,,%9.0g,,,TRUE,Retained
+t1inter_dich,double,numeric,,,%9.0g,,,TRUE,Retained
+t1multi_dich,double,numeric,,,%9.0g,,,TRUE,Retained
+t1envir_dich,double,numeric,,,%9.0g,,,TRUE,Retained
+t1demo_dich,double,numeric,,,%9.0g,,,TRUE,Retained
+_Ilive_2,double,numeric,,live==2,%8.0g,,,TRUE,Retained
+_Ilive_3,double,numeric,,live==3,%8.0g,,,TRUE,Retained
+_Ilive_4,double,numeric,,live==4,%8.0g,,,TRUE,Retained
+city,double,numeric,,,%9.0g,,,TRUE,Retained
+rural,double,numeric,,,%9.0g,,,TRUE,Retained

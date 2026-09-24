@@ -11,12 +11,21 @@ validate_respondent_metadata()
 contracts <- read_metadata("respondent_sources")
 reviewed <- contracts[contracts$status == "reviewed-source", ]
 manifest <- source_files()
-source_manifest <- manifest[manifest$source_id %in% reviewed$source_id, ]
-stopifnot(setequal(source_manifest$source_id, reviewed$source_id))
+components <- read_metadata("respondent_source_components")
+source_ids <- union(
+  reviewed$source_id,
+  components$source_id[components$poll_id %in% reviewed$poll_id]
+)
+source_manifest <- manifest[manifest$source_id %in% source_ids, ]
+stopifnot(setequal(source_manifest$source_id, source_ids))
 dictionary_paths <- paste0("data/", reviewed$poll_id, "/variables.csv")
 dictionaries <- manifest[manifest$path %in% dictionary_paths, ]
 stopifnot(setequal(dictionaries$path, dictionary_paths))
-verify_source_files(dplyr::bind_rows(source_manifest, dictionaries))
+source_directories <- paste0("data/", reviewed$poll_id, "/")
+required <- vapply(manifest$path, function(path) {
+  any(startsWith(path, source_directories))
+}, logical(1))
+verify_source_files(manifest[required, ])
 polls <- purrr::map(seq_len(nrow(reviewed)), function(i) {
   build_poll_respondents(reviewed[i, ])
 })

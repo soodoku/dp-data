@@ -2,7 +2,7 @@
   "name": "deliberative-poll-data",
   "title": "Deliberative Poll data",
   "description": "Source metadata and contracts for Deliberative Poll research data.",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "resources": [
     {
       "name": "oos_sources",
@@ -80,6 +80,78 @@
           {
             "name": "blocker",
             "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "respondent_source_components",
+      "path": "metadata/respondent_source_components.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "source_id",
+            "type": "string"
+          },
+          {
+            "name": "primary_key",
+            "type": "string"
+          },
+          {
+            "name": "component_key",
+            "type": "string"
+          },
+          {
+            "name": "column_prefix",
+            "type": "string"
+          },
+          {
+            "name": "cardinality",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "polardata_reviewed_covariances",
+      "path": "metadata/polardata_reviewed_covariances.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "pollgroup",
+            "type": "number"
+          },
+          {
+            "name": "attitudes_sha256",
+            "type": "string"
+          },
+          {
+            "name": "n",
+            "type": "number"
+          },
+          {
+            "name": "p",
+            "type": "number"
           }
         ]
       }

@@ -86,3 +86,9 @@ respondent_memberships,respondent_id,string,FALSE,TRUE,respondent id
 respondent_memberships,session_id,string,FALSE,TRUE,session id
 respondent_memberships,group_id,string,FALSE,TRUE,group id
 respondent_memberships,weight,float64,FALSE,FALSE,weight
+derived_measures,poll_id,string,FALSE,TRUE,Poll source identifier
+derived_measures,respondent_id,string,FALSE,TRUE,Unique source person; historical duplicate exports share this identity
+derived_measures,legacy_field,string,FALSE,TRUE,Historical derived field; group calculations may include respondent-specific leave-one-out adjustments
+derived_measures,definition_version,string,FALSE,TRUE,Historical computation version
+derived_measures,value_numeric,float64,TRUE,FALSE,Source-computed value; nonfinite historical results explicitly classified
+derived_measures,value_status,string,FALSE,FALSE,"finite, missing, positive-infinity or negative-infinity"

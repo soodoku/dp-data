@@ -47,22 +47,28 @@ Known measurement, sample, linkage, and provenance questions are collected in th
 choices from unresolved concerns and existing upstream differences; this review
 preserves current scores pending instrument-level verification.
 
-The first historical aggregate reconstruction is available with `make polardata`: it
-rebuilds 71 UK Health attitude, demographic, knowledge and group-summary fields
-for 230 respondents from survey answers, with person-level parity checks. See the [reconstruction contract](docs/knowledge-build.md#historical-aggregate-reconstruction).
-This partial output preserves historical recodes and does not replace downstream
-inputs.
+`make respondents` reconstructs all 848 historical respondent-field targets
+across 21 polls. It retains every reviewed source record, separates named
+samples from people, and records versioned recodes and their raw inputs.
+`make polardata` then computes group and poll summaries and exports the full
+6,084-row, 364-column historical schema under `output/polardata/`, together
+with the 129-row attitude-index catalog and a typed derived-measure table.
+The historical Primaries export contains two copies of each of 217 people;
+canonical respondent tables retain one record per person.
 
-The respondent stage is available with `make respondents`. It retains all
-reviewed source records for the historical poll scope, separates named samples
-from people, and builds versioned individual measures for UK Health, UK–EU,
-UK Monarchy, the 1997 UK election, UK Crime, CPL, WTU and SWEPCO. These eight
-polls cover 308 historical respondent-field targets; 13 polls still need source
-reconciliation or respondent recodes.
-`make compare-respondents` checks these measures against historical values;
-[group and poll summaries follow later](docs/architecture.md#respondent-reconstruction-before-aggregation).
-The [coverage report](audit/respondent_coverage.csv) lists unfinished poll recodes
-and source gaps. Existing downstream products remain unchanged.
+The build reads public poll sources, not frozen aggregates or the vault.
+`make compare-respondents` and `make compare-polardata` separately test against
+historical benchmarks. Documented numerical exceptions concern generalized
+variance in 24 groups; the comparison checks the exact source matrices and
+numerical diagnostics before accepting those differences. Export row numbers
+are regenerated. See the [parity report](audit/polardata_parity.csv),
+[covariance audit](audit/polardata_covariances.csv), and
+[poll issue register](docs/poll-issues.md) for details.
+
+Historical coding choices are preserved for later review. Existing knowledge
+and linkage products remain unchanged, and downstream repositories remain
+pinned to their existing inputs. The new reconstruction is a separate output
+that can be assessed before downstream adoption.
 
 ## Reproduce
 
@@ -73,7 +79,7 @@ make check
 
 `make check` validates the Frictionless Data Package, source checksums,
 metadata contracts, the survey-based build, historical linkage, item-level
-comparisons, respondent and partial aggregate reconstruction, tests, and linting.
+comparisons, respondent and full aggregate reconstruction, tests, and linting.
 The original CDD inventory in `audit/cdd_archive_files.csv` preserves every
 archive member's original path and hash. Its `retained_path` points to the
 surviving copy after deduplication, either under `data/` or in the local vault.

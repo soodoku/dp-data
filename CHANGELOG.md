@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.3.0
+
+- Reconstruct all 848 respondent-field targets across the 21 historical polls
+  from public poll-level sources, preserving historical recodes and sample stages.
+- Build the full 6,084-row, 364-column `polardata` schema and 129-row attitude
+  catalog without the vault or frozen aggregates. Export derived measures
+  separately with versioned definitions and explicit nonfinite-value status.
+- Retain unique people in canonical tables and the historical duplicate
+  Primaries rows in the wide export. Regenerate export row numbers.
+- Audit 288 generalized-variance differences in 24 groups using unchanged
+  source matrices and numerical diagnostics. Preserve historical formulas;
+  record coding, source-vintage and covariance concerns for later correction.
+- Preserve all existing knowledge, linkage and partial UK Health outputs.
+  Downstream input pins remain unchanged.
+
 ## 0.2.3
 
 - Centralize all 24 unchanged inputs and supporting documents for the

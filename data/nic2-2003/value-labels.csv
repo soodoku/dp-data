@@ -1,0 +1,2408 @@
+source_column,source_value,value_label
+fp1,1,a lot better
+fp1,2,somewhat better
+fp1,3,somewhat worse
+fp1,4,a lot worse
+fp1,5,neither direction
+fp1,8,don't know
+fp1,9,refused
+fp2a_a,98,don't know
+fp2a_a,99,refused
+fp2a_b,98,don't know
+fp2a_b,99,refused
+fp2a_c,98,don't know
+fp2a_c,99,refused
+fp2b_a,98,don't know
+fp2b_a,99,refused
+fp2b_b,98,don't know
+fp2b_b,99,refused
+fp2b_c,98,don't know
+fp2b_c,99,refused
+fp2b_d,98,don't know
+fp2b_d,99,refused
+fp2c_a,98,don't know
+fp2c_a,99,refused
+fp2c_b,98,don't know
+fp2c_b,99,refused
+fp2c_c,98,don't know
+fp2c_c,99,refused
+fp2c_d,98,don't know
+fp2c_d,99,refused
+fp3a_a,1,agree
+fp3a_a,2,disagree
+fp3a_a,3,fall in between
+fp3a_a,4,haven't thought much about this
+fp3a_a,8,don't know
+fp3a_a,9,refused
+fp3a_b,1,agree strongly
+fp3a_b,5,agree somewhat
+fp3a_b,8,don't know
+fp3a_b,9,refused
+fp3a_c,1,disagree strongly
+fp3a_c,5,disagree somewhat
+fp3a_c,8,don't know
+fp3a_c,9,refused
+fp3a_s,1,agree strongly
+fp3a_s,2,agree somewhat
+fp3a_s,3,fall in btwn
+fp3a_s,4,disagree somewhat
+fp3a_s,5,disagree strongly
+fp3a_s,6,haven't thought much about this
+fp3a_s,94,agree - dk
+fp3a_s,95,agree - refused
+fp3a_s,96,disagree - dk
+fp3a_s,97,disagree - ref
+fp3a_s,98,don't know
+fp3a_s,99,refused
+fp3b_a,1,agree
+fp3b_a,2,disagree
+fp3b_a,3,fall in between
+fp3b_a,4,haven't thought much about this
+fp3b_a,8,don't know
+fp3b_a,9,refused
+fp3b_b,1,agree strongly
+fp3b_b,5,agree somewhat
+fp3b_b,8,don't know
+fp3b_b,9,refused
+fp3b_c,1,disagree strongly
+fp3b_c,5,disagree somewhat
+fp3b_c,8,don't know
+fp3b_c,9,refused
+fp3b_s,1,agree strongly
+fp3b_s,2,agree somewhat
+fp3b_s,3,fall in between
+fp3b_s,4,disagree somewhat
+fp3b_s,5,disagree strongly
+fp3b_s,6,haven't thought much about this
+fp3b_s,94,agree - dk
+fp3b_s,95,agree - refused
+fp3b_s,96,disagree - dk
+fp3b_s,97,disagree - ref
+fp3b_s,98,don't know
+fp3b_s,99,refused
+fp3c_a,1,agree
+fp3c_a,2,disagree
+fp3c_a,3,fall in between
+fp3c_a,4,haven't thought much about this
+fp3c_a,8,don't know
+fp3c_a,9,refused
+fp3c_b,1,agree strongly
+fp3c_b,5,agree somewhat
+fp3c_b,8,don't know
+fp3c_b,9,refused
+fp3c_c,1,disagree strongly
+fp3c_c,5,disagree somewhat
+fp3c_c,8,don't know
+fp3c_c,9,refused
+fp3c_s,1,agree strongly
+fp3c_s,2,agree somewhat
+fp3c_s,3,fall in between
+fp3c_s,4,disagree somewhat
+fp3c_s,5,disagree strongly
+fp3c_s,6,haven't thought much about this
+fp3c_s,94,agree - dk
+fp3c_s,95,agree - refused
+fp3c_s,96,disagree - dk
+fp3c_s,97,disagree - ref
+fp3c_s,98,don't know
+fp3c_s,99,refused
+fp3d_a,1,agree
+fp3d_a,2,disagree
+fp3d_a,3,fall in between
+fp3d_a,4,haven't thought much about this
+fp3d_a,8,don't know
+fp3d_a,9,refused
+fp3d_b,1,agree strongly
+fp3d_b,5,agree somewhat
+fp3d_b,8,don't know
+fp3d_b,9,refused
+fp3d_c,1,disagree strongly
+fp3d_c,5,disagree somewhat
+fp3d_c,8,don't know
+fp3d_c,9,refused
+fp3d_s,1,agree strongly
+fp3d_s,2,agree somewhat
+fp3d_s,3,fall in between
+fp3d_s,4,disagree somewhat
+fp3d_s,5,disagree strongly
+fp3d_s,6,haven't thought much about this
+fp3d_s,94,agree - dk
+fp3d_s,95,agree - refused
+fp3d_s,96,disagree - dk
+fp3d_s,97,disagree - ref
+fp3d_s,98,don't know
+fp3d_s,99,refused
+fp4a_a,1,very important
+fp4a_a,2,somewhat important
+fp4a_a,3,not very important
+fp4a_a,4,not important at all
+fp4a_a,5,haven't thought much about this
+fp4a_a,8,don't know
+fp4a_a,9,refused
+fp4a_b,1,very important
+fp4a_b,2,somewhat important
+fp4a_b,3,not very important
+fp4a_b,4,not important at all
+fp4a_b,5,haven't thought much about this
+fp4a_b,8,don't know
+fp4a_b,9,refused
+fp4b_a,1,very important
+fp4b_a,2,somewhat important
+fp4b_a,3,not very important
+fp4b_a,4,not important at all
+fp4b_a,5,haven't thought much about this
+fp4b_a,8,don't know
+fp4b_a,9,refused
+fp4b_b,1,very important
+fp4b_b,2,somewhat important
+fp4b_b,3,not very important
+fp4b_b,4,not important at all
+fp4b_b,5,haven't thought much about this
+fp4b_b,8,don't know
+fp4b_b,9,refused
+wrm1_a,1,very serious
+wrm1_a,2,somewhat serious
+wrm1_a,3,not too serious
+wrm1_a,4,not serious at all
+wrm1_a,8,don't know
+wrm1_a,9,refused
+wrm1_b,1,human activities
+wrm1_b,2,natural changes
+wrm1_b,3,not occurring at all
+wrm1_b,4,haven't thought much about this
+wrm1_b,8,don't know
+wrm1_b,9,refused
+wrm2a_a,1,support
+wrm2a_a,2,oppose
+wrm2a_a,3,neither support nor oppose
+wrm2a_a,4,haven't thought much about this
+wrm2a_a,8,don't know
+wrm2a_a,9,refused
+wrm2a_b,1,support strongly
+wrm2a_b,5,support somewhat
+wrm2a_b,8,don't know
+wrm2a_b,9,refused
+wrm2a_c,1,oppose strongly
+wrm2a_c,5,oppose somewhat
+wrm2a_c,8,don't know
+wrm2a_c,9,refused
+wrm2a_s,1,support strongly
+wrm2a_s,2,support somewhat
+wrm2a_s,3,neither support nor oppose
+wrm2a_s,4,oppose somewhat
+wrm2a_s,5,oppose strongly
+wrm2a_s,6,haven't thought much about this
+wrm2a_s,94,support - don't know
+wrm2a_s,95,support - refused
+wrm2a_s,96,oppose - don't know
+wrm2a_s,97,oppose - refused
+wrm2a_s,98,don't know
+wrm2a_s,99,refused
+wrm2b_a,1,support
+wrm2b_a,2,oppose
+wrm2b_a,3,neither support nor oppose
+wrm2b_a,4,haven't thought much about this
+wrm2b_a,8,don't know
+wrm2b_a,9,refused
+wrm2b_b,1,support strongly
+wrm2b_b,5,support somewhat
+wrm2b_b,8,don't know
+wrm2b_b,9,refused
+wrm2b_c,1,oppose strongly
+wrm2b_c,5,oppose somewhat
+wrm2b_c,8,don't know
+wrm2b_c,9,refused
+wrm2b_s,1,support strongly
+wrm2b_s,2,support somewhat
+wrm2b_s,3,neither support nor oppose
+wrm2b_s,4,oppose somewhat
+wrm2b_s,5,oppose strongly
+wrm2b_s,6,haven't thought much about this
+wrm2b_s,94,support - don't know
+wrm2b_s,95,support - refused
+wrm2b_s,96,oppose - don't know
+wrm2b_s,97,oppose - refused
+wrm2b_s,98,don't know
+wrm2b_s,99,refused
+wrm3_a,98,don't know
+wrm3_a,99,refused
+wrm3_b,98,don't know
+wrm3_b,99,refused
+wrm3_c,98,don't know
+wrm3_c,99,refused
+wrm4a_a,1,agree
+wrm4a_a,2,disagree
+wrm4a_a,3,fall in between
+wrm4a_a,4,haven't thought much about this
+wrm4a_a,8,don't know
+wrm4a_a,9,refused
+wrm4a_b,1,agree strongly
+wrm4a_b,5,agree somewhat
+wrm4a_b,8,don't know
+wrm4a_b,9,refused
+wrm4a_c,1,disagree strongly
+wrm4a_c,5,disagree somewhat
+wrm4a_c,8,don't know
+wrm4a_c,9,refused
+wrm4a_s,1,agree strongly
+wrm4a_s,2,agree somewhat
+wrm4a_s,3,fall in between
+wrm4a_s,4,disagree somewhat
+wrm4a_s,5,disagree strongly
+wrm4a_s,6,haven't thought much about this
+wrm4a_s,94,agree - dk
+wrm4a_s,95,agree - refused
+wrm4a_s,96,disagree - dk
+wrm4a_s,97,disagree - ref
+wrm4a_s,98,don't know
+wrm4a_s,99,refused
+wrm4b_a,1,agree
+wrm4b_a,2,disagree
+wrm4b_a,3,fall in between
+wrm4b_a,4,haven't thought much about this
+wrm4b_a,8,don't know
+wrm4b_a,9,refused
+wrm4b_b,1,agree strongly
+wrm4b_b,5,agree somewhat
+wrm4b_b,8,don't know
+wrm4b_b,9,refused
+wrm4b_c,1,disagree strongly
+wrm4b_c,5,disagree somewhat
+wrm4b_c,8,don't know
+wrm4b_c,9,refused
+wrm4b_s,1,agree strongly
+wrm4b_s,2,agree somewhat
+wrm4b_s,3,fall in between
+wrm4b_s,4,disagree somewhat
+wrm4b_s,5,disagree strongly
+wrm4b_s,6,haven't thought much about this
+wrm4b_s,94,agree - dk
+wrm4b_s,95,agree - refused
+wrm4b_s,96,disagree - dk
+wrm4b_s,97,disagree - ref
+wrm4b_s,98,don't know
+wrm4b_s,99,refused
+wrm5,1,supports
+wrm5,3,opposes
+wrm5,5,haven't heard anything about this
+wrm5,8,don't know
+wrm5,9,refused
+hngr,1,very serious
+hngr,2,somewhat serious
+hngr,3,not too serious
+hngr,4,not at all
+hngr,8,don't know
+hngr,9,refused
+pair1_a,1,statement 1
+pair1_a,3,statement 2
+pair1_a,5,agree with both equally
+pair1_a,7,vol: agree with neither
+pair1_a,8,don't know
+pair1_a,9,refused
+pair1_b,1,strongly
+pair1_b,5,somewhat
+pair1_b,8,don't know
+pair1_b,9,refused
+pair2_a,1,statement 1
+pair2_a,3,statement 2
+pair2_a,5,agree with both equally
+pair2_a,7,vol: agree with neither
+pair2_a,8,don't know
+pair2_a,9,refused
+pair2_b,1,strongly
+pair2_b,5,somewhat
+pair2_b,8,don't know
+pair2_b,9,refused
+pair3_a,1,statement 1
+pair3_a,3,statement 2
+pair3_a,5,agree with both equally
+pair3_a,7,vol: agree with neither
+pair3_a,8,don't know
+pair3_a,9,refused
+pair3_b,1,strongly
+pair3_b,5,somewhat
+pair3_b,8,don't know
+pair3_b,9,refused
+pdem1_a,98,don't know
+pdem1_a,99,refused
+pdem1_b,98,don't know
+pdem1_b,99,refused
+pdem1_c,98,don't know
+pdem1_c,99,refused
+pdem2_a,98,don't know
+pdem2_a,99,refused
+pdem2_b,98,don't know
+pdem2_b,99,refused
+pdem2_c,98,don't know
+pdem2_c,99,refused
+aid1,1,increased
+aid1,3,reduced
+aid1,5,kept about the same
+aid1,8,don't know
+aid1,9,refused
+aid2a_a,98,don't know
+aid2a_a,99,refused
+aid2a_b,98,don't know
+aid2a_b,99,refused
+aid2a_c,98,don't know
+aid2a_c,99,refused
+aid2b_a,98,don't know
+aid2b_a,99,refused
+aid2b_b,98,don't know
+aid2b_b,99,refused
+aid3,1,increase
+aid3,2,decrease
+aid3,3,keep it the same
+aid3,4,haven't heard anything about this
+aid3,8,don't know
+aid3,9,refused
+mact1_a,1,support
+mact1_a,2,oppose
+mact1_a,3,neither support nor oppose
+mact1_a,8,don't know
+mact1_a,9,refused
+mact1_b,1,support strongly
+mact1_b,5,support somewhat
+mact1_b,8,don't know
+mact1_b,9,refused
+mact1_c,1,oppose strongly
+mact1_c,5,oppose somewhat
+mact1_c,8,don't know
+mact1_c,9,refused
+mact1_s,1,support strongly
+mact1_s,2,support somewhat
+mact1_s,3,neither support nor oppose
+mact1_s,4,oppose somewhat
+mact1_s,5,oppose strongly
+mact1_s,94,support - don't know
+mact1_s,95,support - refused
+mact1_s,96,oppose - don't know
+mact1_s,97,oppose - refused
+mact1_s,98,don't know
+mact1_s,99,refused
+mact2_a,1,support
+mact2_a,2,oppose
+mact2_a,3,neither support nor oppose
+mact2_a,8,don't know
+mact2_a,9,refused
+mact2_b,1,support strongly
+mact2_b,5,support somewhat
+mact2_b,8,don't know
+mact2_b,9,refused
+mact2_c,1,oppose strongly
+mact2_c,5,oppose somewhat
+mact2_c,8,don't know
+mact2_c,9,refused
+mact2_s,1,support strongly
+mact2_s,2,support somewhat
+mact2_s,3,neither support nor oppose
+mact2_s,4,oppose somewhat
+mact2_s,5,oppose strongly
+mact2_s,94,support - don't know
+mact2_s,95,support - refused
+mact2_s,96,oppose - don't know
+mact2_s,97,oppose - refused
+mact2_s,98,don't know
+mact2_s,99,refused
+mact3_a,1,support
+mact3_a,2,oppose
+mact3_a,3,neither support nor oppose
+mact3_a,8,don't know
+mact3_a,9,refused
+mact3_b,1,support strongly
+mact3_b,5,support somewhat
+mact3_b,8,don't know
+mact3_b,9,refused
+mact3_c,1,oppose strongly
+mact3_c,5,oppose somewhat
+mact3_c,8,don't know
+mact3_c,9,refused
+mact3_s,1,support strongly
+mact3_s,2,support somewhat
+mact3_s,3,neither support nor oppose
+mact3_s,4,oppose somewhat
+mact3_s,5,oppose strongly
+mact3_s,94,support - don't know
+mact3_s,95,support - refused
+mact3_s,96,oppose - don't know
+mact3_s,97,oppose - refused
+mact3_s,98,don't know
+mact3_s,99,refused
+mact4_a,1,support
+mact4_a,2,oppose
+mact4_a,3,neither support nor oppose
+mact4_a,8,don't know
+mact4_a,9,refused
+mact4_b,1,support strongly
+mact4_b,5,support somewhat
+mact4_b,8,don't know
+mact4_b,9,refused
+mact4_c,1,oppose strongly
+mact4_c,5,oppose somewhat
+mact4_c,8,don't know
+mact4_c,9,refused
+mact4_s,1,support strongly
+mact4_s,2,support somewhat
+mact4_s,3,neither support nor oppose
+mact4_s,4,oppose somewhat
+mact4_s,5,oppose strongly
+mact4_s,94,support - don't know
+mact4_s,95,support - refused
+mact4_s,96,oppose - don't know
+mact4_s,97,oppose - refused
+mact4_s,98,don't know
+mact4_s,99,refused
+mact5_a,1,support
+mact5_a,2,oppose
+mact5_a,3,neither support nor oppose
+mact5_a,8,don't know
+mact5_a,9,refused
+mact5_b,1,support strongly
+mact5_b,5,support somewhat
+mact5_b,8,don't know
+mact5_b,9,refused
+mact5_c,1,oppose strongly
+mact5_c,5,oppose somewhat
+mact5_c,8,don't know
+mact5_c,9,refused
+mact5_s,1,support strongly
+mact5_s,2,support somewhat
+mact5_s,3,neither support nor oppose
+mact5_s,4,oppose somewhat
+mact5_s,5,oppose strongly
+mact5_s,94,support - don't know
+mact5_s,95,support - refused
+mact5_s,96,oppose - don't know
+mact5_s,97,oppose - refused
+mact5_s,98,don't know
+mact5_s,99,refused
+mact6_a,1,support
+mact6_a,2,oppose
+mact6_a,3,neither support nor oppose
+mact6_a,8,don't know
+mact6_a,9,refused
+mact6_b,1,support strongly
+mact6_b,5,support somewhat
+mact6_b,8,don't know
+mact6_b,9,refused
+mact6_c,1,oppose strongly
+mact6_c,5,oppose somewhat
+mact6_c,8,don't know
+mact6_c,9,refused
+mact6_s,1,support strongly
+mact6_s,2,support somewhat
+mact6_s,3,neither support nor oppose
+mact6_s,4,oppose somewhat
+mact6_s,5,oppose strongly
+mact6_s,94,support - don't know
+mact6_s,95,support - refused
+mact6_s,96,oppose - don't know
+mact6_s,97,oppose - refused
+mact6_s,98,don't know
+mact6_s,99,refused
+trd1_a,1,work one by one
+trd1_a,2,through institutions
+trd1_a,3,leave as they are
+trd1_a,8,don't know
+trd1_a,9,refused
+trd1_b,1,work one by one
+trd1_b,2,through institutions
+trd1_b,3,leave as they are
+trd1_b,8,don't know
+trd1_b,9,refused
+trd2,1,repeal nafta
+trd2,3,leave nafta as is
+trd2,5,include more countries
+trd2,8,don't know
+trd2,9,refused
+trd3_a,1,loss of many jobs
+trd3_a,2,loss of some jobs
+trd3_a,3,loss of a few jobs
+trd3_a,4,loss of no jobs
+trd3_a,8,don't know
+trd3_a,9,refused
+trd3_b,1,create many jobs
+trd3_b,2,create some jobs
+trd3_b,3,create a few jobs
+trd3_b,4,create no jobs
+trd3_b,8,don't know
+trd3_b,9,refused
+trd4,1,higher trade barriers
+trd4,2,lower trade barriers
+trd4,3,about the same
+trd4,4,haven't heard anything about this
+trd4,8,don't know
+trd4,9,refused
+int1a_a,98,don't know
+int1a_a,99,refused
+int1a_b,98,don't know
+int1a_b,99,refused
+int1b_a,98,don't know
+int1b_a,99,refused
+int1b_b,98,don't know
+int1b_b,99,refused
+int1b_c,98,don't know
+int1b_c,99,refused
+int1b_d,98,don't know
+int1b_d,99,refused
+int2a,1,us by itself
+int2a,2,us with allies
+int2a,3,us & allies thru un
+int2a,4,un lead
+int2a,5,nobody should take the lead
+int2a,8,don't know
+int2a,9,refused
+int2b,1,us by itself
+int2b,2,us with allies
+int2b,3,us & allies thru un
+int2b,4,un lead
+int2b,5,nobody should take the lead
+int2b,8,don't know
+int2b,9,refused
+int3,1,very important
+int3,2,somewhat important
+int3,3,not too important
+int3,4,not at all
+int3,8,don't know
+int3,9,refused
+kno1_a,1,1 dollar
+kno1_a,2,5 dollars
+kno1_a,3,10 dollars
+kno1_a,4,20 dollars
+kno1_a,5,30+ dollars
+kno1_a,6,not much idea
+kno1_a,7,vol: other amount (specify)
+kno1_a,8,don't know
+kno1_a,9,refused
+kno1_b,1,1 dollar
+kno1_b,2,5 dollars
+kno1_b,3,10 dollars
+kno1_b,4,20 dollars
+kno1_b,5,30+ dollars
+kno1_b,6,not much idea
+kno1_b,7,vol: other amount (specify)
+kno1_b,8,don't know
+kno1_b,9,refused
+kno2_a,1,4 dollars
+kno2_a,2,8 dollars
+kno2_a,3,12 dollars
+kno2_a,4,24+ dollars
+kno2_a,5,not much idea
+kno2_a,7,vol: other amount (specify)
+kno2_a,8,don't know
+kno2_a,9,refused
+kno2_b,1,fewer than 5 out of 100
+kno2_b,2,about 10 of 100
+kno2_b,3,about 20 of 100
+kno2_b,4,30+ out of 100
+kno2_b,5,not much idea
+kno2_b,7,vol: other amount (specify)
+kno2_b,8,don't know
+kno2_b,9,refused
+kno3_a,1,true
+kno3_a,5,false
+kno3_a,8,don't know
+kno3_a,9,refused
+kno3_b,1,true
+kno3_b,5,false
+kno3_b,8,don't know
+kno3_b,9,refused
+prtyid_a,1,democrat
+prtyid_a,3,republican
+prtyid_a,5,independent
+prtyid_a,6,no preference
+prtyid_a,7,other (specify)
+prtyid_a,8,don't know
+prtyid_a,9,refused
+prtyid_b,1,strong
+prtyid_b,5,not very strong
+prtyid_b,8,don't know
+prtyid_b,9,refused
+prtyid_c,1,strong
+prtyid_c,5,not very strong
+prtyid_c,8,don't know
+prtyid_c,9,refused
+prtyid_d,1,democratic
+prtyid_d,5,republican
+prtyid_d,7,vol: neither
+prtyid_d,8,don't know
+prtyid_d,9,refused
+party,1,strong democrat
+party,2,not strng democrat
+party,3,not strng republican
+party,4,strong republican
+party,5,"indep, closer to democrat"
+party,6,"indep, closer to republican"
+party,7,"indep, closer to neither"
+party,8,"nopref, closer to democrat"
+party,9,"nopref, closer to republican"
+party,10,"nopref, closer to neither"
+party,11,"othr, closer to democrat"
+party,12,"othr, closer to republican"
+party,13,"othr, closer to neither"
+party,14,"demo, dk/ref"
+party,15,"rep, dk/ref"
+party,16,"indep, dk/ref"
+party,17,"nopref, dk/ref"
+party,18,"othr, dk/ref"
+party,98,don't know
+party,99,refused
+amer1_a,1,agree
+amer1_a,5,disagree
+amer1_a,8,don't know
+amer1_a,9,refused
+amer1_b,1,agree strongly
+amer1_b,5,agree somewhat
+amer1_b,8,don't know
+amer1_b,9,refused
+amer1_c,1,disagree strongly
+amer1_c,5,disagree somewhat
+amer1_c,8,don't know
+amer1_c,9,refused
+amer1_s,1,agree strongly
+amer1_s,2,agree somewhat
+amer1_s,3,disagree somewhat
+amer1_s,4,disagree strongly
+amer1_s,94,agree - dk
+amer1_s,95,agree - refused
+amer1_s,96,disagree - dk
+amer1_s,97,disagree - ref
+amer1_s,98,don't know
+amer1_s,99,refused
+amer2_a,1,agree
+amer2_a,5,disagree
+amer2_a,8,don't know
+amer2_a,9,refused
+amer2_b,1,agree strongly
+amer2_b,5,agree somewhat
+amer2_b,8,don't know
+amer2_b,9,refused
+amer2_c,1,disagree strongly
+amer2_c,5,disagree somewhat
+amer2_c,8,don't know
+amer2_c,9,refused
+amer2_s,1,agree strongly
+amer2_s,2,agree somewhat
+amer2_s,3,disagree somewhat
+amer2_s,4,disagree strongly
+amer2_s,94,agree - dk
+amer2_s,95,agree - refused
+amer2_s,96,disagree - dk
+amer2_s,97,disagree - ref
+amer2_s,98,don't know
+amer2_s,99,refused
+ideo_a,98,don't know
+ideo_a,99,refused
+ideo_b,98,don't know
+ideo_b,99,refused
+ideo_c,98,don't know
+ideo_c,99,refused
+news1_a,0,none
+news1_a,1,one day
+news1_a,2,two days
+news1_a,3,three days
+news1_a,4,four days
+news1_a,5,five days
+news1_a,6,six days
+news1_a,7,seven days
+news1_a,8,don't know
+news1_a,9,refused
+news1_b,1,a great deal
+news1_b,2,quite a bit
+news1_b,3,some
+news1_b,4,very little
+news1_b,5,none
+news1_b,8,don't know
+news1_b,9,refused
+news2_a,0,none
+news2_a,1,one day
+news2_a,2,two days
+news2_a,3,three days
+news2_a,4,four days
+news2_a,5,five days
+news2_a,6,six days
+news2_a,7,seven days
+news2_a,8,don't know
+news2_a,9,refused
+news2_b,1,a great deal
+news2_b,2,quite a bit
+news2_b,3,some
+news2_b,4,very little
+news2_b,5,none
+news2_b,8,don't know
+news2_b,9,refused
+pint_a,1,very interested
+pint_a,2,somewhat interested
+pint_a,3,not very interested
+pint_a,4,not at all interested
+pint_a,8,don't know
+pint_a,9,refused
+pint_b,1,very interested
+pint_b,2,somewhat interested
+pint_b,3,not very interested
+pint_b,4,not at all interested
+pint_b,8,don't know
+pint_b,9,refused
+pdsc,1,almost daily day
+pdsc,2,several times a week
+pdsc,3,at least once a week
+pdsc,4,at least once a month
+pdsc,5,a few times a year
+pdsc,6,almost never
+pdsc,8,don't know
+pdsc,9,refused
+val1_a,1,agree
+val1_a,3,disagree
+val1_a,5,fall in between
+val1_a,8,don't know
+val1_a,9,refused
+val1_b,1,agree strongly
+val1_b,5,agree somewhat
+val1_b,8,don't know
+val1_b,9,refused
+val1_c,1,disagree strongly
+val1_c,5,disagree somewhat
+val1_c,8,don't know
+val1_c,9,refused
+val1_s,1,agree strongly
+val1_s,2,agree somewhat
+val1_s,3,fall in between
+val1_s,4,disagree somewhat
+val1_s,5,disagree strongly
+val1_s,94,agree - dk
+val1_s,95,agree - refused
+val1_s,96,disagree - dk
+val1_s,97,disagree - ref
+val1_s,98,don't know
+val1_s,99,refused
+val2_a,1,agree
+val2_a,3,disagree
+val2_a,5,fall in between
+val2_a,8,don't know
+val2_a,9,refused
+val2_b,1,agree strongly
+val2_b,5,agree somewhat
+val2_b,8,don't know
+val2_b,9,refused
+val2_c,1,disagree strongly
+val2_c,5,disagree somewhat
+val2_c,8,don't know
+val2_c,9,refused
+val2_s,1,agree strongly
+val2_s,2,agree somewhat
+val2_s,3,fall in between
+val2_s,4,disagree somewhat
+val2_s,5,disagree strongly
+val2_s,94,agree - dk
+val2_s,95,agree - refused
+val2_s,96,disagree - dk
+val2_s,97,disagree - ref
+val2_s,98,don't know
+val2_s,99,refused
+val3_a,1,agree
+val3_a,3,disagree
+val3_a,5,fall in between
+val3_a,8,don't know
+val3_a,9,refused
+val3_b,1,agree strongly
+val3_b,5,agree somewhat
+val3_b,8,don't know
+val3_b,9,refused
+val3_c,1,disagree strongly
+val3_c,5,disagree somewhat
+val3_c,8,don't know
+val3_c,9,refused
+val3_s,1,agree strongly
+val3_s,2,agree somewhat
+val3_s,3,fall in between
+val3_s,4,disagree somewhat
+val3_s,5,disagree strongly
+val3_s,94,agree - don't know
+val3_s,95,agree - refused
+val3_s,96,disagree - dk
+val3_s,97,disagree - ref
+val3_s,98,don't know
+val3_s,99,refused
+val4_a,1,agree
+val4_a,3,disagree
+val4_a,5,fall in between
+val4_a,8,don't know
+val4_a,9,refused
+val4_b,1,agree strongly
+val4_b,5,agree somewhat
+val4_b,8,don't know
+val4_b,9,refused
+val4_c,1,disagree strongly
+val4_c,5,disagree somewhat
+val4_c,8,don't know
+val4_c,9,refused
+val4_s,1,agree strongly
+val4_s,2,agree somewhat
+val4_s,3,fall in between
+val4_s,4,disagree somewhat
+val4_s,5,disagree strongly
+val4_s,94,agree - dk
+val4_s,95,agree - refused
+val4_s,96,disagree - dk
+val4_s,97,disagree - ref
+val4_s,98,don't know
+val4_s,99,refused
+pair4_a,1,statement 1
+pair4_a,3,statement 2
+pair4_a,5,agree with both equally
+pair4_a,7,vol: agree with neither
+pair4_a,8,don't know
+pair4_a,9,refused
+pair4_b,1,strongly
+pair4_b,5,somewhat
+pair4_b,8,don't know
+pair4_b,9,refused
+dsagr1_a,1,agree strongly
+dsagr1_a,2,agree somewhat
+dsagr1_a,3,neither agree nor disagree
+dsagr1_a,4,disagree somewhat
+dsagr1_a,5,disagree strongly
+dsagr1_a,7,vol: no opinion
+dsagr1_a,8,don't know
+dsagr1_a,9,refused
+dsagr1_b,1,agree strongly
+dsagr1_b,2,agree somewhat
+dsagr1_b,3,neither agree nor disagree
+dsagr1_b,4,disagree somewhat
+dsagr1_b,5,disagree strongly
+dsagr1_b,7,vol: no opinion
+dsagr1_b,8,don't know
+dsagr1_b,9,refused
+dsagr2_a,1,agree strongly
+dsagr2_a,2,agree somewhat
+dsagr2_a,3,neither agree nor disagree
+dsagr2_a,4,disagree somewhat
+dsagr2_a,5,disagree strongly
+dsagr2_a,7,vol: no opinion
+dsagr2_a,8,don't know
+dsagr2_a,9,refused
+dsagr2_b,1,agree strongly
+dsagr2_b,2,agree somewhat
+dsagr2_b,3,neither agree nor disagree
+dsagr2_b,4,disagree somewhat
+dsagr2_b,5,disagree strongly
+dsagr2_b,7,vol: no opinion
+dsagr2_b,8,don't know
+dsagr2_b,9,refused
+dsagr2_c,1,agree strongly
+dsagr2_c,2,agree somewhat
+dsagr2_c,3,neither agree nor disagree
+dsagr2_c,4,disagree somewhat
+dsagr2_c,5,disagree strongly
+dsagr2_c,7,vol: no opinion
+dsagr2_c,8,don't know
+dsagr2_c,9,refused
+yearborn,9999,refused
+ppage,98,don't know
+ppage,99,refused
+educ_a,0,less than first grade/no formal schooling
+educ_a,12,cmp hs/ged
+educ_a,13,some college
+educ_a,14,some college
+educ_a,15,some college
+educ_a,16,undergraduate degree
+educ_a,17,"postgrad wk, grad degr"
+educ_a,98,don't know
+educ_a,99,refused
+educ_b,1,yes
+educ_b,5,no
+educ_b,8,don't know
+educ_b,9,refused
+mandc_a,1,married and living with spouse
+mandc_a,2,never married
+mandc_a,3,divorced
+mandc_a,4,separated
+mandc_a,5,widowed
+mandc_a,7,vol: partnered but not married
+mandc_a,8,don't know
+mandc_a,9,refused
+mandc_b,1,yes
+mandc_b,5,no
+mandc_b,8,don't know
+mandc_b,9,refused
+mandc_c,98,don't know
+mandc_c,99,refused
+hisp,1,"yes, mex-amer/chicano"
+hisp,2,"yes, puerto rican"
+hisp,3,"yes, cuban"
+hisp,4,"yes, other hispanic"
+hisp,5,no (none of the above)
+hisp,8,don't know
+hisp,9,refused
+race,1,white
+race,2,black
+race,3,american indian or alaskan native
+race,4,asian or pacific islander
+race,5,other (specify)
+race,6,vol: mixed race (specify)
+race,7,vol: self-identifies as hispanic/latino
+race,8,don't know
+race,9,refused
+pborn_a,1,"yes          (skip to ""empl"")"
+pborn_a,5,no
+pborn_a,8,"don't know   (skip to ""empl"")"
+pborn_a,9,"refused      (skip to ""empl"")"
+pborn_b,1,united states
+pborn_b,2,mexico
+pborn_b,3,el salvador
+pborn_b,4,guatemala
+pborn_b,5,taiwan
+pborn_b,6,china
+pborn_b,7,vietnam
+pborn_b,8,philippines
+pborn_b,9,india
+pborn_b,10,iran (persian)
+pborn_b,11,palestine
+pborn_b,97,other (specify)
+pborn_b,98,don't know
+pborn_b,99,refused
+pborn_c,1,united states
+pborn_c,2,mexico
+pborn_c,3,el salvador
+pborn_c,4,guatemala
+pborn_c,5,taiwan
+pborn_c,6,china
+pborn_c,7,vietnam
+pborn_c,8,philippines
+pborn_c,9,india
+pborn_c,10,iran (persian)
+pborn_c,11,palestine
+pborn_c,97,other (specify)
+pborn_c,98,don't know
+pborn_c,99,refused
+empl,1,working now
+empl,2,temp laid off
+empl,3,unemployed
+empl,4,retired
+empl,5,disabled
+empl,6,homemaker (not working)
+empl,7,student
+empl,8,other (specify)
+empl,97,vol: working student (part or full-time)
+empl,98,don't know
+empl,99,refused
+lastw,1,in the last 12 months
+lastw,2,more than 12 months ago but within last 2 yrs
+lastw,3,more than 2 years ago
+lastw,4,never worked at a regular job
+lastw,98,don't know
+lastw,99,refused
+etyp,1,self-employed
+etyp,2,private
+etyp,3,federal gov't
+etyp,4,state gov't
+etyp,5,local gov't
+etyp,6,family busns/farm
+etyp,8,don't know
+etyp,9,refused
+eocc,1,"profssnl, technical"
+eocc,2,"manager, admin"
+eocc,3,sales worker
+eocc,4,clerical worker
+eocc,5,skilled worker or craftsman
+eocc,6,machine operator
+eocc,7,laborer
+eocc,8,farmer or farm manager
+eocc,9,farm laborer
+eocc,10,service worker
+eocc,11,something else (specify)
+eocc,98,don't know
+eocc,99,refused
+milt_a,1,yes
+milt_a,5,no
+milt_a,8,don't know
+milt_a,9,refused
+milt_b,1,less than 6 months
+milt_b,2,6 months to a year
+milt_b,3,1 to 2 years
+milt_b,4,3 to 5 years
+milt_b,5,more than 5 years
+milt_b,7,vol: never
+milt_b,8,don't know
+milt_b,9,refused
+milt_c,1,less than 6 months
+milt_c,2,6 months to a year
+milt_c,3,1 to 2 years
+milt_c,4,3 to 5 years
+milt_c,5,more than 5 years
+milt_c,7,vol: never
+milt_c,8,don't know
+milt_c,9,refused
+abrd_a,1,yes
+abrd_a,5,no
+abrd_a,8,don't know
+abrd_a,9,refused
+abrd_b,1,yes
+abrd_b,5,no
+abrd_b,8,don't know
+abrd_b,9,refused
+rel1_a,1,yes
+rel1_a,5,no
+rel1_a,8,don't know
+rel1_a,9,refused
+rel1_b,1,yes
+rel1_b,5,no
+rel1_b,8,don't know
+rel1_b,9,refused
+rel1_c,1,every week
+rel1_c,2,almost every wk
+rel1_c,3,1-2 times a month
+rel1_c,4,a few times a year
+rel1_c,5,never
+rel1_c,8,don't know
+rel1_c,9,refused
+rel2,1,protestant
+rel2,2,roman catholic
+rel2,3,jewish
+rel2,4,muslim
+rel2,5,other (specify)
+rel2,8,don't know
+rel2,9,refused
+union_a,1,yes
+union_a,5,no
+union_a,8,don't know
+union_a,9,refused
+union_b,1,yes
+union_b,5,no
+union_b,8,don't know
+union_b,9,refused
+live,1,a large city
+live,2,a suburb near a large city
+live,3,a small city or town
+live,4,a rural area
+live,8,don't know
+live,9,refused
+sex,1,male
+sex,5,female
+sex,8,don't know
+sex,9,refused
+isum,1,less than 10k
+isum,2,exactly 10k
+isum,3,10-20k
+isum,4,exactly 20k
+isum,5,20-30k
+isum,6,exactly 30k
+isum,7,30-40k
+isum,8,exactly 40k
+isum,9,40-50k
+isum,10,exactly 50k
+isum,11,50-60k
+isum,12,exactly 60k
+isum,13,60-70k
+isum,14,exactly 70k
+isum,15,70-80k
+isum,16,exactly 80k
+isum,17,80-100k
+isum,18,exactly 100k
+isum,19,more than 100k
+isum,80,don't know
+isum,81,dk - lt 40k
+isum,82,dk - lt 20k
+isum,83,dk - 20-40k
+isum,84,dk - gt 40k
+isum,85,dk - 40-60k
+isum,86,dk - gt 60k
+isum,87,dk - 60-80k
+isum,88,dk - gt 80k
+isum,90,refused
+isum,91,rf - lt 40k
+isum,92,rf - lt 20k
+isum,93,rf - 20-40k
+isum,94,rf - gt 40k
+isum,95,rf - 40-60k
+isum,96,rf - gt 60k
+isum,97,rf - 60-80k
+isum,98,rf - gt 80k
+nphon_a,1,all phones have the same number
+nphon_a,5,more than one number
+nphon_a,8,don't know
+nphon_a,9,refused
+nphon_b,98,don't know
+nphon_b,99,refused
+nphon_s,1,one line
+nphon_s,2,two lines
+nphon_s,3,three lines
+nphon_s,4,four lines
+nphon_s,5,five lines
+nphon_s,6,six lines
+nphon_s,7,seven lines
+nphon_s,8,eight lines
+nphon_s,9,nine lines
+nphon_s,10,ten lines
+nphon_s,96,more than one - don't know
+nphon_s,97,more than one - refused
+nphon_s,98,don't know
+nphon_s,99,refused
+regn,1,northeast
+regn,2,north central
+regn,3,south
+regn,4,west
+dvsn,1,new england
+dvsn,2,middle atlantic
+dvsn,3,east north central
+dvsn,4,west north central
+dvsn,5,south atlantic
+dvsn,6,east south central
+dvsn,7,west south central
+dvsn,8,mountain
+dvsn,9,pacific
+dvsn,10,"alaska,hawaii"
+prmg,1,privacy manager
+prmg,2,answering machine
+zdnc,0,no
+zdnc,1,yes
+fips2,1,al
+fips2,4,az
+fips2,5,ar
+fips2,6,ca
+fips2,8,co
+fips2,9,ct
+fips2,10,de
+fips2,11,dc
+fips2,12,fl
+fips2,13,ga
+fips2,14,id
+fips2,16,id
+fips2,17,il
+fips2,18,in
+fips2,19,ia
+fips2,20,ks
+fips2,21,ky
+fips2,22,la
+fips2,23,me
+fips2,24,md
+fips2,25,ma
+fips2,26,mi
+fips2,27,mn
+fips2,28,ms
+fips2,29,mo
+fips2,30,mt
+fips2,31,ne
+fips2,32,nv
+fips2,33,nh
+fips2,34,nj
+fips2,35,nm
+fips2,36,ny
+fips2,37,nc
+fips2,38,nd
+fips2,39,oh
+fips2,40,ok
+fips2,41,or
+fips2,42,pa
+fips2,44,ri
+fips2,45,sc
+fips2,46,sd
+fips2,47,tn
+fips2,48,tx
+fips2,49,ut
+fips2,50,vt
+fips2,51,va
+fips2,53,wa
+fips2,54,wv
+fips2,55,wi
+fips2,56,wy
+msc,1,cntrl city msa
+msc,2,cnty of cc msa
+msc,3,suburban of msa
+msc,4,msa non-cc
+msc,5,cnty non-msa
+ctyp,1,participant
+ctyp,2,non-ticketed & ticketed dropout
+ctyp,3,not recruited
+ctyp,4,control group
+ctyp2,1,participant
+ctyp2,2,non-participant
+ctyp2,3,control
+nctyp,1,saq complete
+nctyp,2,non-ticketed or no saq
+nctyp,3,not recruited
+nctyp,4,control group
+nctyp2,1,saq completed
+nctyp2,2,no post data
+nctyp2,3,control
+casetype,1,"at nic, saqcmp"
+casetype,2,"at nic, nosaq"
+casetype,3,"tickt, noshow"
+casetype,4,"recru, notickt"
+casetype,5,not recruited
+casetype,9,pipa cntrl gp
+tdif,0,pacific
+tdif,1,mountain
+tdif,2,central
+tdif,3,eastern
+dow,1,monday
+dow,2,tuesday
+dow,3,wednesday
+dow,4,thursday
+dow,5,friday
+dow,6,saturday
+dow,7,sunday
+cnfm2_a,1,united states
+cnfm2_a,2,mexico
+cnfm2_a,3,el salvador
+cnfm2_a,4,guatemala
+cnfm2_a,5,taiwan
+cnfm2_a,6,china
+cnfm2_a,7,vietnam
+cnfm2_a,8,philippines
+cnfm2_a,9,india
+cnfm2_a,10,iran (persian)
+cnfm2_a,11,palestine
+cnfm2_a,97,other (specify)
+cnfm2_a,98,don't know
+cnfm2_a,99,refused
+cnfm2_b,1,yes
+cnfm2_b,5,no
+observ1,98,don't know
+observ1,99,refused
+observ2,98,don't know
+observ2,99,refused
+observ3,98,don't know
+observ3,99,refused
+okpa2,1,yes
+okpa2,5,no
+okpa2,7,unsure
+okhap,1,"yes, proceed"
+okhap,5,no
+okhap,7,undecided
+think_a,1,"yes, send"
+think_a,5,don't send
+think_a,8,will go
+think_a,9,decline inv
+age3,1,18-34
+age3,2,35-49
+age3,3,50
+age3,9,md
+sexage,11,m 18-34
+sexage,12,m 35-49
+sexage,13,m 50+
+sexage,51,f 18-34
+sexage,52,f 35-49
+sexage,53,f 50+
+educ4,1,elemtry
+educ4,2,some hs
+educ4,3,"hs, ged"
+educ4,4,college+
+educ4,9,md
+educ5,1,elemtry
+educ5,2,some hs
+educ5,3,"hs, ged"
+educ5,4,some coll
+educ5,5,coll grad+
+educ5,9,md
+race4,1,white
+race4,2,black
+race4,3,hispanic
+race4,4,other
+race4,9,md
+fbornus,1,yes
+fbornus,2,no
+mbornus,1,yes
+mbornus,2,no
+pborn_s,0,none
+pborn_s,1,dad only
+pborn_s,2,mom only
+pborn_s,3,both
+pborn_s,9,md
+qfp1,1,a lot better
+qfp1,2,somewhat better
+qfp1,3,somewhat worse
+qfp1,4,a lot worse
+qfp1,5,neither direction
+qfp1,8,don't know
+qfp1,9,refused
+qfp2a_a,98,don't know
+qfp2a_a,99,refused
+qfp2a_b,98,don't know
+qfp2a_b,99,refused
+qfp2a_c,98,don't know
+qfp2a_c,99,refused
+qfp2b_a,98,don't know
+qfp2b_a,99,refused
+qfp2b_b,98,don't know
+qfp2b_b,99,refused
+qfp2b_c,98,don't know
+qfp2b_c,99,refused
+qfp2b_d,98,don't know
+qfp2b_d,99,refused
+qfp2c_a,98,don't know
+qfp2c_a,99,refused
+qfp2c_b,98,don't know
+qfp2c_b,99,refused
+qfp2c_c,98,don't know
+qfp2c_c,99,refused
+qfp2c_d,98,don't know
+qfp2c_d,99,refused
+qfp3a_s,1,agree strongly
+qfp3a_s,2,agree somewhat
+qfp3a_s,3,fall in btwn
+qfp3a_s,4,disagree somewhat
+qfp3a_s,5,disagree strongly
+qfp3a_s,6,haven't thought much about this
+qfp3a_s,94,agree - dk
+qfp3a_s,95,agree - refused
+qfp3a_s,96,disagree - dk
+qfp3a_s,97,disagree - ref
+qfp3a_s,98,don't know
+qfp3a_s,99,refused
+qfp3b_s,1,agree strongly
+qfp3b_s,2,agree somewhat
+qfp3b_s,3,fall in between
+qfp3b_s,4,disagree somewhat
+qfp3b_s,5,disagree strongly
+qfp3b_s,6,haven't thought much about this
+qfp3b_s,94,agree - dk
+qfp3b_s,95,agree - refused
+qfp3b_s,96,disagree - dk
+qfp3b_s,97,disagree - ref
+qfp3b_s,98,don't know
+qfp3b_s,99,refused
+qfp3c_s,1,agree strongly
+qfp3c_s,2,agree somewhat
+qfp3c_s,3,fall in between
+qfp3c_s,4,disagree somewhat
+qfp3c_s,5,disagree strongly
+qfp3c_s,6,haven't thought much about this
+qfp3c_s,94,agree - dk
+qfp3c_s,95,agree - refused
+qfp3c_s,96,disagree - dk
+qfp3c_s,97,disagree - ref
+qfp3c_s,98,don't know
+qfp3c_s,99,refused
+qfp3d_s,1,agree strongly
+qfp3d_s,2,agree somewhat
+qfp3d_s,3,fall in between
+qfp3d_s,4,disagree somewhat
+qfp3d_s,5,disagree strongly
+qfp3d_s,6,haven't thought much about this
+qfp3d_s,94,agree - dk
+qfp3d_s,95,agree - refused
+qfp3d_s,96,disagree - dk
+qfp3d_s,97,disagree - ref
+qfp3d_s,98,don't know
+qfp3d_s,99,refused
+qfp4a_a,1,very important
+qfp4a_a,2,somewhat important
+qfp4a_a,3,not very important
+qfp4a_a,4,not important at all
+qfp4a_a,5,haven't thought much about this
+qfp4a_a,8,don't know
+qfp4a_a,9,refused
+qfp4a_b,1,very important
+qfp4a_b,2,somewhat important
+qfp4a_b,3,not very important
+qfp4a_b,4,not important at all
+qfp4a_b,5,haven't thought much about this
+qfp4a_b,8,don't know
+qfp4a_b,9,refused
+qfp4b_a,1,very important
+qfp4b_a,2,somewhat important
+qfp4b_a,3,not very important
+qfp4b_a,4,not important at all
+qfp4b_a,5,haven't thought much about this
+qfp4b_a,8,don't know
+qfp4b_a,9,refused
+qfp4b_b,1,very important
+qfp4b_b,2,somewhat important
+qfp4b_b,3,not very important
+qfp4b_b,4,not important at all
+qfp4b_b,5,haven't thought much about this
+qfp4b_b,8,don't know
+qfp4b_b,9,refused
+qwrm1_a,1,very serious
+qwrm1_a,2,somewhat serious
+qwrm1_a,3,not too serious
+qwrm1_a,4,not serious at all
+qwrm1_a,8,don't know
+qwrm1_a,9,refused
+qwrm1_b,1,human activities
+qwrm1_b,2,natural changes
+qwrm1_b,3,not occurring at all
+qwrm1_b,4,haven't thought much about this
+qwrm1_b,8,don't know
+qwrm1_b,9,refused
+qwrm2a_s,1,support strongly
+qwrm2a_s,2,support somewhat
+qwrm2a_s,3,neither support nor oppose
+qwrm2a_s,4,oppose somewhat
+qwrm2a_s,5,oppose strongly
+qwrm2a_s,6,haven't thought much about this
+qwrm2a_s,94,support - don't know
+qwrm2a_s,95,support - refused
+qwrm2a_s,96,oppose - don't know
+qwrm2a_s,97,oppose - refused
+qwrm2a_s,98,don't know
+qwrm2a_s,99,refused
+qwrm2b_s,1,support strongly
+qwrm2b_s,2,support somewhat
+qwrm2b_s,3,neither support nor oppose
+qwrm2b_s,4,oppose somewhat
+qwrm2b_s,5,oppose strongly
+qwrm2b_s,6,haven't thought much about this
+qwrm2b_s,94,support - don't know
+qwrm2b_s,95,support - refused
+qwrm2b_s,96,oppose - don't know
+qwrm2b_s,97,oppose - refused
+qwrm2b_s,98,don't know
+qwrm2b_s,99,refused
+qwrm3_a,98,don't know
+qwrm3_a,99,refused
+qwrm3_b,98,don't know
+qwrm3_b,99,refused
+qwrm3_c,98,don't know
+qwrm3_c,99,refused
+qwrm4a_s,1,agree strongly
+qwrm4a_s,2,agree somewhat
+qwrm4a_s,3,fall in between
+qwrm4a_s,4,disagree somewhat
+qwrm4a_s,5,disagree strongly
+qwrm4a_s,6,haven't thought much about this
+qwrm4a_s,94,agree - dk
+qwrm4a_s,95,agree - refused
+qwrm4a_s,96,disagree - dk
+qwrm4a_s,97,disagree - ref
+qwrm4a_s,98,don't know
+qwrm4a_s,99,refused
+qwrm4b_s,1,agree strongly
+qwrm4b_s,2,agree somewhat
+qwrm4b_s,3,fall in between
+qwrm4b_s,4,disagree somewhat
+qwrm4b_s,5,disagree strongly
+qwrm4b_s,6,haven't thought much about this
+qwrm4b_s,94,agree - dk
+qwrm4b_s,95,agree - refused
+qwrm4b_s,96,disagree - dk
+qwrm4b_s,97,disagree - ref
+qwrm4b_s,98,don't know
+qwrm4b_s,99,refused
+qwrm5,1,supports
+qwrm5,3,opposes
+qwrm5,5,haven't heard anything about this
+qwrm5,8,don't know
+qwrm5,9,refused
+qhngr,1,very serious
+qhngr,2,somewhat serious
+qhngr,3,not too serious
+qhngr,4,not at all
+qhngr,8,don't know
+qhngr,9,refused
+qpair1_a,1,statement 1
+qpair1_a,3,statement 2
+qpair1_a,5,agree with both equally
+qpair1_a,7,vol: agree with neither
+qpair1_a,8,don't know
+qpair1_a,9,refused
+qpair1_b,1,strongly
+qpair1_b,5,somewhat
+qpair1_b,8,don't know
+qpair1_b,9,refused
+qpair2_a,1,statement 1
+qpair2_a,3,statement 2
+qpair2_a,5,agree with both equally
+qpair2_a,7,vol: agree with neither
+qpair2_a,8,don't know
+qpair2_a,9,refused
+qpair2_b,1,strongly
+qpair2_b,5,somewhat
+qpair2_b,8,don't know
+qpair2_b,9,refused
+qpair3_a,1,statement 1
+qpair3_a,3,statement 2
+qpair3_a,5,agree with both equally
+qpair3_a,7,vol: agree with neither
+qpair3_a,8,don't know
+qpair3_a,9,refused
+qpair3_b,1,strongly
+qpair3_b,5,somewhat
+qpair3_b,8,don't know
+qpair3_b,9,refused
+qpdem1_a,98,don't know
+qpdem1_a,99,refused
+qpdem1_b,98,don't know
+qpdem1_b,99,refused
+qpdem1_c,98,don't know
+qpdem1_c,99,refused
+qpdem2_a,98,don't know
+qpdem2_a,99,refused
+qpdem2_b,98,don't know
+qpdem2_b,99,refused
+qpdem2_c,98,don't know
+qpdem2_c,99,refused
+qaid1,1,increased
+qaid1,3,reduced
+qaid1,5,kept about the same
+qaid1,8,don't know
+qaid1,9,refused
+qaid2a_a,98,don't know
+qaid2a_a,99,refused
+qaid2a_b,98,don't know
+qaid2a_b,99,refused
+qaid2a_c,98,don't know
+qaid2a_c,99,refused
+qaid2b_a,98,don't know
+qaid2b_a,99,refused
+qaid2b_b,98,don't know
+qaid2b_b,99,refused
+qaid3,1,increase
+qaid3,2,decrease
+qaid3,3,keep it the same
+qaid3,4,haven't heard anything about this
+qaid3,8,don't know
+qaid3,9,refused
+qmact1_s,1,support strongly
+qmact1_s,2,support somewhat
+qmact1_s,3,neither support nor oppose
+qmact1_s,4,oppose somewhat
+qmact1_s,5,oppose strongly
+qmact1_s,94,support - don't know
+qmact1_s,95,support - refused
+qmact1_s,96,oppose - don't know
+qmact1_s,97,oppose - refused
+qmact1_s,98,don't know
+qmact1_s,99,refused
+qmact2_s,1,support strongly
+qmact2_s,2,support somewhat
+qmact2_s,3,neither support nor oppose
+qmact2_s,4,oppose somewhat
+qmact2_s,5,oppose strongly
+qmact2_s,94,support - don't know
+qmact2_s,95,support - refused
+qmact2_s,96,oppose - don't know
+qmact2_s,97,oppose - refused
+qmact2_s,98,don't know
+qmact2_s,99,refused
+qmact3_s,1,support strongly
+qmact3_s,2,support somewhat
+qmact3_s,3,neither support nor oppose
+qmact3_s,4,oppose somewhat
+qmact3_s,5,oppose strongly
+qmact3_s,94,support - don't know
+qmact3_s,95,support - refused
+qmact3_s,96,oppose - don't know
+qmact3_s,97,oppose - refused
+qmact3_s,98,don't know
+qmact3_s,99,refused
+qmact4_s,1,support strongly
+qmact4_s,2,support somewhat
+qmact4_s,3,neither support nor oppose
+qmact4_s,4,oppose somewhat
+qmact4_s,5,oppose strongly
+qmact4_s,94,support - don't know
+qmact4_s,95,support - refused
+qmact4_s,96,oppose - don't know
+qmact4_s,97,oppose - refused
+qmact4_s,98,don't know
+qmact4_s,99,refused
+qmact5_s,1,support strongly
+qmact5_s,2,support somewhat
+qmact5_s,3,neither support nor oppose
+qmact5_s,4,oppose somewhat
+qmact5_s,5,oppose strongly
+qmact5_s,94,support - don't know
+qmact5_s,95,support - refused
+qmact5_s,96,oppose - don't know
+qmact5_s,97,oppose - refused
+qmact5_s,98,don't know
+qmact5_s,99,refused
+qmact6_s,1,support strongly
+qmact6_s,2,support somewhat
+qmact6_s,3,neither support nor oppose
+qmact6_s,4,oppose somewhat
+qmact6_s,5,oppose strongly
+qmact6_s,94,support - don't know
+qmact6_s,95,support - refused
+qmact6_s,96,oppose - don't know
+qmact6_s,97,oppose - refused
+qmact6_s,98,don't know
+qmact6_s,99,refused
+qtrd1_a,1,work one by one
+qtrd1_a,2,through institutions
+qtrd1_a,3,leave as they are
+qtrd1_a,8,don't know
+qtrd1_a,9,refused
+qtrd1_b,1,work one by one
+qtrd1_b,2,through institutions
+qtrd1_b,3,leave as they are
+qtrd1_b,8,don't know
+qtrd1_b,9,refused
+qtrd2,1,repeal nafta
+qtrd2,3,leave nafta as is
+qtrd2,5,include more countries
+qtrd2,8,don't know
+qtrd2,9,refused
+qtrd3_a,1,loss of many jobs
+qtrd3_a,2,loss of some jobs
+qtrd3_a,3,loss of a few jobs
+qtrd3_a,4,loss of no jobs
+qtrd3_a,8,don't know
+qtrd3_a,9,refused
+qtrd3_b,1,create many jobs
+qtrd3_b,2,create some jobs
+qtrd3_b,3,create a few jobs
+qtrd3_b,4,create no jobs
+qtrd3_b,8,don't know
+qtrd3_b,9,refused
+qtrd4,1,higher trade barriers
+qtrd4,2,lower trade barriers
+qtrd4,3,about the same
+qtrd4,4,haven't heard anything about this
+qtrd4,8,don't know
+qtrd4,9,refused
+qint1a_a,98,don't know
+qint1a_a,99,refused
+qint1a_b,98,don't know
+qint1a_b,99,refused
+qint1b_a,98,don't know
+qint1b_a,99,refused
+qint1b_b,98,don't know
+qint1b_b,99,refused
+qint1b_c,98,don't know
+qint1b_c,99,refused
+qint1b_d,98,don't know
+qint1b_d,99,refused
+qint2a,1,us by itself
+qint2a,2,us with allies
+qint2a,3,us & allies thru un
+qint2a,4,un lead
+qint2a,5,nobody should take the lead
+qint2a,8,don't know
+qint2a,9,refused
+qint2b,1,us by itself
+qint2b,2,us with allies
+qint2b,3,us & allies thru un
+qint2b,4,un lead
+qint2b,5,nobody should take the lead
+qint2b,8,don't know
+qint2b,9,refused
+qint3,1,very important
+qint3,2,somewhat important
+qint3,3,not too important
+qint3,4,not at all
+qint3,8,don't know
+qint3,9,refused
+qkno1_a,1,1 dollar
+qkno1_a,2,5 dollars
+qkno1_a,3,10 dollars
+qkno1_a,4,20 dollars
+qkno1_a,5,30+ dollars
+qkno1_a,6,not much idea
+qkno1_a,7,vol: other amount (specify)
+qkno1_a,8,don't know
+qkno1_a,9,refused
+qkno1_b,1,1 dollar
+qkno1_b,2,5 dollars
+qkno1_b,3,10 dollars
+qkno1_b,4,20 dollars
+qkno1_b,5,30+ dollars
+qkno1_b,6,not much idea
+qkno1_b,7,vol: other amount (specify)
+qkno1_b,8,don't know
+qkno1_b,9,refused
+qkno2_a,1,4 dollars
+qkno2_a,2,8 dollars
+qkno2_a,3,12 dollars
+qkno2_a,4,24+ dollars
+qkno2_a,5,not much idea
+qkno2_a,7,vol: other amount (specify)
+qkno2_a,8,don't know
+qkno2_a,9,refused
+qkno2_b,1,fewer than 5 out of 100
+qkno2_b,2,about 10 of 100
+qkno2_b,3,about 20 of 100
+qkno2_b,4,30+ out of 100
+qkno2_b,5,not much idea
+qkno2_b,7,vol: other amount (specify)
+qkno2_b,8,don't know
+qkno2_b,9,refused
+qkno3_a,1,true
+qkno3_a,5,false
+qkno3_a,8,don't know
+qkno3_a,9,refused
+qkno3_b,1,true
+qkno3_b,5,false
+qkno3_b,8,don't know
+qkno3_b,9,refused
+qparty,1,strong democrat
+qparty,2,not strng democrat
+qparty,3,not strng republican
+qparty,4,strong republican
+qparty,5,"indep, closer to democrat"
+qparty,6,"indep, closer to republican"
+qparty,7,"indep, closer to neither"
+qparty,8,"nopref, closer to democrat"
+qparty,9,"nopref, closer to republican"
+qparty,10,"nopref, closer to neither"
+qparty,11,"othr, closer to democrat"
+qparty,12,"othr, closer to republican"
+qparty,13,"othr, closer to neither"
+qparty,14,"demo, dk/ref"
+qparty,15,"rep, dk/ref"
+qparty,16,"indep, dk/ref"
+qparty,17,"nopref, dk/ref"
+qparty,18,"othr, dk/ref"
+qparty,98,don't know
+qparty,99,refused
+qamer1_s,1,agree strongly
+qamer1_s,2,agree somewhat
+qamer1_s,3,disagree somewhat
+qamer1_s,4,disagree strongly
+qamer1_s,94,agree - dk
+qamer1_s,95,agree - refused
+qamer1_s,96,disagree - dk
+qamer1_s,97,disagree - ref
+qamer1_s,98,don't know
+qamer1_s,99,refused
+qamer2_s,1,agree strongly
+qamer2_s,2,agree somewhat
+qamer2_s,3,disagree somewhat
+qamer2_s,4,disagree strongly
+qamer2_s,94,agree - dk
+qamer2_s,95,agree - refused
+qamer2_s,96,disagree - dk
+qamer2_s,97,disagree - ref
+qamer2_s,98,don't know
+qamer2_s,99,refused
+qideo_a,98,don't know
+qideo_a,99,refused
+qideo_b,98,don't know
+qideo_b,99,refused
+qideo_c,98,don't know
+qideo_c,99,refused
+qnews1_a,0,none
+qnews1_a,1,one day
+qnews1_a,2,two days
+qnews1_a,3,three days
+qnews1_a,4,four days
+qnews1_a,5,five days
+qnews1_a,6,six days
+qnews1_a,7,seven days
+qnews1_a,8,don't know
+qnews1_a,9,refused
+qnews1_b,1,a great deal
+qnews1_b,2,quite a bit
+qnews1_b,3,some
+qnews1_b,4,very little
+qnews1_b,5,none
+qnews1_b,8,don't know
+qnews1_b,9,refused
+qnews2_a,0,none
+qnews2_a,1,one day
+qnews2_a,2,two days
+qnews2_a,3,three days
+qnews2_a,4,four days
+qnews2_a,5,five days
+qnews2_a,6,six days
+qnews2_a,7,seven days
+qnews2_a,8,don't know
+qnews2_a,9,refused
+qnews2_b,1,a great deal
+qnews2_b,2,quite a bit
+qnews2_b,3,some
+qnews2_b,4,very little
+qnews2_b,5,none
+qnews2_b,8,don't know
+qnews2_b,9,refused
+qpint_a,1,very interested
+qpint_a,2,somewhat interested
+qpint_a,3,not very interested
+qpint_a,4,not at all interested
+qpint_a,8,don't know
+qpint_a,9,refused
+qpint_b,1,very interested
+qpint_b,2,somewhat interested
+qpint_b,3,not very interested
+qpint_b,4,not at all interested
+qpint_b,8,don't know
+qpint_b,9,refused
+qpdsc,1,almost daily day
+qpdsc,2,several times a week
+qpdsc,3,at least once a week
+qpdsc,4,at least once a month
+qpdsc,5,a few times a year
+qpdsc,6,almost never
+qpdsc,8,don't know
+qpdsc,9,refused
+qval1_s,1,agree strongly
+qval1_s,2,agree somewhat
+qval1_s,3,fall in between
+qval1_s,4,disagree somewhat
+qval1_s,5,disagree strongly
+qval1_s,94,agree - dk
+qval1_s,95,agree - refused
+qval1_s,96,disagree - dk
+qval1_s,97,disagree - ref
+qval1_s,98,don't know
+qval1_s,99,refused
+qval2_s,1,agree strongly
+qval2_s,2,agree somewhat
+qval2_s,3,fall in between
+qval2_s,4,disagree somewhat
+qval2_s,5,disagree strongly
+qval2_s,94,agree - dk
+qval2_s,95,agree - refused
+qval2_s,96,disagree - dk
+qval2_s,97,disagree - ref
+qval2_s,98,don't know
+qval2_s,99,refused
+qval3_s,1,agree strongly
+qval3_s,2,agree somewhat
+qval3_s,3,fall in between
+qval3_s,4,disagree somewhat
+qval3_s,5,disagree strongly
+qval3_s,94,agree - don't know
+qval3_s,95,agree - refused
+qval3_s,96,disagree - dk
+qval3_s,97,disagree - ref
+qval3_s,98,don't know
+qval3_s,99,refused
+qval4_s,1,agree strongly
+qval4_s,2,agree somewhat
+qval4_s,3,fall in between
+qval4_s,4,disagree somewhat
+qval4_s,5,disagree strongly
+qval4_s,94,agree - dk
+qval4_s,95,agree - refused
+qval4_s,96,disagree - dk
+qval4_s,97,disagree - ref
+qval4_s,98,don't know
+qval4_s,99,refused
+qpair4_a,1,statement 1
+qpair4_a,3,statement 2
+qpair4_a,5,agree with both equally
+qpair4_a,7,vol: agree with neither
+qpair4_a,8,don't know
+qpair4_a,9,refused
+qpair4_b,1,strongly
+qpair4_b,5,somewhat
+qpair4_b,8,don't know
+qpair4_b,9,refused
+qdsagr1a,1,agree strongly
+qdsagr1a,2,agree somewhat
+qdsagr1a,3,neither agree nor disagree
+qdsagr1a,4,disagree somewhat
+qdsagr1a,5,disagree strongly
+qdsagr1a,7,vol: no opinion
+qdsagr1a,8,don't know
+qdsagr1a,9,refused
+qdsagr1b,1,agree strongly
+qdsagr1b,2,agree somewhat
+qdsagr1b,3,neither agree nor disagree
+qdsagr1b,4,disagree somewhat
+qdsagr1b,5,disagree strongly
+qdsagr1b,7,vol: no opinion
+qdsagr1b,8,don't know
+qdsagr1b,9,refused
+qdsagr2a,1,agree strongly
+qdsagr2a,2,agree somewhat
+qdsagr2a,3,neither agree nor disagree
+qdsagr2a,4,disagree somewhat
+qdsagr2a,5,disagree strongly
+qdsagr2a,7,vol: no opinion
+qdsagr2a,8,don't know
+qdsagr2a,9,refused
+qdsagr2b,1,agree strongly
+qdsagr2b,2,agree somewhat
+qdsagr2b,3,neither agree nor disagree
+qdsagr2b,4,disagree somewhat
+qdsagr2b,5,disagree strongly
+qdsagr2b,7,vol: no opinion
+qdsagr2b,8,don't know
+qdsagr2b,9,refused
+qdsagr2c,1,agree strongly
+qdsagr2c,2,agree somewhat
+qdsagr2c,3,neither agree nor disagree
+qdsagr2c,4,disagree somewhat
+qdsagr2c,5,disagree strongly
+qdsagr2c,7,vol: no opinion
+qdsagr2c,8,don't know
+qdsagr2c,9,refused
+qage,98,don't know
+qage,99,refused
+qeduc_a,0,less than first grade/no formal schooling
+qeduc_a,12,cmp hs/ged
+qeduc_a,13,some college
+qeduc_a,14,some college
+qeduc_a,15,some college
+qeduc_a,16,undergraduate degree
+qeduc_a,17,"postgrad wk, grad degr"
+qeduc_a,98,don't know
+qeduc_a,99,refused
+qeduc_b,1,yes
+qeduc_b,5,no
+qeduc_b,8,don't know
+qeduc_b,9,refused
+qmandc_a,1,married and living with spouse
+qmandc_a,2,never married
+qmandc_a,3,divorced
+qmandc_a,4,separated
+qmandc_a,5,widowed
+qmandc_a,7,vol: partnered but not married
+qmandc_a,8,don't know
+qmandc_a,9,refused
+qmandc_b,1,yes
+qmandc_b,5,no
+qmandc_b,8,don't know
+qmandc_b,9,refused
+qmandc_c,98,don't know
+qmandc_c,99,refused
+qhisp,1,"yes, mex-amer/chicano"
+qhisp,2,"yes, puerto rican"
+qhisp,3,"yes, cuban"
+qhisp,4,"yes, other hispanic"
+qhisp,5,no (none of the above)
+qhisp,8,don't know
+qhisp,9,refused
+qrace,1,white
+qrace,2,black
+qrace,3,american indian or alaskan native
+qrace,4,asian or pacific islander
+qrace,5,other (specify)
+qrace,6,vol: mixed race (specify)
+qrace,7,vol: self-identifies as hispanic/latino
+qrace,8,don't know
+qrace,9,refused
+qpborn_a,1,"yes          (skip to ""empl"")"
+qpborn_a,5,no
+qpborn_a,8,"don't know   (skip to ""empl"")"
+qpborn_a,9,"refused      (skip to ""empl"")"
+qpborn_b,1,united states
+qpborn_b,2,mexico
+qpborn_b,3,el salvador
+qpborn_b,4,guatemala
+qpborn_b,5,taiwan
+qpborn_b,6,china
+qpborn_b,7,vietnam
+qpborn_b,8,philippines
+qpborn_b,9,india
+qpborn_b,10,iran (persian)
+qpborn_b,11,palestine
+qpborn_b,97,other (specify)
+qpborn_b,98,don't know
+qpborn_b,99,refused
+qpborn_c,1,united states
+qpborn_c,2,mexico
+qpborn_c,3,el salvador
+qpborn_c,4,guatemala
+qpborn_c,5,taiwan
+qpborn_c,6,china
+qpborn_c,7,vietnam
+qpborn_c,8,philippines
+qpborn_c,9,india
+qpborn_c,10,iran (persian)
+qpborn_c,11,palestine
+qpborn_c,97,other (specify)
+qpborn_c,98,don't know
+qpborn_c,99,refused
+qempl,1,working now
+qempl,2,temp laid off
+qempl,3,unemployed
+qempl,4,retired
+qempl,5,disabled
+qempl,6,homemaker (not working)
+qempl,7,student
+qempl,8,other (specify)
+qempl,97,vol: working student (part or full-time)
+qempl,98,don't know
+qempl,99,refused
+qlastw,1,in the last 12 months
+qlastw,2,more than 12 months ago but within last 2 yrs
+qlastw,3,more than 2 years ago
+qlastw,4,never worked at a regular job
+qlastw,98,don't know
+qlastw,99,refused
+qetyp,1,self-employed
+qetyp,2,private
+qetyp,3,federal gov't
+qetyp,4,state gov't
+qetyp,5,local gov't
+qetyp,6,family busns/farm
+qetyp,8,don't know
+qetyp,9,refused
+qeocc,1,"profssnl, technical"
+qeocc,2,"manager, admin"
+qeocc,3,sales worker
+qeocc,4,clerical worker
+qeocc,5,skilled worker or craftsman
+qeocc,6,machine operator
+qeocc,7,laborer
+qeocc,8,farmer or farm manager
+qeocc,9,farm laborer
+qeocc,10,service worker
+qeocc,11,something else (specify)
+qeocc,98,don't know
+qeocc,99,refused
+qmilt_a,1,yes
+qmilt_a,5,no
+qmilt_a,8,don't know
+qmilt_a,9,refused
+qmilt_b,1,less than 6 months
+qmilt_b,2,6 months to a year
+qmilt_b,3,1 to 2 years
+qmilt_b,4,3 to 5 years
+qmilt_b,5,more than 5 years
+qmilt_b,7,vol: never
+qmilt_b,8,don't know
+qmilt_b,9,refused
+qmilt_c,1,less than 6 months
+qmilt_c,2,6 months to a year
+qmilt_c,3,1 to 2 years
+qmilt_c,4,3 to 5 years
+qmilt_c,5,more than 5 years
+qmilt_c,7,vol: never
+qmilt_c,8,don't know
+qmilt_c,9,refused
+qabrd_a,1,yes
+qabrd_a,5,no
+qabrd_a,8,don't know
+qabrd_a,9,refused
+qabrd_b,1,yes
+qabrd_b,5,no
+qabrd_b,8,don't know
+qabrd_b,9,refused
+qrel1_a,1,yes
+qrel1_a,5,no
+qrel1_a,8,don't know
+qrel1_a,9,refused
+qrel1_b,1,yes
+qrel1_b,5,no
+qrel1_b,8,don't know
+qrel1_b,9,refused
+qrel1_c,1,every week
+qrel1_c,2,almost every wk
+qrel1_c,3,1-2 times a month
+qrel1_c,4,a few times a year
+qrel1_c,5,never
+qrel1_c,8,don't know
+qrel1_c,9,refused
+qrel2,1,protestant
+qrel2,2,roman catholic
+qrel2,3,jewish
+qrel2,4,muslim
+qrel2,5,other (specify)
+qrel2,8,don't know
+qrel2,9,refused
+qunion_a,1,yes
+qunion_a,5,no
+qunion_a,8,don't know
+qunion_a,9,refused
+qunion_b,1,yes
+qunion_b,5,no
+qunion_b,8,don't know
+qunion_b,9,refused
+qlive,1,a large city
+qlive,2,a suburb near a large city
+qlive,3,a small city or town
+qlive,4,a rural area
+qlive,8,don't know
+qlive,9,refused
+qsex,1,male
+qsex,5,female
+qsex,8,don't know
+qsex,9,refused
+qisum,1,less than 10k
+qisum,2,exactly 10k
+qisum,3,10-20k
+qisum,4,exactly 20k
+qisum,5,20-30k
+qisum,6,exactly 30k
+qisum,7,30-40k
+qisum,8,exactly 40k
+qisum,9,40-50k
+qisum,10,exactly 50k
+qisum,11,50-60k
+qisum,12,exactly 60k
+qisum,13,60-70k
+qisum,14,exactly 70k
+qisum,15,70-80k
+qisum,16,exactly 80k
+qisum,17,80-100k
+qisum,18,exactly 100k
+qisum,19,more than 100k
+qisum,80,don't know
+qisum,81,dk - lt 40k
+qisum,82,dk - lt 20k
+qisum,83,dk - 20-40k
+qisum,84,dk - gt 40k
+qisum,85,dk - 40-60k
+qisum,86,dk - gt 60k
+qisum,87,dk - 60-80k
+qisum,88,dk - gt 80k
+qisum,90,refused
+qisum,91,rf - lt 40k
+qisum,92,rf - lt 20k
+qisum,93,rf - 20-40k
+qisum,94,rf - gt 40k
+qisum,95,rf - 40-60k
+qisum,96,rf - gt 60k
+qisum,97,rf - 60-80k
+qisum,98,rf - gt 80k
+qregn,1,northeast
+qregn,2,north central
+qregn,3,south
+qregn,4,west
+qdvsn,1,new england
+qdvsn,2,middle atlantic
+qdvsn,3,east north central
+qdvsn,4,west north central
+qdvsn,5,south atlantic
+qdvsn,6,east south central
+qdvsn,7,west south central
+qdvsn,8,mountain
+qdvsn,9,pacific
+qdvsn,10,"alaska,hawaii"
+qfips2,1,al
+qfips2,4,az
+qfips2,5,ar
+qfips2,6,ca
+qfips2,8,co
+qfips2,9,ct
+qfips2,10,de
+qfips2,11,dc
+qfips2,12,fl
+qfips2,13,ga
+qfips2,14,id
+qfips2,16,id
+qfips2,17,il
+qfips2,18,in
+qfips2,19,ia
+qfips2,20,ks
+qfips2,21,ky
+qfips2,22,la
+qfips2,23,me
+qfips2,24,md
+qfips2,25,ma
+qfips2,26,mi
+qfips2,27,mn
+qfips2,28,ms
+qfips2,29,mo
+qfips2,30,mt
+qfips2,31,ne
+qfips2,32,nv
+qfips2,33,nh
+qfips2,34,nj
+qfips2,35,nm
+qfips2,36,ny
+qfips2,37,nc
+qfips2,38,nd
+qfips2,39,oh
+qfips2,40,ok
+qfips2,41,or
+qfips2,42,pa
+qfips2,44,ri
+qfips2,45,sc
+qfips2,46,sd
+qfips2,47,tn
+qfips2,48,tx
+qfips2,49,ut
+qfips2,50,vt
+qfips2,51,va
+qfips2,53,wa
+qfips2,54,wv
+qfips2,55,wi
+qfips2,56,wy
+qmsc,1,cntrl city msa
+qmsc,2,cnty of cc msa
+qmsc,3,surbaban of msa
+qmsc,4,msa non-cc
+qmsc,5,cnty non-msa
+qcnfm2_a,1,united states
+qcnfm2_a,2,mexico
+qcnfm2_a,3,el salvador
+qcnfm2_a,4,guatemala
+qcnfm2_a,5,taiwan
+qcnfm2_a,6,china
+qcnfm2_a,7,vietnam
+qcnfm2_a,8,philippines
+qcnfm2_a,9,india
+qcnfm2_a,10,iran (persian)
+qcnfm2_a,11,palestine
+qcnfm2_a,97,other (specify)
+qcnfm2_a,98,don't know
+qcnfm2_a,99,refused
+qcnfm2_b,1,yes
+qcnfm2_b,5,no
+eval1a,99,missing
+eval1b,99,missing
+eval1c,99,missing
+eval1d,99,missing
+eval2a,1,agree strongly
+eval2a,2,agree somewhat
+eval2a,3,neither agree nor disagree
+eval2a,4,disagree somewhat
+eval2a,5,disagree strongly
+eval2b,1,agree strongly
+eval2b,2,agree somewhat
+eval2b,3,neither agree nor disagree
+eval2b,4,disagree somewhat
+eval2b,5,disagree strongly
+eval2c,1,agree strongly
+eval2c,2,agree somewhat
+eval2c,3,neither agree nor disagree
+eval2c,4,disagree somewhat
+eval2c,5,disagree strongly
+eval2d,1,agree strongly
+eval2d,2,agree somewhat
+eval2d,3,neither agree nor disagree
+eval2d,4,disagree somewhat
+eval2d,5,disagree strongly
+eval2e,1,agree strongly
+eval2e,2,agree somewhat
+eval2e,3,neither agree nor disagree
+eval2e,4,disagree somewhat
+eval2e,5,disagree strongly
+eval2f,1,agree strongly
+eval2f,2,agree somewhat
+eval2f,3,neither agree nor disagree
+eval2f,4,disagree somewhat
+eval2f,5,disagree strongly
+eval2g,1,agree strongly
+eval2g,2,agree somewhat
+eval2g,3,neither agree nor disagree
+eval2g,4,disagree somewhat
+eval2g,5,disagree strongly
+eval2h,1,agree strongly
+eval2h,2,agree somewhat
+eval2h,3,neither agree nor disagree
+eval2h,4,disagree somewhat
+eval2h,5,disagree strongly
+eval2i,1,agree strongly
+eval2i,2,agree somewhat
+eval2i,3,neither agree nor disagree
+eval2i,4,disagree somewhat
+eval2i,5,disagree strongly
+eval3,1,didn't read or just glanced at them
+eval3,2,read less than half of them
+eval3,3,read about half of them
+eval3,4,read more than half of them
+eval3,5,read all or nearly all of them
+eval4,1,not carefully at all
+eval4,2,somewhat carefully
+eval4,3,very carefully
+eval5,1,didn't read or just glanced at them
+eval5,2,read less than half of them
+eval5,3,read about half of them
+eval5,4,read more than half of them
+eval5,5,read all or nearly all of them
+eval6,1,not carefully at all
+eval6,2,somewhat carefully
+eval6,3,very carefully
+eval7a,1,much less than usual
+eval7a,2,less than ususal
+eval7a,3,about as much as usual
+eval7a,4,more than usual
+eval7a,5,much more than usual
+eval7b,1,much less than usual
+eval7b,2,less than ususal
+eval7b,3,about as much as usual
+eval7b,4,more than usual
+eval7b,5,much more than usual
+eval7c,1,much less than usual
+eval7c,2,less than ususal
+eval7c,3,about as much as usual
+eval7c,4,more than usual
+eval7c,5,much more than usual
+eval7d,1,much less than usual
+eval7d,2,less than ususal
+eval7d,3,about as much as usual
+eval7d,4,more than usual
+eval7d,5,much more than usual
+eval8,1,not really much more
+eval8,2,little bit more
+eval8,3,somewhat more
+eval8,4,a good deal more
+eval8,5,a lot more
+eval9,1,"yes, text given by respondent"
+eval9,2,"no, text not given by respondent"
+sq1a,99,missing
+sq1b,99,missing
+sq1c,99,missing
+sq2a,1,agree strongly
+sq2a,2,agree somewhat
+sq2a,3,neither agree nor disagree
+sq2a,4,disagree somewhat
+sq2a,5,disagree strongly
+sq2a,9,missing
+sq2b,1,agree strongly
+sq2b,2,agree somewhat
+sq2b,3,neither agree nor disagree
+sq2b,4,disagree somewhat
+sq2b,5,disagree strongly
+sq2b,9,missing
+sq2c,1,agree strongly
+sq2c,2,agree somewhat
+sq2c,3,neither agree nor disagree
+sq2c,4,disagree somewhat
+sq2c,5,disagree strongly
+sq2c,9,missing
+sq2d,1,agree strongly
+sq2d,2,agree somewhat
+sq2d,3,neither agree nor disagree
+sq2d,4,disagree somewhat
+sq2d,5,disagree strongly
+sq2d,9,missing
+sq3a,99,missing
+sq3b,99,missing
+sq3c,99,missing
+sq3d,99,missing
+sq3e,99,missing
+sq3f,99,missing
+sq4,1,help a lot
+sq4,2,help a little
+sq4,3,neither help nor hurt
+sq4,4,hurt a little
+sq4,5,hurt a lot
+sq4,9,missing
+sq5a,1,agree strongly
+sq5a,2,agree somewhat
+sq5a,3,neither agree nor disagree
+sq5a,4,disagree somewhat
+sq5a,5,disagree strongly
+sq5a,9,missing
+sq5b,1,agree strongly
+sq5b,2,agree somewhat
+sq5b,3,neither agree nor disagree
+sq5b,4,disagree somewhat
+sq5b,5,disagree strongly
+sq5b,9,missing
+qage3,1,18-34
+qage3,2,35-49
+qage3,3,50
+qage3,9,md
+qsexage,11,m 18-34
+qsexage,12,m 35-49
+qsexage,13,m 50+
+qsexage,51,f 18-34
+qsexage,52,f 35-49
+qsexage,53,f 50+
+qeduc4,1,elemtry
+qeduc4,2,some hs
+qeduc4,3,"hs, ged"
+qeduc4,4,college+
+qeduc4,9,md
+qeduc5,1,elemtry
+qeduc5,2,some hs
+qeduc5,3,"hs, ged"
+qeduc5,4,some coll
+qeduc5,5,coll grad+
+qeduc5,9,md
+qrace4,1,white
+qrace4,2,black
+qrace4,3,hispanic
+qrace4,4,other
+qrace4,9,md
+qfbornus,1,yes
+qfbornus,2,no
+qmbornus,1,yes
+qmbornus,2,no
+qpborn_s,0,none
+qpborn_s,1,dad only
+qpborn_s,2,mom only
+qpborn_s,3,both
+qpborn_s,9,md
+samp,1,src
+samp,2,pipa

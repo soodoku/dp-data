@@ -131,3 +131,27 @@ test_that("knowledge transformations preserve missing and zero cases", {
   changed$t1knowlevel <- mean(changed$t1know)
   expect_error(compare_health_polardata(changed, health_reference()), "differs")
 })
+
+test_that("polardata construction needs no benchmark or vault", {
+  isolated <- tempfile("polardata-source-only-")
+  fs::dir_create(isolated)
+  withr::defer(unlink(isolated, recursive = TRUE))
+  fs::file_copy(project_path("DESCRIPTION"), isolated)
+  fs::dir_copy(project_path("R"), file.path(isolated, "R"))
+  fs::dir_copy(project_path("metadata"), file.path(isolated, "metadata"))
+  fs::dir_copy(project_path("data"), file.path(isolated, "data"))
+  script <- project_path("scripts", "12_build_polardata.R")
+  expect_false(dir.exists(file.path(isolated, "evidence")))
+  expect_false(dir.exists(file.path(isolated, "vault")))
+  withr::with_dir(isolated, source(script, local = new.env()))
+  rebuilt <- arrow::read_parquet(file.path(isolated, "output", "polardata",
+                                           "uk-health-1998.parquet"))
+  expect_equal(rebuilt, build_health_polardata())
+  full <- arrow::read_parquet(file.path(
+    isolated, "output", "polardata", "polardata.parquet"
+  ))
+  expect_identical(dim(full), c(6084L, 364L))
+  expect_identical(full, arrow::read_parquet(project_path(
+    "output", "polardata", "polardata.parquet"
+  )))
+})

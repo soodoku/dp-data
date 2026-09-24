@@ -1,6 +1,6 @@
 pilot_tables <- function() {
   polls <- purrr::map(
-    read_metadata("survey_sources")$poll_id, build_poll_knowledge
+    knowledge_poll_ids(), build_poll_knowledge
   )
   names(polls[[1]]) |>
     rlang::set_names() |>

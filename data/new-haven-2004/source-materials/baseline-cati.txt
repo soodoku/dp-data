@@ -1,0 +1,1626 @@
+C: New Draft of New Haven Deliberative Poll Questionnaire
+C: January 17, 2002
+NA
+CATI ON
+NA
+MACRO NtroPrmp
+SHOW "IF YES, PRESS 1 TO CONTINUE             IF NO, CTRL/END AND RECORD DISPOSITION" 25 1 80 112 C
+ENDMACRO
+MACRO AnyPrmp
+SHOW "Please type ANY KEY to continue.  Press <ESC> to back up. " 25 1 80 112 C
+ENDMACRO
+NA
+Q:INTRO
+T:1
+Hello, my name is _____ The League of Women Voters has asked my company, The
+Guild Group, to help gather some information from residents of this area about
+their preferences and attitudes related to the future of the New Haven region.
+Can I have a few minutes of your time?
+NA
+I:
+NtroPrmp
+KEY
+NA
+Q:TOWN
+T:3
+Could you tell me what town you live in?
+NA
+1  Bethany                    9  New Haven
+2  Branford                  10  North Branford
+3  East Haven                11  North Haven
+4  Guilford                  12  Orange
+5  Hamden                    13  Wallingford
+6  Madison                   14  West Haven
+7  Meriden                   15  Woodbridge
+8  Milford                   16  Other
+NA
+I:
+NUM 1 16 2 0
+QAL END
+NA
+Q:READ1
+T:3
+As we go through the survey, I'll be asking you about your opinions concerning
+a number of issues.  If we come to something you haven't thought much about
+just say so and we will move on.
+NA
+As you think about the New Haven region, how important is each of the
+following to you on a scale of 0 to 10, where 0 stands for not at all
+important, 10 stands for as important as possible can be and 5 is
+exactly in the middle?
+I:
+AnyPrmp
+KEY
+NA
+Q:Q1A
+T:3
+#1a. How important is it to improve the accessibility of air travel?
+NA
+Not at all                                          Extremely  Don't
+important                                          important  Know
+0    1    2    3    4    5    6    7    8    9    10        11
+NA
+I:
+COLOR YELLOW ON BLUE 3 30 3 68
+NUM 0 11 2 0
+NA
+Q:Q1B
+T:3
+#1b. How important is it to promote economic growth?
+NA
+Not at all                                          Extremely  Don't
+important                                          important  Know
+0    1    2    3    4    5    6    7    8    9    10        11
+NA
+I:
+COLOR YELLOW ON BLUE 3 30 3 52
+NUM 0 11 2 0
+NA
+Q:Q1C
+T:3
+#1c. How important is it to reduce the gap between wealthier and poorer
+communities.
+NA
+Not at all                                          Extremely  Don't
+important                                          important  Know
+0    1    2    3    4    5    6    7    8    9    10        11
+NA
+I:
+COLOR YELLOW ON BLUE 3 30 3 72
+COLOR YELLOW ON BLUE 4 17 4 17
+NUM 0 11 2 0
+NA
+Q:Q1D
+T:3
+#1d. How important is it to preserve what is special about individual towns?
+NA
+Not at all                                          Extremely  Don't
+important                                          important  Know
+0    1    2    3    4    5    6    7    8    9    10        11
+NA
+I:
+COLOR YELLOW ON BLUE 3 30 3 76
+NUM 0 11 2 0
+NA
+Q:Q1E
+T:3
+#1e. How important is it to reduce traffic congestion?
+NA
+Not at all                                          Extremely  Don't
+important                                          important  Know
+0    1    2    3    4    5    6    7    8    9    10        11
+NA
+I:
+COLOR YELLOW ON BLUE 3 30 3 54
+NUM 0 11 2 0
+NA
+Q:Q1F
+T:3
+#1f. How important is it to preserve open land?
+NA
+Not at all                                          Extremely  Don't
+important                                          important  Know
+0    1    2    3    4    5    6    7    8    9    10        11
+NA
+I:
+COLOR YELLOW ON BLUE 3 30 3 47
+NUM 0 11 2 0
+NA
+Q:Q1G
+T:3
+#1g. How important is it to minimize pollution?
+NA
+Not at all                                          Extremely  Don't
+important                                          important  Know
+0    1    2    3    4    5    6    7    8    9    10        11
+NA
+I:
+COLOR YELLOW ON BLUE 3 30 3 47
+NUM 0 11 2 0
+NA
+Q:Q1H
+T:3
+#1h. How important is it to keep property taxes as low as possible?
+NA
+Not at all                                          Extremely  Don't
+important                                          important  Know
+0    1    2    3    4    5    6    7    8    9    10        11
+NA
+I:
+COLOR YELLOW ON BLUE 3 30 3 67
+NUM 0 11 2 0
+NA
+NA
+Q:Q2
+T:3
+#2. On a scale of 0-10, how would you describe the economic condition of your
+town, where 0 stands for terrible, 10 stands for great and 5 is exactly
+midway between?
+NA
+Terrible                                           Great   Don't Know
+0    1    2    3    4    5    6    7    8    9    10        11
+NA
+I:
+NUM 0 11 2 0
+NA
+Q:Q3
+T:3
+#3. How about the economic condition of the Greater New Haven region?
+NA
+Terrible                                      Great   Don't Know
+1    2    3    4    5    6    7    8    9    10         11
+NA
+I:
+NUM 1 11 2 0
+NA
+Q:READ3
+T:3
+I am going to read a number of statements about general opinions, which
+people might have.  For each one please tell me the extent to which you
+agree or disagree using a scale 0 to 10 where 0 stands for disagreeing
+as strongly as possibly, 10 stands for agreeing as strongly as possible,
+and 5 stands for neither agree nor disagree.
+NA
+I:
+AnyPrmp
+KEY
+NA
+Q:Q4
+T:3
+#4. I don't mind paying a little more in taxes if the money will make most
+people in the greater New Haven region better off.
+NA
+Disagree                                            Agree     Don't
+strongly                                           strongly   Know
+0    1    2    3    4    5    6    7    8    9    10        11
+NA
+I:
+COLOR YELLOW ON BLUE 4 14 4 44
+NUM 0 11 2 0
+NA
+Q:Q5
+T:3
+#5. I don't mind paying a little more in taxes if the money will make most
+people in my town better off.
+NA
+Disagree                                            Agree     Don't
+strongly                                           strongly   Know
+0    1    2    3    4    5    6    7    8    9    10        11
+NA
+I:
+COLOR YELLOW ON BLUE 4 14 4 23
+NUM 0 11 2 0
+NA
+Q:Q6
+T:3
+#6. If towns surrounding yours were to lose jobs because of businesses
+leaving the region, how do you think it would affect your town?
+Very positively, somewhat positively, neither positively nor negatively,
+somewhat negatively, very negatively?
+NA
+1  Very positively
+2  Somewhat positively
+3  Neither positively nor negatively
+4  Somewhat negatively
+5  Very negatively
+6  Don't know / no response
+NA
+I:
+KEY 1-6
+NA
+Q:Q7
+T:3
+#7. People sometimes talk about sprawl, by which they mean, the building of
+homes and businesses on open land, rather than using property in already
+developed areas. In the New Haven region, do you believe that sprawl is a
+major problem, a moderate problem, a minor problem or not a problem?
+NA
+1  Major problem
+2  Moderate problem
+3  Minor problem
+4  Not a problem
+5  Don't know / no response
+NA
+I:
+KEY 1-5
+NA
+Q:Q8
+T:3
+#8. Compared to other towns in the region, would you say your town
+government is much more honest than average, somewhat more honest,
+about as honest, somewhat less honest, or much less honest than average?
+NA
+1  Much more honest than average
+2  Somewhat more honest
+3  About as honest
+4  Somewhat less honest
+5  Much less honest than average
+6  No response / Don't know
+NA
+I:
+KEY 1-6
+NA
+Q:Q9
+T:3
+#9. Compared to other towns in the region, would you say your town
+government is much more wasteful than average, somewhat more
+wasteful, about as wasteful, somewhat less wasteful, or much
+less wasteful than average?
+NA
+1  Much more wasteful
+2  Somewhat more wasteful
+3  About as wasteful
+4  Somewhat less wasteful
+5  Much less wasteful
+6  Don't know / No response
+NA
+I:
+KEY 1-6
+NA
+Q:Q10
+T:3
+#10. If some towns in a region are more prosperous than others, how do you
+think that affects the economy of the region as a whole?  Do you think
+it makes the economy of the region much stronger, a little stronger, a
+little weaker, much weaker or would you say it makes no difference?
+NA
+1  Much stronger
+2  A little stronger
+3  A little weaker
+4  Much weaker
+5  Makes no difference
+6  Don't know / No response
+NA
+I:
+KEY 1-6
+NA
+Q:READ4
+T:3
+Now I would like to ask you about the Tweed New Haven Airport. For each of
+the following statements please tell me whether you agree strongly, agree
+somewhat, neither agree nor disagree, disagree somewhat, or disagree
+strongly.
+NA
+NA
+I:
+AnyPrmp
+KEY
+NA
+Q:Q11
+T:3
+#11. Commercial passenger service to nearby cities, should be maintained
+but not expanded to serve a larger market.
+NA
+1  Agree strongly
+2  Agree somewhat
+3  Neither agree nor disagree
+4  Disagree somewhat
+5  Disagree strongly
+6  No response / Don't know
+NA
+I:
+KEY 1-6
+NA
+Q:Q12
+T:3
+#12. Commercial passenger service should be expanded to provide more flights
+to more places.
+NA
+1  Agree strongly
+2  Agree somewhat
+3  Neither agree nor disagree
+4  Disagree somewhat
+5  Disagree strongly
+6  No response / Don't know
+NA
+I:
+KEY 1-6
+NA
+Q:Q13
+T:3
+#13. Commercial passenger service should be ended, leaving only service
+for private airplanes.
+NA
+1  Agree strongly
+2  Agree somewhat
+3  Neither agree nor disagree
+4  Disagree somewhat
+5  Disagree strongly
+6  No response / Don't know
+NA
+I:
+KEY 1-6
+NA
+Q:Q14
+T:3
+#14. Now that we've talked about some options for the future of Tweed
+airport, which of the following would you most like to see?
+NA
+1  Maintaining commercial passenger service to nearby cities but not
+expanding service to serve a larger market.
+NA
+2  Expanding commercial passenger service, providing more flights to
+more places.
+NA
+3  Ending commercial passenger service and providing service only for
+private airplanes.
+NA
+4  Don't know / no response
+NA
+I:
+KEY 1-4
+NA
+Q:Q15
+T:3
+#15. What would be your second choice?
+NA
+1  Maintaining commercial passenger service to nearby cities but not
+expanding service to serve a larger market.
+NA
+2  Expanding commercial passenger service, providing more flights to
+more places.
+NA
+3  Ending commercial passenger service and providing service only for
+private airplanes.
+NA
+4  Don't know / no response
+NA
+I:
+IF (Q14 = 1)
+CLR 5 6
+KEY 2-4
+ENDIF
+IF (Q14 = 2)
+CLR 8 9
+KEY 1,3,4
+ENDIF
+IF (Q14 = 3)
+CLR 11 12
+KEY 1,2,4
+ENDIF
+IF (Q14 = 4)
+SKP
+ENDIF
+NA
+Q:READ5
+T:3
+I would like to ask you some questions about how changes at Tweed New Haven
+Airport might affect your town and the New Haven region.
+NA
+I:
+AnyPrmp
+KEY
+NA
+Q:Q19
+T:3
+#19. How do you think that expanding the airport to provide more flights to
+more places would affect your town's economy?  Would it have a major
+positive economic impact, a minor positive impact, no impact, a minor
+negative impact or a major negative impact on the economy of your town?
+NA
+1  Major positive economic impact
+2  Minor positive impact
+3  No impact
+4  Minor negative impact
+5  Major negative impact
+6  Don't know / No response
+I:
+COLOR YELLOW ON BLUE 4 37 4 50
+KEY 1-6
+NA
+Q:Q19A
+T:3
+#19a. And how would you say this would affect the economy of the New Haven
+Region?
+NA
+1  Major positive economic impact
+2  Minor positive impact
+3  No impact
+4  Minor negative impact
+5  Major negative impact
+6  Don't know / No response
+I:
+COLOR YELLOW ON BLUE 4 37 4 50
+KEY 1-6
+NA
+Q:Q20
+T:3
+#20. How do you think expanding the airport to provide more flights to more
+places would affect property values in your town, would it make property
+more valuable, less valuable or do you think it would have no impact on
+property values?
+NA
+1  Would make property more valuable
+2  Would make property less valuable
+3  Would have no impact on property values
+4  Don't know / no response
+NA
+I:
+COLOR YELLOW ON BLUE 4 46 4 54
+KEY 1-4
+NA
+Q:Q20A
+T:3
+#20a. And how would you say it would affect property values in the New
+Haven region?
+NA
+1  Would make property more valuable
+2  Would make property less valuable
+3  Would have no impact on property values
+4  Don't know / no response
+NA
+I:
+COLOR YELLOW ON BLUE 4 46 4 54
+KEY 1-4
+NA
+Q:Q21
+T:3
+#21. How do you think eliminating commercial flights, so that Tweed would
+only serve private planes, would affect the amount of road traffic for
+people in your town?  Do you think it would cause the amount of traffic
+to increase a great deal, increase a little, decrease a little, decrease
+a great deal, or would it have no effect on the amount of traffic for
+people in your town?
+NA
+1  Increase a great deal
+2  Increase a little
+3  Decrease a little
+4  Decrease a great deal
+5  No effect
+6  Don't know / no response
+NA
+I:
+COLOR YELLOW ON BLUE 5 17 5 25
+KEY 1-6
+NA
+Q:Q21A
+T:3
+#21a. And how would you say it would affect the amount of road traffic in the
+New Haven region?
+NA
+1  Increase a great deal
+2  Increase a little
+3  Decrease a little
+4  Decrease a great deal
+5  No effect
+6  Don't know / no response
+NA
+I:
+COLOR YELLOW ON BLUE 5 17 5 25
+KEY 1-6
+NA
+Q:Q22
+T:3
+#22. How do you think eliminating commercial flights, so that Tweed would
+only serve private planes, would affect the quality of life in your
+town?  Do you think it would improve the quality of life, reduce the
+quality of life or have no impact on the quality of life?
+NA
+1  Improve the quality of life
+2  Reduce the quality of life
+3  Have no impact on the quality of life
+4  Don't know / no response
+NA
+I:
+COLOR YELLOW ON BLUE 4 70 4 73
+COLOR YELLOW ON BLUE 5 7 5 10
+KEY 1-4
+NA
+Q:Q22A
+T:3
+#22a. And how would you say it would affect the quality of life in the
+New Haven region?
+NA
+1  Improve the quality of life
+2  Reduce the quality of life
+3  Have no impact on the quality of life
+4  Don't know / no response
+NA
+I:
+COLOR YELLOW ON BLUE 4 70 4 73
+COLOR YELLOW ON BLUE 5 7 5 10
+KEY 1-4
+NA
+Q:READ6
+T:3
+Now I would like to ask you some questions about the relationships between
+towns in this region and property tax revenues from new businesses and
+industries. For each of the following statements please tell me whether
+you agree strongly, agree somewhat, neither agree nor disagree, disagree
+somewhat, or disagree strongly.
+NA
+I:
+AnyPrmp
+KEY
+NA
+Q:Q23
+T:3
+#23. My town should maintain local control over all of its tax revenues from
+new businesses and industries.
+NA
+1  Agree strongly
+2  Agree somewhat
+3  Neither agree nor disagree
+4  Disagree somewhat
+5  Disagree strongly
+6  No response / Don't know
+NA
+I:
+KEY 1-6
+NA
+Q:Q24
+T:3
+#24. My town should try for a voluntary agreement with other towns in the
+region to share some of the tax revenues from new businesses and
+industries.
+NA
+1  Agree strongly
+2  Agree somewhat
+3  Neither agree nor disagree
+4  Disagree somewhat
+5  Disagree strongly
+6  No response / Don't know
+NA
+I:
+KEY 1-6
+NA
+Q:Q25
+T:3
+#25. The state should provide incentives for towns in the region to share
+some tax revenues from new businesses and industries.
+NA
+1  Agree strongly
+2  Agree somewhat
+3  Neither agree nor disagree
+4  Disagree somewhat
+5  Disagree strongly
+6  No response / Don't know
+NA
+I:
+KEY 1-6
+NA
+Q:Q26
+T:3
+#26. The state should require towns in the region to share some tax revenues
+from new businesses and industries.
+NA
+1  Agree strongly
+2  Agree somewhat
+3  Neither agree nor disagree
+4  Disagree somewhat
+5  Disagree strongly
+6  No response / Don't know
+NA
+I:
+KEY 1-6
+NA
+Q:Q27
+T:3
+#27. Now that we've asked you about several options for dealing with property
+tax revenues from new businesses and industries which would you most
+like to see?
+NA
+1  My town should maintain local control over all of its tax revenues
+from new businesses and industries.
+NA
+2  My town should try for a voluntary agreement with other towns in
+the region to share some of the tax revenues from new businesses
+and industries.
+NA
+3  The state should provide incentives for towns in the region to share
+some tax revenues from new businesses and industries.
+NA
+4  The state should require towns in the region to share some tax
+revenues from new businesses and industries
+NA
+5  No response / Don't know
+NA
+I:
+KEY 1-5
+NA
+Q:Q28
+T:3
+#28. What would be your second choice?
+NA
+1  My town should maintain local control over all of its tax revenues
+from new businesses and industries.
+NA
+2  My town should try for a voluntary agreement with other towns in
+the region to share some of the tax revenues from new businesses
+and industries.
+development.
+NA
+3  The state should provide incentives for towns in the region to share
+some tax revenues from new businesses and industries.
+NA
+4  The state should require towns in the region to share some tax
+revenues from new businesses and industries.
+NA
+5  No response / Don't know
+NA
+I:
+IF (Q27 = 1)
+CLR 5 6
+KEY 2-5
+ENDIF
+IF (Q27 = 2)
+CLR 8 10
+KEY 1,3,4,5
+ENDIF
+IF (Q27 = 3)
+CLR 12 13
+KEY 1,2,4,5
+ENDIF
+IF (Q27 = 4)
+CLR 15 16
+KEY 1,2,3,5
+ENDIF
+IF (Q27 = 5)
+SKP Q29
+ENDIF
+NA
+Q:Q28A
+T:3
+#28a. What would be you third choice?
+NA
+1  My town should maintain local control over all of its tax revenues
+from new businesses and industries.
+NA
+2  My town should try for a voluntary agreement with other towns in
+the region to share some of the tax revenues from new businesses
+and industries.
+NA
+3  The state should provide incentives for towns in the region to share
+some tax revenues from new businesses and industries.
+NA
+4  The state should require towns in the region to share some tax
+revenues from new businesses and industries.
+NA
+5  No response / Don't know
+NA
+I:
+IF (Q27 = 1)
+CLR 5 6
+IF (Q28 = 2)
+CLR 8 10
+KEY 3,4,5
+ENDIF
+IF (Q28 = 3)
+CLR 12 13
+KEY 2,4,5
+ENDIF
+IF (Q28 = 4)
+CLR 15 16
+KEY 2,3,5
+ENDIF
+IF (Q28 = 5)
+SKP Q29
+ENDIF
+ENDIF
+IF (Q27 = 2)
+CLR 8 10
+IF (Q28 = 1)
+CLR 5 6
+KEY 3-5
+ENDIF
+IF (Q28 = 3)
+CLR 12 13
+KEY 1,4,5
+ENDIF
+IF (Q28 = 4)
+CLR 15 16
+KEY 1,3,5
+ENDIF
+IF (Q28 = 5)
+SKP Q29
+ENDIF
+ENDIF
+IF (Q27 = 3)
+CLR 12 13
+IF (Q28 = 1)
+CLR 5 6
+KEY 2,4,5
+ENDIF
+IF (Q28 = 2)
+CLR 8 10
+KEY 1,4,5
+ENDIF
+IF (Q28 = 4)
+CLR 15 16
+KEY 1,2,5
+ENDIF
+IF (Q28 = 5)
+SKP Q29
+ENDIF
+ENDIF
+IF (Q27 = 4)
+CLR 15 16
+IF (Q28 = 1)
+CLR 5 6
+KEY 2,3,5
+ENDIF
+IF (Q28 = 2)
+CLR 8 10
+KEY 1,3,5
+ENDIF
+IF (Q28 = 3)
+CLR 12 13
+KEY 1,2,5
+ENDIF
+IF (Q28 = 5)
+SKP Q29
+ENDIF
+ENDIF
+NA
+Q:Q29
+T:3
+#29. How would you say competition among towns in a region, to attract new
+business or other development to their town, affects the economy of the
+region as a whole?  Would you say it helps the economy a great deal,
+helps a little, has no impact, hurts the economy a little or hurts the
+economy a great deal?
+NA
+1  Helps the economy a great deal
+2  Helps a little
+3  Has no impact
+4  Hurts the economy a little
+5  Hurts the economy a great deal
+6  No response / Don't know
+NA
+I:
+KEY 1-6
+NA
+Q:Q30
+T:3
+#30. If the towns in this region were to share some of the tax revenues from
+new development with other towns, how do you think that would affect the
+region economically?  Would it make the region's economy much stronger,
+a little stronger, a little weaker, much weaker, or would it not have
+any impact on the region's economy?
+NA
+1  Much stronger
+2  A little stronger
+3  A little weaker
+4  Much weaker
+5  Would not have any impact
+6  No response / Don't know
+NA
+I:
+COLOR YELLOW ON BLUE 7 25 7 32
+KEY 1-6
+NA
+Q:Q31
+T:3
+#31. If the towns in this region were to share some of the tax revenues from
+new development with other towns, how do you think it would affect your
+town economically?  Would it make the town's economy much stronger, a
+little stronger, a little weaker, much weaker, or would it have not
+impact on your town's economy?
+NA
+1  Much stronger
+2  A little stronger
+3  A little weaker
+4  Much weaker
+5  Would not have any impact
+6  No response / Don't know
+NA
+I:
+COLOR YELLOW ON BLUE 7 22 7 27
+KEY 1-6
+NA
+Q:Q31A
+T:3
+#31a. And how would this effect the economy of the New Haven region?
+NA
+1  Much stronger
+2  A little stronger
+3  A little weaker
+4  Much weaker
+5  Would not have any impact
+6  No response / Don't know
+NA
+I:
+KEY 1-6
+NA
+Q:Q32
+T:3
+#32. If there were some sharing of property tax revenues from new development
+between towns in the region, how do you think it would affect your
+property tax rates?  Would it make your property tax rates go up a great
+deal, up a little, down a little, down a great deal, or would it have no
+impact on your property tax rates?
+NA
+1  Up a great deal
+2  Up a little
+3  Down a little
+4  Down a great deal
+5  Would have no impact
+6  No response / Don't know
+NA
+I:
+KEY 1-6
+NA
+Q:READ7
+T:3
+Please tell me whether you agree strongly, agree somewhat, neither agree nor
+disagree, disagree somewhat, or disagree strongly with the following
+statements.
+NA
+I:
+AnyPrmp
+KEY
+NA
+Q:Q33
+T:3
+#33. Towns that have to depend on their own property taxes to pay for local
+services are more likely to support new development that changes what
+is special about the town.
+NA
+1  Agree strongly
+2  Agree somewhat
+3  Neither agree nor disagree
+4  Disagree somewhat
+5  Disagree strongly
+6  No response / Don't know
+I:
+COLOR YELLOW ON BLUE 5 54 5 56
+KEY 1-6
+NA
+Q:Q34
+T:3
+#34. Sharing of new business and industry tax revenues would enable the
+region to attract new biotech companies without providing new tax
+subsidies.
+NA
+1  Agree strongly
+2  Agree somewhat
+3  Neither agree nor disagree
+4  Disagree somewhat
+5  Disagree strongly
+6  Don't know / no response
+NA
+I:
+KEY 1-6
+NA
+Q:Q35
+T:3
+#35. If Tweed New Haven Airport were to expand to provide more flights to
+more places, business in the region would grow by hundreds of millions
+of dollars as a result.
+NA
+1  Agree strongly
+2  Agree somewhat
+3  Neither agree nor disagree
+4  Disagree somewhat
+5  Disagree strongly
+6  Don't know / no response
+NA
+I:
+KEY 1-6
+NA
+Q:Q36
+T:3
+#36. If revenue sharing between towns in this region were strictly voluntary,
+with no state involvement, how many of the towns in the New Haven region
+do you think would participate?  All of them, most of them, about half of
+them, just a few of them, or none of them?
+NA
+1  All of them
+2  Most of them
+3  About half of them
+4  Just a few of them
+5  None of them
+6  Don't know / no response
+I:
+KEY 1-6
+NA
+Q:Q37
+T:3
+#37. Would revenue sharing be worth doing if only a few towns in the New Haven
+region participated?
+NA
+1  Yes
+2  No
+3  No response / don't know
+NA
+I:
+KEY 1-3
+NA
+Q:READ8
+T:3
+Now I am going to ask you a number of questions about the New Haven region.
+If you don't know the answer, just say so.
+NA
+I:
+AnyPrmp
+KEY
+NA
+Q:Q38
+T:3
+#38. Which of the following would you say is closest to the population of the
+greater New Haven region?
+NA
+1  250,000
+2  350,000
+3  550,000
+4  750,000
+5  No response / Don't know
+NA
+I:
+KEY 1-5
+NA
+Q:Q39
+T:3
+#39. During the 1990's, would you say the rate of job growth in the New Haven
+region was more, about the same, or less than the rest of the United
+States?
+NA
+1  More
+2  About the same
+3  Less
+4  No response / Don't know
+NA
+I:
+KEY 1-4
+NA
+Q:Q40
+T:3
+#40. Which of the following would you say is the major source of revenue for
+most town governments in the Greater New Haven region?
+NA
+1  Sales taxes
+2  Property taxes
+3  Direct subsidies from the state
+4  Direct subsidies from the federal government
+5  No response / Don't know
+NA
+I:
+KEY 1-5
+NA
+Q:Q41
+T:3
+#41. If there were a functioning regional airport do you think there would be
+more or less people traveling on the I-95/I-91 corridor to Hartford and
+New York, or would it make no difference?
+NA
+1  More
+2  Less
+3  No difference
+4  No response / Don't know
+NA
+I:
+KEY 1-4
+NA
+Q:Q42
+T:3
+#42. Would you say the population of the city of New Haven increased, stayed
+the same, or decreased during the 1990's?
+NA
+1  Increased
+2  Stayed the same
+3  Decreased
+4  No response / Don't know
+I:
+KEY 1-4
+NA
+Q:Q43
+T:3
+#43. Does Connecticut law allow communities to share property tax revenues?
+NA
+1  Yes
+2  No
+3  No response / Don't know
+NA
+I:
+KEY 1-3
+NA
+Q:Q44
+T:3
+#44. Would you say those communities with the most valuable property tend to
+have the lowest property tax rates, average property tax rates, or the
+highest property tax rates?
+NA
+1  Lowest rates
+2  Average rates
+3  Highest rates
+4  No response / Don't know
+NA
+I:
+COLOR YELLOW ON BLUE 3 48 3 69
+KEY 1-4
+NA
+Q:Q45
+T:3
+#45. Which of the following categories would you say the Federal Aviation
+Authority would use to describe Tweed New Haven Airport?
+NA
+1  Major hub
+2  Medium hub
+3  Minor hub
+4  Non-hub
+5  No response / Don't know
+NA
+I:
+KEY 1-5
+NA
+Q:Q46
+T:3
+#46. Would you say that maintaining Tweed New Haven Airport at its current
+level of service would require any significant investment?
+NA
+1  Yes
+2  No
+3  Don't know
+NA
+I:
+KEY 1-3
+NA
+Q:READ9
+T:3
+Next I would like to ask you some questions about how much you travel.
+NA
+I:
+AnyPrmp
+KEY
+NA
+Q:Q47
+T:3
+#47. About how many roundtrips a year do you make by airplane?
+NA
+I:
+NUM 0 999 3 0
+NA
+Q:Q48
+T:3
+#48. When you travel by air what airport do you use most frequently?
+NA
+1  La Guardia
+2  Hartford
+3  Other
+NA
+I:
+OTH 3 7 20 7 40
+KEY 1-3
+NA
+Q:Q49
+T:3
+#49. Given the roads you travel most often and the times you travel, how much
+does traffic affect you, not at all, just a little, a moderate amount, or
+a great deal?
+NA
+1  Not at all
+2  Just a little
+3  A moderate amount
+4  A great deal
+5  No response / Don't know
+I:
+KEY 1-5
+NA
+Q:Q50
+T:3
+#50. Thinking about your political views as a whole, how would you rate
+yourself on a scale of 0 to 10 where 0 stands for about as conservative
+as they come, 10 for about as liberal as they come, and five for exactly
+in the middle, or have you not thought much about this?
+NA
+Very                                              Very      Don't
+Conservative                                         Liberal    Know
+0    1    2    3    4    5    6    7    8    9    10        11
+NA
+I:
+NUM 0 11 2 0
+NA
+Q:Q51
+T:3
+#51. On average, how often do you participate in a conversation about public
+affairs, almost every day, several times a week, at least once a week,
+at least once a month, only a few times a year, or practically never?
+NA
+1  Almost every day
+2  Several times a week
+3  At least once a week
+4  At least once a month
+5  Only a few times a year
+6  Practically never
+7  No response / Don't know
+NA
+I:
+KEY 1-7
+NA
+Q:Q52
+T:3
+#52. Are you registered to vote?
+NA
+1  Yes
+2  No
+3  No response / Don't know
+NA
+I:
+KEY 1-3
+NA
+Q:Q53
+T:3
+#53. And how much do you agree or disagree with the following statements?
+When voting, people should always put the interests of the public as
+a whole before those of themselves and their family. Would you:
+NA
+1  Agree strongly
+2  Agree somewhat
+3  Neither agree nor disagree
+4  Disagree somewhat
+5  Disagree strongly
+6  No response / don't know
+NA
+I:
+KEY 1-6
+NA
+Q:Q54
+T:3
+#54. People with views very different from mine often have very good reasons
+for their views.
+NA
+1  Agree strongly
+2  Agree somewhat
+3  Neither agree nor disagree
+4  Disagree somewhat
+5  Disagree strongly
+6  No response / Don't know
+NA
+I:
+KEY 1-6
+NA
+Q:Q55
+T:3
+#55. Have you ever campaigned for a candidate for public office or ballot
+measure?
+NA
+1  Yes
+2  No
+3  No response / Don't know
+NA
+I:
+KEY 1-3
+NA
+Q:Q56
+T:3
+#56. Do you belong to any charitable or civic organizations?
+NA
+1  Yes
+2  No
+3  No response / Don't know
+NA
+I:
+KEY 1-3
+NA
+Q:Q57
+T:3
+#57. Do you participate in volunteer activities for any non-profit
+organizations?
+NA
+1  Yes
+2  No
+3  No response / Don't know
+NA
+I:
+KEY 1-3
+NA
+Q:READ10
+T:3
+Finally I just need to ask a few background questions.
+NA
+I:
+AnyPrmp
+KEY
+NA
+Q:Q58
+T:3
+#58. Do you own or rent your home?
+NA
+1  Rent
+2  Own
+3  No response / Don't know
+NA
+I:
+KEY 1-3
+NA
+Q:Q59
+T:3
+#59. What is your marital status? (married, separated, divorced, widowed)
+NA
+1  Married
+2  Single
+3  Separated
+4  Divorced
+5  Widowed
+6  No response
+NA
+I:
+KEY 1-6
+NA
+Q:Q60
+T:3
+#60. Do you have children under 18 living at home?
+NA
+1  Yes
+2  No
+3  No response / Don't know
+NA
+I:
+KEY 1-3
+NA
+Q:Q61
+T:3
+#61. What is the highest grade of school you have had the opportunity
+to complete?
+NA
+1  Less than high school
+2  Some high school
+3  High school graduate
+4  Some college
+5  College graduate
+6  Graduate school
+7  Trade or technical school
+8  Refused
+NA
+I:
+KEY 1-8
+NA
+Q:Q62
+T:3
+#62. Could you tell me what year you were born?
+NA
+Year:
+NA
+NA
+NA
+NA
+NA
+I:
+SHOW "IF REFUSED, RECORD 1890." 11 7 80 22
+NUM 1890 2001 4 0 5 13
+NA
+Q:Q63
+T:3
+#63. Do you work outside the home?
+NA
+1  Yes
+2  No
+3  No response / Don't know
+NA
+I:
+KEY 1-3
+IF (Q63 > 1) SKIPTO Q68
+NA
+Q:Q64
+T:3
+#64. Are you self employed? (Alt. Do you own your own business)
+NA
+1  Yes
+2  No
+3  No response / Don't know
+NA
+I:
+KEY 1-3
+NA
+Q:Q65
+T:3
+#65. In which of the following areas do you work
+NA
+1  Retail
+2  Manufacturing
+3  Transportation
+4  High Tech
+5  Agriculture
+6  Construction
+7  Service (such as restaurants, child care, in home)
+8  Education
+9  Medical
+10  Legal/Accounting
+11  Government
+12  Other  _________________
+13  No response
+NA
+I:
+OTH 12 16 20 16 60
+NUM 1 13 2 0
+NA
+Q:Q66
+T:3
+#66. Would you describe your job as ?
+NA
+1  Professional
+2  Senior Management
+3  Mid level management
+4  Clerical
+5  Sales
+6  Front line worker
+7  Other
+8  No response
+NA
+I:
+OTH 7 11 20 11 60
+KEY 1-8
+NA
+Q:Q67
+T:3
+#67. In what town do you work?
+NA
+1  Bethany                    9  New Haven
+2  Branford                  10  North Branford
+3  East Haven                11  North Haven
+4  Guilford                  12  Orange
+5  Hamden                    13  Wallingford
+6  Madison                   14  West Haven
+7  Meriden                   15  Woodbridge
+8  Milford                   16  Other
+NA
+I:
+IF (Q63 > 1) SKP
+OTH 16 12 50 12 75
+NUM 1 16 2 0
+NA
+Q:Q68
+T:3
+#68. In what town does your spouse work?
+NA
+1  Bethany                    9  New Haven
+2  Branford                  10  North Branford
+3  East Haven                11  North Haven
+4  Guilford                  12  Orange
+5  Hamden                    13  Wallingford
+6  Madison                   14  West Haven
+7  Meriden                   15  Woodbridge
+8  Milford                   16  Other
+NA
+I:
+IF (Q59 <> 1) SKP
+OTH 16 12 50 12 75
+NUM 1 16 2 0
+NA
+Q:Q69
+T:3
+#69. For statistical purposes only, could you tell me which of the following
+categories best represents your total family income last year?
+NA
+1  Less than $10,000
+3  $10-20,000
+4  $21-30,000
+5  $31-40,000
+6  $41-50,000
+7  $51-60,000
+8  $61-70,000
+9  $71-80,000
+10  $81-90,000
+11  $91-100,000
+12  More than $100,000
+13  Refused
+NA
+I:
+NUM 1 13 2 0
+NA
+Q:Q70
+T:3
+#70. To make sure that all groups are represented in our sample, could you
+tell me how you would describe your ethnic or racial background?
+NA
+1  Hispanic (Latino)
+2  African American
+3  Caucasian
+4  Other
+5  Refused
+NA
+I:
+SHOW "[DO NOT READ LIST]" 14 9 80 30
+OTH 4 9 20 9 40
+KEY 1-5
+NA
+Q:Q71
+T:3
+#71. What is your religion?  Do you consider yourself a...
+NA
+1  Protestant
+2  Catholic
+3  Jewish
+4  Islamic
+5  Buddhist
+6  Hindu
+7  Sikh
+8  Other
+9  Refused
+NA
+I:
+OTH 8 12 20 12 40
+KEY 1-9
+NA
+Q:Q72
+T:3
+#72.  Please record respondent's gender.
+NA
+1  Male
+2  Female
+NA
+I:
+SHOW "Best Guess..." 10 9 80 30
+KEY 1-2
+NA
+Q:INVITE
+T:3
+We'd like to thank you for your time and to offer you an unusual opportunity
+to learn more about these issues and to make your views heard. With the help
+of other organizations in the area, the League of Women Voters is bringing
+together a scientific sample of about 250 people to talk about the future of
+the region.  You will be paid $200 for your time.  The Regional Dialogue will
+begin with a dinner at Yale University on Friday, March 1 at 7 p.m. You will
+return on Saturday for the day and will meet again Sunday morning, concluding
+with lunch.
+NA
+You will get to discuss the issues with other people from around the region
+and have a chance to question policymakers and experts, as well as members
+of the state legislature.  All meals will be provided.
+NA
+I:
+AnyPrmp
+KEY
+NA
+Q:INVITE2
+T:3
+This is the first time an event like this has been conducted to discuss
+regional challenges, and portions will be televised.  The New Haven
+Register will also provide extensive coverage.
+NA
+We hope you will decide to be part of this exciting and important event.  You
+have a chance to influence what happens to your town and the entire region.
+NA
+Would you be willing to attend?
+NA
+1  Yes
+2  Maybe
+3  No
+I:
+KEY 1-3
+IF (INVITE2 = 3) SKIPTO GETNAD2
+NA
+Q:GETNAD
+T:3
+We will send you a follow up letter with additional information about
+the event.  Could I get your name and address?
+NA
+1  Yes
+2  No
+I:
+KEY 1-2
+IF (GETNAD = 2) SKIPTO END
+SKIPTO FULLNAME
+NA
+Q:GETNAD2
+T:3
+We would like to send you a letter with additional information just in case
+you decide you would like to participate after all.  May we have your name
+and address?
+NA
+1  Yes
+2  No
+I:
+KEY 1-2
+IF (GETNAD2 = 2) SKIPTO END
+NA
+Q:FULLNAME
+T:3
+Can I have your first and last name please?
+NA
+I:
+SHOW "NAME:" 6 5 80 30
+SHOW "INTERVIEWER:  Carefully record this " 9 5 80 30
+SHOW "respondent's first and last name," 9 41 33 30
+SHOW "typing the first name first followed by a space and then" 10 19 80 30
+SHOW "the last name (e.G., David smith).  If you are unsure" 11 19 80 30
+SHOW "about spelling, please ask them to spell out their name " 12 19 80 30
+SHOW "so that we make sure it is correct.  CONFIRM NAME." 13 19 80 30
+OPN 6 11 6 55
+NA
+Q:STREET
+T:3
+Can I have your street address?
+NA
+I:
+SHOW "STREET ADDRESS:" 6 2 15 30
+SHOW "INTERVIEWER:  Carefully record this " 9 5 80 30
+SHOW "respondent's street address, including" 9 41 38 30
+SHOW "an apartment number if applicable. If the respondent gives" 10 19 80 30
+SHOW "you a P.O. Box address, be sure to type 'P.O. Box' before the" 11 19 80 30
+SHOW "number.  Again, if you are unsure about spelling, ask them" 12 19 80 30
+SHOW "to spell out a name so that we make sure it is correct." 13 19 80 30
+SHOW "CONFIRM ADDRESS." 14 19 80 30
+OPN 6 19 6 70
+NA
+Q:CITY
+T:3
+What city do you live in?
+NA
+I:
+SHOW "CITY:" 6 12 80 30
+SHOW "INTERVIEWER:  Be careful about spelling.  " 9 5 80 30
+SHOW "Have respondent spell the name" 9 47 30 30
+SHOW "if you are at unsure about it.  CONFIRM CITY." 10 19 80 30
+OPN 6 18 6 50
+NA
+Q:ZCODE
+T:3
+And lastly, can I please have your zip code?
+NA
+I:
+SHOW "ZIP CODE:" 6 8 80 30
+SHOW "INTERVIEWER:  Confirm zip code after typing it in to make" 9 5 80 30
+SHOW "sure it is correct." 10 19 80 30
+OPN 6 18 6 30
+NA
+Q:CONTACT
+T:3
+We will be contacting you again after you have had a chance
+to see the letter.
+NA
+I:
+AnyPrmp
+KEY
+NA
+Q:END
+T:15
+Thank you very much for your time.
+NA
+NA
+PRESS ANY KEY TO CONTINUE
+NA
+I:
+KEY
+NA
+C:Move telephone number from CATI call list
+C:MDI AC IMPORT.DAT 104 3
+C:MDI EXCH1 IMPORT.DAT 107 2
+C:MDI EXCH2 IMPORT.DAT 7 1
+C:MDI PHRST IMPORT.DAT 8 4
+NA
+C:Move in survey date for correcpondence
+C:SVYDATE = SYSDATE
+NA
+IF (INVITE2 = 3)
+SAVEDATA
+DISPOS = 18
+ENDIF
+NA
+IF (INVITE2 = 2)
+SAVEDATA
+DISPOS = 19
+ENDIF
+NA
+IF (INVITE2 = 1)
+COMPLETE
+DISPOS = 20
+ENDIF
+NA
+Q:COMMENTS
+T:3
+ENTER COMMENTS:
+NA
+I:
+OPN 5 20 7 75
+

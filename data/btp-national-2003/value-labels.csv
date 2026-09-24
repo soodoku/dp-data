@@ -1,0 +1,1306 @@
+source_column,source_value,value_label
+strata,1,broadband
+strata,2,dialup
+strata,3,pc
+resume,0,not a resumed interview (duration less than 100 minutes)
+resume,1,resumed interview (duration 100 minutes or more)
+f_resume,0,not a resumed interview (duration less than 100 minutes)
+f_resume,1,resumed interview (duration 100 minutes or more)
+qb1,-2,not asked
+qb1,-1,refused
+qb1,1,"a lot for the better,"
+qb1,2,"somewhat for the better,"
+qb1,3,"somewhat for the worse,"
+qb1,4,"a lot for the worse,"
+qb1,5,"not much in either direction,"
+qb1,6,haven't thought much about this
+qb2a,-2,not asked
+qb2a,-1,refused
+qb2b,-2,not asked
+qb2b,-1,refused
+qb2c,-2,not asked
+qb2c,-1,refused
+qb2d,-2,not asked
+qb2d,-1,refused
+qb2e,-2,not asked
+qb2e,-1,refused
+qb2f,-2,not asked
+qb2f,-1,refused
+qb2g,-2,not asked
+qb2g,-1,refused
+qb2h,-2,not asked
+qb2h,-1,refused
+qb2i,-2,not asked
+qb2i,-1,refused
+qb2j,-2,not asked
+qb2j,-1,refused
+qb3,-2,not asked
+qb3,-1,refused
+qb3,1,"agree strongly,"
+qb3,2,"agree somewhat,"
+qb3,3,"fall somewhere in between,"
+qb3,4,"disagree somewhat,"
+qb3,5,"disagree strongly,"
+qb3,6,or haven't you thought much about this?
+qb4,-2,not asked
+qb4,-1,refused
+qb4,1,"agree strongly,"
+qb4,2,"agree somewhat,"
+qb4,3,"fall somewhere in between,"
+qb4,4,"disagree somewhat,"
+qb4,5,"disagree strongly,"
+qb4,6,or haven't you thought much about this?
+qb5,-2,not asked
+qb5,-1,refused
+qb5,1,"agree strongly,"
+qb5,2,"agree somewhat,"
+qb5,3,"fall somewhere in between,"
+qb5,4,"disagree somewhat,"
+qb5,5,"disagree strongly,"
+qb5,6,or haven't you thought much about this?
+qb6,-2,not asked
+qb6,-1,refused
+qb6,1,"agree strongly,"
+qb6,2,"agree somewhat,"
+qb6,3,"fall somewhere in between,"
+qb6,4,"disagree somewhat,"
+qb6,5,"disagree strongly,"
+qb6,6,or haven't you thought much about this?
+qb7,-2,not asked
+qb7,-1,refused
+qb7,1,"very important,"
+qb7,2,"somewhat important,"
+qb7,3,"not very important,"
+qb7,4,"not important at all, or"
+qb7,5,haven't you thought much about this?
+qb8,-2,not asked
+qb8,-1,refused
+qb8,1,"very important,"
+qb8,2,"somewhat important,"
+qb8,3,"not very important,"
+qb8,4,"not important at all, or"
+qb8,5,haven't you thought much about this?
+qb9,-2,not asked
+qb9,-1,refused
+qb9,1,"very important,"
+qb9,2,"somewhat important,"
+qb9,3,"not very important,"
+qb9,4,"not important at all, or"
+qb9,5,haven't you thought much about this?
+qb10,-2,not asked
+qb10,-1,refused
+qb10,1,"very important,"
+qb10,2,"somewhat important,"
+qb10,3,"not very important,"
+qb10,4,"not important at all, or"
+qb10,5,haven't you thought much about this?
+qb11,-2,not asked
+qb11,-1,refused
+qb11,1,"very serious,"
+qb11,2,"somewhat serious,"
+qb11,3,"not too serious,"
+qb11,4,"not serious at all,"
+qb11,5,haven't thought much about this
+qb12,-2,not asked
+qb12,-1,refused
+qb12,1,"it is caused mostly by human activities, like driving cars a"
+qb12,2,"it is caused mostly by natural changes in the climate,"
+qb12,3,"it is not occurring at all, or"
+qb12,4,haven't you thought much about this?
+qb13,-2,not asked
+qb13,-1,refused
+qb13,1,"support,"
+qb13,2,"oppose,"
+qb13,3,"neither support nor oppose,"
+qb13,4,or haven't you thought much about this?
+qb14,-2,not asked
+qb14,-1,refused
+qb14,1,"support,"
+qb14,2,"oppose,"
+qb14,3,"neither support nor oppose,"
+qb14,4,or haven't you thought much about this?
+qb15a,-2,not asked
+qb15a,-1,refused
+qb15b,-2,not asked
+qb15b,-1,refused
+qb15c,-2,not asked
+qb15c,-1,refused
+qb16,-2,not asked
+qb16,-1,refused
+qb16,1,"agree strongly,"
+qb16,2,"agree somewhat,"
+qb16,3,"fall somewhere in between,"
+qb16,4,"disagree somewhat,"
+qb16,5,"disagree strongly,"
+qb16,6,or haven't you thought much about this?
+qb17,-2,not asked
+qb17,-1,refused
+qb17,1,"agree strongly,"
+qb17,2,"agree somewhat,"
+qb17,3,"fall somewhere in between,"
+qb17,4,"disagree somewhat,"
+qb17,5,"disagree strongly,"
+qb17,6,or haven't you thought much about this?
+qb18,-2,not asked
+qb18,-1,refused
+qb18,1,supports
+qb18,2,opposes
+qb18,3,haven't heard anything about this
+qb19,-2,not asked
+qb19,-1,refused
+qb19,1,"very serious,"
+qb19,2,"somewhat serious,"
+qb19,3,"not too serious,"
+qb19,4,"not serious at all,"
+qb19,5,haven't thought much about this
+qb20,-2,not asked
+qb20,-1,refused
+qb20,1,agree with (1) more strongly
+qb20,2,agree with (2) more strongly
+qb20,3,agree with both about equally
+qb20,4,haven't thought much about this
+qb21,-2,not asked
+qb21,-1,refused
+qb21,1,agree with (1) more strongly
+qb21,2,agree with (2) more strongly
+qb21,3,agree with both about equally
+qb21,4,haven't thought much about this
+qb22,-2,not asked
+qb22,-1,refused
+qb22,1,agree with (1) more strongly
+qb22,2,agree with (2) more strongly
+qb22,3,agree with both about equally
+qb22,4,haven't thought much about this
+qb23a,-2,not asked
+qb23a,-1,refused
+qb23b,-2,not asked
+qb23b,-1,refused
+qb23c,-2,not asked
+qb23c,-1,refused
+qb23d,-2,not asked
+qb23d,-1,refused
+qb23e,-2,not asked
+qb23e,-1,refused
+qb23f,-2,not asked
+qb23f,-1,refused
+qb24,-2,not asked
+qb24,-1,refused
+qb24,1,increased
+qb24,2,reduced
+qb24,3,kept about the same
+qb24,4,haven't thought much about this
+qb25a,-2,not asked
+qb25a,-1,refused
+qb25b,-2,not asked
+qb25b,-1,refused
+qb25c,-2,not asked
+qb25c,-1,refused
+qb25d,-2,not asked
+qb25d,-1,refused
+qb25e,-2,not asked
+qb25e,-1,refused
+qb26,-2,not asked
+qb26,-1,refused
+qb26,1,increase
+qb26,2,decrease
+qb26,3,keep it the same
+qb26,4,haven't heard anything about this
+qb27,-2,not asked
+qb27,-1,refused
+qb27,1,"support strongly,"
+qb27,2,"support somewhat,"
+qb27,3,"neither support nor oppose this,"
+qb27,4,"oppose somewhat,"
+qb27,5,"oppose strongly,"
+qb27,6,or haven't you thought much about this?
+qb28,-2,not asked
+qb28,-1,refused
+qb28,1,"support strongly,"
+qb28,2,"support somewhat,"
+qb28,3,"neither support nor oppose this,"
+qb28,4,"oppose somewhat,"
+qb28,5,"oppose strongly,"
+qb28,6,or haven't you thought much about this?
+qb29,-2,not asked
+qb29,-1,refused
+qb29,1,"support strongly,"
+qb29,2,"support somewhat,"
+qb29,3,"neither support nor oppose this,"
+qb29,4,"oppose somewhat,"
+qb29,5,"oppose strongly,"
+qb29,6,or haven't you thought much about this?
+qb30,-2,not asked
+qb30,-1,refused
+qb30,1,"support strongly,"
+qb30,2,"support somewhat,"
+qb30,3,"neither support nor oppose this,"
+qb30,4,"oppose somewhat,"
+qb30,5,"oppose strongly,"
+qb30,6,or haven't you thought much about this?
+qb31,-2,not asked
+qb31,-1,refused
+qb31,1,"support strongly,"
+qb31,2,"support somewhat,"
+qb31,3,"neither support nor oppose this,"
+qb31,4,"oppose somewhat,"
+qb31,5,"oppose strongly,"
+qb31,6,or haven't you thought much about this?
+qb32a,-2,not asked
+qb32a,-1,refused
+qb32a,1,to work with other countries one by one to establish agreeme
+qb32a,2,to work with groups of countries through international insti
+qb32a,3,"to leave things as they are,"
+qb32a,4,haven't thought much about this
+qb32b,-2,not asked
+qb32b,-1,refused
+qb32b,1,to work with other countries one by one to establish agreeme
+qb32b,2,to work with groups of countries through international insti
+qb32b,3,"to leave things as they are,"
+qb33,-2,not asked
+qb33,-1,refused
+qb33,1,"repeal the north american free trade agreement, called nafta"
+qb33,2,"leave nafta the way it is,"
+qb33,3,adopt agreements like nafta but with more latin american cou
+qb33,4,haven't thought much about this
+qb34,-2,not asked
+qb34,-1,refused
+qb34,1,"the loss of many jobs in this country,"
+qb34,2,"some jobs,"
+qb34,3,"only a few jobs,"
+qb34,4,"the loss of no jobs,"
+qb34,5,haven't thought much about this
+qb35,-2,not asked
+qb35,-1,refused
+qb35,1,"the creation of many jobs in this country,"
+qb35,2,"some jobs,"
+qb35,3,"only a few jobs,"
+qb35,4,"the creation of no jobs,"
+qb35,5,haven't thought much about this
+qb36,-2,not asked
+qb36,-1,refused
+qb36,1,"higher trade barriers (than most other countries),"
+qb36,2,"lower trade barriers (than most other countries),"
+qb36,3,"about the same, or"
+qb36,4,haven't you heard anything about this?
+qb37a,-2,not asked
+qb37a,-1,refused
+qb37b,-2,not asked
+qb37b,-1,refused
+qb37c,-2,not asked
+qb37c,-1,refused
+qb37d,-2,not asked
+qb37d,-1,refused
+qb37e,-2,not asked
+qb37e,-1,refused
+qb37f,-2,not asked
+qb37f,-1,refused
+qb38,-2,not asked
+qb38,-1,refused
+qb38,1,"the u.s. take the lead acting by itself,"
+qb38,2,should the u.s. take the lead acting with close allies like
+qb38,3,should the u.s. & its close allies take the lead acting thro
+qb38,4,"should the united nations take the lead,"
+qb38,5,"should nobody take the lead,"
+qb38,6,haven't thought much about this
+qb39,-2,not asked
+qb39,-1,refused
+qb39,1,"the u.s. take the lead acting by itself,"
+qb39,2,should the u.s. take the lead acting with close allies like
+qb39,3,should the u.s. & its close allies take the lead acting thro
+qb39,4,"should the united nations & the world bank take the lead,"
+qb39,5,"should nobody take the lead,"
+qb39,6,haven't thought much about this
+qb40,-2,not asked
+qb40,-1,refused
+qb40,1,"1 dollar,"
+qb40,2,"5 dollars,"
+qb40,3,"10 dollars,"
+qb40,4,"20 dollars,"
+qb40,5,"30 dollars or more, or"
+qb40,6,don't you have much idea about that?
+qb41,-2,not asked
+qb41,-1,refused
+qb41,1,"1 dollar,"
+qb41,2,"5 dollars,"
+qb41,3,"10 dollars,"
+qb41,4,"20 dollars,"
+qb41,5,"30 dollars or more, or"
+qb41,6,don't you have much idea about that?
+qb42,-2,not asked
+qb42,-1,refused
+qb42,1,"4 dollars worth,"
+qb42,2,"8 dollars,"
+qb42,3,"12 dollars,"
+qb42,4,"24 dollars or more, or"
+qb42,5,don't you have much idea about that?
+qb43,-2,not asked
+qb43,-1,refused
+qb43,1,"fewer than 5 out of 100,"
+qb43,2,"about 10 of 100,"
+qb43,3,"about 20 of 100,"
+qb43,4,"30 or more out of 100, or"
+qb43,5,don't you have much idea about that?
+qb44,-2,not asked
+qb44,-1,refused
+qb44,1,true
+qb44,2,false
+qb45,-2,not asked
+qb45,-1,refused
+qb45,1,true
+qb45,2,false
+qb46a,-2,not asked
+qb46a,-1,refused
+qb46a,1,republican
+qb46a,2,democrat
+qb46a,3,independent
+qb46a,4,other - please specify
+qb46a,5,no preference
+qb46b,-2,not asked
+qb46b,-1,refused
+qb46b,1,strong republican
+qb46b,2,not very strong republican
+qb46c,-2,not asked
+qb46c,-1,refused
+qb46c,1,strong democrat
+qb46c,2,not very strong democrat
+qb46d,-2,not asked
+qb46d,-1,refused
+qb46d,1,republican party
+qb46d,2,democratic party
+qb46d,3,neither
+qb47,-2,not asked
+qb47,-1,refused
+qb47,1,"agree strongly,"
+qb47,2,"agree somewhat,"
+qb47,3,"fall somewhere in between,"
+qb47,4,"disagree somewhat,"
+qb47,5,"disagree strongly,"
+qb47,6,or haven't you thought much about this?
+qb48,-2,not asked
+qb48,-1,refused
+qb48,1,"agree strongly,"
+qb48,2,"agree somewhat,"
+qb48,3,"fall somewhere in between,"
+qb48,4,"disagree somewhat,"
+qb48,5,"disagree strongly,"
+qb48,6,or haven't you thought much about this?
+qb49,-2,not asked
+qb49,-1,refused
+qb50,-2,not asked
+qb50,-1,refused
+qb51,-2,not asked
+qb51,-1,refused
+qb52,-2,not asked
+qb52,-1,refused
+qb53,-2,not asked
+qb53,-1,refused
+qb53,1,"a great deal,"
+qb53,2,"quite a bit,"
+qb53,3,"some,"
+qb53,4,"very little, or"
+qb53,5,none?
+qb54,-2,not asked
+qb54,-1,refused
+qb55,-2,not asked
+qb55,-1,refused
+qb55,1,"a great deal,"
+qb55,2,"quite a bit,"
+qb55,3,"some,"
+qb55,4,"very little, or"
+qb55,5,none?
+qb56,-2,not asked
+qb56,-1,refused
+qb56,1,"very interested,"
+qb56,2,"somewhat interested,"
+qb56,3,"not very interested, or"
+qb56,4,not at all interested?
+qb57,-2,not asked
+qb57,-1,refused
+qb57,1,"very interested,"
+qb57,2,"somewhat interested,"
+qb57,3,"not very interested, or"
+qb57,4,not at all interested?
+qb58,-2,not asked
+qb58,-1,refused
+qb58,1,"almost every day,"
+qb58,2,"several times a week,"
+qb58,3,"at least once a week,"
+qb58,4,"at least once a month,"
+qb58,5,"only a few times a year, or"
+qb58,6,practically never?
+qb59,-2,not asked
+qb59,-1,refused
+qb59,1,"agree,"
+qb59,2,"disagree,"
+qb59,3,"do you fall somewhere in between,"
+qb59,4,haven't thought much about this
+qb60,-2,not asked
+qb60,-1,refused
+qb60,1,"agree,"
+qb60,2,"disagree,"
+qb60,3,"do you fall somewhere in between,"
+qb60,4,haven't thought much about this
+qb61,-2,not asked
+qb61,-1,refused
+qb61,1,"agree,"
+qb61,2,"disagree,"
+qb61,3,"do you fall somewhere in between,"
+qb61,4,haven't thought much about this
+qb62,-2,not asked
+qb62,-1,refused
+qb62,1,"agree,"
+qb62,2,"disagree,"
+qb62,3,"do you fall somewhere in between,"
+qb62,4,haven't thought much about this
+qb63,-2,not asked
+qb63,-1,refused
+qb63,1,agree with (1) more strongly
+qb63,2,agree with (2) more strongly
+qb63,3,agree with both about equally
+qb63,4,haven't thought much about this
+qb64,-2,not asked
+qb64,-1,refused
+qb64,1,strongly
+qb64,2,somewhat
+qb65a,-2,not asked
+qb65a,-1,refused
+qb65a,1,agree strongly
+qb65a,2,agree somewhat
+qb65a,3,neither agree nor disagree
+qb65a,4,disagree somewhat
+qb65a,5,disagree strongly
+qb65b,-2,not asked
+qb65b,-1,refused
+qb65b,1,agree strongly
+qb65b,2,agree somewhat
+qb65b,3,neither agree nor disagree
+qb65b,4,disagree somewhat
+qb65b,5,disagree strongly
+qb65c,-2,not asked
+qb65c,-1,refused
+qb65c,1,agree strongly
+qb65c,2,agree somewhat
+qb65c,3,neither agree nor disagree
+qb65c,4,disagree somewhat
+qb65c,5,disagree strongly
+qb65d,-2,not asked
+qb65d,-1,refused
+qb65d,1,agree strongly
+qb65d,2,agree somewhat
+qb65d,3,neither agree nor disagree
+qb65d,4,disagree somewhat
+qb65d,5,disagree strongly
+qb65e,-2,not asked
+qb65e,-1,refused
+qb65e,1,agree strongly
+qb65e,2,agree somewhat
+qb65e,3,neither agree nor disagree
+qb65e,4,disagree somewhat
+qb65e,5,disagree strongly
+qb66,-2,not asked
+qb66,-1,refused
+qb66,1,yes
+qb66,2,no
+qb67,-2,not asked
+qb67,-1,refused
+qb68,-2,not asked
+qb68,-1,refused
+qb68,1,yes
+qb68,2,no
+qb69,-2,not asked
+qb69,-1,refused
+qb69,1,united states
+qb69,2,mexico
+qb69,3,el salvador
+qb69,4,guatemala
+qb69,5,taiwan
+qb69,6,china
+qb69,7,vietnam
+qb69,8,philippines
+qb69,9,india
+qb69,10,iran (persian)
+qb69,11,palestine
+qb69,12,other (specify)
+qb70,-2,not asked
+qb70,-1,refused
+qb70,1,united states
+qb70,2,mexico
+qb70,3,el salvador
+qb70,4,guatemala
+qb70,5,taiwan
+qb70,6,china
+qb70,7,vietnam
+qb70,8,philippines
+qb70,9,india
+qb70,10,iran (persian)
+qb70,11,palestine
+qb70,12,other (specify)
+qb71,-2,not asked
+qb71,-1,refused
+qb71,1,working now
+qb71,2,temporarily laid off
+qb71,3,unemployed
+qb71,4,retired
+qb71,5,disabled
+qb71,6,homemaker (not working)
+qb71,7,student
+qb71,8,other (specify)
+qb72,-2,not asked
+qb72,-1,refused
+qb72,1,in the last 12 months
+qb72,2,"more than 12 months ago, but within the last 2 years"
+qb72,3,more than 2 years ago
+qb72,4,never worked at a regular job
+qb73,-2,not asked
+qb73,-1,refused
+qb73,1,self-employed
+qb73,2,work for private employer
+qb73,3,work for federal government
+qb73,4,work for state government
+qb73,5,work for a local government
+qb73,6,work in a family business or farm
+qb74,-2,not asked
+qb74,-1,refused
+qb74,1,self-employed
+qb74,2,work for private employer
+qb74,3,work for federal government
+qb74,4,work for state government
+qb74,5,work for a local government
+qb74,6,work in a family business or farm
+qb75,-2,not asked
+qb75,-1,refused
+qb75,1,"professional or technical,"
+qb75,2,"manager or administrator,"
+qb75,3,"sales worker,"
+qb75,4,"clerical worker,"
+qb75,5,"skilled worker or craftsman,"
+qb75,6,"machine operator,"
+qb75,7,"laborer,"
+qb75,8,"farmer or farm manager,"
+qb75,9,"farm laborer,"
+qb75,10,"service worker, or"
+qb75,11,something else? (specify)
+qb76,-2,not asked
+qb76,-1,refused
+qb76,1,yes
+qb76,2,no
+qb77,-2,not asked
+qb77,-1,refused
+qb77,1,"less than 6 months,"
+qb77,2,"6 months to a year,"
+qb77,3,"1 to 2 years,"
+qb77,4,"3 to 5 years, or"
+qb77,5,more than 5 years?
+qb78,-2,not asked
+qb78,-1,refused
+qb78,1,"less than 6 months,"
+qb78,2,"6 months to a year,"
+qb78,3,"1 to 2 years,"
+qb78,4,"3 to 5 years, or"
+qb78,5,more than 5 years?
+qb79,-2,not asked
+qb79,-1,refused
+qb79,1,yes
+qb79,2,no
+qb80,-2,not asked
+qb80,-1,refused
+qb80,1,yes
+qb80,2,no
+qb81,-2,not asked
+qb81,-1,refused
+qb81,1,yes
+qb81,2,no
+qb82,-2,not asked
+qb82,-1,refused
+qb82,1,yes
+qb82,2,no
+qb83,-2,not asked
+qb83,-1,refused
+qb83,1,"every week,"
+qb83,2,"almost every week,"
+qb83,3,"once or twice a month,"
+qb83,4,"a few times a year, or"
+qb83,5,never?
+qb84,-2,not asked
+qb84,-1,refused
+qb84,1,protestant
+qb84,2,roman catholic
+qb84,3,jewish
+qb84,4,muslim
+qb84,5,other (specify)
+qb85,-2,not asked
+qb85,-1,refused
+qb85,1,yes
+qb85,2,no
+qb86,-2,not asked
+qb86,-1,refused
+qb86,1,yes
+qb86,2,no
+qf1,-2,not asked
+qf1,-1,refused
+qf1,1,"a lot for the better,"
+qf1,2,"somewhat for the better,"
+qf1,3,"somewhat for the worse,"
+qf1,4,"a lot for the worse,"
+qf1,5,"not much in either direction,"
+qf1,6,haven't thought much about this
+qf2a,-2,not asked
+qf2a,-1,refused
+qf2b,-2,not asked
+qf2b,-1,refused
+qf2c,-2,not asked
+qf2c,-1,refused
+qf2d,-2,not asked
+qf2d,-1,refused
+qf2e,-2,not asked
+qf2e,-1,refused
+qf2f,-2,not asked
+qf2f,-1,refused
+qf2g,-2,not asked
+qf2g,-1,refused
+qf2h,-2,not asked
+qf2h,-1,refused
+qf2i,-2,not asked
+qf2i,-1,refused
+qf2j,-2,not asked
+qf2j,-1,refused
+qf3,-2,not asked
+qf3,-1,refused
+qf3,1,"agree strongly,"
+qf3,2,"agree somewhat,"
+qf3,3,"fall somewhere in between,"
+qf3,4,"disagree somewhat,"
+qf3,5,"disagree strongly,"
+qf3,6,or haven't you thought much about this?
+qf4,-2,not asked
+qf4,-1,refused
+qf4,1,"agree strongly,"
+qf4,2,"agree somewhat,"
+qf4,3,"fall somewhere in between,"
+qf4,4,"disagree somewhat,"
+qf4,5,"disagree strongly,"
+qf4,6,or haven't you thought much about this?
+qf5,-2,not asked
+qf5,-1,refused
+qf5,1,"agree strongly,"
+qf5,2,"agree somewhat,"
+qf5,3,"fall somewhere in between,"
+qf5,4,"disagree somewhat,"
+qf5,5,"disagree strongly,"
+qf5,6,or haven't you thought much about this?
+qf6,-2,not asked
+qf6,-1,refused
+qf6,1,"agree strongly,"
+qf6,2,"agree somewhat,"
+qf6,3,"fall somewhere in between,"
+qf6,4,"disagree somewhat,"
+qf6,5,"disagree strongly,"
+qf6,6,or haven't you thought much about this?
+qf7,-2,not asked
+qf7,-1,refused
+qf7,1,"very important,"
+qf7,2,"somewhat important,"
+qf7,3,"not very important,"
+qf7,4,"not important at all, or"
+qf7,5,haven't you thought much about this?
+qf8,-2,not asked
+qf8,-1,refused
+qf8,1,"very important,"
+qf8,2,"somewhat important,"
+qf8,3,"not very important,"
+qf8,4,"not important at all, or"
+qf8,5,haven't you thought much about this?
+qf9,-2,not asked
+qf9,-1,refused
+qf9,1,"very important,"
+qf9,2,"somewhat important,"
+qf9,3,"not very important,"
+qf9,4,"not important at all, or"
+qf9,5,haven't you thought much about this?
+qf10,-2,not asked
+qf10,-1,refused
+qf10,1,"very important,"
+qf10,2,"somewhat important,"
+qf10,3,"not very important,"
+qf10,4,"not important at all, or"
+qf10,5,haven't you thought much about this?
+qf11,-2,not asked
+qf11,-1,refused
+qf11,1,"very serious,"
+qf11,2,"somewhat serious,"
+qf11,3,"not too serious,"
+qf11,4,"not serious at all,"
+qf11,5,haven't thought much about this
+qf12,-2,not asked
+qf12,-1,refused
+qf12,1,"it is caused mostly by human activities, like driving cars a"
+qf12,2,"it is caused mostly by natural changes in the climate,"
+qf12,3,"it is not occurring at all, or"
+qf12,4,haven't you thought much about this?
+qf13,-2,not asked
+qf13,-1,refused
+qf13,1,"support,"
+qf13,2,"oppose,"
+qf13,3,"neither support nor oppose,"
+qf13,4,or haven't you thought much about this?
+qf14,-2,not asked
+qf14,-1,refused
+qf14,1,"support,"
+qf14,2,"oppose,"
+qf14,3,"neither support nor oppose,"
+qf14,4,or haven't you thought much about this?
+qf15a,-2,not asked
+qf15a,-1,refused
+qf15b,-2,not asked
+qf15b,-1,refused
+qf15c,-2,not asked
+qf15c,-1,refused
+qf16,-2,not asked
+qf16,-1,refused
+qf16,1,"agree strongly,"
+qf16,2,"agree somewhat,"
+qf16,3,"fall somewhere in between,"
+qf16,4,"disagree somewhat,"
+qf16,5,"disagree strongly,"
+qf16,6,or haven't you thought much about this?
+qf17,-2,not asked
+qf17,-1,refused
+qf17,1,"agree strongly,"
+qf17,2,"agree somewhat,"
+qf17,3,"fall somewhere in between,"
+qf17,4,"disagree somewhat,"
+qf17,5,"disagree strongly,"
+qf17,6,or haven't you thought much about this?
+qf18,-2,not asked
+qf18,-1,refused
+qf18,1,supports
+qf18,2,opposes
+qf18,3,haven't heard anything about this
+qf19,-2,not asked
+qf19,-1,refused
+qf19,1,"very serious,"
+qf19,2,"somewhat serious,"
+qf19,3,"not too serious,"
+qf19,4,"not serious at all,"
+qf19,5,haven't thought much about this
+qf20,-2,not asked
+qf20,-1,refused
+qf20,1,agree with (1) more strongly
+qf20,2,agree with (2) more strongly
+qf20,3,agree with both about equally
+qf20,4,haven't thought much about this
+qf21,-2,not asked
+qf21,-1,refused
+qf21,1,agree with (1) more strongly
+qf21,2,agree with (2) more strongly
+qf21,3,agree with both about equally
+qf21,4,haven't thought much about this
+qf22,-2,not asked
+qf22,-1,refused
+qf22,1,agree with (1) more strongly
+qf22,2,agree with (2) more strongly
+qf22,3,agree with both about equally
+qf22,4,haven't thought much about this
+qf23a,-2,not asked
+qf23a,-1,refused
+qf23b,-2,not asked
+qf23b,-1,refused
+qf23c,-2,not asked
+qf23c,-1,refused
+qf23d,-2,not asked
+qf23d,-1,refused
+qf23e,-2,not asked
+qf23e,-1,refused
+qf23f,-2,not asked
+qf23f,-1,refused
+qf24,-2,not asked
+qf24,-1,refused
+qf24,1,increased
+qf24,2,reduced
+qf24,3,kept about the same
+qf24,4,haven't thought much about this
+qf25a,-2,not asked
+qf25a,-1,refused
+qf25b,-2,not asked
+qf25b,-1,refused
+qf25c,-2,not asked
+qf25c,-1,refused
+qf25d,-2,not asked
+qf25d,-1,refused
+qf25e,-2,not asked
+qf25e,-1,refused
+qf26,-2,not asked
+qf26,-1,refused
+qf26,1,increase
+qf26,2,decrease
+qf26,3,keep it the same
+qf26,4,haven't heard anything about this
+qf27,-2,not asked
+qf27,-1,refused
+qf27,1,"support strongly,"
+qf27,2,"support somewhat,"
+qf27,3,"neither support nor oppose this,"
+qf27,4,"oppose somewhat,"
+qf27,5,"oppose strongly,"
+qf27,6,or haven't you thought much about this?
+qf28,-2,not asked
+qf28,-1,refused
+qf28,1,"support strongly,"
+qf28,2,"support somewhat,"
+qf28,3,"neither support nor oppose this,"
+qf28,4,"oppose somewhat,"
+qf28,5,"oppose strongly,"
+qf28,6,or haven't you thought much about this?
+qf29,-2,not asked
+qf29,-1,refused
+qf29,1,"support strongly,"
+qf29,2,"support somewhat,"
+qf29,3,"neither support nor oppose this,"
+qf29,4,"oppose somewhat,"
+qf29,5,"oppose strongly,"
+qf29,6,or haven't you thought much about this?
+qf30,-2,not asked
+qf30,-1,refused
+qf30,1,"support strongly,"
+qf30,2,"support somewhat,"
+qf30,3,"neither support nor oppose this,"
+qf30,4,"oppose somewhat,"
+qf30,5,"oppose strongly,"
+qf30,6,or haven't you thought much about this?
+qf31,-2,not asked
+qf31,-1,refused
+qf31,1,"support strongly,"
+qf31,2,"support somewhat,"
+qf31,3,"neither support nor oppose this,"
+qf31,4,"oppose somewhat,"
+qf31,5,"oppose strongly,"
+qf31,6,or haven't you thought much about this?
+qf32a,-2,not asked
+qf32a,-1,refused
+qf32a,1,to work with other countries one by one to establish agreeme
+qf32a,2,to work with groups of countries through international insti
+qf32a,3,"to leave things as they are,"
+qf32a,4,haven't thought much about this
+qf32b,-2,not asked
+qf32b,-1,refused
+qf32b,1,to work with other countries one by one to establish agreeme
+qf32b,2,to work with groups of countries through international insti
+qf32b,3,"to leave things as they are,"
+qf33,-2,not asked
+qf33,-1,refused
+qf33,1,"repeal the north american free trade agreement, called nafta"
+qf33,2,"leave nafta the way it is,"
+qf33,3,adopt agreements like nafta but with more latin american cou
+qf33,4,haven't thought much about this
+qf34,-2,not asked
+qf34,-1,refused
+qf34,1,"the loss of many jobs in this country,"
+qf34,2,"some jobs,"
+qf34,3,"only a few jobs,"
+qf34,4,"the loss of no jobs,"
+qf34,5,haven't thought much about this
+qf35,-2,not asked
+qf35,-1,refused
+qf35,1,"the creation of many jobs in this country,"
+qf35,2,"some jobs,"
+qf35,3,"only a few jobs,"
+qf35,4,"the creation of no jobs,"
+qf35,5,haven't thought much about this
+qf36,-2,not asked
+qf36,-1,refused
+qf36,1,"higher trade barriers (than most other countries),"
+qf36,2,"lower trade barriers (than most other countries),"
+qf36,3,"about the same, or"
+qf36,4,haven't you heard anything about this?
+qf37a,-2,not asked
+qf37a,-1,refused
+qf37b,-2,not asked
+qf37b,-1,refused
+qf37c,-2,not asked
+qf37c,-1,refused
+qf37d,-2,not asked
+qf37d,-1,refused
+qf37e,-2,not asked
+qf37e,-1,refused
+qf37f,-2,not asked
+qf37f,-1,refused
+qf38,-2,not asked
+qf38,-1,refused
+qf38,1,"the u.s. take the lead acting by itself,"
+qf38,2,should the u.s. take the lead acting with close allies like
+qf38,3,should the u.s. & its close allies take the lead acting thro
+qf38,4,"should the united nations take the lead,"
+qf38,5,"should nobody take the lead,"
+qf38,6,haven't thought much about this
+qf39,-2,not asked
+qf39,-1,refused
+qf39,1,"the u.s. take the lead acting by itself,"
+qf39,2,should the u.s. take the lead acting with close allies like
+qf39,3,should the u.s. & its close allies take the lead acting thro
+qf39,4,"should the united nations & the world bank take the lead,"
+qf39,5,"should nobody take the lead,"
+qf39,6,haven't thought much about this
+qf40,-2,not asked
+qf40,-1,refused
+qf40,1,"1 dollar,"
+qf40,2,"5 dollars,"
+qf40,3,"10 dollars,"
+qf40,4,"20 dollars,"
+qf40,5,"30 dollars or more, or"
+qf40,6,don't you have much idea about that?
+qf41,-2,not asked
+qf41,-1,refused
+qf41,1,"1 dollar,"
+qf41,2,"5 dollars,"
+qf41,3,"10 dollars,"
+qf41,4,"20 dollars,"
+qf41,5,"30 dollars or more, or"
+qf41,6,don't you have much idea about that?
+qf42,-2,not asked
+qf42,-1,refused
+qf42,1,"4 dollars worth,"
+qf42,2,"8 dollars,"
+qf42,3,"12 dollars,"
+qf42,4,"24 dollars or more, or"
+qf42,5,don't you have much idea about that?
+qf43,-2,not asked
+qf43,-1,refused
+qf43,1,"fewer than 5 out of 100,"
+qf43,2,"about 10 of 100,"
+qf43,3,"about 20 of 100,"
+qf43,4,"30 or more out of 100, or"
+qf43,5,don't you have much idea about that?
+qf44,-2,not asked
+qf44,-1,refused
+qf44,1,true
+qf44,2,false
+qf45,-2,not asked
+qf45,-1,refused
+qf45,1,true
+qf45,2,false
+qf47,-2,not asked
+qf47,-1,refused
+qf47,1,"agree strongly,"
+qf47,2,"agree somewhat,"
+qf47,3,"fall somewhere in between,"
+qf47,4,"disagree somewhat,"
+qf47,5,"disagree strongly,"
+qf47,6,or haven't you thought much about this?
+qf48,-2,not asked
+qf48,-1,refused
+qf48,1,"agree strongly,"
+qf48,2,"agree somewhat,"
+qf48,3,"fall somewhere in between,"
+qf48,4,"disagree somewhat,"
+qf48,5,"disagree strongly,"
+qf48,6,or haven't you thought much about this?
+qf52,-2,not asked
+qf52,-1,refused
+qf53,-2,not asked
+qf53,-1,refused
+qf53,1,"a great deal,"
+qf53,2,"quite a bit,"
+qf53,3,"some,"
+qf53,4,"very little, or"
+qf53,5,none?
+qf59,-2,not asked
+qf59,-1,refused
+qf59,1,"agree,"
+qf59,2,"disagree,"
+qf59,3,"do you fall somewhere in between,"
+qf59,4,haven't thought much about this
+qf60,-2,not asked
+qf60,-1,refused
+qf60,1,"agree,"
+qf60,2,"disagree,"
+qf60,3,"do you fall somewhere in between,"
+qf60,4,haven't thought much about this
+qf61,-2,not asked
+qf61,-1,refused
+qf61,1,"agree,"
+qf61,2,"disagree,"
+qf61,3,"do you fall somewhere in between,"
+qf61,4,haven't thought much about this
+qf62,-2,not asked
+qf62,-1,refused
+qf62,1,"agree,"
+qf62,2,"disagree,"
+qf62,3,"do you fall somewhere in between,"
+qf62,4,haven't thought much about this
+qf63,-2,not asked
+qf63,-1,refused
+qf63,1,agree with (1) more strongly
+qf63,2,agree with (2) more strongly
+qf63,3,agree with both about equally
+qf63,4,haven't thought much about this
+qf64,-2,not asked
+qf64,-1,refused
+qf64,1,strongly
+qf64,2,somewhat
+qf65a,-2,not asked
+qf65a,-1,refused
+qf65a,1,agree strongly
+qf65a,2,agree somewhat
+qf65a,3,neither agree nor disagree
+qf65a,4,disagree somewhat
+qf65a,5,disagree strongly
+qf65b,-2,not asked
+qf65b,-1,refused
+qf65b,1,agree strongly
+qf65b,2,agree somewhat
+qf65b,3,neither agree nor disagree
+qf65b,4,disagree somewhat
+qf65b,5,disagree strongly
+qf65c,-2,not asked
+qf65c,-1,refused
+qf65c,1,agree strongly
+qf65c,2,agree somewhat
+qf65c,3,neither agree nor disagree
+qf65c,4,disagree somewhat
+qf65c,5,disagree strongly
+qf65d,-2,not asked
+qf65d,-1,refused
+qf65d,1,agree strongly
+qf65d,2,agree somewhat
+qf65d,3,neither agree nor disagree
+qf65d,4,disagree somewhat
+qf65d,5,disagree strongly
+qf65e,-2,not asked
+qf65e,-1,refused
+qf65e,1,agree strongly
+qf65e,2,agree somewhat
+qf65e,3,neither agree nor disagree
+qf65e,4,disagree somewhat
+qf65e,5,disagree strongly
+qfir1a,-2,not asked
+qfir1a,-1,refused
+qfir1b,-2,not asked
+qfir1b,-1,refused
+qfir1c,-2,not asked
+qfir1c,-1,refused
+qfir2a,-2,not asked
+qfir2a,-1,refused
+qfir2a,1,strongly agree
+qfir2a,2,agree
+qfir2a,3,neither agree nor disagree
+qfir2a,4,disagree
+qfir2a,5,strongly disagree
+qfir2b,-2,not asked
+qfir2b,-1,refused
+qfir2b,1,strongly agree
+qfir2b,2,agree
+qfir2b,3,neither agree nor disagree
+qfir2b,4,disagree
+qfir2b,5,strongly disagree
+qfir3c,-2,not asked
+qfir3c,-1,refused
+qfir3c,1,strongly agree
+qfir3c,2,agree
+qfir3c,3,neither agree nor disagree
+qfir3c,4,disagree
+qfir3c,5,strongly disagree
+qfir3d,-2,not asked
+qfir3d,-1,refused
+qfir3d,1,strongly agree
+qfir3d,2,agree
+qfir3d,3,neither agree nor disagree
+qfir3d,4,disagree
+qfir3d,5,strongly disagree
+qfir4a,-2,not asked
+qfir4a,-1,refused
+qfir4b,-2,not asked
+qfir4b,-1,refused
+qfir4c,-2,not asked
+qfir4c,-1,refused
+qfir4d,-2,not asked
+qfir4d,-1,refused
+qfir4e,-2,not asked
+qfir4e,-1,refused
+qfir4f,-2,not asked
+qfir4f,-1,refused
+qfir5,-2,not asked
+qfir5,-1,refused
+qfir5,1,help a lot
+qfir5,2,help a little
+qfir5,3,neither help nor hurt
+qfir5,4,hurt a little
+qfir5,5,hurt a lot
+qfir6a,-2,not asked
+qfir6a,-1,refused
+qfir6a,1,agree strongly
+qfir6a,2,agree
+qfir6a,3,neither agree nor disagree
+qfir6a,4,disagree
+qfir6a,5,disagree srongly
+qfir6b,-2,not asked
+qfir6b,-1,refused
+qfir6b,1,agree strongly
+qfir6b,2,agree
+qfir6b,3,neither agree nor disagree
+qfir6b,4,disagree
+qfir6b,5,disagree strongly
+ppgender,1,male
+ppgender,2,female
+ppgender,99,missing
+ppage,999,missing
+ppagecat,1,18-24
+ppagecat,2,25-34
+ppagecat,3,35-44
+ppagecat,4,45-54
+ppagecat,5,55-64
+ppagecat,6,65-74
+ppagecat,7,75+
+ppagecat,99,age missing/under 18
+ppagect4,1,18-29
+ppagect4,2,30-44
+ppagect4,3,45-59
+ppagect4,4,60+
+ppagect4,99,age missing/under 18
+ppeth,1,"white, non-hispanic"
+ppeth,2,"black, non-hispanic"
+ppeth,3,"other, non-hispanic"
+ppeth,4,hispanic
+ppeth,99,missing
+ppeduc,1,less than hs
+ppeduc,2,"some hs, no diploma"
+ppeduc,3,graduated from hs - diploma or equivalent (ged)
+ppeduc,4,"some college, no degree"
+ppeduc,5,"associate degree (aa, as)"
+ppeduc,6,bachelor's degree
+ppeduc,7,master's degree
+ppeduc,8,"professional degree (md, dds, llb, jd)"
+ppeduc,9,doctorate degree
+ppeduc,99,missing
+ppeducat,1,less than hs
+ppeducat,2,hs
+ppeducat,3,some college
+ppeducat,4,bachelor's degree or higher
+ppeducat,99,missing
+pphouse,1,a single-family house detached
+pphouse,2,a single-family house attached
+pphouse,3,an apartment
+pphouse,4,a condominium or co-op
+pphouse,5,college dormitory
+pphouse,6,a manufactured or mobile home
+pphouse,7,other
+pphouse,99,missing
+pprent,1,own
+pprent,2,rent
+pprent,3,do not pay for housing
+pprent,99,missing
+ppdualin,0,no
+ppdualin,1,yes
+ppdualin,99,missing
+ppincimp,1,"less than $5,000"
+ppincimp,2,"$5,000 to $7,499"
+ppincimp,3,"$7,500 to $9,999"
+ppincimp,4,"$10,000 to $12,499"
+ppincimp,5,"$12,500 to $14,999"
+ppincimp,6,"$15,000 to $19,999"
+ppincimp,7,"$20,000 to $24,999"
+ppincimp,8,"$25,000 to $29,999"
+ppincimp,9,"$30,000 to $34,999"
+ppincimp,10,"$35,000 to $39,999"
+ppincimp,11,"$40,000 to $49,999"
+ppincimp,12,"$50,000 to $59,999"
+ppincimp,13,"$60,000 to $74,999"
+ppincimp,14,"$75,000 to $84,999"
+ppincimp,15,"$85,000 to $99,999"
+ppincimp,16,"$100,000 to $124,999"
+ppincimp,17,"$125,000 or more"
+ppincimp,99,missing
+ppmarit,1,married
+ppmarit,2,single (never married)
+ppmarit,3,divorced
+ppmarit,4,widowed
+ppmarit,5,separated
+ppmarit,99,missing
+pphhhead,0,no
+pphhhead,1,yes
+pphhhead,99,missing
+pphhsize,99,missing
+ppt01,99,missing
+ppt1317,99,missing
+ppt18ov,99,missing
+ppt25,99,missing
+ppt612,99,missing
+ppwork,1,i work as a paid employee
+ppwork,2,i am self-employed
+ppwork,3,"i am an owner/partner in small business, prof practice, farm"
+ppwork,4,i work at least 15 hrs/wk w/o pay in family business/farm
+ppwork,5,"i am unemployed, temporarily laid off, but looking for work"
+ppwork,6,i am retired
+ppwork,7,i am disabled
+ppwork,8,i am a homemaker
+ppwork,9,other
+ppwork,99,missing
+ppstaten,11,me
+ppstaten,12,nh
+ppstaten,13,vt
+ppstaten,14,ma
+ppstaten,15,ri
+ppstaten,16,ct
+ppstaten,21,ny
+ppstaten,22,nj
+ppstaten,23,pa
+ppstaten,31,oh
+ppstaten,32,in
+ppstaten,33,il
+ppstaten,34,mi
+ppstaten,35,wi
+ppstaten,41,mn
+ppstaten,42,ia
+ppstaten,43,mo
+ppstaten,44,nd
+ppstaten,45,sd
+ppstaten,46,ne
+ppstaten,47,ks
+ppstaten,51,de
+ppstaten,52,md
+ppstaten,53,dc
+ppstaten,54,va
+ppstaten,55,wv
+ppstaten,56,nc
+ppstaten,57,sc
+ppstaten,58,ga
+ppstaten,59,fl
+ppstaten,61,ky
+ppstaten,62,tn
+ppstaten,63,al
+ppstaten,64,ms
+ppstaten,71,ar
+ppstaten,72,la
+ppstaten,73,ok
+ppstaten,74,tx
+ppstaten,81,mt
+ppstaten,82,id
+ppstaten,83,wy
+ppstaten,84,co
+ppstaten,85,nm
+ppstaten,86,az
+ppstaten,87,ut
+ppstaten,88,nv
+ppstaten,91,wa
+ppstaten,92,or
+ppstaten,93,ca
+ppstaten,94,ak
+ppstaten,95,hi
+ppstaten,99,missing
+ppreg4,1,northeast
+ppreg4,2,midwest
+ppreg4,3,south
+ppreg4,4,west
+ppreg4,99,missing
+ppreg9,1,new england
+ppreg9,2,mid-atlantic
+ppreg9,3,east-north central
+ppreg9,4,west-north central
+ppreg9,5,south atlantic
+ppreg9,6,east-south central
+ppreg9,7,west-south central
+ppreg9,8,mountain
+ppreg9,9,pacific
+ppreg9,99,missing
+ppmsacat,0,non-metro
+ppmsacat,1,metro
+ppmsacat,99,missing

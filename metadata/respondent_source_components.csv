@@ -1,0 +1,2 @@
+poll_id,source_id,primary_key,component_key,column_prefix,cardinality,evidence
+btp-general-election-2004,btp-general-election-2004-raw-responses,caseid_original,caseid,raw_,many-to-one,R/respondent_btp_general.R; unique original caseid; every primary row must match

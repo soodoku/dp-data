@@ -1,9 +1,9 @@
 test_that("all 23 deposited poll batteries have source-based builds", {
   expect_setequal(
-    read_metadata("survey_sources")$poll_id,
+    knowledge_poll_ids(),
     read_metadata("knowledge_batteries")$poll_id
   )
-  purrr::walk(read_metadata("survey_sources")$poll_id, function(poll_id) {
+  purrr::walk(knowledge_poll_ids(), function(poll_id) {
     survey <- read_poll_survey(poll_id)
     people <- knowledge_participants(poll_id, survey)
     expect_identical(
@@ -28,6 +28,10 @@ test_that("redacted extracts expose only the reviewed text fields", {
     allowed <- switch(record$poll_id,
       "btp-2007" = "Sgroup",
       "michigan-2009" = paste0("t3q", 38:42),
+      "nic2-2003" = c("stcd", "time", "qstcd"),
+      "btp-presidential-primaries-2004" = c(
+        "b1q38", "f1q49a", "f1q49b", "f1q49c", "f1q49d"
+      ),
       "uk-health-1998" = c("pollid1", "group1", "pollgroup1"),
       character()
     )
