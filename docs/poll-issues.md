@@ -1,8 +1,7 @@
 # Poll-level issue register
 
 Review date: 2026-09-23. Scope: the 34 polls in the current registry, with detailed
-coverage of the 23 existing knowledge builds and the UK Health and UK–EU
-respondent reconstructions.
+coverage of the 23 existing knowledge builds and the respondent reconstructions.
 
 ## Decision for this pass
 
@@ -75,6 +74,55 @@ unavailable instrument with a similarly named document. In particular, the UK
 Health PDF is a **final project report**, not a complete questionnaire, and the
 published San Mateo post document is a short supplement without the relevant
 knowledge questions. The limitations are part of the evidence.
+
+### Metadata and online source collection (2026-09-23)
+
+The supplied `meta_data-20260923T233458Z-1-001.zip` contains 113 files,
+all byte-identical to the previously extracted metadata members. There are 107
+unique file hashes. The bundle catalog records the replacement ZIP checksum and
+the previous bundle name/checksum; the member contents have not changed.
+Materials are now cataloged under `data/<poll_id>/` or `data/shared/`, with
+per-poll manifest references to shared copies. Distinct versions are retained.
+Original paths, online URLs, hashes, and comparison uses are in
+[the artifact catalog](../metadata/artifacts.csv). Cataloging a document does not
+mean its answer keys, sample definition, or recodes have been verified.
+
+The archive contains explicit editorial decisions as well as coding descriptions.
+For example, `data/shared/codebooks/attitude_indices/indices-to-drop.docx` calls
+for dropping the medical-care quality index and two San Mateo measures, discussing
+values and empirical premises. Consult these notes and the successive attitude
+appendices before treating missing indices as accidental data loss.
+
+Several downloaded documents require particular care:
+
+- Stanford's “Texas Utility Questionnaires” download identifies **Entergy** in
+  its header. It is a related-event instrument, not an established CPL, WTU or
+  SWEPCO instrument. No response code or answer key is transferred from it.
+- The Zeguo results download explicitly identifies **February 2008**, not the
+  2005 infrastructure poll. Its manifest marks it as a different-event reference;
+  it must not be used as a numerical parity target for `zeguo-2005`.
+- The Bulgaria crime results identify **12–13 October 2002**, despite a later
+  website publication date. The separate Roma results describe April 2007.
+  Event identity comes from the document, not the website date.
+- NIC II has separate T2 face-to-face treatment and control questionnaires. The
+  online document identifies itself as a Phase 2 follow-up for experimental and
+  control groups. Keep these modes, phases and samples distinct when mapping
+  the two foreign-policy polls.
+- The 2005 health/education report discusses both online deliberation and local
+  face-to-face events. The archived `briefing_materials/newhaven.pdf` is an
+  **October 2005 education forum**, not the New Haven airport/revenue-sharing
+  experiment. It remains a shared background reference, without that poll link.
+- The Tomorrow's Europe paper describes 362 attendees and three survey waves,
+  whereas historical polardata includes 344. The general-election online report
+  describes about 200 deliberators and 700 controls; other manuscripts and source
+  extracts use different counts. These are sample/version reconciliation tasks,
+  not evidence that a respondent should be added or dropped.
+
+Published tables can check sample sizes, item proportions, direction and scale,
+and sometimes index means. Before turning any table into an automated benchmark,
+establish the exact cohort, wave, weights, missing-value rule and rounding.
+Agreement with a paper using the same historical scoring is useful but is not an
+independent validation of that scoring. No estimates change in this source pass.
 
 ## Overview of existing knowledge builds
 
@@ -493,7 +541,7 @@ until independent source evidence and numerical consequences are assessed.
 
 ### UKC-01: An archived post-wave component reads another item at baseline
 
-**Status:** preserve / review; already cataloged as documented-not-implemented in
+**Status:** preserved and parity-confirmed; cataloged in
 [source findings](../metadata/source_findings.csv).
 
 The [archived UK Crime script](../vault/cdd/scripts/uk_crime.R), line 143,
@@ -502,12 +550,19 @@ The [codebook](../data/uk-crime-1994/codebook.txt), rechecked here, identifies
 `TIMCHLD2` as post-wave QQ1d, time with children, and `MORECOP1` as baseline Q1j,
 more police. They differ in both construct and wave.
 
-**Unknown:** whether this script version generated the published aggregate,
-whether another script overwrote it, and how many final index observations or
-estimates would change. Do not infer the aggregate is wrong from this line alone.
-**Next check:** reconstruct the executed `rootcauset2` chain, compare both source
-fields respondent by respondent, inspect the index memo's item membership, and
-recompute downstream quantities only after establishing the lineage.
+The maintained reconstruction now reproduces all 37 historical respondent
+fields, including this post index, for all 299 selected people. This establishes
+that the baseline-policing substitution is consistent with the deposited values;
+it does not establish the substantive reason for that substitution.
+
+A diagnostic replacement of `morecop1` by `timchld2`, holding the other two
+components and the available-item averaging rule fixed, changes 141 jointly
+observed values and one missingness status. The post-index mean changes from
+0.8253902 to 0.8348714 over its available observations; the largest jointly
+observed individual change is 0.25. This candidate is **not adopted**. Inspect
+the index memorandum and the published article's item membership and scale
+direction, establish the rationale or transcription history, and then evaluate
+downstream consequences before proposing a correction.
 
 ### UKC-02: Knowledge sample and respondent-ID conventions
 
@@ -519,9 +574,25 @@ knowledge scores match the deposit; adding the ungrouped attendee would change
 the analysis universe rather than repair the same estimator.
 159 raw IDs have floating-point noise up to roughly `1.5e-12`. Current IDs round
 within `1e-8`; truncation can collide. Archived generated IDs use `10000 + row`.
-**Next check:** provide an explicit legacy-ID crosswalk and retain membership
-missingness separately from respondent eligibility. The codebook and
+The respondent layer now provides the explicit `historical_respondent_id`
+alias while retaining the original raw identifier, all 869 source records and
+separate historical/knowledge memberships. The codebook and
 [existing audit](uk-crime-eu.md) support these contracts.
+
+### UKC-03: Issue-specific knowledge fields are absent from the historical export
+
+**Preserve / review.** The archived script computes four-item legal knowledge
+as `t1knowr`, `t2knowr` and `t1knowrcor`, separately from the seven-item overall
+knowledge score. In the deposited polardata, all 299 UK Crime values of those
+three fields and `knowgainr`/`knowgainr2` are missing. The ordinary seven-item
+fields are observed and reproduced exactly.
+
+The new respondent definitions preserve those five export fields as explicit
+constant missing values; they do not alias them to overall knowledge or infer
+that the four legal questions were unasked. Trace the object saved by the
+historical script through the merge/export versions and consult the cross-poll
+knowledge index memorandum before reinstating an issue-specific score. Compare
+sample, item count, missingness and downstream effects in a correction pass.
 
 ## UK–EU 1995 — uk-eu-1995
 
@@ -627,10 +698,40 @@ T1 is unchanged. These are input-score effects, not revised paper estimates.
 
 **UKM-02 — source-scoped identifiers.** The 258 attendees in groups 2–16 have
 `source-row-...` identifiers because no source column uniquely identifies the
-full file. They are not validated person keys across other files. The eight-item
-battery omits an additional succession item; do not add it just because it is
-available. Recheck questionnaire version and the intended battery definition.
+full file. They are not validated person keys across other files. The archived
+`uk_monarchy.R` explicitly generates `caseid = 1000 + source_row` before
+filtering `GROUP != -1`; these aliases identify all 258 historical rows exactly.
+They are stored separately from source identity. The eight-item knowledge export
+omits succession (`Q8A`/`R8A`, correct code 5), whereas the historical aggregate
+script explicitly includes it in its nine-item denominator. The new historical
+respondent definitions reproduce that nine-item battery and its baseline Q5C
+reuse. The existing eight-item knowledge export remains unchanged; changing
+either contract requires assessing the intended battery against the instrument.
 See the [existing audit](monarchy-election-utilities.md).
+
+**UKM-03 — attitude construction and numeric precision.** The archived
+`British Monarchy Indices_final draft.doc` identifies the four composites and
+their constituents. The support index uses Q1/Q11/Q9/Q14 and their R counterparts;
+the people index uses 6A/6B/6E/6F/7A/7B; power uses 15/13D; Lords reform uses
+18/19A/19B. Available-component means preserve missingness. The referendum
+field is Q14/R14, not the Q15 alias in the archived clean script: raw field
+labels and the stored referendum component establish the mapping. Codes 1–4
+map to 0/.333/1/.667. Both recoded components and final composite values carry
+32-bit float precision. These choices reproduce all eight historical attitude
+columns and individual extremity for 258 attendees within 1e-10. The original
+command that produced the stored float representation remains unverified.
+Before changing direction, rounding or nonresponse handling, reconcile the
+questionnaire's referendum ordering with the index memo and source labels.
+
+**UKM-04 — expanded-source recodes are not automatically valid demographics.**
+The archived age recode specifies midpoints only for AGEB 2–9 and leaves codes
+10 and 11 unchanged. Three and five nonattendees respectively retain those
+numeric codes in the historical-definition output. A6 code 6 also passes
+through unchanged for one nonattendee; B12A code 6 passes through the education
+recoder unless the qualification override applies. No attendee has these three
+source-code exceptions. Review the original response labels before producing
+corrected age, interest or education measures for the expanded population.
+Do not interpret the retained 10/11 age codes as years without that review.
 
 ## UK General Election 1997 — uk-general-election-1997
 
@@ -647,6 +748,41 @@ and the field labels for the filter and each placement scale. The source
 codebook was not newly audited item by item in this pass. Preserve party-specific
 placement ranges rather than impose a generic “correct category” rule.
 
+**UKGE-02 — the pre/post tax indices measure different questions.** The raw
+`taxr1` field is Q13, preferences over tax cuts versus social-service spending.
+Historical `t1tax` maps codes 1–7 to 0/.17/.33/.5/.67/.83/1, stored as floats.
+Historical `t2tax`, however, is labelled “t2 relabel txr2re - tax index”; the
+intermediate `txr2reco` is labelled “recoded taxret2”. `taxret2` is Q4c, whether
+the overall level of taxes had gone up or down since the 1992 election. The
+[codebook](../data/uk-general-election-1997/codebook.txt), TAXRET1/TAXRET2 entry,
+confirms its five categories. Mapping codes 1–5 to 0/.25/.5/.75/1 and -8/-9 to
+missing reproduces all 275 historical post values: 259 observed and 16 missing.
+Using the analogous preference field `taxr2` instead would change 207 jointly
+observed values and 17 missingness indicators. That alternative is not applied.
+Before correction, establish the intended longitudinal construct from both
+questionnaires and the original index specification; then recompute affected
+attitude change, dispersion and downstream estimates in a separate version.
+
+**UKGE-03 — Labour minimum-wage placement reuses the baseline response.**
+`uk_bge.R` assigns `wagel2pk <- nona(wagel1 > 4)`. The new historical recode
+preserves this literal dependency in post knowledge and joint-correct knowledge;
+its metadata identifies both as dependent on T1 and T2. Substituting `wagel2`
+would change 54 of 275 binary post items. Review Q14 and executed scoring syntax
+before deciding that this is an unintended copy error; quantify composite and
+model changes separately before adoption. The historical baseline mean also
+weights a float32 factual subscale with three party-placement subscales. This
+rounding is reproduced from raw answers, not copied from stored indices.
+
+**UKGE-04 — demographic and missing-code boundaries.** Ethnicity -7 becomes
+missing, including two attendees; codes other than 1 become the historical
+minority indicator. Age -7 becomes missing. School education is overridden by
+higher qualifications; household income's 16 categories collapse to five and
+high income means a collapsed category above 2. Source labels and the existing
+codebook establish the raw categories; the archived script establishes the
+historical transformations. All 35 respondent-field targets match for the 275
+attendees at 1e-10, including missingness. This is reproduction evidence, not
+an endorsement of the tax mismatch or the cross-wave knowledge dependency.
+
 ## CPL 1996 — cpl-1996
 
 **CPL-01 — preserve missing-code provenance across file versions.** The build
@@ -662,6 +798,32 @@ transforms before collapsing response reasons. Wider sample and attitude fields
 remain outside this parity result. Evidence is in the existing utilities audit;
 this pass did not repeat its entire instrument audit.
 
+**CPL-02 — historical IDs and staged normalization.** `tx_cpl.R` generates
+`paste0(29, 10000 + source_row)` before retaining nonmissing groups. These aliases
+match all 216 historical attendees. The new respondent table retains all 1,246
+source rows and keeps original survey IDs separate. Attitude components use
+full-source empirical bounds: 0–10 except POOR/COMPET 1–5 and FUELS2 1–10.
+T1 conservation is an available mean of scaled ADDFAC1/REDUCE1, then scaled
+again using attendee bounds .05–1 in the Kyu export. Individual extremity was
+already computed using the first version. The maintained recode fixes these
+historical bounds so changing the supplied row subset cannot change a score.
+Review the intended common metric and both wave instruments before replacing
+these calibrations with theoretical endpoints. All 39 respondent-field targets
+match for 216 attendees, including missingness, at 1e-10.
+
+**CPL-03 — removed competition item still enters extremity.** The poll script
+uses seven baseline indices, including COMPET1, in `attextreme`.
+`05_fix_data.R` later removes the competition columns without recomputing
+extremity. The maintained recode therefore retains COMPET1 as a dependency even
+though the final historical wide table exposes only six attitude pairs. Before
+correction, decide whether the intended extremity definition should follow the
+final attitude battery or the earlier seven-index specification; quantify both
+versions without silently dropping the component. Codebook 99/999 sentinels are
+preserved in raw responses and removed where required for historical scoring.
+Dictionary-based `response_status` does not yet encode every codebook sentinel
+in these newly added demographic and attitude fields; `n_observed_fields` must
+not be used as a scoring denominator or validated response-completeness count.
+
 ## SWEPCO 1996 — swepco-1996
 
 **SWE-01 — early-file readability limits are extraction limits.** The maintained
@@ -676,6 +838,37 @@ Re-read [codebook.txt](../data/swepco-1996/codebook.txt) for the actual item sca
 The current result is limited to the readable source, not proof that an earlier
 source does not exist.
 
+**SWE-02 — conservation's post component is absent under the script's name.**
+`tx_swp.R` refers to `addfact2`, but the survey contains ADDFAC2, not ADDFACT2.
+In `cbind`, the absent `$addfact2` contributes no column. Consequently the
+historical post index uses REDUCE2 alone. The maintained historical recode
+names REDUCE2 explicitly and reproduces all 232 values. The pre index averages
+ADDFAC1 and REDUCE1 and normalizes the attendee mean over [3,10]; the post index
+normalizes REDUCE2 over [0,10]. Check Q2 item wording and the intended pair in
+[codebook.txt](../data/swepco-1996/codebook.txt) before adding ADDFAC2. The absent
+field is a source-code defect; whether the intended corrected index should
+retain the same empirical normalization requires a separate decision.
+
+**SWE-03 — low-income index reflects an earlier script version.** Historical
+`t1att4`/`t2att4` reproduce NEEDTO1/NEEDTO2, the 0–10 basic-needs/cost tradeoff,
+with missing responses filled at 5. The archived script's active LOWINC/POOR
+composite does not reproduce the saved aggregate. The corresponding WTU script
+retains the NEEDTO variant as commented code. This is evidence of a script-vintage
+difference, not grounds to change the historical data. Consult the questionnaire,
+index specification and an executed-script version before choosing a corrected
+construct. The maintained recode identifies NEEDTO inputs explicitly.
+
+**SWE-04 — extremity precedes research scaling and competition removal.** The
+poll script computes research from RESCH1/FEDRCH1 on the raw 0–10 metric (FEDRCH1
+is entirely missing) and fills missing means at 5. Its seven-index extremity
+includes this unscaled research value and competition. `05_fix_data.R` later
+rescales research to 0–1 and drops competition without recomputing extremity.
+The historical definitions reproduce both stages. Renewables use an available
+raw mean calibrated over [1,10] at T1 and [0,10] at T2; other one-item 0–10
+indices use their historical missing fill of 5. All 39 respondent-field targets
+match for the 232 PART==1 attendees at 1e-10. Review the intended extremity
+metric before changing it, and recompute downstream group dispersion separately.
+
 ## WTU 1996 — wtu-1996
 
 **WTU-01 — same early-source limitation as SWEPCO.** `wt2.dta` supplies 230
@@ -689,6 +882,34 @@ Current scores match. Before changing anything, consult the
 [codebook](../data/wtu-1996/codebook.txt), original correctness field and executed
 script version. This is a useful counterexample to treating every suspicious
 historical line as an error in published data.
+
+**WTU-03 — absent ADDFACT2 removes the post conservation component.** As in
+SWE-02, `tx_wtu.R` uses `addfact2` although the source field is ADDFAC2. The
+historical post index is therefore REDUCE2 alone, normalized over attendee
+bounds [3,10]. The pre index averages ADDFAC1/REDUCE1 over [2,10]. Missing
+indices are filled at .5. These fixed ranges reproduce the saved values; using
+the apparent intended two-item post mean would change 179 jointly observed
+participant scores (maximum absolute difference about .588235). Do not make
+that substitution before checking both questionnaire items and index intent.
+
+**WTU-04 — historical low-income index uses NEEDTO at each wave.** The commented
+NEEDTO1/NEEDTO2 variant in `tx_wtu.R`, scaled over [0,10] with missing filled at
+5, exactly reproduces the aggregate. Its active alternative uses LOWINC1/POOR1
+and reuses the baseline pair at T2; that active code does not reproduce the
+saved historical index. The codebook identifies NEEDTO as the importance of
+meeting basic needs despite higher costs. Review the intended construct and
+script vintage before treating either alternative as an approved correction.
+
+**WTU-05 — preserve the order of extremity and export transformations.** As in
+SWE-04, extremity retains seven indices, unscaled 0–10 baseline research, and
+the subsequently removed competition item. The final research columns are
+normalized over [0,10] at T1 and [1,10] at T2, with missing raw means filled at
+5. Renewables' available raw means are normalized over [2.5,10] at both waves
+and missing indices filled at .5. All 39 respondent-field targets match for 230
+PART==1 attendees at 1e-10. These calibrations are fixed for source-row subsets;
+values outside the attendee calibration population are not silently clipped.
+Questionnaire review must precede a change to theoretical scale endpoints,
+missing-value imputation or the final extremity battery.
 
 ## Australia republic 1999 — australia-republic-1999
 
@@ -996,6 +1217,42 @@ The four newer control-study files and Marousi are already byte-identical betwee
 reproduced all 11 result tables. It does not constitute an independent audit of
 the experiments, answer keys, causal claims, weighting, or original field-file merges.
 
+### NH-02 — Event year and attendance need reconciliation
+
+**Preserve / review.** Farrar et al., *Disaggregating Deliberation's Effects*
+(BJPS 2010, DOI 10.1017/S0007123409990433), pp. 338–339, identifies deliberations
+on **1–3 March 2002**, an initial interview sample of **1,032**, and **133**
+attendees. The historical poll-details appendix and current registry label this
+poll **2004**, and the historical analysis has **132** people. The online LSE
+PDF matches both archived copies byte-for-byte; it is not new contrary evidence
+from a different paper version.
+
+Preserve the current ID and cohort while checking raw fieldwork dates, the
+airport/revenue-sharing questionnaire, group assignment and completeness filters.
+Establish which attendee is excluded and why. The paper's split-half experiment
+has three measurement occasions: match the historical pre/post columns to those
+occasions before comparing its Tables 1 and 3. Do not use the similarly named
+October 2005 New Haven education briefing as this event's instrument. Any future
+year correction needs an explicit registry/alias change, separately from any
+sample correction and its consequences for estimates.
+
+### NEW-01 — Newer-poll mode labels and reported sample totals
+
+**Preserve / review.** The registry currently labels both `a1r-climate-2021`
+and `amr-2024` as face-to-face. Stanford's climate/energy project page, the
+NORC October 2021 methods report and the 2025 *Scaling Dialogue* paper describe
+online deliberation. The AMR paper, version 2 (14 May 2026, DOI
+10.12688/wellcomeopenres.24803.2), likewise describes facilitated online groups
+in June–August 2024. Its 2,419-person randomized total includes intervention and
+controls; it is not a deliberator-only count. The downloaded AMR final report's
+cover says June 2026 although its URL filename says July 2026.
+
+Review source event IDs and treatment/attendance definitions, then correct mode
+metadata in a separate correction commit. Before validating any reported gains,
+match country, weighting, analysis sample and wave. For the climate experiment,
+the one-year follow-up is a separate wave from immediate post-deliberation.
+No mode label, sample or score is changed by this source collection.
+
 ## Cross-poll issues for the eventual schema
 
 ### X-01: Knowledge eligibility is not the respondent universe
@@ -1016,7 +1273,8 @@ for the 857-row Monarchy source. File-scoped source-row IDs preserve all these
 records. They cannot support cross-file identity joins until an instrument,
 roster or original merge establishes a crosswalk. Reordering source rows must
 not silently create a new version under the same source ID. For polls other
-than UK Health and UK–EU, historical sample membership remains explicitly
+than UK Health, UK–EU, UK Monarchy, the 1997 UK election, CPL, WTU and SWEPCO,
+historical sample membership remains explicitly
 unknown; no aggregate row order is used to invent identity.
 
 The five historical polls without a reviewed respondent source have concrete
@@ -1040,7 +1298,7 @@ next investigations:
   online-primaries material. Establish event/mode, source file and identity
   before selecting a public source. Similar names are not a valid crosswalk.
 
-The other 14 reviewed polls' remaining respondent recodes are marked
+The other eight reviewed polls' remaining respondent recodes are marked
 `not-yet-reconstructed` in the field-target registry; that is unfinished work,
 not a finding that the underlying sources or formulas are unavailable.
 

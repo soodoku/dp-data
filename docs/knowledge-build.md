@@ -351,8 +351,9 @@ measure. Those investigations remain separate from reproduction.
 
 The original knowledge outputs keep their existing samples and scoring rules.
 `make respondents` creates separate tables in `output/respondent/` for all
-reviewed source records within the 21-poll historical scope. Its UK Health and
-UK–EU definitions reproduce historical respondent measures; other polls retain
+reviewed source records within the 21-poll historical scope. Its UK Health,
+UK–EU, UK Monarchy, 1997 UK election, UK Crime, CPL, WTU and SWEPCO definitions reproduce historical
+respondent measures; other polls retain
 raw registered knowledge fields while respondent reconstruction remains pending.
 See the [stage contracts](architecture.md#respondent-reconstruction-before-aggregation),
 [coverage](../audit/respondent_coverage.csv), and

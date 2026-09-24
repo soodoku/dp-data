@@ -101,6 +101,10 @@ recorded. This identifies a source record, not a resolved identity across files.
 Numeric source IDs use the existing integer tolerance; the immutable source
 retains their exact stored representation. A different source version needs
 an explicit ID crosswalk. Never join separate polls on respondent ID alone.
+`historical_respondent_id` separately records a documented historical `caseid`
+alias. Monarchy uses `1000 + source_row`, as prescribed before filtering in
+`uk_monarchy.R`; this does not invent an original survey ID. The comparison
+requires unique aliases and exact sample-ID agreement before checking values.
 
 The original `output/respondents.parquet` remains the selected knowledge-sample
 contract. The new `people` table has a broader universe. Its response table
@@ -136,7 +140,8 @@ rename, when producing a future wide `polardata` version. The twelve `grk.*`
 columns are entirely missing in the historical benchmark; their poll is outside
 this 21-poll scope, so they remain inventoried without invented poll targets.
 
-UK Health and UK–EU currently implement all their applicable respondent-field
+UK Health, UK–EU, UK Monarchy, the 1997 UK election, UK Crime, CPL, WTU and SWEPCO implement all their
+applicable respondent-field
 targets, including intentional missing fields. Empirical scale limits are
 explicit historical calibration constants, so selecting or reordering rows
 cannot change an individual's score. The separate

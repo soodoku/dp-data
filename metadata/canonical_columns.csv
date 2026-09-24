@@ -60,6 +60,7 @@ people,respondent_id,string,FALSE,TRUE,respondent id
 people,source_id,string,FALSE,FALSE,source id
 people,source_row,int32,FALSE,FALSE,source row
 people,source_respondent_id,string,TRUE,FALSE,source respondent id
+people,historical_respondent_id,string,TRUE,FALSE,Documented historical caseid alias; separate from original source identity
 people,identity_basis,string,FALSE,FALSE,Unique original ID or immutable-source row fallback; no inferred cross-file identity
 sample_memberships,poll_id,string,FALSE,TRUE,poll id
 sample_memberships,respondent_id,string,FALSE,TRUE,respondent id

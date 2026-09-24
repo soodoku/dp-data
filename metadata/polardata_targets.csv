@@ -83,76 +83,76 @@ uk-health-1998,ukhealth.t2dispub,230,200,ukhealth.t2dispub@historical-v1,impleme
 uk-health-1998,ukhealth.t2avgdis,230,218,ukhealth.t2avgdis@historical-v1,implemented,R/respondent_health.R; docs/poll-issues.md UKH-01-12,
 uk-health-1998,ukhealth.t2moresa,230,217,ukhealth.t2moresa@historical-v1,implemented,R/respondent_health.R; docs/poll-issues.md UKH-01-12,
 uk-health-1998,bettered,230,228,bettered@historical-v1,implemented,R/respondent_health.R; docs/poll-issues.md UKH-01-12,
-uk-monarchy-1996,readbrief,258,0,readbrief,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,t1know,258,258,t1know,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,t1knowr,258,258,t1know,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,t1knowcor,258,258,t1knowcor,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,t2know,258,258,t2know,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,ppage,258,258,ppage,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,educ4,258,258,educ4,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,minority,258,258,minority,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,hhincome,258,0,hhincome,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,female,258,258,female,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,attextreme,258,258,attextreme,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,highinc,258,0,highinc,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,t1polint,258,257,t1polint,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,t1knowcor2,258,0,t1knowcor2,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,t12know,258,0,t12know,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,t12knowcor,258,0,t12knowcor,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,attextreme2,258,0,attextreme2,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,t1knowrcor,258,258,t1knowcor,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,t2knowr,258,258,t2know,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,knowgain,258,258,knowgain,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,knowgain2,258,258,knowgain2,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,logpk,258,258,logpk,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,tobitpk,258,258,tobitpk,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,knowgainr,258,258,knowgain,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,knowgainr2,258,258,knowgain2,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,educ3,258,258,educ3,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,ukmonarchy.t1supmon,258,256,ukmonarchy.t1supmon,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,ukmonarchy.t2supmon,258,257,ukmonarchy.t2supmon,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,ukmonarchy.t1mpop,258,258,ukmonarchy.t1mpop,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,ukmonarchy.t2mpop,258,258,ukmonarchy.t2mpop,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,ukmonarchy.t1pwrm,258,257,ukmonarchy.t1pwrm,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,ukmonarchy.t2pwrm,258,251,ukmonarchy.t2pwrm,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,ukmonarchy.t1reflor,258,249,ukmonarchy.t1reflor,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,ukmonarchy.t2reflor,258,251,ukmonarchy.t2reflor,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-monarchy-1996,bettered,258,258,bettered,not-yet-reconstructed,vault/cdd/scripts/uk_monarchy.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,readbrief,275,0,readbrief,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,t1know,275,275,t1know,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,t1knowr,275,275,t1know,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,t1knowcor,275,275,t1knowcor,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,t2know,275,275,t2know,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,ppage,275,274,ppage,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,educ4,275,274,educ4,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,minority,275,273,minority,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,hhincome,275,251,hhincome,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,female,275,275,female,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,attextreme,275,274,attextreme,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,highinc,275,251,highinc,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,t1polint,275,272,t1polint,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,t1knowcor2,275,0,t1knowcor2,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,t12know,275,0,t12know,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,t12knowcor,275,0,t12knowcor,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,attextreme2,275,0,attextreme2,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,t1knowrcor,275,275,t1knowcor,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,t2knowr,275,275,t2know,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,knowgain,275,275,knowgain,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,knowgain2,275,275,knowgain2,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,logpk,275,275,logpk,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,tobitpk,275,275,tobitpk,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,knowgainr,275,275,knowgain,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,knowgainr2,275,275,knowgain2,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,educ3,275,274,educ3,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,ukbge.t1redist,275,268,ukbge.t1redist,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,ukbge.t1tax,275,271,ukbge.t1tax,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,ukbge.t1wage,275,269,ukbge.t1wage,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,ukbge.t1eu,275,250,ukbge.t1eu,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,ukbge.t2redist,275,267,ukbge.t2redist,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,ukbge.t2tax,275,259,ukbge.t2tax,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,ukbge.t2wage,275,259,ukbge.t2wage,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,ukbge.t2eu,275,244,ukbge.t2eu,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-general-election-1997,bettered,275,274,bettered,not-yet-reconstructed,vault/cdd/scripts/uk_bge.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
+uk-monarchy-1996,readbrief,258,0,read_briefing@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,t1know,258,258,knowledge_t1@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,t1knowr,258,258,knowledge_t1@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,t1knowcor,258,258,knowledge_joint@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,t2know,258,258,knowledge_t2@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,ppage,258,258,age@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,educ4,258,258,education_four@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,minority,258,258,minority@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,hhincome,258,0,household_income@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,female,258,258,female@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,attextreme,258,258,attitude_extremity@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,highinc,258,0,high_income@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,t1polint,258,257,political_interest_t1@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,t1knowcor2,258,0,knowledge_joint_midterm@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,t12know,258,0,knowledge_midterm@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,t12knowcor,258,0,knowledge_midterm_joint@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,attextreme2,258,0,attitude_extremity_midterm@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,t1knowrcor,258,258,knowledge_joint@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,t2knowr,258,258,knowledge_t2@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,knowgain,258,258,knowledge_gain@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,knowgain2,258,258,knowledge_gain_joint@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,logpk,258,258,log_knowledge_joint@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,tobitpk,258,258,high_knowledge_joint@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,knowgainr,258,258,knowledge_gain@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,knowgainr2,258,258,knowledge_gain_joint@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,educ3,258,258,education_three@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,ukmonarchy.t1supmon,258,256,monarchy_support_t1@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,ukmonarchy.t2supmon,258,257,monarchy_support_t2@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,ukmonarchy.t1mpop,258,258,monarchy_people_t1@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,ukmonarchy.t2mpop,258,258,monarchy_people_t2@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,ukmonarchy.t1pwrm,258,257,monarchy_power_t1@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,ukmonarchy.t2pwrm,258,251,monarchy_power_t2@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,ukmonarchy.t1reflor,258,249,lords_reform_t1@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,ukmonarchy.t2reflor,258,251,lords_reform_t2@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-monarchy-1996,bettered,258,258,higher_education@historical-v1,implemented,R/respondent_monarchy.R; docs/poll-issues.md UKM-01-04,
+uk-general-election-1997,readbrief,275,0,read_briefing@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,t1know,275,275,knowledge_t1@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,t1knowr,275,275,knowledge_t1@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,t1knowcor,275,275,knowledge_joint@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,t2know,275,275,knowledge_t2@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,ppage,275,274,age@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,educ4,275,274,education_four@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,minority,275,273,minority@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,hhincome,275,251,household_income@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,female,275,275,female@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,attextreme,275,274,attitude_extremity@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,highinc,275,251,high_income@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,t1polint,275,272,political_interest_t1@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,t1knowcor2,275,0,knowledge_joint_midterm@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,t12know,275,0,knowledge_midterm@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,t12knowcor,275,0,knowledge_midterm_joint@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,attextreme2,275,0,attitude_extremity_midterm@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,t1knowrcor,275,275,knowledge_joint@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,t2knowr,275,275,knowledge_t2@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,knowgain,275,275,knowledge_gain@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,knowgain2,275,275,knowledge_gain_joint@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,logpk,275,275,log_knowledge_joint@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,tobitpk,275,275,high_knowledge_joint@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,knowgainr,275,275,knowledge_gain@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,knowgainr2,275,275,knowledge_gain_joint@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,educ3,275,274,education_three@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,ukbge.t1redist,275,268,redistribution_t1@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,ukbge.t1tax,275,271,tax_t1@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,ukbge.t1wage,275,269,minimum_wage_t1@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,ukbge.t1eu,275,250,european_union_t1@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,ukbge.t2redist,275,267,redistribution_t2@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,ukbge.t2tax,275,259,tax_t2@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,ukbge.t2wage,275,259,minimum_wage_t2@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,ukbge.t2eu,275,244,european_union_t2@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,bettered,275,274,higher_education@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
 australia-republic-1999,readbrief,347,0,readbrief,not-yet-reconstructed,vault/cdd/scripts/aus_republic.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
 australia-republic-1999,t1know,347,347,t1know,not-yet-reconstructed,vault/cdd/scripts/aus_republic.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
 australia-republic-1999,t1knowr,347,0,t1knowr,not-yet-reconstructed,vault/cdd/scripts/aus_republic.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
@@ -184,43 +184,43 @@ australia-republic-1999,aus.popparl2,347,276,aus.popparl2,not-yet-reconstructed,
 australia-republic-1999,aus.republican1,347,347,aus.republican1,not-yet-reconstructed,vault/cdd/scripts/aus_republic.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
 australia-republic-1999,aus.republican2,347,347,aus.republican2,not-yet-reconstructed,vault/cdd/scripts/aus_republic.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
 australia-republic-1999,bettered,347,347,bettered,not-yet-reconstructed,vault/cdd/scripts/aus_republic.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,readbrief,299,0,readbrief,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,t1know,299,299,t1know,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,t1knowr,299,0,t1knowr,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,t1knowcor,299,299,t1knowcor,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,t2know,299,299,t2know,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,ppage,299,299,ppage,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,educ4,299,299,educ4,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,minority,299,298,minority,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,hhincome,299,0,hhincome,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,female,299,299,female,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,attextreme,299,299,attextreme,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,highinc,299,0,highinc,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,t1polint,299,0,t1polint,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,t1knowcor2,299,0,t1knowcor2,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,t12know,299,0,t12know,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,t12knowcor,299,0,t12knowcor,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,attextreme2,299,0,attextreme2,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,t1knowrcor,299,0,t1knowrcor,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,t2knowr,299,0,t2knowr,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,knowgain,299,299,knowgain,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,knowgain2,299,299,knowgain2,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,logpk,299,299,logpk,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,tobitpk,299,299,tobitpk,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,knowgainr,299,0,knowgainr,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,knowgainr2,299,0,knowgainr2,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,educ3,299,299,educ3,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,ukcrime.rootcauset1,299,299,ukcrime.rootcauset1,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,ukcrime.policet1,299,299,ukcrime.policet1,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,ukcrime.punisht1,299,299,ukcrime.punisht1,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,ukcrime.procrightst1,299,299,ukcrime.procrightst1,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,ukcrime.selfprotectt1,299,299,ukcrime.selfprotectt1,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,ukcrime.rootcauset2,299,299,ukcrime.rootcauset2,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,ukcrime.policet2,299,299,ukcrime.policet2,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,ukcrime.punisht2,299,299,ukcrime.punisht2,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,ukcrime.procrightst2,299,298,ukcrime.procrightst2,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,ukcrime.selfprotectt2,299,299,ukcrime.selfprotectt2,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-uk-crime-1994,bettered,299,299,bettered,not-yet-reconstructed,vault/cdd/scripts/uk_crime.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
+uk-crime-1994,readbrief,299,0,read_briefing@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,t1know,299,299,knowledge_t1@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,t1knowr,299,0,knowledge_issue_t1@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,t1knowcor,299,299,knowledge_joint@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,t2know,299,299,knowledge_t2@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,ppage,299,299,age@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,educ4,299,299,education_four@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,minority,299,298,minority@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,hhincome,299,0,household_income@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,female,299,299,female@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,attextreme,299,299,attitude_extremity@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,highinc,299,0,high_income@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,t1polint,299,0,political_interest_t1@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,t1knowcor2,299,0,knowledge_joint_midterm@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,t12know,299,0,knowledge_midterm@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,t12knowcor,299,0,knowledge_midterm_joint@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,attextreme2,299,0,attitude_extremity_midterm@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,t1knowrcor,299,0,knowledge_issue_joint@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,t2knowr,299,0,knowledge_issue_t2@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,knowgain,299,299,knowledge_gain@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,knowgain2,299,299,knowledge_gain_joint@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,logpk,299,299,log_knowledge_joint@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,tobitpk,299,299,high_knowledge_joint@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,knowgainr,299,0,knowledge_issue_gain@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,knowgainr2,299,0,knowledge_issue_gain_joint@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,educ3,299,299,education_three@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,ukcrime.rootcauset1,299,299,root_causes_t1@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,ukcrime.policet1,299,299,policing_t1@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,ukcrime.punisht1,299,299,punishment_t1@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,ukcrime.procrightst1,299,299,procedural_restrictions_t1@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,ukcrime.selfprotectt1,299,299,self_protection_t1@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,ukcrime.rootcauset2,299,299,root_causes_t2@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,ukcrime.policet2,299,299,policing_t2@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,ukcrime.punisht2,299,299,punishment_t2@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,ukcrime.procrightst2,299,298,procedural_restrictions_t2@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,ukcrime.selfprotectt2,299,299,self_protection_t2@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
+uk-crime-1994,bettered,299,299,higher_education@historical-v1,implemented,R/respondent_crime.R; docs/poll-issues.md UKC-01-03,
 tomorrows-europe-2007,readbrief,344,331,readbrief,not-yet-reconstructed,vault/cdd/scripts/eu_2007.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
 tomorrows-europe-2007,t1know,344,344,t1know,not-yet-reconstructed,vault/cdd/scripts/eu_2007.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
 tomorrows-europe-2007,t1knowr,344,344,t1know,not-yet-reconstructed,vault/cdd/scripts/eu_2007.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
@@ -279,45 +279,45 @@ tomorrows-europe-2007,eu.general_enlargement_att_f_t3,344,333,eu.general_enlarge
 tomorrows-europe-2007,eu.eu_level_decision_making_t3,344,331,eu.eu_level_decision_making_t3,not-yet-reconstructed,vault/cdd/scripts/eu_2007.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
 tomorrows-europe-2007,eu.t3q16jr,344,329,eu.t3q16jr,not-yet-reconstructed,vault/cdd/scripts/eu_2007.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
 tomorrows-europe-2007,bettered,344,326,bettered,not-yet-reconstructed,vault/cdd/scripts/eu_2007.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,readbrief,216,0,readbrief,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,t1know,216,216,t1know,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,t1knowr,216,216,t1know,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,t1knowcor,216,216,t1knowcor,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,t2know,216,216,t2know,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,ppage,216,215,ppage,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,educ4,216,213,educ4,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,minority,216,215,minority,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,hhincome,216,198,hhincome,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,female,216,216,female,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,attextreme,216,216,attextreme,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,highinc,216,198,highinc,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,t1polint,216,0,t1polint,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,t1knowcor2,216,0,t1knowcor2,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,t12know,216,0,t12know,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,t12knowcor,216,0,t12knowcor,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,attextreme2,216,0,attextreme2,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,t1knowrcor,216,216,t1knowcor,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,t2knowr,216,216,t2know,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,knowgain,216,216,knowgain,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,knowgain2,216,216,knowgain2,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,logpk,216,216,logpk,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,tobitpk,216,216,tobitpk,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,knowgainr,216,216,knowgain,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,knowgainr2,216,216,knowgain2,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,educ3,216,213,educ3,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,cpl.t1res,216,215,cpl.t1res,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,cpl.t1cons,216,215,cpl.t1cons,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,cpl.t1poor,216,214,cpl.t1poor,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,cpl.t1renew,216,214,cpl.t1renew,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,cpl.t1fossil,216,201,cpl.t1fossil,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,cpl.t1buypwr,216,199,cpl.t1buypwr,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,cpl.t2res,216,215,cpl.t2res,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,cpl.t2cons,216,215,cpl.t2cons,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,cpl.t2poor,216,215,cpl.t2poor,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,cpl.t2renew,216,216,cpl.t2renew,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,cpl.t2fossil,216,212,cpl.t2fossil,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,cpl.t2buypwr,216,213,cpl.t2buypwr,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-cpl-1996,bettered,216,213,bettered,not-yet-reconstructed,vault/cdd/scripts/tx_cpl.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
+cpl-1996,readbrief,216,0,read_briefing@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,t1know,216,216,knowledge_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,t1knowr,216,216,knowledge_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,t1knowcor,216,216,knowledge_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,t2know,216,216,knowledge_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,ppage,216,215,age@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,educ4,216,213,education_four@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,minority,216,215,minority@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,hhincome,216,198,household_income@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,female,216,216,female@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,attextreme,216,216,attitude_extremity@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,highinc,216,198,high_income@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,t1polint,216,0,political_interest_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,t1knowcor2,216,0,knowledge_joint_midterm@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,t12know,216,0,knowledge_midterm@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,t12knowcor,216,0,knowledge_midterm_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,attextreme2,216,0,attitude_extremity_midterm@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,t1knowrcor,216,216,knowledge_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,t2knowr,216,216,knowledge_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,knowgain,216,216,knowledge_gain@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,knowgain2,216,216,knowledge_gain_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,logpk,216,216,log_knowledge_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,tobitpk,216,216,high_knowledge_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,knowgainr,216,216,knowledge_gain@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,knowgainr2,216,216,knowledge_gain_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,educ3,216,213,education_three@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,cpl.t1res,216,215,research_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,cpl.t1cons,216,215,conservation_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,cpl.t1poor,216,214,low_income_support_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,cpl.t1renew,216,214,renewables_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,cpl.t1fossil,216,201,fossil_fuels_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,cpl.t1buypwr,216,199,imported_power_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,cpl.t2res,216,215,research_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,cpl.t2cons,216,215,conservation_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,cpl.t2poor,216,215,low_income_support_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,cpl.t2renew,216,216,renewables_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,cpl.t2fossil,216,212,fossil_fuels_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,cpl.t2buypwr,216,213,imported_power_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
+cpl-1996,bettered,216,213,higher_education@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md CPL-01-03; historical tx_cpl.R and 05_fix_data.R,
 zeguo-2005,readbrief,233,0,readbrief,source-unresolved,vault/cdd/scripts/china_2005.r,china_2005.r names a merged .dta and preandpost filter; reconcile archived .sav/.dta versions and respondent p before public import
 zeguo-2005,t1know,233,233,t1know,source-unresolved,vault/cdd/scripts/china_2005.r,china_2005.r names a merged .dta and preandpost filter; reconcile archived .sav/.dta versions and respondent p before public import
 zeguo-2005,t1knowr,233,233,t1know,source-unresolved,vault/cdd/scripts/china_2005.r,china_2005.r names a merged .dta and preandpost filter; reconcile archived .sav/.dta versions and respondent p before public import
@@ -724,45 +724,45 @@ btp-health-education-2005,btp05.t2costcov,454,454,btp05.t2costcov,not-yet-recons
 btp-health-education-2005,btp05.t2emplypay,454,444,btp05.t2emplypay,not-yet-reconstructed,vault/cdd/scripts/btp05.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
 btp-health-education-2005,btp05.t2indivpay,454,449,btp05.t2indivpay,not-yet-reconstructed,vault/cdd/scripts/btp05.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
 btp-health-education-2005,bettered,454,452,bettered,not-yet-reconstructed,vault/cdd/scripts/btp05.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,readbrief,230,0,readbrief,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,t1know,230,230,t1know,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,t1knowr,230,230,t1know,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,t1knowcor,230,230,t1knowcor,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,t2know,230,230,t2know,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,ppage,230,230,ppage,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,educ4,230,229,educ4,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,minority,230,224,minority,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,hhincome,230,0,hhincome,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,female,230,230,female,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,attextreme,230,230,attextreme,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,highinc,230,0,highinc,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,t1polint,230,0,t1polint,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,t1knowcor2,230,0,t1knowcor2,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,t12know,230,0,t12know,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,t12knowcor,230,0,t12knowcor,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,attextreme2,230,0,attextreme2,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,t1knowrcor,230,230,t1knowcor,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,t2knowr,230,230,t2know,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,knowgain,230,230,knowgain,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,knowgain2,230,230,knowgain2,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,logpk,230,230,logpk,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,tobitpk,230,230,tobitpk,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,knowgainr,230,230,knowgain,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,knowgainr2,230,230,knowgain2,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,educ3,230,229,educ3,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,wtu.t1att1,230,230,wtu.t1att1,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,wtu.t1att3,230,230,wtu.t1att3,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,wtu.t1att4,230,230,wtu.t1att4,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,wtu.t1att5,230,230,wtu.t1att5,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,wtu.t1att6,230,230,wtu.t1att6,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,wtu.t1att7,230,230,wtu.t1att7,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,wtu.t2att1,230,230,wtu.t2att1,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,wtu.t2att3,230,230,wtu.t2att3,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,wtu.t2att4,230,230,wtu.t2att4,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,wtu.t2att5,230,230,wtu.t2att5,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,wtu.t2att6,230,230,wtu.t2att6,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,wtu.t2att7,230,230,wtu.t2att7,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-wtu-1996,bettered,230,229,bettered,not-yet-reconstructed,vault/cdd/scripts/tx_wtu.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
+wtu-1996,readbrief,230,0,read_briefing@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,t1know,230,230,knowledge_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,t1knowr,230,230,knowledge_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,t1knowcor,230,230,knowledge_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,t2know,230,230,knowledge_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,ppage,230,230,age@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,educ4,230,229,education_four@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,minority,230,224,minority@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,hhincome,230,0,household_income@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,female,230,230,female@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,attextreme,230,230,attitude_extremity@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,highinc,230,0,high_income@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,t1polint,230,0,political_interest_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,t1knowcor2,230,0,knowledge_joint_midterm@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,t12know,230,0,knowledge_midterm@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,t12knowcor,230,0,knowledge_midterm_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,attextreme2,230,0,attitude_extremity_midterm@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,t1knowrcor,230,230,knowledge_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,t2knowr,230,230,knowledge_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,knowgain,230,230,knowledge_gain@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,knowgain2,230,230,knowledge_gain_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,logpk,230,230,log_knowledge_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,tobitpk,230,230,high_knowledge_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,knowgainr,230,230,knowledge_gain@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,knowgainr2,230,230,knowledge_gain_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,educ3,230,229,education_three@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,wtu.t1att1,230,230,imported_power_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,wtu.t1att3,230,230,conservation_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,wtu.t1att4,230,230,low_income_support_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,wtu.t1att5,230,230,renewables_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,wtu.t1att6,230,230,research_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,wtu.t1att7,230,230,fossil_fuels_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,wtu.t2att1,230,230,imported_power_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,wtu.t2att3,230,230,conservation_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,wtu.t2att4,230,230,low_income_support_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,wtu.t2att5,230,230,renewables_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,wtu.t2att6,230,230,research_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,wtu.t2att7,230,230,fossil_fuels_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
+wtu-1996,bettered,230,229,higher_education@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
 nic-1996,readbrief,466,449,readbrief,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
 nic-1996,t1know,466,466,t1know,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
 nic-1996,t1knowr,466,466,t1know,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
@@ -808,42 +808,42 @@ nic-1996,nic1.t2att7,466,466,nic1.t2att7,not-yet-reconstructed,vault/cdd/scripts
 nic-1996,nic1.t2att8,466,466,nic1.t2att8,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
 nic-1996,nic1.t2att9,466,466,nic1.t2att9,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
 nic-1996,bettered,466,459,bettered,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,readbrief,232,0,readbrief,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,t1know,232,232,t1know,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,t1knowr,232,232,t1know,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,t1knowcor,232,232,t1knowcor,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,t2know,232,232,t2know,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,ppage,232,232,ppage,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,educ4,232,231,educ4,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,minority,232,228,minority,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,hhincome,232,0,hhincome,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,female,232,232,female,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,attextreme,232,232,attextreme,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,highinc,232,0,highinc,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,t1polint,232,0,t1polint,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,t1knowcor2,232,0,t1knowcor2,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,t12know,232,0,t12know,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,t12knowcor,232,0,t12knowcor,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,attextreme2,232,0,attextreme2,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,t1knowrcor,232,232,t1knowcor,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,t2knowr,232,232,t2know,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,knowgain,232,232,knowgain,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,knowgain2,232,232,knowgain2,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,logpk,232,232,logpk,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,tobitpk,232,232,tobitpk,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,knowgainr,232,232,knowgain,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,knowgainr2,232,232,knowgain2,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,educ3,232,231,educ3,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,swp.t1att1,232,232,swp.t1att1,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,swp.t1att3,232,232,swp.t1att3,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,swp.t1att4,232,232,swp.t1att4,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,swp.t1att5,232,232,swp.t1att5,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,swp.t1att6,232,232,swp.t1att6,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,swp.t1att7,232,232,swp.t1att7,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,swp.t2att1,232,232,swp.t2att1,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,swp.t2att3,232,232,swp.t2att3,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,swp.t2att4,232,232,swp.t2att4,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,swp.t2att5,232,232,swp.t2att5,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,swp.t2att6,232,232,swp.t2att6,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,swp.t2att7,232,232,swp.t2att7,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-swepco-1996,bettered,232,231,bettered,not-yet-reconstructed,vault/cdd/scripts/tx_swp.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
+swepco-1996,readbrief,232,0,read_briefing@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,t1know,232,232,knowledge_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,t1knowr,232,232,knowledge_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,t1knowcor,232,232,knowledge_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,t2know,232,232,knowledge_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,ppage,232,232,age@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,educ4,232,231,education_four@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,minority,232,228,minority@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,hhincome,232,0,household_income@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,female,232,232,female@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,attextreme,232,232,attitude_extremity@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,highinc,232,0,high_income@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,t1polint,232,0,political_interest_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,t1knowcor2,232,0,knowledge_joint_midterm@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,t12know,232,0,knowledge_midterm@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,t12knowcor,232,0,knowledge_midterm_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,attextreme2,232,0,attitude_extremity_midterm@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,t1knowrcor,232,232,knowledge_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,t2knowr,232,232,knowledge_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,knowgain,232,232,knowledge_gain@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,knowgain2,232,232,knowledge_gain_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,logpk,232,232,log_knowledge_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,tobitpk,232,232,high_knowledge_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,knowgainr,232,232,knowledge_gain@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,knowgainr2,232,232,knowledge_gain_joint@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,educ3,232,231,education_three@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,swp.t1att1,232,232,imported_power_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,swp.t1att3,232,232,conservation_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,swp.t1att4,232,232,low_income_support_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,swp.t1att5,232,232,renewables_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,swp.t1att6,232,232,research_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,swp.t1att7,232,232,fossil_fuels_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,swp.t2att1,232,232,imported_power_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,swp.t2att3,232,232,conservation_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,swp.t2att4,232,232,low_income_support_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,swp.t2att5,232,232,renewables_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,swp.t2att6,232,232,research_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,swp.t2att7,232,232,fossil_fuels_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
+swepco-1996,bettered,232,231,higher_education@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,

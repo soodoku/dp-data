@@ -1,5 +1,10 @@
 source(project_path("R", "respondent_health.R"))
 source(project_path("R", "respondent_eu.R"))
+source(project_path("R", "respondent_recode.R"))
+source(project_path("R", "respondent_monarchy.R"))
+source(project_path("R", "respondent_election.R"))
+source(project_path("R", "respondent_utilities.R"))
+source(project_path("R", "respondent_crime.R"))
 
 source_people <- function(survey, contract) {
   source_id <- contract$source_id[[1]]
@@ -24,6 +29,15 @@ source_people <- function(survey, contract) {
     )),
     source_id = source_id, source_row = as.integer(survey$source_row),
     source_respondent_id = raw_id,
+    historical_respondent_id = switch(contract$poll_id[[1]],
+      "uk-health-1998" = raw_id, "uk-eu-1995" = raw_id,
+      "uk-general-election-1997" = raw_id,
+      "wtu-1996" = raw_id, "swepco-1996" = raw_id,
+      "cpl-1996" = paste0("29", 10000 + survey$source_row),
+      "uk-monarchy-1996" = as.character(1000 + survey$source_row),
+      "uk-crime-1994" = as.character(10000 + survey$source_row),
+      rep(NA_character_, nrow(survey))
+    ),
     identity_basis = ifelse(usable, "unique-source-id", ifelse(
       absent, "file-scoped-missing-id", "file-scoped-ambiguous-id"
     ))
@@ -100,10 +114,15 @@ source_response_rows <- function(survey, people, inputs, items) {
       if (grepl("[12]$", field)) paste0("T", substr(field, nchar(field),
         nchar(field)
       )) else "T1"
-    } else if (people$poll_id[[1]] == "uk-eu-1995") {
+    } else if (people$poll_id[[1]] %in%
+                 c("uk-eu-1995", "uk-general-election-1997", "cpl-1996",
+                   "wtu-1996", "swepco-1996", "uk-crime-1994"
+                 )) {
       if (grepl("[12]$", field)) paste0("T", substr(field, nchar(field),
         nchar(field)
       )) else "T1"
+    } else if (people$poll_id[[1]] == "uk-monarchy-1996") {
+      if (startsWith(field, "R")) "T2" else "T1"
     } else {
       NA_character_
     }
@@ -161,13 +180,30 @@ build_poll_respondents <- function(contract) {
   }
   historical <- if (poll_id == "uk-health-1998") rep(TRUE, nrow(survey))
   else if (poll_id == "uk-eu-1995") as.numeric(survey$part) == 1
+  else if (poll_id == "uk-monarchy-1996") as.numeric(survey$GROUP) != -1
+  else if (poll_id == "uk-general-election-1997") as.numeric(survey$filter) == 1
+  else if (poll_id == "uk-crime-1994")
+    as.numeric(survey$part) == 1 & !is.na(survey$group)
+  else if (poll_id == "cpl-1996") !is.na(survey$group)
+  else if (poll_id %in% c("wtu-1996", "swepco-1996"))
+    as.numeric(survey$PART) == 1
   else rep(NA, nrow(survey))
   historical_evidence <- if (poll_id == "uk-health-1998") {
     "uk_health.R: all 230 source rows"
   } else if (poll_id == "uk-eu-1995") {
     "uk_eu.R: part == 1; 238 source attendees"
   } else {
-    "Historical identity and selection remain unresolved"
+    switch(poll_id,
+      "uk-monarchy-1996" = "uk_monarchy.R: GROUP != -1; 258 attendees",
+      "uk-general-election-1997" = "uk_bge.R: filter == 1; 275 attendees",
+      "uk-crime-1994" = paste(
+        "uk_crime.R: part == 1 and nonmissing group; 299 attendees"
+      ),
+      "cpl-1996" = "tx_cpl.R: nonmissing group; 216 attendees",
+      "wtu-1996" = "tx_wtu.R: PART == 1; 230 attendees",
+      "swepco-1996" = "tx_swp.R: PART == 1; 232 attendees",
+      "Historical identity and selection remain unresolved"
+    )
   }
   samples <- dplyr::bind_rows(
     sample_rows("reviewed-source", TRUE, contract$source_id),
@@ -201,9 +237,18 @@ build_poll_respondents <- function(contract) {
   items <- read_metadata("knowledge_items") |>
     dplyr::filter(.data$poll_id == .env$poll_id)
   responses <- source_response_rows(survey, people, inputs, items)
-  measures <- if (poll_id %in% c("uk-health-1998", "uk-eu-1995")) {
-    values <- if (poll_id == "uk-health-1998") build_health_individual(survey)
-    else build_eu_individual(survey)
+  builder <- switch(poll_id,
+    "uk-health-1998" = build_health_individual,
+    "uk-eu-1995" = build_eu_individual,
+    "uk-monarchy-1996" = build_monarchy_individual,
+    "uk-general-election-1997" = build_election_individual,
+    "uk-crime-1994" = build_crime_individual
+  )
+  if (poll_id %in% c("cpl-1996", "wtu-1996", "swepco-1996")) {
+    builder <- function(survey) build_utility_individual(survey, poll_id)
+  }
+  measures <- if (!is.null(builder)) {
+    values <- builder(survey)
     individual_measure_rows(values, people, responses, definitions, inputs)
   } else {
     tibble::tibble(

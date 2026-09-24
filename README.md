@@ -48,7 +48,7 @@ inputs.
 
 The respondent stage is available with `make respondents`. It retains all
 reviewed source records for the historical poll scope, separates named samples
-from people, and builds versioned individual measures for UK Health and UK–EU.
+from people, and builds versioned individual measures for UK Health, UK–EU, UK Monarchy, the 1997 UK election, UK Crime, CPL, WTU and SWEPCO.
 `make compare-respondents` checks these measures against historical values;
 [group and poll summaries follow later](docs/architecture.md#respondent-reconstruction-before-aggregation).
 The [coverage report](audit/respondent_coverage.csv) lists unfinished poll recodes
@@ -91,11 +91,19 @@ The architecture and migration order are documented in
 `metadata/artifacts.csv` is the authoritative artifact catalog. Poll-level
 `manifest.csv` files are generated from it, so descriptive metadata is not
 maintained twice. A blank `poll_id` denotes a collection-wide artifact rather
-than an unknown poll.
+than an unknown poll. Source materials live in the relevant poll's
+`questionnaires/`, `codebooks/`, `briefing-materials/`, `papers/`, `reports/`, or
+`design/` directory. Cross-poll references and historical definition versions
+have one copy under `data/shared/`; poll manifests point to that same file.
+Original archive paths, download URLs, checksums, and comparison limitations are
+recorded in the central catalog. Identical copies are consolidated; different
+versions remain separate.
 
 `LICENSE` covers this repository's code. Data retain the license recorded for
-each input in `metadata/source_files.csv`; material without file-level rights
-clearance remains in the local vault. Exact historical CDD scripts are retained
+each input in `metadata/source_files.csv`. Reference materials retain their
+source copyrights; `NOASSERTION` means no redistribution license has been
+established, not that the material is covered by the repository license.
+Restricted respondent files remain in the local vault. Exact historical CDD scripts are retained
 in Git history under the `historical-cdd-scripts` tag, not beside the maintained
 pipeline on `main`.
 

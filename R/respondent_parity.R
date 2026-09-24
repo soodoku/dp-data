@@ -16,11 +16,12 @@ compare_respondent_measures <- function(measures, people, samples, reference,
       match(poll, contracts$poll_id)
     ], ]
     stopifnot(
-      nrow(persons) == nrow(expected), !anyNA(persons$source_respondent_id),
+      nrow(persons) == nrow(expected), !anyNA(persons$historical_respondent_id),
       !anyDuplicated(expected$caseid), !anyDuplicated(persons$respondent_id),
-      setequal(persons$source_respondent_id, as.character(expected$caseid))
+      !anyDuplicated(persons$historical_respondent_id),
+      setequal(persons$historical_respondent_id, as.character(expected$caseid))
     )
-    expected <- expected[match(persons$source_respondent_id,
+    expected <- expected[match(persons$historical_respondent_id,
                            as.character(expected$caseid)
                          ), ][[target$legacy_field]]
     actual <- measures[
