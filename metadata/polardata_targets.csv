@@ -763,51 +763,51 @@ wtu-1996,wtu.t2att5,230,230,renewables_t2@historical-v1,implemented,R/respondent
 wtu-1996,wtu.t2att6,230,230,research_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
 wtu-1996,wtu.t2att7,230,230,fossil_fuels_t2@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
 wtu-1996,bettered,230,229,higher_education@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md WTU-01-05; historical tx_wtu.R and 05_fix_data.R,
-nic-1996,readbrief,466,449,readbrief,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,t1know,466,466,t1know,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,t1knowr,466,466,t1know,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,t1knowcor,466,466,t1knowcor,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,t2know,466,466,t2know,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,ppage,466,458,ppage,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,educ4,466,459,educ4,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,minority,466,453,minority,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,hhincome,466,0,hhincome,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,female,466,460,female,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,attextreme,466,466,attextreme,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,highinc,466,0,highinc,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,t1polint,466,459,t1polint,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,t1knowcor2,466,466,t1knowcor2,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,t12know,466,466,t12know,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,t12knowcor,466,466,t12knowcor,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,attextreme2,466,466,attextreme2,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,t1knowrcor,466,466,t1knowcor,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,t2knowr,466,466,t2know,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,knowgain,466,466,knowgain,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,knowgain2,466,466,knowgain2,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,logpk,466,466,logpk,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,tobitpk,466,466,tobitpk,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,knowgainr,466,466,knowgain,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,knowgainr2,466,466,knowgain2,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,educ3,466,459,educ3,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t1att1,466,466,nic1.t1att1,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t1att2,466,466,nic1.t1att2,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t1att3,466,466,nic1.t1att3,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t1att4,466,466,nic1.t1att4,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t1att5,466,466,nic1.t1att5,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t1att6,466,466,nic1.t1att6,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t1att7,466,466,nic1.t1att7,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t1att8,466,466,nic1.t1att8,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t1att9,466,466,nic1.t1att9,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t2att1,466,466,nic1.t2att1,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t2att2,466,466,nic1.t2att2,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t2att3,466,466,nic1.t2att3,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t2att4,466,466,nic1.t2att4,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t2att5,466,466,nic1.t2att5,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t2att6,466,466,nic1.t2att6,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t2att7,466,466,nic1.t2att7,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t2att8,466,466,nic1.t2att8,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,nic1.t2att9,466,466,nic1.t2att9,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
-nic-1996,bettered,466,459,bettered,not-yet-reconstructed,vault/cdd/scripts/nic1.R,Source-to-field formula/version and historical identity/sample need instrument-backed reconciliation
+nic-1996,readbrief,466,449,read_briefing@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,t1know,466,466,knowledge_t1@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,t1knowr,466,466,knowledge_t1@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,t1knowcor,466,466,knowledge_joint@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,t2know,466,466,knowledge_t2@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,ppage,466,458,age@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,educ4,466,459,education_four@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,minority,466,453,minority@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,hhincome,466,0,household_income@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,female,466,460,female@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,attextreme,466,466,attitude_extremity@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,highinc,466,0,high_income@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,t1polint,466,459,political_interest_t1@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,t1knowcor2,466,466,knowledge_joint_midterm@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,t12know,466,466,knowledge_midterm@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,t12knowcor,466,466,knowledge_midterm_joint@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,attextreme2,466,466,attitude_extremity_midterm@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,t1knowrcor,466,466,knowledge_joint@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,t2knowr,466,466,knowledge_t2@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,knowgain,466,466,knowledge_gain@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,knowgain2,466,466,knowledge_gain_joint@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,logpk,466,466,log_knowledge_joint@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,tobitpk,466,466,high_knowledge_joint@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,knowgainr,466,466,knowledge_gain@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,knowgainr2,466,466,knowledge_gain_joint@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,educ3,466,459,education_three@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t1att1,466,466,environment_t1@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t1att2,466,466,medicare_t1@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t1att3,466,466,law_t1@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t1att4,466,466,drugs_t1@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t1att5,466,466,education_t1@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t1att6,466,466,defense_t1@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t1att7,466,466,foreign_aid_t1@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t1att8,466,466,welfare_t1@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t1att9,466,466,social_security_t1@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t2att1,466,466,environment_t2@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t2att2,466,466,medicare_t2@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t2att3,466,466,law_t2@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t2att4,466,466,drugs_t2@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t2att5,466,466,education_t2@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t2att6,466,466,defense_t2@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t2att7,466,466,foreign_aid_t2@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t2att8,466,466,welfare_t2@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,nic1.t2att9,466,466,social_security_t2@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,bettered,466,459,higher_education@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
 swepco-1996,readbrief,232,0,read_briefing@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
 swepco-1996,t1know,232,232,knowledge_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,
 swepco-1996,t1knowr,232,232,knowledge_t1@historical-v1,implemented,R/respondent_utilities.R; docs/poll-issues.md SWE-01-04; historical tx_swp.R and 05_fix_data.R,

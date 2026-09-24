@@ -1042,6 +1042,39 @@ Determine what identifies the missing-ID attendee in other waves; do not treat
 source-row fallback as a transferable ID. Retain raw floating-point codes while
 using the documented tolerance for integer lookup.
 
+**NIC-02 — eleven-item historical battery reconstructed separately.** The
+historical `polardata` battery includes three percentage questions in addition to
+the eight closed/placement items. The codebook explicitly defines inclusive
+correct ranges: WEDLOCK 25–40, AFDC 1–10, and UNEMP 5–10, in each of three
+waves (codebook lines 4916–5668). Recomputing these from raw responses matches
+every nonmissing stored correctness code across all 911 source records.
+The historical baseline/post scores use waves 1/3; arrival is wave 2. Missing
+answers score zero with a fixed denominator of 11. The existing eight-item
+knowledge outputs retain their separate definition. SPEND2 code 9 is documented
+as missing (line 5545); SPDRUG2 code 9 is likewise missing (line 3635).
+
+**NIC-03 — historical age and mixed-wave extremity preserved.** `nic1.R`
+computes `ppage = 1996 - BYEAR`, although BYEAR is stored as a two-digit year.
+The reconstructed values reproduce the benchmark, including implausible ages;
+no century correction has been applied. Its arrival extremity/dispersion inputs
+use arrival waves for the first six spending items but baseline waves for foreign
+aid, welfare, and social security. This is explicit in the script's `nic2att`
+selection. Retain it for historical parity; before correcting, inspect the
+questionnaires, original age recoding syntax, and analysis specifications to
+establish the intended age and wave conventions. Recompute affected individual,
+group, and downstream model quantities under each proposed correction.
+
+**NIC-04 — missing historical identity and reconstruction coverage.** The
+historical export and selected source each contain exactly one missing CASEID.
+Canonical identity remains source-scoped; comparison matches the single missing
+slot only after asserting its uniqueness on each side and matching the other
+465 IDs. This is a within-file historical comparison, not a transferable linkage
+key. All 45 respondent-field targets for all 466 historical rows reproduce values
+and missingness within the existing 1e-10 tolerance. A second absent identity
+must fail comparison. Raw source codes remain unchanged; integer lookup removes
+only the SPSS floating-point artifacts below 1e-8. The group and poll derived
+fields remain a separate reconstruction stage.
+
 ## Tomorrow's Europe 2007 — tomorrows-europe-2007
 
 **TE-01 — unresolved eligibility/order mismatch.** `t3part == 1` yields 359

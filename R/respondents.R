@@ -5,6 +5,7 @@ source(project_path("R", "respondent_monarchy.R"))
 source(project_path("R", "respondent_election.R"))
 source(project_path("R", "respondent_utilities.R"))
 source(project_path("R", "respondent_crime.R"))
+source(project_path("R", "respondent_nic.R"))
 
 source_people <- function(survey, contract) {
   source_id <- contract$source_id[[1]]
@@ -32,7 +33,7 @@ source_people <- function(survey, contract) {
     historical_respondent_id = switch(contract$poll_id[[1]],
       "uk-health-1998" = raw_id, "uk-eu-1995" = raw_id,
       "uk-general-election-1997" = raw_id,
-      "wtu-1996" = raw_id, "swepco-1996" = raw_id,
+      "nic-1996" = raw_id, "wtu-1996" = raw_id, "swepco-1996" = raw_id,
       "cpl-1996" = paste0("29", 10000 + survey$source_row),
       "uk-monarchy-1996" = as.character(1000 + survey$source_row),
       "uk-crime-1994" = as.character(10000 + survey$source_row),
@@ -185,8 +186,8 @@ build_poll_respondents <- function(contract) {
   else if (poll_id == "uk-crime-1994")
     as.numeric(survey$part) == 1 & !is.na(survey$group)
   else if (poll_id == "cpl-1996") !is.na(survey$group)
-  else if (poll_id %in% c("wtu-1996", "swepco-1996"))
-    as.numeric(survey$PART) == 1
+  else if (poll_id %in% c("wtu-1996", "swepco-1996", "nic-1996"))
+    rounded_source_code(survey$PART) == 1
   else rep(NA, nrow(survey))
   historical_evidence <- if (poll_id == "uk-health-1998") {
     "uk_health.R: all 230 source rows"
@@ -200,6 +201,7 @@ build_poll_respondents <- function(contract) {
         "uk_crime.R: part == 1 and nonmissing group; 299 attendees"
       ),
       "cpl-1996" = "tx_cpl.R: nonmissing group; 216 attendees",
+      "nic-1996" = "nic1.R: PART == 1; 466 attendees",
       "wtu-1996" = "tx_wtu.R: PART == 1; 230 attendees",
       "swepco-1996" = "tx_swp.R: PART == 1; 232 attendees",
       "Historical identity and selection remain unresolved"
@@ -242,7 +244,8 @@ build_poll_respondents <- function(contract) {
     "uk-eu-1995" = build_eu_individual,
     "uk-monarchy-1996" = build_monarchy_individual,
     "uk-general-election-1997" = build_election_individual,
-    "uk-crime-1994" = build_crime_individual
+    "uk-crime-1994" = build_crime_individual,
+    "nic-1996" = build_nic_individual
   )
   if (poll_id %in% c("cpl-1996", "wtu-1996", "swepco-1996")) {
     builder <- function(survey) build_utility_individual(survey, poll_id)

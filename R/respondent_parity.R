@@ -16,7 +16,13 @@ compare_respondent_measures <- function(measures, people, samples, reference,
       match(poll, contracts$poll_id)
     ], ]
     stopifnot(
-      nrow(persons) == nrow(expected), !anyNA(persons$historical_respondent_id),
+      nrow(persons) == nrow(expected),
+      if (poll == "nic-1996") {
+        sum(is.na(persons$historical_respondent_id)) == 1L &&
+          sum(is.na(expected$caseid)) == 1L
+      } else {
+        !anyNA(persons$historical_respondent_id)
+      },
       !anyDuplicated(expected$caseid), !anyDuplicated(persons$respondent_id),
       !anyDuplicated(persons$historical_respondent_id),
       setequal(persons$historical_respondent_id, as.character(expected$caseid))

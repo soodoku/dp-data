@@ -40,7 +40,7 @@ test_that("sample exclusions do not become invented historical controls", {
   expect_true(all(is.na(historical$included[
     !historical$poll_id %in% c("uk-health-1998", "uk-eu-1995",
       "uk-monarchy-1996", "uk-general-election-1997",
-      "cpl-1996", "wtu-1996", "swepco-1996", "uk-crime-1994"
+      "cpl-1996", "wtu-1996", "swepco-1996", "uk-crime-1994", "nic-1996"
     )
   ])))
   expect_true(all(historical$included[
@@ -82,7 +82,7 @@ test_that("individual measures need no group or stored aggregate fields", {
 test_that("respondent contracts have complete dependencies and valid keys", {
   definitions <- read_metadata("measure_definitions")
   inputs <- read_metadata("measure_inputs")
-  expect_equal(nrow(definitions), 277L)
+  expect_equal(nrow(definitions), 317L)
   expect_false(anyDuplicated(definitions[c("poll_id", "definition_id")]) > 0L)
   expect_setequal(inputs$definition_id, definitions$definition_id[
     definitions$scoring_rule != "historical-constant-missing"

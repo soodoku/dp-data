@@ -56,8 +56,8 @@ inputs.
 The respondent stage is available with `make respondents`. It retains all
 reviewed source records for the historical poll scope, separates named samples
 from people, and builds versioned individual measures for UK Health, UK–EU,
-UK Monarchy, the 1997 UK election, UK Crime, CPL, WTU and SWEPCO. These eight
-polls cover 308 historical respondent-field targets; 13 polls still need source
+UK Monarchy, the 1997 UK election, UK Crime, CPL, WTU, SWEPCO and NIC 1996. These nine
+polls cover 353 historical respondent-field targets; 12 polls still need source
 reconciliation or respondent recodes.
 `make compare-respondents` checks these measures against historical values;
 [group and poll summaries follow later](docs/architecture.md#respondent-reconstruction-before-aggregation).
