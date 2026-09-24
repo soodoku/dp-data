@@ -24,3 +24,5 @@ data/*/papers/** -text -whitespace
 data/*/reports/** -text -whitespace
 data/*/design/** -text -whitespace
 data/*/other/** -text -whitespace
+data/celaya-2018/celaya.csv -text -whitespace
+data/shizuoka-2019/shizuoka.tsv -text -whitespace
