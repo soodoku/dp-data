@@ -34,7 +34,7 @@ package <- frictionless::create_package(list(
   description = paste(
     "Source metadata and contracts for Deliberative Poll research data."
   ),
-  version = "0.1.0",
+  version = unname(read.dcf(project_path("DESCRIPTION"))[1, "Version"]),
   resources = list()
 ))
 

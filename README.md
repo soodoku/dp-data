@@ -8,12 +8,12 @@ The repository establishes provenance before changing any analysis:
 
 - public replication deposits are stored byte-for-byte with checksums;
 - all 23 Cor–Sood poll-level scored knowledge batteries are extracted and cataloged;
-- the five historical CDD archive bundles are inventoried but remain in a
-  local vault while files are reviewed poll by poll;
+- historical CDD archive members retain their original paths and checksums;
+  unique unreviewed files remain in the local vault;
 - poll names and legacy numeric identifiers map to stable `poll_id` values;
 - data, questionnaires, codebooks, briefing materials, research designs,
   event reports, papers, and scripts share one artifact contract;
-- every recode must have a ledger entry; and
+- scoring definitions and unresolved recoding questions are recorded; and
 - downstream repositories consume a tagged export and verify its checksum.
 
 Direct identifiers were found in at least one historical raw file. The archive
@@ -48,7 +48,10 @@ inputs.
 
 The respondent stage is available with `make respondents`. It retains all
 reviewed source records for the historical poll scope, separates named samples
-from people, and builds versioned individual measures for UK Health, UK–EU, UK Monarchy, the 1997 UK election, UK Crime, CPL, WTU and SWEPCO.
+from people, and builds versioned individual measures for UK Health, UK–EU,
+UK Monarchy, the 1997 UK election, UK Crime, CPL, WTU and SWEPCO. These eight
+polls cover 308 historical respondent-field targets; 13 polls still need source
+reconciliation or respondent recodes.
 `make compare-respondents` checks these measures against historical values;
 [group and poll summaries follow later](docs/architecture.md#respondent-reconstruction-before-aggregation).
 The [coverage report](audit/respondent_coverage.csv) lists unfinished poll recodes

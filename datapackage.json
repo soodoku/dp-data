@@ -2,7 +2,7 @@
   "name": "deliberative-poll-data",
   "title": "Deliberative Poll data",
   "description": "Source metadata and contracts for Deliberative Poll research data.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "resources": [
     {
       "name": "respondent_sources",
