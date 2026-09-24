@@ -1,6 +1,6 @@
 R = Rscript
 
-.PHONY: compare-respondents respondents polardata linkage restore package manifests vault inventory disclosure validate test lint check import-surveys knowledge audit-surveys audit-downstream
+.PHONY: compare-respondents respondents polardata linkage restore package manifests disclosure validate test lint check import-surveys knowledge audit-surveys audit-downstream
 
 restore:
 	$(R) -e 'renv::restore(prompt = FALSE)'
@@ -10,12 +10,6 @@ package:
 
 manifests:
 	$(R) scripts/05_build_poll_manifests.R
-
-vault:
-	$(R) scripts/00_unpack_vault.R
-
-inventory:
-	$(R) scripts/01_build_archive_inventory.R
 
 disclosure:
 	$(R) scripts/04_scan_disclosure.R

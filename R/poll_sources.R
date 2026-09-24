@@ -1,14 +1,42 @@
+archive_source_path <- function(archive_path, expected_sha256 = NULL,
+                                inventory = NULL) {
+  if (is.null(inventory)) {
+    inventory <- readr::read_csv(
+      project_path("audit", "cdd_archive_files.csv"), show_col_types = FALSE
+    )
+  }
+  record <- inventory[inventory$path == archive_path, ]
+  if (nrow(record) != 1L) {
+    stop("Unknown or ambiguous archive path: ", archive_path)
+  }
+  if (!is.null(expected_sha256) && record$sha256 != expected_sha256) {
+    stop("Archive checksum contract mismatch: ", archive_path)
+  }
+  path <- project_path(record$retained_path)
+  if (!file.exists(path)) stop("Retained archive source is absent: ", path)
+  if (digest::digest(file = path, algo = "sha256") != record$sha256) {
+    stop("Retained archive source checksum mismatch: ", archive_path)
+  }
+  path
+}
+
+copy_archive_source <- function(archive_path, destination, expected_sha256) {
+  source <- archive_source_path(archive_path, expected_sha256)
+  destination <- project_path(destination)
+  if (source != destination) {
+    fs::dir_create(dirname(destination))
+    fs::file_copy(source, destination, overwrite = TRUE)
+  }
+  invisible(destination)
+}
+
 attribute_text <- function(column, name) {
   value <- attr(column, name, exact = TRUE)
   if (is.null(value)) "" else paste(value, collapse = "|")
 }
 
 read_archive_survey <- function(record) {
-  path <- project_path("vault", "cdd", record$archive_path)
-  observed <- digest::digest(file = path, algo = "sha256")
-  if (!identical(observed, record$source_sha256)) {
-    stop("Archive survey checksum mismatch: ", record$poll_id)
-  }
+  path <- archive_source_path(record$archive_path, record$source_sha256)
   data <- if (grepl("\\.sav$", path)) {
     haven::read_sav(path, user_na = TRUE)
   } else {
@@ -119,10 +147,8 @@ import_reviewed_surveys <- function() {
 
     if (record$transformation == "exact-copy") {
       stopifnot(length(excluded) == 0L)
-      fs::file_copy(
-        project_path("vault", "cdd", record$archive_path),
-        project_path(record$public_path),
-        overwrite = TRUE
+      copy_archive_source(
+        record$archive_path, record$public_path, record$source_sha256
       )
     } else if (record$transformation == "exclude-verbatim") {
       public <- public_survey_extract(data, excluded)
@@ -152,14 +178,9 @@ import_reviewed_surveys <- function() {
     )
   })
 
-  groups <- project_path("vault", "cdd", "data", "Ireland", "groups.csv")
-  stopifnot(
-    digest::digest(file = groups, algo = "sha256") ==
-      "cf7f63cb0c41bdf03f510e9a006b931d818e702bbd0ecd29ad029942b7ead6a1"
-  )
-  fs::file_copy(
-    groups, project_path("data", "northern-ireland-2007", "groups.csv"),
-    overwrite = TRUE
+  copy_archive_source(
+    "data/Ireland/groups.csv", "data/northern-ireland-2007/groups.csv",
+    "cf7f63cb0c41bdf03f510e9a006b931d818e702bbd0ecd29ad029942b7ead6a1"
   )
   codebooks <- read_metadata("artifacts") |>
     dplyr::filter(
@@ -170,11 +191,9 @@ import_reviewed_surveys <- function() {
     )
   purrr::walk(seq_len(nrow(codebooks)), function(row) {
     record <- codebooks[row, ]
-    original <- project_path("vault", "cdd", record$original_archive_path)
-    stopifnot(
-      digest::digest(file = original, algo = "sha256") == record$sha256
+    copy_archive_source(
+      record$original_archive_path, record$location, record$sha256
     )
-    fs::file_copy(original, project_path(record$location), overwrite = TRUE)
   })
   invisible(TRUE)
 }

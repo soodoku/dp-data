@@ -64,13 +64,16 @@ make check
 `make check` validates the Frictionless Data Package, source checksums,
 metadata contracts, the survey-based build, historical linkage, item-level
 comparisons, respondent and partial aggregate reconstruction, tests, and linting.
-`make inventory` is a local-only task
-that rebuilds the CDD vault inventory from the untracked archive.
-
-The five original CDD ZIP exports stay untracked at the repository root.
-`make vault` verifies their byte counts and SHA-256 checksums before unpacking
-them into the ignored `vault/cdd/` directory. It will stop rather than unpack
-an altered or missing bundle.
+The original CDD inventory in `audit/cdd_archive_files.csv` preserves every
+archive member's original path and hash. Its `retained_path` points to the
+surviving copy after deduplication, either under `data/` or in the local vault.
+Migration-only import and survey-review commands verify that copy's checksum.
+The unpacking and inventory-rebuilding commands have been retired; normal builds
+read the registered poll inputs under `data/` and need no archive extraction.
+Original bundle checksums remain in `metadata/source_bundles.csv` as provenance.
+The disclosure scan, survey import, archive comparison, and downstream source
+audit are also migration tools; they can be retired as their source-review work
+is completed.
 
 ## Repository roles
 

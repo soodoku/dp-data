@@ -1115,7 +1115,7 @@ There are 113 changed cells, 92 changed post scores, and a mean increase from
 not a new independent factual-key determination.
 
 This pass inspected the full
-[San Mateo DP Questionnaire 3-12-08 FINAL](<../vault/cdd/data/san_mateo/San Mateo DP Questionnaire 3-12-08 FINAL.doc>):
+[San Mateo DP Questionnaire 3-12-08 FINAL](<../data/san-mateo-2008/questionnaire-pre.doc>):
 Q20 is September 2007 median single-family house price and lists **$940,000**
 at code 5; Q26 lists **more than 75%** at code 5. The earlier narrative describes
 Q20's source label as 950,000. The difference in the textual amount requires
