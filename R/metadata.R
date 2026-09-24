@@ -161,6 +161,14 @@ validate_metadata <- function() {
     all(.data$status %in% c("current", "planned", "transitional", "retired")),
     error_fun = assertr::error_stop
   )
+  oos <- read_metadata("oos_sources")
+  source_rows <- match(oos$source_id, sources$source_id)
+  stopifnot(
+    !anyDuplicated(oos$file), !anyDuplicated(oos$path),
+    !anyNA(source_rows),
+    all(oos$path == sources$path[source_rows]),
+    all(oos$sha256 == sources$sha256[source_rows])
+  )
   validate_respondent_metadata()
   invisible(TRUE)
 }

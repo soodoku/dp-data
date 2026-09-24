@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.3
+
+- Centralize all 24 unchanged inputs and supporting documents for the
+  dp-distortions out-of-sample study, reusing four existing files. Preserve
+  original URLs, access dates and checksums in `metadata/oos_sources.csv`.
+- Record the historical benchmark contracts for dp-distortions and dp-deliberately.
+- Preserve existing poll recodes, source bytes and analysis outputs.
+
 ## 0.2.2
 
 - Publish Northern Ireland argument coder labels without verbatim responses,

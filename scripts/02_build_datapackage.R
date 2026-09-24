@@ -1,6 +1,7 @@
 source("R/paths.R")
 
 resources <- c(
+  "oos_sources",
   "respondent_sources",
   "polardata_fields",
   "polardata_targets",

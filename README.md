@@ -16,6 +16,13 @@ The repository establishes provenance before changing any analysis:
 - scoring definitions and unresolved recoding questions are recorded; and
 - downstream repositories consume a tagged export and verify its checksum.
 
+`metadata/oos_sources.csv` locates the 24 frozen public inputs and supporting
+documents used by the dp-distortions out-of-sample study. It retains original
+URLs, access dates and SHA-256 hashes; shared files have one physical copy under
+`data/<study>/`. Study-specific recoding and estimation remain downstream.
+Blank source license fields mean no license was recorded during this migration;
+they do not assign the repository license to third-party materials.
+
 Direct identifiers were found in at least one historical raw file. The archive
 therefore cannot be published as an undifferentiated dump. See
 [`docs/disclosure.md`](docs/disclosure.md).
