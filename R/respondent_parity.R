@@ -1,3 +1,21 @@
+historical_reference_people <- function(reference, poll_id) {
+  if (poll_id != "btp-presidential-primaries-2004") {
+    stopifnot(!anyDuplicated(reference$caseid))
+    return(reference)
+  }
+  stopifnot(
+    nrow(reference) == 434L, !anyNA(reference$caseid),
+    all(table(reference$caseid) == 2L)
+  )
+  comparable <- reference[, setdiff(names(reference), "X"), drop = FALSE]
+  unique_people <- comparable[!duplicated(comparable$caseid), , drop = FALSE]
+  matched <- unique_people[match(comparable$caseid, unique_people$caseid), ]
+  rownames(comparable) <- NULL
+  rownames(matched) <- NULL
+  stopifnot(isTRUE(all.equal(comparable, matched, check.attributes = FALSE)))
+  reference[!duplicated(reference$caseid), , drop = FALSE]
+}
+
 compare_respondent_measures <- function(measures, people, samples, reference,
                                         tolerance = 1e-10) {
   targets <- read_metadata("polardata_targets")
@@ -15,6 +33,7 @@ compare_respondent_measures <- function(measures, people, samples, reference,
     expected <- reference[reference$dpnum == contracts$dpnum[
       match(poll, contracts$poll_id)
     ], ]
+    expected <- historical_reference_people(expected, poll)
     stopifnot(
       nrow(persons) == nrow(expected),
       if (poll == "nic-1996") {
@@ -27,17 +46,20 @@ compare_respondent_measures <- function(measures, people, samples, reference,
       !anyDuplicated(persons$historical_respondent_id),
       setequal(persons$historical_respondent_id, as.character(expected$caseid))
     )
-    expected <- expected[match(persons$historical_respondent_id,
-                           as.character(expected$caseid)
-                         ), ][[target$legacy_field]]
+    expected <- expected[match(
+      persons$historical_respondent_id,
+      as.character(expected$caseid)
+    ), ][[target$legacy_field]]
     actual <- measures[
       measures$poll_id == poll &
         measures$definition_id == target$canonical_definition,
     ]
-    stopifnot(!anyDuplicated(actual$respondent_id),
+    stopifnot(
+      !anyDuplicated(actual$respondent_id),
       all(persons$respondent_id %in% actual$respondent_id)
     )
-    actual <- actual$value_numeric[match(persons$respondent_id,
+    actual <- actual$value_numeric[match(
+      persons$respondent_id,
       actual$respondent_id
     )]
     both <- !is.na(actual) & !is.na(expected)

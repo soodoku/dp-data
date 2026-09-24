@@ -1,0 +1,11 @@
+source_column,source_value,value_label
+d3043p,0,incorrect
+d3043p,1,correct
+d3044p,0,incorrect
+d3044p,1,correct
+d3045p,0,incorrect
+d3045p,1,correct
+d3046p,0,incorrect
+d3046p,1,correct
+preandpost,0,not selected
+preandpost,1,selected

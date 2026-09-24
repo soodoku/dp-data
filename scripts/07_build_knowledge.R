@@ -7,7 +7,7 @@ source("R/knowledge.R")
 source("R/exports.R")
 
 verify_source_files()
-poll_ids <- read_metadata("survey_sources")$poll_id
+poll_ids <- knowledge_poll_ids()
 polls <- purrr::map(poll_ids, build_poll_knowledge)
 table_names <- names(polls[[1]])
 tables <- purrr::map(table_names, function(name) {

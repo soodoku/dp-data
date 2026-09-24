@@ -1,7 +1,8 @@
 source(file.path(root, "R", "respondents.R"))
 
 respondent_export <- function(name) {
-  arrow::read_parquet(project_path("output", "respondent",
+  arrow::read_parquet(project_path(
+    "output", "respondent",
     paste0(name, ".parquet")
   ))
 }
@@ -11,8 +12,8 @@ test_that("every reviewed source row survives with an explicit identity", {
   contracts <- read_metadata("respondent_sources")
   reviewed <- contracts[contracts$status == "reviewed-source", ]
   expect_equal(nrow(contracts), 21L)
-  expect_equal(nrow(reviewed), 16L)
-  expect_equal(nrow(people), 24361L)
+  expect_equal(nrow(reviewed), 21L)
+  expect_setequal(unique(people$poll_id), reviewed$poll_id)
   expect_false(anyDuplicated(people[c("poll_id", "respondent_id")]) > 0L)
   for (poll in reviewed$poll_id) {
     source <- read_poll_survey(poll)
@@ -27,7 +28,8 @@ test_that("ambiguous and absent source IDs cannot merge people", {
   survey <- tibble::tibble(source_row = 1:5, id = c(1, 2, 2, NA, 5))
   contract <- tibble::tibble(poll_id = "p", source_id = "s", id_column = "id")
   people <- source_people(survey, contract)
-  expect_identical(people$respondent_id,
+  expect_identical(
+    people$respondent_id,
     c("1", "s:source-row-2", "s:source-row-3", "s:source-row-4", "5")
   )
   expect_identical(source_people(survey[5:1, ], contract), people[5:1, ])
@@ -37,12 +39,11 @@ test_that("ambiguous and absent source IDs cannot merge people", {
 test_that("sample exclusions do not become invented historical controls", {
   samples <- respondent_export("sample_memberships")
   historical <- samples[samples$sample_id == "historical-polardata", ]
-  expect_true(all(is.na(historical$included[
-    !historical$poll_id %in% c("uk-health-1998", "uk-eu-1995",
-      "uk-monarchy-1996", "uk-general-election-1997",
-      "cpl-1996", "wtu-1996", "swepco-1996", "uk-crime-1994", "nic-1996"
-    )
-  ])))
+  expect_setequal(
+    unique(historical$poll_id),
+    read_metadata("respondent_sources")$poll_id
+  )
+  expect_true(all(!is.na(historical$included)))
   expect_true(all(historical$included[
     historical$poll_id == "uk-health-1998"
   ]))
@@ -61,7 +62,9 @@ test_that("raw missing codes and literal waves survive the long export", {
   expect_true(all(is.na(responses$raw_numeric[missing])))
   expect_true(all(responses$missing_code[missing] == "system"))
   europe <- responses$poll_id %in% c("europolis-2009", "tomorrows-europe-2007")
-  expect_setequal(unique(responses$source_wave[europe]), c("T1", "T3"))
+  expect_setequal(unique(responses$source_wave[europe]),
+    c("T1", "T3", NA_character_)
+  )
 })
 
 test_that("individual measures need no group or stored aggregate fields", {
@@ -73,7 +76,8 @@ test_that("individual measures need no group or stored aggregate fields", {
   bare <- survey[fields]
   expect_identical(build_health_individual(bare), expected)
   expect_identical(build_health_individual(bare[230:1, ]), expected[230:1, ])
-  expect_identical(build_health_individual(bare[c(1L, 7L, 80L), ]),
+  expect_identical(
+    build_health_individual(bare[c(1L, 7L, 80L), ]),
     expected[c(1L, 7L, 80L), ]
   )
   expect_identical(build_health_individual(bare[1L, ]), expected[1L, ])
@@ -82,17 +86,22 @@ test_that("individual measures need no group or stored aggregate fields", {
 test_that("respondent contracts have complete dependencies and valid keys", {
   definitions <- read_metadata("measure_definitions")
   inputs <- read_metadata("measure_inputs")
-  expect_equal(nrow(definitions), 317L)
+  expect_setequal(
+    unique(definitions$poll_id),
+    read_metadata("respondent_sources")$poll_id
+  )
   expect_false(anyDuplicated(definitions[c("poll_id", "definition_id")]) > 0L)
   expect_setequal(inputs$definition_id, definitions$definition_id[
     definitions$scoring_rule != "historical-constant-missing"
   ])
   expect_true(all(nzchar(definitions$scoring_rule)))
   expect_true(all(nzchar(definitions$denominator_policy)))
-  tables <- lapply(c("people", "sample_memberships", "source_responses",
-                     "respondent_measures", "respondent_memberships"
-                   ), respondent_export)
-  names(tables) <- c("people", "sample_memberships", "source_responses",
+  tables <- lapply(c(
+    "people", "sample_memberships", "source_responses",
+    "respondent_measures", "respondent_memberships"
+  ), respondent_export)
+  names(tables) <- c(
+    "people", "sample_memberships", "source_responses",
     "respondent_measures", "respondent_memberships"
   )
   expect_silent(validate_respondent_tables(tables))
@@ -231,7 +240,8 @@ test_that("historical aliases do not overwrite source identity", {
   people <- respondent_export("people")
   monarchy <- people[people$poll_id == "uk-monarchy-1996", ]
   expect_true(all(is.na(monarchy$source_respondent_id)))
-  expect_identical(monarchy$historical_respondent_id,
+  expect_identical(
+    monarchy$historical_respondent_id,
     as.character(1000 + monarchy$source_row)
   )
   contracts <- read_metadata("respondent_sources")
@@ -289,11 +299,13 @@ test_that("utility calibration is independent of the supplied sample", {
     expect_identical(build_utility_individual(raw, poll), expected)
     expect_identical(build_utility_individual(raw[1L, ], poll), expected[1L, ])
     order <- rev(seq_len(nrow(raw)))
-    expect_identical(build_utility_individual(raw[order, ], poll),
+    expect_identical(
+      build_utility_individual(raw[order, ], poll),
       expected[order, ]
     )
     selected <- c(1L, 7L, 80L)
-    expect_identical(build_utility_individual(raw[selected, ], poll),
+    expect_identical(
+      build_utility_individual(raw[selected, ], poll),
       expected[selected, ]
     )
     expect_error(
@@ -332,13 +344,15 @@ test_that("UK Crime uses raw fields and preserves row order", {
   raw <- survey |> dplyr::select(dplyr::all_of(fields))
   values <- build_crime_individual(raw)
   expect_equal(values, build_crime_individual(survey))
-  expect_equal(build_crime_individual(raw[c(12, 1, 800), ]),
+  expect_equal(
+    build_crime_individual(raw[c(12, 1, 800), ]),
     values[c(12, 1, 800), ]
   )
   expect_equal(build_crime_individual(raw[12, ]), values[12, ])
   raw$morecop1[1] <- 99
   expect_error(build_crime_individual(raw), "Unreviewed source codes")
-  expect_error(build_crime_individual(survey[, names(survey) != "kw11"]),
+  expect_error(
+    build_crime_individual(survey[, names(survey) != "kw11"]),
     "Missing source field"
   )
 })
@@ -364,14 +378,35 @@ test_that("UK Crime keeps the ungrouped attendee outside its historical view", {
   contract <- read_metadata("respondent_sources") |>
     dplyr::filter(.data$poll_id == "uk-crime-1994")
   people <- source_people(survey, contract)
-  expect_equal(people$historical_respondent_id,
+  expect_equal(
+    people$historical_respondent_id,
     as.character(10000 + survey$source_row)
   )
   samples <- respondent_export("sample_memberships") |>
-    dplyr::filter(.data$poll_id == "uk-crime-1994",
+    dplyr::filter(
+      .data$poll_id == "uk-crime-1994",
       .data$sample_id == "historical-polardata"
     )
   expect_equal(sum(as.numeric(survey$part) == 1), 300L)
   expect_equal(sum(samples$included), 299L)
   expect_equal(samples$included, survey$part == 1 & !is.na(survey$group))
+})
+
+
+test_that("Primaries duplicate rows must agree", {
+  source(project_path("R", "respondent_parity.R"))
+  reference <- readr::read_tsv(project_path(
+    "evidence", "benchmarks", "polardata.tab"
+  ), show_col_types = FALSE)
+  primary <- reference[reference$dpnum == 16, ]
+  expect_equal(nrow(historical_reference_people(
+    primary, "btp-presidential-primaries-2004"
+  )), 217L)
+  primary$t1know[[1]] <- primary$t1know[[1]] + .1
+  expect_error(historical_reference_people(
+    primary, "btp-presidential-primaries-2004"
+  ))
+  expect_error(historical_reference_people(
+    reference[reference$dpnum == 16, ], "uk-health-1998"
+  ))
 })

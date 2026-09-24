@@ -13,3 +13,4 @@ sample_memberships,One source record and named sample,poll_id + respondent_id + 
 source_responses,One reviewed source field for one respondent,poll_id + respondent_id + source_column,parquet,current,One reviewed source field for one respondent; see docs/architecture.md
 respondent_measures,One respondent and versioned measure definition,poll_id + respondent_id + definition_id,parquet,current,One respondent and versioned measure definition; see docs/architecture.md
 respondent_memberships,One known discussion group for a source record,poll_id + respondent_id + session_id + group_id,parquet,current,One known discussion group for a source record; see docs/architecture.md
+derived_measures,One source person and historical derived field,poll_id + respondent_id + legacy_field + definition_version,parquet,current,Group and poll computations after respondent recoding; includes person-specific peer adjustments and explicit nonfinite status

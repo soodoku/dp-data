@@ -2,7 +2,8 @@ archive_source_path <- function(archive_path, expected_sha256 = NULL,
                                 inventory = NULL) {
   if (is.null(inventory)) {
     inventory <- readr::read_csv(
-      project_path("audit", "cdd_archive_files.csv"), show_col_types = FALSE
+      project_path("audit", "cdd_archive_files.csv"),
+      show_col_types = FALSE
     )
   }
   record <- inventory[inventory$path == archive_path, ]
@@ -36,6 +37,9 @@ attribute_text <- function(column, name) {
 }
 
 read_archive_survey <- function(record) {
+  if (record$transformation %in% c("join-workbook", "join-zeguo")) {
+    return(read_joined_public_source(record))
+  }
   path <- archive_source_path(record$archive_path, record$source_sha256)
   data <- if (grepl("\\.sav$", path)) {
     haven::read_sav(path, user_na = TRUE)
@@ -124,6 +128,24 @@ public_survey_extract <- function(data, excluded) {
     )
 }
 
+read_joined_public_source <- function(record) {
+  directory <- project_path("data", record$poll_id, "source-materials")
+  data <- if (record$transformation == "join-workbook") {
+    source(project_path("R", "source_new_haven.R"), local = TRUE)
+    read_new_haven_workbook(file.path(directory, "survey-waves.xlsx"))
+  } else if (record$transformation == "join-zeguo") {
+    source(project_path("R", "source_zeguo.R"), local = TRUE)
+    read_zeguo_sources(directory)
+  } else {
+    stop("Unsupported public source join: ", record$poll_id)
+  }
+  stopifnot(
+    nrow(data) == record$source_rows,
+    ncol(data) == record$source_columns, !anyDuplicated(names(data))
+  )
+  data
+}
+
 import_reviewed_surveys <- function() {
   sources <- dplyr::bind_rows(
     read_metadata("survey_sources"), read_metadata("survey_components")
@@ -132,6 +154,10 @@ import_reviewed_surveys <- function() {
   purrr::walk(seq_len(nrow(sources)), function(row) {
     record <- sources[row, ]
     data <- read_archive_survey(record)
+    if (record$transformation %in% c("join-workbook", "join-zeguo")) {
+      arrow::write_parquet(data, project_path(record$public_path))
+      return(invisible(NULL))
+    }
     poll_exclusions <- if (
       record$source_id == "cdd-denmark-euro-2000-departure"
     ) {
@@ -240,7 +266,8 @@ read_public_survey <- function(record) {
   } else if (record$transformation == "exact-copy" && grepl("\\.dta$", path)) {
     haven::read_dta(path) |>
       dplyr::mutate(source_row = dplyr::row_number(), .before = 1)
-  } else if (record$transformation == "exclude-verbatim") {
+  } else if (record$transformation %in%
+               c("exclude-verbatim", "join-workbook", "join-zeguo")) {
     arrow::read_parquet(path)
   } else {
     stop("No reviewed survey reader for ", record$poll_id)

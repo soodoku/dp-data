@@ -140,15 +140,34 @@ rename, when producing a future wide `polardata` version. The twelve `grk.*`
 columns are entirely missing in the historical benchmark; their poll is outside
 this 21-poll scope, so they remain inventoried without invented poll targets.
 
-UK Health, UK–EU, UK Monarchy, the 1997 UK election, UK Crime, CPL, WTU and SWEPCO implement all their
-applicable respondent-field
-targets, including intentional missing fields. Empirical scale limits are
-explicit historical calibration constants, so selecting or reordering rows
-cannot change an individual's score. The separate
-[parity report](../audit/respondent_parity.csv) checks values, missingness and
-historical sample identities. Group means, entropy, generalized variance and
-poll summaries belong in a later stage. The existing UK Health partial wide
-export still adds its previously implemented summaries for regression checks.
+All 21 historical polls implement their applicable respondent-field targets,
+including intentional missing fields. Empirical scale limits and intermediate
+storage precision preserve the historical definition. Selecting or reordering
+rows cannot recalibrate an individual's score. The separate
+[respondent comparison](../audit/respondent_parity.csv) checks values,
+missingness and historical sample identities.
+
+`make polardata` computes derived variables after respondent recoding. Each
+poll profile specifies the historical sample for each calculation: some early
+group summaries include people excluded by later export filters. It writes the
+364-column wide export and the source attitude-index catalog under
+`output/polardata/`. `derived_measures.parquet` records each derived value by
+unique source person, legacy field and definition version. Person-level keys
+are needed because peer means and normalized gains can differ within a group.
+Its status column identifies missing and infinite historical results.
+
+The wide export preserves the two copies of each of 217 Primaries respondents;
+the canonical tables do not duplicate people. `X` is a regenerated export row
+number, not an identity. Comparisons join on poll and historical respondent ID
+and require duplicated historical records to agree in every other column.
+The twelve absent Greek attitude columns remain missing.
+
+Construction never reads the benchmark. `make compare-polardata` separately
+checks all fields. Its narrowly reviewed generalized-variance exceptions require
+an unchanged source matrix fingerprint and a near-singular covariance with both
+values inside the diagnostic perturbation envelope. The audit distinguishes
+indefinite covariances from ordinary singularity. Changes outside these checks
+fail comparison; benchmark values are never copied into reconstructed outputs.
 
 ## Migration order
 
@@ -171,3 +190,24 @@ any differences in keys, items, missingness, or derived values must be explained
 Submodules are deliberately avoided. A downstream analysis should be
 reproducible from an immutable release artifact even when this repository
 continues to evolve.
+
+### Reconstruction steps for each historical poll
+
+1. Trace the final merge backward to the poll script, source version, and index
+   definitions. Read the questionnaires and codebook before choosing recodes.
+2. Establish source IDs, historical aliases, eligible samples, discussion groups,
+   and any export duplication. Keep canonical people unique.
+3. Rebuild individual measures from raw answers with explicit code assertions,
+   missingness, denominators, wave dependencies, and calibration samples.
+4. Register each historical field and its source dependencies. Preserve values
+   needed by summaries computed before later recodes or sample exclusions.
+5. Compare IDs, samples, missingness, and values against the historical benchmark;
+   test stripped derived columns, reordered records, invalid codes, and missing
+   inputs. The benchmark supplies no reconstruction values.
+6. Record unresolved definitions and suspected errors in `poll-issues.md`, with
+   the source evidence, affected counts, and checks needed before correction.
+7. Integrate the poll into group/poll summaries and the historical export; rerun
+   the full local checks and compare existing downstream outputs.
+
+Poll implementations can proceed independently. Shared registries, exports, and
+release gates are integrated centrally to avoid conflicting edits.

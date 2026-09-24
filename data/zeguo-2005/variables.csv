@@ -1,0 +1,950 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+p,double,numeric,float64,participant number t1,%8.0g,,,TRUE,Retained
+realpnum,double,numeric,float64,,%8.0g,,,TRUE,Retained
+groupnum,double,numeric,float64,,%8.0g,,,TRUE,Retained
+__,character,character,,participant name t1,%6s,,,FALSE,Excluded; see source_field_exclusions
+Gender,double,numeric,float64,gender t1,%8.0g,,,TRUE,Retained
+Age,double,numeric,float64,age t1,%8.0g,,,TRUE,Retained
+maritalstatus,double,numeric,float64,marital status t1,%8.0g,,,TRUE,Retained
+Education,double,numeric,float64,education t1,%8.0g,,,TRUE,Retained
+Occupation,double,numeric,float64,occupation t1,%8.0g,,,TRUE,Retained
+d2006,double,numeric,float64,q6: wenchang main ave t1,%8.0g,,,TRUE,Retained
+d2007,double,numeric,float64,q7: first stage of muchang main road t1,%9.0g,,,TRUE,Retained
+d2008,double,numeric,float64,q8: bridge t1,%8.0g,,,TRUE,Retained
+d2009,double,numeric,float64,q9: fuxin road (east end) t1,%8.0g,,,TRUE,Retained
+d2010,double,numeric,float64,q10: dongcheng road (first gate) t1,%8.0g,,,TRUE,Retained
+d2011,double,numeric,float64,q11: dongcheng road (second stage) t1,%8.0g,,,TRUE,Retained
+d2012,double,numeric,float64,q12: shuangchen road (first gate) t1,%8.0g,,,TRUE,Retained
+d2013,double,numeric,float64,q13: shuangchen road (second stage) t1,%8.0g,,,TRUE,Retained
+d2014,double,numeric,float64,q14: tngquao road t1,%8.0g,,,TRUE,Retained
+d2015,double,numeric,float64,q15: reconstruction for donghe road t1,%8.0g,,,TRUE,Retained
+d2016,double,numeric,float64,q16: donghe main ave t1,%8.0g,,,TRUE,Retained
+d2017,double,numeric,float64,q17: xicheng road (first stage) t1,%8.0g,,,TRUE,Retained
+d2018,double,numeric,float64,q18: zeguo main ave (second stage) t1,%8.0g,,,TRUE,Retained
+d2019,double,numeric,float64,q19: zeguo main ave (third stage) t1,%8.0g,,,TRUE,Retained
+d2020,double,numeric,float64,q20: air compressor industrial zone matching environmental constructions t1,%8.0g,,,TRUE,Retained
+d2021,double,numeric,float64,q21: auxiliary environmental construction for muyu/lianshu industrial zone t1,%8.0g,,,TRUE,Retained
+d2022,double,numeric,float64,q22: chengqu subroad rebuild t1,%8.0g,,,TRUE,Retained
+d2023,double,numeric,float64,q23: guojialing hill side reconstruction t1,%8.0g,,,TRUE,Retained
+d2024,double,numeric,float64,q24: wenchang park (first stage) t1,%8.0g,,,TRUE,Retained
+d2025,double,numeric,float64,q25: wenchang park (second stage) t1,%8.0g,,,TRUE,Retained
+d2026,double,numeric,float64,q26: citizen park (first stage) t1,%8.0g,,,TRUE,Retained
+d2027,double,numeric,float64,q27: urban environmental construtions t1,%9.0g,,,TRUE,Retained
+d2028,double,numeric,float64,q28: danyan hill park t1,%8.0g,,,TRUE,Retained
+d2029,double,numeric,float64,q29: muyu hill park t1,%8.0g,,,TRUE,Retained
+d2030,double,numeric,float64,q30: urban and countryside environmental projects t1,%8.0g,,,TRUE,Retained
+d2031,double,numeric,float64,q31: demonstrative street t1,%8.0g,,,TRUE,Retained
+d2032,double,numeric,float64,q32: old street reconstruction t1,%8.0g,,,TRUE,Retained
+d2033,double,numeric,float64,q33: muyu environmental project (sewage disposal) t1,%8.0g,,,TRUE,Retained
+d2034,double,numeric,float64,q34: danyan environmental project (sewage disposal) t1,%8.0g,,,TRUE,Retained
+d2035,double,numeric,float64,"q35: treatment of  sewage, earlier stage t1",%8.0g,,,TRUE,Retained
+d20361,double,numeric,float64,what are the priority projects for this year from above 30 projects? rank 1 t1,%8.0g,,,TRUE,Retained
+d20362,double,numeric,float64,rank 2 t1,%8.0g,,,TRUE,Retained
+d20363,double,numeric,float64,rank 3 t1,%8.0g,,,TRUE,Retained
+d20364,double,numeric,float64,rank 4 t1,%8.0g,,,TRUE,Retained
+d20365,double,numeric,float64,rank 5 t1,%8.0g,,,TRUE,Retained
+d2037,double,numeric,float64,q37: what are the reasons for you to select the top five priority projects? t1,%8.0g,,,TRUE,Retained
+d20381,double,numeric,float64,q38-1: how important is this to the economical development? t1,%8.0g,,,TRUE,Retained
+d20382,double,numeric,float64,q38-2: how important is this in protecting the environment? t1,%8.0g,,,TRUE,Retained
+d20383,double,numeric,float64,q38-3: how important is this to you and your family's daily life convenience? t1,%8.0g,,,TRUE,Retained
+d20384,double,numeric,float64,q38-4: how important is this to the image of city? t1,%8.0g,,,TRUE,Retained
+d2039,double,numeric,float64,q39: do you think the government will seriously take into account your views and,%8.0g,,,TRUE,Retained
+d2040,double,numeric,float64,q40: do you think the government will use the results of the democracy deliberat,%8.0g,,,TRUE,Retained
+d2041,double,numeric,float64,"q41: do you agree with the following view? ""most people do not know much about p",%8.0g,,,TRUE,Retained
+d2042,double,numeric,float64,"q42: do you agree with the following view? ""common people like me do not have a",%8.0g,,,TRUE,Retained
+d3043,double,numeric,float64,q43: by how much did zeguo township's revenue increase from 2003 to 2004? t1,%8.0g,,,TRUE,Retained
+d3044,double,numeric,float64,q44: what is the figures for the floating population in zeguo township? t1,%8.0g,,,TRUE,Retained
+d3045,double,numeric,float64,q45: which of the below is not a major product of zeguo township? t1,%8.0g,,,TRUE,Retained
+d3046,double,numeric,float64,"q46: at the moment, how many parks does zeguo have? t1",%8.0g,,,TRUE,Retained
+pp,double,numeric,float64,participant number t2,%8.0g,,,TRUE,Retained
+____0p,double,numeric,float64,gender t2,%8.0g,,,TRUE,Retained
+____1p,double,numeric,float64,age t2,%8.0g,,,TRUE,Retained
+v5p,double,numeric,float64,marital status t2,%8.0g,,,TRUE,Retained
+____2p,double,numeric,float64,education t2,%8.0g,,,TRUE,Retained
+____3p,double,numeric,float64,occupation t2,%8.0g,,,TRUE,Retained
+d2006p,double,numeric,float64,q6: wenchang main ave t2,%8.0g,,,TRUE,Retained
+d2007p,double,numeric,float64,q7: first stage of muchang main road t2,%8.0g,,,TRUE,Retained
+d2008p,double,numeric,float64,q8: bridge t2,%9.0g,,,TRUE,Retained
+d2009p,double,numeric,float64,q9: fuxin road (east end) t2,%8.0g,,,TRUE,Retained
+d2010p,double,numeric,float64,q10: dongcheng road (first gate) t2,%8.0g,,,TRUE,Retained
+d2011p,double,numeric,float64,q11: dongcheng road (second stage) t2,%8.0g,,,TRUE,Retained
+d2012p,double,numeric,float64,q12: shuangchen road (first gate) t2,%8.0g,,,TRUE,Retained
+d2013p,double,numeric,float64,q13: shuangchen road (second stage) t2,%8.0g,,,TRUE,Retained
+d2014p,double,numeric,float64,q14: tngquao road t2,%8.0g,,,TRUE,Retained
+d2015p,double,numeric,float64,q15: reconstruction for donghe road t2,%8.0g,,,TRUE,Retained
+d2016p,double,numeric,float64,q16: donghe main ave t2,%8.0g,,,TRUE,Retained
+d2017p,double,numeric,float64,q17: xicheng road (first stage) t2,%8.0g,,,TRUE,Retained
+d2018p,double,numeric,float64,q18: zeguo main ave (second stage) t2,%8.0g,,,TRUE,Retained
+d2019p,double,numeric,float64,q19: zeguo main ave (third stage) t2,%8.0g,,,TRUE,Retained
+d2020p,double,numeric,float64,q20: air compressor industrial zone matching environmental constructions t2,%8.0g,,,TRUE,Retained
+d2021p,double,numeric,float64,q21: auxiliary environmental construction for muyu/lianshu industrial zone t2,%8.0g,,,TRUE,Retained
+d2022p,double,numeric,float64,q22: chengqu subroad rebuild t2,%8.0g,,,TRUE,Retained
+d2023p,double,numeric,float64,q23: guojialing hill side reconstruction t2,%8.0g,,,TRUE,Retained
+d2024p,double,numeric,float64,q24: wenchang park (first stage) t2,%8.0g,,,TRUE,Retained
+d2025p,double,numeric,float64,q25: wenchang park (second stage) t2,%8.0g,,,TRUE,Retained
+d2026p,double,numeric,float64,q26: citizen park (first stage) t2,%8.0g,,,TRUE,Retained
+d2027p,double,numeric,float64,q27: urban environmental construtions t2,%8.0g,,,TRUE,Retained
+d2028p,double,numeric,float64,q28: danyan hill park t2,%8.0g,,,TRUE,Retained
+d2029p,double,numeric,float64,q29: muyu hill park t2,%8.0g,,,TRUE,Retained
+d2030p,double,numeric,float64,q30: urban and countryside environmental projects t2,%8.0g,,,TRUE,Retained
+d2031p,double,numeric,float64,q31: demonstrative street t2,%8.0g,,,TRUE,Retained
+d2032p,double,numeric,float64,q32: old street reconstruction t2,%8.0g,,,TRUE,Retained
+d2033p,double,numeric,float64,q33: muyu environmental project (sewage disposal) t2,%8.0g,,,TRUE,Retained
+d2034p,double,numeric,float64,q34: danyan environmental project (sewage disposal) t2,%8.0g,,,TRUE,Retained
+d2035p,double,numeric,float64,"q35: treatment of  sewage, earlier stage t2",%8.0g,,,TRUE,Retained
+d20361p,double,numeric,float64,what are the priority projects for this year from above 30 projects? rank 1 t2,%8.0g,,,TRUE,Retained
+d20362p,double,numeric,float64,rank 2 t2,%8.0g,,,TRUE,Retained
+d20363p,double,numeric,float64,rank 3 t2,%8.0g,,,TRUE,Retained
+d20364p,double,numeric,float64,rank 4 t2,%8.0g,,,TRUE,Retained
+d20365p,double,numeric,float64,rank 5 t2,%8.0g,,,TRUE,Retained
+d2037p,double,numeric,float64,q37: what are the reasons for you to select the top five priority projects? t2,%8.0g,,,TRUE,Retained
+d20381p,double,numeric,float64,q38-1: how important is this to the economical development? t2,%8.0g,,,TRUE,Retained
+d20382p,double,numeric,float64,q38-2: how important is this in protecting the environment? t2,%8.0g,,,TRUE,Retained
+d20383p,double,numeric,float64,q38-3: how important is this to you and your family's daily life convenience? t2,%8.0g,,,TRUE,Retained
+d20384p,double,numeric,float64,q38-4: how important is this to the image of city? t2,%8.0g,,,TRUE,Retained
+d2039p,double,numeric,float64,q39: do you think the government will seriously take into account your views and,%8.0g,,,TRUE,Retained
+d2040p,double,numeric,float64,q40: do you think the government will use the results of the democracy deliberat,%8.0g,,,TRUE,Retained
+d2041p,double,numeric,float64,"q41: do you agree with the following view? ""most people do not know much about p",%8.0g,,,TRUE,Retained
+d2042p,double,numeric,float64,"q42: do you agree with the following view? ""common people like me do not have a",%8.0g,,,TRUE,Retained
+d3043p,double,haven_labelled|vctrs_vctr|double,float64,q43: by how much did zeguo township's revenue increase from 2003 to 2004? t2,%8.0g,,,TRUE,Retained
+d3044p,double,haven_labelled|vctrs_vctr|double,float64,q44: what is the figures for the floating population in zeguo township? t2,%8.0g,,,TRUE,Retained
+d3045p,double,haven_labelled|vctrs_vctr|double,float64,q45: which of the below is not a major product of zeguo township? t2,%8.0g,,,TRUE,Retained
+d3046p,double,haven_labelled|vctrs_vctr|double,float64,"q46: at the moment, how many parks does zeguo have? t2",%8.0g,,,TRUE,Retained
+d4047p,double,numeric,float64,q47: what are your views on participating in this form of small group discussion,%8.0g,,,TRUE,Retained
+d4048p,double,numeric,float64,q48: what are your views on this form of large group sessions with experts? t2,%8.0g,,,TRUE,Retained
+d4049p,double,numeric,float64,q49: what are your views on the entire day of deliberation? t2,%8.0g,,,TRUE,Retained
+d40501p,double,numeric,float64,q50-1: what are your views of the following questions? t2,%8.0g,,,TRUE,Retained
+d40502p,double,numeric,float64,q50-2: did your small group moderator provide everyone with an equal opportunity,%8.0g,,,TRUE,Retained
+d40503p,double,numeric,float64,q50-3: were your group members equal in the discussions? t2,%8.0g,,,TRUE,Retained
+d40504p,double,numeric,float64,q50-4: did your small group moderator attempt to influence you or your group mem,%8.0g,,,TRUE,Retained
+d40505p,double,numeric,float64,q50-5: did your small group moderator attempt leading you and your group members,%8.0g,,,TRUE,Retained
+d40506p,double,numeric,float64,q50-6: was your small group discussion dominated only by a few people? t2,%8.0g,,,TRUE,Retained
+wo3pre42,double,numeric,float64,,%8.0g,,,TRUE,Retained
+wo3post4,double,numeric,float64,,%8.0g,,,TRUE,Retained
+wo3pre41,double,numeric,float64,,%8.0g,,,TRUE,Retained
+wo3post0,double,numeric,float64,,%8.0g,,,TRUE,Retained
+rnum,double,numeric,float64,,%8.0g,,,TRUE,Retained
+grpnum,double,numeric,float64,,%8.0g,,,TRUE,Retained
+____np,character,character,,non participants name,%6s,,,FALSE,Excluded; see source_field_exclusions
+____0np,double,numeric,float64,gender non-participants,%8.0g,,,TRUE,Retained
+____1np,double,numeric,float64,age non-participants,%8.0g,,,TRUE,Retained
+v5np,double,numeric,float64,marital status non-participants,%8.0g,,,TRUE,Retained
+____2np,double,numeric,float64,educatoin non-participants,%8.0g,,,TRUE,Retained
+____3np,double,numeric,float64,occupation non-participants,%8.0g,,,TRUE,Retained
+d2006np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2007np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2008np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2009np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2010np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2011np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2012np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2013np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2014np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2015np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2016np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2017np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2018np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2019np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2020np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2021np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2022np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2023np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2024np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2025np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2026np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2027np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2028np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2029np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2030np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2031np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2032np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2033np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2034np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2035np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d20361np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d20362np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d20363np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d20364np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d20365np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2037np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d20381np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d20382np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d20383np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d20384np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2039np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2040np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2041np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2042np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d3043np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d3044np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d3045np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d3046np,double,numeric,float64,,%8.0g,,,TRUE,Retained
+___merge,double,numeric,float64,,%8.0g,,,TRUE,Retained
+t2know,double,numeric,float64,Mean of Four Knowledge Questions (rmean),%9.0g,,,TRUE,Retained
+t1q6mean,double,numeric,float64,t1 group mean for wenchang main avenue,%9.0g,,,TRUE,Retained
+t1rdistw,double,numeric,float64,t1 r's distance from wenchang main avenue,%9.0g,,,TRUE,Retained
+t1q6sum,double,numeric,float64,t1 sum of wenchang main avenue,%9.0g,,,TRUE,Retained
+t1q6n,double,numeric,float64,t1 n of wenchang main avenue,%8.0g,,,TRUE,Retained
+t1q6sgm,double,numeric,float64,t1 for wenchang main avenue -- r's distance from small group mean (w/o r's pos),%9.0g,,,TRUE,Retained
+sewagein,double,numeric,float64,"t2-t1 mean of q33, q34, and q35 sewage index dv",%9.0g,,,TRUE,Retained
+t1q33mea,double,numeric,float64,t1 group mean for q33,%9.0g,,,TRUE,Retained
+t1q34mea,double,numeric,float64,t1 group mean for q34,%9.0g,,,TRUE,Retained
+t1q35mea,double,numeric,float64,t1 group mean for q35,%9.0g,,,TRUE,Retained
+t1rdistq,double,numeric,float64,t1 r's distance from q33 group mean,%9.0g,,,TRUE,Retained
+t1rdis_a,double,numeric,float64,t1 r's distance from q34 group mean,%9.0g,,,TRUE,Retained
+t1rdis_b,double,numeric,float64,t1 r's distance from q35 group mean,%9.0g,,,TRUE,Retained
+t1q33sum,double,numeric,float64,t1 sum for q33,%8.0g,,,TRUE,Retained
+t1q34sum,double,numeric,float64,t1 sum for q34,%8.0g,,,TRUE,Retained
+t1q35sum,double,numeric,float64,t1 sum for q35,%8.0g,,,TRUE,Retained
+t1q33n,double,numeric,float64,t1 n for q33,%8.0g,,,TRUE,Retained
+t1q34n,double,numeric,float64,t1 n for q34,%8.0g,,,TRUE,Retained
+t1q35n,double,numeric,float64,t1 n for q35,%8.0g,,,TRUE,Retained
+t1q33rdf,double,numeric,float64,t1 q33 -- (sum-r's pos)/(n-1) = small grp mean w/o r's pos,%9.0g,,,TRUE,Retained
+t1q34rdf,double,numeric,float64,t1 q34 -- (sum-r's pos)/(n-1) = small grp mean w/o r's pos,%9.0g,,,TRUE,Retained
+t1q35rdf,double,numeric,float64,t1 q35 -- (sum-r's pos)/(n-1) = small grp mean w/o r's pos,%9.0g,,,TRUE,Retained
+t2t1dfq3,double,numeric,float64,t2-t1 for q33,%8.0g,,,TRUE,Retained
+t2t1df_a,double,numeric,float64,t2-t1 for q34,%8.0g,,,TRUE,Retained
+t2t1df_b,double,numeric,float64,t2-t1 for q35,%8.0g,,,TRUE,Retained
+t2t1dfq6,double,numeric,float64,t2-t1 for q6,%9.0g,,,TRUE,Retained
+environi,double,numeric,float64,"t2-t1 mean of environmental projects (30, 27, 21, 20)",%9.0g,,,TRUE,Retained
+t2t1dfq2,double,numeric,float64,t2-t1 for q20,%8.0g,,,TRUE,Retained
+t2t1df_c,double,numeric,float64,t2-t1 for q21,%8.0g,,,TRUE,Retained
+t2t1df_d,double,numeric,float64,t2-t1 for q27,%8.0g,,,TRUE,Retained
+t2t1df_e,double,numeric,float64,t2-t1 for q30,%8.0g,,,TRUE,Retained
+t1q20mea,double,numeric,float64,t1 group mean for q20,%9.0g,,,TRUE,Retained
+t1q21mea,double,numeric,float64,t1 group mean for q21,%9.0g,,,TRUE,Retained
+t1q27mea,double,numeric,float64,t1 group mean for q27,%9.0g,,,TRUE,Retained
+t1q30mea,double,numeric,float64,t1 group mean for q30,%9.0g,,,TRUE,Retained
+t1rdis_c,double,numeric,float64,t1 r's distance from q20 group mean,%9.0g,,,TRUE,Retained
+t1rdis_d,double,numeric,float64,t1 r's distance from q21 group mean,%9.0g,,,TRUE,Retained
+t1rdis_e,double,numeric,float64,t1 r's distance from q27 group mean,%9.0g,,,TRUE,Retained
+t1rdis_f,double,numeric,float64,t1 r's distance from q30 group mean,%9.0g,,,TRUE,Retained
+t1q20sum,double,numeric,float64,t1 sum for q20,%8.0g,,,TRUE,Retained
+t1q21sum,double,numeric,float64,t1 sum for q21,%8.0g,,,TRUE,Retained
+t1q27sum,double,numeric,float64,t1 sum for q27,%9.0g,,,TRUE,Retained
+t1q30sum,double,numeric,float64,t1 sum for q30,%8.0g,,,TRUE,Retained
+t1q20n,double,numeric,float64,t1 n for q20,%8.0g,,,TRUE,Retained
+t1q21n,double,numeric,float64,t1 n for q21,%8.0g,,,TRUE,Retained
+t1q27n,double,numeric,float64,t1 n for q27,%8.0g,,,TRUE,Retained
+t1q30n,double,numeric,float64,t1 n for q30,%8.0g,,,TRUE,Retained
+t1q20rdf,double,numeric,float64,t1 q20 -- (sum-r's pos)/(n-1) = small grp mean w/o r's pos,%9.0g,,,TRUE,Retained
+t1q21rdf,double,numeric,float64,t1 q21 -- (sum-r's pos)/(n-1) = small grp mean w/o r's pos,%9.0g,,,TRUE,Retained
+t1q27rdf,double,numeric,float64,t1 q27 -- (sum-r's pos)/(n-1) = small grp mean w/o r's pos,%9.0g,,,TRUE,Retained
+t1q30rdf,double,numeric,float64,t1 q30 -- (sum-r's pos)/(n-1) = small grp mean w/o r's pos,%9.0g,,,TRUE,Retained
+parkinde,double,numeric,float64,"t2-t1 mean of parks (28,29, 24, 25, 26)",%9.0g,,,TRUE,Retained
+t2t1df_f,double,numeric,float64,t2-t1 for q24,%8.0g,,,TRUE,Retained
+t2t1df_g,double,numeric,float64,t2-t1 for q25,%8.0g,,,TRUE,Retained
+t2t1df_h,double,numeric,float64,t2-t1 for q26,%8.0g,,,TRUE,Retained
+t2t1df_i,double,numeric,float64,t2-t1 for q28,%8.0g,,,TRUE,Retained
+t2t1df_j,double,numeric,float64,t2-t1 for q29,%8.0g,,,TRUE,Retained
+t1q24mea,double,numeric,float64,t1 group mean for q24,%9.0g,,,TRUE,Retained
+t1q25mea,double,numeric,float64,t1 group mean for q25,%9.0g,,,TRUE,Retained
+t1q26mea,double,numeric,float64,t1 group mean for q26,%9.0g,,,TRUE,Retained
+t1q28mea,double,numeric,float64,t1 group mean for q28,%9.0g,,,TRUE,Retained
+t1q29mea,double,numeric,float64,t1 group mean for q29,%9.0g,,,TRUE,Retained
+t1rdis_g,double,numeric,float64,t1 r's distance from q24 group mean,%9.0g,,,TRUE,Retained
+t1rdis_h,double,numeric,float64,t1 r's distance from q25 group mean,%9.0g,,,TRUE,Retained
+t1rdis_i,double,numeric,float64,t1 r's distance from q26 group mean,%9.0g,,,TRUE,Retained
+t1rdis_j,double,numeric,float64,t1 r's distance from q28 group mean,%9.0g,,,TRUE,Retained
+t1rdis_k,double,numeric,float64,t1 r's distance from q29 group mean,%9.0g,,,TRUE,Retained
+t1q24sum,double,numeric,float64,t1 sum for q24,%8.0g,,,TRUE,Retained
+t1q25sum,double,numeric,float64,t1 sum for q25,%8.0g,,,TRUE,Retained
+t1q26sum,double,numeric,float64,t1 sum for q26,%8.0g,,,TRUE,Retained
+t1q28sum,double,numeric,float64,t1 sum for q28,%8.0g,,,TRUE,Retained
+t1q29sum,double,numeric,float64,t1 sum for q29,%8.0g,,,TRUE,Retained
+t1q24n,double,numeric,float64,t1 n for q24,%8.0g,,,TRUE,Retained
+t1q25n,double,numeric,float64,t1 n for q25,%8.0g,,,TRUE,Retained
+t1q26n,double,numeric,float64,t1 n for q26,%8.0g,,,TRUE,Retained
+t1q28n,double,numeric,float64,t1 n for q28,%8.0g,,,TRUE,Retained
+t1q29n,double,numeric,float64,t1 n for q29,%8.0g,,,TRUE,Retained
+t1q24rdf,double,numeric,float64,t1 q24 -- (sum-r's pos)/(n-1) = small grp mean w/o r's pos,%9.0g,,,TRUE,Retained
+t1q25rdf,double,numeric,float64,t1 q25 -- (sum-r's pos)/(n-1) = small grp mean w/o r's pos,%9.0g,,,TRUE,Retained
+t1q26rdf,double,numeric,float64,t1 q26 -- (sum-r's pos)/(n-1) = small grp mean w/o r's pos,%9.0g,,,TRUE,Retained
+t1q28rdf,double,numeric,float64,t1 q28 -- (sum-r's pos)/(n-1) = small grp mean w/o r's pos,%9.0g,,,TRUE,Retained
+t1q29rdf,double,numeric,float64,t1 q29 -- (sum-r's pos)/(n-1) = small grp mean w/o r's pos,%9.0g,,,TRUE,Retained
+top10ind,double,numeric,float64,"t2-t1 mean for top 10 projects --- 35, 30, 6,34, 33, 26, 27, 28, 29, 21",%9.0g,,,TRUE,Retained
+d3043cor,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d3044cor,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d3045cor,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d3046cor,double,numeric,float64,,%8.0g,,,TRUE,Retained
+filter,double,numeric,float64,,%8.0g,,,TRUE,Retained
+filter2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+both,double,numeric,float64,,%8.0g,,,TRUE,Retained
+preandpost,double,haven_labelled|vctrs_vctr|double,float64,both=1 (filter),%8.0g,,,TRUE,Retained
+eindex,double,numeric,float64,"environmental index (33, 34, 35, 30, 27, 21, 20)",%9.0g,,,TRUE,Retained
+d2006bmi,double,numeric,float64,t1 wenchang main ave -- on a 0 to 10 scale midpt version,%9.0g,,,TRUE,Retained
+d2007b,double,numeric,float64,q7: first stage of muchang main road t1 o version,%8.0g,,,TRUE,Retained
+d2008b,double,numeric,float64,q8: bridge t1 o version,%8.0g,,,TRUE,Retained
+d2009b,double,numeric,float64,q9: fuxin road (east end) t1 o version,%8.0g,,,TRUE,Retained
+d2010b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2011b,double,numeric,float64,q11: dongcheng road (second stage) t1 o verison,%8.0g,,,TRUE,Retained
+d2012b,double,numeric,float64,q12: shuangchen road (first gate) t1 o version,%8.0g,,,TRUE,Retained
+d2013b,double,numeric,float64,q13: shuangchen road (second stage) t1 o version,%8.0g,,,TRUE,Retained
+d2014b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2015b,double,numeric,float64,q15: reconstruction for donghe road t1 o version,%8.0g,,,TRUE,Retained
+d2016b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2017b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2018b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2019b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2020b,double,numeric,float64,q20: air compressor industrial zone matching environmental constructions t1 o ve,%8.0g,,,TRUE,Retained
+d2021b,double,numeric,float64,q21: auxiliary environmental construction for muyu/lianshu industrial zone t1 o,%8.0g,,,TRUE,Retained
+d2022b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2023b,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2024b,double,numeric,float64,q24: wenchang park (first stage) t1 o version,%8.0g,,,TRUE,Retained
+d2025b,double,numeric,float64,q25: wenchang park (second stage) t1 o version,%8.0g,,,TRUE,Retained
+d2026b,double,numeric,float64,q26: citizen park (first stage) t1 o version,%8.0g,,,TRUE,Retained
+d2027b,double,numeric,float64,q27: urban environmental constructions t1 o version,%8.0g,,,TRUE,Retained
+d2028b,double,numeric,float64,q28: danyan hill park t1 o version,%8.0g,,,TRUE,Retained
+d2029b,double,numeric,float64,q29: muyu hill park t1 o version,%8.0g,,,TRUE,Retained
+d2030b,double,numeric,float64,q30: urban and countryside environmental projects t1 o version,%8.0g,,,TRUE,Retained
+d2031b,double,numeric,float64,q31: demonstrative street t1 o version,%8.0g,,,TRUE,Retained
+d2032b,double,numeric,float64,q32: old street reconstruction t1 o version,%8.0g,,,TRUE,Retained
+d2033b,double,numeric,float64,q33: muyu environmental project (sewage disposal) t1 o version,%8.0g,,,TRUE,Retained
+d2034b,double,numeric,float64,q34: danyan environmental project (sewage disposal) t1 o version,%8.0g,,,TRUE,Retained
+d2035b,double,numeric,float64,"q35: treatment of  sewage, earlier stage t1 o version",%8.0g,,,TRUE,Retained
+d2006a,double,numeric,float64,t2 wenchang main ave -- on a 0 to 10 scale midpt version,%9.0g,,,TRUE,Retained
+d2007a,double,numeric,float64,q7: first stage of muchang main road t2 o version,%8.0g,,,TRUE,Retained
+d2008a,double,numeric,float64,q8: bridge t2 o version,%8.0g,,,TRUE,Retained
+d2009a,double,numeric,float64,q9: fuxin road (east end) t2 o version,%8.0g,,,TRUE,Retained
+d2010a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2011a,double,numeric,float64,q11: dongcheng road (second stage) t2 o verison,%8.0g,,,TRUE,Retained
+d2012a,double,numeric,float64,q12: shuangchen road (first gate) t2 o version,%8.0g,,,TRUE,Retained
+d2013a,double,numeric,float64,q13: shuangchen road (second stage) t2 o version,%8.0g,,,TRUE,Retained
+d2014a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2015a,double,numeric,float64,q15: reconstruction for donghe road t2 o version,%8.0g,,,TRUE,Retained
+d2016a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2017a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2018a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2019a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2020a,double,numeric,float64,q20: air compressor industrial zone matching environmental constructions t2 o ve,%8.0g,,,TRUE,Retained
+d2021a,double,numeric,float64,q21: auxiliary environmental construction for muyu/lianshu industrial zone t2 o,%8.0g,,,TRUE,Retained
+d2022a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2023a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+d2024a,double,numeric,float64,q24: wenchang park (first stage) t2 o version,%8.0g,,,TRUE,Retained
+d2025a,double,numeric,float64,q25: wenchang park (second stage) t2 o version,%8.0g,,,TRUE,Retained
+d2026a,double,numeric,float64,q26: citizen park (first stage) t2 o version,%8.0g,,,TRUE,Retained
+d2027a,double,numeric,float64,q27: urban environmental constructions t2 o version,%8.0g,,,TRUE,Retained
+d2028a,double,numeric,float64,q28: danyan hill park t2 o version,%8.0g,,,TRUE,Retained
+d2029a,double,numeric,float64,q29: muyu hill park t2 o version,%8.0g,,,TRUE,Retained
+d2030a,double,numeric,float64,q30: urban and countryside environmental projects t2 o version,%8.0g,,,TRUE,Retained
+d2031a,double,numeric,float64,q31: demonstrative street t2 o version,%8.0g,,,TRUE,Retained
+d2032a,double,numeric,float64,q32: old street reconstruction t2 o version,%8.0g,,,TRUE,Retained
+d2033a,double,numeric,float64,q33: muyu environmental project (sewage disposal) t2 o version,%8.0g,,,TRUE,Retained
+d2034a,double,numeric,float64,q34: danyan environmental project (sewage disposal) t2 oversion,%8.0g,,,TRUE,Retained
+d2035a,double,numeric,float64,"q35: treatment of  sewage, earlier stage t2 o version",%8.0g,,,TRUE,Retained
+d2020bmi,double,numeric,float64,q20: air compressor industrial zone matching environmental constructions t1 midp,%9.0g,,,TRUE,Retained
+d2021bmi,double,numeric,float64,q21: auxiliary environmental construction for muyu/lianshu industrial zone t1 mi,%9.0g,,,TRUE,Retained
+d2027bmi,double,numeric,float64,q27: urban environmental constructions t1 midpt version,%9.0g,,,TRUE,Retained
+d2030bmi,double,numeric,float64,q30: urban and countryside environmental projects t1 midpt version,%9.0g,,,TRUE,Retained
+d2033bmi,double,numeric,float64,q33: muyu environmental project (sewage disposal) t1 midpoint version,%9.0g,,,TRUE,Retained
+d2034bmi,double,numeric,float64,q34: danyan environmental project (sewage disposal) t1 midpoint version,%9.0g,,,TRUE,Retained
+d2035bmi,double,numeric,float64,"q35: treatment of  sewage, earlier stage t1 midpoint version",%9.0g,,,TRUE,Retained
+d2020ami,double,numeric,float64,q20: air compressor industrial zone matching environmental constructions t2 midp,%9.0g,,,TRUE,Retained
+d2021ami,double,numeric,float64,q21: auxiliary environmental construction for muyu/lianshu industrial zone t2 mi,%9.0g,,,TRUE,Retained
+d2027ami,double,numeric,float64,q27: urban environmental constructions t2 midpt version,%9.0g,,,TRUE,Retained
+d2030ami,double,numeric,float64,q30: urban and countryside environmental projects t2 midpt version,%9.0g,,,TRUE,Retained
+d2033ami,double,numeric,float64,q33: muyu environmental project (sewage disposal) t2 midpoint version,%9.0g,,,TRUE,Retained
+d2034ami,double,numeric,float64,q34: danyan environmental project (sewage disposal) t2 midpoint version,%9.0g,,,TRUE,Retained
+d2035ami,double,numeric,float64,"q35: treatment of  sewage, earlier stage t2 midpoint version",%9.0g,,,TRUE,Retained
+t1q20mid,double,numeric,float64,q20 midpt version mean t1,%9.0g,,,TRUE,Retained
+t1q21mid,double,numeric,float64,q21 midpt version mean t1,%9.0g,,,TRUE,Retained
+t1q27mid,double,numeric,float64,q27 midpt version mean t1,%9.0g,,,TRUE,Retained
+t1q30mid,double,numeric,float64,q30 midpt version mean t1,%9.0g,,,TRUE,Retained
+t1q33mid,double,numeric,float64,q33 midpt version mean t1,%9.0g,,,TRUE,Retained
+t1q34mid,double,numeric,float64,q34 midpt version mean t1,%9.0g,,,TRUE,Retained
+t1q35mid,double,numeric,float64,q35 midpt version mean t!,%9.0g,,,TRUE,Retained
+t2q20mid,double,numeric,float64,q20 midpt version mean t2,%9.0g,,,TRUE,Retained
+t2q21mid,double,numeric,float64,q21 midpt version mean t2,%9.0g,,,TRUE,Retained
+t2q27mid,double,numeric,float64,q27 midpt version mean t2,%9.0g,,,TRUE,Retained
+t2q30mid,double,numeric,float64,q30 midpt version mean t2,%9.0g,,,TRUE,Retained
+t2q33mid,double,numeric,float64,q33 midpt version mean t2,%9.0g,,,TRUE,Retained
+t2q34mid,double,numeric,float64,q34 midpt version mean t2,%9.0g,,,TRUE,Retained
+t2q35mid,double,numeric,float64,q35 midpt version mean t2,%9.0g,,,TRUE,Retained
+dfq20mid,double,numeric,float64,t2-t1 difference for q20 midpt version,%9.0g,,,TRUE,Retained
+dfq21mid,double,numeric,float64,t2-t1 difference for q21 midpt version,%9.0g,,,TRUE,Retained
+dfq27mid,double,numeric,float64,t2-t1 difference for q27 midpt version,%9.0g,,,TRUE,Retained
+dfq30mid,double,numeric,float64,t2-t1 difference for q30 midpt version,%9.0g,,,TRUE,Retained
+dfq33mid,double,numeric,float64,t2-t1 difference for q33 midpt version,%9.0g,,,TRUE,Retained
+dfq34mid,double,numeric,float64,t2-t1 difference for q34 midpt version,%9.0g,,,TRUE,Retained
+dfq35mid,double,numeric,float64,t2-t1 difference for q35 midpt version,%9.0g,,,TRUE,Retained
+t1q20m_a,double,numeric,float64,t1 q20 midpt version sum,%9.0g,,,TRUE,Retained
+t1q21m_a,double,numeric,float64,t1 q21 midpt version sum,%9.0g,,,TRUE,Retained
+t1q27m_a,double,numeric,float64,t1 q27 midpt version sum,%9.0g,,,TRUE,Retained
+t1q30m_a,double,numeric,float64,t1 q30 midpt version sum,%9.0g,,,TRUE,Retained
+t1q33m_a,double,numeric,float64,t1 q33 midpt version sum,%9.0g,,,TRUE,Retained
+t1q34m_a,double,numeric,float64,t1 q34 midpt version sum,%9.0g,,,TRUE,Retained
+t1q35m_a,double,numeric,float64,t1 q35 midpt version sum,%9.0g,,,TRUE,Retained
+t1q20m_b,double,numeric,float64,t1 q20 midpt version n,%8.0g,,,TRUE,Retained
+t1q21m_b,double,numeric,float64,t1 q21 midpt version n,%8.0g,,,TRUE,Retained
+t1q27m_b,double,numeric,float64,t1 q27 midpt version n,%8.0g,,,TRUE,Retained
+t1q30m_b,double,numeric,float64,t1 q30 midpt version n,%8.0g,,,TRUE,Retained
+t1q33m_b,double,numeric,float64,t1 q33 midpt version n,%8.0g,,,TRUE,Retained
+t1q34m_b,double,numeric,float64,t1 q34 midpt version n,%8.0g,,,TRUE,Retained
+t1q35m_b,double,numeric,float64,t1 q35 midpt version n,%8.0g,,,TRUE,Retained
+t1q20m_c,double,numeric,float64,t1 q20 midpt version (sum - r's pos)/(n-1),%9.0g,,,TRUE,Retained
+t1q21m_c,double,numeric,float64,t1 q21 midpt version (sum - r's pos)/(n-1),%9.0g,,,TRUE,Retained
+t1q27m_c,double,numeric,float64,t1 q27 midpt version (sum - r's pos)/(n-1),%9.0g,,,TRUE,Retained
+t1q30m_c,double,numeric,float64,t1 q30 midpt version (sum - r's pos)/(n-1),%9.0g,,,TRUE,Retained
+t1q33m_c,double,numeric,float64,t1 q33 midpt version (sum - r's pos)/(n-1),%9.0g,,,TRUE,Retained
+t1q34m_c,double,numeric,float64,t1 q34 midpt version (sum - r's pos)/(n-1),%9.0g,,,TRUE,Retained
+t1q35m_c,double,numeric,float64,t1 q35 midpt version (sum - r's pos)/(n-1),%9.0g,,,TRUE,Retained
+t1q20m_d,double,numeric,float64,t1 q20 midpt version r's distance from t1 group mean,%9.0g,,,TRUE,Retained
+t1q21m_d,double,numeric,float64,t1 q21 midpt version r's distance from t1 group mean,%9.0g,,,TRUE,Retained
+t1q27m_d,double,numeric,float64,t1 q27 midpt version r's distance from t1 group mean,%9.0g,,,TRUE,Retained
+t1q30m_d,double,numeric,float64,t1 q30 midpt version r's distance from t1 group mean,%9.0g,,,TRUE,Retained
+t1q33m_d,double,numeric,float64,t1 q33 midpt version r's distance from t1 group mean,%9.0g,,,TRUE,Retained
+t1q34m_d,double,numeric,float64,t1 q34 midpt version r's distance from t1 group mean,%9.0g,,,TRUE,Retained
+t1q35m_d,double,numeric,float64,t1 q35 midpt version r's distance from t1 group mean,%9.0g,,,TRUE,Retained
+sewagemi,double,numeric,float64,sewage index with midpoint version,%9.0g,,,TRUE,Retained
+environm,double,numeric,float64,environmental index with midpoint version,%9.0g,,,TRUE,Retained
+t2knowtr,double,numeric,float64,"t2 knowledge without q45 (1= correct, 0=incorrect/dks/md)",%9.0g,,,TRUE,Retained
+d20381b,double,numeric,float64,q38-1: how important is this to the economical development? t1 midpt version,%9.0g,,,TRUE,Retained
+d20382b,double,numeric,float64,q38-2: how important is this in protecting the environment? t1 midpt version,%9.0g,,,TRUE,Retained
+d20383b,double,numeric,float64,q38-3: how important is this to you and your family's daily life convenience? t1,%9.0g,,,TRUE,Retained
+d20384b,double,numeric,float64,q38-4: how important is this to the image of city? t1 midpt version,%9.0g,,,TRUE,Retained
+d20381a,double,numeric,float64,q38-1: how important is this to the economical development? t2 midpt version,%9.0g,,,TRUE,Retained
+d20382a,double,numeric,float64,q38-2: how important is this in protecting the environment? t2 midpt version,%9.0g,,,TRUE,Retained
+d20383a,double,numeric,float64,q38-3: how important is this to you and your family's daily life convenience? t2,%9.0g,,,TRUE,Retained
+d20384a,double,numeric,float64,q38-4: how important is this to the image of city? t2 midpt version,%9.0g,,,TRUE,Retained
+dfq6mid,double,numeric,float64,t2-t1 for q6 midpt version,%9.0g,,,TRUE,Retained
+valueind,double,numeric,float64,t2-t1 mean of value questions at midpt,%9.0g,,,TRUE,Retained
+valuei_a,double,numeric,float64,t1 value index at midpt,%9.0g,,,TRUE,Retained
+valuei_b,double,numeric,float64,t2 value index at midpt,%9.0g,,,TRUE,Retained
+d2039b,double,numeric,float64,q39: do you think the government will seriously take into account your views and,%8.0g,,,TRUE,Retained
+d2040b,double,numeric,float64,q40: do you think the government will use the results of the democracy deliberat,%8.0g,,,TRUE,Retained
+d2041b,double,numeric,float64,"q41: do you agree with the following view? ""most people do not know much about p",%8.0g,,,TRUE,Retained
+d2042b,double,numeric,float64,"q42: do you agree with the following view? ""common people like me do not have a",%8.0g,,,TRUE,Retained
+d2039a,double,numeric,float64,q39: do you think the government will seriously take into account your views and,%8.0g,,,TRUE,Retained
+d2040a,double,numeric,float64,q40: do you think the government will use the results of the democracy deliberat,%8.0g,,,TRUE,Retained
+d2041a,double,numeric,float64,"q41: do you agree with the following view? ""most people do not know much about p",%8.0g,,,TRUE,Retained
+d2042a,double,numeric,float64,"q42: do you agree with the following view? ""common people like me do not have a",%8.0g,,,TRUE,Retained
+d2039bmi,double,numeric,float64,q39: do you think the government will seriously take into account your views and,%9.0g,,,TRUE,Retained
+d2040bmi,double,numeric,float64,q40: do you think the government will use the results of the democracy deliberat,%9.0g,,,TRUE,Retained
+d2039ami,double,numeric,float64,q39: do you think the government will seriously take into account your views and,%9.0g,,,TRUE,Retained
+d2040ami,double,numeric,float64,q40: do you think the government will use the results of the democracy deliberat,%9.0g,,,TRUE,Retained
+d2041bmi,double,numeric,float64,"q41: do you agree with the following view? ""most people do not know much about p",%8.0g,,,TRUE,Retained
+d2042bmi,double,numeric,float64,"q42: do you agree with the following view? ""common people like me do not have a",%8.0g,,,TRUE,Retained
+d2041ami,double,numeric,float64,"q41: do you agree with the following view? ""most people do not know much about p",%8.0g,,,TRUE,Retained
+d2042ami,double,numeric,float64,"q42: do you agree with the following view? ""common people like me do not have a",%8.0g,,,TRUE,Retained
+imageind,double,numeric,float64,image index with question 25 and 31,%9.0g,,,TRUE,Retained
+imagei_a,double,numeric,float64,image index with question 25 and 31 at midpt,%9.0g,,,TRUE,Retained
+d2031bmi,double,numeric,float64,q31: demonstrative street t1 midpt version,%9.0g,,,TRUE,Retained
+d2031ami,double,numeric,float64,q31: demonstrative street t2 midpt version,%9.0g,,,TRUE,Retained
+t2t1df_k,double,numeric,float64,t2-t1 for question 31 o version,%8.0g,,,TRUE,Retained
+t2t1df_l,double,numeric,float64,t2-t1 for question 31 midpt v,%9.0g,,,TRUE,Retained
+d2025bmi,double,numeric,float64,q25: wenchang park (second stage) t1 midpt version,%9.0g,,,TRUE,Retained
+d2025ami,double,numeric,float64,q25: wenchang park (second stage) t2 midpt version,%9.0g,,,TRUE,Retained
+t2t1df_m,double,numeric,float64,t2-t1 for question 25 midpt v,%9.0g,,,TRUE,Retained
+cultural,double,numeric,float64,cultural values index with question 25 and 32,%9.0g,,,TRUE,Retained
+cultur_a,double,numeric,float64,cultural values index with question 25 and 32 at midpt,%9.0g,,,TRUE,Retained
+d2032bmi,double,numeric,float64,q32: old street reconstruction t1 midpt version,%9.0g,,,TRUE,Retained
+d2032ami,double,numeric,float64,q32: old street reconstruction t2 midpt version,%9.0g,,,TRUE,Retained
+t2t1df_n,double,numeric,float64,t2-t1 for question 32 o version,%8.0g,,,TRUE,Retained
+t2t1df_o,double,numeric,float64,t2-t1 for question 32 midpt v,%9.0g,,,TRUE,Retained
+industbe,double,numeric,float64,industrial beautification infrastructure index with question 20 and 27 o version,%9.0g,,,TRUE,Retained
+indust_a,double,numeric,float64,industrial beautification infrastructure index with question 20 and 27 at midpt,%9.0g,,,TRUE,Retained
+sewage2,double,numeric,float64,"sewage index two with question 30,33,34,35 o version",%9.0g,,,TRUE,Retained
+sewage2m,double,numeric,float64,"sewage index two with question 30,33,34,35 at midpt",%9.0g,,,TRUE,Retained
+parks2,double,numeric,float64,"parks index two with question 24, 26,28, 29 o version",%9.0g,,,TRUE,Retained
+parks2mi,double,numeric,float64,"parks index two with question 24, 26,28, 29 midpt version",%9.0g,,,TRUE,Retained
+d2024bmi,double,numeric,float64,q24: wenchang park (first stage) t1 midpt version,%9.0g,,,TRUE,Retained
+d2026bmi,double,numeric,float64,q26: citizen park (first stage) t1 midpt version,%9.0g,,,TRUE,Retained
+d2028bmi,double,numeric,float64,q28: danyan hill park t1 midpt version,%9.0g,,,TRUE,Retained
+d2029bmi,double,numeric,float64,q29: muyu hill park t1 midpt version,%9.0g,,,TRUE,Retained
+d2024ami,double,numeric,float64,q24: wenchang park (first stage) t2 midpt version,%9.0g,,,TRUE,Retained
+d2026ami,double,numeric,float64,q26: citizen park (first stage) t2 midpt version,%9.0g,,,TRUE,Retained
+d2028ami,double,numeric,float64,q28: danyan hill park t2 midpt version,%9.0g,,,TRUE,Retained
+d2029ami,double,numeric,float64,q29: muyu hill park t2 midpt version,%9.0g,,,TRUE,Retained
+t2t1df_p,double,numeric,float64,t2-t1 for question 24 midpt v,%9.0g,,,TRUE,Retained
+t2t1df_q,double,numeric,float64,t2-t1 for question 26 midpt v,%9.0g,,,TRUE,Retained
+t2t1df_r,double,numeric,float64,t2-t1 for question 28 midpt v,%9.0g,,,TRUE,Retained
+t2t1df_s,double,numeric,float64,t2-t1 for question 29 midpt v,%9.0g,,,TRUE,Retained
+industroads,double,numeric,float64,"Industrial Roads, Q6, Q21, and Q30",%9.0g,,,TRUE,Retained
+industroadsmid,double,numeric,float64,"economic development index with question 6, 30, 21 midpt v",%9.0g,,,TRUE,Retained
+regdev,double,numeric,float64,"regional development index with question 6, 30 o version",%9.0g,,,TRUE,Retained
+regdevmi,double,numeric,float64,"regional development index with question 6, 30 midpt version",%9.0g,,,TRUE,Retained
+t1q25mid,double,numeric,float64,t1 question 25 mean at midpt,%9.0g,,,TRUE,Retained
+t1q25m_a,double,numeric,float64,t1 question 25 sum at midpt,%9.0g,,,TRUE,Retained
+t1q25m_b,double,numeric,float64,t1 question 25 n at midpt,%8.0g,,,TRUE,Retained
+t1q25m_c,double,numeric,float64,t1 question 25 small group mean at midpt (sum-r's pos)/(n-1),%9.0g,,,TRUE,Retained
+t1q31mea,double,numeric,float64,t1 question 31 mean o version,%9.0g,,,TRUE,Retained
+t1q31mid,double,numeric,float64,t1 question 31 mean at midpt,%9.0g,,,TRUE,Retained
+t1q31m_a,double,numeric,float64,t1 question 31 sum midpt,%9.0g,,,TRUE,Retained
+t1q31sum,double,numeric,float64,t1 question 31 sum o version,%8.0g,,,TRUE,Retained
+t1q31n,double,numeric,float64,t1 question 31 n o version,%8.0g,,,TRUE,Retained
+t1q31m_b,double,numeric,float64,t1 question 31 n at midpt,%8.0g,,,TRUE,Retained
+t1q31sgm,double,numeric,float64,t1 question 31 small group mean o version (sum-r's pos)/(n-1),%9.0g,,,TRUE,Retained
+t1q31m_c,double,numeric,float64,t1 question 31 small group mean at midpt (sum-r's pos)/(n-1),%9.0g,,,TRUE,Retained
+t1q32mea,double,numeric,float64,t1 question 32 mean o version,%9.0g,,,TRUE,Retained
+t1q32mid,double,numeric,float64,t1 question 32 mean at midpt,%9.0g,,,TRUE,Retained
+t1q32sum,double,numeric,float64,t1 question 32 sum o version,%8.0g,,,TRUE,Retained
+t1q32m_a,double,numeric,float64,t1 question 32 sum at midpt,%9.0g,,,TRUE,Retained
+t1q32n,double,numeric,float64,t1 question 32 n o version,%8.0g,,,TRUE,Retained
+t1q32m_b,double,numeric,float64,t1 question 32 n at midpt,%8.0g,,,TRUE,Retained
+t1q32sgm,double,numeric,float64,t1 question 32 small group mean o version (sum-r's pos)/(n-1),%9.0g,,,TRUE,Retained
+t1q32m_c,double,numeric,float64,t1 question 32 small group mean at midpt (sum-r's pos)/(n-1),%9.0g,,,TRUE,Retained
+t1q24mid,double,numeric,float64,t1 question 24 mean at midpt,%9.0g,,,TRUE,Retained
+t1q26mid,double,numeric,float64,t1 question 26 mean at midpt,%9.0g,,,TRUE,Retained
+t1q28mid,double,numeric,float64,t1 question 28 mean at midpt,%9.0g,,,TRUE,Retained
+t1q29mid,double,numeric,float64,t1 question 29 mean at midpt,%9.0g,,,TRUE,Retained
+t1q29m_a,double,numeric,float64,t1 question 29 sum at midpt,%9.0g,,,TRUE,Retained
+t1q28m_a,double,numeric,float64,t1 question 28 sum at midpt,%9.0g,,,TRUE,Retained
+t1q26m_a,double,numeric,float64,t1 question 26 sum at midpt,%9.0g,,,TRUE,Retained
+t1q24m_a,double,numeric,float64,t1 question 24 sum at midpt,%9.0g,,,TRUE,Retained
+t1q24m_b,double,numeric,float64,t1 question 24 n at midpt,%8.0g,,,TRUE,Retained
+t1q26m_b,double,numeric,float64,t1 question 26 n at midpt,%8.0g,,,TRUE,Retained
+t1q28m_b,double,numeric,float64,t1 question 28 n at midpt,%8.0g,,,TRUE,Retained
+t1q29m_b,double,numeric,float64,t1 question 29 n at midpt,%8.0g,,,TRUE,Retained
+t1q29m_c,double,numeric,float64,t1 question 29 small group mean at midpt (sum-r's pos)/(n-1),%9.0g,,,TRUE,Retained
+t1q28m_c,double,numeric,float64,t1 question 28 small group mean at midpt (sum-r's pos)/(n-1),%9.0g,,,TRUE,Retained
+t1q26m_c,double,numeric,float64,t1 question 26 small group mean at midpt (sum-r's pos)/(n-1),%9.0g,,,TRUE,Retained
+t1q24m_c,double,numeric,float64,t1 question 24 small group mean at midpt (sum-r's pos)/(n-1),%9.0g,,,TRUE,Retained
+t1q6mids,double,numeric,float64,t1 question 6 sum at midpt,%9.0g,,,TRUE,Retained
+t1q6midn,double,numeric,float64,t1 question 6 n at midpt,%8.0g,,,TRUE,Retained
+t1q6midm,double,numeric,float64,t1 question 6 mean at midpt,%9.0g,,,TRUE,Retained
+t1q6mi_a,double,numeric,float64,t1 question 6 small group mean at midpt (sum-r's pos)/(n-1),%9.0g,,,TRUE,Retained
+d20361b,double,numeric,float64,what are the priority projects for this year from above 30 projects? rank 1 t1 o,%8.0g,,,TRUE,Retained
+d20362b,double,numeric,float64,rank as the second important project t1 o version,%8.0g,,,TRUE,Retained
+d20363b,double,numeric,float64,rank as the third important project t1 o version,%8.0g,,,TRUE,Retained
+d20364b,double,numeric,float64,rank as the fourth important project  t1 o version,%8.0g,,,TRUE,Retained
+d20365b,double,numeric,float64,rank as the five important project t1 o version,%8.0g,,,TRUE,Retained
+d20361a,double,numeric,float64,what are the priority projects for this year from above 30 projects? rank 1 t2 o,%8.0g,,,TRUE,Retained
+d20362a,double,numeric,float64,rank as the second important project t2 o version,%8.0g,,,TRUE,Retained
+d20363a,double,numeric,float64,rank as the third important project t2 o version,%8.0g,,,TRUE,Retained
+d20364a,double,numeric,float64,rank as the fourth important project  t2 o version,%8.0g,,,TRUE,Retained
+d20365a,double,numeric,float64,rank as the five important project t2 o version,%8.0g,,,TRUE,Retained
+particnu,double,numeric,float64,participant's number,%8.0g,,,TRUE,Retained
+prjstate,double,numeric,float64,whether or not the respondent stated a project number,%8.0g,,,TRUE,Retained
+prj1f,double,numeric,float64,1st project stated,%8.0g,,,TRUE,Retained
+prj2f,double,numeric,float64,2nd project stated,%8.0g,,,TRUE,Retained
+prj3f,double,numeric,float64,3rd project stated,%8.0g,,,TRUE,Retained
+prj4f,double,numeric,float64,4th project stated,%8.0g,,,TRUE,Retained
+prj5f,double,numeric,float64,5th project stated,%8.0g,,,TRUE,Retained
+prj6f,double,numeric,float64,6th project stated,%8.0g,,,TRUE,Retained
+prj7f,double,numeric,float64,7th project stated,%8.0g,,,TRUE,Retained
+prj8f,double,numeric,float64,8th project stated,%8.0g,,,TRUE,Retained
+gt1f,double,numeric,float64,1st topic stated,%8.0g,,,TRUE,Retained
+gt2f,double,numeric,float64,2nd topic stated,%8.0g,,,TRUE,Retained
+gt3f,double,numeric,float64,3rd topic stated,%8.0g,,,TRUE,Retained
+gt4f,double,numeric,float64,4th topic stated,%8.0g,,,TRUE,Retained
+bmf,double,numeric,float64,briefing materials mentioned,%8.0g,,,TRUE,Retained
+epf,double,numeric,float64,expert panel mentioned,%8.0g,,,TRUE,Retained
+gaf,double,numeric,float64,expressed agreement with group,%8.0g,,,TRUE,Retained
+particin,double,numeric,float64,participant number,%8.0g,,,TRUE,Retained
+prjsta_a,double,numeric,float64,project number stated session 2,%8.0g,,,TRUE,Retained
+prj1s0,double,numeric,float64,1st project stated session 2,%8.0g,,,TRUE,Retained
+prj2s,double,numeric,float64,2nd prj stated session2,%8.0g,,,TRUE,Retained
+prj3s,double,numeric,float64,3rd pfj stated session2,%8.0g,,,TRUE,Retained
+prj4s,double,numeric,float64,4th prjt stated session2,%8.0g,,,TRUE,Retained
+prj5s,double,numeric,float64,5th project stated s2,%8.0g,,,TRUE,Retained
+prj6s,double,numeric,float64,6th prjt stated s2,%8.0g,,,TRUE,Retained
+prj7s,double,numeric,float64,7th prjt stated s2,%8.0g,,,TRUE,Retained
+prj8s,double,numeric,float64,8th prjt stated s2,%8.0g,,,TRUE,Retained
+gt1s,double,numeric,float64,1st topic stated s2,%8.0g,,,TRUE,Retained
+gt2s,double,numeric,float64,2nd topic stated s2,%8.0g,,,TRUE,Retained
+gt3s,double,numeric,float64,3rd topic stated s2,%8.0g,,,TRUE,Retained
+gt4s,double,numeric,float64,4th topic stated s2,%8.0g,,,TRUE,Retained
+bms,double,numeric,float64,briefing materials s2,%8.0g,,,TRUE,Retained
+eps,double,numeric,float64,reference to expert panel s2,%8.0g,,,TRUE,Retained
+gas,double,numeric,float64,expressed grp agreement s2,%8.0g,,,TRUE,Retained
+gt1fr,double,numeric,float64,recoded 1st topic stated,%9.0g,,,TRUE,Retained
+gt2fr,double,numeric,float64,recoded 2nd topic stated,%9.0g,,,TRUE,Retained
+gt3fr,double,numeric,float64,recoded 3rd topic stated,%9.0g,,,TRUE,Retained
+gt4fr,double,numeric,float64,recoded 4th topic stated,%9.0g,,,TRUE,Retained
+gt1sr,double,numeric,float64,recoded 1st topic stated s2,%9.0g,,,TRUE,Retained
+gt2sr,double,numeric,float64,recoded 2nd topic stated s2,%9.0g,,,TRUE,Retained
+gt3sr,double,numeric,float64,recoded 3rd topic stated s2,%9.0g,,,TRUE,Retained
+gt4sr,double,numeric,float64,recoded 4th topic stated s2,%9.0g,,,TRUE,Retained
+topicsf,double,numeric,float64,avg of topics,%9.0g,,,TRUE,Retained
+topicss,double,numeric,float64,avg of topics s2,%9.0g,,,TRUE,Retained
+grptopic,double,numeric,float64,group avg of topic,%9.0g,,,TRUE,Retained
+grptop_a,double,numeric,float64,group avg of topics s2,%9.0g,,,TRUE,Retained
+t1q25sgm,double,numeric,float64,t1 question 25 small group mean updated,%9.0g,,,TRUE,Retained
+d20361br,double,numeric,float64,recode rank 1 t1,%9.0g,,,TRUE,Retained
+d20362br,double,numeric,float64,recode rank 2 t1,%9.0g,,,TRUE,Retained
+do20363b,double,numeric,float64,recode rank 3 t1,%9.0g,,,TRUE,Retained
+d20364br,double,numeric,float64,recode rank 4 t1,%9.0g,,,TRUE,Retained
+d20365br,double,numeric,float64,recode rank 5 t1,%9.0g,,,TRUE,Retained
+d20361ar,double,numeric,float64,recode rank 1 t2,%9.0g,,,TRUE,Retained
+d20362ar,double,numeric,float64,recode rank 2 t2,%9.0g,,,TRUE,Retained
+d20363ar,double,numeric,float64,recode rank 3 t2,%9.0g,,,TRUE,Retained
+d20364ar,double,numeric,float64,recode rank 4 t2,%9.0g,,,TRUE,Retained
+d20365ar,double,numeric,float64,recode rank 5 t2,%9.0g,,,TRUE,Retained
+dfrank1,double,numeric,float64,diff t2-t1 rank 1,%9.0g,,,TRUE,Retained
+dfrank2,double,numeric,float64,diff t2-t1 rank 2,%9.0g,,,TRUE,Retained
+dfrank3,double,numeric,float64,diff t2-t1 rank 3,%9.0g,,,TRUE,Retained
+dfrank4,double,numeric,float64,diff t2-t1 rank 4,%9.0g,,,TRUE,Retained
+dfrank5,double,numeric,float64,diff t2-t1 rank 5,%9.0g,,,TRUE,Retained
+pnum,double,numeric,float64,,%8.0g,,,TRUE,Retained
+topic1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+topic2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+topic3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+pj1,double,numeric,float64,,%8.0g,,,TRUE,Retained
+pj2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+pj3,double,numeric,float64,,%8.0g,,,TRUE,Retained
+pj4,double,numeric,float64,,%8.0g,,,TRUE,Retained
+pj5,double,numeric,float64,,%8.0g,,,TRUE,Retained
+expertse,double,numeric,float64,,%8.0g,,,TRUE,Retained
+qasked,double,numeric,float64,,%8.0g,,,TRUE,Retained
+pnum2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+topic12,double,numeric,float64,,%8.0g,,,TRUE,Retained
+topic22,double,numeric,float64,,%8.0g,,,TRUE,Retained
+topic32,double,numeric,float64,,%8.0g,,,TRUE,Retained
+topic42,double,numeric,float64,,%8.0g,,,TRUE,Retained
+pj12,double,numeric,float64,,%8.0g,,,TRUE,Retained
+pj22,double,numeric,float64,,%8.0g,,,TRUE,Retained
+expert_a,double,numeric,float64,,%8.0g,,,TRUE,Retained
+qasked2,double,numeric,float64,,%8.0g,,,TRUE,Retained
+topic1r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+topic2r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+topic3r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+topic12r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+topic22r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+topic32r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+topic42r,double,numeric,float64,,%8.0g,,,TRUE,Retained
+expertpa,double,numeric,float64,,%9.0g,,,TRUE,Retained
+expert_b,double,numeric,float64,,%9.0g,,,TRUE,Retained
+d2015bmi,double,numeric,float64,q15: reconstruction for donghe road t1 midpt,%9.0g,,,TRUE,Retained
+d2015ami,double,numeric,float64,q15: reconstruction for donghe road t2 midpt,%9.0g,,,TRUE,Retained
+t2t1q15m,double,numeric,float64,t2-t1 q15: reconstruction for donghe road,%9.0g,,,TRUE,Retained
+d2007bmi,double,numeric,float64,q7:  t1 midpt,%9.0g,,,TRUE,Retained
+d2007ami,double,numeric,float64,q7:  t2 midpt,%9.0g,,,TRUE,Retained
+t2t1q7mi,double,numeric,float64,t2-t1 q7:,%9.0g,,,TRUE,Retained
+d2009bmi,double,numeric,float64,q9: t1 midpt,%9.0g,,,TRUE,Retained
+d2009ami,double,numeric,float64,q9:  t2 midpt,%9.0g,,,TRUE,Retained
+t2t1q9mi,double,numeric,float64,t2-t1 q9:,%9.0g,,,TRUE,Retained
+d2008bmi,double,numeric,float64,q8: t1 midpt,%9.0g,,,TRUE,Retained
+d2011bmi,double,numeric,float64,q11:  t2 midpt,%9.0g,,,TRUE,Retained
+d2013bmi,double,numeric,float64,q13: t1 midpt,%9.0g,,,TRUE,Retained
+d2008ami,double,numeric,float64,q8:  t2 midpt,%9.0g,,,TRUE,Retained
+d2011ami,double,numeric,float64,q11: t1 midpt,%9.0g,,,TRUE,Retained
+d2013ami,double,numeric,float64,q13:  t2 midpt,%9.0g,,,TRUE,Retained
+t2t1q8mi,double,numeric,float64,t2-t1 q8:,%9.0g,,,TRUE,Retained
+t2t1q11m,double,numeric,float64,t2-t1 q11:,%9.0g,,,TRUE,Retained
+t2t1q13m,double,numeric,float64,t2-t1 q13:,%9.0g,,,TRUE,Retained
+evindex,double,numeric,float64,"ev index q20, 21, 27, 30 midpt",%9.0g,,,TRUE,Retained
+d2012bmi,double,numeric,float64,q12: t1 midpt,%9.0g,,,TRUE,Retained
+d2012ami,double,numeric,float64,q12: t2 midpt,%9.0g,,,TRUE,Retained
+t2t1q12m,double,numeric,float64, t2-t1 q12: shuangchen road (first gate) mid,%9.0g,,,TRUE,Retained
+t1q25smg,double,numeric,float64,t1 q25 small group mean revised,%9.0g,,,TRUE,Retained
+t1q20sgm,double,numeric,float64,t1 q20 small group mean revised,%9.0g,,,TRUE,Retained
+t1q27sgm,double,numeric,float64,t1 q27 small group mean revised,%9.0g,,,TRUE,Retained
+t1q30sgm,double,numeric,float64,t1 q30 small group mean revised,%9.0g,,,TRUE,Retained
+t1q33sgm,double,numeric,float64,t1 q33 small group mean revised,%9.0g,,,TRUE,Retained
+t1q34sgm,double,numeric,float64,t1 q34 small group mean revised,%9.0g,,,TRUE,Retained
+t1q35sgm,double,numeric,float64,t1 q35 small group mean revised,%9.0g,,,TRUE,Retained
+t1q21sgm,double,numeric,float64,t1 q21 small group mean revised,%9.0g,,,TRUE,Retained
+t1q24sgm,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q26sgm,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q28sgm,double,numeric,float64,,%9.0g,,,TRUE,Retained
+t1q29sgm,double,numeric,float64,,%9.0g,,,TRUE,Retained
+ibit1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+ibit2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+parkst1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+parkst2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+imaget1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+imaget2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+cvt1,double,numeric,float64,Cultural Values at T1,%9.0g,,,TRUE,Retained
+cvt2,double,numeric,float64,Cultural Values at T2,%9.0g,,,TRUE,Retained
+cit1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+cit2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+sewaget1,double,numeric,float64,Sewage Index at T1,%9.0g,,,TRUE,Retained
+sewaget2,double,numeric,float64,Sewage Index at T2,%9.0g,,,TRUE,Retained
+irdt1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+irdt2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+indrdt1,double,numeric,float64,"rmean of d2014 d2020 d2021, where rmean igores missing values",%9.0g,,,TRUE,Retained
+indrdt2,double,numeric,float64,"rmean  of 2014p d2020p d2021p, where rmean ignores missing values",%9.0g,,,TRUE,Retained
+villrdt1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+villrdt2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+tparkt1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+tparkt2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+vparkt1,double,numeric,float64,,%9.0g,,,TRUE,Retained
+vparkt2,double,numeric,float64,,%9.0g,,,TRUE,Retained
+commt1,double,numeric,float64,"Commercial Roads Index at T1: rmean 12,13",%9.0g,,,TRUE,Retained
+commt2,double,numeric,float64,"Commercial Roads Index at T2: rmean 12,13",%9.0g,,,TRUE,Retained
+main2t1,double,numeric,float64,Main Roads Index at T1: rmean of d2015-d2019 and d2022,%9.0g,,,TRUE,Retained
+main2t2,double,numeric,float64,Main Roads Index at T2: rmean of d2015p-d2019p and d2022p,%9.0g,,,TRUE,Retained
+oparkt1,double,numeric,float64,"Other Parks Index at T1: rmean 24,28,29",%9.0g,,,TRUE,Retained
+oparkt2,double,numeric,float64,"Other Parks Index at T2: rmean 24,28,29",%9.0g,,,TRUE,Retained
+image3t1,double,numeric,float64,"Image Index at T1: rmean 8,9,25,27",%9.0g,,,TRUE,Retained
+image3t2,double,numeric,float64,"Image Index at T2: rmean 8,9,25,27",%9.0g,,,TRUE,Retained
+villagerdt1,double,numeric,float64,"rmean of d2007 d2010 d2011, where rmean ignores missing values",%9.0g,,,TRUE,Retained
+villagerdt2,double,numeric,float64,"rmean of d2007p d2010p d2011p, where rmean ignores missing values",%9.0g,,,TRUE,Retained
+t2knowledge,double,numeric,float64,Knowledge at T2,%9.0g,,,TRUE,Retained
+countindrdt1,double,numeric,float64,"industrial road index at t1, N of policy index where missing is missing",%9.0g,,,TRUE,Retained
+sumindrdt1,double,numeric,float64,"industrial road index at t1, sum of policy index where missing is missing",%9.0g,,,TRUE,Retained
+rsumindrdt1,double,numeric,float64,"industrial road index at t1, row sum of variables, where missing is treated as 0",%9.0g,,,TRUE,Retained
+sumrsindrdt1,double,numeric,float64,"industrial road index at t1, sum of policy index where missing is treated as 0",%9.0g,,,TRUE,Retained
+countrsindrdt1,double,numeric,float64,"industrial road index at t1, N of group, no missing",%9.0g,,,TRUE,Retained
+indrddiff,double,numeric,float64,industrial road t2-t1,%9.0g,,,TRUE,Retained
+smgrp1,double,numeric,float64,"Small Group Mean without Respondent's Own Position, where missing is missing",%9.0g,,,TRUE,Retained
+smgrp2,double,numeric,float64,"Small Group Mean without Respondent's Own Position, where missing = 0",%9.0g,,,TRUE,Retained
+villagerddiff,double,numeric,float64,Village Roads Index : t2-t1,%9.0g,,,TRUE,Retained
+sumvillagerdt1,double,numeric,float64," village roads index at t1, sum of policy index, missing = missing",%9.0g,,,TRUE,Retained
+countvillagerdt1,double,numeric,float64," village roads index at t1, N of policy index, missing = missing",%9.0g,,,TRUE,Retained
+rsumvillagerdt1,double,numeric,float64," village roads index at t1, row sum fo values, missing = 0",%9.0g,,,TRUE,Retained
+sumrsvillagerdt1,double,numeric,float64," village roads index at t1, sum of row sum, missing = 0",%9.0g,,,TRUE,Retained
+countrsvillagerdt1,double,numeric,float64," village roads index at t1, N of policy index, missing = 0",%9.0g,,,TRUE,Retained
+vrdsmgrp1,double,numeric,float64,"Village Roads, Small Grp Mean w/o R's Own Position, where missing = missing",%9.0g,,,TRUE,Retained
+vrdsmgrp2,double,numeric,float64,"Village Roads, Small Grp Mean w/o Respondent's Own Position, where missing = 0",%9.0g,,,TRUE,Retained
+mainrddiff,double,numeric,float64,Main Roads Index: t2-t1,%9.0g,,,TRUE,Retained
+summainrdt1,double,numeric,float64," main roads index at t1, sum of policy index, missing = missing",%9.0g,,,TRUE,Retained
+countmainrdt1,double,numeric,float64," main roads index at t1, N of policy index, missing = missing",%9.0g,,,TRUE,Retained
+rsummainrdt1,double,numeric,float64," main roads index at t1, row sum fo values, missing = 0",%9.0g,,,TRUE,Retained
+sumrsmainrdt1,double,numeric,float64," main roads index at t1, sum of row sum, missing = 0",%9.0g,,,TRUE,Retained
+countrsmainrdt1,double,numeric,float64," main roads index at t1, N of policy index, missing = 0",%9.0g,,,TRUE,Retained
+mainrdsmgrp1,double,numeric,float64,"Main Roads, Small Grp Mean w/o R's Own Position, where missing = missing",%9.0g,,,TRUE,Retained
+mainrdsmgrp2,double,numeric,float64,"Main Roads, Small Grp Mean w/o Respondent's Own Position, where missing = 0",%9.0g,,,TRUE,Retained
+commrddiff,double,numeric,float64,comm Roads Index: t2-t1,%9.0g,,,TRUE,Retained
+sumcommrdt1,double,numeric,float64," comm roads index at t1, sum of policy index, missing = missing",%9.0g,,,TRUE,Retained
+countcommrdt1,double,numeric,float64," comm roads index at t1, N of policy index, missing = missing",%9.0g,,,TRUE,Retained
+rsumcommrdt1,double,numeric,float64," comm roads index at t1, row sum fo values, missing = 0",%9.0g,,,TRUE,Retained
+sumrscommrdt1,double,numeric,float64," comm roads index at t1, sum of row sum, missing = 0",%9.0g,,,TRUE,Retained
+countrscommrdt1,double,numeric,float64," comm roads index at t1, N of policy index, missing = 0",%9.0g,,,TRUE,Retained
+commrdsmgrp1,double,numeric,float64,"comm Roads, Small Grp Mean w/o R's Own Position, where missing = missing",%9.0g,,,TRUE,Retained
+commrdsmgrp2,double,numeric,float64,"comm Roads, Small Grp Mean w/o Respondent's Own Position, where missing = 0",%9.0g,,,TRUE,Retained
+wenchangrddiff,double,numeric,float64,wenchang Roads Index: t2-t1,%9.0g,,,TRUE,Retained
+sumwenchangrdt1,double,numeric,float64," wenchang roads index at t1, sum of policy index, missing = missing",%9.0g,,,TRUE,Retained
+countwenchangrdt1,double,numeric,float64," wenchang roads index at t1, N of policy index, missing = missing",%9.0g,,,TRUE,Retained
+rsumwenchangrdt1,double,numeric,float64," wenchang roads index at t1, row sum fo values, missing = 0",%9.0g,,,TRUE,Retained
+sumrswenchangrdt1,double,numeric,float64," wenchang roads index at t1, sum of row sum, missing = 0",%9.0g,,,TRUE,Retained
+countrswenchangrdt1,double,numeric,float64," wenchang roads index at t1, N of policy index, missing = 0",%9.0g,,,TRUE,Retained
+wenchangrdsmgrp1,double,numeric,float64,"wenchang Roads, Small Grp Mean w/o R's Own Position, where missing = missing",%9.0g,,,TRUE,Retained
+wenchangrdsmgrp2,double,numeric,float64,"wenchang Roads, Small Grp Mean w/o Respondent's Own Position, where missing = 0",%9.0g,,,TRUE,Retained
+oparkdiff,double,numeric,float64,other park Index: t2-t1,%9.0g,,,TRUE,Retained
+sumoparkt1,double,numeric,float64," other park index at t1, sum of policy index, missing = missing",%9.0g,,,TRUE,Retained
+countoparkt1,double,numeric,float64," other park index at t1, N of policy index, missing = missing",%9.0g,,,TRUE,Retained
+rsumoparkt1,double,numeric,float64," other park index at t1, row sum fo values, missing = 0",%9.0g,,,TRUE,Retained
+sumrsoparkt1,double,numeric,float64," other park index at t1, sum of row sum, missing = 0",%9.0g,,,TRUE,Retained
+countrsoparkt1,double,numeric,float64," other park index at t1, N of policy index, missing = 0",%9.0g,,,TRUE,Retained
+oparksmgrp1,double,numeric,float64,"other park , Small Grp Mean w/o R's Own Position, where missing = missing",%9.0g,,,TRUE,Retained
+oparksmgrp2,double,numeric,float64,"other park , Small Grp Mean w/o Respondent's Own Position, where missing = 0",%9.0g,,,TRUE,Retained
+recparkdiff,double,numeric,float64,recpark  Index: t2-t1,%9.0g,,,TRUE,Retained
+sumrecparkt1,double,numeric,float64," recpark  index at t1, sum of policy index, missing = missing",%9.0g,,,TRUE,Retained
+countrecparkt1,double,numeric,float64," recpark  index at t1, N of policy index, missing = missing",%9.0g,,,TRUE,Retained
+rsumrecparkt1,double,numeric,float64," recpark  index at t1, row sum fo values, missing = 0",%9.0g,,,TRUE,Retained
+sumrsrecparkt1,double,numeric,float64," recpark  index at t1, sum of row sum, missing = 0",%9.0g,,,TRUE,Retained
+countrsrecparkt1,double,numeric,float64," recpark  index at t1, N of policy index, missing = 0",%9.0g,,,TRUE,Retained
+recparksmgrp1,double,numeric,float64,"recpark , Small Grp Mean w/o R's Own Position, where missing = missing",%9.0g,,,TRUE,Retained
+recparksmgrp2,double,numeric,float64,"recpark , Small Grp Mean w/o Respondent's Own Position, where missing = 0",%9.0g,,,TRUE,Retained
+image3diff,double,numeric,float64,Image Index: t2-t1,%9.0g,,,TRUE,Retained
+sumimage3t1,double,numeric,float64," Image  index at t1, sum of policy index, missing = missing",%9.0g,,,TRUE,Retained
+countimage3t1,double,numeric,float64," Image  index at t1, N of policy index, missing = missing",%9.0g,,,TRUE,Retained
+rsumimage3t1,double,numeric,float64," Image  index at t1, row sum fo values, missing = 0",%9.0g,,,TRUE,Retained
+sumrsimage3t1,double,numeric,float64," Image  index at t1, sum of row sum, missing = 0",%9.0g,,,TRUE,Retained
+countrsimage3t1,double,numeric,float64," Image  index at t1, N of policy index, missing = 0",%9.0g,,,TRUE,Retained
+image3smgrp1,double,numeric,float64,"Image , Small Grp Mean w/o R's Own Position, where missing = missing",%9.0g,,,TRUE,Retained
+image3smgrp2,double,numeric,float64,"Image , Small Grp Mean w/o Respondent's Own Position, where missing = 0",%9.0g,,,TRUE,Retained
+cultvaldiff,double,numeric,float64,CulturalValues Index: t2-t1,%9.0g,,,TRUE,Retained
+sumcultvalt1,double,numeric,float64," CulturalValues  index at t1, sum of policy index, missing = missing",%9.0g,,,TRUE,Retained
+countcultvalt1,double,numeric,float64," CulturalValues  index at t1, N of policy index, missing = missing",%9.0g,,,TRUE,Retained
+rsumcultvalt1,double,numeric,float64," CulturalValues  index at t1, row sum fo values, missing = 0",%9.0g,,,TRUE,Retained
+sumrscultvalt1,double,numeric,float64," CulturalValues  index at t1, sum of row sum, missing = 0",%9.0g,,,TRUE,Retained
+countrscultvalt1,double,numeric,float64," CulturalValues  index at t1, N of policy index, missing = 0",%9.0g,,,TRUE,Retained
+cultvalsmgrp1,double,numeric,float64,"CulturalValues , Small Grp Mean w/o R's Own Position, where missing = missing",%9.0g,,,TRUE,Retained
+cultvalsmgrp2,double,numeric,float64,"CulturalValues , Small Grp Mean w/o Respondent's Own Position, where missing = 0",%9.0g,,,TRUE,Retained
+sewagediff,double,numeric,float64,Sewage Index: t2-t1,%9.0g,,,TRUE,Retained
+sumsewaget1,double,numeric,float64," Sewage  index at t1, sum of policy index, missing = missing",%9.0g,,,TRUE,Retained
+countsewaget1,double,numeric,float64," Sewage  index at t1, N of policy index, missing = missing",%9.0g,,,TRUE,Retained
+rsumsewaget1,double,numeric,float64," Sewage  index at t1, row sum fo values, missing = 0",%9.0g,,,TRUE,Retained
+sumrssewaget1,double,numeric,float64," Sewage  index at t1, sum of row sum, missing = 0",%9.0g,,,TRUE,Retained
+countrssewaget1,double,numeric,float64," Sewage  index at t1, N of policy index, missing = 0",%9.0g,,,TRUE,Retained
+sewagesmgrp1,double,numeric,float64,"Sewage , Small Grp Mean w/o R's Own Position, where missing = missing",%9.0g,,,TRUE,Retained
+sewagesmgrp2,double,numeric,float64,"Sewage , Small Grp Mean w/o Respondent's Own Position, where missing = 0",%9.0g,,,TRUE,Retained
+indrdv2,double,numeric,float64," Indust Roads, R's T1 position - SmallGroupMean w/o Respondent's position at T1",%9.0g,,,TRUE,Retained
+indrdv3,double,numeric,float64," Indust Roads, R's T1 position - SmGrpMn w/o R's position at T1, rmean",%9.0g,,,TRUE,Retained
+villdrdv2,double,numeric,float64,"Village Roads, R's T1 position - SmGroupMean w/o Respondent's position at T1",%9.0g,,,TRUE,Retained
+villdrdv3,double,numeric,float64,"Village Roads, R's T1 position - SmGrpMn w/o R's position at T1, rmean",%9.0g,,,TRUE,Retained
+mainrdv2,double,numeric,float64,"Main Roads, R's T1 position - SmGroupMean w/o Respondent's position at T1",%9.0g,,,TRUE,Retained
+mainrdv3,double,numeric,float64,"Main Roads, R's T1 position - SmGrpMn w/o R's position at T1, rmean",%9.0g,,,TRUE,Retained
+commrdv2,double,numeric,float64,"Comm Roads, R's T1 position - SmGroupMean w/o Respondent's position at T1",%9.0g,,,TRUE,Retained
+commrdv3,double,numeric,float64,"Comm Roads, R's T1 position - SmGrpMn w/o R's position at T1, rmean",%9.0g,,,TRUE,Retained
+wenchangv2,double,numeric,float64,"Wen Chang Main Rd, R's T1 position - SmGrpMn w/o R's position at T1",%9.0g,,,TRUE,Retained
+oparkv2,double,numeric,float64,"Other Parks, R's T1 position - SmGroupMean w/o Respondent's position at T1",%9.0g,,,TRUE,Retained
+oparkv3,double,numeric,float64,"Other Parks, R's T1 position - SmGroupMean w/o R's position at T1, rmean",%9.0g,,,TRUE,Retained
+recparkv2,double,numeric,float64,"Rec Park, R's T1 position - SmGrpMn w/o R's position at T1",%9.0g,,,TRUE,Retained
+imagev2,double,numeric,float64,"Image Index, R's T1 position - SmGroupMean w/o Respondent's position at T1",%9.0g,,,TRUE,Retained
+imagev3,double,numeric,float64,"Image Index, R's T1 position - SmGroupMean w/o R's position at T1,rmean",%9.0g,,,TRUE,Retained
+culvalv2,double,numeric,float64,"Cultural Values, R's T1 position - SmGroupMean w/o Respondent's position at T1",%9.0g,,,TRUE,Retained
+culvalv3,double,numeric,float64,"Cultural Value, R's T1 position - SmGroupMean w/o R's position at T1,rmean",%9.0g,,,TRUE,Retained
+sewagev2,double,numeric,float64,"Sewage, R's T1 position - SmGroupMean w/o Respondent's position at T1",%9.0g,,,TRUE,Retained
+sewagev3,double,numeric,float64,"Sewage, R's T1 position - SmGroupMean w/o R's position at T1,rmean",%9.0g,,,TRUE,Retained
+educ,double,numeric,float64,"recode Education, 1=secondary school and below, 2=high school and above",%9.0g,,,TRUE,Retained
+job,double,numeric,float64,"1=farmer, 2=worker, teacher, public servant, 3=entrepreneur and merchant",%9.0g,,,TRUE,Retained
+d3043r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+d3044r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+d3045r,double,numeric,float64,q45:which of the below is not a major product of zeguo township? t1,%9.0g,,,TRUE,Retained
+d3046r,double,numeric,float64,,%9.0g,,,TRUE,Retained
+dk6,double,numeric,float64,"Wenchang Main Rd, T1, DK/Missing=1 and non-DK = 0",%9.0g,,,TRUE,Retained
+dk7,double,numeric,float64,"First stage of muchang main road, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk8,double,numeric,float64,"bridge, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk9,double,numeric,float64,"fuxin road east end, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk10,double,numeric,float64,"dongcheng road first gate, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk11,double,numeric,float64,"dongcheng road second stage, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk12,double,numeric,float64,"shuangchen road first gate, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk13,double,numeric,float64,"shuangchen road second stage, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk14,double,numeric,float64,"tngquao road, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk15,double,numeric,float64,"reconstruction for donghe road, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk16,double,numeric,float64,"donghe main ave, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk17,double,numeric,float64,"xicheng road first stage, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk18,double,numeric,float64,"zegou main ave second stage, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk19,double,numeric,float64,"zegou main ave third stage, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk20,double,numeric,float64,"air compressor i-zone matching envir constructions, t1, dk/missing=1 and non-dk=",%9.0g,,,TRUE,Retained
+dk21,double,numeric,float64,"auxiliary envir construction, muyu/lianshu i-zone, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk22,double,numeric,float64,"chengqu subroad rebuild, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk23,double,numeric,float64,"guojialing hill side reconstruction, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk24,double,numeric,float64,"wenchang park first stage, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk25,double,numeric,float64,"wenchang park second stage, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk26,double,numeric,float64,"citizen park first stage, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk27,double,numeric,float64,"urban envir constructions, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk28,double,numeric,float64,"danyan hill park, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk29,double,numeric,float64,"muyu hill park, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk30,double,numeric,float64,"urban and countryside envir prjcts, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk31,double,numeric,float64,"demonstrative street, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk32,double,numeric,float64,"old street reconstruction, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk33,double,numeric,float64,"muyu envir prjt (sewage disposal), t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk34,double,numeric,float64,"danyan envir prjt (sewage disposal, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk35,double,numeric,float64,"treatment of sewage, earlier stage, t1, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk6p,double,numeric,float64,"wenchang main rd, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk7p,double,numeric,float64,"first stage of muchang main road, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk8p,double,numeric,float64,"bridge, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk9p,double,numeric,float64,"fuxin road east end, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk10p,double,numeric,float64,"dongcheng road first gate, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk11p,double,numeric,float64,"dongcheng road second stage, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk12p,double,numeric,float64,"shuangchen road first gate, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk13p,double,numeric,float64,"shuangchen road second stage, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk14p,double,numeric,float64,"tngquao road, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk15p,double,numeric,float64,"reconstruction for donghe road, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk16p,double,numeric,float64,"donghe main ave, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk17p,double,numeric,float64,"xicheng road first stage, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk18p,double,numeric,float64,"zegou main ave second stage, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk19p,double,numeric,float64,"zegou main ave third stage, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk20p,double,numeric,float64,"air compressor i-zone matching envir constructions, t2, dk/missing=1 and non-dk=",%9.0g,,,TRUE,Retained
+dk21p,double,numeric,float64,"auxiliary envir construction, muyu/lianshu i-zone, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk22p,double,numeric,float64,"chengqu subroad rebuild, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk23p,double,numeric,float64,"guojialing hill side reconstruction, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk24p,double,numeric,float64,"wenchang park first stage, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk25p,double,numeric,float64,"wenchang park second stage, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk26p,double,numeric,float64,"citizen park first stage, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk27p,double,numeric,float64,"urban envir constructions, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk28p,double,numeric,float64,"danyan hill park, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk29p,double,numeric,float64,"muyu hill park, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk30p,double,numeric,float64,"urban and countryside envir prjcts, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk31p,double,numeric,float64,"demonstrative street, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk32p,double,numeric,float64,"old street reconstruction, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk33p,double,numeric,float64,"muyu envir prjt (sewage disposal), t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk34p,double,numeric,float64,"danyan envir prjt (sewage disposal, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dk35p,double,numeric,float64,"treatment of sewage, earlier stage, t2, dk/missing=1 and non-dk=0",%9.0g,,,TRUE,Retained
+dkm1,double,numeric,float64,"average of policy variables, showing the proportion of dk vs non-dk, t1",%9.0g,,,TRUE,Retained
+dkm2,double,numeric,float64,"average of policy variables, showing the proportion of dk vs non-dk, t2",%9.0g,,,TRUE,Retained
+dk43,double,numeric,float64,"by how much zeguo township's revenue increase from 03 to 04, t1",%9.0g,,,TRUE,Retained
+dk44,double,numeric,float64,"what is the figure for the floating population in zegou township, t1",%9.0g,,,TRUE,Retained
+dk45,double,numeric,float64,"which of the below is not a major product zegou township, t1",%9.0g,,,TRUE,Retained
+dk46,double,numeric,float64,"at the moment, how many parks does zegou have?, t1",%9.0g,,,TRUE,Retained
+dk43p,double,numeric,float64,"by how much zeguo township's revenue increase from 03 to 04, t2",%9.0g,,,TRUE,Retained
+dk44p,double,numeric,float64,"what is the figure for the floating population in zegou township, t2",%9.0g,,,TRUE,Retained
+dk45p,double,numeric,float64,"which of the below is not a major product zegou township, t2",%9.0g,,,TRUE,Retained
+dk46p,double,numeric,float64,"at the moment, how many parks does zegou have?, t2",%9.0g,,,TRUE,Retained
+dkknowm1,double,numeric,float64,"average of knowledge questions, showing the proportion of dk vs non-dk, t1",%9.0g,,,TRUE,Retained
+dkknowm2,double,numeric,float64,"average of knowledge questions, showing the proportion of dk vs non-dk, t2",%9.0g,,,TRUE,Retained
+knowm1,double,numeric,float64,"knowledge index, t1",%9.0g,,,TRUE,Retained
+knowm2,double,numeric,float64,"knowledge index, t2",%9.0g,,,TRUE,Retained
+q6,double,numeric,float64,"wenchang main rd, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q7,double,numeric,float64,"first stage of muchang main road, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q8,double,numeric,float64,"bridge, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q9,double,numeric,float64,"fuxin road east end, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q10,double,numeric,float64,"dongcheng road first gate, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q11,double,numeric,float64,"dongcheng road second stage, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q12,double,numeric,float64,"shuangchen road first gate, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q13,double,numeric,float64,"shuangchen road second stage, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q14,double,numeric,float64,"tngquao road, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q15,double,numeric,float64,"reconstruction for donghe road, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q16,double,numeric,float64,"donghe main ave, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q17,double,numeric,float64,"xicheng road first stage, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q18,double,numeric,float64,"zegou main ave second stage, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q19,double,numeric,float64,"zegou main ave third stage, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q20,double,numeric,float64,"air compressor i-zone matching envir constructions, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q21,double,numeric,float64,"auxiliary envir construction, muyu/lianshu i-zone, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q22,double,numeric,float64,"chengqu subroad rebuild, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q23,double,numeric,float64,"guojialing hill side reconstruction, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q24,double,numeric,float64,"wenchang park first stage, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q25,double,numeric,float64,"wenchang park second stage, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q26,double,numeric,float64,"citizen park first stage t1, 0 to 1 scale, recpark",%9.0g,,,TRUE,Retained
+q27,double,numeric,float64,"urban envir constructions, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q28,double,numeric,float64,"danyan hill park, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q29,double,numeric,float64,"muyu hill park, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q30,double,numeric,float64,"urban and countryside envir prjcts, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q31,double,numeric,float64,"demonstrative street, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q32,double,numeric,float64,"old street reconstruction, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q33,double,numeric,float64,"muyu envir prjt (sewage disposal), t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q34,double,numeric,float64,"danyan envir prjt (sewage disposal, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q35,double,numeric,float64,"treatment of sewage, earlier stage, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q6p,double,numeric,float64,"wenchang main rd, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q7p,double,numeric,float64,"first stage of muchang main road, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q8p,double,numeric,float64,"bridge, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q9p,double,numeric,float64,"fuxin road east end, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q10p,double,numeric,float64,"dongcheng road first gate, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q11p,double,numeric,float64,"dongcheng road second stage, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q12p,double,numeric,float64,"shuangchen road first gate, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q13p,double,numeric,float64,"shuangchen road second stage, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q14p,double,numeric,float64,"tngquao road, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q15p,double,numeric,float64,"reconstruction for donghe road, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q16p,double,numeric,float64,"donghe main ave, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q17p,double,numeric,float64,"xicheng road first stage, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q18p,double,numeric,float64,"zegou main ave second stage, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q19p,double,numeric,float64,"zegou main ave third stage, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q20p,double,numeric,float64,"air compressor i-zone matching envir constructions, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q21p,double,numeric,float64,"auxiliary envir construction, muyu/lianshu i-zone, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q22p,double,numeric,float64,"chengqu subroad rebuild, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q23p,double,numeric,float64,"guojialing hill side reconstruction, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q24p,double,numeric,float64,"wenchang park first stage, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q25p,double,numeric,float64,"wenchang park second stage, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q26p,double,numeric,float64,"citizen park first stage t2, 0 to 1 scale, recpark",%9.0g,,,TRUE,Retained
+q27p,double,numeric,float64,"urban envir constructions, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q28p,double,numeric,float64,"danyan hill park, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q29p,double,numeric,float64,"muyu hill park, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q30p,double,numeric,float64,"urban and countryside envir prjcts, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q31p,double,numeric,float64,"demonstrative street, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q32p,double,numeric,float64,"old street reconstruction, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q33p,double,numeric,float64,"muyu envir prjt (sewage disposal), t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q34p,double,numeric,float64,"danyan envir prjt (sewage disposal, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q35p,double,numeric,float64,"treatment of sewage, earlier stage, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+iroads1,double,numeric,float64,"industrial roads index, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+iroads2,double,numeric,float64,"industrial roads index, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+vroads1,double,numeric,float64,"village roads index, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+vroads2,double,numeric,float64,"village roads index, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+mroads1,double,numeric,float64,"main roads index, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+mroads2,double,numeric,float64,"main roads index, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+croads1,double,numeric,float64,"commercial roads index, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+croads2,double,numeric,float64,"commercial roads index, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+otparks1,double,numeric,float64,"other parks index, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+otparks2,double,numeric,float64,"other parks index, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+img1,double,numeric,float64,"image index, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+img2,double,numeric,float64,"image index, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+cvalues1,double,numeric,float64,"cultural values index, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+cvalues2,double,numeric,float64,"cultural values index, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+sew1,double,numeric,float64,"sewage index, t1, 0 to 1 scale",%9.0g,,,TRUE,Retained
+sew2,double,numeric,float64,"sewage index, t2, 0 to 1 scale",%9.0g,,,TRUE,Retained
+q38_1,double,numeric,float64,economic development t1,%9.0g,,,TRUE,Retained
+q38_2,double,numeric,float64,protecting the environment t1,%9.0g,,,TRUE,Retained
+q38_3,double,numeric,float64,daily life convenience t1,%9.0g,,,TRUE,Retained
+q38_4,double,numeric,float64,image of the city t1,%9.0g,,,TRUE,Retained
+q38_1p,double,numeric,float64,economic development t2,%9.0g,,,TRUE,Retained
+q38_2p,double,numeric,float64,protecting the environment t2,%9.0g,,,TRUE,Retained
+q38_3p,double,numeric,float64,daily life convenience t2,%9.0g,,,TRUE,Retained
+q38_4p,double,numeric,float64,image of the city t2,%9.0g,,,TRUE,Retained
+town,double,numeric,float64,"the town (1,2 or 3) the participant belongs to",%9.0g,,,TRUE,Retained
+worker,double,numeric,float64,dummy,%9.0g,,,TRUE,Retained
+entrep,double,numeric,float64,dummy,%9.0g,,,TRUE,Retained
+merchant,double,numeric,float64,dummy,%9.0g,,,TRUE,Retained
+teacher,double,numeric,float64,dummy,%9.0g,,,TRUE,Retained
+pubser,double,numeric,float64,dummy,%9.0g,,,TRUE,Retained
+farmer,double,numeric,float64,dummy,%9.0g,,,TRUE,Retained
+pre_d3043,double,numeric,float64,,F11.2,,,TRUE,Retained
+pre_d3044,double,numeric,float64,,F11.2,,,TRUE,Retained
+pre_d3045,double,numeric,float64,,F11.2,,,TRUE,Retained
+pre_d3046,double,numeric,float64,,F11.2,,,TRUE,Retained
+post_d3043,double,numeric,float64,,F11.2,,,TRUE,Retained
+post_d3044,double,numeric,float64,,F11.2,,,TRUE,Retained
+post_d3045,double,numeric,float64,,F11.2,,,TRUE,Retained
+post_d3046,double,numeric,float64,,F11.2,,,TRUE,Retained

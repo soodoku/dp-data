@@ -1,3 +1,8 @@
+knowledge_poll_ids <- function() {
+  sources <- read_metadata("survey_sources")$poll_id
+  sources[sources %in% read_metadata("knowledge_batteries")$poll_id]
+}
+
 knowledge_participants <- function(poll_id, survey, groups = NULL) {
   survey <- survey |> dplyr::arrange(.data$source_row)
   if (poll_id == "uk-health-1998") {

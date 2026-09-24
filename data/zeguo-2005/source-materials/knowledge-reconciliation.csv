@@ -1,0 +1,4 @@
+p,item,original_answer,historical_score,evidence,interpretation
+48,post_d3045,,1,China Merged Dataset.dta d3045p=1,Historical item coding differs from original POST SAV; do not invent a replacement answer
+75,post_d3045,,1,China Merged Dataset.dta d3045p=1,Historical item coding differs from original POST SAV; do not invent a replacement answer
+105,post_d3045,1,1,China Merged Dataset.dta d3045p=1,Historical item coding differs from original POST SAV; questionnaire and field-file investigation required

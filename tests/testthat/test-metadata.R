@@ -9,6 +9,8 @@ test_that("the Frictionless package names every metadata table", {
     c(
       "oos_sources",
       "respondent_sources",
+      "respondent_source_components",
+      "polardata_reviewed_covariances",
       "polardata_fields",
       "polardata_targets",
       "measure_definitions",

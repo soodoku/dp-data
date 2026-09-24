@@ -1,0 +1,2558 @@
+source_column,source_value,value_label
+mtg1,0,did not attend
+mtg1,1,attended
+mtg1,2,unable to attend due to technical/other
+mtg2,0,did not attend
+mtg2,1,attended
+mtg2,2,unable to attend due to technical/other
+mtg3,0,did not attend
+mtg3,1,attended
+mtg3,2,unable to attend due to technical/other
+mtg4,0,did not attend
+mtg4,1,attended
+mtg4,2,unable to attend due to technical/other
+mtg5,0,did not attend
+mtg5,1,attended
+mtg5,2,unable to attend due to technical/other
+stratanu,1,fresh dialup
+stratanu,2,fresh broadband
+stratanu,3,fresh pc
+stratanu,4,followup dialup
+stratanu,5,followup broadband
+stratanu,6,followup withdrawn
+expcont,0,control
+expcont,1,experimental
+group,1,experimental
+group,2,control (4 sessions)
+group,3,cross section (2 sessions)
+husband,1,yes
+husband,2,no
+jan2003,1,yes
+jan2003,2,no
+sept2003,1,yes
+sept2003,2,no
+compf1,1,yes
+compf1,2,no
+b1durcat,1,less than 5 minutes
+b1durcat,2,5 - 9:59
+b1durcat,3,10 - 14:59
+b1durcat,4,15 - 19:59
+b1durcat,5,20 - 24:59
+b1durcat,6,25 - 29:59
+b1durcat,7,30 - 34:59
+b1durcat,8,35 - 39:59
+b1durcat,9,40 - 44:59
+b1durcat,10,45 - 49:59
+b1durcat,11,50 - 54:59
+b1durcat,12,55 - 59:59
+b1durcat,13,60 - 64:59
+b1durcat,14,65 - 69:59
+b1durcat,15,70 - 74:59
+b1durcat,16,75 - 79:59
+b1durcat,17,80 - 84:59
+b1durcat,18,85 - 89:59
+b1durcat,19,90 - 94:59
+b1durcat,20,95 - 99:59
+b1durcat,21,more than 100 minutes
+b1q1,-2,not asked
+b1q1,-1,refused
+b1q1,1,agree strongly
+b1q1,2,agree somewhat
+b1q1,3,neither agree nor disagree
+b1q1,4,disagree somewhat
+b1q1,5,disagree strongly
+b1q1,6,haven't thought much about that
+b1q2,-2,not asked
+b1q2,-1,refused
+b1q2,1,agree strongly
+b1q2,2,agree somewhat
+b1q2,3,neither agree nor disagree
+b1q2,4,disagree somewhat
+b1q2,5,disagree strongly
+b1q2,6,haven't thought much about that
+b1q3,-2,not asked
+b1q3,-1,refused
+b1q3,1,agree strongly
+b1q3,2,agree somewhat
+b1q3,3,neither agree nor disagree
+b1q3,4,disagree somewhat
+b1q3,5,disagree strongly
+b1q3,6,haven't thought much about that
+b1q4,-2,not asked
+b1q4,-1,refused
+b1q4,1,agree strongly
+b1q4,2,agree somewhat
+b1q4,3,neither agree nor disagree
+b1q4,4,disagree somewhat
+b1q4,5,disagree strongly
+b1q4,6,haven't thought much about that
+b1q5,-2,not asked
+b1q5,-1,refused
+b1q5,1,helped a lot
+b1q5,2,helped somewhat
+b1q5,3,not had much effect
+b1q5,4,"hurt somewhat,"
+b1q5,5,hurt a lot
+b1q5,6,haven't thought much about that
+b1q6,-2,not asked
+b1q6,-1,refused
+b1q6,1,agree strongly
+b1q6,2,agree somewhat
+b1q6,3,neither agree nor disagree
+b1q6,4,disagree somewhat
+b1q6,5,disagree strongly
+b1q6,6,haven't thought much about that
+b1q7,-2,not asked
+b1q7,-1,refused
+b1q7,1,agree strongly
+b1q7,2,agree somewhat
+b1q7,3,neither agree nor disagree
+b1q7,4,disagree somewhat
+b1q7,5,disagree strongly
+b1q7,6,haven't thought much about that
+b1q8,-2,not asked
+b1q8,-1,refused
+b1q8,1,agree strongly
+b1q8,2,agree somewhat
+b1q8,3,neither agree nor disagree
+b1q8,4,disagree somewhat
+b1q8,5,disagree strongly
+b1q8,6,haven't thought much about that
+b1q9,-2,not asked
+b1q9,-1,refused
+b1q9,1,in much better shape
+b1q9,2,in somewhat better shape
+b1q9,3,about the same
+b1q9,4,in somewhat worse shape
+b1q9,5,in much worse shape
+b1q9,6,haven't thought much about it
+b1q10,-2,not asked
+b1q10,-1,refused
+b1q10,1,get much better
+b1q10,2,get somewhat better
+b1q10,3,stay about the same
+b1q10,4,get somewhat worse
+b1q10,5,get much worse
+b1q10,6,haven't thought much about that
+b1q11,-2,not asked
+b1q11,-1,refused
+b1q11,1,republican
+b1q11,2,democrat
+b1q11,3,independent
+b1q11,4,some other party
+b1q11a,-2,not asked
+b1q11a,-1,refused
+b1q11a,1,strong republican
+b1q11a,2,not very strong republican
+b1q11b,-2,not asked
+b1q11b,-1,refused
+b1q11b,1,strong democrat
+b1q11b,2,not very strong democrat
+b1q12,-2,not asked
+b1q12,-1,refused
+b1q12,1,veryliberal1
+b1q12,2,2
+b1q12,3,3
+b1q12,4,4
+b1q12,5,5
+b1q12,6,6
+b1q12,7,veryconservative7
+b1q12,8,haven't thought about this8
+b1q12a,-2,not asked
+b1q12a,-1,refused
+b1q12a,1,"yes, i did vote"
+b1q12a,2,"no, something came up"
+b1q12a,3,can't remember
+b1q12b,-2,not asked
+b1q12b,-1,refused
+b1q12b,1,bush
+b1q12b,2,gore
+b1q12b,3,some other candidate
+b1q13,-2,not asked
+b1q13,-1,refused
+b1q13,1,agree strongly
+b1q13,2,agree somewhat
+b1q13,3,neither agree nor disagree
+b1q13,4,disagree somewhat
+b1q13,5,disagree strongly
+b1q13,6,haven't thought much about that
+b1q14,-2,not asked
+b1q14,-1,refused
+b1q14,1,agree strongly
+b1q14,2,agree somewhat
+b1q14,3,neither agree nor disagree
+b1q14,4,disagree somewhat
+b1q14,5,disagree strongly
+b1q14,6,haven't thought much about that
+b1q15,-2,not asked
+b1q15,-1,refused
+b1q15,1,agree strongly
+b1q15,2,agree somewhat
+b1q15,3,neither agree nor disagree
+b1q15,4,disagree somewhat
+b1q15,5,disagree strongly
+b1q15,6,haven't thought much about that
+b1q16,-2,not asked
+b1q16,-1,refused
+b1q16,1,almost every day
+b1q16,2,several times a week
+b1q16,3,at least once a week
+b1q16,4,at least once a month
+b1q16,5,only a few times a year
+b1q16,6,practically never
+b1q17,-2,not asked
+b1q17,-1,refused
+b1q17,1,every day
+b1q17,2,four or five times
+b1q17,3,a couple of times
+b1q17,4,not at all
+b1q18,-2,not asked
+b1q18,-1,refused
+b1q18,1,very interested
+b1q18,2,somewhat interested
+b1q18,3,not very interested
+b1q18,4,not at all interested
+b1q19_1,-2,not asked
+b1q19_1,-1,refused
+b1q19_1,1,extremely well
+b1q19_1,2,pretty well
+b1q19_1,3,not too well
+b1q19_1,4,not well at all
+b1q19_1,5,don't know
+b1q19_2,-2,not asked
+b1q19_2,-1,refused
+b1q19_2,1,extremely well
+b1q19_2,2,pretty well
+b1q19_2,3,not too well
+b1q19_2,4,not well at all
+b1q19_2,5,don't know
+b1q19_3,-2,not asked
+b1q19_3,-1,refused
+b1q19_3,1,extremely well
+b1q19_3,2,pretty well
+b1q19_3,3,not too well
+b1q19_3,4,not well at all
+b1q19_3,5,don't know
+b1q19_4,-2,not asked
+b1q19_4,-1,refused
+b1q19_4,1,extremely well
+b1q19_4,2,pretty well
+b1q19_4,3,not too well
+b1q19_4,4,not well at all
+b1q19_4,5,don't know
+b1q19_5,-2,not asked
+b1q19_5,-1,refused
+b1q19_5,1,extremely well
+b1q19_5,2,pretty well
+b1q19_5,3,not too well
+b1q19_5,4,not well at all
+b1q19_5,5,don't know
+b1q19_6,-2,not asked
+b1q19_6,-1,refused
+b1q19_6,1,extremely well
+b1q19_6,2,pretty well
+b1q19_6,3,not too well
+b1q19_6,4,not well at all
+b1q19_6,5,don't know
+b1q19_7,-2,not asked
+b1q19_7,-1,refused
+b1q19_7,1,extremely well
+b1q19_7,2,pretty well
+b1q19_7,3,not too well
+b1q19_7,4,not well at all
+b1q19_7,5,don't know
+b1q19_8,-2,not asked
+b1q19_8,-1,refused
+b1q19_8,1,extremely well
+b1q19_8,2,pretty well
+b1q19_8,3,not too well
+b1q19_8,4,not well at all
+b1q19_8,5,don't know
+b1q20_1,-2,not asked
+b1q20_1,-1,refused
+b1q20_1,1,extremely well
+b1q20_1,2,pretty well
+b1q20_1,3,not too well
+b1q20_1,4,not well at all
+b1q20_1,5,don't know
+b1q20_2,-2,not asked
+b1q20_2,-1,refused
+b1q20_2,1,extremely well
+b1q20_2,2,pretty well
+b1q20_2,3,not too well
+b1q20_2,4,not well at all
+b1q20_2,5,don't know
+b1q20_3,-2,not asked
+b1q20_3,-1,refused
+b1q20_3,1,extremely well
+b1q20_3,2,pretty well
+b1q20_3,3,not too well
+b1q20_3,4,not well at all
+b1q20_3,5,don't know
+b1q20_4,-2,not asked
+b1q20_4,-1,refused
+b1q20_4,1,extremely well
+b1q20_4,2,pretty well
+b1q20_4,3,not too well
+b1q20_4,4,not well at all
+b1q20_4,5,don't know
+b1q20_5,-2,not asked
+b1q20_5,-1,refused
+b1q20_5,1,extremely well
+b1q20_5,2,pretty well
+b1q20_5,3,not too well
+b1q20_5,4,not well at all
+b1q20_5,5,don't know
+b1q20_6,-2,not asked
+b1q20_6,-1,refused
+b1q20_6,1,extremely well
+b1q20_6,2,pretty well
+b1q20_6,3,not too well
+b1q20_6,4,not well at all
+b1q20_6,5,don't know
+b1q20_7,-2,not asked
+b1q20_7,-1,refused
+b1q20_7,1,extremely well
+b1q20_7,2,pretty well
+b1q20_7,3,not too well
+b1q20_7,4,not well at all
+b1q20_7,5,don't know
+b1q20_8,-2,not asked
+b1q20_8,-1,refused
+b1q20_8,1,extremely well
+b1q20_8,2,pretty well
+b1q20_8,3,not too well
+b1q20_8,4,not well at all
+b1q20_8,5,don't know
+b1q21_1,-2,not asked
+b1q21_1,-1,refused
+b1q21_1,1,extremely well
+b1q21_1,2,pretty well
+b1q21_1,3,not too well
+b1q21_1,4,not well at all
+b1q21_1,5,don't know
+b1q21_2,-2,not asked
+b1q21_2,-1,refused
+b1q21_2,1,extremely well
+b1q21_2,2,pretty well
+b1q21_2,3,not too well
+b1q21_2,4,not well at all
+b1q21_2,5,don't know
+b1q21_3,-2,not asked
+b1q21_3,-1,refused
+b1q21_3,1,extremely well
+b1q21_3,2,pretty well
+b1q21_3,3,not too well
+b1q21_3,4,not well at all
+b1q21_3,5,don't know
+b1q21_4,-2,not asked
+b1q21_4,-1,refused
+b1q21_4,1,extremely well
+b1q21_4,2,pretty well
+b1q21_4,3,not too well
+b1q21_4,4,not well at all
+b1q21_4,5,don't know
+b1q21_5,-2,not asked
+b1q21_5,-1,refused
+b1q21_5,1,extremely well
+b1q21_5,2,pretty well
+b1q21_5,3,not too well
+b1q21_5,4,not well at all
+b1q21_5,5,don't know
+b1q21_6,-2,not asked
+b1q21_6,-1,refused
+b1q21_6,1,extremely well
+b1q21_6,2,pretty well
+b1q21_6,3,not too well
+b1q21_6,4,not well at all
+b1q21_6,5,don't know
+b1q21_7,-2,not asked
+b1q21_7,-1,refused
+b1q21_7,1,extremely well
+b1q21_7,2,pretty well
+b1q21_7,3,not too well
+b1q21_7,4,not well at all
+b1q21_7,5,don't know
+b1q21_8,-2,not asked
+b1q21_8,-1,refused
+b1q21_8,1,extremely well
+b1q21_8,2,pretty well
+b1q21_8,3,not too well
+b1q21_8,4,not well at all
+b1q21_8,5,don't know
+ft150bus,-2,not asked
+ft150ker,-2,not asked
+ft150edw,-2,not asked
+ft150dea,-2,not asked
+ft150cla,-2,not asked
+ft150sha,-2,not asked
+b1q22_1,-3,can't say
+b1q22_1,-2,not asked
+b1q22_1,-1,refused
+b1q22_2,-3,can't say
+b1q22_2,-2,not asked
+b1q22_2,-1,refused
+b1q22_3,-3,can't say
+b1q22_3,-2,not asked
+b1q22_3,-1,refused
+b1q22_6,-3,can't say
+b1q22_6,-2,not asked
+b1q22_6,-1,refused
+b1q22_4,-3,can't say
+b1q22_4,-2,not asked
+b1q22_4,-1,refused
+b1q22_5,-3,can't say
+b1q22_5,-2,not asked
+b1q22_5,-1,refused
+b1q22_7,-3,can't say
+b1q22_7,-2,not asked
+b1q22_7,-1,refused
+b1q22_8,-3,can't say
+b1q22_8,-2,not asked
+b1q22_8,-1,refused
+b1q22_9,-3,can't say
+b1q22_9,-2,not asked
+b1q22_9,-1,refused
+b1q22_10,-3,can't say
+b1q22_10,-2,not asked
+b1q22_10,-1,refused
+b1q23,-2,not asked
+b1q23,-1,refused
+b1q23,1,very good
+b1q23,2,good
+b1q23,3,fair
+b1q23,4,poor
+b1q23,5,very poor
+b1q23,6,not sure/can't say
+b1q24,-2,not asked
+b1q24,-1,refused
+b1q24,1,very good
+b1q24,2,good
+b1q24,3,fair
+b1q24,4,poor
+b1q24,5,very poor
+b1q24,6,not sure/can't say
+b1q25,-2,not asked
+b1q25,-1,refused
+b1q25,1,fewer services/lower taxes1
+b1q25,2,2
+b1q25,3,3
+b1q25,4,4
+b1q25,5,5
+b1q25,6,6
+b1q25,7,more services/higher taxes7
+b1q25,8,haven't thought about this8
+b1q26_1,-2,not asked
+b1q26_1,-1,refused
+b1q26_1,1,fewer services/lower taxes1
+b1q26_1,2,2
+b1q26_1,3,3
+b1q26_1,4,4
+b1q26_1,5,5
+b1q26_1,6,6
+b1q26_1,7,more services/higher taxes7
+b1q26_1,8,can't say8
+b1q26_2,-2,not asked
+b1q26_2,-1,refused
+b1q26_2,1,fewer services/lower taxes1
+b1q26_2,2,2
+b1q26_2,3,3
+b1q26_2,4,4
+b1q26_2,5,5
+b1q26_2,6,6
+b1q26_2,7,more services/higher taxes7
+b1q26_2,8,can't say8
+b1q26_3,-2,not asked
+b1q26_3,-1,refused
+b1q26_3,1,fewer services/lower taxes1
+b1q26_3,2,2
+b1q26_3,3,3
+b1q26_3,4,4
+b1q26_3,5,5
+b1q26_3,6,6
+b1q26_3,7,more services/higher taxes7
+b1q26_3,8,can't say8
+b1q26_4,-2,not asked
+b1q26_4,-1,refused
+b1q26_4,1,fewer services/lower taxes1
+b1q26_4,2,2
+b1q26_4,3,3
+b1q26_4,4,4
+b1q26_4,5,5
+b1q26_4,6,6
+b1q26_4,7,more services/higher taxes7
+b1q26_4,8,can't say8
+b1q26_5,-2,not asked
+b1q26_5,-1,refused
+b1q26_5,1,fewer services/lower taxes1
+b1q26_5,2,2
+b1q26_5,3,3
+b1q26_5,4,4
+b1q26_5,5,5
+b1q26_5,6,6
+b1q26_5,7,more services/higher taxes7
+b1q26_5,8,can't say8
+b1q26_6,-2,not asked
+b1q26_6,-1,refused
+b1q26_6,1,fewer services/lower taxes1
+b1q26_6,2,2
+b1q26_6,3,3
+b1q26_6,4,4
+b1q26_6,5,5
+b1q26_6,6,6
+b1q26_6,7,more services/higher taxes7
+b1q26_6,8,can't say8
+b1q26_7,-2,not asked
+b1q26_7,-1,refused
+b1q26_7,1,fewer services/lower taxes1
+b1q26_7,2,2
+b1q26_7,3,3
+b1q26_7,4,4
+b1q26_7,5,5
+b1q26_7,6,6
+b1q26_7,7,more services/higher taxes7
+b1q26_7,8,can't say8
+b1q26_8,-2,not asked
+b1q26_8,-1,refused
+b1q26_8,1,fewer services/lower taxes1
+b1q26_8,2,2
+b1q26_8,3,3
+b1q26_8,4,4
+b1q26_8,5,5
+b1q26_8,6,6
+b1q26_8,7,more services/higher taxes7
+b1q26_8,8,can't say8
+b1q27,-2,not asked
+b1q27,-1,refused
+b1q27,1,increase defense spending/decrease domestic spending1
+b1q27,2,2
+b1q27,3,3
+b1q27,4,4
+b1q27,5,5
+b1q27,6,6
+b1q27,7,decrease defense spending/increase domestic spending7
+b1q27,8,haven't thought about this8
+b1q28_1,-2,not asked
+b1q28_1,-1,refused
+b1q28_1,1,increase defense spending/decrease domestic spending1
+b1q28_1,2,2
+b1q28_1,3,3
+b1q28_1,4,4
+b1q28_1,5,5
+b1q28_1,6,6
+b1q28_1,7,decrease defense spending/increase domestic spending7
+b1q28_1,8,can't say8
+b1q28_2,-2,not asked
+b1q28_2,-1,refused
+b1q28_2,1,increase defense spending/decrease domestic spending1
+b1q28_2,2,2
+b1q28_2,3,3
+b1q28_2,4,4
+b1q28_2,5,5
+b1q28_2,6,6
+b1q28_2,7,decrease defense spending/increase domestic spending7
+b1q28_2,8,can't say8
+b1q28_3,-2,not asked
+b1q28_3,-1,refused
+b1q28_3,1,increase defense spending/decrease domestic spending1
+b1q28_3,2,2
+b1q28_3,3,3
+b1q28_3,4,4
+b1q28_3,5,5
+b1q28_3,6,6
+b1q28_3,7,decrease defense spending/increase domestic spending7
+b1q28_3,8,can't say8
+b1q28_4,-2,not asked
+b1q28_4,-1,refused
+b1q28_4,1,increase defense spending/decrease domestic spending1
+b1q28_4,2,2
+b1q28_4,3,3
+b1q28_4,4,4
+b1q28_4,5,5
+b1q28_4,6,6
+b1q28_4,7,decrease defense spending/increase domestic spending7
+b1q28_4,8,can't say8
+b1q28_5,-2,not asked
+b1q28_5,-1,refused
+b1q28_5,1,increase defense spending/decrease domestic spending1
+b1q28_5,2,2
+b1q28_5,3,3
+b1q28_5,4,4
+b1q28_5,5,5
+b1q28_5,6,6
+b1q28_5,7,decrease defense spending/increase domestic spending7
+b1q28_5,8,can't say8
+b1q28_6,-2,not asked
+b1q28_6,-1,refused
+b1q28_6,1,increase defense spending/decrease domestic spending1
+b1q28_6,2,2
+b1q28_6,3,3
+b1q28_6,4,4
+b1q28_6,5,5
+b1q28_6,6,6
+b1q28_6,7,decrease defense spending/increase domestic spending7
+b1q28_6,8,can't say8
+b1q28_7,-2,not asked
+b1q28_7,-1,refused
+b1q28_7,1,increase defense spending/decrease domestic spending1
+b1q28_7,2,2
+b1q28_7,3,3
+b1q28_7,4,4
+b1q28_7,5,5
+b1q28_7,6,6
+b1q28_7,7,decrease defense spending/increase domestic spending7
+b1q28_7,8,can't say8
+b1q28_8,-2,not asked
+b1q28_8,-1,refused
+b1q28_8,1,increase defense spending/decrease domestic spending1
+b1q28_8,2,2
+b1q28_8,3,3
+b1q28_8,4,4
+b1q28_8,5,5
+b1q28_8,6,6
+b1q28_8,7,decrease defense spending/increase domestic spending7
+b1q28_8,8,can't say8
+b1q29,-2,not asked
+b1q29,-1,refused
+b1q29,1,intervene on our own1
+b1q29,2,2
+b1q29,3,3
+b1q29,4,4
+b1q29,5,5
+b1q29,6,6
+b1q29,7,intervene with un approval7
+b1q29,8,haven't thought about this8
+b1q30_1,-2,not asked
+b1q30_1,-1,refused
+b1q30_1,1,intervene on our own1
+b1q30_1,2,2
+b1q30_1,3,3
+b1q30_1,4,4
+b1q30_1,5,5
+b1q30_1,6,6
+b1q30_1,7,intervene with un approval7
+b1q30_1,8,can't say8
+b1q30_2,-2,not asked
+b1q30_2,-1,refused
+b1q30_2,1,intervene on our own1
+b1q30_2,2,2
+b1q30_2,3,3
+b1q30_2,4,4
+b1q30_2,5,5
+b1q30_2,6,6
+b1q30_2,7,intervene with un approval7
+b1q30_2,8,can't say8
+b1q30_3,-2,not asked
+b1q30_3,-1,refused
+b1q30_3,1,intervene on our own1
+b1q30_3,2,2
+b1q30_3,3,3
+b1q30_3,4,4
+b1q30_3,5,5
+b1q30_3,6,6
+b1q30_3,7,intervene with un approval7
+b1q30_3,8,can't say8
+b1q30_4,-2,not asked
+b1q30_4,-1,refused
+b1q30_4,1,intervene on our own1
+b1q30_4,2,2
+b1q30_4,3,3
+b1q30_4,4,4
+b1q30_4,5,5
+b1q30_4,6,6
+b1q30_4,7,intervene with un approval7
+b1q30_4,8,can't say8
+b1q30_5,-2,not asked
+b1q30_5,-1,refused
+b1q30_5,1,intervene on our own1
+b1q30_5,2,2
+b1q30_5,3,3
+b1q30_5,4,4
+b1q30_5,5,5
+b1q30_5,6,6
+b1q30_5,7,intervene with un approval7
+b1q30_5,8,can't say8
+b1q30_6,-2,not asked
+b1q30_6,-1,refused
+b1q30_6,1,intervene on our own1
+b1q30_6,2,2
+b1q30_6,3,3
+b1q30_6,4,4
+b1q30_6,5,5
+b1q30_6,6,6
+b1q30_6,7,intervene with un approval7
+b1q30_6,8,can't say8
+b1q30_7,-2,not asked
+b1q30_7,-1,refused
+b1q30_7,1,intervene on our own1
+b1q30_7,2,2
+b1q30_7,3,3
+b1q30_7,4,4
+b1q30_7,5,5
+b1q30_7,6,6
+b1q30_7,7,intervene with un approval7
+b1q30_7,8,can't say8
+b1q30_8,-2,not asked
+b1q30_8,-1,refused
+b1q30_8,1,intervene on our own1
+b1q30_8,2,2
+b1q30_8,3,3
+b1q30_8,4,4
+b1q30_8,5,5
+b1q30_8,6,6
+b1q30_8,7,intervene with un approval7
+b1q30_8,8,can't say8
+b1q31,-2,not asked
+b1q31,-1,refused
+b1q31,1,support free trade1
+b1q31,2,2
+b1q31,3,3
+b1q31,4,4
+b1q31,5,5
+b1q31,6,6
+b1q31,7,protect us industries7
+b1q31,8,haven't thought about this8
+b1q32_1,-2,not asked
+b1q32_1,-1,refused
+b1q32_1,1,support free trade1
+b1q32_1,2,2
+b1q32_1,3,3
+b1q32_1,4,4
+b1q32_1,5,5
+b1q32_1,6,6
+b1q32_1,7,protect us industries7
+b1q32_1,8,can't say8
+b1q32_2,-2,not asked
+b1q32_2,-1,refused
+b1q32_2,1,support free trade1
+b1q32_2,2,2
+b1q32_2,3,3
+b1q32_2,4,4
+b1q32_2,5,5
+b1q32_2,6,6
+b1q32_2,7,protect us industries7
+b1q32_2,8,can't say8
+b1q32_3,-2,not asked
+b1q32_3,-1,refused
+b1q32_3,1,support free trade1
+b1q32_3,2,2
+b1q32_3,3,3
+b1q32_3,4,4
+b1q32_3,5,5
+b1q32_3,6,6
+b1q32_3,7,protect us industries7
+b1q32_3,8,can't say8
+b1q32_4,-2,not asked
+b1q32_4,-1,refused
+b1q32_4,1,support free trade1
+b1q32_4,2,2
+b1q32_4,3,3
+b1q32_4,4,4
+b1q32_4,5,5
+b1q32_4,6,6
+b1q32_4,7,protect us industries7
+b1q32_4,8,can't say8
+b1q32_5,-2,not asked
+b1q32_5,-1,refused
+b1q32_5,1,support free trade1
+b1q32_5,2,2
+b1q32_5,3,3
+b1q32_5,4,4
+b1q32_5,5,5
+b1q32_5,6,6
+b1q32_5,7,protect us industries7
+b1q32_5,8,can't say8
+b1q32_6,-2,not asked
+b1q32_6,-1,refused
+b1q32_6,1,support free trade1
+b1q32_6,2,2
+b1q32_6,3,3
+b1q32_6,4,4
+b1q32_6,5,5
+b1q32_6,6,6
+b1q32_6,7,protect us industries7
+b1q32_6,8,can't say8
+b1q32_7,-2,not asked
+b1q32_7,-1,refused
+b1q32_7,1,support free trade1
+b1q32_7,2,2
+b1q32_7,3,3
+b1q32_7,4,4
+b1q32_7,5,5
+b1q32_7,6,6
+b1q32_7,7,protect us industries7
+b1q32_7,8,can't say8
+b1q32_8,-2,not asked
+b1q32_8,-1,refused
+b1q32_8,1,support free trade1
+b1q32_8,2,2
+b1q32_8,3,3
+b1q32_8,4,4
+b1q32_8,5,5
+b1q32_8,6,6
+b1q32_8,7,protect us industries7
+b1q32_8,8,can't say8
+b1q33,-2,not asked
+b1q33,-1,refused
+b1q33,1,george w. bush
+b1q33,2,howard dean
+b1q33,3,john kerry
+b1q33,4,wesley clark
+b1q33,5,richard gephardt
+b1q33,6,john edwards
+b1q33,7,joe lieberman
+b1q33,8,al sharpton
+b1q34,-2,not asked
+b1q34,-1,refused
+b1q34,1,extremely close
+b1q34,2,somewhat close
+b1q34,3,not close at all
+b1q34,4,don't know
+b1q37,-2,not asked
+b1q37,-1,refused
+b1q37,1,yes
+b1q37,2,no
+b1q37,3,can't say
+b1q39,-2,not asked
+b1q39,-1,refused
+b1q39,1,vote for george w. bush
+b1q39,2,vote for the democratic nominee
+b1q39,3,vote for some other party's candidate
+b1q39,4,not vote
+b1q40,-2,not asked
+b1q40,-1,refused
+b1q40,1,very certain
+b1q40,2,somewhat certain
+b1q40,3,not very certain
+b1q41a,-2,not asked
+b1q41a,-1,refused
+b1q41a,1,george w. bush
+b1q41a,2,howard dean
+b1q41a,3,john kerry
+b1q41a,4,wesley clark
+b1q41a,5,richard gephardt
+b1q41a,6,john edwards
+b1q41a,7,joe lieberman
+b1q41a,8,al sharpton
+b1q41a,9,carol moseley braun
+b1q41a,10,dennis kucinich
+b1q41a,11,don't know
+b1q41b,-2,not asked
+b1q41b,-1,refused
+b1q41b,1,george w. bush
+b1q41b,2,howard dean
+b1q41b,3,john kerry
+b1q41b,4,wesley clark
+b1q41b,5,richard gephardt
+b1q41b,6,john edwards
+b1q41b,7,joe lieberman
+b1q41b,8,al sharpton
+b1q41b,9,carol moseley braun
+b1q41b,10,dennis kucinich
+b1q41c,-2,not asked
+b1q41c,-1,refused
+b1q41c,1,george w. bush
+b1q41c,2,howard dean
+b1q41c,3,john kerry
+b1q41c,4,wesley clark
+b1q41c,5,richard gephardt
+b1q41c,6,john edwards
+b1q41c,7,joe lieberman
+b1q41c,8,al sharpton
+b1q41c,9,carol moseley braun
+b1q41c,10,dennis kucinich
+b1q42a,-2,not asked
+b1q42a,-1,refused
+b1q42a,1,george w. bush
+b1q42a,2,howard dean
+b1q42a,3,john kerry
+b1q42a,4,wesley clark
+b1q42a,5,richard gephardt
+b1q42a,6,john edwards
+b1q42a,7,joe lieberman
+b1q42a,8,al sharpton
+b1q42a,9,carol moseley braun
+b1q42a,10,dennis kucinich
+b1q42a,11,don't know
+b1q42b,-2,not asked
+b1q42b,-1,refused
+b1q42b,1,george w. bush
+b1q42b,2,howard dean
+b1q42b,3,john kerry
+b1q42b,4,wesley clark
+b1q42b,5,richard gephardt
+b1q42b,6,john edwards
+b1q42b,7,joe lieberman
+b1q42b,8,al sharpton
+b1q42b,9,carol moseley braun
+b1q42b,10,dennis kucinich
+b1q42c,-2,not asked
+b1q42c,-1,refused
+b1q42c,1,george w. bush
+b1q42c,2,howard dean
+b1q42c,3,john kerry
+b1q42c,4,wesley clark
+b1q42c,5,richard gephardt
+b1q42c,6,john edwards
+b1q42c,7,joe lieberman
+b1q42c,8,al sharpton
+b1q42c,9,carol moseley braun
+b1q42c,10,dennis kucinich
+b1q43,-2,not asked
+b1q43,-1,refused
+b1q43,1,lower it
+b1q43,2,keep it the same
+b1q43,3,raise it
+b1q43,4,don't know
+b1q44,-2,not asked
+b1q44,-1,refused
+b1q44,1,senator from arkansas
+b1q44,2,secretary of the air force
+b1q44,3,supreme allied commander of nato
+b1q44,4,national security advisor to the president
+b1q44,5,don't know
+b1q45,-2,not asked
+b1q45,-1,refused
+b1q45,1,the steel industry and steelworkers unions objected
+b1q45,2,he wanted to avoid increased tariffs by the european union o
+b1q45,3,"domestic steel production is insufficient to meet demand, th"
+b1q45,4,he has never supported tariffs
+b1q45,5,don't know
+b1q46,-2,not asked
+b1q46,-1,refused
+b1q46,1,john edwards
+b1q46,2,howard dean
+b1q46,3,joe lieberman
+b1q46,4,richard gephardt
+b1q46,5,don't know
+b1q47,-2,not asked
+b1q47,-1,refused
+b1q47,1,decreased
+b1q47,2,stayed about the same
+b1q47,3,increased
+b1q47,4,don't know
+b1q48,-2,not asked
+b1q48,-1,refused
+b1q48,1,fewer than a hundred
+b1q48,2,several hundred
+b1q48,3,several thousand
+b1q48,4,more than twenty thousand
+b1q48,5,don't know
+b1q49,-2,not asked
+b1q49,-1,refused
+b1q49,1,support it
+b1q49,2,neither support nor oppose it
+b1q49,3,oppose it
+b1q49,4,don't know
+f1durcat,1,less than 5 minutes
+f1durcat,2,5 - 9:59
+f1durcat,3,10 - 14:59
+f1durcat,4,15 - 19:59
+f1durcat,5,20 - 24:59
+f1durcat,6,25 - 29:59
+f1durcat,7,30 - 34:59
+f1durcat,8,35 - 39:59
+f1durcat,9,40 - 44:59
+f1durcat,10,45 - 49:59
+f1durcat,11,50 - 54:59
+f1durcat,12,55 - 59:59
+f1durcat,13,60 - 64:59
+f1durcat,14,65 - 69:59
+f1durcat,15,70 - 74:59
+f1durcat,16,75 - 79:59
+f1durcat,17,80 - 84:59
+f1durcat,18,85 - 89:59
+f1durcat,19,90 - 94:59
+f1durcat,20,95 - 99:59
+f1durcat,21,more than 100 minutes
+f1q1fu_1,-3,can't say
+f1q1fu_1,-2,not asked
+f1q1fu_1,-1,refused
+f1q1fu_2,-3,can't say
+f1q1fu_2,-2,not asked
+f1q1fu_2,-1,refused
+f1q1fu_3,-3,can't say
+f1q1fu_3,-2,not asked
+f1q1fu_3,-1,refused
+f1q1fu_4,-3,can't say
+f1q1fu_4,-2,not asked
+f1q1fu_4,-1,refused
+f1q1fu_5,-3,can't say
+f1q1fu_5,-2,not asked
+f1q1fu_5,-1,refused
+f1q1fu_6,-3,can't say
+f1q1fu_6,-2,not asked
+f1q1fu_6,-1,refused
+f1q1fu_7,-3,can't say
+f1q1fu_7,-2,not asked
+f1q1fu_7,-1,refused
+f1q1fu_8,-3,can't say
+f1q1fu_8,-2,not asked
+f1q1fu_8,-1,refused
+f1q2fu,-2,not asked
+f1q2fu,-1,refused
+f1q2fu,1,agree strongly
+f1q2fu,2,agree somewhat
+f1q2fu,3,neither agree nor disagree
+f1q2fu,4,disagree somewhat
+f1q2fu,5,disagree strongly
+f1q2fu,6,haven't thought much about this
+f1q3fu,-2,not asked
+f1q3fu,-1,refused
+f1q3fu,1,agree strongly
+f1q3fu,2,agree somewhat
+f1q3fu,3,neither agree nor disagree
+f1q3fu,4,disagree somewhat
+f1q3fu,5,disagree strongly
+f1q3fu,6,haven't thought much about this
+f1q4fu,-2,not asked
+f1q4fu,-1,refused
+f1q4fu,1,agree strongly
+f1q4fu,2,agree somewhat
+f1q4fu,3,neither agree nor disagree
+f1q4fu,4,disagree somewhat
+f1q4fu,5,disagree strongly
+f1q4fu,6,haven't thought much about this
+f1q1,-2,not asked
+f1q1,-1,refused
+f1q1,1,agree strongly
+f1q1,2,agree somewhat
+f1q1,3,neither agree nor disagree
+f1q1,4,disagree somewhat
+f1q1,5,disagree strongly
+f1q1,6,haven't thought much about that
+f1q2,-2,not asked
+f1q2,-1,refused
+f1q2,1,agree strongly
+f1q2,2,agree somewhat
+f1q2,3,neither agree nor disagree
+f1q2,4,disagree somewhat
+f1q2,5,disagree strongly
+f1q2,6,haven't thought much about that
+f1q3,-2,not asked
+f1q3,-1,refused
+f1q3,1,agree strongly
+f1q3,2,agree somewhat
+f1q3,3,neither agree nor disagree
+f1q3,4,disagree somewhat
+f1q3,5,disagree strongly
+f1q3,6,haven't thought much about that
+f1q5,-2,not asked
+f1q5,-1,refused
+f1q5,1,helped a lot
+f1q5,2,helped somewhat
+f1q5,3,not had much effect
+f1q5,4,"hurt somewhat,"
+f1q5,5,hurt a lot
+f1q5,6,haven't thought much about that
+f1q6,-2,not asked
+f1q6,-1,refused
+f1q6,1,agree strongly
+f1q6,2,agree somewhat
+f1q6,3,neither agree nor disagree
+f1q6,4,disagree somewhat
+f1q6,5,disagree strongly
+f1q6,6,haven't thought much about that
+f1q7,-2,not asked
+f1q7,-1,refused
+f1q7,1,agree strongly
+f1q7,2,agree somewhat
+f1q7,3,neither agree nor disagree
+f1q7,4,disagree somewhat
+f1q7,5,disagree strongly
+f1q7,6,haven't thought much about that
+f1q8,-2,not asked
+f1q8,-1,refused
+f1q8,1,agree strongly
+f1q8,2,agree somewhat
+f1q8,3,neither agree nor disagree
+f1q8,4,disagree somewhat
+f1q8,5,disagree strongly
+f1q8,6,haven't thought much about that
+f1q9,-2,not asked
+f1q9,-1,refused
+f1q9,1,in much better shape
+f1q9,2,in somewhat better shape
+f1q9,3,about the same
+f1q9,4,in somewhat worse shape
+f1q9,5,in much worse shape
+f1q9,6,haven't thought much about it
+f1q10,-2,not asked
+f1q10,-1,refused
+f1q10,1,get much better
+f1q10,2,get somewhat better
+f1q10,3,stay about the same
+f1q10,4,get somewhat worse
+f1q10,5,get much worse
+f1q10,6,haven't thought much about that
+f1q11fu,-2,not asked
+f1q11fu,-1,refused
+f1q11fu,1,agree with (1) more strongly
+f1q11fu,2,agree with (2) more strongly
+f1q11fu,3,agree with both about equally
+f1q11fu,4,haven't you thought much about this
+f1q12fu,-2,not asked
+f1q12fu,-1,refused
+f1q12fu,1,agree with (1) more strongly
+f1q12fu,2,agree with (2) more strongly
+f1q12fu,3,agree with both about equally
+f1q12fu,4,haven't you thought much about this
+f1q13,-2,not asked
+f1q13,-1,refused
+f1q13,1,agree strongly
+f1q13,2,agree somewhat
+f1q13,3,neither agree nor disagree
+f1q13,4,disagree somewhat
+f1q13,5,disagree strongly
+f1q13,6,haven't thought much about that
+f1q14,-2,not asked
+f1q14,-1,refused
+f1q14,1,agree strongly
+f1q14,2,agree somewhat
+f1q14,3,neither agree nor disagree
+f1q14,4,disagree somewhat
+f1q14,5,disagree strongly
+f1q14,6,haven't thought much about that
+f1q15,-2,not asked
+f1q15,-1,refused
+f1q15,1,agree strongly
+f1q15,2,agree somewhat
+f1q15,3,neither agree nor disagree
+f1q15,4,disagree somewhat
+f1q15,5,disagree strongly
+f1q15,6,haven't thought much about that
+f1q15a,-2,not asked
+f1q15a,-1,refused
+f1q15a,1,agree strongly
+f1q15a,2,agree somewhat
+f1q15a,3,neither agree nor disagree
+f1q15a,4,disagree somewhat
+f1q15a,5,disagree strongly
+f1q15a,6,don't know
+f1q15b,-2,not asked
+f1q15b,-1,refused
+f1q15b,1,most candidates keep their promises
+f1q15b,2,most candidates at least try to keep their promises
+f1q15b,3,most candidates are simply trying to get elected and have no
+f1q15b,4,can't really say
+f1q15c,-2,not asked
+f1q15c,-1,refused
+f1q15c,1,"in general, voting won't make a difference to what happens"
+f1q15c,2,"in general, voting can make a difference"
+f1q15c,3,it depends
+f1q15c,4,can't really say
+f1q16,-2,not asked
+f1q16,-1,refused
+f1q16,1,almost every day
+f1q16,2,several times a week
+f1q16,3,at least once a week
+f1q16,4,at least once a month
+f1q16,5,only a few times a year
+f1q16,6,practically never
+f1q17,-2,not asked
+f1q17,-1,refused
+f1q17,1,every day
+f1q17,2,four or five times
+f1q17,3,a couple of times
+f1q17,4,not at all
+f1q18,-2,not asked
+f1q18,-1,refused
+f1q18,1,very interested
+f1q18,2,somewhat interested
+f1q18,3,not very interested
+f1q18,4,not at all interested
+f1q18a,-2,not asked
+f1q18a,-1,refused
+f1q18a,1,yes
+f1q18a,2,no
+f1q18b,-2,not asked
+f1q18b,-1,refused
+f1q18b,1,never
+f1q18b,2,once or twice
+f1q18b,3,about once a week
+f1q18b,4,several times
+f1q19_1,-2,not asked
+f1q19_1,-1,refused
+f1q19_1,1,not well at all
+f1q19_1,2,not too well
+f1q19_1,3,pretty well
+f1q19_1,4,extremely well
+f1q19_1,5,don't know
+f1q19_2,-2,not asked
+f1q19_2,-1,refused
+f1q19_2,1,not well at all
+f1q19_2,2,not too well
+f1q19_2,3,pretty well
+f1q19_2,4,extremely well
+f1q19_2,5,don't know
+f1q19_3,-2,not asked
+f1q19_3,-1,refused
+f1q19_3,1,not well at all
+f1q19_3,2,not too well
+f1q19_3,3,pretty well
+f1q19_3,4,extremely well
+f1q19_3,5,don't know
+f1q19_4,-2,not asked
+f1q19_4,-1,refused
+f1q19_4,1,not well at all
+f1q19_4,2,not too well
+f1q19_4,3,pretty well
+f1q19_4,4,extremely well
+f1q19_4,5,don't know
+f1q19_6,-2,not asked
+f1q19_6,-1,refused
+f1q19_6,1,not well at all
+f1q19_6,2,not too well
+f1q19_6,3,pretty well
+f1q19_6,4,extremely well
+f1q19_6,5,don't know
+f1q19_8,-2,not asked
+f1q19_8,-1,refused
+f1q19_8,1,not well at all
+f1q19_8,2,not too well
+f1q19_8,3,pretty well
+f1q19_8,4,extremely well
+f1q19_8,5,don't know
+f1q20_1,-2,not asked
+f1q20_1,-1,refused
+f1q20_1,1,not well at all
+f1q20_1,2,not too well
+f1q20_1,3,pretty well
+f1q20_1,4,extremely well
+f1q20_1,5,don't know
+f1q20_2,-2,not asked
+f1q20_2,-1,refused
+f1q20_2,1,not well at all
+f1q20_2,2,not too well
+f1q20_2,3,pretty well
+f1q20_2,4,extremely well
+f1q20_2,5,don't know
+f1q20_3,-2,not asked
+f1q20_3,-1,refused
+f1q20_3,1,not well at all
+f1q20_3,2,not too well
+f1q20_3,3,pretty well
+f1q20_3,4,extremely well
+f1q20_3,5,don't know
+f1q20_4,-2,not asked
+f1q20_4,-1,refused
+f1q20_4,1,not well at all
+f1q20_4,2,not too well
+f1q20_4,3,pretty well
+f1q20_4,4,extremely well
+f1q20_4,5,don't know
+f1q20_6,-2,not asked
+f1q20_6,-1,refused
+f1q20_6,1,not well at all
+f1q20_6,2,not too well
+f1q20_6,3,pretty well
+f1q20_6,4,extremely well
+f1q20_6,5,don't know
+f1q20_8,-2,not asked
+f1q20_8,-1,refused
+f1q20_8,1,not well at all
+f1q20_8,2,not too well
+f1q20_8,3,pretty well
+f1q20_8,4,extremely well
+f1q20_8,5,don't know
+f1q21_1,-2,not asked
+f1q21_1,-1,refused
+f1q21_1,1,not well at all
+f1q21_1,2,not too well
+f1q21_1,3,pretty well
+f1q21_1,4,extremely well
+f1q21_1,5,don't know
+f1q21_2,-2,not asked
+f1q21_2,-1,refused
+f1q21_2,1,not well at all
+f1q21_2,2,not too well
+f1q21_2,3,pretty well
+f1q21_2,4,extremely well
+f1q21_2,5,don't know
+f1q21_3,-2,not asked
+f1q21_3,-1,refused
+f1q21_3,1,not well at all
+f1q21_3,2,not too well
+f1q21_3,3,pretty well
+f1q21_3,4,extremely well
+f1q21_3,5,don't know
+f1q21_4,-2,not asked
+f1q21_4,-1,refused
+f1q21_4,1,not well at all
+f1q21_4,2,not too well
+f1q21_4,3,pretty well
+f1q21_4,4,extremely well
+f1q21_4,5,don't know
+f1q21_6,-2,not asked
+f1q21_6,-1,refused
+f1q21_6,1,not well at all
+f1q21_6,2,not too well
+f1q21_6,3,pretty well
+f1q21_6,4,extremely well
+f1q21_6,5,don't know
+f1q21_8,-2,not asked
+f1q21_8,-1,refused
+f1q21_8,1,not well at all
+f1q21_8,2,not too well
+f1q21_8,3,pretty well
+f1q21_8,4,extremely well
+f1q21_8,5,don't know
+ft250bus,-2,not asked
+ft250ker,-2,not asked
+ft250edw,-2,not asked
+ft250dea,-2,not asked
+ft250cla,-2,not asked
+ft250sha,-2,not asked
+f1q22_1,-3,can't say
+f1q22_1,-2,not asked
+f1q22_1,-1,refused
+f1q22_2,-3,can't say
+f1q22_2,-2,not asked
+f1q22_2,-1,refused
+f1q22_3,-3,can't say
+f1q22_3,-2,not asked
+f1q22_3,-1,refused
+f1q22_6,-3,can't say
+f1q22_6,-2,not asked
+f1q22_6,-1,refused
+f1q22_4,-3,can't say
+f1q22_4,-2,not asked
+f1q22_4,-1,refused
+f1q22_8,-3,can't say
+f1q22_8,-2,not asked
+f1q22_8,-1,refused
+f1q22_10,-3,can't say
+f1q22_10,-2,not asked
+f1q22_10,-1,refused
+f1q23,-2,not asked
+f1q23,-1,refused
+f1q23,1,very good
+f1q23,2,good
+f1q23,3,fair
+f1q23,4,poor
+f1q23,5,very poor
+f1q23,6,not sure/can't say
+f1q24,-2,not asked
+f1q24,-1,refused
+f1q24,1,very good
+f1q24,2,good
+f1q24,3,fair
+f1q24,4,poor
+f1q24,5,very poor
+f1q24,6,not sure/can't say
+f1q25,-2,not asked
+f1q25,-1,refused
+f1q25,1,fewer services/lower taxes1
+f1q25,2,2
+f1q25,3,3
+f1q25,4,4
+f1q25,5,5
+f1q25,6,6
+f1q25,7,more services/higher taxes7
+f1q25,8,haven't thought much about this8
+f1q26_1,-2,not asked
+f1q26_1,-1,refused
+f1q26_1,1,fewer services/lower taxes1
+f1q26_1,2,2
+f1q26_1,3,3
+f1q26_1,4,4
+f1q26_1,5,5
+f1q26_1,6,6
+f1q26_1,7,more services/higher taxes7
+f1q26_1,8,can't say8
+f1q26_2,-2,not asked
+f1q26_2,-1,refused
+f1q26_2,1,fewer services/lower taxes1
+f1q26_2,2,2
+f1q26_2,3,3
+f1q26_2,4,4
+f1q26_2,5,5
+f1q26_2,6,6
+f1q26_2,7,more services/higher taxes7
+f1q26_2,8,can't say8
+f1q26_3,-2,not asked
+f1q26_3,-1,refused
+f1q26_3,1,fewer services/lower taxes1
+f1q26_3,2,2
+f1q26_3,3,3
+f1q26_3,4,4
+f1q26_3,5,5
+f1q26_3,6,6
+f1q26_3,7,more services/higher taxes7
+f1q26_3,8,can't say8
+f1q26_4,-2,not asked
+f1q26_4,-1,refused
+f1q26_4,1,fewer services/lower taxes1
+f1q26_4,2,2
+f1q26_4,3,3
+f1q26_4,4,4
+f1q26_4,5,5
+f1q26_4,6,6
+f1q26_4,7,more services/higher taxes7
+f1q26_4,8,can't say8
+f1q26_6,-2,not asked
+f1q26_6,-1,refused
+f1q26_6,1,fewer services/lower taxes1
+f1q26_6,2,2
+f1q26_6,3,3
+f1q26_6,4,4
+f1q26_6,5,5
+f1q26_6,6,6
+f1q26_6,7,more services/higher taxes7
+f1q26_6,8,can't say8
+f1q26_8,-2,not asked
+f1q26_8,-1,refused
+f1q26_8,1,fewer services/lower taxes1
+f1q26_8,2,2
+f1q26_8,3,3
+f1q26_8,4,4
+f1q26_8,5,5
+f1q26_8,6,6
+f1q26_8,7,more services/higher taxes7
+f1q26_8,8,can't say8
+f1q27,-2,not asked
+f1q27,-1,refused
+f1q27,1,increase defense spending/decrease domestic spending1
+f1q27,2,2
+f1q27,3,3
+f1q27,4,4
+f1q27,5,5
+f1q27,6,6
+f1q27,7,decrease defense spending/increase domestic spending7
+f1q27,8,haven't thought much about this8
+f1q28_1,-2,not asked
+f1q28_1,-1,refused
+f1q28_1,1,increase defense spending/decrease domestic spending1
+f1q28_1,2,2
+f1q28_1,3,3
+f1q28_1,4,4
+f1q28_1,5,5
+f1q28_1,6,6
+f1q28_1,7,decrease defense spending/increase domestic spending7
+f1q28_1,8,can't say8
+f1q28_2,-2,not asked
+f1q28_2,-1,refused
+f1q28_2,1,increase defense spending/decrease domestic spending1
+f1q28_2,2,2
+f1q28_2,3,3
+f1q28_2,4,4
+f1q28_2,5,5
+f1q28_2,6,6
+f1q28_2,7,decrease defense spending/increase domestic spending7
+f1q28_2,8,can't say8
+f1q28_3,-2,not asked
+f1q28_3,-1,refused
+f1q28_3,1,increase defense spending/decrease domestic spending1
+f1q28_3,2,2
+f1q28_3,3,3
+f1q28_3,4,4
+f1q28_3,5,5
+f1q28_3,6,6
+f1q28_3,7,decrease defense spending/increase domestic spending7
+f1q28_3,8,can't say8
+f1q28_4,-2,not asked
+f1q28_4,-1,refused
+f1q28_4,1,increase defense spending/decrease domestic spending1
+f1q28_4,2,2
+f1q28_4,3,3
+f1q28_4,4,4
+f1q28_4,5,5
+f1q28_4,6,6
+f1q28_4,7,decrease defense spending/increase domestic spending7
+f1q28_4,8,can't say8
+f1q28_6,-2,not asked
+f1q28_6,-1,refused
+f1q28_6,1,increase defense spending/decrease domestic spending1
+f1q28_6,2,2
+f1q28_6,3,3
+f1q28_6,4,4
+f1q28_6,5,5
+f1q28_6,6,6
+f1q28_6,7,decrease defense spending/increase domestic spending7
+f1q28_6,8,can't say8
+f1q28_8,-2,not asked
+f1q28_8,-1,refused
+f1q28_8,1,increase defense spending/decrease domestic spending1
+f1q28_8,2,2
+f1q28_8,3,3
+f1q28_8,4,4
+f1q28_8,5,5
+f1q28_8,6,6
+f1q28_8,7,decrease defense spending/increase domestic spending7
+f1q28_8,8,can't say8
+f1q29,-2,not asked
+f1q29,-1,refused
+f1q29,1,intervene on our own1
+f1q29,2,2
+f1q29,3,3
+f1q29,4,4
+f1q29,5,5
+f1q29,6,6
+f1q29,7,intervene with un approval7
+f1q29,8,haven't thought much about this8
+f1q30_1,-2,not asked
+f1q30_1,-1,refused
+f1q30_1,1,intervene on our own1
+f1q30_1,2,2
+f1q30_1,3,3
+f1q30_1,4,4
+f1q30_1,5,5
+f1q30_1,6,6
+f1q30_1,7,intervene with un approval7
+f1q30_1,8,can't say8
+f1q30_2,-2,not asked
+f1q30_2,-1,refused
+f1q30_2,1,intervene on our own1
+f1q30_2,2,2
+f1q30_2,3,3
+f1q30_2,4,4
+f1q30_2,5,5
+f1q30_2,6,6
+f1q30_2,7,intervene with un approval7
+f1q30_2,8,can't say8
+f1q30_3,-2,not asked
+f1q30_3,-1,refused
+f1q30_3,1,intervene on our own1
+f1q30_3,2,2
+f1q30_3,3,3
+f1q30_3,4,4
+f1q30_3,5,5
+f1q30_3,6,6
+f1q30_3,7,intervene with un approval7
+f1q30_3,8,can't say8
+f1q30_4,-2,not asked
+f1q30_4,-1,refused
+f1q30_4,1,intervene on our own1
+f1q30_4,2,2
+f1q30_4,3,3
+f1q30_4,4,4
+f1q30_4,5,5
+f1q30_4,6,6
+f1q30_4,7,intervene with un approval7
+f1q30_4,8,can't say8
+f1q30_6,-2,not asked
+f1q30_6,-1,refused
+f1q30_6,1,intervene on our own1
+f1q30_6,2,2
+f1q30_6,3,3
+f1q30_6,4,4
+f1q30_6,5,5
+f1q30_6,6,6
+f1q30_6,7,intervene with un approval7
+f1q30_6,8,can't say8
+f1q30_8,-2,not asked
+f1q30_8,-1,refused
+f1q30_8,1,intervene on our own1
+f1q30_8,2,2
+f1q30_8,3,3
+f1q30_8,4,4
+f1q30_8,5,5
+f1q30_8,6,6
+f1q30_8,7,intervene with un approval7
+f1q30_8,8,can't say8
+f1q31,-2,not asked
+f1q31,-1,refused
+f1q31,1,support free trade1
+f1q31,2,2
+f1q31,3,3
+f1q31,4,4
+f1q31,5,5
+f1q31,6,6
+f1q31,7,protect us industries7
+f1q31,8,haven't thought much about this8
+f1q32_1,-2,not asked
+f1q32_1,-1,refused
+f1q32_1,1,support free trade1
+f1q32_1,2,2
+f1q32_1,3,3
+f1q32_1,4,4
+f1q32_1,5,5
+f1q32_1,6,6
+f1q32_1,7,protect us industries7
+f1q32_1,8,can't say8
+f1q32_2,-2,not asked
+f1q32_2,-1,refused
+f1q32_2,1,support free trade1
+f1q32_2,2,2
+f1q32_2,3,3
+f1q32_2,4,4
+f1q32_2,5,5
+f1q32_2,6,6
+f1q32_2,7,protect us industries7
+f1q32_2,8,can't say8
+f1q32_3,-2,not asked
+f1q32_3,-1,refused
+f1q32_3,1,support free trade1
+f1q32_3,2,2
+f1q32_3,3,3
+f1q32_3,4,4
+f1q32_3,5,5
+f1q32_3,6,6
+f1q32_3,7,protect us industries7
+f1q32_3,8,can't say8
+f1q32_4,-2,not asked
+f1q32_4,-1,refused
+f1q32_4,1,support free trade1
+f1q32_4,2,2
+f1q32_4,3,3
+f1q32_4,4,4
+f1q32_4,5,5
+f1q32_4,6,6
+f1q32_4,7,protect us industries7
+f1q32_4,8,can't say8
+f1q32_6,-2,not asked
+f1q32_6,-1,refused
+f1q32_6,1,support free trade1
+f1q32_6,2,2
+f1q32_6,3,3
+f1q32_6,4,4
+f1q32_6,5,5
+f1q32_6,6,6
+f1q32_6,7,protect us industries7
+f1q32_6,8,can't say8
+f1q32_8,-2,not asked
+f1q32_8,-1,refused
+f1q32_8,1,support free trade1
+f1q32_8,2,2
+f1q32_8,3,3
+f1q32_8,4,4
+f1q32_8,5,5
+f1q32_8,6,6
+f1q32_8,7,protect us industries7
+f1q32_8,8,can't say8
+f1q33,-2,not asked
+f1q33,-1,refused
+f1q33,1,george w. bush
+f1q33,2,howard dean
+f1q33,3,john kerry
+f1q33,4,wesley clark
+f1q33,6,john edwards
+f1q33,8,al sharpton
+f1q34,-2,not asked
+f1q34,-1,refused
+f1q34,1,extremely close
+f1q34,2,somewhat close
+f1q34,3,not close at all
+f1q34,4,don't know
+f1q37,-2,not asked
+f1q37,-1,refused
+f1q37,1,yes
+f1q37,2,no
+f1q37a,-2,not asked
+f1q37a,-1,refused
+f1q37a,1,yes
+f1q37a,2,no
+f1q37b,-2,not asked
+f1q37b,-1,refused
+f1q37b,1,george w. bush
+f1q37b,2,howard dean
+f1q37b,3,john kerry
+f1q37b,4,wesley clark
+f1q37b,5,richard gephardt
+f1q37b,6,john edwards
+f1q37b,7,joe lieberman
+f1q37b,8,al sharpton
+f1q37b,9,carol moseley braun
+f1q37b,10,dennis kucinich
+f1q37c,-2,not asked
+f1q37c,-1,refused
+f1q37c,1,yes
+f1q37c,2,no
+f1q37d,-2,not asked
+f1q37d,-1,refused
+f1q37d,1,yes
+f1q37d,2,no
+f1q37e,-2,not asked
+f1q37e,-1,refused
+f1q37e,1,george w. bush
+f1q37e,2,howard dean
+f1q37e,3,john kerry
+f1q37e,4,wesley clark
+f1q37e,5,richard gephardt
+f1q37e,6,john edwards
+f1q37e,7,joe lieberman
+f1q37e,8,al sharpton
+f1q37e,9,carol moseley braun
+f1q37e,10,dennis kucinich
+f1q39,-2,not asked
+f1q39,-1,refused
+f1q39,1,vote for george w. bush
+f1q39,2,vote for the democratic nominee
+f1q39,3,vote for some other party's candidate
+f1q39,4,not vote
+f1q40,-2,not asked
+f1q40,-1,refused
+f1q40,1,very certain
+f1q40,2,somewhat certain
+f1q40,3,not very certain
+f1q41b,-2,not asked
+f1q41b,-1,refused
+f1q41b,1,george w. bush
+f1q41b,2,howard dean
+f1q41b,3,john kerry
+f1q41b,4,wesley clark
+f1q41b,5,john edwards
+f1q41b,6,al sharpton
+f1q41b,7,dennis kucinich
+f1q41c,-2,not asked
+f1q41c,-1,refused
+f1q41c,1,george w. bush
+f1q41c,2,howard dean
+f1q41c,3,john kerry
+f1q41c,4,wesley clark
+f1q41c,5,john edwards
+f1q41c,6,al sharpton
+f1q41c,7,dennis kucinich
+f1q42a,-2,not asked
+f1q42a,-1,refused
+f1q42a,1,george w. bush
+f1q42a,2,howard dean
+f1q42a,3,john kerry
+f1q42a,4,wesley clark
+f1q42a,6,john edwards
+f1q42a,7,dennis kucinich
+f1q42a,8,al sharpton
+f1q42a,9,don't know
+f1q42b,-2,not asked
+f1q42b,-1,refused
+f1q42b,1,george w. bush
+f1q42b,2,howard dean
+f1q42b,3,john kerry
+f1q42b,4,wesley clark
+f1q42b,6,john edwards
+f1q42b,7,dennis kucinich
+f1q42b,8,al sharpton
+f1q42b,9,don't know
+f1q42c,-2,not asked
+f1q42c,-1,refused
+f1q42c,1,george w. bush
+f1q42c,2,howard dean
+f1q42c,3,john kerry
+f1q42c,4,wesley clark
+f1q42c,6,john edwards
+f1q42c,7,dennis kucinich
+f1q42c,8,al sharpton
+f1q42c,9,don't know
+f1q41a,-2,not asked
+f1q41a,-1,refused
+f1q41a,1,george w. bush
+f1q41a,2,howard dean
+f1q41a,3,john kerry
+f1q41a,4,wesley clark
+f1q41a,5,john edwards
+f1q41a,6,al sharpton
+f1q41a,7,dennis kucinich
+f1q41a,8,don't know
+f1q43,-2,not asked
+f1q43,-1,refused
+f1q43,1,lower it
+f1q43,2,keep it the same
+f1q43,3,raise it
+f1q43,4,don't know
+f1q44,-2,not asked
+f1q44,-1,refused
+f1q44,1,senator from arkansas
+f1q44,2,secretary of the air force
+f1q44,3,supreme allied commander of nato
+f1q44,4,national security advisor to the president
+f1q44,5,don't know
+f1q45,-2,not asked
+f1q45,-1,refused
+f1q45,1,the steel industry and steelworkers unions objected
+f1q45,2,he wanted to avoid increased tariffs by the european union o
+f1q45,3,"domestic steel production is insufficient to meet demand, th"
+f1q45,4,he has never supported tariffs
+f1q45,5,don't know
+f1q46,-2,not asked
+f1q46,-1,refused
+f1q46,1,john edwards
+f1q46,2,howard dean
+f1q46,3,joe lieberman
+f1q46,4,richard gephardt
+f1q46,5,don't know
+f1q47,-2,not asked
+f1q47,-1,refused
+f1q47,1,decreased
+f1q47,2,stayed about the same
+f1q47,3,increased
+f1q47,4,don't know
+f1q48,-2,not asked
+f1q48,-1,refused
+f1q48,1,fewer than a hundred
+f1q48,2,several hundred
+f1q48,3,several thousand
+f1q48,4,more than twenty thousand
+f1q48,5,don't know
+f1q49,-2,not asked
+f1q49,-1,refused
+f1q49,1,support it
+f1q49,2,neither support nor oppose it
+f1q49,3,oppose it
+f1q49,4,don't know
+f1q50,-2,not asked
+f1q50,-1,refused
+f1q50,1,dean
+f1q50,2,bush
+f1q50,3,can't say
+f1q51,-2,not asked
+f1q51,-1,refused
+f1q51,1,kerry
+f1q51,2,bush
+f1q51,3,can't say
+f1q52,-2,not asked
+f1q52,-1,refused
+f1q52,1,edwards
+f1q52,2,bush
+f1q52,3,can't say
+f1q53,-2,not asked
+f1q53,-1,refused
+f1q53,1,clark
+f1q53,2,bush
+f1q53,3,can't say
+ppage,-2,not asked
+ppage,-1,refused
+ppagect4,1,18-29
+ppagect4,2,30-44
+ppagect4,3,45-59
+ppagect4,4,60+
+ppagect4,99,under 18
+ppagecat,1,18-24
+ppagecat,2,25-34
+ppagecat,3,35-44
+ppagecat,4,45-54
+ppagecat,5,55-64
+ppagecat,6,65-74
+ppagecat,7,75+
+ppagecat,99,under 18
+ppdualin,-2,not asked
+ppdualin,-1,refused
+ppdualin,0,no
+ppdualin,1,yes
+ppeduc,-2,not asked
+ppeduc,-1,refused
+ppeduc,1,less than high school
+ppeduc,2,"some high school, no diploma"
+ppeduc,3,graduated from high school - diploma or equivalent (ged)
+ppeduc,4,"some college, no degree"
+ppeduc,5,"associate degree (aa, as)"
+ppeduc,6,bachelor's degree
+ppeduc,7,master's degree
+ppeduc,8,"professional degree (md, dds, llb, jd)"
+ppeduc,9,doctorate degree
+ppeducat,-2,not asked
+ppeducat,-1,refused
+ppeducat,1,less than high school
+ppeducat,2,high school
+ppeducat,3,some college
+ppeducat,4,bachelor's degree or higher
+ppeth,-2,not asked
+ppeth,-1,refused
+ppeth,1,"white, non-hispanic"
+ppeth,2,"black, non-hispanic"
+ppeth,3,"other, non-hispanic"
+ppeth,4,hispanic
+ppgender,-2,not asked
+ppgender,-1,refused
+ppgender,1,male
+ppgender,2,female
+pphhhead,-2,not asked
+pphhhead,-1,refused
+pphhhead,0,no
+pphhhead,1,yes
+pphhsize,-2,not asked
+pphhsize,-1,refused
+pphouse,-2,not asked
+pphouse,-1,refused
+pphouse,1,a single-family house detached
+pphouse,2,a single-family house attached
+pphouse,3,an apartment
+pphouse,4,a condominium or co-op
+pphouse,5,college dormitory
+pphouse,6,a manufactured or mobile home
+pphouse,7,other
+ppincimp,-2,not asked
+ppincimp,-1,refused
+ppincimp,1,"less than $5,000"
+ppincimp,2,"$5,000 to $7,499"
+ppincimp,3,"$7,500 to $9,999"
+ppincimp,4,"$10,000 to $12,499"
+ppincimp,5,"$12,500 to $14,999"
+ppincimp,6,"$15,000 to $19,999"
+ppincimp,7,"$20,000 to $24,999"
+ppincimp,8,"$25,000 to $29,999"
+ppincimp,9,"$30,000 to $34,999"
+ppincimp,10,"$35,000 to $39,999"
+ppincimp,11,"$40,000 to $49,999"
+ppincimp,12,"$50,000 to $59,999"
+ppincimp,13,"$60,000 to $74,999"
+ppincimp,14,"$75,000 to $84,999"
+ppincimp,15,"$85,000 to $99,999"
+ppincimp,16,"$100,000 to $124,999"
+ppincimp,17,"$125,000 to $149,999"
+ppincimp,18,"$150,000 to $174,999"
+ppincimp,19,"$175,000 or more"
+ppmarit,-2,not asked
+ppmarit,-1,refused
+ppmarit,1,married
+ppmarit,2,single (never married)
+ppmarit,3,divorced
+ppmarit,4,widowed
+ppmarit,5,separated
+ppmsacat,-2,not asked
+ppmsacat,-1,refused
+ppmsacat,0,non-metro
+ppmsacat,1,metro
+ppreg4,-2,not asked
+ppreg4,-1,refused
+ppreg4,1,northeast
+ppreg4,2,midwest
+ppreg4,3,south
+ppreg4,4,west
+ppreg9,1,new england
+ppreg9,2,mid-atlantic
+ppreg9,3,east-north central
+ppreg9,4,west-north central
+ppreg9,5,south atlantic
+ppreg9,6,east-south central
+ppreg9,7,west-south central
+ppreg9,8,mountain
+ppreg9,9,pacific
+pprent,-2,not asked
+pprent,-1,refused
+pprent,1,own
+pprent,2,rent
+pprent,3,do not pay for housing
+ppstaten,-2,not asked
+ppstaten,-1,refused
+ppstaten,11,me
+ppstaten,12,nh
+ppstaten,13,vt
+ppstaten,14,ma
+ppstaten,15,ri
+ppstaten,16,ct
+ppstaten,21,ny
+ppstaten,22,nj
+ppstaten,23,pa
+ppstaten,31,oh
+ppstaten,32,in
+ppstaten,33,il
+ppstaten,34,mi
+ppstaten,35,wi
+ppstaten,41,mn
+ppstaten,42,ia
+ppstaten,43,mo
+ppstaten,44,nd
+ppstaten,45,sd
+ppstaten,46,ne
+ppstaten,47,ks
+ppstaten,51,de
+ppstaten,52,md
+ppstaten,53,dc
+ppstaten,54,va
+ppstaten,55,wv
+ppstaten,56,nc
+ppstaten,57,sc
+ppstaten,58,ga
+ppstaten,59,fl
+ppstaten,61,ky
+ppstaten,62,tn
+ppstaten,63,al
+ppstaten,64,ms
+ppstaten,71,ar
+ppstaten,72,la
+ppstaten,73,ok
+ppstaten,74,tx
+ppstaten,81,mt
+ppstaten,82,id
+ppstaten,83,wy
+ppstaten,84,co
+ppstaten,85,nm
+ppstaten,86,az
+ppstaten,87,ut
+ppstaten,88,nv
+ppstaten,91,wa
+ppstaten,92,or
+ppstaten,93,ca
+ppstaten,94,ak
+ppstaten,95,hi
+ppt01,-2,not asked
+ppt01,-1,refused
+ppt1317,-2,not asked
+ppt1317,-1,refused
+ppt18ov,-2,not asked
+ppt18ov,-1,refused
+ppt25,-2,not asked
+ppt25,-1,refused
+ppt612,-2,not asked
+ppt612,-1,refused
+ppwork,-2,not asked
+ppwork,-1,refused
+ppwork,1,i work as a paid employee
+ppwork,2,i am self-employed
+ppwork,3,"i am an owner/partner in small business, prof practice, farm"
+ppwork,4,i work at least 15 hrs/wk w/o pay in family business/farm
+ppwork,5,"i am unemployed, temporarily laid off, but looking for work"
+ppwork,6,i am retired
+ppwork,7,i am disabled
+ppwork,8,i am a homemaker
+ppwork,9,other
+ethnicdm,0,white
+ethnicdm,1,not white
+maritdm,0,single (never married)
+maritdm,1,married at some point
+filter__,0,not selected
+filter__,1,selected
+polprox1,0,undecided/tied
+polprox1,2,dean
+polprox1,3,kerry
+polprox1,4,clark
+polprox1,6,edwards
+polprox1,8,sharpton
+poldmk1,0,kerry is not candidate closest to r's policy positions
+poldmk1,1,kerry is candidate closest to r's policy positions
+poldme1,0,edwards is not candidate closest to r's policy positions
+poldme1,1,edwards is candidate closest to r's policy positions
+poldmd1,0,dean is not candidate closest to r's policy positions
+poldmd1,1,dean is candidate closest to r's policy positions
+poldmc1,0,clark is not candidate closest to r's policy positions
+poldmc1,1,clark is candidate closest to r's policy positions
+poldms1,0,sharpton is not candidate closest to r's policy positions
+poldms1,1,sharpton is candidate closest to r's policy positions
+polprox2,0,undecided/tied
+polprox2,2,dean
+polprox2,3,kerry
+polprox2,4,clark
+polprox2,6,edwards
+polprox2,8,sharpton
+poldmk2,0,kerry is not candidate closest to r's policy positions
+poldmk2,1,kerry is candidate closest to r's policy positions
+poldme2,0,edwards is not candidate closest to r's policy positions
+poldme2,1,edwards is candidate closest to r's policy positions
+poldmd2,0,dean is not candidate closest to r's policy positions
+poldmd2,1,dean is candidate closest to r's policy positions
+poldmc2,0,clark is not candidate closest to r's policy positions
+poldmc2,1,clark is candidate closest to r's policy positions
+poldms2,0,sharpton is not candidate closest to r's policy positions
+poldms2,1,sharpton is candidate closest to r's policy positions
+elecdmk2,0,kerry is not most electable candidate
+elecdmk2,1,kerry is most electable candidate
+elecdme2,0,edwards is not most electable candidate
+elecdme2,1,edwards is most electable candidate
+elecdmd2,0,dean is not most electable candidate
+elecdmd2,1,dean is most electable candidate
+elecdmc2,0,clark is not most electable candidate
+elecdmc2,1,clark is most electable candidate
+elecdms2,0,sharpton is not most electable candidate
+elecdms2,1,sharpton is most electable candidate
+predvt2,0,undecided
+predvt2,2,dean
+predvt2,3,kerry
+predvt2,4,clarke
+predvt2,6,edwards
+predvt2,8,sharpton
+el2dmk2,0,kerry is not most electable candidate
+el2dmk2,1,kerry is most electable candidate
+el2dme2,0,edwards is not most electable candidate
+el2dme2,1,edwards is most electable candidate
+el2dmd2,0,dean is not most electable candidate
+el2dmd2,1,dean is most electable candidate
+el2dmc2,0,clark is not most electable candidate
+el2dmc2,1,clark is most electable candidate
+el2dms2,0,sharpton is not most electable candidate
+el2dms2,1,sharpton is most electable candidate
+trexpcon,0,control group or treatment but no sessions
+trexpcon,1,treatment and attended at least one session
+val0,0,not named as one of the 1st thru 3rd most viable candidates
+val0,0,third most viable candidate (and 1st thru 3rd named)
+val0,0,second most viable candidate (and 1st thru 3rd named)
+val0,0,second most viable candidate (and 1st and 2nd only named)
+val0,0,most viable candidate (and 2nd and 3rd named)
+val0,0,most viable candidate (and only a 2nd named)
+val0,1,most viable candidate (and no 2nd or 3rd named)
+viabker2,0,not named as one of the 1st thru 3rd most viable candidates
+viabker2,0,third most viable candidate (and 1st thru 3rd named)
+viabker2,0,second most viable candidate (and 1st thru 3rd named)
+viabker2,0,second most viable candidate (and 1st and 2nd only named)
+viabker2,0,most viable candidate (and 2nd and 3rd named)
+viabker2,0,most viable candidate (and only a 2nd named)
+viabker2,1,most viable candidate (and no 2nd or 3rd named)
+viabedw2,0,not named as one of the 1st thru 3rd most viable candidates
+viabedw2,0,third most viable candidate (and 1st thru 3rd named)
+viabedw2,0,second most viable candidate (and 1st thru 3rd named)
+viabedw2,0,second most viable candidate (and 1st and 2nd only named)
+viabedw2,0,most viable candidate (and 2nd and 3rd named)
+viabedw2,0,most viable candidate (and only a 2nd named)
+viabedw2,1,most viable candidate (and no 2nd or 3rd named)
+viabdea2,0,not named as one of the 1st thru 3rd most viable candidates
+viabdea2,0,third most viable candidate (and 1st thru 3rd named)
+viabdea2,0,second most viable candidate (and 1st thru 3rd named)
+viabdea2,0,second most viable candidate (and 1st and 2nd only named)
+viabdea2,0,most viable candidate (and 2nd and 3rd named)
+viabdea2,0,most viable candidate (and only a 2nd named)
+viabdea2,1,most viable candidate (and no 2nd or 3rd named)
+viabcla2,0,not named as one of the 1st thru 3rd most viable candidates
+viabcla2,0,third most viable candidate (and 1st thru 3rd named)
+viabcla2,0,second most viable candidate (and 1st thru 3rd named)
+viabcla2,0,second most viable candidate (and 1st and 2nd only named)
+viabcla2,0,most viable candidate (and 2nd and 3rd named)
+viabcla2,0,most viable candidate (and only a 2nd named)
+viabcla2,1,most viable candidate (and no 2nd or 3rd named)
+viabsha2,0,not named as one of the 1st thru 3rd most viable candidates
+viabsha2,0,third most viable candidate (and 1st thru 3rd named)
+viabsha2,0,second most viable candidate (and 1st thru 3rd named)
+viabsha2,0,second most viable candidate (and 1st and 2nd only named)
+viabsha2,0,most viable candidate (and 2nd and 3rd named)
+viabsha2,0,most viable candidate (and only a 2nd named)
+viabsha2,1,most viable candidate (and no 2nd or 3rd named)
+kerviab2,0,not named as one of 3 most viable candidates
+kerviab2,1,third most likely to win nomination
+kerviab2,2,second most likely to win nomination
+kerviab2,3,most likely to win nomination
+edwviab2,0,not named as one of 3 most viable candidates
+edwviab2,1,third most likely to win nomination
+edwviab2,2,second most likely to win nomination
+edwviab2,3,most likely to win nomination
+deaviab2,0,not named as one of 3 most viable candidates
+deaviab2,1,third most likely to win nomination
+deaviab2,2,second most likely to win nomination
+deaviab2,3,most likely to win nomination
+claviab2,0,not named as one of 3 most viable candidates
+claviab2,1,third most likely to win nomination
+claviab2,2,second most likely to win nomination
+claviab2,3,most likely to win nomination
+shaviab2,0,not named as one of 3 most viable candidates
+shaviab2,1,third most likely to win nomination
+shaviab2,2,second most likely to win nomination
+shaviab2,3,most likely to win nomination
+pvdmke2,0,predicted vote for edwards
+pvdmke2,1,predicted vote for kerry
+pvdmkd2,0,predicted vote for dean
+pvdmkd2,1,predicted vote for kerry
+pvdmkc2,0,predicted vote for clark
+pvdmkc2,1,predicted vote for kerry
+pvdmks2,0,predicted vote for sharpton
+pvdmks2,1,predicted vote for kerry
+pvdmed2,0,predicted vote for dean
+pvdmed2,1,predicted vote for edwards
+pvdmec2,0,predicted vote for clark
+pvdmec2,1,predicted vote for edwards
+pvdmes2,0,predicted vote for sharpton
+pvdmes2,1,predicted vote for edwards
+pvdmdc2,0,predicted vote for clark
+pvdmdc2,1,predicted vote for dean
+pvdmds2,0,predicted vote for sharpton
+pvdmds2,1,predicted vote for dean
+pvdmcs2,0,predicted vote for sharpton
+pvdmcs2,1,predicted vote for clark
+trtcont,0,control group
+trtcont,1,in treatment group but did not attend any meetings
+trtcont,2,in treatment and attended 1 mtg
+trtcont,3,in treatment and attended 2 mtgs
+trtcont,4,in treatment and attended 3 mtgs
+trtcont,5,in treatment and attended 4 mtgs
+trtcont,6,in treatment and attended 5 mtgs
+eledmkd2,-1,dean is deemed most electable
+eledmkd2,0,neither is deemed most electable
+eledmkd2,1,kerry is deemed most electable
+eledmkc2,-1,clark is deemed most electable
+eledmkc2,0,neither is deemed most electable
+eledmkc2,1,kerry is deemed most electable
+eledmks2,-1,sharpton is deemed most electable
+eledmks2,0,neither is deemed most electable
+eledmks2,1,kerry is deemed most electable
+eledmed2,-1,dean is deemed most electable
+eledmed2,0,neither is deemed most electable
+eledmed2,1,edwards is deemed most electable
+eledmec2,-1,clark is deemed most electable
+eledmec2,0,neither is deemed most electable
+eledmec2,1,edwards is deemed most electable
+eledmes2,-1,sharpton is deemed most electable
+eledmes2,0,neither is deemed most electable
+eledmes2,1,edwards is deemed most electable
+eledmdc2,-1,clark is deemed most electable
+eledmdc2,0,neither is deemed most electable
+eledmdc2,1,dean  is deemed most electable
+eledmds2,-1,sharpton is deemed most electable
+eledmds2,0,neither is deemed most electable
+eledmds2,1,dean  is deemed most electable
+eledmcs2,-1,sharpton is deemed most electable
+eledmcs2,0,neither is deemed most electable
+eledmcs2,1,clark  is deemed most electable
+viabke2,-1,edwards is deemed more viable
+viabke2,0,neither is deemed more viable
+viabke2,1,kerry is deemed more viable
+viabkd2,-1,dean is deemed more viable
+viabkd2,0,neither is deemed more viable
+viabkd2,1,kerry is deemed more viable
+viabkc2,-1,clark is deemed more viable
+viabkc2,0,neither is deemed more viable
+viabkc2,1,kerry is deemed more viable
+viabks2,-1,sharpton is deemed more viable
+viabks2,0,neither is deemed more viable
+viabks2,1,kerry is deemed more viable
+viabed2,-1,dean is deemed more viable
+viabed2,0,neither is deemed more viable
+viabed2,1,edwards is deemed more viable
+viabec2,-1,clark is deemed more viable
+viabec2,0,neither is deemed more viable
+viabec2,1,edwards is deemed more viable
+viabes2,-1,sharpton is deemed more viable
+viabes2,0,neither is deemed more viable
+viabes2,1,edwards is deemed more viable
+viabdc2,-1,clark is deemed more viable
+viabdc2,0,neither is deemed more viable
+viabdc2,1,dean is deemed more viable
+viabds2,-1,sharpton is deemed more viable
+viabds2,0,neither is deemed more viable
+viabds2,1,dean is deemed more viable
+viabcs2,-1,sharpton is deemed more viable
+viabcs2,0,neither is deemed more viable
+viabcs2,1,clark is deemed more viable
+pvtrike1,-1,vote for edwards
+pvtrike1,0,undecided
+pvtrike1,1,vote for kerry
+pvtrike2,-1,predicted vote for edwards
+pvtrike2,0,tied/undecided
+pvtrike2,1,predicted vote for kerry
+pvtrikd2,-1,predicted vote for dean
+pvtrikd2,0,tied/undecided
+pvtrikd2,1,predicted vote for kerry
+pvtrikc2,-1,predicted vote for clark
+pvtrikc2,0,tied/undecided
+pvtrikc2,1,predicted vote for kerry
+pvtriks2,-1,predicted vote for sharpton
+pvtriks2,0,tied/undecided
+pvtriks2,1,predicted vote for kerry
+pvtried2,-1,predicted vote for dean
+pvtried2,0,tied/undecided
+pvtried2,1,predicted vote for edwards
+pvtriec2,-1,predicted vote for clark
+pvtriec2,0,tied/undecided
+pvtriec2,1,predicted vote for edwards
+pvtries2,-1,predicted vote for sharpton
+pvtries2,0,tied/undecided
+pvtries2,1,predicted vote for edwards
+pvtridc2,-1,predicted vote for clark
+pvtridc2,0,tied/undecided
+pvtridc2,1,predicted vote for dean
+pvtrids2,-1,predicted vote for sharpton
+pvtrids2,0,tied/undecided
+pvtrids2,1,predicted vote for dean
+pvtrics2,-1,predicted vote for sharpton
+pvtrics2,0,tied/undecided
+pvtrics2,1,predicted vote for clark
+kerpv41,0,not mentioned as 1 of top 3 candidate
+kerpv41,1,3rd preferred candidate (qf41c)
+kerpv41,2,2nd preferred candidate (qf41b)
+kerpv41,3,1st preferred candidate (qf41c)
+edwpv41,0,not mentioned as 1 of top 3 candidate
+edwpv41,1,3rd preferred candidate (qf41c)
+edwpv41,2,2nd preferred candidate (qf41b)
+edwpv41,3,1st preferred candidate (qf41c)
+deapv41,0,not mentioned as 1 of top 3 candidate
+deapv41,1,3rd preferred candidate (qf41c)
+deapv41,2,2nd preferred candidate (qf41b)
+deapv41,3,1st preferred candidate (qf41c)
+clapv41,0,not mentioned as 1 of top 3 candidate
+clapv41,1,3rd preferred candidate (qf41c)
+clapv41,2,2nd preferred candidate (qf41b)
+clapv41,3,1st preferred candidate (qf41c)
+shapv41,0,not mentioned as 1 of top 3 candidate
+shapv41,1,3rd preferred candidate (qf41c)
+shapv41,2,2nd preferred candidate (qf41b)
+shapv41,3,1st preferred candidate (qf41c)
+pvf41ke,-1,predicted vote for edwards
+pvf41ke,0,tied/undecided
+pvf41ke,1,predicted vote for kerry
+pvf41kd,-1,predicted vote for dean
+pvf41kd,0,tied/undecided
+pvf41kd,1,predicted vote for kerry
+pvf41kc,-1,predicted vote for clark
+pvf41kc,0,tied/undecided
+pvf41kc,1,predicted vote for kerry
+pvf41ks,-1,predicted vote for sharpton
+pvf41ks,0,tied/undecided
+pvf41ks,1,predicted vote for kerry
+pvf41ed,-1,predicted vote for dean
+pvf41ed,0,tied/undecided
+pvf41ed,1,predicted vote for edwards
+pvf41ec,-1,predicted vote for clark
+pvf41ec,0,tied/undecided
+pvf41ec,1,predicted vote for edwards
+pvf41es,-1,predicted vote for sharpton
+pvf41es,0,tied/undecided
+pvf41es,1,predicted vote for edwards
+pvf41dc,-1,predicted vote for clark
+pvf41dc,0,tied/undecided
+pvf41dc,1,predicted vote for dean
+pvf41ds,-1,predicted vote for sharpton
+pvf41ds,0,tied/undecided
+pvf41ds,1,predicted vote for dean
+pvf41cs,-1,predicted vote for sharpton
+pvf41cs,0,tied/undecided
+pvf41cs,1,predicted vote for clark
+treat,0,control
+treat,1,experimental
+trtstrct,0,control
+trtstrct,1,experimental (and attended at least one meeting)
+demothdm,0,"independent, ""refused"", or other"
+demothdm,1,democrat
+sou,0,not resident of the south
+sou,1,resident of the south
+f1q25md,1,fewer services/lower taxes1
+f1q25md,2,2
+f1q25md,3,3
+f1q25md,4,"4 or ""can't say"" or ""refused"""
+f1q25md,5,5
+f1q25md,6,6
+f1q25md,7,more services/higher taxes7
+f1q26_3m,1,fewer services/lower taxes1
+f1q26_3m,2,2
+f1q26_3m,3,3
+f1q26_3m,4,"4 or ""can't say"" or ""refused"""
+f1q26_3m,5,5
+f1q26_3m,6,6
+f1q26_3m,7,more services/higher taxes7
+f1q26_6m,1,fewer services/lower taxes1
+f1q26_6m,2,2
+f1q26_6m,3,3
+f1q26_6m,4,"4 or ""can't say"" or ""refused"""
+f1q26_6m,5,5
+f1q26_6m,6,6
+f1q26_6m,7,more services/higher taxes7
+f1q27md,1,increase defense spending/decrease domestic spending1
+f1q27md,2,2
+f1q27md,3,3
+f1q27md,4,"4 or ""can't say"" or ""refused"""
+f1q27md,5,5
+f1q27md,6,6
+f1q27md,7,decrease defense spending/increase domestic spending7
+f1q28_3m,1,increase defense spending/decrease domestic spending1
+f1q28_3m,2,2
+f1q28_3m,3,3
+f1q28_3m,4,"4 or ""can't say"" or ""refused"""
+f1q28_3m,5,5
+f1q28_3m,6,6
+f1q28_3m,7,decrease defense spending/increase domestic spending7
+f1q28_6m,1,increase defense spending/decrease domestic spending1
+f1q28_6m,2,2
+f1q28_6m,3,3
+f1q28_6m,4,"4 or ""can't say"" or ""refused"""
+f1q28_6m,5,5
+f1q28_6m,6,6
+f1q28_6m,7,decrease defense spending/increase domestic spending7
+f1q29md,1,intervene on our own1
+f1q29md,2,2
+f1q29md,3,3
+f1q29md,4,"4 or ""can't say"" or ""refused"""
+f1q29md,5,5
+f1q29md,6,6
+f1q29md,7,intervene with un approval7
+f1q30_3m,1,intervene on our own1
+f1q30_3m,2,2
+f1q30_3m,3,3
+f1q30_3m,4,"4 or ""can't say"" or ""refused"""
+f1q30_3m,5,5
+f1q30_3m,6,6
+f1q30_3m,7,intervene with un approval7
+f1q30_6m,1,intervene on our own1
+f1q30_6m,2,2
+f1q30_6m,3,3
+f1q30_6m,4,"4 or ""can't say"" or ""refused"""
+f1q30_6m,5,5
+f1q30_6m,6,6
+f1q30_6m,7,intervene with un approval7
+f1q31md,1,support free trade1
+f1q31md,2,2
+f1q31md,3,3
+f1q31md,4,"4 or ""can't say"" or ""refused"""
+f1q31md,5,5
+f1q31md,6,6
+f1q31md,7,protect us industries7
+f1q32_3m,1,support free trade1
+f1q32_3m,2,2
+f1q32_3m,3,3
+f1q32_3m,4,"4 or ""can't say"" or ""refused"""
+f1q32_3m,5,5
+f1q32_3m,6,6
+f1q32_3m,7,protect us industries7
+f1q32_6m,1,support free trade1
+f1q32_6m,2,2
+f1q32_6m,3,3
+f1q32_6m,4,"4 or ""can't say"" or ""refused"""
+f1q32_6m,5,5
+f1q32_6m,6,6
+f1q32_6m,7,protect us industries7
+f1q19_3m,1,not well at all
+f1q19_3m,2,not too well
+f1q19_3m,3,don't know/refused
+f1q19_3m,4,pretty well
+f1q19_3m,5,extremely well
+f1q19_6m,1,not well at all
+f1q19_6m,2,not too well
+f1q19_6m,3,don't know/refused
+f1q19_6m,4,pretty well
+f1q19_6m,5,extremely well
+f1q20_3m,1,not well at all
+f1q20_3m,2,not too well
+f1q20_3m,3,don't know/refused
+f1q20_3m,4,pretty well
+f1q20_3m,5,extremely well
+f1q20_6m,1,not well at all
+f1q20_6m,2,not too well
+f1q20_6m,3,don't know/refused
+f1q20_6m,4,pretty well
+f1q20_6m,5,extremely well
+f1q21_3m,1,not well at all
+f1q21_3m,2,not too well
+f1q21_3m,3,don't know/refused
+f1q21_3m,4,pretty well
+f1q21_3m,5,extremely well
+f1q21_6m,1,not well at all
+f1q21_6m,2,not too well
+f1q21_6m,3,don't know/refused
+f1q21_6m,4,pretty well
+f1q21_6m,5,extremely well
+b1q43cor,0,incorrect
+b1q43cor,1,correct
+b1q44cor,0,incorrect
+b1q44cor,1,correct
+b1q45cor,0,incorrect
+b1q45cor,1,correct
+b1q46cor,0,incorrect
+b1q46cor,1,correct
+b1q47cor,0,incorrect
+b1q47cor,1,correct
+b1q48cor,0,incorrect
+b1q48cor,1,correct
+b1q49cor,0,incorrect
+b1q49cor,1,correct
+f1q43cor,0,incorrect
+f1q43cor,1,correct
+f1q44cor,0,incorrect
+f1q44cor,1,correct
+f1q45cor,0,incorrect
+f1q45cor,1,correct
+f1q46cor,0,incorrect
+f1q46cor,1,correct
+f1q47cor,0,incorrect
+f1q47cor,1,correct
+f1q48cor,0,incorrect
+f1q48cor,1,correct
+f1q49cor,0,incorrect
+f1q49cor,1,correct
+b261cor,0,incorrect
+b261cor,1,correct
+b262cor,0,incorrect
+b262cor,1,correct
+b263cor,0,incorrect
+b263cor,1,correct
+b264cor,0,incorrect
+b264cor,1,correct
+b266cor,0,incorrect
+b266cor,1,correct
+b268cor,0,incorrect
+b268cor,1,correct
+b281cor,0,incorrect
+b281cor,1,correct
+b282cor,0,incorrect
+b282cor,1,correct
+b283cor,0,incorrect
+b283cor,1,correct
+b284cor,0,incorrect
+b284cor,1,correct
+b286cor,0,incorrect
+b286cor,1,correct
+b288cor,0,incorrect
+b288cor,1,correct
+b301cor,0,incorrect
+b301cor,1,correct
+b302cor,0,incorrect
+b302cor,1,correct
+b303cor,0,incorrect
+b303cor,1,correct
+b304cor,0,incorrect
+b304cor,1,correct
+b306cor,0,incorrect
+b306cor,1,correct
+b308cor,0,incorrect
+b308cor,1,correct
+b321cor,0,incorrect
+b321cor,1,correct
+b322cor,0,incorrect
+b322cor,1,correct
+b323cor,0,incorrect
+b323cor,1,correct
+b324cor,0,incorrect
+b324cor,1,correct
+b326cor,0,incorrect
+b326cor,1,correct
+b328cor,0,incorrect
+b328cor,1,correct
+f261cor,0,incorrect
+f261cor,1,correct
+f262cor,0,incorrect
+f262cor,1,correct
+f263cor,0,incorrect
+f263cor,1,correct
+f264cor,0,incorrect
+f264cor,1,correct
+f266cor,0,incorrect
+f266cor,1,correct
+f268cor,0,incorrect
+f268cor,1,correct
+f281cor,0,incorrect
+f281cor,1,correct
+f282cor,0,incorrect
+f282cor,1,correct
+f283cor,0,incorrect
+f283cor,1,correct
+f284cor,0,incorrect
+f284cor,1,correct
+f286cor,0,incorrect
+f286cor,1,correct
+f288cor,0,incorrect
+f288cor,1,correct
+f301cor,0,incorrect
+f301cor,1,correct
+f302cor,0,incorrect
+f302cor,1,correct
+f303cor,0,incorrect
+f303cor,1,correct
+f304cor,0,incorrect
+f304cor,1,correct
+f306cor,0,incorrect
+f306cor,1,correct
+f308cor,0,incorrect
+f308cor,1,correct
+f321cor,0,incorrect
+f321cor,1,correct
+f322cor,0,incorrect
+f322cor,1,correct
+f323cor,0,incorrect
+f323cor,1,correct
+f324cor,0,incorrect
+f324cor,1,correct
+f326cor,0,incorrect
+f326cor,1,correct
+f328cor,0,incorrect
+f328cor,1,correct
+top20kno,0,not in top 20% on knowledge
+top20kno,1,in top 20% on knowledge
+strpid1,1,independent
+strpid1,2,weak democrat/republican
+strpid1,3,strong democrat/republican
+polintr1,1,not at all interested
+polintr1,2,not very interested
+polintr1,3,somewhat interested
+polintr1,4,very interested
+vetdum,0,not veteran participant
+vetdum,1,veteran participant
+novdum,0,not novice participant
+novdum,1,novice participant
+eledmke1,-1,edwards is deemed most electable
+eledmke1,0,neither is deemed most electable
+eledmke1,1,kerry is deemed most electable
+eledmke2,-1,edwards is deemed most electable
+eledmke2,0,neither is deemed most electable
+eledmke2,1,kerry is deemed most electable

@@ -6,6 +6,45 @@ source(project_path("R", "respondent_election.R"))
 source(project_path("R", "respondent_utilities.R"))
 source(project_path("R", "respondent_crime.R"))
 source(project_path("R", "respondent_nic.R"))
+source(project_path("R", "respondent_bulgaria.R"))
+source(project_path("R", "respondent_australia.R"))
+source(project_path("R", "respondent_tomorrows_europe.R"))
+source(project_path("R", "respondent_europolis.R"))
+source(project_path("R", "respondent_btp_general.R"))
+source(project_path("R", "respondent_btp_health.R"))
+source(project_path("R", "respondent_btp_national.R"))
+source(project_path("R", "respondent_san_mateo.R"))
+source(project_path("R", "respondent_btp_primaries.R"))
+source(project_path("R", "respondent_nic2.R"))
+source(project_path("R", "respondent_new_haven.R"))
+source(project_path("R", "respondent_zeguo.R"))
+
+historical_nic2_ids <- function(survey) {
+  bridge <- readr::read_csv(project_path(
+    "data", "nic2-2003", "historical-ids.csv"
+  ), show_col_types = FALSE)
+  stopifnot(
+    !anyNA(bridge$nicid), !anyDuplicated(bridge$nicid),
+    !anyDuplicated(bridge$historical_caseid)
+  )
+  selected <- as.numeric(survey$casetype) %in% 1
+  stopifnot(setequal(as.numeric(survey$nicid[selected]), bridge$nicid))
+  as.character(bridge$historical_caseid[
+    match(as.numeric(survey$nicid), bridge$nicid)
+  ])
+}
+
+historical_new_haven_ids <- function(survey) {
+  path <- project_path("data", "new-haven-2004", "historical-ids.csv")
+  bridge <- readr::read_csv(path, show_col_types = FALSE)
+  stopifnot(
+    !anyNA(bridge$assigned), !anyDuplicated(bridge$assigned),
+    !anyDuplicated(bridge$historical_caseid),
+    setequal(survey$assigned, bridge$assigned)
+  )
+  position <- match(survey$assigned, bridge$assigned)
+  as.character(bridge$historical_caseid[position])
+}
 
 source_people <- function(survey, contract) {
   source_id <- contract$source_id[[1]]
@@ -31,9 +70,26 @@ source_people <- function(survey, contract) {
     source_id = source_id, source_row = as.integer(survey$source_row),
     source_respondent_id = raw_id,
     historical_respondent_id = switch(contract$poll_id[[1]],
-      "uk-health-1998" = raw_id, "uk-eu-1995" = raw_id,
+      "uk-health-1998" = raw_id,
+      "uk-eu-1995" = raw_id,
+      "australia-republic-1999" = raw_id,
+      "tomorrows-europe-2007" = raw_id,
+      "europolis-2009" = paste0("71", raw_id),
+      "btp-general-election-2004" = as.character(940000 + survey$source_row),
+      "btp-national-2003" = as.character(930000 + survey$source_row),
+      "btp-health-education-2005" = as.character(970000 + survey$source_row),
+      "btp-presidential-primaries-2004" = as.character(
+        950000 + survey$source_row
+      ),
+      "san-mateo-2008" = san_mateo_historical_ids(survey),
+      "nic2-2003" = historical_nic2_ids(survey),
+      "new-haven-2004" = historical_new_haven_ids(survey),
+      "zeguo-2005" = as.character(52000 + survey$p),
       "uk-general-election-1997" = raw_id,
-      "nic-1996" = raw_id, "wtu-1996" = raw_id, "swepco-1996" = raw_id,
+      "nic-1996" = raw_id,
+      "wtu-1996" = raw_id,
+      "swepco-1996" = raw_id,
+      "bulgaria-crime-2002" = paste0("53", 10000 + survey$source_row),
       "cpl-1996" = paste0("29", 10000 + survey$source_row),
       "uk-monarchy-1996" = as.character(1000 + survey$source_row),
       "uk-crime-1994" = as.character(10000 + survey$source_row),
@@ -83,11 +139,13 @@ source_response_rows <- function(survey, people, inputs, items) {
     ]
     dictionary_missing <- dictionary_missing[!is.na(dictionary_missing)]
     known_missing <- unique(unlist(strsplit(
-      as.character(dictionary_missing), "|", fixed = TRUE
+      as.character(dictionary_missing), "|",
+      fixed = TRUE
     )))
     range <- dictionary$missing_range[dictionary$source_column == field]
     range <- as.numeric(unlist(strsplit(
-      as.character(range[!is.na(range)]), "|", fixed = TRUE
+      as.character(range[!is.na(range)]), "|",
+      fixed = TRUE
     )))
     in_range <- rep(FALSE, length(value))
     if (length(range)) {
@@ -97,7 +155,8 @@ source_response_rows <- function(survey, people, inputs, items) {
     }
     known_values <- character()
     if (nrow(item)) {
-      known_missing <- union(known_missing,
+      known_missing <- union(
+        known_missing,
         unique(unlist(strsplit(item$missing_values, "|", fixed = TRUE)))
       )
       known_values <- unique(unlist(strsplit(c(
@@ -112,16 +171,27 @@ source_response_rows <- function(survey, people, inputs, items) {
     wave <- if (nrow(item)) {
       source_wave_label(people$poll_id[[1]], item$wave[[1]])
     } else if (people$poll_id[[1]] == "uk-health-1998") {
-      if (grepl("[12]$", field)) paste0("T", substr(field, nchar(field),
-        nchar(field)
-      )) else "T1"
+      if (grepl("[12]$", field)) {
+        paste0("T", substr(
+          field, nchar(field),
+          nchar(field)
+        ))
+      } else {
+        "T1"
+      }
     } else if (people$poll_id[[1]] %in%
-                 c("uk-eu-1995", "uk-general-election-1997", "cpl-1996",
-                   "wtu-1996", "swepco-1996", "uk-crime-1994"
-                 )) {
-      if (grepl("[12]$", field)) paste0("T", substr(field, nchar(field),
-        nchar(field)
-      )) else "T1"
+      c(
+        "uk-eu-1995", "uk-general-election-1997", "cpl-1996",
+        "wtu-1996", "swepco-1996", "uk-crime-1994"
+      )) {
+      if (grepl("[12]$", field)) {
+        paste0("T", substr(
+          field, nchar(field),
+          nchar(field)
+        ))
+      } else {
+        "T1"
+      }
     } else if (people$poll_id[[1]] == "uk-monarchy-1996") {
       if (startsWith(field, "R")) "T2" else "T1"
     } else {
@@ -152,7 +222,8 @@ individual_measure_rows <- function(values, people, responses,
     observed <- responses |>
       dplyr::filter(.data$source_column %in% fields) |>
       dplyr::group_by(.data$respondent_id) |>
-      dplyr::summarise(n = sum(.data$response_status == "answered"),
+      dplyr::summarise(
+        n = sum(.data$response_status == "answered"),
         .groups = "drop"
       )
     tibble::tibble(
@@ -160,9 +231,13 @@ individual_measure_rows <- function(values, people, responses,
       definition_id = definition$definition_id,
       value_numeric = as.numeric(values[[definition$measure_id]]),
       n_source_fields = as.integer(length(fields)),
-      n_observed_fields = if (length(fields)) as.integer(observed$n[
-        match(people$respondent_id, observed$respondent_id)
-      ]) else rep(0L, nrow(people))
+      n_observed_fields = if (length(fields)) {
+        as.integer(observed$n[
+          match(people$respondent_id, observed$respondent_id)
+        ])
+      } else {
+        rep(0L, nrow(people))
+      }
     )
   }) |>
     purrr::list_rbind()
@@ -171,24 +246,61 @@ individual_measure_rows <- function(values, people, responses,
 build_poll_respondents <- function(contract) {
   poll_id <- contract$poll_id[[1]]
   survey <- read_poll_survey(poll_id)
+  if (poll_id == "btp-general-election-2004") {
+    survey <- augment_btp_general_source(survey)
+  }
   people <- source_people(survey, contract)
   stopifnot(!anyNA(people$respondent_id), !anyDuplicated(people$respondent_id))
-  selected <- knowledge_participants(poll_id, survey)
+  selected <- if (poll_id %in% read_metadata("knowledge_batteries")$poll_id) {
+    knowledge_participants(poll_id, survey)
+  } else {
+    tibble::tibble(source_row = integer(), group_id = character())
+  }
   sample_rows <- function(name, included, evidence) {
-    tibble::tibble(poll_id = poll_id, respondent_id = people$respondent_id,
+    tibble::tibble(
+      poll_id = poll_id, respondent_id = people$respondent_id,
       sample_id = name, included = included, evidence = evidence
     )
   }
-  historical <- if (poll_id == "uk-health-1998") rep(TRUE, nrow(survey))
-  else if (poll_id == "uk-eu-1995") as.numeric(survey$part) == 1
-  else if (poll_id == "uk-monarchy-1996") as.numeric(survey$GROUP) != -1
-  else if (poll_id == "uk-general-election-1997") as.numeric(survey$filter) == 1
-  else if (poll_id == "uk-crime-1994")
+  historical <- if (poll_id %in% c(
+    "uk-health-1998", "bulgaria-crime-2002",
+    "new-haven-2004", "btp-national-2003"
+  )) {
+    rep(TRUE, nrow(survey))
+  } else if (poll_id == "uk-eu-1995") {
+    as.numeric(survey$part) == 1
+  } else if (poll_id == "uk-monarchy-1996") {
+    as.numeric(survey$GROUP) != -1
+  } else if (poll_id == "uk-general-election-1997") {
+    as.numeric(survey$filter) == 1
+  } else if (poll_id == "uk-crime-1994") {
     as.numeric(survey$part) == 1 & !is.na(survey$group)
-  else if (poll_id == "cpl-1996") !is.na(survey$group)
-  else if (poll_id %in% c("wtu-1996", "swepco-1996", "nic-1996"))
+  } else if (poll_id == "cpl-1996") {
+    !is.na(survey$group)
+  } else if (poll_id %in% c("wtu-1996", "swepco-1996", "nic-1996")) {
     rounded_source_code(survey$PART) == 1
-  else rep(NA, nrow(survey))
+  } else if (poll_id == "australia-republic-1999") {
+    !is.na(survey$group) & as.numeric(survey$group) != 100
+  } else if (poll_id == "tomorrows-europe-2007") {
+    !is.na(survey$group_no)
+  } else if (poll_id == "europolis-2009") {
+    as.numeric(survey[[match("group_t1bis", tolower(names(survey)))]]) == 1
+  } else if (poll_id == "btp-presidential-primaries-2004") {
+    primaries_sample(survey)
+  } else if (poll_id == "btp-health-education-2005") {
+    as.numeric(survey$filter) == 1
+  } else if (poll_id == "zeguo-2005") {
+    !is.na(survey$groupnum) & !is.na(survey$preandpost)
+  } else if (poll_id == "nic2-2003") {
+    as.numeric(survey$casetype) == 1
+  } else if (poll_id == "san-mateo-2008") {
+    as.numeric(survey$participant) == 1
+  } else if (poll_id == "btp-general-election-2004") {
+    value <- build_btp_general_individual(survey)
+    value$knowledge_t2 > 0 & !is.na(value$attitude_extremity)
+  } else {
+    rep(NA, nrow(survey))
+  }
   historical_evidence <- if (poll_id == "uk-health-1998") {
     "uk_health.R: all 230 source rows"
   } else if (poll_id == "uk-eu-1995") {
@@ -196,32 +308,69 @@ build_poll_respondents <- function(contract) {
   } else {
     switch(poll_id,
       "uk-monarchy-1996" = "uk_monarchy.R: GROUP != -1; 258 attendees",
+      "new-haven-2004" = "All 132 participants; unique raw-ID wave joins",
+      "zeguo-2005" = "groupnum and preandpost nonmissing; 233 attendees",
+      "btp-presidential-primaries-2004" =
+        "Treatment, assigned group, >=3 meetings and post survey; 217 people",
       "uk-general-election-1997" = "uk_bge.R: filter == 1; 275 attendees",
       "uk-crime-1994" = paste(
         "uk_crime.R: part == 1 and nonmissing group; 299 attendees"
       ),
       "cpl-1996" = "tx_cpl.R: nonmissing group; 216 attendees",
+      "bulgaria-crime-2002" = "bulgaria.r: all 278 source rows",
       "nic-1996" = "nic1.R: PART == 1; 466 attendees",
       "wtu-1996" = "tx_wtu.R: PART == 1; 230 attendees",
       "swepco-1996" = "tx_swp.R: PART == 1; 232 attendees",
+      "australia-republic-1999" = "aus_republic.R: nonmissing group except100",
+      "tomorrows-europe-2007" = "eu_2007.R: nonmissing group_no",
+      "europolis-2009" = "eu_2009.R: Group_T1bis == 1",
+      "btp-general-election-2004" =
+        "merge03: t2know > 0 and observed extremity",
+      "btp-health-education-2005" = "filter == 1; 454 records",
+      "nic2-2003" = "casetype == 1; 340 records",
+      "btp-national-2003" = "All 245 selected HLM source records",
+      "san-mateo-2008" = "participant == 1; 239 records",
+      "btp-presidential-primaries-2004" = "primaries_sample: 217 unique people",
       "Historical identity and selection remain unresolved"
     )
   }
   samples <- dplyr::bind_rows(
     sample_rows("reviewed-source", TRUE, contract$source_id),
-    sample_rows("knowledge-battery", people$source_row %in% selected$source_row,
+    sample_rows(
+      "knowledge-battery", people$source_row %in% selected$source_row,
       "metadata/knowledge_join_contracts.csv"
     ),
-    sample_rows("historical-polardata",
+    sample_rows(
+      "historical-polardata",
       historical, historical_evidence
     )
   )
   if (poll_id == "uk-eu-1995") {
     selected <- survey[as.numeric(survey$part) == 1 &
                          as.numeric(survey$group) %in% 1:15, ] |>
-      dplyr::transmute(source_row = .data$source_row,
+      dplyr::transmute(
+        source_row = .data$source_row,
         group_id = as.character(as.numeric(.data$group))
       )
+  }
+  if (poll_id == "btp-presidential-primaries-2004") {
+    selected <- tibble::tibble(
+      source_row = survey$source_row[historical],
+      group_id = as.character(survey$groupnumc[historical])
+    )
+  }
+  if (poll_id %in% c("new-haven-2004", "zeguo-2005", "nic2-2003")) {
+    group <- if (poll_id == "zeguo-2005") survey$groupnum else survey$group
+    selected <- tibble::tibble(
+      source_row = survey$source_row[historical],
+      group_id = as.character(group[historical])
+    )
+  }
+  if (poll_id == "btp-national-2003") {
+    selected <- tibble::tibble(
+      source_row = survey$source_row,
+      group_id = as.character(9300 + as.numeric(survey$group))
+    )
   }
   selected <- selected[!is.na(selected$group_id), ]
   memberships <- tibble::tibble(
@@ -245,7 +394,19 @@ build_poll_respondents <- function(contract) {
     "uk-monarchy-1996" = build_monarchy_individual,
     "uk-general-election-1997" = build_election_individual,
     "uk-crime-1994" = build_crime_individual,
-    "nic-1996" = build_nic_individual
+    "nic-1996" = build_nic_individual,
+    "bulgaria-crime-2002" = build_bulgaria_individual,
+    "australia-republic-1999" = build_australia_individual,
+    "tomorrows-europe-2007" = build_tomorrow_individual,
+    "europolis-2009" = build_europolis_individual,
+    "btp-general-election-2004" = build_btp_general_individual,
+    "btp-health-education-2005" = build_btp_health_individual,
+    "btp-national-2003" = build_btp_national_individual,
+    "san-mateo-2008" = build_san_mateo_individual,
+    "nic2-2003" = build_nic2_individual,
+    "new-haven-2004" = build_new_haven_individual,
+    "zeguo-2005" = build_zeguo_individual,
+    "btp-presidential-primaries-2004" = build_btp_primaries_individual
   )
   if (poll_id %in% c("cpl-1996", "wtu-1996", "swepco-1996")) {
     builder <- function(survey) build_utility_individual(survey, poll_id)
@@ -260,7 +421,8 @@ build_poll_respondents <- function(contract) {
       n_source_fields = integer(), n_observed_fields = integer()
     )
   }
-  list(people = people, sample_memberships = samples,
+  list(
+    people = people, sample_memberships = samples,
     source_responses = responses, respondent_measures = measures,
     respondent_memberships = memberships
   )
@@ -271,13 +433,15 @@ validate_respondent_tables <- function(tables) {
   for (name in names(tables)) {
     schema <- columns[columns$table == name, ]
     data <- tables[[name]]
-    stopifnot(setequal(names(data), schema$column),
+    stopifnot(
+      setequal(names(data), schema$column),
       !anyNA(data[schema$column[!schema$nullable]]),
       !anyDuplicated(data[schema$column[schema$key]])
     )
   }
   people <- tables$people
-  stopifnot(!anyDuplicated(people[c("source_id", "source_row")]),
+  stopifnot(
+    !anyDuplicated(people[c("source_id", "source_row")]),
     all(people$source_row > 0L)
   )
   key <- paste(people$poll_id, people$respondent_id)
@@ -315,9 +479,10 @@ validate_respondent_tables <- function(tables) {
   responses <- tables$source_responses
   stopifnot(
     !any(!is.na(responses$raw_numeric) & !is.na(responses$raw_text)),
-    all(responses$response_status %in% c("system-missing", "non-substantive",
-          "answered", "unreviewed-code"
-        ))
+    all(responses$response_status %in% c(
+      "system-missing", "non-substantive",
+      "answered", "unreviewed-code"
+    ))
   )
   invisible(TRUE)
 }
