@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.2
+
+- Publish Northern Ireland argument coder labels without verbatim responses,
+  completing the public inputs needed by dp-nireland. Preserve original labels
+  and leave paper-specific adjudication and scoring downstream.
+- Retain the existing numeric survey and group roster unchanged.
+
 ## 0.2.1
 
 - Make the provenance test create its own Git fixture so `make check` also runs

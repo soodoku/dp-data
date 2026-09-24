@@ -1190,6 +1190,14 @@ knowledge score. The questionnaire and coding scheme must be consulted for those
 constructs. A redacted numeric survey can match analytical fields while omitting
 80 verbatim fields; field coverage is a separate contract. Census workbooks and
 coding materials moved to the external vault retain their original bytes.
+The maintained paper now reads the public numeric survey, source roster and
+`data/northern-ireland-2007/argument-codes.parquet`. The latter retains all
+65,760 coder-slot records for 274 respondents, including missing labels;
+`R/argument_codes.R` selects the 240 coder fields from the original `fin.csv`
+and excludes verbatim responses. No codes are normalized or adjudicated upstream.
+All 19 pinned downstream numerical outputs match after changing these readers.
+The paper still preserves the first-roster-row issue in NI-01. The old vault
+inventory remains historical provenance, not a required runtime input list.
 See [dp-nireland data documentation](../../dp-nireland/docs/data.md).
 
 ## Polls outside the 23-battery canonical build

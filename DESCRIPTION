@@ -1,7 +1,7 @@
 Package: dpdata
 Type: Project
 Title: Source Data for Deliberative Poll Research
-Version: 0.2.1
+Version: 0.2.2
 Authors@R: person("Gaurav", "Sood", role = c("aut", "cre"), email = "gsood07@gmail.com")
 Description: Audits, catalogs, standardizes, and exports source data used by
     deliberative-poll research repositories.
