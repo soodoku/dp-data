@@ -41,8 +41,7 @@ monarchy_attitudes <- function(survey, wave) {
 monarchy_knowledge_items <- function(survey, wave) {
   key <- c(A = 2, B = 2, C = 1, D = 2, E = 1, F = 1, G = 2, H = 1)
   items <- purrr::imap(key, function(correct, item) {
-    # UKM-01: the historical post score reuses the baseline Commonwealth item.
-    prefix <- if (wave == 1L || item == "C") "Q" else "R"
+    prefix <- if (wave == 1L) "Q" else "R"
     value <- read_source_codes(survey, paste0(prefix, "5", item), c(-1, 1:4))
     as.numeric(value %in% correct)
   })

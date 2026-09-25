@@ -8,8 +8,8 @@ coverage of the 23 existing knowledge builds and the respondent reconstructions.
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
 UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24;
-SWE-02, AUS-04 and WTU-03 were approved in subsequent poll reviews. Other
-proposals remain unapproved.
+SWE-02, AUS-04, WTU-03 and UKM-01 were approved in subsequent poll reviews.
+Other proposals remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
 UK Health attitude implementation that would change definitions was set aside.
@@ -858,15 +858,37 @@ establish reproduction, not questionnaire validity or downstream robustness.
 
 ## UK Monarchy 1996 — uk-monarchy-1996
 
-**UKM-01 — existing upstream divergence; re-verify the post-wave field.** The
-current build reads post `R5C`; the archived recode and deposited post item
-reproduce baseline `Q5C`. The [codebook](../data/uk-monarchy-1996/codebook.doc),
-re-opened here, distinguishes `HEADCOM1`/Q5c from `HEADCOM2`/W5c for the
-Commonwealth item. Connect those codebook aliases to the concrete source fields
-using [variables](../data/uk-monarchy-1996/variables.csv) before adopting a change.
-The existing comparison reports 58 differing cells and 55 changed T2 scores;
-mean T2 knowledge moves from 79.893% to 79.651% (about -0.242 percentage points).
-T1 is unchanged. These are input-score effects, not revised paper estimates.
+**UKM-01 — correct the post-wave Commonwealth field.** **Status: approved
+by the user on 2026-09-25 and adopted for the historical nine-item aggregate.**
+The archived `uk_monarchy.R` and deposited aggregate reuse baseline `Q5C` in
+the T2 score. The existing eight-item knowledge build already uses `R5C`. The
+[codebook](../data/uk-monarchy-1996/codebook.pdf) distinguishes
+`HEADCOM1`/Q5c from `HEADCOM2`/W5c, and the retained
+[variable dictionary](../data/uk-monarchy-1996/variables.csv) identifies
+`R5C` as the departure question. Its [value labels](../data/uk-monarchy-1996/value-labels.csv)
+retain the same true/false answer scale. The correction substitutes `R5C` for
+`Q5C` only in the post battery; it preserves the nine-item denominator, answer
+key, 258-person sample and baseline `t1know`.
+
+Among attendees, 58 raw post-item scores differ and 55 `t2know` values change;
+mean nine-item T2 knowledge moves from 0.795866 to 0.793712. Joint knowledge
+changes for 30 people because the post item also enters the T1-by-T2
+correctness product. Ten respondent fields and ten derived fields consequently
+change, including 62 `grpgain` differences above the 1e-10 parity tolerance
+(one additional row differs only in serialized rounding). All 20 fields and
+all 258 before/after respondent values per field are frozen in
+[`approved_values.csv`](../audit/corrections/uk-monarchy-1996/approved_values.csv).
+The eight-item knowledge output remains on its existing `R5C` definition.
+
+On the current WTU-corrected baseline, `dp-distortions` changes none of its 19
+output CSVs or 28 paired CR2 inference rows. The `dp-learning` frame retains
+6,013 rows and 21 columns; only 55 UK Monarchy `k2` cells change. Its model
+output changes 35 of 69 rows, including the main `k1` estimate from 0.472770
+to 0.469307, with no absolute z-statistic crossing 1.96. In the UK Monarchy
+slice of `dp-deliberately`, 130 of 816 metrics change, all on the knowledge
+aggregate; the event-level fraction-learning estimate moves from 0.763566
+to 0.736434. These are sensitivity results from the current downstream
+readers, not claims about the original papers' estimates.
 
 **UKM-02 — source-scoped identifiers.** The 258 attendees in groups 2–16 have
 `source-row-...` identifiers because no source column uniquely identifies the

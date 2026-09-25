@@ -196,6 +196,41 @@ test_that("SWE-02 protects every approved conservation value", {
   expect_equal(sum(parity$unexplained_differences), 1L)
 })
 
+test_that("UKM-01 protects every approved post-knowledge value", {
+  approved <- readr::read_csv(project_path(
+    "audit", "corrections", "uk-monarchy-1996", "approved_values.csv"
+  ), show_col_types = FALSE)
+  expect_equal(nrow(approved), 20L * 258L)
+  data <- full_polardata()
+  selected <- data$dpnum == 3L
+  expect_equal(sum(selected), 258L)
+  for (field in unique(approved$legacy_field)) {
+    frozen <- approved[approved$legacy_field == field, ]
+    expect_equal(nrow(frozen), 258L)
+    expect_setequal(data$caseid[selected], frozen$caseid)
+    positions <- match(data$caseid[selected], frozen$caseid)
+    expect_equal(data[[field]][selected], frozen$approved_value[positions],
+                 tolerance = 1e-10)
+  }
+  t2 <- approved[approved$legacy_field == "t2know", ]
+  expect_equal(sum(abs(t2$historical_value - t2$approved_value) > 1e-10),
+               55L)
+  joint <- approved[approved$legacy_field == "t1knowcor", ]
+  expect_equal(sum(abs(joint$historical_value - joint$approved_value) > 1e-10),
+               30L)
+  reference <- readr::read_tsv(project_path(
+    "evidence", "benchmarks", "polardata.tab"
+  ), show_col_types = FALSE)
+  audit <- readr::read_csv(project_path(
+    "audit", "polardata_covariances.csv"
+  ), show_col_types = FALSE)
+  changed <- which(abs(t2$historical_value - t2$approved_value) > 1e-10)[1]
+  row <- which(selected & data$caseid == t2$caseid[changed])
+  data$t2know[row] <- t2$historical_value[changed]
+  parity <- compare_historical_polardata(data, reference, audit)
+  expect_equal(sum(parity$unexplained_differences), 1L)
+})
+
 test_that("WTU-03 protects every approved conservation value", {
   approved <- readr::read_csv(project_path(
     "audit", "corrections", "wtu-1996", "approved_values.csv"
