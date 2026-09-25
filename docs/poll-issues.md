@@ -1303,17 +1303,34 @@ The post popular-versus-parliament index's midpoint condition reads
 `FIRSTOP3`/`SECOP3`, creating a cross-wave dependency. Verify question ordering
 and the meaning of the first/second choices before substituting another wave.
 
-### AUS-04: Peer gain recycles a participant vector across the full source
+### AUS-04: Participant gains now join by source row
 
-Historical `ifelse` recycles 347 participant gains across 4,659 source rows.
-For source row `r`, the gain numerator comes from participant position
-`((r - 1) %% 347) + 1`, then uses the actual person's joint-knowledge denominator.
-Aligning the numerator by participant changes 342 observed values and one
-missingness status. The historical `grpgain` and `loggain` each include one
-positive infinity; these are preserved as infinity rather than silently made
-missing. Before correction, inspect the executed group-gain syntax and intended
-leave-one-out denominator, then quantify consequences for models that filter
-nonfinite values. The reconstruction explicitly preserves source order here.
+**Status: approved and adopted row-alignment correction.** The archived
+`aus_republic.R` computes 347 participant gain numerators, but assigns them
+through `ifelse` over all 4,659 source rows. R recycles the 347 values before
+selecting participants. The deposited gain therefore uses numerator position
+`((source_row - 1) %% 347) + 1` and the actual person's joint-knowledge
+denominator. The maintained build now joins the already computed numerator to
+the participant's `source_row`. It leaves the 12 item answers, group roster,
+archived gain formula, `numitems = 11` denominator and all other descriptors
+unchanged. The [codebook](../data/australia-republic-1999/codebook.pdf) and
+[poll report](../data/australia-republic-1999/papers/adp5.pdf) establish the
+sample and small-group context; the archived `groupgain` helper is the direct
+formula evidence. The 11-versus-12 denominator still requires separate review.
+
+[Exact values](../audit/corrections/australia-republic-1999/approved_values.csv)
+show 342 finite paired changes above 1e-10 and one missingness change in each
+of `grpgain` and `loggain`. A misassigned positive infinity disappears in the
+corrected values. Finite `grpgain` mean changes from 0.614531 to 0.441952;
+the maximum finite paired difference is 5.181818. The diagnostic independently
+replays the recycled historical assignment and verifies the deposited values.
+`make polardata compare-polardata` reports zero unexplained differences; only
+these two aggregate fields change. The recorded dp-distortions output files
+(19 of 19) and dp-deliberately's paired outcomes are byte-identical, and
+dp-learning's 6,013-by-20 analysis frame is identical. These checks do not
+establish effects in downstream analyses that consume `grpgain` directly.
+Reproduce the respondent comparison with
+`Rscript scripts/review_australia_gain.R`.
 
 ## BTP 2007 — btp-2007
 

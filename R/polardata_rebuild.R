@@ -110,6 +110,8 @@ historical_derived_measures <- function(polls) {
               "nic-03-v2",
             .env$poll_id == "cpl-1996" & .data$legacy_field %in%
               c("grpgain", "grpgainr", "loggain") ~ "cpl-05-v2",
+            .env$poll_id == "australia-republic-1999" &
+              .data$legacy_field %in% c("grpgain", "loggain") ~ "aus-04-v2",
             .default = "historical-v1"
           )
         ),

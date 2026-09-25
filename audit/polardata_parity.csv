@@ -1471,7 +1471,7 @@ australia-republic-1999,readbrief,347,0,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,t1know,347,347,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 australia-republic-1999,t1knowr,347,0,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,t1knowcor,347,347,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
-australia-republic-1999,grpgain,347,347,0,0,0,0,FALSE,0,4.440892098500626e-15,1e-10
+australia-republic-1999,grpgain,347,346,1,342,0,343,FALSE,0,5.181818181818183,1e-10
 australia-republic-1999,t2know,347,347,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 australia-republic-1999,ppage,347,347,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,educ4,347,347,0,0,0,0,FALSE,0,0,1e-10
@@ -1516,7 +1516,7 @@ australia-republic-1999,knowgain,347,347,0,0,0,0,FALSE,0,3.885780586188048e-16,1
 australia-republic-1999,knowgain2,347,347,0,0,0,0,FALSE,0,3.885780586188048e-16,1e-10
 australia-republic-1999,t2knowlevel,347,347,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 australia-republic-1999,logpk,347,347,0,0,0,0,FALSE,0,4.884981308350689e-15,1e-10
-australia-republic-1999,loggain,347,347,0,0,0,0,FALSE,0,5.773159728050814e-15,1e-10
+australia-republic-1999,loggain,347,346,1,342,0,343,FALSE,0,8.220479446934107,1e-10
 australia-republic-1999,tobitpk,347,347,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,meant1knowr,347,0,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,meant1knowrcor,347,0,0,0,0,0,FALSE,0,0,1e-10
