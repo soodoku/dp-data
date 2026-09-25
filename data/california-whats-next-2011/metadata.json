@@ -1,0 +1,495 @@
+{
+  "catalog": {
+    "poll_id": "california-whats-next-2011",
+    "title": "California What's Next",
+    "year": 2011,
+    "place": "California",
+    "topic": "Government reform",
+    "mode": "face-to-face",
+    "collection": "cdd"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "california-whats-next-2011",
+      "field": "location",
+      "value": "Torrance, California",
+      "reference_id": "us-california-whats-next-2011-deliberative-agenda-setting",
+      "source_locator": "Piloting a Design for Deliberative Agenda Setting in California",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "california-whats-next-2011",
+      "field": "population",
+      "value": "California registered voters",
+      "reference_id": "us-california-whats-next-2011-deliberative-agenda-setting",
+      "source_locator": "Piloting a Design for Deliberative Agenda Setting in California",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "california-whats-next-2011",
+      "field": "recruitment",
+      "value": "Telephone recruitment; up to 10 callbacks; attendance honorarium plus travel/hotel costs; separate weighted comparison sample",
+      "reference_id": "us-california-whats-next-2011-deliberative-agenda-setting",
+      "source_locator": "Piloting a Design for Deliberative Agenda Setting in California",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "california-whats-next-2011",
+      "field": "participants",
+      "value": "439 accepted invitations; 412 attended; 300 separate registered-voter comparison respondents",
+      "reference_id": "us-california-whats-next-2011-deliberative-agenda-setting",
+      "source_locator": "Piloting a Design for Deliberative Agenda Setting in California",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "california-whats-next-2011",
+      "field": "mode",
+      "value": "Face-to-face weekend deliberation",
+      "reference_id": "us-california-whats-next-2011-deliberative-agenda-setting",
+      "source_locator": "Piloting a Design for Deliberative Agenda Setting in California",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "california-whats-next-2011",
+      "field": "topics",
+      "value": "30 proposals in four domains: initiative process, legislative representation, local government, tax/fiscal policy",
+      "reference_id": "us-california-whats-next-2011-deliberative-agenda-setting",
+      "source_locator": "Piloting a Design for Deliberative Agenda Setting in California",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "california-whats-next-2011",
+      "field": "event_dates",
+      "value": "2011-06-24 through 2011-06-26",
+      "reference_id": "us-california-whats-next-2011-california-participant-guide",
+      "source_locator": "Participant guide cover",
+      "status": "reported",
+      "notes": "Official event page starts June 24; guide specifies complete June 24–26 weekend."
+    },
+    {
+      "poll_id": "california-whats-next-2011",
+      "field": "organizers",
+      "value": "By the People/MacNeil-Lehrer Productions and Stanford CDD; coalition of California reform organizations",
+      "reference_id": "us-california-whats-next-2011-stanford-event",
+      "source_locator": "Event description and Research/Procedures sections",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "california-whats-next-2011",
+      "field": "participants",
+      "value": "435 committed invitees; 412 attendees; 300 separate comparison respondents",
+      "reference_id": "us-california-whats-next-2011-material-0b2e0edeea3aca9c-california-whats-next-2011",
+      "source_locator": "The Sample Gathered in Torrance, CA",
+      "status": "conflicting",
+      "notes": "Published research paper instead reports 439 acceptances; same 412 attendees. Recruitment-stage/version discrepancy needs source reconciliation."
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "us-california-whats-next-2011-cdd-california-whats-next-2011-survey-variables",
+      "poll_id": "california-whats-next-2011",
+      "kind": "codebook",
+      "title": "Source variables",
+      "url": null,
+      "local_artifact_id": "cdd-california-whats-next-2011-survey-variables",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/california-whats-next-2011/variables.csv; Machine-extracted source variable/value labels, not a complete authored codebook."
+    },
+    {
+      "reference_id": "us-california-whats-next-2011-cdd-california-whats-next-2011-survey-value-labels",
+      "poll_id": "california-whats-next-2011",
+      "kind": "codebook",
+      "title": "Source value-labels",
+      "url": null,
+      "local_artifact_id": "cdd-california-whats-next-2011-survey-value-labels",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/california-whats-next-2011/value-labels.csv; Machine-extracted source variable/value labels, not a complete authored codebook."
+    },
+    {
+      "reference_id": "us-california-whats-next-2011-cdd-california-whats-next-2011-questionnaire-pre",
+      "poll_id": "california-whats-next-2011",
+      "kind": "questionnaire",
+      "title": "Original questionnaire-pre.doc",
+      "url": null,
+      "local_artifact_id": "cdd-california-whats-next-2011-questionnaire-pre",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/california-whats-next-2011/questionnaire-pre.doc"
+    },
+    {
+      "reference_id": "us-california-whats-next-2011-cdd-california-whats-next-2011-questionnaire-post",
+      "poll_id": "california-whats-next-2011",
+      "kind": "questionnaire",
+      "title": "Original questionnaire-post.doc",
+      "url": null,
+      "local_artifact_id": "cdd-california-whats-next-2011-questionnaire-post",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/california-whats-next-2011/questionnaire-post.doc"
+    },
+    {
+      "reference_id": "us-california-whats-next-2011-cdd-california-whats-next-2011-codebook",
+      "poll_id": "california-whats-next-2011",
+      "kind": "codebook",
+      "title": "Original codebook.pdf",
+      "url": null,
+      "local_artifact_id": "cdd-california-whats-next-2011-codebook",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/california-whats-next-2011/codebook.pdf"
+    },
+    {
+      "reference_id": "us-california-whats-next-2011-material-0b2e0edeea3aca9c-california-whats-next-2011",
+      "poll_id": "california-whats-next-2011",
+      "kind": "event-report",
+      "title": "What is Next California: final report",
+      "url": null,
+      "local_artifact_id": "material-0b2e0edeea3aca9c-california-whats-next-2011",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/california-whats-next-2011/reports/california-report.pdf"
+    },
+    {
+      "reference_id": "us-california-whats-next-2011-material-e989fb089d4108a1-california-whats-next-2011",
+      "poll_id": "california-whats-next-2011",
+      "kind": "briefing-material",
+      "title": "What’s Next California participant guide",
+      "url": null,
+      "local_artifact_id": "material-e989fb089d4108a1-california-whats-next-2011",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/california-whats-next-2011/briefing-materials/california-participant-guide.pdf"
+    },
+    {
+      "reference_id": "us-california-whats-next-2011-material-5cb1d017f73d4742-california-whats-next-2011",
+      "poll_id": "california-whats-next-2011",
+      "kind": "paper",
+      "title": "Deliberative Agenda Setting: Piloting Reform of Direct Democracy in California",
+      "url": null,
+      "local_artifact_id": "material-5cb1d017f73d4742-california-whats-next-2011",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/california-whats-next-2011/papers/deliberative-agenda-setting.pdf"
+    },
+    {
+      "reference_id": "us-california-whats-next-2011-california-participant-guide",
+      "poll_id": "california-whats-next-2011",
+      "kind": "briefing-material",
+      "title": "What’s Next California participant guide",
+      "url": "https://drive.google.com/file/d/11IXDrnAl67-zzf8Ca0HBrbYx6yjUNckH/view",
+      "local_artifact_id": "material-e989fb089d4108a1-california-whats-next-2011",
+      "accessed": "2026-09-24",
+      "notes": "Downloaded public source linked by Stanford event page."
+    },
+    {
+      "reference_id": "us-california-whats-next-2011-deliberative-agenda-setting",
+      "poll_id": "california-whats-next-2011",
+      "kind": "paper",
+      "title": "Deliberative Agenda Setting: Piloting Reform of Direct Democracy in California",
+      "url": "https://drive.google.com/file/d/181NRBiYHZfURqG6KX6w8R2q3QjWOghPk/view",
+      "local_artifact_id": "material-5cb1d017f73d4742-california-whats-next-2011",
+      "accessed": "2026-09-24",
+      "notes": "Downloaded public source linked by Stanford event page."
+    },
+    {
+      "reference_id": "us-california-whats-next-2011-deliberative-agenda-setting-appendix",
+      "poll_id": "california-whats-next-2011",
+      "kind": "research-design",
+      "title": "Deliberative Agenda Setting: Online Appendix",
+      "url": "https://drive.google.com/uc?export=download&id=11rG4YlB8z_lLTOTZ8G-fLOz92V7bwuhJ",
+      "local_artifact_id": "material-b2154c788abf1656-california-whats-next-2011",
+      "accessed": "2026-09-24",
+      "notes": "Public research source; content and title checked before registration."
+    },
+    {
+      "reference_id": "us-california-whats-next-2011-stanford-event",
+      "poll_id": "california-whats-next-2011",
+      "kind": "event-report",
+      "title": "By the People: What’s Next California?",
+      "url": "https://deliberation.stanford.edu/news/people-whats-next-california",
+      "local_artifact_id": null,
+      "accessed": "2026-09-24",
+      "notes": "Official event overview; page publication timestamp is not assumed to equal event date."
+    },
+    {
+      "reference_id": "us-california-whats-next-2011-published-agenda-setting",
+      "poll_id": "california-whats-next-2011",
+      "kind": "paper",
+      "title": "Fishkin, Kousser, Luskin, Siu (2015), Deliberative Agenda Setting: Piloting Reform of Direct Democracy in California",
+      "url": "https://doi.org/10.1017/S1537592715002297",
+      "local_artifact_id": "material-5cb1d017f73d4742-california-whats-next-2011",
+      "accessed": "2026-09-24",
+      "notes": "Published research article; institutional repository https://escholarship.org/uc/item/7bx779kd also identifies this publication."
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "california-whats-next-2011",
+      "material_type": "questionnaires",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-california-whats-next-2011-cdd-california-whats-next-2011-questionnaire-pre;us-california-whats-next-2011-cdd-california-whats-next-2011-questionnaire-post"
+    },
+    {
+      "poll_id": "california-whats-next-2011",
+      "material_type": "briefing-materials",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-california-whats-next-2011-material-e989fb089d4108a1-california-whats-next-2011;us-california-whats-next-2011-california-participant-guide"
+    },
+    {
+      "poll_id": "california-whats-next-2011",
+      "material_type": "event-reports",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-california-whats-next-2011-material-0b2e0edeea3aca9c-california-whats-next-2011;us-california-whats-next-2011-stanford-event"
+    },
+    {
+      "poll_id": "california-whats-next-2011",
+      "material_type": "papers",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-california-whats-next-2011-material-5cb1d017f73d4742-california-whats-next-2011;us-california-whats-next-2011-deliberative-agenda-setting;us-california-whats-next-2011-published-agenda-setting"
+    },
+    {
+      "poll_id": "california-whats-next-2011",
+      "material_type": "codebooks",
+      "status": "partial",
+      "notes": "Variable/value-label dictionaries and/or shared recode documentation are available; completeness as an authored poll-specific codebook is not established.",
+      "checked_references": "us-california-whats-next-2011-cdd-california-whats-next-2011-survey-variables;us-california-whats-next-2011-cdd-california-whats-next-2011-survey-value-labels;us-california-whats-next-2011-cdd-california-whats-next-2011-codebook"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "cor-sood-california-whats-next-2011",
+      "poll_id": "california-whats-next-2011",
+      "artifact_type": "data",
+      "title": "Cor-Sood scored knowledge battery",
+      "location": "data/california-whats-next-2011/knowledge-battery.csv",
+      "source_id": "cor-sood-california-whats-next-2011",
+      "original_archive_path": "replication/data.zip:data/ca.csv",
+      "sha256": "bbc6a39043ff5be47e03abe4b29550ca29be08195cb6d51cb40f8d9971199063",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Scored binary items; row number is not a respondent identifier",
+      "relative_path": "knowledge-battery.csv"
+    },
+    {
+      "artifact_id": "cdd-california-whats-next-2011-survey",
+      "poll_id": "california-whats-next-2011",
+      "artifact_type": "data",
+      "title": "Reviewed poll-level survey",
+      "location": "data/california-whats-next-2011/survey.parquet",
+      "source_id": "cdd-california-whats-next-2011-survey",
+      "original_archive_path": "data/California/data/California_Merged_t1-t2-t3_6-28-11.dta",
+      "sha256": "2dc4c32d089805365e25b264264c0ae56608be391af7f23d0445d3c8a2d693c7",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-redacted",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "survey.parquet"
+    },
+    {
+      "artifact_id": "cdd-california-whats-next-2011-survey-variables",
+      "poll_id": "california-whats-next-2011",
+      "artifact_type": "codebook",
+      "title": "Source variables",
+      "location": "data/california-whats-next-2011/variables.csv",
+      "source_id": "cdd-california-whats-next-2011-survey-variables",
+      "original_archive_path": "data/California/data/California_Merged_t1-t2-t3_6-28-11.dta",
+      "sha256": "be11ff63f3b08e89eb82097da51ec3430110231d8f2b03d68d74961399cf8f61",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "variables.csv"
+    },
+    {
+      "artifact_id": "cdd-california-whats-next-2011-survey-value-labels",
+      "poll_id": "california-whats-next-2011",
+      "artifact_type": "codebook",
+      "title": "Source value-labels",
+      "location": "data/california-whats-next-2011/value-labels.csv",
+      "source_id": "cdd-california-whats-next-2011-survey-value-labels",
+      "original_archive_path": "data/California/data/California_Merged_t1-t2-t3_6-28-11.dta",
+      "sha256": "890196189d84e5eb147e90ab550a16ce3e061491174f61b112c81de02dafbfe1",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "value-labels.csv"
+    },
+    {
+      "artifact_id": "cdd-california-whats-next-2011-questionnaire-pre",
+      "poll_id": "california-whats-next-2011",
+      "artifact_type": "questionnaire",
+      "title": "Original questionnaire-pre.doc",
+      "location": "data/california-whats-next-2011/questionnaire-pre.doc",
+      "source_id": "cdd-california-whats-next-2011-questionnaire-pre",
+      "original_archive_path": "data/California/questionnaire/Ca Draft T1 Questionnaire_6-1-11 (1).doc",
+      "sha256": "5cb8718dc08fab6de8708ebc7d97a356ae314b3ea7f9364ea5fa229ac5632515",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "questionnaire-pre.doc"
+    },
+    {
+      "artifact_id": "cdd-california-whats-next-2011-questionnaire-post",
+      "poll_id": "california-whats-next-2011",
+      "artifact_type": "questionnaire",
+      "title": "Original questionnaire-post.doc",
+      "location": "data/california-whats-next-2011/questionnaire-post.doc",
+      "source_id": "cdd-california-whats-next-2011-questionnaire-post",
+      "original_archive_path": "data/California/questionnaire/Ca Draft T3 Questionnaire_departure_v1_POP.doc",
+      "sha256": "bb884ed587bc5550b1345379f117b0a3f2a75d99672966279be867d031c1afef",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "questionnaire-post.doc"
+    },
+    {
+      "artifact_id": "cdd-california-whats-next-2011-codebook",
+      "poll_id": "california-whats-next-2011",
+      "artifact_type": "codebook",
+      "title": "Original codebook.pdf",
+      "location": "data/california-whats-next-2011/codebook.pdf",
+      "source_id": "cdd-california-whats-next-2011-codebook",
+      "original_archive_path": "data/California/data/STAN0051_CODEBOOK.pdf",
+      "sha256": "15653df2886b48a7bf92ee43517b1024178f34fa1714ba87d1f47ebd0c629db2",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "codebook.pdf"
+    },
+    {
+      "artifact_id": "material-0b2e0edeea3aca9c-california-whats-next-2011",
+      "poll_id": "california-whats-next-2011",
+      "artifact_type": "event-report",
+      "title": "What is Next California: final report",
+      "location": "data/california-whats-next-2011/reports/california-report.pdf",
+      "source_id": "material-0b2e0edeea3aca9c",
+      "original_archive_path": null,
+      "sha256": "0b2e0edeea3aca9c6d7f5c6b31822da2ab4852fd672ac4cea8783ff9ffeba979",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "2011 government-reform event report; use for recruitment, attendance and published item results. Source URL: https://drive.google.com/uc?export=download&id=1CwVaL7QNPzimECeb1sEv2mnv2ZPnfO-i. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "reports/california-report.pdf"
+    },
+    {
+      "artifact_id": "material-e989fb089d4108a1-california-whats-next-2011",
+      "poll_id": "california-whats-next-2011",
+      "artifact_type": "briefing-material",
+      "title": "What’s Next California participant guide",
+      "location": "data/california-whats-next-2011/briefing-materials/california-participant-guide.pdf",
+      "source_id": "material-e989fb089d4108a1",
+      "original_archive_path": "https://drive.google.com/file/d/11IXDrnAl67-zzf8Ca0HBrbYx6yjUNckH/view",
+      "sha256": "e989fb089d4108a135dc459fea11dacc6b255be3f4d53991c1cd90d577533805",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Downloaded public source linked by Stanford event page.",
+      "relative_path": "briefing-materials/california-participant-guide.pdf"
+    },
+    {
+      "artifact_id": "material-5cb1d017f73d4742-california-whats-next-2011",
+      "poll_id": "california-whats-next-2011",
+      "artifact_type": "paper",
+      "title": "Deliberative Agenda Setting: Piloting Reform of Direct Democracy in California",
+      "location": "data/california-whats-next-2011/papers/deliberative-agenda-setting.pdf",
+      "source_id": "material-5cb1d017f73d4742",
+      "original_archive_path": "https://drive.google.com/file/d/181NRBiYHZfURqG6KX6w8R2q3QjWOghPk/view",
+      "sha256": "5cb1d017f73d474224b0cc060d324bdd0a69930c4cc3342842d9993d4b35fa26",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Downloaded public source linked by Stanford event page.",
+      "relative_path": "papers/deliberative-agenda-setting.pdf"
+    },
+    {
+      "artifact_id": "material-b2154c788abf1656-california-whats-next-2011",
+      "poll_id": "california-whats-next-2011",
+      "artifact_type": "research-design",
+      "title": "Deliberative Agenda Setting: Online Appendix",
+      "location": "data/california-whats-next-2011/papers/deliberative-agenda-setting-appendix.pdf",
+      "source_id": "material-b2154c788abf1656",
+      "original_archive_path": "https://drive.google.com/uc?export=download&id=11rG4YlB8z_lLTOTZ8G-fLOz92V7bwuhJ",
+      "sha256": "b2154c788abf1656de42fc44a3f2a9ca29e22744f874ddc108e256e5d7fd1463",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Public research source; content and title checked before registration.",
+      "relative_path": "papers/deliberative-agenda-setting-appendix.pdf"
+    },
+    {
+      "artifact_id": "material-8ceb736e99dfd792-california-whats-next-2011",
+      "poll_id": "california-whats-next-2011",
+      "artifact_type": "questionnaire",
+      "title": "Original questionnaire-post.doc (PDF preview)",
+      "location": "data/california-whats-next-2011/questionnaire-post.pdf",
+      "source_id": "material-8ceb736e99dfd792",
+      "original_archive_path": null,
+      "sha256": "8ceb736e99dfd79212a7b37bcd177bfcdc32e7e76a5011e5238d07aa8032886c",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Generated from data/california-whats-next-2011/questionnaire-post.doc. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "relative_path": "questionnaire-post.pdf"
+    },
+    {
+      "artifact_id": "material-709925920eef907d-california-whats-next-2011",
+      "poll_id": "california-whats-next-2011",
+      "artifact_type": "questionnaire",
+      "title": "Original questionnaire-pre.doc (PDF preview)",
+      "location": "data/california-whats-next-2011/questionnaire-pre.pdf",
+      "source_id": "material-709925920eef907d",
+      "original_archive_path": null,
+      "sha256": "709925920eef907d3cba38cd521f10b0585d7b7bc0ed46af411d2a1519445037",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Generated from data/california-whats-next-2011/questionnaire-pre.doc. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "relative_path": "questionnaire-pre.pdf"
+    }
+  ],
+  "document_previews": [
+    {
+      "source_path": "data/california-whats-next-2011/questionnaire-post.doc",
+      "preview_path": "data/california-whats-next-2011/questionnaire-post.pdf",
+      "source_sha256": "bb884ed587bc5550b1345379f117b0a3f2a75d99672966279be867d031c1afef",
+      "preview_sha256": "8ceb736e99dfd79212a7b37bcd177bfcdc32e7e76a5011e5238d07aa8032886c",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "21",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-representative-pages",
+      "visual_pages": "1;11;21",
+      "source_token_coverage": "0.9993560849967804",
+      "distinct_word_coverage": "0.9967585089141004",
+      "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
+      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+    },
+    {
+      "source_path": "data/california-whats-next-2011/questionnaire-pre.doc",
+      "preview_path": "data/california-whats-next-2011/questionnaire-pre.pdf",
+      "source_sha256": "5cb8718dc08fab6de8708ebc7d97a356ae314b3ea7f9364ea5fa229ac5632515",
+      "preview_sha256": "709925920eef907d3cba38cd521f10b0585d7b7bc0ed46af411d2a1519445037",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "10",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-representative-pages",
+      "visual_pages": "1;5;10",
+      "source_token_coverage": "0.9941912421805184",
+      "distinct_word_coverage": "0.9967320261437909",
+      "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
+      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+    }
+  ]
+}

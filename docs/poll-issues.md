@@ -33,6 +33,57 @@ This is an inventory of currently known issues and coverage gaps, not a claim
 that every field or every questionnaire has been audited. “No discrepancy in the
 knowledge comparison” does not clear attitudes, demographics, weights, or joins.
 
+## Source-material review after v0.3.0
+
+The [sourced facts](../metadata/poll_facts.csv),
+[references](../metadata/poll_references.csv), and
+[material coverage](../metadata/poll_material_coverage.csv) now cover all 34 polls.
+Each fact names its source and locator; each poll folder has a generated
+`metadata.json` view. Reported numbers retain their stated populations. This
+review changes documentation, not catalog identifiers, scoring, or samples.
+Priority questions for the corrections pass include:
+
+- **New Haven:** Farrar and colleagues' published study dates the airport and
+  revenue-sharing event to March 1–3, 2002; the archived poll appendix labels it
+  2004. The paper distinguishes 1,032 initial interviews, 133 attendees and 132
+  analysis cases. Verify fieldwork records before changing the year or linking
+  this study to a different New Haven event. Preserve `new-haven-2004` meanwhile.
+- **Bulgaria 2007:** the organizer description and executive summary identify
+  the National Palace of Culture; the Roma working paper names Park Hotel
+  Moskva (PDF p. 4) and calls this the first Bulgarian poll despite the 2002
+  event. Both report 255 participants. Check original event records before
+  selecting a venue. The two versions of the results announcement are press
+  releases, not papers; their distinct original bytes remain available.
+- **British event dates:** the UK–EU research account says June 1995 while
+  parliamentary testimony says May. The UK general-election draft gives April
+  26–28, 1997 and calls April 28 a Sunday, although it was Monday. The UK Health
+  report's broadcast dates do not by themselves establish fieldwork dates.
+  Check invitations, questionnaires and broadcast records before normalizing.
+- **Sample denominators:** NIC 1996's overview reports 459 versus 466 in the
+  research account; Denmark's overview gives 384 versus 364 effective
+  participants in the paper; San Mateo's report gives 238 versus 239 historical
+  analysis records. California sources agree on 412 attendees but differ on
+  435 versus 439 acceptances. Reconcile rosters and completion rules before
+  treating these differences as data errors.
+- **Online study periods and counts:** distinguish recruitment, discussion
+  sessions, follow-up surveys and completed-analysis samples. BTP 2007's
+  codebook documents 326 people attending all four sessions, of whom 301
+  completed the post-survey; these counts describe different stages rather
+  than an unexplained discrepancy. The same codebook contains the questionnaire.
+  BTP 2005's short appendix date interval should not replace the full online
+  treatment period described in its event report.
+- **AMR 2024:** sourced methods describe online deliberation, while the current
+  catalog labels the poll face-to-face. Published totals also distinguish
+  assignment to treatment/control from actual deliberation. Verify the study
+  version and population before changing catalog mode or sample counts.
+
+Material gaps remain explicit: finding a paper is not equivalent to finding the
+fielded instrument, and a general energy questionnaire is not automatically the
+CPL, WTU or SWEPCO instrument. PDF previews retain originals alongside them.
+Preview QA and limitations are in
+[the conversion ledger](../metadata/document_previews.csv); Word final-view PDFs
+can omit comments or tracked deletions retained in the originals.
+
 ## How to read the entries
 
 - **Preserve / review:** an observed behavior or unresolved interpretation. No

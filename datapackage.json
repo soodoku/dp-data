@@ -801,6 +801,190 @@
       }
     },
     {
+      "name": "poll_references",
+      "path": "metadata/poll_references.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "reference_id",
+            "type": "string"
+          },
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "kind",
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "url",
+            "type": "string"
+          },
+          {
+            "name": "local_artifact_id",
+            "type": "string"
+          },
+          {
+            "name": "accessed",
+            "type": "date"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "poll_facts",
+      "path": "metadata/poll_facts.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "field",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "string"
+          },
+          {
+            "name": "reference_id",
+            "type": "string"
+          },
+          {
+            "name": "source_locator",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "poll_material_coverage",
+      "path": "metadata/poll_material_coverage.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "material_type",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          },
+          {
+            "name": "checked_references",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "document_previews",
+      "path": "metadata/document_previews.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "source_path",
+            "type": "string"
+          },
+          {
+            "name": "preview_path",
+            "type": "string"
+          },
+          {
+            "name": "source_sha256",
+            "type": "string"
+          },
+          {
+            "name": "preview_sha256",
+            "type": "string"
+          },
+          {
+            "name": "converter_version",
+            "type": "string"
+          },
+          {
+            "name": "platform",
+            "type": "string"
+          },
+          {
+            "name": "pages",
+            "type": "number"
+          },
+          {
+            "name": "text_check",
+            "type": "string"
+          },
+          {
+            "name": "visual_check",
+            "type": "string"
+          },
+          {
+            "name": "visual_pages",
+            "type": "string"
+          },
+          {
+            "name": "source_token_coverage",
+            "type": "number"
+          },
+          {
+            "name": "distinct_word_coverage",
+            "type": "number"
+          },
+          {
+            "name": "qa_notes",
+            "type": "string"
+          },
+          {
+            "name": "rebuild_command",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
       "name": "polls",
       "path": "metadata/polls.csv",
       "profile": "tabular-data-resource",

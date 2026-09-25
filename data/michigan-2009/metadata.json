@@ -1,0 +1,400 @@
+{
+  "catalog": {
+    "poll_id": "michigan-2009",
+    "title": "Michigan",
+    "year": 2009,
+    "place": "Michigan",
+    "topic": "Economy and budget",
+    "mode": "face-to-face",
+    "collection": "cdd"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "michigan-2009",
+      "field": "event_dates",
+      "value": "2009-11-13 through 2009-11-15",
+      "reference_id": "us-michigan-2009-material-bb554247c8bade38-michigan-2009",
+      "source_locator": "About the project p 2; Results p 3",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "michigan-2009",
+      "field": "location",
+      "value": "Lansing, Michigan",
+      "reference_id": "us-michigan-2009-material-bb554247c8bade38-michigan-2009",
+      "source_locator": "About the project p 2; Results p 3",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "michigan-2009",
+      "field": "organizers",
+      "value": "By the People/MacNeil-Lehrer Productions and Stanford CDD; funded by W. K. Kellogg Foundation; Michigan public television partners",
+      "reference_id": "us-michigan-2009-material-bb554247c8bade38-michigan-2009",
+      "source_locator": "About the project p 2; Results p 3",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "michigan-2009",
+      "field": "population",
+      "value": "Michigan residents statewide",
+      "reference_id": "us-michigan-2009-material-bb554247c8bade38-michigan-2009",
+      "source_locator": "About the project p 2; Results p 3",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "michigan-2009",
+      "field": "recruitment",
+      "value": "Random representative statewide sample; report overview does not detail complete recruitment frame",
+      "reference_id": "us-michigan-2009-material-bb554247c8bade38-michigan-2009",
+      "source_locator": "About the project p 2; Results p 3",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "michigan-2009",
+      "field": "participants",
+      "value": "314 deliberating participants in report results section",
+      "reference_id": "us-michigan-2009-material-bb554247c8bade38-michigan-2009",
+      "source_locator": "About the project p 2; Results p 3",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "michigan-2009",
+      "field": "mode",
+      "value": "Face-to-face statewide weekend with moderated small groups and expert plenaries",
+      "reference_id": "us-michigan-2009-material-bb554247c8bade38-michigan-2009",
+      "source_locator": "About the project p 2; Results p 3",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "michigan-2009",
+      "field": "topics",
+      "value": "Economy, budget choices, taxes, education, poverty and green-economy policy",
+      "reference_id": "us-michigan-2009-material-bb554247c8bade38-michigan-2009",
+      "source_locator": "About the project p 2; Results p 3",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "michigan-2009",
+      "field": "event_dates",
+      "value": "Official event page timestamp 2010-01-18 refers to television broadcast/results release",
+      "reference_id": "us-michigan-2009-stanford-event",
+      "source_locator": "Opening paragraph",
+      "status": "reported",
+      "notes": "Event itself was November 2009, as final report states; avoid moving poll year."
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "us-michigan-2009-cdd-michigan-2009-survey-variables",
+      "poll_id": "michigan-2009",
+      "kind": "codebook",
+      "title": "Source variables",
+      "url": null,
+      "local_artifact_id": "cdd-michigan-2009-survey-variables",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/michigan-2009/variables.csv; Machine-extracted source variable/value labels, not a complete authored codebook."
+    },
+    {
+      "reference_id": "us-michigan-2009-cdd-michigan-2009-survey-value-labels",
+      "poll_id": "michigan-2009",
+      "kind": "codebook",
+      "title": "Source value-labels",
+      "url": null,
+      "local_artifact_id": "cdd-michigan-2009-survey-value-labels",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/michigan-2009/value-labels.csv; Machine-extracted source variable/value labels, not a complete authored codebook."
+    },
+    {
+      "reference_id": "us-michigan-2009-cdd-michigan-2009-questionnaire-pre",
+      "poll_id": "michigan-2009",
+      "kind": "questionnaire",
+      "title": "Original questionnaire-pre.doc",
+      "url": null,
+      "local_artifact_id": "cdd-michigan-2009-questionnaire-pre",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/michigan-2009/questionnaire-pre.doc"
+    },
+    {
+      "reference_id": "us-michigan-2009-cdd-michigan-2009-questionnaire-post",
+      "poll_id": "michigan-2009",
+      "kind": "questionnaire",
+      "title": "Original questionnaire-post.doc",
+      "url": null,
+      "local_artifact_id": "cdd-michigan-2009-questionnaire-post",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/michigan-2009/questionnaire-post.doc"
+    },
+    {
+      "reference_id": "us-michigan-2009-material-bb554247c8bade38-michigan-2009",
+      "poll_id": "michigan-2009",
+      "kind": "event-report",
+      "title": "By the People: Hard Times, Hard Choices",
+      "url": null,
+      "local_artifact_id": "material-bb554247c8bade38-michigan-2009",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/michigan-2009/reports/michigan-final-report.pdf"
+    },
+    {
+      "reference_id": "us-michigan-2009-material-d84a83e52feff108-michigan-2009",
+      "poll_id": "michigan-2009",
+      "kind": "briefing-material",
+      "title": "Hard Times Hard Choices briefing materials",
+      "url": null,
+      "local_artifact_id": "material-d84a83e52feff108-michigan-2009",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/michigan-2009/briefing-materials/michigan-participant-guide.pdf"
+    },
+    {
+      "reference_id": "us-michigan-2009-michigan-participant-guide",
+      "poll_id": "michigan-2009",
+      "kind": "briefing-material",
+      "title": "Hard Times Hard Choices briefing materials",
+      "url": "https://drive.google.com/file/d/1en2hu6wpXJYPvBVKdAJmgAERg2Zo_HV6/view",
+      "local_artifact_id": "material-d84a83e52feff108-michigan-2009",
+      "accessed": "2026-09-24",
+      "notes": "Downloaded public source linked by Stanford event page."
+    },
+    {
+      "reference_id": "us-michigan-2009-stanford-event",
+      "poll_id": "michigan-2009",
+      "kind": "event-report",
+      "title": "By the People: Hard Times Hard Choices Michigan Citizens Deliberate",
+      "url": "https://deliberation.stanford.edu/news/people-hard-times-hard-choices-michigan-citizens-deliberate",
+      "local_artifact_id": null,
+      "accessed": "2026-09-24",
+      "notes": "Official event overview; page publication timestamp is not assumed to equal event date."
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "michigan-2009",
+      "material_type": "questionnaires",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-michigan-2009-cdd-michigan-2009-questionnaire-pre;us-michigan-2009-cdd-michigan-2009-questionnaire-post"
+    },
+    {
+      "poll_id": "michigan-2009",
+      "material_type": "briefing-materials",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-michigan-2009-material-d84a83e52feff108-michigan-2009;us-michigan-2009-michigan-participant-guide"
+    },
+    {
+      "poll_id": "michigan-2009",
+      "material_type": "event-reports",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-michigan-2009-material-bb554247c8bade38-michigan-2009;us-michigan-2009-stanford-event"
+    },
+    {
+      "poll_id": "michigan-2009",
+      "material_type": "papers",
+      "status": "not-found",
+      "notes": "Reviewed official results, briefing documents and targeted scholar/web searches; no directly verified empirical research paper specifically analyzing this poll retrieved. Michigan AAPOR 2010 title appears in author CV but fullpaper/unambiguousversion not obtained.",
+      "checked_references": "us-michigan-2009-material-bb554247c8bade38-michigan-2009;us-michigan-2009-stanford-event"
+    },
+    {
+      "poll_id": "michigan-2009",
+      "material_type": "codebooks",
+      "status": "partial",
+      "notes": "Variable/value-label dictionaries and/or shared recode documentation are available; completeness as an authored poll-specific codebook is not established.",
+      "checked_references": "us-michigan-2009-cdd-michigan-2009-survey-variables;us-michigan-2009-cdd-michigan-2009-survey-value-labels"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "cor-sood-michigan-2009",
+      "poll_id": "michigan-2009",
+      "artifact_type": "data",
+      "title": "Cor-Sood scored knowledge battery",
+      "location": "data/michigan-2009/knowledge-battery.csv",
+      "source_id": "cor-sood-michigan-2009",
+      "original_archive_path": "replication/data.zip:data/mi.csv",
+      "sha256": "b27a7e29fc57dd658a80ecb204f72ca42c24b689b1b3279309919f0073f85ffe",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Scored binary items; row number is not a respondent identifier",
+      "relative_path": "knowledge-battery.csv"
+    },
+    {
+      "artifact_id": "cdd-michigan-2009-survey",
+      "poll_id": "michigan-2009",
+      "artifact_type": "data",
+      "title": "Reviewed poll-level survey",
+      "location": "data/michigan-2009/survey.parquet",
+      "source_id": "cdd-michigan-2009-survey",
+      "original_archive_path": "data/Michigan/data/mifin.dta",
+      "sha256": "a827af55e3d8e85c6f1fb06a4a40e5de94e406640bf8e58e9b8635fcddeb1980",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-redacted",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "survey.parquet"
+    },
+    {
+      "artifact_id": "cdd-michigan-2009-survey-variables",
+      "poll_id": "michigan-2009",
+      "artifact_type": "codebook",
+      "title": "Source variables",
+      "location": "data/michigan-2009/variables.csv",
+      "source_id": "cdd-michigan-2009-survey-variables",
+      "original_archive_path": "data/Michigan/data/mifin.dta",
+      "sha256": "396b78c56c069dacd26cf14904595e7b92bf2798b21738bc0a992bdca142503d",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "variables.csv"
+    },
+    {
+      "artifact_id": "cdd-michigan-2009-survey-value-labels",
+      "poll_id": "michigan-2009",
+      "artifact_type": "codebook",
+      "title": "Source value-labels",
+      "location": "data/michigan-2009/value-labels.csv",
+      "source_id": "cdd-michigan-2009-survey-value-labels",
+      "original_archive_path": "data/Michigan/data/mifin.dta",
+      "sha256": "355d2acaa276d4e050435819cd1870270f3a2cccddab59f6368ca593c0bf550c",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "value-labels.csv"
+    },
+    {
+      "artifact_id": "cdd-michigan-2009-questionnaire-pre",
+      "poll_id": "michigan-2009",
+      "artifact_type": "questionnaire",
+      "title": "Original questionnaire-pre.doc",
+      "location": "data/michigan-2009/questionnaire-pre.doc",
+      "source_id": "cdd-michigan-2009-questionnaire-pre",
+      "original_archive_path": "data/Michigan/questionnaires/Michigan_Qaire_IAQ_final_T1.doc",
+      "sha256": "85185d7179ce2e61d4ba5969cb900ed48c44762629b441ff2ede41c62f0a92fc",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "questionnaire-pre.doc"
+    },
+    {
+      "artifact_id": "cdd-michigan-2009-questionnaire-post",
+      "poll_id": "michigan-2009",
+      "artifact_type": "questionnaire",
+      "title": "Original questionnaire-post.doc",
+      "location": "data/michigan-2009/questionnaire-post.doc",
+      "source_id": "cdd-michigan-2009-questionnaire-post",
+      "original_archive_path": "data/Michigan/questionnaires/Michigan FINAL_SAQ_finalnov12.doc",
+      "sha256": "e60eadf90954b03ce3f364b03aa89b7b2aa083402cb1b8d3851af66a474c657b",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "questionnaire-post.doc"
+    },
+    {
+      "artifact_id": "material-bb554247c8bade38-michigan-2009",
+      "poll_id": "michigan-2009",
+      "artifact_type": "event-report",
+      "title": "By the People: Hard Times, Hard Choices",
+      "location": "data/michigan-2009/reports/michigan-final-report.pdf",
+      "source_id": "material-bb554247c8bade38",
+      "original_archive_path": null,
+      "sha256": "bb554247c8bade388f32f876bdba16abce17ed251819a9497185b229d6ed2098",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Final report on Michigan residents deliberating; use published sample and item results after resolving missing-code treatments. Source URL: https://drive.google.com/file/d/191XvRfnhxQujIrl8L8x9Z7VgadWOv-CT/view. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "reports/michigan-final-report.pdf"
+    },
+    {
+      "artifact_id": "material-d84a83e52feff108-michigan-2009",
+      "poll_id": "michigan-2009",
+      "artifact_type": "briefing-material",
+      "title": "Hard Times Hard Choices briefing materials",
+      "location": "data/michigan-2009/briefing-materials/michigan-participant-guide.pdf",
+      "source_id": "material-d84a83e52feff108",
+      "original_archive_path": "https://drive.google.com/file/d/1en2hu6wpXJYPvBVKdAJmgAERg2Zo_HV6/view",
+      "sha256": "d84a83e52feff108b6f67118e8f429daa680ca8d9fdcca88c0e4744b29193aa8",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Downloaded public source linked by Stanford event page.",
+      "relative_path": "briefing-materials/michigan-participant-guide.pdf"
+    },
+    {
+      "artifact_id": "material-64d5b04279cd5521-michigan-2009",
+      "poll_id": "michigan-2009",
+      "artifact_type": "questionnaire",
+      "title": "Original questionnaire-post.doc (PDF preview)",
+      "location": "data/michigan-2009/questionnaire-post.pdf",
+      "source_id": "material-64d5b04279cd5521",
+      "original_archive_path": null,
+      "sha256": "64d5b04279cd5521a712c56fab9420225c61c2e2d7007b325df1bb79b49599c3",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Generated from data/michigan-2009/questionnaire-post.doc. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "relative_path": "questionnaire-post.pdf"
+    },
+    {
+      "artifact_id": "material-5d6c49d48feeb864-michigan-2009",
+      "poll_id": "michigan-2009",
+      "artifact_type": "questionnaire",
+      "title": "Original questionnaire-pre.doc (PDF preview)",
+      "location": "data/michigan-2009/questionnaire-pre.pdf",
+      "source_id": "material-5d6c49d48feeb864",
+      "original_archive_path": null,
+      "sha256": "5d6c49d48feeb86403684ca1ef18c532a48c9df8e88712681533397ff41ad382",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Generated from data/michigan-2009/questionnaire-pre.doc. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "relative_path": "questionnaire-pre.pdf"
+    }
+  ],
+  "document_previews": [
+    {
+      "source_path": "data/michigan-2009/questionnaire-post.doc",
+      "preview_path": "data/michigan-2009/questionnaire-post.pdf",
+      "source_sha256": "e60eadf90954b03ce3f364b03aa89b7b2aa083402cb1b8d3851af66a474c657b",
+      "preview_sha256": "64d5b04279cd5521a712c56fab9420225c61c2e2d7007b325df1bb79b49599c3",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "13",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-representative-pages",
+      "visual_pages": "1;7;13",
+      "source_token_coverage": "0.9978260869565218",
+      "distinct_word_coverage": "0.9937629937629938",
+      "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed. Cover title MICHIGAN wraps its final letter in original fixed text box with current font metrics; all text retained.",
+      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+    },
+    {
+      "source_path": "data/michigan-2009/questionnaire-pre.doc",
+      "preview_path": "data/michigan-2009/questionnaire-pre.pdf",
+      "source_sha256": "85185d7179ce2e61d4ba5969cb900ed48c44762629b441ff2ede41c62f0a92fc",
+      "preview_sha256": "5d6c49d48feeb86403684ca1ef18c532a48c9df8e88712681533397ff41ad382",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "8",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-representative-pages",
+      "visual_pages": "1;4;8",
+      "source_token_coverage": "0.998149005090236",
+      "distinct_word_coverage": "0.9957356076759062",
+      "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
+      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+    }
+  ]
+}

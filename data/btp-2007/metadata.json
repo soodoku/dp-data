@@ -1,0 +1,367 @@
+{
+  "catalog": {
+    "poll_id": "btp-2007",
+    "title": "By the People 2007",
+    "year": 2007,
+    "place": "United States",
+    "topic": "Electoral reform",
+    "mode": "online",
+    "collection": "cdd"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "btp-2007",
+      "field": "event_dates",
+      "value": "Four weeks in fall 2007; exact session dates not given in reviewed report",
+      "reference_id": "us-btp-2007-material-15325174029c8c47-btp-2007",
+      "source_locator": "Opening and methods paragraphs, p 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "btp-2007",
+      "field": "location",
+      "value": "United States national online sample",
+      "reference_id": "us-btp-2007-material-15325174029c8c47-btp-2007",
+      "source_locator": "Opening and methods paragraphs, p 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "btp-2007",
+      "field": "organizers",
+      "value": "By the People and Colonial Williamsburg Foundation; Stanford CDD and YouGov America",
+      "reference_id": "us-btp-2007-material-15325174029c8c47-btp-2007",
+      "source_locator": "Opening and methods paragraphs, p 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "btp-2007",
+      "field": "population",
+      "value": "Nationally representative sample of United States citizens",
+      "reference_id": "us-btp-2007-material-15325174029c8c47-btp-2007",
+      "source_locator": "Opening and methods paragraphs, p 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "btp-2007",
+      "field": "recruitment",
+      "value": "National sample randomly assigned to deliberation or survey-only control; panel details not specified in reviewed report",
+      "reference_id": "us-btp-2007-material-15325174029c8c47-btp-2007",
+      "source_locator": "Opening and methods paragraphs, p 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "btp-2007",
+      "field": "participants",
+      "value": "301 deliberators and 1,000 survey-only controls; over 1,300 in experiment",
+      "reference_id": "us-btp-2007-material-15325174029c8c47-btp-2007",
+      "source_locator": "Opening and methods paragraphs, p 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "btp-2007",
+      "field": "mode",
+      "value": "Online weekly audio-chat discussions",
+      "reference_id": "us-btp-2007-material-15325174029c8c47-btp-2007",
+      "source_locator": "Opening and methods paragraphs, p 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "btp-2007",
+      "field": "topics",
+      "value": "Political participation, electoral choice, becoming informed and public service",
+      "reference_id": "us-btp-2007-material-15325174029c8c47-btp-2007",
+      "source_locator": "Opening and methods paragraphs, p 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "btp-2007",
+      "field": "event_dates",
+      "value": "Study fieldwork September 15–October 30, 2007; discussion sessions October 1–25, 2007",
+      "reference_id": "us-btp-2007-cdd-btp-2007-codebook",
+      "source_locator": "Study Description, PDF page 3",
+      "status": "reported",
+      "notes": "More precise than report wording four weeks in fall 2007."
+    },
+    {
+      "poll_id": "btp-2007",
+      "field": "population",
+      "value": "U.S. adults age 18+; matched subsample of PollingPoint panel",
+      "reference_id": "us-btp-2007-cdd-btp-2007-codebook",
+      "source_locator": "Sample Selection and Weighting Methodology, PDF pages 4–5",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "btp-2007",
+      "field": "recruitment",
+      "value": "PollingPoint panel recruited through telephone, mail and web advertising; sample matching to national adult frame; random treatment allocation probabilities 0.64/0.36",
+      "reference_id": "us-btp-2007-cdd-btp-2007-codebook",
+      "source_locator": "Sample Selection and Weighting Methodology, PDF pages 4–5",
+      "status": "reported",
+      "notes": "Panel itself expressly not nationally representative before subsample matching; distinguish this from probability household recruitment."
+    },
+    {
+      "poll_id": "btp-2007",
+      "field": "participants",
+      "value": "6,695 baseline interviews; 1,963 agreed; 1,423 eligible after scheduling/technical restrictions; 771 attended at least one session; 326 attended all four sessions",
+      "reference_id": "us-btp-2007-cdd-btp-2007-codebook",
+      "source_locator": "Study Description and sample-flow table, PDF pages 3–5",
+      "status": "conflicting",
+      "notes": "Study Description says 1,427 received materials; the next section reports 1,423 eligible. Preserve that discrepancy. The sample-flow table explains that the event report’s 301 deliberators are four-session attendees who completed the post-survey."
+    },
+    {
+      "poll_id": "btp-2007",
+      "field": "participants",
+      "value": "Baseline primary control 1816; reading-control 599; post-only control 828. Reported results use smaller completed-analysis control totals",
+      "reference_id": "us-btp-2007-cdd-btp-2007-codebook",
+      "source_locator": "Sample Selection and Weighting Methodology, PDF pages 4–5",
+      "status": "reported",
+      "notes": "Initial/survey-assignment universes, not all completed followups."
+    },
+    {
+      "poll_id": "btp-2007",
+      "field": "participants",
+      "value": "301 of the 326 four-session attendees completed the post-survey; 695 treatment respondents completed a post-survey across all attendance levels. Control post-survey completions: 1,034 primary, 318 reading-control, and 828 post-only.",
+      "reference_id": "us-btp-2007-cdd-btp-2007-codebook",
+      "source_locator": "Sample-flow table, PDF page 5",
+      "status": "reported",
+      "notes": "This explains the event report’s 301-deliberator analysis count; 326 is the attendance count, while 301 requires the post-survey."
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "us-btp-2007-cdd-btp-2007-survey-variables",
+      "poll_id": "btp-2007",
+      "kind": "codebook",
+      "title": "Source variables",
+      "url": null,
+      "local_artifact_id": "cdd-btp-2007-survey-variables",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/btp-2007/variables.csv; Machine-extracted source variable/value labels, not a complete authored codebook."
+    },
+    {
+      "reference_id": "us-btp-2007-cdd-btp-2007-survey-value-labels",
+      "poll_id": "btp-2007",
+      "kind": "codebook",
+      "title": "Source value-labels",
+      "url": null,
+      "local_artifact_id": "cdd-btp-2007-survey-value-labels",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/btp-2007/value-labels.csv; Machine-extracted source variable/value labels, not a complete authored codebook."
+    },
+    {
+      "reference_id": "us-btp-2007-cdd-btp-2007-codebook",
+      "poll_id": "btp-2007",
+      "kind": "codebook",
+      "title": "Original codebook.pdf",
+      "url": null,
+      "local_artifact_id": "cdd-btp-2007-codebook",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/btp-2007/codebook.pdf"
+    },
+    {
+      "reference_id": "us-btp-2007-material-15325174029c8c47-btp-2007",
+      "poll_id": "btp-2007",
+      "kind": "event-report",
+      "title": "By the People 2007 results",
+      "url": null,
+      "local_artifact_id": "material-15325174029c8c47-btp-2007",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/btp-2007/reports/btp-2007-results.pdf"
+    },
+    {
+      "reference_id": "us-btp-2007-material-37d5cbb761443373-btp-2007",
+      "poll_id": "btp-2007",
+      "kind": "briefing-material",
+      "title": "Citizenship in 21st Century America briefing materials",
+      "url": null,
+      "local_artifact_id": "material-37d5cbb761443373-btp-2007",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/btp-2007/briefing-materials/citizenship-briefing.pdf"
+    },
+    {
+      "reference_id": "us-btp-2007-citizenship-briefing",
+      "poll_id": "btp-2007",
+      "kind": "briefing-material",
+      "title": "Citizenship in 21st Century America briefing materials",
+      "url": "https://drive.google.com/file/d/1CVuZxka9s-oM84Piex0JwWu--xHTCANu/view",
+      "local_artifact_id": "material-37d5cbb761443373-btp-2007",
+      "accessed": "2026-09-24",
+      "notes": "Downloaded public source linked by Stanford event page."
+    },
+    {
+      "reference_id": "us-btp-2007-stanford-event",
+      "poll_id": "btp-2007",
+      "kind": "event-report",
+      "title": "Dialogues in Democracy: Citizenship in 21st Century America",
+      "url": "https://deliberation.stanford.edu/news/dialogues-democracy-citizenship-21st-century-america",
+      "local_artifact_id": null,
+      "accessed": "2026-09-24",
+      "notes": "Official event overview; page publication timestamp is not assumed to equal event date."
+    },
+    {
+      "reference_id": "us-btp-2007-embedded-questionnaire",
+      "poll_id": "btp-2007",
+      "kind": "questionnaire",
+      "title": "By the People 2007 codebook: Questionnaire Text",
+      "url": null,
+      "local_artifact_id": "cdd-btp-2007-codebook",
+      "accessed": "2026-09-24",
+      "notes": "Full questionnaire section embedded in original authored 2007 BTP_CODEBOOK.pdf; preserve existing singlePDF, no duplicate copy."
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "btp-2007",
+      "material_type": "questionnaires",
+      "status": "available",
+      "notes": "Complete Questionnaire Text section inside original codebook.pdf; no separate duplicate instrument needed.",
+      "checked_references": "us-btp-2007-material-15325174029c8c47-btp-2007;us-btp-2007-stanford-event;us-btp-2007-embedded-questionnaire;us-btp-2007-cdd-btp-2007-codebook"
+    },
+    {
+      "poll_id": "btp-2007",
+      "material_type": "briefing-materials",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-btp-2007-material-37d5cbb761443373-btp-2007;us-btp-2007-citizenship-briefing"
+    },
+    {
+      "poll_id": "btp-2007",
+      "material_type": "event-reports",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-btp-2007-material-15325174029c8c47-btp-2007;us-btp-2007-stanford-event"
+    },
+    {
+      "poll_id": "btp-2007",
+      "material_type": "papers",
+      "status": "not-found",
+      "notes": "Reviewed local archive, official event/results/material pages and targeted research searches; no directly verified poll-specific empirical research paper retrieved.",
+      "checked_references": "us-btp-2007-material-15325174029c8c47-btp-2007;us-btp-2007-stanford-event"
+    },
+    {
+      "poll_id": "btp-2007",
+      "material_type": "codebooks",
+      "status": "available",
+      "notes": "Original authored codebook contains Study Description, sample selection/weighting, variable documentation and full questionnaire text.",
+      "checked_references": "us-btp-2007-cdd-btp-2007-survey-variables;us-btp-2007-cdd-btp-2007-survey-value-labels;us-btp-2007-cdd-btp-2007-codebook"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "cor-sood-btp-2007",
+      "poll_id": "btp-2007",
+      "artifact_type": "data",
+      "title": "Cor-Sood scored knowledge battery",
+      "location": "data/btp-2007/knowledge-battery.csv",
+      "source_id": "cor-sood-btp-2007",
+      "original_archive_path": "replication/data.zip:data/btp07.csv",
+      "sha256": "f4420ecaaf257f8467c9187e489a603520398a8efae0e0656513b979d59af0fa",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Scored binary items; row number is not a respondent identifier",
+      "relative_path": "knowledge-battery.csv"
+    },
+    {
+      "artifact_id": "cdd-btp-2007-survey",
+      "poll_id": "btp-2007",
+      "artifact_type": "data",
+      "title": "Reviewed poll-level survey",
+      "location": "data/btp-2007/survey.parquet",
+      "source_id": "cdd-btp-2007-survey",
+      "original_archive_path": "data/BTP/2007/data/final.sav",
+      "sha256": "44fd7d92afaf8a52696c32bf12a3af7dd17f72ed2023a48b09432bb6f97f8b14",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-redacted",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "survey.parquet"
+    },
+    {
+      "artifact_id": "cdd-btp-2007-survey-variables",
+      "poll_id": "btp-2007",
+      "artifact_type": "codebook",
+      "title": "Source variables",
+      "location": "data/btp-2007/variables.csv",
+      "source_id": "cdd-btp-2007-survey-variables",
+      "original_archive_path": "data/BTP/2007/data/final.sav",
+      "sha256": "d15f3ce95d94968d4945a067ab37ed7046d8c543f728e5f3d61bd2db945bba85",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "variables.csv"
+    },
+    {
+      "artifact_id": "cdd-btp-2007-survey-value-labels",
+      "poll_id": "btp-2007",
+      "artifact_type": "codebook",
+      "title": "Source value-labels",
+      "location": "data/btp-2007/value-labels.csv",
+      "source_id": "cdd-btp-2007-survey-value-labels",
+      "original_archive_path": "data/BTP/2007/data/final.sav",
+      "sha256": "f36609ba4493d1d4270655dd65c5ef9ffc332d9d01467ab60ef0827a52705afa",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "value-labels.csv"
+    },
+    {
+      "artifact_id": "cdd-btp-2007-codebook",
+      "poll_id": "btp-2007",
+      "artifact_type": "codebook",
+      "title": "Original codebook.pdf",
+      "location": "data/btp-2007/codebook.pdf",
+      "source_id": "cdd-btp-2007-codebook",
+      "original_archive_path": "data/BTP/2007/2007BTP_CODEBOOK.pdf",
+      "sha256": "235dbd209480dbf756f27a1ea40ee2455661480d72a7e8d4e20ac8c275f3e94d",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "codebook.pdf"
+    },
+    {
+      "artifact_id": "material-15325174029c8c47-btp-2007",
+      "poll_id": "btp-2007",
+      "artifact_type": "event-report",
+      "title": "By the People 2007 results",
+      "location": "data/btp-2007/reports/btp-2007-results.pdf",
+      "source_id": "material-15325174029c8c47",
+      "original_archive_path": null,
+      "sha256": "15325174029c8c47da1667f44d0b4870b7c6ba9538e5076e63b91af94dd1ef19",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "National online citizenship dialogue; reported results require sample and item matching. Source URL: https://drive.google.com/uc?export=download&id=14lCkj_aP9GJGG2MulB_3c0teX6YXkObp. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "reports/btp-2007-results.pdf"
+    },
+    {
+      "artifact_id": "material-37d5cbb761443373-btp-2007",
+      "poll_id": "btp-2007",
+      "artifact_type": "briefing-material",
+      "title": "Citizenship in 21 st Century America briefing materials",
+      "location": "data/btp-2007/briefing-materials/citizenship-briefing.pdf",
+      "source_id": "material-37d5cbb761443373",
+      "original_archive_path": "https://drive.google.com/file/d/1CVuZxka9s-oM84Piex0JwWu--xHTCANu/view",
+      "sha256": "37d5cbb761443373d905b32ff4b4d66f159647a7c91bb19a6da7522379e7cb89",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Downloaded public source linked by Stanford event page.",
+      "relative_path": "briefing-materials/citizenship-briefing.pdf"
+    }
+  ],
+  "document_previews": []
+}

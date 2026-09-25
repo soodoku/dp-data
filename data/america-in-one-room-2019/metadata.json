@@ -1,0 +1,375 @@
+{
+  "catalog": {
+    "poll_id": "america-in-one-room-2019",
+    "title": "America in One Room",
+    "year": 2019,
+    "place": "United States",
+    "topic": "National policy",
+    "mode": "face-to-face",
+    "collection": "public-replication"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "america-in-one-room-2019",
+      "field": "population",
+      "value": "U.S. citizens age 18+ registered to vote; explicitly not all adult residents",
+      "reference_id": "us-america-in-one-room-2019-a1r-2019-norc-methods",
+      "source_locator": "Study-Specific Details and Table 1: Sample Performance Summary",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "field": "recruitment",
+      "value": "Stratified random selection from NORC probability-based AmeriSpeak panel; registered voters randomly allocated to invited-treatment or control groups",
+      "reference_id": "us-america-in-one-room-2019-a1r-2019-norc-methods",
+      "source_locator": "Study-Specific Details and Table 1: Sample Performance Summary",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "field": "participants",
+      "value": "526 attended; 523 completed the post-event survey. Pre-survey completions: 2,741 treatment and 1,101 control. Post-survey control completions: 844.",
+      "reference_id": "us-america-in-one-room-2019-a1r-2019-norc-methods",
+      "source_locator": "Study-Specific Details and Table 1: Sample Performance Summary",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "field": "mode",
+      "value": "Face-to-face deliberation; delegate post-survey self-administered paper; pre/control surveys separate",
+      "reference_id": "us-america-in-one-room-2019-a1r-2019-norc-methods",
+      "source_locator": "Study-Specific Details and Table 1: Sample Performance Summary",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "field": "event_dates",
+      "value": "2019-09-19 through 2019-09-22",
+      "reference_id": "us-america-in-one-room-2019-a1r-2019-executive-summary",
+      "source_locator": "Opening paragraphs, p 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "field": "location",
+      "value": "Dallas, Texas",
+      "reference_id": "us-america-in-one-room-2019-a1r-2019-executive-summary",
+      "source_locator": "Opening paragraphs, p 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "field": "organizers",
+      "value": "Helena; By the People Productions; Stanford Center for Deliberative Democracy; NORC sampling",
+      "reference_id": "us-america-in-one-room-2019-a1r-2019-executive-summary",
+      "source_locator": "Opening paragraphs, p 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "field": "topics",
+      "value": "Economy, health care, environment, immigration and foreign policy",
+      "reference_id": "us-america-in-one-room-2019-a1r-2019-executive-summary",
+      "source_locator": "Opening paragraphs, p 1",
+      "status": "reported",
+      "notes": null
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "us-america-in-one-room-2019-material-f937811041f72f6f-america-in-one-room-2019",
+      "poll_id": "america-in-one-room-2019",
+      "kind": "paper",
+      "title": "Is Deliberation an Antidote to Extreme Partisan Polarization?",
+      "url": null,
+      "local_artifact_id": "material-f937811041f72f6f-america-in-one-room-2019",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/america-in-one-room-2019/papers/a1 r-2019-paper.pdf"
+    },
+    {
+      "reference_id": "us-america-in-one-room-2019-oos-a1r-codebook",
+      "poll_id": "america-in-one-room-2019",
+      "kind": "codebook",
+      "title": "america-in-one-room-2019: a 1 r_codebook.tab",
+      "url": null,
+      "local_artifact_id": "oos-a1r-codebook",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/america-in-one-room-2019/codebooks/a1 r_codebook.tab"
+    },
+    {
+      "reference_id": "us-america-in-one-room-2019-oos-a1r-code",
+      "poll_id": "america-in-one-room-2019",
+      "kind": "codebook",
+      "title": "america-in-one-room-2019: a 1 r_code.docx",
+      "url": null,
+      "local_artifact_id": "oos-a1r-code",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/america-in-one-room-2019/codebooks/a1 r_code.docx"
+    },
+    {
+      "reference_id": "us-america-in-one-room-2019-material-96ffcf2f21674cbf-america-in-one-room-2019",
+      "poll_id": "america-in-one-room-2019",
+      "kind": "briefing-material",
+      "title": "America in One Room briefing booklet",
+      "url": null,
+      "local_artifact_id": "material-96ffcf2f21674cbf-america-in-one-room-2019",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/america-in-one-room-2019/briefing-materials/a1 r-2019-briefing.pdf"
+    },
+    {
+      "reference_id": "us-america-in-one-room-2019-material-c231aae89955d3d7-america-in-one-room-2019",
+      "poll_id": "america-in-one-room-2019",
+      "kind": "research-design",
+      "title": "America in One Room NORC methodological report",
+      "url": null,
+      "local_artifact_id": "material-c231aae89955d3d7-america-in-one-room-2019",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/america-in-one-room-2019/design/a1 r-2019-norc-methods.pdf"
+    },
+    {
+      "reference_id": "us-america-in-one-room-2019-material-16c84a17f5152926-america-in-one-room-2019",
+      "poll_id": "america-in-one-room-2019",
+      "kind": "event-report",
+      "title": "America in One Room executive summary",
+      "url": null,
+      "local_artifact_id": "material-16c84a17f5152926-america-in-one-room-2019",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/america-in-one-room-2019/reports/a1 r-2019-executive-summary.pdf"
+    },
+    {
+      "reference_id": "us-america-in-one-room-2019-a1r-2019-briefing",
+      "poll_id": "america-in-one-room-2019",
+      "kind": "briefing-material",
+      "title": "America in One Room briefing booklet",
+      "url": "https://drive.google.com/file/d/1ja0CIevtWjYVqnmvvHCKmrY-g4AkJbed/view",
+      "local_artifact_id": "material-96ffcf2f21674cbf-america-in-one-room-2019",
+      "accessed": "2026-09-24",
+      "notes": "Downloaded public source linked by Stanford event page."
+    },
+    {
+      "reference_id": "us-america-in-one-room-2019-a1r-2019-norc-methods",
+      "poll_id": "america-in-one-room-2019",
+      "kind": "research-design",
+      "title": "America in One Room NORC methodological report",
+      "url": "https://drive.google.com/file/d/1A9LlJEN4vMmQ_ma6peEEfY4MT8WABHSo/view",
+      "local_artifact_id": "material-c231aae89955d3d7-america-in-one-room-2019",
+      "accessed": "2026-09-24",
+      "notes": "Downloaded public source linked by Stanford event page."
+    },
+    {
+      "reference_id": "us-america-in-one-room-2019-a1r-2019-executive-summary",
+      "poll_id": "america-in-one-room-2019",
+      "kind": "event-report",
+      "title": "America in One Room executive summary",
+      "url": "https://drive.google.com/file/d/1mxM_4B42obgsZ-h_gR7ypYYOcV7GFE6e/view",
+      "local_artifact_id": "material-16c84a17f5152926-america-in-one-room-2019",
+      "accessed": "2026-09-24",
+      "notes": "Downloaded public source linked by Stanford event page."
+    },
+    {
+      "reference_id": "us-america-in-one-room-2019-stanford-event",
+      "poll_id": "america-in-one-room-2019",
+      "kind": "event-report",
+      "title": "America in One Room Results",
+      "url": "https://deliberation.stanford.edu/news/america-one-room-results",
+      "local_artifact_id": null,
+      "accessed": "2026-09-24",
+      "notes": "Official event overview; page publication timestamp is not assumed to equal event date."
+    },
+    {
+      "reference_id": "us-america-in-one-room-2019-apsr2021",
+      "poll_id": "america-in-one-room-2019",
+      "kind": "paper",
+      "title": "Fishkin, Siu, Diamond, Bradburn (2021), Is Deliberation an Antidote to Extreme Partisan Polarization?",
+      "url": "https://doi.org/10.1017/S0003055421000642",
+      "local_artifact_id": "material-f937811041f72f6f-america-in-one-room-2019",
+      "accessed": "2026-09-24",
+      "notes": "American Political Science Review 115(4): 1464–1481; public replication documentation DOI10.7910/DVN/KJ8IH2; browser DOIresolver failed, followup needed for separate questionnaires/codebook."
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "america-in-one-room-2019",
+      "material_type": "questionnaires",
+      "status": "partial",
+      "notes": "Methods, article and issue-result tables document questions and sample design, but a standalone full questionnaire/codebook was not verified in this pass. Follow public article replication supplements; do not treat briefing booklet as questionnaire. Harvard Dataverse DOI 10.7910/DVN/KJ8IH2 landing/API access returned 403 during this check; no claim to have inspected those files.",
+      "checked_references": "us-america-in-one-room-2019-material-f937811041f72f6f-america-in-one-room-2019;us-america-in-one-room-2019-material-c231aae89955d3d7-america-in-one-room-2019;us-america-in-one-room-2019-material-16c84a17f5152926-america-in-one-room-2019;us-america-in-one-room-2019-a1r-2019-norc-methods;us-america-in-one-room-2019-a1r-2019-executive-summary;us-america-in-one-room-2019-stanford-event;us-america-in-one-room-2019-apsr2021"
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "material_type": "briefing-materials",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-america-in-one-room-2019-material-96ffcf2f21674cbf-america-in-one-room-2019;us-america-in-one-room-2019-a1r-2019-briefing"
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "material_type": "event-reports",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-america-in-one-room-2019-material-16c84a17f5152926-america-in-one-room-2019;us-america-in-one-room-2019-a1r-2019-executive-summary;us-america-in-one-room-2019-stanford-event"
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "material_type": "papers",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-america-in-one-room-2019-material-f937811041f72f6f-america-in-one-room-2019;us-america-in-one-room-2019-apsr2021"
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "material_type": "codebooks",
+      "status": "partial",
+      "notes": "Methods, article and issue-result tables document questions and sample design, but a standalone full questionnaire/codebook was not verified in this pass. Follow public article replication supplements; do not treat briefing booklet as questionnaire. Harvard Dataverse DOI 10.7910/DVN/KJ8IH2 landing/API access returned 403 during this check; no claim to have inspected those files.",
+      "checked_references": "us-america-in-one-room-2019-oos-a1r-codebook;us-america-in-one-room-2019-oos-a1r-code"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "a1r-public-participants",
+      "poll_id": "america-in-one-room-2019",
+      "artifact_type": "data",
+      "title": "America in One Room participant data",
+      "location": "data/america-in-one-room-2019/participants.tab",
+      "source_id": "a1r-2019",
+      "original_archive_path": null,
+      "sha256": "06134deebb34b08ffac91068727b55c1ec4dde88df5f388e1552b0bfa54c6818",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "CC0 Dataverse deposit",
+      "relative_path": "participants.tab"
+    },
+    {
+      "artifact_id": "material-f937811041f72f6f-america-in-one-room-2019",
+      "poll_id": "america-in-one-room-2019",
+      "artifact_type": "paper",
+      "title": "Is Deliberation an Antidote to Extreme Partisan Polarization?",
+      "location": "data/america-in-one-room-2019/papers/a1r-2019-paper.pdf",
+      "source_id": "material-f937811041f72f6f",
+      "original_archive_path": null,
+      "sha256": "f937811041f72f6f918844a6feb0a62ebd49f14c9423b1a84f40bdb73f484e42",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "APSR 2021, DOI 10.1017/S0003055421000642. Compare recruitment, deliberator/control samples, weights and reported policy outcomes; measurement definitions require instrument review. Source URL: https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/is-deliberation-an-antidote-to-extreme-partisan-polarization-reflections-on-america-in-one-room_1.pdf. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "papers/a1r-2019-paper.pdf"
+    },
+    {
+      "artifact_id": "oos-a1r-codebook",
+      "poll_id": "america-in-one-room-2019",
+      "artifact_type": "codebook",
+      "title": "america-in-one-room-2019: a1r_codebook.tab",
+      "location": "data/america-in-one-room-2019/codebooks/a1r_codebook.tab",
+      "source_id": "oos-a1r-codebook",
+      "original_archive_path": null,
+      "sha256": "223f26e26f515c5312853222d3b5bafedb11dc82e8980ba165c6d4eb11cde04f",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged public OOS source; upstream centralization authorized. Study america-in-one-room-2019. Original URL in oos_sources.",
+      "relative_path": "codebooks/a1r_codebook.tab"
+    },
+    {
+      "artifact_id": "oos-a1r-code",
+      "poll_id": "america-in-one-room-2019",
+      "artifact_type": "codebook",
+      "title": "america-in-one-room-2019: a1r_code.docx",
+      "location": "data/america-in-one-room-2019/codebooks/a1r_code.docx",
+      "source_id": "oos-a1r-code",
+      "original_archive_path": null,
+      "sha256": "73c1a1707497ec1ab3ff8bd3d5dd805152c00af271c88b02b2a5e91e0b747e9b",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged public OOS source; upstream centralization authorized. Study america-in-one-room-2019. Original URL in oos_sources.",
+      "relative_path": "codebooks/a1r_code.docx"
+    },
+    {
+      "artifact_id": "material-96ffcf2f21674cbf-america-in-one-room-2019",
+      "poll_id": "america-in-one-room-2019",
+      "artifact_type": "briefing-material",
+      "title": "America in One Room briefing booklet",
+      "location": "data/america-in-one-room-2019/briefing-materials/a1r-2019-briefing.pdf",
+      "source_id": "material-96ffcf2f21674cbf",
+      "original_archive_path": "https://drive.google.com/file/d/1ja0CIevtWjYVqnmvvHCKmrY-g4AkJbed/view",
+      "sha256": "96ffcf2f21674cbfc84a18f95745a1cc8b534547d5352823db1e2aafa00d0141",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Downloaded public source linked by Stanford event page.",
+      "relative_path": "briefing-materials/a1r-2019-briefing.pdf"
+    },
+    {
+      "artifact_id": "material-c231aae89955d3d7-america-in-one-room-2019",
+      "poll_id": "america-in-one-room-2019",
+      "artifact_type": "research-design",
+      "title": "America in One Room NORC methodological report",
+      "location": "data/america-in-one-room-2019/design/a1r-2019-norc-methods.pdf",
+      "source_id": "material-c231aae89955d3d7",
+      "original_archive_path": "https://drive.google.com/file/d/1A9LlJEN4vMmQ_ma6peEEfY4MT8WABHSo/view",
+      "sha256": "c231aae89955d3d778e42cf7f0ed5212b3f95427c127444783670fb6a45735ec",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Downloaded public source linked by Stanford event page.",
+      "relative_path": "design/a1r-2019-norc-methods.pdf"
+    },
+    {
+      "artifact_id": "material-16c84a17f5152926-america-in-one-room-2019",
+      "poll_id": "america-in-one-room-2019",
+      "artifact_type": "event-report",
+      "title": "America in One Room executive summary",
+      "location": "data/america-in-one-room-2019/reports/a1r-2019-executive-summary.pdf",
+      "source_id": "material-16c84a17f5152926",
+      "original_archive_path": "https://drive.google.com/file/d/1mxM_4B42obgsZ-h_gR7ypYYOcV7GFE6e/view",
+      "sha256": "16c84a17f515292682613b9b63311283c9eea6c14790967a8b94b6ba5a466e80",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Downloaded public source linked by Stanford event page.",
+      "relative_path": "reports/a1r-2019-executive-summary.pdf"
+    },
+    {
+      "artifact_id": "material-6e83d5d747d3eca4-america-in-one-room-2019",
+      "poll_id": "america-in-one-room-2019",
+      "artifact_type": "codebook",
+      "title": "america-in-one-room-2019: a1r_code.docx (PDF preview)",
+      "location": "data/america-in-one-room-2019/codebooks/a1r_code.pdf",
+      "source_id": "material-6e83d5d747d3eca4",
+      "original_archive_path": null,
+      "sha256": "6e83d5d747d3eca4fe566484befdece6f0aee051121cd0017c9456ea334d85c1",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Generated from data/america-in-one-room-2019/codebooks/a1r_code.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "relative_path": "codebooks/a1r_code.pdf"
+    }
+  ],
+  "document_previews": [
+    {
+      "source_path": "data/america-in-one-room-2019/codebooks/a1r_code.docx",
+      "preview_path": "data/america-in-one-room-2019/codebooks/a1r_code.pdf",
+      "source_sha256": "73c1a1707497ec1ab3ff8bd3d5dd805152c00af271c88b02b2a5e91e0b747e9b",
+      "preview_sha256": "6e83d5d747d3eca4fe566484befdece6f0aee051121cd0017c9456ea334d85c1",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "11",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-representative-pages",
+      "visual_pages": "1;6;11",
+      "source_token_coverage": "0.9936880072137061",
+      "distinct_word_coverage": "1.0",
+      "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
+      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+    }
+  ]
+}

@@ -1,0 +1,426 @@
+{
+  "catalog": {
+    "poll_id": "vermont-energy-2007",
+    "title": "Vermont Energy",
+    "year": 2007,
+    "place": "Vermont",
+    "topic": "Energy choices",
+    "mode": "face-to-face",
+    "collection": "cdd"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "vermont-energy-2007",
+      "field": "event_dates",
+      "value": "2007-11-03 through 2007-11-04",
+      "reference_id": "us-vermont-energy-2007-material-4710440da6eb03c4-vermont-energy-2007",
+      "source_locator": "Executive summary; Sampling and Recruitment pp 6–8; Deliberative Weekend",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "vermont-energy-2007",
+      "field": "location",
+      "value": "Burlington, Vermont; Sheraton Hotel and conference setting",
+      "reference_id": "us-vermont-energy-2007-material-4710440da6eb03c4-vermont-energy-2007",
+      "source_locator": "Executive summary; Sampling and Recruitment pp 6–8; Deliberative Weekend",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "vermont-energy-2007",
+      "field": "organizers",
+      "value": "Vermont Department of Public Service; Center for Deliberative Opinion Research, University of Texas at Austin",
+      "reference_id": "us-vermont-energy-2007-material-4710440da6eb03c4-vermont-energy-2007",
+      "source_locator": "Executive summary; Sampling and Recruitment pp 6–8; Deliberative Weekend",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "vermont-energy-2007",
+      "field": "population",
+      "value": "Vermont adult household residents",
+      "reference_id": "us-vermont-energy-2007-material-4710440da6eb03c4-vermont-energy-2007",
+      "source_locator": "Executive summary; Sampling and Recruitment pp 6–8; Deliberative Weekend",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "vermont-energy-2007",
+      "field": "recruitment",
+      "value": "RDD telephone sample; adult selected by most recent birthday; OSR, then NSON; long-form interview-before-invitation changed to short-form invitation-before-interview; lodging and $150 honorarium",
+      "reference_id": "us-vermont-energy-2007-material-4710440da6eb03c4-vermont-energy-2007",
+      "source_locator": "Executive summary; Sampling and Recruitment pp 6–8; Deliberative Weekend",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "vermont-energy-2007",
+      "field": "participants",
+      "value": "750 interviewed/invited (243 OSR,507 NSON); 152 attended Burlington",
+      "reference_id": "us-vermont-energy-2007-material-4710440da6eb03c4-vermont-energy-2007",
+      "source_locator": "Executive summary; Sampling and Recruitment pp 6–8; Deliberative Weekend",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "vermont-energy-2007",
+      "field": "mode",
+      "value": "Face-to-face two-day deliberative poll",
+      "reference_id": "us-vermont-energy-2007-material-4710440da6eb03c4-vermont-energy-2007",
+      "source_locator": "Executive summary; Sampling and Recruitment pp 6–8; Deliberative Weekend",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "vermont-energy-2007",
+      "field": "topics",
+      "value": "Future electricity supply: efficiency, wind, nuclear, hydro, existing contracts and centralized/distributed generation",
+      "reference_id": "us-vermont-energy-2007-material-4710440da6eb03c4-vermont-energy-2007",
+      "source_locator": "Executive summary; Sampling and Recruitment pp 6–8; Deliberative Weekend",
+      "status": "reported",
+      "notes": null
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "us-vermont-energy-2007-cdd-vermont-energy-2007-survey-variables",
+      "poll_id": "vermont-energy-2007",
+      "kind": "codebook",
+      "title": "Source variables",
+      "url": null,
+      "local_artifact_id": "cdd-vermont-energy-2007-survey-variables",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/vermont-energy-2007/variables.csv; Machine-extracted source variable/value labels, not a complete authored codebook."
+    },
+    {
+      "reference_id": "us-vermont-energy-2007-cdd-vermont-energy-2007-survey-value-labels",
+      "poll_id": "vermont-energy-2007",
+      "kind": "codebook",
+      "title": "Source value-labels",
+      "url": null,
+      "local_artifact_id": "cdd-vermont-energy-2007-survey-value-labels",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/vermont-energy-2007/value-labels.csv; Machine-extracted source variable/value labels, not a complete authored codebook."
+    },
+    {
+      "reference_id": "us-vermont-energy-2007-cdd-vermont-energy-2007-questionnaire-post-key",
+      "poll_id": "vermont-energy-2007",
+      "kind": "questionnaire",
+      "title": "Original questionnaire-post-key.doc",
+      "url": null,
+      "local_artifact_id": "cdd-vermont-energy-2007-questionnaire-post-key",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/vermont-energy-2007/questionnaire-post-key.doc"
+    },
+    {
+      "reference_id": "us-vermont-energy-2007-cdd-vermont-energy-2007-questionnaire-pre",
+      "poll_id": "vermont-energy-2007",
+      "kind": "questionnaire",
+      "title": "Original questionnaire-pre.doc",
+      "url": null,
+      "local_artifact_id": "cdd-vermont-energy-2007-questionnaire-pre",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/vermont-energy-2007/questionnaire-pre.doc"
+    },
+    {
+      "reference_id": "us-vermont-energy-2007-material-4710440da6eb03c4-vermont-energy-2007",
+      "poll_id": "vermont-energy-2007",
+      "kind": "event-report",
+      "title": "Deliberative Polling on Vermont's Energy Future",
+      "url": null,
+      "local_artifact_id": "material-4710440da6eb03c4-vermont-energy-2007",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/vermont-energy-2007/reports/vermont-final-report.pdf"
+    },
+    {
+      "reference_id": "us-vermont-energy-2007-material-47b6df15a654578f-vermont-energy-2007",
+      "poll_id": "vermont-energy-2007",
+      "kind": "briefing-material",
+      "title": "Vermont’s Energy Future briefing materials",
+      "url": null,
+      "local_artifact_id": "material-47b6df15a654578f-vermont-energy-2007",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/vermont-energy-2007/briefing-materials/vermont-energy-briefing.pdf"
+    },
+    {
+      "reference_id": "us-vermont-energy-2007-material-e64dd7d44feac2a2-vermont-energy-2007",
+      "poll_id": "vermont-energy-2007",
+      "kind": "paper",
+      "title": "Taking it to the Streets: Innovative Public Engagement Process on Vermont’s Electricity Future",
+      "url": null,
+      "local_artifact_id": "material-e64dd7d44feac2a2-vermont-energy-2007",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/vermont-energy-2007/papers/taking-it-to-the-streets-2008.pdf"
+    },
+    {
+      "reference_id": "us-vermont-energy-2007-vermont-energy-briefing",
+      "poll_id": "vermont-energy-2007",
+      "kind": "briefing-material",
+      "title": "Vermont’s Energy Future briefing materials",
+      "url": "https://drive.google.com/file/d/1WLc-4uwAOQW-GDTxn7Ok9WZJIyDKoGS3/view",
+      "local_artifact_id": "material-47b6df15a654578f-vermont-energy-2007",
+      "accessed": "2026-09-24",
+      "notes": "Downloaded public source linked by Stanford event page."
+    },
+    {
+      "reference_id": "us-vermont-energy-2007-taking-it-to-the-streets-2008",
+      "poll_id": "vermont-energy-2007",
+      "kind": "paper",
+      "title": "Taking it to the Streets: Innovative Public Engagement Process on Vermont’s Electricity Future",
+      "url": "https://www.aceee.org/files/proceedings/2008/data/papers/5_373.pdf",
+      "local_artifact_id": "material-e64dd7d44feac2a2-vermont-energy-2007",
+      "accessed": "2026-09-24",
+      "notes": "ACEEE 2008 Summer Study proceedings; primary author account of Vermont process."
+    },
+    {
+      "reference_id": "us-vermont-energy-2007-stanford-event",
+      "poll_id": "vermont-energy-2007",
+      "kind": "event-report",
+      "title": "Deliberative Polling on Vermont’s Energy Future",
+      "url": "https://deliberation.stanford.edu/news/deliberative-pollingr-vermonts-energy-future",
+      "local_artifact_id": null,
+      "accessed": "2026-09-24",
+      "notes": "Official event overview; page publication timestamp is not assumed to equal event date."
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "vermont-energy-2007",
+      "material_type": "questionnaires",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-vermont-energy-2007-cdd-vermont-energy-2007-questionnaire-post-key;us-vermont-energy-2007-cdd-vermont-energy-2007-questionnaire-pre"
+    },
+    {
+      "poll_id": "vermont-energy-2007",
+      "material_type": "briefing-materials",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-vermont-energy-2007-material-47b6df15a654578f-vermont-energy-2007;us-vermont-energy-2007-vermont-energy-briefing"
+    },
+    {
+      "poll_id": "vermont-energy-2007",
+      "material_type": "event-reports",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-vermont-energy-2007-material-4710440da6eb03c4-vermont-energy-2007;us-vermont-energy-2007-stanford-event"
+    },
+    {
+      "poll_id": "vermont-energy-2007",
+      "material_type": "papers",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-vermont-energy-2007-material-e64dd7d44feac2a2-vermont-energy-2007;us-vermont-energy-2007-taking-it-to-the-streets-2008"
+    },
+    {
+      "poll_id": "vermont-energy-2007",
+      "material_type": "codebooks",
+      "status": "partial",
+      "notes": "Variable/value-label dictionaries and/or shared recode documentation are available; completeness as an authored poll-specific codebook is not established.",
+      "checked_references": "us-vermont-energy-2007-cdd-vermont-energy-2007-survey-variables;us-vermont-energy-2007-cdd-vermont-energy-2007-survey-value-labels"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "cor-sood-vermont-energy-2007",
+      "poll_id": "vermont-energy-2007",
+      "artifact_type": "data",
+      "title": "Cor-Sood scored knowledge battery",
+      "location": "data/vermont-energy-2007/knowledge-battery.csv",
+      "source_id": "cor-sood-vermont-energy-2007",
+      "original_archive_path": "replication/data.zip:data/vt.csv",
+      "sha256": "9a54514e2ebc32bf8f85877acaebf650e7ead449c8d76f810db45db6d4504925",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Scored binary items; row number is not a respondent identifier",
+      "relative_path": "knowledge-battery.csv"
+    },
+    {
+      "artifact_id": "cdd-vermont-energy-2007-survey",
+      "poll_id": "vermont-energy-2007",
+      "artifact_type": "data",
+      "title": "Reviewed poll-level survey",
+      "location": "data/vermont-energy-2007/survey.sav",
+      "source_id": "cdd-vermont-energy-2007-survey",
+      "original_archive_path": "data/Vermont/data/vt.sav",
+      "sha256": "eed94b5323824bf4d598b405923f2e8f9422cb864111f6d226b6bcdc53b9fefa",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "survey.sav"
+    },
+    {
+      "artifact_id": "cdd-vermont-energy-2007-survey-variables",
+      "poll_id": "vermont-energy-2007",
+      "artifact_type": "codebook",
+      "title": "Source variables",
+      "location": "data/vermont-energy-2007/variables.csv",
+      "source_id": "cdd-vermont-energy-2007-survey-variables",
+      "original_archive_path": "data/Vermont/data/vt.sav",
+      "sha256": "e61c004d64029911d71eaacb1b88e1551cdbdc0613d987b74f646051b080605b",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "variables.csv"
+    },
+    {
+      "artifact_id": "cdd-vermont-energy-2007-survey-value-labels",
+      "poll_id": "vermont-energy-2007",
+      "artifact_type": "codebook",
+      "title": "Source value-labels",
+      "location": "data/vermont-energy-2007/value-labels.csv",
+      "source_id": "cdd-vermont-energy-2007-survey-value-labels",
+      "original_archive_path": "data/Vermont/data/vt.sav",
+      "sha256": "f0044d449c2cb62af0c7602480f092794e7e69c55f1ce5c909886a99ca0ae273",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "value-labels.csv"
+    },
+    {
+      "artifact_id": "cdd-vermont-energy-2007-questionnaire-post-key",
+      "poll_id": "vermont-energy-2007",
+      "artifact_type": "questionnaire",
+      "title": "Original questionnaire-post-key.doc",
+      "location": "data/vermont-energy-2007/questionnaire-post-key.doc",
+      "source_id": "cdd-vermont-energy-2007-questionnaire-post-key",
+      "original_archive_path": "data/Vermont/Vermont SAQ T3 11-02-07 FINAL with starred correct answers.doc",
+      "sha256": "27c69fe47665f6ced42d9c7725eb7c81d358e21ac0ab980c8584c5750af631f8",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "questionnaire-post-key.doc"
+    },
+    {
+      "artifact_id": "cdd-vermont-energy-2007-questionnaire-pre",
+      "poll_id": "vermont-energy-2007",
+      "artifact_type": "questionnaire",
+      "title": "Original questionnaire-pre.doc",
+      "location": "data/vermont-energy-2007/questionnaire-pre.doc",
+      "source_id": "cdd-vermont-energy-2007-questionnaire-pre",
+      "original_archive_path": "data/Vermont/Vermont IAQ (Full) 09-28-07b.doc",
+      "sha256": "99406ad24dfee1ace1e78a15c508cc3ce3899e53ac1be1dcc19a2fdc024cd1ca",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "questionnaire-pre.doc"
+    },
+    {
+      "artifact_id": "material-4710440da6eb03c4-vermont-energy-2007",
+      "poll_id": "vermont-energy-2007",
+      "artifact_type": "event-report",
+      "title": "Deliberative Polling on Vermont's Energy Future",
+      "location": "data/vermont-energy-2007/reports/vermont-final-report.pdf",
+      "source_id": "material-4710440da6eb03c4",
+      "original_archive_path": null,
+      "sha256": "4710440da6eb03c4dd17688af09c7833d713c9aca2ec9ddf820b829689ff3db3",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Final report; published findings, sample and energy-policy context. Questionnaire-specific answer-key issues remain open. Source URL: https://drive.google.com/file/d/1tMxbnOMpXdymbPxy0ISiei-YrfxhmOvY/view. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "reports/vermont-final-report.pdf"
+    },
+    {
+      "artifact_id": "material-47b6df15a654578f-vermont-energy-2007",
+      "poll_id": "vermont-energy-2007",
+      "artifact_type": "briefing-material",
+      "title": "Vermont’s Energy Future briefing materials",
+      "location": "data/vermont-energy-2007/briefing-materials/vermont-energy-briefing.pdf",
+      "source_id": "material-47b6df15a654578f",
+      "original_archive_path": "https://drive.google.com/file/d/1WLc-4uwAOQW-GDTxn7Ok9WZJIyDKoGS3/view",
+      "sha256": "47b6df15a654578f5986e44c70610d0ae71cf11b850228e0bdc51e1b375a5b48",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Downloaded public source linked by Stanford event page.",
+      "relative_path": "briefing-materials/vermont-energy-briefing.pdf"
+    },
+    {
+      "artifact_id": "material-e64dd7d44feac2a2-vermont-energy-2007",
+      "poll_id": "vermont-energy-2007",
+      "artifact_type": "paper",
+      "title": "Taking it to the Streets: Innovative Public Engagement Process on Vermont’s Electricity Future",
+      "location": "data/vermont-energy-2007/papers/taking-it-to-the-streets-2008.pdf",
+      "source_id": "material-e64dd7d44feac2a2",
+      "original_archive_path": "https://www.aceee.org/files/proceedings/2008/data/papers/5_373.pdf",
+      "sha256": "e64dd7d44feac2a2b74a925963ff32fd14f425bfc14388aafa15057864d1d7f1",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "ACEEE 2008 Summer Study proceedings; primary author account of Vermont process.",
+      "relative_path": "papers/taking-it-to-the-streets-2008.pdf"
+    },
+    {
+      "artifact_id": "material-ff07d4e41e3b6489-vermont-energy-2007",
+      "poll_id": "vermont-energy-2007",
+      "artifact_type": "questionnaire",
+      "title": "Original questionnaire-post-key.doc (PDF preview)",
+      "location": "data/vermont-energy-2007/questionnaire-post-key.pdf",
+      "source_id": "material-ff07d4e41e3b6489",
+      "original_archive_path": null,
+      "sha256": "ff07d4e41e3b64898a76a6cdd134d4e173f1b83241435b32443e2982dfb7ebe9",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Generated from data/vermont-energy-2007/questionnaire-post-key.doc. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "relative_path": "questionnaire-post-key.pdf"
+    },
+    {
+      "artifact_id": "material-fc64a766aa30ab58-vermont-energy-2007",
+      "poll_id": "vermont-energy-2007",
+      "artifact_type": "questionnaire",
+      "title": "Original questionnaire-pre.doc (PDF preview)",
+      "location": "data/vermont-energy-2007/questionnaire-pre.pdf",
+      "source_id": "material-fc64a766aa30ab58",
+      "original_archive_path": null,
+      "sha256": "fc64a766aa30ab588af38544add01c3bf28185ee2761346c705184618779d823",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Generated from data/vermont-energy-2007/questionnaire-pre.doc. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "relative_path": "questionnaire-pre.pdf"
+    }
+  ],
+  "document_previews": [
+    {
+      "source_path": "data/vermont-energy-2007/questionnaire-post-key.doc",
+      "preview_path": "data/vermont-energy-2007/questionnaire-post-key.pdf",
+      "source_sha256": "27c69fe47665f6ced42d9c7725eb7c81d358e21ac0ab980c8584c5750af631f8",
+      "preview_sha256": "ff07d4e41e3b64898a76a6cdd134d4e173f1b83241435b32443e2982dfb7ebe9",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "17",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-representative-pages",
+      "visual_pages": "1;9;17",
+      "source_token_coverage": "0.9988893002591632",
+      "distinct_word_coverage": "1.0",
+      "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
+      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+    },
+    {
+      "source_path": "data/vermont-energy-2007/questionnaire-pre.doc",
+      "preview_path": "data/vermont-energy-2007/questionnaire-pre.pdf",
+      "source_sha256": "99406ad24dfee1ace1e78a15c508cc3ce3899e53ac1be1dcc19a2fdc024cd1ca",
+      "preview_sha256": "fc64a766aa30ab588af38544add01c3bf28185ee2761346c705184618779d823",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "11",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-representative-pages",
+      "visual_pages": "1;6;11",
+      "source_token_coverage": "1.0",
+      "distinct_word_coverage": "1.0",
+      "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
+      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+    }
+  ]
+}

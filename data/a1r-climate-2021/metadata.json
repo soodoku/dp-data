@@ -1,0 +1,297 @@
+{
+  "catalog": {
+    "poll_id": "a1r-climate-2021",
+    "title": "America in One Room: Climate",
+    "year": 2021,
+    "place": "United States",
+    "topic": "Climate and energy",
+    "mode": "face-to-face",
+    "collection": "public-replication"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "a1r-climate-2021",
+      "field": "event_dates",
+      "value": "Weeknight cohort: September 14, 16, 21 and 23, 2021; weekend cohort: September 25–26, 2021",
+      "reference_id": "us-a1r-climate-2021-material-c798742af8d64fbb-a1r-climate-2021",
+      "source_locator": "Study overview; Study-Specific Details; Table 1 and footnotes",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "a1r-climate-2021",
+      "field": "location",
+      "value": "United States online; California and Texas oversamples",
+      "reference_id": "us-a1r-climate-2021-material-c798742af8d64fbb-a1r-climate-2021",
+      "source_locator": "Study overview; Study-Specific Details; Table 1 and footnotes",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "a1r-climate-2021",
+      "field": "population",
+      "value": "U.S. adults age 18+, including oversampled California/Texas adults",
+      "reference_id": "us-a1r-climate-2021-material-c798742af8d64fbb-a1r-climate-2021",
+      "source_locator": "Study overview; Study-Specific Details; Table 1 and footnotes",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "a1r-climate-2021",
+      "field": "recruitment",
+      "value": "NORC AmeriSpeak probability-based panel; separate treatment/control samples; targeted followup to underrepresented invitees",
+      "reference_id": "us-a1r-climate-2021-material-c798742af8d64fbb-a1r-climate-2021",
+      "source_locator": "Study overview; Study-Specific Details; Table 1 and footnotes",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "a1r-climate-2021",
+      "field": "participants",
+      "value": "7,980 treatment pre-survey completions; 1,021 invited to post-survey after attending at least two events; 962 completed pre/post surveys and all events. Control completions: 834 pre-survey and 671 post-survey.",
+      "reference_id": "us-a1r-climate-2021-material-c798742af8d64fbb-a1r-climate-2021",
+      "source_locator": "Study overview; Study-Specific Details; Table 1 and footnotes",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "a1r-climate-2021",
+      "field": "mode",
+      "value": "Online deliberation on Stanford Platform for Online Deliberation",
+      "reference_id": "us-a1r-climate-2021-material-c798742af8d64fbb-a1r-climate-2021",
+      "source_locator": "Study overview; Study-Specific Details; Table 1 and footnotes",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "a1r-climate-2021",
+      "field": "topics",
+      "value": "Climate and energy policy pathways toward net-zero emissions",
+      "reference_id": "us-a1r-climate-2021-material-c798742af8d64fbb-a1r-climate-2021",
+      "source_locator": "Study overview; Study-Specific Details; Table 1 and footnotes",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "a1r-climate-2021",
+      "field": "organizers",
+      "value": "Helena; NORC; Stanford deliberative platform/research team; California Forward, Greater Houston Partnership, Center for Houston’s Future, In This Together partners",
+      "reference_id": "us-a1r-climate-2021-stanford-event",
+      "source_locator": "English Version and Partners",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "a1r-climate-2021",
+      "field": "participants",
+      "value": "Official page English summary 962; Spanish planned sample around 500; linked press headline 926",
+      "reference_id": "us-a1r-climate-2021-stanford-event",
+      "source_locator": "English Version, Español Versión, and Press",
+      "status": "conflicting",
+      "notes": "Planning-version/transposition conflicts; NORC methods report defines 962 complete participants and should anchor denominator."
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "us-a1r-climate-2021-material-76ae7185d1d8b5db-a1r-climate-2021",
+      "poll_id": "a1r-climate-2021",
+      "kind": "paper",
+      "title": "Scaling Dialogue for Democracy: Can Automated Deliberation Create More Deliberative Voters?",
+      "url": null,
+      "local_artifact_id": "material-76ae7185d1d8b5db-a1r-climate-2021",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/a1 r-climate-2021/papers/a 1 r-climate-paper.pdf"
+    },
+    {
+      "reference_id": "us-a1r-climate-2021-material-c798742af8d64fbb-a1r-climate-2021",
+      "poll_id": "a1r-climate-2021",
+      "kind": "research-design",
+      "title": "America in One Room Climate and Energy: AmeriSpeak project report",
+      "url": null,
+      "local_artifact_id": "material-c798742af8d64fbb-a1r-climate-2021",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/a1 r-climate-2021/design/a 1 r-climate-methods.pdf"
+    },
+    {
+      "reference_id": "us-a1r-climate-2021-material-041ca9052fe2cfc6-a1r-climate-2021",
+      "poll_id": "a1r-climate-2021",
+      "kind": "briefing-material",
+      "title": "America in One Room Climate and Energy: briefing document",
+      "url": null,
+      "local_artifact_id": "material-041ca9052fe2cfc6-a1r-climate-2021",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/a1 r-climate-2021/briefing-materials/a 1 r-climate-briefing.pdf"
+    },
+    {
+      "reference_id": "us-a1r-climate-2021-material-8373611151769a55-a1r-climate-2021",
+      "poll_id": "a1r-climate-2021",
+      "kind": "event-report",
+      "title": "America in One Room Climate and Energy: knowledge gains",
+      "url": null,
+      "local_artifact_id": "material-8373611151769a55-a1r-climate-2021",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/a1 r-climate-2021/reports/a 1 r-climate-knowledge.pdf"
+    },
+    {
+      "reference_id": "us-a1r-climate-2021-oos-climate-results",
+      "poll_id": "a1r-climate-2021",
+      "kind": "event-report",
+      "title": "a 1 r-climate-2021: climate_results.pdf",
+      "url": null,
+      "local_artifact_id": "oos-climate-results",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/a1 r-climate-2021/reports/climate_results.pdf"
+    },
+    {
+      "reference_id": "us-a1r-climate-2021-stanford-event",
+      "poll_id": "a1r-climate-2021",
+      "kind": "event-report",
+      "title": "America in One Room: Climate and Energy",
+      "url": "https://deliberation.stanford.edu/news/america-one-room-climate-and-energy",
+      "local_artifact_id": null,
+      "accessed": "2026-09-24",
+      "notes": "Official event overview; page publication timestamp is not assumed to equal event date."
+    },
+    {
+      "reference_id": "us-a1r-climate-2021-perspectives2025",
+      "poll_id": "a1r-climate-2021",
+      "kind": "paper",
+      "title": "Fishkin, Bolotnyy, Lerner, Siu, Bradburn, Scaling Dialogue for Democracy: Can Automated Deliberation Create More Deliberative Voters?",
+      "url": "https://www.cambridge.org/core/journals/perspectives-on-politics/article/scaling-dialogue-for-democracy-can-automated-deliberation-create-more-deliberative-voters/969F1ECDAE76F682F1E61550DEDD891D",
+      "local_artifact_id": "material-76ae7185d1d8b5db-a1r-climate-2021",
+      "accessed": "2026-09-24",
+      "notes": "Perspectives on Politics, published online January 3, 2025; research article includes 2021 experiment and 2022 midterm followup, which must not be conflated with baseline experiment counts."
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "a1r-climate-2021",
+      "material_type": "questionnaires",
+      "status": "partial",
+      "notes": "Methods, article and issue-result tables document questions and sample design, but a standalone full questionnaire/codebook was not verified in this pass. Follow public article replication supplements; do not treat briefing booklet as questionnaire.",
+      "checked_references": "us-a1r-climate-2021-material-76ae7185d1d8b5db-a1r-climate-2021;us-a1r-climate-2021-material-c798742af8d64fbb-a1r-climate-2021;us-a1r-climate-2021-material-8373611151769a55-a1r-climate-2021;us-a1r-climate-2021-oos-climate-results;us-a1r-climate-2021-stanford-event;us-a1r-climate-2021-perspectives2025"
+    },
+    {
+      "poll_id": "a1r-climate-2021",
+      "material_type": "briefing-materials",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-a1r-climate-2021-material-041ca9052fe2cfc6-a1r-climate-2021"
+    },
+    {
+      "poll_id": "a1r-climate-2021",
+      "material_type": "event-reports",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-a1r-climate-2021-material-8373611151769a55-a1r-climate-2021;us-a1r-climate-2021-oos-climate-results;us-a1r-climate-2021-stanford-event"
+    },
+    {
+      "poll_id": "a1r-climate-2021",
+      "material_type": "papers",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-a1r-climate-2021-material-76ae7185d1d8b5db-a1r-climate-2021;us-a1r-climate-2021-perspectives2025"
+    },
+    {
+      "poll_id": "a1r-climate-2021",
+      "material_type": "codebooks",
+      "status": "partial",
+      "notes": "Methods, article and issue-result tables document questions and sample design, but a standalone full questionnaire/codebook was not verified in this pass. Follow public article replication supplements; do not treat briefing booklet as questionnaire.",
+      "checked_references": "us-a1r-climate-2021-material-76ae7185d1d8b5db-a1r-climate-2021;us-a1r-climate-2021-material-c798742af8d64fbb-a1r-climate-2021;us-a1r-climate-2021-material-8373611151769a55-a1r-climate-2021;us-a1r-climate-2021-oos-climate-results;us-a1r-climate-2021-stanford-event;us-a1r-climate-2021-perspectives2025"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "a1r-climate-public-participants",
+      "poll_id": "a1r-climate-2021",
+      "artifact_type": "data",
+      "title": "America in One Room climate participant data",
+      "location": "data/a1r-climate-2021/participants.tab",
+      "source_id": "a1r-climate-2021",
+      "original_archive_path": null,
+      "sha256": "5e95a85c1fe356673c2b0a56d1e9aa463ab40e1defe3b33f1940ff83e5eee83a",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "CC0 Dataverse deposit",
+      "relative_path": "participants.tab"
+    },
+    {
+      "artifact_id": "material-76ae7185d1d8b5db-a1r-climate-2021",
+      "poll_id": "a1r-climate-2021",
+      "artifact_type": "paper",
+      "title": "Scaling Dialogue for Democracy: Can Automated Deliberation Create More Deliberative Voters?",
+      "location": "data/a1r-climate-2021/papers/a1r-climate-paper.pdf",
+      "source_id": "material-76ae7185d1d8b5db",
+      "original_archive_path": null,
+      "sha256": "76ae7185d1d8b5dbb9758565dfd7803ec936cc21fd8a2f6907137e6894b117a7",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Perspectives on Politics 2025, DOI 10.1017/S1537592724001749. Online deliberation with a one-year follow-up; keep immediate-post and follow-up wave identities separate. Source URL: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/969F1ECDAE76F682F1E61550DEDD891D/S1537592724001749a.pdf/div-class-title-scaling-dialogue-for-democracy-can-automated-deliberation-create-more-deliberative-voters-div.pdf. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "papers/a1r-climate-paper.pdf"
+    },
+    {
+      "artifact_id": "material-c798742af8d64fbb-a1r-climate-2021",
+      "poll_id": "a1r-climate-2021",
+      "artifact_type": "research-design",
+      "title": "America in One Room Climate and Energy: AmeriSpeak project report",
+      "location": "data/a1r-climate-2021/design/a1r-climate-methods.pdf",
+      "source_id": "material-c798742af8d64fbb",
+      "original_archive_path": null,
+      "sha256": "c798742af8d64fbb1bc192269dc8ff7dc988c960dd8473e70d989570f9926f6d",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "NORC report dated 11 October 2021. Recruitment, samples, weighting and web-based discussion mode; registry mode currently differs and is preserved for review. Source URL: https://drive.google.com/file/d/1g4hAYQ0e5tYl3MGJu8CqhqPx3bhDuvgc/view. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "design/a1r-climate-methods.pdf"
+    },
+    {
+      "artifact_id": "material-041ca9052fe2cfc6-a1r-climate-2021",
+      "poll_id": "a1r-climate-2021",
+      "artifact_type": "briefing-material",
+      "title": "America in One Room Climate and Energy: briefing document",
+      "location": "data/a1r-climate-2021/briefing-materials/a1r-climate-briefing.pdf",
+      "source_id": "material-041ca9052fe2cfc6",
+      "original_archive_path": null,
+      "sha256": "041ca9052fe2cfc65b38b342453ef7e244f95b6fd710312405e02589f54d9685",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Use contemporaneous policy and factual context when assessing knowledge answer keys; do not substitute current climate-policy facts. Source URL: https://drive.google.com/file/d/1VjXeIAH7ny7V8e4fmg8aSyRLtZaoEA9-/view. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "briefing-materials/a1r-climate-briefing.pdf"
+    },
+    {
+      "artifact_id": "material-8373611151769a55-a1r-climate-2021",
+      "poll_id": "a1r-climate-2021",
+      "artifact_type": "event-report",
+      "title": "America in One Room Climate and Energy: knowledge gains",
+      "location": "data/a1r-climate-2021/reports/a1r-climate-knowledge.pdf",
+      "source_id": "material-8373611151769a55",
+      "original_archive_path": null,
+      "sha256": "8373611151769a554fc0564612f676d621af3a7770637e16ff98c0bc8ba3d2d8",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Published knowledge summaries; align post-deliberation versus later follow-up waves and denominators before checking against scores. Source URL: https://drive.google.com/file/d/1LVUGwhR3aqTCGTEXz5i48tDDrtYXLg7q/view. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "reports/a1r-climate-knowledge.pdf"
+    },
+    {
+      "artifact_id": "oos-climate-results",
+      "poll_id": "a1r-climate-2021",
+      "artifact_type": "event-report",
+      "title": "a1r-climate-2021: climate_results.pdf",
+      "location": "data/a1r-climate-2021/reports/climate_results.pdf",
+      "source_id": "oos-climate-results",
+      "original_archive_path": null,
+      "sha256": "8e1e62bb1a722e184b4e7d75bbb2723c3bb630657f3749ccf5d6249440b12e6f",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged public OOS source; upstream centralization authorized. Study a1r-climate-2021. Original URL in oos_sources.",
+      "relative_path": "reports/climate_results.pdf"
+    }
+  ],
+  "document_previews": []
+}

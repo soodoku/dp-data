@@ -1,0 +1,438 @@
+{
+  "catalog": {
+    "poll_id": "denmark-euro-2000",
+    "title": "Denmark: Euro",
+    "year": 2000,
+    "place": "Denmark",
+    "topic": "Adopting the euro",
+    "mode": "face-to-face",
+    "collection": "cdd"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "denmark-euro-2000",
+      "field": "event_dates",
+      "value": "26–27 August 2000 (effective deliberation); enrollment checked 25 August",
+      "reference_id": "denmark-euro-2000-danish-paper",
+      "source_locator": "pp.531–533, Table 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "field": "location",
+      "value": "Odense, Denmark",
+      "reference_id": "denmark-euro-2000-danish-paper",
+      "source_locator": "pp.531–533, Table 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "field": "participants",
+      "value": "1,702 recruitment interviews; 386 enrolled by 25 August; 364 effective participants",
+      "reference_id": "denmark-euro-2000-danish-paper",
+      "source_locator": "pp.531–533, Table 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "field": "recruitment",
+      "value": "Simple random sampling; telephone recruitment 1–8 August; repeated invitations and confirmation",
+      "reference_id": "denmark-euro-2000-danish-paper",
+      "source_locator": "pp.531–533, Table 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "field": "population",
+      "value": "Danish electorate",
+      "reference_id": "denmark-euro-2000-danish-paper",
+      "source_locator": "pp.531–533, Table 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "field": "mode",
+      "value": "In-person deliberation, with four survey occasions",
+      "reference_id": "denmark-euro-2000-danish-paper",
+      "source_locator": "pp.531–533, Table 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "field": "topics",
+      "value": "Whether Denmark should adopt the euro",
+      "reference_id": "denmark-euro-2000-danish-paper",
+      "source_locator": "pp.531–533, Table 1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "field": "participants",
+      "value": "384 participants in Stanford overview",
+      "reference_id": "denmark-euro-2000-stanford-event",
+      "source_locator": "Opening paragraph",
+      "status": "conflicting",
+      "notes": "Author paper Table 1 reports 364 effective participants; retain both source claims, not a silently chosen total."
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "denmark-euro-2000-stanford-event",
+      "poll_id": "denmark-euro-2000",
+      "kind": "event-report",
+      "title": "Deliberative Polling on a Single European Currency for Denmark",
+      "url": "https://deliberation.stanford.edu/news/deliberative-pollingr-single-european-currency-denmark",
+      "local_artifact_id": null,
+      "accessed": "2026-09-24",
+      "notes": "Official source; publication date is not necessarily event date."
+    },
+    {
+      "reference_id": "denmark-euro-2000-local-cdd-denmark-euro-2000-survey-variables",
+      "poll_id": "denmark-euro-2000",
+      "kind": "codebook",
+      "title": "Source variables",
+      "url": null,
+      "local_artifact_id": "cdd-denmark-euro-2000-survey-variables",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/denmark-euro-2000/variables.csv"
+    },
+    {
+      "reference_id": "denmark-euro-2000-local-cdd-denmark-euro-2000-survey-value-labels",
+      "poll_id": "denmark-euro-2000",
+      "kind": "codebook",
+      "title": "Source value-labels",
+      "url": null,
+      "local_artifact_id": "cdd-denmark-euro-2000-survey-value-labels",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/denmark-euro-2000/value-labels.csv"
+    },
+    {
+      "reference_id": "denmark-euro-2000-local-cdd-denmark-euro-2000-departure-variables",
+      "poll_id": "denmark-euro-2000",
+      "kind": "codebook",
+      "title": "Source variables",
+      "url": null,
+      "local_artifact_id": "cdd-denmark-euro-2000-departure-variables",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/denmark-euro-2000/departure-variables.csv"
+    },
+    {
+      "reference_id": "denmark-euro-2000-local-cdd-denmark-euro-2000-departure-value-labels",
+      "poll_id": "denmark-euro-2000",
+      "kind": "codebook",
+      "title": "Source value-labels",
+      "url": null,
+      "local_artifact_id": "cdd-denmark-euro-2000-departure-value-labels",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/denmark-euro-2000/departure-value-labels.csv"
+    },
+    {
+      "reference_id": "denmark-euro-2000-local-cdd-denmark-euro-2000-questionnaire",
+      "poll_id": "denmark-euro-2000",
+      "kind": "questionnaire",
+      "title": "Original questionnaire.pdf",
+      "url": null,
+      "local_artifact_id": "cdd-denmark-euro-2000-questionnaire",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/denmark-euro-2000/questionnaire.pdf"
+    },
+    {
+      "reference_id": "denmark-euro-2000-local-material-ee26ba3b4b986754-denmark-euro-2000",
+      "poll_id": "denmark-euro-2000",
+      "kind": "questionnaire",
+      "title": "Denmark euro questionnaire",
+      "url": null,
+      "local_artifact_id": "material-ee26ba3b4b986754-denmark-euro-2000",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/denmark-euro-2000/questionnaires/denmark-questionnaire.pdf"
+    },
+    {
+      "reference_id": "denmark-euro-2000-local-material-74c9b79b98a13028-denmark-euro-2000",
+      "poll_id": "denmark-euro-2000",
+      "kind": "event-report",
+      "title": "Denmark euro results",
+      "url": null,
+      "local_artifact_id": "material-74c9b79b98a13028-denmark-euro-2000",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/denmark-euro-2000/reports/denmark-results.pdf"
+    },
+    {
+      "reference_id": "denmark-euro-2000-local-material-c14992b83e1071df-denmark-euro-2000",
+      "poll_id": "denmark-euro-2000",
+      "kind": "paper",
+      "title": "How deliberation makes better citizens: The Danish Deliberative Poll on the euro",
+      "url": null,
+      "local_artifact_id": "material-c14992b83e1071df-denmark-euro-2000",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/denmark-euro-2000/papers/how-deliberation-makes-better-citizens.pdf"
+    },
+    {
+      "reference_id": "denmark-euro-2000-local-material-63b8bfe9d098fd38-denmark-euro-2000",
+      "poll_id": "denmark-euro-2000",
+      "kind": "paper",
+      "title": "Deliberative Democracy and the Deliberative Poll on the Euro",
+      "url": null,
+      "local_artifact_id": "material-63b8bfe9d098fd38-denmark-euro-2000",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/denmark-euro-2000/papers/deliberative-democracy-euro.pdf"
+    },
+    {
+      "reference_id": "denmark-euro-2000-download-material-c14992b83e1071df",
+      "poll_id": "denmark-euro-2000",
+      "kind": "paper",
+      "title": "How deliberation makes better citizens: The Danish Deliberative Poll on the euro",
+      "url": "https://www.kaspermhansen.eu/Work/andersen_hansen_2007.pdf",
+      "local_artifact_id": "material-c14992b83e1071df-denmark-euro-2000",
+      "accessed": "2026-09-24",
+      "notes": "Public source downloaded 2026-09-24; SHA-256 c14992b83e1071dfca4d3e042d7e06716dc9b3a08919ab294819b4e514d93862"
+    },
+    {
+      "reference_id": "denmark-euro-2000-download-material-63b8bfe9d098fd38",
+      "poll_id": "denmark-euro-2000",
+      "kind": "paper",
+      "title": "Deliberative Democracy and the Deliberative Poll on the Euro",
+      "url": "https://drive.google.com/uc?export=download&id=1h8p1NCQ6TqL8RQzdqKXBZpBdCD4VQ-4R",
+      "local_artifact_id": "material-63b8bfe9d098fd38-denmark-euro-2000",
+      "accessed": "2026-09-24",
+      "notes": "Public source downloaded 2026-09-24; SHA-256 63b8bfe9d098fd38f3fe9695b9ea4eea0d7b188c28e6cf73db8866a08f14f2a1"
+    },
+    {
+      "reference_id": "denmark-euro-2000-danish-paper",
+      "poll_id": "denmark-euro-2000",
+      "kind": "paper",
+      "title": "How deliberation makes better citizens: The Danish Deliberative Poll on the euro",
+      "url": "https://www.kaspermhansen.eu/Work/andersen_hansen_2007.pdf",
+      "local_artifact_id": "material-c14992b83e1071df-denmark-euro-2000",
+      "accessed": "2026-09-24",
+      "notes": "Local file: data/denmark-euro-2000/papers/how-deliberation-makes-better-citizens.pdf"
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "denmark-euro-2000",
+      "material_type": "questionnaires",
+      "status": "available",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "denmark-euro-2000-local-cdd-denmark-euro-2000-questionnaire;denmark-euro-2000-local-material-ee26ba3b4b986754-denmark-euro-2000"
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "material_type": "briefing-materials",
+      "status": "not-found",
+      "notes": "No event-specific briefing file located in inspected local poll manifests or official project/research links; not evidence that no briefing existed.",
+      "checked_references": "denmark-euro-2000-stanford-event;denmark-euro-2000-local-cdd-denmark-euro-2000-survey-variables;denmark-euro-2000-local-cdd-denmark-euro-2000-survey-value-labels;denmark-euro-2000-local-cdd-denmark-euro-2000-departure-variables;denmark-euro-2000-local-cdd-denmark-euro-2000-departure-value-labels;denmark-euro-2000-local-cdd-denmark-euro-2000-questionnaire;denmark-euro-2000-local-material-ee26ba3b4b986754-denmark-euro-2000;denmark-euro-2000-local-material-74c9b79b98a13028-denmark-euro-2000;denmark-euro-2000-local-material-c14992b83e1071df-denmark-euro-2000;denmark-euro-2000-local-material-63b8bfe9d098fd38-denmark-euro-2000;denmark-euro-2000-download-material-c14992b83e1071df;denmark-euro-2000-download-material-63b8bfe9d098fd38;denmark-euro-2000-danish-paper"
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "material_type": "event-reports",
+      "status": "available",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "denmark-euro-2000-stanford-event;denmark-euro-2000-local-material-74c9b79b98a13028-denmark-euro-2000"
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "material_type": "papers",
+      "status": "available",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "denmark-euro-2000-local-material-c14992b83e1071df-denmark-euro-2000;denmark-euro-2000-local-material-63b8bfe9d098fd38-denmark-euro-2000;denmark-euro-2000-download-material-c14992b83e1071df;denmark-euro-2000-download-material-63b8bfe9d098fd38;denmark-euro-2000-danish-paper"
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "material_type": "codebooks",
+      "status": "partial",
+      "notes": "Generated variable/value-label dictionaries available where listed; a complete fielded codebook and all missing-value/routing instructions are not thereby established.",
+      "checked_references": "denmark-euro-2000-local-cdd-denmark-euro-2000-survey-variables;denmark-euro-2000-local-cdd-denmark-euro-2000-survey-value-labels;denmark-euro-2000-local-cdd-denmark-euro-2000-departure-variables;denmark-euro-2000-local-cdd-denmark-euro-2000-departure-value-labels"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "cor-sood-denmark-euro-2000",
+      "poll_id": "denmark-euro-2000",
+      "artifact_type": "data",
+      "title": "Cor-Sood scored knowledge battery",
+      "location": "data/denmark-euro-2000/knowledge-battery.csv",
+      "source_id": "cor-sood-denmark-euro-2000",
+      "original_archive_path": "replication/data.zip:data/dk.csv",
+      "sha256": "b9d9892b5e0c406ae77c41ef54cb82479bb55506c5c806332f22f3029d1a2cbb",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Scored binary items; row number is not a respondent identifier",
+      "relative_path": "knowledge-battery.csv"
+    },
+    {
+      "artifact_id": "cdd-denmark-euro-2000-survey",
+      "poll_id": "denmark-euro-2000",
+      "artifact_type": "data",
+      "title": "Reviewed poll-level survey",
+      "location": "data/denmark-euro-2000/survey.parquet",
+      "source_id": "cdd-denmark-euro-2000-survey",
+      "original_archive_path": "data/Denmark/data/t0english.sav",
+      "sha256": "c6d0c21006eb4cb3efdb6a0f2105d49b8a636fa516801b5cd25077c2f32abd7a",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-redacted",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "survey.parquet"
+    },
+    {
+      "artifact_id": "cdd-denmark-euro-2000-survey-variables",
+      "poll_id": "denmark-euro-2000",
+      "artifact_type": "codebook",
+      "title": "Source variables",
+      "location": "data/denmark-euro-2000/variables.csv",
+      "source_id": "cdd-denmark-euro-2000-survey-variables",
+      "original_archive_path": "data/Denmark/data/t0english.sav",
+      "sha256": "3c3a462ab41f23d6cef0aed34013536424b3052bcc78c56f84a94a7eb9e8c031",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "variables.csv"
+    },
+    {
+      "artifact_id": "cdd-denmark-euro-2000-survey-value-labels",
+      "poll_id": "denmark-euro-2000",
+      "artifact_type": "codebook",
+      "title": "Source value-labels",
+      "location": "data/denmark-euro-2000/value-labels.csv",
+      "source_id": "cdd-denmark-euro-2000-survey-value-labels",
+      "original_archive_path": "data/Denmark/data/t0english.sav",
+      "sha256": "ff52ee83a0918671dff6c1847c001f610b83d6ff4db3684442e88bc4e5eebb42",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "value-labels.csv"
+    },
+    {
+      "artifact_id": "cdd-denmark-euro-2000-departure",
+      "poll_id": "denmark-euro-2000",
+      "artifact_type": "data",
+      "title": "Reviewed poll-level survey",
+      "location": "data/denmark-euro-2000/departure.parquet",
+      "source_id": "cdd-denmark-euro-2000-departure",
+      "original_archive_path": "data/Denmark/data/t2.sav",
+      "sha256": "eaef4b0c1c88f3a04cc7e736d3f7b4abcaa7cffbf0c90794f88fa014901da54d",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-redacted",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "departure.parquet"
+    },
+    {
+      "artifact_id": "cdd-denmark-euro-2000-departure-variables",
+      "poll_id": "denmark-euro-2000",
+      "artifact_type": "codebook",
+      "title": "Source variables",
+      "location": "data/denmark-euro-2000/departure-variables.csv",
+      "source_id": "cdd-denmark-euro-2000-departure-variables",
+      "original_archive_path": "data/Denmark/data/t2.sav",
+      "sha256": "2fd96993f6ee549ad7ab669c01c031d9ae0b140e46462651284bfdfc6c1015f0",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "departure-variables.csv"
+    },
+    {
+      "artifact_id": "cdd-denmark-euro-2000-departure-value-labels",
+      "poll_id": "denmark-euro-2000",
+      "artifact_type": "codebook",
+      "title": "Source value-labels",
+      "location": "data/denmark-euro-2000/departure-value-labels.csv",
+      "source_id": "cdd-denmark-euro-2000-departure-value-labels",
+      "original_archive_path": "data/Denmark/data/t2.sav",
+      "sha256": "dc70bffb0358fa462692a7d6b388d115240826ba967a29fbf0b822429395322f",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "departure-value-labels.csv"
+    },
+    {
+      "artifact_id": "cdd-denmark-euro-2000-questionnaire",
+      "poll_id": "denmark-euro-2000",
+      "artifact_type": "questionnaire",
+      "title": "Original questionnaire.pdf",
+      "location": "data/denmark-euro-2000/questionnaire.pdf",
+      "source_id": "cdd-denmark-euro-2000-questionnaire",
+      "original_archive_path": "data/Denmark/questionnaire/DP DK Qaire (English).pdf",
+      "sha256": "5bc8044a853f8401528614a8083eef6618bb2e1fd8a5dbc803e9cd0566604aee",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "questionnaire.pdf"
+    },
+    {
+      "artifact_id": "material-ee26ba3b4b986754-denmark-euro-2000",
+      "poll_id": "denmark-euro-2000",
+      "artifact_type": "questionnaire",
+      "title": "Denmark euro questionnaire",
+      "location": "data/denmark-euro-2000/questionnaires/denmark-questionnaire.pdf",
+      "source_id": "material-ee26ba3b4b986754",
+      "original_archive_path": null,
+      "sha256": "ee26ba3b4b986754eea7766da220f58df282e95b48779dda11a8463a71202c8b",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Compare instrument wording and wave-specific response categories; item review pending. Source URL: https://drive.google.com/uc?export=download&id=1OhgsVAx7iUztvbx2CYgsjbeyv-sJUoBJ. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "questionnaires/denmark-questionnaire.pdf"
+    },
+    {
+      "artifact_id": "material-74c9b79b98a13028-denmark-euro-2000",
+      "poll_id": "denmark-euro-2000",
+      "artifact_type": "event-report",
+      "title": "Denmark euro results",
+      "location": "data/denmark-euro-2000/reports/denmark-results.pdf",
+      "source_id": "material-74c9b79b98a13028",
+      "original_archive_path": null,
+      "sha256": "74c9b79b98a130286579555f09678632a5826f36637b85d4296f2db5c461cc0c",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Independent reported results; reconcile arrival/departure samples and weights before parity checks. Source URL: https://drive.google.com/file/d/1jZKxlxSyA8jufZ3AOjf2-1ek1RHYACyh/view?usp=sharing. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "reports/denmark-results.pdf"
+    },
+    {
+      "artifact_id": "material-c14992b83e1071df-denmark-euro-2000",
+      "poll_id": "denmark-euro-2000",
+      "artifact_type": "paper",
+      "title": "How deliberation makes better citizens: The Danish Deliberative Poll on the euro",
+      "location": "data/denmark-euro-2000/papers/how-deliberation-makes-better-citizens.pdf",
+      "source_id": "material-c14992b83e1071df",
+      "original_archive_path": "https://www.kaspermhansen.eu/Work/andersen_hansen_2007.pdf",
+      "sha256": "c14992b83e1071dfca4d3e042d7e06716dc9b3a08919ab294819b4e514d93862",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Public source downloaded 2026-09-24; SHA-256 c14992b83e1071dfca4d3e042d7e06716dc9b3a08919ab294819b4e514d93862",
+      "relative_path": "papers/how-deliberation-makes-better-citizens.pdf"
+    },
+    {
+      "artifact_id": "material-63b8bfe9d098fd38-denmark-euro-2000",
+      "poll_id": "denmark-euro-2000",
+      "artifact_type": "paper",
+      "title": "Deliberative Democracy and the Deliberative Poll on the Euro",
+      "location": "data/denmark-euro-2000/papers/deliberative-democracy-euro.pdf",
+      "source_id": "material-63b8bfe9d098fd38",
+      "original_archive_path": "https://drive.google.com/uc?export=download&id=1h8p1NCQ6TqL8RQzdqKXBZpBdCD4VQ-4R",
+      "sha256": "63b8bfe9d098fd38f3fe9695b9ea4eea0d7b188c28e6cf73db8866a08f14f2a1",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Public source downloaded 2026-09-24; SHA-256 63b8bfe9d098fd38f3fe9695b9ea4eea0d7b188c28e6cf73db8866a08f14f2a1",
+      "relative_path": "papers/deliberative-democracy-euro.pdf"
+    }
+  ],
+  "document_previews": []
+}

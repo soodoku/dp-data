@@ -1,0 +1,321 @@
+{
+  "catalog": {
+    "poll_id": "bulgaria-2007",
+    "title": "Bulgarian National",
+    "year": 2007,
+    "place": "Bulgaria",
+    "topic": "Roma housing, crime and education",
+    "mode": "face-to-face",
+    "collection": "cdd"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "bulgaria-2007",
+      "field": "event_dates",
+      "value": "14–15 April 2007",
+      "reference_id": "bulgaria-2007-cls-event",
+      "source_locator": "Project description",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "bulgaria-2007",
+      "field": "organizers",
+      "value": "Centre for Liberal Strategies, Alpha Research, Bulgarian National Television, NGO Links and Open Society Institute Sofia",
+      "reference_id": "bulgaria-2007-cls-event",
+      "source_locator": "Project description",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "bulgaria-2007",
+      "field": "participants",
+      "value": "255 event participants drawn nationwide",
+      "reference_id": "bulgaria-2007-cls-event",
+      "source_locator": "Project description",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "bulgaria-2007",
+      "field": "recruitment",
+      "value": "National random sample recruited by Alpha Research",
+      "reference_id": "bulgaria-2007-cls-event",
+      "source_locator": "Project description",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "bulgaria-2007",
+      "field": "population",
+      "value": "Bulgarian citizenry",
+      "reference_id": "bulgaria-2007-cls-event",
+      "source_locator": "Project description",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "bulgaria-2007",
+      "field": "mode",
+      "value": "In-person weekend, televised nationally",
+      "reference_id": "bulgaria-2007-cls-event",
+      "source_locator": "Project description",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "bulgaria-2007",
+      "field": "topics",
+      "value": "Roma housing, criminal justice and education",
+      "reference_id": "bulgaria-2007-cls-event",
+      "source_locator": "Project description",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "bulgaria-2007",
+      "field": "location",
+      "value": "National Palace of Culture, Sofia",
+      "reference_id": "bulgaria-2007-cls-event",
+      "source_locator": "Project description",
+      "status": "conflicting",
+      "notes": "Organizer and executive summary agree; working paper instead names Park Hotel Moskva."
+    },
+    {
+      "poll_id": "bulgaria-2007",
+      "field": "location",
+      "value": "Park Hotel Moskva, Sofia",
+      "reference_id": "bulgaria-2007-roma-working-paper",
+      "source_locator": "PDF p.4, About the Bulgarian Deliberative Poll",
+      "status": "conflicting",
+      "notes": "Paper also calls it first Bulgarian poll despite documented 2002 event; preserve as source-version conflict."
+    },
+    {
+      "poll_id": "bulgaria-2007",
+      "field": "participants",
+      "value": "1,344 baseline questionnaires; 255 attendees assigned to 17 groups",
+      "reference_id": "bulgaria-2007-roma-working-paper",
+      "source_locator": "PDF p.4",
+      "status": "reported",
+      "notes": null
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "bulgaria-2007-stanford-event",
+      "poll_id": "bulgaria-2007",
+      "kind": "event-report",
+      "title": "Deliberative Polling on Policies toward the Roma in Bulgaria",
+      "url": "https://deliberation.stanford.edu/news/deliberative-pollingr-policies-toward-roma-bulgaria",
+      "local_artifact_id": null,
+      "accessed": "2026-09-24",
+      "notes": "Official source; publication date is not necessarily event date."
+    },
+    {
+      "reference_id": "bulgaria-2007-local-material-e08ccad4db68fd52-bulgaria-2007",
+      "poll_id": "bulgaria-2007",
+      "kind": "press-release",
+      "title": "Deliberative Poll Supports Integration of the Roma in Bulgarian Society: Prime Minister Lauds Process",
+      "url": null,
+      "local_artifact_id": "material-e08ccad4db68fd52-bulgaria-2007",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/bulgaria-2007/reports/bulgaria-results.pdf"
+    },
+    {
+      "reference_id": "bulgaria-2007-local-material-d1ce28351e39622b-bulgaria-2007",
+      "poll_id": "bulgaria-2007",
+      "kind": "press-release",
+      "title": "Bulgaria Roma integration results",
+      "url": null,
+      "local_artifact_id": "material-d1ce28351e39622b-bulgaria-2007",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/bulgaria-2007/reports/bulgaria-roma-results.pdf Results announcement; same extracted text as archive Bulgaria.Results PDF, different file bytes."
+    },
+    {
+      "reference_id": "bulgaria-2007-local-material-a7b7e414d0937f7a-bulgaria-2007",
+      "poll_id": "bulgaria-2007",
+      "kind": "paper",
+      "title": "Deliberating in Deep Divisions: Policies Toward the Roma in Bulgaria",
+      "url": null,
+      "local_artifact_id": "material-a7b7e414d0937f7a-bulgaria-2007",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/bulgaria-2007/papers/deliberating-deep-divisions-roma.pdf"
+    },
+    {
+      "reference_id": "bulgaria-2007-local-material-c64d658b4e543709-bulgaria-2007",
+      "poll_id": "bulgaria-2007",
+      "kind": "event-report",
+      "title": "National Deliberative Poll: Policies toward the Roma in Bulgaria, Executive Summary",
+      "url": null,
+      "local_artifact_id": "material-c64d658b4e543709-bulgaria-2007",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/bulgaria-2007/reports/roma-executive-summary.pdf"
+    },
+    {
+      "reference_id": "bulgaria-2007-download-material-a7b7e414d0937f7a",
+      "poll_id": "bulgaria-2007",
+      "kind": "paper",
+      "title": "Deliberating in Deep Divisions: Policies Toward the Roma in Bulgaria",
+      "url": "https://docs.google.com/document/d/1Lk-QTi2NVH4fSPLfZRJbVovonPYdtuQM/export?format=pdf",
+      "local_artifact_id": "material-a7b7e414d0937f7a-bulgaria-2007",
+      "accessed": "2026-09-24",
+      "notes": "Public source downloaded 2026-09-24; SHA-256 a7b7e414d0937f7a7118bfc0b551c28454546d0015ead56460503653ca294a29"
+    },
+    {
+      "reference_id": "bulgaria-2007-download-material-c64d658b4e543709",
+      "poll_id": "bulgaria-2007",
+      "kind": "event-report",
+      "title": "National Deliberative Poll: Policies toward the Roma in Bulgaria, Executive Summary",
+      "url": "https://s3.amazonaws.com/participedia.prod/4511d18d-35b7-4c6b-8968-201c4b35391c",
+      "local_artifact_id": "material-c64d658b4e543709-bulgaria-2007",
+      "accessed": "2026-09-24",
+      "notes": "Public source downloaded 2026-09-24; SHA-256 c64d658b4e543709af7a057382e1408303f7c34f85320924ead154010eda2011"
+    },
+    {
+      "reference_id": "bulgaria-2007-download-material-87cbe5fd80dce462",
+      "poll_id": "bulgaria-2007",
+      "kind": "briefing-material",
+      "title": "Policies Toward the Roma in Bulgaria: Ghettos, Crime and Education",
+      "url": "https://s3.amazonaws.com/participedia.prod/09b832e3-4c39-4fa6-b154-59db7d7affa3",
+      "local_artifact_id": "material-87cbe5fd80dce462-bulgaria-2007",
+      "accessed": "2026-09-24",
+      "notes": "Public English briefing hosted by Participedia; event-specific content inspected; SHA-256 87cbe5fd80dce462a461b67699bc031a67e7861a0a5d8a9e1ac9eeb0d3ec9892"
+    },
+    {
+      "reference_id": "bulgaria-2007-cls-event",
+      "poll_id": "bulgaria-2007",
+      "kind": "event-report",
+      "title": "National Deliberative Poll: Policies toward the Roma in Bulgaria",
+      "url": "https://cls-sofia.org/tpost/4o9sabnyz1-national-deliberative-poll-policies-towa",
+      "local_artifact_id": null,
+      "accessed": "2026-09-24",
+      "notes": "Official source; publication date is not necessarily event date."
+    },
+    {
+      "reference_id": "bulgaria-2007-roma-working-paper",
+      "poll_id": "bulgaria-2007",
+      "kind": "paper",
+      "title": "Deliberating in Deep Divisions: Policies Toward the Roma in Bulgaria",
+      "url": "https://docs.google.com/document/d/1Lk-QTi2NVH4fSPLfZRJbVovonPYdtuQM/edit",
+      "local_artifact_id": "material-a7b7e414d0937f7a-bulgaria-2007",
+      "accessed": "2026-09-24",
+      "notes": "Siu, Fishkin and Giles, ISPP 2014 conference paper; event label and venue conflict with organizer."
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "bulgaria-2007",
+      "material_type": "questionnaires",
+      "status": "not-found",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "bulgaria-2007-stanford-event;bulgaria-2007-local-material-e08ccad4db68fd52-bulgaria-2007;bulgaria-2007-local-material-d1ce28351e39622b-bulgaria-2007;bulgaria-2007-local-material-a7b7e414d0937f7a-bulgaria-2007;bulgaria-2007-local-material-c64d658b4e543709-bulgaria-2007;bulgaria-2007-download-material-a7b7e414d0937f7a;bulgaria-2007-download-material-c64d658b4e543709;bulgaria-2007-download-material-87cbe5fd80dce462;bulgaria-2007-cls-event;bulgaria-2007-roma-working-paper"
+    },
+    {
+      "poll_id": "bulgaria-2007",
+      "material_type": "briefing-materials",
+      "status": "available",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "bulgaria-2007-download-material-87cbe5fd80dce462"
+    },
+    {
+      "poll_id": "bulgaria-2007",
+      "material_type": "event-reports",
+      "status": "available",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "bulgaria-2007-stanford-event;bulgaria-2007-local-material-d1ce28351e39622b-bulgaria-2007;bulgaria-2007-local-material-c64d658b4e543709-bulgaria-2007;bulgaria-2007-download-material-c64d658b4e543709;bulgaria-2007-cls-event"
+    },
+    {
+      "poll_id": "bulgaria-2007",
+      "material_type": "papers",
+      "status": "available",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "bulgaria-2007-local-material-a7b7e414d0937f7a-bulgaria-2007;bulgaria-2007-download-material-a7b7e414d0937f7a;bulgaria-2007-roma-working-paper"
+    },
+    {
+      "poll_id": "bulgaria-2007",
+      "material_type": "codebooks",
+      "status": "not-found",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "bulgaria-2007-stanford-event;bulgaria-2007-local-material-e08ccad4db68fd52-bulgaria-2007;bulgaria-2007-local-material-d1ce28351e39622b-bulgaria-2007;bulgaria-2007-local-material-a7b7e414d0937f7a-bulgaria-2007;bulgaria-2007-local-material-c64d658b4e543709-bulgaria-2007;bulgaria-2007-download-material-a7b7e414d0937f7a;bulgaria-2007-download-material-c64d658b4e543709;bulgaria-2007-download-material-87cbe5fd80dce462;bulgaria-2007-cls-event;bulgaria-2007-roma-working-paper"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "material-e08ccad4db68fd52-bulgaria-2007",
+      "poll_id": "bulgaria-2007",
+      "artifact_type": "press-release",
+      "title": "Deliberative Poll Supports Integration of the Roma in Bulgarian Society",
+      "location": "data/bulgaria-2007/reports/bulgaria-results.pdf",
+      "source_id": "material-e08ccad4db68fd52",
+      "original_archive_path": "meta_data/cdd_papers/Bulgaria.Results.pdf",
+      "sha256": "e08ccad4db68fd52f0ceddbf5aff4fc4c16db57f8269fb73919a2e74be833a0b",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Historical metadata archive; content classified for reference. Instrument-to-variable and version-specific comparisons remain required. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Classified by contents as an event-results press release with quotations and media contacts; not a research paper. Original bytes preserved. Title Prime Minister Lauds Process; narrative announcement with policy-change highlights, no research design/analysis section. Extracted text equals existing reports/bulgaria-roma-results.pdf although file hashes differ. Keep distinct source bytes and describe relationship.",
+      "relative_path": "reports/bulgaria-results.pdf"
+    },
+    {
+      "artifact_id": "material-d1ce28351e39622b-bulgaria-2007",
+      "poll_id": "bulgaria-2007",
+      "artifact_type": "press-release",
+      "title": "Bulgaria Roma integration results",
+      "location": "data/bulgaria-2007/reports/bulgaria-roma-results.pdf",
+      "source_id": "material-d1ce28351e39622b",
+      "original_archive_path": null,
+      "sha256": "d1ce28351e39622b44961cbf6dc7144ccc8a773e414ed5ce78e51c7ad4d4cf70",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Distinct April 2007 event on housing, crime and education; do not use as the 2002 crime-poll benchmark. Source URL: https://drive.google.com/file/d/1naRtgC3kqvXRr61Yz_C8jJpEsPydLfj2/view?usp=sharing. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Same results-announcement text as Bulgaria.Results.pdf; title Prime Minister Lauds Process. No research article structure.",
+      "relative_path": "reports/bulgaria-roma-results.pdf"
+    },
+    {
+      "artifact_id": "material-a7b7e414d0937f7a-bulgaria-2007",
+      "poll_id": "bulgaria-2007",
+      "artifact_type": "paper",
+      "title": "Deliberating in Deep Divisions: Policies Toward the Roma in Bulgaria",
+      "location": "data/bulgaria-2007/papers/deliberating-deep-divisions-roma.pdf",
+      "source_id": "material-a7b7e414d0937f7a",
+      "original_archive_path": "https://docs.google.com/document/d/1Lk-QTi2NVH4fSPLfZRJbVovonPYdtuQM/export?format=pdf",
+      "sha256": "a7b7e414d0937f7a7118bfc0b551c28454546d0015ead56460503653ca294a29",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Public source downloaded 2026-09-24; SHA-256 a7b7e414d0937f7a7118bfc0b551c28454546d0015ead56460503653ca294a29",
+      "relative_path": "papers/deliberating-deep-divisions-roma.pdf"
+    },
+    {
+      "artifact_id": "material-c64d658b4e543709-bulgaria-2007",
+      "poll_id": "bulgaria-2007",
+      "artifact_type": "event-report",
+      "title": "National Deliberative Poll: Policies toward the Roma in Bulgaria, Executive Summary",
+      "location": "data/bulgaria-2007/reports/roma-executive-summary.pdf",
+      "source_id": "material-c64d658b4e543709",
+      "original_archive_path": "https://s3.amazonaws.com/participedia.prod/4511d18d-35b7-4c6b-8968-201c4b35391c",
+      "sha256": "c64d658b4e543709af7a057382e1408303f7c34f85320924ead154010eda2011",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Public source downloaded 2026-09-24; SHA-256 c64d658b4e543709af7a057382e1408303f7c34f85320924ead154010eda2011",
+      "relative_path": "reports/roma-executive-summary.pdf"
+    },
+    {
+      "artifact_id": "material-87cbe5fd80dce462-bulgaria-2007",
+      "poll_id": "bulgaria-2007",
+      "artifact_type": "briefing-material",
+      "title": "Policies Toward the Roma in Bulgaria: Ghettos, Crime and Education",
+      "location": "data/bulgaria-2007/briefing/roma-policy-briefing.pdf",
+      "source_id": "material-87cbe5fd80dce462",
+      "original_archive_path": "https://s3.amazonaws.com/participedia.prod/09b832e3-4c39-4fa6-b154-59db7d7affa3",
+      "sha256": "87cbe5fd80dce462a461b67699bc031a67e7861a0a5d8a9e1ac9eeb0d3ec9892",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Public English briefing hosted by Participedia; event-specific content inspected; SHA-256 87cbe5fd80dce462a461b67699bc031a67e7861a0a5d8a9e1ac9eeb0d3ec9892",
+      "relative_path": "briefing/roma-policy-briefing.pdf"
+    }
+  ],
+  "document_previews": []
+}

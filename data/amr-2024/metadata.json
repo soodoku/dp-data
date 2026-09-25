@@ -1,0 +1,188 @@
+{
+  "catalog": {
+    "poll_id": "amr-2024",
+    "title": "Antimicrobial Resistance",
+    "year": 2024,
+    "place": "Six countries",
+    "topic": "Antimicrobial resistance",
+    "mode": "face-to-face",
+    "collection": "public-replication"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "amr-2024",
+      "field": "event_dates",
+      "value": "June–August 2024; country-specific exact dates not reported in inspected text",
+      "reference_id": "amr-2024-amr-v2-paper",
+      "source_locator": "Abstract; Methods and Recruitment; Results Table 3",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "amr-2024",
+      "field": "location",
+      "value": "Online across Brazil, Colombia, Nigeria, Tanzania, India and Indonesia",
+      "reference_id": "amr-2024-amr-v2-paper",
+      "source_locator": "Abstract; Methods and Recruitment; Results Table 3",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "amr-2024",
+      "field": "organizers",
+      "value": "Stanford Deliberative Democracy Lab and The Trinity Challenge",
+      "reference_id": "amr-2024-amr-v2-paper",
+      "source_locator": "Abstract; Methods and Recruitment; Results Table 3",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "amr-2024",
+      "field": "participants",
+      "value": "2,419 total: 1,280 intervention participants and 1,139 controls",
+      "reference_id": "amr-2024-amr-v2-paper",
+      "source_locator": "Abstract; Methods and Recruitment; Results Table 3",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "amr-2024",
+      "field": "population",
+      "value": "Adult populations in six selected middle-income countries",
+      "reference_id": "amr-2024-amr-v2-paper",
+      "source_locator": "Abstract; Methods and Recruitment; Results Table 3",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "amr-2024",
+      "field": "recruitment",
+      "value": "YouGov opt-in panels in India/Brazil/Colombia; RDR address/phone sampling in Nigeria/Tanzania; Alvara in Indonesia",
+      "reference_id": "amr-2024-amr-v2-paper",
+      "source_locator": "Abstract; Methods and Recruitment; Results Table 3",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "amr-2024",
+      "field": "topics",
+      "value": "45 AMR policy proposals covering access, stewardship, infection prevention, food security, awareness, targets and surveillance",
+      "reference_id": "amr-2024-amr-v2-paper",
+      "source_locator": "Abstract; Methods and Recruitment; Results Table 3",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "amr-2024",
+      "field": "mode",
+      "value": "Online small-group deliberation and expert plenaries; controls completed surveys only",
+      "reference_id": "amr-2024-amr-v2-paper",
+      "source_locator": "Methods",
+      "status": "conflicting",
+      "notes": "Current catalog says face-to-face; this evidence is proposed metadata, not a recode or catalog edit."
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "amr-2024-local-material-002584fea6952e09-amr-2024",
+      "poll_id": "amr-2024",
+      "kind": "event-report",
+      "title": "Deliberative Polling on Antimicrobial Resistance: final report",
+      "url": null,
+      "local_artifact_id": "material-002584fea6952e09-amr-2024",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/amr-2024/reports/amr-final-report.pdf"
+    },
+    {
+      "reference_id": "amr-2024-amr-v2-paper",
+      "poll_id": "amr-2024",
+      "kind": "paper",
+      "title": "Understanding what citizens think about Antimicrobial Resistance: Deliberative Polling in six middle-income countries",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12891964/",
+      "local_artifact_id": null,
+      "accessed": "2026-09-24",
+      "notes": "Version 2, 14 May 2026; DOI 10.12688/wellcomeopenres.24803.2; original publication 22 December 2025."
+    },
+    {
+      "reference_id": "amr-2024-amr-repository",
+      "poll_id": "amr-2024",
+      "kind": "research-design",
+      "title": "Deliberative Poll on Antimicrobial Resistance: harmonized dataset and extended data",
+      "url": "https://doi.org/10.25740/sb639ms2957",
+      "local_artifact_id": null,
+      "accessed": "2026-09-24",
+      "notes": "Paper data-availability statement lists survey questionnaires, briefing materials and codebooks; retain explicit external availability until individual files are inspected."
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "amr-2024",
+      "material_type": "questionnaires",
+      "status": "external-only",
+      "notes": "Published paper data-availability statement identifies these extended-data materials in Stanford Digital Repository; individual files not yet independently inspected.",
+      "checked_references": "amr-2024-local-material-002584fea6952e09-amr-2024;amr-2024-amr-v2-paper;amr-2024-amr-repository"
+    },
+    {
+      "poll_id": "amr-2024",
+      "material_type": "briefing-materials",
+      "status": "external-only",
+      "notes": "No event-specific briefing file located in inspected local poll manifests or official project/research links; not evidence that no briefing existed.",
+      "checked_references": "amr-2024-local-material-002584fea6952e09-amr-2024;amr-2024-amr-v2-paper;amr-2024-amr-repository"
+    },
+    {
+      "poll_id": "amr-2024",
+      "material_type": "event-reports",
+      "status": "available",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "amr-2024-local-material-002584fea6952e09-amr-2024"
+    },
+    {
+      "poll_id": "amr-2024",
+      "material_type": "papers",
+      "status": "external-only",
+      "notes": "Version 2 paper inspected through PMC HTML; direct publisher/EuropePMC PDF fetch did not yield PDF bytes, so no local file claimed.",
+      "checked_references": "amr-2024-amr-v2-paper"
+    },
+    {
+      "poll_id": "amr-2024",
+      "material_type": "codebooks",
+      "status": "external-only",
+      "notes": "Published paper data-availability statement identifies these extended-data materials in Stanford Digital Repository; individual files not yet independently inspected.",
+      "checked_references": "amr-2024-local-material-002584fea6952e09-amr-2024;amr-2024-amr-v2-paper;amr-2024-amr-repository"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "amr-public-participants",
+      "poll_id": "amr-2024",
+      "artifact_type": "data",
+      "title": "Antimicrobial resistance participant data",
+      "location": "data/amr-2024/participants.csv",
+      "source_id": "amr-2024",
+      "original_archive_path": null,
+      "sha256": "c2877392f6b4d2e6146d09e40625d8ccf5d51f12b6150e3d07f7ab824c97d065",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "CC BY 4.0 Stanford Digital Repository deposit",
+      "relative_path": "participants.csv"
+    },
+    {
+      "artifact_id": "material-002584fea6952e09-amr-2024",
+      "poll_id": "amr-2024",
+      "artifact_type": "event-report",
+      "title": "Deliberative Polling on Antimicrobial Resistance: final report",
+      "location": "data/amr-2024/reports/amr-final-report.pdf",
+      "source_id": "material-002584fea6952e09",
+      "original_archive_path": null,
+      "sha256": "002584fea6952e0959fb99a40288e1821396d8091158622aa5c91dd205473b22",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Cover dated June 2026; download filename dated July 2026. Recruitment and country-specific results for the June-August 2024 online intervention. Consult alongside paper version 2, DOI 10.12688/wellcomeopenres.24803.2; headline randomized total includes controls. Source URL: https://deliberation.stanford.edu/sites/g/files/sbiybj21211/files/media/file/amr_final_report_2026-07_compressed_1.pdf. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "reports/amr-final-report.pdf"
+    }
+  ],
+  "document_previews": []
+}
