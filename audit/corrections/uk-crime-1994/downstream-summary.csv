@@ -1,0 +1,61 @@
+scope,dimension,measure,statistic,historical,candidate
+UK Crime,02_table_2_hom_pol.csv,homofreq,homofreq,0.52,0.53
+UK Crime,02_table_2_hom_pol.csv,homoex,homoex,-6.75536022110623e-05,0.00243771027623169
+UK Crime,02_table_2_hom_pol.csv,polarfreq,polarfreq,0.43,0.44
+UK Crime,02_table_2_hom_pol.csv,polarex,polarex,-0.0100869273702585,-0.00832520131717216
+UK Crime,04_table_4a_toward_male.csv,freqdis,freqdis,0.515151515151515,0.535353535353535
+UK Crime,04_table_4a_toward_male.csv,extdis,extdis,0.0110705160923866,0.0133081400471823
+UK Crime,04_table_4a_toward_male.csv,freqgrp,freqgrp,0.494949494949495,0.505050505050505
+UK Crime,04_table_4a_toward_male.csv,extgrp,extgrp,0.00185506579356449,0.00360822205968123
+UK Crime,04_table_4b_toward_highed.csv,freqdis,freqdis,0.62,0.62
+UK Crime,04_table_4b_toward_highed.csv,extdis,extdis,0.0267382185109864,0.0270593464571143
+UK Crime,04_table_4b_toward_highed.csv,freqgrp,freqgrp,0.62,0.61
+UK Crime,04_table_4b_toward_highed.csv,extgrp,extgrp,0.0183237370358497,0.0186049824448525
+Pooled,all,homoex,estimate,0.0128493544739576,0.0129503731787336
+Pooled,all,homoex,p,0.0010440049813872,0.00093821405539798
+Pooled,all,homoex,n_pairs,2480,2480
+Pooled,all,homofreq,estimate,0.585887096774194,0.586290322580645
+Pooled,all,homofreq,p,0.000830271394219183,0.000784394053913401
+Pooled,all,homofreq,n_pairs,2480,2480
+Pooled,all,polarex,estimate,-0.022210725585489,-0.0221382563936714
+Pooled,all,polarex,p,0.0190558064808409,0.019444415134189
+Pooled,all,polarex,n_pairs,2431,2431
+Pooled,all,polarfreq,estimate,0.439325380501851,0.439736733854381
+Pooled,all,polarfreq,p,0.160956834270078,0.163780993992093
+Pooled,all,polarfreq,n_pairs,2431,2431
+Pooled,educ,ext_grp,estimate,0.0100425158300427,0.0100543080903782
+Pooled,educ,ext_grp,p,0.00633996623018751,0.00631761563604473
+Pooled,educ,ext_grp,n_pairs,2385,2385
+Pooled,educ,freqgrp_grp,estimate,0.522851153039832,0.522431865828092
+Pooled,educ,freqgrp_grp,p,0.211824679470862,0.216615831879609
+Pooled,educ,freqgrp_grp,n_pairs,2385,2385
+Pooled,educ,ext_dis,estimate,0.052251220062849,0.0522646901948174
+Pooled,educ,ext_dis,p,1.72422108490875e-06,1.71376413664893e-06
+Pooled,educ,ext_dis,n_pairs,2384,2384
+Pooled,educ,freqdis_grp,estimate,0.588087248322147,0.588087248322147
+Pooled,educ,freqdis_grp,p,2.9252885342374e-06,2.9252885342374e-06
+Pooled,educ,freqdis_grp,n_pairs,2384,2384
+Pooled,educ,ext_adv,estimate,-0.0302663342089476,-0.0302676652794611
+Pooled,educ,ext_adv,p,0.00319196193614948,0.00319034614358988
+Pooled,educ,ext_adv,n_pairs,2385,2385
+Pooled,educ,freqadv_grp,estimate,0.388679245283019,0.388259958071279
+Pooled,educ,freqadv_grp,p,0.000336895054909391,0.00031156236338177
+Pooled,educ,freqadv_grp,n_pairs,2385,2385
+Pooled,gender,ext_grp,estimate,0.00175429996189787,0.00182554892345189
+Pooled,gender,ext_grp,p,0.626035740513884,0.612407297284314
+Pooled,gender,ext_grp,n_pairs,2436,2436
+Pooled,gender,freqgrp_grp,estimate,0.470443349753695,0.470853858784893
+Pooled,gender,freqgrp_grp,p,0.0636805968633898,0.0676249922906651
+Pooled,gender,freqgrp_grp,n_pairs,2436,2436
+Pooled,gender,ext_dis,estimate,0.0394863230131297,0.0395772609324749
+Pooled,gender,ext_dis,p,3.74757206585141e-05,3.57577052278372e-05
+Pooled,gender,ext_dis,n_pairs,2436,2436
+Pooled,gender,freqdis_grp,estimate,0.566912972085386,0.567733990147783
+Pooled,gender,freqdis_grp,p,0.000202059460585044,0.00016885504902926
+Pooled,gender,freqdis_grp,n_pairs,2436,2436
+Pooled,gender,ext_adv,estimate,-0.036747879700484,-0.0366854518209379
+Pooled,gender,ext_adv,p,1.1236642481751e-05,1.17957855595808e-05
+Pooled,gender,ext_adv,n_pairs,2436,2436
+Pooled,gender,freqadv_grp,estimate,0.356732348111659,0.356732348111659
+Pooled,gender,freqadv_grp,p,5.28913941435245e-07,5.28913941435245e-07
+Pooled,gender,freqadv_grp,n_pairs,2436,2436

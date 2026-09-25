@@ -211,3 +211,25 @@ continues to evolve.
 
 Poll implementations can proceed independently. Shared registries, exports, and
 release gates are integrated centrally to avoid conflicting edits.
+
+## Identified knowledge responses
+
+`make respondents` also builds `output/respondent/respondent_knowledge.parquet`
+from the poll sources, existing canonical item definitions and the `people`
+identity table. It joins on poll and source row, asserts a unique person per
+source record, and exports canonical and historical respondent IDs with each
+item/wave. Anonymous battery row order is not a downstream identity contract.
+
+`correct` preserves missingness and `response_status` preserves its meaning.
+`correct_zero_filled` explicitly counts missing correctness as zero for the
+existing fixed-denominator scoring convention. Consumers choose that defined
+field instead of silently replacing missing responses themselves. This export
+does not create new answer keys or change sample membership. It covers the
+intersection of reconstructed source-person polls and existing knowledge builds.
+
+The canonical battery is not necessarily the historical aggregate battery:
+NIC, for example, has distinct eight-item and eleven-item definitions. Before
+linking a new poll to an analysis, verify identities, sample and battery definition.
+For dp-learning's eight T1-linked polls, every item cell matches the existing
+battery; joining by historical respondent ID resolves San Mateo's changed row
+order without changing any scores.

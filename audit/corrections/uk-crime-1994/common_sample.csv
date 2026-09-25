@@ -1,0 +1,2 @@
+n,historical_post,candidate_post,mean_pre,historical_change,candidate_change,mean_delta,max_absolute_delta,increases,decreases,unchanged
+298,0.8248042505592841,0.8348713646532439,0.7869127516778524,0.037891498881431764,0.047958612975391494,0.010067114093959734,0.25,79,62,157

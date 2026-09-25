@@ -3,7 +3,8 @@ source("R/metadata.R")
 source("R/respondent_parity.R")
 
 read_export <- function(name) {
-  arrow::read_parquet(project_path("output", "respondent",
+  arrow::read_parquet(project_path(
+    "output", "respondent",
     paste0(name, ".parquet")
   ))
 }
@@ -15,7 +16,7 @@ parity <- compare_respondent_measures(
   )
 )
 readr::write_csv(parity, project_path("audit", "respondent_parity.csv"))
-if (any(parity$missingness_differences != 0 | parity$value_differences != 0)) {
+if (any(parity$unexplained_differences != 0)) {
   stop("Respondent reconstruction differs; see audit/respondent_parity.csv")
 }
 print(parity)

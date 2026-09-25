@@ -5,11 +5,15 @@ coverage of the 23 existing knowledge builds and the respondent reconstructions.
 
 ## Decision for this pass
 
-Preserve current scoring, sample definitions, and downstream results. This file
-records evidence and review tasks; it does not authorize a recode. The provisional
+Preserve scoring, sample definitions, and downstream results until each proposed
+correction has been supported by evidence and explicitly approved by the user.
+UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24. Other proposals
+remain unapproved.
+This file records evidence and decisions; an unresolved issue does not authorize
+a recode. The provisional
 UK Health attitude implementation that would change definitions was set aside.
-After the preservation release `v0.1.0`, `make polardata` implements only the
-historical formulas for all 21 polls in the historical aggregate scope; see the
+Following historical reconstruction, `make polardata` implements the historical
+formulas plus explicitly approved corrections for all 21 polls in scope; see the
 [reconstruction contract](knowledge-build.md#historical-aggregate-reconstruction).
 Existing upstream knowledge changes predate this review and are explicitly identified below; neither adopting
 those changes downstream nor reverting them is part of this pass.
@@ -627,30 +631,108 @@ until independent source evidence and numerical consequences are assessed.
 
 ## UK Crime 1994 — uk-crime-1994
 
-### UKC-01: An archived post-wave component reads another item at baseline
+### UKC-01: Post-wave root-causes index substitutes baseline policing
 
-**Status:** preserved and parity-confirmed; cataloged in
-[source findings](../metadata/source_findings.csv).
+**Status: approved by the user on 2026-09-24 and implemented.**
+This is an attitude index, not knowledge.
 
-The [archived UK Crime script](../vault/cdd/scripts/uk_crime.R), line 143,
-assigns `timchld2r` from `morecop1`, then includes it in `rootcauset2`.
-The [codebook](../data/uk-crime-1994/codebook.txt), rechecked here, identifies
-`TIMCHLD2` as post-wave QQ1d, time with children, and `MORECOP1` as baseline Q1j,
-more police. They differ in both construct and wave.
+The [archived script](https://github.com/soodoku/dp-data/blob/historical-cdd-scripts/legacy/poll_scripts/uk_crime.R)
+lines 135–149 describes children, television violence and school discipline, but
+line 143 assigns `timchld2r` from `morecop1`. The maintained reconstruction
+faithfully reproduces this substitution. The proposed correction replaces only
+that component with `timchld2`, preserving available-item averaging, other
+components, sample membership, IDs and all other indices.
 
-The maintained reconstruction now reproduces all 37 historical respondent
-fields, including this post index, for all 299 selected people. This establishes
-that the baseline-policing substitution is consistent with the deposited values;
-it does not establish the substantive reason for that substitution.
+Evidence checked against the proposed correction:
 
-A diagnostic replacement of `morecop1` by `timchld2`, holding the other two
-components and the available-item averaging rule fixed, changes 141 jointly
-observed values and one missingness status. The post-index mean changes from
-0.8253902 to 0.8348714 over its available observations; the largest jointly
-observed individual change is 0.25. This candidate is **not adopted**. Inspect
-the index memorandum and the published article's item membership and scale
-direction, establish the rationale or transcription history, and then evaluate
-downstream consequences before proposing a correction.
+- The [Stage 2 questionnaire](../data/uk-crime-1994/questionnaires/crime-questionnaire.pdf),
+  PDF pages 1–2, identifies the post-weekend instrument and C.1d (parents spending
+  time with children), C.1b (television violence), C.1h (school discipline), and
+  the distinct C.1j policing item.
+- The [codebook](../data/uk-crime-1994/codebook.txt), lines 1691–1727 and
+  2050–2068, identifies `TIMCHLD2` as post QQ1d and `MORECOP1` as baseline Q1j.
+- [Luskin, Fishkin and Jowell (2002)](../data/uk-crime-1994/papers/british-crime-paper.pdf),
+  Appendix B, printed page 487c, lists children, television and school discipline
+  under Social Root Causes. Printed page 476 describes averaging appropriately
+  oriented items onto [0,1]. Table 4, printed page 477, gives post mean .835,
+  matching the candidate after rounding. This is corroboration, not a replication
+  of the paper's exact sample: the paper describes 301 participants, the source
+  has 300 attendees, and the historical grouped sample has 299. The table's
+  printed change sign also appears inconsistent with its displayed means; that
+  is a separate reporting caveat.
+- The [attitude-index memorandum](../data/shared/codebooks/attitude_indices/past_versions/appendix-attitude-indices-6-07-15-rcl.pdf),
+  pages 6–7, independently gives the same three components.
+
+**Scale direction matters.** The questionnaire runs from 1 = very effective to
+5 = not at all effective, but the deposited variables already run from
+1 = not at all effective to 5 = very effective. Retain `(item - 1) / 4`;
+reversing the deposited children item again would introduce a second error.
+No supporting rationale for the baseline-policing substitution was found;
+authorial intent cannot be established from these materials alone.
+
+[Recorded comparisons](../audit/corrections/uk-crime-1994/) isolate this single
+substitution, using the source and definitions at `b3d7a834e959b2992669bcf36d4f4803bd753ff6`:
+
+| Historical sample result | Preserved coding | Proposed coding |
+| --- | ---: | ---: |
+| Respondents retained | 299 | 299 |
+| Observed post index | 299 | 298 |
+| Available-observation post mean | 0.825390190 | 0.834871365 |
+| Post mean, common 298 respondents | 0.824804251 | 0.834871365 |
+| Mean change, common 298 respondents | 0.037891499 | 0.047958613 |
+
+Among the common 298 respondents, 79 scores increase, 62 decrease and 157 are
+unchanged; maximum absolute change is .25. Case 10388 (source row 388, group
+2711) has all three actual post components missing, but baseline policing = 5.
+Its historical post score of 1 becomes missing; the person remains in the data.
+The ungrouped attendee's score is unchanged. Among the other 569 source records,
+566 previously received a post index from their baseline police answer; all 569
+have no observed candidate post index. The all-source respondent layer therefore
+also needs the approved correction, not just the 299-row historical export.
+
+**Downstream counterfactuals.** Readers remain pinned to their existing inputs;
+these runs measure hypothetical adoption, using paired reconstructed inputs to
+isolate UKC-01. Code revisions: dp-distortions
+`e51f0700ff22fb792515fc9988c8702d35179617`, dp-deliberately
+`c3e2834735a09b89dd21511208826e7de16bbcc8`, dp-learning
+`57e83ad7937c9fea01a7bced9ead1b20dd157ab8`.
+
+- dp-distortions changes are confined to the root-causes index's 20 groups.
+  Pooled homogenization (pre SD minus post SD) moves .01284935 → .01295037;
+  polarization moves −.02221073 → −.02213826. Income and triple-advantage
+  results are unchanged. All 28 CR2 tests retain decisions at 10%, 5% and 1%;
+  homogenization crosses the 0.1% threshold (p .001044 → .000938).
+- dp-deliberately's default paired root-index sample changes 299 → 298, retaining
+  20 groups. Mean group homogenization moves .02879762 → .04149673;
+  polarization .04022377 → .04920942.
+- dp-learning's actual analysis frame is exactly identical (6,013 rows × 20
+  columns); its baseline attitudes, knowledge and demographic inputs are unchanged.
+
+The diagnostic executes the actual downstream transformations and CR2 inference;
+it does not rerun wild-bootstrap inference. Tiny frozen-versus-reconstructed
+numeric representation differences can separately flip zero-threshold frequency
+indicators. That sensitivity is not attributed to this correction: both arms here
+use the same reconstructed serialization.
+
+Reproduce the proposal without changing production outputs:
+
+```sh
+# From dp-data; outputs must be kept outside the production output directory.
+Rscript scripts/review_uk_crime_correction.R /tmp/uk-crime-review
+# From each respective downstream checkout:
+Rscript ../dp-data/scripts/review_uk_crime_downstream.R distortions /tmp/uk-crime-review /tmp/uk-crime-distortions
+Rscript ../dp-data/scripts/review_uk_crime_downstream.R deliberately /tmp/uk-crime-review /tmp/uk-crime-deliberately
+Rscript ../dp-data/scripts/review_uk_crime_downstream.R learning /tmp/uk-crime-review /tmp/uk-crime-learning
+```
+
+The first script asserts stable case IDs and that only `ukcrime.rootcauset2`
+changes in the historical poll output. Both review scripts pass lint; all three
+downstream modes have been executed. The maintained recode and respondent provenance now use `timchld2` and the
+versioned definition `root_causes_t2@ukc-01-v2`. The original benchmarks remain
+unchanged; parity checks require the exact recorded correction and reject other
+unexplained differences. The review script reproduces all five original
+comparison CSVs byte-for-byte after adoption. UKC-02 and UKC-03
+remain separate decisions, and are not included in this proposal.
 
 ### UKC-02: Knowledge sample and respondent-ID conventions
 
@@ -677,9 +759,10 @@ fields are observed and reproduced exactly.
 
 The new respondent definitions preserve those five export fields as explicit
 constant missing values; they do not alias them to overall knowledge or infer
-that the four legal questions were unasked. Trace the object saved by the
-historical script through the merge/export versions and consult the cross-poll
-knowledge index memorandum before reinstating an issue-specific score. Compare
+that the four legal questions were unasked. The archived script explicitly omits these fields from both `ukcrimen`
+(lines 329–334) and `ukcrimekyu` (lines 340–347). This is an export selection,
+not evidence that the questions were unasked. Consult the cross-poll knowledge
+index memorandum before separately proposing their reinstatement. Compare
 sample, item count, missingness and downstream effects in a correction pass.
 
 ## UK–EU 1995 — uk-eu-1995
@@ -851,15 +934,91 @@ Before correction, establish the intended longitudinal construct from both
 questionnaires and the original index specification; then recompute affected
 attitude change, dispersion and downstream estimates in a separate version.
 
-**UKGE-03 — Labour minimum-wage placement reuses the baseline response.**
-`uk_bge.R` assigns `wagel2pk <- nona(wagel1 > 4)`. The new historical recode
-preserves this literal dependency in post knowledge and joint-correct knowledge;
-its metadata identifies both as dependent on T1 and T2. Substituting `wagel2`
-would change 54 of 275 binary post items. Review Q14 and executed scoring syntax
-before deciding that this is an unintended copy error; quantify composite and
-model changes separately before adoption. The historical baseline mean also
-weights a float32 factual subscale with three party-placement subscales. This
-rounding is reproduced from raw answers, not copied from stored indices.
+### UKGE-03: Post Labour minimum-wage knowledge uses the baseline response
+
+**Status: approved by the user on 2026-09-24 and implemented.**
+Replace only `wagel1` with `wagel2`
+in the post Labour minimum-wage correctness item and rebuild its dependent
+knowledge and group variables. Keep the 5–7 correctness range, missing-as-incorrect
+rule, baseline scoring, 275-person sample and 15 groups. Do not bundle UKGE-02's
+separate tax-construct mismatch.
+
+The [archived script](https://github.com/soodoku/dp-data/blob/historical-cdd-scripts/legacy/poll_scripts/uk_bge.R)
+line 104 assigns `wagel2pk <- nona(wagel1 > 4)`, but line 276 correctly builds
+`wagel2raw` from `wagel2`. The [codebook](../data/uk-general-election-1997/codebook.txt),
+lines 228–229 and 3595–3636, identifies Labour minimum-wage placement at T1/T2,
+Q14. The [election manuscript](../data/uk-general-election-1997/papers/british-election-paper.pdf),
+printed pages 6 and 8, describes the seven-point placement scale and Labour's
+support for a minimum wage. This manuscript is a draft, not an exact published
+replication benchmark.
+
+Crucially, the deposited `survey.sav` variable `wgel2cor` matches the proposed
+post scoring for **all 275 attendees**, whereas the historical composite differs
+on 54. Its label incorrectly mentions tax and `wagel1`; its actual values support
+`wagel2`. The existing raw knowledge battery in `metadata/knowledge_items.csv`
+already uses `wagel2`, as does the archived raw export. This correction aligns
+the reconstructed composites with that battery and deposited scored item.
+Intentional carryover is therefore poorly supported; no rationale for it was found.
+
+**Instrument limitation:** no standalone fielded questionnaire was located in
+this poll folder. The codebook transcribes Q14 but contains inconsistent printed
+endpoint numbering. Preserve the existing scale/key; the manuscript and deposited
+scores corroborate this narrow wave correction without resolving every label typo.
+
+[Recorded comparisons](../audit/corrections/uk-general-election-1997/):
+
+| Historical sample, 275 people | Historical | Proposed |
+| --- | ---: | ---: |
+| Labour post item correct | 237 | 235 |
+| Mean post knowledge | 0.64800000 | 0.64751515 |
+| Mean baseline knowledge | 0.54472727 | unchanged |
+| Mean pre–post gain | 0.10327273 | 0.10278788 |
+| Mean jointly correct knowledge | 0.42909091 | 0.42230303 |
+
+26 post scores rise and 28 fall, each by 1/15. The mean barely changes because
+these movements offset. The 28 losses also reduce jointly correct knowledge:
+baseline reuse had guaranteed that a previously correct answer remained correct.
+All 275 IDs and 15 groups remain, with no missingness changes. Nineteen aggregate
+columns change, including score aliases, group means, peer scores and logs.
+The audit distinguishes differences above 1e-12 from floating-point residue.
+
+Among the other 935 source records, 721 lose a spurious baseline-derived 1/15
+post score. Under the preserved missing-as-incorrect convention their post score
+becomes zero, not missing. These are not evidence of observed post interviews;
+users must still apply the appropriate sample membership. Across all 1,210
+canonical records, 775 post knowledge scores and 749 joint scores change.
+
+**Downstream adoption comparison:** dp-learning revision
+`57e83ad7937c9fea01a7bced9ead1b20dd157ab8` was run against paired reconstructed
+inputs. Only `k2` changes in its analysis frame (54 values); its baseline predictors
+and membership are unchanged. The main model retains 5,827 observations; its
+baseline-knowledge coefficient changes .481825 → .478004 and its baseline-knowledge
+× BA-or-more interaction changes −.102384 → −.098731. The minority model retains
+5,179 observations. The briefing model is identical and has a singular fit in
+both arms. Coefficients, standard errors and fit diagnostics are saved in the
+comparison directory; these are the actual mixed models, not a full manuscript
+or item-latent-model rerun.
+
+The item-linked model is not included: its existing assertion fails for the
+unrelated `sm` battery (162 of 239 baseline scores disagree, maximum .75).
+This failure occurs before applying UKGE-03; see SM-04 below. The comparison does
+not suppress the production assertion or claim to have validated that model.
+Existing downstream source pins are unchanged; adoption comparisons do not
+silently repoint those repositories.
+
+Implementation versions the six dependent respondent definitions and affected
+group/poll measures as `ukge-03-v2`. Frozen approved values cover all 19 changed
+aggregate fields and 275 attendees. Comparison checks verify both historical
+reference values and exact approved replacements, and reject unreviewed
+differences. The five original review CSVs reproduce byte-for-byte after
+adoption. Historical benchmarks and the separate raw-item battery remain intact.
+
+Reproduce from dp-data, then from dp-learning respectively:
+
+```sh
+Rscript scripts/review_uk_ge_correction.R /tmp/uk-ge-review
+Rscript ../dp-data/scripts/review_uk_ge_downstream.R /tmp/uk-ge-review /tmp/uk-ge-learning
+```
 
 **UKGE-04 — demographic and missing-code boundaries.** Ethnicity -7 becomes
 missing, including two attendees; codes other than 1 become the historical
@@ -1316,16 +1475,93 @@ answers score zero with a fixed denominator of 11. The existing eight-item
 knowledge outputs retain their separate definition. SPEND2 code 9 is documented
 as missing (line 5545); SPDRUG2 code 9 is likewise missing (line 3635).
 
-**NIC-03 — historical age and mixed-wave extremity preserved.** `nic1.R`
-computes `ppage = 1996 - BYEAR`, although BYEAR is stored as a two-digit year.
-The reconstructed values reproduce the benchmark, including implausible ages;
-no century correction has been applied. Its arrival extremity/dispersion inputs
-use arrival waves for the first six spending items but baseline waves for foreign
-aid, welfare, and social security. This is explicit in the script's `nic2att`
-selection. Retain it for historical parity; before correcting, inspect the
-questionnaires, original age recoding syntax, and analysis specifications to
-establish the intended age and wave conventions. Recompute affected individual,
-group, and downstream model quantities under each proposed correction.
+### NIC-03: Correct birth-year conversion and event mode upstream
+
+**Status: approved by the user on 2026-09-24 and implemented upstream.**
+The age correction is
+`age = 1996 - (1900 + BYEAR)`, preserving the existing year reference. This is age
+attained during 1996, not exact age at the January event. `dp-data` must own this
+recode; downstream readers must consume age directly, with no compensating
+NIC-specific inversion. The same poll proposal corrects `mode` from online (1)
+to face-to-face (0). Removal of both downstream NIC overrides belongs to the
+same adoption, not a later optional cleanup.
+
+The [codebook](../data/nic-1996/codebook.txt), lines 796–825, identifies `BIRTHDY1`
+as date of birth and `BYEAR` as year born. BYEAR equals the final two digits of
+BIRTHDY1 in 890 of 891 observed source records. The
+[archived script](https://github.com/soodoku/dp-data/blob/historical-cdd-scripts/legacy/poll_scripts/nic1.R),
+line 151, computes `ppage = 1996 - byear`; line 247 computes a separate
+`age = 1996 - ppage`, recovering BYEAR itself. dp-learning repeats that inverse
+and calls the result age. For someone born in 1962, upstream exports 1934 and
+downstream calls them 62; the proposed year-based age is 34.
+
+The scanned questionnaire was checked, but its identified SAQ2 pages do not
+verify the baseline birthdate question. The codebook and respondent-level
+birthdate crosscheck establish this proposal's evidence; do not claim that the
+fielded baseline questionnaire was recovered.
+
+[Recorded comparisons](../audit/corrections/nic-1996/):
+
+| Historical NIC sample | Current upstream | Proposed upstream |
+| --- | ---: | ---: |
+| People retained | 466 | 466 |
+| Observed ages | 458 | 458 |
+| Mean age | 1941.83843 | 41.83843 |
+
+All 458 observed ages fall by exactly 1900; missingness and identity are unchanged.
+The age change affects only `ppage` and its dependent `meanage`; the mode
+correction changes `mode` for all 466 historical rows. No other aggregate fields
+change.
+There are 891 observed ages among all 911 source records.
+
+**Mode evidence:** `metadata/polls.csv` already describes NIC as face-to-face.
+The [Luskin–Fishkin manuscript](../data/nic-1996/papers/luskin-fishkin-2002.pdf),
+PDF pages 4 and 6, describes on-site moderated groups/plenaries and 466
+participants arriving in Austin. The incorrect aggregate mode comes from the
+NIC constant in `core_poll_constants()`. dp-learning currently forces this
+value to zero; correcting it upstream and deleting that override preserves
+the mode actually used in its models.
+
+**Separate source anomalies, not silently repaired:** participant CASEIDs
+10005580 and 10008740 have BYEAR95; 10008780 has94; 10011470 has96. Their recorded
+birthdates agree with those years but their adult-screen flags contradict ages
+0–2. CASEID10007590 has BYEAR7 while BIRTHDY1 ends67: the candidate age is89,
+although29 would follow the full birthdate. All five passed the adult-screen
+question. Nonparticipant10006530 also has BYEAR95. These require instrument and
+source-version investigation; the proposed century correction neither imputes
+their birth years nor invents additional missingness.
+
+**Downstream comparison:** with dp-learning's existing 16–100 age eligibility,
+451 NIC ages are usable under its current mistaken recode. Direct consumption of
+the proposed upstream ages makes 454 usable: seven older participants become
+eligible and four apparent ages0–2 become ineligible. Merely changing upstream
+while retaining the downstream inversion makes all NIC ages fail eligibility.
+That is why adoption must remove the reader's inversion at the same time.
+The adapted diagnostic removes both NIC age and mode overrides. Production
+dp-learning now also consumes the corrected export directly with both overrides
+removed. Other existing reader policies remain pending the X-11 migration review.
+
+In paired runs at dp-learning revision
+`57e83ad7937c9fea01a7bced9ead1b20dd157ab8`, the main model sample changes
+5,827 → 5,830, and its age-per-decade coefficient changes −.006791 → −.003358
+(SE .001772 → .001774). The minority model changes 5,179 → 5,182 observations.
+The briefing model changes 1,289 → 1,291 and is singular in both arms. These runs
+isolate NIC age/mode against the aggregate baseline including the approved Crime
+and UK Election corrections; they do not claim a
+full manuscript replication. The original diagnostic omitted the item-linked model because of SM-04; the
+subsequent production migration resolves that identity issue and runs the model.
+
+Reproduce from dp-data, then dp-learning:
+
+```sh
+Rscript scripts/review_nic_age_correction.R /tmp/nic-age-review
+Rscript ../dp-data/scripts/review_nic_age_downstream.R /tmp/nic-age-review /tmp/nic-age-learning
+```
+
+The same historical script's arrival extremity/dispersion mixes arrival waves for
+the first six spending items with baseline foreign aid, welfare and social
+security. That separate definition remains unchanged pending instrument and
+analysis-specification review; it is not part of this age proposal.
 
 **NIC-04 — missing historical identity and reconstruction coverage.** The
 historical export and selected source each contain exactly one missing CASEID.
@@ -1499,6 +1735,28 @@ or removed in the original instrument and scoring syntax before correcting this
 scoring-version discrepancy. Post Q20/Q26 values 8/9 remain incorrect in binary
 scoring pending codebook review. Five group covariance exceptions, including two
 indefinite matrices, are detailed in X-09.
+
+### SM-04: Anonymous item rows and reconstructed respondents had different order
+
+**Resolved through upstream identity linkage, with no score correction.** During
+the UKGE-03 comparison, dp-learning's positional `t1_items_for_poll()` assertion
+failed for `sm` (dpnum17): 162 of239 paired T1 item means differed from rebuilt
+`t1know`, with maximum difference .75. This occurred before UKGE-03.
+
+The deposited battery follows historical caseid order, while reconstructed
+polardata follows source order. Matching by established historical respondent ID
+restores zero mismatches. No new identity was inferred from matching scores.
+The upstream `respondent_knowledge` export now links canonical item responses
+to `people` by poll/source row and includes the historical ID. dp-learning joins
+by that ID and consumes explicit `correct_zero_filled`, preserving raw missingness
+separately upstream.
+
+All eight T1-linked polls' item cells match their previous batteries exactly.
+All2,175 person-level peer-knowledge results match the previous correctly aligned
+implementation within1e-12. Shuffling input rows does not alter the join; missing
+or duplicate identities fail tests. The previously recorded mismatch remains
+in `audit/corrections/uk-general-election-1997/downstream-item-alignment.csv` as
+evidence of the old positional failure.
 
 ## Michigan 2009 — michigan-2009
 
@@ -2046,3 +2304,32 @@ for(w in 1:2) {
 
 No issue in this register is an instruction to overwrite current scores. Review
 and any approved behavioral change belong in a separate, testable commit.
+
+### X-11: Data recoding belongs upstream, not in downstream readers
+
+The user requires poll-specific recodes to live in dp-data, with downstream
+repositories consuming defined variables. Moving a transformation must retain
+its evidence and before/after checks; copying an unsupported downstream patch
+upstream is not scientific validation. Initial migration inventory from
+dp-learning's `R/knowledge.R`, `R/sources.R` and recode ledger:
+
+| Current downstream transformation | Upstream disposition / required evidence |
+| --- | --- |
+| NIC `1996 - ppage` | Implemented upstream as `age@nic-03-v2`; downstream inversion removed (NIC-03). |
+| NIC online mode forced to zero | Corrected upstream to face-to-face; downstream override removed (NIC-03). |
+| Ages outside16–100 made missing | Preserve raw age and provide an explicit upstream analysis-eligibility/quality field; assess source anomalies separately from exclusion policy. |
+| Greece post knowledge zero made missing when baseline is positive | Requires source/instrument evidence for nonresponse; a surprising zero score alone does not establish missingness. Do not promote this heuristic as a verified correction. |
+| Greece education code7 made missing | Verify source category labels and export missing-value convention before centralizing. |
+| Knowledge rounded to10decimals | Centralize documented numeric storage handling and test exact boundaries; preserve distinct knowledge definitions. |
+| Primaries exact duplicate rows dropped | Use upstream canonical person identities and named samples instead of downstream whole-row deduplication (PR-03). |
+| Item-battery missing responses counted incorrect | The eight linked T1 batteries now consume upstream `correct_zero_filled`; nullable `correct` and response status remain available. Anonymous latent-model batteries still need migration. |
+
+Model fitting and explicitly chosen estimands remain analysis work. Reader-side
+poll repairs, hidden rekeys and missing-value guesses do not. Existing downstream
+source pins still select historical inputs; migrating them requires a coherent
+upstream contract and exact impact checks, including the known SM-04 linkage
+failure. NIC's proposal is the first coordinated reader-removal case, not a
+claim that the full downstream migration is already complete. The remaining
+scope also includes study-specific recodes in dp-distortions' out-of-sample
+pipeline; its 24 frozen inputs are already centralized, but the transformations
+must be inventoried and moved with study-level value checks.

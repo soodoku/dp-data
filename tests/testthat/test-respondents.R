@@ -62,7 +62,8 @@ test_that("raw missing codes and literal waves survive the long export", {
   expect_true(all(is.na(responses$raw_numeric[missing])))
   expect_true(all(responses$missing_code[missing] == "system"))
   europe <- responses$poll_id %in% c("europolis-2009", "tomorrows-europe-2007")
-  expect_setequal(unique(responses$source_wave[europe]),
+  expect_setequal(
+    unique(responses$source_wave[europe]),
     c("T1", "T3", NA_character_)
   )
 })
@@ -164,7 +165,7 @@ test_that("UK EU keeps 238 historical attendees and 224 knowledge cases", {
 
 source(file.path(root, "R", "respondent_parity.R"))
 
-test_that("implemented definitions match historical values by IDs", {
+test_that("definitions match historical or approved values by IDs", {
   measures <- respondent_export("respondent_measures")
   people <- respondent_export("people")
   samples <- respondent_export("sample_memberships")
@@ -179,16 +180,19 @@ test_that("implemented definitions match historical values by IDs", {
   expect_equal(nrow(parity), sum(
     read_metadata("polardata_targets")$status == "implemented"
   ))
-  expect_true(all(parity$missingness_differences == 0L))
-  expect_true(all(parity$value_differences == 0L))
+  expect_equal(sum(parity$missingness_differences), 1L)
+  expect_equal(sum(parity$value_differences[
+    parity$poll_id == "uk-crime-1994"
+  ]), 141L)
+  expect_true(all(parity$unexplained_differences == 0L))
   expect_identical(compare(measures[rev(seq_len(nrow(measures))), ]), parity)
   index <- which(measures$definition_id == "female@historical-v1" &
                    measures$poll_id == "uk-health-1998")[1]
   changed <- measures
   changed$value_numeric[index] <- 3
-  expect_gt(sum(compare(changed)$value_differences), 0)
+  expect_equal(sum(compare(changed)$unexplained_differences), 1L)
   changed$value_numeric[index] <- NA_real_
-  expect_gt(sum(compare(changed)$missingness_differences), 0)
+  expect_equal(sum(compare(changed)$unexplained_differences), 1L)
   expect_error(compare(measures[-index, ]))
   person <- which(people$poll_id == "uk-health-1998")[1]
   expect_error(compare(measures, people[-person, ]))
@@ -279,7 +283,6 @@ test_that("preserved cross-wave dependencies remain explicit", {
   expect_true(all(before$knowledge_t2 != after$knowledge_t2))
   election <- read_poll_survey("uk-general-election-1997")
   before <- build_election_individual(election)
-  election$wagel2 <- rep(7, nrow(election))
   election$taxr2 <- rep(1, nrow(election))
   expect_identical(build_election_individual(election), before)
   election$taxret2 <- rep(1, nrow(election))
@@ -357,18 +360,22 @@ test_that("UK Crime uses raw fields and preserves row order", {
   )
 })
 
-test_that("UK Crime retains the documented cross-wave dependency", {
+test_that("UK Crime root causes uses post items without baseline reuse", {
   survey <- read_poll_survey("uk-crime-1994")[1, ]
   survey$morecop1 <- 1
   survey$timchld2 <- 5
   survey$violtv2 <- 5
   survey$schdisc2 <- 5
   original <- build_crime_individual(survey)
-  expect_equal(original$root_causes_t2, 2 / 3)
+  expect_equal(original$root_causes_t2, 1)
   survey$timchld2 <- 1
-  expect_equal(build_crime_individual(survey), original)
+  expect_equal(build_crime_individual(survey)$root_causes_t2, 2 / 3)
   survey$morecop1 <- 5
-  expect_equal(build_crime_individual(survey)$root_causes_t2, 1)
+  expect_equal(build_crime_individual(survey)$root_causes_t2, 2 / 3)
+  survey$timchld2 <- NA_real_
+  survey$violtv2 <- NA_real_
+  survey$schdisc2 <- NA_real_
+  expect_true(is.na(build_crime_individual(survey)$root_causes_t2))
   expect_true(is.na(original$knowledge_issue_t1))
   expect_true(is.na(original$knowledge_issue_joint))
 })
@@ -409,4 +416,37 @@ test_that("Primaries duplicate rows must agree", {
   expect_error(historical_reference_people(
     reference[reference$dpnum == 16, ], "uk-health-1998"
   ))
+})
+
+
+test_that("UK Crime nonparticipants have no invented post root-causes scores", {
+  survey <- read_poll_survey("uk-crime-1994")
+  values <- build_crime_individual(survey)$root_causes_t2
+  expect_length(values, 869L)
+  expect_equal(sum(!is.na(values)), 299L)
+  expect_true(all(is.na(values[which(survey$part != 1)])))
+})
+
+test_that("UKGE-03 scores the post Labour wage placement from its own wave", {
+  survey <- read_poll_survey("uk-general-election-1997")[1, ]
+  survey$wagel1 <- 1
+  survey$wagel2 <- 7
+  expect_equal(unname(election_knowledge_items(survey, 2L)[, "wage_l"]), 1)
+  survey$wagel1 <- 7
+  expect_equal(unname(election_knowledge_items(survey, 2L)[, "wage_l"]), 1)
+  survey$wagel2 <- 1
+  expect_equal(unname(election_knowledge_items(survey, 2L)[, "wage_l"]), 0)
+  survey$wagel2 <- NA_real_
+  expect_equal(unname(election_knowledge_items(survey, 2L)[, "wage_l"]), 0)
+  expect_equal(unname(election_knowledge_items(survey, 1L)[, "wage_l"]), 1)
+})
+
+test_that("UKGE-03 agrees with deposited post correctness for attendees", {
+  survey <- read_poll_survey("uk-general-election-1997")
+  selected <- survey$filter == 1
+  items <- election_knowledge_items(survey, 2L)
+  expect_equal(sum(selected), 275L)
+  expect_equal(items[selected, "wage_l"], as.numeric(survey$wgel2cor[selected]))
+  scores <- build_election_individual(survey)
+  expect_true(all(scores$knowledge_t2[!selected] == 0))
 })

@@ -1,0 +1,11 @@
+check,finding,source
+birth_year_meaning,BYEAR explicitly YEAR R WAS BORN; BIRTHDY1 DATE OF BIRTH,data/nic-1996/codebook.txt lines796-825
+adult_screen,BDAYRTE1 IS BDAY BEFORE 11-1-77; all five anomalous participant rows coded Yes,data/nic-1996/codebook.txt lines828-840; survey.parquet
+birthdate_year_crosscheck,890 of891 observed BYEAR equal BIRTHDY1 modulo100; participant10007590 has BYEAR7 and BIRTHDY110267,audit/corrections/nic-1996/respondent_comparison.csv
+historical_formula,ppage=1996-byear; later age=1996-ppage but exported ppage retains first formula,historical-cdd-scripts:legacy/poll_scripts/nic1.R lines151;247;332;345
+downstream_formula,dp-learning analysis_frame ppage=1996-ppage for NIC; this recovers two-digit birthyear then filters16..100,dp-learning/R/knowledge.R lines14-15
+time_reference,Year-only1996-minus-birthyear is age attained during1996; exact event age requires reviewed birthdates,data/nic-1996/metadata.json; original code
+instrument_limit,Available scanned questionnaire inspected page2 SAQ2 and page23 investigators; no baseline birthdate wording claimed,data/nic-1996/questionnaires/nic-questionnaire.pdf
+mode_evidence,On-site small groups and plenary sessions;466 participants showed up in Austin,data/nic-1996/papers/luskin-fishkin-2002.pdf PDF pp4;6
+mode_catalog,Current poll catalog already states face-to-face; sourced fact confirms face-to-face moderated groups,metadata/polls.csv NIC row;metadata/poll_facts.csv NIC mode row
+mode_implementation,core_poll_constants NIC tuple mode1 copied from archived nic1.R; candidate mode0 is in-person,R/polardata_core.R;historical-cdd-scripts:legacy/poll_scripts/nic1.R

@@ -19,7 +19,10 @@ The repository establishes provenance before changing any analysis:
 `metadata/oos_sources.csv` locates the 24 frozen public inputs and supporting
 documents used by the dp-distortions out-of-sample study. It retains original
 URLs, access dates and SHA-256 hashes; shared files have one physical copy under
-`data/<study>/`. Study-specific recoding and estimation remain downstream.
+`data/<study>/`. Data recoding belongs in dp-data; downstream repositories
+consume versioned variables and perform estimation. Existing downstream
+recodes, including those in the out-of-sample study, still need migration with
+explicit value comparisons; see the [migration inventory](docs/poll-issues.md#x-11-data-recoding-belongs-upstream-not-in-downstream-readers).
 Blank source license fields mean no license was recorded during this migration;
 they do not assign the repository license to third-party materials.
 
@@ -45,7 +48,7 @@ links for now; see the [linkage contract](docs/knowledge-build.md#historical-kno
 Known measurement, sample, linkage, and provenance questions are collected in the
 [poll-level issue register](docs/poll-issues.md). It distinguishes documented
 choices from unresolved concerns and existing upstream differences; this review
-preserves current scores pending instrument-level verification.
+preserves scores until instrument-level verification and poll-specific approval.
 
 `make respondents` reconstructs all 848 historical respondent-field targets
 across 21 polls. It retains every reviewed source record, separates named
@@ -61,11 +64,18 @@ The build reads public poll sources, not frozen aggregates or the vault.
 historical benchmarks. Documented numerical exceptions concern generalized
 variance in 24 groups; the comparison checks the exact source matrices and
 numerical diagnostics before accepting those differences. Export row numbers
-are regenerated. See the [parity report](audit/polardata_parity.csv),
+are regenerated. The approved UK Crime correction replaces a baseline police
+item with the post-wave children item. UK Election 1997 now uses the post-wave
+Labour minimum-wage placement in post knowledge and its dependent measures.
+NIC 1996 age now uses `96 - BYEAR`, and its event mode is in person; raw
+birth-year anomalies remain recorded for separate review.
+Comparisons verify each approved value
+against the reviewed respondent-level evidence and reject unexplained changes.
+See the [parity report](audit/polardata_parity.csv),
 [covariance audit](audit/polardata_covariances.csv), and
 [poll issue register](docs/poll-issues.md) for details.
 
-Historical coding choices are preserved for later review. Existing knowledge
+Other historical coding choices are preserved for later review. Existing knowledge
 and linkage products remain unchanged, and downstream repositories remain
 pinned to their existing inputs. The new reconstruction is a separate output
 that can be assessed before downstream adoption.

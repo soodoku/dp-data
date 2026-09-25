@@ -6,6 +6,7 @@ source("R/poll_adapters.R")
 source("R/knowledge.R")
 source("R/exports.R")
 source("R/respondents.R")
+source("R/linked_knowledge.R")
 
 validate_respondent_metadata()
 contracts <- read_metadata("respondent_sources")
@@ -33,6 +34,7 @@ tables <- purrr::map(names(polls[[1]]), function(name) {
   purrr::map(polls, name) |> purrr::list_rbind()
 }) |>
   rlang::set_names(names(polls[[1]]))
+tables$respondent_knowledge <- build_respondent_knowledge(tables$people)
 validate_respondent_tables(tables)
 directory <- project_path("output", "respondent")
 fs::dir_create(directory)
