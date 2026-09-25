@@ -836,7 +836,8 @@ swepco-1996,fossil_fuels_t1@historical-v1,FUELS1
 swepco-1996,imported_power_t1@historical-v1,BUYPWR1
 swepco-1996,research_t2@historical-v1,RESCH2
 swepco-1996,research_t2@historical-v1,FEDRCH2
-swepco-1996,conservation_t2@historical-v1,REDUCE2
+swepco-1996,conservation_t2@swe-02-v2,ADDFAC2
+swepco-1996,conservation_t2@swe-02-v2,REDUCE2
 swepco-1996,low_income_support_t2@historical-v1,NEEDTO2
 swepco-1996,renewables_t2@historical-v1,RENEW2
 swepco-1996,renewables_t2@historical-v1,WIND2
