@@ -1,5 +1,48 @@
 approved_reference_values <- function(poll_id, field, caseid, historical,
                                       tolerance = 1e-10) {
+  election_fields <- c(
+    "t1knowcor",
+    "t2know",
+    "t1knowrcor",
+    "t2knowr",
+    "knowgain",
+    "knowgain2",
+    "logpk",
+    "knowgainr",
+    "knowgainr2",
+    "meant1knowcor",
+    "meant2know",
+    "meant1knowrcor",
+    "meant1knowcor_ind",
+    "t1knowlevelcor",
+    "t2knowlevel",
+    "t1knowlevelrcor",
+    "grpgain",
+    "grpgainr",
+    "loggain"
+  )
+  if (poll_id == "uk-general-election-1997" && field %in% election_fields) {
+    approved <- readr::read_csv(project_path(
+      "audit", "corrections", "uk-general-election-1997", "approved_values.csv"
+    ), show_col_types = FALSE)
+    approved <- approved[approved$legacy_field == field, ]
+    if (!nrow(approved)) {
+      return(historical)
+    }
+    stopifnot(
+      nrow(approved) == 275L, !anyDuplicated(approved$caseid),
+      setequal(as.character(caseid), as.character(approved$caseid))
+    )
+    rows <- match(as.character(caseid), as.character(approved$caseid))
+    approved <- approved[rows, ]
+    stopifnot(
+      identical(is.na(historical), is.na(approved$historical_value)),
+      all(abs(historical - approved$historical_value) <= tolerance,
+        na.rm = TRUE
+      )
+    )
+    return(approved$approved_value)
+  }
   if (poll_id != "uk-crime-1994" || field != "ukcrime.rootcauset2") {
     return(historical)
   }

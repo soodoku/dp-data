@@ -181,7 +181,9 @@ test_that("definitions match historical or approved values by IDs", {
     read_metadata("polardata_targets")$status == "implemented"
   ))
   expect_equal(sum(parity$missingness_differences), 1L)
-  expect_equal(sum(parity$value_differences), 141L)
+  expect_equal(sum(parity$value_differences[
+    parity$poll_id == "uk-crime-1994"
+  ]), 141L)
   expect_true(all(parity$unexplained_differences == 0L))
   expect_identical(compare(measures[rev(seq_len(nrow(measures))), ]), parity)
   index <- which(measures$definition_id == "female@historical-v1" &
@@ -281,7 +283,6 @@ test_that("preserved cross-wave dependencies remain explicit", {
   expect_true(all(before$knowledge_t2 != after$knowledge_t2))
   election <- read_poll_survey("uk-general-election-1997")
   before <- build_election_individual(election)
-  election$wagel2 <- rep(7, nrow(election))
   election$taxr2 <- rep(1, nrow(election))
   expect_identical(build_election_individual(election), before)
   election$taxret2 <- rep(1, nrow(election))
@@ -424,4 +425,28 @@ test_that("UK Crime nonparticipants have no invented post root-causes scores", {
   expect_length(values, 869L)
   expect_equal(sum(!is.na(values)), 299L)
   expect_true(all(is.na(values[which(survey$part != 1)])))
+})
+
+test_that("UKGE-03 scores the post Labour wage placement from its own wave", {
+  survey <- read_poll_survey("uk-general-election-1997")[1, ]
+  survey$wagel1 <- 1
+  survey$wagel2 <- 7
+  expect_equal(unname(election_knowledge_items(survey, 2L)[, "wage_l"]), 1)
+  survey$wagel1 <- 7
+  expect_equal(unname(election_knowledge_items(survey, 2L)[, "wage_l"]), 1)
+  survey$wagel2 <- 1
+  expect_equal(unname(election_knowledge_items(survey, 2L)[, "wage_l"]), 0)
+  survey$wagel2 <- NA_real_
+  expect_equal(unname(election_knowledge_items(survey, 2L)[, "wage_l"]), 0)
+  expect_equal(unname(election_knowledge_items(survey, 1L)[, "wage_l"]), 1)
+})
+
+test_that("UKGE-03 agrees with deposited post correctness for attendees", {
+  survey <- read_poll_survey("uk-general-election-1997")
+  selected <- survey$filter == 1
+  items <- election_knowledge_items(survey, 2L)
+  expect_equal(sum(selected), 275L)
+  expect_equal(items[selected, "wage_l"], as.numeric(survey$wgel2cor[selected]))
+  scores <- build_election_individual(survey)
+  expect_true(all(scores$knowledge_t2[!selected] == 0))
 })

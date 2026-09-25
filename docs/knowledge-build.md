@@ -231,7 +231,10 @@ and typed derived measures. All 21 polls build from public source materials;
 `make compare-polardata` evaluates historical agreement separately. Generalized
 variance has explicitly audited numerical exceptions in 24 groups, and export
 row numbers are regenerated. Approved UKC-01 replaces baseline policing with the
-post-wave children item in the UK Crime root-causes index. Comparison checks
+post-wave children item in the UK Crime root-causes index. Approved UKGE-03 uses
+`wagel2` in UK Election 1997 post knowledge, updating dependent respondent and
+group/poll quantities while preserving its sample and attitude definitions.
+Comparison checks
 verify the exact approved respondent values against the retained review evidence;
 the original historical benchmark is unchanged. See the [architecture](architecture.md) and
 [poll issue register](poll-issues.md) for samples, historical quirks and
@@ -371,7 +374,11 @@ except for explicitly approved corrections. UK Crime
 `root_causes_t2@ukc-01-v2` uses only post-wave children, television and school
 discipline responses; available-component averaging and the historical sample
 are unchanged. Its raw input links and observed-component counts reflect these
-three post-wave fields.
+three post-wave fields. UK Election 1997 uses `ukge-03-v2` for six post-dependent
+knowledge definitions and ten affected group/poll derived fields. The correction
+changes 54 attendee post knowledge scores and removes the baseline-only post
+contribution for 721 other source records. Baseline knowledge and its float
+precision convention remain unchanged.
 See the [stage contracts](architecture.md#respondent-reconstruction-before-aggregation),
 [coverage](../audit/respondent_coverage.csv), and
 [historical comparison](../audit/respondent_parity.csv).

@@ -85,7 +85,9 @@ test_that("UKC-01 approval cannot hide new changes or a reverted correction", {
     "audit", "polardata_covariances.csv"
   ), show_col_types = FALSE)
   compare <- function(x) compare_historical_polardata(x, reference, audit)
-  expect_equal(sum(compare(data)$approved_correction_differences), 142L)
+  expect_equal(sum(compare(data)$approved_correction_differences[
+    compare(data)$poll_id == "uk-crime-1994"
+  ]), 142L)
   row <- which(data$dpnum == 6 & data$caseid == 10005)
   changed <- data
   changed$ukcrime.rootcauset2[row] <- reference$ukcrime.rootcauset2[row]
@@ -96,4 +98,35 @@ test_that("UKC-01 approval cannot hide new changes or a reverted correction", {
   row <- which(data$dpnum == 6 & data$caseid == 10388)
   changed$ukcrime.rootcauset2[row] <- 1
   expect_equal(sum(compare(changed)$unexplained_differences), 1L)
+})
+
+test_that("UKGE-03 approval protects every affected aggregate field", {
+  approved <- readr::read_csv(project_path(
+    "audit", "corrections", "uk-general-election-1997", "approved_values.csv"
+  ), show_col_types = FALSE)
+  expect_equal(nrow(approved), 275L * 19L)
+  data <- full_polardata()
+  reference <- readr::read_tsv(project_path(
+    "evidence", "benchmarks", "polardata.tab"
+  ), show_col_types = FALSE)
+  audit <- readr::read_csv(project_path(
+    "audit", "polardata_covariances.csv"
+  ), show_col_types = FALSE)
+  fields <- unique(approved$legacy_field)
+  changed <- data
+  for (field in fields) {
+    evidence <- approved[approved$legacy_field == field, ]
+    row <- which(abs(evidence$historical_value - evidence$approved_value) >
+                   1e-10)[1]
+    target <- which(changed$dpnum == 4 & changed$caseid == evidence$caseid[row])
+    changed[[field]][target] <- evidence$historical_value[row]
+  }
+  parity <- compare_historical_polardata(changed, reference, audit)
+  expect_equal(sum(parity$unexplained_differences), 19L)
+  actual <- data[data$dpnum == 4, ]
+  for (field in fields) {
+    evidence <- approved[approved$legacy_field == field, ]
+    expect_equal(actual[[field]][match(evidence$caseid, actual$caseid)],
+                 evidence$approved_value, tolerance = 1e-10)
+  }
 })

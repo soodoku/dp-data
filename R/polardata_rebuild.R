@@ -89,7 +89,23 @@ historical_derived_measures <- function(polls) {
         names_to = "legacy_field", values_to = "value_numeric"
       ) |>
       dplyr::mutate(
-        poll_id = .env$poll_id, definition_version = "historical-v1",
+        poll_id = .env$poll_id,
+        definition_version = dplyr::if_else(
+          .env$poll_id == "uk-general-election-1997" &
+            .data$legacy_field %in% c(
+              "grpgain",
+              "grpgainr",
+              "meant1knowcor",
+              "t1knowlevelcor",
+              "meant1knowcor_ind",
+              "meant2know",
+              "t2knowlevel",
+              "loggain",
+              "meant1knowrcor",
+              "t1knowlevelrcor"
+            ),
+          "ukge-03-v2", "historical-v1"
+        ),
         value_status = dplyr::case_when(
           is.na(.data$value_numeric) ~ "missing",
           .data$value_numeric == Inf ~ "positive-infinity",

@@ -1,0 +1,3 @@
+historical_sample,respondents,age_observed,mean_historical,mean_candidate,min_candidate,max_candidate,birthdate_matches,birthdate_disagrees,age_under_16,historical_mode,candidate_mode
+FALSE,445,433,1948.782909930716,48.78290993071593,1,94,433,0,1,1,0
+TRUE,466,458,1941.8384279475983,41.83842794759825,0,89,457,1,4,1,0

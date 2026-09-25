@@ -24,10 +24,7 @@ election_knowledge_items <- function(survey, wave) {
   placements <- purrr::map(c("c", "l", "ld"), function(party) {
     stems <- c("redst", "tax", "wage", "eu")
     items <- purrr::map(stems, function(stem) {
-      # UKGE-03: retain the baseline Labour wage item in the post-wave score.
-      source_wave <- if (wave == 2L && party == "l" && stem == "wage") 1L
-      else wave
-      field <- paste0(stem, party, source_wave)
+      field <- paste0(stem, party, wave)
       value <- read_source_codes(survey, field, c(-9, -8, 1:7))
       correct <- if (party == "c") value %in% 1:3 else value %in% 5:7
       as.numeric(correct)

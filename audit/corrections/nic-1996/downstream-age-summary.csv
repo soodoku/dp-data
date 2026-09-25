@@ -1,0 +1,4 @@
+scenario,respondents,observed_age,mean_age
+historical,466,451,54.79822616407982
+candidate_unadapted,466,0,NA
+candidate_adapted,466,454,42.198237885462554

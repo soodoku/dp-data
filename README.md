@@ -19,7 +19,10 @@ The repository establishes provenance before changing any analysis:
 `metadata/oos_sources.csv` locates the 24 frozen public inputs and supporting
 documents used by the dp-distortions out-of-sample study. It retains original
 URLs, access dates and SHA-256 hashes; shared files have one physical copy under
-`data/<study>/`. Study-specific recoding and estimation remain downstream.
+`data/<study>/`. Data recoding belongs in dp-data; downstream repositories
+consume versioned variables and perform estimation. Existing downstream
+recodes, including those in the out-of-sample study, still need migration with
+explicit value comparisons; see the [migration inventory](docs/poll-issues.md#x-11-data-recoding-belongs-upstream-not-in-downstream-readers).
 Blank source license fields mean no license was recorded during this migration;
 they do not assign the repository license to third-party materials.
 
@@ -62,7 +65,9 @@ historical benchmarks. Documented numerical exceptions concern generalized
 variance in 24 groups; the comparison checks the exact source matrices and
 numerical diagnostics before accepting those differences. Export row numbers
 are regenerated. The approved UK Crime correction replaces a baseline police
-item with the post-wave children item; comparisons verify each approved value
+item with the post-wave children item. UK Election 1997 now uses the post-wave
+Labour minimum-wage placement in post knowledge and its dependent measures.
+Comparisons verify each approved value
 against the reviewed respondent-level evidence and reject unexplained changes.
 See the [parity report](audit/polardata_parity.csv),
 [covariance audit](audit/polardata_covariances.csv), and

@@ -7,7 +7,8 @@ coverage of the 23 existing knowledge builds and the respondent reconstructions.
 
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
-UKC-01 was approved on 2026-09-24. All other proposals below remain unapproved.
+UKC-01 and UKGE-03 were approved on 2026-09-24. All other proposals below
+remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
 UK Health attitude implementation that would change definitions was set aside.
@@ -935,7 +936,8 @@ attitude change, dispersion and downstream estimates in a separate version.
 
 ### UKGE-03: Post Labour minimum-wage knowledge uses the baseline response
 
-**Status: proposed; awaiting user approval.** Replace only `wagel1` with `wagel2`
+**Status: approved by the user on 2026-09-24 and implemented.**
+Replace only `wagel1` with `wagel2`
 in the post Labour minimum-wage correctness item and rebuild its dependent
 knowledge and group variables. Keep the 5–7 correctness range, missing-as-incorrect
 rule, baseline scoring, 275-person sample and 15 groups. Do not bundle UKGE-02's
@@ -1003,6 +1005,13 @@ This failure occurs before applying UKGE-03; see SM-04 below. The comparison doe
 not suppress the production assertion or claim to have validated that model.
 Existing downstream source pins are unchanged; adoption comparisons do not
 silently repoint those repositories.
+
+Implementation versions the six dependent respondent definitions and affected
+group/poll measures as `ukge-03-v2`. Frozen approved values cover all 19 changed
+aggregate fields and 275 attendees. Comparison checks verify both historical
+reference values and exact approved replacements, and reject unreviewed
+differences. The five original review CSVs reproduce byte-for-byte after
+adoption. Historical benchmarks and the separate raw-item battery remain intact.
 
 Reproduce from dp-data, then from dp-learning respectively:
 
@@ -1466,16 +1475,90 @@ answers score zero with a fixed denominator of 11. The existing eight-item
 knowledge outputs retain their separate definition. SPEND2 code 9 is documented
 as missing (line 5545); SPDRUG2 code 9 is likewise missing (line 3635).
 
-**NIC-03 — historical age and mixed-wave extremity preserved.** `nic1.R`
-computes `ppage = 1996 - BYEAR`, although BYEAR is stored as a two-digit year.
-The reconstructed values reproduce the benchmark, including implausible ages;
-no century correction has been applied. Its arrival extremity/dispersion inputs
-use arrival waves for the first six spending items but baseline waves for foreign
-aid, welfare, and social security. This is explicit in the script's `nic2att`
-selection. Retain it for historical parity; before correcting, inspect the
-questionnaires, original age recoding syntax, and analysis specifications to
-establish the intended age and wave conventions. Recompute affected individual,
-group, and downstream model quantities under each proposed correction.
+### NIC-03: Correct birth-year conversion and event mode upstream
+
+**Status: proposed, not adopted.** The narrow correction is
+`age = 1996 - (1900 + BYEAR)`, preserving the existing year reference. This is age
+attained during 1996, not exact age at the January event. `dp-data` must own this
+recode; downstream readers must consume age directly, with no compensating
+NIC-specific inversion. The same poll proposal corrects `mode` from online (1)
+to face-to-face (0). Removal of both downstream NIC overrides belongs to the
+same adoption, not a later optional cleanup.
+
+The [codebook](../data/nic-1996/codebook.txt), lines 796–825, identifies `BIRTHDY1`
+as date of birth and `BYEAR` as year born. BYEAR equals the final two digits of
+BIRTHDY1 in 890 of 891 observed source records. The
+[archived script](https://github.com/soodoku/dp-data/blob/historical-cdd-scripts/legacy/poll_scripts/nic1.R),
+line 151, computes `ppage = 1996 - byear`; line 247 computes a separate
+`age = 1996 - ppage`, recovering BYEAR itself. dp-learning repeats that inverse
+and calls the result age. For someone born in 1962, upstream exports 1934 and
+downstream calls them 62; the proposed year-based age is 34.
+
+The scanned questionnaire was checked, but its identified SAQ2 pages do not
+verify the baseline birthdate question. The codebook and respondent-level
+birthdate crosscheck establish this proposal's evidence; do not claim that the
+fielded baseline questionnaire was recovered.
+
+[Recorded comparisons](../audit/corrections/nic-1996/):
+
+| Historical NIC sample | Current upstream | Proposed upstream |
+| --- | ---: | ---: |
+| People retained | 466 | 466 |
+| Observed ages | 458 | 458 |
+| Mean age | 1941.83843 | 41.83843 |
+
+All 458 observed ages fall by exactly 1900; missingness and identity are unchanged.
+The age change affects only `ppage` and its dependent `meanage`; the mode
+correction changes `mode` for all 466 historical rows. No other aggregate fields
+change.
+There are 891 observed ages among all 911 source records.
+
+**Mode evidence:** `metadata/polls.csv` already describes NIC as face-to-face.
+The [Luskin–Fishkin manuscript](../data/nic-1996/papers/luskin-fishkin-2002.pdf),
+PDF pages 4 and 6, describes on-site moderated groups/plenaries and 466
+participants arriving in Austin. The incorrect aggregate mode comes from the
+NIC constant in `core_poll_constants()`. dp-learning currently forces this
+value to zero; correcting it upstream and deleting that override preserves
+the mode actually used in its models.
+
+**Separate source anomalies, not silently repaired:** participant CASEIDs
+10005580 and 10008740 have BYEAR95; 10008780 has94; 10011470 has96. Their recorded
+birthdates agree with those years but their adult-screen flags contradict ages
+0–2. CASEID10007590 has BYEAR7 while BIRTHDY1 ends67: the candidate age is89,
+although29 would follow the full birthdate. All five passed the adult-screen
+question. Nonparticipant10006530 also has BYEAR95. These require instrument and
+source-version investigation; the proposed century correction neither imputes
+their birth years nor invents additional missingness.
+
+**Downstream comparison:** with dp-learning's existing 16–100 age eligibility,
+451 NIC ages are usable under its current mistaken recode. Direct consumption of
+the proposed upstream ages makes 454 usable: seven older participants become
+eligible and four apparent ages0–2 become ineligible. Merely changing upstream
+while retaining the downstream inversion makes all NIC ages fail eligibility.
+That is why adoption must remove the reader's inversion at the same time.
+The adapted diagnostic removes both NIC age and mode overrides; other existing
+reader policies remain only to isolate this poll proposal.
+
+In paired runs at dp-learning revision
+`57e83ad7937c9fea01a7bced9ead1b20dd157ab8`, the main model sample changes
+5,827 → 5,830, and its age-per-decade coefficient changes −.006791 → −.003358
+(SE .001772 → .001774). The minority model changes 5,179 → 5,182 observations.
+The briefing model changes 1,289 → 1,291 and is singular in both arms. These runs
+isolate NIC age/mode against the aggregate baseline including the approved Crime
+and UK Election corrections; they do not claim a
+full manuscript replication. Item-linked models remain subject to SM-04.
+
+Reproduce from dp-data, then dp-learning:
+
+```sh
+Rscript scripts/review_nic_age_correction.R /tmp/nic-age-review
+Rscript ../dp-data/scripts/review_nic_age_downstream.R /tmp/nic-age-review /tmp/nic-age-learning
+```
+
+The same historical script's arrival extremity/dispersion mixes arrival waves for
+the first six spending items with baseline foreign aid, welfare and social
+security. That separate definition remains unchanged pending instrument and
+analysis-specification review; it is not part of this age proposal.
 
 **NIC-04 — missing historical identity and reconstruction coverage.** The
 historical export and selected source each contain exactly one missing CASEID.
@@ -2210,3 +2293,32 @@ for(w in 1:2) {
 
 No issue in this register is an instruction to overwrite current scores. Review
 and any approved behavioral change belong in a separate, testable commit.
+
+### X-11: Data recoding belongs upstream, not in downstream readers
+
+The user requires poll-specific recodes to live in dp-data, with downstream
+repositories consuming defined variables. Moving a transformation must retain
+its evidence and before/after checks; copying an unsupported downstream patch
+upstream is not scientific validation. Initial migration inventory from
+dp-learning's `R/knowledge.R`, `R/sources.R` and recode ledger:
+
+| Current downstream transformation | Upstream disposition / required evidence |
+| --- | --- |
+| NIC `1996 - ppage` | Replace with the reviewed birth-year-to-age definition upstream; remove reader inversion in the same adoption (NIC-03). |
+| NIC online mode forced to zero | Represent in-person mode in poll metadata and exported descriptors; compare affected downstream variables before removing the override. |
+| Ages outside16–100 made missing | Preserve raw age and provide an explicit upstream analysis-eligibility/quality field; assess source anomalies separately from exclusion policy. |
+| Greece post knowledge zero made missing when baseline is positive | Requires source/instrument evidence for nonresponse; a surprising zero score alone does not establish missingness. Do not promote this heuristic as a verified correction. |
+| Greece education code7 made missing | Verify source category labels and export missing-value convention before centralizing. |
+| Knowledge rounded to10decimals | Centralize documented numeric storage handling and test exact boundaries; preserve distinct knowledge definitions. |
+| Primaries exact duplicate rows dropped | Use upstream canonical person identities and named samples instead of downstream whole-row deduplication (PR-03). |
+| Item-battery missing responses counted incorrect | Use an explicit upstream score definition and denominator; retain raw missingness in response data. |
+
+Model fitting and explicitly chosen estimands remain analysis work. Reader-side
+poll repairs, hidden rekeys and missing-value guesses do not. Existing downstream
+source pins still select historical inputs; migrating them requires a coherent
+upstream contract and exact impact checks, including the known SM-04 linkage
+failure. NIC's proposal is the first coordinated reader-removal case, not a
+claim that the full downstream migration is already complete. The remaining
+scope also includes study-specific recodes in dp-distortions' out-of-sample
+pipeline; its 24 frozen inputs are already centralized, but the transformations
+must be inventoried and moved with study-level value checks.

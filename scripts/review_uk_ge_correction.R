@@ -1,4 +1,4 @@
-# UKGE-03 counterfactual review; production files are never overwritten.
+# Reproduce approved UKGE-03 comparisons without overwriting production files.
 for (file in c(
   "paths", "sources", "metadata", "poll_sources", "poll_adapters",
   "knowledge", "exports", "respondents", "polardata", "polardata_rebuild"
@@ -15,18 +15,19 @@ directory <- if (length(arguments)) {
 fs::dir_create(directory)
 poll_id <- "uk-general-election-1997"
 survey <- read_poll_survey(poll_id)
-before <- build_historical_poll(poll_id)
-individual_before <- build_election_individual(survey)
-original_items <- election_knowledge_items
-items_before <- original_items(survey, 2L)
+corrected_items <- election_knowledge_items
 election_knowledge_items <- function(survey, wave) {
-  result <- original_items(survey, wave)
+  result <- corrected_items(survey, wave)
   if (wave == 2L) {
-    value <- read_source_codes(survey, "wagel2", c(-9, -8, 1:7))
+    value <- read_source_codes(survey, "wagel1", c(-9, -8, 1:7))
     result[, "wage_l"] <- as.numeric(value %in% 5:7)
   }
   result
 }
+before <- build_historical_poll(poll_id)
+individual_before <- build_election_individual(survey)
+items_before <- election_knowledge_items(survey, 2L)
+election_knowledge_items <- corrected_items
 after <- build_historical_poll(poll_id)
 individual_after <- build_election_individual(survey)
 items_after <- election_knowledge_items(survey, 2L)
@@ -140,4 +141,4 @@ for (field in fields) wide[[field]][keep] <- after[[field]][positions]
 readr::write_tsv(wide, file.path(directory, "candidate-polardata.tab"), na = "")
 print(summary, width = Inf)
 print(compare_fields(before, after), n = Inf, width = Inf)
-message("Unapproved UKGE-03 diagnostics written to: ", directory)
+message("Approved UKGE-03 comparisons written to: ", directory)
