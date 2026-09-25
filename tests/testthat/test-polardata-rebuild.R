@@ -35,6 +35,8 @@ test_that("derived exports preserve unique people and reviewed gain", {
   )]) > 0L)
   infinite <- derived$value_status == "positive-infinity"
   expect_equal(sum(infinite), 0L)
+  wide <- full_polardata()
+  expect_equal(wide$loggain, historical_log_score(wide$grpgain))
   australia_gain <- derived$poll_id == "australia-republic-1999" &
     derived$legacy_field %in% c("grpgain", "loggain")
   expect_setequal(unique(derived$definition_version[australia_gain]),

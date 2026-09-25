@@ -19,7 +19,6 @@ build_zeguo_derived <- function(survey, values) {
   result$grpgain <- historical_fractional_gain(before * after, group)
   result$grpgainr <- result$grpgain
   result$grpgain2 <- NA_real_
-  result$loggain <- historical_log_score(result$grpgain)
   result$t1knowlevel <- mean(rowMeans(before))
   result$pollid <- 52
   result$pollgroup <- group
@@ -103,7 +102,6 @@ build_btp_primaries_derived <- function(survey, values) {
   result$grpgain[is.nan(result$grpgain)] <- NA_real_
   result$grpgainr <- result$grpgain
   result$grpgain2 <- NA_real_
-  result$loggain <- historical_log_score(result$grpgain)
   result$t1knowlevel <- as_historical_float(round(
     mean(as_historical_float(rowMeans(before, na.rm = TRUE)), na.rm = TRUE), 7
   ))

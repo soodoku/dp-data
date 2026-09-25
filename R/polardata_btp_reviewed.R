@@ -100,7 +100,6 @@ reviewed_us_derived <- function(survey, values, measures, selected, group,
   )
   result$grpgainr <- result$grpgain
   result$grpgain2 <- NA_real_
-  result$loggain <- historical_log_score(result$grpgain)
   result$t1knowlevel <- t1knowlevel
   result$pollid <- pollid
   result$pollgroup <- group[rows]
