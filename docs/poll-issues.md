@@ -1095,10 +1095,40 @@ later group composition. This reproduces the historical gain values.
 The checked `cpl2.sav` SHA-256 is
 `c29f1d2e2ab4ed10888e1a9857d7e09fe0541bada81e5d25db1d15b914cd11ce`.
 Using a 201-row denominator changed 12 exported gain values during validation.
-A corrected calculation should use the actual group membership count. Before
-making that change, inspect the executed script and source version, quantify
-changes to `grpgain`, `grpgainr`, and `loggain`, and rerun downstream models.
-This is a computation issue, not evidence that respondents were miscoded.
+**CPL-05 proposal (not adopted).** The archived `grpfun` helper indexes that
+202-element vector with the full group-presence vector. Values past source row
+202 become missing; its `sum(..., na.rm = TRUE)` then silently excludes them.
+The source codebook's `PART` table records 216 participants and 1,030
+nonparticipants, and its `GROUP` table gives 16 group counts totaling 216.
+Those counts match the full membership counts exactly. Ten groups are
+undercounted by the historical calculation (one to three members each).
+
+The diagnostic `scripts/review_cpl_group_gain.R` reproduces the short-vector
+indexing and compares the proposed calculation with a separately calculated
+mean over the focal respondent's actual peers. They agree within `1e-12`.
+It changes only `grpgain`, `grpgainr`, and `loggain`: 132 of 216 participant
+values change, with no changes to IDs, membership, missingness, knowledge
+scores, or other aggregate fields. Mean gain falls from 0.1549723023 to
+0.1540506270; the largest individual decrease is 0.0052910053. Mean log gain
+changes from -1.9735843252 to -1.9797921411. All 1,030 other source records
+retain missing gain. The proposal preserves the existing joint pre-times-post
+correctness definition; it does not substitute a baseline-only peer measure.
+
+Evidence and group-level comparisons are in `audit/corrections/cpl-1996/`.
+The original `cpl2.sav` version and hash above come from the earlier recorded
+source audit; this review directly checks the archived code, current source
+membership, and the reproduced 202-row historical calculation, without
+re-reading those original file bytes. Stanford's utilities overview and the
+retained List–Luskin–Fishkin–McLean paper provide design and data-use context,
+but neither is treated as proof of this denominator. This is a computation
+issue, not evidence that respondents were miscoded. The paired downstream check
+produces byte-identical dp-distortions output CSVs, including all 28 pooled
+CR2 estimates, and an exactly identical
+dp-learning analysis frame (6,013 rows, 20 columns). The expensive wild
+bootstrap was not rerun; the unchanged deterministic inputs and estimates are
+recorded in the audit. The current dp-learning peer measure is constructed
+separately from baseline items and is unchanged by this proposal. Scientific
+adoption requires the user's poll-specific approval.
 
 ## SWEPCO 1996 — swepco-1996
 
