@@ -31,8 +31,9 @@ build_eu_individual <- function(survey = read_poll_survey("uk-eu-1995")) {
     }
     result[[paste0("ukeu.eurelat", wave, "g")]] <-
       average(c("releu", "longpol", "unite"), c(-1, 8, 9))
+    scope_missing <- if (wave == 1L) c(8, 9) else c(-1, 8, 9)
     result[[paste0("ukeu.euscope", wave, "g")]] <-
-      average(c("trabloc", "pasport"), c(8, 9), if (wave == 1) 1 else -1)
+      average(c("trabloc", "pasport"), scope_missing)
     for (stem in c("commies", "favref")) {
       result[[paste0("ukeu.", stem, wave, "r")]] <- response(
         paste0(stem, wave), if (wave == 1) numeric() else c(-1, 8, 9),

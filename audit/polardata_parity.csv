@@ -236,7 +236,7 @@ uk-eu-1995,ukeu.euscope1g,238,237,0,0,0,0,FALSE,0,0,1e-10
 uk-eu-1995,ukeu.commies1r,238,238,0,0,0,0,FALSE,0,0,1e-10
 uk-eu-1995,ukeu.favref1r,238,238,0,0,0,0,FALSE,0,0,1e-10
 uk-eu-1995,ukeu.eurelat2g,238,224,0,211,0,211,FALSE,0,0.33333333333333304,1e-10
-uk-eu-1995,ukeu.euscope2g,238,238,0,0,0,0,FALSE,0,3.885780586188048e-16,1e-10
+uk-eu-1995,ukeu.euscope2g,238,224,14,209,0,223,FALSE,0,0.333333333333333,1e-10
 uk-eu-1995,ukeu.commies2r,238,221,0,0,0,0,FALSE,0,0,1e-10
 uk-eu-1995,ukeu.favref2r,238,224,0,0,0,0,FALSE,0,0,1e-10
 uk-eu-1995,ukhealth.t1payhlt,238,0,0,0,0,0,FALSE,0,0,1e-10

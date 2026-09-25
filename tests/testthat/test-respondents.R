@@ -158,6 +158,22 @@ test_that("UK EU post uncertainty is missing", {
   expect_equal(build_eu_individual(example)$ukeu.eurelat2g, 1)
 })
 
+test_that("UK EU post scope treats inapplicable responses as missing", {
+  survey <- read_poll_survey("uk-eu-1995")
+  attendee <- as.numeric(survey$part) == 1
+  trading <- as.numeric(survey$trabloc2[attendee])
+  passport <- as.numeric(survey$pasport2[attendee])
+  expect_equal(sum(trading == -1 & passport == -1), 14L)
+  expect_false(any(trading == 8 | passport == 8))
+  example <- survey[1L, ]
+  example$trabloc2 <- -1
+  example$pasport2 <- -1
+  expect_true(is.na(build_eu_individual(example)$ukeu.euscope2g))
+  example$trabloc2 <- 5
+  example$pasport2 <- 5
+  expect_equal(build_eu_individual(example)$ukeu.euscope2g, 1)
+})
+
 test_that("UK EU keeps 238 historical attendees and 224 knowledge cases", {
   survey <- read_poll_survey("uk-eu-1995")
   samples <- respondent_export("sample_memberships")
@@ -204,7 +220,10 @@ test_that("definitions match historical or approved values by IDs", {
     parity$poll_id == "tomorrows-europe-2007"
   ]), 15L)
   expect_equal(sum(parity$missingness_differences[
-    parity$poll_id != "tomorrows-europe-2007"
+    parity$poll_id == "uk-eu-1995"
+  ]), 14L)
+  expect_equal(sum(parity$missingness_differences[
+    !parity$poll_id %in% c("tomorrows-europe-2007", "uk-eu-1995")
   ]), 1L)
   expect_equal(sum(parity$value_differences[
     parity$poll_id == "uk-crime-1994"
