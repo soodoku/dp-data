@@ -16,7 +16,12 @@ readr::write_csv(tibble::tibble(
   sha256 = vapply(paths, digest::digest, "", algo = "sha256", file = TRUE),
   revision = system2("git", c("rev-parse", "HEAD"), stdout = TRUE)
 ), file.path(output, "downstream-provenance.csv"))
-reader <- readLines("R/knowledge.R")
+reader_revision <- "57e83ad7937c9fea01a7bced9ead1b20dd157ab8"
+reader <- system2(
+  "git", c("show", paste0(reader_revision, ":R/knowledge.R")), stdout = TRUE
+)
+historical_reader <- new.env(parent = globalenv())
+eval(parse(text = reader), envir = historical_reader)
 lines <- c(
   "      ppage = dplyr::if_else(nic, 1996 - ppage, ppage),",
   "      mode = dplyr::if_else(nic, 0, mode),"
@@ -31,8 +36,8 @@ inputs <- lapply(paths, function(path) {
   dplyr::bind_rows(read_polardata(path), greece)
 })
 frames <- list(
-  historical = analysis_frame(inputs[[1]]),
-  candidate_unadapted = analysis_frame(inputs[[2]]),
+  historical = historical_reader$analysis_frame(inputs[[1]]),
+  candidate_unadapted = historical_reader$analysis_frame(inputs[[2]]),
   candidate_adapted = adapted$analysis_frame(inputs[[2]])
 )
 stopifnot(all(vapply(frames, function(frame) {

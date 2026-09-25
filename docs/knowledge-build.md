@@ -234,6 +234,10 @@ row numbers are regenerated. Approved UKC-01 replaces baseline policing with the
 post-wave children item in the UK Crime root-causes index. Approved UKGE-03 uses
 `wagel2` in UK Election 1997 post knowledge, updating dependent respondent and
 group/poll quantities while preserving its sample and attitude definitions.
+Approved NIC-03 converts two-digit birth years using `96 - BYEAR`, rebuilds
+group mean age and sets the event mode to in person (`0`). All 466 historical
+records remain, including the uniquely missing identity; raw age anomalies
+remain unchanged pending separate review.
 Comparison checks
 verify the exact approved respondent values against the retained review evidence;
 the original historical benchmark is unchanged. See the [architecture](architecture.md) and
@@ -378,7 +382,9 @@ three post-wave fields. UK Election 1997 uses `ukge-03-v2` for six post-dependen
 knowledge definitions and ten affected group/poll derived fields. The correction
 changes 54 attendee post knowledge scores and removes the baseline-only post
 contribution for 721 other source records. Baseline knowledge and its float
-precision convention remain unchanged.
+precision convention remain unchanged. NIC `age@nic-03-v2` and derived
+`meanage` use the corrected age units. The approved mode definition is recorded
+as `mode@nic-03-v2` in the correction evidence and source findings.
 See the [stage contracts](architecture.md#respondent-reconstruction-before-aggregation),
 [coverage](../audit/respondent_coverage.csv), and
 [historical comparison](../audit/respondent_parity.csv).

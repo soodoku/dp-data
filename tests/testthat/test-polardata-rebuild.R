@@ -130,3 +130,31 @@ test_that("UKGE-03 approval protects every affected aggregate field", {
                  evidence$approved_value, tolerance = 1e-10)
   }
 })
+
+test_that("NIC approved ages and mode retain the single missing identity", {
+  data <- full_polardata()
+  nic <- data[data$dpnum == 20, ]
+  expect_equal(nrow(nic), 466L)
+  expect_equal(sum(is.na(nic$caseid)), 1L)
+  expect_true(all(nic$mode == 0))
+  expect_equal(sum(!is.na(nic$ppage)), 458L)
+  expect_equal(sum(nic$ppage < 16, na.rm = TRUE), 4L)
+  reference <- readr::read_tsv(project_path(
+    "evidence", "benchmarks", "polardata.tab"
+  ), show_col_types = FALSE)
+  audit <- readr::read_csv(project_path(
+    "audit", "polardata_covariances.csv"
+  ), show_col_types = FALSE)
+  changed <- data
+  row <- which(data$dpnum == 20 & !is.na(data$ppage))[1]
+  for (field in c("ppage", "meanage", "mode")) {
+    changed[[field]][row] <- reference[[field]][row]
+  }
+  result <- compare_historical_polardata(changed, reference, audit)
+  expect_equal(sum(result$unexplained_differences), 3L)
+  changed <- data
+  row <- which(data$dpnum == 20 & is.na(data$caseid))
+  changed$mode[row] <- 1
+  result <- compare_historical_polardata(changed, reference, audit)
+  expect_equal(sum(result$unexplained_differences), 1L)
+})

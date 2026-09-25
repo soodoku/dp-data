@@ -1,4 +1,4 @@
-# NIC age and mode proposal; raw birthdate anomalies remain unresolved.
+# Reproduce approved NIC age/mode comparisons; preserve raw source anomalies.
 for (file in c(
   "paths", "sources", "metadata", "poll_sources", "poll_adapters",
   "knowledge", "exports", "respondents", "polardata", "polardata_rebuild"
@@ -11,19 +11,21 @@ directory <- if (length(arguments)) arguments[[1]] else tempfile("nic-age-")
 fs::dir_create(directory)
 poll_id <- "nic-1996"
 survey <- read_poll_survey(poll_id)
-before <- build_historical_poll(poll_id)
-original_individual <- build_nic_individual
+corrected_individual <- build_nic_individual
+corrected_constants <- core_poll_constants
 build_nic_individual <- function(survey = read_poll_survey("nic-1996")) {
-  result <- original_individual(survey)
-  result$age <- 96 - nic_source_codes(survey, "BYEAR", 0:99)
+  result <- corrected_individual(survey)
+  result$age <- 1996 - nic_source_codes(survey, "BYEAR", 0:99)
   result
 }
-original_constants <- core_poll_constants
 core_poll_constants <- function(poll_id) {
-  result <- original_constants(poll_id)
-  if (poll_id == "nic-1996") result[["mode"]] <- 0
+  result <- corrected_constants(poll_id)
+  if (poll_id == "nic-1996") result[["mode"]] <- 1
   result
 }
+before <- build_historical_poll(poll_id)
+build_nic_individual <- corrected_individual
+core_poll_constants <- corrected_constants
 after <- build_historical_poll(poll_id)
 stopifnot(
   identical(before$caseid, after$caseid),
@@ -75,7 +77,7 @@ summary <- rows |>
     birthdate_matches = sum(year_matches_date, na.rm = TRUE),
     birthdate_disagrees = sum(!year_matches_date, na.rm = TRUE),
     age_under_16 = sum(implausible_under_16, na.rm = TRUE),
-    historical_mode = original_constants(poll_id)[["mode"]],
+    historical_mode = unique(before$mode),
     candidate_mode = core_poll_constants(poll_id)[["mode"]]
   )
 readr::write_csv(summary, file.path(directory, "summary.csv"))
@@ -104,4 +106,4 @@ readr::write_tsv(wide,
   na = ""
 )
 print(summary, width = Inf)
-message("Unapproved NIC age/mode diagnostics written to: ", directory)
+message("Approved NIC age/mode diagnostics written to: ", directory)

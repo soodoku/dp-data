@@ -5,7 +5,7 @@ core_poll_constants <- function(poll_id) {
     "uk-monarchy-1996" = c(23, 2, 0, 9, 4),
     "uk-general-election-1997" = c(25, 2, 0, 15, 4),
     "uk-crime-1994" = c(27, 2, 0, 7, 5),
-    "nic-1996" = c(1001, 1, 1, 11, 9),
+    "nic-1996" = c(1001, 1, 0, 11, 9),
     "cpl-1996" = c(29, 1, 0, 7, 7),
     "wtu-1996" = c(986, 1, 0, 5, 7),
     "swepco-1996" = c(3000, 1, 0, 5, 7),

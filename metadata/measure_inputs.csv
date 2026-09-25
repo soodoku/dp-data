@@ -1146,7 +1146,7 @@ nic-1996,knowledge_t2@historical-v1,TROOPSC3
 nic-1996,knowledge_t2@historical-v1,TROOPSD3
 nic-1996,knowledge_t2@historical-v1,POLREP3
 nic-1996,knowledge_t2@historical-v1,POLDEM3
-nic-1996,age@historical-v1,BYEAR
+nic-1996,age@nic-03-v2,BYEAR
 nic-1996,education_four@historical-v1,EDLEVEL1
 nic-1996,minority@historical-v1,RACE1
 nic-1996,female@historical-v1,SEX1

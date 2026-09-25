@@ -57,7 +57,7 @@ build_nic_individual <- function(survey = read_poll_survey("nic-1996")) {
   baseline <- nic_attitudes(survey, 1L)
   midterm <- nic_attitudes(survey, 2L)
   post <- nic_attitudes(survey, 3L)
-  # NIC-03: the historical arrival summary retains three baseline items.
+  # The historical arrival summary retains three baseline items.
   midterm[, 7:9] <- baseline[, 7:9]
   education <- nic_source_codes(survey, "EDLEVEL1", c(1:13, 99))
   education <- dplyr::case_when(
@@ -76,7 +76,7 @@ build_nic_individual <- function(survey = read_poll_survey("nic-1996")) {
       knowledge_midterm = rowMeans(arrival),
       knowledge_midterm_joint = rowMeans(arrival * after),
       knowledge_joint_midterm = rowMeans(before * arrival * after),
-      age = 1996 - nic_source_codes(survey, "BYEAR", 0:99),
+      age = 96 - nic_source_codes(survey, "BYEAR", 0:99),
       female = as.numeric(nic_source_codes(survey, "SEX1", 1:2) == 2),
       minority = as.numeric(nic_source_codes(survey, "RACE1", 1:6) != 1),
       education_four = education,

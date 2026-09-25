@@ -92,3 +92,13 @@ derived_measures,legacy_field,string,FALSE,TRUE,Historical derived field; group 
 derived_measures,definition_version,string,FALSE,TRUE,Historical computation version
 derived_measures,value_numeric,float64,TRUE,FALSE,Source-computed value; nonfinite historical results explicitly classified
 derived_measures,value_status,string,FALSE,FALSE,"finite, missing, positive-infinity or negative-infinity"
+respondent_knowledge,poll_id,string,FALSE,TRUE,Stable poll identifier
+respondent_knowledge,respondent_id,string,FALSE,TRUE,Canonical respondent identity in people
+respondent_knowledge,historical_respondent_id,string,TRUE,FALSE,Historical aggregate ID; null where no transferable historical ID exists
+respondent_knowledge,source_row,int32,FALSE,FALSE,One-based row in the poll source; identity bridge to people
+respondent_knowledge,item_id,string,FALSE,TRUE,Canonical knowledge item; consult knowledge_items for battery definition
+respondent_knowledge,wave,int32,FALSE,TRUE,Canonical knowledge wave 1 or 2; consult source item metadata for fieldwork wave
+respondent_knowledge,source_column,string,FALSE,FALSE,Original source variable scored under the canonical item definition
+respondent_knowledge,correct,int32,TRUE,FALSE,Correct 1 or incorrect 0; raw missingness preserved as null
+respondent_knowledge,correct_zero_filled,int32,FALSE,FALSE,Explicit fixed-denominator score: missing correctness counts as zero
+respondent_knowledge,response_status,string,FALSE,FALSE,Original canonical response status retained alongside zero-filled score

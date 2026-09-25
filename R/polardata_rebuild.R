@@ -104,7 +104,11 @@ historical_derived_measures <- function(polls) {
               "meant1knowrcor",
               "t1knowlevelrcor"
             ),
-          "ukge-03-v2", "historical-v1"
+          "ukge-03-v2",
+          dplyr::if_else(
+            .env$poll_id == "nic-1996" & .data$legacy_field == "meanage",
+            "nic-03-v2", "historical-v1"
+          )
         ),
         value_status = dplyr::case_when(
           is.na(.data$value_numeric) ~ "missing",

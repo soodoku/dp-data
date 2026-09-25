@@ -32,14 +32,15 @@ test_that("NIC builds without stored scores and independently of row order", {
   )
 })
 
-test_that("NIC historical respondent fields retain values and missingness", {
+test_that("NIC respondent fields match historical or approved values", {
   audit <- readr::read_csv(project_path("audit", "respondent_parity.csv"),
     show_col_types = FALSE
   )
   nic <- audit[audit$poll_id == "nic-1996", ]
   expect_equal(nrow(nic), 45L)
   expect_true(all(nic$respondents == 466L))
-  expect_true(all(nic$value_differences == 0L))
+  expect_equal(sum(nic$value_differences), 458L)
+  expect_true(all(nic$unexplained_differences == 0L))
   expect_true(all(nic$missingness_differences == 0L))
 })
 
@@ -67,4 +68,14 @@ test_that("NIC rejects a second missing historical identity", {
   expect_error(compare_respondent_measures(
     measures, people, samples, reference
   ))
+})
+
+test_that("NIC approved age uses two-digit birth years without anomaly edits", {
+  survey <- read_poll_survey("nic-1996")
+  result <- build_nic_individual(survey)$age
+  expect_equal(result, 96 - nic_source_codes(survey, "BYEAR", 0:99))
+  expect_equal(sum(!is.na(result)), 891L)
+  expect_equal(sum(result < 16, na.rm = TRUE), 5L)
+  anomaly <- match(c(293, 445, 523, 526, 691), survey$source_row)
+  expect_equal(result[anomaly], c(1, 89, 1, 2, 0))
 })

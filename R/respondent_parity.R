@@ -1,5 +1,26 @@
 approved_reference_values <- function(poll_id, field, caseid, historical,
                                       tolerance = 1e-10) {
+  if (poll_id == "nic-1996" && field %in% c("ppage", "meanage", "mode")) {
+    approved <- readr::read_csv(project_path(
+      "audit", "corrections", "nic-1996", "approved_values.csv"
+    ), show_col_types = FALSE)
+    approved <- approved[approved$legacy_field == field, ]
+    stopifnot(
+      nrow(approved) == 466L, !anyDuplicated(approved$caseid),
+      !anyDuplicated(approved$source_row), sum(is.na(approved$caseid)) == 1L,
+      sum(is.na(caseid)) == 1L, !anyDuplicated(caseid),
+      setequal(as.character(caseid), as.character(approved$caseid))
+    )
+    rows <- match(as.character(caseid), as.character(approved$caseid))
+    approved <- approved[rows, ]
+    stopifnot(
+      identical(is.na(historical), is.na(approved$historical_value)),
+      all(abs(historical - approved$historical_value) <= tolerance,
+        na.rm = TRUE
+      )
+    )
+    return(approved$approved_value)
+  }
   election_fields <- c(
     "t1knowcor",
     "t2know",

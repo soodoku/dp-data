@@ -67,6 +67,8 @@ numerical diagnostics before accepting those differences. Export row numbers
 are regenerated. The approved UK Crime correction replaces a baseline police
 item with the post-wave children item. UK Election 1997 now uses the post-wave
 Labour minimum-wage placement in post knowledge and its dependent measures.
+NIC 1996 age now uses `96 - BYEAR`, and its event mode is in person; raw
+birth-year anomalies remain recorded for separate review.
 Comparisons verify each approved value
 against the reviewed respondent-level evidence and reject unexplained changes.
 See the [parity report](audit/polardata_parity.csv),

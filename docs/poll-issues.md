@@ -7,7 +7,7 @@ coverage of the 23 existing knowledge builds and the respondent reconstructions.
 
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
-UKC-01 and UKGE-03 were approved on 2026-09-24. All other proposals below
+UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24. Other proposals
 remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
@@ -1477,7 +1477,8 @@ as missing (line 5545); SPDRUG2 code 9 is likewise missing (line 3635).
 
 ### NIC-03: Correct birth-year conversion and event mode upstream
 
-**Status: proposed, not adopted.** The narrow correction is
+**Status: approved by the user on 2026-09-24 and implemented upstream.**
+The age correction is
 `age = 1996 - (1900 + BYEAR)`, preserving the existing year reference. This is age
 attained during 1996, not exact age at the January event. `dp-data` must own this
 recode; downstream readers must consume age directly, with no compensating
@@ -1536,8 +1537,9 @@ the proposed upstream ages makes 454 usable: seven older participants become
 eligible and four apparent ages0–2 become ineligible. Merely changing upstream
 while retaining the downstream inversion makes all NIC ages fail eligibility.
 That is why adoption must remove the reader's inversion at the same time.
-The adapted diagnostic removes both NIC age and mode overrides; other existing
-reader policies remain only to isolate this poll proposal.
+The adapted diagnostic removes both NIC age and mode overrides. Production
+dp-learning now also consumes the corrected export directly with both overrides
+removed. Other existing reader policies remain pending the X-11 migration review.
 
 In paired runs at dp-learning revision
 `57e83ad7937c9fea01a7bced9ead1b20dd157ab8`, the main model sample changes
@@ -1546,7 +1548,8 @@ In paired runs at dp-learning revision
 The briefing model changes 1,289 → 1,291 and is singular in both arms. These runs
 isolate NIC age/mode against the aggregate baseline including the approved Crime
 and UK Election corrections; they do not claim a
-full manuscript replication. Item-linked models remain subject to SM-04.
+full manuscript replication. The original diagnostic omitted the item-linked model because of SM-04; the
+subsequent production migration resolves that identity issue and runs the model.
 
 Reproduce from dp-data, then dp-learning:
 
@@ -1733,19 +1736,27 @@ scoring-version discrepancy. Post Q20/Q26 values 8/9 remain incorrect in binary
 scoring pending codebook review. Five group covariance exceptions, including two
 indefinite matrices, are detailed in X-09.
 
-### SM-04: dp-learning item linkage fails on reconstructed aggregate input
+### SM-04: Anonymous item rows and reconstructed respondents had different order
 
-During the UKGE-03 adoption comparison, dp-learning's `t1_items_for_poll()`
-assertion failed for `sm` (dpnum 17): 162 of 239 row-paired T1 item-battery means
-differ from reconstructed `t1know`, with maximum absolute difference .75.
-All seven other linked batteries pass the 1e-7 tolerance. This occurs in the
-uncorrected arm, so it is not an effect of the UK election proposal. The evidence
-is recorded in `audit/corrections/uk-general-election-1997/downstream-item-alignment.csv`.
-Investigate row identity/order and battery provenance using SM-02 before assuming
-any score is wrong. Do not disable the production alignment assertion, drop
-people, or change scoring to force agreement. The main, minority and briefing
-models can be compared independently; the item-linked model remains unvalidated
-for the reconstructed input.
+**Resolved through upstream identity linkage, with no score correction.** During
+the UKGE-03 comparison, dp-learning's positional `t1_items_for_poll()` assertion
+failed for `sm` (dpnum17): 162 of239 paired T1 item means differed from rebuilt
+`t1know`, with maximum difference .75. This occurred before UKGE-03.
+
+The deposited battery follows historical caseid order, while reconstructed
+polardata follows source order. Matching by established historical respondent ID
+restores zero mismatches. No new identity was inferred from matching scores.
+The upstream `respondent_knowledge` export now links canonical item responses
+to `people` by poll/source row and includes the historical ID. dp-learning joins
+by that ID and consumes explicit `correct_zero_filled`, preserving raw missingness
+separately upstream.
+
+All eight T1-linked polls' item cells match their previous batteries exactly.
+All2,175 person-level peer-knowledge results match the previous correctly aligned
+implementation within1e-12. Shuffling input rows does not alter the join; missing
+or duplicate identities fail tests. The previously recorded mismatch remains
+in `audit/corrections/uk-general-election-1997/downstream-item-alignment.csv` as
+evidence of the old positional failure.
 
 ## Michigan 2009 — michigan-2009
 
@@ -2304,14 +2315,14 @@ dp-learning's `R/knowledge.R`, `R/sources.R` and recode ledger:
 
 | Current downstream transformation | Upstream disposition / required evidence |
 | --- | --- |
-| NIC `1996 - ppage` | Replace with the reviewed birth-year-to-age definition upstream; remove reader inversion in the same adoption (NIC-03). |
-| NIC online mode forced to zero | Represent in-person mode in poll metadata and exported descriptors; compare affected downstream variables before removing the override. |
+| NIC `1996 - ppage` | Implemented upstream as `age@nic-03-v2`; downstream inversion removed (NIC-03). |
+| NIC online mode forced to zero | Corrected upstream to face-to-face; downstream override removed (NIC-03). |
 | Ages outside16–100 made missing | Preserve raw age and provide an explicit upstream analysis-eligibility/quality field; assess source anomalies separately from exclusion policy. |
 | Greece post knowledge zero made missing when baseline is positive | Requires source/instrument evidence for nonresponse; a surprising zero score alone does not establish missingness. Do not promote this heuristic as a verified correction. |
 | Greece education code7 made missing | Verify source category labels and export missing-value convention before centralizing. |
 | Knowledge rounded to10decimals | Centralize documented numeric storage handling and test exact boundaries; preserve distinct knowledge definitions. |
 | Primaries exact duplicate rows dropped | Use upstream canonical person identities and named samples instead of downstream whole-row deduplication (PR-03). |
-| Item-battery missing responses counted incorrect | Use an explicit upstream score definition and denominator; retain raw missingness in response data. |
+| Item-battery missing responses counted incorrect | The eight linked T1 batteries now consume upstream `correct_zero_filled`; nullable `correct` and response status remain available. Anonymous latent-model batteries still need migration. |
 
 Model fitting and explicitly chosen estimands remain analysis work. Reader-side
 poll repairs, hidden rekeys and missing-value guesses do not. Existing downstream
