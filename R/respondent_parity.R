@@ -30,6 +30,7 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
       fields = c("grpgain", "grpgainr", "loggain"), rows = 216L
     ),
     "swepco-1996" = list(fields = "swp.t2att3", rows = 232L),
+    "wtu-1996" = list(fields = "wtu.t2att3", rows = 230L),
     "australia-republic-1999" = list(
       fields = c("grpgain", "loggain"), rows = 347L
     )

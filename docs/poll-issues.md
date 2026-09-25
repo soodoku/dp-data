@@ -1,14 +1,15 @@
 # Poll-level issue register
 
-Review date: 2026-09-24. Scope: the original 34 analytical polls, with detailed
+Review date: 2026-09-25. Scope: the original 34 analytical polls, with detailed
 coverage of the 23 existing knowledge builds and the respondent reconstructions.
 
 ## Decision for this pass
 
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
-UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24. Other proposals
-remain unapproved.
+UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24;
+SWE-02, AUS-04 and WTU-03 were approved in subsequent poll reviews. Other
+proposals remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
 UK Health attitude implementation that would change definitions was set aside.
@@ -1236,14 +1237,46 @@ Current scores match. Before changing anything, consult the
 script version. This is a useful counterexample to treating every suspicious
 historical line as an error in published data.
 
-**WTU-03 — absent ADDFACT2 removes the post conservation component.** As in
-SWE-02, `tx_wtu.R` uses `addfact2` although the source field is ADDFAC2. The
-historical post index is therefore REDUCE2 alone, normalized over attendee
-bounds [3,10]. The pre index averages ADDFAC1/REDUCE1 over [2,10]. Missing
-indices are filled at .5. These fixed ranges reproduce the saved values; using
-the apparent intended two-item post mean would change 179 jointly observed
-participant scores (maximum absolute difference about .588235). Do not make
-that substitution before checking both questionnaire items and index intent.
+**WTU-03 — absent ADDFACT2 removes the post conservation component.**
+**Status: approved by the user on 2026-09-25 and adopted.** As in
+SWE-02, `tx_wtu.R` requests nonexistent `addfact2` alongside `reduce2`. The
+source and WTU codebook instead contain `ADDFAC2` (Q10b, technologies that
+reduce the need for new facilities) and `REDUCE2` (Q2b, reducing coal and gas
+through efficient use), both on 0–10 importance scales. The WTU codebook
+prints the question wording; no separate WTU questionnaire scan has been found
+in the retained source folder or utility archive. The CPL and SWEPCO codebooks
+print corresponding wording. CPL labels the efficient-use item Q2c because its
+Q2b is federal research; WTU and SWEPCO label it Q2b. All three label the
+additional-facilities item Q10b. Each source file contains `ADDFAC2` and
+`REDUCE2` with substantive post responses, and none contains `ADDFACT2`.
+The CPL script uses both correctly named post fields, whereas WTU and SWEPCO
+request `addfact2`; all three scripts pair the two T1 fields. The later index
+memorandum's page 16 heads a section for CPL, WTU and SWEPCO and lists two
+conservation components, though it dates to 2015 and uses CPL wording. A
+[contemporaneous utility-poll report](https://www.osti.gov/servlets/purl/836850)
+confirms that all three asked about services and technologies that reduce the
+need for additional facilities, but does not specify this composite. The
+copied misspelling across WTU and SWEPCO could reflect shared code rather
+than independent mistakes; it does not by itself establish the original
+analyst's intent.
+
+The historical WTU T2 index uses REDUCE2 alone over empirical [3,10]; T1
+averages ADDFAC1/REDUCE1 over [2,10]. Missing indices are filled at .5. Among
+230 participants, 227 have observed ADDFAC2 and all 230 have REDUCE2. A
+two-item available-response mean calibrated over its observed [1.5,10] range
+changes 179 T2 scores (mean 0.759627 to 0.782864; largest absolute change
+0.588235), with no sample or other WTU aggregate field change. A separate
+theoretical [0,10] calibration changes 180 scores and has mean 0.815435; it
+is not part of the proposed correction. The current dp-distortions sensitivity
+changes 13 of 19 output CSVs and 16 of 28 paired CR2 inference rows. WTU's
+homogeneity estimate moves 0.014766 to 0.027640 and polarization 0.012467 to
+0.017519; neither recorded p-value measure crosses 0.05. The current
+dp-learning analysis frame remains identical in values and shape
+(6,013 rows, 20 columns). The approved production rule averages available
+`ADDFAC2` and `REDUCE2`, then scales over the observed [1.5,10] range.
+The 230 historical and approved respondent values are frozen in
+[`approved_values.csv`](../audit/corrections/wtu-1996/approved_values.csv).
+No other WTU aggregate field or sample membership changes.
 
 **WTU-04 — historical low-income index uses NEEDTO at each wave.** The commented
 NEEDTO1/NEEDTO2 variant in `tx_wtu.R`, scaled over [0,10] with missing filled at
