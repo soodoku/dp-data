@@ -1475,9 +1475,22 @@ reader turns income codes 0–6 into factor positions 1–7. It then sets positi
 (no answer) missing, leaving observed codes1–6 as values2–7. The historical
 individual high-income flag uses this value greater than2 after the final merge;
 the group proportion was calculated earlier using greater than4. Preserve both
-vintages. A correction should compare actual currency categories in the
-questionnaire and recompute both individual and group quantities, not merely
-subtract one from the exported income field.
+vintages. Questionnaire question 10 lists raw code 1 as under 50 BGN, 2 as
+50–100, 3 as 100–150, 4 as 150–200, 5 as 200–300, and 6 as above 300 BGN
+per household member per month. Thus the final individual flag includes raw
+codes 2–6 (at least the 50–100 band), while the earlier group share includes
+only codes 4–6 (at least the 150–200 band). The source has 278 respondents,
+including five code-0 nonanswers; 193 meet the individual threshold and 28 meet
+the group threshold. Applying the individual threshold to group shares would
+change all 17 groups, raising their shares by 0.412–0.765. The published
+`highinc` field has 193 yes values and five missing values, matching those
+source counts. The original `vault/cdd/scripts/bulgaria.r` lines 93–104 show
+the earlier `>4` rule and group-summary assignment. The questionnaire, labels,
+and numerical contrast establish different definitions, but do not establish
+whether the later `>2` rule was deliberate. Recover the final merge assignment
+and any contemporary income-cutoff note before proposing a unified threshold;
+recompute individual and group quantities together, not merely the exported
+income code.
 
 **BGC-04 — index sets and reconstruction coverage.** All 51 respondent targets
 match all 278 source participants, including missingness, at 1e-10 tolerance.
