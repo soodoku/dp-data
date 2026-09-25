@@ -2338,12 +2338,12 @@ tomorrows-europe-2007,eu.t2q16jr,344,313,0,0,0,0,FALSE,0,0,1e-10
 tomorrows-europe-2007,eu.support_eu_membership_t3,344,332,0,0,0,0,FALSE,0,0,1e-10
 tomorrows-europe-2007,eu.att_towards_privatization_t3,344,328,0,0,0,0,FALSE,0,0,1e-10
 tomorrows-europe-2007,eu.attitude_towards_migration_t3,344,331,0,0,0,0,FALSE,0,0,1e-10
-tomorrows-europe-2007,eu.mil_att_11_12_t3,344,339,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
+tomorrows-europe-2007,eu.mil_att_11_12_t3,344,334,5,282,0,287,FALSE,0,0.5,1e-10
 tomorrows-europe-2007,eu.t3q11br,344,324,0,0,0,0,FALSE,0,0,1e-10
 tomorrows-europe-2007,eu.turkey_enlargement_att_t3,344,330,0,0,0,0,FALSE,0,0,1e-10
 tomorrows-europe-2007,eu.eu_veto_support_t3,344,329,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 tomorrows-europe-2007,eu.pay_for_pension_1_t3_r,344,331,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
-tomorrows-europe-2007,eu.free_trade_index_t3,344,336,0,0,0,0,FALSE,0,0,1e-10
+tomorrows-europe-2007,eu.free_trade_index_t3,344,329,10,213,0,223,FALSE,0,0.8,1e-10
 tomorrows-europe-2007,eu.general_enlargement_att_f_t3,344,333,0,0,0,0,FALSE,0,3.885780586188048e-16,1e-10
 tomorrows-europe-2007,eu.eu_level_decision_making_t3,344,331,0,0,0,0,FALSE,0,6.661338147750939e-16,1e-10
 tomorrows-europe-2007,eu.t3q16jr,344,329,0,0,0,0,FALSE,0,0,1e-10
@@ -2563,7 +2563,7 @@ cpl-1996,readbrief,216,0,0,0,0,0,FALSE,0,0,1e-10
 cpl-1996,t1know,216,216,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 cpl-1996,t1knowr,216,216,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 cpl-1996,t1knowcor,216,216,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
-cpl-1996,grpgain,216,216,0,0,0,0,FALSE,0,4.85722573273506e-16,1e-10
+cpl-1996,grpgain,216,216,0,132,0,132,FALSE,0,0.005291005291005291,1e-10
 cpl-1996,t2know,216,216,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 cpl-1996,ppage,216,215,0,0,0,0,FALSE,0,0,1e-10
 cpl-1996,educ4,216,213,0,0,0,0,FALSE,0,0,1e-10
@@ -2581,7 +2581,7 @@ cpl-1996,t12knowcor,216,0,0,0,0,0,FALSE,0,0,1e-10
 cpl-1996,attextreme2,216,0,0,0,0,0,FALSE,0,0,1e-10
 cpl-1996,length,216,0,0,0,0,0,FALSE,0,0,1e-10
 cpl-1996,timebtw,216,0,0,0,0,0,FALSE,0,0,1e-10
-cpl-1996,grpgainr,216,216,0,0,0,0,FALSE,0,4.85722573273506e-16,1e-10
+cpl-1996,grpgainr,216,216,0,132,0,132,FALSE,0,0.005291005291005291,1e-10
 cpl-1996,t1knowrcor,216,216,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 cpl-1996,t2knowr,216,216,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 cpl-1996,pollname,216,216,0,0,0,0,FALSE,0,0,1e-10
@@ -2608,7 +2608,7 @@ cpl-1996,knowgain,216,216,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 cpl-1996,knowgain2,216,216,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 cpl-1996,t2knowlevel,216,216,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 cpl-1996,logpk,216,216,0,0,0,0,FALSE,0,3.552713678800501e-15,1e-10
-cpl-1996,loggain,216,216,0,0,0,0,FALSE,0,4.884981308350689e-15,1e-10
+cpl-1996,loggain,216,216,0,132,0,132,FALSE,0,0.025317807984292173,1e-10
 cpl-1996,tobitpk,216,216,0,0,0,0,FALSE,0,0,1e-10
 cpl-1996,meant1knowr,216,216,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 cpl-1996,meant1knowrcor,216,216,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10

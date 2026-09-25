@@ -1088,17 +1088,51 @@ The original `tx_cpl.R` passes `rep(1, length(cpl))` to the group-size
 helper. For a data frame, `length()` counts columns. Its `cpl2.sav` input has
 196 columns; six columns added before this operation make the vector length
 202. The public `cpl.sav` has 195 columns, so using its column count would
-silently produce a different historical result. The reconstruction uses the
-first 202 source rows for this early denominator and all eligible rows for
+silently produce a different historical result. The review script reconstructs
+the first 202 source rows for this early denominator and all eligible rows for
 later group composition. This reproduces the historical gain values.
 
 The checked `cpl2.sav` SHA-256 is
 `c29f1d2e2ab4ed10888e1a9857d7e09fe0541bada81e5d25db1d15b914cd11ce`.
 Using a 201-row denominator changed 12 exported gain values during validation.
-A corrected calculation should use the actual group membership count. Before
-making that change, inspect the executed script and source version, quantify
-changes to `grpgain`, `grpgainr`, and `loggain`, and rerun downstream models.
-This is a computation issue, not evidence that respondents were miscoded.
+**CPL-05 approved correction.** The archived `grpfun` helper indexes that
+202-element vector with the full group-presence vector. Values past source row
+202 become missing; its `sum(..., na.rm = TRUE)` then silently excludes them.
+The source codebook's `PART` table records 216 participants and 1,030
+nonparticipants, and its `GROUP` table gives 16 group counts totaling 216.
+Those counts match the full membership counts exactly. Ten groups are
+undercounted by the historical calculation (one to three members each).
+
+The diagnostic `scripts/review_cpl_group_gain.R` reproduces the short-vector
+indexing and compares the corrected calculation with a separately calculated
+mean over the focal respondent's actual peers. They agree within `1e-12`.
+It changes only `grpgain`, `grpgainr`, and `loggain`: 132 of 216 participant
+values change, with no changes to IDs, membership, missingness, knowledge
+scores, or other aggregate fields. Mean gain falls from 0.1549723023 to
+0.1540506270; the largest individual decrease is 0.0052910053. Mean log gain
+changes from -1.9735843252 to -1.9797921411. All 1,030 other source records
+retain missing gain. The correction preserves the existing joint pre-times-post
+correctness definition; it does not substitute a baseline-only peer measure.
+
+Evidence and group-level comparisons are in `audit/corrections/cpl-1996/`.
+The original `cpl2.sav` version and hash above come from the earlier recorded
+source audit; this review directly checks the archived code, current source
+membership, and the reproduced 202-row historical calculation, without
+re-reading those original file bytes. Stanford's utilities overview and the
+retained List–Luskin–Fishkin–McLean paper provide design and data-use context,
+but neither is treated as proof of this denominator. This is a computation
+issue, not evidence that respondents were miscoded. The paired downstream check
+produces byte-identical dp-distortions output CSVs, including all 28 pooled
+CR2 estimates, and an exactly identical
+dp-learning analysis frame (6,013 rows, 20 columns). The expensive wild
+bootstrap was not rerun; the unchanged deterministic inputs and estimates are
+recorded in the audit. The current dp-learning peer measure is constructed
+separately from baseline items and is unchanged by this correction. The user
+approved CPL-05 after reviewing the column-count error and its consequences.
+The corrected build uses complete group membership for the denominator and
+records `cpl-05-v2` for the three changed derived fields. All 216 historical
+and approved values per field are frozen in `approved_values.csv`; the review
+script replays both calculations from the retained survey.
 
 ## SWEPCO 1996 — swepco-1996
 
@@ -1618,14 +1652,77 @@ preferred sample. TE-01 describes the separate 335-row deposited battery.
 
 ### TE-04: Two departure indices mix arrival and departure answers
 
-Historical post military combines the mean of `T3Q11a`/`T3Q11c` with the mean
-of `T2Q12a:d`. Using T3 throughout changes 282 observed historical values and
-five missingness statuses. The stored intermediate independently confirms the
-mixed-wave formula. Post trade combines the scaled `T3Q7d - T3Q7a` contrast
-with `T2Q8`, not `T3Q8`. Preserve both until the index memo and literal wave
-instruments establish whether these dependencies were intentional.
-The pension difference index uses fixed historical endpoints `[-1, 0.875]`
-for both waves, a denominator of 1.875; refiltering must not recalibrate it.
+**Status: approved and adopted (TE-04).** The military departure
+index historically combined T3Q11a/c with T2Q12a:d. The departure trade
+index combined its T3Q7a/d contrast with T2Q8. The corrected build uses
+T3Q12a:d and T3Q8 while
+preserving weighting, direction, available-item averaging, historical endpoints,
+IDs and the 344-person sample. It does not change the downstream wave catalog.
+
+The [questionnaire catalogued as post](../data/tomorrows-europe-2007/questionnaire-post.pdf)
+contains trade Q7a/d and Q8 on PDF page 5 and military Q11a/c and Q12a:d on page 7.
+The [index memorandum](../data/shared/codebooks/attitude_indices/past_versions/appendix-attitude-indices-6-07-15-rcl.pdf),
+PDF page 19, lists those substantive components. No rationale for cross-wave
+carryover was found. Observed T3 responses establish that departure versions
+exist. Agreement between stored indices and the historical mixed-wave formulas
+confirms reconstruction, not that mixed waves were intended.
+
+**Evidence limits:** the questionnaire cover does not explicitly identify its
+wave; complete arrival and translated instruments remain unverified. The original
+SPSS recode referenced by the archived R script was not located. The memorandum
+also describes a different military version subtracting Q11b; a distinct stored
+`_f` variant exists. That weighting/specification issue remains separate. The
+available attitudes report concerns the T1 whole sample, so it does not validate
+the corrected departure means. These limits prevent claiming authorial intent
+has been established.
+
+[Recorded comparisons](../audit/corrections/tomorrows-europe-2007/):
+
+| Departure index | Historical observed | Corrected observed | Historical mean | Corrected mean |
+| --- | ---: | ---: | ---: | ---: |
+| Military | 339 | 334 | .540020 | .537238 |
+| Trade | 336 | 332 | .595833 | .610203 |
+
+Military changes 282 jointly observed values and makes five scores missing.
+Trade changes 213 jointly observed values, makes seven scores missing and adds
+three observed scores. These available-observation means combine value and
+missingness changes; respondent-level comparisons retain both explicitly.
+All 344 IDs remain. The pension index and its fixed [-1, .875] endpoints remain
+unchanged, as do all other aggregate fields.
+
+Among the 3,206 other source records, military changes 22 observed values and
+adds one score (23 → 24 observed); trade changes 17 observed values and adds
+three scores (20 → 23 observed). These records are outside the historical
+sample, not necessarily nonparticipants. Their membership is not reclassified.
+
+**Current downstream impact is zero.** All 19 dp-distortions comparison CSVs,
+including its 28 CR2 inference rows, are byte-identical. dp-learning's actual
+analysis frame is exactly identical (6,013 × 20). The reason is substantive:
+the current attitude catalog uses military T1→T2 and omits trade, so neither
+modified T3 field enters those analyses. This does not establish that the
+catalog's chosen waves are the desired estimand; see TE-06. Wild-bootstrap
+inference was not rerun.
+
+Reproduce the approved correction from dp-data, then the named downstream
+repositories. The distortions
+and learning modes of the existing review runner accept any paired input bundle:
+
+```sh
+Rscript scripts/review_tomorrows_europe_correction.R /tmp/te-review
+Rscript ../dp-data/scripts/review_uk_crime_downstream.R distortions /tmp/te-review /tmp/te-distortions
+Rscript ../dp-data/scripts/review_uk_crime_downstream.R learning /tmp/te-review /tmp/te-learning
+```
+
+### TE-06: Downstream attitude catalog selects baseline-to-arrival waves
+
+The current `attitude-indices.tab` pairs Tomorrow's Europe military
+`eu.mil_att_11_12_t1` with `_t2`, and contains no trade entry. The other selected
+TE indices also use literal T1/T2 fields. The reconstruction preserves source
+wave identities: T1 is baseline, T2 arrival and T3 departure. Before changing
+these pairs, verify the intended time contrast in the analysis and original
+merge/catalog definitions. Choosing departure would change the estimand and
+requires its own numerical comparison and approval. TE-04's departure component
+correction must not silently switch the downstream catalog or add an index.
 
 ### TE-05: Education, age and exceptional raw codes need instrument review
 

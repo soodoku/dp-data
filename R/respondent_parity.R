@@ -21,6 +21,36 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     )
     return(approved$approved_value)
   }
+  reviewed <- list(
+    "tomorrows-europe-2007" = list(
+      fields = c("eu.mil_att_11_12_t3", "eu.free_trade_index_t3"),
+      rows = 344L
+    ),
+    "cpl-1996" = list(
+      fields = c("grpgain", "grpgainr", "loggain"), rows = 216L
+    )
+  )
+  contract <- reviewed[[poll_id]]
+  if (!is.null(contract) && field %in% contract$fields) {
+    approved <- readr::read_csv(project_path(
+      "audit", "corrections", poll_id, "approved_values.csv"
+    ), show_col_types = FALSE)
+    approved <- approved[approved$legacy_field == field, ]
+    stopifnot(
+      nrow(approved) == contract$rows,
+      !anyDuplicated(approved$caseid), !anyDuplicated(caseid),
+      setequal(as.character(caseid), as.character(approved$caseid))
+    )
+    approved <- approved[match(as.character(caseid),
+                               as.character(approved$caseid)), ]
+    stopifnot(
+      identical(is.na(historical), is.na(approved$historical_value)),
+      all(abs(historical - approved$historical_value) <= tolerance,
+        na.rm = TRUE
+      )
+    )
+    return(approved$approved_value)
+  }
   election_fields <- c(
     "t1knowcor",
     "t2know",

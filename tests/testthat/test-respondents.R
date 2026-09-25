@@ -180,7 +180,12 @@ test_that("definitions match historical or approved values by IDs", {
   expect_equal(nrow(parity), sum(
     read_metadata("polardata_targets")$status == "implemented"
   ))
-  expect_equal(sum(parity$missingness_differences), 1L)
+  expect_equal(sum(parity$missingness_differences[
+    parity$poll_id == "tomorrows-europe-2007"
+  ]), 15L)
+  expect_equal(sum(parity$missingness_differences[
+    parity$poll_id != "tomorrows-europe-2007"
+  ]), 1L)
   expect_equal(sum(parity$value_differences[
     parity$poll_id == "uk-crime-1994"
   ]), 141L)

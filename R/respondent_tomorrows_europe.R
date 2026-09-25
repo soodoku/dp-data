@@ -15,8 +15,7 @@ tomorrows_europe_mean <- function(...) {
 }
 
 tomorrows_europe_attitudes <- function(survey, wave) {
-  item <- function(question, scale = 10, reverse = FALSE, source_wave = wave) {
-    wave <- source_wave
+  item <- function(question, scale = 10, reverse = FALSE) {
     field <- if (wave == 1L) paste0("q", question, "_1") else
       paste0("t", wave, "q", question)
     allowed <- if (wave == 1L) seq_len(scale + 3L) else
@@ -30,15 +29,13 @@ tomorrows_europe_attitudes <- function(survey, wave) {
     if (reverse) 1 - value else value
   }
   average <- function(
-    questions, scale = 10, reverse = FALSE, source_wave = wave) {
-    values <- purrr::map(questions, \(q) item(q, scale, reverse, source_wave))
+    questions, scale = 10, reverse = FALSE) {
+    values <- purrr::map(questions, \(q) item(q, scale, reverse))
     do.call(tomorrows_europe_mean, values)
   }
   military <- tomorrows_europe_mean(
     average(c("11a", "11c"), 5, TRUE),
-    average(paste0("12", letters[1:4]),
-      source_wave = if (wave == 3L) 2L else wave
-    )
+    average(paste0("12", letters[1:4]))
   )
   result <- tibble::tibble(
     eu_membership = item("1"), privatization = item("4"),
@@ -51,7 +48,7 @@ tomorrows_europe_attitudes <- function(survey, wave) {
     pension <- average(c("5b", "5c"), 5) - average(c("5a", "5d"), 5)
     trade <- (item("7d", 5) - item("7a", 5) + 1) / 2
     result$pension <- (pension + 1) / 1.875
-    result$trade <- tomorrows_europe_mean(trade, item("8", source_wave = 2L))
+    result$trade <- tomorrows_europe_mean(trade, item("8"))
     result$enlargement <- tomorrows_europe_mean(
       item("16a", 5, TRUE), average(c("16b", "16c", "16f"), 5, TRUE)
     )

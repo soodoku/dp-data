@@ -1,0 +1,10 @@
+check,finding,source
+post_trade_components,Q7a/d use1=oppose strongly to5=favour strongly;Q8 uses0=protected to10=compete freely;99=no opinion,data/tomorrows-europe-2007/questionnaire-post.pdf PDF p5
+post_military_components,Q11a/c use1=agree strongly to5=disagree strongly;Q12a:d use0=completely unjustifiable to10=completely justifiable;99=no opinion,data/tomorrows-europe-2007/questionnaire-post.pdf PDF p7
+index_membership,Memo lists trade Q7a/d andQ8;military Q11a/c andQ12a:d;does not specify cross-wave carryover,data/shared/codebooks/attitude_indices/past_versions/appendix-attitude-indices-6-07-15-rcl.pdf PDF p19
+military_specification_limit,Memo additionally subtracts never-justifiable Q11b;stored _f version is distinct;wave-only proposal preserves currently exported non_f weighting and separate Q11b field,same index memo p19;survey.parquet mil_att_11_12_t3_f
+stored_formula,Historical mixed-wave formulas reproduce every observed deposited military/trade score and missingness;stored agreement establishes reproduction not intended wave correctness,audit/corrections/tomorrows-europe-2007/deposited_index_check.csv
+original_syntax_limit,Archived eu_2007.R selects deposited indices;referenced sociodem-eu-dp.sps not located in current source package or inspected historical tags,historical-cdd-scripts:legacy/poll_scripts/eu_2007.R lines246-248;metadata/polardata_targets.csv
+wave_instrument_limit,Available questionnaire is catalogued post;cover itself does not print a wave;complete arrival/translated instruments not established,data/tomorrows-europe-2007/questionnaire-post.pdf;metadata.json material_coverage
+published_report_limit,Available attitudes report describes T1 whole sample3550;not corroboration of candidate departure aggregate means,data/tomorrows-europe-2007/reports/tomorrows-europe-attitudes.pdf p1
+scope,Preserve344 historical IDs and group selection;subscale weights/directions and available-item missingness unchanged;only departure source references proposed to change,scripts/review_tomorrows_europe_correction.R

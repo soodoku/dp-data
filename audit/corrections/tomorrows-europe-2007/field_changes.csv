@@ -1,0 +1,3 @@
+field,respondents,historical_observed,candidate_observed,value_changes,observed_to_missing,missing_to_observed,historical_mean,candidate_mean,common_sample,historical_common,candidate_common,max_absolute_delta
+eu.mil_att_11_12_t3,344,339,334,282,5,0,0.5400196656833826,0.5372380239520957,334,0.5403942115768463,0.5372380239520957,0.5
+eu.free_trade_index_t3,344,336,332,213,7,3,0.5958333333333333,0.610203313253012,329,0.5987841945288754,0.6106003039513678,0.8

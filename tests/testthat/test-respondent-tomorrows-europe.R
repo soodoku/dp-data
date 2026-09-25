@@ -83,6 +83,10 @@ test_that("tomorrows-europe uses raw questions independently of row order", {
     "t3q11a",
     "t3q11b",
     "t3q11c",
+    "t3q12a",
+    "t3q12b",
+    "t3q12c",
+    "t3q12d",
     "t3q16a",
     "t3q16b",
     "t3q16c",
@@ -120,7 +124,8 @@ test_that("tomorrows-europe uses raw questions independently of row order", {
     "t3q5d",
     "t3q7a",
     "t3q7c",
-    "t3q7d"
+    "t3q7d",
+    "t3q8"
   )
   raw <- survey[, match(tolower(fields), tolower(names(survey)))]
   built <- build_tomorrow_individual(survey)
@@ -211,10 +216,25 @@ test_that("tomorrows-europe matches every historical respondent target", {
     "eu.t3q11br" = "military_never_t3",
     "eu.t3q16jr" = "enlargement_limit_t3"
   )
-  for (field in names(mapping)) {
+  for (field in setdiff(names(mapping), c(
+    "eu.mil_att_11_12_t3", "eu.free_trade_index_t3"
+  ))) {
     expect_equal(
       built[[mapping[[field]]]], as.numeric(benchmark[[field]]),
       tolerance = 1e-10
     )
+  }
+  approved <- readr::read_csv(project_path(
+    "audit", "corrections", "tomorrows-europe-2007", "approved_values.csv"
+  ), show_col_types = FALSE)
+  expect_equal(nrow(approved), 344L * 2L)
+  for (field in c("eu.mil_att_11_12_t3", "eu.free_trade_index_t3")) {
+    evidence <- approved[approved$legacy_field == field, ]
+    position <- match(benchmark$caseid, evidence$caseid)
+    expect_false(anyNA(position))
+    expect_equal(as.numeric(benchmark[[field]]),
+                 evidence$historical_value[position], tolerance = 1e-10)
+    expect_equal(built[[mapping[[field]]]],
+                 evidence$approved_value[position], tolerance = 1e-10)
   }
 })
