@@ -1,14 +1,15 @@
 # Poll-level issue register
 
-Review date: 2026-09-24. Scope: the original 34 analytical polls, with detailed
+Review date: 2026-09-25. Scope: the original 34 analytical polls, with detailed
 coverage of the 23 existing knowledge builds and the respondent reconstructions.
 
 ## Decision for this pass
 
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
-UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24. Other proposals
-remain unapproved.
+UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24;
+SWE-02, AUS-04 and WTU-03 were approved in subsequent poll reviews. Other
+proposals remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
 UK Health attitude implementation that would change definitions was set aside.
@@ -1237,7 +1238,7 @@ script version. This is a useful counterexample to treating every suspicious
 historical line as an error in published data.
 
 **WTU-03 — absent ADDFACT2 removes the post conservation component.**
-**Status: candidate reviewed; preserve pending poll-specific approval.** As in
+**Status: approved by the user on 2026-09-25 and adopted.** As in
 SWE-02, `tx_wtu.R` requests nonexistent `addfact2` alongside `reduce2`. The
 source and WTU codebook instead contain `ADDFAC2` (Q10b, technologies that
 reduce the need for new facilities) and `REDUCE2` (Q2b, reducing coal and gas
@@ -1271,7 +1272,11 @@ changes 13 of 19 output CSVs and 16 of 28 paired CR2 inference rows. WTU's
 homogeneity estimate moves 0.014766 to 0.027640 and polarization 0.012467 to
 0.017519; neither recorded p-value measure crosses 0.05. The current
 dp-learning analysis frame remains identical in values and shape
-(6,013 rows, 20 columns). No production scoring change is made here.
+(6,013 rows, 20 columns). The approved production rule averages available
+`ADDFAC2` and `REDUCE2`, then scales over the observed [1.5,10] range.
+The 230 historical and approved respondent values are frozen in
+[`approved_values.csv`](../audit/corrections/wtu-1996/approved_values.csv).
+No other WTU aggregate field or sample membership changes.
 
 **WTU-04 — historical low-income index uses NEEDTO at each wave.** The commented
 NEEDTO1/NEEDTO2 variant in `tx_wtu.R`, scaled over [0,10] with missing filled at

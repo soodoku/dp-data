@@ -757,7 +757,7 @@ wtu-1996,wtu.t1att5,renewables_t1@historical-v1,230,230,0,0,3.3306690738754696e-
 wtu-1996,wtu.t1att6,research_t1@historical-v1,230,230,0,0,0,0,1e-10
 wtu-1996,wtu.t1att7,fossil_fuels_t1@historical-v1,230,230,0,0,0,0,1e-10
 wtu-1996,wtu.t2att1,imported_power_t2@historical-v1,230,230,0,0,0,0,1e-10
-wtu-1996,wtu.t2att3,conservation_t2@historical-v1,230,230,0,0,4.440892098500626e-16,0,1e-10
+wtu-1996,wtu.t2att3,conservation_t2@wtu-03-v2,230,230,0,179,0.5882352941176471,0,1e-10
 wtu-1996,wtu.t2att4,low_income_support_t2@historical-v1,230,230,0,0,0,0,1e-10
 wtu-1996,wtu.t2att5,renewables_t2@historical-v1,230,230,0,0,3.3306690738754696e-16,0,1e-10
 wtu-1996,wtu.t2att6,research_t2@historical-v1,230,230,0,0,4.440892098500626e-16,0,1e-10

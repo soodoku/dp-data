@@ -52,16 +52,11 @@ utility_attitudes <- function(survey, poll_id, wave) {
     historical_available_mean(as.matrix(tibble::as_tibble(values)))
   }
   wtu <- poll_id == "wtu-1996"
-  conservation <- if (wave == 1L || !wtu) {
-    average(c("addfac", "reduce"))
-  } else {
-    response("reduce")
-  }
-  # WTU retains the archived one-item T2 index pending separate review.
+  conservation <- average(c("addfac", "reduce"))
   conservation_min <- if (wave == 1L) {
     if (wtu) 2 else 3
   } else {
-    if (wtu) 3 else 0
+    if (wtu) 1.5 else 0
   }
   renewables_min <- if (wtu) 2.5 else if (wave == 1L) 1 else 0
   research_min <- if (wtu && wave == 2L) 1 else 0
