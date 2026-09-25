@@ -1,6 +1,6 @@
 # Poll-level issue register
 
-Review date: 2026-09-24. Scope: the 34 polls in the current registry, with detailed
+Review date: 2026-09-24. Scope: the original 34 analytical polls, with detailed
 coverage of the 23 existing knowledge builds and the respondent reconstructions.
 
 ## Decision for this pass
@@ -29,6 +29,14 @@ observed behavior separate from the suspected cause and proposed remedy.
 A reproduction commit preserves the historical definition; a later correction
 commit needs instrument evidence, assessed alternatives, and quantified effects.
 
+Corrections will proceed one poll at a time and require the user's approval
+before that poll's coding changes. Present the source instrument and original
+syntax, current behavior, competing interpretations (including preserving the
+current rule), affected respondents and missingness, and measured before/after
+aggregate and downstream-estimate differences. Label unresolved evidence and
+separate proposed corrections from decisions already approved. Repository
+cleanup and descriptive catalog fixes do not authorize scientific recoding.
+
 This is an inventory of currently known issues and coverage gaps, not a claim
 that every field or every questionnaire has been audited. “No discrepancy in the
 knowledge comparison” does not clear attitudes, demographics, weights, or joins.
@@ -37,7 +45,8 @@ knowledge comparison” does not clear attitudes, demographics, weights, or join
 
 The [sourced facts](../metadata/poll_facts.csv),
 [references](../metadata/poll_references.csv), and
-[material coverage](../metadata/poll_material_coverage.csv) now cover all 34 polls.
+[material coverage](../metadata/poll_material_coverage.csv) cover the original 34 analytical polls. Additional `materials-only` entries
+identify event documents without implying respondent-data coverage.
 Each fact names its source and locator; each poll folder has a generated
 `metadata.json` view. Reported numbers retain their stated populations. This
 review changes documentation, not catalog identifiers, scoring, or samples.
@@ -126,6 +135,30 @@ Health PDF is a **final project report**, not a complete questionnaire, and the
 published San Mateo post document is a short supplement without the relevant
 knowledge questions. The limitations are part of the evidence.
 
+### Shared-material cleanup (2026-09-24)
+
+Content comparisons removed 26 redundant or obsolete originals and their 20 PDF
+previews. Seventeen single-event documents moved into 16 materials-only event
+folders; the numerical build inputs and original analytical poll definitions
+are unchanged. The parent commit `fc82922bcbe24f603181af3ffbe5064013458eb2`
+retains all removed versions. The cleanup commit describes the comparisons.
+
+Retained HLM versions contain distinct income harmonization, group-ID collision,
+moderator-variable, and variance-definition notes. Retained attitude appendices
+include author comments and disagreements. Four poll-detail appendices preserve
+different topics, session lengths and source comments. Utility-paper variants
+have different numerical tables and therefore remain separate. These differences
+are evidence for the poll-by-poll correction review, not grounds for automatic
+recoding. The euro evaluation questionnaire remains unattributed: neither its
+content nor its old filename establishes that it was fielded in Denmark.
+
+The South Florida healthcare guide has a 2005 copyright, but PBS dates the actual
+forum to January 21, 2006, after Hurricane Wilma postponed the October event.
+The economics/security guide family appears in PBS's January 2004 ten-city
+program; the retained copies bear a 2005 copyright, so exact fielded versions
+remain unverified. Local 2005 education/healthcare forums have distinct entries
+from the national online study and from the New Haven airport/tax-sharing poll.
+
 ### Metadata and online source collection (2026-09-23)
 
 The supplied `meta_data-20260923T233458Z-1-001.zip` contains 113 files,
@@ -133,7 +166,8 @@ all byte-identical to the previously extracted metadata members. There are 107
 unique file hashes. The bundle catalog records the replacement ZIP checksum and
 the previous bundle name/checksum; the member contents have not changed.
 Materials are now cataloged under `data/<poll_id>/` or `data/shared/`, with
-per-poll manifest references to shared copies. Distinct versions are retained.
+per-poll manifest references to shared copies. The subsequent cleanup retains
+versions with distinct coding evidence and removes verified redundant copies.
 Original paths, online URLs, hashes, and comparison uses are in
 [the artifact catalog](../metadata/artifacts.csv). Cataloging a document does not
 mean its answer keys, sample definition, or recodes have been verified.
@@ -146,9 +180,12 @@ appendices before treating missing indices as accidental data loss.
 
 Several downloaded documents require particular care:
 
-- Stanford's “Texas Utility Questionnaires” download identifies **Entergy** in
-  its header. It is a related-event instrument, not an established CPL, WTU or
-  SWEPCO instrument. No response code or answer key is transferred from it.
+- Stanford's “Texas Utility Questionnaires” download is a 57-page compendium:
+  **Entergy** (PDF pp. 1–8), **HL&P** (pp. 9–29), **SPS** (pp. 30–38), and
+  **TU** (pp. 39–57; versions begin on pp. 39 and 51). The earlier Entergy-only
+  description came from its first section and was incomplete. No section has
+  been established as the exact CPL, WTU or SWEPCO fielded instrument. No
+  response code or answer key is transferred from it.
 - The Zeguo results download explicitly identifies **February 2008**, not the
   2005 infrastructure poll. Its manifest marks it as a different-event reference;
   it must not be used as a numerical parity target for `zeguo-2005`.
@@ -162,7 +199,7 @@ Several downloaded documents require particular care:
 - The 2005 health/education report discusses both online deliberation and local
   face-to-face events. The archived `briefing_materials/newhaven.pdf` is an
   **October 2005 education forum**, not the New Haven airport/revenue-sharing
-  experiment. It remains a shared background reference, without that poll link.
+  experiment. It now has its own `new-haven-education-2005` materials-only entry.
 - The Tomorrow's Europe paper describes 362 attendees and three survey waves,
   whereas historical polardata includes 344. The general-election online report
   describes about 200 deliberators and 700 controls; other manuscripts and source

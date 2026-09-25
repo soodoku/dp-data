@@ -1,0 +1,108 @@
+{
+  "catalog": {
+    "poll_id": "rochester-education-2005",
+    "title": "Deliberation Week Rochester Education",
+    "year": 2005,
+    "place": "Rochester, New York",
+    "topic": "Equal educational opportunities",
+    "mode": null,
+    "collection": "materials-only"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "rochester-education-2005",
+      "field": "event_dates",
+      "value": "2005",
+      "reference_id": "materials-material-ca9d9d5b219646bc-shared",
+      "source_locator": "First page identifies Deliberation Week 2005 and a Rochester draft on equal educational opportunities. No successor was found; draft status alone does not establish supersession.",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. First page identifies Deliberation Week 2005 and a Rochester draft on equal educational opportunities. No successor was found; draft status alone does not establish supersession."
+    },
+    {
+      "poll_id": "rochester-education-2005",
+      "field": "location",
+      "value": "Rochester, New York",
+      "reference_id": "materials-material-ca9d9d5b219646bc-shared",
+      "source_locator": "First page identifies Deliberation Week 2005 and a Rochester draft on equal educational opportunities. No successor was found; draft status alone does not establish supersession.",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. First page identifies Deliberation Week 2005 and a Rochester draft on equal educational opportunities. No successor was found; draft status alone does not establish supersession."
+    },
+    {
+      "poll_id": "rochester-education-2005",
+      "field": "topics",
+      "value": "Equal educational opportunities",
+      "reference_id": "materials-material-ca9d9d5b219646bc-shared",
+      "source_locator": "Document title and body",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. First page identifies Deliberation Week 2005 and a Rochester draft on equal educational opportunities. No successor was found; draft status alone does not establish supersession."
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "materials-material-ca9d9d5b219646bc-shared",
+      "poll_id": "rochester-education-2005",
+      "kind": "briefing-material",
+      "title": "Briefing material: Deliberation Week Rochester Education",
+      "url": null,
+      "local_artifact_id": "material-ca9d9d5b219646bc-shared",
+      "accessed": "2026-09-24",
+      "notes": "Materials-only event entry; no respondent dataset or harmonized coding is registered. First page identifies Deliberation Week 2005 and a Rochester draft on equal educational opportunities. No successor was found; draft status alone does not establish supersession."
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "rochester-education-2005",
+      "material_type": "questionnaires",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-material-ca9d9d5b219646bc-shared"
+    },
+    {
+      "poll_id": "rochester-education-2005",
+      "material_type": "briefing-materials",
+      "status": "available",
+      "notes": "Retained local material identified; completeness of fielded versions has not been established.",
+      "checked_references": "materials-material-ca9d9d5b219646bc-shared"
+    },
+    {
+      "poll_id": "rochester-education-2005",
+      "material_type": "event-reports",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-material-ca9d9d5b219646bc-shared"
+    },
+    {
+      "poll_id": "rochester-education-2005",
+      "material_type": "papers",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-material-ca9d9d5b219646bc-shared"
+    },
+    {
+      "poll_id": "rochester-education-2005",
+      "material_type": "codebooks",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-material-ca9d9d5b219646bc-shared"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "material-ca9d9d5b219646bc-shared",
+      "poll_id": "rochester-education-2005",
+      "artifact_type": "briefing-material",
+      "title": "Briefing material: Deliberation Week Rochester Education",
+      "location": "data/rochester-education-2005/briefing-materials/rochester.pdf",
+      "source_id": "material-ca9d9d5b219646bc",
+      "original_archive_path": "meta_data/briefing_materials/rochester.pdf",
+      "sha256": "ca9d9d5b219646bcb5b6ba647bd9935028d600a53bb0fd63eb691bb921b9e549",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original source bytes retained. First page identifies Deliberation Week 2005 and a Rochester draft on equal educational opportunities. No successor was found; draft status alone does not establish supersession. Materials-only entry; no respondent dataset or harmonized coding is registered. Source rights retained; repository code license does not apply.",
+      "relative_path": "briefing-materials/rochester.pdf"
+    }
+  ],
+  "document_previews": []
+}

@@ -1,0 +1,108 @@
+{
+  "catalog": {
+    "poll_id": "porto-alegre-2009",
+    "title": "Porto Alegre Statewide Deliberative Poll",
+    "year": 2009,
+    "place": "Porto Alegre, Rio Grande do Sul, Brazil",
+    "topic": "Civil service career reform",
+    "mode": "face-to-face",
+    "collection": "materials-only"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "porto-alegre-2009",
+      "field": "event_dates",
+      "value": "2009-06-05 through 2009-06-07",
+      "reference_id": "materials-material-a09a60580bd36c91-shared",
+      "source_locator": "PDF p. 2, opening paragraph; p. 5, civil service career reform",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. Title and opening paragraph identify statewide DP in Porto Alegre, June5–7,2009; unique empirical report and supporting tables. Requires materials-only poll catalog entry."
+    },
+    {
+      "poll_id": "porto-alegre-2009",
+      "field": "location",
+      "value": "Porto Alegre, Rio Grande do Sul, Brazil",
+      "reference_id": "materials-material-a09a60580bd36c91-shared",
+      "source_locator": "PDF p. 2, opening paragraph; p. 5, civil service career reform",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. Title and opening paragraph identify statewide DP in Porto Alegre, June5–7,2009; unique empirical report and supporting tables. Requires materials-only poll catalog entry."
+    },
+    {
+      "poll_id": "porto-alegre-2009",
+      "field": "topics",
+      "value": "Civil service career reform",
+      "reference_id": "materials-material-a09a60580bd36c91-shared",
+      "source_locator": "Document title and body",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. Title and opening paragraph identify statewide DP in Porto Alegre, June5–7,2009; unique empirical report and supporting tables. Requires materials-only poll catalog entry."
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "materials-material-a09a60580bd36c91-shared",
+      "poll_id": "porto-alegre-2009",
+      "kind": "paper",
+      "title": "Deliberative Participatory Consultation: The First Deliberative Poll in Porto Alegre",
+      "url": null,
+      "local_artifact_id": "material-a09a60580bd36c91-shared",
+      "accessed": "2026-09-24",
+      "notes": "Materials-only event entry; no respondent dataset or harmonized coding is registered. Title and opening paragraph identify statewide DP in Porto Alegre, June5–7,2009; unique empirical report and supporting tables. Requires materials-only poll catalog entry."
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "porto-alegre-2009",
+      "material_type": "questionnaires",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-material-a09a60580bd36c91-shared"
+    },
+    {
+      "poll_id": "porto-alegre-2009",
+      "material_type": "briefing-materials",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-material-a09a60580bd36c91-shared"
+    },
+    {
+      "poll_id": "porto-alegre-2009",
+      "material_type": "event-reports",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-material-a09a60580bd36c91-shared"
+    },
+    {
+      "poll_id": "porto-alegre-2009",
+      "material_type": "papers",
+      "status": "available",
+      "notes": "Retained local material identified; completeness of fielded versions has not been established.",
+      "checked_references": "materials-material-a09a60580bd36c91-shared"
+    },
+    {
+      "poll_id": "porto-alegre-2009",
+      "material_type": "codebooks",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-material-a09a60580bd36c91-shared"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "material-a09a60580bd36c91-shared",
+      "poll_id": "porto-alegre-2009",
+      "artifact_type": "paper",
+      "title": "Deliberative Participatory Consultation: The First Deliberative Poll in Porto Alegre",
+      "location": "data/porto-alegre-2009/papers/fishkin-porto-alegre.pdf",
+      "source_id": "material-a09a60580bd36c91",
+      "original_archive_path": "meta_data/cdd_papers/fishkin-porto-alegre.pdf",
+      "sha256": "a09a60580bd36c91149d608da473111bf438d6b886ff2da39e786e3b1925599f",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original source bytes retained. Title and opening paragraph identify statewide DP in Porto Alegre, June5–7,2009; unique empirical report and supporting tables. Requires materials-only poll catalog entry. Materials-only entry; no respondent dataset or harmonized coding is registered. Source rights retained; repository code license does not apply.",
+      "relative_path": "papers/fishkin-porto-alegre.pdf"
+    }
+  ],
+  "document_previews": []
+}

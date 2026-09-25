@@ -1,0 +1,133 @@
+{
+  "catalog": {
+    "poll_id": "texas-utilities-1998",
+    "title": "Texas Utilities Partners in Choice for Texas",
+    "year": 1998,
+    "place": "Dallas, Texas",
+    "topic": "Electricity resource planning",
+    "mode": "face-to-face",
+    "collection": "materials-only"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "texas-utilities-1998",
+      "field": "event_dates",
+      "value": "1998-10-16 through 1998-10-17",
+      "reference_id": "materials-texas-utilities-1998-nrel",
+      "source_locator": "PDF p. 7 / printed p. 3, footnote 2",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. First page identifies the TU Electric Customer Meeting on Electricity Issues. NREL report PDF page 7 dates Partners in Choice for Texas to October 16–17, 1998, in Dallas."
+    },
+    {
+      "poll_id": "texas-utilities-1998",
+      "field": "location",
+      "value": "Dallas, Texas",
+      "reference_id": "materials-texas-utilities-1998-nrel",
+      "source_locator": "PDF p. 7 / printed p. 3, footnote 2",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. First page identifies the TU Electric Customer Meeting on Electricity Issues. NREL report PDF page 7 dates Partners in Choice for Texas to October 16–17, 1998, in Dallas."
+    },
+    {
+      "poll_id": "texas-utilities-1998",
+      "field": "topics",
+      "value": "Electricity resource planning",
+      "reference_id": "materials-material-bacb7c20f9ccfb91-shared",
+      "source_locator": "Document title and body",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. First page identifies the TU Electric Customer Meeting on Electricity Issues. NREL report PDF page 7 dates Partners in Choice for Texas to October 16–17, 1998, in Dallas."
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "materials-material-bacb7c20f9ccfb91-shared",
+      "poll_id": "texas-utilities-1998",
+      "kind": "briefing-material",
+      "title": "Briefing material: Texas Utilities Partners in Choice for Texas",
+      "url": null,
+      "local_artifact_id": "material-bacb7c20f9ccfb91-shared",
+      "accessed": "2026-09-24",
+      "notes": "Materials-only event entry; no respondent dataset or harmonized coding is registered. First page identifies the TU Electric Customer Meeting on Electricity Issues. NREL report PDF page 7 dates Partners in Choice for Texas to October 16–17, 1998, in Dallas."
+    },
+    {
+      "reference_id": "materials-texas-utilities-1998-nrel",
+      "poll_id": "texas-utilities-1998",
+      "kind": "event-report",
+      "title": "Listening to Customers: Texas renewable energy and Deliberative Polling",
+      "url": null,
+      "local_artifact_id": "material-ee96cf90494a2ada-texas-utilities-1998",
+      "accessed": "2026-09-24",
+      "notes": "Comparative report anchors utility-event date and location."
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "texas-utilities-1998",
+      "material_type": "questionnaires",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-texas-utilities-1998-nrel"
+    },
+    {
+      "poll_id": "texas-utilities-1998",
+      "material_type": "briefing-materials",
+      "status": "available",
+      "notes": "Retained local material identified; completeness of fielded versions has not been established.",
+      "checked_references": "materials-material-bacb7c20f9ccfb91-shared"
+    },
+    {
+      "poll_id": "texas-utilities-1998",
+      "material_type": "event-reports",
+      "status": "available",
+      "notes": "Retained local material identified; completeness of fielded versions has not been established.",
+      "checked_references": "materials-texas-utilities-1998-nrel"
+    },
+    {
+      "poll_id": "texas-utilities-1998",
+      "material_type": "papers",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-texas-utilities-1998-nrel"
+    },
+    {
+      "poll_id": "texas-utilities-1998",
+      "material_type": "codebooks",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-texas-utilities-1998-nrel"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "material-bacb7c20f9ccfb91-shared",
+      "poll_id": "texas-utilities-1998",
+      "artifact_type": "briefing-material",
+      "title": "Briefing material: Texas Utilities Partners in Choice for Texas",
+      "location": "data/texas-utilities-1998/briefing-materials/energy-tuc.pdf",
+      "source_id": "material-bacb7c20f9ccfb91",
+      "original_archive_path": "meta_data/briefing_materials/energy-tuc.pdf",
+      "sha256": "bacb7c20f9ccfb91e803fcc99a4e599af4904577cd853a48ed4d3ecd5ab15481",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original source bytes retained. First page identifies the TU Electric Customer Meeting on Electricity Issues. NREL report PDF page 7 dates Partners in Choice for Texas to October 16–17, 1998, in Dallas. Materials-only entry; no respondent dataset or harmonized coding is registered. Source rights retained; repository code license does not apply.",
+      "relative_path": "briefing-materials/energy-tuc.pdf"
+    },
+    {
+      "artifact_id": "material-ee96cf90494a2ada-texas-utilities-1998",
+      "poll_id": "texas-utilities-1998",
+      "artifact_type": "event-report",
+      "title": "Listening to Customers: Texas renewable energy and Deliberative Polling",
+      "location": "data/shared/reports/utilities-nrel-report.pdf",
+      "source_id": "material-ee96cf90494a2ada",
+      "original_archive_path": null,
+      "sha256": "ee96cf90494a2ada2dd58a7b95bdac0499b84cb159f55649a53646744f084ba3",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "NREL/TP-620-33177, June 2003. Use for utility event dates and policy context; distinct from respondent-level scoring. Source URL: https://drive.google.com/uc?export=download&id=1N5ty9TjUrlsATkbTZwLymkkmA_jDX0WJ. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Report covers eight utility polls and documents event dates, methods and comparative results. NREL/TP-620-33177 June 2003; PDF p7 / printed p3 footnote 2 names eight events; cross-poll results throughout.",
+      "relative_path": "../shared/reports/utilities-nrel-report.pdf"
+    }
+  ],
+  "document_previews": []
+}

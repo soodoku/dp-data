@@ -1,0 +1,108 @@
+{
+  "catalog": {
+    "poll_id": "nebraska-education-2005",
+    "title": "By the People Citizen Deliberation in Kearney",
+    "year": 2005,
+    "place": "Kearney, Nebraska",
+    "topic": "Nebraska education policy",
+    "mode": "face-to-face",
+    "collection": "materials-only"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "nebraska-education-2005",
+      "field": "event_dates",
+      "value": "2005",
+      "reference_id": "materials-material-cdf176b42f91f794-shared",
+      "source_locator": "PDF page 2 identifies the October 2005 By the People Citizen Deliberation in Kearney, Nebraska. The guide was initially designed for that event but explicitly offered for subsequent statewide discussions.",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. PDF page 2 identifies the October 2005 By the People Citizen Deliberation in Kearney, Nebraska. The guide was initially designed for that event but explicitly offered for subsequent statewide discussions."
+    },
+    {
+      "poll_id": "nebraska-education-2005",
+      "field": "location",
+      "value": "Kearney, Nebraska",
+      "reference_id": "materials-material-cdf176b42f91f794-shared",
+      "source_locator": "PDF page 2 identifies the October 2005 By the People Citizen Deliberation in Kearney, Nebraska. The guide was initially designed for that event but explicitly offered for subsequent statewide discussions.",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. PDF page 2 identifies the October 2005 By the People Citizen Deliberation in Kearney, Nebraska. The guide was initially designed for that event but explicitly offered for subsequent statewide discussions."
+    },
+    {
+      "poll_id": "nebraska-education-2005",
+      "field": "topics",
+      "value": "Nebraska education policy",
+      "reference_id": "materials-material-cdf176b42f91f794-shared",
+      "source_locator": "Document title and body",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. PDF page 2 identifies the October 2005 By the People Citizen Deliberation in Kearney, Nebraska. The guide was initially designed for that event but explicitly offered for subsequent statewide discussions."
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "materials-material-cdf176b42f91f794-shared",
+      "poll_id": "nebraska-education-2005",
+      "kind": "briefing-material",
+      "title": "Briefing material: By the People Citizen Deliberation in Kearney",
+      "url": null,
+      "local_artifact_id": "material-cdf176b42f91f794-shared",
+      "accessed": "2026-09-24",
+      "notes": "Materials-only event entry; no respondent dataset or harmonized coding is registered. PDF page 2 identifies the October 2005 By the People Citizen Deliberation in Kearney, Nebraska. The guide was initially designed for that event but explicitly offered for subsequent statewide discussions."
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "nebraska-education-2005",
+      "material_type": "questionnaires",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-material-cdf176b42f91f794-shared"
+    },
+    {
+      "poll_id": "nebraska-education-2005",
+      "material_type": "briefing-materials",
+      "status": "available",
+      "notes": "Retained local material identified; completeness of fielded versions has not been established.",
+      "checked_references": "materials-material-cdf176b42f91f794-shared"
+    },
+    {
+      "poll_id": "nebraska-education-2005",
+      "material_type": "event-reports",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-material-cdf176b42f91f794-shared"
+    },
+    {
+      "poll_id": "nebraska-education-2005",
+      "material_type": "papers",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-material-cdf176b42f91f794-shared"
+    },
+    {
+      "poll_id": "nebraska-education-2005",
+      "material_type": "codebooks",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-material-cdf176b42f91f794-shared"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "material-cdf176b42f91f794-shared",
+      "poll_id": "nebraska-education-2005",
+      "artifact_type": "briefing-material",
+      "title": "Briefing material: By the People Citizen Deliberation in Kearney",
+      "location": "data/nebraska-education-2005/briefing-materials/nebraska.pdf",
+      "source_id": "material-cdf176b42f91f794",
+      "original_archive_path": "meta_data/briefing_materials/nebraska.pdf",
+      "sha256": "cdf176b42f91f7942d2a6f3523029acb2694ae587a02db371464b8925cb93484",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original source bytes retained. PDF page 2 identifies the October 2005 By the People Citizen Deliberation in Kearney, Nebraska. The guide was initially designed for that event but explicitly offered for subsequent statewide discussions. Materials-only entry; no respondent dataset or harmonized coding is registered. Source rights retained; repository code license does not apply.",
+      "relative_path": "briefing-materials/nebraska.pdf"
+    }
+  ],
+  "document_previews": []
+}

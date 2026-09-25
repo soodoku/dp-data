@@ -131,7 +131,7 @@
       "poll_id": "btp-national-2003",
       "field": "event_dates",
       "value": "2002-12-09 through 2003-01-16",
-      "reference_id": "us-btp-national-2003-wang-siu2009",
+      "reference_id": "us-btp-national-2003-refined-or-biased-opinions-2009",
       "source_locator": "Section 2.1, Poll 1, printed p.  6094",
       "status": "reported",
       "notes": "Explicit research start/end dates; improves on January-only archive label."
@@ -140,7 +140,7 @@
       "poll_id": "btp-national-2003",
       "field": "participants",
       "value": "381 assigned treatment and 302 control; 9 treatment respondents lacking both questionnaires excluded from analysis",
-      "reference_id": "us-btp-national-2003-wang-siu2009",
+      "reference_id": "us-btp-national-2003-refined-or-biased-opinions-2009",
       "source_locator": "Section 2.1, Poll 1, printed p.  6094",
       "status": "reported",
       "notes": "Assignment/analysis pool differs from 280 treatment/219 control completed-sample manuscript and 245 historically selected records."
@@ -221,21 +221,11 @@
       "reference_id": "us-btp-national-2003-material-9408908108592c63-btp-national-2003",
       "poll_id": "btp-national-2003",
       "kind": "codebook",
-      "title": "Appendix A -1-13-14",
-      "url": null,
-      "local_artifact_id": "material-9408908108592c63-btp-national-2003",
-      "accessed": "2026-09-24",
-      "notes": "Existing repository source: data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.docx"
-    },
-    {
-      "reference_id": "us-btp-national-2003-material-a6eea8ca19a00fe8-btp-national-2003",
-      "poll_id": "btp-national-2003",
-      "kind": "codebook",
       "title": "Appendix A -9-14-14",
       "url": null,
       "local_artifact_id": "material-a6eea8ca19a00fe8-btp-national-2003",
       "accessed": "2026-09-24",
-      "notes": "Existing repository source: data/shared/codebooks/knowledge_indices/appendix-a-9-14-14.docx"
+      "notes": "Retained source replaces redundant Appendix A -1-13-14. Every nonblank January paragraph occurs in September appendix; September extends 184 to 273 paragraphs. No comments, substantive footnotes/endnotes or deleted-text runs in either original."
     },
     {
       "reference_id": "us-btp-national-2003-material-7af1872d80219bc0-btp-national-2003",
@@ -326,16 +316,6 @@
       "local_artifact_id": null,
       "accessed": "2026-09-24",
       "notes": "Research manuscript pp 5–6 explicitly describes prior 2002/2003 foreign-policy online cohort; local copy data/shared/papers/primaries-paper.pdf belongs to primaries catalog records."
-    },
-    {
-      "reference_id": "us-btp-national-2003-wang-siu2009",
-      "poll_id": "btp-national-2003",
-      "kind": "paper",
-      "title": "Wang and Siu (2009), Refined or Biased Opinions? Examining Self-selected Participation in Deliberation and Post-survey in On-line Deliberative Polls",
-      "url": "http://www.asasrms.org/Proceedings/y2009/Files/400061.pdf",
-      "local_artifact_id": "material-e603bbecfa97be6b-btp-national-2003",
-      "accessed": "2026-09-24",
-      "notes": "ASA/AAPOR proceedings; directly analyzes all three Knowledge Networks experiments. OnePDF stored under btp-national-2003, referenced across relevant polls."
     }
   ],
   "material_coverage": [
@@ -372,7 +352,7 @@
       "material_type": "codebooks",
       "status": "partial",
       "notes": "Variable/value-label dictionaries and/or shared recode documentation are available; completeness as an authored poll-specific codebook is not established.",
-      "checked_references": "us-btp-national-2003-material-14f09619eb8626fc-btp-national-2003;us-btp-national-2003-material-e0ff5cf4f836a41b-btp-national-2003;us-btp-national-2003-material-9408908108592c63-btp-national-2003;us-btp-national-2003-material-a6eea8ca19a00fe8-btp-national-2003;us-btp-national-2003-material-7af1872d80219bc0-btp-national-2003;us-btp-national-2003-cdd-btp-national-2003-survey-variables;us-btp-national-2003-cdd-btp-national-2003-survey-value-labels"
+      "checked_references": "us-btp-national-2003-material-14f09619eb8626fc-btp-national-2003;us-btp-national-2003-material-e0ff5cf4f836a41b-btp-national-2003;us-btp-national-2003-material-9408908108592c63-btp-national-2003;us-btp-national-2003-material-7af1872d80219bc0-btp-national-2003;us-btp-national-2003-cdd-btp-national-2003-survey-variables;us-btp-national-2003-cdd-btp-national-2003-survey-value-labels"
     }
   ],
   "artifacts": [
@@ -388,7 +368,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Historical metadata archive; content classified for reference. Instrument-to-variable and version-specific comparisons remain required. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Historical metadata archive; content classified for reference. Instrument-to-variable and version-specific comparisons remain required. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Cross-poll briefing chapters used by NIC2 and BTP National; preserve full original chapters. Document footer: By the People / National Issues Forums; metadata/artifacts.csv maps same bytes to nic2-2003 and btp-national-2003. Chapters are different approaches, not duplicate versions.",
       "relative_path": "../shared/briefing-materials/btp2003-nic1.pdf"
     },
     {
@@ -403,7 +383,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Historical metadata archive; content classified for reference. Instrument-to-variable and version-specific comparisons remain required. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Historical metadata archive; content classified for reference. Instrument-to-variable and version-specific comparisons remain required. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Cross-poll briefing chapters used by NIC2 and BTP National; preserve full original chapters. Document footer: By the People / National Issues Forums; metadata/artifacts.csv maps same bytes to nic2-2003 and btp-national-2003. Chapters are different approaches, not duplicate versions.",
       "relative_path": "../shared/briefing-materials/btp2003-nic2.pdf"
     },
     {
@@ -418,7 +398,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Historical metadata archive; content classified for reference. Instrument-to-variable and version-specific comparisons remain required. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Historical metadata archive; content classified for reference. Instrument-to-variable and version-specific comparisons remain required. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Cross-poll briefing chapters used by NIC2 and BTP National; preserve full original chapters. Document footer: By the People / National Issues Forums; metadata/artifacts.csv maps same bytes to nic2-2003 and btp-national-2003. Chapters are different approaches, not duplicate versions.",
       "relative_path": "../shared/briefing-materials/btp2003-nic3.pdf"
     },
     {
@@ -433,7 +413,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Historical metadata archive; content classified for reference. Instrument-to-variable and version-specific comparisons remain required. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Historical metadata archive; content classified for reference. Instrument-to-variable and version-specific comparisons remain required. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Cross-poll briefing chapters used by NIC2 and BTP National; preserve full original chapters. Document footer: By the People / National Issues Forums; metadata/artifacts.csv maps same bytes to nic2-2003 and btp-national-2003. Chapters are different approaches, not duplicate versions.",
       "relative_path": "../shared/briefing-materials/btp2003-nic4.pdf"
     },
     {
@@ -448,7 +428,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Historical metadata archive; content classified for reference. Instrument-to-variable and version-specific comparisons remain required. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Historical metadata archive; content classified for reference. Instrument-to-variable and version-specific comparisons remain required. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Joint analysis of online and face-to-face foreign-policy polls, with methods and results. Read extracted text/methods/tables and checked existing poll_references. No pipeline reads this paper.",
       "relative_path": "../shared/papers/foreign-policy.pdf"
     },
     {
@@ -463,7 +443,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Genuine cross-poll coding evidence. Required build input read by scripts/12_build_polardata.R; 129 attitude targets plus header, canonical historical registry.",
       "relative_path": "../shared/codebooks/attitude_indices/allpollindices.csv"
     },
     {
@@ -478,23 +458,8 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Genuine cross-poll coding evidence. 144 rows plus header; includes empirical-premise indices deliberately absent from current 129-row build registry. Unique evidence for future corrections.",
       "relative_path": "../shared/codebooks/attitude_indices/allpollindices-withempiricalpremises.csv"
-    },
-    {
-      "artifact_id": "material-9408908108592c63-btp-national-2003",
-      "poll_id": "btp-national-2003",
-      "artifact_type": "codebook",
-      "title": "Appendix A -1-13-14",
-      "location": "data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.docx",
-      "source_id": "material-9408908108592c63",
-      "original_archive_path": "meta_data/knowledge_indices/Appendix A -1-13-14.docx",
-      "sha256": "9408908108592c6339ae1041bd0d118c210451535cd317be4c431871b0c5e75c",
-      "rights_status": "review-required",
-      "disclosure_status": "approved-public",
-      "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
-      "relative_path": "../shared/codebooks/knowledge_indices/appendix-a-1-13-14.docx"
     },
     {
       "artifact_id": "material-a6eea8ca19a00fe8-btp-national-2003",
@@ -508,7 +473,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Genuine cross-poll coding evidence. 273-paragraph cross-poll knowledge-item appendix extends January content; retain complete version.",
       "relative_path": "../shared/codebooks/knowledge_indices/appendix-a-9-14-14.docx"
     },
     {
@@ -523,7 +488,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Genuine cross-poll coding evidence. 136×8 cross-poll dataset URLs, filters, group identifiers and 0–1 index mapping; retain single content representative.",
       "relative_path": "../shared/codebooks/rosetta_stone/rosetta-stone.xls"
     },
     {
@@ -538,7 +503,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Already cited across21 poll references; includes24 polls and four source-linked duration comments. Compared all14 DOCX table rows plus comments XML, and corresponding PDF texts. No executable code reads these appendices.",
       "relative_path": "../shared/design/poll_details/appendix-poll-details-5-18-14-e.docx"
     },
     {
@@ -553,7 +518,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Brady, Fishkin and Luskin. Read alongside the distinct archived Considered Opinions on U.S. Foreign Policy paper; match face-to-face and online cohorts separately. Source URL: https://drive.google.com/uc?export=download&id=15UrbV-crdlwQXGwRu6tCM7SqToqInR65. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Brady, Fishkin, Luskin, The Brookings Review 21(3), Summer 2003, pp 16–19. Publisher landing page labels Commentary; descriptive report of Philadelphia NIC II, not the separate online empirical manuscript. https://www.brookings.edu/articles/informed-public-opinion-about-foreign-policy-the-uses-of-deliberative-polling/",
+      "notes": "Brady, Fishkin and Luskin. Read alongside the distinct archived Considered Opinions on U.S. Foreign Policy paper; match face-to-face and online cohorts separately. Source URL: https://drive.google.com/uc?export=download&id=15UrbV-crdlwQXGwRu6tCM7SqToqInR65. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Brady, Fishkin, Luskin, The Brookings Review 21(3), Summer 2003, pp 16–19. Publisher landing page labels Commentary; descriptive report of Philadelphia NIC II, not the separate online empirical manuscript. https://www.brookings.edu/articles/informed-public-opinion-about-foreign-policy-the-uses-of-deliberative-polling/ Cleanup review: Distinct published/press-layout foreign-policy results source already cited by two poll families; not same text as foreign-policy.pdf. Read extracted text/methods/tables and checked existing poll_references. No pipeline reads this paper.",
       "relative_path": "../shared/papers/foreign-policy-paper.pdf"
     },
     {
@@ -568,7 +533,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "ECPR September 2007 manuscript. Introduction and tables differ in stated coverage; Table 1/2 sample sizes and index counts are version checks, not an independently established scoring contract. Source URL: https://drive.google.com/file/d/1IZQTpQMml7XSlwSU1GNOqzZb-mDecS5g/view?usp=sharing. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "ECPR September 2007 manuscript. Introduction and tables differ in stated coverage; Table 1/2 sample sizes and index counts are version checks, not an independently established scoring contract. Source URL: https://drive.google.com/file/d/1IZQTpQMml7XSlwSU1GNOqzZb-mDecS5g/view?usp=sharing. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Cross-poll attitudes analysis covering multiple British, Australian and US polls. Read extracted text/methods/tables and checked existing poll_references. No pipeline reads this paper.",
       "relative_path": "../shared/papers/deliberation-net-change-paper.pdf"
     },
     {
@@ -662,21 +627,6 @@
       "relative_path": "papers/refined-or-biased-opinions-2009.pdf"
     },
     {
-      "artifact_id": "material-6f7d5e1799eacc41-btp-national-2003",
-      "poll_id": "btp-national-2003",
-      "artifact_type": "codebook",
-      "title": "Appendix A -1-13-14 (PDF preview)",
-      "location": "data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.pdf",
-      "source_id": "material-6f7d5e1799eacc41",
-      "original_archive_path": null,
-      "sha256": "6f7d5e1799eacc41a08c4c4dde872e1920f154137de775fb2d11fbfeff702061",
-      "rights_status": "review-required",
-      "disclosure_status": "approved-public",
-      "publication_status": "published",
-      "notes": "Generated from data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
-      "relative_path": "../shared/codebooks/knowledge_indices/appendix-a-1-13-14.pdf"
-    },
-    {
       "artifact_id": "material-8ddbaad774a59155-btp-national-2003",
       "poll_id": "btp-national-2003",
       "artifact_type": "codebook",
@@ -688,7 +638,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Generated from data/shared/codebooks/knowledge_indices/appendix-a-9-14-14.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "notes": "Generated from data/shared/codebooks/knowledge_indices/appendix-a-9-14-14.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Genuine cross-poll coding evidence. 273-paragraph cross-poll knowledge-item appendix extends January content; retain complete version.",
       "relative_path": "../shared/codebooks/knowledge_indices/appendix-a-9-14-14.pdf"
     },
     {
@@ -703,7 +653,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Generated from data/shared/codebooks/rosetta_stone/rosetta-stone.xls. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "notes": "Generated from data/shared/codebooks/rosetta_stone/rosetta-stone.xls. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Genuine cross-poll coding evidence. 136×8 cross-poll dataset URLs, filters, group identifiers and 0–1 index mapping; retain single content representative.",
       "relative_path": "../shared/codebooks/rosetta_stone/rosetta-stone.pdf"
     },
     {
@@ -718,27 +668,11 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Generated from data/shared/design/poll_details/appendix-poll-details-5-18-14-e.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "notes": "Generated from data/shared/design/poll_details/appendix-poll-details-5-18-14-e.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Already cited across21 poll references; includes24 polls and four source-linked duration comments. Compared all14 DOCX table rows plus comments XML, and corresponding PDF texts. No executable code reads these appendices.",
       "relative_path": "../shared/design/poll_details/appendix-poll-details-5-18-14-e.pdf"
     }
   ],
   "document_previews": [
-    {
-      "source_path": "data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.docx",
-      "preview_path": "data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.pdf",
-      "source_sha256": "9408908108592c6339ae1041bd0d118c210451535cd317be4c431871b0c5e75c",
-      "preview_sha256": "6f7d5e1799eacc41a08c4c4dde872e1920f154137de775fb2d11fbfeff702061",
-      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
-      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
-      "pages": "8",
-      "text_check": "source-text-compared",
-      "visual_check": "passed-representative-pages",
-      "visual_pages": "1;4;8",
-      "source_token_coverage": "0.9986772486772487",
-      "distinct_word_coverage": "1.0",
-      "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
-      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
-    },
     {
       "source_path": "data/shared/codebooks/knowledge_indices/appendix-a-9-14-14.docx",
       "preview_path": "data/shared/codebooks/knowledge_indices/appendix-a-9-14-14.pdf",

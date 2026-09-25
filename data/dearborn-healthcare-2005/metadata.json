@@ -1,0 +1,108 @@
+{
+  "catalog": {
+    "poll_id": "dearborn-healthcare-2005",
+    "title": "Healthcare Summit at Henry Ford Community College",
+    "year": 2005,
+    "place": "Dearborn, Michigan",
+    "topic": "Local healthcare",
+    "mode": "face-to-face",
+    "collection": "materials-only"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "dearborn-healthcare-2005",
+      "field": "event_dates",
+      "value": "2005",
+      "reference_id": "materials-material-9553b278234d2f08-shared",
+      "source_locator": "First page identifies a Healthcare Summit at Henry Ford Community College in Dearborn, Michigan, on October 29, 2005. This is distinct from the registered 2009 economy and budget poll.",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. First page identifies a Healthcare Summit at Henry Ford Community College in Dearborn, Michigan, on October 29, 2005. This is distinct from the registered 2009 economy and budget poll."
+    },
+    {
+      "poll_id": "dearborn-healthcare-2005",
+      "field": "location",
+      "value": "Dearborn, Michigan",
+      "reference_id": "materials-material-9553b278234d2f08-shared",
+      "source_locator": "First page identifies a Healthcare Summit at Henry Ford Community College in Dearborn, Michigan, on October 29, 2005. This is distinct from the registered 2009 economy and budget poll.",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. First page identifies a Healthcare Summit at Henry Ford Community College in Dearborn, Michigan, on October 29, 2005. This is distinct from the registered 2009 economy and budget poll."
+    },
+    {
+      "poll_id": "dearborn-healthcare-2005",
+      "field": "topics",
+      "value": "Local healthcare",
+      "reference_id": "materials-material-9553b278234d2f08-shared",
+      "source_locator": "Document title and body",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. First page identifies a Healthcare Summit at Henry Ford Community College in Dearborn, Michigan, on October 29, 2005. This is distinct from the registered 2009 economy and budget poll."
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "materials-material-9553b278234d2f08-shared",
+      "poll_id": "dearborn-healthcare-2005",
+      "kind": "briefing-material",
+      "title": "Briefing material: Healthcare Summit at Henry Ford Community College",
+      "url": null,
+      "local_artifact_id": "material-9553b278234d2f08-shared",
+      "accessed": "2026-09-24",
+      "notes": "Materials-only event entry; no respondent dataset or harmonized coding is registered. First page identifies a Healthcare Summit at Henry Ford Community College in Dearborn, Michigan, on October 29, 2005. This is distinct from the registered 2009 economy and budget poll."
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "dearborn-healthcare-2005",
+      "material_type": "questionnaires",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-material-9553b278234d2f08-shared"
+    },
+    {
+      "poll_id": "dearborn-healthcare-2005",
+      "material_type": "briefing-materials",
+      "status": "available",
+      "notes": "Retained local material identified; completeness of fielded versions has not been established.",
+      "checked_references": "materials-material-9553b278234d2f08-shared"
+    },
+    {
+      "poll_id": "dearborn-healthcare-2005",
+      "material_type": "event-reports",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-material-9553b278234d2f08-shared"
+    },
+    {
+      "poll_id": "dearborn-healthcare-2005",
+      "material_type": "papers",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-material-9553b278234d2f08-shared"
+    },
+    {
+      "poll_id": "dearborn-healthcare-2005",
+      "material_type": "codebooks",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-material-9553b278234d2f08-shared"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "material-9553b278234d2f08-shared",
+      "poll_id": "dearborn-healthcare-2005",
+      "artifact_type": "briefing-material",
+      "title": "Briefing material: Healthcare Summit at Henry Ford Community College",
+      "location": "data/dearborn-healthcare-2005/briefing-materials/detroit.pdf",
+      "source_id": "material-9553b278234d2f08",
+      "original_archive_path": "meta_data/briefing_materials/detroit.pdf",
+      "sha256": "9553b278234d2f08dfe447748a887422e6d3170d6e16b3a04440573ccb82298b",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original source bytes retained. First page identifies a Healthcare Summit at Henry Ford Community College in Dearborn, Michigan, on October 29, 2005. This is distinct from the registered 2009 economy and budget poll. Materials-only entry; no respondent dataset or harmonized coding is registered. Source rights retained; repository code license does not apply.",
+      "relative_path": "briefing-materials/detroit.pdf"
+    }
+  ],
+  "document_previews": []
+}

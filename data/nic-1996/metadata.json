@@ -196,21 +196,11 @@
       "reference_id": "us-nic-1996-material-9408908108592c63-nic-1996",
       "poll_id": "nic-1996",
       "kind": "codebook",
-      "title": "Appendix A -1-13-14",
-      "url": null,
-      "local_artifact_id": "material-9408908108592c63-nic-1996",
-      "accessed": "2026-09-24",
-      "notes": "Existing repository source: data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.docx"
-    },
-    {
-      "reference_id": "us-nic-1996-material-a6eea8ca19a00fe8-nic-1996",
-      "poll_id": "nic-1996",
-      "kind": "codebook",
       "title": "Appendix A -9-14-14",
       "url": null,
       "local_artifact_id": "material-a6eea8ca19a00fe8-nic-1996",
       "accessed": "2026-09-24",
-      "notes": "Existing repository source: data/shared/codebooks/knowledge_indices/appendix-a-9-14-14.docx"
+      "notes": "Retained source replaces redundant Appendix A -1-13-14. Every nonblank January paragraph occurs in September appendix; September extends 184 to 273 paragraphs. No comments, substantive footnotes/endnotes or deleted-text runs in either original."
     },
     {
       "reference_id": "us-nic-1996-material-7af1872d80219bc0-nic-1996",
@@ -297,7 +287,7 @@
       "material_type": "codebooks",
       "status": "available",
       "notes": "Authored poll-specific codebook.txt inspected; additional machine-extracted variable/value dictionaries and shared recode appendices are supplemental.",
-      "checked_references": "us-nic-1996-cdd-nic-1996-survey-variables;us-nic-1996-cdd-nic-1996-survey-value-labels;us-nic-1996-cdd-nic-1996-codebook;us-nic-1996-material-14f09619eb8626fc-nic-1996;us-nic-1996-material-e0ff5cf4f836a41b-nic-1996;us-nic-1996-material-9408908108592c63-nic-1996;us-nic-1996-material-a6eea8ca19a00fe8-nic-1996;us-nic-1996-material-7af1872d80219bc0-nic-1996"
+      "checked_references": "us-nic-1996-cdd-nic-1996-survey-variables;us-nic-1996-cdd-nic-1996-survey-value-labels;us-nic-1996-cdd-nic-1996-codebook;us-nic-1996-material-14f09619eb8626fc-nic-1996;us-nic-1996-material-e0ff5cf4f836a41b-nic-1996;us-nic-1996-material-9408908108592c63-nic-1996;us-nic-1996-material-7af1872d80219bc0-nic-1996"
     }
   ],
   "artifacts": [
@@ -448,7 +438,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Genuine cross-poll coding evidence. Required build input read by scripts/12_build_polardata.R; 129 attitude targets plus header, canonical historical registry.",
       "relative_path": "../shared/codebooks/attitude_indices/allpollindices.csv"
     },
     {
@@ -463,23 +453,8 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Genuine cross-poll coding evidence. 144 rows plus header; includes empirical-premise indices deliberately absent from current 129-row build registry. Unique evidence for future corrections.",
       "relative_path": "../shared/codebooks/attitude_indices/allpollindices-withempiricalpremises.csv"
-    },
-    {
-      "artifact_id": "material-9408908108592c63-nic-1996",
-      "poll_id": "nic-1996",
-      "artifact_type": "codebook",
-      "title": "Appendix A -1-13-14",
-      "location": "data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.docx",
-      "source_id": "material-9408908108592c63",
-      "original_archive_path": "meta_data/knowledge_indices/Appendix A -1-13-14.docx",
-      "sha256": "9408908108592c6339ae1041bd0d118c210451535cd317be4c431871b0c5e75c",
-      "rights_status": "review-required",
-      "disclosure_status": "approved-public",
-      "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
-      "relative_path": "../shared/codebooks/knowledge_indices/appendix-a-1-13-14.docx"
     },
     {
       "artifact_id": "material-a6eea8ca19a00fe8-nic-1996",
@@ -493,7 +468,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Genuine cross-poll coding evidence. 273-paragraph cross-poll knowledge-item appendix extends January content; retain complete version.",
       "relative_path": "../shared/codebooks/knowledge_indices/appendix-a-9-14-14.docx"
     },
     {
@@ -508,7 +483,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Genuine cross-poll coding evidence. 136×8 cross-poll dataset URLs, filters, group identifiers and 0–1 index mapping; retain single content representative.",
       "relative_path": "../shared/codebooks/rosetta_stone/rosetta-stone.xls"
     },
     {
@@ -523,7 +498,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Already cited across21 poll references; includes24 polls and four source-linked duration comments. Compared all14 DOCX table rows plus comments XML, and corresponding PDF texts. No executable code reads these appendices.",
       "relative_path": "../shared/design/poll_details/appendix-poll-details-5-18-14-e.docx"
     },
     {
@@ -572,21 +547,6 @@
       "relative_path": "papers/luskin-fishkin-2002.pdf"
     },
     {
-      "artifact_id": "material-6f7d5e1799eacc41-nic-1996",
-      "poll_id": "nic-1996",
-      "artifact_type": "codebook",
-      "title": "Appendix A -1-13-14 (PDF preview)",
-      "location": "data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.pdf",
-      "source_id": "material-6f7d5e1799eacc41",
-      "original_archive_path": null,
-      "sha256": "6f7d5e1799eacc41a08c4c4dde872e1920f154137de775fb2d11fbfeff702061",
-      "rights_status": "review-required",
-      "disclosure_status": "approved-public",
-      "publication_status": "published",
-      "notes": "Generated from data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
-      "relative_path": "../shared/codebooks/knowledge_indices/appendix-a-1-13-14.pdf"
-    },
-    {
       "artifact_id": "material-8ddbaad774a59155-nic-1996",
       "poll_id": "nic-1996",
       "artifact_type": "codebook",
@@ -598,7 +558,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Generated from data/shared/codebooks/knowledge_indices/appendix-a-9-14-14.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "notes": "Generated from data/shared/codebooks/knowledge_indices/appendix-a-9-14-14.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Genuine cross-poll coding evidence. 273-paragraph cross-poll knowledge-item appendix extends January content; retain complete version.",
       "relative_path": "../shared/codebooks/knowledge_indices/appendix-a-9-14-14.pdf"
     },
     {
@@ -613,7 +573,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Generated from data/shared/codebooks/rosetta_stone/rosetta-stone.xls. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "notes": "Generated from data/shared/codebooks/rosetta_stone/rosetta-stone.xls. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Genuine cross-poll coding evidence. 136×8 cross-poll dataset URLs, filters, group identifiers and 0–1 index mapping; retain single content representative.",
       "relative_path": "../shared/codebooks/rosetta_stone/rosetta-stone.pdf"
     },
     {
@@ -628,7 +588,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Generated from data/shared/design/poll_details/appendix-poll-details-5-18-14-e.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "notes": "Generated from data/shared/design/poll_details/appendix-poll-details-5-18-14-e.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Already cited across21 poll references; includes24 polls and four source-linked duration comments. Compared all14 DOCX table rows plus comments XML, and corresponding PDF texts. No executable code reads these appendices.",
       "relative_path": "../shared/design/poll_details/appendix-poll-details-5-18-14-e.pdf"
     }
   ],
@@ -646,22 +606,6 @@
       "visual_pages": "1;15;30",
       "source_token_coverage": "0.985936093609361",
       "distinct_word_coverage": "0.9984342379958246",
-      "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
-      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
-    },
-    {
-      "source_path": "data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.docx",
-      "preview_path": "data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.pdf",
-      "source_sha256": "9408908108592c6339ae1041bd0d118c210451535cd317be4c431871b0c5e75c",
-      "preview_sha256": "6f7d5e1799eacc41a08c4c4dde872e1920f154137de775fb2d11fbfeff702061",
-      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
-      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
-      "pages": "8",
-      "text_check": "source-text-compared",
-      "visual_check": "passed-representative-pages",
-      "visual_pages": "1;4;8",
-      "source_token_coverage": "0.9986772486772487",
-      "distinct_word_coverage": "1.0",
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     },

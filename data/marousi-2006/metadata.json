@@ -68,7 +68,7 @@
       "poll_id": "marousi-2006",
       "field": "event_dates",
       "value": "4 June 2006",
-      "reference_id": "marousi-2006-marousi-results",
+      "reference_id": "marousi-2006-local-material-7da07755d2a41276-marousi-2006",
       "source_locator": "PDF p.1",
       "status": "reported",
       "notes": null
@@ -77,7 +77,7 @@
       "poll_id": "marousi-2006",
       "field": "location",
       "value": "Marousi, Athens metropolitan area, Greece",
-      "reference_id": "marousi-2006-marousi-results",
+      "reference_id": "marousi-2006-local-material-7da07755d2a41276-marousi-2006",
       "source_locator": "PDF p.1",
       "status": "reported",
       "notes": null
@@ -163,16 +163,6 @@
       "local_artifact_id": "material-155b82dabd668a4c-marousi-2006",
       "accessed": "2026-09-24",
       "notes": "APSA 2008 conference paper, not a journal article."
-    },
-    {
-      "reference_id": "marousi-2006-marousi-results",
-      "poll_id": "marousi-2006",
-      "kind": "event-report",
-      "title": "Results of the first Deliberative Poll for Candidate Selection in Marousi, Greece",
-      "url": null,
-      "local_artifact_id": "material-7da07755d2a41276-marousi-2006",
-      "accessed": "2026-09-24",
-      "notes": "Local file: data/marousi-2006/reports/marousi-results.pdf"
     }
   ],
   "material_coverage": [
@@ -188,14 +178,14 @@
       "material_type": "briefing-materials",
       "status": "not-found",
       "notes": "No event-specific briefing file located in inspected local poll manifests or official project/research links; not evidence that no briefing existed.",
-      "checked_references": "marousi-2006-stanford-event;marousi-2006-local-marousi-questionnaire;marousi-2006-local-marousi-knowledge-distributions;marousi-2006-local-material-e4ff48dd7ec7136b-marousi-2006;marousi-2006-local-material-7da07755d2a41276-marousi-2006;marousi-2006-local-material-155b82dabd668a4c-marousi-2006;marousi-2006-download-material-155b82dabd668a4c;marousi-2006-athens-paper;marousi-2006-marousi-results"
+      "checked_references": "marousi-2006-stanford-event;marousi-2006-local-marousi-questionnaire;marousi-2006-local-marousi-knowledge-distributions;marousi-2006-local-material-e4ff48dd7ec7136b-marousi-2006;marousi-2006-local-material-7da07755d2a41276-marousi-2006;marousi-2006-local-material-155b82dabd668a4c-marousi-2006;marousi-2006-download-material-155b82dabd668a4c;marousi-2006-athens-paper"
     },
     {
       "poll_id": "marousi-2006",
       "material_type": "event-reports",
       "status": "available",
       "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
-      "checked_references": "marousi-2006-stanford-event;marousi-2006-local-marousi-knowledge-distributions;marousi-2006-local-material-7da07755d2a41276-marousi-2006;marousi-2006-marousi-results"
+      "checked_references": "marousi-2006-stanford-event;marousi-2006-local-marousi-knowledge-distributions;marousi-2006-local-material-7da07755d2a41276-marousi-2006"
     },
     {
       "poll_id": "marousi-2006",
@@ -209,7 +199,7 @@
       "material_type": "codebooks",
       "status": "not-found",
       "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
-      "checked_references": "marousi-2006-stanford-event;marousi-2006-local-marousi-questionnaire;marousi-2006-local-marousi-knowledge-distributions;marousi-2006-local-material-e4ff48dd7ec7136b-marousi-2006;marousi-2006-local-material-7da07755d2a41276-marousi-2006;marousi-2006-local-material-155b82dabd668a4c-marousi-2006;marousi-2006-download-material-155b82dabd668a4c;marousi-2006-athens-paper;marousi-2006-marousi-results"
+      "checked_references": "marousi-2006-stanford-event;marousi-2006-local-marousi-questionnaire;marousi-2006-local-marousi-knowledge-distributions;marousi-2006-local-material-e4ff48dd7ec7136b-marousi-2006;marousi-2006-local-material-7da07755d2a41276-marousi-2006;marousi-2006-local-material-155b82dabd668a4c-marousi-2006;marousi-2006-download-material-155b82dabd668a4c;marousi-2006-athens-paper"
     }
   ],
   "artifacts": [

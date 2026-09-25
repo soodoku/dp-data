@@ -14,7 +14,7 @@
       "poll_id": "denmark-euro-2000",
       "field": "event_dates",
       "value": "26–27 August 2000 (effective deliberation); enrollment checked 25 August",
-      "reference_id": "denmark-euro-2000-danish-paper",
+      "reference_id": "denmark-euro-2000-download-material-c14992b83e1071df",
       "source_locator": "pp.531–533, Table 1",
       "status": "reported",
       "notes": null
@@ -23,7 +23,7 @@
       "poll_id": "denmark-euro-2000",
       "field": "location",
       "value": "Odense, Denmark",
-      "reference_id": "denmark-euro-2000-danish-paper",
+      "reference_id": "denmark-euro-2000-download-material-c14992b83e1071df",
       "source_locator": "pp.531–533, Table 1",
       "status": "reported",
       "notes": null
@@ -32,7 +32,7 @@
       "poll_id": "denmark-euro-2000",
       "field": "participants",
       "value": "1,702 recruitment interviews; 386 enrolled by 25 August; 364 effective participants",
-      "reference_id": "denmark-euro-2000-danish-paper",
+      "reference_id": "denmark-euro-2000-download-material-c14992b83e1071df",
       "source_locator": "pp.531–533, Table 1",
       "status": "reported",
       "notes": null
@@ -41,7 +41,7 @@
       "poll_id": "denmark-euro-2000",
       "field": "recruitment",
       "value": "Simple random sampling; telephone recruitment 1–8 August; repeated invitations and confirmation",
-      "reference_id": "denmark-euro-2000-danish-paper",
+      "reference_id": "denmark-euro-2000-download-material-c14992b83e1071df",
       "source_locator": "pp.531–533, Table 1",
       "status": "reported",
       "notes": null
@@ -50,7 +50,7 @@
       "poll_id": "denmark-euro-2000",
       "field": "population",
       "value": "Danish electorate",
-      "reference_id": "denmark-euro-2000-danish-paper",
+      "reference_id": "denmark-euro-2000-download-material-c14992b83e1071df",
       "source_locator": "pp.531–533, Table 1",
       "status": "reported",
       "notes": null
@@ -59,7 +59,7 @@
       "poll_id": "denmark-euro-2000",
       "field": "mode",
       "value": "In-person deliberation, with four survey occasions",
-      "reference_id": "denmark-euro-2000-danish-paper",
+      "reference_id": "denmark-euro-2000-download-material-c14992b83e1071df",
       "source_locator": "pp.531–533, Table 1",
       "status": "reported",
       "notes": null
@@ -68,7 +68,7 @@
       "poll_id": "denmark-euro-2000",
       "field": "topics",
       "value": "Whether Denmark should adopt the euro",
-      "reference_id": "denmark-euro-2000-danish-paper",
+      "reference_id": "denmark-euro-2000-download-material-c14992b83e1071df",
       "source_locator": "pp.531–533, Table 1",
       "status": "reported",
       "notes": null
@@ -203,16 +203,6 @@
       "local_artifact_id": "material-63b8bfe9d098fd38-denmark-euro-2000",
       "accessed": "2026-09-24",
       "notes": "Public source downloaded 2026-09-24; SHA-256 63b8bfe9d098fd38f3fe9695b9ea4eea0d7b188c28e6cf73db8866a08f14f2a1"
-    },
-    {
-      "reference_id": "denmark-euro-2000-danish-paper",
-      "poll_id": "denmark-euro-2000",
-      "kind": "paper",
-      "title": "How deliberation makes better citizens: The Danish Deliberative Poll on the euro",
-      "url": "https://www.kaspermhansen.eu/Work/andersen_hansen_2007.pdf",
-      "local_artifact_id": "material-c14992b83e1071df-denmark-euro-2000",
-      "accessed": "2026-09-24",
-      "notes": "Local file: data/denmark-euro-2000/papers/how-deliberation-makes-better-citizens.pdf"
     }
   ],
   "material_coverage": [
@@ -228,7 +218,7 @@
       "material_type": "briefing-materials",
       "status": "not-found",
       "notes": "No event-specific briefing file located in inspected local poll manifests or official project/research links; not evidence that no briefing existed.",
-      "checked_references": "denmark-euro-2000-stanford-event;denmark-euro-2000-local-cdd-denmark-euro-2000-survey-variables;denmark-euro-2000-local-cdd-denmark-euro-2000-survey-value-labels;denmark-euro-2000-local-cdd-denmark-euro-2000-departure-variables;denmark-euro-2000-local-cdd-denmark-euro-2000-departure-value-labels;denmark-euro-2000-local-cdd-denmark-euro-2000-questionnaire;denmark-euro-2000-local-material-ee26ba3b4b986754-denmark-euro-2000;denmark-euro-2000-local-material-74c9b79b98a13028-denmark-euro-2000;denmark-euro-2000-local-material-c14992b83e1071df-denmark-euro-2000;denmark-euro-2000-local-material-63b8bfe9d098fd38-denmark-euro-2000;denmark-euro-2000-download-material-c14992b83e1071df;denmark-euro-2000-download-material-63b8bfe9d098fd38;denmark-euro-2000-danish-paper"
+      "checked_references": "denmark-euro-2000-stanford-event;denmark-euro-2000-local-cdd-denmark-euro-2000-survey-variables;denmark-euro-2000-local-cdd-denmark-euro-2000-survey-value-labels;denmark-euro-2000-local-cdd-denmark-euro-2000-departure-variables;denmark-euro-2000-local-cdd-denmark-euro-2000-departure-value-labels;denmark-euro-2000-local-cdd-denmark-euro-2000-questionnaire;denmark-euro-2000-local-material-ee26ba3b4b986754-denmark-euro-2000;denmark-euro-2000-local-material-74c9b79b98a13028-denmark-euro-2000;denmark-euro-2000-local-material-c14992b83e1071df-denmark-euro-2000;denmark-euro-2000-local-material-63b8bfe9d098fd38-denmark-euro-2000;denmark-euro-2000-download-material-c14992b83e1071df;denmark-euro-2000-download-material-63b8bfe9d098fd38"
     },
     {
       "poll_id": "denmark-euro-2000",
@@ -242,7 +232,7 @@
       "material_type": "papers",
       "status": "available",
       "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
-      "checked_references": "denmark-euro-2000-local-material-c14992b83e1071df-denmark-euro-2000;denmark-euro-2000-local-material-63b8bfe9d098fd38-denmark-euro-2000;denmark-euro-2000-download-material-c14992b83e1071df;denmark-euro-2000-download-material-63b8bfe9d098fd38;denmark-euro-2000-danish-paper"
+      "checked_references": "denmark-euro-2000-local-material-c14992b83e1071df-denmark-euro-2000;denmark-euro-2000-local-material-63b8bfe9d098fd38-denmark-euro-2000;denmark-euro-2000-download-material-c14992b83e1071df;denmark-euro-2000-download-material-63b8bfe9d098fd38"
     },
     {
       "poll_id": "denmark-euro-2000",

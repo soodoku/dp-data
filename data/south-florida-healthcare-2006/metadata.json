@@ -1,0 +1,118 @@
+{
+  "catalog": {
+    "poll_id": "south-florida-healthcare-2006",
+    "title": "WPBT Citizens Healthcare Forum",
+    "year": 2006,
+    "place": "Fort Lauderdale, Florida",
+    "topic": "Healthcare access and costs",
+    "mode": "face-to-face",
+    "collection": "materials-only"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "south-florida-healthcare-2006",
+      "field": "event_dates",
+      "value": "2006-01-21",
+      "reference_id": "materials-south-florida-healthcare-2006-organizer",
+      "source_locator": "Miami, FL section",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. Local guide content matches the location and subject of the PBS organizer account. WPBT; Nova Southeastern University; event date 2006-01-21. PBS reports postponement from October 2005 because of Hurricane Wilma. The guide’s 2005 copyright is not the event date."
+    },
+    {
+      "poll_id": "south-florida-healthcare-2006",
+      "field": "location",
+      "value": "Fort Lauderdale, Florida",
+      "reference_id": "materials-south-florida-healthcare-2006-organizer",
+      "source_locator": "Miami, FL section",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. Local guide content matches the location and subject of the PBS organizer account. WPBT; Nova Southeastern University; event date 2006-01-21. PBS reports postponement from October 2005 because of Hurricane Wilma. The guide’s 2005 copyright is not the event date."
+    },
+    {
+      "poll_id": "south-florida-healthcare-2006",
+      "field": "topics",
+      "value": "Healthcare access and costs",
+      "reference_id": "materials-material-14da714460db9e83-shared",
+      "source_locator": "Document title and body",
+      "status": "reported",
+      "notes": "Materials-only catalog entry. Local guide content matches the location and subject of the PBS organizer account. WPBT; Nova Southeastern University; event date 2006-01-21. PBS reports postponement from October 2005 because of Hurricane Wilma. The guide’s 2005 copyright is not the event date."
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "materials-material-14da714460db9e83-shared",
+      "poll_id": "south-florida-healthcare-2006",
+      "kind": "briefing-material",
+      "title": "Briefing material: WPBT Citizens Healthcare Forum",
+      "url": null,
+      "local_artifact_id": "material-14da714460db9e83-shared",
+      "accessed": "2026-09-24",
+      "notes": "Materials-only event entry; no respondent dataset or harmonized coding is registered. Local guide content matches the location and subject of the PBS organizer account. WPBT; Nova Southeastern University; event date 2006-01-21. PBS reports postponement from October 2005 because of Hurricane Wilma. The guide’s 2005 copyright is not the event date."
+    },
+    {
+      "reference_id": "materials-south-florida-healthcare-2006-organizer",
+      "poll_id": "south-florida-healthcare-2006",
+      "kind": "event-report",
+      "title": "PBS By the People organizer event account",
+      "url": "https://www.pbs.org/newshour/spc/btp/articles/events_deliberation.html",
+      "local_artifact_id": null,
+      "accessed": "2026-09-24",
+      "notes": "Local guide content matches the location and subject of the PBS organizer account. WPBT; Nova Southeastern University; event date 2006-01-21. PBS reports postponement from October 2005 because of Hurricane Wilma. The guide’s 2005 copyright is not the event date."
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "south-florida-healthcare-2006",
+      "material_type": "questionnaires",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-south-florida-healthcare-2006-organizer"
+    },
+    {
+      "poll_id": "south-florida-healthcare-2006",
+      "material_type": "briefing-materials",
+      "status": "available",
+      "notes": "Retained local material identified; completeness of fielded versions has not been established.",
+      "checked_references": "materials-material-14da714460db9e83-shared"
+    },
+    {
+      "poll_id": "south-florida-healthcare-2006",
+      "material_type": "event-reports",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-south-florida-healthcare-2006-organizer"
+    },
+    {
+      "poll_id": "south-florida-healthcare-2006",
+      "material_type": "papers",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-south-florida-healthcare-2006-organizer"
+    },
+    {
+      "poll_id": "south-florida-healthcare-2006",
+      "material_type": "codebooks",
+      "status": "not-found",
+      "notes": "Not identified for this materials-only event in the reviewed archive. This is not an exhaustive external-source search.",
+      "checked_references": "materials-south-florida-healthcare-2006-organizer"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "material-14da714460db9e83-shared",
+      "poll_id": "south-florida-healthcare-2006",
+      "artifact_type": "briefing-material",
+      "title": "Briefing material: WPBT Citizens Healthcare Forum",
+      "location": "data/south-florida-healthcare-2006/briefing-materials/miami.pdf",
+      "source_id": "material-14da714460db9e83",
+      "original_archive_path": "meta_data/briefing_materials/miami.pdf",
+      "sha256": "14da714460db9e83baa2ad7fe22a3ae4bd1de4f4d9f97eb6d7d1c497ca184dcf",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original source bytes retained. Local guide content matches the location and subject of the PBS organizer account. WPBT; Nova Southeastern University; event date 2006-01-21. PBS reports postponement from October 2005 because of Hurricane Wilma. The guide’s 2005 copyright is not the event date. Materials-only entry; no respondent dataset or harmonized coding is registered. Source rights retained; repository code license does not apply.",
+      "relative_path": "briefing-materials/miami.pdf"
+    }
+  ],
+  "document_previews": []
+}
