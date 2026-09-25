@@ -255,7 +255,7 @@
       "url": null,
       "local_artifact_id": "material-dd722fd627b2e9f0-btp-national-2003",
       "accessed": "2026-09-24",
-      "notes": "Existing repository source: data/shared/papers/foreign-policy-paper.pdf; Brookings Review commentary/report of NIC II, not an empirical online-poll paper; existing catalog classification requires review."
+      "notes": "Existing repository source: data/shared/reports/foreign-policy-report.pdf; Brookings Review commentary/report of NIC II, not an empirical online-poll paper; existing catalog classification requires review."
     },
     {
       "reference_id": "us-btp-national-2003-material-7ad6c3c2eb5f0731-btp-national-2003",
@@ -511,7 +511,7 @@
       "poll_id": "btp-national-2003",
       "artifact_type": "event-report",
       "title": "Informed Public Opinion About Foreign Policy: The Uses of Deliberative Polling",
-      "location": "data/shared/papers/foreign-policy-paper.pdf",
+      "location": "data/shared/reports/foreign-policy-report.pdf",
       "source_id": "material-dd722fd627b2e9f0",
       "original_archive_path": null,
       "sha256": "dd722fd627b2e9f0f598e3280b16d278320382d6ac809bf51c1a6e15ff18fc7c",
@@ -519,7 +519,7 @@
       "disclosure_status": "approved-public",
       "publication_status": "published",
       "notes": "Brady, Fishkin and Luskin. Read alongside the distinct archived Considered Opinions on U.S. Foreign Policy paper; match face-to-face and online cohorts separately. Source URL: https://drive.google.com/uc?export=download&id=15UrbV-crdlwQXGwRu6tCM7SqToqInR65. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Brady, Fishkin, Luskin, The Brookings Review 21(3), Summer 2003, pp 16–19. Publisher landing page labels Commentary; descriptive report of Philadelphia NIC II, not the separate online empirical manuscript. https://www.brookings.edu/articles/informed-public-opinion-about-foreign-policy-the-uses-of-deliberative-polling/ Cleanup review: Distinct published/press-layout foreign-policy results source already cited by two poll families; not same text as foreign-policy.pdf. Read extracted text/methods/tables and checked existing poll_references. No pipeline reads this paper.",
-      "relative_path": "../shared/papers/foreign-policy-paper.pdf"
+      "relative_path": "../shared/reports/foreign-policy-report.pdf"
     },
     {
       "artifact_id": "material-7ad6c3c2eb5f0731-btp-national-2003",
