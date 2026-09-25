@@ -1618,14 +1618,75 @@ preferred sample. TE-01 describes the separate 335-row deposited battery.
 
 ### TE-04: Two departure indices mix arrival and departure answers
 
-Historical post military combines the mean of `T3Q11a`/`T3Q11c` with the mean
-of `T2Q12a:d`. Using T3 throughout changes 282 observed historical values and
-five missingness statuses. The stored intermediate independently confirms the
-mixed-wave formula. Post trade combines the scaled `T3Q7d - T3Q7a` contrast
-with `T2Q8`, not `T3Q8`. Preserve both until the index memo and literal wave
-instruments establish whether these dependencies were intentional.
-The pension difference index uses fixed historical endpoints `[-1, 0.875]`
-for both waves, a denominator of 1.875; refiltering must not recalibrate it.
+**Status: wave-only correction proposed; not adopted.** The military departure
+index currently combines T3Q11a/c with T2Q12a:d. The departure trade index combines
+its T3Q7a/d contrast with T2Q8. The proposal substitutes T3Q12a:d and T3Q8 while
+preserving weighting, direction, available-item averaging, historical endpoints,
+IDs and the 344-person sample. It does not change the downstream wave catalog.
+
+The [questionnaire catalogued as post](../data/tomorrows-europe-2007/questionnaire-post.pdf)
+contains trade Q7a/d and Q8 on PDF page 5 and military Q11a/c and Q12a:d on page 7.
+The [index memorandum](../data/shared/codebooks/attitude_indices/past_versions/appendix-attitude-indices-6-07-15-rcl.pdf),
+PDF page 19, lists those substantive components. No rationale for cross-wave
+carryover was found. Observed T3 responses establish that departure versions
+exist. Agreement between stored indices and the current mixed-wave formulas
+confirms reconstruction, not that mixed waves were intended.
+
+**Evidence limits:** the questionnaire cover does not explicitly identify its
+wave; complete arrival and translated instruments remain unverified. The original
+SPSS recode referenced by the archived R script was not located. The memorandum
+also describes a different military version subtracting Q11b; a distinct stored
+`_f` variant exists. That weighting/specification issue remains separate. The
+available attitudes report concerns the T1 whole sample, so it does not validate
+the proposed departure means. These limits prevent claiming authorial intent
+has been established.
+
+[Recorded comparisons](../audit/corrections/tomorrows-europe-2007/):
+
+| Departure index | Historical observed | Candidate observed | Historical mean | Candidate mean |
+| --- | ---: | ---: | ---: | ---: |
+| Military | 339 | 334 | .540020 | .537238 |
+| Trade | 336 | 332 | .595833 | .610203 |
+
+Military changes 282 jointly observed values and makes five scores missing.
+Trade changes 213 jointly observed values, makes seven scores missing and adds
+three observed scores. These available-observation means combine value and
+missingness changes; respondent-level comparisons retain both explicitly.
+All 344 IDs remain. The pension index and its fixed [-1, .875] endpoints remain
+unchanged, as do all other aggregate fields.
+
+Among the 3,206 other source records, military changes 22 observed values and
+adds one score (23 → 24 observed); trade changes 17 observed values and adds
+three scores (20 → 23 observed). These records are outside the historical
+sample, not necessarily nonparticipants. Their membership is not reclassified.
+
+**Current downstream impact is zero.** All 19 dp-distortions comparison CSVs,
+including its 28 CR2 inference rows, are byte-identical. dp-learning's actual
+analysis frame is exactly identical (6,013 × 20). The reason is substantive:
+the current attitude catalog uses military T1→T2 and omits trade, so neither
+modified T3 field enters those analyses. This does not establish that the
+catalog's chosen waves are the desired estimand; see TE-06. Wild-bootstrap
+inference was not rerun.
+
+Reproduce from dp-data, then the named downstream repositories. The distortions
+and learning modes of the existing review runner accept any paired input bundle:
+
+```sh
+Rscript scripts/review_tomorrows_europe_correction.R /tmp/te-review
+Rscript ../dp-data/scripts/review_uk_crime_downstream.R distortions /tmp/te-review /tmp/te-distortions
+Rscript ../dp-data/scripts/review_uk_crime_downstream.R learning /tmp/te-review /tmp/te-learning
+```
+
+### TE-06: Downstream attitude catalog selects baseline-to-arrival waves
+
+The current `attitude-indices.tab` pairs Tomorrow's Europe military
+`eu.mil_att_11_12_t1` with `_t2`, and contains no trade entry. The other selected
+TE indices also use literal T1/T2 fields. The reconstruction preserves source
+wave identities: T1 is baseline, T2 arrival and T3 departure. Before changing
+these pairs, verify the intended time contrast in the analysis and original
+merge/catalog definitions. Choosing departure would change the estimand and
+requires its own numerical comparison and approval. TE-04's departure component
+correction must not silently switch the downstream catalog or add an index.
 
 ### TE-05: Education, age and exceptional raw codes need instrument review
 

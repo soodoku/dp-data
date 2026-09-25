@@ -1,0 +1,5 @@
+historical_sample,measure,source_records,historical_observed,candidate_observed,value_changes,observed_to_missing,missing_to_observed
+FALSE,military,3206,23,24,22,0,1
+TRUE,military,344,339,334,282,5,0
+FALSE,trade,3206,20,23,17,0,3
+TRUE,trade,344,336,332,213,7,3
