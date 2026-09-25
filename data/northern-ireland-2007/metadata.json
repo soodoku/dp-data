@@ -59,7 +59,7 @@
       "poll_id": "northern-ireland-2007",
       "field": "organizers",
       "value": "Newcastle University-led team, Stanford Centre for Deliberative Democracy and Queen’s University Belfast School of Education",
-      "reference_id": "northern-ireland-2007-omagh-report",
+      "reference_id": "northern-ireland-2007-local-material-2001cfa6b043a14c-northern-ireland-2007",
       "source_locator": "PDF pp.6–8",
       "status": "reported",
       "notes": null
@@ -68,7 +68,7 @@
       "poll_id": "northern-ireland-2007",
       "field": "recruitment",
       "value": "Door-to-door interviews across Omagh District Council area, followed by invitation",
-      "reference_id": "northern-ireland-2007-omagh-report",
+      "reference_id": "northern-ireland-2007-local-material-2001cfa6b043a14c-northern-ireland-2007",
       "source_locator": "PDF pp.6–8",
       "status": "reported",
       "notes": null
@@ -77,7 +77,7 @@
       "poll_id": "northern-ireland-2007",
       "field": "participants",
       "value": "565 initial door-to-door interviews; 127 event participants",
-      "reference_id": "northern-ireland-2007-omagh-report",
+      "reference_id": "northern-ireland-2007-local-material-2001cfa6b043a14c-northern-ireland-2007",
       "source_locator": "PDF pp.6–8",
       "status": "reported",
       "notes": null
@@ -163,16 +163,6 @@
       "local_artifact_id": "material-1f8563f84e1fa058-northern-ireland-2007",
       "accessed": "2026-09-24",
       "notes": "Public source downloaded 2026-09-24; SHA-256 1f8563f84e1fa058c231c32a9bb6dc6fcece2eef38708fd7d35f0c3ecce78cc6"
-    },
-    {
-      "reference_id": "northern-ireland-2007-omagh-report",
-      "poll_id": "northern-ireland-2007",
-      "kind": "event-report",
-      "title": "A Deliberative Poll on Education: What provision do informed parents in Northern Ireland want?",
-      "url": null,
-      "local_artifact_id": "material-2001cfa6b043a14c-northern-ireland-2007",
-      "accessed": "2026-09-24",
-      "notes": "Local file: data/northern-ireland-2007/reports/northern-ireland-final-report.pdf"
     }
   ],
   "material_coverage": [
@@ -181,7 +171,7 @@
       "material_type": "questionnaires",
       "status": "not-found",
       "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
-      "checked_references": "northern-ireland-2007-stanford-event;northern-ireland-2007-local-cdd-northern-ireland-variables;northern-ireland-2007-local-cdd-northern-ireland-value-labels;northern-ireland-2007-local-material-e1ec2452199db976-northern-ireland-2007;northern-ireland-2007-local-material-10838bd9c27c047e-northern-ireland-2007;northern-ireland-2007-local-material-2001cfa6b043a14c-northern-ireland-2007;northern-ireland-2007-local-material-1f8563f84e1fa058-northern-ireland-2007;northern-ireland-2007-download-material-1f8563f84e1fa058;northern-ireland-2007-omagh-report"
+      "checked_references": "northern-ireland-2007-stanford-event;northern-ireland-2007-local-cdd-northern-ireland-variables;northern-ireland-2007-local-cdd-northern-ireland-value-labels;northern-ireland-2007-local-material-e1ec2452199db976-northern-ireland-2007;northern-ireland-2007-local-material-10838bd9c27c047e-northern-ireland-2007;northern-ireland-2007-local-material-2001cfa6b043a14c-northern-ireland-2007;northern-ireland-2007-local-material-1f8563f84e1fa058-northern-ireland-2007;northern-ireland-2007-download-material-1f8563f84e1fa058"
     },
     {
       "poll_id": "northern-ireland-2007",
@@ -195,7 +185,7 @@
       "material_type": "event-reports",
       "status": "available",
       "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
-      "checked_references": "northern-ireland-2007-stanford-event;northern-ireland-2007-local-material-2001cfa6b043a14c-northern-ireland-2007;northern-ireland-2007-omagh-report"
+      "checked_references": "northern-ireland-2007-stanford-event;northern-ireland-2007-local-material-2001cfa6b043a14c-northern-ireland-2007"
     },
     {
       "poll_id": "northern-ireland-2007",

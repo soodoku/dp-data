@@ -118,11 +118,14 @@ The architecture and migration order are documented in
 maintained twice. A blank `poll_id` denotes a collection-wide artifact rather
 than an unknown poll. Source materials live in the relevant poll's
 `questionnaires/`, `codebooks/`, `briefing-materials/`, `papers/`, `reports/`, or
-`design/` directory. Cross-poll references and historical definition versions
+`design/` directory. Cross-poll references and definition versions with distinct coding evidence
 have one copy under `data/shared/`; poll manifests point to that same file.
 Original archive paths, download URLs, checksums, and comparison limitations are
-recorded in the central catalog. Identical copies are consolidated; different
-versions remain separate.
+recorded in the central catalog. Redundant copies and superseded drafts are removed after comparing their
+contents, including comments and coding notes. Git retains removed versions.
+Documents tied to one event live in its own folder. Entries whose `collection`
+is `materials-only` identify reference materials without claiming that respondent
+data or an aggregate build is available.
 
 Each poll folder also contains generated `metadata.json`: the historical catalog
 entry, sourced event facts, references, material coverage, and links to local

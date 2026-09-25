@@ -14,7 +14,7 @@
       "poll_id": "btp-presidential-primaries-2004",
       "field": "event_dates",
       "value": "Five weekly sessions beginning 2004-01-19; through mid-February 2004",
-      "reference_id": "us-btp-presidential-primaries-2004-material-fe97b92d2e9a1c8e-btp-presidential-primaries-2004",
+      "reference_id": "us-btp-presidential-primaries-2004-material-f3671213505686ab-btp-presidential-primaries-2004",
       "source_locator": "Research manuscript pp 5–10; design and online sessions",
       "status": "reported",
       "notes": "Two catalog IDs describe related source variants/cohorts. Shared paper does not justify merging IDs or treating every denominator as identical."
@@ -23,7 +23,7 @@
       "poll_id": "btp-presidential-primaries-2004",
       "field": "location",
       "value": "United States national online sample",
-      "reference_id": "us-btp-presidential-primaries-2004-material-fe97b92d2e9a1c8e-btp-presidential-primaries-2004",
+      "reference_id": "us-btp-presidential-primaries-2004-material-f3671213505686ab-btp-presidential-primaries-2004",
       "source_locator": "Research manuscript pp 5–10; design and online sessions",
       "status": "reported",
       "notes": "Two catalog IDs describe related source variants/cohorts. Shared paper does not justify merging IDs or treating every denominator as identical."
@@ -32,7 +32,7 @@
       "poll_id": "btp-presidential-primaries-2004",
       "field": "organizers",
       "value": "Stanford research team Iyengar, Luskin and Fishkin; Knowledge Networks panel/recruitment",
-      "reference_id": "us-btp-presidential-primaries-2004-material-fe97b92d2e9a1c8e-btp-presidential-primaries-2004",
+      "reference_id": "us-btp-presidential-primaries-2004-material-f3671213505686ab-btp-presidential-primaries-2004",
       "source_locator": "Research manuscript pp 5–10; design and online sessions",
       "status": "reported",
       "notes": "Two catalog IDs describe related source variants/cohorts. Shared paper does not justify merging IDs or treating every denominator as identical."
@@ -41,7 +41,7 @@
       "poll_id": "btp-presidential-primaries-2004",
       "field": "population",
       "value": "Adult Americans; manuscript analysis focuses on Democrats and independents",
-      "reference_id": "us-btp-presidential-primaries-2004-material-fe97b92d2e9a1c8e-btp-presidential-primaries-2004",
+      "reference_id": "us-btp-presidential-primaries-2004-material-f3671213505686ab-btp-presidential-primaries-2004",
       "source_locator": "Research manuscript pp 5–10; design and online sessions",
       "status": "reported",
       "notes": "Two catalog IDs describe related source variants/cohorts. Shared paper does not justify merging IDs or treating every denominator as identical."
@@ -50,7 +50,7 @@
       "poll_id": "btp-presidential-primaries-2004",
       "field": "recruitment",
       "value": "755 randomly sampled Knowledge Networks adults plus 247 veterans of prior foreign-policy poll; panel recruited by telephone and supplied access when needed",
-      "reference_id": "us-btp-presidential-primaries-2004-material-fe97b92d2e9a1c8e-btp-presidential-primaries-2004",
+      "reference_id": "us-btp-presidential-primaries-2004-material-f3671213505686ab-btp-presidential-primaries-2004",
       "source_locator": "Research manuscript pp 5–10; design and online sessions",
       "status": "reported",
       "notes": "Two catalog IDs describe related source variants/cohorts. Shared paper does not justify merging IDs or treating every denominator as identical."
@@ -59,7 +59,7 @@
       "poll_id": "btp-presidential-primaries-2004",
       "field": "participants",
       "value": "385 agreed; 317 completed pre-survey; 284 completed post-survey; 180 Democrats/independents analyzed (75 veterans,105 novices). Separate control: 762 invited,546 pre,460 post",
-      "reference_id": "us-btp-presidential-primaries-2004-material-fe97b92d2e9a1c8e-btp-presidential-primaries-2004",
+      "reference_id": "us-btp-presidential-primaries-2004-material-f3671213505686ab-btp-presidential-primaries-2004",
       "source_locator": "Research manuscript pp 5–10; design and online sessions",
       "status": "reported",
       "notes": "Two catalog IDs describe related source variants/cohorts. Shared paper does not justify merging IDs or treating every denominator as identical."
@@ -68,7 +68,7 @@
       "poll_id": "btp-presidential-primaries-2004",
       "field": "mode",
       "value": "Moderated online voice discussions; five weekly sessions",
-      "reference_id": "us-btp-presidential-primaries-2004-material-fe97b92d2e9a1c8e-btp-presidential-primaries-2004",
+      "reference_id": "us-btp-presidential-primaries-2004-material-f3671213505686ab-btp-presidential-primaries-2004",
       "source_locator": "Research manuscript pp 5–10; design and online sessions",
       "status": "reported",
       "notes": "Two catalog IDs describe related source variants/cohorts. Shared paper does not justify merging IDs or treating every denominator as identical."
@@ -77,7 +77,7 @@
       "poll_id": "btp-presidential-primaries-2004",
       "field": "topics",
       "value": "2004 presidential nominations, candidate positions, foreign policy, economy and health care",
-      "reference_id": "us-btp-presidential-primaries-2004-material-fe97b92d2e9a1c8e-btp-presidential-primaries-2004",
+      "reference_id": "us-btp-presidential-primaries-2004-material-f3671213505686ab-btp-presidential-primaries-2004",
       "source_locator": "Research manuscript pp 5–10; design and online sessions",
       "status": "reported",
       "notes": "Two catalog IDs describe related source variants/cohorts. Shared paper does not justify merging IDs or treating every denominator as identical."
@@ -127,21 +127,11 @@
       "reference_id": "us-btp-presidential-primaries-2004-material-9408908108592c63-btp-presidential-primaries-2004",
       "poll_id": "btp-presidential-primaries-2004",
       "kind": "codebook",
-      "title": "Appendix A -1-13-14",
-      "url": null,
-      "local_artifact_id": "material-9408908108592c63-btp-presidential-primaries-2004",
-      "accessed": "2026-09-24",
-      "notes": "Existing repository source: data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.docx"
-    },
-    {
-      "reference_id": "us-btp-presidential-primaries-2004-material-a6eea8ca19a00fe8-btp-presidential-primaries-2004",
-      "poll_id": "btp-presidential-primaries-2004",
-      "kind": "codebook",
       "title": "Appendix A -9-14-14",
       "url": null,
       "local_artifact_id": "material-a6eea8ca19a00fe8-btp-presidential-primaries-2004",
       "accessed": "2026-09-24",
-      "notes": "Existing repository source: data/shared/codebooks/knowledge_indices/appendix-a-9-14-14.docx"
+      "notes": "Retained source replaces redundant Appendix A -1-13-14. Every nonblank January paragraph occurs in September appendix; September extends 184 to 273 paragraphs. No comments, substantive footnotes/endnotes or deleted-text runs in either original."
     },
     {
       "reference_id": "us-btp-presidential-primaries-2004-material-7af1872d80219bc0-btp-presidential-primaries-2004",
@@ -162,16 +152,6 @@
       "local_artifact_id": "material-7731a4ce1a2d98a7-btp-presidential-primaries-2004",
       "accessed": "2026-09-24",
       "notes": "Existing repository source: data/shared/design/poll_details/appendix-poll-details-5-18-14-e.docx"
-    },
-    {
-      "reference_id": "us-btp-presidential-primaries-2004-material-fe97b92d2e9a1c8e-btp-presidential-primaries-2004",
-      "poll_id": "btp-presidential-primaries-2004",
-      "kind": "paper",
-      "title": "Deliberative Preferences in the Presidential Nomination Campaign",
-      "url": null,
-      "local_artifact_id": "material-fe97b92d2e9a1c8e-btp-presidential-primaries-2004",
-      "accessed": "2026-09-24",
-      "notes": "Existing repository source: data/shared/papers/primaries-paper.pdf"
     },
     {
       "reference_id": "us-btp-presidential-primaries-2004-material-7ad6c3c2eb5f0731-btp-presidential-primaries-2004",
@@ -267,28 +247,28 @@
       "material_type": "briefing-materials",
       "status": "partial",
       "notes": "Research paper identifies MacNeil/Lehrer reading material plus Stanford Political Communication Lab multimedia candidateCD; exact completeCD/reading package not recovered. Do not replace with fall-general-election briefing book.",
-      "checked_references": "us-btp-presidential-primaries-2004-material-f3671213505686ab-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-7731a4ce1a2d98a7-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-fe97b92d2e9a1c8e-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-7ad6c3c2eb5f0731-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-wang-siu2009"
+      "checked_references": "us-btp-presidential-primaries-2004-material-f3671213505686ab-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-7731a4ce1a2d98a7-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-7ad6c3c2eb5f0731-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-wang-siu2009"
     },
     {
       "poll_id": "btp-presidential-primaries-2004",
       "material_type": "event-reports",
       "status": "not-found",
       "notes": "No poll-specific document verified after reviewing local artifact catalog, archival metadata appendix and official event/material pages plus targeted paper search. This is not evidence that no document exists.",
-      "checked_references": "us-btp-presidential-primaries-2004-material-f3671213505686ab-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-7731a4ce1a2d98a7-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-fe97b92d2e9a1c8e-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-7ad6c3c2eb5f0731-btp-presidential-primaries-2004"
+      "checked_references": "us-btp-presidential-primaries-2004-material-f3671213505686ab-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-7731a4ce1a2d98a7-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-7ad6c3c2eb5f0731-btp-presidential-primaries-2004"
     },
     {
       "poll_id": "btp-presidential-primaries-2004",
       "material_type": "papers",
       "status": "available",
       "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
-      "checked_references": "us-btp-presidential-primaries-2004-material-f3671213505686ab-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-fe97b92d2e9a1c8e-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-7ad6c3c2eb5f0731-btp-presidential-primaries-2004"
+      "checked_references": "us-btp-presidential-primaries-2004-material-f3671213505686ab-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-7ad6c3c2eb5f0731-btp-presidential-primaries-2004"
     },
     {
       "poll_id": "btp-presidential-primaries-2004",
       "material_type": "codebooks",
       "status": "partial",
       "notes": "Variable/value-label dictionaries and/or shared recode documentation are available; completeness as an authored poll-specific codebook is not established.",
-      "checked_references": "us-btp-presidential-primaries-2004-material-14f09619eb8626fc-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-e0ff5cf4f836a41b-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-9408908108592c63-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-a6eea8ca19a00fe8-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-7af1872d80219bc0-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-cdd-btp-presidential-primaries-2004-survey-variables;us-btp-presidential-primaries-2004-cdd-btp-presidential-primaries-2004-survey-value-labels;us-btp-presidential-primaries-2004-cdd-btp-presidential-primaries-2004-survey-historical-group-order-csv;us-btp-presidential-primaries-2004-cdd-btp-presidential-primaries-2004-survey-source-materials-historical-recoding-txt"
+      "checked_references": "us-btp-presidential-primaries-2004-material-14f09619eb8626fc-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-e0ff5cf4f836a41b-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-9408908108592c63-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-material-7af1872d80219bc0-btp-presidential-primaries-2004;us-btp-presidential-primaries-2004-cdd-btp-presidential-primaries-2004-survey-variables;us-btp-presidential-primaries-2004-cdd-btp-presidential-primaries-2004-survey-value-labels;us-btp-presidential-primaries-2004-cdd-btp-presidential-primaries-2004-survey-historical-group-order-csv;us-btp-presidential-primaries-2004-cdd-btp-presidential-primaries-2004-survey-source-materials-historical-recoding-txt"
     }
   ],
   "artifacts": [
@@ -304,7 +284,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Historical metadata archive; content classified for reference. Instrument-to-variable and version-specific comparisons remain required. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Historical metadata archive; content classified for reference. Instrument-to-variable and version-specific comparisons remain required. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Canonical shared primaries paper cited by both historical primaries aliases. Read extracted text/methods/tables and checked existing poll_references. No pipeline reads this paper.",
       "relative_path": "../shared/papers/presidential-nomination.pdf"
     },
     {
@@ -319,7 +299,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Genuine cross-poll coding evidence. Required build input read by scripts/12_build_polardata.R; 129 attitude targets plus header, canonical historical registry.",
       "relative_path": "../shared/codebooks/attitude_indices/allpollindices.csv"
     },
     {
@@ -334,23 +314,8 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Genuine cross-poll coding evidence. 144 rows plus header; includes empirical-premise indices deliberately absent from current 129-row build registry. Unique evidence for future corrections.",
       "relative_path": "../shared/codebooks/attitude_indices/allpollindices-withempiricalpremises.csv"
-    },
-    {
-      "artifact_id": "material-9408908108592c63-btp-presidential-primaries-2004",
-      "poll_id": "btp-presidential-primaries-2004",
-      "artifact_type": "codebook",
-      "title": "Appendix A -1-13-14",
-      "location": "data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.docx",
-      "source_id": "material-9408908108592c63",
-      "original_archive_path": "meta_data/knowledge_indices/Appendix A -1-13-14.docx",
-      "sha256": "9408908108592c6339ae1041bd0d118c210451535cd317be4c431871b0c5e75c",
-      "rights_status": "review-required",
-      "disclosure_status": "approved-public",
-      "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
-      "relative_path": "../shared/codebooks/knowledge_indices/appendix-a-1-13-14.docx"
     },
     {
       "artifact_id": "material-a6eea8ca19a00fe8-btp-presidential-primaries-2004",
@@ -364,7 +329,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Genuine cross-poll coding evidence. 273-paragraph cross-poll knowledge-item appendix extends January content; retain complete version.",
       "relative_path": "../shared/codebooks/knowledge_indices/appendix-a-9-14-14.docx"
     },
     {
@@ -379,7 +344,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Genuine cross-poll coding evidence. 136×8 cross-poll dataset URLs, filters, group identifiers and 0–1 index mapping; retain single content representative.",
       "relative_path": "../shared/codebooks/rosetta_stone/rosetta-stone.xls"
     },
     {
@@ -394,23 +359,8 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Already cited across21 poll references; includes24 polls and four source-linked duration comments. Compared all14 DOCX table rows plus comments XML, and corresponding PDF texts. No executable code reads these appendices.",
       "relative_path": "../shared/design/poll_details/appendix-poll-details-5-18-14-e.docx"
-    },
-    {
-      "artifact_id": "material-fe97b92d2e9a1c8e-btp-presidential-primaries-2004",
-      "poll_id": "btp-presidential-primaries-2004",
-      "artifact_type": "paper",
-      "title": "Deliberative Preferences in the Presidential Nomination Campaign",
-      "location": "data/shared/papers/primaries-paper.pdf",
-      "source_id": "material-fe97b92d2e9a1c8e",
-      "original_archive_path": null,
-      "sha256": "fe97b92d2e9a1c8ecc786f267fd806b11e8ac19b9bff0b57cd5e913336f2ab80",
-      "rights_status": "review-required",
-      "disclosure_status": "approved-public",
-      "publication_status": "published",
-      "notes": "Iyengar, Luskin and Fishkin, 29 November 2005. Event starts 19 January 2004. Two repository primary cohorts remain unresolved; shared reference does not establish their equivalence. Source URL: https://drive.google.com/file/d/1I32t0i1kXuz9iTXWPPArgleFmawQq_4Z/view?usp=sharing. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
-      "relative_path": "../shared/papers/primaries-paper.pdf"
     },
     {
       "artifact_id": "material-7ad6c3c2eb5f0731-btp-presidential-primaries-2004",
@@ -424,7 +374,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "ECPR September 2007 manuscript. Introduction and tables differ in stated coverage; Table 1/2 sample sizes and index counts are version checks, not an independently established scoring contract. Source URL: https://drive.google.com/file/d/1IZQTpQMml7XSlwSU1GNOqzZb-mDecS5g/view?usp=sharing. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "notes": "ECPR September 2007 manuscript. Introduction and tables differ in stated coverage; Table 1/2 sample sizes and index counts are version checks, not an independently established scoring contract. Source URL: https://drive.google.com/file/d/1IZQTpQMml7XSlwSU1GNOqzZb-mDecS5g/view?usp=sharing. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Cross-poll attitudes analysis covering multiple British, Australian and US polls. Read extracted text/methods/tables and checked existing poll_references. No pipeline reads this paper.",
       "relative_path": "../shared/papers/deliberation-net-change-paper.pdf"
     },
     {
@@ -563,21 +513,6 @@
       "relative_path": "source-materials/followup-questionnaire.pdf"
     },
     {
-      "artifact_id": "material-6f7d5e1799eacc41-btp-presidential-primaries-2004",
-      "poll_id": "btp-presidential-primaries-2004",
-      "artifact_type": "codebook",
-      "title": "Appendix A -1-13-14 (PDF preview)",
-      "location": "data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.pdf",
-      "source_id": "material-6f7d5e1799eacc41",
-      "original_archive_path": null,
-      "sha256": "6f7d5e1799eacc41a08c4c4dde872e1920f154137de775fb2d11fbfeff702061",
-      "rights_status": "review-required",
-      "disclosure_status": "approved-public",
-      "publication_status": "published",
-      "notes": "Generated from data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
-      "relative_path": "../shared/codebooks/knowledge_indices/appendix-a-1-13-14.pdf"
-    },
-    {
       "artifact_id": "material-8ddbaad774a59155-btp-presidential-primaries-2004",
       "poll_id": "btp-presidential-primaries-2004",
       "artifact_type": "codebook",
@@ -589,7 +524,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Generated from data/shared/codebooks/knowledge_indices/appendix-a-9-14-14.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "notes": "Generated from data/shared/codebooks/knowledge_indices/appendix-a-9-14-14.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Genuine cross-poll coding evidence. 273-paragraph cross-poll knowledge-item appendix extends January content; retain complete version.",
       "relative_path": "../shared/codebooks/knowledge_indices/appendix-a-9-14-14.pdf"
     },
     {
@@ -604,7 +539,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Generated from data/shared/codebooks/rosetta_stone/rosetta-stone.xls. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "notes": "Generated from data/shared/codebooks/rosetta_stone/rosetta-stone.xls. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Genuine cross-poll coding evidence. 136×8 cross-poll dataset URLs, filters, group identifiers and 0–1 index mapping; retain single content representative.",
       "relative_path": "../shared/codebooks/rosetta_stone/rosetta-stone.pdf"
     },
     {
@@ -619,7 +554,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Generated from data/shared/design/poll_details/appendix-poll-details-5-18-14-e.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "notes": "Generated from data/shared/design/poll_details/appendix-poll-details-5-18-14-e.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Already cited across21 poll references; includes24 polls and four source-linked duration comments. Compared all14 DOCX table rows plus comments XML, and corresponding PDF texts. No executable code reads these appendices.",
       "relative_path": "../shared/design/poll_details/appendix-poll-details-5-18-14-e.pdf"
     },
     {
@@ -667,22 +602,6 @@
       "visual_check": "passed-representative-pages",
       "visual_pages": "1;11;21",
       "source_token_coverage": "1.0",
-      "distinct_word_coverage": "1.0",
-      "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
-      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
-    },
-    {
-      "source_path": "data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.docx",
-      "preview_path": "data/shared/codebooks/knowledge_indices/appendix-a-1-13-14.pdf",
-      "source_sha256": "9408908108592c6339ae1041bd0d118c210451535cd317be4c431871b0c5e75c",
-      "preview_sha256": "6f7d5e1799eacc41a08c4c4dde872e1920f154137de775fb2d11fbfeff702061",
-      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
-      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
-      "pages": "8",
-      "text_check": "source-text-compared",
-      "visual_check": "passed-representative-pages",
-      "visual_pages": "1;4;8",
-      "source_token_coverage": "0.9986772486772487",
       "distinct_word_coverage": "1.0",
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
