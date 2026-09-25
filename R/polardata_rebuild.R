@@ -107,6 +107,12 @@ historical_derived_measures <- function(polls) {
             ),
           "ukge-03-v2",
           dplyr::case_when(
+            .env$poll_id == "uk-monarchy-1996" &
+              .data$legacy_field %in% c(
+                "grpgain", "grpgainr", "loggain", "meant1knowcor",
+                "meant1knowrcor", "meant1knowcor_ind", "t1knowlevelcor",
+                "t1knowlevelrcor", "meant2know", "t2knowlevel"
+              ) ~ "ukm-01-v2",
             .env$poll_id == "nic-1996" & .data$legacy_field == "meanage" ~
               "nic-03-v2",
             .env$poll_id == "cpl-1996" & .data$legacy_field %in%

@@ -31,6 +31,15 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     ),
     "swepco-1996" = list(fields = "swp.t2att3", rows = 232L),
     "wtu-1996" = list(fields = "wtu.t2att3", rows = 230L),
+    "uk-monarchy-1996" = list(
+      fields = c(
+        "t1knowcor", "t1knowrcor", "t2know", "t2knowr", "knowgain",
+        "knowgain2", "knowgainr", "knowgainr2", "logpk", "tobitpk",
+        "grpgain", "grpgainr", "loggain", "meant1knowcor",
+        "meant1knowrcor", "meant1knowcor_ind", "t1knowlevelcor",
+        "t1knowlevelrcor", "meant2know", "t2knowlevel"
+      ), rows = 258L
+    ),
     "australia-republic-1999" = list(
       fields = c("grpgain", "loggain"), rows = 347L
     )
