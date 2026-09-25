@@ -841,7 +841,7 @@ swepco-1996,swp.t1att5,renewables_t1@historical-v1,232,232,0,0,4.440892098500626
 swepco-1996,swp.t1att6,research_t1@historical-v1,232,232,0,0,0,0,1e-10
 swepco-1996,swp.t1att7,fossil_fuels_t1@historical-v1,232,232,0,0,0,0,1e-10
 swepco-1996,swp.t2att1,imported_power_t2@historical-v1,232,232,0,0,0,0,1e-10
-swepco-1996,swp.t2att3,conservation_t2@historical-v1,232,232,0,0,0,0,1e-10
+swepco-1996,swp.t2att3,conservation_t2@swe-02-v2,232,232,0,137,0.5,0,1e-10
 swepco-1996,swp.t2att4,low_income_support_t2@historical-v1,232,232,0,0,0,0,1e-10
 swepco-1996,swp.t2att5,renewables_t2@historical-v1,232,232,0,0,0,0,1e-10
 swepco-1996,swp.t2att6,research_t2@historical-v1,232,232,0,0,0,0,1e-10

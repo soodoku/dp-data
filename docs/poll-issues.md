@@ -1149,15 +1149,58 @@ The current result is limited to the readable source, not proof that an earlier
 source does not exist.
 
 **SWE-02 — conservation's post component is absent under the script's name.**
-`tx_swp.R` refers to `addfact2`, but the survey contains ADDFAC2, not ADDFACT2.
-In `cbind`, the absent `$addfact2` contributes no column. Consequently the
-historical post index uses REDUCE2 alone. The maintained historical recode
-names REDUCE2 explicitly and reproduces all 232 values. The pre index averages
-ADDFAC1 and REDUCE1 and normalizes the attendee mean over [3,10]; the post index
-normalizes REDUCE2 over [0,10]. Check Q2 item wording and the intended pair in
-[codebook.txt](../data/swepco-1996/codebook.txt) before adding ADDFAC2. The absent
-field is a source-code defect; whether the intended corrected index should
-retain the same empirical normalization requires a separate decision.
+**Status: approved and adopted two-item correction (SWE-02).** The archived
+[`tx_swp.R`](https://github.com/soodoku/dp-data/blob/historical-cdd-scripts/legacy/poll_scripts/tx_swp.R#L92-L96)
+forms T1 conservation from `addfac1` and `reduce1`, but asks for nonexistent
+`addfact2` alongside `reduce2` at T2. The absent data-frame column contributes
+nothing to `cbind`; the deposited T2 index and maintained reconstruction use
+`REDUCE2` alone. All 232 historical values reproduce exactly. The WTU script
+has the same misspelling, but WTU requires its own review and approval.
+
+The poll-specific [codebook](../data/swepco-1996/codebook.txt) identifies
+`REDUCE2` as Q2b, the importance of helping customers use energy more
+efficiently to reduce gas and coal use, and `ADDFAC2` as Q10b, the importance
+of services and technologies that reduce the need for new generation facilities.
+Both are separate 0–10 post questions; the corresponding T1 questions are
+already paired in the historical index. The [index memorandum](../data/shared/codebooks/attitude_indices/past_versions/appendix-attitude-indices-6-07-15-rcl.pdf),
+PDF page 16, specifies two conservation components for the utility polls.
+The [NREL utility report](../data/shared/reports/utilities-nrel-report.pdf)
+places SWEPCO with CPL and WTU in this common research design, but does not
+verify the exact composite values.
+
+The approved build averages available `ADDFAC2` and `REDUCE2` responses,
+then keeps the historical T2 division by 10 and missing-value fill. It leaves
+the T1 empirical [3,10] calibration, all other attitude definitions, sample,
+knowledge scoring and group-derived descriptors unchanged. Among the 232
+attendees, 229 answered `ADDFAC2`, 231 answered `REDUCE2`, and 228 answered
+both. Their paired item correlation is 0.271; related wording alone should
+not be mistaken for identical measurement. The earlier portable files remain
+unreadable, and the archived script's execution provenance is not established.
+The codebook and memorandum support the intended components but do not
+independently prescribe whether T2 should use empirical calibration instead
+of the historical [0,10] scaling. That is a separate specification decision.
+
+[Recorded respondent and downstream comparisons](../audit/corrections/swepco-1996/)
+show that only `swp.t2att3` changes: 137 of 232 values, 79 down and 58 up,
+with no missingness change. Its mean falls from 0.875862 to 0.853664; the
+largest absolute respondent difference is 0.5. The existing attitude catalog
+uses this index. In the current dp-distortions build, SWEPCO's poll-level
+homogeneity estimate moves 0.028495 to 0.030709 and polarization 0.036791
+to 0.032849. Pooled homogeneity moves 0.012950 to 0.013025 and pooled
+polarization -0.022138 to -0.022271. Thirteen of 28 CR2 inference rows
+change, with no 0.05-threshold crossing in either recorded p-value; the wild
+bootstrap was not rerun. dp-learning's analysis frame remains exactly
+identical (6,013 by 20), as do dp-deliberately's 210 checked outcome rows.
+The approved respondent values are frozen by ID in `approved_values.csv`;
+the diagnostic replays the historical one-item formula against production.
+Reproduce with:
+
+```sh
+Rscript scripts/review_swepco_conservation.R /tmp/swe-review
+Rscript ../dp-data/scripts/review_uk_crime_downstream.R distortions /tmp/swe-review /tmp/swe-distortions
+Rscript ../dp-data/scripts/review_uk_crime_downstream.R learning /tmp/swe-review /tmp/swe-learning
+Rscript ../dp-data/scripts/review_uk_crime_downstream.R deliberately /tmp/swe-review /tmp/swe-deliberately
+```
 
 **SWE-03 — low-income index reflects an earlier script version.** Historical
 `t1att4`/`t2att4` reproduce NEEDTO1/NEEDTO2, the 0–10 basic-needs/cost tradeoff,

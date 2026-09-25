@@ -1,0 +1,2 @@
+field,respondents,historical_observed,candidate_observed,value_changes,missingness_changes,historical_mean,candidate_mean,mean_paired_delta,max_absolute_delta
+swp.t2att3,232,232,232,137,0,0.8758620689655172,0.8536637931034483,-0.02219827586206897,0.5

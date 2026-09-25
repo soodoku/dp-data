@@ -28,7 +28,8 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     ),
     "cpl-1996" = list(
       fields = c("grpgain", "grpgainr", "loggain"), rows = 216L
-    )
+    ),
+    "swepco-1996" = list(fields = "swp.t2att3", rows = 232L)
   )
   contract <- reviewed[[poll_id]]
   if (!is.null(contract) && field %in% contract$fields) {

@@ -329,7 +329,19 @@ test_that("utility extremity retains its historical calculation stage", {
   for (poll in c("wtu-1996", "swepco-1996")) {
     survey <- read_poll_survey(poll)
     before <- build_utility_individual(survey, poll)
+    addfac <- survey$ADDFAC2
     survey$ADDFAC2 <- rep(0, nrow(survey))
+    changed <- build_utility_individual(survey, poll)
+    if (poll == "swepco-1996") {
+      expect_true(any(changed$conservation_t2 != before$conservation_t2))
+      expect_identical(
+        changed[setdiff(names(changed), "conservation_t2")],
+        before[setdiff(names(before), "conservation_t2")]
+      )
+    } else {
+      expect_identical(changed, before)
+    }
+    survey$ADDFAC2 <- addfac
     survey$LOWINC1 <- rep(0, nrow(survey))
     survey$POOR1 <- rep(1, nrow(survey))
     expect_identical(build_utility_individual(survey, poll), before)

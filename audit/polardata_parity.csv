@@ -7488,7 +7488,7 @@ swepco-1996,swp.t1att5,232,232,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 swepco-1996,swp.t1att6,232,232,0,0,0,0,FALSE,0,0,1e-10
 swepco-1996,swp.t1att7,232,232,0,0,0,0,FALSE,0,0,1e-10
 swepco-1996,swp.t2att1,232,232,0,0,0,0,FALSE,0,0,1e-10
-swepco-1996,swp.t2att3,232,232,0,0,0,0,FALSE,0,0,1e-10
+swepco-1996,swp.t2att3,232,232,0,137,0,137,FALSE,0,0.5,1e-10
 swepco-1996,swp.t2att4,232,232,0,0,0,0,FALSE,0,0,1e-10
 swepco-1996,swp.t2att5,232,232,0,0,0,0,FALSE,0,0,1e-10
 swepco-1996,swp.t2att6,232,232,0,0,0,0,FALSE,0,0,1e-10
