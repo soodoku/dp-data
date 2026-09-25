@@ -75,3 +75,25 @@ test_that("regenerated export row numbers cannot be corrupted", {
   data$X[[1]] <- NA_integer_
   expect_error(compare_historical_polardata(data, reference, audit))
 })
+
+test_that("UKC-01 approval cannot hide new changes or a reverted correction", {
+  data <- full_polardata()
+  reference <- readr::read_tsv(project_path(
+    "evidence", "benchmarks", "polardata.tab"
+  ), show_col_types = FALSE)
+  audit <- readr::read_csv(project_path(
+    "audit", "polardata_covariances.csv"
+  ), show_col_types = FALSE)
+  compare <- function(x) compare_historical_polardata(x, reference, audit)
+  expect_equal(sum(compare(data)$approved_correction_differences), 142L)
+  row <- which(data$dpnum == 6 & data$caseid == 10005)
+  changed <- data
+  changed$ukcrime.rootcauset2[row] <- reference$ukcrime.rootcauset2[row]
+  expect_equal(sum(compare(changed)$unexplained_differences), 1L)
+  changed$ukcrime.rootcauset2[row] <- 0.123
+  expect_equal(sum(compare(changed)$unexplained_differences), 1L)
+  changed <- data
+  row <- which(data$dpnum == 6 & data$caseid == 10388)
+  changed$ukcrime.rootcauset2[row] <- 1
+  expect_equal(sum(compare(changed)$unexplained_differences), 1L)
+})

@@ -1,3 +1,24 @@
+approved_reference_values <- function(poll_id, field, caseid, historical,
+                                      tolerance = 1e-10) {
+  if (poll_id != "uk-crime-1994" || field != "ukcrime.rootcauset2") {
+    return(historical)
+  }
+  approved <- readr::read_csv(project_path(
+    "audit", "corrections", "uk-crime-1994", "respondent_comparison.csv"
+  ), show_col_types = FALSE)
+  stopifnot(
+    nrow(approved) == 299L, !anyDuplicated(approved$caseid),
+    setequal(as.character(caseid), as.character(approved$caseid))
+  )
+  rows <- match(as.character(caseid), as.character(approved$caseid))
+  approved <- approved[rows, ]
+  stopifnot(
+    identical(is.na(historical), is.na(approved$historical_post)),
+    all(abs(historical - approved$historical_post) <= tolerance, na.rm = TRUE)
+  )
+  approved$candidate_post
+}
+
 historical_reference_people <- function(reference, poll_id) {
   if (poll_id != "btp-presidential-primaries-2004") {
     stopifnot(!anyDuplicated(reference$caseid))
@@ -50,6 +71,7 @@ compare_respondent_measures <- function(measures, people, samples, reference,
       !anyDuplicated(persons$historical_respondent_id),
       setequal(persons$historical_respondent_id, as.character(expected$caseid))
     )
+    expected_caseid <- persons$historical_respondent_id
     expected <- expected[match(
       persons$historical_respondent_id,
       as.character(expected$caseid)
@@ -64,6 +86,12 @@ compare_respondent_measures <- function(measures, people, samples, reference,
       persons$respondent_id,
       actual$respondent_id
     )]
+    approved <- approved_reference_values(
+      poll, target$legacy_field, expected_caseid, expected, tolerance
+    )
+    approved_both <- !is.na(actual) & !is.na(approved)
+    unexplained <- sum(is.na(actual) != is.na(approved)) +
+      sum(abs(actual[approved_both] - approved[approved_both]) > tolerance)
     both <- !is.na(actual) & !is.na(expected)
     errors <- abs(actual[both] - expected[both])
     tibble::tibble(
@@ -73,7 +101,7 @@ compare_respondent_measures <- function(measures, people, samples, reference,
       missingness_differences = sum(is.na(actual) != is.na(expected)),
       value_differences = sum(errors > tolerance),
       max_absolute_difference = if (length(errors)) max(errors) else 0,
-      tolerance = tolerance
+      unexplained_differences = unexplained, tolerance = tolerance
     )
   }) |> purrr::list_rbind()
 }

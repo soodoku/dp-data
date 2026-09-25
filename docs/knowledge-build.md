@@ -216,8 +216,9 @@ rounded values on page 17 of the Cor–Sood manuscript.
 
 Release `v0.1.0` preserves the aggregate and historical linkage before source
 reconstruction. `make polardata` begins the next stage: reproducing existing
-values from reviewed poll-level responses. Corrections and a broader schema
-remain later stages, governed by the [issue register](poll-issues.md).
+values from reviewed poll-level responses. Poll-specific corrections require
+user approval based on evidence in the [issue register](poll-issues.md); a broader
+schema remains a later stage.
 New discrepancies or questionable definitions discovered while building must be
 recorded there with source/version, code location, affected records, numerical
 impact, plausible explanations and the evidence still needed. Matching the old
@@ -229,7 +230,10 @@ with 6,084 rows and the 364 historical columns, plus the 129-row attitude catalo
 and typed derived measures. All 21 polls build from public source materials;
 `make compare-polardata` evaluates historical agreement separately. Generalized
 variance has explicitly audited numerical exceptions in 24 groups, and export
-row numbers are regenerated. See the [architecture](architecture.md) and
+row numbers are regenerated. Approved UKC-01 replaces baseline policing with the
+post-wave children item in the UK Crime root-causes index. Comparison checks
+verify the exact approved respondent values against the retained review evidence;
+the original historical benchmark is unchanged. See the [architecture](architecture.md) and
 [poll issue register](poll-issues.md) for samples, historical quirks and
 comparison rules. No downstream consumer is switched by this release.
 Historical benchmarks, canonical knowledge tables and linkage outputs remain
@@ -361,10 +365,13 @@ measure. Those investigations remain separate from reproduction.
 
 The original knowledge outputs keep their existing samples and scoring rules.
 `make respondents` creates separate tables in `output/respondent/` for all
-reviewed source records within the 21-poll historical scope. Its UK Health,
-UK–EU, UK Monarchy, 1997 UK election, UK Crime, CPL, WTU and SWEPCO definitions reproduce historical
-respondent measures; other polls retain
-raw registered knowledge fields while respondent reconstruction remains pending.
+reviewed source records within the 21-poll historical scope, covering all 848
+historical respondent-field targets. Definitions preserve historical coding
+except for explicitly approved corrections. UK Crime
+`root_causes_t2@ukc-01-v2` uses only post-wave children, television and school
+discipline responses; available-component averaging and the historical sample
+are unchanged. Its raw input links and observed-component counts reflect these
+three post-wave fields.
 See the [stage contracts](architecture.md#respondent-reconstruction-before-aggregation),
 [coverage](../audit/respondent_coverage.csv), and
 [historical comparison](../audit/respondent_parity.csv).

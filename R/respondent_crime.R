@@ -1,9 +1,7 @@
 crime_attitudes <- function(survey, wave) {
   average <- function(stems, reversed = character()) {
     values <- purrr::map(stems, function(stem) {
-      # UKC-01: the historical post root-causes index reuses baseline policing.
-      field <- if (stem == "timchld" && wave == 2L) "morecop1"
-      else paste0(stem, wave)
+      field <- paste0(stem, wave)
       value <- read_source_codes(survey, field, 1:5)
       if (stem %in% reversed) (5 - value) / 4 else (value - 1) / 4
     })
@@ -13,16 +11,19 @@ crime_attitudes <- function(survey, wave) {
     root_causes = average(c("timchld", "violtv", "schdisc")),
     policing = average(c("morecop", "copgun")),
     punishment = average(
-      c("punref", "stiffer", "morprsn", "refpris", "s_tough", "fewpris",
+      c(
+        "punref", "stiffer", "morprsn", "refpris", "s_tough", "fewpris",
         "pr_only", "outprsn", "comserv", "milserv", "train", "ptough",
         "life", "lifmean", "death"
       ),
-      reversed = c("refpris", "fewpris", "pr_only", "outprsn", "comserv",
+      reversed = c(
+        "refpris", "fewpris", "pr_only", "outprsn", "comserv",
         "train"
       )
     ),
     procedural_restrictions = average(
-      c("innglt", "copbend", "fewjury", "ctrules", "presum", "mentsil",
+      c(
+        "innglt", "copbend", "fewjury", "ctrules", "presum", "mentsil",
         "rtsil", "confess"
       ),
       reversed = c("rtsil", "confess")

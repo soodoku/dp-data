@@ -1,0 +1,4 @@
+sample,source_records,historical_observed,candidate_observed,value_changes,observed_to_missing,missing_to_observed
+attendee-outside-historical,1,1,1,0,0,0
+historical-299,299,299,298,141,1,0
+other-source-records,569,566,0,0,566,0

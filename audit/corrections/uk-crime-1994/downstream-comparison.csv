@@ -1,0 +1,1031 @@
+file,row,poll,issue_id,field,historical,candidate
+05_attitude_change_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,net_change,0.0245098039215686,0.0196078431372549
+05_attitude_change_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,gross_change,0.122549019607843,0.117647058823529
+05_attitude_change_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,net_change,0.0343137254901961,0.0686274509803922
+05_attitude_change_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,gross_change,0.122549019607843,0.107843137254902
+05_attitude_change_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,net_change,0.00694444444444444,0.0347222222222222
+05_attitude_change_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,net_change,0.0277777777777778,0.0147058823529412
+05_attitude_change_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,gross_change,0.0925925925925926,0.0833333333333333
+05_attitude_change_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,n_complete,18,17
+05_attitude_change_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,net_change,0.0416666666666667,0.046875
+05_attitude_change_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,gross_change,0.0833333333333333,0.109375
+05_attitude_change_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,net_change,0.0777777777777778,0.05
+05_attitude_change_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,gross_change,0.111111111111111,0.0833333333333333
+05_attitude_change_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,net_change,0.0111111111111111,0.025
+05_attitude_change_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,gross_change,0.0888888888888889,0.0638888888888889
+05_attitude_change_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,net_change,0.0138888888888889,0.0324074074074074
+05_attitude_change_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,gross_change,0.115740740740741,0.0972222222222222
+05_attitude_change_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,net_change,0.113636363636364,0.0984848484848485
+05_attitude_change_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,net_change,0,1.06752213906265e-17
+05_attitude_change_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,gross_change,0.102564102564103,0.0769230769230769
+05_attitude_change_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,net_change,0.0535714285714286,0.0357142857142857
+05_attitude_change_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,gross_change,0.0654761904761905,0.0595238095238095
+05_attitude_change_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,net_change,0.015625,0.0546875
+05_attitude_change_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,gross_change,0.119791666666667,0.1171875
+05_attitude_change_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,net_change,0.0637254901960784,0.0955882352941176
+05_attitude_change_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,gross_change,0.0931372549019608,0.144607843137255
+05_attitude_change_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,net_change,0.017156862745098,0.053921568627451
+05_attitude_change_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,gross_change,0.0857843137254902,0.122549019607843
+05_attitude_change_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,net_change,0.0641025641025641,0.0897435897435898
+05_attitude_change_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,gross_change,0.141025641025641,0.153846153846154
+05_attitude_change_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,net_change,0.0119047619047619,0.0416666666666667
+05_attitude_change_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,gross_change,0.119047619047619,0.125
+05_attitude_change_by_group_issue.csv,1426,UK Crime,ukcrime.rootcauset1,net_change,0.03125,0.0208333333333333
+05_attitude_change_by_group_issue.csv,1426,UK Crime,ukcrime.rootcauset1,gross_change,0.0833333333333333,0.0625
+05_attitude_change_by_group_issue.csv,1427,UK Crime,ukcrime.rootcauset1,net_change,0.0705128205128205,0.0641025641025641
+05_attitude_change_by_group_issue.csv,1427,UK Crime,ukcrime.rootcauset1,gross_change,0.108974358974359,0.115384615384615
+05_attitude_change_by_group_issue.csv,1428,UK Crime,ukcrime.rootcauset1,net_change,0.111111111111111,0.104166666666667
+05_attitude_change_by_group_issue.csv,1428,UK Crime,ukcrime.rootcauset1,gross_change,0.111111111111111,0.104166666666667
+05_attitude_change_by_group_issue.csv,1429,UK Crime,ukcrime.rootcauset1,net_change,0.0277777777777778,0.0333333333333333
+05_attitude_change_by_group_issue.csv,1429,UK Crime,ukcrime.rootcauset1,gross_change,0.0722222222222222,0.0777777777777778
+05_attitude_change_weighting.csv,1,,,net_change,0.0894143821147785,0.0894812466395489
+05_attitude_change_weighting.csv,1,,,gross_change,0.202664408086114,0.202657503617078
+05_attitude_change_weighting.csv,2,,,net_change,0.0979681839423997,0.0980517224922388
+05_attitude_change_weighting.csv,2,,,gross_change,0.207800615685705,0.207791989447313
+05_attitude_change_weighting.csv,3,,,net_change,0.0971775308713845,0.0972564946911134
+05_attitude_change_weighting.csv,3,,,gross_change,0.206418835549147,0.206410681700001
+04_table_4b_toward_lowed.csv,6,UK Crime,,extdis,-0.000932028190063915,-0.000900282158317867
+04_table_4b_toward_lowed.csv,6,UK Crime,,freqgrp,0.35,0.36
+04_table_4b_toward_lowed.csv,6,UK Crime,,extgrp,-0.0183237370358497,-0.0186049824448525
+04_table_4b_toward_lowed.csv,22,Pair Mean (Actual Pairs),,extdis,0.0302663342089476,0.0302676652794611
+04_table_4b_toward_lowed.csv,22,Pair Mean (Actual Pairs),,freqgrp,0.445283018867925,0.445702306079665
+04_table_4b_toward_lowed.csv,22,Pair Mean (Actual Pairs),,extgrp,-0.0100425158300427,-0.0100543080903783
+04_table_4b_toward_highed.csv,6,UK Crime,,extdis,0.0267382185109864,0.0270593464571143
+04_table_4b_toward_highed.csv,6,UK Crime,,freqgrp,0.62,0.61
+04_table_4b_toward_highed.csv,6,UK Crime,,extgrp,0.0183237370358497,0.0186049824448525
+04_table_4b_toward_highed.csv,22,Pair Mean (Actual Pairs),,extdis,0.0522512200628488,0.0522646901948173
+04_table_4b_toward_highed.csv,22,Pair Mean (Actual Pairs),,freqgrp,0.522851153039832,0.522431865828092
+04_table_4b_toward_highed.csv,22,Pair Mean (Actual Pairs),,extgrp,0.0100425158300427,0.0100543080903783
+05_corr_hom_pol.csv,1,,,homofreq,0.316119277344693,0.316093310626853
+05_corr_hom_pol.csv,1,,,polarex,0.718678489610433,0.719201100129823
+05_corr_hom_pol.csv,1,,,homoex,0.334717428684037,0.335748619283004
+05_corr_hom_pol.csv,2,,,polarfreq,0.316119277344693,0.316093310626853
+05_corr_hom_pol.csv,2,,,polarex,0.265806522267903,0.266450584580457
+05_corr_hom_pol.csv,2,,,homoex,0.718010863639284,0.71822925404378
+05_corr_hom_pol.csv,3,,,polarfreq,0.718678489610433,0.719201100129823
+05_corr_hom_pol.csv,3,,,homofreq,0.265806522267903,0.266450584580457
+05_corr_hom_pol.csv,3,,,homoex,0.404326693862184,0.405107613182167
+05_corr_hom_pol.csv,4,,,polarfreq,0.334717428684037,0.335748619283004
+05_corr_hom_pol.csv,4,,,homofreq,0.718010863639284,0.71822925404378
+05_corr_hom_pol.csv,4,,,polarex,0.404326693862184,0.405107613182167
+03_hom_pol_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,t2mean,0.848039215686274,0.879901960784314
+03_hom_pol_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,t2sd,0.0942592378579873,0.0831800060032025
+03_hom_pol_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.848039215686274,0.879901960784314
+03_hom_pol_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.0942592378579873,0.0831800060032025
+03_hom_pol_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,polarex,0.0637254901960784,0.0955882352941176
+03_hom_pol_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,homoex,0.0532278835472125,0.0643071154019973
+03_hom_pol_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,polar_abs,0.0637254901960784,0.0955882352941176
+03_hom_pol_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,polarex_cc,0.0637254901960784,0.0955882352941176
+03_hom_pol_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,homoex_cc,0.0532278835472125,0.0643071154019973
+03_hom_pol_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.0637254901960784,0.0955882352941176
+03_hom_pol_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,t2mean,0.852941176470588,0.848039215686274
+03_hom_pol_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,t2sd,0.1197850062087,0.13253437092741
+03_hom_pol_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.852941176470588,0.848039215686274
+03_hom_pol_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.1197850062087,0.13253437092741
+03_hom_pol_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,polarex,0.0245098039215685,0.0196078431372548
+03_hom_pol_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,homoex,0.0317997594390081,0.0190503947202986
+03_hom_pol_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,polar_abs,0.0245098039215685,0.0196078431372548
+03_hom_pol_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,polarex_cc,0.0245098039215685,0.0196078431372548
+03_hom_pol_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,homoex_cc,0.0317997594390081,0.0190503947202986
+03_hom_pol_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.0245098039215685,0.0196078431372548
+03_hom_pol_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,t2mean,0.843137254901961,0.877450980392157
+03_hom_pol_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,t2sd,0.117417054578466,0.106709167390758
+03_hom_pol_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.843137254901961,0.877450980392157
+03_hom_pol_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.117417054578466,0.106709167390758
+03_hom_pol_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,polarex,0.0343137254901961,0.0686274509803921
+03_hom_pol_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,homoex,0.13042905912605,0.141136946313757
+03_hom_pol_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,polar_abs,0.0343137254901961,0.0686274509803921
+03_hom_pol_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,polarex_cc,0.0343137254901961,0.0686274509803921
+03_hom_pol_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,homoex_cc,0.13042905912605,0.141136946313757
+03_hom_pol_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.0343137254901961,0.0686274509803921
+03_hom_pol_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,t2mean,0.827777777777778,0.8
+03_hom_pol_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,t2sd,0.138968231305465,0.140152977645347
+03_hom_pol_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.827777777777778,0.8
+03_hom_pol_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.138968231305465,0.140152977645347
+03_hom_pol_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,polarex,0.0777777777777777,0.05
+03_hom_pol_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,homoex,0.0306485168942372,0.0294637705543555
+03_hom_pol_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,polar_abs,0.0777777777777777,0.05
+03_hom_pol_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,polarex_cc,0.0777777777777777,0.05
+03_hom_pol_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,homoex_cc,0.0306485168942372,0.0294637705543555
+03_hom_pol_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.0777777777777777,0.05
+03_hom_pol_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,t2mean,0.796875,0.8359375
+03_hom_pol_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,t2sd,0.15205003440632,0.129519008686413
+03_hom_pol_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.796875,0.8359375
+03_hom_pol_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.15205003440632,0.129519008686413
+03_hom_pol_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,polarex,0.015625,0.0546875
+03_hom_pol_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,homoex,0.0606813211330781,0.0832123468529848
+03_hom_pol_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,polar_abs,0.015625,0.0546875
+03_hom_pol_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,polarex_cc,0.015625,0.0546875
+03_hom_pol_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,homoex_cc,0.0606813211330781,0.0832123468529848
+03_hom_pol_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.015625,0.0546875
+03_hom_pol_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,t2mean,0.851190476190476,0.833333333333333
+03_hom_pol_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,t2sd,0.127343717812943,0.126592420885458
+03_hom_pol_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.851190476190476,0.833333333333333
+03_hom_pol_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.127343717812943,0.126592420885458
+03_hom_pol_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,polarex,0.0535714285714286,0.0357142857142858
+03_hom_pol_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,homoex,0.0249685377642862,0.0257198346917709
+03_hom_pol_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,polar_abs,0.0535714285714286,0.0357142857142858
+03_hom_pol_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,polarex_cc,0.0535714285714286,0.0357142857142858
+03_hom_pol_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,homoex_cc,0.0249685377642862,0.0257198346917709
+03_hom_pol_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.0535714285714286,0.0357142857142858
+03_hom_pol_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,t2mean,0.803030303030303,0.787878787878788
+03_hom_pol_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,t2sd,0.0933387444318875,0.0940126791362944
+03_hom_pol_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.803030303030303,0.787878787878788
+03_hom_pol_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.0933387444318875,0.0940126791362944
+03_hom_pol_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,polarex,0.113636363636364,0.0984848484848484
+03_hom_pol_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,homoex,0.0970224221367531,0.0963484874323462
+03_hom_pol_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,polar_abs,0.113636363636364,0.0984848484848484
+03_hom_pol_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,polarex_cc,0.113636363636364,0.0984848484848484
+03_hom_pol_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,homoex_cc,0.0970224221367531,0.0963484874323462
+03_hom_pol_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.113636363636364,0.0984848484848484
+03_hom_pol_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,t2mean,0.814102564102564,0.83974358974359
+03_hom_pol_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,t2sd,0.144953082103817,0.138031541876147
+03_hom_pol_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.814102564102564,0.83974358974359
+03_hom_pol_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.144953082103817,0.138031541876147
+03_hom_pol_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,polarex,0.0641025641025641,0.0897435897435898
+03_hom_pol_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,homoex,0.0413859160211652,0.0483074562488354
+03_hom_pol_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,polar_abs,0.0641025641025641,0.0897435897435898
+03_hom_pol_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,polarex_cc,0.0641025641025641,0.0897435897435898
+03_hom_pol_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,homoex_cc,0.0413859160211652,0.0483074562488354
+03_hom_pol_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.0641025641025641,0.0897435897435898
+03_hom_pol_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,t2mean,0.84375,0.848958333333333
+03_hom_pol_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,t2sd,0.117359056523764,0.136824942224782
+03_hom_pol_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.84375,0.848958333333333
+03_hom_pol_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.117359056523764,0.136824942224782
+03_hom_pol_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,polarex,0.0416666666666666,0.046875
+03_hom_pol_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,homoex,0.0544370112103047,0.0349711255092877
+03_hom_pol_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,polar_abs,0.0416666666666666,0.046875
+03_hom_pol_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,polarex_cc,0.0416666666666666,0.046875
+03_hom_pol_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,homoex_cc,0.0544370112103047,0.0349711255092877
+03_hom_pol_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.0416666666666666,0.046875
+03_hom_pol_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,t2mean,0.844444444444444,0.858333333333333
+03_hom_pol_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,t2sd,0.166269367730507,0.147566234792359
+03_hom_pol_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.844444444444444,0.858333333333333
+03_hom_pol_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.166269367730507,0.147566234792359
+03_hom_pol_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,polarex,0.0111111111111111,0.0249999999999999
+03_hom_pol_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,homoex,0.0354100887706525,0.0541132217088006
+03_hom_pol_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,polar_abs,0.0111111111111111,0.0249999999999999
+03_hom_pol_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,polarex_cc,0.0111111111111111,0.0249999999999999
+03_hom_pol_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,homoex_cc,0.0354100887706525,0.0541132217088006
+03_hom_pol_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.0111111111111111,0.0249999999999999
+03_hom_pol_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,t2mean,0.800925925925926,0.784313725490196
+03_hom_pol_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,t2sd,0.181088955700074,0.184133725205813
+03_hom_pol_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,n_t2,18,17
+03_hom_pol_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,n_complete,18,17
+03_hom_pol_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,t1mean_cc,0.773148148148148,0.769607843137255
+03_hom_pol_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.800925925925926,0.784313725490196
+03_hom_pol_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,t1sd_cc,0.139459611705406,0.142915487618757
+03_hom_pol_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.181088955700074,0.184133725205813
+03_hom_pol_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,polarex,0.0277777777777778,0.0111655773420479
+03_hom_pol_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,homoex,-0.041629343994668,-0.0446741135004076
+03_hom_pol_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,polar_abs,0.0277777777777778,0.0111655773420479
+03_hom_pol_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,polarex_cc,0.0277777777777778,0.0147058823529411
+03_hom_pol_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,homoex_cc,-0.041629343994668,-0.0412182375870559
+03_hom_pol_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.0277777777777778,0.0147058823529411
+03_hom_pol_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,t2mean,0.855555555555556,0.861111111111111
+03_hom_pol_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,t2sd,0.165071733645338,0.143187448830704
+03_hom_pol_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.855555555555556,0.861111111111111
+03_hom_pol_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.165071733645338,0.143187448830704
+03_hom_pol_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,polarex,0.0277777777777778,0.0333333333333334
+03_hom_pol_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,homoex,-0.0297199482115804,-0.007835663396947
+03_hom_pol_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,polar_abs,0.0277777777777778,0.0333333333333334
+03_hom_pol_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,polarex_cc,0.0277777777777778,0.0333333333333334
+03_hom_pol_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,homoex_cc,-0.0297199482115804,-0.007835663396947
+03_hom_pol_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.0277777777777778,0.0333333333333334
+03_hom_pol_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,t2mean,0.826388888888889,0.868055555555556
+03_hom_pol_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,t2sd,0.148470031212869,0.109281014212626
+03_hom_pol_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.826388888888889,0.868055555555556
+03_hom_pol_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.148470031212869,0.109281014212626
+03_hom_pol_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,polarex,-0.00694444444444453,0.0347222222222222
+03_hom_pol_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,homoex,0.0104404003280635,0.0496294173283065
+03_hom_pol_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,polarfreq,FALSE,TRUE
+03_hom_pol_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,polar_abs,-0.00694444444444453,0.0347222222222222
+03_hom_pol_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,polarex_cc,-0.00694444444444453,0.0347222222222222
+03_hom_pol_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,homoex_cc,0.0104404003280635,0.0496294173283065
+03_hom_pol_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,polarfreq_cc,FALSE,TRUE
+03_hom_pol_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,polar_abs_cc,-0.00694444444444453,0.0347222222222222
+03_hom_pol_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,t2mean,0.782407407407407,0.800925925925926
+03_hom_pol_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,t2sd,0.148903642815962,0.111213188405135
+03_hom_pol_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.782407407407407,0.800925925925926
+03_hom_pol_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.148903642815962,0.111213188405135
+03_hom_pol_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,polarex,0.013888888888889,0.0324074074074074
+03_hom_pol_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,homoex,0.0191191622897281,0.0568096167005549
+03_hom_pol_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,polar_abs,0.013888888888889,0.0324074074074074
+03_hom_pol_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,polarex_cc,0.013888888888889,0.0324074074074074
+03_hom_pol_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,homoex_cc,0.0191191622897281,0.0568096167005549
+03_hom_pol_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.013888888888889,0.0324074074074074
+03_hom_pol_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,t2mean,0.776041666666667,0.765625
+03_hom_pol_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,t2sd,0.176694835280533,0.19297560294849
+03_hom_pol_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.776041666666667,0.765625
+03_hom_pol_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.176694835280533,0.19297560294849
+03_hom_pol_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,polarex,0.03125,0.0208333333333334
+03_hom_pol_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,homoex,0.0144729938353743,-0.00180777383258249
+03_hom_pol_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,homofreq,TRUE,FALSE
+03_hom_pol_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,polar_abs,0.03125,0.0208333333333334
+03_hom_pol_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,polarex_cc,0.03125,0.0208333333333334
+03_hom_pol_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,homoex_cc,0.0144729938353743,-0.00180777383258249
+03_hom_pol_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,homofreq_cc,TRUE,FALSE
+03_hom_pol_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.03125,0.0208333333333334
+03_hom_pol_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,t2mean,0.909722222222222,0.902777777777778
+03_hom_pol_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,t2sd,0.120281306081172,0.122233700103848
+03_hom_pol_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.909722222222222,0.902777777777778
+03_hom_pol_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.120281306081172,0.122233700103848
+03_hom_pol_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,polarex,0.111111111111111,0.104166666666667
+03_hom_pol_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,homoex,0.0364624424180989,0.0345100483954229
+03_hom_pol_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,polar_abs,0.111111111111111,0.104166666666667
+03_hom_pol_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,polarex_cc,0.111111111111111,0.104166666666667
+03_hom_pol_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,homoex_cc,0.0364624424180989,0.0345100483954229
+03_hom_pol_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.111111111111111,0.104166666666667
+03_hom_pol_by_group_issue.csv,1426,UK Crime,ukcrime.rootcauset1,t2sd,0.131084127311618,0.0952953124828109
+03_hom_pol_by_group_issue.csv,1426,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.131084127311618,0.0952953124828109
+03_hom_pol_by_group_issue.csv,1426,UK Crime,ukcrime.rootcauset1,homoex,-0.0139908900567438,0.0217979247720631
+03_hom_pol_by_group_issue.csv,1426,UK Crime,ukcrime.rootcauset1,homofreq,FALSE,TRUE
+03_hom_pol_by_group_issue.csv,1426,UK Crime,ukcrime.rootcauset1,homoex_cc,-0.0139908900567438,0.0217979247720631
+03_hom_pol_by_group_issue.csv,1426,UK Crime,ukcrime.rootcauset1,homofreq_cc,FALSE,TRUE
+03_hom_pol_by_group_issue.csv,1427,UK Crime,ukcrime.rootcauset1,t2mean,0.791666666666667,0.82843137254902
+03_hom_pol_by_group_issue.csv,1427,UK Crime,ukcrime.rootcauset1,t2sd,0.215501675683096,0.157207036380633
+03_hom_pol_by_group_issue.csv,1427,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.791666666666667,0.82843137254902
+03_hom_pol_by_group_issue.csv,1427,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.215501675683096,0.157207036380633
+03_hom_pol_by_group_issue.csv,1427,UK Crime,ukcrime.rootcauset1,polarex,0.017156862745098,0.0539215686274509
+03_hom_pol_by_group_issue.csv,1427,UK Crime,ukcrime.rootcauset1,homoex,0.0160478785778255,0.0743425178802883
+03_hom_pol_by_group_issue.csv,1427,UK Crime,ukcrime.rootcauset1,polar_abs,0.017156862745098,0.0539215686274509
+03_hom_pol_by_group_issue.csv,1427,UK Crime,ukcrime.rootcauset1,polarex_cc,0.017156862745098,0.0539215686274509
+03_hom_pol_by_group_issue.csv,1427,UK Crime,ukcrime.rootcauset1,homoex_cc,0.0160478785778255,0.0743425178802883
+03_hom_pol_by_group_issue.csv,1427,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.017156862745098,0.0539215686274509
+03_hom_pol_by_group_issue.csv,1428,UK Crime,ukcrime.rootcauset1,t2mean,0.814102564102564,0.807692307692308
+03_hom_pol_by_group_issue.csv,1428,UK Crime,ukcrime.rootcauset1,t2sd,0.173984640904464,0.174750534441956
+03_hom_pol_by_group_issue.csv,1428,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.814102564102564,0.807692307692308
+03_hom_pol_by_group_issue.csv,1428,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.173984640904464,0.174750534441956
+03_hom_pol_by_group_issue.csv,1428,UK Crime,ukcrime.rootcauset1,polarex,0.0705128205128205,0.0641025641025641
+03_hom_pol_by_group_issue.csv,1428,UK Crime,ukcrime.rootcauset1,homoex,0.0286071834455016,0.0278412899080095
+03_hom_pol_by_group_issue.csv,1428,UK Crime,ukcrime.rootcauset1,polar_abs,0.0705128205128205,0.0641025641025641
+03_hom_pol_by_group_issue.csv,1428,UK Crime,ukcrime.rootcauset1,polarex_cc,0.0705128205128205,0.0641025641025641
+03_hom_pol_by_group_issue.csv,1428,UK Crime,ukcrime.rootcauset1,homoex_cc,0.0286071834455016,0.0278412899080095
+03_hom_pol_by_group_issue.csv,1428,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.0705128205128205,0.0641025641025641
+03_hom_pol_by_group_issue.csv,1429,UK Crime,ukcrime.rootcauset1,t2mean,0.803571428571429,0.833333333333333
+03_hom_pol_by_group_issue.csv,1429,UK Crime,ukcrime.rootcauset1,t2sd,0.165402716447036,0.122299897617557
+03_hom_pol_by_group_issue.csv,1429,UK Crime,ukcrime.rootcauset1,t2mean_cc,0.803571428571429,0.833333333333333
+03_hom_pol_by_group_issue.csv,1429,UK Crime,ukcrime.rootcauset1,t2sd_cc,0.165402716447036,0.122299897617557
+03_hom_pol_by_group_issue.csv,1429,UK Crime,ukcrime.rootcauset1,polarex,0.011904761904762,0.0416666666666667
+03_hom_pol_by_group_issue.csv,1429,UK Crime,ukcrime.rootcauset1,homoex,-0.0238680871789616,0.0192347316505173
+03_hom_pol_by_group_issue.csv,1429,UK Crime,ukcrime.rootcauset1,homofreq,FALSE,TRUE
+03_hom_pol_by_group_issue.csv,1429,UK Crime,ukcrime.rootcauset1,polar_abs,0.011904761904762,0.0416666666666667
+03_hom_pol_by_group_issue.csv,1429,UK Crime,ukcrime.rootcauset1,polarex_cc,0.011904761904762,0.0416666666666667
+03_hom_pol_by_group_issue.csv,1429,UK Crime,ukcrime.rootcauset1,homoex_cc,-0.0238680871789616,0.0192347316505173
+03_hom_pol_by_group_issue.csv,1429,UK Crime,ukcrime.rootcauset1,homofreq_cc,FALSE,TRUE
+03_hom_pol_by_group_issue.csv,1429,UK Crime,ukcrime.rootcauset1,polar_abs_cc,0.011904761904762,0.0416666666666667
+04_table_4a_toward_female.csv,6,UK Crime,,freqdis,0.535353535353535,0.525252525252525
+04_table_4a_toward_female.csv,6,UK Crime,,extdis,0.00678832922968679,0.00525222504206745
+04_table_4a_toward_female.csv,6,UK Crime,,freqgrp,0.474747474747475,0.464646464646465
+04_table_4a_toward_female.csv,6,UK Crime,,extgrp,-0.00185506579356449,-0.00360822205968123
+04_table_4a_toward_female.csv,22,Pair Mean (Actual Pairs),,freqdis,0.573891625615764,0.573481116584565
+04_table_4a_toward_female.csv,22,Pair Mean (Actual Pairs),,extdis,0.036747879700484,0.0366854518209379
+04_table_4a_toward_female.csv,22,Pair Mean (Actual Pairs),,freqgrp,0.497947454844007,0.497536945812808
+04_table_4a_toward_female.csv,22,Pair Mean (Actual Pairs),,extgrp,-0.00175429996189789,-0.00182554892345188
+05_attitude_change.csv,1,,,estimate,0.0894143821147785,0.0894812466395489
+05_attitude_change.csv,2,,,estimate,0.202664408086114,0.202657503617078
+02_table_2_hom_pol.csv,6,UK Crime,,homofreq,0.52,0.53
+02_table_2_hom_pol.csv,6,UK Crime,,homoex,-6.75536022110623e-05,0.00243771027623169
+02_table_2_hom_pol.csv,6,UK Crime,,polarfreq,0.43,0.44
+02_table_2_hom_pol.csv,6,UK Crime,,polarex,-0.0100869273702585,-0.00832520131717216
+02_table_2_hom_pol.csv,22,Pair Mean (Actual Pairs),,homofreq,0.585887096774194,0.586290322580645
+02_table_2_hom_pol.csv,22,Pair Mean (Actual Pairs),,homoex,0.0128493544739576,0.0129503731787336
+02_table_2_hom_pol.csv,22,Pair Mean (Actual Pairs),,polarfreq,0.439325380501851,0.439736733854381
+02_table_2_hom_pol.csv,22,Pair Mean (Actual Pairs),,polarex,-0.022210725585489,-0.0221382563936714
+03_dom_gender_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,dis_t2,0.8125,0.833333333333333
+03_dom_gender_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,adv_t2,0.87962962962963,0.921296296296296
+03_dom_gender_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,grp_t2,0.848039215686274,0.879901960784314
+03_dom_gender_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_grp,0.0637254901960784,0.0955882352941176
+03_dom_gender_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_dis,0.0729166666666666,0.09375
+03_dom_gender_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.0637254901960784,-0.0955882352941176
+03_dom_gender_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.0555555555555556,-0.0972222222222222
+03_dom_gender_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_adv,0.0555555555555556,0.0972222222222222
+03_dom_gender_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.8125,0.833333333333333
+03_dom_gender_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.87962962962963,0.921296296296296
+03_dom_gender_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.848039215686274,0.879901960784314
+03_dom_gender_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.0637254901960784,0.0955882352941176
+03_dom_gender_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.0729166666666666,0.09375
+03_dom_gender_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.0637254901960784,-0.0955882352941176
+03_dom_gender_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.0555555555555556,-0.0972222222222222
+03_dom_gender_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.0555555555555556,0.0972222222222222
+03_dom_gender_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,dis_t2,0.833333333333333,0.814814814814815
+03_dom_gender_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,adv_t2,0.875,0.885416666666667
+03_dom_gender_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,grp_t2,0.852941176470588,0.848039215686274
+03_dom_gender_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_grp,0.0245098039215685,0.0196078431372548
+03_dom_gender_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_dis,0.0092592592592593,-0.0092592592592593
+03_dom_gender_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.0245098039215685,-0.0196078431372548
+03_dom_gender_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.0416666666666666,-0.0520833333333333
+03_dom_gender_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_adv,0.0416666666666666,0.0520833333333333
+03_dom_gender_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.833333333333333,0.814814814814815
+03_dom_gender_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.875,0.885416666666667
+03_dom_gender_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.852941176470588,0.848039215686274
+03_dom_gender_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.0245098039215685,0.0196078431372548
+03_dom_gender_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.0092592592592593,-0.0092592592592593
+03_dom_gender_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.0245098039215685,-0.0196078431372548
+03_dom_gender_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.0416666666666666,-0.0520833333333333
+03_dom_gender_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.0416666666666666,0.0520833333333333
+03_dom_gender_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,freqdis_grp,TRUE,FALSE
+03_dom_gender_by_group_issue.csv,1408,UK Crime,ukcrime.rootcauset1,dis_t2,0.87962962962963,0.916666666666667
+03_dom_gender_by_group_issue.csv,1408,UK Crime,ukcrime.rootcauset1,adv_t2,0.802083333333333,0.833333333333333
+03_dom_gender_by_group_issue.csv,1408,UK Crime,ukcrime.rootcauset1,grp_t2,0.843137254901961,0.877450980392157
+03_dom_gender_by_group_issue.csv,1408,UK Crime,ukcrime.rootcauset1,ext_grp,-0.0343137254901961,-0.0686274509803921
+03_dom_gender_by_group_issue.csv,1408,UK Crime,ukcrime.rootcauset1,ext_dis,-0.0277777777777778,-0.0648148148148148
+03_dom_gender_by_group_issue.csv,1408,UK Crime,ukcrime.rootcauset1,ext_grp_mir,0.0343137254901961,0.0686274509803921
+03_dom_gender_by_group_issue.csv,1408,UK Crime,ukcrime.rootcauset1,ext_adv_mir,0.0416666666666667,0.0729166666666667
+03_dom_gender_by_group_issue.csv,1408,UK Crime,ukcrime.rootcauset1,ext_adv,-0.0416666666666667,-0.0729166666666667
+03_dom_gender_by_group_issue.csv,1408,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.87962962962963,0.916666666666667
+03_dom_gender_by_group_issue.csv,1408,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.802083333333333,0.833333333333333
+03_dom_gender_by_group_issue.csv,1408,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.843137254901961,0.877450980392157
+03_dom_gender_by_group_issue.csv,1408,UK Crime,ukcrime.rootcauset1,ext_grp_paired,-0.0343137254901961,-0.0686274509803921
+03_dom_gender_by_group_issue.csv,1408,UK Crime,ukcrime.rootcauset1,ext_dis_paired,-0.0277777777777778,-0.0648148148148148
+03_dom_gender_by_group_issue.csv,1408,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,0.0343137254901961,0.0686274509803921
+03_dom_gender_by_group_issue.csv,1408,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,0.0416666666666667,0.0729166666666667
+03_dom_gender_by_group_issue.csv,1408,UK Crime,ukcrime.rootcauset1,ext_adv_paired,-0.0416666666666667,-0.0729166666666667
+03_dom_gender_by_group_issue.csv,1409,UK Crime,ukcrime.rootcauset1,adv_t2,0.85,0.808333333333333
+03_dom_gender_by_group_issue.csv,1409,UK Crime,ukcrime.rootcauset1,grp_t2,0.827777777777778,0.8
+03_dom_gender_by_group_issue.csv,1409,UK Crime,ukcrime.rootcauset1,ext_grp,0.0777777777777777,0.05
+03_dom_gender_by_group_issue.csv,1409,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.0777777777777777,-0.05
+03_dom_gender_by_group_issue.csv,1409,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.0666666666666667,-0.025
+03_dom_gender_by_group_issue.csv,1409,UK Crime,ukcrime.rootcauset1,ext_adv,0.0666666666666667,0.025
+03_dom_gender_by_group_issue.csv,1409,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.85,0.808333333333333
+03_dom_gender_by_group_issue.csv,1409,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.827777777777778,0.8
+03_dom_gender_by_group_issue.csv,1409,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.0777777777777777,0.05
+03_dom_gender_by_group_issue.csv,1409,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.0777777777777777,-0.05
+03_dom_gender_by_group_issue.csv,1409,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.0666666666666667,-0.025
+03_dom_gender_by_group_issue.csv,1409,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.0666666666666667,0.025
+03_dom_gender_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,dis_t2,0.777777777777778,0.819444444444444
+03_dom_gender_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,adv_t2,0.821428571428571,0.857142857142857
+03_dom_gender_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,grp_t2,0.796875,0.8359375
+03_dom_gender_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,ext_grp,0.015625,0.0546875
+03_dom_gender_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,ext_dis,0.0185185185185185,0.0601851851851851
+03_dom_gender_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.015625,-0.0546875
+03_dom_gender_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.0119047619047619,-0.0476190476190476
+03_dom_gender_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,ext_adv,0.0119047619047619,0.0476190476190476
+03_dom_gender_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.777777777777778,0.819444444444444
+03_dom_gender_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.821428571428571,0.857142857142857
+03_dom_gender_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.796875,0.8359375
+03_dom_gender_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.015625,0.0546875
+03_dom_gender_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.0185185185185185,0.0601851851851851
+03_dom_gender_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.015625,-0.0546875
+03_dom_gender_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.0119047619047619,-0.0476190476190476
+03_dom_gender_by_group_issue.csv,1410,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.0119047619047619,0.0476190476190476
+03_dom_gender_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,dis_t2,0.885416666666667,0.864583333333333
+03_dom_gender_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,adv_t2,0.805555555555556,0.791666666666667
+03_dom_gender_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,grp_t2,0.851190476190476,0.833333333333333
+03_dom_gender_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,ext_grp,-0.0535714285714286,-0.0357142857142858
+03_dom_gender_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,ext_dis,-0.0729166666666666,-0.0520833333333334
+03_dom_gender_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,ext_grp_mir,0.0535714285714286,0.0357142857142858
+03_dom_gender_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,ext_adv_mir,0.0277777777777778,0.0138888888888888
+03_dom_gender_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,ext_adv,-0.0277777777777778,-0.0138888888888888
+03_dom_gender_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.885416666666667,0.864583333333333
+03_dom_gender_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.805555555555556,0.791666666666667
+03_dom_gender_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.851190476190476,0.833333333333333
+03_dom_gender_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,ext_grp_paired,-0.0535714285714286,-0.0357142857142858
+03_dom_gender_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,ext_dis_paired,-0.0729166666666666,-0.0520833333333334
+03_dom_gender_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,0.0535714285714286,0.0357142857142858
+03_dom_gender_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,0.0277777777777778,0.0138888888888888
+03_dom_gender_by_group_issue.csv,1411,UK Crime,ukcrime.rootcauset1,ext_adv_paired,-0.0277777777777778,-0.0138888888888888
+03_dom_gender_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,dis_t2,0.833333333333333,0.816666666666667
+03_dom_gender_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,adv_t2,0.777777777777778,0.763888888888889
+03_dom_gender_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,grp_t2,0.803030303030303,0.787878787878788
+03_dom_gender_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,ext_grp,-0.113636363636364,-0.0984848484848484
+03_dom_gender_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,ext_dis,-0.0666666666666668,-0.05
+03_dom_gender_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,ext_grp_mir,0.113636363636364,0.0984848484848484
+03_dom_gender_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,ext_adv_mir,0.152777777777778,0.138888888888889
+03_dom_gender_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,ext_adv,-0.152777777777778,-0.138888888888889
+03_dom_gender_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.833333333333333,0.816666666666667
+03_dom_gender_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.777777777777778,0.763888888888889
+03_dom_gender_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.803030303030303,0.787878787878788
+03_dom_gender_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,ext_grp_paired,-0.113636363636364,-0.0984848484848484
+03_dom_gender_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,ext_dis_paired,-0.0666666666666668,-0.05
+03_dom_gender_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,0.113636363636364,0.0984848484848484
+03_dom_gender_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,0.152777777777778,0.138888888888889
+03_dom_gender_by_group_issue.csv,1412,UK Crime,ukcrime.rootcauset1,ext_adv_paired,-0.152777777777778,-0.138888888888889
+03_dom_gender_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,adv_t2,0.875,0.916666666666667
+03_dom_gender_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,grp_t2,0.814102564102564,0.83974358974359
+03_dom_gender_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,ext_grp,0.0641025641025641,0.0897435897435898
+03_dom_gender_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.0641025641025641,-0.0897435897435898
+03_dom_gender_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.0625,-0.104166666666667
+03_dom_gender_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,ext_adv,0.0625,0.104166666666667
+03_dom_gender_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.875,0.916666666666667
+03_dom_gender_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.814102564102564,0.83974358974359
+03_dom_gender_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.0641025641025641,0.0897435897435898
+03_dom_gender_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.0641025641025641,-0.0897435897435898
+03_dom_gender_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.0625,-0.104166666666667
+03_dom_gender_by_group_issue.csv,1413,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.0625,0.104166666666667
+03_dom_gender_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,dis_t2,0.825,0.841666666666667
+03_dom_gender_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,adv_t2,0.875,0.861111111111111
+03_dom_gender_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,grp_t2,0.84375,0.848958333333333
+03_dom_gender_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,ext_grp,0.0416666666666666,0.046875
+03_dom_gender_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,ext_dis,0.075,0.0916666666666667
+03_dom_gender_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.0416666666666666,-0.046875
+03_dom_gender_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,ext_adv_mir,0.0138888888888888,0.0277777777777777
+03_dom_gender_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,ext_adv,-0.0138888888888888,-0.0277777777777777
+03_dom_gender_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.825,0.841666666666667
+03_dom_gender_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.875,0.861111111111111
+03_dom_gender_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.84375,0.848958333333333
+03_dom_gender_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.0416666666666666,0.046875
+03_dom_gender_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.075,0.0916666666666667
+03_dom_gender_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.0416666666666666,-0.046875
+03_dom_gender_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,0.0138888888888888,0.0277777777777777
+03_dom_gender_by_group_issue.csv,1414,UK Crime,ukcrime.rootcauset1,ext_adv_paired,-0.0138888888888888,-0.0277777777777777
+03_dom_gender_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,dis_t2,0.75,0.755952380952381
+03_dom_gender_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,adv_t2,0.927083333333333,0.947916666666667
+03_dom_gender_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,grp_t2,0.844444444444444,0.858333333333333
+03_dom_gender_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,ext_grp,0.0111111111111111,0.0249999999999999
+03_dom_gender_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,ext_dis,-0.0119047619047619,-0.00595238095238093
+03_dom_gender_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.0111111111111111,-0.0249999999999999
+03_dom_gender_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.0312499999999999,-0.0520833333333333
+03_dom_gender_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,ext_adv,0.0312499999999999,0.0520833333333333
+03_dom_gender_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.75,0.755952380952381
+03_dom_gender_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.927083333333333,0.947916666666667
+03_dom_gender_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.844444444444444,0.858333333333333
+03_dom_gender_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.0111111111111111,0.0249999999999999
+03_dom_gender_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,ext_dis_paired,-0.0119047619047619,-0.00595238095238093
+03_dom_gender_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.0111111111111111,-0.0249999999999999
+03_dom_gender_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.0312499999999999,-0.0520833333333333
+03_dom_gender_by_group_issue.csv,1415,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.0312499999999999,0.0520833333333333
+03_dom_gender_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,adv_t2,0.856060606060606,0.833333333333333
+03_dom_gender_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,grp_t2,0.800925925925926,0.784313725490196
+03_dom_gender_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,ext_grp,0.0277777777777778,0.0111655773420479
+03_dom_gender_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.0277777777777778,-0.0111655773420479
+03_dom_gender_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.0606060606060607,-0.037878787878788
+03_dom_gender_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,ext_adv,0.0606060606060607,0.037878787878788
+03_dom_gender_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,adv_t1_paired,0.795454545454545,0.791666666666667
+03_dom_gender_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.856060606060606,0.833333333333333
+03_dom_gender_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,grp_t1_paired,0.773148148148148,0.769607843137255
+03_dom_gender_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.800925925925926,0.784313725490196
+03_dom_gender_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,disadvantaged_share_paired,0.388888888888889,0.411764705882353
+03_dom_gender_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,n_eligible_paired,18,17
+03_dom_gender_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.0277777777777778,0.0147058823529411
+03_dom_gender_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.0277777777777778,-0.0147058823529411
+03_dom_gender_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.0606060606060607,-0.0416666666666667
+03_dom_gender_by_group_issue.csv,1416,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.0606060606060607,0.0416666666666667
+03_dom_gender_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,adv_t2,0.958333333333333,0.972222222222222
+03_dom_gender_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,grp_t2,0.855555555555556,0.861111111111111
+03_dom_gender_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,ext_grp,0.0277777777777778,0.0333333333333334
+03_dom_gender_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,ext_dis,0.0185185185185185,0.0185185185185186
+03_dom_gender_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.0277777777777778,-0.0333333333333334
+03_dom_gender_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.0416666666666667,-0.0555555555555556
+03_dom_gender_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,ext_adv,0.0416666666666667,0.0555555555555556
+03_dom_gender_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.958333333333333,0.972222222222222
+03_dom_gender_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.855555555555556,0.861111111111111
+03_dom_gender_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.0277777777777778,0.0333333333333334
+03_dom_gender_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.0185185185185185,0.0185185185185186
+03_dom_gender_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.0277777777777778,-0.0333333333333334
+03_dom_gender_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.0416666666666667,-0.0555555555555556
+03_dom_gender_by_group_issue.csv,1417,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.0416666666666667,0.0555555555555556
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,dis_t2,0.666666666666667,0.75
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,adv_t2,0.87962962962963,0.907407407407407
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,grp_t2,0.826388888888889,0.868055555555556
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,ext_grp,-0.00694444444444453,0.0347222222222222
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,ext_dis,-0.0555555555555555,0.0277777777777778
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,ext_grp_mir,0.00694444444444453,-0.0347222222222222
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.0092592592592593,-0.0370370370370371
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,ext_adv,0.0092592592592593,0.0370370370370371
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.666666666666667,0.75
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.87962962962963,0.907407407407407
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.826388888888889,0.868055555555556
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,ext_grp_paired,-0.00694444444444453,0.0347222222222222
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,ext_dis_paired,-0.0555555555555555,0.0277777777777778
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,0.00694444444444453,-0.0347222222222222
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.0092592592592593,-0.0370370370370371
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.0092592592592593,0.0370370370370371
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,freqgrp_grp,FALSE,TRUE
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,freqdis_grp,FALSE,TRUE
+03_dom_gender_by_group_issue.csv,1418,UK Crime,ukcrime.rootcauset1,freqgrp_mir,TRUE,FALSE
+03_dom_gender_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,dis_t2,0.763888888888889,0.75
+03_dom_gender_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,adv_t2,0.791666666666667,0.826388888888889
+03_dom_gender_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,grp_t2,0.782407407407407,0.800925925925926
+03_dom_gender_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,ext_grp,0.013888888888889,0.0324074074074074
+03_dom_gender_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,ext_dis,0.0277777777777778,0.0138888888888888
+03_dom_gender_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.013888888888889,-0.0324074074074074
+03_dom_gender_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.00694444444444442,-0.0416666666666666
+03_dom_gender_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,ext_adv,0.00694444444444442,0.0416666666666666
+03_dom_gender_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.763888888888889,0.75
+03_dom_gender_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.791666666666667,0.826388888888889
+03_dom_gender_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.782407407407407,0.800925925925926
+03_dom_gender_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.013888888888889,0.0324074074074074
+03_dom_gender_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.0277777777777778,0.0138888888888888
+03_dom_gender_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.013888888888889,-0.0324074074074074
+03_dom_gender_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.00694444444444442,-0.0416666666666666
+03_dom_gender_by_group_issue.csv,1419,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.00694444444444442,0.0416666666666666
+03_dom_gender_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,dis_t2,0.712121212121212,0.704545454545455
+03_dom_gender_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,adv_t2,0.916666666666667,0.9
+03_dom_gender_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,grp_t2,0.776041666666667,0.765625
+03_dom_gender_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,ext_grp,0.03125,0.0208333333333334
+03_dom_gender_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,ext_dis,0.0227272727272727,0.0151515151515151
+03_dom_gender_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.03125,-0.0208333333333334
+03_dom_gender_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.0499999999999999,-0.0333333333333333
+03_dom_gender_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,ext_adv,0.0499999999999999,0.0333333333333333
+03_dom_gender_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.712121212121212,0.704545454545455
+03_dom_gender_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.916666666666667,0.9
+03_dom_gender_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.776041666666667,0.765625
+03_dom_gender_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.03125,0.0208333333333334
+03_dom_gender_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.0227272727272727,0.0151515151515151
+03_dom_gender_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.03125,-0.0208333333333334
+03_dom_gender_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.0499999999999999,-0.0333333333333333
+03_dom_gender_by_group_issue.csv,1420,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.0499999999999999,0.0333333333333333
+03_dom_gender_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,dis_t2,0.880952380952381,0.869047619047619
+03_dom_gender_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,grp_t2,0.909722222222222,0.902777777777778
+03_dom_gender_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,ext_grp,0.111111111111111,0.104166666666667
+03_dom_gender_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,ext_dis,0.130952380952381,0.119047619047619
+03_dom_gender_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.111111111111111,-0.104166666666667
+03_dom_gender_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.880952380952381,0.869047619047619
+03_dom_gender_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.909722222222222,0.902777777777778
+03_dom_gender_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.111111111111111,0.104166666666667
+03_dom_gender_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.130952380952381,0.119047619047619
+03_dom_gender_by_group_issue.csv,1421,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.111111111111111,-0.104166666666667
+03_dom_gender_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,dis_t2,0.763888888888889,0.791666666666667
+03_dom_gender_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,adv_t2,0.916666666666667,0.892857142857143
+03_dom_gender_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,ext_dis,0.0972222222222223,0.0694444444444444
+03_dom_gender_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,ext_adv_mir,0.0833333333333333,0.0595238095238095
+03_dom_gender_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,ext_adv,-0.0833333333333333,-0.0595238095238095
+03_dom_gender_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.763888888888889,0.791666666666667
+03_dom_gender_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.916666666666667,0.892857142857143
+03_dom_gender_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.0972222222222223,0.0694444444444444
+03_dom_gender_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,0.0833333333333333,0.0595238095238095
+03_dom_gender_by_group_issue.csv,1422,UK Crime,ukcrime.rootcauset1,ext_adv_paired,-0.0833333333333333,-0.0595238095238095
+03_dom_gender_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,dis_t2,0.69047619047619,0.785714285714286
+03_dom_gender_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,adv_t2,0.8625,0.858333333333333
+03_dom_gender_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,grp_t2,0.791666666666667,0.82843137254902
+03_dom_gender_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,ext_grp,0.017156862745098,0.0539215686274509
+03_dom_gender_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,ext_dis,-0.0357142857142857,0.0595238095238095
+03_dom_gender_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.017156862745098,-0.0539215686274509
+03_dom_gender_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.0541666666666667,-0.05
+03_dom_gender_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,ext_adv,0.0541666666666667,0.05
+03_dom_gender_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.69047619047619,0.785714285714286
+03_dom_gender_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.8625,0.858333333333333
+03_dom_gender_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.791666666666667,0.82843137254902
+03_dom_gender_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.017156862745098,0.0539215686274509
+03_dom_gender_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,ext_dis_paired,-0.0357142857142857,0.0595238095238095
+03_dom_gender_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.017156862745098,-0.0539215686274509
+03_dom_gender_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.0541666666666667,-0.05
+03_dom_gender_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.0541666666666667,0.05
+03_dom_gender_by_group_issue.csv,1423,UK Crime,ukcrime.rootcauset1,freqdis_grp,FALSE,TRUE
+03_dom_gender_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,dis_t2,0.777777777777778,0.759259259259259
+03_dom_gender_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,adv_t2,0.895833333333333,0.916666666666667
+03_dom_gender_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,grp_t2,0.814102564102564,0.807692307692308
+03_dom_gender_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,ext_grp,0.0705128205128205,0.0641025641025641
+03_dom_gender_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,ext_dis,0.111111111111111,0.0925925925925927
+03_dom_gender_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.0705128205128205,-0.0641025641025641
+03_dom_gender_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,ext_adv_mir,0.0208333333333334,0
+03_dom_gender_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,ext_adv,-0.0208333333333334,0
+03_dom_gender_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.777777777777778,0.759259259259259
+03_dom_gender_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.895833333333333,0.916666666666667
+03_dom_gender_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.814102564102564,0.807692307692308
+03_dom_gender_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.0705128205128205,0.0641025641025641
+03_dom_gender_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.111111111111111,0.0925925925925927
+03_dom_gender_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.0705128205128205,-0.0641025641025641
+03_dom_gender_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,0.0208333333333334,0
+03_dom_gender_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,ext_adv_paired,-0.0208333333333334,0
+03_dom_gender_by_group_issue.csv,1424,UK Crime,ukcrime.rootcauset1,freqadv_mir,TRUE,FALSE
+03_dom_gender_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,dis_t2,0.759259259259259,0.814814814814815
+03_dom_gender_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,adv_t2,0.883333333333333,0.866666666666667
+03_dom_gender_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,grp_t2,0.803571428571429,0.833333333333333
+03_dom_gender_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,ext_grp,0.011904761904762,0.0416666666666667
+03_dom_gender_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,ext_dis,-0.0277777777777778,0.0277777777777777
+03_dom_gender_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.011904761904762,-0.0416666666666667
+03_dom_gender_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.0833333333333333,-0.0666666666666667
+03_dom_gender_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,ext_adv,0.0833333333333333,0.0666666666666667
+03_dom_gender_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.759259259259259,0.814814814814815
+03_dom_gender_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.883333333333333,0.866666666666667
+03_dom_gender_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.803571428571429,0.833333333333333
+03_dom_gender_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.011904761904762,0.0416666666666667
+03_dom_gender_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,ext_dis_paired,-0.0277777777777778,0.0277777777777777
+03_dom_gender_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.011904761904762,-0.0416666666666667
+03_dom_gender_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.0833333333333333,-0.0666666666666667
+03_dom_gender_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.0833333333333333,0.0666666666666667
+03_dom_gender_by_group_issue.csv,1425,UK Crime,ukcrime.rootcauset1,freqdis_grp,FALSE,TRUE
+03_dom_educ_by_group_issue.csv,1388,UK Crime,ukcrime.rootcauset1,dis_t2,0.840909090909091,0.871212121212121
+03_dom_educ_by_group_issue.csv,1388,UK Crime,ukcrime.rootcauset1,adv_t2,0.861111111111111,0.895833333333333
+03_dom_educ_by_group_issue.csv,1388,UK Crime,ukcrime.rootcauset1,grp_t2,0.848039215686274,0.879901960784314
+03_dom_educ_by_group_issue.csv,1388,UK Crime,ukcrime.rootcauset1,ext_grp,0.0637254901960784,0.0955882352941176
+03_dom_educ_by_group_issue.csv,1388,UK Crime,ukcrime.rootcauset1,ext_dis,0.0606060606060607,0.0909090909090909
+03_dom_educ_by_group_issue.csv,1388,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.0637254901960784,-0.0955882352941176
+03_dom_educ_by_group_issue.csv,1388,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.0694444444444445,-0.104166666666667
+03_dom_educ_by_group_issue.csv,1388,UK Crime,ukcrime.rootcauset1,ext_adv,0.0694444444444445,0.104166666666667
+03_dom_educ_by_group_issue.csv,1388,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.840909090909091,0.871212121212121
+03_dom_educ_by_group_issue.csv,1388,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.861111111111111,0.895833333333333
+03_dom_educ_by_group_issue.csv,1388,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.848039215686274,0.879901960784314
+03_dom_educ_by_group_issue.csv,1388,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.0637254901960784,0.0955882352941176
+03_dom_educ_by_group_issue.csv,1388,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.0606060606060607,0.0909090909090909
+03_dom_educ_by_group_issue.csv,1388,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.0637254901960784,-0.0955882352941176
+03_dom_educ_by_group_issue.csv,1388,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.0694444444444445,-0.104166666666667
+03_dom_educ_by_group_issue.csv,1388,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.0694444444444445,0.104166666666667
+03_dom_educ_by_group_issue.csv,1389,UK Crime,ukcrime.rootcauset1,dis_t2,0.851851851851852,0.842592592592593
+03_dom_educ_by_group_issue.csv,1389,UK Crime,ukcrime.rootcauset1,grp_t2,0.852941176470588,0.848039215686274
+03_dom_educ_by_group_issue.csv,1389,UK Crime,ukcrime.rootcauset1,ext_grp,-0.0245098039215685,-0.0196078431372548
+03_dom_educ_by_group_issue.csv,1389,UK Crime,ukcrime.rootcauset1,ext_dis,0.0092592592592593,0.0185185185185186
+03_dom_educ_by_group_issue.csv,1389,UK Crime,ukcrime.rootcauset1,ext_grp_mir,0.0245098039215685,0.0196078431372548
+03_dom_educ_by_group_issue.csv,1389,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.851851851851852,0.842592592592593
+03_dom_educ_by_group_issue.csv,1389,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.852941176470588,0.848039215686274
+03_dom_educ_by_group_issue.csv,1389,UK Crime,ukcrime.rootcauset1,ext_grp_paired,-0.0245098039215685,-0.0196078431372548
+03_dom_educ_by_group_issue.csv,1389,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.0092592592592593,0.0185185185185186
+03_dom_educ_by_group_issue.csv,1389,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,0.0245098039215685,0.0196078431372548
+03_dom_educ_by_group_issue.csv,1390,UK Crime,ukcrime.rootcauset1,dis_t2,0.833333333333333,0.875
+03_dom_educ_by_group_issue.csv,1390,UK Crime,ukcrime.rootcauset1,grp_t2,0.843137254901961,0.877450980392157
+03_dom_educ_by_group_issue.csv,1390,UK Crime,ukcrime.rootcauset1,ext_grp,0.0343137254901961,0.0686274509803921
+03_dom_educ_by_group_issue.csv,1390,UK Crime,ukcrime.rootcauset1,ext_dis,0.0476190476190477,0.0892857142857143
+03_dom_educ_by_group_issue.csv,1390,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.0343137254901961,-0.0686274509803921
+03_dom_educ_by_group_issue.csv,1390,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.833333333333333,0.875
+03_dom_educ_by_group_issue.csv,1390,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.843137254901961,0.877450980392157
+03_dom_educ_by_group_issue.csv,1390,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.0343137254901961,0.0686274509803921
+03_dom_educ_by_group_issue.csv,1390,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.0476190476190477,0.0892857142857143
+03_dom_educ_by_group_issue.csv,1390,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.0343137254901961,-0.0686274509803921
+03_dom_educ_by_group_issue.csv,1391,UK Crime,ukcrime.rootcauset1,dis_t2,0.818181818181818,0.772727272727273
+03_dom_educ_by_group_issue.csv,1391,UK Crime,ukcrime.rootcauset1,adv_t2,0.854166666666667,0.875
+03_dom_educ_by_group_issue.csv,1391,UK Crime,ukcrime.rootcauset1,grp_t2,0.827777777777778,0.8
+03_dom_educ_by_group_issue.csv,1391,UK Crime,ukcrime.rootcauset1,ext_grp,0.0777777777777777,0.05
+03_dom_educ_by_group_issue.csv,1391,UK Crime,ukcrime.rootcauset1,ext_dis,0.128787878787879,0.0833333333333333
+03_dom_educ_by_group_issue.csv,1391,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.0777777777777777,-0.05
+03_dom_educ_by_group_issue.csv,1391,UK Crime,ukcrime.rootcauset1,ext_adv_mir,0.0625,0.0416666666666666
+03_dom_educ_by_group_issue.csv,1391,UK Crime,ukcrime.rootcauset1,ext_adv,-0.0625,-0.0416666666666666
+03_dom_educ_by_group_issue.csv,1391,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.818181818181818,0.772727272727273
+03_dom_educ_by_group_issue.csv,1391,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.854166666666667,0.875
+03_dom_educ_by_group_issue.csv,1391,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.827777777777778,0.8
+03_dom_educ_by_group_issue.csv,1391,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.0777777777777777,0.05
+03_dom_educ_by_group_issue.csv,1391,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.128787878787879,0.0833333333333333
+03_dom_educ_by_group_issue.csv,1391,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.0777777777777777,-0.05
+03_dom_educ_by_group_issue.csv,1391,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,0.0625,0.0416666666666666
+03_dom_educ_by_group_issue.csv,1391,UK Crime,ukcrime.rootcauset1,ext_adv_paired,-0.0625,-0.0416666666666666
+03_dom_educ_by_group_issue.csv,1392,UK Crime,ukcrime.rootcauset1,dis_t2,0.863636363636364,0.890151515151515
+03_dom_educ_by_group_issue.csv,1392,UK Crime,ukcrime.rootcauset1,adv_t2,0.65,0.716666666666667
+03_dom_educ_by_group_issue.csv,1392,UK Crime,ukcrime.rootcauset1,grp_t2,0.796875,0.8359375
+03_dom_educ_by_group_issue.csv,1392,UK Crime,ukcrime.rootcauset1,ext_grp,-0.015625,-0.0546875
+03_dom_educ_by_group_issue.csv,1392,UK Crime,ukcrime.rootcauset1,ext_dis,-0.0151515151515151,-0.0416666666666666
+03_dom_educ_by_group_issue.csv,1392,UK Crime,ukcrime.rootcauset1,ext_grp_mir,0.015625,0.0546875
+03_dom_educ_by_group_issue.csv,1392,UK Crime,ukcrime.rootcauset1,ext_adv_mir,0.0166666666666667,0.0833333333333334
+03_dom_educ_by_group_issue.csv,1392,UK Crime,ukcrime.rootcauset1,ext_adv,-0.0166666666666667,-0.0833333333333334
+03_dom_educ_by_group_issue.csv,1392,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.863636363636364,0.890151515151515
+03_dom_educ_by_group_issue.csv,1392,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.65,0.716666666666667
+03_dom_educ_by_group_issue.csv,1392,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.796875,0.8359375
+03_dom_educ_by_group_issue.csv,1392,UK Crime,ukcrime.rootcauset1,ext_grp_paired,-0.015625,-0.0546875
+03_dom_educ_by_group_issue.csv,1392,UK Crime,ukcrime.rootcauset1,ext_dis_paired,-0.0151515151515151,-0.0416666666666666
+03_dom_educ_by_group_issue.csv,1392,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,0.015625,0.0546875
+03_dom_educ_by_group_issue.csv,1392,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,0.0166666666666667,0.0833333333333334
+03_dom_educ_by_group_issue.csv,1392,UK Crime,ukcrime.rootcauset1,ext_adv_paired,-0.0166666666666667,-0.0833333333333334
+03_dom_educ_by_group_issue.csv,1393,UK Crime,ukcrime.rootcauset1,dis_t2,0.9375,0.895833333333333
+03_dom_educ_by_group_issue.csv,1393,UK Crime,ukcrime.rootcauset1,adv_t2,0.816666666666667,0.808333333333333
+03_dom_educ_by_group_issue.csv,1393,UK Crime,ukcrime.rootcauset1,grp_t2,0.851190476190476,0.833333333333333
+03_dom_educ_by_group_issue.csv,1393,UK Crime,ukcrime.rootcauset1,ext_grp,-0.0535714285714286,-0.0357142857142858
+03_dom_educ_by_group_issue.csv,1393,UK Crime,ukcrime.rootcauset1,ext_dis,-0.125,-0.0833333333333334
+03_dom_educ_by_group_issue.csv,1393,UK Crime,ukcrime.rootcauset1,ext_grp_mir,0.0535714285714286,0.0357142857142858
+03_dom_educ_by_group_issue.csv,1393,UK Crime,ukcrime.rootcauset1,ext_adv_mir,0.025,0.0166666666666667
+03_dom_educ_by_group_issue.csv,1393,UK Crime,ukcrime.rootcauset1,ext_adv,-0.025,-0.0166666666666667
+03_dom_educ_by_group_issue.csv,1393,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.9375,0.895833333333333
+03_dom_educ_by_group_issue.csv,1393,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.816666666666667,0.808333333333333
+03_dom_educ_by_group_issue.csv,1393,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.851190476190476,0.833333333333333
+03_dom_educ_by_group_issue.csv,1393,UK Crime,ukcrime.rootcauset1,ext_grp_paired,-0.0535714285714286,-0.0357142857142858
+03_dom_educ_by_group_issue.csv,1393,UK Crime,ukcrime.rootcauset1,ext_dis_paired,-0.125,-0.0833333333333334
+03_dom_educ_by_group_issue.csv,1393,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,0.0535714285714286,0.0357142857142858
+03_dom_educ_by_group_issue.csv,1393,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,0.025,0.0166666666666667
+03_dom_educ_by_group_issue.csv,1393,UK Crime,ukcrime.rootcauset1,ext_adv_paired,-0.025,-0.0166666666666667
+03_dom_educ_by_group_issue.csv,1394,UK Crime,ukcrime.rootcauset1,adv_t2,0.777777777777778,0.75
+03_dom_educ_by_group_issue.csv,1394,UK Crime,ukcrime.rootcauset1,grp_t2,0.803030303030303,0.787878787878788
+03_dom_educ_by_group_issue.csv,1394,UK Crime,ukcrime.rootcauset1,ext_grp,-0.113636363636364,-0.0984848484848484
+03_dom_educ_by_group_issue.csv,1394,UK Crime,ukcrime.rootcauset1,ext_grp_mir,0.113636363636364,0.0984848484848484
+03_dom_educ_by_group_issue.csv,1394,UK Crime,ukcrime.rootcauset1,ext_adv_mir,0.180555555555556,0.152777777777778
+03_dom_educ_by_group_issue.csv,1394,UK Crime,ukcrime.rootcauset1,ext_adv,-0.180555555555556,-0.152777777777778
+03_dom_educ_by_group_issue.csv,1394,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.777777777777778,0.75
+03_dom_educ_by_group_issue.csv,1394,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.803030303030303,0.787878787878788
+03_dom_educ_by_group_issue.csv,1394,UK Crime,ukcrime.rootcauset1,ext_grp_paired,-0.113636363636364,-0.0984848484848484
+03_dom_educ_by_group_issue.csv,1394,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,0.113636363636364,0.0984848484848484
+03_dom_educ_by_group_issue.csv,1394,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,0.180555555555556,0.152777777777778
+03_dom_educ_by_group_issue.csv,1394,UK Crime,ukcrime.rootcauset1,ext_adv_paired,-0.180555555555556,-0.152777777777778
+03_dom_educ_by_group_issue.csv,1395,UK Crime,ukcrime.rootcauset1,dis_t2,0.797619047619048,0.833333333333333
+03_dom_educ_by_group_issue.csv,1395,UK Crime,ukcrime.rootcauset1,adv_t2,0.833333333333333,0.847222222222222
+03_dom_educ_by_group_issue.csv,1395,UK Crime,ukcrime.rootcauset1,grp_t2,0.814102564102564,0.83974358974359
+03_dom_educ_by_group_issue.csv,1395,UK Crime,ukcrime.rootcauset1,ext_grp,0.0641025641025641,0.0897435897435898
+03_dom_educ_by_group_issue.csv,1395,UK Crime,ukcrime.rootcauset1,ext_dis,0.0952380952380953,0.130952380952381
+03_dom_educ_by_group_issue.csv,1395,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.0641025641025641,-0.0897435897435898
+03_dom_educ_by_group_issue.csv,1395,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.0277777777777778,-0.0416666666666666
+03_dom_educ_by_group_issue.csv,1395,UK Crime,ukcrime.rootcauset1,ext_adv,0.0277777777777778,0.0416666666666666
+03_dom_educ_by_group_issue.csv,1395,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.797619047619048,0.833333333333333
+03_dom_educ_by_group_issue.csv,1395,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.833333333333333,0.847222222222222
+03_dom_educ_by_group_issue.csv,1395,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.814102564102564,0.83974358974359
+03_dom_educ_by_group_issue.csv,1395,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.0641025641025641,0.0897435897435898
+03_dom_educ_by_group_issue.csv,1395,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.0952380952380953,0.130952380952381
+03_dom_educ_by_group_issue.csv,1395,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.0641025641025641,-0.0897435897435898
+03_dom_educ_by_group_issue.csv,1395,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.0277777777777778,-0.0416666666666666
+03_dom_educ_by_group_issue.csv,1395,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.0277777777777778,0.0416666666666666
+03_dom_educ_by_group_issue.csv,1396,UK Crime,ukcrime.rootcauset1,adv_t2,0.791666666666667,0.833333333333333
+03_dom_educ_by_group_issue.csv,1396,UK Crime,ukcrime.rootcauset1,grp_t2,0.84375,0.848958333333333
+03_dom_educ_by_group_issue.csv,1396,UK Crime,ukcrime.rootcauset1,ext_grp,-0.0416666666666666,-0.046875
+03_dom_educ_by_group_issue.csv,1396,UK Crime,ukcrime.rootcauset1,ext_grp_mir,0.0416666666666666,0.046875
+03_dom_educ_by_group_issue.csv,1396,UK Crime,ukcrime.rootcauset1,ext_adv_mir,0.0833333333333334,0.125
+03_dom_educ_by_group_issue.csv,1396,UK Crime,ukcrime.rootcauset1,ext_adv,-0.0833333333333334,-0.125
+03_dom_educ_by_group_issue.csv,1396,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.791666666666667,0.833333333333333
+03_dom_educ_by_group_issue.csv,1396,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.84375,0.848958333333333
+03_dom_educ_by_group_issue.csv,1396,UK Crime,ukcrime.rootcauset1,ext_grp_paired,-0.0416666666666666,-0.046875
+03_dom_educ_by_group_issue.csv,1396,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,0.0416666666666666,0.046875
+03_dom_educ_by_group_issue.csv,1396,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,0.0833333333333334,0.125
+03_dom_educ_by_group_issue.csv,1396,UK Crime,ukcrime.rootcauset1,ext_adv_paired,-0.0833333333333334,-0.125
+03_dom_educ_by_group_issue.csv,1397,UK Crime,ukcrime.rootcauset1,dis_t2,0.878787878787879,0.897727272727273
+03_dom_educ_by_group_issue.csv,1397,UK Crime,ukcrime.rootcauset1,grp_t2,0.844444444444444,0.858333333333333
+03_dom_educ_by_group_issue.csv,1397,UK Crime,ukcrime.rootcauset1,ext_grp,-0.0111111111111111,-0.0249999999999999
+03_dom_educ_by_group_issue.csv,1397,UK Crime,ukcrime.rootcauset1,ext_dis,-0.00757575757575757,-0.0265151515151515
+03_dom_educ_by_group_issue.csv,1397,UK Crime,ukcrime.rootcauset1,ext_grp_mir,0.0111111111111111,0.0249999999999999
+03_dom_educ_by_group_issue.csv,1397,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.878787878787879,0.897727272727273
+03_dom_educ_by_group_issue.csv,1397,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.844444444444444,0.858333333333333
+03_dom_educ_by_group_issue.csv,1397,UK Crime,ukcrime.rootcauset1,ext_grp_paired,-0.0111111111111111,-0.0249999999999999
+03_dom_educ_by_group_issue.csv,1397,UK Crime,ukcrime.rootcauset1,ext_dis_paired,-0.00757575757575757,-0.0265151515151515
+03_dom_educ_by_group_issue.csv,1397,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,0.0111111111111111,0.0249999999999999
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,dis_t2,0.833333333333333,0.818181818181818
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,adv_t2,0.736111111111111,0.722222222222222
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,grp_t2,0.800925925925926,0.784313725490196
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,ext_grp,0.0277777777777778,0.0111655773420479
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,ext_dis,0.0625,0.0473484848484849
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.0277777777777778,-0.0111655773420479
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,ext_adv_mir,0.0416666666666666,0.0555555555555556
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,ext_adv,-0.0416666666666666,-0.0555555555555556
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,dis_t1_paired,0.770833333333333,0.765151515151515
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.833333333333333,0.818181818181818
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.736111111111111,0.722222222222222
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,grp_t1_paired,0.773148148148148,0.769607843137255
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.800925925925926,0.784313725490196
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,disadvantaged_share_paired,0.666666666666667,0.647058823529412
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,n_eligible_paired,18,17
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.0277777777777778,0.0147058823529411
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.0625,0.0530303030303031
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.0277777777777778,-0.0147058823529411
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,0.0416666666666666,0.0555555555555556
+03_dom_educ_by_group_issue.csv,1398,UK Crime,ukcrime.rootcauset1,ext_adv_paired,-0.0416666666666666,-0.0555555555555556
+03_dom_educ_by_group_issue.csv,1399,UK Crime,ukcrime.rootcauset1,dis_t2,0.845238095238095,0.851190476190476
+03_dom_educ_by_group_issue.csv,1399,UK Crime,ukcrime.rootcauset1,grp_t2,0.855555555555556,0.861111111111111
+03_dom_educ_by_group_issue.csv,1399,UK Crime,ukcrime.rootcauset1,ext_grp,0.0277777777777778,0.0333333333333334
+03_dom_educ_by_group_issue.csv,1399,UK Crime,ukcrime.rootcauset1,ext_dis,0.0297619047619048,0.0357142857142857
+03_dom_educ_by_group_issue.csv,1399,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.0277777777777778,-0.0333333333333334
+03_dom_educ_by_group_issue.csv,1399,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.845238095238095,0.851190476190476
+03_dom_educ_by_group_issue.csv,1399,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.855555555555556,0.861111111111111
+03_dom_educ_by_group_issue.csv,1399,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.0277777777777778,0.0333333333333334
+03_dom_educ_by_group_issue.csv,1399,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.0297619047619048,0.0357142857142857
+03_dom_educ_by_group_issue.csv,1399,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.0277777777777778,-0.0333333333333334
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,dis_t2,0.822916666666667,0.895833333333333
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,adv_t2,0.833333333333333,0.8125
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,grp_t2,0.826388888888889,0.868055555555556
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,ext_grp,0.00694444444444453,-0.0347222222222222
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,ext_dis,0.0416666666666667,-0.0312499999999999
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.00694444444444453,0.0347222222222222
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,ext_adv_mir,0.0625,0.0416666666666667
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,ext_adv,-0.0625,-0.0416666666666667
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.822916666666667,0.895833333333333
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.833333333333333,0.8125
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.826388888888889,0.868055555555556
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.00694444444444453,-0.0347222222222222
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.0416666666666667,-0.0312499999999999
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.00694444444444453,0.0347222222222222
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,0.0625,0.0416666666666667
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,ext_adv_paired,-0.0625,-0.0416666666666667
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,freqgrp_grp,TRUE,FALSE
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,freqdis_grp,TRUE,FALSE
+03_dom_educ_by_group_issue.csv,1400,UK Crime,ukcrime.rootcauset1,freqgrp_mir,FALSE,TRUE
+03_dom_educ_by_group_issue.csv,1401,UK Crime,ukcrime.rootcauset1,adv_t2,0.714285714285714,0.761904761904762
+03_dom_educ_by_group_issue.csv,1401,UK Crime,ukcrime.rootcauset1,grp_t2,0.782407407407407,0.800925925925926
+03_dom_educ_by_group_issue.csv,1401,UK Crime,ukcrime.rootcauset1,ext_grp,-0.013888888888889,-0.0324074074074074
+03_dom_educ_by_group_issue.csv,1401,UK Crime,ukcrime.rootcauset1,ext_grp_mir,0.013888888888889,0.0324074074074074
+03_dom_educ_by_group_issue.csv,1401,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.0357142857142857,0.0119047619047619
+03_dom_educ_by_group_issue.csv,1401,UK Crime,ukcrime.rootcauset1,ext_adv,0.0357142857142857,-0.0119047619047619
+03_dom_educ_by_group_issue.csv,1401,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.714285714285714,0.761904761904762
+03_dom_educ_by_group_issue.csv,1401,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.782407407407407,0.800925925925926
+03_dom_educ_by_group_issue.csv,1401,UK Crime,ukcrime.rootcauset1,ext_grp_paired,-0.013888888888889,-0.0324074074074074
+03_dom_educ_by_group_issue.csv,1401,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,0.013888888888889,0.0324074074074074
+03_dom_educ_by_group_issue.csv,1401,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.0357142857142857,0.0119047619047619
+03_dom_educ_by_group_issue.csv,1401,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.0357142857142857,-0.0119047619047619
+03_dom_educ_by_group_issue.csv,1401,UK Crime,ukcrime.rootcauset1,freqadv_mir,FALSE,TRUE
+03_dom_educ_by_group_issue.csv,1401,UK Crime,ukcrime.rootcauset1,freqadv_grp,TRUE,FALSE
+03_dom_educ_by_group_issue.csv,1402,UK Crime,ukcrime.rootcauset1,dis_t2,0.791666666666667,0.758333333333333
+03_dom_educ_by_group_issue.csv,1402,UK Crime,ukcrime.rootcauset1,adv_t2,0.75,0.777777777777778
+03_dom_educ_by_group_issue.csv,1402,UK Crime,ukcrime.rootcauset1,grp_t2,0.776041666666667,0.765625
+03_dom_educ_by_group_issue.csv,1402,UK Crime,ukcrime.rootcauset1,ext_grp,0.03125,0.0208333333333334
+03_dom_educ_by_group_issue.csv,1402,UK Crime,ukcrime.rootcauset1,ext_dis,0.0666666666666667,0.0333333333333333
+03_dom_educ_by_group_issue.csv,1402,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.03125,-0.0208333333333334
+03_dom_educ_by_group_issue.csv,1402,UK Crime,ukcrime.rootcauset1,ext_adv_mir,0.0277777777777778,0
+03_dom_educ_by_group_issue.csv,1402,UK Crime,ukcrime.rootcauset1,ext_adv,-0.0277777777777778,0
+03_dom_educ_by_group_issue.csv,1402,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.791666666666667,0.758333333333333
+03_dom_educ_by_group_issue.csv,1402,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.75,0.777777777777778
+03_dom_educ_by_group_issue.csv,1402,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.776041666666667,0.765625
+03_dom_educ_by_group_issue.csv,1402,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.03125,0.0208333333333334
+03_dom_educ_by_group_issue.csv,1402,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.0666666666666667,0.0333333333333333
+03_dom_educ_by_group_issue.csv,1402,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.03125,-0.0208333333333334
+03_dom_educ_by_group_issue.csv,1402,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,0.0277777777777778,0
+03_dom_educ_by_group_issue.csv,1402,UK Crime,ukcrime.rootcauset1,ext_adv_paired,-0.0277777777777778,0
+03_dom_educ_by_group_issue.csv,1402,UK Crime,ukcrime.rootcauset1,freqadv_mir,TRUE,FALSE
+03_dom_educ_by_group_issue.csv,1403,UK Crime,ukcrime.rootcauset1,adv_t2,0.979166666666667,0.958333333333333
+03_dom_educ_by_group_issue.csv,1403,UK Crime,ukcrime.rootcauset1,grp_t2,0.909722222222222,0.902777777777778
+03_dom_educ_by_group_issue.csv,1403,UK Crime,ukcrime.rootcauset1,ext_grp,0.111111111111111,0.104166666666667
+03_dom_educ_by_group_issue.csv,1403,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.111111111111111,-0.104166666666667
+03_dom_educ_by_group_issue.csv,1403,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.145833333333333,-0.125
+03_dom_educ_by_group_issue.csv,1403,UK Crime,ukcrime.rootcauset1,ext_adv,0.145833333333333,0.125
+03_dom_educ_by_group_issue.csv,1403,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.979166666666667,0.958333333333333
+03_dom_educ_by_group_issue.csv,1403,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.909722222222222,0.902777777777778
+03_dom_educ_by_group_issue.csv,1403,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.111111111111111,0.104166666666667
+03_dom_educ_by_group_issue.csv,1403,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.111111111111111,-0.104166666666667
+03_dom_educ_by_group_issue.csv,1403,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.145833333333333,-0.125
+03_dom_educ_by_group_issue.csv,1403,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.145833333333333,0.125
+03_dom_educ_by_group_issue.csv,1404,UK Crime,ukcrime.rootcauset1,dis_t2,0.885416666666667,0.895833333333333
+03_dom_educ_by_group_issue.csv,1404,UK Crime,ukcrime.rootcauset1,adv_t2,0.783333333333333,0.766666666666667
+03_dom_educ_by_group_issue.csv,1404,UK Crime,ukcrime.rootcauset1,ext_dis,-0.03125,-0.0416666666666667
+03_dom_educ_by_group_issue.csv,1404,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.05,-0.0666666666666667
+03_dom_educ_by_group_issue.csv,1404,UK Crime,ukcrime.rootcauset1,ext_adv,0.05,0.0666666666666667
+03_dom_educ_by_group_issue.csv,1404,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.885416666666667,0.895833333333333
+03_dom_educ_by_group_issue.csv,1404,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.783333333333333,0.766666666666667
+03_dom_educ_by_group_issue.csv,1404,UK Crime,ukcrime.rootcauset1,ext_dis_paired,-0.03125,-0.0416666666666667
+03_dom_educ_by_group_issue.csv,1404,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.05,-0.0666666666666667
+03_dom_educ_by_group_issue.csv,1404,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.05,0.0666666666666667
+03_dom_educ_by_group_issue.csv,1405,UK Crime,ukcrime.rootcauset1,dis_t2,0.775,0.816666666666667
+03_dom_educ_by_group_issue.csv,1405,UK Crime,ukcrime.rootcauset1,grp_t2,0.791666666666667,0.82843137254902
+03_dom_educ_by_group_issue.csv,1405,UK Crime,ukcrime.rootcauset1,ext_grp,0.017156862745098,0.0539215686274509
+03_dom_educ_by_group_issue.csv,1405,UK Crime,ukcrime.rootcauset1,ext_dis,0.0083333333333333,0.0499999999999999
+03_dom_educ_by_group_issue.csv,1405,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.017156862745098,-0.0539215686274509
+03_dom_educ_by_group_issue.csv,1405,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.0833333333333335,-0.0833333333333334
+03_dom_educ_by_group_issue.csv,1405,UK Crime,ukcrime.rootcauset1,ext_adv,0.0833333333333335,0.0833333333333334
+03_dom_educ_by_group_issue.csv,1405,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.775,0.816666666666667
+03_dom_educ_by_group_issue.csv,1405,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.791666666666667,0.82843137254902
+03_dom_educ_by_group_issue.csv,1405,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.017156862745098,0.0539215686274509
+03_dom_educ_by_group_issue.csv,1405,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0.0083333333333333,0.0499999999999999
+03_dom_educ_by_group_issue.csv,1405,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.017156862745098,-0.0539215686274509
+03_dom_educ_by_group_issue.csv,1405,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.0833333333333335,-0.0833333333333334
+03_dom_educ_by_group_issue.csv,1405,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.0833333333333335,0.0833333333333334
+03_dom_educ_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,dis_t2,0.833333333333333,0.8125
+03_dom_educ_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,adv_t2,0.783333333333333,0.8
+03_dom_educ_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,grp_t2,0.814102564102564,0.807692307692308
+03_dom_educ_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_grp,-0.0705128205128205,-0.0641025641025641
+03_dom_educ_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_dis,-0.0416666666666667,-0.0208333333333334
+03_dom_educ_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_grp_mir,0.0705128205128205,0.0641025641025641
+03_dom_educ_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_adv_mir,0.116666666666667,0.133333333333333
+03_dom_educ_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_adv,-0.116666666666667,-0.133333333333333
+03_dom_educ_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.833333333333333,0.8125
+03_dom_educ_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.783333333333333,0.8
+03_dom_educ_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.814102564102564,0.807692307692308
+03_dom_educ_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_grp_paired,-0.0705128205128205,-0.0641025641025641
+03_dom_educ_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_dis_paired,-0.0416666666666667,-0.0208333333333334
+03_dom_educ_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,0.0705128205128205,0.0641025641025641
+03_dom_educ_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,0.116666666666667,0.133333333333333
+03_dom_educ_by_group_issue.csv,1406,UK Crime,ukcrime.rootcauset1,ext_adv_paired,-0.116666666666667,-0.133333333333333
+03_dom_educ_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,dis_t2,0.787037037037037,0.814814814814815
+03_dom_educ_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,adv_t2,0.833333333333333,0.866666666666667
+03_dom_educ_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,grp_t2,0.803571428571429,0.833333333333333
+03_dom_educ_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_grp,0.011904761904762,0.0416666666666667
+03_dom_educ_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_dis,0,0.0277777777777777
+03_dom_educ_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_grp_mir,-0.011904761904762,-0.0416666666666667
+03_dom_educ_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_adv_mir,-0.0333333333333333,-0.0666666666666667
+03_dom_educ_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_adv,0.0333333333333333,0.0666666666666667
+03_dom_educ_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,dis_t2_paired,0.787037037037037,0.814814814814815
+03_dom_educ_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,adv_t2_paired,0.833333333333333,0.866666666666667
+03_dom_educ_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,grp_t2_paired,0.803571428571429,0.833333333333333
+03_dom_educ_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_grp_paired,0.011904761904762,0.0416666666666667
+03_dom_educ_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_dis_paired,0,0.0277777777777777
+03_dom_educ_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_grp_mir_paired,-0.011904761904762,-0.0416666666666667
+03_dom_educ_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_adv_mir_paired,-0.0333333333333333,-0.0666666666666667
+03_dom_educ_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,ext_adv_paired,0.0333333333333333,0.0666666666666667
+03_dom_educ_by_group_issue.csv,1407,UK Crime,ukcrime.rootcauset1,freqdis_grp,FALSE,TRUE
+paired_inference.csv,1,,,estimate,0.0128493544739576,0.0129503731787336
+paired_inference.csv,1,,,se,0.00311221149494786,0.00309532848998221
+paired_inference.csv,1,,,p,0.0010440049813872,0.00093821405539798
+paired_inference.csv,1,,,conf_low,0.00616797212911671,0.00630523573932033
+paired_inference.csv,1,,,conf_high,0.0195307368187985,0.0195955106181468
+paired_inference.csv,1,,,se_two_way,0.00299973315184692,0.00300517873661693
+paired_inference.csv,1,,,p_two_way,3.58240503613877e-05,3.2356116870324e-05
+paired_inference.csv,1,,,mean_absolute,0.0521072004194638,0.052163952415601
+paired_inference.csv,1,,,leave_one_poll_min,0.0117369669719003,0.0118503273283909
+paired_inference.csv,1,,,leave_one_poll_max,0.0148048136777343,0.0149085083746897
+paired_inference.csv,2,,,estimate,0.585887096774194,0.586290322580645
+paired_inference.csv,2,,,se,0.0202224326234832,0.0201772536104129
+paired_inference.csv,2,,,p,0.000830271394219183,0.000784394053913401
+paired_inference.csv,2,,,conf_low,0.542473015012845,0.542973232383262
+paired_inference.csv,2,,,conf_high,0.629301178535542,0.629607412778029
+paired_inference.csv,2,,,se_two_way,0.0180350743792905,0.0181022819912944
+paired_inference.csv,2,,,p_two_way,5.10073669135413e-06,5.00302808728121e-06
+paired_inference.csv,2,,,leave_one_poll_min,0.575530035335689,0.575971731448763
+paired_inference.csv,2,,,leave_one_poll_max,0.594418604651162,0.594883720930232
+paired_inference.csv,3,,,estimate,-0.022210725585489,-0.0221382563936714
+paired_inference.csv,3,,,se,0.00837970055612925,0.00838511909271823
+paired_inference.csv,3,,,p,0.0190558064808409,0.019444415134189
+paired_inference.csv,3,,,conf_low,-0.0401896172861977,-0.0401287737225105
+paired_inference.csv,3,,,conf_high,-0.00423183388478039,-0.00414773906483238
+paired_inference.csv,3,,,se_two_way,0.00651101608158651,0.00651738186210279
+paired_inference.csv,3,,,p_two_way,0.00086578877453197,0.000908791256228657
+paired_inference.csv,3,,,mean_absolute,0.0886674342560442,0.0887341902068544
+paired_inference.csv,3,,,proportion_abs_gt_10,0.314685314685315,0.314273961332785
+paired_inference.csv,3,,,leave_one_poll_min,-0.0263008005273884,-0.026221479228285
+paired_inference.csv,3,,,leave_one_poll_max,-0.0177216993427165,-0.0176473335321176
+paired_inference.csv,4,,,estimate,0.439325380501851,0.439736733854381
+paired_inference.csv,4,,,se,0.0409809858875565,0.0409980613329048
+paired_inference.csv,4,,,p,0.160956834270078,0.163780993992093
+paired_inference.csv,4,,,conf_low,0.351399481225924,0.351774198712936
+paired_inference.csv,4,,,conf_high,0.527251279777778,0.527699268995826
+paired_inference.csv,4,,,se_two_way,0.0244283922253178,0.0245001071014216
+paired_inference.csv,4,,,p_two_way,0.0142922252748699,0.0152392010789653
+paired_inference.csv,4,,,leave_one_poll_min,0.415578568212517,0.416028815848716
+paired_inference.csv,4,,,leave_one_poll_max,0.471131639722864,0.471593533487297
+paired_inference.csv,5,,,estimate,0.0100425158300427,0.0100543080903782
+paired_inference.csv,5,,,se,0.00313244695460408,0.00313438969079012
+paired_inference.csv,5,,,p,0.00633996623018751,0.00631761563604473
+paired_inference.csv,5,,,conf_low,0.00332452729814618,0.00333215307789723
+paired_inference.csv,5,,,conf_high,0.0167605043619392,0.0167764631028593
+paired_inference.csv,5,,,se_two_way,0.00352922284713174,0.00352783425593548
+paired_inference.csv,5,,,p_two_way,0.00516480653626776,0.00509721774067875
+paired_inference.csv,5,,,mean_absolute,0.0896440448209031,0.0897120883078716
+paired_inference.csv,5,,,proportion_abs_gt_10,0.324109014675052,0.323689727463312
+paired_inference.csv,5,,,leave_one_poll_min,0.00775903303639568,0.00777106749976764
+paired_inference.csv,5,,,leave_one_poll_max,0.0111577433679912,0.0111709722207195
+paired_inference.csv,6,,,estimate,0.522851153039832,0.522431865828092
+paired_inference.csv,6,,,se,0.0174660775622363,0.0173362757213988
+paired_inference.csv,6,,,p,0.211824679470862,0.216615831879609
+paired_inference.csv,6,,,conf_low,0.48539260690616,0.485251698639316
+paired_inference.csv,6,,,conf_high,0.560309699173505,0.559612033016869
+paired_inference.csv,6,,,se_two_way,0.0135229665276108,0.0135473504323103
+paired_inference.csv,6,,,p_two_way,0.0934997692787586,0.100209525413823
+paired_inference.csv,6,,,leave_one_poll_min,0.518185708172871,0.517757809157039
+paired_inference.csv,6,,,leave_one_poll_max,0.537629350893697,0.537158984007526
+paired_inference.csv,7,,,estimate,0.052251220062849,0.0522646901948174
+paired_inference.csv,7,,,se,0.00666350367867951,0.00666171682691111
+paired_inference.csv,7,,,p,1.72422108490875e-06,1.71376413664893e-06
+paired_inference.csv,7,,,conf_low,0.037959828675587,0.037977131115483
+paired_inference.csv,7,,,conf_high,0.066542611450111,0.0665522492741519
+paired_inference.csv,7,,,se_two_way,0.00539585684604085,0.005394443094193
+paired_inference.csv,7,,,p_two_way,5.6675487252509e-17,5.50868403729015e-17
+paired_inference.csv,7,,,mean_absolute,0.119683237063637,0.119717362574902
+paired_inference.csv,7,,,proportion_abs_gt_10,0.430369127516779,0.42994966442953
+paired_inference.csv,7,,,leave_one_poll_min,0.0480000086866804,0.0480140562783746
+paired_inference.csv,7,,,leave_one_poll_max,0.054871875918855,0.0548874419850755
+paired_inference.csv,9,,,estimate,-0.0302663342089476,-0.0302676652794611
+paired_inference.csv,9,,,se,0.00852352721654549,0.00852329027103245
+paired_inference.csv,9,,,p,0.00319196193614948,0.00319034614358988
+paired_inference.csv,9,,,conf_low,-0.048546279223786,-0.048547102130151
+paired_inference.csv,9,,,conf_high,-0.0119863891941093,-0.0119882284287712
+paired_inference.csv,9,,,se_two_way,0.00537157750880319,0.00537200962529039
+paired_inference.csv,9,,,p_two_way,1.06500722198056e-07,1.06602458049177e-07
+paired_inference.csv,9,,,mean_absolute,0.11234296912991,0.11237957356903
+paired_inference.csv,9,,,proportion_abs_gt_10,0.40545073375262,0.406289308176101
+paired_inference.csv,9,,,leave_one_poll_min,-0.0335452461482404,-0.0335466950771197
+paired_inference.csv,9,,,leave_one_poll_max,-0.0241761803461063,-0.0241776253179655
+paired_inference.csv,10,,,estimate,0.388679245283019,0.388259958071279
+paired_inference.csv,10,,,se,0.0236564807027876,0.0235385773715618
+paired_inference.csv,10,,,p,0.000336895054909391,0.00031156236338177
+paired_inference.csv,10,,,conf_low,0.337944478383688,0.337778052030735
+paired_inference.csv,10,,,conf_high,0.43941401218235,0.438741864111823
+paired_inference.csv,10,,,se_two_way,0.0158686536356565,0.0158535071333632
+paired_inference.csv,10,,,p_two_way,1.18920665330994e-10,1.00191223157305e-10
+paired_inference.csv,10,,,leave_one_poll_min,0.379735280693747,0.37927886809676
+paired_inference.csv,10,,,leave_one_poll_max,0.404515522107244,0.404045155221072
+paired_inference.csv,11,,,estimate,0.00175429996189787,0.00182554892345189
+paired_inference.csv,11,,,se,0.00352039543652207,0.00352237534361237
+paired_inference.csv,11,,,p,0.626035740513884,0.612407297284314
+paired_inference.csv,11,,,conf_low,-0.00580023066435854,-0.00573323044957759
+paired_inference.csv,11,,,conf_high,0.00930883058815429,0.00938432829648136
+paired_inference.csv,11,,,se_two_way,0.00321463236351942,0.0032196040616289
+paired_inference.csv,11,,,p_two_way,0.58620591877849,0.571700136378716
+paired_inference.csv,11,,,mean_absolute,0.0888863651052564,0.0889529840364632
+paired_inference.csv,11,,,proportion_abs_gt_10,0.316502463054187,0.316091954022989
+paired_inference.csv,11,,,leave_one_poll_min,-0.000427853641427926,-0.000355202963175277
+paired_inference.csv,11,,,leave_one_poll_max,0.00301212958549519,0.00308785492159709
+paired_inference.csv,12,,,estimate,0.470443349753695,0.470853858784893
+paired_inference.csv,12,,,se,0.0146709296170234,0.014708242658708
+paired_inference.csv,12,,,p,0.0636805968633898,0.0676249922906651
+paired_inference.csv,12,,,conf_low,0.438960526557858,0.439290964323982
+paired_inference.csv,12,,,conf_high,0.501926172949532,0.502416753245805
+paired_inference.csv,12,,,se_two_way,0.0122650887912344,0.0123370539150242
+paired_inference.csv,12,,,p_two_way,0.0173829603610599,0.019659644369484
+paired_inference.csv,12,,,leave_one_poll_min,0.464488636363636,0.464962121212121
+paired_inference.csv,12,,,leave_one_poll_max,0.479281767955801,0.479742173112339
+paired_inference.csv,13,,,estimate,0.0394863230131297,0.0395772609324749
+paired_inference.csv,13,,,se,0.00665669515236985,0.00664147538676457
+paired_inference.csv,13,,,p,3.74757206585141e-05,3.57577052278372e-05
+paired_inference.csv,13,,,conf_low,0.025201505212118,0.0253251037195883
+paired_inference.csv,13,,,conf_high,0.0537711408141414,0.0538294181453615
+paired_inference.csv,13,,,se_two_way,0.00447499529747376,0.00447233483202582
+paired_inference.csv,13,,,p_two_way,7.01888335006381e-15,6.08890186910789e-15
+paired_inference.csv,13,,,mean_absolute,0.113302169024365,0.113297701604052
+paired_inference.csv,13,,,proportion_abs_gt_10,0.411330049261084,0.410919540229885
+paired_inference.csv,13,,,leave_one_poll_min,0.0342515501847093,0.0343504893412634
+paired_inference.csv,13,,,leave_one_poll_max,0.0414858341160593,0.0415907227389404
+paired_inference.csv,14,,,estimate,0.566912972085386,0.567733990147783
+paired_inference.csv,14,,,se,0.0134131807686038,0.0133177005649902
+paired_inference.csv,14,,,p,0.000202059460585044,0.00016885504902926
+paired_inference.csv,14,,,conf_low,0.538129192893796,0.539155105018638
+paired_inference.csv,14,,,conf_high,0.595696751276975,0.596312875276928
+paired_inference.csv,14,,,se_two_way,0.0120527463691994,0.0121065910594667
+paired_inference.csv,14,,,p_two_way,1.56279042774587e-07,1.2805185783828e-07
+paired_inference.csv,14,,,leave_one_poll_min,0.558874458874459,0.55974025974026
+paired_inference.csv,14,,,leave_one_poll_max,0.573204419889503,0.574125230202578
+paired_inference.csv,15,,,estimate,-0.036747879700484,-0.0366854518209379
+paired_inference.csv,15,,,se,0.00552410755716913,0.00553961835844958
+paired_inference.csv,15,,,p,1.1236642481751e-05,1.17957855595808e-05
+paired_inference.csv,15,,,conf_low,-0.0486022410856917,-0.0485730983371554
+paired_inference.csv,15,,,conf_high,-0.0248935183152762,-0.0247978053047203
+paired_inference.csv,15,,,se_two_way,0.00441580696776586,0.00442432771858846
+paired_inference.csv,15,,,p_two_way,1.11840947412679e-13,1.31893572514592e-13
+paired_inference.csv,15,,,mean_absolute,0.108978197831206,0.109018226904486
+paired_inference.csv,15,,,proportion_abs_gt_10,0.403530377668309,0.403940886699507
+paired_inference.csv,15,,,leave_one_poll_min,-0.039016931632061,-0.0389532755774045
+paired_inference.csv,15,,,leave_one_poll_max,-0.0343503764828645,-0.0342853040333248
+04_table_4a_toward_male.csv,6,UK Crime,,freqdis,0.515151515151515,0.535353535353535
+04_table_4a_toward_male.csv,6,UK Crime,,extdis,0.0110705160923866,0.0133081400471823
+04_table_4a_toward_male.csv,6,UK Crime,,freqgrp,0.494949494949495,0.505050505050505
+04_table_4a_toward_male.csv,6,UK Crime,,extgrp,0.00185506579356449,0.00360822205968123
+04_table_4a_toward_male.csv,22,Pair Mean (Actual Pairs),,freqdis,0.566912972085386,0.567733990147783
+04_table_4a_toward_male.csv,22,Pair Mean (Actual Pairs),,extdis,0.0394863230131297,0.0395772609324748
+04_table_4a_toward_male.csv,22,Pair Mean (Actual Pairs),,freqgrp,0.470443349753695,0.470853858784893
+04_table_4a_toward_male.csv,22,Pair Mean (Actual Pairs),,extgrp,0.00175429996189789,0.00182554892345188

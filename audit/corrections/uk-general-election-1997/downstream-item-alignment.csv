@@ -1,0 +1,9 @@
+file_key,n,max_absolute_difference,outside_tolerance
+ukhealth,230,0,0
+ukcrime,299,0,0
+cpl,216,0,0
+btp05,454,1.9868214962137642e-8,0
+wtu,230,0,0
+swp,232,0,0
+ukbge,275,3.9736430812453705e-9,0
+sm,239,0.75,162

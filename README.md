@@ -45,7 +45,7 @@ links for now; see the [linkage contract](docs/knowledge-build.md#historical-kno
 Known measurement, sample, linkage, and provenance questions are collected in the
 [poll-level issue register](docs/poll-issues.md). It distinguishes documented
 choices from unresolved concerns and existing upstream differences; this review
-preserves current scores pending instrument-level verification.
+preserves scores until instrument-level verification and poll-specific approval.
 
 `make respondents` reconstructs all 848 historical respondent-field targets
 across 21 polls. It retains every reviewed source record, separates named
@@ -61,11 +61,14 @@ The build reads public poll sources, not frozen aggregates or the vault.
 historical benchmarks. Documented numerical exceptions concern generalized
 variance in 24 groups; the comparison checks the exact source matrices and
 numerical diagnostics before accepting those differences. Export row numbers
-are regenerated. See the [parity report](audit/polardata_parity.csv),
+are regenerated. The approved UK Crime correction replaces a baseline police
+item with the post-wave children item; comparisons verify each approved value
+against the reviewed respondent-level evidence and reject unexplained changes.
+See the [parity report](audit/polardata_parity.csv),
 [covariance audit](audit/polardata_covariances.csv), and
 [poll issue register](docs/poll-issues.md) for details.
 
-Historical coding choices are preserved for later review. Existing knowledge
+Other historical coding choices are preserved for later review. Existing knowledge
 and linkage products remain unchanged, and downstream repositories remain
 pinned to their existing inputs. The new reconstruction is a separate output
 that can be assessed before downstream adoption.

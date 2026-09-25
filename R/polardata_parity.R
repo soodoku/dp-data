@@ -1,6 +1,7 @@
 compare_historical_polardata <- function(rebuilt, reference, numerical_audit,
                                          tolerance = 1e-10) {
-  stopifnot(identical(names(rebuilt), names(reference)),
+  stopifnot(
+    identical(names(rebuilt), names(reference)),
     nrow(rebuilt) == nrow(reference), nrow(rebuilt) == 6084L,
     !anyNA(rebuilt$X), all(rebuilt$X == seq_len(nrow(rebuilt)))
   )
@@ -39,6 +40,25 @@ compare_historical_polardata <- function(rebuilt, reference, numerical_audit,
       } else {
         difference[observed] <- a[observed] != b[observed]
       }
+      approved <- approved_reference_values(
+        contract$poll_id, field, actual$caseid, b, tolerance
+      )
+      approved_changed <- is.na(approved) != is.na(b)
+      both_approved <- !is.na(approved) & !is.na(b)
+      approved_changed[both_approved] <- if (is.numeric(b)) {
+        abs(approved[both_approved] - b[both_approved]) > tolerance
+      } else {
+        approved[both_approved] != b[both_approved]
+      }
+      approved_changed[is.na(approved_changed)] <- FALSE
+      matches_approved <- is.na(a) & is.na(approved)
+      observed_approved <- !is.na(a) & !is.na(approved)
+      matches_approved[observed_approved] <- if (is.numeric(a)) {
+        abs(a[observed_approved] - approved[observed_approved]) <= tolerance
+      } else {
+        a[observed_approved] == approved[observed_approved]
+      }
+      matches_approved[is.na(matches_approved)] <- FALSE
       numerical <- difference & field == "genvar" &
         verified_numeric
       artifact <- field == "X"
@@ -48,11 +68,15 @@ compare_historical_polardata <- function(rebuilt, reference, numerical_audit,
         missingness_differences = sum(missing),
         value_differences = sum(difference),
         reviewed_numerical_differences = sum(numerical),
+        approved_correction_differences = sum(
+          approved_changed & matches_approved
+        ),
         export_artifact = artifact,
         unexplained_differences = if (artifact) {
           0L
         } else {
-          sum(missing | (difference & !numerical))
+          sum((missing | (difference & !numerical)) & !approved_changed) +
+            sum(approved_changed & !matches_approved)
         },
         max_absolute_difference = max(error), tolerance = tolerance
       )
