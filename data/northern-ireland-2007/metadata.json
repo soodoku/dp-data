@@ -1,0 +1,368 @@
+{
+  "catalog": {
+    "poll_id": "northern-ireland-2007",
+    "title": "Northern Ireland",
+    "year": 2007,
+    "place": "Northern Ireland",
+    "topic": "Local education",
+    "mode": "face-to-face",
+    "collection": "cdd"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "northern-ireland-2007",
+      "field": "event_dates",
+      "value": "27 January 2007",
+      "reference_id": "northern-ireland-2007-stanford-event",
+      "source_locator": "Event description",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "field": "location",
+      "value": "Omagh, Northern Ireland",
+      "reference_id": "northern-ireland-2007-stanford-event",
+      "source_locator": "Event description",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "field": "population",
+      "value": "Parents of school-aged children in the Omagh area",
+      "reference_id": "northern-ireland-2007-stanford-event",
+      "source_locator": "Event description",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "field": "mode",
+      "value": "In-person Catholic and Protestant small-group discussions and expert plenaries",
+      "reference_id": "northern-ireland-2007-stanford-event",
+      "source_locator": "Event description",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "field": "topics",
+      "value": "Local education provision and school organization",
+      "reference_id": "northern-ireland-2007-stanford-event",
+      "source_locator": "Event description",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "field": "organizers",
+      "value": "Newcastle University-led team, Stanford Centre for Deliberative Democracy and Queen’s University Belfast School of Education",
+      "reference_id": "northern-ireland-2007-omagh-report",
+      "source_locator": "PDF pp.6–8",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "field": "recruitment",
+      "value": "Door-to-door interviews across Omagh District Council area, followed by invitation",
+      "reference_id": "northern-ireland-2007-omagh-report",
+      "source_locator": "PDF pp.6–8",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "field": "participants",
+      "value": "565 initial door-to-door interviews; 127 event participants",
+      "reference_id": "northern-ireland-2007-omagh-report",
+      "source_locator": "PDF pp.6–8",
+      "status": "reported",
+      "notes": null
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "northern-ireland-2007-stanford-event",
+      "poll_id": "northern-ireland-2007",
+      "kind": "event-report",
+      "title": "Deliberative Polling on Education Policy in Omagh, Northern Ireland",
+      "url": "https://deliberation.stanford.edu/news/deliberative-pollingr-education-policy-omagh-northern-ireland",
+      "local_artifact_id": null,
+      "accessed": "2026-09-24",
+      "notes": "Official source; publication date is not necessarily event date."
+    },
+    {
+      "reference_id": "northern-ireland-2007-local-cdd-northern-ireland-variables",
+      "poll_id": "northern-ireland-2007",
+      "kind": "codebook",
+      "title": "northern-ireland-2007 variables.csv",
+      "url": null,
+      "local_artifact_id": "cdd-northern-ireland-variables",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/northern-ireland-2007/variables.csv"
+    },
+    {
+      "reference_id": "northern-ireland-2007-local-cdd-northern-ireland-value-labels",
+      "poll_id": "northern-ireland-2007",
+      "kind": "codebook",
+      "title": "northern-ireland-2007 value-labels.csv",
+      "url": null,
+      "local_artifact_id": "cdd-northern-ireland-value-labels",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/northern-ireland-2007/value-labels.csv"
+    },
+    {
+      "reference_id": "northern-ireland-2007-local-material-e1ec2452199db976-northern-ireland-2007",
+      "poll_id": "northern-ireland-2007",
+      "kind": "paper",
+      "title": "fishkin-deep-divides",
+      "url": null,
+      "local_artifact_id": "material-e1ec2452199db976-northern-ireland-2007",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/northern-ireland-2007/papers/fishkin-deep-divides.pdf Earlier manuscript; the separate northern-ireland-paper.pdf is the Political Studies published version."
+    },
+    {
+      "reference_id": "northern-ireland-2007-local-material-10838bd9c27c047e-northern-ireland-2007",
+      "poll_id": "northern-ireland-2007",
+      "kind": "paper",
+      "title": "Deliberating across Deep Divides",
+      "url": null,
+      "local_artifact_id": "material-10838bd9c27c047e-northern-ireland-2007",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/northern-ireland-2007/papers/northern-ireland-paper.pdf"
+    },
+    {
+      "reference_id": "northern-ireland-2007-local-material-2001cfa6b043a14c-northern-ireland-2007",
+      "poll_id": "northern-ireland-2007",
+      "kind": "event-report",
+      "title": "Education: what provision do informed parents in Northern Ireland want?",
+      "url": null,
+      "local_artifact_id": "material-2001cfa6b043a14c-northern-ireland-2007",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/northern-ireland-2007/reports/northern-ireland-final-report.pdf"
+    },
+    {
+      "reference_id": "northern-ireland-2007-local-material-1f8563f84e1fa058-northern-ireland-2007",
+      "poll_id": "northern-ireland-2007",
+      "kind": "briefing-material",
+      "title": "A Deliberative Poll on Education: briefing document",
+      "url": null,
+      "local_artifact_id": "material-1f8563f84e1fa058-northern-ireland-2007",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/northern-ireland-2007/briefing/education-briefing.pdf"
+    },
+    {
+      "reference_id": "northern-ireland-2007-download-material-1f8563f84e1fa058",
+      "poll_id": "northern-ireland-2007",
+      "kind": "briefing-material",
+      "title": "A Deliberative Poll on Education: briefing document",
+      "url": "https://drive.google.com/uc?export=download&id=16LJyFSWLYZgDll0h6Sd-CmQXe-3o6sID",
+      "local_artifact_id": "material-1f8563f84e1fa058-northern-ireland-2007",
+      "accessed": "2026-09-24",
+      "notes": "Public source downloaded 2026-09-24; SHA-256 1f8563f84e1fa058c231c32a9bb6dc6fcece2eef38708fd7d35f0c3ecce78cc6"
+    },
+    {
+      "reference_id": "northern-ireland-2007-omagh-report",
+      "poll_id": "northern-ireland-2007",
+      "kind": "event-report",
+      "title": "A Deliberative Poll on Education: What provision do informed parents in Northern Ireland want?",
+      "url": null,
+      "local_artifact_id": "material-2001cfa6b043a14c-northern-ireland-2007",
+      "accessed": "2026-09-24",
+      "notes": "Local file: data/northern-ireland-2007/reports/northern-ireland-final-report.pdf"
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "northern-ireland-2007",
+      "material_type": "questionnaires",
+      "status": "not-found",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "northern-ireland-2007-stanford-event;northern-ireland-2007-local-cdd-northern-ireland-variables;northern-ireland-2007-local-cdd-northern-ireland-value-labels;northern-ireland-2007-local-material-e1ec2452199db976-northern-ireland-2007;northern-ireland-2007-local-material-10838bd9c27c047e-northern-ireland-2007;northern-ireland-2007-local-material-2001cfa6b043a14c-northern-ireland-2007;northern-ireland-2007-local-material-1f8563f84e1fa058-northern-ireland-2007;northern-ireland-2007-download-material-1f8563f84e1fa058;northern-ireland-2007-omagh-report"
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "material_type": "briefing-materials",
+      "status": "available",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "northern-ireland-2007-local-material-1f8563f84e1fa058-northern-ireland-2007;northern-ireland-2007-download-material-1f8563f84e1fa058"
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "material_type": "event-reports",
+      "status": "available",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "northern-ireland-2007-stanford-event;northern-ireland-2007-local-material-2001cfa6b043a14c-northern-ireland-2007;northern-ireland-2007-omagh-report"
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "material_type": "papers",
+      "status": "available",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "northern-ireland-2007-local-material-e1ec2452199db976-northern-ireland-2007;northern-ireland-2007-local-material-10838bd9c27c047e-northern-ireland-2007"
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "material_type": "codebooks",
+      "status": "partial",
+      "notes": "Generated variable/value-label dictionaries available where listed; a complete fielded codebook and all missing-value/routing instructions are not thereby established.",
+      "checked_references": "northern-ireland-2007-local-cdd-northern-ireland-variables;northern-ireland-2007-local-cdd-northern-ireland-value-labels"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "cor-sood-northern-ireland-2007",
+      "poll_id": "northern-ireland-2007",
+      "artifact_type": "data",
+      "title": "Cor-Sood scored knowledge battery",
+      "location": "data/northern-ireland-2007/knowledge-battery.csv",
+      "source_id": "cor-sood-northern-ireland-2007",
+      "original_archive_path": "replication/data.zip:data/ire.csv",
+      "sha256": "2cd6a57ebb658aba67f10c98a316e9a6bcdd28f6acafa70af1d9850797d29cee",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Scored binary items; row number is not a respondent identifier",
+      "relative_path": "knowledge-battery.csv"
+    },
+    {
+      "artifact_id": "cdd-northern-ireland-survey",
+      "poll_id": "northern-ireland-2007",
+      "artifact_type": "data",
+      "title": "northern-ireland-2007 survey.parquet",
+      "location": "data/northern-ireland-2007/survey.parquet",
+      "source_id": "cdd-northern-ireland-survey",
+      "original_archive_path": "data/Ireland/orig_data/nireland.dta",
+      "sha256": "b7ded85f23f5115aef6c45041081d9f1126fb8017b5bcd70d649d9215c9860c1",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-redacted",
+      "publication_status": "published",
+      "notes": "868 original rows; 80 verbatim fields excluded; numeric values and interview date retained; source_row added",
+      "relative_path": "survey.parquet"
+    },
+    {
+      "artifact_id": "cdd-northern-ireland-variables",
+      "poll_id": "northern-ireland-2007",
+      "artifact_type": "codebook",
+      "title": "northern-ireland-2007 variables.csv",
+      "location": "data/northern-ireland-2007/variables.csv",
+      "source_id": "cdd-northern-ireland-variables",
+      "original_archive_path": "data/Ireland/orig_data/nireland.dta",
+      "sha256": "2fefb0b85dde5d2f3abddb1ff20310451782b9deae360234675653df97f76811",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Generated from original variable attributes; contains no response text",
+      "relative_path": "variables.csv"
+    },
+    {
+      "artifact_id": "cdd-northern-ireland-value-labels",
+      "poll_id": "northern-ireland-2007",
+      "artifact_type": "codebook",
+      "title": "northern-ireland-2007 value-labels.csv",
+      "location": "data/northern-ireland-2007/value-labels.csv",
+      "source_id": "cdd-northern-ireland-value-labels",
+      "original_archive_path": "data/Ireland/orig_data/nireland.dta",
+      "sha256": "5bf170055ce60f92dc6dd8dfd2d2ce097cfa2a77c42aaa9a1655906db3164804",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Generated from original variable attributes; contains no response text",
+      "relative_path": "value-labels.csv"
+    },
+    {
+      "artifact_id": "cdd-northern-ireland-groups",
+      "poll_id": "northern-ireland-2007",
+      "artifact_type": "data",
+      "title": "northern-ireland-2007 groups.csv",
+      "location": "data/northern-ireland-2007/groups.csv",
+      "source_id": "cdd-northern-ireland-groups",
+      "original_archive_path": "data/Ireland/groups.csv",
+      "sha256": "cf7f63cb0c41bdf03f510e9a006b931d818e702bbd0ecd29ad029942b7ead6a1",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Exact headerless archive bytes; 124 unique respondent-to-group mappings",
+      "relative_path": "groups.csv"
+    },
+    {
+      "artifact_id": "material-e1ec2452199db976-northern-ireland-2007",
+      "poll_id": "northern-ireland-2007",
+      "artifact_type": "paper",
+      "title": "fishkin-deep-divides",
+      "location": "data/northern-ireland-2007/papers/fishkin-deep-divides.pdf",
+      "source_id": "material-e1ec2452199db976",
+      "original_archive_path": "meta_data/cdd_papers/fishkin-deep-divides.pdf",
+      "sha256": "e1ec2452199db97618205f38f23a61458b6c0e701993391f511e1e7a6472e227",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Historical metadata archive; content classified for reference. Instrument-to-variable and version-specific comparisons remain required. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "papers/fishkin-deep-divides.pdf"
+    },
+    {
+      "artifact_id": "material-10838bd9c27c047e-northern-ireland-2007",
+      "poll_id": "northern-ireland-2007",
+      "artifact_type": "paper",
+      "title": "Deliberating across Deep Divides",
+      "location": "data/northern-ireland-2007/papers/northern-ireland-paper.pdf",
+      "source_id": "material-10838bd9c27c047e",
+      "original_archive_path": null,
+      "sha256": "10838bd9c27c047e349cd2a8447c7146ec0822351ccad39d543b937a315a8f11",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Political Studies paper; compare Omagh parent sample, knowledge, policy and intergroup attitudes. DOI 10.1111/j.1467-9248.2012.01005.x. Source URL: https://drive.google.com/uc?export=download&id=1HXqkj1mpXUeFPDyKp67NfAYS3GkNwABD. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "papers/northern-ireland-paper.pdf"
+    },
+    {
+      "artifact_id": "material-2001cfa6b043a14c-northern-ireland-2007",
+      "poll_id": "northern-ireland-2007",
+      "artifact_type": "event-report",
+      "title": "Education: what provision do informed parents in Northern Ireland want?",
+      "location": "data/northern-ireland-2007/reports/northern-ireland-final-report.pdf",
+      "source_id": "material-2001cfa6b043a14c",
+      "original_archive_path": null,
+      "sha256": "2001cfa6b043a14ca42d4d951232544d3e5c2d6d78e08261f4bacfc457b81b40",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Full Omagh education report; consult instrument and reported group/knowledge outcomes. Source URL: https://drive.google.com/file/d/1zrhUz04CymS7Ud9nT9reZb_mVgRlHgt3/view. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "reports/northern-ireland-final-report.pdf"
+    },
+    {
+      "artifact_id": "northern-ireland-argument-codes",
+      "poll_id": "northern-ireland-2007",
+      "artifact_type": "data",
+      "title": "Unadjudicated argument coder labels",
+      "location": "data/northern-ireland-2007/argument-codes.parquet",
+      "source_id": "northern-ireland-argument-codes",
+      "original_archive_path": "soodoku/dp-nireland@929e45d32213e0dd4516e510731ddb9e2c309006:data/open_ended/fin.csv",
+      "sha256": "6f611737c3089f63cecda665d66874a64542790d4dcbbb9fd398a99c90d06b99",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-redacted",
+      "publication_status": "published",
+      "notes": "274 respondents; 65760 coder-slot records; respondent_id wave topic side slot coder raw_code. Extracted with R/argument_codes.R from source SHA256 314a9a9abb40c6094dab2e7c9af761041557b791240f0932b3848699e861f39c. Only ID and 240 coder fields retained; verbatim responses excluded. Missing labels preserved; no adjudication or scoring applied. Codes ch and la denote independent coders; monty denotes adjudicator. Source rights retained.",
+      "relative_path": "argument-codes.parquet"
+    },
+    {
+      "artifact_id": "material-1f8563f84e1fa058-northern-ireland-2007",
+      "poll_id": "northern-ireland-2007",
+      "artifact_type": "briefing-material",
+      "title": "A Deliberative Poll on Education: briefing document",
+      "location": "data/northern-ireland-2007/briefing/education-briefing.pdf",
+      "source_id": "material-1f8563f84e1fa058",
+      "original_archive_path": "https://drive.google.com/uc?export=download&id=16LJyFSWLYZgDll0h6Sd-CmQXe-3o6sID",
+      "sha256": "1f8563f84e1fa058c231c32a9bb6dc6fcece2eef38708fd7d35f0c3ecce78cc6",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Public source downloaded 2026-09-24; SHA-256 1f8563f84e1fa058c231c32a9bb6dc6fcece2eef38708fd7d35f0c3ecce78cc6",
+      "relative_path": "briefing/education-briefing.pdf"
+    }
+  ],
+  "document_previews": []
+}

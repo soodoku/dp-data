@@ -1,0 +1,288 @@
+{
+  "catalog": {
+    "poll_id": "tanzania-2015",
+    "title": "Tanzania",
+    "year": 2015,
+    "place": "Tanzania",
+    "topic": "Resource governance",
+    "mode": "face-to-face",
+    "collection": "public-replication"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "tanzania-2015",
+      "field": "event_dates",
+      "value": "Two-day event in April 2015; exact days not established here",
+      "reference_id": "tanzania-2015-resource-curse-paper",
+      "source_locator": "PDF pp.13–16, sections 3.1–3.2",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "tanzania-2015",
+      "field": "location",
+      "value": "Dar es Salaam, Tanzania",
+      "reference_id": "tanzania-2015-resource-curse-paper",
+      "source_locator": "PDF pp.13–16, sections 3.1–3.2",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "tanzania-2015",
+      "field": "participants",
+      "value": "Target baseline sample 2,000 adults; 702 information-treatment invitees complied; 401 invited to deliberation, 370 attended in 25 groups",
+      "reference_id": "tanzania-2015-resource-curse-paper",
+      "source_locator": "PDF pp.13–16, sections 3.1–3.2",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "tanzania-2015",
+      "field": "recruitment",
+      "value": "20 districts and 200 clusters sampled proportional to size; household random walks and electronic random adult selection; event travel/accommodation provided",
+      "reference_id": "tanzania-2015-resource-curse-paper",
+      "source_locator": "PDF pp.13–16, sections 3.1–3.2",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "tanzania-2015",
+      "field": "population",
+      "value": "Adult Tanzanians in rural and urban sampling frame",
+      "reference_id": "tanzania-2015-resource-curse-paper",
+      "source_locator": "PDF pp.13–16, sections 3.1–3.2",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "tanzania-2015",
+      "field": "mode",
+      "value": "In-person deliberation; baseline face-to-face interviews and telephone follow-up",
+      "reference_id": "tanzania-2015-resource-curse-paper",
+      "source_locator": "PDF pp.13–16, sections 3.1–3.2",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "tanzania-2015",
+      "field": "topics",
+      "value": "Natural-gas revenue allocation, investment, transfers, governance and transparency",
+      "reference_id": "tanzania-2015-resource-curse-paper",
+      "source_locator": "PDF pp.13–16, sections 3.1–3.2",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "tanzania-2015",
+      "field": "organizers",
+      "value": "Center for Global Development and REPOA with Stanford deliberative-poll researchers",
+      "reference_id": "tanzania-2015-cgd-project",
+      "source_locator": "Project description and credits",
+      "status": "reported",
+      "notes": null
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "tanzania-2015-stanford-event",
+      "poll_id": "tanzania-2015",
+      "kind": "event-report",
+      "title": "Tanzania: First National Deliberative Poll in Africa",
+      "url": "https://deliberation.stanford.edu/news/tanzania-first-national-deliberative-poll-africa",
+      "local_artifact_id": null,
+      "accessed": "2026-09-24",
+      "notes": "Official source; publication date is not necessarily event date."
+    },
+    {
+      "reference_id": "tanzania-2015-local-material-76ef3bf6732b439c-tanzania-2015",
+      "poll_id": "tanzania-2015",
+      "kind": "paper",
+      "title": "Deliberative Democracy and the Resource Curse: A Nationwide Experiment in Tanzania",
+      "url": null,
+      "local_artifact_id": "material-76ef3bf6732b439c-tanzania-2015",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/tanzania-2015/papers/tanzania-working-paper.pdf"
+    },
+    {
+      "reference_id": "tanzania-2015-local-material-fa4030127bcfcc75-tanzania-2015",
+      "poll_id": "tanzania-2015",
+      "kind": "event-report",
+      "title": "How should Tanzania use its natural gas?",
+      "url": null,
+      "local_artifact_id": "material-fa4030127bcfcc75-tanzania-2015",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/tanzania-2015/reports/tanzania-final-report.pdf"
+    },
+    {
+      "reference_id": "tanzania-2015-local-material-794d347d2c778073-tanzania-2015",
+      "poll_id": "tanzania-2015",
+      "kind": "research-design",
+      "title": "Tanzania natural gas experiment: pre-analysis plan",
+      "url": null,
+      "local_artifact_id": "material-794d347d2c778073-tanzania-2015",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/tanzania-2015/design/tanzania-preanalysis-plan.pdf"
+    },
+    {
+      "reference_id": "tanzania-2015-local-oos-tanzania-appendix",
+      "poll_id": "tanzania-2015",
+      "kind": "event-report",
+      "title": "tanzania-2015: tanzania_appendix.pdf",
+      "url": null,
+      "local_artifact_id": "oos-tanzania-appendix",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/tanzania-2015/reports/tanzania_appendix.pdf"
+    },
+    {
+      "reference_id": "tanzania-2015-resource-curse-paper",
+      "poll_id": "tanzania-2015",
+      "kind": "paper",
+      "title": "Deliberative Democracy and the Resource Curse: A Nationwide Experiment in Tanzania",
+      "url": "https://www.cgdev.org/sites/default/files/deliberative-democracy-resource-curse-nationwide-experiment-tanzania.pdf",
+      "local_artifact_id": "material-76ef3bf6732b439c-tanzania-2015",
+      "accessed": "2026-09-24",
+      "notes": "CGD working-paper version; distinguish from later published versions."
+    },
+    {
+      "reference_id": "tanzania-2015-cgd-project",
+      "poll_id": "tanzania-2015",
+      "kind": "event-report",
+      "title": "Tanzania Poll Results: Can Deliberative Democracy Cure the Resource Curse?",
+      "url": "https://www.cgdev.org/blog/tanzania-poll-results-can-deliberative-democracy-cure-resource-curse",
+      "local_artifact_id": null,
+      "accessed": "2026-09-24",
+      "notes": "Official source; publication date is not necessarily event date."
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "tanzania-2015",
+      "material_type": "questionnaires",
+      "status": "partial",
+      "notes": "The local pre-analysis plan and research appendix specify outcome items and variable mappings. A complete standalone fielded questionnaire was not located; do not equate index definitions with the full instrument.",
+      "checked_references": "tanzania-2015-stanford-event;tanzania-2015-local-material-76ef3bf6732b439c-tanzania-2015;tanzania-2015-local-material-fa4030127bcfcc75-tanzania-2015;tanzania-2015-local-material-794d347d2c778073-tanzania-2015;tanzania-2015-local-oos-tanzania-appendix;tanzania-2015-resource-curse-paper;tanzania-2015-cgd-project"
+    },
+    {
+      "poll_id": "tanzania-2015",
+      "material_type": "briefing-materials",
+      "status": "not-found",
+      "notes": "Paper section 3.1 describes a roughly 30-minute information video vetted by researchers, industry, civil society and politicians. A standalone video script or briefing booklet was not located in inspected sources.",
+      "checked_references": "tanzania-2015-stanford-event;tanzania-2015-local-material-76ef3bf6732b439c-tanzania-2015;tanzania-2015-local-material-fa4030127bcfcc75-tanzania-2015;tanzania-2015-local-material-794d347d2c778073-tanzania-2015;tanzania-2015-local-oos-tanzania-appendix;tanzania-2015-resource-curse-paper;tanzania-2015-cgd-project"
+    },
+    {
+      "poll_id": "tanzania-2015",
+      "material_type": "event-reports",
+      "status": "available",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "tanzania-2015-stanford-event;tanzania-2015-local-material-fa4030127bcfcc75-tanzania-2015;tanzania-2015-local-oos-tanzania-appendix;tanzania-2015-cgd-project"
+    },
+    {
+      "poll_id": "tanzania-2015",
+      "material_type": "papers",
+      "status": "available",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "tanzania-2015-local-material-76ef3bf6732b439c-tanzania-2015;tanzania-2015-resource-curse-paper"
+    },
+    {
+      "poll_id": "tanzania-2015",
+      "material_type": "codebooks",
+      "status": "not-found",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "tanzania-2015-stanford-event;tanzania-2015-local-material-76ef3bf6732b439c-tanzania-2015;tanzania-2015-local-material-fa4030127bcfcc75-tanzania-2015;tanzania-2015-local-material-794d347d2c778073-tanzania-2015;tanzania-2015-local-oos-tanzania-appendix;tanzania-2015-resource-curse-paper;tanzania-2015-cgd-project"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "tanzania-public-participants",
+      "poll_id": "tanzania-2015",
+      "artifact_type": "data",
+      "title": "Tanzania participant data",
+      "location": "data/tanzania-2015/participants.dta",
+      "source_id": "tanzania-2015",
+      "original_archive_path": null,
+      "sha256": "38c7faf5bec7538e32e04c3f62b5c4c43b8ad4c2d2b10b5ef00cf80b577b7af8",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "CC0 Dataverse deposit",
+      "relative_path": "participants.dta"
+    },
+    {
+      "artifact_id": "material-76ef3bf6732b439c-tanzania-2015",
+      "poll_id": "tanzania-2015",
+      "artifact_type": "paper",
+      "title": "Deliberative Democracy and the Resource Curse: A Nationwide Experiment in Tanzania",
+      "location": "data/tanzania-2015/papers/tanzania-working-paper.pdf",
+      "source_id": "material-76ef3bf6732b439c",
+      "original_archive_path": null,
+      "sha256": "76ef3bf6732b439cd76742f0c04e3b400b9331c5f83099af00fde1bf338c1040",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "CGD working paper 548; randomized design, analysis samples and policy outcomes. Distinguish this version from the later World Politics publication. Source URL: https://www.cgdev.org/sites/default/files/deliberative-democracy-resource-curse-nationwide-experiment-tanzania.pdf. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "papers/tanzania-working-paper.pdf"
+    },
+    {
+      "artifact_id": "material-fa4030127bcfcc75-tanzania-2015",
+      "poll_id": "tanzania-2015",
+      "artifact_type": "event-report",
+      "title": "How should Tanzania use its natural gas?",
+      "location": "data/tanzania-2015/reports/tanzania-final-report.pdf",
+      "source_id": "material-fa4030127bcfcc75",
+      "original_archive_path": null,
+      "sha256": "fa4030127bcfcc7576ba7ebbc04217939342ff5dbb317d84e41c6c8f4989d6be",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "3ie impact evaluation report; recruitment, experimental arms and reported results for independent checks. Source URL: https://www.3ieimpact.org/sites/default/files/2019-01/IE70-TW8-Tanzania-democratic.pdf. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "reports/tanzania-final-report.pdf"
+    },
+    {
+      "artifact_id": "material-794d347d2c778073-tanzania-2015",
+      "poll_id": "tanzania-2015",
+      "artifact_type": "research-design",
+      "title": "Tanzania natural gas experiment: pre-analysis plan",
+      "location": "data/tanzania-2015/design/tanzania-preanalysis-plan.pdf",
+      "source_id": "material-794d347d2c778073",
+      "original_archive_path": null,
+      "sha256": "794d347d2c778073f875066e89ce1c0842ad059ac968eeb807bbc564ceef1385",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Pre-specified design and measurement; distinguish planned definitions and targets from realized fieldwork. Source URL: https://3ieimpact.org/sites/default/files/2019-01/tw81001-appendix-i.pdf. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "design/tanzania-preanalysis-plan.pdf"
+    },
+    {
+      "artifact_id": "oos-tanzania-groups",
+      "poll_id": "tanzania-2015",
+      "artifact_type": "data",
+      "title": "tanzania-2015: tanzania_groups.tab",
+      "location": "data/tanzania-2015/tanzania_groups.tab",
+      "source_id": "oos-tanzania-groups",
+      "original_archive_path": null,
+      "sha256": "3003cef37a4b02bb34d0d97404c619f80c23988751988899c0dd8add336f875a",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged public OOS source; upstream centralization authorized. Study tanzania-2015. Original URL in oos_sources.",
+      "relative_path": "tanzania_groups.tab"
+    },
+    {
+      "artifact_id": "oos-tanzania-appendix",
+      "poll_id": "tanzania-2015",
+      "artifact_type": "event-report",
+      "title": "tanzania-2015: tanzania_appendix.pdf",
+      "location": "data/tanzania-2015/reports/tanzania_appendix.pdf",
+      "source_id": "oos-tanzania-appendix",
+      "original_archive_path": null,
+      "sha256": "341447ac8fc3da3f5b96b6519b6f202d48e7385ca0d4010891a87f52d3211629",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged public OOS source; upstream centralization authorized. Study tanzania-2015. Original URL in oos_sources.",
+      "relative_path": "reports/tanzania_appendix.pdf"
+    }
+  ],
+  "document_previews": []
+}

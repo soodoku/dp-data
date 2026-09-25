@@ -124,6 +124,24 @@ Original archive paths, download URLs, checksums, and comparison limitations are
 recorded in the central catalog. Identical copies are consolidated; different
 versions remain separate.
 
+Each poll folder also contains generated `metadata.json`: the historical catalog
+entry, sourced event facts, references, material coverage, and links to local
+originals and PDF previews. `metadata/poll_facts.csv` retains conflicting claims
+with source locators; it does not revise historical identifiers or scoring.
+`metadata/poll_references.csv` distinguishes research papers from press releases,
+event reports, instruments, and briefing materials. Coverage in
+`metadata/poll_material_coverage.csv` records what was located and what remains
+missing among the sources checked. Run `make manifests` to refresh these views.
+
+Office documents retain their originals alongside PDF previews registered in
+`metadata/document_previews.csv`. Preview generation requires LibreOffice,
+Poppler (`pdfinfo` and `pdftotext`), and `openpyxl` for workbooks. Install the Python
+dependency in your environment with `python3 -m pip install openpyxl`, then run
+`make previews`. The converter adjusts print layout in temporary workbook copies.
+It checks registered hashes and skips unchanged pairs; ordinary `make check`
+validates existing previews without regenerating PDFs. Preview conversion is for
+reading source documentation and does not feed numerical builds.
+
 `LICENSE` covers this repository's code. Data retain the license recorded for
 each input in `metadata/source_files.csv`. Reference materials retain their
 source copyrights; `NOASSERTION` means no redistribution license has been

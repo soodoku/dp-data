@@ -1,0 +1,340 @@
+{
+  "catalog": {
+    "poll_id": "marousi-2006",
+    "title": "Marousi, Greece",
+    "year": 2006,
+    "place": "Greece",
+    "topic": "Choosing a mayoral candidate",
+    "mode": "face-to-face",
+    "collection": "cdd"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "marousi-2006",
+      "field": "participants",
+      "value": "1,275 baseline telephone interviewees; 153 attended and completed arrival questionnaire; 138 completed departure questionnaire",
+      "reference_id": "marousi-2006-athens-paper",
+      "source_locator": "PDF pp.4–5",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "marousi-2006",
+      "field": "population",
+      "value": "Eligible Marousi voters, including people not affiliated with PASOK",
+      "reference_id": "marousi-2006-athens-paper",
+      "source_locator": "PDF pp.4–5",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "marousi-2006",
+      "field": "recruitment",
+      "value": "Initial telephone survey followed by event invitation",
+      "reference_id": "marousi-2006-athens-paper",
+      "source_locator": "PDF pp.4–5",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "marousi-2006",
+      "field": "organizers",
+      "value": "PASOK under George Papandreou, with John Panaretos and deliberative-poll research team",
+      "reference_id": "marousi-2006-athens-paper",
+      "source_locator": "PDF pp.4–5",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "marousi-2006",
+      "field": "topics",
+      "value": "Selection among PASOK mayoral candidates and municipal priorities",
+      "reference_id": "marousi-2006-athens-paper",
+      "source_locator": "PDF pp.4–5",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "marousi-2006",
+      "field": "mode",
+      "value": "In-person small-group/plenary deliberation followed by secret-ballot candidate selection",
+      "reference_id": "marousi-2006-athens-paper",
+      "source_locator": "PDF pp.4–5",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "marousi-2006",
+      "field": "event_dates",
+      "value": "4 June 2006",
+      "reference_id": "marousi-2006-marousi-results",
+      "source_locator": "PDF p.1",
+      "status": "reported",
+      "notes": null
+    },
+    {
+      "poll_id": "marousi-2006",
+      "field": "location",
+      "value": "Marousi, Athens metropolitan area, Greece",
+      "reference_id": "marousi-2006-marousi-results",
+      "source_locator": "PDF p.1",
+      "status": "reported",
+      "notes": null
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "marousi-2006-stanford-event",
+      "poll_id": "marousi-2006",
+      "kind": "event-report",
+      "title": "Deliberative Polling in the Municipality of Marousi, Greece",
+      "url": "https://deliberation.stanford.edu/news/deliberative-pollingr-municipality-marousi-greece",
+      "local_artifact_id": null,
+      "accessed": "2026-09-24",
+      "notes": "Official source; publication date is not necessarily event date."
+    },
+    {
+      "reference_id": "marousi-2006-local-marousi-questionnaire",
+      "poll_id": "marousi-2006",
+      "kind": "questionnaire",
+      "title": "Marousi English questionnaire",
+      "url": null,
+      "local_artifact_id": "marousi-questionnaire",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/marousi-2006/questionnaire.pdf"
+    },
+    {
+      "reference_id": "marousi-2006-local-marousi-knowledge-distributions",
+      "poll_id": "marousi-2006",
+      "kind": "event-report",
+      "title": "Marousi knowledge item distributions",
+      "url": null,
+      "local_artifact_id": "marousi-knowledge-distributions",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/marousi-2006/knowledge-item-distributions.doc"
+    },
+    {
+      "reference_id": "marousi-2006-local-material-e4ff48dd7ec7136b-marousi-2006",
+      "poll_id": "marousi-2006",
+      "kind": "questionnaire",
+      "title": "Marousi mayoral candidate questionnaire",
+      "url": null,
+      "local_artifact_id": "material-e4ff48dd7ec7136b-marousi-2006",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/marousi-2006/questionnaires/marousi-questionnaire.pdf"
+    },
+    {
+      "reference_id": "marousi-2006-local-material-7da07755d2a41276-marousi-2006",
+      "poll_id": "marousi-2006",
+      "kind": "event-report",
+      "title": "Marousi mayoral candidate selection results",
+      "url": null,
+      "local_artifact_id": "material-7da07755d2a41276-marousi-2006",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/marousi-2006/reports/marousi-results.pdf"
+    },
+    {
+      "reference_id": "marousi-2006-local-material-155b82dabd668a4c-marousi-2006",
+      "poll_id": "marousi-2006",
+      "kind": "paper",
+      "title": "Returning Deliberative Democracy to Athens: Deliberative Polling for Candidate Selection",
+      "url": null,
+      "local_artifact_id": "material-155b82dabd668a4c-marousi-2006",
+      "accessed": "2026-09-24",
+      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/marousi-2006/papers/returning-deliberative-democracy-athens.pdf"
+    },
+    {
+      "reference_id": "marousi-2006-download-material-155b82dabd668a4c",
+      "poll_id": "marousi-2006",
+      "kind": "paper",
+      "title": "Returning Deliberative Democracy to Athens: Deliberative Polling for Candidate Selection",
+      "url": "https://drive.google.com/uc?export=download&id=1Fpln6dp0Kb7ooqRHeyjmk0YYlOhJ5sCj",
+      "local_artifact_id": "material-155b82dabd668a4c-marousi-2006",
+      "accessed": "2026-09-24",
+      "notes": "Public source downloaded 2026-09-24; SHA-256 155b82dabd668a4ca38f6354fab7bcda7c7a41fe615a01b24c833029dfff024f"
+    },
+    {
+      "reference_id": "marousi-2006-athens-paper",
+      "poll_id": "marousi-2006",
+      "kind": "paper",
+      "title": "Returning Deliberative Democracy to Athens: Deliberative Polling for Candidate Selection",
+      "url": "https://deliberation.stanford.edu/news/returning-deliberative-democracy-athens-deliberative-pollingr-candidate-selection",
+      "local_artifact_id": "material-155b82dabd668a4c-marousi-2006",
+      "accessed": "2026-09-24",
+      "notes": "APSA 2008 conference paper, not a journal article."
+    },
+    {
+      "reference_id": "marousi-2006-marousi-results",
+      "poll_id": "marousi-2006",
+      "kind": "event-report",
+      "title": "Results of the first Deliberative Poll for Candidate Selection in Marousi, Greece",
+      "url": null,
+      "local_artifact_id": "material-7da07755d2a41276-marousi-2006",
+      "accessed": "2026-09-24",
+      "notes": "Local file: data/marousi-2006/reports/marousi-results.pdf"
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "marousi-2006",
+      "material_type": "questionnaires",
+      "status": "available",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "marousi-2006-local-marousi-questionnaire;marousi-2006-local-material-e4ff48dd7ec7136b-marousi-2006"
+    },
+    {
+      "poll_id": "marousi-2006",
+      "material_type": "briefing-materials",
+      "status": "not-found",
+      "notes": "No event-specific briefing file located in inspected local poll manifests or official project/research links; not evidence that no briefing existed.",
+      "checked_references": "marousi-2006-stanford-event;marousi-2006-local-marousi-questionnaire;marousi-2006-local-marousi-knowledge-distributions;marousi-2006-local-material-e4ff48dd7ec7136b-marousi-2006;marousi-2006-local-material-7da07755d2a41276-marousi-2006;marousi-2006-local-material-155b82dabd668a4c-marousi-2006;marousi-2006-download-material-155b82dabd668a4c;marousi-2006-athens-paper;marousi-2006-marousi-results"
+    },
+    {
+      "poll_id": "marousi-2006",
+      "material_type": "event-reports",
+      "status": "available",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "marousi-2006-stanford-event;marousi-2006-local-marousi-knowledge-distributions;marousi-2006-local-material-7da07755d2a41276-marousi-2006;marousi-2006-marousi-results"
+    },
+    {
+      "poll_id": "marousi-2006",
+      "material_type": "papers",
+      "status": "available",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "marousi-2006-local-material-155b82dabd668a4c-marousi-2006;marousi-2006-download-material-155b82dabd668a4c;marousi-2006-athens-paper"
+    },
+    {
+      "poll_id": "marousi-2006",
+      "material_type": "codebooks",
+      "status": "not-found",
+      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
+      "checked_references": "marousi-2006-stanford-event;marousi-2006-local-marousi-questionnaire;marousi-2006-local-marousi-knowledge-distributions;marousi-2006-local-material-e4ff48dd7ec7136b-marousi-2006;marousi-2006-local-material-7da07755d2a41276-marousi-2006;marousi-2006-local-material-155b82dabd668a4c-marousi-2006;marousi-2006-download-material-155b82dabd668a4c;marousi-2006-athens-paper;marousi-2006-marousi-results"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "marousi-public-participants",
+      "poll_id": "marousi-2006",
+      "artifact_type": "data",
+      "title": "Marousi participant data",
+      "location": "data/marousi-2006/participants.csv",
+      "source_id": "dp-learning-greece",
+      "original_archive_path": null,
+      "sha256": "32a031325309136318ba9ab8f2a500956df05f0e2bdaa75b78ee2bff4aa23bb2",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Public downstream source; provenance precedes migration into this repository",
+      "relative_path": "participants.csv"
+    },
+    {
+      "artifact_id": "marousi-questionnaire",
+      "poll_id": "marousi-2006",
+      "artifact_type": "questionnaire",
+      "title": "Marousi English questionnaire",
+      "location": "data/marousi-2006/questionnaire.pdf",
+      "source_id": null,
+      "original_archive_path": "data/Greece/2006-greece-marousi.pdf",
+      "sha256": "348eeaf5492a3143c01c42336ecfa573fbf8b565135669d2f45d0d7be0309a14",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Inspected questionnaire; contains no respondent records",
+      "relative_path": "questionnaire.pdf"
+    },
+    {
+      "artifact_id": "marousi-knowledge-distributions",
+      "poll_id": "marousi-2006",
+      "artifact_type": "event-report",
+      "title": "Marousi knowledge item distributions",
+      "location": "data/marousi-2006/knowledge-item-distributions.doc",
+      "source_id": null,
+      "original_archive_path": "data/Greece/Greece Distribution of Knowledge Questions.doc",
+      "sha256": "bcb07e20d82e33724fcd237934e6c588d557a170d9f46856d91c49264ddd0835",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Aggregate distribution output; contains no respondent records",
+      "relative_path": "knowledge-item-distributions.doc"
+    },
+    {
+      "artifact_id": "material-e4ff48dd7ec7136b-marousi-2006",
+      "poll_id": "marousi-2006",
+      "artifact_type": "questionnaire",
+      "title": "Marousi mayoral candidate questionnaire",
+      "location": "data/marousi-2006/questionnaires/marousi-questionnaire.pdf",
+      "source_id": "material-e4ff48dd7ec7136b",
+      "original_archive_path": null,
+      "sha256": "e4ff48dd7ec7136bf9dd8f5a758fe001240f88ff0d4e74f5d5b63539c06a0abe",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Instrument wording and response categories; check translation against fielded Greek version. Source URL: https://drive.google.com/uc?export=download&id=19H3Ffrzc_MQPuEJ4sxhBzzRhiu4fARem. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "questionnaires/marousi-questionnaire.pdf"
+    },
+    {
+      "artifact_id": "material-7da07755d2a41276-marousi-2006",
+      "poll_id": "marousi-2006",
+      "artifact_type": "event-report",
+      "title": "Marousi mayoral candidate selection results",
+      "location": "data/marousi-2006/reports/marousi-results.pdf",
+      "source_id": "material-7da07755d2a41276",
+      "original_archive_path": null,
+      "sha256": "7da07755d2a41276c24dc654980865220855e23b590a7f7a3d99c83c3353a15d",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Use for candidate preference and knowledge benchmarks; reconcile respondent samples. Source URL: https://drive.google.com/file/d/1LTEzJR5XHzR_Dru8RPsQvLbx_YLE0LrY/view?usp=sharing. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "reports/marousi-results.pdf"
+    },
+    {
+      "artifact_id": "material-155b82dabd668a4c-marousi-2006",
+      "poll_id": "marousi-2006",
+      "artifact_type": "paper",
+      "title": "Returning Deliberative Democracy to Athens: Deliberative Polling for Candidate Selection",
+      "location": "data/marousi-2006/papers/returning-deliberative-democracy-athens.pdf",
+      "source_id": "material-155b82dabd668a4c",
+      "original_archive_path": "https://drive.google.com/uc?export=download&id=1Fpln6dp0Kb7ooqRHeyjmk0YYlOhJ5sCj",
+      "sha256": "155b82dabd668a4ca38f6354fab7bcda7c7a41fe615a01b24c833029dfff024f",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Public source downloaded 2026-09-24; SHA-256 155b82dabd668a4ca38f6354fab7bcda7c7a41fe615a01b24c833029dfff024f",
+      "relative_path": "papers/returning-deliberative-democracy-athens.pdf"
+    },
+    {
+      "artifact_id": "material-f5339f67f69549f1-marousi-2006",
+      "poll_id": "marousi-2006",
+      "artifact_type": "event-report",
+      "title": "Marousi knowledge item distributions (PDF preview)",
+      "location": "data/marousi-2006/knowledge-item-distributions.pdf",
+      "source_id": "material-f5339f67f69549f1",
+      "original_archive_path": null,
+      "sha256": "f5339f67f69549f14caedb03d1c96df7c87879cd08d4127ca9ef45ee3c324bb7",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Generated from data/marousi-2006/knowledge-item-distributions.doc. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "relative_path": "knowledge-item-distributions.pdf"
+    }
+  ],
+  "document_previews": [
+    {
+      "source_path": "data/marousi-2006/knowledge-item-distributions.doc",
+      "preview_path": "data/marousi-2006/knowledge-item-distributions.pdf",
+      "source_sha256": "bcb07e20d82e33724fcd237934e6c588d557a170d9f46856d91c49264ddd0835",
+      "preview_sha256": "f5339f67f69549f14caedb03d1c96df7c87879cd08d4127ca9ef45ee3c324bb7",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "3",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-representative-pages",
+      "visual_pages": "1;2;3",
+      "source_token_coverage": "1.0",
+      "distinct_word_coverage": "1.0",
+      "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
+      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+    }
+  ]
+}

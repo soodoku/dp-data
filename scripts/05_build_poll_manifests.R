@@ -16,3 +16,23 @@ artifacts |>
       na = ""
     )
   })
+
+
+polls <- read_metadata("polls")
+references <- read_documentation("poll_references")
+facts <- read_documentation("poll_facts")
+coverage <- read_documentation("poll_material_coverage")
+previews <- read_documentation("document_previews")
+
+purrr::walk(seq_len(nrow(polls)), function(index) {
+  poll <- polls[index, ]
+  directory <- project_path("data", poll$poll_id)
+  fs::dir_create(directory)
+  document <- poll_documentation(
+    poll, dplyr::select(artifacts, -"directory"), references,
+    facts, coverage, previews
+  )
+  jsonlite::write_json(document, file.path(directory, "metadata.json"),
+    auto_unbox = TRUE, pretty = TRUE, na = "null", dataframe = "rows"
+  )
+})

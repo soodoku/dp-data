@@ -1,6 +1,6 @@
 R = Rscript
 
-.PHONY: compare-polardata compare-respondents respondents polardata linkage restore package manifests disclosure validate test lint check import-surveys knowledge audit-surveys audit-downstream
+.PHONY: previews compare-polardata compare-respondents respondents polardata linkage restore package manifests disclosure validate test lint check import-surveys knowledge audit-surveys audit-downstream
 
 restore:
 	$(R) -e 'renv::restore(prompt = FALSE)'
@@ -19,6 +19,7 @@ validate:
 
 test:
 	$(R) -e 'testthat::test_dir("tests/testthat", reporter = "summary")'
+	python3 -m unittest discover -s tests -p 'test_*.py'
 
 lint:
 	$(R) -e 'results <- lintr::lint_dir("."); print(results); quit(status = length(results) > 0L)'
@@ -52,3 +53,6 @@ check: package manifests validate knowledge linkage polardata compare-polardata 
 
 audit-downstream:
 	$(R) scripts/09_audit_downstream_sources.R
+
+previews:
+	python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json

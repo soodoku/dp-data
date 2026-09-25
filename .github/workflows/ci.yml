@@ -21,3 +21,7 @@ jobs:
       - uses: r-lib/actions/setup-renv@v2
       - run: make check
 
+      - name: Verify generated metadata is committed
+        run: |
+          git diff --exit-code -- datapackage.json data
+          test -z "$(git ls-files --others --exclude-standard data)"

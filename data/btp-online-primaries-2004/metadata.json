@@ -1,0 +1,365 @@
+{
+  "catalog": {
+    "poll_id": "btp-online-primaries-2004",
+    "title": "By the People 2004 Online Primaries",
+    "year": 2004,
+    "place": "United States",
+    "topic": "Presidential primaries",
+    "mode": "online",
+    "collection": "cdd"
+  },
+  "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
+  "facts": [
+    {
+      "poll_id": "btp-online-primaries-2004",
+      "field": "event_dates",
+      "value": "Five weekly sessions beginning 2004-01-19; through mid-February 2004",
+      "reference_id": "us-btp-online-primaries-2004-material-fe97b92d2e9a1c8e-btp-online-primaries-2004",
+      "source_locator": "Research manuscript pp 5–10; design and online sessions",
+      "status": "reported",
+      "notes": "Two catalog IDs describe related source variants/cohorts. Shared paper does not justify merging IDs or treating every denominator as identical."
+    },
+    {
+      "poll_id": "btp-online-primaries-2004",
+      "field": "location",
+      "value": "United States national online sample",
+      "reference_id": "us-btp-online-primaries-2004-material-fe97b92d2e9a1c8e-btp-online-primaries-2004",
+      "source_locator": "Research manuscript pp 5–10; design and online sessions",
+      "status": "reported",
+      "notes": "Two catalog IDs describe related source variants/cohorts. Shared paper does not justify merging IDs or treating every denominator as identical."
+    },
+    {
+      "poll_id": "btp-online-primaries-2004",
+      "field": "organizers",
+      "value": "Stanford research team Iyengar, Luskin and Fishkin; Knowledge Networks panel/recruitment",
+      "reference_id": "us-btp-online-primaries-2004-material-fe97b92d2e9a1c8e-btp-online-primaries-2004",
+      "source_locator": "Research manuscript pp 5–10; design and online sessions",
+      "status": "reported",
+      "notes": "Two catalog IDs describe related source variants/cohorts. Shared paper does not justify merging IDs or treating every denominator as identical."
+    },
+    {
+      "poll_id": "btp-online-primaries-2004",
+      "field": "population",
+      "value": "Adult Americans; manuscript analysis focuses on Democrats and independents",
+      "reference_id": "us-btp-online-primaries-2004-material-fe97b92d2e9a1c8e-btp-online-primaries-2004",
+      "source_locator": "Research manuscript pp 5–10; design and online sessions",
+      "status": "reported",
+      "notes": "Two catalog IDs describe related source variants/cohorts. Shared paper does not justify merging IDs or treating every denominator as identical."
+    },
+    {
+      "poll_id": "btp-online-primaries-2004",
+      "field": "recruitment",
+      "value": "755 randomly sampled Knowledge Networks adults plus 247 veterans of prior foreign-policy poll; panel recruited by telephone and supplied access when needed",
+      "reference_id": "us-btp-online-primaries-2004-material-fe97b92d2e9a1c8e-btp-online-primaries-2004",
+      "source_locator": "Research manuscript pp 5–10; design and online sessions",
+      "status": "reported",
+      "notes": "Two catalog IDs describe related source variants/cohorts. Shared paper does not justify merging IDs or treating every denominator as identical."
+    },
+    {
+      "poll_id": "btp-online-primaries-2004",
+      "field": "participants",
+      "value": "385 agreed; 317 completed pre-survey; 284 completed post-survey; 180 Democrats/independents analyzed (75 veterans,105 novices). Separate control: 762 invited,546 pre,460 post",
+      "reference_id": "us-btp-online-primaries-2004-material-fe97b92d2e9a1c8e-btp-online-primaries-2004",
+      "source_locator": "Research manuscript pp 5–10; design and online sessions",
+      "status": "reported",
+      "notes": "Two catalog IDs describe related source variants/cohorts. Shared paper does not justify merging IDs or treating every denominator as identical."
+    },
+    {
+      "poll_id": "btp-online-primaries-2004",
+      "field": "mode",
+      "value": "Moderated online voice discussions; five weekly sessions",
+      "reference_id": "us-btp-online-primaries-2004-material-fe97b92d2e9a1c8e-btp-online-primaries-2004",
+      "source_locator": "Research manuscript pp 5–10; design and online sessions",
+      "status": "reported",
+      "notes": "Two catalog IDs describe related source variants/cohorts. Shared paper does not justify merging IDs or treating every denominator as identical."
+    },
+    {
+      "poll_id": "btp-online-primaries-2004",
+      "field": "topics",
+      "value": "2004 presidential nominations, candidate positions, foreign policy, economy and health care",
+      "reference_id": "us-btp-online-primaries-2004-material-fe97b92d2e9a1c8e-btp-online-primaries-2004",
+      "source_locator": "Research manuscript pp 5–10; design and online sessions",
+      "status": "reported",
+      "notes": "Two catalog IDs describe related source variants/cohorts. Shared paper does not justify merging IDs or treating every denominator as identical."
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "us-btp-online-primaries-2004-cdd-btp-online-primaries-2004-survey-variables",
+      "poll_id": "btp-online-primaries-2004",
+      "kind": "codebook",
+      "title": "Source variables",
+      "url": null,
+      "local_artifact_id": "cdd-btp-online-primaries-2004-survey-variables",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/btp-online-primaries-2004/variables.csv; Machine-extracted source variable/value labels, not a complete authored codebook."
+    },
+    {
+      "reference_id": "us-btp-online-primaries-2004-cdd-btp-online-primaries-2004-survey-value-labels",
+      "poll_id": "btp-online-primaries-2004",
+      "kind": "codebook",
+      "title": "Source value-labels",
+      "url": null,
+      "local_artifact_id": "cdd-btp-online-primaries-2004-survey-value-labels",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/btp-online-primaries-2004/value-labels.csv; Machine-extracted source variable/value labels, not a complete authored codebook."
+    },
+    {
+      "reference_id": "us-btp-online-primaries-2004-cdd-btp-online-primaries-2004-questionnaires",
+      "poll_id": "btp-online-primaries-2004",
+      "kind": "questionnaire",
+      "title": "Original questionnaires.doc",
+      "url": null,
+      "local_artifact_id": "cdd-btp-online-primaries-2004-questionnaires",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/btp-online-primaries-2004/questionnaires.doc"
+    },
+    {
+      "reference_id": "us-btp-online-primaries-2004-material-f3671213505686ab-btp-online-primaries-2004",
+      "poll_id": "btp-online-primaries-2004",
+      "kind": "paper",
+      "title": "presidential-nomination",
+      "url": null,
+      "local_artifact_id": "material-f3671213505686ab-btp-online-primaries-2004",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/shared/papers/presidential-nomination.pdf"
+    },
+    {
+      "reference_id": "us-btp-online-primaries-2004-material-fe97b92d2e9a1c8e-btp-online-primaries-2004",
+      "poll_id": "btp-online-primaries-2004",
+      "kind": "paper",
+      "title": "Deliberative Preferences in the Presidential Nomination Campaign",
+      "url": null,
+      "local_artifact_id": "material-fe97b92d2e9a1c8e-btp-online-primaries-2004",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/shared/papers/primaries-paper.pdf"
+    },
+    {
+      "reference_id": "us-btp-online-primaries-2004-material-7ad6c3c2eb5f0731-btp-online-primaries-2004",
+      "poll_id": "btp-online-primaries-2004",
+      "kind": "paper",
+      "title": "Deliberation and Net Attitude Change",
+      "url": null,
+      "local_artifact_id": "material-7ad6c3c2eb5f0731-btp-online-primaries-2004",
+      "accessed": "2026-09-24",
+      "notes": "Existing repository source: data/shared/papers/deliberation-net-change-paper.pdf"
+    },
+    {
+      "reference_id": "us-btp-online-primaries-2004-wang-siu2009",
+      "poll_id": "btp-online-primaries-2004",
+      "kind": "paper",
+      "title": "Wang and Siu (2009), Refined or Biased Opinions? Examining Self-selected Participation in Deliberation and Post-survey in On-line Deliberative Polls",
+      "url": "http://www.asasrms.org/Proceedings/y2009/Files/400061.pdf",
+      "local_artifact_id": "material-e603bbecfa97be6b-btp-online-primaries-2004",
+      "accessed": "2026-09-24",
+      "notes": "ASA/AAPOR proceedings; directly analyzes all three Knowledge Networks experiments. OnePDF stored under btp-national-2003, referenced across relevant polls."
+    }
+  ],
+  "material_coverage": [
+    {
+      "poll_id": "btp-online-primaries-2004",
+      "material_type": "questionnaires",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-btp-online-primaries-2004-cdd-btp-online-primaries-2004-questionnaires"
+    },
+    {
+      "poll_id": "btp-online-primaries-2004",
+      "material_type": "briefing-materials",
+      "status": "partial",
+      "notes": "Research paper identifies MacNeil/Lehrer reading material plus Stanford Political Communication Lab multimedia candidateCD; exact completeCD/reading package not recovered. Do not replace with fall-general-election briefing book.",
+      "checked_references": "us-btp-online-primaries-2004-material-f3671213505686ab-btp-online-primaries-2004;us-btp-online-primaries-2004-material-fe97b92d2e9a1c8e-btp-online-primaries-2004;us-btp-online-primaries-2004-material-7ad6c3c2eb5f0731-btp-online-primaries-2004;us-btp-online-primaries-2004-wang-siu2009"
+    },
+    {
+      "poll_id": "btp-online-primaries-2004",
+      "material_type": "event-reports",
+      "status": "not-found",
+      "notes": "No poll-specific document verified after reviewing local artifact catalog, archival metadata appendix and official event/material pages plus targeted paper search. This is not evidence that no document exists.",
+      "checked_references": "us-btp-online-primaries-2004-material-f3671213505686ab-btp-online-primaries-2004;us-btp-online-primaries-2004-material-fe97b92d2e9a1c8e-btp-online-primaries-2004;us-btp-online-primaries-2004-material-7ad6c3c2eb5f0731-btp-online-primaries-2004"
+    },
+    {
+      "poll_id": "btp-online-primaries-2004",
+      "material_type": "papers",
+      "status": "available",
+      "notes": "Existing local source (s) and/or newly downloaded documents identified; see cited references.",
+      "checked_references": "us-btp-online-primaries-2004-material-f3671213505686ab-btp-online-primaries-2004;us-btp-online-primaries-2004-material-fe97b92d2e9a1c8e-btp-online-primaries-2004;us-btp-online-primaries-2004-material-7ad6c3c2eb5f0731-btp-online-primaries-2004"
+    },
+    {
+      "poll_id": "btp-online-primaries-2004",
+      "material_type": "codebooks",
+      "status": "partial",
+      "notes": "Variable/value-label dictionaries and/or shared recode documentation are available; completeness as an authored poll-specific codebook is not established.",
+      "checked_references": "us-btp-online-primaries-2004-cdd-btp-online-primaries-2004-survey-variables;us-btp-online-primaries-2004-cdd-btp-online-primaries-2004-survey-value-labels"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "cor-sood-btp-online-primaries-2004",
+      "poll_id": "btp-online-primaries-2004",
+      "artifact_type": "data",
+      "title": "Cor-Sood scored knowledge battery",
+      "location": "data/btp-online-primaries-2004/knowledge-battery.csv",
+      "source_id": "cor-sood-btp-online-primaries-2004",
+      "original_archive_path": "replication/data.zip:data/btp04.csv",
+      "sha256": "e4fd9e789c06146f9ccb06a3e3fc28423531fd719540213c5e7ed10cd0e148c8",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Scored binary items; row number is not a respondent identifier",
+      "relative_path": "knowledge-battery.csv"
+    },
+    {
+      "artifact_id": "cdd-btp-online-primaries-2004-survey",
+      "poll_id": "btp-online-primaries-2004",
+      "artifact_type": "data",
+      "title": "Reviewed poll-level survey",
+      "location": "data/btp-online-primaries-2004/survey.parquet",
+      "source_id": "cdd-btp-online-primaries-2004-survey",
+      "original_archive_path": "data/BTP/2004OnlinePrimaries/data/2004 online primaries_hlm.dta",
+      "sha256": "06c3022d9f92aed8a3a67b3b46c8e35955d50ccfcafb23536390bd1ba3f0df0e",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-redacted",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "survey.parquet"
+    },
+    {
+      "artifact_id": "cdd-btp-online-primaries-2004-survey-variables",
+      "poll_id": "btp-online-primaries-2004",
+      "artifact_type": "codebook",
+      "title": "Source variables",
+      "location": "data/btp-online-primaries-2004/variables.csv",
+      "source_id": "cdd-btp-online-primaries-2004-survey-variables",
+      "original_archive_path": "data/BTP/2004OnlinePrimaries/data/2004 online primaries_hlm.dta",
+      "sha256": "c8ca35bfa8866ad66d1a20bdf5b9c48c91b3e69d2d207b851a78dcbda0733773",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "variables.csv"
+    },
+    {
+      "artifact_id": "cdd-btp-online-primaries-2004-survey-value-labels",
+      "poll_id": "btp-online-primaries-2004",
+      "artifact_type": "codebook",
+      "title": "Source value-labels",
+      "location": "data/btp-online-primaries-2004/value-labels.csv",
+      "source_id": "cdd-btp-online-primaries-2004-survey-value-labels",
+      "original_archive_path": "data/BTP/2004OnlinePrimaries/data/2004 online primaries_hlm.dta",
+      "sha256": "958d470a79f5ccb69badbe6a0cfbebb532c7abc68ef97ce19cb7d7300552633b",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "value-labels.csv"
+    },
+    {
+      "artifact_id": "cdd-btp-online-primaries-2004-questionnaires",
+      "poll_id": "btp-online-primaries-2004",
+      "artifact_type": "questionnaire",
+      "title": "Original questionnaires.doc",
+      "location": "data/btp-online-primaries-2004/questionnaires.doc",
+      "source_id": "cdd-btp-online-primaries-2004-questionnaires",
+      "original_archive_path": "data/BTP/ONLINE DPOLL SURVEYS - COMPREHENSIVE.doc",
+      "sha256": "bbb51cacedc8a5abbfb5642e588467dcbacea3578a916bff125f371c15dd55b4",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "relative_path": "questionnaires.doc"
+    },
+    {
+      "artifact_id": "material-f3671213505686ab-btp-online-primaries-2004",
+      "poll_id": "btp-online-primaries-2004",
+      "artifact_type": "paper",
+      "title": "presidential-nomination",
+      "location": "data/shared/papers/presidential-nomination.pdf",
+      "source_id": "material-f3671213505686ab",
+      "original_archive_path": "meta_data/cdd_papers/presidential-nomination.pdf",
+      "sha256": "f3671213505686abc0e58b69c631797ea3f38a02b5065db797738ac9bad88528",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Historical metadata archive; content classified for reference. Instrument-to-variable and version-specific comparisons remain required. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "../shared/papers/presidential-nomination.pdf"
+    },
+    {
+      "artifact_id": "material-fe97b92d2e9a1c8e-btp-online-primaries-2004",
+      "poll_id": "btp-online-primaries-2004",
+      "artifact_type": "paper",
+      "title": "Deliberative Preferences in the Presidential Nomination Campaign",
+      "location": "data/shared/papers/primaries-paper.pdf",
+      "source_id": "material-fe97b92d2e9a1c8e",
+      "original_archive_path": null,
+      "sha256": "fe97b92d2e9a1c8ecc786f267fd806b11e8ac19b9bff0b57cd5e913336f2ab80",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Iyengar, Luskin and Fishkin, 29 November 2005. Event starts 19 January 2004. Two repository primary cohorts remain unresolved; shared reference does not establish their equivalence. Source URL: https://drive.google.com/file/d/1I32t0i1kXuz9iTXWPPArgleFmawQq_4Z/view?usp=sharing. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "../shared/papers/primaries-paper.pdf"
+    },
+    {
+      "artifact_id": "material-7ad6c3c2eb5f0731-btp-online-primaries-2004",
+      "poll_id": "btp-online-primaries-2004",
+      "artifact_type": "paper",
+      "title": "Deliberation and Net Attitude Change",
+      "location": "data/shared/papers/deliberation-net-change-paper.pdf",
+      "source_id": "material-7ad6c3c2eb5f0731",
+      "original_archive_path": null,
+      "sha256": "7ad6c3c2eb5f0731dfef055365cfd661fe3ef5be00f7d8ceb5136972fefd58ac",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "ECPR September 2007 manuscript. Introduction and tables differ in stated coverage; Table 1/2 sample sizes and index counts are version checks, not an independently established scoring contract. Source URL: https://drive.google.com/file/d/1IZQTpQMml7XSlwSU1GNOqzZb-mDecS5g/view?usp=sharing. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
+      "relative_path": "../shared/papers/deliberation-net-change-paper.pdf"
+    },
+    {
+      "artifact_id": "material-26eecc72a0695bd8-btp-online-primaries-2004",
+      "poll_id": "btp-online-primaries-2004",
+      "artifact_type": "questionnaire",
+      "title": "Original questionnaires.doc (PDF preview)",
+      "location": "data/btp-online-primaries-2004/questionnaires.pdf",
+      "source_id": "material-26eecc72a0695bd8",
+      "original_archive_path": null,
+      "sha256": "26eecc72a0695bd832effa9a8416ed5e22d95224f3455108c544c2e64f2199ce",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Generated from data/btp-online-primaries-2004/questionnaires.doc. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "relative_path": "questionnaires.pdf"
+    },
+    {
+      "artifact_id": "material-e603bbecfa97be6b-btp-online-primaries-2004",
+      "poll_id": "btp-online-primaries-2004",
+      "artifact_type": "paper",
+      "title": "Wang and Siu(2009), Refined or Biased Opinions? Examining Self-selected Participation in Deliberation and Post-survey in On-line Deliberative Polls",
+      "location": "data/btp-national-2003/papers/refined-or-biased-opinions-2009.pdf",
+      "source_id": "material-e603bbecfa97be6b",
+      "original_archive_path": "http://www.asasrms.org/Proceedings/y2009/Files/400061.pdf",
+      "sha256": "e603bbecfa97be6b3af0c89355b26b4b74de85ad51e13bf7881c36a1fcff60e6",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "ASA/AAPOR2009proceedings pp6092–6107; full text checked. OfficialHTTPSendpoint has certificate hostname mismatch; officialHTTPendpoint servedPDF.",
+      "relative_path": "../btp-national-2003/papers/refined-or-biased-opinions-2009.pdf"
+    }
+  ],
+  "document_previews": [
+    {
+      "source_path": "data/btp-online-primaries-2004/questionnaires.doc",
+      "preview_path": "data/btp-online-primaries-2004/questionnaires.pdf",
+      "source_sha256": "bbb51cacedc8a5abbfb5642e588467dcbacea3578a916bff125f371c15dd55b4",
+      "preview_sha256": "26eecc72a0695bd832effa9a8416ed5e22d95224f3455108c544c2e64f2199ce",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "989",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-representative-pages",
+      "visual_pages": "1;495;989",
+      "source_token_coverage": "0.9948843211355886",
+      "distinct_word_coverage": "0.9949348769898697",
+      "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed. 989 pages are expected: original compiled survey/codebook contents includes sections beginning at page983.",
+      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+    }
+  ]
+}
