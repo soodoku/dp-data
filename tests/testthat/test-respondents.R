@@ -138,6 +138,26 @@ test_that("the legacy inventory accounts for all fields and poll targets", {
 })
 
 
+test_that("UK EU post uncertainty is missing", {
+  survey <- read_poll_survey("uk-eu-1995")
+  attendee <- as.numeric(survey$part) == 1
+  releu <- as.numeric(survey$releu2[attendee])
+  longpol <- as.numeric(survey$longpol2[attendee])
+  expect_equal(sum(releu == 6), 5L)
+  expect_equal(sum(longpol == 6), 6L)
+  expect_equal(sum(releu == 6 | longpol == 6), 9L)
+  expect_false(any(releu == 8 | longpol == 8))
+  example <- survey[1L, ]
+  example$releu2 <- 6
+  example$longpol2 <- 1
+  example$unite2 <- 1
+  expect_equal(build_eu_individual(example)$ukeu.eurelat2g, 0)
+  example$releu2 <- 5
+  example$longpol2 <- 5
+  example$unite2 <- 5
+  expect_equal(build_eu_individual(example)$ukeu.eurelat2g, 1)
+})
+
 test_that("UK EU keeps 238 historical attendees and 224 knowledge cases", {
   survey <- read_poll_survey("uk-eu-1995")
   samples <- respondent_export("sample_memberships")

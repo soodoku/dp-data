@@ -8,7 +8,7 @@ coverage of the 23 existing knowledge builds and the respondent reconstructions.
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
 UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24;
-SWE-02, AUS-04, WTU-03 and UKM-01 were approved in subsequent poll reviews.
+SWE-02, AUS-04, WTU-03, UKM-01 and UKEU-03 were approved in subsequent poll reviews.
 Other proposals remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
@@ -809,20 +809,42 @@ explanation. The codebook also says the supplier collapsed “can't choose”
 with the midpoint for `FAVREF`; the separated original responses cannot be
 recovered from this file. Rescaling cannot undo that prior collapse.
 
-**UKEU-03 — preserve post-wave “can't choose” in the EU-relations index.**
-`RELEU2` (Q1 SAQ2) and `LONGPOL2` (Q4 SAQ2) label code 6 “can't choose,” with
-five and six such answers among attendees. `uk_eu.R` removes -1/8/9 but not 6,
-then normalizes these two fields over [1,6]; `UNITE2` uses [1,5]. The average
-matches every nonmissing historical `ukeu.eurelat2g` value. Thus code 6 enters
-as the endpoint 1, and substantive code 5 enters the first two components as
-.8. The corresponding baseline components use [1,5]. A sensitivity calculation
-that treats code 6 as missing and scales substantive 1–5 answers over [1,5]
-changes 211 of the 238 participant values, with no index-level missingness
-changes and maximum absolute change 1/3. This is diagnostic only. Check the
-actual T2 form, the codebook's inconsistent LONGPOL2 note referring to code 8,
-the response-label revisions and intended index polarity before deciding
-whether the difference is a coding error, source-version mismatch, or intended
-handling of uncertainty. Review the baseline/post comparability of the index.
+**UKEU-03 — exclude post-wave “can't choose” and restore the substantive
+scale.** **Status: approved by the user on 2026-09-25 and adopted.** The
+[codebook](../data/uk-eu-1995/codebook.txt) and retained
+[value labels](../data/uk-eu-1995/value-labels.csv) identify `RELEU2` (Q1 SAQ2)
+and `LONGPOL2` (Q4 SAQ2) code 6 as “can't choose.” Of 238 attendees, five
+selected 6 on `RELEU2`, six on `LONGPOL2`, and two on both: nine distinct people.
+All 11 code-6 responses in the 900-row source are in this attendee sample.
+The `LONGPOL2` prose note calls “can't choose” code 8, but its own frequency
+table reports six code-6 responses, matching the source and value labels.
+Neither post field has a code-8 response; `UNITE2` also has no code 8 in the
+source. The baseline `RELEU1` and `LONGPOL1` do use code 8 for “can't choose”
+(26 and 24 attendees respectively), already treated as missing.
+
+The archived `uk_eu.R` removes -1/8/9 but leaves post code 6. It therefore
+scores “can't choose” as the endpoint 1 and scales the substantive 1–5
+responses over [1,6], so code 5 scores .8. The approved correction excludes
+6 in those two post items and scales their substantive 1–5 responses over
+[1,5], matching the baseline calibration; `UNITE2` is already on [1,5]. The
+component direction and available-response mean remain unchanged. Dropping 6
+without rescaling was examined as a diagnostic: it changes only nine indices
+and lowers the mean from 0.575744 to 0.567076, but leaves code 5 at .8 and
+therefore retains the scale distortion. The complete correction changes 211 of
+238 indices and raises the mean to 0.653646. All 224 formerly observed indices
+remain observed; the other 14 remain missing. No other aggregate field or
+sample membership changes. Historical and corrected values for every attendee
+are frozen in [`approved_values.csv`](../audit/corrections/uk-eu-1995/approved_values.csv).
+
+On the current UKM- and WTU-corrected baseline, `dp-distortions` changes 13 of
+19 CSVs and 16 of 28 paired CR2 inference rows, with no recorded 0.05
+threshold crossing. The `dp-learning` analysis frame remains byte-identical
+(6,013 rows, 20 columns). In the UK–EU slice of `dp-deliberately`, 153 of 867
+metrics change, all for the EU-relations item. These are sensitivity outputs
+from current readers, not revised original-paper estimates. A separate scan of
+the actual SAQ2 form was not found; the codebook prints question wording,
+answer labels and frequencies. Preserve that source-material gap for later
+verification without reintroducing code 6 as a substantive answer.
 
 **UKEU-04 — preserve inapplicable post responses in the EU-scope index.**
 For `trabloc2`/`pasport2`, `uk_eu.R` removes 8/9 but leaves -1. The observed

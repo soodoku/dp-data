@@ -19,8 +19,13 @@ build_eu_individual <- function(survey = read_poll_survey("uk-eu-1995")) {
   for (wave in 1:2) {
     average <- function(stems, missing, lower = 1) {
       values <- lapply(stems, function(stem) {
-        upper <- if (wave == 2 && stem %in% c("releu", "longpol")) 6 else 5
-        response(paste0(stem, wave), missing, c(lower, upper))
+        field <- paste0(stem, wave)
+        missing_codes <- if (field %in% c("releu2", "longpol2")) {
+          c(missing, 6)
+        } else {
+          missing
+        }
+        response(field, missing_codes, c(lower, 5))
       })
       historical_available_mean(do.call(cbind, values))
     }

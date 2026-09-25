@@ -196,6 +196,37 @@ test_that("SWE-02 protects every approved conservation value", {
   expect_equal(sum(parity$unexplained_differences), 1L)
 })
 
+test_that("UKEU-03 protects every approved post EU-relations value", {
+  approved <- readr::read_csv(project_path(
+    "audit", "corrections", "uk-eu-1995", "approved_values.csv"
+  ), show_col_types = FALSE)
+  expect_equal(nrow(approved), 238L)
+  expect_true(all(approved$legacy_field == "ukeu.eurelat2g"))
+  data <- full_polardata()
+  selected <- data$dpnum == 1L
+  expect_setequal(data$caseid[selected], approved$caseid)
+  positions <- match(data$caseid[selected], approved$caseid)
+  expect_equal(data$ukeu.eurelat2g[selected],
+               approved$approved_value[positions], tolerance = 1e-10)
+  paired <- !is.na(approved$historical_value) &
+    !is.na(approved$approved_value)
+  expect_equal(sum(paired), 224L)
+  expect_equal(sum(abs(approved$historical_value[paired] -
+                         approved$approved_value[paired]) > 1e-10), 211L)
+  reference <- readr::read_tsv(project_path(
+    "evidence", "benchmarks", "polardata.tab"
+  ), show_col_types = FALSE)
+  audit <- readr::read_csv(project_path(
+    "audit", "polardata_covariances.csv"
+  ), show_col_types = FALSE)
+  changed <- which(paired & abs(approved$historical_value -
+                                  approved$approved_value) > 1e-10)[1]
+  row <- which(selected & data$caseid == approved$caseid[changed])
+  data$ukeu.eurelat2g[row] <- approved$historical_value[changed]
+  parity <- compare_historical_polardata(data, reference, audit)
+  expect_equal(sum(parity$unexplained_differences), 1L)
+})
+
 test_that("UKM-01 protects every approved post-knowledge value", {
   approved <- readr::read_csv(project_path(
     "audit", "corrections", "uk-monarchy-1996", "approved_values.csv"
