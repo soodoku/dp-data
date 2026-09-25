@@ -1088,14 +1088,14 @@ The original `tx_cpl.R` passes `rep(1, length(cpl))` to the group-size
 helper. For a data frame, `length()` counts columns. Its `cpl2.sav` input has
 196 columns; six columns added before this operation make the vector length
 202. The public `cpl.sav` has 195 columns, so using its column count would
-silently produce a different historical result. The reconstruction uses the
-first 202 source rows for this early denominator and all eligible rows for
+silently produce a different historical result. The review script reconstructs
+the first 202 source rows for this early denominator and all eligible rows for
 later group composition. This reproduces the historical gain values.
 
 The checked `cpl2.sav` SHA-256 is
 `c29f1d2e2ab4ed10888e1a9857d7e09fe0541bada81e5d25db1d15b914cd11ce`.
 Using a 201-row denominator changed 12 exported gain values during validation.
-**CPL-05 proposal (not adopted).** The archived `grpfun` helper indexes that
+**CPL-05 approved correction.** The archived `grpfun` helper indexes that
 202-element vector with the full group-presence vector. Values past source row
 202 become missing; its `sum(..., na.rm = TRUE)` then silently excludes them.
 The source codebook's `PART` table records 216 participants and 1,030
@@ -1104,14 +1104,14 @@ Those counts match the full membership counts exactly. Ten groups are
 undercounted by the historical calculation (one to three members each).
 
 The diagnostic `scripts/review_cpl_group_gain.R` reproduces the short-vector
-indexing and compares the proposed calculation with a separately calculated
+indexing and compares the corrected calculation with a separately calculated
 mean over the focal respondent's actual peers. They agree within `1e-12`.
 It changes only `grpgain`, `grpgainr`, and `loggain`: 132 of 216 participant
 values change, with no changes to IDs, membership, missingness, knowledge
 scores, or other aggregate fields. Mean gain falls from 0.1549723023 to
 0.1540506270; the largest individual decrease is 0.0052910053. Mean log gain
 changes from -1.9735843252 to -1.9797921411. All 1,030 other source records
-retain missing gain. The proposal preserves the existing joint pre-times-post
+retain missing gain. The correction preserves the existing joint pre-times-post
 correctness definition; it does not substitute a baseline-only peer measure.
 
 Evidence and group-level comparisons are in `audit/corrections/cpl-1996/`.
@@ -1127,8 +1127,12 @@ CR2 estimates, and an exactly identical
 dp-learning analysis frame (6,013 rows, 20 columns). The expensive wild
 bootstrap was not rerun; the unchanged deterministic inputs and estimates are
 recorded in the audit. The current dp-learning peer measure is constructed
-separately from baseline items and is unchanged by this proposal. Scientific
-adoption requires the user's poll-specific approval.
+separately from baseline items and is unchanged by this correction. The user
+approved CPL-05 after reviewing the column-count error and its consequences.
+The corrected build uses complete group membership for the denominator and
+records `cpl-05-v2` for the three changed derived fields. All 216 historical
+and approved values per field are frozen in `approved_values.csv`; the review
+script replays both calculations from the retained survey.
 
 ## SWEPCO 1996 — swepco-1996
 
@@ -1648,9 +1652,10 @@ preferred sample. TE-01 describes the separate 335-row deposited battery.
 
 ### TE-04: Two departure indices mix arrival and departure answers
 
-**Status: wave-only correction proposed; not adopted.** The military departure
-index currently combines T3Q11a/c with T2Q12a:d. The departure trade index combines
-its T3Q7a/d contrast with T2Q8. The proposal substitutes T3Q12a:d and T3Q8 while
+**Status: approved and adopted (TE-04).** The military departure
+index historically combined T3Q11a/c with T2Q12a:d. The departure trade
+index combined its T3Q7a/d contrast with T2Q8. The corrected build uses
+T3Q12a:d and T3Q8 while
 preserving weighting, direction, available-item averaging, historical endpoints,
 IDs and the 344-person sample. It does not change the downstream wave catalog.
 
@@ -1659,7 +1664,7 @@ contains trade Q7a/d and Q8 on PDF page 5 and military Q11a/c and Q12a:d on page
 The [index memorandum](../data/shared/codebooks/attitude_indices/past_versions/appendix-attitude-indices-6-07-15-rcl.pdf),
 PDF page 19, lists those substantive components. No rationale for cross-wave
 carryover was found. Observed T3 responses establish that departure versions
-exist. Agreement between stored indices and the current mixed-wave formulas
+exist. Agreement between stored indices and the historical mixed-wave formulas
 confirms reconstruction, not that mixed waves were intended.
 
 **Evidence limits:** the questionnaire cover does not explicitly identify its
@@ -1668,12 +1673,12 @@ SPSS recode referenced by the archived R script was not located. The memorandum
 also describes a different military version subtracting Q11b; a distinct stored
 `_f` variant exists. That weighting/specification issue remains separate. The
 available attitudes report concerns the T1 whole sample, so it does not validate
-the proposed departure means. These limits prevent claiming authorial intent
+the corrected departure means. These limits prevent claiming authorial intent
 has been established.
 
 [Recorded comparisons](../audit/corrections/tomorrows-europe-2007/):
 
-| Departure index | Historical observed | Candidate observed | Historical mean | Candidate mean |
+| Departure index | Historical observed | Corrected observed | Historical mean | Corrected mean |
 | --- | ---: | ---: | ---: | ---: |
 | Military | 339 | 334 | .540020 | .537238 |
 | Trade | 336 | 332 | .595833 | .610203 |
@@ -1698,7 +1703,8 @@ modified T3 field enters those analyses. This does not establish that the
 catalog's chosen waves are the desired estimand; see TE-06. Wild-bootstrap
 inference was not rerun.
 
-Reproduce from dp-data, then the named downstream repositories. The distortions
+Reproduce the approved correction from dp-data, then the named downstream
+repositories. The distortions
 and learning modes of the existing review runner accept any paired input bundle:
 
 ```sh

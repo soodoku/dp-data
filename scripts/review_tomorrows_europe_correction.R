@@ -1,4 +1,4 @@
-# TE-04 wave-only proposal; preserve historical samples, scales and weights.
+# TE-04 approved correction; replay the historical mixed-wave formula.
 for (file in c(
   "paths", "sources", "metadata", "poll_sources", "poll_adapters",
   "knowledge", "exports", "respondents", "polardata", "polardata_rebuild"
@@ -11,15 +11,15 @@ directory <- if (length(arguments)) arguments[[1]] else tempfile("te-review-")
 fs::dir_create(directory)
 poll_id <- "tomorrows-europe-2007"
 survey <- read_poll_survey(poll_id)
-before <- build_historical_poll(poll_id)
-original_attitudes <- tomorrows_europe_attitudes
-historical_all <- original_attitudes(survey, 3L)
+corrected_attitudes <- tomorrows_europe_attitudes
+candidate_all <- corrected_attitudes(survey, 3L)
 tomorrows_europe_attitudes <- function(survey, wave) {
-  result <- original_attitudes(survey, wave)
+  result <- corrected_attitudes(survey, wave)
   if (wave == 3L) {
-    item <- function(question, scale = 10, reverse = FALSE) {
+    item <- function(question, scale = 10, reverse = FALSE, source_wave = 3L) {
       value <- tomorrows_europe_codes(
-        survey, paste0("t3q", question), c(if (scale == 10) 0:10 else 1:5, 99)
+        survey, paste0("t", source_wave, "q", question),
+        c(if (scale == 10) 0:10 else 1:5, 99)
       )
       value[value == 99 & !is.na(value)] <- NA_real_
       value <- if (scale == 10) value / 10 else (value - 1) / 4
@@ -29,16 +29,21 @@ tomorrows_europe_attitudes <- function(survey, wave) {
       item("11a", 5, TRUE), item("11c", 5, TRUE)
     )
     circumstances <- tomorrows_europe_mean(
-      item("12a"), item("12b"), item("12c"), item("12d")
+      item("12a", source_wave = 2L), item("12b", source_wave = 2L),
+      item("12c", source_wave = 2L), item("12d", source_wave = 2L)
     )
     result$military <- tomorrows_europe_mean(militarism, circumstances)
     trade <- (item("7d", 5) - item("7a", 5) + 1) / 2
-    result$trade <- tomorrows_europe_mean(trade, item("8"))
+    result$trade <- tomorrows_europe_mean(
+      trade, item("8", source_wave = 2L)
+    )
   }
   result
 }
+before <- build_historical_poll(poll_id)
+historical_all <- tomorrows_europe_attitudes(survey, 3L)
+tomorrows_europe_attitudes <- corrected_attitudes
 after <- build_historical_poll(poll_id)
-candidate_all <- tomorrows_europe_attitudes(survey, 3L)
 stopifnot(
   nrow(before) == 344L, identical(before$caseid, after$caseid),
   identical(before$source_row, after$source_row)
@@ -149,4 +154,4 @@ readr::write_tsv(wide,
 )
 print(field_changes, width = Inf)
 print(all_summary, width = Inf)
-message("Unapproved TE-04 diagnostics written to: ", directory)
+message("TE-04 correction replay written to: ", directory)

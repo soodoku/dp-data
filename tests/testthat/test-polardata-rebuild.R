@@ -131,6 +131,40 @@ test_that("UKGE-03 approval protects every affected aggregate field", {
   }
 })
 
+test_that("CPL-05 uses full group sizes and guards approved gain values", {
+  approved <- readr::read_csv(project_path(
+    "audit", "corrections", "cpl-1996", "approved_values.csv"
+  ), show_col_types = FALSE)
+  fields <- c("grpgain", "grpgainr", "loggain")
+  expect_setequal(approved$legacy_field, fields)
+  expect_equal(nrow(approved), 216L * length(fields))
+  data <- full_polardata()
+  cpl <- data[data$dpnum == 8L, ]
+  expect_equal(nrow(cpl), 216L)
+  for (field in fields) {
+    frozen <- approved[approved$legacy_field == field, ]
+    expect_setequal(cpl$caseid, frozen$caseid)
+    expect_equal(cpl[[field]][match(frozen$caseid, cpl$caseid)],
+                 frozen$approved_value, tolerance = 1e-10)
+    expect_equal(sum(abs(frozen$approved_value -
+                           frozen$historical_value) > 1e-10), 132L)
+  }
+  reference <- readr::read_tsv(project_path(
+    "evidence", "benchmarks", "polardata.tab"
+  ), show_col_types = FALSE)
+  audit <- readr::read_csv(project_path(
+    "audit", "polardata_covariances.csv"
+  ), show_col_types = FALSE)
+  reverted <- data
+  frozen <- approved[approved$legacy_field == "grpgain", ]
+  changed <- which(abs(frozen$approved_value - frozen$historical_value) >
+                     1e-10)[1]
+  row <- which(reverted$dpnum == 8L & reverted$caseid == frozen$caseid[changed])
+  reverted$grpgain[row] <- frozen$historical_value[changed]
+  parity <- compare_historical_polardata(reverted, reference, audit)
+  expect_equal(sum(parity$unexplained_differences), 1L)
+})
+
 test_that("NIC approved ages and mode retain the single missing identity", {
   data <- full_polardata()
   nic <- data[data$dpnum == 20, ]

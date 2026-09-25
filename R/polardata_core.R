@@ -149,18 +149,6 @@ build_core_derived <- function(survey, values, poll_id) {
   )
   result$avgsd <- full_dispersion$average_sd[rows]
   result$genvar <- full_dispersion$generalized_variance[rows]
-  if (poll_id == "cpl-1996") {
-    # cpl2.sav had 196 columns; six new fields preceded rep(1, length(cpl)).
-    columns <- 202L
-    early_size <- historical_group_summary(
-      ifelse(survey$source_row <= columns, 1, NA_real_), profile$group, sum
-    )
-    full_size <- historical_group_summary(
-      rep(1, nrow(survey)), profile$group, sum
-    )
-    result$grpgain <- result$grpgain *
-      ((early_size / (early_size - 1)) / (full_size / (full_size - 1)))[rows]
-  }
   result$grpgain2 <- NA_real_
   if (poll_id == "nic-1996") {
     arrival_joint <- nic_knowledge_items(survey, 2L)[rows, ] *

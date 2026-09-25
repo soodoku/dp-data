@@ -1,4 +1,4 @@
-# CPL-05 group-count proposal; respondent coding and group membership are fixed.
+# CPL-05 group-count correction; respondent coding and membership are fixed.
 for (file in c(
   "paths", "sources", "metadata", "poll_sources", "poll_adapters",
   "knowledge", "exports", "respondents", "polardata", "polardata_rebuild"
@@ -11,21 +11,27 @@ directory <- if (length(arguments)) arguments[[1]] else tempfile("cpl-review-")
 fs::dir_create(directory)
 poll_id <- "cpl-1996"
 survey <- read_poll_survey(poll_id)
-before <- build_historical_poll(poll_id)
-original_derived <- build_core_derived
+approved_derived <- build_core_derived
 build_core_derived <- function(survey, values, poll_id) {
-  result <- original_derived(survey, values, poll_id)
+  result <- approved_derived(survey, values, poll_id)
   if (poll_id == "cpl-1996") {
     profile <- core_poll_profile(survey, poll_id)
     rows <- match(values$source_row, survey$source_row)
-    result$grpgain <- historical_fractional_gain(
-      profile$before * profile$after, profile$group
-    )[rows]
+    early_size <- historical_group_summary(
+      ifelse(survey$source_row <= 202L, 1, NA_real_), profile$group, sum
+    )
+    full_size <- historical_group_summary(
+      rep(1, nrow(survey)), profile$group, sum
+    )
+    result$grpgain <- result$grpgain *
+      ((early_size / (early_size - 1)) / (full_size / (full_size - 1)))[rows]
     result$grpgainr <- result$grpgain
     result$loggain <- historical_log_score(result$grpgain)
   }
   result
 }
+before <- build_historical_poll(poll_id)
+build_core_derived <- approved_derived
 after <- build_historical_poll(poll_id)
 fields <- c("grpgain", "grpgainr", "loggain")
 stopifnot(
@@ -113,6 +119,13 @@ summary <- purrr::map_dfr(fields, function(field) {
   )
 })
 readr::write_csv(summary, file.path(directory, "field_changes.csv"))
+approved_values <- purrr::map_dfr(fields, function(field) {
+  tibble::tibble(
+    legacy_field = field, caseid = before$caseid,
+    historical_value = before[[field]], approved_value = after[[field]]
+  )
+})
+readr::write_csv(approved_values, file.path(directory, "approved_values.csv"))
 wide <- arrow::read_parquet("output/polardata/polardata.parquet")
 keep <- which(wide$dpnum == 8L)
 positions <- match(wide$caseid[keep], before$caseid)
@@ -129,4 +142,4 @@ readr::write_tsv(wide,
 )
 print(summary, width = Inf)
 print(groups, n = Inf, width = Inf)
-message("Unapproved CPL-05 diagnostics written to: ", directory)
+message("Approved CPL-05 diagnostics written to: ", directory)
