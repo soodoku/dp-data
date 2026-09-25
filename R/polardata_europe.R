@@ -18,7 +18,6 @@ build_europolis_derived <- function(survey, values) {
   result$grpgain <- NA_real_
   result$grpgain2 <- NA_real_
   result$grpgainr <- NA_real_
-  result$loggain <- NA_real_
   result$pollgroup <- group
   result$pollid <- 71
   result$country <- 0
@@ -51,7 +50,6 @@ build_australia_derived <- function(survey, values) {
   result$grpgain <- gain[positions] / (1 - values$t1knowcor)
   result$grpgain2 <- NA_real_
   result$grpgainr <- NA_real_
-  result$loggain <- historical_log_score(result$grpgain)
   result$t1knowlevel <- NA_real_
   result$pollgroup <- group
   result$pollid <- 26
@@ -83,7 +81,6 @@ build_tomorrow_derived <- function(survey, values) {
     knowledge_arrival * knowledge_after, group
   )
   result$grpgainr <- result$grpgain
-  result$loggain <- historical_log_score(result$grpgain)
   result$t1knowlevel <- mean(knowledge_before)
   result$pollgroup <- group
   result$pollid <- 28

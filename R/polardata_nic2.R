@@ -31,7 +31,6 @@ build_nic2_derived <- function(survey, values) {
   result$grpgain <- raw_gain / (1 - values$t1knowcor)
   result$grpgain2 <- NA_real_
   result$grpgainr <- result$grpgain
-  result$loggain <- historical_log_score(result$grpgain)
   result$t1knowlevel <- as_historical_float(mean(
     as_historical_float(rowMeans(before))
   ))

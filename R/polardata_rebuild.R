@@ -55,6 +55,7 @@ build_historical_poll <- function(poll_id) {
   } else {
     builder(survey, values)
   }
+  derived$loggain <- historical_log_score(derived$grpgain)
   stopifnot(
     nrow(derived) == nrow(values),
     !length(intersect(names(derived), names(values)))

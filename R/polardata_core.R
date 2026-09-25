@@ -159,7 +159,6 @@ build_core_derived <- function(survey, values, poll_id) {
   }
   result$grpgainr <- result$grpgain
   if (poll_id == "uk-crime-1994") result$grpgainr <- NA_real_
-  result$loggain <- historical_log_score(result$grpgain)
   result$pollgroup <- group
   constants <- core_poll_constants(poll_id)
   for (field in names(constants)) result[[field]] <- constants[[field]]

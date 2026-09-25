@@ -1,8 +1,6 @@
 source(file.path(root, "R", "respondents.R"))
 source(file.path(root, "R", "polardata.R"))
-source(file.path(root, "R", "polardata_derived.R"))
-source(file.path(root, "R", "polardata_assembly.R"))
-source(file.path(root, "R", "polardata_europe.R"))
+source(file.path(root, "R", "polardata_rebuild.R"))
 
 test_that("European and Australian aggregates match every historical field", {
   polls <- c(
@@ -49,7 +47,8 @@ test_that("Australian gain joins by source row", {
   values <- historical_respondent_wide("australia-republic-1999")
   result <- build_australia_derived(survey, values)
   expect_equal(sum(is.infinite(result$grpgain)), 0L)
-  expect_equal(sum(is.infinite(result$loggain)), 0L)
+  assembled <- build_historical_poll("australia-republic-1999")
+  expect_equal(sum(is.infinite(assembled$loggain)), 0L)
   broken <- values
   broken$source_row[1] <- max(survey$source_row) + 1
   expect_error(build_australia_derived(survey, broken))
