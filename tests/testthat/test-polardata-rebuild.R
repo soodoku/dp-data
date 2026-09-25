@@ -25,7 +25,7 @@ test_that("full export preserves people and historical multiplicity", {
   expect_true(all(is.na(data[grepl("^grk[.]", names(data))])))
 })
 
-test_that("derived exports preserve unique people and nonfinite history", {
+test_that("derived exports preserve unique people and reviewed gain", {
   derived <- arrow::read_parquet(project_path(
     "output", "polardata", "derived_measures.parquet"
   ))
@@ -34,10 +34,11 @@ test_that("derived exports preserve unique people and nonfinite history", {
     "poll_id", "respondent_id", "legacy_field", "definition_version"
   )]) > 0L)
   infinite <- derived$value_status == "positive-infinity"
-  expect_equal(sum(infinite), 2L)
-  expect_true(all(derived$poll_id[infinite] == "australia-republic-1999"))
-  expect_setequal(derived$legacy_field[infinite], c("grpgain", "loggain"))
-  expect_true(all(derived$value_numeric[infinite] == Inf))
+  expect_equal(sum(infinite), 0L)
+  australia_gain <- derived$poll_id == "australia-republic-1999" &
+    derived$legacy_field %in% c("grpgain", "loggain")
+  expect_setequal(unique(derived$definition_version[australia_gain]),
+                  "aus-04-v2")
 })
 
 test_that("numerical exceptions cannot hide changed aggregate values", {
@@ -189,6 +190,43 @@ test_that("SWE-02 protects every approved conservation value", {
                          approved$approved_value) > 1e-10)[1]
   row <- which(selected & data$caseid == approved$caseid[changed])
   data$swp.t2att3[row] <- approved$historical_value[changed]
+  parity <- compare_historical_polardata(data, reference, audit)
+  expect_equal(sum(parity$unexplained_differences), 1L)
+})
+
+test_that("AUS-04 aligns frozen group gains to respondents", {
+  approved <- readr::read_csv(project_path(
+    "audit", "corrections", "australia-republic-1999", "approved_values.csv"
+  ), show_col_types = FALSE)
+  expect_equal(nrow(approved), 694L)
+  data <- full_polardata()
+  australia <- data[data$pollid == 26, ]
+  expect_equal(nrow(australia), 347L)
+  for (field in c("grpgain", "loggain")) {
+    frozen <- approved[approved$legacy_field == field, ]
+    expect_setequal(australia$caseid, frozen$caseid)
+    expect_equal(australia[[field]][match(frozen$caseid, australia$caseid)],
+                 frozen$approved_value, tolerance = 1e-10)
+    paired <- is.finite(frozen$historical_value) &
+      is.finite(frozen$approved_value)
+    expect_equal(sum(abs(frozen$historical_value[paired] -
+                           frozen$approved_value[paired]) > 1e-10), 342L)
+    expect_equal(sum(is.na(frozen$historical_value) !=
+                       is.na(frozen$approved_value)), 1L)
+  }
+  reference <- readr::read_tsv(project_path(
+    "evidence", "benchmarks", "polardata.tab"
+  ), show_col_types = FALSE)
+  audit <- readr::read_csv(project_path(
+    "audit", "polardata_covariances.csv"
+  ), show_col_types = FALSE)
+  frozen <- approved[approved$legacy_field == "grpgain", ]
+  paired <- is.finite(frozen$historical_value) &
+    is.finite(frozen$approved_value)
+  changed <- which(paired & abs(frozen$historical_value -
+                                  frozen$approved_value) > 1e-10)[1]
+  row <- which(data$pollid == 26 & data$caseid == frozen$caseid[changed])
+  data$grpgain[row] <- frozen$historical_value[changed]
   parity <- compare_historical_polardata(data, reference, audit)
   expect_equal(sum(parity$unexplained_differences), 1L)
 })

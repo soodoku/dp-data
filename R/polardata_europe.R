@@ -46,9 +46,9 @@ build_australia_derived <- function(survey, values) {
   gain <- historical_group_gain(before * after, selected_group) *
     (1 - joint) * 12 / 11
   gain[is.na(gain) & joint == 1] <- 0
-  # ifelse() recycled a participant vector across the full source file.
-  recycled <- gain[(values$source_row - 1L) %% length(gain) + 1L]
-  result$grpgain <- recycled / (1 - values$t1knowcor)
+  positions <- match(values$source_row, survey$source_row[selected])
+  stopifnot(!anyNA(positions), !anyDuplicated(positions))
+  result$grpgain <- gain[positions] / (1 - values$t1knowcor)
   result$grpgain2 <- NA_real_
   result$grpgainr <- NA_real_
   result$loggain <- historical_log_score(result$grpgain)
