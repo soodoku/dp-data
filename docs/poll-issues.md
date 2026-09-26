@@ -8,7 +8,7 @@ coverage of the 23 existing knowledge builds and the respondent reconstructions.
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
 UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24;
-SWE-02, AUS-04, WTU-03, UKM-01 and UKEU-03 were approved in subsequent poll reviews.
+SWE-02, AUS-04, WTU-03, UKM-01, UKEU-03 and UKEU-04 were approved in subsequent poll reviews.
 Other proposals remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
@@ -846,18 +846,35 @@ the actual SAQ2 form was not found; the codebook prints question wording,
 answer labels and frequencies. Preserve that source-material gap for later
 verification without reintroducing code 6 as a substantive answer.
 
-**UKEU-04 — preserve inapplicable post responses in the EU-scope index.**
-For `trabloc2`/`pasport2`, `uk_eu.R` removes 8/9 but leaves -1. The observed
-full-source range is [-1,5], so the historical components are `(raw + 1) / 6`.
-The 14 attendees without a post knowledge interview also have inapplicable
-responses here, which become index value zero rather than missing. This
-explains why `ukeu.euscope2g` has 238 nonmissing participant values while the
-other post attitude indices have at most 224. Recode -1 as missing and normalize
-substantive 1–5 responses only in a diagnostic calculation: 14 index values
-become missing and 209 remaining values change, by up to 1/3. Check Q6b and
-Q17e SAQ2 against wave-completion records and the original SPSS import behavior.
-Do not silently substitute the knowledge sample or equate zero with a measured
-opinion. The historical definition and raw -1 values are preserved separately.
+**UKEU-04 — treat inapplicable post EU-scope responses as missing.**
+**Status: approved by the user on 2026-09-25 and adopted.** The
+[codebook](../data/uk-eu-1995/codebook.txt) and retained
+[value labels](../data/uk-eu-1995/value-labels.csv) call `TRABLOC2` (Q6b SAQ2)
+and `PASPORT2` (Q17e SAQ2) code -1 “not applicable.” The 900-row source has
+676 such responses on each item. Among 238 attendees, the same 14 people have
+-1 on both; they also lack the post knowledge interview. Neither post item
+contains code 8 in the source, though its value label allows “can't say.”
+
+The archived `uk_eu.R` removes 8/9 but leaves -1. The resulting observed
+source range [-1,5] makes each historical component `(raw + 1) / 6`, so the
+14 inapplicable pairs become measured index zeros. The approved definition
+excludes -1 and scales substantive 1–5 answers over [1,5], matching the
+baseline wave. The 14 placeholder zeros become missing, and 209 other
+attendee indices change. The old index mean over 238 rows is 0.638305;
+the corrected mean over 224 observed rows is 0.517299, so the means have
+different denominators. No sample membership or other aggregate field changes.
+All 238 historical and approved values are frozen alongside UKEU-03 in
+[`approved_values.csv`](../audit/corrections/uk-eu-1995/approved_values.csv).
+The raw -1 responses remain available in the source export.
+
+On the UKEU-03-corrected baseline, `dp-distortions` changes 13 of 19 CSVs
+and 15 of 28 paired CR2 inference rows, with no recorded 0.05 threshold
+crossing. The `dp-learning` analysis frame remains byte-identical (6,013
+rows, 20 columns). In the UK–EU slice of `dp-deliberately`, 164 of 867 metrics
+change, all for the EU-scope item. These are current-reader sensitivities,
+not claims about the original paper's estimates. A standalone SAQ2 scan
+remains unavailable; the source codebook prints question wording, labels and
+frequencies for both items.
 
 **UKEU-05 — preserve the ethnicity exclusion and education threshold.** The
 codebook's B14 IAQ ethnicity question calls code 8 “Other,” with 19 source

@@ -200,8 +200,8 @@ test_that("UKEU-03 protects every approved post EU-relations value", {
   approved <- readr::read_csv(project_path(
     "audit", "corrections", "uk-eu-1995", "approved_values.csv"
   ), show_col_types = FALSE)
+  approved <- approved[approved$legacy_field == "ukeu.eurelat2g", ]
   expect_equal(nrow(approved), 238L)
-  expect_true(all(approved$legacy_field == "ukeu.eurelat2g"))
   data <- full_polardata()
   selected <- data$dpnum == 1L
   expect_setequal(data$caseid[selected], approved$caseid)
@@ -223,6 +223,39 @@ test_that("UKEU-03 protects every approved post EU-relations value", {
                                   approved$approved_value) > 1e-10)[1]
   row <- which(selected & data$caseid == approved$caseid[changed])
   data$ukeu.eurelat2g[row] <- approved$historical_value[changed]
+  parity <- compare_historical_polardata(data, reference, audit)
+  expect_equal(sum(parity$unexplained_differences), 1L)
+})
+
+test_that("UKEU-04 protects approved post EU-scope values", {
+  approved <- readr::read_csv(project_path(
+    "audit", "corrections", "uk-eu-1995", "approved_values.csv"
+  ), show_col_types = FALSE)
+  approved <- approved[approved$legacy_field == "ukeu.euscope2g", ]
+  expect_equal(nrow(approved), 238L)
+  data <- full_polardata()
+  selected <- data$dpnum == 1L
+  expect_setequal(data$caseid[selected], approved$caseid)
+  positions <- match(data$caseid[selected], approved$caseid)
+  expect_equal(data$ukeu.euscope2g[selected],
+               approved$approved_value[positions], tolerance = 1e-10)
+  expect_equal(sum(is.na(approved$approved_value)), 14L)
+  paired <- !is.na(approved$historical_value) &
+    !is.na(approved$approved_value)
+  expect_equal(sum(abs(approved$historical_value[paired] -
+                         approved$approved_value[paired]) > 1e-10), 209L)
+  reference <- readr::read_tsv(project_path(
+    "evidence", "benchmarks", "polardata.tab"
+  ), show_col_types = FALSE)
+  audit <- readr::read_csv(project_path(
+    "audit", "polardata_covariances.csv"
+  ), show_col_types = FALSE)
+  row <- which(selected & data$caseid == approved$caseid[
+    which(is.na(approved$approved_value))[1]
+  ])
+  data$ukeu.euscope2g[row] <- approved$historical_value[
+    which(is.na(approved$approved_value))[1]
+  ]
   parity <- compare_historical_polardata(data, reference, audit)
   expect_equal(sum(parity$unexplained_differences), 1L)
 })
