@@ -8,7 +8,7 @@ coverage of the 23 existing knowledge builds and the respondent reconstructions.
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
 UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24;
-SWE-02, AUS-03, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02, UKGE-05, BTPHE-01, BTPHE-03, EURO-04, NH-06 and NH-07 were approved in subsequent poll reviews.
+SWE-02, AUS-03, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02, UKGE-05, BTPHE-01, BTPHE-03, EURO-04, NH-06, NH-07 and ZG-05 were approved in subsequent poll reviews.
 Other proposals remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
@@ -2642,7 +2642,7 @@ presence is not a claim that every original field-file merge has been recovered.
 | btp-national-2003 | All 245 historical participants and aggregate fields are now reconstructed; the 674-person descriptor calibration uses a separate raw source. | National-event instruments and field files; distinguish the national event from later primary/general-election polls. |
 | btp-presidential-primaries-2004 | All 217 historical people are reconstructed. PR-02 fixes running peer sums; PR-03 removes duplicate aggregate rows and recomputes six group descriptors. Do not conflate with the online-primaries battery. | Event/mode-specific questionnaires, invitation and attendance records, and ID crosswalk. |
 | new-haven-2004 | All 132 historical people are reconstructed from joined pre/mid/post workbook answers. Three birth-year-1890 refusals are made missing; the event year is corrected to 2002, while the omitted attendee remains under review. | Attendee roster and sample rule; remaining arrival-wave response rules. |
-| zeguo-2005 | All 233 historical participants are reconstructed from reviewed merged/pre/post components; three item-coding overrides and 15 numerical covariance exceptions remain explicit. | Original and translated instruments, event date, project-choice scales and respondent/group identifiers. |
+| zeguo-2005 | All 233 historical participants are reconstructed from reviewed merged/pre/post components; three historical knowledge-item overrides remain explicit. The corrected Wenchang source makes all 16 group covariance matrices full rank, removing 15 obsolete numerical exceptions. | Original and translated instruments, event date, project-choice scales and respondent/group identifiers. |
 | marousi-2006 | Public participants file came from an existing derived 2014 analysis object, not an independently rebuilt item-level source. It has scores, groups and demographics but no item responses. | [Questionnaire](../data/marousi-2006/questionnaire.pdf), original field returns, scoring syntax and group roster. Audit the downstream convention treating T2 zeros as missing before generalizing it; it is not justified by the numeric value alone. |
 | bulgaria-2007 | Distinct Roma-policy event; it must not inherit the 2002 crime battery merely because files share an archive directory. | Roma-policy questionnaire, actual event date and source-file provenance. |
 | tanzania-2015 | Public source is available, but full canonical arm, village, questionnaire and measurement integration is not built here. | Village-randomization protocol, information versus deliberation arms, instruments and cluster IDs. Preserve the current downstream specification until audited. |
@@ -3095,27 +3095,27 @@ and `d2022p`. ZG-02 uses those six post ratings in `chi.t2att3`. Its value
 changes for 206 of 233 participants, with no missingness change; group and
 poll descriptors do not use post attitudes and are unaffected by this second
 edit. The six-field person-level comparison is in
-`audit/corrections/zeguo-2005/approved_values.csv`; all other fields retain
-their historical scoring. The generalized-variance column has platform-dependent
-numerical exceptions for the other 15 groups. Group 5207 remains an approved
-correction: its rank-deficient covariance matrix also gives platform-dependent
-values, so parity verifies the exact corrected input matrix, its rank and
-bounded variance against the rebuilt source. The ledger records the macOS
-value; the comparison file retains the historical benchmark as its old value.
+`audit/corrections/zeguo-2005/approved_values.csv`; all other fields retained
+their historical scoring at this stage. The original covariance matrices were
+rank deficient and produced platform-dependent generalized variance. The later
+approved Wenchang correction (ZG-05) restores full rank in all 16 groups and
+removes those numerical exceptions. The comparison file retains the historical
+benchmark as its old value.
 
 ### ZG-03: Two road indices make covariance numerically singular
 
-The nine-column baseline matrix includes `float(mean(float(ratings / 10)))`
-and `float(mean(ratings)) / 10` versions of main roads. They are algebraically
-redundant apart from float-storage order. Before ZG-02, all nine reconstructed input columns matched the original
-historical matrix bit-for-bit. The approved 4.5 rescaling changes one input
-in group 5207. All 16 groups still have rank eight rather than nine; the other
-15 retain reviewed platform-sensitive generalized variance; see X-09. Dropping a redundant column
-would change the estimand and requires a separately reviewed correction.
-The original script labels `t1att5` as Wenchang Main Avenue but assigns
-`main2t1`, the same six-project main-roads index already in `t1att3`.
-ZG-05 compares that assignment with the actual single-project responses and
-the published Wenchang results.
+The historical nine-column baseline matrix included
+`float(mean(float(ratings / 10)))` and `float(mean(ratings)) / 10` versions of
+main roads. They are algebraically redundant apart from float-storage order.
+Before ZG-02, all nine reconstructed input columns matched the original
+historical matrix bit-for-bit. The approved 4.5 rescaling changed one input in
+group 5207. All 16 historical covariance matrices had rank eight rather than
+nine. The original script labeled `t1att5` Wenchang Main Avenue but assigned
+`main2t1`, the same six-project index already used in `t1att3`. ZG-05 corrected
+that source-field error using the project 6 responses and published Wenchang
+results. All 16 corrected matrices have rank nine. The centrally computed
+group-dispersion formula is unchanged; the 15 Zeguo numerical exceptions in
+X-09 are no longer needed.
 
 ### ZG-04: One baseline age is 1; the paired departure age is 33
 
@@ -3151,7 +3151,7 @@ should be removed only after the remaining age anomaly is reviewed.
 
 ### ZG-05: The Wenchang Main Avenue slot duplicates the main-roads index
 
-**Proposed; no scoring change yet.** The original `china_2005.r` labels
+**Approved by the user on 2026-09-26 and corrected upstream.** The original `china_2005.r` labels
 `t1att5` and `t2att5` as Wenchang Main Avenue but reads `main2t1` and
 `main2t2`. The source variable dictionary defines `main2t1` as the average
 of projects 15–19 and 22, and its baseline values equal the `mroads1` index
@@ -3175,7 +3175,7 @@ and must not be compared directly to those full-sample means.
 This is evidence of a wrong source-field selection, not a reason to alter
 the group-dispersion formula poll by poll. Replacing the duplicated slot
 makes all 16 nine-index group covariance matrices full rank; the historical
-matrices all have rank eight. In a paired candidate build, only
+matrices all had rank eight. In the paired corrected build, only
 six wide fields change: 175 `chi.t1att5`, 199 `chi.t2att5`, 172
 `attextreme`, and the centrally derived `meanxtreme`, `avgsd` and `genvar`
 for all 233 selected people. No sample or missingness changes. The current
@@ -3184,9 +3184,9 @@ coefficient moves from 0.004060487 to 0.02556485 and its extremity
 coefficient from -0.06774958 to -0.07214343. Fifteen of 21 paired
 `dp-distortions` result CSVs and 19 of 28 pooled inference rows change;
 pooled gender comparisons lose one eligible pair under the revised group
-mean. These consequences do not determine correctness. Main retains the
-historical score; the separately tested correction remains a review candidate
-pending user approval.
+mean. These consequences do not determine correctness. The corrected source
+fields are `d2006` and `d2006p`; the sample, missing-answer fallback, and
+centrally derived group-dispersion formula are unchanged.
 
 ## Cross-poll issues for the eventual schema
 
@@ -3282,10 +3282,10 @@ separated; a rejected-alternative explanation; and an explicit decision to
 preserve, relabel, revise, or leave unresolved. A monotonic scale that looks
 intuitive is not sufficient evidence to replace a deliberate transformation.
 
-### X-09: Generalized variance has 23 explicitly reviewed numerical exceptions
+### X-09: Generalized variance has eight explicitly reviewed numerical exceptions
 
 The current source formula differs from the frozen historical executable's
-`genvar` in 23 groups, covering 272 export cells. These are not all negligible
+`genvar` in eight groups, covering 55 export cells. These are not all negligible
 absolute differences, and they are not replaced by benchmark values.
 
 | Poll | Groups | Cells | Largest absolute difference |
@@ -3293,17 +3293,16 @@ absolute differences, and they are not replaced by benchmark values.
 | UK–EU 1995 | 2099 | 4 | 0.000063499 |
 | BTP Health/Education 2005 | 9713, 9715 | 20 | 0.000209632 |
 | San Mateo 2008 | 9601, 9604, 9616, 9617, 9621 | 31 | 0.003464282 |
-| Zeguo 2005 | 5201–5206 and 5208–5216 | 217 | 0.001944706 |
 
 Historical generalized variance takes the absolute determinant of a pairwise
 covariance matrix and raises it to `1 / (2 * number_of_indices)`. Near-zero
 determinants become much larger after this root, magnifying rounding differences.
 The original nested calculation is retained in code to preserve its own rounding.
 UK–EU group 2099 has N=4, P=4, rank=3; BTP groups 9713 and 9715 have
-N/P/rank 11/11/10 and 9/11/8. San Mateo's five groups have N=5–7 and P=7;
-Zeguo's 15 numerically excepted groups have N=10–17, P=9 and rank=8.
-Group 5207 also has rank eight, but its changed source matrix and `genvar`
-are an approved ZG-02 correction rather than a numerical exception.
+N/P/rank 11/11/10 and 9/11/8. San Mateo's five groups have N=5–7 and P=7.
+The 15 historical Zeguo exceptions were removed after ZG-05 replaced the
+duplicated main-roads slot with the Wenchang project rating, making all 16
+group matrices full rank.
 
 Two San Mateo matrices also have materially negative eigenvalues. Group 9601
 has N=6, five complete rows, pairwise N=5–6, and minimum eigenvalue -0.01431241.
