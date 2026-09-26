@@ -19,10 +19,16 @@ test_that("European and Australian aggregates match every historical field", {
     result <- builders[[index]](survey, values)
     reference <- benchmark[benchmark$dpnum == values$dpnum[1], ]
     reference <- reference[match(values$caseid, reference$caseid), ]
+    approved_fields <- switch(polls[index],
+      "australia-republic-1999" = c("grpgain", "loggain", "meanxtreme"),
+      "tomorrows-europe-2007" = c(
+        "vareduc", "sdeduc", "meaned", "meanage", "entropy"
+      ),
+      character()
+    )
     for (field in names(result)) {
       expected <- as.numeric(reference[[field]])
-      if (polls[index] == "australia-republic-1999" &&
-            field %in% c("grpgain", "loggain", "meanxtreme")) {
+      if (field %in% approved_fields) {
         approved <- readr::read_csv(project_path(
           "audit", "corrections", polls[index], "approved_values.csv"
         ), show_col_types = FALSE)

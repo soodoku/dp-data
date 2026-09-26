@@ -226,8 +226,8 @@ tomorrows-europe-2007,t1know,knowledge_t1@historical-v1,344,344,0,0,4.4408920985
 tomorrows-europe-2007,t1knowr,knowledge_t1@historical-v1,344,344,0,0,4.440892098500626e-16,0,1e-10
 tomorrows-europe-2007,t1knowcor,knowledge_joint@historical-v1,344,344,0,0,4.440892098500626e-16,0,1e-10
 tomorrows-europe-2007,t2know,knowledge_t2@historical-v1,344,344,0,0,4.440892098500626e-16,0,1e-10
-tomorrows-europe-2007,ppage,age@historical-v1,344,344,0,0,0,0,1e-10
-tomorrows-europe-2007,educ4,education_four@historical-v1,344,326,0,0,0,0,1e-10
+tomorrows-europe-2007,ppage,age@te-05-v2,344,344,0,326,12,0,1e-10
+tomorrows-europe-2007,educ4,education_four@te-05-v2,344,326,17,0,0,0,1e-10
 tomorrows-europe-2007,minority,minority@historical-v1,344,0,0,0,0,0,1e-10
 tomorrows-europe-2007,hhincome,household_income@historical-v1,344,0,0,0,0,0,1e-10
 tomorrows-europe-2007,female,female@historical-v1,344,344,0,0,0,0,1e-10
@@ -246,7 +246,7 @@ tomorrows-europe-2007,logpk,log_knowledge_joint@historical-v1,344,344,0,0,4.6629
 tomorrows-europe-2007,tobitpk,high_knowledge_joint@historical-v1,344,344,0,0,0,0,1e-10
 tomorrows-europe-2007,knowgainr,knowledge_gain@historical-v1,344,344,0,0,4.996003610813204e-16,0,1e-10
 tomorrows-europe-2007,knowgainr2,knowledge_gain_joint@historical-v1,344,344,0,0,4.996003610813204e-16,0,1e-10
-tomorrows-europe-2007,educ3,education_three@historical-v1,344,326,0,0,0,0,1e-10
+tomorrows-europe-2007,educ3,education_three@te-05-v2,344,326,17,0,0,0,1e-10
 tomorrows-europe-2007,eu.support_eu_membership_t1,eu_membership_t1@historical-v1,344,339,0,0,0,0,1e-10
 tomorrows-europe-2007,eu.att_towards_privatization_t1,privatization_t1@historical-v1,344,335,0,0,0,0,1e-10
 tomorrows-europe-2007,eu.attitude_towards_migration_t1,migration_t1@historical-v1,344,339,0,0,0,0,1e-10
@@ -278,7 +278,7 @@ tomorrows-europe-2007,eu.free_trade_index_t3,trade_t3@te-04-v2,344,329,10,213,0.
 tomorrows-europe-2007,eu.general_enlargement_att_f_t3,enlargement_t3@historical-v1,344,333,0,0,3.885780586188048e-16,0,1e-10
 tomorrows-europe-2007,eu.eu_level_decision_making_t3,decision_level_t3@historical-v1,344,331,0,0,6.661338147750939e-16,0,1e-10
 tomorrows-europe-2007,eu.t3q16jr,enlargement_limit_t3@historical-v1,344,329,0,0,0,0,1e-10
-tomorrows-europe-2007,bettered,higher_education@historical-v1,344,326,0,0,0,0,1e-10
+tomorrows-europe-2007,bettered,higher_education@te-05-v2,344,326,17,0,0,0,1e-10
 cpl-1996,readbrief,read_briefing@historical-v1,216,0,0,0,0,0,1e-10
 cpl-1996,t1know,knowledge_t1@historical-v1,216,216,0,0,4.440892098500626e-16,0,1e-10
 cpl-1996,t1knowr,knowledge_t1@historical-v1,216,216,0,0,4.440892098500626e-16,0,1e-10
