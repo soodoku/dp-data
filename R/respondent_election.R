@@ -2,13 +2,11 @@ election_attitudes <- function(survey, wave) {
   stems <- c(redistribution = "redstr", tax = "taxr",
     minimum_wage = "wager", european_union = "eur"
   )
-  indices <- purrr::imap(stems, function(stem, name) {
-    # UKGE-02: post tax measures retrospective taxes, not spending preferences.
-    field <- if (name == "tax" && wave == 2L) "taxret2"
-    else paste0(stem, wave)
-    values <- if (field == "taxret2") c(0, .25, .5, .75, 1)
-    else c(0, .17, .33, .5, .67, .83, 1)
-    recode_source_values(survey, field, values, missing = c(-9, -8)) |>
+  indices <- purrr::map(stems, function(stem) {
+    field <- paste0(stem, wave)
+    recode_source_values(survey, field,
+      c(0, .17, .33, .5, .67, .83, 1), missing = c(-9, -8)
+    ) |>
       as_historical_float()
   })
   tibble::as_tibble(indices) |>

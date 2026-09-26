@@ -223,7 +223,12 @@ test_that("definitions match historical or approved values by IDs", {
     parity$poll_id == "uk-eu-1995"
   ]), 14L)
   expect_equal(sum(parity$missingness_differences[
-    !parity$poll_id %in% c("tomorrows-europe-2007", "uk-eu-1995")
+    parity$poll_id == "uk-general-election-1997"
+  ]), 17L)
+  expect_equal(sum(parity$missingness_differences[
+    !parity$poll_id %in% c(
+      "tomorrows-europe-2007", "uk-eu-1995", "uk-general-election-1997"
+    )
   ]), 1L)
   expect_equal(sum(parity$value_differences[
     parity$poll_id == "uk-crime-1994"
@@ -330,11 +335,13 @@ test_that("preserved cross-wave dependencies remain explicit", {
   election <- read_poll_survey("uk-general-election-1997")
   before <- build_election_individual(election)
   election$taxr2 <- rep(1, nrow(election))
-  expect_identical(build_election_individual(election), before)
-  election$taxret2 <- rep(1, nrow(election))
   after <- build_election_individual(election)
   expect_true(all(after$tax_t2 == 0))
-  expect_true(any(before$tax_t2 != after$tax_t2, na.rm = TRUE))
+  expect_false(identical(before$tax_t2, after$tax_t2))
+  expect_identical(before[names(before) != "tax_t2"],
+                   after[names(after) != "tax_t2"])
+  election$taxret2 <- rep(1, nrow(election))
+  expect_identical(build_election_individual(election), after)
 })
 
 test_that("utility calibration is independent of the supplied sample", {
@@ -479,6 +486,58 @@ test_that("UK Crime nonparticipants have no invented post root-causes scores", {
   expect_length(values, 869L)
   expect_equal(sum(!is.na(values)), 299L)
   expect_true(all(is.na(values[which(survey$part != 1)])))
+})
+
+test_that("UKGE-02 post tax uses the Q13 policy attitude", {
+  survey <- read_poll_survey("uk-general-election-1997")
+  selected <- as.numeric(survey$filter) == 1
+  scores <- build_election_individual(survey)
+  expect_equal(sum(selected), 275L)
+  expect_equal(sum(!is.na(scores$tax_t2[selected])), 274L)
+  example <- survey[1L, ]
+  example$taxr2 <- 1
+  example$taxret2 <- 5
+  expect_equal(election_attitudes(example, 2L)$tax_t2, 0)
+  example$taxr2 <- 7
+  example$taxret2 <- 1
+  expect_equal(election_attitudes(example, 2L)$tax_t2, 1)
+  example$taxr2 <- -9
+  expect_true(is.na(election_attitudes(example, 2L)$tax_t2))
+})
+
+test_that("UKGE-02 reproduces the nine published policy-attitude rows", {
+  survey <- read_poll_survey("uk-general-election-1997")
+  selected <- as.numeric(survey$filter) == 1
+  stems <- c(
+    "redstr", "taxr", "wager", "eur", "eutax", "eugov",
+    "eupound", "taxfair", "taxrich"
+  )
+  upper <- c(7L, 7L, 7L, 7L, 5L, 5L, 5L, 4L, 5L)
+  printed_t1 <- c(5.15, 5.86, 5.76, 3.78, 3.43, 3.92, 3.95, 2.20, 3.75)
+  printed_t2 <- c(5.46, 5.81, 5.41, 4.57, 3.10, 3.71, 3.41, 2.15, 4.07)
+  printed_delta <- c(.31, -.05, -.35, .79, -.33, -.21, -.54, -.06, .32)
+  printed_p <- c(.002, .773, .003, .001, .001, .001, .001, .201, .001)
+  for (i in seq_along(stems)) {
+    values <- lapply(1:2, function(wave) {
+      x <- as.numeric(survey[[paste0(stems[i], wave)]][selected])
+      x[!x %in% seq_len(upper[i])] <- NA_real_
+      x
+    })
+    paired <- stats::complete.cases(values[[1]], values[[2]])
+    mean_t1 <- mean(values[[1]], na.rm = TRUE)
+    mean_t2 <- mean(values[[2]], na.rm = TRUE)
+    p_value <- stats::t.test(
+      values[[2]][paired] - values[[1]][paired]
+    )$p.value
+    expect_equal(round(mean_t1, 2), printed_t1[i])
+    expect_equal(round(mean_t2, 2), printed_t2[i])
+    expect_equal(round(mean_t2 - mean_t1, 2), printed_delta[i])
+    if (printed_p[i] == .001) {
+      expect_lt(p_value, .001)
+    } else {
+      expect_equal(round(p_value, 3), printed_p[i])
+    }
+  }
 })
 
 test_that("UKGE-03 scores the post Labour wage placement from its own wave", {

@@ -31,6 +31,7 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     ),
     "swepco-1996" = list(fields = "swp.t2att3", rows = 232L),
     "wtu-1996" = list(fields = "wtu.t2att3", rows = 230L),
+    "uk-general-election-1997" = list(fields = "ukbge.t2tax", rows = 275L),
     "uk-eu-1995" = list(
       fields = c("ukeu.eurelat2g", "ukeu.euscope2g"), rows = 238L
     ),

@@ -107,6 +107,7 @@ test_that("UKGE-03 approval protects every affected aggregate field", {
   approved <- readr::read_csv(project_path(
     "audit", "corrections", "uk-general-election-1997", "approved_values.csv"
   ), show_col_types = FALSE)
+  approved <- approved[approved$legacy_field != "ukbge.t2tax", ]
   expect_equal(nrow(approved), 275L * 19L)
   data <- full_polardata()
   reference <- readr::read_tsv(project_path(
@@ -132,6 +133,38 @@ test_that("UKGE-03 approval protects every affected aggregate field", {
     expect_equal(actual[[field]][match(evidence$caseid, actual$caseid)],
                  evidence$approved_value, tolerance = 1e-10)
   }
+})
+
+test_that("UKGE-02 protects approved post tax-and-spending values", {
+  approved <- readr::read_csv(project_path(
+    "audit", "corrections", "uk-general-election-1997", "approved_values.csv"
+  ), show_col_types = FALSE)
+  approved <- approved[approved$legacy_field == "ukbge.t2tax", ]
+  expect_equal(nrow(approved), 275L)
+  data <- full_polardata()
+  actual <- data[data$dpnum == 4L, ]
+  expect_setequal(actual$caseid, approved$caseid)
+  positions <- match(actual$caseid, approved$caseid)
+  expect_equal(actual$ukbge.t2tax, approved$approved_value[positions],
+               tolerance = 1e-10)
+  paired <- !is.na(approved$historical_value) &
+    !is.na(approved$approved_value)
+  expect_equal(sum(abs(approved$historical_value[paired] -
+                         approved$approved_value[paired]) > 1e-10), 207L)
+  expect_equal(sum(is.na(approved$historical_value) !=
+                     is.na(approved$approved_value)), 17L)
+  reference <- readr::read_tsv(project_path(
+    "evidence", "benchmarks", "polardata.tab"
+  ), show_col_types = FALSE)
+  audit <- readr::read_csv(project_path(
+    "audit", "polardata_covariances.csv"
+  ), show_col_types = FALSE)
+  changed <- which(paired & abs(approved$historical_value -
+                                  approved$approved_value) > 1e-10)[1]
+  row <- which(data$dpnum == 4L & data$caseid == approved$caseid[changed])
+  data$ukbge.t2tax[row] <- approved$historical_value[changed]
+  parity <- compare_historical_polardata(data, reference, audit)
+  expect_equal(sum(parity$unexplained_differences), 1L)
 })
 
 test_that("CPL-05 uses full group sizes and guards approved gain values", {
