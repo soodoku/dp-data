@@ -65,6 +65,17 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   expect_setequal(unique(ni_items$wave), "t3")
   expect_setequal(unique(ni_items$item_id),
                   paste0("knowledge_", sprintf("%03d", 1:7)))
+  ni_example <- dplyr::filter(
+    ni_items, respondent_id == "22"
+  ) |>
+    dplyr::arrange(item_id)
+  expect_equal(ni_example$raw_value, c(9, 4, 3, 2, 9, 1, 2))
+  expect_equal(ni_example$correct, c(0L, 1L, 0L, 0L, 0L, 1L, 0L))
+  ni_score <- dplyr::filter(
+    scores, poll_id == "northern-ireland-2007",
+    source_dataset == "control", respondent_id == "22"
+  )
+  expect_equal(ni_score$score, 2 / 7)
   expect_equal(
     unique(scores$scale[scores$poll_id == "tanzania-2015"]),
     "standardized_index"
