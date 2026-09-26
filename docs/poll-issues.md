@@ -8,7 +8,7 @@ coverage of the 23 existing knowledge builds and the respondent reconstructions.
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
 UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24;
-SWE-02, AUS-03, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02, UKGE-05, BTPHE-01, BTPHE-03, EURO-04, NH-06, NH-07 and ZG-05 were approved in subsequent poll reviews.
+SWE-02, AUS-03, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02, UKGE-05, BTPHE-01, BTPHE-03, EURO-04, NH-06, NH-07, ZG-05 and the A1R climate mode correction were approved in subsequent poll reviews.
 Other proposals remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
@@ -2685,20 +2685,29 @@ sample correction and its consequences for estimates.
 
 ### NEW-01 — Newer-poll mode labels and reported sample totals
 
-**Preserve / review.** The registry currently labels both `a1r-climate-2021`
-and `amr-2024` as face-to-face. Stanford's climate/energy project page, the
-NORC October 2021 methods report and the 2025 *Scaling Dialogue* paper describe
-online deliberation. The AMR paper, version 2 (14 May 2026, DOI
+**A1R climate mode approved by the user on 2026-09-26 and corrected; AMR mode
+remains under review.** The historical registry labeled both
+`a1r-climate-2021` and `amr-2024` as face-to-face. For the
+2021 climate poll, Stanford's [event page](https://deliberation.stanford.edu/news/america-one-room-climate-and-energy), the
+[NORC October 2021 methods report](../data/a1r-climate-2021/design/a1r-climate-methods.pdf)
+and the [2025 *Scaling Dialogue* paper](../data/a1r-climate-2021/papers/a1r-climate-paper.pdf)
+describe online deliberation. NORC calls the event virtual, distinguishes its
+invited delegates from the control group, and says both surveys were offered
+by web. The approved catalog change is `face-to-face` to `online` for this
+poll only; no response, weight, wave, sample, score or aggregate changes. The
+separate 2019 America in One Room event was face-to-face and retains its label.
+
+The AMR paper, version 2 (14 May 2026, DOI
 10.12688/wellcomeopenres.24803.2), likewise describes facilitated online groups
 in June–August 2024. Its 2,419-person randomized total includes intervention and
 controls; it is not a deliberator-only count. The downloaded AMR final report's
 cover says June 2026 although its URL filename says July 2026.
 
-Review source event IDs and treatment/attendance definitions, then correct mode
-metadata in a separate correction commit. Before validating any reported gains,
+Review AMR source event IDs and treatment/attendance definitions separately
+before correcting its catalog mode. Before validating any reported gains,
 match country, weighting, analysis sample and wave. For the climate experiment,
 the one-year follow-up is a separate wave from immediate post-deliberation.
-No mode label, sample or score is changed by this source collection.
+The AMR mode label, sample and score are unchanged by this review.
 
 ## NIC2 2003 — nic2-2003
 
