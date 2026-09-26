@@ -37,6 +37,9 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     return(historical)
   }
   reviewed <- list(
+    "san-mateo-2008" = list(
+      fields = "t1knowlevel", rows = 239L
+    ),
     "zeguo-2005" = list(
       fields = c("chi.t1att2", "chi.t2att3", "attextreme",
                  "meanxtreme", "avgsd"), rows = 233L

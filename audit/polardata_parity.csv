@@ -5828,7 +5828,7 @@ san-mateo-2008,pollid,239,239,0,0,0,0,FALSE,0,0,1e-10
 san-mateo-2008,caseid,239,239,0,0,0,0,FALSE,0,0,1e-10
 san-mateo-2008,country,239,239,0,0,0,0,FALSE,0,0,1e-10
 san-mateo-2008,mode,239,239,0,0,0,0,FALSE,0,0,1e-10
-san-mateo-2008,t1knowlevel,239,239,0,0,0,0,FALSE,0,1.3877787807814457e-16,1e-10
+san-mateo-2008,t1knowlevel,239,239,0,239,0,239,FALSE,0,0.015603899955749373,1e-10
 san-mateo-2008,numitems,239,239,0,0,0,0,FALSE,0,0,1e-10
 san-mateo-2008,pollgroup,239,239,0,0,0,0,FALSE,0,0,1e-10
 san-mateo-2008,groupsize,239,239,0,0,0,0,FALSE,0,0,1e-10

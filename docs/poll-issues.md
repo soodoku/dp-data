@@ -2223,30 +2223,32 @@ seven, including commuting, public consultation and county-versus-state scales
 later dropped in `05_fix_data.R`. Do not rebuild summaries from the four final
 columns. Check the index-selection rationale before changing the battery.
 
-### SM-03: Poll-level knowledge divides eight items by nine
+### SM-03: Baseline knowledge uses the eight questions in the instrument (corrected)
 
-The historical baseline descriptor uses all 1,806 respondents: eight correct-item
-indicators divided by nine, float32 person scores, then a mean rounded seven
-decimals and stored float32. Stored `pkind` increments by 1/9, while the final
-individual score divides by eight. The [pre questionnaire](../data/san-mateo-2008/questionnaire-pre.pdf)
-and [post questionnaire](../data/san-mateo-2008/questionnaire-post.pdf) place the
-knowledge battery at Q19–Q26, with eight questions in each wave. The archived
-`legacy/poll_scripts/san_mateo.R` explicitly enumerates `19:26` for both waves;
-it contains no `length()`-based denominator. The later merge scripts pass through
-knowledge scores and do not establish how the deposited `pkind` was calculated.
+The pre questionnaire asks eight knowledge questions, Q19–Q26. The archived
+`legacy/poll_scripts/san_mateo.R` enumerates those eight for both waves, and
+respondent scores already divide their correct count by eight. The historical
+poll-level baseline descriptor instead divided the eight correct-item indicators
+by nine before the float32 person-score and rounded-seven-decimal poll mean.
+The deposited `pkind` also increments by 1/9. There is no ninth scored question
+or `length()` operation in the reviewed materials.
 
 The [contemporaneous report](../data/san-mateo-2008/reports/san-mateo-results.pdf)
-(PDF pp. 5 and 15) describes an eight-question index but prints
-12.92% before and 28.17% after deliberation. Among the 239 participant records,
-mean correct counts divided by nine reproduce those figures: 12.92422% and
-28.17294%. Dividing by eight gives 14.53975% and 31.69456%. Thus the nine-item
-scale appears in the original report as well as deposited `pkind`; its origin
-is unverified, and the report's item-count description conflicts with its
-arithmetic. Do not attribute this discrepancy to `length()` or change either
-score until the generating scoring command is found or the denominator policy
-is explicitly decided. Post Q20/Q26 values 8/9 remain incorrect in binary
-scoring pending codebook review. Five group covariance exceptions, including two
-indefinite matrices, are detailed in X-09.
+calls this an eight-question index but prints 12.92% before and 28.17% after
+deliberation. Among the 239 participants, dividing correct counts by nine
+reproduces 12.92422% and 28.17294%; dividing by eight yields 14.53975% and
+31.69456%. The report's printed percentages therefore reflect the nine-item
+arithmetic despite its eight-item description. This correction to the baseline
+poll descriptor does not reproduce those published percentages.
+
+Approved SM-03 retains all 1,806 baseline source records, the same eight answer
+keys, missing-as-incorrect scoring and float32/rounding stages, but divides by
+eight. `t1knowlevel` changes from 0.1248308 to 0.1404347 for each of the 239
+exported participants; no respondent knowledge score or other aggregate field
+changes. Case-level values are in
+`audit/corrections/san-mateo-2008/approved_values.csv`. Post Q20/Q26 factual
+key and instrument-version questions remain separate in SM-01. Five group
+covariance exceptions, including two indefinite matrices, remain in X-09.
 
 ### SM-04: Anonymous item rows and reconstructed respondents had different order
 

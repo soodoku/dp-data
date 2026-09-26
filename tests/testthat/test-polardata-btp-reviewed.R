@@ -31,7 +31,7 @@ test_that("US poll calibration preserves earlier scoring and sample vintages", {
   ))
   expect_equal(
     reviewed_us_baseline_level("san-mateo-2008", san),
-    as_historical_float(.8888889)
+    as_historical_float(1)
   )
 })
 
@@ -61,6 +61,11 @@ test_that("US aggregates match except diagnosed singular covariances", {
       match(expected$caseid, ids)
     ])
     actual <- builders[[index]](survey, values)
+    if (poll == "san-mateo-2008") {
+      expected$t1knowlevel <- approved_reference_values(
+        poll, "t1knowlevel", expected$caseid, expected$t1knowlevel
+      )
+    }
     if (poll == "btp-health-education-2005") {
       for (field in c("female", "pfemale", "varfemale", "sdfemale",
                       "pfemale_ind", "entropy", "t1knowlevel")) {

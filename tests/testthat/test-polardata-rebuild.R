@@ -65,6 +65,10 @@ test_that("derived exports preserve unique people and reviewed gain", {
     derived$legacy_field %in% c("meanxtreme", "avgsd", "genvar")
   expect_setequal(unique(derived$definition_version[zeguo_group]),
                   "zg-02-v2")
+  san_mateo_level <- derived$poll_id == "san-mateo-2008" &
+    derived$legacy_field == "t1knowlevel"
+  expect_setequal(unique(derived$definition_version[san_mateo_level]),
+                  "sm-03-v2")
 })
 
 test_that("numerical exceptions cannot hide changed aggregate values", {
@@ -78,6 +82,9 @@ test_that("numerical exceptions cannot hide changed aggregate values", {
   parity <- compare_historical_polardata(data, reference, audit)
   expect_equal(sum(parity$unexplained_differences), 0L)
   expect_equal(sum(parity$reviewed_numerical_differences), 272L)
+  san_mateo_level <- parity$poll_id == "san-mateo-2008" &
+    parity$legacy_field == "t1knowlevel"
+  expect_equal(parity$approved_correction_differences[san_mateo_level], 239L)
   zeguo_variance <- parity$poll_id == "zeguo-2005" &
     parity$legacy_field == "genvar"
   expect_equal(parity$approved_correction_differences[zeguo_variance], 16L)
