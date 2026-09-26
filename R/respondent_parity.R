@@ -31,7 +31,11 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     ),
     "swepco-1996" = list(fields = "swp.t2att3", rows = 232L),
     "wtu-1996" = list(fields = "wtu.t2att3", rows = 230L),
-    "uk-general-election-1997" = list(fields = "ukbge.t2tax", rows = 275L),
+    "uk-general-election-1997" = list(
+      fields = c("ukbge.t2tax", "grpgain", "grpgainr", "loggain",
+                 "avgsd", "genvar"),
+      rows = 275L
+    ),
     "uk-eu-1995" = list(
       fields = c("ukeu.eurelat2g", "ukeu.euscope2g"), rows = 238L
     ),
@@ -87,10 +91,7 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     "meant1knowcor_ind",
     "t1knowlevelcor",
     "t2knowlevel",
-    "t1knowlevelrcor",
-    "grpgain",
-    "grpgainr",
-    "loggain"
+    "t1knowlevelrcor"
   )
   if (poll_id == "uk-general-election-1997" && field %in% election_fields) {
     approved <- readr::read_csv(project_path(

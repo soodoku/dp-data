@@ -1100,14 +1100,14 @@ uk-general-election-1997,t1knowlevel,275,275,0,0,0,0,FALSE,0,2.220446049250313e-
 uk-general-election-1997,numitems,275,275,0,0,0,0,FALSE,0,0,1e-10
 uk-general-election-1997,pollgroup,275,275,0,0,0,0,FALSE,0,0,1e-10
 uk-general-election-1997,groupsize,275,275,0,0,0,0,FALSE,0,0,1e-10
-uk-general-election-1997,avgsd,275,275,0,0,0,0,FALSE,0,6.106226635438361e-16,1e-10
+uk-general-election-1997,avgsd,275,275,0,17,0,17,FALSE,0,6.020495516795288e-4,1e-10
 uk-general-election-1997,numindices,275,275,0,0,0,0,FALSE,0,0,1e-10
-uk-general-election-1997,genvar,275,275,0,0,0,0,FALSE,0,5.828670879282072e-16,1e-10
+uk-general-election-1997,genvar,275,275,0,17,0,17,FALSE,0,0.002721259538367854,1e-10
 uk-general-election-1997,readbrief,275,0,0,0,0,0,FALSE,0,0,1e-10
 uk-general-election-1997,t1know,275,275,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
 uk-general-election-1997,t1knowr,275,275,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
 uk-general-election-1997,t1knowcor,275,275,0,28,0,28,FALSE,0,0.06666666666666698,1e-10
-uk-general-election-1997,grpgain,275,275,0,61,0,61,FALSE,0,0.062499999999999944,1e-10
+uk-general-election-1997,grpgain,275,275,0,73,0,73,FALSE,0,0.062499999999999944,1e-10
 uk-general-election-1997,t2know,275,275,0,54,0,54,FALSE,0,0.06666666666666704,1e-10
 uk-general-election-1997,ppage,275,274,0,0,0,0,FALSE,0,0,1e-10
 uk-general-election-1997,educ4,275,274,0,0,0,0,FALSE,0,0,1e-10
@@ -1125,7 +1125,7 @@ uk-general-election-1997,t12knowcor,275,0,0,0,0,0,FALSE,0,0,1e-10
 uk-general-election-1997,attextreme2,275,0,0,0,0,0,FALSE,0,0,1e-10
 uk-general-election-1997,length,275,0,0,0,0,0,FALSE,0,0,1e-10
 uk-general-election-1997,timebtw,275,0,0,0,0,0,FALSE,0,0,1e-10
-uk-general-election-1997,grpgainr,275,275,0,61,0,61,FALSE,0,0.062499999999999944,1e-10
+uk-general-election-1997,grpgainr,275,275,0,73,0,73,FALSE,0,0.062499999999999944,1e-10
 uk-general-election-1997,t1knowrcor,275,275,0,28,0,28,FALSE,0,0.06666666666666698,1e-10
 uk-general-election-1997,t2knowr,275,275,0,54,0,54,FALSE,0,0.06666666666666704,1e-10
 uk-general-election-1997,pollname,275,275,0,0,0,0,FALSE,0,0,1e-10
@@ -1152,7 +1152,7 @@ uk-general-election-1997,knowgain,275,275,0,54,0,54,FALSE,0,0.06666666666666715,
 uk-general-election-1997,knowgain2,275,275,0,26,0,26,FALSE,0,0.06666666666666704,1e-10
 uk-general-election-1997,t2knowlevel,275,275,0,275,0,275,FALSE,0,4.848484848485324e-4,1e-10
 uk-general-election-1997,logpk,275,275,0,28,0,28,FALSE,0,6.502290170873971,1e-10
-uk-general-election-1997,loggain,275,275,0,61,0,61,FALSE,0,0.177016504564258,1e-10
+uk-general-election-1997,loggain,275,275,0,73,0,73,FALSE,0,0.177016504564258,1e-10
 uk-general-election-1997,tobitpk,275,275,0,0,0,0,FALSE,0,0,1e-10
 uk-general-election-1997,meant1knowr,275,275,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 uk-general-election-1997,meant1knowrcor,275,275,0,258,0,258,FALSE,0,0.011764705882353121,1e-10
