@@ -2120,8 +2120,14 @@ was re-opened in this pass. Q31 marks a 50% reduction in annual electricity-use
 growth (code 3), while the archived recode uses code 2. Q32, excluding Hydro
 Quebec, marks **both** 15% (code 2) and 25% (code 3). The text extraction preserves
 both literal stars. This supports an ambiguity in the supplied key, not a finding
-that two factual answers must both be correct. The fielded version and contemporaneous
-briefing sources remain necessary evidence.
+that two factual answers must both be correct. The contemporary [Vermont briefing](../data/vermont-energy-2007/briefing-materials/vermont-energy-briefing.pdf)
+("Electricity Savings To-Date," printed p. 54) says efficiency and economic
+conditions cut electric-demand growth from 2% to 1%. That is a 50% reduction
+in the observed growth rate and supports the magnitude of starred Q31 code 3,
+which upstream already uses. Because the briefing attributes the change to both
+efficiency and economic conditions, it does not isolate the program's effect.
+It also does not resolve the two starred Q32 values or show which Q32 key was
+fielded.
 
 Current upstream accepts both starred Q32 answers. Relative to the deposit, the
 existing build reports 250 changed item-wave cells, 53 changed baseline scores
@@ -2250,10 +2256,14 @@ the first 310 rows. It reports 294 item differences: 291 e/E responses, one F,
 and two Senate responses, SC and “same”; zero-filled scores remain unchanged.
 The [post questionnaire](../data/michigan-2009/questionnaire-post.doc), re-opened
 here, presents free-text party-control questions and explicitly permits respondents
-to say they do not know. That does **not by itself establish** the meaning of each
-transcribed letter. e/E's treatment must also be checked against the coding sheet,
-source labels and the historical export convention. “Same” may depend on a prior
-answer; do not infer that dependency without the original response sequence.
+to say they do not know. The same [questionnaire](../data/michigan-2009/questionnaire-post.pdf)
+explicitly prints option e as "couldn't say" for Q40, Q41 and Q42, so the 291
+e/E tokens are nonresponses, not wrong substantive alternatives. The one F
+lies outside the printed a–e choices. The archived `mi.R` later zero-fills
+missing item scores, so this typed-missingness correction leaves the final
+fixed-denominator knowledge score unchanged. The two Senate free-text tokens
+SC and "same" still lack a verified response-sequence interpretation; no
+substantive party answer is inferred from them.
 
 **Next check:** recheck all accepted text aliases against contemporaneous coding
 instructions, retaining raw text and rejecting unknown tokens. `postit` identifies
