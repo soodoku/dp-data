@@ -8,7 +8,7 @@ coverage of the 23 existing knowledge builds and the respondent reconstructions.
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
 UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24;
-SWE-02, AUS-03, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02, UKGE-05, BTPHE-01, BTPHE-03, EURO-04, NH-06, NH-07, ZG-05 and the A1R climate mode correction were approved in subsequent poll reviews.
+SWE-02, AUS-03, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02, UKGE-05, BTPHE-01, BTPHE-03, EURO-04, NH-06, NH-07, ZG-05, and the A1R climate and AMR mode corrections were approved in subsequent poll reviews.
 Other proposals remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
@@ -2685,8 +2685,8 @@ sample correction and its consequences for estimates.
 
 ### NEW-01 — Newer-poll mode labels and reported sample totals
 
-**A1R climate mode approved by the user on 2026-09-26 and corrected; AMR mode
-correction proposed.** The historical registry labeled both
+**Both mode corrections approved by the user on 2026-09-26 and implemented.**
+The historical registry labeled both
 `a1r-climate-2021` and `amr-2024` as face-to-face. For the
 2021 climate poll, Stanford's [event page](https://deliberation.stanford.edu/news/america-one-room-climate-and-energy), the
 [NORC October 2021 methods report](../data/a1r-climate-2021/design/a1r-climate-methods.pdf)
@@ -2707,7 +2707,7 @@ by phone; that does not make the deliberation face-to-face. The deposited file
 has 2,419 unique IDs, each with a pre and post row; its group flags yield
 1,280 intervention and 1,139 control people. The intervention/control counts
 match all six country rows in the paper's Table 3, as well as the totals.
-Only the intervention group deliberated. The proposed AMR edit changes its
+Only the intervention group deliberated. The approved AMR edit changes its
 catalog mode from `face-to-face` to `online`, not its group flags, sample,
 scores, country assignments or weights. The report's cover says June 2026
 although its URL filename says July 2026; neither is the 2024 event year.
@@ -2716,8 +2716,7 @@ Review AMR treatment/attendance definitions and country-specific instruments
 separately before changing any respondent data. Before validating reported gains,
 match country, weighting, analysis sample and wave. For the climate experiment,
 the one-year follow-up is a separate wave from immediate post-deliberation.
-The AMR mode proposal is awaiting user approval; its sample and scores are
-unchanged by this review.
+The AMR sample and scores are unchanged by this mode correction.
 
 ## NIC2 2003 — nic2-2003
 
