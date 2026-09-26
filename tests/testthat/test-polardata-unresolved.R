@@ -93,7 +93,7 @@ test_that("resolved polls reproduce historical fields", {
       corrected <- switch(poll,
         new_haven = c("minority", "pminority"),
         zeguo = c("chi.t1att2", "chi.t2att3", "attextreme",
-                  "meanxtreme", "avgsd", "genvar"),
+                  "meanxtreme", "avgsd", "genvar", "ppage", "meanage"),
         btp_primaries = c(
           "grpgain", "grpgainr", "loggain", "groupsize", "vareduc",
           "sdeduc", "pfemale_ind", "meant1know_ind",
