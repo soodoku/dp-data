@@ -452,7 +452,7 @@ new-haven-2004,t1knowcor,132,132,new-haven-2004.knowledge_joint@historical-v1,im
 new-haven-2004,t2know,132,132,new-haven-2004.knowledge_t2@historical-v1,implemented,R/respondent_new_haven.R; docs/poll-issues.md,
 new-haven-2004,ppage,132,129,new-haven-2004.age@historical-v1,implemented,R/respondent_new_haven.R; docs/poll-issues.md,
 new-haven-2004,educ4,132,132,new-haven-2004.education_four@historical-v1,implemented,R/respondent_new_haven.R; docs/poll-issues.md,
-new-haven-2004,minority,132,132,new-haven-2004.minority@historical-v1,implemented,R/respondent_new_haven.R; docs/poll-issues.md,
+new-haven-2004,minority,132,128,new-haven-2004.minority@nh-04-v2,implemented,R/respondent_new_haven.R; docs/poll-issues.md,
 new-haven-2004,hhincome,132,107,new-haven-2004.household_income@historical-v1,implemented,R/respondent_new_haven.R; docs/poll-issues.md,
 new-haven-2004,female,132,132,new-haven-2004.female@historical-v1,implemented,R/respondent_new_haven.R; docs/poll-issues.md,
 new-haven-2004,attextreme,132,132,new-haven-2004.attitude_extremity@historical-v1,implemented,R/respondent_new_haven.R; docs/poll-issues.md,

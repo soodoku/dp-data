@@ -22,6 +22,9 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     return(approved$approved_value)
   }
   reviewed <- list(
+    "new-haven-2004" = list(
+      fields = c("minority", "pminority"), rows = 132L
+    ),
     "btp-health-education-2005" = list(
       fields = c("female", "pfemale", "varfemale", "sdfemale",
                  "pfemale_ind", "entropy", "t1knowlevel"), rows = 454L

@@ -4023,7 +4023,7 @@ new-haven-2004,grpgain,132,132,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
 new-haven-2004,t2know,132,132,0,0,0,0,FALSE,0,0,1e-10
 new-haven-2004,ppage,132,129,0,0,0,0,FALSE,0,0,1e-10
 new-haven-2004,educ4,132,132,0,0,0,0,FALSE,0,0,1e-10
-new-haven-2004,minority,132,132,0,0,0,0,FALSE,0,0,1e-10
+new-haven-2004,minority,132,128,4,0,0,4,FALSE,0,0,1e-10
 new-haven-2004,hhincome,132,107,0,0,0,0,FALSE,0,0,1e-10
 new-haven-2004,female,132,132,0,0,0,0,FALSE,0,0,1e-10
 new-haven-2004,attextreme,132,132,0,0,0,0,FALSE,0,3.885780586188048e-16,1e-10
@@ -4043,7 +4043,7 @@ new-haven-2004,t2knowr,132,132,0,0,0,0,FALSE,0,0,1e-10
 new-haven-2004,pollname,132,132,0,0,0,0,FALSE,0,0,1e-10
 new-haven-2004,numissues,132,132,0,0,0,0,FALSE,0,0,1e-10
 new-haven-2004,pfemale,132,132,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
-new-haven-2004,pminority,132,132,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
+new-haven-2004,pminority,132,132,0,30,0,30,FALSE,0,0.142857142857143,1e-10
 new-haven-2004,varfemale,132,132,0,0,0,0,FALSE,0,4.718447854656915e-16,1e-10
 new-haven-2004,sdfemale,132,132,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
 new-haven-2004,vareduc,132,132,0,0,0,0,FALSE,0,1.3877787807814457e-16,1e-10

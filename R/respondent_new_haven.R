@@ -52,13 +52,18 @@ build_new_haven_individual <- function(
   income <- match(income, c(1, 3:12))
   birth_year <- read_source_codes(survey, "pre_q62", 1800:2002)
   birth_year[birth_year == 1890 & !is.na(birth_year)] <- NA_real_
+  race <- read_source_codes(survey, "pre_q70", 1:5)
   dplyr::bind_cols(
     dplyr::rename_with(baseline, \(name) paste0(name, "_t1")),
     dplyr::rename_with(post, \(name) paste0(name, "_t2")), knowledge,
     tibble::tibble(
       age = 2002 - birth_year,
       female = recode_source_values(survey, "pre_q72", c(0, 1)),
-      minority = as.numeric(read_source_codes(survey, "pre_q70", 1:5) != 3),
+      minority = dplyr::case_when(
+        race == 3 ~ 0,
+        race %in% c(1, 2, 4) ~ 1,
+        .default = NA_real_
+      ),
       education_four = education,
       education_three = collapse_historical_education(education),
       higher_education = as.numeric(education == 1),

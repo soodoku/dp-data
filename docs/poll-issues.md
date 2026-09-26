@@ -8,7 +8,7 @@ coverage of the 23 existing knowledge builds and the respondent reconstructions.
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
 UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24;
-SWE-02, AUS-03, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02, UKGE-05, BTPHE-01, BTPHE-03 and EURO-04 were approved in subsequent poll reviews.
+SWE-02, AUS-03, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02, UKGE-05, BTPHE-01, BTPHE-03, EURO-04 and NH-06 were approved in subsequent poll reviews.
 Other proposals remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
@@ -2576,15 +2576,14 @@ with independent gender agreement. No derived scores supply the bridge or build.
 The remaining fieldwork-year/133-versus-132 discrepancy in NH-02 is not resolved
 by this successful reconstruction.
 
-### NH-04: Airport scaling, refusal coding and age remain historical
+### NH-04: Airport scaling and age remain historical
 
 The airport expansion index maps 0.625 to float32(0.675), affecting 12 baseline
 and five post values; the same discontinuity applies at arrival. Inspect the
 Q12/Q13 index memo and executed recode before replacing it with an algebraic
 scale. Age uses `2002 - birth_year`; three birth-year-1890 records are set missing
-in the historical merge. Race refusal `Q70=5` counts as minority for four people.
-Review demographic questions, alternate-wave records and missingness intent
-before revising either rule.
+in the historical merge. Review the demographic instrument and alternate-wave
+records before revising the age rule. The race-refusal correction is NH-06.
 
 ### NH-05: Arrival attitudes cannot reuse the baseline recode blindly
 
@@ -2595,6 +2594,24 @@ midpoint component. These rules explain all five arrival-extremity differences
 under a naive repeated-wave implementation. Some post raw zeros are also
 preserved. Verify literal pre/mid/post questionnaires, routing and split-half
 timing before standardizing missingness or response origins across waves.
+
+### NH-06: Race refusal is missing minority status (corrected)
+
+The baseline CATI instrument's Q70 asks racial or ethnic background and labels
+code 5 "Refused"; codes 1, 2 and 4 are substantive minority categories, and
+code 3 is Caucasian. The historical `Q70 != 3` expression classified four
+refusals as minority. The approved recode keeps substantive categories but
+makes those four minority values missing. All 132 people remain in the sample.
+Case-level old and new values are in
+`audit/corrections/new-haven-2004/approved_values.csv`.
+
+The four people are in groups 9103, 9107 and 9115. Group minority shares move
+from 1/7 to 0/6, 2/10 to 1/9, and 6/13 to 4/11, respectively; the `pminority`
+field changes for all 30 people in those groups. No other aggregate field
+changes. In particular, the centralized historical entropy helper divides by
+full group size and absorbs missing binary answers into the complementary
+category, so its value stays the same. That missing-aware formula issue is
+recorded in X-03 and has not been altered as part of this poll correction.
 
 ## Zeguo 2005 — zeguo-2005
 
@@ -2674,8 +2691,10 @@ observed denominators. Neither policy should be silently generalized to the othe
 The centralized `pfemale_ind` helper uses full group size in its leave-one-out
 denominator, while `pfemale` omits missing genders; the entropy helper also
 divides observed categories by full group size. BTPHE-01 exposes this mismatch
-in groups 9707 and 9727. A change to these shared formulas must be assessed
-across all polls and frozen separately from the source-gender correction.
+in groups 9707 and 9727; NH-06 shows why the minority entropy can remain
+unchanged when refusal is restored to missing. A change to these shared
+formulas must be assessed across all polls and frozen separately from the
+poll-level source corrections.
 
 ### X-04: Person-level identity requires more than matching scores
 

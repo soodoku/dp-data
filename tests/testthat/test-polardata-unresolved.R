@@ -1,4 +1,5 @@
 source(file.path(root, "R", "respondents.R"))
+source(file.path(root, "R", "respondent_parity.R"))
 for (name in c(
   "respondent_new_haven", "respondent_btp_primaries",
   "respondent_zeguo", "polardata_derived", "polardata_assembly",
@@ -88,6 +89,13 @@ test_that("resolved polls reproduce historical fields", {
     expected <- expected[!duplicated(expected$caseid), ]
     expect_setequal(caseid[selected], expected$caseid)
     expected <- expected[match(caseid[selected], expected$caseid), ]
+    if (poll == "new_haven") {
+      for (field in c("minority", "pminority")) {
+        expected[[field]] <- approved_reference_values(
+          id, field, expected$caseid, expected[[field]]
+        )
+      }
+    }
     individual <- get(paste0("build_", poll, "_individual"))(survey)
     fields <- unresolved_test_fields(poll)
     values <- tibble::as_tibble(purrr::map(fields, \(name) {

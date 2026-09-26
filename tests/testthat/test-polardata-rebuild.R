@@ -57,6 +57,10 @@ test_that("derived exports preserve unique people and reviewed gain", {
     derived$legacy_field == "t1knowlevel"
   expect_setequal(unique(derived$definition_version[health_baseline]),
                   "btphe-03-v2")
+  new_haven_minority <- derived$poll_id == "new-haven-2004" &
+    derived$legacy_field == "pminority"
+  expect_setequal(unique(derived$definition_version[new_haven_minority]),
+                  "nh-04-v2")
 })
 
 test_that("numerical exceptions cannot hide changed aggregate values", {

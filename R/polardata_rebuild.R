@@ -126,6 +126,8 @@ historical_derived_measures <- function(polls) {
             ) ~ "btphe-01-v2",
           .env$poll_id == "btp-health-education-2005" &
             .data$legacy_field == "t1knowlevel" ~ "btphe-03-v2",
+          .env$poll_id == "new-haven-2004" &
+            .data$legacy_field == "pminority" ~ "nh-04-v2",
           .default = "historical-v1"
         ),
         value_status = dplyr::case_when(
