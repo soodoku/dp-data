@@ -8,7 +8,7 @@ coverage of the 23 existing knowledge builds and the respondent reconstructions.
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
 UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24;
-SWE-02, AUS-04, WTU-03, UKM-01, UKEU-03 and UKEU-04 were approved in subsequent poll reviews.
+SWE-02, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04 and UKGE-02 were approved in subsequent poll reviews.
 Other proposals remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
