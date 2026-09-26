@@ -6,7 +6,9 @@ analysis_poll_facts <- function(polls) {
     if (is.null(facts) || nrow(facts) == 0L) return(tibble::tibble())
     tibble::as_tibble(facts) |>
       dplyr::filter(
-        status == "reported", field %in% c("location", "event_dates")
+        field %in% c("location", "event_dates"),
+        status == "reported" |
+          (field == "event_dates" & status == "conflicting")
       ) |>
       dplyr::select(
         "poll_id", "field", "value", "reference_id", "source_locator"
@@ -166,7 +168,9 @@ analysis_polls <- function(polls, facts, events) {
     dplyr::transmute(poll_id, location_text = value,
                      location_reference_id = reference_id)
   date <- events |>
-    dplyr::filter(!year_conflict, !is.na(month)) |>
+    dplyr::filter(
+      !poll_id %in% events$poll_id[events$year_conflict], !is.na(month)
+    ) |>
     dplyr::group_by(poll_id) |>
     dplyr::arrange(dplyr::desc(!is.na(start_date)), event_id) |>
     dplyr::slice_head(n = 1L) |>

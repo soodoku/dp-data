@@ -102,6 +102,7 @@ test_that("reported timing conflicts remain visible without a false date", {
     "output", "analysis", "analysis_polls.parquet"
   ))
   conflict <- dplyr::filter(events, poll_id == "new-haven-2004")
+  expect_equal(nrow(conflict), 2L)
   expect_true(any(conflict$year_conflict))
   expect_true(all(is.na(conflict$start_date[conflict$year_conflict])))
   expect_true(is.na(polls$event_start_date[
