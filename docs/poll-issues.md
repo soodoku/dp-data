@@ -2189,8 +2189,13 @@ This pass inspected the full
 [San Mateo DP Questionnaire 3-12-08 FINAL](<../data/san-mateo-2008/questionnaire-pre.doc>):
 Q20 is September 2007 median single-family house price and lists **$940,000**
 at code 5; Q26 lists **more than 75%** at code 5. The earlier narrative describes
-Q20's source label as 950,000. The difference in the textual amount requires
-version reconciliation even if code 5 remains the same. The published
+Q20's source label as 950,000. The
+[briefing booklet](../data/san-mateo-2008/briefing-materials/san-mateo-briefing.pdf)
+charts a 2007 single-family median of $918,000 without specifying September;
+it cannot settle the fielded question's exact September figure. Both $940,000
+and $950,000 occupy the same highest answer code 5, and Q26 code 5 is “more
+than 75%” in both the questionnaire and stored labels. Thus the label-version
+difference alone does not imply a different key. The published
 [post supplement](../data/san-mateo-2008/questionnaire-post.doc) is short and does
 not contain these knowledge questions; its filename alone cannot corroborate them.
 
