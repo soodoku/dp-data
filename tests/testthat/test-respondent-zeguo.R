@@ -56,6 +56,17 @@ test_that("Zeguo scales the 4.5 rating and uses post road answers", {
   expect_equal(built$attitude_extremity, rowMeans(abs(baseline - .5)))
   expect_equal(built$main_roads_t2, post$main_roads)
   expect_gt(sum(built$main_roads_t2 != built$main_roads_t1), 0L)
+  expect_equal(built$wenchang_main_avenue_t1, baseline$wenchang_main_avenue)
+  expect_equal(built$wenchang_main_avenue_t2, post$wenchang_main_avenue)
+  expect_equal(built$wenchang_main_avenue_t1[is.na(survey$d2006)],
+               rep(.5, sum(is.na(survey$d2006))))
+  expect_equal(built$wenchang_main_avenue_t2[is.na(survey$d2006p)],
+               rep(.5, sum(is.na(survey$d2006p))))
+  paired <- !is.na(survey$preandpost) &
+    !is.na(survey$d2006) & !is.na(survey$d2006p)
+  expect_equal(sum(paired), 160L)
+  expect_equal(round(mean(survey$d2006[paired]) / 10, 3), .825)
+  expect_equal(round(mean(survey$d2006p[paired]) / 10, 3), .924)
 })
 
 test_that("Zeguo raw source projections reproduce the joined survey", {

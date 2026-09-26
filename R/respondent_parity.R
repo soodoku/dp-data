@@ -21,21 +21,6 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     )
     return(approved$approved_value)
   }
-  if (poll_id == "zeguo-2005" && field == "genvar") {
-    approved <- readr::read_csv(project_path(
-      "audit", "corrections", poll_id, "approved_values.csv"
-    ), show_col_types = FALSE)
-    approved <- approved[
-      approved$legacy_field == field & approved$pollgroup == 5207,
-    ]
-    rows <- match(approved$caseid, caseid)
-    stopifnot(nrow(approved) == 16L, !anyNA(rows),
-      !anyDuplicated(approved$caseid),
-      all(abs(historical[rows] - approved$historical_value) <= tolerance)
-    )
-    historical[rows] <- approved$approved_value
-    return(historical)
-  }
   reviewed <- list(
     "europolis-2009" = list(fields = c("ppage", "meanage"), rows = 348L),
     "btp-national-2003" = list(
@@ -54,8 +39,11 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
       fields = "t1knowlevel", rows = 239L
     ),
     "zeguo-2005" = list(
-      fields = c("chi.t1att2", "chi.t2att3", "attextreme",
-                 "meanxtreme", "avgsd", "ppage", "meanage"), rows = 233L
+      fields = c(
+        "chi.t1att2", "chi.t1att5", "chi.t2att3", "chi.t2att5",
+        "attextreme", "meanxtreme", "avgsd", "genvar",
+        "ppage", "meanage"
+      ), rows = 233L
     ),
     "new-haven-2004" = list(
       fields = c(
