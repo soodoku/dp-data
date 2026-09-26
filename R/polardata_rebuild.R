@@ -91,36 +91,30 @@ historical_derived_measures <- function(polls) {
       ) |>
       dplyr::mutate(
         poll_id = .env$poll_id,
-        definition_version = dplyr::if_else(
+        definition_version = dplyr::case_when(
           .env$poll_id == "uk-general-election-1997" &
             .data$legacy_field %in% c(
-              "grpgain",
-              "grpgainr",
-              "meant1knowcor",
-              "t1knowlevelcor",
-              "meant1knowcor_ind",
-              "meant2know",
-              "t2knowlevel",
-              "loggain",
-              "meant1knowrcor",
+              "grpgain", "grpgainr", "loggain", "avgsd", "genvar"
+            ) ~ "ukge-05-v2",
+          .env$poll_id == "uk-general-election-1997" &
+            .data$legacy_field %in% c(
+              "meant1knowcor", "t1knowlevelcor", "meant1knowcor_ind",
+              "meant2know", "t2knowlevel", "meant1knowrcor",
               "t1knowlevelrcor"
-            ),
-          "ukge-03-v2",
-          dplyr::case_when(
-            .env$poll_id == "uk-monarchy-1996" &
-              .data$legacy_field %in% c(
-                "grpgain", "grpgainr", "loggain", "meant1knowcor",
-                "meant1knowrcor", "meant1knowcor_ind", "t1knowlevelcor",
-                "t1knowlevelrcor", "meant2know", "t2knowlevel"
-              ) ~ "ukm-01-v2",
-            .env$poll_id == "nic-1996" & .data$legacy_field == "meanage" ~
-              "nic-03-v2",
-            .env$poll_id == "cpl-1996" & .data$legacy_field %in%
-              c("grpgain", "grpgainr", "loggain") ~ "cpl-05-v2",
-            .env$poll_id == "australia-republic-1999" &
-              .data$legacy_field %in% c("grpgain", "loggain") ~ "aus-04-v2",
-            .default = "historical-v1"
-          )
+            ) ~ "ukge-03-v2",
+          .env$poll_id == "uk-monarchy-1996" &
+            .data$legacy_field %in% c(
+              "grpgain", "grpgainr", "loggain", "meant1knowcor",
+              "meant1knowrcor", "meant1knowcor_ind", "t1knowlevelcor",
+              "t1knowlevelrcor", "meant2know", "t2knowlevel"
+            ) ~ "ukm-01-v2",
+          .env$poll_id == "nic-1996" & .data$legacy_field == "meanage" ~
+            "nic-03-v2",
+          .env$poll_id == "cpl-1996" & .data$legacy_field %in%
+            c("grpgain", "grpgainr", "loggain") ~ "cpl-05-v2",
+          .env$poll_id == "australia-republic-1999" &
+            .data$legacy_field %in% c("grpgain", "loggain") ~ "aus-04-v2",
+          .default = "historical-v1"
         ),
         value_status = dplyr::case_when(
           is.na(.data$value_numeric) ~ "missing",

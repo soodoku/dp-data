@@ -8,7 +8,7 @@ coverage of the 23 existing knowledge builds and the respondent reconstructions.
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
 UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24;
-SWE-02, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04 and UKGE-02 were approved in subsequent poll reviews.
+SWE-02, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02 and UKGE-05 were approved in subsequent poll reviews.
 Other proposals remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
@@ -1130,16 +1130,49 @@ historical transformations. All 35 respondent-field targets match for the 275
 attendees at 1e-10, including missingness. This is reproduction evidence, not
 an endorsement of the tax mismatch or the cross-wave knowledge dependency.
 
-### UKGE-05: Dispersion and peer gain precede the final attendee filter
+### UKGE-05: Exclude a source nonparticipant from early group metrics
 
-The original poll script computes group dispersion and peer gain before the
-final exported attendance restriction. One later-excluded source respondent
-therefore contributes to these early group calculations. Computing them only
-from the 275 exported attendees changes values for 17 retained respondents.
-The reconstruction keeps the earlier source sample for dispersion and gain,
-then uses the exported sample for later composition summaries. Before changing
-this, verify the excluded person's attendance and interview status against the
-source filter and roster, and compare the resulting downstream estimates.
+**Status: approved by the user on 2026-09-25 and adopted.** The original poll
+script computes group dispersion and peer gain before the final exported
+attendance restriction. One later-excluded source respondent therefore
+contributes to these early group calculations. The correction uses the source
+`PARTIC == 1` flag for group-metric eligibility, while preserving the raw
+group assignment and the same 275 exported respondents. The shared group and
+poll functions then recompute the derived metrics. The source
+[codebook](../data/uk-general-election-1997/codebook.txt) explicitly identifies
+serial 4416 as assigned to a small group but without a T2 questionnaire. In
+`survey.sav`, serial 4416 is source row 1, group 9, `PARTIC == 0`, `FILTER == 0`,
+and `RECRUIT == 4` (“will go to Manchester”); its post policy and factual
+answers are missing. The file has 276 group assignments, 275 participants, and
+275 selected rows. The [paper](../data/uk-general-election-1997/papers/british-election-paper.pdf)
+reports counting 276 arrivals; that count agrees with assignments but does not
+establish whether 4416 attended or how the paper defined its Table 3 sample.
+The codebook's participant tabulation is 275. Do not infer attendance from an
+assignment or recruitment intent.
+
+Excluding 4416 changes only group 9: `grpgain`, `grpgainr`, `loggain`,
+`avgsd`, and `genvar` each change for its 17 selected respondents, with no
+missingness change. Across all 275 selected people, mean `grpgain` changes
+0.368422 → 0.369915 and mean `avgsd` 0.285585 → 0.285622; the largest
+individual absolute changes are 0.029902 and 0.000602 respectively. Mean
+`genvar` changes 0.245069 → 0.245237, with maximum absolute change 0.002721.
+The frozen historical and approved values are in
+[`approved_values.csv`](../audit/corrections/uk-general-election-1997/approved_values.csv).
+The exact previous-build comparison finds only these five fields changed for
+those 17 people. The historical-benchmark comparison reports 73 changed gain
+values because it also contains the separately approved UKGE-03 knowledge
+correction; no differences are unexplained.
+
+A read-only `dp-learning` sensitivity changes 17 `heterogeneity` inputs in its
+6,013-row analysis frame; it changes no sample membership or other model input.
+The main mixed model retains 5,830 observations and its largest fixed-effect
+coefficient change is 0.000328; the minority model retains 5,182 and its
+largest change is 0.000382. Current `dp-distortions` analysis code reads the
+attitude, group-ID, and demographic fields, none of which change here; its
+analytical inputs are therefore identical (a code-path inference, not a rerun).
+The paper's 276-arrival count remains a separate roster question; it does not
+justify counting a record explicitly marked nonparticipant in the participant
+group metrics.
 
 ## CPL 1996 — cpl-1996
 
@@ -1173,11 +1206,35 @@ match for 216 attendees, including missingness, at 1e-10.
 uses seven baseline indices, including COMPET1, in `attextreme`.
 `05_fix_data.R` later removes the competition columns without recomputing
 extremity. The maintained recode therefore retains COMPET1 as a dependency even
-though the final historical wide table exposes only six attitude pairs. Before
-correction, decide whether the intended extremity definition should follow the
-final attitude battery or the earlier seven-index specification; quantify both
-versions without silently dropping the component. Codebook 99/999 sentinels are
-preserved in raw responses and removed where required for historical scoring.
+though the final historical wide table exposes only six attitude pairs. The
+[codebook](../data/cpl-1996/codebook.txt) identifies COMPET1 as Q20a, benefits
+of competition over regulation. The archived `tx_cpl.R` explicitly gives the
+poll seven indices and includes competition in extremity and dispersion;
+`05_fix_data.R` later removes the competition attitude columns for CPL, SWEPCO,
+and WTU without recomputing those descriptors. The retained cross-poll
+[attitude catalog](../data/shared/codebooks/attitude_indices/allpollindices.csv)
+lists six exposed CPL indices. This sequence could reflect a deliberate change
+in the public attitude battery rather than an accidental omission from the
+earlier group metrics.
+
+A six-index counterfactual on the same 216 selected respondents removes only
+competition from the original pre-final-rescaling attitude matrix. Competition
+is observed for 177 of 216. Relative to the seven-index historical values,
+`attextreme` changes for 175 respondents (mean 0.296775 → 0.287434; maximum
+absolute change 0.060714), while `meanxtreme`, `avgsd`, and `genvar` change for
+all 216 (means 0.296775 → 0.287434, 0.261136 → 0.240753, and 0.184242 →
+0.183418 respectively). No missingness changes. The historical `numindices`
+remains 7 even though only six pairs are exposed. In a read-only sensitivity
+using the current `dp-learning` reader, the 6,013-row analysis frame changes
+only its `extremity` (175 CPL values above 1e-10) and `heterogeneity` (all 216
+CPL values) inputs; no sample or missingness changes. Thirteen additional
+`extremity` cells differ only below 1e-10 because the export and recomputation
+have different storage precision. This is an input comparison, not a model
+re-estimation. Preserve the seven-index descriptors for now; if six-index
+descriptors are needed, define and compare them explicitly
+in the expanded schema rather than silently redefining the historical fields.
+Codebook 99/999 sentinels are preserved in raw responses and removed where
+required for historical scoring.
 Dictionary-based `response_status` does not yet encode every codebook sentinel
 in these newly added demographic and attitude fields; `n_observed_fields` must
 not be used as a scoring denominator or validated response-completeness count.

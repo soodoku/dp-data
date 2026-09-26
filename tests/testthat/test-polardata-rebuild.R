@@ -41,6 +41,12 @@ test_that("derived exports preserve unique people and reviewed gain", {
     derived$legacy_field %in% c("grpgain", "loggain")
   expect_setequal(unique(derived$definition_version[australia_gain]),
                   "aus-04-v2")
+  election_group <- derived$poll_id == "uk-general-election-1997" &
+    derived$legacy_field %in% c(
+      "grpgain", "grpgainr", "loggain", "avgsd", "genvar"
+    )
+  expect_setequal(unique(derived$definition_version[election_group]),
+                  "ukge-05-v2")
 })
 
 test_that("numerical exceptions cannot hide changed aggregate values", {
@@ -107,7 +113,8 @@ test_that("UKGE-03 approval protects every affected aggregate field", {
   approved <- readr::read_csv(project_path(
     "audit", "corrections", "uk-general-election-1997", "approved_values.csv"
   ), show_col_types = FALSE)
-  approved <- approved[approved$legacy_field != "ukbge.t2tax", ]
+  approved <- approved[!approved$legacy_field %in%
+                         c("ukbge.t2tax", "avgsd", "genvar"), ]
   expect_equal(nrow(approved), 275L * 19L)
   data <- full_polardata()
   reference <- readr::read_tsv(project_path(
@@ -163,6 +170,47 @@ test_that("UKGE-02 protects approved post tax-and-spending values", {
                                   approved$approved_value) > 1e-10)[1]
   row <- which(data$dpnum == 4L & data$caseid == approved$caseid[changed])
   data$ukbge.t2tax[row] <- approved$historical_value[changed]
+  parity <- compare_historical_polardata(data, reference, audit)
+  expect_equal(sum(parity$unexplained_differences), 1L)
+})
+
+test_that("UKGE-05 excludes a nonparticipant from early group metrics", {
+  survey <- read_poll_survey("uk-general-election-1997")
+  excluded <- which(as.numeric(survey$serial) == 4416)
+  expect_length(excluded, 1L)
+  expect_equal(as.numeric(survey$group[excluded]), 9)
+  expect_equal(as.numeric(survey$partic[excluded]), 0)
+  expect_true(is.na(survey$taxr2[excluded]))
+  profile <- core_poll_profile(survey, "uk-general-election-1997")
+  expect_true(is.na(profile$group[excluded]))
+  expect_equal(sum(profile$group == 2509, na.rm = TRUE), 17L)
+
+  fields <- c("grpgain", "grpgainr", "loggain", "avgsd", "genvar")
+  approved <- readr::read_csv(project_path(
+    "audit", "corrections", "uk-general-election-1997", "approved_values.csv"
+  ), show_col_types = FALSE)
+  approved <- approved[approved$legacy_field %in% fields, ]
+  expect_equal(nrow(approved), 275L * length(fields))
+  data <- full_polardata()
+  actual <- data[data$dpnum == 4L, ]
+  for (field in fields) {
+    evidence <- approved[approved$legacy_field == field, ]
+    expect_setequal(evidence$caseid, actual$caseid)
+    position <- match(actual$caseid, evidence$caseid)
+    expect_equal(actual[[field]], evidence$approved_value[position],
+                 tolerance = 1e-10)
+  }
+  reference <- readr::read_tsv(project_path(
+    "evidence", "benchmarks", "polardata.tab"
+  ), show_col_types = FALSE)
+  audit <- readr::read_csv(project_path(
+    "audit", "polardata_covariances.csv"
+  ), show_col_types = FALSE)
+  row <- which(data$dpnum == 4L & data$pollgroup == 2509)[1]
+  evidence <- approved[approved$legacy_field == "avgsd" &
+                         approved$caseid == data$caseid[row], ]
+  expect_gt(abs(data$avgsd[row] - evidence$historical_value), 1e-10)
+  data$avgsd[row] <- evidence$historical_value
   parity <- compare_historical_polardata(data, reference, audit)
   expect_equal(sum(parity$unexplained_differences), 1L)
 })
