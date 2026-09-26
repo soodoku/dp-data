@@ -72,6 +72,9 @@ analysis_control_sources <- function() {
     amr = readr::read_csv(project_path(
       "data", "amr-2024", "participants.csv"
     ), show_col_types = FALSE),
+    northern_ireland = arrow::read_parquet(project_path(
+      "data", "northern-ireland-2007", "survey.parquet"
+    )),
     marousi = readr::read_csv(project_path(
       "data", "marousi-2006", "participants.csv"
     ), show_col_types = FALSE)
@@ -170,6 +173,38 @@ analysis_control_people <- function(sources) {
       female = NA_real_,
       score_wave1 = NA_real_, score_wave2 = NA_real_
     )
+  ni_groups <- readr::read_csv(
+    project_path("data", "northern-ireland-2007", "groups.csv"),
+    col_names = c("respondent_id", "group_id"),
+    col_types = readr::cols(
+      respondent_id = readr::col_character(),
+      group_id = readr::col_character()
+    )
+  )
+  northern_ireland <- sources$northern_ireland |>
+    dplyr::filter(!is.na(time3) | !is.na(cgq36)) |>
+    dplyr::mutate(respondent_id = as.character(as.integer(cserial))) |>
+    dplyr::left_join(ni_groups, by = "respondent_id",
+                     relationship = "many-to-one") |>
+    dplyr::transmute(
+      poll_id = "northern-ireland-2007", source_dataset = "control",
+      respondent_id, source_row,
+      historical_respondent_id = NA_character_,
+      identity_basis = "source-id",
+      arm = dplyr::if_else(is.na(cgq36), "attended", "control"),
+      assignment = NA_character_, attended = is.na(cgq36), panel = TRUE,
+      small_group_id = dplyr::if_else(is.na(cgq36), group_id, NA_character_),
+      cluster_id = dplyr::if_else(is.na(cgq36), group_id, respondent_id),
+      country = "United Kingdom", weight = NA_real_,
+      ba = NA_real_, female = as.numeric(female),
+      score_wave1 = NA_real_, score_wave2 = NA_real_
+    )
+  stopifnot(
+    nrow(northern_ireland) == 243L,
+    sum(northern_ireland$arm == "attended") == 93L,
+    sum(northern_ireland$arm == "control") == 150L,
+    !anyNA(northern_ireland$cluster_id)
+  )
   marousi <- sources$marousi |>
     dplyr::mutate(source_row = dplyr::row_number()) |>
     dplyr::transmute(
@@ -185,7 +220,7 @@ analysis_control_people <- function(sources) {
       female,
       score_wave1 = as.numeric(t1know), score_wave2 = as.numeric(t2know)
     )
-  dplyr::bind_rows(a1r, climate, tanzania, amr, marousi)
+  dplyr::bind_rows(a1r, climate, tanzania, amr, northern_ireland, marousi)
 }
 
 analysis_historical_items <- function(catalog) {
@@ -289,15 +324,32 @@ analysis_control_items <- function(sources, catalog) {
       wave = as.integer(Time + 1), source_item_id = source_column, source_row,
       source_column, raw_value = as.numeric(raw_value), raw_text = NA_character_
     )
+  northern_ireland <- sources$northern_ireland |>
+    dplyr::filter(!is.na(time3) | !is.na(cgq36)) |>
+    dplyr::mutate(respondent_id = as.character(as.integer(cserial))) |>
+    dplyr::select("source_row", "respondent_id",
+                  dplyr::all_of(paste0("t3q", 11:17))) |>
+    tidyr::pivot_longer(dplyr::all_of(paste0("t3q", 11:17)),
+                        names_to = "source_column", values_to = "raw_value") |>
+    dplyr::transmute(
+      poll_id = "northern-ireland-2007", source_dataset = "control",
+      respondent_id, wave = 3L,
+      source_item_id = paste0(
+        "t1q", as.integer(sub("t3q", "", source_column)) + 10L
+      ),
+      source_row, source_column,
+      raw_value = as.numeric(raw_value), raw_text = NA_character_
+    )
   keys <- catalog |>
     dplyr::filter(poll_id %in% c(
-      "america-in-one-room-2019", "a1r-climate-2021", "amr-2024"
+      "america-in-one-room-2019", "a1r-climate-2021", "amr-2024",
+      "northern-ireland-2007"
     )) |>
     dplyr::transmute(
       poll_id, source_item_id = source_column_t1, item_id,
       key = as.numeric(correct_codes)
     )
-  out <- dplyr::bind_rows(a1r, climate, amr) |>
+  out <- dplyr::bind_rows(a1r, climate, amr, northern_ireland) |>
     dplyr::left_join(keys, by = c("poll_id", "source_item_id"),
                      relationship = "many-to-one")
   stopifnot(!anyNA(out$key))

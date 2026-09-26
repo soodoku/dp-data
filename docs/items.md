@@ -8,7 +8,9 @@ respondent batteries to the 23 Cor--Sood item batteries through
 `historical_item_id` and `cor_item_id`. The two sets overlap within 16 polls:
 170 historical entries and 177 Cor--Sood entries resolve to 224 distinct
 questions in 28 polls. The catalog also includes 21 questions from three
-control polls, for 245 questions in 31 polls altogether. The same question in
+additional control polls, for 245 questions in 31 polls altogether. Northern
+Ireland's T3 participant and control answers map to its existing seven item IDs.
+The same question in
 two *different* polls remains two records. Wave 2 columns and accepted values remain in
 [`metadata/knowledge_items.csv`](../metadata/knowledge_items.csv) and the
 historical scoring functions; the catalog does not silently assume identical
