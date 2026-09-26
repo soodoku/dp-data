@@ -14,13 +14,20 @@ test_that("canonical item catalog covers both scored baseline batteries", {
       source_column_t1 = .data$source_column
     )
 
-  expect_equal(nrow(catalog), 224L)
-  expect_equal(dplyr::n_distinct(catalog$poll_id), 28L)
+  expect_equal(nrow(catalog), 245L)
+  expect_equal(dplyr::n_distinct(catalog$poll_id), 31L)
   expect_false(anyDuplicated(catalog[c("poll_id", "item_id")]) > 0L)
   has_historical <- !is.na(catalog$historical_item_id)
   has_cor <- !is.na(catalog$cor_item_id)
-  expect_true(all(has_historical | has_cor))
+  control <- catalog$poll_id %in% c(
+    "america-in-one-room-2019", "a1r-climate-2021", "amr-2024"
+  )
+  expect_true(all(has_historical | has_cor | control))
   expect_equal(sum(has_historical & has_cor), 123L)
+  expect_setequal(
+    catalog$source_column_t1[control],
+    c(paste0("PK", 1:7), paste0("Q", 17:24), paste0("knowledge_", 1:6))
+  )
   historical_ids <- catalog[
     !is.na(catalog$historical_item_id),
     c("poll_id", "historical_item_id")
@@ -57,7 +64,11 @@ test_that("canonical item catalog covers both scored baseline batteries", {
   )]))
   open_types <- c("open numeric", "open coded", "open text")
   open <- catalog$response_type %in% open_types
-  expect_true(all(!is.na(catalog$answer_choices[!open])))
+  no_choices <- is.na(catalog$answer_choices) & !open
+  expect_true(all(control[no_choices]))
+  expect_true(all(grepl(
+    "not in the retained report", catalog$coding_note[no_choices]
+  )))
   administrative <- "refused|not asked|skipped|T2 only group|no answer"
   expect_false(any(grepl(
     administrative, catalog$answer_choices, ignore.case = TRUE

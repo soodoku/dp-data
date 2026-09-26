@@ -125,7 +125,7 @@ verbatim responses and records the original source hash in the artifact catalog.
 | `evidence/benchmarks/` | Frozen published aggregates for comparisons and historical linkage |
 | `evidence/deposits/` | Immutable public deposits awaiting poll-level extraction |
 | `metadata/` | Poll registry, source catalog, aliases, recodes, export contracts |
-| `metadata/items.csv` | Canonical knowledge-question catalog, linked to both historical and Cor--Sood batteries; see [item catalog guide](docs/items.md) |
+| `metadata/items.csv` | Canonical knowledge-question catalog for the historical, Cor--Sood, and three control-poll batteries; see [item catalog guide](docs/items.md) |
 | `datapackage.json` | Frictionless schemas for the tabular metadata |
 | `R/`, `scripts/` | Validation and build code |
 | `output/` | Typed Parquet products built from audited poll-level inputs |
