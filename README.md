@@ -62,7 +62,7 @@ canonical respondent tables retain one record per person.
 The build reads public poll sources, not frozen aggregates or the vault.
 `make compare-respondents` and `make compare-polardata` separately test against
 historical benchmarks. Documented numerical exceptions concern generalized
-variance in 24 groups; the comparison checks the exact source matrices and
+variance in 23 groups; the comparison checks the exact source matrices and
 numerical diagnostics before accepting those differences. Export row numbers
 are regenerated. The approved UK Crime correction replaces a baseline police
 item with the post-wave children item. UK Election 1997 now uses the post-wave

@@ -2348,7 +2348,7 @@ presence is not a claim that every original field-file merge has been recovered.
 | btp-national-2003 | All 245 historical participants and aggregate fields are now reconstructed; the 674-person descriptor calibration uses a separate raw source. | National-event instruments and field files; distinguish the national event from later primary/general-election polls. |
 | btp-presidential-primaries-2004 | All 217 historical people are reconstructed; historical export duplicates them, and running peer sums require preserved within-group order. Do not conflate with the online-primaries battery. | Event/mode-specific questionnaires, invitation and attendance records, and ID crosswalk. |
 | new-haven-2004 | All 132 historical people are reconstructed from joined pre/mid/post workbook answers. Three birth-year-1890 values are made missing; event year and omitted attendee remain under review. | Original demographic question, raw value and alternate-wave age; respondent linkage and attitude definitions. |
-| zeguo-2005 | All 233 historical participants are reconstructed from reviewed merged/pre/post components; three item-coding overrides and 16 covariance exceptions remain explicit. | Original and translated instruments, event date, project-choice scales and respondent/group identifiers. |
+| zeguo-2005 | All 233 historical participants are reconstructed from reviewed merged/pre/post components; three item-coding overrides and 15 numerical covariance exceptions remain explicit. | Original and translated instruments, event date, project-choice scales and respondent/group identifiers. |
 | marousi-2006 | Public participants file came from an existing derived 2014 analysis object, not an independently rebuilt item-level source. It has scores, groups and demographics but no item responses. | [Questionnaire](../data/marousi-2006/questionnaire.pdf), original field returns, scoring syntax and group roster. Audit the downstream convention treating T2 zeros as missing before generalizing it; it is not justified by the numeric value alone. |
 | bulgaria-2007 | Distinct Roma-policy event; it must not inherit the 2002 crime battery merely because files share an archive directory. | Roma-policy questionnaire, actual event date and source-file provenance. |
 | tanzania-2015 | Public source is available, but full canonical arm, village, questionnaire and measurement integration is not built here. | Village-randomization protocol, information versus deliberation arms, instruments and cluster IDs. Preserve the current downstream specification until audited. |
@@ -2623,29 +2623,55 @@ aggregate person ID is `52000 + p`, and group is `5200 + groupnum`.
 `source-materials/knowledge-reconciliation.csv` records three historical
 `post_d3045` correctness overrides: `p=48` and `75` have missing raw answers,
 and `p=105` has raw code 1, but all three historically score correct. The merged
-version's `d3045p=1` is corroborating version evidence. The ledger changes only
-the historical item score; original raw responses remain intact. Check original
-post questionnaires, answer key and field-file version history before retaining
-or correcting these overrides in a new scoring version.
+version's `d3045p=1` is corroborating version evidence. The fielded
+[source questionnaire](../data/zeguo-2005/source-materials/questionnaire.pdf)
+Q45 lists answer 3 as plastic products, and the
+[research paper](../data/zeguo-2005/papers/china-zeguo-bjps.pdf) explicitly
+identifies plastic products as correct. Across all
+269 joined source records, the merged file marks all 113 raw post answers of
+3 correct; five of six raw answers of 1 incorrect; and these three exceptions
+correct. Thus the ordinary key is supported, but the three merged flags could
+reflect later manual corrections that did not update the raw POST file. The
+ledger changes only historical scores, preserving all raw answers. Original
+answer sheets or field-file version history are still needed to decide whether
+the three exceptions were verified corrections or coding mistakes. No ZG-01
+score has been changed.
 
-### ZG-02: Road indices preserve out-of-range and cross-wave behavior
+### ZG-02: Scale the village-road rating and use post-wave main roads
 
-One baseline village-road rating of 4.5 remains unscaled, producing index
-1.83333337. The final respondent export blanks the out-of-range index, but earlier
-extremity and dispersion retain it. Changing only the export cannot undo its
-contribution to those summaries. The T2 main-roads index copies T1 in historical
-syntax, although the separate rescaled main-roads index uses actual post answers.
-Review the translated project-choice instrument, rating units, entry correction
-history and index memo before substituting post answers or rescaling 4.5.
+The fielded translated questionnaire and its alternative both print a 0-10
+importance scale for the project ratings. One respondent (`p=50`, source row
+147, historical case 52050) answered 4.5 on baseline village-road item
+`d2007`; their other two components are 5 and 5. The archived code divided
+the ratings by 10 but then reset this one value to 4.5. This produced an
+out-of-range index of 1.83333337, which the final individual export blanked
+while extremity and group dispersion retained it. ZG-02 scales the recorded
+4.5 to 0.45, giving case 52050 a village-road index of about 0.48333332.
+The raw answer is unchanged. One formerly missing `chi.t1att2` is now observed;
+the case's `attextreme` and `meanxtreme`, `avgsd`, and `genvar` for all 16
+members of group 5207 change.
+
+The archived `china_2005.r` also copied baseline `mroads1` into both T1 and
+T2 main-roads indices, even though the post questionnaire asks the same
+projects and the separate rescaled T2 main-roads index uses `d2015p`-`d2019p`
+and `d2022p`. ZG-02 uses those six post ratings in `chi.t2att3`. Its value
+changes for 206 of 233 participants, with no missingness change; group and
+poll descriptors do not use post attitudes and are unaffected by this second
+edit. The six-field person-level comparison is in
+`audit/corrections/zeguo-2005/approved_values.csv`; all other fields retain
+their historical scoring. The generalized-variance column has platform-dependent numerical exceptions
+for the other 15 groups; group 5207 is treated as an approved correction, not
+a numerical exception. The comparison file retains the historical benchmark
+as its old value.
 
 ### ZG-03: Two road indices make covariance numerically singular
 
 The nine-column baseline matrix includes `float(mean(float(ratings / 10)))`
 and `float(mean(ratings)) / 10` versions of main roads. They are algebraically
-redundant apart from float-storage order. All nine reconstructed input columns
-match the original historical matrix bit-for-bit, including the pre-cleaning
-village-road anomaly. All 16 groups have rank eight rather than nine and show
-platform-sensitive generalized variance; see X-09. Dropping a redundant column
+redundant apart from float-storage order. Before ZG-02, all nine reconstructed input columns matched the original
+historical matrix bit-for-bit. The approved 4.5 rescaling changes one input
+in group 5207. All 16 groups still have rank eight rather than nine; the other
+15 retain reviewed platform-sensitive generalized variance; see X-09. Dropping a redundant column
 would change the estimand and requires a separately reviewed correction.
 
 ## Cross-poll issues for the eventual schema
@@ -2742,10 +2768,10 @@ separated; a rejected-alternative explanation; and an explicit decision to
 preserve, relabel, revise, or leave unresolved. A monotonic scale that looks
 intuitive is not sufficient evidence to replace a deliberate transformation.
 
-### X-09: Generalized variance has 24 explicitly reviewed numerical exceptions
+### X-09: Generalized variance has 23 explicitly reviewed numerical exceptions
 
 The current source formula differs from the frozen historical executable's
-`genvar` in 24 groups, covering 288 export cells. These are not all negligible
+`genvar` in 23 groups, covering 272 export cells. These are not all negligible
 absolute differences, and they are not replaced by benchmark values.
 
 | Poll | Groups | Cells | Largest absolute difference |
@@ -2753,7 +2779,7 @@ absolute differences, and they are not replaced by benchmark values.
 | UK–EU 1995 | 2099 | 4 | 0.000063499 |
 | BTP Health/Education 2005 | 9713, 9715 | 20 | 0.000209632 |
 | San Mateo 2008 | 9601, 9604, 9616, 9617, 9621 | 31 | 0.003464282 |
-| Zeguo 2005 | 5201–5216 | 233 | 0.001944706 |
+| Zeguo 2005 | 5201–5206 and 5208–5216 | 217 | 0.001944706 |
 
 Historical generalized variance takes the absolute determinant of a pairwise
 covariance matrix and raises it to `1 / (2 * number_of_indices)`. Near-zero
@@ -2761,7 +2787,9 @@ determinants become much larger after this root, magnifying rounding differences
 The original nested calculation is retained in code to preserve its own rounding.
 UK–EU group 2099 has N=4, P=4, rank=3; BTP groups 9713 and 9715 have
 N/P/rank 11/11/10 and 9/11/8. San Mateo's five groups have N=5–7 and P=7;
-Zeguo's 16 groups have N=10–17, P=9 and rank=8.
+Zeguo's 15 numerically excepted groups have N=10–17, P=9 and rank=8.
+Group 5207 also has rank eight, but its changed source matrix and `genvar`
+are an approved ZG-02 correction rather than a numerical exception.
 
 Two San Mateo matrices also have materially negative eigenvalues. Group 9601
 has N=6, five complete rows, pairwise N=5–6, and minimum eigenvalue -0.01431241.

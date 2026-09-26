@@ -229,7 +229,7 @@ The full build writes `output/polardata/polardata.parquet` and `polardata.tab`
 with 6,084 rows and the 364 historical columns, plus the 129-row attitude catalog
 and typed derived measures. All 21 polls build from public source materials;
 `make compare-polardata` evaluates historical agreement separately. Generalized
-variance has explicitly audited numerical exceptions in 24 groups, and export
+variance has explicitly audited numerical exceptions in 23 groups, and export
 row numbers are regenerated. Approved UKC-01 replaces baseline policing with the
 post-wave children item in the UK Crime root-causes index. Approved UKGE-03 uses
 `wagel2` in UK Election 1997 post knowledge, updating dependent respondent and

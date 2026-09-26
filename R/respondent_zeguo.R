@@ -36,10 +36,6 @@ zeguo_attitudes <- function(survey, wave) {
     value <- read_source_codes(survey, field, allowed)
     if (!scaled) return(value)
     value <- as_historical_float(value / 10)
-    if (wave == 1L && number == 7L) {
-      original <- survey[[field]]
-      value[!is.na(original) & original == 4.5] <- 4.5
-    }
     value
   }
   mean_items <- function(numbers, scaled = TRUE) {
@@ -67,9 +63,7 @@ build_zeguo_individual <- function(survey = read_poll_survey("zeguo-2005")) {
   after <- zeguo_knowledge_items(survey, "post")
   baseline <- zeguo_attitudes(survey, 1L)
   post <- zeguo_attitudes(survey, 2L)
-  post$main_roads <- baseline$main_roads
   extremity <- rowMeans(abs(baseline - .5))
-  baseline$village_roads[baseline$village_roads > 1] <- NA_real_
   education <- recode_source_values(survey, "Education",
     c(0, 0, 0, .33, .66, .66, 1)
   )

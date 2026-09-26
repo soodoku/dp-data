@@ -79,7 +79,7 @@ test_that("full rank matrices never receive numerical singularity exceptions", {
   )$numerical_exception)
 })
 
-test_that("reviewed public source matrices identify only the 24 known groups", {
+test_that("reviewed public source matrices identify only the 23 known groups", {
   for (module in c(
     "respondents", "polardata", "polardata_assembly", "polardata_core",
     "polardata_btp_reviewed", "respondent_zeguo"
@@ -96,7 +96,7 @@ test_that("reviewed public source matrices identify only the 24 known groups", {
   )
   result <- audit_historical_covariances(benchmark, reviewed)
   accepted <- result[result$numerical_exception, ]
-  expect_equal(nrow(accepted), 24)
+  expect_equal(nrow(accepted), 23)
   expect_setequal(accepted$pollgroup, reviewed$pollgroup)
   expect_setequal(
     accepted$pollgroup[accepted$covariance_class == "indefinite_and_singular"],
