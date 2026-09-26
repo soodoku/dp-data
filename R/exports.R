@@ -4,7 +4,8 @@ export_schema <- function(table_name) {
   stopifnot(nrow(columns) > 0L)
   types <- list(
     string = arrow::utf8(), int32 = arrow::int32(),
-    float64 = arrow::float64(), bool = arrow::boolean()
+    float64 = arrow::float64(), bool = arrow::boolean(),
+    date32 = arrow::date32()
   )
   fields <- purrr::pmap(
     columns[c("column", "arrow_type", "nullable")],

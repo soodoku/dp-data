@@ -2,6 +2,14 @@ test_that("metadata contracts are valid", {
   expect_no_error(validate_metadata())
 })
 
+test_that("control-poll modes match the fielded deliberations", {
+  polls <- read_metadata("polls")
+  observed <- stats::setNames(polls$mode, polls$poll_id)
+  expect_identical(observed[["america-in-one-room-2019"]], "face-to-face")
+  expect_identical(observed[["a1r-climate-2021"]], "online")
+  expect_identical(observed[["amr-2024"]], "online")
+})
+
 test_that("the Frictionless package names every metadata table", {
   package <- frictionless::read_package(project_path("datapackage.json"))
   expect_setequal(
