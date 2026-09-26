@@ -2866,12 +2866,7 @@ about 0.357297. `calibration-responses.parquet` retains the 11 raw items and IDs
 Check `know_index_online.do`, `nuri/reagg.txt`, the fielded baseline instrument
 and calibration-universe rationale before harmonizing these definitions.
 
-### BTPN-04: Omitted interest and nested weighting need version-specific review
-
-Raw `qb57` is populated for all 245 people, but final aggregate political
-interest is missing for everyone. An earlier derived `t1polint` exists; its
-presence does not authorize filling the historical omission. Inspect the
-question wording, response orientation and merge history before adding it.
+### BTPN-04: Nested weighting needs version-specific review
 
 Executed environment uses Q2a, Q13, Q14 and Q15a as four components, while the
 index memorandum includes a proposed three-component form. Security,
@@ -2883,6 +2878,38 @@ then `kn2:kn9`, rounding each addition. Group high-income share uses early
 collapsed income `> 7`; final respondent high income uses `> 5`.
 Review `merge02_nuri.R`, `03_data.R` and `06_add_more_vars.R` before combining
 those stage-specific definitions in a revised schema.
+
+### BTPN-05: Baseline political interest was omitted from the final aggregate
+
+**Proposed; no scoring change on main yet.** The 245 selected source records
+all answer `qb57`, which the source dictionary labels as interest in U.S.
+politics. Its response labels run from 1 “very interested” through 4 “not at
+all interested.” Mapping those codes to 1, .66, .33 and 0, then storing a
+32-bit float, reproduces all 245 source `t1polint` values exactly. Counts by
+raw code are 73, 122, 42 and 8. The source mean of the derived scale is
+0.68318. The historical `polardata` export nevertheless has `t1polint`
+missing for all 245 people. The archived `03_data.R` comments list poll 93
+among those with political interest, and the
+[2009 analysis](../data/btp-national-2003/papers/refined-or-biased-opinions-2009.pdf)
+uses baseline political interest for the 2002–03 online foreign-policy poll.
+These checks support a dropped export field, not an invented response.
+
+The retained [questionnaire](../data/btp-national-2003/questionnaires/btp-national-questionnaire.pdf)
+identifies itself as a Phase 2 follow-up and does not contain baseline Q57.
+It cannot independently confirm that item's exact fielded wording or routing;
+the source dictionary and response labels provide those details. The proposed
+edit derives `political_interest_t1` from raw `qb57`, then exports it as
+`t1polint`. It leaves all 245 people, their groups, raw answers, knowledge,
+attitudes and centrally computed group/poll descriptors unchanged. The
+case-level comparison is in
+`audit/corrections/btp-national-2003/approved_values.csv`. No current
+`dp-learning`, `dp-distortions` or `dp-deliberately` model references this
+field directly, but future consumers would see observed values instead of
+missing values. The rebuilt aggregate retains its 5,869 rows and 364 columns;
+only these 245 `t1polint` cells differ from the previous export. The respondent
+measure export replaces 245 missing historical definitions with 245 observed
+`btpn-05-v2` definitions, and the raw-response export gains exactly 245
+`qb57` rows. Preserve the frozen historical benchmark as the old value.
 
 ## BTP Presidential Primaries 2004 — btp-presidential-primaries-2004
 
