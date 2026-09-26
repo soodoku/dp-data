@@ -53,6 +53,11 @@ preserves scores until instrument-level verification and poll-specific approval.
 `make respondents` reconstructs all 848 historical respondent-field targets
 across 21 polls. It retains every reviewed source record, separates named
 samples from people, and records versioned recodes and their raw inputs.
+It also exports `output/respondent/historical_knowledge_items.parquet`, with
+respondent-linked item correctness at both scoring waves for all 21 polls.
+The item means reproduce the historical respondent scores; Marousi is outside
+this reconstructed source set because its available participant file contains
+scores but no individual item answers.
 `make polardata` then computes group and poll summaries and exports the full
 6,084-row, 364-column historical schema under `output/polardata/`, together
 with the 129-row attitude-index catalog and a typed derived-measure table.

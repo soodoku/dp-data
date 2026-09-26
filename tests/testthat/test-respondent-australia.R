@@ -122,8 +122,9 @@ test_that("australia matches every historical respondent target", {
     expected <- as.numeric(benchmark[[field]])
     if (field %in% c("attextreme", "aus.popparl2")) {
       correction <- approved[approved$legacy_field == field, ]
-      expected <- correction$approved_value[match(benchmark$caseid,
-                                                 correction$caseid)]
+      expected <- correction$approved_value[match(
+        benchmark$caseid, correction$caseid
+      )]
     }
     expect_equal(built[[mapping[[field]]]], expected, tolerance = 1e-10,
                  info = field)
