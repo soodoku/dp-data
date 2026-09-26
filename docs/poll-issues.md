@@ -2584,32 +2584,35 @@ higher values mean less interest, unlike earlier `t1polint`. Consult the fielded
 questionnaire and final analysis specification before changing any of these
 versions; the separate online-primaries battery is not a substitute source.
 
-### PR-02: Peer gain uses cumulative sums in a recovered within-group order
+### PR-02: Peer gain now uses the whole group (corrected)
 
-The historical group numerator is a running sum, not a whole-group total.
-`data/btp-presidential-primaries-2004/historical-group-order.csv` preserves only
-case IDs and positions. Its order was recovered from the seven archived
+The historical peer-knowledge numerator used a running sum rather than a
+whole-group total. The archived `BTP/2004OnlinePrimaries/btp04primaries.txt`
+uses `bysort pollgroup: gen ... = sum(...)`, which makes the result depend on
+within-group row order. Other poll blocks in `nuri/reagg.txt` use
+`egen ... = sum(...), by(pollgroup)` for group totals.
+`data/btp-presidential-primaries-2004/historical-group-order.csv` preserves
+case IDs and the recovered historical positions. The seven archived
 `b1q43cor_grpsum` through `b1q49cor_grpsum` counters in
-`nuri/bypoll/2004.online.primaries.dta`, using group, the sum of counters and
-joint-correct item count. All 1,519 counters (217 people × seven items) reproduce
-exactly from raw joint responses. Tied zero-contribution rows commute.
-Production recomputes cumulative counters from raw answers; it never reads the
-stored historical counters as scores. The archived
-`BTP/2004OnlinePrimaries/btp04primaries.txt` uses `bysort pollgroup: gen
-... = sum(...)`, which is a running sum. The other poll blocks in
-`nuri/reagg.txt` use `egen ... = sum(...), by(pollgroup)` for group totals.
+`nuri/bypoll/2004.online.primaries.dta` reproduce exactly from raw joint
+answers and that order (217 people × seven items). This bridge is retained as
+evidence of the deposited arithmetic; the corrected build does not read it.
+
 The [baseline](../data/btp-presidential-primaries-2004/source-materials/baseline-questionnaire.pdf)
 and [follow-up](../data/btp-presidential-primaries-2004/source-materials/followup-questionnaire.pdf)
-instruments have the seven Q43–Q49 knowledge fields used by this calculation.
-Holding the seven item keys, selected people, and self-knowledge exclusion fixed,
-substituting a whole-group total changes `grpgain` for 188 of 217 unique people
-(and both copies of each changed person in the 434-row export). The increase
-has mean 0.2023845 and maximum 0.9333334; historical values range from 0 to
-0.6875, candidate values from 0.07692308 to 0.9333334. This is a strong
-candidate correction to the peer-exposure calculation, pending poll-level
-approval and a full output/downstream comparison. The follow-up questionnaire
-prints Q46 twice, for different candidate-knowledge questions; verify the
-fielded version and codebook before revising any answer keys.
+instruments have the seven Q43–Q49 knowledge fields used here. Approved PR-02
+holds those item keys, all 217 people in 16 groups, and the self-knowledge
+exclusion fixed, but uses each whole group's joint-correct count. `grpgain`,
+`grpgainr` and `loggain` each change for 188 unique people and both copies of
+each changed person in the 434-row historical export. Mean `grpgain` increases
+0.2023845 and its maximum increase is 0.9333334; historical values range 0–
+0.6875 and corrected values 0.07692308–0.9333334. IDs, sample multiplicity and
+missingness remain unchanged. Case-level old/new values are in
+`audit/corrections/btp-presidential-primaries-2004/approved_values.csv`.
+Downstream model consequences can be assessed separately; they do not decide
+which group-total arithmetic is correct. The follow-up questionnaire prints
+Q46 twice for different candidate-knowledge questions. Verify the fielded
+version and codebook before revising any answer keys.
 
 ### PR-03: Duplicate export rows are preserved separately from unique people
 

@@ -5475,7 +5475,7 @@ btp-presidential-primaries-2004,readbrief,217,0,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,t1know,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,t1knowr,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,t1knowcor,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
-btp-presidential-primaries-2004,grpgain,217,207,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
+btp-presidential-primaries-2004,grpgain,217,207,0,188,0,188,FALSE,0,0.9333334376414679,1e-10
 btp-presidential-primaries-2004,t2know,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,ppage,217,217,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,educ4,217,217,0,0,0,0,FALSE,0,0,1e-10
@@ -5493,7 +5493,7 @@ btp-presidential-primaries-2004,t12knowcor,217,0,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,attextreme2,217,0,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,length,217,0,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,timebtw,217,0,0,0,0,0,FALSE,0,0,1e-10
-btp-presidential-primaries-2004,grpgainr,217,207,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
+btp-presidential-primaries-2004,grpgainr,217,207,0,188,0,188,FALSE,0,0.9333334376414679,1e-10
 btp-presidential-primaries-2004,t1knowrcor,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,t2knowr,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,pollname,217,217,0,0,0,0,FALSE,0,0,1e-10
@@ -5520,7 +5520,7 @@ btp-presidential-primaries-2004,knowgain,217,217,0,0,0,0,FALSE,0,4.4408920985006
 btp-presidential-primaries-2004,knowgain2,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,t2knowlevel,217,217,0,0,0,0,FALSE,0,2.220446049250313e-16,1e-10
 btp-presidential-primaries-2004,logpk,217,217,0,0,0,0,FALSE,0,4.6629367034256575e-15,1e-10
-btp-presidential-primaries-2004,loggain,217,207,0,0,0,0,FALSE,0,4.884981308350689e-15,1e-10
+btp-presidential-primaries-2004,loggain,217,207,0,188,0,188,FALSE,0,9.141347612247937,1e-10
 btp-presidential-primaries-2004,tobitpk,217,217,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,meant1knowr,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,meant1knowrcor,217,217,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10

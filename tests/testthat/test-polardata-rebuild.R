@@ -73,6 +73,10 @@ test_that("derived exports preserve unique people and reviewed gain", {
     derived$legacy_field %in% c("meanxtreme", "avgsd", "genvar")
   expect_setequal(unique(derived$definition_version[btp_national_group]),
                   "btpn-02-v2")
+  primaries_gain <- derived$poll_id == "btp-presidential-primaries-2004" &
+    derived$legacy_field %in% c("grpgain", "grpgainr", "loggain")
+  expect_setequal(unique(derived$definition_version[primaries_gain]),
+                  "pr-02-v2")
 })
 
 test_that("numerical exceptions cannot hide changed aggregate values", {
@@ -92,6 +96,9 @@ test_that("numerical exceptions cannot hide changed aggregate values", {
   national_global <- parity$poll_id == "btp-national-2003" &
     parity$legacy_field == "btp03.olt1global"
   expect_equal(parity$approved_correction_differences[national_global], 135L)
+  primaries_gain <- parity$poll_id == "btp-presidential-primaries-2004" &
+    parity$legacy_field == "grpgain"
+  expect_equal(parity$approved_correction_differences[primaries_gain], 188L)
   zeguo_variance <- parity$poll_id == "zeguo-2005" &
     parity$legacy_field == "genvar"
   expect_equal(parity$approved_correction_differences[zeguo_variance], 16L)

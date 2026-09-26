@@ -43,6 +43,9 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
                  "attextreme", "meanxtreme", "avgsd", "genvar"),
       rows = 245L
     ),
+    "btp-presidential-primaries-2004" = list(
+      fields = c("grpgain", "grpgainr", "loggain"), rows = 217L
+    ),
     "san-mateo-2008" = list(
       fields = "t1knowlevel", rows = 239L
     ),

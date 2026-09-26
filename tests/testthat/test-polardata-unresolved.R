@@ -89,13 +89,13 @@ test_that("resolved polls reproduce historical fields", {
     expected <- expected[!duplicated(expected$caseid), ]
     expect_setequal(caseid[selected], expected$caseid)
     expected <- expected[match(caseid[selected], expected$caseid), ]
-    if (poll %in% c("new_haven", "zeguo")) {
-      corrected <- if (poll == "new_haven") {
-        c("minority", "pminority")
-      } else {
-        c("chi.t1att2", "chi.t2att3", "attextreme",
-          "meanxtreme", "avgsd", "genvar")
-      }
+    if (poll %in% c("new_haven", "zeguo", "btp_primaries")) {
+      corrected <- switch(poll,
+        new_haven = c("minority", "pminority"),
+        zeguo = c("chi.t1att2", "chi.t2att3", "attextreme",
+                  "meanxtreme", "avgsd", "genvar"),
+        btp_primaries = c("grpgain", "grpgainr", "loggain")
+      )
       for (field in corrected) {
         expected[[field]] <- approved_reference_values(
           id, field, expected$caseid, expected[[field]]

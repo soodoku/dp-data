@@ -137,6 +137,9 @@ historical_derived_measures <- function(polls) {
           .env$poll_id == "btp-national-2003" &
             .data$legacy_field %in% c("meanxtreme", "avgsd", "genvar") ~
             "btpn-02-v2",
+          .env$poll_id == "btp-presidential-primaries-2004" &
+            .data$legacy_field %in% c("grpgain", "grpgainr", "loggain") ~
+            "pr-02-v2",
           .default = "historical-v1"
         ),
         value_status = dplyr::case_when(

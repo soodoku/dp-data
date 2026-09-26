@@ -73,28 +73,12 @@ build_btp_primaries_derived <- function(survey, values) {
   before <- primaries_knowledge_items(survey, "b1")
   after <- primaries_knowledge_items(survey, "f1")
   joint <- before[rows, , drop = FALSE] * after[rows, , drop = FALSE]
-  order_path <- project_path(
-    "data", "btp-presidential-primaries-2004",
-    "historical-group-order.csv"
-  )
-  execution <- readr::read_csv(order_path, show_col_types = FALSE)
-  caseid <- 950000 + survey$source_row[rows]
-  stopifnot(
-    !anyDuplicated(execution$caseid),
-    !anyDuplicated(execution$historical_group_order),
-    setequal(caseid, execution$caseid), !anyNA(joint)
-  )
-  rank <- execution$historical_group_order[match(caseid, execution$caseid)]
+  stopifnot(!anyNA(joint))
   size <- historical_group_summary(rep(1, length(rows)), group, sum)
   total <- rep(0, length(rows))
   for (item in seq_len(ncol(joint))) {
-    cumulative <- rep(NA_real_, length(rows))
-    for (number in unique(group)) {
-      index <- which(group == number)
-      index <- index[order(rank[index])]
-      cumulative[index] <- cumsum(joint[index, item])
-    }
-    component <- as_historical_float(cumulative / (size - 1) / 7)
+    group_total <- historical_group_summary(joint[, item], group, sum)
+    component <- as_historical_float(group_total / (size - 1) / 7)
     component[joint[, item] == 1] <- 0
     total <- as_historical_float(total + component)
   }
