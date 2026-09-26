@@ -297,7 +297,10 @@ build_poll_respondents <- function(contract) {
     as.numeric(survey$participant) == 1
   } else if (poll_id == "btp-general-election-2004") {
     value <- build_btp_general_individual(survey)
-    value$knowledge_t2 > 0 & !is.na(value$attitude_extremity)
+    post_items <- paste0("w4f", c(60, 61, 62, 63, 64, 65, 66, 68, 69))
+    stopifnot(all(post_items %in% names(survey)))
+    post_observed <- rowSums(!is.na(survey[post_items])) > 0
+    post_observed & !is.na(value$attitude_extremity)
   } else {
     rep(NA, nrow(survey))
   }
@@ -324,8 +327,10 @@ build_poll_respondents <- function(contract) {
       "australia-republic-1999" = "aus_republic.R: nonmissing group except100",
       "tomorrows-europe-2007" = "eu_2007.R: nonmissing group_no",
       "europolis-2009" = "eu_2009.R: Group_T1bis == 1",
-      "btp-general-election-2004" =
-        "merge03: t2know > 0 and observed extremity",
+      "btp-general-election-2004" = paste(
+        "BTPGE-05: observed post knowledge response and extremity;",
+        "zero correct answers remain eligible"
+      ),
       "btp-health-education-2005" = "filter == 1; 454 records",
       "nic2-2003" = "casetype == 1; 340 records",
       "btp-national-2003" = "All 245 selected HLM source records",

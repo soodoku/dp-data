@@ -43,6 +43,30 @@ test_that("BTP election rejects absent and ambiguous joins", {
   )
 })
 
+test_that("BTPGE-05 includes observed zero-correct post respondents", {
+  survey <- read_poll_survey("btp-general-election-2004")
+  contracts <- read_metadata("respondent_sources")
+  contract <- contracts[contracts$poll_id == "btp-general-election-2004", ]
+  built <- build_poll_respondents(contract)
+  sample <- built$sample_memberships
+  sample <- sample[sample$sample_id == "historical-polardata", ]
+  expect_equal(sum(sample$included), 248L)
+  approved <- btp_ge_approved_inclusions()
+  expect_setequal(approved$respondent_id, c(552, 585))
+  rows <- match(approved$respondent_id, survey$caseid_original)
+  expect_equal(survey$source_row[rows], approved$source_row)
+  expect_equal(as.numeric(survey$dop4part[rows]), c(1, 1))
+  post_items <- paste0("w4f", c(60, 61, 62, 63, 64, 65, 66, 68, 69))
+  expect_equal(rowSums(!is.na(survey[rows, post_items])), c(9, 9))
+  expect_equal(sum(rowSums(!is.na(survey[post_items])) == 0L), 33L)
+  values <- build_btp_general_individual(survey)
+  expect_equal(values$knowledge_t2[rows], c(0, 0))
+  expect_false(anyNA(values$attitude_extremity[rows]))
+  expect_true(all(sample$included[
+    match(as.character(approved$respondent_id), sample$respondent_id)
+  ]))
+})
+
 test_that("Health uses raw responses independently of row order", {
   survey <- read_poll_survey("btp-health-education-2005")
   expected <- build_btp_health_individual(survey)

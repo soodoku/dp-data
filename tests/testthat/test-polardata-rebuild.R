@@ -10,7 +10,7 @@ full_polardata <- function() {
 
 test_that("full export has one row per person", {
   data <- full_polardata()
-  expect_identical(dim(data), c(5867L, 364L))
+  expect_identical(dim(data), c(5869L, 364L))
   expect_identical(names(data), read_metadata("polardata_fields")$legacy_field)
   expect_equal(sum(duplicated(data[c("dpnum", "caseid")])), 0L)
   counts <- table(data$dpnum)
@@ -21,7 +21,9 @@ test_that("full export has one row per person", {
       targets$poll_id == contracts$poll_id[[i]]
     ])
     expected <- if (contracts$poll_id[[i]] ==
-                      "btp-presidential-primaries-2004") 217L else rows
+                      "btp-presidential-primaries-2004") 217L else if (
+      contracts$poll_id[[i]] == "btp-general-election-2004"
+    ) 248L else rows
     expect_equal(unname(counts[as.character(contracts$dpnum[[i]])]), expected)
   }
   expect_true(all(is.na(data[grepl("^grk[.]", names(data))])))
@@ -31,7 +33,7 @@ test_that("derived exports preserve unique people and reviewed gain", {
   derived <- arrow::read_parquet(project_path(
     "output", "polardata", "derived_measures.parquet"
   ))
-  expect_equal(nrow(derived), 5867L * 31L)
+  expect_equal(nrow(derived), 5869L * 31L)
   expect_false(anyDuplicated(derived[c(
     "poll_id", "respondent_id", "legacy_field", "definition_version"
   )]) > 0L)
@@ -124,6 +126,33 @@ test_that("PR-03 keeps approved group values and rejects duplicate people", {
   duplicated <- data[c(seq_len(nrow(data)), row), ]
   duplicated$X <- seq_len(nrow(duplicated))
   expect_error(compare_historical_polardata(duplicated, reference, audit))
+})
+
+test_that("BTPGE-05 adds only the approved observed post respondents", {
+  data <- full_polardata()
+  approved <- btp_ge_approved_inclusions()
+  election <- data[data$dpnum == 15L, ]
+  expect_equal(nrow(election), 248L)
+  added <- election[match(approved$historical_caseid, election$caseid), ]
+  expect_false(anyNA(added$caseid))
+  expect_equal(added$t2know, approved$post_knowledge_correct)
+  expect_equal(added$attextreme, approved$attitude_extremity,
+               tolerance = 1e-10)
+  reference <- readr::read_tsv(project_path(
+    "evidence", "benchmarks", "polardata.tab"
+  ), show_col_types = FALSE)
+  audit <- readr::read_csv(project_path(
+    "audit", "polardata_covariances.csv"
+  ), show_col_types = FALSE)
+  parity <- compare_historical_polardata(data, reference, audit)
+  selected <- parity$poll_id == "btp-general-election-2004" &
+    parity$legacy_field == "t2know"
+  expect_equal(parity$respondents[selected], 248L)
+  expect_equal(parity$compared_values[selected], 246L)
+  changed <- data
+  changed$t2know[changed$dpnum == 15L &
+                   changed$caseid == approved$historical_caseid[[1]]] <- 1
+  expect_error(compare_historical_polardata(changed, reference, audit))
 })
 
 test_that("numerical exceptions cannot hide changed aggregate values", {
