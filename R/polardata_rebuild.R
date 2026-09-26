@@ -69,10 +69,6 @@ historical_wide_export <- function(polls) {
   fields <- read_metadata("polardata_fields")$legacy_field
   data <- purrr::list_rbind(polls)
   stopifnot(!anyDuplicated(data[c("dpnum", "caseid")]))
-  rows <- unlist(lapply(seq_len(nrow(data)), function(row) {
-    rep(row, if (data$dpnum[[row]] == 16) 2L else 1L)
-  }))
-  data <- data[rows, ]
   data$X <- seq_len(nrow(data))
   for (field in setdiff(fields, names(data))) data[[field]] <- NA_real_
   data[, fields]
@@ -120,6 +116,31 @@ historical_derived_measures <- function(polls) {
             c("grpgain", "grpgainr", "loggain") ~ "cpl-05-v2",
           .env$poll_id == "australia-republic-1999" &
             .data$legacy_field %in% c("grpgain", "loggain") ~ "aus-04-v2",
+          .env$poll_id == "btp-health-education-2005" &
+            .data$legacy_field %in% c(
+              "pfemale", "varfemale", "sdfemale", "pfemale_ind", "entropy"
+            ) ~ "btphe-01-v2",
+          .env$poll_id == "btp-health-education-2005" &
+            .data$legacy_field == "t1knowlevel" ~ "btphe-03-v2",
+          .env$poll_id == "new-haven-2004" &
+            .data$legacy_field == "pminority" ~ "nh-04-v2",
+          .env$poll_id == "zeguo-2005" &
+            .data$legacy_field %in% c(
+              "meanxtreme", "avgsd", "genvar"
+            ) ~ "zg-02-v2",
+          .env$poll_id == "san-mateo-2008" &
+            .data$legacy_field == "t1knowlevel" ~ "sm-03-v2",
+          .env$poll_id == "btp-national-2003" &
+            .data$legacy_field %in% c("meanxtreme", "avgsd", "genvar") ~
+            "btpn-02-v2",
+          .env$poll_id == "btp-presidential-primaries-2004" &
+            .data$legacy_field %in% c("grpgain", "grpgainr", "loggain") ~
+            "pr-02-v2",
+          .env$poll_id == "btp-presidential-primaries-2004" &
+            .data$legacy_field %in% c(
+              "groupsize", "vareduc", "sdeduc", "pfemale_ind",
+              "meant1know_ind", "meant1knowcor_ind"
+            ) ~ "pr-03-v2",
           .default = "historical-v1"
         ),
         value_status = dplyr::case_when(

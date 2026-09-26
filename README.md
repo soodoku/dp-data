@@ -53,6 +53,16 @@ preserves scores until instrument-level verification and poll-specific approval.
 `make respondents` reconstructs all 848 historical respondent-field targets
 across 21 polls. It retains every reviewed source record, separates named
 samples from people, and records versioned recodes and their raw inputs.
+It also exports `output/respondent/historical_knowledge_items.parquet`, with
+respondent-linked item correctness at both scoring waves for all 21 polls.
+The item means reproduce the historical respondent scores; Marousi is outside
+this reconstructed source set because its available participant file contains
+scores but no individual item answers.
+The respondent export also includes `output/respondent/briefing_reading.parquet`:
+source-linked reading reports in nine polls, including five whose historical
+`readbrief` column was left missing even though the retained survey contains
+the response. The export preserves the raw survey code and a documented
+zero-to-one ordinal score.
 `make polardata` then computes group and poll summaries and exports the full
 6,084-row, 364-column historical schema under `output/polardata/`, together
 with the 129-row attitude-index catalog and a typed derived-measure table.
@@ -62,7 +72,7 @@ canonical respondent tables retain one record per person.
 The build reads public poll sources, not frozen aggregates or the vault.
 `make compare-respondents` and `make compare-polardata` separately test against
 historical benchmarks. Documented numerical exceptions concern generalized
-variance in 24 groups; the comparison checks the exact source matrices and
+variance in 23 groups; the comparison checks the exact source matrices and
 numerical diagnostics before accepting those differences. Export row numbers
 are regenerated. The approved UK Crime correction replaces a baseline police
 item with the post-wave children item. UK Election 1997 now uses the post-wave

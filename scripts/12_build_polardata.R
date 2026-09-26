@@ -24,7 +24,7 @@ verify_source_files(manifest[required, ])
 polls <- purrr::map(contracts$poll_id, build_historical_poll) |>
   rlang::set_names(contracts$poll_id)
 rebuilt <- historical_wide_export(polls)
-stopifnot(nrow(rebuilt) == 6084L, ncol(rebuilt) == 364L)
+stopifnot(nrow(rebuilt) == 5867L, ncol(rebuilt) == 364L)
 directory <- project_path("output", "polardata")
 fs::dir_create(directory)
 path <- file.path(directory, "polardata.parquet")

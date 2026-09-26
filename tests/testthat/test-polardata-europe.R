@@ -22,7 +22,7 @@ test_that("European and Australian aggregates match every historical field", {
     for (field in names(result)) {
       expected <- as.numeric(reference[[field]])
       if (polls[index] == "australia-republic-1999" &&
-            field %in% c("grpgain", "loggain")) {
+            field %in% c("grpgain", "loggain", "meanxtreme")) {
         approved <- readr::read_csv(project_path(
           "audit", "corrections", polls[index], "approved_values.csv"
         ), show_col_types = FALSE)

@@ -22,7 +22,6 @@ reviewed_us_baseline_level <- function(poll_id, survey = NULL) {
       ))
     }
     items <- btp_health_knowledge(survey, 1L)
-    items[, 1] <- as.numeric(survey$q15 %in% 3)
     fields <- paste0("q", c(15, 16, 17, 26, 27, 28))
     for (item in seq_along(fields)) {
       items[is.na(survey[[fields[item]]]), item] <- NA_real_
@@ -31,7 +30,9 @@ reviewed_us_baseline_level <- function(poll_id, survey = NULL) {
     scores[is.nan(scores)] <- 0
   } else if (poll_id == "san-mateo-2008") {
     if (is.null(survey)) survey <- read_poll_survey(poll_id)
-    scores <- rowSums(san_mateo_knowledge(survey, 1L)) / 9
+    items <- san_mateo_knowledge(survey, 1L)
+    stopifnot(ncol(items) == 8L)
+    scores <- rowSums(items) / ncol(items)
   } else {
     stop("Unsupported reviewed US calibration: ", poll_id)
   }

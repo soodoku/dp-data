@@ -115,10 +115,18 @@ test_that("australia matches every historical respondent target", {
     "aus.republican1" = "republican_t1",
     "aus.republican2" = "republican_t2"
   )
+  approved <- readr::read_csv(project_path(
+    "audit", "corrections", "australia-republic-1999", "approved_values.csv"
+  ), show_col_types = FALSE)
   for (field in names(mapping)) {
-    expect_equal(
-      built[[mapping[[field]]]], as.numeric(benchmark[[field]]),
-      tolerance = 1e-10
-    )
+    expected <- as.numeric(benchmark[[field]])
+    if (field %in% c("attextreme", "aus.popparl2")) {
+      correction <- approved[approved$legacy_field == field, ]
+      expected <- correction$approved_value[match(
+        benchmark$caseid, correction$caseid
+      )]
+    }
+    expect_equal(built[[mapping[[field]]]], expected, tolerance = 1e-10,
+                 info = field)
   }
 })

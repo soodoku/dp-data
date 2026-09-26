@@ -2,6 +2,7 @@ source(file.path(root, "R", "respondents.R"))
 source(file.path(root, "R", "respondent_btp_general.R"))
 source(file.path(root, "R", "respondent_btp_health.R"))
 source(file.path(root, "R", "respondent_btp_national.R"))
+source(file.path(root, "R", "respondent_parity.R"))
 source(file.path(root, "R", "polardata_derived.R"))
 source(file.path(root, "R", "polardata_assembly.R"))
 source(file.path(root, "R", "polardata_btp_reviewed.R"))
@@ -38,8 +39,8 @@ test_that("National preserves climate-placement thresholds and nonresponse", {
   expect_equal(items[, "democratic"], c(0, 0, 1, 1, 0))
   expect_equal(items[, "republican"], c(0, 1, 1, 0, 0))
   survey$qb22 <- c(1, 2, 3, 4, -1)
-  components <- btp_national_item(survey, "qb22", "support") / 2
-  expect_equal(components, c(.5, 0, .25, NA_real_, NA_real_))
+  components <- btp_national_item(survey, "qb22", "support")
+  expect_equal(components, c(1, 0, .5, NA_real_, NA_real_))
 })
 
 test_that("National respondent and aggregate values retain historical parity", {
@@ -80,8 +81,17 @@ test_that("National respondent and aggregate values retain historical parity", {
     keys <- paste0("btp03.olt", wave, names(attitudes))
     mapping[keys] <- paste0(attitudes, "_t", wave)
   }
+  corrected <- c(
+    "btp03.olt1demo", "btp03.olt2demo",
+    "btp03.olt1global", "btp03.olt2global", "attextreme"
+  )
   for (field in names(mapping)) {
     value <- actual[[mapping[[field]]]][index]
+    if (field %in% corrected) {
+      expected[[field]] <- approved_reference_values(
+        "btp-national-2003", field, expected$caseid, expected[[field]]
+      )
+    }
     expect_identical(is.na(value), is.na(expected[[field]]), info = field)
     expect_equal(value, as.numeric(expected[[field]]),
       tolerance = 1e-10,
@@ -91,6 +101,11 @@ test_that("National respondent and aggregate values retain historical parity", {
   values <- tibble::tibble(source_row = survey$source_row[index])
   derived <- build_btp_national_derived(survey, values)
   for (field in names(derived)) {
+    if (field %in% c("meanxtreme", "avgsd", "genvar")) {
+      expected[[field]] <- approved_reference_values(
+        "btp-national-2003", field, expected$caseid, expected[[field]]
+      )
+    }
     expect_identical(is.na(derived[[field]]), is.na(expected[[field]]),
       info = field
     )

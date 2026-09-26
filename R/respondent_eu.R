@@ -7,6 +7,18 @@ eu_source_value <- function(survey, field, allowed) {
   value
 }
 
+eu_knowledge_items <- function(survey, wave) {
+  key <- c(eusize = 1, swiss = 2, inctax = 2, elect = 1, ptyapp = 2)
+  purrr::imap(key, function(correct, stem) {
+    value <- eu_source_value(survey, paste0(stem, wave),
+      if (wave == 1L) c(-1, 1, 2, 8, 9) else c(-1, 1, 2, 3, 9)
+    )
+    as.numeric(value %in% correct)
+  }) |>
+    tibble::as_tibble() |>
+    as.matrix()
+}
+
 build_eu_individual <- function(survey = read_poll_survey("uk-eu-1995")) {
   result <- tibble::tibble(dpnum = 1L, caseid = as.numeric(survey$caseid))
   stopifnot(!anyNA(result$caseid), !anyDuplicated(result$caseid))
@@ -60,17 +72,8 @@ build_eu_individual <- function(survey = read_poll_survey("uk-eu-1995")) {
   result$bettered <- result$educ4 >= .33
   interest <- eu_source_value(survey, "genint", c(-1, 1:4, 8, 9))
   result$t1polint <- c(0, .33, .66, 1)[match(interest, 1:4)]
-  key <- c(eusize = 1, swiss = 2, inctax = 2, elect = 1, ptyapp = 2)
-  correctness <- function(wave) {
-    do.call(cbind, lapply(names(key), function(stem) {
-      value <- eu_source_value(survey, paste0(stem, wave),
-        if (wave == 1) c(-1, 1, 2, 8, 9) else c(-1, 1, 2, 3, 9)
-      )
-      as.numeric(value %in% key[[stem]])
-    }))
-  }
-  before <- correctness(1L)
-  after <- correctness(2L)
+  before <- eu_knowledge_items(survey, 1L)
+  after <- eu_knowledge_items(survey, 2L)
   result$t1know <- rowMeans(before)
   result$t2know <- rowMeans(after)
   result$t1knowcor <- rowMeans(before * after)

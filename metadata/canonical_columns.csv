@@ -102,3 +102,17 @@ respondent_knowledge,source_column,string,FALSE,FALSE,Original source variable s
 respondent_knowledge,correct,int32,TRUE,FALSE,Correct 1 or incorrect 0; raw missingness preserved as null
 respondent_knowledge,correct_zero_filled,int32,FALSE,FALSE,Explicit fixed-denominator score: missing correctness counts as zero
 respondent_knowledge,response_status,string,FALSE,FALSE,Original canonical response status retained alongside zero-filled score
+historical_knowledge_items,poll_id,string,FALSE,TRUE,Stable poll identifier
+historical_knowledge_items,respondent_id,string,FALSE,TRUE,Canonical respondent identity in people
+historical_knowledge_items,historical_respondent_id,string,TRUE,FALSE,Historical aggregate ID; null where no transferable historical ID exists
+historical_knowledge_items,source_row,int32,FALSE,FALSE,One-based row in the poll source
+historical_knowledge_items,item_id,string,FALSE,TRUE,Item in the historical T1 and T2 score
+historical_knowledge_items,wave,int32,FALSE,TRUE,Historical score wave 1 or 2
+historical_knowledge_items,correct,int32,TRUE,FALSE,Historical item correctness; missing source answers remain null where the historical denominator varies
+briefing_reading,poll_id,string,FALSE,TRUE,Stable poll identifier
+briefing_reading,respondent_id,string,FALSE,TRUE,Canonical respondent identity in people
+briefing_reading,historical_respondent_id,string,TRUE,FALSE,Historical aggregate ID; null where no transferable historical ID exists
+briefing_reading,source_row,int32,FALSE,FALSE,One-based row in the poll source
+briefing_reading,source_column,string,FALSE,FALSE,Original survey variable for the reading report
+briefing_reading,raw_code,float64,TRUE,FALSE,Original survey response code
+briefing_reading,reading_score,float64,TRUE,FALSE,Ordinal report scored from zero to one; NIC uses its historical five-category mapping

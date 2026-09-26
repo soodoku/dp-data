@@ -21,7 +21,48 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     )
     return(approved$approved_value)
   }
+  if (poll_id == "zeguo-2005" && field == "genvar") {
+    approved <- readr::read_csv(project_path(
+      "audit", "corrections", poll_id, "approved_values.csv"
+    ), show_col_types = FALSE)
+    approved <- approved[
+      approved$legacy_field == field & approved$pollgroup == 5207,
+    ]
+    rows <- match(approved$caseid, caseid)
+    stopifnot(nrow(approved) == 16L, !anyNA(rows),
+      !anyDuplicated(approved$caseid),
+      all(abs(historical[rows] - approved$historical_value) <= tolerance)
+    )
+    historical[rows] <- approved$approved_value
+    return(historical)
+  }
   reviewed <- list(
+    "btp-national-2003" = list(
+      fields = c("btp03.olt1demo", "btp03.olt2demo",
+                 "btp03.olt1global", "btp03.olt2global",
+                 "attextreme", "meanxtreme", "avgsd", "genvar"),
+      rows = 245L
+    ),
+    "btp-presidential-primaries-2004" = list(
+      fields = c(
+        "grpgain", "grpgainr", "loggain", "groupsize", "vareduc",
+        "sdeduc", "pfemale_ind", "meant1know_ind", "meant1knowcor_ind"
+      ), rows = 217L
+    ),
+    "san-mateo-2008" = list(
+      fields = "t1knowlevel", rows = 239L
+    ),
+    "zeguo-2005" = list(
+      fields = c("chi.t1att2", "chi.t2att3", "attextreme",
+                 "meanxtreme", "avgsd"), rows = 233L
+    ),
+    "new-haven-2004" = list(
+      fields = c("minority", "pminority"), rows = 132L
+    ),
+    "btp-health-education-2005" = list(
+      fields = c("female", "pfemale", "varfemale", "sdfemale",
+                 "pfemale_ind", "entropy", "t1knowlevel"), rows = 454L
+    ),
     "tomorrows-europe-2007" = list(
       fields = c("eu.mil_att_11_12_t3", "eu.free_trade_index_t3"),
       rows = 344L
@@ -56,7 +97,8 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
       ), rows = 258L
     ),
     "australia-republic-1999" = list(
-      fields = c("grpgain", "loggain"), rows = 347L
+      fields = c("grpgain", "loggain", "attextreme", "meanxtreme",
+                 "aus.popparl2"), rows = 347L
     )
   )
   contract <- reviewed[[poll_id]]
@@ -146,10 +188,12 @@ historical_reference_people <- function(reference, poll_id) {
     stopifnot(!anyDuplicated(reference$caseid))
     return(reference)
   }
-  stopifnot(
-    nrow(reference) == 434L, !anyNA(reference$caseid),
-    all(table(reference$caseid) == 2L)
-  )
+  stopifnot(!anyNA(reference$caseid))
+  if (nrow(reference) == 217L) {
+    stopifnot(!anyDuplicated(reference$caseid))
+    return(reference)
+  }
+  stopifnot(nrow(reference) == 434L, all(table(reference$caseid) == 2L))
   comparable <- reference[, setdiff(names(reference), "X"), drop = FALSE]
   unique_people <- comparable[!duplicated(comparable$caseid), , drop = FALSE]
   matched <- unique_people[match(comparable$caseid, unique_people$caseid), ]

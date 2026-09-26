@@ -8,7 +8,7 @@ coverage of the 23 existing knowledge builds and the respondent reconstructions.
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
 UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24;
-SWE-02, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02 and UKGE-05 were approved in subsequent poll reviews.
+SWE-02, AUS-03, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02, UKGE-05, BTPHE-01, BTPHE-03, EURO-04 and NH-06 were approved in subsequent poll reviews.
 Other proposals remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
@@ -1534,16 +1534,45 @@ Issue-specific scores are absent from the final aggregate even though later
 syntax constructs them. Check the fielded change-question routing, index memo,
 and script/export dates before choosing a version.
 
-### AUS-03: Extremity and popular-election attitudes preserve script behavior
+### AUS-03: Extremity omissions and a cross-wave ranking typo
 
-The aggregate's `attextreme` is only `abs(workind1 - 0.5)`. The script lowercases
-names before requesting `Demind1`, `Tradind1` and `Polind1`; those references
-produce no columns. A four-index alternative changes 320 observed values and
-one missingness status. This is strong computational evidence, but the intended
-battery still needs the attitude-index memo and analysis specification.
-The post popular-versus-parliament index's midpoint condition reads
-`FIRSTOP3`/`SECOP3`, creating a cross-wave dependency. Verify question ordering
-and the meaning of the first/second choices before substituting another wave.
+**Status: adopted narrow script corrections.** The archived `aus_republic.R`
+lowercases every source name, then computes extremity from `workind1`,
+`Demind1`, `Tradind1` and `Polind1`. In R, the three capitalized references
+resolve to `NULL`; `cbind()` silently omits them. The formula explicitly names
+workability, democracy, tradition and politicization. The source
+[variable inventory](../data/australia-republic-1999/variables.csv) defines all
+four T1 indices, and each reconstructed index matches its deposited score for
+all paired attendee values. We now average the available absolute deviations
+from 0.5 across those four indices. National autonomy remains excluded from
+this individual extremity formula, while the existing five-index group
+dispersion and generalized variance remain unchanged. Of 347 attendees, 320
+observed extremity scores change and one previously missing score becomes
+observed; their group mean `meanxtreme` changes for all 347. The one newly
+observed score belongs to CASEID 312 (source row 3714): workability is missing,
+tradition is 0.625, and the other two named indices are missing.
+
+The same script's T2 popular-election ranking score reads `firstop3` and
+`secop3` only in its don't-know midpoint condition; all its other conditions
+read `firstop2` and `secop2`, and the T1/T3 midpoint conditions each use their
+own wave. The source variable labels identify distinct T2 (WA5a/b) and T3
+(ZA14a/b) questions, with code 97 meaning don't know in both waves. We now
+use the T2 responses for the T2 midpoint. Five observed scores change from
+0.5 to 0.75, four 0.5 scores become missing, and 22 missing scores become 0.5:
+31 of 347 records have a value or missingness change. The 347-person sample,
+ranking order, all other wave scores, and AUS-02 knowledge policy stay fixed.
+The [frozen comparison](../audit/corrections/australia-republic-1999/approved_values.csv)
+records old and corrected values by CASEID for `attextreme`, `meanxtreme` and
+`aus.popparl2`; the only other Australia deviations from the historical
+aggregate remain the earlier AUS-04 `grpgain`/`loggain` correction.
+
+The folder's `codebook.pdf` is the separate Australian Constitutional Referendum
+Study, described there as a 3,400-record survey, while this deliberative-poll
+source contains 4,659 rows. It cannot establish these poll-specific question
+wordings or recodes. For these corrections we rely on the archived poll script,
+labels attached to this poll's `survey.sav`, its reconstructed indices, and the
+poll [paper](../data/australia-republic-1999/papers/adp5.pdf). Find the fielded
+poll questionnaire before deciding AUS-01 or AUS-02.
 
 ### AUS-04: Participant gains now join by source row
 
@@ -1633,17 +1662,27 @@ calibration-universe definition and repair history before changing the descripto
 
 ## BTP Health and Education 2005 — btp-health-education-2005
 
-**BTPHE-01 — existing demographic missingness divergence.** All 454 source rows
-enter the six-item battery and 30 groups. Item scores match, but two source gender
-values are missing where the deposit records female = 0. That is two unknown
-values versus a binary assignment; it is not evidence about those persons' gender.
+### BTPHE-01: Missing gender remains missing (corrected)
 
-**Next check:** revisit the original merged-file construction and both
-[pre](../data/btp-health-education-2005/questionnaire-pre.doc) and
-[post](../data/btp-health-education-2005/questionnaire-post.doc) instruments.
-Establish whether another wave supplies these values and whether the deposit's
-coding was deliberate. Keep the present upstream/deposit distinction explicit;
-do not silently replace downstream values in this documentation pass.
+All 454 source respondents remain in the sample. CASEID 970104 (group 9707)
+and 970404 (group 9727) have missing `gender` in the deposited source. The
+historical `gender %in% 2` expression turned those two unknown answers into
+`female = 0`, which means male in this binary field. Neither the
+[pre](../data/btp-health-education-2005/questionnaire-pre.pdf) nor
+[post](../data/btp-health-education-2005/questionnaire-post.pdf) instrument
+contains an alternate gender question. The approved recode uses `gender == 2`,
+so both derived values are missing. The source observations are untouched.
+
+In group 9707, the female share rises from 8/19 = 0.421052632 to 8/18 =
+0.444444444; in group 9727 it rises from 6/16 = 0.375 to 6/15 = 0.4.
+The resulting female share, variance and SD change for all 35 respondents in
+those two groups; the leave-one-out share changes for 33 observed genders and
+becomes missing for the two unknown genders. The combined group entropy also
+changes for those 35 rows. The existing centralized leave-one-out and entropy
+helpers retain their historical denominator conventions; a separate
+cross-poll review of missing-aware group formulas is needed before changing
+those shared definitions. Case-level old and new values are frozen in
+`audit/corrections/btp-health-education-2005/approved_values.csv`.
 
 ### BTPHE-02: Funding index and float storage reproduce the original definition
 
@@ -1658,22 +1697,28 @@ government-involvement scales add components sequentially in float32, then divid
 and store float32. Double-precision `rowMeans` differs by up to about 0.00000006.
 Each extremity component is also stored as float32 before its final mean.
 These storage stages are reproduced, without loosening scoring tolerances.
-Historical missing gender becomes female=0 for two people; missing race stays
-missing for six. Resolve missing-gender intent using source generation and
-alternate-wave answers before revising BTPHE-01's distinction.
+The BTPHE-01 correction now retains missing gender for two people; missing
+race remains missing for six.
 
-### BTPHE-03: Poll knowledge retains an earlier key and denominator policy
+### BTPHE-03: Q15 calibration answer key (corrected)
 
-`t1knowlevel = 0.277147799730301` uses all 3,298 records of `2005alice.dta`,
-Q15 key 3 (bottom ten), and keys Q16=1, Q17=1, Q26/Q27/Q28=3. It omits system
-missing answers from each person's denominator, sets all-six-missing scores to
-zero, averages float32 scores, rounds seven decimals and stores float32.
-The final 454-person score instead uses Q15 key 2 (top ten) from `reagg.txt`
-and a fixed six-item denominator. `calibration-responses.parquet` preserves the
-six raw answers and IDs needed to reconstruct the older descriptor. Check the
-fielded Q15 wording, contemporaneous factual key and revision sequence before
-aligning these scoring versions. Two group covariance exceptions are documented
-in X-09; they are separate from this key discrepancy.
+The fielded pre-questionnaire Q15 asks where the United States ranks in math
+skills among 29 wealthy industrialized countries. The poll's own education
+briefing states 24th of 29, which is in the bottom 10. The source value labels
+map "bottom 10" to code 2 and "top 10" to code 3. The archived `btp05.R`
+script and the final 454-person knowledge scorer both use code 2. Only the
+earlier 3,298-record calibration descriptor `t1knowlevel` treated code 3 as
+correct. This was a reversed answer key, not a different scoring construct.
+
+The approved correction changes only that calibration key to code 2. It keeps
+the 3,298-record calibration universe, six question keys, available-item
+missing policy, zero for all-six-missing, float32 storage and seven-decimal
+rounding. The poll descriptor changes from 0.277147799730301 to
+0.337037593126297. All 454 participant knowledge scores remain unchanged.
+The source answers and identities remain in `calibration-responses.parquet`.
+The 20 `genvar` differences against the frozen historical deposit are
+preexisting singular covariance exceptions documented in X-09, not effects of
+this correction.
 
 ## BTP Online Primaries 2004 — btp-online-primaries-2004
 
@@ -1745,22 +1790,35 @@ seven-item fixed-denominator battery, with nonanswers scoring zero.
 
 ## California 2011 — california-whats-next-2011
 
-**CA-01 — unresolved sample mismatch.** `t2t3filter == 1` with observed `part`
-selects 396 of 472 source records, versus 401 deposited batteries. `id` is unique
-in that sample; `idnum` is not. Do not manufacture five people or assume a row
-link to obtain parity. The prior comparison deliberately reports no person-level
-score differences for unequal samples.
+### CA-01: The available source and deposited battery use different samples
 
-**CA-02 — wave-dependent response codes.** The prior audit records Democratic
-control as code 2 before and code 1 afterward. Post code 3, Independent, is a
-substantive wrong answer; one historical recode excluded it. Re-read the
-[pre](../data/california-whats-next-2011/questionnaire-pre.doc),
-[post](../data/california-whats-next-2011/questionnaire-post.doc) and
-[codebook](../data/california-whats-next-2011/codebook.pdf) together before deciding
-whether a changed value is a key error, a questionnaire-version change, or a
-sample difference. Quantification against individual deposited rows remains
-unestablished. Group membership uses the departure group, not an assumed stable
-baseline group.
+The archived `ca_referendum.R` filters `part` to observed values and then
+`t2t3filter == 1`. In the available 472-row merged source, that yields 396
+people; all 396 have `part == 1`, `t2t3filter == 1`, and unique `id`. No person
+with `t2t3filter == 1` is lost because `part` is missing. The separately
+published, anonymous `ca.csv` battery has 401 rows. The five-row gap is
+therefore not caused by that participation filter. The available source is the
+file named `California_Merged_t1-t2-t3_6-28-11.dta`; the battery has no
+respondent IDs. A different merged-file version or export may explain the gap,
+but the present records cannot identify five individual additions. Do not
+manufacture five people or infer a row crosswalk from scores.
+
+### CA-02: Party-control scoring is correct in the current knowledge build
+
+The pre-questionnaire asks which party controls the Senate and Assembly. The
+source labels map Republican to code 1 and Democratic to code 2. The departure
+questionnaire presents Democratic, Republican and Independent as separate
+answers; Democratic is code 1 in that wave. The archived script scores the
+departure Senate item `t3q27` as 1→correct, 2→incorrect, and 3→missing,
+while its Assembly item scores 3→incorrect. Two of the 396 selected source
+people answered Senate code 3. The script's later `nona` step turns missing
+item scores to zero, so these two responses still contribute incorrect answers
+to the final five-item knowledge score. The current
+`metadata/knowledge_items.csv` specifies 3 as incorrect for both items.
+This is a wave-specific category ordering and intermediate missing-value
+inconsistency, not evidence for changing the final score. No recode is made.
+The 396-versus-401 sample gap in CA-01 still prevents case-level comparison
+to the deposited battery.
 
 ## Europolis 2009 — europolis-2009
 
@@ -1795,9 +1853,26 @@ measurement decision, not a repair required for reconstruction.
 `educ4` is actually age at leaving education divided by 35. Ongoing education
 (code 0) uses `min(2010 - birth_year, 35)` before division, and `03_data.R`
 rounds to two decimals; higher education is `> 0.57`. It is not a four-category
-qualification variable. Missing respondent or parental birthplace contributes
-to the minority indicator. Check the education and birthplace questions and
-index memo before relabeling or changing either policy.
+qualification variable. Check the education instrument and index memo before
+relabeling or changing that policy. The birthplace correction is EURO-04.
+
+### EURO-04: Unknown birthplace does not establish minority status (corrected)
+
+The archived `eu_2009.R` script explicitly assigned minority = 1 when the
+respondent's birthplace or parents' birthplace was missing. The source value
+labels identify code 999 as don't know or refusal, not a foreign birthplace.
+Of 4,384 source records, five have domestic birth and unknown parents' birth;
+two have both answers unknown. Those seven had minority = 1 solely because of
+unknown information and now have minority missing. Confirmed foreign birth of
+either the respondent or parents still gives minority = 1; both known domestic
+answers give 0. The seven IDs and source codes are in
+`audit/corrections/europolis-2009/approved_values.csv`.
+
+None of the seven belongs to the 348-person historical aggregate, so its
+respondent values, group minority shares and published aggregate numbers are
+unchanged. The full-source respondent measure changes for precisely seven
+people. This preserves the original source answers and leaves EURO-01's
+anonymous battery linkage issue separate.
 
 ## National Issues Convention 1996 — nic-1996
 
@@ -2062,8 +2137,14 @@ was re-opened in this pass. Q31 marks a 50% reduction in annual electricity-use
 growth (code 3), while the archived recode uses code 2. Q32, excluding Hydro
 Quebec, marks **both** 15% (code 2) and 25% (code 3). The text extraction preserves
 both literal stars. This supports an ambiguity in the supplied key, not a finding
-that two factual answers must both be correct. The fielded version and contemporaneous
-briefing sources remain necessary evidence.
+that two factual answers must both be correct. The contemporary [Vermont briefing](../data/vermont-energy-2007/briefing-materials/vermont-energy-briefing.pdf)
+("Electricity Savings To-Date," printed p. 54) says efficiency and economic
+conditions cut electric-demand growth from 2% to 1%. That is a 50% reduction
+in the observed growth rate and supports the magnitude of starred Q31 code 3,
+which upstream already uses. Because the briefing attributes the change to both
+efficiency and economic conditions, it does not isolate the program's effect.
+It also does not resolve the two starred Q32 values or show which Q32 key was
+fielded.
 
 Current upstream accepts both starred Q32 answers. Relative to the deposit, the
 existing build reports 250 changed item-wave cells, 53 changed baseline scores
@@ -2108,8 +2189,13 @@ This pass inspected the full
 [San Mateo DP Questionnaire 3-12-08 FINAL](<../data/san-mateo-2008/questionnaire-pre.doc>):
 Q20 is September 2007 median single-family house price and lists **$940,000**
 at code 5; Q26 lists **more than 75%** at code 5. The earlier narrative describes
-Q20's source label as 950,000. The difference in the textual amount requires
-version reconciliation even if code 5 remains the same. The published
+Q20's source label as 950,000. The
+[briefing booklet](../data/san-mateo-2008/briefing-materials/san-mateo-briefing.pdf)
+charts a 2007 single-family median of $918,000 without specifying September;
+it cannot settle the fielded question's exact September figure. Both $940,000
+and $950,000 occupy the same highest answer code 5, and Q26 code 5 is “more
+than 75%” in both the questionnaire and stored labels. Thus the label-version
+difference alone does not imply a different key. The published
 [post supplement](../data/san-mateo-2008/questionnaire-post.doc) is short and does
 not contain these knowledge questions; its filename alone cannot corroborate them.
 
@@ -2137,30 +2223,32 @@ seven, including commuting, public consultation and county-versus-state scales
 later dropped in `05_fix_data.R`. Do not rebuild summaries from the four final
 columns. Check the index-selection rationale before changing the battery.
 
-### SM-03: Poll-level knowledge divides eight items by nine
+### SM-03: Baseline knowledge uses the eight questions in the instrument (corrected)
 
-The historical baseline descriptor uses all 1,806 respondents: eight correct-item
-indicators divided by nine, float32 person scores, then a mean rounded seven
-decimals and stored float32. Stored `pkind` increments by 1/9, while the final
-individual score divides by eight. The [pre questionnaire](../data/san-mateo-2008/questionnaire-pre.pdf)
-and [post questionnaire](../data/san-mateo-2008/questionnaire-post.pdf) place the
-knowledge battery at Q19–Q26, with eight questions in each wave. The archived
-`legacy/poll_scripts/san_mateo.R` explicitly enumerates `19:26` for both waves;
-it contains no `length()`-based denominator. The later merge scripts pass through
-knowledge scores and do not establish how the deposited `pkind` was calculated.
+The pre questionnaire asks eight knowledge questions, Q19–Q26. The archived
+`legacy/poll_scripts/san_mateo.R` enumerates those eight for both waves, and
+respondent scores already divide their correct count by eight. The historical
+poll-level baseline descriptor instead divided the eight correct-item indicators
+by nine before the float32 person-score and rounded-seven-decimal poll mean.
+The deposited `pkind` also increments by 1/9. There is no ninth scored question
+or `length()` operation in the reviewed materials.
 
 The [contemporaneous report](../data/san-mateo-2008/reports/san-mateo-results.pdf)
-(PDF pp. 5 and 15) describes an eight-question index but prints
-12.92% before and 28.17% after deliberation. Among the 239 participant records,
-mean correct counts divided by nine reproduce those figures: 12.92422% and
-28.17294%. Dividing by eight gives 14.53975% and 31.69456%. Thus the nine-item
-scale appears in the original report as well as deposited `pkind`; its origin
-is unverified, and the report's item-count description conflicts with its
-arithmetic. Do not attribute this discrepancy to `length()` or change either
-score until the generating scoring command is found or the denominator policy
-is explicitly decided. Post Q20/Q26 values 8/9 remain incorrect in binary
-scoring pending codebook review. Five group covariance exceptions, including two
-indefinite matrices, are detailed in X-09.
+calls this an eight-question index but prints 12.92% before and 28.17% after
+deliberation. Among the 239 participants, dividing correct counts by nine
+reproduces 12.92422% and 28.17294%; dividing by eight yields 14.53975% and
+31.69456%. The report's printed percentages therefore reflect the nine-item
+arithmetic despite its eight-item description. This correction to the baseline
+poll descriptor does not reproduce those published percentages.
+
+Approved SM-03 retains all 1,806 baseline source records, the same eight answer
+keys, missing-as-incorrect scoring and float32/rounding stages, but divides by
+eight. `t1knowlevel` changes from 0.1248308 to 0.1404347 for each of the 239
+exported participants; no respondent knowledge score or other aggregate field
+changes. Case-level values are in
+`audit/corrections/san-mateo-2008/approved_values.csv`. Post Q20/Q26 factual
+key and instrument-version questions remain separate in SM-01. Five group
+covariance exceptions, including two indefinite matrices, remain in X-09.
 
 ### SM-04: Anonymous item rows and reconstructed respondents had different order
 
@@ -2192,10 +2280,14 @@ the first 310 rows. It reports 294 item differences: 291 e/E responses, one F,
 and two Senate responses, SC and “same”; zero-filled scores remain unchanged.
 The [post questionnaire](../data/michigan-2009/questionnaire-post.doc), re-opened
 here, presents free-text party-control questions and explicitly permits respondents
-to say they do not know. That does **not by itself establish** the meaning of each
-transcribed letter. e/E's treatment must also be checked against the coding sheet,
-source labels and the historical export convention. “Same” may depend on a prior
-answer; do not infer that dependency without the original response sequence.
+to say they do not know. The same [questionnaire](../data/michigan-2009/questionnaire-post.pdf)
+explicitly prints option e as "couldn't say" for Q40, Q41 and Q42, so the 291
+e/E tokens are nonresponses, not wrong substantive alternatives. The one F
+lies outside the printed a–e choices. The archived `mi.R` later zero-fills
+missing item scores, so this typed-missingness correction leaves the final
+fixed-denominator knowledge score unchanged. The two Senate free-text tokens
+SC and "same" still lack a verified response-sequence interpretation; no
+substantive party answer is inferred from them.
 
 **Next check:** recheck all accepted text aliases against contemporaneous coding
 instructions, retaining raw text and rejecting unknown tokens. `postit` identifies
@@ -2261,9 +2353,9 @@ presence is not a claim that every original field-file merge has been recovered.
 |---|---|---|
 | nic2-2003 | All 340 historical participants are now reconstructed from raw NIC2 answers; no matching anonymous deposited item matrix is required for that reconstruction. | Original NIC2 instruments, participant/arm definitions, source IDs and wave merge. |
 | btp-national-2003 | All 245 historical participants and aggregate fields are now reconstructed; the 674-person descriptor calibration uses a separate raw source. | National-event instruments and field files; distinguish the national event from later primary/general-election polls. |
-| btp-presidential-primaries-2004 | All 217 historical people are reconstructed; historical export duplicates them, and running peer sums require preserved within-group order. Do not conflate with the online-primaries battery. | Event/mode-specific questionnaires, invitation and attendance records, and ID crosswalk. |
+| btp-presidential-primaries-2004 | All 217 historical people are reconstructed. PR-02 fixes running peer sums; PR-03 removes duplicate aggregate rows and recomputes six group descriptors. Do not conflate with the online-primaries battery. | Event/mode-specific questionnaires, invitation and attendance records, and ID crosswalk. |
 | new-haven-2004 | All 132 historical people are reconstructed from joined pre/mid/post workbook answers. Three birth-year-1890 values are made missing; event year and omitted attendee remain under review. | Original demographic question, raw value and alternate-wave age; respondent linkage and attitude definitions. |
-| zeguo-2005 | All 233 historical participants are reconstructed from reviewed merged/pre/post components; three item-coding overrides and 16 covariance exceptions remain explicit. | Original and translated instruments, event date, project-choice scales and respondent/group identifiers. |
+| zeguo-2005 | All 233 historical participants are reconstructed from reviewed merged/pre/post components; three item-coding overrides and 15 numerical covariance exceptions remain explicit. | Original and translated instruments, event date, project-choice scales and respondent/group identifiers. |
 | marousi-2006 | Public participants file came from an existing derived 2014 analysis object, not an independently rebuilt item-level source. It has scores, groups and demographics but no item responses. | [Questionnaire](../data/marousi-2006/questionnaire.pdf), original field returns, scoring syntax and group roster. Audit the downstream convention treating T2 zeros as missing before generalizing it; it is not justified by the numeric value alone. |
 | bulgaria-2007 | Distinct Roma-policy event; it must not inherit the 2002 crime battery merely because files share an archive directory. | Roma-policy questionnaire, actual event date and source-file provenance. |
 | tanzania-2015 | Public source is available, but full canonical arm, village, questionnaire and measurement integration is not built here. | Village-randomization protocol, information versus deliberation arms, instruments and cluster IDs. Preserve the current downstream specification until audited. |
@@ -2374,22 +2466,30 @@ until the intended income definition is established. Briefing exposure uses
 ### BTPN-01: Historical inclusion does not equal the attendance flag
 
 All 245 rows of `2002onlinefp_hlmnew.dta` enter historical `polardata`, including
-24 with `attend == 0` and 221 with `attend == 1`. The archive's 2002 filename and
-current 2003 event label need reconciliation. Preserve this source-selected
-sample while checking attendance semantics, field dates and the selection
-script. Unique raw `serial` identifies respondents; synthetic historical IDs
+24 with `attend == 0` and 221 with `attend == 1`. Here `attend == 0` does **not**
+mean no discussion: `countmtg` records zero meetings for one person, one meeting
+for 15, and two meetings for eight. Every `attend == 1` record has three to eight
+meetings. Thus `attend` separates fewer than three sessions from at least three;
+all 245 selected records have a post Q20 answer and an assigned group. The
+contemporary 2009 report distinguishes post-survey response from session
+participation and describes eight available sessions. Dropping all 24 as
+"nonattenders" would be factually wrong. Their partial attendance may still
+matter when defining a group exposure measure, so preserve the historical
+inclusion pending a stated estimand and a direct comparison of group summaries.
+The archive's 2002 filename and current 2003 event label need reconciliation.
+Unique raw `serial` identifies respondents; synthetic historical IDs
 `930001:930245` follow preserved source order, and groups are `9300 + group`.
 The independent source build now matches all 45 respondent targets and 39
 additional group/poll fields within 1e-10, with exact missingness and no numerical
 exceptions. It uses raw qb/qf answers, not stored indices.
 
-### BTPN-02: Support components use half the comparable standalone scale
+### BTPN-02: Support components now use the instrument's full scale (corrected)
 
-Raw qb/qf20, 21 and 22 map support/opposition/middle to 0.5/0/0.25 within global
-altruism (20/21) and democracy (22). A comparable standalone support transform
-uses 1/0/0.5. This half-scale is necessary to reproduce the stored indices and
-aggregate. The following counts identify nonzero components affected by doubling
-that scale; they are component counts, not distinct people across all items.
+The deposited indices mapped support/opposition/equal answers on qb/qf20, 21
+and 22 to 0.5/0/0.25 within global altruism (20/21) and democracy (22).
+Approved BTPN-02 uses 1/0/0.5 for these three items in both waves. The
+following counts identify nonzero components affected by the correction; they
+are component counts, not distinct people across all items.
 
 | Wave/item | Nonzero components | Usable answers | Missing answers |
 |---|---:|---:|---:|
@@ -2400,11 +2500,39 @@ that scale; they are component counts, not distinct people across all items.
 | Post Q21 | 134 | 240 | 5 |
 | Post Q22 | 160 | 237 | 8 |
 
-The scale may represent deliberate component weighting, a reused normalization
-factor, or an error. Before changing it, compare the fielded questionnaire with
-`us_fp_online/scripts/v_online.do`, `v_online2.do`,
-`nic_2/scripts/checking_July27_online.do` and
-`NICII_ONLINE_Index_Final_Aug01.doc`, including which alternative blocks ran.
+The fielded [questionnaire](../data/btp-national-2003/questionnaires/btp-national-questionnaire.pdf)
+shows that Q20, Q21 and Q22 each offer two opposed statements, equal agreement,
+and an unconsidered response. The archived `us_fp_online/scripts/v_online.do`
+and `v_online2.do` recode those same three answers to 1, 2 and 3, then use
+`(value - 1) / 2`, yielding the full 0, 0.5, 1 scale for both waves. The
+[contemporary empirical manuscript](../data/shared/papers/foreign-policy.pdf)
+(printed p. 11, PDF p. 12) states that response categories are scored
+linearly on a 0–1 scale; its index descriptions (PDF pp. 13–15) include
+Q20/Q21 in fighting poverty and suffering and Q22 in promoting democracy.
+These are two independent pieces of evidence against half-scaling the items.
+Component weighting is a separate issue: the earlier Stata `globalt` index
+omits Q20/Q21, while the manuscript includes and pre-averages them. The
+deposited index includes them but weights them separately. Neither earlier
+formula can be substituted wholesale for the deposited later-stage index.
+
+Holding the deposited index composition and missing-value rules fixed, the
+approved removal of the extra `/ 2` changes baseline global altruism for 135 of 245
+records and democracy for 154 of 245; post global altruism changes for 153 of
+244 nonmissing records and post democracy for 160 of 244. Maximum changes to
+each index are 1/6. Rebuilding the complete poll with this one corrected
+rule changes only eight exported fields: those four attitude indices,
+`attextreme` (196 rows, maximum 0.04761904), `meanxtreme` (245, 0.0179784),
+`avgsd` (245, 0.01383719), and `genvar` (245, 0.02815631). It preserves all
+245 records, case IDs and missing-value patterns; no other fields change.
+Case-level values for all eight fields are in
+`audit/corrections/btp-national-2003/approved_values.csv`. The related NIC II
+index memo names Q20/Q21 as part
+of global altruism and Q22 as part of democracy, but its component weighting
+differs from the deposited BTP index. The NIC II memo and
+`nic_2/scripts/checking_July27_online.do` are cross-checks, not direct
+authority for BTP. Tracing the later BTP index-construction stage and
+comparing published summaries remains necessary before any separate change to
+component weighting.
 
 ### BTPN-03: Eleven-item respondent knowledge and baseline calibration differ
 
@@ -2456,27 +2584,70 @@ higher values mean less interest, unlike earlier `t1polint`. Consult the fielded
 questionnaire and final analysis specification before changing any of these
 versions; the separate online-primaries battery is not a substitute source.
 
-### PR-02: Peer gain uses cumulative sums in a recovered within-group order
+### PR-02: Peer gain now uses the whole group (corrected)
 
-The historical group numerator is a running sum, not a whole-group total.
-`data/btp-presidential-primaries-2004/historical-group-order.csv` preserves only
-case IDs and positions. Its order was recovered from the seven archived
+The historical peer-knowledge numerator used a running sum rather than a
+whole-group total. The archived `BTP/2004OnlinePrimaries/btp04primaries.txt`
+uses `bysort pollgroup: gen ... = sum(...)`, which makes the result depend on
+within-group row order. Other poll blocks in `nuri/reagg.txt` use
+`egen ... = sum(...), by(pollgroup)` for group totals.
+`data/btp-presidential-primaries-2004/historical-group-order.csv` preserves
+case IDs and the recovered historical positions. The seven archived
 `b1q43cor_grpsum` through `b1q49cor_grpsum` counters in
-`nuri/bypoll/2004.online.primaries.dta`, using group, the sum of counters and
-joint-correct item count. All 1,519 counters (217 people × seven items) reproduce
-exactly from raw joint responses. Tied zero-contribution rows commute.
-Production recomputes cumulative counters from raw answers; it never reads the
-stored historical counters as scores. Review the Stata `sum()` versus group-total
-intent before correcting peer gain, and quantify all resulting model changes.
+`nuri/bypoll/2004.online.primaries.dta` reproduce exactly from raw joint
+answers and that order (217 people × seven items). This bridge is retained as
+evidence of the deposited arithmetic; the corrected build does not read it.
 
-### PR-03: Duplicate export rows are preserved separately from unique people
+The [baseline](../data/btp-presidential-primaries-2004/source-materials/baseline-questionnaire.pdf)
+and [follow-up](../data/btp-presidential-primaries-2004/source-materials/followup-questionnaire.pdf)
+instruments have the seven Q43–Q49 knowledge fields used here. Approved PR-02
+holds those item keys, all 217 people in 16 groups, and the self-knowledge
+exclusion fixed, but uses each whole group's joint-correct count. `grpgain`,
+`grpgainr` and `loggain` each change for 188 unique people; the historical
+434-row export contains two copies of each person. Mean `grpgain` increases
+0.2023845 and its maximum increase is 0.9333334; historical values range 0–
+0.6875 and corrected values 0.07692308–0.9333334. IDs and missingness remain
+unchanged. PR-03 subsequently removes the duplicate export rows. Case-level
+old/new values are in
+`audit/corrections/btp-presidential-primaries-2004/approved_values.csv`.
+Downstream model consequences can be assessed separately; they do not decide
+which group-total arithmetic is correct. The follow-up questionnaire prints
+Q46 twice for different candidate-knowledge questions. Verify the fielded
+version and codebook before revising any answer keys.
 
-The historical aggregate contains each of the 217 people twice, with identical
-scientific fields and different `X` values. The reconstruction preserves these
-434 export rows; the canonical person table contains 217 unique people.
-Removing duplicates is a future analysis-sample correction, not a source-migration
-cleanup. Verify the original append/merge sequence and downstream weighting or
-standard-error consequences before changing row multiplicity. See X-10 for `X`.
+### PR-03: Duplicate aggregate rows and doubled group counts (corrected)
+
+The archived `BTP/2004OnlinePrimaries/btp04primaries.txt` records a final sample
+of 217. The pre-aggregate `pkdat/nuri.Rdata` has 217 poll-ID-95 rows and 217
+unique case IDs. `pkdat/agg_data.Rdata` has 434 rows: every person occurs twice
+with identical scientific fields and a different export row number `X`.
+The duplication appears between those archived stages, near the poll-name
+merge in `merge_data_scripts/03_data.R`; the exact lookup contents were not
+preserved, so the lookup-key cause remains an inference. The baseline and
+follow-up instruments establish the measured items, while these archived
+files establish sample cardinality. This is distinct from the 328-person BTP
+online-primaries poll.
+
+Approved PR-03 exports one row per primaries person, reducing full polardata
+from 6,084 to 5,867 rows without losing a unique person. The canonical 217-person
+respondent table and all source answers and group assignments stay fixed.
+Group composition is recomputed from unique people. Six fields change for all
+217 people: `groupsize` is halved (maximum old/new difference 21), and
+`vareduc`, `sdeduc`, `pfemale_ind`, `meant1know_ind`, and
+`meant1knowcor_ind` change through their denominators. The largest absolute
+changes in those five fields are 0.009804412, 0.01218958, 0.04093567,
+0.03781513, and 0.03361345, respectively. Recomputing the unchanged ratios
+`meaned` and `phighinc` from undoubled rows also changes 34 and 21 stored
+floating-point values by at most 1.11e-16 and 5.55e-17, respectively. No
+other scientific field changes; row number `X` is regenerated. Case-level historical and
+approved values are in
+`audit/corrections/btp-presidential-primaries-2004/approved_values.csv`.
+The numerical parity check still validates the historical duplicate pairs,
+compares on unique case ID, and rejects unapproved value changes. Any
+all-poll analysis that counted historical primaries rows gave this poll twice
+the intended weight; analyses using `groupsize` or the five group descriptors
+can also move. Re-estimate affected downstream analyses when they adopt this
+export. See X-10 for the regenerated `X` field.
 
 ## New Haven 2004 — new-haven-2004
 
@@ -2491,15 +2662,14 @@ with independent gender agreement. No derived scores supply the bridge or build.
 The remaining fieldwork-year/133-versus-132 discrepancy in NH-02 is not resolved
 by this successful reconstruction.
 
-### NH-04: Airport scaling, refusal coding and age remain historical
+### NH-04: Airport scaling and age remain historical
 
 The airport expansion index maps 0.625 to float32(0.675), affecting 12 baseline
 and five post values; the same discontinuity applies at arrival. Inspect the
 Q12/Q13 index memo and executed recode before replacing it with an algebraic
 scale. Age uses `2002 - birth_year`; three birth-year-1890 records are set missing
-in the historical merge. Race refusal `Q70=5` counts as minority for four people.
-Review demographic questions, alternate-wave records and missingness intent
-before revising either rule.
+in the historical merge. Review the demographic instrument and alternate-wave
+records before revising the age rule. The race-refusal correction is NH-06.
 
 ### NH-05: Arrival attitudes cannot reuse the baseline recode blindly
 
@@ -2511,6 +2681,24 @@ under a naive repeated-wave implementation. Some post raw zeros are also
 preserved. Verify literal pre/mid/post questionnaires, routing and split-half
 timing before standardizing missingness or response origins across waves.
 
+### NH-06: Race refusal is missing minority status (corrected)
+
+The baseline CATI instrument's Q70 asks racial or ethnic background and labels
+code 5 "Refused"; codes 1, 2 and 4 are substantive minority categories, and
+code 3 is Caucasian. The historical `Q70 != 3` expression classified four
+refusals as minority. The approved recode keeps substantive categories but
+makes those four minority values missing. All 132 people remain in the sample.
+Case-level old and new values are in
+`audit/corrections/new-haven-2004/approved_values.csv`.
+
+The four people are in groups 9103, 9107 and 9115. Group minority shares move
+from 1/7 to 0/6, 2/10 to 1/9, and 6/13 to 4/11, respectively; the `pminority`
+field changes for all 30 people in those groups. No other aggregate field
+changes. In particular, the centralized historical entropy helper divides by
+full group size and absorbs missing binary answers into the complementary
+category, so its value stays the same. That missing-aware formula issue is
+recorded in X-03 and has not been altered as part of this poll correction.
+
 ## Zeguo 2005 — zeguo-2005
 
 ### ZG-01: Component joins and three item-coding overrides are explicit
@@ -2521,29 +2709,55 @@ aggregate person ID is `52000 + p`, and group is `5200 + groupnum`.
 `source-materials/knowledge-reconciliation.csv` records three historical
 `post_d3045` correctness overrides: `p=48` and `75` have missing raw answers,
 and `p=105` has raw code 1, but all three historically score correct. The merged
-version's `d3045p=1` is corroborating version evidence. The ledger changes only
-the historical item score; original raw responses remain intact. Check original
-post questionnaires, answer key and field-file version history before retaining
-or correcting these overrides in a new scoring version.
+version's `d3045p=1` is corroborating version evidence. The fielded
+[source questionnaire](../data/zeguo-2005/source-materials/questionnaire.pdf)
+Q45 lists answer 3 as plastic products, and the
+[research paper](../data/zeguo-2005/papers/china-zeguo-bjps.pdf) explicitly
+identifies plastic products as correct. Across all
+269 joined source records, the merged file marks all 113 raw post answers of
+3 correct; five of six raw answers of 1 incorrect; and these three exceptions
+correct. Thus the ordinary key is supported, but the three merged flags could
+reflect later manual corrections that did not update the raw POST file. The
+ledger changes only historical scores, preserving all raw answers. Original
+answer sheets or field-file version history are still needed to decide whether
+the three exceptions were verified corrections or coding mistakes. No ZG-01
+score has been changed.
 
-### ZG-02: Road indices preserve out-of-range and cross-wave behavior
+### ZG-02: Scale the village-road rating and use post-wave main roads
 
-One baseline village-road rating of 4.5 remains unscaled, producing index
-1.83333337. The final respondent export blanks the out-of-range index, but earlier
-extremity and dispersion retain it. Changing only the export cannot undo its
-contribution to those summaries. The T2 main-roads index copies T1 in historical
-syntax, although the separate rescaled main-roads index uses actual post answers.
-Review the translated project-choice instrument, rating units, entry correction
-history and index memo before substituting post answers or rescaling 4.5.
+The fielded translated questionnaire and its alternative both print a 0-10
+importance scale for the project ratings. One respondent (`p=50`, source row
+147, historical case 52050) answered 4.5 on baseline village-road item
+`d2007`; their other two components are 5 and 5. The archived code divided
+the ratings by 10 but then reset this one value to 4.5. This produced an
+out-of-range index of 1.83333337, which the final individual export blanked
+while extremity and group dispersion retained it. ZG-02 scales the recorded
+4.5 to 0.45, giving case 52050 a village-road index of about 0.48333332.
+The raw answer is unchanged. One formerly missing `chi.t1att2` is now observed;
+the case's `attextreme` and `meanxtreme`, `avgsd`, and `genvar` for all 16
+members of group 5207 change.
+
+The archived `china_2005.r` also copied baseline `mroads1` into both T1 and
+T2 main-roads indices, even though the post questionnaire asks the same
+projects and the separate rescaled T2 main-roads index uses `d2015p`-`d2019p`
+and `d2022p`. ZG-02 uses those six post ratings in `chi.t2att3`. Its value
+changes for 206 of 233 participants, with no missingness change; group and
+poll descriptors do not use post attitudes and are unaffected by this second
+edit. The six-field person-level comparison is in
+`audit/corrections/zeguo-2005/approved_values.csv`; all other fields retain
+their historical scoring. The generalized-variance column has platform-dependent numerical exceptions
+for the other 15 groups; group 5207 is treated as an approved correction, not
+a numerical exception. The comparison file retains the historical benchmark
+as its old value.
 
 ### ZG-03: Two road indices make covariance numerically singular
 
 The nine-column baseline matrix includes `float(mean(float(ratings / 10)))`
 and `float(mean(ratings)) / 10` versions of main roads. They are algebraically
-redundant apart from float-storage order. All nine reconstructed input columns
-match the original historical matrix bit-for-bit, including the pre-cleaning
-village-road anomaly. All 16 groups have rank eight rather than nine and show
-platform-sensitive generalized variance; see X-09. Dropping a redundant column
+redundant apart from float-storage order. Before ZG-02, all nine reconstructed input columns matched the original
+historical matrix bit-for-bit. The approved 4.5 rescaling changes one input
+in group 5207. All 16 groups still have rank eight rather than nine; the other
+15 retain reviewed platform-sensitive generalized variance; see X-09. Dropping a redundant column
 would change the estimand and requires a separately reviewed correction.
 
 ## Cross-poll issues for the eventual schema
@@ -2586,6 +2800,13 @@ are different states. A zero-filled knowledge score may deliberately count some
 missing answers as incorrect; preserve that as a named scoring policy while
 retaining raw response reasons. Partial attitude-index means have changing
 observed denominators. Neither policy should be silently generalized to the other.
+The centralized `pfemale_ind` helper uses full group size in its leave-one-out
+denominator, while `pfemale` omits missing genders; the entropy helper also
+divides observed categories by full group size. BTPHE-01 exposes this mismatch
+in groups 9707 and 9727; NH-06 shows why the minority entropy can remain
+unchanged when refusal is restored to missing. A change to these shared
+formulas must be assessed across all polls and frozen separately from the
+poll-level source corrections.
 
 ### X-04: Person-level identity requires more than matching scores
 
@@ -2633,10 +2854,10 @@ separated; a rejected-alternative explanation; and an explicit decision to
 preserve, relabel, revise, or leave unresolved. A monotonic scale that looks
 intuitive is not sufficient evidence to replace a deliberate transformation.
 
-### X-09: Generalized variance has 24 explicitly reviewed numerical exceptions
+### X-09: Generalized variance has 23 explicitly reviewed numerical exceptions
 
 The current source formula differs from the frozen historical executable's
-`genvar` in 24 groups, covering 288 export cells. These are not all negligible
+`genvar` in 23 groups, covering 272 export cells. These are not all negligible
 absolute differences, and they are not replaced by benchmark values.
 
 | Poll | Groups | Cells | Largest absolute difference |
@@ -2644,7 +2865,7 @@ absolute differences, and they are not replaced by benchmark values.
 | UK–EU 1995 | 2099 | 4 | 0.000063499 |
 | BTP Health/Education 2005 | 9713, 9715 | 20 | 0.000209632 |
 | San Mateo 2008 | 9601, 9604, 9616, 9617, 9621 | 31 | 0.003464282 |
-| Zeguo 2005 | 5201–5216 | 233 | 0.001944706 |
+| Zeguo 2005 | 5201–5206 and 5208–5216 | 217 | 0.001944706 |
 
 Historical generalized variance takes the absolute determinant of a pairwise
 covariance matrix and raises it to `1 / (2 * number_of_indices)`. Near-zero
@@ -2652,7 +2873,9 @@ determinants become much larger after this root, magnifying rounding differences
 The original nested calculation is retained in code to preserve its own rounding.
 UK–EU group 2099 has N=4, P=4, rank=3; BTP groups 9713 and 9715 have
 N/P/rank 11/11/10 and 9/11/8. San Mateo's five groups have N=5–7 and P=7;
-Zeguo's 16 groups have N=10–17, P=9 and rank=8.
+Zeguo's 15 numerically excepted groups have N=10–17, P=9 and rank=8.
+Group 5207 also has rank eight, but its changed source matrix and `genvar`
+are an approved ZG-02 correction rather than a numerical exception.
 
 Two San Mateo matrices also have materially negative eigenvalues. Group 9601
 has N=6, five complete rows, pairwise N=5–6, and minimum eigenvalue -0.01431241.

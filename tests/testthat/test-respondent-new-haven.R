@@ -17,7 +17,7 @@ test_that("New Haven uses original responses with stable source identities", {
   expect_error(build_new_haven_individual(survey), "Unreviewed source codes")
 })
 
-test_that("New Haven preserves documented historical coding anomalies", {
+test_that("New Haven preserves reviewed historical scales and unknown race", {
   survey <- new_haven_test_survey()
   built <- build_new_haven_individual(survey)
   expect_equal(sum(is.na(built$age)), 3L)
@@ -25,7 +25,10 @@ test_that("New Haven preserves documented historical coding anomalies", {
   anomalous <- as_historical_float(.675)
   expect_equal(sum(built$airport_expansion_t1 == anomalous), 12L)
   expect_equal(sum(built$airport_expansion_t2 == anomalous), 5L)
-  expect_true(all(built$minority[survey$pre_q70 == 5] == 1))
+  expect_equal(sum(survey$pre_q70 == 5), 4L)
+  expect_true(all(is.na(built$minority[survey$pre_q70 == 5])))
+  expect_true(all(built$minority[survey$pre_q70 == 3] == 0))
+  expect_true(all(built$minority[survey$pre_q70 %in% c(1, 2, 4)] == 1))
 })
 
 test_that("New Haven public workbook reproduces the raw projection", {

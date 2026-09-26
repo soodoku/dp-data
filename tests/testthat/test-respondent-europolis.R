@@ -12,6 +12,20 @@ test_that("Europolis is reconstructed from raw questions", {
   raw <- survey[, match(tolower(fields), tolower(names(survey)))]
   built <- build_europolis_individual(raw)
   expect_equal(built, build_europolis_individual(survey))
+  approved <- readr::read_csv(project_path(
+    "audit", "corrections", "europolis-2009", "approved_values.csv"
+  ), show_col_types = FALSE)
+  changed <- which(is.na(built$minority))
+  expect_equal(survey$source_row[changed], approved$source_row)
+  expect_equal(as.character(survey$UniqueID[changed]),
+               as.character(approved$respondent_id))
+  expect_true(all(approved$historical_minority == 1))
+  expect_true(all(is.na(approved$approved_minority)))
+  birth <- europolis_source_codes(survey, "birth1", 1:5)
+  parents <- europolis_source_codes(survey, "parentsbirth1", 1:4)
+  confirmed_foreign <- (birth > 1 & !is.na(birth)) |
+    (parents > 1 & !is.na(parents))
+  expect_true(all(built$minority[confirmed_foreign] == 1))
   order <- rev(seq_len(nrow(raw)))
   expect_equal(build_europolis_individual(raw[order, ]), built[order, ])
   raw$V1Q21[1] <- 42
