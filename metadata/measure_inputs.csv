@@ -415,7 +415,7 @@ uk-general-election-1997,tax_t1@historical-v1,taxr1
 uk-general-election-1997,minimum_wage_t1@historical-v1,wager1
 uk-general-election-1997,european_union_t1@historical-v1,eur1
 uk-general-election-1997,redistribution_t2@historical-v1,redstr2
-uk-general-election-1997,tax_t2@historical-v1,taxret2
+uk-general-election-1997,tax_t2@ukge-02-v2,taxr2
 uk-general-election-1997,minimum_wage_t2@historical-v1,wager2
 uk-general-election-1997,european_union_t2@historical-v1,eur2
 uk-general-election-1997,female@historical-v1,gender

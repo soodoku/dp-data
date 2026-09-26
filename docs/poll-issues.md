@@ -981,20 +981,58 @@ and the field labels for the filter and each placement scale. The source
 codebook was not newly audited item by item in this pass. Preserve party-specific
 placement ranges rather than impose a generic “correct category” rule.
 
-**UKGE-02 — the pre/post tax indices measure different questions.** The raw
-`taxr1` field is Q13, preferences over tax cuts versus social-service spending.
-Historical `t1tax` maps codes 1–7 to 0/.17/.33/.5/.67/.83/1, stored as floats.
-Historical `t2tax`, however, is labelled “t2 relabel txr2re - tax index”; the
-intermediate `txr2reco` is labelled “recoded taxret2”. `taxret2` is Q4c, whether
-the overall level of taxes had gone up or down since the 1992 election. The
-[codebook](../data/uk-general-election-1997/codebook.txt), TAXRET1/TAXRET2 entry,
-confirms its five categories. Mapping codes 1–5 to 0/.25/.5/.75/1 and -8/-9 to
-missing reproduces all 275 historical post values: 259 observed and 16 missing.
-Using the analogous preference field `taxr2` instead would change 207 jointly
-observed values and 17 missingness indicators. That alternative is not applied.
-Before correction, establish the intended longitudinal construct from both
-questionnaires and the original index specification; then recompute affected
-attitude change, dispersion and downstream estimates in a separate version.
+**UKGE-02 — use the same tax-and-spending question at both waves.**
+**Status: approved by the user on 2026-09-25 after reproducing the paper's
+policy-attitude table, and adopted.** The raw `TAXR1` and `TAXR2` fields are
+Q13, the 1–7 preference between tax cuts and social-service spending. The
+historical baseline `ukbge.t1tax` uses `TAXR1`, but the historical post
+`ukbge.t2tax` uses `TAXRET2`, Q4c's five-category retrospective judgment of
+whether taxes had risen since 1992. The deposited `t2tax` variable is labelled
+as a relabel of `txr2re` (the Q13 recode), while its observed values follow
+`txr2reco` (the Q4c recode). See the [codebook](../data/uk-general-election-1997/codebook.txt)
+and source [variable labels](../data/uk-general-election-1997/variables.csv).
+This mismatch could have been deliberate in an intermediate data version, but
+it does not define a longitudinal tax-and-spending attitude.
+
+The retained [election paper](../data/uk-general-election-1997/papers/british-election-paper.pdf),
+Table 3, explicitly defines “Taxes vs. Spending” as a 1–7 policy attitude. We
+independently recalculated all nine policy rows from the deposited raw survey,
+using the 275 records with `filter == 1`, substantive codes on each item's
+printed scale, separate available-case means by wave, unrounded differences of
+those means, and two-sided paired t-tests on complete pairs. **All 18 means and
+nine differences reproduce Table 3 at its two-decimal precision.** For Q13 tax,
+mean T1 is 5.856 and mean T2 is 5.810, printing as 5.86 and 5.81; their
+difference prints as -0.05. The complete-pair t-test uses 270 people and gives
+p = 0.7729, printing as the paper's 0.773. The other non-thresholded printed
+probabilities also reproduce: redistribution 0.002, minimum wage 0.003, and
+tax fairness 0.201. The paper prints 0.001 for the remaining smaller p-values.
+The paper describes 276 attendees overall; the deposited file's selected roster
+contains 275. The exact source of that one-person count difference remains
+unresolved. Reproducing its Table 3 does not settle that separate roster issue
+or turn this draft paper into a benchmark for every downstream analysis.
+
+The approved change replaces only the post component with `TAXR2`, retaining
+the 275-person sample and Q13's historical seven-category recode and float
+storage. Valid post indices rise from 259 to 274. Of the 275 values, 207 change
+among jointly observed people and 17 change missingness (16 gain a Q13 response;
+one loses a Q4c-only response). Mean `ukbge.t2tax` over available respondents
+changes from 0.716216 to 0.801898; these means have different denominators.
+All 275 historical and approved values are frozen in
+[`approved_values.csv`](../audit/corrections/uk-general-election-1997/approved_values.csv)
+alongside the earlier UKGE-03 correction. No other aggregate column changes.
+The raw `TAXRET2` values remain in `survey.sav`; the canonical
+`source_responses` table now carries `TAXR2` as the post tax-index input rather
+than the superseded `TAXRET2` input.
+
+In a read-only current-reader sensitivity, `dp-distortions` changes 12 rows of
+its Table 2 and 24 rows of Table 3 without a recorded 0.05 threshold crossing.
+Its mean absolute net attitude change moves 0.089099 → 0.088715 and mean gross
+change 0.202316 → 0.201775. The `dp-deliberately` audit changes 166 of 36,345
+metrics, all on the UK General Election tax item; its paired tax-attitude
+change moves -0.096133 → -0.003333 as paired coverage rises from 256 to 270.
+These are sensitivities of current readers, not re-estimates of the paper.
+A separate scan of the fielded questionnaire was not found; the codebook
+transcribes the question wording and response labels.
 
 ### UKGE-03: Post Labour minimum-wage knowledge uses the baseline response
 

@@ -149,7 +149,7 @@ uk-general-election-1997,ukbge.t1tax,275,271,tax_t1@historical-v1,implemented,R/
 uk-general-election-1997,ukbge.t1wage,275,269,minimum_wage_t1@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
 uk-general-election-1997,ukbge.t1eu,275,250,european_union_t1@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
 uk-general-election-1997,ukbge.t2redist,275,267,redistribution_t2@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
-uk-general-election-1997,ukbge.t2tax,275,259,tax_t2@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
+uk-general-election-1997,ukbge.t2tax,275,274,tax_t2@ukge-02-v2,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
 uk-general-election-1997,ukbge.t2wage,275,259,minimum_wage_t2@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
 uk-general-election-1997,ukbge.t2eu,275,244,european_union_t2@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,
 uk-general-election-1997,bettered,275,274,higher_education@historical-v1,implemented,R/respondent_election.R; docs/poll-issues.md UKGE-01-04,

@@ -1310,7 +1310,7 @@ uk-general-election-1997,ukbge.t1tax,275,271,0,0,0,0,FALSE,0,4.440892098500626e-
 uk-general-election-1997,ukbge.t1wage,275,269,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 uk-general-election-1997,ukbge.t1eu,275,250,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 uk-general-election-1997,ukbge.t2redist,275,267,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
-uk-general-election-1997,ukbge.t2tax,275,259,0,0,0,0,FALSE,0,0,1e-10
+uk-general-election-1997,ukbge.t2tax,275,258,17,207,0,224,FALSE,0,1,1e-10
 uk-general-election-1997,ukbge.t2wage,275,259,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 uk-general-election-1997,ukbge.t2eu,275,244,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 uk-general-election-1997,ukcrime.rootcauset1,275,0,0,0,0,0,FALSE,0,0,1e-10

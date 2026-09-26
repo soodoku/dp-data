@@ -149,7 +149,7 @@ uk-general-election-1997,ukbge.t1tax,tax_t1@historical-v1,275,271,0,0,4.44089209
 uk-general-election-1997,ukbge.t1wage,minimum_wage_t1@historical-v1,275,269,0,0,4.440892098500626e-16,0,1e-10
 uk-general-election-1997,ukbge.t1eu,european_union_t1@historical-v1,275,250,0,0,4.440892098500626e-16,0,1e-10
 uk-general-election-1997,ukbge.t2redist,redistribution_t2@historical-v1,275,267,0,0,4.440892098500626e-16,0,1e-10
-uk-general-election-1997,ukbge.t2tax,tax_t2@historical-v1,275,259,0,0,0,0,1e-10
+uk-general-election-1997,ukbge.t2tax,tax_t2@ukge-02-v2,275,258,17,207,1,0,1e-10
 uk-general-election-1997,ukbge.t2wage,minimum_wage_t2@historical-v1,275,259,0,0,4.440892098500626e-16,0,1e-10
 uk-general-election-1997,ukbge.t2eu,european_union_t2@historical-v1,275,244,0,0,4.440892098500626e-16,0,1e-10
 uk-general-election-1997,bettered,higher_education@historical-v1,275,274,0,0,0,0,1e-10
