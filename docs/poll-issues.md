@@ -2353,7 +2353,7 @@ presence is not a claim that every original field-file merge has been recovered.
 |---|---|---|
 | nic2-2003 | All 340 historical participants are now reconstructed from raw NIC2 answers; no matching anonymous deposited item matrix is required for that reconstruction. | Original NIC2 instruments, participant/arm definitions, source IDs and wave merge. |
 | btp-national-2003 | All 245 historical participants and aggregate fields are now reconstructed; the 674-person descriptor calibration uses a separate raw source. | National-event instruments and field files; distinguish the national event from later primary/general-election polls. |
-| btp-presidential-primaries-2004 | All 217 historical people are reconstructed; historical export duplicates them, and running peer sums require preserved within-group order. Do not conflate with the online-primaries battery. | Event/mode-specific questionnaires, invitation and attendance records, and ID crosswalk. |
+| btp-presidential-primaries-2004 | All 217 historical people are reconstructed. PR-02 fixes running peer sums; PR-03 removes duplicate aggregate rows and recomputes six group descriptors. Do not conflate with the online-primaries battery. | Event/mode-specific questionnaires, invitation and attendance records, and ID crosswalk. |
 | new-haven-2004 | All 132 historical people are reconstructed from joined pre/mid/post workbook answers. Three birth-year-1890 values are made missing; event year and omitted attendee remain under review. | Original demographic question, raw value and alternate-wave age; respondent linkage and attitude definitions. |
 | zeguo-2005 | All 233 historical participants are reconstructed from reviewed merged/pre/post components; three item-coding overrides and 15 numerical covariance exceptions remain explicit. | Original and translated instruments, event date, project-choice scales and respondent/group identifiers. |
 | marousi-2006 | Public participants file came from an existing derived 2014 analysis object, not an independently rebuilt item-level source. It has scores, groups and demographics but no item responses. | [Questionnaire](../data/marousi-2006/questionnaire.pdf), original field returns, scoring syntax and group roster. Audit the downstream convention treating T2 zeros as missing before generalizing it; it is not justified by the numeric value alone. |
@@ -2603,25 +2603,51 @@ and [follow-up](../data/btp-presidential-primaries-2004/source-materials/followu
 instruments have the seven Q43–Q49 knowledge fields used here. Approved PR-02
 holds those item keys, all 217 people in 16 groups, and the self-knowledge
 exclusion fixed, but uses each whole group's joint-correct count. `grpgain`,
-`grpgainr` and `loggain` each change for 188 unique people and both copies of
-each changed person in the 434-row historical export. Mean `grpgain` increases
+`grpgainr` and `loggain` each change for 188 unique people; the historical
+434-row export contains two copies of each person. Mean `grpgain` increases
 0.2023845 and its maximum increase is 0.9333334; historical values range 0–
-0.6875 and corrected values 0.07692308–0.9333334. IDs, sample multiplicity and
-missingness remain unchanged. Case-level old/new values are in
+0.6875 and corrected values 0.07692308–0.9333334. IDs and missingness remain
+unchanged. PR-03 subsequently removes the duplicate export rows. Case-level
+old/new values are in
 `audit/corrections/btp-presidential-primaries-2004/approved_values.csv`.
 Downstream model consequences can be assessed separately; they do not decide
 which group-total arithmetic is correct. The follow-up questionnaire prints
 Q46 twice for different candidate-knowledge questions. Verify the fielded
 version and codebook before revising any answer keys.
 
-### PR-03: Duplicate export rows are preserved separately from unique people
+### PR-03: Duplicate aggregate rows and doubled group counts (corrected)
 
-The historical aggregate contains each of the 217 people twice, with identical
-scientific fields and different `X` values. The reconstruction preserves these
-434 export rows; the canonical person table contains 217 unique people.
-Removing duplicates is a future analysis-sample correction, not a source-migration
-cleanup. Verify the original append/merge sequence and downstream weighting or
-standard-error consequences before changing row multiplicity. See X-10 for `X`.
+The archived `BTP/2004OnlinePrimaries/btp04primaries.txt` records a final sample
+of 217. The pre-aggregate `pkdat/nuri.Rdata` has 217 poll-ID-95 rows and 217
+unique case IDs. `pkdat/agg_data.Rdata` has 434 rows: every person occurs twice
+with identical scientific fields and a different export row number `X`.
+The duplication appears between those archived stages, near the poll-name
+merge in `merge_data_scripts/03_data.R`; the exact lookup contents were not
+preserved, so the lookup-key cause remains an inference. The baseline and
+follow-up instruments establish the measured items, while these archived
+files establish sample cardinality. This is distinct from the 328-person BTP
+online-primaries poll.
+
+Approved PR-03 exports one row per primaries person, reducing full polardata
+from 6,084 to 5,867 rows without losing a unique person. The canonical 217-person
+respondent table and all source answers and group assignments stay fixed.
+Group composition is recomputed from unique people. Six fields change for all
+217 people: `groupsize` is halved (maximum old/new difference 21), and
+`vareduc`, `sdeduc`, `pfemale_ind`, `meant1know_ind`, and
+`meant1knowcor_ind` change through their denominators. The largest absolute
+changes in those five fields are 0.009804412, 0.01218958, 0.04093567,
+0.03781513, and 0.03361345, respectively. Recomputing the unchanged ratios
+`meaned` and `phighinc` from undoubled rows also changes 34 and 21 stored
+floating-point values by at most 1.11e-16 and 5.55e-17, respectively. No
+other scientific field changes; row number `X` is regenerated. Case-level historical and
+approved values are in
+`audit/corrections/btp-presidential-primaries-2004/approved_values.csv`.
+The numerical parity check still validates the historical duplicate pairs,
+compares on unique case ID, and rejects unapproved value changes. Any
+all-poll analysis that counted historical primaries rows gave this poll twice
+the intended weight; analyses using `groupsize` or the five group descriptors
+can also move. Re-estimate affected downstream analyses when they adopt this
+export. See X-10 for the regenerated `X` field.
 
 ## New Haven 2004 — new-haven-2004
 

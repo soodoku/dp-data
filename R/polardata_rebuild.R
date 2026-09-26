@@ -69,10 +69,6 @@ historical_wide_export <- function(polls) {
   fields <- read_metadata("polardata_fields")$legacy_field
   data <- purrr::list_rbind(polls)
   stopifnot(!anyDuplicated(data[c("dpnum", "caseid")]))
-  rows <- unlist(lapply(seq_len(nrow(data)), function(row) {
-    rep(row, if (data$dpnum[[row]] == 16) 2L else 1L)
-  }))
-  data <- data[rows, ]
   data$X <- seq_len(nrow(data))
   for (field in setdiff(fields, names(data))) data[[field]] <- NA_real_
   data[, fields]
@@ -140,6 +136,11 @@ historical_derived_measures <- function(polls) {
           .env$poll_id == "btp-presidential-primaries-2004" &
             .data$legacy_field %in% c("grpgain", "grpgainr", "loggain") ~
             "pr-02-v2",
+          .env$poll_id == "btp-presidential-primaries-2004" &
+            .data$legacy_field %in% c(
+              "groupsize", "vareduc", "sdeduc", "pfemale_ind",
+              "meant1know_ind", "meant1knowcor_ind"
+            ) ~ "pr-03-v2",
           .default = "historical-v1"
         ),
         value_status = dplyr::case_when(

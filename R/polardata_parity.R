@@ -2,7 +2,7 @@ compare_historical_polardata <- function(rebuilt, reference, numerical_audit,
                                          tolerance = 1e-10) {
   stopifnot(
     identical(names(rebuilt), names(reference)),
-    nrow(rebuilt) == nrow(reference), nrow(rebuilt) == 6084L,
+    nrow(rebuilt) == 5867L, nrow(reference) == 6084L,
     !anyNA(rebuilt$X), all(rebuilt$X == seq_len(nrow(rebuilt)))
   )
   contracts <- read_metadata("respondent_sources")
@@ -10,7 +10,9 @@ compare_historical_polardata <- function(rebuilt, reference, numerical_audit,
     contract <- contracts[index, ]
     actual <- rebuilt[rebuilt$dpnum == contract$dpnum, ]
     expected <- reference[reference$dpnum == contract$dpnum, ]
-    stopifnot(nrow(actual) == nrow(expected))
+    expected_rows <- if (contract$poll_id ==
+                           "btp-presidential-primaries-2004") 2L else 1L
+    stopifnot(nrow(expected) == nrow(actual) * expected_rows)
     actual <- historical_reference_people(actual, contract$poll_id)
     expected <- historical_reference_people(expected, contract$poll_id)
     stopifnot(setequal(actual$caseid, expected$caseid))

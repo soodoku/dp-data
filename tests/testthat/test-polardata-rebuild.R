@@ -8,11 +8,11 @@ full_polardata <- function() {
   arrow::read_parquet(project_path("output", "polardata", "polardata.parquet"))
 }
 
-test_that("full export preserves people and historical multiplicity", {
+test_that("full export has one row per person", {
   data <- full_polardata()
-  expect_identical(dim(data), c(6084L, 364L))
+  expect_identical(dim(data), c(5867L, 364L))
   expect_identical(names(data), read_metadata("polardata_fields")$legacy_field)
-  expect_equal(sum(duplicated(data[c("dpnum", "caseid")])), 217L)
+  expect_equal(sum(duplicated(data[c("dpnum", "caseid")])), 0L)
   counts <- table(data$dpnum)
   contracts <- read_metadata("respondent_sources")
   targets <- read_metadata("polardata_targets")
@@ -20,7 +20,9 @@ test_that("full export preserves people and historical multiplicity", {
     rows <- unique(targets$historical_rows[
       targets$poll_id == contracts$poll_id[[i]]
     ])
-    expect_equal(unname(counts[as.character(contracts$dpnum[[i]])]), rows)
+    expected <- if (contracts$poll_id[[i]] ==
+                      "btp-presidential-primaries-2004") 217L else rows
+    expect_equal(unname(counts[as.character(contracts$dpnum[[i]])]), expected)
   }
   expect_true(all(is.na(data[grepl("^grk[.]", names(data))])))
 })
@@ -77,6 +79,51 @@ test_that("derived exports preserve unique people and reviewed gain", {
     derived$legacy_field %in% c("grpgain", "grpgainr", "loggain")
   expect_setequal(unique(derived$definition_version[primaries_gain]),
                   "pr-02-v2")
+  primaries_group <- derived$poll_id == "btp-presidential-primaries-2004" &
+    derived$legacy_field %in% c(
+      "groupsize", "vareduc", "sdeduc", "pfemale_ind",
+      "meant1know_ind", "meant1knowcor_ind"
+    )
+  expect_setequal(unique(derived$definition_version[primaries_group]),
+                  "pr-03-v2")
+})
+
+test_that("PR-03 keeps approved group values and rejects duplicate people", {
+  data <- full_polardata()
+  primaries <- data[data$dpnum == 16L, ]
+  approved <- readr::read_csv(project_path(
+    "audit", "corrections", "btp-presidential-primaries-2004",
+    "approved_values.csv"
+  ), show_col_types = FALSE)
+  fields <- c("groupsize", "vareduc", "sdeduc", "pfemale_ind",
+              "meant1know_ind", "meant1knowcor_ind")
+  selected <- approved[approved$legacy_field %in% fields, ]
+  expect_equal(nrow(selected), 217L * length(fields))
+  for (field in fields) {
+    rows <- selected[selected$legacy_field == field, ]
+    expect_setequal(rows$caseid, primaries$caseid)
+    expect_equal(primaries[[field]][match(rows$caseid, primaries$caseid)],
+                 rows$approved_value, tolerance = 1e-10)
+    expect_equal(sum(abs(rows$historical_value -
+                           rows$approved_value) > 1e-10), 217L)
+  }
+  reference <- readr::read_tsv(project_path(
+    "evidence", "benchmarks", "polardata.tab"
+  ), show_col_types = FALSE)
+  audit <- readr::read_csv(project_path(
+    "audit", "polardata_covariances.csv"
+  ), show_col_types = FALSE)
+  changed <- data
+  row <- which(changed$dpnum == 16L)[1]
+  changed$groupsize[row] <- selected$historical_value[
+    selected$legacy_field == "groupsize" &
+      selected$caseid == changed$caseid[row]
+  ]
+  parity <- compare_historical_polardata(changed, reference, audit)
+  expect_equal(sum(parity$unexplained_differences), 1L)
+  duplicated <- data[c(seq_len(nrow(data)), row), ]
+  duplicated$X <- seq_len(nrow(duplicated))
+  expect_error(compare_historical_polardata(duplicated, reference, audit))
 })
 
 test_that("numerical exceptions cannot hide changed aggregate values", {
@@ -99,6 +146,9 @@ test_that("numerical exceptions cannot hide changed aggregate values", {
   primaries_gain <- parity$poll_id == "btp-presidential-primaries-2004" &
     parity$legacy_field == "grpgain"
   expect_equal(parity$approved_correction_differences[primaries_gain], 188L)
+  primaries_size <- parity$poll_id == "btp-presidential-primaries-2004" &
+    parity$legacy_field == "groupsize"
+  expect_equal(parity$approved_correction_differences[primaries_size], 217L)
   zeguo_variance <- parity$poll_id == "zeguo-2005" &
     parity$legacy_field == "genvar"
   expect_equal(parity$approved_correction_differences[zeguo_variance], 16L)
@@ -545,8 +595,11 @@ test_that("NIC approved ages and mode retain the single missing identity", {
   ), show_col_types = FALSE)
   changed <- data
   row <- which(data$dpnum == 20 & !is.na(data$ppage))[1]
+  benchmark_row <- which(reference$dpnum == 20 &
+                           reference$caseid == data$caseid[row])
+  expect_length(benchmark_row, 1L)
   for (field in c("ppage", "meanage", "mode")) {
-    changed[[field]][row] <- reference[[field]][row]
+    changed[[field]][row] <- reference[[field]][benchmark_row]
   }
   result <- compare_historical_polardata(changed, reference, audit)
   expect_equal(sum(result$unexplained_differences), 3L)

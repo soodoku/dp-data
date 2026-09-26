@@ -5459,7 +5459,7 @@ btp-general-election-2004,sm.t2openspace,246,0,0,0,0,0,FALSE,0,0,1e-10
 btp-general-election-2004,sm.t2countyl,246,0,0,0,0,0,FALSE,0,0,1e-10
 btp-general-election-2004,dpnum,246,246,0,0,0,0,FALSE,0,0,1e-10
 btp-general-election-2004,bettered,246,246,0,0,0,0,FALSE,0,0,1e-10
-btp-presidential-primaries-2004,X,217,217,0,216,0,0,TRUE,0,163,1e-10
+btp-presidential-primaries-2004,X,217,217,0,217,0,0,TRUE,0,53,1e-10
 btp-presidential-primaries-2004,pollid,217,217,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,caseid,217,217,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,country,217,217,0,0,0,0,FALSE,0,0,1e-10
@@ -5467,7 +5467,7 @@ btp-presidential-primaries-2004,mode,217,217,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,t1knowlevel,217,217,0,0,0,0,FALSE,0,5.551115123125783e-17,1e-10
 btp-presidential-primaries-2004,numitems,217,217,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,pollgroup,217,217,0,0,0,0,FALSE,0,0,1e-10
-btp-presidential-primaries-2004,groupsize,217,217,0,0,0,0,FALSE,0,0,1e-10
+btp-presidential-primaries-2004,groupsize,217,217,0,217,0,217,FALSE,0,21,1e-10
 btp-presidential-primaries-2004,avgsd,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,numindices,217,217,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,genvar,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
@@ -5502,19 +5502,19 @@ btp-presidential-primaries-2004,pfemale,217,217,0,0,0,0,FALSE,0,4.99600361081320
 btp-presidential-primaries-2004,pminority,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,varfemale,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,sdfemale,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
-btp-presidential-primaries-2004,vareduc,217,217,0,0,0,0,FALSE,0,4.718447854656915e-16,1e-10
-btp-presidential-primaries-2004,sdeduc,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
+btp-presidential-primaries-2004,vareduc,217,217,0,217,0,217,FALSE,0,0.009804411764705978,1e-10
+btp-presidential-primaries-2004,sdeduc,217,217,0,217,0,217,FALSE,0,0.012189578001216173,1e-10
 btp-presidential-primaries-2004,meaned,217,217,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
 btp-presidential-primaries-2004,meanage,217,217,0,0,0,0,FALSE,0,4.973799150320701e-14,1e-10
 btp-presidential-primaries-2004,phighinc,217,217,0,0,0,0,FALSE,0,3.885780586188048e-16,1e-10
 btp-presidential-primaries-2004,meanxtreme,217,217,0,0,0,0,FALSE,0,4.163336342344337e-16,1e-10
-btp-presidential-primaries-2004,pfemale_ind,217,217,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
+btp-presidential-primaries-2004,pfemale_ind,217,217,0,217,0,217,FALSE,0,0.04093567251461977,1e-10
 btp-presidential-primaries-2004,entropy,217,217,0,0,0,0,FALSE,0,4.884981308350689e-15,1e-10
 btp-presidential-primaries-2004,meant1know,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,meant1knowcor,217,217,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
 btp-presidential-primaries-2004,t1knowlevelcor,217,217,0,0,0,0,FALSE,0,1.1102230246251565e-16,1e-10
-btp-presidential-primaries-2004,meant1know_ind,217,217,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
-btp-presidential-primaries-2004,meant1knowcor_ind,217,217,0,0,0,0,FALSE,0,5.551115123125783e-16,1e-10
+btp-presidential-primaries-2004,meant1know_ind,217,217,0,217,0,217,FALSE,0,0.0378151268643494,1e-10
+btp-presidential-primaries-2004,meant1knowcor_ind,217,217,0,217,0,217,FALSE,0,0.033613446223385246,1e-10
 btp-presidential-primaries-2004,meant2know,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,knowgain,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,knowgain2,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
@@ -5823,7 +5823,7 @@ btp-presidential-primaries-2004,sm.t2openspace,217,0,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,sm.t2countyl,217,0,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,dpnum,217,217,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,bettered,217,217,0,0,0,0,FALSE,0,0,1e-10
-san-mateo-2008,X,239,239,0,239,0,0,TRUE,0,269,1e-10
+san-mateo-2008,X,239,239,0,239,0,0,TRUE,0,486,1e-10
 san-mateo-2008,pollid,239,239,0,0,0,0,FALSE,0,0,1e-10
 san-mateo-2008,caseid,239,239,0,0,0,0,FALSE,0,0,1e-10
 san-mateo-2008,country,239,239,0,0,0,0,FALSE,0,0,1e-10
@@ -6187,7 +6187,7 @@ san-mateo-2008,sm.t2openspace,239,235,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-1
 san-mateo-2008,sm.t2countyl,239,236,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 san-mateo-2008,dpnum,239,239,0,0,0,0,FALSE,0,0,1e-10
 san-mateo-2008,bettered,239,236,0,0,0,0,FALSE,0,0,1e-10
-btp-health-education-2005,X,454,454,0,454,0,0,TRUE,0,53,1e-10
+btp-health-education-2005,X,454,454,0,454,0,0,TRUE,0,270,1e-10
 btp-health-education-2005,pollid,454,454,0,0,0,0,FALSE,0,0,1e-10
 btp-health-education-2005,caseid,454,454,0,0,0,0,FALSE,0,0,1e-10
 btp-health-education-2005,country,454,454,0,0,0,0,FALSE,0,0,1e-10
@@ -6551,7 +6551,7 @@ btp-health-education-2005,sm.t2openspace,454,0,0,0,0,0,FALSE,0,0,1e-10
 btp-health-education-2005,sm.t2countyl,454,0,0,0,0,0,FALSE,0,0,1e-10
 btp-health-education-2005,dpnum,454,454,0,0,0,0,FALSE,0,0,1e-10
 btp-health-education-2005,bettered,454,452,0,0,0,0,FALSE,0,0,1e-10
-wtu-1996,X,230,230,0,230,0,0,TRUE,0,53,1e-10
+wtu-1996,X,230,230,0,230,0,0,TRUE,0,270,1e-10
 wtu-1996,pollid,230,230,0,0,0,0,FALSE,0,0,1e-10
 wtu-1996,caseid,230,230,0,0,0,0,FALSE,0,0,1e-10
 wtu-1996,country,230,230,0,0,0,0,FALSE,0,0,1e-10
@@ -6915,7 +6915,7 @@ wtu-1996,sm.t2openspace,230,0,0,0,0,0,FALSE,0,0,1e-10
 wtu-1996,sm.t2countyl,230,0,0,0,0,0,FALSE,0,0,1e-10
 wtu-1996,dpnum,230,230,0,0,0,0,FALSE,0,0,1e-10
 wtu-1996,bettered,230,229,0,0,0,0,FALSE,0,0,1e-10
-nic-1996,X,466,466,0,466,0,0,TRUE,0,53,1e-10
+nic-1996,X,466,466,0,466,0,0,TRUE,0,270,1e-10
 nic-1996,pollid,466,466,0,0,0,0,FALSE,0,0,1e-10
 nic-1996,caseid,466,465,0,0,0,0,FALSE,0,0,1e-10
 nic-1996,country,466,466,0,0,0,0,FALSE,0,0,1e-10
@@ -7279,7 +7279,7 @@ nic-1996,sm.t2openspace,466,0,0,0,0,0,FALSE,0,0,1e-10
 nic-1996,sm.t2countyl,466,0,0,0,0,0,FALSE,0,0,1e-10
 nic-1996,dpnum,466,466,0,0,0,0,FALSE,0,0,1e-10
 nic-1996,bettered,466,459,0,0,0,0,FALSE,0,0,1e-10
-swepco-1996,X,232,232,0,232,0,0,TRUE,0,199,1e-10
+swepco-1996,X,232,232,0,232,0,0,TRUE,0,416,1e-10
 swepco-1996,pollid,232,232,0,0,0,0,FALSE,0,0,1e-10
 swepco-1996,caseid,232,232,0,0,0,0,FALSE,0,0,1e-10
 swepco-1996,country,232,232,0,0,0,0,FALSE,0,0,1e-10

@@ -61,12 +61,9 @@ build_btp_primaries_derived <- function(survey, values) {
   rows <- unresolved_poll_rows(survey, values)
   group <- 9500 + survey$groupnumc[rows]
   attitudes <- primaries_attitudes(survey, "b1")[rows, ]
-  # Historical merge duplicates each person before later composition summaries.
-  repeated <- rep(seq_len(nrow(values)), 2L)
   result <- historical_derived_columns(
-    values[repeated, ], group[repeated],
-    as.numeric(survey$ppincimp[rows][repeated] >= 14), attitudes[repeated, ]
-  )[seq_len(nrow(values)), ]
+    values, group, as.numeric(survey$ppincimp[rows] >= 14), attitudes
+  )
   dispersion <- historical_group_dispersion(attitudes, group)
   result$genvar <- dispersion$generalized_variance
   result$avgsd <- reviewed_us_average_sd(attitudes, group)

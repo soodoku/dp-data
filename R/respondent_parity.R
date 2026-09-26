@@ -44,7 +44,10 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
       rows = 245L
     ),
     "btp-presidential-primaries-2004" = list(
-      fields = c("grpgain", "grpgainr", "loggain"), rows = 217L
+      fields = c(
+        "grpgain", "grpgainr", "loggain", "groupsize", "vareduc",
+        "sdeduc", "pfemale_ind", "meant1know_ind", "meant1knowcor_ind"
+      ), rows = 217L
     ),
     "san-mateo-2008" = list(
       fields = "t1knowlevel", rows = 239L
@@ -185,10 +188,12 @@ historical_reference_people <- function(reference, poll_id) {
     stopifnot(!anyDuplicated(reference$caseid))
     return(reference)
   }
-  stopifnot(
-    nrow(reference) == 434L, !anyNA(reference$caseid),
-    all(table(reference$caseid) == 2L)
-  )
+  stopifnot(!anyNA(reference$caseid))
+  if (nrow(reference) == 217L) {
+    stopifnot(!anyDuplicated(reference$caseid))
+    return(reference)
+  }
+  stopifnot(nrow(reference) == 434L, all(table(reference$caseid) == 2L))
   comparable <- reference[, setdiff(names(reference), "X"), drop = FALSE]
   unique_people <- comparable[!duplicated(comparable$caseid), , drop = FALSE]
   matched <- unique_people[match(comparable$caseid, unique_people$caseid), ]

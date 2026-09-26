@@ -94,7 +94,11 @@ test_that("resolved polls reproduce historical fields", {
         new_haven = c("minority", "pminority"),
         zeguo = c("chi.t1att2", "chi.t2att3", "attextreme",
                   "meanxtreme", "avgsd", "genvar"),
-        btp_primaries = c("grpgain", "grpgainr", "loggain")
+        btp_primaries = c(
+          "grpgain", "grpgainr", "loggain", "groupsize", "vareduc",
+          "sdeduc", "pfemale_ind", "meant1know_ind",
+          "meant1knowcor_ind"
+        )
       )
       for (field in corrected) {
         expected[[field]] <- approved_reference_values(
