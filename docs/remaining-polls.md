@@ -20,7 +20,7 @@ A dash means that respondent-level comparison is not established.
 | BTP health/education 2005 | 454 | 6 | 30 | 0 | Two gender values differ |
 | BTP online primaries 2004 | 328 | 7 | 16 | 25 | Refusals; 13 unknown groups |
 | Bulgaria crime 2002 | 278 | 7 | 17 | 0 | Row-aligned |
-| California 2011 | 396 | 5 | 25 | - | Deposit has 401 |
+| California 2011 | 396 | 5 | 25 | 2 | Five blank deposit tail rows |
 | Europolis 2009 | 348 | 6 | 25 | - | Unordered exact match |
 | NIC 1996 | 466 | 8 | 30 | 0 | Row-aligned |
 | Tomorrow's Europe 2007 | 359 | 11 | 18 | - | Deposit has 335 |
@@ -128,16 +128,20 @@ All scored items and gender indicators match the deposit.
 
 ### California 2011
 
-`t2t3filter == 1` with observed `part` selects 396 of 472 records,
-rather than the deposit's 401. The source `id` is complete and unique in
-this sample; `idnum` is not. The build uses the departure
-`t3_GroupNumber` and the baseline gender question.
+`part == 1` marks 412 of 472 source records; `t2t3filter == 1` selects
+396 of them. The source `id` is complete and unique in this sample; `idnum`
+is not. The build uses departure `t3_GroupNumber` and baseline gender. The
+401-row deposited battery has five entirely missing rows at the end. Its
+first 396 rows align with the selected source in order, including missingness.
+The original deposit is kept intact; those five rows are excluded only from
+the comparison.
 
 Democratic control is code 2 at baseline but code 1 in the post questionnaire.
 Post code 3 (Independent) is a substantive wrong answer for both party-control
-questions, not missing. The historical script excluded that answer for one
-question. No five-person addition or row correspondence is inferred merely to
-match the deposited sample size.
+questions. The historical battery marks it missing for departure Senate in
+two rows, while the maintained build scores it incorrect. Both zero-filled
+scores are unchanged. The 16 source participants excluded by `t2t3filter`
+remain a separate sample-policy question.
 
 ### Europolis 2009
 

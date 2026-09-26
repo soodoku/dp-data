@@ -300,9 +300,19 @@ compare_knowledge_batteries <- function(tables) {
     specification <- items |>
       dplyr::filter(.data$poll_id == .env$poll_id)
     expected <- read_knowledge_battery(poll_id)
+    benchmark_respondents <- nrow(expected)
     people <- tables$respondents |>
       dplyr::filter(.data$poll_id == .env$poll_id) |>
       dplyr::arrange(.data$battery_row)
+    blank_tail <- poll_id == "california-whats-next-2011"
+    if (blank_tail) {
+      stopifnot(
+        benchmark_respondents == 401L, nrow(people) == 396L,
+        all(rowSums(!is.na(expected[397:401, ])) == 0L),
+        all(rowSums(!is.na(expected[1:396, ])) > 0L)
+      )
+      expected <- expected[1:396, ]
+    }
     if (nrow(expected) != nrow(people)) {
       return(list(
         summary = tibble::tibble(
@@ -395,7 +405,12 @@ compare_knowledge_batteries <- function(tables) {
       item_wave_columns = nrow(specification),
       item_differences = sum(detail$differs),
       female_differences = female_differences,
-      benchmark_respondents = nrow(expected), comparison_status = "row-aligned"
+      benchmark_respondents = benchmark_respondents,
+      comparison_status = if (blank_tail) {
+        "row-aligned-after-blank-tail"
+      } else {
+        "row-aligned"
+      }
     )
     scores <- detail |>
       dplyr::group_by(.data$poll_id, .data$respondent_id, .data$wave) |>

@@ -14,7 +14,7 @@ btp-general-election-2004,250,18,7,0,250,row-aligned
 btp-health-education-2005,454,12,0,2,454,row-aligned
 btp-online-primaries-2004,328,14,25,0,328,row-aligned
 bulgaria-crime-2002,278,14,0,0,278,row-aligned
-california-whats-next-2011,396,10,NA,NA,401,unlinked-sample-difference
+california-whats-next-2011,396,10,2,0,401,row-aligned-after-blank-tail
 europolis-2009,348,12,NA,NA,348,unordered-exact-match
 nic-1996,466,16,0,0,466,row-aligned
 tomorrows-europe-2007,359,22,NA,NA,335,unlinked-sample-difference

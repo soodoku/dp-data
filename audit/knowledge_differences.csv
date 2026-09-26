@@ -105,6 +105,8 @@ btp-online-primaries-2004,59,2,knowledge-7,59,f1q49,-1,NA,NA,non_substantive,-1,
 btp-online-primaries-2004,98,1,knowledge-2,98,b1q44,-1,NA,NA,non_substantive,-1,86,t1know2raw,0,TRUE
 btp-online-primaries-2004,98,1,knowledge-4,98,b1q46,-1,NA,NA,non_substantive,-1,86,t1know4raw,0,TRUE
 btp-online-primaries-2004,98,1,knowledge-7,98,b1q49,-1,NA,NA,non_substantive,-1,86,t1know7raw,0,TRUE
+california-whats-next-2011,321,2,knowledge-1,242,t3q27,3,NA,0,answered,NA,190,t3know1raw,NA,TRUE
+california-whats-next-2011,438,2,knowledge-1,359,t3q27,3,NA,0,answered,NA,296,t3know1raw,NA,TRUE
 vermont-energy-2007,100001,1,knowledge-3,1,Q79,2,NA,1,answered,NA,1,t1know3raw,0,TRUE
 vermont-energy-2007,100001,2,knowledge-2,1,Q031T3,3,NA,1,answered,NA,1,t3know2raw,0,TRUE
 vermont-energy-2007,100001,2,knowledge-7,1,Q036T3,5,NA,0,answered,NA,1,t3know7raw,NA,TRUE
