@@ -61,6 +61,36 @@ compare_historical_polardata <- function(rebuilt, reference, numerical_audit,
         a[observed_approved] == approved[observed_approved]
       }
       matches_approved[is.na(matches_approved)] <- FALSE
+      if (contract$poll_id == "zeguo-2005" && field == "genvar") {
+        corrected <- !is.na(actual$pollgroup) & actual$pollgroup == 5207
+        review <- numerical_audit[
+          numerical_audit$poll_id == contract$poll_id &
+            numerical_audit$pollgroup == 5207,
+        ]
+        source_fingerprint <- paste0(
+          "3514924de53bbb8c3bb14d334d3f5de6",
+          "dd7c324e89be7f82acf9b4a7d34e0a05"
+        )
+        verified <- nrow(review) == 1L &&
+          sum(corrected) == 16L &&
+          identical(review$attitudes_sha256, source_fingerprint) &&
+          review$n == 16L && review$p == 9L &&
+          review$covariance_rank == 8L &&
+          review$near_zero_eigenvalues == 1L &&
+          !review$numerical_exception &&
+          is.finite(review$source_genvar) &&
+          review$source_genvar >= 0 &&
+          review$source_genvar <= review$perturbation_upper &&
+          is.finite(review$benchmark_genvar) &&
+          all(abs(b[corrected] - review$benchmark_genvar) <= tolerance) &&
+          abs(review$source_genvar - review$benchmark_genvar) > tolerance
+        matches_approved[corrected] <- if (isTRUE(verified)) {
+          !is.na(a[corrected]) &
+            abs(a[corrected] - review$source_genvar) <= tolerance
+        } else {
+          FALSE
+        }
+      }
       numerical <- difference & field == "genvar" &
         verified_numeric
       artifact <- field == "X"
