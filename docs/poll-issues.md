@@ -2327,17 +2327,63 @@ merge/catalog definitions. Choosing departure would change the estimand and
 requires its own numerical comparison and approval. TE-04's departure component
 correction must not silently switch the downstream catalog or add an index.
 
-### TE-05: Education, age and exceptional raw codes need instrument review
+### TE-05: Include postgraduate education and use the source age (corrected)
 
-Q39 category 5 (postgraduate) is made missing before the historical recode
-maps categories 4/5/6 to 1; category 6 (doctorate) remains 1. Q36 age category 2,
-labeled 25–39, maps to 27; unknown category 6 remains 6. These reproduce the
-script but need the original demographic instrument and analyst rationale.
-Reviewed exceptional codes are field-specific: `t2q19=6` and `t3q19=0/6`
-score incorrect; `t2q24=24/1004` and `t2q27=44/1004` become missing then incorrect;
+**Status: approved by the user on 2026-09-26 and implemented upstream.** The
+[source value labels](../data/tomorrows-europe-2007/value-labels.csv) identify
+Q39 code 5 as "some postgraduate," between "university degree" (4) and
+"postgraduate degree" (6). The original `vault/cdd/scripts/eu_2007.R`
+classified codes 4/5/6 as university-or-above in `educollege`, but its
+four-level `educ4` recode put `5 = NA` before a conflicting `4/5/6 = 1`.
+The archived source variable `q39recode` also includes all code-5 records in
+its university-or-above category. The [research paper](../data/tomorrows-europe-2007/papers/tomorrows-europe-research-paper.pdf)
+(printed p. 5) defines the education indicator as university education or
+more. The corrected respondent recode maps Q39 codes 4, 5 and 6 to 1 and
+keeps code 7 (no answer) missing. In the 3,550-row source, 77 people have
+code 5; 17 of them are in the unchanged 344-person aggregate sample. For
+that sample, `educ4`, `educ3` and `bettered` each gain 17 observed values
+(326 to 343), across ten groups.
+
+The same source labels define Q36 code 2 as ages 25–39. The original script's
+comment says 25–29 and maps the entire category to 27. The source also
+contains `v_q36` (birth year) and `age`: all 3,533 observed source ages equal
+`2007 - v_q36` and fall within their Q36 bands. The 17 Q36 "don't know"
+records have missing source age; the previous reconstruction incorrectly
+assigned them age 6. The corrected respondent value uses the source `age`,
+checks it against birth year and the Q36 band, and leaves those 17 missing.
+All 344 aggregate respondents have source age: 326 `ppage` values change and
+its sample mean moves from 43.18023 to 45.00000. The full-source respondent
+export changes 3,267 observed ages and marks the 17 unsupported ages missing.
+
+Group calculations remain in the later derived stage. `meanage` changes for
+all 344 rows in 18 groups. `meaned`, `vareduc` and `sdeduc` change on 194
+rows in ten groups; `entropy` changes on 174 rows in nine groups. These and
+the four respondent fields above are the only new changes to the historical
+wide export; the earlier TE-04 military and trade corrections remain as
+approved. [Approved respondent and group values](../audit/corrections/tomorrows-europe-2007/approved_values.csv)
+record each old and new value, and both parity comparisons report zero
+unexplained differences.
+
+The downstream comparison used identical source code and inputs except for
+the two paired aggregate files. `dp-learning` changes 326 age cells and 17
+education cells in its analysis frame. Its main mixed model adds those 17
+people (5,832 to 5,849 observations): the heterogeneity coefficient moves
+from .0070214 to .0033871 and the age-per-decade coefficient from -.0030590
+to -.0032097. Running the age and education changes separately shows that
+education supplies the 17 extra observations and most of the heterogeneity
+change; age alone keeps 5,832 observations. In `dp-distortions`, four of 19
+result CSVs change: the two education subgroup tables, their 70 existing
+Tomorrow's Europe group-index rows, and six pooled education inference rows.
+No group-index pair is added or lost. The `dp-deliberately` importer receives
+the same 326 changed ages and 17 newly observed education indicators.
+The comparison does not rerun any publication-era model.
+
+The other exceptional raw codes remain field-specific and historically
+reviewed: `t2q19=6` and `t3q19=0/6` score incorrect;
+`t2q24=24/1004` and `t2q27=44/1004` become missing then incorrect;
 `t2q11a=8`, `t3q16a=10` and `t3q18c=55` become missing in attitudes.
-Do not generalize these allowances to other fields. Preserve raw values while
-checking source labels, entry corrections and interview records.
+The baseline questionnaire and the original participant/roster join are still
+needed for TE-01 and TE-02; this correction does not change their status.
 
 ## Vermont Energy 2007 — vermont-energy-2007
 

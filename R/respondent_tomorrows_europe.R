@@ -8,6 +8,21 @@ tomorrows_europe_codes <- function(survey, field, allowed) {
   value
 }
 
+tomorrows_europe_age <- function(survey) {
+  age <- tomorrows_europe_codes(survey, "age", 18:120)
+  birth_year <- tomorrows_europe_codes(survey, "v_q36", 1900:2007)
+  age_band <- tomorrows_europe_codes(survey, "q36", 1:6)
+  observed <- !is.na(age)
+  stopifnot(
+    identical(is.na(age), is.na(birth_year)),
+    all(age[observed] == 2007 - birth_year[observed]),
+    all(as.integer(cut(age[observed], c(17, 24, 39, 54, 69, Inf))) ==
+          age_band[observed]),
+    all(age_band[!observed] == 6)
+  )
+  age
+}
+
 tomorrows_europe_mean <- function(...) {
   value <- rowMeans(cbind(...), na.rm = TRUE)
   value[is.nan(value)] <- NA_real_
@@ -99,7 +114,7 @@ build_tomorrow_individual <- function(
   read <- function(field, allowed) {
     tomorrows_europe_codes(survey, field, allowed)
   }
-  education <- c(0, .33, .66, 1, NA, 1, NA)[read("q39", 1:7)]
+  education <- c(0, .33, .66, 1, 1, 1, NA)[read("q39", 1:7)]
   dplyr::bind_cols(
     purrr::map2(attitudes, 1:3, function(values, wave) {
       dplyr::rename_with(values, \(name) paste0(name, "_t", wave))
@@ -109,7 +124,7 @@ build_tomorrow_individual <- function(
       knowledge_midterm = rowMeans(arrival),
       knowledge_midterm_joint = rowMeans(arrival * after),
       knowledge_joint_midterm = rowMeans(before * arrival * after),
-      age = c(21, 27, 47, 62, 73, 6)[read("q36", 1:6)],
+      age = tomorrows_europe_age(survey),
       female = as.numeric(read("q35", 1:2) == 2), minority = NA_real_,
       education_four = education,
       education_three = collapse_historical_education(education),

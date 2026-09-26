@@ -64,8 +64,11 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
                  "pfemale_ind", "entropy", "t1knowlevel"), rows = 454L
     ),
     "tomorrows-europe-2007" = list(
-      fields = c("eu.mil_att_11_12_t3", "eu.free_trade_index_t3"),
-      rows = 344L
+      fields = c(
+        "eu.mil_att_11_12_t3", "eu.free_trade_index_t3",
+        "ppage", "educ4", "educ3", "bettered", "vareduc", "sdeduc",
+        "meaned", "meanage", "entropy"
+      ), rows = 344L
     ),
     "cpl-1996" = list(
       fields = c("grpgain", "grpgainr", "loggain"), rows = 216L

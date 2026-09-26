@@ -218,7 +218,7 @@ test_that("definitions match historical or approved values by IDs", {
   ))
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "tomorrows-europe-2007"
-  ]), 15L)
+  ]), 66L)
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "uk-eu-1995"
   ]), 14L)

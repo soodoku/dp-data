@@ -1721,7 +1721,7 @@ australia-republic-1999,minority@historical-v1,overseas
 australia-republic-1999,age@historical-v1,age
 australia-republic-1999,popular_t1@historical-v1,firstop1
 australia-republic-1999,popular_t1@historical-v1,secop1
-tomorrows-europe-2007,education_four@historical-v1,q39
+tomorrows-europe-2007,education_four@te-05-v2,q39
 tomorrows-europe-2007,attitude_extremity_midterm@historical-v1,t2q1
 tomorrows-europe-2007,attitude_extremity_midterm@historical-v1,t2q4
 tomorrows-europe-2007,attitude_extremity_midterm@historical-v1,t2q7c
@@ -1876,7 +1876,7 @@ tomorrows-europe-2007,log_knowledge_joint@historical-v1,t3q26
 tomorrows-europe-2007,log_knowledge_joint@historical-v1,t3q27
 tomorrows-europe-2007,log_knowledge_joint@historical-v1,t3q36a
 tomorrows-europe-2007,log_knowledge_joint@historical-v1,t3q36b
-tomorrows-europe-2007,education_three@historical-v1,q39
+tomorrows-europe-2007,education_three@te-05-v2,q39
 tomorrows-europe-2007,attitude_extremity@historical-v1,q1_1
 tomorrows-europe-2007,attitude_extremity@historical-v1,q4_1
 tomorrows-europe-2007,attitude_extremity@historical-v1,q7c_1
@@ -1982,7 +1982,7 @@ tomorrows-europe-2007,veto_t1@historical-v1,q15a_1
 tomorrows-europe-2007,veto_t1@historical-v1,q15b_1
 tomorrows-europe-2007,veto_t1@historical-v1,q15c_1
 tomorrows-europe-2007,veto_t1@historical-v1,q15d_1
-tomorrows-europe-2007,age@historical-v1,q36
+tomorrows-europe-2007,age@te-05-v2,q36
 tomorrows-europe-2007,knowledge_t2@historical-v1,t3q19
 tomorrows-europe-2007,knowledge_t2@historical-v1,t3q20
 tomorrows-europe-2007,knowledge_t2@historical-v1,t3q21
@@ -1995,7 +1995,7 @@ tomorrows-europe-2007,knowledge_t2@historical-v1,t3q27
 tomorrows-europe-2007,knowledge_t2@historical-v1,t3q36a
 tomorrows-europe-2007,knowledge_t2@historical-v1,t3q36b
 tomorrows-europe-2007,privatization_t1@historical-v1,q4_1
-tomorrows-europe-2007,higher_education@historical-v1,q39
+tomorrows-europe-2007,higher_education@te-05-v2,q39
 tomorrows-europe-2007,high_knowledge_joint@historical-v1,q16_1
 tomorrows-europe-2007,high_knowledge_joint@historical-v1,q17_1
 tomorrows-europe-2007,high_knowledge_joint@historical-v1,q18_1
@@ -3419,3 +3419,5 @@ btp-national-2003,btp-national-2003.security_t2@historical-v1,qf37e
 btp-national-2003,btp-national-2003.security_t2@historical-v1,qf37f
 btp-national-2003,btp-national-2003.trade_t1@historical-v1,qb33
 btp-national-2003,btp-national-2003.trade_t2@historical-v1,qf33
+tomorrows-europe-2007,age@te-05-v2,age
+tomorrows-europe-2007,age@te-05-v2,v_q36
