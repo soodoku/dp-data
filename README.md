@@ -58,6 +58,11 @@ respondent-linked item correctness at both scoring waves for all 21 polls.
 The item means reproduce the historical respondent scores; Marousi is outside
 this reconstructed source set because its available participant file contains
 scores but no individual item answers.
+The respondent export also includes `output/respondent/briefing_reading.parquet`:
+source-linked reading reports in nine polls, including five whose historical
+`readbrief` column was left missing even though the retained survey contains
+the response. The export preserves the raw survey code and a documented
+zero-to-one ordinal score.
 `make polardata` then computes group and poll summaries and exports the full
 6,084-row, 364-column historical schema under `output/polardata/`, together
 with the 129-row attitude-index catalog and a typed derived-measure table.
