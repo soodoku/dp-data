@@ -1768,11 +1768,23 @@ selects 328 of 1,289 source records; original `id` is unique. There are 315 know
 memberships in 16 groups and 13 people without a known group. Twenty-five code--1
 refusals become missing in the existing build; zero-filled scores match.
 
+The source meeting fields narrow this gap. Twelve of the 13 people with
+missing `groupnumc` have `mtgatt = 0`. Original ID 908 has `mtgatt = 4`,
+`mtg1:5 = 1, 1, 0, 1, 1`, and all seven post knowledge answers observed.
+Its `session = 3` and `session_N = 14`, but neither field supplies a verified
+final group ID. Among experimental records with both `session` and
+`groupnumc` observed, seven have unequal values, including three who
+attended at least three meetings. Thus assigning ID 908 to group 3 from
+`session` alone could silently replace a later group transfer. This is the
+same source file used for the separate presidential-primaries aggregate in
+PR-01; that aggregate excludes ID 908 solely because its group is missing.
+
 **Next check:** inspect [questionnaires.doc](../data/btp-online-primaries-2004/questionnaires.doc)
-and original assignment/session logs. Determine whether the 13 missing group
-values are true absence, unrecorded assignment, or a merge limitation before
-excluding people or creating a synthetic group. Keep invitee assignment,
-attendance and analytic inclusion distinct.
+and original assignment/session logs, especially ID 908's final discussion
+room. Keep the 328-person knowledge sample intact. Preserve its unknown
+group and the 217-person aggregate until group membership can be established
+or a separately reviewed missing-group policy is chosen. Keep invitee
+assignment, attendance and analytic inclusion distinct.
 
 ## Bulgaria Crime 2002 — bulgaria-crime-2002
 
