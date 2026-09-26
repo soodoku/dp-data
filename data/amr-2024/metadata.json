@@ -5,7 +5,7 @@
     "year": 2024,
     "place": "Six countries",
     "topic": "Antimicrobial resistance",
-    "mode": "face-to-face",
+    "mode": "online",
     "collection": "public-replication"
   },
   "interpretation": "Catalog labels preserve historical identifiers. Sourced facts retain reported definitions and disagreements; they do not change respondent coding or aggregate outputs. Material coverage describes the sources checked, not proof of absence.",
@@ -79,8 +79,8 @@
       "value": "Online small-group deliberation and expert plenaries; controls completed surveys only",
       "reference_id": "amr-2024-amr-v2-paper",
       "source_locator": "Methods",
-      "status": "conflicting",
-      "notes": "Current catalog says face-to-face; this evidence is proposed metadata, not a recode or catalog edit."
+      "status": "reported",
+      "notes": "Mode refers to deliberation; some respondents were recruited in person or by phone."
     }
   ],
   "references": [
