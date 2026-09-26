@@ -34,6 +34,20 @@ test_that("derived exports preserve unique people and reviewed gain", {
     "output", "polardata", "derived_measures.parquet"
   ))
   expect_equal(nrow(derived), 5869L * 31L)
+  manifest <- readr::read_csv(project_path(
+    "output", "polardata", "manifest.csv"
+  ), show_col_types = FALSE)
+  expect_equal(manifest$schema_version[manifest$table == "derived_measures"], 2)
+  measure_names <- read_metadata("derived_measure_names")
+  expect_setequal(unique(derived$measure_name), measure_names$measure_name)
+  expect_false(anyNA(derived[c("measure_name", "aggregation_level",
+                               "respondent_scope")]))
+  age <- derived[derived$legacy_field == "meanage", ]
+  expect_true(all(age$measure_name == "group_mean_age"))
+  expect_true(all(age$aggregation_level == "group"))
+  expect_true(all(age$respondent_scope == "group_members"))
+  peer <- derived[derived$legacy_field == "pfemale_ind", ]
+  expect_true(all(peer$respondent_scope == "leave_one_out"))
   expect_false(anyDuplicated(derived[c(
     "poll_id", "respondent_id", "legacy_field", "definition_version"
   )]) > 0L)
@@ -635,8 +649,8 @@ test_that("NIC approved ages and mode retain the single missing identity", {
   expect_equal(nrow(nic), 466L)
   expect_equal(sum(is.na(nic$caseid)), 1L)
   expect_true(all(nic$mode == 0))
-  expect_equal(sum(!is.na(nic$ppage)), 458L)
-  expect_equal(sum(nic$ppage < 16, na.rm = TRUE), 4L)
+  expect_equal(sum(!is.na(nic$ppage)), 454L)
+  expect_equal(sum(nic$ppage < 18, na.rm = TRUE), 0L)
   reference <- readr::read_tsv(project_path(
     "evidence", "benchmarks", "polardata.tab"
   ), show_col_types = FALSE)

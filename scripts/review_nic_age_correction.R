@@ -1,4 +1,4 @@
-# Reproduce approved NIC age/mode comparisons; preserve raw source anomalies.
+# Reproduce the NIC-03 age/mode comparison before the later NIC-08 age review.
 for (file in c(
   "paths", "sources", "metadata", "poll_sources", "poll_adapters",
   "knowledge", "exports", "respondents", "polardata", "polardata_rebuild"
@@ -24,9 +24,14 @@ core_poll_constants <- function(poll_id) {
   result
 }
 before <- build_historical_poll(poll_id)
-build_nic_individual <- corrected_individual
+build_nic_individual <- function(survey = read_poll_survey("nic-1996")) {
+  result <- corrected_individual(survey)
+  result$age <- 96 - nic_source_codes(survey, "BYEAR", 0:99)
+  result
+}
 core_poll_constants <- corrected_constants
 after <- build_historical_poll(poll_id)
+build_nic_individual <- corrected_individual
 stopifnot(
   identical(before$caseid, after$caseid),
   identical(before$source_row, after$source_row),

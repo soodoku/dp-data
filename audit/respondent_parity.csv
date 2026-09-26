@@ -768,7 +768,7 @@ nic-1996,t1know,knowledge_t1@historical-v1,466,466,0,0,8.189893208054855e-12,0,1
 nic-1996,t1knowr,knowledge_t1@historical-v1,466,466,0,0,8.189893208054855e-12,0,1e-10
 nic-1996,t1knowcor,knowledge_joint@historical-v1,466,466,0,0,7.278955216349914e-12,0,1e-10
 nic-1996,t2know,knowledge_t2@historical-v1,466,466,0,0,8.189893208054855e-12,0,1e-10
-nic-1996,ppage,age@nic-03-v2,466,458,0,458,1899.99999999999,0,1e-10
+nic-1996,ppage,age@nic-08-v3,466,454,4,454,1959.99999999999,0,1e-10
 nic-1996,educ4,education_four@historical-v1,466,459,0,0,0,0,1e-10
 nic-1996,minority,minority@historical-v1,466,453,0,0,0,0,1e-10
 nic-1996,hhincome,household_income@historical-v1,466,0,0,0,0,0,1e-10

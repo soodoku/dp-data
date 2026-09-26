@@ -185,6 +185,34 @@
       }
     },
     {
+      "name": "derived_measure_names",
+      "path": "metadata/derived_measure_names.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "legacy_field",
+            "type": "string"
+          },
+          {
+            "name": "measure_name",
+            "type": "string"
+          },
+          {
+            "name": "aggregation_level",
+            "type": "string"
+          },
+          {
+            "name": "respondent_scope",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
       "name": "polardata_targets",
       "path": "metadata/polardata_targets.csv",
       "profile": "tabular-data-resource",

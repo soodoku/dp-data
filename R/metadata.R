@@ -180,6 +180,7 @@ validate_respondent_metadata <- function() {
   surveys <- read_metadata("survey_sources")
   fields <- read_metadata("polardata_fields")
   targets <- read_metadata("polardata_targets")
+  derived_names <- read_metadata("derived_measure_names")
   definitions <- read_metadata("measure_definitions")
   inputs <- read_metadata("measure_inputs")
   reviewed <- contracts[contracts$status == "reviewed-source", ]
@@ -187,6 +188,9 @@ validate_respondent_metadata <- function() {
   dependencies <- paste(inputs$poll_id, inputs$definition_id)
   implemented <- targets[targets$status == "implemented", ]
   constant <- definitions$scoring_rule == "historical-constant-missing"
+  expected_derived <- fields$legacy_field[
+    fields$layer %in% c("group-derived", "poll-derived")
+  ]
   stopifnot(
     !anyDuplicated(contracts$poll_id), !anyDuplicated(contracts$dpnum),
     setequal(contracts$dpnum, 1:21),
@@ -194,6 +198,19 @@ validate_respondent_metadata <- function() {
     all(paste(reviewed$poll_id, reviewed$source_id) %in%
           paste(surveys$poll_id, surveys$source_id)),
     !anyDuplicated(fields$legacy_field),
+    setequal(derived_names$legacy_field, expected_derived),
+    !anyDuplicated(derived_names$legacy_field),
+    !anyDuplicated(derived_names$measure_name),
+    all(grepl("^[a-z][a-z0-9]*(_[a-z0-9]+)*$",
+              derived_names$measure_name)),
+    all(derived_names$aggregation_level %in% c("group", "poll")),
+    all(derived_names$respondent_scope %in%
+          c("group_members", "leave_one_out", "respondent_specific",
+            "poll_sample")),
+    all(startsWith(derived_names$measure_name,
+                   paste0(derived_names$aggregation_level, "_"))),
+    all(derived_names$aggregation_level == "group" |
+          derived_names$respondent_scope == "poll_sample"),
     all(fields$layer %in% c("identifier", "export-artifact", "respondent",
           "group-derived", "poll-derived", "poll-metadata"
         )),
