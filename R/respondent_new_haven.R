@@ -20,8 +20,6 @@ new_haven_attitudes <- function(survey, wave) {
     scaled
   }
   airport <- (item(12) - item(13)) / 2 + .5
-  # The preserved source coding maps .625 to .675 at both waves.
-  airport[airport == .625] <- .675
   if (wave == "mid") {
     unknown <- is.na(survey$mid_q12) | survey$mid_q12 == 6
     airport[unknown] <- .5

@@ -58,7 +58,11 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
                  "meanxtreme", "avgsd", "ppage", "meanage"), rows = 233L
     ),
     "new-haven-2004" = list(
-      fields = c("minority", "pminority"), rows = 132L
+      fields = c(
+        "minority", "pminority", "nh.t1endexp", "nh.t2endexp",
+        "attextreme", "attextreme2", "meanxtreme", "avgsd",
+        "avgsd2", "genvar"
+      ), rows = 132L
     ),
     "btp-health-education-2005" = list(
       fields = c("female", "pfemale", "varfemale", "sdfemale",

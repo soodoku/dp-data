@@ -17,14 +17,21 @@ test_that("New Haven uses original responses with stable source identities", {
   expect_error(build_new_haven_individual(survey), "Unreviewed source codes")
 })
 
-test_that("New Haven preserves reviewed historical scales and unknown race", {
+test_that("New Haven airport scale reproduces published wave means", {
   survey <- new_haven_test_survey()
   built <- build_new_haven_individual(survey)
   expect_equal(sum(is.na(built$age)), 3L)
   expect_true(all(is.na(built$age[survey$pre_q62 == 1890])))
-  anomalous <- as_historical_float(.675)
-  expect_equal(sum(built$airport_expansion_t1 == anomalous), 12L)
-  expect_equal(sum(built$airport_expansion_t2 == anomalous), 5L)
+  airport <- cbind(
+    built$airport_expansion_t1,
+    new_haven_attitudes(survey, "mid")$airport_expansion,
+    built$airport_expansion_t2
+  )
+  expect_equal(colSums(airport == as_historical_float(.625)),
+               c(12, 12, 5))
+  expect_equal(round(2 * colMeans(airport) - 1, 3),
+               c(.540, .415, .434))
+  expect_equal(sum(airport == as_historical_float(.675)), 0L)
   expect_equal(sum(survey$pre_q70 == 5), 4L)
   expect_true(all(is.na(built$minority[survey$pre_q70 == 5])))
   expect_true(all(built$minority[survey$pre_q70 == 3] == 0))
