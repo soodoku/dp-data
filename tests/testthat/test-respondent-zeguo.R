@@ -9,7 +9,7 @@ test_that("Zeguo reconstruction ignores archived summary columns", {
   survey <- zeguo_test_survey()
   expected <- build_zeguo_individual(survey)
   keep <- grepl("^(pre_|post_|d20[0-9][0-9]p?$)", names(survey)) |
-    names(survey) %in% c("p", "Age", "Education", "Gender")
+    names(survey) %in% c("p", "Age", "____1p", "Education", "Gender")
   raw <- survey[, keep]
   expect_equal(build_zeguo_individual(raw), expected)
   order <- rev(seq_len(nrow(raw)))
@@ -17,6 +17,18 @@ test_that("Zeguo reconstruction ignores archived summary columns", {
   expect_equal(build_zeguo_individual(raw[1:12, ]), expected[1:12, ])
   raw$d2014[1] <- 99
   expect_error(build_zeguo_individual(raw), "Unreviewed source codes")
+})
+
+test_that("Zeguo corrects one baseline age from the paired interview", {
+  survey <- zeguo_test_survey()
+  row <- which(survey$p == 125)
+  expect_equal(survey$Age[row], 1)
+  expect_equal(survey[["____1p"]][row], 33)
+  age <- build_zeguo_individual(survey)$age
+  expect_equal(age[row], 33)
+  expect_equal(age[-row], read_source_codes(survey, "Age", 0:100)[-row])
+  survey[["____1p"]][row] <- 34
+  expect_error(build_zeguo_individual(survey))
 })
 
 test_that("Zeguo preserves raw answers and historical item coding", {

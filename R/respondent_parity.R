@@ -54,7 +54,7 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     ),
     "zeguo-2005" = list(
       fields = c("chi.t1att2", "chi.t2att3", "attextreme",
-                 "meanxtreme", "avgsd"), rows = 233L
+                 "meanxtreme", "avgsd", "ppage", "meanage"), rows = 233L
     ),
     "new-haven-2004" = list(
       fields = c("minority", "pminority"), rows = 132L

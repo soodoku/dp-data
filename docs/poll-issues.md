@@ -3021,6 +3021,38 @@ in group 5207. All 16 groups still have rank eight rather than nine; the other
 15 retain reviewed platform-sensitive generalized variance; see X-09. Dropping a redundant column
 would change the estimand and requires a separately reviewed correction.
 
+### ZG-04: One baseline age is 1; the paired departure age is 33
+
+**Status: approved by the user on 2026-09-26 and corrected upstream.** The fielded
+[questionnaire](../data/zeguo-2005/source-materials/questionnaire.pdf) asks age
+directly. In the merged source, participant `p=125` (aggregate case 52125,
+group 5204) has baseline `Age=1` and departure `____1p=33`. This is the only
+baseline age below 16 among the 269 merged source records. The participant
+has a valid pre/post match and remains in the 233-person aggregate sample.
+The historical export carried `ppage=1`. The corrected respondent build uses
+33 for this case only, with assertions on both recorded answers. The group's
+`meanage` changes from 38.92308 to 41.38462 for its 14 members (13 observed
+ages). No membership or other respondent field changes.
+The approved-value ledger records all 233 `ppage` and 233 `meanage` values.
+The parity comparisons find one changed age and 14 changed group-mean cells,
+with zero unexplained differences.
+
+The paired ages support using 33 for this person but do not make the post
+field a universal replacement: among 210 nonmissing pairs, 156 are identical
+and 188 differ by at most one year. The post field itself includes values 1
+and 445 for two other participants. Inspect the original questionnaire or
+answer sheet for `p=125` if available, then review a case-specific correction
+against the paired report; do not overwrite all baseline ages with post ages.
+The downstream `dp-learning` reader currently removes ages below 16. Its
+analysis frame previously made this person's age missing; it now sees 33. A
+paired run of the current main mixed model adds one observation (5,849 to
+5,850), with the heterogeneity coefficient moving from .003498077 to
+.002743934 and the age-per-decade coefficient from -.003229041 to -.003300206.
+`dp-distortions` scripts do not use `ppage` or `meanage`; the
+`dp-deliberately` importer receives this corrected age. The single upstream
+repair does not settle policy for any other age, and the downstream filter
+should be removed only after the remaining age anomaly is reviewed.
+
 ## Cross-poll issues for the eventual schema
 
 ### X-01: Knowledge eligibility is not the respondent universe
