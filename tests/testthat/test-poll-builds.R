@@ -12,7 +12,7 @@ pilot_tables <- function() {
 test_that("survey comparisons report differences without imposing parity", {
   tables <- pilot_tables()
   audit <- compare_knowledge_batteries(tables)$summary
-  expect_equal(sum(audit$item_differences, na.rm = TRUE), 763)
+  expect_equal(sum(audit$item_differences, na.rm = TRUE), 765)
   expect_equal(sum(audit$female_differences, na.rm = TRUE), 2)
   expect_equal(nrow(tables$respondents), 6669L)
   expect_equal(nrow(tables$knowledge_responses), 103116L)
@@ -80,8 +80,8 @@ test_that("benchmark comparisons report an additional changed scored item", {
   tables$knowledge_responses$correct[[row]] <-
     1L - tables$knowledge_responses$correct[[row]]
   audit <- compare_knowledge_batteries(tables)
-  expect_equal(sum(audit$summary$item_differences, na.rm = TRUE), 764L)
-  expect_equal(nrow(audit$differences), 764L)
+  expect_equal(sum(audit$summary$item_differences, na.rm = TRUE), 766L)
+  expect_equal(nrow(audit$differences), 766L)
 })
 
 test_that("responses preserve missing codes and scores declare filling", {

@@ -131,9 +131,7 @@ test_that("Denmark joins independent wave files without expanding records", {
 
 test_that("sample differences and unordered comparisons do not invent links", {
   purrr::walk(
-    c(
-      "denmark-euro-2000", "california-whats-next-2011", "tomorrows-europe-2007"
-    ),
+    c("denmark-euro-2000", "tomorrows-europe-2007"),
     function(poll_id) {
       comparison <- compare_knowledge_batteries(build_poll_knowledge(poll_id))
       expect_identical(
@@ -144,6 +142,26 @@ test_that("sample differences and unordered comparisons do not invent links", {
       expect_equal(nrow(comparison$score_changes), 0L)
     }
   )
+  california <- read_knowledge_battery("california-whats-next-2011")
+  expect_equal(nrow(california), 401L)
+  expect_true(all(rowSums(!is.na(california[397:401, ])) == 0L))
+  comparison <- compare_knowledge_batteries(
+    build_poll_knowledge("california-whats-next-2011")
+  )
+  expect_identical(
+    comparison$summary$comparison_status, "row-aligned-after-blank-tail"
+  )
+  expect_equal(comparison$summary$respondents, 396L)
+  expect_equal(comparison$summary$benchmark_respondents, 401L)
+  expect_equal(comparison$summary$item_differences, 2L)
+  expect_equal(comparison$summary$female_differences, 0L)
+  expect_setequal(comparison$differences$respondent_id, c("321", "438"))
+  expect_true(all(comparison$differences$source_column == "t3q27"))
+  expect_true(all(comparison$differences$raw_value == 3))
+  expect_true(all(is.na(comparison$differences$deposited_correct)))
+  expect_true(all(comparison$differences$correct == 0L))
+  expect_true(all(comparison$score_changes$changed_scores == 0L))
+
   built <- build_poll_knowledge("europolis-2009")
   comparison <- compare_knowledge_batteries(built)
   expect_identical(

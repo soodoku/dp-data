@@ -240,7 +240,7 @@ a changed knowledge score. “Unlinked” is not zero differences.
 | btp-health-education-2005 | 454 | 454 | 12 | 0 | 2 | row-aligned |
 | btp-online-primaries-2004 | 328 | 328 | 14 | 25 | 0 | row-aligned |
 | bulgaria-crime-2002 | 278 | 278 | 14 | 0 | 0 | row-aligned |
-| california-whats-next-2011 | 396 | 401 | 10 | NA | NA | unlinked-sample-difference |
+| california-whats-next-2011 | 396 | 401 | 10 | 2 | 0 | row-aligned-after-blank-tail |
 | europolis-2009 | 348 | 348 | 12 | NA | NA | unordered-exact-match |
 | nic-1996 | 466 | 466 | 16 | 0 | 0 | row-aligned |
 | tomorrows-europe-2007 | 359 | 335 | 22 | NA | NA | unlinked-sample-difference |
@@ -250,9 +250,10 @@ a changed knowledge score. “Unlinked” is not zero differences.
 | denmark-euro-2000 | 359 | 363 | 18 | NA | NA | unlinked-sample-difference |
 
 The 23 builds contain 6,669 participants and 103,116 item-wave responses.
-There are 763 reported cell differences among the row-aligned comparisons and
-two gender differences. These totals exclude the three unequal-size comparisons
-and the unordered Europolis comparison. There are 522 people without known
+There are 765 reported cell differences among the row-aligned comparisons and
+two gender differences. These totals include California after its five blank
+deposit rows are excluded from comparison; they exclude the two remaining
+unequal-size comparisons and the unordered Europolis comparison. There are 522 people without known
 memberships: UK–EU 4, online primaries 13, Vermont 146, and Denmark 359.
 
 ## UK Health 1998 — uk-health-1998
@@ -1846,15 +1847,21 @@ seven-item fixed-denominator battery, with nonanswers scoring zero.
 ### CA-01: The available source and deposited battery use different samples
 
 The archived `ca_referendum.R` filters `part` to observed values and then
-`t2t3filter == 1`. In the available 472-row merged source, that yields 396
-people; all 396 have `part == 1`, `t2t3filter == 1`, and unique `id`. No person
-with `t2t3filter == 1` is lost because `part` is missing. The separately
-published, anonymous `ca.csv` battery has 401 rows. The five-row gap is
-therefore not caused by that participation filter. The available source is the
-file named `California_Merged_t1-t2-t3_6-28-11.dta`; the battery has no
-respondent IDs. A different merged-file version or export may explain the gap,
-but the present records cannot identify five individual additions. Do not
-manufacture five people or infer a row crosswalk from scores.
+`t2t3filter == 1`. The available 472-row merged source has 412 people with
+`part == 1`, matching the [event report](../data/california-whats-next-2011/reports/california-report.pdf)
+and [Stanford event record](https://deliberation.stanford.edu/news/people-whats-next-california).
+The second filter keeps 396 people, all with unique `id`; the other 16 have
+`t2t3filter` missing even though each has at least one departure knowledge
+answer. The separate deposited `ca.csv` battery has 401 rows, but rows 397–401
+are entirely missing across all 11 columns. They are blank padding, not five
+additional people. The first 396 deposited rows align in order with the 396
+selected source records: gender and all ten item values and missingness agree
+except for the two already documented Senate code-3 responses in CA-02. The
+comparison strips only this verified blank tail; the original deposit remains
+unchanged and retains its 401-row provenance. The 16 excluded source records
+are a distinct sample-policy question, not evidence that the deposit contains
+them. Review why `t2t3filter` excludes people with observed post answers before
+changing the 396-person respondent sample.
 
 ### CA-02: Party-control scoring is correct in the current knowledge build
 
@@ -1870,8 +1877,11 @@ to the final five-item knowledge score. The current
 `metadata/knowledge_items.csv` specifies 3 as incorrect for both items.
 This is a wave-specific category ordering and intermediate missing-value
 inconsistency, not evidence for changing the final score. No recode is made.
-The 396-versus-401 sample gap in CA-01 still prevents case-level comparison
-to the deposited battery.
+After removing CA-01's five all-missing tail rows for comparison only, the
+396 source people align in order with the deposit. Exactly two item cells differ:
+source IDs 321 and 438 answered departure Senate code 3, scored incorrect in
+the maintained build and missing in the deposit. Both fixed-denominator scores
+are unchanged. The audit now reports these item differences directly.
 
 ## Europolis 2009 — europolis-2009
 
