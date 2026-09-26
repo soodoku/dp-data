@@ -3024,6 +3024,7 @@ midpoint component. These rules explain all five arrival-extremity differences
 under a naive repeated-wave implementation. Some post raw zeros are also
 preserved. Verify literal pre/mid/post questionnaires, routing and split-half
 timing before standardizing missingness or response origins across waves.
+NH-08 isolates the raw-zero question and its publication consequence.
 
 ### NH-06: Race refusal is missing minority status (corrected)
 
@@ -3085,6 +3086,47 @@ pooled gender `ext_grp` result, one reference tie changes eligibility and the
 pair count moves from 2,437 to 2,436. These consequences are reported to
 size the review, not as evidence that the historical or corrected score is
 more correct.
+
+### NH-08: Zero is not an offered arrival or departure attitude answer
+
+**Proposed; pending poll-specific review.** The retained
+[field questionnaire](../data/new-haven-2004/source-materials/field-questionnaire.pdf)
+prints codes 1–5 for agreement and 6 for “don't know” on Q12–Q13 and
+Q20–Q23; it offers no code 0. The public three-wave workbook contains
+two arrival `Q12=0` answers (historical cases 910013 and 910039), one
+arrival `Q20=0` (910110), and one person's entire six-item departure
+battery coded 0 (910042). There are no baseline zeros on those six items.
+The current arrival recode instead turns raw 0 into the extreme score 0,
+although it is outside the questionnaire's 1–5 response categories. The
+proposal treats 0 as nonresponse under
+the existing midpoint convention; for arrival Q12 it invokes the same
+whole-airport midpoint rule used for “don't know.” The six departure zeros
+already cancel to midpoint indices, so that person's exported attitudes
+do not change.
+
+The proposed arrival airport index moves from 0.125 to 0.5 for cases 910013
+and 910039; the voluntary-sharing index moves from 0.9375 to 0.6875 for
+910110. Their `attextreme2` values move from 0.25 to 0.125,
+0.20833333 to 0.08333334, and 0.45833334 to 0.375, respectively.
+The central arrival-dispersion field `avgsd2` changes for all 24 people in
+groups 9102, 9105 and 9114; group values move 0.27215493→0.22633703,
+0.22311197→0.20317507 and 0.22463334→0.21274854. Those 27 cells
+are the only aggregate changes. All 132 respondents, other scores, and
+group/poll formulas remain fixed. The reviewed-value ledger retains the
+historical benchmark. In the long respondent exports, nine raw zero answers
+change status from `answered` to `non-substantive`; six associated
+`n_observed_fields` counts change, and only the three arrival-extremity
+numeric values change.
+
+The [published study](../data/new-haven-2004/papers/disaggregating-deliberation-27s-effects-28lsero-29.pdf)
+Table 1 reports an arrival airport mean of 0.415 and an arrival
+voluntary-sharing-versus-local-control mean of 0.041 on its -1 to 1 scale.
+The historical recode reproduces these; the proposal instead gives 0.426
+and 0.037. This establishes that the paper used the zero-scoring stage.
+It does not explain what a zero answer means when the field questionnaire
+has no such option. Resolve whether an arrival-specific instrument or
+coding instruction assigned zero a substantive meaning before merging
+this correction.
 
 ## Zeguo 2005 — zeguo-2005
 

@@ -172,6 +172,10 @@ source_response_rows <- function(survey, people, inputs, items) {
         ordinal_rule$missing_codes[[1]], "|", fixed = TRUE
       )[[1]])
     }
+    if (people$poll_id[[1]] == "new-haven-2004" &&
+          grepl("^(pre|mid|post)_q(12|13|20|21|22|23)$", field)) {
+      known_missing <- union(known_missing, "0")
+    }
     status <- ifelse(missing, "system-missing", ifelse(
       code %in% known_missing | in_range, "non-substantive", ifelse(
         nrow(item) == 0L | code %in% known_values, "answered", "unreviewed-code"
