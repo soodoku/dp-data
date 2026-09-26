@@ -32,7 +32,8 @@ arrow::write_parquet(rebuilt, path, compression = "zstd")
 stopifnot(identical(rebuilt, arrow::read_parquet(path)))
 readr::write_tsv(rebuilt, file.path(directory, "polardata.tab"), na = "")
 derived <- historical_derived_measures(polls)
-manifest <- write_typed_export(derived, "derived_measures", directory)
+manifest <- write_typed_export(derived, "derived_measures", directory,
+                               schema_version = "2")
 readr::write_csv(manifest, file.path(directory, "manifest.csv"))
 
 health <- build_health_polardata()

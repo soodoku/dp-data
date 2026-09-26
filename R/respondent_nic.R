@@ -50,6 +50,28 @@ nic_attitudes <- function(survey, wave) {
   }) |> tibble::as_tibble()
 }
 
+nic_age <- function(survey) {
+  year <- nic_source_codes(survey, "BYEAR", 0:99)
+  caseid <- rounded_source_code(survey$CASEID)
+  birth_year <- rounded_source_code(survey$BIRTHDY1) %% 100
+  mismatch <- which(!is.na(year) & !is.na(birth_year) &
+                      year != birth_year)
+  stopifnot(length(mismatch) == 1L, caseid[mismatch] == 10007590,
+    year[mismatch] == 7, birth_year[mismatch] == 67
+  )
+  age <- 96 - year
+  underage <- which(!is.na(age) & age < 18)
+  stopifnot(
+    setequal(caseid[underage], c(
+      10005580, 10006530, 10008740, 10008780, 10011470
+    )),
+    all(rounded_source_code(survey$BDAYRTE1)[underage] == 1)
+  )
+  age[underage] <- NA_real_
+  age[mismatch] <- 96 - birth_year[mismatch]
+  age
+}
+
 build_nic_individual <- function(survey = read_poll_survey("nic-1996")) {
   before <- nic_knowledge_items(survey, 1L)
   arrival <- nic_knowledge_items(survey, 2L)
@@ -76,7 +98,7 @@ build_nic_individual <- function(survey = read_poll_survey("nic-1996")) {
       knowledge_midterm = rowMeans(arrival),
       knowledge_midterm_joint = rowMeans(arrival * after),
       knowledge_joint_midterm = rowMeans(before * arrival * after),
-      age = 96 - nic_source_codes(survey, "BYEAR", 0:99),
+      age = nic_age(survey),
       female = as.numeric(nic_source_codes(survey, "SEX1", 1:2) == 2),
       minority = as.numeric(nic_source_codes(survey, "RACE1", 1:6) != 1),
       education_four = education,

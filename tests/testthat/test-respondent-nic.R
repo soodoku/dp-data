@@ -39,9 +39,9 @@ test_that("NIC respondent fields match historical or approved values", {
   nic <- audit[audit$poll_id == "nic-1996", ]
   expect_equal(nrow(nic), 45L)
   expect_true(all(nic$respondents == 466L))
-  expect_equal(sum(nic$value_differences), 458L)
+  expect_equal(sum(nic$value_differences), 454L)
   expect_true(all(nic$unexplained_differences == 0L))
-  expect_true(all(nic$missingness_differences == 0L))
+  expect_equal(sum(nic$missingness_differences), 4L)
 })
 
 test_that("NIC rejects a second missing historical identity", {
@@ -70,12 +70,17 @@ test_that("NIC rejects a second missing historical identity", {
   ))
 })
 
-test_that("NIC approved age uses two-digit birth years without anomaly edits", {
+test_that("NIC age corrects the year typo and withholds unsupported ages", {
   survey <- read_poll_survey("nic-1996")
   result <- build_nic_individual(survey)$age
-  expect_equal(result, 96 - nic_source_codes(survey, "BYEAR", 0:99))
-  expect_equal(sum(!is.na(result)), 891L)
-  expect_equal(sum(result < 16, na.rm = TRUE), 5L)
-  anomaly <- match(c(293, 445, 523, 526, 691), survey$source_row)
-  expect_equal(result[anomaly], c(1, 89, 1, 2, 0))
+  caseid <- rounded_source_code(survey$CASEID)
+  unknown <- c(10005580, 10006530, 10008740, 10008780, 10011470)
+  expect_true(all(is.na(result[caseid %in% unknown])))
+  expect_equal(result[which(caseid == 10007590)], 29)
+  expect_equal(sum(!is.na(result)), 886L)
+  expect_equal(sum(result < 18, na.rm = TRUE), 0L)
+  changed <- dplyr::mutate(
+    survey, BYEAR = dplyr::if_else(.data$CASEID == 10007590, 67, .data$BYEAR)
+  )
+  expect_error(nic_age(changed))
 })

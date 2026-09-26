@@ -1991,11 +1991,14 @@ selects 466 of 911 records and `RGROUP2` identifies 30 groups. One attendee lack
 the deposit. A larger aggregate battery is a different measurement definition;
 matching poll names does not authorize a person-level join across those scores.
 
-**Next check:** re-read [questionnaire.pdf](../data/nic-1996/questionnaire.pdf),
-[codebook.txt](../data/nic-1996/codebook.txt), and original battery definitions.
-Determine what identifies the missing-ID attendee in other waves; do not treat
-source-row fallback as a transferable ID. Retain raw floating-point codes while
-using the documented tolerance for integer lookup.
+The missing `CASEID` also persists in the original 911-row
+`Master_nic_123.sav`, `Data_revised/nic123_r.sav`, `nic123_2_r.sav`, and the
+codebook's corrected-date `iaqdate.sav` in the archived NIC source collection.
+None supplies a transferable ID for that attendee. The fallback identifies a
+row in this source only; the eight-item deposit remains anonymously ordered.
+This closes the candidate ID recovery from those archived exports without
+inventing a cross-file match. Retain raw floating-point codes while using the
+documented tolerance for integer lookup. The eleven-item distinction is NIC-02.
 
 **NIC-02 — eleven-item historical battery reconstructed separately.** The
 historical `polardata` battery includes three percentage questions in addition to
@@ -2007,6 +2010,18 @@ The historical baseline/post scores use waves 1/3; arrival is wave 2. Missing
 answers score zero with a fixed denominator of 11. The existing eight-item
 knowledge outputs retain their separate definition. SPEND2 code 9 is documented
 as missing (line 5545); SPDRUG2 code 9 is likewise missing (line 3635).
+
+The [NIC paper](../data/nic-1996/papers/nic-paper.pdf) Table 4 (printed
+p. 29) provides a third definition to keep distinct: its "Information
+Summary" reproduces from the **nine factual items**, excluding the two party
+placements. The maintained source recodes give 0.433476 at baseline and
+0.518598 on arrival for all 466 participants, and 0.551536 at follow-up for
+the 387 participants with `PART3 == 1`; the paper reports .43, .52 and .55.
+The eleven-item means for those same wave samples are 0.465275, 0.546820 and
+0.574818. The published summary's nine-item construction is inferred from
+these exact comparisons; the paper does not supply its analysis code. All
+nine baseline factual-item percentages round to the paper's Table 4 values,
+including the historically scored Bosnia item discussed in NIC-06.
 
 ### NIC-03: Correct birth-year conversion and event mode upstream
 
@@ -2055,14 +2070,9 @@ NIC constant in `core_poll_constants()`. dp-learning currently forces this
 value to zero; correcting it upstream and deleting that override preserves
 the mode actually used in its models.
 
-**Separate source anomalies, not silently repaired:** participant CASEIDs
-10005580 and 10008740 have BYEAR95; 10008780 has94; 10011470 has96. Their recorded
-birthdates agree with those years but their adult-screen flags contradict ages
-0–2. CASEID10007590 has BYEAR7 while BIRTHDY1 ends67: the candidate age is89,
-although29 would follow the full birthdate. All five passed the adult-screen
-question. Nonparticipant10006530 also has BYEAR95. These require instrument and
-source-version investigation; the proposed century correction neither imputes
-their birth years nor invents additional missingness.
+The source anomalies noted during NIC-03 have since been reviewed and
+corrected as NIC-08 below. The original NIC-03 comparison files and script
+reproduce the prior century correction; their candidate values precede NIC-08.
 
 **Downstream comparison:** with dp-learning's existing 16–100 age eligibility,
 451 NIC ages are usable under its current mistaken recode. Direct consumption of
@@ -2112,13 +2122,107 @@ fields remain a separate reconstruction stage.
 The nine factual indicators stored in the historical SPSS data use a value
 approximately `1 + 1e-11` for correct responses; the two placement indicators
 use integer one. The arrival joint score therefore slightly exceeds one for
-one otherwise all-correct respondent (about `1.00000000000819`). Its historical
-gain is zero divided by a small negative denominator, yielding zero. Replacing
-all indicators with exact binary integers instead produces `0/0`, changing
-missingness. The historical reconstruction retains the documented indicator
-storage stage for this calculation. A correction should specify how perfect
-scores are treated, compare all arrival gains and missingness, and investigate
-the original SPSS export precision before interpreting this as a scoring error.
+one otherwise all-correct respondent, CASEID 10013620 in group 3 (about
+`1.00000000000819`). Its historical gain is zero divided by a small negative
+denominator, yielding zero. Replacing all indicators with exact binary integers
+instead produces `0/0`, changing missingness. The mathematical normalized gain
+is undefined at this ceiling: the stored zero is a floating-point artifact,
+not evidence that peer learning was zero. The historical reconstruction retains
+the documented indicator storage stage for parity. A future central group
+measure should state its ceiling policy explicitly and keep it distinguishable
+from the historical definition; do not patch the respondent recode or invent a
+NIC-only group convention. Only this one historical arrival-gain value has the
+all-correct ceiling pattern.
+
+
+### NIC-06: Baseline Bosnia answer is date-dependent in the stated rule
+
+**Disposition (2026-09-26): The user chose to preserve historical scoring and move on.** The date-sensitive discrepancy remains documented here; no Bosnia item or downstream knowledge score is changed.
+
+The [NIC paper](../data/nic-1996/papers/nic-paper.pdf) (printed p. 14) states
+that a baseline answer of "yes, U.S. ground troops had been sent to Bosnia"
+was correct only for interviews after December 15, 1995; before that date,
+"no" was correct. The [source codebook](../data/nic-1996/codebook.txt)
+(lines 5418–5449) explicitly says stored `FTFACT41` is coded incorrectly and
+repeats the date rule. `TROOPSD1` is Q18d of the baseline self-administered
+questionnaire. The current historical recode and `FTFACT41` both score `yes`
+as correct for every person, including interviews before the cutoff.
+
+The public 911-row [survey](../data/nic-1996/survey.parquet) contains
+`DATEDUN1`, the questionnaire-completion date. Read as MMDDYY within the
+November 4, 1995–January 18, 1996 field period, 447 of 466 participants have
+a valid date: 344 before December 15, four on December 15 and 99 after it.
+Among the 344 before the cutoff, 225 answered yes, 56 no, 40 do not know,
+and 23 have no recorded answer. Applying the paper's rule to these clearly
+dated people alone reverses 281 item scores. If all other scores are kept as
+historically stored, baseline Bosnia correctness falls from 329/466 = 70.6%
+to 160/466 = 34.3%, and the fixed-denominator eleven-item baseline knowledge
+mean falls by 169/(466 × 11) = 0.03297. Nineteen dates are missing or outside
+the field window; four are on the cutoff, for which the paper does not give an
+hour-level rule. Do not infer their answers from an unreliable `IAQDATE1`:
+the codebook (lines 766–771) documents mixed formats, wrong years and
+ambiguous interview dates. It names a separate corrected IAQ date file, but
+the public questionnaire-completion date suffices for the 281 clear reversals.
+
+The paper's Table 1 and Table 4 nevertheless print baseline Bosnia at 0.71,
+which matches the stored 329/466 and conflicts with its prose and the codebook
+warning. This is an author-analysis conflict, not a reason to overwrite source
+answers. Keep the historical knowledge definition identifiable. Before making
+a canonical correction, choose the policy for December 15 and missing/invalid
+dates; then compare respondent knowledge, group/poll derivatives and downstream
+readers. The questionnaire's Q18d wording and source codes support the date
+interpretation, but no publication-era analysis code resolving this conflict
+has been located.
+
+### NIC-07: Party-placement percentages need their own analysis definition
+
+The paper's Table 4 prints Democratic-party placement correctness of .59,
+.79 and .64 at baseline, arrival and follow-up. The archived `nic1.R` and
+maintained eleven-item build define a correct placement as `POLDEM` in 1:3 in
+every wave. On the paper's participant samples, that gives .594, .661 and
+.615. Code 4 is explicitly "moderate middle of road" in the codebook
+(lines 5994–6049), so adding it to the liberal side merely to approximate the
+paper's arrival value would change the substantive definition; it would also
+raise baseline and follow-up proportions to .706 and .801. The paper's 0.79
+arrival figure appears in the earlier Luskin–Fishkin manuscript as well, but
+neither version specifies a wave-specific cutoff or a different source
+extract. Preserve the consistent 1:3 recode until original tabulations or
+analysis code explain the discrepancy. This item is outside the nine-fact
+"Information Summary" reproduced in NIC-02.
+
+### NIC-08: Correct the clear birth-year typo and withhold unsupported ages
+
+**Status: approved by the user on 2026-09-26 and implemented upstream.** The
+[codebook](../data/nic-1996/codebook.txt) calls `BYEAR` the two-digit birth
+year and `BIRTHDY1` the date of birth. Across all 911 source rows, 890 of
+891 observed year pairs agree. Participant CASEID 10007590 is the sole
+mismatch: BYEAR is 07 while the birthdate ends 67. Its age is now 29, not 89.
+Five other records have BYEAR94–96, producing ages 0–2 under the NIC-03
+century rule: participants 10005580, 10008740, 10008780 and 10011470, plus
+nonparticipant 10006530. Their `BDAYRTE1` flags say birth before November 1,
+1977, but five other source records with ordinary adult birth years contradict
+that flag, so it does not establish exact ages. For three of the four
+participants, the recorded birthdate equals the interview date. The remaining
+birthdate could in principle refer to an exceptionally old adult, but the
+century is unverified. All five unsupported ages are now missing rather than
+assigned a guessed birth year. `AGE18UP1` counts adults in the household and
+was not used as an age-screen flag.
+
+The full-source respondent export changes six ages. The 466-person historical
+sample retains its members and IDs; five `ppage` cells change, observed ages
+fall from 458 to 454, and their mean moves from 41.83843 to 42.06608. Group
+`meanage` changes for 77 rows in groups 5, 11, 17, 18 and 30. No other
+aggregate field changes. The nonparticipant mean moves from 48.78291 to
+48.89352, which rounds to the paper's 48.89, but the corrected participant
+mean still differs from its 42.40. The paper's Table 1 (printed p. 19)
+gives an overall age range of 19–94; it does not provide respondent-level
+age processing. The 911-row source checks, versioned approved values and
+respondent/aggregate comparisons are in
+[audit/corrections/nic-1996/](../audit/corrections/nic-1996/).
+
+The historical score definition remains `age@nic-03-v2` in the earlier
+comparison; the reviewed respondent value is `age@nic-08-v3`. The latter is
+computed upstream, so downstream readers must not repair these cases again.
 
 ## Tomorrow's Europe 2007 — tomorrows-europe-2007
 

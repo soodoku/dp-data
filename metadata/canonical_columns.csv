@@ -89,6 +89,9 @@ respondent_memberships,weight,float64,FALSE,FALSE,weight
 derived_measures,poll_id,string,FALSE,TRUE,Poll source identifier
 derived_measures,respondent_id,string,FALSE,TRUE,Unique source person; historical duplicate exports share this identity
 derived_measures,legacy_field,string,FALSE,TRUE,Historical derived field; group calculations may include respondent-specific leave-one-out adjustments
+derived_measures,measure_name,string,FALSE,FALSE,Canonical snake_case measure name with group or poll prefix
+derived_measures,aggregation_level,string,FALSE,FALSE,Group or poll calculation level
+derived_measures,respondent_scope,string,FALSE,FALSE,Historical group members or poll sample; leave-one-out and respondent-specific variants identified separately
 derived_measures,definition_version,string,FALSE,TRUE,Historical computation version
 derived_measures,value_numeric,float64,TRUE,FALSE,Source-computed value; nonfinite historical results explicitly classified
 derived_measures,value_status,string,FALSE,FALSE,"finite, missing, positive-infinity or negative-infinity"

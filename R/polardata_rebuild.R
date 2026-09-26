@@ -79,6 +79,8 @@ historical_derived_measures <- function(polls) {
   fields <- layers$legacy_field[
     layers$layer %in% c("group-derived", "poll-derived")
   ]
+  measure_names <- read_metadata("derived_measure_names")
+  stopifnot(setequal(fields, measure_names$legacy_field))
   purrr::imap(polls, function(data, poll_id) {
     data |>
       dplyr::select("respondent_id", dplyr::all_of(fields)) |>
@@ -111,7 +113,7 @@ historical_derived_measures <- function(polls) {
               "t1knowlevelrcor", "meant2know", "t2knowlevel"
             ) ~ "ukm-01-v2",
           .env$poll_id == "nic-1996" & .data$legacy_field == "meanage" ~
-            "nic-03-v2",
+            "nic-08-v3",
           .env$poll_id == "cpl-1996" & .data$legacy_field %in%
             c("grpgain", "grpgainr", "loggain") ~ "cpl-05-v2",
           .env$poll_id == "australia-republic-1999" &
@@ -151,5 +153,7 @@ historical_derived_measures <- function(polls) {
         ), .before = 1
       )
   }) |>
-    purrr::list_rbind()
+    purrr::list_rbind() |>
+    dplyr::left_join(measure_names, by = "legacy_field",
+                     relationship = "many-to-one")
 }

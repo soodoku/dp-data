@@ -156,6 +156,18 @@ unique source person, legacy field and definition version. Person-level keys
 are needed because peer means and normalized gains can differ within a group.
 Its status column identifies missing and infinite historical results.
 
+The [derived measure names](../metadata/derived_measure_names.csv) map all
+31 historical group and poll fields to snake_case names with explicit
+`group_` or `poll_` prefixes. `aggregation_level` gives the calculation level;
+`respondent_scope` distinguishes group summaries that include the respondent,
+leave-one-out formulas, respondent-specific gains, and poll samples. For
+example, historical `meanage` is `group_mean_age`; it is calculated here from
+respondent `age`, after the poll recode, and is never a respondent recode.
+The historical field remains alongside the new name for value comparisons.
+The legacy leave-one-out formulas use the historical group size and may differ
+from a fresh mean over nonmissing peers; the name describes whom the formula
+excludes, not a new missing-data rule.
+
 The wide export preserves the two copies of each of 217 Primaries respondents;
 the canonical tables do not duplicate people. `X` is a regenerated export row
 number, not an identity. Comparisons join on poll and historical respondent ID
