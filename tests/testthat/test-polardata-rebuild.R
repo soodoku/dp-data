@@ -61,6 +61,17 @@ test_that("derived exports preserve unique people and reviewed gain", {
     )
   expect_setequal(unique(derived$definition_version[europe_demographics]),
                   "te-05-v2")
+  europolis_age <- derived$poll_id == "europolis-2009" &
+    derived$legacy_field == "meanage"
+  expect_setequal(unique(derived$definition_version[europolis_age]),
+                  "euro-06-v2")
+  europolis <- wide[wide$dpnum == 11, ]
+  expect_true(is.na(europolis$ppage[
+    europolis$caseid == 71300005619
+  ]))
+  expect_equal(unique(europolis$meanage[
+    europolis$pollgroup == 7125
+  ]), 48.125)
   australia_gain <- derived$poll_id == "australia-republic-1999" &
     derived$legacy_field %in% c("grpgain", "loggain")
   expect_setequal(unique(derived$definition_version[australia_gain]),
@@ -193,7 +204,7 @@ test_that("numerical exceptions cannot hide changed aggregate values", {
   ), show_col_types = FALSE)
   parity <- compare_historical_polardata(data, reference, audit)
   expect_equal(sum(parity$unexplained_differences), 0L)
-  expect_equal(sum(parity$reviewed_numerical_differences), 272L)
+  expect_equal(sum(parity$reviewed_numerical_differences), 55L)
   san_mateo_level <- parity$poll_id == "san-mateo-2008" &
     parity$legacy_field == "t1knowlevel"
   expect_equal(parity$approved_correction_differences[san_mateo_level], 239L)
@@ -208,28 +219,17 @@ test_that("numerical exceptions cannot hide changed aggregate values", {
   expect_equal(parity$approved_correction_differences[primaries_size], 217L)
   zeguo_variance <- parity$poll_id == "zeguo-2005" &
     parity$legacy_field == "genvar"
-  expect_equal(parity$approved_correction_differences[zeguo_variance], 16L)
+  expect_equal(parity$approved_correction_differences[zeguo_variance], 233L)
+  zeguo_audit <- audit[audit$poll_id == "zeguo-2005", ]
+  expect_equal(nrow(zeguo_audit), 16L)
+  expect_true(all(zeguo_audit$covariance_rank == 9L))
+  expect_false(any(zeguo_audit$numerical_exception))
   corrected <- which(data$dpnum == 9 & data$pollgroup == 5207)
-  zeguo_audit <- which(audit$poll_id == "zeguo-2005" &
-                         audit$pollgroup == 5207)
-  expect_length(corrected, 16L)
-  expect_length(zeguo_audit, 1L)
-  linux <- data
-  linux$genvar[corrected] <- 0.030543946597843295
-  linux_audit <- audit
-  linux_audit$source_genvar[zeguo_audit] <- 0.030543946597843295
+  changed <- data
+  changed$genvar[corrected[1]] <- 0.1
   expect_equal(sum(compare_historical_polardata(
-    linux, reference, linux_audit
-  )$unexplained_differences), 0L)
-  linux$genvar[corrected[1]] <- 0.1
-  expect_equal(sum(compare_historical_polardata(
-    linux, reference, linux_audit
+    changed, reference, audit
   )$unexplained_differences), 1L)
-  linux$genvar[corrected[1]] <- 0.030543946597843295
-  linux_audit$attitudes_sha256[zeguo_audit] <- "changed"
-  expect_equal(sum(compare_historical_polardata(
-    linux, reference, linux_audit
-  )$unexplained_differences), 16L)
   group <- audit$pollgroup[which(audit$numerical_exception)[1]]
   row <- which(data$pollgroup == group)[1]
   data$genvar[[row]] <- 1

@@ -96,7 +96,7 @@ test_that("reviewed public source matrices identify only the 23 known groups", {
   )
   result <- audit_historical_covariances(benchmark, reviewed)
   accepted <- result[result$numerical_exception, ]
-  expect_equal(nrow(accepted), 23)
+  expect_equal(nrow(accepted), 8)
   expect_setequal(accepted$pollgroup, reviewed$pollgroup)
   expect_setequal(
     accepted$pollgroup[accepted$covariance_class == "indefinite_and_singular"],

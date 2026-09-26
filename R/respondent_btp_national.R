@@ -101,6 +101,8 @@ build_btp_national_individual <- function(
   education <- c(0, .33, .66, 1)[btp_source_codes(survey, "ppeducat", 1:4)]
   income <- btp_source_codes(survey, "ppincimp", 1:17)
   income <- c(1, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5:9, 10, 10)[income]
+  interest <- btp_source_codes(survey, "qb57", c(-2:-1, 1:4))
+  interest[interest < 0 & !is.na(interest)] <- NA_real_
   deviations <- purrr::map_dfc(before, function(value) {
     as_historical_float(abs(value - .5))
   })
@@ -124,7 +126,9 @@ build_btp_national_individual <- function(
       higher_education = as.numeric(education >= .66),
       household_income = income, high_income = as.numeric(income > 5),
       attitude_extremity = extremity,
-      political_interest_t1 = NA_real_,
+      political_interest_t1 = as_historical_float(
+        c(1, .66, .33, 0)[interest]
+      ),
       read_briefing = NA_real_, knowledge_joint_midterm = NA_real_,
       knowledge_midterm = NA_real_, knowledge_midterm_joint = NA_real_,
       attitude_extremity_midterm = NA_real_

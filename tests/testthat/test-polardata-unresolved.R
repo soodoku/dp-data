@@ -36,7 +36,7 @@ unresolved_test_fields <- function(poll) {
     ),
     zeguo = stats::setNames(c(
       "industrial_roads", "village_roads", "main_roads",
-      "commercial_roads", "main_roads_rescaled", "other_parks",
+      "commercial_roads", "wenchang_main_avenue", "other_parks",
       "township_image", "cultural_heritage", "sewage"
     ), paste0("att", 1:9))
   )
@@ -91,9 +91,16 @@ test_that("resolved polls reproduce historical fields", {
     expected <- expected[match(caseid[selected], expected$caseid), ]
     if (poll %in% c("new_haven", "zeguo", "btp_primaries")) {
       corrected <- switch(poll,
-        new_haven = c("minority", "pminority"),
-        zeguo = c("chi.t1att2", "chi.t2att3", "attextreme",
-                  "meanxtreme", "avgsd", "genvar", "ppage", "meanage"),
+        new_haven = c(
+          "minority", "pminority", "nh.t1endexp", "nh.t2endexp",
+          "attextreme", "attextreme2", "meanxtreme", "avgsd",
+          "avgsd2", "genvar"
+        ),
+        zeguo = c(
+          "chi.t1att2", "chi.t1att5", "chi.t2att3", "chi.t2att5",
+          "attextreme", "meanxtreme", "avgsd", "genvar",
+          "ppage", "meanage"
+        ),
         btp_primaries = c(
           "grpgain", "grpgainr", "loggain", "groupsize", "vareduc",
           "sdeduc", "pfemale_ind", "meant1know_ind",

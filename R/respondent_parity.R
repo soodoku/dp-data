@@ -21,26 +21,13 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     )
     return(approved$approved_value)
   }
-  if (poll_id == "zeguo-2005" && field == "genvar") {
-    approved <- readr::read_csv(project_path(
-      "audit", "corrections", poll_id, "approved_values.csv"
-    ), show_col_types = FALSE)
-    approved <- approved[
-      approved$legacy_field == field & approved$pollgroup == 5207,
-    ]
-    rows <- match(approved$caseid, caseid)
-    stopifnot(nrow(approved) == 16L, !anyNA(rows),
-      !anyDuplicated(approved$caseid),
-      all(abs(historical[rows] - approved$historical_value) <= tolerance)
-    )
-    historical[rows] <- approved$approved_value
-    return(historical)
-  }
   reviewed <- list(
+    "europolis-2009" = list(fields = c("ppage", "meanage"), rows = 348L),
     "btp-national-2003" = list(
       fields = c("btp03.olt1demo", "btp03.olt2demo",
                  "btp03.olt1global", "btp03.olt2global",
-                 "attextreme", "meanxtreme", "avgsd", "genvar"),
+                 "attextreme", "meanxtreme", "avgsd", "genvar",
+                 "t1polint"),
       rows = 245L
     ),
     "btp-presidential-primaries-2004" = list(
@@ -53,11 +40,18 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
       fields = "t1knowlevel", rows = 239L
     ),
     "zeguo-2005" = list(
-      fields = c("chi.t1att2", "chi.t2att3", "attextreme",
-                 "meanxtreme", "avgsd", "ppage", "meanage"), rows = 233L
+      fields = c(
+        "chi.t1att2", "chi.t1att5", "chi.t2att3", "chi.t2att5",
+        "attextreme", "meanxtreme", "avgsd", "genvar",
+        "ppage", "meanage"
+      ), rows = 233L
     ),
     "new-haven-2004" = list(
-      fields = c("minority", "pminority"), rows = 132L
+      fields = c(
+        "minority", "pminority", "nh.t1endexp", "nh.t2endexp",
+        "attextreme", "attextreme2", "meanxtreme", "avgsd",
+        "avgsd2", "genvar"
+      ), rows = 132L
     ),
     "btp-health-education-2005" = list(
       fields = c("female", "pfemale", "varfemale", "sdfemale",
@@ -106,8 +100,13 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
   )
   contract <- reviewed[[poll_id]]
   if (!is.null(contract) && field %in% contract$fields) {
+    filename <- if (poll_id == "europolis-2009") {
+      "approved_age_values.csv"
+    } else {
+      "approved_values.csv"
+    }
     approved <- readr::read_csv(project_path(
-      "audit", "corrections", poll_id, "approved_values.csv"
+      "audit", "corrections", poll_id, filename
     ), show_col_types = FALSE)
     approved <- approved[approved$legacy_field == field, ]
     stopifnot(

@@ -50,7 +50,7 @@ zeguo_attitudes <- function(survey, wave) {
     village_roads = mean_items(c(7, 10, 11)),
     main_roads = mean_items(c(15:19, 22)),
     commercial_roads = mean_items(12:13),
-    main_roads_rescaled = mean_items(c(15:19, 22), FALSE) / 10,
+    wenchang_main_avenue = mean_items(6),
     other_parks = mean_items(c(24, 28, 29), FALSE) / 10,
     township_image = mean_items(c(25, 31), FALSE) / 10,
     cultural_heritage = mean_items(c(25, 32)),

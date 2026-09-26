@@ -8,7 +8,7 @@ coverage of the 23 existing knowledge builds and the respondent reconstructions.
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
 UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24;
-SWE-02, AUS-03, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02, UKGE-05, BTPHE-01, BTPHE-03, EURO-04 and NH-06 were approved in subsequent poll reviews.
+SWE-02, AUS-03, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02, UKGE-05, BTPHE-01, BTPHE-03, EURO-04, NH-06, NH-07, ZG-05, and the A1R climate and AMR mode corrections were approved in subsequent poll reviews.
 Other proposals remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
@@ -57,11 +57,12 @@ Each fact names its source and locator; each poll folder has a generated
 review changes documentation, not catalog identifiers, scoring, or samples.
 Priority questions for the corrections pass include:
 
-- **New Haven:** Farrar and colleagues' published study dates the airport and
-  revenue-sharing event to March 1–3, 2002; the archived poll appendix labels it
-  2004. The paper distinguishes 1,032 initial interviews, 133 attendees and 132
-  analysis cases. Verify fieldwork records before changing the year or linking
-  this study to a different New Haven event. Preserve `new-haven-2004` meanwhile.
+- **New Haven:** Farrar and colleagues' published study and the baseline CATI
+  questionnaire date the airport and revenue-sharing event to March 1–3, 2002;
+  the archived poll appendix labels it 2004. The catalog year is corrected to
+  2002 while its historical `new-haven-2004` ID is retained. The paper
+  distinguishes 1,032 initial interviews, 133 attendees and 132 analysis
+  cases; the omitted attendee remains unresolved.
 - **Bulgaria 2007:** the organizer description and executive summary identify
   the National Palace of Culture; the Roma working paper names Park Hotel
   Moskva (PDF p. 4) and calls this the first Bulgarian poll despite the 2002
@@ -1983,6 +1984,33 @@ immigration index contains nine items; the historical aggregate uses Q11_1.
 The published means validate question selection and scoring at the sample
 level, not a respondent-order link for the anonymous battery in EURO-01.
 
+### EURO-06: Birth year 1900 is an unsupported age (corrected)
+
+**Status: approved by the user on 2026-09-26 and corrected upstream.** The
+[source codebook](../data/europolis-2009/codebook.txt) labels `age1` as year
+of birth and records seven values of 1900 among 4,384 people, but does not
+declare a missing code for this field. There are no years from 1901 through
+1913; the next earliest is 1914. In 2009, the seven 1900 entries become age
+109, an implausible concentration beyond the rest of the observed age range.
+The correction treats these seven birth years as unknown in the *derived age*
+measure, while leaving the raw answers and education recode unchanged. One
+affected person is in the 348-person historical aggregate: source `UniqueID`
+300005619, exported case 71300005619, group 7125. Their `ppage` becomes
+missing and that 17-person group's `meanage` falls from 51.70588 to 48.125
+(16 observed ages). The sample and all other respondent fields remain fixed.
+The historical script's `2009 - age1` calculation and the codebook's failure
+to mark 1900 missing are recorded as contrary evidence; no individual birth
+year is inferred from other demographics.
+The [approved age values](../audit/corrections/europolis-2009/approved_age_values.csv)
+record all 348 respondent ages and group means. Parity checks find one new
+missing age and 17 changed group-mean cells, with zero unexplained differences.
+The current `dp-learning` analysis frame already excludes ages above 100, so
+its paired main model is unchanged at 5,850 observations and identical
+coefficients when this correction is applied on top of ZG-04. This supplies
+evidence to remove that downstream age filter after the upstream correction
+is adopted. `dp-distortions` does not use these fields; `dp-deliberately`
+imports the newly missing age.
+
 ## National Issues Convention 1996 — nic-1996
 
 **NIC-01 — one source-scoped fallback ID and battery definition.** `PART == 1`
@@ -2613,8 +2641,8 @@ presence is not a claim that every original field-file merge has been recovered.
 | nic2-2003 | All 340 historical participants are now reconstructed from raw NIC2 answers; no matching anonymous deposited item matrix is required for that reconstruction. | Original NIC2 instruments, participant/arm definitions, source IDs and wave merge. |
 | btp-national-2003 | All 245 historical participants and aggregate fields are now reconstructed; the 674-person descriptor calibration uses a separate raw source. | National-event instruments and field files; distinguish the national event from later primary/general-election polls. |
 | btp-presidential-primaries-2004 | All 217 historical people are reconstructed. PR-02 fixes running peer sums; PR-03 removes duplicate aggregate rows and recomputes six group descriptors. Do not conflate with the online-primaries battery. | Event/mode-specific questionnaires, invitation and attendance records, and ID crosswalk. |
-| new-haven-2004 | All 132 historical people are reconstructed from joined pre/mid/post workbook answers. Three birth-year-1890 values are made missing; event year and omitted attendee remain under review. | Original demographic question, raw value and alternate-wave age; respondent linkage and attitude definitions. |
-| zeguo-2005 | All 233 historical participants are reconstructed from reviewed merged/pre/post components; three item-coding overrides and 15 numerical covariance exceptions remain explicit. | Original and translated instruments, event date, project-choice scales and respondent/group identifiers. |
+| new-haven-2004 | All 132 historical people are reconstructed from joined pre/mid/post workbook answers. Three birth-year-1890 refusals are made missing; the event year is corrected to 2002, while the omitted attendee remains under review. | Attendee roster and sample rule; remaining arrival-wave response rules. |
+| zeguo-2005 | All 233 historical participants are reconstructed from reviewed merged/pre/post components; three historical knowledge-item overrides remain explicit. The corrected Wenchang source makes all 16 group covariance matrices full rank, removing 15 obsolete numerical exceptions. | Original and translated instruments, event date, project-choice scales and respondent/group identifiers. |
 | marousi-2006 | Public participants file came from an existing derived 2014 analysis object, not an independently rebuilt item-level source. It has scores, groups and demographics but no item responses. | [Questionnaire](../data/marousi-2006/questionnaire.pdf), original field returns, scoring syntax and group roster. Audit the downstream convention treating T2 zeros as missing before generalizing it; it is not justified by the numeric value alone. |
 | bulgaria-2007 | Distinct Roma-policy event; it must not inherit the 2002 crime battery merely because files share an archive directory. | Roma-policy questionnaire, actual event date and source-file provenance. |
 | tanzania-2015 | Public source is available, but full canonical arm, village, questionnaire and measurement integration is not built here. | Village-randomization protocol, information versus deliberation arms, instruments and cluster IDs. Preserve the current downstream specification until audited. |
@@ -2627,41 +2655,68 @@ The four newer control-study files and Marousi are already byte-identical betwee
 reproduced all 11 result tables. It does not constitute an independent audit of
 the experiments, answer keys, causal claims, weighting, or original field-file merges.
 
-### NH-02 — Event year and attendance need reconciliation
+### NH-02 — Event year corrected; attendance needs reconciliation
 
-**Preserve / review.** Farrar et al., *Disaggregating Deliberation's Effects*
+Farrar et al., *Disaggregating Deliberation's Effects*
 (BJPS 2010, DOI 10.1017/S0007123409990433), pp. 338–339, identifies deliberations
 on **1–3 March 2002**, an initial interview sample of **1,032**, and **133**
-attendees. The historical poll-details appendix and current registry label this
-poll **2004**, and the historical analysis has **132** people. The online LSE
+attendees. The historical poll-details appendix labels this poll **2004**,
+and the historical analysis has **132** people. The online LSE
 PDF matches both archived copies byte-for-byte; it is not new contrary evidence
 from a different paper version.
 
-Preserve the current ID and cohort while checking raw fieldwork dates, the
-airport/revenue-sharing questionnaire, group assignment and completeness filters.
+The baseline CATI script supplies an independent date check: its header is
+January 17, 2002, and its invitation says the event begins on Friday, March 1.
+March 1 was Friday in 2002 and Monday in 2004. This supports the paper's
+2002 date for the airport/revenue-sharing event. The catalog year is corrected
+to 2002, retaining the historical `new-haven-2004` ID and source paths.
+This changes metadata only, not respondent values, aggregate fields, or sample.
+The 132-versus-133 attendance distinction still needs a roster or documented
+sample rule.
+
+Preserve the current ID and cohort while checking group assignment and
+completeness filters.
 Establish which attendee is excluded and why. The paper's split-half experiment
 has three measurement occasions: match the historical pre/post columns to those
 occasions before comparing its Tables 1 and 3. Do not use the similarly named
 October 2005 New Haven education briefing as this event's instrument. Any future
-year correction needs an explicit registry/alias change, separately from any
+ID change needs a separately reviewed registry/alias change, apart from any
 sample correction and its consequences for estimates.
 
 ### NEW-01 — Newer-poll mode labels and reported sample totals
 
-**Preserve / review.** The registry currently labels both `a1r-climate-2021`
-and `amr-2024` as face-to-face. Stanford's climate/energy project page, the
-NORC October 2021 methods report and the 2025 *Scaling Dialogue* paper describe
-online deliberation. The AMR paper, version 2 (14 May 2026, DOI
-10.12688/wellcomeopenres.24803.2), likewise describes facilitated online groups
-in June–August 2024. Its 2,419-person randomized total includes intervention and
-controls; it is not a deliberator-only count. The downloaded AMR final report's
-cover says June 2026 although its URL filename says July 2026.
+**Both mode corrections approved by the user on 2026-09-26 and implemented.**
+The historical registry labeled both
+`a1r-climate-2021` and `amr-2024` as face-to-face. For the
+2021 climate poll, Stanford's [event page](https://deliberation.stanford.edu/news/america-one-room-climate-and-energy), the
+[NORC October 2021 methods report](../data/a1r-climate-2021/design/a1r-climate-methods.pdf)
+and the [2025 *Scaling Dialogue* paper](../data/a1r-climate-2021/papers/a1r-climate-paper.pdf)
+describe online deliberation. NORC calls the event virtual, distinguishes its
+invited delegates from the control group, and says both surveys were offered
+by web. The approved catalog change is `face-to-face` to `online` for this
+poll only; no response, weight, wave, sample, score or aggregate changes. The
+separate 2019 America in One Room event was face-to-face and retains its label.
 
-Review source event IDs and treatment/attendance definitions, then correct mode
-metadata in a separate correction commit. Before validating any reported gains,
+The [AMR paper, version 2](https://pmc.ncbi.nlm.nih.gov/articles/PMC12891964/)
+(14 May 2026, DOI 10.12688/wellcomeopenres.24803.2) and the
+[final report](../data/amr-2024/reports/amr-final-report.pdf) describe online
+small-group deliberation and online plenaries in six countries during 2024.
+The report calls this a six-country online experiment and identifies the
+Stanford Online Deliberation Platform. Some recruitment occurred in person or
+by phone; that does not make the deliberation face-to-face. The deposited file
+has 2,419 unique IDs, each with a pre and post row; its group flags yield
+1,280 intervention and 1,139 control people. The intervention/control counts
+match all six country rows in the paper's Table 3, as well as the totals.
+Only the intervention group deliberated. The approved AMR edit changes its
+catalog mode from `face-to-face` to `online`, not its group flags, sample,
+scores, country assignments or weights. The report's cover says June 2026
+although its URL filename says July 2026; neither is the 2024 event year.
+
+Review AMR treatment/attendance definitions and country-specific instruments
+separately before changing any respondent data. Before validating reported gains,
 match country, weighting, analysis sample and wave. For the climate experiment,
 the one-year follow-up is a separate wave from immediate post-deliberation.
-No mode label, sample or score is changed by this source collection.
+The AMR sample and scores are unchanged by this mode correction.
 
 ## NIC2 2003 — nic2-2003
 
@@ -2811,12 +2866,7 @@ about 0.357297. `calibration-responses.parquet` retains the 11 raw items and IDs
 Check `know_index_online.do`, `nuri/reagg.txt`, the fielded baseline instrument
 and calibration-universe rationale before harmonizing these definitions.
 
-### BTPN-04: Omitted interest and nested weighting need version-specific review
-
-Raw `qb57` is populated for all 245 people, but final aggregate political
-interest is missing for everyone. An earlier derived `t1polint` exists; its
-presence does not authorize filling the historical omission. Inspect the
-question wording, response orientation and merge history before adding it.
+### BTPN-04: Nested weighting needs version-specific review
 
 Executed environment uses Q2a, Q13, Q14 and Q15a as four components, while the
 index memorandum includes a proposed three-component form. Security,
@@ -2828,6 +2878,38 @@ then `kn2:kn9`, rounding each addition. Group high-income share uses early
 collapsed income `> 7`; final respondent high income uses `> 5`.
 Review `merge02_nuri.R`, `03_data.R` and `06_add_more_vars.R` before combining
 those stage-specific definitions in a revised schema.
+
+### BTPN-05: Baseline political interest was omitted from the final aggregate
+
+**Proposed; no scoring change on main yet.** The 245 selected source records
+all answer `qb57`, which the source dictionary labels as interest in U.S.
+politics. Its response labels run from 1 “very interested” through 4 “not at
+all interested.” Mapping those codes to 1, .66, .33 and 0, then storing a
+32-bit float, reproduces all 245 source `t1polint` values exactly. Counts by
+raw code are 73, 122, 42 and 8. The source mean of the derived scale is
+0.68318. The historical `polardata` export nevertheless has `t1polint`
+missing for all 245 people. The archived `03_data.R` comments list poll 93
+among those with political interest, and the
+[2009 analysis](../data/btp-national-2003/papers/refined-or-biased-opinions-2009.pdf)
+uses baseline political interest for the 2002–03 online foreign-policy poll.
+These checks support a dropped export field, not an invented response.
+
+The retained [questionnaire](../data/btp-national-2003/questionnaires/btp-national-questionnaire.pdf)
+identifies itself as a Phase 2 follow-up and does not contain baseline Q57.
+It cannot independently confirm that item's exact fielded wording or routing;
+the source dictionary and response labels provide those details. The proposed
+edit derives `political_interest_t1` from raw `qb57`, then exports it as
+`t1polint`. It leaves all 245 people, their groups, raw answers, knowledge,
+attitudes and centrally computed group/poll descriptors unchanged. The
+case-level comparison is in
+`audit/corrections/btp-national-2003/approved_values.csv`. No current
+`dp-learning`, `dp-distortions` or `dp-deliberately` model references this
+field directly, but future consumers would see observed values instead of
+missing values. The rebuilt aggregate retains its 5,869 rows and 364 columns;
+only these 245 `t1polint` cells differ from the previous export. The respondent
+measure export replaces 245 missing historical definitions with 245 observed
+`btpn-05-v2` definitions, and the raw-response export gains exactly 245
+`qb57` rows. Preserve the frozen historical benchmark as the old value.
 
 ## BTP Presidential Primaries 2004 — btp-presidential-primaries-2004
 
@@ -2908,7 +2990,7 @@ the intended weight; analyses using `groupsize` or the five group descriptors
 can also move. Re-estimate affected downstream analyses when they adopt this
 export. See X-10 for the regenerated `X` field.
 
-## New Haven 2004 — new-haven-2004
+## New Haven 2002 — historical ID new-haven-2004
 
 ### NH-03: The three-wave workbook supplies raw answers and an explicit ID bridge
 
@@ -2918,17 +3000,20 @@ has 132 unique matching people and matching group assignments. Source-row order
 follows Pre. `historical-ids.csv` links `ASSIGNED` to aggregate IDs using unique
 nine-answer baseline Q35:43 signatures in `nh_hlm_smallnew.dta`: all 132 matched,
 with independent gender agreement. No derived scores supply the bridge or build.
-The remaining fieldwork-year/133-versus-132 discrepancy in NH-02 is not resolved
-by this successful reconstruction.
+The 133-versus-132 attendance distinction in NH-02 is not resolved by this
+successful reconstruction.
 
-### NH-04: Airport scaling and age remain historical
+### NH-04: Airport scaling reviewed; age remains historical
 
-The airport expansion index maps 0.625 to float32(0.675), affecting 12 baseline
-and five post values; the same discontinuity applies at arrival. Inspect the
-Q12/Q13 index memo and executed recode before replacing it with an algebraic
-scale. Age uses `2002 - birth_year`; three birth-year-1890 records are set missing
-in the historical merge. Review the demographic instrument and alternate-wave
-records before revising the age rule. The race-refusal correction is NH-06.
+The historical airport expansion index mapped 0.625 to float32(0.675), affecting
+12 baseline and five post values; the same discontinuity applied at arrival.
+The instrument, index memo and published means were reviewed under NH-07, and
+the replacement was removed. Age uses `2002 - birth_year`; three birth-year-1890
+records are set missing in the historical merge. The baseline CATI script's
+Q62 explicitly instructs interviewers to record 1890 for a refusal, and the
+source has exactly three such values. The missing-age recode is therefore
+supported; no age correction is proposed. The corrected catalog year and
+remaining attendance question are in NH-02. The race-refusal correction is NH-06.
 
 ### NH-05: Arrival attitudes cannot reuse the baseline recode blindly
 
@@ -2958,6 +3043,49 @@ full group size and absorbs missing binary answers into the complementary
 category, so its value stays the same. That missing-aware formula issue is
 recorded in X-03 and has not been altered as part of this poll correction.
 
+### NH-07: Historical airport index replaced an attainable 0.625 with 0.675
+
+**Status: approved correction.** The fielded
+[baseline CATI questionnaire](../data/new-haven-2004/source-materials/baseline-cati.txt)
+asks Q12 whether commercial passenger service should expand and Q13 whether
+it should end, each on the same five-point agree/disagree scale. The
+[attitude-index memo](../data/shared/codebooks/attitude_indices/past_versions/attitude-indices.pdf)
+describes the index as the difference between expanding and ending, with
+unknown answers at the midpoint. Scaling each 1–5 answer to 1–0, taking
+`(expanded - ended)/2 + 0.5`, and applying the separately reviewed arrival
+unknown rule yields 0.625 for 12 baseline, 12 arrival and five departure
+answers. The historical recode instead replaces every exact 0.625 with 0.675.
+The latter is not a possible value of the stated difference of two five-point
+items. This appears to be a manual recode mistake; the archived indexed values
+and maintained code confirm it is historical, not an import error. No raw
+response, sample or other index rule was changed.
+
+The [published study](../data/new-haven-2004/papers/disaggregating-deliberation-27s-effects-28lsero-29.pdf)
+(text on printed p. 341; Table 1 on p. 342) explicitly defines the expanding-minus-ending
+score on a -1 to 1 scale and reports full-sample T1/T2/T3 means of
+0.540/0.415/0.434. Converting the corrected 0–1 index back to that scale
+gives 0.53977/0.41477/0.43371, matching all three published means after
+rounding. The historical 0.675 replacement gives 0.54886/0.42386/0.43750,
+which round to 0.549/0.424/0.438. This independent publication comparison
+supports the approved removal; it does not resolve other index choices.
+
+The approved build retains all 132 people. Only eight historical
+wide fields change: 12 `nh.t1endexp`, five `nh.t2endexp`, 12 baseline
+`attextreme`, 12 arrival `attextreme2`, and the affected group descriptors
+`meanxtreme` (73 rows), `avgsd` (67), `avgsd2` (62) and `genvar` (73). Their
+group calculations stay in the central derived stage. The case-level historical
+and corrected values are in
+`audit/corrections/new-haven-2004/approved_values.csv`. The current
+`dp-learning` main mixed model retains 5,850 observations; its heterogeneity
+coefficient moves from 0.002743934 to 0.004060487 and its extremity
+coefficient from -0.06758994 to -0.06774958. In the paired
+`dp-distortions` run, all 19 result CSVs change: New Haven group/issue rows
+and pooled summaries. Nineteen of 28 pooled inference rows change; for the
+pooled gender `ext_grp` result, one reference tie changes eligibility and the
+pair count moves from 2,437 to 2,436. These consequences are reported to
+size the review, not as evidence that the historical or corrected score is
+more correct.
+
 ## Zeguo 2005 — zeguo-2005
 
 ### ZG-01: Component joins and three item-coding overrides are explicit
@@ -2982,6 +3110,15 @@ answer sheets or field-file version history are still needed to decide whether
 the three exceptions were verified corrections or coding mistakes. No ZG-01
 score has been changed.
 
+The published paper supplies a version check: its Table 5 reports a T2 correct
+share of 0.494 for Q45 among 235 matched respondents. The merged `d3045p`
+flags yield 116/235 = 0.493617, whereas scoring only the raw POST answers
+yields 113/235 = 0.480851. The other three T2 item shares from the same 235
+records round to the paper's 0.315, 0.528 and 0.362. Thus the publication
+used a scoring stage consistent with the three merged flags; it does not prove
+what those people actually answered. Preserve the historical flags until the
+original answer sheets or a documented correction log can resolve that question.
+
 ### ZG-02: Scale the village-road rating and use post-wave main roads
 
 The fielded translated questionnaire and its alternative both print a 0-10
@@ -3003,23 +3140,27 @@ and `d2022p`. ZG-02 uses those six post ratings in `chi.t2att3`. Its value
 changes for 206 of 233 participants, with no missingness change; group and
 poll descriptors do not use post attitudes and are unaffected by this second
 edit. The six-field person-level comparison is in
-`audit/corrections/zeguo-2005/approved_values.csv`; all other fields retain
-their historical scoring. The generalized-variance column has platform-dependent
-numerical exceptions for the other 15 groups. Group 5207 remains an approved
-correction: its rank-deficient covariance matrix also gives platform-dependent
-values, so parity verifies the exact corrected input matrix, its rank and
-bounded variance against the rebuilt source. The ledger records the macOS
-value; the comparison file retains the historical benchmark as its old value.
+`audit/corrections/zeguo-2005/approved_values.csv`; all other fields retained
+their historical scoring at this stage. The original covariance matrices were
+rank deficient and produced platform-dependent generalized variance. The later
+approved Wenchang correction (ZG-05) restores full rank in all 16 groups and
+removes those numerical exceptions. The comparison file retains the historical
+benchmark as its old value.
 
 ### ZG-03: Two road indices make covariance numerically singular
 
-The nine-column baseline matrix includes `float(mean(float(ratings / 10)))`
-and `float(mean(ratings)) / 10` versions of main roads. They are algebraically
-redundant apart from float-storage order. Before ZG-02, all nine reconstructed input columns matched the original
-historical matrix bit-for-bit. The approved 4.5 rescaling changes one input
-in group 5207. All 16 groups still have rank eight rather than nine; the other
-15 retain reviewed platform-sensitive generalized variance; see X-09. Dropping a redundant column
-would change the estimand and requires a separately reviewed correction.
+The historical nine-column baseline matrix included
+`float(mean(float(ratings / 10)))` and `float(mean(ratings)) / 10` versions of
+main roads. They are algebraically redundant apart from float-storage order.
+Before ZG-02, all nine reconstructed input columns matched the original
+historical matrix bit-for-bit. The approved 4.5 rescaling changed one input in
+group 5207. All 16 historical covariance matrices had rank eight rather than
+nine. The original script labeled `t1att5` Wenchang Main Avenue but assigned
+`main2t1`, the same six-project index already used in `t1att3`. ZG-05 corrected
+that source-field error using the project 6 responses and published Wenchang
+results. All 16 corrected matrices have rank nine. The centrally computed
+group-dispersion formula is unchanged; the 15 Zeguo numerical exceptions in
+X-09 are no longer needed.
 
 ### ZG-04: One baseline age is 1; the paired departure age is 33
 
@@ -3052,6 +3193,45 @@ paired run of the current main mixed model adds one observation (5,849 to
 `dp-deliberately` importer receives this corrected age. The single upstream
 repair does not settle policy for any other age, and the downstream filter
 should be removed only after the remaining age anomaly is reviewed.
+
+### ZG-05: The Wenchang Main Avenue slot duplicates the main-roads index
+
+**Approved by the user on 2026-09-26 and corrected upstream.** The original `china_2005.r` labels
+`t1att5` and `t2att5` as Wenchang Main Avenue but reads `main2t1` and
+`main2t2`. The source variable dictionary defines `main2t1` as the average
+of projects 15–19 and 22, and its baseline values equal the `mroads1` index
+already used for `t1att3` after rescaling. The fielded
+[questionnaire](../data/zeguo-2005/source-materials/questionnaire.pdf)
+lists **project 6** as Wenchang Main Avenue on a 0–10 importance scale; its
+literal responses are `d2006` and `d2006p`.
+
+The [published study](../data/zeguo-2005/papers/china-zeguo-bjps.pdf),
+Table 4, reports 160 paired Wenchang ratings with baseline/departure means
+0.825/0.924. The 160 people with both `d2006` and `d2006p` observed give
+0.825/0.92375 after division by ten, matching that table. In the historical
+233-person aggregate sample, replacing only the Wenchang slot with Q6/10
+and retaining the original midpoint fallback for missing answers would
+change 175 baseline and 199 departure slot values; 59 baseline and 23
+departure Q6 answers are missing. The corresponding means over all 233
+people would move from 0.60674 to 0.73219 at baseline and 0.61245 to
+0.87725 at departure. The published paired means have a different denominator
+and must not be compared directly to those full-sample means.
+
+This is evidence of a wrong source-field selection, not a reason to alter
+the group-dispersion formula poll by poll. Replacing the duplicated slot
+makes all 16 nine-index group covariance matrices full rank; the historical
+matrices all had rank eight. In the paired corrected build, only
+six wide fields change: 175 `chi.t1att5`, 199 `chi.t2att5`, 172
+`attextreme`, and the centrally derived `meanxtreme`, `avgsd` and `genvar`
+for all 233 selected people. No sample or missingness changes. The current
+`dp-learning` mixed model retains 5,850 observations; its heterogeneity
+coefficient moves from 0.004060487 to 0.02556485 and its extremity
+coefficient from -0.06774958 to -0.07214343. Fifteen of 21 paired
+`dp-distortions` result CSVs and 19 of 28 pooled inference rows change;
+pooled gender comparisons lose one eligible pair under the revised group
+mean. These consequences do not determine correctness. The corrected source
+fields are `d2006` and `d2006p`; the sample, missing-answer fallback, and
+centrally derived group-dispersion formula are unchanged.
 
 ## Cross-poll issues for the eventual schema
 
@@ -3147,10 +3327,10 @@ separated; a rejected-alternative explanation; and an explicit decision to
 preserve, relabel, revise, or leave unresolved. A monotonic scale that looks
 intuitive is not sufficient evidence to replace a deliberate transformation.
 
-### X-09: Generalized variance has 23 explicitly reviewed numerical exceptions
+### X-09: Generalized variance has eight explicitly reviewed numerical exceptions
 
 The current source formula differs from the frozen historical executable's
-`genvar` in 23 groups, covering 272 export cells. These are not all negligible
+`genvar` in eight groups, covering 55 export cells. These are not all negligible
 absolute differences, and they are not replaced by benchmark values.
 
 | Poll | Groups | Cells | Largest absolute difference |
@@ -3158,17 +3338,16 @@ absolute differences, and they are not replaced by benchmark values.
 | UK–EU 1995 | 2099 | 4 | 0.000063499 |
 | BTP Health/Education 2005 | 9713, 9715 | 20 | 0.000209632 |
 | San Mateo 2008 | 9601, 9604, 9616, 9617, 9621 | 31 | 0.003464282 |
-| Zeguo 2005 | 5201–5206 and 5208–5216 | 217 | 0.001944706 |
 
 Historical generalized variance takes the absolute determinant of a pairwise
 covariance matrix and raises it to `1 / (2 * number_of_indices)`. Near-zero
 determinants become much larger after this root, magnifying rounding differences.
 The original nested calculation is retained in code to preserve its own rounding.
 UK–EU group 2099 has N=4, P=4, rank=3; BTP groups 9713 and 9715 have
-N/P/rank 11/11/10 and 9/11/8. San Mateo's five groups have N=5–7 and P=7;
-Zeguo's 15 numerically excepted groups have N=10–17, P=9 and rank=8.
-Group 5207 also has rank eight, but its changed source matrix and `genvar`
-are an approved ZG-02 correction rather than a numerical exception.
+N/P/rank 11/11/10 and 9/11/8. San Mateo's five groups have N=5–7 and P=7.
+The 15 historical Zeguo exceptions were removed after ZG-05 replaced the
+duplicated main-roads slot with the Wenchang project rating, making all 16
+group matrices full rank.
 
 Two San Mateo matrices also have materially negative eigenvalues. Group 9601
 has N=6, five complete rows, pairwise N=5–6, and minimum eigenvalue -0.01431241.
@@ -3259,7 +3438,7 @@ dp-learning's `R/knowledge.R`, `R/sources.R` and recode ledger:
 | --- | --- |
 | NIC `1996 - ppage` | Implemented upstream as `age@nic-03-v2`; downstream inversion removed (NIC-03). |
 | NIC online mode forced to zero | Corrected upstream to face-to-face; downstream override removed (NIC-03). |
-| Ages outside16–100 made missing | Preserve raw age and provide an explicit upstream analysis-eligibility/quality field; assess source anomalies separately from exclusion policy. |
+| Ages outside16–100 made missing | Zeguo age 1 and Europolis age 109 were reviewed using paired answers and the birth-year distribution (ZG-04 and EURO-06). Corrected derived ages now range from 18 to 98; `dp-learning` PR #4 removes the reader-side clipping and retains an assertion. Raw answers remain available upstream. |
 | Greece post knowledge zero made missing when baseline is positive | Requires source/instrument evidence for nonresponse; a surprising zero score alone does not establish missingness. Do not promote this heuristic as a verified correction. |
 | Greece education code7 made missing | Verify source category labels and export missing-value convention before centralizing. |
 | Knowledge rounded to10decimals | Centralize documented numeric storage handling and test exact boundaries; preserve distinct knowledge definitions. |

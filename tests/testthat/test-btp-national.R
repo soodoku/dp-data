@@ -19,6 +19,8 @@ national_test_source <- function() {
 test_that("National recodes need raw answers, not stored scale columns", {
   survey <- national_test_source()
   expected <- build_btp_national_individual(survey)
+  expect_equal(expected$political_interest_t1, as.numeric(survey$t1polint),
+               tolerance = 0)
   raw <- survey[, grepl("^(qb|qf|pp)", names(survey))]
   expect_equal(build_btp_national_individual(raw), expected)
   index <- c(245L, 80L, 1L)
@@ -82,7 +84,7 @@ test_that("National respondent and aggregate values retain historical parity", {
     mapping[keys] <- paste0(attitudes, "_t", wave)
   }
   corrected <- c(
-    "btp03.olt1demo", "btp03.olt2demo",
+    "btp03.olt1demo", "btp03.olt2demo", "t1polint",
     "btp03.olt1global", "btp03.olt2global", "attextreme"
   )
   for (field in names(mapping)) {

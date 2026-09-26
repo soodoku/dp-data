@@ -328,7 +328,7 @@ zeguo-2005,educ4,zeguo-2005.education_four@historical-v1,233,205,0,0,0,0,1e-10
 zeguo-2005,minority,zeguo-2005.minority@historical-v1,233,0,0,0,0,0,1e-10
 zeguo-2005,hhincome,zeguo-2005.household_income@historical-v1,233,0,0,0,0,0,1e-10
 zeguo-2005,female,zeguo-2005.female@historical-v1,233,225,0,0,0,0,1e-10
-zeguo-2005,attextreme,zeguo-2005.attitude_extremity@zg-02-v2,233,233,0,1,0.1462962991661495,0,1e-10
+zeguo-2005,attextreme,zeguo-2005.attitude_extremity@zg-02-v2,233,233,0,172,0.13518518871731222,0,1e-10
 zeguo-2005,highinc,zeguo-2005.high_income@historical-v1,233,0,0,0,0,0,1e-10
 zeguo-2005,t1polint,zeguo-2005.political_interest_t1@historical-v1,233,0,0,0,0,0,1e-10
 zeguo-2005,t1knowcor2,zeguo-2005.knowledge_joint_midterm@historical-v1,233,0,0,0,0,0,1e-10
@@ -348,7 +348,7 @@ zeguo-2005,chi.t1att1,zeguo-2005.industrial_roads_t1@historical-v1,233,233,0,0,4
 zeguo-2005,chi.t1att2,zeguo-2005.village_roads_t1@zg-02-v2,233,232,1,0,4.996003610813204e-16,0,1e-10
 zeguo-2005,chi.t1att3,zeguo-2005.main_roads_t1@historical-v1,233,233,0,0,4.996003610813204e-16,0,1e-10
 zeguo-2005,chi.t1att4,zeguo-2005.commercial_roads_t1@historical-v1,233,233,0,0,4.996003610813204e-16,0,1e-10
-zeguo-2005,chi.t1att5,zeguo-2005.main_roads_rescaled_t1@historical-v1,233,233,0,0,4.440892098500626e-16,0,1e-10
+zeguo-2005,chi.t1att5,zeguo-2005.wenchang_main_avenue_t1@zg-05-v2,233,233,0,175,1,0,1e-10
 zeguo-2005,chi.t1att6,zeguo-2005.other_parks_t1@historical-v1,233,233,0,0,4.440892098500626e-16,0,1e-10
 zeguo-2005,chi.t1att7,zeguo-2005.township_image_t1@historical-v1,233,233,0,0,0,0,1e-10
 zeguo-2005,chi.t1att8,zeguo-2005.cultural_heritage_t1@historical-v1,233,233,0,0,4.996003610813204e-16,0,1e-10
@@ -357,7 +357,7 @@ zeguo-2005,chi.t2att1,zeguo-2005.industrial_roads_t2@historical-v1,233,233,0,0,4
 zeguo-2005,chi.t2att2,zeguo-2005.village_roads_t2@historical-v1,233,233,0,0,5.273559366969494e-16,0,1e-10
 zeguo-2005,chi.t2att3,zeguo-2005.main_roads_t2@zg-02-v2,233,233,0,206,1,0,1e-10
 zeguo-2005,chi.t2att4,zeguo-2005.commercial_roads_t2@historical-v1,233,233,0,0,5.273559366969494e-16,0,1e-10
-zeguo-2005,chi.t2att5,zeguo-2005.main_roads_rescaled_t2@historical-v1,233,233,0,0,4.440892098500626e-16,0,1e-10
+zeguo-2005,chi.t2att5,zeguo-2005.wenchang_main_avenue_t2@zg-05-v2,233,233,0,199,1,0,1e-10
 zeguo-2005,chi.t2att6,zeguo-2005.other_parks_t2@historical-v1,233,233,0,0,4.440892098500626e-16,0,1e-10
 zeguo-2005,chi.t2att7,zeguo-2005.township_image_t2@historical-v1,233,233,0,0,0,0,1e-10
 zeguo-2005,chi.t2att8,zeguo-2005.cultural_heritage_t2@historical-v1,233,233,0,0,5.273559366969494e-16,0,1e-10
@@ -419,7 +419,7 @@ europolis-2009,t1know,knowledge_t1@historical-v1,348,348,0,0,3.3306690738754696e
 europolis-2009,t1knowr,knowledge_t1@historical-v1,348,348,0,0,3.3306690738754696e-16,0,1e-10
 europolis-2009,t1knowcor,knowledge_joint@historical-v1,348,0,0,0,0,0,1e-10
 europolis-2009,t2know,knowledge_t2@historical-v1,348,348,0,0,3.3306690738754696e-16,0,1e-10
-europolis-2009,ppage,age@historical-v1,348,348,0,0,0,0,1e-10
+europolis-2009,ppage,age@euro-06-v2,348,347,1,0,0,0,1e-10
 europolis-2009,educ4,education_four@historical-v1,348,335,0,0,0,0,1e-10
 europolis-2009,minority,minority@euro-04-v2,348,348,0,0,0,0,1e-10
 europolis-2009,hhincome,household_income@historical-v1,348,0,0,0,0,0,1e-10
@@ -455,13 +455,13 @@ new-haven-2004,educ4,new-haven-2004.education_four@historical-v1,132,132,0,0,0,0
 new-haven-2004,minority,new-haven-2004.minority@nh-04-v2,132,128,4,0,0,0,1e-10
 new-haven-2004,hhincome,new-haven-2004.household_income@historical-v1,132,107,0,0,0,0,1e-10
 new-haven-2004,female,new-haven-2004.female@historical-v1,132,132,0,0,0,0,1e-10
-new-haven-2004,attextreme,new-haven-2004.attitude_extremity@historical-v1,132,132,0,0,3.885780586188048e-16,0,1e-10
+new-haven-2004,attextreme,new-haven-2004.attitude_extremity@historical-v1,132,132,0,12,0.016666680574417392,0,1e-10
 new-haven-2004,highinc,new-haven-2004.high_income@historical-v1,132,107,0,0,0,0,1e-10
 new-haven-2004,t1polint,new-haven-2004.political_interest_t1@historical-v1,132,0,0,0,0,0,1e-10
 new-haven-2004,t1knowcor2,new-haven-2004.knowledge_joint_midterm@historical-v1,132,132,0,0,0,0,1e-10
 new-haven-2004,t12know,new-haven-2004.knowledge_midterm@historical-v1,132,132,0,0,0,0,1e-10
 new-haven-2004,t12knowcor,new-haven-2004.knowledge_midterm_joint@historical-v1,132,132,0,0,0,0,1e-10
-new-haven-2004,attextreme2,new-haven-2004.attitude_extremity_midterm@historical-v1,132,132,0,0,3.885780586188048e-16,0,1e-10
+new-haven-2004,attextreme2,new-haven-2004.attitude_extremity_midterm@historical-v1,132,132,0,12,0.016666680574417392,0,1e-10
 new-haven-2004,t1knowrcor,new-haven-2004.knowledge_joint@historical-v1,132,132,0,0,0,0,1e-10
 new-haven-2004,t2knowr,new-haven-2004.knowledge_t2@historical-v1,132,132,0,0,0,0,1e-10
 new-haven-2004,knowgain,new-haven-2004.knowledge_gain@historical-v1,132,132,0,0,0,0,1e-10
@@ -471,10 +471,10 @@ new-haven-2004,tobitpk,new-haven-2004.high_knowledge_joint@historical-v1,132,132
 new-haven-2004,knowgainr,new-haven-2004.knowledge_gain@historical-v1,132,132,0,0,0,0,1e-10
 new-haven-2004,knowgainr2,new-haven-2004.knowledge_gain_joint@historical-v1,132,132,0,0,0,0,1e-10
 new-haven-2004,educ3,new-haven-2004.education_three@historical-v1,132,132,0,0,0,0,1e-10
-new-haven-2004,nh.t1endexp,new-haven-2004.airport_expansion_t1@historical-v1,132,132,0,0,0,0,1e-10
+new-haven-2004,nh.t1endexp,new-haven-2004.airport_expansion_t1@historical-v1,132,132,0,12,0.050000011920928955,0,1e-10
 new-haven-2004,nh.t1manvol,new-haven-2004.mandatory_sharing_t1@historical-v1,132,132,0,0,0,0,1e-10
 new-haven-2004,nh.t1volloc,new-haven-2004.voluntary_sharing_t1@historical-v1,132,132,0,0,0,0,1e-10
-new-haven-2004,nh.t2endexp,new-haven-2004.airport_expansion_t2@historical-v1,132,132,0,0,0,0,1e-10
+new-haven-2004,nh.t2endexp,new-haven-2004.airport_expansion_t2@historical-v1,132,132,0,5,0.050000011920928955,0,1e-10
 new-haven-2004,nh.t2manvol,new-haven-2004.mandatory_sharing_t2@historical-v1,132,132,0,0,0,0,1e-10
 new-haven-2004,nh.t2volloc,new-haven-2004.voluntary_sharing_t2@historical-v1,132,132,0,0,0,0,1e-10
 new-haven-2004,bettered,new-haven-2004.higher_education@historical-v1,132,132,0,0,0,0,1e-10
@@ -535,7 +535,7 @@ btp-national-2003,hhincome,btp-national-2003.household_income@historical-v1,245,
 btp-national-2003,female,btp-national-2003.female@historical-v1,245,245,0,0,0,0,1e-10
 btp-national-2003,attextreme,btp-national-2003.attitude_extremity@historical-v1,245,245,0,196,0.0476190447807317,0,1e-10
 btp-national-2003,highinc,btp-national-2003.high_income@historical-v1,245,245,0,0,0,0,1e-10
-btp-national-2003,t1polint,btp-national-2003.political_interest_t1@historical-v1,245,0,0,0,0,0,1e-10
+btp-national-2003,t1polint,btp-national-2003.political_interest_t1@btpn-05-v2,245,0,245,0,0,0,1e-10
 btp-national-2003,t1knowcor2,btp-national-2003.knowledge_joint_midterm@historical-v1,245,0,0,0,0,0,1e-10
 btp-national-2003,t12know,btp-national-2003.knowledge_midterm@historical-v1,245,0,0,0,0,0,1e-10
 btp-national-2003,t12knowcor,btp-national-2003.knowledge_midterm_joint@historical-v1,245,0,0,0,0,0,1e-10
