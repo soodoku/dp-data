@@ -26,7 +26,8 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     "btp-national-2003" = list(
       fields = c("btp03.olt1demo", "btp03.olt2demo",
                  "btp03.olt1global", "btp03.olt2global",
-                 "attextreme", "meanxtreme", "avgsd", "genvar"),
+                 "attextreme", "meanxtreme", "avgsd", "genvar",
+                 "t1polint"),
       rows = 245L
     ),
     "btp-presidential-primaries-2004" = list(

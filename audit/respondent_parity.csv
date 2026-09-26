@@ -535,7 +535,7 @@ btp-national-2003,hhincome,btp-national-2003.household_income@historical-v1,245,
 btp-national-2003,female,btp-national-2003.female@historical-v1,245,245,0,0,0,0,1e-10
 btp-national-2003,attextreme,btp-national-2003.attitude_extremity@historical-v1,245,245,0,196,0.0476190447807317,0,1e-10
 btp-national-2003,highinc,btp-national-2003.high_income@historical-v1,245,245,0,0,0,0,1e-10
-btp-national-2003,t1polint,btp-national-2003.political_interest_t1@historical-v1,245,0,0,0,0,0,1e-10
+btp-national-2003,t1polint,btp-national-2003.political_interest_t1@btpn-05-v2,245,0,245,0,0,0,1e-10
 btp-national-2003,t1knowcor2,btp-national-2003.knowledge_joint_midterm@historical-v1,245,0,0,0,0,0,1e-10
 btp-national-2003,t12know,btp-national-2003.knowledge_midterm@historical-v1,245,0,0,0,0,0,1e-10
 btp-national-2003,t12knowcor,btp-national-2003.knowledge_midterm_joint@historical-v1,245,0,0,0,0,0,1e-10

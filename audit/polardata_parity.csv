@@ -4756,7 +4756,7 @@ btp-national-2003,hhincome,245,245,0,0,0,0,FALSE,0,0,1e-10
 btp-national-2003,female,245,245,0,0,0,0,FALSE,0,0,1e-10
 btp-national-2003,attextreme,245,245,0,196,0,196,FALSE,0,0.0476190447807317,1e-10
 btp-national-2003,highinc,245,245,0,0,0,0,FALSE,0,0,1e-10
-btp-national-2003,t1polint,245,0,0,0,0,0,FALSE,0,0,1e-10
+btp-national-2003,t1polint,245,0,245,0,0,245,FALSE,0,0,1e-10
 btp-national-2003,avgsd2,245,0,0,0,0,0,FALSE,0,0,1e-10
 btp-national-2003,grpgain2,245,0,0,0,0,0,FALSE,0,0,1e-10
 btp-national-2003,t1knowcor2,245,0,0,0,0,0,FALSE,0,0,1e-10
