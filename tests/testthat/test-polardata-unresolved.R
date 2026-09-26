@@ -91,7 +91,11 @@ test_that("resolved polls reproduce historical fields", {
     expected <- expected[match(caseid[selected], expected$caseid), ]
     if (poll %in% c("new_haven", "zeguo", "btp_primaries")) {
       corrected <- switch(poll,
-        new_haven = c("minority", "pminority"),
+        new_haven = c(
+          "minority", "pminority", "nh.t1endexp", "nh.t2endexp",
+          "attextreme", "attextreme2", "meanxtreme", "avgsd",
+          "avgsd2", "genvar"
+        ),
         zeguo = c("chi.t1att2", "chi.t2att3", "attextreme",
                   "meanxtreme", "avgsd", "genvar", "ppage", "meanage"),
         btp_primaries = c(
