@@ -2504,12 +2504,16 @@ The fielded [questionnaire](../data/btp-national-2003/questionnaires/btp-nationa
 shows that Q20, Q21 and Q22 each offer two opposed statements, equal agreement,
 and an unconsidered response. The archived `us_fp_online/scripts/v_online.do`
 and `v_online2.do` recode those same three answers to 1, 2 and 3, then use
-`(value - 1) / 2`, yielding the full 0, 0.5, 1 scale for both waves. That is
-concrete evidence against treating the extra division by two as the only
-historical rule. But those earlier scripts build different index compositions:
-for example, their `globalt` index uses QB2f, QB2j, QB25d, QB25e, QB7 and
-QB37b, while the deposited aggregate includes Q20 and Q21. They cannot be
-substituted wholesale for the deposited later-stage indices.
+`(value - 1) / 2`, yielding the full 0, 0.5, 1 scale for both waves. The
+[contemporary empirical manuscript](../data/shared/papers/foreign-policy.pdf)
+(printed p. 11, PDF p. 12) states that response categories are scored
+linearly on a 0–1 scale; its index descriptions (PDF pp. 13–15) include
+Q20/Q21 in fighting poverty and suffering and Q22 in promoting democracy.
+These are two independent pieces of evidence against half-scaling the items.
+Component weighting is a separate issue: the earlier Stata `globalt` index
+omits Q20/Q21, while the manuscript includes and pre-averages them. The
+deposited index includes them but weights them separately. Neither earlier
+formula can be substituted wholesale for the deposited later-stage index.
 
 Holding the deposited index composition and missing-value rules fixed while
 removing only the extra `/ 2` changes baseline global altruism for 135 of 245
