@@ -253,8 +253,8 @@ test_that("SWE-02 protects every approved conservation value", {
   approved <- readr::read_csv(project_path(
     "audit", "corrections", "swepco-1996", "approved_values.csv"
   ), show_col_types = FALSE)
+  approved <- approved[approved$legacy_field == "swp.t2att3", ]
   expect_equal(nrow(approved), 232L)
-  expect_true(all(approved$legacy_field == "swp.t2att3"))
   data <- full_polardata()
   selected <- data$dpnum == 21L
   expect_setequal(data$caseid[selected], approved$caseid)
@@ -380,8 +380,8 @@ test_that("WTU-03 protects every approved conservation value", {
   approved <- readr::read_csv(project_path(
     "audit", "corrections", "wtu-1996", "approved_values.csv"
   ), show_col_types = FALSE)
+  approved <- approved[approved$legacy_field == "wtu.t2att3", ]
   expect_equal(nrow(approved), 230L)
-  expect_true(all(approved$legacy_field == "wtu.t2att3"))
   data <- full_polardata()
   selected <- data$dpnum == 19L
   expect_setequal(data$caseid[selected], approved$caseid)
@@ -402,6 +402,49 @@ test_that("WTU-03 protects every approved conservation value", {
   data$wtu.t2att3[row] <- approved$historical_value[changed]
   parity <- compare_historical_polardata(data, reference, audit)
   expect_equal(sum(parity$unexplained_differences), 1L)
+})
+
+test_that("SWE-04 and WTU-05 protect normalized research descriptors", {
+  data <- full_polardata()
+  reference <- readr::read_tsv(project_path(
+    "evidence", "benchmarks", "polardata.tab"
+  ), show_col_types = FALSE)
+  audit <- readr::read_csv(project_path(
+    "audit", "polardata_covariances.csv"
+  ), show_col_types = FALSE)
+  for (poll in c("swepco-1996", "wtu-1996")) {
+    dpnum <- if (poll == "swepco-1996") 21L else 19L
+    rows <- data[data$dpnum == dpnum, ]
+    approved <- readr::read_csv(project_path(
+      "audit", "corrections", poll, "approved_values.csv"
+    ), show_col_types = FALSE)
+    fields <- c("attextreme", "meanxtreme", "avgsd", "genvar")
+    expected_changes <- if (dpnum == 21L) c(221L, 232L, 232L, 232L)
+    else c(219L, 230L, 230L, 230L)
+    expect_lte(max(rows$attextreme), .5)
+    for (index in seq_along(fields)) {
+      field <- fields[[index]]
+      frozen <- approved[approved$legacy_field == field, ]
+      expect_equal(nrow(frozen), nrow(rows))
+      expect_setequal(frozen$caseid, rows$caseid)
+      expect_equal(rows[[field]][match(frozen$caseid, rows$caseid)],
+                   frozen$approved_value, tolerance = 1e-10)
+      expect_equal(sum(abs(frozen$historical_value -
+                             frozen$approved_value) > 1e-10),
+                   expected_changes[[index]])
+      expect_identical(is.na(frozen$historical_value),
+                       is.na(frozen$approved_value))
+    }
+    frozen <- approved[approved$legacy_field == "attextreme", ]
+    changed <- which(abs(frozen$historical_value -
+                           frozen$approved_value) > 1e-10)[1]
+    reverted <- data
+    row <- which(reverted$dpnum == dpnum &
+                   reverted$caseid == frozen$caseid[changed])
+    reverted$attextreme[row] <- frozen$historical_value[changed]
+    parity <- compare_historical_polardata(reverted, reference, audit)
+    expect_equal(sum(parity$unexplained_differences), 1L)
+  }
 })
 
 test_that("AUS-04 aligns frozen group gains to respondents", {

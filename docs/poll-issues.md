@@ -1359,25 +1359,48 @@ Rscript ../dp-data/scripts/review_uk_crime_downstream.R learning /tmp/swe-review
 Rscript ../dp-data/scripts/review_uk_crime_downstream.R deliberately /tmp/swe-review /tmp/swe-deliberately
 ```
 
-**SWE-03 — low-income index reflects an earlier script version.** Historical
-`t1att4`/`t2att4` reproduce NEEDTO1/NEEDTO2, the 0–10 basic-needs/cost tradeoff,
-with missing responses filled at 5. The archived script's active LOWINC/POOR
-composite does not reproduce the saved aggregate. The corresponding WTU script
-retains the NEEDTO variant as commented code. This is evidence of a script-vintage
-difference, not grounds to change the historical data. Consult the questionnaire,
-index specification and an executed-script version before choosing a corrected
-construct. The maintained recode identifies NEEDTO inputs explicitly.
+**SWE-03 — low-income index reflects an earlier, documented construct.**
+The saved `t1att4`/`t2att4` exactly reproduce `NEEDTO1`/`NEEDTO2` divided by
+10, with missing responses filled at 5 before scaling, for all 232 attendees
+(two T1 and three T2 fills). The earlier archived
+`historical-cdd-scripts:legacy/pete/datacleaning2012.R` explicitly defines this
+same item for SWEPCO, CPL and WTU. SWEPCO's codebook identifies `NEEDTO` as Q3d:
+meeting everyone's basic needs despite higher costs (the 2012 script's Q3c
+comment conflicts with the codebook). A later index memorandum,
+[`appendix-attitude-indices-6-07-15-rcl.pdf`](../data/shared/codebooks/attitude_indices/past_versions/appendix-attitude-indices-6-07-15-rcl.pdf),
+printed page 17, specifies a different two-item *Helping Low Income Customer*
+construct using Q2e `LOWINC` and Q19b `POOR`; a later poll script implements
+that pair but does not reproduce the saved aggregate. Replacing the historical
+item with this later construct would therefore change the question being
+measured, not merely repair a misspelling. Preserve the saved NEEDTO definition;
+consider a separately named LOWINC/POOR index if the schema is expanded.
+A diagnostic available-item mean of empirically normalized LOWINC/POOR would
+change 204 of 232 T1 and 201 of 232 T2 values, but is not an adopted recode;
+the exact normalization helper used by the later script has not been recovered.
 
-**SWE-04 — extremity precedes research scaling and competition removal.** The
-poll script computes research from RESCH1/FEDRCH1 on the raw 0–10 metric (FEDRCH1
-is entirely missing) and fills missing means at 5. Its seven-index extremity
-includes this unscaled research value and competition. `05_fix_data.R` later
-rescales research to 0–1 and drops competition without recomputing extremity.
-The historical definitions reproduce both stages. Renewables use an available
-raw mean calibrated over [1,10] at T1 and [0,10] at T2; other one-item 0–10
-indices use their historical missing fill of 5. All 39 respondent-field targets
-match for the 232 PART==1 attendees at 1e-10. Review the intended extremity
-metric before changing it, and recompute downstream group dispersion separately.
+**SWE-04 — raw-scale research enters normalized extremity.**
+**Status: approved by the user on 2026-09-25 and adopted.** The poll script
+computes research from `RESCH1`/`FEDRCH1` on the raw 0–10 metric (`FEDRCH1` is
+entirely missing) and fills missing means at 5. Its seven-index extremity and
+group dispersion include this unscaled research value and competition.
+`05_fix_data.R` later rescales the exposed research index to 0–1 and drops
+competition without recomputing the descriptors. The historical definitions
+reproduce both stages. The codebook explicitly gives Q2a `RESCH1` a 0–10
+response scale. An average absolute deviation from .5 across 0–1 indices
+should be at most .5; the saved extremity exceeds .5 for 213 of 232 attendees
+and exceeds 1 for 147. Correcting only the research input to 0–1, while
+retaining the historical seven-index set, changes 221 extremity values and the
+group summaries for all 232 attendees (mean extremity 1.161876 to .304303).
+The approved rule uses normalized research for extremity and group
+variation, while keeping the seven-index battery, 232-person sample, and all
+exposed attitude indices. It does not decide whether competition belongs in a
+future six-index battery. Historical and approved values for all four changed
+fields are frozen by `CASEID` in
+[`approved_values.csv`](../audit/corrections/swepco-1996/approved_values.csv).
+Renewables use an available raw mean calibrated over [1,10] at T1
+and [0,10] at T2; other one-item 0–10 indices use their historical missing
+fill of 5. All 39 historical respondent-field targets match for the 232
+`PART == 1` attendees at 1e-10.
 
 ## WTU 1996 — wtu-1996
 
@@ -1434,24 +1457,54 @@ The 230 historical and approved respondent values are frozen in
 [`approved_values.csv`](../audit/corrections/wtu-1996/approved_values.csv).
 No other WTU aggregate field or sample membership changes.
 
-**WTU-04 — historical low-income index uses NEEDTO at each wave.** The commented
-NEEDTO1/NEEDTO2 variant in `tx_wtu.R`, scaled over [0,10] with missing filled at
-5, exactly reproduces the aggregate. Its active alternative uses LOWINC1/POOR1
-and reuses the baseline pair at T2; that active code does not reproduce the
-saved historical index. The codebook identifies NEEDTO as the importance of
-meeting basic needs despite higher costs. Review the intended construct and
-script vintage before treating either alternative as an approved correction.
+**WTU-04 — historical low-income index uses a documented earlier construct.**
+The `NEEDTO1`/`NEEDTO2` variant, divided by 10 with missing filled at 5, exactly
+reproduces the saved aggregate. It is explicit in the earlier archived
+`historical-cdd-scripts:legacy/pete/datacleaning2012.R` for WTU as well as
+SWEPCO and CPL, and remains commented in the later WTU poll script. The WTU
+codebook identifies `NEEDTO` as Q3d, meeting basic needs despite higher costs.
+The later script instead uses `LOWINC1`/`POOR1` and reuses the
+baseline pair at T2; its active code does not reproduce the saved index.
+As with SWE-03, preserve the earlier construct and treat any later low-income
+composite as a separately defined candidate, not an automatic replacement.
 
-**WTU-05 — preserve the order of extremity and export transformations.** As in
-SWE-04, extremity retains seven indices, unscaled 0–10 baseline research, and
-the subsequently removed competition item. The final research columns are
-normalized over [0,10] at T1 and [1,10] at T2, with missing raw means filled at
-5. Renewables' available raw means are normalized over [2.5,10] at both waves
-and missing indices filled at .5. All 39 respondent-field targets match for 230
-PART==1 attendees at 1e-10. These calibrations are fixed for source-row subsets;
-values outside the attendee calibration population are not silently clipped.
-Questionnaire review must precede a change to theoretical scale endpoints,
-missing-value imputation or the final extremity battery.
+**WTU-05 — raw-scale research enters normalized extremity.**
+**Status: approved by the user on 2026-09-25 and adopted.** As in SWE-04,
+the historical seven-index extremity and group dispersion include unscaled
+0–10 baseline research and the subsequently removed competition item. The WTU
+codebook explicitly gives Q2a `RESCH1` a 0–10 response scale, while the other
+six inputs to these calculations are scaled to 0–1. The final research columns
+are normalized over [0,10] at T1 and [1,10] at T2, with missing raw means filled
+at 5, but extremity and dispersion are not recomputed. Historical extremity
+exceeds the .5 maximum of a 0–1-index average deviation for 212 of 230
+attendees and exceeds 1 for 137. Dividing only the research input by 10 in the
+derived calculations, while retaining all seven indices, changes individual
+extremity for 219 attendees and the group extremity, average SD and generalized
+variance for all 230; no missingness changes. Mean extremity would move from
+1.113256 to .292386, average SD from .600537 to .271398 and generalized
+variance from .298721 to .214985. The approved rule uses normalized
+research for these descriptors and retains the seven-index battery, 230-person
+sample and all exposed attitude indices. Historical and approved values for
+all four changed fields are frozen by `CASEID` in
+[`approved_values.csv`](../audit/corrections/wtu-1996/approved_values.csv).
+Whether competition belongs in a future six-index battery remains a separate
+question. Renewables' available raw means are
+normalized over [2.5,10] at both waves and missing indices filled at .5.
+All 39 historical respondent-field targets match for 230 `PART == 1` attendees
+at 1e-10. These calibrations are fixed for source-row subsets; values outside
+the attendee calibration population are not silently clipped.
+
+The combined SWE-04 and WTU-05 correction changes only `attextreme`,
+`meanxtreme`, `avgsd` and `genvar` in the aggregate; every other poll and
+all respondent sample memberships, knowledge scores, and attitude indices
+are unchanged. Current dp-learning reads the aggregate fields as `extremity`
+and `heterogeneity`: a read-only before/after run changed 440 and 462 frame
+values respectively, with no missingness or model-sample change. Its main model
+retained 5,830 observations and moved the extremity coefficient from -.00948
+to -.06994; its minority model retained 5,182 and moved it from -.01957 to
+-.10073. These model changes are consequences, not the justification for the
+recode. Current dp-distortions and dp-deliberately read pinned historical
+benchmark files, which this correction does not alter.
 
 ## Australia republic 1999 — australia-republic-1999
 
