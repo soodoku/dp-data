@@ -1,6 +1,7 @@
 source(project_path("R", "respondent_health.R"))
 source(project_path("R", "respondent_eu.R"))
 source(project_path("R", "respondent_recode.R"))
+source(project_path("R", "respondent_harmonized.R"))
 source(project_path("R", "respondent_monarchy.R"))
 source(project_path("R", "respondent_election.R"))
 source(project_path("R", "respondent_utilities.R"))
@@ -120,6 +121,8 @@ source_wave_label <- function(poll_id, wave) {
 source_response_rows <- function(survey, people, inputs, items) {
   fields <- union(inputs$source_column, items$source_column)
   stopifnot(all(fields %in% names(survey)))
+  ordinal_rules <- read_metadata("harmonized_ordinal_measures") |>
+    dplyr::filter(.data$poll_id == people$poll_id[[1]])
   dictionary_path <- project_path("data", people$poll_id[[1]], "variables.csv")
   dictionary <- readr::read_csv(dictionary_path, show_col_types = FALSE)
   purrr::map(fields, function(field) {
@@ -162,6 +165,12 @@ source_response_rows <- function(survey, people, inputs, items) {
       known_values <- unique(unlist(strsplit(c(
         item$correct_values, item$incorrect_values
       ), "|", fixed = TRUE)))
+    }
+    ordinal_rule <- ordinal_rules[ordinal_rules$source_column == field, ]
+    if (nrow(ordinal_rule) && !is.na(ordinal_rule$missing_codes[[1]])) {
+      known_missing <- union(known_missing, strsplit(
+        ordinal_rule$missing_codes[[1]], "|", fixed = TRUE
+      )[[1]])
     }
     status <- ifelse(missing, "system-missing", ifelse(
       code %in% known_missing | in_range, "non-substantive", ifelse(
@@ -388,6 +397,8 @@ build_poll_respondents <- function(contract) {
   )
   definitions <- read_metadata("measure_definitions") |>
     dplyr::filter(.data$poll_id == .env$poll_id)
+  harmonized <- read_metadata("harmonized_ordinal_measures") |>
+    dplyr::filter(.data$poll_id == .env$poll_id)
   inputs <- read_metadata("measure_inputs") |>
     dplyr::filter(.data$poll_id == .env$poll_id)
   items <- read_metadata("knowledge_items") |>
@@ -418,7 +429,14 @@ build_poll_respondents <- function(contract) {
   }
   measures <- if (!is.null(builder)) {
     values <- builder(survey)
-    individual_measure_rows(values, people, responses, definitions, inputs)
+    dplyr::bind_rows(
+      individual_measure_rows(
+        values, people, responses,
+        definitions[!definitions$definition_id %in%
+                      harmonized$definition_id, ], inputs
+      ),
+      harmonized_ordinal_rows(people, responses, harmonized)
+    )
   } else {
     tibble::tibble(
       poll_id = character(), respondent_id = character(),

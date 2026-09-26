@@ -1,0 +1,10 @@
+poll_id,definition_id,measure_id,source_column,min_code,max_code,high_code,missing_codes,evidence
+uk-eu-1995,uk-eu-1995.political_interest_t1_harmonized@v1,political_interest_t1_harmonized,genint,1,4,4,-1|8|9,data/uk-eu-1995/codebook.txt; data/uk-eu-1995/value-labels.csv
+uk-monarchy-1996,uk-monarchy-1996.political_interest_t1_harmonized@v1,political_interest_t1_harmonized,A6,1,4,1,5|6,data/uk-monarchy-1996/codebook.pdf; data/uk-monarchy-1996/value-labels.csv
+uk-general-election-1997,uk-general-election-1997.political_interest_t1_harmonized@v1,political_interest_t1_harmonized,int1,1,5,5,-9|-8,data/uk-general-election-1997/codebook.txt; data/uk-general-election-1997/value-labels.csv
+australia-republic-1999,australia-republic-1999.political_interest_t1_harmonized@v1,political_interest_t1_harmonized,intpol1,1,4,4,97,data/australia-republic-1999/variables.csv; data/australia-republic-1999/value-labels.csv; fielded QD1 instrument not retained
+nic-1996,nic-1996.political_interest_t1_harmonized@v1,political_interest_t1_harmonized,POLINTR1,1,4,4,8,data/nic-1996/codebook.txt; data/nic-1996/questionnaire.pdf
+nic2-2003,nic2-2003.political_interest_t1_harmonized@v1,political_interest_t1_harmonized,pint_b,1,4,1,8|9,data/nic2-2003/questionnaires/nic2-treatment-questionnaire.pdf; data/nic2-2003/value-labels.csv
+btp-national-2003,btp-national-2003.political_interest_t1_harmonized@v1,political_interest_t1_harmonized,qb57,1,4,1,-2|-1,data/btp-national-2003/variables.csv; data/btp-national-2003/value-labels.csv; docs/poll-issues.md BTPN-05
+btp-presidential-primaries-2004,btp-presidential-primaries-2004.political_interest_t1_harmonized@v1,political_interest_t1_harmonized,b1q18,1,4,1,-2|-1,data/btp-presidential-primaries-2004/source-materials/baseline-questionnaire.pdf; data/btp-presidential-primaries-2004/value-labels.csv
+btp-health-education-2005,btp-health-education-2005.political_interest_t1_harmonized@v1,political_interest_t1_harmonized,q40,1,4,4,8|9,data/btp-health-education-2005/questionnaire-pre.pdf; data/btp-health-education-2005/value-labels.csv

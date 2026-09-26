@@ -309,6 +309,54 @@
       }
     },
     {
+      "name": "harmonized_ordinal_measures",
+      "path": "metadata/harmonized_ordinal_measures.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "definition_id",
+            "type": "string"
+          },
+          {
+            "name": "measure_id",
+            "type": "string"
+          },
+          {
+            "name": "source_column",
+            "type": "string"
+          },
+          {
+            "name": "min_code",
+            "type": "number"
+          },
+          {
+            "name": "max_code",
+            "type": "number"
+          },
+          {
+            "name": "high_code",
+            "type": "number"
+          },
+          {
+            "name": "missing_codes",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
       "name": "measure_inputs",
       "path": "metadata/measure_inputs.csv",
       "profile": "tabular-data-resource",

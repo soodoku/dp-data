@@ -95,6 +95,20 @@ source is not a claim that its respondent recodes are finished.
 | `respondent_measures` | One person and versioned definition; value and input-field counts |
 | `respondent_memberships` | One documented person/session/group membership; absence does not establish control status |
 
+The [harmonized ordinal rules](../metadata/harmonized_ordinal_measures.csv)
+add `political_interest_t1_harmonized` to `respondent_measures` for nine polls
+with an observed baseline interest question. Each rule reads the raw answer,
+maps the least interested category to 0 and the most interested to 1, and
+spaces intermediate categories evenly. Listed non-substantive codes and system
+missingness remain missing; unexpected codes stop the build. These rules do
+not change historical `t1polint` or `polardata`. Their explicitly listed
+nonanswers are also marked `non-substantive` in `source_responses`. A common
+direction and range
+make the measure interpretable across polls, but different question wording
+and category counts do not imply equal measurement precision. Within-poll
+z-scores would require a separately named definition and an explicit reference
+sample; they are not applied here.
+
 These exports retain **all rows** of the reviewed sources in scope. A missing or
 nonunique source ID gets a file-scoped source-row identifier, with its basis
 recorded. This identifies a source record, not a resolved identity across files.

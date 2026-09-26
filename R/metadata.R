@@ -183,6 +183,7 @@ validate_respondent_metadata <- function() {
   derived_names <- read_metadata("derived_measure_names")
   definitions <- read_metadata("measure_definitions")
   inputs <- read_metadata("measure_inputs")
+  harmonized <- read_metadata("harmonized_ordinal_measures")
   reviewed <- contracts[contracts$status == "reviewed-source", ]
   defined <- paste(definitions$poll_id, definitions$definition_id)
   dependencies <- paste(inputs$poll_id, inputs$definition_id)
@@ -226,6 +227,24 @@ validate_respondent_metadata <- function() {
     all(definitions$poll_id %in% reviewed$poll_id),
     all(dependencies %in% defined),
     setequal(defined[!constant], dependencies),
+    !anyDuplicated(harmonized[c("poll_id", "definition_id")]),
+    !anyDuplicated(harmonized[c("poll_id", "source_column")]),
+    setequal(
+      paste(harmonized$poll_id, harmonized$definition_id),
+      defined[grepl("_harmonized$", definitions$measure_id)]
+    ),
+    all(harmonized$measure_id == definitions$measure_id[
+      match(paste(harmonized$poll_id, harmonized$definition_id), defined)
+    ]),
+    all(harmonized$poll_id %in% reviewed$poll_id),
+    all(paste(harmonized$poll_id, harmonized$definition_id,
+              harmonized$source_column) %in%
+          paste(inputs$poll_id, inputs$definition_id,
+                inputs$source_column)),
+    all(harmonized$min_code < harmonized$max_code),
+    all(harmonized$high_code == harmonized$min_code |
+          harmonized$high_code == harmonized$max_code),
+    all(!is.na(harmonized$evidence)),
     all(paste(implemented$poll_id, implemented$canonical_definition) %in%
           defined),
     all(!is.na(targets$blocker[targets$status != "implemented"])),
