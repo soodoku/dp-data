@@ -2798,10 +2798,12 @@ changes for 206 of 233 participants, with no missingness change; group and
 poll descriptors do not use post attitudes and are unaffected by this second
 edit. The six-field person-level comparison is in
 `audit/corrections/zeguo-2005/approved_values.csv`; all other fields retain
-their historical scoring. The generalized-variance column has platform-dependent numerical exceptions
-for the other 15 groups; group 5207 is treated as an approved correction, not
-a numerical exception. The comparison file retains the historical benchmark
-as its old value.
+their historical scoring. The generalized-variance column has platform-dependent
+numerical exceptions for the other 15 groups. Group 5207 remains an approved
+correction: its rank-deficient covariance matrix also gives platform-dependent
+values, so parity verifies the exact corrected input matrix, its rank and
+bounded variance against the rebuilt source. The ledger records the macOS
+value; the comparison file retains the historical benchmark as its old value.
 
 ### ZG-03: Two road indices make covariance numerically singular
 

@@ -181,6 +181,27 @@ test_that("numerical exceptions cannot hide changed aggregate values", {
   zeguo_variance <- parity$poll_id == "zeguo-2005" &
     parity$legacy_field == "genvar"
   expect_equal(parity$approved_correction_differences[zeguo_variance], 16L)
+  corrected <- which(data$dpnum == 9 & data$pollgroup == 5207)
+  zeguo_audit <- which(audit$poll_id == "zeguo-2005" &
+                         audit$pollgroup == 5207)
+  expect_length(corrected, 16L)
+  expect_length(zeguo_audit, 1L)
+  linux <- data
+  linux$genvar[corrected] <- 0.030543946597843295
+  linux_audit <- audit
+  linux_audit$source_genvar[zeguo_audit] <- 0.030543946597843295
+  expect_equal(sum(compare_historical_polardata(
+    linux, reference, linux_audit
+  )$unexplained_differences), 0L)
+  linux$genvar[corrected[1]] <- 0.1
+  expect_equal(sum(compare_historical_polardata(
+    linux, reference, linux_audit
+  )$unexplained_differences), 1L)
+  linux$genvar[corrected[1]] <- 0.030543946597843295
+  linux_audit$attitudes_sha256[zeguo_audit] <- "changed"
+  expect_equal(sum(compare_historical_polardata(
+    linux, reference, linux_audit
+  )$unexplained_differences), 16L)
   group <- audit$pollgroup[which(audit$numerical_exception)[1]]
   row <- which(data$pollgroup == group)[1]
   data$genvar[[row]] <- 1
