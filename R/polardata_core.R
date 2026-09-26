@@ -92,7 +92,6 @@ core_poll_profile <- function(survey, poll_id) {
   if (poll_id %in% c("cpl-1996", "wtu-1996", "swepco-1996")) {
     competition <- read_utility_value(survey, poll_id, "compet1", 1:5)
     if (poll_id != "cpl-1996") {
-      baseline$research_t1 <- baseline$research_t1 * 10
       competition <- dplyr::coalesce(competition, 5)
     }
     baseline$competition <- (competition - 1) / 4

@@ -92,6 +92,12 @@ historical_derived_measures <- function(polls) {
       dplyr::mutate(
         poll_id = .env$poll_id,
         definition_version = dplyr::case_when(
+          .env$poll_id == "swepco-1996" &
+            .data$legacy_field %in% c("meanxtreme", "avgsd", "genvar") ~
+            "swe-04-v2",
+          .env$poll_id == "wtu-1996" &
+            .data$legacy_field %in% c("meanxtreme", "avgsd", "genvar") ~
+            "wtu-05-v2",
           .env$poll_id == "uk-general-election-1997" &
             .data$legacy_field %in% c(
               "grpgain", "grpgainr", "loggain", "avgsd", "genvar"

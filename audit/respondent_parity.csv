@@ -734,7 +734,7 @@ wtu-1996,educ4,education_four@historical-v1,230,229,0,0,0,0,1e-10
 wtu-1996,minority,minority@historical-v1,230,224,0,0,0,0,1e-10
 wtu-1996,hhincome,household_income@historical-v1,230,0,0,0,0,0,1e-10
 wtu-1996,female,female@historical-v1,230,230,0,0,0,0,1e-10
-wtu-1996,attextreme,attitude_extremity@historical-v1,230,230,0,0,4.884981308350689e-15,0,1e-10
+wtu-1996,attextreme,attitude_extremity@wtu-05-v2,230,230,0,219,1.2857142857142905,0,1e-10
 wtu-1996,highinc,high_income@historical-v1,230,0,0,0,0,0,1e-10
 wtu-1996,t1polint,political_interest_t1@historical-v1,230,0,0,0,0,0,1e-10
 wtu-1996,t1knowcor2,knowledge_joint_midterm@historical-v1,230,0,0,0,0,0,1e-10
@@ -818,7 +818,7 @@ swepco-1996,educ4,education_four@historical-v1,232,231,0,0,0,0,1e-10
 swepco-1996,minority,minority@historical-v1,232,228,0,0,0,0,1e-10
 swepco-1996,hhincome,household_income@historical-v1,232,0,0,0,0,0,1e-10
 swepco-1996,female,female@historical-v1,232,232,0,0,0,0,1e-10
-swepco-1996,attextreme,attitude_extremity@historical-v1,232,232,0,0,4.884981308350689e-15,0,1e-10
+swepco-1996,attextreme,attitude_extremity@swe-04-v2,232,232,0,221,1.28571428571429,0,1e-10
 swepco-1996,highinc,high_income@historical-v1,232,0,0,0,0,0,1e-10
 swepco-1996,t1polint,political_interest_t1@historical-v1,232,0,0,0,0,0,1e-10
 swepco-1996,t1knowcor2,knowledge_joint_midterm@historical-v1,232,0,0,0,0,0,1e-10

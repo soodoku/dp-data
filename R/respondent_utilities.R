@@ -125,10 +125,6 @@ build_utility_individual <- function(survey, poll_id) {
     else utility_attitudes(survey, poll_id, wave)
   }) |> purrr::list_cbind()
   baseline <- attitudes |> dplyr::select(dplyr::ends_with("_t1"))
-  if (!cpl) {
-    # The merge rescales research after extremity was already calculated.
-    baseline$research_t1 <- baseline$research_t1 * 10
-  }
   competition <- read_utility_value(survey, poll_id, "compet1", 1:5)
   if (!cpl) competition <- dplyr::coalesce(competition, 5)
   baseline$competition_t1 <- (competition - 1) / 4
