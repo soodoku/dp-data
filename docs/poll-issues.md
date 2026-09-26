@@ -8,7 +8,7 @@ coverage of the 23 existing knowledge builds and the respondent reconstructions.
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
 UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24;
-SWE-02, AUS-03, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02 and UKGE-05 were approved in subsequent poll reviews.
+SWE-02, AUS-03, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02, UKGE-05, BTPHE-01 and BTPHE-03 were approved in subsequent poll reviews.
 Other proposals remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
@@ -1662,17 +1662,27 @@ calibration-universe definition and repair history before changing the descripto
 
 ## BTP Health and Education 2005 — btp-health-education-2005
 
-**BTPHE-01 — existing demographic missingness divergence.** All 454 source rows
-enter the six-item battery and 30 groups. Item scores match, but two source gender
-values are missing where the deposit records female = 0. That is two unknown
-values versus a binary assignment; it is not evidence about those persons' gender.
+### BTPHE-01: Missing gender remains missing (corrected)
 
-**Next check:** revisit the original merged-file construction and both
-[pre](../data/btp-health-education-2005/questionnaire-pre.doc) and
-[post](../data/btp-health-education-2005/questionnaire-post.doc) instruments.
-Establish whether another wave supplies these values and whether the deposit's
-coding was deliberate. Keep the present upstream/deposit distinction explicit;
-do not silently replace downstream values in this documentation pass.
+All 454 source respondents remain in the sample. CASEID 970104 (group 9707)
+and 970404 (group 9727) have missing `gender` in the deposited source. The
+historical `gender %in% 2` expression turned those two unknown answers into
+`female = 0`, which means male in this binary field. Neither the
+[pre](../data/btp-health-education-2005/questionnaire-pre.pdf) nor
+[post](../data/btp-health-education-2005/questionnaire-post.pdf) instrument
+contains an alternate gender question. The approved recode uses `gender == 2`,
+so both derived values are missing. The source observations are untouched.
+
+In group 9707, the female share rises from 8/19 = 0.421052632 to 8/18 =
+0.444444444; in group 9727 it rises from 6/16 = 0.375 to 6/15 = 0.4.
+The resulting female share, variance and SD change for all 35 respondents in
+those two groups; the leave-one-out share changes for 33 observed genders and
+becomes missing for the two unknown genders. The combined group entropy also
+changes for those 35 rows. The existing centralized leave-one-out and entropy
+helpers retain their historical denominator conventions; a separate
+cross-poll review of missing-aware group formulas is needed before changing
+those shared definitions. Case-level old and new values are frozen in
+`audit/corrections/btp-health-education-2005/approved_values.csv`.
 
 ### BTPHE-02: Funding index and float storage reproduce the original definition
 
@@ -1687,22 +1697,28 @@ government-involvement scales add components sequentially in float32, then divid
 and store float32. Double-precision `rowMeans` differs by up to about 0.00000006.
 Each extremity component is also stored as float32 before its final mean.
 These storage stages are reproduced, without loosening scoring tolerances.
-Historical missing gender becomes female=0 for two people; missing race stays
-missing for six. Resolve missing-gender intent using source generation and
-alternate-wave answers before revising BTPHE-01's distinction.
+The BTPHE-01 correction now retains missing gender for two people; missing
+race remains missing for six.
 
-### BTPHE-03: Poll knowledge retains an earlier key and denominator policy
+### BTPHE-03: Q15 calibration answer key (corrected)
 
-`t1knowlevel = 0.277147799730301` uses all 3,298 records of `2005alice.dta`,
-Q15 key 3 (bottom ten), and keys Q16=1, Q17=1, Q26/Q27/Q28=3. It omits system
-missing answers from each person's denominator, sets all-six-missing scores to
-zero, averages float32 scores, rounds seven decimals and stores float32.
-The final 454-person score instead uses Q15 key 2 (top ten) from `reagg.txt`
-and a fixed six-item denominator. `calibration-responses.parquet` preserves the
-six raw answers and IDs needed to reconstruct the older descriptor. Check the
-fielded Q15 wording, contemporaneous factual key and revision sequence before
-aligning these scoring versions. Two group covariance exceptions are documented
-in X-09; they are separate from this key discrepancy.
+The fielded pre-questionnaire Q15 asks where the United States ranks in math
+skills among 29 wealthy industrialized countries. The poll's own education
+briefing states 24th of 29, which is in the bottom 10. The source value labels
+map "bottom 10" to code 2 and "top 10" to code 3. The archived `btp05.R`
+script and the final 454-person knowledge scorer both use code 2. Only the
+earlier 3,298-record calibration descriptor `t1knowlevel` treated code 3 as
+correct. This was a reversed answer key, not a different scoring construct.
+
+The approved correction changes only that calibration key to code 2. It keeps
+the 3,298-record calibration universe, six question keys, available-item
+missing policy, zero for all-six-missing, float32 storage and seven-decimal
+rounding. The poll descriptor changes from 0.277147799730301 to
+0.337037593126297. All 454 participant knowledge scores remain unchanged.
+The source answers and identities remain in `calibration-responses.parquet`.
+The 20 `genvar` differences against the frozen historical deposit are
+preexisting singular covariance exceptions documented in X-09, not effects of
+this correction.
 
 ## BTP Online Primaries 2004 — btp-online-primaries-2004
 
@@ -1774,22 +1790,35 @@ seven-item fixed-denominator battery, with nonanswers scoring zero.
 
 ## California 2011 — california-whats-next-2011
 
-**CA-01 — unresolved sample mismatch.** `t2t3filter == 1` with observed `part`
-selects 396 of 472 source records, versus 401 deposited batteries. `id` is unique
-in that sample; `idnum` is not. Do not manufacture five people or assume a row
-link to obtain parity. The prior comparison deliberately reports no person-level
-score differences for unequal samples.
+### CA-01: The available source and deposited battery use different samples
 
-**CA-02 — wave-dependent response codes.** The prior audit records Democratic
-control as code 2 before and code 1 afterward. Post code 3, Independent, is a
-substantive wrong answer; one historical recode excluded it. Re-read the
-[pre](../data/california-whats-next-2011/questionnaire-pre.doc),
-[post](../data/california-whats-next-2011/questionnaire-post.doc) and
-[codebook](../data/california-whats-next-2011/codebook.pdf) together before deciding
-whether a changed value is a key error, a questionnaire-version change, or a
-sample difference. Quantification against individual deposited rows remains
-unestablished. Group membership uses the departure group, not an assumed stable
-baseline group.
+The archived `ca_referendum.R` filters `part` to observed values and then
+`t2t3filter == 1`. In the available 472-row merged source, that yields 396
+people; all 396 have `part == 1`, `t2t3filter == 1`, and unique `id`. No person
+with `t2t3filter == 1` is lost because `part` is missing. The separately
+published, anonymous `ca.csv` battery has 401 rows. The five-row gap is
+therefore not caused by that participation filter. The available source is the
+file named `California_Merged_t1-t2-t3_6-28-11.dta`; the battery has no
+respondent IDs. A different merged-file version or export may explain the gap,
+but the present records cannot identify five individual additions. Do not
+manufacture five people or infer a row crosswalk from scores.
+
+### CA-02: Party-control scoring is correct in the current knowledge build
+
+The pre-questionnaire asks which party controls the Senate and Assembly. The
+source labels map Republican to code 1 and Democratic to code 2. The departure
+questionnaire presents Democratic, Republican and Independent as separate
+answers; Democratic is code 1 in that wave. The archived script scores the
+departure Senate item `t3q27` as 1→correct, 2→incorrect, and 3→missing,
+while its Assembly item scores 3→incorrect. Two of the 396 selected source
+people answered Senate code 3. The script's later `nona` step turns missing
+item scores to zero, so these two responses still contribute incorrect answers
+to the final five-item knowledge score. The current
+`metadata/knowledge_items.csv` specifies 3 as incorrect for both items.
+This is a wave-specific category ordering and intermediate missing-value
+inconsistency, not evidence for changing the final score. No recode is made.
+The 396-versus-401 sample gap in CA-01 still prevents case-level comparison
+to the deposited battery.
 
 ## Europolis 2009 — europolis-2009
 
@@ -2615,6 +2644,11 @@ are different states. A zero-filled knowledge score may deliberately count some
 missing answers as incorrect; preserve that as a named scoring policy while
 retaining raw response reasons. Partial attitude-index means have changing
 observed denominators. Neither policy should be silently generalized to the other.
+The centralized `pfemale_ind` helper uses full group size in its leave-one-out
+denominator, while `pfemale` omits missing genders; the entropy helper also
+divides observed categories by full group size. BTPHE-01 exposes this mismatch
+in groups 9707 and 9727. A change to these shared formulas must be assessed
+across all polls and frozen separately from the source-gender correction.
 
 ### X-04: Person-level identity requires more than matching scores
 

@@ -684,7 +684,7 @@ btp-health-education-2005,ppage,454,452,age@historical-v1,implemented,R/responde
 btp-health-education-2005,educ4,454,452,education_four@historical-v1,implemented,R/respondent_btp_health.R; docs/poll-issues.md,
 btp-health-education-2005,minority,454,448,minority@historical-v1,implemented,R/respondent_btp_health.R; docs/poll-issues.md,
 btp-health-education-2005,hhincome,454,0,household_income@historical-v1,implemented,R/respondent_btp_health.R; docs/poll-issues.md,
-btp-health-education-2005,female,454,454,female@historical-v1,implemented,R/respondent_btp_health.R; docs/poll-issues.md,
+btp-health-education-2005,female,454,452,female@btphe-01-v2,implemented,R/respondent_btp_health.R; docs/poll-issues.md,
 btp-health-education-2005,attextreme,454,454,attitude_extremity@historical-v1,implemented,R/respondent_btp_health.R; docs/poll-issues.md,
 btp-health-education-2005,highinc,454,0,high_income@historical-v1,implemented,R/respondent_btp_health.R; docs/poll-issues.md,
 btp-health-education-2005,t1polint,454,453,btp-health-education-2005.political_interest_t1@historical-v1,implemented,R/respondent_btp_health.R; docs/poll-issues.md,

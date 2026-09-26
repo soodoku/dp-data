@@ -684,7 +684,7 @@ btp-health-education-2005,ppage,age@historical-v1,454,452,0,0,0,0,1e-10
 btp-health-education-2005,educ4,education_four@historical-v1,454,452,0,0,0,0,1e-10
 btp-health-education-2005,minority,minority@historical-v1,454,448,0,0,0,0,1e-10
 btp-health-education-2005,hhincome,household_income@historical-v1,454,0,0,0,0,0,1e-10
-btp-health-education-2005,female,female@historical-v1,454,454,0,0,0,0,1e-10
+btp-health-education-2005,female,female@btphe-01-v2,454,452,2,0,0,0,1e-10
 btp-health-education-2005,attextreme,attitude_extremity@historical-v1,454,454,0,0,4.996003610813204e-16,0,1e-10
 btp-health-education-2005,highinc,high_income@historical-v1,454,0,0,0,0,0,1e-10
 btp-health-education-2005,t1polint,btp-health-education-2005.political_interest_t1@historical-v1,454,453,0,0,3.3306690738754696e-16,0,1e-10

@@ -47,6 +47,16 @@ test_that("derived exports preserve unique people and reviewed gain", {
     )
   expect_setequal(unique(derived$definition_version[election_group]),
                   "ukge-05-v2")
+  health_gender <- derived$poll_id == "btp-health-education-2005" &
+    derived$legacy_field %in% c(
+      "pfemale", "varfemale", "sdfemale", "pfemale_ind", "entropy"
+    )
+  expect_setequal(unique(derived$definition_version[health_gender]),
+                  "btphe-01-v2")
+  health_baseline <- derived$poll_id == "btp-health-education-2005" &
+    derived$legacy_field == "t1knowlevel"
+  expect_setequal(unique(derived$definition_version[health_baseline]),
+                  "btphe-03-v2")
 })
 
 test_that("numerical exceptions cannot hide changed aggregate values", {

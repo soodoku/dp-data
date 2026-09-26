@@ -116,7 +116,7 @@ build_btp_health_individual <- function(
     ),
     tibble::tibble(
       age = age,
-      female = as.numeric(btp_source_codes(survey, "gender", 1:2) %in% 2),
+      female = as.numeric(btp_source_codes(survey, "gender", 1:2) == 2),
       minority = as.numeric(btp_source_codes(survey, "race", 1:7) != 1),
       education_four = education,
       education_three = collapse_historical_education(education),

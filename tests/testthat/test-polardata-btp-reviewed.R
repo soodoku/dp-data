@@ -1,6 +1,7 @@
 source(file.path(root, "R", "respondents.R"))
 source(file.path(root, "R", "respondent_btp_general.R"))
 source(file.path(root, "R", "respondent_btp_health.R"))
+source(file.path(root, "R", "respondent_parity.R"))
 source(file.path(root, "R", "respondent_san_mateo.R"))
 source(file.path(root, "R", "polardata_derived.R"))
 source(file.path(root, "R", "polardata_assembly.R"))
@@ -17,7 +18,7 @@ test_that("US poll calibration preserves earlier scoring and sample vintages", {
     as_historical_float(.1111111)
   )
   health <- tibble::tibble(
-    q15 = c(3, NA_real_), q16 = c(NA_real_, NA_real_),
+    q15 = c(2, NA_real_), q16 = c(NA_real_, NA_real_),
     q17 = c(NA_real_, NA_real_), q26 = c(NA_real_, NA_real_),
     q27 = c(NA_real_, NA_real_), q28 = c(NA_real_, NA_real_)
   )
@@ -60,6 +61,14 @@ test_that("US aggregates match except diagnosed singular covariances", {
       match(expected$caseid, ids)
     ])
     actual <- builders[[index]](survey, values)
+    if (poll == "btp-health-education-2005") {
+      for (field in c("female", "pfemale", "varfemale", "sdfemale",
+                      "pfemale_ind", "entropy", "t1knowlevel")) {
+        expected[[field]] <- approved_reference_values(
+          poll, field, expected$caseid, expected[[field]]
+        )
+      }
+    }
     for (field in setdiff(names(actual), "genvar")) {
       expect_identical(is.na(actual[[field]]), is.na(expected[[field]]),
         info = paste(poll, field)
