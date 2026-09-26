@@ -1687,10 +1687,19 @@ number `X` is regenerated. The source identity, group, response count, score,
 and inclusion status are frozen in
 `audit/corrections/btp-general-election-2004/approved_inclusions.csv`.
 
-One previously included source person (original case ID 91, aggregate ID
-940080) has `dop4part = 0` despite nonmissing post knowledge and attitudes.
-That attendance-flag discrepancy is separate and remains for fieldwork-record
-review; BTPGE-05 does not change that person's inclusion.
+### BTPGE-06: Attendance flag conflicts with recorded meetings
+
+Original case ID 91 (aggregate ID 940080, small group 4) is already in the
+historical aggregate. Both `survey.dta` and `raw-responses.dta` record
+`dop4part = 0` and `dop4 = 0`; the `dop4` value label says “dop participant,
+but not in this wave.” Yet both files also record `w4total = 5` and
+`w4mtg1` through `w4mtg5` equal to 1, each labeled “attended.” This person
+has observed post knowledge and attitudes. The attendance flag and session
+records therefore contradict each other for this case; zero in `dop4part`
+cannot by itself establish nonattendance. Keep the person in the aggregate
+while checking the original session roster, the provenance of these fields,
+and any correction history. BTPGE-05 did not change this inclusion, and no
+attendance flag or group descriptor is changed here.
 
 ## BTP Health and Education 2005 — btp-health-education-2005
 
