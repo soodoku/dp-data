@@ -36,7 +36,7 @@ unresolved_test_fields <- function(poll) {
     ),
     zeguo = stats::setNames(c(
       "industrial_roads", "village_roads", "main_roads",
-      "commercial_roads", "main_roads_rescaled", "other_parks",
+      "commercial_roads", "wenchang_main_avenue", "other_parks",
       "township_image", "cultural_heritage", "sewage"
     ), paste0("att", 1:9))
   )
@@ -96,8 +96,11 @@ test_that("resolved polls reproduce historical fields", {
           "attextreme", "attextreme2", "meanxtreme", "avgsd",
           "avgsd2", "genvar"
         ),
-        zeguo = c("chi.t1att2", "chi.t2att3", "attextreme",
-                  "meanxtreme", "avgsd", "genvar", "ppage", "meanage"),
+        zeguo = c(
+          "chi.t1att2", "chi.t1att5", "chi.t2att3", "chi.t2att5",
+          "attextreme", "meanxtreme", "avgsd", "genvar",
+          "ppage", "meanage"
+        ),
         btp_primaries = c(
           "grpgain", "grpgainr", "loggain", "groupsize", "vareduc",
           "sdeduc", "pfemale_ind", "meant1know_ind",

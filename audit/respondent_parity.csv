@@ -328,7 +328,7 @@ zeguo-2005,educ4,zeguo-2005.education_four@historical-v1,233,205,0,0,0,0,1e-10
 zeguo-2005,minority,zeguo-2005.minority@historical-v1,233,0,0,0,0,0,1e-10
 zeguo-2005,hhincome,zeguo-2005.household_income@historical-v1,233,0,0,0,0,0,1e-10
 zeguo-2005,female,zeguo-2005.female@historical-v1,233,225,0,0,0,0,1e-10
-zeguo-2005,attextreme,zeguo-2005.attitude_extremity@zg-02-v2,233,233,0,1,0.1462962991661495,0,1e-10
+zeguo-2005,attextreme,zeguo-2005.attitude_extremity@zg-02-v2,233,233,0,172,0.13518518871731222,0,1e-10
 zeguo-2005,highinc,zeguo-2005.high_income@historical-v1,233,0,0,0,0,0,1e-10
 zeguo-2005,t1polint,zeguo-2005.political_interest_t1@historical-v1,233,0,0,0,0,0,1e-10
 zeguo-2005,t1knowcor2,zeguo-2005.knowledge_joint_midterm@historical-v1,233,0,0,0,0,0,1e-10
@@ -348,7 +348,7 @@ zeguo-2005,chi.t1att1,zeguo-2005.industrial_roads_t1@historical-v1,233,233,0,0,4
 zeguo-2005,chi.t1att2,zeguo-2005.village_roads_t1@zg-02-v2,233,232,1,0,4.996003610813204e-16,0,1e-10
 zeguo-2005,chi.t1att3,zeguo-2005.main_roads_t1@historical-v1,233,233,0,0,4.996003610813204e-16,0,1e-10
 zeguo-2005,chi.t1att4,zeguo-2005.commercial_roads_t1@historical-v1,233,233,0,0,4.996003610813204e-16,0,1e-10
-zeguo-2005,chi.t1att5,zeguo-2005.main_roads_rescaled_t1@historical-v1,233,233,0,0,4.440892098500626e-16,0,1e-10
+zeguo-2005,chi.t1att5,zeguo-2005.wenchang_main_avenue_t1@zg-05-v2,233,233,0,175,1,0,1e-10
 zeguo-2005,chi.t1att6,zeguo-2005.other_parks_t1@historical-v1,233,233,0,0,4.440892098500626e-16,0,1e-10
 zeguo-2005,chi.t1att7,zeguo-2005.township_image_t1@historical-v1,233,233,0,0,0,0,1e-10
 zeguo-2005,chi.t1att8,zeguo-2005.cultural_heritage_t1@historical-v1,233,233,0,0,4.996003610813204e-16,0,1e-10
@@ -357,7 +357,7 @@ zeguo-2005,chi.t2att1,zeguo-2005.industrial_roads_t2@historical-v1,233,233,0,0,4
 zeguo-2005,chi.t2att2,zeguo-2005.village_roads_t2@historical-v1,233,233,0,0,5.273559366969494e-16,0,1e-10
 zeguo-2005,chi.t2att3,zeguo-2005.main_roads_t2@zg-02-v2,233,233,0,206,1,0,1e-10
 zeguo-2005,chi.t2att4,zeguo-2005.commercial_roads_t2@historical-v1,233,233,0,0,5.273559366969494e-16,0,1e-10
-zeguo-2005,chi.t2att5,zeguo-2005.main_roads_rescaled_t2@historical-v1,233,233,0,0,4.440892098500626e-16,0,1e-10
+zeguo-2005,chi.t2att5,zeguo-2005.wenchang_main_avenue_t2@zg-05-v2,233,233,0,199,1,0,1e-10
 zeguo-2005,chi.t2att6,zeguo-2005.other_parks_t2@historical-v1,233,233,0,0,4.440892098500626e-16,0,1e-10
 zeguo-2005,chi.t2att7,zeguo-2005.township_image_t2@historical-v1,233,233,0,0,0,0,1e-10
 zeguo-2005,chi.t2att8,zeguo-2005.cultural_heritage_t2@historical-v1,233,233,0,0,5.273559366969494e-16,0,1e-10

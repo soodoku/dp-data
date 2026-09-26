@@ -3173,10 +3173,20 @@ people would move from 0.60674 to 0.73219 at baseline and 0.61245 to
 and must not be compared directly to those full-sample means.
 
 This is evidence of a wrong source-field selection, not a reason to alter
-the group-dispersion formula poll by poll. Before correction, compare all
-affected respondent and centrally derived fields and run downstream analyses
-against the candidate. Preserve the current score pending that review and
-user approval.
+the group-dispersion formula poll by poll. Replacing the duplicated slot
+makes all 16 nine-index group covariance matrices full rank; the historical
+matrices all have rank eight. In a paired candidate build, only
+six wide fields change: 175 `chi.t1att5`, 199 `chi.t2att5`, 172
+`attextreme`, and the centrally derived `meanxtreme`, `avgsd` and `genvar`
+for all 233 selected people. No sample or missingness changes. The current
+`dp-learning` mixed model retains 5,850 observations; its heterogeneity
+coefficient moves from 0.004060487 to 0.02556485 and its extremity
+coefficient from -0.06774958 to -0.07214343. Fifteen of 21 paired
+`dp-distortions` result CSVs and 19 of 28 pooled inference rows change;
+pooled gender comparisons lose one eligible pair under the revised group
+mean. These consequences do not determine correctness. Main retains the
+historical score; the separately tested correction remains a review candidate
+pending user approval.
 
 ## Cross-poll issues for the eventual schema
 
