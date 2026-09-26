@@ -64,13 +64,12 @@ btp_national_attitudes <- function(survey, wave) {
       item("39", "leadership"), item("32a", "trade_organization")
     ),
     democracy = mean_items(
-      item("22", "support") / 2,
-      democracy_group, item("25c")
+      item("22", "support"), democracy_group, item("25c")
     ),
     foreign_aid = item("24", "support"),
     global_altruism = mean_items(
       item("2f"), item("2j"), poverty_aid,
-      poverty_building, item("20", "support") / 2, item("21", "support") / 2
+      poverty_building, item("20", "support"), item("21", "support")
     ),
     trade = item("33", "trade")
   )

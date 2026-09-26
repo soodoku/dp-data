@@ -2483,13 +2483,13 @@ The independent source build now matches all 45 respondent targets and 39
 additional group/poll fields within 1e-10, with exact missingness and no numerical
 exceptions. It uses raw qb/qf answers, not stored indices.
 
-### BTPN-02: Support components use half the comparable standalone scale
+### BTPN-02: Support components now use the instrument's full scale (corrected)
 
-Raw qb/qf20, 21 and 22 map support/opposition/middle to 0.5/0/0.25 within global
-altruism (20/21) and democracy (22). A comparable standalone support transform
-uses 1/0/0.5. This half-scale is necessary to reproduce the stored indices and
-aggregate. The following counts identify nonzero components affected by doubling
-that scale; they are component counts, not distinct people across all items.
+The deposited indices mapped support/opposition/equal answers on qb/qf20, 21
+and 22 to 0.5/0/0.25 within global altruism (20/21) and democracy (22).
+Approved BTPN-02 uses 1/0/0.5 for these three items in both waves. The
+following counts identify nonzero components affected by the correction; they
+are component counts, not distinct people across all items.
 
 | Wave/item | Nonzero components | Usable answers | Missing answers |
 |---|---:|---:|---:|
@@ -2515,21 +2515,24 @@ omits Q20/Q21, while the manuscript includes and pre-averages them. The
 deposited index includes them but weights them separately. Neither earlier
 formula can be substituted wholesale for the deposited later-stage index.
 
-Holding the deposited index composition and missing-value rules fixed while
-removing only the extra `/ 2` changes baseline global altruism for 135 of 245
+Holding the deposited index composition and missing-value rules fixed, the
+approved removal of the extra `/ 2` changes baseline global altruism for 135 of 245
 records and democracy for 154 of 245; post global altruism changes for 153 of
 244 nonmissing records and post democracy for 160 of 244. Maximum changes to
-each index are 1/6. Rebuilding the complete poll with this single provisional
+each index are 1/6. Rebuilding the complete poll with this one corrected
 rule changes only eight exported fields: those four attitude indices,
 `attextreme` (196 rows, maximum 0.04761904), `meanxtreme` (245, 0.0179784),
 `avgsd` (245, 0.01383719), and `genvar` (245, 0.02815631). It preserves all
-245 records, case IDs and missing-value patterns; the provisional build changes
-no other fields. The related NIC II index memo names Q20/Q21 as part
+245 records, case IDs and missing-value patterns; no other fields change.
+Case-level values for all eight fields are in
+`audit/corrections/btp-national-2003/approved_values.csv`. The related NIC II
+index memo names Q20/Q21 as part
 of global altruism and Q22 as part of democracy, but its component weighting
 differs from the deposited BTP index. The NIC II memo and
 `nic_2/scripts/checking_July27_online.do` are cross-checks, not direct
-authority for BTP. This remains an unapproved candidate: trace the later BTP
-index-construction stage and compare published summaries before changing it.
+authority for BTP. Tracing the later BTP index-construction stage and
+comparing published summaries remains necessary before any separate change to
+component weighting.
 
 ### BTPN-03: Eleven-item respondent knowledge and baseline calibration differ
 

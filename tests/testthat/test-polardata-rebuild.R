@@ -69,6 +69,10 @@ test_that("derived exports preserve unique people and reviewed gain", {
     derived$legacy_field == "t1knowlevel"
   expect_setequal(unique(derived$definition_version[san_mateo_level]),
                   "sm-03-v2")
+  btp_national_group <- derived$poll_id == "btp-national-2003" &
+    derived$legacy_field %in% c("meanxtreme", "avgsd", "genvar")
+  expect_setequal(unique(derived$definition_version[btp_national_group]),
+                  "btpn-02-v2")
 })
 
 test_that("numerical exceptions cannot hide changed aggregate values", {
@@ -85,6 +89,9 @@ test_that("numerical exceptions cannot hide changed aggregate values", {
   san_mateo_level <- parity$poll_id == "san-mateo-2008" &
     parity$legacy_field == "t1knowlevel"
   expect_equal(parity$approved_correction_differences[san_mateo_level], 239L)
+  national_global <- parity$poll_id == "btp-national-2003" &
+    parity$legacy_field == "btp03.olt1global"
+  expect_equal(parity$approved_correction_differences[national_global], 135L)
   zeguo_variance <- parity$poll_id == "zeguo-2005" &
     parity$legacy_field == "genvar"
   expect_equal(parity$approved_correction_differences[zeguo_variance], 16L)
