@@ -840,6 +840,10 @@
           {
             "name": "coding_note",
             "type": "string"
+          },
+          {
+            "name": "historical_item_id_t2",
+            "type": "string"
           }
         ]
       }

@@ -81,7 +81,7 @@ validate_metadata <- function() {
     canonical_columns,
     all(
       .data$arrow_type %in%
-        c("bool", "float64", "int32", "string")
+        c("bool", "date32", "float64", "int32", "string")
     ),
     error_fun = assertr::error_stop
   )

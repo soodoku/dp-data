@@ -4,6 +4,13 @@ This repository is the source catalog and build system for data shared across
 Deliberative Poll research projects. It separates immutable source files from
 documented transformations and versioned exports.
 
+The [canonical analysis tables](docs/analysis-tables.md) provide a typed
+Parquet handoff: one poll registry, one knowledge-item catalog, keyed
+participant records, long item-wave answers, respondent-wave scores, and
+source-linked event timing. They cover every poll with available respondent
+data, including the control groups and the score-only exceptions. Downstream
+projects join and filter these tables for their own analyses.
+
 The repository establishes provenance before changing any analysis:
 
 - public replication deposits are stored byte-for-byte with checksums;
@@ -37,8 +44,9 @@ missing values. Group membership is available for 6,147 participants.
 The [build notes](docs/knowledge-build.md) describe the output contract.
 The [fourteen-poll audit](docs/remaining-polls.md) explains corrected scores,
 three unresolved sample-size differences, Europolis's unordered match, and
-Vermont's ambiguous answer key. These outputs do not yet rebuild the full
-attitude aggregate or the control-arm batteries.
+Vermont's ambiguous answer key. The unified analysis export also includes
+the available control-arm item answers. Tanzania has a released knowledge
+index but no linked person-item answers in the retained file.
 
 The historical knowledge–attitude linkage is also built here with `make linkage`.
 Its five CSV products and checksum manifest live in `output/linkage/`, replacing
@@ -85,10 +93,10 @@ See the [parity report](audit/polardata_parity.csv),
 [covariance audit](audit/polardata_covariances.csv), and
 [poll issue register](docs/poll-issues.md) for details.
 
-Other historical coding choices are preserved for later review. Existing knowledge
-and linkage products remain unchanged, and downstream repositories remain
-pinned to their existing inputs. The new reconstruction is a separate output
-that can be assessed before downstream adoption.
+Other historical coding choices are preserved for later review. The canonical
+analysis tables keep overlapping source batteries distinct through
+`source_dataset`, so downstream projects can select the reviewed source they
+need without implying respondent links that the data do not establish.
 
 ## Reproduce
 

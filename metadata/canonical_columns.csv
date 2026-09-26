@@ -9,6 +9,7 @@ items,poll_id,string,FALSE,TRUE,Poll identifier
 items,item_id,string,FALSE,TRUE,Canonical source-column identifier within poll
 items,source_column_t1,string,FALSE,FALSE,Baseline source field
 items,historical_item_id,string,TRUE,FALSE,Historical respondent knowledge item ID when present
+items,historical_item_id_t2,string,TRUE,FALSE,Historical wave-two alias when it differs from the baseline item ID
 items,cor_item_id,string,TRUE,FALSE,Cor-Sood battery item ID when present
 items,question,string,FALSE,FALSE,Question text or sourced paraphrase
 items,wording_source,string,FALSE,FALSE,Wording provenance and exactness
@@ -124,3 +125,78 @@ briefing_reading,source_row,int32,FALSE,FALSE,One-based row in the poll source
 briefing_reading,source_column,string,FALSE,FALSE,Original survey variable for the reading report
 briefing_reading,raw_code,float64,TRUE,FALSE,Original survey response code
 briefing_reading,reading_score,float64,TRUE,FALSE,Ordinal report scored from zero to one; NIC uses its historical five-category mapping
+analysis_participants,poll_id,string,FALSE,TRUE,Stable poll identifier
+analysis_participants,source_dataset,string,FALSE,TRUE,Source battery: historical; cor_sood; control; or score_only
+analysis_participants,respondent_id,string,FALSE,TRUE,ID within poll and source battery
+analysis_participants,historical_respondent_id,string,TRUE,FALSE,Documented historical caseid alias for source-linked participant rows
+analysis_participants,source_row,int32,FALSE,FALSE,One-based row in source file; AMR uses its baseline row
+analysis_participants,identity_basis,string,FALSE,FALSE,Source ID or file-scoped row identifier
+analysis_participants,arm,string,TRUE,FALSE,Observed treatment or participation category; not necessarily randomized
+analysis_participants,assignment,string,TRUE,FALSE,Assigned or invited group where identified in the source
+analysis_participants,attended,bool,TRUE,FALSE,Observed event attendance; null when unmeasured
+analysis_participants,panel,bool,FALSE,FALSE,Person is in the available T1-T2 analysis panel
+analysis_participants,small_group_id,string,TRUE,FALSE,Source discussion-group identifier where observed
+analysis_participants,cluster_id,string,TRUE,FALSE,Cluster for study inference; Tanzania uses village
+analysis_participants,country,string,TRUE,FALSE,Participant country where needed to disaggregate a multi-country poll
+analysis_participants,weight,float64,TRUE,FALSE,Source analysis weight; null when unavailable
+analysis_participants,ba,float64,TRUE,FALSE,BA-or-more indicator harmonized from source schooling codes where available
+analysis_participants,female,float64,TRUE,FALSE,Source-derived female indicator where coding is verified
+analysis_item_responses,poll_id,string,FALSE,TRUE,Stable poll identifier
+analysis_item_responses,source_dataset,string,FALSE,TRUE,Source battery; overlapping batteries remain separate until person linkage is established
+analysis_item_responses,respondent_id,string,FALSE,TRUE,ID within poll and source battery
+analysis_item_responses,wave,string,FALSE,TRUE,Standardized t1 baseline; t2 follow-up; t3 later follow-up
+analysis_item_responses,item_id,string,FALSE,TRUE,Canonical item ID from metadata/items.csv
+analysis_item_responses,source_row,int32,FALSE,FALSE,One-based source row
+analysis_item_responses,source_column,string,TRUE,FALSE,Original response field; null in the historical scored response export
+analysis_item_responses,raw_value,float64,TRUE,FALSE,Original numeric response when retained in the source battery
+analysis_item_responses,raw_text,string,TRUE,FALSE,Original text response when retained in the source battery
+analysis_item_responses,correct,int32,TRUE,FALSE,Item correctness; control source missing is zero-filled for the published proportion score
+analysis_item_responses,response_status,string,FALSE,FALSE,Answered; source_missing; non_substantive; or scored when raw answer is unavailable in this export
+analysis_polls,poll_id,string,FALSE,TRUE,Stable poll identifier
+analysis_polls,title,string,FALSE,FALSE,Canonical poll title
+analysis_polls,year,int32,FALSE,FALSE,Registered poll year
+analysis_polls,place,string,FALSE,FALSE,Existing source place description
+analysis_polls,topic,string,FALSE,FALSE,Poll topic
+analysis_polls,mode,string,TRUE,FALSE,Face-to-face or online mode where established
+analysis_polls,collection,string,FALSE,FALSE,Source collection
+analysis_polls,event_country,string,TRUE,FALSE,Country of the deliberation venue; null for multi-country online events
+analysis_polls,city,string,TRUE,FALSE,Event city when a single venue can be identified
+analysis_polls,location_text,string,TRUE,FALSE,Verbatim reviewed location claim
+analysis_polls,location_reference_id,string,TRUE,FALSE,Reference for reviewed location claim
+analysis_polls,event_month,int32,TRUE,FALSE,Calendar month when one event month is identified
+analysis_polls,event_start_date,date32,TRUE,FALSE,Verified start date for event timing
+analysis_polls,event_end_date,date32,TRUE,FALSE,Verified end date for event timing
+analysis_polls,event_reference_id,string,TRUE,FALSE,Reference for the selected event timing
+analysis_poll_events,poll_id,string,FALSE,TRUE,Stable poll identifier
+analysis_poll_events,event_id,int32,FALSE,TRUE,Sequence of reported event-date claims within poll
+analysis_poll_events,stage,string,FALSE,FALSE,Type of timing reported; ambiguous combined schedules retain the generic stage
+analysis_poll_events,start_date,date32,TRUE,FALSE,Exact start date when the report allows a safe parse
+analysis_poll_events,end_date,date32,TRUE,FALSE,Exact end date when the report allows a safe parse
+analysis_poll_events,month,int32,TRUE,FALSE,Single known event month
+analysis_poll_events,year_conflict,bool,FALSE,FALSE,Reported timing conflicts with registered poll year
+analysis_poll_events,reported_text,string,FALSE,FALSE,Original reviewed event-date statement
+analysis_poll_events,reference_id,string,FALSE,FALSE,Source reference for the timing statement
+analysis_poll_events,source_locator,string,TRUE,FALSE,Location within the referenced source
+analysis_items,poll_id,string,FALSE,TRUE,Stable poll identifier
+analysis_items,item_id,string,FALSE,TRUE,Canonical knowledge_001-style ID within poll
+analysis_items,source_column_t1,string,FALSE,FALSE,Original baseline source field
+analysis_items,historical_item_id,string,TRUE,FALSE,Historical battery source ID
+analysis_items,cor_item_id,string,TRUE,FALSE,Cor-Sood battery source ID
+analysis_items,question,string,FALSE,FALSE,Question wording or sourced paraphrase
+analysis_items,wording_source,string,FALSE,FALSE,Wording exactness and provenance
+analysis_items,response_type,string,FALSE,FALSE,Closed; placement; open numeric; or open coded
+analysis_items,answer_choices,string,TRUE,FALSE,Offered answers where recovered
+analysis_items,correct_codes,string,FALSE,FALSE,Source answer codes scored correct
+analysis_items,correct_answer,string,FALSE,FALSE,Readable answer where recovered
+analysis_items,source_reference,string,FALSE,FALSE,Question provenance file
+analysis_items,coding_note,string,TRUE,FALSE,Open coding or source limitation
+analysis_items,historical_item_id_t2,string,TRUE,FALSE,Historical post-wave alias where it differs from baseline ID
+analysis_scores,poll_id,string,FALSE,TRUE,Stable poll identifier
+analysis_scores,source_dataset,string,FALSE,TRUE,Source battery
+analysis_scores,respondent_id,string,FALSE,TRUE,ID within poll and source battery
+analysis_scores,wave,string,FALSE,TRUE,Standardized t1; t2; or t3 wave
+analysis_scores,n_items,int32,TRUE,FALSE,Number of fielded knowledge items; null for score-only records
+analysis_scores,n_observed,int32,TRUE,FALSE,Number of observed source answers; null for historical scored exports and score-only records
+analysis_scores,n_correct,int32,TRUE,FALSE,Number scored correct; null for score-only records
+analysis_scores,score,float64,TRUE,FALSE,Proportion correct or published standardized index
+analysis_scores,scale,string,FALSE,FALSE,proportion_correct or standardized_index

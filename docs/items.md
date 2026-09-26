@@ -2,7 +2,8 @@
 
 [`metadata/items.csv`](../metadata/items.csv) contains one row per distinct
 baseline knowledge question within a poll. The key is `(poll_id, item_id)`;
-`item_id` identifies the baseline source column. It links the 21 historical
+`item_id` uses the standardized `knowledge_001` prefix within each poll.
+`source_column_t1` preserves the original baseline field. The catalog links the 21 historical
 respondent batteries to the 23 Cor--Sood item batteries through
 `historical_item_id` and `cor_item_id`. The two sets overlap within 16 polls:
 170 historical entries and 177 Cor--Sood entries resolve to 224 distinct
@@ -11,7 +12,10 @@ control polls, for 245 questions in 31 polls altogether. The same question in
 two *different* polls remains two records. Wave 2 columns and accepted values remain in
 [`metadata/knowledge_items.csv`](../metadata/knowledge_items.csv) and the
 historical scoring functions; the catalog does not silently assume identical
-wave-specific codes.
+wave-specific codes. Four Zeguo questions have distinct historical post-wave
+IDs in `historical_item_id_t2`; the other historical items use their baseline
+ID at both waves. The typed downstream copy is
+`output/analysis/analysis_items.parquet`.
 
 `question` is exact only when `wording_source` says `questionnaire`,
 `verbatim codebook`, or `source variable label`; other entries paraphrase

@@ -1,6 +1,6 @@
 R = Rscript
 
-.PHONY: previews compare-polardata compare-respondents respondents polardata linkage restore package manifests disclosure validate test lint check import-surveys knowledge audit-surveys audit-downstream
+.PHONY: previews compare-polardata compare-respondents respondents polardata analysis linkage restore package manifests disclosure validate test lint check import-surveys knowledge audit-surveys audit-downstream
 
 restore:
 	$(R) -e 'renv::restore(prompt = FALSE)'
@@ -46,10 +46,13 @@ compare-polardata:
 respondents:
 	$(R) scripts/13_build_respondents.R
 
+analysis:
+	$(R) scripts/17_build_analysis_tables.R
+
 compare-respondents:
 	$(R) scripts/14_compare_respondents.R
 
-check: package manifests validate knowledge linkage polardata compare-polardata respondents compare-respondents test lint
+check: package manifests validate knowledge linkage polardata compare-polardata respondents analysis compare-respondents test lint
 
 audit-downstream:
 	$(R) scripts/09_audit_downstream_sources.R

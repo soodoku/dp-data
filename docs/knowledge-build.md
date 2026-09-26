@@ -140,7 +140,9 @@ source wave numbers; source column names remain in the item map.
 
 The stored `output/manifest.csv` provides the checksum of each exported file.
 Consumers should pin a repository commit and verify those checksums. The
-attitude-index and control-battery builds are still pending.
+control-study item batteries are included in the
+[canonical analysis tables](analysis-tables.md). Attitude-index work is tracked
+separately.
 
 ## Reproduction and checks
 
