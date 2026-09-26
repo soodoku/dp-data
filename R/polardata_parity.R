@@ -2,7 +2,7 @@ compare_historical_polardata <- function(rebuilt, reference, numerical_audit,
                                          tolerance = 1e-10) {
   stopifnot(
     identical(names(rebuilt), names(reference)),
-    nrow(rebuilt) == 5867L, nrow(reference) == 6084L,
+    nrow(rebuilt) == 5869L, nrow(reference) == 6084L,
     !anyNA(rebuilt$X), all(rebuilt$X == seq_len(nrow(rebuilt)))
   )
   contracts <- read_metadata("respondent_sources")
@@ -10,9 +10,28 @@ compare_historical_polardata <- function(rebuilt, reference, numerical_audit,
     contract <- contracts[index, ]
     actual <- rebuilt[rebuilt$dpnum == contract$dpnum, ]
     expected <- reference[reference$dpnum == contract$dpnum, ]
-    expected_rows <- if (contract$poll_id ==
-                           "btp-presidential-primaries-2004") 2L else 1L
-    stopifnot(nrow(expected) == nrow(actual) * expected_rows)
+    rebuilt_count <- nrow(actual)
+    if (contract$poll_id == "btp-general-election-2004") {
+      added <- btp_ge_approved_inclusions()
+      new_people <- actual[!actual$caseid %in% expected$caseid, ]
+      added <- added[match(new_people$caseid,
+                           added$historical_caseid), ]
+      stopifnot(
+        rebuilt_count == 248L, nrow(expected) == 246L,
+        nrow(new_people) == 2L, !anyNA(added$historical_caseid),
+        identical(as.numeric(new_people$pollgroup),
+                  as.numeric(added$pollgroup)),
+        all(abs(new_people$t2know -
+                  added$post_knowledge_correct) <= tolerance),
+        all(abs(new_people$attextreme -
+                  added$attitude_extremity) <= tolerance)
+      )
+      actual <- actual[actual$caseid %in% expected$caseid, ]
+    } else {
+      expected_rows <- if (contract$poll_id ==
+                             "btp-presidential-primaries-2004") 2L else 1L
+      stopifnot(nrow(expected) == nrow(actual) * expected_rows)
+    }
     actual <- historical_reference_people(actual, contract$poll_id)
     expected <- historical_reference_people(expected, contract$poll_id)
     stopifnot(setequal(actual$caseid, expected$caseid))
@@ -66,7 +85,7 @@ compare_historical_polardata <- function(rebuilt, reference, numerical_audit,
       artifact <- field == "X"
       tibble::tibble(
         poll_id = contract$poll_id, legacy_field = field,
-        respondents = nrow(actual), compared_values = sum(observed),
+        respondents = rebuilt_count, compared_values = sum(observed),
         missingness_differences = sum(missing),
         value_differences = sum(difference),
         reviewed_numerical_differences = sum(numerical),

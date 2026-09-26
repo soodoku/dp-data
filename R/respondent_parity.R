@@ -203,6 +203,23 @@ historical_reference_people <- function(reference, poll_id) {
   reference[!duplicated(reference$caseid), , drop = FALSE]
 }
 
+btp_ge_approved_inclusions <- function() {
+  added <- readr::read_csv(project_path(
+    "audit", "corrections", "btp-general-election-2004",
+    "approved_inclusions.csv"
+  ), show_col_types = FALSE)
+  stopifnot(
+    nrow(added) == 2L, !anyDuplicated(added$historical_caseid),
+    setequal(added$respondent_id, c(552, 585)),
+    setequal(added$historical_caseid, c(940052, 940246)),
+    all(added$post_items_observed == 9L),
+    all(added$post_knowledge_correct == 0),
+    all(!is.na(added$attitude_extremity)),
+    all(added$participation_flag == 1)
+  )
+  added
+}
+
 compare_respondent_measures <- function(measures, people, samples, reference,
                                         tolerance = 1e-10) {
   targets <- read_metadata("polardata_targets")
@@ -225,6 +242,21 @@ compare_respondent_measures <- function(measures, people, samples, reference,
       match(poll, contracts$poll_id)
     ], ]
     expected <- historical_reference_people(expected, poll)
+    rebuilt_count <- nrow(persons)
+    if (poll == "btp-general-election-2004") {
+      added <- btp_ge_approved_inclusions()
+      new_people <- persons[!persons$historical_respondent_id %in%
+                              as.character(expected$caseid), ]
+      stopifnot(
+        rebuilt_count == 248L, nrow(expected) == 246L,
+        setequal(new_people$respondent_id,
+                 as.character(added$respondent_id)),
+        setequal(new_people$historical_respondent_id,
+                 as.character(added$historical_caseid))
+      )
+      persons <- persons[persons$historical_respondent_id %in%
+                           as.character(expected$caseid), ]
+    }
     stopifnot(
       nrow(persons) == nrow(expected),
       if (poll == "nic-1996") {
@@ -263,7 +295,7 @@ compare_respondent_measures <- function(measures, people, samples, reference,
     tibble::tibble(
       poll_id = poll, legacy_field = target$legacy_field,
       definition_id = target$canonical_definition,
-      respondents = length(actual), compared_values = sum(both),
+      respondents = rebuilt_count, compared_values = sum(both),
       missingness_differences = sum(is.na(actual) != is.na(expected)),
       value_differences = sum(errors > tolerance),
       max_absolute_difference = if (length(errors)) max(errors) else 0,

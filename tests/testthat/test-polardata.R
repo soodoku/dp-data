@@ -150,7 +150,7 @@ test_that("polardata construction needs no benchmark or vault", {
   full <- arrow::read_parquet(file.path(
     isolated, "output", "polardata", "polardata.parquet"
   ))
-  expect_identical(dim(full), c(5867L, 364L))
+  expect_identical(dim(full), c(5869L, 364L))
   expect_identical(full, arrow::read_parquet(project_path(
     "output", "polardata", "polardata.parquet"
   )))

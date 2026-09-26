@@ -1643,8 +1643,9 @@ are not used as answers. Attitudes use `round((raw - 1) / 6, 5)` followed by
 float32 storage. Exact fractions change values by about 0.000003.
 
 `03_data.R` computes group/poll summaries on 299 people, then drops zero
-`t2know` or missing extremity, leaving 246 export rows. The separate 250-person
-knowledge battery in BTPGE-01 is not this aggregate sample. Group high-income
+`t2know` or missing extremity, leaving 246 historical export rows. BTPGE-05
+corrects the zero-score sample rule, yielding 248 export rows. The separate
+250-person knowledge battery in BTPGE-01 is not this aggregate sample. Group high-income
 share uses collapsed income `> 7`; final individual high income uses `> 5`.
 Review original sample and income specifications before unifying either pair.
 
@@ -1659,6 +1660,37 @@ and stores float32. Final respondent scoring zero-fills all noncorrect answers.
 Keys are 60=1, 61=2, 62/63/64=2, 65=4, 66=2, 68=4, 69=3;
 `reagg.txt` explicitly repairs wave-F item 69. Consult the questionnaires,
 calibration-universe definition and repair history before changing the descriptor.
+
+### BTPGE-05: Zero correct post answers do not mean the post wave is absent (corrected)
+
+The archived `merge_data_scripts/03_data.R` filters this poll on `t2know == 0`
+as well as missing baseline attitude extremity. The 299-row selected source has
+33 people with no answers to any of the nine post knowledge items. Their
+reconstructed fixed-denominator score is zero, so they remain outside this
+historical aggregate sample. Two other people, original case IDs 552 and 585,
+answered all nine post items, are marked as participants, and have observed
+attitude extremity. Both got zero answers correct. The
+[questionnaire](../data/btp-general-election-2004/questionnaires.pdf) explicitly
+invites "Don't know" answers for Q60 onward; case 585 also has one refusal.
+The archived score filter incorrectly treats these observed zero scores as
+absent post surveys. Source rows 52 and 246 correspond to aggregate case IDs
+940052 and 940246 in groups 9403 and 9412.
+
+Approved BTPGE-05 selects people with at least one observed post knowledge
+response and observed extremity, adding exactly those two cases: 246 historical
+export rows become 248, while the 33 with no post knowledge answers remain
+excluded. Another 18 people with post knowledge answers lack extremity and
+remain excluded. The archived group and poll summaries were computed before
+the 246-row filter on all 299 selected source records, so this correction adds
+rows without changing existing respondents' scientific values; the export row
+number `X` is regenerated. The source identity, group, response count, score,
+and inclusion status are frozen in
+`audit/corrections/btp-general-election-2004/approved_inclusions.csv`.
+
+One previously included source person (original case ID 91, aggregate ID
+940080) has `dop4part = 0` despite nonmissing post knowledge and attitudes.
+That attendance-flag discrepancy is separate and remains for fieldwork-record
+review; BTPGE-05 does not change that person's inclusion.
 
 ## BTP Health and Education 2005 — btp-health-education-2005
 
