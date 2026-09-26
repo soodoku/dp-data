@@ -12,6 +12,11 @@ test_that("Europolis is reconstructed from raw questions", {
   raw <- survey[, match(tolower(fields), tolower(names(survey)))]
   built <- build_europolis_individual(raw)
   expect_equal(built, build_europolis_individual(survey))
+  birth_year <- as.numeric(unclass(survey$age1))
+  expect_equal(sum(birth_year == 1900), 7L)
+  expect_true(all(is.na(built$age[birth_year == 1900])))
+  expect_equal(built$age[birth_year != 1900],
+               2009 - birth_year[birth_year != 1900])
   approved <- readr::read_csv(project_path(
     "audit", "corrections", "europolis-2009", "approved_values.csv"
   ), show_col_types = FALSE)
@@ -55,10 +60,12 @@ test_that("Europolis respondent values match historical identities", {
     eu2009.cc2 = "climate_t2", eu2009.imm1 = "immigration_t1",
     eu2009.imm2 = "immigration_t2"
   )
-  for (field in names(mapping)) {
+  for (field in setdiff(names(mapping), "ppage")) {
     expect_equal(
       built[[mapping[[field]]]], as.numeric(benchmark[[field]]),
       tolerance = 1e-10
     )
   }
+  expect_equal(sum(is.na(built$age)), 1L)
+  expect_true(is.na(built$age[benchmark$caseid == 71300005619]))
 })

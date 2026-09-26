@@ -1983,6 +1983,33 @@ immigration index contains nine items; the historical aggregate uses Q11_1.
 The published means validate question selection and scoring at the sample
 level, not a respondent-order link for the anonymous battery in EURO-01.
 
+### EURO-06: Birth year 1900 is an unsupported age (corrected)
+
+**Status: approved by the user on 2026-09-26 and corrected upstream.** The
+[source codebook](../data/europolis-2009/codebook.txt) labels `age1` as year
+of birth and records seven values of 1900 among 4,384 people, but does not
+declare a missing code for this field. There are no years from 1901 through
+1913; the next earliest is 1914. In 2009, the seven 1900 entries become age
+109, an implausible concentration beyond the rest of the observed age range.
+The correction treats these seven birth years as unknown in the *derived age*
+measure, while leaving the raw answers and education recode unchanged. One
+affected person is in the 348-person historical aggregate: source `UniqueID`
+300005619, exported case 71300005619, group 7125. Their `ppage` becomes
+missing and that 17-person group's `meanage` falls from 51.70588 to 48.125
+(16 observed ages). The sample and all other respondent fields remain fixed.
+The historical script's `2009 - age1` calculation and the codebook's failure
+to mark 1900 missing are recorded as contrary evidence; no individual birth
+year is inferred from other demographics.
+The [approved age values](../audit/corrections/europolis-2009/approved_age_values.csv)
+record all 348 respondent ages and group means. Parity checks find one new
+missing age and 17 changed group-mean cells, with zero unexplained differences.
+The current `dp-learning` analysis frame already excludes ages above 100, so
+its paired main model is unchanged at 5,850 observations and identical
+coefficients when this correction is applied on top of ZG-04. This supplies
+evidence to remove that downstream age filter after the upstream correction
+is adopted. `dp-distortions` does not use these fields; `dp-deliberately`
+imports the newly missing age.
+
 ## National Issues Convention 1996 — nic-1996
 
 **NIC-01 — one source-scoped fallback ID and battery definition.** `PART == 1`

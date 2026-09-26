@@ -24,13 +24,19 @@ test_that("European and Australian aggregates match every historical field", {
       "tomorrows-europe-2007" = c(
         "vareduc", "sdeduc", "meaned", "meanage", "entropy"
       ),
+      "europolis-2009" = "meanage",
       character()
     )
     for (field in names(result)) {
       expected <- as.numeric(reference[[field]])
       if (field %in% approved_fields) {
+        approved_file <- if (polls[index] == "europolis-2009") {
+          "approved_age_values.csv"
+        } else {
+          "approved_values.csv"
+        }
         approved <- readr::read_csv(project_path(
-          "audit", "corrections", polls[index], "approved_values.csv"
+          "audit", "corrections", polls[index], approved_file
         ), show_col_types = FALSE)
         approved <- approved[approved$legacy_field == field, ]
         expected <- approved$approved_value[match(values$caseid,

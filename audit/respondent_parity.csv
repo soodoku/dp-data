@@ -419,7 +419,7 @@ europolis-2009,t1know,knowledge_t1@historical-v1,348,348,0,0,3.3306690738754696e
 europolis-2009,t1knowr,knowledge_t1@historical-v1,348,348,0,0,3.3306690738754696e-16,0,1e-10
 europolis-2009,t1knowcor,knowledge_joint@historical-v1,348,0,0,0,0,0,1e-10
 europolis-2009,t2know,knowledge_t2@historical-v1,348,348,0,0,3.3306690738754696e-16,0,1e-10
-europolis-2009,ppage,age@historical-v1,348,348,0,0,0,0,1e-10
+europolis-2009,ppage,age@euro-06-v2,348,347,1,0,0,0,1e-10
 europolis-2009,educ4,education_four@historical-v1,348,335,0,0,0,0,1e-10
 europolis-2009,minority,minority@euro-04-v2,348,348,0,0,0,0,1e-10
 europolis-2009,hhincome,household_income@historical-v1,348,0,0,0,0,0,1e-10
