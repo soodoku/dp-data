@@ -2466,10 +2466,18 @@ until the intended income definition is established. Briefing exposure uses
 ### BTPN-01: Historical inclusion does not equal the attendance flag
 
 All 245 rows of `2002onlinefp_hlmnew.dta` enter historical `polardata`, including
-24 with `attend == 0` and 221 with `attend == 1`. The archive's 2002 filename and
-current 2003 event label need reconciliation. Preserve this source-selected
-sample while checking attendance semantics, field dates and the selection
-script. Unique raw `serial` identifies respondents; synthetic historical IDs
+24 with `attend == 0` and 221 with `attend == 1`. Here `attend == 0` does **not**
+mean no discussion: `countmtg` records zero meetings for one person, one meeting
+for 15, and two meetings for eight. Every `attend == 1` record has three to eight
+meetings. Thus `attend` separates fewer than three sessions from at least three;
+all 245 selected records have a post Q20 answer and an assigned group. The
+contemporary 2009 report distinguishes post-survey response from session
+participation and describes eight available sessions. Dropping all 24 as
+"nonattenders" would be factually wrong. Their partial attendance may still
+matter when defining a group exposure measure, so preserve the historical
+inclusion pending a stated estimand and a direct comparison of group summaries.
+The archive's 2002 filename and current 2003 event label need reconciliation.
+Unique raw `serial` identifies respondents; synthetic historical IDs
 `930001:930245` follow preserved source order, and groups are `9300 + group`.
 The independent source build now matches all 45 respondent targets and 39
 additional group/poll fields within 1e-10, with exact missingness and no numerical
@@ -2492,11 +2500,32 @@ that scale; they are component counts, not distinct people across all items.
 | Post Q21 | 134 | 240 | 5 |
 | Post Q22 | 160 | 237 | 8 |
 
-The scale may represent deliberate component weighting, a reused normalization
-factor, or an error. Before changing it, compare the fielded questionnaire with
-`us_fp_online/scripts/v_online.do`, `v_online2.do`,
-`nic_2/scripts/checking_July27_online.do` and
-`NICII_ONLINE_Index_Final_Aug01.doc`, including which alternative blocks ran.
+The fielded [questionnaire](../data/btp-national-2003/questionnaires/btp-national-questionnaire.pdf)
+shows that Q20, Q21 and Q22 each offer two opposed statements, equal agreement,
+and an unconsidered response. The archived `us_fp_online/scripts/v_online.do`
+and `v_online2.do` recode those same three answers to 1, 2 and 3, then use
+`(value - 1) / 2`, yielding the full 0, 0.5, 1 scale for both waves. That is
+concrete evidence against treating the extra division by two as the only
+historical rule. But those earlier scripts build different index compositions:
+for example, their `globalt` index uses QB2f, QB2j, QB25d, QB25e, QB7 and
+QB37b, while the deposited aggregate includes Q20 and Q21. They cannot be
+substituted wholesale for the deposited later-stage indices.
+
+Holding the deposited index composition and missing-value rules fixed while
+removing only the extra `/ 2` changes baseline global altruism for 135 of 245
+records and democracy for 154 of 245; post global altruism changes for 153 of
+244 nonmissing records and post democracy for 160 of 244. Maximum changes to
+each index are 1/6. Rebuilding the complete poll with this single provisional
+rule changes only eight exported fields: those four attitude indices,
+`attextreme` (196 rows, maximum 0.04761904), `meanxtreme` (245, 0.0179784),
+`avgsd` (245, 0.01383719), and `genvar` (245, 0.02815631). It preserves all
+245 records, case IDs and missing-value patterns; the provisional build changes
+no other fields. The related NIC II index memo names Q20/Q21 as part
+of global altruism and Q22 as part of democracy, but its component weighting
+differs from the deposited BTP index. The NIC II memo and
+`nic_2/scripts/checking_July27_online.do` are cross-checks, not direct
+authority for BTP. This remains an unapproved candidate: trace the later BTP
+index-construction stage and compare published summaries before changing it.
 
 ### BTPN-03: Eleven-item respondent knowledge and baseline calibration differ
 
