@@ -4029,12 +4029,12 @@ new-haven-2004,female,132,132,0,0,0,0,FALSE,0,0,1e-10
 new-haven-2004,attextreme,132,132,0,12,0,12,FALSE,0,0.016666680574417392,1e-10
 new-haven-2004,highinc,132,107,0,0,0,0,FALSE,0,0,1e-10
 new-haven-2004,t1polint,132,0,0,0,0,0,FALSE,0,0,1e-10
-new-haven-2004,avgsd2,132,132,0,62,0,62,FALSE,0,0.008710056543350525,1e-10
+new-haven-2004,avgsd2,132,132,0,76,0,76,FALSE,0,0.04581789672374709,1e-10
 new-haven-2004,grpgain2,132,131,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
 new-haven-2004,t1knowcor2,132,132,0,0,0,0,FALSE,0,0,1e-10
 new-haven-2004,t12know,132,132,0,0,0,0,FALSE,0,0,1e-10
 new-haven-2004,t12knowcor,132,132,0,0,0,0,FALSE,0,0,1e-10
-new-haven-2004,attextreme2,132,132,0,12,0,12,FALSE,0,0.016666680574417392,1e-10
+new-haven-2004,attextreme2,132,132,0,15,0,15,FALSE,0,0.125,1e-10
 new-haven-2004,length,132,0,0,0,0,0,FALSE,0,0,1e-10
 new-haven-2004,timebtw,132,0,0,0,0,0,FALSE,0,0,1e-10
 new-haven-2004,grpgainr,132,132,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
