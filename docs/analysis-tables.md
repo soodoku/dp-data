@@ -47,6 +47,12 @@ discussion group when observed; `cluster_id` is the inference cluster and is a
 village in Tanzania. Missing values mean the fact was not established in the
 available source, not that it did not occur. `panel` identifies the reviewed
 historical analysis sample or the study's available T1/T2 panel.
+For Cor–Sood respondents, group IDs come from the reviewed
+`output/memberships.parquet` on the same `(poll_id, respondent_id)` key. That
+source supplies 6,147 memberships across 21 polls, including BTP online
+primaries, BTP 2007, Michigan, and California, which are absent from the
+historical group-analysis sample. Denmark and Vermont have no verified group
+roster; 13 BTP online-primary respondents also lack an assignment.
 
 `analysis_scores` averages item correctness over the full fielded battery for
 the four item-linked control polls and both deposited historical batteries.

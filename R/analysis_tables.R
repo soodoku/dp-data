@@ -41,13 +41,21 @@ analysis_historical_people <- function() {
 }
 
 analysis_cor_people <- function() {
+  memberships <- arrow::read_parquet(project_path(
+    "output", "memberships.parquet"
+  )) |>
+    dplyr::filter(session_id == "deliberation") |>
+    dplyr::select("poll_id", "respondent_id", "group_id")
+  stopifnot(!anyDuplicated(memberships[c("poll_id", "respondent_id")]))
   arrow::read_parquet(project_path("output", "respondents.parquet")) |>
+    dplyr::left_join(memberships, by = c("poll_id", "respondent_id"),
+                     relationship = "one-to-one") |>
     dplyr::transmute(
       poll_id, source_dataset = "cor_sood", respondent_id, source_row,
       historical_respondent_id = NA_character_,
       identity_basis = "source-or-file-row", arm,
       assignment = NA_character_, attended = NA,
-      panel = TRUE, small_group_id = NA_character_, cluster_id = NA_character_,
+      panel = TRUE, small_group_id = group_id, cluster_id = group_id,
       country = NA_character_, weight = NA_real_, ba = NA_real_, female,
       score_wave1 = NA_real_, score_wave2 = NA_real_
     )

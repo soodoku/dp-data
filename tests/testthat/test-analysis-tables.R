@@ -32,6 +32,16 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   expect_false(anyDuplicated(people[c(
     "poll_id", "source_dataset", "respondent_id"
   )]) > 0L)
+  cor_people <- dplyr::filter(people, source_dataset == "cor_sood")
+  expect_equal(sum(!is.na(cor_people$small_group_id)), 6147L)
+  expect_equal(
+    sum(!is.na(cor_people$small_group_id[
+      cor_people$poll_id == "btp-online-primaries-2004"
+    ])), 315L
+  )
+  expect_true(all(is.na(cor_people$small_group_id[
+    cor_people$poll_id %in% c("denmark-euro-2000", "vermont-energy-2007")
+  ])))
   expect_false(anyDuplicated(responses[c(
     "poll_id", "source_dataset", "respondent_id", "wave", "item_id"
   )]) > 0L)
