@@ -1,3 +1,5 @@
+source(file.path(root, "R", "analysis_poll_metadata.R"))
+
 test_that("analysis exports preserve keys and canonical question IDs", {
   directory <- project_path("output", "analysis")
   manifest <- readr::read_csv(
@@ -109,4 +111,18 @@ test_that("reported timing conflicts remain visible without a false date", {
     polls$poll_id == "new-haven-2004"
   ]))
   expect_true(all(!is.na(events$reference_id)))
+})
+
+test_that("conflicting source years null poll timing", {
+  polls <- tibble::tibble(poll_id = "new-haven-2004", year = 2004L)
+  facts <- tibble::tibble(
+    poll_id = "new-haven-2004", field = "event_dates",
+    value = c("2002-03-01 through 2002-03-03",
+              "Archive appendix says 2004, March 1–3"),
+    reference_id = c("paper", "archive"), source_locator = "date"
+  )
+  events <- analysis_poll_events(polls, facts)
+  expect_true(all(events$year_conflict))
+  expect_true(all(is.na(events$start_date)))
+  expect_true(all(is.na(events$month)))
 })

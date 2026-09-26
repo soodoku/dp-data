@@ -95,6 +95,16 @@ analysis_poll_events <- function(polls, facts) {
     dplyr::filter(field == "event_dates") |>
     dplyr::left_join(dplyr::select(polls, "poll_id", "year"), by = "poll_id",
                      relationship = "many-to-one") |>
+    dplyr::mutate(
+      source_year = vapply(value, function(text) {
+        found <- regmatches(text, regexpr("[12][0-9]{3}", text))
+        if (length(found) == 0L) NA_integer_ else as.integer(found)
+      }, integer(1)),
+      source_years_disagree = dplyr::n_distinct(
+        source_year[!is.na(source_year)]
+      ) > 1L,
+      .by = poll_id
+    ) |>
     dplyr::group_by(poll_id) |>
     dplyr::mutate(event_id = dplyr::row_number()) |>
     dplyr::ungroup() |>
@@ -104,14 +114,20 @@ analysis_poll_events <- function(polls, facts) {
     dplyr::transmute(
       poll_id, event_id = as.integer(event_id),
       stage = "reported_event_timing",
-      start_date = as.Date(vapply(
-        parsed, \(x) as.character(x$start_date), character(1)
+      start_date = as.Date(ifelse(
+        source_years_disagree, NA_character_,
+        vapply(parsed, \(x) as.character(x$start_date), character(1))
       )),
-      end_date = as.Date(vapply(
-        parsed, \(x) as.character(x$end_date), character(1)
+      end_date = as.Date(ifelse(
+        source_years_disagree, NA_character_,
+        vapply(parsed, \(x) as.character(x$end_date), character(1))
       )),
-      month = as.integer(vapply(parsed, \(x) x$month, integer(1))),
-      year_conflict = vapply(parsed, \(x) x$year_conflict, logical(1)),
+      month = dplyr::if_else(
+        source_years_disagree, NA_integer_,
+        vapply(parsed, \(x) x$month, integer(1))
+      ),
+      year_conflict = source_years_disagree |
+        vapply(parsed, \(x) x$year_conflict, logical(1)),
       reported_text = value, reference_id, source_locator
     )
 }
