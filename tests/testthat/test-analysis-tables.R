@@ -61,6 +61,11 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   expect_equal(nrow(ni_people), 243L)
   expect_equal(sum(ni_people$arm == "attended"), 93L)
   expect_equal(sum(ni_people$arm == "control"), 150L)
+  ni_t2_ids <- people |>
+    dplyr::filter(poll_id == "northern-ireland-2007",
+                  source_dataset == "cor_sood") |>
+    dplyr::pull(respondent_id)
+  expect_equal(sum(ni_people$respondent_id %in% ni_t2_ids), 93L)
   expect_equal(nrow(ni_items), 243L * 7L)
   expect_setequal(unique(ni_items$wave), "t3")
   expect_setequal(unique(ni_items$item_id),

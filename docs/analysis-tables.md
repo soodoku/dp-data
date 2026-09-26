@@ -16,10 +16,12 @@ and historical aggregate exports. Source files and reviewed metadata stay in
 
 There are respondent records for 33 polls and item responses for 31. The
 participant table covers the 21 reviewed historical surveys, 23 Cor–Sood
-batteries, four control studies, and the score-only Marousi file. Sixteen
+batteries, five control studies, and the score-only Marousi file. Sixteen
 historical and Cor–Sood polls overlap. `source_dataset` distinguishes their
 separate person IDs; identical IDs across the deposits do not imply the same
-person. The score-only Marousi and Tanzania files have no recovered person-item
+person. Northern Ireland is a verified exception: its Cor–Sood T1/T2 battery
+and the T3 survey use the same `cserial` respondent ID for 93 returning
+participants. The score-only Marousi and Tanzania files have no recovered person-item
 answers in this export.
 
 `item_id` uses `knowledge_001`, `knowledge_002`, and so on within each poll.
@@ -58,7 +60,8 @@ Northern Ireland's T3 battery contributes seven items for 93 returning
 participants and 150 controls. These controls were first interviewed at T3;
 they have no T1 or T2 knowledge scores. The control comparison for that poll
 therefore uses the T3 cross-section, while its T1/T2 participant battery remains
-in the Cor–Sood source rows.
+in the Cor–Sood source rows. The 93 returning participants can be linked across
+these waves by `(poll_id, respondent_id)` after restricting the source datasets.
 
 The poll table adds event country, city, month, and exact dates only when the
 reviewed per-poll JSON facts support them. `analysis_poll_events` retains every
