@@ -1937,6 +1937,52 @@ unchanged. The full-source respondent measure changes for precisely seven
 people. This preserves the original source answers and leaves EURO-01's
 anonymous battery linkage issue separate.
 
+
+### EURO-05: Published knowledge results mostly reproduce; three baseline cells do not
+
+The [Europolis research paper](../data/europolis-2009/papers/europolis-research-paper.pdf)
+(Table 2, printed p. 11) and the [event knowledge report](../data/europolis-2009/reports/europolis-knowledge.pdf)
+(p. 1) define six knowledge items asked at the initial interview (Q43, Q44,
+Q46, Q47, Q49, Q50) and three first asked on arrival (Q45, Q48, Q51). The
+source has 348 participants (`GROUP_T1BIS == 1`), matching the paper's
+participant count. Score a correct answer as one and every other response,
+including 997–999, as zero, with a fixed six- or nine-item denominator. This
+matches the report's explicit inclusion of declined answers among incorrect
+responses. The archived `eu_2009.R` script and maintained respondent build
+use the six common items at baseline and departure.
+
+| Index | Source extract, percent | Published, percent |
+| --- | ---: | ---: |
+| Six-item initial interview | 19.7318 | 19.8 |
+| Six-item arrival | 27.7778 | 27.8 |
+| Six-item departure | 36.3027 | 36.3 |
+| Nine-item arrival | 29.6296 | 29.6 |
+| Nine-item departure | 37.8033 | 37.8 |
+
+The published initial-interview Q44, Q47 and Q50 percentages imply respectively
+41, 77 and 159 correct answers out of 348. This source file has 40, 76 and
+160. The other three initial-interview items round to the published values.
+The three one-answer differences net to one more correct response in the
+publication, which is sufficient to account for 19.8% versus 19.7% after
+rounding the six-item index. The report's departure Q48 value is 56.6%,
+matching 197/348 in the source; the paper prints 56.7%. The source does not
+contain an exact publication-era extract or a documented account of those
+small differences. Do not recode individual answers to force the published
+means. A historical extract, item tabulations or author analysis code would
+be needed to establish whether these are source-version differences or
+reporting errors.
+
+The [paper appendix](../data/europolis-2009/design/europolis-research-appendix.pdf)
+(appendix A, Table 2) also reports baseline/departure climate question Q21
+means of .587/.671 using paired observations. Among the 334 participants
+with both responses observed, the maintained Q21 orientation gives
+.58653/.67066, reproducing those figures after rounding. This checks the
+Q21 direction but does not justify replacing the historical one-item climate
+measure with the paper's two-item climate index. Likewise the paper's
+immigration index contains nine items; the historical aggregate uses Q11_1.
+The published means validate question selection and scoring at the sample
+level, not a respondent-order link for the anonymous battery in EURO-01.
+
 ## National Issues Convention 1996 — nic-1996
 
 **NIC-01 — one source-scoped fallback ID and battery definition.** `PART == 1`
