@@ -2142,9 +2142,23 @@ columns. Check the index-selection rationale before changing the battery.
 The historical baseline descriptor uses all 1,806 respondents: eight correct-item
 indicators divided by nine, float32 person scores, then a mean rounded seven
 decimals and stored float32. Stored `pkind` increments by 1/9, while the final
-individual score divides by eight. Check whether a ninth question was planned
-or removed in the original instrument and scoring syntax before correcting this
-scoring-version discrepancy. Post Q20/Q26 values 8/9 remain incorrect in binary
+individual score divides by eight. The [pre questionnaire](../data/san-mateo-2008/questionnaire-pre.pdf)
+and [post questionnaire](../data/san-mateo-2008/questionnaire-post.pdf) place the
+knowledge battery at Q19–Q26, with eight questions in each wave. The archived
+`legacy/poll_scripts/san_mateo.R` explicitly enumerates `19:26` for both waves;
+it contains no `length()`-based denominator. The later merge scripts pass through
+knowledge scores and do not establish how the deposited `pkind` was calculated.
+
+The [contemporaneous report](../data/san-mateo-2008/reports/san-mateo-results.pdf)
+(PDF pp. 5 and 15) describes an eight-question index but prints
+12.92% before and 28.17% after deliberation. Among the 239 participant records,
+mean correct counts divided by nine reproduce those figures: 12.92422% and
+28.17294%. Dividing by eight gives 14.53975% and 31.69456%. Thus the nine-item
+scale appears in the original report as well as deposited `pkind`; its origin
+is unverified, and the report's item-count description conflicts with its
+arithmetic. Do not attribute this discrepancy to `length()` or change either
+score until the generating scoring command is found or the denominator policy
+is explicitly decided. Post Q20/Q26 values 8/9 remain incorrect in binary
 scoring pending codebook review. Five group covariance exceptions, including two
 indefinite matrices, are detailed in X-09.
 
