@@ -89,6 +89,14 @@ test_that("derived exports preserve unique people and reviewed gain", {
     derived$legacy_field %in% c("meanxtreme", "avgsd", "genvar")
   expect_setequal(unique(derived$definition_version[zeguo_group]),
                   "zg-02-v2")
+  zeguo_age <- derived$poll_id == "zeguo-2005" &
+    derived$legacy_field == "meanage"
+  expect_setequal(unique(derived$definition_version[zeguo_age]),
+                  "zg-04-v2")
+  zeguo <- wide[wide$dpnum == 9, ]
+  expect_equal(zeguo$ppage[zeguo$caseid == 52125], 33)
+  expect_equal(unique(zeguo$meanage[zeguo$pollgroup == 5204]),
+               41.38461538461539, tolerance = 1e-10)
   san_mateo_level <- derived$poll_id == "san-mateo-2008" &
     derived$legacy_field == "t1knowlevel"
   expect_setequal(unique(derived$definition_version[san_mateo_level]),

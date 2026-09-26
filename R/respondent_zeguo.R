@@ -67,12 +67,20 @@ build_zeguo_individual <- function(survey = read_poll_survey("zeguo-2005")) {
   education <- recode_source_values(survey, "Education",
     c(0, 0, 0, .33, .66, .66, 1)
   )
+  age <- read_source_codes(survey, "Age", 0:100)
+  corrected <- which(survey$p == 125)
+  if (length(corrected)) {
+    stopifnot(length(corrected) == 1L, age[corrected] == 1,
+      as.numeric(unclass(survey[["____1p"]][corrected])) == 33
+    )
+    age[corrected] <- 33
+  }
   dplyr::bind_cols(
     dplyr::rename_with(baseline, \(name) paste0(name, "_t1")),
     dplyr::rename_with(post, \(name) paste0(name, "_t2")),
     summarise_historical_knowledge(before, after),
     tibble::tibble(
-      age = read_source_codes(survey, "Age", 0:100),
+      age = age,
       female = recode_source_values(survey, "Gender", c(0, 1)),
       education_four = education,
       education_three = collapse_historical_education(education),

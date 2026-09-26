@@ -134,6 +134,8 @@ historical_derived_measures <- function(polls) {
             .data$legacy_field %in% c(
               "meanxtreme", "avgsd", "genvar"
             ) ~ "zg-02-v2",
+          .env$poll_id == "zeguo-2005" &
+            .data$legacy_field == "meanage" ~ "zg-04-v2",
           .env$poll_id == "san-mateo-2008" &
             .data$legacy_field == "t1knowlevel" ~ "sm-03-v2",
           .env$poll_id == "btp-national-2003" &
