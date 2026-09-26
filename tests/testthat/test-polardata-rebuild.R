@@ -61,6 +61,17 @@ test_that("derived exports preserve unique people and reviewed gain", {
     )
   expect_setequal(unique(derived$definition_version[europe_demographics]),
                   "te-05-v2")
+  europolis_age <- derived$poll_id == "europolis-2009" &
+    derived$legacy_field == "meanage"
+  expect_setequal(unique(derived$definition_version[europolis_age]),
+                  "euro-06-v2")
+  europolis <- wide[wide$dpnum == 11, ]
+  expect_true(is.na(europolis$ppage[
+    europolis$caseid == 71300005619
+  ]))
+  expect_equal(unique(europolis$meanage[
+    europolis$pollgroup == 7125
+  ]), 48.125)
   australia_gain <- derived$poll_id == "australia-republic-1999" &
     derived$legacy_field %in% c("grpgain", "loggain")
   expect_setequal(unique(derived$definition_version[australia_gain]),

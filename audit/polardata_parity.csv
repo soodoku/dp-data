@@ -3657,7 +3657,7 @@ europolis-2009,t1knowr,348,348,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 europolis-2009,t1knowcor,348,0,0,0,0,0,FALSE,0,0,1e-10
 europolis-2009,grpgain,348,0,0,0,0,0,FALSE,0,0,1e-10
 europolis-2009,t2know,348,348,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
-europolis-2009,ppage,348,348,0,0,0,0,FALSE,0,0,1e-10
+europolis-2009,ppage,348,347,1,0,0,1,FALSE,0,0,1e-10
 europolis-2009,educ4,348,335,0,0,0,0,FALSE,0,0,1e-10
 europolis-2009,minority,348,348,0,0,0,0,FALSE,0,0,1e-10
 europolis-2009,hhincome,348,0,0,0,0,0,FALSE,0,0,1e-10
@@ -3685,7 +3685,7 @@ europolis-2009,sdfemale,348,348,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 europolis-2009,vareduc,348,348,0,0,0,0,FALSE,0,5.204170427930421e-17,1e-10
 europolis-2009,sdeduc,348,348,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
 europolis-2009,meaned,348,348,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
-europolis-2009,meanage,348,348,0,0,0,0,FALSE,0,4.263256414560601e-14,1e-10
+europolis-2009,meanage,348,348,0,17,0,17,FALSE,0,3.5808823529412024,1e-10
 europolis-2009,phighinc,348,0,0,0,0,0,FALSE,0,0,1e-10
 europolis-2009,meanxtreme,348,348,0,0,0,0,FALSE,0,4.718447854656915e-16,1e-10
 europolis-2009,pfemale_ind,348,348,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10

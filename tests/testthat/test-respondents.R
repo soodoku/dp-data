@@ -220,6 +220,9 @@ test_that("definitions match historical or approved values by IDs", {
     parity$poll_id == "tomorrows-europe-2007"
   ]), 66L)
   expect_equal(sum(parity$missingness_differences[
+    parity$poll_id == "europolis-2009"
+  ]), 1L)
+  expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "uk-eu-1995"
   ]), 14L)
   expect_equal(sum(parity$missingness_differences[
@@ -242,7 +245,8 @@ test_that("definitions match historical or approved values by IDs", {
   ]), 4L)
   expect_equal(sum(parity$missingness_differences[
     !parity$poll_id %in% c(
-      "tomorrows-europe-2007", "uk-eu-1995", "uk-general-election-1997",
+      "tomorrows-europe-2007", "europolis-2009", "uk-eu-1995",
+      "uk-general-election-1997",
       "australia-republic-1999", "btp-health-education-2005",
       "new-haven-2004", "zeguo-2005", "nic-1996"
     )

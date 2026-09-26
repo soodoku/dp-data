@@ -37,6 +37,7 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     return(historical)
   }
   reviewed <- list(
+    "europolis-2009" = list(fields = c("ppage", "meanage"), rows = 348L),
     "btp-national-2003" = list(
       fields = c("btp03.olt1demo", "btp03.olt2demo",
                  "btp03.olt1global", "btp03.olt2global",
@@ -106,8 +107,13 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
   )
   contract <- reviewed[[poll_id]]
   if (!is.null(contract) && field %in% contract$fields) {
+    filename <- if (poll_id == "europolis-2009") {
+      "approved_age_values.csv"
+    } else {
+      "approved_values.csv"
+    }
     approved <- readr::read_csv(project_path(
-      "audit", "corrections", poll_id, "approved_values.csv"
+      "audit", "corrections", poll_id, filename
     ), show_col_types = FALSE)
     approved <- approved[approved$legacy_field == field, ]
     stopifnot(
