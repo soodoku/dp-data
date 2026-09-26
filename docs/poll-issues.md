@@ -8,7 +8,7 @@ coverage of the 23 existing knowledge builds and the respondent reconstructions.
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
 UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24;
-SWE-02, AUS-03, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02, UKGE-05, BTPHE-01 and BTPHE-03 were approved in subsequent poll reviews.
+SWE-02, AUS-03, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02, UKGE-05, BTPHE-01, BTPHE-03 and EURO-04 were approved in subsequent poll reviews.
 Other proposals remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
@@ -1853,9 +1853,26 @@ measurement decision, not a repair required for reconstruction.
 `educ4` is actually age at leaving education divided by 35. Ongoing education
 (code 0) uses `min(2010 - birth_year, 35)` before division, and `03_data.R`
 rounds to two decimals; higher education is `> 0.57`. It is not a four-category
-qualification variable. Missing respondent or parental birthplace contributes
-to the minority indicator. Check the education and birthplace questions and
-index memo before relabeling or changing either policy.
+qualification variable. Check the education instrument and index memo before
+relabeling or changing that policy. The birthplace correction is EURO-04.
+
+### EURO-04: Unknown birthplace does not establish minority status (corrected)
+
+The archived `eu_2009.R` script explicitly assigned minority = 1 when the
+respondent's birthplace or parents' birthplace was missing. The source value
+labels identify code 999 as don't know or refusal, not a foreign birthplace.
+Of 4,384 source records, five have domestic birth and unknown parents' birth;
+two have both answers unknown. Those seven had minority = 1 solely because of
+unknown information and now have minority missing. Confirmed foreign birth of
+either the respondent or parents still gives minority = 1; both known domestic
+answers give 0. The seven IDs and source codes are in
+`audit/corrections/europolis-2009/approved_values.csv`.
+
+None of the seven belongs to the 348-person historical aggregate, so its
+respondent values, group minority shares and published aggregate numbers are
+unchanged. The full-source respondent measure changes for precisely seven
+people. This preserves the original source answers and leaves EURO-01's
+anonymous battery linkage issue separate.
 
 ## National Issues Convention 1996 — nic-1996
 

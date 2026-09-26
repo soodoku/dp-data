@@ -36,9 +36,10 @@ build_europolis_individual <- function(
   education <- round(education / 35, 2)
   birth <- read("birth1", 1:5)
   parents <- read("parentsbirth1", 1:4)
-  minority <- as.numeric(
-    ifelse(is.na(birth), 1, birth > 1) +
-      ifelse(is.na(parents), 1, parents > 1) > 0
+  minority <- dplyr::case_when(
+    birth > 1 | parents > 1 ~ 1,
+    birth == 1 & parents == 1 ~ 0,
+    .default = NA_real_
   )
   extremity <- rowMeans(abs(cbind(climate, immigration) - .5), na.rm = TRUE)
   extremity[is.nan(extremity)] <- NA_real_
