@@ -9,6 +9,7 @@ resources <- c(
   "derived_measure_names",
   "polardata_targets",
   "measure_definitions",
+  "harmonized_ordinal_measures",
   "measure_inputs",
   "artifact_types",
   "archive_collections",

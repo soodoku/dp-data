@@ -3454,3 +3454,56 @@ claim that the full downstream migration is already complete. The remaining
 scope also includes study-specific recodes in dp-distortions' out-of-sample
 pipeline; its 24 frozen inputs are already centralized, but the transformations
 must be inventoried and moved with study-level value checks.
+
+### X-12: Political interest needs a common direction and an explicit scale
+
+Nine polls have an observed baseline political-interest question in their
+historical aggregate. Raw question codes do not share an orientation, and
+`t1polint` is not a reliable cross-poll scale: the BTP Presidential Primaries
+aggregate scores “very interested” as 0 and “not at all interested” as 1,
+while BTP National 2003 uses the opposite direction. The primaries source's
+earlier stored `t1polint` is a **binary** very-interested flag, so it is not
+an independent copy of either four-category scale. UK General Election 1997
+has five substantive categories, but its historical score collapses them
+to four levels. UK Monarchy source code 6 means “not answered”; its
+historical respondent recode can retain that out-of-range code, which must
+not enter a common 0–1 measure.
+
+The versioned `political_interest_t1_harmonized` respondent measure uses raw
+baseline answers and fixed questionnaire endpoints. Zero denotes least
+interested, one most interested, and intermediate categories receive equal
+ordinal spacing. The explicit rules and source references are in
+`metadata/harmonized_ordinal_measures.csv`:
+
+| Poll | Raw question | Least interested code | Most interested code | Categories |
+| --- | --- | ---: | ---: | ---: |
+| UK–EU 1995 | `genint` | 1 | 4 | 4 |
+| UK Monarchy 1996 | `A6` | 4 | 1 | 4 |
+| UK General Election 1997 | `int1` | 1 | 5 | 5 |
+| Australia Republic 1999 | `intpol1` | 1 | 4 | 4 |
+| NIC 1996 | `POLINTR1` | 1 | 4 | 4 |
+| NIC2 2003 | `pint_b` | 4 | 1 | 4 |
+| BTP National 2003 | `qb57` | 4 | 1 | 4 |
+| BTP Presidential Primaries 2004 | `b1q18` | 4 | 1 | 4 |
+| BTP Health and Education 2005 | `q40` | 1 | 4 | 4 |
+
+The retained questionnaires, codebooks or source value labels establish these
+endpoint codes. Australia's source dictionary identifies `intpol1` as QD1 and
+labels all four categories, but the retained constitutional-study codebook is
+for a different survey and does not verify this fielded DP question; the QD1
+instrument has not been located. BTP National's retained PDF is a later
+follow-up and does not show baseline Q57; its source variable/value labels
+and the published analysis remain the evidence for that item (BTPN-05).
+The new measure is separate from the
+historical `t1polint` and changes no `polardata` cell. It has 12,018 rows
+over the nine full reviewed source files, with 7,859 substantive answers.
+The original 959,020 respondent-measure identities and numeric values remain
+identical. Source-response status changes from `answered` to
+`non-substantive` for exactly 25 explicitly labeled nonanswers: 18 UK General
+Election, four BTP Presidential Primaries, two UK Monarchy and one NIC.
+Their corresponding original `n_observed_fields` counts change from one to
+zero; raw responses and historical scores do not change. A common
+direction and range do not establish equal psychometric meaning across
+different wording or response counts. Any within-poll z-score needs a
+separately named definition and a fixed reference sample; it is not folded
+into this scale or implemented by a downstream reader.
