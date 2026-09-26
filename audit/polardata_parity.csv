@@ -1478,7 +1478,7 @@ australia-republic-1999,educ4,347,347,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,minority,347,347,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,hhincome,347,314,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,female,347,347,0,0,0,0,FALSE,0,0,1e-10
-australia-republic-1999,attextreme,347,346,0,0,0,0,FALSE,0,3.885780586188048e-16,1e-10
+australia-republic-1999,attextreme,347,346,1,320,0,321,FALSE,0,0.375,1e-10
 australia-republic-1999,highinc,347,314,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,t1polint,347,347,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,avgsd2,347,0,0,0,0,0,FALSE,0,0,1e-10
@@ -1503,7 +1503,7 @@ australia-republic-1999,sdeduc,347,347,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-
 australia-republic-1999,meaned,347,347,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 australia-republic-1999,meanage,347,347,0,0,0,0,FALSE,0,4.263256414560601e-14,1e-10
 australia-republic-1999,phighinc,347,347,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
-australia-republic-1999,meanxtreme,347,347,0,0,0,0,FALSE,0,4.718447854656915e-16,1e-10
+australia-republic-1999,meanxtreme,347,347,0,347,0,347,FALSE,0,0.10480769230769202,1e-10
 australia-republic-1999,pfemale_ind,347,347,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
 australia-republic-1999,entropy,347,347,0,0,0,0,FALSE,0,4.884981308350689e-15,1e-10
 australia-republic-1999,meant1know,347,347,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
@@ -1525,7 +1525,7 @@ australia-republic-1999,knowgainr,347,0,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,knowgainr2,347,0,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,educ3,347,347,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,aus.popparl1,347,347,0,0,0,0,FALSE,0,0,1e-10
-australia-republic-1999,aus.popparl2,347,276,0,0,0,0,FALSE,0,0,1e-10
+australia-republic-1999,aus.popparl2,347,272,26,5,0,31,FALSE,0,0.25,1e-10
 australia-republic-1999,aus.republican1,347,347,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 australia-republic-1999,aus.republican2,347,347,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 australia-republic-1999,btp04pr.t1trade,347,0,0,0,0,0,FALSE,0,0,1e-10

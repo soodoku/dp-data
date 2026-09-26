@@ -8,7 +8,7 @@ coverage of the 23 existing knowledge builds and the respondent reconstructions.
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
 UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24;
-SWE-02, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02 and UKGE-05 were approved in subsequent poll reviews.
+SWE-02, AUS-03, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02 and UKGE-05 were approved in subsequent poll reviews.
 Other proposals remain unapproved.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
@@ -1534,16 +1534,45 @@ Issue-specific scores are absent from the final aggregate even though later
 syntax constructs them. Check the fielded change-question routing, index memo,
 and script/export dates before choosing a version.
 
-### AUS-03: Extremity and popular-election attitudes preserve script behavior
+### AUS-03: Extremity omissions and a cross-wave ranking typo
 
-The aggregate's `attextreme` is only `abs(workind1 - 0.5)`. The script lowercases
-names before requesting `Demind1`, `Tradind1` and `Polind1`; those references
-produce no columns. A four-index alternative changes 320 observed values and
-one missingness status. This is strong computational evidence, but the intended
-battery still needs the attitude-index memo and analysis specification.
-The post popular-versus-parliament index's midpoint condition reads
-`FIRSTOP3`/`SECOP3`, creating a cross-wave dependency. Verify question ordering
-and the meaning of the first/second choices before substituting another wave.
+**Status: adopted narrow script corrections.** The archived `aus_republic.R`
+lowercases every source name, then computes extremity from `workind1`,
+`Demind1`, `Tradind1` and `Polind1`. In R, the three capitalized references
+resolve to `NULL`; `cbind()` silently omits them. The formula explicitly names
+workability, democracy, tradition and politicization. The source
+[variable inventory](../data/australia-republic-1999/variables.csv) defines all
+four T1 indices, and each reconstructed index matches its deposited score for
+all paired attendee values. We now average the available absolute deviations
+from 0.5 across those four indices. National autonomy remains excluded from
+this individual extremity formula, while the existing five-index group
+dispersion and generalized variance remain unchanged. Of 347 attendees, 320
+observed extremity scores change and one previously missing score becomes
+observed; their group mean `meanxtreme` changes for all 347. The one newly
+observed score belongs to CASEID 312 (source row 3714): workability is missing,
+tradition is 0.625, and the other two named indices are missing.
+
+The same script's T2 popular-election ranking score reads `firstop3` and
+`secop3` only in its don't-know midpoint condition; all its other conditions
+read `firstop2` and `secop2`, and the T1/T3 midpoint conditions each use their
+own wave. The source variable labels identify distinct T2 (WA5a/b) and T3
+(ZA14a/b) questions, with code 97 meaning don't know in both waves. We now
+use the T2 responses for the T2 midpoint. Five observed scores change from
+0.5 to 0.75, four 0.5 scores become missing, and 22 missing scores become 0.5:
+31 of 347 records have a value or missingness change. The 347-person sample,
+ranking order, all other wave scores, and AUS-02 knowledge policy stay fixed.
+The [frozen comparison](../audit/corrections/australia-republic-1999/approved_values.csv)
+records old and corrected values by CASEID for `attextreme`, `meanxtreme` and
+`aus.popparl2`; the only other Australia deviations from the historical
+aggregate remain the earlier AUS-04 `grpgain`/`loggain` correction.
+
+The folder's `codebook.pdf` is the separate Australian Constitutional Referendum
+Study, described there as a 3,400-record survey, while this deliberative-poll
+source contains 4,659 rows. It cannot establish these poll-specific question
+wordings or recodes. For these corrections we rely on the archived poll script,
+labels attached to this poll's `survey.sav`, its reconstructed indices, and the
+poll [paper](../data/australia-republic-1999/papers/adp5.pdf). Find the fielded
+poll questionnaire before deciding AUS-01 or AUS-02.
 
 ### AUS-04: Participant gains now join by source row
 

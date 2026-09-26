@@ -163,7 +163,7 @@ australia-republic-1999,educ4,education_four@historical-v1,347,347,0,0,0,0,1e-10
 australia-republic-1999,minority,minority@historical-v1,347,347,0,0,0,0,1e-10
 australia-republic-1999,hhincome,household_income@historical-v1,347,314,0,0,0,0,1e-10
 australia-republic-1999,female,female@historical-v1,347,347,0,0,0,0,1e-10
-australia-republic-1999,attextreme,attitude_extremity@historical-v1,347,346,0,0,3.885780586188048e-16,0,1e-10
+australia-republic-1999,attextreme,attitude_extremity@aus-03-v2,347,346,1,320,0.375,0,1e-10
 australia-republic-1999,highinc,high_income@historical-v1,347,314,0,0,0,0,1e-10
 australia-republic-1999,t1polint,political_interest_t1@historical-v1,347,347,0,0,0,0,1e-10
 australia-republic-1999,t1knowcor2,knowledge_joint_midterm@historical-v1,347,0,0,0,0,0,1e-10
@@ -180,7 +180,7 @@ australia-republic-1999,knowgainr,issue_knowledge@historical-v1,347,0,0,0,0,0,1e
 australia-republic-1999,knowgainr2,issue_knowledge@historical-v1,347,0,0,0,0,0,1e-10
 australia-republic-1999,educ3,education_three@historical-v1,347,347,0,0,0,0,1e-10
 australia-republic-1999,aus.popparl1,popular_t1@historical-v1,347,347,0,0,0,0,1e-10
-australia-republic-1999,aus.popparl2,popular_t2@historical-v1,347,276,0,0,0,0,1e-10
+australia-republic-1999,aus.popparl2,popular_t2@aus-03-v2,347,272,26,5,0.25,0,1e-10
 australia-republic-1999,aus.republican1,republican_t1@historical-v1,347,347,0,0,3.3306690738754696e-16,0,1e-10
 australia-republic-1999,aus.republican2,republican_t2@historical-v1,347,347,0,0,3.3306690738754696e-16,0,1e-10
 australia-republic-1999,bettered,higher_education@historical-v1,347,347,0,0,0,0,1e-10

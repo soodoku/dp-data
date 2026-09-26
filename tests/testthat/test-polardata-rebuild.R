@@ -451,7 +451,10 @@ test_that("AUS-04 aligns frozen group gains to respondents", {
   approved <- readr::read_csv(project_path(
     "audit", "corrections", "australia-republic-1999", "approved_values.csv"
   ), show_col_types = FALSE)
-  expect_equal(nrow(approved), 694L)
+  expect_setequal(unique(approved$legacy_field),
+                  c("grpgain", "loggain", "attextreme", "meanxtreme",
+                    "aus.popparl2"))
+  expect_equal(nrow(approved), 347L * 5L)
   data <- full_polardata()
   australia <- data[data$pollid == 26, ]
   expect_equal(nrow(australia), 347L)

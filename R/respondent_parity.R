@@ -56,7 +56,8 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
       ), rows = 258L
     ),
     "australia-republic-1999" = list(
-      fields = c("grpgain", "loggain"), rows = 347L
+      fields = c("grpgain", "loggain", "attextreme", "meanxtreme",
+                 "aus.popparl2"), rows = 347L
     )
   )
   contract <- reviewed[[poll_id]]

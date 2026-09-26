@@ -30,8 +30,8 @@ australia_knowledge_items <- function(survey, wave) {
 }
 
 australia_ranking <- function(survey, wave) {
-  read <- function(stem, w = wave) {
-    australia_source_codes(survey, paste0(stem, w), c(1:3, 97, 99, 100))
+  read <- function(stem) {
+    australia_source_codes(survey, paste0(stem, wave), c(1:3, 97, 99, 100))
   }
   first <- read("firstop")
   second <- read("secop")
@@ -44,9 +44,7 @@ australia_ranking <- function(survey, wave) {
   popular[which(first == 1 & second == 3)] <- 1
   popular[which((first == 1 & second == 2) |
                   (first == 3 & second == 1))] <- .75
-  # The historical wave-two midpoint condition reads wave-three rankings.
-  unsure <- if (wave == 2L) read("firstop", 3L) == 97 |
-    read("secop", 3L) == 97 else first == 97 | second == 97
+  unsure <- first == 97 | second == 97
   popular[which(!is.na(first) & !is.na(second) &
                   (unsure | (first == 3 & second == 3)))] <- .5
   popular[which((first == 2 & second == 1) |
@@ -107,8 +105,13 @@ build_australia_individual <- function(
   education <- c(0, .33, .66, 1, 1)[read("edulev", c(1:5, 98))]
   income <- c(.16, .33, .5, .66, .83, 1)[read("income", c(1:6, 97, 98))]
   attitudes <- australia_original_attitudes(survey)
-  # Capitalized column references in the historical script resolve to NULL.
-  extremity <- abs(attitudes$workability - .5)
+  extremity_indices <- c(
+    "workability", "democracy", "tradition", "politicization"
+  )
+  extremity <- rowMeans(
+    abs(as.matrix(attitudes[extremity_indices]) - .5), na.rm = TRUE
+  )
+  extremity[is.nan(extremity)] <- NA_real_
   tibble::tibble(
     popular_t1 = ranking_before$popular, popular_t2 = ranking_after$popular,
     republican_t1 = ranking_before$republican,

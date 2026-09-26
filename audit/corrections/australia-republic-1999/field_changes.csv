@@ -1,3 +1,6 @@
 legacy_field,respondents,finite_paired_changes,missingness_changes,historical_infinite,corrected_infinite
 grpgain,347,342,1,1,0
 loggain,347,342,1,1,0
+attextreme,347,320,1,0,0
+meanxtreme,347,347,0,0,0
+aus.popparl2,347,5,26,0,0
