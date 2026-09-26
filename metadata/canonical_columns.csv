@@ -5,14 +5,19 @@ respondents,arm,string,TRUE,FALSE,Observed participant status; does not assert r
 respondents,source_row,int32,FALSE,FALSE,One-based row in the original poll survey
 respondents,battery_row,int32,FALSE,FALSE,Historical participant ordering for deposit comparison only
 respondents,female,int32,TRUE,FALSE,Female indicator preserving the source coding
-items,poll_id,string,FALSE,TRUE,Stable poll identifier
-items,item_id,string,FALSE,TRUE,Stable item identifier within poll
-items,item_type,string,FALSE,FALSE,Knowledge attitude process or demographic item
-items,question_text,string,TRUE,FALSE,Fielded wording
-items,construct,string,TRUE,FALSE,Measured construct
-items,scale_min,float64,TRUE,FALSE,Lowest substantive numeric response
-items,scale_max,float64,TRUE,FALSE,Highest substantive numeric response
-items,correct_value,string,TRUE,FALSE,Correct answer for a knowledge item
+items,poll_id,string,FALSE,TRUE,Poll identifier
+items,item_id,string,FALSE,TRUE,Canonical source-column identifier within poll
+items,source_column_t1,string,FALSE,FALSE,Baseline source field
+items,historical_item_id,string,TRUE,FALSE,Historical respondent knowledge item ID when present
+items,cor_item_id,string,TRUE,FALSE,Cor-Sood battery item ID when present
+items,question,string,FALSE,FALSE,Question text or sourced paraphrase
+items,wording_source,string,FALSE,FALSE,Wording provenance and exactness
+items,response_type,string,FALSE,FALSE,"Closed, placement, open numeric, or open coded format"
+items,answer_choices,string,TRUE,FALSE,Archived offered choices when recoverable
+items,correct_codes,string,FALSE,FALSE,Scored source code or accepted range
+items,correct_answer,string,FALSE,FALSE,Readable answer or scoring range
+items,source_reference,string,FALSE,FALSE,Source file used to reconstruct the item
+items,coding_note,string,TRUE,FALSE,Open-response rule or source limitation
 responses,poll_id,string,FALSE,TRUE,Stable poll identifier
 responses,respondent_id,string,FALSE,TRUE,Original survey ID or documented file-scoped row ID
 responses,wave,int32,FALSE,TRUE,Ordered measurement wave

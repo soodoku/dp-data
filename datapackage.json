@@ -753,6 +753,70 @@
       }
     },
     {
+      "name": "items",
+      "path": "metadata/items.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "item_id",
+            "type": "string"
+          },
+          {
+            "name": "source_column_t1",
+            "type": "string"
+          },
+          {
+            "name": "historical_item_id",
+            "type": "string"
+          },
+          {
+            "name": "cor_item_id",
+            "type": "string"
+          },
+          {
+            "name": "question",
+            "type": "string"
+          },
+          {
+            "name": "wording_source",
+            "type": "string"
+          },
+          {
+            "name": "response_type",
+            "type": "string"
+          },
+          {
+            "name": "answer_choices",
+            "type": "string"
+          },
+          {
+            "name": "correct_codes",
+            "type": "string"
+          },
+          {
+            "name": "correct_answer",
+            "type": "string"
+          },
+          {
+            "name": "source_reference",
+            "type": "string"
+          },
+          {
+            "name": "coding_note",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
       "name": "knowledge_join_contracts",
       "path": "metadata/knowledge_join_contracts.csv",
       "profile": "tabular-data-resource",

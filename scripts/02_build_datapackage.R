@@ -20,6 +20,7 @@ resources <- c(
   "component_field_exclusions",
   "source_field_exclusions",
   "knowledge_items",
+  "items",
   "knowledge_join_contracts",
   "poll_references",
   "poll_facts",
