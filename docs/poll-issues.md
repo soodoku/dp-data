@@ -2879,9 +2879,36 @@ collapsed income `> 7`; final respondent high income uses `> 5`.
 Review `merge02_nuri.R`, `03_data.R` and `06_add_more_vars.R` before combining
 those stage-specific definitions in a revised schema.
 
+The [contemporary foreign-policy manuscript](../data/shared/papers/foreign-policy.pdf),
+Table 1, supplies a stronger version check than the index prose alone. Its
+online participant means are 0.511/0.536 for democracy and 0.448/0.478 for
+fighting poverty and suffering at baseline/departure. The deposited
+half-scaled version gives 0.509/0.536 and 0.446/0.478 for the same 245-person
+source sample; the approved BTPN-02 full-scale version gives 0.596/0.626
+and 0.491/0.533. The paper's described linear 0–1 item scoring instead
+supports the full-scale component values. Its environment means of
+0.686/0.715 match the executed four-component index (0.68565/0.71462),
+while pre-averaging Q13–Q14 as the prose describes gives 0.675/0.699.
+Thus the paper's numerical results appear to use an executed index version
+that differs from its prose. This does not by itself show whether the
+half-scaled support items were intended as reduced weights or were coding
+errors. Do not extend the full-scale correction to component weighting or
+silently claim that the corrected indices reproduce Table 1; recover the
+paper's exact analysis syntax before deciding whether to retain or revise
+BTPN-02.
+
+The income thresholds are also consistently stage-specific in both BTP
+online polls. Among these 245 selected people, source `inc60plus` equals
+`ppincimp >= 13` exactly (86 people, $60,000+); final individual `highinc`
+uses `ppincimp >= 12` (117 people, $50,000+); the early group input for
+`phighinc` uses `ppincimp >= 14` (55 people, $75,000+). All 15 stored group
+shares therefore differ from the share of members marked `highinc`. Preserve
+the historical fields while giving each threshold a literal name in a
+revised schema; a group share must state which member flag it summarizes.
+
 ### BTPN-05: Baseline political interest was omitted from the final aggregate
 
-**Proposed; no scoring change on main yet.** The 245 selected source records
+**Approved by the user and corrected upstream in PR #36.** The 245 selected source records
 all answer `qb57`, which the source dictionary labels as interest in U.S.
 politics. Its response labels run from 1 “very interested” through 4 “not at
 all interested.” Mapping those codes to 1, .66, .33 and 0, then storing a
@@ -2897,7 +2924,7 @@ These checks support a dropped export field, not an invented response.
 The retained [questionnaire](../data/btp-national-2003/questionnaires/btp-national-questionnaire.pdf)
 identifies itself as a Phase 2 follow-up and does not contain baseline Q57.
 It cannot independently confirm that item's exact fielded wording or routing;
-the source dictionary and response labels provide those details. The proposed
+the source dictionary and response labels provide those details. The approved
 edit derives `political_interest_t1` from raw `qb57`, then exports it as
 `t1polint`. It leaves all 245 people, their groups, raw answers, knowledge,
 attitudes and centrally computed group/poll descriptors unchanged. The
@@ -2924,6 +2951,38 @@ collapse is not implemented. Later political-interest syntax reverses direction:
 higher values mean less interest, unlike earlier `t1polint`. Consult the fielded
 questionnaire and final analysis specification before changing any of these
 versions; the separate online-primaries battery is not a substitute source.
+
+The literal source counts resolve the draft sample arithmetic but do not
+settle its intended estimand. Among 1,289 source rows, 328 are assigned to
+treatment, 315 of those have a valid group, 222 also attended at least three
+meetings, and 217 of those answered at least one post Q43–Q49 knowledge item.
+The draft's “223 then drop five to 217” is a count typo: 222 minus five is
+217. The [2009 online-poll analysis](../data/btp-national-2003/papers/refined-or-biased-opinions-2009.pdf)
+reports 284 people completing the pre-
+and post-surveys for this event, a broader population than the later
+three-meeting, knowledge-answer aggregate. Preserve the 217-person
+historical selection rather than conflating the two samples.
+
+The income conflict is exact. In the selected 217 people, source
+`inc60plus` is identical to `ppincimp >= 13` (78 people, $60,000+). The final
+individual `highinc` uses `ppincimp >= 12` (106 people, $50,000+); the
+earlier `highinc` in the draft and the group input for `phighinc` use
+`ppincimp >= 14` (54 people, $75,000+). Codes 12 and 13 contain 28 and 24
+people respectively. All 16 stored `phighinc` group shares differ from the
+share of members marked `highinc`. The same three thresholds appear in BTP
+National, arguing against a one-off typographical slip. Preserve the
+historical fields while distinguishing income-at-least-$50k, $60k and
+$75k flags explicitly in the revised schema; choose one only after stating
+the group-share estimand.
+
+The baseline questionnaire Q18 offers “very,” “somewhat,” “not very” and
+“not at all” interested, coded 1–4. Among the 217 selected people the counts
+are 68, 112, 33 and four. Source `t1polint` is a binary very-interested flag
+and equals `b1q18 == 1`; the final aggregate maps Q18 to 0, .33, .66, 1,
+so its larger values mean *less* interest. The separate upstream
+`political_interest_t1_harmonized` maps the directly observed ordinal
+answers to a 0–1 higher-more scale. These are three different definitions;
+the harmonized column does not justify silently rewriting the historical one.
 
 ### PR-02: Peer gain now uses the whole group (corrected)
 
@@ -3091,8 +3150,7 @@ more correct.
 
 ### NH-08: Nonanswers in the three-wave attitude battery
 
-**Proposed; approved for missing-value implementation, pending final review of
-measured consequences.** The retained
+**Approved by the user and corrected upstream in PR #38.** The retained
 [field questionnaire](../data/new-haven-2004/source-materials/field-questionnaire.pdf)
 prints agreement codes 1–5 and code 6 for “don't know” on Q12–Q13 and
 Q20–Q23. It offers no code 0. The public three-wave workbook records 64
@@ -3106,7 +3164,7 @@ The historical recode inserts the neutral response 3 for code 6, system
 missing and most zero codes; a special arrival path instead turns zero into
 an extreme score. It also forces the whole airport index to neutral when
 arrival Q12 is unknown. Neither 0 nor 6 is an expressed middle attitude.
-The proposed recode therefore makes both codes missing. Each three-wave
+The corrected recode therefore makes both codes missing. Each three-wave
 attitude index is observed only when all its component answers are in 1–5;
 baseline and arrival extremity are observed only when all three indices are.
 This leaves respectively 122/120/122 observed airport indices at baseline/
@@ -3116,7 +3174,7 @@ for 100 rather than 132 people; arrival extremity for 114 rather than 132.
 The six all-zero departure answers for case 910042 now yield three missing
 indices rather than artificial neutral scores.
 
-Relative to the current released `polardata`, exactly 566 New Haven cells
+Relative to the preceding `polardata` release, exactly 566 New Haven cells
 change, with the same 132 rows and 364 columns: 10/19/25 baseline and
 10/8/6 departure airport/mandatory/voluntary indices become missing;
 32 baseline and 18 arrival extremity values become missing. The central
@@ -3134,7 +3192,7 @@ The [published study](../data/new-haven-2004/papers/disaggregating-deliberation-
 Table 1 reports airport means of 0.540/0.415/0.434 at baseline/arrival/
 departure and an arrival voluntary-sharing-versus-local-control mean of
 0.041 on a -1 to 1 scale. The prior corrected build using neutral
-imputation reproduced those rounded means. The proposed complete-case
+imputation reproduced those rounded means. The corrected complete-case
 airport means become 0.588/0.477/0.473, and the arrival voluntary-sharing
 mean becomes 0.050, among those with all contributing answers observed.
 Thus the paper used the neutral-imputation stage; it does not establish that
