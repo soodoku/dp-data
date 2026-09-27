@@ -2770,7 +2770,7 @@ presence is not a claim that every original field-file merge has been recovered.
 | zeguo-2005 | All 233 historical participants are reconstructed from reviewed merged/pre/post components; three historical knowledge-item overrides remain explicit. The corrected Wenchang source makes all 16 group covariance matrices full rank, removing 15 obsolete numerical exceptions. | Original and translated instruments, event date, project-choice scales and respondent/group identifiers. |
 | marousi-2006 | Public participants file came from an existing derived 2014 analysis object, not an independently rebuilt item-level source. Its post knowledge-score distribution conflicts with a contemporaneous 138-person distribution; see MAR-01. | [Questionnaire](../data/marousi-2006/questionnaire.pdf), original field returns, scoring syntax and group roster. Establish wave and identity linkage before treating T2 zeros as missing. |
 | bulgaria-2007 | Distinct Roma-policy event; it must not inherit the 2002 crime battery merely because files share an archive directory. | Roma-policy questionnaire, actual event date and source-file provenance. |
-| tanzania-2015 | Public source is available, but full canonical arm, village, questionnaire and measurement integration is not built here. | Village-randomization protocol, information versus deliberation arms, instruments and cluster IDs. Preserve the current downstream specification until audited. |
+| tanzania-2015 | Public source is available, but full canonical arm, village, questionnaire and measurement integration is not built here. The group file has one person without a recorded treatment assignment; see TZ-01. | Village-randomization protocol, information versus deliberation arms, instruments and cluster IDs. Preserve the current downstream specification until audited. |
 | america-in-one-room-2019 | Downstream scoring is reproducible from the unchanged deposit; upstream has not independently reconstructed all measurement and sample decisions. | Fielded factual battery, contemporaneous answer key, invitation versus attendance status, uninvited controls and both source weights. The Paris Agreement item must be interpreted at the fieldwork date, not under today's ratification status. |
 | a1r-climate-2021 | Three-wave source and weights exist, but upstream respondent-wave eligibility and attrition tables are not complete. | All wave instruments, stable IDs, assignment and attendance, panel filters and follow-up weights. Preserve actual wave identities instead of calling every later wave “post.” |
 | amr-2024 | Six-country numeric data exist; country-specific measurement equivalence, attendance versus assignment and weight definitions need explicit source contracts. | Country/language instruments, randomization and attendance records, coding instructions, stable IDs and weighting documentation. Published count parity alone does not validate every recode. |
@@ -2805,6 +2805,32 @@ analysis versions or cohorts; they do not identify which of the 27 file zeros
 are true zero-correct responses. Preserve the source scores. Recover the
 original item-level questionnaires, respondent IDs and T1/T2/T3 wave crosswalk
 before making a missingness or sample correction.
+
+### TZ-01 — group assignment does not by itself establish treatment eligibility
+
+The retained `participants.dta` has 2,225 rows: 2,002 labelled citizens, 121
+elites and 102 moderators. Of the citizens, 2,001 have a recorded treatment
+assignment (`z`), and 401 have `zdelib=1`. The separate
+`tanzania_groups.tab` has 371 unique citizen IDs, each with group assignments
+for both rounds. Exactly 370 are among the 401 assigned to deliberation; the
+other 31 assigned citizens lack group rows. The remaining grouped person,
+`HHID=240301`, has `z`, `zdelib` and the other arm flags missing. They have
+round-1 group 24 and round-2 group 13. All 25 issue-rating fields selected
+by the current out-of-sample reader are observed for this person at post,
+and none at baseline. This supports preserving their recorded post answers
+but does not establish how they entered the event sample. The
+[working paper](../data/tanzania-2015/papers/tanzania-working-paper.pdf),
+section 3.2, says 401 were invited and 370 complied in 25 groups. Its 370
+therefore matches the intersection of the assignment and group files, while
+the extra group row has no verified treatment-arm status.
+
+The current `dp-distortions` out-of-sample reader explicitly retains all 371
+grouped rows, including the one with missing assignment. A future canonical
+upstream membership table should keep the literal group record and the
+assignment status as separate fields. Determine whether `240301` was a late
+attendee, a nonrandom participant, or an erroneous roster entry from the
+original event and randomization records before changing the analysis sample.
+Do not infer invitation or eligibility solely from a group number.
 
 ### NH-02 — Event year corrected; attendance needs reconciliation
 
