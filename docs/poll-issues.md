@@ -2592,6 +2592,22 @@ and verify the factual keys against the applicable briefing material. Do not
 claim the post supplement independently confirms Q20/Q26. Retain current scores
 and qualify the prior “confirmed by questionnaires” wording in any future review.
 
+The canonical Q26 catalog summary previously omitted most of the question's
+substantive categories. The March 12 questionnaire and the
+[results report](../data/san-mateo-2008/reports/san-mateo-results.pdf),
+Table 2, ask about land in **agricultural use, watershed, open space, wetlands,
+or parks**; `metadata/items.csv` now gives that full wording. The report's
+Q26 correct-answer rates are 5.86% before and 27.20% after, exactly 14/239
+and 65/239 source respondents selecting code 5. This reproduces the
+publication-era key choice, but is not an independent geographic fact check.
+The briefing booklet's land-use chart separates agriculture/rangeland (40%)
+from open space (33%), totaling about 73%. It does not clearly explain why
+the keyed response is “more than 75%”; watershed or other land categories may
+cross the threshold, but no reviewed source establishes that allocation.
+Preserve code 5 pending a fielded key or a source calculation using the full
+question definition. The Q20 catalog also now distinguishes source-label
+$950,000 from questionnaire $940,000; both are code 5, so no score changes.
+
 **SM-02 — identity and earlier source.** The maintained build selects 239
 participants from an earlier 1,806-row file, sorts unique `PARTICIPANTID`, and uses
 26 `GRP` values. `RESPNUM` is not unique; the later 239-row analysis file is not the
