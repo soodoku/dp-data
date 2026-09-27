@@ -2772,8 +2772,8 @@ presence is not a claim that every original field-file merge has been recovered.
 | bulgaria-2007 | Distinct Roma-policy event; it must not inherit the 2002 crime battery merely because files share an archive directory. | Roma-policy questionnaire, actual event date and source-file provenance. |
 | tanzania-2015 | Public source is available, but full canonical arm, village, questionnaire and measurement integration is not built here. The group file has one person without a recorded treatment assignment; see TZ-01. | Village-randomization protocol, information versus deliberation arms, instruments and cluster IDs. Preserve the current downstream specification until audited. |
 | america-in-one-room-2019 | The attendance flag now uses the source group roster: 526 attended, of whom 523 completed the post survey. Downstream scoring is reproducible from the unchanged deposit; upstream has not independently reconstructed all measurement and sample decisions. See A1R19-01. | Fielded factual battery, remaining answer-key evidence, uninvited controls and both source weights. The Paris Agreement item must be interpreted at the fieldwork date, not under today's ratification status. |
-| a1r-climate-2021 | Three-wave source and weights exist, but upstream respondent-wave eligibility and attrition tables are not complete. | All wave instruments, stable IDs, assignment and attendance, panel filters and follow-up weights. Preserve actual wave identities instead of calling every later wave “post.” |
-| amr-2024 | Six-country numeric data exist; country-specific measurement equivalence, attendance versus assignment and weight definitions need explicit source contracts. | Country/language instruments, randomization and attendance records, coding instructions, stable IDs and weighting documentation. Published count parity alone does not validate every recode. |
+| a1r-climate-2021 | The eight knowledge keys reproduce all 16 published weighted before/after percentages. The participant export currently treats the 962 post-survey completers as all attendees, although session logs record a larger attendance set; see A1RC-01. | Resolve the attendance threshold, preserve all three wave identities, and obtain the fielded instruments and follow-up eligibility rules. |
+| amr-2024 | Six-country knowledge scoring reproduces the report's country-specific weighted gains, including its highlighted largest item gains. Country-specific measurement equivalence and attendance versus assignment still need explicit source contracts; see AMR-01. | Country/language instruments, randomization and attendance records, coding instructions, stable IDs and weighting documentation. |
 
 The four newer control-study files and Marousi are already byte-identical between
 `dp-learning`'s former local inputs and their upstream copies. That migration
@@ -2793,13 +2793,70 @@ nonattenders and discarded their observed group numbers. The builder now uses
 `GROUP` for treatment attendance and small-group membership, while `POST`
 continues to define post-survey completion. This changes only three
 participant-level labels and group IDs; it does not alter any questionnaire
-response, knowledge key, score or survey sample.
+response, knowledge key, score or paired pre/post survey sample. It does change
+the baseline attendance comparison in `dp-learning`: attended count 523 → 526
+with mean seven-item score 0.457798 → 0.458175; invited nonattender count
+2,218 → 2,215 with mean 0.378333 → 0.378136. Paired attendee comparisons
+still use the 523 post-survey completers, so those estimates are unchanged.
 
 The seven factual answers in `metadata/items.csv` match the codebook options.
 The Paris Agreement key is option 4, “All of the above.” This is consistent
 with the September 2019 field dates: [Russia accepted on 7 October 2019 and
 Turkey ratified in 2021; Iran had signed but not ratified](https://treaties.un.org/Pages/showDetails.aspx?objid=0800000280458f37).
 Do not re-key this item using countries' later treaty status.
+
+### A1RC-01 — the 2021 climate attendance threshold remains a schema decision
+
+The [NORC methods report](../data/a1r-climate-2021/design/a1r-climate-methods.pdf),
+Table 1 and its footnotes, counts 1,021 treatment respondents who attended at
+least two virtual events and were invited to the post survey. Of these, 962
+completed the post survey and all four sessions. The source file has 962
+`P_DELEGATE == 1` rows. A further 59 have `FINAL_ATTEND` codes 5–7: six
+attended four sessions, 45 attended two or three, and eight attended two or
+three. Together with the 962 code-8 cases, these reproduce 1,021. Session
+flags show 1,146 treatment respondents attended at least one session; some
+other noncompleters have assigned `ROOM` values but no recorded session.
+Two `FINAL_ATTEND == 10` cases (IDs 23725 and 27194) show two or three
+recorded sessions yet are outside NORC's 1,021-person post-invitation count;
+the file does not explain their exclusion. Therefore simply testing whether
+the session sum is at least two would produce 1,023, not the reported 1,021.
+The current participant export sets `attended` and `arm == "attended"` only
+for the 962 complete cases. That is a post-survey sample flag, not a literal
+attendance flag. Whether the general `attended` field should mean any live
+session or the study's two-session eligibility threshold needs one consistent
+schema rule; neither changes the 962-person published analysis sample.
+The `dp-learning` attendee-versus-invitee baseline descriptive comparison
+would change under either correction; its paired attendee-control estimates
+would still use the same 962 post-survey completers. The attendee mean
+baseline eight-item score is 0.685551 for the current 962 complete cases,
+0.679726 for the 1,021 report-qualified cases, and 0.656959 for all 1,146
+people with at least one recorded session. Those are distinct descriptive
+populations, not alternative answer keys.
+
+The [knowledge report](../data/a1r-climate-2021/reports/a1r-climate-knowledge.pdf)
+lists eight before/after correct-response percentages. Restricting to the 962
+complete delegates, the source `Q17:Q24` and `T2Q17:T2Q24` answers scored by
+the keys in `metadata/items.csv` reproduce all 16 percentages to one decimal
+place using `WEIGHT1`. For example, Net Zero is 68.3% → 80.1% and fossil
+fuels is 54.0% → 64.5%. The unweighted percentages do not match. `WEIGHT2`
+also does not match; `WEIGHT1` is the report's relevant national weight for
+this comparison. The later `T3` questionnaire is a distinct follow-up wave.
+
+### AMR-01 — six-country knowledge gains reproduce the report
+
+The [final report](../data/amr-2024/reports/amr-final-report.pdf), Knowledge
+Gains, reports six knowledge questions in six countries. The source contains
+2,419 unique IDs, each with `Time` 0 and 1: 1,280 intervention participants
+and 1,139 controls. For the 1,280 participants, scoring the six answers with
+the `metadata/items.csv` keys and using `Weight` reproduces the report's
+country-level claims. Nigeria's mean gain is 30.6 percentage points and its
+superbug item gains 44.1 points; India's mean gain is 17.5 and its infection
+prevention item gains 24.9; Brazil's statements-about-antibiotics item gains
+16.3. The weighted Tanzania change in the first item is about −1.5 points,
+consistent with the report's rounded −1.4. This checks key and weight
+application against published results, but the report does not supply the
+country/language answer options or a randomized-assignment roster. Do not
+reinterpret its `Group` field as randomized assignment without that evidence.
 
 ### MAR-01 — derived post knowledge zeros need an item-level and wave bridge
 
