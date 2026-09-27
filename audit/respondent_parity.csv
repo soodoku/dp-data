@@ -373,7 +373,7 @@ bulgaria-crime-2002,educ4,education_four@historical-v1,278,277,0,0,0,0,1e-10
 bulgaria-crime-2002,minority,minority@historical-v1,278,278,0,0,0,0,1e-10
 bulgaria-crime-2002,hhincome,household_income@historical-v1,278,273,0,0,0,0,1e-10
 bulgaria-crime-2002,female,female@historical-v1,278,278,0,0,0,0,1e-10
-bulgaria-crime-2002,attextreme,attitude_extremity@historical-v1,278,278,0,0,4.996003610813204e-16,0,1e-10
+bulgaria-crime-2002,attextreme,attitude_extremity@bgc-04-v2,278,278,0,131,0.03125000000000011,0,1e-10
 bulgaria-crime-2002,highinc,high_income@historical-v1,278,273,0,0,0,0,1e-10
 bulgaria-crime-2002,t1polint,political_interest_t1@historical-v1,278,0,0,0,0,0,1e-10
 bulgaria-crime-2002,t1knowcor2,knowledge_joint_midterm@historical-v1,278,0,0,0,0,0,1e-10
@@ -400,7 +400,7 @@ bulgaria-crime-2002,bulgaria.bulgaria.t1q16,vigilantism_t1@historical-v1,278,261
 bulgaria-crime-2002,bulgaria.bulgaria.t1q21,institutional_change_t1@historical-v1,278,224,0,0,0,0,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t1q22,independent_investigation_t1@historical-v1,278,208,0,0,0,0,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t1q23,prosecution_t1@historical-v1,278,187,0,0,0,0,1e-10
-bulgaria-crime-2002,bulgaria.bulgaria.t1q19,death_penalty_t1@historical-v1,278,243,0,0,0,0,1e-10
+bulgaria-crime-2002,bulgaria.bulgaria.t1q19,death_penalty_t1@bgc-04-v2,278,243,0,131,0.25,0,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t2tghpc,tougher_punishment_t2@historical-v1,278,272,0,0,4.440892098500626e-16,0,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t2clibe,civil_liberties_t2@historical-v1,278,275,0,0,5.273559366969494e-16,0,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t2q8_7,social_causes_t2@historical-v1,278,242,0,0,0,0,1e-10
@@ -412,7 +412,7 @@ bulgaria-crime-2002,bulgaria.bulgaria.t2q16,vigilantism_t2@historical-v1,278,256
 bulgaria-crime-2002,bulgaria.bulgaria.t2q21,institutional_change_t2@historical-v1,278,241,0,0,0,0,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t2q22,independent_investigation_t2@historical-v1,278,249,0,0,0,0,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t2q23,prosecution_t2@historical-v1,278,233,0,0,0,0,1e-10
-bulgaria-crime-2002,bulgaria.bulgaria.t2q19,death_penalty_t2@historical-v1,278,255,0,0,0,0,1e-10
+bulgaria-crime-2002,bulgaria.bulgaria.t2q19,death_penalty_t2@bgc-04-v2,278,255,0,170,0.25,0,1e-10
 bulgaria-crime-2002,bettered,higher_education@historical-v1,278,277,0,0,0,0,1e-10
 europolis-2009,readbrief,read_briefing@historical-v1,348,0,0,0,0,0,1e-10
 europolis-2009,t1know,knowledge_t1@historical-v1,348,348,0,0,3.3306690738754696e-16,0,1e-10

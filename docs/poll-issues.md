@@ -1858,19 +1858,29 @@ income code.
 match all 278 source participants, including missingness, at 1e-10 tolerance.
 Historical extremity includes the two-item drug-legalization index alongside the
 12 exported attitude indices; dispersion uses only those 12. The death-penalty
-item retains the historical four-category mapping 1→1,2→.75,3→.5,4→.25,
-which does not reach zero. The questionnaire's Q20 asks agreement that the
+item historically mapped 1→1, 2→.75, 3→.5, 4→.25, never reaching zero.
+The questionnaire's Q20 asks agreement that the
 death penalty is the only appropriate punishment for certain crimes; the source
 stores this as `q19`/`q19p`, with 1 = strongly agree through 4 = strongly
 disagree. The stored `t1q19r`/`t2q19r` labels call the result a 0–1 scale, but
-all 243/255 substantive source answers exactly match 1/.75/.5/.25. A four-step
-endpoint-normalized alternative (1, 2/3, 1/3, 0) would change 131 baseline and
-170 departure respondent scores, lowering the observed-item means from
-.737654 to .650206 and from .617647 to .490196, respectively. This may be a
-scale-endpoint error, but the historical script and any index memo specifying
-its intended spacing must be checked before changing the released series;
-group and poll-level effects must then be measured. Knowledge remains the
+all 243/255 substantive source answers exactly match 1/.75/.5/.25. The
+approved BGC-04 correction maps the four ordered answers to equally spaced
+endpoints (1, 2/3, 1/3, 0) in both waves. It changes 131 baseline and 170
+departure respondent scores, lowering the observed-item means from .737654 to
+.650206 and from .617647 to .490196, respectively. Missingness and the
+278-person sample are unchanged. The baseline correction also changes 131
+respondent extremity scores and, through the central group formulas, all 278
+`meanxtreme` and `avgsd` values and 263 `genvar` values. Case-level before/after
+values for the six affected wide fields are recorded in
+[`audit/corrections/bulgaria-crime-2002/approved_values.csv`](../audit/corrections/bulgaria-crime-2002/approved_values.csv).
+The historical mapping is preserved there for review. Knowledge remains the
 seven-item fixed-denominator battery, with nonanswers scoring zero.
+The mean across Bulgaria groups of the death-penalty post-minus-baseline
+index moves from −.11919 to −.15892; the same 17 groups remain. A paired run
+of dp-learning's main mixed model on the same 5,728 observations changes its
+fixed-effect estimates by at most .000855 (the extremity coefficient moves
+from −.075410 to −.074556). Downstream consumers of the two attitude columns
+or the three derived group fields will see the corrected values.
 
 **BGC-05 — six archived attitude labels are shifted (catalog corrected).**
 The two retained cross-poll index files pair six Bulgaria source fields with
@@ -1888,8 +1898,8 @@ The generated `attitude-indices` catalog now uses those six topic names in
 the same order as the source fields. The source files in `data/shared/` retain
 their original bytes as historical evidence. This is a label correction only:
 the 129 index rows, field mappings, respondent answers, scores and aggregate
-numbers are unchanged. The possible death-penalty *scale* correction in
-BGC-04 remains unresolved and is not implied by the catalog edit.
+numbers were unchanged by that label edit. The separate BGC-04 scale correction
+was subsequently approved and changes the values described above.
 
 ## California 2011 — california-whats-next-2011
 

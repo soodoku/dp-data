@@ -18,7 +18,7 @@ bulgaria_attitudes <- function(survey, wave) {
     institutional_change = response("q21", c(0, 1), 3),
     independent_investigation = response("q22", c(0, 1), 3),
     prosecution = response("q23", c(0, 0, 1), 4),
-    death_penalty = response("q19", c(1, .75, .5, .25))
+    death_penalty = response("q19", c(1, 2 / 3, 1 / 3, 0))
   )
 }
 

@@ -36,6 +36,14 @@ indices <- arrow::read_parquet(project_path(
 expected_indices <- readr::read_tsv(project_path(
   "evidence", "benchmarks", "attitude-indices.tab"
 ), show_col_types = FALSE)
+label_fixes <- read_metadata("attitude_index_label_fixes")
+rows <- match(label_fixes$t1var, expected_indices$t1var)
+stopifnot(
+  !anyNA(rows),
+  identical(expected_indices$dpnum[rows], label_fixes$dpnum),
+  identical(expected_indices$att_index[rows], label_fixes$archived_label)
+)
+expected_indices$att_index[rows] <- label_fixes$reviewed_label
 stopifnot(
   identical(names(indices), names(expected_indices)),
   isTRUE(all.equal(indices, expected_indices, check.attributes = FALSE))

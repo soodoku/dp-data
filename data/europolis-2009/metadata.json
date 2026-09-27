@@ -128,11 +128,11 @@
       "reference_id": "europolis-2009-local-cdd-europolis-2009-questionnaire-post",
       "poll_id": "europolis-2009",
       "kind": "questionnaire",
-      "title": "Original questionnaire-post.doc",
+      "title": "Misfiled Tomorrow's Europe post questionnaire",
       "url": null,
       "local_artifact_id": "cdd-europolis-2009-questionnaire-post",
       "accessed": "2026-09-24",
-      "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/europolis-2009/questionnaire-post.doc"
+      "notes": "Retained archive artifact is text-identical to the Tomorrow's Europe 2007 post questionnaire; not evidence for Europolis source questions. data/europolis-2009/questionnaire-post.doc"
     },
     {
       "reference_id": "europolis-2009-local-material-7731a4ce1a2d98a7-europolis-2009",
@@ -379,8 +379,8 @@
     {
       "poll_id": "europolis-2009",
       "material_type": "questionnaires",
-      "status": "partial",
-      "notes": "Local post questionnaire available; complete fielded baseline/arrival and all translated versions not established.",
+      "status": "not-found",
+      "notes": "No verified Europolis questionnaire in the retained poll folder; the file labeled post questionnaire has identical text to the Tomorrow's Europe 2007 post instrument and must not validate Europolis scoring.",
       "checked_references": "europolis-2009-local-cdd-europolis-2009-questionnaire-post"
     },
     {
@@ -492,7 +492,7 @@
       "artifact_id": "cdd-europolis-2009-questionnaire-post",
       "poll_id": "europolis-2009",
       "artifact_type": "questionnaire",
-      "title": "Original questionnaire-post.doc",
+      "title": "Misfiled Tomorrow's Europe post questionnaire",
       "location": "data/europolis-2009/questionnaire-post.doc",
       "source_id": "cdd-europolis-2009-questionnaire-post",
       "original_archive_path": "data/eu_2009/questionnaires/T3 Questionnaires/T3 questionnaire_EN.doc",
@@ -500,7 +500,7 @@
       "rights_status": "owner-approved",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "notes": "Archive provenance retained; text matches the Tomorrow's Europe 2007 post questionnaire and is not Europolis instrument evidence",
       "relative_path": "questionnaire-post.doc"
     },
     {
@@ -657,7 +657,7 @@
       "artifact_id": "material-c0290d73f4b82fe3-europolis-2009",
       "poll_id": "europolis-2009",
       "artifact_type": "questionnaire",
-      "title": "Original questionnaire-post.doc (PDF preview)",
+      "title": "Misfiled Tomorrow's Europe post questionnaire (PDF preview)",
       "location": "data/europolis-2009/questionnaire-post.pdf",
       "source_id": "material-c0290d73f4b82fe3",
       "original_archive_path": null,
@@ -665,7 +665,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Generated from data/europolis-2009/questionnaire-post.doc. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "notes": "Generated preview of the misfiled archive document; identical text to the Tomorrow's Europe 2007 post questionnaire. Do not use as Europolis instrument evidence.",
       "relative_path": "questionnaire-post.pdf"
     },
     {
