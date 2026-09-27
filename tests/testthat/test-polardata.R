@@ -7,6 +7,21 @@ health_reference <- function() {
   )
 }
 
+test_that("Bulgaria attitude catalog names match the source questions", {
+  indices <- arrow::read_parquet(project_path(
+    "output", "polardata", "attitude-indices.parquet"
+  ))
+  fields <- paste0("bulgaria.bulgaria.t1", c(
+    "q10_3", "q16", "q21", "q22", "q23", "q19"
+  ))
+  labels <- indices$att_index[match(fields, indices$t1var)]
+  expect_equal(labels, c(
+    "Penalties for Drug Taking", "Allowing Vigilantism",
+    "Institutional Change", "Independence of Investigation Service",
+    "Place of Prosecution", "Death Penalty"
+  ))
+})
+
 test_that("UK Health raw answers reproduce all 71 reconstructed fields", {
   rebuilt <- build_health_polardata()
   parity <- compare_health_polardata(rebuilt, health_reference())

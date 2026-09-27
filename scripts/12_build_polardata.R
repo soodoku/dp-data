@@ -49,6 +49,23 @@ stopifnot(
   all(indices$t1var %in% names(rebuilt)),
   all(indices$t2_t3var %in% names(rebuilt))
 )
+bulgaria_fields <- paste0("bulgaria.bulgaria.t1", c(
+  "q10_3", "q16", "q21", "q22", "q23", "q19"
+))
+bulgaria_rows <- match(bulgaria_fields, indices$t1var)
+stopifnot(
+  !anyNA(bulgaria_rows), all(indices$dpnum[bulgaria_rows] == 10L),
+  identical(indices$att_index[bulgaria_rows], c(
+    "Legalizing Drugs", "Penalties for Drug Taking", "Allowing Vigilantism",
+    "Institutional Change", "Independence of Investigation Service",
+    "Place of Prosecution"
+  ))
+)
+indices$att_index[bulgaria_rows] <- c(
+  "Penalties for Drug Taking", "Allowing Vigilantism",
+  "Institutional Change", "Independence of Investigation Service",
+  "Place of Prosecution", "Death Penalty"
+)
 arrow::write_parquet(indices, file.path(directory, "attitude-indices.parquet"))
 readr::write_tsv(indices, file.path(directory, "attitude-indices.tab"), na = "")
 

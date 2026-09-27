@@ -99,12 +99,12 @@ poll_id	poll_name	n_indices	att_index	t1var	t2_t3var	dpnum
 53	Bulgarian National	12	Addressing Economic Root Causes	bulgaria.bulgaria.t1q8_1	bulgaria.bulgaria.t2q8_1	10
 53	Bulgarian National	12	Rehabilitation	bulgaria.bulgaria.t1q8_8	bulgaria.bulgaria.t2q8_8	10
 53	Bulgarian National	12	Streamlining Trials	bulgaria.bulgaria.t1q8_11	bulgaria.bulgaria.t2q8_11	10
-53	Bulgarian National	12	Legalizing Drugs	bulgaria.bulgaria.t1q10_3	bulgaria.bulgaria.t2q10_3	10
-53	Bulgarian National	12	Penalties for Drug Taking	bulgaria.bulgaria.t1q16	bulgaria.bulgaria.t2q16	10
-53	Bulgarian National	12	Allowing Vigilantism	bulgaria.bulgaria.t1q21	bulgaria.bulgaria.t2q21	10
-53	Bulgarian National	12	Institutional Change	bulgaria.bulgaria.t1q22	bulgaria.bulgaria.t2q22	10
-53	Bulgarian National	12	Independence of Investigation Service	bulgaria.bulgaria.t1q23	bulgaria.bulgaria.t2q23	10
-53	Bulgarian National	12	Place of Prosecution	bulgaria.bulgaria.t1q19	bulgaria.bulgaria.t2q19	10
+53	Bulgarian National	12	Penalties for Drug Taking	bulgaria.bulgaria.t1q10_3	bulgaria.bulgaria.t2q10_3	10
+53	Bulgarian National	12	Allowing Vigilantism	bulgaria.bulgaria.t1q16	bulgaria.bulgaria.t2q16	10
+53	Bulgarian National	12	Institutional Change	bulgaria.bulgaria.t1q21	bulgaria.bulgaria.t2q21	10
+53	Bulgarian National	12	Independence of Investigation Service	bulgaria.bulgaria.t1q22	bulgaria.bulgaria.t2q22	10
+53	Bulgarian National	12	Place of Prosecution	bulgaria.bulgaria.t1q23	bulgaria.bulgaria.t2q23	10
+53	Bulgarian National	12	Death Penalty	bulgaria.bulgaria.t1q19	bulgaria.bulgaria.t2q19	10
 52	Zeguo Township	9	Industrial Roads	chi.t1att1	chi.t2att1	9
 52	Zeguo Township	9	Village Roads	chi.t1att2	chi.t2att2	9
 52	Zeguo Township	9	Main Roads	chi.t1att3	chi.t2att3	9
