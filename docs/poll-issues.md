@@ -2674,7 +2674,14 @@ lies outside the printed a–e choices. The archived `mi.R` later zero-fills
 missing item scores, so this typed-missingness correction leaves the final
 fixed-denominator knowledge score unchanged. The two Senate free-text tokens
 SC and "same" still lack a verified response-sequence interpretation; no
-substantive party answer is inferred from them.
+substantive party answer is inferred from them. Specifically, post ID 406
+answers `SC` to both Q38 (Michigan State Senate) and Q39 (State House); the
+deposited battery has incorrect for Q38 and missing for Q39. Post ID 503
+answers `same` to Q38 and "don't know" to Q39; the deposit again has incorrect
+for Q38 and missing for Q39. The maintained typed build leaves all three `SC`
+or `same` cells missing. The post questionnaire puts Q38 first in this
+party-control pair, so `same` cannot be resolved from an immediately preceding
+party-control answer.
 
 **Next check:** recheck all accepted text aliases against contemporaneous coding
 instructions, retaining raw text and rejecting unknown tokens. `postit` identifies
@@ -2683,19 +2690,36 @@ people and `group_number` gives 16 groups. The published source is already merge
 
 ## Denmark Euro 2000 — denmark-euro-2000
 
-**DK-01 — unresolved four-person difference and absent verified roster.** The
-baseline has 1,702 rows, the departure file 359, and all 359 departure `DELNR`
-values uniquely match nonmissing baseline `delnr`. There are 363 deposited
-batteries. The baseline's 390 nonmissing participant identifiers do not provide
-four extra departure interviews; an archived joined object also has 359.
-Nine-item measurements join source T0 to T2. No verified discussion-group roster
-is currently attached.
+**DK-01 — the deposited battery includes baseline-only rows and omits one
+departure respondent.** The baseline has 1,702 rows, the departure file 359,
+and all 359 departure `DELNR` values uniquely match nonmissing baseline
+`delnr`. There are 363 deposited battery rows. Comparing the nine T0 and nine
+T2 correctness cells in their original sequence matches 358 rebuilt people
+exactly, including baseline gender. Five deposited rows are inserted at rows
+93, 109, 130, 154 and 264; all have T2 answers missing. Their nine T0 cells
+and gender match baseline records with `delnr` 103, 120, 142, 166 and 281,
+respectively. The latter four signatures are unique in the baseline. Row 93
+also matches one baseline record with no `delnr`, but its position between
+matched identifiers 102 and 104 supports 103. None of these five identifiers
+appears in the 359-row departure file. Conversely, baseline `delnr` 203
+(source row 836) has a matched departure interview and a unique complete
+18-cell signature, but no deposited row. Thus five baseline-only insertions
+and one omitted departure row explain the net four-row difference. The
+anonymous deposit does not prove why those choices were made or provide an
+independent ID bridge for row 93.
 
-**Next check:** re-read [questionnaire.pdf](../data/denmark-euro-2000/questionnaire.pdf)
-with both component dictionaries, inspect export dates and join exclusions, and
-locate the deposited sample's provenance. Do not fill the count difference by
-joining missing IDs or replicating rows. No person-level deposit differences or
-changed-score counts are established for this unequal sample.
+The maintained paired build keeps the 359 documented departure interviews;
+it does not add rows without a T2 interview or drop `delnr` 203 to imitate the
+deposit. Nine-item measurements join source T0 to T2. An archived joined object
+also has 359 departure respondents. The contemporary
+[study](../data/denmark-euro-2000/papers/deliberative-democracy-euro.pdf)
+reports 364 event participants in its recruitment table, a different count
+from both the available T2 file and the anonymous battery; the event count
+cannot identify the missing or extra rows. No verified discussion-group roster
+is attached. **Next check:** recover the deposited battery's exact source version
+and inclusion rule, then check the [questionnaire](../data/denmark-euro-2000/questionnaire.pdf)
+and component dictionaries before changing eligibility. The 358 exact matches
+do not establish a score comparison for the six nonmatching records.
 
 ## Northern Ireland 2007 — northern-ireland-2007
 
