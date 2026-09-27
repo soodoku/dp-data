@@ -61,6 +61,16 @@ test_that("NIC 1996 catalog names the nine spending questions", {
   )))
 })
 
+test_that("Monarchy public index is not labeled as royal powers", {
+  indices <- arrow::read_parquet(project_path(
+    "output", "polardata", "attitude-indices.parquet"
+  ))
+  label <- indices$att_index[
+    indices$t1var == "ukmonarchy.t1mpop"
+  ]
+  expect_equal(label, "Royal Family and the Public")
+})
+
 test_that("UK Health raw answers reproduce all 71 reconstructed fields", {
   rebuilt <- build_health_polardata()
   parity <- compare_health_polardata(rebuilt, health_reference())
