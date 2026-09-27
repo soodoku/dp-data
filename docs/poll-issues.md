@@ -2874,6 +2874,23 @@ application against published results, but the report does not supply the
 country/language answer options or a randomized-assignment roster. Do not
 reinterpret its `Group` field as randomized assignment without that evidence.
 
+### AMR-02 — populate the observed gender field (corrected)
+
+The two-wave source contains a stable binary `gender` for all 2,419 IDs:
+1,229 have code 0 and 1,190 have code 1. Applying the source `Weight` to
+`gender == 1` closely matches the [final report's](../data/amr-2024/reports/amr-final-report.pdf)
+female percentages by country and arm. For example, the report gives Brazil
+control 50.6% and treatment 51.3%; the source gives 50.6% and 51.2% at one
+decimal from its published weight values. India control and treatment give
+30.8% and 32.5%, versus the report's 30.6% and 32.5%; the small control
+rounding gap does not change the code direction. The participant export had
+set `female` missing for every AMR respondent despite this observed field.
+It now maps code 1 to one and code 0 to zero, with assertions that gender is
+binary and stable across waves. No response, score, sample or weight changes.
+The current `dp-learning` AMR analyses do not use `female` as a covariate, so
+their present numerical results are unchanged; future analyses can use the
+source-backed demographic field.
+
 ### MAR-01 — derived post knowledge zeros need an item-level and wave bridge
 
 The public `participants.csv` is a 146-person projection of a 2014 derived
