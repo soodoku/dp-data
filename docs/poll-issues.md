@@ -1832,27 +1832,25 @@ an explicit formula in the surviving memo. Preserve Version E; find its original
 syntax or final index memorandum before changing components. The questionnaire
 and earlier drafts should be consulted to assess why Q15_2 was omitted.
 
-**BGC-03 — income factor positions and summary vintage.** The historical R
-reader turns income codes 0–6 into factor positions 1–7. It then sets position1
-(no answer) missing, leaving observed codes1–6 as values2–7. The historical
-individual high-income flag uses this value greater than2 after the final merge;
-the group proportion was calculated earlier using greater than4. Preserve both
-vintages. Questionnaire question 10 lists raw code 1 as under 50 BGN, 2 as
-50–100, 3 as 100–150, 4 as 150–200, 5 as 200–300, and 6 as above 300 BGN
-per household member per month. Thus the final individual flag includes raw
-codes 2–6 (at least the 50–100 band), while the earlier group share includes
-only codes 4–6 (at least the 150–200 band). The source has 278 respondents,
-including five code-0 nonanswers; 193 meet the individual threshold and 28 meet
-the group threshold. Applying the individual threshold to group shares would
-change all 17 groups, raising their shares by 0.412–0.765. The published
-`highinc` field has 193 yes values and five missing values, matching those
-source counts. The original `vault/cdd/scripts/bulgaria.r` lines 93–104 show
-the earlier `>4` rule and group-summary assignment. The questionnaire, labels,
-and numerical contrast establish different definitions, but do not establish
-whether the later `>2` rule was deliberate. Recover the final merge assignment
-and any contemporary income-cutoff note before proposing a unified threshold;
-recompute individual and group quantities together, not merely the exported
-income code.
+**BGC-03 — income factor positions and summary vintage; corrected.** The
+historical reader maps income codes 1–6 to factor positions 2–7 and makes code
+0 (no answer) missing. The final merge marked positions greater than 2 as
+individual `highinc`, while the earlier group `phighinc` calculation used
+positions greater than 4. [Questionnaire Q10](../data/bulgaria-crime-2002/questionnaire.pdf)
+lists raw code 1 as under 50 BGN, 2 as 50–100, 3 as 100–150, 4 as 150–200,
+5 as 200–300, and 6 as above 300 BGN per household member per month. The
+later individual cutoff therefore included raw codes 2–6, including 50–100;
+the group cutoff included only codes 4–6, starting at 150–200. The source has
+278 people: five no answers, 193 above the later individual cutoff, and 28
+above the earlier group cutoff. The stored `phighinc` in all 17 groups matches
+the earlier rule. With the user's approval to choose one poll-level definition
+and leave cross-poll normalization to a later layer, `highinc` now uses raw
+codes 4–6. This changes 165 individual flags from 1 to 0, preserves all five
+missing values, and leaves `phighinc` unchanged. The group calculation now
+uses the same individual flag. The original script's `>4` group rule and Q10
+support this within-poll definition; no claim of comparability to other polls'
+income cutoffs is made. The prior and approved values are retained in
+`audit/corrections/bulgaria-crime-2002/approved_values.csv`.
 
 **BGC-04 — index sets and reconstruction coverage.** All 51 respondent targets
 match all 278 source participants, including missingness, at 1e-10 tolerance.
@@ -1951,13 +1949,36 @@ are unchanged. The audit now reports these item differences directly.
 ### CA-03: The report's eight-question knowledge result is a different measure
 
 The [event report](../data/california-whats-next-2011/reports/california-report.pdf)
-says participants answered eight knowledge questions before and after and
-reports an 18-point increase in overall correctness. The maintained battery
-has five matched T1/departure items (`q37:q41` and `t3q27:t3q31`). These are
-distinct wave/item definitions; the reported eight-question change cannot be
-used as a parity target for the five-item score. Recover the report's exact
-eight-item keys and analytic sample before comparing its numbers or extending
-the maintained battery.
+reports eight arrival/departure questions (source `t2q27:t2q34` and
+`t3q27:t3q34`). The [departure questionnaire](../data/california-whats-next-2011/questionnaire-post.pdf)
+supplies their wording and response choices: Senate majority, Assembly
+majority, legislative majority for a constitutional amendment, legislative
+majority for a tax increase, who may sign a ballot-measure petition, the state
+with most residents per legislator, the state with highest total tax burden,
+and the largest category in Governor Brown's proposed budget. The correct
+source codes are 1, 1, 2, 2, 3, 1, 2, 2 at each wave. On 417 source records
+(`part == 1` for 412, plus five with an arrival participant number but missing
+`part` and `id`), their item-correct counts are 316, 290, 258, 253, 263, 259,
+128, 150 at arrival and 355, 334, 339, 362, 292, 330, 206, 307 at departure.
+These exactly reproduce the report's 16 item counts. Dividing the totals by
+417 × 8 gives 57.5% and 75.7% when rounded as in the report, an 18.2-point
+increase. This identifies a source cohort that reproduces the published table;
+the retained material does not explain why its implied denominator is 417
+while the report and event record describe 412 attendees. The five extra
+records have arrival roster numbers 131, 180, 388, 398, and 484, with no `id`
+or observed participation flag; together they contribute 17 correct arrival
+answers and no correct departure answers. Their status needs independent
+verification.
+
+The maintained five-item battery instead compares phone T1 `q37:q41` with
+departure `t3q27:t3q31` for 396 paired people. T1's additional factual
+questions differ from the arrival/departure items 32–34. The eight-item
+arrival/departure result is therefore a separate measure and should not be
+substituted into the historical five-item or 396-person group aggregate. It
+is now exported separately as `california_report_responses` and
+`california_report_scores`, with the cohort basis and source row retained for
+each record. Its item keys and exact wording are in
+`metadata/california_report_knowledge_items.csv`.
 
 ## Europolis 2009 — europolis-2009
 

@@ -100,7 +100,7 @@ core_poll_profile <- function(survey, poll_id) {
     "uk-health-1998" = individual$highinc_early,
     "uk-general-election-1997" = as.numeric(individual$household_income > 3),
     "cpl-1996" = individual$high_income,
-    "bulgaria-crime-2002" = as.numeric(individual$household_income > 4),
+    "bulgaria-crime-2002" = individual$high_income,
     rep(NA_real_, nrow(survey))
   )
   score <- if ("knowledge_t1" %in% names(individual)) {

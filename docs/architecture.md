@@ -253,6 +253,15 @@ field instead of silently replacing missing responses themselves. This export
 does not create new answer keys or change sample membership. It covers the
 intersection of reconstructed source-person polls and existing knowledge builds.
 
+California 2011 also has a separate eight-question arrival/departure report
+measure. `make knowledge` exports `output/california_report_responses.parquet`
+and `output/california_report_scores.parquet`; the item wording and answer keys
+are in `metadata/california_report_knowledge_items.csv`. Each row retains its
+source row and whether inclusion came from the participant flag or only an
+arrival roster number. This report-table reconstruction uses 417 records and
+does not alter the historical five-item phone/departure series or its
+396-person group sample; see `poll-issues.md` CA-03.
+
 The canonical battery is not necessarily the historical aggregate battery:
 NIC, for example, has distinct eight-item and eleven-item definitions. Before
 linking a new poll to an analysis, verify identities, sample and battery definition.

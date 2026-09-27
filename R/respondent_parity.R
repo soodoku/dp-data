@@ -26,7 +26,7 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
   reviewed <- list(
     "bulgaria-crime-2002" = list(
       fields = c("bulgaria.bulgaria.t1q19", "bulgaria.bulgaria.t2q19",
-                 "attextreme", "meanxtreme", "avgsd", "genvar"),
+                 "attextreme", "meanxtreme", "avgsd", "genvar", "highinc"),
       rows = 278L
     ),
     "europolis-2009" = list(fields = c("ppage", "meanage"), rows = 348L),

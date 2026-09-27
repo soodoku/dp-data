@@ -4,6 +4,7 @@ source("R/metadata.R")
 source("R/poll_sources.R")
 source("R/poll_adapters.R")
 source("R/knowledge.R")
+source("R/california_report_knowledge.R")
 source("R/exports.R")
 
 verify_source_files()
@@ -14,6 +15,7 @@ tables <- purrr::map(table_names, function(name) {
   purrr::map(polls, name) |> purrr::list_rbind()
 }) |>
   rlang::set_names(table_names)
+tables <- c(tables, build_california_report())
 
 comparison <- compare_knowledge_batteries(tables)
 parity <- comparison$summary
