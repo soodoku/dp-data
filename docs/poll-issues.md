@@ -2749,8 +2749,9 @@ The maintained paper now reads the public numeric survey, source roster and
 `R/argument_codes.R` selects the 240 coder fields from the original `fin.csv`
 and excludes verbatim responses. No codes are normalized or adjudicated upstream.
 All 19 pinned downstream numerical outputs match after changing these readers.
-The paper still preserves the first-roster-row issue in NI-01. The old vault
-inventory remains historical provenance, not a required runtime input list.
+The first-roster-row issue was subsequently corrected as described in NI-01.
+The old vault inventory remains historical provenance, not a required runtime
+input list.
 See [dp-nireland data documentation](../../dp-nireland/docs/data.md).
 
 ## Polls outside the 23-battery canonical build
@@ -2765,9 +2766,9 @@ presence is not a claim that every original field-file merge has been recovered.
 | nic2-2003 | All 340 historical participants are now reconstructed from raw NIC2 answers; no matching anonymous deposited item matrix is required for that reconstruction. | Original NIC2 instruments, participant/arm definitions, source IDs and wave merge. |
 | btp-national-2003 | All 245 historical participants and aggregate fields are now reconstructed; the 674-person descriptor calibration uses a separate raw source. | National-event instruments and field files; distinguish the national event from later primary/general-election polls. |
 | btp-presidential-primaries-2004 | All 217 historical people are reconstructed. PR-02 fixes running peer sums; PR-03 removes duplicate aggregate rows and recomputes six group descriptors. Do not conflate with the online-primaries battery. | Event/mode-specific questionnaires, invitation and attendance records, and ID crosswalk. |
-| new-haven-2004 | All 132 historical people are reconstructed from joined pre/mid/post workbook answers. Three birth-year-1890 refusals are made missing; the event year is corrected to 2002, while the omitted attendee remains under review. | Attendee roster and sample rule; remaining arrival-wave response rules. |
+| new-haven-2004 | All 132 historical people are reconstructed from joined pre/mid/post workbook answers. Three birth-year-1890 refusals are made missing; the event year is corrected to 2002. The paper reports 133 attendees but analyzes 132, matching the reconstructed group-size split; the one-person exclusion reason remains unknown. | Attendee roster and sample rule; remaining arrival-wave response rules. |
 | zeguo-2005 | All 233 historical participants are reconstructed from reviewed merged/pre/post components; three historical knowledge-item overrides remain explicit. The corrected Wenchang source makes all 16 group covariance matrices full rank, removing 15 obsolete numerical exceptions. | Original and translated instruments, event date, project-choice scales and respondent/group identifiers. |
-| marousi-2006 | Public participants file came from an existing derived 2014 analysis object, not an independently rebuilt item-level source. It has scores, groups and demographics but no item responses. | [Questionnaire](../data/marousi-2006/questionnaire.pdf), original field returns, scoring syntax and group roster. Audit the downstream convention treating T2 zeros as missing before generalizing it; it is not justified by the numeric value alone. |
+| marousi-2006 | Public participants file came from an existing derived 2014 analysis object, not an independently rebuilt item-level source. Its post knowledge-score distribution conflicts with a contemporaneous 138-person distribution; see MAR-01. | [Questionnaire](../data/marousi-2006/questionnaire.pdf), original field returns, scoring syntax and group roster. Establish wave and identity linkage before treating T2 zeros as missing. |
 | bulgaria-2007 | Distinct Roma-policy event; it must not inherit the 2002 crime battery merely because files share an archive directory. | Roma-policy questionnaire, actual event date and source-file provenance. |
 | tanzania-2015 | Public source is available, but full canonical arm, village, questionnaire and measurement integration is not built here. | Village-randomization protocol, information versus deliberation arms, instruments and cluster IDs. Preserve the current downstream specification until audited. |
 | america-in-one-room-2019 | Downstream scoring is reproducible from the unchanged deposit; upstream has not independently reconstructed all measurement and sample decisions. | Fielded factual battery, contemporaneous answer key, invitation versus attendance status, uninvited controls and both source weights. The Paris Agreement item must be interpreted at the fieldwork date, not under today's ratification status. |
@@ -2778,6 +2779,32 @@ The four newer control-study files and Marousi are already byte-identical betwee
 `dp-learning`'s former local inputs and their upstream copies. That migration
 reproduced all 11 result tables. It does not constitute an independent audit of
 the experiments, answer keys, causal claims, weighting, or original field-file merges.
+
+### MAR-01 — derived post knowledge zeros need an item-level and wave bridge
+
+The public `participants.csv` is a 146-person projection of a 2014 derived
+analysis object. It has 15 groups but no knowledge-item answers, original
+`knowt3` values or independent field-return IDs. The archived
+`legacy/poll_scripts/greece.R` sets `t2know` to `knowt3` when observed and to
+zero when `knowt3` is missing. Thus the exported zero combines genuine
+zero-correct scores with source missingness, without a flag that separates
+them. The `t1know` mean is 0.35812, with two zeros; the `t2know` mean is
+0.35910, with 27 zeros. All 27 have an observed `attextreme2`, but that field
+summarizes arrival attitudes, so it does not establish completion of the
+T3 knowledge battery. Dropping all 27 zeros raises the `t2know` mean to
+0.44058 among 119 people; this is a sensitivity calculation, not a recode.
+
+The retained [knowledge distribution](../data/marousi-2006/knowledge-item-distributions.pdf)
+labels its seven-item factual index T3 and counts 138 people, only one with a
+zero. Its printed frequencies imply mean 0.42754, matching the 42.8% post
+factual-knowledge result in the [contemporaneous paper](../data/marousi-2006/papers/returning-deliberative-democracy-athens.pdf),
+Table 4. The paper distinguishes 153 arrival respondents from 138 final
+questionnaires. It reports 39.4% before, whereas the 146-person file's
+baseline mean is 35.8%. These count and mean differences indicate distinct
+analysis versions or cohorts; they do not identify which of the 27 file zeros
+are true zero-correct responses. Preserve the source scores. Recover the
+original item-level questionnaires, respondent IDs and T1/T2/T3 wave crosswalk
+before making a missingness or sample correction.
 
 ### NH-02 — Event year corrected; attendance needs reconciliation
 
@@ -2795,8 +2822,13 @@ March 1 was Friday in 2002 and Monday in 2004. This supports the paper's
 2002 date for the airport/revenue-sharing event. The catalog year is corrected
 to 2002, retaining the historical `new-haven-2004` ID and source paths.
 This changes metadata only, not respondent values, aggregate fields, or sample.
-The 132-versus-133 attendance distinction still needs a roster or documented
-sample rule.
+The paper itself distinguishes attendance from its analysis sample: it reports
+133 people showed up, then Table 1 analyzes 132, split 64 A-first and 68
+R-first. The reconstructed workbook has 132 people in 16 groups; groups 1–8
+contain 64 and groups 9–16 contain 68. These counts corroborate the analysis
+cohort without identifying the extra attendee or proving the group numbers'
+assignment labels. The one-person exclusion reason still needs a roster or
+documented sample rule.
 
 Preserve the current ID and cohort while checking group assignment and
 completeness filters.
