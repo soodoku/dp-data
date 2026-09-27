@@ -236,7 +236,7 @@ test_that("definitions match historical or approved values by IDs", {
   ]), 2L)
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "new-haven-2004"
-  ]), 4L)
+  ]), 132L)
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "zeguo-2005"
   ]), 1L)

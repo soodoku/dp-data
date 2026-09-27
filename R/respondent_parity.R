@@ -48,7 +48,8 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     ),
     "new-haven-2004" = list(
       fields = c(
-        "minority", "pminority", "nh.t1endexp", "nh.t2endexp",
+        "minority", "pminority", "nh.t1endexp", "nh.t1manvol",
+        "nh.t1volloc", "nh.t2endexp", "nh.t2manvol", "nh.t2volloc",
         "attextreme", "attextreme2", "meanxtreme", "avgsd",
         "avgsd2", "genvar"
       ), rows = 132L

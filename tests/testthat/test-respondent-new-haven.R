@@ -17,7 +17,7 @@ test_that("New Haven uses original responses with stable source identities", {
   expect_error(build_new_haven_individual(survey), "Unreviewed source codes")
 })
 
-test_that("New Haven airport scale reproduces published wave means", {
+test_that("New Haven airport scale preserves valid response categories", {
   survey <- new_haven_test_survey()
   built <- build_new_haven_individual(survey)
   expect_equal(sum(is.na(built$age)), 3L)
@@ -27,11 +27,25 @@ test_that("New Haven airport scale reproduces published wave means", {
     new_haven_attitudes(survey, "mid")$airport_expansion,
     built$airport_expansion_t2
   )
-  expect_equal(colSums(airport == as_historical_float(.625)),
-               c(12, 12, 5))
-  expect_equal(round(2 * colMeans(airport) - 1, 3),
-               c(.540, .415, .434))
-  expect_equal(sum(airport == as_historical_float(.675)), 0L)
+  expect_equal(colSums(!is.na(airport)), c(122, 120, 122))
+  expect_equal(colSums(airport == as_historical_float(.625), na.rm = TRUE),
+               c(11, 11, 5))
+  expect_equal(round(2 * colMeans(airport, na.rm = TRUE) - 1, 3),
+               c(.588, .477, .473))
+  expect_equal(sum(airport == as_historical_float(.675), na.rm = TRUE), 0L)
+  zero_q12 <- match(c(3022, 3248), survey$assigned)
+  expect_true(all(is.na(airport[zero_q12, 2])))
+  zero_q20 <- match(3169, survey$assigned)
+  expect_true(is.na(new_haven_attitudes(survey, "mid")$voluntary_sharing[
+    zero_q20
+  ]))
+  all_zero_post <- match(3124, survey$assigned)
+  expect_true(all(is.na(unlist(built[all_zero_post, c(
+    "airport_expansion_t2", "mandatory_sharing_t2",
+    "voluntary_sharing_t2"
+  )], use.names = FALSE))))
+  expect_equal(sum(!is.na(built$attitude_extremity)), 100L)
+  expect_equal(sum(!is.na(built$attitude_extremity_midterm)), 114L)
   expect_equal(sum(survey$pre_q70 == 5), 4L)
   expect_true(all(is.na(built$minority[survey$pre_q70 == 5])))
   expect_true(all(built$minority[survey$pre_q70 == 3] == 0))
@@ -44,4 +58,20 @@ test_that("New Haven public workbook reproduces the raw projection", {
     "survey-waves.xlsx"
   )
   expect_equal(read_new_haven_workbook(path), new_haven_test_survey())
+})
+
+test_that("zero is recorded as nonresponse on New Haven attitude items", {
+  responses <- arrow::read_parquet(project_path(
+    "output", "respondent", "source_responses.parquet"
+  ))
+  zero <- responses[
+    responses$poll_id == "new-haven-2004" &
+      responses$source_column %in% paste0(
+        rep(c("pre", "mid", "post"), each = 6L), "_q",
+        rep(c(12, 13, 20, 21, 22, 23), 3L)
+      ) & !is.na(responses$raw_numeric) & responses$raw_numeric == 0,
+  ]
+  expect_equal(nrow(zero), 9L)
+  expect_true(all(zero$response_status == "non-substantive"))
+  expect_true(all(zero$missing_code == "0"))
 })

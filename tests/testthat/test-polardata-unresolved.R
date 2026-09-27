@@ -92,7 +92,8 @@ test_that("resolved polls reproduce historical fields", {
     if (poll %in% c("new_haven", "zeguo", "btp_primaries")) {
       corrected <- switch(poll,
         new_haven = c(
-          "minority", "pminority", "nh.t1endexp", "nh.t2endexp",
+          "minority", "pminority", "nh.t1endexp", "nh.t1manvol",
+          "nh.t1volloc", "nh.t2endexp", "nh.t2manvol", "nh.t2volloc",
           "attextreme", "attextreme2", "meanxtreme", "avgsd",
           "avgsd2", "genvar"
         ),
