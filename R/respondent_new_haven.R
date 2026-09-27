@@ -14,14 +14,10 @@ new_haven_knowledge_items <- function(survey, wave) {
 new_haven_attitudes <- function(survey, wave) {
   item <- function(question) {
     value <- read_source_codes(survey, paste0(wave, "_q", question), 0:6)
-    value[is.na(value) | value %in% c(0, 6)] <- 3
+    value[value %in% c(0, 6)] <- NA_real_
     (5 - value) / 4
   }
   airport <- (item(12) - item(13)) / 2 + .5
-  if (wave == "mid") {
-    unknown <- is.na(survey$mid_q12) | survey$mid_q12 %in% c(0, 6)
-    airport[unknown] <- .5
-  }
   voluntary <- (item(21) + item(22)) / 2
   tibble::tibble(
     airport_expansion = as_historical_float(airport),

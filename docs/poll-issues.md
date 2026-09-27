@@ -3068,7 +3068,9 @@ score on a -1 to 1 scale and reports full-sample T1/T2/T3 means of
 gives 0.53977/0.41477/0.43371, matching all three published means after
 rounding. The historical 0.675 replacement gives 0.54886/0.42386/0.43750,
 which round to 0.549/0.424/0.438. This independent publication comparison
-supports the approved removal; it does not resolve other index choices.
+supports the approved removal under the historical neutral-imputation rule.
+The proposed missing-value policy in NH-08 changes the denominators and no
+longer reproduces the published wave means.
 
 The approved build retains all 132 people. Only eight historical
 wide fields change: 12 `nh.t1endexp`, five `nh.t2endexp`, 12 baseline
@@ -3087,46 +3089,59 @@ pair count moves from 2,437 to 2,436. These consequences are reported to
 size the review, not as evidence that the historical or corrected score is
 more correct.
 
-### NH-08: Zero is not an offered arrival or departure attitude answer
+### NH-08: Nonanswers in the three-wave attitude battery
 
-**Proposed; pending poll-specific review.** The retained
+**Proposed; approved for missing-value implementation, pending final review of
+measured consequences.** The retained
 [field questionnaire](../data/new-haven-2004/source-materials/field-questionnaire.pdf)
-prints codes 1–5 for agreement and 6 for “don't know” on Q12–Q13 and
-Q20–Q23; it offers no code 0. The public three-wave workbook contains
-two arrival `Q12=0` answers (historical cases 910013 and 910039), one
-arrival `Q20=0` (910110), and one person's entire six-item departure
-battery coded 0 (910042). There are no baseline zeros on those six items.
-The current arrival recode instead turns raw 0 into the extreme score 0,
-although it is outside the questionnaire's 1–5 response categories. The
-proposal treats 0 as nonresponse under
-the existing midpoint convention; for arrival Q12 it invokes the same
-whole-airport midpoint rule used for “don't know.” The six departure zeros
-already cancel to midpoint indices, so that person's exported attitudes
-do not change.
+prints agreement codes 1–5 and code 6 for “don't know” on Q12–Q13 and
+Q20–Q23. It offers no code 0. The public three-wave workbook records 64
+baseline, 25 arrival and 29 departure answers of 6 on these six items. It
+also has two arrival Q12 zeros (historical cases 910013 and 910039), one
+arrival Q20 zero (910110), and one person's six departure items all zero
+(910042). No baseline item has zero. The raw answers and all 132 respondent
+identities remain unchanged.
 
-The proposed arrival airport index moves from 0.125 to 0.5 for cases 910013
-and 910039; the voluntary-sharing index moves from 0.9375 to 0.6875 for
-910110. Their `attextreme2` values move from 0.25 to 0.125,
-0.20833333 to 0.08333334, and 0.45833334 to 0.375, respectively.
-The central arrival-dispersion field `avgsd2` changes for all 24 people in
-groups 9102, 9105 and 9114; group values move 0.27215493→0.22633703,
-0.22311197→0.20317507 and 0.22463334→0.21274854. Those 27 cells
-are the only aggregate changes. All 132 respondents, other scores, and
-group/poll formulas remain fixed. The reviewed-value ledger retains the
-historical benchmark. In the long respondent exports, nine raw zero answers
-change status from `answered` to `non-substantive`; six associated
-`n_observed_fields` counts change, and only the three arrival-extremity
-numeric values change.
+The historical recode inserts the neutral response 3 for code 6, system
+missing and most zero codes; a special arrival path instead turns zero into
+an extreme score. It also forces the whole airport index to neutral when
+arrival Q12 is unknown. Neither 0 nor 6 is an expressed middle attitude.
+The proposed recode therefore makes both codes missing. Each three-wave
+attitude index is observed only when all its component answers are in 1–5;
+baseline and arrival extremity are observed only when all three indices are.
+This leaves respectively 122/120/122 observed airport indices at baseline/
+arrival/departure, 113/126/124 mandatory-sharing indices, and 107/125/126
+voluntary-sharing indices. The baseline three-index extremity is observed
+for 100 rather than 132 people; arrival extremity for 114 rather than 132.
+The six all-zero departure answers for case 910042 now yield three missing
+indices rather than artificial neutral scores.
+
+Relative to the current released `polardata`, exactly 566 New Haven cells
+change, with the same 132 rows and 364 columns: 10/19/25 baseline and
+10/8/6 departure airport/mandatory/voluntary indices become missing;
+32 baseline and 18 arrival extremity values become missing. The central
+group stage recalculates `meanxtreme`, `avgsd` and `genvar` for 118 people
+in 14 groups, and arrival `avgsd2` for 84 people in 10 groups. These four
+group descriptors retain their existing observed-answer formulas. In the
+long respondent measures, 128 numeric values become missing; nine raw-zero
+statuses change from `answered` to `non-substantive`, and six source-input
+counts decrease. Code 6 was already classified as non-substantive in raw
+responses, even while its attitude indices used neutral imputation. The
+case-level reviewed-value ledger retains the frozen historical values;
+aggregate and respondent parity have zero unexplained differences.
 
 The [published study](../data/new-haven-2004/papers/disaggregating-deliberation-27s-effects-28lsero-29.pdf)
-Table 1 reports an arrival airport mean of 0.415 and an arrival
-voluntary-sharing-versus-local-control mean of 0.041 on its -1 to 1 scale.
-The historical recode reproduces these; the proposal instead gives 0.426
-and 0.037. This establishes that the paper used the zero-scoring stage.
-It does not explain what a zero answer means when the field questionnaire
-has no such option. Resolve whether an arrival-specific instrument or
-coding instruction assigned zero a substantive meaning before merging
-this correction.
+Table 1 reports airport means of 0.540/0.415/0.434 at baseline/arrival/
+departure and an arrival voluntary-sharing-versus-local-control mean of
+0.041 on a -1 to 1 scale. The prior corrected build using neutral
+imputation reproduced those rounded means. The proposed complete-case
+airport means become 0.588/0.477/0.473, and the arrival voluntary-sharing
+mean becomes 0.050, among those with all contributing answers observed.
+Thus the paper used the neutral-imputation stage; it does not establish that
+unknown answers express neutral attitudes. This change alters denominators,
+so the complete-case means are not direct attempts to reproduce Table 1.
+An arrival-specific instrument or coding instruction assigning substantive
+meaning to zero would warrant revisiting this decision.
 
 ## Zeguo 2005 — zeguo-2005
 

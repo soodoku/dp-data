@@ -27,22 +27,25 @@ test_that("New Haven airport scale preserves valid response categories", {
     new_haven_attitudes(survey, "mid")$airport_expansion,
     built$airport_expansion_t2
   )
-  expect_equal(colSums(airport == as_historical_float(.625)),
-               c(12, 12, 5))
-  expect_equal(round(2 * colMeans(airport) - 1, 3),
-               c(.540, .426, .434))
-  expect_equal(sum(airport == as_historical_float(.675)), 0L)
+  expect_equal(colSums(!is.na(airport)), c(122, 120, 122))
+  expect_equal(colSums(airport == as_historical_float(.625), na.rm = TRUE),
+               c(11, 11, 5))
+  expect_equal(round(2 * colMeans(airport, na.rm = TRUE) - 1, 3),
+               c(.588, .477, .473))
+  expect_equal(sum(airport == as_historical_float(.675), na.rm = TRUE), 0L)
   zero_q12 <- match(c(3022, 3248), survey$assigned)
-  expect_equal(airport[zero_q12, 2], c(.5, .5))
+  expect_true(all(is.na(airport[zero_q12, 2])))
   zero_q20 <- match(3169, survey$assigned)
-  expect_equal(new_haven_attitudes(survey, "mid")$voluntary_sharing[
+  expect_true(is.na(new_haven_attitudes(survey, "mid")$voluntary_sharing[
     zero_q20
-  ], .6875)
+  ]))
   all_zero_post <- match(3124, survey$assigned)
-  expect_equal(unlist(built[all_zero_post, c(
+  expect_true(all(is.na(unlist(built[all_zero_post, c(
     "airport_expansion_t2", "mandatory_sharing_t2",
     "voluntary_sharing_t2"
-  )], use.names = FALSE), c(.5, .5, .5))
+  )], use.names = FALSE))))
+  expect_equal(sum(!is.na(built$attitude_extremity)), 100L)
+  expect_equal(sum(!is.na(built$attitude_extremity_midterm)), 114L)
   expect_equal(sum(survey$pre_q70 == 5), 4L)
   expect_true(all(is.na(built$minority[survey$pre_q70 == 5])))
   expect_true(all(built$minority[survey$pre_q70 == 3] == 0))
