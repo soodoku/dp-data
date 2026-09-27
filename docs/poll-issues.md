@@ -1926,11 +1926,15 @@ Sorting or matching identical score profiles cannot prove respondent identity.
 The retained [codebook.txt](../data/europolis-2009/codebook.txt) describes the
 source waves and their response labels, but contains no deposited-battery row
 identifier. The file labeled
-[post questionnaire](../data/europolis-2009/questionnaire-post.pdf) is an
-instrument-version mismatch for this battery: its Q43–Q50 ask about briefing,
-sessions and event evaluation, while source `V3Q43`–`V3Q50` and the published
-knowledge report describe EU institutions, immigration and energy facts.
-It cannot validate the scored post answers or supply a person link. **Next
+[post questionnaire](../data/europolis-2009/questionnaire-post.pdf) is
+misfiled: its extracted text is identical to the
+[Tomorrow's Europe 2007 post questionnaire](../data/tomorrows-europe-2007/questionnaire-post.pdf).
+Its Q43–Q50 ask about briefing, sessions and event evaluation, while the
+Europolis source `V3Q43`–`V3Q50` and published knowledge report describe EU
+institutions, immigration and energy facts. The archive path places the
+duplicate under `eu_2009`, but its 2007 document metadata and exact text
+comparison establish that it is not the Europolis fielded instrument. It
+cannot validate the scored post answers or supply a person link. **Next
 check:** find the fielded questionnaire version and original exports or scripts
 with persistent IDs. Preserve 997/998/999 as source missing reasons. Do not
 append deposited rows to attitudes using an arbitrary permutation. No paired
