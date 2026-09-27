@@ -241,8 +241,12 @@ The baseline file has 1,702 rows; the departure file has 359. All 359
 departure `DELNR` values match distinct nonmissing baseline `delnr`
 values. The join never matches missing IDs and asserts its cardinality.
 The baseline has 390 nonmissing participant identifiers; it does not
-supply another four departure interviews. The archived joined R object
-also has 359 departure respondents, so the deposit's 363 remains unresolved.
+supply another four departure interviews. An ordered 18-item comparison
+matches 358 rebuilt people exactly. The 363-row deposit inserts five
+baseline-only records with all departure items missing and omits one source
+record with a departure interview, explaining its net four-row excess. The
+deposit's version and inclusion rule remain unknown; details and candidate
+identifiers are in `docs/poll-issues.md` DK-01.
 
 The output uses nine items at T0 and T2 and baseline gender. No verified
 group roster is available. Both source extracts, their separate dictionaries,
