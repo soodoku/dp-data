@@ -8,6 +8,8 @@ groups,one discussion group in one session,poll_id + session_id + group_id,parqu
 memberships,one person's group membership in one session,poll_id + respondent_id + session_id + group_id,parquet,current,Fixed or multiple membership weights
 knowledge_responses,one participant-item-wave response,poll_id + respondent_id + wave + item_id,parquet,current,Raw codes and scored responses rebuilt from reviewed survey inputs
 knowledge_scores,one participant-wave score,poll_id + respondent_id + wave,parquet,current,Proportion correct with explicit zero-filled denominator and missing counts
+california_report_responses,one source-record-item-wave response,respondent_id + wave + item_number,parquet,current,California 2011 eight-item arrival and departure report-table reconstruction with explicit cohort basis and raw codes
+california_report_scores,one source-record-wave score,respondent_id + wave,parquet,current,California 2011 eight-item report-table reconstruction using a fixed eight-question denominator
 people,One reviewed source respondent record,poll_id + respondent_id,parquet,current,One reviewed source respondent record; see docs/architecture.md
 sample_memberships,One source record and named sample,poll_id + respondent_id + sample_id,parquet,current,One source record and named sample; see docs/architecture.md
 source_responses,One reviewed source field for one respondent,poll_id + respondent_id + source_column,parquet,current,One reviewed source field for one respondent; see docs/architecture.md

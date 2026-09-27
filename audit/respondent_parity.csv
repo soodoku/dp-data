@@ -374,7 +374,7 @@ bulgaria-crime-2002,minority,minority@historical-v1,278,278,0,0,0,0,1e-10
 bulgaria-crime-2002,hhincome,household_income@historical-v1,278,273,0,0,0,0,1e-10
 bulgaria-crime-2002,female,female@historical-v1,278,278,0,0,0,0,1e-10
 bulgaria-crime-2002,attextreme,attitude_extremity@bgc-04-v2,278,278,0,131,0.03125000000000011,0,1e-10
-bulgaria-crime-2002,highinc,high_income@historical-v1,278,273,0,0,0,0,1e-10
+bulgaria-crime-2002,highinc,high_income@bgc-03-v2,278,273,0,165,1,0,1e-10
 bulgaria-crime-2002,t1polint,political_interest_t1@historical-v1,278,0,0,0,0,0,1e-10
 bulgaria-crime-2002,t1knowcor2,knowledge_joint_midterm@historical-v1,278,0,0,0,0,0,1e-10
 bulgaria-crime-2002,t12know,knowledge_midterm@historical-v1,278,0,0,0,0,0,1e-10

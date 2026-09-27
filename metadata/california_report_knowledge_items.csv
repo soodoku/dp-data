@@ -1,0 +1,9 @@
+item_number,question,correct_answer,correct_code,evidence
+27,Which political party holds the majority in the California State Senate?,Democratic,1,data/california-whats-next-2011/questionnaire-post.pdf; data/california-whats-next-2011/reports/california-report.pdf Table 4
+28,How about the California State Assembly?,Democratic,1,data/california-whats-next-2011/questionnaire-post.pdf; data/california-whats-next-2011/reports/california-report.pdf Table 4
+29,How large a majority of the State Legislature is needed to approve a proposed constitutional amendment?,Two-thirds of both houses,2,data/california-whats-next-2011/questionnaire-post.pdf; data/california-whats-next-2011/reports/california-report.pdf Table 4
+30,How large a majority of the State Legislature is needed to increase taxes?,Two-thirds of both houses,2,data/california-whats-next-2011/questionnaire-post.pdf; data/california-whats-next-2011/reports/california-report.pdf Table 4
+31,Ballot measures can be signed by…,Anyone who is registered to vote in California,3,data/california-whats-next-2011/questionnaire-post.pdf; data/california-whats-next-2011/reports/california-report.pdf Table 4
+32,Which state has the most residents per member of the state legislature?,California,1,data/california-whats-next-2011/questionnaire-post.pdf; data/california-whats-next-2011/reports/california-report.pdf Table 4
+33,"On average, which state has the highest total tax burden?",New York,2,data/california-whats-next-2011/questionnaire-post.pdf; data/california-whats-next-2011/reports/california-report.pdf Table 4
+34,"In Governor Brown’s most recent budget proposal, the largest single share of spending goes to which of the following?",K-12 education,2,data/california-whats-next-2011/questionnaire-post.pdf; data/california-whats-next-2011/reports/california-report.pdf Table 4

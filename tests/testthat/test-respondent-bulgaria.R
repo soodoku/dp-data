@@ -37,7 +37,30 @@ test_that("Bulgaria death-penalty agreement spans both scale endpoints", {
   }
 })
 
-test_that("Bulgaria matches historical targets apart from BGC-04", {
+test_that("Bulgaria individual and group high-income rules agree", {
+  survey <- read_poll_survey("bulgaria-crime-2002")
+  individual <- build_bulgaria_individual(survey)
+  source_income <- as.numeric(survey$incomes)
+  expect_equal(sum(individual$high_income == 1, na.rm = TRUE), 28L)
+  expect_equal(sum(is.na(individual$high_income)), 5L)
+  in_band_four <- !is.na(source_income) & source_income == 4
+  in_band_three <- !is.na(source_income) & source_income == 3
+  expect_equal(individual$high_income[in_band_four],
+               rep(1, sum(in_band_four)))
+  expect_equal(individual$high_income[in_band_three],
+               rep(0, sum(in_band_three)))
+  wide <- arrow::read_parquet(project_path(
+    "output", "polardata", "polardata.parquet"
+  )) |>
+    dplyr::filter(.data$pollid == 53)
+  shares <- wide |>
+    dplyr::group_by(.data$pollgroup) |>
+    dplyr::summarise(computed = mean(.data$highinc, na.rm = TRUE),
+                     stored = dplyr::first(.data$phighinc), .groups = "drop")
+  expect_equal(shares$computed, shares$stored, tolerance = 1e-8)
+})
+
+test_that("Bulgaria matches reviewed BGC-03 and BGC-04 corrections", {
   audit <- readr::read_csv(project_path("audit", "respondent_parity.csv"),
     show_col_types = FALSE
   )
@@ -46,12 +69,13 @@ test_that("Bulgaria matches historical targets apart from BGC-04", {
   expect_true(all(rows$respondents == 278L))
   changed <- rows[rows$value_differences > 0L, ]
   expect_setequal(changed$legacy_field, c(
-    "bulgaria.bulgaria.t1q19", "bulgaria.bulgaria.t2q19", "attextreme"
+    "bulgaria.bulgaria.t1q19", "bulgaria.bulgaria.t2q19", "attextreme",
+    "highinc"
   ))
   expect_equal(changed$value_differences[
     match(c("bulgaria.bulgaria.t1q19", "bulgaria.bulgaria.t2q19",
-            "attextreme"), changed$legacy_field)
-  ], c(131L, 170L, 131L))
+            "attextreme", "highinc"), changed$legacy_field)
+  ], c(131L, 170L, 131L, 165L))
   expect_true(all(rows$unexplained_differences == 0L))
   expect_true(all(rows$missingness_differences == 0L))
 })
