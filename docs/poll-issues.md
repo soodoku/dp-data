@@ -2699,18 +2699,18 @@ changed-score counts are established for this unequal sample.
 
 ## Northern Ireland 2007 — northern-ireland-2007
 
-**NI-01 — source roster versus paper reader.** The headerless roster contains
-124 mappings, beginning with respondent 112084 in group N. The preserved
-`dp-nireland` reader interprets that first record as column headings and uses
-123 mappings, leaving one participant ungrouped. Upstream knowledge uses all
-124 roster records. The seven-item knowledge battery matches its deposit;
-that says nothing about the clustering effect of the paper's missing assignment.
-
-**Current action:** preserve the paper's behavior during relocation; it reproduced
-all existing outputs. **Next check:** inspect the actual roster and codebook,
-confirm that 112084 is an attendee in group N in the original membership record,
-then separately compare cluster counts, standard errors, degrees of freedom and
-intervals. Do not combine that analysis with changing open-ended coding.
+**NI-01 — source roster versus paper reader (corrected downstream).** The
+headerless roster contains 124 mappings, beginning with respondent 112084 in
+group N. The former `dp-nireland` reader interpreted that first record as column
+headings and used 123 mappings, leaving this attendee as a singleton cluster.
+Upstream knowledge uses all 124 roster records. `dp-nireland` commit `cc60d58`
+now reads dp-data's typed memberships and checks all 124 mappings. Only
+respondent 112084 changes group membership; point estimates, coded responses
+and analysis sample sizes remain the same. The paper's rebuilt results have one
+fewer cluster in affected comparisons, changing CR2 standard errors, degrees
+of freedom, intervals and p-values; no reported p-value crosses 0.05 and no
+confidence interval changes whether it includes zero. The seven-item knowledge
+battery still matches its deposit, a separate check from group membership.
 
 **NI-02 — measurement and disclosure are separate from knowledge transport.**
 The paper's adjudicated argument codes, coder disagreements, response slots,
