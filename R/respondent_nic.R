@@ -79,8 +79,6 @@ build_nic_individual <- function(survey = read_poll_survey("nic-1996")) {
   baseline <- nic_attitudes(survey, 1L)
   midterm <- nic_attitudes(survey, 2L)
   post <- nic_attitudes(survey, 3L)
-  # The historical arrival summary retains three baseline items.
-  midterm[, 7:9] <- baseline[, 7:9]
   education <- nic_source_codes(survey, "EDLEVEL1", c(1:13, 99))
   education <- dplyr::case_when(
     education %in% 1:3 ~ 0, education %in% 4:7 ~ .33,

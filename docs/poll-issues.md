@@ -2294,7 +2294,12 @@ The historical score definition remains `age@nic-03-v2` in the earlier
 comparison; the reviewed respondent value is `age@nic-08-v3`. The latter is
 computed upstream, so downstream readers must not repair these cases again.
 
-### NIC-09: Arrival extremity and dispersion retain three baseline answers
+### NIC-09: Arrival extremity and dispersion used three baseline answers
+
+**Status: corrected upstream after user approval.** The maintained arrival
+measure now uses all nine T2 Q19 answers. The historical values remain in the
+frozen benchmark and the paired
+[approved values](../audit/corrections/nic-1996/approved_values.csv).
 
 The historical `attextreme2` and `avgsd2` construction takes arrival answers
 for environment, Medicare, law enforcement, drug rehabilitation, education
@@ -2311,13 +2316,22 @@ Among 466 participants, replacing only those three inputs with their T2
 answers changes 284 `attextreme2` values after the documented code lookup.
 Mean arrival extremity becomes .287911 rather than .293753. The mean changes
 in 29 of 30 discussion groups, ranging from −.043651 to +.038194. All 30
-group `avgsd2` values change; the unweighted mean across group values becomes
-.304624 rather than .302913, with group changes from −.042435 to +.028653.
+group `avgsd2` values change, so 466 exported group-dispersion cells differ;
+the unweighted mean across group values becomes .304624 rather than .302913,
+with group changes from −.042435 to +.028653. Among all 911 source records,
+595 respondent arrival-extremity values change.
 The source has floating-point category artifacts near integer codes; these
 counts use the maintained integer-tolerance lookup, not literal float equality.
-The 466-person sample and all raw answers are unchanged. This is a proposed
-arrival-wave correction, not yet adopted: retain the historical version until
-the user reviews the wave choice and the full output/downstream comparison.
+The 466-person sample, missingness and all raw answers are unchanged. A direct
+before/after build changes only `attextreme2` and `avgsd2` among NIC's 90
+historical aggregate fields; across the complete 5,869-row `polardata`, these
+are the only two columns with value changes at 1e-10 tolerance. The public
+source-response table gains 2,733 rows (the three newly used T2 columns for
+all 911 source people); every previously exported response retains its raw
+value and missingness. Current dp-learning model inputs use baseline
+`attextreme` and `genvar`, so this correction does not change its analysis
+frame. The corrected `avgsd2` definition has version `nic-09-v2` in the derived
+export.
 
 ## Tomorrow's Europe 2007 — tomorrows-europe-2007
 

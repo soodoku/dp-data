@@ -779,7 +779,7 @@ nic-1996,t1polint,466,459,political_interest_t1@historical-v1,implemented,R/resp
 nic-1996,t1knowcor2,466,466,knowledge_joint_midterm@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
 nic-1996,t12know,466,466,knowledge_midterm@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
 nic-1996,t12knowcor,466,466,knowledge_midterm_joint@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
-nic-1996,attextreme2,466,466,attitude_extremity_midterm@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
+nic-1996,attextreme2,466,466,attitude_extremity_midterm@nic-09-v2,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; data/nic-1996/questionnaire.pdf p.12; docs/poll-issues.md NIC-09,
 nic-1996,t1knowrcor,466,466,knowledge_joint@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
 nic-1996,t2knowr,466,466,knowledge_t2@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,
 nic-1996,knowgain,466,466,knowledge_gain@historical-v1,implemented,R/respondent_nic.R; data/nic-1996/codebook.txt; historical-cdd-scripts:legacy/poll_scripts/nic1.R; docs/poll-issues.md NIC-02-04,

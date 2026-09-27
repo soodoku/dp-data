@@ -1,6 +1,8 @@
 approved_reference_values <- function(poll_id, field, caseid, historical,
                                       tolerance = 1e-10) {
-  if (poll_id == "nic-1996" && field %in% c("ppage", "meanage", "mode")) {
+  if (poll_id == "nic-1996" && field %in% c(
+    "ppage", "meanage", "mode", "attextreme2", "avgsd2"
+  )) {
     approved <- readr::read_csv(project_path(
       "audit", "corrections", "nic-1996", "approved_values.csv"
     ), show_col_types = FALSE)
