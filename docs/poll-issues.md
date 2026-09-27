@@ -2352,6 +2352,27 @@ value and missingness. Current dp-learning model inputs use baseline
 frame. The corrected `avgsd2` definition has version `nic-09-v2` in the derived
 export.
 
+### NIC-10: Cross-poll catalog mislabeled all nine spending questions (corrected)
+
+The archived `allpollindices.csv` assigns NIC 1996's `nic1.t1att1:9` names
+such as “Fighting Terrorism,” “Internationalism,” and “Liberalizing Trade.”
+Its empirical-premises companion calls these indices the same as NIC2's.
+That description does not match the retained
+[NIC codebook](../data/nic-1996/codebook.txt): source `SPENVIR`, `SPMEDIC`,
+`SPLAW`, `SPDRUG`, `SPEDUC`, `SPDEF`, `SPFAID`, `SPWELF`, and `SPSS` are the
+nine parts of Q19 asking whether spending is too much, too little or about
+right, at all three waves. The maintained [respondent
+recode](../R/respondent_nic.R) maps those nine sources in order to
+`nic1.t1att1:9` and the corresponding departure fields. The questionnaire
+also prints them together as Q19. The foreign-policy names belong to a
+different poll and cannot describe these source answers.
+
+The generated `attitude-indices` table now names all nine rows “Spending on”
+their actual subjects, including environment. Both archived cross-poll files
+remain unchanged. Field links, respondent values, scores, group/poll
+descriptors, sample and historical wide output are unchanged. This is a
+catalog correction, separate from the approved NIC-09 arrival-wave recode.
+
 ## Tomorrow's Europe 2007 — tomorrows-europe-2007
 
 **TE-01 — deposited-battery eligibility/order mismatch.** `t3part == 1` yields 359
