@@ -22,13 +22,36 @@ test_that("Bulgaria Version E is reconstructed at original float precision", {
   }
 })
 
-test_that("Bulgaria reproduces all historical respondent targets", {
+test_that("Bulgaria death-penalty agreement spans both scale endpoints", {
+  survey <- read_poll_survey("bulgaria-crime-2002")
+  expected <- c(1, 2 / 3, 1 / 3, 0)
+  for (wave in 1:2) {
+    source <- if (wave == 1L) "q19" else "q19p"
+    codes <- as.numeric(survey[[source]])
+    scores <- bulgaria_attitudes(survey, wave)$death_penalty
+    for (code in 1:4) {
+      expect_true(any(codes == code, na.rm = TRUE))
+      expect_equal(unique(scores[which(codes == code)]), expected[code])
+    }
+    expect_true(all(is.na(scores[is.na(codes) | codes == 99])))
+  }
+})
+
+test_that("Bulgaria matches historical targets apart from BGC-04", {
   audit <- readr::read_csv(project_path("audit", "respondent_parity.csv"),
     show_col_types = FALSE
   )
   rows <- audit[audit$poll_id == "bulgaria-crime-2002", ]
   expect_equal(nrow(rows), 51L)
   expect_true(all(rows$respondents == 278L))
-  expect_true(all(rows$value_differences == 0L))
+  changed <- rows[rows$value_differences > 0L, ]
+  expect_setequal(changed$legacy_field, c(
+    "bulgaria.bulgaria.t1q19", "bulgaria.bulgaria.t2q19", "attextreme"
+  ))
+  expect_equal(changed$value_differences[
+    match(c("bulgaria.bulgaria.t1q19", "bulgaria.bulgaria.t2q19",
+            "attextreme"), changed$legacy_field)
+  ], c(131L, 170L, 131L))
+  expect_true(all(rows$unexplained_differences == 0L))
   expect_true(all(rows$missingness_differences == 0L))
 })

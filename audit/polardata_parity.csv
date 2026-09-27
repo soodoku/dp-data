@@ -3284,9 +3284,9 @@ bulgaria-crime-2002,t1knowlevel,278,278,0,0,0,0,FALSE,0,2.220446049250313e-16,1e
 bulgaria-crime-2002,numitems,278,278,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,pollgroup,278,278,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,groupsize,278,278,0,0,0,0,FALSE,0,0,1e-10
-bulgaria-crime-2002,avgsd,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
+bulgaria-crime-2002,avgsd,278,278,0,278,0,278,FALSE,0,0.0103225465688504,1e-10
 bulgaria-crime-2002,numindices,278,278,0,0,0,0,FALSE,0,0,1e-10
-bulgaria-crime-2002,genvar,278,278,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
+bulgaria-crime-2002,genvar,278,278,0,263,0,263,FALSE,0,0.005899853494266222,1e-10
 bulgaria-crime-2002,readbrief,278,0,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,t1know,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 bulgaria-crime-2002,t1knowr,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
@@ -3298,7 +3298,7 @@ bulgaria-crime-2002,educ4,278,277,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,minority,278,278,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,hhincome,278,273,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,female,278,278,0,0,0,0,FALSE,0,0,1e-10
-bulgaria-crime-2002,attextreme,278,278,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
+bulgaria-crime-2002,attextreme,278,278,0,131,0,131,FALSE,0,0.03125000000000011,1e-10
 bulgaria-crime-2002,highinc,278,273,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,t1polint,278,0,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,avgsd2,278,0,0,0,0,0,FALSE,0,0,1e-10
@@ -3323,7 +3323,7 @@ bulgaria-crime-2002,sdeduc,278,278,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
 bulgaria-crime-2002,meaned,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 bulgaria-crime-2002,meanage,278,278,0,0,0,0,FALSE,0,4.263256414560601e-14,1e-10
 bulgaria-crime-2002,phighinc,278,278,0,0,0,0,FALSE,0,4.0245584642661925e-16,1e-10
-bulgaria-crime-2002,meanxtreme,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
+bulgaria-crime-2002,meanxtreme,278,278,0,278,0,278,FALSE,0,0.007124732905982811,1e-10
 bulgaria-crime-2002,pfemale_ind,278,278,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
 bulgaria-crime-2002,entropy,278,278,0,0,0,0,FALSE,0,4.884981308350689e-15,1e-10
 bulgaria-crime-2002,meant1know,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
@@ -3365,7 +3365,7 @@ bulgaria-crime-2002,bulgaria.bulgaria.t1q16,278,261,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t1q21,278,224,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t1q22,278,208,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t1q23,278,187,0,0,0,0,FALSE,0,0,1e-10
-bulgaria-crime-2002,bulgaria.bulgaria.t1q19,278,243,0,0,0,0,FALSE,0,0,1e-10
+bulgaria-crime-2002,bulgaria.bulgaria.t1q19,278,243,0,131,0,131,FALSE,0,0.25,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t2tghpc,278,272,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t2clibe,278,275,0,0,0,0,FALSE,0,5.273559366969494e-16,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t2q8_7,278,242,0,0,0,0,FALSE,0,0,1e-10
@@ -3377,7 +3377,7 @@ bulgaria-crime-2002,bulgaria.bulgaria.t2q16,278,256,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t2q21,278,241,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t2q22,278,249,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t2q23,278,233,0,0,0,0,FALSE,0,0,1e-10
-bulgaria-crime-2002,bulgaria.bulgaria.t2q19,278,255,0,0,0,0,FALSE,0,0,1e-10
+bulgaria-crime-2002,bulgaria.bulgaria.t2q19,278,255,0,170,0,170,FALSE,0,0.25,1e-10
 bulgaria-crime-2002,chi.t1att1,278,0,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,chi.t1att2,278,0,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,chi.t1att3,278,0,0,0,0,0,FALSE,0,0,1e-10
