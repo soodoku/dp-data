@@ -2330,9 +2330,14 @@ all 359 people across 18 groups.
 
 **TE-02 — response-scale origins and invalid codes.** The existing key accounts
 for baseline numeric codes 1–11 representing scale labels 0–10, whereas departure
-uses 0–10 directly. Two post Q19 responses with codes 0 or 6 are treated as invalid.
-Before adopting any new scoring or sample restriction, re-open the available
-[post questionnaire](../data/tomorrows-europe-2007/questionnaire-post.doc), locate
+uses 0–10 directly. The available
+[post questionnaire](../data/tomorrows-europe-2007/questionnaire-post.pdf)
+lists Q19 (official EU candidate) choices 1–4 and couldn't say 99. Among the
+344 historical respondents, exactly one has source `t3q19 = 0` and one has 6;
+both have stored `t3q19cor = 0`. Treating these invalid raw codes as missing
+item responses and then zero in the fixed-denominator knowledge score retains
+the stored result; neither supports a new substantive answer category.
+Before adopting any new scoring or sample restriction, locate
 and verify the fielded baseline questionnaire, and recover the original
 participant/roster join. A baseline questionnaire is not present in the public
 poll package; the baseline scale interpretation still needs that primary-source
