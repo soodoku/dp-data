@@ -2959,6 +2959,26 @@ attendee, a nonrandom participant, or an erroneous roster entry from the
 original event and randomization records before changing the analysis sample.
 Do not infer invitation or eligibility solely from a group number.
 
+### TZ-02 — retain the observed sex field in the participant export (corrected)
+
+The retained `participants.dta` contains a binary `male` field for 2,001 of
+2,002 citizen records: 949 have code 1, 1,052 have code 0, and one is missing.
+The [final report](../data/tanzania-2015/reports/tanzania-final-report.pdf),
+Appendix B, Table B1, reports “Male” for 2,001 people with mean 0.474. The
+source gives 949/2,001 = 0.47426, independently checking the field and its
+direction. The canonical participant export previously set `female` missing
+for all 2,002 citizens. It now maps `male == 0` to one and `male == 1` to zero,
+while leaving the one unknown response missing. An assertion rejects any
+unexpected observed source code. This only fills the existing sex-derived
+field; it does not change source answers, arm assignment, group membership,
+sample, knowledge index, or any historical aggregate. A rebuilt-table comparison
+finds exactly 2,001 changed `female` cells, all in Tanzania, and no other
+participant-column differences. The current `dp-learning` control analysis
+excludes Tanzania from its item-based control panel, and its attendee model
+requires proportion-correct scores that Tanzania does not have. The current
+`dp-distortions` Tanzania reader uses its own source fields, so these existing
+results do not change. The unresolved roster question in TZ-01 remains separate.
+
 ### NH-02 — Event year corrected; attendance needs reconciliation
 
 Farrar et al., *Disaggregating Deliberation's Effects*

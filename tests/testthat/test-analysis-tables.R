@@ -116,6 +116,12 @@ test_that("analysis exports preserve keys and canonical question IDs", {
     unique(scores$scale[scores$poll_id == "tanzania-2015"]),
     "standardized_index"
   )
+  tanzania_people <- dplyr::filter(
+    people, poll_id == "tanzania-2015", source_dataset == "control"
+  )
+  expect_equal(nrow(tanzania_people), 2002L)
+  expect_equal(sum(tanzania_people$female, na.rm = TRUE), 1052)
+  expect_equal(sum(is.na(tanzania_people$female)), 1L)
   expect_true(all(is.na(scores$n_observed[
     scores$source_dataset == "historical"
   ])))

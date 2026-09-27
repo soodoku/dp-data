@@ -137,6 +137,8 @@ analysis_control_people <- function(sources) {
       female = as.numeric(GENDER == 2),
       score_wave1 = NA_real_, score_wave2 = NA_real_
     )
+  stopifnot(all(is.na(sources$tanzania$male) |
+                  sources$tanzania$male %in% 0:1))
   tanzania <- sources$tanzania |>
     dplyr::mutate(source_row = dplyr::row_number()) |>
     dplyr::transmute(
@@ -155,7 +157,7 @@ analysis_control_people <- function(sources) {
       attended = NA, panel = !is.na(H601), small_group_id = NA_character_,
       cluster_id = as.character(VillageID), country = "Tanzania",
       weight = NA_real_, ba = NA_real_,
-      female = NA_real_,
+      female = as.numeric(male == 0),
       score_wave1 = as.numeric(H600), score_wave2 = as.numeric(H601)
     )
   amr <- sources$amr |>
