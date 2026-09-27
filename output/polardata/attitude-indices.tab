@@ -3,12 +3,12 @@ poll_id	poll_name	n_indices	att_index	t1var	t2_t3var	dpnum
 91	New Haven	2	Expanding vs. Ending Airport Service	nh.t1endexp	nh.t2endexp	12
 92	National Issues Convention 2	9	Protecting the Environment	nic2.t1envir	nic2.t2envir	13
 92	National Issues Convention 2	9	Fighting Terrorism	nic2.t1usseca	nic2.t2usseca	13
-92	National Issues Convention 2	9	Increasing Foreign Aid	nic2.t1humrh2	nic2.t2humrh2	13
-92	National Issues Convention 2	9	Internationalism	nic2.t1multi	nic2.t2multi	13
-92	National Issues Convention 2	9	Multilateralism	nic2.t1inter	nic2.t2inter	13
-92	National Issues Convention 2	9	Promoting Democracy	nic2.t1global	nic2.t2global	13
-92	National Issues Convention 2	9	Fighting Poverty and Suffering	nic2.t1demo	nic2.t2demo	13
-92	National Issues Convention 2	9	Human Rights	nic2.t1forai1	nic2.t2forai1	13
+92	National Issues Convention 2	9	Human Rights	nic2.t1humrh2	nic2.t2humrh2	13
+92	National Issues Convention 2	9	Multilateralism	nic2.t1multi	nic2.t2multi	13
+92	National Issues Convention 2	9	Internationalism	nic2.t1inter	nic2.t2inter	13
+92	National Issues Convention 2	9	Fighting Poverty and Suffering	nic2.t1global	nic2.t2global	13
+92	National Issues Convention 2	9	Promoting Democracy	nic2.t1demo	nic2.t2demo	13
+92	National Issues Convention 2	9	Increasing Foreign Aid	nic2.t1forai1	nic2.t2forai1	13
 92	National Issues Convention 2	9	Liberalizing Trade	nic2.t1trade_b	nic2.t2trade_b	13
 1001	National Issues Convention	9	Protecting the Environment	nic1.t1att1	nic1.t2att1	20
 1001	National Issues Convention	9	Fighting Terrorism	nic1.t1att2	nic1.t2att2	20
