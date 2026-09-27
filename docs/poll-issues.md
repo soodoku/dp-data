@@ -2525,6 +2525,20 @@ history and contemporaneous briefing facts, and reconcile baseline Q77 value
 labels that the previous audit reports as belonging to the next question. Preserve
 the published deposit and present upstream behavior until this is reviewed.
 
+The retained [pre questionnaire](../data/vermont-energy-2007/questionnaire-pre.pdf)
+labels its surcharge item Q80 and its efficiency-impact item Q81; these map to
+source `Q77` and `Q78`, respectively. Source `Q77`'s variable label names the
+surcharge, but its value labels ("almost no impact," "reduced by 20%," etc.)
+belong to the next efficiency item. They are misattached dictionary labels,
+not evidence that source `Q77` holds efficiency answers. The pre Q80 choice
+printed as "about .005 cents per kilowatt hour" is also not the same unit as
+the starred [post Q30](../data/vermont-energy-2007/questionnaire-post-key.pdf)
+choice "about half a cent per kilowatt hour" (both choice 2). The pre text
+may be a draft/unit typo; the retained materials do not establish what was
+read to baseline respondents. Preserve the current choice-2 key and raw
+answers until the administered baseline form or interviewer instructions are
+found. Do not rewrite the deposited SPSS labels as if they were fielded text.
+
 **VT-02 — group roster gap.** `PART == 1` selects 146 of 750 source rows, but no
 verified group roster is attached. This is a missing verified linkage, not proof
 that discussions had no groups. Search original session materials before making
