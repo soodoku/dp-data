@@ -2294,6 +2294,31 @@ The historical score definition remains `age@nic-03-v2` in the earlier
 comparison; the reviewed respondent value is `age@nic-08-v3`. The latter is
 computed upstream, so downstream readers must not repair these cases again.
 
+### NIC-09: Arrival extremity and dispersion retain three baseline answers
+
+The historical `attextreme2` and `avgsd2` construction takes arrival answers
+for environment, Medicare, law enforcement, drug rehabilitation, education
+and defense, but takes **baseline** answers for foreign aid, welfare and Social
+Security. The three arrival fields `SPFAID2`, `SPWELF2` and `SPSS2` exist in the
+source. The [codebook](../data/nic-1996/codebook.txt) explicitly labels them
+T2 Q19g–i, and the scanned
+[SAQ2 questionnaire](../data/nic-1996/questionnaire.pdf) asks all nine spending
+items together at Q19 (printed p. 10, PDF p. 12). The categories are the same:
+too much 3, too little 1, about right 2 and don't know 8. There is no
+instrument-level reason to splice Q19g–i from baseline into the arrival index.
+
+Among 466 participants, replacing only those three inputs with their T2
+answers changes 284 `attextreme2` values after the documented code lookup.
+Mean arrival extremity becomes .287911 rather than .293753. The mean changes
+in 29 of 30 discussion groups, ranging from −.043651 to +.038194. All 30
+group `avgsd2` values change; the unweighted mean across group values becomes
+.304624 rather than .302913, with group changes from −.042435 to +.028653.
+The source has floating-point category artifacts near integer codes; these
+counts use the maintained integer-tolerance lookup, not literal float equality.
+The 466-person sample and all raw answers are unchanged. This is a proposed
+arrival-wave correction, not yet adopted: retain the historical version until
+the user reviews the wave choice and the full output/downstream comparison.
+
 ## Tomorrow's Europe 2007 — tomorrows-europe-2007
 
 **TE-01 — deposited-battery eligibility/order mismatch.** `t3part == 1` yields 359
@@ -2305,9 +2330,14 @@ all 359 people across 18 groups.
 
 **TE-02 — response-scale origins and invalid codes.** The existing key accounts
 for baseline numeric codes 1–11 representing scale labels 0–10, whereas departure
-uses 0–10 directly. Two post Q19 responses with codes 0 or 6 are treated as invalid.
-Before adopting any new scoring or sample restriction, re-open the available
-[post questionnaire](../data/tomorrows-europe-2007/questionnaire-post.doc), locate
+uses 0–10 directly. The available
+[post questionnaire](../data/tomorrows-europe-2007/questionnaire-post.pdf)
+lists Q19 (official EU candidate) choices 1–4 and couldn't say 99. Among the
+344 historical respondents, exactly one has source `t3q19 = 0` and one has 6;
+both have stored `t3q19cor = 0`. Treating these invalid raw codes as missing
+item responses and then zero in the fixed-denominator knowledge score retains
+the stored result; neither supports a new substantive answer category.
+Before adopting any new scoring or sample restriction, locate
 and verify the fielded baseline questionnaire, and recover the original
 participant/roster join. A baseline questionnaire is not present in the public
 poll package; the baseline scale interpretation still needs that primary-source
