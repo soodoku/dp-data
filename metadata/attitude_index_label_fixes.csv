@@ -1,0 +1,25 @@
+dpnum,t1var,archived_label,reviewed_label,issue_id
+10,bulgaria.bulgaria.t1q10_3,Legalizing Drugs,Penalties for Drug Taking,BGC-05
+10,bulgaria.bulgaria.t1q16,Penalties for Drug Taking,Allowing Vigilantism,BGC-05
+10,bulgaria.bulgaria.t1q21,Allowing Vigilantism,Institutional Change,BGC-05
+10,bulgaria.bulgaria.t1q22,Institutional Change,Independence of Investigation Service,BGC-05
+10,bulgaria.bulgaria.t1q23,Independence of Investigation Service,Place of Prosecution,BGC-05
+10,bulgaria.bulgaria.t1q19,Place of Prosecution,Death Penalty,BGC-05
+13,nic2.t1humrh2,Increasing Foreign Aid,Human Rights,NIC2-05
+13,nic2.t1multi,Internationalism,Multilateralism,NIC2-05
+13,nic2.t1inter,Multilateralism,Internationalism,NIC2-05
+13,nic2.t1global,Promoting Democracy,Fighting Poverty and Suffering,NIC2-05
+13,nic2.t1demo,Fighting Poverty and Suffering,Promoting Democracy,NIC2-05
+13,nic2.t1forai1,Human Rights,Increasing Foreign Aid,NIC2-05
+14,btp03.olt1usseca,Fighting Poverty and Suffering,Fighting Terrorism,BTPN-06
+14,btp03.olt1global,Fighting Terrorism,Fighting Poverty and Suffering,BTPN-06
+20,nic1.t1att1,Protecting the Environment,Spending on Environment,NIC-10
+20,nic1.t1att2,Fighting Terrorism,Spending on Medicare/Medicaid,NIC-10
+20,nic1.t1att3,Increasing Foreign Aid,Spending on Law Enforcement,NIC-10
+20,nic1.t1att4,Internationalism,Spending on Drug Rehabilitation,NIC-10
+20,nic1.t1att5,Multilateralism,Spending on Education and Training,NIC-10
+20,nic1.t1att6,Promoting Democracy,Spending on National Defense,NIC-10
+20,nic1.t1att7,Fighting Poverty and Suffering,Spending on Foreign Aid,NIC-10
+20,nic1.t1att8,Human Rights,Spending on Welfare,NIC-10
+20,nic1.t1att9,Liberalizing Trade,Spending on Social Security,NIC-10
+3,ukmonarchy.t1mpop,Powers of the Monarchy,Royal Family and the Public,UKM-05

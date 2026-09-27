@@ -968,6 +968,21 @@ source-code exceptions. Review the original response labels before producing
 corrected age, interest or education measures for the expanded population.
 Do not interpret the retained 10/11 age codes as years without that review.
 
+**UKM-05 — one catalog title describes the wrong construct (corrected).**
+The archived cross-poll files call `ukmonarchy.t1mpop` “Powers of the Monarchy”
+or “Power of Monarchy.” The reconstructed index behind that field instead
+averages Q6A/B/E/F and Q7A/B: royal-family contact with ordinary people,
+retirement and taxes, glamour, popular support and the public's say in
+succession. The retained [codebook](../data/uk-monarchy-1996/codebook.pdf)
+describes these items. The separate `ukmonarchy.t1pwrm` index uses Q15
+(appointing a prime minister) and Q13D (more powers for the Queen). Thus
+“Powers” is misleading for `t1mpop`, irrespective of the original authors'
+preferred title. The two archived cross-poll files also disagree on the
+`t1pwrm` title; that field's existing “Rules and limits” label remains for
+now. The generated catalog calls `t1mpop` “Royal Family and the Public,” a
+description of its items, not a claim to recover the original index title.
+No field link, response, index value, sample or aggregate number changes.
+
 ## UK General Election 1997 — uk-general-election-1997
 
 **UKGE-01 — preserve eligibility and scale-specific scoring.** `filter == 1`

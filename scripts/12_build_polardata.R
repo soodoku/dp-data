@@ -49,67 +49,17 @@ stopifnot(
   all(indices$t1var %in% names(rebuilt)),
   all(indices$t2_t3var %in% names(rebuilt))
 )
-bulgaria_fields <- paste0("bulgaria.bulgaria.t1", c(
-  "q10_3", "q16", "q21", "q22", "q23", "q19"
-))
-bulgaria_rows <- match(bulgaria_fields, indices$t1var)
+label_fixes <- read_metadata("attitude_index_label_fixes")
+rows <- match(label_fixes$t1var, indices$t1var)
 stopifnot(
-  !anyNA(bulgaria_rows), all(indices$dpnum[bulgaria_rows] == 10L),
-  identical(indices$att_index[bulgaria_rows], c(
-    "Legalizing Drugs", "Penalties for Drug Taking", "Allowing Vigilantism",
-    "Institutional Change", "Independence of Investigation Service",
-    "Place of Prosecution"
-  ))
+  ncol(label_fixes) == 5L,
+  !anyDuplicated(label_fixes$t1var), !anyNA(rows),
+  all(!is.na(label_fixes$issue_id) & nzchar(label_fixes$issue_id)),
+  identical(indices$dpnum[rows], label_fixes$dpnum),
+  identical(indices$att_index[rows], label_fixes$archived_label),
+  all(label_fixes$reviewed_label != label_fixes$archived_label)
 )
-indices$att_index[bulgaria_rows] <- c(
-  "Penalties for Drug Taking", "Allowing Vigilantism",
-  "Institutional Change", "Independence of Investigation Service",
-  "Place of Prosecution", "Death Penalty"
-)
-nic2_fields <- paste0("nic2.t1", c(
-  "humrh2", "multi", "inter", "global", "demo", "forai1"
-))
-nic2_rows <- match(nic2_fields, indices$t1var)
-stopifnot(
-  !anyNA(nic2_rows), all(indices$dpnum[nic2_rows] == 13L),
-  identical(indices$att_index[nic2_rows], c(
-    "Increasing Foreign Aid", "Internationalism", "Multilateralism",
-    "Promoting Democracy", "Fighting Poverty and Suffering", "Human Rights"
-  ))
-)
-indices$att_index[nic2_rows] <- c(
-  "Human Rights", "Multilateralism", "Internationalism",
-  "Fighting Poverty and Suffering", "Promoting Democracy",
-  "Increasing Foreign Aid"
-)
-btp_national_fields <- paste0("btp03.olt1", c("usseca", "global"))
-btp_national_rows <- match(btp_national_fields, indices$t1var)
-stopifnot(
-  !anyNA(btp_national_rows),
-  all(indices$dpnum[btp_national_rows] == 14L),
-  identical(indices$att_index[btp_national_rows], c(
-    "Fighting Poverty and Suffering", "Fighting Terrorism"
-  ))
-)
-indices$att_index[btp_national_rows] <- c(
-  "Fighting Terrorism", "Fighting Poverty and Suffering"
-)
-nic_fields <- paste0("nic1.t1att", 1:9)
-nic_rows <- match(nic_fields, indices$t1var)
-stopifnot(
-  !anyNA(nic_rows), all(indices$dpnum[nic_rows] == 20L),
-  identical(indices$att_index[nic_rows], c(
-    "Protecting the Environment", "Fighting Terrorism",
-    "Increasing Foreign Aid", "Internationalism", "Multilateralism",
-    "Promoting Democracy", "Fighting Poverty and Suffering",
-    "Human Rights", "Liberalizing Trade"
-  ))
-)
-indices$att_index[nic_rows] <- paste("Spending on", c(
-  "Environment", "Medicare/Medicaid", "Law Enforcement",
-  "Drug Rehabilitation", "Education and Training", "National Defense",
-  "Foreign Aid", "Welfare", "Social Security"
-))
+indices$att_index[rows] <- label_fixes$reviewed_label
 arrow::write_parquet(indices, file.path(directory, "attitude-indices.parquet"))
 readr::write_tsv(indices, file.path(directory, "attitude-indices.tab"), na = "")
 
