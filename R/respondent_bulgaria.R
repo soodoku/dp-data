@@ -58,7 +58,7 @@ build_bulgaria_individual <- function(
       education_four = education,
       education_three = collapse_historical_education(education),
       higher_education = as.numeric(education >= .66),
-      household_income = income, high_income = as.numeric(income > 2),
+      household_income = income, high_income = as.numeric(income > 4),
       attitude_extremity = historical_available_mean(abs(
         cbind(as.matrix(baseline), drug_index) - .5
       )),

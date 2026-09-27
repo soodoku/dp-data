@@ -200,3 +200,21 @@ analysis_scores,n_observed,int32,TRUE,FALSE,Number of observed source answers; n
 analysis_scores,n_correct,int32,TRUE,FALSE,Number scored correct; null for score-only records
 analysis_scores,score,float64,TRUE,FALSE,Proportion correct or published standardized index
 analysis_scores,scale,string,FALSE,FALSE,proportion_correct or standardized_index
+california_report_responses,poll_id,string,FALSE,FALSE,Stable poll identifier
+california_report_responses,respondent_id,string,FALSE,TRUE,Original source ID or prefixed arrival roster number for records lacking ID
+california_report_responses,source_row,int32,FALSE,FALSE,One-based source survey row
+california_report_responses,cohort_basis,string,FALSE,FALSE,Participant flag or arrival roster only
+california_report_responses,wave,int32,FALSE,TRUE,Arrival wave 2 or departure wave 3
+california_report_responses,item_number,int32,FALSE,TRUE,Question number 27 through 34
+california_report_responses,source_column,string,FALSE,FALSE,Wave-specific source column
+california_report_responses,raw_code,float64,TRUE,FALSE,Source answer code including non-substantive values
+california_report_responses,correct,int32,FALSE,FALSE,Correct answer indicator with missing and non-substantive answers scored zero
+california_report_scores,poll_id,string,FALSE,FALSE,Stable poll identifier
+california_report_scores,respondent_id,string,FALSE,TRUE,Original source ID or prefixed arrival roster number for records lacking ID
+california_report_scores,source_row,int32,FALSE,FALSE,One-based source survey row
+california_report_scores,cohort_basis,string,FALSE,FALSE,Participant flag or arrival roster only
+california_report_scores,wave,int32,FALSE,TRUE,Arrival wave 2 or departure wave 3
+california_report_scores,n_items,int32,FALSE,FALSE,Fixed denominator of eight factual questions
+california_report_scores,n_answered,int32,FALSE,FALSE,Number with a recorded source answer
+california_report_scores,n_correct,int32,FALSE,FALSE,Number answered correctly
+california_report_scores,score_zero_filled,float64,FALSE,FALSE,Number correct divided by eight

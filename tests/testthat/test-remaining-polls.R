@@ -177,6 +177,30 @@ test_that("sample differences and unordered comparisons do not invent links", {
   )
 })
 
+test_that("California eight-item scores reproduce Table 4", {
+  built <- build_california_report()
+  responses <- built$california_report_responses
+  scores <- built$california_report_scores
+  expect_equal(nrow(scores), 834L)
+  expect_equal(nrow(responses), 6672L)
+  expect_equal(sum(scores$cohort_basis == "arrival-roster-only"), 10L)
+  counts <- responses |>
+    dplyr::group_by(.data$wave, .data$item_number) |>
+    dplyr::summarise(correct = sum(.data$correct), .groups = "drop")
+  expect_equal(counts$correct[counts$wave == 2L],
+               c(316L, 290L, 258L, 253L, 263L, 259L, 128L, 150L))
+  expect_equal(counts$correct[counts$wave == 3L],
+               c(355L, 334L, 339L, 362L, 292L, 330L, 206L, 307L))
+  arrival <- scores$score_zero_filled[scores$wave == 2L]
+  departure <- scores$score_zero_filled[scores$wave == 3L]
+  expect_equal(round(mean(arrival) * 100, 1), 57.5)
+  expect_equal(round(mean(departure) * 100, 1), 75.7)
+  expect_true(all(scores$n_items == 8L))
+  expect_equal(nrow(build_poll_knowledge(
+    "california-whats-next-2011"
+  )$respondents), 396L)
+})
+
 test_that("NIC keeps missing IDs and rejects substantive numeric drift", {
   built <- build_poll_knowledge("nic-1996")
   expect_true("source-row-1" %in% built$respondents$respondent_id)
