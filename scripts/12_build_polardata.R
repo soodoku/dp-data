@@ -82,6 +82,18 @@ indices$att_index[nic2_rows] <- c(
   "Fighting Poverty and Suffering", "Promoting Democracy",
   "Increasing Foreign Aid"
 )
+btp_national_fields <- paste0("btp03.olt1", c("usseca", "global"))
+btp_national_rows <- match(btp_national_fields, indices$t1var)
+stopifnot(
+  !anyNA(btp_national_rows),
+  all(indices$dpnum[btp_national_rows] == 14L),
+  identical(indices$att_index[btp_national_rows], c(
+    "Fighting Poverty and Suffering", "Fighting Terrorism"
+  ))
+)
+indices$att_index[btp_national_rows] <- c(
+  "Fighting Terrorism", "Fighting Poverty and Suffering"
+)
 arrow::write_parquet(indices, file.path(directory, "attitude-indices.parquet"))
 readr::write_tsv(indices, file.path(directory, "attitude-indices.tab"), na = "")
 

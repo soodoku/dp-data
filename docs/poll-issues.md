@@ -3310,6 +3310,25 @@ measure export replaces 245 missing historical definitions with 245 observed
 `btpn-05-v2` definitions, and the raw-response export gains exactly 245
 `qb57` rows. Preserve the frozen historical benchmark as the old value.
 
+### BTPN-06: Terrorism and poverty catalog names were swapped (corrected)
+
+The archived cross-poll catalog calls `btp03.olt1usseca` “Fighting Poverty and
+Suffering” and `btp03.olt1global` “Fighting Terrorism,” with the same mismatch
+at post. The [source dictionary](../data/btp-national-2003/variables.csv)
+labels `t1usseca`/`t2usseca` Fighting Terrorism and `t1global`/`t2global`
+Fighting Poverty and Suffering. The maintained respondent build uses the
+source's security questions, including weapons and terrorism priorities, for
+the former, and food, medical aid and world-poverty questions for the latter.
+The retained [follow-up questionnaire](../data/btp-national-2003/questionnaires/btp-national-questionnaire.pdf)
+confirms those question topics. This is a two-name catalog swap, not evidence
+that the underlying indices were numerically exchanged.
+
+The generated `attitude-indices` table now names both rows by their actual
+source fields. The archived cross-poll files retain their original bytes.
+Field links, all respondent values, scores, aggregate numbers and sample
+membership are unchanged. BTPN-02's component-weighting issue remains
+separate.
+
 ## BTP Presidential Primaries 2004 — btp-presidential-primaries-2004
 
 ### PR-01: Draft counts and recodes are not the executed aggregate definition
