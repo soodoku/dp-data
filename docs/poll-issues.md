@@ -3123,6 +3123,30 @@ individual high income uses `> 6`, affecting 25 people. Preserve both stages
 until the intended income definition is established. Briefing exposure uses
 `EVAL5`, scaled `(x - 1) / 4`, not similarly named evaluation items.
 
+### NIC2-05: Six cross-poll attitude names point to the wrong indices (catalog corrected)
+
+The archived `allpollindices.csv` and its empirical-premises companion pair
+`nic2.t1humrh2` with “Increasing Foreign Aid,” `t1multi` with
+“Internationalism,” `t1inter` with “Multilateralism,” `t1global` with
+“Promoting Democracy,” `t1demo` with “Fighting Poverty and Suffering,” and
+`t1forai1` with “Human Rights.” The retained
+[source dictionary](../data/nic2-2003/variables.csv) explicitly labels each
+of these baseline and post fields “Use This One,” with the opposite topic
+mapping. The maintained respondent build reconstructs human rights from
+`fp2c_b`, foreign aid from `aid1`, democracy from `pair3` and democracy-policy
+items, and the other named constructs from their corresponding answers in the
+[treatment questionnaire](../data/nic2-2003/questionnaires/nic2-treatment-questionnaire.pdf).
+Thus the field meanings are supported by both the final source labels and the
+underlying questions; the cross-poll catalog links are the discrepancy.
+
+The generated `attitude-indices` table now names these six rows by the source
+fields they actually link. Both archived cross-poll files retain their original
+bytes. The nine NIC2 index rows and their field links, all respondent values,
+scores and aggregate numbers are unchanged. The index memo's prose is useful
+for defining constructs but its old field links must not be treated as a
+verified source mapping. This catalog correction does not settle the separate
+NIC2-02 formula-version or NIC2-04 demographic questions.
+
 ## BTP National 2003 — btp-national-2003
 
 ### BTPN-01: Historical inclusion does not equal the attendance flag

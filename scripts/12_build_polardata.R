@@ -66,6 +66,22 @@ indices$att_index[bulgaria_rows] <- c(
   "Institutional Change", "Independence of Investigation Service",
   "Place of Prosecution", "Death Penalty"
 )
+nic2_fields <- paste0("nic2.t1", c(
+  "humrh2", "multi", "inter", "global", "demo", "forai1"
+))
+nic2_rows <- match(nic2_fields, indices$t1var)
+stopifnot(
+  !anyNA(nic2_rows), all(indices$dpnum[nic2_rows] == 13L),
+  identical(indices$att_index[nic2_rows], c(
+    "Increasing Foreign Aid", "Internationalism", "Multilateralism",
+    "Promoting Democracy", "Fighting Poverty and Suffering", "Human Rights"
+  ))
+)
+indices$att_index[nic2_rows] <- c(
+  "Human Rights", "Multilateralism", "Internationalism",
+  "Fighting Poverty and Suffering", "Promoting Democracy",
+  "Increasing Foreign Aid"
+)
 arrow::write_parquet(indices, file.path(directory, "attitude-indices.parquet"))
 readr::write_tsv(indices, file.path(directory, "attitude-indices.tab"), na = "")
 

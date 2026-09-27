@@ -22,6 +22,21 @@ test_that("Bulgaria attitude catalog names match the source questions", {
   ))
 })
 
+test_that("NIC2 attitude catalog names match the final source indices", {
+  indices <- arrow::read_parquet(project_path(
+    "output", "polardata", "attitude-indices.parquet"
+  ))
+  fields <- paste0("nic2.t1", c(
+    "humrh2", "multi", "inter", "global", "demo", "forai1"
+  ))
+  labels <- indices$att_index[match(fields, indices$t1var)]
+  expect_equal(labels, c(
+    "Human Rights", "Multilateralism", "Internationalism",
+    "Fighting Poverty and Suffering", "Promoting Democracy",
+    "Increasing Foreign Aid"
+  ))
+})
+
 test_that("UK Health raw answers reproduce all 71 reconstructed fields", {
   rebuilt <- build_health_polardata()
   parity <- compare_health_polardata(rebuilt, health_reference())
