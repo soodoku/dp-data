@@ -96,13 +96,13 @@ analysis_control_people <- function(sources) {
       respondent_id = as.character(source_row), source_row,
       historical_respondent_id = NA_character_,
       identity_basis = "file-row", arm = dplyr::case_when(
-        CONDITION == 0 ~ "control", POST == 1 ~ "attended",
+        CONDITION == 0 ~ "control", !is.na(GROUP) ~ "attended",
         TRUE ~ "invited_nonattender"
       ),
       assignment = dplyr::if_else(CONDITION == 1, "invited", "control"),
-      attended = CONDITION == 1 & POST == 1,
+      attended = CONDITION == 1 & !is.na(GROUP),
       panel = POST == 1,
-      small_group_id = dplyr::if_else(CONDITION == 1 & POST == 1,
+      small_group_id = dplyr::if_else(CONDITION == 1 & !is.na(GROUP),
                                       as.character(GROUP), NA_character_),
       cluster_id = as.character(source_row), country = "United States",
       weight = dplyr::if_else(CONDITION == 1, WEIGHT_DELEGATE, WEIGHT_CONTROL),

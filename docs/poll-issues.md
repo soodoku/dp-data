@@ -2771,7 +2771,7 @@ presence is not a claim that every original field-file merge has been recovered.
 | marousi-2006 | Public participants file came from an existing derived 2014 analysis object, not an independently rebuilt item-level source. Its post knowledge-score distribution conflicts with a contemporaneous 138-person distribution; see MAR-01. | [Questionnaire](../data/marousi-2006/questionnaire.pdf), original field returns, scoring syntax and group roster. Establish wave and identity linkage before treating T2 zeros as missing. |
 | bulgaria-2007 | Distinct Roma-policy event; it must not inherit the 2002 crime battery merely because files share an archive directory. | Roma-policy questionnaire, actual event date and source-file provenance. |
 | tanzania-2015 | Public source is available, but full canonical arm, village, questionnaire and measurement integration is not built here. The group file has one person without a recorded treatment assignment; see TZ-01. | Village-randomization protocol, information versus deliberation arms, instruments and cluster IDs. Preserve the current downstream specification until audited. |
-| america-in-one-room-2019 | Downstream scoring is reproducible from the unchanged deposit; upstream has not independently reconstructed all measurement and sample decisions. | Fielded factual battery, contemporaneous answer key, invitation versus attendance status, uninvited controls and both source weights. The Paris Agreement item must be interpreted at the fieldwork date, not under today's ratification status. |
+| america-in-one-room-2019 | The attendance flag now uses the source group roster: 526 attended, of whom 523 completed the post survey. Downstream scoring is reproducible from the unchanged deposit; upstream has not independently reconstructed all measurement and sample decisions. See A1R19-01. | Fielded factual battery, remaining answer-key evidence, uninvited controls and both source weights. The Paris Agreement item must be interpreted at the fieldwork date, not under today's ratification status. |
 | a1r-climate-2021 | Three-wave source and weights exist, but upstream respondent-wave eligibility and attrition tables are not complete. | All wave instruments, stable IDs, assignment and attendance, panel filters and follow-up weights. Preserve actual wave identities instead of calling every later wave “post.” |
 | amr-2024 | Six-country numeric data exist; country-specific measurement equivalence, attendance versus assignment and weight definitions need explicit source contracts. | Country/language instruments, randomization and attendance records, coding instructions, stable IDs and weighting documentation. Published count parity alone does not validate every recode. |
 
@@ -2779,6 +2779,27 @@ The four newer control-study files and Marousi are already byte-identical betwee
 `dp-learning`'s former local inputs and their upstream copies. That migration
 reproduced all 11 result tables. It does not constitute an independent audit of
 the experiments, answer keys, causal claims, weighting, or original field-file merges.
+
+### A1R19-01 — attendance and post-survey completion differ (corrected)
+
+The [NORC methods report](../data/america-in-one-room-2019/design/a1r-2019-norc-methods.pdf),
+page 3 and Table 1, reports 526 attendees, including 523 who completed the
+post-event questionnaire. In `participants.tab`, 526 treatment records have a
+nonmissing `GROUP`; 523 of those have `POST == 1`. Source rows 805, 1650 and
+2965 have `GROUP` 5, 25 and 4 respectively, but `POST == 0` and no delegate
+weight or post answers. The former analysis builder used `POST == 1` for both
+attendance and panel status. It therefore marked these three attendees as
+nonattenders and discarded their observed group numbers. The builder now uses
+`GROUP` for treatment attendance and small-group membership, while `POST`
+continues to define post-survey completion. This changes only three
+participant-level labels and group IDs; it does not alter any questionnaire
+response, knowledge key, score or survey sample.
+
+The seven factual answers in `metadata/items.csv` match the codebook options.
+The Paris Agreement key is option 4, “All of the above.” This is consistent
+with the September 2019 field dates: [Russia accepted on 7 October 2019 and
+Turkey ratified in 2021; Iran had signed but not ratified](https://treaties.un.org/Pages/showDetails.aspx?objid=0800000280458f37).
+Do not re-key this item using countries' later treaty status.
 
 ### MAR-01 — derived post knowledge zeros need an item-level and wave bridge
 
