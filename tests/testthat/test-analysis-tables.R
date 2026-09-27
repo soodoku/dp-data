@@ -60,6 +60,12 @@ test_that("analysis exports preserve keys and canonical question IDs", {
     unique(people$arm[people$poll_id == "amr-2024"]),
     c("attended", "control")
   )
+  amr_people <- dplyr::filter(
+    people, poll_id == "amr-2024", source_dataset == "control"
+  )
+  expect_equal(nrow(amr_people), 2419L)
+  expect_equal(sum(amr_people$female), 1190)
+  expect_false(anyNA(amr_people$female))
   a1r_people <- dplyr::filter(
     people, poll_id == "america-in-one-room-2019",
     source_dataset == "control"

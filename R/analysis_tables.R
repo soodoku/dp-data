@@ -157,10 +157,15 @@ analysis_control_people <- function(sources) {
     dplyr::mutate(source_row = dplyr::row_number()) |>
     dplyr::group_by(ID) |>
     dplyr::mutate(
-      n_group = dplyr::n_distinct(Group), n_country = dplyr::n_distinct(Country)
+      n_group = dplyr::n_distinct(Group),
+      n_country = dplyr::n_distinct(Country),
+      n_gender = dplyr::n_distinct(gender)
     ) |>
     dplyr::ungroup()
-  stopifnot(all(amr$n_group == 1L), all(amr$n_country == 1L))
+  stopifnot(
+    all(amr$n_group == 1L), all(amr$n_country == 1L),
+    all(amr$n_gender == 1L), all(amr$gender %in% 0:1)
+  )
   amr <- amr |>
     dplyr::filter(Time == 0) |>
     dplyr::transmute(
@@ -178,7 +183,7 @@ analysis_control_people <- function(sources) {
         "Brazil", "Colombia", "India", "Indonesia", "Nigeria", "Tanzania"
       )[Country],
       weight = Weight, ba = as.numeric(education_ISCE >= 6),
-      female = NA_real_,
+      female = as.numeric(gender == 1),
       score_wave1 = NA_real_, score_wave2 = NA_real_
     )
   ni_groups <- readr::read_csv(
