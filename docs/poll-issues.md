@@ -1781,9 +1781,11 @@ attended at least three meetings. Thus assigning ID 908 to group 3 from
 same source file used for the separate presidential-primaries aggregate in
 PR-01; that aggregate excludes ID 908 solely because its group is missing.
 
-**Next check:** inspect [questionnaires.doc](../data/btp-online-primaries-2004/questionnaires.doc)
-and original assignment/session logs, especially ID 908's final discussion
-room. Keep the 328-person knowledge sample intact. Preserve its unknown
+The retained [questionnaires.pdf](../data/btp-online-primaries-2004/questionnaires.pdf)
+contains the seven Q43–Q49 factual questions used in the existing key; this
+does not identify ID 908's final discussion room. **Next check:** find original
+assignment/session logs, especially for ID 908. Keep the 328-person knowledge
+sample intact. Preserve its unknown
 group and the 217-person aggregate until group membership can be established
 or a separately reviewed missing-group policy is chosen. Keep invitee
 assignment, attendance and analytic inclusion distinct.
@@ -1795,11 +1797,14 @@ battery belongs to the October 2002 crime poll, not the distinct 2007 Roma-polic
 poll. Current item scores and gender match, with 17 groups. The source archive
 contains material for more than one event and must not receive a blanket poll ID.
 
-**Next check:** re-open [questionnaire.doc](../data/bulgaria-crime-2002/questionnaire.doc)
-and [knowledge-index.doc](../data/bulgaria-crime-2002/knowledge-index.doc), checking
-study date, topic and printed summaries against the source records. The prior
-audit made that identification; this pass has not independently re-established
-all external event documentation. Preserve the separate 2007 registry entry.
+The retained [questionnaire.pdf](../data/bulgaria-crime-2002/questionnaire.pdf)
+asks about crime and includes the seven true/false items. The
+[knowledge-index.pdf](../data/bulgaria-crime-2002/knowledge-index.pdf) prints
+278 observations and means .4316547 before and .524666 after. The
+[event report](../data/bulgaria-crime-2002/reports/bulgaria-crime-results.pdf)
+names the Fighting Crime in Bulgaria event on October 12–13, 2002. These
+independent materials resolve the event identity. Preserve the separate 2007
+registry entry.
 
 **BGC-02 — civil-liberties index versions differ.** The source labels
 `t1clibe`/`t2clibe` as Version E with five variables. The available draft-seven
@@ -1839,8 +1844,17 @@ match all 278 source participants, including missingness, at 1e-10 tolerance.
 Historical extremity includes the two-item drug-legalization index alongside the
 12 exported attitude indices; dispersion uses only those 12. The death-penalty
 item retains the historical four-category mapping 1→1,2→.75,3→.5,4→.25,
-which does not reach zero. Check the questionnaire wording and scale origin
-before changing either the index set or this endpoint. Knowledge remains the
+which does not reach zero. The questionnaire's Q20 asks agreement that the
+death penalty is the only appropriate punishment for certain crimes; the source
+stores this as `q19`/`q19p`, with 1 = strongly agree through 4 = strongly
+disagree. The stored `t1q19r`/`t2q19r` labels call the result a 0–1 scale, but
+all 243/255 substantive source answers exactly match 1/.75/.5/.25. A four-step
+endpoint-normalized alternative (1, 2/3, 1/3, 0) would change 131 baseline and
+170 departure respondent scores, lowering the observed-item means from
+.737654 to .650206 and from .617647 to .490196, respectively. This may be a
+scale-endpoint error, but the historical script and any index memo specifying
+its intended spacing must be checked before changing the released series;
+group and poll-level effects must then be measured. Knowledge remains the
 seven-item fixed-denominator battery, with nonanswers scoring zero.
 
 ## California 2011 — california-whats-next-2011
@@ -1860,9 +1874,15 @@ selected source records: gender and all ten item values and missingness agree
 except for the two already documented Senate code-3 responses in CA-02. The
 comparison strips only this verified blank tail; the original deposit remains
 unchanged and retains its 401-row provenance. The 16 excluded source records
-are a distinct sample-policy question, not evidence that the deposit contains
-them. Review why `t2t3filter` excludes people with observed post answers before
-changing the 396-person respondent sample.
+all lack `t2_ParticipantNumber`, `t2_GroupNumber`, and answers to all 116 `t2q*`
+arrival fields, while each has 104–132 observed `t3q*` departure fields.
+Eleven answered all five departure knowledge items. These 16 explain the gap
+between the report's 412 attendees and the 396 paired arrival/departure source
+records. Their missing arrival wave and group identity explain the historical
+`t2t3filter`; they are not evidence that the deposit contains those records.
+Retain the 396-person group aggregate. A separate T1/T3 respondent analysis
+could include some of the 16 only under an explicit sample and missing-group
+policy.
 
 ### CA-02: Party-control scoring is correct in the current knowledge build
 
@@ -1883,6 +1903,17 @@ After removing CA-01's five all-missing tail rows for comparison only, the
 source IDs 321 and 438 answered departure Senate code 3, scored incorrect in
 the maintained build and missing in the deposit. Both fixed-denominator scores
 are unchanged. The audit now reports these item differences directly.
+
+### CA-03: The report's eight-question knowledge result is a different measure
+
+The [event report](../data/california-whats-next-2011/reports/california-report.pdf)
+says participants answered eight knowledge questions before and after and
+reports an 18-point increase in overall correctness. The maintained battery
+has five matched T1/departure items (`q37:q41` and `t3q27:t3q31`). These are
+distinct wave/item definitions; the reported eight-question change cannot be
+used as a parity target for the five-item score. Recover the report's exact
+eight-item keys and analytic sample before comparing its numbers or extending
+the maintained battery.
 
 ## Europolis 2009 — europolis-2009
 
