@@ -1,5 +1,50 @@
+item_display_text <- function(values) {
+  replacements <- c(
+    "gov general" = "Governor-General", "governor general" = "Governor-General",
+    "appts" = "appointed", "recommend of" = "recommendation of",
+    "p.m." = "prime minister", "w/o" = "without", "w/" = "with",
+    "later house approve" = "later House approval", "dont" = "don't",
+    "british" = "British", "australian" = "Australian", "american" = "American",
+    "liberal party" = "Liberal Party", "labor party" = "Labor Party",
+    "labor member" = "Labor member", "democrats" = "Democrats",
+    "high court" = "High Court", "parliament" = "Parliament",
+    "house" = "House", "queen" = "Queen",
+    "teachers federation" = "Teachers Federation"
+  )
+  normalize <- function(text) {
+    letters <- gsub("[^[:alpha:]]", "", gsub("\\(correct\\)", "", text))
+    if (!nzchar(letters) || letters != toupper(letters)) {
+      return(text)
+    }
+    text <- tolower(text)
+    for (word in names(replacements)) {
+      text <- gsub(word, replacements[[word]], text, fixed = TRUE)
+    }
+    match <- regexpr("[[:alpha:]]", text)
+    if (match > 0L) {
+      substr(text, match, match) <- toupper(substr(text, match, match))
+    }
+    text
+  }
+  vapply(values, function(value) {
+    if (is.na(value)) {
+      return(NA_character_)
+    }
+    paste(vapply(
+      strsplit(value, " | ", fixed = TRUE)[[1]], normalize,
+      character(1)
+    ), collapse = " | ")
+  }, character(1), USE.NAMES = FALSE)
+}
+
 analysis_item_catalog <- function() {
-  readr::read_csv(project_path("metadata", "items.csv"), show_col_types = FALSE)
+  readr::read_csv(
+    project_path("metadata", "items.csv"), show_col_types = FALSE
+  ) |>
+    dplyr::mutate(dplyr::across(
+      c("question", "answer_choices", "correct_answer"), item_display_text,
+      .names = "{.col}_display"
+    ))
 }
 
 analysis_historical_people <- function() {

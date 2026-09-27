@@ -206,3 +206,8 @@ survey files and scripts in the local vault must be audited poll by poll
 before the full aggregate is rebuilt. Published aggregates in
 `evidence/benchmarks/` remain comparison targets for the canonical build and
 explicit inputs to the historical linkage build.
+
+The canonical item table supplies `question_display`, `answer_choices_display`, and
+`correct_answer_display` for publications. These normalize all-capital source labels
+to sentence case, with reviewed proper names and abbreviation expansions; original
+text and scoring codes remain in their existing fields.
