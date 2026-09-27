@@ -60,6 +60,15 @@ test_that("analysis exports preserve keys and canonical question IDs", {
     unique(people$arm[people$poll_id == "amr-2024"]),
     c("attended", "control")
   )
+  a1r_people <- dplyr::filter(
+    people, poll_id == "america-in-one-room-2019",
+    source_dataset == "control"
+  )
+  expect_equal(sum(a1r_people$attended), 526L)
+  expect_equal(sum(a1r_people$panel), 1367L)
+  expect_equal(sum(a1r_people$attended & !a1r_people$panel), 3L)
+  expect_true(all(!is.na(a1r_people$small_group_id[a1r_people$attended])))
+  expect_true(all(a1r_people$arm[a1r_people$attended] == "attended"))
   ni_people <- dplyr::filter(
     people, poll_id == "northern-ireland-2007",
     source_dataset == "control"
