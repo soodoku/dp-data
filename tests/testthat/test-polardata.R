@@ -48,6 +48,19 @@ test_that("BTP National attitude catalog separates security and poverty", {
   ))
 })
 
+test_that("NIC 1996 catalog names the nine spending questions", {
+  indices <- arrow::read_parquet(project_path(
+    "output", "polardata", "attitude-indices.parquet"
+  ))
+  fields <- paste0("nic1.t1att", 1:9)
+  labels <- indices$att_index[match(fields, indices$t1var)]
+  expect_equal(labels, paste("Spending on", c(
+    "Environment", "Medicare/Medicaid", "Law Enforcement",
+    "Drug Rehabilitation", "Education and Training", "National Defense",
+    "Foreign Aid", "Welfare", "Social Security"
+  )))
+})
+
 test_that("UK Health raw answers reproduce all 71 reconstructed fields", {
   rebuilt <- build_health_polardata()
   parity <- compare_health_polardata(rebuilt, health_reference())

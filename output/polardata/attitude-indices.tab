@@ -10,15 +10,15 @@ poll_id	poll_name	n_indices	att_index	t1var	t2_t3var	dpnum
 92	National Issues Convention 2	9	Promoting Democracy	nic2.t1demo	nic2.t2demo	13
 92	National Issues Convention 2	9	Increasing Foreign Aid	nic2.t1forai1	nic2.t2forai1	13
 92	National Issues Convention 2	9	Liberalizing Trade	nic2.t1trade_b	nic2.t2trade_b	13
-1001	National Issues Convention	9	Protecting the Environment	nic1.t1att1	nic1.t2att1	20
-1001	National Issues Convention	9	Fighting Terrorism	nic1.t1att2	nic1.t2att2	20
-1001	National Issues Convention	9	Increasing Foreign Aid	nic1.t1att3	nic1.t2att3	20
-1001	National Issues Convention	9	Internationalism	nic1.t1att4	nic1.t2att4	20
-1001	National Issues Convention	9	Multilateralism	nic1.t1att5	nic1.t2att5	20
-1001	National Issues Convention	9	Promoting Democracy	nic1.t1att6	nic1.t2att6	20
-1001	National Issues Convention	9	Fighting Poverty and Suffering	nic1.t1att7	nic1.t2att7	20
-1001	National Issues Convention	9	Human Rights	nic1.t1att8	nic1.t2att8	20
-1001	National Issues Convention	9	Liberalizing Trade	nic1.t1att9	nic1.t2att9	20
+1001	National Issues Convention	9	Spending on Environment	nic1.t1att1	nic1.t2att1	20
+1001	National Issues Convention	9	Spending on Medicare/Medicaid	nic1.t1att2	nic1.t2att2	20
+1001	National Issues Convention	9	Spending on Law Enforcement	nic1.t1att3	nic1.t2att3	20
+1001	National Issues Convention	9	Spending on Drug Rehabilitation	nic1.t1att4	nic1.t2att4	20
+1001	National Issues Convention	9	Spending on Education and Training	nic1.t1att5	nic1.t2att5	20
+1001	National Issues Convention	9	Spending on National Defense	nic1.t1att6	nic1.t2att6	20
+1001	National Issues Convention	9	Spending on Foreign Aid	nic1.t1att7	nic1.t2att7	20
+1001	National Issues Convention	9	Spending on Welfare	nic1.t1att8	nic1.t2att8	20
+1001	National Issues Convention	9	Spending on Social Security	nic1.t1att9	nic1.t2att9	20
 94	By The People 2004 US General Election	6	More services / Higher taxes	btp04.w4b42	btp04.w4f42	15
 94	By The People 2004 US General Election	6	Multilateralism	btp04.w4b45	btp04.w4f45	15
 94	By The People 2004 US General Election	6	Free trade vs. Protectionism	btp04.w4b48	btp04.w4f48	15

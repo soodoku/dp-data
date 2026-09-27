@@ -94,6 +94,22 @@ stopifnot(
 indices$att_index[btp_national_rows] <- c(
   "Fighting Terrorism", "Fighting Poverty and Suffering"
 )
+nic_fields <- paste0("nic1.t1att", 1:9)
+nic_rows <- match(nic_fields, indices$t1var)
+stopifnot(
+  !anyNA(nic_rows), all(indices$dpnum[nic_rows] == 20L),
+  identical(indices$att_index[nic_rows], c(
+    "Protecting the Environment", "Fighting Terrorism",
+    "Increasing Foreign Aid", "Internationalism", "Multilateralism",
+    "Promoting Democracy", "Fighting Poverty and Suffering",
+    "Human Rights", "Liberalizing Trade"
+  ))
+)
+indices$att_index[nic_rows] <- paste("Spending on", c(
+  "Environment", "Medicare/Medicaid", "Law Enforcement",
+  "Drug Rehabilitation", "Education and Training", "National Defense",
+  "Foreign Aid", "Welfare", "Social Security"
+))
 arrow::write_parquet(indices, file.path(directory, "attitude-indices.parquet"))
 readr::write_tsv(indices, file.path(directory, "attitude-indices.tab"), na = "")
 
