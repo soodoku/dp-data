@@ -1857,6 +1857,25 @@ its intended spacing must be checked before changing the released series;
 group and poll-level effects must then be measured. Knowledge remains the
 seven-item fixed-denominator battery, with nonanswers scoring zero.
 
+**BGC-05 — six archived attitude labels are shifted (catalog corrected).**
+The two retained cross-poll index files pair six Bulgaria source fields with
+names belonging to different questions. Both call source `q10_3` “Legalizing
+Drugs,” but the [questionnaire](../data/bulgaria-crime-2002/questionnaire.pdf)
+Q10(3) and the source variable label ask about **penalties for drug taking**.
+Source `q16` asks whether people should take the law into their own hands;
+`q21`, `q22` and `q23` ask about institutional change, investigation-service
+independence and the place of prosecution. Source `q19` asks about the death
+penalty. The questionnaire's printed question numbers differ from some source
+field numbers, so the wording and source variable labels establish these
+matches, not the number alone.
+
+The generated `attitude-indices` catalog now uses those six topic names in
+the same order as the source fields. The source files in `data/shared/` retain
+their original bytes as historical evidence. This is a label correction only:
+the 129 index rows, field mappings, respondent answers, scores and aggregate
+numbers are unchanged. The possible death-penalty *scale* correction in
+BGC-04 remains unresolved and is not implied by the catalog edit.
+
 ## California 2011 — california-whats-next-2011
 
 ### CA-01: The available source and deposited battery use different samples
