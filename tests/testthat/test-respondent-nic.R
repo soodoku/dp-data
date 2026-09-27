@@ -39,7 +39,7 @@ test_that("NIC respondent fields match historical or approved values", {
   nic <- audit[audit$poll_id == "nic-1996", ]
   expect_equal(nrow(nic), 45L)
   expect_true(all(nic$respondents == 466L))
-  expect_equal(sum(nic$value_differences), 454L)
+  expect_equal(sum(nic$value_differences), 738L)
   expect_true(all(nic$unexplained_differences == 0L))
   expect_equal(sum(nic$missingness_differences), 4L)
 })
@@ -83,4 +83,26 @@ test_that("NIC age corrects the year typo and withholds unsupported ages", {
     survey, BYEAR = dplyr::if_else(.data$CASEID == 10007590, 67, .data$BYEAR)
   )
   expect_error(nic_age(changed))
+})
+
+test_that("NIC arrival extremity uses the arrival spending answers", {
+  survey <- read_poll_survey("nic-1996")
+  index <- which(survey$PART == 1 &
+                   rounded_source_code(survey$SPFAID2) == 1)[1]
+  original <- build_nic_individual(survey)$attitude_extremity_midterm[index]
+
+  changed_baseline <- survey
+  changed_baseline$SPFAID1[index] <- 3
+  expect_equal(
+    build_nic_individual(changed_baseline)$attitude_extremity_midterm[index],
+    original
+  )
+
+  changed_arrival <- survey
+  changed_arrival$SPFAID2[index] <- 2
+  expect_equal(
+    build_nic_individual(changed_arrival)$attitude_extremity_midterm[index],
+    original - 1 / 18,
+    tolerance = 1e-10
+  )
 })

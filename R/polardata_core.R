@@ -133,7 +133,6 @@ build_core_derived <- function(survey, values, poll_id) {
   arrival <- NULL
   if (poll_id == "nic-1996") {
     arrival <- nic_attitudes(survey, 2L)[rows, ]
-    arrival[, 7:9] <- profile$attitudes[rows, 7:9]
   }
   result <- historical_derived_columns(
     values, group, profile$early_income[rows],

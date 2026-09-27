@@ -3,6 +3,7 @@
 *.md text eol=lf
 *.R text eol=lf
 *.tab text eol=lf
+output/polardata/*.tab whitespace=-trailing-space
 *.yml text eol=lf
 *.yaml text eol=lf
 *.dta binary

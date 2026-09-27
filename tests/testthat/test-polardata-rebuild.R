@@ -61,6 +61,11 @@ test_that("derived exports preserve unique people and reviewed gain", {
     )
   expect_setequal(unique(derived$definition_version[europe_demographics]),
                   "te-05-v2")
+  nic_arrival <- derived$poll_id == "nic-1996" &
+    derived$legacy_field == "avgsd2"
+  expect_equal(sum(nic_arrival), 466L)
+  expect_setequal(unique(derived$definition_version[nic_arrival]),
+                  "nic-09-v2")
   europolis_age <- derived$poll_id == "europolis-2009" &
     derived$legacy_field == "meanage"
   expect_setequal(unique(derived$definition_version[europolis_age]),
