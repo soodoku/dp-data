@@ -75,6 +75,12 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   expect_equal(sum(a1r_people$attended & !a1r_people$panel), 3L)
   expect_true(all(!is.na(a1r_people$small_group_id[a1r_people$attended])))
   expect_true(all(a1r_people$arm[a1r_people$attended] == "attended"))
+  climate_people <- dplyr::filter(
+    people, poll_id == "a1r-climate-2021", source_dataset == "control"
+  )
+  expect_equal(nrow(climate_people), 8814L)
+  expect_equal(sum(climate_people$female), 5066)
+  expect_false(anyNA(climate_people$female))
   ni_people <- dplyr::filter(
     people, poll_id == "northern-ireland-2007",
     source_dataset == "control"

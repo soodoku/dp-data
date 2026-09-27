@@ -112,6 +112,11 @@ analysis_control_people <- function(sources) {
       ),
       score_wave1 = NA_real_, score_wave2 = NA_real_
     )
+  stopifnot(
+    all(sources$climate$GENDER %in% 1:2),
+    all(is.na(sources$climate$T3GENDER) |
+          sources$climate$GENDER == sources$climate$T3GENDER)
+  )
   climate <- sources$climate |>
     dplyr::transmute(
       poll_id = "a1r-climate-2021", source_dataset = "control",
@@ -129,7 +134,7 @@ analysis_control_people <- function(sources) {
       cluster_id = as.character(CaseId), country = "United States",
       weight = WEIGHT1,
       ba = dplyr::if_else(EDUC5 %in% 1:5, as.numeric(EDUC5 >= 4), NA_real_),
-      female = NA_real_,
+      female = as.numeric(GENDER == 2),
       score_wave1 = NA_real_, score_wave2 = NA_real_
     )
   tanzania <- sources$tanzania |>

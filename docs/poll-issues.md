@@ -2858,6 +2858,22 @@ fuels is 54.0% → 64.5%. The unweighted percentages do not match. `WEIGHT2`
 also does not match; `WEIGHT1` is the report's relevant national weight for
 this comparison. The later `T3` questionnaire is a distinct follow-up wave.
 
+### A1RC-02 — retain observed climate-poll gender in the participant export (corrected)
+
+The climate source has baseline `GENDER` code 1 or 2 for all 8,814 people.
+Its follow-up `T3GENDER` agrees with baseline for all 1,590 rows where it is
+observed. The publicly retained [2019 America in One Room
+codebook](../data/america-in-one-room-2019/codebooks/a1r_codebook.tab)
+labels the same AmeriSpeak `GENDER` field 1 male and 2 female; NORC's later
+[AmeriSpeak profile codebook](https://amerispeak.norc.org/content/dam/amerispeak/supporting-documents/Amerispeak%20Profile%20Data%20Codebook.pdf)
+uses the same two-code direction. The 2021 poll-specific value-label file is
+not retained, so these related primary sources establish the direction rather
+than a direct 2021 label. The participant export previously set `female`
+missing for every climate respondent. It now maps `GENDER == 2` to one,
+with assertions for the observed codes and cross-wave agreement. No
+attendance flag, response, score, sample or weight changes. Current
+`dp-learning` climate analyses do not use `female` as a covariate.
+
 ### AMR-01 — six-country knowledge gains reproduce the report
 
 The [final report](../data/amr-2024/reports/amr-final-report.pdf), Knowledge
