@@ -37,6 +37,17 @@ test_that("NIC2 attitude catalog names match the final source indices", {
   ))
 })
 
+test_that("BTP National attitude catalog separates security and poverty", {
+  indices <- arrow::read_parquet(project_path(
+    "output", "polardata", "attitude-indices.parquet"
+  ))
+  fields <- paste0("btp03.olt1", c("usseca", "global"))
+  labels <- indices$att_index[match(fields, indices$t1var)]
+  expect_equal(labels, c(
+    "Fighting Terrorism", "Fighting Poverty and Suffering"
+  ))
+})
+
 test_that("UK Health raw answers reproduce all 71 reconstructed fields", {
   rebuilt <- build_health_polardata()
   parity <- compare_health_polardata(rebuilt, health_reference())

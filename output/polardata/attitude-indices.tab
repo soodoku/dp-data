@@ -117,14 +117,14 @@ poll_id	poll_name	n_indices	att_index	t1var	t2_t3var	dpnum
 95	By the People 2004 US Presidential Primaries	3	Free Trade	btp04pr.t1trade	btp04pr.t2trade	16
 95	By the People 2004 US Presidential Primaries	3	Multilateralism	btp04pr.t1mindex	btp04pr.t2mindex	16
 95	By the People 2004 US Presidential Primaries	3	Services vs. Taxes	btp04pr.t1services	btp04pr.t2services	16
-93	By the People: National	9	Fighting Poverty and Suffering	btp03.olt1usseca	btp03.olt2usseca	14
+93	By the People: National	9	Fighting Terrorism	btp03.olt1usseca	btp03.olt2usseca	14
 93	By the People: National	9	Human Rights	btp03.olt1humrh2	btp03.olt2humrh2	14
 93	By the People: National	9	Protecting the Environment	btp03.olt1envir	btp03.olt2envir	14
 93	By the People: National	9	Internationalism	btp03.olt1inter	btp03.olt2inter	14
 93	By the People: National	9	Multilateralism	btp03.olt1multi	btp03.olt2multi	14
 93	By the People: National	9	Democracy	btp03.olt1demo	btp03.olt2demo	14
 93	By the People: National	9	Increasing Foreign Aid	btp03.olt1forai1	btp03.olt2forai1	14
-93	By the People: National	9	Fighting Terrorism	btp03.olt1global	btp03.olt2global	14
+93	By the People: National	9	Fighting Poverty and Suffering	btp03.olt1global	btp03.olt2global	14
 93	By the People: National	9	Liberalizing Trade	btp03.olt1trade	btp03.olt2trade	14
 71	Europolis	2	Combatting Climate Change	eu2009.cc1	eu2009.cc2	11
 71	Europolis	2	Stricter Immigration Control	eu2009.imm1	eu2009.imm2	11
