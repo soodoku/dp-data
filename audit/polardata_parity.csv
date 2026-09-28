@@ -3295,7 +3295,7 @@ bulgaria-crime-2002,grpgain,278,277,0,0,0,0,FALSE,0,5.551115123125783e-16,1e-10
 bulgaria-crime-2002,t2know,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 bulgaria-crime-2002,ppage,278,278,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,educ4,278,277,0,0,0,0,FALSE,0,0,1e-10
-bulgaria-crime-2002,minority,278,278,0,0,0,0,FALSE,0,0,1e-10
+bulgaria-crime-2002,minority,278,276,2,0,0,2,FALSE,0,0,1e-10
 bulgaria-crime-2002,hhincome,278,273,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,female,278,278,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,attextreme,278,278,0,131,0,131,FALSE,0,0.03125000000000011,1e-10
@@ -3315,7 +3315,7 @@ bulgaria-crime-2002,t2knowr,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 bulgaria-crime-2002,pollname,278,278,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,numissues,278,278,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,pfemale,278,278,0,0,0,0,FALSE,0,5.551115123125783e-16,1e-10
-bulgaria-crime-2002,pminority,278,278,0,0,0,0,FALSE,0,3.885780586188048e-16,1e-10
+bulgaria-crime-2002,pminority,278,278,0,34,0,34,FALSE,0,0.05147058823529399,1e-10
 bulgaria-crime-2002,varfemale,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 bulgaria-crime-2002,sdfemale,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 bulgaria-crime-2002,vareduc,278,278,0,0,0,0,FALSE,0,3.885780586188048e-16,1e-10

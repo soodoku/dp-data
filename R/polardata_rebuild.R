@@ -141,6 +141,8 @@ historical_derived_measures <- function(polls) {
             ) ~ "btphe-04-v2",
           .env$poll_id == "new-haven-2004" &
             .data$legacy_field == "pminority" ~ "nh-04-v2",
+          .env$poll_id == "bulgaria-crime-2002" &
+            .data$legacy_field == "pminority" ~ "bgc06-v2",
           .env$poll_id == "zeguo-2005" &
             .data$legacy_field %in% c(
               "meanxtreme", "avgsd", "genvar"

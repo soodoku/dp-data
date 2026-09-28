@@ -22,6 +22,42 @@ test_that("Bulgaria Version E is reconstructed at original float precision", {
   }
 })
 
+test_that("Bulgaria unknown ethnicity stays missing without removing people", {
+  survey <- read_poll_survey("bulgaria-crime-2002")
+  original <- survey$ethnos
+  values <- build_bulgaria_individual(survey)
+  unknown <- survey$ethnos == 0
+  expect_equal(survey$source_row[unknown], c(277L, 278L))
+  expect_equal(as.numeric(survey$id[unknown]), c(1614, 1018))
+  expect_equal(sum(is.na(values$minority)), 2L)
+  expect_true(all(is.na(values$minority[unknown])))
+  for (code in 1:4) {
+    selected <- survey$ethnos == code
+    expect_equal(values$minority[selected],
+                 rep(as.numeric(code != 1), sum(selected)))
+  }
+  expect_identical(survey$ethnos, original)
+  contract <- read_metadata("respondent_sources") |>
+    dplyr::filter(.data$poll_id == "bulgaria-crime-2002")
+  built <- build_poll_respondents(contract)
+  expect_equal(nrow(built$people), 278L)
+  historical <- built$sample_memberships |>
+    dplyr::filter(.data$sample_id == "historical-polardata")
+  expect_equal(sum(historical$included), 278L)
+  memberships <- built$respondent_memberships
+  expect_equal(nrow(memberships), 278L)
+  expect_true(all(
+    built$people$respondent_id[unknown] %in% memberships$respondent_id
+  ))
+  raw <- built$source_responses |>
+    dplyr::filter(.data$source_column == "ethnos")
+  expect_equal(raw$raw_numeric[
+    match(built$people$respondent_id[unknown], raw$respondent_id)
+  ], c(0, 0))
+  survey$ethnos[1] <- 5
+  expect_error(build_bulgaria_individual(survey), "Unreviewed source codes")
+})
+
 test_that("Bulgaria death-penalty agreement spans both scale endpoints", {
   survey <- read_poll_survey("bulgaria-crime-2002")
   expected <- c(1, 2 / 3, 1 / 3, 0)
@@ -60,7 +96,7 @@ test_that("Bulgaria individual and group high-income rules agree", {
   expect_equal(shares$computed, shares$stored, tolerance = 1e-8)
 })
 
-test_that("Bulgaria matches reviewed BGC-03 and BGC-04 corrections", {
+test_that("Bulgaria matches reviewed BGC-03 BGC-04 and BGC-06 corrections", {
   audit <- readr::read_csv(project_path("audit", "respondent_parity.csv"),
     show_col_types = FALSE
   )
@@ -77,5 +113,6 @@ test_that("Bulgaria matches reviewed BGC-03 and BGC-04 corrections", {
             "attextreme", "highinc"), changed$legacy_field)
   ], c(131L, 170L, 131L, 165L))
   expect_true(all(rows$unexplained_differences == 0L))
-  expect_true(all(rows$missingness_differences == 0L))
+  expect_equal(rows$missingness_differences,
+               as.integer(rows$legacy_field == "minority") * 2L)
 })

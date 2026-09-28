@@ -1759,11 +1759,55 @@ age/group-mean rows appended; no prior correction values were rewritten.
 `Sgroup` gives the 20 small groups and `CaseID` identifies people. Codes 99, 998,
 and 999 are non-substantive. All eight-item scores and gender match the deposit.
 
-**Next check:** consult [codebook.pdf](../data/btp-2007/codebook.pdf), the fielded
-PRE/POST questions, and the study assignment documentation before treating the
-selection flag as a discussion-group ID or treating attendance as randomized
-assignment. The remaining response arms should be represented in a broader
-schema, not lost because this knowledge build selects one arm.
+The original [codebook.pdf](../data/btp-2007/codebook.pdf), PDF page 4
+(printed page 3), explains the selected cohort: 326 people attended all four
+sessions, and 301 of them completed the post-survey. Across all attendance
+levels, 771 attended at least one discussion and 695 treatment respondents
+completed a post-survey. The published 1,501-row source contains 301 discussion
+participants, 700 primary controls, 200 reading-only controls and 300 post-only
+controls. Thus assignment, attendance and analysis inclusion are distinct;
+`group == 1` is not a census of everyone who attended any discussion.
+
+### BTP07-02: Fielded keys reproduce the weighted report (checked; no correction)
+
+The PRE questionnaire on codebook PDF pages 78–79 (printed pages 77–78) and
+POST questionnaire on PDF pages 88–89 (printed pages 87–88) support all eight
+current Q19–Q26 keys: `3, 2, 3, 3, 2, 4, 2, 2`. These identify five million
+Americans barred from voting because of criminal convictions; gerrymandering
+to ensure one party a majority; approximately 50% presidential-election turnout;
+Australia's compulsory voting; selective-service registration for men aged
+18–25; a majority of Electoral College votes; redistricting every ten years;
+and Iowa/New Hampshire as the traditional earliest primary events. Both waves
+use the same question meanings and choices. There are zero disagreements with
+the author's `PRE_Q19COR:PRE_Q26COR` and `POST_Q19COR:POST_Q26COR` columns across
+all 301 selected people and 4,816 item scores.
+
+Using the source `weight`, the [event report](../data/btp-2007/reports/btp-2007-results.pdf),
+PDF page 2, is reproduced: selective-service knowledge rises from 59.78086% to
+81.07762% (reported 60% to 81%), and compulsory-voting knowledge rises from
+12.56398% to 28.62159% (reported 13% to 29%). The eight-item mean rises from
+43.91037% to 54.68859%, a 10.77822 percentage-point gain (reported 11 points).
+Unweighted means differ because the report uses the source survey weights;
+this is not evidence that the keys or selected cohort are wrong.
+
+CaseID 2392, source row 295, group `4_6`, has all eight POST knowledge answers
+coded 998 (Skipped). It nevertheless answers preceding POST questions and has
+POST start/end timestamps. This is a skipped battery inside an observed
+questionnaire, not an absent questionnaire; preserve the existing fixed-battery
+zero-filled score. All 300 post-only controls have PRE knowledge code 999
+(T2 only group), and none is included in the current participant export.
+
+The full 1,501-row source and selected 301 people contain no nonresponse codes
+in birth year, gender, race, education or political interest. Income is not
+currently exported as a derived measure. Its code 15 is explicitly "Prefer
+not to say" in `value-labels.csv`: 211 source records, including 49 selected
+participants. A future income measure must treat 15 as missing rather than
+as the highest income band. This does not require a change to current outputs.
+
+**Remaining scope:** represent the other response arms and unexported
+demographics in a broader schema while retaining raw codes. There is currently
+no standalone BTP 2007 respondent recoder or `polardata` block; its participant
+battery is built by the adapter in `R/poll_adapters.R`.
 
 ## BTP General Election 2004 — btp-general-election-2004
 
@@ -2190,7 +2234,7 @@ the 129 index rows, field mappings, respondent answers, scores and aggregate
 numbers were unchanged by that label edit. The separate BGC-04 scale correction
 was subsequently approved and changes the values described above.
 
-### BGC-06: Two unlabelled ethnicity codes become known minority status (proposed)
+### BGC-06: Unlabelled ethnicity remains unknown (approved correction)
 
 The [questionnaire](../data/bulgaria-crime-2002/questionnaire.pdf), Q7 on PDF
 page 2, asks ethnicity and offers four responses: 1 Bulgarian, 2 Turkish,
@@ -2215,11 +2259,11 @@ a different income band and retired status. Those differences mean an ID
 match alone is not a validated identity bridge. ID 1614 is absent from that
 national file. The attendee-return sources are the relevant evidence here.
 
-**Recommendation:** leave the two derived minority flags missing, preserve
+**Approved correction:** leave the two derived minority flags missing, preserve
 raw zero, and leave valid Other code 4 unchanged. This recognizes unknown
 ethnicity without inventing which unrecorded answer was given. All 278 people
 and group memberships remain. Under the existing central mean helper, groups
-5310 and 5316, each containing 17 people, would move from 3/17 minority
+5310 and 5316, each containing 17 people, move from 3/17 minority
 (0.1764705882352941) to 2 known minorities among 16 observed ethnicities
 (0.125). Two person flags and 34 repeated group shares would change.
 
@@ -2228,9 +2272,10 @@ for the binary complement, so its minority component would remain
 0.672294817075638 in both groups. That is not evidence that unknown ethnicity
 has been incorporated correctly into diversity. Missing-aware entropy needs
 one shared cross-poll assessment; do not patch the formula inside this poll's
-recode. This proposal changes only person data and summaries already computed
-by the central step, subject to the user's poll-specific decision. No coding
-change has been applied.
+recode. The user approved the respondent correction on 2026-09-27. It changes
+two person flags and 34 group-share cells while preserving all 278 people,
+raw zeros and every prior correction. The shared entropy correction is a
+separate, explicitly authorized change; its comparisons follow in X-03.
 
 ## California 2011 — california-whats-next-2011
 
@@ -3230,6 +3275,55 @@ party-control answer.
 instructions, retaining raw text and rejecting unknown tokens. `postit` identifies
 people and `group_number` gives 16 groups. The published source is already merged
 `mifin.dta`; reproducing its earlier merge is a separate unresolved task.
+
+### MI-02: Nine shared items and the report's eleven items compare different waves
+
+The [baseline questionnaire](../data/michigan-2009/questionnaire-pre.pdf),
+PDF pages 2 and 4, contains four party-placement items (Q4/Q5 on taxes and
+spending; Q7/Q8 on government intervention against unemployment) and five
+factual items (Q14–Q18). The [departure questionnaire](../data/michigan-2009/questionnaire-post.pdf),
+PDF pages 3–4 and 11, contains the corresponding placement Q10/Q11/Q13/Q14
+and factual Q38–Q42, plus two standard-of-living placement items Q7/Q8.
+Those additional items ask where the Democratic and Republican parties sit
+between government ensuring everyone has a job and a certain standard of
+living (1) and everyone trying to get ahead on their own (7). Correct sides
+are 1–3 for Democrats and 5–7 for Republicans. These two items were collected
+at arrival and departure, not in the telephone baseline.
+
+The [final report](../data/michigan-2009/reports/michigan-final-report.pdf),
+PDF/printed page 13, explicitly marks the standard-of-living pair as
+"Question at arrival, before deliberations." The archived
+`historical-cdd-scripts:legacy/poll_scripts/mi.R` separately defines
+`t1knownet`/`t2knownet`/`t3knownet` using the nine shared items and
+`t2know2`/`t3know2` using eleven arrival/departure items. Its exported battery
+uses the nine-item telephone-baseline/departure comparison. Adding the two
+arrival items to that baseline score would mix measurements from different
+waves; retain the existing battery and represent an eleven-item comparison
+as a separate definition if it is added.
+
+The 310 selected people have unique `postit` values, and none has all nine
+raw baseline or departure knowledge responses missing. Raw factual correct
+counts, in the report's question order, are 81/137/14/34/86 before and
+134/165/25/57/90 after. The fixed-denominator five-item means are
+22.70968% and 30.38710%, reproducing the report's 22.7% and 30.4%.
+The existing nine-item means are 34.15771% and 43.94265%.
+
+Using arrival Q7/Q8 plus the four shared baseline placement items gives a
+six-item placement mean of 54.08602%; the six departure items give 61.82796%
+when missing responses score zero. Equal weighting of the factual and
+placement domain means gives 38.39785% and 46.10753%, consistent with the
+report's overall 38.4% and 46.1%. An equal-weight eleven-item score instead
+gives 39.82405% and 47.53666%. Equal domain weighting is therefore a numerical
+explanation of the published overall index, not a reason to change our
+existing nine-item measure. The report's departure placement mean is 61.9%,
+rather than this zero-filled reconstruction's 61.82796%; its exact item
+missingness/denominator convention remains unverified. Do not describe this
+as an exact reproduction of every reported placement estimate or assume the
+archived eleven-item `rowMeans` definition is the report's overall index.
+
+**Decision:** no scientific correction is justified by the nine-versus-eleven
+count. Keep the current shared-item battery and preserve raw arrival/departure
+answers for a separately defined extension.
 
 ## Denmark Euro 2000 — denmark-euro-2000
 
