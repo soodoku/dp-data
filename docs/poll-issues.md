@@ -5043,9 +5043,31 @@ not create a new scored battery or silently substitute its values downstream.
 | --- | --- | --- |
 | California 2011 | `data/california-whats-next-2011/survey.parquet`: arrival`t2q27:t2q34`. First five are counterparts of current telephone`t1`/departure shared bank; all eight form the separate report battery in`metadata/california_knowledge_items.csv`. Reports/questionnaires remain under that poll folder; CA-03 gives item wording and count checks. | Keep five-common-item and eight-report-item definitions separate. The existing eight-item supplemental export is not a silent replacement for the five-item selected-wave bank. |
 | Europolis 2009 | `data/europolis-2009/survey.sav`: six common arrival `V2Q43/V2Q44/V2Q46/V2Q47/V2Q49/V2Q50`; three arrival-only `V2Q45/V2Q48/V2Q51`. `reports/europolis-knowledge.pdf`, p. 1; research-paper Table 2/printed p. 11; EURO-05. | Six-item baseline/arrival/exit comparisons and nine-item arrival/exit comparisons have different denominators and coverage. Preserve the three one-answer baseline publication discrepancies rather than recoding to match the paper. |
-| Denmark 2000 | `vault/cdd/data/Denmark/data/t1.sav`:363 unique`DELNR`, linked to baseline`delnr`;358 overlap the current departure IDs. Nine arrival fields`S4_1:S9_1,S11_7_1,S11_9_1,S11_11_1`. Paper`data/denmark-euro-2000/papers/deliberative-democracy-euro.pdf`, Table 9/PDF p. 19; DK-02 distinguishes the current359 departure records. | Original arrival source is retained in vault but not an ordinary published poll-folder arrival file. Do not equate363 arrival IDs,359 departure IDs and358 overlap, or infer missing identities from the anonymous deposited battery. |
+| Denmark 2000 | `data/denmark-euro-2000/arrival.sav`:363 unique`DELNR`, linked to baseline`delnr`;358 overlap the current departure IDs. Nine arrival fields`S4_1:S9_1,S11_7_1,S11_9_1,S11_11_1`. Paper`data/denmark-euro-2000/papers/deliberative-democracy-euro.pdf`, Table 9/PDF p. 19; DK-02 distinguishes the current359 departure records. | The original arrival file and dictionaries are now public; DK-05 records exact-byte preservation. Scoring and the three-wave join remain unfinished. Do not equate363 arrival IDs,359 departure IDs and358 overlap, or infer missing identities from the anonymous deposited battery. |
 | Vermont 2007 | `data/vermont-energy-2007/survey.sav`: all nine`Q030T2:Q038T2`, with146 respondents having at least one answer. Final-report PDF p. 12 explicitly identifies arrival. | Use the reviewed report-based keys, including VT-01's renewables decision, while retaining the instrument ambiguity; do not alter keys simply to expose the wave. |
 | Michigan 2009 | `data/michigan-2009/survey.parquet`: four common arrival placements`t2q10/t2q11/t2q13/t2q14`, plus arrival-only standard-of-living placements`t2q7/t2q8`. There are no arrival factual counterparts`t2q38:t2q42`. Final report PDF p. 13 marks the two added placements as arrival. | This is **partial** arrival coverage, not the complete current nine-item bank. The two added items have196/209 correct responses; dividing by310 reproduces report63.2%/67.4%. Report11-item baseline combines telephone facts/four placements with two arrival-only placements. Do not silently turn that mixed-time bank into a uniform baseline. |
+
+**Open implementation work: arrival comparisons.** This is a data-build task,
+not a manuscript finding. Build three-wave comparisons from questions asked at
+all three interviews: five items for California, six for Europolis, nine for
+Denmark, nine for Vermont, and four placement items for Michigan. Keep the
+expanded California eight-item and Europolis nine-item arrival/exit batteries
+separate. Michigan’s two arrival-only placement items cannot enter a telephone
+to arrival comparison; the missing arrival factual questions must not be scored
+as incorrect.
+
+For each poll, check the literal question wording and answer options against the
+retained instruments before reusing an answer key. Establish questionnaire
+presence from the full form, so blanks within an observed questionnaire score
+zero and wholly absent questionnaires remain missing. Join interviews using
+verified respondent IDs, report unmatched records and counts at every step,
+and retain people outside complete three-wave samples in the upstream tables.
+Compare item counts and aggregate scores with the cited reports, preserving
+reviewed coding decisions unless new evidence supports a correction. Publish
+the resulting item and score records in typed `dp-data` outputs; then rebuild
+`dp-learning` comparisons and replace manuscript estimates. Resolve substantive
+ambiguities with the user. Do not substitute pipeline progress notes for those
+results in the manuscript.
 
 Tomorrow's Europe is not in this missing-arrival list: its arrival score is
 already exposed in `analysis_phase_scores`, although arrival item responses
