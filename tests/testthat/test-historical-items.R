@@ -7,7 +7,7 @@ test_that("historical item scores reproduce both respondent waves", {
   ))
   historical <- readr::read_tsv(project_path(
     "output", "polardata", "polardata.tab"
-  ), show_col_types = FALSE) |>
+  ), show_col_types = FALSE, guess_max = Inf) |>
     dplyr::distinct(.data$dpnum, .data$caseid, .keep_all = TRUE)
   aliases <- read_metadata("respondent_sources") |>
     dplyr::select("poll_id", "dpnum")

@@ -1,0 +1,94 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+DELNR,double,numeric,,Deltagernr.,F11.0,,,TRUE,Retained
+S1_1,double,haven_labelled|vctrs_vctr|double,,"1. Danmark deltager på grund af sit forbehold ikke i den fælles mønt, euroen. Hvad vil du stemme til folkeafstemningen den 28. september om dansk deltagelse i den fælles mønt? Vil du stemme...?",F8.0,,,TRUE,Retained
+S1B_1,double,haven_labelled|vctrs_vctr|double,,"1b. Hvis du skulle tage stilling for eller imod dansk deltagelse i den fælles mønt, euroen, hvad ville du så vælge?",F8.0,,,TRUE,Retained
+S2_1,double,haven_labelled|vctrs_vctr|double,,"2. Er det sandsynligt, at du vil ændre holdning på baggrund af euro-debatten inden folkeafstemningen den 28. september?",F8.0,,,TRUE,Retained
+S3A_1,double,haven_labelled|vctrs_vctr|double,,3a. Medlemskab af EU er positivt for Danmark,F8.0,,,TRUE,Retained
+S3B_1,double,haven_labelled|vctrs_vctr|double,,3b. Det er en vigtig opgave for EU at få nye lande optaget i unionen hurtigst muligt,F8.0,,,TRUE,Retained
+S3C_1,double,haven_labelled|vctrs_vctr|double,,3c. Dansk deltagelse i den fælles mønt forringer dansk selvstændighed,F8.0,,,TRUE,Retained
+S3D_1,double,haven_labelled|vctrs_vctr|double,,3d. Dansk deltagelse i den fælles mønt giver bedre vilkår for dansk erhvervsliv,F8.0,,,TRUE,Retained
+S3E_1,double,haven_labelled|vctrs_vctr|double,,3e. Dansk deltagelse i den fælles mønt er en trussel mod danskheden,F8.0,,,TRUE,Retained
+S3F_1,double,haven_labelled|vctrs_vctr|double,,3f. Dansk deltagelse i den fælles mønt giver en lavere rente i Danmark end i dag,F8.0,,,TRUE,Retained
+S3G_1,double,haven_labelled|vctrs_vctr|double,,3g. Dansk deltagelse i den fælles mønt vil medføre forringelse i den danske velfærdsmodel,F8.0,,,TRUE,Retained
+S3H_1,double,haven_labelled|vctrs_vctr|double,,3h. Dansk deltagelse i den fælles mønt giver mere indflydelse for Danmark på EUs beslutninger,F8.0,,,TRUE,Retained
+S3I_1,double,haven_labelled|vctrs_vctr|double,,3i. Det at have en dansk krone er vigtigere end en eventuel økonomisk gevinst ved deltagelse i den fælles mønt,F8.0,,,TRUE,Retained
+S3J_1,double,haven_labelled|vctrs_vctr|double,,3j. Euro-samarbejdet er et skridt mod Europas forenede stater,F8.0,,,TRUE,Retained
+S3K_1,double,haven_labelled|vctrs_vctr|double,,3k. Dansk deltagelse i den fælles mønt giver en økonomisk gevinst for Danmark,F8.0,,,TRUE,Retained
+S3L_1,double,haven_labelled|vctrs_vctr|double,,3l. Dansk deltagelse i den fælles mønt forringer lønmodtagernes vilkår,F8.0,,,TRUE,Retained
+S3M_1,double,haven_labelled|vctrs_vctr|double,,3m. Dansk deltagelse i den fælles mønt forbedrer de svage gruppers vilkår,F8.0,,,TRUE,Retained
+S3N_1,double,haven_labelled|vctrs_vctr|double,,"3n. Hvis Danmark går med i den fælles mønt, kan vi ikke melde os ud igen",F8.0,,,TRUE,Retained
+S3O_1,double,haven_labelled|vctrs_vctr|double,,3o. Euro-samarbejde understøtter fred og stabilitet i Europa,F8.0,,,TRUE,Retained
+S3P_1,double,haven_labelled|vctrs_vctr|double,,3p. Euro-samarbejdet er udemokratisk,F8.0,,,TRUE,Retained
+S3Q_1,double,haven_labelled|vctrs_vctr|double,,3q. Alt i alt er det fælles mønt-samarbejde positivt for Danmark,F8.0,,,TRUE,Retained
+S3R_1,double,haven_labelled|vctrs_vctr|double,,3r. Danmark bør vente med at tilslutte sig den fælles mønt,F8.0,,,TRUE,Retained
+S4_1,double,haven_labelled|vctrs_vctr|double,,"4. Danmark kan som medlem af euro-samarbejdet blive idømt bøder, hvis vi har et for stort underskud på statens finanser. Er det rigtigt eller forkert?",F8.0,,,TRUE,Retained
+S5_1,double,haven_labelled|vctrs_vctr|double,,"5. Danmark kan selv bestemme rentens størrelse, hvis vi tilslutter os den fælles mønt? Er det rigtigt eller forkert?",F8.0,,,TRUE,Retained
+S6_1,double,haven_labelled|vctrs_vctr|double,,"6. Danmark kan selv bestemme skatteniveauet, hvis vi tilslutter os den fælles mønt? Er det rigtigt eller forkert?",F8.0,,,TRUE,Retained
+S7_1,double,haven_labelled|vctrs_vctr|double,,"7. Hvis vi stemmer ja ved folkeafstemningen den 28. september, vil den fælles mønt så være i omløb i Danmark fra år 2001, 2004, 2005 eller 2007?",F8.0,,,TRUE,Retained
+S8_1,double,haven_labelled|vctrs_vctr|double,,"8. Hvis Danmark tilslutter sig den fælles mønt, vil den danske nationalbank så blive nedlagt, fortsætte stort set som i dag, eller bliver den en del af den Europæiske Centralbank?",F8.0,,,TRUE,Retained
+S9_1,double,haven_labelled|vctrs_vctr|double,,9. Vil euro-mønter få en national side?,F8.0,,,TRUE,Retained
+S10_1,double,haven_labelled|vctrs_vctr|double,,"10. Er Danmark med i et valuta-samarbejde i dag, hvor landene hjælper hinanden ved uro på valutamarkedet?",F8.0,,,TRUE,Retained
+S11_1_1,double,haven_labelled|vctrs_vctr|double,,Folkebevægelsen mod unionen,F8.0,,,TRUE,Retained
+S11_2_1,double,haven_labelled|vctrs_vctr|double,,Junibevægelsen,F8.0,,,TRUE,Retained
+S11_3_1,double,haven_labelled|vctrs_vctr|double,,Socialdemokratiet,F8.0,,,TRUE,Retained
+S11_4_1,double,haven_labelled|vctrs_vctr|double,,Det Radikale Venstre,F8.0,,,TRUE,Retained
+S11_5_1,double,haven_labelled|vctrs_vctr|double,,Det Konservative Folkeparti,F8.0,,,TRUE,Retained
+S11_6_1,double,haven_labelled|vctrs_vctr|double,,CentrumDemokraterne,F8.0,,,TRUE,Retained
+S11_7_1,double,haven_labelled|vctrs_vctr|double,,Socialistisk Folkeparti,F8.0,,,TRUE,Retained
+S11_8_1,double,haven_labelled|vctrs_vctr|double,,Dansk Folkeparti,F8.0,,,TRUE,Retained
+S11_9_1,double,haven_labelled|vctrs_vctr|double,,Kristeligt Folkeparti,F8.0,,,TRUE,Retained
+S11_10_1,double,haven_labelled|vctrs_vctr|double,,Venstre - Danmarks Liberale Parti,F8.0,,,TRUE,Retained
+S11_11_1,double,haven_labelled|vctrs_vctr|double,,Fremskridtspartiet,F8.0,,,TRUE,Retained
+S11_12_1,double,haven_labelled|vctrs_vctr|double,,Enhedslisten,F8.0,,,TRUE,Retained
+S11_13_1,double,haven_labelled|vctrs_vctr|double,,Frihed 2000,F8.0,,,TRUE,Retained
+S12A_1,double,haven_labelled|vctrs_vctr|double,,12a. Borgere som dig selv ikke har indflydelse på Folketingets og Regeringens beslutninger?,F8.0,,,TRUE,Retained
+S12B_1,double,haven_labelled|vctrs_vctr|double,,12b. Borgere som dig selv ikke har indflydelse på EUs beslutninger?,F8.0,,,TRUE,Retained
+S12C_1,double,haven_labelled|vctrs_vctr|double,,12c. Borgere som dig selv er kvalificeret til at deltage i en debat om euroen?,F8.0,,,TRUE,Retained
+S12D_1,double,haven_labelled|vctrs_vctr|double,,"12d. Borgere som dig selv har en mening om politik, som er værd at lytte til?",F8.0,,,TRUE,Retained
+S12E_1,double,haven_labelled|vctrs_vctr|double,,"12e. Manglende viden er grunden til, at andre borgere har en anden opfattelse af politik end dig selv?",F8.0,,,TRUE,Retained
+S12F_1,double,haven_labelled|vctrs_vctr|double,,12f. Andre borgere har gode argumenter for at have en anderledes opfattelse af politik end du selv har?,F8.0,,,TRUE,Retained
+S13A_1,double,haven_labelled|vctrs_vctr|double,,13a. I hvor høj grad føler du dig velinformeret om euroen?,F8.0,,,TRUE,Retained
+S13B_1,double,haven_labelled|vctrs_vctr|double,,13b. I hvor høj grad følger du med i den politiske debat om euroen?,F8.0,,,TRUE,Retained
+S13C_1,double,haven_labelled|vctrs_vctr|double,,13c. I hvor høj grad er du politisk interesseret?,F8.0,,,TRUE,Retained
+S13D_1,double,haven_labelled|vctrs_vctr|double,,13d. I hvor høj grad har du tillid til danske politikere?,F8.0,,,TRUE,Retained
+S14_1,double,haven_labelled|vctrs_vctr|double,,"14. I din omgangskreds sker det så ofte, nu og da eller aldrig, at I taler om politiske forhold?",F8.0,,,TRUE,Retained
+S15_1,double,haven_labelled|vctrs_vctr|double,,"15. Hvis du blev opfordret til at stille op på en liste til Europa-parlamentet, Folketinget, amts- eller kommunalbestyrelse ville du sige ja, overveje det eller sige nej?",F8.0,,,TRUE,Retained
+S16_1,double,haven_labelled|vctrs_vctr|double,,"16. I politik tales der ofte om venstre og højre. Hvor vil du placere dig selv på en skala, hvor 0 er mest venstreorienteret og 10 er mest højreorienteret?-Politisk skala",F8.0,,,TRUE,Retained
+S17_1,double,haven_labelled|vctrs_vctr|double,,"17. Hvilket parti ville du stemme på, hvis der var folketingsvalg i morgen?",F8.0,,,TRUE,Retained
+S18A_1,double,haven_labelled|vctrs_vctr|double,,A siger,F8.0,,,TRUE,Retained
+S18B_1,double,haven_labelled|vctrs_vctr|double,,B siger,F8.0,,,TRUE,Retained
+S18C_1,double,haven_labelled|vctrs_vctr|double,,C siger,F8.0,,,TRUE,Retained
+S19_1,double,haven_labelled|vctrs_vctr|double,,"19. Hvis du skulle vælge mellem A, B eller C´s holdninger, hvem er du så mest enig med?",F8.0,,,TRUE,Retained
+S20_1_1,double,haven_labelled|vctrs_vctr|double,,Emnet interesserer mig,F8.0,,,TRUE,Retained
+S20_2_1,double,haven_labelled|vctrs_vctr|double,,Intervieweren overbeviste mig,F8.0,,,TRUE,Retained
+S20_3_1,double,haven_labelled|vctrs_vctr|double,,Det er min pligt som borger at deltage i sådanne arrangementer,F8.0,,,TRUE,Retained
+S20_4_1,double,haven_labelled|vctrs_vctr|double,,Jeg havde ikke vigtigere ting at tage mig til,F8.0,,,TRUE,Retained
+S20_5_1,double,haven_labelled|vctrs_vctr|double,,Muligheden for at komme ud og møde nye mennesker,F8.0,,,TRUE,Retained
+S20_6_1,double,haven_labelled|vctrs_vctr|double,,Muligheden for at møde en række danske politikere,F8.0,,,TRUE,Retained
+S20_7_1,double,haven_labelled|vctrs_vctr|double,,Muligheden for at lære noget om euroen og euro-samarbejdet,F8.0,,,TRUE,Retained
+S20_8_1,double,haven_labelled|vctrs_vctr|double,,At få lejlighed til at diskutere med almindelige mennesker som mig selv,F8.0,,,TRUE,Retained
+S20_9_1,double,haven_labelled|vctrs_vctr|double,,Gaven eller muligheden for at vinde en rejse,F8.0,,,TRUE,Retained
+S20_10_1,double,haven_labelled|vctrs_vctr|double,,Muligheden for at komme i fjernsynet,F8.0,,,TRUE,Retained
+S20_11_1,double,haven_labelled|vctrs_vctr|double,,Muligheden for at opleve arrangementet på nærmeste hold,F8.0,,,TRUE,Retained
+S20_12_1,double,haven_labelled|vctrs_vctr|double,,Andet,F8.0,,,TRUE,Retained
+S20AND_1,character,character,,"20. Andet, beskriv venligst",A255,,,TRUE,Retained
+S21_1,double,haven_labelled|vctrs_vctr|double,,21. Hvilket af ovenstående forhold var det vigtigste for dit tilsagn om deltagelse?,F8.0,,,TRUE,Retained
+S22_1,double,haven_labelled|vctrs_vctr|double,,"22. Hvor grundigt læste du oplysningsmaterialet, som du fik tilsendt før folkehøringen?",F8.0,,,TRUE,Retained
+S23A_1,double,haven_labelled|vctrs_vctr|double,,23a. Det var for omfattende,F8.0,,,TRUE,Retained
+S23B_1,double,haven_labelled|vctrs_vctr|double,,23b. Det var overfladisk,F8.0,,,TRUE,Retained
+S23C_1,double,haven_labelled|vctrs_vctr|double,,23c. Jeg fik ny viden om emnet,F8.0,,,TRUE,Retained
+S23D_1,double,haven_labelled|vctrs_vctr|double,,23d. Jeg savnede eksempler,F8.0,,,TRUE,Retained
+S23E_1,double,haven_labelled|vctrs_vctr|double,,23e. Det var politisk unuanceret,F8.0,,,TRUE,Retained
+S23F_1,double,haven_labelled|vctrs_vctr|double,,23f. Det var spændende,F8.0,,,TRUE,Retained
+S23G_1,double,haven_labelled|vctrs_vctr|double,,23g. Det var skrevet i et svært sprog,F8.0,,,TRUE,Retained
+S23H_1,double,haven_labelled|vctrs_vctr|double,,"23h. Der stod ikke noget, som jeg ikke vidste i forvejen",F8.0,,,TRUE,Retained
+S24_1,double,haven_labelled|vctrs_vctr|double,,"24. Synes du, at såvel ja-sidens som nej-sidens argumenter i forhold til euroen blev tilgodeset i oplysningsmaterialet?",F8.0,,,TRUE,Retained
+S25A_1,double,haven_labelled|vctrs_vctr|double,,25a. Talt med andre om politik,F8.0,,,TRUE,Retained
+S25B_1,double,haven_labelled|vctrs_vctr|double,,25b. Læst om politik i aviser,F8.0,,,TRUE,Retained
+S25C_1,double,haven_labelled|vctrs_vctr|double,,25c. Set nyhedsudsendelser på TV,F8.0,,,TRUE,Retained
+S25D_1,double,haven_labelled|vctrs_vctr|double,,25d. Hørt nyhedsudsendelser i radio,F8.0,,,TRUE,Retained
+S25E_1,double,haven_labelled|vctrs_vctr|double,,25e. Benytte internettet til at finde information om euroen,F8.0,,,TRUE,Retained
+S25F_1,double,haven_labelled|vctrs_vctr|double,,25f. Læst kampagnemateriale fra partier og bevægelser,F8.0,,,TRUE,Retained
+S26_1,double,haven_labelled|vctrs_vctr|double,,26. Har du ændret holdning på et eller flere punkter til euro-spørgsmålet siden telefoninterviewet?,F8.0,,,TRUE,Retained
+S27_1,character,character,,27. Hvad er det vigtigste tema for din stillingtagen til euroen?,A254,,,TRUE,Retained
+S28_1,character,character,,"28. Til sidst. Vil du beskrive med egne ord, hvad du synes, der har kendetegnet debatten om euroen de sidste par måneder?",A255,,,TRUE,Retained

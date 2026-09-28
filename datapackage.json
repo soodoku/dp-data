@@ -572,6 +572,86 @@
           {
             "name": "timing_evidence",
             "type": "string"
+          },
+          {
+            "name": "original_survey_wave",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "analysis_survey_waves",
+      "path": "metadata/analysis_survey_waves.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "study_id",
+            "type": "string"
+          },
+          {
+            "name": "wave_instance_id",
+            "type": "string"
+          },
+          {
+            "name": "original_survey_wave",
+            "type": "string"
+          },
+          {
+            "name": "wave",
+            "type": "string"
+          },
+          {
+            "name": "wave_role",
+            "type": "string"
+          },
+          {
+            "name": "temporal_order",
+            "type": "number"
+          },
+          {
+            "name": "mode",
+            "type": "string"
+          },
+          {
+            "name": "timing_status",
+            "type": "string"
+          },
+          {
+            "name": "date_start",
+            "type": "date"
+          },
+          {
+            "name": "date_end",
+            "type": "date"
+          },
+          {
+            "name": "availability",
+            "type": "string"
+          },
+          {
+            "name": "battery_scope",
+            "type": "string"
+          },
+          {
+            "name": "source_path",
+            "type": "string"
+          },
+          {
+            "name": "source_fields",
+            "type": "string"
+          },
+          {
+            "name": "timing_evidence",
+            "type": "string"
           }
         ]
       }

@@ -1,0 +1,427 @@
+source_column,source_value,value_label
+S1_1,1,"For, dansk deltagelse i den fælles mønt"
+S1_1,2,"Imod, dansk deltagelse i den fælles mønt"
+S1_1,3,stemmer blankt
+S1_1,4,Ikke stemme
+S1_1,5,Ved ikke / Har du ikke besluttet dig
+S1B_1,1,"For, dansk deltagelse i den fælles mønt"
+S1B_1,2,"Imod, dansk deltagelse i den fælles mønt"
+S1B_1,3,Ved ikke
+S2_1,1,Meget usandsynligt
+S2_1,2,Usandsynligt
+S2_1,3,Hverken eller
+S2_1,4,Sandsynligt
+S2_1,5,Meget sandsynligt
+S2_1,6,Ved ikke
+S3A_1,1,Helt enig
+S3A_1,2,Delvis enig
+S3A_1,3,Hverken/ eller
+S3A_1,4,Delvis uenig
+S3A_1,5,Helt uenig
+S3A_1,6,Ved ikke
+S3B_1,1,Helt enig
+S3B_1,2,Delvis enig
+S3B_1,3,Hverken/ eller
+S3B_1,4,Delvis uenig
+S3B_1,5,Helt uenig
+S3B_1,6,Ved ikke
+S3C_1,1,Helt enig
+S3C_1,2,Delvis enig
+S3C_1,3,Hverken/ eller
+S3C_1,4,Delvis uenig
+S3C_1,5,Helt uenig
+S3C_1,6,Ved ikke
+S3D_1,1,Helt enig
+S3D_1,2,Delvis enig
+S3D_1,3,Hverken/ eller
+S3D_1,4,Delvis uenig
+S3D_1,5,Helt uenig
+S3D_1,6,Ved ikke
+S3E_1,1,Helt enig
+S3E_1,2,Delvis enig
+S3E_1,3,Hverken/ eller
+S3E_1,4,Delvis uenig
+S3E_1,5,Helt uenig
+S3E_1,6,Ved ikke
+S3F_1,1,Helt enig
+S3F_1,2,Delvis enig
+S3F_1,3,Hverken/ eller
+S3F_1,4,Delvis uenig
+S3F_1,5,Helt uenig
+S3F_1,6,Ved ikke
+S3G_1,1,Helt enig
+S3G_1,2,Delvis enig
+S3G_1,3,Hverken/ eller
+S3G_1,4,Delvis uenig
+S3G_1,5,Helt uenig
+S3G_1,6,Ved ikke
+S3H_1,1,Helt enig
+S3H_1,2,Delvis enig
+S3H_1,3,Hverken/ eller
+S3H_1,4,Delvis uenig
+S3H_1,5,Helt uenig
+S3H_1,6,Ved ikke
+S3I_1,1,Helt enig
+S3I_1,2,Delvis enig
+S3I_1,3,Hverken/ eller
+S3I_1,4,Delvis uenig
+S3I_1,5,Helt uenig
+S3I_1,6,Ved ikke
+S3J_1,1,Helt enig
+S3J_1,2,Delvis enig
+S3J_1,3,Hverken/ eller
+S3J_1,4,Delvis uenig
+S3J_1,5,Helt uenig
+S3J_1,6,Ved ikke
+S3K_1,1,Helt enig
+S3K_1,2,Delvis enig
+S3K_1,3,Hverken/ eller
+S3K_1,4,Delvis uenig
+S3K_1,5,Helt uenig
+S3K_1,6,Ved ikke
+S3L_1,1,Helt enig
+S3L_1,2,Delvis enig
+S3L_1,3,Hverken/ eller
+S3L_1,4,Delvis uenig
+S3L_1,5,Helt uenig
+S3L_1,6,Ved ikke
+S3M_1,1,Helt enig
+S3M_1,2,Delvis enig
+S3M_1,3,Hverken/ eller
+S3M_1,4,Delvis uenig
+S3M_1,5,Helt uenig
+S3M_1,6,Ved ikke
+S3N_1,1,Helt enig
+S3N_1,2,Delvis enig
+S3N_1,3,Hverken/ eller
+S3N_1,4,Delvis uenig
+S3N_1,5,Helt uenig
+S3N_1,6,Ved ikke
+S3O_1,1,Helt enig
+S3O_1,2,Delvis enig
+S3O_1,3,Hverken/ eller
+S3O_1,4,Delvis uenig
+S3O_1,5,Helt uenig
+S3O_1,6,Ved ikke
+S3P_1,1,Helt enig
+S3P_1,2,Delvis enig
+S3P_1,3,Hverken/ eller
+S3P_1,4,Delvis uenig
+S3P_1,5,Helt uenig
+S3P_1,6,Ved ikke
+S3Q_1,1,Helt enig
+S3Q_1,2,Delvis enig
+S3Q_1,3,Hverken/ eller
+S3Q_1,4,Delvis uenig
+S3Q_1,5,Helt uenig
+S3Q_1,6,Ved ikke
+S3R_1,1,Helt enig
+S3R_1,2,Delvis enig
+S3R_1,3,Hverken/ eller
+S3R_1,4,Delvis uenig
+S3R_1,5,Helt uenig
+S3R_1,6,Ved ikke
+S4_1,1,Det er rigtigt (korrekt svar)
+S4_1,2,Det er forkert
+S4_1,3,Ved ikke
+S5_1,1,Det er rigtigt
+S5_1,2,Det er forkert (korrekt svar)
+S5_1,3,Ved ikke
+S6_1,1,Det er rigtigt (korrekt svar)
+S6_1,2,Det er forkert
+S6_1,3,Ved ikke
+S7_1,1,2001
+S7_1,2,2004 (korrekt svar)
+S7_1,3,2005
+S7_1,4,2007
+S7_1,5,Ved ikke
+S8_1,1,Bliver nedlagt
+S8_1,2,Fortsætte stort set som i dag
+S8_1,3,Bliver en del af den Europæiske Centralbank (korrekt svar)
+S8_1,4,Ved ikke
+S9_1,1,Ja (korrekt svar)
+S9_1,2,Nej
+S9_1,3,Ved ikke
+S10_1,1,Ja (korrekt svar)
+S10_1,2,Nej
+S10_1,3,Ved ikke
+S11_1_1,1,Anbefaler et Ja
+S11_1_1,2,Anbefaler et Nej
+S11_1_1,3,Ved ikke
+S11_2_1,1,Anbefaler et Ja
+S11_2_1,2,Anbefaler et Nej
+S11_2_1,3,Ved ikke
+S11_3_1,1,Anbefaler et Ja
+S11_3_1,2,Anbefaler et Nej
+S11_3_1,3,Ved ikke
+S11_4_1,1,Anbefaler et Ja
+S11_4_1,2,Anbefaler et Nej
+S11_4_1,3,Ved ikke
+S11_5_1,1,Anbefaler et Ja
+S11_5_1,2,Anbefaler et Nej
+S11_5_1,3,Ved ikke
+S11_6_1,1,Anbefaler et Ja
+S11_6_1,2,Anbefaler et Nej
+S11_6_1,3,Ved ikke
+S11_7_1,1,Anbefaler et Ja
+S11_7_1,2,Anbefaler et Nej
+S11_7_1,3,Ved ikke
+S11_8_1,1,Anbefaler et Ja
+S11_8_1,2,Anbefaler et Nej
+S11_8_1,3,Ved ikke
+S11_9_1,1,Anbefaler et Ja
+S11_9_1,2,Anbefaler et Nej
+S11_9_1,3,Ved ikke
+S11_10_1,1,Anbefaler et Ja
+S11_10_1,2,Anbefaler et Nej
+S11_10_1,3,Ved ikke
+S11_11_1,1,Anbefaler et Ja
+S11_11_1,2,Anbefaler et Nej
+S11_11_1,3,Ved ikke
+S11_12_1,1,Anbefaler et Ja
+S11_12_1,2,Anbefaler et Nej
+S11_12_1,3,Ved ikke
+S11_13_1,1,Anbefaler et Ja
+S11_13_1,2,Anbefaler et Nej
+S11_13_1,3,Ved ikke
+S12A_1,1,Helt enig
+S12A_1,2,Delvis enig
+S12A_1,3,Hverken enig eller uenig
+S12A_1,4,Delvis uenig
+S12A_1,5,Helt uenig
+S12A_1,6,Ved ikke
+S12B_1,1,Helt enig
+S12B_1,2,Delvis enig
+S12B_1,3,Hverken enig eller uenig
+S12B_1,4,Delvis uenig
+S12B_1,5,Helt uenig
+S12B_1,6,Ved ikke
+S12C_1,1,Helt enig
+S12C_1,2,Delvis enig
+S12C_1,3,Hverken enig eller uenig
+S12C_1,4,Delvis uenig
+S12C_1,5,Helt uenig
+S12C_1,6,Ved ikke
+S12D_1,1,Helt enig
+S12D_1,2,Delvis enig
+S12D_1,3,Hverken enig eller uenig
+S12D_1,4,Delvis uenig
+S12D_1,5,Helt uenig
+S12D_1,6,Ved ikke
+S12E_1,1,Helt enig
+S12E_1,2,Delvis enig
+S12E_1,3,Hverken enig eller uenig
+S12E_1,4,Delvis uenig
+S12E_1,5,Helt uenig
+S12E_1,6,Ved ikke
+S12F_1,1,Helt enig
+S12F_1,2,Delvis enig
+S12F_1,3,Hverken enig eller uenig
+S12F_1,4,Delvis uenig
+S12F_1,5,Helt uenig
+S12F_1,6,Ved ikke
+S13A_1,1,I meget høj grad
+S13A_1,2,I høj grad
+S13A_1,3,I nogen grad
+S13A_1,4,I ringe grad
+S13A_1,5,Slet ikke
+S13A_1,6,Ved ikke
+S13B_1,1,I meget høj grad
+S13B_1,2,I høj grad
+S13B_1,3,I nogen grad
+S13B_1,4,I ringe grad
+S13B_1,5,Slet ikke
+S13B_1,6,Ved ikke
+S13C_1,1,I meget høj grad
+S13C_1,2,I høj grad
+S13C_1,3,I nogen grad
+S13C_1,4,I ringe grad
+S13C_1,5,Slet ikke
+S13C_1,6,Ved ikke
+S13D_1,1,I meget høj grad
+S13D_1,2,I høj grad
+S13D_1,3,I nogen grad
+S13D_1,4,I ringe grad
+S13D_1,5,Slet ikke
+S13D_1,6,Ved ikke
+S14_1,1,Ofte
+S14_1,2,Nu og da
+S14_1,3,Aldrig
+S14_1,4,Ved ikke
+S15_1,1,Ja
+S15_1,2,Overveje det
+S15_1,3,Nej
+S15_1,4,Ved ikke
+S16_1,0,0 (Venstre)
+S16_1,1,1
+S16_1,2,2
+S16_1,3,3
+S16_1,4,4
+S16_1,5,5
+S16_1,6,6
+S16_1,7,7
+S16_1,8,8
+S16_1,9,9
+S16_1,10,10 (Højre)
+S16_1,99,Ved ikke
+S17_1,1,Socialdemokratiet
+S17_1,2,Det Radikale Venstre
+S17_1,3,Det Konservative Folkeparti
+S17_1,4,CentrumDemokraterne
+S17_1,5,Socialistisk Folkeparti
+S17_1,6,Dansk Folkeparti
+S17_1,7,Kristeligt Folkeparti
+S17_1,8,Venstre - Danmarks Liberale Parti
+S17_1,9,Fremskridtspartiet
+S17_1,10,Enhedslisten
+S17_1,11,Frihed 2000
+S17_1,12,Andre
+S17_1,13,Ville stemme blankt
+S17_1,14,Vil ikke stemme
+S17_1,15,Ved ikke
+S17_1,16,Vil ikke svare
+S18A_1,1,Helt enig
+S18A_1,2,Delvis enig
+S18A_1,3,Hverken enig eller uenig
+S18A_1,4,Delvis uenig
+S18A_1,5,Helt uenig
+S18A_1,6,Ved ikke
+S18B_1,1,Helt enig
+S18B_1,2,Delvis enig
+S18B_1,3,Hverken enig eller uenig
+S18B_1,4,Delvis uenig
+S18B_1,5,Helt uenig
+S18B_1,6,Ved ikke
+S18C_1,1,Helt enig
+S18C_1,2,Delvis enig
+S18C_1,3,Hverken enig eller uenig
+S18C_1,4,Delvis uenig
+S18C_1,5,Helt uenig
+S18C_1,6,Ved ikke
+S19_1,1,Mest enig med A
+S19_1,2,Mest enig med B
+S19_1,3,Mest enig med C
+S19_1,4,Ikke enig med nogen af dem
+S19_1,5,Ved ikke
+S20_1_1,0,nej
+S20_1_1,1,ja
+S20_2_1,0,nej
+S20_2_1,1,ja
+S20_3_1,0,nej
+S20_3_1,1,ja
+S20_4_1,0,nej
+S20_4_1,1,ja
+S20_5_1,0,nej
+S20_5_1,1,ja
+S20_6_1,0,nej
+S20_6_1,1,ja
+S20_7_1,0,nej
+S20_7_1,1,ja
+S20_8_1,0,nej
+S20_8_1,1,ja
+S20_9_1,0,nej
+S20_9_1,1,ja
+S20_10_1,0,nej
+S20_10_1,1,ja
+S20_11_1,0,nej
+S20_11_1,1,ja
+S20_12_1,0,nej
+S20_12_1,1,ja
+S21_1,1,Emnet interesserer mig
+S21_1,2,Intervieweren overbeviste mig
+S21_1,3,Det er min pligt som borger at deltage i sådanne arrangement
+S21_1,4,Jeg havde ikke vigtigere ting at tage mig til
+S21_1,5,Muligheden for at komme ud og møde nye mennesker
+S21_1,6,Muligheden for at møde en række danske politikere
+S21_1,7,Muligheden for at lære noget om euroen og euro-samarbejdet
+S21_1,8,At få lejlighed til at diskutere med almindelige mennesker s
+S21_1,9,Gaven eller muligheden for at vinde en rejse
+S21_1,10,Muligheden for at komme i fjernsynet
+S21_1,11,Muligheden for at opleve arrangementet på nærmeste hold
+S21_1,12,Andet
+S22_1,1,Jeg har ikke læst det
+S22_1,2,Jeg har læst mindre end halvdelen af materialet
+S22_1,3,Jeg har læst omtrent halvdelen af materialet
+S22_1,4,Jeg har læst mere end halvdelen af materialet
+S22_1,5,Jeg har læst hele materialet
+S23A_1,1,Helt enig
+S23A_1,2,Delvis enig
+S23A_1,3,Hverken/ eller
+S23A_1,4,Delvis uenig
+S23A_1,5,Helt uenig
+S23A_1,6,Ved ikke
+S23B_1,1,Helt enig
+S23B_1,2,Delvis enig
+S23B_1,3,Hverken/ eller
+S23B_1,4,Delvis uenig
+S23B_1,5,Helt uenig
+S23B_1,6,Ved ikke
+S23C_1,1,Helt enig
+S23C_1,2,Delvis enig
+S23C_1,3,Hverken/ eller
+S23C_1,4,Delvis uenig
+S23C_1,5,Helt uenig
+S23C_1,6,Ved ikke
+S23D_1,1,Helt enig
+S23D_1,2,Delvis enig
+S23D_1,3,Hverken/ eller
+S23D_1,4,Delvis uenig
+S23D_1,5,Helt uenig
+S23D_1,6,Ved ikke
+S23E_1,1,Helt enig
+S23E_1,2,Delvis enig
+S23E_1,3,Hverken/ eller
+S23E_1,4,Delvis uenig
+S23E_1,5,Helt uenig
+S23E_1,6,Ved ikke
+S23F_1,1,Helt enig
+S23F_1,2,Delvis enig
+S23F_1,3,Hverken/ eller
+S23F_1,4,Delvis uenig
+S23F_1,5,Helt uenig
+S23F_1,6,Ved ikke
+S23G_1,1,Helt enig
+S23G_1,2,Delvis enig
+S23G_1,3,Hverken/ eller
+S23G_1,4,Delvis uenig
+S23G_1,5,Helt uenig
+S23G_1,6,Ved ikke
+S23H_1,1,Helt enig
+S23H_1,2,Delvis enig
+S23H_1,3,Hverken/ eller
+S23H_1,4,Delvis uenig
+S23H_1,5,Helt uenig
+S23H_1,6,Ved ikke
+S24_1,1,Oplysningsmaterialet favoriserede i meget høj grad ja-siden
+S24_1,2,Oplysningsmaterialet favoriserede i høj grad ja-siden
+S24_1,3,Oplysningsmaterialet tilgodeså begge sider i debatten
+S24_1,4,Oplysningsmaterialet favoriserede i høj grad nej-siden
+S24_1,5,Oplysningsmaterialet favoriserede i meget høj grad nej-siden
+S24_1,6,Ved ikke
+S25A_1,1,Mindre grad
+S25A_1,2,Som sædvanlig
+S25A_1,3,Højere grad
+S25A_1,4,Ved ikke
+S25B_1,1,Mindre grad
+S25B_1,2,Som sædvanlig
+S25B_1,3,Højere grad
+S25B_1,4,Ved ikke
+S25C_1,1,Mindre grad
+S25C_1,2,Som sædvanlig
+S25C_1,3,Højere grad
+S25C_1,4,Ved ikke
+S25D_1,1,Mindre grad
+S25D_1,2,Som sædvanlig
+S25D_1,3,Højere grad
+S25D_1,4,Ved ikke
+S25E_1,1,Mindre grad
+S25E_1,2,Som sædvanlig
+S25E_1,3,Højere grad
+S25E_1,4,Ved ikke
+S25F_1,1,Mindre grad
+S25F_1,2,Som sædvanlig
+S25F_1,3,Højere grad
+S25F_1,4,Ved ikke
+S26_1,1,Ja
+S26_1,2,Nej
+S26_1,3,Ved ikke
