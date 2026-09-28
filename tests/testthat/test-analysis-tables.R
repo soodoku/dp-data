@@ -1,5 +1,6 @@
 source(file.path(root, "R", "analysis_poll_metadata.R"))
 source(file.path(root, "R", "analysis_tables.R"))
+source(file.path(root, "R", "analysis_attitudes.R"))
 
 test_that("absent questionnaires stay missing while observed zero stays zero", {
   items <- tibble::tibble(
@@ -30,7 +31,7 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   manifest <- readr::read_csv(
     file.path(directory, "manifest.csv"), show_col_types = FALSE
   )
-  expect_equal(nrow(manifest), 6L)
+  expect_equal(nrow(manifest), 8L)
   expect_true(all(file.exists(project_path(manifest$path))))
   expect_equal(
     vapply(project_path(manifest$path), digest::digest,

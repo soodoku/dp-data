@@ -1,0 +1,175 @@
+poll_id,attitude_id,source_column,minimum,maximum,label,evidence
+btp-2007,att_pre_q5a,PRE_Q5a,1,5,PRE - Favor: Election day a national holiday,data/btp-2007/codebook.pdf; data/btp-2007/value-labels.csv
+btp-2007,att_pre_q5b,PRE_Q5b,1,5,PRE - Favor: Election day registration,data/btp-2007/codebook.pdf; data/btp-2007/value-labels.csv
+btp-2007,att_pre_q5c,PRE_Q5c,1,5,PRE - Favor: Allowing felons to vote,data/btp-2007/codebook.pdf; data/btp-2007/value-labels.csv
+btp-2007,att_pre_q5d,PRE_Q5d,1,5,PRE - Favor: Direct election of president,data/btp-2007/codebook.pdf; data/btp-2007/value-labels.csv
+btp-2007,att_pre_q5e,PRE_Q5e,1,5,PRE - Favor: Fining people who do not vote,data/btp-2007/codebook.pdf; data/btp-2007/value-labels.csv
+btp-2007,att_pre_q9a,PRE_Q9a,1,5,PRE - Favor: Proportional Representation,data/btp-2007/codebook.pdf; data/btp-2007/value-labels.csv
+btp-2007,att_pre_q9b,PRE_Q9b,1,5,PRE - Favor: Easier to get 3rd Party candidates on ballot,data/btp-2007/codebook.pdf; data/btp-2007/value-labels.csv
+btp-2007,att_pre_q9c,PRE_Q9c,1,5,PRE - Favor: Term limits for Congress,data/btp-2007/codebook.pdf; data/btp-2007/value-labels.csv
+btp-2007,att_pre_q9d,PRE_Q9d,1,5,PRE - Favor: Nonpartisan commissions for redistricting,data/btp-2007/codebook.pdf; data/btp-2007/value-labels.csv
+btp-2007,att_pre_q9e,PRE_Q9e,1,5,PRE - Favor: All presidential primaries on same day,data/btp-2007/codebook.pdf; data/btp-2007/value-labels.csv
+btp-2007,att_pre_q12a,PRE_Q12a,1,5,PRE - Favor: Require more public broadcasting,data/btp-2007/codebook.pdf; data/btp-2007/value-labels.csv
+btp-2007,att_pre_q12b,PRE_Q12b,1,5,PRE - Favor: Free TV air time to candidates,data/btp-2007/codebook.pdf; data/btp-2007/value-labels.csv
+btp-2007,att_pre_q12c,PRE_Q12c,1,5,PRE - Favor: Public funds for access to Internet,data/btp-2007/codebook.pdf; data/btp-2007/value-labels.csv
+btp-2007,att_pre_q12d,PRE_Q12d,1,5,PRE - Favor: Public funds for non-partisan civic education,data/btp-2007/codebook.pdf; data/btp-2007/value-labels.csv
+btp-online-primaries-2004,att_b1q25,b1q25,1,7, now we'd like you to think about some important issues. some people think the f,data/btp-online-primaries-2004/questionnaires.pdf; data/btp-online-primaries-2004/value-labels.csv
+btp-online-primaries-2004,att_b1q27,b1q27,1,7, next think about the federal budget. some people believe that we should spend m,data/btp-online-primaries-2004/questionnaires.pdf; data/btp-online-primaries-2004/value-labels.csv
+btp-online-primaries-2004,att_b1q29,b1q29,1,7, here's the next issue. some people feel the united states should intervene mili,data/btp-online-primaries-2004/questionnaires.pdf; data/btp-online-primaries-2004/value-labels.csv
+btp-online-primaries-2004,att_b1q31,b1q31,1,7, here's the next one. some people feel that we should pursue increased free trad,data/btp-online-primaries-2004/questionnaires.pdf; data/btp-online-primaries-2004/value-labels.csv
+california-whats-next-2011,att_q2,q2,0,10,2 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  INCREASING THE NUMBER OF LEGIS,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q3,q3,0,10,3 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  MAKING THE STATE LEGISLATURE A,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q4,q4,0,10,4 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  INCREASING ASSEMBLY TERMS FROM,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q5,q5,0,10,5 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  ALLOWING INITIATIVE PROPONENTS,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q6,q6,0,10,6 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  ALLOWING INITIATIVE PROPONENTS,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q7,q7,0,10,7 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  ALLOWING THE LEGISLATURE TO EN,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q8,q8,0,10,8 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  PUTTING ALL INITIATIVE DEALING,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q9,q9,0,10,9 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  ALLOWING SIGNATURES FOR INITIA,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q10,q10,0,10,10 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  REQUIRING THAT INITIATIVES SA,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q11,q11,0,10,11 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  PROHIBITING INITIATIVES THAT,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q12,q12,0,10,12 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  REQUIRING ELECTION CAMPAIGN C,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q13,q13,0,10,13 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  ALLOWING VOTERS TO RANK THEIR,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q14,q14,0,10,14 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  PERMITTING PETITIONS FOR BALL,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q15,q15,0,10,15 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  REDUCING THE NUMBER OF BILLS,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q16,q16,0,10,16 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  REDUCING THE LENGTH OF THE ST,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q17,q17,0,10,17 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  APPOINTING ALL CALIFORNIA JUD,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q18,q18,0,10,18 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  APPLYING THE SALES TAX TO SER,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q19,q19,0,10,19 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  FLATTENING THE STATE INCOME T,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q20,q20,0,10,20 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  TAXING NON-RESIDENTIAL PROPER,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q21,q21,0,10,21 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  INCREASING THE VEHICLE LICENS,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q22,q22,0,10,22 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  REQUIRING THAT CHANGES IN COM,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q23,q23,0,10,23 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  REQUIRING THE SAME 55 PERCENT,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q24,q24,0,10,24 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  ASSIGNING RESPONSIBILITY FOR,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q25,q25,0,10,25 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  GIVING CONTROL OF THE FUNDING,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q26,q26,0,10,26 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  MAKING IT EASIER FOR LOCAL GO,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q27,q27,0,10,27 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  ALLOW LOCAL GOVERNMENTS TO RA,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+california-whats-next-2011,att_q28,q28,0,10,28 HOW DESIRABLE OR UNDESIRABLE IS THE FOLLOWING?  ESTABLISHING A PROCESS TO CON,data/california-whats-next-2011/questionnaire-pre.pdf; data/california-whats-next-2011/value-labels.csv
+michigan-2009,att_q3,q3,1,7,Taxes versus public spending,data/michigan-2009/questionnaire-pre.pdf
+michigan-2009,att_q6,q6,1,7,Government action versus economic recovery on unemployment,data/michigan-2009/questionnaire-pre.pdf
+michigan-2009,att_q10,q10,1,7,Assistance by need versus job seeking,data/michigan-2009/questionnaire-pre.pdf
+michigan-2009,att_q9,q9,1,5,Amount spent on assistance to poor people,data/michigan-2009/questionnaire-pre.pdf
+michigan-2009,att_q11a,q11a,1,5,Spending on job creation,data/michigan-2009/questionnaire-pre.pdf
+michigan-2009,att_q11b,q11b,1,5,Spending on job training,data/michigan-2009/questionnaire-pre.pdf
+michigan-2009,att_q11c,q11c,1,5,Spending on public schools,data/michigan-2009/questionnaire-pre.pdf
+michigan-2009,att_q11d,q11d,1,5,Benefits for poor families,data/michigan-2009/questionnaire-pre.pdf
+northern-ireland-2007,att_t1q11a,t1q11a,0,10,t1:q11a having both academic schools and technical/vocational schools,data/northern-ireland-2007/variables.csv; data/northern-ireland-2007/value-labels.csv
+northern-ireland-2007,att_t1q11b,t1q11b,0,10,"t1:q11b having a system of specialist schools, each developing at least one area",data/northern-ireland-2007/variables.csv; data/northern-ireland-2007/value-labels.csv
+northern-ireland-2007,att_t1q11c,t1q11c,0,10,"t1:q11c having a system of all-ability schools, all providing the same wide curr",data/northern-ireland-2007/variables.csv; data/northern-ireland-2007/value-labels.csv
+northern-ireland-2007,att_t1q11d,t1q11d,0,10,t1:q11d schools sharing facilities like a technology lab or a sixth form,data/northern-ireland-2007/variables.csv; data/northern-ireland-2007/value-labels.csv
+northern-ireland-2007,att_t1q11e,t1q11e,0,10,t1:q11e schools sharing a campus while retaining distinct identities,data/northern-ireland-2007/variables.csv; data/northern-ireland-2007/value-labels.csv
+northern-ireland-2007,att_t1q11f,t1q11f,0,10,t1:q11f children travelling to neighbouring schools to be taught subjects unavai,data/northern-ireland-2007/variables.csv; data/northern-ireland-2007/value-labels.csv
+northern-ireland-2007,att_t1q11g,t1q11g,0,10,t1:q11g teachers travelling to neighbouring schools to teach subjects unavailabl,data/northern-ireland-2007/variables.csv; data/northern-ireland-2007/value-labels.csv
+northern-ireland-2007,att_t1q15a,t1q15a,0,10,"t1:q15a retaining all types of schools currently in the omagh area (controlled,",data/northern-ireland-2007/variables.csv; data/northern-ireland-2007/value-labels.csv
+northern-ireland-2007,att_t1q15b,t1q15b,0,10,"t1:q15b establishing jointly managed schools, with management shared between the",data/northern-ireland-2007/variables.csv; data/northern-ireland-2007/value-labels.csv
+northern-ireland-2007,att_t1q15c,t1q15c,0,10,"t1:q15c increasing the number of formal integrated schools, in which all the par",data/northern-ireland-2007/variables.csv; data/northern-ireland-2007/value-labels.csv
+northern-ireland-2007,att_t1q15d,t1q15d,0,10,t1:q15d keeping the traditional pattern of ages 11-18 and some ages 11-16 school,data/northern-ireland-2007/variables.csv; data/northern-ireland-2007/value-labels.csv
+northern-ireland-2007,att_t1q15e,t1q15e,0,10,t1:q15e having most schools 11-16 and converting one or two schools into 16-18 s,data/northern-ireland-2007/variables.csv; data/northern-ireland-2007/value-labels.csv
+northern-ireland-2007,att_t1q15f,t1q15f,0,10,t1:q15f switching to a system of junior high schools (11-14) and senior high sch,data/northern-ireland-2007/variables.csv; data/northern-ireland-2007/value-labels.csv
+northern-ireland-2007,att_t1q15g,t1q15g,0,10,"t1:q15g schools combining primary and post-primary pupils (for example, ages 7-1",data/northern-ireland-2007/variables.csv; data/northern-ireland-2007/value-labels.csv
+america-in-one-room-2019,att_q2a,Q2A,0,10,[Reduce the number of refuges allowed to resettle the US.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q2b,Q2B,0,10,[Increase personnel to process asylum seekers' claims faster.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q2c,Q2C,0,10,[Provide aid to reduce poverty and violence in Central America.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q2d,Q2D,0,10,[Increase the number of visas for skilled workers to move to the US.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q2e,Q2E,0,10,"[Increase the number of visas for low-skilled workers to move to the US for industries that need them, like agriculture and service.] How strongly would you oppose or favor these?",data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q2f,Q2F,0,10,[Require employers to use the E-verify computer system to confirm workers' eligibility.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q2g,Q2G,0,10,"[First-time violators of immigration laws should only be expelled, not subject to criminal punishment.] How strongly would you oppose or favor these?",data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q2h,Q2H,0,10,"[Continue DACA, the Deferred Action for Childhood Arrivals program, which protects people who were brought to the US as children when their parents entered the country illegally.] How strongly would you oppose or favor these?",data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q2i,Q2I,0,10,[Undocumented immigrants should be forced to return to their home countries before applying to legally come to the US to live and work permanently.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q3a,Q3A,0,10,[The US should commit to the 2014 Paris Agreement to combat climate change.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q3b,Q3B,0,10,[The US should go beyond the Paris Agreement and aim for more significant cutbacks on greenhouse gas emissions.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q3c,Q3C,0,10,[The US should use taxes or other market incentives to achieve emissions reductions.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q3d,Q3D,0,10,[A Green New Deal to commit to major investments in infrastructure and renewable energy.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q3e,Q3E,0,10,[The US should expand oil and gas production.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q3f,Q3F,0,10,[Allow expansion of oil and gas production on federal lands previously dedicated to wildlife preservation.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q3g,Q3G,0,10,[The U.S. government should facilitate fracking throughout the US.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q3h,Q3H,0,10,"[The US should mandate zero carbon emissions for cars, trucks, and buses.] How strongly would you oppose or favor these?",data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q4a,Q4A,0,10,[Capital gains -- income earned when an investment that has increased in value is sold -- should be taxed the same as ordinary wage income.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q4b,Q4B,0,10,"[The US should impose a wealth tax on the richest taxpayers, requiring them to pay a small portion of their wealth on an annual basis.] How strongly would you oppose or favor these?",data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q4c,Q4C,0,10,"[The US should repeal the estate tax, which currently taxes deceased individuals worth at least $11 million and deceased couples worth at least $22 million.] How strongly would you oppose or favor these?",data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q4d,Q4D,0,10,"[When taxpayers earn more than $2 million per year, they should pay a higher tax rate on additional income.] How strongly would you oppose or favor these?",data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q4e,Q4E,0,10,"[Expand the Earned Income Tax Credit, which provides a benefit to low-income workers, to more middle-class workers.] How strongly would you oppose or favor these?",data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q4f,Q4F,0,10,[Lower the corporate tax rate from 21% to 15%.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q4g,Q4G,0,10,[Increase federal minimum wage from $7.25/hr. to $15/hr.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q4h,Q4H,0,10,[The government should cover the cost of college tuition at public universities for all students who could not otherwise afford it.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q4i,Q4I,0,10,[The government should fund a bond for each child born that will accumulate in value until the child turns 18 to then become usable for higher education or other essentials for a start in life.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q4j,Q4J,0,10,"[The government should give cash grants of $1,000/month to all adults at least eighteen-years-old.] How strongly would you oppose or favor these?",data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q5a,Q5A,0,10,[The Affordable Care Act should be repealed.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q5b,Q5B,0,10,[Repeal the Affordable Care Act and replace with grants to state Governments to create their own systems.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q5c,Q5C,0,10,[The federal subsidies in the Affordable Care Act that help the poor should be increased.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q5d,Q5D,0,10,[The federal subsidies in the Affordable Care Act that help the middle class should be expanded to include more people.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q5e,Q5E,0,10,[People should have reasonable access to health insurance without discrimination against pre-existing conditions.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q5f,Q5F,0,10,"[Everybody should be able to buy a public plan like Medicare, the current plan for seniors over 65.] How strongly would you oppose or favor these?",data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q5g,Q5G,0,10,"[People aged fifty-five and older should have the option of purchasing Medicare, instead of a private insurance plan.] How strongly would you oppose or favor these?",data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q5h,Q5H,0,10,[People should be automatically enrolled in a more generous version of Medicare.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q5i,Q5I,0,10,[Allow Medicare to negotiate drug prices.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q5j,Q5J,0,10,[The US government should make changes to the patent system to allow generic drugs to come on the market more quickly.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q6a,Q6A,0,10,"[The US should rejoin the Trans-Pacific Partnership, a trading agreement between 12 countries excluding China.] How strongly would you oppose or favor these?",data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q6b,Q6B,0,10,[The U.S. should increase tariffs on Chinese goods.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q6c,Q6C,0,10,[The US should tighten sanctions on Russia.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q6d,Q6D,0,10,[The US should reaffirm its commitment to defend any NATO ally attacked by a hostile force.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q6e,Q6E,0,10,[The US should enhance its military presence in the Asia Pacific to prevent aggression by China.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q6f,Q6F,0,10,[The US should recommit to the Iran Nuclear Agreement.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q6g,Q6G,0,10,[Presidents should be required to obtain explicit congressional approval for sending US troops into combat situations.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q6h,Q6H,0,10,[The U.S. should intervene abroad when it is necessary to prevent genocide.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q6i,Q6I,0,10,[The U.S. should increase military spending by up to five percent per year for the next few years to meet rising global challenges and ensure readiness.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+america-in-one-room-2019,att_q6j,Q6J,0,10,[The US should use diplomacy and financial support to promote democracy and human rights throughout the world.] How strongly would you oppose or favor these?,data/america-in-one-room-2019/codebooks/a1r_codebook.tab
+a1r-climate-2021,att_q2a,Q2A,0,10,Q2A,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q2b,Q2B,0,10,Q2B,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q2c,Q2C,0,10,Q2C,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q3a,Q3A,0,10,Q3A,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q3b,Q3B,0,10,Q3B,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q4a,Q4A,0,10,Q4A,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q4b,Q4B,0,10,Q4B,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q4c,Q4C,0,10,Q4C,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q4d,Q4D,0,10,Q4D,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q4e,Q4E,0,10,Q4E,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5a,Q5A,0,10,Q5A,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5b,Q5B,0,10,Q5B,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5d,Q5D,0,10,Q5D,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5e,Q5E,0,10,Q5E,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5f,Q5F,0,10,Q5F,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5g,Q5G,0,10,Q5G,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5h,Q5H,0,10,Q5H,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5i,Q5I,0,10,Q5I,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5j,Q5J,0,10,Q5J,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5k,Q5K,0,10,Q5K,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5l,Q5L,0,10,Q5L,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5m,Q5M,0,10,Q5M,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5n,Q5N,0,10,Q5N,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5o,Q5O,0,10,Q5O,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5p,Q5P,0,10,Q5P,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5q,Q5Q,0,10,Q5Q,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5r,Q5R,0,10,Q5R,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5s,Q5S,0,10,Q5S,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5t,Q5T,0,10,Q5T,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5u,Q5U,0,10,Q5U,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q5v,Q5V,0,10,Q5V,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q6a,Q6A,0,10,Q6A,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q6b,Q6B,0,10,Q6B,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q6c,Q6C,0,10,Q6C,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q6d,Q6D,0,10,Q6D,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q6e,Q6E,0,10,Q6E,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q6f,Q6F,0,10,Q6F,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q7a,Q7A,0,10,Q7A,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q7b,Q7B,0,10,Q7B,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q7c,Q7C,0,10,Q7C,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q7d,Q7D,0,10,Q7D,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q7e,Q7E,0,10,Q7E,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q8a,Q8A,0,10,Q8A,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q8b,Q8B,0,10,Q8B,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q8c,Q8C,0,10,Q8C,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q8d,Q8D,0,10,Q8D,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q8e,Q8E,0,10,Q8E,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q9a,Q9A,0,10,Q9A,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q9b,Q9B,0,10,Q9B,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q9c,Q9C,0,10,Q9C,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q9d,Q9D,0,10,Q9D,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q9e,Q9E,0,10,Q9E,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q9f,Q9F,0,10,Q9F,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q10a,Q10A,0,10,Q10A,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q10b,Q10B,0,10,Q10B,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q10c,Q10C,0,10,Q10C,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q10d,Q10D,0,10,Q10D,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q10e,Q10E,0,10,Q10E,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q10f,Q10F,0,10,Q10F,data/a1r-climate-2021/reports/climate_results.pdf
+a1r-climate-2021,att_q10g,Q10G,0,10,Q10G,data/a1r-climate-2021/reports/climate_results.pdf
