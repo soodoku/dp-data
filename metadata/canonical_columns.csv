@@ -203,21 +203,23 @@ analysis_scores,scale,string,FALSE,FALSE,proportion_correct or standardized_inde
 analysis_items,question_display,string,FALSE,FALSE,Question text normalized for readable display
 analysis_items,answer_choices_display,string,TRUE,FALSE,Answer labels normalized for readable display
 analysis_items,correct_answer_display,string,FALSE,FALSE,Correct answer label normalized for readable display
-california_report_responses,poll_id,string,FALSE,FALSE,Stable poll identifier
-california_report_responses,respondent_id,string,FALSE,TRUE,Original source ID or prefixed arrival roster number for records lacking ID
-california_report_responses,source_row,int32,FALSE,FALSE,One-based source survey row
-california_report_responses,cohort_basis,string,FALSE,FALSE,Participant flag or arrival roster only
-california_report_responses,wave,int32,FALSE,TRUE,Arrival wave 2 or departure wave 3
-california_report_responses,item_number,int32,FALSE,TRUE,Question number 27 through 34
-california_report_responses,source_column,string,FALSE,FALSE,Wave-specific source column
-california_report_responses,raw_code,float64,TRUE,FALSE,Source answer code including non-substantive values
-california_report_responses,correct,int32,FALSE,FALSE,Correct answer indicator with missing and non-substantive answers scored zero
-california_report_scores,poll_id,string,FALSE,FALSE,Stable poll identifier
-california_report_scores,respondent_id,string,FALSE,TRUE,Original source ID or prefixed arrival roster number for records lacking ID
-california_report_scores,source_row,int32,FALSE,FALSE,One-based source survey row
-california_report_scores,cohort_basis,string,FALSE,FALSE,Participant flag or arrival roster only
-california_report_scores,wave,int32,FALSE,TRUE,Arrival wave 2 or departure wave 3
-california_report_scores,n_items,int32,FALSE,FALSE,Fixed denominator of eight factual questions
-california_report_scores,n_answered,int32,FALSE,FALSE,Number with a recorded source answer
-california_report_scores,n_correct,int32,FALSE,FALSE,Number answered correctly
-california_report_scores,score_zero_filled,float64,FALSE,FALSE,Number correct divided by eight
+california_knowledge_responses,poll_id,string,FALSE,FALSE,Stable poll identifier
+california_knowledge_responses,respondent_id,string,FALSE,TRUE,Original participant source ID
+california_knowledge_responses,source_row,int32,FALSE,FALSE,One-based source survey row
+california_knowledge_responses,paired,bool,FALSE,FALSE,Both arrival and departure questionnaires are observed
+california_knowledge_responses,wave_present,bool,FALSE,FALSE,At least one answer in the full wave questionnaire
+california_knowledge_responses,wave,int32,FALSE,TRUE,Arrival wave 2 or departure wave 3
+california_knowledge_responses,item_number,int32,FALSE,TRUE,Question number 27 through 34
+california_knowledge_responses,source_column,string,FALSE,FALSE,Wave-specific source column
+california_knowledge_responses,raw_code,float64,TRUE,FALSE,Source answer code including non-substantive values
+california_knowledge_responses,correct,int32,TRUE,FALSE,Correctness with item nonresponse scored zero within an observed questionnaire; absent wave remains null
+california_knowledge_scores,poll_id,string,FALSE,FALSE,Stable poll identifier
+california_knowledge_scores,respondent_id,string,FALSE,TRUE,Original participant source ID
+california_knowledge_scores,source_row,int32,FALSE,FALSE,One-based source survey row
+california_knowledge_scores,paired,bool,FALSE,FALSE,Both arrival and departure questionnaires are observed
+california_knowledge_scores,wave_present,bool,FALSE,FALSE,At least one answer in the full wave questionnaire
+california_knowledge_scores,wave,int32,FALSE,TRUE,Arrival wave 2 or departure wave 3
+california_knowledge_scores,n_items,int32,FALSE,FALSE,Fixed denominator of eight factual questions
+california_knowledge_scores,n_answered,int32,FALSE,FALSE,Number with a recorded source answer
+california_knowledge_scores,n_correct,int32,TRUE,FALSE,Number answered correctly; null for absent questionnaire
+california_knowledge_scores,score_zero_filled,float64,TRUE,FALSE,Number correct divided by eight within an observed questionnaire; absent wave remains null

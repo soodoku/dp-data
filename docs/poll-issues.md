@@ -1967,18 +1967,30 @@ the retained material does not explain why its implied denominator is 417
 while the report and event record describe 412 attendees. The five extra
 records have arrival roster numbers 131, 180, 388, 398, and 484, with no `id`
 or observed participation flag; together they contribute 17 correct arrival
-answers and no correct departure answers. Their status needs independent
-verification.
+answers and no correct departure answers. All five have no answers across
+all 132 departure questionnaire fields and no departure roster or group number.
+Following the user's participation rule, they are nonparticipants, not
+participants with zero departure knowledge. They are excluded from the new
+participant measure. `audit/california_report_reproduction.csv` preserves the
+417-record arithmetic solely to explain the published table.
 
 The maintained five-item battery instead compares phone T1 `q37:q41` with
 departure `t3q27:t3q31` for 396 paired people. T1's additional factual
 questions differ from the arrival/departure items 32–34. The eight-item
 arrival/departure result is therefore a separate measure and should not be
 substituted into the historical five-item or 396-person group aggregate. It
-is now exported separately as `california_report_responses` and
-`california_report_scores`, with the cohort basis and source row retained for
-each record. Its item keys and exact wording are in
-`metadata/california_report_knowledge_items.csv`.
+is now exported as `california_knowledge_responses` and
+`california_knowledge_scores` for the 412 flagged participants, retaining
+source rows, full-questionnaire wave availability, and paired membership. The
+16 participants without arrival questionnaires have missing arrival scores;
+absence of an entire questionnaire is not scored as incorrect answers. The
+396 with both questionnaires score 1,900/3,168 (60.0%) at arrival and
+2,430/3,168 (76.7%) at departure, a 16.7-point increase. All 412 have some
+filled departure questionnaire fields; two have no recorded answers in the
+eight-item battery, but are not confused with the five wholly absent departure
+questionnaires. Within an observed questionnaire, item nonresponse retains the
+fixed-denominator zero scoring convention. The item keys and exact departure
+wording are in `metadata/california_knowledge_items.csv`.
 
 ## Europolis 2009 — europolis-2009
 
