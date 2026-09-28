@@ -228,3 +228,17 @@ analysis_participants,education,float64,TRUE,FALSE,Harmonized schooling: 0 below
 analysis_participants,minority,float64,TRUE,FALSE,Source-derived historical minority indicator; missing where no reviewed harmonization exists
 analysis_participants,extremity,float64,TRUE,FALSE,Historical baseline attitude-extremity index; missing where no reviewed harmonization exists
 analysis_participants,read_briefing,float64,TRUE,FALSE,Reported briefing reading before discussions on a zero-to-one ordinal scale; elicited after deliberation
+analysis_attitudes,poll_id,string,FALSE,TRUE,Baseline policy attitude; see docs/analysis-tables.md
+analysis_attitudes,attitude_id,string,FALSE,TRUE,Baseline policy attitude; see docs/analysis-tables.md
+analysis_attitudes,source_column,string,FALSE,FALSE,Baseline policy attitude; see docs/analysis-tables.md
+analysis_attitudes,minimum,float64,FALSE,FALSE,Baseline policy attitude; see docs/analysis-tables.md
+analysis_attitudes,maximum,float64,FALSE,FALSE,Baseline policy attitude; see docs/analysis-tables.md
+analysis_attitudes,label,string,FALSE,FALSE,Baseline policy attitude; see docs/analysis-tables.md
+analysis_attitudes,evidence,string,FALSE,FALSE,Baseline policy attitude; see docs/analysis-tables.md
+analysis_attitudes,construction,string,FALSE,FALSE,Baseline policy attitude; see docs/analysis-tables.md
+analysis_attitude_responses,poll_id,string,FALSE,TRUE,Baseline policy attitude; see docs/analysis-tables.md
+analysis_attitude_responses,source_dataset,string,FALSE,TRUE,Baseline policy attitude; see docs/analysis-tables.md
+analysis_attitude_responses,respondent_id,string,FALSE,TRUE,Baseline policy attitude; see docs/analysis-tables.md
+analysis_attitude_responses,attitude_id,string,FALSE,TRUE,Baseline policy attitude; see docs/analysis-tables.md
+analysis_attitude_responses,wave,string,FALSE,TRUE,Baseline policy attitude; see docs/analysis-tables.md
+analysis_attitude_responses,value,float64,TRUE,FALSE,Baseline policy attitude; see docs/analysis-tables.md

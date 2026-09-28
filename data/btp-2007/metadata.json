@@ -96,7 +96,7 @@
       "field": "population",
       "value": "U.S. adults age 18+; matched subsample of PollingPoint panel",
       "reference_id": "us-btp-2007-cdd-btp-2007-codebook",
-      "source_locator": "Sample Selection and Weighting Methodology, PDF pages 4–5",
+      "source_locator": "Sample Selection and Weighting Methodology, PDF pages 3–5",
       "status": "reported",
       "notes": null
     },
@@ -105,7 +105,7 @@
       "field": "recruitment",
       "value": "PollingPoint panel recruited through telephone, mail and web advertising; sample matching to national adult frame; random treatment allocation probabilities 0.64/0.36",
       "reference_id": "us-btp-2007-cdd-btp-2007-codebook",
-      "source_locator": "Sample Selection and Weighting Methodology, PDF pages 4–5",
+      "source_locator": "Sample Selection and Weighting Methodology, PDF pages 3–5",
       "status": "reported",
       "notes": "Panel itself expressly not nationally representative before subsample matching; distinguish this from probability household recruitment."
     },
@@ -114,7 +114,7 @@
       "field": "participants",
       "value": "6,695 baseline interviews; 1,963 agreed; 1,423 eligible after scheduling/technical restrictions; 771 attended at least one session; 326 attended all four sessions",
       "reference_id": "us-btp-2007-cdd-btp-2007-codebook",
-      "source_locator": "Study Description and sample-flow table, PDF pages 3–5",
+      "source_locator": "Study Description and sample-flow table, PDF pages 3–4",
       "status": "conflicting",
       "notes": "Study Description says 1,427 received materials; the next section reports 1,423 eligible. Preserve that discrepancy. The sample-flow table explains that the event report’s 301 deliberators are four-session attendees who completed the post-survey."
     },
@@ -123,7 +123,7 @@
       "field": "participants",
       "value": "Baseline primary control 1816; reading-control 599; post-only control 828. Reported results use smaller completed-analysis control totals",
       "reference_id": "us-btp-2007-cdd-btp-2007-codebook",
-      "source_locator": "Sample Selection and Weighting Methodology, PDF pages 4–5",
+      "source_locator": "Sample Selection and Weighting Methodology, PDF pages 3–5",
       "status": "reported",
       "notes": "Initial/survey-assignment universes, not all completed followups."
     },
@@ -132,7 +132,7 @@
       "field": "participants",
       "value": "301 of the 326 four-session attendees completed the post-survey; 695 treatment respondents completed a post-survey across all attendance levels. Control post-survey completions: 1,034 primary, 318 reading-control, and 828 post-only.",
       "reference_id": "us-btp-2007-cdd-btp-2007-codebook",
-      "source_locator": "Sample-flow table, PDF page 5",
+      "source_locator": "Sample-flow table, PDF page 4 (printed page 3)",
       "status": "reported",
       "notes": "This explains the event report’s 301-deliberator analysis count; 326 is the attendance count, while 301 requires the post-survey."
     }
