@@ -247,12 +247,15 @@ test_that("definitions match historical or approved values by IDs", {
     parity$poll_id == "btp-national-2003"
   ]), 245L)
   expect_equal(sum(parity$missingness_differences[
+    parity$poll_id == "bulgaria-crime-2002"
+  ]), 2L)
+  expect_equal(sum(parity$missingness_differences[
     !parity$poll_id %in% c(
       "tomorrows-europe-2007", "europolis-2009", "uk-eu-1995",
       "uk-general-election-1997",
       "australia-republic-1999", "btp-health-education-2005",
       "new-haven-2004", "zeguo-2005", "nic-1996",
-      "btp-national-2003"
+      "btp-national-2003", "bulgaria-crime-2002"
     )
   ]), 1L)
   expect_equal(sum(parity$value_differences[

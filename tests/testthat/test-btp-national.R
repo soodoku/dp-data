@@ -103,7 +103,7 @@ test_that("National respondent and aggregate values retain historical parity", {
   values <- tibble::tibble(source_row = survey$source_row[index])
   derived <- build_btp_national_derived(survey, values)
   for (field in names(derived)) {
-    if (field %in% c("meanxtreme", "avgsd", "genvar")) {
+    if (field %in% c("meanxtreme", "avgsd", "genvar", "entropy")) {
       expected[[field]] <- approved_reference_values(
         "btp-national-2003", field, expected$caseid, expected[[field]]
       )

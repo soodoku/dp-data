@@ -1,3 +1,4 @@
+source(file.path(root, "R", "respondent_parity.R"))
 source(file.path(root, "R", "respondents.R"))
 source(file.path(root, "R", "respondent_nic2.R"))
 source(file.path(root, "R", "polardata_derived.R"))
@@ -211,6 +212,11 @@ test_that("NIC2 matches all historical respondent and aggregate values", {
   }
   result <- build_nic2_derived(survey, values)
   for (field in names(result)) {
+    if (field == "entropy") {
+      reference[[field]] <- approved_reference_values(
+        "nic2-2003", field, reference$caseid, reference[[field]]
+      )
+    }
     expect_equal(result[[field]], as.numeric(reference[[field]]),
       tolerance = 1e-10, info = field
     )

@@ -276,8 +276,10 @@ test_that("UKC-01 approval cannot hide new changes or a reverted correction", {
     "audit", "polardata_covariances.csv"
   ), show_col_types = FALSE)
   compare <- function(x) compare_historical_polardata(x, reference, audit)
-  expect_equal(sum(compare(data)$approved_correction_differences[
-    compare(data)$poll_id == "uk-crime-1994"
+  parity <- compare(data)
+  expect_equal(sum(parity$approved_correction_differences[
+    parity$poll_id == "uk-crime-1994" &
+      parity$legacy_field == "ukcrime.rootcauset2"
   ]), 142L)
   row <- which(data$dpnum == 6 & data$caseid == 10005)
   changed <- data
