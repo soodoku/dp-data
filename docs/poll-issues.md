@@ -1913,6 +1913,58 @@ The 20 `genvar` differences against the frozen historical deposit are
 preexisting singular covariance exceptions documented in X-09, not effects of
 this correction.
 
+### BTPHE-04: Elementary-school achievement-gap answer key conflicts with briefing (proposed)
+
+Both the [pre-questionnaire](../data/btp-health-education-2005/questionnaire-pre.pdf)
+and [post-questionnaire](../data/btp-health-education-2005/questionnaire-post.pdf),
+PDF page 4, ask Q17: “Has the gap between minority students and white students
+in math and reading tests at the elementary school level been …?” The choices
+are increasing the last few years, staying about the same, decreasing the last
+few years, and couldn't say. The source value labels map these to codes 1, 2,
+3 and 7, respectively. The present key credits code 1, increasing, in both
+waves; the archived `btp05.R` does the same. The stored `q17r` and `q17postr`
+correctness fields also credit only code 1. This discrepancy is inherited from
+the original scoring, rather than introduced by the modernized script.
+
+The poll's [education briefing](../data/btp-health-education-2005/briefing-materials/btp2005-education.pdf),
+PDF page 2, discusses minority pupils catching up with white pupils in reading
+and mathematics at the elementary-school level. Its next section also describes
+the gap closing slightly according to recent studies. The population, subjects
+and school level match Q17. The discussion disputes whether No Child Left Behind
+caused the improvement; that causal disagreement does not reverse the stated
+direction of the gap. Thus code 3, decreasing, is the supported answer from the
+participant briefing. The [event results report](../data/btp-health-education-2005/reports/btp-health-education-results.pdf)
+does not print Q17 correctness percentages or a separate answer key, so it
+cannot independently settle this discrepancy. Its 360-person online cohort
+attended at least three sessions; the maintained source includes all 454
+attendees. Do not force report denominators onto the current sample.
+
+| Q17 response | Baseline, 454 people | Departure, 454 people |
+|---|---:|---:|
+| Increasing, current keyed answer | 151 | 138 |
+| Decreasing, proposed keyed answer | 90 | 142 |
+| Correctness cells that would flip | 241 | 280 |
+
+Changing only this key would flip 521 item cells across 345 distinct people.
+The six-item score mean would move from 37.481645% to 35.242291% at baseline
+and from 41.005874% to 41.152717% at departure; mean gain would move from
+3.524229 to 5.910426 percentage points. These are candidate effects, not
+adopted outputs. Keep the same 454-person cohort, six-item denominator,
+missingness policy and other five keys. All derived group and poll quantities
+must continue to be calculated centrally after respondent scoring.
+
+The separate 3,298-record calibration source has 933 increasing and 704
+decreasing answers. Under its existing available-item scoring rule, changing
+Q17 alone affects 1,637 calibration scores. Its poll descriptor would move from
+0.337037593126297 (after BTPHE-03) to 0.32561150193214417. The available-item
+rule, all-missing zero convention and historical float storage are unchanged
+in this comparison. Other dependent individual, group and poll fields must
+be compared in a full build if the key change is approved.
+
+**Recommendation:** use code 3 at both waves and in the calibration battery,
+consistent with the briefing, subject to the user's poll-specific approval.
+No key or generated output has been changed for this proposal.
+
 ## BTP Online Primaries 2004 — btp-online-primaries-2004
 
 **BTPOP-01 — existing missingness and membership qualifications.** `expcont == 1`
