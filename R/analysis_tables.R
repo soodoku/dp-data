@@ -492,6 +492,7 @@ build_analysis_tables <- function() {
     analysis_control_items(sources, catalog)
   )
   scores <- analysis_scores(items, participants)
+  attitudes <- analysis_attitudes(participants)
   stopifnot(
     !anyDuplicated(participants[c(
       "poll_id", "source_dataset", "respondent_id"
@@ -519,6 +520,8 @@ build_analysis_tables <- function() {
       participants, -"score_wave1", -"score_wave2"
     ),
     analysis_item_responses = items,
-    analysis_scores = scores
+    analysis_scores = scores,
+    analysis_attitudes = attitudes$catalog,
+    analysis_attitude_responses = attitudes$responses
   )
 }

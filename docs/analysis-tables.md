@@ -115,3 +115,35 @@ join either long table to `analysis_items` by `(poll_id, item_id)` and to
 `analysis_polls` by `poll_id`. The build rejects duplicate keys, orphan item
 responses, and item IDs absent from the catalog. `output/analysis/manifest.csv`
 records row counts, schemas, and SHA-256 hashes for every table.
+
+## Baseline policy attitudes
+
+`analysis_attitudes.parquet` defines policy measures and their source columns,
+response bounds, labels, and evidence. `analysis_attitude_responses.parquet`
+has one row per canonical participant, measure, and wave, keyed by `poll_id`,
+`source_dataset`, `respondent_id`, `attitude_id`, and `wave`. The initial release
+covers baseline (`t1`) in 28 polls, including control respondents where present.
+Values are on a 0–1 scale; refusal, no-opinion, and out-of-range codes are missing.
+No missing answer is assigned the scale midpoint.
+
+The 21 earlier polls retain the existing policy indices and their documented
+construction in the rebuilt polardata. The seven additional polls use individual
+policy responses listed in `metadata/attitude_items.csv`: BTP 2007's 14 reform
+proposals; four policy self-placements in the online primaries; California's 27
+reform proposals; Michigan's eight spending and assistance preferences; Northern
+Ireland's 14 school-organization preferences; 47 America in One Room proposals;
+and 60 climate and energy proposals. Candidate/party placements, factual answers,
+perceptions of other respondents' views, and evaluations of deliberation are not
+included. These are policy measures, not a common latent attitude scale; the
+number and aggregation of measures differ across polls. Source endpoints determine
+scaling, not the observed sample minimum and maximum.
+
+Downstream analyses can calculate extremity as the average absolute distance from
+0.5 across observed measures. For group disagreement, calculate the mean absolute
+difference across distinct respondent pairs separately for each measure, then
+average across measures with at least two observed responses. Select the analysis
+participants before calculating group measures. This statistic is unchanged by
+reversing a scale and does not require an invertible covariance matrix. Average
+within-group standard deviation is an alternative dispersion summary. Both
+summaries give each available policy measure equal weight within its poll; neither
+requires assigning a shared left–right direction to different policy questions.
