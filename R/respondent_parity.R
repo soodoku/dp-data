@@ -1,5 +1,35 @@
 approved_reference_values <- function(poll_id, field, caseid, historical,
                                       tolerance = 1e-10) {
+  if (field == "entropy") {
+    approved <- readr::read_csv(project_path(
+      "audit", "corrections", "shared-entropy", "approved_values.csv"
+    ), show_col_types = FALSE)
+    approved <- approved[approved$poll_id == poll_id &
+                           approved$legacy_field == field, ]
+    expected_caseid <- if (poll_id == "btp-general-election-2004") {
+      union(caseid, btp_ge_approved_inclusions()$historical_caseid)
+    } else {
+      caseid
+    }
+    stopifnot(
+      nrow(approved) > 0L, length(caseid) == length(historical),
+      !anyDuplicated(approved$caseid), !anyDuplicated(caseid),
+      setequal(as.character(expected_caseid), as.character(approved$caseid))
+    )
+    approved <- approved[match(as.character(caseid),
+                               as.character(approved$caseid)), ]
+    stopifnot(
+      !anyNA(approved$historical_present),
+      all(approved$historical_present | is.na(approved$historical_value)),
+      identical(is.na(historical), is.na(approved$historical_value)),
+      identical(is.infinite(historical),
+                is.infinite(approved$historical_value)),
+      all(abs(historical - approved$historical_value) <= tolerance,
+        na.rm = TRUE
+      )
+    )
+    return(approved$approved_value)
+  }
   if (poll_id == "nic-1996" && field %in% c(
     "ppage", "meanage", "mode", "attextreme2", "avgsd2"
   )) {
@@ -26,7 +56,8 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
   reviewed <- list(
     "bulgaria-crime-2002" = list(
       fields = c("bulgaria.bulgaria.t1q19", "bulgaria.bulgaria.t2q19",
-                 "attextreme", "meanxtreme", "avgsd", "genvar", "highinc"),
+                 "attextreme", "meanxtreme", "avgsd", "genvar", "highinc",
+                 "minority", "pminority"),
       rows = 278L
     ),
     "europolis-2009" = list(fields = c("ppage", "meanage"), rows = 348L),
@@ -70,7 +101,7 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     ),
     "btp-health-education-2005" = list(
       fields = c(
-        "female", "pfemale", "varfemale", "sdfemale", "pfemale_ind", "entropy",
+        "female", "pfemale", "varfemale", "sdfemale", "pfemale_ind",
         "t1know", "t1knowr", "t1knowcor", "t2know", "t1knowrcor", "t2knowr",
         "knowgain", "knowgain2", "logpk", "tobitpk", "knowgainr", "knowgainr2",
         "meant1know", "meant1knowr", "meant1know_ind", "meant1knowcor",
@@ -83,7 +114,7 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
       fields = c(
         "eu.mil_att_11_12_t3", "eu.free_trade_index_t3",
         "ppage", "educ4", "educ3", "bettered", "vareduc", "sdeduc",
-        "meaned", "meanage", "entropy"
+        "meaned", "meanage"
       ), rows = 344L
     ),
     "cpl-1996" = list(

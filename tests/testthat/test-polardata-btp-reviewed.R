@@ -75,6 +75,9 @@ test_that("US aggregates match except diagnosed singular covariances", {
       match(expected$caseid, ids)
     ])
     actual <- builders[[index]](survey, values)
+    expected$entropy <- approved_reference_values(
+      poll, "entropy", expected$caseid, expected$entropy
+    )
     if (poll == "san-mateo-2008") {
       expected$t1knowlevel <- approved_reference_values(
         poll, "t1knowlevel", expected$caseid, expected$t1knowlevel
@@ -82,7 +85,7 @@ test_that("US aggregates match except diagnosed singular covariances", {
     }
     if (poll == "btp-health-education-2005") {
       for (field in c(
-        "female", "pfemale", "varfemale", "sdfemale", "pfemale_ind", "entropy",
+        "female", "pfemale", "varfemale", "sdfemale", "pfemale_ind",
         "meant1know", "meant1knowr", "meant1know_ind",
         "meant1knowcor", "meant1knowrcor", "meant1knowcor_ind",
         "meant2know", "t1knowlevelcor", "t1knowlevelrcor", "t2knowlevel",

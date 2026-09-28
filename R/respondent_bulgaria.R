@@ -45,6 +45,10 @@ build_bulgaria_individual <- function(
   education <- recode_source_values(survey, "edu", c(1, .66, .33, 0, 0), 0)
   income <- read_source_codes(survey, "incomes", 0:6)
   income <- dplyr::if_else(income == 0, NA_real_, income + 1)
+  ethnicity <- read_source_codes(survey, "ethnos", 0:4)
+  minority <- dplyr::if_else(
+    ethnicity == 0, NA_real_, as.numeric(ethnicity != 1)
+  )
   dplyr::bind_cols(
     dplyr::rename_with(baseline, \(name) paste0(name, "_t1")),
     dplyr::rename_with(post, \(name) paste0(name, "_t2")),
@@ -54,7 +58,7 @@ build_bulgaria_individual <- function(
     tibble::tibble(
       age = read_source_codes(survey, "age_full", 18:100),
       female = as.numeric(read_source_codes(survey, "sex", 1:2) == 2),
-      minority = as.numeric(read_source_codes(survey, "ethnos", 0:4) != 1),
+      minority = minority,
       education_four = education,
       education_three = collapse_historical_education(education),
       higher_education = as.numeric(education >= .66),

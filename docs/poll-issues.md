@@ -1759,11 +1759,55 @@ age/group-mean rows appended; no prior correction values were rewritten.
 `Sgroup` gives the 20 small groups and `CaseID` identifies people. Codes 99, 998,
 and 999 are non-substantive. All eight-item scores and gender match the deposit.
 
-**Next check:** consult [codebook.pdf](../data/btp-2007/codebook.pdf), the fielded
-PRE/POST questions, and the study assignment documentation before treating the
-selection flag as a discussion-group ID or treating attendance as randomized
-assignment. The remaining response arms should be represented in a broader
-schema, not lost because this knowledge build selects one arm.
+The original [codebook.pdf](../data/btp-2007/codebook.pdf), PDF page 4
+(printed page 3), explains the selected cohort: 326 people attended all four
+sessions, and 301 of them completed the post-survey. Across all attendance
+levels, 771 attended at least one discussion and 695 treatment respondents
+completed a post-survey. The published 1,501-row source contains 301 discussion
+participants, 700 primary controls, 200 reading-only controls and 300 post-only
+controls. Thus assignment, attendance and analysis inclusion are distinct;
+`group == 1` is not a census of everyone who attended any discussion.
+
+### BTP07-02: Fielded keys reproduce the weighted report (checked; no correction)
+
+The PRE questionnaire on codebook PDF pages 78–79 (printed pages 77–78) and
+POST questionnaire on PDF pages 88–89 (printed pages 87–88) support all eight
+current Q19–Q26 keys: `3, 2, 3, 3, 2, 4, 2, 2`. These identify five million
+Americans barred from voting because of criminal convictions; gerrymandering
+to ensure one party a majority; approximately 50% presidential-election turnout;
+Australia's compulsory voting; selective-service registration for men aged
+18–25; a majority of Electoral College votes; redistricting every ten years;
+and Iowa/New Hampshire as the traditional earliest primary events. Both waves
+use the same question meanings and choices. There are zero disagreements with
+the author's `PRE_Q19COR:PRE_Q26COR` and `POST_Q19COR:POST_Q26COR` columns across
+all 301 selected people and 4,816 item scores.
+
+Using the source `weight`, the [event report](../data/btp-2007/reports/btp-2007-results.pdf),
+PDF page 2, is reproduced: selective-service knowledge rises from 59.78086% to
+81.07762% (reported 60% to 81%), and compulsory-voting knowledge rises from
+12.56398% to 28.62159% (reported 13% to 29%). The eight-item mean rises from
+43.91037% to 54.68859%, a 10.77822 percentage-point gain (reported 11 points).
+Unweighted means differ because the report uses the source survey weights;
+this is not evidence that the keys or selected cohort are wrong.
+
+CaseID 2392, source row 295, group `4_6`, has all eight POST knowledge answers
+coded 998 (Skipped). It nevertheless answers preceding POST questions and has
+POST start/end timestamps. This is a skipped battery inside an observed
+questionnaire, not an absent questionnaire; preserve the existing fixed-battery
+zero-filled score. All 300 post-only controls have PRE knowledge code 999
+(T2 only group), and none is included in the current participant export.
+
+The full 1,501-row source and selected 301 people contain no nonresponse codes
+in birth year, gender, race, education or political interest. Income is not
+currently exported as a derived measure. Its code 15 is explicitly "Prefer
+not to say" in `value-labels.csv`: 211 source records, including 49 selected
+participants. A future income measure must treat 15 as missing rather than
+as the highest income band. This does not require a change to current outputs.
+
+**Remaining scope:** represent the other response arms and unexported
+demographics in a broader schema while retaining raw codes. There is currently
+no standalone BTP 2007 respondent recoder or `polardata` block; its participant
+battery is built by the adapter in `R/poll_adapters.R`.
 
 ## BTP General Election 2004 — btp-general-election-2004
 
@@ -1940,10 +1984,10 @@ In group 9707, the female share rises from 8/19 = 0.421052632 to 8/18 =
 The resulting female share, variance and SD change for all 35 respondents in
 those two groups; the leave-one-out share changes for 33 observed genders and
 becomes missing for the two unknown genders. The combined group entropy also
-changes for those 35 rows. The existing centralized leave-one-out and entropy
-helpers retain their historical denominator conventions; a separate
-cross-poll review of missing-aware group formulas is needed before changing
-those shared definitions. Case-level old and new values are frozen in
+changed for those 35 rows at the respondent-correction stage. The entropy
+comparison is now superseded by the separately approved shared correction in
+X-03. The leave-one-out helper still retains its historical denominator and
+needs its own assessment. Case-level old and new values from BTPHE-01 are frozen in
 `audit/corrections/btp-health-education-2005/approved_values.csv`.
 
 ### BTPHE-02: Funding index and float storage reproduce the original definition
@@ -2190,7 +2234,7 @@ the 129 index rows, field mappings, respondent answers, scores and aggregate
 numbers were unchanged by that label edit. The separate BGC-04 scale correction
 was subsequently approved and changes the values described above.
 
-### BGC-06: Two unlabelled ethnicity codes become known minority status (proposed)
+### BGC-06: Unlabelled ethnicity remains unknown (approved correction)
 
 The [questionnaire](../data/bulgaria-crime-2002/questionnaire.pdf), Q7 on PDF
 page 2, asks ethnicity and offers four responses: 1 Bulgarian, 2 Turkish,
@@ -2215,22 +2259,24 @@ a different income band and retired status. Those differences mean an ID
 match alone is not a validated identity bridge. ID 1614 is absent from that
 national file. The attendee-return sources are the relevant evidence here.
 
-**Recommendation:** leave the two derived minority flags missing, preserve
+**Approved correction:** leave the two derived minority flags missing, preserve
 raw zero, and leave valid Other code 4 unchanged. This recognizes unknown
 ethnicity without inventing which unrecorded answer was given. All 278 people
 and group memberships remain. Under the existing central mean helper, groups
-5310 and 5316, each containing 17 people, would move from 3/17 minority
+5310 and 5316, each containing 17 people, move from 3/17 minority
 (0.1764705882352941) to 2 known minorities among 16 observed ethnicities
-(0.125). Two person flags and 34 repeated group shares would change.
+(0.125). Two person flags and 34 repeated group shares change.
 
-The current historical entropy helper still uses the full group denominator
-for the binary complement, so its minority component would remain
+Before the separately approved shared correction, the historical entropy
+helper used the full group denominator
+for the binary complement, so the BGC-06 respondent correction alone leaves its minority component at
 0.672294817075638 in both groups. That is not evidence that unknown ethnicity
-has been incorporated correctly into diversity. Missing-aware entropy needs
-one shared cross-poll assessment; do not patch the formula inside this poll's
-recode. This proposal changes only person data and summaries already computed
-by the central step, subject to the user's poll-specific decision. No coding
-change has been applied.
+was incorporated correctly into diversity by the inherited formula. The
+separately approved shared correction in X-03 handles entropy centrally; no
+formula is patched inside this poll's recode. The user approved the respondent correction on 2026-09-27. It changes
+two person flags and 34 group-share cells while preserving all 278 people,
+raw zeros and every prior correction. The shared entropy correction is a
+separate, explicitly authorized change; its comparisons follow in X-03.
 
 ## California 2011 — california-whats-next-2011
 
@@ -3231,6 +3277,55 @@ instructions, retaining raw text and rejecting unknown tokens. `postit` identifi
 people and `group_number` gives 16 groups. The published source is already merged
 `mifin.dta`; reproducing its earlier merge is a separate unresolved task.
 
+### MI-02: Nine shared items and the report's eleven items compare different waves
+
+The [baseline questionnaire](../data/michigan-2009/questionnaire-pre.pdf),
+PDF pages 2 and 4, contains four party-placement items (Q4/Q5 on taxes and
+spending; Q7/Q8 on government intervention against unemployment) and five
+factual items (Q14–Q18). The [departure questionnaire](../data/michigan-2009/questionnaire-post.pdf),
+PDF pages 3–4 and 11, contains the corresponding placement Q10/Q11/Q13/Q14
+and factual Q38–Q42, plus two standard-of-living placement items Q7/Q8.
+Those additional items ask where the Democratic and Republican parties sit
+between government ensuring everyone has a job and a certain standard of
+living (1) and everyone trying to get ahead on their own (7). Correct sides
+are 1–3 for Democrats and 5–7 for Republicans. These two items were collected
+at arrival and departure, not in the telephone baseline.
+
+The [final report](../data/michigan-2009/reports/michigan-final-report.pdf),
+PDF/printed page 13, explicitly marks the standard-of-living pair as
+"Question at arrival, before deliberations." The archived
+`historical-cdd-scripts:legacy/poll_scripts/mi.R` separately defines
+`t1knownet`/`t2knownet`/`t3knownet` using the nine shared items and
+`t2know2`/`t3know2` using eleven arrival/departure items. Its exported battery
+uses the nine-item telephone-baseline/departure comparison. Adding the two
+arrival items to that baseline score would mix measurements from different
+waves; retain the existing battery and represent an eleven-item comparison
+as a separate definition if it is added.
+
+The 310 selected people have unique `postit` values, and none has all nine
+raw baseline or departure knowledge responses missing. Raw factual correct
+counts, in the report's question order, are 81/137/14/34/86 before and
+134/165/25/57/90 after. The fixed-denominator five-item means are
+22.70968% and 30.38710%, reproducing the report's 22.7% and 30.4%.
+The existing nine-item means are 34.15771% and 43.94265%.
+
+Using arrival Q7/Q8 plus the four shared baseline placement items gives a
+six-item placement mean of 54.08602%; the six departure items give 61.82796%
+when missing responses score zero. Equal weighting of the factual and
+placement domain means gives 38.39785% and 46.10753%, consistent with the
+report's overall 38.4% and 46.1%. An equal-weight eleven-item score instead
+gives 39.82405% and 47.53666%. Equal domain weighting is therefore a numerical
+explanation of the published overall index, not a reason to change our
+existing nine-item measure. The report's departure placement mean is 61.9%,
+rather than this zero-filled reconstruction's 61.82796%; its exact item
+missingness/denominator convention remains unverified. Do not describe this
+as an exact reproduction of every reported placement estimate or assume the
+archived eleven-item `rowMeans` definition is the report's overall index.
+
+**Decision:** no scientific correction is justified by the nine-versus-eleven
+count. Keep the current shared-item battery and preserve raw arrival/departure
+answers for a separately defined extension.
+
 ## Denmark Euro 2000 — denmark-euro-2000
 
 **DK-01 — the deposited battery includes baseline-only rows and omits one
@@ -3259,10 +3354,143 @@ also has 359 departure respondents. The contemporary
 reports 364 event participants in its recruitment table, a different count
 from both the available T2 file and the anonymous battery; the event count
 cannot identify the missing or extra rows. No verified discussion-group roster
-is attached. **Next check:** recover the deposited battery's exact source version
-and inclusion rule, then check the [questionnaire](../data/denmark-euro-2000/questionnaire.pdf)
-and component dictionaries before changing eligibility. The 358 exact matches
-do not establish a score comparison for the six nonmatching records.
+is attached. DK-02–04 below complete the questionnaire, dictionary and published
+key checks. The remaining provenance task is to recover the deposited battery's
+exact source version and inclusion rule before changing eligibility. The 358
+exact matches do not establish a score comparison for the six nonmatching
+records; preserve the documented 359 departure interviews.
+
+### DK-02: Independent factual keys and departure estimates agree (checked)
+
+The nine-item battery retains six factual questions and three party-position
+questions. The source dictionaries identify each question by its label and
+meaning; join baseline `delnr` to departure `DELNR`, not source-row position.
+There are 390 unique nonmissing baseline participant numbers and 359 unique
+departure numbers. Every departure number matches exactly one baseline row;
+31 numbered baseline records have no departure record. Preserve the 359-pair
+selection in DK-01; neither the paper's 364 attendees nor the anonymous
+363-row battery supplies identities for additional departure interviews.
+
+The factual keys are independently printed in
+[Deliberative Democracy and the Euro](../data/denmark-euro-2000/papers/deliberative-democracy-euro.pdf),
+Table 9, PDF page 19 / printed page 279, and
+[How Deliberation Makes Better Citizens](../data/denmark-euro-2000/papers/how-deliberation-makes-better-citizens.pdf),
+Table 7, PDF page 15 / printed page 545. The following counts refer to the
+359 paired people. Explicit don't-know answers count as noncorrect in these
+percentages; system missing answers are excluded from the item percentage,
+as distinct from the fixed-denominator respondent index.
+
+| Question meaning | T0 / T2 fields | Correct code / answer | T0 correct / denominator | T2 correct / denominator | T2 percent; paper percent |
+| --- | --- | --- | --- | --- | --- |
+| Denmark could be fined for an excessive fiscal deficit as a monetary-union member | `s_18` / `S4_2` | 1 / true | 148/359 | 284/357 | 79.55182%; 80% |
+| Denmark could decide its own interest rates after joining | `s_19` / `S5_2` | 2 / false | 265/359 | 293/357 | 82.07283%; 82% |
+| Denmark could decide its own tax rates after joining | `s_20` / `S6_2` | 1 / true | 230/359 | 295/357 | 82.63305%; 83% |
+| Year euro circulation would begin in Denmark following a yes vote | `s_21` / `S7_2` | 2 / 2004 | 185/359 | 317/357 | 88.79552%; 89% |
+| Fate of the Danish National Bank after joining | `s_22` / `S8_2` | 3 / become part of the European Central Bank | 212/359 | 235/355 | 66.19718%; 66% |
+| Whether euro coins would have a national side | `s_23` / `S9_2` | 1 / yes | 190/359 | 335/356 | 94.10112%; 94% |
+
+The additional factual currency-cooperation item `s_24` / `S10_2`, omitted
+from the inherited nine-item battery, scores yes: 298/359 (83.00836%) before
+and 307/354 (86.72316%) after, consistent with the papers' 83% and 87%.
+The six retained baseline percentages are 41.22563%, 73.81616%, 64.06685%,
+51.53203%, 59.05292% and 52.92479%. The papers report 41%, 73%, 64%, 51%,
+59% and 53%; two baseline figures do not round identically. Their participant
+sample is not identical to the available 359 departure records, and their
+note gives item N between 354 and 364. Do not claim exact reproduction of
+those two baseline estimates or change a key to force agreement.
+
+The maintained party fields are `s_25_07` / `S11_7_2` (Socialist People's
+Party), `s_25_09` / `S11_9_2` (Christian People's Party) and `s_25_11` /
+`S11_11_2` (Progress Party). All use code 2, Recommend No; codes 1 and 3 mean
+Recommend Yes and Don't know. Their baseline counts for codes 1/2/3 are
+63/270/26, 137/165/57 and 47/275/37; departure counts for 1/2/3/system-missing
+are 14/321/13/11, 51/265/29/14 and 23/305/23/8. These are the archived
+`denmark.R` keys. In particular, do not reverse the Christian People's Party
+key based on an assumption about a generally pro-EU party: Jann Sjursen's
+[6 September 2000 parliamentary speech](https://www.folketingstidende.dk/samling/19991/lovforslag/L288/19991_L288_BEH3_M103_referat.pdf),
+printed page 9624, argues that Denmark should retain the krone and remain
+outside the euro.
+
+Across all 6,462 maintained item cells, direct raw-field reconstruction finds
+zero differences from exported raw values or typed correctness. Baseline has
+503 explicit don't-know item responses and no system-missing cells; departure
+has 184 explicit don't-know and 48 system-missing cells. Codes 3, 4 and 5 are
+question-specific don't-know choices, not universal missing codes. The
+fixed-nine-item means are 60.04333% and 82.01795%.
+
+Departure ID 321 (departure source row 296; baseline source row 1346) has all
+nine maintained departure knowledge answers missing, but 41 other departure
+answers observed, including the Liberal Party recommendation. This is a
+partially answered questionnaire, not an absent departure interview. Its
+current zero-filled nine-item departure score remains zero; retain the raw
+missingness and do not infer nonattendance from this score alone.
+
+### DK-03: Archived zero-filling copied baseline facts into departure columns
+
+Line 238 of `historical-cdd-scripts:legacy/poll_scripts/denmark.R` assigns to
+`t2pk1:t2pk7` but reads `t0pk1:t0pk7` on the right-hand side, while correctly
+reading T2 party-position columns. This overwrites the seven zero-filled departure factual correctness columns
+with baseline correctness.
+The preceding `t2pk*raw` recodes use genuine departure answers, so the raw
+columns are distinct from the overwritten columns. Earlier `t2know` is
+calculated before the overwrite; do not assume every archived summary was
+affected.
+
+On the available 359 paired people, executing that assignment would replace
+916 of 2,513 seven-item departure correctness cells, affecting 336 people.
+The per-item differences are 178, 106, 105, 154, 147, 161 and 65. The correctly
+zero-filled seven-fact departure mean is 82.21250%; copied baseline facts
+would give 60.80382%. Within the six facts retained in our nine-item battery,
+851 cells across 333 people differ, and 300 people's fixed-nine-item departure
+scores would differ. The current pipeline reconstructs correctness directly
+from T2 raw answers and avoids this statement; the zero-difference check in
+DK-02 confirms it does not copy T0 into T2. Record this as a genuine historical
+script error already avoided by reconstruction, not a proposed change to
+current outputs. The anonymous deposited raw battery cannot establish which
+execution produced other archived nonraw columns.
+
+### DK-04: The retained English questionnaire is an earlier instrument version
+
+The [retained questionnaire](../data/denmark-euro-2000/questionnaire.pdf)
+is visibly provisional: PDF page 1 says background questions will probably
+be placed at the end; page 7 describes one section as work in progress.
+Its page 2 gives four choices for the fiscal-deficit and monetary-policy
+items, including an undecided-policy alternative; the actual T0/T2 source
+labels give three choices (true, false, don't know). Page 3 gives circulation
+years 2001/2004/2007/2010, whereas the source and both papers give
+2001/2004/2005/2007. It also adds a museum alternative to the National Bank
+item and says coins and bills, while the source asks about coins only.
+Page 4 orders party names differently from the source field numbers and
+omits the source's thirteenth party, Freedom 2000. Do not replace source
+labels or remap codes using this earlier questionnaire. The papers and
+actual source dictionaries substantiate the retained keys; obtaining the
+final fielded forms remains an instrument-provenance task.
+
+The catalog's `knowledge_004` question text is now corrected to preserve the
+actual task: which circulation year follows a yes vote, with four dated
+alternatives. Its earlier paraphrase asked whether circulation would begin in
+2001, changing it into a yes/no question while retaining a four-choice response
+schema. The complete departure `S7_2` label and Table 9's wording support the
+restored year-choice question. Key 2 / 2004 and every numeric response, score,
+respondent and membership remain unchanged; only item catalog descriptions
+and their generated analysis export change.
+
+The selected 359 people's source gender codes are 206 male and 153 female;
+there are no invalid codes or missing gender, and age from `2000 - s_02`
+ranges from 18 to 88. Other demographics are not currently exported as
+derived Denmark measures. Source education code 10 means refusal (four
+full-source people, zero selected); income-status codes 2 and 3 mean don't
+know and refusal (267/76 full-source people, 39/12 selected). Preserve those
+missing states in any future demographic expansion. Full-source row 1430,
+with no participant number, has birth year 1987, implying age 13 despite
+the adult recruitment wording. It is outside the paired sample; flag its
+age for source verification rather than guessing a replacement birth year.
+
+**Decision:** preserve current eligibility, nine-item keys and typed missingness.
+The newly identified copy error is absent from current outputs. Resolve the
+remaining anonymous-battery and final-instrument provenance limitations with
+additional source versions or logs, rather than changing people or codes to
+match aggregate counts.
 
 ## Northern Ireland 2007 — northern-ireland-2007
 
@@ -3296,6 +3524,64 @@ The first-roster-row issue was subsequently corrected as described in NI-01.
 The old vault inventory remains historical provenance, not a required runtime
 input list.
 See [dp-nireland data documentation](../../dp-nireland/docs/data.md).
+
+### NI-03: Knowledge keys reproduce the paper; restore the first question's condition
+
+**Status:** source audit checked; catalog wording corrected, scoring preserved.
+The original `historical-cdd-scripts:legacy/poll_scripts/n_ireland.R`, lines
+95/503, preserves the full first question: “What percentage of
+majority-Protestant or majority-Catholic schools in Northern Ireland have at
+least 10% of the other religion in their enrolment?” The maintained catalog
+had shortened this to the share of schools that were mostly Protestant or
+Catholic, omitting the mixed-enrolment condition and changing the question's
+meaning. `metadata/items.csv` now restores the script's wording, independently
+confirmed by the Political Studies paper, PDF p.8, Table 1, and the event
+report, PDF p.34 (printed p.32). No numeric item response or answer key changes.
+
+The dictionaries establish a real option-order change: at baseline, code 1 is
+“more than 50%” and code 4 is “5-10%”; at departure the first of those choices
+is absent and “5-10%” is code 3. Therefore keys 4 and 3 are the same substantive
+answer. Do not unify their raw code numbers. The seven baseline keys remain
+4/4/1/4/3/1/4 and departure keys3/4/1/4/3/1/4. The other correct answers are a
+10% decrease in entering pupils; at least 24 subject choices for 14-year-olds;
+one third applied subjects; approximately three quarters of grammar pupils
+going to university; greater funding for older pupils; and the board of
+governors as voluntary grammar teachers' employer. These meanings are printed
+in the paper and report, rather than inferred from matching the scored deposit.
+
+For all 124 `attend==1` source respondents, their IDs exactly match the 124-row
+roster. The seven raw-answer counts reproduce all 14 rounded proportions in
+the paper's Table 1:
+
+| Item | Correct baseline / 124 | Correct departure / 124 | Baseline % | Departure % |
+| --- | ---: | ---: | ---: | ---: |
+| Mixed enrolment | 30 | 44 | 24.19355 | 35.48387 |
+| Falling enrolment | 23 | 59 | 18.54839 | 47.58065 |
+| Subject choices | 26 | 93 | 20.96774 | 75.00000 |
+| Applied subjects | 36 | 78 | 29.03226 | 62.90323 |
+| Grammar/university | 36 | 54 | 29.03226 | 43.54839 |
+| Funding by age | 28 | 98 | 22.58065 | 79.03226 |
+| Employing authority | 10 | 11 | 8.06452 | 8.87097 |
+
+Mean knowledge is 0.2177419355 before and 0.5034562212 after, a gain of
+0.2857142857, reproducing the printed 0.218/0.503/0.286. All 1,736 source
+item cells agree with the authored correct/incorrect flags; the complete
+attendee batteries have no system-missing responses, though explicit don't
+know/no-answer codes are present and preserved in the response-status layer.
+All 124 attendee ages are observed, range 24–59, mean 40.69354839. Eight
+attendees report education “other answers” and one has system missing;
+these are not an ordered qualification and remain missing in the existing
+canonical education recode.
+
+The earlier event report uses a different analytical version: its Appendix A
+knowledge index has N = 121 and means 0.215/0.498 (PDF p.43, printed p.41), and
+its Appendix B participant age also has N = 121 (PDF p.44, printed p.42).
+Those figures should not be imposed on the later 124-person paper dataset.
+The report's seven percentages are not reproduced by the 124-person source,
+but the later paper's 14 item percentages and mean scores are. No identity
+bridge for the earlier 121-person analysis has been established; do not drop
+three current respondents to force that match. Raw age and education coding,
+all scores, memberships and the existing sample remain unchanged.
 
 ## Polls outside the 23-battery canonical build
 
@@ -4019,10 +4305,11 @@ Case-level old and new values are in
 The four people are in groups 9103, 9107 and 9115. Group minority shares move
 from 1/7 to 0/6, 2/10 to 1/9, and 6/13 to 4/11, respectively; the `pminority`
 field changes for all 30 people in those groups. No other aggregate field
-changes. In particular, the centralized historical entropy helper divides by
-full group size and absorbs missing binary answers into the complementary
-category, so its value stays the same. That missing-aware formula issue is
-recorded in X-03 and has not been altered as part of this poll correction.
+changed at this respondent-correction stage. The former historical entropy
+helper divided by full group size and absorbed missing binary answers into
+the complementary category, leaving its value unchanged. The separately
+approved shared entropy correction in X-03 now supersedes that diversity
+calculation; the NH-06 respondent values and participation remain preserved.
 
 ### NH-07: Historical airport index replaced an attainable 0.625 with 0.675
 
@@ -4310,8 +4597,8 @@ missing answers as incorrect; preserve that as a named scoring policy while
 retaining raw response reasons. Partial attitude-index means have changing
 observed denominators. Neither policy should be silently generalized to the other.
 The centralized `pfemale_ind` helper uses full group size in its leave-one-out
-denominator, while `pfemale` omits missing genders; the entropy helper also
-divides observed categories by full group size. BTPHE-01 exposes this mismatch
+denominator, while `pfemale` omits missing genders. The former entropy helper
+also divided observed categories by full group size. BTPHE-01 exposes this mismatch
 in groups 9707 and 9727; NH-06 shows why the minority entropy can remain
 unchanged when refusal is restored to missing. A change to these shared
 formulas must be assessed across all polls and frozen separately from the
@@ -4337,13 +4624,92 @@ the unknown person's answer missing. Which respondents belong in the summary
 and how much information a component requires must be made explicit; unknown
 answers do not establish a complementary demographic category.
 
-These are reproduced behaviors of the shared helper, not new poll-specific
-recodes. `tests/testthat/test-polardata-derived.R` intentionally preserves
-these historical behaviors for reconstruction parity. The original
+These were reproduced behaviors of the inherited shared helper. The prior
+`tests/testthat/test-polardata-derived.R` intentionally preserved them for
+reconstruction parity; the approved correction replaces those expectations
+with mathematical and missingness checks. The original
 `historical-cdd-scripts:legacy/merge_data_scripts/03_data.R` likewise sums
 components with missing removal. Correcting the shared formulas requires one
 versioned cross-poll comparison, with component coverage recorded; it must
 not be folded silently into any of the respondent corrections above.
+
+**Shared entropy correction approved on 2026-09-27.** The user explicitly
+requested the shared fix. `R/polardata_derived.R` now computes Shannon entropy
+in bits from every observed rounded category frequency divided by the number
+of answered values. Missing answers are excluded from both category counts
+and denominator; an absent category contributes zero. A component with no
+answers remains missing. The combined field remains the sum of available
+marginal gender, minority and education entropies, with an entirely unknown
+combined score missing. It is not a joint entropy, a standardized index, or a
+claim that every poll measures the same education construct. Existing rounding
+to two decimals and all respondent input coding are preserved.
+
+An independent reference calculation captured each poll's actual composition
+universe before editing the helper. BTP General Election 2004 computes its
+composition on 299 source people before exporting 248; that population remains
+unchanged. Recalculating from the final export alone would wrongly change 14
+of its 15 group scores. Using the actual 299-person summary population changes
+only four groups (9403, 9410, 9413, 9415), containing 54 exported people. The
+other 20 poll composition builders use their selected respondent populations.
+Across all 21 reconstructed polls, the rebuilt output matches the independent
+reference: 245 of 397 group scores change beyond the existing 1e-10 comparison
+tolerance, repeated over 3,436 of 5,869 exported people; no
+respondent, membership or non-entropy field changes from this shared fix.
+
+The earlier 185-group / 2,511-person absent-category diagnostic used only
+exported people. Matching the actual producer populations establishes 184
+groups / 2,506 exported people with observed education whose component was
+omitted. This refines the diagnostic count; it does not change a poll's sample.
+Coverage is recorded explicitly: 363 groups have all three observed components,
+34 have two. Retaining the historical available-component sum does not make
+those totals equally complete; the component audit makes that distinction
+visible. The all-components-unknown and unassigned-group boundaries are tested
+synthetically, since no current exported group has wholly unknown components.
+
+Europolis needs a distinct interpretation: source `educ1` asks the age at
+completing full-time education. The maintained school-leaving-age proxy,
+including its existing still-studying conversion, yields 23 rounded values
+across 348 attendees, rather than four qualification categories. The old helper
+silently used only its first four observed frequencies. All 25 Europolis group
+scores change when every observed value is counted. Group 711 has 12 observed
+education answers among 14 people across seven values: its education component
+changes from 1.292089 to 2.625815 bits. Group 7125 reaches 3.5 education bits
+(16 observed answers, 12 values); combined entropy reaches 5.278967 bits in
+group 7124. A four-category ceiling would be inappropriate for this existing
+proxy. No binning or new education recode is imposed by the arithmetic fix;
+comparability or an alternative qualification measure needs its own review.
+
+The new definition is `entropy-observed-v2` for every poll. The independently
+calculated [frozen comparisons](../audit/corrections/shared-entropy/approved_values.csv)
+retain immutable historical, preceding-release and approved values for all
+5,869 identities, including NIC's missing historical ID and the two previously
+approved BTPGE additions absent from the original benchmark. The [component
+audit](../audit/corrections/shared-entropy/group_components.csv) records source
+and exported group sizes, observed counts, category counts, coverage and each
+old/new component. Prior poll correction snapshots are preserved as evidence;
+the shared entropy comparison supersedes only their entropy values.
+The separate leave-one-out missing-answer denominator issue in `pfemale_ind`
+remains for its own shared assessment; no leave-one-out formula is changed here.
+
+There are also 230 final-digit differences in 15 other group scores, at most
+4.4408920985006262e-16, from calculating both binary probabilities directly
+rather than using one probability's complement. Thus 3,666 exported entropy
+values differ at the bit level, of which 3,436 exceed the existing 1e-10
+tolerance. The frozen comparison retains both kinds of changes; the 245-group
+figure describes differences above tolerance, not every changed text line.
+
+The source rebuild matches the frozen reference for every identity. Source and
+Data Package validation, mathematical boundary tests, all 21 frozen comparisons,
+representative source-built poll regressions, provenance checks and lint pass.
+Aggregate parity has zero unexplained differences. The shared change leaves
+all respondent tables byte-identical to the BGC-06 commit. At initial validation,
+canonical analysis exports were byte-identical to the preceding main version.
+PR #69 subsequently added demographic covariates while this correction was
+being prepared. Rebuilding the combined analysis exports propagates exactly
+five approved missing-value corrections: the three AUS-05 refused ages and
+the two BGC-06 unlabelled ethnicities. Every other participant field and all
+other analysis tables remain unchanged; entropy does not enter these exports.
+No model or paper results were rerun.
 
 ### X-04: Person-level identity requires more than matching scores
 
