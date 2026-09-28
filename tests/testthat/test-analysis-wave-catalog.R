@@ -59,7 +59,7 @@ test_that("wave identities preserve numeric scores and literal timing", {
   )
   enriched <- add_analysis_wave_identity(scores)
   expect_identical(enriched[names(scores)], scores)
-  expect_equal(enriched$original_survey_wave, c("T1", "T3", "follow_up"))
+  expect_equal(enriched$original_survey_wave, c("T1", "T2", "follow_up"))
   expect_error(add_analysis_wave_identity(dplyr::mutate(
     scores, original_score_wave = "nonexistent"
   )))

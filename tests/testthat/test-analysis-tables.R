@@ -208,12 +208,13 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   expect_true(all(scores$n_observed[absent] == 0L))
   expect_true(all(is.na(scores$n_correct[absent])))
   expect_true(all(is.na(scores$n_observed[
-    scores$source_dataset == "historical" & !absent
+    scores$source_dataset == "historical" & !is.na(scores$score)
   ])))
   absent_items <- responses$response_status == "wave_absent"
-  expect_equal(sum(absent_items), 414L)
+  expect_equal(sum(absent_items), 414L + (911L - 387L) * 11L)
   expect_true(all(
-    responses$poll_id[absent_items] == "btp-general-election-2004"
+    responses$poll_id[absent_items] %in%
+      c("btp-general-election-2004", "nic-1996")
   ))
   expect_true(all(is.na(responses$correct[absent_items])))
 })
@@ -235,7 +236,9 @@ test_that("historical panel scores match the existing aggregate export", {
     dplyr::inner_join(scores, by = c(
       "poll_id", "source_dataset", "respondent_id"
     )) |>
+    dplyr::filter(poll_id != "nic-1996" | wave != "t2") |>
     dplyr::mutate(
+      wave = dplyr::if_else(poll_id == "nic-1996" & wave == "t3", "t2", wave),
       historical_respondent_id = as.numeric(historical_respondent_id)
     ) |>
     dplyr::left_join(sources, by = "poll_id", relationship = "many-to-one") |>
@@ -249,8 +252,8 @@ test_that("historical panel scores match the existing aggregate export", {
     panel$t1know[panel$wave == "t1"], tolerance = 1e-7
   )
   expect_equal(
-    panel$score[panel$wave == "t2"],
-    panel$t2know[panel$wave == "t2"], tolerance = 1e-7
+    panel$score[panel$wave == "t2" & !is.na(panel$score)],
+    panel$t2know[panel$wave == "t2" & !is.na(panel$score)], tolerance = 1e-7
   )
 })
 

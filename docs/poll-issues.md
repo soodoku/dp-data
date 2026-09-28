@@ -2511,6 +2511,40 @@ imports the newly missing age.
 
 ## National Issues Convention 1996 — nic-1996
 
+### NIC-11: Use immediate exit in the analysis pair and retain delayed follow-up
+
+**Approved and corrected (September 28, 2026).** The historical aggregate's
+`t2know` uses source Time 3, not immediate exit. The codebook opening paragraphs
+identify source Time 1 as the initial November 1995–January 1996 household survey,
+Time 2 as the event questionnaire plus contemporaneous nonattendee telephone
+interviews, and Time 3 as a separate follow-up. The NIC paper (PDF p. 19,
+printed p. 18) places that last interview about ten months after the January
+1996 event, following the presidential election. Source Time 2 is **not arrival**.
+
+The canonical analysis item and score tables now use source Time 1/2 for their
+initial/exit pair and retain source Time 3 separately. Canonical phase labels
+remain t0/t2/t3. The same eleven items, existing correctness rules, source-row
+identity bridge and respondent IDs are preserved. The aggregate `polardata`
+and its historical respondent outputs remain unchanged; its historical pair
+continues to mean source Time 1/3 and must not be described as immediate exit.
+The eight-item Cor–Sood source remains a separate battery.
+
+For source Time 3, `PART3` establishes whether the interview occurred. The 524
+of 911 source records without that interview now have missing analysis scores,
+not zero. This includes 79 of the 466 attendees. Individual unanswered items
+within an observed interview continue to score zero. Raw answers and literal
+source columns accompany all three eleven-item batteries in the analysis table.
+
+Among the 466 historical attendees, the documented phase-presence rules identify
+461 observed baseline questionnaires and 460 observed exit questionnaires;
+456 have both. The other ten must not supply a zero for an unobserved interview.
+The dp-learning main estimate now uses these 456 pairs. Retention uses the 383
+attendees with observed baseline, exit and delayed follow-up, holding people and
+questions fixed across all three measurements. This addresses composition changes
+within that comparison, not possible differences between returners and attriters.
+All non-NIC analysis rows are unchanged.
+
+
 **NIC-01 — one source-scoped fallback ID and battery definition.** `PART == 1`
 selects 466 of 911 records and `RGROUP2` identifies 30 groups. One attendee lacks
 `CASEID` and retains a source-row fallback. Eight-item knowledge and gender match
