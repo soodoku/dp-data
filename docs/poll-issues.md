@@ -4511,9 +4511,14 @@ The source rebuild matches the frozen reference for every identity. Source and
 Data Package validation, mathematical boundary tests, all 21 frozen comparisons,
 representative source-built poll regressions, provenance checks and lint pass.
 Aggregate parity has zero unexplained differences. The shared change leaves
-all respondent tables byte-identical to the BGC-06 commit; current canonical
-analysis exports remain byte-identical to the preceding main version. No model
-or paper results were rerun.
+all respondent tables byte-identical to the BGC-06 commit. At initial validation,
+canonical analysis exports were byte-identical to the preceding main version.
+PR #69 subsequently added demographic covariates while this correction was
+being prepared. Rebuilding the combined analysis exports propagates exactly
+five approved missing-value corrections: the three AUS-05 refused ages and
+the two BGC-06 unlabelled ethnicities. Every other participant field and all
+other analysis tables remain unchanged; entropy does not enter these exports.
+No model or paper results were rerun.
 
 ### X-04: Person-level identity requires more than matching scores
 
