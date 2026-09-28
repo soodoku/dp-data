@@ -223,3 +223,8 @@ california_knowledge_scores,n_items,int32,FALSE,FALSE,Fixed denominator of eight
 california_knowledge_scores,n_answered,int32,FALSE,FALSE,Number with a recorded source answer
 california_knowledge_scores,n_correct,int32,TRUE,FALSE,Number answered correctly; null for absent questionnaire
 california_knowledge_scores,score_zero_filled,float64,TRUE,FALSE,Number correct divided by eight within an observed questionnaire; absent wave remains null
+analysis_participants,age,float64,TRUE,FALSE,Baseline age in years; BTP 2007 uses survey year minus birth year
+analysis_participants,education,float64,TRUE,FALSE,Harmonized schooling: 0 below secondary completion; 0.5 secondary or some college; 1 degree or higher
+analysis_participants,minority,float64,TRUE,FALSE,Source-derived historical minority indicator; missing where no reviewed harmonization exists
+analysis_participants,extremity,float64,TRUE,FALSE,Historical baseline attitude-extremity index; missing where no reviewed harmonization exists
+analysis_participants,read_briefing,float64,TRUE,FALSE,Reported briefing reading before discussions on a zero-to-one ordinal scale; elicited after deliberation

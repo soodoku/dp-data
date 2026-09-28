@@ -54,6 +54,19 @@ primaries, BTP 2007, Michigan, and California, which are absent from the
 historical group-analysis sample. Denmark and Vermont have no verified group
 roster; 13 BTP online-primary respondents also lack an assignment.
 
+The participant table includes age in years, education (0 = below secondary
+completion, .5 = secondary/some college, 1 = degree or higher), minority status,
+attitude extremity, and self-reported briefing reading on a 0–1 scale. Age and
+education are harmonized for the historical surveys and seven additional polls
+with discussion groups. Historical age values can represent category midpoints.
+Briefing reading covers twelve of those polls and refers to reading before
+discussion, recalled afterward. Michigan's letter-coded reading answers are
+categorical survey responses; unrecognized codes remain missing. Attitude
+extremity and minority status retain the historical definitions and coverage.
+The schema and recode ledger record source fields, category mappings, and sources.
+The covariate build preserves every participant key and does not impose a
+complete-case sample; downstream analyses select the variables they need.
+
 `analysis_scores` averages item correctness over the full fielded battery for
 the four item-linked control polls and both deposited historical batteries.
 Missing, skipped, and don't-know answers enter that proportion as zero; the

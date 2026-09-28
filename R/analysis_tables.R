@@ -61,7 +61,8 @@ analysis_historical_people <- function() {
     dplyr::transmute(
       poll_id, historical_respondent_id = as.character(caseid),
       group_id = as.character(pollgroup), cluster_id = as.character(pollgroup),
-      ba = as.numeric(educ3 == 1), female, historical_panel = TRUE
+      ba = as.numeric(educ3 == 1), female, age = ppage, education = educ3,
+      minority, extremity = attextreme, historical_panel = TRUE
     )
   stopifnot(!anyNA(selected$poll_id), !anyDuplicated(selected[c(
     "poll_id", "historical_respondent_id"
@@ -80,7 +81,7 @@ analysis_historical_people <- function() {
       panel = dplyr::coalesce(historical_panel, FALSE),
       small_group_id = group_id, cluster_id,
       country = NA_character_,
-      weight = NA_real_, ba, female,
+      weight = NA_real_, ba, female, age, education, minority, extremity,
       score_wave1 = NA_real_, score_wave2 = NA_real_
     )
 }
@@ -474,7 +475,8 @@ build_analysis_tables <- function() {
   participants <- dplyr::bind_rows(
     analysis_historical_people(), analysis_cor_people(),
     analysis_control_people(sources)
-  )
+  ) |>
+    add_analysis_covariates()
   items <- dplyr::bind_rows(
     analysis_historical_items(catalog), analysis_cor_items(catalog),
     analysis_control_items(sources, catalog)
