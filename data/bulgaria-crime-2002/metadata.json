@@ -72,6 +72,15 @@
       "source_locator": "PDF p.1",
       "status": "reported",
       "notes": null
+    },
+    {
+      "poll_id": "bulgaria-crime-2002",
+      "field": "recruitment",
+      "value": "Pre-arrival national survey before invitations; retained attendee baseline matches national survey answers",
+      "reference_id": "bulgaria-crime-2002-material-67200921963b690e",
+      "source_locator": "Printed p.5, methodological account, first two paragraphs",
+      "status": "reported",
+      "notes": "All 278 attendee initial answer vectors match recruitment.sav across 119 shared Q fields; exact interview dates unavailable."
     }
   ],
   "references": [
@@ -154,6 +163,36 @@
       "local_artifact_id": null,
       "accessed": "2026-09-24",
       "notes": "Comparative empirical paper includes Bulgaria 2002 among 21 polls. This is research evidence, not the similarly named Roma event report."
+    },
+    {
+      "reference_id": "bulgaria-crime-2002-material-67200921963b690e",
+      "poll_id": "bulgaria-crime-2002",
+      "kind": "event-report",
+      "title": "One forum in two accounts: national debates on crime, 11–13 October 2002",
+      "url": "https://newspaper.kultura.bg/media/file/phpXIV0mt9384.pdf",
+      "local_artifact_id": "material-67200921963b690e-bulgaria-crime-2002",
+      "accessed": "2026-09-28",
+      "notes": "Kultura, issue 38, 25 October 2002, p.5. Firsthand account: initial representative survey preceded invitations to discussion. Full newspaper issue retained."
+    },
+    {
+      "reference_id": "bulgaria-crime-2002-material-f4731a9981b7bb74",
+      "poll_id": "bulgaria-crime-2002",
+      "kind": "data",
+      "title": "Original 1,035-person national survey",
+      "url": null,
+      "local_artifact_id": "material-f4731a9981b7bb74-bulgaria-crime-2002",
+      "accessed": "2026-09-28",
+      "notes": "Original archive data/Bulgaria/Master Data/DelPoll_eng.sav. All 278 attendee baseline answer vectors occur here across 119 shared question fields; IDs alone are not a validated bridge."
+    },
+    {
+      "reference_id": "bulgaria-crime-2002-material-eae7b78c90442da7",
+      "poll_id": "bulgaria-crime-2002",
+      "kind": "data",
+      "title": "Original 278-person attendee baseline returns",
+      "url": null,
+      "local_artifact_id": "material-eae7b78c90442da7-bulgaria-crime-2002",
+      "accessed": "2026-09-28",
+      "notes": "Original archive data/Bulgaria/Master Data/Before_discussion_eng.sav; also data/Bulgaria/data/bu.before.sav. Exact source bytes retained. GROUP denotes occupation, not discussion group."
     }
   ],
   "material_coverage": [
@@ -463,6 +502,51 @@
       "publication_status": "published",
       "notes": "Generated from data/shared/design/poll_details/appendix-poll-details-5-18-14-e.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Already cited across21 poll references; includes24 polls and four source-linked duration comments. Compared all14 DOCX table rows plus comments XML, and corresponding PDF texts. No executable code reads these appendices.",
       "relative_path": "../shared/design/poll_details/appendix-poll-details-5-18-14-e.pdf"
+    },
+    {
+      "artifact_id": "material-67200921963b690e-bulgaria-crime-2002",
+      "poll_id": "bulgaria-crime-2002",
+      "artifact_type": "event-report",
+      "title": "One forum in two accounts: national debates on crime, 11–13 October 2002",
+      "location": "data/bulgaria-crime-2002/reports/kultura-2002-10-25.pdf",
+      "source_id": "material-67200921963b690e",
+      "original_archive_path": null,
+      "sha256": "67200921963b690e2fc88a05912d57a2592f4e7088cb6519a790dbe2512af170",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Kultura, issue 38, 25 October 2002, p.5. Firsthand account: initial representative survey preceded invitations to discussion. Full newspaper issue retained. Original source rights retained.",
+      "relative_path": "reports/kultura-2002-10-25.pdf"
+    },
+    {
+      "artifact_id": "material-f4731a9981b7bb74-bulgaria-crime-2002",
+      "poll_id": "bulgaria-crime-2002",
+      "artifact_type": "data",
+      "title": "Original 1,035-person national survey",
+      "location": "data/bulgaria-crime-2002/recruitment.sav",
+      "source_id": "material-f4731a9981b7bb74",
+      "original_archive_path": null,
+      "sha256": "f4731a9981b7bb74f022ede943e9aa3459312cd649eaad265dc6f5804cbd482b",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original archive data/Bulgaria/Master Data/DelPoll_eng.sav. All 278 attendee baseline answer vectors occur here across 119 shared question fields; IDs alone are not a validated bridge. Original source rights retained.",
+      "relative_path": "recruitment.sav"
+    },
+    {
+      "artifact_id": "material-eae7b78c90442da7-bulgaria-crime-2002",
+      "poll_id": "bulgaria-crime-2002",
+      "artifact_type": "data",
+      "title": "Original 278-person attendee baseline returns",
+      "location": "data/bulgaria-crime-2002/attendee-baseline.sav",
+      "source_id": "material-eae7b78c90442da7",
+      "original_archive_path": null,
+      "sha256": "eae7b78c90442da7d68c4279d421a05f8dfaa0710fedfa5bdba7c11a3984087b",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original archive data/Bulgaria/Master Data/Before_discussion_eng.sav; also data/Bulgaria/data/bu.before.sav. Exact source bytes retained. GROUP denotes occupation, not discussion group. Original source rights retained.",
+      "relative_path": "attendee-baseline.sav"
     }
   ],
   "document_previews": [

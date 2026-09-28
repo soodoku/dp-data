@@ -4950,11 +4950,11 @@ start of deliberation would instead be t1.
 | america-in-one-room-2019 | July 9–August 5 baseline before September 19–22 event; `design/a1r-2019-norc-methods.pdf`, PDF pp.3–4. |
 | a1r-climate-2021 | August baseline before September online events; `design/a1r-climate-methods.pdf`, PDF p.3. |
 
-The three remaining IDs are unverified, not established absences. Bulgaria
+The remaining coverage questions are not established absences. Bulgaria
 2007 documents 1,344 before-event interviews in its report (PDF p.2), but that
-raw respondent dataset has not been identified. Bulgaria Crime 2002 retains
-278 paired raw records, but precise pre-arrival versus onsite timing is not
-independently established. AMR 2024 retains 2,419 pre/post records, but precise
+raw respondent dataset has not been identified. Bulgaria Crime 2002 was initially unresolved; BGC-07 below establishes its
+pre-arrival baseline using contemporary reporting and the original national
+survey. AMR 2024 retains 2,419 pre/post records, but precise
 remote-baseline versus start-of-event timing remains unverified.
 
 At least 22 confirmed IDs retain recruitment respondents/nonattendees, and
@@ -5546,3 +5546,38 @@ not an observed outcome. Invitation or materials could induce learning without
 attendance, violating the exclusion restriction for an instrument intended to
 identify the effect of attendance alone. An effect of invitation, if identifiable,
 would include such learning.
+
+
+### BGC-07: baseline precedes arrival (resolved 2026-09-28)
+
+The 278-row paired `survey.sav` has discussion groups for every respondent
+(`group0`, 17 groups), complete pre/post knowledge batteries, and `_merge=3`
+throughout. This is an attendee-only merged file. Full group coverage does not
+establish that its initial answers were collected on arrival. The uppercase
+`GROUP` in the original returns instead labels occupation.
+
+Kultura, issue 38, 25 October 2002, printed p.5, retained in
+`reports/kultura-2002-10-25.pdf`, describes this specific crime event. The first
+two paragraphs of the methodological account state that debates began with
+interviews of a nationally representative sample and that, after the initial
+interview, respondents were invited to gather for discussions. This is direct
+event-specific evidence for a pre-arrival initial interview. It corroborates
+the organizers' sequence in `reports/bulgaria-crime-results.pdf`, p.1: baseline
+survey, invitation, briefing materials, weekend, repeated questionnaire.
+
+The original `recruitment.sav` has 1,035 respondents and 136 fields;
+`attendee-baseline.sav` has 278 respondents and 137 fields. Both are exact copies
+of retained archive files. Across all 119 shared Q-prefixed columns, every
+attendee baseline answer vector appears in the national survey. This links the
+analytical baseline to the initial national questionnaire without relying on
+potentially incompatible IDs. It does not itself establish a unique respondent
+identity bridge for adding the other national respondents to an analysis panel.
+
+Classify the analytical baseline as t0/pre_arrival and the repeated questionnaire
+as t2/post_deliberation in both historical and Cor-Sood views. Do not invent an
+arrival wave, individual interview dates, or survey mode. Existing scores and
+main analysis samples are unchanged. The phase outputs now include these known
+interview stages. Original recruitment respondents are preserved for later
+identity/attendance reconciliation; their missing event status is not inferred
+from an ID mismatch. Exact material-receipt dates remain unavailable, but the
+organizers describe briefing after the initial survey and invitation.

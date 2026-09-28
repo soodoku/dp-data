@@ -178,7 +178,7 @@ data/Bulgaria/Indices/Bulgaria Indices V7.doc,121856,40e07de7880227e2772216cbcf2
 data/Bulgaria/Indices/Bulgaria Indices.doc,106496,c692f9fa3d4b8048dea4f29f3220d6c037a4b22e424bceff023885f59b342346,doc,1,review_required,vault_only,vault/cdd/data/Bulgaria/Indices/Bulgaria Indices.doc
 data/Bulgaria/Indices/Bulgaria_Knowledge Indices.doc,35328,562147c29a8e69fa4bca2afa770d8b3578dff8322322e195bb426ad92f8b237c,doc,1,review_required,vault_only,data/bulgaria-crime-2002/knowledge-index.doc
 data/Bulgaria/Master Data/After_discussion_eng.sav,69084,1ae3bed4295dc70bea9699b4a81bcb3932d41647e97d22b6662ddf24b286ab4b,sav,3,review_required,vault_only,vault/cdd/data/Bulgaria/data/bu.after.sav
-data/Bulgaria/Master Data/Before_discussion_eng.sav,61768,eae7b78c90442da7d68c4279d421a05f8dfaa0710fedfa5bdba7c11a3984087b,sav,3,review_required,vault_only,vault/cdd/data/Bulgaria/data/bu.before.sav
+data/Bulgaria/Master Data/Before_discussion_eng.sav,61768,eae7b78c90442da7d68c4279d421a05f8dfaa0710fedfa5bdba7c11a3984087b,sav,3,review_required,vault_only,data/bulgaria-crime-2002/attendee-baseline.sav
 data/Bulgaria/Master Data/DelPoll_control_eng.sav,133284,2a4bdf5c748f306a05774f6ef3fdd72d518f228705d9629daf28939c2f1ebfda,sav,3,review_required,vault_only,vault/cdd/data/Bulgaria/data/bu.control.sav
 data/Bulgaria/Master Data/DelPoll_eng.sav,170711,b2a1febb79ccc374773d1ea6d286104881a3b8ca999df3cbe90fc0a0d01b3682,sav,1,review_required,vault_only,vault/cdd/data/Bulgaria/Master Data/DelPoll_eng.sav
 data/Bulgaria/Master Data/WS_FTP.LOG,4534,9ae445210bfe044c72e082316c326d4ddb8896b2813945bdc1a91ae498dd3103,log,1,review_required,vault_only,vault/cdd/data/Bulgaria/Master Data/WS_FTP.LOG
@@ -192,14 +192,14 @@ data/Bulgaria/codebook/2003-bulgaria-crime.pdf,297461,d8dadcfc67f4c83fc5fb895d69
 data/Bulgaria/codebook/Bulgaria.doc,372736,7101f933cee01690014e04ca25b113c2336b2e1f0a317ad5d7d147ebcbf8d5ec,doc,1,review_required,vault_only,data/bulgaria-crime-2002/questionnaire.doc
 data/Bulgaria/codebook/WS_FTP.LOG,260,bfc440bce739650bc6801c512116f27b9d6e795b3bc739490d807fae7e302bdb,log,1,review_required,vault_only,vault/cdd/data/Bulgaria/codebook/WS_FTP.LOG
 data/Bulgaria/data/After_discussion_eng.sav,69084,1ae3bed4295dc70bea9699b4a81bcb3932d41647e97d22b6662ddf24b286ab4b,sav,3,review_required,vault_only,vault/cdd/data/Bulgaria/data/bu.after.sav
-data/Bulgaria/data/Before_discussion_eng.sav,61768,eae7b78c90442da7d68c4279d421a05f8dfaa0710fedfa5bdba7c11a3984087b,sav,3,review_required,vault_only,vault/cdd/data/Bulgaria/data/bu.before.sav
+data/Bulgaria/data/Before_discussion_eng.sav,61768,eae7b78c90442da7d68c4279d421a05f8dfaa0710fedfa5bdba7c11a3984087b,sav,3,review_required,vault_only,data/bulgaria-crime-2002/attendee-baseline.sav
 data/Bulgaria/data/DelPoll_control_eng.sav,133284,2a4bdf5c748f306a05774f6ef3fdd72d518f228705d9629daf28939c2f1ebfda,sav,3,review_required,vault_only,vault/cdd/data/Bulgaria/data/bu.control.sav
-data/Bulgaria/data/DelPoll_eng.sav,167544,f4731a9981b7bb74f022ede943e9aa3459312cd649eaad265dc6f5804cbd482b,sav,1,review_required,vault_only,vault/cdd/data/Bulgaria/data/DelPoll_eng.sav
+data/Bulgaria/data/DelPoll_eng.sav,167544,f4731a9981b7bb74f022ede943e9aa3459312cd649eaad265dc6f5804cbd482b,sav,1,review_required,vault_only,data/bulgaria-crime-2002/recruitment.sav
 data/Bulgaria/data/WS_FTP.LOG,4847,3d1f8cff522f87737bd3c0a41938b88d2d3fe6da098f02249c96af9b98010ac7,log,1,review_required,vault_only,vault/cdd/data/Bulgaria/data/WS_FTP.LOG
 data/Bulgaria/data/after_discussion_eng.dta,95031,fcee40c54eeff05964c1e86fc42973383d71dceba54606564bd0ad6bb538aad1,dta,2,review_required,vault_only,vault/cdd/data/Bulgaria/data/after_discussion_eng.dta
 data/Bulgaria/data/before_discussion_eng.dta,84755,8baa5cff1b17fefbb51b9a60fd5337de8d53383fb9004248794c8b00ca8da903,dta,2,review_required,vault_only,vault/cdd/data/Bulgaria/data/before_discussion_eng.dta
 data/Bulgaria/data/bu.after.sav,69084,1ae3bed4295dc70bea9699b4a81bcb3932d41647e97d22b6662ddf24b286ab4b,sav,3,review_required,vault_only,vault/cdd/data/Bulgaria/data/bu.after.sav
-data/Bulgaria/data/bu.before.sav,61768,eae7b78c90442da7d68c4279d421a05f8dfaa0710fedfa5bdba7c11a3984087b,sav,3,review_required,vault_only,vault/cdd/data/Bulgaria/data/bu.before.sav
+data/Bulgaria/data/bu.before.sav,61768,eae7b78c90442da7d68c4279d421a05f8dfaa0710fedfa5bdba7c11a3984087b,sav,3,review_required,vault_only,data/bulgaria-crime-2002/attendee-baseline.sav
 data/Bulgaria/data/bu.control.sav,133284,2a4bdf5c748f306a05774f6ef3fdd72d518f228705d9629daf28939c2f1ebfda,sav,3,review_required,vault_only,vault/cdd/data/Bulgaria/data/bu.control.sav
 data/Bulgaria/data/bu.part.rdata,178039,f76aaf7fa64d3f6ff67f5868b48ba7467fd062643ac463f03161e15e16fe4d37,rdata,1,review_required,vault_only,vault/cdd/data/Bulgaria/data/bu.part.rdata
 data/Bulgaria/data/bulgaria.eval.rdata,137007,859af4a1c676feced3306f655944126ca159f622739b98abf46bb782f95e864c,rdata,1,review_required,vault_only,vault/cdd/data/Bulgaria/data/bulgaria.eval.rdata
