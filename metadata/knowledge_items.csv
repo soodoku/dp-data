@@ -185,13 +185,13 @@ btp-general-election-2004,knowledge-8,8,2,w4f68,t3know8raw,4,1|2|3,-4|-3|-2|-1|5
 btp-general-election-2004,knowledge-9,9,2,w4f69,t3know9raw,3,1|2|4,-4|-3|-2|-1|5|6,DOP All Surveys Q60-Q69; original Stata labels translate factor-index keys to source codes; refusal is missing
 btp-health-education-2005,knowledge-1,1,1,q15,t1know1raw,2,1|3|4,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
 btp-health-education-2005,knowledge-2,2,1,q16,t1know2raw,1,2|3,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
-btp-health-education-2005,knowledge-3,3,1,q17,t1know3raw,1,2|3,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
+btp-health-education-2005,knowledge-3,3,1,q17,t1know3raw,3,1|2,7|8|9,Approved BTPHE-04; pre/post questionnaires Q17 p.4; education briefing PDF p.2 says elementary minority-white reading/math gap closing; inherited increasing key corrected
 btp-health-education-2005,knowledge-4,4,1,q26,t1know4raw,3,1|2|4|5,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
 btp-health-education-2005,knowledge-5,5,1,q27,t1know5raw,3,1|2|4,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
 btp-health-education-2005,knowledge-6,6,1,q28,t1know6raw,3,1|2|4,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
 btp-health-education-2005,knowledge-1,1,2,q15post,t3know1raw,2,1|3|4,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
 btp-health-education-2005,knowledge-2,2,2,q16post,t3know2raw,1,2|3,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
-btp-health-education-2005,knowledge-3,3,2,q17post,t3know3raw,1,2|3,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
+btp-health-education-2005,knowledge-3,3,2,q17post,t3know3raw,3,1|2,7|8|9,Approved BTPHE-04; pre/post questionnaires Q17 p.4; education briefing PDF p.2 says elementary minority-white reading/math gap closing; inherited increasing key corrected
 btp-health-education-2005,knowledge-4,4,2,q26post,t3know4raw,3,1|2|4|5,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
 btp-health-education-2005,knowledge-5,5,2,q27post,t3know5raw,3,1|2|4,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
 btp-health-education-2005,knowledge-6,6,2,q28post,t3know6raw,3,1|2|4,7|8|9,Original Stata value labels and 2005 pre/post questionnaires; btp05.R answer keys translated from factors
