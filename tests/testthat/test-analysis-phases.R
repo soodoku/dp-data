@@ -29,9 +29,9 @@ test_that("source timing overrides misleading selected-wave names", {
   )
   expect_setequal(unique(nic$wave), c("t0", "t2", "t3"))
   expect_true(all(
-    nic$wave[nic$original_score_wave == "knowledge_midterm"] == "t2"
+    nic$wave[nic$original_score_wave == "t2"] == "t2"
   ))
-  expect_true(all(nic$wave[nic$original_score_wave == "t2"] == "t3"))
+  expect_true(all(nic$wave[nic$original_score_wave == "t3"] == "t3"))
   haven <- dplyr::filter(scores, poll_id == "new-haven-2004")
   expect_false(any(haven$wave == "t1"))
   expect_true(any(haven$wave == "interim_1"))
@@ -82,4 +82,39 @@ test_that("Bulgaria baseline comes from the original national survey", {
   expect_setequal(scores$wave, c("t0", "t2"))
   expect_true(all(scores$wave_observed))
   expect_true(all(scores$wave[scores$original_score_wave == "t1"] == "t0"))
+})
+
+test_that("NIC separates source Time 2 exit and absent follow-up", {
+  raw <- read_poll_survey("nic-1996")
+  people <- phase_export("analysis_participants") |>
+    dplyr::filter(poll_id == "nic-1996", source_dataset == "historical")
+  scores <- phase_export("analysis_scores") |>
+    dplyr::filter(poll_id == "nic-1996", source_dataset == "historical") |>
+    dplyr::left_join(people, by = c(
+      "poll_id", "source_dataset", "respondent_id"
+    ), relationship = "many-to-one")
+  items <- phase_export("analysis_item_responses") |>
+    dplyr::filter(poll_id == "nic-1996", source_dataset == "historical")
+  expect_equal(nrow(items), nrow(raw) * 11L * 3L)
+  for (wave in 1:3) {
+    fields <- items$source_column[items$wave == paste0("t", wave)]
+    expect_true(all(endsWith(fields, as.character(wave))))
+  }
+  measures <- arrow::read_parquet(project_path(
+    "output", "respondent", "respondent_measures.parquet"
+  )) |>
+    dplyr::filter(poll_id == "nic-1996",
+      definition_id == "knowledge_midterm@historical-v1"
+    )
+  exit <- scores |>
+    dplyr::filter(wave == "t2") |>
+    dplyr::left_join(measures, by = c("poll_id", "respondent_id"),
+      relationship = "one-to-one"
+    )
+  expect_equal(exit$score, exit$value_numeric, tolerance = 1e-10)
+  followup <- scores |> dplyr::filter(wave == "t3")
+  observed <- round(raw$PART3[match(followup$source_row, raw$source_row)]) == 1
+  expect_equal(sum(observed), 387L)
+  expect_true(all(is.na(followup$score[!observed])))
+  expect_true(all(is.finite(followup$score[observed])))
 })

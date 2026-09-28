@@ -85,6 +85,12 @@ analysis_phase_presence <- function(
         poll_id == poll,
         definition_id == target$canonical_definition
       )
+    if (poll == "nic-1996" && wave == "t2") {
+      definition <- definitions |>
+        dplyr::filter(poll_id == poll, measure_id == "knowledge_midterm",
+          scoring_rule != "historical-constant-missing"
+        )
+    }
     stopifnot(nrow(definition) == 1L)
     wave_definitions <- definitions |>
       dplyr::filter(

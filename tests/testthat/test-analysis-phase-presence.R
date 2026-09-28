@@ -67,17 +67,18 @@ test_that("explicit absent-wave evidence takes precedence over the fallback", {
   expect_equal(sum(check$wave == "t2"), 33L)
   nic <- phase_presence_result |>
     dplyr::filter(poll_id == "nic-1996")
-  expect_false(any(nic$wave_observed %in% FALSE))
+  expect_false(any(nic$wave_observed[nic$wave != "t3"] %in% FALSE))
+  expect_true(any(nic$wave_observed[nic$wave == "t3"] %in% FALSE))
 })
 
 test_that("NIC phase roles distinguish event exit from the later follow-up", {
   roles <- read_metadata("analysis_phase_roles") |>
     dplyr::filter(poll_id == "nic-1996", source_dataset == "historical")
   expect_equal(roles$wave[roles$score_wave == "t1"], "t0")
-  expect_equal(roles$wave[roles$score_wave == "knowledge_midterm"], "t2")
-  expect_equal(roles$wave_role[roles$score_wave == "knowledge_midterm"],
+  expect_equal(roles$wave[roles$score_wave == "t2"], "t2")
+  expect_equal(roles$wave_role[roles$score_wave == "t2"],
                "post_deliberation")
-  expect_equal(roles$wave[roles$score_wave == "t2"], "t3")
-  expect_equal(roles$wave_role[roles$score_wave == "t2"], "follow_up")
+  expect_equal(roles$wave[roles$score_wave == "t3"], "t3")
+  expect_equal(roles$wave_role[roles$score_wave == "t3"], "follow_up")
   expect_false(any(roles$wave_role == "arrival"))
 })

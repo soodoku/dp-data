@@ -412,7 +412,7 @@ analysis_historical_items <- function(catalog) {
                                  "item_id" = "historical_item_id"),
                      relationship = "many-to-one")
   stopifnot(!anyNA(out$canonical_item_id))
-  out |>
+  out <- out |>
     dplyr::transmute(
       poll_id, source_dataset = "historical", respondent_id,
       wave = paste0("t", wave),
@@ -425,6 +425,56 @@ analysis_historical_items <- function(catalog) {
         "wave_absent", "scored"
       )
     )
+  dplyr::bind_rows(
+    dplyr::filter(out, poll_id != "nic-1996"),
+    analysis_nic_items(catalog)
+  )
+}
+
+analysis_nic_items <- function(catalog) {
+  survey <- read_poll_survey("nic-1996")
+  people <- arrow::read_parquet(project_path(
+    "output", "respondent", "people.parquet"
+  )) |>
+    dplyr::filter(poll_id == "nic-1996") |>
+    dplyr::select("source_row", "respondent_id")
+  bank <- catalog |>
+    dplyr::filter(poll_id == "nic-1996") |>
+    dplyr::arrange(item_id)
+  stopifnot(nrow(bank) == 11L)
+  purrr::map(1:3, function(wave) {
+    correct <- nic_knowledge_items(survey, wave)
+    stopifnot(identical(colnames(correct), bank$historical_item_id))
+    fields <- sub("1$", as.character(wave), bank$source_column_t1)
+    raw <- as.matrix(survey[fields])
+    out <- tibble::tibble(
+      poll_id = "nic-1996", source_dataset = "historical",
+      source_row = rep(survey$source_row, each = nrow(bank)),
+      wave = paste0("t", wave), item_id = rep(bank$item_id, nrow(survey)),
+      source_column = rep(fields, nrow(survey)),
+      raw_value = as.numeric(t(raw)), raw_text = NA_character_,
+      correct = as.integer(t(correct)),
+      response_status = dplyr::if_else(is.na(raw_value),
+        "source_missing", "answered"
+      )
+    ) |>
+      dplyr::left_join(people, by = "source_row", relationship = "many-to-one")
+    if (wave == 3L) {
+      absent <- survey$source_row[!rounded_source_code(survey$PART3) %in% 1L]
+      out <- out |>
+        dplyr::mutate(
+          correct = dplyr::if_else(
+            source_row %in% absent, NA_integer_, correct
+          ),
+          response_status = dplyr::if_else(source_row %in% absent,
+            "wave_absent", response_status
+          )
+        )
+    }
+    stopifnot(!anyNA(out$respondent_id))
+    out
+  }) |>
+    purrr::list_rbind()
 }
 
 analysis_cor_items <- function(catalog) {
