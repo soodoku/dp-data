@@ -151,7 +151,7 @@ analysis_item_responses,source_column,string,TRUE,FALSE,Original response field;
 analysis_item_responses,raw_value,float64,TRUE,FALSE,Original numeric response when retained in the source battery
 analysis_item_responses,raw_text,string,TRUE,FALSE,Original text response when retained in the source battery
 analysis_item_responses,correct,int32,TRUE,FALSE,Item correctness; control source missing is zero-filled for the published proportion score
-analysis_item_responses,response_status,string,FALSE,FALSE,Answered; source_missing; non_substantive; or scored when raw answer is unavailable in this export
+analysis_item_responses,response_status,string,FALSE,FALSE,Answered; source_missing; non_substantive; scored when raw answer is unavailable; wave_absent for a questionnaire confirmed absent by source completion status
 analysis_polls,poll_id,string,FALSE,TRUE,Stable poll identifier
 analysis_polls,title,string,FALSE,FALSE,Canonical poll title
 analysis_polls,year,int32,FALSE,FALSE,Registered poll year
@@ -196,8 +196,8 @@ analysis_scores,source_dataset,string,FALSE,TRUE,Source battery
 analysis_scores,respondent_id,string,FALSE,TRUE,ID within poll and source battery
 analysis_scores,wave,string,FALSE,TRUE,Standardized t1; t2; or t3 wave
 analysis_scores,n_items,int32,TRUE,FALSE,Number of fielded knowledge items; null for score-only records
-analysis_scores,n_observed,int32,TRUE,FALSE,Number of observed source answers; null for historical scored exports and score-only records
-analysis_scores,n_correct,int32,TRUE,FALSE,Number scored correct; null for score-only records
+analysis_scores,n_observed,int32,TRUE,FALSE,Number of observed source answers; zero for confirmed absent questionnaire; otherwise null for historical scored exports and score-only records
+analysis_scores,n_correct,int32,TRUE,FALSE,Number scored correct; null for confirmed absent questionnaires and score-only records
 analysis_scores,score,float64,TRUE,FALSE,Proportion correct or published standardized index
 analysis_scores,scale,string,FALSE,FALSE,proportion_correct or standardized_index
 analysis_items,question_display,string,FALSE,FALSE,Question text normalized for readable display

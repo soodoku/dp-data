@@ -321,7 +321,11 @@ analysis_historical_items <- function(catalog) {
       item_id = canonical_item_id, source_row,
       source_column = NA_character_, raw_value = NA_real_,
       raw_text = NA_character_,
-      correct = as.integer(correct), response_status = "scored"
+      correct = as.integer(correct),
+      response_status = dplyr::if_else(
+        poll_id == "btp-general-election-2004" & is.na(correct),
+        "wave_absent", "scored"
+      )
     )
 }
 
@@ -435,11 +439,17 @@ analysis_scores <- function(items, participants) {
   item_scores <- items |>
     dplyr::summarise(
       n_items = dplyr::n(),
+      wave_absent = all(response_status == "wave_absent"),
       n_observed = dplyr::if_else(
-        dplyr::first(source_dataset) == "historical", NA_integer_,
-        as.integer(sum(!is.na(raw_value) | !is.na(raw_text)))
+        wave_absent, 0L,
+        dplyr::if_else(
+          dplyr::first(source_dataset) == "historical", NA_integer_,
+          as.integer(sum(!is.na(raw_value) | !is.na(raw_text)))
+        )
       ),
-      n_correct = sum(correct == 1L, na.rm = TRUE),
+      n_correct = dplyr::if_else(
+        wave_absent, NA_integer_, as.integer(sum(correct == 1L, na.rm = TRUE))
+      ),
       .by = c(poll_id, source_dataset, respondent_id, wave)
     ) |>
     dplyr::mutate(

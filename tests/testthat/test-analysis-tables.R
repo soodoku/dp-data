@@ -1,4 +1,29 @@
 source(file.path(root, "R", "analysis_poll_metadata.R"))
+source(file.path(root, "R", "analysis_tables.R"))
+
+test_that("absent questionnaires stay missing while observed zero stays zero", {
+  items <- tibble::tibble(
+    poll_id = rep(
+      c(rep("btp-general-election-2004", 3), "other-poll"), each = 9
+    ),
+    source_dataset = "historical",
+    respondent_id = rep(c("absent", "zero", "one_correct", "legacy"), each = 9),
+    wave = "t2", correct = c(
+      rep(NA_integer_, 9), rep(0L, 9), 1L, rep(0L, 8), rep(NA_integer_, 9)
+    ),
+    raw_value = NA_real_, raw_text = NA_character_,
+    response_status = c(rep("wave_absent", 9), rep("scored", 27))
+  )
+  participants <- tibble::tibble(
+    poll_id = character(), source_dataset = character(),
+    respondent_id = character(),
+    score_wave1 = numeric(), score_wave2 = numeric()
+  )
+  scores <- analysis_scores(items, participants)
+  expect_equal(scores$score, c(NA_real_, 0, 1 / 9, 0))
+  expect_equal(scores$n_correct, c(NA_integer_, 0L, 1L, 0L))
+  expect_equal(scores$n_observed, c(0L, NA_integer_, NA_integer_, NA_integer_))
+})
 
 test_that("analysis exports preserve keys and canonical question IDs", {
   directory <- project_path("output", "analysis")
@@ -122,9 +147,20 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   expect_equal(nrow(tanzania_people), 2002L)
   expect_equal(sum(tanzania_people$female, na.rm = TRUE), 1052)
   expect_equal(sum(is.na(tanzania_people$female)), 1L)
+  absent <- scores$source_dataset == "historical" &
+    scores$poll_id == "btp-general-election-2004" & is.na(scores$score)
+  expect_equal(sum(absent), 46L)
+  expect_true(all(scores$n_observed[absent] == 0L))
+  expect_true(all(is.na(scores$n_correct[absent])))
   expect_true(all(is.na(scores$n_observed[
-    scores$source_dataset == "historical"
+    scores$source_dataset == "historical" & !absent
   ])))
+  absent_items <- responses$response_status == "wave_absent"
+  expect_equal(sum(absent_items), 414L)
+  expect_true(all(
+    responses$poll_id[absent_items] == "btp-general-election-2004"
+  ))
+  expect_true(all(is.na(responses$correct[absent_items])))
 })
 
 test_that("historical panel scores match the existing aggregate export", {
@@ -153,7 +189,6 @@ test_that("historical panel scores match the existing aggregate export", {
       relationship = "many-to-one"
     )
   expect_equal(nrow(panel), 2L * nrow(legacy))
-  expect_false(anyNA(panel$t1know))
   expect_equal(
     panel$score[panel$wave == "t1"],
     panel$t1know[panel$wave == "t1"], tolerance = 1e-7
