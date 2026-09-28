@@ -125,6 +125,23 @@ test_that("BTPGE-05 includes observed zero-correct post respondents", {
   ]))
 })
 
+test_that("Health achievement-gap knowledge keys decreasing in both waves", {
+  fields <- paste0("q", c(15, 16, 17, 26, 27, 28))
+  survey <- tibble::as_tibble(stats::setNames(
+    rep(list(rep(7, 5)), 12), c(fields, paste0(fields, "post"))
+  ))
+  survey$q17 <- c(1, 2, 3, 7, NA_real_)
+  survey$q17post <- c(3, 2, 1, 7, NA_real_)
+  before <- btp_health_knowledge(survey, 1L)
+  after <- btp_health_knowledge(survey, 2L)
+  expect_equal(unname(before[, "q17"]), c(0, 0, 1, 0, 0))
+  expect_equal(unname(after[, "q17"]), c(1, 0, 0, 0, 0))
+  scores <- btp_float_knowledge(before, after)
+  expect_equal(scores$knowledge_t1, as_historical_float(c(0, 0, 1 / 6, 0, 0)))
+  expect_equal(scores$knowledge_t2, as_historical_float(c(1 / 6, 0, 0, 0, 0)))
+  expect_equal(scores$knowledge_joint, rep(0, 5))
+})
+
 test_that("Health uses raw responses independently of row order", {
   survey <- read_poll_survey("btp-health-education-2005")
   expected <- build_btp_health_individual(survey)

@@ -1906,14 +1906,15 @@ correct. This was a reversed answer key, not a different scoring construct.
 The approved correction changes only that calibration key to code 2. It keeps
 the 3,298-record calibration universe, six question keys, available-item
 missing policy, zero for all-six-missing, float32 storage and seven-decimal
-rounding. The poll descriptor changes from 0.277147799730301 to
-0.337037593126297. All 454 participant knowledge scores remain unchanged.
+rounding. At BTPHE-03, the poll descriptor changed from 0.277147799730301 to
+0.337037593126297, while all 454 participant knowledge scores stayed unchanged.
+The later BTPHE-04 correction below changes Q17 in both scoring universes.
 The source answers and identities remain in `calibration-responses.parquet`.
 The 20 `genvar` differences against the frozen historical deposit are
 preexisting singular covariance exceptions documented in X-09, not effects of
 this correction.
 
-### BTPHE-04: Elementary-school achievement-gap answer key conflicts with briefing (proposed)
+### BTPHE-04: Elementary-school achievement-gap answer key corrected
 
 Both the [pre-questionnaire](../data/btp-health-education-2005/questionnaire-pre.pdf)
 and [post-questionnaire](../data/btp-health-education-2005/questionnaire-post.pdf),
@@ -1921,7 +1922,7 @@ PDF page 4, ask Q17: “Has the gap between minority students and white students
 in math and reading tests at the elementary school level been …?” The choices
 are increasing the last few years, staying about the same, decreasing the last
 few years, and couldn't say. The source value labels map these to codes 1, 2,
-3 and 7, respectively. The present key credits code 1, increasing, in both
+3 and 7, respectively. The former key credited code 1, increasing, in both
 waves; the archived `btp05.R` does the same. The stored `q17r` and `q17postr`
 correctness fields also credit only code 1. This discrepancy is inherited from
 the original scoring, rather than introduced by the modernized script.
@@ -1941,29 +1942,63 @@ attendees. Do not force report denominators onto the current sample.
 
 | Q17 response | Baseline, 454 people | Departure, 454 people |
 |---|---:|---:|
-| Increasing, current keyed answer | 151 | 138 |
-| Decreasing, proposed keyed answer | 90 | 142 |
-| Correctness cells that would flip | 241 | 280 |
+| Increasing, former keyed answer | 151 | 138 |
+| Decreasing, approved keyed answer | 90 | 142 |
+| Correctness cells that flip | 241 | 280 |
 
-Changing only this key would flip 521 item cells across 345 distinct people.
-The six-item score mean would move from 37.481645% to 35.242291% at baseline
-and from 41.005874% to 41.152717% at departure; mean gain would move from
-3.524229 to 5.910426 percentage points. These are candidate effects, not
-adopted outputs. Keep the same 454-person cohort, six-item denominator,
-missingness policy and other five keys. All derived group and poll quantities
-must continue to be calculated centrally after respondent scoring.
+The approved correction changes only this key and flips 521 item cells across
+345 distinct people. The six-item score mean moves from 37.481645% to 35.242291%
+at baseline and from 41.005874% to 41.152717% at departure; mean gain moves from
+3.524229 to 5.910426 percentage points. It retains the same 454-person cohort,
+six-item denominator, missingness policy and other five keys. Group and poll
+quantities are recalculated centrally after respondent scoring.
 
 The separate 3,298-record calibration source has 933 increasing and 704
 decreasing answers. Under its existing available-item scoring rule, changing
-Q17 alone affects 1,637 calibration scores. Its poll descriptor would move from
+Q17 alone affects 1,637 calibration scores. Its poll descriptor moves from
 0.337037593126297 (after BTPHE-03) to 0.32561150193214417. The available-item
 rule, all-missing zero convention and historical float storage are unchanged
-in this comparison. Other dependent individual, group and poll fields must
-be compared in a full build if the key change is approved.
+in this correction. Dependent individual, group and poll fields are covered
+by the complete before/after build and the frozen case-level comparisons in
+`audit/corrections/btp-health-education-2005/approved_values.csv`.
 
-**Recommendation:** use code 3 at both waves and in the calibration battery,
-consistent with the briefing, subject to the user's poll-specific approval.
-No key or generated output has been changed for this proposal.
+The user approved code 3 at both waves and in calibration. The shared
+respondent scorer supplies the key to the calibration step; the item-level
+key registry and canonical catalog also use code 3. Seven respondent
+definitions and their dependent aggregate aliases are versioned
+`@btphe-04-v2`; affected group and poll definitions use `btphe-04-v2`. Source
+responses and deposited historical scored batteries remain unchanged, so their
+old key is still available for comparison. No group or poll formula changes
+are part of this correction.
+
+The full output comparison confirms 1,304 changed respondent-measure values:
+
+| Respondent measure | Changed values |
+|---|---:|
+| Baseline knowledge | 241 |
+| Departure knowledge | 280 |
+| Joint knowledge | 126 |
+| Knowledge gain | 301 |
+| Gain over joint knowledge | 218 |
+| Log joint knowledge | 126 |
+| High joint-knowledge flag | 12 |
+
+Exactly 26 fields change in the historical aggregate: 12 individual aliases
+and 14 centrally calculated knowledge summaries, gains and calibration fields.
+The full aggregate keeps 5,869 rows and 364 columns. Every other field and every
+other poll is identical. IDs, memberships, raw source responses and briefing
+reading exports are byte-identical. `field_changes.csv` in the same correction
+folder records changes against the original benchmark, including earlier gender
+corrections; `approved_values.csv` preserves the original benchmark values.
+
+Both historical and reconstructed Cor–Sood analysis representations contain
+the same corrected Q17 responses: 241 baseline and 280 departure item and
+wave-score changes in each representation. These are duplicate representations
+of the same 454 people, not 908 different participants. Correct-count changes
+follow the new key; observed-response counts and missingness do not change.
+The committed `dp-learning` reader at `829face` still selects the same 10,598
+people. Only BTP knowledge inputs change, for 345 people (241 baseline and 280
+departure scores). No downstream models or papers were re-estimated.
 
 ## BTP Online Primaries 2004 — btp-online-primaries-2004
 

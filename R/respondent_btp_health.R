@@ -81,7 +81,7 @@ btp_health_attitudes <- function(survey, wave) {
 }
 
 btp_health_knowledge <- function(survey, wave) {
-  keys <- c(q15 = 2, q16 = 1, q17 = 1, q26 = 3, q27 = 3, q28 = 3)
+  keys <- c(q15 = 2, q16 = 1, q17 = 3, q26 = 3, q27 = 3, q28 = 3)
   purrr::imap(keys, function(correct, item) {
     field <- paste0(item, if (wave == 2L) "post" else "")
     value <- btp_source_codes(survey, field, c(1:5, 7))

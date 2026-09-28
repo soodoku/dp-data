@@ -36,6 +36,19 @@ test_that("US poll calibration preserves earlier scoring and sample vintages", {
   )
 })
 
+test_that("Health corrected calibration retains available-item denominators", {
+  fields <- paste0("q", c(15, 16, 17, 26, 27, 28))
+  survey <- tibble::as_tibble(stats::setNames(
+    rep(list(rep(NA_real_, 6)), length(fields)), fields
+  ))
+  survey$q17 <- c(1, 2, 3, 7, NA_real_, 3)
+  survey$q15[2] <- 2
+  expect_equal(
+    reviewed_us_baseline_level("btp-health-education-2005", survey),
+    as_historical_float(.4166667)
+  )
+})
+
 test_that("US aggregates match except diagnosed singular covariances", {
   benchmark <- readr::read_tsv(
     project_path("evidence", "benchmarks", "polardata.tab"),
@@ -68,8 +81,13 @@ test_that("US aggregates match except diagnosed singular covariances", {
       )
     }
     if (poll == "btp-health-education-2005") {
-      for (field in c("female", "pfemale", "varfemale", "sdfemale",
-                      "pfemale_ind", "entropy", "t1knowlevel")) {
+      for (field in c(
+        "female", "pfemale", "varfemale", "sdfemale", "pfemale_ind", "entropy",
+        "meant1know", "meant1knowr", "meant1know_ind",
+        "meant1knowcor", "meant1knowrcor", "meant1knowcor_ind",
+        "meant2know", "t1knowlevelcor", "t1knowlevelrcor", "t2knowlevel",
+        "t1knowlevel", "grpgain", "grpgainr", "loggain"
+      )) {
         expected[[field]] <- approved_reference_values(
           poll, field, expected$caseid, expected[[field]]
         )

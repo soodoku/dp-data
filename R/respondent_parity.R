@@ -69,8 +69,15 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
       ), rows = 132L
     ),
     "btp-health-education-2005" = list(
-      fields = c("female", "pfemale", "varfemale", "sdfemale",
-                 "pfemale_ind", "entropy", "t1knowlevel"), rows = 454L
+      fields = c(
+        "female", "pfemale", "varfemale", "sdfemale", "pfemale_ind", "entropy",
+        "t1know", "t1knowr", "t1knowcor", "t2know", "t1knowrcor", "t2knowr",
+        "knowgain", "knowgain2", "logpk", "tobitpk", "knowgainr", "knowgainr2",
+        "meant1know", "meant1knowr", "meant1know_ind", "meant1knowcor",
+        "meant1knowrcor", "meant1knowcor_ind", "meant2know", "t1knowlevelcor",
+        "t1knowlevelrcor", "t2knowlevel", "t1knowlevel", "grpgain", "grpgainr",
+        "loggain"
+      ), rows = 454L
     ),
     "tomorrows-europe-2007" = list(
       fields = c(
