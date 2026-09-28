@@ -3354,10 +3354,143 @@ also has 359 departure respondents. The contemporary
 reports 364 event participants in its recruitment table, a different count
 from both the available T2 file and the anonymous battery; the event count
 cannot identify the missing or extra rows. No verified discussion-group roster
-is attached. **Next check:** recover the deposited battery's exact source version
-and inclusion rule, then check the [questionnaire](../data/denmark-euro-2000/questionnaire.pdf)
-and component dictionaries before changing eligibility. The 358 exact matches
-do not establish a score comparison for the six nonmatching records.
+is attached. DK-02–04 below complete the questionnaire, dictionary and published
+key checks. The remaining provenance task is to recover the deposited battery's
+exact source version and inclusion rule before changing eligibility. The 358
+exact matches do not establish a score comparison for the six nonmatching
+records; preserve the documented 359 departure interviews.
+
+### DK-02: Independent factual keys and departure estimates agree (checked)
+
+The nine-item battery retains six factual questions and three party-position
+questions. The source dictionaries identify each question by its label and
+meaning; join baseline `delnr` to departure `DELNR`, not source-row position.
+There are 390 unique nonmissing baseline participant numbers and 359 unique
+departure numbers. Every departure number matches exactly one baseline row;
+31 numbered baseline records have no departure record. Preserve the 359-pair
+selection in DK-01; neither the paper's 364 attendees nor the anonymous
+363-row battery supplies identities for additional departure interviews.
+
+The factual keys are independently printed in
+[Deliberative Democracy and the Euro](../data/denmark-euro-2000/papers/deliberative-democracy-euro.pdf),
+Table 9, PDF page 19 / printed page 279, and
+[How Deliberation Makes Better Citizens](../data/denmark-euro-2000/papers/how-deliberation-makes-better-citizens.pdf),
+Table 7, PDF page 15 / printed page 545. The following counts refer to the
+359 paired people. Explicit don't-know answers count as noncorrect in these
+percentages; system missing answers are excluded from the item percentage,
+as distinct from the fixed-denominator respondent index.
+
+| Question meaning | T0 / T2 fields | Correct code / answer | T0 correct / denominator | T2 correct / denominator | T2 percent; paper percent |
+| --- | --- | --- | --- | --- | --- |
+| Denmark could be fined for an excessive fiscal deficit as a monetary-union member | `s_18` / `S4_2` | 1 / true | 148/359 | 284/357 | 79.55182%; 80% |
+| Denmark could decide its own interest rates after joining | `s_19` / `S5_2` | 2 / false | 265/359 | 293/357 | 82.07283%; 82% |
+| Denmark could decide its own tax rates after joining | `s_20` / `S6_2` | 1 / true | 230/359 | 295/357 | 82.63305%; 83% |
+| Year euro circulation would begin in Denmark following a yes vote | `s_21` / `S7_2` | 2 / 2004 | 185/359 | 317/357 | 88.79552%; 89% |
+| Fate of the Danish National Bank after joining | `s_22` / `S8_2` | 3 / become part of the European Central Bank | 212/359 | 235/355 | 66.19718%; 66% |
+| Whether euro coins would have a national side | `s_23` / `S9_2` | 1 / yes | 190/359 | 335/356 | 94.10112%; 94% |
+
+The additional factual currency-cooperation item `s_24` / `S10_2`, omitted
+from the inherited nine-item battery, scores yes: 298/359 (83.00836%) before
+and 307/354 (86.72316%) after, consistent with the papers' 83% and 87%.
+The six retained baseline percentages are 41.22563%, 73.81616%, 64.06685%,
+51.53203%, 59.05292% and 52.92479%. The papers report 41%, 73%, 64%, 51%,
+59% and 53%; two baseline figures do not round identically. Their participant
+sample is not identical to the available 359 departure records, and their
+note gives item N between 354 and 364. Do not claim exact reproduction of
+those two baseline estimates or change a key to force agreement.
+
+The maintained party fields are `s_25_07` / `S11_7_2` (Socialist People's
+Party), `s_25_09` / `S11_9_2` (Christian People's Party) and `s_25_11` /
+`S11_11_2` (Progress Party). All use code 2, Recommend No; codes 1 and 3 mean
+Recommend Yes and Don't know. Their baseline counts for codes 1/2/3 are
+63/270/26, 137/165/57 and 47/275/37; departure counts for 1/2/3/system-missing
+are 14/321/13/11, 51/265/29/14 and 23/305/23/8. These are the archived
+`denmark.R` keys. In particular, do not reverse the Christian People's Party
+key based on an assumption about a generally pro-EU party: Jann Sjursen's
+[6 September 2000 parliamentary speech](https://www.folketingstidende.dk/samling/19991/lovforslag/L288/19991_L288_BEH3_M103_referat.pdf),
+printed page 9624, argues that Denmark should retain the krone and remain
+outside the euro.
+
+Across all 6,462 maintained item cells, direct raw-field reconstruction finds
+zero differences from exported raw values or typed correctness. Baseline has
+503 explicit don't-know item responses and no system-missing cells; departure
+has 184 explicit don't-know and 48 system-missing cells. Codes 3, 4 and 5 are
+question-specific don't-know choices, not universal missing codes. The
+fixed-nine-item means are 60.04333% and 82.01795%.
+
+Departure ID 321 (departure source row 296; baseline source row 1346) has all
+nine maintained departure knowledge answers missing, but 41 other departure
+answers observed, including the Liberal Party recommendation. This is a
+partially answered questionnaire, not an absent departure interview. Its
+current zero-filled nine-item departure score remains zero; retain the raw
+missingness and do not infer nonattendance from this score alone.
+
+### DK-03: Archived zero-filling copied baseline facts into departure columns
+
+Line 238 of `historical-cdd-scripts:legacy/poll_scripts/denmark.R` assigns to
+`t2pk1:t2pk7` but reads `t0pk1:t0pk7` on the right-hand side, while correctly
+reading T2 party-position columns. This overwrites the seven zero-filled departure factual correctness columns
+with baseline correctness.
+The preceding `t2pk*raw` recodes use genuine departure answers, so the raw
+columns are distinct from the overwritten columns. Earlier `t2know` is
+calculated before the overwrite; do not assume every archived summary was
+affected.
+
+On the available 359 paired people, executing that assignment would replace
+916 of 2,513 seven-item departure correctness cells, affecting 336 people.
+The per-item differences are 178, 106, 105, 154, 147, 161 and 65. The correctly
+zero-filled seven-fact departure mean is 82.21250%; copied baseline facts
+would give 60.80382%. Within the six facts retained in our nine-item battery,
+851 cells across 333 people differ, and 300 people's fixed-nine-item departure
+scores would differ. The current pipeline reconstructs correctness directly
+from T2 raw answers and avoids this statement; the zero-difference check in
+DK-02 confirms it does not copy T0 into T2. Record this as a genuine historical
+script error already avoided by reconstruction, not a proposed change to
+current outputs. The anonymous deposited raw battery cannot establish which
+execution produced other archived nonraw columns.
+
+### DK-04: The retained English questionnaire is an earlier instrument version
+
+The [retained questionnaire](../data/denmark-euro-2000/questionnaire.pdf)
+is visibly provisional: PDF page 1 says background questions will probably
+be placed at the end; page 7 describes one section as work in progress.
+Its page 2 gives four choices for the fiscal-deficit and monetary-policy
+items, including an undecided-policy alternative; the actual T0/T2 source
+labels give three choices (true, false, don't know). Page 3 gives circulation
+years 2001/2004/2007/2010, whereas the source and both papers give
+2001/2004/2005/2007. It also adds a museum alternative to the National Bank
+item and says coins and bills, while the source asks about coins only.
+Page 4 orders party names differently from the source field numbers and
+omits the source's thirteenth party, Freedom 2000. Do not replace source
+labels or remap codes using this earlier questionnaire. The papers and
+actual source dictionaries substantiate the retained keys; obtaining the
+final fielded forms remains an instrument-provenance task.
+
+The catalog's `knowledge_004` question text is now corrected to preserve the
+actual task: which circulation year follows a yes vote, with four dated
+alternatives. Its earlier paraphrase asked whether circulation would begin in
+2001, changing it into a yes/no question while retaining a four-choice response
+schema. The complete departure `S7_2` label and Table 9's wording support the
+restored year-choice question. Key 2 / 2004 and every numeric response, score,
+respondent and membership remain unchanged; only item catalog descriptions
+and their generated analysis export change.
+
+The selected 359 people's source gender codes are 206 male and 153 female;
+there are no invalid codes or missing gender, and age from `2000 - s_02`
+ranges from 18 to 88. Other demographics are not currently exported as
+derived Denmark measures. Source education code 10 means refusal (four
+full-source people, zero selected); income-status codes 2 and 3 mean don't
+know and refusal (267/76 full-source people, 39/12 selected). Preserve those
+missing states in any future demographic expansion. Full-source row 1430,
+with no participant number, has birth year 1987, implying age 13 despite
+the adult recruitment wording. It is outside the paired sample; flag its
+age for source verification rather than guessing a replacement birth year.
+
+**Decision:** preserve current eligibility, nine-item keys and typed missingness.
+The newly identified copy error is absent from current outputs. Resolve the
+remaining anonymous-battery and final-instrument provenance limitations with
+additional source versions or logs, rather than changing people or codes to
+match aggregate counts.
 
 ## Northern Ireland 2007 — northern-ireland-2007
 
@@ -3391,6 +3524,64 @@ The first-roster-row issue was subsequently corrected as described in NI-01.
 The old vault inventory remains historical provenance, not a required runtime
 input list.
 See [dp-nireland data documentation](../../dp-nireland/docs/data.md).
+
+### NI-03: Knowledge keys reproduce the paper; restore the first question's condition
+
+**Status:** source audit checked; catalog wording corrected, scoring preserved.
+The original `historical-cdd-scripts:legacy/poll_scripts/n_ireland.R`, lines
+95/503, preserves the full first question: “What percentage of
+majority-Protestant or majority-Catholic schools in Northern Ireland have at
+least 10% of the other religion in their enrolment?” The maintained catalog
+had shortened this to the share of schools that were mostly Protestant or
+Catholic, omitting the mixed-enrolment condition and changing the question's
+meaning. `metadata/items.csv` now restores the script's wording, independently
+confirmed by the Political Studies paper, PDF p.8, Table 1, and the event
+report, PDF p.34 (printed p.32). No numeric item response or answer key changes.
+
+The dictionaries establish a real option-order change: at baseline, code 1 is
+“more than 50%” and code 4 is “5-10%”; at departure the first of those choices
+is absent and “5-10%” is code 3. Therefore keys 4 and 3 are the same substantive
+answer. Do not unify their raw code numbers. The seven baseline keys remain
+4/4/1/4/3/1/4 and departure keys3/4/1/4/3/1/4. The other correct answers are a
+10% decrease in entering pupils; at least 24 subject choices for 14-year-olds;
+one third applied subjects; approximately three quarters of grammar pupils
+going to university; greater funding for older pupils; and the board of
+governors as voluntary grammar teachers' employer. These meanings are printed
+in the paper and report, rather than inferred from matching the scored deposit.
+
+For all 124 `attend==1` source respondents, their IDs exactly match the 124-row
+roster. The seven raw-answer counts reproduce all 14 rounded proportions in
+the paper's Table 1:
+
+| Item | Correct baseline / 124 | Correct departure / 124 | Baseline % | Departure % |
+| --- | ---: | ---: | ---: | ---: |
+| Mixed enrolment | 30 | 44 | 24.19355 | 35.48387 |
+| Falling enrolment | 23 | 59 | 18.54839 | 47.58065 |
+| Subject choices | 26 | 93 | 20.96774 | 75.00000 |
+| Applied subjects | 36 | 78 | 29.03226 | 62.90323 |
+| Grammar/university | 36 | 54 | 29.03226 | 43.54839 |
+| Funding by age | 28 | 98 | 22.58065 | 79.03226 |
+| Employing authority | 10 | 11 | 8.06452 | 8.87097 |
+
+Mean knowledge is 0.2177419355 before and 0.5034562212 after, a gain of
+0.2857142857, reproducing the printed 0.218/0.503/0.286. All 1,736 source
+item cells agree with the authored correct/incorrect flags; the complete
+attendee batteries have no system-missing responses, though explicit don't
+know/no-answer codes are present and preserved in the response-status layer.
+All 124 attendee ages are observed, range 24–59, mean 40.69354839. Eight
+attendees report education “other answers” and one has system missing;
+these are not an ordered qualification and remain missing in the existing
+canonical education recode.
+
+The earlier event report uses a different analytical version: its Appendix A
+knowledge index has N = 121 and means 0.215/0.498 (PDF p.43, printed p.41), and
+its Appendix B participant age also has N = 121 (PDF p.44, printed p.42).
+Those figures should not be imposed on the later 124-person paper dataset.
+The report's seven percentages are not reproduced by the 124-person source,
+but the later paper's 14 item percentages and mean scores are. No identity
+bridge for the earlier 121-person analysis has been established; do not drop
+three current respondents to force that match. Raw age and education coding,
+all scores, memberships and the existing sample remain unchanged.
 
 ## Polls outside the 23-battery canonical build
 
