@@ -2532,7 +2532,9 @@ the eight closed/placement items. The codebook explicitly defines inclusive
 correct ranges: WEDLOCK 25–40, AFDC 1–10, and UNEMP 5–10, in each of three
 waves (codebook lines 4916–5668). Recomputing these from raw responses matches
 every nonmissing stored correctness code across all 911 source records.
-The historical baseline/post scores use waves 1/3; arrival is wave 2. Missing
+The historical selected baseline/post scores use source waves 1/3. Source wave 2
+is immediate exit, and source wave 3 is a ten-month follow-up; the older
+arrival label was incorrect (see X-02). Missing
 answers score zero with a fixed denominator of 11. The existing eight-item
 knowledge outputs retain their separate definition. SPEND2 code 9 is documented
 as missing (line 5545); SPDRUG2 code 9 is likewise missing (line 3635).
@@ -2541,7 +2543,7 @@ The [NIC paper](../data/nic-1996/papers/nic-paper.pdf) Table 4 (printed
 p. 29) provides a third definition to keep distinct: its "Information
 Summary" reproduces from the **nine factual items**, excluding the two party
 placements. The maintained source recodes give 0.433476 at baseline and
-0.518598 on arrival for all 466 participants, and 0.551536 at follow-up for
+0.518598 at immediate exit for all 466 participants, and 0.551536 at follow-up for
 the 387 participants with `PART3 == 1`; the paper reports .43, .52 and .55.
 The eleven-item means for those same wave samples are 0.465275, 0.546820 and
 0.574818. The published summary's nine-item construction is inferred from
@@ -5291,3 +5293,27 @@ direction and range do not establish equal psychometric meaning across
 different wording or response counts. Any within-poll z-score needs a
 separately named definition and a fixed reference sample; it is not folded
 into this scale or implemented by a downstream reader.
+
+
+**Phase-export implementation (2026-09-27).** The two additional analysis
+exports preserve historical selected-wave tables and provide reviewed phase
+roles, original score labels, timing evidence and nullable questionnaire
+presence. NIC's codebook opening paragraphs describe T2 as event-exit surveys
+plus 172 contemporaneous telephone interviews with nonattendees. The NIC paper
+PDF p.19 dates T3 about ten months later, after the presidential election.
+Accordingly the historical eleven-item source-T2 measure maps to t2, source T3
+to t3, and no NIC arrival measurement is established. New Haven's paper PDF
+p.8 places its Mid survey after the first deliberative session: retain it as
+interim_1 rather than calling it arrival. These change timing metadata, not
+answers or existing selected-wave score values.
+
+Questionnaire presence requires positive evidence from actual answer fields,
+not identifiers or generated correctness flags. Five NIC records have CASEID
+as their only nonmissing baseline measure input, with generated source flags
+present but all original baseline answers absent. Their baseline presence
+remains unknown; neither zero-filling nor group assignment establishes an
+interview. Denmark departure respondent 321 has all nine quiz fields blank but
+41 other questionnaire answers: its observed questionnaire retains score zero.
+Marousi's recruitment export retains 1,275 telephone records, with 159
+respondents having arrival or exit questionnaire evidence and 1,116 with
+unknown attendance. No attendance classification relies solely on a group.

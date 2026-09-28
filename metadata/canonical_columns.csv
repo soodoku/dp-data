@@ -242,3 +242,38 @@ analysis_attitude_responses,respondent_id,string,FALSE,TRUE,Baseline policy atti
 analysis_attitude_responses,attitude_id,string,FALSE,TRUE,Baseline policy attitude; see docs/analysis-tables.md
 analysis_attitude_responses,wave,string,FALSE,TRUE,Baseline policy attitude; see docs/analysis-tables.md
 analysis_attitude_responses,value,float64,TRUE,FALSE,Baseline policy attitude; see docs/analysis-tables.md
+analysis_phase_scores,poll_id,string,FALSE,TRUE,Stable poll identifier
+analysis_phase_scores,source_dataset,string,FALSE,TRUE,Source battery
+analysis_phase_scores,respondent_id,string,FALSE,TRUE,ID within poll and source battery
+analysis_phase_scores,wave,string,FALSE,TRUE,Uniform event phase: t0 pre-arrival; t1 arrival/start; t2 immediate post; t3 onward followups; interim_1 within-event measurement
+analysis_phase_scores,n_items,int32,TRUE,FALSE,Number of fielded knowledge items; null for score-only records
+analysis_phase_scores,n_observed,int32,TRUE,FALSE,Number of observed source answers; zero for confirmed absent questionnaire; otherwise null for historical scored exports and score-only records
+analysis_phase_scores,n_correct,int32,TRUE,FALSE,Number scored correct; null for confirmed absent questionnaires and score-only records
+analysis_phase_scores,score,float64,TRUE,FALSE,Proportion correct or published standardized index
+analysis_phase_scores,scale,string,FALSE,FALSE,proportion_correct or standardized_index
+analysis_phase_scores,wave_observed,bool,TRUE,FALSE,True if raw answers or source questionnaire evidence establish presence; false if absent; null if undetermined
+analysis_phase_scores,battery_id,string,FALSE,TRUE,Within-source factual battery; different source deposits are not assumed interchangeable
+analysis_phase_scores,original_score_wave,string,FALSE,FALSE,Original canonical score label or knowledge_midterm measure name before event-phase mapping
+analysis_phase_scores,wave_role,string,FALSE,FALSE,Verified role: pre_arrival; arrival; post_deliberation; follow_up; interim_deliberation
+analysis_phase_scores,timing_evidence,string,FALSE,FALSE,Source timing reference supporting event-phase assignment
+analysis_phase_participants,poll_id,string,FALSE,TRUE,Stable poll identifier
+analysis_phase_participants,source_dataset,string,FALSE,TRUE,Source battery: historical; cor_sood; control; or score_only
+analysis_phase_participants,respondent_id,string,FALSE,TRUE,ID within poll and source battery
+analysis_phase_participants,historical_respondent_id,string,TRUE,FALSE,Documented historical caseid alias for source-linked participant rows
+analysis_phase_participants,source_row,int32,FALSE,FALSE,One-based row in source file; AMR uses its baseline row
+analysis_phase_participants,identity_basis,string,FALSE,FALSE,Source ID or file-scoped row identifier
+analysis_phase_participants,arm,string,TRUE,FALSE,Observed treatment or participation category; not necessarily randomized
+analysis_phase_participants,assignment,string,TRUE,FALSE,Assigned or invited group where identified in the source
+analysis_phase_participants,attended,bool,TRUE,FALSE,Observed event attendance; null when unmeasured
+analysis_phase_participants,panel,bool,FALSE,FALSE,Person is in the available T1-T2 analysis panel
+analysis_phase_participants,small_group_id,string,TRUE,FALSE,Source discussion-group identifier where observed
+analysis_phase_participants,cluster_id,string,TRUE,FALSE,Cluster for study inference; Tanzania uses village
+analysis_phase_participants,country,string,TRUE,FALSE,Participant country where needed to disaggregate a multi-country poll
+analysis_phase_participants,weight,float64,TRUE,FALSE,Source analysis weight; null when unavailable
+analysis_phase_participants,ba,float64,TRUE,FALSE,BA-or-more indicator harmonized from source schooling codes where available
+analysis_phase_participants,female,float64,TRUE,FALSE,Source-derived female indicator where coding is verified
+analysis_phase_participants,age,float64,TRUE,FALSE,Baseline age in years; BTP 2007 uses survey year minus birth year
+analysis_phase_participants,education,float64,TRUE,FALSE,Harmonized schooling: 0 below secondary completion; 0.5 secondary or some college; 1 degree or higher
+analysis_phase_participants,minority,float64,TRUE,FALSE,Source-derived historical minority indicator; missing where no reviewed harmonization exists
+analysis_phase_participants,extremity,float64,TRUE,FALSE,Historical baseline attitude-extremity index; missing where no reviewed harmonization exists
+analysis_phase_participants,read_briefing,float64,TRUE,FALSE,Reported briefing reading before discussions on a zero-to-one ordinal scale; elicited after deliberation
