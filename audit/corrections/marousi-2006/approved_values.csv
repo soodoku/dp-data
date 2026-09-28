@@ -1,4 +1,4 @@
-historical_caseid,source_row,original_stable_id,arrival_id,departure_id,group,telephone_score_unchanged,current_departure_score,proposed_departure_score,departure_questionnaire_observed,reason
+historical_caseid,source_row,original_stable_id,arrival_id,departure_id,group,telephone_score_unchanged,current_departure_score,approved_departure_score,departure_questionnaire_observed,reason
 80000,1,30154,30154,30154,1,0.2857142984867096,0,0.2857142857142857,True,partial_quiz_positive_score_replaced_by_zero
 80001,2,8805,8805,9046,1,0.2857142984867096,0.4285714328289032,0.42857142857142855,True,unchanged_observed_score
 80002,3,2197,2197,2197,1,0.1428571492433548,0.4285714328289032,0.42857142857142855,True,unchanged_observed_score

@@ -1,0 +1,1736 @@
+source_column,source_value,value_label
+P_Q1,1,always
+P_Q1,2,usually
+P_Q1,3,half the time
+P_Q1,4,occasionally
+P_Q1,5,never
+P_Q1,9,no answer
+P_Q2,1,definitely yes
+P_Q2,2,probably yes
+P_Q2,3,probably not
+P_Q2,4,definitely not
+P_Q2,5,undecided
+P_Q2,9,no answer
+P_Q3_1,0,0 (extremely insignificant)
+P_Q3_1,1,1
+P_Q3_1,2,2
+P_Q3_1,3,3
+P_Q3_1,4,4
+P_Q3_1,5,5
+P_Q3_1,6,6
+P_Q3_1,7,7
+P_Q3_1,8,8
+P_Q3_1,9,9
+P_Q3_1,10,10 (extremely significant)
+P_Q3_1,88,i haven't thought much about this
+P_Q3_1,99,no answer
+P_Q3_2,0,0 (extremely insignificant)
+P_Q3_2,1,1
+P_Q3_2,2,2
+P_Q3_2,3,3
+P_Q3_2,4,4
+P_Q3_2,5,5
+P_Q3_2,6,6
+P_Q3_2,7,7
+P_Q3_2,8,8
+P_Q3_2,9,9
+P_Q3_2,10,10 (extremely significant)
+P_Q3_2,88,i haven't thought much about this
+P_Q3_2,99,no answer
+P_Q3_3,0,0 (extremely insignificant)
+P_Q3_3,1,1
+P_Q3_3,2,2
+P_Q3_3,3,3
+P_Q3_3,4,4
+P_Q3_3,5,5
+P_Q3_3,6,6
+P_Q3_3,7,7
+P_Q3_3,8,8
+P_Q3_3,9,9
+P_Q3_3,10,10 (extremely significant)
+P_Q3_3,88,i haven't thought much about this
+P_Q3_3,99,no answer
+P_Q3_4,0,0 (extremely insignificant)
+P_Q3_4,1,1
+P_Q3_4,2,2
+P_Q3_4,3,3
+P_Q3_4,4,4
+P_Q3_4,5,5
+P_Q3_4,6,6
+P_Q3_4,7,7
+P_Q3_4,8,8
+P_Q3_4,9,9
+P_Q3_4,10,10 (extremely significant)
+P_Q3_4,88,i haven't thought much about this
+P_Q3_4,99,no answer
+P_Q3_5,0,0 (extremely insignificant)
+P_Q3_5,1,1
+P_Q3_5,2,2
+P_Q3_5,3,3
+P_Q3_5,4,4
+P_Q3_5,5,5
+P_Q3_5,6,6
+P_Q3_5,7,7
+P_Q3_5,8,8
+P_Q3_5,9,9
+P_Q3_5,10,10 (extremely significant)
+P_Q3_5,88,i haven't thought much about this
+P_Q3_5,99,no answer
+P_Q3_6,0,0 (extremely insignificant)
+P_Q3_6,1,1
+P_Q3_6,2,2
+P_Q3_6,3,3
+P_Q3_6,4,4
+P_Q3_6,5,5
+P_Q3_6,6,6
+P_Q3_6,7,7
+P_Q3_6,8,8
+P_Q3_6,9,9
+P_Q3_6,10,10 (extremely significant)
+P_Q3_6,88,i haven't thought much about this
+P_Q3_6,99,no answer
+P_Q3_7,0,0 (extremely insignificant)
+P_Q3_7,1,1
+P_Q3_7,2,2
+P_Q3_7,3,3
+P_Q3_7,4,4
+P_Q3_7,5,5
+P_Q3_7,6,6
+P_Q3_7,7,7
+P_Q3_7,8,8
+P_Q3_7,9,9
+P_Q3_7,10,10 (extremely significant)
+P_Q3_7,88,i haven't thought much about this
+P_Q3_7,99,no answer
+P_Q3_8,0,0 (extremely insignificant)
+P_Q3_8,1,1
+P_Q3_8,2,2
+P_Q3_8,3,3
+P_Q3_8,4,4
+P_Q3_8,5,5
+P_Q3_8,6,6
+P_Q3_8,7,7
+P_Q3_8,8,8
+P_Q3_8,9,9
+P_Q3_8,10,10 (extremely significant)
+P_Q3_8,88,i haven't thought much about this
+P_Q3_8,99,no answer
+P_Q3_9,0,0 (extremely insignificant)
+P_Q3_9,1,1
+P_Q3_9,2,2
+P_Q3_9,3,3
+P_Q3_9,4,4
+P_Q3_9,5,5
+P_Q3_9,6,6
+P_Q3_9,7,7
+P_Q3_9,8,8
+P_Q3_9,9,9
+P_Q3_9,10,10 (extremely significant)
+P_Q3_9,88,i haven't thought much about this
+P_Q3_9,99,no answer
+P_Q3_10,0,0 (extremely insignificant)
+P_Q3_10,1,1
+P_Q3_10,2,2
+P_Q3_10,3,3
+P_Q3_10,4,4
+P_Q3_10,5,5
+P_Q3_10,6,6
+P_Q3_10,7,7
+P_Q3_10,8,8
+P_Q3_10,9,9
+P_Q3_10,10,10 (extremely significant)
+P_Q3_10,88,i haven't thought much about this
+P_Q3_10,99,no answer
+P_Q3_11,0,0 (extremely insignificant)
+P_Q3_11,1,1
+P_Q3_11,2,2
+P_Q3_11,3,3
+P_Q3_11,4,4
+P_Q3_11,5,5
+P_Q3_11,6,6
+P_Q3_11,7,7
+P_Q3_11,8,8
+P_Q3_11,9,9
+P_Q3_11,10,10 (extremely significant)
+P_Q3_11,88,i haven't thought much about this
+P_Q3_11,99,no answer
+P_Q3_12,0,0 (extremely insignificant)
+P_Q3_12,1,1
+P_Q3_12,2,2
+P_Q3_12,3,3
+P_Q3_12,4,4
+P_Q3_12,5,5
+P_Q3_12,6,6
+P_Q3_12,7,7
+P_Q3_12,8,8
+P_Q3_12,9,9
+P_Q3_12,10,10 (extremely significant)
+P_Q3_12,88,i haven't thought much about this
+P_Q3_12,99,no answer
+P_Q3_13,0,0 (extremely insignificant)
+P_Q3_13,1,1
+P_Q3_13,2,2
+P_Q3_13,3,3
+P_Q3_13,4,4
+P_Q3_13,5,5
+P_Q3_13,6,6
+P_Q3_13,7,7
+P_Q3_13,8,8
+P_Q3_13,9,9
+P_Q3_13,10,10 (extremely significant)
+P_Q3_13,88,i haven't thought much about this
+P_Q3_13,99,no answer
+P_Q3_14,0,0 (extremely insignificant)
+P_Q3_14,1,1
+P_Q3_14,2,2
+P_Q3_14,3,3
+P_Q3_14,4,4
+P_Q3_14,5,5
+P_Q3_14,6,6
+P_Q3_14,7,7
+P_Q3_14,8,8
+P_Q3_14,9,9
+P_Q3_14,10,10 (extremely significant)
+P_Q3_14,88,i haven't thought much about this
+P_Q3_14,99,no answer
+P_Q3_15,0,0 (extremely insignificant)
+P_Q3_15,1,1
+P_Q3_15,2,2
+P_Q3_15,3,3
+P_Q3_15,4,4
+P_Q3_15,5,5
+P_Q3_15,6,6
+P_Q3_15,7,7
+P_Q3_15,8,8
+P_Q3_15,9,9
+P_Q3_15,10,10 (extremely significant)
+P_Q3_15,88,i haven't thought much about this
+P_Q3_15,99,no answer
+P_Q3_16,0,0 (extremely insignificant)
+P_Q3_16,1,1
+P_Q3_16,2,2
+P_Q3_16,3,3
+P_Q3_16,4,4
+P_Q3_16,5,5
+P_Q3_16,6,6
+P_Q3_16,7,7
+P_Q3_16,8,8
+P_Q3_16,9,9
+P_Q3_16,10,10 (extremely significant)
+P_Q3_16,88,i haven't thought much about this
+P_Q3_16,99,no answer
+P_Q3_17,0,0 (extremely insignificant)
+P_Q3_17,1,1
+P_Q3_17,2,2
+P_Q3_17,3,3
+P_Q3_17,4,4
+P_Q3_17,5,5
+P_Q3_17,6,6
+P_Q3_17,7,7
+P_Q3_17,8,8
+P_Q3_17,9,9
+P_Q3_17,10,10 (extremely significant)
+P_Q3_17,88,i haven't thought much about this
+P_Q3_17,99,no answer
+P_Q3_18,0,0 (extremely insignificant)
+P_Q3_18,1,1
+P_Q3_18,2,2
+P_Q3_18,3,3
+P_Q3_18,4,4
+P_Q3_18,5,5
+P_Q3_18,6,6
+P_Q3_18,7,7
+P_Q3_18,8,8
+P_Q3_18,9,9
+P_Q3_18,10,10 (extremely significant)
+P_Q3_18,88,i haven't thought much about this
+P_Q3_18,99,no answer
+P_Q3_19,0,0 (extremely insignificant)
+P_Q3_19,1,1
+P_Q3_19,2,2
+P_Q3_19,3,3
+P_Q3_19,4,4
+P_Q3_19,5,5
+P_Q3_19,6,6
+P_Q3_19,7,7
+P_Q3_19,8,8
+P_Q3_19,9,9
+P_Q3_19,10,10 (extremely significant)
+P_Q3_19,88,i haven't thought much about this
+P_Q3_19,99,no answer
+P_Q5,1,positive
+P_Q5,2,probably positive
+P_Q5,3,"neither positive, or negative"
+P_Q5,4,probably negative
+P_Q5,5,negative
+P_Q5,9,dk/na
+P_Q6,1,the recycling program should be enchanced
+P_Q6,2,waste should not be recycled
+P_Q6,9,dk/na
+P_Q7,1,yes
+P_Q7,2,no
+P_Q7,9,no answer
+P_Q8,1,it is a municipal issue
+P_Q8,2,it is government's issue
+P_Q8,9,dk/na
+P_Q9,1,agree
+P_Q9,2,disagree
+P_Q9,9,dk/na
+P_Q10,1,yes
+P_Q10,2,no
+P_Q10,9,dk/na
+P_Q11,1,it is the right solution
+P_Q11,2,other solutions are needed
+P_Q11,9,dk/na
+P_Q12,1,it is alright
+P_Q12,2,it should be expanded
+P_Q12,9,dk/na
+P_Q13,1,tzanikos
+P_Q13,2,other names
+P_Q13,88,dk
+P_Q13,99,na
+P_Q14,1,positive
+P_Q14,2,probably positive
+P_Q14,3,neither positive or negative
+P_Q14,4,probably negative
+P_Q14,5,negative
+P_Q14,8,dk
+P_Q14,9,na
+P_Q15,0,0 (far left)
+P_Q15,1,1
+P_Q15,2,2
+P_Q15,3,3
+P_Q15,4,4
+P_Q15,5,5 (centre)
+P_Q15,6,6
+P_Q15,7,7
+P_Q15,8,8
+P_Q15,9,9
+P_Q15,10,10 (far right)
+P_Q15,88,i do not accept the scale
+P_Q15,99,no answer
+P_Q16,0,0 (far left)
+P_Q16,1,1
+P_Q16,2,2
+P_Q16,3,3
+P_Q16,4,4
+P_Q16,5,5 (centre)
+P_Q16,6,6
+P_Q16,7,7
+P_Q16,8,8
+P_Q16,9,9
+P_Q16,10,10 (far right)
+P_Q16,88,i do not accept the scale
+P_Q16,99,no answer
+P_Q17,0,0 (far left)
+P_Q17,1,1
+P_Q17,2,2
+P_Q17,3,3
+P_Q17,4,4
+P_Q17,5,5 (centre)
+P_Q17,6,6
+P_Q17,7,7
+P_Q17,8,8
+P_Q17,9,9
+P_Q17,10,10 (far right)
+P_Q17,88,i do not accept the scale
+P_Q17,99,no answer
+P_Q18_1,888,never heard of it
+P_Q18_1,999,no answer
+P_Q18_2,888,never heard of it
+P_Q18_2,999,no answer
+P_Q18_3,888,never heard of him
+P_Q18_3,999,no answer
+P_Q18_4,888,never heard of him
+P_Q18_4,999,no answer
+P_Q18_5,888,never heard of him
+P_Q18_5,999,no answer
+P_Q19,1,highly satisfied
+P_Q19,2,fairly satisfied
+P_Q19,3,somewhat satisfied
+P_Q19,4,not at all satisfied
+P_Q19,8,dk
+P_Q19,9,na
+P_Q20_1,888,never heard of him
+P_Q20_1,999,no answer
+P_Q20_2,888,never heard of him
+P_Q20_2,999,no answer
+P_Q20_3,888,never heard of him
+P_Q20_3,999,no answer
+P_Q20_4,888,never heard of her
+P_Q20_4,999,no answer
+P_Q20_5,888,never heard of her
+P_Q20_5,999,no answer
+P_Q20_6,888,never heard of him
+P_Q20_6,999,no answer
+P_Q20_7,888,never heard of him
+P_Q20_7,999,no answer
+P_Q20_8,888,never heard of him
+P_Q20_8,999,no answer
+P_Q20_9,888,never heard of him
+P_Q20_9,999,no answer
+P_Q20_10,888,never heard of him
+P_Q20_10,999,no answer
+P_Q20_11,888,never heard of him
+P_Q20_11,999,no answer
+P_V2004,1,nd
+P_V2004,2,pasok
+P_V2004,3,kke
+P_V2004,4,syn
+P_V2004,5,laos
+P_V2004,6,dikki
+P_V2004,7,other
+P_V2004,8,blank-invalid
+P_V2004,9,no answer
+P_Q21,1,40.000
+P_Q21,2,70.000
+P_Q21,3,100.000
+P_Q21,4,130.000
+P_Q21,9,dk
+P_Q22,1,50 stores
+P_Q22,2,200 stores
+P_Q22,3,350 stores
+P_Q22,4,500 stores
+P_Q22,9,dk
+P_Q23,1,50 kilos
+P_Q23,2,250 kilos
+P_Q23,3,450 kilos
+P_Q23,4,650 kilos
+P_Q23,9,dk
+P_Q24,1,5%
+P_Q24,2,10%
+P_Q24,3,15%
+P_Q24,4,20%
+P_Q24,9,dk
+P_Q25,1,30%
+P_Q25,2,50%
+P_Q25,3,70%
+P_Q25,4,90%
+P_Q25,9,dk
+P_Q26,1,yes
+P_Q26,2,no
+P_Q26,9,no answer
+P_Q27,1,"100,000"
+P_Q27,2,"200,000"
+P_Q27,3,"300,000"
+P_Q27,4,"400,000"
+P_Q27,9,dk
+P_D1,1,male
+P_D1,2,female
+P_D3,1,primary school
+P_D3,2,junior high school
+P_D3,3,high school
+P_D3,4,technical school graduate
+P_D3,5,technical college graduate
+P_D3,6,university graduate
+P_D3,7,"graduate degree holder (ma, m.sc, ph.d)"
+P_D3,9,no answer
+P_D4,1,self-employed
+P_D4,2,employed in the public sector
+P_D4,3,employed in the private sector
+P_D4,4,unemployed
+P_D4,5,student
+P_D4,6,housewife
+P_D4,7,retired
+P_D4,9,no answer
+P_D6,1,single
+P_D6,2,single with children
+P_D6,3,married without children
+P_D6,4,married with children
+P_D6,5,separated
+P_D6,6,separated with children
+P_D6,7,widowed without children
+P_D6,8,widowed with children
+P_D6,9,na
+P_D9,1,"less than or equal to € 1,000"
+P_D9,2,"€ 1,001 - € 1,500"
+P_D9,3,"€ 1,501 - € 2,000"
+P_D9,4,"€ 2,001 - € 2,500"
+P_D9,5,"€ 2,501 - € 3,000"
+P_D9,6,"more than € 3,001"
+P_D9,9,no answer
+P_D10,1,every sunday or more often
+P_D10,2,2-3 times a month
+P_D10,3,a few times a year
+P_D10,4,only in the feasts of orthodoxy and sacraments
+P_D10,5,never
+P_D10,9,no answer
+P_DP1,1,yes
+P_DP1,2,no
+P_DP2,1,absolute positive
+P_DP2,2,somewhat positive
+P_DP2,3,"neither positive, or negative"
+P_DP2,4,somewhat negative
+P_DP2,5,absolute negative
+P_DP2,6,i do not know what is all about
+P_DP3,1,yes
+P_DP3,2,no
+P_DP3,3,not sure
+AR_Q1,1,definitely yes
+AR_Q1,2,probably yes
+AR_Q1,3,probably not
+AR_Q1,4,definitely not
+AR_Q1,5,undecided
+AR_Q1,9,no answer
+AR_Q2_1,0,0 (extremely insignificant)
+AR_Q2_1,1,1
+AR_Q2_1,2,2
+AR_Q2_1,3,3
+AR_Q2_1,4,4
+AR_Q2_1,5,5
+AR_Q2_1,6,6
+AR_Q2_1,7,7
+AR_Q2_1,8,8
+AR_Q2_1,9,9
+AR_Q2_1,10,10 (extremely significant)
+AR_Q2_1,88,i haven't thought much about this
+AR_Q2_1,99,no answer
+AR_Q2_2,0,0 (extremely insignificant)
+AR_Q2_2,1,1
+AR_Q2_2,2,2
+AR_Q2_2,3,3
+AR_Q2_2,4,4
+AR_Q2_2,5,5
+AR_Q2_2,6,6
+AR_Q2_2,7,7
+AR_Q2_2,8,8
+AR_Q2_2,9,9
+AR_Q2_2,10,10 (extremely significant)
+AR_Q2_2,88,i haven't thought much about this
+AR_Q2_2,99,no answer
+AR_Q2_3,0,0 (extremely insignificant)
+AR_Q2_3,1,1
+AR_Q2_3,2,2
+AR_Q2_3,3,3
+AR_Q2_3,4,4
+AR_Q2_3,5,5
+AR_Q2_3,6,6
+AR_Q2_3,7,7
+AR_Q2_3,8,8
+AR_Q2_3,9,9
+AR_Q2_3,10,10 (extremely significant)
+AR_Q2_3,88,i haven't thought much about this
+AR_Q2_3,99,no answer
+AR_Q2_4,0,0 (extremely insignificant)
+AR_Q2_4,1,1
+AR_Q2_4,2,2
+AR_Q2_4,3,3
+AR_Q2_4,4,4
+AR_Q2_4,5,5
+AR_Q2_4,6,6
+AR_Q2_4,7,7
+AR_Q2_4,8,8
+AR_Q2_4,9,9
+AR_Q2_4,10,10 (extremely significant)
+AR_Q2_4,88,i haven't thought much about this
+AR_Q2_4,99,no answer
+AR_Q2_5,0,0 (extremely insignificant)
+AR_Q2_5,1,1
+AR_Q2_5,2,2
+AR_Q2_5,3,3
+AR_Q2_5,4,4
+AR_Q2_5,5,5
+AR_Q2_5,6,6
+AR_Q2_5,7,7
+AR_Q2_5,8,8
+AR_Q2_5,9,9
+AR_Q2_5,10,10 (extremely significant)
+AR_Q2_5,88,i haven't thought much about this
+AR_Q2_5,99,no answer
+AR_Q2_6,0,0 (extremely insignificant)
+AR_Q2_6,1,1
+AR_Q2_6,2,2
+AR_Q2_6,3,3
+AR_Q2_6,4,4
+AR_Q2_6,5,5
+AR_Q2_6,6,6
+AR_Q2_6,7,7
+AR_Q2_6,8,8
+AR_Q2_6,9,9
+AR_Q2_6,10,10 (extremely significant)
+AR_Q2_6,88,i haven't thought much about this
+AR_Q2_6,99,no answer
+AR_Q2_7,0,0 (extremely insignificant)
+AR_Q2_7,1,1
+AR_Q2_7,2,2
+AR_Q2_7,3,3
+AR_Q2_7,4,4
+AR_Q2_7,5,5
+AR_Q2_7,6,6
+AR_Q2_7,7,7
+AR_Q2_7,8,8
+AR_Q2_7,9,9
+AR_Q2_7,10,10 (extremely significant)
+AR_Q2_7,88,i haven't thought much about this
+AR_Q2_7,99,no answer
+AR_Q2_8,0,0 (extremely insignificant)
+AR_Q2_8,1,1
+AR_Q2_8,2,2
+AR_Q2_8,3,3
+AR_Q2_8,4,4
+AR_Q2_8,5,5
+AR_Q2_8,6,6
+AR_Q2_8,7,7
+AR_Q2_8,8,8
+AR_Q2_8,9,9
+AR_Q2_8,10,10 (extremely significant)
+AR_Q2_8,88,i haven't thought much about this
+AR_Q2_8,99,no answer
+AR_Q2_9,0,0 (extremely insignificant)
+AR_Q2_9,1,1
+AR_Q2_9,2,2
+AR_Q2_9,3,3
+AR_Q2_9,4,4
+AR_Q2_9,5,5
+AR_Q2_9,6,6
+AR_Q2_9,7,7
+AR_Q2_9,8,8
+AR_Q2_9,9,9
+AR_Q2_9,10,10 (extremely significant)
+AR_Q2_9,88,i haven't thought much about this
+AR_Q2_9,99,no answer
+AR_Q2_10,0,0 (extremely insignificant)
+AR_Q2_10,1,1
+AR_Q2_10,2,2
+AR_Q2_10,3,3
+AR_Q2_10,4,4
+AR_Q2_10,5,5
+AR_Q2_10,6,6
+AR_Q2_10,7,7
+AR_Q2_10,8,8
+AR_Q2_10,9,9
+AR_Q2_10,10,10 (extremely significant)
+AR_Q2_10,88,i haven't thought much about this
+AR_Q2_10,99,no answer
+AR_Q2_11,0,0 (extremely insignificant)
+AR_Q2_11,1,1
+AR_Q2_11,2,2
+AR_Q2_11,3,3
+AR_Q2_11,4,4
+AR_Q2_11,5,5
+AR_Q2_11,6,6
+AR_Q2_11,7,7
+AR_Q2_11,8,8
+AR_Q2_11,9,9
+AR_Q2_11,10,10 (extremely significant)
+AR_Q2_11,88,i haven't thought much about this
+AR_Q2_11,99,no answer
+AR_Q2_12,0,0 (extremely insignificant)
+AR_Q2_12,1,1
+AR_Q2_12,2,2
+AR_Q2_12,3,3
+AR_Q2_12,4,4
+AR_Q2_12,5,5
+AR_Q2_12,6,6
+AR_Q2_12,7,7
+AR_Q2_12,8,8
+AR_Q2_12,9,9
+AR_Q2_12,10,10 (extremely significant)
+AR_Q2_12,88,i haven't thought much about this
+AR_Q2_12,99,no answer
+AR_Q2_13,0,0 (extremely insignificant)
+AR_Q2_13,1,1
+AR_Q2_13,2,2
+AR_Q2_13,3,3
+AR_Q2_13,4,4
+AR_Q2_13,5,5
+AR_Q2_13,6,6
+AR_Q2_13,7,7
+AR_Q2_13,8,8
+AR_Q2_13,9,9
+AR_Q2_13,10,10 (extremely significant)
+AR_Q2_13,88,i haven't thought much about this
+AR_Q2_13,99,no answer
+AR_Q2_14,0,0 (extremely insignificant)
+AR_Q2_14,1,1
+AR_Q2_14,2,2
+AR_Q2_14,3,3
+AR_Q2_14,4,4
+AR_Q2_14,5,5
+AR_Q2_14,6,6
+AR_Q2_14,7,7
+AR_Q2_14,8,8
+AR_Q2_14,9,9
+AR_Q2_14,10,10 (extremely significant)
+AR_Q2_14,88,i haven't thought much about this
+AR_Q2_14,99,no answer
+AR_Q2_15,0,0 (extremely insignificant)
+AR_Q2_15,1,1
+AR_Q2_15,2,2
+AR_Q2_15,3,3
+AR_Q2_15,4,4
+AR_Q2_15,5,5
+AR_Q2_15,6,6
+AR_Q2_15,7,7
+AR_Q2_15,8,8
+AR_Q2_15,9,9
+AR_Q2_15,10,10 (extremely significant)
+AR_Q2_15,88,i haven't thought much about this
+AR_Q2_15,99,no answer
+AR_Q2_16,0,0 (extremely insignificant)
+AR_Q2_16,1,1
+AR_Q2_16,2,2
+AR_Q2_16,3,3
+AR_Q2_16,4,4
+AR_Q2_16,5,5
+AR_Q2_16,6,6
+AR_Q2_16,7,7
+AR_Q2_16,8,8
+AR_Q2_16,9,9
+AR_Q2_16,10,10 (extremely significant)
+AR_Q2_16,88,i haven't thought much about this
+AR_Q2_16,99,no answer
+AR_Q2_17,0,0 (extremely insignificant)
+AR_Q2_17,1,1
+AR_Q2_17,2,2
+AR_Q2_17,3,3
+AR_Q2_17,4,4
+AR_Q2_17,5,5
+AR_Q2_17,6,6
+AR_Q2_17,7,7
+AR_Q2_17,8,8
+AR_Q2_17,9,9
+AR_Q2_17,10,10 (extremely significant)
+AR_Q2_17,88,i haven't thought much about this
+AR_Q2_17,99,no answer
+AR_Q2_18,0,0 (extremely insignificant)
+AR_Q2_18,1,1
+AR_Q2_18,2,2
+AR_Q2_18,3,3
+AR_Q2_18,4,4
+AR_Q2_18,5,5
+AR_Q2_18,6,6
+AR_Q2_18,7,7
+AR_Q2_18,8,8
+AR_Q2_18,9,9
+AR_Q2_18,10,10 (extremely significant)
+AR_Q2_18,88,i haven't thought much about this
+AR_Q2_18,99,no answer
+AR_Q2_19,0,0 (extremely insignificant)
+AR_Q2_19,1,1
+AR_Q2_19,2,2
+AR_Q2_19,3,3
+AR_Q2_19,4,4
+AR_Q2_19,5,5
+AR_Q2_19,6,6
+AR_Q2_19,7,7
+AR_Q2_19,8,8
+AR_Q2_19,9,9
+AR_Q2_19,10,10 (extremely significant)
+AR_Q2_19,88,i haven't thought much about this
+AR_Q2_19,99,no answer
+AR_Q41_1,1,extremely well
+AR_Q41_1,2,pretty well
+AR_Q41_1,3,not too well
+AR_Q41_1,4,not well at all
+AR_Q41_1,8,dk
+AR_Q41_2,1,extremely well
+AR_Q41_2,2,pretty well
+AR_Q41_2,3,not too well
+AR_Q41_2,4,not well at all
+AR_Q41_2,8,dk
+AR_Q41_3,1,extremely well
+AR_Q41_3,2,pretty well
+AR_Q41_3,3,not too well
+AR_Q41_3,4,not well at all
+AR_Q41_3,8,dk
+AR_Q41_4,1,extremely well
+AR_Q41_4,2,pretty well
+AR_Q41_4,3,not too well
+AR_Q41_4,4,not well at all
+AR_Q41_4,8,dk
+AR_Q41_5,1,extremely well
+AR_Q41_5,2,pretty well
+AR_Q41_5,3,not too well
+AR_Q41_5,4,not well at all
+AR_Q41_5,8,dk
+AR_Q41_6,1,extremely well
+AR_Q41_6,2,pretty well
+AR_Q41_6,3,not too well
+AR_Q41_6,4,not well at all
+AR_Q41_6,8,dk
+AR_Q42_1,1,extremely well
+AR_Q42_1,2,pretty well
+AR_Q42_1,3,not too well
+AR_Q42_1,4,not well at all
+AR_Q42_1,8,dk
+AR_Q42_2,1,extremely well
+AR_Q42_2,2,pretty well
+AR_Q42_2,3,not too well
+AR_Q42_2,4,not well at all
+AR_Q42_2,8,dk
+AR_Q42_3,1,extremely well
+AR_Q42_3,2,pretty well
+AR_Q42_3,3,not too well
+AR_Q42_3,4,not well at all
+AR_Q42_3,8,dk
+AR_Q42_4,1,extremely well
+AR_Q42_4,2,pretty well
+AR_Q42_4,3,not too well
+AR_Q42_4,4,not well at all
+AR_Q42_4,8,dk
+AR_Q42_5,1,extremely well
+AR_Q42_5,2,pretty well
+AR_Q42_5,3,not too well
+AR_Q42_5,4,not well at all
+AR_Q42_5,8,dk
+AR_Q42_6,1,extremely well
+AR_Q42_6,2,pretty well
+AR_Q42_6,3,not too well
+AR_Q42_6,4,not well at all
+AR_Q42_6,8,dk
+AR_Q43_1,1,extremely well
+AR_Q43_1,2,pretty well
+AR_Q43_1,3,not too well
+AR_Q43_1,4,not well at all
+AR_Q43_1,8,dk
+AR_Q43_2,1,extremely well
+AR_Q43_2,2,pretty well
+AR_Q43_2,3,not too well
+AR_Q43_2,4,not well at all
+AR_Q43_2,8,dk
+AR_Q43_3,1,extremely well
+AR_Q43_3,2,pretty well
+AR_Q43_3,3,not too well
+AR_Q43_3,4,not well at all
+AR_Q43_3,8,dk
+AR_Q43_4,1,extremely well
+AR_Q43_4,2,pretty well
+AR_Q43_4,3,not too well
+AR_Q43_4,4,not well at all
+AR_Q43_4,8,dk
+AR_Q43_5,1,extremely well
+AR_Q43_5,2,pretty well
+AR_Q43_5,3,not too well
+AR_Q43_5,4,not well at all
+AR_Q43_5,8,dk
+AR_Q43_6,1,extremely well
+AR_Q43_6,2,pretty well
+AR_Q43_6,3,not too well
+AR_Q43_6,4,not well at all
+AR_Q43_6,8,dk
+AR_Q5,0,marousi gov't protect environment
+AR_Q5,10,national gov't/ individuals protect environment
+AR_Q5,99,dk
+AR_Q5_1,0,marousi gov't protect environment
+AR_Q5_1,10,national gov't/ individuals protect environment
+AR_Q5_1,99,dk
+AR_Q5_2,0,marousi gov't protect environment
+AR_Q5_2,10,national gov't/ individuals protect environment
+AR_Q5_2,99,dk
+AR_Q5_3,0,marousi gov't protect environment
+AR_Q5_3,10,national gov't/ individuals protect environment
+AR_Q5_3,99,dk
+AR_Q5_4,0,marousi gov't protect environment
+AR_Q5_4,10,national gov't/ individuals protect environment
+AR_Q5_4,99,dk
+AR_Q5_5,0,marousi gov't protect environment
+AR_Q5_5,10,national gov't/ individuals protect environment
+AR_Q5_5,99,dk
+AR_Q5_6,0,marousi gov't protect environment
+AR_Q5_6,10,national gov't/ individuals protect environment
+AR_Q5_6,99,dk
+AR_Q6,0,hire more people
+AR_Q6,10,promote investment in private sector
+AR_Q6,99,dk
+AR_Q6_1,0,hire more people
+AR_Q6_1,10,promote investment in private sector
+AR_Q6_1,99,dk
+AR_Q6_2,0,hire more people
+AR_Q6_2,10,promote investment in private sector
+AR_Q6_2,99,dk
+AR_Q6_3,0,hire more people
+AR_Q6_3,10,promote investment in private sector
+AR_Q6_3,99,dk
+AR_Q6_4,0,hire more people
+AR_Q6_4,10,promote investment in private sector
+AR_Q6_4,99,dk
+AR_Q6_5,0,hire more people
+AR_Q6_5,10,promote investment in private sector
+AR_Q6_5,99,dk
+AR_Q6_6,0,hire more people
+AR_Q6_6,10,promote investment in private sector
+AR_Q6_6,99,dk
+AR_Q7,0,build more roads
+AR_Q7,10,invest in more public transportation
+AR_Q7,99,dk
+AR_Q7_1,0,build more roads
+AR_Q7_1,10,invest in more public transportation
+AR_Q7_1,99,dk
+AR_Q7_2,0,build more roads
+AR_Q7_2,10,invest in more public transportation
+AR_Q7_2,99,dk
+AR_Q7_3,0,build more roads
+AR_Q7_3,10,invest in more public transportation
+AR_Q7_3,99,dk
+AR_Q7_4,0,build more roads
+AR_Q7_4,10,invest in more public transportation
+AR_Q7_4,99,dk
+AR_Q7_5,0,build more roads
+AR_Q7_5,10,invest in more public transportation
+AR_Q7_5,99,dk
+AR_Q7_6,0,build more roads
+AR_Q7_6,10,invest in more public transportation
+AR_Q7_6,99,dk
+AR_Q8,0,help integrate immigrants
+AR_Q8,10,let immigrants get ahead on their own
+AR_Q8,99,dk
+AR_Q8_1,0,help integrate immigrants
+AR_Q8_1,10,let immigrants get ahead on their own
+AR_Q8_1,99,dk
+AR_Q8_2,0,help integrate immigrants
+AR_Q8_2,10,let immigrants get ahead on their own
+AR_Q8_2,99,dk
+AR_Q8_3,0,help integrate immigrants
+AR_Q8_3,10,let immigrants get ahead on their own
+AR_Q8_3,99,dk
+AR_Q8_4,0,help integrate immigrants
+AR_Q8_4,10,let immigrants get ahead on their own
+AR_Q8_4,99,dk
+AR_Q8_5,0,help integrate immigrants
+AR_Q8_5,10,let immigrants get ahead on their own
+AR_Q8_5,99,dk
+AR_Q8_6,0,help integrate immigrants
+AR_Q8_6,10,let immigrants get ahead on their own
+AR_Q8_6,99,dk
+AR_Q9,1,"alexandris, panagiotis"
+AR_Q9,2,"veloudos, yiannis"
+AR_Q9,3,"vlahos, haralambos"
+AR_Q9,4,"diakoliou, mary"
+AR_Q9,5,"karanasou, mary"
+AR_Q9,6,"bregiannis, alekos"
+AR_Q9,8,no preference
+AR_Q10,0,0 (far left)
+AR_Q10,1,1
+AR_Q10,2,2
+AR_Q10,3,3
+AR_Q10,4,4
+AR_Q10,5,5 (centre)
+AR_Q10,6,6
+AR_Q10,7,7
+AR_Q10,8,8
+AR_Q10,9,9
+AR_Q10,10,10 (far right)
+AR_Q10,99,no answer
+AR_Q11,0,0 (far left)
+AR_Q11,1,1
+AR_Q11,2,2
+AR_Q11,3,3
+AR_Q11,4,4
+AR_Q11,5,5 (centre)
+AR_Q11,6,6
+AR_Q11,7,7
+AR_Q11,8,8
+AR_Q11,9,9
+AR_Q11,10,10 (far right)
+AR_Q11,99,no answer
+AR_Q12,0,0 (far left)
+AR_Q12,1,1
+AR_Q12,2,2
+AR_Q12,3,3
+AR_Q12,4,4
+AR_Q12,5,5 (centre)
+AR_Q12,6,6
+AR_Q12,7,7
+AR_Q12,8,8
+AR_Q12,9,9
+AR_Q12,10,10 (far right)
+AR_Q12,99,no answer
+AR_Q13_1,0,0 (far left)
+AR_Q13_1,1,1
+AR_Q13_1,2,2
+AR_Q13_1,3,3
+AR_Q13_1,4,4
+AR_Q13_1,5,5 (centre)
+AR_Q13_1,6,6
+AR_Q13_1,7,7
+AR_Q13_1,8,8
+AR_Q13_1,9,9
+AR_Q13_1,10,10 (far right)
+AR_Q13_1,99,no answer
+AR_Q13_2,0,0 (far left)
+AR_Q13_2,1,1
+AR_Q13_2,2,2
+AR_Q13_2,3,3
+AR_Q13_2,4,4
+AR_Q13_2,5,5 (centre)
+AR_Q13_2,6,6
+AR_Q13_2,7,7
+AR_Q13_2,8,8
+AR_Q13_2,9,9
+AR_Q13_2,10,10 (far right)
+AR_Q13_2,99,no answer
+AR_Q13_3,0,0 (far left)
+AR_Q13_3,1,1
+AR_Q13_3,2,2
+AR_Q13_3,3,3
+AR_Q13_3,4,4
+AR_Q13_3,5,5 (centre)
+AR_Q13_3,6,6
+AR_Q13_3,7,7
+AR_Q13_3,8,8
+AR_Q13_3,9,9
+AR_Q13_3,10,10 (far right)
+AR_Q13_3,99,no answer
+AR_Q13_4,0,0 (far left)
+AR_Q13_4,1,1
+AR_Q13_4,2,2
+AR_Q13_4,3,3
+AR_Q13_4,4,4
+AR_Q13_4,5,5 (centre)
+AR_Q13_4,6,6
+AR_Q13_4,7,7
+AR_Q13_4,8,8
+AR_Q13_4,9,9
+AR_Q13_4,10,10 (far right)
+AR_Q13_4,99,no answer
+AR_Q13_5,0,0 (far left)
+AR_Q13_5,1,1
+AR_Q13_5,2,2
+AR_Q13_5,3,3
+AR_Q13_5,4,4
+AR_Q13_5,5,5 (centre)
+AR_Q13_5,6,6
+AR_Q13_5,7,7
+AR_Q13_5,8,8
+AR_Q13_5,9,9
+AR_Q13_5,10,10 (far right)
+AR_Q13_5,99,no answer
+AR_Q13_6,0,0 (far left)
+AR_Q13_6,1,1
+AR_Q13_6,2,2
+AR_Q13_6,3,3
+AR_Q13_6,4,4
+AR_Q13_6,5,5 (centre)
+AR_Q13_6,6,6
+AR_Q13_6,7,7
+AR_Q13_6,8,8
+AR_Q13_6,9,9
+AR_Q13_6,10,10 (far right)
+AR_Q13_6,99,no answer
+AR_Q14,1,tzanikos
+AR_Q14,2,other names
+AR_Q14,88,dk
+AR_Q14,99,na
+AR_Q15,1,40.000
+AR_Q15,2,70.000
+AR_Q15,3,100.000
+AR_Q15,4,130.000
+AR_Q15,9,dk
+AR_Q16,1,50 stores
+AR_Q16,2,200 stores
+AR_Q16,3,350 stores
+AR_Q16,4,500 stores
+AR_Q16,9,dk
+AR_Q17,1,50 kilos
+AR_Q17,2,250 kilos
+AR_Q17,3,450 kilos
+AR_Q17,4,650 kilos
+AR_Q17,9,dk
+AR_Q18,1,5%
+AR_Q18,2,10%
+AR_Q18,3,15%
+AR_Q18,4,20%
+AR_Q18,9,dk
+AR_Q19,1,30%
+AR_Q19,2,50%
+AR_Q19,3,70%
+AR_Q19,4,90%
+AR_Q19,9,dk
+AR_Q20,1,"100,000"
+AR_Q20,2,"200,000"
+AR_Q20,3,"300,000"
+AR_Q20,4,"400,000"
+AR_Q20,9,dk
+AR_Q23,1,highly satisfied
+AR_Q23,2,fairly satisfied
+AR_Q23,3,somewhat satisfied
+AR_Q23,4,not at all satisfied
+AR_Q23,8,dk
+AR_Q23,9,na
+AR_Q24_1,1,agree strongly
+AR_Q24_1,2,agree somewhat
+AR_Q24_1,3,neither agree nor disagree
+AR_Q24_1,4,disagree somewhat
+AR_Q24_1,5,disagree strongly
+AR_Q24_2,1,agree strongly
+AR_Q24_2,2,agree somewhat
+AR_Q24_2,3,neither agree nor disagree
+AR_Q24_2,4,disagree somewhat
+AR_Q24_2,5,disagree strongly
+AR_Q24_3,1,agree strongly
+AR_Q24_3,2,agree somewhat
+AR_Q24_3,3,neither agree nor disagree
+AR_Q24_3,4,disagree somewhat
+AR_Q24_3,5,disagree strongly
+AR_Q24_4,1,agree strongly
+AR_Q24_4,2,agree somewhat
+AR_Q24_4,3,neither agree nor disagree
+AR_Q24_4,4,disagree somewhat
+AR_Q24_4,5,disagree strongly
+AR_Q24_5,1,agree strongly
+AR_Q24_5,2,agree somewhat
+AR_Q24_5,3,neither agree nor disagree
+AR_Q24_5,4,disagree somewhat
+AR_Q24_5,5,disagree strongly
+F_Q1,1,definitely yes
+F_Q1,2,probably yes
+F_Q1,3,probably not
+F_Q1,4,definitely not
+F_Q1,5,undecided
+F_Q1,9,no answer
+F_Q2_1,0,0 (extremely insignificant)
+F_Q2_1,1,1
+F_Q2_1,2,2
+F_Q2_1,3,3
+F_Q2_1,4,4
+F_Q2_1,5,5
+F_Q2_1,6,6
+F_Q2_1,7,7
+F_Q2_1,8,8
+F_Q2_1,9,9
+F_Q2_1,10,10 (extremely significant)
+F_Q2_1,88,i haven't thought much about this
+F_Q2_1,99,no answer
+F_Q2_2,0,0 (extremely insignificant)
+F_Q2_2,1,1
+F_Q2_2,2,2
+F_Q2_2,3,3
+F_Q2_2,4,4
+F_Q2_2,5,5
+F_Q2_2,6,6
+F_Q2_2,7,7
+F_Q2_2,8,8
+F_Q2_2,9,9
+F_Q2_2,10,10 (extremely significant)
+F_Q2_2,88,i haven't thought much about this
+F_Q2_2,99,no answer
+F_Q2_3,0,0 (extremely insignificant)
+F_Q2_3,1,1
+F_Q2_3,2,2
+F_Q2_3,3,3
+F_Q2_3,4,4
+F_Q2_3,5,5
+F_Q2_3,6,6
+F_Q2_3,7,7
+F_Q2_3,8,8
+F_Q2_3,9,9
+F_Q2_3,10,10 (extremely significant)
+F_Q2_3,88,i haven't thought much about this
+F_Q2_3,99,no answer
+F_Q2_4,0,0 (extremely insignificant)
+F_Q2_4,1,1
+F_Q2_4,2,2
+F_Q2_4,3,3
+F_Q2_4,4,4
+F_Q2_4,5,5
+F_Q2_4,6,6
+F_Q2_4,7,7
+F_Q2_4,8,8
+F_Q2_4,9,9
+F_Q2_4,10,10 (extremely significant)
+F_Q2_4,88,i haven't thought much about this
+F_Q2_4,99,no answer
+F_Q2_5,0,0 (extremely insignificant)
+F_Q2_5,1,1
+F_Q2_5,2,2
+F_Q2_5,3,3
+F_Q2_5,4,4
+F_Q2_5,5,5
+F_Q2_5,6,6
+F_Q2_5,7,7
+F_Q2_5,8,8
+F_Q2_5,9,9
+F_Q2_5,10,10 (extremely significant)
+F_Q2_5,88,i haven't thought much about this
+F_Q2_5,99,no answer
+F_Q2_6,0,0 (extremely insignificant)
+F_Q2_6,1,1
+F_Q2_6,2,2
+F_Q2_6,3,3
+F_Q2_6,4,4
+F_Q2_6,5,5
+F_Q2_6,6,6
+F_Q2_6,7,7
+F_Q2_6,8,8
+F_Q2_6,9,9
+F_Q2_6,10,10 (extremely significant)
+F_Q2_6,88,i haven't thought much about this
+F_Q2_6,99,no answer
+F_Q2_7,0,0 (extremely insignificant)
+F_Q2_7,1,1
+F_Q2_7,2,2
+F_Q2_7,3,3
+F_Q2_7,4,4
+F_Q2_7,5,5
+F_Q2_7,6,6
+F_Q2_7,7,7
+F_Q2_7,8,8
+F_Q2_7,9,9
+F_Q2_7,10,10 (extremely significant)
+F_Q2_7,88,i haven't thought much about this
+F_Q2_7,99,no answer
+F_Q2_8,0,0 (extremely insignificant)
+F_Q2_8,1,1
+F_Q2_8,2,2
+F_Q2_8,3,3
+F_Q2_8,4,4
+F_Q2_8,5,5
+F_Q2_8,6,6
+F_Q2_8,7,7
+F_Q2_8,8,8
+F_Q2_8,9,9
+F_Q2_8,10,10 (extremely significant)
+F_Q2_8,88,i haven't thought much about this
+F_Q2_8,99,no answer
+F_Q2_9,0,0 (extremely insignificant)
+F_Q2_9,1,1
+F_Q2_9,2,2
+F_Q2_9,3,3
+F_Q2_9,4,4
+F_Q2_9,5,5
+F_Q2_9,6,6
+F_Q2_9,7,7
+F_Q2_9,8,8
+F_Q2_9,9,9
+F_Q2_9,10,10 (extremely significant)
+F_Q2_9,88,i haven't thought much about this
+F_Q2_9,99,no answer
+F_Q2_10,0,0 (extremely insignificant)
+F_Q2_10,1,1
+F_Q2_10,2,2
+F_Q2_10,3,3
+F_Q2_10,4,4
+F_Q2_10,5,5
+F_Q2_10,6,6
+F_Q2_10,7,7
+F_Q2_10,8,8
+F_Q2_10,9,9
+F_Q2_10,10,10 (extremely significant)
+F_Q2_10,88,i haven't thought much about this
+F_Q2_10,99,no answer
+F_Q2_11,0,0 (extremely insignificant)
+F_Q2_11,1,1
+F_Q2_11,2,2
+F_Q2_11,3,3
+F_Q2_11,4,4
+F_Q2_11,5,5
+F_Q2_11,6,6
+F_Q2_11,7,7
+F_Q2_11,8,8
+F_Q2_11,9,9
+F_Q2_11,10,10 (extremely significant)
+F_Q2_11,88,i haven't thought much about this
+F_Q2_11,99,no answer
+F_Q2_12,0,0 (extremely insignificant)
+F_Q2_12,1,1
+F_Q2_12,2,2
+F_Q2_12,3,3
+F_Q2_12,4,4
+F_Q2_12,5,5
+F_Q2_12,6,6
+F_Q2_12,7,7
+F_Q2_12,8,8
+F_Q2_12,9,9
+F_Q2_12,10,10 (extremely significant)
+F_Q2_12,88,i haven't thought much about this
+F_Q2_12,99,no answer
+F_Q2_13,0,0 (extremely insignificant)
+F_Q2_13,1,1
+F_Q2_13,2,2
+F_Q2_13,3,3
+F_Q2_13,4,4
+F_Q2_13,5,5
+F_Q2_13,6,6
+F_Q2_13,7,7
+F_Q2_13,8,8
+F_Q2_13,9,9
+F_Q2_13,10,10 (extremely significant)
+F_Q2_13,88,i haven't thought much about this
+F_Q2_13,99,no answer
+F_Q2_14,0,0 (extremely insignificant)
+F_Q2_14,1,1
+F_Q2_14,2,2
+F_Q2_14,3,3
+F_Q2_14,4,4
+F_Q2_14,5,5
+F_Q2_14,6,6
+F_Q2_14,7,7
+F_Q2_14,8,8
+F_Q2_14,9,9
+F_Q2_14,10,10 (extremely significant)
+F_Q2_14,88,i haven't thought much about this
+F_Q2_14,99,no answer
+F_Q2_15,0,0 (extremely insignificant)
+F_Q2_15,1,1
+F_Q2_15,2,2
+F_Q2_15,3,3
+F_Q2_15,4,4
+F_Q2_15,5,5
+F_Q2_15,6,6
+F_Q2_15,7,7
+F_Q2_15,8,8
+F_Q2_15,9,9
+F_Q2_15,10,10 (extremely significant)
+F_Q2_15,88,i haven't thought much about this
+F_Q2_15,99,no answer
+F_Q2_16,0,0 (extremely insignificant)
+F_Q2_16,1,1
+F_Q2_16,2,2
+F_Q2_16,3,3
+F_Q2_16,4,4
+F_Q2_16,5,5
+F_Q2_16,6,6
+F_Q2_16,7,7
+F_Q2_16,8,8
+F_Q2_16,9,9
+F_Q2_16,10,10 (extremely significant)
+F_Q2_16,88,i haven't thought much about this
+F_Q2_16,99,no answer
+F_Q2_17,0,0 (extremely insignificant)
+F_Q2_17,1,1
+F_Q2_17,2,2
+F_Q2_17,3,3
+F_Q2_17,4,4
+F_Q2_17,5,5
+F_Q2_17,6,6
+F_Q2_17,7,7
+F_Q2_17,8,8
+F_Q2_17,9,9
+F_Q2_17,10,10 (extremely significant)
+F_Q2_17,88,i haven't thought much about this
+F_Q2_17,99,no answer
+F_Q2_18,0,0 (extremely insignificant)
+F_Q2_18,1,1
+F_Q2_18,2,2
+F_Q2_18,3,3
+F_Q2_18,4,4
+F_Q2_18,5,5
+F_Q2_18,6,6
+F_Q2_18,7,7
+F_Q2_18,8,8
+F_Q2_18,9,9
+F_Q2_18,10,10 (extremely significant)
+F_Q2_18,88,i haven't thought much about this
+F_Q2_18,99,no answer
+F_Q2_19,0,0 (extremely insignificant)
+F_Q2_19,1,1
+F_Q2_19,2,2
+F_Q2_19,3,3
+F_Q2_19,4,4
+F_Q2_19,5,5
+F_Q2_19,6,6
+F_Q2_19,7,7
+F_Q2_19,8,8
+F_Q2_19,9,9
+F_Q2_19,10,10 (extremely significant)
+F_Q2_19,88,i haven't thought much about this
+F_Q2_19,99,no answer
+F_Q41_1,1,extremely well
+F_Q41_1,2,pretty well
+F_Q41_1,3,not too well
+F_Q41_1,4,not well at all
+F_Q41_1,8,dk
+F_Q41_2,1,extremely well
+F_Q41_2,2,pretty well
+F_Q41_2,3,not too well
+F_Q41_2,4,not well at all
+F_Q41_2,8,dk
+F_Q41_3,1,extremely well
+F_Q41_3,2,pretty well
+F_Q41_3,3,not too well
+F_Q41_3,4,not well at all
+F_Q41_3,8,dk
+F_Q41_4,1,extremely well
+F_Q41_4,2,pretty well
+F_Q41_4,3,not too well
+F_Q41_4,4,not well at all
+F_Q41_4,8,dk
+F_Q41_5,1,extremely well
+F_Q41_5,2,pretty well
+F_Q41_5,3,not too well
+F_Q41_5,4,not well at all
+F_Q41_5,8,dk
+F_Q41_6,1,extremely well
+F_Q41_6,2,pretty well
+F_Q41_6,3,not too well
+F_Q41_6,4,not well at all
+F_Q41_6,8,dk
+F_Q42_1,1,extremely well
+F_Q42_1,2,pretty well
+F_Q42_1,3,not too well
+F_Q42_1,4,not well at all
+F_Q42_1,8,dk
+F_Q42_2,1,extremely well
+F_Q42_2,2,pretty well
+F_Q42_2,3,not too well
+F_Q42_2,4,not well at all
+F_Q42_2,8,dk
+F_Q42_3,1,extremely well
+F_Q42_3,2,pretty well
+F_Q42_3,3,not too well
+F_Q42_3,4,not well at all
+F_Q42_3,8,dk
+F_Q42_4,1,extremely well
+F_Q42_4,2,pretty well
+F_Q42_4,3,not too well
+F_Q42_4,4,not well at all
+F_Q42_4,8,dk
+F_Q42_5,1,extremely well
+F_Q42_5,2,pretty well
+F_Q42_5,3,not too well
+F_Q42_5,4,not well at all
+F_Q42_5,8,dk
+F_Q42_6,1,extremely well
+F_Q42_6,2,pretty well
+F_Q42_6,3,not too well
+F_Q42_6,4,not well at all
+F_Q42_6,8,dk
+F_Q43_1,1,extremely well
+F_Q43_1,2,pretty well
+F_Q43_1,3,not too well
+F_Q43_1,4,not well at all
+F_Q43_1,8,dk
+F_Q43_2,1,extremely well
+F_Q43_2,2,pretty well
+F_Q43_2,3,not too well
+F_Q43_2,4,not well at all
+F_Q43_2,8,dk
+F_Q43_3,1,extremely well
+F_Q43_3,2,pretty well
+F_Q43_3,3,not too well
+F_Q43_3,4,not well at all
+F_Q43_3,8,dk
+F_Q43_4,1,extremely well
+F_Q43_4,2,pretty well
+F_Q43_4,3,not too well
+F_Q43_4,4,not well at all
+F_Q43_4,8,dk
+F_Q43_5,1,extremely well
+F_Q43_5,2,pretty well
+F_Q43_5,3,not too well
+F_Q43_5,4,not well at all
+F_Q43_5,8,dk
+F_Q43_6,1,extremely well
+F_Q43_6,2,pretty well
+F_Q43_6,3,not too well
+F_Q43_6,4,not well at all
+F_Q43_6,8,dk
+F_Q5,0,marousi gov't protect environment
+F_Q5,10,national gov't/ individuals protect environment
+F_Q5,99,dk
+F_Q5_1,0,marousi gov't protect environment
+F_Q5_1,10,national gov't/ individuals protect environment
+F_Q5_1,99,dk
+F_Q5_2,0,marousi gov't protect environment
+F_Q5_2,10,national gov't/ individuals protect environment
+F_Q5_2,99,dk
+F_Q5_3,0,marousi gov't protect environment
+F_Q5_3,10,national gov't/ individuals protect environment
+F_Q5_3,99,dk
+F_Q5_4,0,marousi gov't protect environment
+F_Q5_4,10,national gov't/ individuals protect environment
+F_Q5_4,99,dk
+F_Q5_5,0,marousi gov't protect environment
+F_Q5_5,10,national gov't/ individuals protect environment
+F_Q5_5,99,dk
+F_Q5_6,0,marousi gov't protect environment
+F_Q5_6,10,national gov't/ individuals protect environment
+F_Q5_6,99,dk
+F_Q6,0,hire more people
+F_Q6,10,promote investment in private sector
+F_Q6,99,dk
+F_Q6_1,0,hire more people
+F_Q6_1,10,promote investment in private sector
+F_Q6_1,99,dk
+F_Q6_2,0,hire more people
+F_Q6_2,10,promote investment in private sector
+F_Q6_2,99,dk
+F_Q6_3,0,hire more people
+F_Q6_3,10,promote investment in private sector
+F_Q6_3,99,dk
+F_Q6_4,0,hire more people
+F_Q6_4,10,promote investment in private sector
+F_Q6_4,99,dk
+F_Q6_5,0,hire more people
+F_Q6_5,10,promote investment in private sector
+F_Q6_5,99,dk
+F_Q6_6,0,hire more people
+F_Q6_6,10,promote investment in private sector
+F_Q6_6,99,dk
+F_Q7,0,build more roads
+F_Q7,10,invest in more public transportation
+F_Q7,99,dk
+F_Q7_1,0,build more roads
+F_Q7_1,10,invest in more public transportation
+F_Q7_1,99,dk
+F_Q7_2,0,build more roads
+F_Q7_2,10,invest in more public transportation
+F_Q7_2,99,dk
+F_Q7_3,0,build more roads
+F_Q7_3,10,invest in more public transportation
+F_Q7_3,99,dk
+F_Q7_4,0,build more roads
+F_Q7_4,10,invest in more public transportation
+F_Q7_4,99,dk
+F_Q7_5,0,build more roads
+F_Q7_5,10,invest in more public transportation
+F_Q7_5,99,dk
+F_Q7_6,0,build more roads
+F_Q7_6,10,invest in more public transportation
+F_Q7_6,99,dk
+F_Q8,0,help integrate immigrants
+F_Q8,10,let immigrants get ahead on their own
+F_Q8,99,dk
+F_Q8_1,0,help integrate immigrants
+F_Q8_1,10,let immigrants get ahead on their own
+F_Q8_1,99,dk
+F_Q8_2,0,help integrate immigrants
+F_Q8_2,10,let immigrants get ahead on their own
+F_Q8_2,99,dk
+F_Q8_3,0,help integrate immigrants
+F_Q8_3,10,let immigrants get ahead on their own
+F_Q8_3,99,dk
+F_Q8_4,0,help integrate immigrants
+F_Q8_4,10,let immigrants get ahead on their own
+F_Q8_4,99,dk
+F_Q8_5,0,help integrate immigrants
+F_Q8_5,10,let immigrants get ahead on their own
+F_Q8_5,99,dk
+F_Q8_6,0,help integrate immigrants
+F_Q8_6,10,let immigrants get ahead on their own
+F_Q8_6,99,dk
+F_Q9,1,"alexandris, panagiotis"
+F_Q9,2,"veloudos, yiannis"
+F_Q9,3,"vlahos, haralambos"
+F_Q9,4,"diakoliou, mary"
+F_Q9,5,"karanasou, mary"
+F_Q9,6,"bregiannis, alekos"
+F_Q9,8,no preference
+F_Q10,0,0 (far left)
+F_Q10,1,1
+F_Q10,2,2
+F_Q10,3,3
+F_Q10,4,4
+F_Q10,5,5 (centre)
+F_Q10,6,6
+F_Q10,7,7
+F_Q10,8,8
+F_Q10,9,9
+F_Q10,10,10 (far right)
+F_Q10,99,no answer
+F_Q11,0,0 (far left)
+F_Q11,1,1
+F_Q11,2,2
+F_Q11,3,3
+F_Q11,4,4
+F_Q11,5,5 (centre)
+F_Q11,6,6
+F_Q11,7,7
+F_Q11,8,8
+F_Q11,9,9
+F_Q11,10,10 (far right)
+F_Q11,99,no answer
+F_Q12,0,0 (far left)
+F_Q12,1,1
+F_Q12,2,2
+F_Q12,3,3
+F_Q12,4,4
+F_Q12,5,5 (centre)
+F_Q12,6,6
+F_Q12,7,7
+F_Q12,8,8
+F_Q12,9,9
+F_Q12,10,10 (far right)
+F_Q12,99,no answer
+F_Q13_1,0,0 (far left)
+F_Q13_1,1,1
+F_Q13_1,2,2
+F_Q13_1,3,3
+F_Q13_1,4,4
+F_Q13_1,5,5 (centre)
+F_Q13_1,6,6
+F_Q13_1,7,7
+F_Q13_1,8,8
+F_Q13_1,9,9
+F_Q13_1,10,10 (far right)
+F_Q13_1,99,no answer
+F_Q13_2,0,0 (far left)
+F_Q13_2,1,1
+F_Q13_2,2,2
+F_Q13_2,3,3
+F_Q13_2,4,4
+F_Q13_2,5,5 (centre)
+F_Q13_2,6,6
+F_Q13_2,7,7
+F_Q13_2,8,8
+F_Q13_2,9,9
+F_Q13_2,10,10 (far right)
+F_Q13_2,99,no answer
+F_Q13_3,0,0 (far left)
+F_Q13_3,1,1
+F_Q13_3,2,2
+F_Q13_3,3,3
+F_Q13_3,4,4
+F_Q13_3,5,5 (centre)
+F_Q13_3,6,6
+F_Q13_3,7,7
+F_Q13_3,8,8
+F_Q13_3,9,9
+F_Q13_3,10,10 (far right)
+F_Q13_3,99,no answer
+F_Q13_4,0,0 (far left)
+F_Q13_4,1,1
+F_Q13_4,2,2
+F_Q13_4,3,3
+F_Q13_4,4,4
+F_Q13_4,5,5 (centre)
+F_Q13_4,6,6
+F_Q13_4,7,7
+F_Q13_4,8,8
+F_Q13_4,9,9
+F_Q13_4,10,10 (far right)
+F_Q13_4,99,no answer
+F_Q13_5,0,0 (far left)
+F_Q13_5,1,1
+F_Q13_5,2,2
+F_Q13_5,3,3
+F_Q13_5,4,4
+F_Q13_5,5,5 (centre)
+F_Q13_5,6,6
+F_Q13_5,7,7
+F_Q13_5,8,8
+F_Q13_5,9,9
+F_Q13_5,10,10 (far right)
+F_Q13_5,99,no answer
+F_Q13_6,0,0 (far left)
+F_Q13_6,1,1
+F_Q13_6,2,2
+F_Q13_6,3,3
+F_Q13_6,4,4
+F_Q13_6,5,5 (centre)
+F_Q13_6,6,6
+F_Q13_6,7,7
+F_Q13_6,8,8
+F_Q13_6,9,9
+F_Q13_6,10,10 (far right)
+F_Q13_6,99,no answer
+F_Q14,1,tzanikos
+F_Q14,2,other names
+F_Q14,88,dk
+F_Q14,99,na
+F_Q15,1,40.000
+F_Q15,2,70.000
+F_Q15,3,100.000
+F_Q15,4,130.000
+F_Q15,9,dk
+F_Q16,1,50 stores
+F_Q16,2,200 stores
+F_Q16,3,350 stores
+F_Q16,4,500 stores
+F_Q16,9,dk
+F_Q17,1,50 kilos
+F_Q17,2,250 kilos
+F_Q17,3,450 kilos
+F_Q17,4,650 kilos
+F_Q17,9,dk
+F_Q18,1,5%
+F_Q18,2,10%
+F_Q18,3,15%
+F_Q18,4,20%
+F_Q18,9,dk
+F_Q19,1,30%
+F_Q19,2,50%
+F_Q19,3,70%
+F_Q19,4,90%
+F_Q19,9,dk
+F_Q20,1,"100,000"
+F_Q20,2,"200,000"
+F_Q20,3,"300,000"
+F_Q20,4,"400,000"
+F_Q20,9,dk
+F_Q23,1,highly satisfied
+F_Q23,2,fairly satisfied
+F_Q23,3,somewhat satisfied
+F_Q23,4,not at all satisfied
+F_Q23,8,dk
+F_Q23,9,na
+F_Q24_1,1,agree strongly
+F_Q24_1,2,agree somewhat
+F_Q24_1,3,neither agree nor disagree
+F_Q24_1,4,disagree somewhat
+F_Q24_1,5,disagree strongly
+F_Q24_2,1,agree strongly
+F_Q24_2,2,agree somewhat
+F_Q24_2,3,neither agree nor disagree
+F_Q24_2,4,disagree somewhat
+F_Q24_2,5,disagree strongly
+F_Q24_3,1,agree strongly
+F_Q24_3,2,agree somewhat
+F_Q24_3,3,neither agree nor disagree
+F_Q24_3,4,disagree somewhat
+F_Q24_3,5,disagree strongly
+F_Q24_4,1,agree strongly
+F_Q24_4,2,agree somewhat
+F_Q24_4,3,neither agree nor disagree
+F_Q24_4,4,disagree somewhat
+F_Q24_4,5,disagree strongly
+F_Q24_5,1,agree strongly
+F_Q24_5,2,agree somewhat
+F_Q24_5,3,neither agree nor disagree
+F_Q24_5,4,disagree somewhat
+F_Q24_5,5,disagree strongly
+F_Q25_1,0,generally a waste of time
+F_Q25_1,10,extremely valuable
+F_Q25_2,0,generally a waste of time
+F_Q25_2,10,extremely valuable
+F_Q25_3,0,generally a waste of time
+F_Q25_3,10,extremely valuable
+F_Q25_4,0,generally a waste of time
+F_Q25_4,10,extremely valuable
+F_Q26_1,1,agree strongly
+F_Q26_1,2,agree somewhat
+F_Q26_1,3,neither agree nor disagree
+F_Q26_1,4,disagree somewhat
+F_Q26_1,5,disagree strongly
+F_Q26_2,1,agree strongly
+F_Q26_2,2,agree somewhat
+F_Q26_2,3,neither agree nor disagree
+F_Q26_2,4,disagree somewhat
+F_Q26_2,5,disagree strongly
+F_Q26_3,1,agree strongly
+F_Q26_3,2,agree somewhat
+F_Q26_3,3,neither agree nor disagree
+F_Q26_3,4,disagree somewhat
+F_Q26_3,5,disagree strongly
+F_Q26_4,1,agree strongly
+F_Q26_4,2,agree somewhat
+F_Q26_4,3,neither agree nor disagree
+F_Q26_4,4,disagree somewhat
+F_Q26_4,5,disagree strongly
+F_Q26_5,1,agree strongly
+F_Q26_5,2,agree somewhat
+F_Q26_5,3,neither agree nor disagree
+F_Q26_5,4,disagree somewhat
+F_Q26_5,5,disagree strongly
+F_Q26_6,1,agree strongly
+F_Q26_6,2,agree somewhat
+F_Q26_6,3,neither agree nor disagree
+F_Q26_6,4,disagree somewhat
+F_Q26_6,5,disagree strongly
+F_Q27,1,didn't read or just glanced at them
+F_Q27,2,read less than half of them
+F_Q27,3,read about half of them
+F_Q27,4,read more than half of them
+F_Q27,5,read all or nearly all of them
+F_Q27,6,didn't receive the material
+F_Q28,1,definitely yes
+F_Q28,2,probably yes
+F_Q28,3,"maybe, maybe not"
+F_Q28,4,probably not
+F_Q28,5,definitely not
+F_Q29,1,agree strongly
+F_Q29,2,agree somewhat
+F_Q29,3,neither agree nor disagree
+F_Q29,4,disagree somewhat
+F_Q29,5,disagree strongly

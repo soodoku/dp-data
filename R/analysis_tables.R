@@ -107,6 +107,105 @@ analysis_cor_people <- function() {
     )
 }
 
+analysis_marousi_source <- function() {
+  raw <- haven::read_sav(project_path(
+    "data", "marousi-2006", "survey.sav"
+  )) |>
+    dplyr::mutate(original_source_row = dplyr::row_number())
+  stopifnot(
+    nrow(raw) == 1275L, !anyNA(raw$P_Q1_0),
+    !anyDuplicated(raw$P_Q1_0)
+  )
+  observed <- function(prefix) {
+    columns <- grep(prefix, names(raw), value = TRUE)
+    columns <- setdiff(columns, c("AR_CODE", "F_CODE"))
+    stopifnot(length(columns) > 7L)
+    rowSums(!is.na(raw[columns])) > 0L
+  }
+  count_correct <- function(columns) {
+    flags <- as.data.frame(lapply(raw[columns], as.numeric))
+    stopifnot(length(columns) == 7L, all(
+      is.na(as.matrix(flags)) | as.matrix(flags) %in% 0:1
+    ))
+    as.integer(rowSums(flags == 1, na.rm = TRUE))
+  }
+  source <- raw |>
+    dplyr::mutate(
+      arrival_observed = observed("^AR_"),
+      departure_observed = observed("^F_"),
+      arrival_n_observed = as.integer(rowSums(!is.na(
+        raw[paste0("AR_Q", 14:20)]
+      ))),
+      departure_n_observed = as.integer(rowSums(!is.na(
+        raw[paste0("F_Q", 14:20)]
+      ))),
+      arrival_correct = count_correct(c(
+        "KQ1_T2", "KQ2POPT2", "KQ3STORE", "KQ4WASTE",
+        "KQ5PERT2", "KQ6TRANT", "KQ7METRO"
+      )),
+      departure_correct = count_correct(c(
+        "KQ1_T3", "KQ2POPT3", "KQ3STOR0", "KQ4WAST0",
+        "KQ5PERT3", "KQ6TRAN0", "KQ7METR0"
+      ))
+    ) |>
+    dplyr::filter(!is.na(GROUP)) |>
+    dplyr::transmute(
+      caseid = 79999L + dplyr::row_number(), original_source_row,
+      original_respondent_id = as.character(P_Q1_0),
+      source_group = 200000 + as.numeric(GROUP),
+      telephone_score = as.numeric(KNOWT1),
+      historical_departure_score = dplyr::coalesce(as.numeric(KNOWT3), 0),
+      arrival_observed, departure_observed,
+      arrival_n_observed, departure_n_observed,
+      arrival_correct, departure_correct
+    )
+  historical <- readr::read_csv(project_path(
+    "data", "marousi-2006", "participants.csv"
+  ), show_col_types = FALSE)
+  out <- dplyr::left_join(historical, source,
+    by = "caseid", relationship = "one-to-one"
+  )
+  stopifnot(
+    nrow(source) == 146L, nrow(out) == nrow(historical),
+    !anyNA(out$original_source_row),
+    all(out$pollgroup == out$source_group),
+    all(abs(out$t1know - out$telephone_score) < 1e-7),
+    all(abs(out$t2know - out$historical_departure_score) < 1e-7)
+  )
+  out
+}
+
+analysis_marousi_scores <- function(source) {
+  columns <- c("poll_id", "source_dataset", "respondent_id", "wave",
+               "n_items", "n_observed", "n_correct", "score", "scale")
+  telephone <- source |>
+    dplyr::transmute(
+      poll_id = "marousi-2006", source_dataset = "score_only",
+      respondent_id = as.character(caseid), wave = "t0",
+      n_items = 7L, n_observed = NA_integer_,
+      n_correct = as.integer(round(t1know * 7)),
+      score = as.numeric(t1know), scale = "proportion_correct"
+    )
+  later_score <- function(role, wave_id) {
+    observed <- source[[paste0(role, "_observed")]]
+    correct <- source[[paste0(role, "_correct")]]
+    n_observed <- source[[paste0(role, "_n_observed")]]
+    tibble::tibble(
+      poll_id = "marousi-2006", source_dataset = "score_only",
+      respondent_id = as.character(source$caseid), wave = wave_id,
+      n_items = 7L,
+      n_observed = dplyr::if_else(observed, n_observed, 0L),
+      n_correct = dplyr::if_else(observed, correct, NA_integer_),
+      score = dplyr::if_else(observed, correct / 7, NA_real_),
+      scale = "proportion_correct"
+    )
+  }
+  later <- purrr::map2(c("arrival", "departure"), c("t1", "t2"), later_score) |>
+    purrr::list_rbind()
+  dplyr::bind_rows(telephone, later) |>
+    dplyr::select(dplyr::all_of(columns))
+}
+
 analysis_control_sources <- function() {
   list(
     a1r = readr::read_tsv(project_path(
@@ -129,9 +228,7 @@ analysis_control_sources <- function() {
     northern_ireland = arrow::read_parquet(project_path(
       "data", "northern-ireland-2007", "survey.parquet"
     )),
-    marousi = readr::read_csv(project_path(
-      "data", "marousi-2006", "participants.csv"
-    ), show_col_types = FALSE)
+    marousi = analysis_marousi_source()
   )
 }
 
@@ -272,12 +369,13 @@ analysis_control_people <- function(sources) {
     !anyNA(northern_ireland$cluster_id)
   )
   marousi <- sources$marousi |>
-    dplyr::mutate(source_row = dplyr::row_number()) |>
     dplyr::transmute(
       poll_id = "marousi-2006", source_dataset = "score_only",
-      respondent_id = as.character(caseid), source_row,
-      historical_respondent_id = NA_character_,
-      identity_basis = "source-id", arm = "participant", panel = TRUE,
+      respondent_id = as.character(caseid),
+      source_row = as.integer(original_source_row),
+      historical_respondent_id = as.character(caseid),
+      identity_basis = "verified-source-bridge", arm = "participant",
+      panel = arrival_observed & departure_observed,
       assignment = NA_character_, attended = TRUE,
       small_group_id = as.character(pollgroup),
       cluster_id = as.character(pollgroup),
@@ -435,7 +533,7 @@ analysis_control_items <- function(sources, catalog) {
     )
 }
 
-analysis_scores <- function(items, participants) {
+analysis_scores <- function(items, participants, marousi = NULL) {
   item_scores <- items |>
     dplyr::summarise(
       n_items = dplyr::n(),
@@ -457,8 +555,7 @@ analysis_scores <- function(items, participants) {
       scale = "proportion_correct"
     )
   score_only <- participants |>
-    dplyr::filter(source_dataset %in% c("control", "score_only"),
-                  poll_id %in% c("tanzania-2015", "marousi-2006")) |>
+    dplyr::filter(source_dataset == "control", poll_id == "tanzania-2015") |>
     dplyr::select("poll_id", "source_dataset", "respondent_id",
                   "score_wave1", "score_wave2") |>
     tidyr::pivot_longer(c("score_wave1", "score_wave2"),
@@ -466,12 +563,15 @@ analysis_scores <- function(items, participants) {
     dplyr::mutate(
       wave = dplyr::recode(wave, score_wave1 = "t1", score_wave2 = "t2"),
       n_items = NA_integer_, n_observed = NA_integer_, n_correct = NA_integer_,
-      scale = dplyr::if_else(
-        poll_id == "tanzania-2015",
-        "standardized_index", "proportion_correct"
-      )
+      scale = "standardized_index"
     )
-  dplyr::bind_rows(item_scores, score_only) |>
+  marousi_scores <- if (is.null(marousi)) {
+    stopifnot(!any(participants$poll_id == "marousi-2006"))
+    NULL
+  } else {
+    analysis_marousi_scores(marousi)
+  }
+  dplyr::bind_rows(item_scores, score_only, marousi_scores) |>
     dplyr::select("poll_id", "source_dataset", "respondent_id", "wave",
                   "n_items", "n_observed", "n_correct", "score", "scale")
 }
@@ -491,7 +591,7 @@ build_analysis_tables <- function() {
     analysis_historical_items(catalog), analysis_cor_items(catalog),
     analysis_control_items(sources, catalog)
   )
-  scores <- analysis_scores(items, participants)
+  scores <- analysis_scores(items, participants, sources$marousi)
   attitudes <- analysis_attitudes(participants)
   stopifnot(
     !anyDuplicated(participants[c(

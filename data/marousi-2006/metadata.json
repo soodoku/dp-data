@@ -307,6 +307,21 @@
       "publication_status": "published",
       "notes": "Generated from data/marousi-2006/knowledge-item-distributions.doc. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
       "relative_path": "knowledge-item-distributions.pdf"
+    },
+    {
+      "artifact_id": "marousi-original-survey",
+      "poll_id": "marousi-2006",
+      "artifact_type": "data",
+      "title": "Marousi original merged three-wave survey",
+      "location": "data/marousi-2006/survey.sav",
+      "source_id": "cdd-marousi-survey",
+      "original_archive_path": "data/Greece/data/Greece_data_all_final.sav",
+      "sha256": "cc79623a9432a5d4d0bc9b8c3ff1ea3eebaa5021799c80631048f261ca9a651f",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Exact original numeric SPSS source; 1275 baseline respondents retained including nonattendees; T1/T2/T3 map to canonical t0/t1/t2; original departure-code conflicts preserved; MAR-02",
+      "relative_path": "survey.sav"
     }
   ],
   "document_previews": [

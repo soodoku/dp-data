@@ -3744,13 +3744,15 @@ questionnaires. It reports 39.4% before, whereas the 146-person file's
 baseline mean is 35.8%. At the initial audit these count and mean differences established a version or
 cohort discrepancy but did not identify which exported zeros represented
 blank items or absent questionnaires. MAR-02 below now separates all 27 using
-the original responses. The historical file remains unchanged pending review
-of the explicit proposed correction; no row is dropped to force a report match.
+the original responses. The historical participant file remains an unchanged comparison source.
+The user-approved MAR-02 correction is applied in the canonical analysis
+scores; no row is dropped to force a report match.
 
 ### MAR-02 — Original source bridges the report; partial quizzes were zeroed as whole scores
 
-**Status:** investigated on 2026-09-27; report reproduced and correction proposed,
-not adopted. The user's scoring instruction is explicit: an individual blank
+**Status:** investigated and user-approved on 2026-09-27; implemented in
+`R/analysis_tables.R` and rebuilt canonical analysis scores. The user's
+scoring instruction is explicit: an individual blank
 or don't-know item counts as wrong, including a wholly blank quiz within an
 otherwise observed questionnaire. An entirely absent questionnaire is a
 separate wave state; do not infer absence merely from a quiz score or blank
@@ -3772,13 +3774,16 @@ The bridge CSV uses phase names such as `telephone_score_revised` and
 `departure_factual_correct_count`; the frequency transcription preserves
 `source_wave = T3` with `canonical_wave_id = t2` and
 `wave_role = post_deliberation`. Existing historical files and canonical
-exports are not silently renumbered by this investigation. A general schema
+exports other than the explicitly migrated Marousi scores retain their
+existing selected-pre/post labels. A general schema
 should identify each questionnaire instance, its role and chronological order,
 its original source label, and its date or elapsed time when established.
 Multiple pre-event measurements and multiple follow-ups require distinct
-instance IDs with the same role. Use t3/t4 for successive later follow-ups where present, recording their
+instance IDs with the same role. Use t3/t4 for successive later follow-ups
+where present, recording their
 dates or time since deliberation. These labels identify follow-up order,
-not a fixed interval shared by every poll. For multiple pre-arrival measurements, use
+not a fixed interval shared by every poll. For multiple pre-arrival
+measurements, use
 distinct instances such as t0_1/t0_2 with role `pre_arrival`; keep t1/t2
 as the arrival/post-deliberation anchors. Missing phases do not cause later
 phases to be renumbered, and an online poll does not acquire an invented
@@ -3790,9 +3795,10 @@ is an interview mode, not the definition of t0. A downstream service must
 select its intended pair explicitly; the user's current dp-learning
 convention is arrival-to-exit (t1 to t2), with telephone/pre-arrival-to-exit
 (t0 to t2) a separate available comparison. If a poll lacks t1, mark that
-comparison unavailable rather than substituting t0. Marousi's current
-score-only export labels its telephone baseline t1; that historical label
-must be migrated explicitly before it satisfies this phase contract.
+comparison unavailable rather than substituting t0. Marousi's previous
+score-only export labeled its telephone baseline t1. The approved build now
+retains that telephone value as t0, adds arrival as t1, and rebuilds exit as
+t2. This explicit migration preserves the meanings of all three measurements.
 
 Preserve the full recovered 1,275-row source frame, including people who
 never attended, and every available pre-arrival response. The 146-person
@@ -3804,7 +3810,9 @@ it does not by itself establish causal selection bias. Unestablished
 attendance remains unknown, and nonattendance must not erase t0 responses.
 
 **Recovered source and identity bridge.** The original
-`vault/cdd/data/Greece/data/Greece_data_all_final.sav` remains locally available:
+`vault/cdd/data/Greece/data/Greece_data_all_final.sav` is now retained unchanged
+as public `data/marousi-2006/survey.sav`, with `variables.csv` and
+`value-labels.csv` alongside it:
 1,275 source rows, 1,026 columns, SHA-256
 `cc79623a9432a5d4d0bc9b8c3ff1ea3eebaa5021799c80631048f261ca9a651f`,
 matching its archive inventory. The July 5, 2006 snapshot
@@ -3902,10 +3910,11 @@ lost those correct answers. The revised seven-item scores are:
 These ten add 24 recovered correct answers. Every other observed departure
 score in the current export agrees with the revised source to storage
 precision. The other 17 zeros have missing `F_CODE`, missing `T3PART`, and
-**all 115 raw departure questionnaire fields missing**. This independently
+**all 115 departure source fields missing**, including the ID; the
+answer-only check separately finds all 114 departure fields missing. This independently
 establishes absent departure records in the merged source; the diagnosis is
 not based on all seven quiz items being blank. Keep their telephone responses,
-arrival responses and memberships, but propose a missing departure score and
+arrival responses and memberships, and set a missing departure score and
 false paired-panel flag. All 146 grouped people retain their row and membership.
 A legitimate all-wrong departure quiz still scores zero: the report includes
 one, source ID 31916, outside this grouped export.
@@ -3923,9 +3932,11 @@ The nine additional departures contribute 22 correct answers. Do not invent
 nine group assignments or alter the current grouped sample to make its mean
 42.8%. A full respondent/wave export can preserve these questionnaires with
 unknown group, while group analyses need an explicit membership requirement.
-The [proposed comparison](../audit/corrections/marousi-2006/proposed_score_comparison.csv)
-freezes all 146 current telephone/post scores, proposed post scores and reasons;
-it is a proposal, not an approved-value file.
+The [approved comparison](../audit/corrections/marousi-2006/approved_values.csv)
+freezes all 146 historical telephone/post scores, approved post scores and
+reasons. Ten substantive post scores change, seventeen become missing and
+119 agree within original float32 precision; exact integer-over-seven
+reconstruction can remove those original storage-rounding differences.
 
 **The report comparison itself counts five absent arrival waves as zero.**
 Source wave flags count 153 arrival and 138 departure, with 132 flagged at both,
@@ -3935,7 +3946,8 @@ and revised arrival score 5/7, despite missing `AR_CODE` and `T2PART`. Thus a
 wave flag or ID alone does not reliably establish absence. Using actual raw
 arrival responses finds 133 observed arrival questionnaires among the 138
 reported departures. The other five (source IDs 32832/33909/21434/31916/30357)
-have all 102 raw arrival fields absent, but stored revised `KNOWT2_2 == 0`.
+have all 102 arrival source fields absent, including the ID (all 101
+answer-only fields absent), but stored revised `KNOWT2_2 == 0`.
 Those stored zeros enter the reconstruction of 39.4% before and p = 0.017 above.
 For the 133 with actual answers at both waves, corresponding means are
 40.923738% arrival and 43.179377% departure, gain 2.255639 percentage points;
@@ -3969,18 +3981,32 @@ versions. These are scoring/version questions for other measures, not a
 reason to change the seven-item factual denominator. No new positional
 measure or key is adopted here.
 
-**Proposed narrow correction.** Preserve all 146 current rows, all source
-memberships and the existing telephone baseline. On an observed departure
-questionnaire, count each correct factual item over seven and score blanks/DK
-wrong; this fixes the ten false zero indices. Where the entire departure
-record is absent, retain a missing post score and a false paired-wave flag;
-this changes 17 post zeros to missing. Preserve the nine additional observed
-post questionnaires for a separately named full respondent source, with
-unknown groups. Keep the arrival-to-departure report reconstruction separate
-and explicit about its five absent-arrival zeros. No scientific output,
-participant field, historical CSV or downstream result is changed by this
-investigation. The next scientific implementation requires poll-specific
-review of this proposal.
+**Approved implementation.** All 146 current people and memberships remain.
+The canonical reader verifies the original grouped row-order bridge against
+historical case IDs, group IDs and baseline/old post scores. Questionnaire
+presence uses the full raw arrival/exit answer fields excluding ID-only
+columns. Seven authored binary correctness flags determine each observed
+arrival/exit score, with individual blanks and don't-know answers wrong.
+The ten false zeros recover 24 correct answers; seventeen entirely absent
+exits have missing score/correct count, zero observed items, and `panel = FALSE`.
+An observed all-wrong quiz remains a measured zero. The paired count is 129.
+
+Canonical knowledge scores now expose t0 telephone, t1 arrival and t2 exit,
+146 rows per phase. Telephone values remain numerically unchanged; arrival
+is separately named, and all 146 grouped arrival questionnaires are observed.
+Stable exported respondent IDs remain the historical case IDs, with verified
+original source-row locations and preserved group IDs. The complete original
+1,275-person source, including nonattendees and nine departures without a
+known group, is publicly retained unchanged; the canonical grouped analysis
+view still contains 146 people. No group assignments or disputed departure
+identity links are invented. Historical `participants.csv` is unchanged and
+the old downstream zero-score heuristic is recorded as superseded.
+
+The report reconstruction, including its five absent-arrival zeros, remains
+an audit benchmark rather than a redefinition of observed arrival responses.
+Other polls' scores and the historical 21-poll polardata are unchanged. Current
+dp-learning excludes this `score_only` source; admitting it or fitting a new
+comparison is a separate downstream analysis decision.
 
 ### TZ-01 — group assignment does not by itself establish treatment eligibility
 
@@ -4859,6 +4885,63 @@ analysis eligibility separately. Participant, paired-wave and group-analysis
 filters are named views over the source universe. Pre-arrival data can then
 support selection and attrition comparisons without rebuilding discarded
 records. MAR-02 supplies a concrete 1,275-row source bridge for this requirement.
+
+
+**Pre-arrival coverage audit (2026-09-27).** At least 31 of the original 34
+analytical catalog IDs retain a confirmed pre-arrival or online pre-start
+measurement, representing 30 distinct studies because the two Primaries IDs
+share a raw source. This counts retained source data, not verified coverage
+in the current canonical score export. Original wave suffixes are not evidence
+of phase. For online studies, a separately collected questionnaire before
+the discussion experiment counts as pre-start; a survey administered at the
+start of deliberation would instead be t1.
+
+| Confirmed retained source IDs | Timing evidence |
+| --- | --- |
+| uk-crime-1994; uk-eu-1995; uk-monarchy-1996; uk-general-election-1997; uk-health-1998 | Household interviews precede invitation/weekend; UK Health final report PDF p.4 and UK–EU attitude-constraint paper PDF p.8; original poll surveys/codebooks retained. |
+| cpl-1996; wtu-1996; swepco-1996 | Recruitment telephone interviews precede invitation; per-poll recruitment facts and retained survey/codebooks. |
+| nic-1996 | Initial household interviews before Austin event; NIC research recruitment account and 911-row source. |
+| australia-republic-1999 | Initial telephone survey before weekend; `papers/adp5.pdf`, methods. |
+| denmark-euro-2000 | Telephone recruitment August 1–8 before August 26–27 event; per-poll timing/recruitment facts and 1,702-row baseline. |
+| nic2-2003 | Telephone interview before Philadelphia; shared `reports/foreign-policy-report.pdf`, PDF p.2; 1,493-row source retains attendance/recruitment categories. |
+| btp-national-2003 | Initial online questionnaire followed by four weeks of discussions; shared `papers/foreign-policy.pdf`, PDF p.10. |
+| btp-online-primaries-2004; btp-presidential-primaries-2004 | Separate pre-experiment questionnaire/control measurements; shared `papers/presidential-nomination.pdf`, PDF pp.6–7 and shared 1,289-row source. |
+| btp-general-election-2004 | Baseline before five-week discussion experiment; `reports/online-election-results.pdf`, PDF p.1. |
+| btp-health-education-2005 | Pre-experiment questionnaire before five-week discussions; `reports/btp-health-education-results.pdf`, PDF p.4. |
+| new-haven-2004 | Telephone interview before March 2002 weekend; retained paper PDF p.8 and Pre/Mid/Post workbook. Historical ID retains 2004. |
+| zeguo-2005 | March baseline before April 9 event; `papers/china-zeguo-bjps.pdf`, PDF p.3. |
+| marousi-2006 | Telephone, arrival and exit are separate authored source waves; MAR-02. |
+| tomorrows-europe-2007 | First-contact baseline distinct from arrival/exit; TE-06 and retained research/multiwave material. |
+| northern-ireland-2007 | Early-January initial interviews before invitation to January 27 event; `papers/northern-ireland-paper.pdf`, PDF p.3. |
+| vermont-energy-2007 | Telephone recruitment before weekend; per-poll recruitment facts and 750-row source. |
+| btp-2007 | Baseline before agreement/four-week discussion experiment; `codebook.pdf`, PDF pp.3–4. |
+| san-mateo-2008 | Baseline ends with invitation to a future event; `questionnaire-pre.pdf`, PDF p.9. |
+| europolis-2009 | April telephone recruitment before May event; per-poll recruitment facts/CORDIS account. |
+| michigan-2009 | Telephone baseline distinct from arrival/exit; MI-02 and 610-row source. |
+| california-whats-next-2011 | Telephone baseline distinct from arrival/exit; CA-03 and 472-row source. |
+| tanzania-2015 | Household baseline before assignment/event; working paper sections 3.1–3.2. |
+| america-in-one-room-2019 | July 9–August 5 baseline before September 19–22 event; `design/a1r-2019-norc-methods.pdf`, PDF pp.3–4. |
+| a1r-climate-2021 | August baseline before September online events; `design/a1r-climate-methods.pdf`, PDF p.3. |
+
+The three remaining IDs are unverified, not established absences. Bulgaria
+2007 documents 1,344 before-event interviews in its report (PDF p.2), but that
+raw respondent dataset has not been identified. Bulgaria Crime 2002 retains
+278 paired raw records, but precise pre-arrival versus onsite timing is not
+independently established. AMR 2024 retains 2,419 pre/post records, but precise
+remote-baseline versus start-of-event timing remains unverified.
+
+At least 22 confirmed IDs retain recruitment respondents/nonattendees, and
+four more retain broader online controls/calibration populations (BTP 2007,
+General Election and both Primaries IDs). Present UK Health, New Haven,
+BTP National and BTP Health/Education sources are restricted cohorts; Zeguo's
+exact nonattendee-roster coverage is unclassified. Full-source retention does
+not establish attendance or invitation for every row. Historical canonical
+people outside the reviewed aggregate panel currently have unknown attendance;
+absence of group membership must not turn them into known nonattendees.
+
+This count covers the active original 34-ID audit. The 50-entry catalog also
+includes 16 materials-only events, and nine additional OOS study IDs exist
+outside that catalog. They have not been classified by this coverage audit.
 
 ### X-03: Typed missingness and explicit denominators
 

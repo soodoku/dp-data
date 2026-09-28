@@ -41,13 +41,15 @@ catalog, while their scoring codes are preserved.
 
 `wave` is `t1` for baseline, `t2` for immediate follow-up, and `t3` for a later
 follow-up in the existing export. This selected-pre/post convention is not
-yet a uniform event-phase contract: Marousi's current `t1` is a telephone
-pre-arrival score. The agreed replacement uses `t0` for pre-arrival, `t1`
+yet a uniform event-phase contract: Marousi's previous `t1` was a telephone
+pre-arrival score. Marousi has now been explicitly migrated; other polls
+still require reviewed phase mappings. The agreed replacement uses `t0` for pre-arrival, `t1`
 for arrival/start, `t2` for immediate post-deliberation, and `t3`/`t4` for
 successive later follow-ups. Original source labels, interview mode,
 questionnaire instance and dates/elapsed times remain separate metadata.
 See [X-02 and the Marousi bridge](poll-issues.md) for the mapping and migration
-requirements. No existing score is renumbered by that investigation.
+requirements. Marousi now exposes telephone `t0`, arrival `t1` and exit `t2`;
+its telephone values are unchanged.
 
 Readers must select a baseline/outcome pair explicitly. The current desired
 dp-learning comparison is arrival-to-exit (`t1` to `t2`); pre-arrival-to-exit
@@ -88,10 +90,14 @@ complete-case sample; downstream analyses select the variables they need.
 the four item-linked control polls and both deposited historical batteries.
 Missing, skipped, and don't-know answers enter that proportion as zero; the
 response table preserves their source status. Tanzania's released standardized
-index and Marousi's released proportion are marked as source scores with null
-item counts. Marousi's recorded zeros are retained exactly; they have not been
-interpreted as item-level answers. A downstream project can choose another
-scoring rule by grouping `analysis_item_responses`.
+index is marked as a source score with null item counts. Marousi preserves
+its original telephone proportion at t0 and computes arrival/exit proportions
+from seven authored correctness flags. Individual blanks/DK count wrong;
+seventeen absent exit questionnaires have missing scores. All 146 grouped
+people remain and 129 have both arrival and exit questionnaires. The full
+1,275-person original source is retained in `data/marousi-2006/survey.sav`;
+the existing grouped canonical view is not the full recruitment universe.
+A downstream project can choose another scoring rule by grouping `analysis_item_responses`.
 Northern Ireland's T3 battery contributes seven items for 93 returning
 participants and 150 controls. These controls were first interviewed at T3;
 they have no T1 or T2 knowledge scores. The control comparison for that poll

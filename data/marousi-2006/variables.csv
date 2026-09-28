@@ -1,0 +1,1027 @@
+source_column,storage_type,source_class,parquet_type,variable_label,source_format,missing_values,missing_range,public,publication_note
+P_Q1_0,double,numeric,,interview number,F12.0,,,TRUE,Retained
+P_DAY,double,numeric,,day,F8.0,,,TRUE,Retained
+P_Q1,double,haven_labelled|vctrs_vctr|double,,frequency of voting,F8.0,,,TRUE,Retained
+P_Q2,double,haven_labelled|vctrs_vctr|double,,intention to vote next october,F8.0,,,TRUE,Retained
+P_Q3_1,double,haven_labelled|vctrs_vctr|double,,municipal waste management,F8.0,,,TRUE,Retained
+P_Q3_2,double,haven_labelled|vctrs_vctr|double,,maintenance of public roads,F8.0,,,TRUE,Retained
+P_Q3_3,double,haven_labelled|vctrs_vctr|double,,tackling unemployment,F8.0,,,TRUE,Retained
+P_Q3_4,double,haven_labelled|vctrs_vctr|double,,reducing poverty,F8.0,,,TRUE,Retained
+P_Q3_5,double,haven_labelled|vctrs_vctr|double,,improving public transport,F8.0,,,TRUE,Retained
+P_Q3_6,double,haven_labelled|vctrs_vctr|double,,organized parking,F8.0,,,TRUE,Retained
+P_Q3_7,double,haven_labelled|vctrs_vctr|double,,the mall,F8.0,,,TRUE,Retained
+P_Q3_8,double,haven_labelled|vctrs_vctr|double,,the operation of multinational companies based in marousi,F8.0,,,TRUE,Retained
+P_Q3_9,double,haven_labelled|vctrs_vctr|double,,the integration of immigrants into society,F8.0,,,TRUE,Retained
+P_Q3_10,double,haven_labelled|vctrs_vctr|double,,public accountability of elected officials in the municipality,F8.0,,,TRUE,Retained
+P_Q3_11,double,haven_labelled|vctrs_vctr|double,,expanding public participation in the decision making process,F8.0,,,TRUE,Retained
+P_Q3_12,double,haven_labelled|vctrs_vctr|double,,"the transparent management of public funds by the municipality, particularly con",F8.0,,,TRUE,Retained
+P_Q3_13,double,haven_labelled|vctrs_vctr|double,,long term municipal budgets,F8.0,,,TRUE,Retained
+P_Q3_14,double,haven_labelled|vctrs_vctr|double,,building new municipal sports venues,F8.0,,,TRUE,Retained
+P_Q3_15,double,haven_labelled|vctrs_vctr|double,,finding open spaces,F8.0,,,TRUE,Retained
+P_Q3_16,double,haven_labelled|vctrs_vctr|double,,the maintenance of public schools,F8.0,,,TRUE,Retained
+P_Q3_17,double,haven_labelled|vctrs_vctr|double,,managing school budgets,F8.0,,,TRUE,Retained
+P_Q3_18,double,haven_labelled|vctrs_vctr|double,,instituting a private university in marousi,F8.0,,,TRUE,Retained
+P_Q3_19,double,haven_labelled|vctrs_vctr|double,,providing municipal healthcare,F8.0,,,TRUE,Retained
+P_Q4,double,numeric,,other issues maroussi faces,F8.0,,,TRUE,Retained
+P_Q5,double,haven_labelled|vctrs_vctr|double,,impacts of mall operation,F8.0,,,TRUE,Retained
+P_Q6,double,haven_labelled|vctrs_vctr|double,,waste recycling,F8.0,,,TRUE,Retained
+P_Q7,double,haven_labelled|vctrs_vctr|double,,contribution to waste recycling,F8.0,,,TRUE,Retained
+P_Q8,double,haven_labelled|vctrs_vctr|double,,immigrants integration,F8.0,,,TRUE,Retained
+P_Q9,double,haven_labelled|vctrs_vctr|double,,founding private universities,F8.0,,,TRUE,Retained
+P_Q10,double,haven_labelled|vctrs_vctr|double,,renting premises to private university,F8.0,,,TRUE,Retained
+P_Q11,double,haven_labelled|vctrs_vctr|double,,parking cards,F8.0,,,TRUE,Retained
+P_Q12,double,haven_labelled|vctrs_vctr|double,,municipal transportation network,F8.0,,,TRUE,Retained
+P_Q13,double,haven_labelled|vctrs_vctr|double,,current mayor,F8.0,,,TRUE,Retained
+P_Q14,double,haven_labelled|vctrs_vctr|double,,evaluation of mayor's performance,F8.0,,,TRUE,Retained
+P_Q15,double,haven_labelled|vctrs_vctr|double,,self - placement in the left-right spectrum,F8.0,,,TRUE,Retained
+P_Q16,double,haven_labelled|vctrs_vctr|double,,placement of pasok in the left-right spectrum,F8.0,,,TRUE,Retained
+P_Q17,double,haven_labelled|vctrs_vctr|double,,placement of nd in the left-right spectrum,F8.0,,,TRUE,Retained
+P_Q18_1,double,haven_labelled|vctrs_vctr|double,,opinion for pasok,F8.0,,,TRUE,Retained
+P_Q18_2,double,haven_labelled|vctrs_vctr|double,,opinion for nd,F8.0,,,TRUE,Retained
+P_Q18_3,double,haven_labelled|vctrs_vctr|double,,opinion for george papandreou,F8.0,,,TRUE,Retained
+P_Q18_4,double,haven_labelled|vctrs_vctr|double,,opinion for kostas karamanlis,F8.0,,,TRUE,Retained
+P_Q18_5,double,haven_labelled|vctrs_vctr|double,,opinion for current mayor,F8.0,,,TRUE,Retained
+P_Q19,double,haven_labelled|vctrs_vctr|double,,satisfaction - democratic process in greece,F8.0,,,TRUE,Retained
+P_Q20_1,double,haven_labelled|vctrs_vctr|double,,opinion for alexandris panagiotis,F8.0,,,TRUE,Retained
+P_Q20_2,double,haven_labelled|vctrs_vctr|double,,opinion for veloudos yiannis,F8.0,,,TRUE,Retained
+P_Q20_3,double,haven_labelled|vctrs_vctr|double,,opinion for vlachos charalambos,F8.0,,,TRUE,Retained
+P_Q20_4,double,haven_labelled|vctrs_vctr|double,,opinion for diakoliou mary,F8.0,,,TRUE,Retained
+P_Q20_5,double,haven_labelled|vctrs_vctr|double,,opinion for karanasou mary,F8.0,,,TRUE,Retained
+P_Q20_6,double,haven_labelled|vctrs_vctr|double,,opinion for breyiannis alekos,F8.0,,,TRUE,Retained
+P_Q20_7,double,haven_labelled|vctrs_vctr|double,,opinion for ragousis stathis,F8.0,,,TRUE,Retained
+P_Q20_8,double,haven_labelled|vctrs_vctr|double,,opinion for rotas kostas,F8.0,,,TRUE,Retained
+P_Q20_9,double,haven_labelled|vctrs_vctr|double,,opinion for ziogas babis,F8.0,,,TRUE,Retained
+P_Q20_10,double,haven_labelled|vctrs_vctr|double,,opinion for iosifidis makis,F8.0,,,TRUE,Retained
+P_Q20_11,double,haven_labelled|vctrs_vctr|double,,opinion for patoulis george,F8.0,,,TRUE,Retained
+P_V2004,double,haven_labelled|vctrs_vctr|double,,vote 2004,F8.0,,,TRUE,Retained
+P_Q21,double,haven_labelled|vctrs_vctr|double,,maroussi population,F8.0,,,TRUE,Retained
+P_Q22,double,haven_labelled|vctrs_vctr|double,,number of stores at 'the mall',F8.0,,,TRUE,Retained
+P_Q23,double,haven_labelled|vctrs_vctr|double,,average waste production per resident,F8.0,,,TRUE,Retained
+P_Q24,double,haven_labelled|vctrs_vctr|double,,percentage of immigrants in maroussi,F8.0,,,TRUE,Retained
+P_Q25,double,haven_labelled|vctrs_vctr|double,,coverage of municipal transportation network,F8.0,,,TRUE,Retained
+P_Q26,double,haven_labelled|vctrs_vctr|double,,metro line galatsi - maroussi,F8.0,,,TRUE,Retained
+P_Q27,double,haven_labelled|vctrs_vctr|double,,number of people using the new metro line,F8.0,,,TRUE,Retained
+P_D1,double,haven_labelled|vctrs_vctr|double,,gender,F8.0,,,TRUE,Retained
+P_D2,double,numeric,,year of birth,F8.0,,,TRUE,Retained
+P_D3,double,haven_labelled|vctrs_vctr|double,,educational level,F8.0,,,TRUE,Retained
+P_D4,double,haven_labelled|vctrs_vctr|double,,profession,F8.0,,,TRUE,Retained
+P_D5,double,numeric,,exact profession,F8.0,,,TRUE,Retained
+P_D6,double,haven_labelled|vctrs_vctr|double,,marital status,F8.0,,,TRUE,Retained
+P_D7,double,numeric,,number of children,F8.0,,,TRUE,Retained
+P_D8,double,numeric,,number of children under 18,F8.0,,,TRUE,Retained
+P_D9,double,haven_labelled|vctrs_vctr|double,,family monthly income,F8.0,,,TRUE,Retained
+P_D10,double,haven_labelled|vctrs_vctr|double,,frequency of attending church,F8.0,,,TRUE,Retained
+P_D11,double,numeric,,number of years living in maroussi,F8.0,,,TRUE,Retained
+P_DP1,double,haven_labelled|vctrs_vctr|double,,dp,F8.0,,,TRUE,Retained
+P_DP2,double,haven_labelled|vctrs_vctr|double,,opinion for dp,F8.0,,,TRUE,Retained
+P_DP3,double,haven_labelled|vctrs_vctr|double,,intention to participate in dp,F8.0,,,TRUE,Retained
+AR_CODE,double,numeric,,,F12.0,,,TRUE,Retained
+AR_Q1,double,haven_labelled|vctrs_vctr|double,,intention to vote next october,F8.0,,,TRUE,Retained
+AR_Q2_1,double,haven_labelled|vctrs_vctr|double,,municipal waste management,F8.0,,,TRUE,Retained
+AR_Q2_2,double,haven_labelled|vctrs_vctr|double,,maintenance of public roads,F8.0,,,TRUE,Retained
+AR_Q2_3,double,haven_labelled|vctrs_vctr|double,,tackling unemployment,F8.0,,,TRUE,Retained
+AR_Q2_4,double,haven_labelled|vctrs_vctr|double,,reducing poverty,F8.0,,,TRUE,Retained
+AR_Q2_5,double,haven_labelled|vctrs_vctr|double,,improving public transport,F8.0,,,TRUE,Retained
+AR_Q2_6,double,haven_labelled|vctrs_vctr|double,,organized parking,F8.0,,,TRUE,Retained
+AR_Q2_7,double,haven_labelled|vctrs_vctr|double,,the mall,F8.0,,,TRUE,Retained
+AR_Q2_8,double,haven_labelled|vctrs_vctr|double,,the operation of multinational companies based in marousi,F8.0,,,TRUE,Retained
+AR_Q2_9,double,haven_labelled|vctrs_vctr|double,,the integration of immigrants into society,F8.0,,,TRUE,Retained
+AR_Q2_10,double,haven_labelled|vctrs_vctr|double,,public accountability of elected officials in the municipality,F8.0,,,TRUE,Retained
+AR_Q2_11,double,haven_labelled|vctrs_vctr|double,,expanding public participation in the decision making process,F8.0,,,TRUE,Retained
+AR_Q2_12,double,haven_labelled|vctrs_vctr|double,,"the transparent management of public funds by the municipality, particularly con",F8.0,,,TRUE,Retained
+AR_Q2_13,double,haven_labelled|vctrs_vctr|double,,long term municipal budgets,F8.0,,,TRUE,Retained
+AR_Q2_14,double,haven_labelled|vctrs_vctr|double,,building new municipal sports venues,F8.0,,,TRUE,Retained
+AR_Q2_15,double,haven_labelled|vctrs_vctr|double,,finding open spaces,F8.0,,,TRUE,Retained
+AR_Q2_16,double,haven_labelled|vctrs_vctr|double,,the maintenance of public schools,F8.0,,,TRUE,Retained
+AR_Q2_17,double,haven_labelled|vctrs_vctr|double,,managing school budgets,F8.0,,,TRUE,Retained
+AR_Q2_18,double,haven_labelled|vctrs_vctr|double,,instituting a private university in marousi,F8.0,,,TRUE,Retained
+AR_Q2_19,double,haven_labelled|vctrs_vctr|double,,providing municipal healthcare,F8.0,,,TRUE,Retained
+AR_Q3_1,double,numeric,,opinion for alexandris panagiotis,F8.0,,,TRUE,Retained
+AR_Q3_2,double,numeric,,opinion for veloudos yiannis,F8.0,,,TRUE,Retained
+AR_Q3_3,double,numeric,,opinion for vlachos charalambos,F8.0,,,TRUE,Retained
+AR_Q3_4,double,numeric,,opinion for diakoliou mary,F8.0,,,TRUE,Retained
+AR_Q3_5,double,numeric,,opinion for karanasou mary,F8.0,,,TRUE,Retained
+AR_Q3_6,double,numeric,,opinion for breyiannis alekos,F8.0,,,TRUE,Retained
+AR_Q41_1,double,haven_labelled|vctrs_vctr|double,,alexandris panagiotis - sincere,F8.0,,,TRUE,Retained
+AR_Q41_2,double,haven_labelled|vctrs_vctr|double,,veloudos yiannis - sincere,F8.0,,,TRUE,Retained
+AR_Q41_3,double,haven_labelled|vctrs_vctr|double,,vlachos charalambos - sincere,F8.0,,,TRUE,Retained
+AR_Q41_4,double,haven_labelled|vctrs_vctr|double,,diakoliou mary - sincere,F8.0,,,TRUE,Retained
+AR_Q41_5,double,haven_labelled|vctrs_vctr|double,,karanasou mary - sincere,F8.0,,,TRUE,Retained
+AR_Q41_6,double,haven_labelled|vctrs_vctr|double,,breyiannis alekos - sincere,F8.0,,,TRUE,Retained
+AR_Q42_1,double,haven_labelled|vctrs_vctr|double,,alexandris panagiotis - intelligent,F8.0,,,TRUE,Retained
+AR_Q42_2,double,haven_labelled|vctrs_vctr|double,,veloudos yiannis - intelligent,F8.0,,,TRUE,Retained
+AR_Q42_3,double,haven_labelled|vctrs_vctr|double,,vlachos charalambos - intelligent,F8.0,,,TRUE,Retained
+AR_Q42_4,double,haven_labelled|vctrs_vctr|double,,diakoliou mary - intelligent,F8.0,,,TRUE,Retained
+AR_Q42_5,double,haven_labelled|vctrs_vctr|double,,karanasou mary - intelligent,F8.0,,,TRUE,Retained
+AR_Q42_6,double,haven_labelled|vctrs_vctr|double,,breyiannis alekos - intelligent,F8.0,,,TRUE,Retained
+AR_Q43_1,double,haven_labelled|vctrs_vctr|double,,alexandris panagiotis - likable,F8.0,,,TRUE,Retained
+AR_Q43_2,double,haven_labelled|vctrs_vctr|double,,veloudos yiannis - likable,F8.0,,,TRUE,Retained
+AR_Q43_3,double,haven_labelled|vctrs_vctr|double,,vlachos charalambos - likable,F8.0,,,TRUE,Retained
+AR_Q43_4,double,haven_labelled|vctrs_vctr|double,,diakoliou mary - likable,F8.0,,,TRUE,Retained
+AR_Q43_5,double,haven_labelled|vctrs_vctr|double,,karanasou mary - likable,F8.0,,,TRUE,Retained
+AR_Q43_6,double,haven_labelled|vctrs_vctr|double,,breyiannis alekos - likable,F8.0,,,TRUE,Retained
+AR_Q5,double,haven_labelled|vctrs_vctr|double,,environment,F8.0,,,TRUE,Retained
+AR_Q5_1,double,haven_labelled|vctrs_vctr|double,,alexandris panagiotis - environment,F8.0,,,TRUE,Retained
+AR_Q5_2,double,haven_labelled|vctrs_vctr|double,,veloudos yiannis - environment,F8.0,,,TRUE,Retained
+AR_Q5_3,double,haven_labelled|vctrs_vctr|double,,vlachos charalambos - environment,F8.0,,,TRUE,Retained
+AR_Q5_4,double,haven_labelled|vctrs_vctr|double,,diakoliou mary - environment,F8.0,,,TRUE,Retained
+AR_Q5_5,double,haven_labelled|vctrs_vctr|double,,karanasou mary - environment,F8.0,,,TRUE,Retained
+AR_Q5_6,double,haven_labelled|vctrs_vctr|double,,breyiannis alekos - environment,F8.0,,,TRUE,Retained
+AR_Q6,double,haven_labelled|vctrs_vctr|double,,investment,F8.0,,,TRUE,Retained
+AR_Q6_1,double,haven_labelled|vctrs_vctr|double,,alexandris panagiotis - investment,F8.0,,,TRUE,Retained
+AR_Q6_2,double,haven_labelled|vctrs_vctr|double,,veloudos yiannis - investment,F8.0,,,TRUE,Retained
+AR_Q6_3,double,haven_labelled|vctrs_vctr|double,,vlachos charalambos - investment,F8.0,,,TRUE,Retained
+AR_Q6_4,double,haven_labelled|vctrs_vctr|double,,diakoliou mary - investment,F8.0,,,TRUE,Retained
+AR_Q6_5,double,haven_labelled|vctrs_vctr|double,,karanasou mary - investment,F8.0,,,TRUE,Retained
+AR_Q6_6,double,haven_labelled|vctrs_vctr|double,,breyiannis alekos - investment,F8.0,,,TRUE,Retained
+AR_Q7,double,haven_labelled|vctrs_vctr|double,,local transportation,F8.0,,,TRUE,Retained
+AR_Q7_1,double,haven_labelled|vctrs_vctr|double,,alexandris panagiotis - local transportation,F8.0,,,TRUE,Retained
+AR_Q7_2,double,haven_labelled|vctrs_vctr|double,,veloudos yiannis - local transportation,F8.0,,,TRUE,Retained
+AR_Q7_3,double,haven_labelled|vctrs_vctr|double,,vlachos charalambos - local transportation,F8.0,,,TRUE,Retained
+AR_Q7_4,double,haven_labelled|vctrs_vctr|double,,diakoliou mary - local transportation,F8.0,,,TRUE,Retained
+AR_Q7_5,double,haven_labelled|vctrs_vctr|double,,karanasou mary - local transportation,F8.0,,,TRUE,Retained
+AR_Q7_6,double,haven_labelled|vctrs_vctr|double,,breyiannis alekos - local transportation,F8.0,,,TRUE,Retained
+AR_Q8,double,haven_labelled|vctrs_vctr|double,,immigrants,F8.0,,,TRUE,Retained
+AR_Q8_1,double,haven_labelled|vctrs_vctr|double,,alexandris panagiotis - immigrants,F8.0,,,TRUE,Retained
+AR_Q8_2,double,haven_labelled|vctrs_vctr|double,,veloudos yiannis - immigrants,F8.0,,,TRUE,Retained
+AR_Q8_3,double,haven_labelled|vctrs_vctr|double,,vlachos charalambos - immigrants,F8.0,,,TRUE,Retained
+AR_Q8_4,double,haven_labelled|vctrs_vctr|double,,diakoliou mary - immigrants,F8.0,,,TRUE,Retained
+AR_Q8_5,double,haven_labelled|vctrs_vctr|double,,karanasou mary - immigrants,F8.0,,,TRUE,Retained
+AR_Q8_6,double,haven_labelled|vctrs_vctr|double,,breyiannis alekos - immigrants,F8.0,,,TRUE,Retained
+AR_Q9,double,haven_labelled|vctrs_vctr|double,,voting intention,F8.0,,,TRUE,Retained
+AR_Q10,double,haven_labelled|vctrs_vctr|double,,self - placement in the left- right spectrum,F8.0,,,TRUE,Retained
+AR_Q11,double,haven_labelled|vctrs_vctr|double,,placement of pasok in the left-right spectrum,F8.0,,,TRUE,Retained
+AR_Q12,double,haven_labelled|vctrs_vctr|double,,placement of nd in the left-right spectrum,F8.0,,,TRUE,Retained
+AR_Q13_1,double,haven_labelled|vctrs_vctr|double,,placement of alexandris panagiotis in the left- right spectrum,F8.0,,,TRUE,Retained
+AR_Q13_2,double,haven_labelled|vctrs_vctr|double,,placement of veloudos yiannis in the left- right spectrum,F8.0,,,TRUE,Retained
+AR_Q13_3,double,haven_labelled|vctrs_vctr|double,,placement of vlachos charalambos in the left- right spectrum,F8.0,,,TRUE,Retained
+AR_Q13_4,double,haven_labelled|vctrs_vctr|double,,placement of diakoliou mary in the left- right spectrum,F8.0,,,TRUE,Retained
+AR_Q13_5,double,haven_labelled|vctrs_vctr|double,,placement of karanasou mary in the left- right spectrum,F8.0,,,TRUE,Retained
+AR_Q13_6,double,haven_labelled|vctrs_vctr|double,,placement of breyiannis alekos in the left- right spectrum,F8.0,,,TRUE,Retained
+AR_Q14,double,haven_labelled|vctrs_vctr|double,,current mayor,F8.0,,,TRUE,Retained
+AR_Q15,double,haven_labelled|vctrs_vctr|double,,maroussi population,F8.0,,,TRUE,Retained
+AR_Q16,double,haven_labelled|vctrs_vctr|double,,number of stores at 'the mall',F8.0,,,TRUE,Retained
+AR_Q17,double,haven_labelled|vctrs_vctr|double,,average waste production per resident,F8.0,,,TRUE,Retained
+AR_Q18,double,haven_labelled|vctrs_vctr|double,,percentage of immigrants in maroussi,F8.0,,,TRUE,Retained
+AR_Q19,double,haven_labelled|vctrs_vctr|double,,coverage of municipal transportation network,F8.0,,,TRUE,Retained
+AR_Q20,double,haven_labelled|vctrs_vctr|double,,number of people using the new metro line,F8.0,,,TRUE,Retained
+AR_Q21,double,numeric,,evaluation of mayor's performance,F8.0,,,TRUE,Retained
+AR_Q22_1,double,numeric,,opinion for pasok,F8.0,,,TRUE,Retained
+AR_Q22_2,double,numeric,,opinion for nd,F8.0,,,TRUE,Retained
+AR_Q22_3,double,numeric,,opinion for george papandreou,F8.0,,,TRUE,Retained
+AR_Q22_4,double,numeric,,opinion for kostas karamanlis,F8.0,,,TRUE,Retained
+AR_Q22_5,double,numeric,,opinion for current mayor,F8.0,,,TRUE,Retained
+AR_Q23,double,haven_labelled|vctrs_vctr|double,,satisfaction - democratic process in greece,F8.0,,,TRUE,Retained
+AR_Q24_1,double,haven_labelled|vctrs_vctr|double,,people with views different from mine often have very good reasons for their opi,F8.0,,,TRUE,Retained
+AR_Q24_2,double,haven_labelled|vctrs_vctr|double,,most political issues are so complicated that a person like me can't really unde,F8.0,,,TRUE,Retained
+AR_Q24_3,double,haven_labelled|vctrs_vctr|double,,most people do not know much about public affairs; decision-making is best left,F8.0,,,TRUE,Retained
+AR_Q24_4,double,haven_labelled|vctrs_vctr|double,,public officials care a lot about what people like me think.,F8.0,,,TRUE,Retained
+AR_Q24_5,double,haven_labelled|vctrs_vctr|double,,people like me don’t have any say about what the government does,F8.0,,,TRUE,Retained
+F_CODE,double,numeric,,,F12.0,,,TRUE,Retained
+F_Q1,double,haven_labelled|vctrs_vctr|double,,intention to vote next october,F8.0,,,TRUE,Retained
+F_Q2_1,double,haven_labelled|vctrs_vctr|double,,municipal waste management,F8.0,,,TRUE,Retained
+F_Q2_2,double,haven_labelled|vctrs_vctr|double,,maintenance of public roads,F8.0,,,TRUE,Retained
+F_Q2_3,double,haven_labelled|vctrs_vctr|double,,tackling unemployment,F8.0,,,TRUE,Retained
+F_Q2_4,double,haven_labelled|vctrs_vctr|double,,reducing poverty,F8.0,,,TRUE,Retained
+F_Q2_5,double,haven_labelled|vctrs_vctr|double,,improving public transport,F8.0,,,TRUE,Retained
+F_Q2_6,double,haven_labelled|vctrs_vctr|double,,organized parking,F8.0,,,TRUE,Retained
+F_Q2_7,double,haven_labelled|vctrs_vctr|double,,the mall,F8.0,,,TRUE,Retained
+F_Q2_8,double,haven_labelled|vctrs_vctr|double,,the operation of multinational companies based in marousi,F8.0,,,TRUE,Retained
+F_Q2_9,double,haven_labelled|vctrs_vctr|double,,the integration of immigrants into society,F8.0,,,TRUE,Retained
+F_Q2_10,double,haven_labelled|vctrs_vctr|double,,public accountability of elected officials in the municipality,F8.0,,,TRUE,Retained
+F_Q2_11,double,haven_labelled|vctrs_vctr|double,,expanding public participation in the decision making process,F8.0,,,TRUE,Retained
+F_Q2_12,double,haven_labelled|vctrs_vctr|double,,"the transparent management of public funds by the municipality, particularly con",F8.0,,,TRUE,Retained
+F_Q2_13,double,haven_labelled|vctrs_vctr|double,,long term municipal budgets,F8.0,,,TRUE,Retained
+F_Q2_14,double,haven_labelled|vctrs_vctr|double,,building new municipal sports venues,F8.0,,,TRUE,Retained
+F_Q2_15,double,haven_labelled|vctrs_vctr|double,,finding open spaces,F8.0,,,TRUE,Retained
+F_Q2_16,double,haven_labelled|vctrs_vctr|double,,the maintenance of public schools,F8.0,,,TRUE,Retained
+F_Q2_17,double,haven_labelled|vctrs_vctr|double,,managing school budgets,F8.0,,,TRUE,Retained
+F_Q2_18,double,haven_labelled|vctrs_vctr|double,,instituting a private university in marousi,F8.0,,,TRUE,Retained
+F_Q2_19,double,haven_labelled|vctrs_vctr|double,,providing municipal healthcare,F8.0,,,TRUE,Retained
+F_Q3_1,double,numeric,,opinion for alexandris panagiotis,F8.0,,,TRUE,Retained
+F_Q3_2,double,numeric,,opinion for veloudos yiannis,F8.0,,,TRUE,Retained
+F_Q3_3,double,numeric,,opinion for vlachos charalambos,F8.0,,,TRUE,Retained
+F_Q3_4,double,numeric,,opinion for diakoliou mary,F8.0,,,TRUE,Retained
+F_Q3_5,double,numeric,,opinion for karanasou mary,F8.0,,,TRUE,Retained
+F_Q3_6,double,numeric,,opinion for breyiannis alekos,F8.0,,,TRUE,Retained
+F_Q41_1,double,haven_labelled|vctrs_vctr|double,,alexandris panagiotis - sincere,F8.0,,,TRUE,Retained
+F_Q41_2,double,haven_labelled|vctrs_vctr|double,,veloudos yiannis - sincere,F8.0,,,TRUE,Retained
+F_Q41_3,double,haven_labelled|vctrs_vctr|double,,vlachos charalambos - sincere,F8.0,,,TRUE,Retained
+F_Q41_4,double,haven_labelled|vctrs_vctr|double,,diakoliou mary - sincere,F8.0,,,TRUE,Retained
+F_Q41_5,double,haven_labelled|vctrs_vctr|double,,karanasou mary - sincere,F8.0,,,TRUE,Retained
+F_Q41_6,double,haven_labelled|vctrs_vctr|double,,breyiannis alekos - sincere,F8.0,,,TRUE,Retained
+F_Q42_1,double,haven_labelled|vctrs_vctr|double,,alexandris panagiotis - intelligent,F8.0,,,TRUE,Retained
+F_Q42_2,double,haven_labelled|vctrs_vctr|double,,veloudos yiannis - intelligent,F8.0,,,TRUE,Retained
+F_Q42_3,double,haven_labelled|vctrs_vctr|double,,vlachos charalambos - intelligent,F8.0,,,TRUE,Retained
+F_Q42_4,double,haven_labelled|vctrs_vctr|double,,diakoliou mary - intelligent,F8.0,,,TRUE,Retained
+F_Q42_5,double,haven_labelled|vctrs_vctr|double,,karanasou mary - intelligent,F8.0,,,TRUE,Retained
+F_Q42_6,double,haven_labelled|vctrs_vctr|double,,breyiannis alekos - intelligent,F8.0,,,TRUE,Retained
+F_Q43_1,double,haven_labelled|vctrs_vctr|double,,alexandris panagiotis - likable,F8.0,,,TRUE,Retained
+F_Q43_2,double,haven_labelled|vctrs_vctr|double,,veloudos yiannis - likable,F8.0,,,TRUE,Retained
+F_Q43_3,double,haven_labelled|vctrs_vctr|double,,vlachos charalambos - likable,F8.0,,,TRUE,Retained
+F_Q43_4,double,haven_labelled|vctrs_vctr|double,,diakoliou mary - likable,F8.0,,,TRUE,Retained
+F_Q43_5,double,haven_labelled|vctrs_vctr|double,,karanasou mary - likable,F8.0,,,TRUE,Retained
+F_Q43_6,double,haven_labelled|vctrs_vctr|double,,breyiannis alekos - likable,F8.0,,,TRUE,Retained
+F_Q5,double,haven_labelled|vctrs_vctr|double,,environment,F8.0,,,TRUE,Retained
+F_Q5_1,double,haven_labelled|vctrs_vctr|double,,alexandris panagiotis - environment,F8.0,,,TRUE,Retained
+F_Q5_2,double,haven_labelled|vctrs_vctr|double,,veloudos yiannis - environment,F8.0,,,TRUE,Retained
+F_Q5_3,double,haven_labelled|vctrs_vctr|double,,vlachos charalambos - environment,F8.0,,,TRUE,Retained
+F_Q5_4,double,haven_labelled|vctrs_vctr|double,,diakoliou mary - environment,F8.0,,,TRUE,Retained
+F_Q5_5,double,haven_labelled|vctrs_vctr|double,,karanasou mary - environment,F8.0,,,TRUE,Retained
+F_Q5_6,double,haven_labelled|vctrs_vctr|double,,breyiannis alekos - environment,F8.0,,,TRUE,Retained
+F_Q6,double,haven_labelled|vctrs_vctr|double,,investment,F8.0,,,TRUE,Retained
+F_Q6_1,double,haven_labelled|vctrs_vctr|double,,alexandris panagiotis - investment,F8.0,,,TRUE,Retained
+F_Q6_2,double,haven_labelled|vctrs_vctr|double,,veloudos yiannis - investment,F8.0,,,TRUE,Retained
+F_Q6_3,double,haven_labelled|vctrs_vctr|double,,vlachos charalambos - investment,F8.0,,,TRUE,Retained
+F_Q6_4,double,haven_labelled|vctrs_vctr|double,,diakoliou mary - investment,F8.0,,,TRUE,Retained
+F_Q6_5,double,haven_labelled|vctrs_vctr|double,,karanasou mary - investment,F8.0,,,TRUE,Retained
+F_Q6_6,double,haven_labelled|vctrs_vctr|double,,breyiannis alekos - investment,F8.0,,,TRUE,Retained
+F_Q7,double,haven_labelled|vctrs_vctr|double,,local transportation,F8.0,,,TRUE,Retained
+F_Q7_1,double,haven_labelled|vctrs_vctr|double,,alexandris panagiotis - local transportation,F8.0,,,TRUE,Retained
+F_Q7_2,double,haven_labelled|vctrs_vctr|double,,veloudos yiannis - local transportation,F8.0,,,TRUE,Retained
+F_Q7_3,double,haven_labelled|vctrs_vctr|double,,vlachos charalambos - local transportation,F8.0,,,TRUE,Retained
+F_Q7_4,double,haven_labelled|vctrs_vctr|double,,diakoliou mary - local transportation,F8.0,,,TRUE,Retained
+F_Q7_5,double,haven_labelled|vctrs_vctr|double,,karanasou mary - local transportation,F8.0,,,TRUE,Retained
+F_Q7_6,double,haven_labelled|vctrs_vctr|double,,breyiannis alekos - local transportation,F8.0,,,TRUE,Retained
+F_Q8,double,haven_labelled|vctrs_vctr|double,,immigrants,F8.0,,,TRUE,Retained
+F_Q8_1,double,haven_labelled|vctrs_vctr|double,,alexandris panagiotis - immigrants,F8.0,,,TRUE,Retained
+F_Q8_2,double,haven_labelled|vctrs_vctr|double,,veloudos yiannis - immigrants,F8.0,,,TRUE,Retained
+F_Q8_3,double,haven_labelled|vctrs_vctr|double,,vlachos charalambos - immigrants,F8.0,,,TRUE,Retained
+F_Q8_4,double,haven_labelled|vctrs_vctr|double,,diakoliou mary - immigrants,F8.0,,,TRUE,Retained
+F_Q8_5,double,haven_labelled|vctrs_vctr|double,,karanasou mary - immigrants,F8.0,,,TRUE,Retained
+F_Q8_6,double,haven_labelled|vctrs_vctr|double,,breyiannis alekos - immigrants,F8.0,,,TRUE,Retained
+F_Q9,double,haven_labelled|vctrs_vctr|double,,voting intention,F8.0,,,TRUE,Retained
+F_Q10,double,haven_labelled|vctrs_vctr|double,,self - placement in the left- right spectrum,F8.0,,,TRUE,Retained
+F_Q11,double,haven_labelled|vctrs_vctr|double,,placement of pasok in the left-right spectrum,F8.0,,,TRUE,Retained
+F_Q12,double,haven_labelled|vctrs_vctr|double,,placement of nd in the left-right spectrum,F8.0,,,TRUE,Retained
+F_Q13_1,double,haven_labelled|vctrs_vctr|double,,placement of alexandris panagiotis in the left- right spectrum,F8.0,,,TRUE,Retained
+F_Q13_2,double,haven_labelled|vctrs_vctr|double,,placement of veloudos yiannis in the left- right spectrum,F8.0,,,TRUE,Retained
+F_Q13_3,double,haven_labelled|vctrs_vctr|double,,placement of vlachos charalambos in the left- right spectrum,F8.0,,,TRUE,Retained
+F_Q13_4,double,haven_labelled|vctrs_vctr|double,,placement of diakoliou mary in the left- right spectrum,F8.0,,,TRUE,Retained
+F_Q13_5,double,haven_labelled|vctrs_vctr|double,,placement of karanasou mary in the left- right spectrum,F8.0,,,TRUE,Retained
+F_Q13_6,double,haven_labelled|vctrs_vctr|double,,placement of breyiannis alekos in the left- right spectrum,F8.0,,,TRUE,Retained
+F_Q14,double,haven_labelled|vctrs_vctr|double,,current mayor,F8.0,,,TRUE,Retained
+F_Q15,double,haven_labelled|vctrs_vctr|double,,maroussi population,F8.0,,,TRUE,Retained
+F_Q16,double,haven_labelled|vctrs_vctr|double,,number of stores at 'the mall',F8.0,,,TRUE,Retained
+F_Q17,double,haven_labelled|vctrs_vctr|double,,average waste production per resident,F8.0,,,TRUE,Retained
+F_Q18,double,haven_labelled|vctrs_vctr|double,,percentage of immigrants in maroussi,F8.0,,,TRUE,Retained
+F_Q19,double,haven_labelled|vctrs_vctr|double,,coverage of municipal transportation network,F8.0,,,TRUE,Retained
+F_Q20,double,haven_labelled|vctrs_vctr|double,,number of people using the new metro line,F8.0,,,TRUE,Retained
+F_Q21,double,numeric,,evaluation of mayor's performance,F8.0,,,TRUE,Retained
+F_Q22_1,double,numeric,,opinion for pasok,F8.0,,,TRUE,Retained
+F_Q22_2,double,numeric,,opinion for nd,F8.0,,,TRUE,Retained
+F_Q22_3,double,numeric,,opinion for george papandreou,F8.0,,,TRUE,Retained
+F_Q22_4,double,numeric,,opinion for kostas karamanlis,F8.0,,,TRUE,Retained
+F_Q22_5,double,numeric,,opinion for current mayor,F8.0,,,TRUE,Retained
+F_Q23,double,haven_labelled|vctrs_vctr|double,,satisfaction - democratic process in greece,F8.0,,,TRUE,Retained
+F_Q24_1,double,haven_labelled|vctrs_vctr|double,,people with views different from mine often have very good reasons for their opi,F8.0,,,TRUE,Retained
+F_Q24_2,double,haven_labelled|vctrs_vctr|double,,most political issues are so complicated that a person like me can't really unde,F8.0,,,TRUE,Retained
+F_Q24_3,double,haven_labelled|vctrs_vctr|double,,most people do not know much about public affairs; decision-making is best left,F8.0,,,TRUE,Retained
+F_Q24_4,double,haven_labelled|vctrs_vctr|double,,public officials care a lot about what people like me think.,F8.0,,,TRUE,Retained
+F_Q24_5,double,haven_labelled|vctrs_vctr|double,,people like me don’t have any say about what the government does,F8.0,,,TRUE,Retained
+F_Q25_1,double,haven_labelled|vctrs_vctr|double,,rating - participating in the small group discussions,F8.0,,,TRUE,Retained
+F_Q25_2,double,haven_labelled|vctrs_vctr|double,,rating - meeting and talking to other participants outside of the formal discuss,F8.0,,,TRUE,Retained
+F_Q25_3,double,haven_labelled|vctrs_vctr|double,,rating - the large-group sessions with the candidates,F8.0,,,TRUE,Retained
+F_Q25_4,double,haven_labelled|vctrs_vctr|double,,rating - the event as a whole,F8.0,,,TRUE,Retained
+F_Q26_1,double,haven_labelled|vctrs_vctr|double,,my small group moderator provided the opportunity for everyone to participate in,F8.0,,,TRUE,Retained
+F_Q26_2,double,haven_labelled|vctrs_vctr|double,,the members of my small group did in fact participate relatively equally in the,F8.0,,,TRUE,Retained
+F_Q26_3,double,haven_labelled|vctrs_vctr|double,,my small group moderator sometimes tried to influence the group with his or her,F8.0,,,TRUE,Retained
+F_Q26_4,double,haven_labelled|vctrs_vctr|double,,the small group moderator tried to make sure that opposing arguments were consid,F8.0,,,TRUE,Retained
+F_Q26_5,double,haven_labelled|vctrs_vctr|double,,the important aspects of the issues were covered in the group discussions,F8.0,,,TRUE,Retained
+F_Q26_6,double,haven_labelled|vctrs_vctr|double,,i learned a lot about people very different from me—about what they and their li,F8.0,,,TRUE,Retained
+F_Q27,double,haven_labelled|vctrs_vctr|double,,"by the end of the event, about how much of the discussion materials that were se",F8.0,,,TRUE,Retained
+F_Q28,double,haven_labelled|vctrs_vctr|double,,"with the experience of today’s event, would you be interested in participating i",F8.0,,,TRUE,Retained
+F_Q29,double,haven_labelled|vctrs_vctr|double,,how strongly would you agree or disagree that your experience today and its impl,F8.0,,,TRUE,Retained
+KQ1_T2,double,numeric,,,F9.2,,,TRUE,Retained
+KQ1_T3,double,numeric,,,F9.2,,,TRUE,Retained
+KQ2POPT2,double,numeric,,,F9.2,,,TRUE,Retained
+KQ2POPT3,double,numeric,,,F9.2,,,TRUE,Retained
+KQ3STORE,double,numeric,,,F9.2,,,TRUE,Retained
+KQ3STOR0,double,numeric,,,F9.2,,,TRUE,Retained
+KQ4WASTE,double,numeric,,,F9.2,,,TRUE,Retained
+KQ4WAST0,double,numeric,,,F9.2,,,TRUE,Retained
+KQ5PERT2,double,numeric,,,F9.2,,,TRUE,Retained
+KQ5PERT3,double,numeric,,,F9.2,,,TRUE,Retained
+KQ6TRANT,double,numeric,,,F9.2,,,TRUE,Retained
+KQ6TRAN0,double,numeric,,,F9.2,,,TRUE,Retained
+KQ7METRO,double,numeric,,,F9.2,,,TRUE,Retained
+KQ7METR0,double,numeric,,,F9.2,,,TRUE,Retained
+T3PART,double,numeric,,,F9.2,,,TRUE,Retained
+T1T3FILT,double,numeric,,participants at t1 and t3,F9.2,,,TRUE,Retained
+KQ1_T1,double,numeric,,,F9.2,,,TRUE,Retained
+KQ2POPT1,double,numeric,,,F9.2,,,TRUE,Retained
+KQ3STOR1,double,numeric,,,F9.2,,,TRUE,Retained
+KQ4WAST1,double,numeric,,,F9.2,,,TRUE,Retained
+KQ5PERT1,double,numeric,,,F9.2,,,TRUE,Retained
+KQ6TRAN1,double,numeric,,,F9.2,,,TRUE,Retained
+KQ7METR1,double,numeric,,,F9.2,,,TRUE,Retained
+T2PART,double,numeric,,,F9.2,,,TRUE,Retained
+T1T2FILT,double,numeric,,participants at t1 and t2,F9.2,,,TRUE,Retained
+KNOWT1,double,numeric,,T1 factual knowledge index,F9.2,,,TRUE,Retained
+KNOWT3,double,numeric,,T3 factual knowledge index,F9.2,,,TRUE,Retained
+T2ALEXSI,double,numeric,,"T2 Alex - Sincere, 0 to 1, 1 being extremely well",F9.2,,,TRUE,Retained
+T3ALEXSI,double,numeric,,,F9.2,,,TRUE,Retained
+T2VELSIN,double,numeric,,,F9.2,,,TRUE,Retained
+T3VELSIN,double,numeric,,,F9.2,,,TRUE,Retained
+T2VLASIN,double,numeric,,,F9.2,,,TRUE,Retained
+T3VLASIN,double,numeric,,,F9.2,,,TRUE,Retained
+T2DIAKSI,double,numeric,,,F9.2,,,TRUE,Retained
+T3DIAKSI,double,numeric,,,F9.2,,,TRUE,Retained
+T2KARSIN,double,numeric,,,F9.2,,,TRUE,Retained
+T3KARSIN,double,numeric,,,F9.2,,,TRUE,Retained
+T2BRESIN,double,numeric,,,F9.2,,,TRUE,Retained
+T3BRESIN,double,numeric,,,F9.2,,,TRUE,Retained
+T2ALEXIN,double,numeric,,"T2 Alex - Intelligent, 0 to 1, 1 being extremely well",F9.2,,,TRUE,Retained
+T3ALEXIN,double,numeric,,,F9.2,,,TRUE,Retained
+T2VELINT,double,numeric,,,F9.2,,,TRUE,Retained
+T3VELINT,double,numeric,,,F9.2,,,TRUE,Retained
+T2VLAINT,double,numeric,,,F9.2,,,TRUE,Retained
+T3VLAINT,double,numeric,,,F9.2,,,TRUE,Retained
+T2DIAKIN,double,numeric,,,F9.2,,,TRUE,Retained
+T3DIAKIN,double,numeric,,,F9.2,,,TRUE,Retained
+T2KARINT,double,numeric,,,F9.2,,,TRUE,Retained
+T3KARINT,double,numeric,,,F9.2,,,TRUE,Retained
+T2BREINT,double,numeric,,,F9.2,,,TRUE,Retained
+T3BREINT,double,numeric,,,F9.2,,,TRUE,Retained
+T2ALEXLI,double,numeric,,"T2 Alex - Likeability, 0 to 1, 1 being extremely well",F9.2,,,TRUE,Retained
+T3ALEXLI,double,numeric,,,F9.2,,,TRUE,Retained
+T2VELLIK,double,numeric,,,F9.2,,,TRUE,Retained
+T3VELLIK,double,numeric,,,F9.2,,,TRUE,Retained
+T2VLALIK,double,numeric,,,F9.2,,,TRUE,Retained
+T3VLALIK,double,numeric,,,F9.2,,,TRUE,Retained
+T2DIAKIK,double,numeric,,,F9.2,,,TRUE,Retained
+T3DIAKIK,double,numeric,,,F9.2,,,TRUE,Retained
+T2KARLIK,double,numeric,,,F9.2,,,TRUE,Retained
+T3KARLIK,double,numeric,,,F9.2,,,TRUE,Retained
+T2BRELIK,double,numeric,,,F9.2,,,TRUE,Retained
+T3BRELIK,double,numeric,,,F9.2,,,TRUE,Retained
+T2ALEXEN,double,numeric,,"T2 Alex - Environment, 0 to 10 scale - dk at midpt",F9.2,,,TRUE,Retained
+T3ALEXEN,double,numeric,,,F9.2,,,TRUE,Retained
+T2VELENV,double,numeric,,,F9.2,,,TRUE,Retained
+T3VELENV,double,numeric,,,F9.2,,,TRUE,Retained
+T2VLAENV,double,numeric,,,F9.2,,,TRUE,Retained
+T3VLAENV,double,numeric,,,F9.2,,,TRUE,Retained
+T2DIAKEN,double,numeric,,,F9.2,,,TRUE,Retained
+T3DIAKEN,double,numeric,,,F9.2,,,TRUE,Retained
+T2KARENV,double,numeric,,,F9.2,,,TRUE,Retained
+T3KARENV,double,numeric,,,F9.2,,,TRUE,Retained
+T2BREENV,double,numeric,,,F9.2,,,TRUE,Retained
+T3BREENV,double,numeric,,,F9.2,,,TRUE,Retained
+T2ALEXI0,double,numeric,," T2 Alex - Investments, 0 to 10 scale - dk at midpt",F9.2,,,TRUE,Retained
+T3ALEXI0,double,numeric,,,F9.2,,,TRUE,Retained
+T2VELINV,double,numeric,,,F9.2,,,TRUE,Retained
+T3VELINV,double,numeric,,,F9.2,,,TRUE,Retained
+T2VLAINV,double,numeric,,,F9.2,,,TRUE,Retained
+T3VLAINV,double,numeric,,,F9.2,,,TRUE,Retained
+T2DIAKI0,double,numeric,,,F9.2,,,TRUE,Retained
+T3DIAKI0,double,numeric,,,F9.2,,,TRUE,Retained
+T2KRAINV,double,numeric,,,F9.2,,,TRUE,Retained
+T3KRAINV,double,numeric,,,F9.2,,,TRUE,Retained
+T2BREINV,double,numeric,,,F9.2,,,TRUE,Retained
+T3BREINV,double,numeric,,,F9.2,,,TRUE,Retained
+T2ALEXTR,double,numeric,,"T2 Alex - Transportation, 0 to 10 scale - dk at midpt",F9.2,,,TRUE,Retained
+T3ALEXTR,double,numeric,,,F9.2,,,TRUE,Retained
+T2VELTRA,double,numeric,,,F9.2,,,TRUE,Retained
+T3VELTRA,double,numeric,,,F9.2,,,TRUE,Retained
+T2VLATRA,double,numeric,,,F9.2,,,TRUE,Retained
+T3VLATRA,double,numeric,,,F9.2,,,TRUE,Retained
+T2DIAKTR,double,numeric,,,F9.2,,,TRUE,Retained
+T3DIAKTR,double,numeric,,,F9.2,,,TRUE,Retained
+T2KARTRA,double,numeric,,,F9.2,,,TRUE,Retained
+T3KARTRA,double,numeric,,,F9.2,,,TRUE,Retained
+T2BRETRA,double,numeric,,,F9.2,,,TRUE,Retained
+T3BRETRA,double,numeric,,,F9.2,,,TRUE,Retained
+T2ALEXIM,double,numeric,,"T2 Alex - Immigrant, 0 to 10 scale - dk at midpt",F9.2,,,TRUE,Retained
+T3ALEXIM,double,numeric,,,F9.2,,,TRUE,Retained
+T2VELIMM,double,numeric,,,F9.2,,,TRUE,Retained
+T3VELIMM,double,numeric,,,F9.2,,,TRUE,Retained
+T2VLAIMM,double,numeric,,,F9.2,,,TRUE,Retained
+T3VLAIMM,double,numeric,,,F9.2,,,TRUE,Retained
+T2DIAKIM,double,numeric,,,F9.2,,,TRUE,Retained
+T3DIAKIM,double,numeric,,,F9.2,,,TRUE,Retained
+T2KARIMM,double,numeric,,,F9.2,,,TRUE,Retained
+T3KARIMM,double,numeric,,,F9.2,,,TRUE,Retained
+T2BREIMM,double,numeric,,,F9.2,,,TRUE,Retained
+T3BREIMM,double,numeric,,,F9.2,,,TRUE,Retained
+T1MWASTE,double,numeric,, T1 Municipal waste management - dk/missing at midpt,F9.2,,,TRUE,Retained
+T3MWASTE,double,numeric,,,F9.2,,,TRUE,Retained
+T1ROADS,double,numeric,,,F9.2,,,TRUE,Retained
+T3ROADS,double,numeric,,,F9.2,,,TRUE,Retained
+T1UNEMP,double,numeric,,,F9.2,,,TRUE,Retained
+T3UNEMP,double,numeric,,,F9.2,,,TRUE,Retained
+T1POVERT,double,numeric,,,F9.2,,,TRUE,Retained
+T3POVERT,double,numeric,,,F9.2,,,TRUE,Retained
+T1TRANS,double,numeric,,,F9.2,,,TRUE,Retained
+T3TRANS,double,numeric,,,F9.2,,,TRUE,Retained
+T1PARK,double,numeric,,,F9.2,,,TRUE,Retained
+T3PARK,double,numeric,,,F9.2,,,TRUE,Retained
+T1MALL,double,numeric,,,F9.2,,,TRUE,Retained
+T3MALL,double,numeric,,,F9.2,,,TRUE,Retained
+T1COMP,double,numeric,,,F9.2,,,TRUE,Retained
+T3COMP,double,numeric,,,F9.2,,,TRUE,Retained
+T1IMMI,double,numeric,,,F9.2,,,TRUE,Retained
+T3IMMI,double,numeric,,,F9.2,,,TRUE,Retained
+T1ACCT,double,numeric,,,F9.2,,,TRUE,Retained
+T3ACCT,double,numeric,,,F9.2,,,TRUE,Retained
+T1EXPA,double,numeric,,,F9.2,,,TRUE,Retained
+T3EXPA,double,numeric,,,F9.2,,,TRUE,Retained
+T1EXPAN,double,numeric,,,F9.2,,,TRUE,Retained
+T3EXPAN,double,numeric,,,F9.2,,,TRUE,Retained
+T1MANG,double,numeric,,,F9.2,,,TRUE,Retained
+T3MANG,double,numeric,,,F9.2,,,TRUE,Retained
+T1BUDG,double,numeric,,,F9.2,,,TRUE,Retained
+T3BUDG,double,numeric,,,F9.2,,,TRUE,Retained
+T1BUDGE,double,numeric,,,F9.2,,,TRUE,Retained
+T3BUDGE,double,numeric,,,F9.2,,,TRUE,Retained
+T1SPORTS,double,numeric,,,F9.2,,,TRUE,Retained
+T3SPORTS,double,numeric,,,F9.2,,,TRUE,Retained
+T1OPEN,double,numeric,,,F9.2,,,TRUE,Retained
+T3OPEN,double,numeric,,,F9.2,,,TRUE,Retained
+T1SCH,double,numeric,,,F9.2,,,TRUE,Retained
+T3SCH,double,numeric,,,F9.2,,,TRUE,Retained
+T1SCHB,double,numeric,,,F9.2,,,TRUE,Retained
+T3SCHB,double,numeric,,,F9.2,,,TRUE,Retained
+T1PRIV,double,numeric,,,F9.2,,,TRUE,Retained
+T3PRIV,double,numeric,,,F9.2,,,TRUE,Retained
+T1HEALTH,double,numeric,,,F9.2,,,TRUE,Retained
+T3HEALTH,double,numeric,,,F9.2,,,TRUE,Retained
+T1SELFP,double,numeric,,,F9.2,,,TRUE,Retained
+T2SELFP,double,numeric,,,F9.2,,,TRUE,Retained
+T3SELFP,double,numeric,,,F9.2,,,TRUE,Retained
+T2PE1,double,numeric,,,F9.2,,,TRUE,Retained
+T2PE2,double,numeric,,,F9.2,,,TRUE,Retained
+T2PE3,double,numeric,,,F9.2,,,TRUE,Retained
+T2PE4,double,numeric,,,F9.2,,,TRUE,Retained
+T2PE5,double,numeric,,,F9.2,,,TRUE,Retained
+T3PE1,double,numeric,,,F9.2,,,TRUE,Retained
+T3PE2,double,numeric,,,F9.2,,,TRUE,Retained
+T3PE3,double,numeric,,,F9.2,,,TRUE,Retained
+T3PE4,double,numeric,,,F9.2,,,TRUE,Retained
+T3PE5,double,numeric,,,F9.2,,,TRUE,Retained
+KNOWT1_2,double,numeric,,knowledge index revised - missing/dk = wrong answers T1,F9.2,,,TRUE,Retained
+KNOWT3_2,double,numeric,,"knowledge index revised - missing/dk - wrong answers, T3",F9.2,,,TRUE,Retained
+T2VOTE,double,numeric,,"t2 vote intention w/o no prefernce option, just candidates",F9.2,,,TRUE,Retained
+T3VOTE,double,numeric,,,F9.2,,,TRUE,Retained
+T2ALEXDU,double,numeric,,"t2 dummy for alex 1=alex, 0=else",F9.2,,,TRUE,Retained
+T2VELDUM,double,numeric,,,F9.2,,,TRUE,Retained
+T2VLADUM,double,numeric,,,F9.2,,,TRUE,Retained
+T2DIAKDU,double,numeric,,,F9.2,,,TRUE,Retained
+T2KARDUM,double,numeric,,,F9.2,,,TRUE,Retained
+T2BREDUM,double,numeric,,,F9.2,,,TRUE,Retained
+T3ALEXDU,double,numeric,,,F9.2,,,TRUE,Retained
+T3VELDUM,double,numeric,,,F9.2,,,TRUE,Retained
+T3VLADUM,double,numeric,,,F9.2,,,TRUE,Retained
+T3DIAKDU,double,numeric,,,F9.2,,,TRUE,Retained
+T3KARDUM,double,numeric,,,F9.2,,,TRUE,Retained
+T3BREDUM,double,numeric,,,F9.2,,,TRUE,Retained
+VOTEFILT,double,numeric,,,F9.2,,,TRUE,Retained
+VOTEFIL0,double,numeric,,filter for those that voted at t2,F9.2,,,TRUE,Retained
+VFILTER,double,numeric,,filter for those that voted for a candidate at both times,F9.2,,,TRUE,Retained
+T2PASOK,double,numeric,,"T2, Respondents who voted for pasok in 04 and also voted for Alex at T2",F9.2,,,TRUE,Retained
+T3PASOK,double,numeric,,"T3, Respondents who voted for pasok in 04 and also voted for Alex at T3",F9.2,,,TRUE,Retained
+PASOKT2,double,numeric,,,F9.2,,,TRUE,Retained
+T1ALEXOP,double,numeric,,,F9.2,,,TRUE,Retained
+T1VELOPI,double,numeric,,,F9.2,,,TRUE,Retained
+T1VLAOPI,double,numeric,,,F9.2,,,TRUE,Retained
+T1DIAKOP,double,numeric,,,F9.2,,,TRUE,Retained
+T1KAROPI,double,numeric,,,F9.2,,,TRUE,Retained
+T1BREOPI,double,numeric,,,F9.2,,,TRUE,Retained
+T1ALEXO0,double,numeric,,,F9.2,,,TRUE,Retained
+T1VELOP0,double,numeric,,,F9.2,,,TRUE,Retained
+T1VLAOP0,double,numeric,,,F9.2,,,TRUE,Retained
+T1DIAKO0,double,numeric,,,F9.2,,,TRUE,Retained
+T1KAROP0,double,numeric,,,F9.2,,,TRUE,Retained
+T1BREOP0,double,numeric,,,F9.2,,,TRUE,Retained
+T1ALEXO1,double,numeric,,t1 alex opinion with dk at midpt and missing excluded,F9.2,,,TRUE,Retained
+T1VELOP1,double,numeric,,,F9.2,,,TRUE,Retained
+T1VLAOP1,double,numeric,,,F9.2,,,TRUE,Retained
+T1KRAOPI,double,numeric,,,F9.2,,,TRUE,Retained
+T1BREOP1,double,numeric,,,F9.2,,,TRUE,Retained
+AGE,double,numeric,,real age,F9.2,,,TRUE,Retained
+AGENP,double,numeric,,age for non participants,F9.2,,,TRUE,Retained
+AGEP,double,numeric,,age for participants,F9.2,,,TRUE,Retained
+AGENP2,double,numeric,,age non participants for chi test,F8.0,,,TRUE,Retained
+GENDER,double,numeric,,1=male,F9.2,,,TRUE,Retained
+GENDERP,double,numeric,,,F9.2,,,TRUE,Retained
+GENDERNP,double,numeric,,,F9.2,,,TRUE,Retained
+GENDERN0,double,numeric,,,F8.0,,,TRUE,Retained
+EDUC,double,numeric,,,F9.2,,,TRUE,Retained
+EDUCP,double,numeric,,,F9.2,,,TRUE,Retained
+EDUCNP,double,numeric,,,F9.2,,,TRUE,Retained
+EDUCNP2,double,numeric,,,F8.0,,,TRUE,Retained
+OCCUP,double,numeric,,,F9.2,,,TRUE,Retained
+OCCUNP,double,numeric,,,F9.2,,,TRUE,Retained
+OCCUNP2,double,numeric,,,F8.0,,,TRUE,Retained
+INC,double,numeric,,,F9.2,,,TRUE,Retained
+INCNP,double,numeric,,,F9.2,,,TRUE,Retained
+INCP2,double,numeric,,,F8.0,,,TRUE,Retained
+MS,double,numeric,,,F9.2,,,TRUE,Retained
+MSNP,double,numeric,,,F9.2,,,TRUE,Retained
+MSNP2,double,numeric,,,F8.0,,,TRUE,Retained
+CHILDP,double,numeric,,,F9.2,,,TRUE,Retained
+CHILDNP,double,numeric,,,F9.2,,,TRUE,Retained
+CHILDNP2,double,numeric,,,F8.0,,,TRUE,Retained
+CHILD18P,double,numeric,,,F9.2,,,TRUE,Retained
+CHILD18N,double,numeric,,,F9.2,,,TRUE,Retained
+CHILD180,double,numeric,,,F8.0,,,TRUE,Retained
+T1WASTE,double,numeric,,,F9.2,,,TRUE,Retained
+T1PUBROA,double,numeric,,,F9.2,,,TRUE,Retained
+T1TACKUN,double,numeric,,,F9.2,,,TRUE,Retained
+T1REDUCP,double,numeric,,,F9.2,,,TRUE,Retained
+T1IMPTRA,double,numeric,,,F9.2,,,TRUE,Retained
+T1ORGPAR,double,numeric,,,F9.2,,,TRUE,Retained
+T1THEMAL,double,numeric,,,F9.2,,,TRUE,Retained
+T1MULTIC,double,numeric,,,F9.2,,,TRUE,Retained
+T1IMSOC,double,numeric,,,F9.2,,,TRUE,Retained
+T1ELEOFF,double,numeric,,,F9.2,,,TRUE,Retained
+T1PUBPAR,double,numeric,,,F9.2,,,TRUE,Retained
+T1TRANSM,double,numeric,,,F9.2,,,TRUE,Retained
+T1MUNIBU,double,numeric,,,F9.2,,,TRUE,Retained
+T1SPORTV,double,numeric,,,F9.2,,,TRUE,Retained
+T1OPENSP,double,numeric,,,F9.2,,,TRUE,Retained
+T1PSCH,double,numeric,,,F9.2,,,TRUE,Retained
+T1MSB,double,numeric,,,F9.2,,,TRUE,Retained
+T1PRIVAT,double,numeric,,,F9.2,,,TRUE,Retained
+T1MUNIHE,double,numeric,,,F9.2,,,TRUE,Retained
+PASOK04,double,numeric,,"p_v2004 recoded, 1= else .= pasok",F9.2,,,TRUE,Retained
+T1TRALEX,double,numeric,,recode p_q20_1 - opinion of alexandris - dk/md excluded,F9.2,,,TRUE,Retained
+T1TRVEL,double,numeric,,recode p_q20_2 - opinion of veloudos - dk/md excluded,F9.2,,,TRUE,Retained
+T1TRVLA,double,numeric,,recode p_q20_3 - opinion of vlachos - dk/md excluded,F9.2,,,TRUE,Retained
+T1TRDIAK,double,numeric,,recode p_q20_4 - opinion of diakoliou - dk/md excluded,F9.2,,,TRUE,Retained
+T1TRKAR,double,numeric,,recode p_q20_5 - opinion of karanasou - dk/md excluded,F9.2,,,TRUE,Retained
+T1TRBRE,double,numeric,,recode p_q20_6 - opinion of breyiannis - dk/md excluded,F9.2,,,TRUE,Retained
+T2TRALEX,double,numeric,,recode ar_q3_1 - opinion of alexandris - dk/md excluded,F9.2,,,TRUE,Retained
+T2TRVEL,double,numeric,,recode ar_q3_2 - opinion of veloudos - dk/md excluded,F9.2,,,TRUE,Retained
+T2TRVLA,double,numeric,,recode ar_q3_3 - opinion of vlachos - dk/md excluded,F9.2,,,TRUE,Retained
+T2TRDIAK,double,numeric,,recode ar_q3_4 - opinion of diakoliou - dk/md excluded,F9.2,,,TRUE,Retained
+T2TRKAR,double,numeric,,recode ar_q3_5 - opinion of karanasou - dk/md excluded,F9.2,,,TRUE,Retained
+T2TRBRE,double,numeric,,recode ar_q3_6 - opinion of breyiannis - dk/md excluded,F9.2,,,TRUE,Retained
+T2T1TRAL,double,numeric,,"difference btwn t2tralex and t1tralex, DV for IDM",F9.2,,,TRUE,Retained
+T2T1TRVE,double,numeric,,"difference btwn t2trvel and t1trvel, DV for IDM",F9.2,,,TRUE,Retained
+T2T1TRVL,double,numeric,,"difference btwn t2trvla and t1trvla, DV for IDM",F9.2,,,TRUE,Retained
+T2T1TRDI,double,numeric,,"difference btwn t2trdiak and t1trdiak, DV for IDM",F9.2,,,TRUE,Retained
+T2T1TRKA,double,numeric,,"difference btwn t2trkar and t1trkar, DV for IDM",F9.2,,,TRUE,Retained
+T2T1TRBR,double,numeric,,"difference btwn t2trbre and t1trbre, DV for IDM",F9.2,,,TRUE,Retained
+T3TRALEX,double,numeric,,recode f_q3_1 - opinion of alexandris - dk/md excluded,F9.2,,,TRUE,Retained
+T3TRVEL,double,numeric,,recode f_q3_2 - opinion of veloudos - dk/md excluded,F9.2,,,TRUE,Retained
+T3TRVLA,double,numeric,,recode f_q3_3 - opinion of vlachos - dk/md excluded,F9.2,,,TRUE,Retained
+T3TRDIAK,double,numeric,,recode f_q3_4 - opinion of diakoliou - dk/md excluded,F9.2,,,TRUE,Retained
+T3TRKAR,double,numeric,,recode f_q3_5 - opinion of karanasou - dk/md excluded,F9.2,,,TRUE,Retained
+T3TRBRE,double,numeric,,recode f_q3_6 - opinion of breyiannis - dk/md excluded,F9.2,,,TRUE,Retained
+T3T1TRAL,double,numeric,,"difference btwn t3tralex and t1tralex, DV for IDM-BReg",F9.2,,,TRUE,Retained
+T3T1TRVE,double,numeric,,"difference btwn t3trvel and t1trvel, DV for IDM-BReg",F9.2,,,TRUE,Retained
+T3T1TRVL,double,numeric,,"difference btwn t3trvla and t1trvla, DV for IDM-BReg",F9.2,,,TRUE,Retained
+T3T1TRDI,double,numeric,,"difference btwn t3trdiak and t1trdiak, DV for IDM-BReg",F9.2,,,TRUE,Retained
+T3T1TRKA,double,numeric,,"difference btwn t3trkar and t1trkar, DV for IDM-BReg",F9.2,,,TRUE,Retained
+T3T1TRBR,double,numeric,,"difference btwn t3trbre and t1trbre, DV for IDM-BReg",F9.2,,,TRUE,Retained
+GROUP,double,numeric,,,F8.0,,,TRUE,Retained
+T2Q11,double,numeric,," T2 recoded ar_q11, 1=correct (PASOK is Left)",F9.2,,,TRUE,Retained
+T3Q11,double,numeric,," T3 recoded f_q11, 1=correct (PASOK is Left)",F9.2,,,TRUE,Retained
+T2Q12,double,numeric,," T2 recoded ar_q12, 1=correct (ND is Right)",F9.2,,,TRUE,Retained
+T3Q12,double,numeric,," T3 recoded f_q12, 1=correct (ND is Right)",F9.2,,,TRUE,Retained
+T2Q13_2,double,numeric,," T2 recoded ar_q13_2, 1=correct (Vel is Left)",F9.2,,,TRUE,Retained
+T3Q13_2,double,numeric,," T3 recoded f_q13_2, 1=correct (Vel is Left)",F9.2,,,TRUE,Retained
+T2Q13_3,double,numeric,," T2 recoded ar_q13_3, 1=correct (Vla is Right)",F9.2,,,TRUE,Retained
+T3Q13_3,double,numeric,," T3 recoded f_q13_3, 1=correct (Vla is Right)",F9.2,,,TRUE,Retained
+T2Q13_4,double,numeric,," T2 recoded ar_q13_4, 1=correct (Diak is Left)",F9.2,,,TRUE,Retained
+T3Q13_4,double,numeric,," T3 recoded f_q13_4, 1=correct (Diak is Left)",F9.2,,,TRUE,Retained
+T2Q13_5,double,numeric,," T2 recoded ar_q13_5, 1=correct (Kar is Left)",F9.2,,,TRUE,Retained
+T3Q13_5,double,numeric,," T3 recoded f_q13_5, 1=correct (Kar is Left)",F9.2,,,TRUE,Retained
+T2Q13_6,double,numeric,," T2 recoded ar_q13_6, 1=correct (Bre is Left)",F9.2,,,TRUE,Retained
+T3Q13_6,double,numeric,," T3 recoded f_q13_6, 1=correct (Bre is Left)",F9.2,,,TRUE,Retained
+T2Q5_1,double,numeric,,"T2 recoded ar_q5_1, Alex - 0",F9.2,,,TRUE,Retained
+T3Q5_1,double,numeric,,"T3 recoded f_q5_1, Alex - 0",F9.2,,,TRUE,Retained
+T2Q5_2,double,numeric,,"T2 recoded ar_q5_2, Vel - 0",F9.2,,,TRUE,Retained
+T3Q5_2,double,numeric,,"T3 recoded f_q5_2, Vel - 0",F9.2,,,TRUE,Retained
+T2Q5_4,double,numeric,,"T2 recoded ar_q5_4, Diak - 0",F9.2,,,TRUE,Retained
+T3Q5_4,double,numeric,,"T3 recoded f_q5_4, Diak - 0",F9.2,,,TRUE,Retained
+T2Q5_5,double,numeric,,"T2 recoded ar_q5_5, Kar - 0",F9.2,,,TRUE,Retained
+T3Q5_5,double,numeric,,"T3 recoded f_q5_5, Kar - 0",F9.2,,,TRUE,Retained
+T2Q5_6,double,numeric,,"T2 recoded ar_q5_6, Bre - 0",F9.2,,,TRUE,Retained
+T3Q5_6,double,numeric,,"T3 recoded f_q5_6, Bre - 0",F9.2,,,TRUE,Retained
+T2Q6_2,double,numeric,,"T2 recoded ar_q6_2, Vel - 0",F9.2,,,TRUE,Retained
+T3Q6_2,double,numeric,,"T3 recoded f_q6_2, Vel - 0",F9.2,,,TRUE,Retained
+T2Q6_3,double,numeric,,"T2 recoded ar_q6_3, Vla - 10",F9.2,,,TRUE,Retained
+T3Q6_3,double,numeric,,"T3 recoded f_q6_3, Vla - 10",F9.2,,,TRUE,Retained
+T2Q6_4,double,numeric,,"T2 recoded ar_q6_4, Diak - 0",F9.2,,,TRUE,Retained
+T3Q6_4,double,numeric,,"T3 recoded f_q6_4, Diak - 0",F9.2,,,TRUE,Retained
+T2Q6_5,double,numeric,,"T2 recoded ar_q6_5, Kar - 0",F9.2,,,TRUE,Retained
+T3Q6_5,double,numeric,,"T3 recoded f_q6_5, Kar - 0",F9.2,,,TRUE,Retained
+T2Q6_6,double,numeric,,"T2 recoded ar_q6_6, Bre - 0",F9.2,,,TRUE,Retained
+T3Q6_6,double,numeric,,"T3 recoded f_q6_6, Bre - 0",F9.2,,,TRUE,Retained
+T2Q7_4,double,numeric,,"T2 recoded ar_q7_4, Diak - 10",F9.2,,,TRUE,Retained
+T3Q7_4,double,numeric,,"T3 recoded f_q7_4, Diak - 10",F9.2,,,TRUE,Retained
+T2Q8_1,double,numeric,,"T2 recoded ar_q8_1, Alex - 0",F9.2,,,TRUE,Retained
+T3Q8_1,double,numeric,,"T3 recoded f_q8_1, Alex - 0",F9.2,,,TRUE,Retained
+T2Q8_2,double,numeric,,"T2 recoded ar_q8_2, Vel - 0",F9.2,,,TRUE,Retained
+T3Q8_2,double,numeric,,"T3 recoded f_q8_2, Vel - 0",F9.2,,,TRUE,Retained
+T2Q8_3,double,numeric,,"T2 recoded ar_q8_3, Vla - 0",F9.2,,,TRUE,Retained
+T3Q8_3,double,numeric,,"T3 recoded f_q8_3, Vla - 0",F9.2,,,TRUE,Retained
+T2Q8_4,double,numeric,,"T2 recoded ar_q8_4, Diak - 0",F9.2,,,TRUE,Retained
+T3Q8_4,double,numeric,,"T3 recoded f_q8_4, Diak - 0",F9.2,,,TRUE,Retained
+T2Q8_5,double,numeric,,"T2 recoded ar_q8_5, Kar - 0",F9.2,,,TRUE,Retained
+T3Q8_5,double,numeric,,"T3 recoded f_q8_5, Kar - 0",F9.2,,,TRUE,Retained
+T2Q8_6,double,numeric,,"T2 recoded ar_q8_6, Bre - 0",F9.2,,,TRUE,Retained
+T3Q8_6,double,numeric,,"T3 recoded f_q8_6, Bre - 0",F9.2,,,TRUE,Retained
+T2LRPPLA,double,numeric,,T2 knowledge left right party placements,F9.2,,,TRUE,Retained
+T3LRPPLA,double,numeric,,T3 knowledge left right party placements,F9.2,,,TRUE,Retained
+T2LRCPLA,double,numeric,,T2 knowledge left right candidate placements,F9.2,,,TRUE,Retained
+T3LRCPLA,double,numeric,,T3 knowledge left right candidate placements,F9.2,,,TRUE,Retained
+T2CPLACE,double,numeric,,"T2 candidate placements, exclude candidate placement at midpt",F9.2,,,TRUE,Retained
+T3CPLACE,double,numeric,,"T3 candidate placements, exclude candidate placement at midpt",F9.2,,,TRUE,Retained
+KNOWT2,double,numeric,,T2 factual knowledge index,F9.2,,,TRUE,Retained
+T2KNOWAL,double,numeric,,T2 knowledge index - all qs,F9.2,,,TRUE,Retained
+T3KNOWAL,double,numeric,,T3 knowledge index - all qs,F9.2,,,TRUE,Retained
+T2Q5,double,numeric,,"T2 recoded Q5, 0 to 1 scale",F9.2,,,TRUE,Retained
+T3Q5,double,numeric,,"T3 recoded Q5, 0 to 1 scale",F9.2,,,TRUE,Retained
+T3T2DIFF,double,numeric,,Difference between t2q5 & t3q5,F9.2,,,TRUE,Retained
+T2Q6,double,numeric,,"T2 recoded Q6, 0 to 1 scale",F9.2,,,TRUE,Retained
+T3Q6,double,numeric,,"T3 recoded Q6, 0 to 1 scale",F9.2,,,TRUE,Retained
+T3T2DIF0,double,numeric,,Difference between t2q6 & t3q6,F9.2,,,TRUE,Retained
+T2Q7,double,numeric,,"T2 recoded Q7, 0 to 1 scale",F9.2,,,TRUE,Retained
+T3Q7,double,numeric,,"T3 recoded Q7, 0 to 1 scale",F9.2,,,TRUE,Retained
+T3T2DIF1,double,numeric,,Difference between t2q7 & t3q7,F9.2,,,TRUE,Retained
+T2Q8,double,numeric,,"T2 recoded Q8, 0 to 1 scale",F9.2,,,TRUE,Retained
+T3Q8,double,numeric,,"T3 recoded Q8, 0 to 1 scale",F9.2,,,TRUE,Retained
+T3T2DIF2,double,numeric,,Difference between t2q8 & t3q8,F9.2,,,TRUE,Retained
+T2Q5GRPS,double,numeric,,"T2 Q5, group sum for q5, IDM",F9.2,,,TRUE,Retained
+T2Q5GRPN,double,numeric,,"T2 Q5, group n for q5, IDM",F9.2,,,TRUE,Retained
+T2Q5G2,double,numeric,,"T2 Q5, G2:(Sum of Grp-R's Pos at T2)/(N-1)",F9.2,,,TRUE,Retained
+T2Q5P2G2,double,numeric,,T2 Q5: P2-G2,F9.2,,,TRUE,Retained
+T2Q6GRPS,double,numeric,,"T2 Q6, group sum for q6, IDM",F9.2,,,TRUE,Retained
+T2Q6GRPN,double,numeric,,"T2 Q6, group n for q6, IDM",F9.2,,,TRUE,Retained
+T2Q6G2,double,numeric,,"T2 Q6, G2:(Sum of Grp-R's Pos at T2)/(N-1)",F9.2,,,TRUE,Retained
+T2Q6P2G2,double,numeric,,T2 Q6: P2-G2,F9.2,,,TRUE,Retained
+T2Q7GRPS,double,numeric,,"T2 Q7, group sum for q7, IDM",F9.2,,,TRUE,Retained
+T2Q7GRPN,double,numeric,,"T2 Q7, group n for q7, IDM",F9.2,,,TRUE,Retained
+T2Q7G2,double,numeric,,"T2 Q7, G2:(Sum of Grp-R's Pos at T2)/(N-1)",F9.2,,,TRUE,Retained
+T2Q7P2G2,double,numeric,,T2 Q7: P2-G2,F9.2,,,TRUE,Retained
+T2Q8GRPS,double,numeric,,"T2 Q8, group sum for q8, IDM",F9.2,,,TRUE,Retained
+T2Q8GRPN,double,numeric,,"T2 Q8, group n for q8, IDM",F9.2,,,TRUE,Retained
+T2Q8G2,double,numeric,,"T2 Q8, G2:(Sum of Grp-R's Pos at T2)/(N-1)",F9.2,,,TRUE,Retained
+T2Q8P2G2,double,numeric,,T2 Q8: P2-G2,F9.2,,,TRUE,Retained
+T3ALEXOP,double,numeric,,"T3 Alexandris TR, DK/MD at Midpt",F9.2,,,TRUE,Retained
+T3VELOPI,double,numeric,,"T3 Veloudos TR, DK/MD at Midpt",F9.2,,,TRUE,Retained
+T3VLAOPI,double,numeric,,"T3 Vlachos TR, DK/MD at Midpt",F9.2,,,TRUE,Retained
+T3DIAKOP,double,numeric,,"T3 Diakoliou TR, DK/MD at Midpt",F9.2,,,TRUE,Retained
+T3KAROPI,double,numeric,,"T3 Karanous TR, DK/MD at Midpt",F9.2,,,TRUE,Retained
+T3BREOPI,double,numeric,,"T3 Breyiannis TR, DK/MD at Midpt",F9.2,,,TRUE,Retained
+T3T1DIFF,double,numeric,,"T3-T1 Difference Alexandris TR, DK/MD at Midpt",F9.2,,,TRUE,Retained
+T3T1DIF0,double,numeric,,"T3-T1 Difference Veloudos TR, DK/MD at Midpt",F9.2,,,TRUE,Retained
+T3T1DIF1,double,numeric,,"T3-T1 Difference Vlachos TR, DK/MD at Midpt",F9.2,,,TRUE,Retained
+T3T1DIF2,double,numeric,,"T3-T1 Difference Diakoliou TR, DK/MD at Midpt",F9.2,,,TRUE,Retained
+T3T1DIF3,double,numeric,,"T3-T1 Difference Karanaous TR, DK/MD at Midpt",F9.2,,,TRUE,Retained
+T3T1DIF4,double,numeric,,"T3-T1 Difference Breyiannis TR, DK/MD at Midpt",F9.2,,,TRUE,Retained
+T2Q5ALEX,double,numeric,,"T2 Relative Placement Q5, Alex-Vel",F9.2,,,TRUE,Retained
+T3Q5ALEX,double,numeric,,"T3 Relative Placement Q5, Alex-Vel",F9.2,,,TRUE,Retained
+T2Q5ALE0,double,numeric,,"T2 Relative Placement Q5, Alex-Vla",F9.2,,,TRUE,Retained
+T3Q5ALE0,double,numeric,,"T3 Relative Placement Q5, Alex-Vla",F9.2,,,TRUE,Retained
+T2Q5ALE1,double,numeric,,"T2 Relative Placement Q5, Alex-Diak",F9.2,,,TRUE,Retained
+T3Q5ALE1,double,numeric,,"T3 Relative Placement Q5, Alex-Diak",F9.2,,,TRUE,Retained
+T2Q5ALE2,double,numeric,,"T2 Relative Placement Q5, Alex-Kar",F9.2,,,TRUE,Retained
+T3Q5ALE2,double,numeric,,"T3 Relative Placement Q5, Alex-Kar",F9.2,,,TRUE,Retained
+T2Q5ALE3,double,numeric,,"T2 Relative Placement Q5, Alex-Bre",F9.2,,,TRUE,Retained
+T3Q5ALE3,double,numeric,,"T3 Relative Placement Q5, Alex-Bre",F9.2,,,TRUE,Retained
+T2Q5VELV,double,numeric,,"T2 Relative Placement Q5, Vel-Vla",F9.2,,,TRUE,Retained
+T3Q5VELV,double,numeric,,"T3 Relative Placement Q5, Vel-Vla",F9.2,,,TRUE,Retained
+T2Q5VELD,double,numeric,,"T2 Relative Placement Q5, Vel-Diak TIED",F9.2,,,TRUE,Retained
+T3Q5VELD,double,numeric,,"T3 Relative Placement Q5, Vel-Diak TIED",F9.2,,,TRUE,Retained
+T2Q5VELK,double,numeric,,"T2 Relative Placement Q5, Vel-Kar",F9.2,,,TRUE,Retained
+T3Q5VELK,double,numeric,,"T3 Relative Placement Q5, Vel-Kar",F9.2,,,TRUE,Retained
+T2Q5VELB,double,numeric,,"T2 Relative Placement Q5, Vel-Bre",F9.2,,,TRUE,Retained
+T3Q5VELB,double,numeric,,"T3 Relative Placement Q5, Vel-Bre",F9.2,,,TRUE,Retained
+T2Q5VLAD,double,numeric,,"T2 Relative Placement Q5, Vla-Diak",F9.2,,,TRUE,Retained
+T3Q5VLAD,double,numeric,,"T3 Relative Placement Q5, Vla-Diak",F9.2,,,TRUE,Retained
+T2Q5VLAK,double,numeric,,"T2 Relative Placement Q5, Vla-Kar",F9.2,,,TRUE,Retained
+T3Q5VLAK,double,numeric,,"T3 Relative Placement Q5, Vla-Kar",F9.2,,,TRUE,Retained
+T2Q5VLAB,double,numeric,,"T2 Relative Placement Q5, Vla-Bre",F9.2,,,TRUE,Retained
+T3Q5VLAB,double,numeric,,"T3 Relative Placement Q5, Vla-Bre",F9.2,,,TRUE,Retained
+T2Q5DIAK,double,numeric,,"T2 Relative Placement Q5, Diak-Kar",F9.2,,,TRUE,Retained
+T3Q5DIAK,double,numeric,,"T3 Relative Placement Q5, Diak-Kar",F9.2,,,TRUE,Retained
+T2Q5DIA0,double,numeric,,"T2 Relative Placement Q5, Diak-Bre",F9.2,,,TRUE,Retained
+T3Q5DIA0,double,numeric,,"T3 Relative Placement Q5, Diak-Bre",F9.2,,,TRUE,Retained
+T2Q5KARB,double,numeric,,"T2 Relative Placemnt Q5, Kar-Bre",F9.2,,,TRUE,Retained
+T3Q5KARB,double,numeric,,"T3 Relative Placemnt Q5, Kar-Bre",F9.2,,,TRUE,Retained
+T2Q6ALEX,double,numeric,,"T2 Relative Placement Q6, Alex-Vel",F9.2,,,TRUE,Retained
+T3Q6ALEX,double,numeric,,"T3 Relative Placement Q6, Alex-Vel",F9.2,,,TRUE,Retained
+T2Q6ALE0,double,numeric,,"T2 Relative Placement Q6, Alex-Vla",F9.2,,,TRUE,Retained
+T3Q6ALE0,double,numeric,,"T3 Relative Placement Q6, Alex-Vla",F9.2,,,TRUE,Retained
+T2Q6ALE1,double,numeric,,"T2 Relative Placement Q6, Alex-Diak",F9.2,,,TRUE,Retained
+T3Q6ALE1,double,numeric,,"T3 Relative Placement Q6, Alex-Diak",F9.2,,,TRUE,Retained
+T2Q6ALE2,double,numeric,,"T2 Relative Placement Q6, Alex-Kar",F9.2,,,TRUE,Retained
+T3Q6ALE2,double,numeric,,"T3 Relative Placement Q6, Alex-Kar",F9.2,,,TRUE,Retained
+T2Q6ALE3,double,numeric,,"T2 Relative Placement Q6, Alex-Bre",F9.2,,,TRUE,Retained
+T3Q6ALE3,double,numeric,,"T3 Relative Placement Q6, Alex-Bre",F9.2,,,TRUE,Retained
+T3Q6VELV,double,numeric,,"T3 Relative Placements Q6, Vel-Vla",F9.2,,,TRUE,Retained
+T2Q6VELD,double,numeric,,"T2 Relative Placements Q6, Vel-Diak",F9.2,,,TRUE,Retained
+T3Q6VELD,double,numeric,,"T3 Relative Placements Q6, Vel-Diak",F9.2,,,TRUE,Retained
+T2Q6VELK,double,numeric,,"T2 Relative Placements, Q6 Vel-Kar TIED",F9.2,,,TRUE,Retained
+T3Q6VELK,double,numeric,,"T3 Relative Placements, Q6 Vel-Kar TIED",F9.2,,,TRUE,Retained
+T2Q6VELB,double,numeric,,"T2 Relative Placements, Q6 Vel-Bre",F9.2,,,TRUE,Retained
+T3Q6VELB,double,numeric,,"T3 Relative Placements, Q6 Vel-Bre",F9.2,,,TRUE,Retained
+T2Q6VLAD,double,numeric,,"T2 Relative Placements, Q6 Vla-Diak",F9.2,,,TRUE,Retained
+T3Q6VLAD,double,numeric,,"T3 Relative Placements, Q6 Vla-Diak",F9.2,,,TRUE,Retained
+T3Q6VLAK,double,numeric,,"T3 Relative Placements Q6, Vla-Kar",F9.2,,,TRUE,Retained
+T2Q6VLAB,double,numeric,,"t2 Relative Placements Q6, Vla-Bre",F9.2,,,TRUE,Retained
+T3Q6VLAB,double,numeric,,"t3 Relative Placements Q6, Vla-Bre",F9.2,,,TRUE,Retained
+T2Q6DIAK,double,numeric,,"T2 Relative Placements Q6, Diak-Kar",F9.2,,,TRUE,Retained
+T3Q6DIAK,double,numeric,,"T3 Relative Placements Q6, Diak-Kar",F9.2,,,TRUE,Retained
+T2Q6DIA0,double,numeric,,"T2 Relative Placements Q6, Diak-Bre",F9.2,,,TRUE,Retained
+T3Q6DIA0,double,numeric,,"T3 Relative Placements Q6, Diak-Bre",F9.2,,,TRUE,Retained
+T2Q6KARB,double,numeric,,"T2 Relative Placements Q6, Kar-Bre",F9.2,,,TRUE,Retained
+T3Q6KARB,double,numeric,,"T3 Relative Placements Q6, Kar-Bre",F9.2,,,TRUE,Retained
+T2Q7ALEX,double,numeric,,"T2 Relative Placement Q7, Alex-Vel TIED",F9.2,,,TRUE,Retained
+T3Q7ALEX,double,numeric,,"T3 Relative Placement Q7, Alex-Vel TIED",F9.2,,,TRUE,Retained
+T2Q7ALE0,double,numeric,,"T2 Relative Placement Q7, Alex-Vla TIED",F9.2,,,TRUE,Retained
+T3Q7ALE0,double,numeric,,"T3 Relative Placement Q7, Alex-Vla TIED",F9.2,,,TRUE,Retained
+T2Q7ALE1,double,numeric,,"T2 Relative Placement Q7, Alex-Diak",F9.2,,,TRUE,Retained
+T3Q7ALE1,double,numeric,,"T3 Relative Placement Q7, Alex-Diak",F9.2,,,TRUE,Retained
+T2Q7ALE2,double,numeric,,"T2 Relative Placement Q7, Alex-kar TIED",F9.2,,,TRUE,Retained
+T3Q7ALE2,double,numeric,,"T3 Relative Placement Q7, Alex-kar TIED",F9.2,,,TRUE,Retained
+T2Q7ALE3,double,numeric,,"T2 Relative Placement Q7, Alex-bre TIED",F9.2,,,TRUE,Retained
+T3Q7ALE3,double,numeric,,"T3 Relative Placement Q7, Alex-bre TIED",F9.2,,,TRUE,Retained
+T2Q7VELV,double,numeric,,"T2 Relative Placements Q7, Vel-Vla TIED",F9.2,,,TRUE,Retained
+T3Q7VELV,double,numeric,,"T3 Relative Placements Q7, Vel-Vla TIED",F9.2,,,TRUE,Retained
+T2Q7VELD,double,numeric,,"T2 Relative Placements Q7, Vel-Diak",F9.2,,,TRUE,Retained
+T3Q7VELD,double,numeric,,"T3 Relative Placements Q7, Vel-Diak",F9.2,,,TRUE,Retained
+T2Q7VELK,double,numeric,,"T2 Relative Placements Q7, Vel-Kar TIED",F9.2,,,TRUE,Retained
+T3Q7VELK,double,numeric,,"T3 Relative Placements Q7, Vel-Kar TIED",F9.2,,,TRUE,Retained
+T2Q7VELB,double,numeric,,"T2 Relative Placements Q7, Vel-Bre TIED",F9.2,,,TRUE,Retained
+T2Q7VLAD,double,numeric,,"T2 Relative Placements Q7, Vla-Bre",F9.2,,,TRUE,Retained
+T2Q7VLAK,double,numeric,,"T2 Relative Placements Q7, Vla-Kar TIED",F9.2,,,TRUE,Retained
+T3Q7VLAK,double,numeric,,"T3 Relative Placements Q7, Vla-Kar TIED",F9.2,,,TRUE,Retained
+T2Q7VLAB,double,numeric,,"T2 Relative Placements Q7, Vla-Bre TIED",F9.2,,,TRUE,Retained
+T3Q7VLAB,double,numeric,,"T3 Relative Placements Q7, Vla-Bre TIED",F9.2,,,TRUE,Retained
+T2Q7DIAK,double,numeric,,"T2 Relative Placements Q7, Diak-Bre",F9.2,,,TRUE,Retained
+T3Q7DIAK,double,numeric,,"T3 Relative Placements Q7, Diak-Bre",F9.2,,,TRUE,Retained
+T2Q7KARB,double,numeric,,"T2 Relative Placements Q7, Kar-Bre TIED",F9.2,,,TRUE,Retained
+T3Q7KARB,double,numeric,,"T3 Relative Placements Q7, Kar-Bre TIED",F9.2,,,TRUE,Retained
+T2Q8ALEX,double,numeric,,"T2 Relative Placement Q8, Alex-Vel TIED",F9.2,,,TRUE,Retained
+T3Q8ALEX,double,numeric,,"T3 Relative Placement Q8, Alex-Vel TIED",F9.2,,,TRUE,Retained
+T2Q8ALE0,double,numeric,,"T2 Relative Placement Q8, Alex-Vla",F9.2,,,TRUE,Retained
+T3Q8ALE0,double,numeric,,"T3 Relative Placement Q8, Alex-Vla",F9.2,,,TRUE,Retained
+T2Q8ALE1,double,numeric,,"T2 Relative Placement Q8, Alex-Diak",F9.2,,,TRUE,Retained
+T3Q8ALE1,double,numeric,,"T3 Relative Placement Q8, Alex-Diak",F9.2,,,TRUE,Retained
+T2Q8ALE2,double,numeric,,"T2 Relative Placement Q8, Alex-kar",F9.2,,,TRUE,Retained
+T3Q8ALE2,double,numeric,,"T3 Relative Placement Q8, Alex-kar",F9.2,,,TRUE,Retained
+T2Q8ALE3,double,numeric,,"T2 Relative Placement Q8, Alex-bre TIED",F9.2,,,TRUE,Retained
+T3Q8ALE3,double,numeric,,"T3 Relative Placement Q8, Alex-bre TIED",F9.2,,,TRUE,Retained
+T2Q8VELV,double,numeric,,"T2 Relative Placements Q8, Vel-Vla",F9.2,,,TRUE,Retained
+T3Q8VELV,double,numeric,,"T3 Relative Placements Q8, Vel-Vla",F9.2,,,TRUE,Retained
+T2Q8VELD,double,numeric,,"T2 Relative Placements Q8, Vel-Diak",F9.2,,,TRUE,Retained
+T3Q8VELD,double,numeric,,"T3 Relative Placements Q8, Vel-Diak",F9.2,,,TRUE,Retained
+T2Q8VELK,double,numeric,,"T2 Relative Placements Q8, Vel-kar",F9.2,,,TRUE,Retained
+T3Q8VELK,double,numeric,,"T3 Relative Placements Q8, Vel-kar",F9.2,,,TRUE,Retained
+T2Q8VELB,double,numeric,,"T2 Relative Placements Q8, Vel-Bre TIED",F9.2,,,TRUE,Retained
+T3Q8VELB,double,numeric,,"T3 Relative Placements Q8, Vel-Bre TIED",F9.2,,,TRUE,Retained
+T2Q8VLAD,double,numeric,,"T2 Relative Placements Q8, Vla-Diak",F9.2,,,TRUE,Retained
+T3Q8VLAD,double,numeric,,"T3 Relative Placements Q8, Vla-Diak",F9.2,,,TRUE,Retained
+T2Q8VLAK,double,numeric,,"T2 Relative Placements Q8, Vla-kar",F9.2,,,TRUE,Retained
+T3Q8VLAK,double,numeric,,"T3 Relative Placements Q8, Vla-kar",F9.2,,,TRUE,Retained
+T2Q8VLAB,double,numeric,,"T2 Relative Placements Q8, Vla-Bre",F9.2,,,TRUE,Retained
+T3Q8VLAB,double,numeric,,"T3 Relative Placements Q8, Vla-Bre",F9.2,,,TRUE,Retained
+T2Q8DIAK,double,numeric,,"T2 Relative Placements Q8, Diak-Kar TIED",F9.2,,,TRUE,Retained
+T3Q8DIAK,double,numeric,,"T3 Relative Placements Q8, Diak-Kar TIED",F9.2,,,TRUE,Retained
+T2Q8DIA0,double,numeric,,"T2 Relative Placements Q8, Diak-Bre",F9.2,,,TRUE,Retained
+T3Q8DIA0,double,numeric,,"T3 Relative Placements Q8, Diak-Bre",F9.2,,,TRUE,Retained
+T2Q8KARB,double,numeric,,"T2 Relative Placements Q8, Kar-Bre",F9.2,,,TRUE,Retained
+T3Q8KARB,double,numeric,,"T3 Relative Placements Q8, Kar-Bre",F9.2,,,TRUE,Retained
+T3Q7VLAD,double,numeric,,"T3 Relative Placements Q7, Vla-Bre",F9.2,,,TRUE,Retained
+T2Q6VLAK,double,numeric,,"T3 Relative Placements Q6, Vla-Kar",F9.2,,,TRUE,Retained
+T2Q6VELV,double,numeric,,"T2 Relative Placements Q6, Vel-Vla",F9.2,,,TRUE,Retained
+T3Q7VELB,double,numeric,,"T3 Relative Placements Q7, Vel-Bre TIED",F9.2,,,TRUE,Retained
+T2Q7DIA0,double,numeric,,"T2 Relative Placements Q7, Diak-Kar",F9.2,,,TRUE,Retained
+T3Q7DIA0,double,numeric,,"T3 Relative Placements Q7, Diak-Kar",F9.2,,,TRUE,Retained
+T2PARTYR,double,numeric,,T2 Relative Placements for Parties,F9.2,,,TRUE,Retained
+T3PARTYR,double,numeric,,T3 Relative Placements for Parties,F9.2,,,TRUE,Retained
+T2ALEXVE,double,numeric,,T2 Alex-Vel Relative L/R Placement,F9.2,,,TRUE,Retained
+T3ALEXVE,double,numeric,,T3 Alex-Vel Relative L/R Placement,F9.2,,,TRUE,Retained
+T2ALEXVL,double,numeric,,T2 Alex-Vla Relative L/R Placement,F9.2,,,TRUE,Retained
+T3ALEXVL,double,numeric,,t3 Alex-Vla Relative L/R Placement,F9.2,,,TRUE,Retained
+T2ALEXDI,double,numeric,,T2 Alex-Diak Relative L/R Placement,F9.2,,,TRUE,Retained
+T3ALEXDI,double,numeric,,t3 Alex-Diak Relative L/R Placement,F9.2,,,TRUE,Retained
+T2ALEXKA,double,numeric,,T2 Alex-Kar Relative L/R Placement,F9.2,,,TRUE,Retained
+T3ALEXKA,double,numeric,,t3 Alex-Kar Relative L/R Placement,F9.2,,,TRUE,Retained
+T2ALEXBR,double,numeric,,T2 Alex-Bre Relative L/R Placement,F9.2,,,TRUE,Retained
+T3ALEXBR,double,numeric,,t3 Alex-Bre Relative L/R Placement,F9.2,,,TRUE,Retained
+T2VELVLA,double,numeric,,T2 Vel-Vla Relative L/R Placement,F9.2,,,TRUE,Retained
+T3VELVLA,double,numeric,,t3 Vel-Vla Relative L/R Placement,F9.2,,,TRUE,Retained
+T2VELKAR,double,numeric,,T2 Vel-Kar Relative L/R Placement,F9.2,,,TRUE,Retained
+T3VELKAR,double,numeric,,t3 Vel-Kar Relative L/R Placement,F9.2,,,TRUE,Retained
+T2VELBRE,double,numeric,,T2 Vel-Bre Relative L/R Placement,F9.2,,,TRUE,Retained
+T3VELBRE,double,numeric,,t3 Vel-Bre Relative L/R Placement,F9.2,,,TRUE,Retained
+T2VLADIA,double,numeric,,T2 Vla-Diak Relative L/R Placement,F9.2,,,TRUE,Retained
+T3VLADIA,double,numeric,,t3 Vla-Diak Relative L/R Placement,F9.2,,,TRUE,Retained
+T2VLAKAR,double,numeric,,T2 Vla-Kar Relative L/R Placement,F9.2,,,TRUE,Retained
+T3VLAKAR,double,numeric,,t3 Vla-Kar Relative L/R Placement,F9.2,,,TRUE,Retained
+T2VLABRE,double,numeric,,T2 Vla-Bre Relative L/R Placement,F9.2,,,TRUE,Retained
+T3VLABRE,double,numeric,,t3 Vla-Bre Relative L/R Placement,F9.2,,,TRUE,Retained
+T2DIAKKA,double,numeric,,T2 Diak-Kar Relative L/R Placement,F9.2,,,TRUE,Retained
+T3DIAKKA,double,numeric,,T3 Diak-Kar Relative L/R Placement,F9.2,,,TRUE,Retained
+T2DIAKBR,double,numeric,,T2 Diak-Bre Relative L/R Placement,F9.2,,,TRUE,Retained
+T3DIAKBR,double,numeric,,t3 Diak-Bre Relative L/R Placement,F9.2,,,TRUE,Retained
+T2KARBRE,double,numeric,,T2 Kar-Bre Relative L/R Placement,F9.2,,,TRUE,Retained
+T3KARBRE,double,numeric,,t3 Kar-Bre Relative L/R Placement,F9.2,,,TRUE,Retained
+T3KNOWA0,double,numeric,,"T3 Knowledge Index with Relative L/R Party, Relative L/R Candidate, Relative Can",F9.2,,,TRUE,Retained
+T2KNOWA0,double,numeric,,"T2 Knowledge Index with Relative L/R Party, Relative L/R Candidate, Relative Can",F9.2,,,TRUE,Retained
+T3LRCPRE,double,numeric,,T3 L/R Relative Candidate Placements,F9.2,,,TRUE,Retained
+T2LRCPRE,double,numeric,,T2 L/R Relative Candidate Placements,F9.2,,,TRUE,Retained
+T3CPLACR,double,numeric,,T3 Relative Candidate Placements Index,F9.2,,,TRUE,Retained
+T2CPLACR,double,numeric,,T2 Relative Candidate Placements Index,F9.2,,,TRUE,Retained
+KNOWT2_2,double,numeric,," knowledge index - md/dk = wrong answers, T2",F9.2,,,TRUE,Retained
+T2LRPTYC,double,numeric,,T2 Absolute L/R Party & Candidate Placements,F9.2,,,TRUE,Retained
+T3LRPTYC,double,numeric,,T3 Absolute L/R Party & Candidate Placements,F9.2,,,TRUE,Retained
+T2RELLRP,double,numeric,,T2 Relative L/R Placements Party & Candidate Placements,F9.2,,,TRUE,Retained
+T3RELLRP,double,numeric,,T3 Relative L/R Placements Party & Candidate Placements,F9.2,,,TRUE,Retained
+T2ABSLRP,double,numeric,,T2 Absolute Candidate L/R & Policy Issues Placements,F9.2,,,TRUE,Retained
+T3ABSLRP,double,numeric,,T3 Absolute Candidate L/R & Policy Issues Placements,F9.2,,,TRUE,Retained
+T2Q13_1A,double,numeric,,"T2 recoded ar_q13_1 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q13_2A,double,numeric,,"T2 recoded ar_q13_2 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q13_3A,double,numeric,,"T2 recoded ar_q13_3 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q13_4A,double,numeric,,"T2 recoded ar_q13_4 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q13_5A,double,numeric,,"T2 recoded ar_q13_5 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q13_6A,double,numeric,,"T2 recoded ar_q13_6 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q13_1A,double,numeric,,"T3 recoded f_q13_1 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q13_2A,double,numeric,,"T3 recoded f_q13_2 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q13_3A,double,numeric,,"T3 recoded f_q13_3 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q13_4A,double,numeric,,"T3 recoded f_q13_4 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q13_5A,double,numeric,,"T3 recoded f_q13_5 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q13_6A,double,numeric,,"T3 recoded f_q13_6 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q5_1A,double,numeric,,"T2 recoded ar_q5_1 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q5_2A,double,numeric,,"T2 recoded ar_q5_2 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q5_3A,double,numeric,,"T2 recoded ar_q5_3 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q5_4A,double,numeric,,"T2 recoded ar_q5_4 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q5_5A,double,numeric,,"T2 recoded ar_q5_5 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q5_6A,double,numeric,,"T2 recoded ar_q5_6 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q5_1A,double,numeric,,"T3 recoded f_q5_1 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q5_2A,double,numeric,,"T3 recoded f_q5_2 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q5_3A,double,numeric,,"T3 recoded f_q5_3 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q5_4A,double,numeric,,"T3 recoded f_q5_4 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q5_5A,double,numeric,,"T3 recoded f_q5_5 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q5_6A,double,numeric,,"T3 recoded f_q5_6 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q6_1A,double,numeric,,"T2 recoded ar_q6_1 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q6_2A,double,numeric,,"T2 recoded ar_q6_2 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q6_3A,double,numeric,,"T2 recoded ar_q6_3 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q6_4A,double,numeric,,"T2 recoded ar_q6_4 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q6_5A,double,numeric,,"T2 recoded ar_q6_5 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q6_6A,double,numeric,,"T2 recoded ar_q6_6 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q6_1A,double,numeric,,"T3 recoded f_q6_1 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q6_2A,double,numeric,,"T3 recoded f_q6_2 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q6_3A,double,numeric,,"T3 recoded f_q6_3 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q6_4A,double,numeric,,"T3 recoded f_q6_4 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q6_5A,double,numeric,,"T3 recoded f_q6_5 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q6_6A,double,numeric,,"T3 recoded f_q6_6 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q7_1A,double,numeric,,"T2 recoded ar_q7_1 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q7_2A,double,numeric,,"T2 recoded ar_q7_2 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q7_3A,double,numeric,,"T2 recoded ar_q7_3 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q7_4A,double,numeric,,"T2 recoded ar_q7_4 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q7_5A,double,numeric,,"T2 recoded ar_q7_5 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q7_6A,double,numeric,,"T2 recoded ar_q7_6 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q7_1A,double,numeric,,"T3 recoded f_q7_1 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q7_2A,double,numeric,,"T3 recoded f_q7_2 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q7_3A,double,numeric,,"T3 recoded f_q7_3 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q7_4A,double,numeric,,"T3 recoded f_q7_4 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q7_5A,double,numeric,,"T3 recoded f_q7_5 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q7_6A,double,numeric,,"T3 recoded f_q7_6 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q8_1A,double,numeric,,"T2 recoded ar_q8_1 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q8_2A,double,numeric,,"T2 recoded ar_q8_2 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q8_3A,double,numeric,,"T2 recoded ar_q8_3 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q8_4A,double,numeric,,"T2 recoded ar_q8_4 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q8_5A,double,numeric,,"T2 recoded ar_q8_5 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q8_6A,double,numeric,,"T2 recoded ar_q8_6 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q8_1A,double,numeric,,"T3 recoded f_q8_1 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q8_2A,double,numeric,,"T3 recoded f_q8_2 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q8_3A,double,numeric,,"T3 recoded f_q8_3 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q8_4A,double,numeric,,"T3 recoded f_q8_4 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q8_5A,double,numeric,,"T3 recoded f_q8_5 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T3Q8_6A,double,numeric,,"T3 recoded f_q8_6 - 0 to 10 scale, dk/md = missing",F9.2,,,TRUE,Retained
+T2Q5_3,double,numeric,,"T2 recoded ar_q5_3, Vla-0, using Means",F9.2,,,TRUE,Retained
+T3Q5_3,double,numeric,,"T3 recoded f_q5_3, Vla-0, using Means",F9.2,,,TRUE,Retained
+T2Q6_1,double,numeric,,"T2 recoded ar_q6_1, Alex-1, using Means",F9.2,,,TRUE,Retained
+T3Q6_1,double,numeric,,"T3 recoded f_q6_1, Alex-1, using Means",F9.2,,,TRUE,Retained
+T2Q6_4M,double,numeric,,"T2 recoded ar_q6_4, Diak-1, using Means",F9.2,,,TRUE,Retained
+T3Q6_4M,double,numeric,,"T3 recoded f_q6_4, Diak-1, using Means",F9.2,,,TRUE,Retained
+T2Q6_6M,double,numeric,,"T2 recoded ar_q6_6, Bre-1, using Means",F9.2,,,TRUE,Retained
+T3Q6_6M,double,numeric,,"T3 recoded f_q6_6, Bre-1, using Means",F9.2,,,TRUE,Retained
+T2Q7_1,double,numeric,,"T2 recode ar_q7_1, Alex-1, using Means",F9.2,,,TRUE,Retained
+T3Q7_1,double,numeric,,"T3 recode f_q7_1, Alex-1, using Means",F9.2,,,TRUE,Retained
+T2Q7_2,double,numeric,,"T2 recode ar_q7_2, Vel-1, using Means",F9.2,,,TRUE,Retained
+T3Q7_2,double,numeric,,"T3 recode f_q7_2, Vel-1, using Means",F9.2,,,TRUE,Retained
+T2Q7_3,double,numeric,,"T2 recode ar_q7_3, Vla-1, using Means",F9.2,,,TRUE,Retained
+T3Q7_3,double,numeric,,"T3 recode f_q7_3, Vla-1, using Means",F9.2,,,TRUE,Retained
+T2Q7_5,double,numeric,,"T2 recode ar_q7_5, Kar-1, using Means",F9.2,,,TRUE,Retained
+T3Q7_5,double,numeric,,"T3 recode f_q7_5, Kar-1, using Means",F9.2,,,TRUE,Retained
+T2Q7_6,double,numeric,,"T2 recode ar_q7_6, Bre-1, using Means",F9.2,,,TRUE,Retained
+T3Q7_6,double,numeric,,"T3 recode f_q7_6, Bre-1, using Means",F9.2,,,TRUE,Retained
+T1ALEXTR,double,numeric,,T1 Alexandris Thermo Rating-Sum of Groups,F9.2,,,TRUE,Retained
+T1ALEXT0,double,numeric,,T1 Alexandris Thermo Rating - Group N,F9.2,,,TRUE,Retained
+T1ALEXT1,double,numeric,,"T1 Alexandris TR, G1",F9.2,,,TRUE,Retained
+T1ALEXT2,double,numeric,,"T1 Alexandris TR, P1-G1",F9.2,,,TRUE,Retained
+T1VELTRG,double,numeric,,T1 Veloudos Thermo Rating-Sum of Groups,F9.2,,,TRUE,Retained
+T1VELTR0,double,numeric,,T1 Veloudos Thermo Rating - Group N,F9.2,,,TRUE,Retained
+T1VELTR1,double,numeric,,"T1 Veloudos TR, G1",F9.2,,,TRUE,Retained
+T1VELTRP,double,numeric,,"T1 Veloudos TR, P1-G1",F9.2,,,TRUE,Retained
+T1VLATRG,double,numeric,,T1 Vlachos Thermo Rating-Sum of Groups,F9.2,,,TRUE,Retained
+T1VLATR0,double,numeric,,T1 Vlachos Thermo Rating - Group N,F9.2,,,TRUE,Retained
+T1VLATR1,double,numeric,,"T1 Vlachos TR, G1",F9.2,,,TRUE,Retained
+T1VLATRP,double,numeric,,"T1 Vlachos TR, P1-G1",F9.2,,,TRUE,Retained
+T1DIAKTR,double,numeric,,T1 Diakoliou Thermo Rating-Sum of Groups,F9.2,,,TRUE,Retained
+T1DIAKT0,double,numeric,,T1 Diakoliou Thermo Rating - Group N,F9.2,,,TRUE,Retained
+T1DIAKT1,double,numeric,,"T1 Diakoliou TR, G1",F9.2,,,TRUE,Retained
+T1DIAKT2,double,numeric,,"T1 Diakoliou TR, P1-G1",F9.2,,,TRUE,Retained
+T1KARTRG,double,numeric,,T1 Karanasou Thermo Rating-Sum of Groups,F9.2,,,TRUE,Retained
+T1KARTR0,double,numeric,,T1 Karanasou Thermo Rating - Group N,F9.2,,,TRUE,Retained
+T1KARTR1,double,numeric,,"T1 Karanasou TR, G1",F9.2,,,TRUE,Retained
+T1KARTRP,double,numeric,,"T1 Karanasou TR, P1-G1",F9.2,,,TRUE,Retained
+T1BRETRG,double,numeric,,T1 Breyiannis Thermo Rating-Sum of Groups,F9.2,,,TRUE,Retained
+T1BRETR0,double,numeric,,T1 Breyiannis Thermo Rating - Group N,F9.2,,,TRUE,Retained
+T1BRETR1,double,numeric,,"T1 Breyiannis TR, G1",F9.2,,,TRUE,Retained
+T1BRETRP,double,numeric,,"T1 Breyiannis TR, P1-G1",F9.2,,,TRUE,Retained
+T1ALEXT3,double,numeric,,"T1 Alexandris TR, DK/MD at midpt, Group Sums - IDM",F9.2,,,TRUE,Retained
+T1ALEXT4,double,numeric,,T1 Alexandris Thermo Rating MD/DK at Midpt - Group N,F9.2,,,TRUE,Retained
+T1ALEXT5,double,numeric,,"T1 Alexandris TR, DK/MD at Midpt - G1",F9.2,,,TRUE,Retained
+T1ALEXT6,double,numeric,,"T1 Alexandris TR, DK/MD at Midpt P1-G1",F9.2,,,TRUE,Retained
+T1VELTRM,double,numeric,,"T1 Veloudos TR, DK/MD at midpt, Group Sums - IDM",F9.2,,,TRUE,Retained
+T1VELTR2,double,numeric,,T1 Veloudos Thermo Rating MD/DK at Midpt - Group N,F9.2,,,TRUE,Retained
+T1VELTR3,double,numeric,,"T1 Veloudos TR, DK/MD at Midpt - G1",F9.2,,,TRUE,Retained
+T1VELTR4,double,numeric,,"T1 Veloudos TR, DK/MD at Midpt P1-G1",F9.2,,,TRUE,Retained
+T1VLATRM,double,numeric,,"T1 Vlachos TR, DK/MD at midpt, Group Sums - IDM",F9.2,,,TRUE,Retained
+T1VLATR2,double,numeric,,T1 Vlachos Thermo Rating MD/DK at Midpt - Group N,F9.2,,,TRUE,Retained
+T1VLATR3,double,numeric,,"T1 Vlachos TR, DK/MD at Midpt - G1",F9.2,,,TRUE,Retained
+T1VLATR4,double,numeric,,"T1 Vlachos TR, DK/MD at Midpt P1-G1",F9.2,,,TRUE,Retained
+T1DIAKT3,double,numeric,,"T1 Diakoliou TR, DK/MD at midpt, Group Sums - IDM",F9.2,,,TRUE,Retained
+T1DIAKT4,double,numeric,,T1 Diakoliou Thermo Rating MD/DK at Midpt - Group N,F9.2,,,TRUE,Retained
+T1DIAKT5,double,numeric,,"T1 Diakoliou TR, DK/MD at Midpt - G1",F9.2,,,TRUE,Retained
+T1DIAKT6,double,numeric,,"T1 Diakoliou TR, DK/MD at Midpt P1-G1",F9.2,,,TRUE,Retained
+T1KARTRM,double,numeric,,"T1 Karanaous TR, DK/MD at midpt, Group Sums - IDM",F9.2,,,TRUE,Retained
+T1KARTR2,double,numeric,,T1 Karanaous Thermo Rating MD/DK at Midpt - Group N,F9.2,,,TRUE,Retained
+T1KARTR3,double,numeric,,"T1 Karanaous TR, DK/MD at Midpt - G1",F9.2,,,TRUE,Retained
+T1KARTR4,double,numeric,,"T1 Karanaous TR, DK/MD at Midpt P1-G1",F9.2,,,TRUE,Retained
+T1BRETRM,double,numeric,,"T1 Breyiannis TR, DK/MD at midpt, Group Sums - IDM",F9.2,,,TRUE,Retained
+T1BRETR2,double,numeric,,T1 Breyiannis Thermo Rating MD/DK at Midpt - Group N,F9.2,,,TRUE,Retained
+T1BRETR3,double,numeric,,"T1 Breyiannis TR, DK/MD at Midpt - G1",F9.2,,,TRUE,Retained
+T1BRETR4,double,numeric,,"T1 Breyiannis TR, DK/MD at Midpt P1-G1",F9.2,,,TRUE,Retained
+T2KINDEX,double,numeric,,"T2 Factual/Ideology/Issue Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T3KINDEX,double,numeric,,"T3 Factual/Ideology/Issue Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+INCE3PLU,double,numeric,,1 = Income above 3000 euro/month,F9.2,,,TRUE,Retained
+EDUCOLLE,double,numeric,,,F9.2,,,TRUE,Retained
+T2KINDE0,double,numeric,,"T2 Ideology/Issue Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T3KINDE0,double,numeric,,"T3 Ideology/Issue Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T2KIALEX,double,numeric,,"T2 Factual/Ideology/Issue Alex Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T3KIALEX,double,numeric,,"T3 Factual/Ideology/Issue Alex Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T2KIVEL,double,numeric,,"T2 Factual/Ideology/Issue Vel Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T3KIVEL,double,numeric,,"T3 Factual/Ideology/Issue Vel Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T2KIVLA,double,numeric,,"T2 Factual/Ideology/Issue Vla Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T3KIVLA,double,numeric,,"T3 Factual/Ideology/Issue Vla Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T2KIDIAK,double,numeric,,"T2 Factual/Ideology/Issue Diak Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T3KIDIAK,double,numeric,,"T3 Factual/Ideology/Issue Diak Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T2KIKAR,double,numeric,,"T2 Factual/Ideology/Issue Kar Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T3KIKAR,double,numeric,,"T3 Factual/Ideology/Issue Kar Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T2KIBRE,double,numeric,,"T2 Factual/Ideology/Issue Bre Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T3KIBRE,double,numeric,,"T3 Factual/Ideology/Issue Bre Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T2KIALE0,double,numeric,,"T2 Issue Alex Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T3KIALE0,double,numeric,,"T3 Issue Alex Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T2KIVELI,double,numeric,,"T2 Issue Vel Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T3KIVELI,double,numeric,,"T3 Issue Vel Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T2KIVLAI,double,numeric,,"T2 Issue Vla Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T3KIVLAI,double,numeric,,"T3 Issue Vla Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T2KIDIA0,double,numeric,,"T2 Issue Diak Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T3KIDIA0,double,numeric,,"T3 Issue Diak Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T2KIKARI,double,numeric,,"T2 Issue Kar Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T3KIKARI,double,numeric,,"T3 Issue Kar Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T2KIBREI,double,numeric,,"T2 Issue Bre Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T3KIBREI,double,numeric,,"T3 Issue Bre Knowledge Placement (Abs), using Means",F9.2,,,TRUE,Retained
+T3VOTEVE,double,numeric,,,F9.2,,,TRUE,Retained
+T3VOTEAL,double,numeric,,,F9.2,,,TRUE,Retained
+T3VOTEVL,double,numeric,,,F9.2,,,TRUE,Retained
+T3VOTEDI,double,numeric,,,F9.2,,,TRUE,Retained
+T3VOTEBR,double,numeric,,,F9.2,,,TRUE,Retained
+T3VOTEKA,double,numeric,,,F9.2,,,TRUE,Retained
+AOVERB,double,numeric,,,F9.2,,,TRUE,Retained
+BOVERA,double,numeric,,,F9.2,,,TRUE,Retained
+PVOTE1,double,numeric,,,F9.2,,,TRUE,Retained
+PVOTE,double,numeric,,Predicted Vote for Alex or Bre,F9.2,,,TRUE,Retained
+T2RENVIR,double,numeric,,T2 Respondent's Environment Position,F9.2,,,TRUE,Retained
+T2AENVIR,double,numeric,,T2 Alex Environment Position,F9.2,,,TRUE,Retained
+T2BENVIR,double,numeric,,T2 Bre Environment Position,F9.2,,,TRUE,Retained
+T2EDENVI,double,numeric,,"T2 Euclidean Distance, Environment, (R-A)-(R-B)",F9.2,,,TRUE,Retained
+T2AINVES,double,numeric,,T2 Alex Investment Position,F9.2,,,TRUE,Retained
+T2BINVES,double,numeric,,T2 Bre Investment Position,F9.2,,,TRUE,Retained
+T2RINVES,double,numeric,,T2 Respondent's Investment Position,F9.2,,,TRUE,Retained
+T2EDINVE,double,numeric,,"T2 Euclidean Distance, Investment, (R-A)-(R-B)",F9.2,,,TRUE,Retained
+T2RTRANS,double,numeric,,T2 Respondent's Transportation Position,F9.2,,,TRUE,Retained
+T2ATRANS,double,numeric,,T2 Alex Transportation Position,F9.2,,,TRUE,Retained
+T2BTRANS,double,numeric,,T2 Bre Transportation Position,F9.2,,,TRUE,Retained
+T2EDTRAN,double,numeric,,"T2 Euclidean Distance, Transportation, (R-A)-(R-B)",F9.2,,,TRUE,Retained
+T2RIMMI,double,numeric,,T2 Respondent's Immigrants Position,F9.2,,,TRUE,Retained
+T2AIMMI,double,numeric,,T2 Alex Immigrants Position,F9.2,,,TRUE,Retained
+T2BIMMI,double,numeric,,T2 Bre Immigrants Position,F9.2,,,TRUE,Retained
+T2EDIMMI,double,numeric,,"T2 Euclidean Distance, Immigrants, (R-A)-(R-B)",F9.2,,,TRUE,Retained
+T2SINCER,double,numeric,,"T2 Alex Sincere, DK at Mdpt",F9.2,,,TRUE,Retained
+T2SINCE0,double,numeric,,"T2 Bre Sincere, DK at Mdpt",F9.2,,,TRUE,Retained
+T2INTELA,double,numeric,,"T2 Alex Intelligent, DK at Mdpt",F9.2,,,TRUE,Retained
+T2INTELB,double,numeric,,"T2 Bre Intelligent, DK at Mdpt",F9.2,,,TRUE,Retained
+T2LIKEA,double,numeric,,"T2 Alex Likeability, DK at Mdpt",F9.2,,,TRUE,Retained
+T2LIKEB,double,numeric,,"T2 Bre Likeability, DK at Mdpt",F9.2,,,TRUE,Retained
+T2TRAITS,double,numeric,,,F9.2,,,TRUE,Retained
+T2TRAIT0,double,numeric,,,F9.2,,,TRUE,Retained
