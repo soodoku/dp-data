@@ -1473,7 +1473,7 @@ australia-republic-1999,t1knowr,347,0,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,t1knowcor,347,347,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 australia-republic-1999,grpgain,347,346,1,342,0,343,FALSE,0,5.181818181818183,1e-10
 australia-republic-1999,t2know,347,347,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
-australia-republic-1999,ppage,347,347,0,0,0,0,FALSE,0,0,1e-10
+australia-republic-1999,ppage,347,344,3,0,0,3,FALSE,0,0,1e-10
 australia-republic-1999,educ4,347,347,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,minority,347,347,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,hhincome,347,314,0,0,0,0,FALSE,0,0,1e-10
@@ -1501,7 +1501,7 @@ australia-republic-1999,sdfemale,347,347,0,0,0,0,FALSE,0,4.996003610813204e-16,1
 australia-republic-1999,vareduc,347,347,0,0,0,0,FALSE,0,4.579669976578771e-16,1e-10
 australia-republic-1999,sdeduc,347,347,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
 australia-republic-1999,meaned,347,347,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
-australia-republic-1999,meanage,347,347,0,0,0,0,FALSE,0,4.263256414560601e-14,1e-10
+australia-republic-1999,meanage,347,347,0,43,0,43,FALSE,0,4.8939393939394265,1e-10
 australia-republic-1999,phighinc,347,347,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 australia-republic-1999,meanxtreme,347,347,0,347,0,347,FALSE,0,0.10480769230769202,1e-10
 australia-republic-1999,pfemale_ind,347,347,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10

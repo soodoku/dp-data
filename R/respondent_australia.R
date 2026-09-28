@@ -104,6 +104,7 @@ build_australia_individual <- function(
   ranking_after <- australia_ranking(survey, 2L)
   education <- c(0, .33, .66, 1, 1)[read("edulev", c(1:5, 98))]
   income <- c(.16, .33, .5, .66, .83, 1)[read("income", c(1:6, 97, 98))]
+  age <- dplyr::na_if(read("age", c(18:88, 98)), 98)
   attitudes <- australia_original_attitudes(survey)
   extremity_indices <- c(
     "workability", "democracy", "tradition", "politicization"
@@ -122,7 +123,7 @@ build_australia_individual <- function(
     high_knowledge_joint = as.numeric(joint > .6),
     knowledge_midterm = NA_real_, knowledge_midterm_joint = NA_real_,
     knowledge_joint_midterm = NA_real_, issue_knowledge = NA_real_,
-    age = read("age", c(18:88, 98)),
+    age = age,
     female = as.numeric(read("gender", 1:2) == 2),
     minority = as.numeric(read("overseas", c(1:2, 100)) < 2),
     education_four = education,

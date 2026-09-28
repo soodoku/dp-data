@@ -1,15 +1,16 @@
 # Poll-level issue register
 
-Review date: 2026-09-25. Scope: the original 34 analytical polls, with detailed
-coverage of the 23 existing knowledge builds and the respondent reconstructions.
+Initial review: 2026-09-25; latest evidence update: 2026-09-27. Scope: the
+original 34 analytical polls, with detailed coverage of the 23 existing knowledge
+builds and the respondent reconstructions.
 
 ## Decision for this pass
 
 Preserve scoring, sample definitions, and downstream results until each proposed
 correction has been supported by evidence and explicitly approved by the user.
-UKC-01, UKGE-03 and NIC-03 age/mode were approved on 2026-09-24;
-SWE-02, AUS-03, AUS-04, WTU-03, UKM-01, UKEU-03, UKEU-04, UKGE-02, UKGE-05, BTPHE-01, BTPHE-03, EURO-04, NH-06, NH-07, ZG-05, and the A1R climate and AMR mode corrections were approved in subsequent poll reviews.
-Other proposals remain unapproved.
+Approved corrections and their evidence are recorded in the corresponding
+poll entries below and in the recode ledger. Proposals remain unapproved until
+a poll-specific decision is recorded.
 This file records evidence and decisions; an unresolved issue does not authorize
 a recode. The provisional
 UK Health attitude implementation that would change definitions was set aside.
@@ -1011,10 +1012,10 @@ now. The generated catalog calls `t1mpop` “Royal Family and the Public,” a
 description of its items, not a claim to recover the original index title.
 No field link, response, index value, sample or aggregate number changes.
 
-**UKM-06 — nonresponse codes pass into expanded demographic measures (proposed).**
+**UKM-06 — nonresponse codes in expanded demographics (approved correction).**
 The retained `value-labels.csv` establishes `AGEB=11` as refused, `AGEB=10`
 as 90+, `A6=6` as not answered, `B12A=6` as not answered and `B16=8` as
-refused. The current recode retains age 11 for five source records and age 10
+refused. The preceding recode retained age 11 for five source records and age 10
 for three 90+ records, political interest 6 for one record, education 6 for one
 record (with both collapsed education and higher-education flags consequently
 misleading), and minority=1 for one ethnicity refusal. The affected source rows
@@ -1023,11 +1024,38 @@ education: 509, whose `B12B=14` is also not answered; ethnicity: 59.
 
 All are nonattendees (`GROUP=-1`), so the 258-person historical aggregate is
 unchanged. They are nevertheless present in the expanded respondent exports.
-Proposed correction: map explicit nonresponse to missing, and retain the 90+
+Approved correction: map explicit nonresponse to missing, and retain the 90+
 raw band without pretending it establishes a point age. Do not substitute an
 invented midpoint into group means. Preserve current midpoints for observed
 AGEB 2–9, questionnaire answers, source identities and sample contracts.
-The per-poll decision was presented to the user; no recode is applied here.
+
+Qualification nonresponse must be handled at the component level. `B12B=14`
+occurs at source rows 431, 509 and 754. Rows 431 and 754 have an observed
+`B12A=1` (no school qualifications); row 754 is an attendee in group 11. Keep
+that observed school-education information. Only row 509 has both education
+components unanswered (`B12A=6`, `B12B=14`) and currently acquires the out-of-range
+education value 6. Converting every qualification refusal into wholly missing
+education would incorrectly discard a valid answer for an attendee.
+
+No exact-age field is available to recover the three 90+ ages: `AGEGP` and
+`AGESEX` are further age bands, and `EDUCAGE` is school-leaving age. Keep the
+source's open-ended 90+ category for future band-based analysis, while leaving
+point age missing. This differs from refusal, even though both lack a usable
+point age. Raw response codes preserve that distinction.
+
+The user approved the ethnicity-refusal correction, then explicitly approved
+the age, political-interest and education corrections on 2026-09-27. The
+correction changes 13 derived cells across ten nonattendees: eight ages, one
+political-interest value, one minority flag and three education measures. The
+separately harmonized political-interest measure already excludes codes 5/6
+and therefore needs no numerical change. Raw responses and all sample and
+identity contracts remain intact. The rebuilt export confirms exactly these 13 numeric changes and 5,142
+definition-version updates (six measures across 857 source records). All seven
+other respondent tables, every aggregate output and every canonical analysis
+output are byte-identical to the preceding version. Both respondent and
+aggregate parity comparisons have zero unexplained differences. The focused
+regression test passes 22 assertions, including preservation of valid school
+answers and the full attendee demographic values. No model was rerun.
 
 ## UK General Election 1997 — uk-general-election-1997
 
@@ -1182,6 +1210,11 @@ Reproduce from dp-data, then from dp-learning respectively:
 Rscript scripts/review_uk_ge_correction.R /tmp/uk-ge-review
 Rscript ../dp-data/scripts/review_uk_ge_downstream.R /tmp/uk-ge-review /tmp/uk-ge-learning
 ```
+
+A renewed extreme-age check found serial 6206 with raw `AGE=96`, labelled age
+in years (QA3), and no special meaning for code 96. This is a nonparticipant
+(`filter=0`, `PARTIC=0`). A high age alone does not justify a missing-value recode;
+preserve this observed age.
 
 **UKGE-04 — demographic and missing-code boundaries.** Ethnicity -7 becomes
 missing, including two attendees; codes other than 1 become the historical
@@ -1666,22 +1699,58 @@ establish effects in downstream analyses that consume `grpgain` directly.
 Reproduce the respondent comparison with
 `Rscript scripts/review_australia_gain.R`.
 
-### AUS-05: Age refusal is currently treated as age 98 (proposed)
+### AUS-05: Age refusal no longer counts as age 98 (approved correction)
 
 `data/australia-republic-1999/value-labels.csv` explicitly labels `age=98`
-“REFUSED.” `build_australia_individual()` retains that value as a year age.
+“REFUSED.” The preceding `build_australia_individual()` retained that value
+as a year age.
 Fourteen source records are affected; three are among the 347 attendees:
 CASEID 199 (source row 3638, group 2), 648 (row 4020, group 18), and 1226
 (row 4419, group 10). The other eleven belong to inapplicable group 100.
 This is an explicit refusal code, not evidence of unusually old respondents.
 
-Proposed correction: make these ages missing while retaining raw code 98.
+Approved correction: make these ages missing while retaining raw code 98.
 The central group-summary stage will recompute mean age using observed ages;
 no group formula belongs in this poll's respondent recoder. Preserve the
 347-person sample, knowledge, attitudes, education and other demographic
-values. The separate constitutional-referendum `codebook.pdf` cannot establish
+values. A renewed source-level review confirms the existing central mean helper
+already omits missing ages. Only these three group means change:
+
+| Group | People | Age responses after correction | Previous mean age | Corrected mean age |
+|---|---:|---:|---:|---:|
+| 2602 | 17 | 16 | 47.1176470588 | 43.9375000000 |
+| 2610 | 14 | 13 | 48.5000000000 | 44.6923076923 |
+| 2618 | 12 | 11 | 44.1666666667 | 39.2727272727 |
+
+That is three attendee age cells and 43 repeated group-mean cells. Across the
+full source, 14 refusal ages become missing; the other eleven remain
+outside the attendee panel. Education code 98, income codes 97/98 and political
+interest code 97 already become missing. `overseas=100` is inapplicable for
+native-born respondents to the follow-up about whether their overseas birthplace
+was English-speaking; its existing nonminority coding is a construct choice,
+not evidence of an unanswered ethnicity question. These adjacent fields are
+unchanged by the age correction.
+
+The separate constitutional-referendum `codebook.pdf` cannot establish
 this deliberative poll's field meanings; the actual poll-source value labels
-provide the refusal evidence. User decision requested; no recode applied here.
+provide the refusal evidence. The user approved this age correction on
+2026-09-27. Raw responses and membership remain intact; the independently
+frozen comparison covers all 347 participant ages and group means.
+Age-based downstream summaries or regressions may change because three
+attendee ages now correctly lack an observed value. Preserving participation
+does not guarantee an unchanged complete-case sample in an age-adjusted
+model. No paper or downstream model is rerun as part of this correction.
+
+The rebuilt respondent export confirms all 14 age refusals become missing;
+all other respondent values are unchanged by AUS-05. Exactly three `ppage`
+and 43 `meanage` cells change in the wide aggregate, and the same 43 means
+change in the typed derived table. The age definition is versioned
+`aus05-v2`, as is the centrally generated mean age. All other polls, raw
+response tables, identities, membership and knowledge tables remain
+unchanged. Current canonical analysis outputs are byte-identical. Both
+respondent and aggregate comparisons have zero unexplained differences.
+The existing frozen comparison rows were preserved verbatim, with 694
+age/group-mean rows appended; no prior correction values were rewritten.
 
 ## BTP 2007 — btp-2007
 
@@ -2120,6 +2189,48 @@ their original bytes as historical evidence. This is a label correction only:
 the 129 index rows, field mappings, respondent answers, scores and aggregate
 numbers were unchanged by that label edit. The separate BGC-04 scale correction
 was subsequently approved and changes the values described above.
+
+### BGC-06: Two unlabelled ethnicity codes become known minority status (proposed)
+
+The [questionnaire](../data/bulgaria-crime-2002/questionnaire.pdf), Q7 on PDF
+page 2, asks ethnicity and offers four responses: 1 Bulgarian, 2 Turkish,
+3 Roma and 4 Other. The deposited `value-labels.csv` labels only these four
+codes. Source IDs 1614 and 1018, rows 277 and 278, instead have `ethnos=0`.
+The present and original `Bulgaria.R` scorers use `ethnos != 1`, making both
+people minority=1. An unlabelled code outside the offered categories does
+not establish an observed non-Bulgarian ethnicity.
+
+This is not a diagnosed refusal code: the original registered SPSS file has
+neither `na_values` nor `na_range` for ethnicity. Its checksum is the same as
+the public exact-copy `survey.sav`; zero was not introduced by the modernized
+pipeline. Independent original before- and after-discussion SPSS and Stata
+files also retain zero for these two people. The original script has no
+explicit zero-to-ethnicity instruction or explanation of these final two
+records. Other demographics are observed: ID 1614 is female, age 42, with
+high-school education; ID 1018 is female, age 45, with primary education.
+
+Do not fill the missing meaning from a national-file ID match. The national
+1,035-person file contains an ID 1018 with age 62, high-school education,
+a different income band and retired status. Those differences mean an ID
+match alone is not a validated identity bridge. ID 1614 is absent from that
+national file. The attendee-return sources are the relevant evidence here.
+
+**Recommendation:** leave the two derived minority flags missing, preserve
+raw zero, and leave valid Other code 4 unchanged. This recognizes unknown
+ethnicity without inventing which unrecorded answer was given. All 278 people
+and group memberships remain. Under the existing central mean helper, groups
+5310 and 5316, each containing 17 people, would move from 3/17 minority
+(0.1764705882352941) to 2 known minorities among 16 observed ethnicities
+(0.125). Two person flags and 34 repeated group shares would change.
+
+The current historical entropy helper still uses the full group denominator
+for the binary complement, so its minority component would remain
+0.672294817075638 in both groups. That is not evidence that unknown ethnicity
+has been incorporated correctly into diversity. Missing-aware entropy needs
+one shared cross-poll assessment; do not patch the formula inside this poll's
+recode. This proposal changes only person data and summaries already computed
+by the central step, subject to the user's poll-specific decision. No coding
+change has been applied.
 
 ## California 2011 — california-whats-next-2011
 
@@ -3001,6 +3112,11 @@ cross the threshold, but no reviewed source establishes that allocation.
 Preserve code 5 pending a fielded key or a source calculation using the full
 question definition. The Q20 catalog also now distinguishes source-label
 $950,000 from questionnaire $940,000; both are code 5, so no score changes.
+
+The renewed extreme-age check confirms source rows 1383 and 1559 report Q129
+birth years 1911 and 1910, yielding ages 97 and 98 in 2008. Both are
+nonparticipants. These derived ages are not the source's refusal codes;
+preserve the reported birth years and derived ages.
 
 **SM-02 — identity and earlier source.** The maintained build selects 239
 participants from an earlier 1,806-row file, sorts unique `PARTICIPANTID`, and uses
@@ -4200,6 +4316,34 @@ in groups 9707 and 9727; NH-06 shows why the minority entropy can remain
 unchanged when refusal is restored to missing. A change to these shared
 formulas must be assessed across all polls and frozen separately from the
 poll-level source corrections.
+
+A fresh check of the 21-poll reconstructed aggregate on 2026-09-27 also
+identifies an absent-category problem. `historical_entropy(value, 4L)` indexes
+four observed frequencies without supplying zero counts for unobserved
+education categories. With only one, two or three observed categories it
+returns missing. The final `rowSums(..., na.rm=TRUE)` then silently omits the
+education component. This occurs in 185 of the 397 recognized discussion
+groups, containing 2,511 people. These groups have observed education; this
+is not a claim that education was entirely unanswered. For example, three
+equally frequent observed categories have Shannon entropy `log2(3)`, about
+1.584963 bits, but the historical helper returns missing. An unobserved
+fourth category should contribute zero, not make the component unavailable.
+
+The binary missing-denominator problem can also manufacture diversity: for
+`c(1, 1, NA)` the historical helper returns 0.918296 bits although the two
+observed answers are identical. It treats the unknown person's share as the
+other category. An observed-answer denominator would give zero, while keeping
+the unknown person's answer missing. Which respondents belong in the summary
+and how much information a component requires must be made explicit; unknown
+answers do not establish a complementary demographic category.
+
+These are reproduced behaviors of the shared helper, not new poll-specific
+recodes. `tests/testthat/test-polardata-derived.R` intentionally preserves
+these historical behaviors for reconstruction parity. The original
+`historical-cdd-scripts:legacy/merge_data_scripts/03_data.R` likewise sums
+components with missing removal. Correcting the shared formulas requires one
+versioned cross-poll comparison, with component coverage recorded; it must
+not be folded silently into any of the respondent corrections above.
 
 ### X-04: Person-level identity requires more than matching scores
 
