@@ -151,6 +151,10 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   expect_equal(sum(a1r_people$attended & !a1r_people$panel), 3L)
   expect_true(all(!is.na(a1r_people$small_group_id[a1r_people$attended])))
   expect_true(all(a1r_people$arm[a1r_people$attended] == "attended"))
+  expect_equal(sum(a1r_people$arm == "recruitment_nonattender"), 2215L)
+  expect_true(all(a1r_people$assignment[a1r_people$arm != "control"] ==
+                    "recruitment"))
+  expect_false(any(a1r_people$arm == "invited_nonattender"))
   climate_people <- dplyr::filter(
     people, poll_id == "a1r-climate-2021", source_dataset == "control"
   )

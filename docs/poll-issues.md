@@ -5513,3 +5513,36 @@ interview. Denmark departure respondent 321 has all nine quiz fields blank but
 Marousi's recruitment export retains 1,275 telephone records, with 159
 respondents having arrival or exit questionnaire evidence and 1,116 with
 unknown attendance. No attendance classification relies solely on a group.
+
+
+### A1R-2019: recruitment is not a verified invitation
+
+The NORC methodological report, printed page 6 ("Sample Selection from
+AmeriSpeak"), says treatment-frame baseline respondents were only potentially
+eligible for the event. NORC subsequently selected a subset to receive invitations,
+using willingness and demographic quotas. `CONDITION == 1` therefore identifies
+the recruitment frame, not a verified invitation for every respondent. The report
+is retained at `data/america-in-one-room-2019/design/a1r-2019-norc-methods.pdf`.
+
+Corrected the analysis participant and phase participant labels: the 2,215
+nonattenders in this frame are `recruitment_nonattender`, and the frame's
+`assignment` is `recruitment`. Attendees remain `attended`; controls remain
+`control`. This changes no attendance decisions, respondent membership, scores,
+weights, or outcomes. Individual invitation status among these nonattenders
+cannot be inferred from the available frame indicator. An invitation-effect
+analysis needs the actual invitation records and follow-up outcomes, together
+with the selection probabilities used at each recruitment stage.
+
+The climate study differs. Its NORC report, printed pages 4–6, says treatment-frame
+baseline respondents were invited to register. Tables 2 and 3 document electronic
+briefing materials sent to registered delegates on September 8, 2021 (registered
+before September 2), plus printed materials if requested. Registration and
+materials receipt are not equivalent to attendance, and receipt by every invitee
+is not established. The report is retained at
+`data/a1r-climate-2021/design/a1r-climate-methods.pdf`. Preserve this study's
+`invited_nonattender` label. Neither study's current analysis scores contain exit
+knowledge observations for its nonattender group. Zero gain would be an imputation,
+not an observed outcome. Invitation or materials could induce learning without
+attendance, violating the exclusion restriction for an instrument intended to
+identify the effect of attendance alone. An effect of invitation, if identifiable,
+would include such learning.
