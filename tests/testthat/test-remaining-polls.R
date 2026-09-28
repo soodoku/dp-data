@@ -177,25 +177,34 @@ test_that("sample differences and unordered comparisons do not invent links", {
   )
 })
 
-test_that("California eight-item scores reproduce Table 4", {
-  built <- build_california_report()
-  responses <- built$california_report_responses
-  scores <- built$california_report_scores
-  expect_equal(nrow(scores), 834L)
-  expect_equal(nrow(responses), 6672L)
-  expect_equal(sum(scores$cohort_basis == "arrival-roster-only"), 10L)
-  counts <- responses |>
-    dplyr::group_by(.data$wave, .data$item_number) |>
-    dplyr::summarise(correct = sum(.data$correct), .groups = "drop")
-  expect_equal(counts$correct[counts$wave == 2L],
-               c(316L, 290L, 258L, 253L, 263L, 259L, 128L, 150L))
-  expect_equal(counts$correct[counts$wave == 3L],
-               c(355L, 334L, 339L, 362L, 292L, 330L, 206L, 307L))
-  arrival <- scores$score_zero_filled[scores$wave == 2L]
-  departure <- scores$score_zero_filled[scores$wave == 3L]
-  expect_equal(round(mean(arrival) * 100, 1), 57.5)
-  expect_equal(round(mean(departure) * 100, 1), 75.7)
+test_that("California eight-item scores exclude departure nonparticipants", {
+  survey <- read_poll_survey("california-whats-next-2011")
+  excluded <- is.na(survey$part) & !is.na(survey$t2_ParticipantNumber)
+  expect_equal(sum(excluded), 5L)
+  expect_false(any(california_wave_present(survey[excluded, ], 3L)))
+  built <- build_california_knowledge(survey)
+  responses <- built$california_knowledge_responses
+  scores <- built$california_knowledge_scores
+  expect_equal(nrow(scores), 824L)
+  expect_equal(nrow(responses), 6592L)
+  expect_false(any(scores$source_row %in% survey$source_row[excluded]))
+  expect_equal(sum(!scores$wave_present), 16L)
+  expect_true(all(is.na(scores$score_zero_filled[!scores$wave_present])))
+  expect_true(all(is.na(responses$correct[!responses$wave_present])))
+  expect_equal(sum(scores$paired), 792L)
+  paired <- scores[scores$paired, ]
+  arrival <- paired$score_zero_filled[paired$wave == 2L]
+  departure <- paired$score_zero_filled[paired$wave == 3L]
+  expect_equal(round(mean(arrival) * 100, 1), 60.0)
+  expect_equal(round(mean(departure) * 100, 1), 76.7)
   expect_true(all(scores$n_items == 8L))
+  report <- audit_california_report(survey)
+  expect_true(all(report$denominator == 417L))
+  expect_true(all(report$nonparticipants == 5L))
+  expect_equal(report$n_correct[report$wave == 2L],
+               c(316L, 290L, 258L, 253L, 263L, 259L, 128L, 150L))
+  expect_equal(report$n_correct[report$wave == 3L],
+               c(355L, 334L, 339L, 362L, 292L, 330L, 206L, 307L))
   expect_equal(nrow(build_poll_knowledge(
     "california-whats-next-2011"
   )$respondents), 396L)

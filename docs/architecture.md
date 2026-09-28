@@ -253,14 +253,17 @@ field instead of silently replacing missing responses themselves. This export
 does not create new answer keys or change sample membership. It covers the
 intersection of reconstructed source-person polls and existing knowledge builds.
 
-California 2011 also has a separate eight-question arrival/departure report
-measure. `make knowledge` exports `output/california_report_responses.parquet`
-and `output/california_report_scores.parquet`; the item wording and answer keys
-are in `metadata/california_report_knowledge_items.csv`. Each row retains its
-source row and whether inclusion came from the participant flag or only an
-arrival roster number. This report-table reconstruction uses 417 records and
-does not alter the historical five-item phone/departure series or its
-396-person group sample; see `poll-issues.md` CA-03.
+California 2011 also has an eight-question arrival/departure participant
+measure. `make knowledge` exports `output/california_knowledge_responses.parquet`
+and `output/california_knowledge_scores.parquet`; the wording and keys are in
+`metadata/california_knowledge_items.csv`. The 412 flagged participants are
+included, with absent questionnaires left missing and a `paired` flag for the
+396 with both questionnaires. Item nonresponse within an observed questionnaire
+is scored zero using the fixed eight-item denominator. Five arrival-only
+nonparticipants are excluded. `audit/california_report_reproduction.csv`
+explains the published table's 417-record denominator, including those five;
+it is an audit of the report rather than a participant measure. The historical
+five-item phone/departure series remains unchanged; see `poll-issues.md` CA-03.
 
 The canonical battery is not necessarily the historical aggregate battery:
 NIC, for example, has distinct eight-item and eleven-item definitions. Before
