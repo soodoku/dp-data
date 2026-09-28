@@ -2696,6 +2696,40 @@ verified group roster is attached. This is a missing verified linkage, not proof
 that discussions had no groups. Search original session materials before making
 that assertion; do not substitute a single synthetic group.
 
+### VT-03: The question catalog inherited incorrect choice labels (corrected)
+
+The baseline SAV dictionary attaches efficiency-program choices to `Q77`, the
+surcharge question, and reuses the renewables percentages for `Q80`, `Q81` and
+`Q82`. The maintained catalog had copied those labels, so its displayed answers
+were incorrect even though the numeric scoring keys were already right. Direct
+comparison of the retained pre and departure questionnaires establishes:
+
+| Source columns | Item | Questionnaire choices | Correct code and baseline display |
+|---|---|---|---|
+| Q77 / Q030T3 | Surcharge | Baseline: zero, .005, .02, .5, .75 cents/kWh | 2: about .005 cents/kWh |
+| Q80 / Q033T3 | Vermont Yankee supply | 5%, 10%, 20%, 33% | 4: 33% |
+| Q81 / Q034T3 | Hydro Quebec supply | 15%, 33%, 45%, 60% | 2: 33% |
+| Q82 / Q035T3 | Generation within Vermont | 12%, 33%, 55%, 72% | 3: 55% |
+
+Sources: [baseline questionnaire](../data/vermont-energy-2007/questionnaire-pre.pdf)
+Q80/Q83–Q85, PDF pp. 7–8; [departure questionnaire](../data/vermont-energy-2007/questionnaire-post-key.pdf)
+Q30/Q33–Q35, PDF pp. 11–13. The catalog now displays these baseline choices and
+correct-answer labels, with explicit questionnaire locators. It preserves the
+baseline surcharge wording rather than silently substituting departure units:
+post Q30 offers zero, half a cent, two cents, five cents and seven-and-a-half
+cents. The separate unit ambiguity in VT-01 remains unresolved.
+
+Rate-comparison Q83 / Q036T3 has a genuine wave-specific ordering change:
+baseline Q86 codes 1/2 mean 10%/20% higher, while departure Q36 codes 1/2 mean
+20%/10% higher. The catalog retains the baseline ordering and documents the
+departure difference. Correct code 4 means roughly 10% lower at both waves.
+This does not authorize changing raw answers or interpreting all departure
+codes through baseline choice labels.
+
+The source SAV and `value-labels.csv` retain their original bytes as evidence.
+Only catalog metadata and its generated display fields change; responses,
+answer keys, scores, samples, group variables and all other polls are unchanged.
+
 ## San Mateo 2008 — san-mateo-2008
 
 ### SM-01: Existing key change needs version-specific instrument evidence
@@ -2812,6 +2846,23 @@ implementation within1e-12. Shuffling input rows does not alter the join; missin
 or duplicate identities fail tests. The previously recorded mismatch remains
 in `audit/corrections/uk-general-election-1997/downstream-item-alignment.csv` as
 evidence of the old positional failure.
+
+### SM-05: Housing-income question includes three income groups (catalog corrected)
+
+The [baseline questionnaire](../data/san-mateo-2008/questionnaire-pre.pdf), Q24,
+PDF p. 7, asks about the combined share of new households with **low, very low
+and extremely low incomes**. The catalog paraphrase omitted the third group.
+It now includes all three and cites the questionnaire directly. The correct
+numeric code remains 3 (about half); no scores or raw answers change.
+
+Across the eight catalog rows, the damaged source-text spelling `couldnÆt` is
+rendered as `couldn’t`. The stored nonresponse codes remain 6 for seven items
+and 5 for Q25, even though the printed baseline questionnaire uses 99.
+These source and instrument codes must not be silently substituted for each
+other. The retained `questionnaire-post.pdf` is the five-page onsite attitudes
+supplement, with no knowledge battery; it cannot verify departure choice order.
+The previously documented Q20 price-version and Q26 land-use questions remain
+unchanged. Original questionnaires and source dictionaries are preserved.
 
 ## Michigan 2009 — michigan-2009
 
