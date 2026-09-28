@@ -17,8 +17,10 @@ test_that("new demographic fields cover each additional grouped poll", {
   }
   expect_true(all(is.na(people$age) | (people$age >= 16 & people$age <= 110)))
   expect_true(all(is.na(people$education) | people$education %in% c(0, .5, 1)))
-  expect_true(all(is.na(people$read_briefing) |
-    (people$read_briefing >= 0 & people$read_briefing <= 1)))
+  expect_true(all(
+    is.na(people$read_briefing) |
+      (people$read_briefing >= 0 & people$read_briefing <= 1)
+  ))
 })
 
 test_that("reading retains substantive 99 and rejects ambiguous codes", {
