@@ -27,7 +27,7 @@ test_that("redacted extracts expose only the reviewed text fields", {
     strings <- names(survey)[purrr::map_lgl(survey, is.character)]
     allowed <- switch(record$poll_id,
       "btp-2007" = "Sgroup",
-      "michigan-2009" = paste0("t3q", 38:42),
+      "michigan-2009" = paste0("t3q", c(38:42, 45:46)),
       "nic2-2003" = c("stcd", "time", "qstcd"),
       "btp-presidential-primaries-2004" = c(
         "b1q38", "f1q49a", "f1q49b", "f1q49c", "f1q49d"
