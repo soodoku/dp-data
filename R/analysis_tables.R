@@ -594,6 +594,17 @@ build_analysis_tables <- function() {
   scores <- analysis_scores(items, participants, sources$marousi)
   attitudes <- analysis_attitudes(participants)
   recruitment <- analysis_phase_recruitment(participants, sources)
+  wave_catalog <- analysis_wave_catalog()
+  phase_people <- recruitment$participants |>
+    dplyr::left_join(wave_catalog$analysis_studies,
+      by = "poll_id", relationship = "many-to-one"
+    )
+  stopifnot(!anyNA(phase_people$study_id))
+  phase_scores <- analysis_phase_scores(
+    scores, items, recruitment$participants, sources, recruitment
+  ) |>
+    add_analysis_wave_identity(wave_catalog$analysis_survey_waves)
+  phase_evidence <- analysis_attendance_evidence(phase_people, phase_scores)
   stopifnot(
     !anyDuplicated(participants[c(
       "poll_id", "source_dataset", "respondent_id"
@@ -624,9 +635,9 @@ build_analysis_tables <- function() {
     analysis_scores = scores,
     analysis_attitudes = attitudes$catalog,
     analysis_attitude_responses = attitudes$responses,
-    analysis_phase_participants = recruitment$participants,
-    analysis_phase_scores = analysis_phase_scores(
-      scores, items, recruitment$participants, sources, recruitment
-    )
+    analysis_phase_participants = phase_evidence$participants,
+    analysis_phase_scores = phase_evidence$scores,
+    analysis_studies = wave_catalog$analysis_studies,
+    analysis_survey_waves = wave_catalog$analysis_survey_waves
   )
 }

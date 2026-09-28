@@ -3494,6 +3494,31 @@ remaining anonymous-battery and final-instrument provenance limitations with
 additional source versions or logs, rather than changing people or codes to
 match aggregate counts.
 
+### DK-05: Original arrival source preserved publicly; scoring unchanged
+
+The original `data/Denmark/data/t1.sav` is now retained byte-for-byte as
+`data/denmark-euro-2000/arrival.sav`. Its 121,960 bytes have SHA-256
+`0bf7c28c4bc93c80e62244ec02b3764ba15e735684d4cebefc7eace2b67deeb9`.
+The source has 363 respondents, 93 fields and unique `DELNR` identifiers.
+All 363 identifiers match recruitment records; 358 match departure records.
+The arrival factual fields `S4_1` through `S9_1` and party placements
+`S11_7_1`, `S11_9_1`, `S11_11_1` correspond to the existing nine-item
+recruitment/departure battery. The original labels and missing-value attributes
+remain in the SAV; `arrival-variables.csv` and `arrival-value-labels.csv`
+provide inspectable dictionaries. Three questionnaire verbatim fields are
+retained under the user's approval: another party description, the most
+important theme for one's euro position, and a description of the public debate.
+They are questionnaire responses, not contact fields.
+
+The survey-component registry and archive inventory now resolve this source
+inside the public poll folder. The wave catalog records its existence as
+`source_exists_but_not_exported`; no arrival score, existing knowledge score,
+respondent membership or analysis output is changed by this preservation.
+The source timing remains grounded in `deliberative-democracy-euro.pdf`,
+PDF pages 7 and 19, which distinguish recruitment, beginning-of-event and
+end-of-event measurements. A public source is now available for the separate
+arrival scoring task without requiring a local vault.
+
 ## Northern Ireland 2007 — northern-ireland-2007
 
 **NI-01 — source roster versus paper reader (corrected downstream).** The
@@ -4944,6 +4969,155 @@ absence of group membership must not turn them into known nonattendees.
 This count covers the active original 34-ID audit. The 50-entry catalog also
 includes 16 materials-only events, and nine additional OOS study IDs exist
 outside that catalog. They have not been classified by this coverage audit.
+
+#### X-02 source and cohort verification (2026-09-27)
+
+This review checks the actual questionnaires, papers, reports and recoding
+functions underlying the phase catalog. It does not treat a variable suffix,
+an existing metadata assertion or the phrase "before and after" as sufficient
+evidence of pre-arrival timing. Page references below are PDF page numbers
+unless explicitly described otherwise. `t0` means before arrival or, for an
+online study, before the discussion experiment starts; it does not establish
+that every respondent completed an interview or subsequently participated.
+
+The proportion-correct phase export covers **30 catalog IDs representing 29
+distinct studies**. The online and historical Presidential Primaries IDs are
+two projections of the same experiment. Tanzania adds one study with a
+standardized knowledge index rather than a proportion-correct battery: across
+both scales there are **31 IDs and 30 distinct studies**. The alphabetically
+first review covers 14 IDs/13 studies; the Michigan-through-Zeguo review below
+covers 17 additional IDs, including Tanzania. These are exported study/phase
+coverage counts, not the broader retained-source count above and not counts
+of complete respondent panels.
+
+The first 14 IDs have design evidence for pre-arrival/pre-start measurement:
+A1R Climate, America in One Room, Australia, BTP 2007, BTP General Election,
+BTP Health/Education, BTP National, both Primaries projections, California,
+CPL, Denmark, Europolis and Marousi. Their specific source locators remain in
+`metadata/analysis_phase_roles.csv` and the retained-source table above.
+BTP General Election's source `w4bstart/w4bend` dates establish the baseline
+fieldwork interval, but individual first-discussion timestamps have not been
+located. Its classification is supported by the experiment design rather
+than a respondent-by-respondent comparison to each person's first meeting.
+For every poll, interview mode, attendance, questionnaire presence and phase
+are separate facts.
+
+**Independently checked timing and raw-field mappings.** "Direct" denotes an
+explicit recruitment sequence, invitation or measurement-design description,
+not exact timestamps for every respondent. "Cross-poll direct" denotes an
+explicit account identifying that poll within a common design. A source wave
+can be genuine even where only some respondents have answers to it.
+
+| Poll | Actual selected source fields and timing evidence | Confidence and other retained phases |
+| --- | --- | --- |
+| Michigan 2009 | `data/michigan-2009/questionnaire-pre.pdf`, pp.1/7: telephone interview followed by invitation to the future November 13–15 event. Baseline `q14:q18`, `q4/q5/q7/q8`; departure `t3q38:t3q42`, `t3q10/t3q11/t3q13/t3q14`. | Direct pre-arrival. Arrival `t2q*` exists; only partial common knowledge coverage, described below. |
+| New Haven, March 2002 | `data/new-haven-2004/papers/disaggregating-deliberation-27s-effects-28lsero-29.pdf`, p.8: T1 initial telephone interview, T2 written questionnaire **after the first deliberative session**, T3 at weekend end. `R/source_new_haven.R` joins the authored `Pre/Mid/Post` workbook sheets; facts are `pre/mid/post_q35/q36/q37/q39:q43`. | Direct pre-arrival. Mid is `interim_1`, not arrival. The folder/historical label2004 does not change the documented2002 event date. |
+| NIC 1996 | `data/nic-1996/codebook.txt`, opening paragraphs: initial household interviews November 4, 1995–January 18, 1996; source T2 combines event-exit participants and contemporaneous telephone nonparticipants. `papers/nic-paper.pdf`, p. 19: source T3 about ten months later after the presidential election. `R/respondent_nic.R` reads suffixes1/2/3 for `WEDLOCK/AFDC/UNEMP/SPEND/TRADE/TROOPSA:TROOPSD/POLREP/POLDEM`. | Direct initial-interview baseline. SourceT2 is exit, not arrival; source T3 is follow-up. Historical `knowledge_midterm` exposes source T2 at canonical t2; its original selected endpoint is source T3/canonical t3. No separate arrival questionnaire is established. |
+| NIC2, 2003 | `data/shared/reports/foreign-policy-report.pdf`, p.2, visually checked because scanned: forty-minute telephone interview **before coming to Philadelphia**, repeated at the end of two days. `R/respondent_nic2.R` reads baseline `wrm3_b/c,aid3,wrm5,kno1_a/b,kno2_a/b,kno3_a/b,wrm1_b`, then the same stems prefixed`q`. | Direct pre-arrival. No separate arrival measurement identified in reviewed materials. |
+| Northern Ireland 2007 | `data/northern-ireland-2007/papers/northern-ireland-paper.pdf`, p.3: early-January initial interviews precede invitation to January 27 event. `reports/northern-ireland-final-report.pdf`, pp.8–9: questionnaires repeated at5:15pm, event end. Fields `t1q21:t1q27` then `t2q11:t2q17`. `papers/fishkin-deep-divides.pdf`, p.11: telephone T3 about a month later, including `t3q13:t3q19`. | Direct pre-arrival. T2 is exit and T3 follow-up; morning registration does not establish an arrival questionnaire. |
+| San Mateo 2008 | `data/san-mateo-2008/questionnaire-pre.pdf`, p.9: last interview question followed by invitation to future March 15–16 assembly and promised arrival arrangements. `R/respondent_san_mateo.R` uses `Q19:Q26` then `t2Q19:t2Q26`. | Direct pre-arrival. No separate arrival knowledge measurement identified. The retained post PDF is an attitudes supplement, not the departure knowledge instrument; see SM-05. |
+| SWEPCO 1996 | `data/shared/papers/utilities-paper.pdf`, p.4: telephone survey before invitation, same questionnaire at event end; explicitly identifies CPL/WTU/SWEPCO as first three polls. `R/respondent_utilities.R` reads `SOURCE/USE/RT/SMOG/SETRT` with suffixes1/2. | Direct pre-arrival. The paper establishes timing more precisely than the codebook's "pre-meeting" label alone. No separate arrival wave identified. |
+| Tanzania 2015 | `data/tanzania-2015/papers/tanzania-working-paper.pdf`, p.13: household baseline before information video and subsequent invitation to deliberation. p.15/printedp.14: telephone follow-up measures effects **weeks rather than hours** after treatment. Selected indices `H600/H601`. | Direct pretreatment baseline. H601 is later follow-up, not onsite exit. This audit maps it to canonical t3 with role`follow_up`; neither index value nor its original selected-wave label changes. |
+| Tomorrow's Europe 2007 | `data/tomorrows-europe-2007/papers/tomorrows-europe-research-paper.pdf`, pp.2/4: first-contact interview before invitation, arrival T2, endT3. Baseline `q16_1:q24_1,q33a_1/q33b_1`; departure `t3q19:t3q27,t3q36a/b`; arrival corresponding`t2q*`. | Direct pre-arrival. Arrival already appears in historical phase scores as canonical t1 via`knowledge_midterm`; it is not an absent phase. Standard item export still omits those arrival item rows. |
+| UK Crime 1994 | `data/uk-crime-1994/papers/british-crime-paper.pdf`, pp.9–10: initial household interview/self-completion before invitation/weekend; same self-completion at very end. `R/respondent_crime.R` uses `kw1:kw4,pkw1:pkw3` with source suffixes1/2. | Direct pre-arrival. No separate arrival questionnaire identified. |
+| UK EU 1995 | `data/uk-eu-1995/papers/deliberation-attitude-constraint.pdf`, p.8: household baseline/self-completion followed by invitation to later weekend, explicitly including Europe1995. `R/respondent_eu.R`: `eusize/swiss/inctax/elect/ptyapp`, suffixes1/2. | Cross-poll direct pre-arrival. No separate arrival questionnaire identified. |
+| UK Election 1997 | `data/uk-general-election-1997/papers/british-election-paper.pdf`, pp.3–4: January initial interviews/recruitment precede April 26–28 weekend; text explicitly calls initial interview "time1". `R/respondent_election.R`: `inflat/intrst/ukempl` and twelve party-placement answers, suffixes1/2. | Direct pre-arrival. No separate arrival questionnaire identified. |
+| UK Health 1998 | `data/uk-health-1998/reports/uk-health-final-report.pdf`, p.4: household interview/self-completion establishes benchmark **before invitation**; questionnaire repeated at weekend end. `R/respondent_health.R`: `sopha:sophf`, suffixes1/2. | Direct pre-arrival. An arrival briefing video is documented; that does not establish an arrival knowledge questionnaire. |
+| UK Monarchy 1996 | `data/uk-eu-1995/papers/deliberation-attitude-constraint.pdf`, p.8: Monarchy 1996 explicitly included among five polls sharing household-baseline-before-invitation design; p.24 identifies its sample. `R/respondent_monarchy.R`: `Q5A:Q5H,Q8A` then `R5A:R5H,R8A` for historical scoring. | Cross-poll direct pre-arrival, not a monarchy-specific timestamp check. No separate arrival questionnaire identified. |
+| Vermont 2007 | `data/vermont-energy-2007/reports/vermont-final-report.pdf`, p.12: initial interview T1, arrival T2, departure T3. `questionnaire-pre.pdf`, p.10: invitation follows last question. Maintained baseline `Q77:Q85`; departure `Q030T3:Q038T3`. | Direct pre-arrival. Full nine-item arrival counterpart`Q030T2:Q038T2` retained, with146 respondents having an answer; currently unscored in phase export. |
+| WTU 1996 | `data/shared/papers/utilities-paper.pdf`, p.4: telephone interview before invitation and questionnaire repeated at event end. `R/respondent_utilities.R`: `SOURCE/USE/RT/SMOG/SETRT`, suffixes1/2. | Direct pre-arrival. No separate arrival questionnaire identified. |
+| Zeguo 2005 | `data/zeguo-2005/papers/china-zeguo-bjps.pdf`, p.3: March 2005 initial survey before April 9 event. `R/respondent_zeguo.R` reads reconstructed `pre_d3043:pre_d3046` and `post_d3043:post_d3046` components, retaining the explicit knowledge-reconciliation ledger. | Direct initial-survey baseline. No separate arrival knowledge questionnaire identified; source-version reconciliation remains separate from timing. |
+
+"No separate arrival identified" is a limit of the retained evidence reviewed,
+not proof that no such questionnaire was ever administered. Conversely, a
+missing published arrival score can be our extraction limitation even when
+original answers remain in the repository. Do not move pre-arrival scores to
+t1 merely to make a requested arrival-to-exit comparison available.
+
+**Retained arrival answers that are not currently scored in the phase view.**
+The wave catalog records these as `source_exists_but_not_exported`, distinguishing
+them from an unknown phase or a phase without recovered data. This status does
+not create a new scored battery or silently substitute its values downstream.
+
+| Poll | Recovered source and coverage | Required distinction before scoring |
+| --- | --- | --- |
+| California 2011 | `data/california-whats-next-2011/survey.parquet`: arrival`t2q27:t2q34`. First five are counterparts of current telephone`t1`/departure shared bank; all eight form the separate report battery in`metadata/california_knowledge_items.csv`. Reports/questionnaires remain under that poll folder; CA-03 gives item wording and count checks. | Keep five-common-item and eight-report-item definitions separate. The existing eight-item supplemental export is not a silent replacement for the five-item selected-wave bank. |
+| Europolis 2009 | `data/europolis-2009/survey.sav`: six common arrival `V2Q43/V2Q44/V2Q46/V2Q47/V2Q49/V2Q50`; three arrival-only `V2Q45/V2Q48/V2Q51`. `reports/europolis-knowledge.pdf`, p. 1; research-paper Table 2/printed p. 11; EURO-05. | Six-item baseline/arrival/exit comparisons and nine-item arrival/exit comparisons have different denominators and coverage. Preserve the three one-answer baseline publication discrepancies rather than recoding to match the paper. |
+| Denmark 2000 | `vault/cdd/data/Denmark/data/t1.sav`:363 unique`DELNR`, linked to baseline`delnr`;358 overlap the current departure IDs. Nine arrival fields`S4_1:S9_1,S11_7_1,S11_9_1,S11_11_1`. Paper`data/denmark-euro-2000/papers/deliberative-democracy-euro.pdf`, Table 9/PDF p. 19; DK-02 distinguishes the current359 departure records. | Original arrival source is retained in vault but not an ordinary published poll-folder arrival file. Do not equate363 arrival IDs,359 departure IDs and358 overlap, or infer missing identities from the anonymous deposited battery. |
+| Vermont 2007 | `data/vermont-energy-2007/survey.sav`: all nine`Q030T2:Q038T2`, with146 respondents having at least one answer. Final-report PDF p. 12 explicitly identifies arrival. | Use the reviewed report-based keys, including VT-01's renewables decision, while retaining the instrument ambiguity; do not alter keys simply to expose the wave. |
+| Michigan 2009 | `data/michigan-2009/survey.parquet`: four common arrival placements`t2q10/t2q11/t2q13/t2q14`, plus arrival-only standard-of-living placements`t2q7/t2q8`. There are no arrival factual counterparts`t2q38:t2q42`. Final report PDF p. 13 marks the two added placements as arrival. | This is **partial** arrival coverage, not the complete current nine-item bank. The two added items have196/209 correct responses; dividing by310 reproduces report63.2%/67.4%. Report11-item baseline combines telephone facts/four placements with two arrival-only placements. Do not silently turn that mixed-time bank into a uniform baseline. |
+
+Tomorrow's Europe is not in this missing-arrival list: its arrival score is
+already exposed in `analysis_phase_scores`, although arrival item responses
+are not yet exposed in the common item table. New Haven's Mid and NIC's source
+T2 must not be added as arrival. NI's later telephone reinterview is follow-up,
+not a missing arrival wave.
+
+**Attendance corrections in the additional phase view.** The current repair
+separates event attendance from assigned discussion group and completed post
+questionnaire, while preserving historical selected-wave exports. For the
+seven reviewed CorSood projections, attendance/presence evidence is:
+
+| Source projection | Evidence and resulting classification |
+| --- | --- |
+| BTP 2007 |301 selected`group==1` respondents. Codebookp.4 defines this group as post-completers attending all four sessions.300 have substantive`POST_Q31a_groups:POST_Q31f_groups` event evaluations. CaseID 2392 instead has`discuss3==1` and`dtime3==45.80426`, positive actual discussion activity. Scheduled`S1:S4` times alone are not attendance evidence. |
+| Online Primaries 2004 |328 experimental-arm respondents include250 actual meeting attendees and 78 nonattendees. Source`mtg1:mtg5` and`mtgatt` establish attendance independently of`groupnumc`;46 nonattendees still have a filled post questionnaire. Post answers therefore cannot serve as an attendance flag. |
+| California 2011 |396 current selected respondents are known attendees and have observed departure questionnaires.386 have an observed telephone baseline; ten have a wholly absent telephone baseline. Keep their missing baseline presence distinct from the separate arrival questionnaire and from attendance. |
+| Denmark 2000 |359 current selected departure respondents; DK-02 supplies unique identity linkage and questionnaire evidence. ID 321 has all nine facts blank but41 other departure answers, so its observed-wave knowledge score remains zero. |
+| Northern Ireland 2007 |124 currently selected participants. Retain event-exitT2 separately from laterT3 participant/control interviewing. The source/report roster counts are not silently substituted for the selected extract. |
+| Vermont 2007 |146 selected participants with source attendance flag; their arrival/departure observations remain separate from telephone baseline presence. |
+| Michigan 2009 |310 selected respondents identified by observed`postit`, not the first310 source rows; preserve independent questionnaire presence and 16 discussion-group identities. |
+
+This changes the phase-view description of attendance and wave availability;
+it does not make an experimental-arm nonattendee into an attendee because a
+post form or assigned group exists. Whole absent questionnaires are missing,
+while wrong, don't-know and unanswered items inside an observed questionnaire
+retain the bank's documented fixed-denominator scoring. Keep positive evidence
+and unknown presence separate; missing source answers alone do not establish
+nonattendance.
+
+**Main Primaries cohort and duplicate correction approved; implementation in progress.**
+The previous main known-group online projection has 315 people: 249 meeting
+attendees and 66 nonattendees. Its historical Primaries 217-person projection
+is a subset of those same 315 people, not a second study, and aligned item
+scores are identical.
+Both project from the same original survey, SHA-256
+`c51aa34b351e1e1726658f6adb415a3743bd2b4cd53e1d71222a857de98b9ebe`.
+The upstream phase catalog records their shared study identity and explicit
+attendance evidence. The historical main aggregate remains a preserved source
+projection; changing the downstream main reader is a separately authorized
+analysis correction, not a rewrite of those historical source answers.
+
+The measured online mean knowledge gain, in percentage points, is
+`4.62585034` for all 315 known-group experimental-arm respondents,
+`9.35169248` for 249 attendees, and `11.16446579` for 238 attendees with an
+observed post questionnaire and known group. These are different samples,
+not alternative answer keys. The full experimental arm has 250 attendees;
+the main known-group projection contains 249. Neither a positive post score
+nor a filled post form substitutes for meeting attendance.
+
+The user approved replacing the main reader's two Primaries projections with
+one study and selecting actual attendees with observed baseline and departure
+questionnaires: **239 paired attendees**, of whom **238 have known discussion
+groups**. The one paired attendee without a group remains eligible for paired
+person-level analysis and is excluded only from an analysis requiring a group.
+The 217-person historical subset does not contribute a second copy of its
+people or an additional study. The downstream reader consumes upstream typed
+study identities, attendance and questionnaire-presence fields; it must not
+recreate these facts from group assignment or a positive quiz score. The
+percentage-point comparisons above document the previous known-group sample
+choices; they are not an unmeasured gain estimate for all 239 pairs. Final
+implementation and resulting main-analysis comparisons must separately report
+the effect of removing nonattendees, requiring observed questionnaires and
+removing duplicate study/person representations. Answer keys remain unchanged.
+
+The Denmark arrival file was verified in the retained local source checkout
+at `/Users/soodoku/Documents/GitHub/dp-data/vault/cdd/data/Denmark/data/t1.sav`.
+It is absent from the isolated public-file checkout used for this audit.
+`source_exists_but_not_exported` therefore records recovered source evidence, not
+a claim that an arrival answer table is already delivered by the public
+release. Publishing those poll-folder answers requires its own registered
+source extraction and identity checks.
 
 ### X-03: Typed missingness and explicit denominators
 

@@ -268,7 +268,8 @@ analysis_phase_scores <- function(scores, items, participants, sources,
     )
   stopifnot(
     !anyDuplicated(out[c(
-      "poll_id", "source_dataset", "respondent_id", "battery_id", "wave"
+      "poll_id", "source_dataset", "respondent_id", "battery_id",
+      "original_score_wave"
     )]),
     nrow(dplyr::anti_join(
       out, participants,

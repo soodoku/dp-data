@@ -245,7 +245,7 @@ analysis_attitude_responses,value,float64,TRUE,FALSE,Baseline policy attitude; s
 analysis_phase_scores,poll_id,string,FALSE,TRUE,Stable poll identifier
 analysis_phase_scores,source_dataset,string,FALSE,TRUE,Source battery
 analysis_phase_scores,respondent_id,string,FALSE,TRUE,ID within poll and source battery
-analysis_phase_scores,wave,string,FALSE,TRUE,Uniform event phase: t0 pre-arrival; t1 arrival/start; t2 immediate post; t3 onward followups; interim_1 within-event measurement
+analysis_phase_scores,wave,string,FALSE,FALSE,Uniform event phase: t0 pre-arrival; t1 arrival/start; t2 immediate post; t3 onward followups; interim_1 within-event measurement
 analysis_phase_scores,n_items,int32,TRUE,FALSE,Number of fielded knowledge items; null for score-only records
 analysis_phase_scores,n_observed,int32,TRUE,FALSE,Number of observed source answers; zero for confirmed absent questionnaire; otherwise null for historical scored exports and score-only records
 analysis_phase_scores,n_correct,int32,TRUE,FALSE,Number scored correct; null for confirmed absent questionnaires and score-only records
@@ -277,3 +277,29 @@ analysis_phase_participants,education,float64,TRUE,FALSE,Harmonized schooling: 0
 analysis_phase_participants,minority,float64,TRUE,FALSE,Source-derived historical minority indicator; missing where no reviewed harmonization exists
 analysis_phase_participants,extremity,float64,TRUE,FALSE,Historical baseline attitude-extremity index; missing where no reviewed harmonization exists
 analysis_phase_participants,read_briefing,float64,TRUE,FALSE,Reported briefing reading before discussions on a zero-to-one ordinal scale; elicited after deliberation
+analysis_phase_participants,study_id,string,FALSE,FALSE,Underlying study identity; source-specific cohort aliases share this identifier and must not be pooled as independent studies
+analysis_phase_scores,study_id,string,FALSE,FALSE,Underlying study identity; source-specific cohort aliases share this identifier and must not be pooled as independent studies
+analysis_phase_participants,attendance_status,string,FALSE,FALSE,attended; did_not_attend; or unknown based on source participation evidence
+analysis_phase_participants,attendance_evidence,string,FALSE,FALSE,Specific source fields or retained cohort evidence supporting attendance; unknown is explicit
+analysis_phase_participants,sessions_attended,int32,TRUE,FALSE,Number of attended discussion sessions explicitly recorded in source; scheduled sessions are not attendance
+analysis_phase_scores,wave_instance_id,string,FALSE,TRUE,Specific survey occasion within a study; multiple occasions may share the same event phase
+analysis_phase_scores,original_survey_wave,string,FALSE,FALSE,"Literal survey wave designation, distinct from legacy analytical score labels"
+analysis_phase_scores,questionnaire_presence_status,string,FALSE,FALSE,observed; absent; or unknown; an observed questionnaire with blank quiz items remains observed
+analysis_studies,poll_id,string,FALSE,TRUE,Source-specific catalog or cohort identifier
+analysis_studies,study_id,string,FALSE,FALSE,Underlying study identifier shared by overlapping extracts of the same experiment
+analysis_survey_waves,poll_id,string,FALSE,TRUE,Source-specific catalog or cohort identifier
+analysis_survey_waves,study_id,string,FALSE,FALSE,Underlying study identifier shared across cohort aliases
+analysis_survey_waves,wave_instance_id,string,FALSE,TRUE,Survey occasion identifier within underlying study; shared by source aliases for the same occasion
+analysis_survey_waves,original_survey_wave,string,FALSE,FALSE,Original instrument wave label; never inferred solely from the selected-score alias
+analysis_survey_waves,wave,string,FALSE,FALSE,Canonical phase label: t0; t1; t2; t3 or later; interim_1 or later
+analysis_survey_waves,wave_role,string,FALSE,FALSE,pre_arrival; arrival; post_deliberation; follow_up; or interim_deliberation
+analysis_survey_waves,mode,string,FALSE,FALSE,Interview mode where documented; unknown stays explicit
+analysis_survey_waves,timing_status,string,FALSE,FALSE,Strength and scope of timing verification from instruments or fieldwork reports
+analysis_survey_waves,availability,string,FALSE,FALSE,Distinguishes exported scores from retained but unscored source waves
+analysis_survey_waves,battery_scope,string,FALSE,FALSE,Coverage and comparability of knowledge items at this wave; partial batteries remain explicit
+analysis_survey_waves,source_path,string,FALSE,FALSE,Retained source location; archival-only sources are not dependencies of this catalog build
+analysis_survey_waves,source_fields,string,FALSE,FALSE,Raw field names or documented field families for this survey occasion
+analysis_survey_waves,timing_evidence,string,FALSE,FALSE,Primary questionnaire or report and page supporting timing assignment
+analysis_survey_waves,temporal_order,int32,FALSE,FALSE,Chronological order of survey occasions within study; does not imply equal spacing
+analysis_survey_waves,date_start,date32,TRUE,FALSE,Documented first fieldwork date; null where unknown
+analysis_survey_waves,date_end,date32,TRUE,FALSE,Documented last fieldwork date; null where unknown

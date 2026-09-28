@@ -81,7 +81,7 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   manifest <- readr::read_csv(
     file.path(directory, "manifest.csv"), show_col_types = FALSE
   )
-  expect_equal(nrow(manifest), 10L)
+  expect_equal(nrow(manifest), 12L)
   expect_true(all(file.exists(project_path(manifest$path))))
   expect_equal(
     vapply(project_path(manifest$path), digest::digest,

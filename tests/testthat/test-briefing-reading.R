@@ -35,7 +35,7 @@ test_that("four previously scored briefing reports retain their values", {
     dplyr::select("poll_id", "dpnum")
   historical <- readr::read_tsv(project_path(
     "output", "polardata", "polardata.tab"
-  ), show_col_types = FALSE) |>
+  ), show_col_types = FALSE, guess_max = Inf) |>
     dplyr::distinct(.data$dpnum, .data$caseid, .keep_all = TRUE)
   comparison <- reading |>
     dplyr::filter(.data$poll_id %in% original) |>

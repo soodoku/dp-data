@@ -1,6 +1,6 @@
 # Canonical analysis tables
 
-`make analysis` writes six typed Parquet tables and a checksum manifest to
+`make analysis` writes twelve typed Parquet tables and a checksum manifest to
 `output/analysis/`. `make check` rebuilds them after the knowledge, respondent,
 and historical aggregate exports. Source files and reviewed metadata stay in
 `data/` and `metadata/`; downstream projects use the Parquet tables.
@@ -13,6 +13,12 @@ and historical aggregate exports. Source files and reviewed metadata stay in
 | `analysis_participants` | One source respondent; `poll_id`, `source_dataset`, `respondent_id` |
 | `analysis_item_responses` | One answer; participant key, `wave`, `item_id` |
 | `analysis_scores` | One respondent-wave score; participant key, `wave` |
+| `analysis_attitudes` | One policy measure; `poll_id`, `attitude_id` |
+| `analysis_attitude_responses` | One policy response; participant key, `attitude_id`, `wave` |
+| `analysis_studies` | One catalog cohort mapped to its underlying study; `poll_id` |
+| `analysis_survey_waves` | One survey occasion per catalog cohort; `poll_id`, `wave_instance_id` |
+| `analysis_phase_participants` | One source respondent with attendance evidence; participant key |
+| `analysis_phase_scores` | One knowledge measurement; participant key, `battery_id`, `wave_instance_id` |
 
 There are respondent records for 33 polls and item responses for 31. The
 participant table covers the 21 reviewed historical surveys, 23 Cor–Sood
@@ -39,17 +45,14 @@ text. The retained climate and antimicrobial-resistance reports do not supply
 choice labels or readable keyed answers; these are marked missing in the item
 catalog, while their scoring codes are preserved.
 
-`wave` is `t1` for baseline, `t2` for immediate follow-up, and `t3` for a later
-follow-up in the existing export. This selected-pre/post convention is not
-yet a uniform event-phase contract: Marousi's previous `t1` was a telephone
-pre-arrival score. Marousi has now been explicitly migrated; other polls
-still require reviewed phase mappings. The agreed replacement uses `t0` for pre-arrival, `t1`
-for arrival/start, `t2` for immediate post-deliberation, and `t3`/`t4` for
-successive later follow-ups. Original source labels, interview mode,
-questionnaire instance and dates/elapsed times remain separate metadata.
-See [X-02 and the Marousi bridge](poll-issues.md) for the mapping and migration
-requirements. Marousi now exposes telephone `t0`, arrival `t1` and exit `t2`;
-its telephone values are unchanged.
+The selected-wave tables retain the historical analysis labels: `t1` and
+`t2` mean the selected initial and later scores. These do not consistently mean
+arrival and exit. Use `analysis_phase_scores` for event timing: `t0` means
+pre-arrival or pre-start, `t1` arrival/start, `t2` immediate post-deliberation,
+and `t3` onward later follow-ups. New Haven's measurement after its first session
+is `interim_1`. NIC's original T2 is exit and T3 is a ten-month follow-up.
+Tanzania's telephone reinterview is weeks later and is classified as follow-up.
+Original survey labels and legacy score labels remain separate columns.
 
 Readers must select a baseline/outcome pair explicitly. The current desired
 dp-learning comparison is arrival-to-exit (`t1` to `t2`); pre-arrival-to-exit
@@ -181,3 +184,52 @@ effects. In Marousi, sixteen exit codes disagree with telephone IDs in the origi
 merge; the authored row associations are preserved, and paired comparisons remain
 conditional on that unresolved linkage. Unknown attendance and unknown discussion
 groups must remain visible in downstream coverage and uncertainty reports.
+
+
+## Study identity, survey occasions, and evidence
+
+The phase tables use schema version 2. `metadata/canonical_columns.csv` specifies
+each Arrow type, nullability, and key; the writer rejects missing required fields,
+duplicate keys, and a failed Parquet round trip. Dates use `date32`, counts use
+`int32`, scores use `float64`, and attendance/questionnaire presence use nullable
+booleans alongside explicit status strings. Unknown is never an implicit false.
+
+`analysis_studies` maps catalog/cohort `poll_id` to underlying `study_id`.
+Both 2004 Primaries IDs refer to `btp-primaries-2004`; their overlapping respondents
+must not be treated as independent studies. The original IDs and projections
+remain available for reproducing historical sample choices. The reviewed learning
+sample uses confirmed attendees with observed pre/post questionnaires: 239 pairs,
+of whom 238 have known discussion groups. Its 217-person historical counterpart
+is an overlapping subset, not a control arm.
+
+`analysis_survey_waves` separates `original_survey_wave`, canonical `wave` and
+`wave_role`, and `wave_instance_id`. Multiple survey occasions can share a phase;
+readers must choose an occasion explicitly rather than average or overwrite them.
+`temporal_order` records order, not elapsed time. Interview `mode`, nullable
+`date_start`/`date_end`, `timing_status`, source fields, and the report or instrument
+citation are carried in the typed table. A documented pre-start design does not
+assert that individual first-meeting timestamps were recovered.
+
+`availability = source_exists_but_not_exported` identifies retained survey data
+that have not entered these score tables. California, Europolis, Denmark and
+Vermont have additional arrival batteries. Michigan has arrival placement items,
+but not all five factual questions from its telephone battery. `battery_scope`
+records these distinctions. A count of exported three-wave comparisons is thus
+not a count of studies that collected three waves.
+
+`analysis_phase_participants` adds `attendance_status`, `attendance_evidence`,
+and nullable `sessions_attended`. Seven Cor–Sood cohorts now use source attendance
+flags, session records, logged participation, or observed onsite exit answers.
+An online follow-up questionnaire alone does not establish attendance: 78 online
+Primaries respondents attended no meetings, and 46 of those filled a post survey.
+Scheduled sessions do not count as attended sessions. Other unannotated source
+flags and unresolved attendance are explicitly described in the evidence field.
+
+`analysis_phase_scores.questionnaire_presence_status` distinguishes `observed`,
+`absent`, and `unknown`. Presence uses raw questionnaire answers, excluding IDs
+and generated correctness flags. California has 386 observed telephone interviews
+in its 396-person source cohort; the remaining ten pre-arrival questionnaires
+are absent. All 396 exit questionnaires are observed, including four with blank
+knowledge batteries. Blanks in an observed quiz score zero; absent questionnaires
+remain missing. All eight existing selected-wave tables remain byte-identical;
+these changes affect the phase schema and documented analysis views.

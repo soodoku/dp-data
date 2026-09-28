@@ -422,6 +422,51 @@
       "publication_status": "published",
       "notes": "Public source downloaded 2026-09-24; SHA-256 63b8bfe9d098fd38f3fe9695b9ea4eea0d7b188c28e6cf73db8866a08f14f2a1",
       "relative_path": "papers/deliberative-democracy-euro.pdf"
+    },
+    {
+      "artifact_id": "cdd-denmark-euro-2000-arrival",
+      "poll_id": "denmark-euro-2000",
+      "artifact_type": "data",
+      "title": "Original arrival questionnaire responses",
+      "location": "data/denmark-euro-2000/arrival.sav",
+      "source_id": "cdd-denmark-euro-2000-arrival",
+      "original_archive_path": "data/Denmark/data/t1.sav",
+      "sha256": "0bf7c28c4bc93c80e62244ec02b3764ba15e735684d4cebefc7eace2b67deeb9",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Exact original SAV bytes; 363 arrival respondents and 93 fields; numeric DELNR joins recruitment/departure. Three questionnaire verbatim fields retained with user approval. No score or membership changes; arrival score remains unexported.",
+      "relative_path": "arrival.sav"
+    },
+    {
+      "artifact_id": "cdd-denmark-euro-2000-arrival-variables",
+      "poll_id": "denmark-euro-2000",
+      "artifact_type": "codebook",
+      "title": "Arrival source variables",
+      "location": "data/denmark-euro-2000/arrival-variables.csv",
+      "source_id": "cdd-denmark-euro-2000-arrival",
+      "original_archive_path": "data/Denmark/data/t1.sav",
+      "sha256": "a39c7b54e639ca6fe1fcc9d3645bd0b899c6a54c1b6f94dfe9d0a8c7c40e9b2c",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Generated from exact original arrival SAV; all 93 fields retained, including three approved questionnaire verbatim fields; no scoring change.",
+      "relative_path": "arrival-variables.csv"
+    },
+    {
+      "artifact_id": "cdd-denmark-euro-2000-arrival-value-labels",
+      "poll_id": "denmark-euro-2000",
+      "artifact_type": "codebook",
+      "title": "Arrival source value labels",
+      "location": "data/denmark-euro-2000/arrival-value-labels.csv",
+      "source_id": "cdd-denmark-euro-2000-arrival",
+      "original_archive_path": "data/Denmark/data/t1.sav",
+      "sha256": "270470e091701245b9c0117660b7fc9fa0a0a37d34e19652760b218bdc75df3b",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Generated from exact original arrival SAV; all 93 fields retained, including three approved questionnaire verbatim fields; no scoring change.",
+      "relative_path": "arrival-value-labels.csv"
     }
   ],
   "document_previews": []

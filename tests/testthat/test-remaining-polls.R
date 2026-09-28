@@ -117,7 +117,9 @@ test_that("Vermont follows the approved final-report renewables key", {
 
 test_that("Denmark joins independent wave files without expanding records", {
   source <- read_poll_survey("denmark-euro-2000")
-  departure <- read_public_survey(read_metadata("survey_components"))
+  component <- read_metadata("survey_components") |>
+    dplyr::filter(source_id == "cdd-denmark-euro-2000-departure")
+  departure <- read_public_survey(component)
   built <- build_poll_knowledge("denmark-euro-2000")
   expect_equal(nrow(source), 1702L)
   expect_equal(nrow(departure), 359L)
@@ -133,6 +135,33 @@ test_that("Denmark joins independent wave files without expanding records", {
     as.numeric(departure$S4_2[source_rows])
   )
   expect_equal(nrow(built$memberships), 0L)
+})
+
+test_that("Denmark arrival preserves raw answers and linking IDs", {
+  component <- read_metadata("survey_components") |>
+    dplyr::filter(.data$source_id == "cdd-denmark-euro-2000-arrival")
+  expect_equal(nrow(component), 1L)
+  expected_hash <- paste0(
+    "0bf7c28c4bc93c80e62244ec02b3764ba15e",
+    "735684d4cebefc7eace2b67deeb9"
+  )
+  expect_identical(
+    digest::digest(file = project_path(component$public_path), algo = "sha256"),
+    expected_hash
+  )
+  arrival <- read_public_survey(component)
+  expect_equal(nrow(arrival), 363L)
+  expect_equal(ncol(arrival), 94L)
+  expect_false(anyNA(arrival$DELNR))
+  expect_equal(anyDuplicated(arrival$DELNR), 0L)
+  fields <- c(
+    paste0("S", 4:9, "_1"),
+    "S11_7_1", "S11_9_1", "S11_11_1"
+  )
+  expect_true(all(fields %in% names(arrival)))
+  expect_identical(dictionary_prefix(component), "arrival-")
+  original <- read_archive_survey(component)
+  expect_identical(arrival[names(original)], original)
 })
 
 test_that("sample differences and unordered comparisons do not invent links", {

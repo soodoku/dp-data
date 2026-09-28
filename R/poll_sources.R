@@ -159,8 +159,10 @@ import_reviewed_surveys <- function() {
       return(invisible(NULL))
     }
     poll_exclusions <- if (
-      record$source_id == "cdd-denmark-euro-2000-departure"
+      record$source_id == "cdd-denmark-euro-2000-arrival"
     ) {
+      exclusions[0L, ]
+    } else if (record$source_id == "cdd-denmark-euro-2000-departure") {
       read_metadata("component_field_exclusions")
     } else {
       exclusions
@@ -255,7 +257,9 @@ read_poll_survey <- function(poll_id) {
 }
 
 dictionary_prefix <- function(record) {
-  if (basename(record$public_path) == "departure.parquet") "departure-" else ""
+  switch(basename(record$public_path),
+    "departure.parquet" = "departure-", "arrival.sav" = "arrival-", ""
+  )
 }
 
 read_public_survey <- function(record) {
