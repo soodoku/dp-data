@@ -40,7 +40,24 @@ choice labels or readable keyed answers; these are marked missing in the item
 catalog, while their scoring codes are preserved.
 
 `wave` is `t1` for baseline, `t2` for immediate follow-up, and `t3` for a later
-follow-up. The participant table separates `assignment` from observed `arm`
+follow-up in the existing export. This selected-pre/post convention is not
+yet a uniform event-phase contract: Marousi's current `t1` is a telephone
+pre-arrival score. The agreed replacement uses `t0` for pre-arrival, `t1`
+for arrival/start, `t2` for immediate post-deliberation, and `t3`/`t4` for
+successive later follow-ups. Original source labels, interview mode,
+questionnaire instance and dates/elapsed times remain separate metadata.
+See [X-02 and the Marousi bridge](poll-issues.md) for the mapping and migration
+requirements. No existing score is renumbered by that investigation.
+
+Readers must select a baseline/outcome pair explicitly. The current desired
+dp-learning comparison is arrival-to-exit (`t1` to `t2`); pre-arrival-to-exit
+(`t0` to `t2`) is a separate comparison, never an implicit fallback. The source
+universe must retain available pre-arrival responses from nonattendees and
+people without a group; analysis views select attendees, observed wave pairs
+or known memberships as needed. This preserves evidence for selection and
+attrition comparisons.
+
+The participant table separates `assignment` from observed `arm`
 and `attended`. Invitations were randomized in some studies, but analysis of
 attendees is not an intention-to-treat estimate. `small_group_id` identifies a
 discussion group when observed; `cluster_id` is the inference cluster and is a

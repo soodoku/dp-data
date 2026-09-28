@@ -1,0 +1,90 @@
+battery_number,battery,source_wave,pdf_pages,score_printed,frequency,battery_n,mean_from_printed_scores,denominator_evidence,canonical_wave_id,wave_role
+1,Factual Knowledge,T3,1,0,1,138,0.4275362268115942,7 factual items,t2,post_deliberation
+1,Factual Knowledge,T3,1,.1428571,21,138,0.4275362268115942,7 factual items,t2,post_deliberation
+1,Factual Knowledge,T3,1,.2857143,29,138,0.4275362268115942,7 factual items,t2,post_deliberation
+1,Factual Knowledge,T3,1,.4285714,35,138,0.4275362268115942,7 factual items,t2,post_deliberation
+1,Factual Knowledge,T3,1,.5714286,33,138,0.4275362268115942,7 factual items,t2,post_deliberation
+1,Factual Knowledge,T3,1,.7142857,17,138,0.4275362268115942,7 factual items,t2,post_deliberation
+1,Factual Knowledge,T3,1,.8571429,2,138,0.4275362268115942,7 factual items,t2,post_deliberation
+2,Absolute L/R Party Placements,T3,1,0,25,138,0.5543478260869565,2 party placements (inferred from score increments),t2,post_deliberation
+2,Absolute L/R Party Placements,T3,1,.5,73,138,0.5543478260869565,2 party placements (inferred from score increments),t2,post_deliberation
+2,Absolute L/R Party Placements,T3,1,1,40,138,0.5543478260869565,2 party placements (inferred from score increments),t2,post_deliberation
+3,Relative L/R Party Placements,T3,1,0,37,138,0.7318840579710145,1 relative-party indicator,t2,post_deliberation
+3,Relative L/R Party Placements,T3,1,1,101,138,0.7318840579710145,1 relative-party indicator,t2,post_deliberation
+4,Absolute L/R Candidate Placements,T3,1,0,59,138,0.28695652173913044,5 candidate placements (inferred from score increments),t2,post_deliberation
+4,Absolute L/R Candidate Placements,T3,1,.2,20,138,0.28695652173913044,5 candidate placements (inferred from score increments),t2,post_deliberation
+4,Absolute L/R Candidate Placements,T3,1,.4,17,138,0.28695652173913044,5 candidate placements (inferred from score increments),t2,post_deliberation
+4,Absolute L/R Candidate Placements,T3,1,.6,25,138,0.28695652173913044,5 candidate placements (inferred from score increments),t2,post_deliberation
+4,Absolute L/R Candidate Placements,T3,1,.8,16,138,0.28695652173913044,5 candidate placements (inferred from score increments),t2,post_deliberation
+4,Absolute L/R Candidate Placements,T3,1,1,1,138,0.28695652173913044,5 candidate placements (inferred from score increments),t2,post_deliberation
+5,Relative L/R Candidate Placements,T3,1-2,0,30,138,0.2603519724637681,14 comparison units (inferred from score increments),t2,post_deliberation
+5,Relative L/R Candidate Placements,T3,1-2,.0714286,30,138,0.2603519724637681,14 comparison units (inferred from score increments),t2,post_deliberation
+5,Relative L/R Candidate Placements,T3,1-2,.1428571,7,138,0.2603519724637681,14 comparison units (inferred from score increments),t2,post_deliberation
+5,Relative L/R Candidate Placements,T3,1-2,.2142857,13,138,0.2603519724637681,14 comparison units (inferred from score increments),t2,post_deliberation
+5,Relative L/R Candidate Placements,T3,1-2,.2857143,6,138,0.2603519724637681,14 comparison units (inferred from score increments),t2,post_deliberation
+5,Relative L/R Candidate Placements,T3,1-2,.3571429,11,138,0.2603519724637681,14 comparison units (inferred from score increments),t2,post_deliberation
+5,Relative L/R Candidate Placements,T3,1-2,.4285714,7,138,0.2603519724637681,14 comparison units (inferred from score increments),t2,post_deliberation
+5,Relative L/R Candidate Placements,T3,1-2,.5,6,138,0.2603519724637681,14 comparison units (inferred from score increments),t2,post_deliberation
+5,Relative L/R Candidate Placements,T3,1-2,.5714286,11,138,0.2603519724637681,14 comparison units (inferred from score increments),t2,post_deliberation
+5,Relative L/R Candidate Placements,T3,1-2,.6428571,6,138,0.2603519724637681,14 comparison units (inferred from score increments),t2,post_deliberation
+5,Relative L/R Candidate Placements,T3,1-2,.7142857,8,138,0.2603519724637681,14 comparison units (inferred from score increments),t2,post_deliberation
+5,Relative L/R Candidate Placements,T3,1-2,.7857143,1,138,0.2603519724637681,14 comparison units (inferred from score increments),t2,post_deliberation
+5,Relative L/R Candidate Placements,T3,1-2,.8571429,2,138,0.2603519724637681,14 comparison units (inferred from score increments),t2,post_deliberation
+6,Absolute Candidate Issue Placements,T3,2,0,21,138,0.3324808260869565,17 issue-placement units; label excludes candidate placement at midpoint,t2,post_deliberation
+6,Absolute Candidate Issue Placements,T3,2,.0588235,14,138,0.3324808260869565,17 issue-placement units; label excludes candidate placement at midpoint,t2,post_deliberation
+6,Absolute Candidate Issue Placements,T3,2,.1176471,9,138,0.3324808260869565,17 issue-placement units; label excludes candidate placement at midpoint,t2,post_deliberation
+6,Absolute Candidate Issue Placements,T3,2,.1764706,7,138,0.3324808260869565,17 issue-placement units; label excludes candidate placement at midpoint,t2,post_deliberation
+6,Absolute Candidate Issue Placements,T3,2,.2352941,9,138,0.3324808260869565,17 issue-placement units; label excludes candidate placement at midpoint,t2,post_deliberation
+6,Absolute Candidate Issue Placements,T3,2,.2941177,15,138,0.3324808260869565,17 issue-placement units; label excludes candidate placement at midpoint,t2,post_deliberation
+6,Absolute Candidate Issue Placements,T3,2,.3529412,7,138,0.3324808260869565,17 issue-placement units; label excludes candidate placement at midpoint,t2,post_deliberation
+6,Absolute Candidate Issue Placements,T3,2,.4117647,10,138,0.3324808260869565,17 issue-placement units; label excludes candidate placement at midpoint,t2,post_deliberation
+6,Absolute Candidate Issue Placements,T3,2,.4705882,5,138,0.3324808260869565,17 issue-placement units; label excludes candidate placement at midpoint,t2,post_deliberation
+6,Absolute Candidate Issue Placements,T3,2,.5294118,11,138,0.3324808260869565,17 issue-placement units; label excludes candidate placement at midpoint,t2,post_deliberation
+6,Absolute Candidate Issue Placements,T3,2,.5882353,3,138,0.3324808260869565,17 issue-placement units; label excludes candidate placement at midpoint,t2,post_deliberation
+6,Absolute Candidate Issue Placements,T3,2,.6470588,9,138,0.3324808260869565,17 issue-placement units; label excludes candidate placement at midpoint,t2,post_deliberation
+6,Absolute Candidate Issue Placements,T3,2,.7058824,6,138,0.3324808260869565,17 issue-placement units; label excludes candidate placement at midpoint,t2,post_deliberation
+6,Absolute Candidate Issue Placements,T3,2,.7647059,7,138,0.3324808260869565,17 issue-placement units; label excludes candidate placement at midpoint,t2,post_deliberation
+6,Absolute Candidate Issue Placements,T3,2,.8235294,2,138,0.3324808260869565,17 issue-placement units; label excludes candidate placement at midpoint,t2,post_deliberation
+6,Absolute Candidate Issue Placements,T3,2,.8823529,3,138,0.3324808260869565,17 issue-placement units; label excludes candidate placement at midpoint,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,0,17,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.0238095,4,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.047619,7,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.0697674,1,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.0714286,2,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.0952381,6,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.1190476,3,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.1395349,3,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.1428571,4,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.1627907,2,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.1666667,5,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.1860465,1,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.1904762,5,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.2093023,3,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.2142857,8,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.2325581,1,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.2380952,1,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.255814,3,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.2619048,3,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.2790698,1,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.2857143,3,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.3023256,3,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.3095238,2,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.3255814,4,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.3333333,3,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.3488372,4,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.3571429,2,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.372093,6,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.3809524,3,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.3953488,1,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.4047619,1,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.4186046,4,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.4418605,3,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.4651163,2,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.4761905,2,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.4883721,6,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.5116279,2,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.5348837,2,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.5581396,1,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.5813953,1,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.627907,2,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
+7,Relative Candidate Issue Placements,T3,2-3,.6666667,1,138,0.2423242949275362,Mixture of fractions with denominators42 and43; algorithm not specified,t2,post_deliberation
