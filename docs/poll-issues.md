@@ -632,6 +632,34 @@ Neither the historical stored key nor the printed key should prevail solely
 because it reproduces a convenient benchmark. Preserve false for reproduction
 until independent source evidence and numerical consequences are assessed.
 
+**Recovered primary materials (2026-09-27).** The original
+[authored codebook](../data/uk-health-1998/codebooks/uk-health-codebook.txt)
+is now retained in the poll folder. Its opening caveat, credited to Dennis L.
+Plane, explicitly discusses this ambiguity: age-limited eligibility makes the
+universal wording technically false, while true may have been anticipated by
+the question writers. This is contemporaneous evidence that the discrepancy
+was recognized, not grounds to characterize it as a newly discovered typo.
+The modification date printed in the header is incomplete and is not repaired
+by guessing. The catalog now uses the exact Q9E wording, “can get,” rather than
+its earlier “receive” paraphrase; the maintained numeric false key is unchanged.
+
+A [28 July 1997 parliamentary answer](https://hansard.parliament.uk/commons/1997-07-28/debates/a6279af3-c4f9-4f6a-88c7-99d8153691da/BreastCancer%28Screening%29)
+identifies routine NHS breast screening's target group as women aged 50–64.
+This supports reading the universal statement literally as false. It does not
+establish the poll's administered instructions or intended distinction between
+screening and diagnostic care. The author’s caveat and the printed versus SAV
+key conflict remain explicit; no raw answers, scores or aggregate values change.
+
+The [final project report](../data/uk-health-1998/reports/uk-health-final-report.pdf)
+by Alison Park, Roger Jowell and Suzi McPherson has also been recovered locally,
+replacing external-only report availability. The archive file had a 128-byte
+MacBinary header and five padding bytes; the readable PDF preserves its
+52,603-byte data fork exactly, and extracted text matches the wrapped source.
+Both hashes and the extraction details are registered in the material catalog.
+The 17-page retained PDF ends at the bibliography even though its contents list
+an appendix; do not claim that the missing questionnaire appendix is recovered.
+The original archive bytes remain untouched.
+
 ## UK Crime 1994 — uk-crime-1994
 
 ### UKC-01: Post-wave root-causes index substitutes baseline policing
@@ -982,6 +1010,24 @@ preferred title. The two archived cross-poll files also disagree on the
 now. The generated catalog calls `t1mpop` “Royal Family and the Public,” a
 description of its items, not a claim to recover the original index title.
 No field link, response, index value, sample or aggregate number changes.
+
+**UKM-06 — nonresponse codes pass into expanded demographic measures (proposed).**
+The retained `value-labels.csv` establishes `AGEB=11` as refused, `AGEB=10`
+as 90+, `A6=6` as not answered, `B12A=6` as not answered and `B16=8` as
+refused. The current recode retains age 11 for five source records and age 10
+for three 90+ records, political interest 6 for one record, education 6 for one
+record (with both collapsed education and higher-education flags consequently
+misleading), and minority=1 for one ethnicity refusal. The affected source rows
+are age: 97/141/225/322/481 (refused), 320/325/509 (90+); interest: 447;
+education: 509, whose `B12B=14` is also not answered; ethnicity: 59.
+
+All are nonattendees (`GROUP=-1`), so the 258-person historical aggregate is
+unchanged. They are nevertheless present in the expanded respondent exports.
+Proposed correction: map explicit nonresponse to missing, and retain the 90+
+raw band without pretending it establishes a point age. Do not substitute an
+invented midpoint into group means. Preserve current midpoints for observed
+AGEB 2–9, questionnaire answers, source identities and sample contracts.
+The per-poll decision was presented to the user; no recode is applied here.
 
 ## UK General Election 1997 — uk-general-election-1997
 
@@ -1620,6 +1666,23 @@ establish effects in downstream analyses that consume `grpgain` directly.
 Reproduce the respondent comparison with
 `Rscript scripts/review_australia_gain.R`.
 
+### AUS-05: Age refusal is currently treated as age 98 (proposed)
+
+`data/australia-republic-1999/value-labels.csv` explicitly labels `age=98`
+“REFUSED.” `build_australia_individual()` retains that value as a year age.
+Fourteen source records are affected; three are among the 347 attendees:
+CASEID 199 (source row 3638, group 2), 648 (row 4020, group 18), and 1226
+(row 4419, group 10). The other eleven belong to inapplicable group 100.
+This is an explicit refusal code, not evidence of unusually old respondents.
+
+Proposed correction: make these ages missing while retaining raw code 98.
+The central group-summary stage will recompute mean age using observed ages;
+no group formula belongs in this poll's respondent recoder. Preserve the
+347-person sample, knowledge, attitudes, education and other demographic
+values. The separate constitutional-referendum `codebook.pdf` cannot establish
+this deliberative poll's field meanings; the actual poll-source value labels
+provide the refusal evidence. User decision requested; no recode applied here.
+
 ## BTP 2007 — btp-2007
 
 **BTP07-01 — selection variables with similar names have different roles.**
@@ -1673,7 +1736,9 @@ batteries from all 2,826 raw records. System missingness removes incomplete
 batteries; `w4b62 == -1` also remains missing, whereas refusals in the other eight
 items score zero. That distinction excludes two otherwise available batteries.
 The descriptor averages float32 nine-item scores, rounds to seven decimals,
-and stores float32. Final respondent scoring zero-fills all noncorrect answers.
+and stores float32. Final respondent scoring zero-fills noncorrect answers
+within an observed questionnaire; approved BTPGE-07 leaves absent entire
+questionnaires missing.
 Keys are 60=1, 61=2, 62/63/64=2, 65=4, 66=2, 68=4, 69=3;
 `reagg.txt` explicitly repairs wave-F item 69. Consult the questionnaires,
 calibration-universe definition and repair history before changing the descriptor.
@@ -1683,7 +1748,8 @@ calibration-universe definition and repair history before changing the descripto
 The archived `merge_data_scripts/03_data.R` filters this poll on `t2know == 0`
 as well as missing baseline attitude extremity. The 299-row selected source has
 33 people with no answers to any of the nine post knowledge items. Their
-reconstructed fixed-denominator score is zero, so they remain outside this
+pre-BTPGE-07 reconstructed fixed-denominator score was zero. The approved
+absence correction now leaves that score missing; they remain outside this
 historical aggregate sample. Two other people, original case IDs 552 and 585,
 answered all nine post items, are marked as participants, and have observed
 attitude extremity. Both got zero answers correct. The
@@ -1717,6 +1783,75 @@ cannot by itself establish nonattendance. Keep the person in the aggregate
 while checking the original session roster, the provenance of these fields,
 and any correction history. BTPGE-05 did not change this inclusion, and no
 attendance flag or group descriptor is changed here.
+
+### BTPGE-07: Explicitly absent questionnaires remain missing (corrected)
+
+Both `survey.dta` and the ID-matched `raw-responses.dta` carry the completion
+status `w4comsta`: 3 means follow-up only; 2 means baseline only (retained
+`value-labels.csv`, lines 201–205). Thirteen of the 299 selected-source people
+are follow-up only and have all 137 baseline questionnaire fields missing,
+including their baseline interview dates. Thirty-three are baseline only and
+have all 137 follow-up fields missing. These administrative flags independently
+confirm absence of the questionnaire rather than merely absence of correct
+answers. All 46 have `dop4part=1`; missing interviews do not prove nonattendance.
+
+The former respondent scorer filled noncorrect items with zero without
+separating an absent entire wave. Historical analysis exports therefore
+contained 46 artificial zero wave scores, with response status `scored` and
+`n_observed` missing. The user approved BTPGE-07: leave absent-wave item
+correctness and whole-wave scores missing; require both waves for joint
+knowledge and gains. Keep incorrect, don't-know and unanswered items within
+an observed questionnaire on the existing fixed-denominator zero-scoring rule. The two
+observed post zeros restored by BTPGE-05 (original IDs 552/585) remain zero.
+
+The rebuilt respondent exports have these verified changes:
+
+| Respondent measure | Values becoming missing |
+|---|---:|
+| Baseline knowledge | 13 |
+| Post knowledge | 33 |
+| Joint knowledge | 46 |
+| Knowledge gain | 46 |
+| Gain over joint knowledge | 46 |
+| Log joint knowledge | 46 |
+| High joint-knowledge flag | 46 |
+
+This is 276 respondent-measure cells, 414 item cells (9 × 46), and 46 historical
+analysis wave scores. All 46 people are already outside the 248-person analysis
+panel; the separate 250-person CorSood battery has no absent questionnaires.
+Neither panel membership nor the independently calibrated `t1knowlevel`
+(645 complete batteries from 2,826 raw rows, value 0.662015497684479) changes.
+
+Group and post/joint poll summaries currently use all 299 source people before
+filtering. Removing artificial zeros changes baseline group means in 10 groups
+(153 selected rows), joint group means in 14 groups (222 rows), and post group
+means in 13 groups (206 rows). Joint and post poll means change for all 248
+exported rows: joint mean 0.5882572 → 0.695213 and post mean
+0.7186919 → 0.807853. Related issue-specific aliases carry the same definition
+and must agree. The before/after build confirms the existing peer-gain helper
+gives no selected-row changes; missing-aware leave-one-out denominators remain
+a separate central formula decision. The comparison verifies exactly these
+ten changed aggregate summary fields across the same 248 BTP records; every other aggregate field
+and every other poll is identical. The whole aggregate retains 5,869 rows and
+364 columns. Case-level summary changes are frozen in
+`audit/corrections/btp-general-election-2004/approved_values.csv`.
+
+Seven respondent definitions are versioned `@btpge-07-v2` and name
+`w4comsta` as an availability input, not an extra knowledge item. Historical
+analysis responses use `wave_absent` for the 414 absent item cells; the 46
+wave scores and correct counts remain missing, with `n_observed=0`. Other
+historical waves retain their existing unknown observed-answer count. The
+helper rejects unknown completion codes and contradictions with observed
+questionnaire fields; it ignores precomputed `_cor` columns, which themselves
+retain artificial zeros for absent waves. Original source bytes are unchanged.
+Group and poll formulas remain centralized and unchanged.
+
+The `dp-learning` attendee panel is identical before and after this correction
+(all 10,598 records). Its older `R/knowledge.R` reader takes `group_k1` from
+`meant1know_ind`, so 153 BTP group-covariate cells change in that input. The
+newer core reader recomputes group knowledge from the unchanged attendee panel.
+No downstream models or papers were re-estimated; unchanged attendee inputs
+do not establish unchanged estimates for readers of the corrected summaries.
 
 ## BTP Health and Education 2005 — btp-health-education-2005
 
@@ -3292,6 +3427,28 @@ grade. Historical group high-income share uses collapsed income `> 7`; final
 individual high income uses `> 6`, affecting 25 people. Preserve both stages
 until the intended income definition is established. Briefing exposure uses
 `EVAL5`, scaled `(x - 1) / 4`, not similarly named evaluation items.
+
+**Income follow-up (2026-09-27; proposed, not applied).** Source `ISUM` bands
+12–19 mean $60,000+; 14–19 mean $70,000+. In the 340 historical people, the
+current person flag selects 148 and the group definition selects 123, with 24
+missing. The 25 differing people are nine at exactly $60,000 and 16 in the
+$60,000–70,000 band. Across all 1,493 source records, the difference affects
+60 flags: current high/low/missing counts 333/463/697; $70,000+ yields
+273/523/697. The archived `nic_1/nic2_caseid.dta` directly verifies the earlier
+$70,000+ flag for all 340 people; `06_add_more_vars.R` explicitly replaces it
+with the later $60,000+ definition. This is a documented stage change, not
+assumed to be a typo. The available questionnaires do not establish which
+analyst threshold should be called high income.
+
+Proposed consistent definition: $70,000+ for the individual flag and group
+share, matching the original NIC2 analysis and preserving all 24 current group
+shares. Household-income bands, missingness, raw responses and samples stay
+fixed; cross-poll normalization remains separate. The user was asked to decide
+this poll's threshold. No change is applied before that decision. The deferred
+education-grade-18 issue remains untouched. Separately, race and Hispanic
+ethnicity are distinct source questions: ten white Hispanic historical people
+have `minority=0` under the current race-only construct. This is a definition
+choice, not a demonstrated missing-value or computational error.
 
 ### NIC2-05: Six cross-poll attitude names point to the wrong indices (catalog corrected)
 

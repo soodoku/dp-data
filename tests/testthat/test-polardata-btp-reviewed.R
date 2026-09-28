@@ -12,6 +12,7 @@ test_that("US poll calibration preserves earlier scoring and sample vintages", {
     rep(list(c(1, NA_real_)), 9),
     paste0("w4b", c(60, 61, 62, 63, 64, 65, 66, 68, 69))
   ))
+  election$w4comsta <- c(2, 2)
   election$w4b62[2] <- -1
   expect_equal(
     reviewed_us_baseline_level("btp-general-election-2004", election),
@@ -69,6 +70,17 @@ test_that("US aggregates match except diagnosed singular covariances", {
     if (poll == "btp-health-education-2005") {
       for (field in c("female", "pfemale", "varfemale", "sdfemale",
                       "pfemale_ind", "entropy", "t1knowlevel")) {
+        expected[[field]] <- approved_reference_values(
+          poll, field, expected$caseid, expected[[field]]
+        )
+      }
+    }
+    if (poll == "btp-general-election-2004") {
+      for (field in c(
+        "meant1know", "meant1knowr", "meant1know_ind",
+        "meant1knowcor", "meant1knowrcor", "meant1knowcor_ind",
+        "meant2know", "t1knowlevelcor", "t1knowlevelrcor", "t2knowlevel"
+      )) {
         expected[[field]] <- approved_reference_values(
           poll, field, expected$caseid, expected[[field]]
         )
