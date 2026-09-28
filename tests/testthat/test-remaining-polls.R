@@ -90,7 +90,7 @@ test_that("Michigan written answers preserve nonresponse and original text", {
   )
 })
 
-test_that("Vermont follows the key including its dual-answer ambiguity", {
+test_that("Vermont follows the approved final-report renewables key", {
   built <- build_poll_knowledge("vermont-energy-2007")
   r <- built$knowledge_responses
   efficiency <- r |> dplyr::filter(
@@ -103,8 +103,14 @@ test_that("Vermont follows the key including its dual-answer ambiguity", {
     .data$response_status == "answered"
   )
   expect_equal(
-    renewables$correct, as.integer(renewables$raw_value %in% c(2, 3))
+    renewables$correct, as.integer(renewables$raw_value == 3)
   )
+  for (wave in 1:2) {
+    answers <- renewables[renewables$wave == wave, ]
+    expected <- if (wave == 1L) 16L else 41L
+    expect_equal(sum(answers$correct), expected)
+    expect_true(all(answers$correct[answers$raw_value == 2] == 0L))
+  }
   expect_equal(nrow(built$groups), 0L)
   expect_equal(nrow(built$respondents), 146L)
 })
