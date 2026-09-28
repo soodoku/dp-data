@@ -200,6 +200,9 @@ analysis_scores,n_observed,int32,TRUE,FALSE,Number of observed source answers; n
 analysis_scores,n_correct,int32,TRUE,FALSE,Number scored correct; null for score-only records
 analysis_scores,score,float64,TRUE,FALSE,Proportion correct or published standardized index
 analysis_scores,scale,string,FALSE,FALSE,proportion_correct or standardized_index
+analysis_items,question_display,string,FALSE,FALSE,Question text normalized for readable display
+analysis_items,answer_choices_display,string,TRUE,FALSE,Answer labels normalized for readable display
+analysis_items,correct_answer_display,string,FALSE,FALSE,Correct answer label normalized for readable display
 california_report_responses,poll_id,string,FALSE,FALSE,Stable poll identifier
 california_report_responses,respondent_id,string,FALSE,TRUE,Original source ID or prefixed arrival roster number for records lacking ID
 california_report_responses,source_row,int32,FALSE,FALSE,One-based source survey row

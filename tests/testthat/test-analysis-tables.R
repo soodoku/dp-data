@@ -194,3 +194,31 @@ test_that("conflicting source years null poll timing", {
   expect_true(all(is.na(events$start_date)))
   expect_true(all(is.na(events$month)))
 })
+
+
+test_that("item display text preserves source fields and scoring", {
+  source(file.path(root, "R", "analysis_tables.R"))
+  catalog <- analysis_item_catalog()
+  source <- readr::read_csv(project_path("metadata", "items.csv"),
+    show_col_types = FALSE
+  )
+  expect_equal(catalog[names(source)], source)
+  expect_equal(
+    item_display_text(c(
+      "4: APPTS ON ADVICE OF P.M. (correct)",
+      "Which EU policy?", NA_character_
+    )),
+    c(
+      "4: Appointed on advice of prime minister (correct)",
+      "Which EU policy?", NA_character_
+    )
+  )
+  expect_equal(
+    item_display_text("1: LIBERAL PARTY MORE | 2: NO ROLE"),
+    "1: Liberal Party more | 2: No role"
+  )
+  expect_equal(
+    item_display_text(catalog$answer_choices_display),
+    catalog$answer_choices_display
+  )
+})
