@@ -63,7 +63,12 @@ or known memberships as needed. This preserves evidence for selection and
 attrition comparisons.
 
 The participant table separates `assignment` from observed `arm`
-and `attended`. Invitations were randomized in some studies, but analysis of
+and `attended`. In America in One Room 2019, `assignment = recruitment`
+identifies the baseline recruitment sample; NORC later subsampled this frame for
+invitations. Its nonattenders are `recruitment_nonattender`, since individual
+invitation status is not established. In the climate study, baseline treatment
+respondents were invited to register, so `invited_nonattender` is supported.
+Invitations were randomized in some studies, but analysis of
 attendees is not an intention-to-treat estimate. `small_group_id` identifies a
 discussion group when observed; `cluster_id` is the inference cluster and is a
 village in Tanzania. Missing values mean the fact was not established in the

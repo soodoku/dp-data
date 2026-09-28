@@ -240,9 +240,9 @@ analysis_control_people <- function(sources) {
       historical_respondent_id = NA_character_,
       identity_basis = "file-row", arm = dplyr::case_when(
         CONDITION == 0 ~ "control", !is.na(GROUP) ~ "attended",
-        TRUE ~ "invited_nonattender"
+        TRUE ~ "recruitment_nonattender"
       ),
-      assignment = dplyr::if_else(CONDITION == 1, "invited", "control"),
+      assignment = dplyr::if_else(CONDITION == 1, "recruitment", "control"),
       attended = CONDITION == 1 & !is.na(GROUP),
       panel = POST == 1,
       small_group_id = dplyr::if_else(CONDITION == 1 & !is.na(GROUP),
