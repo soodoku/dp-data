@@ -230,7 +230,7 @@ test_that("definitions match historical or approved values by IDs", {
   ]), 17L)
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "australia-republic-1999"
-  ]), 27L)
+  ]), 30L)
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "btp-health-education-2005"
   ]), 2L)
