@@ -26,6 +26,54 @@ test_that("absent questionnaires stay missing while observed zero stays zero", {
   expect_equal(scores$n_observed, c(0L, NA_integer_, NA_integer_, NA_integer_))
 })
 
+test_that("Marousi separates partial quizzes, absent exits and phases", {
+  source <- analysis_marousi_source()
+  scores <- analysis_marousi_scores(source)
+  approved <- readr::read_csv(project_path(
+    "audit", "corrections", "marousi-2006", "approved_values.csv"
+  ), show_col_types = FALSE) |>
+    dplyr::mutate(historical_caseid = as.character(historical_caseid))
+  departure <- scores |>
+    dplyr::filter(wave == "t2") |>
+    dplyr::left_join(approved,
+      by = c("respondent_id" = "historical_caseid"),
+      relationship = "one-to-one"
+    )
+  expect_equal(nrow(source), 146L)
+  expect_equal(nrow(scores), 438L)
+  expect_setequal(unique(scores$wave), c("t0", "t1", "t2"))
+  expect_equal(scores$score[scores$wave == "t0"], source$t1know)
+  expect_equal(departure$score, departure$approved_departure_score)
+  expect_equal(sum(is.na(departure$score)), 17L)
+  partial <- departure$reason == "partial_quiz_positive_score_replaced_by_zero"
+  expect_equal(sum(partial), 10L)
+  expect_equal(sum(departure$n_correct[partial]), 24L)
+  expect_true(all(departure$score[partial] > 0))
+  expect_equal(sum(departure$n_correct, na.rm = TRUE), 391L)
+  expect_true(all(is.na(departure$n_correct[is.na(departure$score)])))
+  expect_true(all(departure$n_observed[is.na(departure$score)] == 0L))
+  expect_equal(scores$score[scores$wave == "t1"], source$arrival_correct / 7)
+  people <- arrow::read_parquet(project_path(
+    "output", "analysis", "analysis_participants.parquet"
+  )) |>
+    dplyr::filter(poll_id == "marousi-2006")
+  expect_setequal(people$respondent_id, as.character(source$caseid))
+  expect_equal(sum(people$panel), 129L)
+  expect_equal(people$small_group_id, as.character(source$pollgroup))
+  expect_equal(people$source_row, source$original_source_row)
+  full <- haven::read_sav(project_path("data", "marousi-2006", "survey.sav"))
+  expect_equal(nrow(full), 1275L)
+  expect_equal(digest::digest(file = project_path(
+    "data", "marousi-2006", "survey.sav"
+  ), algo = "sha256"),
+  "cc79623a9432a5d4d0bc9b8c3ff1ea3eebaa5021799c80631048f261ca9a651f")
+  observed <- source[1, ]
+  observed$departure_correct <- 0L
+  observed$departure_observed <- TRUE
+  zero <- analysis_marousi_scores(observed)
+  expect_equal(zero$score[zero$wave == "t2"], 0)
+})
+
 test_that("analysis exports preserve keys and canonical question IDs", {
   directory <- project_path("output", "analysis")
   manifest <- readr::read_csv(
