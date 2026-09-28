@@ -2601,7 +2601,8 @@ needed for TE-01 and TE-02; this correction does not change their status.
 
 ### VT-01: Key ambiguity must remain explicit
 
-**Status:** existing upstream divergence; the accepted key remains provisional.
+**Status:** VT-01 now uses the final report's 25% key with the user's approval;
+the instrument ambiguity remains documented below.
 
 The [starred departure questionnaire](../data/vermont-energy-2007/questionnaire-post-key.doc)
 was re-opened in this pass. Q31 marks a 50% reduction in annual electricity-use
@@ -2617,12 +2618,12 @@ efficiency and economic conditions, it does not isolate the program's effect.
 It also does not resolve the two starred Q32 values or show which Q32 key was
 fielded.
 
-Current upstream accepts both starred Q32 answers. Relative to the deposit, the
-existing build reports 250 changed item-wave cells, 53 changed baseline scores
-and 79 changed departure scores. Means are 23.2116% → 22.2222% at baseline and
+Before this correction, upstream accepted both starred Q32 answers. Relative
+to the deposit, that build reported 250 changed item-wave cells, 53 changed
+baseline scores and 79 changed departure scores. Means were 23.2116% → 22.2222% at baseline and
 62.9376% → 60.1218% at departure. These changes predate this pass.
 
-| Current sensitivity scenario | Baseline mean | Departure mean |
+| Key sensitivity scenario | Baseline mean | Departure mean |
 |---|---:|---:|
 | Both starred Q32 responses | 22.2222% | 60.1218% |
 | Only 15% | 21.0046% | 57.0015% |
@@ -2632,10 +2633,10 @@ All scenarios retain the current Q31 efficiency key and nine-item denominator.
 The departure spread is 3.6530 percentage points. These scenarios do not resolve
 which answer was intended or quantify downstream model effects.
 
-**Before any change:** locate the final administered key, inspect annotation
-history and contemporaneous briefing facts, and reconcile baseline Q77 value
-labels that the previous audit reports as belonging to the next question. Preserve
-the published deposit and present upstream behavior until this is reviewed.
+**Remaining evidence gap:** recover the final administered key or scoring
+instructions to resolve the double-star ambiguity. The source-label and Q77
+unit discrepancies below remain unresolved; the approved Q32 scoring decision
+does not resolve them. The published deposit remains preserved.
 
 The retained [pre questionnaire](../data/vermont-energy-2007/questionnaire-pre.pdf)
 labels its surcharge item Q80 and its efficiency-impact item Q81; these map to
@@ -2650,6 +2651,45 @@ may be a draft/unit typo; the retained materials do not establish what was
 read to baseline respondents. Preserve the current choice-2 key and raw
 answers until the administered baseline form or interviewer instructions are
 found. Do not rewrite the deposited SPSS labels as if they were fielded text.
+
+**Final-report comparison and approved decision (2026-09-27).** The retained
+[final report](../data/vermont-energy-2007/reports/vermont-final-report.pdf),
+Figure 84 (printed p. 138, PDF p. 139), reports 11% correct before and 28%
+after for this exact question. Only code 3 (25%) reproduces those figures:
+16/146 = 10.9589% at baseline and 41/146 = 28.0822% at departure. Code 2
+alone gives 26/146 = 17.8082% and 48/146 = 32.8767%; accepting both gives
+42/146 = 28.7671% and 89/146 = 60.9589%. This reproduction supports following
+the report's scoring; it does not independently resolve what the wording means.
+
+A temporary LibreOffice conversion of the original `.doc` to `.docx` exposes
+both stars as ordinary live text, with no tracked insertions, deletions or
+comments. The [briefing](../data/vermont-energy-2007/briefing-materials/vermont-energy-briefing.pdf),
+Figure D (printed p. 5, PDF p. 15), shows 2006 consumption shares of 12%
+Other Hydro, 8% Other Renewables and 27% Hydro Quebec. The first two total
+20% of all electricity, midway between the offered 15% and 25%. Removing
+Hydro Quebec from the denominator as well gives 20/73 = 27.3973%, closer
+to 25%; this is a possible interpretation, not a recovered scoring instruction.
+The newly retained [April 2007 Energy Digest](../data/vermont-energy-2007/reports/vermont-energy-digest-2007.pdf),
+printed p. 8 (PDF p. 10), reports 14% from in-state renewables in 2005. Its
+geographic coverage and year differ from the briefing chart, so it does not
+independently establish that 15% answers the fielded question.
+
+The user approved following the final report for now and retaining these
+ambiguities in the notes. The maintained T1 and departure knowledge rule is
+therefore **25% only**, with 15% a substantive incorrect answer rather than
+missing. This changes exactly 26 baseline and 48 departure item scores and
+person-wave nine-item scores, each by -1/9. The mean nine-item score moves
+from 22.2222% to 20.2435% at baseline and from 60.1218% to 56.4688% at
+departure. The 146-person cohort, raw answers, response missingness, nine-item
+denominator and all other item keys are unchanged. Q31 still uses 50% for
+energy-efficiency impact. The retained `.doc`, report, briefing and background
+report remain in the Vermont poll folder. Consumers of Vermont's scored
+knowledge answers, including `dp-learning`'s attendee panel, will receive the
+new scores. A before/after check of that panel retains all 10,598 people and
+changes scores for 68 Vermont people (26 at baseline and 48 at departure;
+six change at both waves). Every other poll is identical. Pooled estimates
+using those scores will need rebuilding; their effects have not been estimated
+in this source-coding pass.
 
 **VT-02 — group roster gap.** `PART == 1` selects 146 of 750 source rows, but no
 verified group roster is attached. This is a missing verified linkage, not proof

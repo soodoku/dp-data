@@ -1881,7 +1881,7 @@ vermont-energy-2007,Q031T3,5,NA,0,answered,NA,3
 vermont-energy-2007,Q031T3,88,NA,NA,non_substantive,88,2
 vermont-energy-2007,Q031T3,99,NA,NA,non_substantive,99,19
 vermont-energy-2007,Q032T3,1,NA,0,answered,NA,32
-vermont-energy-2007,Q032T3,2,NA,1,answered,NA,48
+vermont-energy-2007,Q032T3,2,NA,0,answered,NA,48
 vermont-energy-2007,Q032T3,3,NA,1,answered,NA,41
 vermont-energy-2007,Q032T3,4,NA,0,answered,NA,15
 vermont-energy-2007,Q032T3,88,NA,NA,non_substantive,88,1
@@ -1930,7 +1930,7 @@ vermont-energy-2007,Q78,5,NA,0,answered,NA,3
 vermont-energy-2007,Q78,8,NA,NA,non_substantive,8,82
 vermont-energy-2007,Q78,9,NA,NA,non_substantive,9,3
 vermont-energy-2007,Q79,1,NA,0,answered,NA,36
-vermont-energy-2007,Q79,2,NA,1,answered,NA,26
+vermont-energy-2007,Q79,2,NA,0,answered,NA,26
 vermont-energy-2007,Q79,3,NA,1,answered,NA,16
 vermont-energy-2007,Q79,4,NA,0,answered,NA,6
 vermont-energy-2007,Q79,8,NA,NA,non_substantive,8,51

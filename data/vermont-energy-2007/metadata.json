@@ -183,6 +183,16 @@
       "local_artifact_id": null,
       "accessed": "2026-09-24",
       "notes": "Official event overview; page publication timestamp is not assumed to equal event date."
+    },
+    {
+      "reference_id": "us-vermont-energy-2007-energy-digest-2007",
+      "poll_id": "vermont-energy-2007",
+      "kind": "other",
+      "title": "The Vermont Energy Digest: An Inventory of Renewable Energy and Efficiency",
+      "url": "https://www.vtrural.org/sites/default/files/content/RuralEnergyCouncil/VermontEnergyDigest4-07.pdf",
+      "local_artifact_id": "material-541e45308269eda8-vermont-energy-2007",
+      "accessed": "2026-09-27",
+      "notes": "Vermont Council on Rural Development April 2007; printed p. 8 reports 14% in-state renewables in 2005, a narrower measure than all non-Hydro-Quebec renewables; contextual evidence only."
     }
   ],
   "material_coverage": [
@@ -387,6 +397,21 @@
       "publication_status": "published",
       "notes": "Generated from data/vermont-energy-2007/questionnaire-pre.doc. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
       "relative_path": "questionnaire-pre.pdf"
+    },
+    {
+      "artifact_id": "material-541e45308269eda8-vermont-energy-2007",
+      "poll_id": "vermont-energy-2007",
+      "artifact_type": "other",
+      "title": "The Vermont Energy Digest (April 2007)",
+      "location": "data/vermont-energy-2007/reports/vermont-energy-digest-2007.pdf",
+      "source_id": "material-541e45308269eda8",
+      "original_archive_path": null,
+      "sha256": "541e45308269eda8dc7a9a1ef1a116225f0aac79b12564ce858ac86da0ef7129",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Contemporaneous background report; not a poll instrument or event report. Printed p. 8 distinguishes 2005 in-state renewables from total supply. Source URL: https://www.vtrural.org/sites/default/files/content/RuralEnergyCouncil/VermontEnergyDigest4-07.pdf. Retrieved 2026-09-27. Original source bytes retained; repository code license does not apply.",
+      "relative_path": "reports/vermont-energy-digest-2007.pdf"
     }
   ],
   "document_previews": [
