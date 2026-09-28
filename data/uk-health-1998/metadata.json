@@ -205,20 +205,40 @@
       "reference_id": "uk-health-1998-health-project-report",
       "poll_id": "uk-health-1998",
       "kind": "event-report",
-      "title": "Final Project Report: The Deliberative Poll on Health Rationing",
+      "title": "Final Project Report: The future of the National Health Service — Results from a Deliberative Poll",
       "url": "https://citeseerx.ist.psu.edu/document?doi=482f37b33498b68546bbf1f7ef8a0b7ea5ff071f&repid=rep1&type=pdf",
+      "local_artifact_id": "material-ed35869934bd3ea1-uk-health-1998",
+      "accessed": "2026-09-27",
+      "notes": "Archived original report now retained locally; stripped only MacBinary wrapper, PDF content unchanged. Section 3 reports funding and event details. Contents list an appendix absent from the retained 17-page file; it is not a complete questionnaire."
+    },
+    {
+      "reference_id": "uk-health-1998-archived-codebook",
+      "poll_id": "uk-health-1998",
+      "kind": "codebook",
+      "title": "Codebook for the 1998 British Deliberative Poll on Health Issues",
+      "url": null,
+      "local_artifact_id": "material-3d2c5cf9c9d6d250-uk-health-1998",
+      "accessed": "2026-09-27",
+      "notes": "Archived text codebook; author’s opening caveat explicitly questions breast-screening wording versus anticipated answer. Retain instrument text and printed scoring counts separately from maintained SAV correctness fields."
+    },
+    {
+      "reference_id": "uk-health-1998-breast-screening-hansard-1997",
+      "poll_id": "uk-health-1998",
+      "kind": "other",
+      "title": "Breast Cancer (Screening): parliamentary written answer, 28 July 1997",
+      "url": "https://hansard.parliament.uk/commons/1997-07-28/debates/a6279af3-c4f9-4f6a-88c7-99d8153691da/BreastCancer%28Screening%29",
       "local_artifact_id": null,
-      "accessed": "2026-09-24",
-      "notes": "Project report, not a questionnaire. Funding and event description are in section 3."
+      "accessed": "2026-09-27",
+      "notes": "Contemporaneous ministerial answer describes NHS routine screening target ages 50–64. Supports limited population eligibility; does not identify the exact fielded poll key or resolve diagnostic versus screening wording. Indexed primary text inspected; direct page fetch failed."
     }
   ],
   "material_coverage": [
     {
       "poll_id": "uk-health-1998",
       "material_type": "questionnaires",
-      "status": "not-found",
-      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
-      "checked_references": "uk-health-1998-local-cdd-uk-health-variables;uk-health-1998-local-cdd-uk-health-value-labels;uk-health-1998-local-material-6eaeae118f40db64-uk-health-1998;uk-health-1998-local-material-7731a4ce1a2d98a7-uk-health-1998;uk-health-1998-local-material-7ad6c3c2eb5f0731-uk-health-1998;uk-health-1998-local-material-3d9d41d8bc592937-uk-health-1998;uk-health-1998-local-material-29cbe30c018c2d68-uk-health-1998;uk-health-1998-uk-comparative-paper;uk-health-1998-considered-opinions;uk-health-1998-health-project-report"
+      "status": "partial",
+      "notes": "Archived authored codebook now retains question wording and response tables, with source-version and breast-screening caveats. A complete independently verified fielded questionnaire is still not established.",
+      "checked_references": "uk-health-1998-archived-codebook;uk-health-1998-health-project-report"
     },
     {
       "poll_id": "uk-health-1998",
@@ -230,8 +250,8 @@
     {
       "poll_id": "uk-health-1998",
       "material_type": "event-reports",
-      "status": "external-only",
-      "notes": "Project report identified and its section 3 inspected through indexed text; direct PDF download failed. It is a project report, not the complete questionnaire.",
+      "status": "available",
+      "notes": "Original project report recovered from local CDD archive and retained as a readable PDF; MacBinary wrapper removed without changing PDF content. The retained file omits the questionnaire appendix listed in its contents.",
       "checked_references": "uk-health-1998-health-project-report"
     },
     {
@@ -245,8 +265,8 @@
       "poll_id": "uk-health-1998",
       "material_type": "codebooks",
       "status": "partial",
-      "notes": "Generated variable/value-label dictionaries available where listed; a complete fielded codebook and all missing-value/routing instructions are not thereby established.",
-      "checked_references": "uk-health-1998-local-cdd-uk-health-variables;uk-health-1998-local-cdd-uk-health-value-labels"
+      "notes": "Archived authored text codebook and source dictionaries retained; codebook describes different sample stages and explicitly flags the breast-screening key ambiguity. Fielded version reconciliation remains necessary.",
+      "checked_references": "uk-health-1998-archived-codebook;uk-health-1998-local-cdd-uk-health-variables;uk-health-1998-local-cdd-uk-health-value-labels"
     }
   ],
   "artifacts": [
@@ -489,6 +509,36 @@
       "publication_status": "published",
       "notes": "Generated from data/shared/design/poll_details/appendix-poll-details-5-18-14-e.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Already cited across21 poll references; includes24 polls and four source-linked duration comments. Compared all14 DOCX table rows plus comments XML, and corresponding PDF texts. No executable code reads these appendices.",
       "relative_path": "../shared/design/poll_details/appendix-poll-details-5-18-14-e.pdf"
+    },
+    {
+      "artifact_id": "material-ed35869934bd3ea1-uk-health-1998",
+      "poll_id": "uk-health-1998",
+      "artifact_type": "event-report",
+      "title": "Final Project Report: The future of the National Health Service — Results from a Deliberative Poll",
+      "location": "data/uk-health-1998/reports/uk-health-final-report.pdf",
+      "source_id": "material-ed35869934bd3ea1",
+      "original_archive_path": "data/british_health/uk.health.pdf",
+      "sha256": "ed35869934bd3ea11be2dc0c363ab6d506597e53cd63e4c3e53c100b48f01e8c",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Report recovered from the local CDD archive. Removed only its 128-byte MacBinary header and five trailing padding bytes; PDF data fork retained byte-for-byte (52603 bytes). Original container SHA-256 e54d4ec0162e29f18a801a1986d8c38152f9bbdd337f29c196d52e71779d22e4. Archive unchanged. Authors: Alison Park; Roger Jowell; Suzi McPherson. PDF has 17 pages and ends at the bibliography; the contents list an appendix that is absent from this retained file. Repository code license does not apply.",
+      "relative_path": "reports/uk-health-final-report.pdf"
+    },
+    {
+      "artifact_id": "material-3d2c5cf9c9d6d250-uk-health-1998",
+      "poll_id": "uk-health-1998",
+      "artifact_type": "codebook",
+      "title": "Codebook for the 1998 British Deliberative Poll on Health Issues",
+      "location": "data/uk-health-1998/codebooks/uk-health-codebook.txt",
+      "source_id": "material-3d2c5cf9c9d6d250",
+      "original_archive_path": "data/british_health/British Health Codebook.txt",
+      "sha256": "3d2c5cf9c9d6d250e82ce1d9dca665cca956872f12769dfd5bac68804e2deaad",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original text bytes retained, including CRLF line endings and the author’s breast-screening caveat. Header credits Dennis L. Plane and contains an incomplete modification date. Printed tables describe different sample stages from the maintained 230-person file; consult version evidence before changing keys. Repository code license does not apply.",
+      "relative_path": "codebooks/uk-health-codebook.txt"
     }
   ],
   "document_previews": [

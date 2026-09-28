@@ -30,6 +30,13 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
       rows = 278L
     ),
     "europolis-2009" = list(fields = c("ppage", "meanage"), rows = 348L),
+    "btp-general-election-2004" = list(
+      fields = c(
+        "meant1know", "meant1knowr", "meant1know_ind",
+        "meant1knowcor", "meant1knowrcor", "meant1knowcor_ind",
+        "meant2know", "t1knowlevelcor", "t1knowlevelrcor", "t2knowlevel"
+      ), rows = 248L
+    ),
     "btp-national-2003" = list(
       fields = c("btp03.olt1demo", "btp03.olt2demo",
                  "btp03.olt1global", "btp03.olt2global",
@@ -117,10 +124,15 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
       "audit", "corrections", poll_id, filename
     ), show_col_types = FALSE)
     approved <- approved[approved$legacy_field == field, ]
+    expected_caseid <- if (poll_id == "btp-general-election-2004") {
+      union(caseid, btp_ge_approved_inclusions()$historical_caseid)
+    } else {
+      caseid
+    }
     stopifnot(
       nrow(approved) == contract$rows,
       !anyDuplicated(approved$caseid), !anyDuplicated(caseid),
-      setequal(as.character(caseid), as.character(approved$caseid))
+      setequal(as.character(expected_caseid), as.character(approved$caseid))
     )
     approved <- approved[match(as.character(caseid),
                                as.character(approved$caseid)), ]

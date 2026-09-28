@@ -39,7 +39,25 @@ augment_btp_general_source <- function(
   survey
 }
 
+btp_general_wave_present <- function(survey, wave) {
+  if (!wave %in% c("b", "f")) stop("Unknown BTP election wave: ", wave)
+  status <- btp_source_codes(survey, "w4comsta", c(-4L, -3L, 1:3))
+  present <- status %in% c(1L, if (wave == "b") 2L else 3L)
+  fields <- grep(paste0("^w4", wave, "[0-9]+[a-z]*$"),
+    names(survey), value = TRUE
+  )
+  observed <- purrr::map(survey[fields], function(value) {
+    !is.na(value) & !value %in% c(-4, -3)
+  }) |>
+    tibble::as_tibble()
+  if (any(!present & rowSums(observed) > 0L)) {
+    stop("BTP election completion status contradicts observed wave responses")
+  }
+  present
+}
+
 btp_general_knowledge <- function(survey, wave) {
+  present <- btp_general_wave_present(survey, wave)
   keys <- c(
     `60` = 1, `61` = 2, `62` = 2, `63` = 2, `64` = 2,
     `65` = 4, `66` = 2, `68` = 4, `69` = 3
@@ -47,7 +65,9 @@ btp_general_knowledge <- function(survey, wave) {
   purrr::imap(keys, function(correct, item) {
     allowed <- if (item %in% c("62", "63", "64")) -4:4 else -4:6
     value <- btp_source_codes(survey, paste0("w4", wave, item), allowed)
-    as.numeric(value %in% correct)
+    scored <- as.numeric(value %in% correct)
+    scored[!present] <- NA_real_
+    scored
   }) |>
     tibble::as_tibble() |>
     as.matrix()
