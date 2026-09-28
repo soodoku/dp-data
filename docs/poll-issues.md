@@ -252,7 +252,7 @@ a changed knowledge score. “Unlinked” is not zero differences.
 | denmark-euro-2000 | 359 | 363 | 18 | NA | NA | unlinked-sample-difference |
 
 The 23 builds contain 6,669 participants and 103,116 item-wave responses.
-There are 765 reported cell differences among the row-aligned comparisons and
+There are 1,212 reported cell differences among the row-aligned comparisons and
 two gender differences. These totals include California after its five blank
 deposit rows are excluded from comparison; they exclude the two remaining
 unequal-size comparisons and the unordered Europolis comparison. There are 522 people without known

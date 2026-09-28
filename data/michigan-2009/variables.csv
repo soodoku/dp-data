@@ -211,8 +211,8 @@ t3q44e,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t3q44f,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t3q44g,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t3q44h,double,numeric,float64,,%8.0g,,,TRUE,Retained
-t3q45,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
-t3q46,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t3q45,character,character,string,,%1s,,,TRUE,Retained
+t3q46,character,character,string,,%1s,,,TRUE,Retained
 t3q47,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
 t3q48,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
 t3q49a,double,numeric,float64,,%8.0g,,,TRUE,Retained

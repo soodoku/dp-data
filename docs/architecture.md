@@ -271,3 +271,21 @@ linking a new poll to an analysis, verify identities, sample and battery definit
 For dp-learning's eight T1-linked polls, every item cell matches the existing
 battery; joining by historical respondent ID resolves San Mateo's changed row
 order without changing any scores.
+
+### Participant covariates
+
+`analysis_participants.parquet` carries age, three-category schooling, BA status,
+and briefing-reading reports alongside the response keys. Historical age, schooling,
+minority status, and attitude extremity come from the rebuilt participant records.
+Seven additional polls supply age and schooling from their own source surveys;
+`metadata/recode_ledger.csv` records the fields and category mappings. BTP 2007 age
+is survey year minus birth year. Other/missing qualifications remain missing.
+
+Reading reports describe reading before discussion, elicited afterward. BTP 2007,
+California 2011, and Michigan 2009 supplement the nine historical sources. Michigan's
+letter-coded reading fields are retained as categorical source answers; they are
+not free-text responses. Unrecognized codes remain missing. The original source
+columns are preserved in each poll's survey export.
+
+Covariates join on poll, source dataset, and respondent ID; source-row joins are
+validated within each poll. Overlapping batteries retain their distinct keys.
