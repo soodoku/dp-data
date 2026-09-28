@@ -3723,8 +3723,9 @@ source-backed demographic field.
 ### MAR-01 — derived post knowledge zeros need an item-level and wave bridge
 
 The public `participants.csv` is a 146-person projection of a 2014 derived
-analysis object. It has 15 groups but no knowledge-item answers, original
-`knowt3` values or independent field-return IDs. The archived
+analysis object. It has 15 groups but does not itself contain knowledge-item
+answers, original `knowt3` values or independent field-return IDs. The original
+merged SPSS source has now been recovered and compared in MAR-02 below. The archived
 `legacy/poll_scripts/greece.R` sets `t2know` to `knowt3` when observed and to
 zero when `knowt3` is missing. Thus the exported zero combines genuine
 zero-correct scores with source missingness, without a flag that separates
@@ -3740,11 +3741,246 @@ zero. Its printed frequencies imply mean 0.42754, matching the 42.8% post
 factual-knowledge result in the [contemporaneous paper](../data/marousi-2006/papers/returning-deliberative-democracy-athens.pdf),
 Table 4. The paper distinguishes 153 arrival respondents from 138 final
 questionnaires. It reports 39.4% before, whereas the 146-person file's
-baseline mean is 35.8%. These count and mean differences indicate distinct
-analysis versions or cohorts; they do not identify which of the 27 file zeros
-are true zero-correct responses. Preserve the source scores. Recover the
-original item-level questionnaires, respondent IDs and T1/T2/T3 wave crosswalk
-before making a missingness or sample correction.
+baseline mean is 35.8%. At the initial audit these count and mean differences established a version or
+cohort discrepancy but did not identify which exported zeros represented
+blank items or absent questionnaires. MAR-02 below now separates all 27 using
+the original responses. The historical file remains unchanged pending review
+of the explicit proposed correction; no row is dropped to force a report match.
+
+### MAR-02 — Original source bridges the report; partial quizzes were zeroed as whole scores
+
+**Status:** investigated on 2026-09-27; report reproduced and correction proposed,
+not adopted. The user's scoring instruction is explicit: an individual blank
+or don't-know item counts as wrong, including a wholly blank quiz within an
+otherwise observed questionnaire. An entirely absent questionnaire is a
+separate wave state; do not infer absence merely from a quiz score or blank
+quiz items.
+
+**Wave names agreed with the user.** Marousi's canonical descriptions use
+t0 for telephone/pre-arrival, t1 for arrival, and t2 for post-deliberation.
+The source file calls them T1/T2/T3. Keep original field identifiers as
+provenance and translate explicitly; source T3 here is not a later follow-up.
+
+| Canonical wave | Role | Source wave and index fields |
+| --- | --- | --- |
+| t0 | Pre-arrival telephone interview | T1: `KNOWT1`, revised `KNOWT1_2`; `P_` responses |
+| t1 | Arrival / start of deliberation | T2: `KNOWT2`, revised `KNOWT2_2`; `AR_` responses |
+| t2 | Post-deliberation | T3: `KNOWT3`, revised `KNOWT3_2`; `F_` responses |
+
+There is no established later follow-up in this recovered Marousi source.
+The bridge CSV uses phase names such as `telephone_score_revised` and
+`departure_factual_correct_count`; the frequency transcription preserves
+`source_wave = T3` with `canonical_wave_id = t2` and
+`wave_role = post_deliberation`. Existing historical files and canonical
+exports are not silently renumbered by this investigation. A general schema
+should identify each questionnaire instance, its role and chronological order,
+its original source label, and its date or elapsed time when established.
+Multiple pre-event measurements and multiple follow-ups require distinct
+instance IDs with the same role. Use t3/t4 for successive later follow-ups where present, recording their
+dates or time since deliberation. These labels identify follow-up order,
+not a fixed interval shared by every poll. For multiple pre-arrival measurements, use
+distinct instances such as t0_1/t0_2 with role `pre_arrival`; keep t1/t2
+as the arrival/post-deliberation anchors. Missing phases do not cause later
+phases to be renumbered, and an online poll does not acquire an invented
+arrival questionnaire.
+
+The same canonical phases must mean the same thing across polls: t0 is
+pre-arrival, t1 arrival/start, and t2 immediate post-deliberation. Telephone
+is an interview mode, not the definition of t0. A downstream service must
+select its intended pair explicitly; the user's current dp-learning
+convention is arrival-to-exit (t1 to t2), with telephone/pre-arrival-to-exit
+(t0 to t2) a separate available comparison. If a poll lacks t1, mark that
+comparison unavailable rather than substituting t0. Marousi's current
+score-only export labels its telephone baseline t1; that historical label
+must be migrated explicitly before it satisfies this phase contract.
+
+Preserve the full recovered 1,275-row source frame, including people who
+never attended, and every available pre-arrival response. The 146-person
+grouped view and any paired-wave view are analysis samples, not the source
+universe. Separate invitation/assignment, attendance, questionnaire presence,
+and known group membership. This allows comparison of pre-arrival answers
+between attendees and nonattendees, and analysis of post-wave attrition;
+it does not by itself establish causal selection bias. Unestablished
+attendance remains unknown, and nonattendance must not erase t0 responses.
+
+**Recovered source and identity bridge.** The original
+`vault/cdd/data/Greece/data/Greece_data_all_final.sav` remains locally available:
+1,275 source rows, 1,026 columns, SHA-256
+`cc79623a9432a5d4d0bc9b8c3ff1ea3eebaa5021799c80631048f261ca9a651f`,
+matching its archive inventory. The July 5, 2006 snapshot
+`vault/cdd/data/Archive/cddrep-jul-5-2006.zip` also contains the original
+293-column `Greece/2006/data_all_final.sav` (SHA-256
+`a55261bc6e7a6d896f2f57524f35a055f9b55ac3575dfbd099e100fd6458c373`),
+whose raw fields match the expanded source by stable baseline ID. This
+establishes an early source snapshot; no separate wave returns or original
+merge instructions were found in its Greece subtree. The expanded file
+contains telephone `P_`, arrival `AR_`,
+departure `F_` responses, stable baseline `P_Q1_0`, wave codes, flags and both
+original and revised knowledge indices. Keep the authored merged source rows;
+do not generate an identity join from equal scores.
+
+Applying the original script's nonmissing `GROUP` filter selects exactly the
+146 exported records. Original filtered row order reproduces synthetic
+historical `caseid = 79999 + row`, `pollgroup = 200000 + GROUP`, age, female,
+original telephone `KNOWT1`, and the old departure formula
+`ifelse(is.na(KNOWT3), 0, KNOWT3)` with zero discrepancies. Baseline `P_Q1_0`
+is unique across all 1,275 source rows. This is a verified bridge to the
+**existing authored source rows**, not proof that every original cross-wave
+merge is correct. The [numeric source bridge](../audit/corrections/marousi-2006/source_bridge.csv)
+retains source row, all three IDs, group, wave flags, old/revised indices,
+seven-item correct counts, blank/DK counts and observed raw-wave field counts.
+It includes unasked source rows whose stored revised scores can be zero;
+those zeros are not automatically observed measurements.
+
+**Report reconstruction.** Seven factual items are mayor's name, population,
+number of Mall stores, waste per resident, immigrant share, municipal-bus
+coverage and Metro users. The retained telephone questionnaire locates them
+at Q18 and Q27–31/Q33; Q32 merely asks whether the respondent heard about the
+Metro tender and is not part of this battery. The original authored
+correctness fields are `KQ1_T3`, `KQ2POPT3`, `KQ3STOR0`, `KQ4WAST0`,
+`KQ5PERT3`, `KQ6TRAN0`, `KQ7METR0` at departure, with analogous telephone
+and arrival fields. Counting correct flags over seven, with individual missing
+flags wrong, reproduces revised `KNOWT1_2`, `KNOWT2_2`, `KNOWT3_2` within
+float32 storage precision (maximum difference 2.55e-8). This checks scoring
+construction; it does not independently establish every substantive factual
+key. The printed instrument lacks a full answer key, so those original keys
+are preserved rather than invented from the aggregate targets.
+
+The [distribution PDF](../data/marousi-2006/knowledge-item-distributions.pdf),
+p.1, explicitly labels the factual T3 index revised, with missing/don't-know
+answers wrong. Its eight-bin distribution for zero through seven correct is
+1/21/29/35/33/17/2/0, N = 138. Source `T3PART == 1` selects exactly 138 records
+and revised `KNOWT3_2` matches every frequency. The
+[paper](../data/marousi-2006/papers/returning-deliberative-democracy-athens.pdf),
+Table 4, PDF/printed p.17, explicitly treats unanswered and don't-know
+knowledge items as incorrect. On those same source rows:
+
+| Source wave / index | Total correct | Denominator | Mean correct |
+| --- | ---: | ---: | ---: |
+| Telephone t0 / source `KNOWT1_2` | 348 | 138 × 7 | 36.024845% |
+| Arrival t1 / source `KNOWT2_2` | 381 | 138 × 7 | 39.440994% |
+| Post-deliberation t2 / source `KNOWT3_2` | 413 | 138 × 7 | 42.753623% |
+
+Arrival-to-departure gain is 32/966 = 3.312629 percentage points. A paired
+t test on these 138 revised source scores gives p = 0.01714023, reproducing the
+paper's 39.4/42.8/+3.3/p = 0.017. The original telephone index does not reproduce
+its before figure. Thus a report-compatible **arrival-to-departure** measure
+and the current **telephone-to-departure** measure require distinct wave
+labels. Table 4 does not explicitly print its N or source variable names;
+the joint means, exact post histogram and p-value establish the recovered
+construction, not a license to rename the telephone wave as arrival.
+The distribution file is only T3, not a set of individual T1/T2 records.
+Its full frequency transcription is in
+[report distributions](../audit/corrections/marousi-2006/report_distributions.csv).
+
+Dropping people cannot repair the older export: all 146 contain only 367 post
+correct answers, fewer than the report's 413 even before any exclusion. Its
+maximum possible unweighted 138-person post mean is 37.991718%; its maximum
+telephone-baseline mean on 138 rows is 37.267081%, also below 39.4. This rules
+out sample exclusion, absent-quiz zeros and rounding as a complete explanation.
+
+**Which zeros are wrong, and why?** All 27 exported departure zeros originate
+in missing original `KNOWT3`; none is a literal observed zero in that index.
+Ten have `T3PART == 1`, an observed departure ID, 25–114 observed raw
+`F_` questionnaire fields, and 1–6 blank factual items. They answered other
+knowledge items correctly. Treating a missing whole original index as zero
+lost those correct answers. The revised seven-item scores are:
+
+| Historical caseid | Source baseline ID | Correct /7 | Blank quiz items | DK quiz items |
+| --- | ---: | ---: | ---: | ---: |
+| 80000 | 30154 | 2/7 | 1 | 3 |
+| 80012 | 7889 | 3/7 | 1 | 0 |
+| 80020 | 7336 | 3/7 | 1 | 0 |
+| 80037 | 11816 | 1/7 | 1 | 5 |
+| 80054 | 30592 | 1/7 | 6 | 0 |
+| 80060 | 5215 | 5/7 | 1 | 1 |
+| 80061 | 31650 | 3/7 | 2 | 0 |
+| 80075 | 13799 | 4/7 | 1 | 1 |
+| 80113 | 4934 | 1/7 | 1 | 0 |
+| 80117 | 16892 | 1/7 | 4 | 1 |
+
+These ten add 24 recovered correct answers. Every other observed departure
+score in the current export agrees with the revised source to storage
+precision. The other 17 zeros have missing `F_CODE`, missing `T3PART`, and
+**all 115 raw departure questionnaire fields missing**. This independently
+establishes absent departure records in the merged source; the diagnosis is
+not based on all seven quiz items being blank. Keep their telephone responses,
+arrival responses and memberships, but propose a missing departure score and
+false paired-panel flag. All 146 grouped people retain their row and membership.
+A legitimate all-wrong departure quiz still scores zero: the report includes
+one, source ID 31916, outside this grouped export.
+
+The exact post-score bridge is:
+
+| Step | People in denominator | Correct answers | Mean post score |
+| --- | ---: | ---: | ---: |
+| Current grouped export, missing whole indices filled 0 | 146 | 367 | 35.909980% |
+| Recover correct answers in ten partial quizzes, retaining 17 absent-wave zeros for diagnosis only | 146 | 391 | 38.258317% |
+| Use observed departure questionnaires among the same grouped people | 129 | 391 | 43.300111% |
+| Include nine observed departures without a recorded group, matching report cohort | 138 | 413 | 42.753623% |
+
+The nine additional departures contribute 22 correct answers. Do not invent
+nine group assignments or alter the current grouped sample to make its mean
+42.8%. A full respondent/wave export can preserve these questionnaires with
+unknown group, while group analyses need an explicit membership requirement.
+The [proposed comparison](../audit/corrections/marousi-2006/proposed_score_comparison.csv)
+freezes all 146 current telephone/post scores, proposed post scores and reasons;
+it is a proposal, not an approved-value file.
+
+**The report comparison itself counts five absent arrival waves as zero.**
+Source wave flags count 153 arrival and 138 departure, with 132 flagged at both,
+21 arrival-only and 6 departure-only. One of the six departure-only flags,
+source row 117 / baseline ID 14825, nevertheless has 67 raw arrival answers
+and revised arrival score 5/7, despite missing `AR_CODE` and `T2PART`. Thus a
+wave flag or ID alone does not reliably establish absence. Using actual raw
+arrival responses finds 133 observed arrival questionnaires among the 138
+reported departures. The other five (source IDs 32832/33909/21434/31916/30357)
+have all 102 raw arrival fields absent, but stored revised `KNOWT2_2 == 0`.
+Those stored zeros enter the reconstruction of 39.4% before and p = 0.017 above.
+For the 133 with actual answers at both waves, corresponding means are
+40.923738% arrival and 43.179377% departure, gain 2.255639 percentage points;
+the analogous paired test gives p = 0.07901303. This is a precise source-level
+replication diagnostic, not a paper/model revision or authorization to change
+its claims. An absent arrival questionnaire must not be confused with a
+partially answered or wholly blank quiz in an otherwise observed questionnaire.
+The current telephone baseline is unaffected by this report-arrival issue.
+
+**Original cross-wave IDs need further verification.** All 153 observed
+`AR_CODE` values agree with same-row baseline `P_Q1_0`. All 138 `F_CODE`
+values are unique, but 16 differ from same-row baseline IDs (15 inside the
+current 146 grouped people). They are other valid baseline IDs and form two
+ascending-code chains. For example, source row 2 is baseline/arrival 8805
+but departure 9046; baseline 9046 is another source row/group. The discrepancy
+is present in all four earlier `data_all_final` SAV/DTA variants: joining
+by unique baseline ID gives zero differences across 293 raw columns,
+including every departure code. It therefore predates the modern pipeline;
+no source return or linkage instruction establishes whether the departure
+code or the original merged association is wrong. Preserve the authored
+merged-row association and both IDs. Do not reassociate entire departure
+waves merely by matching `F_CODE` to baseline IDs. Reproducing the report
+alone does not validate those 16 source joins.
+
+**Other batteries remain separate.** The distribution file's two absolute
+party placements plus five candidate placements reproduce the paper's
+36.3% pooled departure result. Its 17-unit absolute issue-placement index
+averages 33.248083%, which does not match the paper's 34.2%; the label excludes
+candidate midpoint placements, and relative issue scores use 42/43-unit
+versions. These are scoring/version questions for other measures, not a
+reason to change the seven-item factual denominator. No new positional
+measure or key is adopted here.
+
+**Proposed narrow correction.** Preserve all 146 current rows, all source
+memberships and the existing telephone baseline. On an observed departure
+questionnaire, count each correct factual item over seven and score blanks/DK
+wrong; this fixes the ten false zero indices. Where the entire departure
+record is absent, retain a missing post score and a false paired-wave flag;
+this changes 17 post zeros to missing. Preserve the nine additional observed
+post questionnaires for a separately named full respondent source, with
+unknown groups. Keep the arrival-to-departure report reconstruction separate
+and explicit about its five absent-arrival zeros. No scientific output,
+participant field, historical CSV or downstream result is changed by this
+investigation. The next scientific implementation requires poll-specific
+review of this proposal.
 
 ### TZ-01 — group assignment does not by itself establish treatment eligibility
 
@@ -4588,6 +4824,41 @@ sources use T3 for the later measurement, and Denmark uses T0/T2. Keep literal
 source wave, ordering and analytical role separately. Date fields are not
 interchangeable with waves. Review questionnaires before equating two fields
 that merely share a suffix.
+
+On 2026-09-27 the user requested phase-based descriptions: t0 is pre-arrival,
+t1 arrival, t2 post-deliberation, and t3/t4 later follow-ups when present.
+Marousi's recovered source T1/T2/T3 maps to canonical t0/t1/t2, as documented
+in MAR-02. Preserve original source wave labels separately. Each questionnaire
+instance also needs its role, chronological order, and date/elapsed time when
+known; multiple pre-event surveys or follow-ups cannot be distinguished by a
+single generic pre/post flag. Numbered instances t0_1/t0_2 distinguish multiple
+pre-arrival surveys. Preserve missing phases and do not invent arrival waves
+for online polls. Existing exports still use their reviewed historical wave
+contracts; this naming decision is not a silent renumbering of their values.
+
+
+These are cross-poll phases, not whichever two measurements a reader selects.
+A telephone interview before arrival is t0 even when it is the only available
+baseline. Interview mode is separate metadata. t1 is arrival/start and t2 is
+immediate post-deliberation; t3/t4 identify successive later follow-ups, whose
+actual dates or elapsed times must also be recorded. Multiple pre-arrival
+instances share phase t0 and have distinct instance IDs, so readers do not
+confuse phase with the questionnaire instance.
+
+Downstream analyses must request their comparison explicitly, for example
+`baseline_wave = t1`, `outcome_wave = t2` for dp-learning's current
+arrival-to-exit convention, or t0 to t2 for pre-arrival-to-exit. Missing t1
+makes the former comparison unavailable; it does not relabel t0. Existing
+selected-pre/post exports therefore need a reviewed mapping before they can
+claim this standardized contract.
+
+Retain all available pre-arrival respondents and their answers, including
+nonattendees and people without a discussion group. Preserve invitation,
+assignment, attendance, questionnaire presence, group membership and
+analysis eligibility separately. Participant, paired-wave and group-analysis
+filters are named views over the source universe. Pre-arrival data can then
+support selection and attrition comparisons without rebuilding discarded
+records. MAR-02 supplies a concrete 1,275-row source bridge for this requirement.
 
 ### X-03: Typed missingness and explicit denominators
 
