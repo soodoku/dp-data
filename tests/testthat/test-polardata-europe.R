@@ -20,7 +20,9 @@ test_that("European and Australian aggregates match every historical field", {
     reference <- benchmark[benchmark$dpnum == values$dpnum[1], ]
     reference <- reference[match(values$caseid, reference$caseid), ]
     approved_fields <- switch(polls[index],
-      "australia-republic-1999" = c("grpgain", "loggain", "meanxtreme"),
+      "australia-republic-1999" = c(
+        "grpgain", "loggain", "meanxtreme", "meanage"
+      ),
       "tomorrows-europe-2007" = c(
         "vareduc", "sdeduc", "meaned", "meanage", "entropy"
       ),

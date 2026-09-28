@@ -158,7 +158,7 @@ australia-republic-1999,t1know,knowledge_t1@historical-v1,347,347,0,0,3.33066907
 australia-republic-1999,t1knowr,issue_knowledge@historical-v1,347,0,0,0,0,0,1e-10
 australia-republic-1999,t1knowcor,knowledge_joint@historical-v1,347,347,0,0,3.3306690738754696e-16,0,1e-10
 australia-republic-1999,t2know,knowledge_t2@historical-v1,347,347,0,0,3.3306690738754696e-16,0,1e-10
-australia-republic-1999,ppage,age@historical-v1,347,347,0,0,0,0,1e-10
+australia-republic-1999,ppage,age@aus05-v2,347,344,3,0,0,0,1e-10
 australia-republic-1999,educ4,education_four@historical-v1,347,347,0,0,0,0,1e-10
 australia-republic-1999,minority,minority@historical-v1,347,347,0,0,0,0,1e-10
 australia-republic-1999,hhincome,household_income@historical-v1,347,314,0,0,0,0,1e-10

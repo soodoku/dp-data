@@ -81,6 +81,10 @@ test_that("derived exports preserve unique people and reviewed gain", {
     derived$legacy_field %in% c("grpgain", "loggain")
   expect_setequal(unique(derived$definition_version[australia_gain]),
                   "aus-04-v2")
+  australia_age <- derived$poll_id == "australia-republic-1999" &
+    derived$legacy_field == "meanage"
+  expect_setequal(unique(derived$definition_version[australia_age]),
+                  "aus05-v2")
   election_group <- derived$poll_id == "uk-general-election-1997" &
     derived$legacy_field %in% c(
       "grpgain", "grpgainr", "loggain", "avgsd", "genvar"
@@ -96,7 +100,7 @@ test_that("derived exports preserve unique people and reviewed gain", {
   health_baseline <- derived$poll_id == "btp-health-education-2005" &
     derived$legacy_field == "t1knowlevel"
   expect_setequal(unique(derived$definition_version[health_baseline]),
-                  "btphe-03-v2")
+                  "btphe-04-v2")
   new_haven_minority <- derived$poll_id == "new-haven-2004" &
     derived$legacy_field == "pminority"
   expect_setequal(unique(derived$definition_version[new_haven_minority]),
@@ -628,8 +632,8 @@ test_that("AUS-04 aligns frozen group gains to respondents", {
   ), show_col_types = FALSE)
   expect_setequal(unique(approved$legacy_field),
                   c("grpgain", "loggain", "attextreme", "meanxtreme",
-                    "aus.popparl2"))
-  expect_equal(nrow(approved), 347L * 5L)
+                    "aus.popparl2", "ppage", "meanage"))
+  expect_equal(nrow(approved), 347L * 7L)
   data <- full_polardata()
   australia <- data[data$pollid == 26, ]
   expect_equal(nrow(australia), 347L)

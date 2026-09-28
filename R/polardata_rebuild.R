@@ -126,6 +126,8 @@ historical_derived_measures <- function(polls) {
             c("grpgain", "grpgainr", "loggain") ~ "cpl-05-v2",
           .env$poll_id == "australia-republic-1999" &
             .data$legacy_field %in% c("grpgain", "loggain") ~ "aus-04-v2",
+          .env$poll_id == "australia-republic-1999" &
+            .data$legacy_field == "meanage" ~ "aus05-v2",
           .env$poll_id == "btp-health-education-2005" &
             .data$legacy_field %in% c(
               "pfemale", "varfemale", "sdfemale", "pfemale_ind", "entropy"

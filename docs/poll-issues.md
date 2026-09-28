@@ -1699,40 +1699,58 @@ establish effects in downstream analyses that consume `grpgain` directly.
 Reproduce the respondent comparison with
 `Rscript scripts/review_australia_gain.R`.
 
-### AUS-05: Age refusal is currently treated as age 98 (proposed)
+### AUS-05: Age refusal no longer counts as age 98 (approved correction)
 
 `data/australia-republic-1999/value-labels.csv` explicitly labels `age=98`
-“REFUSED.” `build_australia_individual()` retains that value as a year age.
+“REFUSED.” The preceding `build_australia_individual()` retained that value
+as a year age.
 Fourteen source records are affected; three are among the 347 attendees:
 CASEID 199 (source row 3638, group 2), 648 (row 4020, group 18), and 1226
 (row 4419, group 10). The other eleven belong to inapplicable group 100.
 This is an explicit refusal code, not evidence of unusually old respondents.
 
-Proposed correction: make these ages missing while retaining raw code 98.
+Approved correction: make these ages missing while retaining raw code 98.
 The central group-summary stage will recompute mean age using observed ages;
 no group formula belongs in this poll's respondent recoder. Preserve the
 347-person sample, knowledge, attitudes, education and other demographic
 values. A renewed source-level review confirms the existing central mean helper
-already omits missing ages. Only these three group means would change:
+already omits missing ages. Only these three group means change:
 
-| Group | People | Age responses after correction | Current mean age | Corrected mean age |
+| Group | People | Age responses after correction | Previous mean age | Corrected mean age |
 |---|---:|---:|---:|---:|
 | 2602 | 17 | 16 | 47.1176470588 | 43.9375000000 |
 | 2610 | 14 | 13 | 48.5000000000 | 44.6923076923 |
 | 2618 | 12 | 11 | 44.1666666667 | 39.2727272727 |
 
 That is three attendee age cells and 43 repeated group-mean cells. Across the
-full source, 14 refusal ages would become missing; the other eleven remain
+full source, 14 refusal ages become missing; the other eleven remain
 outside the attendee panel. Education code 98, income codes 97/98 and political
 interest code 97 already become missing. `overseas=100` is inapplicable for
 native-born respondents to the follow-up about whether their overseas birthplace
 was English-speaking; its existing nonminority coding is a construct choice,
 not evidence of an unanswered ethnicity question. These adjacent fields are
-unchanged by the age proposal.
+unchanged by the age correction.
 
 The separate constitutional-referendum `codebook.pdf` cannot establish
 this deliberative poll's field meanings; the actual poll-source value labels
-provide the refusal evidence. User decision requested; no recode applied here.
+provide the refusal evidence. The user approved this age correction on
+2026-09-27. Raw responses and membership remain intact; the independently
+frozen comparison covers all 347 participant ages and group means.
+Age-based downstream summaries or regressions may change because three
+attendee ages now correctly lack an observed value. Preserving participation
+does not guarantee an unchanged complete-case sample in an age-adjusted
+model. No paper or downstream model is rerun as part of this correction.
+
+The rebuilt respondent export confirms all 14 age refusals become missing;
+all other respondent values are unchanged by AUS-05. Exactly three `ppage`
+and 43 `meanage` cells change in the wide aggregate, and the same 43 means
+change in the typed derived table. The age definition is versioned
+`aus05-v2`, as is the centrally generated mean age. All other polls, raw
+response tables, identities, membership and knowledge tables remain
+unchanged. Current canonical analysis outputs are byte-identical. Both
+respondent and aggregate comparisons have zero unexplained differences.
+The existing frozen comparison rows were preserved verbatim, with 694
+age/group-mean rows appended; no prior correction values were rewritten.
 
 ## BTP 2007 — btp-2007
 

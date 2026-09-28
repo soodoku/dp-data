@@ -120,7 +120,7 @@ test_that("australia matches every historical respondent target", {
   ), show_col_types = FALSE)
   for (field in names(mapping)) {
     expected <- as.numeric(benchmark[[field]])
-    if (field %in% c("attextreme", "aus.popparl2")) {
+    if (field %in% c("attextreme", "aus.popparl2", "ppage")) {
       correction <- approved[approved$legacy_field == field, ]
       expected <- correction$approved_value[match(
         benchmark$caseid, correction$caseid
@@ -129,4 +129,35 @@ test_that("australia matches every historical respondent target", {
     expect_equal(built[[mapping[[field]]]], expected, tolerance = 1e-10,
                  info = field)
   }
+})
+
+test_that("Australia age refusals stay missing without changing attendance", {
+  survey <- read_poll_survey("australia-republic-1999")
+  raw_age <- australia_source_codes(survey, "age", c(18:88, 98))
+  group <- australia_source_codes(survey, "group", c(1:24, 100))
+  ids <- as.numeric(unclass(survey[[
+    match("caseid", tolower(names(survey)))
+  ]]))
+  refused <- !is.na(raw_age) & raw_age == 98
+  selected <- !is.na(group) & group != 100
+  built <- build_australia_individual(survey)
+
+  expect_equal(sum(refused), 14L)
+  expect_equal(sum(refused & selected), 3L)
+  expect_setequal(ids[refused & selected], c(199, 648, 1226))
+  expect_true(all(is.na(built$age[refused])))
+  expect_equal(built$age[!refused], raw_age[!refused])
+  expect_equal(sum(is.na(built$age)), sum(is.na(raw_age)) + 14L)
+  expect_equal(sum(selected), 347L)
+  expect_equal(sum(!is.na(built$age[selected])), 344L)
+
+  contract <- read_metadata("respondent_sources")
+  contract <- contract[contract$poll_id == "australia-republic-1999", ]
+  tables <- build_poll_respondents(contract)
+  memberships <- tables$sample_memberships
+  included <- memberships$respondent_id[
+    memberships$sample_id == "historical-polardata" & memberships$included
+  ]
+  expect_setequal(included, as.character(ids[selected]))
+  expect_equal(australia_source_codes(survey, "age", c(18:88, 98)), raw_age)
 })
