@@ -12,7 +12,7 @@ pilot_tables <- function() {
 test_that("survey comparisons report differences without imposing parity", {
   tables <- pilot_tables()
   audit <- compare_knowledge_batteries(tables)$summary
-  expect_equal(sum(audit$item_differences, na.rm = TRUE), 691)
+  expect_equal(sum(audit$item_differences, na.rm = TRUE), 1212)
   expect_equal(sum(audit$female_differences, na.rm = TRUE), 2)
   expect_equal(nrow(tables$respondents), 6669L)
   expect_equal(nrow(tables$knowledge_responses), 103116L)

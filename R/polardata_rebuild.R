@@ -131,7 +131,12 @@ historical_derived_measures <- function(polls) {
               "pfemale", "varfemale", "sdfemale", "pfemale_ind", "entropy"
             ) ~ "btphe-01-v2",
           .env$poll_id == "btp-health-education-2005" &
-            .data$legacy_field == "t1knowlevel" ~ "btphe-03-v2",
+            .data$legacy_field %in% c(
+              "meant1know", "meant1knowr", "meant1know_ind",
+              "meant1knowcor", "meant1knowrcor", "meant1knowcor_ind",
+              "meant2know", "t1knowlevelcor", "t1knowlevelrcor",
+              "t2knowlevel", "t1knowlevel", "grpgain", "grpgainr", "loggain"
+            ) ~ "btphe-04-v2",
           .env$poll_id == "new-haven-2004" &
             .data$legacy_field == "pminority" ~ "nh-04-v2",
           .env$poll_id == "zeguo-2005" &
