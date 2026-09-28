@@ -1,3 +1,4 @@
+source("R/analysis_phase_recruitment.R")
 source("R/paths.R")
 source("R/metadata.R")
 source("R/exports.R")
@@ -5,6 +6,7 @@ source("R/analysis_poll_metadata.R")
 source("R/analysis_tables.R")
 source("R/analysis_covariates.R")
 source("R/analysis_attitudes.R")
+source("R/analysis_phases.R")
 
 tables <- build_analysis_tables()
 directory <- project_path("output", "analysis")

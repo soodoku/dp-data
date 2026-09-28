@@ -541,6 +541,42 @@
       }
     },
     {
+      "name": "analysis_phase_roles",
+      "path": "metadata/analysis_phase_roles.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "source_dataset",
+            "type": "string"
+          },
+          {
+            "name": "score_wave",
+            "type": "string"
+          },
+          {
+            "name": "wave",
+            "type": "string"
+          },
+          {
+            "name": "wave_role",
+            "type": "string"
+          },
+          {
+            "name": "timing_evidence",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
       "name": "canonical_columns",
       "path": "metadata/canonical_columns.csv",
       "profile": "tabular-data-resource",

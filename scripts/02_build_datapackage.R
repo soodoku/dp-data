@@ -15,6 +15,7 @@ resources <- c(
   "archive_collections",
   "artifacts",
   "canonical_tables",
+  "analysis_phase_roles",
   "canonical_columns",
   "knowledge_batteries",
   "survey_sources",

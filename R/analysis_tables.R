@@ -593,6 +593,7 @@ build_analysis_tables <- function() {
   )
   scores <- analysis_scores(items, participants, sources$marousi)
   attitudes <- analysis_attitudes(participants)
+  recruitment <- analysis_phase_recruitment(participants, sources)
   stopifnot(
     !anyDuplicated(participants[c(
       "poll_id", "source_dataset", "respondent_id"
@@ -622,6 +623,10 @@ build_analysis_tables <- function() {
     analysis_item_responses = items,
     analysis_scores = scores,
     analysis_attitudes = attitudes$catalog,
-    analysis_attitude_responses = attitudes$responses
+    analysis_attitude_responses = attitudes$responses,
+    analysis_phase_participants = recruitment$participants,
+    analysis_phase_scores = analysis_phase_scores(
+      scores, items, recruitment$participants, sources, recruitment
+    )
   )
 }

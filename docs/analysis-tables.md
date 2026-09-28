@@ -153,3 +153,31 @@ reversing a scale and does not require an invertible covariance matrix. Average
 within-group standard deviation is an alternative dispersion summary. Both
 summaries give each available policy measure equal weight within its poll; neither
 requires assigning a shared left–right direction to different policy questions.
+
+The phase exports separate event timing from the historical selected-wave names.
+`analysis_phase_participants` retains the available recruitment frame, including
+Marousi's 1,275 telephone respondents. Its existing 146 grouped respondents retain
+their original keys and covariates. Additional respondents have source-based keys;
+unknown attendance stays unknown rather than being inferred from a missing group.
+`analysis_phase_scores` uses the evidence in `metadata/analysis_phase_roles.csv`:
+`t0` is pre-arrival, `t1` arrival, `t2` immediate exit, and `t3` a later follow-up.
+Original score labels and timing evidence accompany every score. New Haven's
+questionnaire after its first deliberative session is `interim_1`, not arrival.
+NIC's second source wave is immediate exit, while its third is a ten-month
+follow-up. An arrival questionnaire is not established for NIC.
+
+A blank knowledge battery within an observed questionnaire scores zero. A wholly
+absent questionnaire scores missing. When the available fields cannot establish
+questionnaire presence, `wave_observed` is missing: a downstream phase comparison
+must not silently treat that uncertainty as either an observed zero or absence.
+Identifiers and generated correctness flags cannot establish questionnaire
+presence. Source batteries remain separate; equal numerical ranges do not make
+different batteries interchangeable. Unverified timing is excluded from these
+phase exports, while all historical selected-wave exports remain available.
+
+These exports support descriptive paired changes and pre-arrival selection
+comparisons. The source data do not generally identify selection-adjusted causal
+effects. In Marousi, sixteen exit codes disagree with telephone IDs in the original
+merge; the authored row associations are preserved, and paired comparisons remain
+conditional on that unresolved linkage. Unknown attendance and unknown discussion
+groups must remain visible in downstream coverage and uncertainty reports.
