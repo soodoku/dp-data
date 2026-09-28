@@ -52,8 +52,8 @@ monarchy_knowledge_items <- function(survey, wave) {
 }
 
 monarchy_demographics <- function(survey) {
-  school <- read_source_codes(survey, "B12A", 1:6)
-  qualification <- read_source_codes(survey, "B12B", 1:14)
+  school <- recode_source_values(survey, "B12A", c(1:5, NA_real_))
+  qualification <- recode_source_values(survey, "B12B", c(1:13, NA_real_))
   education <- dplyr::case_when(
     qualification %in% 7:11 ~ 1,
     qualification %in% 4:6 ~ .66,
@@ -63,16 +63,18 @@ monarchy_demographics <- function(survey) {
   )
   age_band <- read_source_codes(survey, "AGEB", 2:11)
   age_midpoints <- c(18.5, 25, 35, 45, 55, 65, 74, 83)
-  age <- dplyr::coalesce(age_midpoints[match(age_band, 2:9)], age_band)
+  age <- age_midpoints[match(age_band, 2:9)]
   tibble::tibble(
     female = as.numeric(read_source_codes(survey, "SEX", 1:2) != 1),
-    minority = as.numeric(read_source_codes(survey, "B16", 1:8) != 1),
+    minority = recode_source_values(survey, "B16",
+      c(0, rep(1, 6), NA_real_)
+    ),
     age = age,
     education_four = education,
     education_three = collapse_historical_education(education),
     higher_education = as.numeric(education >= .33),
     political_interest_t1 = recode_source_values(survey, "A6",
-      c(1, .66, .33, 0, NA_real_, 6)
+      c(1, .66, .33, 0, NA_real_, NA_real_)
     )
   )
 }
