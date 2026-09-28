@@ -7,22 +7,14 @@ historical_group_summary <- function(value, group, statistic = mean) {
   result
 }
 
-historical_entropy <- function(value, categories) {
-  stopifnot(categories %in% c(2L, 4L))
+categorical_entropy <- function(value) {
+  stopifnot(is.numeric(value), all(is.finite(value) | is.na(value)))
   frequencies <- table(round(value, 2))
   if (!length(frequencies)) {
     return(NA_real_)
   }
-  probabilities <- as.numeric(frequencies) / length(value)
-  # The historical helper divides by all group rows, including missing answers.
-  probabilities <- if (categories == 2L) {
-    c(probabilities[1], 1 - probabilities[1])
-  } else {
-    # Fewer than four observed categories historically produced a missing score.
-    probabilities[seq_len(4L)]
-  }
-  terms <- ifelse(probabilities == 0, 0, probabilities * log2(probabilities))
-  -sum(terms)
+  probabilities <- as.numeric(frequencies) / sum(frequencies)
+  -sum(probabilities * log2(probabilities))
 }
 
 historical_genvar <- function(attitudes) {
@@ -64,14 +56,16 @@ historical_composition <- function(values, group, early_high_income) {
     values$education_four, group,
     stats::var
   )
-  entropy <- purrr::map2(
-    list(values$female, values$minority, values$education_four), c(2L, 2L, 4L),
-    function(value, categories) {
+  entropy <- purrr::map(
+    list(values$female, values$minority, values$education_four),
+    function(value) {
       historical_group_summary(value, group, function(x, ...) {
-        historical_entropy(x, categories)
+        categorical_entropy(x)
       })
     }
   ) |> do.call(what = cbind)
+  combined_entropy <- rowSums(entropy, na.rm = TRUE)
+  combined_entropy[rowSums(!is.na(entropy)) == 0L] <- NA_real_
   tibble::tibble(
     groupsize = size, pfemale = female, pminority = average(values$minority),
     varfemale = female * (1 - female), sdfemale = sqrt(female * (1 - female)),
@@ -80,6 +74,6 @@ historical_composition <- function(values, group, early_high_income) {
     phighinc = average(early_high_income),
     meanxtreme = average(values$attitude_extremity),
     pfemale_ind = (female * size - values$female) / (size - 1),
-    entropy = rowSums(entropy, na.rm = TRUE)
+    entropy = combined_entropy
   )
 }

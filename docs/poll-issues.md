@@ -1984,10 +1984,10 @@ In group 9707, the female share rises from 8/19 = 0.421052632 to 8/18 =
 The resulting female share, variance and SD change for all 35 respondents in
 those two groups; the leave-one-out share changes for 33 observed genders and
 becomes missing for the two unknown genders. The combined group entropy also
-changes for those 35 rows. The existing centralized leave-one-out and entropy
-helpers retain their historical denominator conventions; a separate
-cross-poll review of missing-aware group formulas is needed before changing
-those shared definitions. Case-level old and new values are frozen in
+changed for those 35 rows at the respondent-correction stage. The entropy
+comparison is now superseded by the separately approved shared correction in
+X-03. The leave-one-out helper still retains its historical denominator and
+needs its own assessment. Case-level old and new values from BTPHE-01 are frozen in
 `audit/corrections/btp-health-education-2005/approved_values.csv`.
 
 ### BTPHE-02: Funding index and float storage reproduce the original definition
@@ -2265,14 +2265,15 @@ ethnicity without inventing which unrecorded answer was given. All 278 people
 and group memberships remain. Under the existing central mean helper, groups
 5310 and 5316, each containing 17 people, move from 3/17 minority
 (0.1764705882352941) to 2 known minorities among 16 observed ethnicities
-(0.125). Two person flags and 34 repeated group shares would change.
+(0.125). Two person flags and 34 repeated group shares change.
 
-The current historical entropy helper still uses the full group denominator
-for the binary complement, so its minority component would remain
+Before the separately approved shared correction, the historical entropy
+helper used the full group denominator
+for the binary complement, so the BGC-06 respondent correction alone leaves its minority component at
 0.672294817075638 in both groups. That is not evidence that unknown ethnicity
-has been incorporated correctly into diversity. Missing-aware entropy needs
-one shared cross-poll assessment; do not patch the formula inside this poll's
-recode. The user approved the respondent correction on 2026-09-27. It changes
+was incorporated correctly into diversity by the inherited formula. The
+separately approved shared correction in X-03 handles entropy centrally; no
+formula is patched inside this poll's recode. The user approved the respondent correction on 2026-09-27. It changes
 two person flags and 34 group-share cells while preserving all 278 people,
 raw zeros and every prior correction. The shared entropy correction is a
 separate, explicitly authorized change; its comparisons follow in X-03.
@@ -4113,10 +4114,11 @@ Case-level old and new values are in
 The four people are in groups 9103, 9107 and 9115. Group minority shares move
 from 1/7 to 0/6, 2/10 to 1/9, and 6/13 to 4/11, respectively; the `pminority`
 field changes for all 30 people in those groups. No other aggregate field
-changes. In particular, the centralized historical entropy helper divides by
-full group size and absorbs missing binary answers into the complementary
-category, so its value stays the same. That missing-aware formula issue is
-recorded in X-03 and has not been altered as part of this poll correction.
+changed at this respondent-correction stage. The former historical entropy
+helper divided by full group size and absorbed missing binary answers into
+the complementary category, leaving its value unchanged. The separately
+approved shared entropy correction in X-03 now supersedes that diversity
+calculation; the NH-06 respondent values and participation remain preserved.
 
 ### NH-07: Historical airport index replaced an attainable 0.625 with 0.675
 
@@ -4404,8 +4406,8 @@ missing answers as incorrect; preserve that as a named scoring policy while
 retaining raw response reasons. Partial attitude-index means have changing
 observed denominators. Neither policy should be silently generalized to the other.
 The centralized `pfemale_ind` helper uses full group size in its leave-one-out
-denominator, while `pfemale` omits missing genders; the entropy helper also
-divides observed categories by full group size. BTPHE-01 exposes this mismatch
+denominator, while `pfemale` omits missing genders. The former entropy helper
+also divided observed categories by full group size. BTPHE-01 exposes this mismatch
 in groups 9707 and 9727; NH-06 shows why the minority entropy can remain
 unchanged when refusal is restored to missing. A change to these shared
 formulas must be assessed across all polls and frozen separately from the
@@ -4431,13 +4433,87 @@ the unknown person's answer missing. Which respondents belong in the summary
 and how much information a component requires must be made explicit; unknown
 answers do not establish a complementary demographic category.
 
-These are reproduced behaviors of the shared helper, not new poll-specific
-recodes. `tests/testthat/test-polardata-derived.R` intentionally preserves
-these historical behaviors for reconstruction parity. The original
+These were reproduced behaviors of the inherited shared helper. The prior
+`tests/testthat/test-polardata-derived.R` intentionally preserved them for
+reconstruction parity; the approved correction replaces those expectations
+with mathematical and missingness checks. The original
 `historical-cdd-scripts:legacy/merge_data_scripts/03_data.R` likewise sums
 components with missing removal. Correcting the shared formulas requires one
 versioned cross-poll comparison, with component coverage recorded; it must
 not be folded silently into any of the respondent corrections above.
+
+**Shared entropy correction approved on 2026-09-27.** The user explicitly
+requested the shared fix. `R/polardata_derived.R` now computes Shannon entropy
+in bits from every observed rounded category frequency divided by the number
+of answered values. Missing answers are excluded from both category counts
+and denominator; an absent category contributes zero. A component with no
+answers remains missing. The combined field remains the sum of available
+marginal gender, minority and education entropies, with an entirely unknown
+combined score missing. It is not a joint entropy, a standardized index, or a
+claim that every poll measures the same education construct. Existing rounding
+to two decimals and all respondent input coding are preserved.
+
+An independent reference calculation captured each poll's actual composition
+universe before editing the helper. BTP General Election 2004 computes its
+composition on 299 source people before exporting 248; that population remains
+unchanged. Recalculating from the final export alone would wrongly change 14
+of its 15 group scores. Using the actual 299-person summary population changes
+only four groups (9403, 9410, 9413, 9415), containing 54 exported people. The
+other 20 poll composition builders use their selected respondent populations.
+Across all 21 reconstructed polls, the rebuilt output matches the independent
+reference: 245 of 397 group scores change beyond the existing 1e-10 comparison
+tolerance, repeated over 3,436 of 5,869 exported people; no
+respondent, membership or non-entropy field changes from this shared fix.
+
+The earlier 185-group / 2,511-person absent-category diagnostic used only
+exported people. Matching the actual producer populations establishes 184
+groups / 2,506 exported people with observed education whose component was
+omitted. This refines the diagnostic count; it does not change a poll's sample.
+Coverage is recorded explicitly: 363 groups have all three observed components,
+34 have two. Retaining the historical available-component sum does not make
+those totals equally complete; the component audit makes that distinction
+visible. The all-components-unknown and unassigned-group boundaries are tested
+synthetically, since no current exported group has wholly unknown components.
+
+Europolis needs a distinct interpretation: source `educ1` asks the age at
+completing full-time education. The maintained school-leaving-age proxy,
+including its existing still-studying conversion, yields 23 rounded values
+across 348 attendees, rather than four qualification categories. The old helper
+silently used only its first four observed frequencies. All 25 Europolis group
+scores change when every observed value is counted. Group 711 has 12 observed
+education answers among 14 people across seven values: its education component
+changes from 1.292089 to 2.625815 bits. Group 7125 reaches 3.5 education bits
+(16 observed answers, 12 values); combined entropy reaches 5.278967 bits in
+group 7124. A four-category ceiling would be inappropriate for this existing
+proxy. No binning or new education recode is imposed by the arithmetic fix;
+comparability or an alternative qualification measure needs its own review.
+
+The new definition is `entropy-observed-v2` for every poll. The independently
+calculated [frozen comparisons](../audit/corrections/shared-entropy/approved_values.csv)
+retain immutable historical, preceding-release and approved values for all
+5,869 identities, including NIC's missing historical ID and the two previously
+approved BTPGE additions absent from the original benchmark. The [component
+audit](../audit/corrections/shared-entropy/group_components.csv) records source
+and exported group sizes, observed counts, category counts, coverage and each
+old/new component. Prior poll correction snapshots are preserved as evidence;
+the shared entropy comparison supersedes only their entropy values.
+The separate leave-one-out missing-answer denominator issue in `pfemale_ind`
+remains for its own shared assessment; no leave-one-out formula is changed here.
+
+There are also 230 final-digit differences in 15 other group scores, at most
+4.4408920985006262e-16, from calculating both binary probabilities directly
+rather than using one probability's complement. Thus 3,666 exported entropy
+values differ at the bit level, of which 3,436 exceed the existing 1e-10
+tolerance. The frozen comparison retains both kinds of changes; the 245-group
+figure describes differences above tolerance, not every changed text line.
+
+The source rebuild matches the frozen reference for every identity. Source and
+Data Package validation, mathematical boundary tests, all 21 frozen comparisons,
+representative source-built poll regressions, provenance checks and lint pass.
+Aggregate parity has zero unexplained differences. The shared change leaves
+all respondent tables byte-identical to the BGC-06 commit; current canonical
+analysis exports remain byte-identical to the preceding main version. No model
+or paper results were rerun.
 
 ### X-04: Person-level identity requires more than matching scores
 
