@@ -90,9 +90,10 @@ historical_derived_measures <- function(polls) {
       dplyr::mutate(
         poll_id = .env$poll_id,
         definition_version = dplyr::case_when(
+          .data$legacy_field == "entropy" ~ "entropy-observed-v2",
           .env$poll_id == "tomorrows-europe-2007" &
             .data$legacy_field %in% c(
-              "vareduc", "sdeduc", "meaned", "meanage", "entropy"
+              "vareduc", "sdeduc", "meaned", "meanage"
             ) ~ "te-05-v2",
           .env$poll_id == "europolis-2009" &
             .data$legacy_field == "meanage" ~ "euro-06-v2",
@@ -130,7 +131,7 @@ historical_derived_measures <- function(polls) {
             .data$legacy_field == "meanage" ~ "aus05-v2",
           .env$poll_id == "btp-health-education-2005" &
             .data$legacy_field %in% c(
-              "pfemale", "varfemale", "sdfemale", "pfemale_ind", "entropy"
+              "pfemale", "varfemale", "sdfemale", "pfemale_ind"
             ) ~ "btphe-01-v2",
           .env$poll_id == "btp-health-education-2005" &
             .data$legacy_field %in% c(
@@ -141,6 +142,8 @@ historical_derived_measures <- function(polls) {
             ) ~ "btphe-04-v2",
           .env$poll_id == "new-haven-2004" &
             .data$legacy_field == "pminority" ~ "nh-04-v2",
+          .env$poll_id == "bulgaria-crime-2002" &
+            .data$legacy_field == "pminority" ~ "bgc06-v2",
           .env$poll_id == "zeguo-2005" &
             .data$legacy_field %in% c(
               "meanxtreme", "avgsd", "genvar"

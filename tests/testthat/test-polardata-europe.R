@@ -1,4 +1,5 @@
 source(file.path(root, "R", "respondents.R"))
+source(file.path(root, "R", "respondent_parity.R"))
 source(file.path(root, "R", "polardata.R"))
 source(file.path(root, "R", "polardata_rebuild.R"))
 
@@ -24,13 +25,18 @@ test_that("European and Australian aggregates match every historical field", {
         "grpgain", "loggain", "meanxtreme", "meanage"
       ),
       "tomorrows-europe-2007" = c(
-        "vareduc", "sdeduc", "meaned", "meanage", "entropy"
+        "vareduc", "sdeduc", "meaned", "meanage"
       ),
       "europolis-2009" = "meanage",
       character()
     )
     for (field in names(result)) {
       expected <- as.numeric(reference[[field]])
+      if (field == "entropy") {
+        expected <- approved_reference_values(
+          polls[index], field, values$caseid, expected
+        )
+      }
       if (field %in% approved_fields) {
         approved_file <- if (polls[index] == "europolis-2009") {
           "approved_age_values.csv"

@@ -57,10 +57,13 @@ test_that("derived exports preserve unique people and reviewed gain", {
   expect_equal(wide$loggain, historical_log_score(wide$grpgain))
   europe_demographics <- derived$poll_id == "tomorrows-europe-2007" &
     derived$legacy_field %in% c(
-      "vareduc", "sdeduc", "meaned", "meanage", "entropy"
+      "vareduc", "sdeduc", "meaned", "meanage"
     )
   expect_setequal(unique(derived$definition_version[europe_demographics]),
                   "te-05-v2")
+  entropy <- derived[derived$legacy_field == "entropy", ]
+  expect_equal(nrow(entropy), 5869L)
+  expect_setequal(unique(entropy$definition_version), "entropy-observed-v2")
   nic_arrival <- derived$poll_id == "nic-1996" &
     derived$legacy_field == "avgsd2"
   expect_equal(sum(nic_arrival), 466L)
@@ -93,7 +96,7 @@ test_that("derived exports preserve unique people and reviewed gain", {
                   "ukge-05-v2")
   health_gender <- derived$poll_id == "btp-health-education-2005" &
     derived$legacy_field %in% c(
-      "pfemale", "varfemale", "sdfemale", "pfemale_ind", "entropy"
+      "pfemale", "varfemale", "sdfemale", "pfemale_ind"
     )
   expect_setequal(unique(derived$definition_version[health_gender]),
                   "btphe-01-v2")
