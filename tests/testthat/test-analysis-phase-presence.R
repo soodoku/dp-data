@@ -1,7 +1,8 @@
 source(file.path(root, "R", "analysis_phases.R"))
 
 phase_presence_polls <- c(
-  "nic-1996", "denmark-euro-2000", "btp-general-election-2004", "amr-2024"
+  "nic-1996", "denmark-euro-2000", "btp-general-election-2004", "amr-2024",
+  "btp-national-2003", "btp-presidential-primaries-2004"
 )
 phase_presence_scores <- arrow::read_parquet(project_path(
   "output", "analysis", "analysis_scores.parquet"
@@ -18,6 +19,33 @@ phase_presence_result <- analysis_phase_presence(
   )),
   read_metadata("measure_definitions"), read_metadata("polardata_targets")
 )
+
+test_that("documented BTP interviews survive non-substantive batteries", {
+  check <- phase_presence_result |>
+    dplyr::filter(source_dataset == "historical", wave == "t2",
+      (poll_id == "btp-national-2003" & respondent_id == "364") |
+        (poll_id == "btp-presidential-primaries-2004" &
+           respondent_id %in% c("950382", "950534"))
+    )
+  expect_equal(nrow(check), 3L)
+  expect_true(all(check$wave_observed))
+})
+
+test_that("BTP interview evidence does not equate noncompletion with absence", {
+  primaries <- tibble::tibble(caseid = 1:3, compf1 = c(1, 2, NA))
+  result <- analysis_btp_followup_presence(
+    primaries, "btp-presidential-primaries-2004"
+  )
+  expect_identical(result$form_observed, c(TRUE, NA, NA))
+  national <- tibble::tibble(
+    serial = 1:3, f_dt_st = c(20030116, 20030116, NA),
+    f_tm_st = c(61513, 61513, NA), f_dt_end = c(20030116, 20030116, NA),
+    f_tm_end = c(62459, 60000, NA), f_durat = c(9, 9, NA)
+  )
+  expect_identical(analysis_btp_followup_presence(
+    national, "btp-national-2003"
+  )$form_observed, c(TRUE, NA, NA))
+})
 
 test_that("NIC identifiers and generated flags do not establish an interview", {
   ids <- c("10000460", "10004670", "10011680", "10012410", "10012790")

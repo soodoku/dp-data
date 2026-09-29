@@ -1,5 +1,22 @@
 source(file.path(root, "R", "respondents.R"))
 
+test_that("explicit nonanswer labels exclude ambiguous and substantive codes", {
+  labels <- tibble::tribble(
+    ~source_column, ~source_value, ~value_label,
+    "knowledge", "77", "Don't know",
+    "attitude", "6", "8   can't choose",
+    "income", "-1", "(refused)",
+    "reading", "99", "all or nearly all",
+    "attitude", "3", "CC/Neither united no",
+    "ambiguous", "0", "Don't know",
+    "ambiguous", "0", "Neither agree nor disagree",
+    "substantive", "1", "People don't know enough about this issue"
+  )
+  observed <- source_nonanswer_codes(labels)
+  expect_equal(observed$source_column, c("knowledge", "attitude", "income"))
+  expect_equal(observed$source_value, c("77", "6", "-1"))
+})
+
 respondent_export <- function(name) {
   arrow::read_parquet(project_path(
     "output", "respondent",

@@ -163,6 +163,26 @@
       "local_artifact_id": "tanzania-original-regressions-artifact",
       "accessed": "2026-09-28",
       "notes": "Original deposit filename 11 regressions.do. Retained unchanged as coding evidence, not a production builder. Labels H61 and exposes the range scaling used by the published item table; raw cleaning syntax remains unavailable."
+    },
+    {
+      "reference_id": "tanzania-original-master-reference",
+      "poll_id": "tanzania-2015",
+      "kind": "script",
+      "title": "Original replication master script",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/6277234",
+      "local_artifact_id": "tanzania-original-master-artifact",
+      "accessed": "2026-09-28",
+      "notes": "Original deposited 00 all programs.do. Lines12-20 explicitly withhold seven cleaning scripts because they contain PII, including baseline and panel cleaning. Retained unchanged as source evidence; not executed."
+    },
+    {
+      "reference_id": "tanzania-original-readme-reference",
+      "poll_id": "tanzania-2015",
+      "kind": "research-design",
+      "title": "Original replication deposit README",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/6277240",
+      "local_artifact_id": "tanzania-original-readme-artifact",
+      "accessed": "2026-09-28",
+      "notes": "Original May2022 deposit README. Identifies three anonymized datasets and directs readers to the paper appendix for survey wording; does not supply the withheld raw-to-derived cleaning code."
     }
   ],
   "material_coverage": [
@@ -307,6 +327,36 @@
       "publication_status": "published",
       "notes": "Original deposit filename 11 regressions.do. Retained unchanged as coding evidence, not a production builder. Labels H61 and exposes the range scaling used by the published item table; raw cleaning syntax remains unavailable. Source URL: https://dataverse.harvard.edu/api/access/datafile/6277231",
       "relative_path": "scripts/replication-regressions.do"
+    },
+    {
+      "artifact_id": "tanzania-original-master-artifact",
+      "poll_id": "tanzania-2015",
+      "artifact_type": "script",
+      "title": "Original replication master script",
+      "location": "data/tanzania-2015/scripts/replication-master.do",
+      "source_id": "tanzania-original-master",
+      "original_archive_path": null,
+      "sha256": "e8ba38e0858282d8ba149faf22f0f57951c43c490a108a84911eb5e6bd7843e4",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original deposited 00 all programs.do. Lines12-20 explicitly withhold seven cleaning scripts because they contain PII, including baseline and panel cleaning. Retained unchanged as source evidence; not executed. Source URL: https://dataverse.harvard.edu/api/access/datafile/6277234",
+      "relative_path": "scripts/replication-master.do"
+    },
+    {
+      "artifact_id": "tanzania-original-readme-artifact",
+      "poll_id": "tanzania-2015",
+      "artifact_type": "research-design",
+      "title": "Original replication deposit README",
+      "location": "data/tanzania-2015/design/replication-readme.txt",
+      "source_id": "tanzania-original-readme",
+      "original_archive_path": null,
+      "sha256": "08aedba6f1a9050f95e4db54026dbdc36cdb0a02b3a019aa1393b7d496f07e67",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original May2022 deposit README. Identifies three anonymized datasets and directs readers to the paper appendix for survey wording; does not supply the withheld raw-to-derived cleaning code. Source URL: https://dataverse.harvard.edu/api/access/datafile/6277240",
+      "relative_path": "design/replication-readme.txt"
     }
   ],
   "document_previews": []
