@@ -16,6 +16,54 @@ nic <- read_data("data/nic2-2003/survey.dta")
 nic <- nic[nic$casetype %in% 1, ]
 online <- read_data("data/btp-national-2003/survey.dta")
 archive <- read_data(archive_path)
+master_path <- "data/btp-national-2003/source-materials/master-survey.sav"
+master <- haven::read_sav(project_path(master_path))
+names(master) <- tolower(names(master))
+stopifnot(
+  !anyDuplicated(master$serial),
+  identical(as.numeric(master$serial), as.numeric(archive$serial))
+)
+master_fields <- grep("^q[bf][0-9]", names(archive), value = TRUE)
+stopifnot(length(master_fields) == 205L, all(master_fields %in% names(master)))
+master_checks <- purrr::map_dfr(master_fields, function(field) {
+  original <- as.numeric(master[[field]])
+  publication <- as.numeric(archive[[field]])
+  tibble::tibble(
+    field = field, n = length(original),
+    missing_differences = sum(is.na(original) != is.na(publication)),
+    value_differences = sum(original != publication, na.rm = TRUE)
+  )
+})
+stopifnot(
+  all(master_checks$missing_differences == 0),
+  all(master_checks$value_differences == 0)
+)
+readr::write_csv(master_checks, file.path(out, "master_raw_checks.csv"))
+timing_fields <- c(
+  "dt_start", "dt_end", "tm_start", "tm_end", "f_dt_st", "f_dt_end",
+  "f_tm_st", "f_tm_end", "duration", "f_durat"
+)
+precision <- purrr::map_dfr(timing_fields, function(field) {
+  original <- as.numeric(master[[field]])
+  publication <- as.numeric(archive[[field]])
+  rounded <- readBin(
+    writeBin(original, raw(), size = 4), "double", length(original), size = 4
+  )
+  tibble::tibble(
+    field = field, label = attr(master[[field]], "label"),
+    observed = sum(!is.na(original)),
+    missing_differences = sum(is.na(original) != is.na(publication)),
+    value_differences = sum(original != publication, na.rm = TRUE),
+    max_difference = max(abs(original - publication), na.rm = TRUE),
+    float32_differences = sum(rounded != publication, na.rm = TRUE)
+  )
+})
+stopifnot(
+  all(precision$missing_differences == 0),
+  all(precision$float32_differences == 0),
+  !any(master$serial[master$dt_start > 20021209] %in% online$serial)
+)
+readr::write_csv(precision, file.path(out, "source_precision.csv"))
 stopifnot(
   nrow(nic) == 340, nrow(online) == 245,
   !anyDuplicated(nic$nicid), !anyDuplicated(online$serial),
@@ -189,7 +237,7 @@ changes <- purrr::map_dfr(c("NIC2", "BTP"), function(poll) {
 readr::write_csv(changes, file.path(out, "definition_changes.csv"))
 
 paths <- c(
-  archive_path, "data/nic2-2003/survey.dta",
+  archive_path, master_path, "data/nic2-2003/survey.dta",
   "data/btp-national-2003/survey.dta", "data/shared/papers/foreign-policy.pdf"
 )
 hashes <- tibble::tibble(

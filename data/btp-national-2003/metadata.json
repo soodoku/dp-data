@@ -406,6 +406,16 @@
       "local_artifact_id": "btp-national-publication-survey",
       "accessed": "2026-09-29",
       "notes": "Unchanged Jennifer_online_March14.dta from cdd-data-20260923 bundle SHA2565dde554c16bd4bfdea5bf55962c3652b198df19d67646ad9d25df423d423992a; archive inventory audit/cdd_archive_files.csv. Separate publication-era version:674 coded respondents and867 numeric variables; no text columns or direct contact fields. Reproduces published trade tables; not a replacement for the maintained245-person source. Source rights retained."
+    },
+    {
+      "reference_id": "btp-national-master-survey",
+      "poll_id": "btp-national-2003",
+      "kind": "data",
+      "title": "BTP National original full survey",
+      "url": null,
+      "local_artifact_id": "btp-national-master-survey",
+      "accessed": "2026-09-29",
+      "notes": "Unchanged Both_Waves_Final_Client.sav from the CDD source archive; same 674 respondents and 205 raw questionnaire fields as publication-survey.dta. Preserves exact recorded interview dates before Stata float32 rounding. Experimental/control labels are source labels, not evidence of randomized arm allocation. Does not replace the maintained 245-person source. Source rights retained."
     }
   ],
   "material_coverage": [
@@ -895,6 +905,21 @@
       "publication_status": "published",
       "notes": "Unchanged Jennifer_online_March14.dta from cdd-data-20260923 bundle SHA2565dde554c16bd4bfdea5bf55962c3652b198df19d67646ad9d25df423d423992a; archive inventory audit/cdd_archive_files.csv. Separate publication-era version:674 coded respondents and867 numeric variables; no text columns or direct contact fields. Reproduces published trade tables; not a replacement for the maintained245-person source. Source rights retained.",
       "relative_path": "source-materials/publication-survey.dta"
+    },
+    {
+      "artifact_id": "btp-national-master-survey",
+      "poll_id": "btp-national-2003",
+      "artifact_type": "data",
+      "title": "BTP National original full survey",
+      "location": "data/btp-national-2003/source-materials/master-survey.sav",
+      "source_id": "btp-national-master-survey",
+      "original_archive_path": "data/us_fp_online/master_data/Both_Waves_Final_Client.sav",
+      "sha256": "bef0b22dd3912dd680a54418aa1f7c7615376b5a4a124e2ac6a0e0bab531ebb6",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged Both_Waves_Final_Client.sav from the CDD source archive; same 674 respondents and 205 raw questionnaire fields as publication-survey.dta. Preserves exact recorded interview dates before Stata float32 rounding. Experimental/control labels are source labels, not evidence of randomized arm allocation. Does not replace the maintained 245-person source. Source rights retained.",
+      "relative_path": "source-materials/master-survey.sav"
     }
   ],
   "document_previews": [
