@@ -81,7 +81,7 @@ test_that("raw missing codes and literal waves survive the long export", {
   europe <- responses$poll_id %in% c("europolis-2009", "tomorrows-europe-2007")
   expect_setequal(
     unique(responses$source_wave[europe]),
-    c("T1", "T3", NA_character_)
+    c("T1", "T2", "T3", NA_character_)
   )
 })
 
@@ -321,6 +321,11 @@ test_that("Britain recodes depend only on declared raw responses", {
     build <- builders[[poll]]
     expected <- build(survey)
     fields <- unique(inputs$source_column[inputs$poll_id == poll])
+    if (poll == "uk-monarchy-1996") {
+      fields <- union(fields, c("source_row", "WEEKEND",
+        grep("^R[0-9]", names(survey), value = TRUE)
+      ))
+    }
     raw <- survey[fields]
     expect_true(all(grepl("^[a-z][a-z0-9_]*$", names(expected))))
     expect_identical(build(raw), expected)
@@ -371,9 +376,13 @@ test_that("historical aliases do not overwrite source identity", {
 test_that("preserved cross-wave dependencies remain explicit", {
   monarchy <- read_poll_survey("uk-monarchy-1996")
   before <- build_monarchy_individual(monarchy)
-  monarchy$R5C <- ifelse(monarchy$R5C == 1, 2, 1)
+  attended <- monarchy$WEEKEND == 1
+  monarchy$R5C[attended] <- ifelse(monarchy$R5C[attended] == 1, 2, 1)
   changed <- build_monarchy_individual(monarchy)
-  expect_true(all(before$knowledge_t2 != changed$knowledge_t2))
+  expect_true(all(
+    before$knowledge_t2[attended] != changed$knowledge_t2[attended]
+  ))
+  expect_true(all(is.na(changed$knowledge_t2[!attended])))
   expect_identical(before$knowledge_t1, changed$knowledge_t1)
   monarchy$Q5C <- ifelse(monarchy$Q5C == 1, 2, 1)
   after <- build_monarchy_individual(monarchy)
@@ -425,12 +434,15 @@ test_that("utility extremity retains its historical calculation stage", {
     survey <- read_poll_survey(poll)
     before <- build_utility_individual(survey, poll)
     addfac <- survey$ADDFAC2
-    survey$ADDFAC2 <- rep(0, nrow(survey))
+    survey$ADDFAC2[survey$PART == 1] <- 0
     changed <- build_utility_individual(survey, poll)
-    expect_true(any(changed$conservation_t2 != before$conservation_t2))
+    expect_true(any(changed$conservation_t2 != before$conservation_t2,
+      na.rm = TRUE
+    ))
+    conservation <- c("conservation_t2", "conservation_t2_midpoint_imputed")
     expect_identical(
-      changed[setdiff(names(changed), "conservation_t2")],
-      before[setdiff(names(before), "conservation_t2")]
+      changed[setdiff(names(changed), conservation)],
+      before[setdiff(names(before), conservation)]
     )
     survey$ADDFAC2 <- addfac
     survey$LOWINC1 <- rep(0, nrow(survey))

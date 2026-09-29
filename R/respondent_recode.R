@@ -16,6 +16,37 @@ recode_source_values <- function(survey, field, values, missing = numeric()) {
   values[match(value, codes)]
 }
 
+add_midpoint_imputed_variants <- function(
+  values, fallback = .5, absent_form = rep(FALSE, nrow(values)),
+  imputed = NULL) {
+  stopifnot(
+    is.data.frame(values), all(vapply(values, is.numeric, logical(1))),
+    !any(endsWith(names(values), "_midpoint_imputed")),
+    length(absent_form) == nrow(values), !anyNA(absent_form),
+    is.logical(absent_form), is.numeric(fallback), !anyNA(fallback)
+  )
+  if (is.null(imputed)) {
+    if (length(fallback) == 1L) {
+      fallback <- stats::setNames(rep(fallback, ncol(values)), names(values))
+    }
+    stopifnot(setequal(names(fallback), names(values)))
+    imputed <- purrr::imap(values, function(value, name) {
+      dplyr::coalesce(value, fallback[[name]])
+    }) |>
+      tibble::as_tibble()
+  }
+  stopifnot(
+    is.data.frame(imputed), nrow(imputed) == nrow(values),
+    identical(names(imputed), names(values)),
+    all(vapply(imputed, is.numeric, logical(1)))
+  )
+  imputed <- imputed |>
+    dplyr::rename_with(\(name) paste0(name, "_midpoint_imputed"))
+  result <- dplyr::bind_cols(values, imputed)
+  result[absent_form, ] <- NA_real_
+  result
+}
+
 as_historical_float <- function(value) {
   # SPSS/Stata float storage is part of the historical numeric representation.
   bytes <- writeBin(as.numeric(value), raw(), size = 4)

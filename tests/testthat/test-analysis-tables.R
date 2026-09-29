@@ -188,13 +188,15 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   expect_false(anyNA(climate_people$female))
   expect_equal(sum(climate_people$arm == "completed"), 962L)
   expect_equal(sum(climate_people$arm == "invited_noncompleter"), 7018L)
-  expect_equal(sum(climate_people$attended %in% TRUE), 962L)
-  expect_equal(sum(climate_people$attended %in% FALSE), 834L)
-  expect_equal(sum(is.na(climate_people$attended)), 7018L)
+  expect_equal(sum(climate_people$attended %in% TRUE), 962L + 184L)
+  expect_equal(sum(climate_people$attended %in% FALSE), 834L + 6834L)
+  expect_equal(sum(is.na(climate_people$attended)), 0L)
   expect_equal(sum(climate_people$panel), 1633L)
-  expect_true(all(is.na(climate_people$attended[
-    climate_people$arm == "invited_noncompleter"
-  ])))
+  noncompleters <- dplyr::filter(climate_people, arm == "invited_noncompleter")
+  expect_equal(sum(noncompleters$attended), 184L)
+  inferred <- noncompleters$attendance_basis ==
+    "inferred_absent_post_questionnaire"
+  expect_equal(sum(inferred), 6408L)
   ni_people <- dplyr::filter(
     people, poll_id == "northern-ireland-2007",
     source_dataset == "control"
@@ -247,12 +249,14 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   absent_items <- responses$response_status == "wave_absent"
   expect_equal(
     sum(absent_items),
-    414L + (911L - 387L) * 11L + 2246L * 5L + 43L * 7L + 10L * 5L
+    414L + (911L - 387L) * 11L + 2246L * 5L + 43L * 7L + 10L * 5L +
+      34L * 4L + 599L * 9L
   )
   expect_true(all(
     responses$poll_id[absent_items] %in%
       c("btp-general-election-2004", "nic-1996", "swepco-1996", "wtu-1996",
-        "btp-online-primaries-2004", "california-whats-next-2011")
+        "btp-online-primaries-2004", "california-whats-next-2011",
+        "zeguo-2005", "uk-monarchy-1996")
   ))
   expect_true(all(is.na(responses$correct[absent_items])))
 })

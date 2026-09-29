@@ -9,7 +9,9 @@ unresolved_poll_rows <- function(survey, values) {
 build_zeguo_derived <- function(survey, values) {
   rows <- unresolved_poll_rows(survey, values)
   group <- 5200 + survey$groupnum[rows]
-  attitudes <- zeguo_attitudes(survey, 1L)[rows, ]
+  attitudes <- zeguo_attitudes(survey, 1L) |>
+    dplyr::select(dplyr::ends_with("_midpoint_imputed"))
+  attitudes <- attitudes[rows, ]
   result <- historical_derived_columns(
     values, group, attitudes
   )

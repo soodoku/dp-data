@@ -41,10 +41,33 @@ Cor–Sood battery IDs have their own columns. Four Zeguo questions use a
 different historical post-wave ID, recorded in `historical_item_id_t2`.
 The item-response table maps each source battery to the canonical ID, retaining
 `source_column`, numeric or text answer where available, scored correctness,
-and response status. The historical scored export lacks its raw answer in this
-table; its source fields remain in `output/respondent/source_responses.parquet`.
-Its `n_observed` is null because the scored export does not establish which
-answers were observed.
+and the original adapter’s response status. `response_reason` supplies the
+normalized reason; `response_status` preserves the earlier adapter classification
+for provenance. Historical raw answers are recovered through verified
+question and source-wave mappings; source codes also remain in
+`output/respondent/source_responses.parquet`. Score-level `n_observed` retains
+the existing completeness convention and may remain null for historical scored
+exports; the enriched item rows provide the more detailed response evidence.
+
+Knowledge uses its own convention, separate from attitude imputation.
+`knowledge_response` is `correct`, `incorrect`, or `dk`; explicit “don't know,”
+“cannot say,” and equivalent documented labels map to `dk`. The original code
+and `source_response_label` are retained. `response_reason` distinguishes a
+blank, refusal, inapplicable question, absent questionnaire, and unresolved
+source code. Those cases are not relabeled `dk`. Where a source preserves only
+correctness, a zero cannot establish whether the person attempted the question.
+The separate integer `correct` column counts reviewed nonanswers as zero within
+an observed questionnaire, while retaining missingness for absent questionnaires
+and unresolved cases. This item-level zero filling does not change total scores,
+which already count those nonanswers as zero. No guessing adjustment is imposed
+in this data layer.
+
+For `guess::fit_item_lca()` or `guess::fit_person_lca()`, map `correct` to 1,
+`incorrect` to 0, and `dk` to the explicit `"dk"` category, and pass
+`na_as = "missing"`. The package otherwise interprets `NA` as DK by default.
+The binary correctness column cannot recover which zeros were explicit DK;
+use the trichotomy and retain the reason for excluded responses. Guessing
+adjustment and its assumptions remain downstream analysis choices.
 The 2019 America in One Room codebook supplies offered choices and keyed answer
 text. The recovered climate preparation script supplies Q19–Q24 options, keys
 and nonanswer labels; equivalent missing-code documentation for Q17/Q18 remains
@@ -54,6 +77,16 @@ copies the preceding question's options, but the expert table and codebook agree
 on the infection-prevention options and key 5. Existing scoring is preserved;
 [Poll issues](poll-issues.md#amr-04--preserve-verified-phases-and-recovered-measurement-evidence-implemented)
 records the source conflict and remaining evidence gaps.
+
+Attitude indices in the respondent layer distinguish missing-preserving values
+from imputed derivatives by name: `research_t2` and
+`research_t2_midpoint_imputed`, for example. The suffix applies throughout the
+poll builders wherever nonresponse is replaced by a midpoint. Metadata specify
+whether the fill occurs before or after scaling; the imputed result therefore
+need not equal 0.5. Both variants remain missing for an absent departure
+questionnaire. Historical aggregate mappings explicitly select the authored
+imputed version. Available-component means and substantive neutral answers are
+not themselves midpoint imputation.
 
 The selected-wave tables retain the historical analysis labels: `t1` and
 `t2` mean the selected initial and later scores. These do not consistently mean
@@ -84,15 +117,24 @@ people without a group; analysis views select attendees, observed wave pairs
 or known memberships as needed. This preserves evidence for selection and
 attrition comparisons.
 
-The participant table separates `assignment` from observed `arm`
-and `attended`. In America in One Room 2019, `assignment = recruitment`
+The participant table separates `assignment`, the retained source category
+`arm`, and event attendance `attended`. Both participant tables carry the same
+`attended` and nonnullable `attendance_basis` on their shared person keys.
+Attendance can be observed or inferred; the basis makes that distinction explicit.
+In America in One Room 2019, `assignment = recruitment`
 identifies the baseline recruitment sample; NORC later subsampled this frame for
 invitations. Its nonattenders are `recruitment_nonattender`, since individual
 invitation status is not established. In the climate study, baseline treatment
 respondents were invited to register. The 962 who completed the event and post
-survey are `completed`; the other 7,018 are `invited_noncompleter`. Their attendance
-is null, since failure to complete does not establish nonattendance. Controls
-retain `attended = FALSE`, and documented completers retain `attended = TRUE`.
+survey are `completed`; the other 7,018 remain `invited_noncompleter`. Their
+`SESSION1`–`SESSION4` records establish some attendance for 184 and no attendance
+for 426 with four observed zeros. The other 6,408 have no session records and
+no observed answers in the raw immediate post questionnaire; their nonattendance
+is inferred, with `attendance_basis = inferred_absent_post_questionnaire`.
+Positive session evidence takes precedence over an absent post questionnaire.
+Controls retain `attended = FALSE`, and documented completers retain
+`attended = TRUE`; assignment, completion category and panel inclusion do not
+change.
 AMR retains 1,280 attendees and 1,139 controls; the paper's 1,847 invited
 nonattenders are absent from its deposit. These rows therefore cannot identify
 a full invitation intention-to-treat effect. Its supplied weights apply within
@@ -102,11 +144,11 @@ studies, but analysis of attendees is not an intention-to-treat estimate.
 `small_group_id` identifies a
 discussion group when observed; `cluster_id` is the inference cluster and is a
 village in Tanzania. Missing values mean the fact was not established in the
-available source, not that it did not occur. `panel` identifies the reviewed
-historical analysis sample or the study's available T1/T2 panel. Tanzania has one
-known exception pending correction: respondent `1323` (`HHID == 240301`) has
-only a follow-up score but is labeled panel. There are 1,858 flagged records
-and 1,857 with both measurements; the person and observed follow-up must be retained.
+available source, not that it did not occur. `panel` requires both selected
+comparison scores and retains the original sample restrictions. It does not
+define eligibility for every phase contrast. Tanzania respondent `1323`
+(`HHID == 240301`) has only a follow-up score and is outside the paired panel;
+the person and observed follow-up remain. The corrected panel has 1,857 people.
 For Cor–Sood respondents, group IDs come from the reviewed
 `output/memberships.parquet` on the same `(poll_id, respondent_id)` key. That
 source supplies 6,147 memberships across 21 polls, including BTP online
@@ -270,12 +312,27 @@ arrival/exit batteries remain separate from the selected-wave nine-item battery.
 that every person completed every wave or that discussion-group IDs are known.
 
 `analysis_phase_participants` adds `attendance_status`, `attendance_evidence`,
-and nullable `sessions_attended`. Seven Cor–Sood cohorts now use source attendance
+and nullable `sessions_attended`. The common attendance helper runs after
+questionnaire presence is established. Unknown attendance becomes inferred
+nonattendance only when an immediate post-deliberation (`t2`) questionnaire is
+absent; missing knowledge items within a returned form and missing later (`t3`)
+follow-up do not trigger this rule. Positive attendance evidence is retained
+even when exit is absent. Explicit source indicators take precedence: CPL, WTU
+and SWEPCO use `PART`, and Europolis uses labeled `GROUP_T1BIS`. Zeguo uses a
+matched onsite POST form, so p36 and p211 are attendees despite lacking groups,
+and p90 remains an attendee despite a blank knowledge battery.
+
+Seven Cor–Sood cohorts use source attendance
 flags, session records, logged participation, or observed onsite exit answers.
 An online follow-up questionnaire alone does not establish attendance: 78 online
 Primaries respondents attended no meetings, and 46 of those filled a post survey.
 Scheduled sessions do not count as attended sessions. Other unannotated source
 flags and unresolved attendance are explicitly described in the evidence field.
+Sixteen additional overlapping historical/Cor source cohorts use the verified
+`(poll_id, source_row)` identity bridge. Both adapters read the same retained
+survey; this is not a positional join between independent deposits. The bridge
+transfers known attendance without merging records or changing cohort membership.
+The remaining unknown classifications stay explicit.
 
 `analysis_phase_scores.questionnaire_presence_status` distinguishes `observed`,
 `absent`, and `unknown`. Presence uses raw questionnaire answers, excluding IDs

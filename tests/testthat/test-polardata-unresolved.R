@@ -48,7 +48,9 @@ unresolved_test_fields <- function(poll) {
   )
   for (wave in 1:2) {
     fields <- c(fields, stats::setNames(
-      paste0(attitude, "_t", wave),
+      paste0(attitude, "_t", wave,
+        if (poll == "zeguo") "_midpoint_imputed" else ""
+      ),
       paste0(prefix, ".t", wave, names(attitude))
     ))
   }

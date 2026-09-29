@@ -19,8 +19,14 @@ directory <- project_path("output", "analysis")
 fs::dir_create(directory)
 manifest <- purrr::imap(tables, function(data, table_name) {
   version <- switch(table_name,
-    analysis_participants = "2", analysis_phase_participants = "3",
-    analysis_phase_scores = "2", "1"
+    analysis_participants = "3",
+    analysis_phase_participants = "4",
+    analysis_item_responses = "2",
+    analysis_phase_item_responses = "2",
+    analysis_attitudes = "2",
+    analysis_attitude_responses = "2",
+    analysis_phase_scores = "2",
+    "1"
   )
   write_typed_export(data, table_name, directory, schema_version = version)
 }) |>

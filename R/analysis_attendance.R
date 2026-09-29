@@ -332,3 +332,164 @@ reconcile_analysis_presence <- function(
     phase_participants = update_panel(phase_participants, phase_eligibility)
   )
 }
+
+analysis_attendance_contract <- function(
+  participants, phase_participants, phase_scores,
+  survey_reader = read_poll_survey, climate = NULL
+) {
+  keys <- c("poll_id", "source_dataset", "respondent_id")
+  people <- phase_participants
+  stopifnot(!anyDuplicated(people[keys]), !anyDuplicated(participants[keys]))
+  people$attendance_basis <- dplyr::case_when(
+    is.na(people$attended) ~ "unknown",
+    people$source_dataset == "historical" ~ "historical_sample_membership",
+    grepl("^Reviewed ", people$attendance_evidence) ~
+      "reviewed_attendance_evidence",
+    TRUE ~ "retained_source_classification"
+  )
+  for (poll in c("cpl-1996", "wtu-1996", "swepco-1996", "europolis-2009")) {
+    rows <- which(people$poll_id == poll &
+                    people$source_dataset == "historical")
+    if (!length(rows)) next
+    survey <- survey_reader(poll)
+    position <- match(people$source_row[rows], survey$source_row)
+    stopifnot(!anyNA(position), !anyDuplicated(position))
+    flag_field <- switch(poll,
+      "cpl-1996" = "part",
+      "europolis-2009" = "GROUP_T1BIS",
+      "PART"
+    )
+    allowed <- if (poll == "europolis-2009") 1:3 else 1:2
+    flag <- as.numeric(survey[[flag_field]][position])
+    stopifnot(all(flag %in% allowed))
+    people$attended[rows] <- flag == 1
+    people$attendance_basis[rows] <- "source_indicator"
+    people$attendance_evidence[rows] <- if (poll == "europolis-2009") {
+      "GROUP_T1BIS: 1 participant; 2 nonparticipant; 3 control; source labels"
+    } else {
+      "PART: 1 Participant; 2 Non-Participant; source codebook"
+    }
+  }
+  rows <- which(people$poll_id == "zeguo-2005" &
+                  people$source_dataset == "historical")
+  if (length(rows)) {
+    survey <- survey_reader("zeguo-2005")
+    position <- match(people$respondent_id[rows], as.character(survey$p))
+    stopifnot(!anyNA(position), !anyDuplicated(position))
+    returned <- zeguo_departure_observed(survey)[position]
+    observed_rows <- rows[returned]
+    stopifnot(!any(people$attended[observed_rows] %in% FALSE))
+    people$attended[observed_rows] <- TRUE
+    people$attendance_basis[observed_rows] <- "observed_post_questionnaire"
+    people$attendance_evidence[observed_rows] <- paste(
+      "Unique matched onsite POST questionnaire; blank quiz items",
+      "do not erase attendance; group assignment is not required"
+    )
+  }
+  rows <- which(people$poll_id == "a1r-climate-2021" &
+                  people$source_dataset == "control")
+  if (length(rows)) {
+    if (is.null(climate)) {
+      climate <- readr::read_tsv(project_path(
+        "data", "a1r-climate-2021", "participants.tab"
+      ), show_col_types = FALSE)
+    }
+    stopifnot(!anyNA(climate$CaseId), !anyDuplicated(climate$CaseId))
+    position <- match(people$respondent_id[rows], as.character(climate$CaseId))
+    stopifnot(!anyNA(position), !anyDuplicated(position))
+    raw <- climate[position, ]
+    sessions <- as.matrix(raw[paste0("SESSION", 1:4)])
+    stopifnot(all(is.na(sessions) | sessions %in% 0:1))
+    session_count <- rowSums(sessions == 1, na.rm = TRUE)
+    complete_sessions <- rowSums(!is.na(sessions)) == 4L
+    positive <- session_count > 0L
+    negative <- complete_sessions & !positive
+    stopifnot(
+      !any(positive & people$attended[rows] %in% FALSE),
+      !any(negative & people$attended[rows] %in% TRUE)
+    )
+    people$attended[rows[positive]] <- TRUE
+    people$attended[rows[negative]] <- FALSE
+    people$attendance_basis[rows[positive | negative]] <-
+      "source_session_records"
+    people$attendance_evidence[rows[positive | negative]] <- paste(
+      "SESSION1:SESSION4 record actual participation; any 1 establishes",
+      "attendance, four observed zeros establish no attendance"
+    )
+    people$sessions_attended[rows[complete_sessions]] <-
+      as.integer(session_count[complete_sessions])
+    observed <- questionnaire_observed(raw, "^T2Q[0-9]+[A-Z]?$")
+    check <- phase_scores |>
+      dplyr::filter(
+        poll_id == "a1r-climate-2021",
+        source_dataset == "control", wave == "t2"
+      )
+    found <- match(check$respondent_id, people$respondent_id[rows])
+    stopifnot(
+      !anyNA(found),
+      !any(check$wave_observed %in% FALSE & observed[found])
+    )
+  }
+  exit_presence <- phase_scores |>
+    dplyr::filter(wave == "t2") |>
+    dplyr::summarise(
+      absent_exit = any(wave_observed %in% FALSE),
+      observed_exit = any(wave_observed %in% TRUE),
+      .by = dplyr::all_of(keys)
+    )
+  stopifnot(!any(exit_presence$absent_exit & exit_presence$observed_exit))
+  people <- people |>
+    dplyr::left_join(exit_presence, by = keys, relationship = "one-to-one")
+  inferred <- is.na(people$attended) & people$absent_exit %in% TRUE
+  people$attended[inferred] <- FALSE
+  people$attendance_basis[inferred] <- "inferred_absent_post_questionnaire"
+  people$attendance_evidence[inferred] <- paste(
+    "Nonattendance inferred from an absent immediate post-deliberation",
+    "questionnaire; not a direct participation observation"
+  )
+  people <- people |>
+    dplyr::select(-"absent_exit", -"observed_exit") |>
+    dplyr::mutate(attendance_status = dplyr::case_when(
+      attended %in% TRUE ~ "attended",
+      attended %in% FALSE ~ "did_not_attend", TRUE ~ "unknown"
+    ))
+  historical <- people |>
+    dplyr::filter(source_dataset == "historical") |>
+    dplyr::select(
+      "poll_id", "source_row", "attended", "attendance_basis",
+      "attendance_evidence"
+    )
+  stopifnot(!anyDuplicated(historical[c("poll_id", "source_row")]))
+  cor_rows <- which(people$source_dataset == "cor_sood" &
+                      people$poll_id %in% historical$poll_id)
+  if (length(cor_rows)) {
+    bridge <- people[cor_rows, c("poll_id", "source_row")] |>
+      dplyr::left_join(historical,
+        by = c("poll_id", "source_row"), relationship = "one-to-one"
+      )
+    stopifnot(!anyNA(bridge$attendance_basis))
+    known <- !is.na(people$attended[cor_rows]) & !is.na(bridge$attended)
+    stopifnot(all(people$attended[cor_rows][known] == bridge$attended[known]))
+    fill <- is.na(people$attended[cor_rows]) & !is.na(bridge$attended)
+    people$attended[cor_rows[fill]] <- bridge$attended[fill]
+    people$attendance_basis[cor_rows[fill]] <- bridge$attendance_basis[fill]
+    people$attendance_evidence[cor_rows[fill]] <- paste(
+      "Verified same-source row bridge:", bridge$attendance_evidence[fill]
+    )
+    people$attendance_status[cor_rows[fill]] <- ifelse(
+      bridge$attended[fill], "attended", "did_not_attend"
+    )
+  }
+  position <- match(
+    do.call(paste, participants[keys]), do.call(paste, people[keys])
+  )
+  stopifnot(
+    !anyNA(position), !anyNA(people$attendance_basis),
+    identical(people[keys], phase_participants[keys]),
+    identical(people$panel, phase_participants$panel),
+    identical(people$assignment, phase_participants$assignment)
+  )
+  participants$attended <- people$attended[position]
+  participants$attendance_basis <- people$attendance_basis[position]
+  list(participants = participants, phase_participants = people)
+}

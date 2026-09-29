@@ -16,9 +16,12 @@ utility_attitudes <- function(survey, poll_id, wave) {
   result <- corrected_attitudes(survey, poll_id, wave)
   if (poll_id == "wtu-1996" && wave == 2L) {
     reduce <- read_utility_value(survey, poll_id, "reduce2", 0:10)
-    result$conservation_t2 <- dplyr::coalesce(
+    result$conservation_t2_midpoint_imputed <- dplyr::coalesce(
       scale_historical_range(reduce, 3, 10), .5
     )
+    result$conservation_t2_midpoint_imputed[
+      utility_absent_form(survey, poll_id, wave)
+    ] <- NA_real_
   }
   result
 }
@@ -44,8 +47,8 @@ raw <- tibble::tibble(
   reduce1 = as.numeric(survey$REDUCE1),
   addfac2 = as.numeric(survey$ADDFAC2),
   reduce2 = as.numeric(survey$REDUCE2),
-  historical_post = historical_all$conservation_t2,
-  candidate_post = candidate_all$conservation_t2
+  historical_post = historical_all$conservation_t2_midpoint_imputed,
+  candidate_post = candidate_all$conservation_t2_midpoint_imputed
 )
 stopifnot(sum(raw$historical_sample) == 230L)
 readr::write_csv(raw, file.path(directory, "respondent_comparison.csv"))
@@ -72,7 +75,8 @@ checks <- raw |>
     addfac_mean = mean(.data$addfac2, na.rm = TRUE),
     reduce_mean = mean(.data$reduce2, na.rm = TRUE),
     item_correlation = cor(.data$addfac2, .data$reduce2,
-                           use = "complete.obs")
+      use = "complete.obs"
+    )
   )
 readr::write_csv(checks, file.path(directory, "source_checks.csv"))
 wide <- arrow::read_parquet("output/polardata/polardata.parquet")
@@ -81,7 +85,8 @@ positions <- match(wide$caseid[keep], before$caseid)
 stopifnot(length(keep) == 230L, !anyNA(positions))
 wide[[field]][keep] <- before[[field]][positions]
 readr::write_tsv(
-  wide, file.path(directory, "historical-polardata.tab"), na = ""
+  wide, file.path(directory, "historical-polardata.tab"),
+  na = ""
 )
 wide[[field]][keep] <- after[[field]][positions]
 readr::write_tsv(wide, file.path(directory, "candidate-polardata.tab"), na = "")

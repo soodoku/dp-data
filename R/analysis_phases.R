@@ -1,3 +1,6 @@
+source(project_path("R", "source_monarchy.R"))
+source(project_path("R", "source_zeguo.R"))
+
 analysis_phase_control_scores <- function(sources, roles) {
   specifications <- list(
     list(
@@ -100,6 +103,13 @@ analysis_btp_followup_presence <- function(survey, poll) {
   )
 }
 
+analysis_monarchy_presence <- function(survey) {
+  tibble::tibble(
+    source_row = survey$source_row,
+    departure_observed = monarchy_departure_observed(survey)
+  )
+}
+
 analysis_phase_presence <- function(
   scores, items, measures, definitions, targets, amr = NULL
 ) {
@@ -187,6 +197,50 @@ analysis_phase_presence <- function(
   btp_polls <- intersect(unique(out$poll_id), c(
     "btp-national-2003", "btp-presidential-primaries-2004"
   ))
+  if (any(out$poll_id == "uk-monarchy-1996")) {
+    forms <- analysis_monarchy_presence(
+      read_poll_survey("uk-monarchy-1996")
+    )
+    identities <- arrow::read_parquet(project_path(
+      "output", "respondent", "people.parquet"
+    )) |>
+      dplyr::filter(poll_id == "uk-monarchy-1996") |>
+      dplyr::select("poll_id", "respondent_id", "source_row")
+    forms <- identities |>
+      dplyr::left_join(forms, by = "source_row", relationship = "one-to-one") |>
+      dplyr::mutate(source_dataset = "historical", wave = "t2") |>
+      dplyr::select(-"source_row")
+    out <- out |>
+      dplyr::left_join(forms,
+        by = c("poll_id", "source_dataset", "respondent_id", "wave"),
+        relationship = "one-to-one"
+      ) |>
+      dplyr::mutate(wave_observed = dplyr::coalesce(
+        departure_observed, wave_observed
+      )) |>
+      dplyr::select(-"departure_observed")
+  }
+  if (any(out$poll_id == "zeguo-2005")) {
+    survey <- read_poll_survey("zeguo-2005")
+    forms <- tibble::tibble(
+      poll_id = "zeguo-2005", source_dataset = "historical",
+      respondent_id = as.character(survey$p), wave = "t2",
+      departure_observed = zeguo_departure_observed(survey)
+    )
+    out <- out |>
+      dplyr::left_join(forms,
+        by = c("poll_id", "source_dataset", "respondent_id", "wave"),
+        relationship = "one-to-one"
+      )
+    stopifnot(
+      !any(out$wave_observed %in% TRUE & out$departure_observed %in% FALSE)
+    )
+    out <- out |>
+      dplyr::mutate(wave_observed = dplyr::coalesce(
+        departure_observed, wave_observed
+      )) |>
+      dplyr::select(-"departure_observed")
+  }
   if (length(btp_polls)) {
     forms <- purrr::map(btp_polls, function(poll) {
       analysis_btp_followup_presence(read_poll_survey(poll), poll)

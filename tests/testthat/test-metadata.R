@@ -42,6 +42,7 @@ test_that("the Frictionless package names every metadata table", {
       "component_field_exclusions",
       "source_field_exclusions",
       "knowledge_items",
+      "knowledge_response_codes",
       "items",
       "knowledge_join_contracts",
       "poll_references",

@@ -138,11 +138,11 @@ These are bounded next actions, not permission to recode:
 
 | Issue | Remaining decision or evidence |
 | --- | --- |
-| WTU/SWEPCO absent departure attitudes | Knowledge absence is already corrected in WTU-06/SWE-05. The separate proposal would make six post attitude indices missing for 1,000 WTU and 1,246 SWEPCO absent forms (6,000 and 7,476 cells). Their current imputed scores are not observed answers: WTU research is 4/9 and its other five indices are .5; all six SWEPCO indices are .5. Approval remains pending. |
-| Utility observed-form scoring | The authored missing-item fills and empirical wave calibrations are distinct from whole-form absence. Preserve them until their alternatives and consequences receive a separate decision; an observed questionnaire with an omitted item is not an absent questionnaire. |
+| WTU/SWEPCO absent departure attitudes | Approved September 29 and implemented: both plain and explicitly midpoint-imputed departure indices remain missing for 1,000 WTU and 1,246 SWEPCO absent forms. See WTU-07/SWE-06 and X-03. |
+| Utility observed-form scoring | Plain indices now preserve all-component nonresponse; explicitly named `_midpoint_imputed` variants retain authored fills. Historical aggregates explicitly select those variants. Empirical wave calibrations remain a separate unresolved choice. |
 | NIC2 security | Current source marks the complete four-action block “Use This One”; an available-action version is also authored. Switching changes 12 baseline and three exit scores, with no final missingness change. Choose the intended missing-item policy explicitly (NIC2-02). |
 | Climate discussion groups | ROOM alone yields 58 labels; ROOM × T2P_OPTION yields the original script's 105 groups. Forty-seven reused labels combine different schedules for 862 of 962 completers. Composite identity correction awaits approval (A1RC-05). |
-| Zeguo unmatched departures | Thirty-four people lack a matched POST identity but receive nine neutral post attitudes and six derived post knowledge values. Proposed missing values retain all 233 historical people; a matched questionnaire with blank quiz items remains a scored zero. Do not borrow the unlinked NP32 block (ZG-07). |
+| Zeguo unmatched departures | Approved September 29 and implemented: 34 unmatched departures are missing in both attitude variants and post-dependent knowledge. All 233 historical people remain; observed blank quiz items still score zero. Do not borrow the unlinked NP32 block (ZG-07). |
 | Zeguo Township Image | Current Q25/Q31 and the paper's Q8/Q9/Q25/Q27 battery are different authored definitions. The alternative changes 161 baseline and 169 post scores, 160 extremities and all 233 repeated group summaries. Its 176-person means still do not exactly match the paper; preserve current values pending the definition decision (ZG-08). |
 | Published-result bridges | NIC2/BTP trade means and BTPHE report percentages remain unreproduced. Recover report-era sample/index/weight syntax rather than adjust source scores to force agreement (NIC2-02, BTPHE-06). |
 | Original source records | Bulgaria 2007 has no recovered respondent data. Other limits include Bulgaria Crime Version E syntax, earliest TE migration recoding, fielded-form versions, anonymous phase links, group rosters and Marousi's conflicting departure IDs. These require source evidence, not an arbitrary numerical choice. |
@@ -1502,6 +1502,54 @@ aggregate parity comparisons have zero unexplained differences. The focused
 regression test passes 22 assertions, including preservation of valid school
 answers and the full attendee demographic values. No model was rerun.
 
+**UKM-08 — absent departure forms incorrectly scored zero (corrected).**
+The source `WEEKEND` field is labeled “attended weekend”: 258 records have
+code 1 and 599 have code -1. All 61 raw departure-question fields (`R1` through
+`R22D`, selected by `^R[0-9]`) equal -1 for every one of those 599 records:
+36,539 placeholders and no observed post answers. All 258 attendees have
+recorded values across that block. This establishes whole-form absence using
+the source participation cohort and the full questionnaire, rather than
+inferring it from quiz correctness or group assignment.
+
+The retained [codebook](../data/uk-monarchy-1996/codebook.pdf), PDF page 6,
+reports 599 nonparticipants and 258 participants. Pages 83 (`LINETH2`/W5a)
+and 92 (`LINETHR2`/W8a) explicitly label the 599 absent departure responses
+“Non-participant.” That analytical codebook uses 101; the maintained raw file
+uses -1. The evidence agrees on the cohort and missing interview, not on a
+shared numeric sentinel. The raw R-block is the source departure instrument,
+corresponding to the codebook's post self-completion W-block; the registered
+comparison remains pre-arrival to immediate exit (`t0` to `t2`).
+
+Previously, the historical item recoder compared -1 to each answer key and
+returned nine zeros. Canonical presence could then treat these literal numeric
+placeholders as evidence of an observed interview. The user-authorized common
+absent-questionnaire rule now applies through one shared
+`monarchy_departure_observed()` source helper, used by the respondent recoder
+and phase presence reader. It accepts the documented -1 placeholders or missing
+values, rejects a nonparticipant row containing an actual departure answer,
+and retains observed-form blanks as zero-scored quiz omissions. A participant
+with an entirely unobserved form remains unresolved rather than automatically
+being labeled absent. Source row subsets and reordered rows use the same rule.
+
+For the full 857-person source, nine departure item scores become missing for
+599 nonparticipants (5,391 cells). Six post-dependent respondent measures become
+missing for those same people (3,594 cells): departure knowledge, joint
+knowledge, both gains, log joint knowledge and the high-joint-knowledge flag.
+In each canonical selected/phase table, 599 departure scores and their 5,391
+item scores likewise become missing; `n_correct` is missing and `n_observed`
+is zero for the absent interview. Raw -1 codes remain available. Existing
+attendance inference classifies those 599 unknown attendance records as false,
+with its explicit absence-inference basis. All people, baseline answers and
+scores, group assignments and panel flags are retained.
+
+Independent before/after comparison verifies that every field for all 258
+historical attendees is identical. The 258-person historical aggregate and
+the corresponding Cor cohort are unchanged; this correction removes invented
+outcomes from the wider nonparticipant source. Focused tests cover the full
+61-field absence evidence, contradictory observed answers, an observed form
+with a blank nine-item quiz, row subsets and order changes, canonical presence,
+and all six missing post-dependent measures.
+
 ## UK General Election 1997 — uk-general-election-1997
 
 **UKGE-01 — preserve eligibility and scale-specific scoring.** `filter == 1`
@@ -2280,10 +2328,10 @@ item denominators, raw responses and WTU aggregate values are retained.
 Unanswered items within an observed form still score zero. The original source
 and reproducible identity-level evidence are retained as described in WTU-01.
 
-### WTU-07 / SWE-06: Counterfactual absence rule for departure attitudes
+### WTU-07 / SWE-06: Absent departure questionnaires and explicit imputation
 
-**Proposal tested; not adopted.** A candidate using the same questionnaire-
-presence rule as the approved knowledge correction removes six imputed departure
+**Approved and implemented September 29, 2026.** The rule uses the same questionnaire-
+presence evidence as the approved knowledge correction and removes six imputed departure
 attitudes for each of the 1,000 WTU and 1,246 SWEPCO nonparticipants. The original
 portable files contain no observed value in any of the 81 fields ending in `2`
 for these people; the 230 WTU and 232 SWEPCO attendees have observed post forms.
@@ -2305,7 +2353,11 @@ establish that input conservation. This does not endorse imputing omitted
 attitude items within an observed form, which remains a separate authored
 policy. The retained summaries and full-table comparisons are the
 `attitude_absence_*.csv` files in `audit/corrections/utilities-source-recovery/`.
-Adopting the candidate still requires the user's decision.
+The archived comparisons describe the isolated absence correction. The subsequent
+user-approved naming change exposes plain indices with missingness preserved and
+separate `_midpoint_imputed` variants (X-03); common attendance inference is a
+separate schema change, so the archived byte-identity claim does not describe
+the combined build.
 
 ## Australia republic 1999 — australia-republic-1999
 
@@ -6943,7 +6995,7 @@ cohort, identity or timing recode was applied in this audit.
 
 ### ZG-07: Thirty-four people have no matched participant departure questionnaire
 
-**Proposal only; awaiting the user's poll-specific decision.** For 34 of the
+**Approved and implemented September 29, 2026.** For 34 of the
 269 baseline source people, both `pp` (participant number at T2) and
 `preandpost` are missing, there is no matching participant POST source record,
 and all thirty merged departure project ratings and the four joined departure
@@ -6957,10 +7009,10 @@ the post-only candidate does not extend the absence rule to that ambiguous
 baseline score. The 34 people are outside the 233-person main
 sample and already have `panel=FALSE` in both canonical participant views.
 
-The current respondent layer gives each of these 34 people all nine departure
-attitudes at .5 and departure knowledge at zero. The proposed rule would leave
-their baseline measurements and source rows intact and mark only the absent
-participant departure measurements missing. That means 34 changes for each of
+The former respondent layer gave each of these 34 people all nine departure
+attitudes at .5 and departure knowledge at zero. The adopted rule leaves
+their baseline measurements and source rows intact and marks the absent
+participant departure measurements missing in both plain and imputed variants. That means 34 changes for each of
 the nine post attitude fields and each of six post-dependent knowledge fields:
 `knowledge_t2`, `knowledge_joint`, `knowledge_gain`, `knowledge_gain_joint`,
 `log_knowledge_joint` and `high_knowledge_joint`. Current gains range from −1 to
@@ -6986,14 +7038,17 @@ presence-only changes are retained in `absent_departure_executed_values.csv`.
 It preserves every matched POST numerical value, every baseline value, all 233
 main participants and their group summaries, all existing panel flags and all
 other polls' exported values. These checks do not establish unchanged downstream
-phase estimates. The candidate remains unadopted.
+phase estimates. The absence correction is now adopted. The archived comparison isolates that
+correction from the subsequent explicit imputation variants and common attendance
+provenance changes.
 
 This is distinct from an observed questionnaire with nonanswers. Participant
 **p90** has a verified POST record, filled demographics, 28 explicit project
 98 codes and two blank project items. Its four quiz answers are blank. The
-existing rule therefore retains zero quiz scores and midpoint attitudes for
-p90; it must not be masked by an all-missing-battery predicate. Its phase
-questionnaire presence is currently unknown. The executed candidate marks its
+adopted rule therefore retains zero quiz scores and explicitly named midpoint-
+imputed attitudes for p90; its plain all-missing attitudes remain missing, and it
+must not be masked by an all-missing-battery predicate. Its phase
+questionnaire presence was previously unknown. The adopted rule marks its
 verified matched POST as observed: one phase score presence and its label, and
 four phase item presence flags change, without changing p90's numerical scores.
 This may affect downstream phase coverage or phase-pair eligibility even though
@@ -7397,6 +7452,55 @@ distinct from a complete three-wave analysis sample.
 
 ### X-03: Typed missingness and explicit denominators
 
+**Explicit imputation names (approved September 29, 2026).** Across poll builders,
+an attitude measure that substitutes a midpoint for nonresponse has a separate
+snake_case name ending in `_midpoint_imputed`, after its wave suffix. For example,
+`research_t2` preserves an all-missing attitude index, whereas
+`research_t2_midpoint_imputed` retains the authored midpoint substitution.
+For WTU/SWEPCO and Zeguo, partial indices still average available components:
+this does not fill every omitted component or treat a substantive neutral
+answer as missing. Australia separately retains authored midpoint assignments
+inside its ranking component only in the explicitly imputed variant.
+Whole absent departure questionnaires remain missing in both variants.
+
+The metadata identify the source fields, stage of imputation and calibration.
+In particular, WTU departure research fills raw 5 before the fixed [1,10]
+rescaling, producing 4/9 rather than 0.5. WTU/SWEPCO conservation and renewables
+fill 0.5 after calibration. Zeguo fills 0.5 after its project-index calculation.
+Historical aggregate mappings and attitude-extremity calculations explicitly
+select the authored imputed variants; missing-preserving indices are independently
+available for new analyses. Completeness counts continue to count substantive
+source responses, not imputed values.
+
+
+
+**Global attitude-path check.** A source-code replay across all 21 reconstructed
+polls found four with nonresponse midpoint assignments: WTU, SWEPCO, Zeguo and
+Australia. The first three have 42 wave-specific indices; Australia adds four
+ranking variants. Its plain versions exclude ranking codes 97 (DK), 99 (not
+answered) and 100 (not applicable), while retaining the known Queen-first rank
+component of zero and averaging available republican components. Among the 347
+historical Australian participants, plain versus imputed scores differ for 30
+baseline and 35 post popular-preference indices (now missing), and 17 baseline
+and 61 post republican indices (different available-component means). All 46
+explicit imputed variants reproduce the previous authored values outside the
+approved absent-form correction.
+
+The additional canonical readers contain 174 baseline items across seven polls
+and use bounded rescaling without a midpoint fill; Tanzania's 22 attitude items
+also retain nonresponse as missing. NIC2 and BTP National/Health midpoint mappings
+are substantive response categories, not DK replacements. Michigan has no retained
+value-label dictionary, so this review establishes its implemented no-fill rule,
+not the meaning of every original code. This is coverage of all implemented
+attitude paths, not a claim that missing source records have been recovered for
+all 34 registered polls.
+
+The canonical attitude catalog retains 303 entries: 23 baseline IDs now name
+the imputation explicitly, with all 865,934 existing response values preserved.
+The downstream `dp-learning` attitude-summary function returns identical values
+for all 51,924 source-scoped respondent records. Historical replay scripts select
+the explicit imputed variants so that earlier approved corrections remain
+independently reproducible.
 
 **Source-label repair (2026-09-28).** The shared response reader previously used
 only SPSS/Stata missing-value declarations. Explicit value labels such as
@@ -7585,6 +7689,97 @@ five approved missing-value corrections: the three AUS-05 refused ages and
 the two BGC-06 unlabelled ethnicities. Every other participant field and all
 other analysis tables remain unchanged; entropy does not enter these exports.
 No model or paper results were rerun.
+
+#### Separate knowledge and attitude conventions (implemented September 29, 2026)
+
+Knowledge responses now retain a nullable `correct` / `incorrect` / `dk`
+classification, raw answer, source label and separate `response_reason` in both
+canonical item tables. Only documented DK/cannot-say equivalents become `dk`.
+Refusal, blank, combined nonanswer categories and absent questionnaires are not
+silently relabeled DK. Reviewed nonanswers within an observed questionnaire score
+zero in the separate integer `correct` field; an absent questionnaire remains
+missing. Enrichment preserves every person/battery score total. This policy is
+separate from attitude scoring: plain attitude indices preserve nonresponse, and
+authored midpoint-imputed alternatives carry `_midpoint_imputed` in their names.
+
+`metadata/knowledge_response_codes.csv` records field-specific evidence where
+retained value labels alone are insufficient. Denmark's separate arrival and
+exit dictionaries, California and Michigan's questionnaires, and the NIC
+codebook resolve source-wave response options. These sources preserve DK for
+subsequent guessing adjustment without imposing that adjustment upstream.
+`guess` consumers should use the trichotomy and `na_as = "missing"`; the
+package's default otherwise interprets missing inputs as DK.
+
+Remaining source limitations are explicit. Climate Q17/Q18 lack independently
+verified missing-code documentation. New Haven's combined baseline no-response/
+DK categories cannot be split retrospectively; its post Q36 field form and CATI
+instrument disagree about whether “same” was offered, with no observed terminal
+code 4 to resolve the discrepancy. California `t3q33 = 0` (source row 447,
+ID 526) and Michigan `t2q10 = 9` (source row 83, ID 501) remain unreviewed
+codes. Previously cleaned system-missing or score-only data cannot recreate a
+lost distinction between a blank and DK. No answer key changes are made here.
+
+All historical `output/polardata/` files remain byte-identical. Running the
+current dp-learning readers against the old and rebuilt upstream tables gives
+identical 10,272-row attendee panels and identical 8,486-row main model frames,
+including attitude and peer-knowledge predictors. Attendance and phase-specific
+analyses can change: ZG-07 documents the additional verified returned questionnaire
+and its effect on the phase gain. UKM-08 removes fabricated departure scores
+for 599 nonparticipants; it leaves all 258 attendees unchanged.
+
+#### Shared attendance classification (approved September 29, 2026)
+
+The user approved treating an absent immediate post-deliberation questionnaire
+as evidence of nonparticipation, with the inference clearly distinguished from
+an observed participation record. `analysis_attendance_contract()` applies this
+rule after independently established questionnaire presence. It fills unknown
+attendance only: a positive session or attendance record takes precedence over
+an absent exit form. Missing later follow-up, unassigned discussion groups and
+blank knowledge items within a returned form do not establish nonattendance.
+Both selected and phase participant tables now carry matching `attended` and
+nonnullable `attendance_basis`; assignment, source arm, panel, person identity
+and questionnaire responses remain separate and unchanged by this helper.
+
+| Source evidence | Classification change |
+| --- | --- |
+| CPL `part`; WTU/SWEPCO `PART`, codebooks label 1 participant and 2 nonparticipant | 1,030 CPL, 1,000 WTU and 1,246 SWEPCO previously unknown records become false with `source_indicator`. |
+| Europolis `GROUP_T1BIS`, retained value labels 1 participant, 2 nonparticipant, 3 control | 4,036 previously unknown records become false with `source_indicator`; participation is not inferred from group assignment. |
+| Zeguo uniquely matched onsite POST forms (ZG-07) | 34 absent forms imply false; p36 and p211 have returned forms and become true despite missing groups. The returned blank-quiz p90 remains true. All 36 remain outside the existing paired panel. |
+| Climate `SESSION1`–`SESSION4` and substantive raw `T2Q*` answers | Of 7,018 invited noncompleters, 184 have recorded attendance and become true; 426 have four observed zero session flags and become false. The remaining 6,408 have no session records or post-questionnaire answers and become inferred false. |
+| BTP General Election verified absent post forms and no stronger attendance classification | 33 previously unknown records become inferred false; known attendees with absent post forms remain attendees. |
+| Marousi full recruitment questionnaires | 1,116 phase-only records without either event questionnaire become inferred false; observed arrival or exit evidence retains true attendance. |
+
+Climate's 184 partial/completed-session attendees comprise 123 with one recorded
+session, 22 with two, 33 with three and six with four. They retain
+`arm = invited_noncompleter` and `panel = FALSE`. All 962 documented completers
+and 834 controls retain their attendance classifications. `FINAL_ATTEND` is
+not given invented code labels: the actual session fields establish positive
+participation, and raw post-response fields independently establish absence.
+This prevents the completion label from circularly defining questionnaire
+absence or erasing partial attendance.
+
+The historical and Cor adapters were independently rerun against the same
+`read_poll_survey()` inputs. Every one of the 4,705 Cor identities in the 16
+shared polls has the exact source row used by the historical adapter, including
+polls whose selection sorts source IDs. This bridge transfers known attendance
+only; no score-based linkage, cross-file row matching or pooled duplicate person
+is introduced. Twenty-eight Cor records whose historical attendance remains
+unknown remain unknown (24 Tomorrow's Europe and four BTP General Election).
+Seven other Cor cohorts retain their already reviewed source attendance evidence;
+the selected table now receives that evidence too, eliminating the previous
+1,964 selected-versus-phase attendance disagreements.
+
+Against the pre-change canonical tables, this attendance-only helper fills
+21,639 previously unknown selected classifications (6,749 true and 14,890 false)
+and 20,791 previously unknown phase classifications (4,863 true and 15,928 false).
+No known true/false value changes. Counts refer to source-scoped records, not
+unique people pooled across overlapping deposits. The differing totals reflect
+Marousi's additional phase-only recruitment records and the previous selected/
+phase inconsistency. Every prior panel flag, assignment, group, person key and
+non-attendance covariate is identical. Focused tests cover source indicators,
+partial participation, later-wave absence, returned blank quizzes, conflicting
+presence evidence and verified identity bridges. These classification changes
+are separate from the approved Texas, Zeguo and UK Monarchy absent-questionnaire score changes.
 
 ### X-04: Person-level identity requires more than matching scores
 

@@ -35,21 +35,6 @@ australia_ranking <- function(survey, wave) {
   }
   first <- read("firstop")
   second <- read("secop")
-  republic <- rep(NA_real_, nrow(survey))
-  midway <- if (wave == 1L) c(3, 97, 100) else c(3, 97, 99)
-  republic[which(second %in% midway)] <- .5
-  republic[which(first != 3 & second != 3 & second < 90)] <- 1
-  republic[which(first == 3)] <- 0
-  popular <- rep(NA_real_, nrow(survey))
-  popular[which(first == 1 & second == 3)] <- 1
-  popular[which((first == 1 & second == 2) |
-                  (first == 3 & second == 1))] <- .75
-  unsure <- first == 97 | second == 97
-  popular[which(!is.na(first) & !is.na(second) &
-                  (unsure | (first == 3 & second == 3)))] <- .5
-  popular[which((first == 2 & second == 1) |
-                  (first == 3 & second == 2))] <- .25
-  popular[which(first == 2 & second == 3)] <- 0
   ties <- australia_source_codes(survey, paste0("tiesbr", wave),
     c(1:5, 97, 99, 100)
   )
@@ -58,11 +43,37 @@ australia_ranking <- function(survey, wave) {
     c(1:5, 97, 99, 100)
   )
   head[head > 5 & !is.na(head)] <- NA_real_
-  republican <- rowMeans(cbind(republic, (5 - ties) / 4, (head - 1) / 4),
-    na.rm = TRUE
+  rank_values <- function(first, second, impute) {
+    if (!impute) {
+      first[!first %in% 1:3] <- NA_real_
+      second[!second %in% 1:3] <- NA_real_
+    }
+    republic <- rep(NA_real_, nrow(survey))
+    midway <- if (!impute) 3 else if (wave == 1L) c(3, 97, 100)
+    else c(3, 97, 99)
+    republic[which(second %in% midway)] <- .5
+    republic[which(first != 3 & second != 3 & second < 90)] <- 1
+    republic[which(first == 3)] <- 0
+    popular <- rep(NA_real_, nrow(survey))
+    popular[which(first == 1 & second == 3)] <- 1
+    popular[which((first == 1 & second == 2) |
+                    (first == 3 & second == 1))] <- .75
+    unsure <- first == 97 | second == 97
+    popular[which(!is.na(first) & !is.na(second) &
+                    (unsure | (first == 3 & second == 3)))] <- .5
+    popular[which((first == 2 & second == 1) |
+                    (first == 3 & second == 2))] <- .25
+    popular[which(first == 2 & second == 3)] <- 0
+    republican <- rowMeans(cbind(republic, (5 - ties) / 4, (head - 1) / 4),
+      na.rm = TRUE
+    )
+    republican[is.nan(republican)] <- NA_real_
+    tibble::tibble(popular = popular, republican = republican)
+  }
+  add_midpoint_imputed_variants(
+    rank_values(first, second, FALSE),
+    imputed = rank_values(first, second, TRUE)
   )
-  republican[is.nan(republican)] <- NA_real_
-  tibble::tibble(popular = popular, republican = republican)
 }
 
 australia_original_attitudes <- function(survey) {
@@ -117,6 +128,10 @@ build_australia_individual <- function(
     popular_t1 = ranking_before$popular, popular_t2 = ranking_after$popular,
     republican_t1 = ranking_before$republican,
     republican_t2 = ranking_after$republican,
+    popular_t1_midpoint_imputed = ranking_before$popular_midpoint_imputed,
+    popular_t2_midpoint_imputed = ranking_after$popular_midpoint_imputed,
+    republican_t1_midpoint_imputed = ranking_before$republican_midpoint_imputed,
+    republican_t2_midpoint_imputed = ranking_after$republican_midpoint_imputed,
     knowledge_t1 = baseline, knowledge_t2 = post, knowledge_joint = joint,
     knowledge_gain = post - baseline, knowledge_gain_joint = post - joint,
     log_knowledge_joint = historical_log_score(joint),

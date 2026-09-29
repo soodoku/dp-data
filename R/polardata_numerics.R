@@ -1,7 +1,8 @@
 # These diagnostics belong to benchmark review, never respondent construction.
 covariance_fingerprint <- function(covariance) {
   digest::digest(
-    as.numeric(covariance), algo = "sha256", serialize = TRUE,
+    as.numeric(covariance),
+    algo = "sha256", serialize = TRUE,
     serializeVersion = 2
   )
 }
@@ -87,7 +88,8 @@ group_covariance_audit <- function(attitudes, group, poll_id,
     key <- function(data) do.call(paste, c(data[keys], sep = "|"))
     result$reviewed_covariance <- key(result) %in% key(reviewed)
   }
-  result$numerical_exception <- with(result,
+  result$numerical_exception <- with(
+    result,
     reviewed_covariance & near_zero_eigenvalues > 0 &
       is.finite(source_genvar) & is.finite(benchmark_genvar) &
       benchmark_genvar >= 0 &
@@ -116,7 +118,8 @@ audit_historical_covariances <- function(benchmark, reviewed = NULL) {
       historical
     } else if (poll_id == "zeguo-2005") {
       list(
-        attitudes = zeguo_attitudes(survey, 1L),
+        attitudes = zeguo_attitudes(survey, 1L) |>
+          dplyr::select(dplyr::ends_with("_midpoint_imputed")),
         group = ifelse(!is.na(survey$preandpost), 5200 + survey$groupnum, NA)
       )
     } else {

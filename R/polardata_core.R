@@ -79,8 +79,10 @@ core_poll_profile <- function(survey, poll_id) {
     "uk-eu-1995" = individual[grep("^ukeu[.].*1[gr]$", names(individual))],
     "uk-crime-1994" = crime_attitudes(survey, 1L),
     "cpl-1996" = cpl_attitudes(survey, 1L),
-    "wtu-1996" = utility_attitudes(survey, poll_id, 1L),
-    "swepco-1996" = utility_attitudes(survey, poll_id, 1L),
+    "wtu-1996" = utility_attitudes(survey, poll_id, 1L) |>
+      dplyr::select(dplyr::ends_with("_midpoint_imputed")),
+    "swepco-1996" = utility_attitudes(survey, poll_id, 1L) |>
+      dplyr::select(dplyr::ends_with("_midpoint_imputed")),
     individual[
       grepl("_t1$", names(individual)) &
         !names(individual) %in% c("knowledge_t1", "political_interest_t1")
