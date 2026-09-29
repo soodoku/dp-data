@@ -1,0 +1,7 @@
+poll_id,study_id,pollname,source_dataset,battery_id,contrast,estimate,std_error,lower,upper,inference,n_people,n_known_groups,n_unknown_group,sample,n_incompatible_denominator,n_excluded_unknown_group,n_attendees_total,n_unknown_attendance
+zeguo-2005,zeguo-2005,Zeguo Township,historical,zeguo-2005:historical:knowledge,post_minus_arrival,NA,NA,NA,NA,no_eligible_pairs,0,0,0,available_paired_attendees,0,NA,233,36
+zeguo-2005,zeguo-2005,Zeguo Township,historical,zeguo-2005:historical:knowledge,arrival_minus_pre_arrival,NA,NA,NA,NA,no_eligible_pairs,0,0,0,available_paired_attendees,0,NA,233,36
+zeguo-2005,zeguo-2005,Zeguo Township,historical,zeguo-2005:historical:knowledge,post_minus_pre_arrival,0.111587982832618,0.02966243243392837,0.055171116437210815,0.16737428134099902,group_bootstrap,233,16,0,available_paired_attendees,0,NA,233,36
+zeguo-2005,zeguo-2005,Zeguo Township,historical,zeguo-2005:historical:knowledge,post_minus_arrival,NA,NA,NA,NA,no_eligible_pairs,0,0,0,all_three_observed_attendees,0,0,233,36
+zeguo-2005,zeguo-2005,Zeguo Township,historical,zeguo-2005:historical:knowledge,arrival_minus_pre_arrival,NA,NA,NA,NA,no_eligible_pairs,0,0,0,all_three_observed_attendees,0,0,233,36
+zeguo-2005,zeguo-2005,Zeguo Township,historical,zeguo-2005:historical:knowledge,post_minus_pre_arrival,NA,NA,NA,NA,no_eligible_pairs,0,0,0,all_three_observed_attendees,0,0,233,36

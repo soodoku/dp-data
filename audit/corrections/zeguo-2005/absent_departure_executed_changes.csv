@@ -1,0 +1,16 @@
+table,field,n_changed
+respondent_measures,value_numeric,510
+historical_knowledge_items,correct,136
+analysis_item_responses,correct,136
+analysis_item_responses,response_status,136
+analysis_scores,n_observed,34
+analysis_scores,n_correct,34
+analysis_scores,score,34
+analysis_phase_scores,n_observed,34
+analysis_phase_scores,n_correct,34
+analysis_phase_scores,score,34
+analysis_phase_scores,wave_observed,35
+analysis_phase_scores,questionnaire_presence_status,35
+analysis_phase_item_responses,correct,136
+analysis_phase_item_responses,response_status,136
+analysis_phase_item_responses,wave_observed,140

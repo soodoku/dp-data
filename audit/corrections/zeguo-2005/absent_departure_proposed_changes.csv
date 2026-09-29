@@ -19,10 +19,12 @@ analysis_scores,n_correct,34,0,0,missing
 analysis_phase_scores,score,34,0,0,missing
 analysis_phase_scores,n_correct,34,0,0,missing
 analysis_phase_scores,wave_observed,34,unknown,unknown,FALSE
-analysis_phase_scores,questionnaire_presence_status,34,unknown,unknown,not_observed
+analysis_phase_scores,questionnaire_presence_status,34,unknown,unknown,absent
 analysis_item_responses,correct,136,0,0,missing
-analysis_item_responses,response_status,136,scored,scored,not_observed
+analysis_item_responses,response_status,136,scored,scored,wave_absent
 analysis_phase_item_responses,correct,136,0,0,missing
-analysis_phase_item_responses,response_status,136,scored,scored,not_observed
+analysis_phase_item_responses,response_status,136,scored,scored,wave_absent
 analysis_phase_item_responses,wave_observed,136,unknown,unknown,FALSE
 historical_knowledge_items,correct,136,0,0,missing
+analysis_scores,n_observed,34,missing,missing,0
+analysis_phase_scores,n_observed,34,missing,missing,0

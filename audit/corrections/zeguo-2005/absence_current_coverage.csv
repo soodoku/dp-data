@@ -1,0 +1,4 @@
+poll_id,study_id,pollname,source_dataset,battery_id,phase,n_people,n_attendees,n_nonattendees,n_unknown_attendance,n_missing_phase,n_unknown_presence,n_absent_wave,n_observed_wave,n_scored,n_observed_missing_score,n_known_groups,n_unknown_group
+zeguo-2005,zeguo-2005,Zeguo Township,historical,zeguo-2005:historical:knowledge,t0,269,233,0,36,0,1,0,268,268,0,16,36
+zeguo-2005,zeguo-2005,Zeguo Township,historical,zeguo-2005:historical:knowledge,t1,269,233,0,36,269,269,0,0,0,0,16,36
+zeguo-2005,zeguo-2005,Zeguo Township,historical,zeguo-2005:historical:knowledge,t2,269,233,0,36,0,35,0,234,234,0,16,36

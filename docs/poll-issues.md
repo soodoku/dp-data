@@ -2280,6 +2280,33 @@ item denominators, raw responses and WTU aggregate values are retained.
 Unanswered items within an observed form still score zero. The original source
 and reproducible identity-level evidence are retained as described in WTU-01.
 
+### WTU-07 / SWE-06: Counterfactual absence rule for departure attitudes
+
+**Proposal tested; not adopted.** A candidate using the same questionnaire-
+presence rule as the approved knowledge correction removes six imputed departure
+attitudes for each of the 1,000 WTU and 1,246 SWEPCO nonparticipants. The original
+portable files contain no observed value in any of the 81 fields ending in `2`
+for these people; the 230 WTU and 232 SWEPCO attendees have observed post forms.
+Those 81 fields include the broader retained post block, whereas WTU-06's 74
+count refers to the direct post fields in its original knowledge audit.
+
+An executed candidate build changes exactly 6,000 WTU and 7,476 SWEPCO
+`respondent_measures.value_numeric` cells to missing. WTU research was 4/9 and
+its other five indices were .5; all six SWEPCO indices were .5. Every other
+column, person, baseline value, knowledge value and observed-form attitude is
+identical. CPL is unchanged. Synthetic checks also retain the historical
+item-imputation policy for an observed questionnaire whose attitude answers
+are all missing, and reject a claimed absent form with an observed post answer.
+
+All thirteen canonical analysis Parquet files are byte-identical, as are the
+historical aggregate outputs. Thus the current main inputs to dp-learning,
+dp-distortions and dp-deliberately are unchanged; no model rerun is needed to
+establish that input conservation. This does not endorse imputing omitted
+attitude items within an observed form, which remains a separate authored
+policy. The retained summaries and full-table comparisons are the
+`attitude_absence_*.csv` files in `audit/corrections/utilities-source-recovery/`.
+Adopting the candidate still requires the user's decision.
+
 ## Australia republic 1999 — australia-republic-1999
 
 **AUS-01 — existing missingness divergence; score parity.** There are 347 attendees
@@ -5248,8 +5275,54 @@ were 105 groups across weekday and weekend schedules and constructs
 The current `dp-distortions` OOS adapter already combines these two fields.
 The proposed upstream correction uses the same composite identity and preserves
 all people, answers, weights and eligibility. The effect on analyses consuming
-upstream group membership must be compared separately. Approval was requested;
-this entry records the finding and does not claim the correction is applied.
+upstream group membership is quantified below. Approval remains pending;
+neither the production data nor the manuscript adopts this candidate.
+
+**Executed counterfactual, September 29, 2026.** The candidate starts from
+dp-data `8bcd1de` and changes only `small_group_id` for the 962 completers in
+each of `analysis_participants` and `analysis_phase_participants`. All thirteen
+analysis schemas and every other column are identical; all other upstream
+output files are unchanged apart from the two file hashes in the manifest.
+The schedules contain 537 and 425 completers. Current group sizes of 7–35 become
+2–18. Room-only grouping incorrectly counts 4,197 pairs of people from different
+schedules as groupmates. The candidate IDs and an independently reconstructed
+mapping yield exactly the same partition.
+
+Using the current dp-learning code at `2880c14`, all eight mixed-model samples
+stay unchanged. The core sample remains 8,486 people, while its group count
+increases from 576 to 623. Among the 962 Climate completers, 862 group sizes,
+851 leave-one-out knowledge means and 803 leave-one-out female shares change.
+The pooled core coefficient on peers' initial knowledge moves from .109899 to
+.107743. The Climate-only peer-knowledge association moves from .006653 to
+.052641; both group-bootstrap intervals include zero. These are associations,
+not estimates of causal peer effects.
+
+The individual scores are unchanged, so Climate's mean gain remains
+.122011 (12.2011 percentage points). With 999 bootstrap draws, its group-based
+95% interval changes from [.108432, .135611] to [.111078, .134601]. The unweighted
+completer-minus-control gain difference remains .093137, with its interval
+changing from [.074394, .111273] to [.076753, .110378]. All 962 completers and
+671 controls remain in that comparison. The 845-person three-wave retention
+sample and its mean gains also remain unchanged, while its group count and
+uncertainty change. Existing weighted-control comparisons were checked without
+selecting a new weighting policy.
+
+These are isolated comparisons of the current and proposed group definitions,
+not a regenerated paper. All mixed-model point fits converge; their full
+regression bootstrap has not been rerun. The Climate gain, peer, control and
+retention comparisons use 999 draws each. Exact results, membership mappings,
+all-column comparisons and input provenance are in
+`audit/corrections/a1r-climate-2021/`. The retained `learning-impact.R` reproduces
+the downstream comparison from the uncorrected data and the stated learning
+revision, writing only to the requested evidence directory:
+
+```sh
+Rscript audit/corrections/a1r-climate-2021/learning-impact.R \
+  /path/to/dp-data /path/to/dp-learning /tmp/climate-group-review
+```
+
+It uses dp-learning's existing dependencies. The supplied group-membership
+correction remains a proposal until the user's poll-specific decision.
 
 ### AMR-01 — six-country knowledge scoring checked against the report
 
@@ -6877,7 +6950,11 @@ and all thirty merged departure project ratings and the four joined departure
 knowledge answers are missing. All 269 baseline IDs occur in the PRE file, so
 there is no symmetric unmatched-PRE case. Seven of the 242 POST IDs are outside
 the 269-person baseline universe; the audit does not invent a match for them or
-add them to the historical panel. The 34 people are outside the 233-person main
+add them to the historical panel. A PRE identity by itself does not establish
+an observed questionnaire: p166's original PRE row has every field except
+`source_row` and `p` missing. Its baseline questionnaire presence remains unknown;
+the post-only candidate does not extend the absence rule to that ambiguous
+baseline score. The 34 people are outside the 233-person main
 sample and already have `panel=FALSE` in both canonical participant views.
 
 The current respondent layer gives each of these 34 people all nine departure
@@ -6893,26 +6970,45 @@ are retained in `absent_departure_current_values.csv`.
 Propagation would make 34 departure scores and their zero `n_correct` values
 missing in each of `analysis_scores` and `analysis_phase_scores`. Each item view
 has 136 departure correctness values currently zero; these would become
-missing, with `response_status` changing from `scored` to `not_observed`.
+missing, with `response_status` changing from `scored` to `wave_absent`.
 The same 136 zero correctness values in `historical_knowledge_items` would
 become missing. Phase score/item presence would change from unknown to false,
 and the phase score's questionnaire-presence label from unknown to
-`not_observed`. The four-item battery size, already missing observed-item
-counts, source response values and identities would remain unchanged.
+`absent`. In each score view, 34 `n_observed` counts would change from missing
+to zero, following the shared absent-form convention. The four-item battery
+size, source response values and identities would remain unchanged.
 `absent_departure_proposed_changes.csv` records these fields separately rather
-than summing duplicated exports. The counterfactual proof preserves every
-matched POST numerical value, every baseline value, all 233 main participants
-and their group summaries, and all existing panel flags.
+than summing duplicated exports. The executed isolated candidate uses the
+verified POST identity rather than a blank-quiz predicate. Its actual table
+comparison is retained in
+`absent_departure_executed_changes.csv`; per-person propagation and the p90
+presence-only changes are retained in `absent_departure_executed_values.csv`.
+It preserves every matched POST numerical value, every baseline value, all 233
+main participants and their group summaries, all existing panel flags and all
+other polls' exported values. These checks do not establish unchanged downstream
+phase estimates. The candidate remains unadopted.
 
 This is distinct from an observed questionnaire with nonanswers. Participant
 **p90** has a verified POST record, filled demographics, 28 explicit project
 98 codes and two blank project items. Its four quiz answers are blank. The
 existing rule therefore retains zero quiz scores and midpoint attitudes for
 p90; it must not be masked by an all-missing-battery predicate. Its phase
-questionnaire presence is currently unknown and could separately be recorded
-as observed using the verified POST identity. Fourteen baseline rows also lack
-all substantive project ratings, but their PRE records are retained; rating
+questionnaire presence is currently unknown. The executed candidate marks its
+verified matched POST as observed: one phase score presence and its label, and
+four phase item presence flags change, without changing p90's numerical scores.
+This may affect downstream phase coverage or phase-pair eligibility even though
+the 233-person main analysis inputs stay unchanged. Fourteen baseline rows also
+lack all substantive project ratings, but their PRE records are retained; rating
 missingness alone is not evidence of an absent whole questionnaire.
+
+The downstream counterfactual confirms that distinction. The `dp-learning`
+main attendee frame is identical, but the available Zeguo t0-to-t2 phase pairs
+increase from 232 to 233 when p90's matched departure is recognized. Their mean
+gain changes from .1163793103 to .1115879828: p90 has baseline knowledge 1 and
+departure knowledge 0. Across all 269 source people, departure coverage changes
+from 234 observed, 35 unknown and zero absent to 235 observed, zero unknown and
+34 absent. These are consequences of the unadopted candidate, not new source
+answers or authorization to change the published data.
 
 The merged file also contains a **separate nonparticipant block**: 32 populated
 `np` records co-located with baseline p1–33, including 30 rows with an ordinary

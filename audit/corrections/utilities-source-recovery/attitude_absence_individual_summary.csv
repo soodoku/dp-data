@@ -1,0 +1,13 @@
+poll_id,field,previous_value,changed
+swepco-1996,conservation_t2,0.5,1246
+swepco-1996,fossil_fuels_t2,0.5,1246
+swepco-1996,imported_power_t2,0.5,1246
+swepco-1996,low_income_support_t2,0.5,1246
+swepco-1996,renewables_t2,0.5,1246
+swepco-1996,research_t2,0.5,1246
+wtu-1996,conservation_t2,0.5,1000
+wtu-1996,fossil_fuels_t2,0.5,1000
+wtu-1996,imported_power_t2,0.5,1000
+wtu-1996,low_income_support_t2,0.5,1000
+wtu-1996,renewables_t2,0.5,1000
+wtu-1996,research_t2,0.4444444444444444,1000

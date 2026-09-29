@@ -1,0 +1,7 @@
+table,field,poll_id,respondent_id,definition_id,old_value,proposed_value,item_id,wave,battery_id
+analysis_phase_scores,wave_observed,zeguo-2005,90,,,TRUE,,t2,zeguo-2005:historical:knowledge
+analysis_phase_scores,questionnaire_presence_status,zeguo-2005,90,,unknown,observed,,t2,zeguo-2005:historical:knowledge
+analysis_phase_item_responses,wave_observed,zeguo-2005,90,,,TRUE,knowledge_001,t2,zeguo-2005:historical:knowledge
+analysis_phase_item_responses,wave_observed,zeguo-2005,90,,,TRUE,knowledge_002,t2,zeguo-2005:historical:knowledge
+analysis_phase_item_responses,wave_observed,zeguo-2005,90,,,TRUE,knowledge_003,t2,zeguo-2005:historical:knowledge
+analysis_phase_item_responses,wave_observed,zeguo-2005,90,,,TRUE,knowledge_004,t2,zeguo-2005:historical:knowledge
