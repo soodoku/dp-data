@@ -1,0 +1,8 @@
+status,wave,respondents,first_component_changes,fixed_calibration_changes,current_observed,proposed_observed,changed_values,missingness_changes,current_value,proposed_value,fixed_calibration_value,record_type,arm
+proposed,t0,2002,173,173,2001,2001,2001,0,0.03862454927944054,0.028703085836423083,0.12301543468322126,score_mean,all
+proposed,t3,2002,25,25,1858,1858,1858,0,0.6188959598036015,0.6688091700825346,0.6310098303027354,score_mean,all
+proposed,t0_to_t3,921,NA,NA,NA,NA,NA,NA,0.5096386767961222,0.5322426376052829,0.4366736792537296,paired_mean_gain,control
+proposed,t0_to_t3,281,NA,NA,NA,NA,NA,NA,0.6370331888499196,0.6796372636674677,0.5627482644933346,paired_mean_gain,information
+proposed,t0_to_t3,272,NA,NA,NA,NA,NA,NA,0.39876873274566843,0.4795088561571652,0.35534254599442233,paired_mean_gain,spillover
+proposed,t0_to_t3,383,NA,NA,NA,NA,NA,NA,0.7184942760863262,0.8794247391815034,0.6563791345779185,paired_mean_gain,deliberation
+proposed,t0_to_t3,2002,NA,NA,NA,NA,1,NA,1858,1857,NA,panel_count_if_both_scores_required,all

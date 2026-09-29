@@ -162,6 +162,16 @@
       "local_artifact_id": "material-76ae7185d1d8b5db-a1r-climate-2021",
       "accessed": "2026-09-24",
       "notes": "Perspectives on Politics, published online January 3, 2025; research article includes 2021 experiment and 2022 midterm followup, which must not be conflated with baseline experiment counts."
+    },
+    {
+      "reference_id": "climate-original-data-preparation-reference",
+      "poll_id": "a1r-climate-2021",
+      "kind": "script",
+      "title": "Original climate data preparation syntax",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/10472490",
+      "local_artifact_id": "climate-original-data-preparation-artifact",
+      "accessed": "2026-09-28",
+      "notes": "Original authored data preparation syntax, retained as source evidence. Lines 355-399 supply Q19-Q24 questions, options and nonanswer codes; Q17/Q18 wording is not supplied. No execution or source scoring change implied."
     }
   ],
   "material_coverage": [
@@ -291,6 +301,21 @@
       "publication_status": "published",
       "notes": "Unchanged public OOS source; upstream centralization authorized. Study a1r-climate-2021. Original URL in oos_sources.",
       "relative_path": "reports/climate_results.pdf"
+    },
+    {
+      "artifact_id": "climate-original-data-preparation-artifact",
+      "poll_id": "a1r-climate-2021",
+      "artifact_type": "script",
+      "title": "Original climate data preparation syntax",
+      "location": "data/a1r-climate-2021/scripts/replication-data-preparation.do",
+      "source_id": "climate-original-data-preparation",
+      "original_archive_path": null,
+      "sha256": "336477c8801c022cde7c60a65712f630a217f0d203960a224ebae4adeb5189bb",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original authored data preparation syntax, retained as source evidence. Lines 355-399 supply Q19-Q24 questions, options and nonanswer codes; Q17/Q18 wording is not supplied. No execution or source scoring change implied. Source URL: https://dataverse.harvard.edu/api/access/datafile/10472490",
+      "relative_path": "scripts/replication-data-preparation.do"
     }
   ],
   "document_previews": []

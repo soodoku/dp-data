@@ -45,8 +45,10 @@ The [build notes](docs/knowledge-build.md) describe the output contract.
 The [fourteen-poll audit](docs/remaining-polls.md) explains corrected scores,
 three unresolved sample-size differences, Europolis's unordered match, and
 Vermont's ambiguous answer key. The unified analysis export also includes
-the available control-arm item answers. Tanzania has a released knowledge
-index but no linked person-item answers in the retained file.
+the available control-arm item answers. Tanzania retains a released knowledge
+index and nine scored components; its original raw item responses have not been
+recovered. The canonical handoff remains score-only while the component coding
+issue in the poll-level register awaits a decision.
 
 The historical knowledge–attitude linkage is also built here with `make linkage`.
 Its five CSV products and checksum manifest live in `output/linkage/`, replacing

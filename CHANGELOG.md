@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+- Retain AMR's original questionnaire, expert answer key, codebooks and paper;
+  preserve its verified pre-invitation and post-deliberation measurements in
+  phase tables without changing scores or samples. Document the conflicting
+  questionnaire options and country-specific weighting requirements.
+- Label documented nonanswers in A1R 2019, Northern Ireland's follow-up and six
+  climate knowledge items as non-substantive, preserving their zero scores.
+  Retain original climate and Tanzania replication scripts as coding evidence.
+
 - Apply the poll-specific corrections documented in `docs/poll-issues.md`, with
   unchanged source answers and independently checked correction values. The
   issue register distinguishes adopted changes, retained definitions, proposed

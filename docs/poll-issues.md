@@ -88,10 +88,11 @@ Priority questions for the corrections pass include:
   than an unexplained discrepancy. The same codebook contains the questionnaire.
   BTP 2005's short appendix date interval should not replace the full online
   treatment period described in its event report.
-- **AMR 2024:** sourced methods establish online deliberation; NEW-01 records
-  the implemented catalog correction from face-to-face. Published totals distinguish
-  assignment to treatment/control from actual deliberation. Verify the study
-  version and population before changing catalog mode or sample counts.
+- **AMR 2024:** the recovered version 2 paper establishes pre-invitation baseline
+  and event-end measurements, now preserved as t0 and t2. AMR-04 documents the
+  phase mapping, recovered questionnaire and codebooks, and conflicting Q21
+  options. The retained 1,280 attendees and 1,139 controls omit 1,847 invited
+  nonattenders; they do not constitute the complete randomized invitation cohort.
 
 Material gaps remain explicit: finding a paper is not equivalent to finding the
 fielded instrument, and a general energy questionnaire is not automatically the
@@ -1829,7 +1830,9 @@ age/group-mean rows appended; no prior correction values were rewritten.
 **BTP07-01 — selection variables with similar names have different roles.**
 `group == 1` selects 301 discussion-treatment respondents from 1,501 records;
 `Sgroup` gives the 20 small groups and `CaseID` identifies people. Codes 99, 998,
-and 999 are non-substantive. All eight-item scores and gender match the deposit.
+and 999 are non-substantive in the knowledge battery. The briefing-reading
+field is different: its code 99 means “all or nearly all” and remains substantive.
+All eight-item scores and gender match the deposit.
 
 The original [codebook.pdf](../data/btp-2007/codebook.pdf), PDF page 4
 (printed page 3), explains the selected cohort: 326 people attended all four
@@ -3745,6 +3748,15 @@ bridge for the earlier 121-person analysis has been established; do not drop
 three current respondents to force that match. Raw age and education coding,
 all scores, memberships and the existing sample remain unchanged.
 
+### NI-04 — label follow-up nonanswers explicitly (corrected)
+
+The retained [value labels](../data/northern-ireland-2007/value-labels.csv),
+`t3q11` through `t3q17`, identify codes 9 and 10 as nonanswers. These appeared as
+`answered` in 356 follow-up item cells. They now use `non_substantive`, with
+356 changed cells in each of the selected-wave and phase tables. Raw responses,
+zero correctness, scores, follow-up participants and controls remain unchanged.
+This correction does not merge the follow-up comparison with the event-exit wave.
+
 ## Polls outside the 23-battery canonical build
 
 These polls lie outside the older 23-battery knowledge pipeline. Five now have
@@ -3761,10 +3773,10 @@ presence is not a claim that every original field-file merge has been recovered.
 | zeguo-2005 | All 233 historical participants are reconstructed from reviewed merged/pre/post components; three historical knowledge-item overrides remain explicit. The corrected Wenchang source makes all 16 group covariance matrices full rank, removing 15 obsolete numerical exceptions. | Original and translated instruments, event date, project-choice scales and respondent/group identifiers. |
 | marousi-2006 | The recovered 1,275-row authored source now supplies telephone, arrival and departure scores with explicit questionnaire presence. MAR-02 corrects partial quizzes previously zeroed as whole scores and retains the verified 146-person historical identity bridge; 159 people have observed event questionnaires. | Original separate wave returns and full factual-key documentation would independently verify the authored merge and keys. Preserve absent questionnaires as missing and blanks within observed questionnaires as incorrect. |
 | bulgaria-2007 | Distinct Roma-policy event; it must not inherit the 2002 crime battery merely because files share an archive directory. | Roma-policy questionnaire, actual event date and source-file provenance. |
-| tanzania-2015 | Public source is available, but full canonical arm, village, questionnaire and measurement integration is not built here. The group file has one person without a recorded treatment assignment; see TZ-01. | Village-randomization protocol, information versus deliberation arms, instruments and cluster IDs. Preserve the current downstream specification until audited. |
+| tanzania-2015 | Canonical citizens, arms, village clusters and source standardized scores are retained. The audit reproduces both source indices, but finds a negative nonanswer sentinel entering their first component and one follow-up-only person labeled panel; TZ-03 and TZ-04 are proposed corrections, not applied. TZ-01 retains the separate treatment-eligibility ambiguity. | Decide the index and panel corrections; recover the original raw-to-derived recode. Preserve routing-related missingness and distinguish recorded groups from verified assignment. |
 | america-in-one-room-2019 | The attendance flag now uses the source group roster: 526 attended, of whom 523 completed the post survey. Downstream scoring is reproducible from the unchanged deposit; upstream has not independently reconstructed all measurement and sample decisions. See A1R19-01. | Fielded factual battery, remaining answer-key evidence, uninvited controls and both source weights. The Paris Agreement item must be interpreted at the fieldwork date, not under today's ratification status. |
 | a1r-climate-2021 | The eight knowledge keys reproduce all 16 published weighted before/after percentages. The 962-person published completion cohort is explicitly labeled completed; other invitees are not labeled nonattenders. See resolved A1RC-01. | Preserve completion separately from unknown attendance among other invitees; retain all three wave identities and seek fielded instruments and follow-up eligibility rules. |
-| amr-2024 | Six-country knowledge scoring reproduces the report's country-specific weighted gains, including its highlighted largest item gains. Country-specific measurement equivalence and attendance versus assignment still need explicit source contracts; see AMR-01. | Country/language instruments, randomization and attendance records, coding instructions, stable IDs and weighting documentation. |
+| amr-2024 | All 4,838 scores and 29,028 item responses reproduce the source; verified t0/t2 phases are retained. Recovered expert keys and codebooks support existing scoring. The Tanzania gain is 3.5 points rather than the report summary's 3.6; AMR-01 and AMR-04 document this discrepancy and the Q21 source conflict. | Recover local-language field forms and the 1,847 invited nonattenders omitted from the deposit. Use weights within country × arm; do not infer full invitation ITT from the attendee/control extract. |
 
 The four newer control-study files and Marousi are already byte-identical between
 `dp-learning`'s former local inputs and their upstream copies. That migration
@@ -3795,6 +3807,15 @@ The Paris Agreement key is option 4, “All of the above.” This is consistent
 with the September 2019 field dates: [Russia accepted on 7 October 2019 and
 Turkey ratified in 2021; Iran had signed but not ratified](https://treaties.un.org/Pages/showDetails.aspx?objid=0800000280458f37).
 Do not re-key this item using countries' later treaty status.
+
+### A1R19-02 — preserve documented nonanswer status (corrected)
+
+The [original codebook](../data/america-in-one-room-2019/codebooks/a1r_codebook.tab),
+PK and T2PK sections, identifies −8, 77, 98 and 99 as nonanswers. The canonical
+item tables previously labeled 13,709 such cells `answered`. They now use
+`response_status = non_substantive` in both the selected-wave and phase tables,
+with 13,709 changed cells in each table. Raw codes, zero correctness, scores,
+denominators and respondent samples are unchanged.
 
 ### A1RC-01 — label the published climate cohort as completed (corrected)
 
@@ -3857,23 +3878,62 @@ with assertions for the observed codes and cross-wave agreement. No
 attendance flag, response, score, sample or weight changes. Current
 `dp-learning` climate analyses do not use `female` as a covariate.
 
-### AMR-01 — six-country knowledge gains reproduce the report
+### A1RC-03 — distinguish factual-item nonanswers from substantive responses (corrected)
+
+The recovered [original preparation script](../data/a1r-climate-2021/scripts/replication-data-preparation.do),
+lines 355–399, records Q19–Q24 options and nonanswer labels: 77 “Couldn't say,”
+98 “SKIPPED ON WEB” and 99 “REFUSED.” Across all three retained waves, 16,580
+item cells in each of the selected-wave and phase tables change from `answered`
+to `non_substantive`. Every raw code, correctness value, score, denominator and
+person remains unchanged. The catalog keeps offered response 77 among the
+options and records administrative codes 98/99 in the coding note.
+
+This evidence applies to Q19–Q24. The script does not supply the corresponding
+missing-code labels for Q17/Q18; do not extend those labels by analogy. Their
+existing scoring is retained pending a fielded instrument or explicit codebook.
+
+### AMR-01 — six-country knowledge scoring checked against the report
 
 The [final report](../data/amr-2024/reports/amr-final-report.pdf), Knowledge
-Gains, reports six knowledge questions in six countries. The source contains
-2,419 unique IDs, each with `Time` 0 and 1: 1,280 intervention participants
-and 1,139 controls. For the 1,280 participants, scoring the six answers with
-the `metadata/items.csv` keys and using `Weight` reproduces the report's
-country-level claims. Nigeria's mean gain is 30.6 percentage points and its
-superbug item gains 44.1 points; India's mean gain is 17.5 and its infection
-prevention item gains 24.9; Brazil's statements-about-antibiotics item gains
-16.3. The weighted Tanzania change in the first item is −1.463932 points. Its
-separately rounded endpoint percentages are 45.7% and 44.3%; subtracting those
-rounded endpoints gives the report's −1.4 rather than rounding the underlying
-change to −1.5. Preserve the unrounded source calculation. This checks key and weight
-application against published results, but the report does not supply the
-country/language answer options or a randomized-assignment roster. Do not
-reinterpret its `Group` field as randomized assignment without that evidence.
+Gains, reports six questions in six countries. The source has 2,419 unique IDs,
+each observed at `Time` 0 and 1: 1,280 attendees and 1,139 controls. Independent
+scoring reproduces all 4,838 canonical scores and all 29,028 raw and scored item
+responses. IDs, country, arm, weight, gender and education are stable across waves.
+There are no duplicate person-wave keys.
+
+Using the supplied `Weight` within each country's attendee arm gives these
+mean gains in percentage points:
+
+| Country | Unrounded gain | Gain to one decimal |
+| --- | ---: | ---: |
+| Brazil | 7.101298 | 7.1 |
+| Colombia | 7.107786 | 7.1 |
+| India | 17.502200 | 17.5 |
+| Indonesia | 6.966793 | 7.0 |
+| Nigeria | 30.645253 | 30.6 |
+| Tanzania | 3.499111 | 3.5 |
+
+The Tanzania result falls below the report summary's stated range of 3.6–7.1
+points for Tanzania, Colombia, Brazil and Indonesia (printed p.50; PDF p.52). Preserve the source calculation rather than alter scores to match
+that summary. Nigeria's superbug item gains 44.1 points, India's infection
+prevention item gains 24.9, and Brazil's statements-about-antibiotics item gains
+16.3, matching the highlighted item results. Tanzania's first-item change is
+−1.463932 points. Its separately rounded endpoints are 45.7% and 44.3%; their
+difference gives the report's −1.4 rather than the unrounded change rounded
+to −1.5.
+
+The recovered [deposit README](../data/amr-2024/codebooks/deposit-readme.md)
+limits each weight to its `weight_group`, defined by country and arm. These
+are twelve separate weighting populations, not a supplied pooled six-country
+population weight. The canonical fields retain country, arm and the unchanged
+weight; analyses must select the relevant population before applying it.
+
+The [version 2 paper](../data/amr-2024/papers/amr-paper-v2.xml), Table 3,
+reproduces all six country-by-arm counts. Table 4 reports 3,127 invitations
+and 1,280 attendees. The 1,847 invited nonattenders are absent from this deposit.
+Current attendance labels match the reported attendee sample, but these records
+cannot identify a full invitation intention-to-treat effect. No individual
+assignment or attendance category is changed by this audit.
 
 ### AMR-02 — populate the observed gender field (corrected)
 
@@ -3902,12 +3962,46 @@ current value or estimate. Preserve both source values. Before adding age,
 consult the original field returns; baseline age is the natural measurement
 for a baseline covariate, but neither interview is proven correct by this file.
 
-The six-item quiz is wholly blank in 46 person-interviews (13 control baseline,
-17 control post, nine treatment baseline, seven treatment post). Every one has
-observed answers elsewhere in its questionnaire. These are observed interviews
-with unanswered knowledge items, correctly scored zero under the approved rule;
-they are not absent questionnaires. BTP 2007's briefing-reading code 99 likewise
-remains substantive: the codebook labels it "all or nearly all," not nonresponse.
+### AMR-04 — preserve verified phases and recovered measurement evidence (implemented)
+
+The [version 2 paper](../data/amr-2024/papers/amr-paper-v2.xml)
+([DOI 10.12688/wellcomeopenres.24803.2](https://doi.org/10.12688/wellcomeopenres.24803.2)),
+Methods, places baseline interviews before random assignment and invitation.
+Its design description places the final questionnaire at the end of deliberation.
+Source `Time == 0` therefore maps to t0 (`pre_arrival`), and `Time == 1` to t2
+(`post_deliberation`). The phase tables now retain 4,838 scores and 29,028 item
+responses for 2,419 people, with 2,419 scores per wave. No separate arrival
+measurement is established. Timing is `documented_design`; exact interview
+dates, individual lags and survey mode remain unknown. Online deliberation does
+not itself establish survey mode. All selected-wave scores, answers and samples
+are unchanged numerically.
+
+The [English questionnaire and extended data](../data/amr-2024/questionnaires/survey-and-extended-data.pdf),
+expert Table 18 (PDF pp.39–40), supports keys 4/4/5/5/4/5. The recovered
+[PDF codebook](../data/amr-2024/codebooks/harmonized-codebook.pdf),
+`knowledge_1` through `knowledge_6` (PDF pp.32–35), and
+[workbook codebook](../data/amr-2024/codebooks/harmonized-codebook.xlsx)
+agree. These sources now supply the catalog's answer options and keyed text.
+They establish harmonized coding, not the equivalence of unrecovered
+local-language field forms.
+
+There is a source-document conflict: questionnaire Q21 (PDF p.11) asks about
+infection prevention but repeats the preceding question's antibiotic-use options.
+Expert Table 18 and the codebook instead list animal vaccination, handwashing,
+influenza vaccination, hygienic food preparation and “all of the above.” They
+agree on key 5. Preserve that key and all scores, record both versions, and seek
+the fielded forms before attributing the copied options to respondents.
+
+All six knowledge responses are missing in the harmonized source for 46
+person-interviews: 13 control baseline, 17 control post, nine attendee baseline
+and seven attendee post. This does not establish that respondents literally
+left every item blank: the questionnaire offers don't know, and the harmonized
+deposit collapses that response and other nonanswers to missing. Other survey
+answers establish that all 46 questionnaires were observed. Their knowledge
+scores remain zero under the approved rule. Form-presence checks use actual
+questionnaire answers, excluding IDs, demographics, arm labels and weights;
+a wholly unobserved synthetic form remains unknown rather than becoming an
+observed zero. Original missingness reasons cannot be recovered from this deposit.
 
 ### MAR-01 — derived post knowledge zeros need an item-level and wave bridge
 
@@ -4242,6 +4336,62 @@ excludes Tanzania from its item-based control panel, and its attendee model
 requires proportion-correct scores that Tanzania does not have. The current
 `dp-distortions` Tanzania reader uses its own source fields, so these existing
 results do not change. The unresolved roster question in TZ-01 remains separate.
+
+### TZ-03 — a negative nonanswer code enters the knowledge index (proposal; not applied)
+
+The first scored knowledge component, `H610` at baseline and `H611` at follow-up,
+contains −99 alongside 0 and 1: 173 baseline and 25 follow-up records have −99.
+The retained [original regression script](../data/tanzania-2015/scripts/replication-regressions.do),
+line 452, identifies this component as “Heard about gas?” The
+[working paper](../data/tanzania-2015/papers/tanzania-working-paper.pdf), PDF p.50,
+and [appendix](../data/tanzania-2015/reports/tanzania_appendix.pdf), PDF p.11,
+print H5_4: what respondents have heard about Tanzania's gas discoveries and
+whether extraction or export has begun. The questionnaire labels code 99
+“DON'T KNOW.” The conversion from that raw field to the derived −99/0/1
+component has not been recovered; the code-number correspondence is not proven.
+
+The numerical defect is independently reproducible: −99 enters the index as an
+extremely low number rather than an incorrect answer or missing value. Rebuilding
+all nine components with their baseline-control means and standard deviations,
+averaging each respondent's available standardized components, then standardizing
+that composite against baseline controls reproduces `H600` and `H601` to within
+1.05e−14. This establishes that the extreme code affects the stored index;
+it is not merely an unusual unused source value.
+
+The proposed correction is to score −99 as zero in this component and rerun the
+same normalization algorithm. With the old calibration fixed, 173 baseline and
+25 follow-up values change. Recomputing calibration changes all 2,001 observed
+baseline scores and all 1,858 observed follow-up scores. Among paired respondents,
+the unadjusted deliberation-minus-control difference in mean gains changes from
+0.208856 to 0.347182 standardized units. These are diagnostic contrasts, not a
+re-estimation of the paper's adjusted or clustered models. Recalibration changes
+the scale as well as individual answers.
+
+**Decision pending:** neither scores nor calibration have been changed. Retain
+the deposited indices as comparison evidence, recover the original recode if
+possible, and decide the proposed first-component correction explicitly. Other
+components contain routing-related missingness; this finding does not justify
+turning every missing component into zero.
+
+The retained [review script](../scripts/review_tanzania_knowledge.R) reproduces
+the current indices and the counterfactual from source components. Its
+[person-level proposed values](../audit/corrections/tanzania-2015/proposed_values.csv)
+and [summary](../audit/corrections/tanzania-2015/summary.csv) preserve both
+calibrations, counts and paired contrasts. These are proposal evidence, not
+approved replacement values.
+
+### TZ-04 — a follow-up-only respondent is labeled as a panel member (proposal; not applied)
+
+Source `HHID == 240301`, canonical respondent `1323`, has missing baseline
+`H600` and observed follow-up `H601`, but `analysis_participants.panel` is true.
+There are 1,858 currently flagged people and 1,857 with both scores. The proposed
+rule requires both measurements for the panel flag, retaining the person and
+observed follow-up. This is separate from TZ-01's unresolved treatment eligibility:
+a group assignment does not supply a missing baseline or establish an arm.
+**Decision pending:** the flag and current counts remain unchanged. The same
+[review script](../scripts/review_tanzania_knowledge.R) checks this identity and
+writes the proposed panel count to the
+[audit summary](../audit/corrections/tanzania-2015/summary.csv).
 
 ### NH-02 — Event year corrected; attendance needs reconciliation
 
@@ -5078,9 +5228,9 @@ support selection and attrition comparisons without rebuilding discarded
 records. MAR-02 supplies a concrete 1,275-row source bridge for this requirement.
 
 
-**Pre-arrival coverage audit (2026-09-27).** At least 31 of the original 34
+**Pre-arrival coverage audit (updated 2026-09-28).** At least 33 of the original 34
 analytical catalog IDs retain a confirmed pre-arrival or online pre-start
-measurement, representing 30 distinct studies because the two Primaries IDs
+measurement, representing 32 distinct studies because the two Primaries IDs
 share a raw source. This counts retained source data, not verified coverage
 in the current canonical score export. Original wave suffixes are not evidence
 of phase. For online studies, a separately collected questionnaire before
@@ -5113,13 +5263,15 @@ start of deliberation would instead be t1.
 | tanzania-2015 | Household baseline before assignment/event; working paper sections 3.1–3.2. |
 | america-in-one-room-2019 | July 9–August 5 baseline before September 19–22 event; `design/a1r-2019-norc-methods.pdf`, PDF pp.3–4. |
 | a1r-climate-2021 | August baseline before September online events; `design/a1r-climate-methods.pdf`, PDF p.3. |
+| bulgaria-crime-2002 | National survey before invitations; contemporary account and original national-survey source establish the baseline; BGC-07. |
+| amr-2024 | Baseline before random assignment and invitation; version 2 paper `papers/amr-paper-v2.xml`, Methods. Final measurement is at event end; AMR-04. |
 
 The remaining coverage questions are not established absences. Bulgaria
 2007 documents 1,344 before-event interviews in its report (PDF p.2), but that
 raw respondent dataset has not been identified. Bulgaria Crime 2002 was initially unresolved; BGC-07 below establishes its
 pre-arrival baseline using contemporary reporting and the original national
-survey. AMR 2024 retains 2,419 pre/post records, but precise
-remote-baseline versus start-of-event timing remains unverified.
+survey. AMR 2024 now has verified pre-invitation and event-end phases for
+2,419 people; exact interview dates and individual lags remain unavailable.
 
 At least 22 confirmed IDs retain recruitment respondents/nonattendees, and
 four more retain broader online controls/calibration populations (BTP 2007,
@@ -5144,13 +5296,15 @@ unless explicitly described otherwise. `t0` means before arrival or, for an
 online study, before the discussion experiment starts; it does not establish
 that every respondent completed an interview or subsequently participated.
 
-The proportion-correct phase export covers **30 catalog IDs representing 29
-distinct studies**. The online and historical Presidential Primaries IDs are
+The proportion-correct phase export now covers **32 catalog IDs representing 31
+distinct studies**, including AMR's verified t0/t2 measurements. The online and
+historical Presidential Primaries IDs are
 two projections of the same experiment. Tanzania adds one study with a
 standardized knowledge index rather than a proportion-correct battery: across
-both scales there are **31 IDs and 30 distinct studies**. The alphabetically
-first review covers 14 IDs/13 studies; the Michigan-through-Zeguo review below
-covers 17 additional IDs, including Tanzania. These are exported study/phase
+both scales there are **33 IDs and 32 distinct studies**. The original alphabetical
+review covered 14 IDs/13 studies; the Michigan-through-Zeguo review below covered
+17 additional IDs, including Tanzania. BGC-07 and AMR-04 supply the two later
+verified studies. These are exported study/phase
 coverage counts, not the broader retained-source count above and not counts
 of complete respondent panels.
 
@@ -5221,17 +5375,19 @@ scored as incorrect. Separate expanded batteries retain California's eight
 arrival/exit items, Europolis's nine, and Michigan's six placements. The latter
 two added Michigan placement questions never enter a telephone comparison.
 
-Every original phase-score row remains exactly unchanged (115,707 rows in the
-starting release candidate). The added batteries supply 17,439 phase-score rows,
-including explicit absent-wave records, for a total of 133,146. The new typed
-`analysis_phase_item_responses` table contains 867,004 rows: existing item records
-with established event-phase mappings plus 133,869 added item/battery rows.
+The arrival expansion preserved the 115,707 original phase-score rows and added
+17,439 rows, including explicit absent-wave records. AMR-04 subsequently adds
+4,838 unchanged source scores, bringing current phase-score coverage to 137,984
+rows. The typed `analysis_phase_item_responses` table now contains 896,032 rows:
+the earlier 867,004 mapped records, including 133,869 added arrival item/battery
+rows, plus 29,028 AMR responses. Documented nonanswer-status corrections change
+status labels, not the underlying responses or numerical scores.
 Its key includes source cohort, respondent, battery, original survey instance,
 and canonical question ID. Multiple batteries can reuse an item without implying
 that their denominators or populations are interchangeable. The question catalog
 adds eight arrival-only questions with their wording, keys and retained sources.
-Score-only Marousi measurements remain explicitly score-only; AMR's unestablished
-phase timing is not invented to force its item records into this table.
+Score-only Marousi measurements remain explicitly score-only. AMR contributes
+verified pre-invitation and event-end measurements, with no arrival wave inferred.
 
 | Source cohort | Retained people | Observed arrival forms | Comparable battery |
 | --- | ---: | ---: | --- |

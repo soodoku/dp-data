@@ -579,8 +579,16 @@ analysis_control_items <- function(sources, catalog) {
       item_id, source_row,
       source_column, raw_value, raw_text,
       correct = as.integer(!is.na(raw_value) & raw_value == key),
-      response_status = dplyr::if_else(
-        is.na(raw_value), "source_missing", "answered"
+      response_status = dplyr::case_when(
+        is.na(raw_value) ~ "source_missing",
+        poll_id == "america-in-one-room-2019" &
+          raw_value %in% c(-8, 77, 98, 99) ~ "non_substantive",
+        poll_id == "northern-ireland-2007" &
+          raw_value %in% c(9, 10) ~ "non_substantive",
+        poll_id == "a1r-climate-2021" &
+          source_item_id %in% paste0("Q", 19:24) &
+          raw_value %in% c(77, 98, 99) ~ "non_substantive",
+        TRUE ~ "answered"
       )
     )
 }

@@ -14,7 +14,7 @@ test_that("phase exports retain recruitment and unique linked measurements", {
   expect_false(anyDuplicated(people[keys]) > 0L)
   expect_false(anyDuplicated(scores[c(keys, "battery_id", "wave")]) > 0L)
   expect_equal(nrow(dplyr::anti_join(scores, people, by = keys)), 0L)
-  expect_false("amr-2024" %in% scores$poll_id)
+  expect_true("amr-2024" %in% scores$poll_id)
   absent <- scores$wave_observed %in% FALSE
   expect_true(all(is.na(scores$score[absent])))
   expect_true(all(is.na(scores$n_correct[absent])))
@@ -117,4 +117,41 @@ test_that("NIC separates source Time 2 exit and absent follow-up", {
   expect_equal(sum(observed), 387L)
   expect_true(all(is.na(followup$score[!observed])))
   expect_true(all(is.finite(followup$score[observed])))
+})
+
+
+test_that("AMR preserves the pre-invitation and event-end panel", {
+  original <- phase_export("analysis_scores") |>
+    dplyr::filter(poll_id == "amr-2024")
+  phases <- phase_export("analysis_phase_scores") |>
+    dplyr::filter(poll_id == "amr-2024")
+  people <- phase_export("analysis_participants") |>
+    dplyr::filter(poll_id == "amr-2024")
+  expect_equal(nrow(phases), 4838L)
+  expect_equal(nrow(people), 2419L)
+  expect_setequal(phases$wave, c("t0", "t2"))
+  expect_equal(table(phases$wave) |> as.integer(), c(2419L, 2419L))
+  expect_setequal(phases$respondent_id, people$respondent_id)
+  expect_true(all(phases$wave_observed))
+  comparison <- phases |>
+    dplyr::left_join(original,
+      by = c("poll_id", "source_dataset", "respondent_id",
+             "original_score_wave" = "wave"),
+      relationship = "one-to-one", suffix = c("_phase", "_original")
+    )
+  for (field in c("n_items", "n_observed", "n_correct", "score")) {
+    expect_equal(comparison[[paste0(field, "_phase")]],
+                 comparison[[paste0(field, "_original")]])
+  }
+  expect_equal(sum(phases$n_observed == 0L), 46L)
+  expect_true(all(phases$score[phases$n_observed == 0L] == 0))
+  items <- phase_export("analysis_phase_item_responses") |>
+    dplyr::filter(poll_id == "amr-2024")
+  expect_equal(nrow(items), 29028L)
+  expect_setequal(items$wave, c("t0", "t2"))
+  waves <- read_metadata("analysis_survey_waves") |>
+    dplyr::filter(poll_id == "amr-2024")
+  expect_equal(nrow(waves), 2L)
+  expect_true(all(waves$mode == "unknown"))
+  expect_true(all(is.na(waves$date_start) & is.na(waves$date_end)))
 })

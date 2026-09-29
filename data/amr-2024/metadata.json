@@ -113,15 +113,65 @@
       "local_artifact_id": null,
       "accessed": "2026-09-24",
       "notes": "Paper data-availability statement lists survey questionnaires, briefing materials and codebooks; retain explicit external availability until individual files are inspected."
+    },
+    {
+      "reference_id": "amr-survey-extended-data-reference",
+      "poll_id": "amr-2024",
+      "kind": "questionnaire",
+      "title": "Survey questionnaire and extended results",
+      "url": "https://stacks.stanford.edu/file/sb639ms2957/Extended%20Data-%20to%20add%20to%20data%20repository_Deliberative%20Polling%20on%20AMR.pdf",
+      "local_artifact_id": "amr-survey-extended-data-artifact",
+      "accessed": "2026-09-28",
+      "notes": "English questionnaire and expert key. Q21 answer options conflict with Table 18 and the harmonized codebook; see AMR-04. Country-language field forms not supplied."
+    },
+    {
+      "reference_id": "amr-harmonized-codebook-pdf-reference",
+      "poll_id": "amr-2024",
+      "kind": "codebook",
+      "title": "Harmonized survey codebook (PDF)",
+      "url": "https://stacks.stanford.edu/file/sb639ms2957/data/AMR_harmonized_codebook.pdf",
+      "local_artifact_id": "amr-harmonized-codebook-pdf-artifact",
+      "accessed": "2026-09-28",
+      "notes": "Original deposited PDF with variable labels, categories and frequencies."
+    },
+    {
+      "reference_id": "amr-harmonized-codebook-xlsx-reference",
+      "poll_id": "amr-2024",
+      "kind": "codebook",
+      "title": "Harmonized survey codebook (spreadsheet)",
+      "url": "https://stacks.stanford.edu/file/sb639ms2957/data/AMR_harmonized_codebook.xlsx",
+      "local_artifact_id": "amr-harmonized-codebook-xlsx-artifact",
+      "accessed": "2026-09-28",
+      "notes": "Original deposited machine-readable dictionary; PDF counterpart retained alongside it."
+    },
+    {
+      "reference_id": "amr-deposit-readme-reference",
+      "poll_id": "amr-2024",
+      "kind": "codebook",
+      "title": "Original dataset README and weight instructions",
+      "url": "https://stacks.stanford.edu/file/sb639ms2957/README.md",
+      "local_artifact_id": "amr-deposit-readme-artifact",
+      "accessed": "2026-09-28",
+      "notes": "Original authors' README, unchanged. Weight is valid within Country x Group weight_group, not for unqualified cross-country pooling."
+    },
+    {
+      "reference_id": "amr-paper-v2-xml-reference",
+      "poll_id": "amr-2024",
+      "kind": "paper",
+      "title": "Understanding what citizens think about Antimicrobial Resistance (version 2, full text XML)",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12891964/fullTextXML",
+      "local_artifact_id": "amr-paper-v2-xml-artifact",
+      "accessed": "2026-09-28",
+      "notes": "Version 2, 14 May 2026. Original Europe PMC full-text XML, including peer review. PDF requests returned access pages, not PDF bytes. Methods establishes pre-randomization baseline and post-deliberation survey; Table 4 supplies invited and attending counts."
     }
   ],
   "material_coverage": [
     {
       "poll_id": "amr-2024",
       "material_type": "questionnaires",
-      "status": "external-only",
-      "notes": "Published paper data-availability statement identifies these extended-data materials in Stanford Digital Repository; individual files not yet independently inspected.",
-      "checked_references": "amr-2024-local-material-002584fea6952e09-amr-2024;amr-2024-amr-v2-paper;amr-2024-amr-repository"
+      "status": "available",
+      "notes": "Available English questionnaire and expert answer table. Q21 contains conflicting options; preserve both versions. Country-language field forms remain unavailable.",
+      "checked_references": "amr-2024-local-material-002584fea6952e09-amr-2024;amr-2024-amr-v2-paper;amr-2024-amr-repository;amr-survey-extended-data-reference"
     },
     {
       "poll_id": "amr-2024",
@@ -140,16 +190,16 @@
     {
       "poll_id": "amr-2024",
       "material_type": "papers",
-      "status": "external-only",
-      "notes": "Version 2 paper inspected through PMC HTML; direct publisher/EuropePMC PDF fetch did not yield PDF bytes, so no local file claimed.",
-      "checked_references": "amr-2024-amr-v2-paper"
+      "status": "available",
+      "notes": "Version 2 original full-text XML retained and checked. Publisher/PMC PDF retrieval did not yield PDF bytes; no local paper PDF claimed.",
+      "checked_references": "amr-2024-amr-v2-paper;amr-paper-v2-xml-reference"
     },
     {
       "poll_id": "amr-2024",
       "material_type": "codebooks",
-      "status": "external-only",
-      "notes": "Published paper data-availability statement identifies these extended-data materials in Stanford Digital Repository; individual files not yet independently inspected.",
-      "checked_references": "amr-2024-local-material-002584fea6952e09-amr-2024;amr-2024-amr-v2-paper;amr-2024-amr-repository"
+      "status": "available",
+      "notes": "Original PDF/XLSX harmonized dictionaries and dataset README retained. Numeric data match the existing participant source byte-for-byte; duplicate CSV not added.",
+      "checked_references": "amr-2024-local-material-002584fea6952e09-amr-2024;amr-2024-amr-v2-paper;amr-2024-amr-repository;amr-harmonized-codebook-pdf-reference;amr-harmonized-codebook-xlsx-reference;amr-deposit-readme-reference"
     }
   ],
   "artifacts": [
@@ -182,6 +232,81 @@
       "publication_status": "published",
       "notes": "Cover dated June 2026; download filename dated July 2026. Recruitment and country-specific results for the June-August 2024 online intervention. Consult alongside paper version 2, DOI 10.12688/wellcomeopenres.24803.2; headline randomized total includes controls. Source URL: https://deliberation.stanford.edu/sites/g/files/sbiybj21211/files/media/file/amr_final_report_2026-07_compressed_1.pdf. Retrieved 2026-09-23. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply.",
       "relative_path": "reports/amr-final-report.pdf"
+    },
+    {
+      "artifact_id": "amr-survey-extended-data-artifact",
+      "poll_id": "amr-2024",
+      "artifact_type": "questionnaire",
+      "title": "Survey questionnaire and extended results",
+      "location": "data/amr-2024/questionnaires/survey-and-extended-data.pdf",
+      "source_id": "amr-survey-extended-data",
+      "original_archive_path": null,
+      "sha256": "665a6b4c0dca84fe68f5af292c4e3ccd66e61af5abe3dd31e34f2580dee532b2",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "English questionnaire and expert key. Q21 answer options conflict with Table 18 and the harmonized codebook; see AMR-04. Country-language field forms not supplied. Source URL: https://stacks.stanford.edu/file/sb639ms2957/Extended%20Data-%20to%20add%20to%20data%20repository_Deliberative%20Polling%20on%20AMR.pdf",
+      "relative_path": "questionnaires/survey-and-extended-data.pdf"
+    },
+    {
+      "artifact_id": "amr-harmonized-codebook-pdf-artifact",
+      "poll_id": "amr-2024",
+      "artifact_type": "codebook",
+      "title": "Harmonized survey codebook (PDF)",
+      "location": "data/amr-2024/codebooks/harmonized-codebook.pdf",
+      "source_id": "amr-harmonized-codebook-pdf",
+      "original_archive_path": null,
+      "sha256": "02f0e4b0692a2df9307e25a41f3945d85a7e5485d83646608306be2ba0413471",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original deposited PDF with variable labels, categories and frequencies. Source URL: https://stacks.stanford.edu/file/sb639ms2957/data/AMR_harmonized_codebook.pdf",
+      "relative_path": "codebooks/harmonized-codebook.pdf"
+    },
+    {
+      "artifact_id": "amr-harmonized-codebook-xlsx-artifact",
+      "poll_id": "amr-2024",
+      "artifact_type": "codebook",
+      "title": "Harmonized survey codebook (spreadsheet)",
+      "location": "data/amr-2024/codebooks/harmonized-codebook.xlsx",
+      "source_id": "amr-harmonized-codebook-xlsx",
+      "original_archive_path": null,
+      "sha256": "a7c3cdeddba5c764f326de7512819376a3856c8bf8e15e1a8a3d0cf597921ab9",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original deposited machine-readable dictionary; PDF counterpart retained alongside it. Source URL: https://stacks.stanford.edu/file/sb639ms2957/data/AMR_harmonized_codebook.xlsx",
+      "relative_path": "codebooks/harmonized-codebook.xlsx"
+    },
+    {
+      "artifact_id": "amr-deposit-readme-artifact",
+      "poll_id": "amr-2024",
+      "artifact_type": "codebook",
+      "title": "Original dataset README and weight instructions",
+      "location": "data/amr-2024/codebooks/deposit-readme.md",
+      "source_id": "amr-deposit-readme",
+      "original_archive_path": null,
+      "sha256": "698fb71d8599c1f40872a142f9b6e12019ba1511882be16c4cc1d14a55f3d5ba",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original authors' README, unchanged. Weight is valid within Country x Group weight_group, not for unqualified cross-country pooling. Source URL: https://stacks.stanford.edu/file/sb639ms2957/README.md",
+      "relative_path": "codebooks/deposit-readme.md"
+    },
+    {
+      "artifact_id": "amr-paper-v2-xml-artifact",
+      "poll_id": "amr-2024",
+      "artifact_type": "paper",
+      "title": "Understanding what citizens think about Antimicrobial Resistance (version 2, full text XML)",
+      "location": "data/amr-2024/papers/amr-paper-v2.xml",
+      "source_id": "amr-paper-v2-xml",
+      "original_archive_path": null,
+      "sha256": "7a0703612662921f28927470cd309ae1b0c6ae79953c879a81ae6dc34b04bee0",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Version 2, 14 May 2026. Original Europe PMC full-text XML, including peer review. PDF requests returned access pages, not PDF bytes. Methods establishes pre-randomization baseline and post-deliberation survey; Table 4 supplies invited and attending counts. Source URL: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12891964/fullTextXML",
+      "relative_path": "papers/amr-paper-v2.xml"
     }
   ],
   "document_previews": []
