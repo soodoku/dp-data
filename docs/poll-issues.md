@@ -4127,9 +4127,10 @@ uses 0–10 directly. The available
 [post questionnaire](../data/tomorrows-europe-2007/questionnaire-post.pdf)
 lists Q19 (official EU candidate) choices 1–4 and couldn't say 99. Among the
 344 historical respondents, exactly one has source `t3q19 = 0` and one has 6;
-both have stored `t3q19cor = 0`. Treating these invalid raw codes as missing
-item responses and then zero in the fixed-denominator knowledge score retains
-the stored result; neither supports a new substantive answer category.
+both have stored `t3q19cor = 0`. The approved shared invalid-code rule now
+makes canonical item correctness missing, preserves raw0/6 and records
+`invalid_response`; the fixed-denominator score retains the stored result.
+Neither supports a new substantive answer category.
 Before adopting any new scoring or sample restriction, locate
 and verify the fielded baseline questionnaire, and recover the original
 participant/roster join. A baseline questionnaire is not present in the public
@@ -4361,7 +4362,7 @@ the same 326 changed ages and 17 newly observed education indicators.
 The comparison does not rerun any publication-era model.
 
 The other exceptional raw codes remain field-specific and historically
-reviewed: `t2q19=6` and `t3q19=0/6` score incorrect;
+reviewed in the historical scorer: `t2q19=6` and `t3q19=0/6` contribute zero;
 `t2q24=24/1004` and `t2q27=44/1004` become missing then incorrect;
 `t2q11a=8`, `t3q16a=10` and `t3q18c=55` become missing in attitudes.
 The baseline questionnaire and the original participant/roster join are still
@@ -4390,10 +4391,11 @@ The corrected source transport recognizes these previously mislabeled cells:
 The three invalid attitude codes occur once each. Invalid arrival knowledge
 counts are respectively 1, 1/4 and 1/5. The paired exit questions already classify
 these codes as non-substantive in `metadata/knowledge_items.csv`; arrival now
-reuses those exact response-status definitions. This is not a change to knowledge
-correctness: incorrect answers, don't-know responses and blanks within an
-observed questionnaire retain the approved fixed-denominator zero-scoring rule.
-No new item battery or sample is introduced.
+reuses those exact response-status definitions. That transport review did not change scored correctness. The subsequent
+shared invalid-code rule makes the12 canonical arrival item correctness values
+missing while preserving raw codes and fixed-denominator scores. Incorrect
+answers, verified don’t-know responses and reviewed blanks within an observed
+questionnaire retain their separate zero-scoring convention. No sample changes.
 
 An inventory of all 29 retained poll-level value-label dictionaries found exact
 “No opinion” labels in Tomorrow's Europe, California, BTP 2007 and Vermont,
@@ -6204,8 +6206,29 @@ raw trade answers agree, including missingness. The paired publication sample
 contains215 current people plus serial214, whose four raw answers are2 and
 whose old composite is.5 at both waves. Omitting214 yields .3476744→.3953488;
 this explains the residual discrepancy after matching the older definition.
-Why that person is absent from the final245-person source is not established
-by the trade comparison; attendance and cohort changes require their own audit.
+The source audit now establishes an exact cohort bridge: the earlier file has
+246 treatment respondents with timed completed post interviews;245 have a
+recorded discussion group, and their serials exactly equal the current source.
+Serial214 lacks both group assignment and meeting count. Retained
+`group_level_analysis.do`, line2, explicitly drops treatment respondents without
+a group. This supports a deliberate group-analysis restriction, although the
+exact final-file generation script remains unavailable. Do not reinstate214
+as an attendee merely because the post form exists: the legacy `attend=1`
+flag also appears for all391 missing-meeting-count records, including every
+control, and therefore supplies no independent attendance proof.
+
+The separate attendance audit finds source serial134 (historical930160) has
+`countmtg=0`, despite a completed post form and recorded group. The other244
+retained people have positive meeting counts. The24 source `attend=0` records
+include this person and23 people who attended one or two meetings; that flag
+therefore represents a stricter attendance threshold. Both canonical tables
+currently classify all245 as attendees by historical sample membership. The
+proposal presented to the user is to classify134 as a nonattendee, preserve
+all245 people and questionnaires, and make downstream attendee analyses exclude
+known nonattendees. An explicit attendee filter would change dp-learning’s main
+sample8486→8485; changing the upstream flag alone currently has no effect because
+its historical-cohort reader ignores that flag. No attendance or sample change
+is adopted before this decision.
 The full earlier source is retained for that investigation, with source-bundle
 and archive-path provenance in the poll manifest. It is a separate source
 version, not a replacement for the final survey.
@@ -7467,9 +7490,10 @@ two added Michigan placement questions never enter a telephone comparison.
 The arrival expansion preserved the 115,707 original phase-score rows and added
 17,439 rows, including explicit absent-wave records. AMR-04 subsequently adds
 4,838 unchanged source scores, bringing current phase-score coverage to 137,984
-rows. The typed `analysis_phase_item_responses` table now contains 896,032 rows:
+rows. The typed `analysis_phase_item_responses` table now contains 936,138 rows:
 the earlier 867,004 mapped records, including 133,869 added arrival item/battery
-rows, plus 29,028 AMR responses. Documented nonanswer-status corrections change
+rows, plus 29,028 AMR responses and40,106 intermediate Tomorrow’s Europe/New Haven
+responses. Documented nonanswer-status corrections change
 status labels, not the underlying responses or numerical scores.
 Its key includes source cohort, respondent, battery, original survey instance,
 and canonical question ID. Multiple batteries can reuse an item without implying
@@ -7512,7 +7536,18 @@ until a report is reproduced by construction.
 
 Tomorrow's Europe is not in this missing-arrival list: its arrival score is
 already exposed in `analysis_phase_scores`, although arrival item responses
-are not yet exposed in the common item table. New Haven's Mid and NIC's source
+are now exposed individually in the common phase item table. The transport
+adds39,050 Tomorrow’s Europe arrival item rows (3,550 source people ×11 items)
+and1,056 New Haven interim item rows (132 ×8). All337 source-observed arrival
+scores and all132 interim scores reconstruct exactly; all existing score and
+participant tables remain byte-identical. The3,213 source records with unknown
+arrival-form presence retain that uncertainty and missing item correctness;
+no missing form is represented as eleven wrong answers. These are source-scope
+rows, not3,550 event attendees. Original placement codes are shifted only for
+Tomorrow’s Europe’s verified telephone-versus-event scale convention. Reviewed
+invalid arrival codes become nullable correctness under the shared rule; a
+missing fielded arrival form still prevents inventing response labels for
+undocumented categories. New Haven's Mid and NIC's source
 T2 must not be added as arrival. NI's later telephone reinterview is follow-up,
 not a missing arrival wave.
 
@@ -7874,10 +7909,15 @@ missingness and the established aggregate scoring convention are separate.
 Peer item calculations must exclude invalid item observations rather than
 mistake them for a wrong answer or an opportunity to learn.
 The [cell comparison](../audit/corrections/shared-response-status/invalid_response_cells.csv)
-records89 selected item cells,92 phase item cells and one supplemental
-California item cell. These views repeat the same91 underlying source answers;
+records97 selected item cells,112 phase item cells and one supplemental
+California item cell. These views repeat the same107 underlying source answers;
 Michigan’s single answer also belongs to two phase batteries. New Haven adds30
-invalid departure answers and Zeguo adds13 invalid answers across both waves. All score tables
+invalid departure answers and Zeguo adds13 invalid answers across both waves.
+The remaining sweep adds Tomorrow’s Europe’s two invalid exit answers and
+San Mateo’s two invalid exit answers in both historical and Cor–Sood projections,
+plus12 newly exposed Tomorrow’s Europe arrival answers. The latter had no
+previous canonical item row; their blank `old_correct` in the comparison means
+not previously exposed, not a previously observed zero. All score tables
 and historical polardata files remain byte-identical. The main score-based dp-learning predictors are unchanged by these additional
 invalid-code rules. Zeguo has invalid baseline items, so item-level peer
 calculations must honor their missing correctness; downstream verification is
@@ -8504,3 +8544,32 @@ respondent/field cells in historical parity, leaving unrelated discrepancies
 visible. Meaningful regression cases include incompatible matrices with either
 determinant sign, valid singular matrices, scale changes and roundoff. X-09's
 remaining numerical exceptions are distinct from this scientific correction.
+
+
+### Additional definition evidence, September 29, 2026
+
+An independent source-to-output replay of Bulgaria Crime and the three utility
+polls passes42 measure comparisons. For Bulgaria, all255 nonempty subsets of
+eight candidate civil-liberties questions were tested at each wave. Only
+Q15_1, Q15_3, Q17_1, Q17_2 and Q17_4 reproduce every Version E score and missing
+value at both waves. This establishes the numerical definition among the tested
+unweighted available-item means; it does not recover the authors’ final
+construction syntax or rationale. Five retained draft memos contain no Version E
+formula. The six-item R expression is commented out, while Version D is an earlier
+seven-item definition. Preserve the maintained five-item Version E. Exact
+subset matches and rejected alternatives are in
+`audit/attitude-definition-review/bulgaria-crime-2002/`.
+
+Utilities’ empirical calibration has explicit authored evidence:
+`historical-cdd-scripts:legacy/pete/datacleaning2012.R`, lines41–45, defines
+observed-minimum/maximum rescaling and later calls it separately by wave after
+PART==1 selection. That script establishes an intentional transformation;
+it is not the exact final recipe for every corrected index. Fixed0–10 scaling
+would change, for example, SWEPCO’s paired conservation gain from10.71 to3.17
+percentage points in the232-person explicitly midpoint-imputed series. This
+is a different metric, not evidence of a typo, and is not adopted. Source
+bounds and all paired alternatives are in
+`audit/attitude-definition-review/utilities/`. Original WTU/SWEPCO SAS Q2 input
+lists and codebooks omit FEDRCH while listing RESCH, REDUCE, JOBS, TAX and
+LOWINC, strengthening the evidence that their research index legitimately
+uses RESCH alone. Exact fielded forms remain unrecovered.

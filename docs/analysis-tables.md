@@ -350,3 +350,11 @@ and other nonanswers to missing, those records do not prove literal blank forms.
 The phase extension preserves selected-wave numerical values. Separately,
 source-backed response-status corrections and recovered item descriptions update
 the selected-wave metadata without changing scores or samples.
+
+The phase item table also retains Tomorrow’s Europe’s original T2 arrival
+answers and New Haven’s Mid answers after the first discussion session. Their
+canonical phases are `t1` and `interim_1`, respectively. Every observed-wave
+score reproduces from these answers. Tomorrow’s Europe’s source records with
+unknown arrival-form presence retain nullable correctness and the unknown
+presence flag; they are not treated as observed wrong answers. Exposing an
+intermediate questionnaire changes neither attendance nor the analytical cohort.

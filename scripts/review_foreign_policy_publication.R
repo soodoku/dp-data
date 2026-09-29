@@ -141,8 +141,24 @@ cohort <- tibble::tibble(
   serial = as.numeric(archive$serial),
   archived_treatment = archive$exp_cond %in% 1,
   paper_paired_trade = paper_sample,
-  current_source = archive$serial %in% online$serial
+  current_source = archive$serial %in% online$serial,
+  discussion_group_recorded = !is.na(archive$dpoll_no),
+  post_completed = stats::complete.cases(archive[c(
+    "f_dt_st", "f_tm_st", "f_dt_end", "f_tm_end", "f_durat"
+  )]) & archive$f_durat > 0,
+  meetings_attended = as.integer(archive$countmtg),
+  authored_attend = as.integer(archive$attend)
 )
+group_cohort <- with(
+  cohort,
+  archived_treatment & discussion_group_recorded & post_completed
+)
+stopifnot(setequal(cohort$serial[group_cohort], online$serial))
+meeting_counts <- dplyr::count(
+  cohort, current_source, meetings_attended,
+  authored_attend
+)
+readr::write_csv(meeting_counts, file.path(out, "meeting_counts.csv"))
 readr::write_csv(summary, file.path(out, "comparison.csv"))
 readr::write_csv(raw_checks, file.path(out, "raw_join_checks.csv"))
 readr::write_csv(post_summary, file.path(out, "table2_comparison.csv"))

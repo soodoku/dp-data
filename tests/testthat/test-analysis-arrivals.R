@@ -1,3 +1,4 @@
+source(file.path(root, "R", "analysis_knowledge_responses.R"))
 source(file.path(root, "R", "analysis_arrivals.R"))
 
 test_that("added arrivals preserve question batteries and source identities", {
@@ -17,27 +18,33 @@ test_that("added arrivals preserve question batteries and source identities", {
   expect_true(all(is.na(scores$score[absent])))
   expect_true(all(scores$n_observed[absent] == 0L))
   expect_true(all(is.na(items$correct[!items$wave_observed])))
-  common <- dplyr::filter(scores, grepl(":knowledge$", battery_id),
+  common <- dplyr::filter(
+    scores, grepl(":knowledge$", battery_id),
     source_dataset == "cor_sood"
   )
   counts <- common |>
     dplyr::summarise(n = sum(wave_observed), .by = poll_id) |>
     dplyr::pull(n)
   expect_equal(counts, c(396L, 348L, 358L, 146L))
-  euro <- dplyr::filter(scores, poll_id == "europolis-2009",
+  euro <- dplyr::filter(
+    scores, poll_id == "europolis-2009",
     source_dataset == "cor_sood"
   )
   expect_equal(mean(euro$score[grepl(":knowledge$", euro$battery_id)]),
-    27.7777777778 / 100, tolerance = 1e-10
+    27.7777777778 / 100,
+    tolerance = 1e-10
   )
   expanded <- dplyr::filter(euro, grepl("expanded_nine$", battery_id))
   expect_equal(mean(expanded$score[expanded$wave == "t1"]),
-    29.6296296296 / 100, tolerance = 1e-10
+    29.6296296296 / 100,
+    tolerance = 1e-10
   )
   expect_equal(mean(expanded$score[expanded$wave == "t2"]),
-    37.8033205619 / 100, tolerance = 1e-10
+    37.8033205619 / 100,
+    tolerance = 1e-10
   )
-  ca <- dplyr::filter(scores, poll_id == "california-whats-next-2011",
+  ca <- dplyr::filter(
+    scores, poll_id == "california-whats-next-2011",
     grepl("expanded_eight$", battery_id)
   )
   expect_equal(sum(ca$n_correct[ca$wave == "t1"]), 1900L)
@@ -57,15 +64,19 @@ test_that("added arrivals preserve question batteries and source identities", {
 
 test_that("phase item export links to scores and canonical questions", {
   directory <- project_path("output", "analysis")
-  items <- arrow::read_parquet(file.path(directory,
+  items <- arrow::read_parquet(file.path(
+    directory,
     "analysis_phase_item_responses.parquet"
   ))
-  scores <- arrow::read_parquet(file.path(directory,
+  scores <- arrow::read_parquet(file.path(
+    directory,
     "analysis_phase_scores.parquet"
   ))
   catalog <- read_metadata("items")
-  keys <- c("poll_id", "source_dataset", "respondent_id", "battery_id",
-            "wave_instance_id")
+  keys <- c(
+    "poll_id", "source_dataset", "respondent_id", "battery_id",
+    "wave_instance_id"
+  )
   expect_false(anyDuplicated(items[c(keys, "item_id")]) > 0L)
   expect_equal(nrow(dplyr::anti_join(items, scores, by = keys)), 0L)
   unmatched <- dplyr::anti_join(items, catalog,
@@ -77,9 +88,54 @@ test_that("phase item export links to scores and canonical questions", {
                     grepl("expanded|placements", battery_id)) |>
     dplyr::summarise(
       observed = dplyr::first(wave_observed),
-      reconstructed = sum(correct) / dplyr::n(), .by = dplyr::all_of(keys)
+      reconstructed = dplyr::if_else(observed,
+        sum(correct, na.rm = TRUE) / dplyr::n(), NA_real_
+      ), .by = dplyr::all_of(keys)
     ) |>
     dplyr::left_join(scores, by = keys, relationship = "one-to-one")
   expect_equal(rebuilt$reconstructed, rebuilt$score)
   expect_true(all(is.na(rebuilt$score[!rebuilt$observed])))
+})
+
+
+test_that("intermediate items preserve arrival and within-event timing", {
+  directory <- project_path("output", "analysis")
+  people <- arrow::read_parquet(file.path(
+    directory, "analysis_phase_participants.parquet"
+  ))
+  scores <- arrow::read_parquet(file.path(
+    directory, "analysis_phase_scores.parquet"
+  ))
+  items <- analysis_intermediate_items(people, scores)
+  expect_equal(nrow(items), 3550L * 11L + 132L * 8L)
+  keys <- c("poll_id", "respondent_id", "wave", "item_id")
+  expect_false(anyDuplicated(items[keys]) > 0L)
+  nh <- dplyr::filter(items, poll_id == "new-haven-2004")
+  te <- dplyr::filter(items, poll_id == "tomorrows-europe-2007")
+  expect_setequal(nh$wave, "interim_1")
+  expect_true(all(nh$wave_observed))
+  expect_true(all(grepl("^mid_q", nh$source_column)))
+  expect_setequal(te$wave, "t1")
+  observed <- te$wave_observed %in% TRUE
+  expect_equal(dplyr::n_distinct(te$respondent_id[observed]), 337L)
+  expect_true(all(grepl("^t2q", te$source_column)))
+  unknown <- is.na(te$wave_observed)
+  expect_equal(dplyr::n_distinct(te$respondent_id[unknown]), 3213L)
+  placements <- dplyr::filter(te, source_column %in% c("t2q36a", "t2q36b"))
+  expected <- with(placements, as.integer(
+    ifelse(source_column == "t2q36a", raw_value %in% 6:10, raw_value %in% 0:4)
+  ))
+  expected[!placements$wave_observed %in% TRUE] <- NA_integer_
+  expect_identical(placements$correct, expected)
+  enriched <- enrich_knowledge_responses(items) |>
+    standardize_knowledge_scores()
+  enriched <- enriched$items
+  invalid <- dplyr::filter(enriched, response_reason == "invalid_response")
+  expect_equal(nrow(invalid), 12L)
+  expect_true(all(is.na(invalid$correct)))
+  expect_true(all(is.na(invalid$knowledge_response)))
+  expect_equal(invalid$raw_value, items$raw_value[match(
+    paste(invalid$poll_id, invalid$respondent_id, invalid$item_id),
+    paste(items$poll_id, items$respondent_id, items$item_id)
+  )])
 })
