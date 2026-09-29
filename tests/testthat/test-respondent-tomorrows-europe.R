@@ -171,9 +171,9 @@ test_that("tomorrows-europe matches every historical respondent target", {
     "minority" = "minority",
     "educ4" = "education_four",
     "educ3" = "education_three",
-    "bettered" = "higher_education",
+
     "hhincome" = "household_income",
-    "highinc" = "high_income",
+
     "t1polint" = "political_interest_t1",
     "attextreme" = "attitude_extremity",
     "attextreme2" = "attitude_extremity_midterm",
@@ -218,7 +218,7 @@ test_that("tomorrows-europe matches every historical respondent target", {
     "eu.t3q11br" = "military_never_t3",
     "eu.t3q16jr" = "enlargement_limit_t3"
   )
-  corrected <- c("ppage", "educ4", "educ3", "bettered")
+  corrected <- c("ppage", "educ4", "educ3")
   for (field in setdiff(names(mapping), c(
     "eu.mil_att_11_12_t3", "eu.free_trade_index_t3", corrected
   ))) {
@@ -236,7 +236,7 @@ test_that("tomorrows-europe matches every historical respondent target", {
   expect_equal(sum(education_code == 5L), 17L)
   expect_true(all(built$education_four[education_code == 5L] == 1))
   expect_true(all(built$education_three[education_code == 5L] == 1))
-  expect_true(all(built$higher_education[education_code == 5L] == 1))
+
   approved <- readr::read_csv(project_path(
     "audit", "corrections", "tomorrows-europe-2007", "approved_values.csv"
   ), show_col_types = FALSE)

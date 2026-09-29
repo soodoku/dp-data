@@ -120,8 +120,8 @@ build_btp_health_individual <- function(
       minority = as.numeric(btp_source_codes(survey, "race", 1:7) != 1),
       education_four = education,
       education_three = collapse_historical_education(education),
-      higher_education = as.numeric(education == 1),
-      household_income = NA_real_, high_income = NA_real_,
+
+      household_income = NA_real_,
       attitude_extremity = extremity,
       read_briefing = NA_real_,
       political_interest_t1 = as_historical_float(c(0, .33, .66, 1)[

@@ -82,14 +82,16 @@ reviewed_us_average_sd <- function(attitudes, group) {
 }
 
 reviewed_us_derived <- function(survey, values, measures, selected, group,
-                                attitudes, before, after, early_high_income,
+                                attitudes, before, after,
                                 pollid, mode, numindices, numissues,
                                 t1knowlevel, length = NA_real_) {
   rows <- which(selected)
   legacy <- reviewed_us_legacy_values(measures)[rows, ]
+  legacy$highinc <- above_reference_median(
+    measures$household_income[rows], values$hhincome
+  )
   result <- historical_derived_columns(
-    legacy, group[rows],
-    early_high_income[rows], attitudes[rows, , drop = FALSE]
+    legacy, group[rows], attitudes[rows, , drop = FALSE]
   )
   result$avgsd <- reviewed_us_average_sd(
     attitudes[rows, , drop = FALSE],
@@ -124,7 +126,6 @@ build_btp_general_derived <- function(survey, values) {
   reviewed_us_derived(survey, values, measures, rep(TRUE, nrow(survey)),
     9400 + as.numeric(survey$smgrpnumber), btp_general_attitudes(survey, "b"),
     btp_general_knowledge(survey, "b"), btp_general_knowledge(survey, "f"),
-    as.numeric(measures$household_income > 7),
     pollid = 94, mode = 1, numindices = 6, numissues = 1,
     t1knowlevel = reviewed_us_baseline_level("btp-general-election-2004")
   )
@@ -135,7 +136,6 @@ build_btp_health_derived <- function(survey, values) {
   reviewed_us_derived(survey, values, measures, survey$filter %in% 1,
     9700 + as.numeric(survey$groupnum), btp_health_attitudes(survey, 1L),
     btp_health_knowledge(survey, 1L), btp_health_knowledge(survey, 2L),
-    rep(NA_real_, nrow(survey)),
     pollid = 97, mode = 1, numindices = 11, numissues = 2,
     t1knowlevel = reviewed_us_baseline_level("btp-health-education-2005")
   )
@@ -151,7 +151,6 @@ build_san_mateo_derived <- function(survey, values) {
       "consultation", "county_local", "county_state"
     )],
     san_mateo_knowledge(survey, 1L), san_mateo_knowledge(survey, 2L),
-    as.numeric(measures$household_income > 4),
     pollid = 96, mode = 0, numindices = 7, numissues = 1,
     t1knowlevel = reviewed_us_baseline_level("san-mateo-2008", survey),
     length = 2

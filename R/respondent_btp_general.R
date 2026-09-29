@@ -119,8 +119,8 @@ build_btp_general_individual <- function(
       minority = as.numeric(btp_source_codes(survey, "ppeth", 1:4) != 1),
       education_four = education,
       education_three = collapse_historical_education(education),
-      higher_education = as.numeric(education >= .66),
-      household_income = income, high_income = as.numeric(income > 5),
+
+      household_income = income,
       attitude_extremity = extremity,
       read_briefing = NA_real_, political_interest_t1 = NA_real_,
       knowledge_joint_midterm = NA_real_, knowledge_midterm = NA_real_,

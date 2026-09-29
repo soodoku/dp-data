@@ -128,8 +128,8 @@ build_australia_individual <- function(
     minority = as.numeric(read("overseas", c(1:2, 100)) < 2),
     education_four = education,
     education_three = collapse_historical_education(education),
-    higher_education = as.numeric(education == 1),
-    household_income = income, high_income = as.numeric(income > .66),
+
+    household_income = income,
     political_interest_t1 = c(0, .33, .66, 1)[read("intpol1", c(1:4, 97))],
     read_briefing = NA_real_, attitude_extremity = extremity,
     attitude_extremity_midterm = NA_real_

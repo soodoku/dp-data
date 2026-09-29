@@ -163,9 +163,9 @@ test_that("NIC2 matches all historical respondent and aggregate values", {
     "minority" = "minority",
     "educ4" = "education_four",
     "educ3" = "education_three",
-    "bettered" = "higher_education",
+
     "hhincome" = "household_income",
-    "highinc" = "high_income",
+
     "t1polint" = "political_interest_t1",
     "attextreme" = "attitude_extremity",
     "attextreme2" = "attitude_extremity_midterm",
@@ -210,9 +210,10 @@ test_that("NIC2 matches all historical respondent and aggregate values", {
       tolerance = 1e-10, info = field
     )
   }
+  values$highinc <- above_reference_median(values$hhincome, values$hhincome)
   result <- build_nic2_derived(survey, values)
   for (field in names(result)) {
-    if (field == "entropy") {
+    if (field %in% c("entropy", "phighinc")) {
       reference[[field]] <- approved_reference_values(
         "nic2-2003", field, reference$caseid, reference[[field]]
       )

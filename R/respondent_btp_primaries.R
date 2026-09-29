@@ -76,9 +76,9 @@ build_btp_primaries_individual <- function(
       minority = recode_source_values(survey, "ppeth", c(0, 1, 1, 1), -2:-1),
       education_four = education,
       education_three = collapse_historical_education(education),
-      higher_education = as.numeric(education >= .66),
+
       household_income = household_income,
-      high_income = as.numeric(household_income > 11),
+
       political_interest_t1 = recode_source_values(survey, "b1q18",
         as_historical_float(c(0, .33, .66, 1)), -2:-1
       ),

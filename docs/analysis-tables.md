@@ -1,6 +1,6 @@
 # Canonical analysis tables
 
-`make analysis` writes twelve typed Parquet tables and a checksum manifest to
+`make analysis` writes thirteen typed Parquet tables and a checksum manifest to
 `output/analysis/`. `make check` rebuilds them after the knowledge, respondent,
 and historical aggregate exports. Source files and reviewed metadata stay in
 `data/` and `metadata/`; downstream projects use the Parquet tables.
@@ -19,6 +19,7 @@ and historical aggregate exports. Source files and reviewed metadata stay in
 | `analysis_survey_waves` | One survey occasion per catalog cohort; `poll_id`, `wave_instance_id` |
 | `analysis_phase_participants` | One source respondent with attendance evidence; participant key |
 | `analysis_phase_scores` | One knowledge measurement; participant key, `battery_id`, `wave_instance_id` |
+| `analysis_phase_item_responses` | One item answer with verified timing; participant key, `battery_id`, `wave_instance_id`, `item_id` |
 
 There are respondent records for 33 polls and item responses for 31. The
 participant table covers the 21 reviewed historical surveys, 23 Cor–Sood
@@ -27,11 +28,15 @@ historical and Cor–Sood polls overlap. `source_dataset` distinguishes their
 separate person IDs; identical IDs across the deposits do not imply the same
 person. Northern Ireland is a verified exception: its Cor–Sood T1/T2 battery
 and the T3 survey use the same `cserial` respondent ID for 93 returning
-participants. The score-only Marousi and Tanzania files have no recovered person-item
-answers in this export.
+participants. Marousi retains authored item-correctness flags and Tanzania
+retains nine scored knowledge components in their source files. Neither has
+canonical item-response rows here: the complete raw question-and-answer mapping
+has not been established. Their scores remain available.
 
 `item_id` uses `knowledge_001`, `knowledge_002`, and so on within each poll.
-The original baseline source field is `source_column_t1`; historical and
+The original baseline source field is `source_column_t1`; for the eight added
+arrival-only items this names the earliest fielded source and the coding note
+explicitly identifies arrival. Historical and
 Cor–Sood battery IDs have their own columns. Four Zeguo questions use a
 different historical post-wave ID, recorded in `historical_item_id_t2`.
 The item-response table maps each source battery to the canonical ID, retaining
@@ -41,9 +46,14 @@ table; its source fields remain in `output/respondent/source_responses.parquet`.
 Its `n_observed` is null because the scored export does not establish which
 answers were observed.
 The 2019 America in One Room codebook supplies offered choices and keyed answer
-text. The retained climate and antimicrobial-resistance reports do not supply
-choice labels or readable keyed answers; these are marked missing in the item
-catalog, while their scoring codes are preserved.
+text. The recovered climate preparation script supplies Q19–Q24 options, keys
+and nonanswer labels; equivalent missing-code documentation for Q17/Q18 remains
+unavailable. AMR's recovered questionnaire, expert answer table and harmonized
+codebooks supply all six items' options and keyed text. Its questionnaire Q21
+copies the preceding question's options, but the expert table and codebook agree
+on the infection-prevention options and key 5. Existing scoring is preserved;
+[Poll issues](poll-issues.md#amr-04--preserve-verified-phases-and-recovered-measurement-evidence-implemented)
+records the source conflict and remaining evidence gaps.
 
 The selected-wave tables retain the historical analysis labels: `t1` and
 `t2` mean the selected initial and later scores. These do not consistently mean
@@ -54,9 +64,21 @@ is `interim_1`. NIC's original T2 is exit and T3 is a ten-month follow-up.
 Tanzania's telephone reinterview is weeks later and is classified as follow-up.
 Original survey labels and legacy score labels remain separate columns.
 
-Readers must select a baseline/outcome pair explicitly. The current desired
-dp-learning comparison is arrival-to-exit (`t1` to `t2`); pre-arrival-to-exit
-(`t0` to `t2`) is a separate comparison, never an implicit fallback. The source
+`analysis_phase_item_responses` maps existing item responses to their documented
+survey occasions and adds the verified arrival batteries. California and Europolis
+retain both common and expanded batteries; Michigan has separate four-placement
+three-wave and six-placement arrival/exit batteries. Select `battery_id` explicitly
+before comparing phases. The source files retain people outside each existing
+analytical cohort, and California's separate eight-item output still covers its
+broader 412-person source cohort. Questionnaire absence yields null correctness
+and scores; blank items within an observed form score zero. Marousi remains
+score-only here. AMR now contributes 4,838 phase scores and 29,028 item responses:
+2,419 people at both pre-invitation t0 and event-end t2. The version 2 paper
+establishes those occasions; no arrival measurement, exact interview dates or
+survey mode is inferred. All existing AMR answers and numerical scores are unchanged.
+
+Readers must select a baseline/outcome pair explicitly. Arrival-to-exit (`t1` to `t2`) and pre-arrival-to-exit (`t0` to `t2`) are
+distinct comparisons, never implicit substitutes for one another. The source
 universe must retain available pre-arrival responses from nonattendees and
 people without a group; analysis views select attendees, observed wave pairs
 or known memberships as needed. This preserves evidence for selection and
@@ -67,13 +89,24 @@ and `attended`. In America in One Room 2019, `assignment = recruitment`
 identifies the baseline recruitment sample; NORC later subsampled this frame for
 invitations. Its nonattenders are `recruitment_nonattender`, since individual
 invitation status is not established. In the climate study, baseline treatment
-respondents were invited to register, so `invited_nonattender` is supported.
-Invitations were randomized in some studies, but analysis of
-attendees is not an intention-to-treat estimate. `small_group_id` identifies a
+respondents were invited to register. The 962 who completed the event and post
+survey are `completed`; the other 7,018 are `invited_noncompleter`. Their attendance
+is null, since failure to complete does not establish nonattendance. Controls
+retain `attended = FALSE`, and documented completers retain `attended = TRUE`.
+AMR retains 1,280 attendees and 1,139 controls; the paper's 1,847 invited
+nonattenders are absent from its deposit. These rows therefore cannot identify
+a full invitation intention-to-treat effect. Its supplied weights apply within
+country × arm, as the original deposit README specifies; they do not define a
+pooled six-country population weight. Invitations were randomized in some
+studies, but analysis of attendees is not an intention-to-treat estimate.
+`small_group_id` identifies a
 discussion group when observed; `cluster_id` is the inference cluster and is a
 village in Tanzania. Missing values mean the fact was not established in the
 available source, not that it did not occur. `panel` identifies the reviewed
-historical analysis sample or the study's available T1/T2 panel.
+historical analysis sample or the study's available T1/T2 panel. Tanzania has one
+known exception pending correction: respondent `1323` (`HHID == 240301`) has
+only a follow-up score but is labeled panel. There are 1,858 flagged records
+and 1,857 with both measurements; the person and observed follow-up must be retained.
 For Cor–Sood respondents, group IDs come from the reviewed
 `output/memberships.parquet` on the same `(poll_id, respondent_id)` key. That
 source supplies 6,147 memberships across 21 polls, including BTP online
@@ -91,14 +124,28 @@ discussion, recalled afterward. Michigan's letter-coded reading answers are
 categorical survey responses; unrecognized codes remain missing. Attitude
 extremity and minority status retain the historical definitions and coverage.
 The schema and recode ledger record source fields, category mappings, and sources.
+UK Health's `ba` flag uses the separate B12 degree question (`educb == 9`),
+with nonresponse missing. Its B11 school-qualification scale is not a degree
+measure and must not be interpreted as one; the empirical-median education
+classification is also a separate measure. This correction yields 32 degree
+holders among 229 observed answers, with all 230 historical participants retained.
 The covariate build preserves every participant key and does not impose a
 complete-case sample; downstream analyses select the variables they need.
 
 `analysis_scores` averages item correctness over the full fielded battery for
 the four item-linked control polls and both deposited historical batteries.
 Missing, skipped, and don't-know answers enter that proportion as zero; the
-response table preserves their source status. Tanzania's released standardized
-index is marked as a source score with null item counts. Marousi preserves
+response table preserves their source status. Documented nonanswers now use
+`non_substantive` for America in One Room 2019 codes −8/77/98/99 (13,709 cells),
+Northern Ireland follow-up codes 9/10 (356), and climate Q19–Q24 codes 77/98/99
+(16,580). Each count applies separately to the selected-wave and phase item
+tables. Raw codes, correctness, scores, denominators and people are unchanged.
+
+Tanzania's released standardized index is marked as a source score with null
+item counts. Its first component contains −99 values that entered the original
+standardization numerically. TZ-03 documents the reproduced calculation and a
+proposed zero recode with recalibration; this numerical correction has not been
+applied. The current source indices remain unchanged. Marousi preserves
 its original telephone proportion at t0 and computes arrival/exit proportions
 from seven authored correctness flags. Individual blanks/DK count wrong;
 seventeen absent exit questionnaires have missing scores. All 146 grouped
@@ -215,12 +262,12 @@ readers must choose an occasion explicitly rather than average or overwrite them
 citation are carried in the typed table. A documented pre-start design does not
 assert that individual first-meeting timestamps were recovered.
 
-`availability = source_exists_but_not_exported` identifies retained survey data
-that have not entered these score tables. California, Europolis, Denmark and
-Vermont have additional arrival batteries. Michigan has arrival placement items,
-but not all five factual questions from its telephone battery. `battery_scope`
-records these distinctions. A count of exported three-wave comparisons is thus
-not a count of studies that collected three waves.
+California, Europolis, Denmark, Vermont and Michigan's retained arrivals now
+have `availability = score_exported`. Michigan has only arrival placement items,
+not its five telephone factual questions; its four-item common and six-item
+arrival/exit batteries remain separate from the selected-wave nine-item battery.
+`battery_scope` records these distinctions. Exported coverage does not establish
+that every person completed every wave or that discussion-group IDs are known.
 
 `analysis_phase_participants` adds `attendance_status`, `attendance_evidence`,
 and nullable `sessions_attended`. Seven Cor–Sood cohorts now use source attendance
@@ -236,5 +283,10 @@ and generated correctness flags. California has 386 observed telephone interview
 in its 396-person source cohort; the remaining ten pre-arrival questionnaires
 are absent. All 396 exit questionnaires are observed, including four with blank
 knowledge batteries. Blanks in an observed quiz score zero; absent questionnaires
-remain missing. All eight existing selected-wave tables remain byte-identical;
-these changes affect the phase schema and documented analysis views.
+remain missing. AMR has 46 observed interviews whose six knowledge responses are
+all missing in the harmonized deposit. Other questionnaire answers establish
+presence, so these scores remain zero. Because the source collapsed don't-know
+and other nonanswers to missing, those records do not prove literal blank forms.
+The phase extension preserves selected-wave numerical values. Separately,
+source-backed response-status corrections and recovered item descriptions update
+the selected-wave metadata without changing scores or samples.

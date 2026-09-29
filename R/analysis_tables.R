@@ -266,11 +266,13 @@ analysis_control_people <- function(sources) {
       respondent_id = as.character(CaseId), source_row,
       historical_respondent_id = NA_character_,
       identity_basis = "source-id", arm = dplyr::case_when(
-        P_TREATMENT == 0 ~ "control", P_DELEGATE == 1 ~ "attended",
-        TRUE ~ "invited_nonattender"
+        P_TREATMENT == 0 ~ "control", P_DELEGATE == 1 ~ "completed",
+        TRUE ~ "invited_noncompleter"
       ),
       assignment = dplyr::if_else(P_TREATMENT == 1, "invited", "control"),
-      attended = P_DELEGATE == 1,
+      attended = dplyr::case_when(
+        P_DELEGATE == 1 ~ TRUE, P_TREATMENT == 0 ~ FALSE, TRUE ~ NA
+      ),
       panel = P_DELEGATE == 1 | (P_TREATMENT == 0 & P_DELEGATE == 0),
       small_group_id = dplyr::if_else(P_DELEGATE == 1, as.character(ROOM),
                                       NA_character_),
@@ -577,8 +579,16 @@ analysis_control_items <- function(sources, catalog) {
       item_id, source_row,
       source_column, raw_value, raw_text,
       correct = as.integer(!is.na(raw_value) & raw_value == key),
-      response_status = dplyr::if_else(
-        is.na(raw_value), "source_missing", "answered"
+      response_status = dplyr::case_when(
+        is.na(raw_value) ~ "source_missing",
+        poll_id == "america-in-one-room-2019" &
+          raw_value %in% c(-8, 77, 98, 99) ~ "non_substantive",
+        poll_id == "northern-ireland-2007" &
+          raw_value %in% c(9, 10) ~ "non_substantive",
+        poll_id == "a1r-climate-2021" &
+          source_item_id %in% paste0("Q", 19:24) &
+          raw_value %in% c(77, 98, 99) ~ "non_substantive",
+        TRUE ~ "answered"
       )
     )
 }
@@ -650,8 +660,9 @@ build_analysis_tables <- function() {
       by = "poll_id", relationship = "many-to-one"
     )
   stopifnot(!anyNA(phase_people$study_id))
+  arrival_items <- analysis_arrival_items(recruitment$participants)
   phase_scores <- analysis_phase_scores(
-    scores, items, recruitment$participants, sources, recruitment
+    scores, items, recruitment$participants, sources, recruitment, arrival_items
   ) |>
     add_analysis_wave_identity(wave_catalog$analysis_survey_waves)
   phase_evidence <- analysis_attendance_evidence(phase_people, phase_scores)
@@ -687,6 +698,9 @@ build_analysis_tables <- function() {
     analysis_attitude_responses = attitudes$responses,
     analysis_phase_participants = phase_evidence$participants,
     analysis_phase_scores = phase_evidence$scores,
+    analysis_phase_item_responses = analysis_phase_items(
+      items, phase_evidence$scores, arrival_items
+    ),
     analysis_studies = wave_catalog$analysis_studies,
     analysis_survey_waves = wave_catalog$analysis_survey_waves
   )

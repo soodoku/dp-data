@@ -10,7 +10,7 @@ uk-eu-1995,minority,minority@historical-v1,238,233,0,0,0,0,1e-10
 uk-eu-1995,hhincome,hhincome@historical-v1,238,0,0,0,0,0,1e-10
 uk-eu-1995,female,female@historical-v1,238,238,0,0,0,0,1e-10
 uk-eu-1995,attextreme,attextreme@historical-v1,238,238,0,0,3.885780586188048e-16,0,1e-10
-uk-eu-1995,highinc,highinc@historical-v1,238,0,0,0,0,0,1e-10
+uk-eu-1995,highinc,highinc@poll-median-v1,238,0,0,0,0,0,1e-10
 uk-eu-1995,t1polint,t1polint@historical-v1,238,238,0,0,0,0,1e-10
 uk-eu-1995,t1knowcor2,t1knowcor2@historical-v1,238,0,0,0,0,0,1e-10
 uk-eu-1995,t12know,t12know@historical-v1,238,0,0,0,0,0,1e-10
@@ -33,7 +33,7 @@ uk-eu-1995,ukeu.eurelat2g,ukeu.eurelat2g@ukeu-03-v2,238,224,0,211,0.333333333333
 uk-eu-1995,ukeu.euscope2g,ukeu.euscope2g@ukeu-04-v2,238,224,14,209,0.333333333333333,0,1e-10
 uk-eu-1995,ukeu.commies2r,ukeu.commies2r@historical-v1,238,221,0,0,0,0,1e-10
 uk-eu-1995,ukeu.favref2r,ukeu.favref2r@historical-v1,238,224,0,0,0,0,1e-10
-uk-eu-1995,bettered,bettered@historical-v1,238,230,0,0,0,0,1e-10
+uk-eu-1995,bettered,bettered@poll-median-v1,238,230,0,0,0,0,1e-10
 uk-health-1998,readbrief,readbrief@historical-v1,230,0,0,0,0,0,1e-10
 uk-health-1998,t1know,t1know@historical-v1,230,230,0,0,3.3306690738754696e-16,0,1e-10
 uk-health-1998,t1knowr,t1know@historical-v1,230,230,0,0,3.3306690738754696e-16,0,1e-10
@@ -44,8 +44,8 @@ uk-health-1998,educ4,educ4@historical-v1,230,228,0,0,0,0,1e-10
 uk-health-1998,minority,minority@historical-v1,230,230,0,0,0,0,1e-10
 uk-health-1998,hhincome,hhincome@historical-v1,230,206,0,0,3.3306690738754696e-16,0,1e-10
 uk-health-1998,female,female@historical-v1,230,230,0,0,0,0,1e-10
-uk-health-1998,attextreme,attextreme@historical-v1,230,230,0,0,4.996003610813204e-16,0,1e-10
-uk-health-1998,highinc,highinc@historical-v1,230,206,0,0,0,0,1e-10
+uk-health-1998,attextreme,attextreme@ukh-02-v2,230,230,0,203,0.14285714285714324,0,1e-10
+uk-health-1998,highinc,highinc@poll-median-v1,230,206,0,0,0,0,1e-10
 uk-health-1998,t1polint,t1polint@historical-v1,230,0,0,0,0,0,1e-10
 uk-health-1998,t1knowcor2,t1knowcor2@historical-v1,230,0,0,0,0,0,1e-10
 uk-health-1998,t12know,t12know@historical-v1,230,0,0,0,0,0,1e-10
@@ -66,7 +66,7 @@ uk-health-1998,ukhealth.t1option,ukhealth.t1option@historical-v1,230,218,0,0,0,0
 uk-health-1998,ukhealth.t1hlthfu,ukhealth.t1hlthfu@historical-v1,230,225,0,0,3.3306690738754696e-16,0,1e-10
 uk-health-1998,ukhealth.t1ctexpt,ukhealth.t1ctexpt@historical-v1,230,225,0,0,3.3306690738754696e-16,0,1e-10
 uk-health-1998,ukhealth.t1pritre,ukhealth.t1pritre@historical-v1,230,224,0,0,3.3306690738754696e-16,0,1e-10
-uk-health-1998,ukhealth.t1severi,ukhealth.t1severi@historical-v1,230,204,0,0,0,0,1e-10
+uk-health-1998,ukhealth.t1severi,ukhealth.t1severi@ukh-02-v2,230,204,0,0,0,0,1e-10
 uk-health-1998,ukhealth.t1preven,ukhealth.t1preven@historical-v1,230,212,0,0,0,0,1e-10
 uk-health-1998,ukhealth.t1dispub,ukhealth.t1dispub@historical-v1,230,215,0,0,0,0,1e-10
 uk-health-1998,ukhealth.t1avgdis,ukhealth.t1avgdis@historical-v1,230,216,0,0,0,0,1e-10
@@ -77,12 +77,12 @@ uk-health-1998,ukhealth.t2option,ukhealth.t2option@historical-v1,230,223,0,0,0,0
 uk-health-1998,ukhealth.t2hlthfu,ukhealth.t2hlthfu@historical-v1,230,222,0,0,3.3306690738754696e-16,0,1e-10
 uk-health-1998,ukhealth.t2ctexpt,ukhealth.t2ctexpt@historical-v1,230,221,0,0,3.3306690738754696e-16,0,1e-10
 uk-health-1998,ukhealth.t2pritre,ukhealth.t2pritre@historical-v1,230,217,0,0,3.3306690738754696e-16,0,1e-10
-uk-health-1998,ukhealth.t2severi,ukhealth.t2severi@historical-v1,230,204,0,0,3.3306690738754696e-16,0,1e-10
+uk-health-1998,ukhealth.t2severi,ukhealth.t2severi@ukh-02-v2,230,204,0,196,0.25,0,1e-10
 uk-health-1998,ukhealth.t2preven,ukhealth.t2preven@historical-v1,230,214,0,0,0,0,1e-10
 uk-health-1998,ukhealth.t2dispub,ukhealth.t2dispub@historical-v1,230,200,0,0,0,0,1e-10
 uk-health-1998,ukhealth.t2avgdis,ukhealth.t2avgdis@historical-v1,230,218,0,0,0,0,1e-10
 uk-health-1998,ukhealth.t2moresa,ukhealth.t2moresa@historical-v1,230,217,0,0,0,0,1e-10
-uk-health-1998,bettered,bettered@historical-v1,230,228,0,0,0,0,1e-10
+uk-health-1998,bettered,bettered@poll-median-v1,230,228,0,70,1,0,1e-10
 uk-monarchy-1996,readbrief,read_briefing@historical-v1,258,0,0,0,0,0,1e-10
 uk-monarchy-1996,t1know,knowledge_t1@historical-v1,258,258,0,0,4.440892098500626e-16,0,1e-10
 uk-monarchy-1996,t1knowr,knowledge_t1@historical-v1,258,258,0,0,4.440892098500626e-16,0,1e-10
@@ -94,7 +94,7 @@ uk-monarchy-1996,minority,minority@ukm06-v2,258,258,0,0,0,0,1e-10
 uk-monarchy-1996,hhincome,household_income@historical-v1,258,0,0,0,0,0,1e-10
 uk-monarchy-1996,female,female@historical-v1,258,258,0,0,0,0,1e-10
 uk-monarchy-1996,attextreme,attitude_extremity@historical-v1,258,258,0,0,4.996003610813204e-16,0,1e-10
-uk-monarchy-1996,highinc,high_income@historical-v1,258,0,0,0,0,0,1e-10
+uk-monarchy-1996,highinc,high_income@poll-median-v1,258,0,0,0,0,0,1e-10
 uk-monarchy-1996,t1polint,political_interest_t1@ukm06-v2,258,257,0,0,0,0,1e-10
 uk-monarchy-1996,t1knowcor2,knowledge_joint_midterm@historical-v1,258,0,0,0,0,0,1e-10
 uk-monarchy-1996,t12know,knowledge_midterm@historical-v1,258,0,0,0,0,0,1e-10
@@ -117,7 +117,7 @@ uk-monarchy-1996,ukmonarchy.t1pwrm,monarchy_power_t1@historical-v1,258,257,0,0,0
 uk-monarchy-1996,ukmonarchy.t2pwrm,monarchy_power_t2@historical-v1,258,251,0,0,0,0,1e-10
 uk-monarchy-1996,ukmonarchy.t1reflor,lords_reform_t1@historical-v1,258,249,0,0,4.440892098500626e-16,0,1e-10
 uk-monarchy-1996,ukmonarchy.t2reflor,lords_reform_t2@historical-v1,258,251,0,0,4.440892098500626e-16,0,1e-10
-uk-monarchy-1996,bettered,higher_education@ukm06-v2,258,258,0,0,0,0,1e-10
+uk-monarchy-1996,bettered,higher_education@poll-median-v1,258,258,0,0,0,0,1e-10
 uk-general-election-1997,readbrief,read_briefing@historical-v1,275,0,0,0,0,0,1e-10
 uk-general-election-1997,t1know,knowledge_t1@historical-v1,275,275,0,0,4.996003610813204e-16,0,1e-10
 uk-general-election-1997,t1knowr,knowledge_t1@historical-v1,275,275,0,0,4.996003610813204e-16,0,1e-10
@@ -129,7 +129,7 @@ uk-general-election-1997,minority,minority@historical-v1,275,273,0,0,0,0,1e-10
 uk-general-election-1997,hhincome,household_income@historical-v1,275,251,0,0,0,0,1e-10
 uk-general-election-1997,female,female@historical-v1,275,275,0,0,0,0,1e-10
 uk-general-election-1997,attextreme,attitude_extremity@historical-v1,275,274,0,0,5.551115123125783e-16,0,1e-10
-uk-general-election-1997,highinc,high_income@historical-v1,275,251,0,0,0,0,1e-10
+uk-general-election-1997,highinc,high_income@poll-median-v1,275,251,0,0,0,0,1e-10
 uk-general-election-1997,t1polint,political_interest_t1@historical-v1,275,272,0,0,0,0,1e-10
 uk-general-election-1997,t1knowcor2,knowledge_joint_midterm@historical-v1,275,0,0,0,0,0,1e-10
 uk-general-election-1997,t12know,knowledge_midterm@historical-v1,275,0,0,0,0,0,1e-10
@@ -152,7 +152,7 @@ uk-general-election-1997,ukbge.t2redist,redistribution_t2@historical-v1,275,267,
 uk-general-election-1997,ukbge.t2tax,tax_t2@ukge-02-v2,275,258,17,207,1,0,1e-10
 uk-general-election-1997,ukbge.t2wage,minimum_wage_t2@historical-v1,275,259,0,0,4.440892098500626e-16,0,1e-10
 uk-general-election-1997,ukbge.t2eu,european_union_t2@historical-v1,275,244,0,0,4.440892098500626e-16,0,1e-10
-uk-general-election-1997,bettered,higher_education@historical-v1,275,274,0,0,0,0,1e-10
+uk-general-election-1997,bettered,higher_education@poll-median-v1,275,274,0,0,0,0,1e-10
 australia-republic-1999,readbrief,read_briefing@historical-v1,347,0,0,0,0,0,1e-10
 australia-republic-1999,t1know,knowledge_t1@historical-v1,347,347,0,0,3.3306690738754696e-16,0,1e-10
 australia-republic-1999,t1knowr,issue_knowledge@historical-v1,347,0,0,0,0,0,1e-10
@@ -164,7 +164,7 @@ australia-republic-1999,minority,minority@historical-v1,347,347,0,0,0,0,1e-10
 australia-republic-1999,hhincome,household_income@historical-v1,347,314,0,0,0,0,1e-10
 australia-republic-1999,female,female@historical-v1,347,347,0,0,0,0,1e-10
 australia-republic-1999,attextreme,attitude_extremity@aus-03-v2,347,346,1,320,0.375,0,1e-10
-australia-republic-1999,highinc,high_income@historical-v1,347,314,0,0,0,0,1e-10
+australia-republic-1999,highinc,high_income@poll-median-v1,347,314,0,0,0,0,1e-10
 australia-republic-1999,t1polint,political_interest_t1@historical-v1,347,347,0,0,0,0,1e-10
 australia-republic-1999,t1knowcor2,knowledge_joint_midterm@historical-v1,347,0,0,0,0,0,1e-10
 australia-republic-1999,t12know,knowledge_midterm@historical-v1,347,0,0,0,0,0,1e-10
@@ -183,7 +183,7 @@ australia-republic-1999,aus.popparl1,popular_t1@historical-v1,347,347,0,0,0,0,1e
 australia-republic-1999,aus.popparl2,popular_t2@aus-03-v2,347,272,26,5,0.25,0,1e-10
 australia-republic-1999,aus.republican1,republican_t1@historical-v1,347,347,0,0,3.3306690738754696e-16,0,1e-10
 australia-republic-1999,aus.republican2,republican_t2@historical-v1,347,347,0,0,3.3306690738754696e-16,0,1e-10
-australia-republic-1999,bettered,higher_education@historical-v1,347,347,0,0,0,0,1e-10
+australia-republic-1999,bettered,higher_education@poll-median-v1,347,347,0,141,1,0,1e-10
 uk-crime-1994,readbrief,read_briefing@historical-v1,299,0,0,0,0,0,1e-10
 uk-crime-1994,t1know,knowledge_t1@historical-v1,299,299,0,0,4.440892098500626e-16,0,1e-10
 uk-crime-1994,t1knowr,knowledge_issue_t1@historical-v1,299,0,0,0,0,0,1e-10
@@ -195,7 +195,7 @@ uk-crime-1994,minority,minority@historical-v1,299,298,0,0,0,0,1e-10
 uk-crime-1994,hhincome,household_income@historical-v1,299,0,0,0,0,0,1e-10
 uk-crime-1994,female,female@historical-v1,299,299,0,0,0,0,1e-10
 uk-crime-1994,attextreme,attitude_extremity@historical-v1,299,299,0,0,4.996003610813204e-16,0,1e-10
-uk-crime-1994,highinc,high_income@historical-v1,299,0,0,0,0,0,1e-10
+uk-crime-1994,highinc,high_income@poll-median-v1,299,0,0,0,0,0,1e-10
 uk-crime-1994,t1polint,political_interest_t1@historical-v1,299,0,0,0,0,0,1e-10
 uk-crime-1994,t1knowcor2,knowledge_joint_midterm@historical-v1,299,0,0,0,0,0,1e-10
 uk-crime-1994,t12know,knowledge_midterm@historical-v1,299,0,0,0,0,0,1e-10
@@ -220,7 +220,7 @@ uk-crime-1994,ukcrime.policet2,policing_t2@historical-v1,299,299,0,0,0,0,1e-10
 uk-crime-1994,ukcrime.punisht2,punishment_t2@historical-v1,299,299,0,0,4.440892098500626e-16,0,1e-10
 uk-crime-1994,ukcrime.procrightst2,procedural_restrictions_t2@historical-v1,299,298,0,0,4.440892098500626e-16,0,1e-10
 uk-crime-1994,ukcrime.selfprotectt2,self_protection_t2@historical-v1,299,299,0,0,3.3306690738754696e-16,0,1e-10
-uk-crime-1994,bettered,higher_education@historical-v1,299,299,0,0,0,0,1e-10
+uk-crime-1994,bettered,higher_education@poll-median-v1,299,299,0,0,0,0,1e-10
 tomorrows-europe-2007,readbrief,read_briefing@historical-v1,344,331,0,0,0,0,1e-10
 tomorrows-europe-2007,t1know,knowledge_t1@historical-v1,344,344,0,0,4.440892098500626e-16,0,1e-10
 tomorrows-europe-2007,t1knowr,knowledge_t1@historical-v1,344,344,0,0,4.440892098500626e-16,0,1e-10
@@ -232,7 +232,7 @@ tomorrows-europe-2007,minority,minority@historical-v1,344,0,0,0,0,0,1e-10
 tomorrows-europe-2007,hhincome,household_income@historical-v1,344,0,0,0,0,0,1e-10
 tomorrows-europe-2007,female,female@historical-v1,344,344,0,0,0,0,1e-10
 tomorrows-europe-2007,attextreme,attitude_extremity@historical-v1,344,344,0,0,4.996003610813204e-16,0,1e-10
-tomorrows-europe-2007,highinc,high_income@historical-v1,344,0,0,0,0,0,1e-10
+tomorrows-europe-2007,highinc,high_income@poll-median-v1,344,0,0,0,0,0,1e-10
 tomorrows-europe-2007,t1polint,political_interest_t1@historical-v1,344,0,0,0,0,0,1e-10
 tomorrows-europe-2007,t1knowcor2,knowledge_joint_midterm@historical-v1,344,344,0,0,4.440892098500626e-16,0,1e-10
 tomorrows-europe-2007,t12know,knowledge_midterm@historical-v1,344,344,0,0,4.440892098500626e-16,0,1e-10
@@ -278,7 +278,7 @@ tomorrows-europe-2007,eu.free_trade_index_t3,trade_t3@te-04-v2,344,329,10,213,0.
 tomorrows-europe-2007,eu.general_enlargement_att_f_t3,enlargement_t3@historical-v1,344,333,0,0,3.885780586188048e-16,0,1e-10
 tomorrows-europe-2007,eu.eu_level_decision_making_t3,decision_level_t3@historical-v1,344,331,0,0,6.661338147750939e-16,0,1e-10
 tomorrows-europe-2007,eu.t3q16jr,enlargement_limit_t3@historical-v1,344,329,0,0,0,0,1e-10
-tomorrows-europe-2007,bettered,higher_education@te-05-v2,344,326,17,0,0,0,1e-10
+tomorrows-europe-2007,bettered,higher_education@poll-median-v1,344,326,17,38,1,0,1e-10
 cpl-1996,readbrief,read_briefing@historical-v1,216,0,0,0,0,0,1e-10
 cpl-1996,t1know,knowledge_t1@historical-v1,216,216,0,0,4.440892098500626e-16,0,1e-10
 cpl-1996,t1knowr,knowledge_t1@historical-v1,216,216,0,0,4.440892098500626e-16,0,1e-10
@@ -290,7 +290,7 @@ cpl-1996,minority,minority@historical-v1,216,215,0,0,0,0,1e-10
 cpl-1996,hhincome,household_income@historical-v1,216,198,0,0,0,0,1e-10
 cpl-1996,female,female@historical-v1,216,216,0,0,0,0,1e-10
 cpl-1996,attextreme,attitude_extremity@historical-v1,216,216,0,0,4.996003610813204e-16,0,1e-10
-cpl-1996,highinc,high_income@historical-v1,216,198,0,0,0,0,1e-10
+cpl-1996,highinc,high_income@poll-median-v1,216,198,0,37,1,0,1e-10
 cpl-1996,t1polint,political_interest_t1@historical-v1,216,0,0,0,0,0,1e-10
 cpl-1996,t1knowcor2,knowledge_joint_midterm@historical-v1,216,0,0,0,0,0,1e-10
 cpl-1996,t12know,knowledge_midterm@historical-v1,216,0,0,0,0,0,1e-10
@@ -317,7 +317,7 @@ cpl-1996,cpl.t2poor,low_income_support_t2@historical-v1,216,215,0,0,0,0,1e-10
 cpl-1996,cpl.t2renew,renewables_t2@historical-v1,216,216,0,0,1.1102230246251565e-16,0,1e-10
 cpl-1996,cpl.t2fossil,fossil_fuels_t2@historical-v1,216,212,0,0,4.440892098500626e-16,0,1e-10
 cpl-1996,cpl.t2buypwr,imported_power_t2@historical-v1,216,213,0,0,0,0,1e-10
-cpl-1996,bettered,higher_education@historical-v1,216,213,0,0,0,0,1e-10
+cpl-1996,bettered,higher_education@poll-median-v1,216,213,0,63,1,0,1e-10
 zeguo-2005,readbrief,zeguo-2005.read_briefing@historical-v1,233,0,0,0,0,0,1e-10
 zeguo-2005,t1know,zeguo-2005.knowledge_t1@historical-v1,233,233,0,0,0,0,1e-10
 zeguo-2005,t1knowr,zeguo-2005.knowledge_t1@historical-v1,233,233,0,0,0,0,1e-10
@@ -329,7 +329,7 @@ zeguo-2005,minority,zeguo-2005.minority@historical-v1,233,0,0,0,0,0,1e-10
 zeguo-2005,hhincome,zeguo-2005.household_income@historical-v1,233,0,0,0,0,0,1e-10
 zeguo-2005,female,zeguo-2005.female@historical-v1,233,225,0,0,0,0,1e-10
 zeguo-2005,attextreme,zeguo-2005.attitude_extremity@zg-02-v2,233,233,0,172,0.13518518871731222,0,1e-10
-zeguo-2005,highinc,zeguo-2005.high_income@historical-v1,233,0,0,0,0,0,1e-10
+zeguo-2005,highinc,zeguo-2005.high_income@poll-median-v1,233,0,0,0,0,0,1e-10
 zeguo-2005,t1polint,zeguo-2005.political_interest_t1@historical-v1,233,0,0,0,0,0,1e-10
 zeguo-2005,t1knowcor2,zeguo-2005.knowledge_joint_midterm@historical-v1,233,0,0,0,0,0,1e-10
 zeguo-2005,t12know,zeguo-2005.knowledge_midterm@historical-v1,233,0,0,0,0,0,1e-10
@@ -362,7 +362,7 @@ zeguo-2005,chi.t2att6,zeguo-2005.other_parks_t2@historical-v1,233,233,0,0,4.4408
 zeguo-2005,chi.t2att7,zeguo-2005.township_image_t2@historical-v1,233,233,0,0,0,0,1e-10
 zeguo-2005,chi.t2att8,zeguo-2005.cultural_heritage_t2@historical-v1,233,233,0,0,5.273559366969494e-16,0,1e-10
 zeguo-2005,chi.t2att9,zeguo-2005.sewage_t2@historical-v1,233,233,0,0,4.996003610813204e-16,0,1e-10
-zeguo-2005,bettered,zeguo-2005.higher_education@historical-v1,233,205,0,0,0,0,1e-10
+zeguo-2005,bettered,zeguo-2005.higher_education@poll-median-v1,233,205,0,0,0,0,1e-10
 bulgaria-crime-2002,readbrief,read_briefing@historical-v1,278,0,0,0,0,0,1e-10
 bulgaria-crime-2002,t1know,knowledge_t1@historical-v1,278,278,0,0,4.440892098500626e-16,0,1e-10
 bulgaria-crime-2002,t1knowr,knowledge_t1@historical-v1,278,278,0,0,4.440892098500626e-16,0,1e-10
@@ -374,7 +374,7 @@ bulgaria-crime-2002,minority,minority@bgc06-v2,278,276,2,0,0,0,1e-10
 bulgaria-crime-2002,hhincome,household_income@historical-v1,278,273,0,0,0,0,1e-10
 bulgaria-crime-2002,female,female@historical-v1,278,278,0,0,0,0,1e-10
 bulgaria-crime-2002,attextreme,attitude_extremity@bgc-04-v2,278,278,0,131,0.03125000000000011,0,1e-10
-bulgaria-crime-2002,highinc,high_income@bgc-03-v2,278,273,0,165,1,0,1e-10
+bulgaria-crime-2002,highinc,high_income@poll-median-v1,278,273,0,109,1,0,1e-10
 bulgaria-crime-2002,t1polint,political_interest_t1@historical-v1,278,0,0,0,0,0,1e-10
 bulgaria-crime-2002,t1knowcor2,knowledge_joint_midterm@historical-v1,278,0,0,0,0,0,1e-10
 bulgaria-crime-2002,t12know,knowledge_midterm@historical-v1,278,0,0,0,0,0,1e-10
@@ -413,7 +413,7 @@ bulgaria-crime-2002,bulgaria.bulgaria.t2q21,institutional_change_t2@historical-v
 bulgaria-crime-2002,bulgaria.bulgaria.t2q22,independent_investigation_t2@historical-v1,278,249,0,0,0,0,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t2q23,prosecution_t2@historical-v1,278,233,0,0,0,0,1e-10
 bulgaria-crime-2002,bulgaria.bulgaria.t2q19,death_penalty_t2@bgc-04-v2,278,255,0,170,0.25,0,1e-10
-bulgaria-crime-2002,bettered,higher_education@historical-v1,278,277,0,0,0,0,1e-10
+bulgaria-crime-2002,bettered,higher_education@poll-median-v1,278,277,0,0,0,0,1e-10
 europolis-2009,readbrief,read_briefing@historical-v1,348,0,0,0,0,0,1e-10
 europolis-2009,t1know,knowledge_t1@historical-v1,348,348,0,0,3.3306690738754696e-16,0,1e-10
 europolis-2009,t1knowr,knowledge_t1@historical-v1,348,348,0,0,3.3306690738754696e-16,0,1e-10
@@ -425,7 +425,7 @@ europolis-2009,minority,minority@euro-04-v2,348,348,0,0,0,0,1e-10
 europolis-2009,hhincome,household_income@historical-v1,348,0,0,0,0,0,1e-10
 europolis-2009,female,female@historical-v1,348,348,0,0,0,0,1e-10
 europolis-2009,attextreme,attitude_extremity@historical-v1,348,347,0,0,2.7755575615628914e-17,0,1e-10
-europolis-2009,highinc,high_income@historical-v1,348,0,0,0,0,0,1e-10
+europolis-2009,highinc,high_income@poll-median-v1,348,0,0,0,0,0,1e-10
 europolis-2009,t1polint,political_interest_t1@historical-v1,348,0,0,0,0,0,1e-10
 europolis-2009,t1knowcor2,knowledge_joint_midterm@historical-v1,348,0,0,0,0,0,1e-10
 europolis-2009,t12know,knowledge_midterm@historical-v1,348,0,0,0,0,0,1e-10
@@ -444,7 +444,7 @@ europolis-2009,eu2009.cc1,climate_t1@historical-v1,348,338,0,0,0,0,1e-10
 europolis-2009,eu2009.cc2,climate_t2@historical-v1,348,343,0,0,0,0,1e-10
 europolis-2009,eu2009.imm1,immigration_t1@historical-v1,348,344,0,0,0,0,1e-10
 europolis-2009,eu2009.imm2,immigration_t2@historical-v1,348,339,0,0,0,0,1e-10
-europolis-2009,bettered,higher_education@historical-v1,348,335,0,0,0,0,1e-10
+europolis-2009,bettered,higher_education@poll-median-v1,348,335,0,0,0,0,1e-10
 new-haven-2004,readbrief,new-haven-2004.read_briefing@historical-v1,132,0,0,0,0,0,1e-10
 new-haven-2004,t1know,new-haven-2004.knowledge_t1@historical-v1,132,132,0,0,0,0,1e-10
 new-haven-2004,t1knowr,new-haven-2004.knowledge_t1@historical-v1,132,132,0,0,0,0,1e-10
@@ -456,7 +456,7 @@ new-haven-2004,minority,new-haven-2004.minority@nh-04-v2,132,128,4,0,0,0,1e-10
 new-haven-2004,hhincome,new-haven-2004.household_income@historical-v1,132,107,0,0,0,0,1e-10
 new-haven-2004,female,new-haven-2004.female@historical-v1,132,132,0,0,0,0,1e-10
 new-haven-2004,attextreme,new-haven-2004.attitude_extremity@nh-08-v2,132,100,32,7,0.016666680574417392,0,1e-10
-new-haven-2004,highinc,new-haven-2004.high_income@historical-v1,132,107,0,0,0,0,1e-10
+new-haven-2004,highinc,new-haven-2004.high_income@poll-median-v1,132,107,0,11,1,0,1e-10
 new-haven-2004,t1polint,new-haven-2004.political_interest_t1@historical-v1,132,0,0,0,0,0,1e-10
 new-haven-2004,t1knowcor2,new-haven-2004.knowledge_joint_midterm@historical-v1,132,132,0,0,0,0,1e-10
 new-haven-2004,t12know,new-haven-2004.knowledge_midterm@historical-v1,132,132,0,0,0,0,1e-10
@@ -477,7 +477,7 @@ new-haven-2004,nh.t1volloc,new-haven-2004.voluntary_sharing_t1@nh-08-v2,132,107,
 new-haven-2004,nh.t2endexp,new-haven-2004.airport_expansion_t2@nh-08-v2,132,122,10,5,0.050000011920928955,0,1e-10
 new-haven-2004,nh.t2manvol,new-haven-2004.mandatory_sharing_t2@nh-08-v2,132,124,8,0,0,0,1e-10
 new-haven-2004,nh.t2volloc,new-haven-2004.voluntary_sharing_t2@nh-08-v2,132,126,6,0,0,0,1e-10
-new-haven-2004,bettered,new-haven-2004.higher_education@historical-v1,132,132,0,0,0,0,1e-10
+new-haven-2004,bettered,new-haven-2004.higher_education@poll-median-v1,132,132,0,37,1,0,1e-10
 nic2-2003,readbrief,read_briefing@historical-v1,340,335,0,0,0,0,1e-10
 nic2-2003,t1know,knowledge_t1@historical-v1,340,340,0,0,4.440892098500626e-16,0,1e-10
 nic2-2003,t1knowr,knowledge_t1@historical-v1,340,340,0,0,4.440892098500626e-16,0,1e-10
@@ -489,7 +489,7 @@ nic2-2003,minority,minority@historical-v1,340,335,0,0,0,0,1e-10
 nic2-2003,hhincome,household_income@historical-v1,340,316,0,0,0,0,1e-10
 nic2-2003,female,female@historical-v1,340,340,0,0,0,0,1e-10
 nic2-2003,attextreme,attitude_extremity@historical-v1,340,340,0,0,4.996003610813204e-16,0,1e-10
-nic2-2003,highinc,high_income@historical-v1,340,316,0,0,0,0,1e-10
+nic2-2003,highinc,high_income@poll-median-v1,340,316,0,0,0,0,1e-10
 nic2-2003,t1polint,political_interest_t1@historical-v1,340,340,0,0,3.3306690738754696e-16,0,1e-10
 nic2-2003,t1knowcor2,knowledge_joint_midterm@historical-v1,340,0,0,0,0,0,1e-10
 nic2-2003,t12know,knowledge_midterm@historical-v1,340,0,0,0,0,0,1e-10
@@ -522,7 +522,7 @@ nic2-2003,nic2.t2demo,democracy_t2@historical-v1,340,340,0,0,4.996003610813204e-
 nic2-2003,nic2.t2forai1,foreign_aid_t2@historical-v1,340,338,0,0,0,0,1e-10
 nic2-2003,nic2.t2global,global_altruism_t2@historical-v1,340,340,0,0,4.996003610813204e-16,0,1e-10
 nic2-2003,nic2.t2trade_b,trade_t2@historical-v1,340,329,0,0,0,0,1e-10
-nic2-2003,bettered,higher_education@historical-v1,340,340,0,0,0,0,1e-10
+nic2-2003,bettered,higher_education@poll-median-v1,340,340,0,112,1,0,1e-10
 btp-national-2003,readbrief,btp-national-2003.read_briefing@historical-v1,245,0,0,0,0,0,1e-10
 btp-national-2003,t1know,btp-national-2003.knowledge_t1@historical-v1,245,245,0,0,4.440892098500626e-16,0,1e-10
 btp-national-2003,t1knowr,btp-national-2003.knowledge_t1@historical-v1,245,245,0,0,4.440892098500626e-16,0,1e-10
@@ -534,7 +534,7 @@ btp-national-2003,minority,btp-national-2003.minority@historical-v1,245,245,0,0,
 btp-national-2003,hhincome,btp-national-2003.household_income@historical-v1,245,245,0,0,0,0,1e-10
 btp-national-2003,female,btp-national-2003.female@historical-v1,245,245,0,0,0,0,1e-10
 btp-national-2003,attextreme,btp-national-2003.attitude_extremity@historical-v1,245,245,0,196,0.0476190447807317,0,1e-10
-btp-national-2003,highinc,btp-national-2003.high_income@historical-v1,245,245,0,0,0,0,1e-10
+btp-national-2003,highinc,btp-national-2003.high_income@poll-median-v1,245,245,0,0,0,0,1e-10
 btp-national-2003,t1polint,btp-national-2003.political_interest_t1@btpn-05-v2,245,0,245,0,0,0,1e-10
 btp-national-2003,t1knowcor2,btp-national-2003.knowledge_joint_midterm@historical-v1,245,0,0,0,0,0,1e-10
 btp-national-2003,t12know,btp-national-2003.knowledge_midterm@historical-v1,245,0,0,0,0,0,1e-10
@@ -567,7 +567,7 @@ btp-national-2003,btp03.olt2demo,btp-national-2003.democracy_t2@historical-v1,24
 btp-national-2003,btp03.olt2forai1,btp-national-2003.foreign_aid_t2@historical-v1,245,220,0,0,0,0,1e-10
 btp-national-2003,btp03.olt2global,btp-national-2003.global_altruism_t2@historical-v1,245,244,0,153,0.16666668653488192,0,1e-10
 btp-national-2003,btp03.olt2trade,btp-national-2003.trade_t2@historical-v1,245,180,0,0,0,0,1e-10
-btp-national-2003,bettered,btp-national-2003.higher_education@historical-v1,245,245,0,0,0,0,1e-10
+btp-national-2003,bettered,btp-national-2003.higher_education@poll-median-v1,245,245,0,84,1,0,1e-10
 btp-general-election-2004,readbrief,read_briefing@historical-v1,248,0,0,0,0,0,1e-10
 btp-general-election-2004,t1know,knowledge_t1@btpge-07-v2,248,246,0,0,4.440892098500626e-16,0,1e-10
 btp-general-election-2004,t1knowr,knowledge_t1@btpge-07-v2,248,246,0,0,4.440892098500626e-16,0,1e-10
@@ -579,7 +579,7 @@ btp-general-election-2004,minority,minority@historical-v1,248,246,0,0,0,0,1e-10
 btp-general-election-2004,hhincome,household_income@historical-v1,248,240,0,0,0,0,1e-10
 btp-general-election-2004,female,female@historical-v1,248,246,0,0,0,0,1e-10
 btp-general-election-2004,attextreme,attitude_extremity@historical-v1,248,246,0,0,4.996003610813204e-16,0,1e-10
-btp-general-election-2004,highinc,high_income@historical-v1,248,240,0,0,0,0,1e-10
+btp-general-election-2004,highinc,high_income@poll-median-v1,248,240,0,0,0,0,1e-10
 btp-general-election-2004,t1polint,political_interest_t1@historical-v1,248,0,0,0,0,0,1e-10
 btp-general-election-2004,t1knowcor2,knowledge_joint_midterm@historical-v1,248,0,0,0,0,0,1e-10
 btp-general-election-2004,t12know,knowledge_midterm@historical-v1,248,0,0,0,0,0,1e-10
@@ -606,7 +606,7 @@ btp-general-election-2004,btp04.w4f48,trade_t2@historical-v1,248,237,0,0,3.88578
 btp-general-election-2004,btp04.w4f51,rights_t2@historical-v1,248,238,0,0,3.885780586188048e-16,0,1e-10
 btp-general-election-2004,btp04.w4f54,health_insurance_t2@historical-v1,248,234,0,0,3.885780586188048e-16,0,1e-10
 btp-general-election-2004,btp04.w4f57,marriage_t2@historical-v1,248,234,0,0,3.885780586188048e-16,0,1e-10
-btp-general-election-2004,bettered,higher_education@historical-v1,248,246,0,0,0,0,1e-10
+btp-general-election-2004,bettered,higher_education@poll-median-v1,248,246,0,87,1,0,1e-10
 btp-presidential-primaries-2004,readbrief,btp-presidential-primaries-2004.read_briefing@historical-v1,217,0,0,0,0,0,1e-10
 btp-presidential-primaries-2004,t1know,btp-presidential-primaries-2004.knowledge_t1@historical-v1,217,217,0,0,4.440892098500626e-16,0,1e-10
 btp-presidential-primaries-2004,t1knowr,btp-presidential-primaries-2004.knowledge_t1@historical-v1,217,217,0,0,4.440892098500626e-16,0,1e-10
@@ -618,7 +618,7 @@ btp-presidential-primaries-2004,minority,btp-presidential-primaries-2004.minorit
 btp-presidential-primaries-2004,hhincome,btp-presidential-primaries-2004.household_income@historical-v1,217,217,0,0,0,0,1e-10
 btp-presidential-primaries-2004,female,btp-presidential-primaries-2004.female@historical-v1,217,217,0,0,0,0,1e-10
 btp-presidential-primaries-2004,attextreme,btp-presidential-primaries-2004.attitude_extremity@historical-v1,217,217,0,0,4.996003610813204e-16,0,1e-10
-btp-presidential-primaries-2004,highinc,btp-presidential-primaries-2004.high_income@historical-v1,217,217,0,0,0,0,1e-10
+btp-presidential-primaries-2004,highinc,btp-presidential-primaries-2004.high_income@poll-median-v1,217,217,0,0,0,0,1e-10
 btp-presidential-primaries-2004,t1polint,btp-presidential-primaries-2004.political_interest_t1@historical-v1,217,217,0,0,3.3306690738754696e-16,0,1e-10
 btp-presidential-primaries-2004,t1knowcor2,btp-presidential-primaries-2004.knowledge_joint_midterm@historical-v1,217,0,0,0,0,0,1e-10
 btp-presidential-primaries-2004,t12know,btp-presidential-primaries-2004.knowledge_midterm@historical-v1,217,0,0,0,0,0,1e-10
@@ -639,7 +639,7 @@ btp-presidential-primaries-2004,btp04pr.t1services,btp-presidential-primaries-20
 btp-presidential-primaries-2004,btp04pr.t2trade,btp-presidential-primaries-2004.trade_t2@historical-v1,217,201,0,0,4.440892098500626e-16,0,1e-10
 btp-presidential-primaries-2004,btp04pr.t2mindex,btp-presidential-primaries-2004.multilateralism_t2@historical-v1,217,217,0,0,4.996003610813204e-16,0,1e-10
 btp-presidential-primaries-2004,btp04pr.t2services,btp-presidential-primaries-2004.services_t2@historical-v1,217,208,0,0,4.440892098500626e-16,0,1e-10
-btp-presidential-primaries-2004,bettered,btp-presidential-primaries-2004.higher_education@historical-v1,217,217,0,0,0,0,1e-10
+btp-presidential-primaries-2004,bettered,btp-presidential-primaries-2004.higher_education@poll-median-v1,217,217,0,59,1,0,1e-10
 san-mateo-2008,readbrief,read_briefing@historical-v1,239,219,0,0,0,0,1e-10
 san-mateo-2008,t1know,knowledge_t1@historical-v1,239,239,0,0,0,0,1e-10
 san-mateo-2008,t1knowr,knowledge_t1@historical-v1,239,239,0,0,0,0,1e-10
@@ -651,7 +651,7 @@ san-mateo-2008,minority,minority@historical-v1,239,230,0,0,0,0,1e-10
 san-mateo-2008,hhincome,household_income@historical-v1,239,180,0,0,0,0,1e-10
 san-mateo-2008,female,female@historical-v1,239,239,0,0,0,0,1e-10
 san-mateo-2008,attextreme,attitude_extremity@historical-v1,239,239,0,0,4.996003610813204e-16,0,1e-10
-san-mateo-2008,highinc,high_income@historical-v1,239,180,0,0,0,0,1e-10
+san-mateo-2008,highinc,high_income@poll-median-v1,239,180,0,0,0,0,1e-10
 san-mateo-2008,t1polint,political_interest_t1@historical-v1,239,0,0,0,0,0,1e-10
 san-mateo-2008,t1knowcor2,knowledge_joint_midterm@historical-v1,239,0,0,0,0,0,1e-10
 san-mateo-2008,t12know,knowledge_midterm@historical-v1,239,0,0,0,0,0,1e-10
@@ -674,7 +674,7 @@ san-mateo-2008,sm.t2more,more_housing_t2@historical-v1,239,238,0,0,4.44089209850
 san-mateo-2008,sm.t2belowmrkt,below_market_housing_t2@historical-v1,239,234,0,0,4.440892098500626e-16,0,1e-10
 san-mateo-2008,sm.t2openspace,open_space_t2@historical-v1,239,235,0,0,4.440892098500626e-16,0,1e-10
 san-mateo-2008,sm.t2countyl,county_local_t2@historical-v1,239,236,0,0,4.440892098500626e-16,0,1e-10
-san-mateo-2008,bettered,higher_education@historical-v1,239,236,0,0,0,0,1e-10
+san-mateo-2008,bettered,higher_education@poll-median-v1,239,236,0,49,1,0,1e-10
 btp-health-education-2005,readbrief,read_briefing@historical-v1,454,0,0,0,0,0,1e-10
 btp-health-education-2005,t1know,knowledge_t1@btphe-04-v2,454,454,0,241,0.16666668653488204,0,1e-10
 btp-health-education-2005,t1knowr,knowledge_t1@btphe-04-v2,454,454,0,241,0.16666668653488204,0,1e-10
@@ -686,7 +686,7 @@ btp-health-education-2005,minority,minority@historical-v1,454,448,0,0,0,0,1e-10
 btp-health-education-2005,hhincome,household_income@historical-v1,454,0,0,0,0,0,1e-10
 btp-health-education-2005,female,female@btphe-01-v2,454,452,2,0,0,0,1e-10
 btp-health-education-2005,attextreme,attitude_extremity@historical-v1,454,454,0,0,4.996003610813204e-16,0,1e-10
-btp-health-education-2005,highinc,high_income@historical-v1,454,0,0,0,0,0,1e-10
+btp-health-education-2005,highinc,high_income@poll-median-v1,454,0,0,0,0,0,1e-10
 btp-health-education-2005,t1polint,btp-health-education-2005.political_interest_t1@historical-v1,454,453,0,0,3.3306690738754696e-16,0,1e-10
 btp-health-education-2005,t1knowcor2,knowledge_joint_midterm@historical-v1,454,0,0,0,0,0,1e-10
 btp-health-education-2005,t12know,knowledge_midterm@historical-v1,454,0,0,0,0,0,1e-10
@@ -723,7 +723,7 @@ btp-health-education-2005,btp05.t2medqual,medical_quality_t2@historical-v1,454,4
 btp-health-education-2005,btp05.t2costcov,cost_coverage_t2@historical-v1,454,454,0,0,4.996003610813204e-16,0,1e-10
 btp-health-education-2005,btp05.t2emplypay,employer_payment_t2@historical-v1,454,444,0,0,0,0,1e-10
 btp-health-education-2005,btp05.t2indivpay,individual_payment_t2@historical-v1,454,449,0,0,0,0,1e-10
-btp-health-education-2005,bettered,higher_education@historical-v1,454,452,0,0,0,0,1e-10
+btp-health-education-2005,bettered,higher_education@poll-median-v1,454,452,0,0,0,0,1e-10
 wtu-1996,readbrief,read_briefing@historical-v1,230,0,0,0,0,0,1e-10
 wtu-1996,t1know,knowledge_t1@historical-v1,230,230,0,0,0,0,1e-10
 wtu-1996,t1knowr,knowledge_t1@historical-v1,230,230,0,0,0,0,1e-10
@@ -735,7 +735,7 @@ wtu-1996,minority,minority@historical-v1,230,224,0,0,0,0,1e-10
 wtu-1996,hhincome,household_income@historical-v1,230,0,0,0,0,0,1e-10
 wtu-1996,female,female@historical-v1,230,230,0,0,0,0,1e-10
 wtu-1996,attextreme,attitude_extremity@wtu-05-v2,230,230,0,219,1.2857142857142905,0,1e-10
-wtu-1996,highinc,high_income@historical-v1,230,0,0,0,0,0,1e-10
+wtu-1996,highinc,high_income@poll-median-v1,230,0,0,0,0,0,1e-10
 wtu-1996,t1polint,political_interest_t1@historical-v1,230,0,0,0,0,0,1e-10
 wtu-1996,t1knowcor2,knowledge_joint_midterm@historical-v1,230,0,0,0,0,0,1e-10
 wtu-1996,t12know,knowledge_midterm@historical-v1,230,0,0,0,0,0,1e-10
@@ -762,7 +762,7 @@ wtu-1996,wtu.t2att4,low_income_support_t2@historical-v1,230,230,0,0,0,0,1e-10
 wtu-1996,wtu.t2att5,renewables_t2@historical-v1,230,230,0,0,3.3306690738754696e-16,0,1e-10
 wtu-1996,wtu.t2att6,research_t2@historical-v1,230,230,0,0,4.440892098500626e-16,0,1e-10
 wtu-1996,wtu.t2att7,fossil_fuels_t2@historical-v1,230,230,0,0,0,0,1e-10
-wtu-1996,bettered,higher_education@historical-v1,230,229,0,0,0,0,1e-10
+wtu-1996,bettered,higher_education@poll-median-v1,230,229,0,81,1,0,1e-10
 nic-1996,readbrief,read_briefing@historical-v1,466,449,0,0,0,0,1e-10
 nic-1996,t1know,knowledge_t1@historical-v1,466,466,0,0,8.189893208054855e-12,0,1e-10
 nic-1996,t1knowr,knowledge_t1@historical-v1,466,466,0,0,8.189893208054855e-12,0,1e-10
@@ -774,7 +774,7 @@ nic-1996,minority,minority@historical-v1,466,453,0,0,0,0,1e-10
 nic-1996,hhincome,household_income@historical-v1,466,0,0,0,0,0,1e-10
 nic-1996,female,female@historical-v1,466,460,0,0,0,0,1e-10
 nic-1996,attextreme,attitude_extremity@historical-v1,466,466,0,0,5.0042747723466594e-12,0,1e-10
-nic-1996,highinc,high_income@historical-v1,466,0,0,0,0,0,1e-10
+nic-1996,highinc,high_income@poll-median-v1,466,0,0,0,0,0,1e-10
 nic-1996,t1polint,political_interest_t1@historical-v1,466,459,0,0,3.3306690738754696e-16,0,1e-10
 nic-1996,t1knowcor2,knowledge_joint_midterm@historical-v1,466,466,0,0,7.278955216349914e-12,0,1e-10
 nic-1996,t12know,knowledge_midterm@historical-v1,466,466,0,0,8.189893208054855e-12,0,1e-10
@@ -807,7 +807,7 @@ nic-1996,nic1.t2att6,defense_t2@historical-v1,466,466,0,0,5.0039972165905056e-12
 nic-1996,nic1.t2att7,foreign_aid_t2@historical-v1,466,466,0,0,5.0039972165905056e-12,0,1e-10
 nic-1996,nic1.t2att8,welfare_t2@historical-v1,466,466,0,0,5.0039972165905056e-12,0,1e-10
 nic-1996,nic1.t2att9,social_security_t2@historical-v1,466,466,0,0,5.0039972165905056e-12,0,1e-10
-nic-1996,bettered,higher_education@historical-v1,466,459,0,0,0,0,1e-10
+nic-1996,bettered,higher_education@poll-median-v1,466,459,0,125,1,0,1e-10
 swepco-1996,readbrief,read_briefing@historical-v1,232,0,0,0,0,0,1e-10
 swepco-1996,t1know,knowledge_t1@historical-v1,232,232,0,0,0,0,1e-10
 swepco-1996,t1knowr,knowledge_t1@historical-v1,232,232,0,0,0,0,1e-10
@@ -819,7 +819,7 @@ swepco-1996,minority,minority@historical-v1,232,228,0,0,0,0,1e-10
 swepco-1996,hhincome,household_income@historical-v1,232,0,0,0,0,0,1e-10
 swepco-1996,female,female@historical-v1,232,232,0,0,0,0,1e-10
 swepco-1996,attextreme,attitude_extremity@swe-04-v2,232,232,0,221,1.28571428571429,0,1e-10
-swepco-1996,highinc,high_income@historical-v1,232,0,0,0,0,0,1e-10
+swepco-1996,highinc,high_income@poll-median-v1,232,0,0,0,0,0,1e-10
 swepco-1996,t1polint,political_interest_t1@historical-v1,232,0,0,0,0,0,1e-10
 swepco-1996,t1knowcor2,knowledge_joint_midterm@historical-v1,232,0,0,0,0,0,1e-10
 swepco-1996,t12know,knowledge_midterm@historical-v1,232,0,0,0,0,0,1e-10
@@ -846,4 +846,4 @@ swepco-1996,swp.t2att4,low_income_support_t2@historical-v1,232,232,0,0,0,0,1e-10
 swepco-1996,swp.t2att5,renewables_t2@historical-v1,232,232,0,0,0,0,1e-10
 swepco-1996,swp.t2att6,research_t2@historical-v1,232,232,0,0,0,0,1e-10
 swepco-1996,swp.t2att7,fossil_fuels_t2@historical-v1,232,232,0,0,0,0,1e-10
-swepco-1996,bettered,higher_education@historical-v1,232,231,0,0,0,0,1e-10
+swepco-1996,bettered,higher_education@poll-median-v1,232,231,0,78,1,0,1e-10

@@ -20,7 +20,6 @@ build_btp_national_derived <- function(survey, values) {
   reviewed_us_derived(survey, values, measures, rep(TRUE, nrow(survey)),
     9300 + as.numeric(survey$group), btp_national_attitudes(survey, 1L),
     before[, item_order], after[, item_order],
-    as.numeric(measures$household_income > 7),
     pollid = 93, mode = 1, numindices = 9, numissues = 1,
     t1knowlevel = btp_national_baseline_level()
   )

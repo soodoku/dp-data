@@ -12,7 +12,7 @@ build_europolis_derived <- function(survey, values) {
   individual <- build_europolis_individual(survey)
   attitudes <- individual[rows, c("climate_t1", "immigration_t1")]
   result <- historical_derived_columns(
-    values, group, rep(NA_real_, nrow(values)), attitudes
+    values, group, attitudes
   )
   result$t1knowlevel <- mean(individual$knowledge_t1[rows])
   result$grpgain <- NA_real_
@@ -35,7 +35,7 @@ build_australia_derived <- function(survey, values) {
   field <- match("group", tolower(names(survey)))
   group <- 2600 + as.numeric(unclass(survey[[field]]))[rows]
   attitudes <- australia_original_attitudes(survey)[rows, ]
-  result <- historical_derived_columns(values, group, values$highinc, attitudes)
+  result <- historical_derived_columns(values, group, attitudes)
   selected <- which(as.numeric(unclass(survey[[field]])) %in% 1:24)
   selected <- selected[order(survey$source_row[selected])]
   before <- australia_knowledge_items(survey, 1L)[selected, ]
@@ -70,7 +70,7 @@ build_tomorrow_derived <- function(survey, values) {
   before <- tomorrows_europe_attitudes(survey, 1L)[rows, 1:7]
   arrival <- tomorrows_europe_attitudes(survey, 2L)[rows, 1:7]
   result <- historical_derived_columns(
-    values, group, rep(NA_real_, nrow(values)), before, arrival
+    values, group, before, arrival
   )
   knowledge_before <- tomorrow_knowledge_items(survey, 1L)
   knowledge_arrival <- tomorrow_knowledge_items(survey, 2L)[rows, ]

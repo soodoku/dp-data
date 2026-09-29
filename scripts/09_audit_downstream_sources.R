@@ -72,9 +72,17 @@ transport <- dplyr::bind_rows(
   )
 ) |>
   dplyr::mutate(
+    local_present = file.exists(file.path(root, .data$repository, .data$path)),
+    upstream_present = file.exists(project_path(.data$upstream_path)),
     same_text_lines = purrr::pmap_lgl(
       list(.data$repository, .data$path, .data$upstream_path),
       function(repository, path, upstream_path) {
+        if (!file.exists(project_path(upstream_path))) {
+          stop("Missing upstream comparison source: ", upstream_path)
+        }
+        if (!file.exists(file.path(root, repository, path))) {
+          return(NA)
+        }
         identical(
           readLines(file.path(root, repository, path), warn = FALSE),
           readLines(project_path(upstream_path), warn = FALSE)

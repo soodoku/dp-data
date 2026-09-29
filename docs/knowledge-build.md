@@ -228,7 +228,7 @@ aggregate does not clear a definition for substantive use. A failed parity check
 is an investigation trigger; do not update the benchmark to make it pass.
 
 The full build writes `output/polardata/polardata.parquet` and `polardata.tab`
-with 6,084 rows and the 364 historical columns, plus the 129-row attitude catalog
+with 5,869 unique poll/person rows and the 364 historical columns, plus the 129-row attitude catalog
 and typed derived measures. All 21 polls build from public source materials;
 `make compare-polardata` evaluates historical agreement separately. Generalized
 variance has explicitly audited numerical exceptions in 23 groups, and export
@@ -238,8 +238,10 @@ post-wave children item in the UK Crime root-causes index. Approved UKGE-03 uses
 group/poll quantities while preserving its sample and attitude definitions.
 Approved NIC-03 converts two-digit birth years using `96 - BYEAR`, rebuilds
 group mean age and sets the event mode to in person (`0`). All 466 historical
-records remain, including the uniquely missing identity; raw age anomalies
-remain unchanged pending separate review.
+records remain, including the uniquely missing historical identity. NIC-08
+subsequently corrects or withholds unsupported derived ages; raw answers remain
+available. PR-03 removes duplicate Primaries export rows, and BTPGE-05 restores
+two observed exit questionnaires previously excluded for zero correct answers.
 Comparison checks
 verify the exact approved respondent values against the retained review evidence;
 the original historical benchmark is unchanged. See the [architecture](architecture.md) and
@@ -283,47 +285,49 @@ them. Denominator expansion belongs to the later schema review.
 
 The builder reads original response fields from the public survey, not its stored
 indices. The codebook and V6 index memo were consulted; their differences from the
-historical aggregate remain recorded under UKH-01–04. In particular, the severity
-direction, wave-specific rescaling, and non-monotonic discretion map are reproduced
-without being endorsed or corrected. The supplied survey is already a merged
+historical aggregate remain recorded under UKH-01–04. The documented severity
+direction is retained; the approved UKH-02/09 correction uses the same fixed
+scale in both waves and recomputes dependent summaries. The non-monotonic
+discretion map remains pending a separate decision. The supplied survey is already a merged
 participant file; reconstructing its earlier field-file merge remains unfinished.
 
 The comparison joins on unique `caseid` within dpnum 2 and requires the same 230
 IDs on both sides. No unmatched or duplicated IDs are allowed. All 71 reconstructed non-key
-columns must have identical missingness and values within absolute tolerance
-`1e-10` before an output is written. `audit/polardata_parity.csv` records counts,
+columns must match either the historical benchmark or independently derived,
+explicitly approved correction values, including missingness, within absolute
+tolerance `1e-10`. `audit/polardata_parity.csv` records counts,
 missingness differences, numerical differences and maximum absolute error for
 each field. The benchmark is read only for this check; it supplies no rebuilt
 values. A Parquet round trip must preserve values and types exactly.
 
 
-The 23 demographic and attitude-summary fields preserve these historical definitions:
+The 23 demographic and attitude-summary fields use these reviewed definitions:
 
 | Fields | Sources and definitions |
 |---|---|
 | female, minority | Numeric 0/1 from gender == 2 and ethnic != 1; the reviewed sample has only substantive codes 1:2 and 1:8 |
 | ppage | Numeric age in years; all 230 are observed adults |
 | educ4 | B11 educa codes 0/1/2/3/4 map to 0/.33/.66/1/.66; two -9 responses missing |
-| educ3, bettered | Numeric 0/.5/1 from educ4 (intermediate categories collapse to .5); logical educ4 >= .66; preserve missingness |
-| hhincome, highinc | Numeric (income - 1)/15 for bands 1:16, with -9/-8/-7 missing; logical final flag hhincome > .34 |
+| educ3, bettered | Numeric 0/.5/1 from educ4 (intermediate categories collapse to .5); bettered is strictly above the observed participant median of .66; preserve missingness |
+| hhincome, highinc | Numeric (income - 1)/15 for bands 1:16, with -9/-8/-7 missing; highinc is strictly above the observed participant median of 1/3 |
 | pollgroup, groupsize | Numeric 2200 + source group (1:15); number of surveyed people in that group, including those with missing demographic answers |
 | pfemale, pminority | Available-case group means of female and minority |
 | varfemale, sdfemale | pfemale*(1-pfemale) and its square root; Bernoulli population variance convention |
 | vareduc, sdeduc | Within-group sample variance of observed educ4, denominator n-1, and its square root |
 | meaned, meanage | Available-case group means of educ4 and ppage |
-| phighinc | Available-case group mean of the earlier flag hhincome > .8; deliberately preserves the historical difference from final highinc pending UKH-08 |
-| pfemale_ind | (pfemale*groupsize-female)/(groupsize-1); all group sizes exceed one and gender is complete |
-| attextreme | Available-item mean of abs(index-.5) over the 11 T1 indices before severity rescaling |
-| meanxtreme | Available-case group mean of that historical attextreme |
-| avgsd | Mean of the 11 within-group sample SDs using those same early index versions |
+| phighinc | Available-case group mean of the same individual highinc flag; X-13 supersedes the former group-only threshold |
+| pfemale_ind | Female share among other group members with observed gender; the shared helper uses observed peer counts, although gender is complete in this UK Health sample |
+| attextreme | Available-item mean of abs(index-.5) over the 11 corrected T1 indices, with severity on the fixed [0,1] scale |
+| meanxtreme | Available-case group mean of that respondent attextreme |
+| avgsd | Mean of the 11 within-group sample SDs using those same corrected respondent indices |
 
 All group summaries are doubles repeated for members of the same discussion
 group. There are 15 groups with 13–17 respondents each. The codebook's A1/A2,
 B11/B17/B18 and Q18/Q23 items, the V6 index memo, the poll script, and merge
 scripts 03/05/06 establish the definitions and assignment order. Issues UKH-07–10
-record the retained index inventory, differing income thresholds, attitude-summary
-versions and the knowledge-precision question. This output replaces the
-initial attitudes-only partial file; no old values are dropped or revised.
+record the retained index inventory, corrected income thresholds and attitude
+summaries, and the knowledge-precision question. This output replaces the
+initial attitudes-only partial file; the frozen benchmark preserves prior values.
 Entropy, generalized variance and remaining poll descriptors are still outside
 this partial reconstruction.
 

@@ -131,9 +131,9 @@ analysis_participants,respondent_id,string,FALSE,TRUE,ID within poll and source 
 analysis_participants,historical_respondent_id,string,TRUE,FALSE,Documented historical caseid alias for source-linked participant rows
 analysis_participants,source_row,int32,FALSE,FALSE,One-based row in source file; AMR uses its baseline row
 analysis_participants,identity_basis,string,FALSE,FALSE,Source ID or file-scoped row identifier
-analysis_participants,arm,string,TRUE,FALSE,Observed treatment or participation category; not necessarily randomized
+analysis_participants,arm,string,TRUE,FALSE,Observed treatment or participation category; not necessarily randomized; climate completed denotes all sessions and post survey; invited_noncompleter does not imply no attendance
 analysis_participants,assignment,string,TRUE,FALSE,Assigned or invited group where identified in the source
-analysis_participants,attended,bool,TRUE,FALSE,Observed event attendance; null when unmeasured
+analysis_participants,attended,bool,TRUE,FALSE,Observed event attendance; null when unmeasured; climate noncompletion leaves attendance unknown
 analysis_participants,panel,bool,FALSE,FALSE,Person is in the available T1-T2 analysis panel
 analysis_participants,small_group_id,string,TRUE,FALSE,Source discussion-group identifier where observed
 analysis_participants,cluster_id,string,TRUE,FALSE,Cluster for study inference; Tanzania uses village
@@ -262,9 +262,9 @@ analysis_phase_participants,respondent_id,string,FALSE,TRUE,ID within poll and s
 analysis_phase_participants,historical_respondent_id,string,TRUE,FALSE,Documented historical caseid alias for source-linked participant rows
 analysis_phase_participants,source_row,int32,FALSE,FALSE,One-based row in source file; AMR uses its baseline row
 analysis_phase_participants,identity_basis,string,FALSE,FALSE,Source ID or file-scoped row identifier
-analysis_phase_participants,arm,string,TRUE,FALSE,Observed treatment or participation category; not necessarily randomized
+analysis_phase_participants,arm,string,TRUE,FALSE,Observed treatment or participation category; not necessarily randomized; climate completed denotes all sessions and post survey; invited_noncompleter does not imply no attendance
 analysis_phase_participants,assignment,string,TRUE,FALSE,Assigned or invited group where identified in the source
-analysis_phase_participants,attended,bool,TRUE,FALSE,Observed event attendance; null when unmeasured
+analysis_phase_participants,attended,bool,TRUE,FALSE,Observed event attendance; null when unmeasured; climate noncompletion leaves attendance unknown
 analysis_phase_participants,panel,bool,FALSE,FALSE,Person is in the available T1-T2 analysis panel
 analysis_phase_participants,small_group_id,string,TRUE,FALSE,Source discussion-group identifier where observed
 analysis_phase_participants,cluster_id,string,TRUE,FALSE,Cluster for study inference; Tanzania uses village
@@ -303,3 +303,20 @@ analysis_survey_waves,timing_evidence,string,FALSE,FALSE,Primary questionnaire o
 analysis_survey_waves,temporal_order,int32,FALSE,FALSE,Chronological order of survey occasions within study; does not imply equal spacing
 analysis_survey_waves,date_start,date32,TRUE,FALSE,Documented first fieldwork date; null where unknown
 analysis_survey_waves,date_end,date32,TRUE,FALSE,Documented last fieldwork date; null where unknown
+analysis_phase_item_responses,poll_id,string,FALSE,TRUE,Stable poll identifier
+analysis_phase_item_responses,source_dataset,string,FALSE,TRUE,Source cohort
+analysis_phase_item_responses,respondent_id,string,FALSE,TRUE,Identity within source cohort
+analysis_phase_item_responses,battery_id,string,FALSE,TRUE,Explicit comparable item battery; expanded and partial batteries remain separate
+analysis_phase_item_responses,wave,string,FALSE,FALSE,Canonical event phase
+analysis_phase_item_responses,item_id,string,FALSE,TRUE,Canonical question ID in analysis_items
+analysis_phase_item_responses,source_row,int32,TRUE,FALSE,Original source-file row; Denmark arrival rows refer to arrival.sav
+analysis_phase_item_responses,source_column,string,TRUE,FALSE,Literal original answer field or retained authored score field
+analysis_phase_item_responses,raw_value,float64,TRUE,FALSE,Original numeric answer; null for scored-only historical items
+analysis_phase_item_responses,raw_text,string,TRUE,FALSE,Original text answer
+analysis_phase_item_responses,correct,int32,TRUE,FALSE,Item correctness; null for absent questionnaires or retained missing authored scores
+analysis_phase_item_responses,response_status,string,FALSE,FALSE,Original answer status or wave_absent
+analysis_phase_item_responses,wave_observed,bool,TRUE,FALSE,Questionnaire presence established from raw fields; not quiz correctness
+analysis_phase_item_responses,original_score_wave,string,FALSE,FALSE,Source analytical wave label or arrival for added arrival responses
+analysis_phase_item_responses,study_id,string,FALSE,FALSE,Underlying study identity
+analysis_phase_item_responses,wave_instance_id,string,FALSE,TRUE,Source survey occasion
+analysis_phase_item_responses,original_survey_wave,string,FALSE,FALSE,Original questionnaire wave label

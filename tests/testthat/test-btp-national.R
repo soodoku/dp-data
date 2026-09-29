@@ -65,8 +65,8 @@ test_that("National respondent and aggregate values retain historical parity", {
     logpk = "log_knowledge_joint", tobitpk = "high_knowledge_joint",
     ppage = "age", female = "female", minority = "minority",
     educ4 = "education_four", educ3 = "education_three",
-    bettered = "higher_education", hhincome = "household_income",
-    highinc = "high_income", attextreme = "attitude_extremity",
+    hhincome = "household_income",
+    attextreme = "attitude_extremity",
     readbrief = "read_briefing", t1polint = "political_interest_t1",
     t1knowcor2 = "knowledge_joint_midterm", t12know = "knowledge_midterm",
     t12knowcor = "knowledge_midterm_joint",
@@ -100,10 +100,13 @@ test_that("National respondent and aggregate values retain historical parity", {
       info = field
     )
   }
-  values <- tibble::tibble(source_row = survey$source_row[index])
+  values <- tibble::tibble(
+    source_row = survey$source_row[index],
+    hhincome = actual$household_income[index]
+  )
   derived <- build_btp_national_derived(survey, values)
   for (field in names(derived)) {
-    if (field %in% c("meanxtreme", "avgsd", "genvar", "entropy")) {
+    if (field %in% c("meanxtreme", "avgsd", "genvar", "entropy", "phighinc")) {
       expected[[field]] <- approved_reference_values(
         "btp-national-2003", field, expected$caseid, expected[[field]]
       )

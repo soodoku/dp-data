@@ -125,6 +125,54 @@
       }
     },
     {
+      "name": "education_normalization",
+      "path": "metadata/education_normalization.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "source_column",
+            "type": "string"
+          },
+          {
+            "name": "source_codes",
+            "type": "string"
+          },
+          {
+            "name": "ordered_values",
+            "type": "string"
+          },
+          {
+            "name": "missing_codes",
+            "type": "string"
+          },
+          {
+            "name": "override_column",
+            "type": "string"
+          },
+          {
+            "name": "override_code",
+            "type": "number"
+          },
+          {
+            "name": "override_value",
+            "type": "number"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
       "name": "polardata_reviewed_covariances",
       "path": "metadata/polardata_reviewed_covariances.csv",
       "profile": "tabular-data-resource",

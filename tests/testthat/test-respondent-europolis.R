@@ -55,7 +55,7 @@ test_that("Europolis respondent values match historical identities", {
   mapping <- c(
     t1know = "knowledge_t1", t2know = "knowledge_t2", ppage = "age",
     female = "female", minority = "minority", educ4 = "education_four",
-    educ3 = "education_three", bettered = "higher_education",
+    educ3 = "education_three",
     attextreme = "attitude_extremity", eu2009.cc1 = "climate_t1",
     eu2009.cc2 = "climate_t2", eu2009.imm1 = "immigration_t1",
     eu2009.imm2 = "immigration_t2"

@@ -18,6 +18,7 @@ test_that("the Frictionless package names every metadata table", {
       "oos_sources",
       "respondent_sources",
       "respondent_source_components",
+      "education_normalization",
       "polardata_reviewed_covariances",
       "polardata_fields",
       "derived_measure_names",

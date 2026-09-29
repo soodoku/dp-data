@@ -123,8 +123,8 @@ build_btp_national_individual <- function(
       minority = as.numeric(btp_source_codes(survey, "ppeth", 1:4) != 1),
       education_four = education,
       education_three = collapse_historical_education(education),
-      higher_education = as.numeric(education >= .66),
-      household_income = income, high_income = as.numeric(income > 5),
+
+      household_income = income,
       attitude_extremity = extremity,
       political_interest_t1 = as_historical_float(
         c(1, .66, .33, 0)[interest]

@@ -10,6 +10,7 @@ source("R/analysis_tables.R")
 source("R/analysis_covariates.R")
 source("R/analysis_attitudes.R")
 source("R/analysis_phases.R")
+source("R/analysis_arrivals.R")
 source("R/analysis_wave_catalog.R")
 source("R/analysis_attendance.R")
 

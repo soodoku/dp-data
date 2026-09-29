@@ -4,6 +4,31 @@ source(file.path(root, "R", "analysis_poll_metadata.R"))
 source(file.path(root, "R", "analysis_tables.R"))
 source(file.path(root, "R", "analysis_attitudes.R"))
 
+test_that("documented nonanswers keep their codes and zero correctness", {
+  for (name in c("analysis_item_responses", "analysis_phase_item_responses")) {
+    items <- arrow::read_parquet(project_path(
+      "output", "analysis", paste0(name, ".parquet")
+    ))
+    a1r <- items$poll_id == "america-in-one-room-2019" &
+      items$raw_value %in% c(-8, 77, 98, 99)
+    ireland <- items$poll_id == "northern-ireland-2007" &
+      items$source_dataset == "control" & items$raw_value %in% c(9, 10)
+    climate <- items$poll_id == "a1r-climate-2021" &
+      items$item_id %in% sprintf("knowledge_%03d", 3:8) &
+      items$raw_value %in% c(77, 98, 99)
+    expect_equal(sum(a1r), 13709L)
+    expect_equal(sum(ireland), 356L)
+    expect_equal(sum(climate), 16580L)
+    selected <- a1r | ireland | climate
+    expect_true(all(items$response_status[selected] == "non_substantive"))
+    expect_true(all(items$correct[selected] == 0L))
+    expect_false(anyNA(items$raw_value[selected]))
+    substantive <- items$poll_id == "america-in-one-room-2019" &
+      items$raw_value %in% 1:4
+    expect_true(all(items$response_status[substantive] == "answered"))
+  }
+})
+
 test_that("absent questionnaires stay missing while observed zero stays zero", {
   items <- tibble::tibble(
     poll_id = rep(
@@ -81,7 +106,7 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   manifest <- readr::read_csv(
     file.path(directory, "manifest.csv"), show_col_types = FALSE
   )
-  expect_equal(nrow(manifest), 12L)
+  expect_equal(nrow(manifest), 13L)
   expect_true(all(file.exists(project_path(manifest$path))))
   expect_equal(
     vapply(project_path(manifest$path), digest::digest,
@@ -100,7 +125,7 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   responses <- tables$analysis_item_responses
   scores <- tables$analysis_scores
   expect_equal(nrow(polls), 50L)
-  expect_equal(nrow(catalog), 245L)
+  expect_equal(nrow(catalog), 253L)
   expect_equal(dplyr::n_distinct(people$poll_id), 33L)
   expect_equal(dplyr::n_distinct(responses$poll_id), 31L)
   expect_true(all(grepl("^knowledge_[0-9]{3}$", catalog$item_id)))
@@ -161,6 +186,15 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   expect_equal(nrow(climate_people), 8814L)
   expect_equal(sum(climate_people$female), 5066)
   expect_false(anyNA(climate_people$female))
+  expect_equal(sum(climate_people$arm == "completed"), 962L)
+  expect_equal(sum(climate_people$arm == "invited_noncompleter"), 7018L)
+  expect_equal(sum(climate_people$attended %in% TRUE), 962L)
+  expect_equal(sum(climate_people$attended %in% FALSE), 834L)
+  expect_equal(sum(is.na(climate_people$attended)), 7018L)
+  expect_equal(sum(climate_people$panel), 1633L)
+  expect_true(all(is.na(climate_people$attended[
+    climate_people$arm == "invited_noncompleter"
+  ])))
   ni_people <- dplyr::filter(
     people, poll_id == "northern-ireland-2007",
     source_dataset == "control"

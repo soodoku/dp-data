@@ -50,8 +50,28 @@ analysis_phase_control_scores <- function(sources, roles) {
     purrr::list_rbind()
 }
 
+analysis_amr_presence <- function(survey) {
+  fields <- grep(
+    paste0("^(a_|b_|proposal_|statement_|value_|civic_|disagree_|",
+           "trust_|knowledge_|eval_)[0-9]+(_[0-9]+)?$"),
+    names(survey), value = TRUE
+  )
+  stopifnot(
+    all(c("ID", "Time", paste0("knowledge_", 1:6)) %in% names(survey)),
+    !anyNA(survey$ID), !anyNA(survey$Time), all(survey$Time %in% 0:1),
+    !anyDuplicated(survey[c("ID", "Time")]), length(fields) > 6L
+  )
+  answered <- rowSums(!is.na(survey[fields])) > 0L
+  tibble::tibble(
+    poll_id = "amr-2024", source_dataset = "control",
+    respondent_id = as.character(survey$ID),
+    wave = paste0("t", survey$Time + 1L),
+    form_observed = dplyr::if_else(answered, TRUE, NA)
+  )
+}
+
 analysis_phase_presence <- function(
-  scores, items, measures, definitions, targets
+  scores, items, measures, definitions, targets, amr = NULL
 ) {
   responses <- arrow::read_parquet(project_path(
     "output", "respondent", "source_responses.parquet"
@@ -157,11 +177,27 @@ analysis_phase_presence <- function(
       )) |>
       dplyr::select(-"departure_observed")
   }
+  if (any(out$poll_id == "amr-2024")) {
+    if (is.null(amr)) {
+      amr <- readr::read_csv(project_path(
+        "data", "amr-2024", "participants.csv"
+      ), show_col_types = FALSE)
+    }
+    out <- out |>
+      dplyr::left_join(analysis_amr_presence(amr),
+        by = c("poll_id", "source_dataset", "respondent_id", "wave"),
+        relationship = "one-to-one"
+      ) |>
+      dplyr::mutate(wave_observed = dplyr::coalesce(
+        wave_observed, form_observed
+      )) |>
+      dplyr::select(-"form_observed")
+  }
   out
 }
 
 analysis_phase_scores <- function(scores, items, participants, sources,
-                                  recruitment = NULL) {
+                                  recruitment = NULL, arrival_items = NULL) {
   roles <- read_metadata("analysis_phase_roles")
   definitions <- read_metadata("measure_definitions")
   targets <- read_metadata("polardata_targets")
@@ -169,7 +205,7 @@ analysis_phase_scores <- function(scores, items, participants, sources,
     "output", "respondent", "respondent_measures.parquet"
   ))
   presence <- analysis_phase_presence(
-    scores, items, measures, definitions, targets
+    scores, items, measures, definitions, targets, sources$amr
   )
   base <- scores |>
     dplyr::rename(original_score_wave = "wave") |>
@@ -272,6 +308,9 @@ analysis_phase_scores <- function(scores, items, participants, sources,
       "wave_observed", "battery_id", "original_score_wave",
       "wave_role", "timing_evidence"
     )
+  if (!is.null(arrival_items)) {
+    out <- dplyr::bind_rows(out, analysis_arrival_scores(arrival_items))
+  }
   stopifnot(
     !anyDuplicated(out[c(
       "poll_id", "source_dataset", "respondent_id", "battery_id",

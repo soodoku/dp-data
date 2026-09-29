@@ -1,3 +1,13 @@
+health_degree_status <- function(survey) {
+  qualification <- as.numeric(survey$educb)
+  stopifnot(
+    length(qualification) == nrow(survey),
+    all(is.na(qualification) | qualification %in% c(-9, 0:12))
+  )
+  qualification[qualification == -9 & !is.na(qualification)] <- NA_real_
+  as.numeric(qualification == 9)
+}
+
 analysis_extra_covariates <- function(poll_id, data) {
   education <- function(x, low, middle, high) {
     dplyr::case_when(
@@ -89,5 +99,14 @@ add_analysis_covariates <- function(participants) {
     ) |>
     dplyr::select(-"age_extra", -"education_extra")
   stopifnot(nrow(out) == nrow(participants), !anyDuplicated(out[keys]))
+  health_rows <- which(
+    out$poll_id == "uk-health-1998" & out$source_dataset == "historical"
+  )
+  if (length(health_rows)) {
+    survey <- read_poll_survey("uk-health-1998")
+    source_rows <- match(out$source_row[health_rows], survey$source_row)
+    stopifnot(!anyNA(source_rows), !anyDuplicated(survey$source_row))
+    out$ba[health_rows] <- health_degree_status(survey)[source_rows]
+  }
   out
 }

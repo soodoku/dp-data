@@ -101,8 +101,8 @@ build_nic_individual <- function(survey = read_poll_survey("nic-1996")) {
       minority = as.numeric(nic_source_codes(survey, "RACE1", 1:6) != 1),
       education_four = education,
       education_three = collapse_historical_education(education),
-      higher_education = as.numeric(education >= .66),
-      household_income = NA_real_, high_income = NA_real_,
+
+      household_income = NA_real_,
       political_interest_t1 = (interest - 1) / 3,
       read_briefing = c(0, .33, .33, .66, 1)[briefing],
       attitude_extremity = rowMeans(abs(as.matrix(baseline) - .5)),

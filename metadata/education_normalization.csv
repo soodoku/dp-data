@@ -1,0 +1,5 @@
+poll_id,source_column,source_codes,ordered_values,missing_codes,override_column,override_code,override_value,evidence
+australia-republic-1999,edulev,1|2|3|4|5,1|2|3|4|5,98,,,,data/australia-republic-1999/value-labels.csv edulev: primary; some high school; HSC; college/technical/university; postgraduate
+new-haven-2004,pre_q61,1|2|3|4|5|6|7,1|2|3|4|5|6|4,8,,,,data/new-haven-2004/source-materials/baseline-cati.txt Q61; trade/technical retains reviewed placement with some college
+nic2-2003,educ_a,0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18,0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18,98|99,educ_b,1,12,data/nic2-2003/variables.csv and value-labels.csv educ_a/educ_b; completed grade; diploma/GED override to 12; raw 18 retained above 17
+san-mateo-2008,Q128,1|2|3|4|5|6,1|2|3|4|5|6,7|8,,,,data/san-mateo-2008/value-labels.csv Q128; other and refusal missing; retain graduate study categories

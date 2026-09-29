@@ -43,7 +43,7 @@ test_that("Monarchy demographic nonresponse does not become observed values", {
   expect_identical(survey$source_row[as.numeric(survey$A6) == 6], 447L)
   expect_true(is.na(built$political_interest_t1[447]))
 
-  education <- c("education_four", "education_three", "higher_education")
+  education <- c("education_four", "education_three")
   expect_true(all(is.na(as.matrix(built[509, education]))))
   expect_true(all(as.matrix(built[c(431, 754), education]) == 0))
   affected <- c(59L, 97L, 141L, 225L, 320L, 322L, 325L, 447L, 481L, 509L)
@@ -56,7 +56,7 @@ test_that("Monarchy demographic nonresponse does not become observed values", {
   benchmark <- benchmark[benchmark$dpnum == 3, ]
   position <- match(benchmark$caseid, 1000 + survey$source_row)
   fields <- c(ppage = "age", educ4 = "education_four",
-              educ3 = "education_three", bettered = "higher_education")
+              educ3 = "education_three")
   for (field in names(fields)) {
     expect_equal(built[[fields[[field]]]][position],
                  as.numeric(benchmark[[field]]), tolerance = 1e-10)

@@ -1,6 +1,6 @@
 # Poll-level issue register
 
-Initial review: 2026-09-25; latest evidence update: 2026-09-27. Scope: the
+Initial review: 2026-09-25; latest evidence update: 2026-09-28. Scope: the
 original 34 analytical polls, with detailed coverage of the 23 existing knowledge
 builds and the respondent reconstructions.
 
@@ -88,10 +88,11 @@ Priority questions for the corrections pass include:
   than an unexplained discrepancy. The same codebook contains the questionnaire.
   BTP 2005's short appendix date interval should not replace the full online
   treatment period described in its event report.
-- **AMR 2024:** sourced methods describe online deliberation, while the current
-  catalog labels the poll face-to-face. Published totals also distinguish
-  assignment to treatment/control from actual deliberation. Verify the study
-  version and population before changing catalog mode or sample counts.
+- **AMR 2024:** the recovered version 2 paper establishes pre-invitation baseline
+  and event-end measurements, now preserved as t0 and t2. AMR-04 documents the
+  phase mapping, recovered questionnaire and codebooks, and conflicting Q21
+  options. The retained 1,280 attendees and 1,139 controls omit 1,847 invited
+  nonattenders; they do not constitute the complete randomized invitation cohort.
 
 Material gaps remain explicit: finding a paper is not equivalent to finding the
 fielded instrument, and a general energy questionnaire is not automatically the
@@ -265,9 +266,9 @@ memberships: UK–EU 4, online primaries 13, Vermont 146, and Denmark 359.
 **Status:** preserve; rejected diagnosis of an accidental subtraction reversal.
 
 **Evidence rechecked:** the original
-[British Health Indices V6 FINAL, section 8](<../vault/cdd/data/british_health/indices/British Health Indices V6 FINAL.doc>)
+[British Health Indices V6 FINAL, section 8](../data/uk-health-1998/codebooks/british-health-indices-v6.pdf)
 explicitly specifies `LISTA - SEVERA`. The
-[British Health Codebook](<../vault/cdd/data/british_health/British Health Codebook.txt>)
+[British Health Codebook](../data/uk-health-1998/codebooks/uk-health-codebook.txt)
 identifies `LISTA1/LISTA2` as Q16A (waiting-list position) and
 `SEVERA1/SEVERA2` as Q15A (severity of condition). Each uses five agreement
 categories. The memorandum describes the intended contrast and prints its
@@ -293,10 +294,12 @@ subtraction unless that review establishes a reason to change it.
 
 ### UKH-02: Separate empirical rescaling changes the cross-wave scale
 
-**Status:** preserve / review; transformation confirmed, inferential consequence
-not yet evaluated in downstream models.
+**Status: fixed-scale correction approved on 2026-09-28.** Both waves now use
+the same possible difference range, [-1, 1], mapped to [0, 1]. The documented
+`lista - severa` direction is retained. The observations below describe the
+historical behavior and the approved alternative.
 
-**Evidence:** [historical merge script 05_fix_data.R](../vault/cdd/merge_data_scripts/05_fix_data.R)
+**Evidence:** [historical merge script 05_fix_data.R](https://github.com/soodoku/dp-data/blob/historical-cdd-scripts/legacy/merge_data_scripts/05_fix_data.R)
 separately applies `zero1()` to `ukhealth.t1severi` and `ukhealth.t2severi`.
 Direct reconstruction from raw answers reproduces the aggregate with
 `(d - min(d)) / (max(d) - min(d))`, independently in each wave, where
@@ -318,11 +321,15 @@ but changes the normalization. That may affect cross-wave comparisons, while
 some within-wave standardized statistics can be invariant to affine changes.
 Neither observation settles which normalization the authors intended.
 
-**Before any change:** recover the intended definition of `zero1`, the analysis
-population over which it was evaluated, whether wave-specific scaling was an
-explicit harmonization choice, and the consequences for paired comparisons,
-extremity, within-group dispersion and downstream regression coefficients.
-Do not combine a sign change and a normalization change in one unexplained edit.
+**Approved resolution:** use `(d + 1) / 2` in both waves. A difference of zero
+therefore scores 0.5 at both interviews instead of 0.5 initially and 2/3 at
+departure. Baseline severity scores do not change; 196 departure scores change
+with identical missingness and sample membership. Independent calculations from
+the raw item answers are retained in
+`audit/corrections/uk-health-1998/approved_values.csv`. The dependent summary
+correction is recorded in UKH-09. No sign reversal or change to the other
+attitude items is included. Downstream estimates require regeneration before
+claiming that their results are unchanged.
 
 ### UKH-03: Government/public input has a non-monotonic stored recode
 
@@ -331,7 +338,7 @@ Do not combine a sign change and a normalization change in one unexplained edit.
 **Primary evidence:** codebook Q18A_A (`INGOVA`) and Q18A_E (`INPUBA`) distinguish
 none, some, and all/most input. The V6 index memo, section 11, describes an average
 of the two items and says the high end denotes the most say. The
-[final project report](<../vault/cdd/data/british_health/uk.health.pdf>), section on
+[final project report](../data/uk-health-1998/reports/uk-health-final-report.pdf), section on
 who decides, separately reports these three categories. The raw survey value
 labels assign codes 1, 2 and 3 respectively.
 
@@ -445,7 +452,7 @@ indices was too broad and has been corrected here.
 `polardata.tab` retains 11 in both waves, including `ukhealth.t{1,2}avgdis`
 (doctor discretion) and `ukhealth.t{1,2}moresa` (patients' say), and `numindices`
 remains 11. The UK Health section of
-[05_fix_data.R](../vault/cdd/merge_data_scripts/05_fix_data.R) lists those two
+[05_fix_data.R](https://github.com/soodoku/dp-data/blob/historical-cdd-scripts/legacy/merge_data_scripts/05_fix_data.R) lists those two
 indices in comments and says the number should fall to nine, but contains no
 executed deletion or count update for them. A selected analysis battery and
 an aggregate's complete inventory can legitimately differ; the comments alone
@@ -473,14 +480,15 @@ replace the folded map while reproducing the historical aggregate.
 
 ### UKH-08: Individual and group high-income fields use different thresholds
 
-**Status:** preserve / review; assignment sequence and numerical difference verified.
+**Status: corrected under the approved shared median rule (X-13).** The
+historical discrepancy below explains the change; it is no longer pending.
 
 Codebook B18 defines 16 household-income bands before tax. In this participant
 file, `(income - 1) / 15`, with raw -9/-8/-7 missing, reconstructs `hhincome`
-for 206 respondents. The [poll script](../vault/cdd/scripts/uk_health.R) uses
-`hhincome > .8`; [03_data.R](../vault/cdd/merge_data_scripts/03_data.R) computes
+for 206 respondents. The [poll script](https://github.com/soodoku/dp-data/blob/historical-cdd-scripts/legacy/poll_scripts/uk_health.R) uses
+`hhincome > .8`; [03_data.R](https://github.com/soodoku/dp-data/blob/historical-cdd-scripts/legacy/merge_data_scripts/03_data.R) computes
 `phighinc` from that flag. Then
-[06_add_more_vars.R](../vault/cdd/merge_data_scripts/06_add_more_vars.R) changes
+[06_add_more_vars.R](https://github.com/soodoku/dp-data/blob/historical-cdd-scripts/legacy/merge_data_scripts/06_add_more_vars.R) changes
 individual `highinc` to `hhincome > .34` without recomputing `phighinc`.
 
 The early threshold selects raw bands 14–16 (35,000 and above), while the final
@@ -490,16 +498,19 @@ group shares match the early threshold. Recomputing them from final `highinc`
 would change all 15 discussion groups, hence all 230 group-share entries.
 These are income bands, not cardinal income or necessarily a percentile cut.
 
-**Before changing:** recover why thresholds were revised and which definition
-was intended for individual and group covariates. Check paper definitions and
-whether deliberately distinct constructs were given similar names. Compare
-estimates separately under each threshold and under a consistent group/individual
-pair; do not silently harmonize them. Both vintages are now explicitly preserved
-in the source build. Missing income remains missing, and group means omit it.
+**Approved resolution (2026-09-28):** compute the empirical income median among
+the 230 unique historical participants, excluding the 24 missing incomes.
+The observed median is income band 6, or 1/3 on the retained scaled variable.
+Strictly above that cutoff selects 97 people, the same people as the later
+individual flag. Group shares now use that individual flag: all 15 groups
+change from their earlier high-income definition. Missing income remains
+missing and group means omit it. The raw income bands and historical benchmark
+remain unchanged; the build no longer carries a second group-only cutoff.
 
 ### UKH-09: Attitude summaries precede the final severity rescaling
 
-**Status:** preserve / review; a reproducible sequence, not yet a judged correction.
+**Status: correction approved with UKH-02 on 2026-09-28.** Summaries now use
+the corrected respondent indices, including severity on its fixed [0, 1] scale.
 
 The poll script computes `attextreme` as the available-item mean of
 `abs(index - .5)` over **11** T1 indices, with severity still equal to
@@ -515,12 +526,15 @@ absolute individual difference is 0.1428571429. This diagnostic changes only the
 severity version, not the number of indices. Applying a nine-index definition
 would be another separate decision. No downstream models were refitted.
 
-**Before changing:** establish the intended neutral point of the difference
-index, which index versions entered the published summaries, and whether
-extremity and dispersion were intentionally retained from the earlier scale.
-The zero of a contrast need not share the .5 midpoint of an ordinary 0–1 item.
-Compare downstream effects while separating scale, midpoint, item membership,
-and missing-component denominators. Historical summaries remain unchanged.
+**Approved resolution:** retain all 11 baseline indices and their available-item
+rules, with the neutral zero difference mapped to 0.5 by the corrected severity
+scale. Compute individual extremity from those respondent values, then calculate
+group extremity and dispersion in the existing shared aggregation step. This
+changes individual extremity for 203 people, and group mean extremity, average
+standard deviation and generalized variance for all 230 people in 15 groups.
+Missingness and sample membership are unchanged. The independent expected
+values and summary are in `audit/corrections/uk-health-1998/`. The separate
+government/public and doctor-input recode proposal in UKH-03/07 is not included.
 
 ### UKH-10: Poll-level and respondent-level knowledge have different precision
 
@@ -556,11 +570,11 @@ introduced the precision. The input key remains subject to UKH-12.
 **Status:** preserve / review interpretation; the adjustment is explicit in the
 original code, not a newly discovered accidental multiplication.
 
-The [poll script](../vault/cdd/scripts/uk_health.R) labels a guessing adjustment:
+The [poll script](https://github.com/soodoku/dp-data/blob/historical-cdd-scripts/legacy/poll_scripts/uk_health.R) labels a guessing adjustment:
 a T1-correct/T2-incorrect answer becomes incorrect at T1. It computes itemwise
 `T1 correct * T2 correct`, then averages all six items as `t1knowcor`.
-The [helper](../vault/cdd/scripts/hlmFunc.R) and
-[merge](../vault/cdd/merge_data_scripts/03_data.R) use the same jointly correct
+The [helper](https://github.com/soodoku/dp-data/blob/historical-cdd-scripts/legacy/poll_scripts/hlmFunc.R) and
+[merge](https://github.com/soodoku/dp-data/blob/historical-cdd-scripts/legacy/merge_data_scripts/03_data.R) use the same jointly correct
 items to compute and normalize `grpgain`. No new adjustment is introduced here.
 
 There are 104 correct-to-incorrect item transitions across 74 people. The mean
@@ -660,6 +674,36 @@ Both hashes and the extraction details are registered in the material catalog.
 The 17-page retained PDF ends at the bibliography even though its contents list
 an appendix; do not claim that the missing questionnaire appendix is recovered.
 The original archive bytes remain untouched.
+
+### UKH-13: School qualifications were mislabeled as a bachelor's degree
+
+**Status: approved and implemented 2026-09-28.**
+The canonical analysis participant builder previously derived `ba` from
+`educ3 == 1`.
+For UK Health this is `educa == 3`: A/S/AS-level school qualifications in
+codebook B11, not a degree. The separate B12 `educb` question explicitly
+identifies degree/higher degree as code 9. Its nonanswer is -9. Reconstructing
+degree status from this answer exactly reproduces the source's authored
+`degree` variable, including its one missing value, for all 230 participants.
+
+The previous flag identified 49 degree holders; the explicit source question
+identifies 32. Twenty-three previous positives report no degree; six previous
+negatives report a degree. Two previously missing school-based flags have an
+observed no-degree answer, and one previous negative has a missing degree answer.
+The approved correction changes 29 observed binary values and three missingness
+statuses. It preserves all person identities, school-qualification answers and
+the separately approved empirical-median education flag. A-level qualifications,
+degree attainment and relative education are distinct measures and must not
+share an unsupported degree label. The three-category education proxy and any
+downstream description of it need their own source-based harmonization review.
+This degree-flag correction leaves those categories unchanged.
+
+Evidence: `data/uk-health-1998/codebooks/uk-health-codebook.txt` B11/B12 and
+DEGREE sections (lines 1424–1526), `survey.sav` fields `educa`, `educb`, `degree`,
+and the historical participant transformation. `R/analysis_covariates.R` now
+uses the raw B12 answer for this degree flag, including its missing value,
+after the generic historical proxy assignment. The 230 keyed before/after
+values are in `audit/corrections/uk-health-1998/degree_values.csv`.
 
 ## UK Crime 1994 — uk-crime-1994
 
@@ -907,7 +951,7 @@ not claims about the original paper's estimates. A standalone SAQ2 scan
 remains unavailable; the source codebook prints question wording, labels and
 frequencies for both items.
 
-**UKEU-05 — preserve the ethnicity exclusion and education threshold.** The
+**UKEU-05 — ethnicity exclusion and historical education threshold.** The
 codebook's B14 IAQ ethnicity question calls code 8 “Other,” with 19 source
 records and five attendees. `uk_eu.R` explicitly excludes 8 along with
 97/99/-1 before `ethnic != 1`, leaving 233 historical minority values. This
@@ -917,8 +961,11 @@ response categories and any coding note, assess which respondents would enter
 the denominator, and compare group shares before proposing a recode. Likewise,
 `educ4` maps school qualifications 0/1/2 to 0, 3/4/5 to .33, 6/7/8/9/10/12 to
 .66, degree category 11 to 1, and other category 13 to missing. The later merge
-sets `bettered` to `educ4 >= .33` for this poll (90 of 230 nonmissing attendee
-values). It is not a uniform college-degree indicator across polls.
+historically set `bettered` to `educ4 >= .33` for this poll (90 of 230 nonmissing
+attendee values). X-13 now applies the approved empirical median rule. Its
+median is 0, so strictly above the median selects the same 90 people here.
+Neither definition is a uniform college-degree indicator across polls. The
+ethnicity exclusion remains a separate interpretation question.
 
 The new respondent build reconstructs all 35 applicable UK–EU historical
 respondent fields, including aliases and seven deliberately missing fields.
@@ -968,9 +1015,10 @@ filtering `GROUP != -1`; these aliases identify all 258 historical rows exactly.
 They are stored separately from source identity. The eight-item knowledge export
 omits succession (`Q8A`/`R8A`, correct code 5), whereas the historical aggregate
 script explicitly includes it in its nine-item denominator. The new historical
-respondent definitions reproduce that nine-item battery and its baseline Q5C
-reuse. The existing eight-item knowledge export remains unchanged; changing
-either contract requires assessing the intended battery against the instrument.
+respondent definitions retain that nine-item battery, with the approved UKM-01
+correction replacing baseline Q5C reuse with departure R5C. The existing
+eight-item knowledge export remains unchanged. Any further battery change
+requires assessing its intended content against the instrument.
 See the [existing audit](monarchy-election-utilities.md).
 
 **UKM-03 — attitude construction and numeric precision.** The archived
@@ -988,14 +1036,13 @@ Before changing direction, rounding or nonresponse handling, reconcile the
 questionnaire's referendum ordering with the index memo and source labels.
 
 **UKM-04 — expanded-source recodes are not automatically valid demographics.**
-The archived age recode specifies midpoints only for AGEB 2–9 and leaves codes
-10 and 11 unchanged. Three and five nonattendees respectively retain those
-numeric codes in the historical-definition output. A6 code 6 also passes
-through unchanged for one nonattendee; B12A code 6 passes through the education
-recoder unless the qualification override applies. No attendee has these three
-source-code exceptions. Review the original response labels before producing
-corrected age, interest or education measures for the expanded population.
-Do not interpret the retained 10/11 age codes as years without that review.
+The archived age recode specified midpoints only for AGEB 2–9 and left codes
+10 and 11 unchanged. Three and five nonattendees respectively retained those
+numeric codes. A6 code 6 also passed through unchanged for one nonattendee;
+B12A code 6 passed through the education recoder unless the qualification
+override applied. No attendee had these three source-code exceptions. The
+source-label review and approved corrections are recorded in UKM-06 below;
+these exceptions no longer describe the maintained respondent output.
 
 **UKM-05 — one catalog title describes the wrong construct (corrected).**
 The archived cross-poll files call `ukmonarchy.t1mpop` “Powers of the Monarchy”
@@ -1220,7 +1267,9 @@ preserve this observed age.
 missing, including two attendees; codes other than 1 become the historical
 minority indicator. Age -7 becomes missing. School education is overridden by
 higher qualifications; household income's 16 categories collapse to five and
-high income means a collapsed category above 2. Source labels and the existing
+historical individual high income meant a collapsed category above 2. X-13 now
+uses the approved empirical median rule, with the same individual flag feeding
+group shares. Source labels and the existing
 codebook establish the raw categories; the archived script establishes the
 historical transformations. All 35 respondent-field targets match for the 275
 attendees at 1e-10, including missingness. This is reproduction evidence, not
@@ -1611,11 +1660,17 @@ wave-specific `dkchg` flag can override correctness on those four items while
 raw answers remain preserved. Sixteen T2 code-99 responses differ from the
 binary deposit as missing rather than incorrect; zero-filled scores do not move.
 
-**Next check:** re-read [codebook.doc](../data/australia-republic-1999/codebook.doc)
-and locate the exact routing/flag instruction before changing override rules.
-Do not interpret zero score differences as equivalence for item-response models,
-which may use missingness differently. Instrument review here relies on the
-existing audit, not a fresh examination of each question.
+**Rechecked 2026-09-28:** the 16 differences are four exit symbolic-change
+items for each of CASEID 240, 312, 1512 and 1526. All are raw code 99, labeled
+not answered. The item table preserves that nonresponse status, while the
+fixed-denominator score already counts them as incorrect. This is not an
+unresolved score discrepancy. The routing issue is separate: baseline DKCHG=1
+combines none and don't know, whereas exit DKCHG=1 means nothing will change.
+All 52 flagged baseline respondents and 37 flagged exit respondents have four
+literal no codes, but the available file cannot establish whether these are
+answers or generated routing defaults. The retained constitutional-referendum
+study codebook concerns a different survey; it is not the fielded DP instrument.
+Do not equate missing item answers and substantive no-change responses.
 
 ### AUS-02: Aggregate knowledge uses a different battery and flag rule
 
@@ -1625,10 +1680,28 @@ preserved `aus_republic.R` applies `DKCHG1` to four symbolic-change items; its
 commented alternative omits the gate and exactly reproduces the aggregate.
 Applying the active gate changes 52 baseline/joint scores, by as much as 0.25.
 The aggregate's `NUMITEMS = 11` is also inconsistent with its 12-item denominator.
-Keep the descriptor and denominator separately rather than forcing agreement.
 Issue-specific scores are absent from the final aggregate even though later
 syntax constructs them. Check the fielded change-question routing, index memo,
 and script/export dates before choosing a version.
+
+**Count correction proposed 2026-09-28; awaiting approval.** The maintained
+`build_australia_derived()` still multiplies the 12-item peer measure by `12/11`
+and publishes `numitems=11`. The original `aus_republic.R` sets the count to 11
+at line 27 but supplies 12 columns to the knowledge matrix at line 237;
+`hlmFunc.R` line 51 divides each accumulated contribution by that count.
+AUS-04 corrected row alignment, not this mismatch. Setting the count to 12
+and removing the extra multiplier changes 346 `grpgain` values and their
+346 `loggain` values, preserving the one missing case and all 347 people.
+Mean peer knowledge changes from 0.4419517 to 0.4051223; the maximum changes
+from 0.8571429 to 0.7857143. Individual knowledge scores do not change.
+
+This correction does not require merging the ten- and twelve-item definitions.
+The latter includes two additional office-holder questions about Aden Ridgeway
+and Jennie George. Their correct-answer proportions reproduce the retained
+report's rounded 46/58 and 63/69 baseline/exit percentages. The original script
+also explicitly excludes a party question and discusses the change gate's
+reliability. These are documented battery choices; the unresolved part is the
+fielded QC4/WC4 routing instruction, not whether twelve columns are eleven.
 
 ### AUS-03: Extremity omissions and a cross-wave ranking typo
 
@@ -1757,7 +1830,9 @@ age/group-mean rows appended; no prior correction values were rewritten.
 **BTP07-01 — selection variables with similar names have different roles.**
 `group == 1` selects 301 discussion-treatment respondents from 1,501 records;
 `Sgroup` gives the 20 small groups and `CaseID` identifies people. Codes 99, 998,
-and 999 are non-substantive. All eight-item scores and gender match the deposit.
+and 999 are non-substantive in the knowledge battery. The briefing-reading
+field is different: its code 99 means “all or nearly all” and remains substantive.
+All eight-item scores and gender match the deposit.
 
 The original [codebook.pdf](../data/btp-2007/codebook.pdf), PDF page 4
 (printed page 3), explains the selected cohort: 326 people attended all four
@@ -1838,9 +1913,12 @@ float32 storage. Exact fractions change values by about 0.000003.
 `03_data.R` computes group/poll summaries on 299 people, then drops zero
 `t2know` or missing extremity, leaving 246 historical export rows. BTPGE-05
 corrects the zero-score sample rule, yielding 248 export rows. The separate
-250-person knowledge battery in BTPGE-01 is not this aggregate sample. Group high-income
-share uses collapsed income `> 7`; final individual high income uses `> 5`.
-Review original sample and income specifications before unifying either pair.
+250-person knowledge battery in BTPGE-01 is not this aggregate sample. Historical
+group high-income share used collapsed income `> 7`, while final individual
+high income used `> 5`. X-13 now uses a single participant-median cutoff for both
+flags and group shares. The group composition population remains documented
+separately from the median reference population; normalization does not merge
+those sample definitions.
 
 ### BTPGE-04: Baseline poll knowledge uses a larger calibration sample
 
@@ -2178,13 +2256,14 @@ later individual cutoff therefore included raw codes 2–6, including 50–100;
 the group cutoff included only codes 4–6, starting at 150–200. The source has
 278 people: five no answers, 193 above the later individual cutoff, and 28
 above the earlier group cutoff. The stored `phighinc` in all 17 groups matches
-the earlier rule. With the user's approval to choose one poll-level definition
-and leave cross-poll normalization to a later layer, `highinc` now uses raw
-codes 4–6. This changes 165 individual flags from 1 to 0, preserves all five
-missing values, and leaves `phighinc` unchanged. The group calculation now
-uses the same individual flag. The original script's `>4` group rule and Q10
-support this within-poll definition; no claim of comparability to other polls'
-income cutoffs is made. The prior and approved values are retained in
+the earlier rule. The user's initial approval selected raw codes 4–6 as one
+common individual/group definition. That correction changed 165 individual
+flags from 1 to 0, preserved all five missing values, and left `phighinc`
+unchanged. The later X-13 approval supersedes that fixed cutoff with the
+empirical participant median. It selects 84 people as high income, compared
+with the historical 193 and the earlier corrected 28; 109 flags differ from
+the historical benchmark. Group shares use the same median-based individual
+flags, with missingness unchanged. The earlier approval snapshot remains in
 `audit/corrections/bulgaria-crime-2002/approved_values.csv`.
 
 **BGC-04 — index sets and reconstruction coverage.** All 51 respondent targets
@@ -2381,20 +2460,30 @@ Sorting or matching identical score profiles cannot prove respondent identity.
 
 The retained [codebook.txt](../data/europolis-2009/codebook.txt) describes the
 source waves and their response labels, but contains no deposited-battery row
-identifier. The file labeled
-[post questionnaire](../data/europolis-2009/questionnaire-post.pdf) is
-misfiled: its extracted text is identical to the
-[Tomorrow's Europe 2007 post questionnaire](../data/tomorrows-europe-2007/questionnaire-post.pdf).
-Its Q43–Q50 ask about briefing, sessions and event evaluation, while the
-Europolis source `V3Q43`–`V3Q50` and published knowledge report describe EU
-institutions, immigration and energy facts. The archive path places the
-duplicate under `eu_2009`, but its 2007 document metadata and exact text
-comparison establish that it is not the Europolis fielded instrument. It
-cannot validate the scored post answers or supply a person link. **Next
-check:** find the fielded questionnaire version and original exports or scripts
-with persistent IDs. Preserve 997/998/999 as source missing reasons. Do not
-append deposited rows to attitudes using an arbitrary permutation. No paired
-person-level difference count is asserted here.
+identifier. The archive's `eu_2009/questionnaires/T3 Questionnaires/T3 questionnaire_EN.doc`
+was misfiled: it is a content duplicate of the
+[Tomorrow's Europe 2007 post questionnaire](../data/tomorrows-europe-2007/questionnaire-post.pdf),
+not a different Europolis draft. Its Q43–Q50 ask about briefing, sessions and
+event evaluation, while the Europolis source `V3Q43`–`V3Q50` and published
+knowledge report describe EU institutions, immigration and energy facts.
+
+The duplicate DOC was created October 8, 2007 and modified October 13, 2007.
+The correct-folder copy was subsequently saved in February 2008; both report
+an October 13, 2007 printing date. Their binary hashes differ, but their Word
+main-text streams are identical (31,606 characters), both have no comments,
+footnotes, endnotes or textboxes, and the only header-text difference is a
+cached page number (21 versus 9). The two 21-page PDFs have identical page
+content streams and image bytes. The duplicate Europolis DOC and PDF were
+removed after this comparison; the canonical Tomorrow's Europe pair remains.
+[The existing source-findings register](../metadata/source_findings.csv), row
+`europolis-misfiled-questionnaire`, retains the archive path and removed hashes;
+Git retains the removed files.
+
+The misfiled form cannot validate Europolis answers or supply a person link.
+**Next check:** find the fielded Europolis questionnaire and original exports
+or scripts with persistent IDs. Preserve 997/998/999 as source missing reasons.
+Do not append deposited rows to attitudes using an arbitrary permutation.
+No paired person-level difference count is asserted here.
 
 ### EURO-02: Aggregate identity is distinct from deposited-battery ordering
 
@@ -2414,7 +2503,8 @@ measurement decision, not a repair required for reconstruction.
 
 `educ4` is actually age at leaving education divided by 35. Ongoing education
 (code 0) uses `min(2010 - birth_year, 35)` before division, and `03_data.R`
-rounds to two decimals; higher education is `> 0.57`. It is not a four-category
+rounds to two decimals; historical higher education used `> 0.57`. X-13 now
+uses the empirical participant median, also 0.57 for this cohort. It is not a four-category
 qualification variable. Check the education instrument and index memo before
 relabeling or changing that policy. The birthplace correction is EURO-04.
 
@@ -2679,11 +2769,12 @@ must fail comparison. Raw source codes remain unchanged; integer lookup removes
 only the SPSS floating-point artifacts below 1e-8. The group and poll derived
 fields remain a separate reconstruction stage.
 
-### NIC-05: Arrival gain is sensitive to stored indicator precision
+### NIC-05: Immediate-exit gain is sensitive to stored indicator precision
 
 The nine factual indicators stored in the historical SPSS data use a value
 approximately `1 + 1e-11` for correct responses; the two placement indicators
-use integer one. The arrival joint score therefore slightly exceeds one for
+use integer one. Source Time 2 is immediate exit, not arrival (NIC-11).
+The joint score involving that exit interview therefore slightly exceeds one for
 one otherwise all-correct respondent, CASEID 10013620 in group 3 (about
 `1.00000000000819`). Its historical gain is zero divided by a small negative
 denominator, yielding zero. Replacing all indicators with exact binary integers
@@ -2693,8 +2784,22 @@ not evidence that peer learning was zero. The historical reconstruction retains
 the documented indicator storage stage for parity. A future central group
 measure should state its ceiling policy explicitly and keep it distinguishable
 from the historical definition; do not patch the respondent recode or invent a
-NIC-only group convention. Only this one historical arrival-gain value has the
+NIC-only group convention. Only this one historical immediate-exit gain value has the
 all-correct ceiling pattern.
+
+**Shared ceiling-policy review (2026-09-28; awaiting approval).** A direct check
+of the scored source-item matrices across all 21 reconstructed polls and 24
+implemented wave-pair definitions finds 108 all-correct cases. Of these, 107
+already have missing peer measures. Only NIC source row 824, CASEID 10013620,
+has a numeric zero produced by the storage offset. This is `grpgain2`, whose
+inputs are the joint correctness of source T2 (immediate exit) and source T3
+(later follow-up); it is not an observed gain at exit. The proposed common
+rule tests whether any scored item remains unknown before dividing. If none
+does, the peer opportunity measure is undefined and remains missing. It does
+not alter individual knowledge scores, source answer precision, or the other
+polls' existing missing values. The check found no substantive negative,
+above-one, infinite, or non-ceiling near-one peer values requiring a separate
+correction.
 
 
 ### NIC-06: Baseline Bosnia answer is date-dependent in the stated rule
@@ -2739,14 +2844,15 @@ has been located.
 ### NIC-07: Party-placement percentages need their own analysis definition
 
 The paper's Table 4 prints Democratic-party placement correctness of .59,
-.79 and .64 at baseline, arrival and follow-up. The archived `nic1.R` and
+.79 and .64 at baseline, immediate exit and follow-up. Source Time 2 is the
+event-exit interview, as established in NIC-11. The archived `nic1.R` and
 maintained eleven-item build define a correct placement as `POLDEM` in 1:3 in
 every wave. On the paper's participant samples, that gives .594, .661 and
 .615. Code 4 is explicitly "moderate middle of road" in the codebook
 (lines 5994–6049), so adding it to the liberal side merely to approximate the
-paper's arrival value would change the substantive definition; it would also
+paper's immediate-exit value would change the substantive definition; it would also
 raise baseline and follow-up proportions to .706 and .801. The paper's 0.79
-arrival figure appears in the earlier Luskin–Fishkin manuscript as well, but
+immediate-exit figure appears in the earlier Luskin–Fishkin manuscript as well, but
 neither version specifies a wave-specific cutoff or a different source
 extract. Preserve the consistent 1:3 recode until original tabulations or
 analysis code explain the discrepancy. This item is outside the nine-fact
@@ -3200,15 +3306,12 @@ birth years 1911 and 1910, yielding ages 97 and 98 in 2008. Both are
 nonparticipants. These derived ages are not the source's refusal codes;
 preserve the reported birth years and derived ages.
 
-**SM-02 — identity and earlier source.** The maintained build selects 239
-participants from an earlier 1,806-row file, sorts unique `PARTICIPANTID`, and uses
-26 `GRP` values. `RESPNUM` is not unique; the later 239-row analysis file is not the
-same provenance layer. Preserve both distinctions when rebuilding the wave merge.
-
 ### SM-02: IDs and summary batteries follow an earlier analysis stage
 
 Of 1,806 source records, `participant == 1` selects 239. Synthetic historical
-IDs `960001:960239` follow ascending `PARTICIPANTID`, not file order. All 16 raw
+IDs `960001:960239` follow ascending `PARTICIPANTID`, not file order. The sample
+uses 26 `GRP` values. `RESPNUM` is not unique, and the later 239-row analysis file
+is a different provenance layer; neither is a substitute for this ID bridge. All 16 raw
 knowledge-answer columns and historical groups match the archived poll file
 under that ordering. Seven-point attitudes round to seven decimals before
 float32 storage; direct fractions are numerically different.
@@ -3528,7 +3631,7 @@ remaining anonymous-battery and final-instrument provenance limitations with
 additional source versions or logs, rather than changing people or codes to
 match aggregate counts.
 
-### DK-05: Original arrival source preserved publicly; scoring unchanged
+### DK-05: Original arrival source preserved publicly and scored
 
 The original `data/Denmark/data/t1.sav` is now retained byte-for-byte as
 `data/denmark-euro-2000/arrival.sav`. Its 121,960 bytes have SHA-256
@@ -3545,13 +3648,14 @@ important theme for one's euro position, and a description of the public debate.
 They are questionnaire responses, not contact fields.
 
 The survey-component registry and archive inventory now resolve this source
-inside the public poll folder. The wave catalog records its existence as
-`source_exists_but_not_exported`; no arrival score, existing knowledge score,
-respondent membership or analysis output is changed by this preservation.
+inside the public poll folder. The initial preservation left scoring unchanged.
+The 2026-09-28 phase build now exports arrival item responses and scores for
+358 matched people; departure ID 203 has no arrival record and remains missing.
+The original selected-wave scores and respondent memberships are unchanged.
 The source timing remains grounded in `deliberative-democracy-euro.pdf`,
 PDF pages 7 and 19, which distinguish recruitment, beginning-of-event and
-end-of-event measurements. A public source is now available for the separate
-arrival scoring task without requiring a local vault.
+end-of-event measurements. Both the source and arrival build are public and
+require no local vault; X-02 gives the report comparisons and sample boundary.
 
 ## Northern Ireland 2007 — northern-ireland-2007
 
@@ -3644,6 +3748,15 @@ bridge for the earlier 121-person analysis has been established; do not drop
 three current respondents to force that match. Raw age and education coding,
 all scores, memberships and the existing sample remain unchanged.
 
+### NI-04 — label follow-up nonanswers explicitly (corrected)
+
+The retained [value labels](../data/northern-ireland-2007/value-labels.csv),
+`t3q11` through `t3q17`, identify codes 9 and 10 as nonanswers. These appeared as
+`answered` in 356 follow-up item cells. They now use `non_substantive`, with
+356 changed cells in each of the selected-wave and phase tables. Raw responses,
+zero correctness, scores, follow-up participants and controls remain unchanged.
+This correction does not merge the follow-up comparison with the event-exit wave.
+
 ## Polls outside the 23-battery canonical build
 
 These polls lie outside the older 23-battery knowledge pipeline. Five now have
@@ -3658,12 +3771,12 @@ presence is not a claim that every original field-file merge has been recovered.
 | btp-presidential-primaries-2004 | All 217 historical people are reconstructed. PR-02 fixes running peer sums; PR-03 removes duplicate aggregate rows and recomputes six group descriptors. Do not conflate with the online-primaries battery. | Event/mode-specific questionnaires, invitation and attendance records, and ID crosswalk. |
 | new-haven-2004 | All 132 historical people are reconstructed from joined pre/mid/post workbook answers. Three birth-year-1890 refusals are made missing; the event year is corrected to 2002. The paper reports 133 attendees but analyzes 132, matching the reconstructed group-size split; the one-person exclusion reason remains unknown. | Attendee roster and sample rule; remaining arrival-wave response rules. |
 | zeguo-2005 | All 233 historical participants are reconstructed from reviewed merged/pre/post components; three historical knowledge-item overrides remain explicit. The corrected Wenchang source makes all 16 group covariance matrices full rank, removing 15 obsolete numerical exceptions. | Original and translated instruments, event date, project-choice scales and respondent/group identifiers. |
-| marousi-2006 | Public participants file came from an existing derived 2014 analysis object, not an independently rebuilt item-level source. Its post knowledge-score distribution conflicts with a contemporaneous 138-person distribution; see MAR-01. | [Questionnaire](../data/marousi-2006/questionnaire.pdf), original field returns, scoring syntax and group roster. Establish wave and identity linkage before treating T2 zeros as missing. |
+| marousi-2006 | The recovered 1,275-row authored source now supplies telephone, arrival and departure scores with explicit questionnaire presence. MAR-02 corrects partial quizzes previously zeroed as whole scores and retains the verified 146-person historical identity bridge; 159 people have observed event questionnaires. | Original separate wave returns and full factual-key documentation would independently verify the authored merge and keys. Preserve absent questionnaires as missing and blanks within observed questionnaires as incorrect. |
 | bulgaria-2007 | Distinct Roma-policy event; it must not inherit the 2002 crime battery merely because files share an archive directory. | Roma-policy questionnaire, actual event date and source-file provenance. |
-| tanzania-2015 | Public source is available, but full canonical arm, village, questionnaire and measurement integration is not built here. The group file has one person without a recorded treatment assignment; see TZ-01. | Village-randomization protocol, information versus deliberation arms, instruments and cluster IDs. Preserve the current downstream specification until audited. |
+| tanzania-2015 | Canonical citizens, arms, village clusters and source standardized scores are retained. The audit reproduces both source indices, but finds a negative nonanswer sentinel entering their first component and one follow-up-only person labeled panel; TZ-03 and TZ-04 are proposed corrections, not applied. TZ-01 retains the separate treatment-eligibility ambiguity. | Decide the index and panel corrections; recover the original raw-to-derived recode. Preserve routing-related missingness and distinguish recorded groups from verified assignment. |
 | america-in-one-room-2019 | The attendance flag now uses the source group roster: 526 attended, of whom 523 completed the post survey. Downstream scoring is reproducible from the unchanged deposit; upstream has not independently reconstructed all measurement and sample decisions. See A1R19-01. | Fielded factual battery, remaining answer-key evidence, uninvited controls and both source weights. The Paris Agreement item must be interpreted at the fieldwork date, not under today's ratification status. |
-| a1r-climate-2021 | The eight knowledge keys reproduce all 16 published weighted before/after percentages. The participant export currently treats the 962 post-survey completers as all attendees, although session logs record a larger attendance set; see A1RC-01. | Resolve the attendance threshold, preserve all three wave identities, and obtain the fielded instruments and follow-up eligibility rules. |
-| amr-2024 | Six-country knowledge scoring reproduces the report's country-specific weighted gains, including its highlighted largest item gains. Country-specific measurement equivalence and attendance versus assignment still need explicit source contracts; see AMR-01. | Country/language instruments, randomization and attendance records, coding instructions, stable IDs and weighting documentation. |
+| a1r-climate-2021 | The eight knowledge keys reproduce all 16 published weighted before/after percentages. The 962-person published completion cohort is explicitly labeled completed; other invitees are not labeled nonattenders. See resolved A1RC-01. | Preserve completion separately from unknown attendance among other invitees; retain all three wave identities and seek fielded instruments and follow-up eligibility rules. |
+| amr-2024 | All 4,838 scores and 29,028 item responses reproduce the source; verified t0/t2 phases are retained. Recovered expert keys and codebooks support existing scoring. The Tanzania gain is 3.5 points rather than the report summary's 3.6; AMR-01 and AMR-04 document this discrepancy and the Q21 source conflict. | Recover local-language field forms and the 1,847 invited nonattenders omitted from the deposit. Use weights within country × arm; do not infer full invitation ITT from the attendee/control extract. |
 
 The four newer control-study files and Marousi are already byte-identical between
 `dp-learning`'s former local inputs and their upstream copies. That migration
@@ -3695,7 +3808,16 @@ with the September 2019 field dates: [Russia accepted on 7 October 2019 and
 Turkey ratified in 2021; Iran had signed but not ratified](https://treaties.un.org/Pages/showDetails.aspx?objid=0800000280458f37).
 Do not re-key this item using countries' later treaty status.
 
-### A1RC-01 — the 2021 climate attendance threshold remains a schema decision
+### A1R19-02 — preserve documented nonanswer status (corrected)
+
+The [original codebook](../data/america-in-one-room-2019/codebooks/a1r_codebook.tab),
+PK and T2PK sections, identifies −8, 77, 98 and 99 as nonanswers. The canonical
+item tables previously labeled 13,709 such cells `answered`. They now use
+`response_status = non_substantive` in both the selected-wave and phase tables,
+with 13,709 changed cells in each table. Raw codes, zero correctness, scores,
+denominators and respondent samples are unchanged.
+
+### A1RC-01 — label the published climate cohort as completed (corrected)
 
 The [NORC methods report](../data/a1r-climate-2021/design/a1r-climate-methods.pdf),
 Table 1 and its footnotes, counts 1,021 treatment respondents who attended at
@@ -3710,18 +3832,26 @@ Two `FINAL_ATTEND == 10` cases (IDs 23725 and 27194) show two or three
 recorded sessions yet are outside NORC's 1,021-person post-invitation count;
 the file does not explain their exclusion. Therefore simply testing whether
 the session sum is at least two would produce 1,023, not the reported 1,021.
-The current participant export sets `attended` and `arm == "attended"` only
-for the 962 complete cases. That is a post-survey sample flag, not a literal
-attendance flag. Whether the general `attended` field should mean any live
-session or the study's two-session eligibility threshold needs one consistent
-schema rule; neither changes the 962-person published analysis sample.
-The `dp-learning` attendee-versus-invitee baseline descriptive comparison
-would change under either correction; its paired attendee-control estimates
-would still use the same 962 post-survey completers. The attendee mean
-baseline eight-item score is 0.685551 for the current 962 complete cases,
-0.679726 for the 1,021 report-qualified cases, and 0.656959 for all 1,146
-people with at least one recorded session. Those are distinct descriptive
-populations, not alternative answer keys.
+The user approved labeling the existing 962-person cohort **completed**, rather
+than expanding the analytical cohort or adding separate session and eligibility
+fields. The participant export now uses `arm == "completed"` for these 962
+people and `arm == "invited_noncompleter"` for the other 7,018 treatment-frame
+respondents. The existing `panel` indicator remains unchanged: 962 completed
+delegates and 671 controls have paired surveys. All response values, scores,
+weights, group identities and paired-analysis membership remain unchanged.
+
+The common `attended` field remains true for the 962 completers, whose actual
+attendance is documented by the report, and false for the 834 uninvited controls.
+It is null for the other 7,018 invitees: not completing the study does not establish
+nonattendance. This deliberately leaves their attendance unclassified in the
+canonical analytical view; source session records remain available unchanged.
+The phase view records their attendance status as unknown. Downstream readers
+must accept the explicit completed arm and describe the climate baseline
+comparison as completers versus other invitees, not attendees versus nonattenders.
+The previous comparison's people and scores do not change. Their mean baseline
+eight-item score is 0.685551 for the 962 completers; the alternative source cohorts
+would be 0.679726 for 1,021 report-qualified people and 0.656959 for all 1,146
+people with recorded sessions, but neither is substituted into the current analysis.
 
 The [knowledge report](../data/a1r-climate-2021/reports/a1r-climate-knowledge.pdf)
 lists eight before/after correct-response percentages. Restricting to the 962
@@ -3748,21 +3878,62 @@ with assertions for the observed codes and cross-wave agreement. No
 attendance flag, response, score, sample or weight changes. Current
 `dp-learning` climate analyses do not use `female` as a covariate.
 
-### AMR-01 — six-country knowledge gains reproduce the report
+### A1RC-03 — distinguish factual-item nonanswers from substantive responses (corrected)
+
+The recovered [original preparation script](../data/a1r-climate-2021/scripts/replication-data-preparation.do),
+lines 355–399, records Q19–Q24 options and nonanswer labels: 77 “Couldn't say,”
+98 “SKIPPED ON WEB” and 99 “REFUSED.” Across all three retained waves, 16,580
+item cells in each of the selected-wave and phase tables change from `answered`
+to `non_substantive`. Every raw code, correctness value, score, denominator and
+person remains unchanged. The catalog keeps offered response 77 among the
+options and records administrative codes 98/99 in the coding note.
+
+This evidence applies to Q19–Q24. The script does not supply the corresponding
+missing-code labels for Q17/Q18; do not extend those labels by analogy. Their
+existing scoring is retained pending a fielded instrument or explicit codebook.
+
+### AMR-01 — six-country knowledge scoring checked against the report
 
 The [final report](../data/amr-2024/reports/amr-final-report.pdf), Knowledge
-Gains, reports six knowledge questions in six countries. The source contains
-2,419 unique IDs, each with `Time` 0 and 1: 1,280 intervention participants
-and 1,139 controls. For the 1,280 participants, scoring the six answers with
-the `metadata/items.csv` keys and using `Weight` reproduces the report's
-country-level claims. Nigeria's mean gain is 30.6 percentage points and its
-superbug item gains 44.1 points; India's mean gain is 17.5 and its infection
-prevention item gains 24.9; Brazil's statements-about-antibiotics item gains
-16.3. The weighted Tanzania change in the first item is about −1.5 points,
-consistent with the report's rounded −1.4. This checks key and weight
-application against published results, but the report does not supply the
-country/language answer options or a randomized-assignment roster. Do not
-reinterpret its `Group` field as randomized assignment without that evidence.
+Gains, reports six questions in six countries. The source has 2,419 unique IDs,
+each observed at `Time` 0 and 1: 1,280 attendees and 1,139 controls. Independent
+scoring reproduces all 4,838 canonical scores and all 29,028 raw and scored item
+responses. IDs, country, arm, weight, gender and education are stable across waves.
+There are no duplicate person-wave keys.
+
+Using the supplied `Weight` within each country's attendee arm gives these
+mean gains in percentage points:
+
+| Country | Unrounded gain | Gain to one decimal |
+| --- | ---: | ---: |
+| Brazil | 7.101298 | 7.1 |
+| Colombia | 7.107786 | 7.1 |
+| India | 17.502200 | 17.5 |
+| Indonesia | 6.966793 | 7.0 |
+| Nigeria | 30.645253 | 30.6 |
+| Tanzania | 3.499111 | 3.5 |
+
+The Tanzania result falls below the report summary's stated range of 3.6–7.1
+points for Tanzania, Colombia, Brazil and Indonesia (printed p.50; PDF p.52). Preserve the source calculation rather than alter scores to match
+that summary. Nigeria's superbug item gains 44.1 points, India's infection
+prevention item gains 24.9, and Brazil's statements-about-antibiotics item gains
+16.3, matching the highlighted item results. Tanzania's first-item change is
+−1.463932 points. Its separately rounded endpoints are 45.7% and 44.3%; their
+difference gives the report's −1.4 rather than the unrounded change rounded
+to −1.5.
+
+The recovered [deposit README](../data/amr-2024/codebooks/deposit-readme.md)
+limits each weight to its `weight_group`, defined by country and arm. These
+are twelve separate weighting populations, not a supplied pooled six-country
+population weight. The canonical fields retain country, arm and the unchanged
+weight; analyses must select the relevant population before applying it.
+
+The [version 2 paper](../data/amr-2024/papers/amr-paper-v2.xml), Table 3,
+reproduces all six country-by-arm counts. Table 4 reports 3,127 invitations
+and 1,280 attendees. The 1,847 invited nonattenders are absent from this deposit.
+Current attendance labels match the reported attendee sample, but these records
+cannot identify a full invitation intention-to-treat effect. No individual
+assignment or attendance category is changed by this audit.
 
 ### AMR-02 — populate the observed gender field (corrected)
 
@@ -3780,6 +3951,57 @@ binary and stable across waves. No response, score, sample or weight changes.
 The current `dp-learning` AMR analyses do not use `female` as a covariate, so
 their present numerical results are unchanged; future analyses can use the
 source-backed demographic field.
+
+### AMR-03 — source ages differ across interviews (retained source limitation)
+
+Four Indonesian control respondents have inconsistent source ages: `ID_c_91`
+48 to 47, `ID_c_116` 53 to 51, `ID_c_156` 45 to 49, and `ID_c_165` 41 to 40.
+Their source education, weight, country and treatment category remain constant.
+The current canonical AMR analysis does not export age, so this changes no
+current value or estimate. Preserve both source values. Before adding age,
+consult the original field returns; baseline age is the natural measurement
+for a baseline covariate, but neither interview is proven correct by this file.
+
+### AMR-04 — preserve verified phases and recovered measurement evidence (implemented)
+
+The [version 2 paper](../data/amr-2024/papers/amr-paper-v2.xml)
+([DOI 10.12688/wellcomeopenres.24803.2](https://doi.org/10.12688/wellcomeopenres.24803.2)),
+Methods, places baseline interviews before random assignment and invitation.
+Its design description places the final questionnaire at the end of deliberation.
+Source `Time == 0` therefore maps to t0 (`pre_arrival`), and `Time == 1` to t2
+(`post_deliberation`). The phase tables now retain 4,838 scores and 29,028 item
+responses for 2,419 people, with 2,419 scores per wave. No separate arrival
+measurement is established. Timing is `documented_design`; exact interview
+dates, individual lags and survey mode remain unknown. Online deliberation does
+not itself establish survey mode. All selected-wave scores, answers and samples
+are unchanged numerically.
+
+The [English questionnaire and extended data](../data/amr-2024/questionnaires/survey-and-extended-data.pdf),
+expert Table 18 (PDF pp.39–40), supports keys 4/4/5/5/4/5. The recovered
+[PDF codebook](../data/amr-2024/codebooks/harmonized-codebook.pdf),
+`knowledge_1` through `knowledge_6` (PDF pp.32–35), and
+[workbook codebook](../data/amr-2024/codebooks/harmonized-codebook.xlsx)
+agree. These sources now supply the catalog's answer options and keyed text.
+They establish harmonized coding, not the equivalence of unrecovered
+local-language field forms.
+
+There is a source-document conflict: questionnaire Q21 (PDF p.11) asks about
+infection prevention but repeats the preceding question's antibiotic-use options.
+Expert Table 18 and the codebook instead list animal vaccination, handwashing,
+influenza vaccination, hygienic food preparation and “all of the above.” They
+agree on key 5. Preserve that key and all scores, record both versions, and seek
+the fielded forms before attributing the copied options to respondents.
+
+All six knowledge responses are missing in the harmonized source for 46
+person-interviews: 13 control baseline, 17 control post, nine attendee baseline
+and seven attendee post. This does not establish that respondents literally
+left every item blank: the questionnaire offers don't know, and the harmonized
+deposit collapses that response and other nonanswers to missing. Other survey
+answers establish that all 46 questionnaires were observed. Their knowledge
+scores remain zero under the approved rule. Form-presence checks use actual
+questionnaire answers, excluding IDs, demographics, arm labels and weights;
+a wholly unobserved synthetic form remains unknown rather than becoming an
+observed zero. Original missingness reasons cannot be recovered from this deposit.
 
 ### MAR-01 — derived post knowledge zeros need an item-level and wave bridge
 
@@ -4115,6 +4337,62 @@ requires proportion-correct scores that Tanzania does not have. The current
 `dp-distortions` Tanzania reader uses its own source fields, so these existing
 results do not change. The unresolved roster question in TZ-01 remains separate.
 
+### TZ-03 — a negative nonanswer code enters the knowledge index (proposal; not applied)
+
+The first scored knowledge component, `H610` at baseline and `H611` at follow-up,
+contains −99 alongside 0 and 1: 173 baseline and 25 follow-up records have −99.
+The retained [original regression script](../data/tanzania-2015/scripts/replication-regressions.do),
+line 452, identifies this component as “Heard about gas?” The
+[working paper](../data/tanzania-2015/papers/tanzania-working-paper.pdf), PDF p.50,
+and [appendix](../data/tanzania-2015/reports/tanzania_appendix.pdf), PDF p.11,
+print H5_4: what respondents have heard about Tanzania's gas discoveries and
+whether extraction or export has begun. The questionnaire labels code 99
+“DON'T KNOW.” The conversion from that raw field to the derived −99/0/1
+component has not been recovered; the code-number correspondence is not proven.
+
+The numerical defect is independently reproducible: −99 enters the index as an
+extremely low number rather than an incorrect answer or missing value. Rebuilding
+all nine components with their baseline-control means and standard deviations,
+averaging each respondent's available standardized components, then standardizing
+that composite against baseline controls reproduces `H600` and `H601` to within
+1.05e−14. This establishes that the extreme code affects the stored index;
+it is not merely an unusual unused source value.
+
+The proposed correction is to score −99 as zero in this component and rerun the
+same normalization algorithm. With the old calibration fixed, 173 baseline and
+25 follow-up values change. Recomputing calibration changes all 2,001 observed
+baseline scores and all 1,858 observed follow-up scores. Among paired respondents,
+the unadjusted deliberation-minus-control difference in mean gains changes from
+0.208856 to 0.347182 standardized units. These are diagnostic contrasts, not a
+re-estimation of the paper's adjusted or clustered models. Recalibration changes
+the scale as well as individual answers.
+
+**Decision pending:** neither scores nor calibration have been changed. Retain
+the deposited indices as comparison evidence, recover the original recode if
+possible, and decide the proposed first-component correction explicitly. Other
+components contain routing-related missingness; this finding does not justify
+turning every missing component into zero.
+
+The retained [review script](../scripts/review_tanzania_knowledge.R) reproduces
+the current indices and the counterfactual from source components. Its
+[person-level proposed values](../audit/corrections/tanzania-2015/proposed_values.csv)
+and [summary](../audit/corrections/tanzania-2015/summary.csv) preserve both
+calibrations, counts and paired contrasts. These are proposal evidence, not
+approved replacement values.
+
+### TZ-04 — a follow-up-only respondent is labeled as a panel member (proposal; not applied)
+
+Source `HHID == 240301`, canonical respondent `1323`, has missing baseline
+`H600` and observed follow-up `H601`, but `analysis_participants.panel` is true.
+There are 1,858 currently flagged people and 1,857 with both scores. The proposed
+rule requires both measurements for the panel flag, retaining the person and
+observed follow-up. This is separate from TZ-01's unresolved treatment eligibility:
+a group assignment does not supply a missing baseline or establish an arm.
+**Decision pending:** the flag and current counts remain unchanged. The same
+[review script](../scripts/review_tanzania_knowledge.R) checks this identity and
+writes the proposed panel count to the
+[audit summary](../audit/corrections/tanzania-2015/summary.csv).
+
 ### NH-02 — Event year corrected; attendance needs reconciliation
 
 Farrar et al., *Disaggregating Deliberation's Effects*
@@ -4236,31 +4514,27 @@ One participant has unlabeled raw education grade 18. Historical `>= 13` treats
 it as the highest category; a GED/high-school diploma overrides lower grades to
 0.66. Consult the education instrument before treating 18 as missing or a valid
 grade. Historical group high-income share uses collapsed income `> 7`; final
-individual high income uses `> 6`, affecting 25 people. Preserve both stages
-until the intended income definition is established. Briefing exposure uses
+individual high income uses `> 6`, affecting 25 people. Those competing stages
+are superseded by the approved shared median rule below. Briefing exposure uses
 `EVAL5`, scaled `(x - 1) / 4`, not similarly named evaluation items.
 
-**Income follow-up (2026-09-27; proposed, not applied).** Source `ISUM` bands
-12–19 mean $60,000+; 14–19 mean $70,000+. In the 340 historical people, the
-current person flag selects 148 and the group definition selects 123, with 24
-missing. The 25 differing people are nine at exactly $60,000 and 16 in the
-$60,000–70,000 band. Across all 1,493 source records, the difference affects
-60 flags: current high/low/missing counts 333/463/697; $70,000+ yields
-273/523/697. The archived `nic_1/nic2_caseid.dta` directly verifies the earlier
-$70,000+ flag for all 340 people; `06_add_more_vars.R` explicitly replaces it
-with the later $60,000+ definition. This is a documented stage change, not
-assumed to be a typo. The available questionnaires do not establish which
-analyst threshold should be called high income.
+**Income reconciliation (2026-09-28; approved shared normalization).** The
+original group definition used $70,000+ while the later individual flag used
+$60,000+. The source and scripts establish a change between analysis stages,
+not an isolated typo. The user first approved matching the $70,000+ group
+threshold, then superseded that choice with the empirical within-poll median
+rule for education and income in X-13. The retained income categories and
+missingness do not change. One centrally defined individual flag now feeds the
+group share; the group calculation has no separate income cutoff.
 
-Proposed consistent definition: $70,000+ for the individual flag and group
-share, matching the original NIC2 analysis and preserving all 24 current group
-shares. Household-income bands, missingness, raw responses and samples stay
-fixed; cross-poll normalization remains separate. The user was asked to decide
-this poll's threshold. No change is applied before that decision. The deferred
-education-grade-18 issue remains untouched. Separately, race and Hispanic
-ethnicity are distinct source questions: ten white Hispanic historical people
-have `minority=0` under the current race-only construct. This is a definition
-choice, not a demonstrated missing-value or computational error.
+The education-grade-18 question remains a source-label limitation: three source
+records, including one historical participant, contain 18, while the dictionary
+labels end at 17. The original response is retained. The median-based flag places
+that participant above the observed reference median of 15 without assigning a
+new qualification label. Separately, race and Hispanic ethnicity are distinct
+source questions: ten white Hispanic historical people have `minority=0` under
+the current race-only construct. That is a definition boundary, not evidence of
+a missing-value or computational error.
 
 ### NIC2-05: Six cross-poll attitude names point to the wrong indices (catalog corrected)
 
@@ -4385,10 +4659,11 @@ multilateralism, democracy and global altruism also weight component blocks,
 not all raw questions equally. Preserve executed weighting pending memo/script
 reconciliation. Raw recodes, nested means, extremity and knowledge retain
 float32 stages. Peer-gain additions follow `kn11`, Republican, Democratic,
-then `kn2:kn9`, rounding each addition. Group high-income share uses early
-collapsed income `> 7`; final respondent high income uses `> 5`.
-Review `merge02_nuri.R`, `03_data.R` and `06_add_more_vars.R` before combining
-those stage-specific definitions in a revised schema.
+then `kn2:kn9`, rounding each addition. Historical group high-income share used
+early collapsed income `> 7`, while final respondent high income used `> 5`.
+The approved shared median rule in X-13 now replaces both cutoffs with one
+individual flag that also feeds group shares. This income correction does not
+change the nested attitude weighting discussed here.
 
 The [contemporary foreign-policy manuscript](../data/shared/papers/foreign-policy.pdf),
 Table 1, supplies a stronger version check than the index prose alone. Its
@@ -4476,8 +4751,10 @@ The evaluated raw filter selects 217 people. Draft syntax says 223 and then
 removes five to obtain 217, an arithmetic inconsistency. Preserve the evaluated
 sample while checking session/attendance records. The final extremity measure
 uses absolute deviations, not the draft's average of positions. Final income
-retains 19 categories and defines high income as `> 11`; the draft's 19-to-11
-collapse is not implemented. Later political-interest syntax reverses direction:
+retains 19 categories and historically defined high income as `> 11`; the
+draft's 19-to-11 collapse is not implemented. The approved X-13 empirical
+median rule now defines both individual high income and group shares from the
+retained income categories. Later political-interest syntax reverses direction:
 higher values mean less interest, unlike earlier `t1polint`. Consult the fielded
 questionnaire and final analysis specification before changing any of these
 versions; the separate online-primaries battery is not a substitute source.
@@ -4604,16 +4881,18 @@ source has exactly three such values. The missing-age recode is therefore
 supported; no age correction is proposed. The corrected catalog year and
 remaining attendance question are in NH-02. The race-refusal correction is NH-06.
 
-### NH-05: Arrival attitudes cannot reuse the baseline recode blindly
+### NH-05: Historical interim attitude rules superseded by NH-08
 
-The arrival battery has the same three components but preserves raw zero as zero
-rather than the algebraic value 1.25. Arrival Q12 don't-know code 6 or system
-missingness sets the entire airport index to 0.5; Q13 don't-know contributes a
-midpoint component. These rules explain all five arrival-extremity differences
-under a naive repeated-wave implementation. Some post raw zeros are also
-preserved. Verify literal pre/mid/post questionnaires, routing and split-half
-timing before standardizing missingness or response origins across waves.
-NH-08 isolates the raw-zero question and its publication consequence.
+The historical Mid battery used the same three components but preserved raw zero
+as zero rather than the algebraic value 1.25. Mid Q12 don't-know code 6 or system
+missingness set the entire airport index to 0.5; Q13 don't-know contributed a
+midpoint component. These rules explained five interim-extremity differences
+under a naive repeated-wave implementation. Some post raw zeros were also
+preserved. These are historical comparison rules, not the maintained recode:
+the approved NH-08 correction now treats codes 0 and 6 as missing in all three
+waves. `new_haven_attitudes()` applies that reviewed rule to Pre, Mid and Post.
+The Mid questionnaire followed the first deliberative session and is labeled
+`interim_1`, not arrival, in the canonical phase catalog (X-02).
 
 ### NH-06: Race refusal is missing minority status (corrected)
 
@@ -4837,8 +5116,9 @@ paired run of the current main mixed model adds one observation (5,849 to
 .002743934 and the age-per-decade coefficient from -.003229041 to -.003300206.
 `dp-distortions` scripts do not use `ppage` or `meanage`; the
 `dp-deliberately` importer receives this corrected age. The single upstream
-repair does not settle policy for any other age, and the downstream filter
-should be removed only after the remaining age anomaly is reviewed.
+repair did not settle policy for every other age. EURO-06 subsequently resolved
+the remaining Europolis anomaly, and X-11 records removal of the downstream
+clipping rule in favor of corrected upstream ages and an assertion.
 
 ### ZG-05: The Wenchang Main Avenue slot duplicates the main-roads index
 
@@ -4948,9 +5228,9 @@ support selection and attrition comparisons without rebuilding discarded
 records. MAR-02 supplies a concrete 1,275-row source bridge for this requirement.
 
 
-**Pre-arrival coverage audit (2026-09-27).** At least 31 of the original 34
+**Pre-arrival coverage audit (updated 2026-09-28).** At least 33 of the original 34
 analytical catalog IDs retain a confirmed pre-arrival or online pre-start
-measurement, representing 30 distinct studies because the two Primaries IDs
+measurement, representing 32 distinct studies because the two Primaries IDs
 share a raw source. This counts retained source data, not verified coverage
 in the current canonical score export. Original wave suffixes are not evidence
 of phase. For online studies, a separately collected questionnaire before
@@ -4983,13 +5263,15 @@ start of deliberation would instead be t1.
 | tanzania-2015 | Household baseline before assignment/event; working paper sections 3.1–3.2. |
 | america-in-one-room-2019 | July 9–August 5 baseline before September 19–22 event; `design/a1r-2019-norc-methods.pdf`, PDF pp.3–4. |
 | a1r-climate-2021 | August baseline before September online events; `design/a1r-climate-methods.pdf`, PDF p.3. |
+| bulgaria-crime-2002 | National survey before invitations; contemporary account and original national-survey source establish the baseline; BGC-07. |
+| amr-2024 | Baseline before random assignment and invitation; version 2 paper `papers/amr-paper-v2.xml`, Methods. Final measurement is at event end; AMR-04. |
 
 The remaining coverage questions are not established absences. Bulgaria
 2007 documents 1,344 before-event interviews in its report (PDF p.2), but that
 raw respondent dataset has not been identified. Bulgaria Crime 2002 was initially unresolved; BGC-07 below establishes its
 pre-arrival baseline using contemporary reporting and the original national
-survey. AMR 2024 retains 2,419 pre/post records, but precise
-remote-baseline versus start-of-event timing remains unverified.
+survey. AMR 2024 now has verified pre-invitation and event-end phases for
+2,419 people; exact interview dates and individual lags remain unavailable.
 
 At least 22 confirmed IDs retain recruitment respondents/nonattendees, and
 four more retain broader online controls/calibration populations (BTP 2007,
@@ -5014,13 +5296,15 @@ unless explicitly described otherwise. `t0` means before arrival or, for an
 online study, before the discussion experiment starts; it does not establish
 that every respondent completed an interview or subsequently participated.
 
-The proportion-correct phase export covers **30 catalog IDs representing 29
-distinct studies**. The online and historical Presidential Primaries IDs are
+The proportion-correct phase export now covers **32 catalog IDs representing 31
+distinct studies**, including AMR's verified t0/t2 measurements. The online and
+historical Presidential Primaries IDs are
 two projections of the same experiment. Tanzania adds one study with a
 standardized knowledge index rather than a proportion-correct battery: across
-both scales there are **31 IDs and 30 distinct studies**. The alphabetically
-first review covers 14 IDs/13 studies; the Michigan-through-Zeguo review below
-covers 17 additional IDs, including Tanzania. These are exported study/phase
+both scales there are **33 IDs and 32 distinct studies**. The original alphabetical
+review covered 14 IDs/13 studies; the Michigan-through-Zeguo review below covered
+17 additional IDs, including Tanzania. BGC-07 and AMR-04 supply the two later
+verified studies. These are exported study/phase
 coverage counts, not the broader retained-source count above and not counts
 of complete respondent panels.
 
@@ -5058,7 +5342,7 @@ can be genuine even where only some respondents have answers to it.
 | UK Election 1997 | `data/uk-general-election-1997/papers/british-election-paper.pdf`, pp.3–4: January initial interviews/recruitment precede April 26–28 weekend; text explicitly calls initial interview "time1". `R/respondent_election.R`: `inflat/intrst/ukempl` and twelve party-placement answers, suffixes1/2. | Direct pre-arrival. No separate arrival questionnaire identified. |
 | UK Health 1998 | `data/uk-health-1998/reports/uk-health-final-report.pdf`, p.4: household interview/self-completion establishes benchmark **before invitation**; questionnaire repeated at weekend end. `R/respondent_health.R`: `sopha:sophf`, suffixes1/2. | Direct pre-arrival. An arrival briefing video is documented; that does not establish an arrival knowledge questionnaire. |
 | UK Monarchy 1996 | `data/uk-eu-1995/papers/deliberation-attitude-constraint.pdf`, p.8: Monarchy 1996 explicitly included among five polls sharing household-baseline-before-invitation design; p.24 identifies its sample. `R/respondent_monarchy.R`: `Q5A:Q5H,Q8A` then `R5A:R5H,R8A` for historical scoring. | Cross-poll direct pre-arrival, not a monarchy-specific timestamp check. No separate arrival questionnaire identified. |
-| Vermont 2007 | `data/vermont-energy-2007/reports/vermont-final-report.pdf`, p.12: initial interview T1, arrival T2, departure T3. `questionnaire-pre.pdf`, p.10: invitation follows last question. Maintained baseline `Q77:Q85`; departure `Q030T3:Q038T3`. | Direct pre-arrival. Full nine-item arrival counterpart`Q030T2:Q038T2` retained, with146 respondents having an answer; currently unscored in phase export. |
+| Vermont 2007 | `data/vermont-energy-2007/reports/vermont-final-report.pdf`, p.12: initial interview T1, arrival T2, departure T3. `questionnaire-pre.pdf`, p.10: invitation follows last question. Maintained baseline `Q77:Q85`; departure `Q030T3:Q038T3`. | Direct pre-arrival. Full nine-item arrival counterpart`Q030T2:Q038T2` retained, with146 respondents having an answer; now scored in the phase export. |
 | WTU 1996 | `data/shared/papers/utilities-paper.pdf`, p.4: telephone interview before invitation and questionnaire repeated at event end. `R/respondent_utilities.R`: `SOURCE/USE/RT/SMOG/SETRT`, suffixes1/2. | Direct pre-arrival. No separate arrival questionnaire identified. |
 | Zeguo 2005 | `data/zeguo-2005/papers/china-zeguo-bjps.pdf`, p.3: March 2005 initial survey before April 9 event. `R/respondent_zeguo.R` reads reconstructed `pre_d3043:pre_d3046` and `post_d3043:post_d3046` components, retaining the explicit knowledge-reconciliation ledger. | Direct initial-survey baseline. No separate arrival knowledge questionnaire identified; source-version reconciliation remains separate from timing. |
 
@@ -5068,40 +5352,74 @@ missing published arrival score can be our extraction limitation even when
 original answers remain in the repository. Do not move pre-arrival scores to
 t1 merely to make a requested arrival-to-exit comparison available.
 
-**Retained arrival answers that are not currently scored in the phase view.**
-The wave catalog records these as `source_exists_but_not_exported`, distinguishing
-them from an unknown phase or a phase without recovered data. This status does
-not create a new scored battery or silently substitute its values downstream.
+**Verified arrival answers now scored in the phase view (2026-09-28).**
+The five retained sources below now have `score_exported` status. Existing
+selected-wave scores remain unchanged; new phase scores use explicit battery
+identities and questionnaire-presence evidence.
 
 | Poll | Recovered source and coverage | Required distinction before scoring |
 | --- | --- | --- |
 | California 2011 | `data/california-whats-next-2011/survey.parquet`: arrival`t2q27:t2q34`. First five are counterparts of current telephone`t1`/departure shared bank; all eight form the separate report battery in`metadata/california_knowledge_items.csv`. Reports/questionnaires remain under that poll folder; CA-03 gives item wording and count checks. | Keep five-common-item and eight-report-item definitions separate. The existing eight-item supplemental export is not a silent replacement for the five-item selected-wave bank. |
-| Europolis 2009 | `data/europolis-2009/survey.sav`: six common arrival `V2Q43/V2Q44/V2Q46/V2Q47/V2Q49/V2Q50`; three arrival-only `V2Q45/V2Q48/V2Q51`. `reports/europolis-knowledge.pdf`, p. 1; research-paper Table 2/printed p. 11; EURO-05. | Six-item baseline/arrival/exit comparisons and nine-item arrival/exit comparisons have different denominators and coverage. Preserve the three one-answer baseline publication discrepancies rather than recoding to match the paper. |
-| Denmark 2000 | `data/denmark-euro-2000/arrival.sav`:363 unique`DELNR`, linked to baseline`delnr`;358 overlap the current departure IDs. Nine arrival fields`S4_1:S9_1,S11_7_1,S11_9_1,S11_11_1`. Paper`data/denmark-euro-2000/papers/deliberative-democracy-euro.pdf`, Table 9/PDF p. 19; DK-02 distinguishes the current359 departure records. | The original arrival file and dictionaries are now public; DK-05 records exact-byte preservation. Scoring and the three-wave join remain unfinished. Do not equate363 arrival IDs,359 departure IDs and358 overlap, or infer missing identities from the anonymous deposited battery. |
+| Europolis 2009 | `data/europolis-2009/survey.sav`: six common arrival `V2Q43/V2Q44/V2Q46/V2Q47/V2Q49/V2Q50`; three arrival-only `V2Q45/V2Q48/V2Q51`. `reports/europolis-knowledge.pdf`, p. 1; research-paper Table 2/printed p. 11; EURO-05. | Six-item baseline/arrival/exit comparisons and nine-item arrival/exit comparisons have different denominators and coverage. Preserve the three one-answer baseline publication discrepancies rather than recoding to match the paper. The former questionnaire-post.pdf was a misfiled content duplicate of Tomorrow’s Europe 2007 and has been removed (EURO-01); actual V2/V3 source labels and the knowledge report establish this battery. Metadata preserves abbreviated source distractor labels for V2Q48/V2Q51 instead of inventing their missing wording. |
+| Denmark 2000 | `data/denmark-euro-2000/arrival.sav`:363 unique`DELNR`, linked to baseline`delnr`;358 overlap the current departure IDs. Nine arrival fields`S4_1:S9_1,S11_7_1,S11_9_1,S11_11_1`. Paper`data/denmark-euro-2000/papers/deliberative-democracy-euro.pdf`, Table 9/PDF p. 19; DK-02 distinguishes the current359 departure records. | The original arrival file and dictionaries are now public; DK-05 records exact-byte preservation. The arrival scores now join by DELNR; 358 of the 359 existing phase participants
+have an arrival form, and DELNR 203 remains missing. Do not equate363 arrival IDs,359 departure IDs and358 overlap, or infer missing identities from the anonymous deposited battery. |
 | Vermont 2007 | `data/vermont-energy-2007/survey.sav`: all nine`Q030T2:Q038T2`, with146 respondents having at least one answer. Final-report PDF p. 12 explicitly identifies arrival. | Use the reviewed report-based keys, including VT-01's renewables decision, while retaining the instrument ambiguity; do not alter keys simply to expose the wave. |
 | Michigan 2009 | `data/michigan-2009/survey.parquet`: four common arrival placements`t2q10/t2q11/t2q13/t2q14`, plus arrival-only standard-of-living placements`t2q7/t2q8`. There are no arrival factual counterparts`t2q38:t2q42`. Final report PDF p. 13 marks the two added placements as arrival. | This is **partial** arrival coverage, not the complete current nine-item bank. The two added items have196/209 correct responses; dividing by310 reproduces report63.2%/67.4%. Report11-item baseline combines telephone facts/four placements with two arrival-only placements. Do not silently turn that mixed-time bank into a uniform baseline. |
 
-**Open implementation work: arrival comparisons.** This is a data-build task,
-not a manuscript finding. Build three-wave comparisons from questions asked at
-all three interviews: five items for California, six for Europolis, nine for
-Denmark, nine for Vermont, and four placement items for Michigan. Keep the
-expanded California eight-item and Europolis nine-item arrival/exit batteries
-separate. Michigan’s two arrival-only placement items cannot enter a telephone
-to arrival comparison; the missing arrival factual questions must not be scored
-as incorrect.
+**Completed upstream implementation: arrival comparisons.** `R/analysis_arrivals.R`
+adds the five-question California, six-question Europolis, nine-question Denmark
+and nine-question Vermont arrival scores to their existing comparable batteries.
+Michigan receives a separate four-placement battery at telephone, arrival and
+exit; its absent arrival factual questions are not borrowed from telephone or
+scored as incorrect. Separate expanded batteries retain California's eight
+arrival/exit items, Europolis's nine, and Michigan's six placements. The latter
+two added Michigan placement questions never enter a telephone comparison.
 
-For each poll, check the literal question wording and answer options against the
-retained instruments before reusing an answer key. Establish questionnaire
-presence from the full form, so blanks within an observed questionnaire score
-zero and wholly absent questionnaires remain missing. Join interviews using
-verified respondent IDs, report unmatched records and counts at every step,
-and retain people outside complete three-wave samples in the upstream tables.
-Compare item counts and aggregate scores with the cited reports, preserving
-reviewed coding decisions unless new evidence supports a correction. Publish
-the resulting item and score records in typed `dp-data` outputs; then rebuild
-`dp-learning` comparisons and replace manuscript estimates. Resolve substantive
-ambiguities with the user. Do not substitute pipeline progress notes for those
-results in the manuscript.
+The arrival expansion preserved the 115,707 original phase-score rows and added
+17,439 rows, including explicit absent-wave records. AMR-04 subsequently adds
+4,838 unchanged source scores, bringing current phase-score coverage to 137,984
+rows. The typed `analysis_phase_item_responses` table now contains 896,032 rows:
+the earlier 867,004 mapped records, including 133,869 added arrival item/battery
+rows, plus 29,028 AMR responses. Documented nonanswer-status corrections change
+status labels, not the underlying responses or numerical scores.
+Its key includes source cohort, respondent, battery, original survey instance,
+and canonical question ID. Multiple batteries can reuse an item without implying
+that their denominators or populations are interchangeable. The question catalog
+adds eight arrival-only questions with their wording, keys and retained sources.
+Score-only Marousi measurements remain explicitly score-only. AMR contributes
+verified pre-invitation and event-end measurements, with no arrival wave inferred.
+
+| Source cohort | Retained people | Observed arrival forms | Comparable battery |
+| --- | ---: | ---: | --- |
+| California Cor-Sood | 396 | 396 | Five common items; separate eight-item arrival/exit battery |
+| Europolis historical recruitment source | 4,384 | 348 | Six common items; separate nine-item arrival/exit battery |
+| Europolis Cor-Sood | 348 | 348 | Same source answers with the separate source-cohort identity retained |
+| Denmark Cor-Sood | 359 | 358 | Nine common factual/party-placement items |
+| Vermont Cor-Sood | 146 | 146 | Nine common items using the approved final-report key |
+| Michigan Cor-Sood | 310 | 309 | Four common placements; separate six-placement arrival/exit battery |
+
+Michigan source ID 5000 (source row 306) has no answers anywhere in its arrival
+questionnaire; both arrival scores remain missing. Denmark's DELNR 203 has no
+matched arrival record. The other five records among Denmark's 363 raw arrival
+IDs remain in the preserved source, outside the existing 359-person analytical
+cohort. California's previously approved 412-person eight-item export also remains
+available unchanged; the new common phase view retains its existing 396 people.
+No source person is silently added to or removed from a previously defined cohort.
+
+The independent count checks reproduce Europolis six-item arrival 27.7778%,
+nine-item arrival 29.6296% and nine-item exit 37.8033%. California's 396-person
+eight-item totals are 1,900 correct arrival answers and 2,430 correct exit answers,
+matching CA-03. Michigan's two added arrival items have 196 and 209 correct
+responses, matching MI-02. Denmark's six arrival facts reproduce Table 9's
+71%, 78%, 66%, 83%, 55% and 91% when computed over each item's observed responses
+(358–361 responses in the 363-row source); the canonical score instead retains
+the established fixed-nine-item denominator within an observed questionnaire.
+
+These additions enable new comparisons upstream. A downstream analysis must
+choose its comparable battery and source cohort explicitly; publication-era
+item discrepancies, unknown group assignments and the accepted Vermont key
+ambiguity remain documented above. They are not grounds to recode respondents
+until a report is reproduced by construction.
 
 Tomorrow's Europe is not in this missing-arrival list: its arrival score is
 already exposed in `analysis_phase_scores`, although arrival item responses
@@ -5132,7 +5450,7 @@ retain the bank's documented fixed-denominator scoring. Keep positive evidence
 and unknown presence separate; missing source answers alone do not establish
 nonattendance.
 
-**Main Primaries cohort and duplicate correction approved; implementation in progress.**
+**Main Primaries cohort and duplicate correction approved and implemented.**
 The previous main known-group online projection has 315 people: 249 meeting
 attendees and 66 nonattendees. Its historical Primaries 217-person projection
 is a subset of those same 315 people, not a second study, and aligned item
@@ -5162,18 +5480,21 @@ people or an additional study. The downstream reader consumes upstream typed
 study identities, attendance and questionnaire-presence fields; it must not
 recreate these facts from group assignment or a positive quiz score. The
 percentage-point comparisons above document the previous known-group sample
-choices; they are not an unmeasured gain estimate for all 239 pairs. Final
-implementation and resulting main-analysis comparisons must separately report
-the effect of removing nonattendees, requiring observed questionnaires and
-removing duplicate study/person representations. Answer keys remain unchanged.
+choices; they are not an unmeasured gain estimate for all 239 pairs. The current
+`dp-learning` `R/learning.R` implements this selection using the upstream phase
+tables: it requires observed t0/t2 questionnaires and attendance, removes the
+historical alias of the same study, and asserts one poll per study in the final
+panel. The cohort correction is therefore implemented, not pending. The sample
+comparisons above distinguish its attendance and questionnaire requirements;
+they do not attribute the change in a pooled model estimate to each requirement
+separately. Answer keys remain unchanged.
 
-The Denmark arrival file was verified in the retained local source checkout
-at `/Users/soodoku/Documents/GitHub/dp-data/vault/cdd/data/Denmark/data/t1.sav`.
-It is absent from the isolated public-file checkout used for this audit.
-`source_exists_but_not_exported` therefore records recovered source evidence, not
-a claim that an arrival answer table is already delivered by the public
-release. Publishing those poll-folder answers requires its own registered
-source extraction and identity checks.
+The Denmark arrival file is now retained publicly as
+`data/denmark-euro-2000/arrival.sav`, with registered source and dictionaries
+(see DK-05). The phase build now exports its verified arrival scores and item
+responses; the earlier `source_exists_but_not_exported` status is superseded.
+The 363 arrival identities and their 358 overlaps with departure records remain
+distinct from a complete three-wave analysis sample.
 
 ### X-03: Typed missingness and explicit denominators
 
@@ -5189,6 +5510,34 @@ in groups 9707 and 9727; NH-06 shows why the minority entropy can remain
 unchanged when refusal is restored to missing. A change to these shared
 formulas must be assessed across all polls and frozen separately from the
 poll-level source corrections.
+
+**Observed-peer denominator correction (accepted 2026-09-28).**
+Direct enumeration of every person's other group members reproduces the
+current formula but finds 194 incorrect observed peer shares in 14 groups:
+Zeguo 78 values in six groups, NIC 1996 83 in six groups, and BTP Health and
+Education 33 in two groups. The other 18 reconstructed polls agree within
+`1e-10`. This comparison preserves each poll's composition population, including
+the full 299 source records used for BTP General Election's group summaries.
+
+For example, Zeguo group 5216 has one woman, seven men and two missing genders.
+For the woman (historical ID 52097, source ID 97), the old formula is
+`((1/8)*10 - 1)/9 = 1/36`, about 0.02778. Her seven peers with observed gender
+are all male, so their observed female share is zero. The proposed shared rule
+is `(observed female count - focal female contribution) / observed peer count`.
+It yields missing if no peer gender is observed. Missing focal gender supplies
+no subtraction from either observed count; it does not prevent describing the
+other respondents. That additionally supplies peer shares for 16 previously
+missing cases (eight Zeguo, six NIC, two BTP Health and Education). All 5,869
+exported person identities remain unchanged. Existing and candidate values
+are within [0, 1]; this is a denominator error, not an observed range violation.
+The maximum change among previously observed values is 1/36. Neither the
+individual gender recodes nor the inclusive group female shares change.
+The independently enumerated peer counts and approved values are retained in
+`audit/corrections/shared-peer-composition/`. The user noted the missingness
+assumption behind group means. These are means among observed peers. Interpreting
+them as the entire group's mean requires the unobserved peers to have the same
+mean as the observed peers; MCAR within a group is sufficient but stronger than
+this mean-equality requirement. Missingness counts remain part of the evidence.
 
 A fresh check of the 21-poll reconstructed aggregate on 2026-09-27 also
 identifies an absent-category problem. `historical_entropy(value, 4L)` indexes
@@ -5323,14 +5672,14 @@ export and numerical exception audit explicitly before changing downstream use.
 
 ### X-07: Audit artifacts can lag a source relocation
 
-The older downstream inventory and porting-review tables describe files before
-the `dp-learning`/`dp-nireland` relocations. The optional source-audit script also
-still contains a text comparison to the former local Northern Ireland roster.
-Its tracked-file inventory rejects files deleted in an uncommitted working tree.
-Refresh that audit after the source migrations are committed and adapt the
-obsolete roster comparison to the external source contract. This is tooling
-maintenance, not a respondent-data or estimate change; do not present the old
-inventory as an up-to-date dependency census.
+The older downstream inventory and porting-review tables described files before
+the `dp-learning`/`dp-nireland` relocations. The 2026-09-28 refresh updates the
+tracked-file inventory and fixes the optional text comparison to the removed
+local Northern Ireland roster: it records local/upstream presence and leaves
+text equality missing when the local copy is absent. An absent upstream file
+still fails. These artifacts describe file presence, not a complete proof of
+runtime dependencies or adoption of current canonical measures. No respondent
+data or estimates change through this tooling repair.
 
 ### X-08: Evidence needed before accepting a change
 
@@ -5455,7 +5804,7 @@ dp-learning's `R/knowledge.R`, `R/sources.R` and recode ledger:
 | NIC `1996 - ppage` | Implemented upstream as `age@nic-03-v2`; downstream inversion removed (NIC-03). |
 | NIC online mode forced to zero | Corrected upstream to face-to-face; downstream override removed (NIC-03). |
 | Ages outside16–100 made missing | Zeguo age 1 and Europolis age 109 were reviewed using paired answers and the birth-year distribution (ZG-04 and EURO-06). Corrected derived ages now range from 18 to 98; `dp-learning` PR #4 removes the reader-side clipping and retains an assertion. Raw answers remain available upstream. |
-| Greece post knowledge zero made missing when baseline is positive | Requires source/instrument evidence for nonresponse; a surprising zero score alone does not establish missingness. Do not promote this heuristic as a verified correction. |
+| Greece post knowledge zero made missing when baseline is positive | Superseded by MAR-02's source-backed questionnaire-presence rule: absent forms remain missing, while blank answers within observed forms score zero. The old zero-score heuristic is not the maintained rule. |
 | Greece education code7 made missing | Verify source category labels and export missing-value convention before centralizing. |
 | Knowledge rounded to10decimals | Centralize documented numeric storage handling and test exact boundaries; preserve distinct knowledge definitions. |
 | Primaries exact duplicate rows dropped | Use upstream canonical person identities and named samples instead of downstream whole-row deduplication (PR-03). |
@@ -5464,8 +5813,8 @@ dp-learning's `R/knowledge.R`, `R/sources.R` and recode ledger:
 Model fitting and explicitly chosen estimands remain analysis work. Reader-side
 poll repairs, hidden rekeys and missing-value guesses do not. Existing downstream
 source pins still select historical inputs; migrating them requires a coherent
-upstream contract and exact impact checks, including the known SM-04 linkage
-failure. NIC's proposal is the first coordinated reader-removal case, not a
+upstream contract and exact impact checks. SM-04 resolved the positional-link
+failure through verified historical IDs. NIC's correction was the first coordinated reader-removal case, not a
 claim that the full downstream migration is already complete. The remaining
 scope also includes study-specific recodes in dp-distortions' out-of-sample
 pipeline; its 24 frozen inputs are already centralized, but the transformations
@@ -5481,9 +5830,9 @@ while BTP National 2003 uses the opposite direction. The primaries source's
 earlier stored `t1polint` is a **binary** very-interested flag, so it is not
 an independent copy of either four-category scale. UK General Election 1997
 has five substantive categories, but its historical score collapses them
-to four levels. UK Monarchy source code 6 means “not answered”; its
-historical respondent recode can retain that out-of-range code, which must
-not enter a common 0–1 measure.
+to four levels. UK Monarchy source code 6 means “not answered”; the historical
+recoder retained it, but the approved UKM-06 correction now makes it missing.
+It does not enter the common 0–1 measure.
 
 The versioned `political_interest_t1_harmonized` respondent measure uses raw
 baseline answers and fixed questionnaire endpoints. Zero denotes least
@@ -5573,8 +5922,8 @@ briefing materials sent to registered delegates on September 8, 2021 (registered
 before September 2), plus printed materials if requested. Registration and
 materials receipt are not equivalent to attendance, and receipt by every invitee
 is not established. The report is retained at
-`data/a1r-climate-2021/design/a1r-climate-methods.pdf`. Preserve this study's
-`invited_nonattender` label. Neither study's current analysis scores contain exit
+`data/a1r-climate-2021/design/a1r-climate-methods.pdf`. The later A1RC-01 correction labels this study's noncompleters
+`invited_noncompleter`; their invitation is documented but nonattendance is not. Neither study's current analysis scores contain exit
 knowledge observations for its nonattender group. Zero gain would be an imputation,
 not an observed outcome. Invitation or materials could induce learning without
 attendance, violating the exclusion restriction for an instrument intended to
@@ -5615,3 +5964,104 @@ interview stages. Original recruitment respondents are preserved for later
 identity/attendance reconciliation; their missing event status is not inferred
 from an ID mismatch. Exact material-receipt dates remain unavailable, but the
 organizers describe briefing after the initial survey and invitation.
+
+
+### X-13: One empirical median definition for individual and group variables
+
+**Status: approved by the user on 2026-09-28.** High/low education and income
+now use each poll's observed participant median. The reference population is
+its unique `historical-polardata` participants, excluding missing responses.
+Values strictly above that median are high; values at or below it are low.
+Tied categories are never split, so the groups need not be equally large.
+If no reference value is observed, the flag remains missing. A source record
+outside the reference population is scored against that same fixed cutoff;
+changing row order or selecting a discussion group does not redefine it.
+
+Normalization follows the poll-specific source recodes. Reviewed ordered
+education and income values remain available. Australia, New Haven, NIC2 and
+San Mateo retain finer ordered education distinctions for this comparison
+rather than collapsing college and graduate education first; the exact source
+codes, missing codes and reviewed ordering are in
+`metadata/education_normalization.csv`. New Haven's trade/technical category
+retains its reviewed placement with some college. NIC2 retains the existing
+diploma/GED override and does not invent a label for raw education code 18.
+For the remaining polls the existing reviewed education ordering is used.
+
+This replaces separate cutoffs for individual income and group income shares.
+The older mismatch occurred in UK Health, UK Election, New Haven, NIC2, BTP
+National, BTP General Election and BTP Presidential Primaries. For example,
+UK Election used £20,000+ for individuals and £32,000+ for groups; the two BTP
+National/Primaries individual flags used $50,000+ while their group shares used
+$75,000+. These repeated differences reflect historical analysis stages, not
+proof of independent typographical errors. The user chose a common definition
+and separate normalization rather than retaining the conflicting stages.
+
+Group summaries use the normalized individual flags and their documented
+composition populations; they never recalculate a median within a group.
+Existing group membership and missing-answer denominator rules are preserved.
+The reviewed-US composition population can include source participants outside
+the final wide export, so its population remains distinct from the fixed
+median reference population. Knowledge scores, source answers, ordered
+education/income values, ages, attitudes and sample memberships are unchanged
+by this normalization. `highinc`, `bettered` and `phighinc` remain wide-export
+aliases; their canonical definitions are versioned as poll-median definitions.
+
+The independently derived expected values in
+`audit/corrections/shared-demographic-medians/approved_values.csv` compare
+against the original benchmark by poll and historical identity. These are
+normalization choices; downstream estimates using either binary flag must be
+regenerated and described using the new definitions. No downstream reader
+should recreate its own income or education cutoff.
+
+### X-14: The highest education category is not a uniform degree indicator
+
+**Status: source review completed; UK Health corrected in UKH-13. Other
+degree-definition changes require a poll-specific decision.** The analysis
+builder's fallback `ba = 1(education == 1)` gives a common degree label to
+different education constructs. The downstream `dp-learning` models also label
+the highest `educ3` category "BA or more" independently of `ba`. Correcting the
+degree flag therefore does not correct those model labels or their categories.
+Keep reported qualifications, an explicitly defined degree indicator, and
+within-poll relative education separate.
+
+The three older British polls ask for a single highest qualification, not every
+qualification held. A degree response establishes affirmative degree evidence;
+a professional or nursing response does not establish that the person lacks a
+degree. These differences are not sufficient evidence of three coding typos.
+
+| Poll | Current highest-category positives | Explicit degree responses | Evidence and interpretation |
+| --- | ---: | ---: | --- |
+| UK Monarchy 1996 | 47 | 24 | `codebook.pdf`, page 16, B12b; raw `B12B == 10`. The other 23 are teaching (5), nursing (4), or professional qualifications (14). One attendee's `B12B == 14` is unanswered despite an observed school-qualification response. No separately documented degree flag was found. |
+| UK Election 1997 | 50 | 19 | `codebook.txt`, lines 1182–1204, B12b; raw `educb == 9`. The other 31 are nursing (9), professional (14), or other technical/business qualifications (8). The instrument says to select the qualification the respondent considers highest, with explicit tie-breaking instructions. |
+| UK Crime 1994 | 43 | 29 | `codebook.txt`, lines 748–797, B12 and EDUC7; raw `educ == 11`. The source explicitly calls EDUC7 category 6 "Degree or equivalent," including three teaching and 11 professional qualifications. The broader grouping is intentional. |
+
+For UK Election, the stored but undocumented source field `educolle` exactly
+matches `educb == 9` across all 1,210 source respondents. It is corroborating
+evidence for an explicit-degree-response rule, not a separately asked degree
+question. It also turns ten qualification nonanswers into zero, including five
+attendees (IDs 8720, 3423, 1823, 4024, 419); preserve these as missing. The proposed
+highest-degree-response rule gives 19 positive, 251 negative, and five missing
+attendee responses. Relative to the current proxy, 31 positive values become
+negative, five negative values become missing, and one missing value becomes
+negative (ID 1717 has an observed no-qualification response). This proposal
+preserves the ordered education variable and its median classification. The
+user has been consulted; it has not yet been implemented.
+
+Other source-specific limitations also need explicit treatment before calling
+this a uniform degree measure:
+
+- Australia: 141 of 184 top-category respondents report the inseparable
+  college/technical/university category; 43 report a postgraduate degree.
+  The broader category does not identify bachelor's-degree completion.
+- NIC2: 112 of 272 top-category respondents report some college (codes 13–15),
+  159 report undergraduate/postgraduate education (16–17), and one has code 18,
+  whose label remains unavailable. Do not invent a meaning for code 18.
+- Europolis: education records age at leaving full-time education. Six top
+  values arise from age 35 or the current-student imputation capped at 35;
+  neither establishes a degree. This is a schooling-duration measure.
+- Zeguo: two respondents report "University." The recovered category label
+  does not explicitly establish completion or degree attainment.
+
+These counts refer to unique historical-polardata participants. No degree
+recodes for these additional polls have been applied. Their raw answers and
+the approved relative-education normalization remain available for review.

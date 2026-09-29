@@ -6,7 +6,7 @@ build_nic2_derived <- function(survey, values) {
   group <- 9200 + as.numeric(unclass(survey$group))[rows]
   attitudes <- nic2_attitudes(survey, 1L)[rows, ]
   result <- historical_derived_columns(values, group,
-    as.numeric(values$hhincome > 7), attitudes
+    attitudes
   )
   item_sd <- purrr::map(attitudes, function(value) {
     as_historical_float(historical_group_summary(value, group, stats::sd))

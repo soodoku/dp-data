@@ -54,9 +54,9 @@ election_demographics <- function(survey) {
     age = dplyr::na_if(age, -7),
     education_four = education,
     education_three = collapse_historical_education(education),
-    higher_education = as.numeric(education >= .33),
+
     household_income = income,
-    high_income = as.numeric(income > 2),
+
     political_interest_t1 = recode_source_values(survey, "int1",
       c(0, .33, .66, 1, 1), c(-9, -8)
     )

@@ -39,7 +39,12 @@ test_that("NIC respondent fields match historical or approved values", {
   nic <- audit[audit$poll_id == "nic-1996", ]
   expect_equal(nrow(nic), 45L)
   expect_true(all(nic$respondents == 466L))
-  expect_equal(sum(nic$value_differences), 738L)
+  changed <- nic[nic$value_differences > 0L, ]
+  expect_setequal(changed$legacy_field, c("ppage", "attextreme2", "bettered"))
+  expect_equal(changed$value_differences[
+    match(c("ppage", "attextreme2", "bettered"), changed$legacy_field)
+  ], c(454L, 284L, 125L))
+  expect_equal(sum(nic$value_differences), 863L)
   expect_true(all(nic$unexplained_differences == 0L))
   expect_equal(sum(nic$missingness_differences), 4L)
 })

@@ -112,9 +112,9 @@ utility_demographics <- function(survey, poll_id) {
     age = response("age", 16:110),
     education_four = education,
     education_three = collapse_historical_education(education),
-    higher_education = as.numeric(education >= .66),
+
     household_income = income,
-    high_income = as.numeric(income > 4)
+
   )
 }
 

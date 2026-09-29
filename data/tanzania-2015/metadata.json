@@ -153,6 +153,16 @@
       "local_artifact_id": null,
       "accessed": "2026-09-24",
       "notes": "Official source; publication date is not necessarily event date."
+    },
+    {
+      "reference_id": "tanzania-original-regressions-reference",
+      "poll_id": "tanzania-2015",
+      "kind": "script",
+      "title": "Original deposited regression and table construction script",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/6277231",
+      "local_artifact_id": "tanzania-original-regressions-artifact",
+      "accessed": "2026-09-28",
+      "notes": "Original deposit filename 11 regressions.do. Retained unchanged as coding evidence, not a production builder. Labels H61 and exposes the range scaling used by the published item table; raw cleaning syntax remains unavailable."
     }
   ],
   "material_coverage": [
@@ -282,6 +292,21 @@
       "publication_status": "published",
       "notes": "Unchanged public OOS source; upstream centralization authorized. Study tanzania-2015. Original URL in oos_sources.",
       "relative_path": "reports/tanzania_appendix.pdf"
+    },
+    {
+      "artifact_id": "tanzania-original-regressions-artifact",
+      "poll_id": "tanzania-2015",
+      "artifact_type": "script",
+      "title": "Original deposited regression and table construction script",
+      "location": "data/tanzania-2015/scripts/replication-regressions.do",
+      "source_id": "tanzania-original-regressions",
+      "original_archive_path": null,
+      "sha256": "1e238b0f91bbe35f9c72936060404fdab522c3dcab03ce7f9db78c2cc9be9241",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original deposit filename 11 regressions.do. Retained unchanged as coding evidence, not a production builder. Labels H61 and exposes the range scaling used by the published item table; raw cleaning syntax remains unavailable. Source URL: https://dataverse.harvard.edu/api/access/datafile/6277231",
+      "relative_path": "scripts/replication-regressions.do"
     }
   ],
   "document_previews": []

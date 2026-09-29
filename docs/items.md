@@ -8,7 +8,8 @@ respondent batteries to the 23 Cor--Sood item batteries through
 `historical_item_id` and `cor_item_id`. The two sets overlap within 16 polls:
 170 historical entries and 177 Cor--Sood entries resolve to 224 distinct
 questions in 28 polls. The catalog also includes 21 questions from three
-additional control polls, for 245 questions in 31 polls altogether. Northern
+additional control polls and eight arrival-only questions, for 253 questions
+in 31 polls altogether. Northern
 Ireland's T3 participant and control answers map to its existing seven item IDs.
 The same question in
 two *different* polls remains two records. Wave 2 columns and accepted values remain in
@@ -26,10 +27,12 @@ offered choices when
 recoverable; administrative codes such as refused, skipped, and not asked are
 excluded;
 `correct_codes` records the scored baseline source code or accepted range;
-`correct_answer` gives the readable answer when recovered. The retained climate
-and antimicrobial-resistance reports list the questions but not the offered
-choice labels or keyed answer text. Those entries retain the scored code,
-mark the unavailable text, and explain the gap in `coding_note`. For open
+`correct_answer` gives the readable answer when recovered. The recovered AMR expert key and codebook supply all six answer sets.
+The original climate preparation script supplies the six climate-fact answer
+sets; its two party-control questions still lack recovered choice labels. Those
+two entries retain the scored code and explain the gap in `coding_note`. AMR
+question 21 has conflicting options in the supplied questionnaire; the expert
+key and codebook agree, and both sources are documented without changing scores. For open
 responses, `coding_note`
 explains the scoring rule and points to its implementation. The Northern
 Ireland source labels truncate several choices. Those rows contain a partial
@@ -43,5 +46,7 @@ from it. The test in `tests/testthat/test-canonical-items.R` compares its two
 item ID mappings with the scored baseline exports and checks every source
 reference. The catalog covers the historical, Cor--Sood, and three later
 control-poll knowledge batteries; it does not inventory attitude questions.
-Marousi and the Tanzania control study have no recovered person-item responses
-in the files used for this analysis, so they have no catalog entries here.
+Marousi and Tanzania remain score-only in this catalog. Marousi retains its
+authored item-correctness flags and questionnaires; Tanzania retains nine scored
+components but not the original raw item responses. These source fields should
+not be mistaken for complete, cataloged question-and-answer records.

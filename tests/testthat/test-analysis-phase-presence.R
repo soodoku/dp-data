@@ -1,7 +1,7 @@
 source(file.path(root, "R", "analysis_phases.R"))
 
 phase_presence_polls <- c(
-  "nic-1996", "denmark-euro-2000", "btp-general-election-2004"
+  "nic-1996", "denmark-euro-2000", "btp-general-election-2004", "amr-2024"
 )
 phase_presence_scores <- arrow::read_parquet(project_path(
   "output", "analysis", "analysis_scores.parquet"
@@ -81,4 +81,42 @@ test_that("NIC phase roles distinguish event exit from the later follow-up", {
   expect_equal(roles$wave[roles$score_wave == "t3"], "t3")
   expect_equal(roles$wave_role[roles$score_wave == "t3"], "follow_up")
   expect_false(any(roles$wave_role == "arrival"))
+})
+
+
+test_that("AMR full-form answers establish presence when its quiz is missing", {
+  raw <- readr::read_csv(project_path(
+    "data", "amr-2024", "participants.csv"
+  ), show_col_types = FALSE)
+  blank <- rowSums(!is.na(raw[paste0("knowledge_", 1:6)])) == 0L
+  expect_equal(sum(blank), 46L)
+  evidence <- analysis_amr_presence(raw)
+  expect_equal(nrow(evidence), 4838L)
+  expect_true(all(evidence$form_observed))
+  check <- phase_presence_result |>
+    dplyr::filter(poll_id == "amr-2024")
+  expect_equal(nrow(check), 4838L)
+  expect_true(all(check$wave_observed))
+  score <- phase_presence_scores |>
+    dplyr::filter(poll_id == "amr-2024")
+  position <- match(paste(raw$ID, paste0("t", raw$Time + 1L)),
+                    paste(score$respondent_id, score$wave))
+  expect_false(anyNA(position))
+  expect_equal(score$score[position[blank]], rep(0, 46))
+})
+
+
+test_that("AMR identifiers and demographics cannot establish form presence", {
+  raw <- readr::read_csv(project_path(
+    "data", "amr-2024", "participants.csv"
+  ), show_col_types = FALSE)[1:2, ]
+  questions <- setdiff(names(raw), c(
+    "ID", "Group", "weight_group", "Weight", "Time", "Country", "gender",
+    "urban_global", "education_ISCE", "age"
+  ))
+  raw[questions] <- NA_real_
+  expect_true(all(is.na(analysis_amr_presence(raw)$form_observed)))
+  raw$proposal_01[1] <- 0
+  expect_equal(analysis_amr_presence(raw)$form_observed, c(TRUE, NA))
+  expect_error(analysis_amr_presence(dplyr::bind_rows(raw, raw[1, ])))
 })

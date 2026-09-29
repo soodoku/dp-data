@@ -104,7 +104,8 @@ test_that("California distinguishes blank quizzes from absent questionnaires", {
   result <- analysis_attendance_evidence(inputs$participants, inputs$scores)
   scores <- result$scores |>
     dplyr::filter(poll_id == "california-whats-next-2011",
-                  source_dataset == "cor_sood")
+                  source_dataset == "cor_sood",
+                  grepl(":knowledge$", battery_id))
   phone <- dplyr::filter(scores, wave == "t0")
   exit <- dplyr::filter(scores, wave == "t2")
   expect_equal(sum(phone$wave_observed %in% TRUE), 386L)

@@ -128,8 +128,8 @@ build_tomorrow_individual <- function(
       female = as.numeric(read("q35", 1:2) == 2), minority = NA_real_,
       education_four = education,
       education_three = collapse_historical_education(education),
-      higher_education = as.numeric(education >= .66),
-      household_income = NA_real_, high_income = NA_real_,
+
+      household_income = NA_real_,
       political_interest_t1 = NA_real_,
       read_briefing = (read("t3q42", 1:5) - 1) / 4,
       attitude_extremity = extremity(attitudes[[1]]),

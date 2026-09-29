@@ -7,6 +7,21 @@ historical_group_summary <- function(value, group, statistic = mean) {
   result
 }
 
+observed_peer_mean <- function(value, group) {
+  stopifnot(
+    is.numeric(value), length(value) == length(group),
+    all(is.finite(value) | is.na(value))
+  )
+  observed <- !is.na(value)
+  total <- historical_group_summary(value, group, sum)
+  count <- historical_group_summary(as.numeric(observed), group, sum)
+  peers <- count - as.numeric(observed)
+  focal <- ifelse(observed, value, 0)
+  result <- (total - focal) / peers
+  result[is.na(peers) | peers == 0] <- NA_real_
+  result
+}
+
 categorical_entropy <- function(value) {
   stopifnot(is.numeric(value), all(is.finite(value) | is.na(value)))
   frequencies <- table(round(value, 2))
@@ -44,10 +59,10 @@ historical_group_dispersion <- function(attitudes, group) {
   result
 }
 
-historical_composition <- function(values, group, early_high_income) {
+historical_composition <- function(values, group) {
   stopifnot(
     length(group) == nrow(values),
-    length(early_high_income) == nrow(values)
+    length(values$high_income) == nrow(values)
   )
   average <- function(value) historical_group_summary(value, group)
   size <- historical_group_summary(rep(1, length(group)), group, sum)
@@ -71,9 +86,9 @@ historical_composition <- function(values, group, early_high_income) {
     varfemale = female * (1 - female), sdfemale = sqrt(female * (1 - female)),
     vareduc = education_variance, sdeduc = sqrt(education_variance),
     meaned = average(values$education_four), meanage = average(values$age),
-    phighinc = average(early_high_income),
+    phighinc = average(values$high_income),
     meanxtreme = average(values$attitude_extremity),
-    pfemale_ind = (female * size - values$female) / (size - 1),
+    pfemale_ind = observed_peer_mean(values$female, group),
     entropy = combined_entropy
   )
 }

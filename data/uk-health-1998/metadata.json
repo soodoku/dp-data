@@ -230,6 +230,16 @@
       "local_artifact_id": null,
       "accessed": "2026-09-27",
       "notes": "Contemporaneous ministerial answer describes NHS routine screening target ages 50–64. Supports limited population eligibility; does not identify the exact fielded poll key or resolve diagnostic versus screening wording. Indexed primary text inspected; direct page fetch failed."
+    },
+    {
+      "reference_id": "uk-health-1998-indices-v6-final",
+      "poll_id": "uk-health-1998",
+      "kind": "codebook",
+      "title": "British Health Indices V6 FINAL",
+      "url": null,
+      "local_artifact_id": "material-4e3621c0f6b06e75-uk-health-1998",
+      "accessed": "2026-09-28",
+      "notes": "Retained original index memorandum with browser-readable PDF. Sections 8, 11 and 12 specify severity and discretion constructs; numerical tables preserve contrary evidence when assessing recode changes."
     }
   ],
   "material_coverage": [
@@ -539,6 +549,36 @@
       "publication_status": "published",
       "notes": "Original text bytes retained, including CRLF line endings and the author’s breast-screening caveat. Header credits Dennis L. Plane and contains an incomplete modification date. Printed tables describe different sample stages from the maintained 230-person file; consult version evidence before changing keys. Repository code license does not apply.",
       "relative_path": "codebooks/uk-health-codebook.txt"
+    },
+    {
+      "artifact_id": "material-0a4bf88c665d436c-uk-health-1998",
+      "poll_id": "uk-health-1998",
+      "artifact_type": "codebook",
+      "title": "British Health Indices V6 FINAL",
+      "location": "data/uk-health-1998/codebooks/british-health-indices-v6.doc",
+      "source_id": "material-0a4bf88c665d436c",
+      "original_archive_path": "data/british_health/indices/British Health Indices V6 FINAL.doc",
+      "sha256": "0a4bf88c665d436ce90c723b005a2e854414e65723b779a7496329fba1791baa",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original index memorandum retained byte-for-byte from the CDD archive. Sections 11 and 12 state 1 = most say; printed means also document the historical folded recode. Repository code license does not apply.",
+      "relative_path": "codebooks/british-health-indices-v6.doc"
+    },
+    {
+      "artifact_id": "material-4e3621c0f6b06e75-uk-health-1998",
+      "poll_id": "uk-health-1998",
+      "artifact_type": "codebook",
+      "title": "British Health Indices V6 FINAL (PDF preview)",
+      "location": "data/uk-health-1998/codebooks/british-health-indices-v6.pdf",
+      "source_id": "material-4e3621c0f6b06e75",
+      "original_archive_path": null,
+      "sha256": "4e3621c0f6b06e750b7e379f9637414c34025af7a0718afea8c50cbc1461e5ac",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Generated from data/uk-health-1998/codebooks/british-health-indices-v6.doc. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
+      "relative_path": "codebooks/british-health-indices-v6.pdf"
     }
   ],
   "document_previews": [
@@ -588,6 +628,22 @@
       "source_token_coverage": "0.9733542319749217",
       "distinct_word_coverage": "1.0",
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
+      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+    },
+    {
+      "source_path": "data/uk-health-1998/codebooks/british-health-indices-v6.doc",
+      "preview_path": "data/uk-health-1998/codebooks/british-health-indices-v6.pdf",
+      "source_sha256": "0a4bf88c665d436ce90c723b005a2e854414e65723b779a7496329fba1791baa",
+      "preview_sha256": "4e3621c0f6b06e750b7e379f9637414c34025af7a0718afea8c50cbc1461e5ac",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "11",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-representative-pages",
+      "visual_pages": "1;9;10;11",
+      "source_token_coverage": "1.0",
+      "distinct_word_coverage": "1.0",
+      "qa_notes": "Compared textutil original-text extraction with PDF text; inspected first page and sections 11/12 plus final table. Original pagination and line breaks may differ; no clipped table columns or lost section text found.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
   ]
