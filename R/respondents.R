@@ -119,6 +119,25 @@ source_wave_label <- function(poll_id, wave) {
   paste0("T", wave)
 }
 
+source_nonanswer_codes <- function(labels) {
+  nonanswers <- c(
+    "don't know", "dk", "can't say", "can't choose", "couldn't say",
+    "refused", "no answer", "not answered", "not asked", "not applicable",
+    "item not applicable", "skipped on web"
+  )
+  labels |>
+    dplyr::mutate(
+      label = tolower(trimws(gsub("[()]", "", value_label))),
+      label = sub("^[0-9]+[[:space:]]+", "", label)
+    ) |>
+    dplyr::summarise(
+      nonanswer = all(label %in% nonanswers),
+      .by = c("source_column", "source_value")
+    ) |>
+    dplyr::filter(nonanswer) |>
+    dplyr::select("source_column", "source_value")
+}
+
 source_response_rows <- function(survey, people, inputs, items) {
   fields <- union(inputs$source_column, items$source_column)
   stopifnot(all(fields %in% names(survey)))
@@ -126,6 +145,10 @@ source_response_rows <- function(survey, people, inputs, items) {
     dplyr::filter(.data$poll_id == people$poll_id[[1]])
   dictionary_path <- project_path("data", people$poll_id[[1]], "variables.csv")
   dictionary <- readr::read_csv(dictionary_path, show_col_types = FALSE)
+  labels <- readr::read_csv(project_path(
+    "data", people$poll_id[[1]], "value-labels.csv"
+  ), col_types = readr::cols(.default = readr::col_character()))
+  nonanswer_codes <- source_nonanswer_codes(labels)
   purrr::map(fields, function(field) {
     raw <- survey[[field]]
     value <- if (is.numeric(raw)) {
@@ -146,6 +169,9 @@ source_response_rows <- function(survey, people, inputs, items) {
       as.character(dictionary_missing), "|",
       fixed = TRUE
     )))
+    known_missing <- union(known_missing, nonanswer_codes$source_value[
+      nonanswer_codes$source_column == field
+    ])
     range <- dictionary$missing_range[dictionary$source_column == field]
     range <- as.numeric(unlist(strsplit(
       as.character(range[!is.na(range)]), "|",

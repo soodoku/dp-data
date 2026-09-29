@@ -70,6 +70,36 @@ analysis_amr_presence <- function(survey) {
   )
 }
 
+analysis_btp_followup_presence <- function(survey, poll) {
+  if (poll == "btp-national-2003") {
+    fields <- c("serial", "f_dt_st", "f_tm_st", "f_dt_end", "f_tm_end",
+                "f_durat")
+    stopifnot(all(fields %in% names(survey)))
+    identifier <- survey$serial
+    timed_interview <- stats::complete.cases(survey[fields[-1L]]) &
+      survey$f_durat > 0 & survey$f_dt_st > 0 &
+      survey$f_tm_st >= 0 & survey$f_tm_end >= 0 &
+      (survey$f_dt_end > survey$f_dt_st |
+         (survey$f_dt_end == survey$f_dt_st &
+            survey$f_tm_end >= survey$f_tm_st))
+    observed <- timed_interview %in% TRUE
+  } else {
+    stopifnot(
+      poll == "btp-presidential-primaries-2004",
+      all(c("caseid", "compf1") %in% names(survey)),
+      all(is.na(survey$compf1) | survey$compf1 %in% 1:2)
+    )
+    identifier <- survey$caseid
+    observed <- survey$compf1 %in% 1
+  }
+  stopifnot(!anyNA(identifier), !anyDuplicated(identifier))
+  tibble::tibble(
+    poll_id = poll, source_dataset = "historical",
+    respondent_id = as.character(identifier), wave = "t2",
+    form_observed = dplyr::if_else(observed, TRUE, NA)
+  )
+}
+
 analysis_phase_presence <- function(
   scores, items, measures, definitions, targets, amr = NULL
 ) {
@@ -154,6 +184,26 @@ analysis_phase_presence <- function(
       wave_observed, wave_observed_source
     )) |>
     dplyr::select(-"wave_observed_source")
+  btp_polls <- intersect(unique(out$poll_id), c(
+    "btp-national-2003", "btp-presidential-primaries-2004"
+  ))
+  if (length(btp_polls)) {
+    forms <- purrr::map(btp_polls, function(poll) {
+      analysis_btp_followup_presence(read_poll_survey(poll), poll)
+    }) |>
+      purrr::list_rbind()
+    out <- out |>
+      dplyr::left_join(forms,
+        by = c("poll_id", "source_dataset", "respondent_id", "wave"),
+        relationship = "one-to-one"
+      )
+    stopifnot(!any(out$wave_observed %in% FALSE & out$form_observed %in% TRUE))
+    out <- out |>
+      dplyr::mutate(wave_observed = dplyr::coalesce(
+        wave_observed, form_observed
+      )) |>
+      dplyr::select(-"form_observed")
+  }
   if (any(out$poll_id == "denmark-euro-2000" &
             out$source_dataset == "cor_sood" & out$wave == "t2")) {
     departure <- arrow::read_parquet(project_path(
