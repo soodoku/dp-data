@@ -88,8 +88,8 @@ btp-2007,race_other,Contact or nonessential text field retained only in local ar
 btp-2007,rm1,Contact or nonessential text field retained only in local archive
 btp-2007,rm2,Contact or nonessential text field retained only in local archive
 btp-2007,rm3,Contact or nonessential text field retained only in local archive
-btp-health-education-2005,q44post,Contact or nonessential text field retained only in local archive
-btp-health-education-2005,q45post,Contact or nonessential text field retained only in local archive
+btp-health-education-2005,q44post,Excluded from selected survey.parquet; retained unchanged in source-responses.parquet under approved questionnaire-text publication
+btp-health-education-2005,q45post,Excluded from selected survey.parquet; retained unchanged in source-responses.parquet under approved questionnaire-text publication
 btp-health-education-2005,city,Contact or nonessential text field retained only in local archive
 btp-health-education-2005,zip,Contact or nonessential text field retained only in local archive
 btp-health-education-2005,username,Contact or nonessential text field retained only in local archive

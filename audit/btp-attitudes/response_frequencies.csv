@@ -1,0 +1,583 @@
+"poll","index","wave","field","rule","code","count"
+"btp-health-education-2005","reform","1","q3","reverse_binary","1",323
+"btp-health-education-2005","reform","1","q3","reverse_binary","2",108
+"btp-health-education-2005","reform","1","q3","reverse_binary","7",18
+"btp-health-education-2005","reform","1","q3","reverse_binary",NA,5
+"btp-health-education-2005","school_choice","1","q7_a","ten","0",151
+"btp-health-education-2005","school_choice","1","q7_a","ten","1",16
+"btp-health-education-2005","school_choice","1","q7_a","ten","2",22
+"btp-health-education-2005","school_choice","1","q7_a","ten","3",15
+"btp-health-education-2005","school_choice","1","q7_a","ten","4",18
+"btp-health-education-2005","school_choice","1","q7_a","ten","5",69
+"btp-health-education-2005","school_choice","1","q7_a","ten","6",21
+"btp-health-education-2005","school_choice","1","q7_a","ten","7",35
+"btp-health-education-2005","school_choice","1","q7_a","ten","8",26
+"btp-health-education-2005","school_choice","1","q7_a","ten","9",17
+"btp-health-education-2005","school_choice","1","q7_a","ten","10",59
+"btp-health-education-2005","school_choice","1","q7_a","ten","77",5
+"btp-health-education-2005","school_choice","1","q7_a","ten",NA,0
+"btp-health-education-2005","school_choice","1","q7_b","ten","0",209
+"btp-health-education-2005","school_choice","1","q7_b","ten","1",21
+"btp-health-education-2005","school_choice","1","q7_b","ten","2",25
+"btp-health-education-2005","school_choice","1","q7_b","ten","3",8
+"btp-health-education-2005","school_choice","1","q7_b","ten","4",8
+"btp-health-education-2005","school_choice","1","q7_b","ten","5",32
+"btp-health-education-2005","school_choice","1","q7_b","ten","6",15
+"btp-health-education-2005","school_choice","1","q7_b","ten","7",19
+"btp-health-education-2005","school_choice","1","q7_b","ten","8",17
+"btp-health-education-2005","school_choice","1","q7_b","ten","9",14
+"btp-health-education-2005","school_choice","1","q7_b","ten","10",82
+"btp-health-education-2005","school_choice","1","q7_b","ten","77",2
+"btp-health-education-2005","school_choice","1","q7_b","ten",NA,2
+"btp-health-education-2005","school_funding","1","q7_c","ten","0",93
+"btp-health-education-2005","school_funding","1","q7_c","ten","1",16
+"btp-health-education-2005","school_funding","1","q7_c","ten","2",10
+"btp-health-education-2005","school_funding","1","q7_c","ten","3",17
+"btp-health-education-2005","school_funding","1","q7_c","ten","4",12
+"btp-health-education-2005","school_funding","1","q7_c","ten","5",41
+"btp-health-education-2005","school_funding","1","q7_c","ten","6",37
+"btp-health-education-2005","school_funding","1","q7_c","ten","7",33
+"btp-health-education-2005","school_funding","1","q7_c","ten","8",40
+"btp-health-education-2005","school_funding","1","q7_c","ten","9",31
+"btp-health-education-2005","school_funding","1","q7_c","ten","10",109
+"btp-health-education-2005","school_funding","1","q7_c","ten","77",8
+"btp-health-education-2005","school_funding","1","q7_c","ten",NA,7
+"btp-health-education-2005","school_funding","1","q7_d","ten","0",74
+"btp-health-education-2005","school_funding","1","q7_d","ten","1",12
+"btp-health-education-2005","school_funding","1","q7_d","ten","2",10
+"btp-health-education-2005","school_funding","1","q7_d","ten","3",11
+"btp-health-education-2005","school_funding","1","q7_d","ten","4",16
+"btp-health-education-2005","school_funding","1","q7_d","ten","5",40
+"btp-health-education-2005","school_funding","1","q7_d","ten","6",35
+"btp-health-education-2005","school_funding","1","q7_d","ten","7",24
+"btp-health-education-2005","school_funding","1","q7_d","ten","8",48
+"btp-health-education-2005","school_funding","1","q7_d","ten","9",36
+"btp-health-education-2005","school_funding","1","q7_d","ten","10",133
+"btp-health-education-2005","school_funding","1","q7_d","ten","77",12
+"btp-health-education-2005","school_funding","1","q7_d","ten",NA,3
+"btp-health-education-2005","school_funding","1","q7_e","ten","0",59
+"btp-health-education-2005","school_funding","1","q7_e","ten","1",12
+"btp-health-education-2005","school_funding","1","q7_e","ten","2",11
+"btp-health-education-2005","school_funding","1","q7_e","ten","3",13
+"btp-health-education-2005","school_funding","1","q7_e","ten","4",16
+"btp-health-education-2005","school_funding","1","q7_e","ten","5",57
+"btp-health-education-2005","school_funding","1","q7_e","ten","6",45
+"btp-health-education-2005","school_funding","1","q7_e","ten","7",25
+"btp-health-education-2005","school_funding","1","q7_e","ten","8",50
+"btp-health-education-2005","school_funding","1","q7_e","ten","9",43
+"btp-health-education-2005","school_funding","1","q7_e","ten","10",114
+"btp-health-education-2005","school_funding","1","q7_e","ten","77",6
+"btp-health-education-2005","school_funding","1","q7_e","ten",NA,3
+"btp-health-education-2005","school_funding","1","q7_f","ten","0",66
+"btp-health-education-2005","school_funding","1","q7_f","ten","1",11
+"btp-health-education-2005","school_funding","1","q7_f","ten","2",13
+"btp-health-education-2005","school_funding","1","q7_f","ten","3",10
+"btp-health-education-2005","school_funding","1","q7_f","ten","4",14
+"btp-health-education-2005","school_funding","1","q7_f","ten","5",39
+"btp-health-education-2005","school_funding","1","q7_f","ten","6",45
+"btp-health-education-2005","school_funding","1","q7_f","ten","7",24
+"btp-health-education-2005","school_funding","1","q7_f","ten","8",38
+"btp-health-education-2005","school_funding","1","q7_f","ten","9",38
+"btp-health-education-2005","school_funding","1","q7_f","ten","10",139
+"btp-health-education-2005","school_funding","1","q7_f","ten","77",14
+"btp-health-education-2005","school_funding","1","q7_f","ten",NA,3
+"btp-health-education-2005","school_funding","1","q8_f","ten","0",5
+"btp-health-education-2005","school_funding","1","q8_f","ten","1",5
+"btp-health-education-2005","school_funding","1","q8_f","ten","2",3
+"btp-health-education-2005","school_funding","1","q8_f","ten","3",6
+"btp-health-education-2005","school_funding","1","q8_f","ten","4",6
+"btp-health-education-2005","school_funding","1","q8_f","ten","5",71
+"btp-health-education-2005","school_funding","1","q8_f","ten","6",24
+"btp-health-education-2005","school_funding","1","q8_f","ten","7",41
+"btp-health-education-2005","school_funding","1","q8_f","ten","8",48
+"btp-health-education-2005","school_funding","1","q8_f","ten","9",47
+"btp-health-education-2005","school_funding","1","q8_f","ten","10",192
+"btp-health-education-2005","school_funding","1","q8_f","ten","77",4
+"btp-health-education-2005","school_funding","1","q8_f","ten",NA,2
+"btp-health-education-2005","standardized_testing","1","q4","reverse_three","1",62
+"btp-health-education-2005","standardized_testing","1","q4","reverse_three","2",93
+"btp-health-education-2005","standardized_testing","1","q4","reverse_three","3",277
+"btp-health-education-2005","standardized_testing","1","q4","reverse_three","7",21
+"btp-health-education-2005","standardized_testing","1","q4","reverse_three",NA,1
+"btp-health-education-2005","standardized_testing","1","q5","ten","0",99
+"btp-health-education-2005","standardized_testing","1","q5","ten","1",47
+"btp-health-education-2005","standardized_testing","1","q5","ten","2",52
+"btp-health-education-2005","standardized_testing","1","q5","ten","3",51
+"btp-health-education-2005","standardized_testing","1","q5","ten","4",40
+"btp-health-education-2005","standardized_testing","1","q5","ten","5",46
+"btp-health-education-2005","standardized_testing","1","q5","ten","6",26
+"btp-health-education-2005","standardized_testing","1","q5","ten","7",27
+"btp-health-education-2005","standardized_testing","1","q5","ten","8",27
+"btp-health-education-2005","standardized_testing","1","q5","ten","9",9
+"btp-health-education-2005","standardized_testing","1","q5","ten","10",27
+"btp-health-education-2005","standardized_testing","1","q5","ten","77",3
+"btp-health-education-2005","standardized_testing","1","q5","ten",NA,0
+"btp-health-education-2005","local_testing","1","q6","binary","1",300
+"btp-health-education-2005","local_testing","1","q6","binary","2",127
+"btp-health-education-2005","local_testing","1","q6","binary","7",27
+"btp-health-education-2005","local_testing","1","q6","binary",NA,0
+"btp-health-education-2005","no_child_left_behind","1","q12","reverse_five","1",188
+"btp-health-education-2005","no_child_left_behind","1","q12","reverse_five","2",87
+"btp-health-education-2005","no_child_left_behind","1","q12","reverse_five","3",34
+"btp-health-education-2005","no_child_left_behind","1","q12","reverse_five","4",82
+"btp-health-education-2005","no_child_left_behind","1","q12","reverse_five","5",44
+"btp-health-education-2005","no_child_left_behind","1","q12","reverse_five","7",16
+"btp-health-education-2005","no_child_left_behind","1","q12","reverse_five",NA,3
+"btp-health-education-2005","government_involvement","1","q24a","five","1",135
+"btp-health-education-2005","government_involvement","1","q24a","five","2",42
+"btp-health-education-2005","government_involvement","1","q24a","five","3",40
+"btp-health-education-2005","government_involvement","1","q24a","five","4",91
+"btp-health-education-2005","government_involvement","1","q24a","five","5",137
+"btp-health-education-2005","government_involvement","1","q24a","five","7",8
+"btp-health-education-2005","government_involvement","1","q24a","five",NA,1
+"btp-health-education-2005","government_involvement","1","q24f","five","1",68
+"btp-health-education-2005","government_involvement","1","q24f","five","2",58
+"btp-health-education-2005","government_involvement","1","q24f","five","3",52
+"btp-health-education-2005","government_involvement","1","q24f","five","4",139
+"btp-health-education-2005","government_involvement","1","q24f","five","5",131
+"btp-health-education-2005","government_involvement","1","q24f","five","7",5
+"btp-health-education-2005","government_involvement","1","q24f","five",NA,1
+"btp-health-education-2005","medical_quality","1","q19_d","ten","0",2
+"btp-health-education-2005","medical_quality","1","q19_d","ten","1",8
+"btp-health-education-2005","medical_quality","1","q19_d","ten","2",9
+"btp-health-education-2005","medical_quality","1","q19_d","ten","3",6
+"btp-health-education-2005","medical_quality","1","q19_d","ten","4",19
+"btp-health-education-2005","medical_quality","1","q19_d","ten","5",80
+"btp-health-education-2005","medical_quality","1","q19_d","ten","6",34
+"btp-health-education-2005","medical_quality","1","q19_d","ten","7",31
+"btp-health-education-2005","medical_quality","1","q19_d","ten","8",43
+"btp-health-education-2005","medical_quality","1","q19_d","ten","9",46
+"btp-health-education-2005","medical_quality","1","q19_d","ten","10",170
+"btp-health-education-2005","medical_quality","1","q19_d","ten","77",2
+"btp-health-education-2005","medical_quality","1","q19_d","ten",NA,4
+"btp-health-education-2005","medical_quality","1","q19_e","ten","0",12
+"btp-health-education-2005","medical_quality","1","q19_e","ten","1",12
+"btp-health-education-2005","medical_quality","1","q19_e","ten","2",15
+"btp-health-education-2005","medical_quality","1","q19_e","ten","3",14
+"btp-health-education-2005","medical_quality","1","q19_e","ten","4",15
+"btp-health-education-2005","medical_quality","1","q19_e","ten","5",95
+"btp-health-education-2005","medical_quality","1","q19_e","ten","6",26
+"btp-health-education-2005","medical_quality","1","q19_e","ten","7",24
+"btp-health-education-2005","medical_quality","1","q19_e","ten","8",27
+"btp-health-education-2005","medical_quality","1","q19_e","ten","9",41
+"btp-health-education-2005","medical_quality","1","q19_e","ten","10",162
+"btp-health-education-2005","medical_quality","1","q19_e","ten","77",6
+"btp-health-education-2005","medical_quality","1","q19_e","ten",NA,5
+"btp-health-education-2005","medical_quality","1","q19_f","ten","0",10
+"btp-health-education-2005","medical_quality","1","q19_f","ten","1",6
+"btp-health-education-2005","medical_quality","1","q19_f","ten","2",9
+"btp-health-education-2005","medical_quality","1","q19_f","ten","3",9
+"btp-health-education-2005","medical_quality","1","q19_f","ten","4",10
+"btp-health-education-2005","medical_quality","1","q19_f","ten","5",102
+"btp-health-education-2005","medical_quality","1","q19_f","ten","6",29
+"btp-health-education-2005","medical_quality","1","q19_f","ten","7",42
+"btp-health-education-2005","medical_quality","1","q19_f","ten","8",36
+"btp-health-education-2005","medical_quality","1","q19_f","ten","9",38
+"btp-health-education-2005","medical_quality","1","q19_f","ten","10",157
+"btp-health-education-2005","medical_quality","1","q19_f","ten","77",3
+"btp-health-education-2005","medical_quality","1","q19_f","ten",NA,3
+"btp-health-education-2005","cost_coverage","1","q19_a","ten","0",5
+"btp-health-education-2005","cost_coverage","1","q19_a","ten","1",1
+"btp-health-education-2005","cost_coverage","1","q19_a","ten","3",1
+"btp-health-education-2005","cost_coverage","1","q19_a","ten","4",2
+"btp-health-education-2005","cost_coverage","1","q19_a","ten","5",13
+"btp-health-education-2005","cost_coverage","1","q19_a","ten","6",15
+"btp-health-education-2005","cost_coverage","1","q19_a","ten","7",22
+"btp-health-education-2005","cost_coverage","1","q19_a","ten","8",30
+"btp-health-education-2005","cost_coverage","1","q19_a","ten","9",27
+"btp-health-education-2005","cost_coverage","1","q19_a","ten","10",336
+"btp-health-education-2005","cost_coverage","1","q19_a","ten","77",1
+"btp-health-education-2005","cost_coverage","1","q19_a","ten",NA,1
+"btp-health-education-2005","cost_coverage","1","q19_b","ten","0",14
+"btp-health-education-2005","cost_coverage","1","q19_b","ten","1",3
+"btp-health-education-2005","cost_coverage","1","q19_b","ten","2",4
+"btp-health-education-2005","cost_coverage","1","q19_b","ten","3",3
+"btp-health-education-2005","cost_coverage","1","q19_b","ten","4",3
+"btp-health-education-2005","cost_coverage","1","q19_b","ten","5",38
+"btp-health-education-2005","cost_coverage","1","q19_b","ten","6",11
+"btp-health-education-2005","cost_coverage","1","q19_b","ten","7",17
+"btp-health-education-2005","cost_coverage","1","q19_b","ten","8",23
+"btp-health-education-2005","cost_coverage","1","q19_b","ten","9",25
+"btp-health-education-2005","cost_coverage","1","q19_b","ten","10",309
+"btp-health-education-2005","cost_coverage","1","q19_b","ten","77",3
+"btp-health-education-2005","cost_coverage","1","q19_b","ten",NA,1
+"btp-health-education-2005","cost_coverage","1","q19_c","ten","0",5
+"btp-health-education-2005","cost_coverage","1","q19_c","ten","1",1
+"btp-health-education-2005","cost_coverage","1","q19_c","ten","2",3
+"btp-health-education-2005","cost_coverage","1","q19_c","ten","3",2
+"btp-health-education-2005","cost_coverage","1","q19_c","ten","4",4
+"btp-health-education-2005","cost_coverage","1","q19_c","ten","5",20
+"btp-health-education-2005","cost_coverage","1","q19_c","ten","6",20
+"btp-health-education-2005","cost_coverage","1","q19_c","ten","7",23
+"btp-health-education-2005","cost_coverage","1","q19_c","ten","8",37
+"btp-health-education-2005","cost_coverage","1","q19_c","ten","9",37
+"btp-health-education-2005","cost_coverage","1","q19_c","ten","10",297
+"btp-health-education-2005","cost_coverage","1","q19_c","ten","77",3
+"btp-health-education-2005","cost_coverage","1","q19_c","ten",NA,2
+"btp-health-education-2005","cost_coverage","1","q23","cost","1",199
+"btp-health-education-2005","cost_coverage","1","q23","cost","2",36
+"btp-health-education-2005","cost_coverage","1","q23","cost","3",186
+"btp-health-education-2005","cost_coverage","1","q23","cost","7",31
+"btp-health-education-2005","cost_coverage","1","q23","cost",NA,2
+"btp-health-education-2005","employer_payment","1","q24b","five","1",122
+"btp-health-education-2005","employer_payment","1","q24b","five","2",62
+"btp-health-education-2005","employer_payment","1","q24b","five","3",51
+"btp-health-education-2005","employer_payment","1","q24b","five","4",120
+"btp-health-education-2005","employer_payment","1","q24b","five","5",89
+"btp-health-education-2005","employer_payment","1","q24b","five","7",8
+"btp-health-education-2005","employer_payment","1","q24b","five",NA,2
+"btp-health-education-2005","individual_payment","1","q24c","five","1",146
+"btp-health-education-2005","individual_payment","1","q24c","five","2",66
+"btp-health-education-2005","individual_payment","1","q24c","five","3",62
+"btp-health-education-2005","individual_payment","1","q24c","five","4",126
+"btp-health-education-2005","individual_payment","1","q24c","five","5",42
+"btp-health-education-2005","individual_payment","1","q24c","five","7",12
+"btp-health-education-2005","individual_payment","1","q24c","five",NA,0
+"btp-health-education-2005","reform","2","q3post","reverse_binary","1",328
+"btp-health-education-2005","reform","2","q3post","reverse_binary","2",108
+"btp-health-education-2005","reform","2","q3post","reverse_binary","7",16
+"btp-health-education-2005","reform","2","q3post","reverse_binary",NA,2
+"btp-health-education-2005","school_choice","2","q7post_a","ten","0",144
+"btp-health-education-2005","school_choice","2","q7post_a","ten","1",22
+"btp-health-education-2005","school_choice","2","q7post_a","ten","2",18
+"btp-health-education-2005","school_choice","2","q7post_a","ten","3",20
+"btp-health-education-2005","school_choice","2","q7post_a","ten","4",31
+"btp-health-education-2005","school_choice","2","q7post_a","ten","5",61
+"btp-health-education-2005","school_choice","2","q7post_a","ten","6",29
+"btp-health-education-2005","school_choice","2","q7post_a","ten","7",38
+"btp-health-education-2005","school_choice","2","q7post_a","ten","8",25
+"btp-health-education-2005","school_choice","2","q7post_a","ten","9",14
+"btp-health-education-2005","school_choice","2","q7post_a","ten","10",48
+"btp-health-education-2005","school_choice","2","q7post_a","ten","77",3
+"btp-health-education-2005","school_choice","2","q7post_a","ten",NA,1
+"btp-health-education-2005","school_choice","2","q7post_b","ten","0",208
+"btp-health-education-2005","school_choice","2","q7post_b","ten","1",29
+"btp-health-education-2005","school_choice","2","q7post_b","ten","2",25
+"btp-health-education-2005","school_choice","2","q7post_b","ten","3",14
+"btp-health-education-2005","school_choice","2","q7post_b","ten","4",17
+"btp-health-education-2005","school_choice","2","q7post_b","ten","5",24
+"btp-health-education-2005","school_choice","2","q7post_b","ten","6",13
+"btp-health-education-2005","school_choice","2","q7post_b","ten","7",16
+"btp-health-education-2005","school_choice","2","q7post_b","ten","8",26
+"btp-health-education-2005","school_choice","2","q7post_b","ten","9",15
+"btp-health-education-2005","school_choice","2","q7post_b","ten","10",65
+"btp-health-education-2005","school_choice","2","q7post_b","ten","77",2
+"btp-health-education-2005","school_choice","2","q7post_b","ten",NA,0
+"btp-health-education-2005","school_funding","2","q7post_c","ten","0",70
+"btp-health-education-2005","school_funding","2","q7post_c","ten","1",21
+"btp-health-education-2005","school_funding","2","q7post_c","ten","2",18
+"btp-health-education-2005","school_funding","2","q7post_c","ten","3",19
+"btp-health-education-2005","school_funding","2","q7post_c","ten","4",21
+"btp-health-education-2005","school_funding","2","q7post_c","ten","5",50
+"btp-health-education-2005","school_funding","2","q7post_c","ten","6",43
+"btp-health-education-2005","school_funding","2","q7post_c","ten","7",33
+"btp-health-education-2005","school_funding","2","q7post_c","ten","8",37
+"btp-health-education-2005","school_funding","2","q7post_c","ten","9",30
+"btp-health-education-2005","school_funding","2","q7post_c","ten","10",106
+"btp-health-education-2005","school_funding","2","q7post_c","ten","77",4
+"btp-health-education-2005","school_funding","2","q7post_c","ten",NA,2
+"btp-health-education-2005","school_funding","2","q7post_d","ten","0",53
+"btp-health-education-2005","school_funding","2","q7post_d","ten","1",8
+"btp-health-education-2005","school_funding","2","q7post_d","ten","2",17
+"btp-health-education-2005","school_funding","2","q7post_d","ten","3",15
+"btp-health-education-2005","school_funding","2","q7post_d","ten","4",22
+"btp-health-education-2005","school_funding","2","q7post_d","ten","5",39
+"btp-health-education-2005","school_funding","2","q7post_d","ten","6",45
+"btp-health-education-2005","school_funding","2","q7post_d","ten","7",27
+"btp-health-education-2005","school_funding","2","q7post_d","ten","8",47
+"btp-health-education-2005","school_funding","2","q7post_d","ten","9",43
+"btp-health-education-2005","school_funding","2","q7post_d","ten","10",128
+"btp-health-education-2005","school_funding","2","q7post_d","ten","77",6
+"btp-health-education-2005","school_funding","2","q7post_d","ten",NA,4
+"btp-health-education-2005","school_funding","2","q7post_e","ten","0",54
+"btp-health-education-2005","school_funding","2","q7post_e","ten","1",15
+"btp-health-education-2005","school_funding","2","q7post_e","ten","2",12
+"btp-health-education-2005","school_funding","2","q7post_e","ten","3",6
+"btp-health-education-2005","school_funding","2","q7post_e","ten","4",23
+"btp-health-education-2005","school_funding","2","q7post_e","ten","5",45
+"btp-health-education-2005","school_funding","2","q7post_e","ten","6",63
+"btp-health-education-2005","school_funding","2","q7post_e","ten","7",35
+"btp-health-education-2005","school_funding","2","q7post_e","ten","8",54
+"btp-health-education-2005","school_funding","2","q7post_e","ten","9",30
+"btp-health-education-2005","school_funding","2","q7post_e","ten","10",104
+"btp-health-education-2005","school_funding","2","q7post_e","ten","77",9
+"btp-health-education-2005","school_funding","2","q7post_e","ten",NA,4
+"btp-health-education-2005","school_funding","2","q7post_f","ten","0",57
+"btp-health-education-2005","school_funding","2","q7post_f","ten","1",11
+"btp-health-education-2005","school_funding","2","q7post_f","ten","2",15
+"btp-health-education-2005","school_funding","2","q7post_f","ten","3",9
+"btp-health-education-2005","school_funding","2","q7post_f","ten","4",10
+"btp-health-education-2005","school_funding","2","q7post_f","ten","5",43
+"btp-health-education-2005","school_funding","2","q7post_f","ten","6",48
+"btp-health-education-2005","school_funding","2","q7post_f","ten","7",31
+"btp-health-education-2005","school_funding","2","q7post_f","ten","8",48
+"btp-health-education-2005","school_funding","2","q7post_f","ten","9",46
+"btp-health-education-2005","school_funding","2","q7post_f","ten","10",124
+"btp-health-education-2005","school_funding","2","q7post_f","ten","77",10
+"btp-health-education-2005","school_funding","2","q7post_f","ten",NA,2
+"btp-health-education-2005","school_funding","2","q8post_f","ten","0",6
+"btp-health-education-2005","school_funding","2","q8post_f","ten","1",4
+"btp-health-education-2005","school_funding","2","q8post_f","ten","2",6
+"btp-health-education-2005","school_funding","2","q8post_f","ten","3",12
+"btp-health-education-2005","school_funding","2","q8post_f","ten","4",11
+"btp-health-education-2005","school_funding","2","q8post_f","ten","5",64
+"btp-health-education-2005","school_funding","2","q8post_f","ten","6",38
+"btp-health-education-2005","school_funding","2","q8post_f","ten","7",37
+"btp-health-education-2005","school_funding","2","q8post_f","ten","8",44
+"btp-health-education-2005","school_funding","2","q8post_f","ten","9",50
+"btp-health-education-2005","school_funding","2","q8post_f","ten","10",177
+"btp-health-education-2005","school_funding","2","q8post_f","ten","77",2
+"btp-health-education-2005","school_funding","2","q8post_f","ten",NA,3
+"btp-health-education-2005","standardized_testing","2","q4post","reverse_three","1",52
+"btp-health-education-2005","standardized_testing","2","q4post","reverse_three","2",97
+"btp-health-education-2005","standardized_testing","2","q4post","reverse_three","3",288
+"btp-health-education-2005","standardized_testing","2","q4post","reverse_three","7",14
+"btp-health-education-2005","standardized_testing","2","q4post","reverse_three",NA,3
+"btp-health-education-2005","standardized_testing","2","q5post_m","ten","0",67
+"btp-health-education-2005","standardized_testing","2","q5post_m","ten","1",37
+"btp-health-education-2005","standardized_testing","2","q5post_m","ten","2",54
+"btp-health-education-2005","standardized_testing","2","q5post_m","ten","3",66
+"btp-health-education-2005","standardized_testing","2","q5post_m","ten","4",44
+"btp-health-education-2005","standardized_testing","2","q5post_m","ten","5",55
+"btp-health-education-2005","standardized_testing","2","q5post_m","ten","6",20
+"btp-health-education-2005","standardized_testing","2","q5post_m","ten","7",26
+"btp-health-education-2005","standardized_testing","2","q5post_m","ten","8",31
+"btp-health-education-2005","standardized_testing","2","q5post_m","ten","9",15
+"btp-health-education-2005","standardized_testing","2","q5post_m","ten","10",33
+"btp-health-education-2005","standardized_testing","2","q5post_m","ten","77",4
+"btp-health-education-2005","standardized_testing","2","q5post_m","ten",NA,2
+"btp-health-education-2005","local_testing","2","q6post","binary","1",280
+"btp-health-education-2005","local_testing","2","q6post","binary","2",154
+"btp-health-education-2005","local_testing","2","q6post","binary","7",20
+"btp-health-education-2005","local_testing","2","q6post","binary",NA,0
+"btp-health-education-2005","no_child_left_behind","2","q12post","reverse_five","1",172
+"btp-health-education-2005","no_child_left_behind","2","q12post","reverse_five","2",99
+"btp-health-education-2005","no_child_left_behind","2","q12post","reverse_five","3",38
+"btp-health-education-2005","no_child_left_behind","2","q12post","reverse_five","4",99
+"btp-health-education-2005","no_child_left_behind","2","q12post","reverse_five","5",31
+"btp-health-education-2005","no_child_left_behind","2","q12post","reverse_five","7",13
+"btp-health-education-2005","no_child_left_behind","2","q12post","reverse_five",NA,2
+"btp-health-education-2005","government_involvement","2","q24apost","five","1",127
+"btp-health-education-2005","government_involvement","2","q24apost","five","2",40
+"btp-health-education-2005","government_involvement","2","q24apost","five","3",28
+"btp-health-education-2005","government_involvement","2","q24apost","five","4",111
+"btp-health-education-2005","government_involvement","2","q24apost","five","5",146
+"btp-health-education-2005","government_involvement","2","q24apost","five","7",2
+"btp-health-education-2005","government_involvement","2","q24apost","five",NA,0
+"btp-health-education-2005","government_involvement","2","q24fpost","five","1",77
+"btp-health-education-2005","government_involvement","2","q24fpost","five","2",48
+"btp-health-education-2005","government_involvement","2","q24fpost","five","3",64
+"btp-health-education-2005","government_involvement","2","q24fpost","five","4",128
+"btp-health-education-2005","government_involvement","2","q24fpost","five","5",130
+"btp-health-education-2005","government_involvement","2","q24fpost","five","7",4
+"btp-health-education-2005","government_involvement","2","q24fpost","five",NA,3
+"btp-health-education-2005","medical_quality","2","q19pos_c","ten","0",3
+"btp-health-education-2005","medical_quality","2","q19pos_c","ten","1",9
+"btp-health-education-2005","medical_quality","2","q19pos_c","ten","2",24
+"btp-health-education-2005","medical_quality","2","q19pos_c","ten","3",13
+"btp-health-education-2005","medical_quality","2","q19pos_c","ten","4",17
+"btp-health-education-2005","medical_quality","2","q19pos_c","ten","5",87
+"btp-health-education-2005","medical_quality","2","q19pos_c","ten","6",44
+"btp-health-education-2005","medical_quality","2","q19pos_c","ten","7",46
+"btp-health-education-2005","medical_quality","2","q19pos_c","ten","8",42
+"btp-health-education-2005","medical_quality","2","q19pos_c","ten","9",31
+"btp-health-education-2005","medical_quality","2","q19pos_c","ten","10",132
+"btp-health-education-2005","medical_quality","2","q19pos_c","ten","77",5
+"btp-health-education-2005","medical_quality","2","q19pos_c","ten",NA,1
+"btp-health-education-2005","medical_quality","2","q19pos_d","ten","0",14
+"btp-health-education-2005","medical_quality","2","q19pos_d","ten","1",9
+"btp-health-education-2005","medical_quality","2","q19pos_d","ten","2",19
+"btp-health-education-2005","medical_quality","2","q19pos_d","ten","3",22
+"btp-health-education-2005","medical_quality","2","q19pos_d","ten","4",20
+"btp-health-education-2005","medical_quality","2","q19pos_d","ten","5",71
+"btp-health-education-2005","medical_quality","2","q19pos_d","ten","6",35
+"btp-health-education-2005","medical_quality","2","q19pos_d","ten","7",51
+"btp-health-education-2005","medical_quality","2","q19pos_d","ten","8",45
+"btp-health-education-2005","medical_quality","2","q19pos_d","ten","9",36
+"btp-health-education-2005","medical_quality","2","q19pos_d","ten","10",126
+"btp-health-education-2005","medical_quality","2","q19pos_d","ten","77",6
+"btp-health-education-2005","medical_quality","2","q19pos_d","ten",NA,0
+"btp-health-education-2005","medical_quality","2","q19pos_e","ten","0",9
+"btp-health-education-2005","medical_quality","2","q19pos_e","ten","1",8
+"btp-health-education-2005","medical_quality","2","q19pos_e","ten","2",13
+"btp-health-education-2005","medical_quality","2","q19pos_e","ten","3",8
+"btp-health-education-2005","medical_quality","2","q19pos_e","ten","4",8
+"btp-health-education-2005","medical_quality","2","q19pos_e","ten","5",108
+"btp-health-education-2005","medical_quality","2","q19pos_e","ten","6",30
+"btp-health-education-2005","medical_quality","2","q19pos_e","ten","7",37
+"btp-health-education-2005","medical_quality","2","q19pos_e","ten","8",45
+"btp-health-education-2005","medical_quality","2","q19pos_e","ten","9",45
+"btp-health-education-2005","medical_quality","2","q19pos_e","ten","10",135
+"btp-health-education-2005","medical_quality","2","q19pos_e","ten","77",6
+"btp-health-education-2005","medical_quality","2","q19pos_e","ten",NA,2
+"btp-health-education-2005","cost_coverage","2","q19post","ten","0",2
+"btp-health-education-2005","cost_coverage","2","q19post","ten","2",1
+"btp-health-education-2005","cost_coverage","2","q19post","ten","3",1
+"btp-health-education-2005","cost_coverage","2","q19post","ten","4",1
+"btp-health-education-2005","cost_coverage","2","q19post","ten","5",18
+"btp-health-education-2005","cost_coverage","2","q19post","ten","6",14
+"btp-health-education-2005","cost_coverage","2","q19post","ten","7",21
+"btp-health-education-2005","cost_coverage","2","q19post","ten","8",39
+"btp-health-education-2005","cost_coverage","2","q19post","ten","9",39
+"btp-health-education-2005","cost_coverage","2","q19post","ten","10",315
+"btp-health-education-2005","cost_coverage","2","q19post","ten","77",1
+"btp-health-education-2005","cost_coverage","2","q19post","ten",NA,2
+"btp-health-education-2005","cost_coverage","2","q19pos_a","ten","0",9
+"btp-health-education-2005","cost_coverage","2","q19pos_a","ten","1",5
+"btp-health-education-2005","cost_coverage","2","q19pos_a","ten","2",3
+"btp-health-education-2005","cost_coverage","2","q19pos_a","ten","3",3
+"btp-health-education-2005","cost_coverage","2","q19pos_a","ten","4",7
+"btp-health-education-2005","cost_coverage","2","q19pos_a","ten","5",29
+"btp-health-education-2005","cost_coverage","2","q19pos_a","ten","6",25
+"btp-health-education-2005","cost_coverage","2","q19pos_a","ten","7",20
+"btp-health-education-2005","cost_coverage","2","q19pos_a","ten","8",29
+"btp-health-education-2005","cost_coverage","2","q19pos_a","ten","9",35
+"btp-health-education-2005","cost_coverage","2","q19pos_a","ten","10",288
+"btp-health-education-2005","cost_coverage","2","q19pos_a","ten","77",1
+"btp-health-education-2005","cost_coverage","2","q19pos_a","ten",NA,0
+"btp-health-education-2005","cost_coverage","2","q19pos_b","ten","0",2
+"btp-health-education-2005","cost_coverage","2","q19pos_b","ten","1",1
+"btp-health-education-2005","cost_coverage","2","q19pos_b","ten","2",1
+"btp-health-education-2005","cost_coverage","2","q19pos_b","ten","3",2
+"btp-health-education-2005","cost_coverage","2","q19pos_b","ten","4",5
+"btp-health-education-2005","cost_coverage","2","q19pos_b","ten","5",30
+"btp-health-education-2005","cost_coverage","2","q19pos_b","ten","6",23
+"btp-health-education-2005","cost_coverage","2","q19pos_b","ten","7",33
+"btp-health-education-2005","cost_coverage","2","q19pos_b","ten","8",39
+"btp-health-education-2005","cost_coverage","2","q19pos_b","ten","9",46
+"btp-health-education-2005","cost_coverage","2","q19pos_b","ten","10",270
+"btp-health-education-2005","cost_coverage","2","q19pos_b","ten","77",1
+"btp-health-education-2005","cost_coverage","2","q19pos_b","ten",NA,1
+"btp-health-education-2005","cost_coverage","2","q23post","cost","1",233
+"btp-health-education-2005","cost_coverage","2","q23post","cost","2",43
+"btp-health-education-2005","cost_coverage","2","q23post","cost","3",150
+"btp-health-education-2005","cost_coverage","2","q23post","cost","7",28
+"btp-health-education-2005","cost_coverage","2","q23post","cost",NA,0
+"btp-health-education-2005","employer_payment","2","q24bpost","five","1",149
+"btp-health-education-2005","employer_payment","2","q24bpost","five","2",87
+"btp-health-education-2005","employer_payment","2","q24bpost","five","3",51
+"btp-health-education-2005","employer_payment","2","q24bpost","five","4",92
+"btp-health-education-2005","employer_payment","2","q24bpost","five","5",65
+"btp-health-education-2005","employer_payment","2","q24bpost","five","7",7
+"btp-health-education-2005","employer_payment","2","q24bpost","five",NA,3
+"btp-health-education-2005","individual_payment","2","q24cpost","five","1",136
+"btp-health-education-2005","individual_payment","2","q24cpost","five","2",73
+"btp-health-education-2005","individual_payment","2","q24cpost","five","3",63
+"btp-health-education-2005","individual_payment","2","q24cpost","five","4",114
+"btp-health-education-2005","individual_payment","2","q24cpost","five","5",63
+"btp-health-education-2005","individual_payment","2","q24cpost","five","7",5
+"btp-health-education-2005","individual_payment","2","q24cpost","five",NA,0
+"btp-general-election-2004","services","b","raw_w4b42","1:7 rescale round5 float32","-1",1
+"btp-general-election-2004","services","b","raw_w4b42","1:7 rescale round5 float32","1",24
+"btp-general-election-2004","services","b","raw_w4b42","1:7 rescale round5 float32","2",26
+"btp-general-election-2004","services","b","raw_w4b42","1:7 rescale round5 float32","3",25
+"btp-general-election-2004","services","b","raw_w4b42","1:7 rescale round5 float32","4",70
+"btp-general-election-2004","services","b","raw_w4b42","1:7 rescale round5 float32","5",51
+"btp-general-election-2004","services","b","raw_w4b42","1:7 rescale round5 float32","6",43
+"btp-general-election-2004","services","b","raw_w4b42","1:7 rescale round5 float32","7",26
+"btp-general-election-2004","services","b","raw_w4b42","1:7 rescale round5 float32","9",20
+"btp-general-election-2004","services","b","raw_w4b42","1:7 rescale round5 float32",NA,13
+"btp-general-election-2004","military","b","raw_w4b45","1:7 rescale round5 float32","1",22
+"btp-general-election-2004","military","b","raw_w4b45","1:7 rescale round5 float32","2",23
+"btp-general-election-2004","military","b","raw_w4b45","1:7 rescale round5 float32","3",28
+"btp-general-election-2004","military","b","raw_w4b45","1:7 rescale round5 float32","4",31
+"btp-general-election-2004","military","b","raw_w4b45","1:7 rescale round5 float32","5",46
+"btp-general-election-2004","military","b","raw_w4b45","1:7 rescale round5 float32","6",52
+"btp-general-election-2004","military","b","raw_w4b45","1:7 rescale round5 float32","7",61
+"btp-general-election-2004","military","b","raw_w4b45","1:7 rescale round5 float32","9",23
+"btp-general-election-2004","military","b","raw_w4b45","1:7 rescale round5 float32",NA,13
+"btp-general-election-2004","trade","b","raw_w4b48","1:7 rescale round5 float32","1",7
+"btp-general-election-2004","trade","b","raw_w4b48","1:7 rescale round5 float32","2",18
+"btp-general-election-2004","trade","b","raw_w4b48","1:7 rescale round5 float32","3",27
+"btp-general-election-2004","trade","b","raw_w4b48","1:7 rescale round5 float32","4",58
+"btp-general-election-2004","trade","b","raw_w4b48","1:7 rescale round5 float32","5",51
+"btp-general-election-2004","trade","b","raw_w4b48","1:7 rescale round5 float32","6",43
+"btp-general-election-2004","trade","b","raw_w4b48","1:7 rescale round5 float32","7",61
+"btp-general-election-2004","trade","b","raw_w4b48","1:7 rescale round5 float32","9",21
+"btp-general-election-2004","trade","b","raw_w4b48","1:7 rescale round5 float32",NA,13
+"btp-general-election-2004","rights","b","raw_w4b51","1:7 rescale round5 float32","1",39
+"btp-general-election-2004","rights","b","raw_w4b51","1:7 rescale round5 float32","2",33
+"btp-general-election-2004","rights","b","raw_w4b51","1:7 rescale round5 float32","3",29
+"btp-general-election-2004","rights","b","raw_w4b51","1:7 rescale round5 float32","4",38
+"btp-general-election-2004","rights","b","raw_w4b51","1:7 rescale round5 float32","5",47
+"btp-general-election-2004","rights","b","raw_w4b51","1:7 rescale round5 float32","6",40
+"btp-general-election-2004","rights","b","raw_w4b51","1:7 rescale round5 float32","7",36
+"btp-general-election-2004","rights","b","raw_w4b51","1:7 rescale round5 float32","9",24
+"btp-general-election-2004","rights","b","raw_w4b51","1:7 rescale round5 float32",NA,13
+"btp-general-election-2004","health_insurance","b","raw_w4b54","1:7 rescale round5 float32","-1",1
+"btp-general-election-2004","health_insurance","b","raw_w4b54","1:7 rescale round5 float32","1",74
+"btp-general-election-2004","health_insurance","b","raw_w4b54","1:7 rescale round5 float32","2",32
+"btp-general-election-2004","health_insurance","b","raw_w4b54","1:7 rescale round5 float32","3",34
+"btp-general-election-2004","health_insurance","b","raw_w4b54","1:7 rescale round5 float32","4",47
+"btp-general-election-2004","health_insurance","b","raw_w4b54","1:7 rescale round5 float32","5",31
+"btp-general-election-2004","health_insurance","b","raw_w4b54","1:7 rescale round5 float32","6",24
+"btp-general-election-2004","health_insurance","b","raw_w4b54","1:7 rescale round5 float32","7",27
+"btp-general-election-2004","health_insurance","b","raw_w4b54","1:7 rescale round5 float32","9",16
+"btp-general-election-2004","health_insurance","b","raw_w4b54","1:7 rescale round5 float32",NA,13
+"btp-general-election-2004","marriage","b","raw_w4b57","1:7 rescale round5 float32","1",55
+"btp-general-election-2004","marriage","b","raw_w4b57","1:7 rescale round5 float32","2",9
+"btp-general-election-2004","marriage","b","raw_w4b57","1:7 rescale round5 float32","3",17
+"btp-general-election-2004","marriage","b","raw_w4b57","1:7 rescale round5 float32","4",34
+"btp-general-election-2004","marriage","b","raw_w4b57","1:7 rescale round5 float32","5",16
+"btp-general-election-2004","marriage","b","raw_w4b57","1:7 rescale round5 float32","6",25
+"btp-general-election-2004","marriage","b","raw_w4b57","1:7 rescale round5 float32","7",111
+"btp-general-election-2004","marriage","b","raw_w4b57","1:7 rescale round5 float32","9",19
+"btp-general-election-2004","marriage","b","raw_w4b57","1:7 rescale round5 float32",NA,13
+"btp-general-election-2004","services","f","raw_w4f42","1:7 rescale round5 float32","-1",1
+"btp-general-election-2004","services","f","raw_w4f42","1:7 rescale round5 float32","1",23
+"btp-general-election-2004","services","f","raw_w4f42","1:7 rescale round5 float32","2",21
+"btp-general-election-2004","services","f","raw_w4f42","1:7 rescale round5 float32","3",30
+"btp-general-election-2004","services","f","raw_w4f42","1:7 rescale round5 float32","4",66
+"btp-general-election-2004","services","f","raw_w4f42","1:7 rescale round5 float32","5",56
+"btp-general-election-2004","services","f","raw_w4f42","1:7 rescale round5 float32","6",40
+"btp-general-election-2004","services","f","raw_w4f42","1:7 rescale round5 float32","7",21
+"btp-general-election-2004","services","f","raw_w4f42","1:7 rescale round5 float32","9",8
+"btp-general-election-2004","services","f","raw_w4f42","1:7 rescale round5 float32",NA,33
+"btp-general-election-2004","military","f","raw_w4f45","1:7 rescale round5 float32","-1",2
+"btp-general-election-2004","military","f","raw_w4f45","1:7 rescale round5 float32","1",19
+"btp-general-election-2004","military","f","raw_w4f45","1:7 rescale round5 float32","2",23
+"btp-general-election-2004","military","f","raw_w4f45","1:7 rescale round5 float32","3",32
+"btp-general-election-2004","military","f","raw_w4f45","1:7 rescale round5 float32","4",28
+"btp-general-election-2004","military","f","raw_w4f45","1:7 rescale round5 float32","5",45
+"btp-general-election-2004","military","f","raw_w4f45","1:7 rescale round5 float32","6",58
+"btp-general-election-2004","military","f","raw_w4f45","1:7 rescale round5 float32","7",42
+"btp-general-election-2004","military","f","raw_w4f45","1:7 rescale round5 float32","9",17
+"btp-general-election-2004","military","f","raw_w4f45","1:7 rescale round5 float32",NA,33
+"btp-general-election-2004","trade","f","raw_w4f48","1:7 rescale round5 float32","-1",1
+"btp-general-election-2004","trade","f","raw_w4f48","1:7 rescale round5 float32","1",9
+"btp-general-election-2004","trade","f","raw_w4f48","1:7 rescale round5 float32","2",19
+"btp-general-election-2004","trade","f","raw_w4f48","1:7 rescale round5 float32","3",23
+"btp-general-election-2004","trade","f","raw_w4f48","1:7 rescale round5 float32","4",50
+"btp-general-election-2004","trade","f","raw_w4f48","1:7 rescale round5 float32","5",60
+"btp-general-election-2004","trade","f","raw_w4f48","1:7 rescale round5 float32","6",44
+"btp-general-election-2004","trade","f","raw_w4f48","1:7 rescale round5 float32","7",48
+"btp-general-election-2004","trade","f","raw_w4f48","1:7 rescale round5 float32","9",12
+"btp-general-election-2004","trade","f","raw_w4f48","1:7 rescale round5 float32",NA,33
+"btp-general-election-2004","rights","f","raw_w4f51","1:7 rescale round5 float32","1",40
+"btp-general-election-2004","rights","f","raw_w4f51","1:7 rescale round5 float32","2",22
+"btp-general-election-2004","rights","f","raw_w4f51","1:7 rescale round5 float32","3",27
+"btp-general-election-2004","rights","f","raw_w4f51","1:7 rescale round5 float32","4",52
+"btp-general-election-2004","rights","f","raw_w4f51","1:7 rescale round5 float32","5",55
+"btp-general-election-2004","rights","f","raw_w4f51","1:7 rescale round5 float32","6",36
+"btp-general-election-2004","rights","f","raw_w4f51","1:7 rescale round5 float32","7",21
+"btp-general-election-2004","rights","f","raw_w4f51","1:7 rescale round5 float32","9",13
+"btp-general-election-2004","rights","f","raw_w4f51","1:7 rescale round5 float32",NA,33
+"btp-general-election-2004","health_insurance","f","raw_w4f54","1:7 rescale round5 float32","-1",1
+"btp-general-election-2004","health_insurance","f","raw_w4f54","1:7 rescale round5 float32","1",47
+"btp-general-election-2004","health_insurance","f","raw_w4f54","1:7 rescale round5 float32","2",32
+"btp-general-election-2004","health_insurance","f","raw_w4f54","1:7 rescale round5 float32","3",39
+"btp-general-election-2004","health_insurance","f","raw_w4f54","1:7 rescale round5 float32","4",43
+"btp-general-election-2004","health_insurance","f","raw_w4f54","1:7 rescale round5 float32","5",23
+"btp-general-election-2004","health_insurance","f","raw_w4f54","1:7 rescale round5 float32","6",36
+"btp-general-election-2004","health_insurance","f","raw_w4f54","1:7 rescale round5 float32","7",28
+"btp-general-election-2004","health_insurance","f","raw_w4f54","1:7 rescale round5 float32","9",17
+"btp-general-election-2004","health_insurance","f","raw_w4f54","1:7 rescale round5 float32",NA,33
+"btp-general-election-2004","marriage","f","raw_w4f57","1:7 rescale round5 float32","1",54
+"btp-general-election-2004","marriage","f","raw_w4f57","1:7 rescale round5 float32","2",9
+"btp-general-election-2004","marriage","f","raw_w4f57","1:7 rescale round5 float32","3",15
+"btp-general-election-2004","marriage","f","raw_w4f57","1:7 rescale round5 float32","4",33
+"btp-general-election-2004","marriage","f","raw_w4f57","1:7 rescale round5 float32","5",14
+"btp-general-election-2004","marriage","f","raw_w4f57","1:7 rescale round5 float32","6",30
+"btp-general-election-2004","marriage","f","raw_w4f57","1:7 rescale round5 float32","7",95
+"btp-general-election-2004","marriage","f","raw_w4f57","1:7 rescale round5 float32","9",16
+"btp-general-election-2004","marriage","f","raw_w4f57","1:7 rescale round5 float32",NA,33

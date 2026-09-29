@@ -1,0 +1,160 @@
+### BTP05 Health Educ ###
+### 7/6/09 ###
+## Indices: Health indices are all single item. Not sure if they are good for use --  ##
+## Currently blank: timebtw, normsd, readbrief (don't have this), length (online), NO INCOME variable
+
+gen group=groupnum
+drop if filter != 1
+## N=454
+save "/Users/nurikim/Desktop/Research/04_Research (Spring Quart, 09)/Gaurav/HLM/97 BTP HealthEduc/btp05_hlm.dta"
+
+gen pollid = 97
+gen country = 1
+gen mode = 1
+gen timebtw = .
+gen length = .
+gen numitems = 6
+## Entire sample T1know = .2771478 (N=3298) 
+gen t1knowlevel = .2771478
+
+gen pollgroup=group
+recode pollgroup (1=9701) (2=9702) (3=9703) (4=9704) (5=9705) (6=9706) (7=9707) (8=9708) (9=9709)(10=9710)(11=9711)(12=9712)(13=9713)(14=9714)(15=9715)(16=9716) (17=9717) (18=9718) (19=9719)(20=9720)(21=9721) (22=9722) (23=9723) (24=9724) (25=9725) (26=9726) (27=9727) (28=9728)(29=9729)(30=9730)
+
+egen groupsize = count(filter), by(group)
+
+gen afemale = female 
+replace afemale=. if afemale==0
+egen cfemale = count(afemale), by(group)
+gen pfemale = cfemale/groupsize
+
+gen highknow=.
+replace highknow=1 if t1know >= .5
+egen chighknow = count(highknow), by(group)
+gen phighknow = chighknow/groupsize
+
+gen highinc=.
+gen phighinc=.
+gen hhincome=.
+
+
+gen minority = .replace minority=1 if racewh==0replace minority=0 if racewh==1gen aminority = minority
+replace aminority=. if aminority==0
+egen cminority = count(aminority), by(group)
+gen pminority = cminority/groupsize
+
+gen educ4=.
+replace educ4=1 if educ==1
+replace educ4=2 if educ==2
+replace educ4=3 if educ==3
+replace educ4=3 if educ==4
+replace educ4=4 if educ==5
+replace educ4=4 if educ==6
+egen ahigheduc = eqany(educ4), values(4)
+replace ahigheduc=. if ahigheduc==0
+egen chigheduc = count(ahigheduc), by(group)
+gen phigheduc = chigheduc/groupsize
+
+by group: egen meant1know = mean(t1know)
+by group: egen meant2know = mean(t2know)
+
+## normsd
+gen normsd=.
+
+## sqrtavgvar
+alpha t1q19a t1q19b t1q19c t1q23, gen(t1costcov)
+alpha t2q19a t2q19b t2q19c t2q23, gen(t2costcov)
+
+alpha t1q19d t1q19e t1q19f, gen(t1medqual)
+alpha t2q19d t2q19e t2q19f, gen(t2medqual)
+
+alpha t1q24a t1q24f, gen(t1govinv)
+alpha t2q24a t2q24f, gen(t2govinv)
+
+gen t1reform=t1q3
+gen t2reform=t2q3
+gen t1testsl=t1q6
+gen t2testsl=t2q6
+gen t1nclb=t1q12
+gen t2nclb=t2q12
+gen t1emplypay=t1q24b
+gen t2emplypay=t2q24b
+gen t1indivpay=t1q24c
+gen t2indivpay=t2q24c
+
+by groupnum: egen t1reform_sd = sd(t1q3)
+by groupnum: egen t1fcvsch_sd = sd(t1fcvsch)
+by groupnum: egen t1mmtaxe_sd = sd(t1mmtaxe)
+by groupnum: egen t1stest_sd = sd(t1stest)
+by groupnum: egen t1testsl_sd = sd(t1q6)
+by groupnum: egen t1nclb_sd = sd(t1q12)
+
+by groupnum: egen t1costcov_sd = sd(t1costcov) 
+by groupnum: egen t1medqual_sd = sd(t1medqual)
+by groupnum: egen t1govinv_sd = sd(t1govinv)
+by groupnum: egen t1emplypay_sd = sd(t1q24b)
+by groupnum: egen t1indivpay_sd = sd(t1q24c)
+
+gen t1reform_var = t1reform_sd^2
+gen t1fcvsch_var = t1fcvsch_sd^2
+gen t1mmtaxe_var = t1mmtaxe_sd^2
+gen t1stest_var = t1stest_sd^2
+gen t1testsl_var = t1testsl_sd^2
+gen t1nclb_var = t1nclb_sd^2
+
+gen t1costcov_var = t1costcov_sd^2
+gen t1medqual_var = t1medqual_sd^2
+gen t1govinv_var = t1govinv_sd^2
+gen t1emplypay_var = t1emplypay_sd^2
+gen t1indivpay_var = t1indivpay_sd^2
+
+egen avgvar = rowmean(t1costcov_var  t1medqual_var  t1govinv_var  t1emplypay_var  t1indivpay_var t1reform_var  t1mmtaxe_var  t1fcvsch_var  t1stest_var  t1testsl_var  t1nclb_var)
+gen sqrtavgvar=sqrt(avgvar)
+
+## genvar ==do in R
+gen genvar=.
+
+gen readbrief=.
+gen ppage=age
+egen higheduc = eqany(educ4), values(4)
+
+
+gen ext1 = abs(t1costcov-0.5)
+gen ext2 = abs(t1medqual-0.5) 
+gen ext3 = abs(t1govinv-0.5) 
+gen ext4 = abs(t1emplypay-0.5) 
+gen ext5 = abs(t1indivpay-0.5)
+gen ext6 = abs(t1reform-0.5)
+gen ext7 = abs(t1mmtaxe-0.5)
+gen ext8 = abs(t1fcvsch-0.5)
+gen ext9 = abs(t1stest-0.5)
+gen ext10 = abs(t1testsl-0.5)
+gen ext11= abs(t1nclb-0.5)
+
+egen attextreme = rowmean ( ext1 ext2 ext3 ext4 ext5 ext6 ext7 ext8 ext9 ext10 ext11)
+
+gen diff_reform= t2reform-t1reform
+gen diff_mmtaxe=t2mmtaxe-t1mmtaxe
+gen diff_fcvsch=t2fcvsch-t1fcvsch
+gen diff_stest=t2stest-t1stest
+gen diff_testsl=t2testsl-t1testsl
+gen diff_nclb=t2nclb-t1nclb
+gen diff_costcov=t2costcov-t1costcov
+gen diff_medqual=t2medqual-t1medqual
+gen diff_govinv=t2govinv-t1govinv
+gen diff_emplypay=t2emplypay-t1emplypay
+gen diff_indivpay=t2indivpay-t1indivpay
+
+save "/Users/nurikim/Desktop/Research/04_Research (Spring Quart, 09)/Gaurav/HLM/97 BTP HealthEduc/btp05_hlm.dta", replace
+
+
+keep pollid country mode t1knowlevel timebtw length numitems pollgroup groupsize pfemale phighknow phighinc pminority phigheduc meant1know meant2know normsd sqrtavgvar genvar readbrief t1know t2know ppage educ4 minority hhincome female attextreme highinc t1polint t1costcov  t1medqual  t1govinv  t1emplypay  t1indivpay t1reform  t1mmtaxe  t1fcvsch  t1stest  t1testsl  t1nclb t2costcov  t2medqual  t2govinv  t2emplypay  t2indivpay t2reform  t2mmtaxe  t2fcvsch  t2stest  t2testsl  t2nclb diff_reform diff_mmtaxe diff_fcvsch diff_stest diff_testsl diff_nclb diff_costcov diff_medqual diff_govinv diff_emplypay diff_indivpay t1reform_var t1fcvsch_var t1mmtaxe_var t1stest_var t1testsl_var t1nclb_var t1costcov_var t1medqual_var t1govinv_var t1emplypay_var t1indivpay_var avgvar
+
+save "/Users/nurikim/Desktop/Research/04_Research (Spring Quart, 09)/Gaurav/HLM/97 BTP HealthEduc/btp05_hlm_small.dta"
+
+
+use "/Users/nurikim/Desktop/Research/04_Research (Spring Quart, 09)/Gaurav/HLM/Aggregate Data/agg_nuri.dta"
+
+append using "/Users/nurikim/Desktop/Research/04_Research (Spring Quart, 09)/Gaurav/HLM/97 BTP HealthEduc/btp05_hlm_small.dta"
+
+
+save "/Users/nurikim/Desktop/Research/04_Research (Spring Quart, 09)/Gaurav/HLM/Aggregate Data/agg_nuri.dta", replace

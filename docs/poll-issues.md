@@ -2558,6 +2558,45 @@ newer core reader recomputes group knowledge from the unchanged attendee panel.
 No downstream models or papers were re-estimated; unchanged attendee inputs
 do not establish unchanged estimates for readers of the corrected summaries.
 
+### BTPGE-08: All six attitude placements reviewed against raw responses
+
+The six historical indices are single self-placements, not the larger composites
+in the newly preserved [authored Wave 4 memo](../data/btp-general-election-2004/codebooks/online-poll-indices-wave-4.pdf).
+The [questionnaire](../data/btp-general-election-2004/questionnaires.pdf),
+source value labels and original answers agree on these endpoints in both waves:
+
+| Item | Score 0 | Score 1 |
+| --- | --- | --- |
+| Q42 services/taxes | Fewer services/lower taxes | More services/higher taxes |
+| Q45 military intervention | Intervene on our own | Obtain international approval |
+| Q48 trade | Pursue free trade | Protect US industries |
+| Q51 rights/security | Ensure constitutional rights | Find every potential terrorist |
+| Q54 health insurance | Government plan | Individuals/employers |
+| Q57 marriage | Allow same-sex marriage | Constitutional prohibition |
+
+`review_btp_attitudes.R` independently reconstructs all twelve wave/index series
+from the original raw file joined by case ID, including the historical five-decimal
+rounding and float32 storage. Every value and missingness pattern matches both the
+maintained builder and selected-source historical fields. The 299 source people,
+248-person aggregate selection and separate 250-person battery are preserved.
+The twelve observed-answer counts are in `audit/btp-attitudes/index_summary.csv`.
+
+Source codes -4 through -1, 9 and system missing remain missing attitudes. The
+questionnaire prints “haven't thought much” in the eighth response position,
+but the deposited value labels encode it as 9; code 8 is labeled blank and does
+not occur in these selected raw fields. A printed response position is not a
+source numeric code. The thirteen absent baselines and 33 absent exits have no
+observed attitude scores. No midpoint is inserted for nonanswers or absent forms.
+
+The memo includes broader multilateralism, trade, taxation and health composites.
+Replacing the six historical placements with those composites would change the
+construct, rather than repair a demonstrated coding error. The public event
+report also uses a different approximately 200-person deliberator sample and
+reports different items; its percentages do not establish a replacement key for
+these six placements. No numerical attitude correction is indicated by this
+review. BTPGE-06's contradictory attendance flag remains a separate documented
+source conflict; this audit does not change the preserved membership decision.
+
 ## BTP Health and Education 2005 — btp-health-education-2005
 
 ### BTPHE-01: Missing gender remains missing (corrected)
@@ -2704,6 +2743,100 @@ follow the new key; observed-response counts and missingness do not change.
 The committed `dp-learning` reader at `829face` still selects the same 10,598
 people. Only BTP knowledge inputs change, for 345 people (241 baseline and 280
 departure scores). No downstream models or papers were re-estimated.
+
+### BTPHE-05: Correct four attitude labels; preserve all numeric definitions
+
+A component-by-component review of both questionnaires, source code labels,
+raw responses and the preserved [historical index script](../data/btp-health-education-2005/source-materials/historical-index-recoding.txt)
+finds four misleading catalog labels. These are label corrections only:
+
+| Historical label | Reviewed label | What is scored |
+| --- | --- | --- |
+| Charter Schools vs. Vouchers | Support for Charter Schools and Vouchers | Mean support for both Q7a charter schools and Q7b vouchers; neither item is reversed |
+| Willing to Pay More For Better Health Coverage | Health Care Costs and Coverage | Mean importance of insurance cost, uninsured Americans and prescription costs (Q19a–c), plus willingness to pay more for wider coverage (Q23) |
+| Quality of Medical Care | Importance of Improving Medical Care | Mean importance of improving medical errors, malpractice and quality for insured people (Q19d–f), not an assessment of current quality |
+| No Child Left Behind | Opposition to No Child Left Behind | Q12 code 1 is strongly disapprove and scores 1; code 5 is strongly approve and scores 0 |
+
+The remaining seven constructs were also reviewed: reform of the existing
+school system (Q3, higher = reform); school funding (Q7c–f plus Q8f, higher =
+support/importance); standardized testing (Q4/Q5, higher = more testing);
+local control of testing (Q6, higher = local); government involvement (Q24a/f,
+higher = support for single payer/Medicare–Medicaid funding); employer coverage
+(Q24b, higher = support); individual coverage (Q24c, higher = support).
+The irregular post field names `q5post_m`, `q19post` and `q19pos_a` through
+`q19pos_e` match the question labels and were checked individually.
+
+All 22 wave/index series reproduce exactly from independently specified component
+formulas, including the original stored values and missingness. The 454-person
+sample is unchanged. All respondents have substantial observed questionnaire
+content in both waves: at least 18 of the 23 attitude input fields are nonmissing.
+An isolated nonanswer is omitted from its attitude mean; an entirely missing
+index stays missing. There is no fixed-denominator missing-as-zero attitude
+rule. `alpha`'s sequential float32 addition is retained, with division by the
+number of observed components, not the nominal number of questions.
+
+The public review script `scripts/review_btp_attitudes.R` produces per-index
+counts and means, component-denominator counts, raw-response frequencies,
+alternative-definition comparisons and the report comparisons below in
+`audit/btp-attitudes/`. Of the multi-item scores, 36 baseline and 24 post funding
+indices use fewer than five components; 40 baseline and 31 post cost/coverage
+indices use fewer than four. These are the documented available-item means,
+not newly discovered coding errors.
+
+Rejected candidate: the printed Q4 questionnaire lists “too much” first, but
+actual numeric labels are 1 = not enough, 2 = about right, 3 = too much. The
+current reversal therefore correctly aligns Q4 with Q5's higher = more testing.
+Q24 likewise has numeric agreement codes opposite to the printed option order.
+Changing those formulas using printed list positions would introduce errors.
+
+BTPHE-02 remains an authored construct choice: Q8f measures importance of school
+funding, whereas Q7c–f measure support for tax-financed proposals. Omitting Q8f
+would change 366 baseline and 371 post values and make three additional scores
+missing in each wave. Means would change .65371145 to .61448633 before and
+.65306107 to .62244444 after. This is a narrower four-item construct, not a
+verified correction; preserve the original five-item definition pending a
+substantive decision. The approved Q17 knowledge correction is untouched.
+
+### BTPHE-06: Preserve the wider source and identify the report-sample gap
+
+The public [complete source projection](../data/btp-health-education-2005/source-responses.parquet)
+retains all 3,298 rows from `data/BTP/2005/data/2005alice.dta`, original SHA256
+`fdff148b90c33fdb98d122b281f3077495564cec0bcabbfee5424b69fc172c95`.
+It preserves every source column except `username`, `city` and `zip`, and adds
+`source_row` as a stable row identifier (735 columns total). Questionnaire
+verbatim responses Q44/Q45 are retained. The accompanying variable dictionary and existing `value-labels.csv` preserve
+source coding. The full-source value labels are byte-identical to the existing
+file, which is reused rather than duplicated. Original case IDs contain 202 missing entries
+and one repeated nonmissing ID, so they are not a unique full-file row key.
+No source rows are deduplicated. The selected `filter == 1` subset contains exactly
+454 unique IDs; all current participant attitude inputs match it exactly by ID.
+
+The earlier `calibration-responses.parquet` has only eight columns: row ID,
+case ID and six baseline knowledge questions. It cannot support the attitude,
+attendance or report-sample checks now made reproducible from the wider source.
+The new source does not replace the selected respondent build or expand any
+analysis sample.
+
+The [event report](../data/btp-health-education-2005/reports/btp-health-education-results.pdf),
+p. 4, describes 360 participants attending at least three discussions. The
+wider source has exactly 360 people with `stotal >= 3`, all assigned treatment;
+only 321 belong to the selected 454-person dataset. The other 39 have missing
+`groupnum`, despite observed questionnaire answers and recorded attendance.
+Thus the report and current
+aggregate have different selection rules. Even the full-source 360 do not
+reproduce all reported percentages: NCLB approval is 29.44% before and 29.44%
+after (report 39% and 31%); local control of testing is 27.22% and 33.33%
+(report 31% and 38%). The 454-person sample gives 27.75% and 28.63% NCLB
+approval. Simply selecting three-session attendees does not close this gap.
+
+These comparisons retain don't-know responses in the denominator and also show
+results excluding system missingness. No survey-weight field is present in the
+recovered full file. A report-era extract, weighting file or author analysis
+specification is needed to establish the remaining difference. Do not change
+source answers, reverse established labels, or silently substitute a new sample
+to force report agreement. The report bridge is unresolved; the independent
+questionnaire-to-current-score review above is complete for all eleven indices.
+
 
 ## BTP Online Primaries 2004 — btp-online-primaries-2004
 
@@ -3181,6 +3314,34 @@ coefficients when this correction is applied on top of ZG-04. This supplies
 evidence to remove that downstream age filter after the upstream correction
 is adopted. `dp-distortions` does not use these fields; `dp-deliberately`
 imports the newly missing age.
+
+### EURO-07: Make both attitude labels match the numeric direction
+
+The climate item Q21 places combating climate change at 0 and protecting the
+economy at 10. The maintained `(10 - response) / 10` score is therefore higher
+for prioritizing climate action. Rename “Combatting Climate Change” to
+“Priority for Combating Climate Change.” Immigration Q11_1 asks about stronger
+border controls: code 1 favors them strongly and code 5 opposes them strongly.
+The maintained `(response - 1) / 4` score is higher for opposition. Rename
+“Stricter Immigration Control” to “Opposition to Stronger Border Controls.”
+These are factual label corrections with no numerical reversal.
+
+The retained source codebook, SAV labels and event attitude report Q11/Q21 agree
+on these meanings. Independent reconstruction checks all four wave/index series
+for all 4,384 source rows, the 348 historical participants and their baseline
+extremity, with no value or missingness discrepancies. Missing codes 997–999
+remain explicit nonresponse reasons. Results are retained in
+`audit/btp-attitudes/europolis_index_checks.csv`.
+
+As documented in EURO-05, the appendix's 334 paired Q21 observations reproduce
+.587/.671 after rounding (.58652695/.67065868). The standalone attitude report
+uses the opposite climate orientation and gives .414/.329; the paired-data
+complements are .41347305/.32934132. For immigration the report gives support
+means .712/.656, versus paired-data support .71716418/.65597015. These small
+report/source differences do not establish different respondent recodes. Keep
+current values and the separate fielded-questionnaire gap in EURO-01; neither a
+label repair nor source-value parity establishes that the misfiled form is valid.
+
 
 ## National Issues Convention 1996 — nic-1996
 

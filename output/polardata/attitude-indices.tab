@@ -30,14 +30,14 @@ poll_id	poll_name	n_indices	att_index	t1var	t2_t3var	dpnum
 96	San Mateo	4	Open space areas rezoned to allow housing	sm.t1openspace	sm.t2openspace	17
 96	San Mateo	4	Land use: Local control vs. regional coordination within county	sm.t1countyl	sm.t2countyl	17
 97	BTP 2005 Health Education	11	Reforming Education	btp05.t1reform	btp05.t2reform	18
-97	BTP 2005 Health Education	11	Charter Schools vs. Vouchers	btp05.t1fcvsch	btp05.t2fcvsch	18
+97	BTP 2005 Health Education	11	Support for Charter Schools and Vouchers	btp05.t1fcvsch	btp05.t2fcvsch	18
 97	BTP 2005 Health Education	11	Tax Money to Public Schools	btp05.t1mmtaxe	btp05.t2mmtaxe	18
 97	BTP 2005 Health Education	11	Standardized Testing	btp05.t1stest	btp05.t2stest	18
 97	BTP 2005 Health Education	11	Control of Educational Testing: Local Boards vs. States	btp05.t1testsl	btp05.t2testsl	18
-97	BTP 2005 Health Education	11	No Child Left Behind	btp05.t1nclb	btp05.t2nclb	18
-97	BTP 2005 Health Education	11	Willing to Pay More For Better Health Coverage	btp05.t1costcov	btp05.t2costcov	18
+97	BTP 2005 Health Education	11	Opposition to No Child Left Behind	btp05.t1nclb	btp05.t2nclb	18
+97	BTP 2005 Health Education	11	Health Care Costs and Coverage	btp05.t1costcov	btp05.t2costcov	18
 97	BTP 2005 Health Education	11	Role of Government in Healthcar	btp05.t1govinv	btp05.t2govinv	18
-97	BTP 2005 Health Education	11	Quality of Medical Care	btp05.t1medqual	btp05.t2medqual	18
+97	BTP 2005 Health Education	11	Importance of Improving Medical Care	btp05.t1medqual	btp05.t2medqual	18
 97	BTP 2005 Health Education	11	Employers Must Provide Health Insurance	btp05.t1emplypay	btp05.t2emplypay	18
 97	BTP 2005 Health Education	11	Individuals Must Buy Health Insurance	btp05.t1indivpay	btp05.t2indivpay	18
 20	UK EU	4	Relations with EU	ukeu.eurelat1g	ukeu.eurelat2g	1
@@ -126,5 +126,5 @@ poll_id	poll_name	n_indices	att_index	t1var	t2_t3var	dpnum
 93	By the People: National	9	Increasing Foreign Aid	btp03.olt1forai1	btp03.olt2forai1	14
 93	By the People: National	9	Fighting Poverty and Suffering	btp03.olt1global	btp03.olt2global	14
 93	By the People: National	9	Liberalizing Trade	btp03.olt1trade	btp03.olt2trade	14
-71	Europolis	2	Combatting Climate Change	eu2009.cc1	eu2009.cc2	11
-71	Europolis	2	Stricter Immigration Control	eu2009.imm1	eu2009.imm2	11
+71	Europolis	2	Priority for Combating Climate Change	eu2009.cc1	eu2009.cc2	11
+71	Europolis	2	Opposition to Stronger Border Controls	eu2009.imm1	eu2009.imm2	11

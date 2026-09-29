@@ -1,0 +1,10 @@
+"field","index","scope","n","differences","n_missing","mean"
+"V1Q21","climate","respondent",4384,0,166,0.569393077287815
+"V1Q21","climate","aggregate",348,0,10,0.586686390532544
+"V3Q21","climate","respondent",4384,0,4041,0.66530612244898
+"V3Q21","climate","aggregate",348,0,5,0.66530612244898
+"V1Q11_1","immigration","respondent",4384,0,66,0.246294580824457
+"V1Q11_1","immigration","aggregate",348,0,4,0.284156976744186
+"V3Q11_1","immigration","respondent",4384,0,4045,0.342920353982301
+"V3Q11_1","immigration","aggregate",348,0,9,0.342920353982301
+"Q21+Q11_1","attitude_extremity","aggregate",348,0,1,0.285590778097983
