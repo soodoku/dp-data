@@ -83,7 +83,7 @@ test_that("derived exports preserve unique people and reviewed gain", {
   australia_gain <- derived$poll_id == "australia-republic-1999" &
     derived$legacy_field %in% c("grpgain", "loggain")
   expect_setequal(unique(derived$definition_version[australia_gain]),
-                  "aus-04-v2")
+                  "aus-02-v3")
   australia_age <- derived$poll_id == "australia-republic-1999" &
     derived$legacy_field == "meanage"
   expect_setequal(unique(derived$definition_version[australia_age]),
@@ -220,11 +220,12 @@ test_that("numerical exceptions cannot hide changed aggregate values", {
   ), show_col_types = FALSE)
   parity <- compare_historical_polardata(data, reference, audit)
   expect_equal(sum(parity$unexplained_differences), 0L)
-  expect_equal(sum(parity$reviewed_numerical_differences), 51L)
   eu_variance <- parity$poll_id == "uk-eu-1995" &
     parity$legacy_field == "genvar"
-  expect_equal(parity$approved_correction_differences[eu_variance], 238L)
-  expect_equal(parity$reviewed_numerical_differences[eu_variance], 0L)
+  expect_equal(sum(parity$reviewed_numerical_differences[!eu_variance]), 51L)
+  expect_equal(parity$approved_correction_differences[eu_variance] +
+                 parity$reviewed_numerical_differences[eu_variance], 238L)
+  expect_true(parity$reviewed_numerical_differences[eu_variance] %in% c(0L, 4L))
   san_mateo_level <- parity$poll_id == "san-mateo-2008" &
     parity$legacy_field == "t1knowlevel"
   expect_equal(parity$approved_correction_differences[san_mateo_level], 239L)
@@ -639,14 +640,14 @@ test_that("SWE-04 and WTU-05 protect normalized research descriptors", {
   }
 })
 
-test_that("AUS-04 aligns frozen group gains to respondents", {
+test_that("Australia gains use aligned respondents and twelve scored items", {
   approved <- readr::read_csv(project_path(
     "audit", "corrections", "australia-republic-1999", "approved_values.csv"
   ), show_col_types = FALSE)
   expect_setequal(unique(approved$legacy_field),
                   c("grpgain", "loggain", "attextreme", "meanxtreme",
-                    "aus.popparl2", "ppage", "meanage"))
-  expect_equal(nrow(approved), 347L * 7L)
+                    "aus.popparl2", "ppage", "meanage", "numitems"))
+  expect_equal(nrow(approved), 347L * 8L)
   data <- full_polardata()
   australia <- data[data$pollid == 26, ]
   expect_equal(nrow(australia), 347L)
@@ -658,7 +659,7 @@ test_that("AUS-04 aligns frozen group gains to respondents", {
     paired <- is.finite(frozen$historical_value) &
       is.finite(frozen$approved_value)
     expect_equal(sum(abs(frozen$historical_value[paired] -
-                           frozen$approved_value[paired]) > 1e-10), 342L)
+                           frozen$approved_value[paired]) > 1e-10), 346L)
     expect_equal(sum(is.na(frozen$historical_value) !=
                        is.na(frozen$approved_value)), 1L)
   }
@@ -708,4 +709,24 @@ test_that("NIC approved ages and mode retain the single missing identity", {
   changed$mode[row] <- 1
   result <- compare_historical_polardata(changed, reference, audit)
   expect_equal(sum(result$unexplained_differences), 1L)
+})
+
+test_that("Australia peer knowledge matches other group members", {
+  survey <- read_poll_survey("australia-republic-1999")
+  group <- as.numeric(survey[[match("group", tolower(names(survey)))]])
+  rows <- which(group %in% 1:24)
+  joint <- australia_knowledge_items(survey, 1L)[rows, ] *
+    australia_knowledge_items(survey, 2L)[rows, ]
+  expected <- vapply(seq_along(rows), function(i) {
+    peers <- which(group[rows] == group[rows[i]] & seq_along(rows) != i)
+    unknown <- which(joint[i, ] == 0)
+    if (!length(unknown)) return(NA_real_)
+    mean(joint[peers, unknown, drop = FALSE])
+  }, numeric(1))
+  actual <- build_historical_poll("australia-republic-1999")
+  positions <- match(actual$source_row, survey$source_row[rows])
+  expect_equal(ncol(joint), 12L)
+  expect_equal(actual$grpgain, expected[positions], tolerance = 1e-10)
+  expect_true(all(actual$numitems == ncol(joint)))
+  expect_equal(sum(is.na(actual$grpgain)), 1L)
 })

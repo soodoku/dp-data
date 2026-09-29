@@ -1,5 +1,6 @@
 source(file.path(root, "R", "polardata_derived.R"))
 source(file.path(root, "R", "polardata_numerics.R"))
+source(file.path(root, "R", "polardata_parity.R"))
 
 test_that("covariance diagnostics distinguish singular and indefinite data", {
   singular <- cbind(seq_len(6), seq_len(6))
@@ -79,7 +80,7 @@ test_that("full rank matrices never receive numerical singularity exceptions", {
   )$numerical_exception)
 })
 
-test_that("reviewed public source matrices identify only the 23 known groups", {
+test_that("reviewed public source matrices identify only registered inputs", {
   for (module in c(
     "respondents", "polardata", "polardata_assembly", "polardata_core",
     "polardata_btp_reviewed", "respondent_zeguo"
@@ -96,7 +97,8 @@ test_that("reviewed public source matrices identify only the 23 known groups", {
   )
   result <- audit_historical_covariances(benchmark, reviewed)
   accepted <- result[result$numerical_exception, ]
-  expect_equal(nrow(accepted), 8)
+  expect_equal(nrow(accepted), 9)
+  expect_equal(sum(accepted$reference_kind == "approved"), 1L)
   expect_setequal(accepted$pollgroup, reviewed$pollgroup)
   expect_setequal(
     accepted$pollgroup[accepted$covariance_class == "indefinite_and_singular"],
@@ -108,6 +110,39 @@ test_that("reviewed public source matrices identify only the 23 known groups", {
   changed$attitudes_sha256[1] <- "changed"
   rejected <- audit_historical_covariances(benchmark, changed)
   expect_false(rejected$numerical_exception[
-    rejected$pollgroup == changed$pollgroup[1]
+    rejected$pollgroup == changed$pollgroup[1] &
+      rejected$reference_kind == "historical"
   ])
+  changed <- reviewed
+  corrected_hash <- accepted$attitudes_sha256[
+    accepted$reference_kind == "approved"
+  ]
+  changed$attitudes_sha256[
+    changed$attitudes_sha256 == corrected_hash
+  ] <- "changed"
+  rejected <- audit_historical_covariances(benchmark, changed)
+  expect_false(any(rejected$reference_kind == "approved"))
+})
+
+test_that("approved covariance exceptions require both verified values", {
+  attitudes <- cbind(seq_len(6), seq_len(6))
+  group <- rep(99, 6)
+  reference <- tibble::tibble(pollgroup = 99, genvar = 1e-5)
+  audit <- group_covariance_audit(attitudes, group, "example", reference)
+  reviewed <- audit[c("poll_id", "pollgroup", "attitudes_sha256", "n", "p")]
+  audit <- group_covariance_audit(
+    attitudes, group, "example", reference, reviewed,
+    reference_kind = "approved"
+  )
+  expect_true(verified_covariance_values(0, 99, audit, 1e-5))
+  expect_false(verified_covariance_values(1e-6, 99, audit, 1e-5))
+  expect_false(verified_covariance_values(0, 100, audit, 1e-5))
+  expect_false(verified_covariance_values(0, 99, audit, 2e-5))
+  expect_false(verified_covariance_values(NA_real_, 99, audit, 1e-5))
+  expect_false(verified_covariance_values(0, 99, audit, NA_real_))
+  out_of_bounds <- audit
+  out_of_bounds$source_genvar <- 1
+  expect_false(verified_covariance_values(1, 99, out_of_bounds, 1e-5))
+  audit$numerical_exception <- FALSE
+  expect_false(verified_covariance_values(0, 99, audit, 1e-5))
 })

@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Correct Australia's peer-knowledge denominator from 11 to the 12 scored
+  questions. All 347 participants and their individual knowledge scores remain
+  unchanged; 346 peer measures and their logs change.
+
 - Retain AMR's original questionnaire, expert answer key, codebooks and paper;
   preserve its verified pre-invitation and post-deliberation measurements in
   phase tables without changing scores or samples. Document the conflicting

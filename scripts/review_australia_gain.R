@@ -20,6 +20,16 @@ gain[is.na(gain) & joint == 1] <- 0
 historical_gain <- gain[(corrected$source_row - 1L) %% length(gain) + 1L] /
   (1 - corrected$t1knowcor)
 historical_log <- historical_log_score(historical_gain)
+positions <- match(corrected$source_row, survey$source_row[selected])
+previous_gain <- gain[positions] / (1 - corrected$t1knowcor)
+stopifnot(
+  ncol(before) == 12L, ncol(after) == 12L,
+  all(corrected$numitems == 12),
+  isTRUE(all.equal(corrected$grpgain, previous_gain * 11 / 12,
+                   tolerance = 1e-10)),
+  sum(is.na(corrected$grpgain)) == 1L,
+  sum(abs(corrected$grpgain - previous_gain) > 1e-10, na.rm = TRUE) == 346L
+)
 
 reference <- readr::read_tsv(
   "evidence/benchmarks/polardata.tab", show_col_types = FALSE
@@ -37,14 +47,21 @@ stopifnot(
 
 directory <- "audit/corrections/australia-republic-1999"
 fs::dir_create(directory)
-values <- purrr::map_dfr(c("grpgain", "loggain"), function(name) {
-  original <- if (name == "grpgain") historical_gain else historical_log
+fields <- c("grpgain", "loggain", "numitems")
+values <- purrr::map_dfr(fields, function(name) {
+  original <- switch(name, grpgain = historical_gain,
+                     loggain = historical_log, numitems = rep(11, 347L))
   tibble::tibble(
     legacy_field = name, caseid = corrected$caseid,
     historical_value = original, approved_value = corrected[[name]]
   )
 })
-readr::write_csv(values, file.path(directory, "approved_values.csv"))
+path <- file.path(directory, "approved_values.csv")
+existing <- readr::read_csv(path, show_col_types = FALSE)
+combined <- dplyr::rows_upsert(
+  existing, values, by = c("legacy_field", "caseid")
+)
+readr::write_csv(combined, path)
 
 summary <- values |>
   dplyr::group_by(.data$legacy_field) |>
@@ -64,10 +81,22 @@ summary <- values |>
     .groups = "drop"
   )
 stopifnot(
-  all(summary$finite_paired_changes == 342L),
-  all(summary$missingness_changes == 1L),
-  all(summary$historical_infinite == 1L),
-  all(summary$corrected_infinite == 0L)
+  all(summary$missingness_changes[summary$legacy_field != "numitems"] == 1L),
+  all(summary$historical_infinite[summary$legacy_field != "numitems"] == 1L),
+  all(summary$corrected_infinite == 0L),
+  summary$finite_paired_changes[summary$legacy_field == "numitems"] == 347L
 )
-readr::write_csv(summary, file.path(directory, "field_changes.csv"))
+summary_path <- file.path(directory, "field_changes.csv")
+existing_summary <- readr::read_csv(summary_path, show_col_types = FALSE)
+readr::write_csv(dplyr::rows_upsert(
+  existing_summary, summary, by = "legacy_field"
+), summary_path)
+count_values <- tibble::tibble(
+  caseid = corrected$caseid, source_row = corrected$source_row,
+  previous_grpgain = previous_gain, corrected_grpgain = corrected$grpgain,
+  previous_loggain = historical_log_score(previous_gain),
+  corrected_loggain = corrected$loggain,
+  previous_numitems = 11L, corrected_numitems = corrected$numitems
+)
+readr::write_csv(count_values, file.path(directory, "item_count_values.csv"))
 print(summary)
