@@ -274,6 +274,11 @@ analysis_control_people <- function(sources) {
     all(is.na(sources$climate$T3GENDER) |
           sources$climate$GENDER == sources$climate$T3GENDER)
   )
+  completed <- sources$climate$P_DELEGATE == 1
+  stopifnot(
+    !anyNA(sources$climate$ROOM[completed]),
+    all(sources$climate$T2P_OPTION[completed] %in% 1:2)
+  )
   climate <- sources$climate |>
     dplyr::transmute(
       poll_id = "a1r-climate-2021", source_dataset = "control",
@@ -288,8 +293,8 @@ analysis_control_people <- function(sources) {
         P_DELEGATE == 1 ~ TRUE, P_TREATMENT == 0 ~ FALSE, TRUE ~ NA
       ),
       panel = P_DELEGATE == 1 | (P_TREATMENT == 0 & P_DELEGATE == 0),
-      small_group_id = dplyr::if_else(P_DELEGATE == 1, as.character(ROOM),
-        NA_character_
+      small_group_id = dplyr::if_else(
+        P_DELEGATE == 1, paste(ROOM, T2P_OPTION, sep = "_"), NA_character_
       ),
       cluster_id = as.character(CaseId), country = "United States",
       weight = WEIGHT1,

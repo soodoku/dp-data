@@ -150,7 +150,7 @@ analysis_item_responses,source_row,int32,FALSE,FALSE,One-based source row
 analysis_item_responses,source_column,string,TRUE,FALSE,Literal original response field recovered through verified source and wave mappings; null when unrecoverable
 analysis_item_responses,raw_value,float64,TRUE,FALSE,Retained original numeric answer code; null for source missingness or unavailable raw answer
 analysis_item_responses,raw_text,string,TRUE,FALSE,Original text response when retained in the source battery
-analysis_item_responses,correct,int32,TRUE,FALSE,Conventional item correctness; reviewed nonanswers score zero within an observed questionnaire; absent questionnaires and unresolved authored missing scores remain null
+analysis_item_responses,correct,int32,TRUE,FALSE,Conventional item correctness; DK and reviewed blanks score zero on an observed form; invalid responses and absent questionnaires remain null
 analysis_item_responses,response_status,string,FALSE,FALSE,Answered; source_missing; non_substantive; scored when raw answer is unavailable; wave_absent for a questionnaire confirmed absent by source completion status
 analysis_polls,poll_id,string,FALSE,TRUE,Stable poll identifier
 analysis_polls,title,string,FALSE,FALSE,Canonical poll title
@@ -212,7 +212,7 @@ california_knowledge_responses,wave,int32,FALSE,TRUE,Arrival wave 2 or departure
 california_knowledge_responses,item_number,int32,FALSE,TRUE,Question number 27 through 34
 california_knowledge_responses,source_column,string,FALSE,FALSE,Wave-specific source column
 california_knowledge_responses,raw_code,float64,TRUE,FALSE,Source answer code including non-substantive values
-california_knowledge_responses,correct,int32,TRUE,FALSE,Correctness with item nonresponse scored zero within an observed questionnaire; absent wave remains null
+california_knowledge_responses,correct,int32,TRUE,FALSE,Correctness with item nonresponse scored zero on an observed form; invalid responses and absent waves remain null
 california_knowledge_scores,poll_id,string,FALSE,FALSE,Stable poll identifier
 california_knowledge_scores,respondent_id,string,FALSE,TRUE,Original participant source ID
 california_knowledge_scores,source_row,int32,FALSE,FALSE,One-based source survey row
@@ -313,7 +313,7 @@ analysis_phase_item_responses,source_row,int32,TRUE,FALSE,Original source-file r
 analysis_phase_item_responses,source_column,string,TRUE,FALSE,Literal original response field recovered through verified source and wave mappings; null when unrecoverable
 analysis_phase_item_responses,raw_value,float64,TRUE,FALSE,Retained original numeric answer code; null for source missingness or unavailable raw answer
 analysis_phase_item_responses,raw_text,string,TRUE,FALSE,Original text answer
-analysis_phase_item_responses,correct,int32,TRUE,FALSE,Conventional item correctness; reviewed nonanswers score zero within an observed questionnaire; absent questionnaires and unresolved authored missing scores remain null
+analysis_phase_item_responses,correct,int32,TRUE,FALSE,Conventional item correctness; DK and reviewed blanks score zero on an observed form; invalid responses and absent questionnaires remain null
 analysis_phase_item_responses,response_status,string,FALSE,FALSE,Original answer status or wave_absent
 analysis_phase_item_responses,wave_observed,bool,TRUE,FALSE,Questionnaire presence established from raw fields; not quiz correctness
 analysis_phase_item_responses,original_score_wave,string,FALSE,FALSE,Source analytical wave label or arrival for added arrival responses

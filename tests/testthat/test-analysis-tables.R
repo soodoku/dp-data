@@ -21,7 +21,9 @@ test_that("documented nonanswers keep their codes and zero correctness", {
     expect_equal(sum(climate), 16580L)
     selected <- a1r | ireland | climate
     expect_true(all(items$response_status[selected] == "non_substantive"))
-    expect_true(all(items$correct[selected] == 0L))
+    invalid <- selected & items$response_reason == "invalid_response"
+    expect_true(all(is.na(items$correct[invalid])))
+    expect_true(all(items$correct[selected & !invalid] == 0L))
     expect_false(anyNA(items$raw_value[selected]))
     substantive <- items$poll_id == "america-in-one-room-2019" &
       items$raw_value %in% 1:4
@@ -184,6 +186,18 @@ test_that("analysis exports preserve keys and canonical question IDs", {
     people, poll_id == "a1r-climate-2021", source_dataset == "control"
   )
   expect_equal(nrow(climate_people), 8814L)
+  completed <- dplyr::filter(climate_people, arm == "completed")
+  mapping <- readr::read_csv(project_path(
+    "audit", "corrections", "a1r-climate-2021", "membership_mapping.csv"
+  ), show_col_types = FALSE, col_types = readr::cols(.default = "c"))
+  position <- match(completed$respondent_id, mapping$respondent_id)
+  expect_false(anyNA(position))
+  expect_identical(
+    completed$small_group_id, mapping$candidate_small_group_id[position]
+  )
+  expect_equal(dplyr::n_distinct(completed$small_group_id), 105L)
+  expect_equal(range(table(completed$small_group_id)), c(2L, 18L))
+
   expect_equal(sum(climate_people$female), 5066)
   expect_false(anyNA(climate_people$female))
   expect_equal(sum(climate_people$arm == "completed"), 962L)

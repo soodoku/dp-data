@@ -49,7 +49,7 @@ knowledge comparison” does not clear attitudes, demographics, weights, or join
 
 ## Current decisions and source limits
 
-As of September 28, 2026, the UK–EU scales, Texas absent-form scores and
+As of September 29, 2026, the UK–EU scales, Texas absent-form scores and
 Australia item count are corrected. The user has also approved the ordered UK
 Health input scales, Tanzania missing-component and paired-panel corrections,
 and a shared zero-at-ceiling peer-opportunity convention. For education, the
@@ -64,6 +64,8 @@ a common degree interpretation on different source qualifications.
 | Tanzania TZ-03/04 | Approved and implemented: treat the −99 component as missing, rebuild the existing baseline-control standardization, and require both scores for the panel flag. All observed scores remain available; one panel flag changes. |
 | SWEPCO SWE-05 / WTU WTU-06 | Approved and implemented upstream: 2,246 absent post scores and 11,230 post item-correctness cells per corresponding table become missing; six dependent respondent measures per person are missing. Baseline and attendee scores are unchanged. |
 | UK Election / X-14 | Approved: use relative education based on the within-poll median. Preserve source qualifications; do not treat nonselection of a degree as proof of no degree. Typed participant tables expose the approved median flags. |
+| Climate A1RC-05 | Approved and implemented: follow the original script’s room-plus-schedule group identity, restoring105 groups. Individual scores and samples are unchanged; group and peer measures change. |
+| Shared invalid knowledge responses | Approved and implemented: invalid item correctness remains missing, with raw codes retained. This applies to documented multiple responses and questionnaire-backed out-of-range codes; DK remains zero. Fixed-denominator battery scores are unchanged. |
 
 UK Health's government/public-input and doctor-discretion indices (UKH-03/07)
 now follow the approved order: none = 0, some = 0.5, all/most = 1, at both waves.
@@ -141,7 +143,7 @@ These are bounded next actions, not permission to recode:
 | WTU/SWEPCO absent departure attitudes | Approved September 29 and implemented: both plain and explicitly midpoint-imputed departure indices remain missing for 1,000 WTU and 1,246 SWEPCO absent forms. See WTU-07/SWE-06 and X-03. |
 | Utility observed-form scoring | Plain indices now preserve all-component nonresponse; explicitly named `_midpoint_imputed` variants retain authored fills. Historical aggregates explicitly select those variants. Empirical wave calibrations remain a separate unresolved choice. |
 | NIC2 security | Current source marks the complete four-action block “Use This One”; an available-action version is also authored. Switching changes 12 baseline and three exit scores, with no final missingness change. Choose the intended missing-item policy explicitly (NIC2-02). |
-| Climate discussion groups | ROOM alone yields 58 labels; ROOM × T2P_OPTION yields the original script's 105 groups. Forty-seven reused labels combine different schedules for 862 of 962 completers. Composite identity correction awaits approval (A1RC-05). |
+| Climate discussion groups | ROOM alone yields 58 labels; ROOM × T2P_OPTION yields the original script's 105 groups. Forty-seven reused labels combine different schedules for 862 of 962 completers. Approved September 29: upstream now uses the original script’s room-plus-schedule identity (A1RC-05). |
 | Zeguo unmatched departures | Approved September 29 and implemented: 34 unmatched departures are missing in both attitude variants and post-dependent knowledge. All 233 historical people remain; observed blank quiz items still score zero. Do not borrow the unlinked NP32 block (ZG-07). |
 | Zeguo Township Image | Current Q25/Q31 and the paper's Q8/Q9/Q25/Q27 battery are different authored definitions. The alternative changes 161 baseline and 169 post scores, 160 extremities and all 233 repeated group summaries. Its 176-person means still do not exactly match the paper; preserve current values pending the definition decision (ZG-08). |
 | Published-result bridges | NIC2/BTP trade means and BTPHE report percentages remain unreproduced. Recover report-era sample/index/weight syntax rather than adjust source scores to force agreement (NIC2-02, BTPHE-06). |
@@ -3442,6 +3444,20 @@ changes from 0.213636 to 0.200000. All 396 people and their attendance remain,
 and these ten remain available for arrival-to-exit comparisons. No raw answer,
 item key, historical aggregate sample, or observed-form blank-item score changes.
 
+### CA-05: Preserve the single out-of-range departure knowledge code
+
+Source row 447, ID 526, has `t3q33 = 0`. The departure questionnaire Q33
+(PDF pp.17–18) asks which state has the highest total tax burden and offers
+California, New York, Massachusetts, Oregon and “Couldn't say,” coded1:5.
+Zero is outside every offered option. The person's arrival answer is2 and
+other departure answers establish an observed form, but neither permits
+reconstructing the intended answer. Preserve raw0 and map correctness to missing under the user-approved global
+invalid-response rule; classify it `invalid_response`, with no trichotomy category and no fabricated
+source label. `metadata/knowledge_response_codes.csv` records the field-specific
+reason and evidence. The separate eight-item report-battery export also maps this invalid code to
+missing correctness. Fixed-denominator knowledge scores, attendance and all
+samples are unchanged.
+
 ## Europolis 2009 — europolis-2009
 
 **EURO-01 — distributional parity is not a person link.** `GROUP_T1BIS == 1`
@@ -4797,6 +4813,18 @@ archived eleven-item `rowMeans` definition is the report's overall index.
 count. Keep the current shared-item battery and preserve raw arrival/departure
 answers for a separately defined extension.
 
+### MI-03: Preserve the single out-of-range arrival placement code
+
+Source row83, ID501, has `t2q10 = 9`. Q10 places the Democratic Party on
+the tax-and-spending scale: the instrument offers1:7 and99 (“No opinion”),
+not9 (departure questionnaire PDFp.3; arrival counterpart documented in MI-02).
+The person's baseline answer is1 and departure answer5; these do not recover
+what was intended at arrival. Preserve raw9 and map correctness to missing under the user-approved global
+invalid-response rule; classify it `invalid_response`, with no trichotomy category or invented source
+label. It appears twice in the phase table because the same source item belongs
+to two explicitly distinct placement batteries. Both item rows retain their
+identity and have missing correctness. No knowledge score, sample, or attitude response changes.
+
 ## Denmark Euro 2000 — denmark-euro-2000
 
 **DK-01 — the deposited battery includes baseline-only rows and omits one
@@ -5292,6 +5320,19 @@ This evidence applies to Q19–Q24. The script does not supply the corresponding
 missing-code labels for Q17/Q18; do not extend those labels by analogy. Their
 existing scoring is retained pending a fielded instrument or explicit codebook.
 
+A renewed public-source search on September29 checked the twelve-file
+[replication deposit](https://doi.org/10.7910/DVN/IIOG1S), its DDI variable
+metadata, the journal’s online supplement and official Stanford/NORC materials.
+The deposit contains no questionnaire or codebook; all six Q17/Q18 source-wave
+fields have no category labels in its variable metadata. Actual codes are
+1,2,3,77,98;99 does not occur in those fields. The retained
+[NORC methods report](../data/a1r-climate-2021/design/a1r-climate-methods.pdf),
+PDFp.7, establishes that Stanford received final questionnaires in both
+programming and simple Word formats, plus SPSS/Stata/CSV data. The precise
+missing evidence is therefore a delivered questionnaire or labeled source
+file, rather than a claim that the study never documented these questions.
+No request has been sent. Do not borrow Q19–Q24’s labels for Q17/Q18.
+
 ### A1RC-04 — reproduce the climate report's attitude ratings (checked)
 
 The retained `data/a1r-climate-2021/reports/climate_results.pdf` reports 93
@@ -5312,9 +5353,9 @@ means. This identifies how the report was calculated; it does not select
 weights or a missing-data convention for future analyses. No attitude recode
 is adopted from this comparison.
 
-### A1RC-05 — room labels merge different deliberation schedules (decision requested)
+### A1RC-05 — restore the original room-plus-schedule group identity (approved)
 
-`R/analysis_tables.R` currently sets climate `small_group_id` to `ROOM` alone.
+Before this correction, `R/analysis_tables.R` set climate `small_group_id` to `ROOM` alone.
 Among the 962 completed delegates, there are 58 distinct room labels but 105
 room-by-`T2P_OPTION` combinations. Forty-seven room labels occur in both
 schedules, affecting 862 people. Consequently, using room alone combines
@@ -5325,10 +5366,13 @@ were 105 groups across weekday and weekend schedules and constructs
 `egen groupid = group(room t2p_option)`; see
 `data/a1r-climate-2021/scripts/replication-data-preparation.do`, lines 137–139.
 The current `dp-distortions` OOS adapter already combines these two fields.
-The proposed upstream correction uses the same composite identity and preserves
+The approved upstream correction uses the same composite identity and preserves
 all people, answers, weights and eligibility. The effect on analyses consuming
-upstream group membership is quantified below. Approval remains pending;
-neither the production data nor the manuscript adopts this candidate.
+upstream group membership is quantified below. On September 29 the user directed
+us to defer to the original script. Both canonical participant tables now use
+`ROOM_T2P_OPTION`, with nonmissing room and a verified schedule required for
+completers. The frozen comparison remains evidence of the before/after change;
+the downstream manuscript has not been regenerated for this correction.
 
 **Executed counterfactual, September 29, 2026.** The candidate starts from
 dp-data `8bcd1de` and changes only `small_group_id` for the 962 completers in
@@ -5365,16 +5409,18 @@ regression bootstrap has not been rerun. The Climate gain, peer, control and
 retention comparisons use 999 draws each. Exact results, membership mappings,
 all-column comparisons and input provenance are in
 `audit/corrections/a1r-climate-2021/`. The retained `learning-impact.R` reproduces
-the downstream comparison from the uncorrected data and the stated learning
-revision, writing only to the requested evidence directory:
+the downstream comparison from either the pre-correction or corrected data and
+the stated learning revision, writing only to the requested evidence directory.
+It reconstructs the room-only comparison from raw fields when necessary:
 
 ```sh
 Rscript audit/corrections/a1r-climate-2021/learning-impact.R \
   /path/to/dp-data /path/to/dp-learning /tmp/climate-group-review
 ```
 
-It uses dp-learning's existing dependencies. The supplied group-membership
-correction remains a proposal until the user's poll-specific decision.
+It uses dp-learning's existing dependencies. The group-membership correction is adopted. Its regression checks compare every
+completed delegate against the independently reconstructed membership mapping
+and require 105 groups with sizes 2–18. No knowledge or attitude score changes.
 
 ### AMR-01 — six-country knowledge scoring checked against the report
 
@@ -7715,8 +7761,9 @@ verified missing-code documentation. New Haven's combined baseline no-response/
 DK categories cannot be split retrospectively; its post Q36 field form and CATI
 instrument disagree about whether “same” was offered, with no observed terminal
 code 4 to resolve the discrepancy. California `t3q33 = 0` (source row 447,
-ID 526) and Michigan `t2q10 = 9` (source row 83, ID 501) remain unreviewed
-codes. Previously cleaned system-missing or score-only data cannot recreate a
+ID 526) and Michigan `t2q10 = 9` (source row 83, ID 501) are now classified
+as invalid responses outside the offered options; CA-05 and MI-03 document
+why their intended answers remain unrecoverable. Previously cleaned system-missing or score-only data cannot recreate a
 lost distinction between a blank and DK. No answer key changes are made here.
 
 All historical `output/polardata/` files remain byte-identical. Running the
@@ -7726,6 +7773,24 @@ including attitude and peer-knowledge predictors. Attendance and phase-specific
 analyses can change: ZG-07 documents the additional verified returned questionnaire
 and its effect on the phase gain. UKM-08 removes fabricated departure scores
 for 599 nonparticipants; it leaves all 258 attendees unchanged.
+
+**Invalid responses (approved September 29).** The user chose missing rather
+than zero for invalid item responses. The shared knowledge standardizer now
+maps every documented `invalid_response` to missing correctness, including
+A1R2019's multiple-response code−8 and the questionnaire-backed California/
+Michigan out-of-range codes above. Raw codes and reasons remain intact; DK
+continues to score zero. This does not classify undocumented codes by analogy.
+The existing fixed-denominator battery scores are preserved: item correctness
+missingness and the established aggregate scoring convention are separate.
+Peer item calculations must exclude invalid item observations rather than
+mistake them for a wrong answer or an opportunity to learn.
+The [cell comparison](../audit/corrections/shared-response-status/invalid_response_cells.csv)
+records46 selected item cells,49 phase item cells and one supplemental
+California item cell. These views repeat the same48 underlying source answers;
+Michigan’s single answer also belongs to two phase batteries. All score tables
+and historical polardata files remain byte-identical. The current dp-learning
+main predictors change only through the independently approved Climate group
+correction; these invalid responses are outside its baseline item predictor.
 
 #### Shared attendance classification (approved September 29, 2026)
 
