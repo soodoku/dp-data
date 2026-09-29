@@ -1,0 +1,7 @@
+cohort,source_wave,n_people,newly_missing_indices,all_nine_missing
+all_source,1,911,940,33
+historical_participants,1,466,375,11
+all_source,2,911,2927,293
+historical_participants,2,466,387,17
+all_source,3,911,4789,526
+historical_participants,3,466,784,81

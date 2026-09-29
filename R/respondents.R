@@ -201,7 +201,7 @@ source_response_rows <- function(survey, people, inputs, items) {
     }
     if (people$poll_id[[1]] == "new-haven-2004" &&
           grepl("^(pre|mid|post)_q(12|13|20|21|22|23)$", field)) {
-      known_missing <- union(known_missing, "0")
+      known_missing <- union(known_missing, c("0", "6"))
     }
     status <- ifelse(missing, "system-missing", ifelse(
       code %in% known_missing | in_range, "non-substantive", ifelse(

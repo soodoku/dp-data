@@ -1,0 +1,9 @@
+poll,index,wave,field,n_people,n_observed,n_partial,n_full,n_absent,mean,max_abs_difference
+uk-general-election-1997,redist,1,ukbge.t1redist,275,268,0,268,7,0.691305971190111,0
+uk-general-election-1997,redist,2,ukbge.t2redist,275,267,0,267,8,0.743632961190149,0
+uk-general-election-1997,tax,1,ukbge.t1tax,275,271,0,271,4,0.809151290692526,0
+uk-general-election-1997,tax,2,ukbge.t2tax,275,274,0,274,1,0.801897811574222,0
+uk-general-election-1997,wage,1,ukbge.t1wage,275,269,0,269,6,0.793345723675086,0
+uk-general-election-1997,wage,2,ukbge.t2wage,275,259,0,259,16,0.73525096493338,0
+uk-general-election-1997,eu,1,ukbge.t1eu,275,250,0,250,25,0.462760002017021,0
+uk-general-election-1997,eu,2,ukbge.t2eu,275,244,0,244,31,0.594549181947454,0

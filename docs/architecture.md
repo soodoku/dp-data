@@ -200,6 +200,14 @@ values inside the diagnostic perturbation envelope. The audit distinguishes
 indefinite covariances from ordinary singularity. Changes outside these checks
 fail comparison; benchmark values are never copied into reconstructed outputs.
 
+Generalized variance is missing when the pairwise covariance matrix has a
+materially negative eigenvalue. The shared calculation and audit use the same
+scale-relative numerical tolerance; valid singular matrices retain the existing
+arithmetic. This rule does not impute answers or substitute a complete-case
+covariance. The separate average within-group attitude SD remains available.
+The definition version is `covariance-validity-v2`; case-level approved changes
+are documented in `docs/poll-issues.md` X-15.
+
 ## Migration order
 
 1. Inventory and hash the archive bundles.

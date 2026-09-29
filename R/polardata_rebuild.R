@@ -90,6 +90,7 @@ historical_derived_measures <- function(polls) {
       dplyr::mutate(
         poll_id = .env$poll_id,
         definition_version = dplyr::case_when(
+          .data$legacy_field == "genvar" ~ "covariance-validity-v2",
           .data$legacy_field %in% c(
             "grpgain", "grpgain2", "grpgainr", "loggain"
           ) ~ "peer-opportunity-v2",
@@ -132,8 +133,8 @@ historical_derived_measures <- function(polls) {
             ) ~ "ukm-01-v2",
           .env$poll_id == "nic-1996" & .data$legacy_field == "meanage" ~
             "nic-08-v3",
-          .env$poll_id == "nic-1996" & .data$legacy_field == "avgsd2" ~
-            "nic-09-v2",
+          .env$poll_id == "nic-1996" & .data$legacy_field %in%
+            c("meanxtreme", "avgsd", "avgsd2", "genvar") ~ "nic-12-v2",
           .env$poll_id == "cpl-1996" & .data$legacy_field %in%
             c("grpgain", "grpgainr", "loggain") ~ "cpl-05-v2",
           .env$poll_id == "australia-republic-1999" &

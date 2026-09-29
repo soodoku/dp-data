@@ -64,11 +64,11 @@ test_that("derived exports preserve unique people and reviewed gain", {
   entropy <- derived[derived$legacy_field == "entropy", ]
   expect_equal(nrow(entropy), 5869L)
   expect_setequal(unique(entropy$definition_version), "entropy-observed-v2")
-  nic_arrival <- derived$poll_id == "nic-1996" &
+  nic_exit <- derived$poll_id == "nic-1996" &
     derived$legacy_field == "avgsd2"
-  expect_equal(sum(nic_arrival), 466L)
-  expect_setequal(unique(derived$definition_version[nic_arrival]),
-                  "nic-09-v2")
+  expect_equal(sum(nic_exit), 466L)
+  expect_setequal(unique(derived$definition_version[nic_exit]),
+                  "nic-12-v2")
   europolis_age <- derived$poll_id == "europolis-2009" &
     derived$legacy_field == "meanage"
   expect_setequal(unique(derived$definition_version[europolis_age]),
@@ -94,7 +94,7 @@ test_that("derived exports preserve unique people and reviewed gain", {
   expect_setequal(unique(derived$definition_version[australia_age]),
                   "aus05-v2")
   election_group <- derived$poll_id == "uk-general-election-1997" &
-    derived$legacy_field %in% c("avgsd", "genvar")
+    derived$legacy_field == "avgsd"
   expect_setequal(unique(derived$definition_version[election_group]),
                   "ukge-05-v2")
   health_gender <- derived$poll_id == "btp-health-education-2005" &
@@ -112,7 +112,7 @@ test_that("derived exports preserve unique people and reviewed gain", {
   expect_setequal(unique(derived$definition_version[new_haven_minority]),
                   "nh-04-v2")
   zeguo_group <- derived$poll_id == "zeguo-2005" &
-    derived$legacy_field %in% c("meanxtreme", "avgsd", "genvar")
+    derived$legacy_field %in% c("meanxtreme", "avgsd")
   expect_setequal(unique(derived$definition_version[zeguo_group]),
                   "zg-02-v2")
   zeguo_age <- derived$poll_id == "zeguo-2005" &
@@ -128,7 +128,7 @@ test_that("derived exports preserve unique people and reviewed gain", {
   expect_setequal(unique(derived$definition_version[san_mateo_level]),
                   "sm-03-v2")
   btp_national_group <- derived$poll_id == "btp-national-2003" &
-    derived$legacy_field %in% c("meanxtreme", "avgsd", "genvar")
+    derived$legacy_field %in% c("meanxtreme", "avgsd")
   expect_setequal(unique(derived$definition_version[btp_national_group]),
                   "btpn-02-v2")
   primaries_group <- derived$poll_id == "btp-presidential-primaries-2004" &
@@ -142,6 +142,10 @@ test_that("derived exports preserve unique people and reviewed gain", {
   expect_equal(sum(peer_gender), 5869L)
   expect_setequal(unique(derived$definition_version[peer_gender]),
                   "observed-peers-v2")
+  covariance <- derived$legacy_field == "genvar"
+  expect_equal(sum(covariance), 5869L)
+  expect_setequal(unique(derived$definition_version[covariance]),
+                  "covariance-validity-v2")
 })
 
 test_that("PR-03 keeps approved group values and rejects duplicate people", {
@@ -221,13 +225,26 @@ test_that("numerical exceptions cannot hide changed aggregate values", {
   expect_equal(sum(parity$unexplained_differences), 0L)
   eu_variance <- parity$poll_id == "uk-eu-1995" &
     parity$legacy_field == "genvar"
-  expect_equal(sum(parity$reviewed_numerical_differences[!eu_variance]), 51L)
+  expect_equal(sum(parity$reviewed_numerical_differences[!eu_variance]), 40L)
   expect_equal(parity$approved_correction_differences[eu_variance] +
                  parity$reviewed_numerical_differences[eu_variance], 238L)
   expect_true(parity$reviewed_numerical_differences[eu_variance] %in% c(0L, 4L))
   san_mateo_level <- parity$poll_id == "san-mateo-2008" &
     parity$legacy_field == "t1knowlevel"
   expect_equal(parity$approved_correction_differences[san_mateo_level], 239L)
+  san_mateo_variance <- parity$poll_id == "san-mateo-2008" &
+    parity$legacy_field == "genvar"
+  expect_equal(parity$approved_correction_differences[san_mateo_variance], 75L)
+  invalid <- which(data$pollgroup %in% c(9601, 9621))
+  expect_length(invalid, 11L)
+  expect_true(all(is.na(data$genvar[invalid])))
+  changed <- data
+  changed$genvar[invalid[1]] <- reference$genvar[
+    match(data$caseid[invalid[1]], reference$caseid)
+  ]
+  expect_equal(sum(compare_historical_polardata(
+    changed, reference, audit
+  )$unexplained_differences), 1L)
   national_global <- parity$poll_id == "btp-national-2003" &
     parity$legacy_field == "btp03.olt1global"
   expect_equal(parity$approved_correction_differences[national_global], 135L)

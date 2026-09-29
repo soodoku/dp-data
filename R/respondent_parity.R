@@ -3,6 +3,29 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
   approved <- approved_poll_reference_values(
     poll_id, field, caseid, historical, tolerance
   )
+  if (field == "genvar") {
+    reviewed <- readr::read_csv(project_path(
+      "audit", "corrections", "shared-covariance", "approved_values.csv"
+    ), show_col_types = FALSE)
+    reviewed <- reviewed[reviewed$poll_id == poll_id &
+                           reviewed$historical_present, ]
+    if (!nrow(reviewed)) return(approved)
+    positions <- match(reviewed$caseid, caseid)
+    stopifnot(
+      !anyDuplicated(reviewed$caseid), !anyDuplicated(caseid),
+      !anyNA(positions), all(is.na(reviewed$approved_value)),
+      identical(is.na(historical[positions]),
+                is.na(reviewed$historical_value)),
+      identical(is.na(approved[positions]),
+                is.na(reviewed$previous_reference)),
+      all(abs(historical[positions] - reviewed$historical_value) <= tolerance,
+          na.rm = TRUE),
+      all(abs(approved[positions] - reviewed$previous_reference) <= tolerance,
+          na.rm = TRUE)
+    )
+    approved[positions] <- reviewed$approved_value
+    return(approved)
+  }
   if (!field %in% c("grpgain", "grpgain2", "grpgainr", "loggain")) {
     return(approved)
   }
@@ -136,6 +159,31 @@ approved_poll_reference_values <- function(poll_id, field, caseid, historical,
       )
     )
     return(approved$proposed_value)
+  }
+  if (poll_id == "nic-1996" && field %in% c(
+    paste0("nic1.t1att", 1:9), paste0("nic1.t2att", 1:9),
+    "attextreme", "attextreme2", "meanxtreme", "avgsd", "avgsd2", "genvar"
+  )) {
+    approved <- readr::read_csv(project_path(
+      "audit", "corrections", "nic-1996",
+      "attitude_missing_approved_values.csv"
+    ), show_col_types = FALSE)
+    approved <- approved[approved$legacy_field == field, ]
+    stopifnot(
+      nrow(approved) == 466L, !anyDuplicated(approved$caseid),
+      !anyDuplicated(approved$source_row), sum(is.na(approved$caseid)) == 1L,
+      sum(is.na(caseid)) == 1L, !anyDuplicated(caseid),
+      setequal(as.character(caseid), as.character(approved$caseid))
+    )
+    rows <- match(as.character(caseid), as.character(approved$caseid))
+    approved <- approved[rows, ]
+    stopifnot(
+      identical(is.na(historical), is.na(approved$historical_value)),
+      all(abs(historical - approved$historical_value) <= tolerance,
+        na.rm = TRUE
+      )
+    )
+    return(approved$approved_value)
   }
   if (poll_id == "nic-1996" && field %in% c(
     "ppage", "meanage", "mode", "attextreme2", "avgsd2"

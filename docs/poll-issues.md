@@ -94,7 +94,7 @@ that does not certify every questionnaire component or every wave contrast.
 Substantive attitude corrections include UK Crime's post root-causes input,
 UK Election's tax question, UK–EU scale/nonanswer handling, UK Health's severity
 and input-order indices, Texas conservation/research inputs, Australia's
-extremity/ranking inputs, NIC arrival inputs, New Haven nonanswers and value
+extremity/ranking inputs, NIC event-exit inputs, New Haven nonanswers and value
 substitution, Bulgaria's death-penalty scale, Tomorrow's Europe departure inputs,
 and BTP National/Zeguo scaling or source-selection corrections. The poll entries
 below retain the instrument evidence and numerical consequences.
@@ -104,12 +104,12 @@ The actual downstream readers determine the remaining audit inventory:
 | Consumer | Actual attitude inputs | Current boundary |
 | --- | --- | --- |
 | dp-distortions main | 129 paired indices across 21 polls; 5,867 deduplicated people and 397 groups. `data/sources.csv` pins dp-data revision `bce1e0e3aea578b71090dde5348ca66ccb778048`, `evidence/benchmarks/polardata.tab` and `attitude-indices.tab`. | These are frozen historical benchmarks, so corrected upstream outputs and median flags do not automatically enter the results. Audit the 129 definitions and selected wave pairs before replacing pins; compare every affected downstream estimate. |
-| dp-distortions OOS | Upstream raw files for Tanzania (21 paired items; 371 grouped people), A1R 2019 (47 paired items; 523 completed delegates) and Climate 2021 (72 paired items; 962 completed delegates). | Source-item selection, missing codes, scaling, groups and demographic cutoffs are still prepared downstream. Move source recodes to dp-data with exact comparisons; retain estimation choices downstream. A1R's local education reference uses 523 completers, whereas the approved upstream reference uses 526 attendees. |
+| dp-distortions OOS | Tanzania now reads dp-data's typed 22-item attitude outputs (371 grouped people; 360 borrowing pairs), pinned at `3e7673bfbde9ba1bda03681dff5ad981be8edfba` in merged dp-distortions PR #4. A1R 2019 (47 paired items; 523 completed delegates) and Climate 2021 (72 paired items; 962 completed delegates) still read upstream raw files. | Tanzania source-item selection, missing codes, scales and wave provenance are upstream; its prior 21-item respondent values and group metrics reproduce exactly. Estimation remains downstream. A1R and Climate recodes still need typed upstream adoption. A1R's local education reference uses 523 completers, whereas the approved upstream reference uses 526 attendees. |
 | dp-deliberately | Hash-pinned historical benchmark polardata and index dictionary from dp-data v0.2.2. | Corrected respondent outputs do not automatically enter this adapter either. Preserve its explicit membership/estimand choices while comparing the upstream data replacement. |
 | dp-learning analysis tables | 303 selected baseline indices/responses across 28 polls. | This predictor table is not the inventory of attitudes available in the source files or other downstream repositories. Its absence of post-wave rows is not evidence that those responses are unavailable. |
 
-A direct comparison on the same 5,867 unique historical respondents finds
-3,572 changed attitude values in 26 selected wave columns, covering 19 of the
+An earlier comparison, before TE-06 and NIC-12, on the same 5,867 unique
+historical respondents found 3,572 changed attitude values in 26 selected wave columns, covering 19 of the
 129 index pairs and 11 polls. This uses absolute tolerance 1e-10, treats changes
 in missingness as differences, and holds the frozen catalog's wave selections
 fixed. It excludes the two additional BTP General Election respondents restored
@@ -1228,7 +1228,7 @@ override applied. No attendee had these three source-code exceptions. The
 source-label review and approved corrections are recorded in UKM-06 below;
 these exceptions no longer describe the maintained respondent output.
 
-**UKM-05 — one catalog title describes the wrong construct (corrected).**
+**UKM-05 — two catalog titles describe the wrong constructs (corrected).**
 The archived cross-poll files call `ukmonarchy.t1mpop` “Powers of the Monarchy”
 or “Power of Monarchy.” The reconstructed index behind that field instead
 averages Q6A/B/E/F and Q7A/B: royal-family contact with ordinary people,
@@ -1237,11 +1237,30 @@ succession. The retained [codebook](../data/uk-monarchy-1996/codebook.pdf)
 describes these items. The separate `ukmonarchy.t1pwrm` index uses Q15
 (appointing a prime minister) and Q13D (more powers for the Queen). Thus
 “Powers” is misleading for `t1mpop`, irrespective of the original authors'
-preferred title. The two archived cross-poll files also disagree on the
-`t1pwrm` title; that field's existing “Rules and limits” label remains for
-now. The generated catalog calls `t1mpop` “Royal Family and the Public,” a
-description of its items, not a claim to recover the original index title.
-No field link, response, index value, sample or aggregate number changes.
+preferred title. The original [index memo](../data/uk-monarchy-1996/codebooks/british-monarchy-indices-final.pdf),
+INDEX 3, explicitly calls `t1pwrm`/`t2pwrm` “POWER OF MONARCHY”; the retained
+cross-poll appendix also places these two questions under “Powers of the
+Monarchy.” This resolves the previously preserved “Rules and limits” title.
+The generated catalog now calls `t1pwrm` “Powers of the Monarchy” and `t1mpop`
+“Royal Family and the Public.” No field link, response, index value, sample
+or aggregate number changes.
+
+**UKM-07 — all four main attitude indices independently verified.** The
+2026-09-28 review reconstructs both waves from the raw survey, response labels,
+codebook and original index memo: support for monarchy (Q/R1, 11, 9, 14), royal
+family and public (Q/R6A/B/E/F, 7A/B), monarchy powers (Q/R15, 13D), and Lords
+reform (Q/R18, 19A/B). All 2,064 respondent-index-wave values and missingness
+patterns match, retaining 258 people and 15 groups. Available-item averaging
+is supported by the memo's paired benchmarks: support .6646761 → .6335781
+(N=255); public .5892280 → .6246447 (258); powers .391 → .4335 (250); Lords
+.6095041 → .6477273 (242). The unusual referendum order—code 3 definitely
+not, code 4 probably not—is verified by source labels; reversing these codes
+would introduce an error. Initial household interviews precede invitation and
+briefing materials; the comparison is pre-arrival to exit, not arrival to exit.
+Per-wave counts and paired comparisons are retained in
+`audit/corrections/uk-monarchy-1996/attitude_wave_review.csv` and
+`attitude_paired_review.csv`. These checks support the existing available-item
+estimand; they do not establish that missing components are random.
 
 **UKM-06 — nonresponse codes in expanded demographics (approved correction).**
 The retained `value-labels.csv` establishes `AGEB=11` as refused, `AGEB=10`
@@ -1502,6 +1521,29 @@ analytical inputs are therefore identical (a code-path inference, not a rerun).
 The paper's 276-arrival count remains a separate roster question; it does not
 justify counting a record explicitly marked nonparticipant in the participant
 group metrics.
+
+**UKGE-06 — all four main attitude indices verified; archived appendix names
+two different questions.** The 2026-09-28 independent reconstruction reproduces
+all 2,200 values, including missingness, for 275 people in 15 groups. The paired
+source fields are REDSTR1/2 (Q12, income equality), TAXR1/2 (Q13, taxes versus
+public-service spending), WAGER1/2 (Q14, minimum wage), and EUR1/2 (Q15, European
+integration). Seven substantive categories use the maintained 0/.17/.33/.5/.67/
+.83/1 mapping; −8 and −9 remain missing. Available-case raw means reproduce
+all eight Table 3 entries in *The British General Election Deliberative Poll*:
+5.15 → 5.46; 5.86 → 5.81; 5.76 → 5.41; 3.78 → 4.57. Paired samples are
+263, 270, 253 and 228, respectively; sample-specific comparisons are retained
+in `audit/corrections/uk-general-election-1997/attitude_paper_review.csv`.
+
+The archived `appendix-attitude-indices-6-07-15-rcl.pdf`, PDF p. 1, instead
+names five-category REDIST and TAXRICH questions for the first two indices.
+REDIST has no corresponding paired field; TAXRICH is a different pair about
+wealthy people paying more taxes. The actual paired source fields, instrument
+and Table 3 agree, so this appendix mismatch does not justify substituting
+questions or changing score bounds. The initial January household interview
+preceded invitation and the April event: these are pre-arrival-to-exit changes.
+The existing 276 published attendees versus 275 deposited eligible records
+remains a roster discrepancy, not permission to invent a person. All numerical
+recodes and eligibility rules are preserved.
 
 ## CPL 1996 — cpl-1996
 
@@ -3262,32 +3304,34 @@ The historical score definition remains `age@nic-03-v2` in the earlier
 comparison; the reviewed respondent value is `age@nic-08-v3`. The latter is
 computed upstream, so downstream readers must not repair these cases again.
 
-### NIC-09: Arrival extremity and dispersion used three baseline answers
+### NIC-09: Event-exit extremity and dispersion used three baseline answers
 
-**Status: corrected upstream after user approval.** The maintained arrival
+**Status: corrected upstream after user approval.** The maintained event-exit
 measure now uses all nine T2 Q19 answers. The historical values remain in the
 frozen benchmark and the paired
 [approved values](../audit/corrections/nic-1996/approved_values.csv).
 
-The historical `attextreme2` and `avgsd2` construction takes arrival answers
+The historical `attextreme2` and `avgsd2` construction takes event-exit answers
 for environment, Medicare, law enforcement, drug rehabilitation, education
 and defense, but takes **baseline** answers for foreign aid, welfare and Social
-Security. The three arrival fields `SPFAID2`, `SPWELF2` and `SPSS2` exist in the
+Security. The three event-exit fields `SPFAID2`, `SPWELF2` and `SPSS2` exist in the
 source. The [codebook](../data/nic-1996/codebook.txt) explicitly labels them
 T2 Q19g–i, and the scanned
 [SAQ2 questionnaire](../data/nic-1996/questionnaire.pdf) asks all nine spending
-items together at Q19 (printed p. 10, PDF p. 12). The categories are the same:
-too much 3, too little 1, about right 2 and don't know 8. There is no
-instrument-level reason to splice Q19g–i from baseline into the arrival index.
+items together at Q19 (printed p. 10, PDF p. 12). The printed instrument has
+too much 3, too little 1, about right 2 and don't know 8. The revised source
+already reverses the substantive direction, as verified in NIC-12; this does
+not alter the identification of the nine contemporaneous items. There is no
+instrument-level reason to splice Q19g–i from baseline into the event-exit index.
 
 Among 466 participants, replacing only those three inputs with their T2
 answers changes 284 `attextreme2` values after the documented code lookup.
-Mean arrival extremity becomes .287911 rather than .293753. The mean changes
+Mean event-exit extremity becomes .287911 rather than .293753. The mean changes
 in 29 of 30 discussion groups, ranging from −.043651 to +.038194. All 30
 group `avgsd2` values change, so 466 exported group-dispersion cells differ;
 the unweighted mean across group values becomes .304624 rather than .302913,
 with group changes from −.042435 to +.028653. Among all 911 source records,
-595 respondent arrival-extremity values change.
+595 respondent event-exit-extremity values change.
 The source has floating-point category artifacts near integer codes; these
 counts use the maintained integer-tolerance lookup, not literal float equality.
 The 466-person sample, missingness and all raw answers are unchanged. A direct
@@ -3296,10 +3340,12 @@ historical aggregate fields; across the complete 5,869-row `polardata`, these
 are the only two columns with value changes at 1e-10 tolerance. The public
 source-response table gains 2,733 rows (the three newly used T2 columns for
 all 911 source people); every previously exported response retains its raw
-value and missingness. Current dp-learning model inputs use baseline
-`attextreme` and `genvar`, so this correction does not change its analysis
-frame. The corrected `avgsd2` definition has version `nic-09-v2` in the derived
-export.
+value and missingness. This exit-only correction leaves baseline predictors
+unchanged. The derived `avgsd2` version was `nic-09-v2` at this step; the later
+NIC-12 nonresponse correction supersedes it with `nic-12-v2` and separately
+changes baseline attitude predictors. These numerical comparisons describe the
+NIC-09 step, before NIC-12. Source T2 is event exit, not arrival; the earlier
+arrival terminology was incorrect (see NIC-11's verified timing).
 
 ### NIC-10: Cross-poll catalog mislabeled all nine spending questions (corrected)
 
@@ -3312,7 +3358,7 @@ That description does not match the retained
 nine parts of Q19 asking whether spending is too much, too little or about
 right, at all three waves. The maintained [respondent
 recode](../R/respondent_nic.R) maps those nine sources in order to
-`nic1.t1att1:9` and the corresponding departure fields. The questionnaire
+`nic1.t1att1:9` and the corresponding delayed-follow-up fields. The questionnaire
 also prints them together as Q19. The foreign-policy names belong to a
 different poll and cannot describe these source answers.
 
@@ -3320,7 +3366,114 @@ The generated `attitude-indices` table now names all nine rows “Spending on”
 their actual subjects, including environment. Both archived cross-poll files
 remain unchanged. Field links, respondent values, scores, group/poll
 descriptors, sample and historical wide output are unchanged. This is a
-catalog correction, separate from the approved NIC-09 arrival-wave recode.
+catalog correction, separate from the approved NIC-09 event-exit-wave recode.
+
+
+### NIC-12: Unknown spending attitudes are missing, not neutral (approved)
+
+**Approved by the user and implemented on September 28, 2026.** The nine
+spending questions distinguish a substantive “about right” answer from “don't
+know” and an absent answer. The former remains .5; unknown answers no longer
+receive the same value. At all three source waves, the maintained revised
+source codes 1/2/3 map to 0/.5/1, while code 8, the documented
+`SPDRUG2` code 9 and system missing map to missing. Unexpected codes still
+fail the field-specific source assertions. The raw source columns, all 911 source people, the 466-person
+historical sample, identities and discussion groups are unchanged.
+
+The retained [codebook](../data/nic-1996/codebook.txt) describes `SPENVIR`,
+`SPMEDIC`, `SPLAW`, `SPDRUG`, `SPEDUC`, `SPDEF`, `SPFAID`, `SPWELF` and `SPSS`.
+The [event questionnaire](../data/nic-1996/questionnaire.pdf), Q19 on PDF
+page 12, explicitly distinguishes “about right” from “don't know.” The
+historical `nic1.R` first replaced missing attitudes with the midpoint. That
+was a deliberate executed rule; this approved correction changes its treatment
+of nonresponse rather than claiming that the source script accidentally
+selected the wrong item.
+
+**Direction crosscheck: do not reverse the revised source again.** The
+original `vault/cdd/data/nic_1/Master_nic_123.sav` labels 1 “too little” and
+3 “too much”; `SPENVIR2` has 292 code-1 and 50 code-3 responses, and
+`SPMEDIC2` has 229 and 109. The revised `Data_revised/nic123_r.sav` reverses
+those counts: 50/292 and 109/229. Its companion `nic123_2_r.sav` explicitly
+labels 1 “Too much/decrease,” 2 “About right,” 3 “Too little/increase,” and
+8 as missing. Eight of the nine printed exit codebook distributions already
+match the revised source literally; the environment entry retains the old
+1/3 direction. This isolated stale codebook entry does not justify reversing
+the already revised source. `Files_revised.txt` identifies revised originals
+but does not explicitly document the spending reversal. The retained source
+versions and their labels supply the direct evidence; the numerical
+correction here changes only nonresponse treatment. The original master file's
+value-label text has damaged suffixes. Exact labels, code frequencies and
+SHA-256 hashes for all nine exit items in the three versions are retained in
+`audit/corrections/nic-1996/exit_direction_source_versions.csv`; the clearly
+labeled revised companion corroborates the direction independently.
+
+| Source wave | Newly missing indices, all 911 people | Newly missing indices, 466 historical participants | Participants with all nine missing |
+| --- | ---: | ---: | ---: |
+| 1: pre-arrival | 940 | 375 | 11 |
+| 2: event exit | 2,927 | 387 | 17 |
+| 3: delayed follow-up | 4,789 | 784 | 81 |
+
+The historical main attitude catalog still compares source waves 1 and 3.
+Thus its 18 wide attitude fields lose 1,159 imputed midpoints; no observed
+substantive answer changes. This correction does **not** silently replace
+that follow-up contrast with an exit contrast. NIC-11's canonical knowledge
+comparison remains initial-to-exit, with follow-up retained separately.
+
+Baseline and exit attitude extremity now average absolute distance from .5
+across observed spending answers. An all-missing battery yields missing.
+Among historical participants, baseline extremity changes for 123 observed
+values and becomes missing for 11; exit extremity changes for 124 observed
+values and becomes missing for 17. Available-case means change from .304721
+to .338068 and .287911 to .319420, respectively; the denominators change.
+NIC-09's source-wave correction remains applied. Its earlier comparison
+numbers precede this separate missing-answer correction.
+
+The shared layer recomputes `meanxtreme`, `avgsd` and `avgsd2` for all 466
+historical rows. Their respondent-weighted means change, respectively,
+.304721 to .338114, .325492 to .332677, and .304513 to .311343. The 20
+respondent definitions and these three derived definitions are versioned
+`nic-12-v2`. The intermediate, unchanged-formula `genvar` mean would change
+from .247991 to .229228; that intermediate result is retained in the NIC-12
+ledger to distinguish the source correction from the subsequent shared fix.
+
+**Shared covariance correction approved separately (X-15):** after removing
+imputed midpoints, baseline pairwise covariance matrices are not positive
+semidefinite in 13 of NIC's 30 groups (minimum eigenvalue approximately
+−.019641). The corresponding counts are eight groups at exit and six at
+follow-up. The historical absolute-determinant calculation hides this failure.
+Under the approved shared rule, baseline generalized variance is missing for
+197 NIC participants in those 13 groups; it retains the calculated value for
+the remaining 269 people. All polls use `covariance-validity-v2` for this
+derived definition. No imputation, complete-case substitution or poll-specific
+covariance formula has been introduced.
+
+The current dp-learning analysis recomputes baseline extremity and group
+absolute disagreement from canonical attitude answers; its active models do
+not use historical `genvar`. On the maintained 30-poll frame (after restoring
+the Climate completion-label bridge), NIC retains 456 baseline/exit knowledge
+pairs. NIC-12 changes 129 of their baseline extremity values, six to missing,
+and their group disagreement/SD values. The attitude-model sample changes from
+8,356 to 8,350 (NIC 446 to 440); point estimates for extremity change .0196871
+to .0168900 and disagreement −.1005786 to −.0978550. These isolate NIC-12 on
+the same intended knowledge panel. They are point-fit comparisons, not updated
+uncertainty claims. The actual rebuilt canonical frame exactly matches the
+independently constructed candidate; knowledge outcomes and other model inputs
+are preserved. Shared X-15 does not affect these active models. The separate
+full downstream rebuild also incorporates earlier approved upstream changes. The
+point estimates, sample counts and changed inputs are retained in
+`audit/corrections/nic-1996/attitude_missing_learning_*.csv`; the consumer
+revision was `ba4e7d58e67476f90b5cc875be16b8bfc1e9e08a`, with the Climate
+completion predicate corrected in memory for both comparison stages.
+
+Reproduce the independent raw-response calculation with
+[`scripts/review_nic_attitude_missing.R`](../scripts/review_nic_attitude_missing.R).
+It checks all 24 affected aggregate fields against the maintained builder,
+without using the attitude recoder to calculate expected answers. The
+[approved values](../audit/corrections/nic-1996/attitude_missing_approved_values.csv)
+retain frozen historical, previous and approved values for each source row;
+[aggregate changes](../audit/corrections/nic-1996/attitude_missing_summary.csv)
+and [source coverage](../audit/corrections/nic-1996/attitude_missing_source_summary.csv)
+separate the 466-person historical sample from all 911 source people.
 
 ## Tomorrow's Europe 2007 — tomorrows-europe-2007
 
@@ -3740,6 +3893,48 @@ Final exports retain four attitudes, but extremity and group dispersion use
 seven, including commuting, public consultation and county-versus-state scales
 later dropped in `05_fix_data.R`. Do not rebuild summaries from the four final
 columns. Check the index-selection rationale before changing the battery.
+
+The 2026-09-28 attitude review independently decoded the original
+`smdp 3-18-08.dta` and compared every source answer for both waves with the
+maintained projection. All four main-catalog indices reproduce exactly on the
+same 239 people and 26 groups:
+
+| Main index | Source fields | Scoring direction | Observed before / after / paired |
+|---|---|---|---:|
+| More housing | Q1 / t2Q1 | 1 = create more housing; 7 = restrict; reverse to 0–1 | 226 / 238 / 225 |
+| Below-market housing | Q4 / t2Q4 | 1 = require below-market homes; 7 = market rate only; reverse | 231 / 234 / 226 |
+| Open-space rezoning | Q2 / t2Q2 | 1 = developed areas; 7 = rezoned open space | 230 / 235 / 226 |
+| County coordination | Q8 / t2Q8 | 1 = local control; 7 = county coordination | 228 / 236 / 225 |
+
+The [baseline instrument](../data/san-mateo-2008/questionnaire-pre.pdf),
+pp. 1–3, and stored post value labels agree on these endpoints and the neutral
+category 4. The [results report](../data/san-mateo-2008/reports/san-mateo-results.pdf)
+prints the same core questions in its before/after tables. The short retained
+post supplement supplies additional questions, not independent wording for the
+core post battery. All seven component indices in both waves, all 1,806 source
+respondents' baseline extremity, and the selected group average SD and mean
+extremity reproduce from their source answers with the documented float32
+rounding. Consultation's two substantive post zeros remain observed; missing
+answers are not converted to neutral attitudes.
+
+The original `02_nuri.R`/`04_kyu.R` merge and `reagg.txt` use all seven indices
+for summaries; `05_fix_data.R` subsequently removes the commuting, consultation
+and county-versus-state columns. The retained
+[drop memo](../data/shared/codebooks/attitude_indices/indices-to-drop.pdf)
+explicitly treats consultation as a value and county-versus-state as an empirical
+premise; it does not provide the commuting exclusion's rationale. Preserve the
+existing seven-index summaries and four-index main analysis rather than silently
+substituting one for the other. X-09's five reviewed, numerically sensitive
+covariance groups remain separate limitations.
+
+The report's Q2 post table has one 1.50 response (0.4%) absent from both the
+retained original Stata file's raw and authored recoded fields. No respondent
+identity for that response is established, so no value is imputed from the report.
+Many report category percentages reproduce with denominator 239 despite its
+prose saying 238; this does not identify which attendee, if any, should be excluded.
+The case-level scale and missingness check found no new numerical correction.
+Exact main-index counts and ranges are retained in
+`audit/san-mateo-new-haven-attitude-coverage.csv`.
 
 ### SM-03: Baseline knowledge uses the eight questions in the instrument (corrected)
 
@@ -5093,17 +5288,91 @@ crosswalk with independent validation, not an assertion that synthetic IDs were
 present in the original field file. Retain the archive and inference evidence
 before replacing it with any newly recovered roster.
 
-### NIC2-02: Final nested indices differ from earlier draft syntax
+### NIC2-02: Authored attitude versions reconciled; security choice remains open
 
-Use `NICII_ONLINE_Index_Final_Aug01.doc`, `checking_July27*.do`, the source
-variables labeled “UseThisOne”, and the final merge sequence together. The final
-environment index equally weights four components: environmental priority,
-collapsed mileage, collapsed electricity and warming priority. An earlier draft
-instead nests two components into a block and then averages three blocks.
-Security combines four priorities with a four-action block; that action block
-requires complete answers. An available-item alternative changes 12 baseline
-participant values. The reconstructed nine indices preserve the final version;
-verify the index memo's missing-item and weighting instructions before revising.
+**Review of all nine indices (2026-09-28).** The 340 historical participants
+are `casetype == 1` among 1,493 source records; each has a unique `nicid`.
+The unprefixed items are the pre-arrival baseline; `q`-prefixed counterparts
+are exit. These are not arrival-to-exit contrasts. Independent reconstruction
+of every index at both waves reproduces the maintained builder exactly.
+BTP National was reviewed alongside NIC2 because their common index memos
+and paper describe the same constructs. This confirms the implemented formulas;
+it does not settle disagreements among authored versions.
+
+The original [February memo](../data/nic2-2003/codebooks/foreign-policy-indices-february.pdf),
+[final August memo](../data/nic2-2003/codebooks/foreign-policy-indices-august.pdf),
+and [July 27 syntax](../data/nic2-2003/scripts/checking-july27.do) are now public
+alongside their unchanged originals. The companion online scripts are under
+`data/btp-national-2003/scripts/`. The memos are stored once and registered to
+both polls. The [comparative manuscript](../data/shared/papers/foreign-policy.pdf)
+is a separate source of evidence, not an automatic override of deposited data.
+
+The table uses common questionnaire numbers; the reproducible review maps
+these to each survey's raw field names. `mean` excludes missing components
+unless the complete-action rule below applies. All components are first
+oriented and scaled to [0, 1]. DK, refused and unconsidered attitudes are
+missing, not zero. A wholly missing index remains missing. Paired contrasts
+require both members; one missing member does not become zero.
+
+| Index | Maintained definition | Evidence and disposition |
+| --- | --- | --- |
+| Environment | mean(Q2a, Q13, Q14, Q15a) | Four equal components match the stored final scores and Table 1 (.778/.771). The February memo and paper prose instead pre-average Q13/Q14; the August heading omits Q15a. July syntax contains the four-item candidate. Preserve the executed definition; these are competing authored versions. |
+| Security | mean(Q2c, Q2e, Q2g, Q25b, mean(Q37a, Q37b, Q37e, Q37f)) | The four actions deliberately form one block. NIC2 requires all four action answers; BTP uses available actions. NIC2 missing-item choice remains open below. |
+| Human rights | Q2h | One 0–10 priority, divided by ten. Q2i is listed among candidate material, not the selected final index. Verified and preserved. |
+| Democracy | mean(Q22, mean(Q23a:Q23f), Q25c) | Six actions deliberately form one block in both memo and paper. NIC2 combines statement and strength into 0/.25/.5/.75/1; no strength for a chosen side is missing. Preserve. BTP's approved stance-scale correction is BTPN-02. |
+| Multilateralism | mean(Q10, Q16, (Q27−Q30+1)/2, (Q28−Q31+1)/2, Q37e, Q38, Q39, Q32a) | Eight components in final memo and source. Paper prose omits Q10. Leadership runs US alone=0, allies=1/3, allies with UN=2/3, UN=1. “Nobody” is missing explicitly in paper note 13. Preserve. |
+| Internationalism | reverse(Q3) | Disagreement with isolationism increases the score through five positions 0/.25/.5/.75/1. Verified and preserved. |
+| Foreign aid | Q24 | Increase=1, same=.5, reduce=0. NIC2 raw codes are 1/5/3; BTP 1/3/2. Final source fields are `t1forai1/t2forai1`; `foraid` is an older composite. Verified and preserved. |
+| Global altruism | mean(Q2f, Q2j, mean(Q25d,Q25e), mean(Q7,Q37b), Q20, Q21) | Six blocks match July `globalta`, final source, and NIC2 Table 1 (.589/.683). August instead groups Q20/Q21 and separates Q7/Q37b; February/paper omit Q7/Q37b. Preserve executed version; do not flatten the blocks. |
+| Trade | Q33 (NIC2 `trd2`) | Repeal NAFTA=0, retain=.5, extend=1; DK missing. Fielded question and final `trade_b` agree. The August heading names `trd1_a` while its body lists both items. Preserve direct NAFTA coding; Table 1 discrepancy remains below. |
+
+**Security: an unresolved choice between authored missing-item policies.** The
+four action questions concern encouraging democracy in Middle Eastern
+countries (Q37a/`int1a_a`), increasing aid to countries that breed terrorists
+(Q37b/`int1a_b`), working with other countries (Q37e/`int1b_c`), and improving
+intelligence (Q37f/`int1b_d`). Requiring a complete block keeps the same four
+policy tools in this component for every included person; averaging available
+answers retains information from people who omitted one or more tools.
+Neither rationale makes the other authored version an obvious typo.
+
+Current `t1usseca/t2usseca` are explicitly labeled **“Use This One.”** The
+available-action alternative instead reproduces `t1ussec/t2ussec` for all 340
+people at both waves. July syntax uses `rmean`; the paper's missing-item rule
+and note 11 also describe averaging answered items. Its rounded baseline .800
+matches the alternative mean .8002529, versus current .8012463. However, rounded
+publication agreement cannot establish whether a later author intentionally
+selected the complete block. The August memo says AVG without prescribing a
+minimum number answered. Its August 1, 2004 footer and the paper PDF's 2006
+creation date do not date the source variable's preference label.
+
+Available-action scoring changes 12 baseline and three exit values, without
+changing any final missingness or the 340-person sample. The baseline mean
+moves .8012463 → .8002529; the exit mean remains .8211593 because the three
+changes cancel. Maximum individual changes are .086666644 and .058333337.
+Exact IDs, raw answers, old scores and alternatives are in
+`audit/foreign-policy-attitudes/nic2_security_alternative.csv`. **Preserve the
+current complete-block version until the user chooses a missing-item policy
+or further provenance establishes which authored version should govern.**
+
+**Trade: publication comparison remains unresolved.** Among 273 people with
+both NAFTA answers, NIC2 means are .6135531 → .5824176, whereas Table 1 gives
+.492 → .478. BTP's 130 paired people give .4615385 → .5461538, versus .348 →
+.396 in the paper. Matching only complete pairs therefore does not bridge the
+difference. The paper describes NAFTA, and no alternative answer key has been
+established. Preserve questionnaire-backed coding; recover the paper's exact
+sample/index syntax before attributing the discrepancy to either source.
+
+**Missingness and reproducible coverage.** NIC2 missing baseline/exit counts
+are environment 0/0, security 0/0, human rights 0/0, democracy 0/0,
+multilateralism 0/0, internationalism 2/4, foreign aid 25/2, global altruism
+0/0 and trade 63/11. These are missing final indices; partially answered
+component blocks are separately counted in `denominator_summary.csv`.
+Run `Rscript scripts/review_foreign_policy_attitudes.R` from the repository
+root to rebuild the index, denominator, authored-alternative and paired-sample
+CSVs under `audit/foreign-policy-attitudes/`. `index_evidence.csv` records the
+question mapping and disposition. The script asserts identity uniqueness,
+retained sample counts, matching missingness and numerical agreement with the
+maintained builders; counterfactuals never overwrite respondent outputs.
 
 ### NIC2-03: Knowledge and group gain have specific storage stages
 
@@ -5263,37 +5532,58 @@ about 0.357297. `calibration-responses.parquet` retains the 11 raw items and IDs
 Check `know_index_online.do`, `nuri/reagg.txt`, the fielded baseline instrument
 and calibration-universe rationale before harmonizing these definitions.
 
-### BTPN-04: Nested weighting needs version-specific review
+### BTPN-04: Deliberate nested weighting preserved; version conflicts documented
 
-Executed environment uses Q2a, Q13, Q14 and Q15a as four components, while the
-index memorandum includes a proposed three-component form. Security,
-multilateralism, democracy and global altruism also weight component blocks,
-not all raw questions equally. Preserve executed weighting pending memo/script
-reconciliation. Raw recodes, nested means, extremity and knowledge retain
-float32 stages. Peer-gain additions follow `kn11`, Republican, Democratic,
-then `kn2:kn9`, rounding each addition. Historical group high-income share used
-early collapsed income `> 7`, while final respondent high income used `> 5`.
-The approved shared median rule in X-13 now replaces both cutoffs with one
-individual flag that also feeds group shares. This income correction does not
-change the nested attitude weighting discussed here.
+The review in NIC2-02 covers every one of the nine BTP National attitude
+indices at baseline (`qb`) and exit (`qf`), including endpoint, direction,
+missing-answer and nested-denominator checks. All 245 historical source people
+have unique `serial` IDs; no additional attendance or complete-case filter is
+introduced. Independent reconstruction reproduces the maintained scores
+exactly. The only differences from deposited final indices are those expected
+from the already-approved BTPN-02 support-scale correction.
 
-The [contemporary foreign-policy manuscript](../data/shared/papers/foreign-policy.pdf),
-Table 1, supplies a stronger version check than the index prose alone. Its
-online participant means are 0.511/0.536 for democracy and 0.448/0.478 for
-fighting poverty and suffering at baseline/departure. The deposited
-half-scaled version gives 0.509/0.536 and 0.446/0.478 for the same 245-person
-source sample; the approved BTPN-02 full-scale version gives 0.596/0.626
-and 0.491/0.533. The paper's described linear 0–1 item scoring instead
-supports the full-scale component values. Its environment means of
-0.686/0.715 match the executed four-component index (0.68565/0.71462),
-while pre-averaging Q13–Q14 as the prose describes gives 0.675/0.699.
-Thus the paper's numerical results appear to use an executed index version
-that differs from its prose. This does not by itself show whether the
-half-scaled support items were intended as reduced weights or were coding
-errors. Do not extend the full-scale correction to component weighting or
-silently claim that the corrected indices reproduce Table 1; recover the
-paper's exact analysis syntax before deciding whether to retain or revise
-BTPN-02.
+The common [February](../data/nic2-2003/codebooks/foreign-policy-indices-february.pdf)
+and [August](../data/nic2-2003/codebooks/foreign-policy-indices-august.pdf) memos
+are registered for both polls, without duplicate copies. Original online
+syntax is preserved in `data/btp-national-2003/scripts/`: `checking-july27-online.do`,
+`v-online.do`, `v-online2.do`, and `trade-august01.do`. These are historical
+evidence, not scripts executed by the modern production pipeline.
+
+Security's four policy tools and democracy's six actions form explicit
+subscales; equal weighting of every raw question would change the construct.
+The paper explains this pre-averaging and reports trying alternatives in note
+12. BTP security averages available action answers. The separate NIC2 choice
+between complete and available action blocks is not silently imposed on BTP.
+Environment and global altruism have genuine disagreements among memo,
+syntax and paper prose; the per-index table in NIC2-02 records their distinct
+versions and why the executed definitions are preserved.
+
+The [comparative manuscript](../data/shared/papers/foreign-policy.pdf), Table 1,
+reports online democracy means .511/.536 and poverty means .448/.478. The
+deposited half-scaled versions give .509/.536 and .446/.478; approved BTPN-02
+full-scale versions give .596/.626 and .491/.533. The paper's described linear
+0–1 scoring supports the corrected endpoints, but these corrected scores do
+not reproduce its table. Environment means .68565/.71462 round to the paper's
+.686/.715, while pre-averaging Q13/Q14 as the prose says gives .675/.699.
+Thus neither the paper prose nor rounded table is a sufficient reason to
+replace the deposited block weights. The approved support-scale correction
+stands; exact paper analysis syntax is still needed to resolve the version
+history. The NAFTA means also fail the paper comparison even within paired
+respondents; NIC2-02 gives the exact counts and values. No further recode is
+authorized by these discrepancies alone.
+
+Missing final indices at baseline/exit are environment 0/1, security 0/1,
+human rights 0/2, democracy 0/1, multilateralism 0/1, internationalism 4/6,
+foreign aid 41/25, global altruism 0/1 and trade 95/65. Missing components are
+excluded from attitude means; they are not scored zero. Partial-block counts,
+all 18 index-wave summaries, paired-sample means and numerical authored-version
+comparisons are reproducible with `scripts/review_foreign_policy_attitudes.R`.
+
+Raw recodes, nested means, extremity and knowledge retain float32 stages.
+Peer-gain additions follow `kn11`, Republican, Democratic, then `kn2:kn9`,
+rounding each addition. The approved shared median rule in X-13 replaces
+historical income cutoffs with one individual flag that also feeds group
+shares; it does not change the nested attitude weighting.
 
 The income thresholds are also consistently stage-specific in both BTP
 online polls. Among these 245 selected people, source `inc60plus` equals
@@ -5606,9 +5896,10 @@ in 14 groups, and arrival `avgsd2` for 84 people in 10 groups. These four
 group descriptors retain their existing observed-answer formulas. In the
 long respondent measures, 128 numeric values become missing; nine raw-zero
 statuses change from `answered` to `non-substantive`, and six source-input
-counts decrease. Code 6 was already classified as non-substantive in raw
-responses, even while its attitude indices used neutral imputation. The
-case-level reviewed-value ledger retains the frozen historical values;
+counts decrease. The later NH-09 source-response review found that code 6
+was still classified as substantive in the typed raw-response table despite
+being excluded by the corrected attitude formulas; that status/count inconsistency
+is corrected separately. The case-level reviewed-value ledger retains the frozen historical values;
 aggregate and respondent parity have zero unexplained differences.
 
 The [published study](../data/new-haven-2004/papers/disaggregating-deliberation-27s-effects-28lsero-29.pdf)
@@ -5623,6 +5914,65 @@ unknown answers express neutral attitudes. This change alters denominators,
 so the complete-case means are not direct attempts to reproduce Table 1.
 An arrival-specific instrument or coding instruction assigning substantive
 meaning to zero would warrant revisiting this decision.
+
+### NH-09: Attitude source statuses now exclude documented don't-know answers
+
+**Status: authorized transport-consistency correction; approved index values are
+preserved.** The field questionnaire labels code 6 “don't know” on Q12–Q13 and
+Q20–Q23. The three-wave workbook has 118 such answers: 64 Pre, 25 Mid and 29
+Post, across 43 people. The maintained index formula already excludes codes 0
+and 6 under NH-08, but `source_response_rows()` explicitly classified only zero
+as non-substantive for these fields. The workbook's value-label projection is
+empty, so code 6 fell through to `answered` and a missing `missing_code`.
+
+The corrected rule applies only to these six attitude questions in their three
+waves. Exactly 118 source-response statuses become `non-substantive` and their
+`missing_code` becomes `6`. The nine zero statuses remain non-substantive.
+Exactly 122 `n_observed_fields` values decrease on the same 43 people: airport
+before/after 10/9; mandatory sharing 19/7; voluntary sharing 25/5; baseline
+extremity 32; and interim extremity 15. These counts describe substantive input
+fields, not a new scoring denominator. Every affected measure value was already
+missing, and all numeric index values, participant identities, groups, sample
+flags and raw bytes remain unchanged. The keyed before/after evidence is
+`audit/corrections/new-haven-2004/source_response_statuses.csv` and
+`audit/corrections/new-haven-2004/observed_input_counts.csv`.
+
+The independent 2026-09-28 attitude audit covered both main indices and the
+third index used in summaries. For each wave, let agreement be `(5 - answer)/4`
+for answers 1–5, otherwise missing. Airport is
+`(agreement_Q12 - agreement_Q13)/2 + 0.5`; mandatory-versus-voluntary sharing is
+`(agreement_Q23 - (agreement_Q21 + agreement_Q22)/2)/2 + 0.5`;
+voluntary-versus-local control is
+`((agreement_Q21 + agreement_Q22)/2 - agreement_Q20)/2 + 0.5`.
+The main mandatory-sharing index increases toward mandatory sharing, as named
+in the authored `man_df_avg_volinc` field; the published study describes the
+reverse contrast. Reflecting a scale is not a source-scoring error.
+
+| Index | Pre observed | Mid observed | Post observed | Main Pre/Post paired |
+|---|---:|---:|---:|---:|
+| Airport | 122 | 120 | 122 | 114 |
+| Mandatory versus voluntary | 113 | 126 | 124 | 106 |
+| Voluntary versus local control (summary only) | 107 | 125 | 126 | Not in main catalog |
+
+Every index value and missingness pattern reproduces independently from the
+workbook, with explicit assigned-ID joins and matching groups across sheets.
+All 132 people and 16 groups remain. The main catalog's historical `t2` fields
+come from the workbook's **Post**, the original T3 weekend-end measurement.
+The paper, PDF p. 8, places Mid/T2 **after the first deliberative session**;
+current phase metadata correctly labels it `interim_1`, not arrival. Original
+source `notes.txt` independently specifies complete analyses of T1–T3 only.
+The 2002 event date and the unresolved 133-versus-132 attendance issue remain
+as documented in NH-02.
+
+Baseline and interim extremity retain NH-08's complete-three-index rule (100 and
+114 observed people); group SDs retain observed-answer sample SDs averaged
+across all three indices. All 16 baseline and interim group SDs and the baseline
+group mean extremities reproduce independently. The January CATI draft numbers
+revenue questions differently from the final field questionnaire; matching
+question numbers across those instrument versions is not justified. The workbook,
+final field instrument and authored variables identify the maintained questions.
+No new numerical attitude correction or summary-battery substitution is proposed. Main-index counts and ranges are in
+`audit/san-mateo-new-haven-attitude-coverage.csv`.
 
 ## Zeguo 2005 — zeguo-2005
 
@@ -6346,17 +6696,19 @@ separated; a rejected-alternative explanation; and an explicit decision to
 preserve, relabel, revise, or leave unresolved. A monotonic scale that looks
 intuitive is not sufficient evidence to replace a deliberate transformation.
 
-### X-09: Generalized variance has eight explicitly reviewed numerical exceptions
+### X-09: Generalized variance has six remaining reviewed numerical exceptions
 
-The current source formula differs from the frozen historical executable's
-`genvar` in eight groups, covering 55 export cells. These are not all negligible
+Before X-15, the source formula differed from the frozen historical executable's
+`genvar` in eight numerically sensitive groups, covering 55 export cells. X-15
+now makes the two indefinite San Mateo cases missing (11 cells), leaving six
+reviewed numerical exceptions covering 44 cells. These are not all negligible
 absolute differences, and they are not replaced by benchmark values.
 
 | Poll | Groups | Cells | Largest absolute difference |
 |---|---|---:|---:|
 | UK–EU 1995 | 2099 | 4 | 0.000063499 |
 | BTP Health/Education 2005 | 9713, 9715 | 20 | 0.000209632 |
-| San Mateo 2008 | 9601, 9604, 9616, 9617, 9621 | 31 | 0.003464282 |
+| San Mateo 2008 (pre-X-15 inventory) | 9601, 9604, 9616, 9617, 9621 | 31 | 0.003464282 |
 
 Historical generalized variance takes the absolute determinant of a pairwise
 covariance matrix and raises it to `1 / (2 * number_of_indices)`. Near-zero
@@ -6374,10 +6726,10 @@ Group 9621 has N=5, four complete rows, pairwise N=4–5, and minimum eigenvalue
 -0.01560969. Pairwise deletion can produce indefinite covariance matrices;
 these negative eigenvalues are not roundoff. Both matrices additionally have a
 near-zero eigenvalue, which explains determinant sensitivity. Historical absolute
-determinants hide the sign. Preserve that computation now, but review the
-interpretation and missing-data covariance method separately from platform
-reproducibility. Do not silently set these values to zero or make the matrices
-positive definite.
+determinants hide the sign. The user-approved X-15 rule now returns missing
+for these matrices and the other materially indefinite matrices across polls.
+The remaining valid, numerically singular cases retain the historical arithmetic;
+these values are not silently set to zero or made positive definite.
 
 `metadata/polardata_reviewed_covariances.csv` authorizes only the reviewed
 poll/group, exact source attitude-matrix SHA-256 and N/P combination.
@@ -6796,3 +7148,64 @@ values. Source bytes remain unchanged. Exact source-to-Parquet comparison
 checks every value, missingness, source-row identity, minima, maxima and zeros.
 Choosing weights for a particular population, wave contrast or estimand is a
 separate, unresolved analytical decision.
+
+### X-15: Invalid pairwise covariance does not define generalized variance
+
+**Approved by the user and implemented on September 28, 2026.** The group
+generalized-variance calculation formerly took the absolute determinant of a
+pairwise-complete covariance matrix, then its `1/(2*p)` power. Each covariance
+can use a different set of respondents. The resulting matrix can therefore
+have materially negative eigenvalues and fail to represent a joint covariance
+matrix; this is explicitly documented in [R's covariance reference](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/cor.html).
+Taking an absolute determinant conceals the failure. Even a positive determinant
+is insufficient: a matrix can have two negative eigenvalues. This is a defect
+in the interpretation of the shared group statistic, not in any respondent's
+attitude answer.
+
+The shared `historical_genvar()` now returns missing if the covariance matrix
+is undefined or has an eigenvalue below its negative numerical tolerance. The
+production calculation and diagnostics share the existing scale- and
+dimension-dependent tolerance, `64 * machine_epsilon * p * max(abs(eigenvalues))`.
+This distinguishes material incompatibility from rounding near zero. Valid
+matrices retain the exact preceding determinant arithmetic, including singular
+matrices. No nearest-positive-definite projection, imputation, complete-case
+substitution, or poll-specific rule is introduced.
+
+After the approved NIC missing-answer correction, 87 of 397 baseline group
+matrices in ten polls are materially indefinite. The correction makes generalized
+variance missing for 1,185 exported people; no other field changes at this step.
+The source-matrix inventory covers 1,196 people in those groups, but includes
+11 BTP General Election records outside the maintained export. Comparing by
+retained respondent identity avoids overstating the exported impact.
+
+| Poll | Invalid baseline groups | Exported generalized-variance cells made missing |
+| --- | ---: | ---: |
+| BTP General Election 2004 | 3 | 21 |
+| BTP Health/Education 2005 | 14 | 193 |
+| BTP National 2003 | 9 | 141 |
+| Bulgaria Crime 2002 | 15 | 243 |
+| CPL 1996 | 4 | 52 |
+| New Haven 2002 | 3 | 16 |
+| NIC 1996 | 13 | 197 |
+| NIC2 2003 | 7 | 95 |
+| San Mateo 2008 | 9 | 75 |
+| UK Health 1998 | 10 | 152 |
+
+Individual attitude scores, ordinary item SDs and their group average, respondent
+identities, group assignments and sample flags are preserved. A regression that
+requires generalized variance would lose these observations unless it explicitly
+chooses another estimator; these missing values must not be called zero
+disagreement. This correction does not resolve the broader choice of a
+missing-data covariance estimator.
+
+All exported instances of `group_baseline_attitude_generalized_variance` use
+definition version `covariance-validity-v2`. The independently reconstructed
+prior calculation and corrected output are compared by
+[`scripts/review_shared_covariance.R`](../scripts/review_shared_covariance.R).
+The [case-level ledger](../audit/corrections/shared-covariance/approved_values.csv)
+retains frozen historical values, preceding approved references, preceding
+calculated values and the approved missing values. It overlays only the reviewed
+respondent/field cells in historical parity, leaving unrelated discrepancies
+visible. Meaningful regression cases include incompatible matrices with either
+determinant sign, valid singular matrices, scale changes and roundoff. X-09's
+remaining numerical exceptions are distinct from this scientific correction.

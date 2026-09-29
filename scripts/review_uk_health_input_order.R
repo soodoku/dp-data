@@ -66,6 +66,25 @@ review_values <- function(folded) {
 }
 previous <- review_values(TRUE)
 approved <- review_values(FALSE)
+# Preserve the input-ordering comparison, then apply X-15 for final validation.
+final_genvar <- approved$genvar
+baseline <- raw_index_matrix(1L, FALSE)
+for (members in split(seq_len(nrow(survey)), group)) {
+  covariance <- stats::cov(
+    baseline[members, , drop = FALSE], use = "pairwise.complete.obs"
+  )
+  if (any(!is.finite(covariance))) {
+    final_genvar[members] <- NA_real_
+  } else {
+    eigenvalues <- eigen(
+      covariance, symmetric = TRUE, only.values = TRUE
+    )$values
+    tolerance <- 64 * .Machine$double.eps * ncol(covariance) *
+      max(abs(eigenvalues))
+    if (any(eigenvalues < -tolerance)) final_genvar[members] <- NA_real_
+  }
+}
+stopifnot(sum(!is.na(approved$genvar) & is.na(final_genvar)) == 152L)
 rebuilt <- build_historical_poll("uk-health-1998")
 rows <- match(case_ids, rebuilt$caseid)
 stopifnot(!anyNA(rows), nrow(rebuilt) == 230L)
@@ -83,9 +102,10 @@ stopifnot(!anyNA(original_rows), !anyDuplicated(original$caseid))
 comparison <- purrr::map(fields, function(field) {
   actual <- rebuilt[[field]][rows]
   expected <- approved[[field]]
+  final_expected <- if (field == "genvar") final_genvar else expected
   stopifnot(
-    identical(is.na(actual), is.na(expected)),
-    all(abs(actual - expected) < 1e-10, na.rm = TRUE),
+    identical(is.na(actual), is.na(final_expected)),
+    all(abs(actual - final_expected) < 1e-10, na.rm = TRUE),
     identical(is.na(previous[[field]]), is.na(expected))
   )
   tibble::tibble(
