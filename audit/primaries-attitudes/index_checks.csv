@@ -1,0 +1,20 @@
+comparison,n,differences
+b1.trade: stored original index,1289,0
+b1.trade: respondent export,1289,0
+b1.trade: aggregate export,217,0
+b1.services: stored original index,1289,0
+b1.services: respondent export,1289,0
+b1.services: aggregate export,217,0
+b1.multilateralism: stored original index,1289,0
+b1.multilateralism: respondent export,1289,0
+b1.multilateralism: aggregate export,217,0
+baseline extremity: aggregate export,217,0
+f1.trade: stored original index,1289,0
+f1.trade: respondent export,1289,0
+f1.trade: aggregate export,217,0
+f1.services: stored original index,1289,0
+f1.services: respondent export,1289,0
+f1.services: aggregate export,217,0
+f1.multilateralism: stored original index,1289,0
+f1.multilateralism: respondent export,1289,0
+f1.multilateralism: aggregate export,217,0
