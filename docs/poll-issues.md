@@ -6525,6 +6525,41 @@ Field links, all respondent values, scores, aggregate numbers and sample
 membership are unchanged. BTPN-02's component-weighting issue remains
 separate.
 
+### BTPN-07: Original dates and the wider source cohort (source preserved)
+
+The original `source-materials/master-survey.sav` preserves all 674 source
+respondents: 372 experimental and 302 control records. All have baseline
+answers; 246 experimental and 219 control respondents have post questionnaires.
+The remaining 126 experimental and 83 control respondents have absent post
+forms, not zero knowledge. These source-arm labels do not establish randomized
+allocation between arms; documented random assignment to discussion groups is
+not equivalent evidence.
+
+The public publication-era Stata file has the same IDs in the same order.
+All 205 numbered raw questionnaire fields (138,170 cells), including all
+22 maintained knowledge input fields, agree exactly. Its four YYYYMMDD date
+fields lost precision when stored as float32: 396 baseline-start, 381
+baseline-end, 213 post-start and 214 post-end values differ by one unit.
+Every observed Stata date equals the original rounded to float32; time-of-day
+and duration values agree exactly. Use the unchanged SPSS source for recorded
+dates, rather than treating the rounded Stata values as exact dates. The
+comparison is reproducible in `scripts/review_foreign_policy_publication.R`
+and `audit/foreign-policy-attitudes/publication/source_precision.csv`.
+
+Twenty-four original baseline dates are after December 9, 2002, the earliest
+reported session-start date: 23 controls and experimental serial 652. None
+belongs to the maintained 245-person cohort. Serial 652 attended three sessions
+but has no post form; its first attended session is not known. This does not
+establish an erroneous pre-arrival classification for the current cohort.
+Preserve individual timing uncertainty outside it. The publication describes
+completing the initial questionnaire before discussion (retained
+`data/shared/papers/foreign-policy.pdf`, PDF p. 10).
+
+Neither source replaces the current 245-person dataset. The broader source
+also has 45 fewer post respondents than the 2009 paper reports, so its 465 post
+forms should not be presented as complete recovery of every published record.
+No questionnaire answer, attendance flag, score or aggregate changes here.
+
 ## BTP Presidential Primaries 2004 — btp-presidential-primaries-2004
 
 ### PR-01: Draft counts and recodes are not the executed aggregate definition

@@ -1,0 +1,11 @@
+field,label,observed,missing_differences,value_differences,max_difference,float32_differences
+dt_start,Date interview started,674,0,396,1,0
+dt_end,Date interview ended,674,0,381,1,0
+tm_start,Time interview started,674,0,0,0,0
+tm_end,Time interview ended,674,0,0,0,0
+f_dt_st,Date interview started,465,0,213,1,0
+f_dt_end,Date interview ended,465,0,214,1,0
+f_tm_st,Time interview started,465,0,0,0,0
+f_tm_end,Time interview ended,465,0,0,0,0
+duration,Duration of interview in minutes (baseline),674,0,0,0,0
+f_durat,Duration of interview in minutes (followup),465,0,0,0,0
