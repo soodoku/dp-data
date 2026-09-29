@@ -4253,6 +4253,58 @@ item tables previously labeled 13,709 such cells `answered`. They now use
 with 13,709 changed cells in each table. Raw codes, zero correctness, scores,
 denominators and respondent samples are unchanged.
 
+### A1R19-03 — published party means reproduce when a nonresponse code is included (checked; retain missing coding)
+
+The actual downstream attitude analysis uses 47 policy items for 523 completed
+delegates in 40 groups. All 94 pre/post fields have substantive codes 0–10 and
+midpoint 5, and each pair has the same question wording apart from apostrophe
+formatting. The methods report distinguishes 526 attendees from 523 completed
+post-event questionnaires. The existing completion restriction is supported.
+
+The retained paper, `data/america-in-one-room-2019/papers/a1r-2019-paper.pdf`,
+Tables 1–4, supplies 92 party-specific means for 23 of these policy items.
+Complete substantive pairs reproduce 88 means to two decimal places, or one
+where only one is printed. Table 1 displays two-decimal values with a trailing
+zero; the comparison uses their two-decimal granularity.
+The remaining four are the two Republican means for refugee restrictions (Q2A)
+and the Paris Agreement (Q3A). Including the post-wave code −8 as a numeric
+rating reproduces all four printed means:
+
+| Item | Valid paired N | Correct initial / post means | N including −8 | Initial / post means including −8 |
+| --- | ---: | --- | ---: | --- |
+| Refugee restrictions (Q2A) | 126 | 7.023810 / 4.825397 | 127 | 7.047244 / 4.724409 |
+| Paris Agreement (Q3A) | 108 | 3.759259 / 4.657407 | 109 | 3.724771 / 4.541284 |
+
+Table 1 (PDF p.8, printed p.1471) reports 7.050 and 4.720; Table 2
+(PDF p.9, printed p.1472) reports 3.7 and 4.54. The codebook explicitly labels
+−8 as “Multiple responses” for `T2Q2A` and `T2Q3A` (lines 3945 and 4080).
+Physical source row 2953 has `D1=2`, `GROUP=3`, `Q2A=10`, `T2Q2A=-8`;
+row 1779 has `D1=2`, `GROUP=29`, `Q3A=0`, `T2Q3A=-8`.
+These identities use one-based data rows excluding the header. Reproduction
+restricts `CONDITION=1`, `POST=1`, nonmissing `GROUP`, `D1=2`, and valid
+initial/post substantive responses; the comparison then admits post −8.
+
+This is numerical evidence consistent with including a nonresponse code in the
+published calculation, not recovery of the authors' analysis code. Keep the
+current downstream rule excluding −8, 77, 98 and 99. Five −8 post-policy cells
+occur across three people, all Republicans. The other cells are row 1779's
+`T2Q2B` and `T2Q6C`, and row 1944's `T2Q6F`. Their codebook labels also identify
+multiple responses. No recode is needed to imitate the publication.
+
+All ten immigration support percentages in the retained executive summary
+(PDF p.2) reproduce with support defined as 6–10 and unweighted valid-response
+denominators. The paper's foreign-policy Table 5 is outside this numerical
+comparison; checking scales for all 47 items does not establish reproduction
+of every published statistic. Comparison files are retained under
+`audit/corrections/america-in-one-room-2019/`.
+
+One completer (source row 2944, group 26) gives “no opinion” on all 47 post
+policy items but answers other post questions (`T2Q1=6`, `T2PK1=1`, `T2D1=1`).
+Retain this person with missing policy attitudes: the questionnaire is observed.
+Across the 49,162 item-wave cells, there are 47,009 valid responses, five multiple
+responses, 1,980 no-opinion responses and 168 skipped responses. The current
+reader handles these correctly. No person, answer, scale or weight is changed.
+
 ### A1RC-01 — label the published climate cohort as completed (corrected)
 
 The [NORC methods report](../data/a1r-climate-2021/design/a1r-climate-methods.pdf),
