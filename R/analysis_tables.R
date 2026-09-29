@@ -1,5 +1,6 @@
 source(project_path("R", "analysis_tanzania.R"))
 source(project_path("R", "analysis_knowledge_responses.R"))
+source(project_path("R", "analysis_phase_attitudes.R"))
 
 item_display_text <- function(values) {
   replacements <- c(
@@ -744,6 +745,9 @@ build_analysis_tables <- function() {
   stopifnot(nrow(scoring$dk_correct_conflicts) == 0L)
   items <- scoring$items |>
     dplyr::select(-"wave_observed")
+  phase_attitudes <- analysis_phase_attitudes(
+    phase_evidence$participants, phase_evidence$scores
+  )
   stopifnot(
     !anyDuplicated(participants[c(
       "poll_id", "source_dataset", "respondent_id"
@@ -779,6 +783,9 @@ build_analysis_tables <- function() {
     analysis_phase_participants = phase_evidence$participants,
     analysis_phase_scores = phase_evidence$scores,
     analysis_phase_item_responses = phase_items,
+    analysis_phase_attitudes = phase_attitudes$analysis_phase_attitudes,
+    analysis_phase_attitude_responses =
+      phase_attitudes$analysis_phase_attitude_responses,
     analysis_studies = wave_catalog$analysis_studies,
     analysis_survey_waves = wave_catalog$analysis_survey_waves
   )

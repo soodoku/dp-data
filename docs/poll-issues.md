@@ -7305,6 +7305,48 @@ when invalid focal responses or invalid peer answers are excluded; these are
 missing observations, not known wrong answers.
 
 
+## A1R/Climate paired attitude source audit (implemented September 29, 2026)
+
+The existing baseline reader correctly scales every observed reviewed rating:
+180,574 A1R cells across 47 items and 528,840 Climate cells across 60 items
+have zero differences from independent raw-source reconstruction. It previously
+exposed no paired exit rows. The new paired phase tables expose all 47 A1R
+and 72 Climate items using the same verified pre-arrival/immediate-exit
+occasions as knowledge. Existing baseline tables and all numeric scores remain
+unchanged. No source answer or item polarity is recoded.
+
+Across all source records, the added exit coverage contains 61,159 substantive
+A1R answers and 92,910 substantive answers to Climate's existing 60 items.
+Twelve additional Climate items (Q0A:C, Q1A:E, Q11A:B, Q12A:B) supply
+99,373 substantive baseline answers and 19,052 exit answers. These twelve
+have 10,993 complete item pairs among the 962 completers. The retained
+results report identifies their worry, agreement and willingness directions;
+Q2–Q9 ratings express support and Q10 importance. No common ideological
+polarity is imposed. Missingness is determined within each item's own wave.
+
+All 94 A1R source fields match their field-specific codebook categories,
+including endpoints 0=oppose, 5=middle, 10=favor, 77=no opinion, 98=skipped
+and 99=refused. Five observed post codes -8 retain their original “Multiple
+responses” labels and map to missing, not to midpoint. For all 144 Climate
+fields, observed substantive codes are 0:10 and observed nonanswers are 77/98.
+The authored script documents the broader nonanswer set 77/88/98/99; labels
+are not invented. All raw values survive in the typed phase responses.
+
+A separate authored-script error is explicitly rejected for upstream adoption:
+`data/a1r-climate-2021/scripts/replication-data-preparation.do`, line 277,
+masks baseline ideology components when the person's T3 answer is 77/98/99.
+Within its 1,419 completed-follow-up records, this discards 1,602 baseline
+components across 504 people and changes 488 ideology scores. Removing only
+that cross-wave mask changes the mean from 3.694652439 to 3.701763039, with
+a maximum individual change of 2.672727273. The canonical baseline reader
+does not copy this error; neither does the paired exporter. Do not infer that
+all authored script operations are valid merely because the script reproduces.
+
+Evidence is retained in `audit/attitude-definition-review/a1r-climate-paired/`;
+source-based tests independently compare every raw and scaled paired response.
+No participant, attendance, group, knowledge score or historical aggregate
+changes. Downstream adoption of these paired attitudes is a separate comparison.
+
 ## Cross-poll issues for the eventual schema
 
 ### X-01: Knowledge eligibility is not the respondent universe

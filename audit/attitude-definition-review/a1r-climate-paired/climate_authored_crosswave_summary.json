@@ -1,0 +1,9 @@
+{
+  "n_cohort": 1419,
+  "n_changed_components": 1602,
+  "n_people_with_components": 504,
+  "n_changed_scores": 488,
+  "old_mean": 3.69465243899184,
+  "new_mean": 3.7017630393571586,
+  "max_abs_score_difference": 2.672727272727273
+}

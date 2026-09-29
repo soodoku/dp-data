@@ -409,3 +409,27 @@ analysis_item_responses,source_response_label,string,TRUE,FALSE,Original source 
 analysis_phase_item_responses,knowledge_response,string,TRUE,FALSE,correct; incorrect; or dk for explicit do-not-know or cannot-say responses; null for other missingness or unrecoverable scored-only responses
 analysis_phase_item_responses,response_reason,string,FALSE,FALSE,Source response classification kept separate from correctness and questionnaire presence
 analysis_phase_item_responses,source_response_label,string,TRUE,FALSE,Original source value label or explicitly documented answer label; null when unavailable
+analysis_phase_attitudes,poll_id,string,FALSE,TRUE,poll id
+analysis_phase_attitudes,attitude_id,string,FALSE,TRUE,attitude id
+analysis_phase_attitudes,pre_column,string,FALSE,FALSE,pre column
+analysis_phase_attitudes,post_column,string,FALSE,FALSE,post column
+analysis_phase_attitudes,minimum,float64,FALSE,FALSE,Lowest offered numeric response
+analysis_phase_attitudes,maximum,float64,FALSE,FALSE,Highest offered numeric response
+analysis_phase_attitudes,label,string,FALSE,FALSE,label
+analysis_phase_attitudes,direction,string,FALSE,FALSE,What increasing numeric responses mean in this poll; no cross-poll polarity harmonization
+analysis_phase_attitudes,nonresponse_codes,string,FALSE,FALSE,Source-documented nonanswer codes separated by |; not midpoint-imputed
+analysis_phase_attitudes,evidence,string,FALSE,FALSE,Retained instrument or authored source evidence
+analysis_phase_attitude_responses,poll_id,string,FALSE,TRUE,poll id
+analysis_phase_attitude_responses,source_dataset,string,FALSE,TRUE,Canonical source battery name; does not establish treatment allocation
+analysis_phase_attitude_responses,respondent_id,string,FALSE,TRUE,respondent id
+analysis_phase_attitude_responses,attitude_id,string,FALSE,TRUE,attitude id
+analysis_phase_attitude_responses,wave_instance_id,string,FALSE,TRUE,wave instance id
+analysis_phase_attitude_responses,wave,string,FALSE,FALSE,Canonical t0 pre-arrival or t2 immediate exit; source wave names remain in wave catalog
+analysis_phase_attitude_responses,wave_role,string,FALSE,FALSE,wave role
+analysis_phase_attitude_responses,source_column,string,FALSE,FALSE,source column
+analysis_phase_attitude_responses,source_row,int32,FALSE,FALSE,source row
+analysis_phase_attitude_responses,raw_value,float64,TRUE,FALSE,Unchanged source response including invalid and nonanswer codes
+analysis_phase_attitude_responses,source_response_label,string,TRUE,FALSE,Original codebook value label when available; no invented labels
+analysis_phase_attitude_responses,response_status,string,FALSE,FALSE,answered; non_substantive; invalid_response; blank; source_missing; absent_form
+analysis_phase_attitude_responses,wave_observed,bool,TRUE,FALSE,Independent source questionnaire presence; not inferred from item correctness or attendance
+analysis_phase_attitude_responses,value,float64,TRUE,FALSE,Offered substantive integer response normalized by fixed endpoints; all nonanswers missing; no midpoint imputation

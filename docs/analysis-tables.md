@@ -1,6 +1,6 @@
 # Canonical analysis tables
 
-`make analysis` writes thirteen typed Parquet tables and a checksum manifest to
+`make analysis` writes fifteen typed Parquet tables and a checksum manifest to
 `output/analysis/`. `make check` rebuilds them after the knowledge, respondent,
 and historical aggregate exports. Source files and reviewed metadata stay in
 `data/` and `metadata/`; downstream projects use the Parquet tables.
@@ -19,6 +19,8 @@ and historical aggregate exports. Source files and reviewed metadata stay in
 | `analysis_survey_waves` | One survey occasion per catalog cohort; `poll_id`, `wave_instance_id` |
 | `analysis_phase_participants` | One source respondent with attendance evidence; participant key |
 | `analysis_phase_scores` | One knowledge measurement; participant key, `battery_id`, `wave_instance_id` |
+| `analysis_phase_attitudes` | One reviewed paired attitude item; `poll_id`, `attitude_id` |
+| `analysis_phase_attitude_responses` | One raw attitude answer; participant key, `attitude_id`, `wave_instance_id` |
 | `analysis_phase_item_responses` | One item answer with verified timing; participant key, `battery_id`, `wave_instance_id`, `item_id` |
 
 There are respondent records for 33 polls and item responses for 31. The
@@ -230,7 +232,11 @@ has one row per canonical participant, measure, and wave, keyed by `poll_id`,
 `source_dataset`, `respondent_id`, `attitude_id`, and `wave`. The initial release
 covers baseline (`t1`) in 28 polls, including control respondents where present.
 Values are on a 0–1 scale; refusal, no-opinion, and out-of-range codes are missing.
-No missing answer is assigned the scale midpoint.
+Single-item attitudes keep nonanswers missing. Historical composite indices may use
+explicitly named `_midpoint_imputed` variants; plain alternatives remain in
+`output/respondent/respondent_measures.parquet`. The canonical baseline catalog
+identifies every such variant by name and construction, rather than silently
+substituting a midpoint.
 
 The 21 earlier polls retain the existing policy indices and their documented
 construction in the rebuilt polardata. The seven additional polls use individual
@@ -358,3 +364,33 @@ score reproduces from these answers. Tomorrow’s Europe’s source records with
 unknown arrival-form presence retain nullable correctness and the unknown
 presence flag; they are not treated as observed wrong answers. Exposing an
 intermediate questionnaire changes neither attendance nor the analytical cohort.
+
+## Paired source attitudes
+
+`analysis_phase_attitudes` and `analysis_phase_attitude_responses` expose all
+47 reviewed America in One Room 2019 items and all 72 reviewed Climate 2021
+items at pre-arrival (`t0`) and immediate exit (`t2`). They preserve all
+3,842 and 8,814 source records, respectively, including controls and records
+without a post questionnaire. The `source_dataset` key names the source battery;
+it does not classify a person as a control or attendee. Join participant keys
+to `analysis_phase_participants` for the retained arm, attendance basis and group.
+The verified survey occasions remain in `analysis_survey_waves`. These tables
+do not yet expose Climate's later follow-up attitudes or historical composite
+indices; the existing baseline tables retain their established coverage.
+
+Each item keeps its source column, raw numeric code, original value label when
+available, fixed endpoints and source direction. Increasing values can mean
+greater support, agreement, worry, importance or willingness; the table does
+not turn these into a shared ideological direction. Substantive integer
+responses from 0 through 10 are divided by 10. A genuine source response of
+5 is 0.5; missing answers are never assigned that value.
+
+`response_status` distinguishes `answered`, documented `non_substantive`,
+`invalid_response`, `blank` within an observed questionnaire, `source_missing`
+when questionnaire presence is unknown, and `absent_form` when independent
+presence evidence establishes absence. Invalid and nonanswer codes remain in
+`raw_value` while `value` is missing. America in One Room's five multiple-response
+codes (`-8`) are invalid, and its source labels are retained. Climate's
+nonanswer labels are not independently recoverable, so labels remain null.
+No guessing adjustment, weights, attendance inference or group summaries are
+applied. Pre-event answers never depend on the person's post-event response.
