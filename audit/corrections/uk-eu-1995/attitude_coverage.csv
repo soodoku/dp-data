@@ -1,0 +1,17 @@
+poll,index,wave,sample,people,components,observed,partial,all_missing,minimum,maximum,mean,maximum_reconstruction_error
+uk-eu-1995,eurelat,1,all_source,900,3,897,160,3,0,1,0.5160256410256411,0
+uk-eu-1995,eurelat,1,historical,238,3,238,41,0,0,1,0.5575980392156863,0
+uk-eu-1995,euscope,1,all_source,900,2,896,22,4,0,1,0.4853515625,0
+uk-eu-1995,euscope,1,historical,238,2,237,3,1,0,1,0.4926160337552743,0
+uk-eu-1995,commies,1,all_source,900,1,888,0,12,0,1,0.522240990990991,0
+uk-eu-1995,commies,1,historical,238,1,238,0,0,0,1,0.5451680672268908,0
+uk-eu-1995,favref,1,all_source,900,1,896,0,4,0,1,0.7360491071428571,0
+uk-eu-1995,favref,1,historical,238,1,238,0,0,0,1,0.740546218487395,0
+uk-eu-1995,eurelat,2,all_source,900,3,224,13,676,0,1,0.6536458333333334,0
+uk-eu-1995,eurelat,2,historical,238,3,224,13,14,0,1,0.6536458333333334,0
+uk-eu-1995,euscope,2,all_source,900,2,224,15,676,0,1,0.5172991071428571,0
+uk-eu-1995,euscope,2,historical,238,2,224,15,14,0,1,0.5172991071428571,0
+uk-eu-1995,commies,2,all_source,900,1,221,0,679,0,1,0.5407239819004526,0
+uk-eu-1995,commies,2,historical,238,1,221,0,17,0,1,0.5407239819004526,0
+uk-eu-1995,favref,2,all_source,900,1,224,0,676,0,1,0.8069196428571429,0
+uk-eu-1995,favref,2,historical,238,1,224,0,14,0,1,0.8069196428571429,0
