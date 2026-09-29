@@ -1,0 +1,19 @@
+index,wave,fields,source_n,selected_n,n_observed_any,n_complete,n_all_missing_midpoint,selected_all_missing_midpoint,minimum,maximum,direction,denominator
+industrial_roads,1,d2014|d2020|d2021,269,233,204,101,65,56,0.0,1.0,higher project importance,available component count
+industrial_roads,2,d2014p|d2020p|d2021p,269,233,194,100,75,41,0.0,1.0,higher project importance,available component count
+village_roads,1,d2007|d2010|d2011,269,233,212,109,57,49,0.0,1.0,higher project importance,available component count
+village_roads,2,d2007p|d2010p|d2011p,269,233,196,117,73,39,0.0,1.0,higher project importance,available component count
+main_roads,1,d2015|d2016|d2017|d2018|d2019|d2022,269,233,220,91,49,41,0.0,1.0,higher project importance,available component count
+main_roads,2,d2015p|d2016p|d2017p|d2018p|d2019p|d2022p,269,233,205,99,64,30,0.0,1.0,higher project importance,available component count
+commercial_roads,1,d2012|d2013,269,233,179,147,90,78,0.0,1.0,higher project importance,available component count
+commercial_roads,2,d2012p|d2013p,269,233,175,144,94,60,0.0,1.0,higher project importance,available component count
+wenchang_main_avenue,1,d2006,269,233,203,203,66,59,0.0,1.0,higher project importance,available component count
+wenchang_main_avenue,2,d2006p,269,233,212,212,57,23,0.0,1.0,higher project importance,available component count
+other_parks,1,d2024|d2028|d2029,269,233,215,120,54,49,0.0,1.0,higher project importance,available component count
+other_parks,2,d2024p|d2028p|d2029p,269,233,214,141,55,21,0.0,1.0,higher project importance,available component count
+township_image,1,d2025|d2031,269,233,188,130,81,71,0.0,1.0,higher project importance,available component count
+township_image,2,d2025p|d2031p,269,233,185,141,84,50,0.0,1.0,higher project importance,available component count
+cultural_heritage,1,d2025|d2032,269,233,191,131,78,69,0.0,1.0,higher project importance,available component count
+cultural_heritage,2,d2025p|d2032p,269,233,183,143,86,52,0.0,1.0,higher project importance,available component count
+sewage,1,d2030|d2033|d2034|d2035,269,233,230,138,39,34,0.0,1.0,higher project importance,available component count
+sewage,2,d2030p|d2033p|d2034p|d2035p,269,233,225,160,44,10,0.10000000149011612,1.0,higher project importance,available component count

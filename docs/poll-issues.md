@@ -6624,7 +6624,7 @@ original answer sheets or a documented correction log can resolve that question.
 
 The fielded translated questionnaire and its alternative both print a 0-10
 importance scale for the project ratings. One respondent (`p=50`, source row
-147, historical case 52050) answered 4.5 on baseline village-road item
+147, historical case 52050) has a merged value of 4.5 on baseline village-road item
 `d2007`; their other two components are 5 and 5. The archived code divided
 the ratings by 10 but then reset this one value to 4.5. This produced an
 out-of-range index of 1.83333337, which the final individual export blanked
@@ -6734,6 +6734,174 @@ pooled gender comparisons lose one eligible pair under the revised group
 mean. These consequences do not determine correctness. The corrected source
 fields are `d2006` and `d2006p`; the sample, missing-answer fallback, and
 centrally derived group-dispersion formula are unchanged.
+
+### ZG-06: All nine attitude batteries have been reconstructed and source versions compared
+
+**Reviewed; existing approved corrections and historical missing-answer rules
+preserved.** The independent
+[reproducer](../audit/corrections/zeguo-2005/reproduce.py) reads repository poll
+files and current exports, without the private vault or production scoring
+helpers. Run `python3 audit/corrections/zeguo-2005/reproduce.py` from any working
+directory. Its 107 comparisons cover all 18 attitude fields and their observed
+component counts for 269 source people, the 233 selected participants, baseline
+extremity, and the means and dispersion in all 16 groups. Every comparison has
+zero unexplained differences. All current attitude values are within 0–1 and all
+16 baseline covariance matrices have rank nine. Detailed results are retained in
+`index_checks.csv`, `index_coverage.csv` and `group_checks.csv` in that directory.
+
+The [fielded questionnaire](../data/zeguo-2005/source-materials/questionnaire.pdf),
+project-rating section Q6–35, specifies 0 as unimportant, 10 as most important,
+5 as the midpoint and 98 as don't know. Every included project is scored in the
+same direction. The modern build uses the authored merged rating fields, where
+98 has already become missing, rather than silently substituting the earlier
+PRE/POST field files. The current available-component means are:
+
+| Historical catalog index | Project questions, both waves | Source/instrument assessment |
+| --- | --- | --- |
+| Industrial roads | 14, 20, 21 | Matches published Appendix A |
+| Village roads | 7, 10, 11 | Matches Appendix A; approved merged Q7 rescaling retained |
+| Main roads | 15–19, 22 | Matches Appendix A; approved departure-wave selection retained |
+| Commercial roads | 12, 13 | Matches Appendix A |
+| Wenchang Main Avenue | 6 | Matches the questionnaire and Appendix A; ZG-05 retained |
+| Other parks | 24, 28, 29 | Matches Appendix A |
+| Township image | 25, 31 | Historical authored variant; published definition differs, ZG-08 |
+| Cultural heritage | 25, 32 | Matches Appendix A |
+| Sewage treatment | 30, 33–35 | Matches Appendix A |
+
+The available-component denominator and historical midpoint fallback for an
+all-missing battery remain unchanged. Seven indices first store rating/10 and
+then the mean as float32; Other Parks and Township Image store the raw mean as
+float32 and then divide by ten. These storage-order differences are reproduced,
+not treated as alternative substantive scales. The baseline summary is the
+equal-weight mean of nine absolute distances from .5; group SDs use sample SDs,
+and generalized variance uses the shared reviewed covariance rule. Project
+investment costs printed in the questionnaire are context, not index weights.
+
+The [published paper](../data/zeguo-2005/papers/china-zeguo-bjps.pdf), Table 4 and
+Appendix A (printed pp. 441, 447–448), supplies definition and denominator checks.
+For seven indices, paired nonmissing ratings among the 235 matched source people
+reproduce both the reported N and the means rounded to three decimals. The
+corrected Village Roads baseline mean is .587975 rather than the printed .597;
+this is not a reason to undo the approved ZG-02 scale correction. Township Image
+has the separate version gap in ZG-08. The paper also includes a tenth,
+single-project Recreational Park index, Q26. The archived `china_2005.r` explicitly
+comments that slot out; the historical nine-index catalog is a subset, not a
+claim to contain every published index. The paired publication denominator
+does not justify changing the full-sample midpoint policy.
+
+The one-time independent archive comparison in `archive_projection_parity.csv`
+records the SHA256 hashes of the original PRE SAV, POST SAV and merged DTA. All
+54, 63 and 939 retained numeric columns, respectively, match the public
+projections exactly, including source row order. Numeric strings in the merged
+DTA were compared after parsing numbers and its blank/dot missing tokens.
+`source_hashes.csv` pins the repository inputs and instrument/paper used by the
+repeatable audit. The two archived `r_recode_eval` files concern evaluation and
+demographics; they do not establish how the project-rating edits were made.
+
+`raw_merged_rating_versions.csv` preserves twelve differences between the
+original PRE/POST ratings and the authored merged version after original 98
+codes are treated as missing. They involve baseline p50/Q7 (4 to 4.5), p2/Q27
+(5 to 5.5), and departure p21, p39, p67 and p217. They are not newly applied
+recodes or verified answer-sheet corrections. The merged values remain in use;
+original answer sheets or a correction/version log would be needed to choose
+between these stages. This qualification also applies to ZG-01's three knowledge
+overrides. The March 2005 initial survey and April 9 departure questionnaire are
+supported by the paper; the archived `timebtw=25` remains explicitly a best guess,
+not an independently verified person-level interview interval. No new score,
+cohort, identity or timing recode was applied in this audit.
+
+### ZG-07: Thirty-four people have no matched participant departure questionnaire
+
+**Proposal only; awaiting the user's poll-specific decision.** For 34 of the
+269 baseline source people, both `pp` (participant number at T2) and
+`preandpost` are missing, there is no matching participant POST source record,
+and all thirty merged departure project ratings and the four joined departure
+knowledge answers are missing. All 269 baseline IDs occur in the PRE file, so
+there is no symmetric unmatched-PRE case. Seven of the 242 POST IDs are outside
+the 269-person baseline universe; the audit does not invent a match for them or
+add them to the historical panel. The 34 people are outside the 233-person main
+sample and already have `panel=FALSE` in both canonical participant views.
+
+The current respondent layer gives each of these 34 people all nine departure
+attitudes at .5 and departure knowledge at zero. The proposed rule would leave
+their baseline measurements and source rows intact and mark only the absent
+participant departure measurements missing. That means 34 changes for each of
+the nine post attitude fields and each of six post-dependent knowledge fields:
+`knowledge_t2`, `knowledge_joint`, `knowledge_gain`, `knowledge_gain_joint`,
+`log_knowledge_joint` and `high_knowledge_joint`. Current gains range from −1 to
+0; current joint-log values are −9.210340371976182. Exact IDs and current values
+are retained in `absent_departure_current_values.csv`.
+
+Propagation would make 34 departure scores and their zero `n_correct` values
+missing in each of `analysis_scores` and `analysis_phase_scores`. Each item view
+has 136 departure correctness values currently zero; these would become
+missing, with `response_status` changing from `scored` to `not_observed`.
+The same 136 zero correctness values in `historical_knowledge_items` would
+become missing. Phase score/item presence would change from unknown to false,
+and the phase score's questionnaire-presence label from unknown to
+`not_observed`. The four-item battery size, already missing observed-item
+counts, source response values and identities would remain unchanged.
+`absent_departure_proposed_changes.csv` records these fields separately rather
+than summing duplicated exports. The counterfactual proof preserves every
+matched POST numerical value, every baseline value, all 233 main participants
+and their group summaries, and all existing panel flags.
+
+This is distinct from an observed questionnaire with nonanswers. Participant
+**p90** has a verified POST record, filled demographics, 28 explicit project
+98 codes and two blank project items. Its four quiz answers are blank. The
+existing rule therefore retains zero quiz scores and midpoint attitudes for
+p90; it must not be masked by an all-missing-battery predicate. Its phase
+questionnaire presence is currently unknown and could separately be recorded
+as observed using the verified POST identity. Fourteen baseline rows also lack
+all substantive project ratings, but their PRE records are retained; rating
+missingness alone is not evidence of an absent whole questionnaire.
+
+The merged file also contains a **separate nonparticipant block**: 32 populated
+`np` records co-located with baseline p1–33, including 30 rows with an ordinary
+matched participant POST record and p29/p31 among the unmatched rows. The
+dictionary labels its demographics as nonparticipant responses. These cannot
+be borrowed to fill participant departure values: for example, p2's baseline
+record is female, age 61, whereas its co-located nonparticipant record is male,
+age 21. There is no verified crosswalk identifying these as the same people.
+`nonparticipant_block_identity_caution.csv` retains the public numeric evidence.
+The proposal leaves that block untouched and makes no claim that every possible
+nonparticipant follow-up source is absent. No absence repair has been adopted.
+
+### ZG-08: Township Image has two authored definitions
+
+**Unresolved source-definition choice; no correction adopted.** The archived
+`china_2005.r`, lines 129–130, explicitly selects `imaget1`/`imaget2`; the merged
+dictionary describes its image index as Q25 (Wenchang Park second stage) and Q31
+(Demonstrative Street). The current build reproduces that historical choice.
+The published Appendix A instead lists **Q8 Bridge, Q9 Fuxing Road east end,
+Q25 Wenchang Park second stage and Q27 Urban environmental constructions**.
+The merged file also contains `image3t1`/`image3t2`, explicitly labeled as the
+available mean of 8, 9, 25 and 27, and all their values independently reproduce
+that four-project definition. Thus both versions are authored source evidence;
+the published title alone does not authorize silently replacing the historical
+construct.
+
+With the current float32(raw mean)/10 storage order and midpoint fallback
+preserved, adopting the published four-project definition would change 186
+baseline and 171 departure image values in the 269-person respondent layer,
+and 184 baseline extremities. In the main 233-person sample it would change
+161 `chi.t1att7`, 169 `chi.t2att7` and 160 `attextreme` values; `meanxtreme`,
+`avgsd` and `genvar` would each change for all 233 people. For example, p15's
+baseline image value would move from 1 to .6333333492279053, while p262's
+would move from .5 to 1. Exact old/proposed values are retained in
+`township_image_proposal.csv` and `township_image_derived_proposal.csv`; the
+selected-field scope is in `township_image_selected_impact.csv`. No source
+response, sample membership or other attitude definition would change.
+
+The four-project version reproduces the paper's paired **N=176**, but its
+baseline/departure means are .656321/.609967 rather than the printed .663/.618.
+The two-project historical version gives N=138 and .621014/.539855. These are
+paired observed means without midpoint substitution; they are not full-sample
+means. `published_index_comparison.csv` retains this discrepancy and the other
+nine-index comparisons. The appendix supports an alternative construct, while
+the unreproduced published means remain a separate source-version limitation.
+The user's choice between preserving the historical construct and adopting the
+published four-project definition is still required before a numerical change.
 
 ## Cross-poll issues for the eventual schema
 

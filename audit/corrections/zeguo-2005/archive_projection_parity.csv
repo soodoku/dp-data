@@ -1,0 +1,4 @@
+file,sha256,n_rows,numeric_columns_verified,differences
+vault/cdd/data/China/2005/China Dpoll PRE.sav,f7d1c982eb93c9346414334a115470591de37d7cf3b738471bbbf119de160530,269,54,0
+vault/cdd/data/China/2005/China Dpoll POST.sav,774bb6c537050e785f4894c84fb849f104c49a039b70ad2201876aad3ed907b8,242,63,0
+vault/cdd/data/China/2005/China Merged Dataset.dta,f64a597e59145c86e175bc985cc17710553ca1b3357411e7e7aed2e278b8ced9,269,939,0
