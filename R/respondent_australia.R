@@ -36,10 +36,10 @@ australia_ranking <- function(survey, wave) {
   first <- read("firstop")
   second <- read("secop")
   republic <- rep(NA_real_, nrow(survey))
-  republic[which(first == 3)] <- 0
   midway <- if (wave == 1L) c(3, 97, 100) else c(3, 97, 99)
   republic[which(second %in% midway)] <- .5
   republic[which(first != 3 & second != 3 & second < 90)] <- 1
+  republic[which(first == 3)] <- 0
   popular <- rep(NA_real_, nrow(survey))
   popular[which(first == 1 & second == 3)] <- 1
   popular[which((first == 1 & second == 2) |

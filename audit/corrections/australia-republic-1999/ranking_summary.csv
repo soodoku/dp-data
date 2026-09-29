@@ -1,0 +1,5 @@
+legacy_field,historical_sample,people,changed,missingness_changed,previous_mean,approved_mean,maximum_difference
+aus.republican1,FALSE,4312,25,0,0.6495799923634975,0.6447117220313097,0.25
+aus.republican1,TRUE,347,11,0,0.670749279538905,0.6654658981748319,0.16666666666666669
+aus.republican2,FALSE,4312,0,0,NA,NA,NA
+aus.republican2,TRUE,347,13,0,0.7509606147934679,0.7435158501440923,0.5

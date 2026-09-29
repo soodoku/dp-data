@@ -1,0 +1,76 @@
+Jim's reaction to existing indices:
+---------------------------------------------------------------
+1) It is indeed true that the current indices are empirical premises (national autonomy, workability, democracy and politicization are all of the form if X occurs Y will likely result). Tradition index is more basic values).
+
+2) So much of the deliberation was about empirical premises that were very contested so I could see an argument for including them. In other words much of the deliberation was about whether a directly elected president would become more powerful than the current governor general, or not…this is a contested empirical premise. But it is not the same as what we usually call a policy attitude… which takes the form x should be done….
+------------------------------------------------
+
+Suggestions:
+--------------------------------------------------------
+1) A14 and A15 are certainly policy prescriptions. Whether there should be  a directly elected president or a president chosen by parliament or whether Australia should retain the queen… However, they are in the form of ranking choices, first choice, second choice etc.…A 15 is a prescription about whether or not the proposed president should be more or less powerful or the same as the current governor general in the amount of power… so this is also a policy attitude. Not sure how we use the ranking question as an index…it is really three questions….
+
+Here is an idea for what to do with the all important ranking question:
+ 
+A14p1 and A14p2
+ 
+We make three indices: one is about degree of support for directly elected president, one is about degree of support for a president chosen by parliament and one is about retaining the queen.
+For each option we have information about whether it is ranked first (from a14p1) or ranked second (from a14p2) or ranked third of the three (if it is neither of the first two). We assign a numerical value for degree of support for it being a first a second or third option of the three…. So we have three indices. What do you think?
+
+2)      C4, C5p1, C5p2 and  C5p3 are also policy attitudes—whether or not Australia should change its flag, or whether the head of state should be a politician, or should be an Australian or whether Australia should cut its remaining constitutional ties to Britain…. The should or should not form make them policy attitudes…
+
+3)      A8 is also a policy attitude… 
+do you think that voting in constitutional referendums should be compulsory?
+-------------------------------------------------------------------------------------
+
+
+
+Jim's suggestion re. A14P1 and A14P2
+-----------------------------------
+We make three indices: one is about degree of support for directly elected president, one is about degree of support for a president chosen by parliament and one is about retaining the queen. For each option we have information about whether it is ranked first (from a14p1) or ranked second (from a14p2) or ranked third of the three (if it is neither of the first two). We assign a numerical value for degree of support for it being a first a second or third option of the three…. So we have three indices. 
+----------------------------------------------
+A14P1  If you had to choose among the following possibilities for Australia, which one would be your first choice?
+
+1.    A President directly elected by the people
+2.    A President appointed by Parliament
+3.    Retaining the Queen and the Governor-General
+4.    Don't Know
+
+A14P2     A14. 2nd Choice:  Direct or 2/3 Pres or Queen                   
+And which one would be you second choice?
+
+A15.  Under the proposed change to a Republic, would you prefer the President to have greater powers than the current Governor-General, the same powers, or fewer powers?
+Greater powers
+Same powers
+Fewer powers
+
+
+--------------------------
+2)      C4, C5p1, C5p2 and  C5p3 are also policy attitudes—whether or not Australia should change its flag, or whether the head of state should be a politician, or should be an Australian or whether Australia should cut its remaining constitutional ties to Britain…. The should or should not form make them policy attitudes…
+----------------
+C4.   On the issue of the Australian flag, do you ...
+   ...strongly favour changing the flag    1
+   ...favour changing the flag             2
+   ...favour retaining the flag            3
+   ...strongly favour retaining the flag   4
+
+C5p1 Australia should keep rather than cut its remaining constitutional 
+ties with Britain 
+Agree --- Disagree Scale
+
+C5p2 Under the proposed change to a Republic the President should be 
+someone from outside politics
+Agree --- Disagree Scale
+
+C5p3 Our head of state should be an Australian
+Agree --- Disagree Scale
+
+
+----------------------------
+
+A8 is also a policy attitude… 
+do you think that voting in constitutional referendums should be compulsory?
+-------------------------------
+A8 Do you think that voting at constitutional referendums 
+should be compulsory, or do you think that people should only have 
+to vote if they want to?
+favor ...oppose scale
