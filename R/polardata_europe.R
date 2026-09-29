@@ -41,9 +41,10 @@ build_australia_derived <- function(survey, values) {
   before <- australia_knowledge_items(survey, 1L)[selected, ]
   after <- australia_knowledge_items(survey, 2L)[selected, ]
   selected_group <- as.numeric(unclass(survey[[field]]))[selected]
+  stopifnot(ncol(before) == 12L, ncol(after) == ncol(before))
   joint <- rowMeans(before * after)
   gain <- historical_group_gain(before * after, selected_group) *
-    (1 - joint) * 12 / 11
+    (1 - joint)
   gain[is.na(gain) & joint == 1] <- 0
   positions <- match(values$source_row, survey$source_row[selected])
   stopifnot(!anyNA(positions), !anyDuplicated(positions))
@@ -55,7 +56,7 @@ build_australia_derived <- function(survey, values) {
   result$pollid <- 26
   result$country <- 3
   result$mode <- 0
-  result$numitems <- 11
+  result$numitems <- ncol(before)
   result$numindices <- 5
   result$length <- 2
   result$timebtw <- NA_real_

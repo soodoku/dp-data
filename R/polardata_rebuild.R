@@ -134,7 +134,7 @@ historical_derived_measures <- function(polls) {
           .env$poll_id == "cpl-1996" & .data$legacy_field %in%
             c("grpgain", "grpgainr", "loggain") ~ "cpl-05-v2",
           .env$poll_id == "australia-republic-1999" &
-            .data$legacy_field %in% c("grpgain", "loggain") ~ "aus-04-v2",
+            .data$legacy_field %in% c("grpgain", "loggain") ~ "aus-02-v3",
           .env$poll_id == "australia-republic-1999" &
             .data$legacy_field == "meanage" ~ "aus05-v2",
           .env$poll_id == "btp-health-education-2005" &

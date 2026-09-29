@@ -99,6 +99,24 @@
       "source_locator": "PDF p.4",
       "status": "reported",
       "notes": null
+    },
+    {
+      "poll_id": "bulgaria-2007",
+      "field": "participants",
+      "value": "230 non-Roma participants analyzed; 25 Roma participants excluded from this article",
+      "reference_id": "bulgaria-2007-intergroup-contact-2018",
+      "source_locator": "PDF pp.8 and 18; printed pp.1036 and 1046, Method and note 2",
+      "status": "reported",
+      "notes": "These groups sum to the 255 attendees reported by organizers; the exclusion belongs to the article analysis, not to attendance."
+    },
+    {
+      "poll_id": "bulgaria-2007",
+      "field": "recruitment",
+      "value": "Nationally representative face-to-face baseline interviews; participants interviewed again immediately after the two-day deliberation in April 2007",
+      "reference_id": "bulgaria-2007-intergroup-contact-2018",
+      "source_locator": "PDF p.8; printed p.1036, Method",
+      "status": "reported",
+      "notes": "No respondent source file recovered. This describes the reported design, not currently available phase scores."
     }
   ],
   "references": [
@@ -201,6 +219,26 @@
       "local_artifact_id": "material-a7b7e414d0937f7a-bulgaria-2007",
       "accessed": "2026-09-24",
       "notes": "Siu, Fishkin and Giles, ISPP 2014 conference paper; event label and venue conflict with organizer."
+    },
+    {
+      "reference_id": "bulgaria-2007-intergroup-contact-2018",
+      "poll_id": "bulgaria-2007",
+      "kind": "paper",
+      "title": "Intergroup Contact in Deliberative Contexts: Evidence From Deliberative Polls",
+      "url": "https://doi.org/10.1093/joc/jqy056",
+      "local_artifact_id": "material-3c2328c96b5f3a85-bulgaria-2007",
+      "accessed": "2026-09-28",
+      "notes": "Public PDF downloaded from https://drive.google.com/uc?export=download&id=1wJJN44q9J-VXM59D8vuKNpV2-F-9qpHM; linked by Stanford event page. PDF pp.8 and 18 (printed pp.1036 and 1046) identify the 2007 sample and exclusion."
+    },
+    {
+      "reference_id": "bulgaria-2007-stanford-data-request",
+      "poll_id": "bulgaria-2007",
+      "kind": "event-report",
+      "title": "Deliberative Democracy Lab: Data requests",
+      "url": "https://deliberation.stanford.edu/tools-resources/data",
+      "local_artifact_id": null,
+      "accessed": "2026-09-28",
+      "notes": "Official access instructions link https://forms.gle/1qiDNqwWMNECz3RWA and ask researchers to specify datasets and purpose. No request submitted; availability of this particular dataset is not confirmed."
     }
   ],
   "material_coverage": [
@@ -230,7 +268,7 @@
       "material_type": "papers",
       "status": "available",
       "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
-      "checked_references": "bulgaria-2007-local-material-a7b7e414d0937f7a-bulgaria-2007;bulgaria-2007-download-material-a7b7e414d0937f7a;bulgaria-2007-roma-working-paper"
+      "checked_references": "bulgaria-2007-local-material-a7b7e414d0937f7a-bulgaria-2007;bulgaria-2007-download-material-a7b7e414d0937f7a;bulgaria-2007-roma-working-paper;bulgaria-2007-intergroup-contact-2018"
     },
     {
       "poll_id": "bulgaria-2007",
@@ -315,6 +353,21 @@
       "publication_status": "published",
       "notes": "Public English briefing hosted by Participedia; event-specific content inspected; SHA-256 87cbe5fd80dce462a461b67699bc031a67e7861a0a5d8a9e1ac9eeb0d3ec9892",
       "relative_path": "briefing/roma-policy-briefing.pdf"
+    },
+    {
+      "artifact_id": "material-3c2328c96b5f3a85-bulgaria-2007",
+      "poll_id": "bulgaria-2007",
+      "artifact_type": "paper",
+      "title": "Intergroup Contact in Deliberative Contexts: Evidence From Deliberative Polls",
+      "location": "data/bulgaria-2007/papers/intergroup-contact-deliberative-contexts-2018.pdf",
+      "source_id": "material-3c2328c96b5f3a85",
+      "original_archive_path": "https://drive.google.com/uc?export=download&id=1wJJN44q9J-VXM59D8vuKNpV2-F-9qpHM",
+      "sha256": "3c2328c96b5f3a85d427b67db3168ac9472a36ab495cff45c436e00eea3e3a78",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Kim, Fishkin and Luskin (2018), Journal of Communication 68:1029–1051. Public PDF linked by the Stanford event page; original bytes retained. Method p.1036 and note 2 p.1046 identify 230 non-Roma analysis participants and 25 excluded Roma participants. No respondent dataset or deposit is supplied in the paper. Source rights retained; repository code license does not apply.",
+      "relative_path": "papers/intergroup-contact-deliberative-contexts-2018.pdf"
     }
   ],
   "document_previews": []

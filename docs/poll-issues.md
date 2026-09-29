@@ -49,14 +49,14 @@ knowledge comparison” does not clear attitudes, demographics, weights, or join
 
 ## Current decisions and source limits
 
-As of September 28, 2026, the UK–EU scale and Texas absent-form corrections
-are approved and implemented. Four other decision bundles remain unapplied,
-along with the UK Health folded-index interpretation described below.
+As of September 28, 2026, the UK–EU scales, Texas absent-form scores and
+Australia item count are corrected. Three other decision bundles remain
+unapplied, along with the UK Health folded-index interpretation described below.
 
 | Poll / issue | Current decision |
 | --- | --- |
 | UK–EU UKEU-02 | Approved and implemented: substantive five-point baseline scales, missing nonanswers and six rebuilt respondent/group fields. The retained review script and approved-value tables quantify the changes. |
-| Australia AUS-02 | Match the peer denominator and `numitems` to the twelve items actually scored: 346 peer measures and logs change; individual knowledge scores do not. The separate routing ambiguity remains unresolved. |
+| Australia AUS-02 | Approved and implemented: match the peer denominator and `numitems` to the twelve items actually scored: 346 peer measures and logs change; individual knowledge scores do not. The separate routing ambiguity remains unresolved. |
 | NIC NIC-05 | Apply one shared undefined-at-ceiling rule. One `grpgain2` zero becomes missing; 107 other all-correct cases already are missing. |
 | Tanzania TZ-03/04 | Decide the first-component −99 correction and recalibration, and require both scores for the panel flag. The latter changes one flag while retaining the respondent and observed follow-up. |
 | SWEPCO SWE-05 / WTU WTU-06 | Approved and implemented upstream: 2,246 absent post scores and 11,230 post item-correctness cells per corresponding table become missing; six dependent respondent measures per person are missing. Baseline and attendee scores are unchanged. |
@@ -106,6 +106,19 @@ Priority questions for the corrections pass include:
   event. Both report 255 participants. Check original event records before
   selecting a venue. The two versions of the results announcement are press
   releases, not papers; their distinct original bytes remain available.
+  The retained [Kim, Fishkin and Luskin (2018) article](../data/bulgaria-2007/papers/intergroup-contact-deliberative-contexts-2018.pdf)
+  identifies 230 non-Roma participants (printed p. 1036) and explains that 25
+  Roma participants were excluded from that article's analysis (note 2,
+  p. 1046). Together they account for the 255 attendees; the 230 is not an
+  alternative attendance total. It reports national face-to-face baseline
+  interviews and interviews immediately after the April 2007 event. The paper
+  supplies no respondent dataset. The retained archive inventory and current
+  source catalog have not yielded this poll's data; the Bulgarian crime files
+  concern the separate 2002 event. Stanford's [official data-request page](https://deliberation.stanford.edu/tools-resources/data)
+  provides a [request form](https://forms.gle/1qiDNqwWMNECz3RWA). Recovery should
+  seek all 1,344 baseline respondents, linked post-event records for all 255
+  attendees, group assignments and coding documentation. No request has been
+  submitted and respondent-level auditing remains blocked by the missing data.
 - **British event dates:** the UK–EU research account says June 1995 while
   parliamentary testimony says May. The UK general-election draft gives April
   26–28, 1997 and calls April 28 a Sunday, although it was Monday. The UK Health
@@ -1916,9 +1929,10 @@ Issue-specific scores are absent from the final aggregate even though later
 syntax constructs them. Check the fielded change-question routing, index memo,
 and script/export dates before choosing a version.
 
-**Count correction proposed 2026-09-28; awaiting approval.** The maintained
-`build_australia_derived()` still multiplies the 12-item peer measure by `12/11`
-and publishes `numitems=11`. The original `aus_republic.R` sets the count to 11
+**Count correction approved and implemented 2026-09-28.** Previously,
+`build_australia_derived()` multiplied the 12-item peer measure by `12/11`
+and published `numitems=11`. It now derives the count from the scored matrix
+and omits that multiplier. The original `aus_republic.R` sets the count to 11
 at line 27 but supplies 12 columns to the knowledge matrix at line 237;
 `hlmFunc.R` line 51 divides each accumulated contribution by that count.
 AUS-04 corrected row alignment, not this mismatch. Setting the count to 12
@@ -1934,6 +1948,9 @@ report's rounded 46/58 and 63/69 baseline/exit percentages. The original script
 also explicitly excludes a party question and discusses the change gate's
 reliability. These are documented battery choices; the unresolved part is the
 fielded QC4/WC4 routing instruction, not whether twelve columns are eleven.
+The source answers, individual scores and all 347 participants are unchanged; the corrected peer fields use definition
+version `aus-02-v3`. The review script preserves all previously approved
+Australia comparisons and records the corrected item count as well.
 
 ### AUS-03: Extremity omissions and a cross-wave ranking typo
 
@@ -1988,10 +2005,11 @@ archived gain formula, `numitems = 11` denominator and all other descriptors
 unchanged. The [codebook](../data/australia-republic-1999/codebook.pdf) and
 [poll report](../data/australia-republic-1999/papers/adp5.pdf) establish the
 sample and small-group context; the archived `groupgain` helper is the direct
-formula evidence. The 11-versus-12 denominator still requires separate review.
+formula evidence. AUS-02 subsequently corrects the 11-versus-12 denominator;
+the figures in this paragraph describe the earlier row-alignment correction.
 
-[Exact values](../audit/corrections/australia-republic-1999/approved_values.csv)
-show 342 finite paired changes above 1e-10 and one missingness change in each
+The earlier row-alignment correction produced 342 finite paired changes above
+1e-10 and one missingness change in each
 of `grpgain` and `loggain`. A misassigned positive infinity disappears in the
 corrected values. Finite `grpgain` mean changes from 0.614531 to 0.441952;
 the maximum finite paired difference is 5.181818. The diagnostic independently
@@ -2001,8 +2019,12 @@ these two aggregate fields change. The recorded dp-distortions output files
 (19 of 19) and dp-deliberately's paired outcomes are byte-identical, and
 dp-learning's 6,013-by-20 analysis frame is identical. These checks do not
 establish effects in downstream analyses that consume `grpgain` directly.
-Reproduce the respondent comparison with
-`Rscript scripts/review_australia_gain.R`.
+The [current approved values](../audit/corrections/australia-republic-1999/approved_values.csv)
+include the subsequent AUS-02 denominator correction: 346 finite changes from
+the frozen historical gain, with one missingness change. The separate
+[item-count comparison](../audit/corrections/australia-republic-1999/item_count_values.csv)
+isolates AUS-02 from the earlier row-alignment correction. Reproduce both
+comparisons with `Rscript scripts/review_australia_gain.R`.
 
 ### AUS-05: Age refusal no longer counts as age 98 (approved correction)
 
