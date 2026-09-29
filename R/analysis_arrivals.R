@@ -1,6 +1,8 @@
 analysis_arrival_items <- function(participants) {
-  polls <- c("california-whats-next-2011", "europolis-2009",
-             "denmark-euro-2000", "vermont-energy-2007", "michigan-2009")
+  polls <- c(
+    "california-whats-next-2011", "europolis-2009",
+    "denmark-euro-2000", "vermont-energy-2007", "michigan-2009"
+  )
   bank <- read_metadata("knowledge_items")
   catalog <- read_metadata("items")
   score_wave <- c(t0 = "t1", t1 = "arrival", t2 = "t2")
@@ -14,8 +16,10 @@ analysis_arrival_items <- function(participants) {
     stopifnot(!anyNA(position), !anyDuplicated(survey$source_row))
     data <- survey[position, , drop = FALSE]
     id_column <- switch(poll,
-      "california-whats-next-2011" = "id", "europolis-2009" = "UniqueID",
-      "denmark-euro-2000" = "delnr", "vermont-energy-2007" = "CASEID",
+      "california-whats-next-2011" = "id",
+      "europolis-2009" = "UniqueID",
+      "denmark-euro-2000" = "delnr",
+      "vermont-energy-2007" = "CASEID",
       "michigan-2009" = "postit"
     )
     cor <- people$source_dataset == "cor_sood"
@@ -33,7 +37,8 @@ analysis_arrival_items <- function(participants) {
     stopifnot(length(item_ids) == nrow(specifications))
     if (poll == "denmark-euro-2000") {
       arrival <- haven::read_sav(
-        project_path("data", poll, "arrival.sav"), user_na = TRUE
+        project_path("data", poll, "arrival.sav"),
+        user_na = TRUE
       )
       stopifnot(!anyNA(arrival$DELNR), !anyDuplicated(arrival$DELNR))
       index <- match(as.numeric(people$respondent_id), arrival$DELNR)
@@ -74,8 +79,10 @@ analysis_arrival_items <- function(participants) {
       rowSums(as.data.frame(answers)) > 0L
     }
     make_items <- function(source, columns, correct_keys, ids, phase, suffix) {
-      stopifnot(length(columns) == length(correct_keys),
-                length(columns) == length(ids), all(columns %in% names(source)))
+      stopifnot(
+        length(columns) == length(correct_keys),
+        length(columns) == length(ids), all(columns %in% names(source))
+      )
       observed <- presence(source, phase)
       purrr::map(seq_along(columns), function(i) {
         raw <- source[[columns[i]]]
@@ -114,16 +121,23 @@ analysis_arrival_items <- function(participants) {
         dplyr::filter(poll_id == poll, wave == 1L) |>
         dplyr::arrange(item_order)
       common <- dplyr::bind_rows(
-        make_items(data, before$source_column[shared], keys[shared],
-                   item_ids[shared], "t0", "knowledge_placements_four"),
-        make_items(arrival_data, fields[shared], keys[shared],
-                   item_ids[shared], "t1", "knowledge_placements_four"),
-        make_items(data, specifications$source_column[shared], keys[shared],
-                   item_ids[shared], "t2", "knowledge_placements_four")
+        make_items(
+          data, before$source_column[shared], keys[shared],
+          item_ids[shared], "t0", "knowledge_placements_four"
+        ),
+        make_items(
+          arrival_data, fields[shared], keys[shared],
+          item_ids[shared], "t1", "knowledge_placements_four"
+        ),
+        make_items(
+          data, specifications$source_column[shared], keys[shared],
+          item_ids[shared], "t2", "knowledge_placements_four"
+        )
       )
       expanded <- purrr::map(c("t1", "t2"), function(phase) {
         prefix <- if (phase == "t1") "t2q" else "t3q"
-        make_items(data, paste0(prefix, c(10, 11, 13, 14, 7, 8)),
+        make_items(
+          data, paste0(prefix, c(10, 11, 13, 14, 7, 8)),
           c(keys[shared], list(1:3, 5:7)),
           c(item_ids[shared], "knowledge_010", "knowledge_011"),
           phase, "knowledge_placements_six"
@@ -150,8 +164,10 @@ analysis_arrival_items <- function(participants) {
         } else {
           "knowledge_expanded_eight"
         }
-        make_items(data, columns, c(keys, extra_keys),
-                   c(item_ids, extra_ids), phase, suffix)
+        make_items(
+          data, columns, c(keys, extra_keys),
+          c(item_ids, extra_ids), phase, suffix
+        )
       }) |>
         purrr::list_rbind()
     }
@@ -176,25 +192,113 @@ analysis_arrival_scores <- function(items) {
       } else {
         NA_integer_
       },
-      .by = c(poll_id, source_dataset, respondent_id, battery_id, wave,
-              original_score_wave)
+      .by = c(
+        poll_id, source_dataset, respondent_id, battery_id, wave,
+        original_score_wave
+      )
     ) |>
     dplyr::mutate(score = n_correct / n_items, scale = "proportion_correct") |>
     dplyr::left_join(
       dplyr::select(roles, "poll_id", "source_dataset",
-                    original_score_wave = "score_wave",
-                    "wave_role", "timing_evidence"),
+        original_score_wave = "score_wave",
+        "wave_role", "timing_evidence"
+      ),
       by = c("poll_id", "source_dataset", "original_score_wave"),
       relationship = "many-to-one"
     )
 }
 
-analysis_phase_items <- function(items, scores, arrivals) {
+analysis_intermediate_items <- function(participants, scores) {
+  catalog <- read_metadata("items")
+  keys <- c("poll_id", "source_dataset", "respondent_id")
+  purrr::map(c("new-haven-2004", "tomorrows-europe-2007"), function(poll) {
+    measurements <- scores |>
+      dplyr::filter(
+        poll_id == poll, source_dataset == "historical",
+        original_score_wave == "knowledge_midterm"
+      ) |>
+      dplyr::inner_join(
+        dplyr::select(
+          participants, dplyr::all_of(keys),
+          "source_row"
+        ),
+        by = keys, relationship = "one-to-one"
+      )
+    survey <- read_poll_survey(poll)
+    positions <- match(measurements$source_row, survey$source_row)
+    stopifnot(!anyNA(positions), !anyDuplicated(survey$source_row))
+    bank <- catalog |>
+      dplyr::filter(poll_id == poll) |>
+      dplyr::arrange(item_id)
+    fields <- if (poll == "new-haven-2004") {
+      sub("^pre_", "mid_", bank$source_column_t1)
+    } else {
+      vapply(bank$source_column_t1, function(field) {
+        sub("^t3", "t2", knowledge_source_field(poll, field, "t2"))
+      }, character(1), USE.NAMES = FALSE)
+    }
+    stopifnot(
+      all(fields %in% names(survey)),
+      all(measurements$n_items == nrow(bank))
+    )
+    items <- purrr::map(seq_len(nrow(bank)), function(i) {
+      raw <- as.numeric(survey[[fields[i]]][positions])
+      correct_codes <- as.numeric(strsplit(
+        bank$correct_codes[i], "|", fixed = TRUE
+      )[[1]])
+      # Telephone placement codes start at1; arrival and exit start at0.
+      placement <- grepl("^q33", bank$source_column_t1[i])
+      if (poll == "tomorrows-europe-2007" && placement) {
+        correct_codes <- correct_codes - 1
+      }
+      tibble::tibble(
+        poll_id = poll, source_dataset = measurements$source_dataset,
+        respondent_id = measurements$respondent_id,
+        battery_id = measurements$battery_id, wave = measurements$wave,
+        original_score_wave = measurements$original_score_wave,
+        item_id = bank$item_id[i], source_row = measurements$source_row,
+        source_column = fields[i], raw_value = raw, raw_text = NA_character_,
+        correct = dplyr::if_else(measurements$wave_observed %in% TRUE,
+          as.integer(raw %in% correct_codes), NA_integer_
+        ),
+        response_status = dplyr::case_when(
+          measurements$wave_observed %in% FALSE ~ "wave_absent",
+          is.na(raw) ~ "source_missing", TRUE ~ "answered"
+        ),
+        wave_observed = measurements$wave_observed
+      )
+    }) |>
+      purrr::list_rbind()
+    rebuilt <- items |>
+      dplyr::summarise(
+        rebuilt = sum(correct) / dplyr::n(),
+        .by = dplyr::all_of(keys)
+      ) |>
+      dplyr::left_join(
+        dplyr::select(measurements, dplyr::all_of(keys),
+                      "score", "wave_observed"),
+        by = keys, relationship = "one-to-one"
+      )
+    rebuilt$expected <- dplyr::if_else(
+      rebuilt$wave_observed %in% TRUE, rebuilt$score, NA_real_
+    )
+    stopifnot(
+      all(abs(rebuilt$rebuilt - rebuilt$expected) < 1e-10, na.rm = TRUE),
+      identical(is.na(rebuilt$rebuilt), is.na(rebuilt$expected))
+    )
+    items
+  }) |>
+    purrr::list_rbind()
+}
+
+analysis_phase_items <- function(items, scores, arrivals, participants) {
   keys <- c("poll_id", "source_dataset", "respondent_id")
   selected <- scores |>
     dplyr::filter(grepl(":knowledge$", battery_id)) |>
-    dplyr::select(dplyr::all_of(keys), "battery_id", "wave",
-                  "original_score_wave", "wave_observed")
+    dplyr::select(
+      dplyr::all_of(keys), "battery_id", "wave",
+      "original_score_wave", "wave_observed"
+    )
   original <- items |>
     dplyr::rename(original_score_wave = "wave") |>
     dplyr::inner_join(selected,
@@ -206,7 +310,9 @@ analysis_phase_items <- function(items, scores, arrivals) {
         wave_observed %in% FALSE, "wave_absent", response_status
       )
     )
-  dplyr::bind_rows(original, arrivals) |>
+  dplyr::bind_rows(original, arrivals, analysis_intermediate_items(
+    participants, scores
+  )) |>
     add_analysis_wave_identity() |>
     dplyr::select(
       "poll_id", "source_dataset", "respondent_id", "battery_id",

@@ -722,7 +722,7 @@ build_analysis_tables <- function() {
   participants <- attendance$participants
   phase_evidence$participants <- attendance$phase_participants
   phase_items <- analysis_phase_items(
-    items, phase_evidence$scores, arrival_items
+    items, phase_evidence$scores, arrival_items, phase_evidence$participants
   ) |>
     enrich_knowledge_responses(catalog)
   phase_scoring <- standardize_knowledge_scores(phase_items)
