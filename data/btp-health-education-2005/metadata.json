@@ -241,6 +241,16 @@
       "local_artifact_id": null,
       "accessed": "2026-09-24",
       "notes": "Official event overview; page publication timestamp is not assumed to equal event date."
+    },
+    {
+      "reference_id": "material-11800586af1643d3-btp-health-education-2005",
+      "poll_id": "btp-health-education-2005",
+      "kind": "script",
+      "title": "Historical Health and Education index recoding",
+      "url": null,
+      "local_artifact_id": "material-11800586af1643d3-btp-health-education-2005",
+      "accessed": "2026-09-28",
+      "notes": "Unchanged historical coding evidence. Not executed by the modern build. See BTPHE-05/BTPGE-08 for independent component review."
     }
   ],
   "material_coverage": [
@@ -595,6 +605,51 @@
       "publication_status": "published",
       "notes": "Generated from data/shared/design/poll_details/appendix-poll-details-5-18-14-e.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Already cited across21 poll references; includes24 polls and four source-linked duration comments. Compared all14 DOCX table rows plus comments XML, and corresponding PDF texts. No executable code reads these appendices.",
       "relative_path": "../shared/design/poll_details/appendix-poll-details-5-18-14-e.pdf"
+    },
+    {
+      "artifact_id": "btphe-complete-source",
+      "poll_id": "btp-health-education-2005",
+      "artifact_type": "data",
+      "title": "BTP Health and Education complete source responses",
+      "location": "data/btp-health-education-2005/source-responses.parquet",
+      "source_id": "btphe-complete-source",
+      "original_archive_path": null,
+      "sha256": "36917782143f3835647bd61f1acacc07e211cd2f99f2d985be8e17668f9ca81b",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-redacted",
+      "publication_status": "published",
+      "notes": "Projection of data/BTP/2005/data/2005alice.dta (SHA256 fdff148b90c33fdb98d122b281f3077495564cec0bcabbfee5424b69fc172c95): all 3298 source rows; exclude username/city/zip; retain questionnaire text q44post/q45post; add stable source_row. No scoring or participant selection changes. See BTPHE-06.",
+      "relative_path": "source-responses.parquet"
+    },
+    {
+      "artifact_id": "btphe-complete-source-variables",
+      "poll_id": "btp-health-education-2005",
+      "artifact_type": "codebook",
+      "title": "BTP Health and Education complete source variable dictionary",
+      "location": "data/btp-health-education-2005/source-responses-variables.csv",
+      "source_id": "btphe-complete-source-variables",
+      "original_archive_path": null,
+      "sha256": "e0515d83bbcb69d5eadbc76f7fe980bc894ad565ef5fd8b6338d7b49bfac2365",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Projection of data/BTP/2005/data/2005alice.dta (SHA256 fdff148b90c33fdb98d122b281f3077495564cec0bcabbfee5424b69fc172c95): all 3298 source rows; exclude username/city/zip; retain questionnaire text q44post/q45post; add stable source_row. No scoring or participant selection changes. See BTPHE-06.",
+      "relative_path": "source-responses-variables.csv"
+    },
+    {
+      "artifact_id": "material-11800586af1643d3-btp-health-education-2005",
+      "poll_id": "btp-health-education-2005",
+      "artifact_type": "script",
+      "title": "Historical Health and Education index recoding",
+      "location": "data/btp-health-education-2005/source-materials/historical-index-recoding.txt",
+      "source_id": "material-11800586af1643d3",
+      "original_archive_path": "data/BTP/2005/hed_hlm.txt",
+      "sha256": "11800586af1643d3b30192e5c4df5e5b3936f3036892aeb17c793ba0faf66f36",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged historical coding evidence. Not executed by the modern build. See BTPHE-05/BTPGE-08 for independent component review.",
+      "relative_path": "source-materials/historical-index-recoding.txt"
     }
   ],
   "document_previews": [

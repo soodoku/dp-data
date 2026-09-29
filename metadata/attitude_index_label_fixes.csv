@@ -24,3 +24,9 @@ dpnum,t1var,archived_label,reviewed_label,issue_id
 20,nic1.t1att9,Liberalizing Trade,Spending on Social Security,NIC-10
 3,ukmonarchy.t1mpop,Powers of the Monarchy,Royal Family and the Public,UKM-05
 3,ukmonarchy.t1pwrm,Rules and limits for the Monarchy,Powers of the Monarchy,UKM-05
+18,btp05.t1fcvsch,Charter Schools vs. Vouchers,Support for Charter Schools and Vouchers,BTPHE-05
+18,btp05.t1costcov,Willing to Pay More For Better Health Coverage,Health Care Costs and Coverage,BTPHE-05
+18,btp05.t1medqual,Quality of Medical Care,Importance of Improving Medical Care,BTPHE-05
+18,btp05.t1nclb,No Child Left Behind,Opposition to No Child Left Behind,BTPHE-05
+11,eu2009.imm1,Stricter Immigration Control,Opposition to Stronger Border Controls,EURO-07
+11,eu2009.cc1,Combatting Climate Change,Priority for Combating Climate Change,EURO-07

@@ -1,3 +1,4 @@
+source(file.path(root, "R", "respondents.R"))
 source(file.path(root, "R", "attitude_catalog.R"))
 
 test_that("TE exit correction changes only seven catalog endpoints", {
@@ -74,4 +75,34 @@ test_that("TE reviewed contrasts retain all three distinct survey occasions", {
     directory, "attitude_contrasts.parquet"
   ))
   expect_identical(restored$primary, contrasts$primary)
+})
+
+
+test_that("BTP health labels describe the scored constructs", {
+  rebuilt <- arrow::read_parquet(project_path(
+    "output", "polardata", "polardata.parquet"
+  ))
+  catalog <- build_attitude_catalog(rebuilt)
+  expected <- c(
+    "btp05.t1fcvsch" = "Support for Charter Schools and Vouchers",
+    "btp05.t1costcov" = "Health Care Costs and Coverage",
+    "btp05.t1medqual" = "Importance of Improving Medical Care",
+    "btp05.t1nclb" = "Opposition to No Child Left Behind"
+  )
+  rows <- match(names(expected), catalog$t1var)
+  expect_false(anyNA(rows))
+  expect_identical(catalog$att_index[rows], unname(expected))
+  survey <- read_poll_survey("btp-health-education-2005")
+  for (wave in 1:2) {
+    attitudes <- btp_health_attitudes(survey, wave)
+    post <- if (wave == 1L) "" else "post"
+    nclb <- as.numeric(survey[[paste0("q12", post)]])
+    expect_true(all(attitudes$no_child_left_behind[nclb %in% 1] == 1))
+    expect_true(all(attitudes$no_child_left_behind[nclb %in% 5] == 0))
+    charter <- survey[[if (wave == 1L) "q7_a" else "q7post_a"]]
+    voucher <- survey[[if (wave == 1L) "q7_b" else "q7post_b"]]
+    both_support <- charter %in% 10 & voucher %in% 10
+    expect_gt(sum(both_support), 0)
+    expect_true(all(attitudes$school_choice[both_support] == 1))
+  }
 })

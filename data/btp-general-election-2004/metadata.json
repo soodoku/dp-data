@@ -249,6 +249,16 @@
       "local_artifact_id": "material-e603bbecfa97be6b-btp-general-election-2004",
       "accessed": "2026-09-24",
       "notes": "ASA/AAPOR proceedings; directly analyzes all three Knowledge Networks experiments. OnePDF stored under btp-national-2003, referenced across relevant polls."
+    },
+    {
+      "reference_id": "material-ba01c727ede06706-btp-general-election-2004",
+      "poll_id": "btp-general-election-2004",
+      "kind": "codebook",
+      "title": "General Election 2004 authored index memo",
+      "url": null,
+      "local_artifact_id": "material-ba01c727ede06706-btp-general-election-2004",
+      "accessed": "2026-09-28",
+      "notes": "Unchanged historical coding evidence. Not executed by the modern build. See BTPHE-05/BTPGE-08 for independent component review."
     }
   ],
   "material_coverage": [
@@ -573,6 +583,21 @@
       "publication_status": "published",
       "notes": "ASA/AAPOR2009proceedings pp6092–6107; full text checked. OfficialHTTPSendpoint has certificate hostname mismatch; officialHTTPendpoint servedPDF.",
       "relative_path": "../btp-national-2003/papers/refined-or-biased-opinions-2009.pdf"
+    },
+    {
+      "artifact_id": "material-ba01c727ede06706-btp-general-election-2004",
+      "poll_id": "btp-general-election-2004",
+      "artifact_type": "codebook",
+      "title": "General Election 2004 authored index memo",
+      "location": "data/btp-general-election-2004/codebooks/online-poll-indices-wave-4.pdf",
+      "source_id": "material-ba01c727ede06706",
+      "original_archive_path": "data/BTP/2004GE/Online DPolls_Indices_Wave 4.pdf",
+      "sha256": "ba01c727ede0670621df96a93e1b5e9f5a214263c181afa23a3b89e5c17909e1",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged historical coding evidence. Not executed by the modern build. See BTPHE-05/BTPGE-08 for independent component review.",
+      "relative_path": "codebooks/online-poll-indices-wave-4.pdf"
     }
   ],
   "document_previews": [
