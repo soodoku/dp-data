@@ -501,7 +501,9 @@ names do not establish equal estimands.
 All nine attitude indices selected by the downstream index list, in both waves,
 can be reconstructed
 from the 230 raw survey records to absolute tolerance `1e-10`, including the
-historical behavior in UKH-01–03. All respondent IDs match `serial_m` and
+then-historical behavior in UKH-01–03. The following table is the original
+pre-correction comparison, not the current severity or government-input scores;
+UKH-14 records the current full-battery review. All respondent IDs match `serial_m` and
 `serial_a` in this file; this equality must be checked rather than assumed for
 other files. Reconstruction is evidence about provenance, not endorsement of
 every definition.
@@ -821,6 +823,58 @@ uses the raw B12 answer for this degree flag, including its missing value,
 after the generic historical proxy assignment. The 230 keyed before/after
 values are in `audit/corrections/uk-health-1998/degree_values.csv`.
 
+### UKH-14: Full attitude battery checked against the source definitions
+
+**Status: reviewed; no additional numerical correction.** The review covers all
+11 indices at both waves, including `avgdis` and `moresa`, which are not among
+the nine main catalog indices. Direct reconstruction from all 230 source records
+matches every current value and missing-value pattern within `1e-12`, and the
+11-index baseline extremity calculation also matches. This includes the approved
+fixed severity scale and ordered government/public and doctor-input recodes;
+it does not reinstate their historical versions.
+
+The [V6 index memorandum](../data/uk-health-1998/codebooks/british-health-indices-v6.pdf),
+[source codebook](../data/uk-health-1998/codebooks/uk-health-codebook.txt), raw
+variable labels and archived `uk_health.R` supply the item definitions:
+
+| Index | Components at each wave | High end / rule |
+| --- | --- | --- |
+| `payhlt` | PAYHLTH | Individual payment; 1/2/3 → 0/.5/1 |
+| `poora` | POORA | Priority for poorer people's health |
+| `option` | OPTIONS | More patient choice; 1/2/3 → 0/.5/1 |
+| `hlthfu` | CHGP, CHVIS, CHMEAL, CHSTAY, CHAMB | Support for patient charges |
+| `ctexpt` | TREATA, CTHART, CTNURS, CTBABY | Opposition to cuts; reverse each item, equal available-item weights |
+| `pritre` | CTFERT, CTHOSP, CTCOSM | Opposition to privatization; reverse each item |
+| `severi` | LISTA, SEVERA | Relative waiting-list priority; `(LISTA_scaled - SEVERA_scaled + 1) / 2`, both required |
+| `preven` | PREVA | Priority for prevention |
+| `dispub` | INGOVA, INPUBA | Government/public input: none 0, some .5, all/most 1 |
+| `avgdis` | INGPA, INDOCA | Doctor input: none 0, some .5, all/most 1 |
+| `moresa` | SAY | More say for patients |
+
+Other five-category items use their substantive endpoints, not observed sample
+minima/maxima. Source nonanswers are missing. Composite means use available
+components and remain missing when none is observed. Severity remains missing
+for the 19 people at each wave with only one of its two components observed.
+Observed baseline/exit counts and partial-component counts for every index are
+in [`attitude_coverage.csv`](../audit/corrections/uk-health-1998/attitude_coverage.csv);
+[`attitude_paired_means.csv`](../audit/corrections/uk-health-1998/attitude_paired_means.csv)
+uses the same complete pair within each index.
+
+The apparent discrepancies with the memo are substantive versions, already
+identified in UKH-04. The archived R comment explicitly gives payer's direction
+as government 0 / individual 1. For expensive treatments, it explicitly rebuilds
+four equal components and notes an imperfect match with the memo's block-weighted
+version. Substituting the latter would change 143 baseline and 138 exit values.
+The memo prints both two- and three-item privatization versions; the current
+three-item version reproduces its paired means (.53594 → .48578). Substituting
+the two-item version would change 189 baseline and 173 exit values and introduce
+three and one additional missing scores, respectively. These alternatives are
+quantified in [`attitude_preserved_variants.csv`](../audit/corrections/uk-health-1998/attitude_preserved_variants.csv)
+and remain unapplied. The nine-index catalog and eleven-index summary battery
+also remain distinct. The [final report](../data/uk-health-1998/reports/uk-health-final-report.pdf),
+PDF p. 4, places the initial questionnaire before invitation and the repeat at
+the end of the weekend: t0 → t2, not arrival → exit.
+
 ## UK Crime 1994 — uk-crime-1994
 
 ### UKC-01: Post-wave root-causes index substitutes baseline policing
@@ -956,6 +1010,53 @@ that the four legal questions were unasked. The archived script explicitly omits
 not evidence that the questions were unasked. Consult the cross-poll knowledge
 index memorandum before separately proposing their reinstatement. Compare
 sample, item count, missingness and downstream effects in a correction pass.
+
+### UKC-04: All five attitude indices reproduce the published paired means
+
+**Status: reviewed; no additional numerical correction.** The codebook, raw
+labels, retained stage-two questionnaire pages and the paper's Appendix B
+(printed p. 487) establish these item sets at both waves:
+
+| Index | Components | Direction |
+| --- | --- | --- |
+| Root causes | TIMCHLD, VIOLTV, SCHDISC | Greater effectiveness of addressing root causes |
+| Policing | MORECOP, COPGUN | More police resources/powers |
+| Punishment | PUNREF, STIFFER, MORPRSN, REFPRIS, S_TOUGH, FEWPRIS, PR_ONLY, OUTPRSN, COMSERV, MILSERV, TRAIN, PTOUGH, LIFE, LIFMEAN, DEATH | More punitive; reverse REFPRIS, FEWPRIS, PR_ONLY, OUTPRSN, COMSERV, TRAIN |
+| Procedural restrictions | INNGLT, COPBEND, FEWJURY, CTRULES, PRESUM, MENTSIL, RTSIL, CONFESS | More restrictions on suspects' protections; reverse RTSIL and CONFESS |
+| Self-protection | PROPSEC, WATCH, PATROLS | Greater support/effectiveness |
+
+All substantive codes 1–5 map to 0–1 before those documented reversals. The
+stored agreement/effectiveness items already reverse the printed response
+order; reversing them again from the form alone would be an error. PUNREF's
+endpoints are reform versus punishment, and INNGLT's are the relative seriousness
+of convicting the innocent versus releasing the guilty. Nonanswers are missing,
+not zero; each index averages available components. The corrected post root-causes
+index uses TIMCHLD2, as approved in UKC-01.
+
+Independent calculations match all ten current index-wave columns and baseline
+extremity for all 869 source rows, including missingness, within `1e-12`. Among
+the unchanged 299 historical respondents, the index-specific paired means are:
+
+| Index | Pairs | Baseline | Exit |
+| --- | ---: | ---: | ---: |
+| Root causes | 298 | .786913 | .834871 |
+| Policing | 299 | .647993 | .585702 |
+| Punishment | 299 | .596650 | .537426 |
+| Procedural restrictions | 298 | .445300 | .406284 |
+| Self-protection | 299 | .695931 | .662068 |
+
+All ten means round to [Table 4](../data/uk-crime-1994/papers/british-crime-paper.pdf),
+printed p. 477. Its negative sign on root-causes change contradicts its own
+increasing means; it does not justify reversing the source index. Full-source
+and historical counts, missingness and partial denominators are retained in
+[`attitude_coverage.csv`](../audit/corrections/uk-crime-1994/attitude_coverage.csv)
+and paired values in [`attitude_paired_means.csv`](../audit/corrections/uk-crime-1994/attitude_paired_means.csv).
+The [questionnaire scan](../data/uk-crime-1994/questionnaires/crime-questionnaire.pdf)
+is partial: its eight PDF pages do not preserve every printed question page.
+The [codebook](../data/uk-crime-1994/codebook.txt) supplies the remaining wording
+and category definitions. The source interview pair remains t0 → t2. Differences
+between the paper's 301 attendees, 300 source attendees and 299 grouped people
+are documented sample boundaries, not silently repaired here.
 
 ## UK–EU 1995 — uk-eu-1995
 
@@ -1156,6 +1257,44 @@ respondent fields, including aliases and seven deliberately missing fields.
 It uses all 900 source rows and separately verifies the 238-person historical
 sample; the old 224-person knowledge outputs are unchanged. These parity checks
 establish reproduction, not questionnaire validity or downstream robustness.
+
+### UKEU-06: Full four-index attitude review after the approved scale fixes
+
+**Status: reviewed; no further numerical correction.** The source codebook and
+raw labels support four five-point policy indices at both waves: EU relations
+(`RELEU`, `LONGPOL`, `UNITE`), EU scope (`TRABLOC`, `PASPORT`), Eastern European
+membership (`COMMIES`) and referendum support (`FAVREF`). High values mean more
+integration, broader common scope, support for accession and support for a
+referendum, respectively. These are not uniformly pro-EU statements: referendum
+support remains its own construct.
+
+Each substantive 1–5 scale uses `(answer - 1) / 4`. Composite indices average
+available components and are missing when all components are missing. The
+approved UKEU-02–04 corrections remain in force. Baseline nonanswer codes 8/9
+and post inapplicable/nonanswer codes are excluded as documented; baseline
+TRABLOC and PASPORT contain no -1 cases. Post RELEU/LONGPOL code 6 is missing,
+whereas UNITE's substantive middle category is retained. FAVREF's code 3 combines
+neutral and can't-choose responses in the deposited source, so those answers
+cannot be separated; the midpoint remains preserved, not newly imputed.
+
+Independent reconstruction matches all eight index-wave columns and baseline
+extremity across 900 source people, including missingness, within `1e-12`.
+Historical attitude coverage remains 238 people; observed baseline/exit counts
+are 238/224 for relations, 237/224 for scope, 238/221 for accession and 238/224
+for referendum. The paired means are .569568 → .653646 (224 pairs),
+.494955 → .518498 (223), .545249 → .540724 (221), and .741071 → .806920
+(224), respectively. Full coverage and exact paired results are in
+[`attitude_coverage.csv`](../audit/corrections/uk-eu-1995/attitude_coverage.csv)
+and [`attitude_paired_means.csv`](../audit/corrections/uk-eu-1995/attitude_paired_means.csv).
+
+The [paper](../data/uk-eu-1995/papers/deliberation-attitude-constraint.pdf), PDF
+p. 8, supports initial-to-exit timing (t0 → t2), but its factor-derived batteries
+are not these four policy indices; their published summaries are not a valid
+like-for-like numerical benchmark. No standalone SAQ scans were recovered.
+The [codebook](../data/uk-eu-1995/codebook.txt) provides question wording and
+frequencies, including the unrecoverable FAVREF collapse. Group marker 99 remains
+unknown, not a demonstrated sixteenth discussion group. UKEU-01's 220 known-group
+people concern the 224-person knowledge subset, not all 238 attitude records.
 
 ## UK Monarchy 1996 — uk-monarchy-1996
 
@@ -3969,6 +4108,45 @@ non-`_f` definition at all waves, including the approved TE-04 departure correct
 Trade remains outside the seven-index selection. Neither specification choice
 is silently bundled into the timing correction. Downstream frozen benchmark pins
 must be updated explicitly before their reported results reflect this change.
+
+### TE-07: Full attitude battery and source-direction review
+
+**Status: reviewed; no additional score correction.** Independent raw-response
+reconstruction covers all 31 series: seven main indices at each of source T1,
+T2 and T3 (EU membership, privatization, migration, military, pacifism, Turkey
+accession and veto), plus five additional indices at T2 and T3 (pension payment,
+trade, general enlargement, decision-making level and enlargement limits). It
+checks every series for all 3,550 source rows and the 344 historical respondents, and separately checks
+the baseline and arrival extremity summaries. All 64 checks match values and
+missingness; none of the reconstructed indices is outside [0,1]. Coverage,
+observed counts and means are retained in
+[`attitude_index_checks.csv`](../audit/corrections/tomorrows-europe-2007/attitude_index_checks.csv)
+and [`attitude_index_coverage.csv`](../audit/corrections/tomorrows-europe-2007/attitude_index_coverage.csv).
+The nested weighting of the selected military index remains authored behavior;
+the separate `_f` variant and omission of trade from the main catalog remain
+explicit choices. TE-04's departure-item correction and TE-06's initial-to-exit
+contrast remain in force.
+
+The original [policy codebook workbook](../data/tomorrows-europe-2007/codebooks/policy-codebook-rev2.xls)
+([PDF preview](../data/tomorrows-europe-2007/codebooks/policy-codebook-rev2.pdf))
+and [SPSS variable-label syntax](../data/tomorrows-europe-2007/scripts/policy-variable-labels.sps)
+are now retained unchanged. The workbook's PolicyIndices sheet supplies the
+battery definitions and variants. Syntax lines 398–403 label the derived
+arrival/exit migration variables as support for open migration. These sources
+must be read together with the printed post questionnaire, whose Q7 response
+order appears opposite to the already coded source values.
+
+The research paper's Appendix H provides an independent check of that apparent
+reversal: among 348 people with both answers, current migration means are
+.8196839080 initially and .7909482759 at exit, reproducing the printed .820 and
+.791. Reversing the post score would instead produce .2090517241. These 348
+people are within the 359 source T3 participants and are not the historical
+344-person grouped selection. Exact results are in
+[`attitude_migration_paper_comparison.csv`](../audit/corrections/tomorrows-europe-2007/attitude_migration_paper_comparison.csv).
+Thus a blind post-wave reversal is rejected. The earliest raw-to-coded migration
+step has not been recovered: the retained syntax starts after the Q7cr variables
+exist. The printed-form discrepancy remains a documented source-version gap,
+not a license to overwrite the stored and published direction.
 
 ### TE-05: Include postgraduate education and use the source age (corrected)
 

@@ -1,0 +1,5 @@
+index,wave,reason,people,changed,missingness_changes,old_observed,new_observed,old_mean,new_mean,maximum_change
+ctexpt,1,V6 block-weighted variant; archived R explicitly rebuilds four equally weighted items,230,143,0,225,225,0.6628703703703703,0.6339814814814815,0.22916666666666669
+pritre,1,V6 two-item variant versus explicitly executed three-item version also tabulated in V6,230,189,3,224,221,0.5338541666666666,0.43552036199095023,0.5
+ctexpt,2,V6 block-weighted variant; archived R explicitly rebuilds four equally weighted items,230,138,0,221,221,0.6339555052790348,0.6040723981900452,0.20833333333333331
+pritre,2,V6 two-item variant versus explicitly executed three-item version also tabulated in V6,230,173,1,217,216,0.48655913978494625,0.38831018518518523,0.375
