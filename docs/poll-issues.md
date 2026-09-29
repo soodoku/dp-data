@@ -1,6 +1,6 @@
 # Poll-level issue register
 
-Initial review: 2026-09-25; latest evidence update: 2026-09-28. Scope: the
+Initial review: 2026-09-25; latest evidence update: 2026-09-29. Scope: the
 original 34 analytical polls, with detailed coverage of the 23 existing knowledge
 builds and the respondent reconstructions.
 
@@ -12,8 +12,8 @@ Approved corrections and their evidence are recorded in the corresponding
 poll entries below and in the recode ledger. Proposals remain unapproved until
 a poll-specific decision is recorded.
 This file records evidence and decisions; an unresolved issue does not authorize
-a recode. The provisional
-UK Health attitude implementation that would change definitions was set aside.
+a recode. UK Health's approved severity and input-order corrections are adopted;
+its other authored index variants remain preserved.
 Following historical reconstruction, `make polardata` implements the historical
 formulas plus explicitly approved corrections for all 21 polls in scope; see the
 [reconstruction contract](knowledge-build.md#historical-aggregate-reconstruction).
@@ -60,8 +60,8 @@ a common degree interpretation on different source qualifications.
 | --- | --- |
 | UK–EU UKEU-02 | Approved and implemented: substantive five-point baseline scales, missing nonanswers and six rebuilt respondent/group fields. The retained review script and approved-value tables quantify the changes. |
 | Australia AUS-02 | Approved and implemented: match the peer denominator and `numitems` to the twelve items actually scored: 346 peer measures and logs change; individual knowledge scores do not. The separate routing ambiguity remains unresolved. |
-| NIC NIC-05 / shared peer opportunity | User clarified that the construct is opportunity to learn from peers: zero when the focal person knows all items or peers know none of the missed items. Implement the same ceiling convention centrally across polls; retain absent interviews as missing. |
-| Tanzania TZ-03/04 | Approved: treat the −99 component as missing, rebuild the existing baseline-control standardization, and require both scores for the panel flag. All observed scores remain available; one panel flag changes. |
+| NIC NIC-05 / shared peer opportunity | User clarified that the construct is opportunity to learn from peers: zero when the focal person knows all items or peers know none of the missed items. Implemented centrally across polls: 107 formerly missing ceiling measures become zero, NIC's existing zero remains zero, and absent interviews remain missing. |
+| Tanzania TZ-03/04 | Approved and implemented: treat the −99 component as missing, rebuild the existing baseline-control standardization, and require both scores for the panel flag. All observed scores remain available; one panel flag changes. |
 | SWEPCO SWE-05 / WTU WTU-06 | Approved and implemented upstream: 2,246 absent post scores and 11,230 post item-correctness cells per corresponding table become missing; six dependent respondent measures per person are missing. Baseline and attendee scores are unchanged. |
 | UK Election / X-14 | Approved: use relative education based on the within-poll median. Preserve source qualifications; do not treat nonselection of a degree as proof of no degree. Typed participant tables expose the approved median flags. |
 
@@ -88,9 +88,15 @@ all 34 polls or every field have been fully audited.
 
 ## Attitude audit boundary and downstream consumers
 
-A complete attitude audit is not yet established. All 21 historical polardata
-builds reconstruct their retained definitions and apply approved corrections;
-that does not certify every questionnaire component or every wave contrast.
+The completed source-to-score pass covers all 129 main index pairs across the
+21 historical polardata polls, plus the broader summary batteries described
+below. It checks item identity, source direction, scale, nonanswers, component
+rules and selected waves against the available instruments, codebooks, original
+syntax and published benchmarks. Approved corrections are applied; unresolved
+choices and source gaps remain explicit. This is not a claim that every fielded
+questionnaire, raw-file merge, or variable in all 34 analytical polls has been
+verified. In particular, Zeguo's absence and definition findings and the utility
+attitude policies below remain open despite completed reconstruction.
 Substantive attitude corrections include UK Crime's post root-causes input,
 UK Election's tax question, UK–EU scale/nonanswer handling, UK Health's severity
 and input-order indices, Texas conservation/research inputs, Australia's
@@ -98,6 +104,55 @@ extremity/ranking inputs, NIC event-exit inputs, New Haven nonanswers and value
 substitution, Bulgaria's death-penalty scale, Tomorrow's Europe departure inputs,
 and BTP National/Zeguo scaling or source-selection corrections. The poll entries
 below retain the instrument evidence and numerical consequences.
+
+| Polls reviewed | Main pairs | Coverage and evidence boundary |
+| --- | ---: | --- |
+| UK Health | 9 | All 11 summary indices at both waves checked; preserve documented payer orientation and authored weighting/battery variants (UKH-04/14). |
+| UK Crime | 5 | Both waves and baseline extremity checked; all ten published means reproduced. The questionnaire scan is partial; the codebook supplies remaining wording (UKC-04). |
+| UK–EU | 4 | Both waves and baseline extremity checked after approved scale fixes. No standalone SAQ recovered; FAVREF's merged neutral/nonanswer category cannot be separated (UKEU-06). |
+| UK Monarchy | 4 | Both waves checked against codebook/memo; paired benchmarks reproduced and catalog titles corrected (UKM-07). |
+| UK Election | 4 | Both waves checked; all eight published item means reproduced. The appendix's conflicting question names do not override the instrument and actual paired fields (UKGE-06). |
+| CPL, WTU, SWEPCO | 18 | Six pairs and seven-index baseline summaries per poll checked against original frequencies and codebooks. Exact fielded forms are not identified; missing-item fills and empirical calibration remain separate decisions (CPL-06). |
+| Australia | 2 | Main pairs and five original summary batteries checked; 33 of 34 printed item means reproduced. Queen-first correction adopted; exit form and knowledge-routing evidence remain incomplete (AUS-06). |
+| BTP General Election | 6 | All placements and source labels checked at both waves; absent forms and label/code distinctions preserved (BTPGE-08). |
+| BTP Health/Education | 11 | All 22 series checked and four titles corrected; the wider 360-attendee source still does not reproduce the report percentages (BTPHE-05/06). |
+| Bulgaria Crime | 12 | Both waves and the additional drug-legalization summary index checked. Version E civil-liberties syntax remains missing; preserve the executed definition (BGC-08). |
+| Europolis | 2 | Both waves and baseline extremity checked; titles corrected to match direction, paired climate means reproduced. The fielded-form/version gap remains (EURO-07). |
+| NIC | 9 | All three source waves checked; approved nonanswer correction adopted. Main attitude comparison remains initial to later follow-up, not immediate exit (NIC-12). |
+| Tomorrow's Europe | 7 | All 31 retained series and baseline/arrival extremity checked. Main initial-to-exit and supplemental arrival-to-exit contrasts explicit; earliest migration recode remains unavailable (TE-06/07). |
+| San Mateo | 4 | Main pairs and seven-index summaries checked. Preserve the larger summary battery and documented source/report differences (SM-02). |
+| NIC2 and BTP National | 18 | Nine pairs per poll checked against original versions and component rules. NIC2 security's authored missing-item choice and both trade publication comparisons remain open (NIC2-02). |
+| BTP Presidential Primaries | 3 | All main pairs checked; unconsidered responses excluded from substantive input counts without changing scores (PR-04). |
+| New Haven | 2 | Both main indices and the third summary index checked at Pre/Mid/Post; Mid follows the first discussion session, not arrival (NH-08). |
+| Zeguo | 9 | All indices checked against merged and raw source versions; original correction flags preserved. Unmatched departures and the Township Image alternative remain decisions (ZG-06–08). |
+
+The table counts the main catalog once: the two Primaries catalog IDs share a
+source and are not two independent attitude studies. Evidence from a codebook
+or authored recode is identified as such; it is not described as a recovered
+fielded form. Published mean agreement supports a source/version bridge but
+does not independently validate every original coding decision.
+
+### Remaining attitude decisions and evidence gaps
+
+These are bounded next actions, not permission to recode:
+
+| Issue | Remaining decision or evidence |
+| --- | --- |
+| WTU/SWEPCO absent departure attitudes | Knowledge absence is already corrected in WTU-06/SWE-05. The separate proposal would make six post attitude indices missing for 1,000 WTU and 1,246 SWEPCO absent forms (6,000 and 7,476 cells). Their current imputed scores are not observed answers: WTU research is 4/9 and its other five indices are .5; all six SWEPCO indices are .5. Approval remains pending. |
+| Utility observed-form scoring | The authored missing-item fills and empirical wave calibrations are distinct from whole-form absence. Preserve them until their alternatives and consequences receive a separate decision; an observed questionnaire with an omitted item is not an absent questionnaire. |
+| NIC2 security | Current source marks the complete four-action block “Use This One”; an available-action version is also authored. Switching changes 12 baseline and three exit scores, with no final missingness change. Choose the intended missing-item policy explicitly (NIC2-02). |
+| Climate discussion groups | ROOM alone yields 58 labels; ROOM × T2P_OPTION yields the original script's 105 groups. Forty-seven reused labels combine different schedules for 862 of 962 completers. Composite identity correction awaits approval (A1RC-05). |
+| Zeguo unmatched departures | Thirty-four people lack a matched POST identity but receive nine neutral post attitudes and six derived post knowledge values. Proposed missing values retain all 233 historical people; a matched questionnaire with blank quiz items remains a scored zero. Do not borrow the unlinked NP32 block (ZG-07). |
+| Zeguo Township Image | Current Q25/Q31 and the paper's Q8/Q9/Q25/Q27 battery are different authored definitions. The alternative changes 161 baseline and 169 post scores, 160 extremities and all 233 repeated group summaries. Its 176-person means still do not exactly match the paper; preserve current values pending the definition decision (ZG-08). |
+| Published-result bridges | NIC2/BTP trade means and BTPHE report percentages remain unreproduced. Recover report-era sample/index/weight syntax rather than adjust source scores to force agreement (NIC2-02, BTPHE-06). |
+| Original source records | Bulgaria 2007 has no recovered respondent data. Other limits include Bulgaria Crime Version E syntax, earliest TE migration recoding, fielded-form versions, anonymous phase links, group rosters and Marousi's conflicting departure IDs. These require source evidence, not an arbitrary numerical choice. |
+| Analytical weights and downstream adoption | Supplied weights are retained but no universal weight is selected. Frozen downstream benchmarks still require explicit adoption and estimate comparisons; canonical baseline predictors do not define the full attitude inventory. |
+
+Preserved authored choices—UK Health's alternatives, BTPHE's inclusion of school
+funding importance, wider summary batteries and nested weighting—are not
+outstanding demonstrated errors. Their evidence remains available for a later
+substantive redefinition. Accepted NIC Bosnia, Vermont key and UK–EU Other
+classification decisions are not reopened by this attitude pass.
 
 The actual downstream readers determine the remaining audit inventory:
 
@@ -127,8 +182,8 @@ Accepted preservation choices are not unresolved coding errors. Examples are
 the historical descriptor batteries that contain more indices than the final
 attitude catalog and the reviewed nested weights/missing-component rules.
 Remaining evidence gaps include Bulgaria 2002's final civil-liberties Version E
-specification and Bulgaria 2007's missing respondent data. Each remaining audit
-must trace the consumer's item/phase to the fielded question, substantive and
+specification and Bulgaria 2007's missing respondent data. Any additional source
+or proposed correction must trace the consumer's item/phase to the fielded question, substantive and
 nonanswer codes, direction, bounds, component weights and questionnaire presence;
 then compare individual scores and dependent group/poll summaries. Passing
 historical parity alone is insufficient.
@@ -233,8 +288,9 @@ memo and report; UK Crime and UK–EU codebooks; Monarchy codebook; Vermont star
 post questionnaire; Michigan post questionnaire; and the full San Mateo
 questionnaire plus its shorter post supplement. Reading a questionnaire verifies
 wording and response categories, not necessarily the factual answer key or which
-version was administered. Other polls below cite existing audits and name the
-instruments that still require a fresh item-by-item review.
+version was administered. The 21-poll attitude coverage table above records the
+completed source-to-score pass and its remaining instrument limits; poll entries identify which checks
+use full forms, codebooks, authored syntax or published benchmarks.
 
 Local `vault/` links below require the source archive. Do not quietly replace an
 unavailable instrument with a similarly named document. In particular, the UK
@@ -1928,8 +1984,10 @@ unchanged. Its outputs retain [summary counts](../audit/corrections/utilities-so
 [all recovered attendee DK cells](../audit/corrections/utilities-source-recovery/nonanswers.csv),
 and [all absent post-form identities](../audit/corrections/utilities-source-recovery/absence.csv).
 Neither the maintained survey nor any production response, score, attendance,
-or aggregate table changes. Structural absence of nonparticipant post forms
-remains the separate SWE-05 numerical proposal.
+or aggregate table changes in this source-recovery step. SWE-05 subsequently
+corrected knowledge scores for these absent post forms.
+The separate proposal to remove imputed post attitude scores remains
+unapproved; it is not part of that knowledge correction.
 
 **SWE-02 — conservation's post component is absent under the script's name.**
 **Status: approved and adopted two-item correction (SWE-02).** The archived
@@ -4504,8 +4562,8 @@ and county-versus-state columns. The retained
 explicitly treats consultation as a value and county-versus-state as an empirical
 premise; it does not provide the commuting exclusion's rationale. Preserve the
 existing seven-index summaries and four-index main analysis rather than silently
-substituting one for the other. X-09's five reviewed, numerically sensitive
-covariance groups remain separate limitations.
+substituting one for the other. X-15 makes two invalid San Mateo covariance
+matrices missing; X-09 retains three valid, numerically sensitive San Mateo exceptions as separate limitations.
 
 The report's Q2 post table has one 1.50 response (0.4%) absent from both the
 retained original Stata file's raw and authored recoded fields. No respondent
@@ -6624,7 +6682,7 @@ original answer sheets or a documented correction log can resolve that question.
 
 The fielded translated questionnaire and its alternative both print a 0-10
 importance scale for the project ratings. One respondent (`p=50`, source row
-147, historical case 52050) answered 4.5 on baseline village-road item
+147, historical case 52050) has a merged value of 4.5 on baseline village-road item
 `d2007`; their other two components are 5 and 5. The archived code divided
 the ratings by 10 but then reset this one value to 4.5. This produced an
 out-of-range index of 1.83333337, which the final individual export blanked
@@ -6735,6 +6793,174 @@ mean. These consequences do not determine correctness. The corrected source
 fields are `d2006` and `d2006p`; the sample, missing-answer fallback, and
 centrally derived group-dispersion formula are unchanged.
 
+### ZG-06: All nine attitude batteries have been reconstructed and source versions compared
+
+**Reviewed; existing approved corrections and historical missing-answer rules
+preserved.** The independent
+[reproducer](../audit/corrections/zeguo-2005/reproduce.py) reads repository poll
+files and current exports, without the private vault or production scoring
+helpers. Run `python3 audit/corrections/zeguo-2005/reproduce.py` from any working
+directory. Its 107 comparisons cover all 18 attitude fields and their observed
+component counts for 269 source people, the 233 selected participants, baseline
+extremity, and the means and dispersion in all 16 groups. Every comparison has
+zero unexplained differences. All current attitude values are within 0–1 and all
+16 baseline covariance matrices have rank nine. Detailed results are retained in
+`index_checks.csv`, `index_coverage.csv` and `group_checks.csv` in that directory.
+
+The [fielded questionnaire](../data/zeguo-2005/source-materials/questionnaire.pdf),
+project-rating section Q6–35, specifies 0 as unimportant, 10 as most important,
+5 as the midpoint and 98 as don't know. Every included project is scored in the
+same direction. The modern build uses the authored merged rating fields, where
+98 has already become missing, rather than silently substituting the earlier
+PRE/POST field files. The current available-component means are:
+
+| Historical catalog index | Project questions, both waves | Source/instrument assessment |
+| --- | --- | --- |
+| Industrial roads | 14, 20, 21 | Matches published Appendix A |
+| Village roads | 7, 10, 11 | Matches Appendix A; approved merged Q7 rescaling retained |
+| Main roads | 15–19, 22 | Matches Appendix A; approved departure-wave selection retained |
+| Commercial roads | 12, 13 | Matches Appendix A |
+| Wenchang Main Avenue | 6 | Matches the questionnaire and Appendix A; ZG-05 retained |
+| Other parks | 24, 28, 29 | Matches Appendix A |
+| Township image | 25, 31 | Historical authored variant; published definition differs, ZG-08 |
+| Cultural heritage | 25, 32 | Matches Appendix A |
+| Sewage treatment | 30, 33–35 | Matches Appendix A |
+
+The available-component denominator and historical midpoint fallback for an
+all-missing battery remain unchanged. Seven indices first store rating/10 and
+then the mean as float32; Other Parks and Township Image store the raw mean as
+float32 and then divide by ten. These storage-order differences are reproduced,
+not treated as alternative substantive scales. The baseline summary is the
+equal-weight mean of nine absolute distances from .5; group SDs use sample SDs,
+and generalized variance uses the shared reviewed covariance rule. Project
+investment costs printed in the questionnaire are context, not index weights.
+
+The [published paper](../data/zeguo-2005/papers/china-zeguo-bjps.pdf), Table 4 and
+Appendix A (printed pp. 441, 447–448), supplies definition and denominator checks.
+For seven indices, paired nonmissing ratings among the 235 matched source people
+reproduce both the reported N and the means rounded to three decimals. The
+corrected Village Roads baseline mean is .587975 rather than the printed .597;
+this is not a reason to undo the approved ZG-02 scale correction. Township Image
+has the separate version gap in ZG-08. The paper also includes a tenth,
+single-project Recreational Park index, Q26. The archived `china_2005.r` explicitly
+comments that slot out; the historical nine-index catalog is a subset, not a
+claim to contain every published index. The paired publication denominator
+does not justify changing the full-sample midpoint policy.
+
+The one-time independent archive comparison in `archive_projection_parity.csv`
+records the SHA256 hashes of the original PRE SAV, POST SAV and merged DTA. All
+54, 63 and 939 retained numeric columns, respectively, match the public
+projections exactly, including source row order. Numeric strings in the merged
+DTA were compared after parsing numbers and its blank/dot missing tokens.
+`source_hashes.csv` pins the repository inputs and instrument/paper used by the
+repeatable audit. The two archived `r_recode_eval` files concern evaluation and
+demographics; they do not establish how the project-rating edits were made.
+
+`raw_merged_rating_versions.csv` preserves twelve differences between the
+original PRE/POST ratings and the authored merged version after original 98
+codes are treated as missing. They involve baseline p50/Q7 (4 to 4.5), p2/Q27
+(5 to 5.5), and departure p21, p39, p67 and p217. They are not newly applied
+recodes or verified answer-sheet corrections. The merged values remain in use;
+original answer sheets or a correction/version log would be needed to choose
+between these stages. This qualification also applies to ZG-01's three knowledge
+overrides. The March 2005 initial survey and April 9 departure questionnaire are
+supported by the paper; the archived `timebtw=25` remains explicitly a best guess,
+not an independently verified person-level interview interval. No new score,
+cohort, identity or timing recode was applied in this audit.
+
+### ZG-07: Thirty-four people have no matched participant departure questionnaire
+
+**Proposal only; awaiting the user's poll-specific decision.** For 34 of the
+269 baseline source people, both `pp` (participant number at T2) and
+`preandpost` are missing, there is no matching participant POST source record,
+and all thirty merged departure project ratings and the four joined departure
+knowledge answers are missing. All 269 baseline IDs occur in the PRE file, so
+there is no symmetric unmatched-PRE case. Seven of the 242 POST IDs are outside
+the 269-person baseline universe; the audit does not invent a match for them or
+add them to the historical panel. The 34 people are outside the 233-person main
+sample and already have `panel=FALSE` in both canonical participant views.
+
+The current respondent layer gives each of these 34 people all nine departure
+attitudes at .5 and departure knowledge at zero. The proposed rule would leave
+their baseline measurements and source rows intact and mark only the absent
+participant departure measurements missing. That means 34 changes for each of
+the nine post attitude fields and each of six post-dependent knowledge fields:
+`knowledge_t2`, `knowledge_joint`, `knowledge_gain`, `knowledge_gain_joint`,
+`log_knowledge_joint` and `high_knowledge_joint`. Current gains range from −1 to
+0; current joint-log values are −9.210340371976182. Exact IDs and current values
+are retained in `absent_departure_current_values.csv`.
+
+Propagation would make 34 departure scores and their zero `n_correct` values
+missing in each of `analysis_scores` and `analysis_phase_scores`. Each item view
+has 136 departure correctness values currently zero; these would become
+missing, with `response_status` changing from `scored` to `not_observed`.
+The same 136 zero correctness values in `historical_knowledge_items` would
+become missing. Phase score/item presence would change from unknown to false,
+and the phase score's questionnaire-presence label from unknown to
+`not_observed`. The four-item battery size, already missing observed-item
+counts, source response values and identities would remain unchanged.
+`absent_departure_proposed_changes.csv` records these fields separately rather
+than summing duplicated exports. The counterfactual proof preserves every
+matched POST numerical value, every baseline value, all 233 main participants
+and their group summaries, and all existing panel flags.
+
+This is distinct from an observed questionnaire with nonanswers. Participant
+**p90** has a verified POST record, filled demographics, 28 explicit project
+98 codes and two blank project items. Its four quiz answers are blank. The
+existing rule therefore retains zero quiz scores and midpoint attitudes for
+p90; it must not be masked by an all-missing-battery predicate. Its phase
+questionnaire presence is currently unknown and could separately be recorded
+as observed using the verified POST identity. Fourteen baseline rows also lack
+all substantive project ratings, but their PRE records are retained; rating
+missingness alone is not evidence of an absent whole questionnaire.
+
+The merged file also contains a **separate nonparticipant block**: 32 populated
+`np` records co-located with baseline p1–33, including 30 rows with an ordinary
+matched participant POST record and p29/p31 among the unmatched rows. The
+dictionary labels its demographics as nonparticipant responses. These cannot
+be borrowed to fill participant departure values: for example, p2's baseline
+record is female, age 61, whereas its co-located nonparticipant record is male,
+age 21. There is no verified crosswalk identifying these as the same people.
+`nonparticipant_block_identity_caution.csv` retains the public numeric evidence.
+The proposal leaves that block untouched and makes no claim that every possible
+nonparticipant follow-up source is absent. No absence repair has been adopted.
+
+### ZG-08: Township Image has two authored definitions
+
+**Unresolved source-definition choice; no correction adopted.** The archived
+`china_2005.r`, lines 129–130, explicitly selects `imaget1`/`imaget2`; the merged
+dictionary describes its image index as Q25 (Wenchang Park second stage) and Q31
+(Demonstrative Street). The current build reproduces that historical choice.
+The published Appendix A instead lists **Q8 Bridge, Q9 Fuxing Road east end,
+Q25 Wenchang Park second stage and Q27 Urban environmental constructions**.
+The merged file also contains `image3t1`/`image3t2`, explicitly labeled as the
+available mean of 8, 9, 25 and 27, and all their values independently reproduce
+that four-project definition. Thus both versions are authored source evidence;
+the published title alone does not authorize silently replacing the historical
+construct.
+
+With the current float32(raw mean)/10 storage order and midpoint fallback
+preserved, adopting the published four-project definition would change 186
+baseline and 171 departure image values in the 269-person respondent layer,
+and 184 baseline extremities. In the main 233-person sample it would change
+161 `chi.t1att7`, 169 `chi.t2att7` and 160 `attextreme` values; `meanxtreme`,
+`avgsd` and `genvar` would each change for all 233 people. For example, p15's
+baseline image value would move from 1 to .6333333492279053, while p262's
+would move from .5 to 1. Exact old/proposed values are retained in
+`township_image_proposal.csv` and `township_image_derived_proposal.csv`; the
+selected-field scope is in `township_image_selected_impact.csv`. No source
+response, sample membership or other attitude definition would change.
+
+The four-project version reproduces the paper's paired **N=176**, but its
+baseline/departure means are .656321/.609967 rather than the printed .663/.618.
+The two-project historical version gives N=138 and .621014/.539855. These are
+paired observed means without midpoint substitution; they are not full-sample
+means. `published_index_comparison.csv` retains this discrepancy and the other
+nine-index comparisons. The appendix supports an alternative construct, while
+the unreproduced published means remain a separate source-version limitation.
+The user's choice between preserving the historical construct and adopting the
+published four-project definition is still required before a numerical change.
+
 ## Cross-poll issues for the eventual schema
 
 ### X-01: Knowledge eligibility is not the respondent universe
@@ -6789,8 +7015,9 @@ instances share phase t0 and have distinct instance IDs, so readers do not
 confuse phase with the questionnaire instance.
 
 Downstream analyses must request their comparison explicitly, for example
-`baseline_wave = t1`, `outcome_wave = t2` for dp-learning's current
-arrival-to-exit convention, or t0 to t2 for pre-arrival-to-exit. Missing t1
+`baseline_wave = t1`, `outcome_wave = t2` for an
+arrival-to-exit contrast, or t0 to t2 for the current dp-learning main
+pre-arrival-to-exit contrast. Missing t1
 makes the former comparison unavailable; it does not relabel t0. Existing
 selected-pre/post exports therefore need a reviewed mapping before they can
 claim this standardized contract.
@@ -7662,9 +7889,11 @@ attendees (IDs 8720, 3423, 1823, 4024, 419); preserve these as missing. The prop
 highest-degree-response rule gives 19 positive, 251 negative, and five missing
 attendee responses. Relative to the current proxy, 31 positive values become
 negative, five negative values become missing, and one missing value becomes
-negative (ID 1717 has an observed no-qualification response). This proposal
-preserves the ordered education variable and its median classification. The
-user has been consulted; it has not yet been implemented.
+negative (ID 1717 has an observed no-qualification response). That explicit-degree-
+response proposal was not adopted: the user chose within-poll relative education for the comparison instead. It remains historical
+evidence about why the degree proxy is not uniform, not an outstanding
+authorization to turn ambiguous qualifications into negative degree answers.
+The ordered education variable and approved median classification are preserved.
 
 Other source-specific limitations also need explicit treatment before calling
 this a uniform degree measure:
@@ -7723,7 +7952,7 @@ education measure; no respondent is strictly above that median.” This is not
 an instruction to replace the median with a college threshold or to divide
 respondents who share the same reported education category.
 
-## X15. Preserve supplied survey weights; analytical use remains undecided
+## Supplied survey weights: analytical use remains undecided
 
 The typed weight export retains 13 supplied numeric weight columns from nine
 polls, with every source row preserved, including missing and zero weights.
