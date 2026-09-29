@@ -8,6 +8,7 @@ source("R/exports.R")
 source("R/respondents.R")
 source("R/polardata.R")
 source("R/polardata_rebuild.R")
+source("R/attitude_catalog.R")
 
 contracts <- read_metadata("respondent_sources")
 stopifnot(nrow(contracts) == 21L, all(contracts$status == "reviewed-source"))
@@ -41,25 +42,11 @@ path <- file.path(directory, "uk-health-1998.parquet")
 arrow::write_parquet(health, path)
 stopifnot(identical(health, arrow::read_parquet(path)))
 
-indices <- readr::read_csv(project_path(
-  "data", "shared", "codebooks", "attitude_indices", "allpollindices.csv"
-), show_col_types = FALSE)
-stopifnot(
-  nrow(indices) == 129L, ncol(indices) == 7L,
-  all(indices$t1var %in% names(rebuilt)),
-  all(indices$t2_t3var %in% names(rebuilt))
-)
-label_fixes <- read_metadata("attitude_index_label_fixes")
-rows <- match(label_fixes$t1var, indices$t1var)
-stopifnot(
-  ncol(label_fixes) == 5L,
-  !anyDuplicated(label_fixes$t1var), !anyNA(rows),
-  all(!is.na(label_fixes$issue_id) & nzchar(label_fixes$issue_id)),
-  identical(indices$dpnum[rows], label_fixes$dpnum),
-  identical(indices$att_index[rows], label_fixes$archived_label),
-  all(label_fixes$reviewed_label != label_fixes$archived_label)
-)
-indices$att_index[rows] <- label_fixes$reviewed_label
+indices <- build_attitude_catalog(rebuilt)
+contrasts <- reviewed_attitude_contrasts(indices)
+manifest <- dplyr::bind_rows(manifest, write_typed_export(
+  contrasts, "attitude_contrasts", directory
+))
 arrow::write_parquet(indices, file.path(directory, "attitude-indices.parquet"))
 readr::write_tsv(indices, file.path(directory, "attitude-indices.tab"), na = "")
 

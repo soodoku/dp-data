@@ -45,6 +45,210 @@
       }
     },
     {
+      "name": "survey_weights",
+      "path": "metadata/survey_weights.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "source_id",
+            "type": "string"
+          },
+          {
+            "name": "weight_id",
+            "type": "string"
+          },
+          {
+            "name": "source_column",
+            "type": "string"
+          },
+          {
+            "name": "source_unit_column",
+            "type": "string"
+          },
+          {
+            "name": "source_wave_column",
+            "type": "string"
+          },
+          {
+            "name": "source_wave",
+            "type": "string"
+          },
+          {
+            "name": "weight_group_column",
+            "type": "string"
+          },
+          {
+            "name": "variable_label",
+            "type": "string"
+          },
+          {
+            "name": "population_scope",
+            "type": "string"
+          },
+          {
+            "name": "wave_scope",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          },
+          {
+            "name": "usage_decision",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "attitude_index_wave_fixes",
+      "path": "metadata/attitude_index_wave_fixes.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "dpnum",
+            "type": "number"
+          },
+          {
+            "name": "t1var",
+            "type": "string"
+          },
+          {
+            "name": "archived_later_column",
+            "type": "string"
+          },
+          {
+            "name": "reviewed_later_column",
+            "type": "string"
+          },
+          {
+            "name": "initial_wave_instance_id",
+            "type": "string"
+          },
+          {
+            "name": "arrival_wave_instance_id",
+            "type": "string"
+          },
+          {
+            "name": "later_wave_instance_id",
+            "type": "string"
+          },
+          {
+            "name": "issue_id",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "tanzania_attitude_items",
+      "path": "metadata/tanzania_attitude_items.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "source_id",
+            "type": "string"
+          },
+          {
+            "name": "attitude_id",
+            "type": "string"
+          },
+          {
+            "name": "pre_column",
+            "type": "string"
+          },
+          {
+            "name": "post_column",
+            "type": "string"
+          },
+          {
+            "name": "lower",
+            "type": "number"
+          },
+          {
+            "name": "upper",
+            "type": "number"
+          },
+          {
+            "name": "missing_codes",
+            "type": "string"
+          },
+          {
+            "name": "midpoint",
+            "type": "number"
+          },
+          {
+            "name": "question_summary",
+            "type": "string"
+          },
+          {
+            "name": "low_endpoint",
+            "type": "string"
+          },
+          {
+            "name": "high_endpoint",
+            "type": "string"
+          },
+          {
+            "name": "discussion_round",
+            "type": "string"
+          },
+          {
+            "name": "group_source_column",
+            "type": "string"
+          },
+          {
+            "name": "group_source_id",
+            "type": "string"
+          },
+          {
+            "name": "scoring_scope",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          },
+          {
+            "name": "group_evidence",
+            "type": "string"
+          },
+          {
+            "name": "phase_evidence",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
       "name": "respondent_sources",
       "path": "metadata/respondent_sources.csv",
       "profile": "tabular-data-resource",

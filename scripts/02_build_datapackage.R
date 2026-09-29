@@ -2,6 +2,9 @@ source("R/paths.R")
 
 resources <- c(
   "oos_sources",
+  "survey_weights",
+  "attitude_index_wave_fixes",
+  "tanzania_attitude_items",
   "respondent_sources",
   "respondent_source_components",
   "education_normalization",

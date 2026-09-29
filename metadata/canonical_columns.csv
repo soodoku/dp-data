@@ -138,7 +138,7 @@ analysis_participants,panel,bool,FALSE,FALSE,"Selected analysis-panel membership
 analysis_participants,small_group_id,string,TRUE,FALSE,Source discussion-group identifier where observed
 analysis_participants,cluster_id,string,TRUE,FALSE,Cluster for study inference; Tanzania uses village
 analysis_participants,country,string,TRUE,FALSE,Participant country where needed to disaggregate a multi-country poll
-analysis_participants,weight,float64,TRUE,FALSE,Source analysis weight; null when unavailable
+analysis_participants,weight,float64,TRUE,FALSE,Existing selected analysis weight; null when unavailable; full supplied inventory in survey_weights; analytical use undecided
 analysis_participants,ba,float64,TRUE,FALSE,Source-specific legacy higher-education proxy; not uniform degree attainment; use education_above_median for relative comparisons
 analysis_participants,female,float64,TRUE,FALSE,Source-derived female indicator where coding is verified
 analysis_item_responses,poll_id,string,FALSE,TRUE,Stable poll identifier
@@ -269,7 +269,7 @@ analysis_phase_participants,panel,bool,FALSE,FALSE,"Selected analysis-panel memb
 analysis_phase_participants,small_group_id,string,TRUE,FALSE,Source discussion-group identifier where observed
 analysis_phase_participants,cluster_id,string,TRUE,FALSE,Cluster for study inference; Tanzania uses village
 analysis_phase_participants,country,string,TRUE,FALSE,Participant country where needed to disaggregate a multi-country poll
-analysis_phase_participants,weight,float64,TRUE,FALSE,Source analysis weight; null when unavailable
+analysis_phase_participants,weight,float64,TRUE,FALSE,Existing selected analysis weight; null when unavailable; full supplied inventory in survey_weights; analytical use undecided
 analysis_phase_participants,ba,float64,TRUE,FALSE,Source-specific legacy higher-education proxy; not uniform degree attainment; use education_above_median for relative comparisons
 analysis_phase_participants,female,float64,TRUE,FALSE,Source-derived female indicator where coding is verified
 analysis_phase_participants,age,float64,TRUE,FALSE,Baseline age in years; BTP 2007 uses survey year minus birth year
@@ -324,3 +324,80 @@ analysis_participants,education_above_median,bool,TRUE,FALSE,Above the empirical
 analysis_participants,income_above_median,bool,TRUE,FALSE,Strictly above the empirical income median of unique historical-polardata participants; ties false; missing responses and unsupported sources null; fixed before comparison-specific exclusions
 analysis_phase_participants,education_above_median,bool,TRUE,FALSE,Above the empirical education median of unique historical-polardata participants or verified A1R 2019 attendees; ties false; missing and unsupported sources null; fixed before comparison exclusions
 analysis_phase_participants,income_above_median,bool,TRUE,FALSE,Strictly above the empirical income median of unique historical-polardata participants; ties false; missing responses and unsupported sources null; fixed before comparison-specific exclusions
+attitude_contrasts,poll_id,string,FALSE,TRUE,Stable poll identifier
+attitude_contrasts,attitude_id,string,FALSE,TRUE,Attitude identifier derived from the primary baseline field
+attitude_contrasts,contrast_id,string,FALSE,TRUE,Named event-phase comparison
+attitude_contrasts,primary,bool,FALSE,FALSE,True for the main index catalog comparison
+attitude_contrasts,source_dataset,string,FALSE,FALSE,Source cohort; historical means the reconstructed polardata sample
+attitude_contrasts,earlier_column,string,FALSE,FALSE,Earlier score column in output/polardata/polardata.parquet
+attitude_contrasts,later_column,string,FALSE,FALSE,Later score column in output/polardata/polardata.parquet
+attitude_contrasts,earlier_wave,string,FALSE,FALSE,Canonical earlier phase label
+attitude_contrasts,later_wave,string,FALSE,FALSE,Canonical later phase label
+attitude_contrasts,earlier_phase,string,FALSE,FALSE,Earlier event-stage meaning
+attitude_contrasts,later_phase,string,FALSE,FALSE,Later event-stage meaning
+attitude_contrasts,earlier_wave_instance_id,string,FALSE,FALSE,Earlier original survey occasion key
+attitude_contrasts,later_wave_instance_id,string,FALSE,FALSE,Later original survey occasion key
+attitude_contrasts,evidence,string,FALSE,FALSE,Source evidence supporting the reviewed contrast
+survey_weight_definitions,poll_id,string,FALSE,FALSE,Poll containing the retained source
+survey_weight_definitions,source_id,string,FALSE,TRUE,Registered source file identifier
+survey_weight_definitions,weight_id,string,FALSE,TRUE,Source-column-derived snake_case weight identifier
+survey_weight_definitions,source_column,string,FALSE,FALSE,Original weight column name
+survey_weight_definitions,source_unit_column,string,TRUE,FALSE,Original unit ID column; null for file-row identity
+survey_weight_definitions,source_wave_column,string,TRUE,FALSE,Original wave column when the source stores one row per wave
+survey_weight_definitions,source_wave,string,TRUE,FALSE,Original wave value or literal source prefix; not a canonical timing inference
+survey_weight_definitions,weight_group_column,string,TRUE,FALSE,Source column defining the context in which weights are valid
+survey_weight_definitions,variable_label,string,TRUE,FALSE,Original variable label when retained; null when unavailable
+survey_weight_definitions,population_scope,string,FALSE,FALSE,Documented population or explicit unresolved scope
+survey_weight_definitions,wave_scope,string,FALSE,FALSE,Documented wave scope or explicit unresolved scope
+survey_weight_definitions,evidence,string,FALSE,FALSE,Retained evidence for the source field and scope
+survey_weight_definitions,usage_decision,string,FALSE,FALSE,Whether use in analysis has been decided
+survey_weight_definitions,source_path,string,FALSE,FALSE,Repository-relative retained source path
+survey_weight_definitions,source_sha256,string,FALSE,FALSE,SHA256 of the exact source bytes underlying row identity
+survey_weights,poll_id,string,FALSE,FALSE,Poll containing the retained source
+survey_weights,source_id,string,FALSE,TRUE,Registered source file identifier
+survey_weights,weight_id,string,FALSE,TRUE,Source-column-derived snake_case weight identifier
+survey_weights,source_row,int32,FALSE,TRUE,One-based physical row of the retained source file
+survey_weights,source_unit_id,string,TRUE,FALSE,Original source unit ID; may repeat across waves; file row remains authoritative
+survey_weights,source_wave,string,TRUE,FALSE,Original wave value or literal source prefix; not a canonical timing inference
+survey_weights,weight_group,string,TRUE,FALSE,Original weighting context; not a pooling instruction
+survey_weights,value,float64,TRUE,FALSE,Unchanged supplied weight; missing and zero preserved
+tanzania_attitude_definitions,poll_id,string,FALSE,FALSE,Poll identifier
+tanzania_attitude_definitions,source_id,string,FALSE,TRUE,Registered respondent source identifier
+tanzania_attitude_definitions,attitude_id,string,FALSE,TRUE,Semantic policy item identifier
+tanzania_attitude_definitions,pre_column,string,FALSE,FALSE,Original baseline response column
+tanzania_attitude_definitions,post_column,string,FALSE,FALSE,Original follow-up response column
+tanzania_attitude_definitions,lower,float64,FALSE,FALSE,Documented lowest substantive response code
+tanzania_attitude_definitions,upper,float64,FALSE,FALSE,Documented highest substantive response code
+tanzania_attitude_definitions,missing_codes,string,FALSE,FALSE,Semicolon-separated non-substantive source codes excluded from scaling
+tanzania_attitude_definitions,midpoint,float64,FALSE,FALSE,Numeric midpoint of normalized response scale; interpretation follows source anchors
+tanzania_attitude_definitions,question_summary,string,FALSE,FALSE,Policy question wording or summary; full wording in retained evidence
+tanzania_attitude_definitions,low_endpoint,string,FALSE,FALSE,Meaning of normalized value zero
+tanzania_attitude_definitions,high_endpoint,string,FALSE,FALSE,Meaning of normalized value one; original source direction preserved
+tanzania_attitude_definitions,discussion_round,string,FALSE,FALSE,First or second recorded group assignment spanning four topical discussions
+tanzania_attitude_definitions,group_source_column,string,FALSE,FALSE,Literal group assignment column used for this item
+tanzania_attitude_definitions,group_source_id,string,FALSE,FALSE,Registered group roster source identifier
+tanzania_attitude_definitions,scoring_scope,string,FALSE,FALSE,Population to which reviewed scales and canonical phases apply
+tanzania_attitude_definitions,evidence,string,FALSE,FALSE,Retained question and response-scale evidence
+tanzania_attitude_definitions,group_evidence,string,FALSE,FALSE,Evidence for linking item topic to recorded group assignment
+tanzania_attitude_definitions,phase_evidence,string,FALSE,FALSE,Evidence for household baseline and delayed telephone follow-up
+tanzania_attitude_definitions,source_path,string,FALSE,FALSE,Retained respondent source path
+tanzania_attitude_definitions,source_sha256,string,FALSE,FALSE,Hash anchoring physical respondent source rows
+tanzania_attitude_definitions,group_source_path,string,FALSE,FALSE,Retained group roster path
+tanzania_attitude_definitions,group_source_sha256,string,FALSE,FALSE,Hash of original group roster
+tanzania_attitude_responses,poll_id,string,FALSE,FALSE,Poll identifier
+tanzania_attitude_responses,source_id,string,FALSE,TRUE,Registered respondent source identifier
+tanzania_attitude_responses,source_row,int32,FALSE,TRUE,One-based physical row in retained respondent source
+tanzania_attitude_responses,source_unit_id,string,FALSE,FALSE,Original HHID; source row and hash remain authoritative
+tanzania_attitude_responses,source_sample,string,FALSE,FALSE,Original sample label distinguishing citizens elites and moderators
+tanzania_attitude_responses,attitude_id,string,FALSE,TRUE,Semantic policy item identifier
+tanzania_attitude_responses,source_column,string,FALSE,FALSE,Original item response column for this wave
+tanzania_attitude_responses,source_wave,string,FALSE,TRUE,Original wave suffix 0 or 1
+tanzania_attitude_responses,wave_instance_id,string,TRUE,FALSE,Existing canonical citizen occasion; null for noncitizen records
+tanzania_attitude_responses,wave,string,TRUE,FALSE,Canonical citizen t0 baseline or t3 delayed follow-up; null for noncitizens
+tanzania_attitude_responses,wave_role,string,TRUE,FALSE,Canonical citizen pre_arrival or follow_up role; null for noncitizens
+tanzania_attitude_responses,discussion_round,string,FALSE,FALSE,First or second recorded group assignment spanning four topical discussions
+tanzania_attitude_responses,group_id,string,TRUE,FALSE,Literal recorded group for this topic; null when absent; does not establish attendance or invitation
+tanzania_attitude_responses,raw_value_label,string,TRUE,FALSE,Original response value label when supplied
+tanzania_attitude_responses,raw_value,float64,TRUE,FALSE,Unchanged source response including missing sentinels
+tanzania_attitude_responses,response_status,string,FALSE,FALSE,answered nonresponse system_missing or out_of_scope; noncitizen rows are not scored
+tanzania_attitude_responses,value,float64,TRUE,FALSE,Citizen response normalized using fixed source endpoints; no weighting

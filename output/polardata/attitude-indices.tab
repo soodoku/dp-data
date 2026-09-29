@@ -68,13 +68,13 @@ poll_id	poll_name	n_indices	att_index	t1var	t2_t3var	dpnum
 27	UK Crime	5	Stiffer Punishment	ukcrime.punisht1	ukcrime.punisht2	6
 27	UK Crime	5	Procedural Rights	ukcrime.procrightst1	ukcrime.procrightst2	6
 27	UK Crime	5	Increasing Self-Protection	ukcrime.selfprotectt1	ukcrime.selfprotectt2	6
-28	Tomorrow's Europe (EU)	7	EU Membership	eu.support_eu_membership_t1	eu.support_eu_membership_t2	7
-28	Tomorrow's Europe (EU)	7	Privatization pensions	eu.att_towards_privatization_t1	eu.att_towards_privatization_t2	7
-28	Tomorrow's Europe (EU)	7	Migration	eu.attitude_towards_migration_t1	eu.attitude_towards_migration_t2	7
-28	Tomorrow's Europe (EU)	7	Militarism	eu.mil_att_11_12_t1	eu.mil_att_11_12_t2	7
-28	Tomorrow's Europe (EU)	7	Pacifist EU	eu.t1q11b	eu.t2q11br	7
-28	Tomorrow's Europe (EU)	7	Admitting Turkey in EU	eu.turkey_enlargement_att_t1	eu.turkey_enlargement_att_t2	7
-28	Tomorrow's Europe (EU)	7	EU Veto Support	eu.eu_veto_support_t1	eu.eu_veto_support_t2	7
+28	Tomorrow's Europe (EU)	7	EU Membership	eu.support_eu_membership_t1	eu.support_eu_membership_t3	7
+28	Tomorrow's Europe (EU)	7	Privatization pensions	eu.att_towards_privatization_t1	eu.att_towards_privatization_t3	7
+28	Tomorrow's Europe (EU)	7	Migration	eu.attitude_towards_migration_t1	eu.attitude_towards_migration_t3	7
+28	Tomorrow's Europe (EU)	7	Militarism	eu.mil_att_11_12_t1	eu.mil_att_11_12_t3	7
+28	Tomorrow's Europe (EU)	7	Pacifist EU	eu.t1q11b	eu.t3q11br	7
+28	Tomorrow's Europe (EU)	7	Admitting Turkey in EU	eu.turkey_enlargement_att_t1	eu.turkey_enlargement_att_t3	7
+28	Tomorrow's Europe (EU)	7	EU Veto Support	eu.eu_veto_support_t1	eu.eu_veto_support_t3	7
 29	Central Power & Light	6	Research	cpl.t1res	cpl.t2res	8
 29	Central Power & Light	6	Conservation	cpl.t1cons	cpl.t2cons	8
 29	Central Power & Light	6	Helping Low Income Customers	cpl.t1poor	cpl.t2poor	8
