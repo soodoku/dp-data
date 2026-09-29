@@ -1,4 +1,15 @@
+"""Check adopted ZG-07 against source files without replacing prior evidence.
+
+Existing CSVs beside this script preserve earlier audits and counterfactuals.
+Fresh checks use a temporary directory by default; --output-dir can select
+a location. Plain attitude indices retain missingness; explicitly named
+midpoint-imputed indices retain the authored observed-form fallback. Township
+Image remains a separate, unadopted definition proposal.
+"""
+
+import argparse
 import hashlib
+import tempfile
 import warnings
 from pathlib import Path
 
@@ -6,7 +17,19 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[3]
-OUT = Path(__file__).resolve().parent
+ARCHIVE = Path(__file__).resolve().parent
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--output-dir", type=Path)
+requested_output = parser.parse_args().output_dir
+OUT = (
+    requested_output or Path(tempfile.mkdtemp(prefix="zeguo-adopted-checks-"))
+).resolve()
+assert OUT != ARCHIVE, "Do not overwrite the preapproval evidence directory"
+OUT.mkdir(parents=True, exist_ok=True)
+archive_hashes = {
+    path: hashlib.sha256(path.read_bytes()).hexdigest()
+    for path in ARCHIVE.glob("*.csv")
+}
 s = pd.read_parquet(ROOT / "data/zeguo-2005/survey.parquet")
 pre = pd.read_parquet(ROOT / "data/zeguo-2005/source-materials/pre.parquet").set_index(
     "p"
@@ -32,6 +55,16 @@ assert (
     and post.index.is_unique
 )
 assert set(pdata.index) == set((52000 + s.loc[selected, "p"]).astype(int))
+# Identity in the original POST file establishes form presence independently.
+absent = s.pp.isna() & s.preandpost.isna()
+assert (s.pp.notna() == s.preandpost.notna()).all()
+assert s.loc[~absent, "pp"].eq(s.loc[~absent, "p"]).all()
+assert s.loc[~absent, "pp"].isin(post.index).all()
+assert absent.sum() == 34 and not set(s.loc[absent, "p"]).intersection(post.index)
+assert s.loc[absent, [f"d20{i:02}p" for i in range(6, 36)]].isna().all().all()
+assert s.loc[absent, [f"post_d304{i}" for i in range(3, 7)]].isna().all().all()
+assert not absent[selected].any()
+
 batteries = {
     "industrial_roads": [14, 20, 21],
     "village_roads": [7, 10, 11],
@@ -64,6 +97,8 @@ def battery(nums, wave, raw_first=False, fallback=True):
     count = np.isfinite(x).sum(axis=1)
     if fallback:
         value[count == 0] = 0.5
+    if wave == 2:
+        value[absent] = np.nan
     return value, count, fields
 
 
@@ -76,7 +111,13 @@ def compare(label, observed, value, atol=1e-12):
             "check": label,
             "n": len(value),
             "differences": int(bad.sum()),
-            "max_absolute_difference": float(np.nanmax(np.abs(observed - value))),
+            "max_absolute_difference": float(
+                np.max(
+                    np.abs(observed - value),
+                    where=np.isfinite(observed - value),
+                    initial=0,
+                )
+            ),
         }
     )
     assert not bad.any(), (label, np.flatnonzero(bad).tolist())
@@ -84,36 +125,52 @@ def compare(label, observed, value, atol=1e-12):
 
 for index, (name, nums) in enumerate(batteries.items(), 1):
     for wave in (1, 2):
-        value, count, fields = battery(
-            nums, wave, name in ["other_parks", "township_image"]
-        )
-        key = f"{name}_t{wave}"
-        expected[key] = value
-        compare("respondent:" + key, wide[key], value)
-        obs = pdata.loc[
-            (52000 + s.loc[selected, "p"]).astype(int), f"chi.t{wave}att{index}"
-        ]
-        compare("selected:" + key, obs, value[selected])
-        recorded = measures[measures.name.eq(key)].set_index("respondent_id").loc[ids]
-        compare("component_counts:" + key, recorded.n_observed_fields, count)
-        coverage.append(
-            {
-                "index": name,
-                "wave": wave,
-                "fields": "|".join(fields),
-                "source_n": 269,
-                "selected_n": 233,
-                "n_observed_any": int((count > 0).sum()),
-                "n_complete": int((count == len(nums)).sum()),
-                "n_all_missing_midpoint": int((count == 0).sum()),
-                "selected_all_missing_midpoint": int((count[selected] == 0).sum()),
-                "minimum": float(value.min()),
-                "maximum": float(value.max()),
-                "direction": "higher project importance",
-                "denominator": "available component count",
-            }
-        )
-baseline = np.column_stack([expected[f"{n}_t1"] for n in batteries])
+        for imputed in (False, True):
+            value, count, fields = battery(
+                nums, wave, name in ["other_parks", "township_image"], imputed
+            )
+            key = f"{name}_t{wave}" + ("_midpoint_imputed" if imputed else "")
+            expected[key] = value
+            compare("respondent:" + key, wide[key], value)
+            if imputed:
+                obs = pdata.loc[
+                    (52000 + s.loc[selected, "p"]).astype(int), f"chi.t{wave}att{index}"
+                ]
+                compare("selected:" + key, obs, value[selected])
+            recorded = (
+                measures[measures.name.eq(key)].set_index("respondent_id").loc[ids]
+            )
+            compare("component_counts:" + key, recorded.n_observed_fields, count)
+            coverage.append(
+                {
+                    "index": name,
+                    "wave": wave,
+                    "variant": "midpoint_imputed" if imputed else "observed_only",
+                    "fields": "|".join(fields),
+                    "source_n": 269,
+                    "selected_n": 233,
+                    "n_observed_any": int((count > 0).sum()),
+                    "n_complete": int((count == len(nums)).sum()),
+                    "n_all_missing_midpoint": int(
+                        ((count == 0) & np.isfinite(value)).sum()
+                    ),
+                    "n_missing_index": int(np.isnan(value).sum()),
+                    "n_absent_form_missing": int((absent & (wave == 2)).sum()),
+                    "selected_all_missing_midpoint": int(
+                        ((count == 0) & np.isfinite(value) & selected).sum()
+                    ),
+                    "minimum": float(np.nanmin(value)),
+                    "maximum": float(np.nanmax(value)),
+                    "direction": "higher project importance",
+                    "denominator": "available component count",
+                    "all_missing_index_rule": (
+                        "midpoint only within an observed form"
+                        if imputed
+                        else "missing"
+                    ),
+                }
+            )
+baseline = np.column_stack([expected[f"{n}_t1_midpoint_imputed"] for n in batteries])
 knowledge = {}
 ledger = pd.read_csv(
     ROOT / "data/zeguo-2005/source-materials/knowledge-reconciliation.csv"
@@ -125,10 +182,23 @@ for wave, prefix in [(1, "pre"), (2, "post")]:
         for row in ledger.itertuples():
             i = np.flatnonzero(s.p.eq(row.p))[0]
             scores[i, fields.index(row.item)] = row.historical_score
+        scores[absent, :] = np.nan
     knowledge[wave] = scores
     compare(f"knowledge_t{wave}", wide[f"knowledge_t{wave}"], scores.mean(axis=1))
+joint = (knowledge[1] * knowledge[2]).mean(axis=1)
+post_score = knowledge[2].mean(axis=1)
+compare("knowledge_joint", wide.knowledge_joint, joint)
+compare("knowledge_gain", wide.knowledge_gain, post_score - knowledge[1].mean(axis=1))
+compare("knowledge_gain_joint", wide.knowledge_gain_joint, post_score - joint)
 compare(
-    "knowledge_joint", wide.knowledge_joint, (knowledge[1] * knowledge[2]).mean(axis=1)
+    "log_knowledge_joint",
+    wide.log_knowledge_joint,
+    np.log(np.where(joint <= 0, 0.0001, joint)),
+)
+compare(
+    "high_knowledge_joint",
+    wide.high_knowledge_joint,
+    np.where(np.isnan(joint), np.nan, (joint > 0.6).astype(float)),
 )
 ext = np.abs(baseline - 0.5).mean(axis=1)
 compare("respondent:extremity", wide.attitude_extremity, ext)
@@ -191,14 +261,9 @@ for wave, raw, suffix, key in [(1, pre, "b", "p"), (2, post, "a", "pp")]:
                 }
             )
 
-# Departure absence is defined by reviewed POST identity, never by all-DK ratings.
-absent = s.pp.isna() & s.preandpost.isna()
-assert absent.sum() == 34 and not set(s.loc[absent, "p"]).intersection(post.index)
-assert s.loc[absent, [f"d20{i:02}p" for i in range(6, 36)]].isna().all().all()
-assert s.loc[absent, [f"post_d304{i}" for i in range(3, 7)]].isna().all().all()
 absence = wide.loc[
     ids[absent],
-    [f"{n}_t2" for n in batteries]
+    [f"{n}_t2{suffix}" for n in batteries for suffix in ("", "_midpoint_imputed")]
     + [
         "knowledge_t1",
         "knowledge_t2",
@@ -210,12 +275,29 @@ absence = wide.loc[
     ],
 ].copy()
 absence.insert(0, "p", s.loc[absent, "p"].astype(int).to_numpy())
-absence.to_csv(OUT / "absent_departure_current_values.csv", index=True)
+absence.to_csv(OUT / "absent_departure_adopted_values.csv", index=True)
+archived_absence = pd.read_csv(
+    ARCHIVE / "absent_departure_current_values.csv", dtype={"respondent_id": str}
+).set_index("respondent_id")
+assert set(archived_absence.index) == set(absence.index)
+archived_absence = archived_absence.loc[absence.index]
+compare(
+    "absent:baseline_preserved", absence.knowledge_t1, archived_absence.knowledge_t1
+)
+for name in absence.columns.difference(["p", "knowledge_t1"]):
+    assert absence[name].isna().all(), name
+    archived_name = name.removesuffix("_midpoint_imputed")
+    assert archived_absence[archived_name].notna().all(), name
 all_missing = s[[f"d20{i:02}p" for i in range(6, 36)]].isna().all(axis=1)
 matched_blank = s.loc[
     all_missing & ~absent, ["p", "pp", "preandpost", "groupnum"]
 ].copy()
-assert len(matched_blank) == 1
+assert len(matched_blank) == 1 and matched_blank.p.iloc[0] == 90
+assert wide.loc["90", "knowledge_t2"] == 0
+assert wide.loc["90", [f"{name}_t2" for name in batteries]].isna().all()
+assert (
+    wide.loc["90", [f"{name}_t2_midpoint_imputed" for name in batteries]] == 0.5
+).all()
 matched_blank.to_csv(OUT / "matched_all_nonanswer_ratings.csv", index=False)
 npfields = [c for c in s if c.endswith("np")]
 nprows = s[npfields].notna().any(axis=1)
@@ -224,13 +306,17 @@ s.loc[
 ].to_csv(OUT / "nonparticipant_block_identity_caution.csv", index=False)
 
 # Candidate source selection under published Township Image definition; no adoption.
+# Compare explicit imputed variants to isolate component selection from the
+# separately approved missingness/naming change; absent forms remain missing.
 proposed = {}
 proposal = []
 for wave in (1, 2):
     value, count, fields = battery([8, 9, 25, 27], wave, True)
     proposed[wave] = value
-    old = expected[f"township_image_t{wave}"]
-    changed = ~np.isclose(old, value, rtol=0, atol=1e-12)
+    old = expected[f"township_image_t{wave}_midpoint_imputed"]
+    changed = ~np.isclose(old, value, rtol=0, atol=1e-12, equal_nan=True)
+    if wave == 2:
+        assert not changed[absent].any()
     for i in np.flatnonzero(changed):
         proposal.append(
             {
@@ -276,7 +362,10 @@ effects.append(
         "field": "chi.t1att7",
         "n_changed": int(
             (
-                np.abs(expected["township_image_t1"][selected] - proposed[1][selected])
+                np.abs(
+                    expected["township_image_t1_midpoint_imputed"][selected]
+                    - proposed[1][selected]
+                )
                 > 1e-12
             ).sum()
         ),
@@ -287,7 +376,10 @@ effects.append(
         "field": "chi.t2att7",
         "n_changed": int(
             (
-                np.abs(expected["township_image_t2"][selected] - proposed[2][selected])
+                np.abs(
+                    expected["township_image_t2_midpoint_imputed"][selected]
+                    - proposed[2][selected]
+                )
                 > 1e-12
             ).sum()
         ),
@@ -371,93 +463,58 @@ for name, nums in batteries.items():
             }
         )
 pd.DataFrame(references).to_csv(OUT / "published_index_comparison.csv", index=False)
-absence_counts = []
-for name in absence.columns:
-    if name == "p" or name == "knowledge_t1":
-        continue
-    absence_counts.append(
-        {
-            "table": "respondent_measures",
-            "field": name,
-            "n_changed": int(absence[name].notna().sum()),
-            "current_min": absence[name].min(),
-            "current_max": absence[name].max(),
-            "proposed": "missing",
-        }
-    )
-observed_counts = []
+# Verify adopted transport through all canonical tables. The archived proposed
+# changes remain untouched: they describe the old baseline, not current output.
+absence_checks = []
 for table in [
     "analysis_scores",
     "analysis_phase_scores",
     "analysis_item_responses",
     "analysis_phase_item_responses",
 ]:
-    d = pd.read_parquet(ROOT / f"output/analysis/{table}.parquet")
-    d = d[d.poll_id.eq("zeguo-2005") & d.respondent_id.isin(ids[absent])]
-    wave = "t2"
-    d = d[d.wave.eq(wave)]
+    all_rows = pd.read_parquet(ROOT / f"output/analysis/{table}.parquet")
+    d = all_rows[
+        all_rows.poll_id.eq("zeguo-2005")
+        & all_rows.respondent_id.isin(ids[absent])
+        & all_rows.wave.eq("t2")
+    ]
     assert len(d) == (136 if "item" in table else 34)
-    if "n_observed" in d:
-        assert d.n_observed.isna().all()
-        observed_counts.append(
+    expected_states = {
+        "n_observed": 0,
+        "score": np.nan,
+        "n_correct": np.nan,
+        "correct": np.nan,
+        "response_status": "wave_absent",
+        "wave_observed": False,
+        "questionnaire_presence_status": "absent",
+    }
+    for field, value in expected_states.items():
+        if field not in d:
+            continue
+        valid = d[field].isna() if pd.isna(value) else d[field].eq(value)
+        assert valid.all(), (table, field)
+        absence_checks.append(
             {
                 "table": table,
-                "field": "n_observed",
-                "n_changed": len(d),
-                "current_min": "missing",
-                "current_max": "missing",
-                "proposed": "0",
+                "field": field,
+                "n": len(d),
+                "adopted_value": value,
+                "differences": 0,
             }
         )
+    observed = all_rows[
+        all_rows.poll_id.eq("zeguo-2005")
+        & all_rows.respondent_id.eq("90")
+        & all_rows.wave.eq("t2")
+    ]
+    assert len(observed) == (4 if "item" in table else 1)
     for field in ["score", "n_correct", "correct"]:
-        if field in d:
-            assert d[field].eq(0).all()
-            absence_counts.append(
-                {
-                    "table": table,
-                    "field": field,
-                    "n_changed": len(d),
-                    "current_min": 0,
-                    "current_max": 0,
-                    "proposed": "missing",
-                }
-            )
-    if "response_status" in d:
-        assert d.response_status.eq("scored").all()
-        absence_counts.append(
-            {
-                "table": table,
-                "field": "response_status",
-                "n_changed": len(d),
-                "current_min": "scored",
-                "current_max": "scored",
-                "proposed": "wave_absent",
-            }
-        )
-    if "wave_observed" in d:
-        assert d.wave_observed.isna().all()
-        absence_counts.append(
-            {
-                "table": table,
-                "field": "wave_observed",
-                "n_changed": len(d),
-                "current_min": "unknown",
-                "current_max": "unknown",
-                "proposed": "FALSE",
-            }
-        )
-    if "questionnaire_presence_status" in d:
-        assert d.questionnaire_presence_status.eq("unknown").all()
-        absence_counts.append(
-            {
-                "table": table,
-                "field": "questionnaire_presence_status",
-                "n_changed": len(d),
-                "current_min": "unknown",
-                "current_max": "unknown",
-                "proposed": "absent",
-            }
-        )
+        if field in observed:
+            assert observed[field].eq(0).all(), (table, field, "p90")
+    if "wave_observed" in observed:
+        assert observed.wave_observed.eq(True).all()
+    if "response_status" in observed:
+        assert observed.response_status.eq("scored").all()
 for table in ["analysis_participants", "analysis_phase_participants"]:
     d = pd.read_parquet(ROOT / f"output/analysis/{table}.parquet")
     d = d[d.poll_id.eq("zeguo-2005") & d.respondent_id.isin(ids[absent])]
@@ -465,44 +522,25 @@ for table in ["analysis_participants", "analysis_phase_participants"]:
 historical = pd.read_parquet(
     ROOT / "output/respondent/historical_knowledge_items.parquet"
 )
-historical = historical[
-    historical.poll_id.eq("zeguo-2005")
-    & historical.respondent_id.isin(ids[absent])
-    & historical.wave.eq(2)
-]
-assert len(historical) == 136 and historical.correct.eq(0).all()
-absence_counts.append(
+historical = historical[historical.poll_id.eq("zeguo-2005") & historical.wave.eq(2)]
+missing_items = historical[historical.respondent_id.isin(ids[absent])]
+assert len(missing_items) == 136 and missing_items.correct.isna().all()
+observed_items = historical[historical.respondent_id.eq("90")]
+assert len(observed_items) == 4 and observed_items.correct.eq(0).all()
+absence_checks.append(
     {
         "table": "historical_knowledge_items",
         "field": "correct",
-        "n_changed": 136,
-        "current_min": 0,
-        "current_max": 0,
-        "proposed": "missing",
+        "n": 136,
+        "adopted_value": np.nan,
+        "differences": 0,
     }
 )
-absence_counts.extend(observed_counts)
-pd.DataFrame(absence_counts).to_csv(
-    OUT / "absent_departure_proposed_changes.csv", index=False
-)
-counterfactual = wide.copy()
-for name in absence.columns:
-    if name not in ["p", "knowledge_t1"]:
-        counterfactual.loc[ids[absent], name] = np.nan
-assert np.array_equal(
-    wide.loc[ids[~absent]].to_numpy(),
-    counterfactual.loc[ids[~absent]].to_numpy(),
-    equal_nan=True,
-)
-assert np.array_equal(wide.knowledge_t1, counterfactual.knowledge_t1, equal_nan=True)
-assert not absent[selected].any()
-assert (
-    counterfactual.loc["90", "knowledge_t2"] == 0
-    and counterfactual.loc["90", "sewage_t2"] == 0.5
-)
+pd.DataFrame(absence_checks).to_csv(OUT / "adopted_absence_checks.csv", index=False)
 print(
-    "Knowledge/absence counterfactual invariants passed; "
-    "main233 and all matched POST values preserved."
+    "Adopted absence checks passed: 34 absent departures missing; "
+    "p90 retains zero knowledge and explicit midpoint-imputed attitudes; "
+    "233-person historical attitude and group checks pass."
 )
 files = [
     "data/zeguo-2005/survey.parquet",
@@ -520,5 +558,12 @@ pd.DataFrame(
 ).to_csv(OUT / "source_hashes.csv", index=False)
 print(
     f"{len(checks)} comparisons passed; no unexplained differences. "
-    "Absence and Township Image alternatives retained as proposals only."
+    "ZG-07 absence rule adopted; Township Image remains a proposal. "
+    f"Fresh checks: {OUT}"
 )
+
+assert all(
+    hashlib.sha256(path.read_bytes()).hexdigest() == digest
+    for path, digest in archive_hashes.items()
+), "Archived evidence changed"
+print(f"Preserved all {len(archive_hashes)} archived CSVs unchanged.")

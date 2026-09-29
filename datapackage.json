@@ -1197,6 +1197,38 @@
       }
     },
     {
+      "name": "knowledge_response_codes",
+      "path": "metadata/knowledge_response_codes.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "source_column",
+            "type": "string"
+          },
+          {
+            "name": "code",
+            "type": "number"
+          },
+          {
+            "name": "label",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
       "name": "items",
       "path": "metadata/items.csv",
       "profile": "tabular-data-resource",

@@ -42,6 +42,24 @@ cpl_attitudes <- function(survey, wave) {
     dplyr::rename_with(\(name) paste0(name, "_t", wave))
 }
 
+utility_absent_form <- function(survey, poll_id, wave) {
+  stopifnot(
+    poll_id %in% c("cpl-1996", "wtu-1996", "swepco-1996"),
+    wave %in% 1:2
+  )
+  if (wave == 1L || poll_id == "cpl-1996") {
+    return(rep(FALSE, nrow(survey)))
+  }
+  participant <- read_source_codes(survey, "PART", 1:2)
+  stopifnot(!anyNA(participant))
+  absent <- participant == 2L
+  post_fields <- grep("2$", names(survey), value = TRUE)
+  stopifnot(
+    length(post_fields) > 0L, all(is.na(survey[absent, post_fields]))
+  )
+  absent
+}
+
 utility_attitudes <- function(survey, poll_id, wave) {
   stopifnot(poll_id %in% c("wtu-1996", "swepco-1996"), wave %in% 1:2)
   response <- function(stem) {
@@ -60,21 +78,26 @@ utility_attitudes <- function(survey, poll_id, wave) {
   }
   renewables_min <- if (wtu) 2.5 else if (wave == 1L) 1 else 0
   research_min <- if (wtu && wave == 2L) 1 else 0
-  tibble::tibble(
-    imported_power = dplyr::coalesce(response("buypwr"), 5) / 10,
-    conservation = dplyr::coalesce(
-      scale_historical_range(conservation, conservation_min, 10), .5
-    ),
-    low_income_support = dplyr::coalesce(response("needto"), 5) / 10,
-    renewables = dplyr::coalesce(scale_historical_range(
+  result <- tibble::tibble(
+    imported_power = response("buypwr") / 10,
+    conservation = scale_historical_range(conservation, conservation_min, 10),
+    low_income_support = response("needto") / 10,
+    renewables = scale_historical_range(
       average(c("renew", "wind")), renewables_min, 10
-    ), .5),
-    research = scale_historical_range(
-      dplyr::coalesce(average(c("fedrch", "resch")), 5), research_min, 10
     ),
-    fossil_fuels = dplyr::coalesce(response("fuels"), 5) / 10
-  ) |>
+    research = scale_historical_range(
+      average(c("fedrch", "resch")), research_min, 10
+    ),
+    fossil_fuels = response("fuels") / 10
+  )
+  result <- result |>
     dplyr::rename_with(\(name) paste0(name, "_t", wave))
+  fallback <- stats::setNames(rep(.5, ncol(result)), names(result))
+  fallback[[paste0("research_t", wave)]] <-
+    scale_historical_range(5, research_min, 10)
+  add_midpoint_imputed_variants(
+    result, fallback, utility_absent_form(survey, poll_id, wave)
+  )
 }
 
 utility_knowledge_items <- function(survey, poll_id, wave) {
@@ -97,14 +120,7 @@ utility_knowledge_items <- function(survey, poll_id, wave) {
     as.numeric(value %in% correct)
   })
   scored <- as.matrix(tibble::as_tibble(values))
-  if (poll_id %in% c("swepco-1996", "wtu-1996") && wave == 2L) {
-    participant <- read_source_codes(survey, "PART", 1:2)
-    stopifnot(!anyNA(participant))
-    absent <- participant == 2L
-    post_fields <- paste0(toupper(names(key)), "2")
-    stopifnot(all(is.na(survey[absent, post_fields])))
-    scored[absent, ] <- NA_real_
-  }
+  scored[utility_absent_form(survey, poll_id, wave), ] <- NA_real_
   scored
 }
 
@@ -133,7 +149,10 @@ build_utility_individual <- function(survey, poll_id) {
     if (cpl) cpl_attitudes(survey, wave)
     else utility_attitudes(survey, poll_id, wave)
   }) |> purrr::list_cbind()
-  baseline <- attitudes |> dplyr::select(dplyr::ends_with("_t1"))
+  baseline <- attitudes |>
+    dplyr::select(dplyr::ends_with(
+      if (cpl) "_t1" else "_t1_midpoint_imputed"
+    ))
   competition <- read_utility_value(survey, poll_id, "compet1", 1:5)
   if (!cpl) competition <- dplyr::coalesce(competition, 5)
   baseline$competition_t1 <- (competition - 1) / 4

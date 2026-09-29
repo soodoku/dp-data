@@ -1,3 +1,5 @@
+source(project_path("R", "source_zeguo.R"))
+
 zeguo_knowledge_items <- function(survey, wave) {
   fields <- paste0(wave, "_d304", 3:6)
   values <- purrr::map(fields, function(field) {
@@ -24,6 +26,7 @@ zeguo_knowledge_items <- function(survey, wave) {
       )
       scores[index, ledger$item[row]] <- ledger$historical_score[row]
     }
+    scores[!zeguo_departure_observed(survey), ] <- NA_real_
   }
   scores
 }
@@ -42,10 +45,10 @@ zeguo_attitudes <- function(survey, wave) {
     value <- as_historical_float(rowMeans(
       as.data.frame(purrr::map(numbers, item, scaled = scaled)), na.rm = TRUE
     ))
-    value[is.na(value)] <- if (scaled) .5 else 5
+    value[is.nan(value)] <- NA_real_
     value
   }
-  tibble::tibble(
+  result <- tibble::tibble(
     industrial_roads = mean_items(c(14, 20, 21)),
     village_roads = mean_items(c(7, 10, 11)),
     main_roads = mean_items(c(15:19, 22)),
@@ -56,6 +59,9 @@ zeguo_attitudes <- function(survey, wave) {
     cultural_heritage = mean_items(c(25, 32)),
     sewage = mean_items(c(30, 33:35))
   )
+  absent <- if (wave == 2L) !zeguo_departure_observed(survey)
+  else rep(FALSE, nrow(survey))
+  add_midpoint_imputed_variants(result, absent_form = absent)
 }
 
 build_zeguo_individual <- function(survey = read_poll_survey("zeguo-2005")) {
@@ -63,7 +69,15 @@ build_zeguo_individual <- function(survey = read_poll_survey("zeguo-2005")) {
   after <- zeguo_knowledge_items(survey, "post")
   baseline <- zeguo_attitudes(survey, 1L)
   post <- zeguo_attitudes(survey, 2L)
-  extremity <- rowMeans(abs(baseline - .5))
+  historical_baseline <- baseline |>
+    dplyr::select(dplyr::ends_with("_midpoint_imputed"))
+  extremity <- rowMeans(abs(historical_baseline - .5))
+  wave_names <- function(names, wave) {
+    ifelse(endsWith(names, "_midpoint_imputed"),
+      sub("_midpoint_imputed$", paste0("_t", wave, "_midpoint_imputed"), names),
+      paste0(names, "_t", wave)
+    )
+  }
   education <- recode_source_values(survey, "Education",
     c(0, 0, 0, .33, .66, .66, 1)
   )
@@ -76,8 +90,8 @@ build_zeguo_individual <- function(survey = read_poll_survey("zeguo-2005")) {
     age[corrected] <- 33
   }
   dplyr::bind_cols(
-    dplyr::rename_with(baseline, \(name) paste0(name, "_t1")),
-    dplyr::rename_with(post, \(name) paste0(name, "_t2")),
+    dplyr::rename_with(baseline, \(name) wave_names(name, 1L)),
+    dplyr::rename_with(post, \(name) wave_names(name, 2L)),
     summarise_historical_knowledge(before, after),
     tibble::tibble(
       age = age,

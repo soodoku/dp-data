@@ -110,10 +110,10 @@ test_that("australia matches every historical respondent target", {
     "knowgainr2" = "issue_knowledge",
     "logpk" = "log_knowledge_joint",
     "tobitpk" = "high_knowledge_joint",
-    "aus.popparl1" = "popular_t1",
-    "aus.popparl2" = "popular_t2",
-    "aus.republican1" = "republican_t1",
-    "aus.republican2" = "republican_t2"
+    "aus.popparl1" = "popular_t1_midpoint_imputed",
+    "aus.popparl2" = "popular_t2_midpoint_imputed",
+    "aus.republican1" = "republican_t1_midpoint_imputed",
+    "aus.republican2" = "republican_t2_midpoint_imputed"
   )
   approved <- readr::read_csv(project_path(
     "audit", "corrections", "australia-republic-1999", "approved_values.csv"
@@ -172,8 +172,31 @@ test_that("Queen first survives an unanswered second choice", {
     )
     names(survey) <- paste0(names(survey), wave)
     actual <- australia_ranking(survey, wave)
-    expect_equal(actual$republican, c(0, 0, 0, 0, .5, .5, NA))
-    expect_equal(actual$popular, c(.75, .25, .5, NA, .5, .5, NA))
+    expect_equal(actual$republican, c(0, 0, 0, 0, NA, NA, NA))
+    expect_equal(actual$popular, c(.75, .25, NA, NA, NA, NA, NA))
+    expect_equal(actual$republican_midpoint_imputed,
+                 c(0, 0, 0, 0, .5, .5, NA))
+    expect_equal(actual$popular_midpoint_imputed,
+                 c(.75, .25, .5, NA, .5, .5, NA))
+  }
+})
+
+test_that("Australia preserves observed components without ranking DK", {
+  for (wave in 1:2) {
+    survey <- tibble::tibble(
+      firstop = c(97, 1, 3, NA_real_),
+      secop = c(97, 97, 97, NA_real_),
+      tiesbr = c(1, 1, 1, NA_real_),
+      headaus = c(5, 5, 5, NA_real_)
+    )
+    names(survey) <- paste0(names(survey), wave)
+    actual <- australia_ranking(survey, wave)
+    expect_equal(actual$republican, c(1, 1, 2 / 3, NA_real_))
+    expect_equal(actual$republican_midpoint_imputed,
+                 c(5 / 6, 5 / 6, 2 / 3, NA_real_))
+    expect_true(all(is.na(actual$popular)))
+    expect_equal(actual$popular_midpoint_imputed,
+                 c(.5, .5, .5, NA_real_))
   }
 })
 
@@ -190,7 +213,8 @@ test_that("Australia ranking correction matches all source rows", {
     expected <- evidence[evidence$legacy_field == field, ]
     expect_identical(expected$source_row, as.numeric(survey$source_row))
     expect_equal(
-      actual[[paste0("republican_t", wave)]], expected$approved_value
+      actual[[paste0("republican_t", wave, "_midpoint_imputed")]],
+      expected$approved_value
     )
     expect_identical(
       is.na(expected$previous_value), is.na(expected$approved_value)

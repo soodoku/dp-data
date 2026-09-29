@@ -45,7 +45,7 @@ values <- purrr::map(1:2, function(wave) {
   }
   previous <- average(previous_rank)
   approved <- average(approved_rank)
-  actual <- production[[paste0("republican_t", wave)]]
+  actual <- production[[paste0("republican_t", wave, "_midpoint_imputed")]]
   field <- paste0("aus.republican", wave)
   stopifnot(
     identical(is.na(previous), is.na(approved)),
@@ -80,8 +80,10 @@ approved <- historical |>
 path <- file.path(directory, "approved_values.csv")
 existing_lines <- readLines(path)
 updated_fields <- unique(approved$legacy_field)
-keep <- !vapply(strsplit(existing_lines, ",", fixed = TRUE),
-                function(row) row[1L] %in% updated_fields, logical(1))
+keep <- !vapply(
+  strsplit(existing_lines, ",", fixed = TRUE),
+  function(row) row[1L] %in% updated_fields, logical(1)
+)
 new_lines <- strsplit(readr::format_csv(approved), "\n", fixed = TRUE)[[1L]]
 writeLines(c(existing_lines[keep], new_lines[-1L]), path)
 summary <- values |>

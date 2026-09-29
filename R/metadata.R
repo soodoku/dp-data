@@ -1,7 +1,7 @@
-read_metadata <- function(name) {
+read_metadata <- function(name, na = c("", "NA")) {
   readr::read_csv(
     project_path("metadata", paste0(name, ".csv")),
-    show_col_types = FALSE
+    show_col_types = FALSE, na = na
   )
 }
 
@@ -16,6 +16,14 @@ validate_metadata <- function() {
   sources <- read_metadata("source_files")
   recodes <- read_metadata("recode_ledger")
   contracts <- read_metadata("downstream_contracts")
+  knowledge_codes <- read_metadata("knowledge_response_codes", na = "")
+  stopifnot(
+    !anyDuplicated(knowledge_codes[c("poll_id", "source_column", "code")]),
+    all(knowledge_codes$poll_id %in% polls$poll_id),
+    !anyNA(knowledge_codes[c(
+      "poll_id", "source_column", "code", "label", "evidence"
+    )])
+  )
 
   assertr::verify(
     polls,
@@ -253,6 +261,28 @@ validate_respondent_metadata <- function() {
     all(!is.na(definitions$denominator_policy)),
     all(definitions$post_dependent == grepl("T2|T3", definitions$source_waves))
   )
+  imputed <- definitions[grepl("_midpoint_imputed$", definitions$measure_id), ]
+  plain_names <- sub("_midpoint_imputed$", "", imputed$measure_id)
+  plain_position <- match(
+    paste(imputed$poll_id, plain_names),
+    paste(definitions$poll_id, definitions$measure_id)
+  )
+  stopifnot(!anyNA(plain_position))
+  for (i in seq_len(nrow(imputed))) {
+    plain <- definitions[plain_position[i], ]
+    dependency_fields <- function(definition) {
+      inputs$source_column[
+        inputs$poll_id == definition$poll_id &
+          inputs$definition_id == definition$definition_id
+      ]
+    }
+    stopifnot(
+      grepl("^[a-z][a-z0-9]*(_[a-z0-9]+)*$", imputed$measure_id[i]),
+      identical(imputed$source_waves[i], plain$source_waves),
+      identical(imputed$post_dependent[i], plain$post_dependent),
+      setequal(dependency_fields(imputed[i, ]), dependency_fields(plain))
+    )
+  }
   invisible(TRUE)
 }
 

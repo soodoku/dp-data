@@ -1,3 +1,5 @@
+source(project_path("R", "source_monarchy.R"))
+
 monarchy_attitudes <- function(survey, wave) {
   prefix <- if (wave == 1L) "Q" else "R"
   response <- function(stem, values, missing) {
@@ -48,7 +50,11 @@ monarchy_knowledge_items <- function(survey, wave) {
   prefix <- if (wave == 1L) "Q" else "R"
   succession <- read_source_codes(survey, paste0(prefix, "8A"), c(-1, 1:9))
   items$succession <- as.numeric(succession %in% 5)
-  as.matrix(tibble::as_tibble(items))
+  result <- as.matrix(tibble::as_tibble(items))
+  if (wave == 2L) {
+    result[monarchy_departure_observed(survey) %in% FALSE, ] <- NA_real_
+  }
+  result
 }
 
 monarchy_demographics <- function(survey) {

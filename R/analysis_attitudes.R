@@ -12,7 +12,8 @@ analysis_attitudes <- function(participants) {
   ))
   catalog <- index |>
     dplyr::transmute(
-      poll_id, attitude_id = paste0("att_", t1var),
+      poll_id,
+      attitude_id = paste0("att_", t1var),
       source_column = t1var, minimum = 0, maximum = 1,
       label = att_index, evidence = "output/polardata/attitude-indices.parquet",
       construction = "existing policy index"
@@ -20,6 +21,28 @@ analysis_attitudes <- function(participants) {
     dplyr::bind_rows(dplyr::mutate(read_metadata("attitude_items"),
       construction = "single policy response"
     ))
+  imputed_targets <- read_metadata("polardata_targets") |>
+    dplyr::inner_join(
+      read_metadata("measure_definitions") |>
+        dplyr::filter(grepl("_midpoint_imputed$", measure_id)) |>
+        dplyr::select("poll_id", "definition_id", "measure_id"),
+      by = c("poll_id", "canonical_definition" = "definition_id"),
+      relationship = "many-to-one"
+    ) |>
+    dplyr::transmute(poll_id, source_column = legacy_field, measure_id)
+  catalog <- catalog |>
+    dplyr::left_join(imputed_targets,
+      by = c("poll_id", "source_column"), relationship = "one-to-one"
+    ) |>
+    dplyr::mutate(
+      attitude_id = dplyr::if_else(!is.na(measure_id),
+        paste0("att_", measure_id), attitude_id
+      ),
+      construction = dplyr::if_else(!is.na(measure_id),
+        "policy index with explicit midpoint imputation", construction
+      )
+    ) |>
+    dplyr::select(-"measure_id")
   keys <- c("poll_id", "source_dataset", "respondent_id")
   responses <- lapply(unique(catalog$poll_id), function(id) {
     definitions <- dplyr::filter(catalog, .data$poll_id == id)
@@ -31,7 +54,8 @@ analysis_attitudes <- function(participants) {
         dplyr::mutate(historical_respondent_id = as.character(caseid))
       values <- dplyr::left_join(
         dplyr::select(people, dplyr::all_of(keys), "historical_respondent_id"),
-        dplyr::select(raw, "historical_respondent_id",
+        dplyr::select(
+          raw, "historical_respondent_id",
           dplyr::all_of(definitions$source_column)
         ),
         by = "historical_respondent_id", relationship = "one-to-one"
@@ -50,7 +74,8 @@ analysis_attitudes <- function(participants) {
       stopifnot(all(people$source_row %in% raw$source_row))
       values <- dplyr::left_join(
         dplyr::select(people, dplyr::all_of(keys), "source_row"),
-        dplyr::select(raw, "source_row",
+        dplyr::select(
+          raw, "source_row",
           dplyr::all_of(definitions$source_column)
         ),
         by = "source_row", relationship = "many-to-one"
@@ -66,7 +91,8 @@ analysis_attitudes <- function(participants) {
         by = c("poll_id", "source_column"), relationship = "many-to-one"
       ) |>
       dplyr::transmute(
-        poll_id, source_dataset, respondent_id, attitude_id, wave = "t1",
+        poll_id, source_dataset, respondent_id, attitude_id,
+        wave = "t1",
         value = dplyr::if_else(
           raw_value >= minimum & raw_value <= maximum,
           (raw_value - minimum) / (maximum - minimum), NA_real_
