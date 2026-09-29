@@ -385,6 +385,7 @@ for name in absence.columns:
             "proposed": "missing",
         }
     )
+observed_counts = []
 for table in [
     "analysis_scores",
     "analysis_phase_scores",
@@ -396,6 +397,18 @@ for table in [
     wave = "t2"
     d = d[d.wave.eq(wave)]
     assert len(d) == (136 if "item" in table else 34)
+    if "n_observed" in d:
+        assert d.n_observed.isna().all()
+        observed_counts.append(
+            {
+                "table": table,
+                "field": "n_observed",
+                "n_changed": len(d),
+                "current_min": "missing",
+                "current_max": "missing",
+                "proposed": "0",
+            }
+        )
     for field in ["score", "n_correct", "correct"]:
         if field in d:
             assert d[field].eq(0).all()
@@ -418,7 +431,7 @@ for table in [
                 "n_changed": len(d),
                 "current_min": "scored",
                 "current_max": "scored",
-                "proposed": "not_observed",
+                "proposed": "wave_absent",
             }
         )
     if "wave_observed" in d:
@@ -442,7 +455,7 @@ for table in [
                 "n_changed": len(d),
                 "current_min": "unknown",
                 "current_max": "unknown",
-                "proposed": "not_observed",
+                "proposed": "absent",
             }
         )
 for table in ["analysis_participants", "analysis_phase_participants"]:
@@ -468,6 +481,7 @@ absence_counts.append(
         "proposed": "missing",
     }
 )
+absence_counts.extend(observed_counts)
 pd.DataFrame(absence_counts).to_csv(
     OUT / "absent_departure_proposed_changes.csv", index=False
 )

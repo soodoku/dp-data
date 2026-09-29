@@ -1,0 +1,5 @@
+poll_id,study_id,pollname,source_dataset,battery_id,analysis,category,n_people,n_scored,n_missing_phase,n_unknown_presence,n_absent_wave,n_unknown_attendance,n_observed_missing_score,mean_t0,estimate,std_error,lower,upper,inference
+zeguo-2005,zeguo-2005,Zeguo Township,historical,zeguo-2005:historical:knowledge,baseline_by_attendance_and_arm,attended:surveyed,233,233,0,0,0,0,0,0.31330472103004275,NA,NA,NA,NA,descriptive_selection_not_causal
+zeguo-2005,zeguo-2005,Zeguo Township,historical,zeguo-2005:historical:knowledge,baseline_by_attendance_and_arm,attendance_unknown:surveyed,36,35,0,1,0,36,0,0.32857142857142857,NA,NA,NA,NA,descriptive_selection_not_causal
+zeguo-2005,zeguo-2005,Zeguo Township,historical,zeguo-2005:historical:knowledge,attendee_exit_attrition,exit_observed,232,232,0,0,0,0,0,0.31034482758620674,NA,NA,NA,NA,descriptive_selection_not_causal
+zeguo-2005,zeguo-2005,Zeguo Township,historical,zeguo-2005:historical:knowledge,attendee_exit_attrition,exit_unknown,1,1,0,0,0,0,0,1,NA,NA,NA,NA,descriptive_selection_not_causal

@@ -1,0 +1,14 @@
+table,rows,columns,changed_cells,byte_identical
+analysis_attitude_responses,865934,6,0,True
+analysis_attitudes,303,8,0,True
+analysis_item_responses,762163,11,0,True
+analysis_items,253,17,0,True
+analysis_participants,51924,23,0,True
+analysis_phase_item_responses,896032,17,0,True
+analysis_phase_participants,53053,27,0,True
+analysis_phase_scores,137984,18,0,True
+analysis_poll_events,62,10,0,True
+analysis_polls,50,15,0,True
+analysis_scores,96425,9,0,True
+analysis_studies,50,2,0,True
+analysis_survey_waves,77,16,0,True
