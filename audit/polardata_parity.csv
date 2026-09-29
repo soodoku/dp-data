@@ -15,7 +15,7 @@ uk-eu-1995,readbrief,238,0,0,0,0,0,FALSE,0,0,1e-10
 uk-eu-1995,t1know,238,238,0,0,0,0,FALSE,0,0,1e-10
 uk-eu-1995,t1knowr,238,238,0,0,0,0,FALSE,0,0,1e-10
 uk-eu-1995,t1knowcor,238,238,0,0,0,0,FALSE,0,0,1e-10
-uk-eu-1995,grpgain,238,220,0,0,0,0,FALSE,0,6.106226635438361e-16,1e-10
+uk-eu-1995,grpgain,238,220,18,0,0,18,FALSE,0,6.106226635438361e-16,1e-10
 uk-eu-1995,t2know,238,238,0,0,0,0,FALSE,0,0,1e-10
 uk-eu-1995,ppage,238,237,0,0,0,0,FALSE,0,0,1e-10
 uk-eu-1995,educ4,238,230,0,0,0,0,FALSE,0,0,1e-10
@@ -33,7 +33,7 @@ uk-eu-1995,t12knowcor,238,0,0,0,0,0,FALSE,0,0,1e-10
 uk-eu-1995,attextreme2,238,0,0,0,0,0,FALSE,0,0,1e-10
 uk-eu-1995,length,238,0,0,0,0,0,FALSE,0,0,1e-10
 uk-eu-1995,timebtw,238,0,0,0,0,0,FALSE,0,0,1e-10
-uk-eu-1995,grpgainr,238,220,0,0,0,0,FALSE,0,6.106226635438361e-16,1e-10
+uk-eu-1995,grpgainr,238,220,18,0,0,18,FALSE,0,6.106226635438361e-16,1e-10
 uk-eu-1995,t1knowrcor,238,238,0,0,0,0,FALSE,0,0,1e-10
 uk-eu-1995,t2knowr,238,238,0,0,0,0,FALSE,0,0,1e-10
 uk-eu-1995,pollname,238,238,0,0,0,0,FALSE,0,0,1e-10
@@ -60,7 +60,7 @@ uk-eu-1995,knowgain,238,238,0,0,0,0,FALSE,0,1.1102230246251565e-16,1e-10
 uk-eu-1995,knowgain2,238,238,0,0,0,0,FALSE,0,1.1102230246251565e-16,1e-10
 uk-eu-1995,t2knowlevel,238,238,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 uk-eu-1995,logpk,238,238,0,0,0,0,FALSE,0,1.7763568394002505e-15,1e-10
-uk-eu-1995,loggain,238,220,0,0,0,0,FALSE,0,4.884981308350689e-15,1e-10
+uk-eu-1995,loggain,238,220,18,0,0,18,FALSE,0,4.884981308350689e-15,1e-10
 uk-eu-1995,tobitpk,238,238,0,0,0,0,FALSE,0,0,1e-10
 uk-eu-1995,meant1knowr,238,238,0,0,0,0,FALSE,0,5.551115123125783e-16,1e-10
 uk-eu-1995,meant1knowrcor,238,238,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
@@ -372,21 +372,21 @@ uk-health-1998,t1knowlevel,230,230,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 uk-health-1998,numitems,230,230,0,0,0,0,FALSE,0,0,1e-10
 uk-health-1998,pollgroup,230,230,0,0,0,0,FALSE,0,0,1e-10
 uk-health-1998,groupsize,230,230,0,0,0,0,FALSE,0,0,1e-10
-uk-health-1998,avgsd,230,230,0,230,0,230,FALSE,0,0.02382527580569932,1e-10
+uk-health-1998,avgsd,230,230,0,230,0,230,FALSE,0,0.02219079498744181,1e-10
 uk-health-1998,numindices,230,230,0,0,0,0,FALSE,0,0,1e-10
-uk-health-1998,genvar,230,230,0,230,0,230,FALSE,0,0.011186188241474854,1e-10
+uk-health-1998,genvar,230,230,0,230,0,230,FALSE,0,0.0386410313582177,1e-10
 uk-health-1998,readbrief,230,0,0,0,0,0,FALSE,0,0,1e-10
 uk-health-1998,t1know,230,230,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 uk-health-1998,t1knowr,230,230,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 uk-health-1998,t1knowcor,230,230,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
-uk-health-1998,grpgain,230,218,0,0,0,0,FALSE,0,5.551115123125783e-16,1e-10
+uk-health-1998,grpgain,230,218,12,0,0,12,FALSE,0,5.551115123125783e-16,1e-10
 uk-health-1998,t2know,230,230,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 uk-health-1998,ppage,230,230,0,0,0,0,FALSE,0,0,1e-10
 uk-health-1998,educ4,230,228,0,0,0,0,FALSE,0,0,1e-10
 uk-health-1998,minority,230,230,0,0,0,0,FALSE,0,0,1e-10
 uk-health-1998,hhincome,230,206,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 uk-health-1998,female,230,230,0,0,0,0,FALSE,0,0,1e-10
-uk-health-1998,attextreme,230,230,0,203,0,203,FALSE,0,0.14285714285714324,1e-10
+uk-health-1998,attextreme,230,230,0,206,0,206,FALSE,0,0.14285714285714324,1e-10
 uk-health-1998,highinc,230,206,0,0,0,0,FALSE,0,0,1e-10
 uk-health-1998,t1polint,230,0,0,0,0,0,FALSE,0,0,1e-10
 uk-health-1998,avgsd2,230,0,0,0,0,0,FALSE,0,0,1e-10
@@ -397,7 +397,7 @@ uk-health-1998,t12knowcor,230,0,0,0,0,0,FALSE,0,0,1e-10
 uk-health-1998,attextreme2,230,0,0,0,0,0,FALSE,0,0,1e-10
 uk-health-1998,length,230,0,0,0,0,0,FALSE,0,0,1e-10
 uk-health-1998,timebtw,230,0,0,0,0,0,FALSE,0,0,1e-10
-uk-health-1998,grpgainr,230,218,0,0,0,0,FALSE,0,5.551115123125783e-16,1e-10
+uk-health-1998,grpgainr,230,218,12,0,0,12,FALSE,0,5.551115123125783e-16,1e-10
 uk-health-1998,t1knowrcor,230,230,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 uk-health-1998,t2knowr,230,230,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 uk-health-1998,pollname,230,230,0,0,0,0,FALSE,0,0,1e-10
@@ -411,7 +411,7 @@ uk-health-1998,sdeduc,230,230,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
 uk-health-1998,meaned,230,230,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
 uk-health-1998,meanage,230,230,0,0,0,0,FALSE,0,4.263256414560601e-14,1e-10
 uk-health-1998,phighinc,230,230,0,230,0,230,FALSE,0,0.7142857142857141,1e-10
-uk-health-1998,meanxtreme,230,230,0,230,0,230,FALSE,0,0.05929701426024939,1e-10
+uk-health-1998,meanxtreme,230,230,0,230,0,230,FALSE,0,0.06464460784313708,1e-10
 uk-health-1998,pfemale_ind,230,230,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 uk-health-1998,entropy,230,230,0,42,0,42,FALSE,0,1.5485806065228556,1e-10
 uk-health-1998,meant1know,230,230,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
@@ -424,7 +424,7 @@ uk-health-1998,knowgain,230,230,0,0,0,0,FALSE,0,3.885780586188048e-16,1e-10
 uk-health-1998,knowgain2,230,230,0,0,0,0,FALSE,0,3.885780586188048e-16,1e-10
 uk-health-1998,t2knowlevel,230,230,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 uk-health-1998,logpk,230,230,0,0,0,0,FALSE,0,4.884981308350689e-15,1e-10
-uk-health-1998,loggain,230,218,0,0,0,0,FALSE,0,4.884981308350689e-15,1e-10
+uk-health-1998,loggain,230,218,12,0,0,12,FALSE,0,4.884981308350689e-15,1e-10
 uk-health-1998,tobitpk,230,230,0,0,0,0,FALSE,0,0,1e-10
 uk-health-1998,meant1knowr,230,230,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 uk-health-1998,meant1knowrcor,230,230,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
@@ -611,8 +611,8 @@ uk-health-1998,ukhealth.t1ctexpt,230,225,0,0,0,0,FALSE,0,3.3306690738754696e-16,
 uk-health-1998,ukhealth.t1pritre,230,224,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 uk-health-1998,ukhealth.t1severi,230,204,0,0,0,0,FALSE,0,0,1e-10
 uk-health-1998,ukhealth.t1preven,230,212,0,0,0,0,FALSE,0,0,1e-10
-uk-health-1998,ukhealth.t1dispub,230,215,0,0,0,0,FALSE,0,0,1e-10
-uk-health-1998,ukhealth.t1avgdis,230,216,0,0,0,0,FALSE,0,0,1e-10
+uk-health-1998,ukhealth.t1dispub,230,215,0,126,0,126,FALSE,0,1,1e-10
+uk-health-1998,ukhealth.t1avgdis,230,216,0,5,0,5,FALSE,0,1,1e-10
 uk-health-1998,ukhealth.t1moresa,230,223,0,0,0,0,FALSE,0,0,1e-10
 uk-health-1998,ukhealth.t2payhlt,230,217,0,0,0,0,FALSE,0,0,1e-10
 uk-health-1998,ukhealth.t2poora,230,218,0,0,0,0,FALSE,0,0,1e-10
@@ -622,8 +622,8 @@ uk-health-1998,ukhealth.t2ctexpt,230,221,0,0,0,0,FALSE,0,3.3306690738754696e-16,
 uk-health-1998,ukhealth.t2pritre,230,217,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 uk-health-1998,ukhealth.t2severi,230,204,0,196,0,196,FALSE,0,0.25,1e-10
 uk-health-1998,ukhealth.t2preven,230,214,0,0,0,0,FALSE,0,0,1e-10
-uk-health-1998,ukhealth.t2dispub,230,200,0,0,0,0,FALSE,0,0,1e-10
-uk-health-1998,ukhealth.t2avgdis,230,218,0,0,0,0,FALSE,0,0,1e-10
+uk-health-1998,ukhealth.t2dispub,230,200,0,93,0,93,FALSE,0,1,1e-10
+uk-health-1998,ukhealth.t2avgdis,230,218,0,8,0,8,FALSE,0,1,1e-10
 uk-health-1998,ukhealth.t2moresa,230,217,0,0,0,0,FALSE,0,0,1e-10
 uk-health-1998,wtu.t1att1,230,0,0,0,0,0,FALSE,0,0,1e-10
 uk-health-1998,wtu.t1att3,230,0,0,0,0,0,FALSE,0,0,1e-10
@@ -743,7 +743,7 @@ uk-monarchy-1996,readbrief,258,0,0,0,0,0,FALSE,0,0,1e-10
 uk-monarchy-1996,t1know,258,258,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 uk-monarchy-1996,t1knowr,258,258,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 uk-monarchy-1996,t1knowcor,258,258,0,30,0,30,FALSE,0,0.1111111111111116,1e-10
-uk-monarchy-1996,grpgain,258,254,0,62,0,62,FALSE,0,0.17647058823529416,1e-10
+uk-monarchy-1996,grpgain,258,254,4,62,0,66,FALSE,0,0.17647058823529416,1e-10
 uk-monarchy-1996,t2know,258,258,0,55,0,55,FALSE,0,0.1111111111111116,1e-10
 uk-monarchy-1996,ppage,258,258,0,0,0,0,FALSE,0,0,1e-10
 uk-monarchy-1996,educ4,258,258,0,0,0,0,FALSE,0,0,1e-10
@@ -761,7 +761,7 @@ uk-monarchy-1996,t12knowcor,258,0,0,0,0,0,FALSE,0,0,1e-10
 uk-monarchy-1996,attextreme2,258,0,0,0,0,0,FALSE,0,0,1e-10
 uk-monarchy-1996,length,258,0,0,0,0,0,FALSE,0,0,1e-10
 uk-monarchy-1996,timebtw,258,0,0,0,0,0,FALSE,0,0,1e-10
-uk-monarchy-1996,grpgainr,258,254,0,62,0,62,FALSE,0,0.17647058823529416,1e-10
+uk-monarchy-1996,grpgainr,258,254,4,62,0,66,FALSE,0,0.17647058823529416,1e-10
 uk-monarchy-1996,t1knowrcor,258,258,0,30,0,30,FALSE,0,0.1111111111111116,1e-10
 uk-monarchy-1996,t2knowr,258,258,0,55,0,55,FALSE,0,0.1111111111111116,1e-10
 uk-monarchy-1996,pollname,258,258,0,0,0,0,FALSE,0,0,1e-10
@@ -788,7 +788,7 @@ uk-monarchy-1996,knowgain,258,258,0,55,0,55,FALSE,0,0.1111111111111116,1e-10
 uk-monarchy-1996,knowgain2,258,258,0,25,0,25,FALSE,0,0.1111111111111116,1e-10
 uk-monarchy-1996,t2knowlevel,258,258,0,258,0,258,FALSE,0,0.0021533161068040263,1e-10
 uk-monarchy-1996,logpk,258,258,0,30,0,30,FALSE,0,7.013115794639962,1e-10
-uk-monarchy-1996,loggain,258,254,0,62,0,62,FALSE,0,0.34830669426821603,1e-10
+uk-monarchy-1996,loggain,258,254,4,62,0,66,FALSE,0,0.34830669426821603,1e-10
 uk-monarchy-1996,tobitpk,258,258,0,3,0,3,FALSE,0,1,1e-10
 uk-monarchy-1996,meant1knowr,258,258,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 uk-monarchy-1996,meant1knowrcor,258,258,0,243,0,243,FALSE,0,0.0350877192982455,1e-10
@@ -1471,7 +1471,7 @@ australia-republic-1999,readbrief,347,0,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,t1know,347,347,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 australia-republic-1999,t1knowr,347,0,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,t1knowcor,347,347,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
-australia-republic-1999,grpgain,347,346,1,346,0,347,FALSE,0,5.234848484848487,1e-10
+australia-republic-1999,grpgain,347,347,0,347,0,347,FALSE,0,Inf,1e-10
 australia-republic-1999,t2know,347,347,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 australia-republic-1999,ppage,347,344,3,0,0,3,FALSE,0,0,1e-10
 australia-republic-1999,educ4,347,347,0,0,0,0,FALSE,0,0,1e-10
@@ -1516,7 +1516,7 @@ australia-republic-1999,knowgain,347,347,0,0,0,0,FALSE,0,3.885780586188048e-16,1
 australia-republic-1999,knowgain2,347,347,0,0,0,0,FALSE,0,3.885780586188048e-16,1e-10
 australia-republic-1999,t2knowlevel,347,347,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 australia-republic-1999,logpk,347,347,0,0,0,0,FALSE,0,4.884981308350689e-15,1e-10
-australia-republic-1999,loggain,347,346,1,346,0,347,FALSE,0,8.133468069944476,1e-10
+australia-republic-1999,loggain,347,347,0,347,0,347,FALSE,0,Inf,1e-10
 australia-republic-1999,tobitpk,347,347,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,meant1knowr,347,0,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,meant1knowrcor,347,0,0,0,0,0,FALSE,0,0,1e-10
@@ -1835,7 +1835,7 @@ uk-crime-1994,readbrief,299,0,0,0,0,0,FALSE,0,0,1e-10
 uk-crime-1994,t1know,299,299,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 uk-crime-1994,t1knowr,299,0,0,0,0,0,FALSE,0,0,1e-10
 uk-crime-1994,t1knowcor,299,299,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
-uk-crime-1994,grpgain,299,296,0,0,0,0,FALSE,0,6.661338147750939e-16,1e-10
+uk-crime-1994,grpgain,299,296,3,0,0,3,FALSE,0,6.661338147750939e-16,1e-10
 uk-crime-1994,t2know,299,299,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 uk-crime-1994,ppage,299,299,0,0,0,0,FALSE,0,0,1e-10
 uk-crime-1994,educ4,299,299,0,0,0,0,FALSE,0,0,1e-10
@@ -1880,7 +1880,7 @@ uk-crime-1994,knowgain,299,299,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 uk-crime-1994,knowgain2,299,299,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 uk-crime-1994,t2knowlevel,299,299,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 uk-crime-1994,logpk,299,299,0,0,0,0,FALSE,0,3.552713678800501e-15,1e-10
-uk-crime-1994,loggain,299,296,0,0,0,0,FALSE,0,4.884981308350689e-15,1e-10
+uk-crime-1994,loggain,299,296,3,0,0,3,FALSE,0,4.884981308350689e-15,1e-10
 uk-crime-1994,tobitpk,299,299,0,0,0,0,FALSE,0,0,1e-10
 uk-crime-1994,meant1knowr,299,0,0,0,0,0,FALSE,0,0,1e-10
 uk-crime-1994,meant1knowrcor,299,0,0,0,0,0,FALSE,0,0,1e-10
@@ -2927,7 +2927,7 @@ zeguo-2005,readbrief,233,0,0,0,0,0,FALSE,0,0,1e-10
 zeguo-2005,t1know,233,233,0,0,0,0,FALSE,0,0,1e-10
 zeguo-2005,t1knowr,233,233,0,0,0,0,FALSE,0,0,1e-10
 zeguo-2005,t1knowcor,233,233,0,0,0,0,FALSE,0,0,1e-10
-zeguo-2005,grpgain,233,226,0,0,0,0,FALSE,0,6.106226635438361e-16,1e-10
+zeguo-2005,grpgain,233,226,7,0,0,7,FALSE,0,6.106226635438361e-16,1e-10
 zeguo-2005,t2know,233,233,0,0,0,0,FALSE,0,0,1e-10
 zeguo-2005,ppage,233,214,0,1,0,1,FALSE,0,32,1e-10
 zeguo-2005,educ4,233,205,0,0,0,0,FALSE,0,0,1e-10
@@ -2945,7 +2945,7 @@ zeguo-2005,t12knowcor,233,0,0,0,0,0,FALSE,0,0,1e-10
 zeguo-2005,attextreme2,233,0,0,0,0,0,FALSE,0,0,1e-10
 zeguo-2005,length,233,233,0,0,0,0,FALSE,0,0,1e-10
 zeguo-2005,timebtw,233,233,0,0,0,0,FALSE,0,0,1e-10
-zeguo-2005,grpgainr,233,226,0,0,0,0,FALSE,0,6.106226635438361e-16,1e-10
+zeguo-2005,grpgainr,233,226,7,0,0,7,FALSE,0,6.106226635438361e-16,1e-10
 zeguo-2005,t1knowrcor,233,233,0,0,0,0,FALSE,0,0,1e-10
 zeguo-2005,t2knowr,233,233,0,0,0,0,FALSE,0,0,1e-10
 zeguo-2005,pollname,233,233,0,0,0,0,FALSE,0,0,1e-10
@@ -2972,7 +2972,7 @@ zeguo-2005,knowgain,233,233,0,0,0,0,FALSE,0,0,1e-10
 zeguo-2005,knowgain2,233,233,0,0,0,0,FALSE,0,0,1e-10
 zeguo-2005,t2knowlevel,233,233,0,0,0,0,FALSE,0,5.551115123125783e-17,1e-10
 zeguo-2005,logpk,233,233,0,0,0,0,FALSE,0,1.7763568394002505e-15,1e-10
-zeguo-2005,loggain,233,226,0,0,0,0,FALSE,0,4.884981308350689e-15,1e-10
+zeguo-2005,loggain,233,226,7,0,0,7,FALSE,0,4.884981308350689e-15,1e-10
 zeguo-2005,tobitpk,233,233,0,0,0,0,FALSE,0,0,1e-10
 zeguo-2005,meant1knowr,233,233,0,0,0,0,FALSE,0,3.608224830031759e-16,1e-10
 zeguo-2005,meant1knowrcor,233,233,0,0,0,0,FALSE,0,4.163336342344337e-16,1e-10
@@ -3291,7 +3291,7 @@ bulgaria-crime-2002,readbrief,278,0,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,t1know,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 bulgaria-crime-2002,t1knowr,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 bulgaria-crime-2002,t1knowcor,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
-bulgaria-crime-2002,grpgain,278,277,0,0,0,0,FALSE,0,5.551115123125783e-16,1e-10
+bulgaria-crime-2002,grpgain,278,277,1,0,0,1,FALSE,0,5.551115123125783e-16,1e-10
 bulgaria-crime-2002,t2know,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 bulgaria-crime-2002,ppage,278,278,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,educ4,278,277,0,0,0,0,FALSE,0,0,1e-10
@@ -3309,7 +3309,7 @@ bulgaria-crime-2002,t12knowcor,278,0,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,attextreme2,278,0,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,length,278,0,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,timebtw,278,0,0,0,0,0,FALSE,0,0,1e-10
-bulgaria-crime-2002,grpgainr,278,277,0,0,0,0,FALSE,0,5.551115123125783e-16,1e-10
+bulgaria-crime-2002,grpgainr,278,277,1,0,0,1,FALSE,0,5.551115123125783e-16,1e-10
 bulgaria-crime-2002,t1knowrcor,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 bulgaria-crime-2002,t2knowr,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 bulgaria-crime-2002,pollname,278,278,0,0,0,0,FALSE,0,0,1e-10
@@ -3336,7 +3336,7 @@ bulgaria-crime-2002,knowgain,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 bulgaria-crime-2002,knowgain2,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 bulgaria-crime-2002,t2knowlevel,278,278,0,0,0,0,FALSE,0,2.220446049250313e-16,1e-10
 bulgaria-crime-2002,logpk,278,278,0,0,0,0,FALSE,0,3.552713678800501e-15,1e-10
-bulgaria-crime-2002,loggain,278,277,0,0,0,0,FALSE,0,4.884981308350689e-15,1e-10
+bulgaria-crime-2002,loggain,278,277,1,0,0,1,FALSE,0,4.884981308350689e-15,1e-10
 bulgaria-crime-2002,tobitpk,278,278,0,0,0,0,FALSE,0,0,1e-10
 bulgaria-crime-2002,meant1knowr,278,278,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 bulgaria-crime-2002,meant1knowrcor,278,278,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
@@ -4030,7 +4030,7 @@ new-haven-2004,attextreme,132,100,32,7,0,39,FALSE,0,0.016666680574417392,1e-10
 new-haven-2004,highinc,132,107,0,11,0,11,FALSE,0,0,1e-10
 new-haven-2004,t1polint,132,0,0,0,0,0,FALSE,0,0,1e-10
 new-haven-2004,avgsd2,132,132,0,96,0,96,FALSE,0,0.08529508113861067,1e-10
-new-haven-2004,grpgain2,132,131,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
+new-haven-2004,grpgain2,132,131,1,0,0,1,FALSE,0,4.996003610813204e-16,1e-10
 new-haven-2004,t1knowcor2,132,132,0,0,0,0,FALSE,0,0,1e-10
 new-haven-2004,t12know,132,132,0,0,0,0,FALSE,0,0,1e-10
 new-haven-2004,t12knowcor,132,132,0,0,0,0,FALSE,0,0,1e-10
@@ -5111,7 +5111,7 @@ btp-general-election-2004,readbrief,248,0,0,0,0,0,FALSE,0,0,1e-10
 btp-general-election-2004,t1know,248,246,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-general-election-2004,t1knowr,248,246,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-general-election-2004,t1knowcor,248,246,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
-btp-general-election-2004,grpgain,248,199,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
+btp-general-election-2004,grpgain,248,199,47,0,0,47,FALSE,0,4.996003610813204e-16,1e-10
 btp-general-election-2004,t2know,248,246,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-general-election-2004,ppage,248,246,0,0,0,0,FALSE,0,0,1e-10
 btp-general-election-2004,educ4,248,246,0,0,0,0,FALSE,0,0,1e-10
@@ -5129,7 +5129,7 @@ btp-general-election-2004,t12knowcor,248,0,0,0,0,0,FALSE,0,0,1e-10
 btp-general-election-2004,attextreme2,248,0,0,0,0,0,FALSE,0,0,1e-10
 btp-general-election-2004,length,248,0,0,0,0,0,FALSE,0,0,1e-10
 btp-general-election-2004,timebtw,248,0,0,0,0,0,FALSE,0,0,1e-10
-btp-general-election-2004,grpgainr,248,199,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
+btp-general-election-2004,grpgainr,248,199,47,0,0,47,FALSE,0,4.996003610813204e-16,1e-10
 btp-general-election-2004,t1knowrcor,248,246,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-general-election-2004,t2knowr,248,246,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-general-election-2004,pollname,248,246,0,0,0,0,FALSE,0,0,1e-10
@@ -5156,7 +5156,7 @@ btp-general-election-2004,knowgain,248,246,0,0,0,0,FALSE,0,4.440892098500626e-16
 btp-general-election-2004,knowgain2,248,246,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-general-election-2004,t2knowlevel,248,246,0,246,0,246,FALSE,0,0.08916103046169221,1e-10
 btp-general-election-2004,logpk,248,246,0,0,0,0,FALSE,0,3.552713678800501e-15,1e-10
-btp-general-election-2004,loggain,248,199,0,0,0,0,FALSE,0,3.9968028886505635e-15,1e-10
+btp-general-election-2004,loggain,248,199,47,0,0,47,FALSE,0,3.9968028886505635e-15,1e-10
 btp-general-election-2004,tobitpk,248,246,0,0,0,0,FALSE,0,0,1e-10
 btp-general-election-2004,meant1knowr,248,246,0,152,0,152,FALSE,0,0.11513158068747109,1e-10
 btp-general-election-2004,meant1knowrcor,248,246,0,220,0,220,FALSE,0,0.30000000372529056,1e-10
@@ -5475,7 +5475,7 @@ btp-presidential-primaries-2004,readbrief,217,0,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,t1know,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,t1knowr,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,t1knowcor,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
-btp-presidential-primaries-2004,grpgain,217,207,0,188,0,188,FALSE,0,0.9333334376414679,1e-10
+btp-presidential-primaries-2004,grpgain,217,207,10,188,0,198,FALSE,0,0.9333334376414679,1e-10
 btp-presidential-primaries-2004,t2know,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,ppage,217,217,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,educ4,217,217,0,0,0,0,FALSE,0,0,1e-10
@@ -5493,7 +5493,7 @@ btp-presidential-primaries-2004,t12knowcor,217,0,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,attextreme2,217,0,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,length,217,0,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,timebtw,217,0,0,0,0,0,FALSE,0,0,1e-10
-btp-presidential-primaries-2004,grpgainr,217,207,0,188,0,188,FALSE,0,0.9333334376414679,1e-10
+btp-presidential-primaries-2004,grpgainr,217,207,10,188,0,198,FALSE,0,0.9333334376414679,1e-10
 btp-presidential-primaries-2004,t1knowrcor,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,t2knowr,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,pollname,217,217,0,0,0,0,FALSE,0,0,1e-10
@@ -5520,7 +5520,7 @@ btp-presidential-primaries-2004,knowgain,217,217,0,0,0,0,FALSE,0,4.4408920985006
 btp-presidential-primaries-2004,knowgain2,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,t2knowlevel,217,217,0,0,0,0,FALSE,0,2.220446049250313e-16,1e-10
 btp-presidential-primaries-2004,logpk,217,217,0,0,0,0,FALSE,0,4.6629367034256575e-15,1e-10
-btp-presidential-primaries-2004,loggain,217,207,0,188,0,188,FALSE,0,9.141347612247937,1e-10
+btp-presidential-primaries-2004,loggain,217,207,10,188,0,198,FALSE,0,9.141347612247937,1e-10
 btp-presidential-primaries-2004,tobitpk,217,217,0,0,0,0,FALSE,0,0,1e-10
 btp-presidential-primaries-2004,meant1knowr,217,217,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 btp-presidential-primaries-2004,meant1knowrcor,217,217,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
@@ -6567,7 +6567,7 @@ wtu-1996,readbrief,230,0,0,0,0,0,FALSE,0,0,1e-10
 wtu-1996,t1know,230,230,0,0,0,0,FALSE,0,0,1e-10
 wtu-1996,t1knowr,230,230,0,0,0,0,FALSE,0,0,1e-10
 wtu-1996,t1knowcor,230,230,0,0,0,0,FALSE,0,0,1e-10
-wtu-1996,grpgain,230,228,0,0,0,0,FALSE,0,5.551115123125783e-16,1e-10
+wtu-1996,grpgain,230,228,2,0,0,2,FALSE,0,5.551115123125783e-16,1e-10
 wtu-1996,t2know,230,230,0,0,0,0,FALSE,0,0,1e-10
 wtu-1996,ppage,230,230,0,0,0,0,FALSE,0,0,1e-10
 wtu-1996,educ4,230,229,0,0,0,0,FALSE,0,0,1e-10
@@ -6585,7 +6585,7 @@ wtu-1996,t12knowcor,230,0,0,0,0,0,FALSE,0,0,1e-10
 wtu-1996,attextreme2,230,0,0,0,0,0,FALSE,0,0,1e-10
 wtu-1996,length,230,0,0,0,0,0,FALSE,0,0,1e-10
 wtu-1996,timebtw,230,0,0,0,0,0,FALSE,0,0,1e-10
-wtu-1996,grpgainr,230,228,0,0,0,0,FALSE,0,5.551115123125783e-16,1e-10
+wtu-1996,grpgainr,230,228,2,0,0,2,FALSE,0,5.551115123125783e-16,1e-10
 wtu-1996,t1knowrcor,230,230,0,0,0,0,FALSE,0,0,1e-10
 wtu-1996,t2knowr,230,230,0,0,0,0,FALSE,0,0,1e-10
 wtu-1996,pollname,230,230,0,0,0,0,FALSE,0,0,1e-10
@@ -6612,7 +6612,7 @@ wtu-1996,knowgain,230,230,0,0,0,0,FALSE,0,1.1102230246251565e-16,1e-10
 wtu-1996,knowgain2,230,230,0,0,0,0,FALSE,0,1.1102230246251565e-16,1e-10
 wtu-1996,t2knowlevel,230,230,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 wtu-1996,logpk,230,230,0,0,0,0,FALSE,0,1.7763568394002505e-15,1e-10
-wtu-1996,loggain,230,228,0,0,0,0,FALSE,0,5.3290705182007514e-15,1e-10
+wtu-1996,loggain,230,228,2,0,0,2,FALSE,0,5.3290705182007514e-15,1e-10
 wtu-1996,tobitpk,230,230,0,0,0,0,FALSE,0,0,1e-10
 wtu-1996,meant1knowr,230,230,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
 wtu-1996,meant1knowrcor,230,230,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10
@@ -7295,7 +7295,7 @@ swepco-1996,readbrief,232,0,0,0,0,0,FALSE,0,0,1e-10
 swepco-1996,t1know,232,232,0,0,0,0,FALSE,0,0,1e-10
 swepco-1996,t1knowr,232,232,0,0,0,0,FALSE,0,0,1e-10
 swepco-1996,t1knowcor,232,232,0,0,0,0,FALSE,0,0,1e-10
-swepco-1996,grpgain,232,231,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
+swepco-1996,grpgain,232,231,1,0,0,1,FALSE,0,4.996003610813204e-16,1e-10
 swepco-1996,t2know,232,232,0,0,0,0,FALSE,0,0,1e-10
 swepco-1996,ppage,232,232,0,0,0,0,FALSE,0,0,1e-10
 swepco-1996,educ4,232,231,0,0,0,0,FALSE,0,0,1e-10
@@ -7313,7 +7313,7 @@ swepco-1996,t12knowcor,232,0,0,0,0,0,FALSE,0,0,1e-10
 swepco-1996,attextreme2,232,0,0,0,0,0,FALSE,0,0,1e-10
 swepco-1996,length,232,0,0,0,0,0,FALSE,0,0,1e-10
 swepco-1996,timebtw,232,0,0,0,0,0,FALSE,0,0,1e-10
-swepco-1996,grpgainr,232,231,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
+swepco-1996,grpgainr,232,231,1,0,0,1,FALSE,0,4.996003610813204e-16,1e-10
 swepco-1996,t1knowrcor,232,232,0,0,0,0,FALSE,0,0,1e-10
 swepco-1996,t2knowr,232,232,0,0,0,0,FALSE,0,0,1e-10
 swepco-1996,pollname,232,232,0,0,0,0,FALSE,0,0,1e-10
@@ -7340,7 +7340,7 @@ swepco-1996,knowgain,232,232,0,0,0,0,FALSE,0,1.1102230246251565e-16,1e-10
 swepco-1996,knowgain2,232,232,0,0,0,0,FALSE,0,1.1102230246251565e-16,1e-10
 swepco-1996,t2knowlevel,232,232,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
 swepco-1996,logpk,232,232,0,0,0,0,FALSE,0,1.7763568394002505e-15,1e-10
-swepco-1996,loggain,232,231,0,0,0,0,FALSE,0,5.10702591327572e-15,1e-10
+swepco-1996,loggain,232,231,1,0,0,1,FALSE,0,5.10702591327572e-15,1e-10
 swepco-1996,tobitpk,232,232,0,0,0,0,FALSE,0,0,1e-10
 swepco-1996,meant1knowr,232,232,0,0,0,0,FALSE,0,4.996003610813204e-16,1e-10
 swepco-1996,meant1knowrcor,232,232,0,0,0,0,FALSE,0,4.440892098500626e-16,1e-10

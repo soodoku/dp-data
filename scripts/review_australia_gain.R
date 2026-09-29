@@ -22,12 +22,18 @@ historical_gain <- gain[(corrected$source_row - 1L) %% length(gain) + 1L] /
 historical_log <- historical_log_score(historical_gain)
 positions <- match(corrected$source_row, survey$source_row[selected])
 previous_gain <- gain[positions] / (1 - corrected$t1knowcor)
+ceiling <- joint[positions] == 1
+denominator_only_gain <- corrected$grpgain
+denominator_only_gain[ceiling] <- NA_real_
 stopifnot(
   ncol(before) == 12L, ncol(after) == 12L,
   all(corrected$numitems == 12),
-  isTRUE(all.equal(corrected$grpgain, previous_gain * 11 / 12,
+  isTRUE(all.equal(corrected$grpgain[!ceiling],
+                   previous_gain[!ceiling] * 11 / 12,
                    tolerance = 1e-10)),
-  sum(is.na(corrected$grpgain)) == 1L,
+  sum(is.na(denominator_only_gain)) == 1L,
+  sum(ceiling) == 1L, all(corrected$grpgain[ceiling] == 0),
+  !anyNA(corrected$grpgain),
   sum(abs(corrected$grpgain - previous_gain) > 1e-10, na.rm = TRUE) == 346L
 )
 
@@ -51,9 +57,14 @@ fields <- c("grpgain", "loggain", "numitems")
 values <- purrr::map_dfr(fields, function(name) {
   original <- switch(name, grpgain = historical_gain,
                      loggain = historical_log, numitems = rep(11, 347L))
+  denominator_only <- switch(name,
+    grpgain = denominator_only_gain,
+    loggain = historical_log_score(denominator_only_gain),
+    numitems = corrected$numitems
+  )
   tibble::tibble(
     legacy_field = name, caseid = corrected$caseid,
-    historical_value = original, approved_value = corrected[[name]]
+    historical_value = original, approved_value = denominator_only
   )
 })
 path <- file.path(directory, "approved_values.csv")
@@ -93,9 +104,9 @@ readr::write_csv(dplyr::rows_upsert(
 ), summary_path)
 count_values <- tibble::tibble(
   caseid = corrected$caseid, source_row = corrected$source_row,
-  previous_grpgain = previous_gain, corrected_grpgain = corrected$grpgain,
+  previous_grpgain = previous_gain, corrected_grpgain = denominator_only_gain,
   previous_loggain = historical_log_score(previous_gain),
-  corrected_loggain = corrected$loggain,
+  corrected_loggain = historical_log_score(denominator_only_gain),
   previous_numitems = 11L, corrected_numitems = corrected$numitems
 )
 readr::write_csv(count_values, file.path(directory, "item_count_values.csv"))

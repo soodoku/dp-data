@@ -115,7 +115,8 @@ historical_fractional_gain <- function(corrected, group) {
     historical_group_summary(value, group) * size / (size - 1)
   })
   numerator <- rowSums((corrected == 0) * peer)
-  numerator / (ncol(corrected) * (1 - rowMeans(corrected)))
+  gain <- numerator / (ncol(corrected) * (1 - rowMeans(corrected)))
+  apply_peer_opportunity_ceiling(gain, corrected, group)
 }
 
 build_core_derived <- function(survey, values, poll_id) {

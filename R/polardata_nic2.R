@@ -28,7 +28,9 @@ build_nic2_derived <- function(survey, values) {
   for (item in term_order) {
     raw_gain <- as_historical_float(raw_gain + terms[, item])
   }
-  result$grpgain <- raw_gain / (1 - values$t1knowcor)
+  result$grpgain <- apply_peer_opportunity_ceiling(
+    raw_gain / (1 - values$t1knowcor), joint, group
+  )
   result$grpgain2 <- NA_real_
   result$grpgainr <- result$grpgain
   result$t1knowlevel <- as_historical_float(mean(

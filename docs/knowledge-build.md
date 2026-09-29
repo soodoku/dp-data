@@ -60,6 +60,24 @@ records their license as not specified.
 
 ## Selection, scoring, and missing values
 
+Numeric missing-value sentinels are excluded from numerical arithmetic before
+scoring or calibration. Their substantive meaning comes from the source
+instrument: an observed quiz response coded don't know can score incorrect,
+while an unavailable component stays missing. An absent questionnaire has no
+score; individual blanks in a completed questionnaire do not imply absence.
+Paired comparisons require both relevant interviews, without discarding earlier
+source records needed to study selection or attrition.
+
+The shared peer-learning measure represents opportunity to learn from other
+group members on items the respondent missed. It is zero when all scored items
+are correct, or when peers know none of the missed items. An absent interview,
+unavailable battery, or absent peer group remains missing. This convention is
+implemented centrally; the four legacy gain fields retain their source-specific
+batteries and timing. Typed measure names identify peer learning opportunity,
+not observed knowledge gain, and their scope is `leave_one_out`. Existing log
+outputs retain their 0.0001 floor. Definition version `peer-opportunity-v2`
+distinguishes the approved ceiling rule from the historical convention.
+
 UK Health uses all 230 source records. `serial_m` is the poll-specific respondent
 ID, `group` gives group membership, and `gender` codes 1/2 become female 0/1.
 The six factual responses are `sopha` through `sophf` at each wave. The answer
@@ -261,7 +279,7 @@ equal to `serial_a`, unique and nonmissing. The 22 attitude columns are doubles,
 exact historical names `ukhealth.t{1,2}{suffix}` and take values in [0, 1] or
 missing. Source wave suffixes 1 and 2 are retained. Their definitions are:
 
-| Suffix | Raw source stems, separately in each wave | Historical formula |
+| Suffix | Raw source stems, separately in each wave | Current formula |
 |---|---|---|
 | payhlt | payhlth | Three-category scaling; higher means individual payment |
 | poora | poora | Five-category scaling; higher means more priority to the poor |
@@ -269,10 +287,10 @@ missing. Source wave suffixes 1 and 2 are retained. Their definitions are:
 | hlthfu | chgp, chvis, chmeal, chstay, chamb | Available-item mean of five-category scores |
 | ctexpt | treata, cthart, ctnurs, ctbaby | Available-item mean of reversed five-category scores |
 | pritre | ctfert, cthosp, ctcosm | Available-item mean of reversed five-category scores |
-| severi | lista, severa | Scaled lista minus scaled severa, then empirical min–max scaling within each wave over all 230 source records with both answers |
+| severi | lista, severa | Scaled lista minus scaled severa; map its fixed possible range [-1,1] to [0,1] in both waves; require both answers |
 | preven | preva | Five-category scaling; higher means more priority to prevention |
-| dispub | ingova, inpuba | Available-item mean after mapping raw 1 and 3 to 1, raw 2 to 0.5 |
-| avgdis | ingpa, indoca | Same folded recode and available-item mean, for doctor input |
+| dispub | ingova, inpuba | Available-item mean after mapping none/some/all-or-most to 0/0.5/1 |
+| avgdis | ingpa, indoca | Same ordered recode and available-item mean, for doctor input |
 | moresa | say | Five-category scaling; higher means more patient say |
 
 Ordinary k-category scaling is `(raw - 1) / (k - 1)`; reversal is `1 - score`.
@@ -287,8 +305,9 @@ The builder reads original response fields from the public survey, not its store
 indices. The codebook and V6 index memo were consulted; their differences from the
 historical aggregate remain recorded under UKH-01–04. The documented severity
 direction is retained; the approved UKH-02/09 correction uses the same fixed
-scale in both waves and recomputes dependent summaries. The non-monotonic
-discretion map remains pending a separate decision. The supplied survey is already a merged
+scale in both waves and recomputes dependent summaries. The approved UKH-03/07
+correction orders government/public and doctor-input responses as 0/0.5/1.
+The supplied survey is already a merged
 participant file; reconstructing its earlier field-file merge remains unfinished.
 
 The comparison joins on unique `caseid` within dpnum 2 and requires the same 230

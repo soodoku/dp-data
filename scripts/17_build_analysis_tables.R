@@ -18,9 +18,10 @@ tables <- build_analysis_tables()
 directory <- project_path("output", "analysis")
 fs::dir_create(directory)
 manifest <- purrr::imap(tables, function(data, table_name) {
-  version <- if (table_name %in% c(
-    "analysis_phase_participants", "analysis_phase_scores"
-  )) "2" else "1"
+  version <- switch(table_name,
+    analysis_participants = "2", analysis_phase_participants = "3",
+    analysis_phase_scores = "2", "1"
+  )
   write_typed_export(data, table_name, directory, schema_version = version)
 }) |>
   purrr::list_rbind()

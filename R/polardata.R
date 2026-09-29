@@ -58,7 +58,7 @@ historical_group_gain <- function(corrected, group) {
   unknown <- 1 - corrected
   gain <- rowSums(unknown * peer_means) / rowSums(unknown)
   gain[is.nan(gain)] <- NA_real_
-  gain
+  apply_peer_opportunity_ceiling(gain, corrected, group)
 }
 
 health_polardata_knowledge <- function(result, survey) {

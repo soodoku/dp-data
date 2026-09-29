@@ -1,5 +1,33 @@
 approved_reference_values <- function(poll_id, field, caseid, historical,
                                       tolerance = 1e-10) {
+  approved <- approved_poll_reference_values(
+    poll_id, field, caseid, historical, tolerance
+  )
+  if (!field %in% c("grpgain", "grpgain2", "grpgainr", "loggain")) {
+    return(approved)
+  }
+  ceiling <- readr::read_csv(project_path(
+    "audit", "corrections", "shared-peer-opportunity", "approved_values.csv"
+  ), show_col_types = FALSE)
+  ceiling <- ceiling[ceiling$poll_id == poll_id &
+                       ceiling$legacy_field == field, ]
+  if (!nrow(ceiling)) return(approved)
+  stopifnot(!anyDuplicated(ceiling$caseid), !anyDuplicated(caseid))
+  positions <- match(ceiling$caseid, caseid)
+  stopifnot(!anyNA(positions), all(is.na(approved[positions])),
+            all(is.na(ceiling$previous_value)))
+  old <- historical[positions]
+  stopifnot(
+    identical(is.na(old), is.na(ceiling$historical_value)),
+    identical(is.infinite(old), is.infinite(ceiling$historical_value)),
+    all(abs(old - ceiling$historical_value) <= tolerance, na.rm = TRUE)
+  )
+  approved[positions] <- ceiling$approved_value
+  approved
+}
+
+approved_poll_reference_values <- function(poll_id, field, caseid, historical,
+                                           tolerance = 1e-10) {
   if (field %in% c("bettered", "highinc", "phighinc", "pfemale_ind")) {
     correction <- if (field == "pfemale_ind") {
       "shared-peer-composition"
@@ -61,6 +89,27 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
       all(abs(historical - approved$historical_value) <= tolerance,
         na.rm = TRUE
       )
+    )
+    return(approved$approved_value)
+  }
+  if (poll_id == "uk-health-1998" && field %in% c(
+    "ukhealth.t1dispub", "ukhealth.t2dispub",
+    "ukhealth.t1avgdis", "ukhealth.t2avgdis",
+    "attextreme", "meanxtreme", "avgsd", "genvar"
+  )) {
+    approved <- readr::read_csv(project_path(
+      "audit", "corrections", poll_id, "folded_input_approved_values.csv"
+    ), show_col_types = FALSE)
+    approved <- approved[approved$legacy_field == field, ]
+    stopifnot(
+      nrow(approved) == 230L, !anyDuplicated(approved$caseid),
+      !anyDuplicated(caseid), setequal(caseid, approved$caseid)
+    )
+    approved <- approved[match(caseid, approved$caseid), ]
+    stopifnot(
+      identical(is.na(historical), is.na(approved$historical_value)),
+      all(abs(historical - approved$historical_value) <= tolerance,
+          na.rm = TRUE)
     )
     return(approved$approved_value)
   }

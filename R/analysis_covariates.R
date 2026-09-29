@@ -1,3 +1,5 @@
+source(project_path("R", "respondent_normalization.R"))
+
 health_degree_status <- function(survey) {
   qualification <- as.numeric(survey$educb)
   stopifnot(
@@ -108,5 +110,87 @@ add_analysis_covariates <- function(participants) {
     stopifnot(!anyNA(source_rows), !anyDuplicated(survey$source_row))
     out$ba[health_rows] <- health_degree_status(survey)[source_rows]
   }
-  out
+  add_analysis_median_flags(out)
+}
+
+add_analysis_median_flags <- function(participants) {
+  definitions <- read_metadata("measure_definitions") |>
+    dplyr::filter(measure_id %in% c(
+      "bettered", "higher_education", "highinc", "high_income"
+    )) |>
+    dplyr::transmute(
+      poll_id, definition_id,
+      variable = dplyr::if_else(
+        measure_id %in% c("bettered", "higher_education"),
+        "education_above_median", "income_above_median"
+      )
+    )
+  stopifnot(!anyDuplicated(definitions[c("poll_id", "variable")]))
+  values <- arrow::read_parquet(project_path(
+    "output", "respondent", "respondent_measures.parquet"
+  )) |>
+    dplyr::inner_join(definitions,
+      by = c("poll_id", "definition_id"), relationship = "many-to-one"
+    )
+  stopifnot(all(is.na(values$value_numeric) | values$value_numeric %in% 0:1))
+  values <- values |>
+    dplyr::transmute(
+      poll_id, respondent_id, variable,
+      value = as.logical(value_numeric)
+    ) |>
+    tidyr::pivot_wider(names_from = "variable", values_from = "value")
+  people <- arrow::read_parquet(project_path(
+    "output", "respondent", "people.parquet"
+  )) |>
+    dplyr::select("poll_id", "source_row", "respondent_id")
+  stopifnot(!anyDuplicated(people[c("poll_id", "source_row")]))
+  cor <- participants |>
+    dplyr::filter(source_dataset == "cor_sood", poll_id %in% values$poll_id) |>
+    dplyr::select("poll_id", "source_dataset", "respondent_id", "source_row") |>
+    dplyr::left_join(
+      dplyr::rename(people, normalized_respondent_id = respondent_id),
+      by = c("poll_id", "source_row"), relationship = "one-to-one"
+    )
+  stopifnot(!anyNA(cor$normalized_respondent_id))
+  cor <- cor |>
+    dplyr::left_join(values,
+      by = c("poll_id", "normalized_respondent_id" = "respondent_id"),
+      relationship = "one-to-one"
+    ) |>
+    dplyr::select(-"source_row", -"normalized_respondent_id")
+  values <- dplyr::bind_rows(
+    dplyr::mutate(values, source_dataset = "historical"), cor
+  )
+  keys <- c("poll_id", "source_dataset", "respondent_id")
+  stopifnot(!anyDuplicated(values[keys]), !anyDuplicated(participants[keys]))
+  out <- dplyr::left_join(participants, values,
+    by = keys, relationship = "one-to-one"
+  )
+  stopifnot(nrow(out) == nrow(participants))
+  add_analysis_a1r_median_flags(out)
+}
+
+
+add_analysis_a1r_median_flags <- function(participants, survey = NULL) {
+  selected <- participants$poll_id == "america-in-one-room-2019" &
+    participants$source_dataset %in% c("control", "cor_sood")
+  if (!any(selected)) return(participants)
+  if (is.null(survey)) {
+    survey <- readr::read_tsv(project_path(
+      "data", "america-in-one-room-2019", "participants.tab"
+    ), show_col_types = FALSE)
+  }
+  education <- as.numeric(survey$EDUC4)
+  stopifnot(
+    length(education) == nrow(survey),
+    all(is.na(education) | education %in% 1:4)
+  )
+  attendee <- survey$CONDITION == 1 & !is.na(survey$GROUP)
+  classification <- as.logical(above_reference_median(
+    education, education[attendee %in% TRUE]
+  ))
+  position <- match(participants$source_row[selected], seq_len(nrow(survey)))
+  stopifnot(!anyNA(position))
+  participants$education_above_median[selected] <- classification[position]
+  participants
 }

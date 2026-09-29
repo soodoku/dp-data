@@ -1,3 +1,5 @@
+source(project_path("R", "analysis_tanzania.R"))
+
 item_display_text <- function(values) {
   replacements <- c(
     "gov general" = "Governor-General", "governor general" = "Governor-General",
@@ -282,29 +284,7 @@ analysis_control_people <- function(sources) {
       female = as.numeric(GENDER == 2),
       score_wave1 = NA_real_, score_wave2 = NA_real_
     )
-  stopifnot(all(is.na(sources$tanzania$male) |
-                  sources$tanzania$male %in% 0:1))
-  tanzania <- sources$tanzania |>
-    dplyr::mutate(source_row = dplyr::row_number()) |>
-    dplyr::transmute(
-      poll_id = "tanzania-2015", source_dataset = "control",
-      respondent_id = as.character(source_row), source_row,
-      historical_respondent_id = NA_character_,
-      identity_basis = "filtered-file-row", arm = dplyr::case_when(
-        zdelib == 1 ~ "deliberation", zoinfo == 1 ~ "information",
-        zspill == 1 ~ "spillover", z == 0 ~ "control",
-        TRUE ~ "other"
-      ),
-      assignment = dplyr::case_when(
-        zdelib == 1 ~ "deliberation", zoinfo == 1 ~ "information",
-        zspill == 1 ~ "spillover", z == 0 ~ "control"
-      ),
-      attended = NA, panel = !is.na(H601), small_group_id = NA_character_,
-      cluster_id = as.character(VillageID), country = "Tanzania",
-      weight = NA_real_, ba = NA_real_,
-      female = as.numeric(male == 0),
-      score_wave1 = as.numeric(H600), score_wave2 = as.numeric(H601)
-    )
+  tanzania <- analysis_tanzania_people(sources$tanzania)
   amr <- sources$amr |>
     dplyr::mutate(source_row = dplyr::row_number()) |>
     dplyr::group_by(ID) |>
@@ -667,6 +647,14 @@ build_analysis_tables <- function() {
   ) |>
     add_analysis_wave_identity(wave_catalog$analysis_survey_waves)
   phase_evidence <- analysis_attendance_evidence(phase_people, phase_scores)
+  reconciled <- reconcile_analysis_presence(
+    participants, scores, items,
+    phase_evidence$participants, phase_evidence$scores
+  )
+  participants <- reconciled$participants
+  scores <- reconciled$scores
+  items <- reconciled$items
+  phase_evidence$participants <- reconciled$phase_participants
   stopifnot(
     !anyDuplicated(participants[c(
       "poll_id", "source_dataset", "respondent_id"

@@ -69,7 +69,7 @@ reviewed_us_group_gain <- function(before, after, group, knowledge_joint) {
   }
   gain <- original * ncol(joint) / ((1 - knowledge_joint) * ncol(joint))
   gain[is.nan(gain)] <- NA_real_
-  gain
+  apply_peer_opportunity_ceiling(gain, joint, group)
 }
 
 reviewed_us_average_sd <- function(attitudes, group) {

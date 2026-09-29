@@ -2,6 +2,25 @@
 
 ## Unreleased
 
+- Expose approved within-poll education and income median flags as nullable
+  booleans in analysis participant tables. Preserve fixed reference cohorts and
+  identify legacy education proxies as source-specific.
+- Exclude absent selected interviews from paired panels while retaining people
+  and observed waves: 43 Primaries follow-ups, ten California baselines and
+  243 Northern Ireland follow-up-only records.
+
+- Define peer learning opportunity as zero at full knowledge through one shared
+  rule. This changes 315 derived cells for 107 people across 12 polls; absent
+  interviews remain missing. Typed names now describe opportunity and identify
+  the exclusion of the focal respondent.
+- Treat Tanzania's -99 first-component codes as missing and rebuild the existing
+  baseline-control standardized index. Preserve all observed scores and correct
+  the one follow-up-only panel flag.
+
+- Order UK Health government/public and doctor-input responses consistently:
+  none = 0, some = 0.5, all/most = 1. Recalculate dependent attitude summaries
+  without changing participants, knowledge scores or missingness.
+
 - Correct Australia's peer-knowledge denominator from 11 to the 12 scored
   questions. All 347 participants and their individual knowledge scores remain
   unchanged; 346 peer measures and their logs change.

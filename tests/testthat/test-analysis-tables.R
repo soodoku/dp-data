@@ -245,10 +245,14 @@ test_that("analysis exports preserve keys and canonical question IDs", {
     scores$source_dataset == "historical" & !is.na(scores$score)
   ])))
   absent_items <- responses$response_status == "wave_absent"
-  expect_equal(sum(absent_items), 414L + (911L - 387L) * 11L + 2246L * 5L)
+  expect_equal(
+    sum(absent_items),
+    414L + (911L - 387L) * 11L + 2246L * 5L + 43L * 7L + 10L * 5L
+  )
   expect_true(all(
     responses$poll_id[absent_items] %in%
-      c("btp-general-election-2004", "nic-1996", "swepco-1996", "wtu-1996")
+      c("btp-general-election-2004", "nic-1996", "swepco-1996", "wtu-1996",
+        "btp-online-primaries-2004", "california-whats-next-2011")
   ))
   expect_true(all(is.na(responses$correct[absent_items])))
 })
