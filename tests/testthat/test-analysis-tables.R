@@ -81,7 +81,7 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   manifest <- readr::read_csv(
     file.path(directory, "manifest.csv"), show_col_types = FALSE
   )
-  expect_equal(nrow(manifest), 12L)
+  expect_equal(nrow(manifest), 13L)
   expect_true(all(file.exists(project_path(manifest$path))))
   expect_equal(
     vapply(project_path(manifest$path), digest::digest,
@@ -100,7 +100,7 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   responses <- tables$analysis_item_responses
   scores <- tables$analysis_scores
   expect_equal(nrow(polls), 50L)
-  expect_equal(nrow(catalog), 245L)
+  expect_equal(nrow(catalog), 253L)
   expect_equal(dplyr::n_distinct(people$poll_id), 33L)
   expect_equal(dplyr::n_distinct(responses$poll_id), 31L)
   expect_true(all(grepl("^knowledge_[0-9]{3}$", catalog$item_id)))
@@ -161,6 +161,15 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   expect_equal(nrow(climate_people), 8814L)
   expect_equal(sum(climate_people$female), 5066)
   expect_false(anyNA(climate_people$female))
+  expect_equal(sum(climate_people$arm == "completed"), 962L)
+  expect_equal(sum(climate_people$arm == "invited_noncompleter"), 7018L)
+  expect_equal(sum(climate_people$attended %in% TRUE), 962L)
+  expect_equal(sum(climate_people$attended %in% FALSE), 834L)
+  expect_equal(sum(is.na(climate_people$attended)), 7018L)
+  expect_equal(sum(climate_people$panel), 1633L)
+  expect_true(all(is.na(climate_people$attended[
+    climate_people$arm == "invited_noncompleter"
+  ])))
   ni_people <- dplyr::filter(
     people, poll_id == "northern-ireland-2007",
     source_dataset == "control"

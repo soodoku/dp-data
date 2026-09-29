@@ -1,3 +1,4 @@
+source(project_path("R", "respondent_normalization.R"))
 source(project_path("R", "respondent_health.R"))
 source(project_path("R", "respondent_eu.R"))
 source(project_path("R", "respondent_recode.R"))
@@ -433,6 +434,10 @@ build_poll_respondents <- function(contract) {
   }
   measures <- if (!is.null(builder)) {
     values <- builder(survey)
+    values <- normalize_demographic_flags(
+      values, historical, people$respondent_id,
+      education_normalization_values(values, survey, poll_id)
+    )
     dplyr::bind_rows(
       individual_measure_rows(
         values, people, responses,

@@ -72,7 +72,7 @@ monarchy_demographics <- function(survey) {
     age = age,
     education_four = education,
     education_three = collapse_historical_education(education),
-    higher_education = as.numeric(education >= .33),
+
     political_interest_t1 = recode_source_values(survey, "A6",
       c(1, .66, .33, 0, NA_real_, NA_real_)
     )
@@ -93,7 +93,7 @@ build_monarchy_individual <- function(
       attitude_extremity = historical_available_mean(abs(
         as.matrix(baseline) - .5
       )),
-      household_income = NA_real_, high_income = NA_real_,
+      household_income = NA_real_,
       read_briefing = NA_real_, knowledge_joint_midterm = NA_real_,
       knowledge_midterm = NA_real_, knowledge_midterm_joint = NA_real_,
       attitude_extremity_midterm = NA_real_

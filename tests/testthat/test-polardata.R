@@ -134,17 +134,26 @@ test_that("unreviewed survey codes stop the build", {
 })
 
 
-test_that("historical summary vintages remain distinct", {
+test_that("group summaries use the final individual definitions", {
   rebuilt <- build_health_polardata()
   final_share <- ave(as.numeric(rebuilt$highinc), rebuilt$pollgroup,
     FUN = function(x) mean(x, na.rm = TRUE)
   )
-  expect_true(all(abs(final_share - rebuilt$phighinc) > 1e-10))
+  expect_equal(final_share, rebuilt$phighinc)
   final_attitudes <- as.matrix(
     rebuilt[grep("^ukhealth[.]t1", names(rebuilt))]
   )
   recalculated <- historical_available_mean(abs(final_attitudes - .5))
-  expect_gt(sum(abs(recalculated - rebuilt$attextreme) > 1e-10), 0L)
+  expect_equal(recalculated, rebuilt$attextreme)
+  expect_equal(rebuilt$meanxtreme, ave(
+    recalculated, rebuilt$pollgroup, FUN = function(x) mean(x, na.rm = TRUE)
+  ))
+  expected_sd <- ave(seq_len(nrow(rebuilt)), rebuilt$pollgroup,
+    FUN = function(rows) {
+      mean(apply(final_attitudes[rows, ], 2, sd, na.rm = TRUE))
+    }
+  )
+  expect_equal(rebuilt$avgsd, expected_sd)
   incomplete <- rebuilt
   incomplete$educ4 <- NULL
   expect_error(compare_health_polardata(incomplete, health_reference()))
@@ -218,4 +227,50 @@ test_that("polardata construction needs no benchmark or vault", {
   expect_identical(full, arrow::read_parquet(project_path(
     "output", "polardata", "polardata.parquet"
   )))
+})
+
+test_that("Health parity rejects stale flags and new missingness", {
+  rebuilt <- build_health_polardata()
+  benchmark <- health_reference()
+  historical <- benchmark[benchmark$dpnum == 2L, ]
+  historical <- historical[match(rebuilt$caseid, historical$caseid), ]
+  for (field in c("bettered", "phighinc")) {
+    changed <- rebuilt
+    changed[[field]] <- historical[[field]]
+    expect_error(compare_health_polardata(changed, benchmark), "differs")
+    changed <- rebuilt
+    changed[[field]][which(!is.na(changed[[field]]))[1]] <- NA_real_
+    expect_error(compare_health_polardata(changed, benchmark), "differs")
+  }
+})
+
+
+test_that("UK Health severity uses the same theoretical scale at both waves", {
+  survey <- read_poll_survey("uk-health-1998")
+  responses <- expand.grid(lista = 1:5, severa = 1:5)
+  rows <- seq_len(nrow(responses))
+  for (wave in 1:2) {
+    survey[[paste0("lista", wave)]][rows] <- responses$lista
+    survey[[paste0("severa", wave)]][rows] <- responses$severa
+    survey[[paste0("lista", wave)]][26] <- -9
+  }
+  individual <- build_health_individual(survey)
+  expected <- .5 + (responses$lista - responses$severa) / 8
+  for (wave in 1:2) {
+    actual <- individual[[paste0("ukhealth.t", wave, "severi")]]
+    expect_equal(actual[rows], expected)
+    expect_true(is.na(actual[26]))
+    expect_equal(range(actual, na.rm = TRUE), c(0, 1))
+  }
+})
+
+
+test_that("shared Health dispersion uses the final attitude indices", {
+  source(project_path("R", "polardata_core.R"), local = TRUE)
+  survey <- read_poll_survey("uk-health-1998")
+  individual <- build_health_individual(survey)
+  final <- individual[grep("^ukhealth[.]t1", names(individual))]
+  profile <- core_poll_profile(survey, "uk-health-1998")
+  expect_equal(profile$attitudes, final)
+  expect_equal(ncol(profile$attitudes), 11L)
 })

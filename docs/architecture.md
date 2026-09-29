@@ -178,12 +178,17 @@ leave-one-out formulas, respondent-specific gains, and poll samples. For
 example, historical `meanage` is `group_mean_age`; it is calculated here from
 respondent `age`, after the poll recode, and is never a respondent recode.
 The historical field remains alongside the new name for value comparisons.
-The legacy leave-one-out formulas use the historical group size and may differ
-from a fresh mean over nonmissing peers; the name describes whom the formula
-excludes, not a new missing-data rule.
+The observed-peer female share uses the number of other members with known
+gender, and remains computable when only the focal person's gender is missing.
+The separately preserved historical peer-knowledge formulas can still use
+historical group-size conventions; each definition records its denominator.
+An observed-peer mean describes those observed peers. Interpreting it as a mean
+for all peers requires an additional assumption about the missing responses.
 
-The wide export preserves the two copies of each of 217 Primaries respondents;
-the canonical tables do not duplicate people. `X` is a regenerated export row
+The historical benchmark contains two copies of each of 217 Primaries respondents;
+the maintained wide export and canonical tables do not duplicate people.
+The current wide export has 5,869 unique poll/person records, including the two
+approved BTP General Election inclusions. `X` is a regenerated export row
 number, not an identity. Comparisons join on poll and historical respondent ID
 and require duplicated historical records to agree in every other column.
 The twelve absent Greek attitude columns remain missing.

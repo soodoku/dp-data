@@ -58,8 +58,8 @@ build_europolis_individual <- function(
     age = age, female = as.numeric(read("sex1", 1:2) == 2),
     minority = minority, education_four = education,
     education_three = collapse_historical_education(education),
-    higher_education = as.numeric(education > .57),
-    household_income = NA_real_, high_income = NA_real_,
+
+    household_income = NA_real_,
     political_interest_t1 = NA_real_, read_briefing = NA_real_,
     attitude_extremity = extremity, attitude_extremity_midterm = NA_real_
   )

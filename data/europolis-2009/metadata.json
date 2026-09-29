@@ -125,16 +125,6 @@
       "notes": "Existing catalog material; questionnaire wave/translation and draft versus publication version must be checked before recoding. data/europolis-2009/codebook.txt"
     },
     {
-      "reference_id": "europolis-2009-local-cdd-europolis-2009-questionnaire-post",
-      "poll_id": "europolis-2009",
-      "kind": "questionnaire",
-      "title": "Misfiled Tomorrow's Europe post questionnaire",
-      "url": null,
-      "local_artifact_id": "cdd-europolis-2009-questionnaire-post",
-      "accessed": "2026-09-24",
-      "notes": "Retained archive artifact is text-identical to the Tomorrow's Europe 2007 post questionnaire; not evidence for Europolis source questions. data/europolis-2009/questionnaire-post.doc"
-    },
-    {
       "reference_id": "europolis-2009-local-material-7731a4ce1a2d98a7-europolis-2009",
       "poll_id": "europolis-2009",
       "kind": "research-design",
@@ -380,8 +370,8 @@
       "poll_id": "europolis-2009",
       "material_type": "questionnaires",
       "status": "not-found",
-      "notes": "No verified Europolis questionnaire in the retained poll folder; the file labeled post questionnaire has identical text to the Tomorrow's Europe 2007 post instrument and must not validate Europolis scoring.",
-      "checked_references": "europolis-2009-local-cdd-europolis-2009-questionnaire-post"
+      "notes": "No verified Europolis questionnaire found. The archived eu_2009 post form was a content duplicate of the retained Tomorrow’s Europe 2007 post questionnaire, not Europolis instrument evidence; removed after binary Word text, comments, and PDF content/image comparison. See source_findings europolis-misfiled-questionnaire and poll-issues EURO-01.",
+      "checked_references": "europolis-2009-stanford-event"
     },
     {
       "poll_id": "europolis-2009",
@@ -487,21 +477,6 @@
       "publication_status": "published",
       "notes": "Reviewed source; archive path and hash retained; source license not inferred",
       "relative_path": "codebook.txt"
-    },
-    {
-      "artifact_id": "cdd-europolis-2009-questionnaire-post",
-      "poll_id": "europolis-2009",
-      "artifact_type": "questionnaire",
-      "title": "Misfiled Tomorrow's Europe post questionnaire",
-      "location": "data/europolis-2009/questionnaire-post.doc",
-      "source_id": "cdd-europolis-2009-questionnaire-post",
-      "original_archive_path": "data/eu_2009/questionnaires/T3 Questionnaires/T3 questionnaire_EN.doc",
-      "sha256": "66486d9ce06dc2568654ae654582d010d8afd454c0afe0162905d922b1172bbc",
-      "rights_status": "owner-approved",
-      "disclosure_status": "approved-public",
-      "publication_status": "published",
-      "notes": "Archive provenance retained; text matches the Tomorrow's Europe 2007 post questionnaire and is not Europolis instrument evidence",
-      "relative_path": "questionnaire-post.doc"
     },
     {
       "artifact_id": "material-14f09619eb8626fc-europolis-2009",
@@ -654,21 +629,6 @@
       "relative_path": "briefing/europolis-english.pdf"
     },
     {
-      "artifact_id": "material-c0290d73f4b82fe3-europolis-2009",
-      "poll_id": "europolis-2009",
-      "artifact_type": "questionnaire",
-      "title": "Misfiled Tomorrow's Europe post questionnaire (PDF preview)",
-      "location": "data/europolis-2009/questionnaire-post.pdf",
-      "source_id": "material-c0290d73f4b82fe3",
-      "original_archive_path": null,
-      "sha256": "c0290d73f4b82fe305b725dbee226c5c1761af8c0ea41893f0d980554f4999b4",
-      "rights_status": "review-required",
-      "disclosure_status": "approved-public",
-      "publication_status": "published",
-      "notes": "Generated preview of the misfiled archive document; identical text to the Tomorrow's Europe 2007 post questionnaire. Do not use as Europolis instrument evidence.",
-      "relative_path": "questionnaire-post.pdf"
-    },
-    {
       "artifact_id": "material-8ddbaad774a59155-europolis-2009",
       "poll_id": "europolis-2009",
       "artifact_type": "codebook",
@@ -715,22 +675,6 @@
     }
   ],
   "document_previews": [
-    {
-      "source_path": "data/europolis-2009/questionnaire-post.doc",
-      "preview_path": "data/europolis-2009/questionnaire-post.pdf",
-      "source_sha256": "66486d9ce06dc2568654ae654582d010d8afd454c0afe0162905d922b1172bbc",
-      "preview_sha256": "c0290d73f4b82fe305b725dbee226c5c1761af8c0ea41893f0d980554f4999b4",
-      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
-      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
-      "pages": "21",
-      "text_check": "source-text-compared",
-      "visual_check": "passed-representative-pages",
-      "visual_pages": "1;11;21",
-      "source_token_coverage": "0.9991194599354271",
-      "distinct_word_coverage": "0.9966777408637874",
-      "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
-      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
-    },
     {
       "source_path": "data/shared/codebooks/knowledge_indices/appendix-a-9-14-14.docx",
       "preview_path": "data/shared/codebooks/knowledge_indices/appendix-a-9-14-14.pdf",

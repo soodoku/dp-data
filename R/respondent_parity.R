@@ -1,5 +1,39 @@
 approved_reference_values <- function(poll_id, field, caseid, historical,
                                       tolerance = 1e-10) {
+  if (field %in% c("bettered", "highinc", "phighinc", "pfemale_ind")) {
+    correction <- if (field == "pfemale_ind") {
+      "shared-peer-composition"
+    } else {
+      "shared-demographic-medians"
+    }
+    approved <- readr::read_csv(project_path(
+      "audit", "corrections", correction,
+      "approved_values.csv"
+    ), show_col_types = FALSE)
+    approved <- approved[approved$poll_id == poll_id &
+                           approved$legacy_field == field, ]
+    expected_caseid <- if (poll_id == "btp-general-election-2004") {
+      union(caseid, btp_ge_approved_inclusions()$historical_caseid)
+    } else {
+      caseid
+    }
+    stopifnot(
+      nrow(approved) > 0L, length(caseid) == length(historical),
+      !anyDuplicated(approved$caseid), !anyDuplicated(caseid),
+      setequal(as.character(expected_caseid), as.character(approved$caseid))
+    )
+    approved <- approved[match(as.character(caseid),
+                               as.character(approved$caseid)), ]
+    stopifnot(
+      !anyNA(approved$historical_present),
+      all(approved$historical_present | is.na(approved$historical_value)),
+      identical(is.na(historical), is.na(approved$historical_value)),
+      all(abs(historical - approved$historical_value) <= tolerance,
+        na.rm = TRUE
+      )
+    )
+    return(approved$approved_value)
+  }
   if (field == "entropy") {
     approved <- readr::read_csv(project_path(
       "audit", "corrections", "shared-entropy", "approved_values.csv"
@@ -54,6 +88,12 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     return(approved$approved_value)
   }
   reviewed <- list(
+    "uk-health-1998" = list(
+      fields = c(
+        "ukhealth.t1severi", "ukhealth.t2severi", "attextreme",
+        "meanxtreme", "avgsd", "genvar"
+      ), rows = 230L
+    ),
     "bulgaria-crime-2002" = list(
       fields = c("bulgaria.bulgaria.t1q19", "bulgaria.bulgaria.t2q19",
                  "attextreme", "meanxtreme", "avgsd", "genvar", "highinc",

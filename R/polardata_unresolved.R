@@ -11,8 +11,7 @@ build_zeguo_derived <- function(survey, values) {
   group <- 5200 + survey$groupnum[rows]
   attitudes <- zeguo_attitudes(survey, 1L)[rows, ]
   result <- historical_derived_columns(
-    values, group,
-    rep(NA_real_, length(rows)), attitudes
+    values, group, attitudes
   )
   before <- zeguo_knowledge_items(survey, "pre")[rows, , drop = FALSE]
   after <- zeguo_knowledge_items(survey, "post")[rows, , drop = FALSE]
@@ -40,7 +39,6 @@ build_new_haven_derived <- function(survey, values) {
     new_haven_attitudes(survey, "pre"),
     new_haven_knowledge_items(survey, "pre"),
     new_haven_knowledge_items(survey, "post"),
-    as.numeric(measures$household_income > 7),
     pollid = 91, mode = 0, numindices = 3, numissues = 2,
     t1knowlevel = level
   )
@@ -62,7 +60,7 @@ build_btp_primaries_derived <- function(survey, values) {
   group <- 9500 + survey$groupnumc[rows]
   attitudes <- primaries_attitudes(survey, "b1")[rows, ]
   result <- historical_derived_columns(
-    values, group, as.numeric(survey$ppincimp[rows] >= 14), attitudes
+    values, group, attitudes
   )
   dispersion <- historical_group_dispersion(attitudes, group)
   result$genvar <- dispersion$generalized_variance

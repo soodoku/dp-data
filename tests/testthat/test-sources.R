@@ -49,13 +49,19 @@ test_that("archive references resolve to retained bytes after deduplication", {
   )
 })
 
-test_that("archive provenance retains every original path with one locator", {
+test_that("archive locators distinguish retained and removed duplicates", {
   inventory <- readr::read_csv(
     project_path("audit", "cdd_archive_files.csv"), show_col_types = FALSE
   )
   expect_equal(anyDuplicated(inventory$path), 0L)
-  expect_false(anyNA(inventory$retained_path))
-  expect_true(all(grepl("^(data|vault)/", inventory$retained_path)))
-  copies <- inventory |> dplyr::distinct(.data$retained_path, .data$sha256)
+  removed <- inventory$publication_status == "removed-content-duplicate"
+  expect_equal(inventory$sha256[removed],
+    "66486d9ce06dc2568654ae654582d010d8afd454c0afe0162905d922b1172bbc"
+  )
+  expect_true(all(is.na(inventory$retained_path[removed])))
+  retained <- inventory[!removed, ]
+  expect_false(anyNA(retained$retained_path))
+  expect_true(all(grepl("^(data|vault)/", retained$retained_path)))
+  copies <- retained |> dplyr::distinct(.data$retained_path, .data$sha256)
   expect_equal(anyDuplicated(copies$retained_path), 0L)
 })

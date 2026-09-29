@@ -95,9 +95,9 @@ test_that("australia matches every historical respondent target", {
     "minority" = "minority",
     "educ4" = "education_four",
     "educ3" = "education_three",
-    "bettered" = "higher_education",
+
     "hhincome" = "household_income",
-    "highinc" = "high_income",
+
     "t1polint" = "political_interest_t1",
     "attextreme" = "attitude_extremity",
     "attextreme2" = "attitude_extremity_midterm",

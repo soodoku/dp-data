@@ -134,8 +134,8 @@ build_nic2_individual <- function(survey = read_poll_survey("nic2-2003")) {
       minority = as.numeric(read("race", 1:7) != 1),
       education_four = education,
       education_three = collapse_historical_education(education),
-      higher_education = as.numeric(education == 1),
-      household_income = income, high_income = as.numeric(income > 6),
+
+      household_income = income,
       political_interest_t1 = as_historical_float(
         c(1, .66, .33, 0)[read("pint_b", 1:4)]
       ),

@@ -228,8 +228,8 @@ test_that("Reviewed US polls reproduce historical values and missingness", {
     knowgain2 = "knowledge_gain_joint", logpk = "log_knowledge_joint",
     tobitpk = "high_knowledge_joint", ppage = "age", female = "female",
     minority = "minority", educ4 = "education_four", educ3 = "education_three",
-    bettered = "higher_education", hhincome = "household_income",
-    highinc = "high_income", attextreme = "attitude_extremity",
+    hhincome = "household_income",
+    attextreme = "attitude_extremity",
     readbrief = "read_briefing"
   )
   for (case in cases) {

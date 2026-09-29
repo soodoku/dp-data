@@ -12,8 +12,8 @@ unresolved_test_fields <- function(poll) {
   fields <- c(
     ppage = "age", female = "female", minority = "minority",
     educ4 = "education_four", educ3 = "education_three",
-    bettered = "higher_education", hhincome = "household_income",
-    highinc = "high_income", t1polint = "political_interest_t1",
+    hhincome = "household_income",
+    t1polint = "political_interest_t1",
     attextreme = "attitude_extremity", readbrief = "read_briefing",
     t1know = "knowledge_t1", t1knowr = "knowledge_t1",
     t2know = "knowledge_t2", t2knowr = "knowledge_t2",
@@ -107,7 +107,7 @@ test_that("resolved polls reproduce historical fields", {
         ),
         btp_primaries = c(
           "grpgain", "grpgainr", "loggain", "groupsize", "vareduc",
-          "sdeduc", "pfemale_ind", "meant1know_ind",
+          "sdeduc", "meant1know_ind",
           "meant1knowcor_ind"
         )
       )
@@ -129,6 +129,13 @@ test_that("resolved polls reproduce historical fields", {
       )
     }
     values$source_row <- survey$source_row[selected]
+    values$highinc <- above_reference_median(values$hhincome, values$hhincome)
+    expected$phighinc <- approved_reference_values(
+      id, "phighinc", expected$caseid, expected$phighinc
+    )
+    expected$pfemale_ind <- approved_reference_values(
+      id, "pfemale_ind", expected$caseid, expected$pfemale_ind
+    )
     derived <- get(paste0("build_", poll, "_derived"))(survey, values)
     compare <- names(derived)
     if (poll == "zeguo") compare <- setdiff(compare, "genvar")

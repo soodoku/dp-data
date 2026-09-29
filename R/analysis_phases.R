@@ -161,7 +161,7 @@ analysis_phase_presence <- function(
 }
 
 analysis_phase_scores <- function(scores, items, participants, sources,
-                                  recruitment = NULL) {
+                                  recruitment = NULL, arrival_items = NULL) {
   roles <- read_metadata("analysis_phase_roles")
   definitions <- read_metadata("measure_definitions")
   targets <- read_metadata("polardata_targets")
@@ -272,6 +272,9 @@ analysis_phase_scores <- function(scores, items, participants, sources,
       "wave_observed", "battery_id", "original_score_wave",
       "wave_role", "timing_evidence"
     )
+  if (!is.null(arrival_items)) {
+    out <- dplyr::bind_rows(out, analysis_arrival_scores(arrival_items))
+  }
   stopifnot(
     !anyDuplicated(out[c(
       "poll_id", "source_dataset", "respondent_id", "battery_id",

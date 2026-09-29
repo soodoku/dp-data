@@ -70,8 +70,8 @@ build_san_mateo_individual <- function(
       minority = as.numeric(btp_source_codes(survey, "Q132", 1:7) != 1),
       education_four = education,
       education_three = collapse_historical_education(education),
-      higher_education = as.numeric(education == 1),
-      household_income = income, high_income = as.numeric(income > 4),
+
+      household_income = income,
       attitude_extremity = extremity,
       read_briefing = (btp_source_codes(survey, "t2q37", 1:5) - 1) / 4,
       political_interest_t1 = NA_real_,

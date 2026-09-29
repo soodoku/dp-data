@@ -58,9 +58,9 @@ build_new_haven_individual <- function(
       ),
       education_four = education,
       education_three = collapse_historical_education(education),
-      higher_education = as.numeric(education == 1),
+
       household_income = as.numeric(income),
-      high_income = as.numeric(income > 5),
+
       political_interest_t1 = NA_real_, read_briefing = NA_real_,
       attitude_extremity = as_historical_float(rowMeans(
         as.data.frame(lapply(baseline, \(x) as_historical_float(abs(x - .5))))

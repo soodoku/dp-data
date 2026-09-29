@@ -1,5 +1,40 @@
 source(file.path(root, "R", "analysis_covariates.R"))
 
+test_that("Health degree status uses the separate degree question", {
+  survey <- tibble::tibble(educb = c(0:12, -9, NA_real_))
+  expect_equal(
+    health_degree_status(survey),
+    c(rep(0, 9), 1, rep(0, 3), NA_real_, NA_real_)
+  )
+  survey$educb[1] <- 99
+  expect_error(health_degree_status(survey))
+
+  raw <- read_poll_survey("uk-health-1998")
+  stored <- as.numeric(raw$degree)
+  stored[stored == -9] <- NA_real_
+  expect_equal(health_degree_status(raw), stored)
+  expect_equal(sum(stored == 1, na.rm = TRUE), 32L)
+  people <- arrow::read_parquet(project_path(
+    "output", "analysis", "analysis_participants.parquet"
+  )) |>
+    dplyr::filter(
+      poll_id == "uk-health-1998", source_dataset == "historical"
+    )
+  expect_equal(nrow(people), 230L)
+  expect_equal(people$ba, stored[match(people$source_row, raw$source_row)])
+  expect_equal(sum(is.na(people$ba)), 1L)
+  phases <- arrow::read_parquet(project_path(
+    "output", "analysis", "analysis_phase_participants.parquet"
+  )) |>
+    dplyr::filter(
+      poll_id == "uk-health-1998", source_dataset == "historical"
+    )
+  expect_setequal(phases$respondent_id, people$respondent_id)
+  expect_equal(phases$ba, people$ba[
+    match(phases$respondent_id, people$respondent_id)
+  ])
+})
+
 test_that("new demographic fields cover each additional grouped poll", {
   people <- arrow::read_parquet(project_path(
     "output", "analysis", "analysis_participants.parquet"

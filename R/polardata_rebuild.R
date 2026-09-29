@@ -90,6 +90,11 @@ historical_derived_measures <- function(polls) {
       dplyr::mutate(
         poll_id = .env$poll_id,
         definition_version = dplyr::case_when(
+          .env$poll_id == "uk-health-1998" &
+            .data$legacy_field %in% c("meanxtreme", "avgsd", "genvar") ~
+            "ukh-02-v2",
+          .data$legacy_field == "phighinc" ~ "poll-median-v1",
+          .data$legacy_field == "pfemale_ind" ~ "observed-peers-v2",
           .data$legacy_field == "entropy" ~ "entropy-observed-v2",
           .env$poll_id == "tomorrows-europe-2007" &
             .data$legacy_field %in% c(

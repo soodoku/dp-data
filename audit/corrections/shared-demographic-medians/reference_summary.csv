@@ -1,0 +1,43 @@
+poll_id,measure,ordering,participant_median,source_rows,participants,reference_observed,participants_above,participants_at_or_below,participants_missing,participant_changed,source_old_above,source_new_above,source_changed,source_missing
+uk-eu-1995,education,reviewed education_four/educ4,0,900,238,230,90,140,8,0,336,336,0,34
+uk-eu-1995,income,reviewed household_income/hhincome,NA,900,238,0,0,0,238,0,0,0,0,900
+uk-health-1998,education,reviewed education_four/educ4,0.66,230,230,228,49,179,2,70,119,49,70,2
+uk-health-1998,income,reviewed household_income/hhincome,0.3333333333333333,230,230,206,97,109,24,0,97,97,0,24
+uk-monarchy-1996,education,reviewed education_four/educ4,0,857,258,258,100,158,0,0,308,308,0,1
+uk-monarchy-1996,income,reviewed household_income/hhincome,NA,857,258,0,0,0,258,0,0,0,0,857
+uk-general-election-1997,education,reviewed education_four/educ4,0,1210,275,274,134,140,1,0,532,532,0,3
+uk-general-election-1997,income,reviewed household_income/hhincome,2,1210,275,251,103,148,24,0,461,461,0,138
+australia-republic-1999,education,edulev:1|2|3|4|5->1|2|3|4|5,4,4659,347,347,43,304,0,141,555,112,443,3440
+australia-republic-1999,income,reviewed household_income/hhincome,0.66,4659,347,314,153,161,33,0,430,430,0,3589
+uk-crime-1994,education,reviewed education_four/educ4,0.33,869,299,299,99,200,0,0,282,282,0,12
+uk-crime-1994,income,reviewed household_income/hhincome,NA,869,299,0,0,0,299,0,0,0,0,869
+tomorrows-europe-2007,education,reviewed education_four/educ4,0.66,3550,344,343,161,182,1,38,1328,1019,309,20
+tomorrows-europe-2007,income,reviewed household_income/hhincome,NA,3550,344,0,0,0,344,0,0,0,0,3550
+cpl-1996,education,reviewed education_four/educ4,0.66,1246,216,213,61,152,3,63,655,344,311,10
+cpl-1996,income,reviewed household_income/hhincome,5,1246,216,198,66,132,18,37,601,398,203,108
+zeguo-2005,education,reviewed education_four/educ4,0,269,233,205,39,166,28,0,54,54,0,35
+zeguo-2005,income,reviewed household_income/hhincome,NA,269,233,0,0,0,233,0,0,0,0,269
+bulgaria-crime-2002,education,reviewed education_four/educ4,0.33,278,278,277,44,233,1,0,44,44,0,1
+bulgaria-crime-2002,income,reviewed household_income/hhincome,3,278,278,273,84,189,5,56,28,84,56,5
+europolis-2009,education,reviewed education_four/educ4,0.57,4384,348,335,151,184,13,0,1394,1394,0,148
+europolis-2009,income,reviewed household_income/hhincome,NA,4384,348,0,0,0,348,0,0,0,0,4384
+new-haven-2004,education,pre_q61:1|2|3|4|5|6|7->1|2|3|4|5|6|4,5,132,132,132,43,89,0,37,80,43,37,0
+new-haven-2004,income,reviewed household_income/hhincome,6,132,132,107,44,63,25,11,55,44,11,25
+nic2-2003,education,educ_a:0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18->0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18,15,1493,340,340,160,180,0,112,617,322,295,614
+nic2-2003,income,reviewed household_income/hhincome,6,1493,340,316,148,168,24,0,333,333,0,697
+btp-national-2003,education,reviewed education_four/educ4,0.66,245,245,245,79,166,0,84,163,79,84,0
+btp-national-2003,income,reviewed household_income/hhincome,5,245,245,245,117,128,0,0,117,117,0,0
+btp-general-election-2004,education,reviewed education_four/educ4,0.66,299,248,248,82,166,0,87,202,100,102,0
+btp-general-election-2004,income,reviewed household_income/hhincome,5,299,248,242,116,126,6,0,141,141,0,9
+btp-presidential-primaries-2004,education,reviewed education_four/educ4,0.66,1289,217,217,66,151,0,59,681,331,350,69
+btp-presidential-primaries-2004,income,reviewed household_income/hhincome,11,1289,217,217,106,111,0,0,506,506,0,69
+san-mateo-2008,education,Q128:1|2|3|4|5|6->1|2|3|4|5|6,4,1806,239,236,103,133,3,49,1142,692,450,48
+san-mateo-2008,income,reviewed household_income/hhincome,4,1806,239,180,77,103,59,0,728,728,0,481
+btp-health-education-2005,education,reviewed education_four/educ4,0.66,454,454,452,211,241,2,0,211,211,0,2
+btp-health-education-2005,income,reviewed household_income/hhincome,NA,454,454,0,0,0,454,0,0,0,0,454
+wtu-1996,education,reviewed education_four/educ4,0.66,1230,230,229,71,158,1,81,675,334,341,13
+wtu-1996,income,reviewed household_income/hhincome,NA,1230,230,0,0,0,230,0,0,0,0,1230
+nic-1996,education,reviewed education_four/educ4,0.66,911,466,459,130,329,7,125,439,217,222,10
+nic-1996,income,reviewed household_income/hhincome,NA,911,466,0,0,0,466,0,0,0,0,911
+swepco-1996,education,reviewed education_four/educ4,0.66,1478,232,231,70,161,1,78,830,392,438,11
+swepco-1996,income,reviewed household_income/hhincome,NA,1478,232,0,0,0,232,0,0,0,0,1478

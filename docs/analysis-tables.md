@@ -1,6 +1,6 @@
 # Canonical analysis tables
 
-`make analysis` writes twelve typed Parquet tables and a checksum manifest to
+`make analysis` writes thirteen typed Parquet tables and a checksum manifest to
 `output/analysis/`. `make check` rebuilds them after the knowledge, respondent,
 and historical aggregate exports. Source files and reviewed metadata stay in
 `data/` and `metadata/`; downstream projects use the Parquet tables.
@@ -19,6 +19,7 @@ and historical aggregate exports. Source files and reviewed metadata stay in
 | `analysis_survey_waves` | One survey occasion per catalog cohort; `poll_id`, `wave_instance_id` |
 | `analysis_phase_participants` | One source respondent with attendance evidence; participant key |
 | `analysis_phase_scores` | One knowledge measurement; participant key, `battery_id`, `wave_instance_id` |
+| `analysis_phase_item_responses` | One item answer with verified timing; participant key, `battery_id`, `wave_instance_id`, `item_id` |
 
 There are respondent records for 33 polls and item responses for 31. The
 participant table covers the 21 reviewed historical surveys, 23 Cor–Sood
@@ -31,7 +32,9 @@ participants. The score-only Marousi and Tanzania files have no recovered person
 answers in this export.
 
 `item_id` uses `knowledge_001`, `knowledge_002`, and so on within each poll.
-The original baseline source field is `source_column_t1`; historical and
+The original baseline source field is `source_column_t1`; for the eight added
+arrival-only items this names the earliest fielded source and the coding note
+explicitly identifies arrival. Historical and
 Cor–Sood battery IDs have their own columns. Four Zeguo questions use a
 different historical post-wave ID, recorded in `historical_item_id_t2`.
 The item-response table maps each source battery to the canonical ID, retaining
@@ -54,9 +57,18 @@ is `interim_1`. NIC's original T2 is exit and T3 is a ten-month follow-up.
 Tanzania's telephone reinterview is weeks later and is classified as follow-up.
 Original survey labels and legacy score labels remain separate columns.
 
-Readers must select a baseline/outcome pair explicitly. The current desired
-dp-learning comparison is arrival-to-exit (`t1` to `t2`); pre-arrival-to-exit
-(`t0` to `t2`) is a separate comparison, never an implicit fallback. The source
+`analysis_phase_item_responses` maps existing item responses to their documented
+survey occasions and adds the verified arrival batteries. California and Europolis
+retain both common and expanded batteries; Michigan has separate four-placement
+three-wave and six-placement arrival/exit batteries. Select `battery_id` explicitly
+before comparing phases. The source files retain people outside each existing
+analytical cohort, and California's separate eight-item output still covers its
+broader 412-person source cohort. Questionnaire absence yields null correctness
+and scores; blank items within an observed form score zero. Marousi remains
+score-only here, and AMR is excluded from phase items until its timing is established.
+
+Readers must select a baseline/outcome pair explicitly. Arrival-to-exit (`t1` to `t2`) and pre-arrival-to-exit (`t0` to `t2`) are
+distinct comparisons, never implicit substitutes for one another. The source
 universe must retain available pre-arrival responses from nonattendees and
 people without a group; analysis views select attendees, observed wave pairs
 or known memberships as needed. This preserves evidence for selection and
@@ -67,7 +79,10 @@ and `attended`. In America in One Room 2019, `assignment = recruitment`
 identifies the baseline recruitment sample; NORC later subsampled this frame for
 invitations. Its nonattenders are `recruitment_nonattender`, since individual
 invitation status is not established. In the climate study, baseline treatment
-respondents were invited to register, so `invited_nonattender` is supported.
+respondents were invited to register. The 962 who completed the event and post
+survey are `completed`; the other 7,018 are `invited_noncompleter`. Their attendance
+is null, since failure to complete does not establish nonattendance. Controls
+retain `attended = FALSE`, and documented completers retain `attended = TRUE`.
 Invitations were randomized in some studies, but analysis of
 attendees is not an intention-to-treat estimate. `small_group_id` identifies a
 discussion group when observed; `cluster_id` is the inference cluster and is a
@@ -91,6 +106,11 @@ discussion, recalled afterward. Michigan's letter-coded reading answers are
 categorical survey responses; unrecognized codes remain missing. Attitude
 extremity and minority status retain the historical definitions and coverage.
 The schema and recode ledger record source fields, category mappings, and sources.
+UK Health's `ba` flag uses the separate B12 degree question (`educb == 9`),
+with nonresponse missing. Its B11 school-qualification scale is not a degree
+measure and must not be interpreted as one; the empirical-median education
+classification is also a separate measure. This correction yields 32 degree
+holders among 229 observed answers, with all 230 historical participants retained.
 The covariate build preserves every participant key and does not impose a
 complete-case sample; downstream analyses select the variables they need.
 
@@ -215,12 +235,12 @@ readers must choose an occasion explicitly rather than average or overwrite them
 citation are carried in the typed table. A documented pre-start design does not
 assert that individual first-meeting timestamps were recovered.
 
-`availability = source_exists_but_not_exported` identifies retained survey data
-that have not entered these score tables. California, Europolis, Denmark and
-Vermont have additional arrival batteries. Michigan has arrival placement items,
-but not all five factual questions from its telephone battery. `battery_scope`
-records these distinctions. A count of exported three-wave comparisons is thus
-not a count of studies that collected three waves.
+California, Europolis, Denmark, Vermont and Michigan's retained arrivals now
+have `availability = score_exported`. Michigan has only arrival placement items,
+not its five telephone factual questions; its four-item common and six-item
+arrival/exit batteries remain separate from the selected-wave nine-item battery.
+`battery_scope` records these distinctions. Exported coverage does not establish
+that every person completed every wave or that discussion-group IDs are known.
 
 `analysis_phase_participants` adds `attendance_status`, `attendance_evidence`,
 and nullable `sessions_attended`. Seven Cor–Sood cohorts now use source attendance

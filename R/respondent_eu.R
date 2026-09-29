@@ -69,7 +69,6 @@ build_eu_individual <- function(survey = read_poll_survey("uk-eu-1995")) {
   result$educ3 <- ifelse(result$educ4 %in% c(0, 1), result$educ4,
     ifelse(is.na(result$educ4), NA_real_, .5)
   )
-  result$bettered <- result$educ4 >= .33
   interest <- eu_source_value(survey, "genint", c(-1, 1:4, 8, 9))
   result$t1polint <- c(0, .33, .66, 1)[match(interest, 1:4)]
   before <- eu_knowledge_items(survey, 1L)
@@ -81,7 +80,7 @@ build_eu_individual <- function(survey = read_poll_survey("uk-eu-1995")) {
   result$knowgain2 <- result$t2know - result$t1knowcor
   result$logpk <- historical_log_score(result$t1knowcor)
   result$tobitpk <- as.numeric(result$t1knowcor > .6)
-  for (field in c("readbrief", "hhincome", "highinc", "t1knowcor2", "t12know",
+  for (field in c("readbrief", "hhincome", "t1knowcor2", "t12know",
     "t12knowcor", "attextreme2"
   )) result[[field]] <- rep(NA_real_, nrow(survey))
   result

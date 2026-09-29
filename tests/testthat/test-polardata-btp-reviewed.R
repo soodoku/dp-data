@@ -66,15 +66,15 @@ test_that("US aggregates match except diagnosed singular covariances", {
     poll <- polls[index]
     survey <- read_poll_survey(poll)
     expected <- benchmark[benchmark$dpnum == c(15, 18, 17)[index], ]
-    ids <- switch(poll,
-      "btp-general-election-2004" = 940000 + survey$source_row,
-      "btp-health-education-2005" = 970000 + survey$source_row,
-      "san-mateo-2008" = as.numeric(san_mateo_historical_ids(survey, survey))
-    )
-    values <- tibble::tibble(source_row = survey$source_row[
-      match(expected$caseid, ids)
-    ])
+    values <- historical_respondent_wide(poll)
     actual <- builders[[index]](survey, values)
+    rows <- match(expected$caseid, values$caseid)
+    expect_false(anyNA(rows))
+    expect_false(anyDuplicated(values$caseid) > 0L)
+    actual <- actual[rows, ]
+    expected$phighinc <- approved_reference_values(
+      poll, "phighinc", expected$caseid, expected$phighinc
+    )
     expected$entropy <- approved_reference_values(
       poll, "entropy", expected$caseid, expected$entropy
     )

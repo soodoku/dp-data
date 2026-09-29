@@ -33,15 +33,15 @@ historical_respondent_wide <- function(poll_id) {
   values
 }
 
-historical_derived_columns <- function(values, group, early_high_income,
+historical_derived_columns <- function(values, group,
                                        baseline_attitudes,
                                        arrival_attitudes = NULL) {
   canonical <- tibble::tibble(
     female = values$female, minority = values$minority,
     education_four = values$educ4, age = values$ppage,
-    attitude_extremity = values$attextreme
+    attitude_extremity = values$attextreme, high_income = values$highinc
   )
-  result <- historical_composition(canonical, group, early_high_income)
+  result <- historical_composition(canonical, group)
   dispersion <- historical_group_dispersion(baseline_attitudes, group)
   result$avgsd <- dispersion$average_sd
   result$genvar <- dispersion$generalized_variance

@@ -68,7 +68,6 @@ build_health_individual <- function(
       historical_available_mean(values)
     }
     difference <- response("lista") - response("severa")
-    limits <- if (wave == 1L) c(-1, 1) else c(-1, .5)
     indices <- list(
       payhlt = response("payhlth", 3L),
       poora = response("poora"),
@@ -76,7 +75,7 @@ build_health_individual <- function(
       hlthfu = average(c("chgp", "chvis", "chmeal", "chstay", "chamb")),
       ctexpt = average(c("treata", "cthart", "ctnurs", "ctbaby"), TRUE),
       pritre = average(c("ctfert", "cthosp", "ctcosm"), TRUE),
-      severi = (difference - limits[1]) / diff(limits),
+      severi = (difference + 1) / 2,
       preven = response("preva"),
       dispub = historical_available_mean(cbind(
         response("ingova", 3L, TRUE), response("inpuba", 3L, TRUE)
@@ -116,21 +115,17 @@ health_individual_demographics <- function(result, survey) {
     result$educ4 %in% c(0, 1), result$educ4,
     ifelse(is.na(result$educ4), NA_real_, .5)
   )
-  result$bettered <- result$educ4 >= .66
   income <- source_code("income", c(-9, -8, -7, 1:16))
   income[income < 1] <- NA_real_
   result$hhincome <- (income - 1) / 15
-  result$highinc <- result$hhincome > .34
   attitudes <- as.matrix(result[grep("^ukhealth[.]t1", names(result))])
   raw_severity <- historical_health_response(survey$lista1, 5L) -
     historical_health_response(survey$severa1, 5L)
-  attitudes[, "ukhealth.t1severi"] <- raw_severity
   result$attextreme <- historical_available_mean(abs(attitudes - .5))
   result$severity_t1_unscaled <- raw_severity
   result$severity_t2_unscaled <-
     historical_health_response(survey$lista2, 5L) -
     historical_health_response(survey$severa2, 5L)
-  result$highinc_early <- result$hhincome > .8
   result
 }
 

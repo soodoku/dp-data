@@ -1,5 +1,32 @@
 # Changelog
 
+## Unreleased
+
+- Apply the poll-specific corrections documented in `docs/poll-issues.md`, with
+  unchanged source answers and independently checked correction values. The
+  issue register distinguishes adopted changes, retained definitions, proposed
+  corrections and unavailable source evidence; the audit is not yet closed.
+- Export 5,869 unique historical poll/person records, removing duplicate
+  Primaries rows and retaining two BTP General Election respondents with
+  observed exit questionnaires but no correct knowledge answers.
+- Use empirical participant medians for high/low education and income, with
+  fixed reference populations and the same individual flags in group summaries.
+- Calculate female shares among observed peers with a common denominator,
+  including respondents whose own gender is missing.
+- Put UK Health severity preferences on a fixed scale across waves and rebuild
+  individual extremity and group summaries from the corrected indices.
+- Derive UK Health degree attainment from its explicit qualification question
+  instead of treating A-level school qualifications as a degree.
+- Preserve verified survey phases, questionnaire presence, recruitment frames,
+  controls and follow-ups in typed Parquet. Add arrival scores for California,
+  Europolis, Denmark, Vermont and Michigan, keeping their different batteries
+  separate, and publish a typed phase item-response table.
+- Identify climate-study completers as completed; distinguish other invitees
+  from people known not to have attended.
+- Retain the UK Health index memorandum with a PDF preview. Remove the misfiled
+  Europolis questionnaire duplicate after checking its content against the
+  existing Tomorrow's Europe original and PDF.
+
 ## 0.3.0
 
 - Reconstruct all 848 respondent-field targets across the 21 historical polls
@@ -59,4 +86,3 @@ replace downstream historical polardata inputs.
 - Add immutable public inputs used by `dp-learning`.
 - Record checksums for the historical CDD archive bundles without publishing
   unreviewed respondent files.
-

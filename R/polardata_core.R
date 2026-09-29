@@ -86,9 +86,6 @@ core_poll_profile <- function(survey, poll_id) {
         !names(individual) %in% c("knowledge_t1", "political_interest_t1")
     ]
   )
-  if (poll_id == "uk-health-1998") {
-    baseline$ukhealth.t1severi <- individual$severity_t1_unscaled
-  }
   if (poll_id %in% c("cpl-1996", "wtu-1996", "swepco-1996")) {
     competition <- read_utility_value(survey, poll_id, "compet1", 1:5)
     if (poll_id != "cpl-1996") {
@@ -96,13 +93,6 @@ core_poll_profile <- function(survey, poll_id) {
     }
     baseline$competition <- (competition - 1) / 4
   }
-  early_income <- switch(poll_id,
-    "uk-health-1998" = individual$highinc_early,
-    "uk-general-election-1997" = as.numeric(individual$household_income > 3),
-    "cpl-1996" = individual$high_income,
-    "bulgaria-crime-2002" = individual$high_income,
-    rep(NA_real_, nrow(survey))
-  )
   score <- if ("knowledge_t1" %in% names(individual)) {
     individual$knowledge_t1
   } else {
@@ -111,7 +101,7 @@ core_poll_profile <- function(survey, poll_id) {
   if (poll_id == "uk-health-1998") score <- individual$t1know_rounded
   list(
     group = group, before = before, after = after, attitudes = baseline,
-    early_income = early_income, poll_score = score
+    poll_score = score
   )
 }
 
@@ -135,7 +125,7 @@ build_core_derived <- function(survey, values, poll_id) {
     arrival <- nic_attitudes(survey, 2L)[rows, ]
   }
   result <- historical_derived_columns(
-    values, group, profile$early_income[rows],
+    values, group,
     profile$attitudes[rows, ], arrival
   )
   result$t1knowlevel <- mean(profile$poll_score)

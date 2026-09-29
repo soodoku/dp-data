@@ -84,9 +84,9 @@ build_zeguo_individual <- function(survey = read_poll_survey("zeguo-2005")) {
       female = recode_source_values(survey, "Gender", c(0, 1)),
       education_four = education,
       education_three = collapse_historical_education(education),
-      higher_education = as.numeric(education > 0),
+
       attitude_extremity = extremity,
-      household_income = NA_real_, high_income = NA_real_, minority = NA_real_,
+      household_income = NA_real_, minority = NA_real_,
       political_interest_t1 = NA_real_, read_briefing = NA_real_,
       knowledge_midterm = NA_real_, knowledge_midterm_joint = NA_real_,
       knowledge_joint_midterm = NA_real_, attitude_extremity_midterm = NA_real_

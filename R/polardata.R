@@ -1,10 +1,16 @@
 source(project_path("R", "respondent_health.R"))
+source(project_path("R", "respondent_normalization.R"))
+source(project_path("R", "respondent_parity.R"))
+source(project_path("R", "polardata_derived.R"))
 
 build_health_polardata <- function(
   survey = read_poll_survey("uk-health-1998")
 ) {
   stopifnot(nrow(survey) == 230L)
-  result <- build_health_individual(survey)
+  result <- normalize_demographic_flags(
+    build_health_individual(survey), rep(TRUE, nrow(survey)),
+    as.character(survey$serial_m)
+  )
   result <- health_polardata_demographics(result, survey)
   result <- health_polardata_knowledge(result, survey)
   result[c("dpnum", "caseid", health_polardata_fields())]
@@ -28,16 +34,10 @@ health_polardata_demographics <- function(result, survey) {
   result$sdeduc <- sqrt(result$vareduc)
   result$meaned <- group_summary(result$educ4)
   result$meanage <- group_summary(result$ppage)
-  # The group share predates the individual threshold revision (UKH-08).
-  result$phighinc <- group_summary(as.numeric(result$highinc_early))
-  result$pfemale_ind <- (
-    result$pfemale * result$groupsize - result$female
-  ) / (result$groupsize - 1)
+  result$phighinc <- group_summary(result$highinc)
+  result$pfemale_ind <- observed_peer_mean(result$female, result$pollgroup)
 
   attitudes <- as.matrix(result[grep("^ukhealth[.]t1", names(result))])
-  # These summaries precede the severity rescaling in 05_fix_data.R (UKH-09).
-  attitudes[, "ukhealth.t1severi"] <-
-    result$severity_t1_unscaled
   result$meanxtreme <- group_summary(result$attextreme)
   result$avgsd <- ave(seq_len(nrow(result)), result$pollgroup,
     FUN = function(rows) mean(apply(attitudes[rows, ], 2, sd, na.rm = TRUE))
@@ -133,7 +133,9 @@ compare_health_polardata <- function(rebuilt, benchmark, tolerance = 1e-10) {
   )
   parity <- purrr::map(fields, function(field) {
     actual <- rebuilt[[field]]
-    expected <- reference[[field]]
+    expected <- approved_reference_values(
+      "uk-health-1998", field, rebuilt$caseid, reference[[field]], tolerance
+    )
     both <- !is.na(actual) & !is.na(expected)
     errors <- abs(actual[both] - expected[both])
     tibble::tibble(
@@ -147,7 +149,7 @@ compare_health_polardata <- function(rebuilt, benchmark, tolerance = 1e-10) {
   }) |> purrr::list_rbind()
   changed <- parity$missingness_differences != 0 | parity$value_differences != 0
   if (any(changed)) {
-    stop("UK Health reconstruction differs from historical polardata")
+    stop("UK Health reconstruction differs from the reviewed reference")
   }
   parity
 }

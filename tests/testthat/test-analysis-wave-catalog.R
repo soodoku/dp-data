@@ -3,7 +3,8 @@ source(file.path(root, "R", "analysis_wave_catalog.R"))
 test_that("published phase tables retain their declared Arrow types", {
   tables <- c(
     "analysis_studies", "analysis_survey_waves",
-    "analysis_phase_participants", "analysis_phase_scores"
+    "analysis_phase_participants", "analysis_phase_scores",
+    "analysis_phase_item_responses"
   )
   for (table in tables) {
     published <- arrow::read_parquet(
@@ -30,12 +31,16 @@ test_that("wave catalog separates studies, phases and survey instances", {
   expect_true(all(c("amr-2024", "bulgaria-crime-2002") %in% studies$poll_id))
 })
 
-test_that("retained arrivals are not confused with exported score coverage", {
+test_that("retained arrivals have scores with explicit battery scope", {
   waves <- analysis_wave_catalog()$analysis_survey_waves
   arrivals <- dplyr::filter(waves, wave == "t1")
   missing_exports <- dplyr::filter(
-    arrivals, availability == "source_exists_but_not_exported"
+    arrivals, poll_id %in% c(
+      "california-whats-next-2011", "europolis-2009", "denmark-euro-2000",
+      "vermont-energy-2007", "michigan-2009"
+    )
   )
+  expect_true(all(missing_exports$availability == "score_exported"))
   expect_setequal(missing_exports$poll_id, c(
     "california-whats-next-2011", "europolis-2009", "denmark-euro-2000",
     "vermont-energy-2007", "michigan-2009"

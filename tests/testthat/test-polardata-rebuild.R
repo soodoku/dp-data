@@ -96,7 +96,7 @@ test_that("derived exports preserve unique people and reviewed gain", {
                   "ukge-05-v2")
   health_gender <- derived$poll_id == "btp-health-education-2005" &
     derived$legacy_field %in% c(
-      "pfemale", "varfemale", "sdfemale", "pfemale_ind"
+      "pfemale", "varfemale", "sdfemale"
     )
   expect_setequal(unique(derived$definition_version[health_gender]),
                   "btphe-01-v2")
@@ -134,11 +134,15 @@ test_that("derived exports preserve unique people and reviewed gain", {
                   "pr-02-v2")
   primaries_group <- derived$poll_id == "btp-presidential-primaries-2004" &
     derived$legacy_field %in% c(
-      "groupsize", "vareduc", "sdeduc", "pfemale_ind",
+      "groupsize", "vareduc", "sdeduc",
       "meant1know_ind", "meant1knowcor_ind"
     )
   expect_setequal(unique(derived$definition_version[primaries_group]),
                   "pr-03-v2")
+  peer_gender <- derived$legacy_field == "pfemale_ind"
+  expect_equal(sum(peer_gender), 5869L)
+  expect_setequal(unique(derived$definition_version[peer_gender]),
+                  "observed-peers-v2")
 })
 
 test_that("PR-03 keeps approved group values and rejects duplicate people", {

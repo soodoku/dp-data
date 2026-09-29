@@ -14,7 +14,7 @@ test_that("canonical item catalog covers both scored baseline batteries", {
       source_column_t1 = .data$source_column
     )
 
-  expect_equal(nrow(catalog), 245L)
+  expect_equal(nrow(catalog), 253L)
   expect_equal(dplyr::n_distinct(catalog$poll_id), 31L)
   expect_false(anyDuplicated(catalog[c("poll_id", "item_id")]) > 0L)
   has_historical <- !is.na(catalog$historical_item_id)
@@ -22,7 +22,11 @@ test_that("canonical item catalog covers both scored baseline batteries", {
   control <- catalog$poll_id %in% c(
     "america-in-one-room-2019", "a1r-climate-2021", "amr-2024"
   )
-  expect_true(all(has_historical | has_cor | control))
+  phase_only <- catalog$poll_id %in% c(
+    "california-whats-next-2011", "europolis-2009", "michigan-2009"
+  ) & !has_historical & !has_cor
+  expect_equal(sum(phase_only), 8L)
+  expect_true(all(has_historical | has_cor | control | phase_only))
   expect_equal(sum(has_historical & has_cor), 123L)
   expect_setequal(
     catalog$source_column_t1[control],
