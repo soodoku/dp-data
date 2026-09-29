@@ -106,7 +106,10 @@ core_poll_profile <- function(survey, poll_id) {
 }
 
 historical_fractional_gain <- function(corrected, group) {
-  stopifnot(nrow(corrected) == length(group), !anyNA(corrected))
+  stopifnot(
+    nrow(corrected) == length(group),
+    !anyNA(corrected[!is.na(group), , drop = FALSE])
+  )
   size <- historical_group_summary(rep(1, length(group)), group, sum)
   peer <- apply(corrected, 2, function(value) {
     historical_group_summary(value, group) * size / (size - 1)

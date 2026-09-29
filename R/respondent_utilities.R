@@ -96,7 +96,16 @@ utility_knowledge_items <- function(survey, poll_id, wave) {
     )
     as.numeric(value %in% correct)
   })
-  as.matrix(tibble::as_tibble(values))
+  scored <- as.matrix(tibble::as_tibble(values))
+  if (poll_id %in% c("swepco-1996", "wtu-1996") && wave == 2L) {
+    participant <- read_source_codes(survey, "PART", 1:2)
+    stopifnot(!anyNA(participant))
+    absent <- participant == 2L
+    post_fields <- paste0(toupper(names(key)), "2")
+    stopifnot(all(is.na(survey[absent, post_fields])))
+    scored[absent, ] <- NA_real_
+  }
+  scored
 }
 
 utility_demographics <- function(survey, poll_id) {

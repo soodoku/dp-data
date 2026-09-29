@@ -114,7 +114,13 @@ audit_historical_covariances <- function(benchmark, reviewed = NULL) {
   purrr::map_dfr(polls, function(poll_id) {
     survey <- read_poll_survey(poll_id)
     profile <- if (poll_id == "uk-eu-1995") {
-      core_poll_profile(survey, poll_id)
+      historical <- core_poll_profile(survey, poll_id)
+      # This diagnostic explains the frozen benchmark's original covariance.
+      for (stem in c("commies", "favref")) {
+        historical$attitudes[[paste0("ukeu.", stem, "1r")]] <-
+          (as.numeric(survey[[paste0(stem, "1")]]) - 1) / 8
+      }
+      historical
     } else if (poll_id == "zeguo-2005") {
       list(
         attitudes = zeguo_attitudes(survey, 1L),

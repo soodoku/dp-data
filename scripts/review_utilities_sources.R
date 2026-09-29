@@ -9,6 +9,14 @@ reviews <- purrr::map(c("swepco-1996", "wtu-1996"), function(poll) {
   review <- review_utilities_original(poll)
   original <- review$original
   attendees <- original[original$PART == 1L, ]
+  absent_items <- historical |>
+    dplyr::filter(
+      poll_id == poll, respondent_id %in% review$absent_post_ids, wave == 2L
+    )
+  stopifnot(
+    nrow(absent_items) == length(review$absent_post_ids) * 5L,
+    all(is.na(absent_items$correct))
+  )
   item_names <- c("source", "use", "rt", "smog", "setrt")
   keys <- if (poll == "swepco-1996") c(1, 3, 1, 2, 1) else c(3, 1, 1, 2, 1)
   evidence <- purrr::map(1:2, function(wave) {
@@ -55,7 +63,9 @@ reviews <- purrr::map(c("swepco-1996", "wtu-1996"), function(poll) {
     absence = tibble::tibble(
       poll_id = poll,
       respondent_id = review$absent_post_ids, source_part = 2L,
-      direct_post_fields = 74L, observed_post_fields = 0L
+      direct_post_fields = 74L, observed_post_fields = 0L,
+      historical_post_score = 0, approved_post_score = NA_real_,
+      correction_status = "approved"
     )
   )
 })

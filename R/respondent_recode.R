@@ -24,8 +24,12 @@ as_historical_float <- function(value) {
 
 summarise_historical_knowledge <- function(before, after,
                                            baseline = rowMeans(before)) {
-  stopifnot(identical(dim(before), dim(after)), !anyNA(before), !anyNA(after),
-    all(before %in% 0:1), all(after %in% 0:1)
+  stopifnot(
+    identical(dim(before), dim(after)),
+    all(is.na(before) | before %in% 0:1),
+    all(is.na(after) | after %in% 0:1),
+    all(rowSums(is.na(before)) %in% c(0L, ncol(before))),
+    all(rowSums(is.na(after)) %in% c(0L, ncol(after)))
   )
   tibble::tibble(
     knowledge_t1 = baseline,
