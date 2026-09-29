@@ -123,7 +123,9 @@ source_nonanswer_codes <- function(labels) {
   nonanswers <- c(
     "don't know", "dk", "can't say", "can't choose", "couldn't say",
     "refused", "no answer", "not answered", "not asked", "not applicable",
-    "item not applicable", "skipped on web"
+    "item not applicable", "skipped on web",
+    "haven't thought much about that", "haven't thought much about this",
+    "haven't thought much about it"
   )
   labels |>
     dplyr::mutate(
@@ -202,6 +204,13 @@ source_response_rows <- function(survey, people, inputs, items) {
     if (people$poll_id[[1]] == "new-haven-2004" &&
           grepl("^(pre|mid|post)_q(12|13|20|21|22|23)$", field)) {
       known_missing <- union(known_missing, c("0", "6"))
+    }
+    if (people$poll_id[[1]] == "cpl-1996" &&
+      grepl(paste0(
+        "^(resch|fedrch|addfac|reduce|lowinc|poor|renew|wind|",
+        "fuels|buypwr|compet)[12]$"
+      ), field)) {
+      known_missing <- union(known_missing, "99")
     }
     status <- ifelse(missing, "system-missing", ifelse(
       code %in% known_missing | in_range, "non-substantive", ifelse(

@@ -1555,10 +1555,11 @@ Correctness stays missing in response tables; the explicitly named zero-filled
 score counts it as zero. Seven-item scores and gender match the deposit for
 216 participants in 16 groups.
 
-**Next check:** re-read the missing-code specification and both version
-transforms before collapsing response reasons. Wider sample and attitude fields
-remain outside this parity result. Evidence is in the existing utilities audit;
-this pass did not repeat its entire instrument audit.
+The 2026-09-28 attitude review also compared all 21 attitude dependencies used
+by the maintained indices and summaries across the full 1,246 source rows in
+`cpl.sav` and `cpl2.sav`. Substantive values and source identities agree after
+99 is treated as missing. This is not a claim that every field in the two source
+versions is equivalent; unused ranking and employment fields differ separately.
 
 **CPL-02 — historical IDs and staged normalization.** `tx_cpl.R` generates
 `paste0(29, 10000 + source_row)` before retaining nonmissing groups. These aliases
@@ -1606,9 +1607,80 @@ descriptors are needed, define and compare them explicitly
 in the expanded schema rather than silently redefining the historical fields.
 Codebook 99/999 sentinels are preserved in raw responses and removed where
 required for historical scoring.
-Dictionary-based `response_status` does not yet encode every codebook sentinel
-in these newly added demographic and attitude fields; `n_observed_fields` must
-not be used as a scoring denominator or validated response-completeness count.
+The CPL-04 transport correction below now classifies code 99 in the reviewed
+attitude dependencies. This does not certify every demographic or unused source
+field, and `n_observed_fields` is not a scoring denominator.
+
+### CPL-04: Codebook don't-know attitudes no longer count as observed inputs
+
+**Status: authorized transport-consistency correction.** The original CPL
+source has no embedded value labels for these fields, but the retained
+[codebook](../data/cpl-1996/codebook.txt) explicitly labels 99 as DK. All 22
+component-wave frequency tables, including both competition questions, agree
+with the raw source. The 21 dependencies exported for the six paired indices
+and seven-index baseline summary contain 1,001 code-99 answers across 498 source
+people. Previously these were marked `answered` despite already being excluded
+from the numerical indices. They now have `response_status = non-substantive`
+and `missing_code = 99`. Valid zero and ten ratings remain substantive.
+
+Exactly 1,180 `n_observed_fields` records decrease; every numeric measure, raw
+value, source/historical identifier and sample remains unchanged. Independent
+before/after records are retained in
+`audit/corrections/cpl-1996/attitude_input_status.csv` and
+`audit/corrections/cpl-1996/observed_input_counts.csv`. This correction does not
+replace the historical available-component mean with a fixed denominator.
+
+### CPL-06: Utility attitude indices and summary batteries independently reviewed
+
+The read-only 2026-09-28 review independently reconstructed every component,
+all six attitude pairs, and the seven-index baseline summary for CPL, WTU and
+SWEPCO. Raw-to-output checks cover all 1,246/1,230/1,478 source people and
+216/230/232 selected people in 16/14/14 groups, respectively. Source and
+historical IDs, membership, individual extremity, group mean extremity, average
+SD and generalized variance reproduce, including the approved X-15 missing
+values for invalid pairwise covariance. No new selected attitude-score recode
+is supported by this pass. Available-component and missing counts for both
+waves and populations are in `audit/utility-attitude-coverage.csv`.
+
+| Index | CPL components | WTU/SWEPCO components and retained policy |
+| --- | --- | --- |
+| Research | RESCH and FEDRCH, each divided by ten, then available mean | Available mean of RESCH/FEDRCH; FEDRCH is wholly absent in these two sources, so the observed index uses RESCH alone. All-missing input is filled as raw five before calibration. |
+| Conservation | ADDFAC and REDUCE, divided by ten, then available mean; baseline export has the additional .05–1 attendee calibration | ADDFAC and REDUCE available mean; the approved post typo correction is retained. WTU baseline/post minima 2/1.5; SWEPCO 3/0; maximum ten. All-missing input is filled as .5 after calibration. |
+| Low-income support | Mean of LOWINC/10 and (POOR−1)/4 | NEEDTO/10, with missing filled as raw five; the earlier construct remains the approved definition. |
+| Renewables | RENEW and WIND, divided by ten, then available mean | RENEW and WIND available mean; WTU minimum 2.5 at both waves; SWEPCO minimum 1/0; maximum ten. All-missing input is filled as .5 after calibration. |
+| Fossil fuels | FUELS baseline /10; post (FUELS−1)/9 | FUELS/10, with missing filled as raw five. |
+| Imported power | BUYPWR/10 | BUYPWR/10, with missing filled as raw five. |
+
+Each baseline summary also includes COMPET, mapped (COMPET−1)/4. CPL missing
+competition stays missing; the historical WTU/SWEPCO raw-five fill maps to one,
+not the scale midpoint. Those observed-form missing-item choices, the seventh
+summary index, nested available means and historical wave calibrations are
+preserved. Applying attendee calibrations outside the historical sample yields
+three negative CPL baseline conservation values, five WTU conservation/seven
+renewables values and 13 SWEPCO conservation/four renewables values. These are
+expanded-source historical transformations, not evidence to clamp answers or
+silently replace the approved selected-sample metric.
+
+**Rejected direction concern.** Although the CPL POOR prompt lists agreement
+first, its frequency-table labels explicitly code strong disagreement as one
+and strong agreement as five. The maintained positive direction is correct for
+that source. An October 2006 index memo gives reversed POOR means (3.42/3.25
+versus raw 2.578125/2.752525); it also reproduces several means only when DK is
+temporarily coded eleven. Neither feature licenses reversing or treating DK as
+substantive in the maintained source. The codebook and both source versions
+agree on its actual response values.
+
+**Evidence boundary.** All 58 component-wave frequency tables across the three
+polls agree with the original raw values, including DK counts; the retained
+codebooks supply question wording and numerical direction. The 57-page utility
+questionnaire compendium has no verified section for these three polls, so this
+is not a claim of complete fielded-instrument verification. The earlier broad
+index memo, later six-index catalog and executed scripts describe distinct
+batteries. No supplied survey-weight field was identified in these raw surveys;
+this pass preserves the existing unweighted summaries and does not decide a
+weighted estimand. T1 is the telephone interview before invitation and T2 the
+post-meeting questionnaire, supported by the codebook and utilities design
+report; separate exact CPL event-date bounds remain documented in poll facts.
 
 ### CPL-05: Group gain uses a truncated early group-size calculation
 
@@ -5797,6 +5869,39 @@ so its larger values mean *less* interest. The separate upstream
 `political_interest_t1_harmonized` maps the directly observed ordinal
 answers to a 0–1 higher-more scale. These are three different definitions;
 the harmonized column does not justify silently rewriting the historical one.
+
+### PR-04: All three main attitude pairs verified; unconsidered responses excluded
+
+Both fielded questionnaires support the retained directions. Q2 asks about
+sharing control of Iraq and is reversed on the 1–5 scale; Q3 asks about
+unilaterally invading and is forward on 1–5; Q29 asks about UN approval and is
+forward on 1–7. Higher values of their available-component mean indicate more
+multilateralism; a wholly missing battery remains missing. Q25 runs toward more
+public services; Q31 runs toward protecting US industries. The catalog's
+“Free Trade” is a topic label, not a claim that higher values favor freer trade.
+The three seven-point questions retain their stored float32 mapping
+0/.167/.333/.5/.667/.833/1. Refused/not-asked −1/−2 remain missing.
+
+Independent reconstruction reproduces every one of the six wave-index fields
+against the original stored indices for all 1,289 source people, the expanded
+respondent measures and the 217 historical selected people. Baseline extremity
+also reproduces for all 217. The 19 checks and missing/component coverage are
+retained in `audit/primaries-attitudes/index_checks.csv` and
+`audit/primaries-attitudes/index_coverage.csv`. No attitude-score, person or group
+change is supported by this review.
+
+**Typed-status correction only.** Q2/Q3 code six explicitly means “haven't
+thought much about that”; the numeric attitude recoder already excludes it.
+Exactly 138 source responses (52/41 baseline and 27/18 follow-up) across 92
+people were incorrectly marked `answered`. The shared exact-label classifier
+now marks them `non-substantive`, preserves raw six and records its missing
+reason. Exactly 177 measure input counts decrease. Code eight is the nonanswer
+for the seven-point questions and is already missing in the supplied source.
+The same exact-label rule corrects 358 BTP National and 848 NIC2 source statuses,
+with 451/1,760 input counts decreasing; all numeric measures remain unchanged.
+The rule recognizes only the three unambiguous labels ending “that,” “this” or
+“it,” and does not guess at corrupt labels ending in a trailing eight or at
+codes with conflicting labels.
 
 ### PR-02: Peer gain now uses the whole group (corrected)
 
