@@ -1,0 +1,5 @@
+item,party,wave,published_text,published,decimal_places,correct_n,correct_mean,sentinel_n,sentinel_mean,correct_matches,sentinel_matches
+Q2A,rep,pre,7.050,7.05,2,126,7.023809523809524,127,7.047244094488189,FALSE,TRUE
+Q2A,rep,post,4.720,4.72,2,126,4.825396825396825,127,4.724409448818898,FALSE,TRUE
+Q3A,rep,pre,3.7,3.7,1,108,3.759259259259259,109,3.724770642201835,FALSE,TRUE
+Q3A,rep,post,4.54,4.54,2,108,4.6574074074074066,109,4.541284403669724,FALSE,TRUE
