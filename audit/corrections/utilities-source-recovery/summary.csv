@@ -1,0 +1,3 @@
+poll_id,source_rows,source_columns,attendees,collapsed_nonanswers,recovered_attendee_knowledge_nonanswers,absent_post_forms,attendee_item_correctness_changes
+swepco-1996,1478,195,232,14774,436,1246,0
+wtu-1996,1230,195,230,12823,409,1000,0

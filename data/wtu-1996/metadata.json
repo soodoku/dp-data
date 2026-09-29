@@ -597,6 +597,51 @@
       "publication_status": "published",
       "notes": "Generated from data/shared/papers/util-appam.doc. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Cross-poll Texas utility analysis; differs from utilities-paper in tables/combined versus per-poll results; not interchangeable. Read extracted text/methods/tables and checked existing poll_references. No pipeline reads this paper.",
       "relative_path": "../shared/papers/util-appam.pdf"
+    },
+    {
+      "artifact_id": "cdd-wtu-1996-original-portable",
+      "poll_id": "wtu-1996",
+      "artifact_type": "data",
+      "title": "Original survey before nonanswer collapse",
+      "location": "data/wtu-1996/source-materials/survey-original.por",
+      "source_id": "cdd-wtu-1996-original-portable",
+      "original_archive_path": "data/Utilities/wt/wt_data/wt.por",
+      "sha256": "5fd9f3b1b01eff7abbf4d9c7271959b8188e55360d5997e6527ad3019c4dd082",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "All 195 numeric fields already occur in the public maintained survey; original 98/99/999 nonanswers retained. No unique identifying header or dictionary content. Original bytes unchanged; read with R/source_utilities.R.",
+      "relative_path": "source-materials/survey-original.por"
+    },
+    {
+      "artifact_id": "cdd-wtu-1996-original-missing-values",
+      "poll_id": "wtu-1996",
+      "artifact_type": "script",
+      "title": "Original missing-value recode",
+      "location": "data/wtu-1996/scripts/original-missing-values.sas",
+      "source_id": "cdd-wtu-1996-original-missing-values",
+      "original_archive_path": "data/Utilities/wt/make_data/missingvalues.sas",
+      "sha256": "5b9252c888ba4cde5cd4d52638e7051953c03917ff09c55371dbef19349fc3e1",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original authored nonanswer collapse. Retained as coding evidence, not executed; no respondent records or credentials.",
+      "relative_path": "scripts/original-missing-values.sas"
+    },
+    {
+      "artifact_id": "cdd-wtu-1996-original-construction",
+      "poll_id": "wtu-1996",
+      "artifact_type": "script",
+      "title": "Original survey construction",
+      "location": "data/wtu-1996/scripts/original-survey-construction.sas",
+      "source_id": "cdd-wtu-1996-original-construction",
+      "original_archive_path": "data/Utilities/wt/make_data/wt.sas",
+      "sha256": "1f6fff1bc35ff4c420131176eef9231256ff8e029aa07e67dfb52265265d25d0",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original authored source assembly and variable labels, including baseline-only nonparticipant input. Retained as evidence, not executed; institutional file paths preserved.",
+      "relative_path": "scripts/original-survey-construction.sas"
     }
   ],
   "document_previews": [
