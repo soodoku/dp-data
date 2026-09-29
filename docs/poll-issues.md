@@ -2225,6 +2225,23 @@ the independent raw calculation with `Rscript scripts/review_australia_ranking.R
 [approved historical values](../audit/corrections/australia-republic-1999/approved_values.csv)
 preserve both sides of the correction without relying on overwritten outputs.
 
+**Downstream point-estimate check.** With `dp-learning` commit `2880c14`,
+the corrected baseline policy indices change ten individual extremity values
+and 143 repeated group-disagreement and standard-deviation values, across ten
+Australian groups. One of the eleven index changes leaves absolute distance
+from .5 unchanged. None becomes missing. The attitude models retain all 8,350
+people, including 344 Australians; the demographic model on that same sample
+is unchanged. In the main attitude model, the extremity coefficient moves from
+0.01688996 to 0.01636405 and disagreement from −0.09785503 to −0.09941042. In
+the standard-deviation sensitivity model, the corresponding coefficients move
+from 0.01746649 to 0.01694281 and −0.11227705 to −0.11373790. The
+[frame comparison](../audit/corrections/australia-republic-1999/ranking_learning_frame_changes.csv),
+[model samples](../audit/corrections/australia-republic-1999/ranking_learning_model_samples.csv)
+and [point estimates](../audit/corrections/australia-republic-1999/ranking_learning_model_estimates.csv)
+record this isolated check. No bootstrap intervals or manuscript were rebuilt
+for this increment; the paper remains explicitly pinned to pre-AUS-06
+`dp-data` commit `f22f17f` until its next coordinated update.
+
 **Broader attitude review.** Both main indices at both waves were independently
 reconstructed from raw questions, with exact agreement before the approved
 change. The five original summary batteries—autonomy, workability, democracy,

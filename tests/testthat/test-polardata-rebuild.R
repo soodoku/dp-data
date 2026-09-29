@@ -668,8 +668,9 @@ test_that("Australia gains use aligned respondents and twelve scored items", {
   ), show_col_types = FALSE)
   expect_setequal(unique(approved$legacy_field),
                   c("grpgain", "loggain", "attextreme", "meanxtreme",
-                    "aus.popparl2", "ppage", "meanage", "numitems"))
-  expect_equal(nrow(approved), 347L * 8L)
+                    "aus.popparl2", "aus.republican1", "aus.republican2",
+                    "ppage", "meanage", "numitems"))
+  expect_equal(nrow(approved), 347L * 10L)
   data <- full_polardata()
   australia <- data[data$pollid == 26, ]
   expect_equal(nrow(australia), 347L)

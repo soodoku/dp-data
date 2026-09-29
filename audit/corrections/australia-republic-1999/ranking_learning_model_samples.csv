@@ -1,0 +1,7 @@
+model,stage,people,australia_people
+attitudes,previous,8350,344
+attitudes,approved,8350,344
+attitude_sd,previous,8350,344
+attitude_sd,approved,8350,344
+demographic_attitude_sample,previous,8350,344
+demographic_attitude_sample,approved,8350,344

@@ -1526,8 +1526,8 @@ australia-republic-1999,knowgainr2,347,0,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,educ3,347,347,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,aus.popparl1,347,347,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,aus.popparl2,347,272,26,5,0,31,FALSE,0,0.25,1e-10
-australia-republic-1999,aus.republican1,347,347,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
-australia-republic-1999,aus.republican2,347,347,0,0,0,0,FALSE,0,3.3306690738754696e-16,1e-10
+australia-republic-1999,aus.republican1,347,347,0,11,0,11,FALSE,0,0.16666666666666696,1e-10
+australia-republic-1999,aus.republican2,347,347,0,13,0,13,FALSE,0,0.5,1e-10
 australia-republic-1999,btp04pr.t1trade,347,0,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,btp04pr.t1mindex,347,0,0,0,0,0,FALSE,0,0,1e-10
 australia-republic-1999,btp04pr.t1services,347,0,0,0,0,0,FALSE,0,0,1e-10
