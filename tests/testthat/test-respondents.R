@@ -257,9 +257,10 @@ test_that("definitions match historical or approved values by IDs", {
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "zeguo-2005"
   ]), 1L)
+  # NIC-12 adds 1,159 attitude-index and 28 extremity missing values.
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "nic-1996"
-  ]), 4L)
+  ]), 4L + 1159L + 28L)
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "btp-national-2003"
   ]), 245L)

@@ -174,15 +174,55 @@
       "local_artifact_id": "material-29cbe30c018c2d68-australia-republic-1999",
       "accessed": "2026-09-24",
       "notes": "Local file: data/uk-crime-1994/papers/consideredopinions.pdf"
+    },
+    {
+      "reference_id": "australia-t1-questionnaire-source",
+      "poll_id": "australia-republic-1999",
+      "kind": "questionnaire",
+      "title": "Australian DP initial telephone questionnaire",
+      "url": null,
+      "local_artifact_id": "australia-t1-questionnaire-source",
+      "accessed": "2026-09-28",
+      "notes": "Newspoll job 990906; baseline A6(a/b) ranks three constitutional options. Blank form; not respondent answers."
+    },
+    {
+      "reference_id": "australia-t1-questionnaire-preview",
+      "poll_id": "australia-republic-1999",
+      "kind": "questionnaire",
+      "title": "Australian DP initial telephone questionnaire (PDF preview)",
+      "url": null,
+      "local_artifact_id": "australia-t1-questionnaire-preview",
+      "accessed": "2026-09-28",
+      "notes": "Newspoll job 990906; baseline A6(a/b) ranks three constitutional options. Blank form; not respondent answers. PDF preview of retained original."
+    },
+    {
+      "reference_id": "australia-jim-australia-indices-source",
+      "poll_id": "australia-republic-1999",
+      "kind": "codebook",
+      "title": "Jim’s review of Australian attitude indices",
+      "url": null,
+      "local_artifact_id": "australia-jim-australia-indices-source",
+      "accessed": "2026-09-28",
+      "notes": "Authored exploratory memo distinguishes empirical premises from policy preferences and proposes using the constitutional ranking. Not proof that all proposed indices were adopted."
+    },
+    {
+      "reference_id": "australia-jim-australia-indices-preview",
+      "poll_id": "australia-republic-1999",
+      "kind": "codebook",
+      "title": "Jim’s review of Australian attitude indices (PDF preview)",
+      "url": null,
+      "local_artifact_id": "australia-jim-australia-indices-preview",
+      "accessed": "2026-09-28",
+      "notes": "Authored exploratory memo distinguishes empirical premises from policy preferences and proposes using the constitutional ranking. Not proof that all proposed indices were adopted. PDF preview of retained original."
     }
   ],
   "material_coverage": [
     {
       "poll_id": "australia-republic-1999",
       "material_type": "questionnaires",
-      "status": "not-found",
-      "notes": "Reviewed local manifests, archived material titles/content and official event/research sources; availability does not establish complete wave/language coverage.",
-      "checked_references": "australia-republic-1999-stanford-event;australia-republic-1999-local-cdd-australia-republic-1999-survey-variables;australia-republic-1999-local-cdd-australia-republic-1999-survey-value-labels;australia-republic-1999-local-cdd-australia-republic-1999-codebook;australia-republic-1999-local-material-218f80d359921e91-australia-republic-1999;australia-republic-1999-local-material-7731a4ce1a2d98a7-australia-republic-1999;australia-republic-1999-local-material-a7a3c9c03cb4f75a-australia-republic-1999;australia-republic-1999-local-material-7ad6c3c2eb5f0731-australia-republic-1999;australia-republic-1999-referendum-paper;australia-republic-1999-british-comparative-overview"
+      "status": "available",
+      "notes": "Retained original Newspoll initial telephone questionnaire, job 990906. This establishes baseline wording and routing; exit questionnaire not recovered.",
+      "checked_references": "australia-republic-1999-stanford-event;australia-republic-1999-local-cdd-australia-republic-1999-survey-variables;australia-republic-1999-local-cdd-australia-republic-1999-survey-value-labels;australia-republic-1999-local-cdd-australia-republic-1999-codebook;australia-republic-1999-local-material-218f80d359921e91-australia-republic-1999;australia-republic-1999-local-material-7731a4ce1a2d98a7-australia-republic-1999;australia-republic-1999-local-material-a7a3c9c03cb4f75a-australia-republic-1999;australia-republic-1999-local-material-7ad6c3c2eb5f0731-australia-republic-1999;australia-republic-1999-referendum-paper;australia-republic-1999-british-comparative-overview;australia-t1-questionnaire-source"
     },
     {
       "poll_id": "australia-republic-1999",
@@ -498,6 +538,66 @@
       "publication_status": "published",
       "notes": "Generated from data/shared/design/poll_details/appendix-poll-details-5-18-14-e.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Already cited across21 poll references; includes24 polls and four source-linked duration comments. Compared all14 DOCX table rows plus comments XML, and corresponding PDF texts. No executable code reads these appendices.",
       "relative_path": "../shared/design/poll_details/appendix-poll-details-5-18-14-e.pdf"
+    },
+    {
+      "artifact_id": "australia-t1-questionnaire-source",
+      "poll_id": "australia-republic-1999",
+      "artifact_type": "questionnaire",
+      "title": "Australian DP initial telephone questionnaire",
+      "location": "data/australia-republic-1999/questionnaires/t1-questionnaire.doc",
+      "source_id": "australia-t1-questionnaire-source",
+      "original_archive_path": "data/australia_republic/MasterData/Australia_DP/T1QuestionnaireAustralia.doc",
+      "sha256": "d07383e1b501eb5f924c156e55ed3f84f2efbfce5e89d2af52deb1bc11c01af4",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Newspoll job 990906; baseline A6(a/b) ranks three constitutional options. Blank form; not respondent answers.",
+      "relative_path": "questionnaires/t1-questionnaire.doc"
+    },
+    {
+      "artifact_id": "australia-t1-questionnaire-preview",
+      "poll_id": "australia-republic-1999",
+      "artifact_type": "questionnaire",
+      "title": "Australian DP initial telephone questionnaire (PDF preview)",
+      "location": "data/australia-republic-1999/questionnaires/t1-questionnaire.pdf",
+      "source_id": "australia-t1-questionnaire-preview",
+      "original_archive_path": "data/australia_republic/MasterData/Australia_DP/T1QuestionnaireAustralia.doc",
+      "sha256": "7f65f3b46d9d43fa6085b2b4de7bdf20302d85679b9f1dceaa977414cda8d535",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Newspoll job 990906; baseline A6(a/b) ranks three constitutional options. Blank form; not respondent answers. PDF preview of retained original.",
+      "relative_path": "questionnaires/t1-questionnaire.pdf"
+    },
+    {
+      "artifact_id": "australia-jim-australia-indices-source",
+      "poll_id": "australia-republic-1999",
+      "artifact_type": "codebook",
+      "title": "Jim’s review of Australian attitude indices",
+      "location": "data/australia-republic-1999/codebooks/jim-australia-indices.txt",
+      "source_id": "australia-jim-australia-indices-source",
+      "original_archive_path": "data/australia_republic/jim_aus_indices.txt",
+      "sha256": "a6b6505bb8eb6e3486eb448d4698fcce4dea8a1775c30584184a04144fca181d",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Authored exploratory memo distinguishes empirical premises from policy preferences and proposes using the constitutional ranking. Not proof that all proposed indices were adopted.",
+      "relative_path": "codebooks/jim-australia-indices.txt"
+    },
+    {
+      "artifact_id": "australia-jim-australia-indices-preview",
+      "poll_id": "australia-republic-1999",
+      "artifact_type": "codebook",
+      "title": "Jim’s review of Australian attitude indices (PDF preview)",
+      "location": "data/australia-republic-1999/codebooks/jim-australia-indices.pdf",
+      "source_id": "australia-jim-australia-indices-preview",
+      "original_archive_path": "data/australia_republic/jim_aus_indices.txt",
+      "sha256": "3cc09514d47935a8df4fec46ac85c88a9ed2d1797ee5e4ecfeb0889cc2b2dfe1",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Authored exploratory memo distinguishes empirical premises from policy preferences and proposes using the constitutional ranking. Not proof that all proposed indices were adopted. PDF preview of retained original.",
+      "relative_path": "codebooks/jim-australia-indices.pdf"
     }
   ],
   "document_previews": [
@@ -580,6 +680,38 @@
       "distinct_word_coverage": "1.0",
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+    },
+    {
+      "source_path": "data/australia-republic-1999/questionnaires/t1-questionnaire.doc",
+      "preview_path": "data/australia-republic-1999/questionnaires/t1-questionnaire.pdf",
+      "source_sha256": "d07383e1b501eb5f924c156e55ed3f84f2efbfce5e89d2af52deb1bc11c01af4",
+      "preview_sha256": "7f65f3b46d9d43fa6085b2b4de7bdf20302d85679b9f1dceaa977414cda8d535",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "9",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-representative-pages",
+      "visual_pages": "2;3;9",
+      "source_token_coverage": "1.0",
+      "distinct_word_coverage": "1.0",
+      "qa_notes": "Reviewed ranking question, adjacent Likert labels and final page; original document retained.",
+      "rebuild_command": "soffice --headless --convert-to pdf --outdir data/australia-republic-1999/questionnaires data/australia-republic-1999/questionnaires/t1-questionnaire.doc"
+    },
+    {
+      "source_path": "data/australia-republic-1999/codebooks/jim-australia-indices.txt",
+      "preview_path": "data/australia-republic-1999/codebooks/jim-australia-indices.pdf",
+      "source_sha256": "a6b6505bb8eb6e3486eb448d4698fcce4dea8a1775c30584184a04144fca181d",
+      "preview_sha256": "3cc09514d47935a8df4fec46ac85c88a9ed2d1797ee5e4ecfeb0889cc2b2dfe1",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "2",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-representative-pages",
+      "visual_pages": "1;2",
+      "source_token_coverage": "1.0",
+      "distinct_word_coverage": "1.0",
+      "qa_notes": "Two-page memo retained verbatim; PDF text and both pages reviewed.",
+      "rebuild_command": "soffice --headless --convert-to pdf --outdir data/australia-republic-1999/codebooks data/australia-republic-1999/codebooks/jim-australia-indices.txt"
     }
   ]
 }

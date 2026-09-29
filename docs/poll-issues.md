@@ -2104,8 +2104,10 @@ Study, described there as a 3,400-record survey, while this deliberative-poll
 source contains 4,659 rows. It cannot establish these poll-specific question
 wordings or recodes. For these corrections we rely on the archived poll script,
 labels attached to this poll's `survey.sav`, its reconstructed indices, and the
-poll [paper](../data/australia-republic-1999/papers/adp5.pdf). Find the fielded
-poll questionnaire before deciding AUS-01 or AUS-02.
+poll [paper](../data/australia-republic-1999/papers/adp5.pdf). The initial
+telephone questionnaire has now been recovered (AUS-06); the exit instrument
+and the exact source transformation behind the routing defaults remain needed
+to settle the separate AUS-01/AUS-02 routing question.
 
 ### AUS-04: Participant gains now join by source row
 
@@ -2193,6 +2195,77 @@ unchanged. Current canonical analysis outputs are byte-identical. Both
 respondent and aggregate comparisons have zero unexplained differences.
 The existing frozen comparison rows were preserved verbatim, with 694
 age/group-mean rows appended; no prior correction values were rewritten.
+
+### AUS-06: A first preference for the Queen survives an unanswered second choice
+
+**Approved and implemented.** The [initial telephone questionnaire](../data/australia-republic-1999/questionnaires/t1-questionnaire.pdf),
+Newspoll job 990906, p.2 A6(a/b), asks which of three constitutional options the
+respondent most prefers, then which of the remaining two comes next. Code 3
+is keeping the Queen and Governor General. The archived `aus_republic.R`
+lines 330–341 and the attitude appendix (PDF pp.9–10) say Queen first scores
+0, second or don't know .5, and third 1. The script assigned first-place 0
+before applying the second-choice missing-code rule, which overwrote that
+known first preference with .5. The corrected rule gives a stated first
+preference priority. It retains all other authored midpoint rules, the
+popular-versus-parliament ranking, and the available-component mean of rank,
+constitutional ties and an Australian head of state.
+
+Among the same 347 people, 11 baseline and 13 exit republican-index values
+change, affecting 21 distinct people. Baseline changes all have first=3,
+second=97; exit changes have first=3 and second=97 (six people) or 99 (seven).
+The mean baseline index falls from 0.6707492795 to 0.6654658982; the mean exit
+index falls from 0.7509606148 to 0.7435158501. The largest reductions are 1/6
+at baseline and .5 at exit: case 307 has only the rank component observed
+at exit. Both indices remain observed for all 347 people. Across all 4,659
+source rows, 36 baseline and 13 exit values change. Raw responses, identities,
+groups, all missingness patterns and other measures remain fixed. Reproduce
+the independent raw calculation with `Rscript scripts/review_australia_ranking.R`;
+[full source evidence](../audit/corrections/australia-republic-1999/ranking_source_values.csv),
+[summary](../audit/corrections/australia-republic-1999/ranking_summary.csv) and
+[approved historical values](../audit/corrections/australia-republic-1999/approved_values.csv)
+preserve both sides of the correction without relying on overwritten outputs.
+
+**Downstream point-estimate check.** With `dp-learning` commit `2880c14`,
+the corrected baseline policy indices change ten individual extremity values
+and 143 repeated group-disagreement and standard-deviation values, across ten
+Australian groups. One of the eleven index changes leaves absolute distance
+from .5 unchanged. None becomes missing. The attitude models retain all 8,350
+people, including 344 Australians; the demographic model on that same sample
+is unchanged. In the main attitude model, the extremity coefficient moves from
+0.01688996 to 0.01636405 and disagreement from −0.09785503 to −0.09941042. In
+the standard-deviation sensitivity model, the corresponding coefficients move
+from 0.01746649 to 0.01694281 and −0.11227705 to −0.11373790. The
+[frame comparison](../audit/corrections/australia-republic-1999/ranking_learning_frame_changes.csv),
+[model samples](../audit/corrections/australia-republic-1999/ranking_learning_model_samples.csv)
+and [point estimates](../audit/corrections/australia-republic-1999/ranking_learning_model_estimates.csv)
+record this isolated check. No bootstrap intervals or manuscript were rebuilt
+for this increment; the paper remains explicitly pinned to pre-AUS-06
+`dp-data` commit `f22f17f` until its next coordinated update.
+
+**Broader attitude review.** Both main indices at both waves were independently
+reconstructed from raw questions, with exact agreement before the approved
+change. The five original summary batteries—autonomy, workability, democracy,
+tradition and politicization—also reproduce their deposited indices, including
+missingness, at both waves. Their baseline/exit observed counts are respectively
+347/346, 346/346, 343/344, 346/344 and 340/346. They deliberately differ from the
+two policy indices: [Jim's source memo](../data/australia-republic-1999/codebooks/jim-australia-indices.pdf)
+distinguishes empirical premises from policy preferences and proposes ranking
+questions for the latter. This exploratory memo is not evidence that every
+suggested index was adopted. AUS-03's four-index extremity and the retained
+five-index group dispersion definitions stay fixed; AUS-06 changes neither.
+The [paper](../data/australia-republic-1999/papers/adp5.pdf), Table 1 (PDF p.19),
+reproduces 33 of 34 raw-item means at its printed two decimals. Baseline PMPOWER
+is 2.424615 (2.42), versus printed 2.43: this small tabulation/version discrepancy
+provides no justified recode. Valid first-choice proportions also reproduce the
+paper's shift toward parliamentary appointment. The paper does not print the
+ranking composite and therefore cannot validate its chosen intermediate spacing.
+
+The retained questionnaire uses opposite printed Likert numbering from the
+revised SAV labels. Reversing the already recoded source again would be wrong.
+The newly recovered initial instrument establishes baseline wording and routing;
+no exit questionnaire was recovered. The broader knowledge-routing issue remains
+separate, and the unrelated constitutional-referendum codebook remains unsuitable
+as a substitute for the fielded DP questionnaire.
 
 ## BTP 2007 — btp-2007
 
@@ -2745,6 +2818,37 @@ formula is patched inside this poll's recode. The user approved the respondent c
 two person flags and 34 group-share cells while preserving all 278 people,
 raw zeros and every prior correction. The shared entropy correction is a
 separate, explicitly authorized change; its comparisons follow in X-03.
+
+### BGC-08: Complete main attitude and summary-battery review
+
+All twelve main indices at both waves were independently reconstructed from
+raw responses for the same 278 people in 17 groups, matching every value and
+missingness pattern. The full extremity battery additionally includes drug
+legalization (Q10_1/Q10_2); its reconstruction also matches. The review covered
+tougher punishment (Q8_3:6), the five-item Version E civil-liberties index,
+media violence (Q8_7), economic causes (Q8_1), rehabilitation (Q8_8), faster
+trials (Q8_11), drug penalties (Q10_3), vigilantism (Q16), institutional change
+(Q21), independent investigation (Q22), prosecutorial accountability (Q23)
+and the already corrected death-penalty scale (Q19).
+
+The retained [Version 7 index memo](../data/bulgaria-crime-2002/codebooks/bulgaria-indices-v7.pdf)
+supplies paired numerical benchmarks and deliberate categorical choices. The
+original Word document is retained alongside its PDF preview. In particular Q23 combines
+executive and judicial accountability at 0 and Parliament at 1; it is not an
+accidental uneven ordinal scale. The drug-legalization component reproduces the
+memo's 0.1087786 → 0.1603053 paired means (262 people), despite its misleading
+“more restrictions” heading: the actual questions and scoring favor legalization.
+Q16 runs toward *opposition* to taking the law into one's own hands; its neutral
+topic label must not be interpreted as the direction of increasing scores.
+
+The retained English questionnaires are annotated drafts whose numbering and
+four-category agreement layout differ from the final five-category source.
+They establish wording, but directly substituting their printed numbers for the
+final source codes would introduce errors. The known Version E versus Version D
+civil-liberties choice (BGC-02) remains preserved; the specific Version E source
+syntax was not recovered. No further numerical change is justified by this
+review. Baseline and exit retain the already verified pre-invitation and
+post-event timing; later sampling or group formulas are not redefined here.
 
 ## California 2011 — california-whats-next-2011
 

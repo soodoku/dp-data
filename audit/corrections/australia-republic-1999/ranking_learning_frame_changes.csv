@@ -1,0 +1,5 @@
+field,n_people,changed_cells,newly_missing,previous_australia_mean,approved_australia_mean
+extremity,8486,10,0,0.27113352545629205,0.27257444764649374
+disagreement,8486,143,0,0.29038368172013707,0.2933626511976656
+attitude_sd,8486,143,0,0.2610890847935495,0.26373713489866185
+attitude_items,8486,0,0,2,2
