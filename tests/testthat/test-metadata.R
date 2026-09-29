@@ -16,6 +16,9 @@ test_that("the Frictionless package names every metadata table", {
     frictionless::resource_names(package),
     c(
       "oos_sources",
+      "survey_weights",
+      "attitude_index_wave_fixes",
+      "tanzania_attitude_items",
       "respondent_sources",
       "respondent_source_components",
       "education_normalization",

@@ -2,6 +2,21 @@
 
 ## Unreleased
 
+- Include Tanzania's borrowing question using its five documented categories,
+  and export all 22 policy items with source answers, normalized citizen values,
+  discussion-round assignments and verified baseline/follow-up phases. Preserve
+  the other 21 items and retain noncitizen source rows without applying citizen
+  scales or timing.
+
+- Preserve all 13 supplied weight columns across nine polls in typed tables,
+  including source identities, missing values and zero weights. Analytical use
+  remains undecided; existing selected analysis weights are unchanged.
+- Compare Tomorrow's Europe pre-arrival attitudes with exit in the seven main
+  indices, and retain arrival-to-exit definitions in a typed contrast catalog.
+  Respondent scores and samples are unchanged.
+- Reproduce all 93 climate-report rating means at both waves and their changes,
+  documenting its paired-item samples and supplied weights.
+
 - Expose approved within-poll education and income median flags as nullable
   booleans in analysis participant tables. Preserve fixed reference cohorts and
   identify legacy education proxies as source-specific.

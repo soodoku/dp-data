@@ -117,11 +117,11 @@ upstream. The affected polls are Australia, Bulgaria Crime, BTP National, New
 Haven, SWEPCO, UK Crime, UK–EU, UK Election, UK Health, WTU and Zeguo. These are
 input differences, not a claimed rerun of downstream model estimates.
 
-Tomorrow's Europe is a concrete contrast decision still to resolve (TE-06):
-all seven indices in the current downstream catalog pair source T1 with T2,
-which means pre-arrival to arrival, not departure. Its corrected departure
-military/trade inputs do not affect that selection. Changing to departure needs
-an explicit comparison and decision about the intended interval.
+Tomorrow's Europe now uses the approved pre-arrival-to-exit comparison for all
+seven main attitude indices (TE-06). The typed contrast catalog also preserves
+arrival-to-exit comparisons. Source T1/T2/T3 correspond to canonical t0/t1/t2;
+the change affects seven catalog endpoints and no respondent values. Downstream
+readers pinned to the historical catalog still require explicit adoption.
 
 Accepted preservation choices are not unresolved coding errors. Examples are
 the historical descriptor batteries that contain more indices than the final
@@ -3419,16 +3419,66 @@ Rscript ../dp-data/scripts/review_uk_crime_downstream.R distortions /tmp/te-revi
 Rscript ../dp-data/scripts/review_uk_crime_downstream.R learning /tmp/te-review /tmp/te-learning
 ```
 
-### TE-06: Downstream attitude catalog selects baseline-to-arrival waves
+### TE-06: Use exit rather than arrival for the main attitude comparison (approved)
 
-The current `attitude-indices.tab` pairs Tomorrow's Europe military
-`eu.mil_att_11_12_t1` with `_t2`, and contains no trade entry. The other selected
-TE indices also use literal T1/T2 fields. The reconstruction preserves source
-wave identities: T1 is baseline, T2 arrival and T3 departure. Before changing
-these pairs, verify the intended time contrast in the analysis and original
-merge/catalog definitions. Choosing departure would change the estimand and
-requires its own numerical comparison and approval. TE-04's departure component
-correction must not silently switch the downstream catalog or add an index.
+The user approved replacing the seven Tomorrow's Europe catalog endpoints with
+exit scores, retaining the initial baseline and every existing index definition.
+The historical catalog paired source T1 with T2. The retained
+[research paper](../data/tomorrows-europe-2007/papers/tomorrows-europe-research-paper.pdf),
+PDF p.4, explicitly identifies T1 as the initial interview, T2 as arrival and T3
+as the end of the event. It distinguishes preparation-period change from change
+during the deliberative weekend. The historical catalog therefore stopped before
+deliberation, despite the consumer's pre-/post-deliberation interpretation.
+
+`metadata/attitude_index_wave_fixes.csv` records the seven expected historical
+endpoints and their approved T3 replacements. `R/attitude_catalog.R` applies
+these after the existing label corrections and asserts the archived mappings.
+The other 122 index pairs are unchanged. No source response, reconstructed index,
+respondent, group or missingness changes: the same 344 people and 18 groups remain.
+The separately typed `attitude_contrasts` table records seven primary initial-to-
+exit comparisons (canonical t0 to t2) and seven supplemental arrival-to-exit
+comparisons (t1 to t2), with original wave-instance IDs and wide score columns.
+Only these 14 contrasts have that table's explicit reviewed timing contract; it
+does not certify the timing of every other catalog entry. The supplemental pairs
+support later homogenization, polarization and domination analyses during the
+event without replacing the primary comparison or constructing a new index.
+
+Independent reconstruction of all seven indices at all three waves from raw
+answers matches the corrected output, including missingness, within 1e-10.
+The retained post-form question numbers are Q1 (EU membership), Q4 (pensions
+privatization), Q7c (migration), Q11a/c and Q12a:d (military), Q11b (pacifism),
+Q16b (Turkey) and Q18a:d (veto). The corresponding baseline Turkey and veto
+fields use Q13b and Q15a:d. The form's cover does not explicitly identify its
+wave; the research paper supplies the timing evidence. The retained attitude
+report describes all 3,550 baseline records and is not an exit validation sample.
+
+Using the consumer's available-wave group formulas over the same 126 group–issue
+pairs gives:
+
+| Measure | Historical baseline–arrival | Approved baseline–exit | Supplemental arrival–exit |
+| --- | ---: | ---: | ---: |
+| Mean homogenization | .021944 | .031966 | .010022 |
+| Mean polarization | -.043319 | -.026990 | .001491 |
+| Homogenization frequency | .738095 | .730159 | .515873 |
+| Polarization frequency | .379032 | .419355 | .544715 |
+
+Polarization excludes groups whose initial mean is exactly neutral, leaving
+124, 124 and 123 defined pairs respectively. These are descriptive counterfactual
+comparisons on corrected inputs, not re-estimated downstream paper results.
+Changing the compared wave also changes item-specific complete-pair membership;
+`wave_common_people.csv` separately holds respondents observed at all three waves
+fixed within each index. For migration, those 319 people change by -.08856 before
+arrival and +.06426 during the event, for -.02429 from baseline to exit.
+The exact columns, observed counts, paired results and group-level calculations
+are retained in `audit/corrections/tomorrows-europe-2007/wave_*.csv`.
+
+The military `_f` variant remains separate. Each stored `_f` value is exactly the
+stored military index minus the separate pacifist response; this changes its
+construct, range and missingness. The catalog continues to use the existing
+non-`_f` definition at all waves, including the approved TE-04 departure correction.
+Trade remains outside the seven-index selection. Neither specification choice
+is silently bundled into the timing correction. Downstream frozen benchmark pins
+must be updated explicitly before their reported results reflect this change.
 
 ### TE-05: Include postgraduate education and use the source age (corrected)
 
@@ -4278,6 +4328,44 @@ This evidence applies to Q19–Q24. The script does not supply the corresponding
 missing-code labels for Q17/Q18; do not extend those labels by analogy. Their
 existing scoring is retained pending a fielded instrument or explicit codebook.
 
+### A1RC-04 — reproduce the climate report's attitude ratings (checked)
+
+The retained `data/a1r-climate-2021/reports/climate_results.pdf` reports 93
+rating items, including all 72 items used by the downstream attitude analysis.
+For the 962 respondents coded `FINAL_ATTEND == 8`, all 93 initial means,
+93 later means and 93 changes reproduce within the report's three-decimal
+rounding. Reproduction requires each item's respondents with substantive
+answers at both waves and the supplied `WEIGHT1`. Separate available-wave
+samples do not generally reproduce those printed means. Codes 77, 88, 98 and
+99 are excluded from the 0–10 substantive range; observed source values remain
+unchanged.
+
+`scripts/review_climate_attitudes.R` extracts the printed values and checks
+all 279 comparisons; `audit/corrections/a1r-climate-2021/attitude_report_comparison.csv`
+retains the observed-wave and paired counts, reproduced statistics and reported
+values. Independent Python calculations also reproduce the paired weighted
+means. This identifies how the report was calculated; it does not select
+weights or a missing-data convention for future analyses. No attitude recode
+is adopted from this comparison.
+
+### A1RC-05 — room labels merge different deliberation schedules (decision requested)
+
+`R/analysis_tables.R` currently sets climate `small_group_id` to `ROOM` alone.
+Among the 962 completed delegates, there are 58 distinct room labels but 105
+room-by-`T2P_OPTION` combinations. Forty-seven room labels occur in both
+schedules, affecting 862 people. Consequently, using room alone combines
+participants who deliberated in separate sessions.
+
+The original authors' retained preparation script explicitly states that there
+were 105 groups across weekday and weekend schedules and constructs
+`egen groupid = group(room t2p_option)`; see
+`data/a1r-climate-2021/scripts/replication-data-preparation.do`, lines 137–139.
+The current `dp-distortions` OOS adapter already combines these two fields.
+The proposed upstream correction uses the same composite identity and preserves
+all people, answers, weights and eligibility. The effect on analyses consuming
+upstream group membership must be compared separately. Approval was requested;
+this entry records the finding and does not claim the correction is applied.
+
 ### AMR-01 — six-country knowledge scoring checked against the report
 
 The [final report](../data/amr-2024/reports/amr-final-report.pdf), Knowledge
@@ -4801,6 +4889,69 @@ The shared paired-analysis rule is distinct from deleting a respondent from the
 source data. The same [review script](../scripts/review_tanzania_knowledge.R)
 checks this identity and records the old and corrected panel counts in the
 [audit summary](../audit/corrections/tanzania-2015/summary.csv).
+
+### TZ-05 — borrowing uses five categories; include it with the other policy items (corrected)
+
+The user approved adding `H260/H261` as the twenty-second policy item. The
+question asks whether Tanzania should borrow against expected oil and gas
+revenue and spend sooner, despite having to repay more than the amount
+borrowed. Both released wave fields label five substantive categories:
+1 strongly supportive, 2 supportive, 3 neutral, 4 opposed, and 5 strongly
+opposed. The retained final report, printed p.64, Appendix H question 3,
+explicitly describes the identical borrowing question as using a 1–5 scale
+similar to the citizen instrument in Appendix G. All observed values in the
+released pair are 1–5. The later journal supplement, printed p.5, instead marks
+H2_6 with two asterisks, which its legend defines as seven categories. That
+annotation remains conflicting evidence; it does not justify moving the
+observed neutral category from 3 to 4.
+
+`metadata/tanzania_attitude_items.csv` records all 22 semantic item names,
+original wave columns, endpoints, source directions, missing codes and the
+relevant group assignment. `make tanzania-attitudes` exports typed definitions
+and long responses under `output/tanzania_attitudes/`. The source bytes remain
+unchanged. All 2,225 original rows and both waves are retained, producing
+97,900 response records. The 2,002 citizens receive the reviewed scales and
+canonical `t0` household-baseline and `t3` delayed-follow-up labels. The 121
+elites and 102 moderators retain their raw values and sample labels but have
+`out_of_scope` status, missing normalized values, and no citizen phase labels.
+Their separate designs have not been assumed equivalent to the citizen study.
+
+For citizens, the fixed source endpoints map to 0–1 in the original direction;
+borrowing therefore runs from strong support at 0 to strong opposition at 1,
+with neutral at 0.5. System missing remains missing. The inherited OOS
+exclusion set is −99, −97, 98 and 99: released DTA labels identify −99 as
+no opinion/don’t know and −97 as refusal; the journal appendix's response-scale
+legends on printed pp.1–2 specify 98 as refusal and 99 as no opinion. Among the
+prior 21 items in the grouped cohort, only ten explicit −99 cells occur, all
+in baseline H430/H440; the other three codes do not occur. Nonresponses are
+never assigned midpoint or zero. No survey weight is applied. Original HHID,
+physical source row, source hash, raw response and available value label remain
+available alongside the normalized value.
+
+The 371-person recorded group roster is preserved, including TZ-01's person
+with no baseline or verified treatment assignment. The two roster columns
+span four topical discussions: `group1` covers extraction/sales and
+saving/spending; `group2` covers household transfers and public spending.
+The preanalysis plan says reassignment occurred after the first day; the later
+working paper, section 3.2, says after the second of four rounds. The earlier
+final report's claim of reassignment after each round conflicts with these
+sources. A recorded group is not treated as proof of invitation or attendance.
+The final report, printed p.10, places telephone follow-up between May and July
+2015. These are delayed outcomes, not immediate exit questionnaires.
+
+Against the existing `dp-distortions` OOS reader, every one of the 15,582 long
+response records for the prior 21 items has the identical normalized value,
+missingness, HHID, item and group assignment. Those items retain 7,530 paired
+respondent-item observations. Borrowing adds 360 paired responses across all
+25 first-assignment groups (370 observed baseline and 361 observed follow-up),
+raising the total to 7,890 and the group-item count from 525 to 550. This is an
+approved expansion of the measured item set, not a change to any of the prior
+21 items or the respondent cohort. Under the existing paired OOS calculations,
+Tanzania's mean homogenization changes from −0.005110639 to −0.007462469;
+mean directional polarization from −0.038309424 to −0.039400307; absolute
+polarization from −0.007626856 to −0.005084460; and gender domination from
+−0.005371478 to −0.007219525. These are item-set sensitivity comparisons,
+not new causal estimates. Analytical weighting remains undecided (X15).
 
 ### NH-02 — Event year corrected; attendance needs reconciliation
 
@@ -6554,3 +6705,42 @@ comparison because its attendee median is the highest category in the available
 education measure; no respondent is strictly above that median.” This is not
 an instruction to replace the median with a college threshold or to divide
 respondents who share the same reported education category.
+
+## X15. Preserve supplied survey weights; analytical use remains undecided
+
+The typed weight export retains 13 supplied numeric weight columns from nine
+polls, with every source row preserved, including missing and zero weights.
+`metadata/survey_weights.csv` records the original column names, available
+labels, identity fields, documented scope and evidence. The two Parquet tables
+under `output/weights/` separate definitions from values. Their authoritative
+identity is the registered source ID and SHA256 plus physical source row;
+original respondent IDs and wave values are retained separately. No weight is
+normalized, pooled, selected as a default, or substituted into an analysis.
+The existing analysis weight field and all estimates remain unchanged.
+
+- Climate 2021: `WEIGHT1`, `WEIGHT2`, `T3WEIGHT1`, and `T3WEIGHT2` remain
+  separate. The first two each contain 1,633 observed values, and the T3
+  variants each contain 1,419. The retained NORC methods report, printed p.7,
+  distinguishes national normalization from normalization for California,
+  Texas, and the rest of the United States. It does not establish an identical
+  construction for the T3 variants; their source names remain explicit.
+- A1R 2019: `WEIGHT_CONTROL` has 844 observed values and `WEIGHT_DELEGATE`
+  has 523. Both are retained for all 3,842 source rows, with source-row identity.
+- AMR 2024: `Weight` and its `weight_group` context are retained for all
+  4,838 source rows keyed by `ID` and `Time`. The 12 contexts are country by
+  treatment/control group. The authors' retained README says weights are valid
+  within those contexts. Each person's supplied value happens to agree across
+  the two waves; this does not justify discarding wave provenance or pooling
+  the contexts.
+- BTP 2007 `weight`: 1,501 observed values in 1,501 rows; Europolis `WEIGHT`:
+  4,384 in 4,384; Michigan `weight`: 610 in 610, including zero; NIC2 `sampwt`:
+  881 in 1,493; Tanzania `weight`: 2,001 in 2,225; Tomorrow's Europe `wmid1`:
+  3,550 in 3,550. Their precise population and wave scopes are not inferred
+  from their names. NIC2 uses the complete original `caseid` for optional unit
+  identity; `nicid` is missing for 998 source records.
+
+The export contains 61,541 weight-row records, of which 25,236 have observed
+values. Source bytes remain unchanged. Exact source-to-Parquet comparison
+checks every value, missingness, source-row identity, minima, maxima and zeros.
+Choosing weights for a particular population, wave contrast or estimand is a
+separate, unresolved analytical decision.

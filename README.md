@@ -47,8 +47,8 @@ three unresolved sample-size differences, Europolis's unordered match, and
 Vermont's ambiguous answer key. The unified analysis export also includes
 the available control-arm item answers. Tanzania retains a released knowledge
 index and nine scored components; its original raw item responses have not been
-recovered. The canonical handoff remains score-only while the component coding
-issue in the poll-level register awaits a decision.
+recovered. The canonical handoff remains score-only. The approved correction
+treats -99 component codes as missing and rebuilds the existing standardized index.
 
 The historical knowledge–attitude linkage is also built here with `make linkage`.
 Its five CSV products and checksum manifest live in `output/linkage/`, replacing
@@ -76,6 +76,21 @@ zero-to-one ordinal score.
 `make polardata` then computes group and poll summaries and exports the full
 5,869-row, 364-column export under `output/polardata/`, together
 with the 129-row attitude-index catalog and a typed derived-measure table.
+Tomorrow's Europe also has explicit pre-arrival-to-exit and arrival-to-exit
+pairs in `output/polardata/attitude_contrasts.parquet`.
+
+`make weights` preserves the 13 supplied weight columns from nine polls under
+`output/weights/`. Definitions retain source provenance and documented scope;
+values retain every source row, including missing and zero weights. These tables
+preserve available weights without deciding how analyses should use them.
+
+`make tanzania-attitudes` exports the 22 reviewed policy questions and their
+source responses under `output/tanzania_attitudes/`. The tables preserve raw
+answers, five-category borrowing responses, discussion-round assignments and
+verified pre-arrival/follow-up timing. Citizen responses receive the documented
+zero-to-one scales; elite and moderator source rows remain available without
+applying the citizen coding or interview phases.
+
 The frozen historical benchmark contains two copies of each of 217 Primaries
 people; the maintained wide export and canonical tables retain one record per
 person. Two BTP General Election respondents with observed, entirely incorrect
