@@ -22,6 +22,20 @@ numerical <- audit_historical_covariances(benchmark, reviewed)
 readr::write_csv(numerical, project_path("audit", "polardata_covariances.csv"))
 parity <- compare_historical_polardata(rebuilt, benchmark, numerical)
 readr::write_csv(parity, project_path("audit", "polardata_parity.csv"))
+reviewed_differences <- numerical |>
+  dplyr::filter(
+    .data$reference_kind == "approved", .data$numerical_exception,
+    .data$absolute_delta > 1e-10
+  ) |>
+  dplyr::select(
+    .data$poll_id, .data$pollgroup, .data$reference_kind,
+    .data$attitudes_sha256, .data$covariance_rank,
+    .data$source_genvar, .data$benchmark_genvar, .data$perturbation_upper
+  )
+if (nrow(reviewed_differences)) {
+  cat("Verified numerical differences against approved values:\n")
+  cat(readr::format_csv(reviewed_differences))
+}
 if (any(parity$unexplained_differences != 0L)) {
   failures <- parity |>
     dplyr::filter(.data$unexplained_differences != 0L)
@@ -51,11 +65,13 @@ if (any(parity$unexplained_differences != 0L)) {
       actual[[field]][observed] != approved[observed]
     }
     different[is.na(different)] <- FALSE
+    historical_values <- as.character(expected[[field]])
+    rebuilt_values <- as.character(actual[[field]])
     tibble::tibble(
       poll_id, field, caseid = actual$caseid, pollgroup = actual$pollgroup,
-      historical = as.character(expected[[field]]),
+      historical = historical_values,
       approved = as.character(approved),
-      rebuilt = as.character(actual[[field]])
+      rebuilt = rebuilt_values
     )[different, ]
   }) |>
     purrr::list_rbind()

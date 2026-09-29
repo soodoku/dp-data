@@ -963,9 +963,15 @@ No participant missingness, identity, sample, knowledge score or other aggregate
 field changes in this comparison. The approved table also preserves the frozen
 benchmark's `historical_value` separately from the reconstructed `current_value`:
 four historical generalized-variance values already differed because of the
-reviewed singular-covariance calculation. All 238 revised variance values are
-now checked against the approved recode; those four cells no longer rely on a
-numerical exception to pass the aggregate comparison. Across all 900 source respondents, 855
+reviewed singular-covariance calculation. The corrected inputs also leave group
+2099 singular: four respondents, four attitude indices and covariance rank three.
+Linux verification identified four generalized-variance discrepancies; all other
+234 approved variance values matched. The numerical audit therefore checks the
+corrected input matrix separately from the historical matrix. It requires its
+exact input fingerprint, dimensions, singularity, a bounded floating-point
+perturbation and agreement with a fresh calculation on the current machine.
+This preserves the formula and does not relax comparisons for other groups or
+fields. Across all 900 source respondents, 855
 `commies1r` values change, including 12 becoming missing; 886 `favref1r` values
 change, including four becoming missing; and 822 extremity values change,
 including two becoming missing. The affected nonanswers belong to nonattendees.

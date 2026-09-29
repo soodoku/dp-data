@@ -220,11 +220,12 @@ test_that("numerical exceptions cannot hide changed aggregate values", {
   ), show_col_types = FALSE)
   parity <- compare_historical_polardata(data, reference, audit)
   expect_equal(sum(parity$unexplained_differences), 0L)
-  expect_equal(sum(parity$reviewed_numerical_differences), 51L)
   eu_variance <- parity$poll_id == "uk-eu-1995" &
     parity$legacy_field == "genvar"
-  expect_equal(parity$approved_correction_differences[eu_variance], 238L)
-  expect_equal(parity$reviewed_numerical_differences[eu_variance], 0L)
+  expect_equal(sum(parity$reviewed_numerical_differences[!eu_variance]), 51L)
+  expect_equal(parity$approved_correction_differences[eu_variance] +
+                 parity$reviewed_numerical_differences[eu_variance], 238L)
+  expect_true(parity$reviewed_numerical_differences[eu_variance] %in% c(0L, 4L))
   san_mateo_level <- parity$poll_id == "san-mateo-2008" &
     parity$legacy_field == "t1knowlevel"
   expect_equal(parity$approved_correction_differences[san_mateo_level], 239L)

@@ -1,3 +1,19 @@
+verified_covariance_values <- function(actual, group, audit,
+                                       reference = NULL, tolerance = 1e-10) {
+  rows <- match(group, audit$pollgroup)
+  verified <- !is.na(rows) & audit$numerical_exception[rows] &
+    is.finite(actual) & actual >= 0 &
+    actual <= audit$perturbation_upper[rows] &
+    abs(actual - audit$source_genvar[rows]) <= tolerance
+  if (!is.null(reference)) {
+    verified <- verified & is.finite(reference) & reference >= 0 &
+      reference <= audit$perturbation_upper[rows] &
+      abs(reference - audit$benchmark_genvar[rows]) <= tolerance
+  }
+  verified[is.na(verified)] <- FALSE
+  verified
+}
+
 compare_historical_polardata <- function(rebuilt, reference, numerical_audit,
                                          tolerance = 1e-10) {
   stopifnot(
@@ -38,12 +54,15 @@ compare_historical_polardata <- function(rebuilt, reference, numerical_audit,
     expected <- expected[match(actual$caseid, expected$caseid), ]
     audit <- numerical_audit[
       numerical_audit$poll_id == contract$poll_id &
-        numerical_audit$numerical_exception,
+        numerical_audit$reference_kind == "historical",
     ]
-    audit_rows <- match(actual$pollgroup, audit$pollgroup)
-    verified_numeric <- !is.na(audit_rows) &
-      abs(actual$genvar - audit$source_genvar[audit_rows]) <= tolerance
-    verified_numeric[is.na(verified_numeric)] <- FALSE
+    approved_audit <- numerical_audit[
+      numerical_audit$poll_id == contract$poll_id &
+        numerical_audit$reference_kind == "approved",
+    ]
+    verified_numeric <- verified_covariance_values(
+      actual$genvar, actual$pollgroup, audit, tolerance = tolerance
+    )
     purrr::map_dfr(names(actual), function(field) {
       a <- actual[[field]]
       b <- expected[[field]]
@@ -82,13 +101,20 @@ compare_historical_polardata <- function(rebuilt, reference, numerical_audit,
       matches_approved[is.na(matches_approved)] <- FALSE
       numerical <- difference & field == "genvar" &
         verified_numeric
+      approved_numerical <- rep(FALSE, length(a))
+      if (field == "genvar") {
+        approved_numerical <- approved_changed & !matches_approved &
+          verified_covariance_values(
+            a, actual$pollgroup, approved_audit, approved, tolerance
+          )
+      }
       artifact <- field == "X"
       tibble::tibble(
         poll_id = contract$poll_id, legacy_field = field,
         respondents = rebuilt_count, compared_values = sum(observed),
         missingness_differences = sum(missing),
         value_differences = sum(difference),
-        reviewed_numerical_differences = sum(numerical),
+        reviewed_numerical_differences = sum(numerical | approved_numerical),
         approved_correction_differences = sum(
           approved_changed & matches_approved
         ),
@@ -97,7 +123,7 @@ compare_historical_polardata <- function(rebuilt, reference, numerical_audit,
           0L
         } else {
           sum((missing | (difference & !numerical)) & !approved_changed) +
-            sum(approved_changed & !matches_approved)
+            sum(approved_changed & !matches_approved & !approved_numerical)
         },
         max_absolute_difference = max(error), tolerance = tolerance
       )
