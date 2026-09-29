@@ -396,6 +396,16 @@
       "local_artifact_id": "material-dbd5dd3c41336a1b-btp-national-2003",
       "accessed": "2026-09-28",
       "notes": "Unchanged historical coding evidence recovered from the CDD archive. Source versions may conflict; preservation does not endorse every candidate formula. Not executed by the modern pipeline."
+    },
+    {
+      "reference_id": "btp-national-publication-survey",
+      "poll_id": "btp-national-2003",
+      "kind": "data",
+      "title": "BTP National publication-era survey",
+      "url": null,
+      "local_artifact_id": "btp-national-publication-survey",
+      "accessed": "2026-09-29",
+      "notes": "Unchanged Jennifer_online_March14.dta from cdd-data-20260923 bundle SHA2565dde554c16bd4bfdea5bf55962c3652b198df19d67646ad9d25df423d423992a; archive inventory audit/cdd_archive_files.csv. Separate publication-era version:674 coded respondents and867 numeric variables; no text columns or direct contact fields. Reproduces published trade tables; not a replacement for the maintained245-person source. Source rights retained."
     }
   ],
   "material_coverage": [
@@ -870,6 +880,21 @@
       "publication_status": "published",
       "notes": "Unchanged historical coding evidence recovered from the CDD archive. Source versions may conflict; preservation does not endorse every candidate formula. Not executed by the modern pipeline.",
       "relative_path": "scripts/trade-august01.do"
+    },
+    {
+      "artifact_id": "btp-national-publication-survey",
+      "poll_id": "btp-national-2003",
+      "artifact_type": "data",
+      "title": "BTP National publication-era survey",
+      "location": "data/btp-national-2003/source-materials/publication-survey.dta",
+      "source_id": "btp-national-publication-survey",
+      "original_archive_path": "data/us_fp_online/online_data/Jennifer_online_March14.dta",
+      "sha256": "8bda47049603fd51d65c41825b160b838c29072863506b8d64c7cd580790ab01",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged Jennifer_online_March14.dta from cdd-data-20260923 bundle SHA2565dde554c16bd4bfdea5bf55962c3652b198df19d67646ad9d25df423d423992a; archive inventory audit/cdd_archive_files.csv. Separate publication-era version:674 coded respondents and867 numeric variables; no text columns or direct contact fields. Reproduces published trade tables; not a replacement for the maintained245-person source. Source rights retained.",
+      "relative_path": "source-materials/publication-survey.dta"
     }
   ],
   "document_previews": [

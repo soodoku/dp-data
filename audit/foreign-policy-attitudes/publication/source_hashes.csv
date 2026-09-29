@@ -1,0 +1,5 @@
+path,bytes,sha256
+data/btp-national-2003/source-materials/publication-survey.dta,2515779,8bda47049603fd51d65c41825b160b838c29072863506b8d64c7cd580790ab01
+data/nic2-2003/survey.dta,8422678,565faadfccd42a488891a5b59deb5b5caa390908d3ab8ead6271ffa953cc3b78
+data/btp-national-2003/survey.dta,832730,9d4d7f01ee3653f88ae39877a9eba3ca279cf200f164c9e10d440556b5e5cf81
+data/shared/papers/foreign-policy.pdf,187014,90cbc9c9cb25b21cbcd69098c7c7e7ca0a2a2f35a7bf0bcbd11d31cb54243711

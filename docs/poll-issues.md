@@ -123,7 +123,7 @@ below retain the instrument evidence and numerical consequences.
 | NIC | 9 | All three source waves checked; approved nonanswer correction adopted. Main attitude comparison remains initial to later follow-up, not immediate exit (NIC-12). |
 | Tomorrow's Europe | 7 | All 31 retained series and baseline/arrival extremity checked. Main initial-to-exit and supplemental arrival-to-exit contrasts explicit; earliest migration recode remains unavailable (TE-06/07). |
 | San Mateo | 4 | Main pairs and seven-index summaries checked. Preserve the larger summary battery and documented source/report differences (SM-02). |
-| NIC2 and BTP National | 18 | Nine pairs per poll checked against original versions and component rules. NIC2 security's authored missing-item choice and both trade publication comparisons remain open (NIC2-02). |
+| NIC2 and BTP National | 18 | Nine pairs per poll checked against original versions and component rules. NIC2 security's authored missing-item choice remains open; the older trade publication definition now reproduces (NIC2-02). |
 | BTP Presidential Primaries | 3 | All main pairs checked; unconsidered responses excluded from substantive input counts without changing scores (PR-04). |
 | New Haven | 2 | Both main indices and the third summary index checked at Pre/Mid/Post; Mid follows the first discussion session, not arrival (NH-08). |
 | Zeguo | 9 | All indices checked against merged and raw source versions; original correction flags preserved. Unmatched departures and the Township Image alternative remain decisions (ZG-06–08). |
@@ -146,7 +146,7 @@ These are bounded next actions, not permission to recode:
 | Climate discussion groups | ROOM alone yields 58 labels; ROOM × T2P_OPTION yields the original script's 105 groups. Forty-seven reused labels combine different schedules for 862 of 962 completers. Approved September 29: upstream now uses the original script’s room-plus-schedule identity (A1RC-05). |
 | Zeguo unmatched departures | Approved September 29 and implemented: 34 unmatched departures are missing in both attitude variants and post-dependent knowledge. All 233 historical people remain; observed blank quiz items still score zero. Do not borrow the unlinked NP32 block (ZG-07). |
 | Zeguo Township Image | Current Q25/Q31 and the paper's Q8/Q9/Q25/Q27 battery are different authored definitions. The alternative changes 161 baseline and 169 post scores, 160 extremities and all 233 repeated group summaries. Its 176-person means still do not exactly match the paper; preserve current values pending the definition decision (ZG-08). |
-| Published-result bridges | NIC2/BTP trade means and BTPHE report percentages remain unreproduced. Recover report-era sample/index/weight syntax rather than adjust source scores to force agreement (NIC2-02, BTPHE-06). |
+| Published-result bridges | NIC2/BTP trade means and standard errors now reproduce under the older publication composite and cohort; current NAFTA-only scoring is preserved. BTPHE report percentages still need report-era sample/index/weight syntax (NIC2-02, BTPHE-06). |
 | Original source records | Bulgaria 2007 has no recovered respondent data. Other limits include Bulgaria Crime Version E syntax, earliest TE migration recoding, fielded-form versions, anonymous phase links, group rosters and Marousi's conflicting departure IDs. These require source evidence, not an arbitrary numerical choice. |
 | Analytical weights and downstream adoption | Supplied weights are retained but no universal weight is selected. Frozen downstream benchmarks still require explicit adoption and estimate comparisons; canonical baseline predictors do not define the full attitude inventory. |
 
@@ -226,6 +226,14 @@ Priority questions for the corrections pass include:
   seek all 1,344 baseline respondents, linked post-event records for all 255
   attendees, group assignments and coding documentation. No request has been
   submitted and respondent-level auditing remains blocked by the missing data.
+  A renewed September29 search checked six Dataverse queries, OSF/Zenodo,
+  current Stanford/organizer pages and recovered archived2007/2019/2020
+  Stanford pages. No respondent package was found in those inspected sources;
+  archived links led to reports, press material or the general data-request page.
+  This is a bounded search result, not proof that no package exists. ICPSR and
+  the full publisher page returned403; some broader archive queries failed.
+  The needed files remain the linked1344-person baseline and255-person event
+  cohort, original variable dictionary and attendance/group IDs.
 - **British event dates:** the UK–EU research account says June 1995 while
   parliamentary testimony says May. The UK general-election draft gives April
   26–28, 1997 and calls April 28 a Sunday, although it was Monday. The UK Health
@@ -6163,13 +6171,52 @@ Exact IDs, raw answers, old scores and alternatives are in
 current complete-block version until the user chooses a missing-item policy
 or further provenance establishes which authored version should govern.**
 
-**Trade: publication comparison remains unresolved.** Among 273 people with
-both NAFTA answers, NIC2 means are .6135531 → .5824176, whereas Table 1 gives
-.492 → .478. BTP's 130 paired people give .4615385 → .5461538, versus .348 →
-.396 in the paper. Matching only complete pairs therefore does not bridge the
-difference. The paper describes NAFTA, and no alternative answer key has been
-established. Preserve questionnaire-backed coding; recover the paper's exact
-sample/index syntax before attributing the discrepancy to either source.
+**Trade: publication bridge resolved September29; final source definition preserved.**
+The maintained NAFTA-only means among complete pairs remain NIC2
+.6135531→.5824176 (273people) and BTP .4615385→.5461538 (130people).
+The paper’s measurement prose (PDFp.15, printedp.14) describes NAFTA alone,
+but its Table1 (PDFp.35, printedp.34) corresponds to an older available-item
+mean of **two** questions: NAFTA and the trade-organization question. In that
+older composite, the latter’s raw categories are mapped in numerical order:
+bilateral agreements=0, WTO=.5, leave things unchanged=1. The later authored
+ordering instead gives bilateral agreements=.5, WTO=1 and unchanged=0.
+These are different definitions; the published table is not a check of the
+maintained single-item measure.
+
+For NIC2, current raw fields `trd1_a/qtrd1_a` and `trd2/qtrd2`, restricted to
+`casetype=1`, reproduce the old composite’s327 paired people: baseline
+.4915902141, exit .4778287462 and change−.0137614679. Their standard errors
+are .01574119, .01353419 and .01784271. All six statistics round to Table1.
+No weighting or alternate NIC2 source file is required.
+
+BTP’s unchanged [publication-era source](../data/btp-national-2003/source-materials/publication-survey.dta)
+(original `Jennifer_online_March14.dta`) contains674 coded respondents.
+Select `exp_cond=1` and paired values of the same two-item composite:216 people,
+means .3483796296→.3958333333, change .0474537037, and standard errors
+.019327, .019080 and .019933. These six statistics also round to Table1.
+Its stored `t1tradea/t2tradea` agree exactly with independently recoded raw
+components on every source row, including missingness. Table2’s online post
+means and standard errors reproduce too: treatment .393/.018 (236observed),
+control .360/.020 (182observed).
+
+All245 current BTP serials uniquely match this file, and all980 corresponding
+raw trade answers agree, including missingness. The paired publication sample
+contains215 current people plus serial214, whose four raw answers are2 and
+whose old composite is.5 at both waves. Omitting214 yields .3476744→.3953488;
+this explains the residual discrepancy after matching the older definition.
+Why that person is absent from the final245-person source is not established
+by the trade comparison; attendance and cohort changes require their own audit.
+The full earlier source is retained for that investigation, with source-bundle
+and archive-path provenance in the poll manifest. It is a separate source
+version, not a replacement for the final survey.
+
+The [reproduction script](../scripts/review_foreign_policy_publication.R) uses
+public poll-folder inputs, asserts all twelve Table1 values and four Table2
+mean/SE values, and writes [comparisons and keyed cohort evidence](../audit/foreign-policy-attitudes/publication/).
+This resolves the publication bridge without adopting its old category order,
+adding a person to production, or modifying any knowledge, attitude, demographic,
+group, weight or downstream result. Current questionnaire-backed NAFTA-only
+coding remains the intended final definition.
 
 **Missingness and reproducible coverage.** NIC2 missing baseline/exit counts
 are environment 0/0, security 0/0, human rights 0/0, democracy 0/0,
@@ -6603,7 +6650,7 @@ export. See X-10 for the regenerated `X` field.
 
 ## New Haven 2002 — historical ID new-haven-2004
 
-### NH-03: The three-wave workbook supplies raw answers and an explicit ID bridge
+## NH-03: The three-wave workbook supplies raw answers and an explicit ID bridge
 
 `source-materials/survey-waves.xlsx` preserves the answer/ID projection of
 `NH_Data_pre-mid-post.xls`. Join Pre `ASSIGNED` to Mid/Post `SVY#`; each sheet
@@ -6815,6 +6862,27 @@ question numbers across those instrument versions is not justified. The workbook
 final field instrument and authored variables identify the maintained questions.
 No new numerical attitude correction or summary-battery substitution is proposed. Main-index counts and ranges are in
 `audit/san-mateo-new-haven-attitude-coverage.csv`.
+
+### NH-10: Zero is not an offered knowledge answer
+
+The workbook records30 departure knowledge zeros across five people, in
+Q35–Q37/Q39–Q43. Both the field form and CATI factual counterparts start
+option codes at1; neither offers0. Under the approved global invalid-code
+rule these30 item responses now have missing correctness and an explicit
+`invalid_response` reason; raw0 remains preserved. DK options remain separate
+and score zero. The existing fixed-denominator knowledge scores do not change.
+
+One person, source assignedID3124 (historical910042), has all78 departure
+fields zero, including questions with no substantive0 option. That person has
+filled baseline and interim forms, so there is evidence of actual participation.
+Treating the whole departure questionnaire as absent is a separate classification
+currently presented to the user: it would make the departure score missing,
+retain attendance, and remove the person from paired departure analyses.
+The paired New Haven cohort would move132→131 and its mean gain
+22.25379→22.80534 percentage points; current dp-learning’s main sample would
+move8486→8485. This is not the separate133-versus-132 attendance discrepancy
+in NH-02. No whole-form or sample change is adopted merely from the invalid-item
+classification.
 
 ## Zeguo 2005 — zeguo-2005
 
@@ -7157,6 +7225,27 @@ nine-index comparisons. The appendix supports an alternative construct, while
 the unreproduced published means remain a separate source-version limitation.
 The user's choice between preserving the historical construct and adopting the
 published four-project definition is still required before a numerical change.
+
+### ZG-09: Preserve out-of-range knowledge codes as missing
+
+Both retained questionnaire versions, PDFp.8, offer substantive1:4 andDK5
+forQ43–Q45, and substantive1:5 andDK6 forQ46. Q46’s “zero parks” answer
+is code1, not0. The raw PRE/POST versions retain13 responses outside those
+ranges across10 people: preQ43=6 (p269), preQ45=0 (p34,p226), preQ46=0
+(p69); postQ43/Q44=6 (p153), postQ45=6 (p165,p196,p201), postQ46=0
+(p100,p151,p153), and postQ46=98 (p201). Neither form gives these codes a
+knowledge-response meaning. Code98 is labeled DK on earlier project-rating
+scales; that label cannot be transferred to a different question by analogy.
+
+The approved global rule now gives all13 item responses missing correctness
+with `invalid_response`, preserving raw codes and leaving verified DK5/6
+at zero. Twelve cells concern nine historical aggregate people; p269 is outside
+that233-person sample. The Q45 source-reconciliation overrides for p48/75/105
+are separate and unchanged. Fixed-denominator individual scores and historical
+aggregate outputs remain unchanged. Item-specific peer opportunities can change
+when invalid focal responses or invalid peer answers are excluded; these are
+missing observations, not known wrong answers.
+
 
 ## Cross-poll issues for the eventual schema
 
@@ -7785,12 +7874,20 @@ missingness and the established aggregate scoring convention are separate.
 Peer item calculations must exclude invalid item observations rather than
 mistake them for a wrong answer or an opportunity to learn.
 The [cell comparison](../audit/corrections/shared-response-status/invalid_response_cells.csv)
-records46 selected item cells,49 phase item cells and one supplemental
-California item cell. These views repeat the same48 underlying source answers;
-Michigan’s single answer also belongs to two phase batteries. All score tables
-and historical polardata files remain byte-identical. The current dp-learning
-main predictors change only through the independently approved Climate group
-correction; these invalid responses are outside its baseline item predictor.
+records89 selected item cells,92 phase item cells and one supplemental
+California item cell. These views repeat the same91 underlying source answers;
+Michigan’s single answer also belongs to two phase batteries. New Haven adds30
+invalid departure answers and Zeguo adds13 invalid answers across both waves. All score tables
+and historical polardata files remain byte-identical. The main score-based dp-learning predictors are unchanged by these additional
+invalid-code rules. Zeguo has invalid baseline items, so item-level peer
+calculations must honor their missing correctness; downstream verification is
+recorded with this correction. The downstream reader had been filling missing
+item correctness with zero before peer and guessing calculations. Removing
+those fills changes20 Zeguo peer predictors, with no new missing peer values.
+The item model remains8369 people across27 polls and623 groups; its peer
+coefficient moves from−0.0891 to−0.0890. The score-based main model and its
+8486-person cohort are unchanged. Case-level changes and fitted model points
+are retained beside the invalid-response cell comparison.
 
 #### Shared attendance classification (approved September 29, 2026)
 

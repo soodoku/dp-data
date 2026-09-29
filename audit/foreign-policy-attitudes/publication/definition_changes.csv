@@ -1,0 +1,5 @@
+poll,wave,people,changed_observed_values,previously_missing_now_observed,previously_observed_now_missing,max_observed_change
+NIC2,pre,340,174,52,0,0.5
+NIC2,post,340,216,9,0,0.5
+BTP,pre,245,80,74,0,0.5
+BTP,post,245,112,55,0,0.5

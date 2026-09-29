@@ -211,7 +211,7 @@ test_that("New Haven keeps combined baseline nonanswers distinct from DK", {
   result <- enrich_knowledge_responses(items)
   expect_identical(result$knowledge_response, c(NA_character_, "dk", "dk", NA))
   expect_identical(result$response_reason, c(
-    "unclassified_nonanswer", "dk", "dk", "unreviewed_code"
+    "unclassified_nonanswer", "dk", "dk", "invalid_response"
   ))
   expect_identical(result[names(items)], items)
 })
@@ -285,4 +285,23 @@ test_that("invalid knowledge codes remain missing even on observed forms", {
   expect_identical(result$items$knowledge_response, items$knowledge_response)
   expect_equal(result$n_changed, 2L)
   expect_identical(standardize_knowledge_scores(result$items)$n_changed, 0L)
+})
+
+
+test_that("Zeguo offered codes distinguish DK from invalid knowledge answers", {
+  items <- tibble::tibble(
+    poll_id = "zeguo-2005", source_dataset = "original",
+    respondent_id = as.character(1:5), wave = "t2", item_id = "knowledge_004",
+    source_row = 1:5,
+    source_column = c("post_d3045", "post_d3045", rep("post_d3046", 3)),
+    raw_value = c(5, 6, 1, 6, 0), raw_text = NA_character_,
+    correct = c(0L, 0L, 0L, 0L, 0L), response_status = "answered"
+  )
+  result <- enrich_knowledge_responses(items)
+  expect_identical(result$response_reason, c(
+    "dk", "invalid_response", "answered", "dk", "invalid_response"
+  ))
+  result <- standardize_knowledge_scores(result, rep(TRUE, nrow(result)))$items
+  expect_identical(result$correct, c(0L, NA_integer_, 0L, 0L, NA_integer_))
+  expect_identical(result$raw_value, items$raw_value)
 })
