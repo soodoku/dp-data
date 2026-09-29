@@ -17,7 +17,7 @@ test_that("the Frictionless package names every metadata table", {
     c(
       "oos_sources",
       "survey_weights",
-      "attitude_index_wave_fixes",
+      "attitude_index_wave_fixes", "paired_attitude_items",
       "tanzania_attitude_items",
       "respondent_sources",
       "respondent_source_components",

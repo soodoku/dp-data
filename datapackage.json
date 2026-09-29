@@ -161,6 +161,58 @@
       }
     },
     {
+      "name": "paired_attitude_items",
+      "path": "metadata/paired_attitude_items.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "attitude_id",
+            "type": "string"
+          },
+          {
+            "name": "pre_column",
+            "type": "string"
+          },
+          {
+            "name": "post_column",
+            "type": "string"
+          },
+          {
+            "name": "minimum",
+            "type": "number"
+          },
+          {
+            "name": "maximum",
+            "type": "number"
+          },
+          {
+            "name": "label",
+            "type": "string"
+          },
+          {
+            "name": "direction",
+            "type": "string"
+          },
+          {
+            "name": "nonresponse_codes",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
       "name": "tanzania_attitude_items",
       "path": "metadata/tanzania_attitude_items.csv",
       "profile": "tabular-data-resource",
