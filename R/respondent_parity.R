@@ -64,6 +64,30 @@ approved_reference_values <- function(poll_id, field, caseid, historical,
     )
     return(approved$approved_value)
   }
+  if (poll_id == "uk-eu-1995" && field %in% c(
+    "ukeu.commies1r", "ukeu.favref1r", "attextreme",
+    "meanxtreme", "avgsd", "genvar"
+  )) {
+    approved <- readr::read_csv(project_path(
+      "audit", "corrections", poll_id, "baseline_scale_approved_values.csv"
+    ), show_col_types = FALSE) |>
+      dplyr::filter(
+        cohort == "historical_participants", .data$field == .env$field
+      )
+    stopifnot(
+      nrow(approved) == 238L, !anyDuplicated(approved$caseid),
+      setequal(as.character(caseid), as.character(approved$caseid))
+    )
+    rows <- match(as.character(caseid), as.character(approved$caseid))
+    approved <- approved[rows, ]
+    stopifnot(
+      identical(is.na(historical), is.na(approved$historical_value)),
+      all(abs(historical - approved$historical_value) <= tolerance,
+        na.rm = TRUE
+      )
+    )
+    return(approved$proposed_value)
+  }
   if (poll_id == "nic-1996" && field %in% c(
     "ppage", "meanage", "mode", "attextreme2", "avgsd2"
   )) {

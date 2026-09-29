@@ -93,6 +93,9 @@ historical_derived_measures <- function(polls) {
           .env$poll_id == "uk-health-1998" &
             .data$legacy_field %in% c("meanxtreme", "avgsd", "genvar") ~
             "ukh-02-v2",
+          .env$poll_id == "uk-eu-1995" &
+            .data$legacy_field %in% c("meanxtreme", "avgsd", "genvar") ~
+            "ukeu-02-v2",
           .data$legacy_field == "phighinc" ~ "poll-median-v1",
           .data$legacy_field == "pfemale_ind" ~ "observed-peers-v2",
           .data$legacy_field == "entropy" ~ "entropy-observed-v2",

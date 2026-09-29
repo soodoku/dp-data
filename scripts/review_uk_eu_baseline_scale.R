@@ -1,4 +1,4 @@
-# UKEU-02 proposal: exclude nonanswers before scaling baseline attitudes.
+# UKEU-02: reproduce historical values and verify the approved correction.
 for (module in c(
   "paths", "sources", "metadata", "poll_sources", "poll_adapters", "knowledge",
   "exports", "respondents", "polardata", "polardata_rebuild"
@@ -24,12 +24,13 @@ assert_values_equal <- function(actual, expected) {
   )
 }
 
-current_individual <- build_eu_individual(survey)
+production_individual <- build_eu_individual(survey)
+current_individual <- production_individual
 proposed_individual <- current_individual
 for (source_field in c("commies1", "favref1")) {
   raw_value <- as.numeric(survey[[source_field]])
   measure <- paste0("ukeu.", source_field, "r")
-  assert_values_equal(current_individual[[measure]], (raw_value - 1) / 8)
+  current_individual[[measure]] <- (raw_value - 1) / 8
   declared_missing <- attr(spss_source[[source_field]], "na_values")
   raw_value[raw_value %in% declared_missing] <- NA_real_
   stopifnot(all(is.na(raw_value) | raw_value %in% 1:5))
@@ -40,15 +41,15 @@ attitude_fields <- c(
 )
 current_attitudes <- as.matrix(current_individual[attitude_fields])
 proposed_attitudes <- as.matrix(proposed_individual[attitude_fields])
-assert_values_equal(
-  current_individual$attextreme,
-  historical_available_mean(abs(current_attitudes - .5))
+current_individual$attextreme <- historical_available_mean(
+  abs(current_attitudes - .5)
 )
 proposed_individual$attextreme <- historical_available_mean(
   abs(proposed_attitudes - .5)
 )
 
-current_aggregate <- build_historical_poll(poll_id)
+production_aggregate <- build_historical_poll(poll_id)
+current_aggregate <- production_aggregate
 source_rows <- match(current_aggregate$caseid, survey$caseid)
 stopifnot(
   nrow(current_aggregate) == 238L, !anyNA(source_rows),
@@ -61,17 +62,13 @@ current_dispersion <- historical_group_dispersion(
 proposed_dispersion <- historical_group_dispersion(
   proposed_attitudes, profile$group
 )
-assert_values_equal(
-  current_aggregate$avgsd, current_dispersion$average_sd[source_rows]
-)
-assert_values_equal(
-  current_aggregate$genvar, current_dispersion$generalized_variance[source_rows]
-)
-assert_values_equal(
-  current_aggregate$meanxtreme,
-  historical_group_summary(
-    current_individual$attextreme[source_rows], current_aggregate$pollgroup
-  )
+for (field in c("ukeu.commies1r", "ukeu.favref1r", "attextreme")) {
+  current_aggregate[[field]] <- current_individual[[field]][source_rows]
+}
+current_aggregate$avgsd <- current_dispersion$average_sd[source_rows]
+current_aggregate$genvar <- current_dispersion$generalized_variance[source_rows]
+current_aggregate$meanxtreme <- historical_group_summary(
+  current_individual$attextreme[source_rows], current_aggregate$pollgroup
 )
 
 proposed_aggregate <- current_aggregate
@@ -89,11 +86,21 @@ proposed_aggregate$avgsd <- proposed_dispersion$average_sd[source_rows]
 proposed_aggregate$genvar <-
   proposed_dispersion$generalized_variance[source_rows]
 aggregate_fields <- c(individual_fields, "meanxtreme", "avgsd", "genvar")
+for (field in aggregate_fields) {
+  assert_values_equal(
+    production_aggregate[[field]], proposed_aggregate[[field]]
+  )
+}
+for (field in individual_fields) {
+  assert_values_equal(
+    production_individual[[field]], proposed_individual[[field]]
+  )
+}
 
 comparison_rows <- function(current, proposed, fields, cohort, source_rows) {
   purrr::map(fields, function(measure_name) {
     tibble::tibble(
-      status = "proposed", poll_id, cohort, field = measure_name,
+      status = "approved", poll_id, cohort, field = measure_name,
       caseid = as.numeric(survey$caseid[source_rows]),
       source_row = survey$source_row[source_rows],
       current_value = current[[measure_name]],
@@ -112,6 +119,20 @@ values <- dplyr::bind_rows(
     "historical_participants", source_rows
   )
 )
+benchmark <- readr::read_tsv(project_path(
+  "evidence", "benchmarks", "polardata.tab"
+), show_col_types = FALSE) |>
+  dplyr::filter(dpnum == 1)
+stopifnot(nrow(benchmark) == 238L, !anyDuplicated(benchmark$caseid))
+values$historical_value <- NA_real_
+for (field in aggregate_fields) {
+  rows <- which(
+    values$cohort == "historical_participants" & values$field == field
+  )
+  matched <- match(values$caseid[rows], benchmark$caseid)
+  stopifnot(!anyNA(matched))
+  values$historical_value[rows] <- benchmark[[field]][matched]
+}
 summary <- values |>
   dplyr::summarise(
     respondents = dplyr::n(),
@@ -174,8 +195,8 @@ summary$unchanged_answer_artifacts[match(
 directory <- project_path("audit", "corrections", poll_id)
 fs::dir_create(directory)
 readr::write_csv(
-  values, file.path(directory, "baseline_scale_proposed_values.csv")
+  values, file.path(directory, "baseline_scale_approved_values.csv")
 )
 readr::write_csv(summary, file.path(directory, "baseline_scale_summary.csv"))
 print(summary)
-message("UKEU-02 proposal written; production values unchanged.")
+message("UKEU-02 approved values reproduced; maintained recodes verified.")

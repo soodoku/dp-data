@@ -47,6 +47,42 @@ This is an inventory of currently known issues and coverage gaps, not a claim
 that every field or every questionnaire has been audited. “No discrepancy in the
 knowledge comparison” does not clear attitudes, demographics, weights, or joins.
 
+## Current decisions and source limits
+
+As of September 28, 2026, the UK–EU scale and Texas absent-form corrections
+are approved and implemented. Four other decision bundles remain unapplied,
+along with the UK Health folded-index interpretation described below.
+
+| Poll / issue | Current decision |
+| --- | --- |
+| UK–EU UKEU-02 | Approved and implemented: substantive five-point baseline scales, missing nonanswers and six rebuilt respondent/group fields. The retained review script and approved-value tables quantify the changes. |
+| Australia AUS-02 | Match the peer denominator and `numitems` to the twelve items actually scored: 346 peer measures and logs change; individual knowledge scores do not. The separate routing ambiguity remains unresolved. |
+| NIC NIC-05 | Apply one shared undefined-at-ceiling rule. One `grpgain2` zero becomes missing; 107 other all-correct cases already are missing. |
+| Tanzania TZ-03/04 | Decide the first-component −99 correction and recalibration, and require both scores for the panel flag. The latter changes one flag while retaining the respondent and observed follow-up. |
+| SWEPCO SWE-05 / WTU WTU-06 | Approved and implemented upstream: 2,246 absent post scores and 11,230 post item-correctness cells per corresponding table become missing; six dependent respondent measures per person are missing. Baseline and attendee scores are unchanged. |
+| UK Election / X-14 | Decide the explicit highest-degree-response rule: 31 positive flags become negative, five negative flags become missing and one missing flag becomes negative. Preserve ordered education and its median classification. |
+
+UK Health's folded government/public-input and doctor-discretion recodes
+(UKH-03/07) remain separate interpretation decisions. Monotonic alternatives
+would change 126/93 and 5/8 indices at the two waves. The memo describes more
+say at the high end, but the stored folded construction is longstanding;
+original recoding intent remains unresolved. No change is authorized here.
+
+Missing evidence is a different completion state from an unapplied correction.
+Bulgaria 2007 still has no identified respondent dataset, so it cannot be
+called respondent-level audited. Other documented gaps include anonymous
+battery identity bridges (Europolis and Tomorrow's Europe), group rosters
+(Denmark and Vermont), original wave returns and keys (Marousi), and withheld
+raw-to-derived cleaning syntax (Tanzania). Poll entries specify what evidence
+would resolve each gap; numerical agreement does not remove these limitations.
+
+Accepted preservation decisions remain in force, including NIC's Bosnia item
+and Vermont's report-based key. Source-dependent interpretations such as
+UK–EU ethnicity “Other,” Zeguo's publication-consistent correction flags and
+UK Health's breast-screening wording remain documented without speculative
+recodes. This is an inventory of decisions and limits, not a declaration that
+all 34 polls or every field have been fully audited.
+
 ## Source-material review after v0.3.0
 
 The [sourced facts](../metadata/poll_facts.csv),
@@ -858,15 +894,15 @@ all 238 source attendees in a broader respondent table, and retain the four
 missing group assignments. Review questionnaire-specific negative and refusal
 codes separately by wave; do not adopt one cross-poll missing-code list.
 
-**UKEU-02 — baseline nonanswers compress two attitude scales (proposal; not
-applied).** The 900-row `survey.sav` contains `commies1` codes 1–5 plus
+**UKEU-02 — baseline nonanswers compressed two attitude scales (approved
+and implemented).** The 900-row `survey.sav` contains `commies1` codes 1–5 plus
 12 code-9 nonanswers and `favref1` codes 1–5 plus four code-9 nonanswers.
 The [codebook](../data/uk-eu-1995/codebook.txt), Q14c SAQ1 and Q10 SAQ1,
 labels code 9 “Not answered.” The SPSS file itself declares user-missing
 codes 8/9 for `commies1` and −1/8/9 for `favref1`. All 238 attendees answered
 both questions substantively, but the historical baseline scales use [1,9],
-so substantive responses occupy only 0–.5. The wider source sample's nonanswers
-become 1. At post, the same five substantive categories map to 0–1.
+so substantive responses occupied only 0–.5. The wider source sample's nonanswers
+became 1. At post, the same five substantive categories map to 0–1.
 
 The archived `uk_eu.R`, dated May 22, 2014, first cleans `commies1` at line 158,
 then overwrites it with `zero1(ukeu$commies1)` at line 195. Line 199 also passes
@@ -876,7 +912,7 @@ categories to 0/.25/.5/.75/1. The author's earliest public
 June 19, 2015, defaults to the observed minimum and maximum, ignoring only R
 missing values. It has no rule for SPSS missing labels or a half-width baseline
 scale. Applied to the retained numeric codes, its formula reproduces both
-current baseline variables exactly for all 900 people. That public version
+historical baseline variables exactly for all 900 people. That public version
 postdates the script: the exact 2014 installed helper and import wrapper have
 not been recovered.
 
@@ -890,17 +926,18 @@ five-point agreement scale. Together with the raw missing declarations and
 explicit post recode, the evidence supports correcting nonanswer handling,
 rather than treating code 9 as a substantive endpoint.
 
-The proposed correction maps baseline substantive codes 1–5 to 0–1 and code 9
+The approved correction maps baseline substantive codes 1–5 to 0–1 and code 9
 to missing, retaining direction and every other response rule. It recomputes
 the dependent extremity and group summaries with their existing populations.
 The [review script](../scripts/review_uk_eu_baseline_scale.R) uses the retained
-SPSS file and direct formulas; it does not depend on downloading `goji` or
-changing production functions. Its
-[proposed person-level values](../audit/corrections/uk-eu-1995/baseline_scale_proposed_values.csv)
+SPSS file and direct formulas. It reconstructs the old calibration independently
+and checks the corrected production values; it does not download `goji` or
+replace production functions during the review. Its
+[approved person-level values](../audit/corrections/uk-eu-1995/baseline_scale_approved_values.csv)
 and [summary](../audit/corrections/uk-eu-1995/baseline_scale_summary.csv)
 record these six changes among the 238 historical participants:
 
-| Field | Changed values | Current mean | Proposed mean |
+| Field | Changed values | Historical mean | Approved mean |
 | --- | ---: | ---: | ---: |
 | `ukeu.commies1r` | 228 | .272584 | .545168 |
 | `ukeu.favref1r` | 235 | .370273 | .740546 |
@@ -910,21 +947,29 @@ record these six changes among the 238 historical participants:
 | `genvar` | 238 | .139597 | .197419 |
 
 No participant missingness, identity, sample, knowledge score or other aggregate
-field changes in this comparison. Across all 900 source respondents, 855
+field changes in this comparison. The approved table also preserves the frozen
+benchmark's `historical_value` separately from the reconstructed `current_value`:
+four historical generalized-variance values already differed because of the
+reviewed singular-covariance calculation. All 238 revised variance values are
+now checked against the approved recode; those four cells no longer rely on a
+numerical exception to pass the aggregate comparison. Across all 900 source respondents, 855
 `commies1r` values change, including 12 becoming missing; 886 `favref1r` values
 change, including four becoming missing; and 822 extremity values change,
 including two becoming missing. The affected nonanswers belong to nonattendees.
 
 The mismatch can manufacture apparent attitude change: 95 attendees give the
 same substantive answer above code 1 at both waves for `commies`, and 101 do so
-for `favref`, yet their current post scores are higher. For example, raw code 3
-scores .25 before and .5 after; the proposed scale scores both .5. This is a
+for `favref`, yet their historical post scores were higher. For example, raw code 3
+scores .25 before and .5 after; the approved scale scores both .5. This is a
 measurement mismatch even when the respondent has not changed an answer.
 
-**Decision pending:** production retains the historical calibration until the
-user decides this proposal. The codebook also says SCPR collapsed “can't choose”
-with the midpoint for `FAVREF` before delivery. Those separated responses cannot
-be recovered, and this proposal does not attempt to undo that earlier collapse.
+**Approved on September 28, 2026:** production now uses the fixed [1,5] scale
+and reviewed missing codes in both waves. The three respondent definitions and
+the dependent group summaries use version `ukeu-02-v2`. The codebook also says
+SCPR collapsed “can't choose” with the midpoint for `FAVREF` before delivery.
+Those separated responses cannot be recovered; the approved correction preserves
+that merged midpoint. Other ethnicity remains unknown under UKEU-05. No
+attendance, membership, knowledge score or historical sample rule changes.
 
 **UKEU-03 — exclude post-wave “can't choose” and restore the substantive
 scale.** **Status: approved by the user on 2026-09-25 and adopted.** The
@@ -1645,7 +1690,7 @@ fill of 5. All 39 historical respondent-field targets match for the 232
 `PART == 1` attendees at 1e-10.
 
 **SWE-05 — nonparticipants receive scores for absent post forms.**
-**Status: proposed numerical correction; pending user decision, not applied.**
+**Status: user-approved correction, implemented upstream.**
 The original portable files and [codebook](../data/swepco-1996/codebook.txt)
 identify 1,246 `PART = 2` nonparticipants. Every one of 74 direct post fields
 is system-missing in every original nonparticipant record, unlike code-99 DK
@@ -1657,32 +1702,36 @@ interviewees who did not participate. This establishes absent post forms
 rather than merely an unanswered five-item quiz; it does not establish a
 randomized control assignment.
 
-At the reviewed build, each of `analysis_scores` and `analysis_phase_scores`
-contains 1,246 post rows with `score = 0`, `n_correct = 0`, `n_items = 5` and
-missing `n_observed`. Phase `wave_observed` is missing. Each of the selected
-and phase item tables has 6,230 `correct = 0` cells labeled `scored` for
-these forms; `historical_knowledge_items` also has 6,230 zeros, not missing.
+Before correction, each of `analysis_scores` and `analysis_phase_scores`
+contained 1,246 post rows with `score = 0`, `n_correct = 0`, `n_items = 5` and
+missing `n_observed`. Phase `wave_observed` was missing. Each of the selected
+and phase item tables had 6,230 `correct = 0` cells labeled `scored` for
+these forms; `historical_knowledge_items` also had 6,230 zeros, not missing.
 Examples are CASEIDs 30002330, 30002340 and 30002350. `panel` is already
 FALSE; `attended` remains unknown despite the explicit nonparticipant label.
 
-The proposed analysis correction uses exact source CASEID/PART membership,
-only for historical `t2`, at `analysis_historical_items` in
-[R/analysis_tables.R](../R/analysis_tables.R). It would set 6,230 correctness
-cells per item table to missing and status to `wave_absent`, then 1,246
-scores and correct counts per score table to missing, `n_observed` to 0 and
-phase `wave_observed` to FALSE. The independently rerun in-memory production
-functions verify this propagation without changing baseline, attendees,
-cor_sood rows, keys, item counts or scale. SWE-05 and WTU-06 together cover
-2,246 absent post score rows and 11,230 item correctness cells per
-selected/phase table; the corresponding phase item presence flags would also
-change to FALSE. These are proposals, not adopted values or downstream results.
-Keep observed-form blank/DK answers scored zero. A direct upstream change in
-`utility_knowledge_items` would also require reviewing
-`summarise_historical_knowledge`, which forbids missing matrices, and its
-joint/gain derivatives; the narrower analysis correction would leave legacy
-historical measures unchanged. Original bytes remain immutable; the completed source
-retention and recovery described in SWE-01 do not apply this numerical proposal. Attendance-field changes require a separate explicit
-decision.
+The approved correction starts in `utility_knowledge_items`: only verified
+`PART == 2` post forms receive wholly missing item rows. Present-form blanks
+and DK answers retain zero correctness. The shared knowledge summary accepts
+whole missing waves, rejects partially missing scored rows, and propagates
+absence through post scores, joint scores, gains, and their transformations.
+The shared group-gain calculation still requires complete scores within observed
+groups; all these nonparticipants have no group and cannot affect attendee peers.
+Canonical item status is `wave_absent`, correct counts and scores are missing,
+`n_observed` is zero, and phase presence is FALSE.
+
+SWEPCO changes 6,230 post item cells in each historical, selected and phase item
+table and 1,246 post scores in each selected/phase score table. Across SWEPCO and
+WTU, 13,476 respondent measure values become missing: six dependent measures
+for each of 2,246 absent forms. Of these nonparticipants, 1,127 in SWEPCO and
+796 in WTU had positive baseline scores; the fabricated post zeros therefore
+created 1,923 apparent knowledge losses. Their changes are now missing because
+no post interview is observed. All baseline values, attendee scores, raw source
+values, participant identities, memberships and Texas aggregate values remain
+unchanged. The existing attendance field is unchanged; the correction records
+verified questionnaire absence directly. The source review script and
+[absence evidence](../audit/corrections/utilities-source-recovery/absence.csv)
+retain every affected source identity.
 
 ## WTU 1996 — wtu-1996
 
@@ -1816,7 +1865,7 @@ recode. Current dp-distortions and dp-deliberately read pinned historical
 benchmark files, which this correction does not alter.
 
 **WTU-06 — nonparticipants receive scores for absent post forms.**
-**Status: proposed numerical correction; pending user decision, not applied.**
+**Status: user-approved correction, implemented upstream.**
 The recovered original portable files and [codebook](../data/wtu-1996/codebook.txt)
 identify 1,000 `PART = 2` nonparticipants. All 74 direct post fields are
 system-missing in every original record; source SAS construction uses their
@@ -1824,19 +1873,15 @@ baseline-only nonparticipant input. The shared paper and design evidence in
 SWE-05 support absent post forms, not observed blank quizzes or assigned
 controls. CASEIDs 20002310, 20002320 and 20002330 are examples.
 
-Each selected/phase score table currently contains 1,000 post scores and
-correct counts equal to zero, with five items and missing `n_observed`;
-phase `wave_observed` is missing. Each selected/phase item table has 5,000
-post correctness zeros labeled `scored`; the historical item output also
-contains 5,000 zeros. The exact source membership mask proposed in SWE-05
-would change these scores/correct counts and item correctness to missing,
-set item status `wave_absent`, `n_observed = 0`, and phase presence FALSE.
-The focused production-function check preserves baseline, all 230 attendees,
-cor_sood rows, IDs, item denominators and scale. `panel` is already FALSE;
-`attended` is unknown and would need a separate decision. Preserve the
-original bytes and legacy historical measures pending their own review.
-Source retention and recovery-script work described in SWE-01 remains
-incomplete. No numerical absence correction has been adopted.
+The shared upstream correction described in SWE-05 makes 1,000 post scores
+and correct counts missing in each selected/phase score table, with zero
+observed items and phase presence FALSE. The 5,000 corresponding correctness
+cells become missing in each historical, selected and phase item table;
+canonical status is `wave_absent`. Six dependent respondent measures per person
+also become missing. All 230 attendees, baseline values, source identities,
+item denominators, raw responses and WTU aggregate values are retained.
+Unanswered items within an observed form still score zero. The original source
+and reproducible identity-level evidence are retained as described in WTU-01.
 
 ## Australia republic 1999 — australia-republic-1999
 
@@ -2940,10 +2985,11 @@ Rscript scripts/review_nic_age_correction.R /tmp/nic-age-review
 Rscript ../dp-data/scripts/review_nic_age_downstream.R /tmp/nic-age-review /tmp/nic-age-learning
 ```
 
-The same historical script's arrival extremity/dispersion mixes arrival waves for
-the first six spending items with baseline foreign aid, welfare and social
-security. That separate definition remains unchanged pending instrument and
-analysis-specification review; it is not part of this age proposal.
+The same historical script mixed source T2 answers for the first six spending
+items with baseline foreign aid, welfare and Social Security. NIC-09 subsequently
+corrected that separate definition after user approval, using all nine source
+T2 answers. NIC-11 establishes that T2 is immediate exit, not arrival. Those
+corrections are distinct from the earlier age proposal documented here.
 
 **NIC-04 — missing historical identity and reconstruction coverage.** The
 historical export and selected source each contain exactly one missing CASEID.
@@ -4885,9 +4931,10 @@ online polls. Among these 245 selected people, source `inc60plus` equals
 `ppincimp >= 13` exactly (86 people, $60,000+); final individual `highinc`
 uses `ppincimp >= 12` (117 people, $50,000+); the early group input for
 `phighinc` uses `ppincimp >= 14` (55 people, $75,000+). All 15 stored group
-shares therefore differ from the share of members marked `highinc`. Preserve
-the historical fields while giving each threshold a literal name in a
-revised schema; a group share must state which member flag it summarizes.
+shares therefore differed from the share of members marked `highinc`. X-13 has
+superseded those competing cutoffs with the approved within-poll median flag,
+used for both individuals and group shares. The original threshold comparisons
+remain historical evidence; they are not a pending choice in the current build.
 
 ### BTPN-05: Baseline political interest was omitted from the final aggregate
 
@@ -4974,10 +5021,10 @@ earlier `highinc` in the draft and the group input for `phighinc` use
 `ppincimp >= 14` (54 people, $75,000+). Codes 12 and 13 contain 28 and 24
 people respectively. All 16 stored `phighinc` group shares differ from the
 share of members marked `highinc`. The same three thresholds appear in BTP
-National, arguing against a one-off typographical slip. Preserve the
-historical fields while distinguishing income-at-least-$50k, $60k and
-$75k flags explicitly in the revised schema; choose one only after stating
-the group-share estimand.
+National, arguing against a one-off typographical slip. X-13 has since replaced
+these competing individual/group cutoffs with one approved within-poll median
+flag. The historical comparisons remain evidence of the earlier stages, not a
+pending threshold decision or separate cutoffs in the maintained group summaries.
 
 The baseline questionnaire Q18 offers “very,” “somewhat,” “not very” and
 “not at all” interested, coded 1–4. Among the 217 selected people the counts
@@ -5741,17 +5788,17 @@ are different states. A zero-filled knowledge score may deliberately count some
 missing answers as incorrect; preserve that as a named scoring policy while
 retaining raw response reasons. Partial attitude-index means have changing
 observed denominators. Neither policy should be silently generalized to the other.
-The centralized `pfemale_ind` helper uses full group size in its leave-one-out
-denominator, while `pfemale` omits missing genders. The former entropy helper
-also divided observed categories by full group size. BTPHE-01 exposes this mismatch
-in groups 9707 and 9727; NH-06 shows why the minority entropy can remain
-unchanged when refusal is restored to missing. A change to these shared
-formulas must be assessed across all polls and frozen separately from the
-poll-level source corrections.
+The former `pfemale_ind` helper used full group size in its leave-one-out
+denominator, while `pfemale` omitted missing genders. The former entropy helper
+also divided observed categories by full group size. BTPHE-01 exposed this mismatch
+in groups 9707 and 9727; NH-06 showed why minority entropy could remain
+unchanged when refusal was restored to missing. The approved shared corrections
+below now use observed answers, with cross-poll comparisons recorded separately
+from the respondent-level source corrections.
 
-**Observed-peer denominator correction (accepted 2026-09-28).**
-Direct enumeration of every person's other group members reproduces the
-current formula but finds 194 incorrect observed peer shares in 14 groups:
+**Observed-peer denominator correction (accepted and implemented 2026-09-28).**
+Direct enumeration of every person's other group members identified
+194 incorrect observed peer shares under the former formula in 14 groups:
 Zeguo 78 values in six groups, NIC 1996 83 in six groups, and BTP Health and
 Education 33 in two groups. The other 18 reconstructed polls agree within
 `1e-10`. This comparison preserves each poll's composition population, including
@@ -5760,14 +5807,14 @@ the full 299 source records used for BTP General Election's group summaries.
 For example, Zeguo group 5216 has one woman, seven men and two missing genders.
 For the woman (historical ID 52097, source ID 97), the old formula is
 `((1/8)*10 - 1)/9 = 1/36`, about 0.02778. Her seven peers with observed gender
-are all male, so their observed female share is zero. The proposed shared rule
+are all male, so their observed female share is zero. The implemented shared rule
 is `(observed female count - focal female contribution) / observed peer count`.
 It yields missing if no peer gender is observed. Missing focal gender supplies
 no subtraction from either observed count; it does not prevent describing the
 other respondents. That additionally supplies peer shares for 16 previously
 missing cases (eight Zeguo, six NIC, two BTP Health and Education). All 5,869
-exported person identities remain unchanged. Existing and candidate values
-are within [0, 1]; this is a denominator error, not an observed range violation.
+exported person identities remain unchanged. Historical and corrected values
+are within [0, 1]; this was a denominator error, not an observed range violation.
 The maximum change among previously observed values is 1/36. Neither the
 individual gender recodes nor the inclusive group female shares change.
 The independently enumerated peer counts and approved values are retained in

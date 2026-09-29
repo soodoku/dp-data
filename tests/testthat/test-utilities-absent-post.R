@@ -1,0 +1,43 @@
+source(file.path(root, "R", "respondents.R"))
+source(file.path(root, "R", "polardata.R"))
+source(file.path(root, "R", "polardata_rebuild.R"))
+
+test_that("Texas absence propagates through post scores and gains", {
+  for (poll in c("swepco-1996", "wtu-1996")) {
+    survey <- read_poll_survey(poll)
+    absent <- survey$PART == 2L
+    before <- utility_knowledge_items(survey, poll, 1L)
+    after <- utility_knowledge_items(survey, poll, 2L)
+    expect_false(anyNA(before))
+    expect_true(all(is.na(after[absent, ])))
+    expect_false(anyNA(after[!absent, ]))
+    scores <- summarise_historical_knowledge(before, after)
+    expect_equal(scores$knowledge_t1, rowMeans(before))
+    expect_true(all(is.na(scores[absent, names(scores) != "knowledge_t1"])))
+
+    answered <- survey[which(!absent)[1L], ]
+    answered$SOURCE2 <- NA_real_
+    expect_identical(
+      unname(utility_knowledge_items(answered, poll, 2L)[1L, "source"]), 0
+    )
+    contradictory <- survey[which(absent)[1L], ]
+    contradictory$SOURCE2 <- 1
+    expect_error(utility_knowledge_items(contradictory, poll, 2L))
+  }
+})
+
+test_that("knowledge summaries reject partially missing scored batteries", {
+  before <- matrix(c(1, 0), nrow = 1L)
+  after <- matrix(c(NA, 0), nrow = 1L)
+  expect_error(summarise_historical_knowledge(before, after))
+})
+
+test_that("ungrouped absent forms cannot change observed group gains", {
+  observed <- matrix(c(0, 1, 1, 0), nrow = 2L, byrow = TRUE)
+  expected <- historical_fractional_gain(observed, c(1, 1))
+  with_absent <- rbind(observed, c(NA_real_, NA_real_))
+  actual <- historical_fractional_gain(with_absent, c(1, 1, NA))
+  expect_equal(actual[1:2], expected)
+  expect_true(is.na(actual[3L]))
+  expect_error(historical_fractional_gain(with_absent, c(1, 1, 1)))
+})

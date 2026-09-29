@@ -395,6 +395,7 @@ test_that("utility calibration is independent of the supplied sample", {
     survey <- read_poll_survey(poll)
     expected <- build_utility_individual(survey, poll)
     fields <- unique(inputs$source_column[inputs$poll_id == poll])
+    if (poll != "cpl-1996") fields <- union(fields, "PART")
     raw <- survey[fields]
     expect_true(all(grepl("^[a-z][a-z0-9_]*$", names(expected))))
     expect_identical(build_utility_individual(raw, poll), expected)

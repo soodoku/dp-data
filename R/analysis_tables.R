@@ -423,7 +423,8 @@ analysis_historical_items <- function(catalog) {
       raw_text = NA_character_,
       correct = as.integer(correct),
       response_status = dplyr::if_else(
-        poll_id == "btp-general-election-2004" & is.na(correct),
+        poll_id %in% c("btp-general-election-2004", "swepco-1996", "wtu-1996") &
+          is.na(correct),
         "wave_absent", "scored"
       )
     )
