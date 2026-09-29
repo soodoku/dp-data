@@ -11,8 +11,8 @@ options(dp.bootstrap.replicates = 999L)
 write_result <- function(data, name) readr::write_csv( # nolint: brace_linter.
   data, file.path(out, name)
 )
-people <- read_analysis_participants()
-phase_people <- read_phase_participants()
+source_people <- read_analysis_participants()
+source_phase_people <- read_phase_participants()
 raw <- readr::read_tsv(
   file.path(dp_data_root(), "data/a1r-climate-2021/participants.tab"),
   show_col_types = FALSE
@@ -22,24 +22,27 @@ mapping <- raw |>
   dplyr::transmute(
     respondent_id = as.character(CaseId), room = as.character(ROOM),
     schedule = as.character(T2P_OPTION),
-    candidate = paste(ROOM, T2P_OPTION, sep = ":")
+    candidate = paste(ROOM, T2P_OPTION, sep = "_")
   )
 stopifnot(
   nrow(mapping) == 962L, !anyNA(mapping), !anyDuplicated(mapping$respondent_id),
   dplyr::n_distinct(mapping$room) == 58L,
   dplyr::n_distinct(mapping$candidate) == 105L
 )
-replace_group <- function(x) {
+replace_group <- function(x, target = mapping$candidate) {
   rows <- x$poll_id == "a1r-climate-2021" &
     x$respondent_id %in% mapping$respondent_id
   positions <- match(x$respondent_id[rows], mapping$respondent_id)
   stopifnot(
     sum(rows) == 962L,
-    identical(x$small_group_id[rows], mapping$room[positions])
+    (identical(x$small_group_id[rows], mapping$room[positions]) ||
+       identical(x$small_group_id[rows], mapping$candidate[positions]))
   )
-  x$small_group_id[rows] <- mapping$candidate[positions]
+  x$small_group_id[rows] <- target[positions]
   x
 }
+people <- replace_group(source_people, mapping$room)
+phase_people <- replace_group(source_phase_people, mapping$room)
 candidate_people <- replace_group(people)
 candidate_phase_people <- replace_group(phase_people)
 before_attendees <- attendee_panel(

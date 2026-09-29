@@ -182,7 +182,7 @@ analysis_knowledge_labels <- function(poll, catalog, fields) {
     dplyr::transmute(
       source_column = tolower(source_column),
       code = as.character(code),
-      source_response_label = label
+      source_response_label = label, reviewed_reason = response_reason
     )
   stopifnot(!anyDuplicated(reviewed[c("source_column", "code")]))
   labels <- dplyr::filter(labels, !is.na(source_response_label))
@@ -282,6 +282,11 @@ enrich_knowledge_responses <- function(
     matched_rule <- match(requested, rule_keys)
     code_rule <- rules$kind[matched_rule]
     reason <- knowledge_label_reason(label)
+    reviewed_reason <- dictionary$reviewed_reason[matched]
+    use_reviewed <- !is.na(reviewed_reason)
+    stopifnot(all(is.na(reason[use_reviewed]) |
+                    reason[use_reviewed] == reviewed_reason[use_reviewed]))
+    reason[use_reviewed] <- reviewed_reason[use_reviewed]
     from_text <- knowledge_label_reason(text)
     reason[is.na(reason)] <- from_text[is.na(reason)]
     absent <- items$response_status[rows] == "wave_absent"
@@ -321,7 +326,7 @@ enrich_knowledge_responses <- function(
     response[reason == "answered" & items$correct[rows] %in% 0L] <- "incorrect"
     response[!reason %in% c(
       "dk", "refused", "blank", "not_asked",
-      "wave_absent"
+      "wave_absent", "invalid_response"
     ) &
       items$correct[rows] %in% 1L] <- "correct"
     items$knowledge_response[rows] <- response
@@ -351,17 +356,22 @@ standardize_knowledge_scores <- function(
   change <- is.na(items$correct) & wave_observed %in% TRUE &
     items$response_reason %in% c(
       "dk", "refused", "blank", "source_missing",
-      "unclassified_nonanswer", "invalid_response"
+      "unclassified_nonanswer"
     )
-  changes <- items[change, intersect(c(
+  invalid <- items$response_reason %in% "invalid_response" &
+    !is.na(items$correct)
+  changes <- items[change | invalid, intersect(c(
     "poll_id", "source_dataset", "respondent_id",
     "item_id", "wave", "source_column", "response_reason"
   ), names(items))]
   items$correct[change] <- 0L
+  items$correct[invalid] <- NA_integer_
+  items$knowledge_response[items$response_reason %in% "invalid_response"] <-
+    NA_character_
   conflicts <- items[items$knowledge_response %in% "dk" &
                        items$correct %in% 1L, ]
   list(
-    items = items, n_changed = sum(change), changes = changes,
+    items = items, n_changed = sum(change | invalid), changes = changes,
     dk_correct_conflicts = conflicts
   )
 }

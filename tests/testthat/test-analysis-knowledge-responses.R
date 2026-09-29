@@ -230,6 +230,8 @@ test_that("arrival rules preserve anomalies outside printed response options", {
   expect_identical(result$knowledge_response, c(
     "incorrect", "dk", NA_character_, "incorrect", "dk", NA_character_
   ))
+  expect_identical(result$response_reason[c(3, 6)], rep("invalid_response", 2))
+  expect_true(all(is.na(result$source_response_label[c(3, 6)])))
   expect_identical(result[names(items)], items)
 })
 
@@ -244,7 +246,7 @@ test_that("known nonanswers score zero without fabricating a DK category", {
     ), wave_observed = c(rep(TRUE, 5), FALSE)
   )
   result <- standardize_knowledge_scores(items)
-  expect_identical(result$items$correct, c(0L, 0L, rep(NA_integer_, 4)))
+  expect_identical(result$items$correct, c(0L, rep(NA_integer_, 5)))
   expect_true(all(is.na(result$items$knowledge_response)))
   expect_identical(result$items$response_reason, items$response_reason)
   expect_equal(sum(result$items$correct, na.rm = TRUE), 0)
@@ -268,4 +270,19 @@ test_that("NIC follow-up labels distinguish answers from authored scores", {
     "No", "Yes", "Liberal", "Extremely conservative"
   ))
   expect_identical(result[names(items)], items)
+})
+
+
+test_that("invalid knowledge codes remain missing even on observed forms", {
+  items <- tibble::tibble(
+    respondent_id = c("multiple", "out_of_range", "dk"),
+    correct = c(0L, 1L, 0L), knowledge_response = c(NA, NA, "dk"),
+    response_reason = c("invalid_response", "invalid_response", "dk"),
+    wave_observed = TRUE
+  )
+  result <- standardize_knowledge_scores(items)
+  expect_identical(result$items$correct, c(NA_integer_, NA_integer_, 0L))
+  expect_identical(result$items$knowledge_response, items$knowledge_response)
+  expect_equal(result$n_changed, 2L)
+  expect_identical(standardize_knowledge_scores(result$items)$n_changed, 0L)
 })

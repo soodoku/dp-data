@@ -54,11 +54,14 @@ Knowledge uses its own convention, separate from attitude imputation.
 “cannot say,” and equivalent documented labels map to `dk`. The original code
 and `source_response_label` are retained. `response_reason` distinguishes a
 blank, refusal, inapplicable question, absent questionnaire, and unresolved
-source code. Those cases are not relabeled `dk`. Where a source preserves only
+source code. Those cases are not relabeled `dk`. The reviewed response-code
+dictionary can supply a `response_reason` without a label when an observed code
+is demonstrably outside the offered options; this preserves the absence of an
+original source label rather than inventing one. Where a source preserves only
 correctness, a zero cannot establish whether the person attempted the question.
-The separate integer `correct` column counts reviewed nonanswers as zero within
-an observed questionnaire, while retaining missingness for absent questionnaires
-and unresolved cases. This item-level zero filling does not change total scores,
+The separate integer `correct` column counts DK, refusals and reviewed blanks
+as zero within an observed questionnaire. Invalid responses, absent questionnaires
+and unresolved cases remain missing. This item-level zero filling does not change total scores,
 which already count those nonanswers as zero. No guessing adjustment is imposed
 in this data layer.
 

@@ -24,6 +24,9 @@ build_california_knowledge <- function(
       column <- paste0("t", wave, "q", items$item_number[[i]])
       raw <- as.numeric(people[[column]])
       stopifnot(all(is.na(raw) | raw %in% 0:5))
+      invalid <- knowledge_invalid_codes(
+        "california-whats-next-2011", column, raw
+      )
       tibble::tibble(
         poll_id = "california-whats-next-2011",
         respondent_id = people$respondent_id,
@@ -33,7 +36,8 @@ build_california_knowledge <- function(
         item_number = as.integer(items$item_number[[i]]),
         source_column = column, raw_code = raw,
         correct = dplyr::if_else(
-          present, as.integer(!is.na(raw) & raw == items$correct_code[[i]]),
+          present & !invalid,
+          as.integer(!is.na(raw) & raw == items$correct_code[[i]]),
           NA_integer_
         )
       )
@@ -48,7 +52,10 @@ build_california_knowledge <- function(
     ) |>
     dplyr::summarise(
       n_items = dplyr::n(), n_answered = sum(!is.na(.data$raw_code)),
-      n_correct = sum(.data$correct),
+      n_correct = dplyr::if_else(
+        dplyr::first(.data$wave_present),
+        sum(.data$correct, na.rm = TRUE), NA_integer_
+      ),
       score_zero_filled = .data$n_correct / .data$n_items,
       .groups = "drop"
     )

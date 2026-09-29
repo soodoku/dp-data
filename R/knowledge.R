@@ -442,3 +442,13 @@ compare_knowledge_batteries <- function(tables) {
       purrr::map(comparisons, name) |> purrr::list_rbind()
     })
 }
+
+
+knowledge_invalid_codes <- function(poll, field, raw) {
+  rules <- read_metadata("knowledge_response_codes", na = "") |>
+    dplyr::filter(
+      poll_id == poll, tolower(source_column) == tolower(field),
+      response_reason %in% "invalid_response"
+    )
+  !is.na(raw) & as.character(raw) %in% as.character(rules$code)
+}

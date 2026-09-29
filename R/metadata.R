@@ -21,8 +21,12 @@ validate_metadata <- function() {
     !anyDuplicated(knowledge_codes[c("poll_id", "source_column", "code")]),
     all(knowledge_codes$poll_id %in% polls$poll_id),
     !anyNA(knowledge_codes[c(
-      "poll_id", "source_column", "code", "label", "evidence"
-    )])
+      "poll_id", "source_column", "code", "evidence"
+    )]),
+    all(!is.na(knowledge_codes$label) |
+          knowledge_codes$response_reason %in% "invalid_response"),
+    all(is.na(knowledge_codes$response_reason) |
+          knowledge_codes$response_reason %in% "invalid_response")
   )
 
   assertr::verify(

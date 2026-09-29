@@ -222,6 +222,9 @@ test_that("California eight-item scores exclude departure nonparticipants", {
   scores <- built$california_knowledge_scores
   expect_equal(nrow(scores), 824L)
   expect_equal(nrow(responses), 6592L)
+  invalid <- responses$source_column == "t3q33" & responses$raw_code %in% 0
+  expect_equal(sum(invalid), 1L)
+  expect_true(all(is.na(responses$correct[invalid])))
   expect_false(any(scores$source_row %in% survey$source_row[excluded]))
   expect_equal(sum(!scores$wave_present), 16L)
   expect_true(all(is.na(scores$score_zero_filled[!scores$wave_present])))

@@ -1,440 +1,442 @@
-poll_id,source_column,code,label,evidence
-a1r-climate-2021,Q19,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,Q19,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,Q19,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,Q20,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,Q20,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,Q20,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,Q21,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,Q21,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,Q21,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,Q22,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,Q22,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,Q22,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,Q23,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,Q23,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,Q23,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,Q24,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,Q24,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,Q24,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q19,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q19,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q19,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q20,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q20,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q20,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q21,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q21,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q21,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q22,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q22,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q22,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q23,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q23,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q23,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q24,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q24,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T2Q24,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q19,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q19,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q19,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q20,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q20,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q20,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q21,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q21,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q21,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q22,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q22,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q22,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q23,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q23,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q23,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q24,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q24,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-a1r-climate-2021,T3Q24,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items
-nic-1996,AFDC1,198,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype
-nic-1996,AFDC2,888,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype
-nic-1996,AFDC2,998,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype
-nic-1996,AFDC3,998,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype
-nic-1996,POLDEM1,8,Don’t know Haven’t thought,data/nic-1996/codebook.txt:5937-6047; Q35/Q36 SAQ/SAQ2/SAQ3 printed category8
-nic-1996,POLDEM2,8,Don’t know Haven’t thought,data/nic-1996/codebook.txt:5937-6047; Q35/Q36 SAQ/SAQ2/SAQ3 printed category8
-nic-1996,POLDEM3,8,Don’t know Haven’t thought,data/nic-1996/codebook.txt:5937-6047; Q35/Q36 SAQ/SAQ2/SAQ3 printed category8
-nic-1996,POLREP1,8,Don’t know Haven’t thought,data/nic-1996/codebook.txt:5937-6047; Q35/Q36 SAQ/SAQ2/SAQ3 printed category8
-nic-1996,POLREP2,8,Don’t know Haven’t thought,data/nic-1996/codebook.txt:5937-6047; Q35/Q36 SAQ/SAQ2/SAQ3 printed category8
-nic-1996,POLREP3,8,Don’t know Haven’t thought,data/nic-1996/codebook.txt:5937-6047; Q35/Q36 SAQ/SAQ2/SAQ3 printed category8
-nic-1996,SPEND1,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,SPEND2,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,SPEND3,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,TRADE1,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,TRADE2,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,TRADE3,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,TROOPSA1,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,TROOPSA2,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,TROOPSA3,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,TROOPSB1,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,TROOPSB2,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,TROOPSB3,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,TROOPSC1,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,TROOPSC2,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,TROOPSC3,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,TROOPSD1,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,TROOPSD2,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,TROOPSD3,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates"
-nic-1996,UNEMP2,998,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype
-nic-1996,UNEMP3,998,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype
-nic-1996,WEDLOCK1,198,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype
-nic-1996,WEDLOCK2,250,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype
-nic-1996,WEDLOCK2,888,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype
-nic-1996,WEDLOCK2,998,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype
-uk-crime-1994,kw11,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,kw11,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,kw12,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,kw12,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,kw21,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,kw21,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,kw22,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,kw22,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,kw31,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,kw31,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,kw32,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,kw32,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,kw41,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,kw41,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,kw42,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,kw42,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,pkw11,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,pkw11,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,pkw12,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,pkw12,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,pkw21,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,pkw21,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,pkw22,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,pkw22,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,pkw31,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,pkw31,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,pkw32,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-crime-1994,pkw32,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal"
-uk-general-election-1997,euc1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,euc1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,euc2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,euc2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,eul1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,eul1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,eul2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,eul2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,euld1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,euld1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,euld2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,euld2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,inflat1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,inflat1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,inflat2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,inflat2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,intrst1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,intrst1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,intrst2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,intrst2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,redstc1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,redstc1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,redstc2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,redstc2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,redstl1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,redstl1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,redstl2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,redstl2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,redstld1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,redstld1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,redstld2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,redstld2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,taxc1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,taxc1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,taxc2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,taxc2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,taxl1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,taxl1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,taxl2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,taxl2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,taxld1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,taxld1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,taxld2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,taxld2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,ukempl1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,ukempl1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,ukempl2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,ukempl2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,wagec1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,wagec1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,wagec2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,wagec2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,wagel1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,wagel1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,wagel2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,wagel2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,wageld1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,wageld1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,wageld2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-uk-general-election-1997,wageld2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016
-zeguo-2005,post_d3043,5,Don’t know,data/zeguo-2005/source-materials/questionnaire.pdf; Q43 bilingual response options
-zeguo-2005,post_d3044,5,Don’t know,data/zeguo-2005/source-materials/questionnaire.pdf; Q44 bilingual response options
-zeguo-2005,post_d3045,5,Don’t know,data/zeguo-2005/source-materials/questionnaire.pdf; Q45 bilingual response options
-zeguo-2005,post_d3046,6,Don’t know,data/zeguo-2005/source-materials/questionnaire.pdf; Q46 bilingual response options
-zeguo-2005,pre_d3043,5,Don’t know,data/zeguo-2005/source-materials/questionnaire.pdf; Q43 bilingual response options
-zeguo-2005,pre_d3044,5,Don’t know,data/zeguo-2005/source-materials/questionnaire.pdf; Q44 bilingual response options
-zeguo-2005,pre_d3045,5,Don’t know,data/zeguo-2005/source-materials/questionnaire.pdf; Q45 bilingual response options
-zeguo-2005,pre_d3046,6,Don’t know,data/zeguo-2005/source-materials/questionnaire.pdf; Q46 bilingual response options
-california-whats-next-2011,t2q27,1,Democratic,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q27,2,Republican,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q27,3,Independent,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q27,4,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q28,1,Democratic,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q28,2,Republican,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q28,3,Independent,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q28,4,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q29,1,a simple majority of both houses,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q29,2,two-thirds of both houses,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q29,3,a simple majority of the Assembly and two-thirds of Senate,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q29,4,a simple majority of the Senate and two-thirds of Assembly,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q29,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q30,1,a simple majority of both houses,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q30,2,two-thirds of both houses,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q30,3,a simple majority of the Assembly and two-thirds of Senate,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q30,4,a simple majority of the Senate and two-thirds of Assembly,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q30,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q31,1,any US citizen over 18 years of age,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q31,2,any California resident over 18 years of age,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q31,3,anyone who is registered to vote in California,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q31,4,anyone who is registered to vote in California and voted in last State election,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q31,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q32,1,California,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q32,2,Texas,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q32,3,New York,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q32,4,Florida,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q32,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q33,1,California,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q33,2,New York,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q33,3,Massachusetts,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q33,4,Oregon,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q33,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q34,1,Higher Education,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q34,2,K-12 education,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q34,3,Health and Human Services,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q34,4,State Pensions,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t2q34,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q27,1,Democratic,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q27,2,Republican,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q27,3,Independent,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q27,4,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q28,1,Democratic,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q28,2,Republican,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q28,3,Independent,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q28,4,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q29,1,a simple majority of both houses,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q29,2,two-thirds of both houses,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q29,3,a simple majority of the Assembly and two-thirds of Senate,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q29,4,a simple majority of the Senate and two-thirds of Assembly,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q29,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q30,1,a simple majority of both houses,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q30,2,two-thirds of both houses,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q30,3,a simple majority of the Assembly and two-thirds of Senate,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q30,4,a simple majority of the Senate and two-thirds of Assembly,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q30,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q31,1,any US citizen over 18 years of age,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q31,2,any California resident over 18 years of age,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q31,3,anyone who is registered to vote in California,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q31,4,anyone who is registered to vote in California and voted in last State election,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q31,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q32,1,California,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q32,2,Texas,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q32,3,New York,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q32,4,Florida,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q32,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q33,1,California,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q33,2,New York,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q33,3,Massachusetts,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q33,4,Oregon,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q33,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q34,1,Higher Education,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q34,2,K-12 education,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q34,3,Health and Human Services,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q34,4,State Pensions,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-california-whats-next-2011,t3q34,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts
-michigan-2009,q4,1,Decrease taxes even if less funding for programs,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q4,2,2,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q4,3,3,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q4,4,Exactly in the middle,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q4,5,5,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q4,6,6,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q4,7,Spend more on programs even if increase taxes,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q4,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q4,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q5,1,Decrease taxes even if less funding for programs,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q5,2,2,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q5,3,3,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q5,4,Exactly in the middle,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q5,5,5,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q5,6,6,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q5,7,Spend more on programs even if increase taxes,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q5,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q5,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q7,1,State do all it can,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q7,2,2,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q7,3,3,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q7,4,Exactly in the middle,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q7,5,5,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q7,6,6,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q7,7,Economy recover on its own,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q7,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q7,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q8,1,State do all it can,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q8,2,2,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q8,3,3,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q8,4,Exactly in the middle,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q8,5,5,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q8,6,6,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q8,7,Economy recover on its own,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q8,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q8,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,t2q7,1,See to it that everyone has a job and certain standard of living,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q7,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q7,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q7,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q7,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q7,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q7,7,Let everyone try to get ahead on his or her own,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q7,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q8,1,See to it that everyone has a job and certain standard of living,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q8,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q8,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q8,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q8,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q8,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q8,7,Let everyone try to get ahead on his or her own,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q8,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q10,1,Decrease taxes even if less funding for programs,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q10,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q10,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q10,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q10,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q10,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q10,7,Spend more on programs even if increase taxes,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q10,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q11,1,Decrease taxes even if less funding for programs,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q11,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q11,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q11,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q11,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q11,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q11,7,Spend more on programs even if increase taxes,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q11,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q13,1,State do all it can,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q13,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q13,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q13,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q13,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q13,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q13,7,Economy recover on its own,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q13,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q14,1,State do all it can,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q14,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q14,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q14,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q14,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q14,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q14,7,Economy recover on its own,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t2q14,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q7,1,See to it that everyone has a job and certain standard of living,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q7,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q7,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q7,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q7,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q7,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q7,7,Let everyone try to get ahead on his or her own,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q7,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q8,1,See to it that everyone has a job and certain standard of living,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q8,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q8,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q8,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q8,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q8,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q8,7,Let everyone try to get ahead on his or her own,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q8,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q10,1,Decrease taxes even if less funding for programs,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q10,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q10,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q10,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q10,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q10,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q10,7,Spend more on programs even if increase taxes,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q10,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q11,1,Decrease taxes even if less funding for programs,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q11,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q11,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q11,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q11,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q11,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q11,7,Spend more on programs even if increase taxes,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q11,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q13,1,State do all it can,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q13,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q13,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q13,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q13,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q13,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q13,7,Economy recover on its own,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q13,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q14,1,State do all it can,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q14,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q14,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q14,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q14,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q14,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q14,7,Economy recover on its own,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,t3q14,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields
-michigan-2009,q14,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q14,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q15,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q15,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q16,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q16,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q17,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q17,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q18,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99
-michigan-2009,q18,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99
-new-haven-2004,pre_q35,5,No response / Don't know,"data/new-haven-2004/source-materials/baseline-cati.txt; CATI Q38, bridged source field pre_q35; same question wording in metadata/items.csv"
-new-haven-2004,post_q35,5,Don't know,data/new-haven-2004/source-materials/field-questionnaire.pdf; Q35 terminal response option; substantive option numbering matches metadata/items.csv
-new-haven-2004,pre_q36,4,No response / Don't know,"data/new-haven-2004/source-materials/baseline-cati.txt; CATI Q39, bridged source field pre_q36; same question wording in metadata/items.csv"
-new-haven-2004,pre_q37,5,No response / Don't know,"data/new-haven-2004/source-materials/baseline-cati.txt; CATI Q40, bridged source field pre_q37; same question wording in metadata/items.csv"
-new-haven-2004,post_q37,5,Don't know,data/new-haven-2004/source-materials/field-questionnaire.pdf; Q37 terminal response option; substantive option numbering matches metadata/items.csv
-new-haven-2004,pre_q39,4,No response / Don't know,"data/new-haven-2004/source-materials/baseline-cati.txt; CATI Q42, bridged source field pre_q39; same question wording in metadata/items.csv"
-new-haven-2004,post_q39,4,Don't know,data/new-haven-2004/source-materials/field-questionnaire.pdf; Q39 terminal response option; substantive option numbering matches metadata/items.csv
-new-haven-2004,pre_q40,3,No response / Don't know,"data/new-haven-2004/source-materials/baseline-cati.txt; CATI Q43, bridged source field pre_q40; same question wording in metadata/items.csv"
-new-haven-2004,post_q40,3,Don't know,data/new-haven-2004/source-materials/field-questionnaire.pdf; Q40 terminal response option; substantive option numbering matches metadata/items.csv
-new-haven-2004,pre_q41,4,No response / Don't know,"data/new-haven-2004/source-materials/baseline-cati.txt; CATI Q44, bridged source field pre_q41; same question wording in metadata/items.csv"
-new-haven-2004,post_q41,4,Don't know,data/new-haven-2004/source-materials/field-questionnaire.pdf; Q41 terminal response option; substantive option numbering matches metadata/items.csv
-new-haven-2004,pre_q42,5,No response / Don't know,"data/new-haven-2004/source-materials/baseline-cati.txt; CATI Q45, bridged source field pre_q42; same question wording in metadata/items.csv"
-new-haven-2004,post_q42,5,Don't know,data/new-haven-2004/source-materials/field-questionnaire.pdf; Q42 terminal response option; substantive option numbering matches metadata/items.csv
-new-haven-2004,pre_q43,3,Don't know,"data/new-haven-2004/source-materials/baseline-cati.txt; CATI Q46, bridged source field pre_q43; same question wording in metadata/items.csv"
-new-haven-2004,post_q43,3,Don't know,data/new-haven-2004/source-materials/field-questionnaire.pdf; Q43 terminal response option; substantive option numbering matches metadata/items.csv
-nic-1996,TROOPSA3,0,No,data/nic-1996/codebook.txt; TROOPSA3 Q18 SAQ3 frequency table
-nic-1996,TROOPSA3,1,Yes,data/nic-1996/codebook.txt; TROOPSA3 Q18 SAQ3 frequency table
-nic-1996,TROOPSB3,0,No,data/nic-1996/codebook.txt; TROOPSB3 Q18 SAQ3 frequency table
-nic-1996,TROOPSB3,1,Yes,data/nic-1996/codebook.txt; TROOPSB3 Q18 SAQ3 frequency table
-nic-1996,TROOPSC3,0,No,data/nic-1996/codebook.txt; TROOPSC3 Q18 SAQ3 frequency table
-nic-1996,TROOPSC3,1,Yes,data/nic-1996/codebook.txt; TROOPSC3 Q18 SAQ3 frequency table
-nic-1996,TROOPSD3,0,No,data/nic-1996/codebook.txt; TROOPSD3 Q18 SAQ3 frequency table
-nic-1996,TROOPSD3,1,Yes,data/nic-1996/codebook.txt; TROOPSD3 Q18 SAQ3 frequency table
-nic-1996,POLREP3,1,Extremely liberal,data/nic-1996/codebook.txt:5980-6050; POLREP3 SAQ3 frequency table
-nic-1996,POLREP3,2,Liberal,data/nic-1996/codebook.txt:5980-6050; POLREP3 SAQ3 frequency table
-nic-1996,POLREP3,3,Slightly liberal,data/nic-1996/codebook.txt:5980-6050; POLREP3 SAQ3 frequency table
-nic-1996,POLREP3,4,Moderate middle of road,data/nic-1996/codebook.txt:5980-6050; POLREP3 SAQ3 frequency table
-nic-1996,POLREP3,5,Slightly conservative,data/nic-1996/codebook.txt:5980-6050; POLREP3 SAQ3 frequency table
-nic-1996,POLREP3,6,Conservative,data/nic-1996/codebook.txt:5980-6050; POLREP3 SAQ3 frequency table
-nic-1996,POLREP3,7,Extremely conservative,data/nic-1996/codebook.txt:5980-6050; POLREP3 SAQ3 frequency table
-nic-1996,POLDEM3,1,Extremely liberal,data/nic-1996/codebook.txt:5980-6050; POLDEM3 SAQ3 frequency table
-nic-1996,POLDEM3,2,Liberal,data/nic-1996/codebook.txt:5980-6050; POLDEM3 SAQ3 frequency table
-nic-1996,POLDEM3,3,Slightly liberal,data/nic-1996/codebook.txt:5980-6050; POLDEM3 SAQ3 frequency table
-nic-1996,POLDEM3,4,Moderate middle of road,data/nic-1996/codebook.txt:5980-6050; POLDEM3 SAQ3 frequency table
-nic-1996,POLDEM3,5,Slightly conservative,data/nic-1996/codebook.txt:5980-6050; POLDEM3 SAQ3 frequency table
-nic-1996,POLDEM3,6,Conservative,data/nic-1996/codebook.txt:5980-6050; POLDEM3 SAQ3 frequency table
-nic-1996,POLDEM3,7,Extremely conservative,data/nic-1996/codebook.txt:5980-6050; POLDEM3 SAQ3 frequency table
+poll_id,source_column,code,label,evidence,response_reason
+a1r-climate-2021,Q19,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,Q19,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,Q19,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,Q20,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,Q20,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,Q20,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,Q21,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,Q21,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,Q21,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,Q22,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,Q22,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,Q22,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,Q23,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,Q23,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,Q23,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,Q24,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,Q24,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,Q24,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q19,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q19,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q19,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q20,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q20,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q20,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q21,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q21,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q21,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q22,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q22,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q22,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q23,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q23,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q23,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q24,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q24,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T2Q24,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q19,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q19,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q19,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q20,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q20,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q20,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q21,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q21,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q21,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q22,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q22,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q22,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q23,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q23,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q23,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q24,77,Couldn’t say,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q24,98,SKIPPED ON WEB,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+a1r-climate-2021,T3Q24,99,REFUSED,data/a1r-climate-2021/scripts/replication-data-preparation.do:355-399; Q19-Q24 category labels and repeated T2/T3 items,
+nic-1996,AFDC1,198,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype,
+nic-1996,AFDC2,888,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype,
+nic-1996,AFDC2,998,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype,
+nic-1996,AFDC3,998,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype,
+nic-1996,POLDEM1,8,Don’t know Haven’t thought,data/nic-1996/codebook.txt:5937-6047; Q35/Q36 SAQ/SAQ2/SAQ3 printed category8,
+nic-1996,POLDEM2,8,Don’t know Haven’t thought,data/nic-1996/codebook.txt:5937-6047; Q35/Q36 SAQ/SAQ2/SAQ3 printed category8,
+nic-1996,POLDEM3,8,Don’t know Haven’t thought,data/nic-1996/codebook.txt:5937-6047; Q35/Q36 SAQ/SAQ2/SAQ3 printed category8,
+nic-1996,POLREP1,8,Don’t know Haven’t thought,data/nic-1996/codebook.txt:5937-6047; Q35/Q36 SAQ/SAQ2/SAQ3 printed category8,
+nic-1996,POLREP2,8,Don’t know Haven’t thought,data/nic-1996/codebook.txt:5937-6047; Q35/Q36 SAQ/SAQ2/SAQ3 printed category8,
+nic-1996,POLREP3,8,Don’t know Haven’t thought,data/nic-1996/codebook.txt:5937-6047; Q35/Q36 SAQ/SAQ2/SAQ3 printed category8,
+nic-1996,SPEND1,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,SPEND2,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,SPEND3,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,TRADE1,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,TRADE2,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,TRADE3,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,TROOPSA1,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,TROOPSA2,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,TROOPSA3,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,TROOPSB1,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,TROOPSB2,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,TROOPSB3,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,TROOPSC1,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,TROOPSC2,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,TROOPSC3,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,TROOPSD1,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,TROOPSD2,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,TROOPSD3,8,Do not know,"data/nic-1996/codebook.txt; closed TRADE/SPEND/TROOPSA-D items, including TROOPSA1/2 lines5175-5215 and TROOPSD1/2 lines5420-5466; excludes open numeric estimates",
+nic-1996,UNEMP2,998,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype,
+nic-1996,UNEMP3,998,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype,
+nic-1996,WEDLOCK1,198,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype,
+nic-1996,WEDLOCK2,250,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype,
+nic-1996,WEDLOCK2,888,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype,
+nic-1996,WEDLOCK2,998,Missing,data/nic-1996/codebook.txt; corresponding open numeric frequency table groups this value under Missing without DK/refusal subtype,
+uk-crime-1994,kw11,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,kw11,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,kw12,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,kw12,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,kw21,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,kw21,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,kw22,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,kw22,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,kw31,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,kw31,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,kw32,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,kw32,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,kw41,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,kw41,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,kw42,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,kw42,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,pkw11,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,pkw11,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,pkw12,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,pkw12,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,pkw21,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,pkw21,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,pkw22,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,pkw22,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,pkw31,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,pkw31,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,pkw32,8,Do not know,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-crime-1994,pkw32,9,NA,"data/uk-crime-1994/codebook.txt:4930-5655; C18a-d/C19a-c, NA does not distinguish refusal",
+uk-general-election-1997,euc1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,euc1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,euc2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,euc2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,eul1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,eul1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,eul2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,eul2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,euld1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,euld1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,euld2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,euld2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,inflat1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,inflat1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,inflat2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,inflat2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,intrst1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,intrst1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,intrst2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,intrst2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,redstc1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,redstc1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,redstc2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,redstc2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,redstl1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,redstl1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,redstl2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,redstl2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,redstld1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,redstld1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,redstld2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,redstld2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,taxc1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,taxc1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,taxc2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,taxc2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,taxl1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,taxl1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,taxl2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,taxl2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,taxld1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,taxld1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,taxld2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,taxld2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,ukempl1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,ukempl1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,ukempl2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,ukempl2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,wagec1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,wagec1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,wagec2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,wagec2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,wagel1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,wagel1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,wagel2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,wagel2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,wageld1,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,wageld1,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,wageld2,-8,Don’t Know,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+uk-general-election-1997,wageld2,-9,Not Answered,data/uk-general-election-1997/codebook.txt; Q12-Q17: REDSTC1/2 lines3208-3224 and INFLAT1/2 lines4004-4016,
+zeguo-2005,post_d3043,5,Don’t know,data/zeguo-2005/source-materials/questionnaire.pdf; Q43 bilingual response options,
+zeguo-2005,post_d3044,5,Don’t know,data/zeguo-2005/source-materials/questionnaire.pdf; Q44 bilingual response options,
+zeguo-2005,post_d3045,5,Don’t know,data/zeguo-2005/source-materials/questionnaire.pdf; Q45 bilingual response options,
+zeguo-2005,post_d3046,6,Don’t know,data/zeguo-2005/source-materials/questionnaire.pdf; Q46 bilingual response options,
+zeguo-2005,pre_d3043,5,Don’t know,data/zeguo-2005/source-materials/questionnaire.pdf; Q43 bilingual response options,
+zeguo-2005,pre_d3044,5,Don’t know,data/zeguo-2005/source-materials/questionnaire.pdf; Q44 bilingual response options,
+zeguo-2005,pre_d3045,5,Don’t know,data/zeguo-2005/source-materials/questionnaire.pdf; Q45 bilingual response options,
+zeguo-2005,pre_d3046,6,Don’t know,data/zeguo-2005/source-materials/questionnaire.pdf; Q46 bilingual response options,
+california-whats-next-2011,t2q27,1,Democratic,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q27,2,Republican,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q27,3,Independent,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q27,4,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q28,1,Democratic,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q28,2,Republican,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q28,3,Independent,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q28,4,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q29,1,a simple majority of both houses,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q29,2,two-thirds of both houses,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q29,3,a simple majority of the Assembly and two-thirds of Senate,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q29,4,a simple majority of the Senate and two-thirds of Assembly,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q29,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q30,1,a simple majority of both houses,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q30,2,two-thirds of both houses,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q30,3,a simple majority of the Assembly and two-thirds of Senate,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q30,4,a simple majority of the Senate and two-thirds of Assembly,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q30,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q31,1,any US citizen over 18 years of age,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q31,2,any California resident over 18 years of age,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q31,3,anyone who is registered to vote in California,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q31,4,anyone who is registered to vote in California and voted in last State election,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q31,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q32,1,California,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q32,2,Texas,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q32,3,New York,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q32,4,Florida,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q32,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q33,1,California,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q33,2,New York,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q33,3,Massachusetts,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q33,4,Oregon,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q33,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q34,1,Higher Education,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q34,2,K-12 education,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q34,3,Health and Human Services,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q34,4,State Pensions,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t2q34,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q27,1,Democratic,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q27,2,Republican,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q27,3,Independent,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q27,4,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q28,1,Democratic,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q28,2,Republican,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q28,3,Independent,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q28,4,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q29,1,a simple majority of both houses,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q29,2,two-thirds of both houses,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q29,3,a simple majority of the Assembly and two-thirds of Senate,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q29,4,a simple majority of the Senate and two-thirds of Assembly,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q29,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q30,1,a simple majority of both houses,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q30,2,two-thirds of both houses,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q30,3,a simple majority of the Assembly and two-thirds of Senate,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q30,4,a simple majority of the Senate and two-thirds of Assembly,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q30,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q31,1,any US citizen over 18 years of age,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q31,2,any California resident over 18 years of age,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q31,3,anyone who is registered to vote in California,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q31,4,anyone who is registered to vote in California and voted in last State election,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q31,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q32,1,California,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q32,2,Texas,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q32,3,New York,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q32,4,Florida,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q32,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q33,1,California,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q33,2,New York,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q33,3,Massachusetts,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q33,4,Oregon,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q33,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q34,1,Higher Education,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q34,2,K-12 education,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q34,3,Health and Human Services,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q34,4,State Pensions,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+california-whats-next-2011,t3q34,5,Couldn’t say,data/california-whats-next-2011/questionnaire-post.pdf pp. 16-18 Q27-Q34 ordered response choices; docs/poll-issues.md CA-03 verifies event-wave coding against all sixteen report item counts,
+michigan-2009,q4,1,Decrease taxes even if less funding for programs,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q4,2,2,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q4,3,3,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q4,4,Exactly in the middle,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q4,5,5,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q4,6,6,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q4,7,Spend more on programs even if increase taxes,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q4,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q4,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q5,1,Decrease taxes even if less funding for programs,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q5,2,2,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q5,3,3,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q5,4,Exactly in the middle,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q5,5,5,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q5,6,6,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q5,7,Spend more on programs even if increase taxes,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q5,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q5,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q7,1,State do all it can,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q7,2,2,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q7,3,3,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q7,4,Exactly in the middle,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q7,5,5,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q7,6,6,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q7,7,Economy recover on its own,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q7,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q7,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q8,1,State do all it can,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q8,2,2,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q8,3,3,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q8,4,Exactly in the middle,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q8,5,5,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q8,6,6,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q8,7,Economy recover on its own,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q8,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q8,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 2 Q3-Q8: 1-7 scale; IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,t2q7,1,See to it that everyone has a job and certain standard of living,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q7,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q7,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q7,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q7,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q7,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q7,7,Let everyone try to get ahead on his or her own,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q7,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q8,1,See to it that everyone has a job and certain standard of living,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q8,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q8,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q8,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q8,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q8,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q8,7,Let everyone try to get ahead on his or her own,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q8,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q10,1,Decrease taxes even if less funding for programs,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q10,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q10,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q10,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q10,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q10,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q10,7,Spend more on programs even if increase taxes,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q10,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q11,1,Decrease taxes even if less funding for programs,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q11,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q11,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q11,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q11,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q11,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q11,7,Spend more on programs even if increase taxes,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q11,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q13,1,State do all it can,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q13,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q13,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q13,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q13,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q13,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q13,7,Economy recover on its own,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q13,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q14,1,State do all it can,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q14,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q14,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q14,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q14,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q14,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q14,7,Economy recover on its own,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t2q14,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q7,1,See to it that everyone has a job and certain standard of living,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q7,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q7,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q7,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q7,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q7,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q7,7,Let everyone try to get ahead on his or her own,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q7,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q8,1,See to it that everyone has a job and certain standard of living,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q8,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q8,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q8,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q8,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q8,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q8,7,Let everyone try to get ahead on his or her own,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q8,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q10,1,Decrease taxes even if less funding for programs,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q10,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q10,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q10,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q10,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q10,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q10,7,Spend more on programs even if increase taxes,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q10,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q11,1,Decrease taxes even if less funding for programs,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q11,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q11,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q11,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q11,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q11,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q11,7,Spend more on programs even if increase taxes,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q11,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q13,1,State do all it can,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q13,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q13,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q13,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q13,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q13,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q13,7,Economy recover on its own,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q13,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q14,1,State do all it can,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q14,2,2,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q14,3,3,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q14,4,Exactly in the middle,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q14,5,5,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q14,6,6,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q14,7,Economy recover on its own,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,t3q14,99,No opinion,data/michigan-2009/questionnaire-post.pdf pp. 3-4 Q6-Q14 printed scale codes; docs/poll-issues.md MI-02 identifies corresponding arrival and exit fields,
+michigan-2009,q14,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q14,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q15,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q15,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q16,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q16,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q17,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q17,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q18,98,N/A / refused,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99,
+michigan-2009,q18,99,No opinion,data/michigan-2009/questionnaire-pre.pdf p. 4 Q14-Q18: IF N/A REFUSED then 98; IF NO OPINION then 99,
+new-haven-2004,pre_q35,5,No response / Don't know,"data/new-haven-2004/source-materials/baseline-cati.txt; CATI Q38, bridged source field pre_q35; same question wording in metadata/items.csv",
+new-haven-2004,post_q35,5,Don't know,data/new-haven-2004/source-materials/field-questionnaire.pdf; Q35 terminal response option; substantive option numbering matches metadata/items.csv,
+new-haven-2004,pre_q36,4,No response / Don't know,"data/new-haven-2004/source-materials/baseline-cati.txt; CATI Q39, bridged source field pre_q36; same question wording in metadata/items.csv",
+new-haven-2004,pre_q37,5,No response / Don't know,"data/new-haven-2004/source-materials/baseline-cati.txt; CATI Q40, bridged source field pre_q37; same question wording in metadata/items.csv",
+new-haven-2004,post_q37,5,Don't know,data/new-haven-2004/source-materials/field-questionnaire.pdf; Q37 terminal response option; substantive option numbering matches metadata/items.csv,
+new-haven-2004,pre_q39,4,No response / Don't know,"data/new-haven-2004/source-materials/baseline-cati.txt; CATI Q42, bridged source field pre_q39; same question wording in metadata/items.csv",
+new-haven-2004,post_q39,4,Don't know,data/new-haven-2004/source-materials/field-questionnaire.pdf; Q39 terminal response option; substantive option numbering matches metadata/items.csv,
+new-haven-2004,pre_q40,3,No response / Don't know,"data/new-haven-2004/source-materials/baseline-cati.txt; CATI Q43, bridged source field pre_q40; same question wording in metadata/items.csv",
+new-haven-2004,post_q40,3,Don't know,data/new-haven-2004/source-materials/field-questionnaire.pdf; Q40 terminal response option; substantive option numbering matches metadata/items.csv,
+new-haven-2004,pre_q41,4,No response / Don't know,"data/new-haven-2004/source-materials/baseline-cati.txt; CATI Q44, bridged source field pre_q41; same question wording in metadata/items.csv",
+new-haven-2004,post_q41,4,Don't know,data/new-haven-2004/source-materials/field-questionnaire.pdf; Q41 terminal response option; substantive option numbering matches metadata/items.csv,
+new-haven-2004,pre_q42,5,No response / Don't know,"data/new-haven-2004/source-materials/baseline-cati.txt; CATI Q45, bridged source field pre_q42; same question wording in metadata/items.csv",
+new-haven-2004,post_q42,5,Don't know,data/new-haven-2004/source-materials/field-questionnaire.pdf; Q42 terminal response option; substantive option numbering matches metadata/items.csv,
+new-haven-2004,pre_q43,3,Don't know,"data/new-haven-2004/source-materials/baseline-cati.txt; CATI Q46, bridged source field pre_q43; same question wording in metadata/items.csv",
+new-haven-2004,post_q43,3,Don't know,data/new-haven-2004/source-materials/field-questionnaire.pdf; Q43 terminal response option; substantive option numbering matches metadata/items.csv,
+nic-1996,TROOPSA3,0,No,data/nic-1996/codebook.txt; TROOPSA3 Q18 SAQ3 frequency table,
+nic-1996,TROOPSA3,1,Yes,data/nic-1996/codebook.txt; TROOPSA3 Q18 SAQ3 frequency table,
+nic-1996,TROOPSB3,0,No,data/nic-1996/codebook.txt; TROOPSB3 Q18 SAQ3 frequency table,
+nic-1996,TROOPSB3,1,Yes,data/nic-1996/codebook.txt; TROOPSB3 Q18 SAQ3 frequency table,
+nic-1996,TROOPSC3,0,No,data/nic-1996/codebook.txt; TROOPSC3 Q18 SAQ3 frequency table,
+nic-1996,TROOPSC3,1,Yes,data/nic-1996/codebook.txt; TROOPSC3 Q18 SAQ3 frequency table,
+nic-1996,TROOPSD3,0,No,data/nic-1996/codebook.txt; TROOPSD3 Q18 SAQ3 frequency table,
+nic-1996,TROOPSD3,1,Yes,data/nic-1996/codebook.txt; TROOPSD3 Q18 SAQ3 frequency table,
+nic-1996,POLREP3,1,Extremely liberal,data/nic-1996/codebook.txt:5980-6050; POLREP3 SAQ3 frequency table,
+nic-1996,POLREP3,2,Liberal,data/nic-1996/codebook.txt:5980-6050; POLREP3 SAQ3 frequency table,
+nic-1996,POLREP3,3,Slightly liberal,data/nic-1996/codebook.txt:5980-6050; POLREP3 SAQ3 frequency table,
+nic-1996,POLREP3,4,Moderate middle of road,data/nic-1996/codebook.txt:5980-6050; POLREP3 SAQ3 frequency table,
+nic-1996,POLREP3,5,Slightly conservative,data/nic-1996/codebook.txt:5980-6050; POLREP3 SAQ3 frequency table,
+nic-1996,POLREP3,6,Conservative,data/nic-1996/codebook.txt:5980-6050; POLREP3 SAQ3 frequency table,
+nic-1996,POLREP3,7,Extremely conservative,data/nic-1996/codebook.txt:5980-6050; POLREP3 SAQ3 frequency table,
+nic-1996,POLDEM3,1,Extremely liberal,data/nic-1996/codebook.txt:5980-6050; POLDEM3 SAQ3 frequency table,
+nic-1996,POLDEM3,2,Liberal,data/nic-1996/codebook.txt:5980-6050; POLDEM3 SAQ3 frequency table,
+nic-1996,POLDEM3,3,Slightly liberal,data/nic-1996/codebook.txt:5980-6050; POLDEM3 SAQ3 frequency table,
+nic-1996,POLDEM3,4,Moderate middle of road,data/nic-1996/codebook.txt:5980-6050; POLDEM3 SAQ3 frequency table,
+nic-1996,POLDEM3,5,Slightly conservative,data/nic-1996/codebook.txt:5980-6050; POLDEM3 SAQ3 frequency table,
+nic-1996,POLDEM3,6,Conservative,data/nic-1996/codebook.txt:5980-6050; POLDEM3 SAQ3 frequency table,
+nic-1996,POLDEM3,7,Extremely conservative,data/nic-1996/codebook.txt:5980-6050; POLDEM3 SAQ3 frequency table,
+california-whats-next-2011,t3q33,0,,data/california-whats-next-2011/questionnaire-post.pdf pp. 17-18 Q33 offers codes1:5; raw0 is outside all offered options; docs/poll-issues.md CA-05,invalid_response
+michigan-2009,t2q10,9,,data/michigan-2009/questionnaire-post.pdf p.3 Q10 offers1:7 and99; arrival field uses the same scale; raw9 is outside all offered options; docs/poll-issues.md MI-03,invalid_response
