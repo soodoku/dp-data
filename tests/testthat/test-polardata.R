@@ -93,10 +93,10 @@ test_that("stored indices cannot supply the reconstruction", {
   expect_identical(build_health_polardata(survey), expected)
 })
 
-test_that("historical folds and missingness are preserved without new codes", {
+test_that("Health ordered responses preserve missingness", {
   expect_equal(
-    historical_health_response(c(1, 2, 3, -9, -8, NA), 3L, TRUE),
-    c(1, 0.5, 1, NA, NA, NA)
+    historical_health_response(c(1, 2, 3, -9, -8, NA), 3L),
+    c(0, 0.5, 1, NA, NA, NA)
   )
   expect_equal(
     historical_available_mean(rbind(c(NA, 0.5), c(NA, NA))),
@@ -184,7 +184,7 @@ test_that("raw knowledge keys reproduce stored correctness and precision", {
 
 test_that("group gain conditions on unknown items and excludes self", {
   corrected <- rbind(c(1, 0), c(0, 0), c(1, 1))
-  expect_equal(historical_group_gain(corrected, rep(1, 3)), c(.5, .75, NA))
+  expect_equal(historical_group_gain(corrected, rep(1, 3)), c(.5, .75, 0))
   expect_error(historical_group_gain(corrected, 1:3))
   expect_error(historical_group_gain(corrected, c(1, NA, 1)))
   corrected[1, 1] <- NA_real_
@@ -193,7 +193,9 @@ test_that("group gain conditions on unknown items and excludes self", {
 
 test_that("knowledge transformations preserve missing and zero cases", {
   rebuilt <- build_health_polardata()
-  expect_identical(is.na(rebuilt$grpgain), rebuilt$t1knowcor == 1)
+  expect_false(anyNA(rebuilt$grpgain))
+  expect_equal(sum(rebuilt$t1knowcor == 1), 12L)
+  expect_true(all(rebuilt$grpgain[rebuilt$t1knowcor == 1] == 0))
   expect_true(all(rebuilt$knowgain2 >= 0))
   expect_true(all(rebuilt$t1knowcor <= rebuilt$t1know))
   expect_equal(
@@ -273,4 +275,49 @@ test_that("shared Health dispersion uses the final attitude indices", {
   profile <- core_poll_profile(survey, "uk-health-1998")
   expect_equal(profile$attitudes, final)
   expect_equal(ncol(profile$attitudes), 11L)
+})
+
+
+test_that("Health input indices distinguish none from all at both interviews", {
+  survey <- read_poll_survey("uk-health-1998")
+  pairs <- rbind(
+    expand.grid(first = 1:3, second = 1:3),
+    c(-9, 3), c(1, -8), c(-9, -8), c(NA, NA)
+  )
+  expected <- c(0, .25, .5, .25, .5, .75, .5, .75, 1, 1, 0, NA, NA)
+  rows <- seq_len(nrow(pairs))
+  for (wave in 1:2) {
+    for (stems in list(c("ingova", "inpuba"), c("ingpa", "indoca"))) {
+      survey[[paste0(stems[1], wave)]][rows] <- pairs[, 1]
+      survey[[paste0(stems[2], wave)]][rows] <- pairs[, 2]
+    }
+  }
+  individual <- build_health_individual(survey)
+  for (wave in 1:2) {
+    for (index in c("dispub", "avgdis")) {
+      values <- individual[[paste0("ukhealth.t", wave, index)]][rows]
+      expect_equal(values, expected)
+    }
+  }
+})
+
+
+test_that("Health input ordering agrees with independent evidence", {
+  approved <- readr::read_csv(project_path(
+    "audit", "corrections", "uk-health-1998", "folded_input_approved_values.csv"
+  ), show_col_types = FALSE)
+  rebuilt <- build_historical_poll("uk-health-1998")
+  expect_equal(nrow(rebuilt), 230L)
+  expect_false(anyDuplicated(rebuilt$caseid) > 0L)
+  for (field in unique(approved$legacy_field)) {
+    expected <- approved[approved$legacy_field == field, ]
+    rows <- match(expected$caseid, rebuilt$caseid)
+    expect_false(anyNA(rows))
+    expect_equal(
+      rebuilt[[field]][rows], expected$approved_value, tolerance = 1e-10
+    )
+    expect_identical(
+      is.na(expected$previous_value), is.na(expected$approved_value)
+    )
+  }
 })

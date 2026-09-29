@@ -7,6 +7,21 @@ historical_group_summary <- function(value, group, statistic = mean) {
   result
 }
 
+apply_peer_opportunity_ceiling <- function(gain, scored_items, group) {
+  scored_items <- as.matrix(scored_items)
+  stopifnot(
+    is.numeric(scored_items), ncol(scored_items) > 0L,
+    nrow(scored_items) == length(gain), length(group) == length(gain)
+  )
+  known <- !is.na(scored_items) & abs(scored_items - 1) <= 1e-10
+  complete_ceiling <- rowSums(known) == ncol(scored_items)
+  size <- historical_group_summary(rep(1, length(group)), group, sum)
+  has_peers <- !is.na(group) & !is.na(size) & size > 1
+  gain[!has_peers] <- NA_real_
+  gain[complete_ceiling & has_peers] <- 0
+  gain
+}
+
 observed_peer_mean <- function(value, group) {
   stopifnot(
     is.numeric(value), length(value) == length(group),

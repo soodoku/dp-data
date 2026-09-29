@@ -80,18 +80,21 @@ test_that("derived exports preserve unique people and reviewed gain", {
   expect_equal(unique(europolis$meanage[
     europolis$pollgroup == 7125
   ]), 48.125)
-  australia_gain <- derived$poll_id == "australia-republic-1999" &
-    derived$legacy_field %in% c("grpgain", "loggain")
-  expect_setequal(unique(derived$definition_version[australia_gain]),
-                  "aus-02-v3")
+  peer_opportunity <- derived$legacy_field %in% c(
+    "grpgain", "grpgain2", "grpgainr", "loggain"
+  )
+  expect_equal(sum(peer_opportunity), 5869L * 4L)
+  expect_setequal(unique(derived$definition_version[peer_opportunity]),
+                  "peer-opportunity-v2")
+  expect_true(all(
+    derived$respondent_scope[peer_opportunity] == "leave_one_out"
+  ))
   australia_age <- derived$poll_id == "australia-republic-1999" &
     derived$legacy_field == "meanage"
   expect_setequal(unique(derived$definition_version[australia_age]),
                   "aus05-v2")
   election_group <- derived$poll_id == "uk-general-election-1997" &
-    derived$legacy_field %in% c(
-      "grpgain", "grpgainr", "loggain", "avgsd", "genvar"
-    )
+    derived$legacy_field %in% c("avgsd", "genvar")
   expect_setequal(unique(derived$definition_version[election_group]),
                   "ukge-05-v2")
   health_gender <- derived$poll_id == "btp-health-education-2005" &
@@ -128,10 +131,6 @@ test_that("derived exports preserve unique people and reviewed gain", {
     derived$legacy_field %in% c("meanxtreme", "avgsd", "genvar")
   expect_setequal(unique(derived$definition_version[btp_national_group]),
                   "btpn-02-v2")
-  primaries_gain <- derived$poll_id == "btp-presidential-primaries-2004" &
-    derived$legacy_field %in% c("grpgain", "grpgainr", "loggain")
-  expect_setequal(unique(derived$definition_version[primaries_gain]),
-                  "pr-02-v2")
   primaries_group <- derived$poll_id == "btp-presidential-primaries-2004" &
     derived$legacy_field %in% c(
       "groupsize", "vareduc", "sdeduc",
@@ -234,7 +233,7 @@ test_that("numerical exceptions cannot hide changed aggregate values", {
   expect_equal(parity$approved_correction_differences[national_global], 135L)
   primaries_gain <- parity$poll_id == "btp-presidential-primaries-2004" &
     parity$legacy_field == "grpgain"
-  expect_equal(parity$approved_correction_differences[primaries_gain], 188L)
+  expect_equal(parity$approved_correction_differences[primaries_gain], 198L)
   primaries_size <- parity$poll_id == "btp-presidential-primaries-2004" &
     parity$legacy_field == "groupsize"
   expect_equal(parity$approved_correction_differences[primaries_size], 217L)
@@ -390,8 +389,11 @@ test_that("UKGE-05 excludes a nonparticipant from early group metrics", {
     evidence <- approved[approved$legacy_field == field, ]
     expect_setequal(evidence$caseid, actual$caseid)
     position <- match(actual$caseid, evidence$caseid)
-    expect_equal(actual[[field]], evidence$approved_value[position],
-                 tolerance = 1e-10)
+    expected <- approved_reference_values(
+      "uk-general-election-1997", field, actual$caseid,
+      evidence$historical_value[position]
+    )
+    expect_equal(actual[[field]], expected, tolerance = 1e-10)
   }
   reference <- readr::read_tsv(project_path(
     "evidence", "benchmarks", "polardata.tab"
@@ -547,7 +549,10 @@ test_that("UKM-01 protects every approved post-knowledge value", {
     expect_equal(nrow(frozen), 258L)
     expect_setequal(data$caseid[selected], frozen$caseid)
     positions <- match(data$caseid[selected], frozen$caseid)
-    expect_equal(data[[field]][selected], frozen$approved_value[positions],
+    expected <- approved_reference_values(
+      "uk-monarchy-1996", field, frozen$caseid, frozen$historical_value
+    )
+    expect_equal(data[[field]][selected], expected[positions],
                  tolerance = 1e-10)
   }
   t2 <- approved[approved$legacy_field == "t2know", ]
@@ -654,8 +659,12 @@ test_that("Australia gains use aligned respondents and twelve scored items", {
   for (field in c("grpgain", "loggain")) {
     frozen <- approved[approved$legacy_field == field, ]
     expect_setequal(australia$caseid, frozen$caseid)
+    expected <- approved_reference_values(
+      "australia-republic-1999", field, frozen$caseid,
+      frozen$historical_value
+    )
     expect_equal(australia[[field]][match(frozen$caseid, australia$caseid)],
-                 frozen$approved_value, tolerance = 1e-10)
+                 expected, tolerance = 1e-10)
     paired <- is.finite(frozen$historical_value) &
       is.finite(frozen$approved_value)
     expect_equal(sum(abs(frozen$historical_value[paired] -
@@ -720,7 +729,7 @@ test_that("Australia peer knowledge matches other group members", {
   expected <- vapply(seq_along(rows), function(i) {
     peers <- which(group[rows] == group[rows[i]] & seq_along(rows) != i)
     unknown <- which(joint[i, ] == 0)
-    if (!length(unknown)) return(NA_real_)
+    if (!length(unknown)) return(0)
     mean(joint[peers, unknown, drop = FALSE])
   }, numeric(1))
   actual <- build_historical_poll("australia-republic-1999")
@@ -728,5 +737,37 @@ test_that("Australia peer knowledge matches other group members", {
   expect_equal(ncol(joint), 12L)
   expect_equal(actual$grpgain, expected[positions], tolerance = 1e-10)
   expect_true(all(actual$numitems == ncol(joint)))
-  expect_equal(sum(is.na(actual$grpgain)), 1L)
+  expect_false(anyNA(actual$grpgain))
+  expect_equal(actual$grpgain[actual$caseid == 579], 0)
+})
+
+test_that("peer opportunity restores ceilings and preserves absent batteries", {
+  changes <- readr::read_csv(project_path(
+    "audit", "corrections", "shared-peer-opportunity", "approved_values.csv"
+  ), show_col_types = FALSE)
+  expect_equal(nrow(changes), 315L)
+  expect_equal(nrow(unique(changes[c("poll_id", "caseid")])), 107L)
+  expect_true(all(is.na(changes$previous_value)))
+  data <- full_polardata()
+  contracts <- read_metadata("respondent_sources")
+  for (poll_id in unique(changes$poll_id)) {
+    dpnum <- contracts$dpnum[match(poll_id, contracts$poll_id)]
+    actual <- data[data$dpnum == dpnum, ]
+    evidence <- changes[changes$poll_id == poll_id, ]
+    positions <- match(evidence$caseid, actual$caseid)
+    expect_false(anyNA(positions))
+    observed <- vapply(seq_len(nrow(evidence)), function(i) {
+      actual[[evidence$legacy_field[i]]][positions[i]]
+    }, numeric(1))
+    expect_equal(observed, evidence$approved_value, tolerance = 1e-10)
+    expect_equal(observed[evidence$legacy_field != "loggain"],
+                 rep(0, sum(evidence$legacy_field != "loggain")))
+  }
+  europolis <- data[data$dpnum == 11, ]
+  expect_true(all(is.na(europolis$grpgain)))
+  expect_true(all(is.na(europolis$grpgain2)))
+  expect_true(all(is.na(europolis$grpgainr)))
+  australia <- data[data$pollid == 26, ]
+  expect_true(all(is.na(australia$grpgain2)))
+  expect_true(all(is.na(australia$grpgainr)))
 })

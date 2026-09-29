@@ -44,7 +44,7 @@ uk-health-1998,educ4,educ4@historical-v1,230,228,0,0,0,0,1e-10
 uk-health-1998,minority,minority@historical-v1,230,230,0,0,0,0,1e-10
 uk-health-1998,hhincome,hhincome@historical-v1,230,206,0,0,3.3306690738754696e-16,0,1e-10
 uk-health-1998,female,female@historical-v1,230,230,0,0,0,0,1e-10
-uk-health-1998,attextreme,attextreme@ukh-02-v2,230,230,0,203,0.14285714285714324,0,1e-10
+uk-health-1998,attextreme,attextreme@ukh-03-07-v2,230,230,0,206,0.14285714285714324,0,1e-10
 uk-health-1998,highinc,highinc@poll-median-v1,230,206,0,0,0,0,1e-10
 uk-health-1998,t1polint,t1polint@historical-v1,230,0,0,0,0,0,1e-10
 uk-health-1998,t1knowcor2,t1knowcor2@historical-v1,230,0,0,0,0,0,1e-10
@@ -68,8 +68,8 @@ uk-health-1998,ukhealth.t1ctexpt,ukhealth.t1ctexpt@historical-v1,230,225,0,0,3.3
 uk-health-1998,ukhealth.t1pritre,ukhealth.t1pritre@historical-v1,230,224,0,0,3.3306690738754696e-16,0,1e-10
 uk-health-1998,ukhealth.t1severi,ukhealth.t1severi@ukh-02-v2,230,204,0,0,0,0,1e-10
 uk-health-1998,ukhealth.t1preven,ukhealth.t1preven@historical-v1,230,212,0,0,0,0,1e-10
-uk-health-1998,ukhealth.t1dispub,ukhealth.t1dispub@historical-v1,230,215,0,0,0,0,1e-10
-uk-health-1998,ukhealth.t1avgdis,ukhealth.t1avgdis@historical-v1,230,216,0,0,0,0,1e-10
+uk-health-1998,ukhealth.t1dispub,ukhealth.t1dispub@ukh-03-07-v2,230,215,0,126,1,0,1e-10
+uk-health-1998,ukhealth.t1avgdis,ukhealth.t1avgdis@ukh-03-07-v2,230,216,0,5,1,0,1e-10
 uk-health-1998,ukhealth.t1moresa,ukhealth.t1moresa@historical-v1,230,223,0,0,0,0,1e-10
 uk-health-1998,ukhealth.t2payhlt,ukhealth.t2payhlt@historical-v1,230,217,0,0,0,0,1e-10
 uk-health-1998,ukhealth.t2poora,ukhealth.t2poora@historical-v1,230,218,0,0,0,0,1e-10
@@ -79,8 +79,8 @@ uk-health-1998,ukhealth.t2ctexpt,ukhealth.t2ctexpt@historical-v1,230,221,0,0,3.3
 uk-health-1998,ukhealth.t2pritre,ukhealth.t2pritre@historical-v1,230,217,0,0,3.3306690738754696e-16,0,1e-10
 uk-health-1998,ukhealth.t2severi,ukhealth.t2severi@ukh-02-v2,230,204,0,196,0.25,0,1e-10
 uk-health-1998,ukhealth.t2preven,ukhealth.t2preven@historical-v1,230,214,0,0,0,0,1e-10
-uk-health-1998,ukhealth.t2dispub,ukhealth.t2dispub@historical-v1,230,200,0,0,0,0,1e-10
-uk-health-1998,ukhealth.t2avgdis,ukhealth.t2avgdis@historical-v1,230,218,0,0,0,0,1e-10
+uk-health-1998,ukhealth.t2dispub,ukhealth.t2dispub@ukh-03-07-v2,230,200,0,93,1,0,1e-10
+uk-health-1998,ukhealth.t2avgdis,ukhealth.t2avgdis@ukh-03-07-v2,230,218,0,8,1,0,1e-10
 uk-health-1998,ukhealth.t2moresa,ukhealth.t2moresa@historical-v1,230,217,0,0,0,0,1e-10
 uk-health-1998,bettered,bettered@poll-median-v1,230,228,0,70,1,0,1e-10
 uk-monarchy-1996,readbrief,read_briefing@historical-v1,258,0,0,0,0,0,1e-10

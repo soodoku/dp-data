@@ -1,4 +1,5 @@
 source(file.path(root, "R", "respondents.R"))
+source(file.path(root, "R", "polardata.R"))
 source(file.path(root, "R", "respondent_parity.R"))
 for (name in c(
   "respondent_new_haven", "respondent_btp_primaries",
@@ -98,12 +99,12 @@ test_that("resolved polls reproduce historical fields", {
           "minority", "pminority", "nh.t1endexp", "nh.t1manvol",
           "nh.t1volloc", "nh.t2endexp", "nh.t2manvol", "nh.t2volloc",
           "attextreme", "attextreme2", "meanxtreme", "avgsd",
-          "avgsd2", "genvar"
+          "avgsd2", "genvar", "grpgain2"
         ),
         zeguo = c(
           "chi.t1att2", "chi.t1att5", "chi.t2att3", "chi.t2att5",
           "attextreme", "meanxtreme", "avgsd", "genvar",
-          "ppage", "meanage"
+          "ppage", "meanage", "grpgain", "grpgainr", "loggain"
         ),
         btp_primaries = c(
           "grpgain", "grpgainr", "loggain", "groupsize", "vareduc",

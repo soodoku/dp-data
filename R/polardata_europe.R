@@ -48,7 +48,10 @@ build_australia_derived <- function(survey, values) {
   gain[is.na(gain) & joint == 1] <- 0
   positions <- match(values$source_row, survey$source_row[selected])
   stopifnot(!anyNA(positions), !anyDuplicated(positions))
-  result$grpgain <- gain[positions] / (1 - values$t1knowcor)
+  result$grpgain <- apply_peer_opportunity_ceiling(
+    gain[positions] / (1 - values$t1knowcor),
+    (before * after)[positions, , drop = FALSE], group
+  )
   result$grpgain2 <- NA_real_
   result$grpgainr <- NA_real_
   result$t1knowlevel <- NA_real_
@@ -76,8 +79,11 @@ build_tomorrow_derived <- function(survey, values) {
   knowledge_before <- tomorrow_knowledge_items(survey, 1L)
   knowledge_arrival <- tomorrow_knowledge_items(survey, 2L)[rows, ]
   knowledge_after <- tomorrow_knowledge_items(survey, 3L)[rows, ]
-  result$grpgain <- historical_group_gain(knowledge_before[rows, ], group) *
-    (1 - values$t1know) / (1 - values$t1knowcor)
+  result$grpgain <- apply_peer_opportunity_ceiling(
+    historical_group_gain(knowledge_before[rows, ], group) *
+      (1 - values$t1know) / (1 - values$t1knowcor),
+    knowledge_before[rows, , drop = FALSE], group
+  )
   result$grpgain2 <- historical_group_gain(
     knowledge_arrival * knowledge_after, group
   )

@@ -7,8 +7,8 @@ uk-health-1998,ukhealth.t1ctexpt@historical-v1,ukhealth.t1ctexpt,T1,available-me
 uk-health-1998,ukhealth.t1pritre@historical-v1,ukhealth.t1pritre,T1,available-mean-reverse-five,-9|-8|system,available-components,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
 uk-health-1998,ukhealth.t1severi@ukh-02-v2,ukhealth.t1severi,T1,fixed-range-linear-five-difference,-9|-8|system,both-required,FALSE,,docs/poll-issues.md UKH-02 and UKH-09; approved 2026-09-28
 uk-health-1998,ukhealth.t1preven@historical-v1,ukhealth.t1preven,T1,linear-five,-9|-8|system,available-components,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
-uk-health-1998,ukhealth.t1dispub@historical-v1,ukhealth.t1dispub,T1,available-mean-folded-three,-9|-8|system,available-components,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
-uk-health-1998,ukhealth.t1avgdis@historical-v1,ukhealth.t1avgdis,T1,available-mean-folded-three,-9|-8|system,available-components,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t1dispub@ukh-03-07-v2,ukhealth.t1dispub,T1,available-mean-linear-three,-9|-8|system,available-components,FALSE,,R/respondent_health.R; docs/poll-issues.md UKH-03/07; Q18A_A/B/D/E; British Health Indices V6 sections11-12; approved 2026-09-28
+uk-health-1998,ukhealth.t1avgdis@ukh-03-07-v2,ukhealth.t1avgdis,T1,available-mean-linear-three,-9|-8|system,available-components,FALSE,,R/respondent_health.R; docs/poll-issues.md UKH-03/07; Q18A_A/B/D/E; British Health Indices V6 sections11-12; approved 2026-09-28
 uk-health-1998,ukhealth.t1moresa@historical-v1,ukhealth.t1moresa,T1,linear-five,-9|-8|system,available-components,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
 uk-health-1998,ukhealth.t2payhlt@historical-v1,ukhealth.t2payhlt,T2,linear-three,-9|-8|system,available-components,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
 uk-health-1998,ukhealth.t2poora@historical-v1,ukhealth.t2poora,T2,linear-five,-9|-8|system,available-components,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
@@ -18,8 +18,8 @@ uk-health-1998,ukhealth.t2ctexpt@historical-v1,ukhealth.t2ctexpt,T2,available-me
 uk-health-1998,ukhealth.t2pritre@historical-v1,ukhealth.t2pritre,T2,available-mean-reverse-five,-9|-8|system,available-components,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
 uk-health-1998,ukhealth.t2severi@ukh-02-v2,ukhealth.t2severi,T2,fixed-range-linear-five-difference,-9|-8|system,both-required,TRUE,,docs/poll-issues.md UKH-02 and UKH-09; approved 2026-09-28
 uk-health-1998,ukhealth.t2preven@historical-v1,ukhealth.t2preven,T2,linear-five,-9|-8|system,available-components,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
-uk-health-1998,ukhealth.t2dispub@historical-v1,ukhealth.t2dispub,T2,available-mean-folded-three,-9|-8|system,available-components,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
-uk-health-1998,ukhealth.t2avgdis@historical-v1,ukhealth.t2avgdis,T2,available-mean-folded-three,-9|-8|system,available-components,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
+uk-health-1998,ukhealth.t2dispub@ukh-03-07-v2,ukhealth.t2dispub,T2,available-mean-linear-three,-9|-8|system,available-components,TRUE,,R/respondent_health.R; docs/poll-issues.md UKH-03/07; Q18A_A/B/D/E; British Health Indices V6 sections11-12; approved 2026-09-28
+uk-health-1998,ukhealth.t2avgdis@ukh-03-07-v2,ukhealth.t2avgdis,T2,available-mean-linear-three,-9|-8|system,available-components,TRUE,,R/respondent_health.R; docs/poll-issues.md UKH-03/07; Q18A_A/B/D/E; British Health Indices V6 sections11-12; approved 2026-09-28
 uk-health-1998,ukhealth.t2moresa@historical-v1,ukhealth.t2moresa,T2,linear-five,-9|-8|system,available-components,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
 uk-health-1998,female@historical-v1,female,T1,gender-2,none-in-reviewed-source,not-applicable,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
 uk-health-1998,minority@historical-v1,minority,T1,ethnic-not-1,none-in-reviewed-source,not-applicable,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
@@ -31,7 +31,7 @@ uk-health-1998,hhincome@historical-v1,hhincome,T1,income-band-linear-sixteen,-9|
 uk-health-1998,highinc@poll-median-v1,highinc,T1,strictly-above-participant-median,preserve missing ordered values; all missing if reference cohort has no observed values,unique historical-polardata participants with observed ordered measure; ties at median remain lower,FALSE,historical-polardata,R/respondent_normalization.R; metadata/education_normalization.csv; user-approved poll-relative education and income normalization
 uk-health-1998,severity_t1_unscaled@historical-v1,severity_t1_unscaled,T1,linear-five-difference,-9|-8|system,both-required,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
 uk-health-1998,severity_t2_unscaled@historical-v1,severity_t2_unscaled,T2,linear-five-difference,-9|-8|system,both-required,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
-uk-health-1998,attextreme@ukh-02-v2,attextreme,T1,mean-absolute-distance-.5-of-11-corrected-indices,-9|-8|system,available-indices,FALSE,,docs/poll-issues.md UKH-02 and UKH-09; approved 2026-09-28
+uk-health-1998,attextreme@ukh-03-07-v2,attextreme,T1,available-mean-absolute-distance-from-half-final-eleven-indices,-9|-8|system,available-indices,FALSE,,R/respondent_health.R; docs/poll-issues.md UKH-03/07; Q18A_A/B/D/E; British Health Indices V6 sections11-12; approved 2026-09-28
 uk-health-1998,t1know@historical-v1,t1know,T1,six-item-mean,-9|-8|-1|system:score-zero,six-items,FALSE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
 uk-health-1998,t2know@historical-v1,t2know,T2,six-item-mean,-9|-8|-1|system:score-zero,six-items,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md
 uk-health-1998,t1knowcor@historical-v1,t1knowcor,T1|T2,joint-correctness-mean,-9|-8|-1|system:score-zero,six-items,TRUE,,docs/poll-issues.md UKH-01-12; docs/knowledge-build.md

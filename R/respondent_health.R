@@ -1,14 +1,10 @@
-historical_health_response <- function(x, categories, folded = FALSE) {
+historical_health_response <- function(x, categories) {
   x <- as.numeric(x)
   allowed <- c(-9, -8, seq_len(categories))
   if (any(!is.na(x) & !x %in% allowed)) {
     stop("Unreviewed UK Health response code")
   }
   x[x %in% c(-9, -8)] <- NA_real_
-  if (folded) {
-    stopifnot(categories == 3L)
-    return(ifelse(x == 2, 0.5, ifelse(is.na(x), NA_real_, 1)))
-  }
   (x - 1) / (categories - 1)
 }
 
@@ -55,10 +51,10 @@ build_health_individual <- function(
   )
   result <- tibble::tibble(dpnum = 2L, caseid = ids)
   for (wave in 1:2) {
-    response <- function(stem, categories = 5L, folded = FALSE) {
+    response <- function(stem, categories = 5L) {
       field <- paste0(stem, wave)
       if (!field %in% names(survey)) stop("Missing source field: ", field)
-      historical_health_response(survey[[field]], categories, folded)
+      historical_health_response(survey[[field]], categories)
     }
     average <- function(stems, reverse = FALSE) {
       values <- matrix(vapply(stems, response, numeric(nrow(survey))),
@@ -78,10 +74,10 @@ build_health_individual <- function(
       severi = (difference + 1) / 2,
       preven = response("preva"),
       dispub = historical_available_mean(cbind(
-        response("ingova", 3L, TRUE), response("inpuba", 3L, TRUE)
+        response("ingova", 3L), response("inpuba", 3L)
       )),
       avgdis = historical_available_mean(cbind(
-        response("ingpa", 3L, TRUE), response("indoca", 3L, TRUE)
+        response("ingpa", 3L), response("indoca", 3L)
       )),
       moresa = response("say")
     )

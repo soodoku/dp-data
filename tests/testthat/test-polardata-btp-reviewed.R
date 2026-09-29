@@ -1,4 +1,5 @@
 source(file.path(root, "R", "respondents.R"))
+source(file.path(root, "R", "polardata.R"))
 source(file.path(root, "R", "respondent_btp_general.R"))
 source(file.path(root, "R", "respondent_btp_health.R"))
 source(file.path(root, "R", "respondent_parity.R"))
@@ -78,6 +79,11 @@ test_that("US aggregates match except diagnosed singular covariances", {
     expected$entropy <- approved_reference_values(
       poll, "entropy", expected$caseid, expected$entropy
     )
+    for (field in c("grpgain", "grpgain2", "grpgainr", "loggain")) {
+      expected[[field]] <- approved_reference_values(
+        poll, field, expected$caseid, expected[[field]]
+      )
+    }
     if (poll == "san-mateo-2008") {
       expected$t1knowlevel <- approved_reference_values(
         poll, "t1knowlevel", expected$caseid, expected$t1knowlevel
@@ -89,7 +95,7 @@ test_that("US aggregates match except diagnosed singular covariances", {
         "meant1know", "meant1knowr", "meant1know_ind",
         "meant1knowcor", "meant1knowrcor", "meant1knowcor_ind",
         "meant2know", "t1knowlevelcor", "t1knowlevelrcor", "t2knowlevel",
-        "t1knowlevel", "grpgain", "grpgainr", "loggain"
+        "t1knowlevel"
       )) {
         expected[[field]] <- approved_reference_values(
           poll, field, expected$caseid, expected[[field]]
@@ -129,10 +135,10 @@ test_that("US aggregates match except diagnosed singular covariances", {
   }
 })
 
-test_that("Group knowledge gain is missing when no unknown items remain", {
+test_that("peer learning opportunity is zero when no unknown items remain", {
   items <- matrix(1, nrow = 3, ncol = 2)
-  expect_true(all(is.na(reviewed_us_group_gain(
+  expect_equal(reviewed_us_group_gain(
     items, items, c(1, 1, 1),
     rep(1, 3)
-  ))))
+  ), rep(0, 3))
 })

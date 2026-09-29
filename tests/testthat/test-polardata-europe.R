@@ -20,36 +20,10 @@ test_that("European and Australian aggregates match every historical field", {
     result <- builders[[index]](survey, values)
     reference <- benchmark[benchmark$dpnum == values$dpnum[1], ]
     reference <- reference[match(values$caseid, reference$caseid), ]
-    approved_fields <- switch(polls[index],
-      "australia-republic-1999" = c(
-        "grpgain", "loggain", "meanxtreme", "meanage"
-      ),
-      "tomorrows-europe-2007" = c(
-        "vareduc", "sdeduc", "meaned", "meanage"
-      ),
-      "europolis-2009" = "meanage",
-      character()
-    )
     for (field in names(result)) {
-      expected <- as.numeric(reference[[field]])
-      if (field == "entropy") {
-        expected <- approved_reference_values(
-          polls[index], field, values$caseid, expected
-        )
-      }
-      if (field %in% approved_fields) {
-        approved_file <- if (polls[index] == "europolis-2009") {
-          "approved_age_values.csv"
-        } else {
-          "approved_values.csv"
-        }
-        approved <- readr::read_csv(project_path(
-          "audit", "corrections", polls[index], approved_file
-        ), show_col_types = FALSE)
-        approved <- approved[approved$legacy_field == field, ]
-        expected <- approved$approved_value[match(values$caseid,
-                                                  approved$caseid)]
-      }
+      expected <- approved_reference_values(
+        polls[index], field, values$caseid, as.numeric(reference[[field]])
+      )
       expect_equal(result[[field]], expected, tolerance = 1e-10,
                    info = paste(polls[index], field))
     }

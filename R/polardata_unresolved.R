@@ -79,6 +79,7 @@ build_btp_primaries_derived <- function(survey, values) {
   }
   result$grpgain <- total * 7 / ((1 - values$t1knowcor) * 7)
   result$grpgain[is.nan(result$grpgain)] <- NA_real_
+  result$grpgain <- apply_peer_opportunity_ceiling(result$grpgain, joint, group)
   result$grpgainr <- result$grpgain
   result$grpgain2 <- NA_real_
   result$t1knowlevel <- as_historical_float(round(

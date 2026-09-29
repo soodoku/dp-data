@@ -246,3 +246,89 @@ analysis_attendance_evidence <- function(
   )
   list(participants = people, scores = scores)
 }
+
+# Phase presence comes from reviewed full questionnaires and completion fields.
+# Use it in the selected tables without dropping earlier records or attendance.
+reconcile_analysis_presence <- function(
+  participants, scores, items, phase_participants, phase_scores
+) {
+  person_keys <- c("poll_id", "source_dataset", "respondent_id")
+  wave_keys <- c(person_keys, "wave")
+  presence <- phase_scores |>
+    dplyr::filter(grepl(":knowledge$", battery_id)) |>
+    dplyr::transmute(
+      poll_id, source_dataset, respondent_id, wave = original_score_wave,
+      wave_observed
+    )
+  stopifnot(!anyDuplicated(presence[wave_keys]))
+  absence <- presence |>
+    dplyr::filter(wave_observed %in% FALSE) |>
+    dplyr::transmute(
+      poll_id, source_dataset, respondent_id, wave, absent = TRUE
+    )
+  update_scores <- scores |>
+    dplyr::left_join(absence, by = wave_keys, relationship = "one-to-one")
+  absent_score <- update_scores$absent %in% TRUE
+  stopifnot(all(
+    is.na(update_scores$score[absent_score]) |
+      update_scores$score[absent_score] == 0
+  ))
+  update_scores$score[absent_score] <- NA_real_
+  update_scores$n_correct[absent_score] <- NA_integer_
+  update_scores$n_observed[absent_score] <- 0L
+  update_scores$absent <- NULL
+
+  update_items <- items |>
+    dplyr::left_join(absence, by = wave_keys, relationship = "many-to-one")
+  absent_item <- update_items$absent %in% TRUE
+  stopifnot(all(
+    is.na(update_items$correct[absent_item]) |
+      update_items$correct[absent_item] == 0L
+  ))
+  update_items$correct[absent_item] <- NA_integer_
+  update_items$response_status[absent_item] <- "wave_absent"
+  update_items$absent <- NULL
+
+  paired <- function(data) {
+    data |>
+      dplyr::filter(wave %in% c("t1", "t2"), is.finite(score)) |>
+      dplyr::summarise(
+        paired = all(c("t1", "t2") %in% wave),
+        .by = dplyr::all_of(person_keys)
+      )
+  }
+  update_panel <- function(people, eligibility) {
+    result <- people |>
+      dplyr::left_join(eligibility,
+        by = person_keys, relationship = "one-to-one"
+      ) |>
+      dplyr::mutate(panel = panel & dplyr::coalesce(paired, FALSE)) |>
+      dplyr::select(-"paired")
+    stopifnot(
+      nrow(result) == nrow(people),
+      identical(result[person_keys], people[person_keys]),
+      identical(result$attended, people$attended)
+    )
+    result
+  }
+  phase_eligibility <- phase_scores |>
+    dplyr::filter(grepl(":knowledge$", battery_id)) |>
+    dplyr::transmute(
+      poll_id, source_dataset, respondent_id, wave = original_score_wave,
+      score = dplyr::if_else(wave_observed %in% FALSE, NA_real_, score)
+    ) |>
+    paired()
+  stopifnot(
+    identical(update_scores[wave_keys], scores[wave_keys]),
+    identical(update_items[c(wave_keys, "item_id")],
+      items[c(wave_keys, "item_id")]
+    ),
+    identical(update_items$raw_value, items$raw_value),
+    identical(update_items$raw_text, items$raw_text)
+  )
+  list(
+    participants = update_panel(participants, paired(update_scores)),
+    scores = update_scores, items = update_items,
+    phase_participants = update_panel(phase_participants, phase_eligibility)
+  )
+}

@@ -51,7 +51,15 @@ test_that("retained arrivals have scores with explicit battery scope", {
   expect_false(any(waves$wave == "t1" & waves$poll_id == "new-haven-2004"))
   expect_false(any(waves$wave == "t1" & waves$poll_id == "nic-1996"))
   follow_up <- dplyr::filter(waves, poll_id == "tanzania-2015", wave == "t3")
-  expect_equal(follow_up$source_fields, "H601")
+  expect_equal(
+    strsplit(follow_up$source_fields, "|", fixed = TRUE)[[1]],
+    paste0("H6", 1:9, 1)
+  )
+  baseline <- dplyr::filter(waves, poll_id == "tanzania-2015", wave == "t0")
+  expect_equal(
+    strsplit(baseline$source_fields, "|", fixed = TRUE)[[1]],
+    paste0("H6", 1:9, 0)
+  )
   expect_equal(follow_up$wave_role, "follow_up")
 })
 
