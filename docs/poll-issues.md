@@ -4206,6 +4206,71 @@ reviewed: `t2q19=6` and `t3q19=0/6` score incorrect;
 The baseline questionnaire and the original participant/roster join are still
 needed for TE-01 and TE-02; this correction does not change their status.
 
+### TE-08: Preserve source nonanswers and literal wave identities in transport
+
+The numerical recoders already omit non-substantive attitude responses, but
+`source_responses` labeled some of those raw codes as answered. Consequently,
+`respondent_measures.n_observed_fields` overstated the number of substantive
+inputs without changing the measure itself. The review covers all 31 exported
+attitude measures and their 85 distinct input fields: 15 baseline, 35 arrival
+and 35 exit fields across all 3,550 source respondents.
+
+The corrected source transport recognizes these previously mislabeled cells:
+
+| Source evidence | Cells changing answered to non-substantive |
+| --- | ---: |
+| Baseline labels “No opinion” and “REF” | 1,872 |
+| Code 99 in reviewed arrival/exit attitude fields | 422 |
+| Documented invalid attitude codes: `t2q11a=8`, `t3q16a=10`, `t3q18c=55` | 3 |
+| Code 99 in eleven arrival knowledge/placement fields | 844 |
+| Documented invalid arrival knowledge codes: `t2q19=6`, `t2q24=24/1004`, `t2q27=44/1004` | 12 |
+| **Total** | **3,153** |
+
+The three invalid attitude codes occur once each. Invalid arrival knowledge
+counts are respectively 1, 1/4 and 1/5. The paired exit questions already classify
+these codes as non-substantive in `metadata/knowledge_items.csv`; arrival now
+reuses those exact response-status definitions. This is not a change to knowledge
+correctness: incorrect answers, don't-know responses and blanks within an
+observed questionnaire retain the approved fixed-denominator zero-scoring rule.
+No new item battery or sample is introduced.
+
+An inventory of all 29 retained poll-level value-label dictionaries found exact
+“No opinion” labels in Tomorrow's Europe, California, BTP 2007 and Vermont,
+and exact “REF” labels only in Tomorrow's Europe. Adding those exact normalized
+labels to the existing nonanswer dictionary changes only Tomorrow's Europe among
+the 21 active respondent builds. Neutral substantive answers such as “neither
+favor nor oppose” remain answered. Numeric code 99 and the three invalid attitude
+codes are handled only in the explicitly reviewed Tomorrow's Europe fields;
+there is no global assumption that 99 is missing.
+
+Raw `source_wave` now reflects the original field names: `q..._1` is T1,
+`t2q...` is T2 and `t3q...` is T3. This adds labels to 344,350 previously
+unlabeled source cells, including the arrival knowledge fields and exit briefing
+question. The five undated demographic source fields remain unlabeled. These
+literal source waves are separate from the canonical phase names t0 = pre-arrival,
+t1 = arrival and t2 = exit; the existing historical knowledge pair still maps
+source T1/T3 and its `source_wave_label()` behavior is unchanged.
+
+Across the complete respondent exports, exactly 3,153 response-status and
+missing-code cells change for 1,329 people. The attitude-only repair reduces
+3,145 observed-input counts across 33 definitions; adding arrival knowledge
+reduces another 777 counts (259 people × three knowledge definitions). In total,
+3,922 `n_observed_fields` cells change across 36 definitions, with a maximum
+reduction of eleven inputs. Each missing-code field retains the original raw
+code rather than imputing a reason or value.
+
+The before/after comparison verifies every raw number, raw text, respondent ID,
+row order, definition ID, numerical score and `n_source_fields` is identical.
+Every other poll is identical. Only response statuses, missing codes, literal
+source waves and observed-input counts change. Field/code counts and affected
+measure counts are retained in
+`audit/corrections/tomorrows-europe-2007/source_status_changes.csv`,
+`source_wave_changes.csv` and `observed_count_changes.csv`; the all-poll label
+inventory is retained alongside them. Functional tests independently check
+substantive scale bounds in all 85 attitude fields, the eleven arrival knowledge
+fields, their wave identities and observed-component denominators.
+
+
 ## Vermont Energy 2007 — vermont-energy-2007
 
 ### VT-01: Key ambiguity must remain explicit

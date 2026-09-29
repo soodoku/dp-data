@@ -122,7 +122,8 @@ source_wave_label <- function(poll_id, wave) {
 source_nonanswer_codes <- function(labels) {
   nonanswers <- c(
     "don't know", "dk", "can't say", "can't choose", "couldn't say",
-    "refused", "no answer", "not answered", "not asked", "not applicable",
+    "refused", "ref", "no opinion", "no answer", "not answered",
+    "not asked", "not applicable",
     "item not applicable", "skipped on web",
     "haven't thought much about that", "haven't thought much about this",
     "haven't thought much about it"
@@ -160,6 +161,12 @@ source_response_rows <- function(survey, people, inputs, items) {
     }
     text <- if (is.character(raw)) raw else rep(NA_character_, length(raw))
     item <- items[items$source_column == field, ]
+    if (people$poll_id[[1]] == "tomorrows-europe-2007" &&
+          grepl("^t2q(19|2[0-7]|36[ab])$", field)) {
+      exit_field <- sub("^t2", "t3", field)
+      item <- items[items$source_column == exit_field, ]
+      stopifnot(nrow(item) == 1L)
+    }
     classified <- ifelse(abs(value - round(value)) < 1e-8, round(value), value)
     code <- ifelse(is.na(text), as.character(classified), text)
     missing <- is.na(value) & is.na(text)
@@ -212,12 +219,31 @@ source_response_rows <- function(survey, people, inputs, items) {
       ), field)) {
       known_missing <- union(known_missing, "99")
     }
+    if (people$poll_id[[1]] == "tomorrows-europe-2007") {
+      attitude_field <- grepl(paste0(
+        "^t[23]q(1|4|5[abcd]|7[acd]|8|11[abc]|12[abcd]|",
+        "16[abcfj]|17[a-i]|18[abcd])$"
+      ), field)
+      if (attitude_field) known_missing <- union(known_missing, "99")
+      invalid_codes <- c(t2q11a = "8", t3q16a = "10", t3q18c = "55")
+      if (field %in% names(invalid_codes)) {
+        known_missing <- union(known_missing, unname(invalid_codes[field]))
+      }
+    }
     status <- ifelse(missing, "system-missing", ifelse(
       code %in% known_missing | in_range, "non-substantive", ifelse(
         nrow(item) == 0L | code %in% known_values, "answered", "unreviewed-code"
       )
     ))
-    wave <- if (nrow(item)) {
+    wave <- if (people$poll_id[[1]] == "tomorrows-europe-2007") {
+      if (grepl("^q[0-9]+[a-z]*_1$", field)) {
+        "T1"
+      } else if (grepl("^t[23]q[0-9]+[a-z]*$", field)) {
+        paste0("T", substr(field, 2L, 2L))
+      } else {
+        NA_character_
+      }
+    } else if (nrow(item)) {
       source_wave_label(people$poll_id[[1]], item$wave[[1]])
     } else if (people$poll_id[[1]] == "uk-health-1998") {
       if (grepl("[12]$", field)) {
