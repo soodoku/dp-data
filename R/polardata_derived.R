@@ -47,11 +47,28 @@ categorical_entropy <- function(value) {
   -sum(probabilities * log2(probabilities))
 }
 
+covariance_spectrum <- function(covariance) {
+  stopifnot(is.matrix(covariance), nrow(covariance) == ncol(covariance))
+  values <- if (all(is.finite(covariance))) {
+    eigen(covariance, symmetric = TRUE, only.values = TRUE)$values
+  } else {
+    rep(NA_real_, ncol(covariance))
+  }
+  tolerance <- if (all(is.finite(values))) {
+    64 * .Machine$double.eps * ncol(covariance) * max(abs(values))
+  } else {
+    NA_real_
+  }
+  list(values = values, tolerance = tolerance)
+}
+
 historical_genvar <- function(attitudes) {
   attitudes <- as.matrix(attitudes)
   stopifnot(is.numeric(attitudes), ncol(attitudes) > 0L)
   covariance <- stats::cov(attitudes, use = "pairwise.complete.obs")
-  if (anyNA(covariance)) {
+  spectrum <- covariance_spectrum(covariance)
+  if (anyNA(spectrum$values) ||
+        any(spectrum$values < -spectrum$tolerance)) {
     return(NA_real_)
   }
   determinant <- det(covariance)

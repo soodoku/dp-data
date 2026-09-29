@@ -55,7 +55,7 @@ poll_id	poll_name	n_indices	att_index	t1var	t2_t3var	dpnum
 22	UK Health	9	Public and Government Discretion	ukhealth.t1dispub	ukhealth.t2dispub	2
 23	UK Monarchy	4	Support for the Monarchy	ukmonarchy.t1supmon	ukmonarchy.t2supmon	3
 23	UK Monarchy	4	Royal Family and the Public	ukmonarchy.t1mpop	ukmonarchy.t2mpop	3
-23	UK Monarchy	4	Rules and limits for the Monarchy	ukmonarchy.t1pwrm	ukmonarchy.t2pwrm	3
+23	UK Monarchy	4	Powers of the Monarchy	ukmonarchy.t1pwrm	ukmonarchy.t2pwrm	3
 23	UK Monarchy	4	Reforming the House Of Lords	ukmonarchy.t1reflor	ukmonarchy.t2reflor	3
 25	UK General Election	4	Redistribution	ukbge.t1redist	ukbge.t2redist	4
 25	UK General Election	4	Tax	ukbge.t1tax	ukbge.t2tax	4

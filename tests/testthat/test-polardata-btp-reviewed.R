@@ -7,6 +7,8 @@ source(file.path(root, "R", "respondent_san_mateo.R"))
 source(file.path(root, "R", "polardata_derived.R"))
 source(file.path(root, "R", "polardata_assembly.R"))
 source(file.path(root, "R", "polardata_btp_reviewed.R"))
+source(file.path(root, "R", "polardata_numerics.R"))
+source(file.path(root, "R", "polardata_parity.R"))
 
 test_that("US poll calibration preserves earlier scoring and sample vintages", {
   election <- tibble::as_tibble(setNames(
@@ -50,7 +52,7 @@ test_that("Health corrected calibration retains available-item denominators", {
   )
 })
 
-test_that("US aggregates match except diagnosed singular covariances", {
+test_that("US aggregates match approved values and exact covariance reviews", {
   benchmark <- readr::read_tsv(
     project_path("evidence", "benchmarks", "polardata.tab"),
     show_col_types = FALSE
@@ -73,6 +75,9 @@ test_that("US aggregates match except diagnosed singular covariances", {
     expect_false(anyNA(rows))
     expect_false(anyDuplicated(values$caseid) > 0L)
     actual <- actual[rows, ]
+    expected$genvar <- approved_reference_values(
+      poll, "genvar", expected$caseid, expected$genvar
+    )
     expected$phighinc <- approved_reference_values(
       poll, "phighinc", expected$caseid, expected$phighinc
     )
@@ -121,17 +126,24 @@ test_that("US aggregates match except diagnosed singular covariances", {
         tolerance = 1e-10, info = paste(poll, field)
       )
     }
-    diagnostics <- reviewed_us_covariance_audit(survey, poll)
-    singular <- diagnostics$pollgroup[
-      diagnostics$covariance_rank < diagnostics$attitude_count
-    ]
-    regular <- !actual$pollgroup %in% singular
-    expect_equal(actual$genvar[regular], expected$genvar[regular],
-      tolerance = 1e-10
+    inputs <- reviewed_us_covariance_inputs(survey, poll)
+    reviewed <- readr::read_csv(project_path(
+      "metadata", "polardata_reviewed_covariances.csv"
+    ), show_col_types = FALSE)
+    diagnostics <- group_covariance_audit(
+      inputs$attitudes, inputs$group, poll, expected, reviewed
     )
-    different <- abs(actual$genvar - expected$genvar) > 1e-10
-    expect_true(all(actual$pollgroup[different] %in% singular))
-    expect_equal(sum(different), c(0, 20, 31)[index])
+    invalid <- diagnostics$pollgroup[diagnostics$negative_eigenvalues > 0L]
+    expect_identical(is.na(actual$genvar), is.na(expected$genvar))
+    expect_equal(sum(is.na(actual$genvar)), c(20L, 193L, 75L)[index])
+    expect_setequal(unique(actual$pollgroup[is.na(actual$genvar)]), invalid)
+    observed <- !is.na(actual$genvar) & !is.na(expected$genvar)
+    different <- observed & abs(actual$genvar - expected$genvar) > 1e-10
+    verified <- verified_covariance_values(
+      actual$genvar, actual$pollgroup, diagnostics, expected$genvar
+    )
+    expect_true(all(verified[different]))
+    expect_equal(sum(different), c(0L, 20L, 20L)[index])
   }
 })
 

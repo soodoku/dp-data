@@ -75,3 +75,61 @@ test_that("zero is recorded as nonresponse on New Haven attitude items", {
   expect_true(all(zero$response_status == "non-substantive"))
   expect_true(all(zero$missing_code == "0"))
 })
+
+test_that("New Haven attitude nonanswers agree with substantive input counts", {
+  contract <- read_metadata("respondent_sources")
+  built <- build_poll_respondents(
+    contract[contract$poll_id == "new-haven-2004", ]
+  )
+  fields <- paste0(
+    rep(c("pre", "mid", "post"), each = 6L), "_q",
+    rep(c(12, 13, 20, 21, 22, 23), 3L)
+  )
+  answers <- built$source_responses[
+    built$source_responses$source_column %in% fields,
+  ]
+  dk <- answers[!is.na(answers$raw_numeric) & answers$raw_numeric == 6, ]
+  expect_equal(nrow(dk), 118L)
+  expect_equal(table(sub("_.*$", "", dk$source_column)),
+    table(rep(c("pre", "mid", "post"), c(64L, 25L, 29L)))
+  )
+  expect_true(all(dk$response_status == "non-substantive"))
+  expect_true(all(dk$missing_code == "6"))
+  substantive <- answers[
+    !is.na(answers$raw_numeric) & answers$raw_numeric %in% 1:5,
+  ]
+  expect_true(all(substantive$response_status == "answered"))
+  expect_true(all(is.na(substantive$missing_code)))
+
+  proposal <- readr::read_csv(project_path(
+    "audit", "corrections", "new-haven-2004", "observed_input_counts.csv"
+  ), show_col_types = FALSE, col_types = readr::cols(
+    respondent_id = readr::col_character(), value_numeric = readr::col_double(),
+    .default = readr::col_guess()
+  ))
+  expect_equal(nrow(proposal), 122L)
+  expect_equal(dplyr::n_distinct(proposal$respondent_id), 43L)
+  key <- function(x) paste(x$respondent_id, x$definition_id)
+  observed <- built$respondent_measures[
+    match(key(proposal), key(built$respondent_measures)),
+  ]
+  expect_equal(observed$n_observed_fields, proposal$proposed)
+  expect_equal(observed$value_numeric, proposal$value_numeric)
+  expect_true(all(is.na(observed$value_numeric)))
+
+  survey <- new_haven_test_survey()
+  inputs <- read_metadata("measure_inputs")
+  inputs <- inputs[inputs$poll_id == "new-haven-2004", ]
+  definitions <- unique(proposal$definition_id)
+  rows <- match(built$people$source_row, survey$source_row)
+  for (definition in definitions) {
+    columns <- inputs$source_column[inputs$definition_id == definition]
+    raw <- as.matrix(survey[rows, columns])
+    expected <- rowSums(!is.na(raw) & raw >= 1 & raw <= 5)
+    values <- built$respondent_measures[
+      built$respondent_measures$definition_id == definition,
+    ]
+    expect_equal(values$n_source_fields, rep(length(columns), nrow(survey)))
+    expect_equal(values$n_observed_fields, expected)
+  }
+})

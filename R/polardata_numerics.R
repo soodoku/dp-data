@@ -17,19 +17,10 @@ covariance_diagnostics <- function(attitudes) {
     covariance_sha256 = covariance_fingerprint(covariance),
     attitudes_sha256 = covariance_fingerprint(attitudes)
   )
-  if (anyNA(covariance)) {
-    eigenvalues <- rep(NA_real_, ncol(attitudes))
-  } else {
-    eigenvalues <- eigen(
-      covariance, symmetric = TRUE, only.values = TRUE
-    )$values
-  }
+  spectrum <- covariance_spectrum(covariance)
+  eigenvalues <- spectrum$values
   defined <- all(is.finite(eigenvalues))
-  tolerance <- if (defined) {
-    64 * .Machine$double.eps * ncol(attitudes) * max(abs(eigenvalues))
-  } else {
-    NA_real_
-  }
+  tolerance <- spectrum$tolerance
   rank <- if (defined) sum(abs(eigenvalues) > tolerance) else NA_integer_
   negative <- if (defined) sum(eigenvalues < -tolerance) else NA_integer_
   singular <- defined && rank < ncol(attitudes)

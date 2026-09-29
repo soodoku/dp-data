@@ -316,6 +316,86 @@
       "local_artifact_id": null,
       "accessed": "2026-09-24",
       "notes": "Research manuscript pp 5–6 explicitly describes prior 2002/2003 foreign-policy online cohort; local copy data/shared/papers/primaries-paper.pdf belongs to primaries catalog records."
+    },
+    {
+      "reference_id": "btp-national-2003-local-material-cc413ece13ce5755-btp-national-2003",
+      "poll_id": "btp-national-2003",
+      "kind": "codebook",
+      "title": "Foreign policy index definitions: final August version",
+      "url": null,
+      "local_artifact_id": "material-cc413ece13ce5755-btp-national-2003",
+      "accessed": "2026-09-28",
+      "notes": "Unchanged historical coding evidence recovered from the CDD archive. Source versions may conflict; preservation does not endorse every candidate formula. Not executed by the modern pipeline."
+    },
+    {
+      "reference_id": "btp-national-2003-local-material-9b3c57ff4e815a70-btp-national-2003",
+      "poll_id": "btp-national-2003",
+      "kind": "codebook",
+      "title": "Foreign policy index definitions: final August version (PDF preview)",
+      "url": null,
+      "local_artifact_id": "material-9b3c57ff4e815a70-btp-national-2003",
+      "accessed": "2026-09-28",
+      "notes": "PDF preview of data/nic2-2003/codebooks/foreign-policy-indices-august.doc. Original retained unchanged. See metadata/document_previews.csv for converter and QA."
+    },
+    {
+      "reference_id": "btp-national-2003-local-material-179cb3746de3a8a6-btp-national-2003",
+      "poll_id": "btp-national-2003",
+      "kind": "codebook",
+      "title": "Foreign policy index definitions: February version",
+      "url": null,
+      "local_artifact_id": "material-179cb3746de3a8a6-btp-national-2003",
+      "accessed": "2026-09-28",
+      "notes": "Unchanged historical coding evidence recovered from the CDD archive. Source versions may conflict; preservation does not endorse every candidate formula. Not executed by the modern pipeline."
+    },
+    {
+      "reference_id": "btp-national-2003-local-material-88f258590846f186-btp-national-2003",
+      "poll_id": "btp-national-2003",
+      "kind": "codebook",
+      "title": "Foreign policy index definitions: February version (PDF preview)",
+      "url": null,
+      "local_artifact_id": "material-88f258590846f186-btp-national-2003",
+      "accessed": "2026-09-28",
+      "notes": "PDF preview of data/nic2-2003/codebooks/foreign-policy-indices-february.doc. Original retained unchanged. See metadata/document_previews.csv for converter and QA."
+    },
+    {
+      "reference_id": "btp-national-2003-local-material-c2302f5a1c960d41-btp-national-2003",
+      "poll_id": "btp-national-2003",
+      "kind": "script",
+      "title": "Original July 27 online index checks",
+      "url": null,
+      "local_artifact_id": "material-c2302f5a1c960d41-btp-national-2003",
+      "accessed": "2026-09-28",
+      "notes": "Unchanged historical coding evidence recovered from the CDD archive. Source versions may conflict; preservation does not endorse every candidate formula. Not executed by the modern pipeline."
+    },
+    {
+      "reference_id": "btp-national-2003-local-material-b25e7cee0fb6f98d-btp-national-2003",
+      "poll_id": "btp-national-2003",
+      "kind": "script",
+      "title": "Original online index syntax: v_online",
+      "url": null,
+      "local_artifact_id": "material-b25e7cee0fb6f98d-btp-national-2003",
+      "accessed": "2026-09-28",
+      "notes": "Unchanged historical coding evidence recovered from the CDD archive. Source versions may conflict; preservation does not endorse every candidate formula. Not executed by the modern pipeline."
+    },
+    {
+      "reference_id": "btp-national-2003-local-material-033451bb14c0f9cd-btp-national-2003",
+      "poll_id": "btp-national-2003",
+      "kind": "script",
+      "title": "Original online index syntax: v_online2",
+      "url": null,
+      "local_artifact_id": "material-033451bb14c0f9cd-btp-national-2003",
+      "accessed": "2026-09-28",
+      "notes": "Unchanged historical coding evidence recovered from the CDD archive. Source versions may conflict; preservation does not endorse every candidate formula. Not executed by the modern pipeline."
+    },
+    {
+      "reference_id": "btp-national-2003-local-material-dbd5dd3c41336a1b-btp-national-2003",
+      "poll_id": "btp-national-2003",
+      "kind": "script",
+      "title": "Original August 1 trade index alternatives",
+      "url": null,
+      "local_artifact_id": "material-dbd5dd3c41336a1b-btp-national-2003",
+      "accessed": "2026-09-28",
+      "notes": "Unchanged historical coding evidence recovered from the CDD archive. Source versions may conflict; preservation does not endorse every candidate formula. Not executed by the modern pipeline."
     }
   ],
   "material_coverage": [
@@ -351,8 +431,8 @@
       "poll_id": "btp-national-2003",
       "material_type": "codebooks",
       "status": "partial",
-      "notes": "Variable/value-label dictionaries and/or shared recode documentation are available; completeness as an authored poll-specific codebook is not established.",
-      "checked_references": "us-btp-national-2003-material-14f09619eb8626fc-btp-national-2003;us-btp-national-2003-material-e0ff5cf4f836a41b-btp-national-2003;us-btp-national-2003-material-9408908108592c63-btp-national-2003;us-btp-national-2003-material-7af1872d80219bc0-btp-national-2003;us-btp-national-2003-cdd-btp-national-2003-survey-variables;us-btp-national-2003-cdd-btp-national-2003-survey-value-labels"
+      "notes": "Variable/value-label dictionaries and/or shared recode documentation are available; completeness as an authored poll-specific codebook is not established. Original index memo versions and PDF previews retained and compared on 2026-09-28; competing definitions are documented in docs/poll-issues.md.",
+      "checked_references": "us-btp-national-2003-material-14f09619eb8626fc-btp-national-2003;us-btp-national-2003-material-e0ff5cf4f836a41b-btp-national-2003;us-btp-national-2003-material-9408908108592c63-btp-national-2003;us-btp-national-2003-material-7af1872d80219bc0-btp-national-2003;us-btp-national-2003-cdd-btp-national-2003-survey-variables;us-btp-national-2003-cdd-btp-national-2003-survey-value-labels;btp-national-2003-local-material-cc413ece13ce5755-btp-national-2003;btp-national-2003-local-material-9b3c57ff4e815a70-btp-national-2003;btp-national-2003-local-material-179cb3746de3a8a6-btp-national-2003;btp-national-2003-local-material-88f258590846f186-btp-national-2003"
     }
   ],
   "artifacts": [
@@ -670,6 +750,126 @@
       "publication_status": "published",
       "notes": "Generated from data/shared/design/poll_details/appendix-poll-details-5-18-14-e.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Already cited across21 poll references; includes24 polls and four source-linked duration comments. Compared all14 DOCX table rows plus comments XML, and corresponding PDF texts. No executable code reads these appendices.",
       "relative_path": "../shared/design/poll_details/appendix-poll-details-5-18-14-e.pdf"
+    },
+    {
+      "artifact_id": "material-cc413ece13ce5755-btp-national-2003",
+      "poll_id": "btp-national-2003",
+      "artifact_type": "codebook",
+      "title": "Foreign policy index definitions: final August version",
+      "location": "data/nic2-2003/codebooks/foreign-policy-indices-august.doc",
+      "source_id": "material-cc413ece13ce5755",
+      "original_archive_path": "data/nic_2/indices/NICII_ONLINE_Index_Final_Aug01.doc",
+      "sha256": "cc413ece13ce57554ea991f3297f8190bf4e7bca6c0d46c33352cbc0db1bd42c",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged historical coding evidence recovered from the CDD archive. Source versions may conflict; preservation does not endorse every candidate formula. Not executed by the modern pipeline.",
+      "relative_path": "../nic2-2003/codebooks/foreign-policy-indices-august.doc"
+    },
+    {
+      "artifact_id": "material-9b3c57ff4e815a70-btp-national-2003",
+      "poll_id": "btp-national-2003",
+      "artifact_type": "codebook",
+      "title": "Foreign policy index definitions: final August version (PDF preview)",
+      "location": "data/nic2-2003/codebooks/foreign-policy-indices-august.pdf",
+      "source_id": "material-9b3c57ff4e815a70",
+      "original_archive_path": null,
+      "sha256": "9b3c57ff4e815a7014822fb8058babd15a76bc3627ff60c4edccd65480278d7b",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "PDF preview of data/nic2-2003/codebooks/foreign-policy-indices-august.doc. Original retained unchanged. See metadata/document_previews.csv for converter and QA.",
+      "relative_path": "../nic2-2003/codebooks/foreign-policy-indices-august.pdf"
+    },
+    {
+      "artifact_id": "material-179cb3746de3a8a6-btp-national-2003",
+      "poll_id": "btp-national-2003",
+      "artifact_type": "codebook",
+      "title": "Foreign policy index definitions: February version",
+      "location": "data/nic2-2003/codebooks/foreign-policy-indices-february.doc",
+      "source_id": "material-179cb3746de3a8a6",
+      "original_archive_path": "data/nic_2/indices/DP_NIC_II_Index_Feb08.doc",
+      "sha256": "179cb3746de3a8a65d6e7013b9cd2b8600a6ef6369401f4f4797c67a0af54476",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged historical coding evidence recovered from the CDD archive. Source versions may conflict; preservation does not endorse every candidate formula. Not executed by the modern pipeline.",
+      "relative_path": "../nic2-2003/codebooks/foreign-policy-indices-february.doc"
+    },
+    {
+      "artifact_id": "material-88f258590846f186-btp-national-2003",
+      "poll_id": "btp-national-2003",
+      "artifact_type": "codebook",
+      "title": "Foreign policy index definitions: February version (PDF preview)",
+      "location": "data/nic2-2003/codebooks/foreign-policy-indices-february.pdf",
+      "source_id": "material-88f258590846f186",
+      "original_archive_path": null,
+      "sha256": "88f258590846f18624c010b0f345ee05d6c233e1c3251fb97b024f15ba13aada",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "PDF preview of data/nic2-2003/codebooks/foreign-policy-indices-february.doc. Original retained unchanged. See metadata/document_previews.csv for converter and QA.",
+      "relative_path": "../nic2-2003/codebooks/foreign-policy-indices-february.pdf"
+    },
+    {
+      "artifact_id": "material-c2302f5a1c960d41-btp-national-2003",
+      "poll_id": "btp-national-2003",
+      "artifact_type": "script",
+      "title": "Original July 27 online index checks",
+      "location": "data/btp-national-2003/scripts/checking-july27-online.do",
+      "source_id": "material-c2302f5a1c960d41",
+      "original_archive_path": "data/nic_2/scripts/checking_July27_online.do",
+      "sha256": "c2302f5a1c960d412ff4ee1b0b035832d2d3dcc98c5143ad03003d98a21b87bc",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged historical coding evidence recovered from the CDD archive. Source versions may conflict; preservation does not endorse every candidate formula. Not executed by the modern pipeline.",
+      "relative_path": "scripts/checking-july27-online.do"
+    },
+    {
+      "artifact_id": "material-b25e7cee0fb6f98d-btp-national-2003",
+      "poll_id": "btp-national-2003",
+      "artifact_type": "script",
+      "title": "Original online index syntax: v_online",
+      "location": "data/btp-national-2003/scripts/v-online.do",
+      "source_id": "material-b25e7cee0fb6f98d",
+      "original_archive_path": "data/us_fp_online/scripts/v_online.do",
+      "sha256": "b25e7cee0fb6f98dbbb5b22cc79e9265df22c2c68e29ded7ed81b8df8ab8e154",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged historical coding evidence recovered from the CDD archive. Source versions may conflict; preservation does not endorse every candidate formula. Not executed by the modern pipeline.",
+      "relative_path": "scripts/v-online.do"
+    },
+    {
+      "artifact_id": "material-033451bb14c0f9cd-btp-national-2003",
+      "poll_id": "btp-national-2003",
+      "artifact_type": "script",
+      "title": "Original online index syntax: v_online2",
+      "location": "data/btp-national-2003/scripts/v-online2.do",
+      "source_id": "material-033451bb14c0f9cd",
+      "original_archive_path": "data/us_fp_online/scripts/v_online2.do",
+      "sha256": "033451bb14c0f9cd5e98314dd967f837b2354ffd02dbe649bdec9122757ae27d",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged historical coding evidence recovered from the CDD archive. Source versions may conflict; preservation does not endorse every candidate formula. Not executed by the modern pipeline.",
+      "relative_path": "scripts/v-online2.do"
+    },
+    {
+      "artifact_id": "material-dbd5dd3c41336a1b-btp-national-2003",
+      "poll_id": "btp-national-2003",
+      "artifact_type": "script",
+      "title": "Original August 1 trade index alternatives",
+      "location": "data/btp-national-2003/scripts/trade-august01.do",
+      "source_id": "material-dbd5dd3c41336a1b",
+      "original_archive_path": "data/us_fp_online/scripts/trade_Aug01.do",
+      "sha256": "dbd5dd3c41336a1b44d51cdf934c97f5f2c57a384024b018f8b049838707901c",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged historical coding evidence recovered from the CDD archive. Source versions may conflict; preservation does not endorse every candidate formula. Not executed by the modern pipeline.",
+      "relative_path": "scripts/trade-august01.do"
     }
   ],
   "document_previews": [
@@ -720,6 +920,38 @@
       "distinct_word_coverage": "1.0",
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+    },
+    {
+      "source_path": "data/nic2-2003/codebooks/foreign-policy-indices-august.doc",
+      "preview_path": "data/nic2-2003/codebooks/foreign-policy-indices-august.pdf",
+      "source_sha256": "cc413ece13ce57554ea991f3297f8190bf4e7bca6c0d46c33352cbc0db1bd42c",
+      "preview_sha256": "9b3c57ff4e815a7014822fb8058babd15a76bc3627ff60c4edccd65480278d7b",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "6",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-all-pages",
+      "visual_pages": "1;2;3;4;5;6",
+      "source_token_coverage": "0.999664654594232",
+      "distinct_word_coverage": "0.9976415094339622",
+      "qa_notes": "All six pages rendered and visually inspected. The original DOC remains byte-identical. A temporary ODT freezes the sole dynamic header date to its original cached 8/1/2004 value; all other ODT bytes are unchanged and extracted PDF text differs from direct conversion only by that date. Question text and highlighting remain intact.",
+      "rebuild_command": "mkdir -p /tmp/dp-august-preview && soffice -env:UserInstallation=file:///tmp/dp-august-preview/profile --headless --convert-to odt --outdir /tmp/dp-august-preview data/nic2-2003/codebooks/foreign-policy-indices-august.doc && python3 -c 'from pathlib import Path\nimport zipfile,re\np=Path('\"'\"'/tmp/dp-august-preview/foreign-policy-indices-august.odt'\"'\"')\nwith zipfile.ZipFile(p) as source, zipfile.ZipFile(p.with_name('\"'\"'fixed.odt'\"'\"'),'\"'\"'w'\"'\"') as target:\n for info in source.infolist():\n  data=source.read(info.filename)\n  if info.filename=='\"'\"'styles.xml'\"'\"':\n   text=data.decode()\n   text,n=re.subn(r'\"'\"'<text:date\\b[^>]*>.*?<\/text:date>'\"'\"','\"'\"'<text:date style:data-style-name=\"N129\" text:date-value=\"2004-08-01\" text:fixed=\"true\">8/1/2004<\/text:date>'\"'\"',text)\n   assert n==1\n   data=text.encode()\n  target.writestr(info,data)\n' && soffice -env:UserInstallation=file:///tmp/dp-august-preview/profile --headless --convert-to pdf --outdir /tmp/dp-august-preview /tmp/dp-august-preview/fixed.odt && cp /tmp/dp-august-preview/fixed.pdf data/nic2-2003/codebooks/foreign-policy-indices-august.pdf"
+    },
+    {
+      "source_path": "data/nic2-2003/codebooks/foreign-policy-indices-february.doc",
+      "preview_path": "data/nic2-2003/codebooks/foreign-policy-indices-february.pdf",
+      "source_sha256": "179cb3746de3a8a65d6e7013b9cd2b8600a6ef6369401f4f4797c67a0af54476",
+      "preview_sha256": "88f258590846f18624c010b0f345ee05d6c233e1c3251fb97b024f15ba13aada",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "5",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-all-pages",
+      "visual_pages": "1;2;3;4;5",
+      "source_token_coverage": "1.0",
+      "distinct_word_coverage": "1.0",
+      "qa_notes": "All pages rendered and visually inspected; question text, highlighting and tables are legible. Original DOC bytes unchanged; source-text token coverage includes field codes and is diagnostic.",
+      "rebuild_command": "soffice -env:UserInstallation=file:///tmp/dp-attitude-previews --headless --convert-to pdf --outdir data/nic2-2003/codebooks data/nic2-2003/codebooks/foreign-policy-indices-february.doc"
     }
   ]
 }

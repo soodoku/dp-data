@@ -137,7 +137,7 @@ test_that("NIC2 uses raw questions and stable identities", {
   )
 })
 
-test_that("NIC2 matches all historical respondent and aggregate values", {
+test_that("NIC2 matches historical and approved aggregate values", {
   survey <- haven::read_dta(project_path("data", "nic2-2003", "survey.dta"))
   survey$source_row <- seq_len(nrow(survey))
   bridge <- readr::read_csv(
@@ -213,7 +213,7 @@ test_that("NIC2 matches all historical respondent and aggregate values", {
   values$highinc <- above_reference_median(values$hhincome, values$hhincome)
   result <- build_nic2_derived(survey, values)
   for (field in names(result)) {
-    if (field %in% c("entropy", "phighinc")) {
+    if (field %in% c("entropy", "phighinc", "genvar")) {
       reference[[field]] <- approved_reference_values(
         "nic2-2003", field, reference$caseid, reference[[field]]
       )
@@ -222,6 +222,7 @@ test_that("NIC2 matches all historical respondent and aggregate values", {
       tolerance = 1e-10, info = field
     )
   }
+  expect_equal(sum(is.na(result$genvar)), 95L)
   order <- rev(seq_len(nrow(survey)))
   expect_equal(build_nic2_derived(survey[order, ], values), result)
   order <- rev(seq_len(nrow(values)))

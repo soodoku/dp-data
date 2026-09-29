@@ -45,7 +45,7 @@ nic_attitudes <- function(survey, wave) {
     allowed <- if (stem == "SPDRUG" && wave == 2L) c(1:3, 8, 9)
     else c(1:3, 8)
     value <- nic_source_codes(survey, paste0(stem, wave), allowed)
-    value[is.na(value) | value > 4] <- 2
+    value[value %in% c(8, 9)] <- NA_real_
     (value - 1) / 2
   }) |> tibble::as_tibble()
 }
@@ -105,8 +105,12 @@ build_nic_individual <- function(survey = read_poll_survey("nic-1996")) {
       household_income = NA_real_,
       political_interest_t1 = (interest - 1) / 3,
       read_briefing = c(0, .33, .33, .66, 1)[briefing],
-      attitude_extremity = rowMeans(abs(as.matrix(baseline) - .5)),
-      attitude_extremity_midterm = rowMeans(abs(as.matrix(midterm) - .5))
+      attitude_extremity = historical_available_mean(
+        abs(as.matrix(baseline) - .5)
+      ),
+      attitude_extremity_midterm = historical_available_mean(
+        abs(as.matrix(midterm) - .5)
+      )
     )
   )
 }

@@ -307,14 +307,29 @@ test_that("Health input ordering agrees with independent evidence", {
     "audit", "corrections", "uk-health-1998", "folded_input_approved_values.csv"
   ), show_col_types = FALSE)
   rebuilt <- build_historical_poll("uk-health-1998")
+  benchmark <- health_reference()
+  benchmark <- benchmark[benchmark$dpnum == 2L, ]
   expect_equal(nrow(rebuilt), 230L)
   expect_false(anyDuplicated(rebuilt$caseid) > 0L)
   for (field in unique(approved$legacy_field)) {
     expected <- approved[approved$legacy_field == field, ]
     rows <- match(expected$caseid, rebuilt$caseid)
     expect_false(anyNA(rows))
+    final_expected <- expected$approved_value
+    if (field == "genvar") {
+      historical <- benchmark$genvar[
+        match(expected$caseid, benchmark$caseid)
+      ]
+      expect_equal(final_expected, approved_poll_reference_values(
+        "uk-health-1998", field, expected$caseid, historical
+      ), tolerance = 1e-10)
+      final_expected <- approved_reference_values(
+        "uk-health-1998", field, expected$caseid, historical
+      )
+      expect_equal(sum(is.na(final_expected)), 152L)
+    }
     expect_equal(
-      rebuilt[[field]][rows], expected$approved_value, tolerance = 1e-10
+      rebuilt[[field]][rows], final_expected, tolerance = 1e-10
     )
     expect_identical(
       is.na(expected$previous_value), is.na(expected$approved_value)

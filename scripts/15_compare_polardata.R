@@ -97,6 +97,14 @@ stopifnot(
   identical(expected_indices$att_index[rows], label_fixes$archived_label)
 )
 expected_indices$att_index[rows] <- label_fixes$reviewed_label
+wave_fixes <- read_metadata("attitude_index_wave_fixes")
+rows <- match(wave_fixes$t1var, expected_indices$t1var)
+stopifnot(
+  !anyNA(rows), !anyDuplicated(wave_fixes$t1var),
+  identical(expected_indices$dpnum[rows], wave_fixes$dpnum),
+  identical(expected_indices$t2_t3var[rows], wave_fixes$archived_later_column)
+)
+expected_indices$t2_t3var[rows] <- wave_fixes$reviewed_later_column
 stopifnot(
   identical(names(indices), names(expected_indices)),
   isTRUE(all.equal(indices, expected_indices, check.attributes = FALSE))

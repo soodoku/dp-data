@@ -24,12 +24,69 @@ test_that("covariance diagnostics distinguish singular and indefinite data", {
   expect_equal(indefinite$pairwise_n_min, 2)
   expect_equal(indefinite$pairwise_n_max, 4)
   expect_lt(indefinite$minimum_eigenvalue, -1)
+  expect_true(is.na(indefinite$source_genvar))
   both <- covariance_diagnostics(cbind(incomplete, incomplete[, 1]))
   expect_equal(both$covariance_class, "indefinite_and_singular")
   expect_equal(both$near_zero_eigenvalues, 1)
+  expect_true(is.na(both$source_genvar))
   missing <- covariance_diagnostics(cbind(seq_len(6), NA_real_))
   expect_equal(missing$covariance_class, "undefined")
   expect_true(is.na(missing$source_genvar))
+})
+
+test_that("invalid covariance stays missing with either determinant sign", {
+  incomplete <- cbind(
+    c(-1, 1, NA, NA, -1, 1),
+    c(-1, 1, -1, 1, NA, NA),
+    c(NA, NA, -1, 1, 1, -1)
+  )
+  expect_lt(det(stats::cov(incomplete, use = "pairwise.complete.obs")), 0)
+  expect_true(is.na(historical_genvar(incomplete)))
+
+  # Two independent incompatible pairwise batteries have two negative roots.
+  two_batteries <- rbind(
+    cbind(incomplete, matrix(NA_real_, 6, 3)),
+    cbind(matrix(NA_real_, 6, 3), incomplete),
+    matrix(0, 2, 6)
+  )
+  diagnostic <- covariance_diagnostics(two_batteries)
+  expect_equal(diagnostic$negative_eigenvalues, 2L)
+  expect_gt(diagnostic$determinant, 0)
+  expect_true(is.na(historical_genvar(two_batteries)))
+  complete <- two_batteries[stats::complete.cases(two_batteries), ]
+  expect_equal(historical_genvar(complete), 0)
+
+  audit <- group_covariance_audit(two_batteries, rep(1, 14), "example")
+  reviewed <- audit[c("poll_id", "pollgroup", "attitudes_sha256", "n", "p")]
+  reference <- tibble::tibble(pollgroup = 1, genvar = 0.001)
+  expect_false(group_covariance_audit(
+    two_batteries, rep(1, 14), "example", reference, reviewed
+  )$numerical_exception)
+})
+
+test_that("spectrum tolerance separates roundoff from substantive negatives", {
+  for (scale in c(1e-20, 1, 1e20)) {
+    roundoff <- covariance_spectrum(diag(c(1, -.Machine$double.eps) * scale))
+    expect_false(any(roundoff$values < -roundoff$tolerance))
+    material <- covariance_spectrum(diag(c(1, -1e-8) * scale))
+    expect_true(any(material$values < -material$tolerance))
+    zero <- covariance_spectrum(matrix(0, 3, 3))
+    expect_equal(zero$tolerance, 0)
+    expect_false(any(zero$values < -zero$tolerance))
+  }
+  missing <- covariance_spectrum(matrix(c(1, NA, NA, 1), 2))
+  expect_true(all(is.na(missing$values)))
+  expect_true(is.na(missing$tolerance))
+
+  for (attitudes in list(
+    cbind(seq_len(6), c(1, 2, 4, 3, 5, 8)),
+    cbind(seq_len(6), seq_len(6)),
+    matrix(0, 6, 2)
+  )) {
+    covariance <- stats::cov(attitudes, use = "pairwise.complete.obs")
+    original <- sqrt(sqrt(det(covariance)^2)^(1 / ncol(attitudes)))
+    expect_identical(historical_genvar(attitudes), original)
+  }
 })
 
 test_that("numerical review is scoped to exact inputs and a finite envelope", {
@@ -95,15 +152,20 @@ test_that("reviewed public source matrices identify only registered inputs", {
     project_path("metadata", "polardata_reviewed_covariances.csv"),
     show_col_types = FALSE
   )
+  expect_equal(nrow(reviewed), 7L)
+  expect_equal(length(unique(reviewed$pollgroup)), 6L)
+  expect_false(any(reviewed$pollgroup %in% c(9601, 9621)))
   result <- audit_historical_covariances(benchmark, reviewed)
   accepted <- result[result$numerical_exception, ]
-  expect_equal(nrow(accepted), 9)
+  expect_equal(nrow(accepted), 7)
   expect_equal(sum(accepted$reference_kind == "approved"), 1L)
   expect_setequal(accepted$pollgroup, reviewed$pollgroup)
-  expect_setequal(
-    accepted$pollgroup[accepted$covariance_class == "indefinite_and_singular"],
-    c(9601, 9621)
-  )
+  invalid <- result[result$pollgroup %in% c(9601, 9621), ]
+  expect_equal(invalid$covariance_class, rep("indefinite_and_singular", 2))
+  expect_true(all(is.na(invalid$source_genvar)))
+  expect_false(any(invalid$numerical_exception))
+  expect_false(any(invalid$reviewed_covariance))
+  expect_true(all(accepted$negative_eigenvalues == 0))
   expect_true(all(accepted$covariance_rank < accepted$p))
   expect_true(all(accepted$benchmark_genvar <= accepted$perturbation_upper))
   changed <- reviewed

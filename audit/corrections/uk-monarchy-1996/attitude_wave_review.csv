@@ -1,0 +1,9 @@
+poll,index,wave,field,n_people,n_observed,n_partial,n_full,n_absent,mean,max_abs_difference
+uk-monarchy-1996,supmon,1,ukmonarchy.t1supmon,258,256,67,189,2,0.66338248628017,0
+uk-monarchy-1996,supmon,2,ukmonarchy.t2supmon,258,257,64,193,1,0.631468545746942,0
+uk-monarchy-1996,mpop,1,ukmonarchy.t1mpop,258,258,1,257,0,0.589228036098702,0
+uk-monarchy-1996,mpop,2,ukmonarchy.t2mpop,258,258,14,244,0,0.624644702314868,0
+uk-monarchy-1996,pwrm,1,ukmonarchy.t1pwrm,258,257,29,228,1,0.400291828793774,0
+uk-monarchy-1996,pwrm,2,ukmonarchy.t2pwrm,258,251,34,217,7,0.433764940239044,0
+uk-monarchy-1996,reflor,1,ukmonarchy.t1reflor,258,249,58,191,9,0.604082995509527,0
+uk-monarchy-1996,reflor,2,ukmonarchy.t2reflor,258,251,43,208,7,0.64807436345108,0
