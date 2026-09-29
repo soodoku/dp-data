@@ -1524,11 +1524,28 @@ waves, [the codebook](../data/swepco-1996/codebook.txt) Q14–18 explicitly labe
 reproduce from the original codes. Together with WTU-01, this recovers 845 DK
 cells without changing knowledge correctness or scores. There are no embedded
 value-label maps in these portable dictionaries; labels come from the retained
-codebooks. Original bytes remain immutable. Public retention and a
-repository-contained recovery script remain to be completed after checking
-dictionary/header content and comparing recovered fields with the existing
-public survey. No recovered source is published in this batch. Structural
-absence of nonparticipant post forms is a separate SWE-05 proposal.
+codebooks. The [original raw portable file](../data/swepco-1996/source-materials/survey-original.por)
+is now retained unchanged with the
+[original missing-value recode](../data/swepco-1996/scripts/original-missing-values.sas)
+and [source construction script](../data/swepco-1996/scripts/original-survey-construction.sas).
+Its 195 numeric fields are a subset of the maintained public survey's 196;
+all previously observed values and respondent identities agree. Dictionary
+traversal confirms there are no author, document, or other unique identifying
+strings. The additional recovered values are exclusively numeric nonanswer
+codes. The cleaned portable copy is redundant with the maintained DTA and is
+not added as another public duplicate.
+
+Run `Rscript scripts/review_utilities_sources.R` to reproduce this comparison
+using only repository files. The bounded reader in
+[R/source_utilities.R](../R/source_utilities.R) checks the registered source
+hash and fixed-width structure, changes only the missing-token suffix in a
+temporary copy, and deletes that copy after reading. Source bytes remain
+unchanged. Its outputs retain [summary counts](../audit/corrections/utilities-source-recovery/summary.csv),
+[all recovered attendee DK cells](../audit/corrections/utilities-source-recovery/nonanswers.csv),
+and [all absent post-form identities](../audit/corrections/utilities-source-recovery/absence.csv).
+Neither the maintained survey nor any production response, score, attendance,
+or aggregate table changes. Structural absence of nonparticipant post forms
+remains the separate SWE-05 numerical proposal.
 
 **SWE-02 — conservation's post component is absent under the script's name.**
 **Status: approved and adopted two-item correction (SWE-02).** The archived
@@ -1663,9 +1680,8 @@ Keep observed-form blank/DK answers scored zero. A direct upstream change in
 `utility_knowledge_items` would also require reviewing
 `summarise_historical_knowledge`, which forbids missing matrices, and its
 joint/gain derivatives; the narrower analysis correction would leave legacy
-historical measures unchanged. Original bytes remain immutable; source
-retention and recovery-script work described in SWE-01 is separate from this
-numerical proposal. Attendance-field changes require a separate explicit
+historical measures unchanged. Original bytes remain immutable; the completed source
+retention and recovery described in SWE-01 do not apply this numerical proposal. Attendance-field changes require a separate explicit
 decision.
 
 ## WTU 1996 — wtu-1996
@@ -1692,10 +1708,14 @@ as DK. Recovery identifies 409 attendee item cells across 170 people, 306
 baseline and 103 post. All 2,300 historical attendee item correctness cells
 and 460 scores independently reproduce from raw codes. SWEPCO and WTU
 therefore supply 845 verified attendee DK cells in total. Original portable
-bytes remain immutable; public retention and a repository-contained recovery
-script remain to be completed after the content comparisons described in
-SWE-01. No recovered source is published in this batch. The separate
-1,000-row absent-post score problem is recorded in WTU-06.
+bytes remain immutable. The [original raw portable file](../data/wtu-1996/source-materials/survey-original.por),
+[missing-value recode](../data/wtu-1996/scripts/original-missing-values.sas), and
+[source construction script](../data/wtu-1996/scripts/original-survey-construction.sas)
+are retained in this poll's folder. The same field and dictionary review as
+SWE-01 finds no new fields or unique identifying strings beyond the existing
+public survey. The repository-only reader and review script described there
+reproduce all WTU comparisons and audit outputs. Production values remain
+unchanged. The separate 1,000-row absent-post score problem is recorded in WTU-06.
 
 **WTU-02 — omitted category is not necessarily a deposited-score error.** Raw
 `USE2 = 4` denotes wholesale. The archived R recode omits it, but the deposited

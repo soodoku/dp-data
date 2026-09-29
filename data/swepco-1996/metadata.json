@@ -597,6 +597,51 @@
       "publication_status": "published",
       "notes": "Generated from data/shared/papers/util-appam.doc. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Cross-poll Texas utility analysis; differs from utilities-paper in tables/combined versus per-poll results; not interchangeable. Read extracted text/methods/tables and checked existing poll_references. No pipeline reads this paper.",
       "relative_path": "../shared/papers/util-appam.pdf"
+    },
+    {
+      "artifact_id": "cdd-swepco-1996-original-portable",
+      "poll_id": "swepco-1996",
+      "artifact_type": "data",
+      "title": "Original survey before nonanswer collapse",
+      "location": "data/swepco-1996/source-materials/survey-original.por",
+      "source_id": "cdd-swepco-1996-original-portable",
+      "original_archive_path": "data/Utilities/swepco/swepco_data/swepco.por",
+      "sha256": "728cbb5976bb64022a60008041db37d28f171f878b453207562626c29e4161d6",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "All 195 numeric fields already occur in the public maintained survey; original 98/99/999 nonanswers retained. No unique identifying header or dictionary content. Original bytes unchanged; read with R/source_utilities.R.",
+      "relative_path": "source-materials/survey-original.por"
+    },
+    {
+      "artifact_id": "cdd-swepco-1996-original-missing-values",
+      "poll_id": "swepco-1996",
+      "artifact_type": "script",
+      "title": "Original missing-value recode",
+      "location": "data/swepco-1996/scripts/original-missing-values.sas",
+      "source_id": "cdd-swepco-1996-original-missing-values",
+      "original_archive_path": "data/Utilities/swepco/make_data/missingvalues.sas",
+      "sha256": "c230740449bff11f247d3182d50cce6117fa8b9ab0f6665d1a1471e2a4aff44f",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original authored nonanswer collapse. Retained as coding evidence, not executed; no respondent records or credentials.",
+      "relative_path": "scripts/original-missing-values.sas"
+    },
+    {
+      "artifact_id": "cdd-swepco-1996-original-construction",
+      "poll_id": "swepco-1996",
+      "artifact_type": "script",
+      "title": "Original survey construction",
+      "location": "data/swepco-1996/scripts/original-survey-construction.sas",
+      "source_id": "cdd-swepco-1996-original-construction",
+      "original_archive_path": "data/Utilities/swepco/make_data/swepco.sas",
+      "sha256": "da0bbf31a2b3b4c960ad90009927c08f327409c65a22c6452897f9aa9fdeebcf",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original authored source assembly and variable labels, including baseline-only nonparticipant input. Retained as evidence, not executed; institutional file paths preserved.",
+      "relative_path": "scripts/original-survey-construction.sas"
     }
   ],
   "document_previews": [

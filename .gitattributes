@@ -11,6 +11,7 @@ output/polardata/*.tab whitespace=-trailing-space
 *.zip binary
 data/*/knowledge-battery.csv -text
 *.sav binary
+*.por binary
 *.parquet binary
 data/northern-ireland-2007/groups.csv -text
 data/*/codebook.txt -text
