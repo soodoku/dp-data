@@ -5116,7 +5116,9 @@ The maintained paper now reads the public numeric survey, source roster and
 65,760 coder-slot records for 274 respondents, including missing labels;
 `R/argument_codes.R` selects the 240 coder fields from the original `fin.csv`
 and excludes verbatim responses. No codes are normalized or adjudicated upstream.
-All 19 pinned downstream numerical outputs match after changing these readers.
+All 19 pinned downstream numerical outputs matched after changing those readers.
+That comparison did not detect earlier CSV type inference that had already
+collapsed some multi-category labels; NI-06 records the literal-source repair.
 The first-roster-row issue was subsequently corrected as described in NI-01.
 The old vault inventory remains historical provenance, not a required runtime
 input list.
@@ -5204,6 +5206,40 @@ records are unusable. `panel` means the selected comparison panel within a
 source, subject to its original sample restrictions; eligibility for a different
 phase contrast must use that contrast's observed scores. Missing optional
 follow-ups therefore do not remove otherwise observed initial/exit pairs.
+
+### NI-06: Preserve literal argument-code sets during CSV import (corrected)
+
+The original `fin.csv` records multiple categories as strings such as `1,3`.
+Automatic CSV type inference interpreted commas as numeric grouping separators
+in some columns, turning that example into `13` before the public Parquet file
+was built. Reading the original file with that default inference reproduces
+all cells in the previous public extract, which establishes the cause. Its
+registered original SHA-256 remains
+`314a9a9abb40c6094dab2e7c9af761041557b791240f0932b3848699e861f39c`.
+
+The explicit character reader now restores 176 comma-containing labels across
+162 response slots and 87 people: 134 labels from coder `ch`, 10 from `la`, and
+32 from adjudicator `monty`. Two additional labels recover leading whitespace.
+All 65,760 keys, 274 people, missing labels, wave and question assignments remain
+unchanged. The original 240 coding columns have been compared cell by cell;
+verbatim answers are not included in this extract. Numeric knowledge and
+attitude outputs are unchanged.
+
+This lossless repair can change downstream argument outcomes even though no
+scoring rule changes. With the current `dp-nireland` rules, it changes 33 final
+label sets and resolves one false disagreement: respondent 131201 has `1,3`
+from both coders for T2 Q21b, slot 1, whereas the previous extract supplied
+`13` for one and `1,3` for the other. Their T2 total changes from missing to 12.
+The same comparison changes respondent 147026's T2 total from 14 to 15 and
+272038's from 26 to 27. Mention counts and directional outcomes also change.
+Downstream source pins and analyses therefore require an explicit refresh.
+
+The retained version-16 coding guide, page 1, separately explains `c` prefixes
+as reasons for the opposite side of a question and code 94 as overly vague.
+The authored 2011 scoring script explicitly removed `c` and counted 94; the
+current downstream scoring retains those choices. They are not changed by this
+transport repair. The guide's routing instruction and the paper's statement
+that vague answers are excluded require a separate measurement decision.
 
 ## Polls outside the 23-battery canonical build
 

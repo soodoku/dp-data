@@ -331,11 +331,11 @@
       "location": "data/northern-ireland-2007/argument-codes.parquet",
       "source_id": "northern-ireland-argument-codes",
       "original_archive_path": "soodoku/dp-nireland@929e45d32213e0dd4516e510731ddb9e2c309006:data/open_ended/fin.csv",
-      "sha256": "6f611737c3089f63cecda665d66874a64542790d4dcbbb9fd398a99c90d06b99",
+      "sha256": "385ee2f18b117a8f4e0767ec4ae97b6de4fed886d3a055053581170bd5f2fafd",
       "rights_status": "owner-approved",
       "disclosure_status": "approved-redacted",
       "publication_status": "published",
-      "notes": "274 respondents; 65760 coder-slot records; respondent_id wave topic side slot coder raw_code. Extracted with R/argument_codes.R from source SHA256 314a9a9abb40c6094dab2e7c9af761041557b791240f0932b3848699e861f39c. Only ID and 240 coder fields retained; verbatim responses excluded. Missing labels preserved; no adjudication or scoring applied. Codes ch and la denote independent coders; monty denotes adjudicator. Source rights retained.",
+      "notes": "274 respondents; 65760 coder-slot records; respondent_id wave topic side slot coder raw_code. Extracted with R/argument_codes.R from source SHA256 314a9a9abb40c6094dab2e7c9af761041557b791240f0932b3848699e861f39c. Only ID and 240 coder fields retained; verbatim responses excluded. Missing labels preserved; no adjudication or scoring applied. Codes ch and la denote independent coders; monty denotes adjudicator. Source rights retained. Literal strings restored using read_northern_ireland_codes with character-only CSV parsing and whitespace preservation; 176 comma-separated sets and two whitespace-only labels corrected. No adjudication or scoring changes.",
       "relative_path": "argument-codes.parquet"
     },
     {

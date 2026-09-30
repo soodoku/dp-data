@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Restore Northern Ireland's literal argument-coder labels. CSV type inference
+  had collapsed 176 comma-separated code sets; source whitespace is also retained.
+  Respondent identities, missing slots and all knowledge outputs are unchanged.
+
 ## 0.4.2
 
 - Use reviewed whole-questionnaire evidence in knowledge scoring. Preserve
