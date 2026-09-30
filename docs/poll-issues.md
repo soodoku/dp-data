@@ -4641,6 +4641,19 @@ verified group roster is attached. This is a missing verified linkage, not proof
 that discussions had no groups. Search original session materials before making
 that assertion; do not substitute a single synthetic group.
 
+**Roster search, September 30, 2026.** The vault source
+`cdd/data/Vermont/data/VT-All (Rescaled).sav` contains `GROUPID`, but every
+one of its 750 values is system missing, including all 146 `PART == 1`
+respondents. Neither the maintained survey nor the retained `vt.rdata` object
+supplies a populated group identifier. `SHOUSE` identifies the polling company
+(NSON or OSR), and `TYPE` distinguishes long/short questionnaires and
+nonparticipants; neither is a discussion group. The final report (PDF page 10)
+states that participants were randomly assigned to thirteen groups. The exit
+questionnaire (final-report PDF page 32) has participant-number and group-number
+boxes, but the available copy is blank. Recover completed questionnaire headers
+or a `CASEID` to group-number roster. Keep all 146 current group assignments
+missing until that linkage is recovered.
+
 ### VT-03: The question catalog inherited incorrect choice labels (corrected)
 
 The baseline SAV dictionary attaches efficiency-program choices to `Q77`, the
@@ -5134,6 +5147,27 @@ The source timing remains grounded in `deliberative-democracy-euro.pdf`,
 PDF pages 7 and 19, which distinguish recruitment, beginning-of-event and
 end-of-event measurements. Both the source and arrival build are public and
 require no local vault; X-02 gives the report comparisons and sample boundary.
+
+
+### DK-07: Discussion-group linkage is still missing after source search
+
+The maintained 359-person departure cohort has no verified group assignments.
+The six retained SAV waves, six serialized survey objects (including the
+1,702-row, 510-column merged object), and assembly list were searched for a
+respondent-to-group linkage. The assembly list identifies respondents with
+`DELNR` but supplies no group roster. Ratings of group discussion and moderators
+are substantive responses, not identifiers. Municipality, county and interview
+administration fields likewise cannot establish discussion-group membership.
+
+The vault book `Deliberative Democracy and Opinion Formation.pdf` (PDF page 180)
+reports twenty discussion groups. Its `Appendix-web.pdf` (PDF page 80, printed
+page 373) shows a moderator questionnaire headed `Gruppe-bogstav` (group letter),
+but no completed respondent-to-letter roster. The wider search covered 298
+source schemas, the vault inventory, authored scripts and the historical group
+aggregate data; none supplied the missing linkage for Denmark or Vermont.
+Recover a `DELNR` to group-letter roster or completed assignment records. Retain
+all current Denmark group identifiers as missing; do not infer groups from
+administrative fields or manufacture one group for the whole poll.
 
 
 ### DK-06: Follow-up instrument, keys and participant identities verified
@@ -9365,6 +9399,18 @@ preserved scripts, their loose vault copies were also deleted following SHA256
 checks against both the tracked poll files and merged commit
 `e92b9aa8e5aef75488ecda2887edae9a58cc9489`. The total is194 removed files.
 Unmatched scientific files remain.
+
+After publishing v0.4.2 at commit
+`336f88a940d77e5a714e7521cac7343298ece608`, nine further exact vault
+copies were removed: Australia's codebook, two California index drafts,
+Denmark's wave crosswalk and four questionnaires, and Northern Ireland's
+version-16 argument-coding guide. Every deletion followed byte and SHA256
+checks against both the tracked poll-folder original and the downloadable
+release; all eight Word originals have readable PDF companions. The public
+archive rebuilt all 57 output files byte-for-byte without Git history or the
+vault. This brings the cleanup described here to 203 files. Unique scientific
+sources, unresolved source versions and originals not yet preserved publicly
+remain in the vault.
 
 
 ### Shared full-questionnaire and peer-denominator correction, September 30, 2026

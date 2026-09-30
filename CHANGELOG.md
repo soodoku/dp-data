@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Document the missing Denmark and Vermont discussion-group rosters after
+  searching source surveys, serialized objects, reports and assignment forms.
+- Remove nine exact vault duplicates verified against the published v0.4.2
+  poll-folder originals; retain unique and unresolved scientific sources.
+
 - Use Tanzania's original household identifiers consistently across canonical
   knowledge, attitude and weight tables. Preserve physical source rows, all
   scores and samples, and the IDs in frozen historical comparisons.
