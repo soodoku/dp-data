@@ -78,7 +78,8 @@ def prepare_workbook(source, scratch, base_command):
             )
             typical = samples[int((len(samples) - 1) * 0.8)] if samples else 10
             lengths[column] = min(45, max(12, typical + 3))
-        factor = min(1, 185 / sum(lengths.values()))
+        wide = columns > 40
+        factor = 1 if wide else min(1, 185 / sum(lengths.values()))
         widths = {column: max(10, width * factor) for column, width in lengths.items()}
         for column, width in widths.items():
             name = openpyxl.utils.get_column_letter(column)
@@ -114,9 +115,13 @@ def prepare_workbook(source, scratch, base_command):
         sheet.page_setup.paperSize = (
             sheet.PAPERSIZE_A3 if max(heights.values()) <= 700 else "66"
         )
-        sheet.page_setup.fitToWidth = 1
+        sheet.page_setup.fitToWidth = 0 if wide else 1
         sheet.page_setup.fitToHeight = 0
-        sheet.sheet_properties.pageSetUpPr.fitToPage = True
+        sheet.sheet_properties.pageSetUpPr.fitToPage = not wide
+        if wide:
+            sheet.page_setup.scale = 100
+            sheet.print_title_rows = "1:1"
+            sheet.print_title_cols = "A:A"
         sheet.page_margins.left = sheet.page_margins.right = 0.25
         sheet.page_margins.top = sheet.page_margins.bottom = 0.4
         sheet.row_breaks = openpyxl.worksheet.pagebreak.RowBreak()
@@ -126,6 +131,7 @@ def prepare_workbook(source, scratch, base_command):
                 "sheet": sheet.title,
                 "rows": rows,
                 "columns": columns,
+                "horizontal_pages": "multiple" if wide else "single",
                 "formulas": sum(cell.data_type == "f" for cell in occupied),
                 "images": len(sheet._images),
                 "charts": len(sheet._charts),

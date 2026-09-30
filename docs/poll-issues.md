@@ -8618,7 +8618,7 @@ respondents who share the same reported education category.
 
 ## Supplied survey weights: analytical use remains undecided
 
-The typed weight export retains 13 supplied numeric weight columns from nine
+The typed weight export retains 16 supplied numeric weight columns from ten
 polls, with every source row preserved, including missing and zero weights.
 `metadata/survey_weights.csv` records the original column names, available
 labels, identity fields, documented scope and evidence. The two Parquet tables
@@ -8649,7 +8649,7 @@ The existing analysis weight field and all estimates remain unchanged.
   from their names. NIC2 uses the complete original `caseid` for optional unit
   identity; `nicid` is missing for 998 source records.
 
-The export contains 61,541 weight-row records, of which 25,236 have observed
+The export contains 63,234 weight-row records, of which 26,929 have observed
 values. Source bytes remain unchanged. Exact source-to-Parquet comparison
 checks every value, missingness, source-row identity, minima, maxima and zeros.
 Choosing weights for a particular population, wave contrast or estimand is a
@@ -8881,3 +8881,63 @@ The original workbook remains in the vault pending complete preservation.
 A further 87 FTP transfer logs and one temporary Word lock file were removed
 after checking their recorded hashes. The 29 analysis/import logs remain;
 they may contain scientific evidence.
+
+
+### Further vault source-version evidence, September 30, 2026
+
+Thirteen unique authored scripts now sit in the relevant poll folders as
+historical coding evidence. They are not part of the modern build. The two
+Brazil group-count implementations were independently evaluated on the retained
+224-person, 18-group cohort: no values or missingness differ, and both match
+every stored group size. Three scripts concern polls outside the present
+catalog (Australian reconciliation 2001, Power 2010, and Kanagawa DoShusei of
+undetermined event year); they remain in the vault rather than being misfiled
+under existing polls. A California matching draft also contains unrelated
+Daily Show/CNN analysis and remains pending separation.
+
+Denmark's recovered follow-up contains 355 DELNR identifiers, all matched to
+the baseline. DATO records November 27–December 18, 2000. The typed wave catalog
+labels this as a later follow-up (t3), with source available but scores not
+produced. Preserve the changed post-referendum question wording; do not assume
+all fact questions or party-position keys are interchangeable across waves.
+The separate control survey has 993 unique IP identifiers, none equal the
+baseline IPNR values. Original numbering alone cannot establish a panel join,
+recruitment history, or random assignment. Departure verbatim responses are
+retained separately with source rows and DELNR.
+
+Europolis's earlier source version is not interchangeable with the maintained
+2014 replication source. IDs4100000001/3/4 each carry 18 observed arrival/exit
+quiz answers that are missing under those IDs publicly (54 cells); ID4100000007
+differs on eight observed quiz answers. Preserve this version as identity and
+source-version evidence. Do not overwrite current answers or import them by ID
+until the source provenance and crosswalk have been established. The current
+2014 replication agrees with the maintained data on all observed answers across
+30 knowledge fields, including follow-up. Three 900-person/15-group files
+misfiled under eu_2009 contain UK–EU data. The original question-code survey is
+retained in the UK–EU folder; derivative group snapshots add no unique responses.
+
+The 2006 archive retains readable copies of three survey files whose loose
+namesakes cannot be read. The archive must remain while those versions are
+evaluated. Its September–October 2005 codebook identifies the additional online
+sources as BTP Health/Education. CDD_FULLFILE has 3,095 unique CaseIDs. Against
+the maintained 3,298-row source, 3,094 unambiguous IDs match; 156 shared fields
+contain 3,051 differing cells, and 16 fields exist only in the archived version.
+The maintained source has 202 missing CaseIDs and one duplicated nonmissing ID.
+These are source-version differences, not established coding errors. The
+archived analytic, control and treatment sources preserve matwgt/wght as
+separate supplied weights (716/619/358 rows), with usage undecided. Current
+knowledge/attitude scores, samples, and analytical weights are unchanged.
+
+The preserved cross-poll inventory covers 16 studies and belongs under
+data/shared/codebooks/historical-poll-inventory. Its notes report 356 Australian
+attendees, nine of whom did not return the exit questionnaire, explaining the
+347 analyzed respondents. This is positive attendance evidence for those nine,
+not permission to score their absent interviews as zero. The notes also report
+that theft of an El Paso polling-company computer lost interviews, leaving859;
+the claim that loss was random is an authored account, not an empirical
+verification of missing completely at random.
+
+Subsequent vault cleanup removed46 scripts after SHA256 checks against the
+public historical-cdd-scripts tag, plus ten exact originals now retained in the
+merged poll folders. Together with37 earlier public duplicates and88 transfer
+logs/temporary files, this removes181 files. Unmatched scientific files remain.

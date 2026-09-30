@@ -4,10 +4,10 @@ test_that("supplied weights preserve every source row and numeric value", {
   tables <- build_survey_weight_tables()
   definitions <- tables$survey_weight_definitions
   values <- tables$survey_weights
-  expect_equal(nrow(definitions), 13L)
-  expect_equal(dplyr::n_distinct(definitions$poll_id), 9L)
-  expect_equal(nrow(values), 61541L)
-  expect_equal(sum(!is.na(values$value)), 25236L)
+  expect_equal(nrow(definitions), 16L)
+  expect_equal(dplyr::n_distinct(definitions$poll_id), 10L)
+  expect_equal(nrow(values), 63234L)
+  expect_equal(sum(!is.na(values$value)), 26929L)
   expect_false(anyDuplicated(
     values[c("source_id", "weight_id", "source_row")]
   ) > 0L)

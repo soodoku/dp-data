@@ -107,3 +107,26 @@ test_that("catalog arrival and exit fields trace literal raw source columns", {
   expect_true(all(expected %in% names(source)))
   expect_false(any(startsWith(expected, "T2_")))
 })
+
+
+test_that("recovered Denmark follow-up preserves timing and is not exit", {
+  waves <- analysis_wave_catalog()$analysis_survey_waves
+  follow_up <- dplyr::filter(
+    waves, poll_id == "denmark-euro-2000", wave == "t3"
+  )
+  expect_equal(nrow(follow_up), 1L)
+  expect_equal(follow_up$wave_role, "follow_up")
+  expect_equal(follow_up$availability, "source_exists_but_not_exported")
+  source <- arrow::read_parquet(project_path(follow_up$source_path))
+  baseline <- arrow::read_parquet(project_path(
+    "data", "denmark-euro-2000", "survey.parquet"
+  ))
+  expect_equal(nrow(source), 355L)
+  expect_false(anyDuplicated(source$DELNR) > 0L)
+  expect_true(all(source$DELNR %in% baseline$delnr))
+  expect_identical(source$source_row, seq_len(nrow(source)))
+  expect_equal(range(source$DATO), c(follow_up$date_start, follow_up$date_end))
+  fields <- strsplit(follow_up$source_fields, "|", fixed = TRUE)[[1]]
+  expect_true(all(fields %in% names(source)))
+  expect_true(follow_up$date_start > as.Date("2000-08-27"))
+})

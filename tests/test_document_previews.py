@@ -59,6 +59,30 @@ class DocumentPreviewTests(unittest.TestCase):
             self.assertFalse(sources[1].with_suffix(".pdf").exists())
             self.assertEqual([source.read_text() for source in sources], ["a", "b"])
 
+    def test_wide_inventory_retains_cells_and_readable_print_scale(self):
+        import openpyxl
+
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            source = root / "inventory.xlsx"
+            original = openpyxl.Workbook()
+            sheet = original.active
+            sheet.append(["Study"] + [f"Question {i}" for i in range(1, 100)])
+            sheet.append(["Denmark"] + list(range(1, 100)))
+            sheet["B3"] = "=B2+1"
+            original.save(source)
+            checksum = previews.sha256(source)
+            scratch = root / "scratch"
+            scratch.mkdir()
+            output, _ = previews.prepare_workbook(source, scratch, ["soffice"])
+            rendered = openpyxl.load_workbook(output).active
+            self.assertEqual(list(sheet.values), list(rendered.values))
+            self.assertEqual(rendered.page_setup.scale, 100)
+            self.assertFalse(rendered.sheet_properties.pageSetUpPr.fitToPage)
+            self.assertEqual(rendered.print_title_rows, "$1:$1")
+            self.assertEqual(rendered.print_title_cols, "$A:$A")
+            self.assertEqual(previews.sha256(source), checksum)
+
     def test_missing_xlsx_is_rejected_before_loading_any_workbook(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

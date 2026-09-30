@@ -1,6 +1,24 @@
 # Changelog
 
-## Unreleased
+## 0.4.1
+
+- Preserve additional poll source versions and 13 unique historical scripts as
+  coding evidence, with source dictionaries and readable document companions.
+- Retain Denmark's dated later follow-up in the typed wave catalog without
+  treating it as an exit interview or scoring it before its keys are reviewed.
+- Preserve three additional supplied weight columns from archived BTP Health
+  sources, with source identities and undecided analytical use.
+- Render wide inventory workbooks across pages at a readable scale, repeating
+  study names and headers while preserving original cells and formulas.
+
+## 0.4.0
+
+- Reconcile observed-questionnaire presence across source copies, preserve
+  known attendance, and treat UK–EU group99 as unknown membership. Retain
+  New Haven's absent exit form and BTP National's explicit nonattendance.
+- Preserve both authored Zeguo township-image definitions with distinct names.
+- Retain original Bulgaria Crime sources, Australia attendance evidence,
+  Europolis's master questionnaire, and a typed New Haven recruitment crosswalk.
 
 - Include Tanzania's borrowing question using its five documented categories,
   and export all 22 policy items with source answers, normalized citizen values,

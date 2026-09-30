@@ -244,6 +244,26 @@
       "local_artifact_id": "australia-1999-source-version-notes-excerpt",
       "accessed": "2026-09-30",
       "notes": "Exact bytes of original files.txt lines 1-9 inclusive; retains the original-source filenames, corrected January 2000 version adding missing departure QD10/QE1, and August 2000 actual-attendance roster provenance. Remaining correspondence and frequency output are omitted. Original files.txt SHA256 3fa8a71c24c17cfc4ef9d6d8480e6f767b489c40188838c49a0b0faa1dc4bf22. This excerpt does not preserve the full original; original historical Git preservation is not yet established."
+    },
+    {
+      "reference_id": "uk-poll-inventory-notes-australia-republic-1999",
+      "poll_id": "australia-republic-1999",
+      "kind": "codebook",
+      "title": "UK poll inventory interpretive notes",
+      "url": null,
+      "local_artifact_id": "uk-poll-inventory-notes",
+      "accessed": "2026-09-30",
+      "notes": "Original member UK/Inventory/poll inventory NOTES.doc from cddrep-jul-5-2006.zip; archive SHA256 9e9c1c624044f0405334d4275bc1ef49e8295a5cec71e45f33f17ade52eaf663. Exact member bytes retained; no scoring, sample, identity or source-substitution change. Genuinely cross-poll documentation: the workbook covers 16 studies, including five UK polls, NIC, Australia, Texas utilities and a Nike Poll row; archived statements describe source knowledge at that time, not necessarily present-day completeness. Page 1: 356 participants and nine missing exit questionnaires, leaving347 respondent records."
+    },
+    {
+      "reference_id": "uk-poll-inventory-notes-preview-australia-republic-1999",
+      "poll_id": "australia-republic-1999",
+      "kind": "codebook",
+      "title": "UK poll inventory interpretive notes (PDF preview)",
+      "url": null,
+      "local_artifact_id": "uk-poll-inventory-notes-preview",
+      "accessed": "2026-09-30",
+      "notes": "Generated PDF companion of data/shared/codebooks/historical-poll-inventory/inventory-notes.doc; the original is retained byte-exact. Converted using the shared scripts/16_build_document_previews.py. All 2 pages visually inspected; source text compared (382 source tokens). No source words or numbers missing; no clipping found. Page 1: 356 participants and nine missing exit questionnaires, leaving347 respondent records."
     }
   ],
   "material_coverage": [
@@ -673,6 +693,36 @@
       "publication_status": "published",
       "notes": "Exact bytes of original files.txt lines 1-9 inclusive; retains the original-source filenames, corrected January 2000 version adding missing departure QD10/QE1, and August 2000 actual-attendance roster provenance. Remaining correspondence and frequency output are omitted. Original files.txt SHA256 3fa8a71c24c17cfc4ef9d6d8480e6f767b489c40188838c49a0b0faa1dc4bf22. This excerpt does not preserve the full original; original historical Git preservation is not yet established.",
       "relative_path": "source-materials/source-version-notes-excerpt.txt"
+    },
+    {
+      "artifact_id": "uk-poll-inventory-notes",
+      "poll_id": null,
+      "artifact_type": "codebook",
+      "title": "UK poll inventory interpretive notes",
+      "location": "data/shared/codebooks/historical-poll-inventory/inventory-notes.doc",
+      "source_id": "uk-poll-inventory-notes",
+      "original_archive_path": "data/Archive/cddrep-jul-5-2006.zip!UK/Inventory/poll inventory NOTES.doc",
+      "sha256": "cc699517c3231d79f91b64e20b687971b862b84930f2a38ae1107cc3f284f94b",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original member UK/Inventory/poll inventory NOTES.doc from cddrep-jul-5-2006.zip; archive SHA256 9e9c1c624044f0405334d4275bc1ef49e8295a5cec71e45f33f17ade52eaf663. Exact member bytes retained; no scoring, sample, identity or source-substitution change. Genuinely cross-poll documentation: the workbook covers 16 studies, including five UK polls, NIC, Australia, Texas utilities and a Nike Poll row; archived statements describe source knowledge at that time, not necessarily present-day completeness.",
+      "relative_path": "../shared/codebooks/historical-poll-inventory/inventory-notes.doc"
+    },
+    {
+      "artifact_id": "uk-poll-inventory-notes-preview",
+      "poll_id": null,
+      "artifact_type": "codebook",
+      "title": "UK poll inventory interpretive notes (PDF preview)",
+      "location": "data/shared/codebooks/historical-poll-inventory/inventory-notes.pdf",
+      "source_id": "uk-poll-inventory-notes-preview",
+      "original_archive_path": null,
+      "sha256": "67fb31a4fbea3967ebdc4ac698a1d562ee97ded8cb6444bb53696e0656e38e2b",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Generated PDF companion of data/shared/codebooks/historical-poll-inventory/inventory-notes.doc; the original is retained byte-exact. Converted using the shared scripts/16_build_document_previews.py. All 2 pages visually inspected; source text compared (382 source tokens). No source words or numbers missing; no clipping found.",
+      "relative_path": "../shared/codebooks/historical-poll-inventory/inventory-notes.pdf"
     }
   ],
   "document_previews": [
@@ -787,6 +837,22 @@
       "distinct_word_coverage": "1.0",
       "qa_notes": "Two-page memo retained verbatim; PDF text and both pages reviewed.",
       "rebuild_command": "soffice --headless --convert-to pdf --outdir data/australia-republic-1999/codebooks data/australia-republic-1999/codebooks/jim-australia-indices.txt"
+    },
+    {
+      "source_path": "data/shared/codebooks/historical-poll-inventory/inventory-notes.doc",
+      "preview_path": "data/shared/codebooks/historical-poll-inventory/inventory-notes.pdf",
+      "source_sha256": "cc699517c3231d79f91b64e20b687971b862b84930f2a38ae1107cc3f284f94b",
+      "preview_sha256": "67fb31a4fbea3967ebdc4ac698a1d562ee97ded8cb6444bb53696e0656e38e2b",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "2",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-all-pages",
+      "visual_pages": "1;2",
+      "source_token_coverage": "1",
+      "distinct_word_coverage": "1",
+      "qa_notes": "All 2 pages visually inspected; source text compared (382 source tokens). No source words or numbers missing; no clipping found.",
+      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
   ]
 }

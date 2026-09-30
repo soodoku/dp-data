@@ -352,6 +352,21 @@
       "publication_status": "published",
       "notes": "Public source downloaded 2026-09-24; SHA-256 1f8563f84e1fa058c231c32a9bb6dc6fcece2eef38708fd7d35f0c3ecce78cc6",
       "relative_path": "briefing/education-briefing.pdf"
+    },
+    {
+      "artifact_id": "material-33760e7f095c64cb-northern-ireland-2007",
+      "poll_id": "northern-ireland-2007",
+      "artifact_type": "script",
+      "title": "Early source-group join, three-wave attitude correspondence and six-item knowledge map",
+      "location": "data/northern-ireland-2007/scripts/source-wave-mapping-draft.R",
+      "source_id": "material-33760e7f095c64cb",
+      "original_archive_path": "data/Ireland/Clean/nireland_clean.R",
+      "sha256": "33760e7f095c64cbd33894135af5bc2ae8740af2f4368c22251e5b0065578e7f",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged historical coding evidence from the CDD archive; not executed by the modern pipeline. Early source-group join, three-wave attitude correspondence and six-item knowledge map. The bare correspondence lines are not valid R syntax. Line29/30 comments also repeat the same accepter/decliner code. This is authored mapping evidence, not an executable build.",
+      "relative_path": "scripts/source-wave-mapping-draft.R"
     }
   ],
   "document_previews": []

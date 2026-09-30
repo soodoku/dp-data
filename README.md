@@ -80,7 +80,7 @@ with the 129-row attitude-index catalog and a typed derived-measure table.
 Tomorrow's Europe also has explicit pre-arrival-to-exit and arrival-to-exit
 pairs in `output/polardata/attitude_contrasts.parquet`.
 
-`make weights` preserves the 13 supplied weight columns from nine polls under
+`make weights` preserves the 16 supplied weight columns from ten polls under
 `output/weights/`. Definitions retain source provenance and documented scope;
 values retain every source row, including missing and zero weights. These tables
 preserve available weights without deciding how analyses should use them.

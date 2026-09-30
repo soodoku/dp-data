@@ -777,6 +777,21 @@
       "publication_status": "published",
       "notes": "Authored comparison of attitude changes by demographics. Civil-liberties N275, exit0.446, change-0.023 and p0.208 agree with preserved Version E at printed precision; printed baseline0.479 disagrees with0.46887879 and the printed difference. Retain original evidence without correcting the document. User-supplied archive Bulgaria-20260930T054837Z-1-001.zip SHA256 964132e298728aac024d9d1e443e5eddce94efb4b1ed1689f34e19da33a4e2b1. PDF preview of unchanged original DOC; see document_previews registration.",
       "relative_path": "reports/inequality-analysis.pdf"
+    },
+    {
+      "artifact_id": "material-4957dbb5633d3d29-bulgaria-crime-2002",
+      "poll_id": "bulgaria-crime-2002",
+      "artifact_type": "script",
+      "title": "Early evaluation-variable and demographic harmonization draft",
+      "location": "data/bulgaria-crime-2002/scripts/evaluation-recoding-draft.R",
+      "source_id": "material-4957dbb5633d3d29",
+      "original_archive_path": "data/Bulgaria/data/r_recode_eval-Bulgaria.r",
+      "sha256": "4957dbb5633d3d29564a610979f6a88587dfea75ad90d5e6be13c86f33d2f926",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged historical coding evidence from the CDD archive; not executed by the modern pipeline. Early evaluation-variable and demographic harmonization draft. Draft contains unrelated template leftovers renda_familiar and Europolis t3kn fields. Preserve as historical evidence only; do not execute or treat these as approved mappings.",
+      "relative_path": "scripts/evaluation-recoding-draft.R"
     }
   ],
   "document_previews": [
