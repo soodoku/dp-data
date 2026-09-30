@@ -12,6 +12,11 @@
 - Reproduce fourteen Health/Education report percentages from the preserved
   weighted archive; retain the approved 454-person cohort and record the
   remaining source-version and sample differences.
+- Restore five Michigan arrival factual-response fields mistakenly excluded as
+  nonessential text; preserve the archived arrival questionnaire and a PDF
+  companion, without changing scores or sample membership.
+- Preserve the authentic 2009 UK-English Europolis arrival questionnaire,
+  separately from the previously rejected 2007 departure form.
 
 - Preserve Denmark's July 2003 dissertation draft and separate technical
   appendix in its poll folder, with their distinct source versions recorded.

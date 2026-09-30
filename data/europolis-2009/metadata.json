@@ -363,6 +363,16 @@
       "local_artifact_id": null,
       "accessed": "2026-09-24",
       "notes": "Official Stanford language-specific link; English downloaded and inspected. This translation has not been independently inspected or reconciled to fielded wording."
+    },
+    {
+      "reference_id": "europolis-arrival-uk-english",
+      "poll_id": "europolis-2009",
+      "kind": "questionnaire",
+      "title": "Europolis 2009 UK-English arrival questionnaire",
+      "url": null,
+      "local_artifact_id": "europolis-arrival-uk-english",
+      "accessed": "2026-09-30",
+      "notes": "Exact original 18-page PDF. Cover identifies UK English Wave II; p.2 refers to June4 2009 election. Printed Q38-Q46 on pp.15-17 map explicitly to [2Q43]-[2Q51]. Confirms this English arrival version, not all language or departure versions; no respondent identity bridge."
     }
   ],
   "material_coverage": [
@@ -777,6 +787,21 @@
       "publication_status": "published",
       "notes": "All4384 uniqueid values occur in current survey.sav, but this earlier version assigns54 observed wave2/3 quiz answers to IDs4100000001/3/4 whose corresponding public waves are missing, and eight observed quiz answers differ for4100000007. Preserve source-version evidence; do not overwrite or join these responses into current canonical outputs without adjudicating the identity changes. Original mixed numeric/string fields retained. Postal-code field p7 omitted.",
       "relative_path": "source-materials/earlier-three-wave-survey-dictionary.json"
+    },
+    {
+      "artifact_id": "europolis-arrival-uk-english",
+      "poll_id": "europolis-2009",
+      "artifact_type": "questionnaire",
+      "title": "Europolis 2009 UK-English arrival questionnaire",
+      "location": "data/europolis-2009/questionnaires/arrival-uk-english.pdf",
+      "source_id": "europolis-arrival-uk-english",
+      "original_archive_path": "data/eu_2009/questionnaires/T2 UK-ENG.pdf",
+      "sha256": "100ced7070d8ca512819b51f1a9a75f9dd8b8308d8e5de20a7c5767a43b4be13",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Exact original 18-page PDF. Cover identifies UK English Wave II; p.2 refers to June4 2009 election. Printed Q38-Q46 on pp.15-17 map explicitly to [2Q43]-[2Q51]. Confirms this English arrival version, not all language or departure versions; no respondent identity bridge.",
+      "relative_path": "questionnaires/arrival-uk-english.pdf"
     }
   ],
   "document_previews": [

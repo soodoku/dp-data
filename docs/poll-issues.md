@@ -3644,7 +3644,15 @@ removed after this comparison; the canonical Tomorrow's Europe pair remains.
 Git retains the removed files.
 
 The misfiled form cannot validate Europolis answers or supply a person link.
-**Next check:** find the fielded Europolis questionnaire and original exports
+The recovered [UK-English arrival questionnaire](../data/europolis-2009/questionnaires/arrival-uk-english.pdf)
+identifies Wave II on its cover and the June 4, 2009 election on page 2.
+Its printed Q38–Q46 (PDF pages 15–17) explicitly map to source
+`2Q43`–`2Q51`, including complete answer options for immigration Q48 and
+wind-energy Q51. This is distinct from the misfiled 2007 departure form.
+It establishes one English arrival version; it does not verify every language
+or the departure form, or link anonymous deposited rows.
+
+**Next check:** locate the remaining fielded versions and original exports
 or scripts with persistent IDs. Preserve 997/998/999 as source missing reasons.
 Do not append deposited rows to attitudes using an arbitrary permutation.
 No paired person-level difference count is asserted here.
@@ -4932,8 +4940,9 @@ party-control answer.
 
 **Next check:** recheck all accepted text aliases against contemporaneous coding
 instructions, retaining raw text and rejecting unknown tokens. `postit` identifies
-people and `group_number` gives 16 groups. The published source is already merged
-`mifin.dta`; reproducing its earlier merge is a separate unresolved task.
+people and `group_number` gives 16 groups. The earlier merge is now checked by native identity (MI-04): its 310 selected
+IDs are exactly the recruiter/departure intersection. This verifies the cohort
+rule without inventing links for unmatched forms.
 
 ### MI-02: Nine shared items and the report's eleven items compare different waves
 
@@ -4995,6 +5004,53 @@ invalid-response rule; classify it `invalid_response`, with no trichotomy catego
 label. It appears twice in the phase table because the same source item belongs
 to two explicitly distinct placement batteries. Both item rows retain their
 identity and have missing correctness. No knowledge score, sample, or attitude response changes.
+
+
+### MI-04: Five arrival factual responses were incorrectly excluded from the public source
+
+The archived `data/Michigan/data/mifin.dta` contains character fields
+`t2q38`–`t2q42`. Their exclusion as contact or nonessential text was wrong:
+they are answers to the five factual questions in the
+[arrival questionnaire](../data/michigan-2009/questionnaires/arrival-questionnaire.doc).
+The public Parquet now retains all five unchanged, including empty strings,
+`n/a`, case and spelling. All 610 source rows and every previously public
+cell are unchanged. Nonempty counts are 262, 254, 279, 288 and 300;
+all are among the 310 selected participants. This corrects source preservation,
+not the maintained knowledge scores.
+
+The original `arrive.xls` contains 318 unique Participant IDs. Joining it by
+`postit` reproduces every one of the 1,550 merged arrival factual cells for
+the selected sample, treating original empty cells as merged empty strings.
+Recruiter `mi.sav` has 314 distinct nonmissing `postit` values; the Sunday
+workbook has 314 distinct IDs. Their intersection is exactly the current 310.
+Sunday IDs 208, 2003, 2014 and 5002 have no recruiter match; recruiter IDs
+300, 805, 1400 and 1401 have no Sunday match. Arrival has 309 of the 310;
+ID 5000 remains absent. No unmatched person is added to the analysis.
+
+The archived arrival DOC retains tracked edits and inherited Vermont template
+metadata. Its [clean-reading PDF](../data/michigan-2009/questionnaires/arrival-questionnaire.pdf)
+accepts edits in a temporary copy only; the original is unchanged. Imported
+automatic numbering differs from data field IDs, so use wording and PDF
+pages 11–12. The five questions ask which parties control Michigan's Senate
+and House, which state's unemployment resembles Michigan's, which condition
+extends Family Independence eligibility beyond 48 months, and the share of
+African American children in poverty. Authored keys are Republican, Democrat,
+Oregon (a), residence in a high-unemployment county (a), and about 40% (c).
+
+A full nine-item arrival battery is now recoverable, but its adoption remains
+pending. The maintained arrival battery still contains four placements.
+Two written answers require an explicit interpretation: ID 1103's Senate
+answer `house of rep` is explicitly credited by the arrival recode in
+`historical-cdd-scripts:legacy/poll_scripts/mi.R`, lines 78–84; ID 1108's House
+answer `dec` is credited by its remaining-token catch-all, lines 86–91.
+Neither is automatically a documented don't-know response. No independently
+stored numeric arrival recode settles them. With both credited, the nine-item
+arrival mean would be 41.630592%; without credit, 41.558442%. Both comparisons
+retain 308 scored people after the existing invalid placement at ID 501 and
+absent arrival ID 5000. The current four-placement mean is 59.253247%; adding
+facts changes the construct and 281 of those 308 scores. It does not correct
+or replace the telephone/departure nine-item comparison.
+
 
 ## Denmark Euro 2000 — denmark-euro-2000
 
@@ -8133,7 +8189,7 @@ can be genuine even where only some respondents have answers to it.
 
 | Poll | Actual selected source fields and timing evidence | Confidence and other retained phases |
 | --- | --- | --- |
-| Michigan 2009 | `data/michigan-2009/questionnaire-pre.pdf`, pp.1/7: telephone interview followed by invitation to the future November 13–15 event. Baseline `q14:q18`, `q4/q5/q7/q8`; departure `t3q38:t3q42`, `t3q10/t3q11/t3q13/t3q14`. | Direct pre-arrival. Arrival `t2q*` exists; only partial common knowledge coverage, described below. |
+| Michigan 2009 | `data/michigan-2009/questionnaire-pre.pdf`, pp.1/7: telephone interview followed by invitation to the future November 13–15 event. Baseline `q14:q18`, `q4/q5/q7/q8`; departure `t3q38:t3q42`, `t3q10/t3q11/t3q13/t3q14`. | Direct pre-arrival. Arrival `t2q*` exists; all nine common raw questions are now preserved (MI-04), while the maintained scored arrival battery remains partial. |
 | New Haven, March 2002 | `data/new-haven-2004/papers/disaggregating-deliberation-27s-effects-28lsero-29.pdf`, p.8: T1 initial telephone interview, T2 written questionnaire **after the first deliberative session**, T3 at weekend end. `R/source_new_haven.R` joins the authored `Pre/Mid/Post` workbook sheets; facts are `pre/mid/post_q35/q36/q37/q39:q43`. | Direct pre-arrival. Mid is `interim_1`, not arrival. The folder/historical label2004 does not change the documented2002 event date. |
 | NIC 1996 | `data/nic-1996/codebook.txt`, opening paragraphs: initial household interviews November 4, 1995–January 18, 1996; source T2 combines event-exit participants and contemporaneous telephone nonparticipants. `papers/nic-paper.pdf`, p. 19: source T3 about ten months later after the presidential election. `R/respondent_nic.R` reads suffixes1/2/3 for `WEDLOCK/AFDC/UNEMP/SPEND/TRADE/TROOPSA:TROOPSD/POLREP/POLDEM`. | Direct initial-interview baseline. SourceT2 is exit, not arrival; source T3 is follow-up. Historical `knowledge_midterm` exposes source T2 at canonical t2; its original selected endpoint is source T3/canonical t3. No separate arrival questionnaire is established. |
 | NIC2, 2003 | `data/shared/reports/foreign-policy-report.pdf`, p.2, visually checked because scanned: forty-minute telephone interview **before coming to Philadelphia**, repeated at the end of two days. `R/respondent_nic2.R` reads baseline `wrm3_b/c,aid3,wrm5,kno1_a/b,kno2_a/b,kno3_a/b,wrm1_b`, then the same stems prefixed`q`. | Direct pre-arrival. No separate arrival measurement identified in reviewed materials. |
@@ -8169,14 +8225,14 @@ identities and questionnaire-presence evidence.
 | Denmark 2000 | `data/denmark-euro-2000/arrival.sav`:363 unique`DELNR`, linked to baseline`delnr`;358 overlap the current departure IDs. Nine arrival fields`S4_1:S9_1,S11_7_1,S11_9_1,S11_11_1`. Paper`data/denmark-euro-2000/papers/deliberative-democracy-euro.pdf`, Table 9/PDF p. 19; DK-02 distinguishes the current359 departure records. | The original arrival file and dictionaries are now public; DK-05 records exact-byte preservation. The arrival scores now join by DELNR; 358 of the 359 existing phase participants
 have an arrival form, and DELNR 203 remains missing. Do not equate363 arrival IDs,359 departure IDs and358 overlap, or infer missing identities from the anonymous deposited battery. |
 | Vermont 2007 | `data/vermont-energy-2007/survey.sav`: all nine`Q030T2:Q038T2`, with146 respondents having at least one answer. Final-report PDF p. 12 explicitly identifies arrival. | Use the reviewed report-based keys, including VT-01's renewables decision, while retaining the instrument ambiguity; do not alter keys simply to expose the wave. |
-| Michigan 2009 | `data/michigan-2009/survey.parquet`: four common arrival placements`t2q10/t2q11/t2q13/t2q14`, plus arrival-only standard-of-living placements`t2q7/t2q8`. There are no arrival factual counterparts`t2q38:t2q42`. Final report PDF p. 13 marks the two added placements as arrival. | This is **partial** arrival coverage, not the complete current nine-item bank. The two added items have196/209 correct responses; dividing by310 reproduces report63.2%/67.4%. Report11-item baseline combines telephone facts/four placements with two arrival-only placements. Do not silently turn that mixed-time bank into a uniform baseline. |
+| Michigan 2009 | `data/michigan-2009/survey.parquet`: four common arrival placements`t2q10/t2q11/t2q13/t2q14`, plus arrival-only standard-of-living placements`t2q7/t2q8`. The five factual counterparts `t2q38:t2q42` were recovered and are now public (MI-04). Final report PDF p. 13 marks the two added placements as arrival. | The maintained scored comparison still has **partial** arrival coverage; the recovered five factual responses can support a separately reviewed full nine-item arrival score. The two added items have196/209 correct responses; dividing by310 reproduces report63.2%/67.4%. Report11-item baseline combines telephone facts/four placements with two arrival-only placements. Do not silently turn that mixed-time bank into a uniform baseline. |
 
 **Completed upstream implementation: arrival comparisons.** `R/analysis_arrivals.R`
 adds the five-question California, six-question Europolis, nine-question Denmark
 and nine-question Vermont arrival scores to their existing comparable batteries.
 Michigan receives a separate four-placement battery at telephone, arrival and
-exit; its absent arrival factual questions are not borrowed from telephone or
-scored as incorrect. Separate expanded batteries retain California's eight
+exit. Five factual arrival fields have now been recovered (MI-04), but their
+scoring extension is pending; no telephone answers substitute for arrival. Separate expanded batteries retain California's eight
 arrival/exit items, Europolis's nine, and Michigan's six placements. The latter
 two added Michigan placement questions never enter a telephone comparison.
 

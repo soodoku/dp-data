@@ -172,6 +172,26 @@
       "local_artifact_id": null,
       "accessed": "2026-09-24",
       "notes": "Official event overview; page publication timestamp is not assumed to equal event date."
+    },
+    {
+      "reference_id": "mi-arrival-questionnaire",
+      "poll_id": "michigan-2009",
+      "kind": "questionnaire",
+      "title": "Michigan arrival questionnaire: archived edited version",
+      "url": null,
+      "local_artifact_id": "mi-arrival-questionnaire",
+      "accessed": "2026-09-30",
+      "notes": "Exact original DOC; contains tracked revisions and inherited Vermont template metadata. Questions corresponding to t2q38:t2q42 match the original arrival response workbook. Not independently established as the fielded final copy."
+    },
+    {
+      "reference_id": "mi-arrival-questionnaire-pdf",
+      "poll_id": "michigan-2009",
+      "kind": "questionnaire",
+      "title": "Michigan arrival questionnaire: clean-reading PDF",
+      "url": null,
+      "local_artifact_id": "mi-arrival-questionnaire-pdf",
+      "accessed": "2026-09-30",
+      "notes": "PDF companion generated from a temporary copy with tracked changes accepted; original DOC unchanged. LibreOffice automatic question numbers differ from source data IDs: identify questions by wording. Factual battery on PDF pp.11-12."
     }
   ],
   "material_coverage": [
@@ -235,7 +255,7 @@
       "location": "data/michigan-2009/survey.parquet",
       "source_id": "cdd-michigan-2009-survey",
       "original_archive_path": "data/Michigan/data/mifin.dta",
-      "sha256": "d04352c82dc963e9ba809be6b750390d1cb0886f0a91d0d04c9b4ef45ef7343e",
+      "sha256": "766cc0595d0a6295221ac8de09a79a71c6ecd5f97b9509684ff9417543ca291e",
       "rights_status": "owner-approved",
       "disclosure_status": "approved-redacted",
       "publication_status": "published",
@@ -250,7 +270,7 @@
       "location": "data/michigan-2009/variables.csv",
       "source_id": "cdd-michigan-2009-survey-variables",
       "original_archive_path": "data/Michigan/data/mifin.dta",
-      "sha256": "dd93853f06be6aaffbc3f63e8cc4bd074edaf8dffeb916292fb82c9523f64712",
+      "sha256": "d740a2411c64e781919a7aeeb73af098c37e23d29281d651092320d113b66826",
       "rights_status": "owner-approved",
       "disclosure_status": "approved-public",
       "publication_status": "published",
@@ -361,6 +381,36 @@
       "publication_status": "published",
       "notes": "Generated from data/michigan-2009/questionnaire-pre.doc. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
       "relative_path": "questionnaire-pre.pdf"
+    },
+    {
+      "artifact_id": "mi-arrival-questionnaire",
+      "poll_id": "michigan-2009",
+      "artifact_type": "questionnaire",
+      "title": "Michigan arrival questionnaire: archived edited version",
+      "location": "data/michigan-2009/questionnaires/arrival-questionnaire.doc",
+      "source_id": "mi-arrival-questionnaire",
+      "original_archive_path": "data/Michigan/questionnaires/Michigan Arrival SAQ_final.doc",
+      "sha256": "8622c634c713bd1ef7e187534cd011472d976bd83d856e1bf9f1bfd30de98017",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Exact original DOC; contains tracked revisions and inherited Vermont template metadata. Questions corresponding to t2q38:t2q42 match the original arrival response workbook. Not independently established as the fielded final copy.",
+      "relative_path": "questionnaires/arrival-questionnaire.doc"
+    },
+    {
+      "artifact_id": "mi-arrival-questionnaire-pdf",
+      "poll_id": "michigan-2009",
+      "artifact_type": "questionnaire",
+      "title": "Michigan arrival questionnaire: clean-reading PDF",
+      "location": "data/michigan-2009/questionnaires/arrival-questionnaire.pdf",
+      "source_id": "mi-arrival-questionnaire-pdf",
+      "original_archive_path": "data/Michigan/questionnaires/Michigan Arrival SAQ_final.doc",
+      "sha256": "876d8c6fbe84a5269ce8683fed1e2bbcfe6db580bd858eb402fc0175028deb81",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "PDF companion generated from a temporary copy with tracked changes accepted; original DOC unchanged. LibreOffice automatic question numbers differ from source data IDs: identify questions by wording. Factual battery on PDF pp.11-12.",
+      "relative_path": "questionnaires/arrival-questionnaire.pdf"
     }
   ],
   "document_previews": [
@@ -395,6 +445,22 @@
       "distinct_word_coverage": "0.9957356076759062",
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+    },
+    {
+      "source_path": "data/michigan-2009/questionnaires/arrival-questionnaire.doc",
+      "preview_path": "data/michigan-2009/questionnaires/arrival-questionnaire.pdf",
+      "source_sha256": "8622c634c713bd1ef7e187534cd011472d976bd83d856e1bf9f1bfd30de98017",
+      "preview_sha256": "876d8c6fbe84a5269ce8683fed1e2bbcfe6db580bd858eb402fc0175028deb81",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "13",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-representative-pages",
+      "visual_pages": "10;11",
+      "source_token_coverage": null,
+      "distinct_word_coverage": null,
+      "qa_notes": "Tracked revisions accepted in temporary DOCX only for clean-reading PDF. Original DOC exact bytes retained. Verified factual questions and a-e answers unchanged. Imported automatic numbering differs from data field IDs; use wording and page references. Source retains inherited Vermont title metadata.",
+      "rebuild_command": "LibreOffice DOC-to-DOCX; standard accept_changes.py on temporary copy; LibreOffice PDF export"
     }
   ]
 }
