@@ -314,11 +314,11 @@
       "location": "data/nic-1996/survey.parquet",
       "source_id": "cdd-nic-1996-survey",
       "original_archive_path": "data/nic_1/Data_revised/nic123_r.sav",
-      "sha256": "36b488dde92fdce32992f9ddd107e3bdb39681d435438df4cfd7914acc6f47a4",
+      "sha256": "a116fedee0eb07266bd685dbf73e1e13d2bb39edd7db9a14be7c6ea7e265ed51",
       "rights_status": "owner-approved",
       "disclosure_status": "approved-redacted",
       "publication_status": "published",
-      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred Seventeen questionnaire response fields across five polls restored from original sources under user approval to retain verbatim answers; contact and administrative exclusions remain explicit. No coding or imputation applied.",
       "relative_path": "survey.parquet"
     },
     {
@@ -329,7 +329,7 @@
       "location": "data/nic-1996/variables.csv",
       "source_id": "cdd-nic-1996-survey-variables",
       "original_archive_path": "data/nic_1/Data_revised/nic123_r.sav",
-      "sha256": "8740e78c366912c918727a4e210338d9ee817f65badc35dcff31f26c40cc0935",
+      "sha256": "4892ed3c7094442a00115fe2d7213344699d2f9bccd88e9e41d22f0a2fe9914c",
       "rights_status": "owner-approved",
       "disclosure_status": "approved-public",
       "publication_status": "published",

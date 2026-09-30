@@ -239,6 +239,40 @@ source_attitude_identity <- function(raw, specification, participants) {
   result
 }
 
+source_attitude_presence <- function(responses) {
+  keys <- c("poll_id", "source_id", "source_row", "source_wave")
+  stopifnot(
+    !anyNA(responses[keys]),
+    all(is.finite(responses$raw_value[responses$response_status == "answered"]))
+  )
+  forms <- responses |>
+    dplyr::summarise(
+      observed_answer = any(
+        response_status %in% c("answered", "dk", "refused") &
+          !is.na(raw_value)
+      ),
+      explicitly_absent = any(wave_observed %in% FALSE),
+      source_id_count = dplyr::n_distinct(source_unit_id),
+      .by = dplyr::all_of(keys)
+    )
+  if (any(forms$source_id_count != 1L)) {
+    stop("Source questionnaire has inconsistent native respondent identifiers.")
+  }
+  if (any(forms$observed_answer & forms$explicitly_absent)) {
+    stop("Source questionnaire answers conflict with explicit absence.")
+  }
+  index <- match(
+    do.call(paste, responses[keys]), do.call(paste, forms[keys])
+  )
+  stopifnot(!anyNA(index))
+  fill <- is.na(responses$wave_observed) & forms$observed_answer[index]
+  responses$wave_observed[fill] <- TRUE
+  blank <- fill & is.na(responses$raw_value) &
+    responses$response_status == "source_missing"
+  responses$response_status[blank] <- "blank"
+  responses
+}
+
 analysis_source_attitudes <- function(participants = NULL, scores = NULL) {
   sources <- read_metadata("source_files")
   occasions <- read_metadata("analysis_survey_waves")
@@ -395,7 +429,9 @@ analysis_source_attitudes <- function(participants = NULL, scores = NULL) {
   }) |>
     purrr::list_flatten()
   definitions <- purrr::map(built, "definitions") |> purrr::list_rbind()
-  responses <- purrr::map(built, "responses") |> purrr::list_rbind()
+  responses <- purrr::map(built, "responses") |>
+    purrr::list_rbind() |>
+    source_attitude_presence()
   stopifnot(
     !anyDuplicated(definitions[c("source_id", "source_column", "source_wave")]),
     !anyDuplicated(responses[c("source_id", "source_row", "source_column")]),

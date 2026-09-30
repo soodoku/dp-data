@@ -88,7 +88,7 @@ test_that("presence fields retain the reviewed wave semantics", {
   expect_equal(lengths(te$fields), c(142L, 185L))
   nic <- questionnaire_form_contract("nic-1996")
   expect_equal(nic$original_wave, c("T1", "T2"))
-  expect_equal(lengths(nic$fields), c(142L, 99L))
+  expect_equal(lengths(nic$fields), c(145L, 99L))
   expect_false("PARTYST1" %in% nic$fields[[1L]])
   health <- questionnaire_form_contract("uk-health-1998")
   expect_equal(length(health$fields[[1L]]), 75L)

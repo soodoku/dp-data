@@ -342,11 +342,11 @@ t2q35c,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q35d,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q36,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q37,double,numeric,float64,,%8.0g,,,TRUE,Retained
-t2q38,character,character,,,%26s,,,FALSE,Excluded; see source_field_exclusions
-t2q39,character,character,,,%20s,,,FALSE,Excluded; see source_field_exclusions
-t2q40,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
-t2q41,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
-t2q42,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t2q38,character,character,string,,%26s,,,TRUE,Retained
+t2q39,character,character,string,,%20s,,,TRUE,Retained
+t2q40,character,character,string,,%1s,,,TRUE,Retained
+t2q41,character,character,string,,%1s,,,TRUE,Retained
+t2q42,character,character,string,,%1s,,,TRUE,Retained
 t2q43,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q44,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q45,double,numeric,float64,,%8.0g,,,TRUE,Retained

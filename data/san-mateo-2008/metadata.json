@@ -275,11 +275,11 @@
       "location": "data/san-mateo-2008/survey.parquet",
       "source_id": "cdd-san-mateo-2008-survey",
       "original_archive_path": "data/san_mateo/smdp 3-18-08.dta",
-      "sha256": "e9c3245501b288a468a0adffe40aca914544a86f63d478a18c15b8afe828fd4c",
+      "sha256": "bc3cf4ca7bf2282cc986b15a0224a4d4e8c343e82c5e8174c924a73029166783",
       "rights_status": "owner-approved",
       "disclosure_status": "approved-redacted",
       "publication_status": "published",
-      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "notes": "Original source hash retained;18 scientific response/derived/date/header fields restored verbatim; only six contact or callback fields excluded; no score or sample changes",
       "relative_path": "survey.parquet"
     },
     {
@@ -290,7 +290,7 @@
       "location": "data/san-mateo-2008/variables.csv",
       "source_id": "cdd-san-mateo-2008-survey-variables",
       "original_archive_path": "data/san_mateo/smdp 3-18-08.dta",
-      "sha256": "a0966dbc5b539322b9e52eb73066d8d979d7907440ad3fcef69215bf3cec597a",
+      "sha256": "b8b3bb5589fc15340d5931cbff65a22e3af33e91fd32d34c7064457c062a4156",
       "rights_status": "owner-approved",
       "disclosure_status": "approved-public",
       "publication_status": "published",

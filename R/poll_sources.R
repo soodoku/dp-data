@@ -208,7 +208,11 @@ import_reviewed_surveys <- function() {
       copy_archive_source(
         record$archive_path, record$public_path, record$source_sha256
       )
-    } else if (record$transformation == "exclude-verbatim") {
+    } else if (record$transformation %in%
+                 c("exclude-verbatim", "lossless-parquet")) {
+      if (record$transformation == "lossless-parquet") {
+        stopifnot(length(excluded) == 0L)
+      }
       public <- public_survey_extract(data, excluded)
       arrow::write_parquet(
         public, project_path(record$public_path),
@@ -222,7 +226,8 @@ import_reviewed_surveys <- function() {
     readr::write_csv(
       survey_dictionary(
         data, excluded,
-        parquet = record$transformation == "exclude-verbatim"
+        parquet = record$transformation %in%
+          c("exclude-verbatim", "lossless-parquet")
       ),
       file.path(directory, paste0(dictionary_prefix(record), "variables.csv")),
       na = ""
@@ -302,7 +307,8 @@ read_public_survey <- function(record) {
     haven::read_dta(path) |>
       dplyr::mutate(source_row = dplyr::row_number(), .before = 1)
   } else if (record$transformation %in%
-               c("exclude-verbatim", "join-workbook", "join-zeguo")) {
+               c("exclude-verbatim", "lossless-parquet",
+                 "join-workbook", "join-zeguo")) {
     arrow::read_parquet(path)
   } else {
     stop("No reviewed survey reader for ", record$poll_id)

@@ -370,3 +370,48 @@ test_that("Climate code 98 reproduces the item-specific report categories", {
   }, integer(1))
   expect_identical(unname(counts), c(92L, 134L, 13L, 16L))
 })
+
+
+test_that("New Haven interim labels distinguish DK from invalid zeros", {
+  source(project_path("R", "source_new_haven.R"))
+  items <- arrow::read_parquet(project_path(
+    "output", "analysis", "analysis_phase_item_responses.parquet"
+  )) |>
+    dplyr::filter(poll_id == "new-haven-2004", wave == "interim_1")
+  enriched <- enrich_knowledge_responses(items)
+  result <- standardize_knowledge_scores(enriched)$items
+  invalid <- result |> dplyr::filter(raw_value == 0)
+  expect_equal(nrow(invalid), 5L)
+  expect_setequal(invalid$respondent_id, c("3133", "3255", "3269"))
+  expect_true(all(invalid$wave_observed))
+  expect_true(all(is.na(invalid$correct)))
+  expect_true(all(invalid$response_reason == "invalid_response"))
+  expect_true(all(is.na(invalid$knowledge_response)))
+  dk <- result |> dplyr::filter(knowledge_response == "dk")
+  expect_equal(nrow(dk), 174L)
+  expect_true(all(dk$correct == 0L))
+  expect_true(all(dk$source_response_label == "Don't know"))
+  expect_false(any(dk$source_column == "mid_q36"))
+  expect_identical(result$raw_value, items$raw_value)
+  expect_identical(result$respondent_id, items$respondent_id)
+  expect_identical(result$wave_observed, items$wave_observed)
+
+  survey <- read_new_haven_workbook(project_path(
+    "data", "new-haven-2004", "source-materials", "survey-waves.xlsx"
+  ))
+  source <- dplyr::filter(survey, assigned %in% c(3133, 3255, 3269))
+  fields <- grep("^mid_q", names(source), value = TRUE)
+  expect_equal(length(fields), 55L)
+  expect_equal(rowSums(as.matrix(source[fields]) != 0), c(50, 54, 54))
+  expect_equal(result$raw_value, purrr::map2_dbl(
+    result$respondent_id, result$source_column,
+    \(id, field) survey[[field]][match(as.numeric(id), survey$assigned)]
+  ))
+  old_totals <- items |>
+    dplyr::group_by(respondent_id) |>
+    dplyr::summarise(score = sum(correct, na.rm = TRUE) / 8, .groups = "drop")
+  new_totals <- result |>
+    dplyr::group_by(respondent_id) |>
+    dplyr::summarise(score = sum(correct, na.rm = TRUE) / 8, .groups = "drop")
+  expect_identical(old_totals, new_totals)
+})

@@ -206,11 +206,11 @@
       "location": "data/btp-online-primaries-2004/survey.parquet",
       "source_id": "cdd-btp-online-primaries-2004-survey",
       "original_archive_path": "data/BTP/2004OnlinePrimaries/data/2004 online primaries_hlm.dta",
-      "sha256": "06c3022d9f92aed8a3a67b3b46c8e35955d50ccfcafb23536390bd1ba3f0df0e",
+      "sha256": "6c0ca5cdba56341747efd26585c4ed1d49bdff2cc7867861a4b848d031f611c3",
       "rights_status": "owner-approved",
       "disclosure_status": "approved-redacted",
       "publication_status": "published",
-      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred Seventeen questionnaire response fields across five polls restored from original sources under user approval to retain verbatim answers; contact and administrative exclusions remain explicit. No coding or imputation applied.",
       "relative_path": "survey.parquet"
     },
     {
@@ -221,7 +221,7 @@
       "location": "data/btp-online-primaries-2004/variables.csv",
       "source_id": "cdd-btp-online-primaries-2004-survey-variables",
       "original_archive_path": "data/BTP/2004OnlinePrimaries/data/2004 online primaries_hlm.dta",
-      "sha256": "c8ca35bfa8866ad66d1a20bdf5b9c48c91b3e69d2d207b851a78dcbda0733773",
+      "sha256": "858ca5efc81b6a42b2dff7507470ec287375bb711f4999ed9bd8f508ea8cc156",
       "rights_status": "owner-approved",
       "disclosure_status": "approved-public",
       "publication_status": "published",

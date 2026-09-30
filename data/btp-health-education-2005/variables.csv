@@ -139,8 +139,8 @@ q40post,double,haven_labelled|vctrs_vctr|double,float64,q40post:  interest in us
 q41post,double,haven_labelled|vctrs_vctr|double,float64,q41post: full-time employment,%8.0g,,,TRUE,Retained
 q42post,double,haven_labelled|vctrs_vctr|double,float64,q42post: status of those not employed full-time,%8.0g,,,TRUE,Retained
 q43post,double,haven_labelled|vctrs_vctr|double,float64,q43post: classification of respondent employer,%8.0g,,,TRUE,Retained
-q44post,character,character,,q44post: description of occupation,%64s,,,FALSE,Excluded; see source_field_exclusions
-q45post,character,character,,q45post: description of job duties,%64s,,,FALSE,Excluded; see source_field_exclusions
+q44post,character,character,string,q44post: description of occupation,%64s,,,TRUE,Retained
+q45post,character,character,string,q45post: description of job duties,%64s,,,TRUE,Retained
 z1apost,double,haven_labelled|vctrs_vctr|double,float64,z1apost:  value of the overall experience,%8.0g,,,TRUE,Retained
 z1bpost,double,haven_labelled|vctrs_vctr|double,float64,z1bpost:  value of the briefing document,%8.0g,,,TRUE,Retained
 z1cpost,double,haven_labelled|vctrs_vctr|double,float64,z1cpost:  value of the online discussions,%8.0g,,,TRUE,Retained

@@ -1,6 +1,41 @@
 # Changelog
 
-## Unreleased
+## 0.4.3
+
+- Establish observed questionnaire presence from recorded source answers:
+  3,859 Tanzania baseline/follow-up records and 3,284 Denmark/Vermont source
+  forms. Preserve missing attitude values for DK/refusals, unknown empty
+  forms, literal interview timing, attendance, and all numerical scores.
+
+- Preserve the Climate publisher supplement and its PDF companion, including
+  sample, weighting and attitude-comparison benchmarks.
+
+- Treat empty or whitespace-only source text as missing consistently across
+  polls, preserving literal text and all scores. Remove the redundant BTP
+  occupation sidecars after retaining their values, labels and provenance.
+
+- Restore all 80 Northern Ireland questionnaire argument-text fields and retain
+  the exact original Stata source. Existing public values and all analytical
+  outputs remain unchanged; no vault is needed to rebuild this survey.
+- Preserve 18 San Mateo scientific source fields, including education text,
+  authored attitude bins, interview dates and uninterpreted headers. Keep
+  contact/callback fields excluded and all scores and attendance unchanged.
+
+- Restore seventeen unchanged questionnaire write-in fields in five public poll
+  surveys; keep contact and administrative exclusions separate from answers.
+- Expand Climate’s typed baseline/exit attitudes from 72 to all 93 ratings
+  verified against the report. Preserve 370,188 additional response rows with
+  their original directions and missingness; existing values and samples are unchanged.
+- Classify five New Haven interim knowledge zeros as invalid/missing and
+  identify 174 documented DK answers, preserving all raw answers and total scores.
+- Reproduce fourteen Health/Education report percentages from the preserved
+  weighted archive; retain the approved 454-person cohort and record the
+  remaining source-version and sample differences.
+- Restore five Michigan arrival factual-response fields mistakenly excluded as
+  nonessential text; preserve the archived arrival questionnaire and a PDF
+  companion, without changing scores or sample membership.
+- Preserve the authentic 2009 UK-English Europolis arrival questionnaire,
+  separately from the previously rejected 2007 departure form.
 
 - Preserve Denmark's July 2003 dissertation draft and separate technical
   appendix in its poll folder, with their distinct source versions recorded.

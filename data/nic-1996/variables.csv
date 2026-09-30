@@ -44,7 +44,7 @@ RELATIV1,double,numeric,float64,NUMBER OF OTHER RELATIVES IN HOME T1 (Q2,F9.2,,,
 NONRELT1,double,numeric,float64,NUMBER OF NOT-RELATIVES IN HOME T1 (Q24,F9.2,,,TRUE,Retained
 EDLEVEL1,double,numeric,float64,HIGHEST LEVEL OF EDUCATION T1 (Q25 IAQ),F9.2,,,TRUE,Retained
 EMPLOYD1,double,numeric,float64,EMPLOYMENT STATUS T1 (Q26 IAQ),F9.2,,,TRUE,Retained
-OCCUPAT1,character,character,,OCCUPATION T1 (Q27),A20,,,FALSE,Excluded; see source_field_exclusions
+OCCUPAT1,character,character,string,OCCUPATION T1 (Q27),A20,,,TRUE,Retained
 JOBTYPE1,double,numeric,float64,TYPE OF JOB HELD T1 (Q28 IAQ),F9.2,,,TRUE,Retained
 RELIGN1,double,numeric,float64,RELIGIOUS PREFERENCE T1 (Q29 IAQ),F9.2,,,TRUE,Retained
 FIRSTRL1,double,numeric,float64,RELIGION RAISED IN T1 (Q30 IAQ),F9.2,,,TRUE,Retained
@@ -54,7 +54,7 @@ BIBLE1,double,numeric,float64,INTERPRETATION OF BIBLE T1 (Q33 IAQ),F9.2,,,TRUE,R
 RELRITE1,double,numeric,float64,MEMBERSHIP IN RELIGIOUS RIGHT T1 (Q34 IA,F9.2,,,TRUE,Retained
 HISPANI1,double,numeric,float64,IS R HISPANIC OR LATINO T1 (Q35 IAQ),F9.2,,,TRUE,Retained
 HISPTYP1,double,numeric,float64,SPECIFIC TYPE OF HISPANIC T1 (Q35A IAQ),F9.2,,,TRUE,Retained
-HSTPOTH,character,character,,OTHER SPECIFIED 81A.1 T1 (Q35A IAQ),A20,,,FALSE,Excluded; see source_field_exclusions
+HSTPOTH,character,character,string,OTHER SPECIFIED 81A.1 T1 (Q35A IAQ),A20,,,TRUE,Retained
 RACE1,double,numeric,float64,RESPONDENTS RACE T1 (Q36 IAQ),F9.2,,,TRUE,Retained
 HISP811,double,numeric,float64,IS R HISPANIC IN Q81 T1 (Q37 IAQ),F9.2,,,TRUE,Retained
 BLACK821,double,numeric,float64,IS R BLACK/AFRICAN AMERICAN IN Q82 T1 (Q,F9.2,,,TRUE,Retained
@@ -63,7 +63,7 @@ INCOME1,double,numeric,float64,"TOTAL FAMILY INCOME, ALL SOURCES T1 (Q40",F9.2,,
 FINANCE1,double,numeric,float64,FINANCES INCREASED OR DECREASED T1 (Q41,F9.2,,,TRUE,Retained
 IAQDATE1,double,numeric,float64,DATE OF IAQ COMPLETION T1 (Q42 IAQ),F9.2,,,TRUE,Retained
 SAQPRES1,double,numeric,float64,ANYONE PRESENT DURING SAQ T1 (Q43 IAQ),F9.2,,,TRUE,Retained
-SAQOTH,character,character,,OTHER SPECIFIED 90.1 T1 (Q44 IAQ),A20,,,FALSE,Excluded; see source_field_exclusions
+SAQOTH,character,character,string,OTHER SPECIFIED 90.1 T1 (Q44 IAQ),A20,,,TRUE,Retained
 GOVSAY1,double,numeric,float64,I HAVE NO SAY IN GOVERNMENT T1 (Q1A SAQ),F9.2,,,TRUE,Retained
 OFFCARE1,double,numeric,float64,OFFICIAL CARE ABOUT WHAT I THINK T1 (Q1B,F9.2,,,TRUE,Retained
 POLCOMP1,double,numeric,float64,POLITICS IS TOO COMPLICATED T1 (Q1C SAQ),F9.2,,,TRUE,Retained

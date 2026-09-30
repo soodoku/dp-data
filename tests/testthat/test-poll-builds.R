@@ -113,23 +113,73 @@ test_that("responses preserve missing codes and scores declare filling", {
   expect_equal(actual, expected, ignore_attr = TRUE)
 })
 
-test_that("the Northern Ireland public extract excludes all named verbatims", {
+test_that("Northern Ireland retains original questionnaire responses", {
   survey <- read_poll_survey("northern-ireland-2007")
+  record <- read_metadata("survey_sources") |>
+    dplyr::filter(poll_id == "northern-ireland-2007")
   excluded <- read_metadata("source_field_exclusions") |>
-    dplyr::filter(.data$poll_id == "northern-ireland-2007") |>
-    dplyr::pull(.data$source_column)
-  variables <- readr::read_csv(
-    project_path("data", "northern-ireland-2007", "variables.csv"),
-    show_col_types = FALSE
+    dplyr::filter(poll_id == "northern-ireland-2007")
+  original_path <- project_path(
+    "data", "northern-ireland-2007", "source-materials", "survey-original.dta"
   )
-  expect_equal(dim(survey), c(868L, 449L))
+  original <- haven::read_dta(original_path)
+  expect_identical(digest::digest(file = original_path, algo = "sha256"),
+    "305c8646632cfc36ca55177771a89aa2aa38149f5ab394ec14428bf9ffa7fffa"
+  )
+  expect_identical(record$transformation, "lossless-parquet")
+  expect_equal(nrow(excluded), 0L)
+  expect_equal(dim(survey), c(868L, 529L))
   expect_equal(survey$source_row, seq_len(868L))
   expect_s3_class(survey$intdate, "Date")
-  expect_false(any(purrr::map_lgl(survey, is.character)))
-  expect_length(intersect(excluded, names(survey)), 0L)
+  strings <- names(original)[vapply(original, is.character, logical(1))]
+  expect_length(strings, 80L)
+  expect_true(all(grepl("^t[23]q(18|19|20|21)[ab][1-5]$", strings)))
+  for (field in names(original)) {
+    expected <- original[[field]]
+    if (!is.character(expected) && !inherits(expected, "Date")) {
+      expected <- as.numeric(expected)
+    }
+    expect_equal(survey[[field]], expected, ignore_attr = TRUE)
+  }
+  variables <- readr::read_csv(project_path(
+    "data", "northern-ireland-2007", "variables.csv"
+  ), show_col_types = FALSE)
   expect_equal(nrow(variables), 528L)
-  expect_equal(sum(!variables$public), 80L)
-  expect_setequal(variables$source_column[variables$public], names(survey)[-1])
+  expect_true(all(variables$public))
+  expect_setequal(variables$source_column, names(survey)[-1])
+  expect_true(all(variables$parquet_type[
+    variables$source_column %in% strings
+  ] == "string"))
+  for (wave in c("t2", "t3")) {
+    fields <- strings[startsWith(strings, wave)]
+    answers <- vapply(survey[fields], function(value) {
+      !is.na(value) & nzchar(trimws(value))
+    }, logical(nrow(survey)))
+    has_text <- rowSums(answers) > 0L
+    has_quiz <- rowSums(!is.na(survey[paste0(wave, "q", 11:17)])) > 0L
+    expect_equal(sum(answers), if (wave == "t2") 1340L else 2083L)
+    expect_equal(sum(has_text), if (wave == "t2") 110L else 231L)
+    expect_false(any(has_text & !has_quiz))
+  }
+})
+
+test_that("lossless survey imports reject an excluded field", {
+  record <- read_metadata("survey_sources") |>
+    dplyr::filter(poll_id == "northern-ireland-2007")
+  importer <- import_reviewed_surveys
+  context <- new.env(parent = environment(importer))
+  context$read_metadata <- function(name) {
+    switch(name,
+      survey_sources = record,
+      survey_components = record[0, ],
+      source_field_exclusions = tibble::tibble(
+        poll_id = "northern-ireland-2007", source_column = "t2q18a1"
+      ),
+      stop("Unexpected registry: ", name)
+    )
+  }
+  environment(importer) <- context
+  expect_error(importer(), "length\\(excluded\\) == 0L")
 })
 
 test_that("Parquet exports preserve declared types and values", {

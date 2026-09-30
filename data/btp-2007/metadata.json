@@ -280,11 +280,11 @@
       "location": "data/btp-2007/survey.parquet",
       "source_id": "cdd-btp-2007-survey",
       "original_archive_path": "data/BTP/2007/data/final.sav",
-      "sha256": "44fd7d92afaf8a52696c32bf12a3af7dd17f72ed2023a48b09432bb6f97f8b14",
+      "sha256": "d142af6221696df4df589ef70df4100fae9832da523f386796dadd0201b64ba3",
       "rights_status": "owner-approved",
       "disclosure_status": "approved-redacted",
       "publication_status": "published",
-      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred Seventeen questionnaire response fields across five polls restored from original sources under user approval to retain verbatim answers; contact and administrative exclusions remain explicit. No coding or imputation applied.",
       "relative_path": "survey.parquet"
     },
     {
@@ -295,7 +295,7 @@
       "location": "data/btp-2007/variables.csv",
       "source_id": "cdd-btp-2007-survey-variables",
       "original_archive_path": "data/BTP/2007/data/final.sav",
-      "sha256": "d15f3ce95d94968d4945a067ab37ed7046d8c543f728e5f3d61bd2db945bba85",
+      "sha256": "618949ee1b06e136095cd5c3ba9a6405e473a98ad91f6446b3e4e4d9ef0d374a",
       "rights_status": "owner-approved",
       "disclosure_status": "approved-public",
       "publication_status": "published",
