@@ -1200,6 +1200,8 @@ are documented sample boundaries, not silently repaired here.
 
 ## UK–EU 1995 — uk-eu-1995
 
+<a id="ukeu-01"></a>
+
 **UKEU-01 — preserve sample and unknown-group distinctions.** The survey contains
 238 attendees; 14 have all five post knowledge items coded -1, inapplicable.
 The current build preserves the historical 224-person knowledge selection.
@@ -1214,6 +1216,8 @@ membership interpretation have not been re-estimated here.
 all 238 source attendees in a broader respondent table, and retain the four
 missing group assignments. Review questionnaire-specific negative and refusal
 codes separately by wave; do not adopt one cross-poll missing-code list.
+
+<a id="ukeu-02"></a>
 
 **UKEU-02 — baseline nonanswers compressed two attitude scales (approved
 and implemented).** The 900-row `survey.sav` contains `commies1` codes 1–5 plus
@@ -1298,6 +1302,8 @@ Those separated responses cannot be recovered; the approved correction preserves
 that merged midpoint. Other ethnicity remains unknown under UKEU-05. No
 attendance, membership, knowledge score or historical sample rule changes.
 
+<a id="ukeu-03"></a>
+
 **UKEU-03 — exclude post-wave “can't choose” and restore the substantive
 scale.** **Status: approved by the user on 2026-09-25 and adopted.** The
 [codebook](../data/uk-eu-1995/codebook.txt) and retained
@@ -1335,6 +1341,8 @@ the actual SAQ2 form was not found; the codebook prints question wording,
 answer labels and frequencies. Preserve that source-material gap for later
 verification without reintroducing code 6 as a substantive answer.
 
+<a id="ukeu-04"></a>
+
 **UKEU-04 — treat inapplicable post EU-scope responses as missing.**
 **Status: approved by the user on 2026-09-25 and adopted.** The
 [codebook](../data/uk-eu-1995/codebook.txt) and retained
@@ -1364,6 +1372,8 @@ change, all for the EU-scope item. These are current-reader sensitivities,
 not claims about the original paper's estimates. A standalone SAQ2 scan
 remains unavailable; the source codebook prints question wording, labels and
 frequencies for both items.
+
+<a id="ukeu-05"></a>
 
 **UKEU-05 — preserve unknown minority status for “Other.”** The codebook's
 B14 IAQ asks, “In which of these groups do you consider you belong?” It labels
@@ -1440,6 +1450,8 @@ people concern the 224-person knowledge subset, not all 238 attitude records.
 
 ## UK Monarchy 1996 — uk-monarchy-1996
 
+<a id="ukm-01"></a>
+
 **UKM-01 — correct the post-wave Commonwealth field.** **Status: approved
 by the user on 2026-09-25 and adopted for the historical nine-item aggregate.**
 The archived `uk_monarchy.R` and deposited aggregate reuse baseline `Q5C` in
@@ -1472,6 +1484,8 @@ aggregate; the event-level fraction-learning estimate moves from 0.763566
 to 0.736434. These are sensitivity results from the current downstream
 readers, not claims about the original papers' estimates.
 
+<a id="ukm-02"></a>
+
 **UKM-02 — source-scoped identifiers.** The 258 attendees in groups 2–16 have
 `source-row-...` identifiers because no source column uniquely identifies the
 full file. They are not validated person keys across other files. The archived
@@ -1485,6 +1499,8 @@ correction replacing baseline Q5C reuse with departure R5C. The existing
 eight-item knowledge export remains unchanged. Any further battery change
 requires assessing its intended content against the instrument.
 See the [existing audit](monarchy-election-utilities.md).
+
+<a id="ukm-03"></a>
 
 **UKM-03 — attitude construction and numeric precision.** The archived
 `British Monarchy Indices_final draft.doc` identifies the four composites and
@@ -1500,6 +1516,8 @@ command that produced the stored float representation remains unverified.
 Before changing direction, rounding or nonresponse handling, reconcile the
 questionnaire's referendum ordering with the index memo and source labels.
 
+<a id="ukm-04"></a>
+
 **UKM-04 — expanded-source recodes are not automatically valid demographics.**
 The archived age recode specified midpoints only for AGEB 2–9 and left codes
 10 and 11 unchanged. Three and five nonattendees respectively retained those
@@ -1508,6 +1526,8 @@ B12A code 6 passed through the education recoder unless the qualification
 override applied. No attendee had these three source-code exceptions. The
 source-label review and approved corrections are recorded in UKM-06 below;
 these exceptions no longer describe the maintained respondent output.
+
+<a id="ukm-05"></a>
 
 **UKM-05 — two catalog titles describe the wrong constructs (corrected).**
 The archived cross-poll files call `ukmonarchy.t1mpop` “Powers of the Monarchy”
@@ -1526,6 +1546,8 @@ The generated catalog now calls `t1pwrm` “Powers of the Monarchy” and `t1mpo
 “Royal Family and the Public.” No field link, response, index value, sample
 or aggregate number changes.
 
+<a id="ukm-07"></a>
+
 **UKM-07 — all four main attitude indices independently verified.** The
 2026-09-28 review reconstructs both waves from the raw survey, response labels,
 codebook and original index memo: support for monarchy (Q/R1, 11, 9, 14), royal
@@ -1542,6 +1564,8 @@ Per-wave counts and paired comparisons are retained in
 `audit/corrections/uk-monarchy-1996/attitude_wave_review.csv` and
 `attitude_paired_review.csv`. These checks support the existing available-item
 estimand; they do not establish that missing components are random.
+
+<a id="ukm-06"></a>
 
 **UKM-06 — nonresponse codes in expanded demographics (approved correction).**
 The retained `value-labels.csv` establishes `AGEB=11` as refused, `AGEB=10`
@@ -1587,6 +1611,8 @@ output are byte-identical to the preceding version. Both respondent and
 aggregate parity comparisons have zero unexplained differences. The focused
 regression test passes 22 assertions, including preservation of valid school
 answers and the full attendee demographic values. No model was rerun.
+
+<a id="ukm-08"></a>
 
 **UKM-08 — absent departure forms incorrectly scored zero (corrected).**
 The source `WEEKEND` field is labeled “attended weekend”: 258 records have
@@ -1638,6 +1664,8 @@ and all six missing post-dependent measures.
 
 ## UK General Election 1997 — uk-general-election-1997
 
+<a id="ukge-01"></a>
+
 **UKGE-01 — preserve eligibility and scale-specific scoring.** `filter == 1`
 selects 275 attendees. Serial 4416 has a group but no T2 questionnaire and is
 outside that sample. This is an eligibility distinction, not automatically a
@@ -1650,6 +1678,8 @@ expanding eligibility, re-read [codebook.txt](../data/uk-general-election-1997/c
 and the field labels for the filter and each placement scale. The source
 codebook was not newly audited item by item in this pass. Preserve party-specific
 placement ranges rather than impose a generic “correct category” rule.
+
+<a id="ukge-02"></a>
 
 **UKGE-02 — use the same tax-and-spending question at both waves.**
 **Status: approved by the user on 2026-09-25 after reproducing the paper's
@@ -1797,6 +1827,8 @@ in years (QA3), and no special meaning for code 96. This is a nonparticipant
 (`filter=0`, `PARTIC=0`). A high age alone does not justify a missing-value recode;
 preserve this observed age.
 
+<a id="ukge-04"></a>
+
 **UKGE-04 — demographic and missing-code boundaries.** Ethnicity -7 becomes
 missing, including two attendees; codes other than 1 become the historical
 minority indicator. Age -7 becomes missing. School education is overridden by
@@ -1855,6 +1887,8 @@ The paper's 276-arrival count remains a separate roster question; it does not
 justify counting a record explicitly marked nonparticipant in the participant
 group metrics.
 
+<a id="ukge-06"></a>
+
 **UKGE-06 — all four main attitude indices verified; archived appendix names
 two different questions.** The 2026-09-28 independent reconstruction reproduces
 all 2,200 values, including missingness, for 275 people in 15 groups. The paired
@@ -1880,6 +1914,8 @@ recodes and eligibility rules are preserved.
 
 ## CPL 1996 — cpl-1996
 
+<a id="cpl-01"></a>
+
 **CPL-01 — preserve missing-code provenance across file versions.** The build
 uses `cpl.sav`; the later `cpl2.sav` carries equivalent attendee answers after
 759 explicit code-99 responses in the earlier file are treated as missing.
@@ -1894,6 +1930,8 @@ by the maintained indices and summaries across the full 1,246 source rows in
 99 is treated as missing. This is not a claim that every field in the two source
 versions is equivalent; unused ranking and employment fields differ separately.
 
+<a id="cpl-02"></a>
+
 **CPL-02 — historical IDs and staged normalization.** `tx_cpl.R` generates
 `paste0(29, 10000 + source_row)` before retaining nonmissing groups. These aliases
 match all 216 historical attendees. The new respondent table retains all 1,246
@@ -1906,6 +1944,8 @@ historical bounds so changing the supplied row subset cannot change a score.
 Review the intended common metric and both wave instruments before replacing
 these calibrations with theoretical endpoints. All 39 respondent-field targets
 match for 216 attendees, including missingness, at 1e-10.
+
+<a id="cpl-03"></a>
 
 **CPL-03 — removed competition item still enters extremity.** The poll script
 uses seven baseline indices, including COMPET1, in `attextreme`.
@@ -2075,6 +2115,8 @@ script replays both calculations from the retained survey.
 
 ## SWEPCO 1996 — swepco-1996
 
+<a id="swe-01"></a>
+
 **SWE-01 — original portable missing codes recovered.**
 **Status: verified source recovery; no numerical recode.** The maintained
 attendee build has 232 people, five items and 14 groups. The original archive
@@ -2134,6 +2176,8 @@ The source recovery itself did not change attitudes. SWE-06 subsequently
 adopted the approved absent-form rule for both plain and explicitly
 midpoint-imputed post attitudes; absence is not an imputed midpoint.
 
+<a id="swe-02"></a>
+
 **SWE-02 — conservation's post component is absent under the script's name.**
 **Status: approved and adopted two-item correction (SWE-02).** The archived
 [`tx_swp.R`](https://github.com/soodoku/dp-data/blob/historical-cdd-scripts/legacy/poll_scripts/tx_swp.R#L92-L96)
@@ -2188,6 +2232,8 @@ Rscript ../dp-data/scripts/review_uk_crime_downstream.R learning /tmp/swe-review
 Rscript ../dp-data/scripts/review_uk_crime_downstream.R deliberately /tmp/swe-review /tmp/swe-deliberately
 ```
 
+<a id="swe-03"></a>
+
 **SWE-03 — low-income index reflects an earlier, documented construct.**
 The saved `t1att4`/`t2att4` exactly reproduce `NEEDTO1`/`NEEDTO2` divided by
 10, with missing responses filled at 5 before scaling, for all 232 attendees
@@ -2206,6 +2252,8 @@ consider a separately named LOWINC/POOR index if the schema is expanded.
 A diagnostic available-item mean of empirically normalized LOWINC/POOR would
 change 204 of 232 T1 and 201 of 232 T2 values, but is not an adopted recode;
 the exact normalization helper used by the later script has not been recovered.
+
+<a id="swe-04"></a>
 
 **SWE-04 — raw-scale research enters normalized extremity.**
 **Status: approved by the user on 2026-09-25 and adopted.** The poll script
@@ -2230,6 +2278,8 @@ Renewables use an available raw mean calibrated over [1,10] at T1
 and [0,10] at T2; other one-item 0–10 indices use their historical missing
 fill of 5. All 39 historical respondent-field targets match for the 232
 `PART == 1` attendees at 1e-10.
+
+<a id="swe-05"></a>
 
 **SWE-05 — nonparticipants receive scores for absent post forms.**
 **Status: user-approved correction, implemented upstream.**
@@ -2277,6 +2327,8 @@ retain every affected source identity.
 
 ## WTU 1996 — wtu-1996
 
+<a id="wtu-01"></a>
+
 **WTU-01 — original portable missing codes recovered.**
 **Status: verified source recovery; no numerical recode.** The maintained
 attendee build has 230 people, five items and 14 groups. The original archive
@@ -2308,6 +2360,8 @@ public survey. The repository-only reader and review script described there
 reproduce all WTU comparisons and audit outputs. Production values remain
 unchanged. The separate 1,000-row absent-post score problem is recorded in WTU-06.
 
+<a id="wtu-02"></a>
+
 **WTU-02 — omitted category is not necessarily a deposited-score error.** Raw
 `USE2 = 4` denotes wholesale. The archived R recode omits it, but the deposited
 battery already treats the two observed cases, 20000100 and 20001180, as incorrect.
@@ -2315,6 +2369,8 @@ Current scores match. Before changing anything, consult the
 [codebook](../data/wtu-1996/codebook.txt), original correctness field and executed
 script version. This is a useful counterexample to treating every suspicious
 historical line as an error in published data.
+
+<a id="wtu-03"></a>
 
 **WTU-03 — absent ADDFACT2 removes the post conservation component.**
 **Status: approved by the user on 2026-09-25 and adopted.** As in
@@ -2357,6 +2413,8 @@ The 230 historical and approved respondent values are frozen in
 [`approved_values.csv`](../audit/corrections/wtu-1996/approved_values.csv).
 No other WTU aggregate field or sample membership changes.
 
+<a id="wtu-04"></a>
+
 **WTU-04 — historical low-income index uses a documented earlier construct.**
 The `NEEDTO1`/`NEEDTO2` variant, divided by 10 with missing filled at 5, exactly
 reproduces the saved aggregate. It is explicit in the earlier archived
@@ -2367,6 +2425,8 @@ The later script instead uses `LOWINC1`/`POOR1` and reuses the
 baseline pair at T2; its active code does not reproduce the saved index.
 As with SWE-03, preserve the earlier construct and treat any later low-income
 composite as a separately defined candidate, not an automatic replacement.
+
+<a id="wtu-05"></a>
 
 **WTU-05 — raw-scale research enters normalized extremity.**
 **Status: approved by the user on 2026-09-25 and adopted.** As in SWE-04,
@@ -2405,6 +2465,8 @@ to -.06994; its minority model retained 5,182 and moved it from -.01957 to
 -.10073. These model changes are consequences, not the justification for the
 recode. Current dp-distortions and dp-deliberately read pinned historical
 benchmark files, which this correction does not alter.
+
+<a id="wtu-06"></a>
 
 **WTU-06 — nonparticipants receive scores for absent post forms.**
 **Status: user-approved correction, implemented upstream.**
@@ -2460,6 +2522,8 @@ separate schema change, so the archived byte-identity claim does not describe
 the combined build.
 
 ## Australia republic 1999 — australia-republic-1999
+
+<a id="aus-01"></a>
 
 **AUS-01 — existing missingness divergence; score parity.** There are 347 attendees
 with exit questionnaires in groups 1–24 out of 4,659 source rows; nine further
@@ -2782,6 +2846,8 @@ as a substitute for the fielded DP questionnaire.
 
 ## BTP 2007 — btp-2007
 
+<a id="btp07-01"></a>
+
 **BTP07-01 — selection variables with similar names have different roles.**
 `group == 1` selects 301 discussion-treatment respondents from 1,501 records;
 `Sgroup` gives the 20 small groups and `CaseID` identifies people. Codes 99, 998,
@@ -2843,6 +2909,8 @@ battery is built by the adapter in `R/poll_adapters.R`.
 
 ## BTP General Election 2004 — btp-general-election-2004
 
+<a id="btpge-01"></a>
+
 **BTPGE-01 — historical complete-score selection is an explicit dependency.**
 The 299-row HLM source selects 250 records using `dop4part == 1` and nonmissing
 source `t1know`/`t2know`. That older battery selection depends on derived
@@ -2850,6 +2918,8 @@ source columns. BTPGE-03 below now independently reconstructs the aggregate
 from raw answers; neither result reconstructs the earliest field-file merge
 or establishes a census of attendees. `caseid_original` and
 `smgrpnumber` identify people and 15 groups.
+
+<a id="btpge-02"></a>
 
 **BTPGE-02 — existing missingness divergence.** Seven code--1 refusals remain
 missing rather than incorrect. Zero-filled scores are unchanged. Recheck
@@ -3354,6 +3424,8 @@ nor its weights, scores or eleven numeric attitude definitions change here.
 
 ## BTP Online Primaries 2004 — btp-online-primaries-2004
 
+<a id="btpop-01"></a>
+
 **BTPOP-01 — existing missingness and membership qualifications.** `expcont == 1`
 selects 328 of 1,289 source records; original `id` is unique. There are 315 known
 memberships in 16 groups and 13 people without a known group. Twenty-five code--1
@@ -3403,6 +3475,8 @@ missing discussion group in BTPOP-01 or change the historical aggregate sample.
 
 ## Bulgaria Crime 2002 — bulgaria-crime-2002
 
+<a id="bgc-01"></a>
+
 **BGC-01 — poll identity is a provenance issue.** The 278-person, seven-item
 battery belongs to the October 2002 crime poll, not the distinct 2007 Roma-policy
 poll. Current item scores and gender match, with 17 groups. The source archive
@@ -3417,6 +3491,8 @@ names the Fighting Crime in Bulgaria event on October 12–13, 2002. These
 independent materials resolve the event identity. Preserve the separate 2007
 registry entry.
 
+<a id="bgc-02"></a>
+
 **BGC-02 — civil-liberties index versions differ.** The source labels
 `t1clibe`/`t2clibe` as Version E with five variables. The available draft-seven
 memo reports Version D with seven items; the preserved R script comments suggest
@@ -3427,6 +3503,8 @@ supported by the version label and exact respondent-level reconstruction, not
 an explicit formula in the surviving memo. Preserve Version E; find its original
 syntax or final index memorandum before changing components. The questionnaire
 and earlier drafts should be consulted to assess why Q15_2 was omitted.
+
+<a id="bgc-03"></a>
 
 **BGC-03 — income factor positions and summary vintage; corrected.** The
 historical reader maps income codes 1–6 to factor positions 2–7 and makes code
@@ -3448,6 +3526,8 @@ with the historical 193 and the earlier corrected 28; 109 flags differ from
 the historical benchmark. Group shares use the same median-based individual
 flags, with missingness unchanged. The earlier approval snapshot remains in
 `audit/corrections/bulgaria-crime-2002/approved_values.csv`.
+
+<a id="bgc-04"></a>
 
 **BGC-04 — index sets and reconstruction coverage.** All 51 respondent targets
 match all 278 source participants, including missingness, at 1e-10 tolerance.
@@ -3476,6 +3556,8 @@ of dp-learning's main mixed model on the same 5,728 observations changes its
 fixed-effect estimates by at most .000855 (the extremity coefficient moves
 from −.075410 to −.074556). Downstream consumers of the two attitude columns
 or the three derived group fields will see the corrected values.
+
+<a id="bgc-05"></a>
 
 **BGC-05 — six archived attitude labels are shifted (catalog corrected).**
 The two retained cross-poll index files pair six Bulgaria source fields with
@@ -3762,6 +3844,8 @@ correctness of every proposed California attitude index.
 
 ## Europolis 2009 — europolis-2009
 
+<a id="euro-01"></a>
+
 **EURO-01 — distributional parity is not a person link.** `GROUP_T1BIS == 1`
 selects 348 of 4,384 source rows. `UniqueID` and `SMALL_GROUPw3` supply people and
 25 groups. The six-item pre/post batteries plus gender exactly match the deposit
@@ -3995,6 +4079,8 @@ within that comparison, not possible differences between returners and attriters
 All non-NIC analysis rows are unchanged.
 
 
+<a id="nic-01"></a>
+
 **NIC-01 — one source-scoped fallback ID and battery definition.** `PART == 1`
 selects 466 of 911 records and `RGROUP2` identifies 30 groups. One attendee lacks
 `CASEID` and retains a source-row fallback. Eight-item knowledge and gender match
@@ -4009,6 +4095,8 @@ row in this source only; the eight-item deposit remains anonymously ordered.
 This closes the candidate ID recovery from those archived exports without
 inventing a cross-file match. Retain raw floating-point codes while using the
 documented tolerance for integer lookup. The eleven-item distinction is NIC-02.
+
+<a id="nic-02"></a>
 
 **NIC-02 — eleven-item historical battery reconstructed separately.** The
 historical `polardata` battery includes three percentage questions in addition to
@@ -4120,6 +4208,8 @@ items with baseline foreign aid, welfare and Social Security. NIC-09 subsequentl
 corrected that separate definition after user approval, using all nine source
 T2 answers. NIC-11 establishes that T2 is immediate exit, not arrival. Those
 corrections are distinct from the earlier age proposal documented here.
+
+<a id="nic-04"></a>
 
 **NIC-04 — missing historical identity and reconstruction coverage.** The
 historical export and selected source each contain exactly one missing CASEID.
@@ -4446,12 +4536,16 @@ separate the 466-person historical sample from all 911 source people.
 
 ## Tomorrow's Europe 2007 — tomorrows-europe-2007
 
+<a id="te-01"></a>
+
 **TE-01 — deposited-battery eligibility/order mismatch.** `t3part == 1` yields 359
 departure respondents from 3,550 source rows, versus 335 deposited batteries.
 The earlier 335-person battery comparison did not establish its selection or
 ordering. The aggregate reconstruction below establishes a different, 344-person
 sample; it does not resolve anonymous deposited-battery ordering. The departure `t3grp` is observed for
 all 359 people across 18 groups.
+
+<a id="te-02"></a>
 
 **TE-02 — response-scale origins and invalid codes.** The existing key accounts
 for baseline numeric codes 1–11 representing scale labels 0–10, whereas departure
@@ -4874,6 +4968,8 @@ six change at both waves). Every other poll is identical. Pooled estimates
 using those scores will need rebuilding; their effects have not been estimated
 in this source-coding pass.
 
+<a id="vt-02"></a>
+
 **VT-02 — group roster gap.** `PART == 1` selects 146 of 750 source rows, but no
 verified group roster is attached. This is a missing verified linkage, not proof
 that discussions had no groups. Search original session materials before making
@@ -5160,6 +5256,8 @@ case is classified as a false record on the basis of its score alone.
 
 ## Michigan 2009 — michigan-2009
 
+<a id="mi-01"></a>
+
 **MI-01 — nonresponse versus invalid or ambiguous text.** The current build
 selects 310 of 610 merged records using observed `postit`, rather than taking
 the first 310 rows. It reports 294 item differences: 291 e/E responses, one F,
@@ -5314,6 +5412,8 @@ mean of 41.567781%. It does not replace the telephone/departure comparison.
 
 
 ## Denmark Euro 2000 — denmark-euro-2000
+
+<a id="dk-01"></a>
 
 **DK-01 — the deposited battery includes baseline-only rows and omits one
 departure respondent.** The baseline has 1,702 rows, the departure file 359,
@@ -5607,6 +5707,8 @@ semantics; this benchmark does not justify silently imputing their nonanswers.
 
 ## Northern Ireland 2007 — northern-ireland-2007
 
+<a id="ni-01"></a>
+
 **NI-01 — source roster versus paper reader (corrected downstream).** The
 headerless roster contains 124 mappings, beginning with respondent 112084 in
 group N. The former `dp-nireland` reader interpreted that first record as column
@@ -5619,6 +5721,8 @@ fewer cluster in affected comparisons, changing CR2 standard errors, degrees
 of freedom, intervals and p-values; no reported p-value crosses 0.05 and no
 confidence interval changes whether it includes zero. The seven-item knowledge
 battery still matches its deposit, a separate check from group membership.
+
+<a id="ni-02"></a>
 
 **NI-02 — measurement and disclosure are separate from knowledge transport.**
 The paper's adjudicated argument codes, coder disagreements, response slots,
@@ -10883,3 +10987,17 @@ must check all previous nonmissing values, identity and row conservation, and
 reproduce every new value from its registered source measure. These covariates
 support later selection analyses without making source-only people eligible
 for the main attendee analysis.
+
+<a id="bg07-01"></a>
+
+### BG07-01: Respondent-level audit cannot proceed without the 2007 source data
+
+This is the separate April 2007 Roma-policy poll, not the 2002 crime survey.
+The retained reports identify 1,344 baseline respondents and 255 attendees,
+including 230 non-Roma and 25 Roma participants. The existing
+[source-material review](#source-material-review-after-v030) records the
+inspected archive and public-source boundaries. Respondent answers, linked
+post-event records and discussion-group assignments have not been recovered
+from those inspected materials. No numerical reconstruction is claimed for
+this poll. The user stopped further respondent-data searches; preserve the
+reports and this explicit source limitation without reopening that search.

@@ -463,6 +463,16 @@
         "issue_id": "NI-06",
         "title": "NI-06: Preserve literal argument-code sets during CSV import (corrected)",
         "evidence_path": "../../docs/poll-evidence.md#ni-06"
+      },
+      {
+        "issue_id": "NI-01",
+        "title": "NI-01 — source roster versus paper reader (corrected downstream).",
+        "evidence_path": "../../docs/poll-evidence.md#ni-01"
+      },
+      {
+        "issue_id": "NI-02",
+        "title": "NI-02 — measurement and disclosure are separate from knowledge transport.",
+        "evidence_path": "../../docs/poll-evidence.md#ni-02"
       }
     ],
     "reviewed_flags": [],

@@ -732,6 +732,36 @@
         "issue_id": "WTU-07",
         "title": "WTU-07 / SWE-06: Absent departure questionnaires and explicit imputation",
         "evidence_path": "../../docs/poll-evidence.md#wtu-07"
+      },
+      {
+        "issue_id": "WTU-01",
+        "title": "WTU-01 — original portable missing codes recovered.",
+        "evidence_path": "../../docs/poll-evidence.md#wtu-01"
+      },
+      {
+        "issue_id": "WTU-02",
+        "title": "WTU-02 — omitted category is not necessarily a deposited-score error.",
+        "evidence_path": "../../docs/poll-evidence.md#wtu-02"
+      },
+      {
+        "issue_id": "WTU-03",
+        "title": "WTU-03 — absent ADDFACT2 removes the post conservation component.",
+        "evidence_path": "../../docs/poll-evidence.md#wtu-03"
+      },
+      {
+        "issue_id": "WTU-04",
+        "title": "WTU-04 — historical low-income index uses a documented earlier construct.",
+        "evidence_path": "../../docs/poll-evidence.md#wtu-04"
+      },
+      {
+        "issue_id": "WTU-05",
+        "title": "WTU-05 — raw-scale research enters normalized extremity.",
+        "evidence_path": "../../docs/poll-evidence.md#wtu-05"
+      },
+      {
+        "issue_id": "WTU-06",
+        "title": "WTU-06 — nonparticipants receive scores for absent post forms.",
+        "evidence_path": "../../docs/poll-evidence.md#wtu-06"
       }
     ],
     "reviewed_flags": [],

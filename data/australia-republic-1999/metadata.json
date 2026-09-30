@@ -932,6 +932,11 @@
         "issue_id": "AUS-06",
         "title": "AUS-06: A first preference for the Queen survives an unanswered second choice",
         "evidence_path": "../../docs/poll-evidence.md#aus-06"
+      },
+      {
+        "issue_id": "AUS-01",
+        "title": "AUS-01 — existing missingness divergence; score parity.",
+        "evidence_path": "../../docs/poll-evidence.md#aus-01"
       }
     ],
     "reviewed_flags": [],

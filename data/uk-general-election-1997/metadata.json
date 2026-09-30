@@ -667,6 +667,26 @@
         "issue_id": "UKGE-05",
         "title": "UKGE-05: Exclude a source nonparticipant from early group metrics",
         "evidence_path": "../../docs/poll-evidence.md#ukge-05"
+      },
+      {
+        "issue_id": "UKGE-01",
+        "title": "UKGE-01 — preserve eligibility and scale-specific scoring.",
+        "evidence_path": "../../docs/poll-evidence.md#ukge-01"
+      },
+      {
+        "issue_id": "UKGE-02",
+        "title": "UKGE-02 — use the same tax-and-spending question at both waves.",
+        "evidence_path": "../../docs/poll-evidence.md#ukge-02"
+      },
+      {
+        "issue_id": "UKGE-04",
+        "title": "UKGE-04 — demographic and missing-code boundaries.",
+        "evidence_path": "../../docs/poll-evidence.md#ukge-04"
+      },
+      {
+        "issue_id": "UKGE-06",
+        "title": "UKGE-06 — all four main attitude indices verified; archived appendix names two different questions.",
+        "evidence_path": "../../docs/poll-evidence.md#ukge-06"
       }
     ],
     "reviewed_flags": [],

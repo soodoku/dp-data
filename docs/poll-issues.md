@@ -4,6 +4,9 @@ Current register: October 1, 2026. This page states the decisions in force.
 The complete source quotations, comparisons, counterfactuals and historical
 proposals are preserved in [poll-evidence.md](poll-evidence.md). Older proposals
 there do not override later approvals. Each issue below links to that evidence.
+The scope is 33 polls with respondent outputs plus Bulgaria 2007, whose source
+data remain unavailable. The 16 additional materials-only folders do not imply
+completed respondent-level audits.
 
 ## Decisions in force
 
@@ -107,16 +110,39 @@ The detailed entry specifies which fields and versions each status covers.
 
 ### UK–EU 1995 — uk-eu-1995
 
+- <a id="ukeu-01"></a> **UKEU-01 — Implemented.** Keep source people; unavailable departure forms have no score and group 99 is unknown, not a sixteenth discussion group. [Evidence](poll-evidence.md#ukeu-01).
+- <a id="ukeu-02"></a> **UKEU-02 — Implemented.** Exclude baseline nonanswers before scaling the two five-category attitudes to their full endpoints. [Evidence](poll-evidence.md#ukeu-02).
+- <a id="ukeu-03"></a> **UKEU-03 — Implemented.** Exclude post “can’t choose” responses and restore the five-category EU-relations scale. [Evidence](poll-evidence.md#ukeu-03).
+- <a id="ukeu-04"></a> **UKEU-04 — Implemented.** Inapplicable departure responses are missing; observed EU-scope answers use the substantive scale. [Evidence](poll-evidence.md#ukeu-04).
+- <a id="ukeu-05"></a> **UKEU-05 — Preserved.** “Other” ethnicity remains observed but cannot establish binary minority status; retain the raw answer. [Evidence](poll-evidence.md#ukeu-05).
 - <a id="ukeu-06"></a> **UKEU-06 — Preserved.** [Full four-index attitude review after the approved scale fixes](poll-evidence.md#ukeu-06).
 - <a id="ukeu-07"></a> **UKEU-07 — Implemented.** [Whole unavailable departure questionnaires were scored as zero](poll-evidence.md#ukeu-07).
 
+### UK Monarchy 1996 — uk-monarchy-1996
+
+- <a id="ukm-01"></a> **UKM-01 — Implemented.** Use departure R5C, not baseline Q5C, in the nine-item post knowledge battery. [Evidence](poll-evidence.md#ukm-01).
+- <a id="ukm-02"></a> **UKM-02 — Preserved.** Keep source-row identities and historical aliases separate; retain the distinct eight- and nine-item batteries. [Evidence](poll-evidence.md#ukm-02).
+- <a id="ukm-03"></a> **UKM-03 — Verified.** Authored components and stored precision reproduce both waves; UKM-07 verifies the unusual referendum ordering. [Evidence](poll-evidence.md#ukm-03).
+- <a id="ukm-04"></a> **UKM-04 — Superseded.** Expanded-source demographic exceptions were corrected under UKM-06; the old codes are not current derived values. [Evidence](poll-evidence.md#ukm-04).
+- <a id="ukm-05"></a> **UKM-05 — Implemented.** Catalog titles distinguish royal-family relations with the public from the powers of the monarchy. [Evidence](poll-evidence.md#ukm-05).
+- <a id="ukm-06"></a> **UKM-06 — Implemented.** Exclude demographic nonanswers and preserve open-ended 90+ age without inventing a point age. [Evidence](poll-evidence.md#ukm-06).
+- <a id="ukm-07"></a> **UKM-07 — Verified.** All four attitude pairs and their available-component definitions reproduce the source and memo benchmarks. [Evidence](poll-evidence.md#ukm-07).
+- <a id="ukm-08"></a> **UKM-08 — Implemented.** The 599 verified absent departure forms have missing items and scores; retain all source people and raw placeholders. [Evidence](poll-evidence.md#ukm-08).
+
 ### UK General Election 1997 — uk-general-election-1997
 
+- <a id="ukge-01"></a> **UKGE-01 — Preserved.** Use the documented source eligibility and scale-specific keys; preserve the distinction between selected and source records. [Evidence](poll-evidence.md#ukge-01).
+- <a id="ukge-02"></a> **UKGE-02 — Implemented.** Use the same tax-and-spending question at both waves, rather than a different baseline tax question. [Evidence](poll-evidence.md#ukge-02).
+- <a id="ukge-04"></a> **UKGE-04 — Implemented.** Preserve reviewed demographic categories and missing codes; X-13 supplies the common income classification. [Evidence](poll-evidence.md#ukge-04).
+- <a id="ukge-06"></a> **UKGE-06 — Verified.** All four attitude pairs reproduce the paper; differing appendix question names do not justify replacing the verified fields. [Evidence](poll-evidence.md#ukge-06).
 - <a id="ukge-03"></a> **UKGE-03 — Implemented.** [Post Labour minimum-wage knowledge uses the baseline response](poll-evidence.md#ukge-03).
 - <a id="ukge-05"></a> **UKGE-05 — Implemented.** [Exclude a source nonparticipant from early group metrics](poll-evidence.md#ukge-05).
 
 ### CPL 1996 — cpl-1996
 
+- <a id="cpl-01"></a> **CPL-01 — Verified.** Original missing-code provenance is retained; explicit DK receives conventional zero knowledge credit with its raw reason preserved. [Evidence](poll-evidence.md#cpl-01).
+- <a id="cpl-02"></a> **CPL-02 — Preserved.** Keep historical aliases and reviewed empirical calibrations; a common-endpoint alternative requires an explicit decision. [Evidence](poll-evidence.md#cpl-02).
+- <a id="cpl-03"></a> **CPL-03 — Preserved.** The authored seven-index summaries retain competition despite the six exposed attitude pairs; do not silently redefine them. [Evidence](poll-evidence.md#cpl-03).
 - <a id="cpl-04"></a> **CPL-04 — Implemented.** [Codebook don't-know attitudes no longer count as observed inputs](poll-evidence.md#cpl-04).
 - <a id="cpl-06"></a> **CPL-06 — Preserved.** [Utility attitude indices and summary batteries independently reviewed](poll-evidence.md#cpl-06).
 - <a id="cpl-05"></a> **CPL-05 — Implemented.** [Group gain uses a truncated early group-size calculation](poll-evidence.md#cpl-05).
@@ -124,14 +150,26 @@ The detailed entry specifies which fields and versions each status covers.
 
 ### WTU 1996 — wtu-1996
 
+- <a id="wtu-01"></a> **WTU-01 — Verified.** Original portable nonanswer codes and source identities were recovered and independently checked. [Evidence](poll-evidence.md#wtu-01).
+- <a id="wtu-02"></a> **WTU-02 — Verified.** The two disputed responses already receive zero credit under the executed key; no further recode is supported. [Evidence](poll-evidence.md#wtu-02).
+- <a id="wtu-03"></a> **WTU-03 — Implemented.** Correct the absent ADDFACT2 reference to documented ADDFAC2 and retain REDUCE2 in conservation. [Evidence](poll-evidence.md#wtu-03).
+- <a id="wtu-04"></a> **WTU-04 — Preserved.** Retain the documented earlier low-income construct; the later variant is not an automatic correction. [Evidence](poll-evidence.md#wtu-04).
+- <a id="wtu-05"></a> **WTU-05 — Implemented.** Use normalized research values in extremity and shared group summaries. [Evidence](poll-evidence.md#wtu-05).
+- <a id="wtu-06"></a> **WTU-06 — Implemented.** Confirmed absent departure questionnaires have missing knowledge scores, without discarding observed blanks or DK responses. [Evidence](poll-evidence.md#wtu-06).
 - <a id="wtu-07"></a> **WTU-07 — Implemented.** [Absent departure questionnaires and explicit imputation](poll-evidence.md#wtu-07).
 
 ### SWEPCO 1996 — swepco-1996
 
+- <a id="swe-01"></a> **SWE-01 — Verified.** Original portable nonanswer codes were recovered and checked against the maintained survey without changing substantive answers. [Evidence](poll-evidence.md#swe-01).
+- <a id="swe-02"></a> **SWE-02 — Implemented.** The conservation index uses both documented post components, ADDFAC2 and REDUCE2. [Evidence](poll-evidence.md#swe-02).
+- <a id="swe-03"></a> **SWE-03 — Preserved.** Keep the earlier documented low-income construct; a later authored index is a different definition. [Evidence](poll-evidence.md#swe-03).
+- <a id="swe-04"></a> **SWE-04 — Implemented.** Use normalized research values in extremity and shared group summaries. [Evidence](poll-evidence.md#swe-04).
+- <a id="swe-05"></a> **SWE-05 — Implemented.** Confirmed nonparticipant departure forms have missing knowledge scores; observed blank quiz items still receive zero credit. [Evidence](poll-evidence.md#swe-05).
 - <a id="swe-06"></a> **SWE-06 — Implemented.** [Absent departure questionnaires and explicit imputation](poll-evidence.md#swe-06).
 
 ### Australia republic 1999 — australia-republic-1999
 
+- <a id="aus-01"></a> **AUS-01 — Consultation.** The initial checklist combines none and DK. Preserve authored symbolic scoring; the retained DP instrument cannot separate those answers. [Evidence](poll-evidence.md#aus-01).
 - <a id="aus-07"></a> **AUS-07 — Implemented.** [Absent and unavailable questionnaires were scored as zero](poll-evidence.md#aus-07).
 - <a id="aus-02"></a> **AUS-02 — Implemented.** [Aggregate knowledge uses a different battery and flag rule](poll-evidence.md#aus-02).
 - <a id="aus-03"></a> **AUS-03 — Implemented.** [Extremity omissions and a cross-wave ranking typo](poll-evidence.md#aus-03).
@@ -141,10 +179,13 @@ The detailed entry specifies which fields and versions each status covers.
 
 ### BTP 2007 — btp-2007
 
+- <a id="btp07-01"></a> **BTP07-01 — Verified.** Assignment, discussion attendance, post completion and small-group IDs have distinct source meanings; code 99 depends on the question. [Evidence](poll-evidence.md#btp07-01).
 - <a id="btp07-02"></a> **BTP07-02 — Verified.** [Fielded keys reproduce the weighted report (checked; no correction)](poll-evidence.md#btp07-02).
 
 ### BTP General Election 2004 — btp-general-election-2004
 
+- <a id="btpge-01"></a> **BTPGE-01 — Superseded.** Raw-question reconstruction now replaces reliance on stored knowledge scores; source and selected cohorts remain distinct. [Evidence](poll-evidence.md#btpge-01).
+- <a id="btpge-02"></a> **BTPGE-02 — Implemented.** Retain refusal provenance and conventional zero credit within observed forms; whole unavailable forms remain missing. [Evidence](poll-evidence.md#btpge-02).
 - <a id="btpge-03"></a> **BTPGE-03 — Implemented.** [Raw answers, rounding and the summary sample are now explicit](poll-evidence.md#btpge-03).
 - <a id="btpge-04"></a> **BTPGE-04 — Preserved.** [Baseline poll knowledge uses a larger calibration sample](poll-evidence.md#btpge-04).
 - <a id="btpge-05"></a> **BTPGE-05 — Implemented.** [Zero correct post answers do not mean the post wave is absent (corrected)](poll-evidence.md#btpge-05).
@@ -163,13 +204,23 @@ The detailed entry specifies which fields and versions each status covers.
 
 ### BTP Online Primaries 2004 — btp-online-primaries-2004
 
+- <a id="btpop-01"></a> **BTPOP-01 — Source limit.** Attendee 908 has no verified final group; session numbers cannot safely supply it. Later BTPOP-02 handles unavailable follow-up forms. [Evidence](poll-evidence.md#btpop-01).
 - <a id="btpop-02"></a> **BTPOP-02 — Implemented.** [Absent follow-up forms are not zero knowledge (corrected)](poll-evidence.md#btpop-02).
 
 ### Bulgaria Crime 2002 — bulgaria-crime-2002
 
+- <a id="bgc-01"></a> **BGC-01 — Verified.** The seven-item crime battery belongs to the 2002 event, not the separate 2007 Roma-policy poll. [Evidence](poll-evidence.md#bgc-01).
+- <a id="bgc-02"></a> **BGC-02 — Preserved.** Five components reproduce stored Version E exactly; its final authored formula remains unavailable, so retain that definition. [Evidence](poll-evidence.md#bgc-02).
+- <a id="bgc-03"></a> **BGC-03 — Implemented.** Use one income classification for individuals and groups; the approved empirical median supersedes both older cutoffs. [Evidence](poll-evidence.md#bgc-03).
+- <a id="bgc-04"></a> **BGC-04 — Implemented.** Death-penalty responses use the complete four-category endpoints; preserve the separately documented summary batteries. [Evidence](poll-evidence.md#bgc-04).
+- <a id="bgc-05"></a> **BGC-05 — Implemented.** Six attitude catalog labels now describe their actual source questions. [Evidence](poll-evidence.md#bgc-05).
 - <a id="bgc-06"></a> **BGC-06 — Implemented.** [Unlabelled ethnicity remains unknown (approved correction)](poll-evidence.md#bgc-06).
 - <a id="bgc-08"></a> **BGC-08 — Preserved.** [Complete main attitude and summary-battery review](poll-evidence.md#bgc-08).
 - <a id="bgc-07"></a> **BGC-07 — Implemented.** [baseline precedes arrival (resolved 2026-09-28)](poll-evidence.md#bgc-07).
+
+### Bulgaria Roma-policy poll 2007 — bulgaria-2007
+
+- <a id="bg07-01"></a> **BG07-01 — Source unavailable.** Reports are retained, but the 1,344 baseline and 255 event records are unavailable in inspected materials. No respondent-level audit is claimed; further searches were stopped at the user's request. [Evidence](poll-evidence.md#bg07-01).
 
 ### California 2011 — california-whats-next-2011
 
@@ -184,6 +235,7 @@ The detailed entry specifies which fields and versions each status covers.
 
 ### Europolis 2009 — europolis-2009
 
+- <a id="euro-01"></a> **EURO-01 — Preserved.** Score equality alone cannot link people; retain verified source identities and distinguish the recovered arrival form from the misfiled 2007 form. [Evidence](poll-evidence.md#euro-01).
 - <a id="euro-02"></a> **EURO-02 — Implemented.** [Aggregate identity is distinct from deposited-battery ordering](poll-evidence.md#euro-02).
 - <a id="euro-03"></a> **EURO-03 — Implemented.** [Structural missingness and demographic meaning are preserved](poll-evidence.md#euro-03).
 - <a id="euro-04"></a> **EURO-04 — Implemented.** [Unknown birthplace does not establish minority status (corrected)](poll-evidence.md#euro-04).
@@ -193,6 +245,9 @@ The detailed entry specifies which fields and versions each status covers.
 
 ### National Issues Convention 1996 — nic-1996
 
+- <a id="nic-01"></a> **NIC-01 — Preserved.** Keep the one missing-ID record under a source-scoped fallback and keep the eight-item battery distinct from the historical eleven-item battery. [Evidence](poll-evidence.md#nic-01).
+- <a id="nic-02"></a> **NIC-02 — Verified.** The eleven-item historical battery is reconstructed independently with the documented numeric-answer bounds. [Evidence](poll-evidence.md#nic-02).
+- <a id="nic-04"></a> **NIC-04 — Verified.** The unique missing-ID slot has a guarded within-source historical bridge; it is not a transferable person identifier. [Evidence](poll-evidence.md#nic-04).
 - <a id="nic-11"></a> **NIC-11 — Implemented.** [Use immediate exit in the analysis pair and retain delayed follow-up](poll-evidence.md#nic-11).
 - <a id="nic-03"></a> **NIC-03 — Implemented.** [Correct birth-year conversion and event mode upstream](poll-evidence.md#nic-03).
 - <a id="nic-05"></a> **NIC-05 — Implemented.** [Shared peer-opportunity ceiling convention](poll-evidence.md#nic-05).
@@ -205,6 +260,8 @@ The detailed entry specifies which fields and versions each status covers.
 
 ### Tomorrow's Europe 2007 — tomorrows-europe-2007
 
+- <a id="te-01"></a> **TE-01 — Source limit.** Different source cohorts and anonymous deposited ordering are not interchangeable; retain the verified historical selection. [Evidence](poll-evidence.md#te-01).
+- <a id="te-02"></a> **TE-02 — Implemented.** Out-of-range knowledge responses remain raw but have missing item correctness; preserve documented wave-specific scales and source limits. [Evidence](poll-evidence.md#te-02).
 - <a id="te-03"></a> **TE-03 — Implemented.** [Historical aggregate selects 344 people by the earlier group field](poll-evidence.md#te-03).
 - <a id="te-04"></a> **TE-04 — Implemented.** [Two departure indices mix arrival and departure answers](poll-evidence.md#te-04).
 - <a id="te-06"></a> **TE-06 — Implemented.** [Use exit rather than arrival for the main attitude comparison (approved)](poll-evidence.md#te-06).
@@ -214,6 +271,7 @@ The detailed entry specifies which fields and versions each status covers.
 
 ### Vermont Energy 2007 — vermont-energy-2007
 
+- <a id="vt-02"></a> **VT-02 — Source limit.** Reported discussion groups lack a verified person-to-group roster; retain unknown memberships without a synthetic group. [Evidence](poll-evidence.md#vt-02).
 - <a id="vt-01"></a> **VT-01 — Preserved.** [Key ambiguity must remain explicit](poll-evidence.md#vt-01).
 - <a id="vt-03"></a> **VT-03 — Implemented.** [The question catalog inherited incorrect choice labels (corrected)](poll-evidence.md#vt-03).
 
@@ -231,6 +289,7 @@ The detailed entry specifies which fields and versions each status covers.
 
 ### Michigan 2009 — michigan-2009
 
+- <a id="mi-01"></a> **MI-01 — Implemented.** Preserve explicit DK, invalid codes and ambiguous free text separately; do not invent a party answer for SC or “same.” [Evidence](poll-evidence.md#mi-01).
 - <a id="mi-02"></a> **MI-02 — Implemented.** [Nine shared items and the report's eleven items compare different waves](poll-evidence.md#mi-02).
 - <a id="mi-03"></a> **MI-03 — Implemented.** [Preserve the single out-of-range arrival placement code](poll-evidence.md#mi-03).
 - <a id="mi-04"></a> **MI-04 — Implemented.** [Five arrival factual responses were incorrectly excluded from the public source](poll-evidence.md#mi-04).
@@ -239,6 +298,7 @@ The detailed entry specifies which fields and versions each status covers.
 
 ### Denmark Euro 2000 — denmark-euro-2000
 
+- <a id="dk-01"></a> **DK-01 — Preserved.** Retain the 359 linked departure interviews; anonymous deposited omissions and extra baseline-only rows do not establish a replacement cohort. [Evidence](poll-evidence.md#dk-01).
 - <a id="dk-02"></a> **DK-02 — Verified.** [Independent factual keys and departure estimates agree (checked)](poll-evidence.md#dk-02).
 - <a id="dk-03"></a> **DK-03 — Verified.** [Archived zero-filling copied baseline facts into departure columns](poll-evidence.md#dk-03).
 - <a id="dk-04"></a> **DK-04 — Source limit.** [The retained English questionnaire is an earlier instrument version](poll-evidence.md#dk-04).
@@ -248,6 +308,8 @@ The detailed entry specifies which fields and versions each status covers.
 
 ### Northern Ireland 2007 — northern-ireland-2007
 
+- <a id="ni-01"></a> **NI-01 — Implemented.** The downstream reader now retains all 124 source roster mappings, including the formerly lost first record. [Evidence](poll-evidence.md#ni-01).
+- <a id="ni-02"></a> **NI-02 — Implemented.** Original questionnaire text and literal coder slots are preserved separately; proposed changes to argument-scoring meaning remain a consultation. [Evidence](poll-evidence.md#ni-02).
 - <a id="ni-03"></a> **NI-03 — Verified.** [Knowledge keys reproduce the paper; restore the first question's condition](poll-evidence.md#ni-03).
 - <a id="ni-04"></a> **NI-04 — Implemented.** [label follow-up nonanswers explicitly (corrected)](poll-evidence.md#ni-04).
 - <a id="ni-05"></a> **NI-05 — Implemented.** [A follow-up-only source is not a selected pre/post panel (corrected)](poll-evidence.md#ni-05).

@@ -658,7 +658,48 @@
     }
   ],
   "issues": {
-    "evidence_index": [],
+    "evidence_index": [
+      {
+        "issue_id": "UKM-01",
+        "title": "UKM-01 — correct the post-wave Commonwealth field.",
+        "evidence_path": "../../docs/poll-evidence.md#ukm-01"
+      },
+      {
+        "issue_id": "UKM-02",
+        "title": "UKM-02 — source-scoped identifiers.",
+        "evidence_path": "../../docs/poll-evidence.md#ukm-02"
+      },
+      {
+        "issue_id": "UKM-03",
+        "title": "UKM-03 — attitude construction and numeric precision.",
+        "evidence_path": "../../docs/poll-evidence.md#ukm-03"
+      },
+      {
+        "issue_id": "UKM-04",
+        "title": "UKM-04 — expanded-source recodes are not automatically valid demographics.",
+        "evidence_path": "../../docs/poll-evidence.md#ukm-04"
+      },
+      {
+        "issue_id": "UKM-05",
+        "title": "UKM-05 — two catalog titles describe the wrong constructs (corrected).",
+        "evidence_path": "../../docs/poll-evidence.md#ukm-05"
+      },
+      {
+        "issue_id": "UKM-07",
+        "title": "UKM-07 — all four main attitude indices independently verified.",
+        "evidence_path": "../../docs/poll-evidence.md#ukm-07"
+      },
+      {
+        "issue_id": "UKM-06",
+        "title": "UKM-06 — nonresponse codes in expanded demographics (approved correction).",
+        "evidence_path": "../../docs/poll-evidence.md#ukm-06"
+      },
+      {
+        "issue_id": "UKM-08",
+        "title": "UKM-08 — absent departure forms incorrectly scored zero (corrected).",
+        "evidence_path": "../../docs/poll-evidence.md#ukm-08"
+      }
+    ],
     "reviewed_flags": [],
     "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",

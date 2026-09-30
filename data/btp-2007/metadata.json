@@ -370,6 +370,11 @@
         "issue_id": "BTP07-02",
         "title": "BTP07-02: Fielded keys reproduce the weighted report (checked; no correction)",
         "evidence_path": "../../docs/poll-evidence.md#btp07-02"
+      },
+      {
+        "issue_id": "BTP07-01",
+        "title": "BTP07-01 — selection variables with similar names have different roles.",
+        "evidence_path": "../../docs/poll-evidence.md#btp07-01"
       }
     ],
     "reviewed_flags": [],

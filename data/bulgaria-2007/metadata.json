@@ -372,7 +372,13 @@
   ],
   "document_previews": [],
   "issues": {
-    "evidence_index": [],
+    "evidence_index": [
+      {
+        "issue_id": "BG07-01",
+        "title": "BG07-01: Respondent-level audit cannot proceed without the 2007 source data",
+        "evidence_path": "../../docs/poll-evidence.md#bg07-01"
+      }
+    ],
     "reviewed_flags": [],
     "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",

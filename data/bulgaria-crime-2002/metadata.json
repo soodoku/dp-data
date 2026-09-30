@@ -988,6 +988,31 @@
         "issue_id": "BGC-07",
         "title": "BGC-07: baseline precedes arrival (resolved 2026-09-28)",
         "evidence_path": "../../docs/poll-evidence.md#bgc-07"
+      },
+      {
+        "issue_id": "BGC-01",
+        "title": "BGC-01 — poll identity is a provenance issue.",
+        "evidence_path": "../../docs/poll-evidence.md#bgc-01"
+      },
+      {
+        "issue_id": "BGC-02",
+        "title": "BGC-02 — civil-liberties index versions differ.",
+        "evidence_path": "../../docs/poll-evidence.md#bgc-02"
+      },
+      {
+        "issue_id": "BGC-03",
+        "title": "BGC-03 — income factor positions and summary vintage; corrected.",
+        "evidence_path": "../../docs/poll-evidence.md#bgc-03"
+      },
+      {
+        "issue_id": "BGC-04",
+        "title": "BGC-04 — index sets and reconstruction coverage.",
+        "evidence_path": "../../docs/poll-evidence.md#bgc-04"
+      },
+      {
+        "issue_id": "BGC-05",
+        "title": "BGC-05 — six archived attitude labels are shifted (catalog corrected).",
+        "evidence_path": "../../docs/poll-evidence.md#bgc-05"
       }
     ],
     "reviewed_flags": [],

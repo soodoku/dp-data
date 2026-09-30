@@ -343,6 +343,11 @@
         "issue_id": "BTPOP-02",
         "title": "BTPOP-02: Absent follow-up forms are not zero knowledge (corrected)",
         "evidence_path": "../../docs/poll-evidence.md#btpop-02"
+      },
+      {
+        "issue_id": "BTPOP-01",
+        "title": "BTPOP-01 — existing missingness and membership qualifications.",
+        "evidence_path": "../../docs/poll-evidence.md#btpop-01"
       }
     ],
     "reviewed_flags": [],

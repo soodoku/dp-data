@@ -902,6 +902,16 @@
         "issue_id": "TE-08",
         "title": "TE-08: Preserve source nonanswers and literal wave identities in transport",
         "evidence_path": "../../docs/poll-evidence.md#te-08"
+      },
+      {
+        "issue_id": "TE-01",
+        "title": "TE-01 — deposited-battery eligibility/order mismatch.",
+        "evidence_path": "../../docs/poll-evidence.md#te-01"
+      },
+      {
+        "issue_id": "TE-02",
+        "title": "TE-02 — response-scale origins and invalid codes.",
+        "evidence_path": "../../docs/poll-evidence.md#te-02"
       }
     ],
     "reviewed_flags": [],
