@@ -3177,13 +3177,53 @@ after (report 39% and 31%); local control of testing is 27.22% and 33.33%
 (report 31% and 38%). The 454-person sample gives 27.75% and 28.63% NCLB
 approval. Simply selecting three-session attendees does not close this gap.
 
-These comparisons retain don't-know responses in the denominator and also show
-results excluding system missingness. No survey-weight field is present in the
-recovered full file. A report-era extract, weighting file or author analysis
-specification is needed to establish the remaining difference. Do not change
-source answers, reverse established labels, or silently substitute a new sample
-to force report agreement. The report bridge is unresolved; the independent
-questionnaire-to-current-score review above is complete for all eleven indices.
+Those earlier comparisons were unweighted and retained don't-know responses in
+the denominator. The newly preserved 2006 archive supplies the missing weighting
+evidence: `source-materials/archive-2006-treatment-genpopweighted.sav` contains
+358 attendees and the original `wght` variable (mean 1, range 0.2246–5.6156).
+All 358 IDs occur in the wider source; 320 occur in the selected 454-person
+cohort. The full-source three-session attendees absent from the weighted file
+are IDs 265850 and 269212. The original reason for excluding them is unknown.
+The weighted control file contains 619 people, whereas the report describes
+621 controls. These archived analytical files therefore contain 977 people,
+compared with the report's 981; no missing records are invented.
+
+The preserved weights reproduce fourteen rounded percentages in the report:
+
+| Report quantity | Weighted before | Weighted after | Report before/after | Denominator |
+|---|---:|---:|---|---|
+| Teacher quality, Q9 code 4 | 33.8717% | 17.9002% | 34% / 18% | All 358 records |
+| Parental involvement, Q9 code 3 | 13.8282% | 24.9178% | 14% / 25% | All 358 records |
+| Academic standards, Q9 code 1 | 32.5345% | 28.0664% | 33% / 28% | All 358 records |
+| Class size, Q9 code 2 | 3.4256% | 11.6132% | 3% / 12% | All 358 records |
+| NCLB approval, Q12 codes 4–5 | 39.3045% | 31.1254% | 39% / 31% | Substantive responses 1–5: 341 / 345 records |
+| Local control of testing, Q6 code 2 | 31.0975% | 37.8603% | 31% / 38% | All 358 records, including DK |
+| State control of testing, Q6 code 1 | 62.0678% | 55.8616% | 62% / 56% | All 358 records, including DK |
+
+The source labels in the SAV and the retained Polimetrix codebook establish
+these category meanings. The report locators are PDF p. 2 for Q9 and Q6,
+p. 3 for Q12, and p. 4 for the sample totals. The NCLB comparison requires
+excluding DK/system missingness; including them gives 37.0864% and 29.1999%.
+Q6 instead matches while retaining DK. This is strong evidence for the report's
+weighting and question-specific denominators, although rounded percentages do
+not establish a unique original recipe. Excluding the one missing post Q9 answer
+also rounds to the same four reported percentages.
+
+The archive is a distinct authored source version. All fourteen comparison
+quantities use answers that match the wider source by ID. Among 125 shared numeric
+question fields, the weighted archive differs in eleven Q25b baseline cells and
+three Q24e post cells. These version differences are preserved, not silently
+substituted into the current build. The separate analytic archive contains the
+same 358 treatment IDs and rounded `matwgt` weights; its weights differ from
+`wght` by at most 0.00496.
+
+The earlier claim that no weighting file was available is therefore superseded.
+The remaining report gap concerns the four missing analytical records, the
+original exclusion rationale and exact denominator specification. The current
+454-person unweighted cohort remains supported by the authored index script
+(`historical-index-recoding.txt`, lines 5–8, `filter == 1`). Neither its sample
+nor its weights, scores or eleven numeric attitude definitions change here.
+
 
 
 ## BTP Online Primaries 2004 — btp-online-primaries-2004
@@ -7413,6 +7453,29 @@ group/poll summaries recompute from observed scores; the poll exit mean changes
 .5909091→.5954198. This is not the separate133-versus-132 attendance discrepancy
 in NH-02. Eight post-dependent measure definitions now carry version
 `nh-exit-presence-v2`.
+
+
+The same invalid-code convention now applies to the interim workbook wave.
+Five raw zeros occur in three completed interim forms: ID 3133 has zeros in
+Q36, Q41 and Q43; ID 3269 in Q36; ID 3255 in Q41. These people have respectively
+50, 54 and 54 nonzero responses across the 55 interim question fields, so their
+whole questionnaires are observed. The retained field questionnaire, PDF
+pp. 11–12, offers no zero category for these factual questions. Their item
+correctness therefore changes from zero to missing, with `invalid_response`
+recorded separately; all raw answers remain unchanged.
+
+The same review identifies 174 previously unclassified interim DK answers:
+Q35 code 5 (31), Q37 code 5 (9), Q39 code 4 (19), Q40 code 3 (56), Q41 code 4
+(18), Q42 code 5 (12), and Q43 code 3 (29). The final option in each retained
+question is explicitly “Don't know.” Their conventional correctness stays zero;
+`knowledge_response` and `response_reason` now identify DK and retain that
+source label. Q36's field-form/CATI option conflict remains unresolved, as
+recorded in X-03, and its substantive option labels are not changed.
+
+Only the phase item classifications change. Every person and phase score,
+fixed eight-item denominator, original ID, group assignment and questionnaire
+presence flag is unchanged. The five zeros contributed no correct answers
+before the repair and contribute none afterward.
 
 ## Zeguo 2005 — zeguo-2005
 

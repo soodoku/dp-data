@@ -7,6 +7,11 @@
 - Expand Climate’s typed baseline/exit attitudes from 72 to all 93 ratings
   verified against the report. Preserve 370,188 additional response rows with
   their original directions and missingness; existing values and samples are unchanged.
+- Classify five New Haven interim knowledge zeros as invalid/missing and
+  identify 174 documented DK answers, preserving all raw answers and total scores.
+- Reproduce fourteen Health/Education report percentages from the preserved
+  weighted archive; retain the approved 454-person cohort and record the
+  remaining source-version and sample differences.
 
 - Preserve Denmark's July 2003 dissertation draft and separate technical
   appendix in its poll folder, with their distinct source versions recorded.
