@@ -404,7 +404,7 @@ applied. Pre-event answers never depend on the person's post-event response.
 ## Source-level attitudes
 
 `analysis_source_attitude_definitions` and `analysis_source_attitude_responses`
-preserve the reviewed attitude fields in four additional polls. Definitions
+preserve the reviewed attitude fields in five additional polls. Definitions
 are specific to a source field and interview occasion. They do not assert that
 similarly numbered questions across waves measure the same thing.
 
@@ -414,7 +414,8 @@ similarly numbered questions across waves measure the same thing.
 | Vermont 2007 | 243 | 182,250 |
 | Marousi 2006 | 248 | 316,200 |
 | America in One Room 2024 | 174 | 420,906 |
-| Total | 829 | 1,039,910 |
+| California 2011 | 78 | 36,816 |
+| Total | 907 | 1,076,726 |
 
 Every source row is retained, including recruitment respondents and people
 outside the selected knowledge panels. `source_id` and `source_row` identify
@@ -502,3 +503,21 @@ file does not label. Each rule retains its code, reason and source line.
 `source_responses` keeps the raw value while distinguishing these documented
 nonanswers from answered values. A code is never missing merely because it is
 99 or 999 in another question.
+
+
+California's source attitude rows retain 39 matched arrival/exit policy ratings
+in their documented 0–10 desirability units and as fixed-endpoint 0–1 values.
+Literal wave IDs and native respondent numbers are preserved separately for
+arrival and departure. The full 472-row source survives, including records
+without canonical participant links. Questionnaire presence is established from
+all recorded questionnaire answers; missing policy ratings never become neutral
+or incorrect responses. The question registry supplies retained report/form
+wording where the original source dictionaries omit it. See CA-08 in the poll
+issue ledger.
+
+Whole unavailable knowledge questionnaires remain distinct from zero-correct
+observed quizzes. UK–EU's −1/not-applicable departure forms and San Mateo's
+source nonparticipants without any departure questionnaire now follow this rule.
+Positive attendance is retained independently; inferred nonattendance has its
+own explicit basis. San Mateo participant 1467 retains its existing score and
+unknown form status pending the returned-blank-form decision (SM-08).

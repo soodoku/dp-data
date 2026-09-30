@@ -2,6 +2,8 @@ source(file.path(root, "R", "respondents.R"))
 
 presence_dependency_builders <- list(
   "cpl-1996" = function(survey) build_utility_individual(survey, "cpl-1996"),
+  "san-mateo-2008" = build_san_mateo_individual,
+  "uk-eu-1995" = build_eu_individual,
   "uk-health-1998" = build_health_individual,
   "uk-crime-1994" = build_crime_individual,
   "uk-general-election-1997" = build_election_individual,
@@ -43,6 +45,7 @@ test_that("declared raw inputs reproduce full builders in arbitrary order", {
     fields <- unique(inputs$source_column[inputs$poll_id == poll])
     identity <- switch(poll,
       "uk-health-1998" = c("serial_a", "serial_m"),
+      "uk-eu-1995" = "caseid",
       "zeguo-2005" = "p", character()
     )
     raw <- survey[rev(union(fields, identity))]

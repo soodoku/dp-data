@@ -762,6 +762,10 @@ The [helper](https://github.com/soodoku/dp-data/blob/historical-cdd-scripts/lega
 [merge](https://github.com/soodoku/dp-data/blob/historical-cdd-scripts/legacy/merge_data_scripts/03_data.R) use the same jointly correct
 items to compute and normalize `grpgain`. No new adjustment is introduced here.
 
+The numerical examples below describe the initial historical reconstruction,
+before the approved full-questionnaire and peer-denominator corrections. They
+are retained as evidence of the authored adjustment, not current sample totals.
+
 There are 104 correct-to-incorrect item transitions across 74 people. The mean
 baseline score falls from 0.6579710145 to 0.5826086957 under the documented rule.
 Mean unadjusted gain is 0.0789855072; mean adjusted gain is 0.1543478261.
@@ -782,9 +786,12 @@ receive the analogous treatment in `logpk`.
 **Missingness:** 184 T1 item responses across 99 people and 151 T2 responses
 across 70 people are nonresponse or system missing and are scored zero in this
 historical definition. Two respondents (source IDs 3809 and 4307) have all six
-T2 raw answers system missing, yet their scores remain zero in the 230-person
-universe. Establishing whether these represent absent interviews needs the wave
-roster; all-missing answers alone do not settle the reason.
+T2 raw answers missing. The later full-form review established that both
+questionnaires are unavailable: all 75 departure fields are empty and the
+source return indicator is zero. Their departure and joint-wave scores are now
+missing; their baseline scores and positive attendance records are retained.
+Both canonical views contain 228 observed departure questionnaires. See the
+shared full-questionnaire correction below.
 
 **Before changing:** recover the authors' guessing/forgetting rationale and the
 paper's definitions. Check whether any model treats `t1knowcor` or its peer
@@ -8313,25 +8320,24 @@ identities and questionnaire-presence evidence.
 | Denmark 2000 | `data/denmark-euro-2000/arrival.sav`:363 unique`DELNR`, linked to baseline`delnr`;358 overlap the current departure IDs. Nine arrival fields`S4_1:S9_1,S11_7_1,S11_9_1,S11_11_1`. Paper`data/denmark-euro-2000/papers/deliberative-democracy-euro.pdf`, Table 9/PDF p. 19; DK-02 distinguishes the current359 departure records. | The original arrival file and dictionaries are now public; DK-05 records exact-byte preservation. The arrival scores now join by DELNR; 358 of the 359 existing phase participants
 have an arrival form, and DELNR 203 remains missing. Do not equate363 arrival IDs,359 departure IDs and358 overlap, or infer missing identities from the anonymous deposited battery. |
 | Vermont 2007 | `data/vermont-energy-2007/survey.sav`: all nine`Q030T2:Q038T2`, with146 respondents having at least one answer. Final-report PDF p. 12 explicitly identifies arrival. | Use the reviewed report-based keys, including VT-01's renewables decision, while retaining the instrument ambiguity; do not alter keys simply to expose the wave. |
-| Michigan 2009 | `data/michigan-2009/survey.parquet`: four common arrival placements`t2q10/t2q11/t2q13/t2q14`, plus arrival-only standard-of-living placements`t2q7/t2q8`. The five factual counterparts `t2q38:t2q42` were recovered and are now public (MI-04). Final report PDF p. 13 marks the two added placements as arrival. | The maintained scored comparison still has **partial** arrival coverage; the recovered five factual responses can support a separately reviewed full nine-item arrival score. The two added items have196/209 correct responses; dividing by310 reproduces report63.2%/67.4%. Report11-item baseline combines telephone facts/four placements with two arrival-only placements. Do not silently turn that mixed-time bank into a uniform baseline. |
+| Michigan 2009 | `data/michigan-2009/survey.parquet`: four common arrival placements`t2q10/t2q11/t2q13/t2q14`, plus arrival-only standard-of-living placements`t2q7/t2q8`. The five factual counterparts `t2q38:t2q42` were recovered and are now public (MI-04). Final report PDF p. 13 marks the two added placements as arrival. | The approved nine-item arrival score now uses the recovered five factual responses with the four common placements (MI-06). The two added items have196/209 correct responses; dividing by310 reproduces report63.2%/67.4%. Report11-item baseline combines telephone facts/four placements with two arrival-only placements. Do not silently turn that mixed-time bank into a uniform baseline. |
 
 **Completed upstream implementation: arrival comparisons.** `R/analysis_arrivals.R`
 adds the five-question California, six-question Europolis, nine-question Denmark
 and nine-question Vermont arrival scores to their existing comparable batteries.
 Michigan receives a separate four-placement battery at telephone, arrival and
-exit. Five factual arrival fields have now been recovered (MI-04), but their
-scoring extension is pending; no telephone answers substitute for arrival. Separate expanded batteries retain California's eight
+exit. Five factual arrival fields have now been recovered and scored in the approved
+nine-item battery (MI-04/MI-06); no telephone answers substitute for arrival. Separate expanded batteries retain California's eight
 arrival/exit items, Europolis's nine, and Michigan's six placements. The latter
 two added Michigan placement questions never enter a telephone comparison.
 
-The arrival expansion preserved the 115,707 original phase-score rows and added
-17,439 rows, including explicit absent-wave records. AMR-04 subsequently adds
-4,838 unchanged source scores, bringing current phase-score coverage to 137,984
-rows. The typed `analysis_phase_item_responses` table now contains 936,138 rows:
-the earlier 867,004 mapped records, including 133,869 added arrival item/battery
-rows, plus 29,028 AMR responses and40,106 intermediate Tomorrow’s Europe/New Haven
-responses. Documented nonanswer-status corrections change
-status labels, not the underlying responses or numerical scores.
+The initial arrival expansion preserved the 115,707 original phase-score rows
+and added 17,439 rows, including explicit absent-wave records. Subsequent AMR
+and Michigan extensions retain their own source responses and explicit batteries.
+The current typed outputs contain 138,294 phase-score rows and 965,703
+item-response rows. Their generated manifests record the row counts and file
+hashes. Documented nonanswer-status corrections preserve literal responses;
+the unavailable-questionnaire corrections are separately identified below.
 Its key includes source cohort, respondent, battery, original survey instance,
 and canonical question ID. Multiple batteries can reuse an item without implying
 that their denominators or populations are interchangeable. The question catalog
@@ -10171,3 +10177,100 @@ definitions, and three weight-definition source hashes. The remaining changes
 are the corresponding manifests. No existing numerical respondent measure,
 knowledge or attitude score, item response, respondent identity, attendance
 classification, analytical cohort or survey weight changes.
+
+
+### UKEU-07: Whole unavailable departure questionnaires were scored as zero
+
+The original dictionary identifies 51 SAQ2 questionnaire fields, from `releu2`
+through `learn2` after excluding interspersed authored correctness summaries.
+All 51 contain literal −1 for exactly 676 of 900 people. The codebook defines
+SAQ2 as the departure questionnaire and distinguishes −1 “Not applicable” from
+9 “Not answered” and 3 “Don't know” (codebook lines 3314–3321). Those 676 rows
+therefore differ from a returned questionnaire containing blank or DK quiz items.
+Of them, 662 have source `PART == 0`; 14 have `PART == 1`. The attendee IDs are
+204, 502, 519, 802, 806, 812, 814, 833, 933, 937, 2132, 3601, 3611 and 3617.
+
+Apply the already approved unavailable-questionnaire convention: these post
+item correctness values and dependent scores are missing. The 662 source
+nonparticipants have absent departure forms; the 14 attendees retain unknown
+return status and positive attendance, with unavailable scores. All 224 observed
+post batteries and their 14 genuine zero scores are unchanged. Neither missing
+forms nor the score correction removes any of the 238 historical attendees.
+The existing 224-person Cor–Sood knowledge sample is unchanged.
+
+The respondent and group decoders now share one scoring implementation. Fourteen
+unavailable attendee questionnaires had entered peer and poll summaries as
+incorrect answers. The correction changes 1,934 wide-aggregate cells in 20
+fields; group-dependent changes involve 160 people across ten groups, while
+repeated poll summaries change for all 238 historical rows. Baseline knowledge
+and all attitudes, demographic values, weights and source identities remain
+unchanged. The mean departure score is .7178571429 among 224 observed forms,
+rather than .6756302521 when 14 unavailable forms were zero-filled. This is a
+missingness correction, not an estimate of deliberation's causal effect.
+
+`audit/corrections/uk-eu-1995/questionnaire_presence_values.csv` records each
+before/after wide value. The guarded approval ledger retains its original
+previous-value checks. Focused tests independently reconstruct full-form
+presence, returned blank quizzes, observed individual scores and shared peer
+quantities. The source input registry includes the full questionnaire dependency,
+so a downstream subset cannot silently omit the fields needed for presence.
+
+### SM-10: Source nonparticipants without departure forms received zero scores
+
+The 1,567 San Mateo source records with `participant == 0` have no `t2QSTGRP`
+header and no answers in the 90 original departure question fields between
+`t2Q1` and `t2q42`. The separately retained text-bin fields are blank as well.
+Original authored correctness and summary columns contain derived zeros for
+these people; those calculations are not evidence of an observed questionnaire.
+All 1,806 baseline records have actual baseline questionnaire answers, so this
+correction does not redefine baseline presence.
+
+The approved whole-form rule now sets these 1,567 departure scores and 12,536
+item correctness values to missing. All source people and raw answers remain.
+These records were outside the historical 239-person aggregate and paired
+analytical cohort, which are unchanged. The shared attendance layer classifies
+the formerly unknown attendance as inferred nonattendance based on the absent
+post questionnaire, with the explicit `inferred_absent_post_questionnaire` basis;
+it is not a direct observation of participation.
+
+Participant 1467 is different: source attendance is positive and a departure
+group header exists despite empty answers. The consultation in SM-08 is still
+pending. Its existing zero score, unknown questionnaire presence, positive
+attendance and source identity are preserved. This is an explicit pending
+exception rather than a general rule that unknown questionnaires score zero.
+Observed questionnaires with unanswered quiz items continue to score zero.
+
+### CA-08: Retained arrival and exit policy ratings were missing from typed outputs
+
+The existing California attitude table exposed 27 telephone responses but not
+39 corresponding arrival and exit policies. The source retains `t2q2a:am`
+and `t3q2a:am`. The final report, PDF pages 23–27, prints their matched T2/T3
+wording; the departure questionnaire, PDF pages 2–7, defines 0 as “extremely
+undesirable,” 10 as “extremely desirable,” 5 as the midpoint, and 99 as “No
+opinion.” A standalone arrival form has not been recovered; the report and
+authored paired-field analysis establish this particular repeated battery.
+This does not resolve the separate draft composite-index choices in CA-07.
+
+The typed source-attitude export now retains all 78 original fields across
+472 source rows: 36,816 response rows, including 30,040 observed integer ratings,
+1,667 missing ratings within observed forms, and 5,109 missing ratings whose
+whole-form status remains unknown. `value` is the original 0–10 rating and
+`normalized_value` is its fixed-endpoint division by ten. Nonanswers remain
+missing; there is no midpoint imputation, polarity reversal or new composite.
+No literal 99 occurs in the retained source. Its missing values cannot be
+retrospectively labeled as “No opinion” rather than blank.
+
+Native IDs are wave-specific: `t2_ParticipantNumber` for arrival and
+`t3_ParticipantNumber` for exit. All 472 source rows survive, including 76
+without canonical participant links. Source rows establish existing canonical
+matches for 396 people; missing merged IDs do not discard arrival-only forms.
+Presence uses actual full-questionnaire answers, not just this attitude battery.
+For example, arrival source row 1 and departure native ID 107 have all 39 policy
+ratings missing but other questionnaire answers, so their forms are observed.
+
+The generic `metadata/source_attitude_items.csv` preserves the 39 literal policy
+questions and item-specific source locators without altering the original
+lossless dictionaries. The added tables reproduce four independent report
+means at printed precision and leave every prior source-attitude value unchanged.
+Canonical knowledge, attendance, participants, weights and historical aggregates
+are unchanged by this transport extension.

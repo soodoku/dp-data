@@ -66,8 +66,8 @@ testthat::test_that("transport preserves all source records and cells", {
   built <- analysis_source_attitudes(participants, scores)
   definitions <- built$analysis_source_attitude_definitions
   responses <- built$analysis_source_attitude_responses
-  testthat::expect_equal(nrow(definitions), 829)
-  testthat::expect_equal(nrow(responses), 1039910)
+  testthat::expect_equal(nrow(definitions), 907)
+  testthat::expect_equal(nrow(responses), 1076726)
   testthat::expect_identical(participants, original_participants)
   testthat::expect_identical(scores, original_scores)
   testthat::expect_false(anyDuplicated(
@@ -97,6 +97,9 @@ testthat::test_that("transport preserves all source records and cells", {
         info = paste(spec$poll_id, spec$path, field)
       )
       id_column <- spec$id_column
+      if (spec$poll_id == "california-whats-next-2011") {
+        id_column <- paste0(substr(field, 1, 2), "_ParticipantNumber")
+      }
       if (spec$poll_id == "marousi-2006") {
         id_column <- if (startsWith(field, "P_")) {
           "P_Q1_0"

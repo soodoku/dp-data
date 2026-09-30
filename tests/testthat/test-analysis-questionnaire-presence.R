@@ -11,6 +11,8 @@ test_that("reviewed forms distinguish absent, unknown and returned forms", {
   expected <- tibble::tribble(
     ~poll, ~wave, ~observed, ~absent, ~unknown,
     "cpl-1996", "t2", 216L, 1030L, 0L,
+    "san-mateo-2008", "t2", 238L, 1567L, 1L,
+    "uk-eu-1995", "t2", 224L, 662L, 14L,
     "uk-crime-1994", "t2", 300L, 569L, 0L,
     "uk-general-election-1997", "t2", 275L, 935L, 0L,
     "uk-health-1998", "t2", 228L, 2L, 0L,
@@ -38,7 +40,8 @@ test_that("reviewed forms distinguish absent, unknown and returned forms", {
   }
   keys <- c("poll_id", "source_dataset", "respondent_id", "wave")
   expect_equal(anyDuplicated(evidence[keys]), 0L)
-  expect_false(any(evidence$poll_id == "san-mateo-2008"))
+  expect_equal(sum(evidence$poll_id == "san-mateo-2008" &
+                     is.na(evidence$wave_observed)), 2L)
   expect_false(any(evidence$poll_id == "tomorrows-europe-2007" &
                      evidence$wave == "t1"))
   expect_identical(people, questionnaire_analysis_people())
@@ -117,7 +120,7 @@ test_that("identities cannot silently cross source rows", {
   people$source_row[row] <- people$source_row[row] + 1L
   expect_error(analysis_reviewed_presence(people))
   unsupported <- tibble::tibble(
-    poll_id = "san-mateo-2008", source_dataset = "historical"
+    poll_id = "swepco-1996", source_dataset = "historical"
   )
   expect_null(analysis_reviewed_presence(unsupported))
 })

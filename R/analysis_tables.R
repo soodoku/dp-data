@@ -655,8 +655,10 @@ analysis_scores <- function(
       n_items = dplyr::n(),
       wave_absent = all(response_status == "wave_absent") |
         any(presence_reviewed %in% TRUE & form_observed %in% FALSE),
-      form_unobserved = any(presence_reviewed %in% TRUE &
-                              !form_observed %in% TRUE),
+      form_unobserved = any(
+        presence_reviewed %in% TRUE &
+          knowledge_form_unavailable(poll_id, form_observed)
+      ),
       n_observed = dplyr::if_else(
         wave_absent, 0L,
         dplyr::if_else(

@@ -29,6 +29,15 @@ validate_metadata <- function() {
           knowledge_codes$response_reason %in% "invalid_response")
   )
 
+  source_attitudes <- read_metadata("source_attitude_items")
+  stopifnot(
+    !anyNA(source_attitudes),
+    !anyDuplicated(source_attitudes[c("poll_id", "source_suffix")]),
+    all(source_attitudes$poll_id %in% polls$poll_id),
+    all(nzchar(source_attitudes$label)),
+    all(nzchar(source_attitudes$evidence))
+  )
+
   assertr::verify(
     polls,
     !anyDuplicated(.data$poll_id),

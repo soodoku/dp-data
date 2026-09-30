@@ -9,7 +9,7 @@ eu_source_value <- function(survey, field, allowed) {
 
 eu_knowledge_items <- function(survey, wave) {
   key <- c(eusize = 1, swiss = 2, inctax = 2, elect = 1, ptyapp = 2)
-  purrr::imap(key, function(correct, stem) {
+  items <- purrr::imap(key, function(correct, stem) {
     value <- eu_source_value(survey, paste0(stem, wave),
       if (wave == 1L) c(-1, 1, 2, 8, 9) else c(-1, 1, 2, 3, 9)
     )
@@ -17,6 +17,7 @@ eu_knowledge_items <- function(survey, wave) {
   }) |>
     tibble::as_tibble() |>
     as.matrix()
+  mask_reviewed_knowledge(items, survey, "uk-eu-1995", wave)
 }
 
 build_eu_individual <- function(survey = read_poll_survey("uk-eu-1995")) {

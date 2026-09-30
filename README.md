@@ -87,7 +87,7 @@ Tomorrow's Europe also has explicit pre-arrival-to-exit and arrival-to-exit
 pairs in `output/polardata/attitude_contrasts.parquet`.
 
 `make analysis` also exports source-level attitudes for Denmark, Vermont,
-Marousi and America in One Room 2024: 829 definitions and 1,039,910 response
+Marousi, California and America in One Room 2024: 907 definitions and 1,076,726 response
 rows, including recruitment and other source records outside the selected
 analysis panels. Raw codes, labels, source identities, interview phases and
 units remain available alongside valid numeric values. Percentage and dollar

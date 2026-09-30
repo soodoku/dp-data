@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.4.5
+
+- Keep knowledge missing for 1,567 unavailable San Mateo departure questionnaires;
+  preserve the separate pending blank-form interpretation for participant 1467.
+- Remove artificial UK–EU departure zeros for 676 unavailable questionnaires,
+  including 14 recorded attendees. Retain attendance and recompute dependent
+  knowledge, peer opportunity and poll summaries from observed questionnaires.
+- Publish California's 39 original policy ratings at arrival and exit in the
+  typed source-attitude tables, preserving all 472 source records, native wave
+  identifiers, raw values and explicitly classified missingness.
+
 ## 0.4.4
 
 - Add the recovered nine-question Michigan arrival knowledge score alongside

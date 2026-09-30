@@ -1,5 +1,5 @@
 table,grain,primary_key,format,status,description
-analysis_source_attitude_definitions,one original attitude field and source occasion,source_id + source_column + source_wave,parquet,current,Source-specific questions and response dictionaries for Denmark Vermont Marousi and AMR with verified units and nullable phase links
+analysis_source_attitude_definitions,one original attitude field and source occasion,source_id + source_column + source_wave,parquet,current,Source-specific questions and response dictionaries for Denmark Vermont Marousi California and AMR with verified units and nullable phase links
 analysis_source_attitude_responses,one original source row and attitude field,source_id + source_row + source_column,parquet,current,Raw and cleaned attitudes retaining every source row including unlinked recruitment and control records; no imputation or invented panel links
 respondents,one participant in one poll,poll_id + respondent_id,parquet,current,Reviewed knowledge samples with original survey IDs or documented file-scoped row IDs
 items,one fielded item in one poll,poll_id + item_id,csv,current,"One canonical knowledge item per poll across historical, Cor-Sood, and control batteries; metadata/items.csv"

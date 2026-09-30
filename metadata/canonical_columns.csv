@@ -15,7 +15,7 @@ analysis_source_attitude_definitions,item_family,string,FALSE,FALSE,Source-speci
 analysis_source_attitude_definitions,minimum,float64,TRUE,FALSE,Verified substantive lower endpoint when applicable
 analysis_source_attitude_definitions,maximum,float64,TRUE,FALSE,Verified substantive upper endpoint when applicable
 analysis_source_attitude_definitions,unit,string,FALSE,FALSE,Documented rating category percent dollars_per_month thermometer or unverified unit
-analysis_source_attitude_definitions,source_value_labels,string,FALSE,FALSE,JSON object preserving original code-to-label definitions
+analysis_source_attitude_definitions,source_value_labels,string,FALSE,FALSE,JSON object preserving original or instrument-documented code-to-label definitions
 analysis_source_attitude_definitions,evidence,string,FALSE,FALSE,Retained dictionary or questionnaire evidence for the source definition
 analysis_source_attitude_responses,poll_id,string,FALSE,FALSE,Stable poll identifier
 analysis_source_attitude_responses,source_id,string,FALSE,TRUE,Registered source file identifier
@@ -30,7 +30,7 @@ analysis_source_attitude_responses,wave_role,string,TRUE,FALSE,Verified intervie
 analysis_source_attitude_responses,source_dataset,string,TRUE,FALSE,Canonical participant namespace only when a source identity bridge is established
 analysis_source_attitude_responses,respondent_id,string,TRUE,FALSE,Canonical respondent identifier only when a source identity bridge is established
 analysis_source_attitude_responses,raw_value,float64,TRUE,FALSE,Unchanged original numeric response including invalid and nonanswer codes
-analysis_source_attitude_responses,source_response_label,string,TRUE,FALSE,Retained original value label for this response code
+analysis_source_attitude_responses,source_response_label,string,TRUE,FALSE,Original dictionary or verified questionnaire label for this response code
 analysis_source_attitude_responses,response_status,string,FALSE,FALSE,Answered dk refused nonanswer invalid_response unclassified_response absent_form blank or source_missing
 analysis_source_attitude_responses,value,float64,TRUE,FALSE,Substantive response in original units with documented nonanswers and invalid codes missing
 analysis_source_attitude_responses,normalized_value,float64,TRUE,FALSE,Zero-to-one response only when verified fixed endpoints exist and the measure is not nominal
