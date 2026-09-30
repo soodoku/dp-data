@@ -5018,9 +5018,17 @@ cell are unchanged. Nonempty counts are 262, 254, 279, 288 and 300;
 all are among the 310 selected participants. This corrects source preservation,
 not the maintained knowledge scores.
 
-The original `arrive.xls` contains 318 unique Participant IDs. Joining it by
-`postit` reproduces every one of the 1,550 merged arrival factual cells for
-the selected sample, treating original empty cells as merged empty strings.
+The preserved [original arrival workbook](../data/michigan-2009/source-materials/arrival-response-workbook.xls)
+contains 318 unique Participant IDs. Of the current 310 people, 309 match
+by `postit`, giving 1,545 original factual cells. After normalizing genuine
+empty cells to empty strings, 1,539 match the authored merge. Six literal
+uppercase `NA` responses became empty strings in `mifin.dta`: `t2q38` for
+IDs 221, 910 and 913, and `t2q39` for IDs 718, 910 and 913. These are authored
+source-normalization differences, not exact literal preservation. The original
+workbook now preserves the distinction; the maintained merged survey is not
+changed. Its 318 original records have 273, 265, 286, 296 and 308 nonempty
+factual responses, respectively. The additional five merged empty cells for
+ID 5000 correspond to no original arrival row.
 Recruiter `mi.sav` has 314 distinct nonmissing `postit` values; the Sunday
 workbook has 314 distinct IDs. Their intersection is exactly the current 310.
 Sunday IDs 208, 2003, 2014 and 5002 have no recruiter match; recruiter IDs

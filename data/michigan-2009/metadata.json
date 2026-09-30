@@ -192,6 +192,16 @@
       "local_artifact_id": "mi-arrival-questionnaire-pdf",
       "accessed": "2026-09-30",
       "notes": "PDF companion generated from a temporary copy with tracked changes accepted; original DOC unchanged. LibreOffice automatic question numbers differ from source data IDs: identify questions by wording. Factual battery on PDF pp.11-12."
+    },
+    {
+      "reference_id": "mi-original-arrival-response-workbook",
+      "poll_id": "michigan-2009",
+      "kind": "data",
+      "title": "Michigan original arrival response workbook",
+      "url": null,
+      "local_artifact_id": "mi-original-arrival-response-workbook",
+      "accessed": "2026-09-30",
+      "notes": "Exact archived arrival workbook:318 unique Participant IDs,135 columns,one sheet. Includes scientific questionnaire responses and political-identification free text; staff coder initials and late-arrival flag retained; no respondent names or contact fields. One unnamed column contains only a single s. Preserve as an earlier source version, not an analysis input: among309 current matched respondents,six literal uppercase NA strings in t2q38 (IDs221,910,913) and t2q39 (IDs718,910,913) became empty strings in authored mifin.dta. Nine workbook IDs fall outside the current310-person cohort; do not silently append them. Original cdd-data-20260923 archive SHA256 5dde554c16bd4bfdea5bf55962c3652b198df19d67646ad9d25df423d423992a. Respondent data workbook, not document-preview material."
     }
   ],
   "material_coverage": [
@@ -411,6 +421,21 @@
       "publication_status": "published",
       "notes": "PDF companion generated from a temporary copy with tracked changes accepted; original DOC unchanged. LibreOffice automatic question numbers differ from source data IDs: identify questions by wording. Factual battery on PDF pp.11-12.",
       "relative_path": "questionnaires/arrival-questionnaire.pdf"
+    },
+    {
+      "artifact_id": "mi-original-arrival-response-workbook",
+      "poll_id": "michigan-2009",
+      "artifact_type": "data",
+      "title": "Michigan original arrival response workbook",
+      "location": "data/michigan-2009/source-materials/arrival-response-workbook.xls",
+      "source_id": "mi-original-arrival-response-workbook",
+      "original_archive_path": "data/Michigan/data/arrive.xls",
+      "sha256": "4b83b5fe2efff56efd94da4ea0a7df54f5bbee52045c68dd969f5b9a5dfecf46",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Exact archived arrival workbook:318 unique Participant IDs,135 columns,one sheet. Includes scientific questionnaire responses and political-identification free text; staff coder initials and late-arrival flag retained; no respondent names or contact fields. One unnamed column contains only a single s. Preserve as an earlier source version, not an analysis input: among309 current matched respondents,six literal uppercase NA strings in t2q38 (IDs221,910,913) and t2q39 (IDs718,910,913) became empty strings in authored mifin.dta. Nine workbook IDs fall outside the current310-person cohort; do not silently append them. Original cdd-data-20260923 archive SHA256 5dde554c16bd4bfdea5bf55962c3652b198df19d67646ad9d25df423d423992a. Respondent data workbook, not document-preview material.",
+      "relative_path": "source-materials/arrival-response-workbook.xls"
     }
   ],
   "document_previews": [
