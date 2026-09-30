@@ -706,52 +706,52 @@
       {
         "issue_id": "ZG-01",
         "title": "ZG-01: Component joins and three item-coding overrides are explicit",
-        "evidence_path": "../../docs/poll-issues.md#zg-01"
+        "evidence_path": "../../docs/poll-evidence.md#zg-01"
       },
       {
         "issue_id": "ZG-02",
         "title": "ZG-02: Scale the village-road rating and use post-wave main roads",
-        "evidence_path": "../../docs/poll-issues.md#zg-02"
+        "evidence_path": "../../docs/poll-evidence.md#zg-02"
       },
       {
         "issue_id": "ZG-03",
         "title": "ZG-03: Two road indices make covariance numerically singular",
-        "evidence_path": "../../docs/poll-issues.md#zg-03"
+        "evidence_path": "../../docs/poll-evidence.md#zg-03"
       },
       {
         "issue_id": "ZG-04",
         "title": "ZG-04: One baseline age is 1; the paired departure age is 33",
-        "evidence_path": "../../docs/poll-issues.md#zg-04"
+        "evidence_path": "../../docs/poll-evidence.md#zg-04"
       },
       {
         "issue_id": "ZG-05",
         "title": "ZG-05: The Wenchang Main Avenue slot duplicates the main-roads index",
-        "evidence_path": "../../docs/poll-issues.md#zg-05"
+        "evidence_path": "../../docs/poll-evidence.md#zg-05"
       },
       {
         "issue_id": "ZG-06",
         "title": "ZG-06: All nine attitude batteries have been reconstructed and source versions compared",
-        "evidence_path": "../../docs/poll-issues.md#zg-06"
+        "evidence_path": "../../docs/poll-evidence.md#zg-06"
       },
       {
         "issue_id": "ZG-07",
         "title": "ZG-07: Thirty-four people have no matched participant departure questionnaire",
-        "evidence_path": "../../docs/poll-issues.md#zg-07"
+        "evidence_path": "../../docs/poll-evidence.md#zg-07"
       },
       {
         "issue_id": "ZG-08",
         "title": "ZG-08: Township Image has two authored definitions",
-        "evidence_path": "../../docs/poll-issues.md#zg-08"
+        "evidence_path": "../../docs/poll-evidence.md#zg-08"
       },
       {
         "issue_id": "ZG-09",
         "title": "ZG-09: Preserve out-of-range knowledge codes as missing",
-        "evidence_path": "../../docs/poll-issues.md#zg-09"
+        "evidence_path": "../../docs/poll-evidence.md#zg-09"
       },
       {
         "issue_id": "ZG-10",
         "title": "ZG-10: Many exit knowledge scores are zero, including wholly blank batteries",
-        "evidence_path": "../../docs/poll-issues.md#zg-10"
+        "evidence_path": "../../docs/poll-evidence.md#zg-10"
       }
     ],
     "reviewed_flags": [
@@ -863,7 +863,7 @@
         "n_items": 4
       }
     ],
-    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",
     "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
   }

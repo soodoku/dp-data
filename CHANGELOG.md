@@ -2,6 +2,12 @@
 
 ## 0.4.5
 
+- Carry reviewed respondent demographics and briefing measures into canonical
+  source cohorts where those fields were previously missing. Preserve all
+  existing values and source units; normalization remains a separate step.
+- Apply the shared knowledge-response classification to Marousi as well:
+  78 observed blank answers receive the DK-like category already used elsewhere,
+  without changing their scores or raw missingness reasons.
 - Retain unusual zero-score and wholly blank knowledge batteries, document
   San Mateo and Zeguo publication comparisons, and add typed person/battery/wave
   flags for downstream robustness checks. No zero-score exclusions are applied.

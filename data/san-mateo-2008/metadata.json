@@ -610,47 +610,47 @@
       {
         "issue_id": "SM-01",
         "title": "SM-01: Existing key change needs version-specific instrument evidence",
-        "evidence_path": "../../docs/poll-issues.md#sm-01"
+        "evidence_path": "../../docs/poll-evidence.md#sm-01"
       },
       {
         "issue_id": "SM-02",
         "title": "SM-02: IDs and summary batteries follow an earlier analysis stage",
-        "evidence_path": "../../docs/poll-issues.md#sm-02"
+        "evidence_path": "../../docs/poll-evidence.md#sm-02"
       },
       {
         "issue_id": "SM-03",
         "title": "SM-03: Baseline knowledge uses the eight questions in the instrument (corrected)",
-        "evidence_path": "../../docs/poll-issues.md#sm-03"
+        "evidence_path": "../../docs/poll-evidence.md#sm-03"
       },
       {
         "issue_id": "SM-04",
         "title": "SM-04: Anonymous item rows and reconstructed respondents had different order",
-        "evidence_path": "../../docs/poll-issues.md#sm-04"
+        "evidence_path": "../../docs/poll-evidence.md#sm-04"
       },
       {
         "issue_id": "SM-05",
         "title": "SM-05: Housing-income question includes three income groups (catalog corrected)",
-        "evidence_path": "../../docs/poll-issues.md#sm-05"
+        "evidence_path": "../../docs/poll-evidence.md#sm-05"
       },
       {
         "issue_id": "SM-11",
         "title": "SM-11: Blank knowledge batteries and zero scores are retained but flagged",
-        "evidence_path": "../../docs/poll-issues.md#sm-11"
+        "evidence_path": "../../docs/poll-evidence.md#sm-11"
       },
       {
         "issue_id": "SM-08",
         "title": "SM-08: Participant 1467 has no departure questionnaire answers — approved",
-        "evidence_path": "../../docs/poll-issues.md#sm-08"
+        "evidence_path": "../../docs/poll-evidence.md#sm-08"
       },
       {
         "issue_id": "SM-09",
         "title": "SM-09: Preserve scientific source strings, dates and questionnaire headers",
-        "evidence_path": "../../docs/poll-issues.md#sm-09"
+        "evidence_path": "../../docs/poll-evidence.md#sm-09"
       },
       {
         "issue_id": "SM-10",
         "title": "SM-10: Source nonparticipants without departure forms received zero scores",
-        "evidence_path": "../../docs/poll-issues.md#sm-10"
+        "evidence_path": "../../docs/poll-evidence.md#sm-10"
       }
     ],
     "reviewed_flags": [
@@ -761,7 +761,7 @@
         "n_items": 8
       }
     ],
-    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",
     "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
   }

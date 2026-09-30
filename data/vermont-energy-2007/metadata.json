@@ -453,16 +453,16 @@
       {
         "issue_id": "VT-01",
         "title": "VT-01: Key ambiguity must remain explicit",
-        "evidence_path": "../../docs/poll-issues.md#vt-01"
+        "evidence_path": "../../docs/poll-evidence.md#vt-01"
       },
       {
         "issue_id": "VT-03",
         "title": "VT-03: The question catalog inherited incorrect choice labels (corrected)",
-        "evidence_path": "../../docs/poll-issues.md#vt-03"
+        "evidence_path": "../../docs/poll-evidence.md#vt-03"
       }
     ],
     "reviewed_flags": [],
-    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",
     "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
   }

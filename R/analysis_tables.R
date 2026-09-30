@@ -764,15 +764,15 @@ build_analysis_tables <- function() {
   ) |>
     mask_reviewed_knowledge_items(analysis_te_arrival_presence(participants)) |>
     enrich_knowledge_responses(catalog)
-  phase_scoring <- standardize_knowledge_scores(phase_items)
-  stopifnot(nrow(phase_scoring$dk_correct_conflicts) == 0L)
-  phase_items <- phase_scoring$items
   phase_items <- dplyr::bind_rows(
     phase_items,
     analysis_marousi_phase_items(
       phase_evidence$participants, phase_evidence$scores
     )
   )
+  phase_scoring <- standardize_knowledge_scores(phase_items)
+  stopifnot(nrow(phase_scoring$dk_correct_conflicts) == 0L)
+  phase_items <- phase_scoring$items
   presence <- phase_evidence$scores |>
     dplyr::filter(grepl(":knowledge$", battery_id)) |>
     dplyr::transmute(

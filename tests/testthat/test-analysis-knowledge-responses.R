@@ -309,6 +309,23 @@ test_that("observed blanks are DK-like without erasing raw missingness", {
   expect_identical(standardize_knowledge_scores(result)$items, result)
 })
 
+test_that("every observed blank export receives the shared DK-like category", {
+  items <- arrow::read_parquet(project_path(
+    "output", "analysis", "analysis_phase_item_responses.parquet"
+  ))
+  blank <- items |>
+    dplyr::filter(
+      wave_observed %in% TRUE, correct %in% 0L,
+      response_reason %in% c("blank", "source_missing")
+    )
+  expect_gt(dplyr::n_distinct(blank$poll_id), 10L)
+  expect_true(all(blank$knowledge_response %in% "dk"))
+  marousi <- dplyr::filter(blank, poll_id == "marousi-2006")
+  expect_equal(nrow(marousi), 78L)
+  expect_true(all(is.na(marousi$raw_value)))
+  expect_true(all(marousi$response_reason == "blank"))
+})
+
 
 test_that("Zeguo offered codes distinguish DK from invalid knowledge answers", {
   items <- tibble::tibble(

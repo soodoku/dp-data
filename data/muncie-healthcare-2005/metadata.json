@@ -118,7 +118,7 @@
   "issues": {
     "evidence_index": [],
     "reviewed_flags": [],
-    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",
     "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
   }

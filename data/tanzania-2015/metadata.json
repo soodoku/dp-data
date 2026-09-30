@@ -380,46 +380,46 @@
       {
         "issue_id": "TZ-01",
         "title": "TZ-01 — group assignment does not by itself establish treatment eligibility",
-        "evidence_path": "../../docs/poll-issues.md#tz-01"
+        "evidence_path": "../../docs/poll-evidence.md#tz-01"
       },
       {
         "issue_id": "TZ-02",
         "title": "TZ-02 — retain the observed sex field in the participant export (corrected)",
-        "evidence_path": "../../docs/poll-issues.md#tz-02"
+        "evidence_path": "../../docs/poll-evidence.md#tz-02"
       },
       {
         "issue_id": "TZ-03",
         "title": "TZ-03 — negative missing-component code excluded from the knowledge index",
-        "evidence_path": "../../docs/poll-issues.md#tz-03"
+        "evidence_path": "../../docs/poll-evidence.md#tz-03"
       },
       {
         "issue_id": "TZ-04",
         "title": "TZ-04 — panel membership requires both selected measurements",
-        "evidence_path": "../../docs/poll-issues.md#tz-04"
+        "evidence_path": "../../docs/poll-evidence.md#tz-04"
       },
       {
         "issue_id": "TZ-05",
         "title": "TZ-05 — borrowing uses five categories; include it with the other policy items (corrected)",
-        "evidence_path": "../../docs/poll-issues.md#tz-05"
+        "evidence_path": "../../docs/poll-evidence.md#tz-05"
       },
       {
         "issue_id": "TZ-06",
         "title": "TZ-06 — original subgroup syntax and education label need separate review",
-        "evidence_path": "../../docs/poll-issues.md#tz-06"
+        "evidence_path": "../../docs/poll-evidence.md#tz-06"
       },
       {
         "issue_id": "TZ-07",
         "title": "TZ-07 — use native household IDs consistently across typed exports",
-        "evidence_path": "../../docs/poll-issues.md#tz-07"
+        "evidence_path": "../../docs/poll-evidence.md#tz-07"
       },
       {
         "issue_id": "TZ-08",
         "title": "TZ-08 — recognize questionnaires from actual policy answers",
-        "evidence_path": "../../docs/poll-issues.md#tz-08"
+        "evidence_path": "../../docs/poll-evidence.md#tz-08"
       }
     ],
     "reviewed_flags": [],
-    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",
     "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
   }

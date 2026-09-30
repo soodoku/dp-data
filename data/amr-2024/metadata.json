@@ -315,31 +315,31 @@
       {
         "issue_id": "AMR-01",
         "title": "AMR-01 — six-country knowledge scoring checked against the report",
-        "evidence_path": "../../docs/poll-issues.md#amr-01"
+        "evidence_path": "../../docs/poll-evidence.md#amr-01"
       },
       {
         "issue_id": "AMR-02",
         "title": "AMR-02 — populate the observed gender field (corrected)",
-        "evidence_path": "../../docs/poll-issues.md#amr-02"
+        "evidence_path": "../../docs/poll-evidence.md#amr-02"
       },
       {
         "issue_id": "AMR-03",
         "title": "AMR-03 — source ages differ across interviews (retained source limitation)",
-        "evidence_path": "../../docs/poll-issues.md#amr-03"
+        "evidence_path": "../../docs/poll-evidence.md#amr-03"
       },
       {
         "issue_id": "AMR-04",
         "title": "AMR-04 — preserve verified phases and recovered measurement evidence (implemented)",
-        "evidence_path": "../../docs/poll-issues.md#amr-04"
+        "evidence_path": "../../docs/poll-evidence.md#amr-04"
       },
       {
         "issue_id": "NEW-01",
         "title": "NEW-01 — Newer-poll mode labels and reported sample totals",
-        "evidence_path": "../../docs/poll-issues.md#new-01"
+        "evidence_path": "../../docs/poll-evidence.md#new-01"
       }
     ],
     "reviewed_flags": [],
-    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",
     "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
   }

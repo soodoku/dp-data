@@ -347,26 +347,26 @@
       {
         "issue_id": "MAR-01",
         "title": "MAR-01 — derived post knowledge zeros need an item-level and wave bridge",
-        "evidence_path": "../../docs/poll-issues.md#mar-01"
+        "evidence_path": "../../docs/poll-evidence.md#mar-01"
       },
       {
         "issue_id": "MAR-02",
         "title": "MAR-02 — Original source bridges the report; partial quizzes were zeroed as whole scores",
-        "evidence_path": "../../docs/poll-issues.md#mar-02"
+        "evidence_path": "../../docs/poll-evidence.md#mar-02"
       },
       {
         "issue_id": "MAR-03",
         "title": "MAR-03: Publish the original seven-item answers at each verified phase",
-        "evidence_path": "../../docs/poll-issues.md#mar-03"
+        "evidence_path": "../../docs/poll-evidence.md#mar-03"
       },
       {
         "issue_id": "MAR-04",
         "title": "MAR-04: Mayor-performance responses lack verified scale instructions",
-        "evidence_path": "../../docs/poll-issues.md#mar-04"
+        "evidence_path": "../../docs/poll-evidence.md#mar-04"
       }
     ],
     "reviewed_flags": [],
-    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",
     "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
   }

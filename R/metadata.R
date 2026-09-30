@@ -419,7 +419,7 @@ read_poll_issues <- function() {
 }
 
 poll_issue_index <- function(register = read_poll_issues()) {
-  lines <- readLines(project_path("docs", "poll-issues.md"), warn = FALSE)
+  lines <- readLines(project_path("docs", "poll-evidence.md"), warn = FALSE)
   headings <- grep(
     "^#{2,3} [A-Z][A-Z0-9]*-[0-9]{2,4}([: /]| —)", lines, value = TRUE
   )
@@ -440,7 +440,7 @@ poll_issue_index <- function(register = read_poll_issues()) {
       stopifnot(paste0('<a id="', anchor, '"></a>') %in% lines)
       tibble::tibble(
         issue_id = id, poll_id = poll_ids, title = title,
-        evidence_path = paste0("../../docs/poll-issues.md#", anchor)
+        evidence_path = paste0("../../docs/poll-evidence.md#", anchor)
       )
     })
   })
@@ -486,7 +486,7 @@ poll_documentation <- function(poll, artifacts, references, facts,
         function(issue) issue$poll_id == poll_id, issue_register$issues
       ),
       shared_rules_path = paste0(
-        "../../docs/poll-issues.md#",
+        "../../docs/poll-evidence.md#",
         "cross-poll-issues-for-the-eventual-schema"
       ),
       structured_register_path = "../../metadata/poll_issues.json",

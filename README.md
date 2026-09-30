@@ -29,7 +29,7 @@ URLs, access dates and SHA-256 hashes; shared files have one physical copy under
 `data/<study>/`. Data recoding belongs in dp-data; downstream repositories
 consume versioned variables and perform estimation. Existing downstream
 recodes, including those in the out-of-sample study, still need migration with
-explicit value comparisons; see the [migration inventory](docs/poll-issues.md#x-11-data-recoding-belongs-upstream-not-in-downstream-readers).
+explicit value comparisons; see the [migration inventory](docs/poll-evidence.md#x-11).
 Poll-specific surveys and reference materials belong under `data/<poll_id>/`,
 with questionnaires, codebooks, briefing materials, reports and papers in the
 appropriate poll folder. `data/shared/` is reserved for genuinely cross-poll

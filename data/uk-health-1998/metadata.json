@@ -652,76 +652,76 @@
       {
         "issue_id": "UKH-01",
         "title": "UKH-01: Severity direction is documented; do not label it a coding error",
-        "evidence_path": "../../docs/poll-issues.md#ukh-01"
+        "evidence_path": "../../docs/poll-evidence.md#ukh-01"
       },
       {
         "issue_id": "UKH-02",
         "title": "UKH-02: Separate empirical rescaling changes the cross-wave scale",
-        "evidence_path": "../../docs/poll-issues.md#ukh-02"
+        "evidence_path": "../../docs/poll-evidence.md#ukh-02"
       },
       {
         "issue_id": "UKH-03",
         "title": "UKH-03: Government/public input has a non-monotonic stored recode",
-        "evidence_path": "../../docs/poll-issues.md#ukh-03"
+        "evidence_path": "../../docs/poll-evidence.md#ukh-03"
       },
       {
         "issue_id": "UKH-04",
         "title": "UKH-04: Different index versions and orientations coexist",
-        "evidence_path": "../../docs/poll-issues.md#ukh-04"
+        "evidence_path": "../../docs/poll-evidence.md#ukh-04"
       },
       {
         "issue_id": "UKH-05",
         "title": "UKH-05: Education is an ordinal school-qualification measure",
-        "evidence_path": "../../docs/poll-issues.md#ukh-05"
+        "evidence_path": "../../docs/poll-evidence.md#ukh-05"
       },
       {
         "issue_id": "UKH-06",
         "title": "UKH-06: Universe, missingness and earliest-source boundaries",
-        "evidence_path": "../../docs/poll-issues.md#ukh-06"
+        "evidence_path": "../../docs/poll-evidence.md#ukh-06"
       },
       {
         "issue_id": "UKH-07",
         "title": "UKH-07: Nine selected indices are not the full aggregate inventory",
-        "evidence_path": "../../docs/poll-issues.md#ukh-07"
+        "evidence_path": "../../docs/poll-evidence.md#ukh-07"
       },
       {
         "issue_id": "UKH-08",
         "title": "UKH-08: Individual and group high-income fields use different thresholds",
-        "evidence_path": "../../docs/poll-issues.md#ukh-08"
+        "evidence_path": "../../docs/poll-evidence.md#ukh-08"
       },
       {
         "issue_id": "UKH-09",
         "title": "UKH-09: Attitude summaries precede the final severity rescaling",
-        "evidence_path": "../../docs/poll-issues.md#ukh-09"
+        "evidence_path": "../../docs/poll-evidence.md#ukh-09"
       },
       {
         "issue_id": "UKH-10",
         "title": "UKH-10: Poll-level and respondent-level knowledge have different precision",
-        "evidence_path": "../../docs/poll-issues.md#ukh-10"
+        "evidence_path": "../../docs/poll-evidence.md#ukh-10"
       },
       {
         "issue_id": "UKH-11",
         "title": "UKH-11: Adjusted baseline knowledge and peer scores use departure answers",
-        "evidence_path": "../../docs/poll-issues.md#ukh-11"
+        "evidence_path": "../../docs/poll-evidence.md#ukh-11"
       },
       {
         "issue_id": "UKH-12",
         "title": "UKH-12: Breast-screening correctness conflicts across source versions",
-        "evidence_path": "../../docs/poll-issues.md#ukh-12"
+        "evidence_path": "../../docs/poll-evidence.md#ukh-12"
       },
       {
         "issue_id": "UKH-13",
         "title": "UKH-13: School qualifications were mislabeled as a bachelor's degree",
-        "evidence_path": "../../docs/poll-issues.md#ukh-13"
+        "evidence_path": "../../docs/poll-evidence.md#ukh-13"
       },
       {
         "issue_id": "UKH-14",
         "title": "UKH-14: Full attitude battery checked against the source definitions",
-        "evidence_path": "../../docs/poll-issues.md#ukh-14"
+        "evidence_path": "../../docs/poll-evidence.md#ukh-14"
       }
     ],
     "reviewed_flags": [],
-    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",
     "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
   }

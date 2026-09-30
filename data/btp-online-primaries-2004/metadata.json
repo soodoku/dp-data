@@ -342,11 +342,11 @@
       {
         "issue_id": "BTPOP-02",
         "title": "BTPOP-02: Absent follow-up forms are not zero knowledge (corrected)",
-        "evidence_path": "../../docs/poll-issues.md#btpop-02"
+        "evidence_path": "../../docs/poll-evidence.md#btpop-02"
       }
     ],
     "reviewed_flags": [],
-    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",
     "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
   }

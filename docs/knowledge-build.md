@@ -433,4 +433,4 @@ of itemwise T1–T2 correctness products. Age, education, sex, ethnicity, politi
 interest, eight attitude measures, and their individual transformations follow
 `uk_eu.R` and the later merge scripts. Explicitly absent fields stay missing.
 The surprising attitude normalizations and ethnicity exclusion are preserved
-and detailed in [UKEU-02–05](poll-issues.md#uk–eu-1995--uk-eu-1995).
+and detailed in [UKEU-02–05](poll-evidence.md#uk–eu-1995--uk-eu-1995).

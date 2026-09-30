@@ -660,26 +660,26 @@
       {
         "issue_id": "PR-01",
         "title": "PR-01: Draft counts and recodes are not the executed aggregate definition",
-        "evidence_path": "../../docs/poll-issues.md#pr-01"
+        "evidence_path": "../../docs/poll-evidence.md#pr-01"
       },
       {
         "issue_id": "PR-04",
         "title": "PR-04: All three main attitude pairs verified; unconsidered responses excluded",
-        "evidence_path": "../../docs/poll-issues.md#pr-04"
+        "evidence_path": "../../docs/poll-evidence.md#pr-04"
       },
       {
         "issue_id": "PR-02",
         "title": "PR-02: Peer gain now uses the whole group (corrected)",
-        "evidence_path": "../../docs/poll-issues.md#pr-02"
+        "evidence_path": "../../docs/poll-evidence.md#pr-02"
       },
       {
         "issue_id": "PR-03",
         "title": "PR-03: Duplicate aggregate rows and doubled group counts (corrected)",
-        "evidence_path": "../../docs/poll-issues.md#pr-03"
+        "evidence_path": "../../docs/poll-evidence.md#pr-03"
       }
     ],
     "reviewed_flags": [],
-    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",
     "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
   }

@@ -377,26 +377,26 @@
       {
         "issue_id": "A1R19-01",
         "title": "A1R19-01 — attendance and post-survey completion differ (corrected)",
-        "evidence_path": "../../docs/poll-issues.md#a1r19-01"
+        "evidence_path": "../../docs/poll-evidence.md#a1r19-01"
       },
       {
         "issue_id": "A1R19-02",
         "title": "A1R19-02 — preserve documented nonanswer status (corrected)",
-        "evidence_path": "../../docs/poll-issues.md#a1r19-02"
+        "evidence_path": "../../docs/poll-evidence.md#a1r19-02"
       },
       {
         "issue_id": "A1R19-03",
         "title": "A1R19-03 — published party means reproduce when a nonresponse code is included (checked; retain missing coding)",
-        "evidence_path": "../../docs/poll-issues.md#a1r19-03"
+        "evidence_path": "../../docs/poll-evidence.md#a1r19-03"
       },
       {
         "issue_id": "A1R-2019",
         "title": "A1R-2019: recruitment is not a verified invitation",
-        "evidence_path": "../../docs/poll-issues.md#a1r-2019"
+        "evidence_path": "../../docs/poll-evidence.md#a1r-2019"
       }
     ],
     "reviewed_flags": [],
-    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",
     "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
   }

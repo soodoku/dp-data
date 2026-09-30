@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "interpretation": "Reviewed unusual observations are retained in the main data. Flags support sensitivity analyses; they do not establish false records or authorize recoding. Detailed evidence and all earlier issue entries remain in docs/poll-issues.md.",
+  "interpretation": "Reviewed unusual observations are retained in the main data. Flags support sensitivity analyses; they do not establish false records or authorize recoding. Current decisions are summarized in docs/poll-issues.md. Detailed evidence and all earlier issue entries remain in docs/poll-evidence.md.",
   "robustness": {
     "status": "planned_downstream_analysis",
     "table": "output/analysis/analysis_knowledge_flags.parquet",

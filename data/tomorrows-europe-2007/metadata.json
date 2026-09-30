@@ -876,36 +876,36 @@
       {
         "issue_id": "TE-03",
         "title": "TE-03: Historical aggregate selects 344 people by the earlier group field",
-        "evidence_path": "../../docs/poll-issues.md#te-03"
+        "evidence_path": "../../docs/poll-evidence.md#te-03"
       },
       {
         "issue_id": "TE-04",
         "title": "TE-04: Two departure indices mix arrival and departure answers",
-        "evidence_path": "../../docs/poll-issues.md#te-04"
+        "evidence_path": "../../docs/poll-evidence.md#te-04"
       },
       {
         "issue_id": "TE-06",
         "title": "TE-06: Use exit rather than arrival for the main attitude comparison (approved)",
-        "evidence_path": "../../docs/poll-issues.md#te-06"
+        "evidence_path": "../../docs/poll-evidence.md#te-06"
       },
       {
         "issue_id": "TE-07",
         "title": "TE-07: Full attitude battery and source-direction review",
-        "evidence_path": "../../docs/poll-issues.md#te-07"
+        "evidence_path": "../../docs/poll-evidence.md#te-07"
       },
       {
         "issue_id": "TE-05",
         "title": "TE-05: Include postgraduate education and use the source age (corrected)",
-        "evidence_path": "../../docs/poll-issues.md#te-05"
+        "evidence_path": "../../docs/poll-evidence.md#te-05"
       },
       {
         "issue_id": "TE-08",
         "title": "TE-08: Preserve source nonanswers and literal wave identities in transport",
-        "evidence_path": "../../docs/poll-issues.md#te-08"
+        "evidence_path": "../../docs/poll-evidence.md#te-08"
       }
     ],
     "reviewed_flags": [],
-    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",
     "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
   }

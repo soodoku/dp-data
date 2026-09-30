@@ -84,7 +84,7 @@ unavailable. AMR's recovered questionnaire, expert answer table and harmonized
 codebooks supply all six items' options and keyed text. Its questionnaire Q21
 copies the preceding question's options, but the expert table and codebook agree
 on the infection-prevention options and key 5. Existing scoring is preserved;
-[Poll issues](poll-issues.md#amr-04--preserve-verified-phases-and-recovered-measurement-evidence-implemented)
+[Poll issues](poll-evidence.md#amr-04)
 records the source conflict and remaining evidence gaps.
 
 Attitude indices in the respondent layer distinguish missing-preserving values

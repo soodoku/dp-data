@@ -859,31 +859,31 @@
       {
         "issue_id": "NIC2-01",
         "title": "NIC2-01: Historical identity is now a verified, ID-only bridge",
-        "evidence_path": "../../docs/poll-issues.md#nic2-01"
+        "evidence_path": "../../docs/poll-evidence.md#nic2-01"
       },
       {
         "issue_id": "NIC2-02",
         "title": "NIC2-02: Authored attitude versions reconciled; selected security rule preserved",
-        "evidence_path": "../../docs/poll-issues.md#nic2-02"
+        "evidence_path": "../../docs/poll-evidence.md#nic2-02"
       },
       {
         "issue_id": "NIC2-03",
         "title": "NIC2-03: Knowledge and group gain have specific storage stages",
-        "evidence_path": "../../docs/poll-issues.md#nic2-03"
+        "evidence_path": "../../docs/poll-evidence.md#nic2-03"
       },
       {
         "issue_id": "NIC2-04",
         "title": "NIC2-04: Demographic categories and thresholds require separate review",
-        "evidence_path": "../../docs/poll-issues.md#nic2-04"
+        "evidence_path": "../../docs/poll-evidence.md#nic2-04"
       },
       {
         "issue_id": "NIC2-05",
         "title": "NIC2-05: Six cross-poll attitude names point to the wrong indices (catalog corrected)",
-        "evidence_path": "../../docs/poll-issues.md#nic2-05"
+        "evidence_path": "../../docs/poll-evidence.md#nic2-05"
       }
     ],
     "reviewed_flags": [],
-    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",
     "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
   }

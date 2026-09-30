@@ -447,26 +447,26 @@
       {
         "issue_id": "NI-03",
         "title": "NI-03: Knowledge keys reproduce the paper; restore the first question's condition",
-        "evidence_path": "../../docs/poll-issues.md#ni-03"
+        "evidence_path": "../../docs/poll-evidence.md#ni-03"
       },
       {
         "issue_id": "NI-04",
         "title": "NI-04 — label follow-up nonanswers explicitly (corrected)",
-        "evidence_path": "../../docs/poll-issues.md#ni-04"
+        "evidence_path": "../../docs/poll-evidence.md#ni-04"
       },
       {
         "issue_id": "NI-05",
         "title": "NI-05: A follow-up-only source is not a selected pre/post panel (corrected)",
-        "evidence_path": "../../docs/poll-issues.md#ni-05"
+        "evidence_path": "../../docs/poll-evidence.md#ni-05"
       },
       {
         "issue_id": "NI-06",
         "title": "NI-06: Preserve literal argument-code sets during CSV import (corrected)",
-        "evidence_path": "../../docs/poll-issues.md#ni-06"
+        "evidence_path": "../../docs/poll-evidence.md#ni-06"
       }
     ],
     "reviewed_flags": [],
-    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",
     "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
   }

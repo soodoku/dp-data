@@ -589,16 +589,16 @@
       {
         "issue_id": "UKEU-06",
         "title": "UKEU-06: Full four-index attitude review after the approved scale fixes",
-        "evidence_path": "../../docs/poll-issues.md#ukeu-06"
+        "evidence_path": "../../docs/poll-evidence.md#ukeu-06"
       },
       {
         "issue_id": "UKEU-07",
         "title": "UKEU-07: Whole unavailable departure questionnaires were scored as zero",
-        "evidence_path": "../../docs/poll-issues.md#ukeu-07"
+        "evidence_path": "../../docs/poll-evidence.md#ukeu-07"
       }
     ],
     "reviewed_flags": [],
-    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",
     "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
   }

@@ -861,36 +861,36 @@
       {
         "issue_id": "DK-02",
         "title": "DK-02: Independent factual keys and departure estimates agree (checked)",
-        "evidence_path": "../../docs/poll-issues.md#dk-02"
+        "evidence_path": "../../docs/poll-evidence.md#dk-02"
       },
       {
         "issue_id": "DK-03",
         "title": "DK-03: Archived zero-filling copied baseline facts into departure columns",
-        "evidence_path": "../../docs/poll-issues.md#dk-03"
+        "evidence_path": "../../docs/poll-evidence.md#dk-03"
       },
       {
         "issue_id": "DK-04",
         "title": "DK-04: The retained English questionnaire is an earlier instrument version",
-        "evidence_path": "../../docs/poll-issues.md#dk-04"
+        "evidence_path": "../../docs/poll-evidence.md#dk-04"
       },
       {
         "issue_id": "DK-05",
         "title": "DK-05: Original arrival source preserved publicly and scored",
-        "evidence_path": "../../docs/poll-issues.md#dk-05"
+        "evidence_path": "../../docs/poll-evidence.md#dk-05"
       },
       {
         "issue_id": "DK-07",
         "title": "DK-07: Discussion-group linkage is still missing after source search",
-        "evidence_path": "../../docs/poll-issues.md#dk-07"
+        "evidence_path": "../../docs/poll-evidence.md#dk-07"
       },
       {
         "issue_id": "DK-06",
         "title": "DK-06: Follow-up instrument, keys and participant identities verified",
-        "evidence_path": "../../docs/poll-issues.md#dk-06"
+        "evidence_path": "../../docs/poll-evidence.md#dk-06"
       }
     ],
     "reviewed_flags": [],
-    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
     "structured_register_path": "../../metadata/poll_issues.json",
     "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
   }

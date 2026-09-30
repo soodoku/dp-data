@@ -19,7 +19,14 @@ test_that("San Mateo unavailable departure forms have missing knowledge", {
   expect_true(all(evidence$wave_observed[position[absent]] %in% FALSE))
   scored <- san_mateo_knowledge(survey, 2L)
   expect_true(all(is.na(scored[absent, ])))
-  expect_equal(sum(is.na(scored)), 1568L * 8L)
+  expect_equal(sum(is.na(scored)), 1568L * 8L + 2L)
+  invalid <- which(is.na(scored) & !absent, arr.ind = TRUE)
+  expect_equal(survey$source_row[invalid[, "row"]], c(1607L, 1772L))
+  expect_equal(survey$PARTICIPANTID[invalid[, "row"]], c(1354, 1298))
+  expect_equal(colnames(scored)[invalid[, "col"]], c("20", "26"))
+  expect_equal(as.numeric(survey$t2Q20[invalid[1L, "row"]]), 8)
+  expect_equal(as.numeric(survey$t2Q26[invalid[2L, "row"]]), 9)
+  expect_true(all(evidence$wave_observed[position[invalid[, "row"]]]))
   measures <- build_san_mateo_individual(survey)
   expected_missing <- c(
     "knowledge_t2", "knowledge_joint", "knowledge_gain",
