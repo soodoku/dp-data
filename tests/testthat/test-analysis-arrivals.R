@@ -141,7 +141,34 @@ test_that("intermediate items preserve arrival and within-event timing", {
     standardize_knowledge_scores()
   enriched <- enriched$items
   invalid <- dplyr::filter(enriched, response_reason == "invalid_response")
-  expect_equal(nrow(invalid), 12L)
+  expect_setequal(invalid$poll_id, c("tomorrows-europe-2007", "new-haven-2004"))
+  expected_invalid <- tibble::tribble(
+    ~poll_id, ~respondent_id, ~source_column, ~raw_value,
+    "tomorrows-europe-2007", "1656", "t2q19", 6,
+    "tomorrows-europe-2007", "1199", "t2q24", 24,
+    "tomorrows-europe-2007", "2527", "t2q24", 1004,
+    "tomorrows-europe-2007", "2579", "t2q24", 1004,
+    "tomorrows-europe-2007", "207", "t2q24", 1004,
+    "tomorrows-europe-2007", "191", "t2q24", 1004,
+    "tomorrows-europe-2007", "2527", "t2q27", 1004,
+    "tomorrows-europe-2007", "2579", "t2q27", 1004,
+    "tomorrows-europe-2007", "3202", "t2q27", 44,
+    "tomorrows-europe-2007", "207", "t2q27", 1004,
+    "tomorrows-europe-2007", "191", "t2q27", 1004,
+    "tomorrows-europe-2007", "211", "t2q27", 1004,
+    "new-haven-2004", "3133", "mid_q36", 0,
+    "new-haven-2004", "3269", "mid_q36", 0,
+    "new-haven-2004", "3133", "mid_q41", 0,
+    "new-haven-2004", "3255", "mid_q41", 0,
+    "new-haven-2004", "3133", "mid_q43", 0
+  )
+  actual_invalid <- dplyr::select(
+    invalid, dplyr::all_of(names(expected_invalid))
+  )
+  expect_equal(
+    dplyr::arrange(actual_invalid, poll_id, respondent_id, source_column),
+    dplyr::arrange(expected_invalid, poll_id, respondent_id, source_column)
+  )
   expect_true(all(is.na(invalid$correct)))
   expect_true(all(is.na(invalid$knowledge_response)))
   expect_equal(invalid$raw_value, items$raw_value[match(
