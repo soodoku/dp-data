@@ -176,7 +176,7 @@ AR_Q24_1,double,haven_labelled|vctrs_vctr|double,,people with views different fr
 AR_Q24_2,double,haven_labelled|vctrs_vctr|double,,most political issues are so complicated that a person like me can't really unde,F8.0,,,TRUE,Retained
 AR_Q24_3,double,haven_labelled|vctrs_vctr|double,,most people do not know much about public affairs; decision-making is best left,F8.0,,,TRUE,Retained
 AR_Q24_4,double,haven_labelled|vctrs_vctr|double,,public officials care a lot about what people like me think.,F8.0,,,TRUE,Retained
-AR_Q24_5,double,haven_labelled|vctrs_vctr|double,,people like me don’t have any say about what the government does,F8.0,,,TRUE,Retained
+AR_Q24_5,double,haven_labelled|vctrs_vctr|double,,people like me donâ€™t have any say about what the government does,F8.0,,,TRUE,Retained
 F_CODE,double,numeric,,,F12.0,,,TRUE,Retained
 F_Q1,double,haven_labelled|vctrs_vctr|double,,intention to vote next october,F8.0,,,TRUE,Retained
 F_Q2_1,double,haven_labelled|vctrs_vctr|double,,municipal waste management,F8.0,,,TRUE,Retained
@@ -278,7 +278,7 @@ F_Q24_1,double,haven_labelled|vctrs_vctr|double,,people with views different fro
 F_Q24_2,double,haven_labelled|vctrs_vctr|double,,most political issues are so complicated that a person like me can't really unde,F8.0,,,TRUE,Retained
 F_Q24_3,double,haven_labelled|vctrs_vctr|double,,most people do not know much about public affairs; decision-making is best left,F8.0,,,TRUE,Retained
 F_Q24_4,double,haven_labelled|vctrs_vctr|double,,public officials care a lot about what people like me think.,F8.0,,,TRUE,Retained
-F_Q24_5,double,haven_labelled|vctrs_vctr|double,,people like me don’t have any say about what the government does,F8.0,,,TRUE,Retained
+F_Q24_5,double,haven_labelled|vctrs_vctr|double,,people like me donâ€™t have any say about what the government does,F8.0,,,TRUE,Retained
 F_Q25_1,double,haven_labelled|vctrs_vctr|double,,rating - participating in the small group discussions,F8.0,,,TRUE,Retained
 F_Q25_2,double,haven_labelled|vctrs_vctr|double,,rating - meeting and talking to other participants outside of the formal discuss,F8.0,,,TRUE,Retained
 F_Q25_3,double,haven_labelled|vctrs_vctr|double,,rating - the large-group sessions with the candidates,F8.0,,,TRUE,Retained
@@ -288,9 +288,9 @@ F_Q26_2,double,haven_labelled|vctrs_vctr|double,,the members of my small group d
 F_Q26_3,double,haven_labelled|vctrs_vctr|double,,my small group moderator sometimes tried to influence the group with his or her,F8.0,,,TRUE,Retained
 F_Q26_4,double,haven_labelled|vctrs_vctr|double,,the small group moderator tried to make sure that opposing arguments were consid,F8.0,,,TRUE,Retained
 F_Q26_5,double,haven_labelled|vctrs_vctr|double,,the important aspects of the issues were covered in the group discussions,F8.0,,,TRUE,Retained
-F_Q26_6,double,haven_labelled|vctrs_vctr|double,,i learned a lot about people very different from me—about what they and their li,F8.0,,,TRUE,Retained
+F_Q26_6,double,haven_labelled|vctrs_vctr|double,,i learned a lot about people very different from meâ€”about what they and their li,F8.0,,,TRUE,Retained
 F_Q27,double,haven_labelled|vctrs_vctr|double,,"by the end of the event, about how much of the discussion materials that were se",F8.0,,,TRUE,Retained
-F_Q28,double,haven_labelled|vctrs_vctr|double,,"with the experience of today’s event, would you be interested in participating i",F8.0,,,TRUE,Retained
+F_Q28,double,haven_labelled|vctrs_vctr|double,,"with the experience of todayâ€™s event, would you be interested in participating i",F8.0,,,TRUE,Retained
 F_Q29,double,haven_labelled|vctrs_vctr|double,,how strongly would you agree or disagree that your experience today and its impl,F8.0,,,TRUE,Retained
 KQ1_T2,double,numeric,,,F9.2,,,TRUE,Retained
 KQ1_T3,double,numeric,,,F9.2,,,TRUE,Retained

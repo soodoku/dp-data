@@ -30,6 +30,7 @@ resources <- c(
   "source_field_exclusions",
   "knowledge_items",
   "knowledge_response_codes",
+  "marousi_knowledge_items",
   "items",
   "knowledge_join_contracts",
   "poll_references",

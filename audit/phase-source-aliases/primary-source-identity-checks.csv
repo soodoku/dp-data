@@ -1,0 +1,17 @@
+poll_id,public_source_rows,cor_people,historical_people,cor_id_differences,historical_id_differences,source_id,id_column
+australia-republic-1999,4659,347,4659,0,0,cdd-australia-republic-1999-survey,caseid
+btp-general-election-2004,299,250,299,0,0,cdd-btp-general-election-2004-survey,caseid_original
+btp-health-education-2005,454,454,454,0,0,cdd-btp-health-education-2005-survey,id
+bulgaria-crime-2002,278,278,278,0,0,cdd-bulgaria-crime-2002-survey,id
+cpl-1996,1246,216,1246,0,0,cdd-cpl-1996-survey,caseid
+europolis-2009,4384,348,4384,0,0,cdd-europolis-2009-survey,UniqueID
+nic-1996,911,466,911,0,0,cdd-nic-1996-survey,CASEID
+san-mateo-2008,1806,239,1806,0,0,cdd-san-mateo-2008-survey,PARTICIPANTID
+swepco-1996,1478,232,1478,0,0,cdd-swepco-1996-survey,CASEID
+tomorrows-europe-2007,3550,359,3550,0,0,cdd-tomorrows-europe-2007-survey,v_b
+uk-crime-1994,869,299,869,0,0,cdd-uk-crime-survey,caseid
+uk-eu-1995,900,224,900,0,0,cdd-uk-eu-survey,caseid
+uk-general-election-1997,1210,275,1210,0,0,cdd-uk-general-election-1997-survey,serial
+uk-health-1998,230,230,230,0,0,cdd-uk-health-survey,serial_m
+uk-monarchy-1996,857,258,857,0,0,cdd-uk-monarchy-1996-survey,NA
+wtu-1996,1230,230,1230,0,0,cdd-wtu-1996-survey,CASEID

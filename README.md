@@ -67,7 +67,8 @@ It also exports `output/respondent/historical_knowledge_items.parquet`, with
 respondent-linked item correctness at both scoring waves for all 21 polls.
 The item means reproduce the corresponding reviewed respondent scores. Marousi
 is outside this 21-poll reconstruction; its separately retained original survey
-and authored correctness flags support the phase scores described in the issue register.
+and authored correctness flags support the phase scores and raw seven-item
+responses in `analysis_phase_item_responses.parquet`, described in the issue register.
 The respondent export also includes `output/respondent/briefing_reading.parquet`:
 source-linked reading reports in nine polls, including five whose historical
 `readbrief` column was left missing even though the retained survey contains

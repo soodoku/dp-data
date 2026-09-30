@@ -129,7 +129,7 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   responses <- tables$analysis_item_responses
   scores <- tables$analysis_scores
   expect_equal(nrow(polls), 50L)
-  expect_equal(nrow(catalog), 253L)
+  expect_equal(nrow(catalog), 260L)
   expect_equal(dplyr::n_distinct(people$poll_id), 33L)
   expect_equal(dplyr::n_distinct(responses$poll_id), 31L)
   expect_true(all(grepl("^knowledge_[0-9]{3}$", catalog$item_id)))

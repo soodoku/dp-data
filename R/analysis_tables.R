@@ -1,6 +1,7 @@
 source(project_path("R", "analysis_tanzania.R"))
 source(project_path("R", "analysis_knowledge_responses.R"))
 source(project_path("R", "analysis_phase_attitudes.R"))
+source(project_path("R", "analysis_marousi_items.R"))
 
 item_display_text <- function(values) {
   replacements <- c(
@@ -120,9 +121,7 @@ analysis_cor_people <- function() {
 }
 
 analysis_marousi_source <- function() {
-  raw <- haven::read_sav(project_path(
-    "data", "marousi-2006", "survey.sav"
-  )) |>
+  raw <- analysis_marousi_raw() |>
     dplyr::mutate(original_source_row = dplyr::row_number())
   stopifnot(
     nrow(raw) == 1275L, !anyNA(raw$P_Q1_0),
@@ -729,6 +728,12 @@ build_analysis_tables <- function() {
   phase_scoring <- standardize_knowledge_scores(phase_items)
   stopifnot(nrow(phase_scoring$dk_correct_conflicts) == 0L)
   phase_items <- phase_scoring$items
+  phase_items <- dplyr::bind_rows(
+    phase_items,
+    analysis_marousi_phase_items(
+      phase_evidence$participants, phase_evidence$scores
+    )
+  )
   presence <- phase_evidence$scores |>
     dplyr::filter(grepl(":knowledge$", battery_id)) |>
     dplyr::transmute(
