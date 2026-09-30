@@ -156,8 +156,9 @@ is completed.
 Northern Ireland's paper can run from the public source tree: it uses the complete original
 survey, headerless group roster, and `argument-codes.parquet` under
 `data/northern-ireland-2007/`. Coder labels retain all response slots and missing
-values; adjudication and scoring remain in dp-nireland. The extract excludes
-verbatim responses and records the original source hash in the artifact catalog.
+values; adjudication and scoring remain in dp-nireland. The survey retains all 80 original argument-text fields; the separate coding
+extract contains coder labels. Original source hashes are recorded in the
+artifact catalog.
 
 ## Repository roles
 
