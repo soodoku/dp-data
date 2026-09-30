@@ -672,6 +672,36 @@
       "publication_status": "published",
       "notes": "Generated from data/shared/design/poll_details/appendix-poll-details-5-18-14-e.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Already cited across21 poll references; includes24 polls and four source-linked duration comments. Compared all14 DOCX table rows plus comments XML, and corresponding PDF texts. No executable code reads these appendices.",
       "relative_path": "../shared/design/poll_details/appendix-poll-details-5-18-14-e.pdf"
+    },
+    {
+      "artifact_id": "material-be1b99e3b1cbfec8-europolis-2009",
+      "poll_id": "europolis-2009",
+      "artifact_type": "questionnaire",
+      "title": "Europolis2009 master questionnaire",
+      "location": "data/europolis-2009/questionnaires/master-questionnaire-2009.xls",
+      "source_id": "material-be1b99e3b1cbfec8",
+      "original_archive_path": "cdd/data/eu_2009/Master Q_Main_final_clean.xls",
+      "sha256": "be1b99e3b1cbfec8f0a604a1a5939afeb2c0f4e0559a20095ec8f7b83da699c3",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged genuine Europolis2009 master specification; MASTER911x23 plus List of Parties12x27. Source waves T1 recruitment/T2 arrival/T3 departure/T4 post-election. Six knowledge questions at allfourwaves, Q45/Q48/Q51 atT2/T3only. Invitation29-31May2009. Master specification does not establish final fielded print version or anonymous deposited-battery person ordering; no scoring/sample changes.",
+      "relative_path": "questionnaires/master-questionnaire-2009.xls"
+    },
+    {
+      "artifact_id": "material-de663860a060feac-europolis-2009",
+      "poll_id": "europolis-2009",
+      "artifact_type": "questionnaire",
+      "title": "Europolis2009 master questionnaire (PDF preview)",
+      "location": "data/europolis-2009/questionnaires/master-questionnaire-2009.pdf",
+      "source_id": "material-de663860a060feac",
+      "original_archive_path": null,
+      "sha256": "de663860a060feacdcb71cc9edbb817e4ef8e7aa736023d4b71f905b1c9bc2de",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "PDF companion to unchanged master XLS. Established scripts/16_build_document_previews.py prepare_workbook layout;16A3landscape pages. All source cell content retained; numeric0.6/0.7/0.8 serialization differs only in floating-point printed representation. Visually checked pages1,10,11,16; wavecolumns andall9knowledge question texts retained. List of Parties carried through; fonts/reflow may differ.",
+      "relative_path": "questionnaires/master-questionnaire-2009.pdf"
     }
   ],
   "document_previews": [
@@ -721,6 +751,22 @@
       "source_token_coverage": "0.9733542319749217",
       "distinct_word_coverage": "1.0",
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
+      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+    },
+    {
+      "source_path": "data/europolis-2009/questionnaires/master-questionnaire-2009.xls",
+      "preview_path": "data/europolis-2009/questionnaires/master-questionnaire-2009.pdf",
+      "source_sha256": "be1b99e3b1cbfec8f0a604a1a5939afeb2c0f4e0559a20095ec8f7b83da699c3",
+      "preview_sha256": "de663860a060feacdcb71cc9edbb817e4ef8e7aa736023d4b71f905b1c9bc2de",
+      "converter_version": "LibreOffice26.8.0.3",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "16",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-representative-pages",
+      "visual_pages": "1;10;11;16",
+      "source_token_coverage": "0.9888008270158511",
+      "distinct_word_coverage": "0.9735819735819736",
+      "qa_notes": "PDF companion to unchanged master XLS. Established scripts/16_build_document_previews.py prepare_workbook layout;16A3landscape pages. All source cell content retained; numeric0.6/0.7/0.8 serialization differs only in floating-point printed representation. Visually checked pages1,10,11,16; wavecolumns andall9knowledge question texts retained. List of Parties carried through; fonts/reflow may differ.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
   ]

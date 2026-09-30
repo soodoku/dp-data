@@ -1,0 +1,9 @@
+Australia_Master_1_Nov_1999.SPS is the SPSS syntax file.  This can be used to create the dataset, although I am not sure if we have the appropriate version of SPSS to accomplish this feat.  "Australia_Master_1_Nov_1999.SPS" is the new name I gave to the file that we received from the polling company so that we would know what it was.  The old name was " D991013.SPS"
+
+Australia_Master_2_Nov_1999.sav is the SPSS data file.  It is the same data that could be obtained by running the above SPS syntax file. "Australia_Master_2_Nov_1999.sav" is the new name I gave to the file that we received from the polling company so that we would know what it was.  The old name was " D991013.SAV".
+
+Australia_Master_Corrected_10_Jan_2000.sav is a Revised Version of the SPSS data file sent to us after we noticed that a couple of variables were missing from Australia_Master_2_Nov_1999 [namely, responses for QD10 and QE1 (both T2)].  The Corrected_10_Jan_2000 version has these missing variables.
+
+"T1QuestionnaireAustralia.doc"-This is the T1 Australian Questionnaire.
+
+"ozidpart_master.sav"  This is an SPSS data file that was sent to us by David Briggs on 30 Aug 2000.  It contains only five variables: case id number, whether the individual actually attended the DP, whether the individual said he/she would attend the DP but did not show up, and two additional unidentified variables.  This dataset was used to identify "attendees" in the Australian dataset.  This variable was not included in the original versions of the data that we received.  (To make matters more complicated, when conducting T3 interviews with DP attendees, the organizers of the ACRS were given a list of "likely attendees" rather than "actual attendees" and, therefore, some miscoding of participants/nonparticipants occurred in the ACRS.  These discrepancies have since been corrected and the data is now accurate.)
