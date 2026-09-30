@@ -5547,6 +5547,40 @@ missing evidence is therefore a delivered questionnaire or labeled source
 file, rather than a claim that the study never documented these questions.
 No request has been sent. Do not borrow Q19–Q24’s labels for Q17/Q18.
 
+**September 30: code 98 resolved for initial and immediate-exit Q17/Q18.**
+The [detailed results](../data/a1r-climate-2021/reports/climate_results.pdf),
+PDF p.9, give the questions as which party controls the majority in the Senate
+(Q17) and House (Q18). Their distributions explicitly distinguish “NA.” from
+correct and incorrect responses. Among the 962 `P_DELEGATE == 1` respondents,
+using `WEIGHT1`, excluding code 98 at either interview uniquely reproduces both
+the paired means and the reported NA percentages; none of the other recorded
+codes (1, 2, 3 or 77) reproduces these quantities.
+
+| Item | Paired N after excluding 98 | Initial mean | Exit mean | Initial / exit NA percentages |
+| --- | ---: | ---: | ---: | --- |
+| Q17, Senate | 949 | 0.672462 | 0.692993 | 0.807207 / 0.023018 |
+| Q18, House | 948 | 0.751737 | 0.798802 | 1.168353 / 0.230697 |
+
+These round to the report's `.672/.693` and `.752/.799` means and
+`.8/.0` and `1.2/.2` NA percentages. The mapping from code 98 to the report's
+NA category is inferred from this joint numerical match, not from another
+question's code labels. The source does not establish whether these particular
+responses were skipped or refused, so the export uses `unclassified_nonanswer`,
+not `dk`, and preserves the report label `NA.`. The four field-specific rules
+cover 255 cells in each selected-item and phase-item table: `Q17` 92, `Q18` 134,
+`T2Q17` 13 and `T2Q18` 16. Previously their reason was `unreviewed_code` and
+source label was missing. Every raw code and correctness value remains unchanged;
+observed-form nonanswers still score zero under the approved scoring rule.
+No respondent, score denominator or analysis sample changes.
+
+The follow-up fields `T3Q17/T3Q18` retain their existing classification,
+including their 40 code-98 responses. Code 77's exact offered wording and the
+substantive option labels also remain unavailable. A renewed inventory confirms
+that the replication deposit's original data file is CSV, not a labeled
+SPSS/Stata file; a search of the usable vault's 1,364 files and three ZIP
+inventories found no additional Climate 2021 source. The required fielded Word questionnaires
+remain the evidence needed to resolve those specific labels.
+
 ### A1RC-04 — reproduce the climate report's attitude ratings (checked)
 
 The retained `data/a1r-climate-2021/reports/climate_results.pdf` reports 93
