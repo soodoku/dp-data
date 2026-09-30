@@ -6288,7 +6288,7 @@ is imposed on this standardized index.
 
 ### TZ-04 — panel membership requires both selected measurements
 
-Source `HHID == 240301`, canonical respondent `1323`, has missing baseline
+Source `HHID == 240301`, formerly canonical respondent `1323`, has missing baseline
 `H600` and observed follow-up `H601`, but `analysis_participants.panel` was true.
 The user-approved rule requires both selected measurements, reducing the panel
 count from 1,858 to 1,857 while retaining all 2,002 people and the observed
@@ -6298,6 +6298,12 @@ The shared paired-analysis rule is distinct from deleting a respondent from the
 source data. The same [review script](../scripts/review_tanzania_knowledge.R)
 checks this identity and records the old and corrected panel counts in the
 [audit summary](../audit/corrections/tanzania-2015/summary.csv).
+
+The canonical participant and score tables now use native `HHID` values as
+respondent IDs; this person is therefore `240301` in current outputs. Physical
+source row 1323 remains available, and the archived correction CSVs retain the
+row-based identifiers used when those comparisons were recorded. The identity
+change preserves every score, panel flag and source person; see TZ-07.
 
 ### TZ-05 — borrowing uses five categories; include it with the other policy items (corrected)
 
@@ -6418,6 +6424,28 @@ education contrast changes. Preserve the raw school and knowledge evidence;
 adding a schooling contrast or changing the deposited general-knowledge index
 requires a separate reviewed decision. Source values and historical estimates
 remain unchanged here.
+
+### TZ-07 — use native household IDs consistently across typed exports
+
+The source has 2,225 unique, nonmissing `HHID` values. Tanzania's attitude and
+weight exports already use those native IDs, whereas the canonical knowledge
+exports formerly numbered the 2,002 citizens from 1 to 2,002 after filtering.
+A valid bridge was available through `source_row`: the citizens occupy the
+first 2,002 physical source rows. The previous numerical joins were therefore
+recoverable, but a direct join on respondent ID did not identify the same people.
+
+The canonical selected and phase participant/score tables now use `HHID` as
+`respondent_id` and identify this as `source-id` identity. Physical `source_row`
+is assigned before filtering to citizens and retained even when input rows are
+reordered. Historical comparison IDs remain unchanged in archived audit files;
+no historical respondent ID is invented for this source.
+
+This changes 12,012 identifier cells across four canonical tables and 4,004
+`identity_basis` cells in the two participant tables. Every score, missing value,
+participant, assignment, weight and group remains unchanged. Native IDs now join
+directly to the citizen attitude and weight records for all 2,002 people. The
+review script writes fresh comparisons to a temporary directory unless an
+explicit `--output-dir` is supplied, preserving the archived row-ID comparisons.
 
 ### NH-02 — Event year corrected; attendance needs reconciliation
 

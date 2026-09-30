@@ -5,6 +5,7 @@ poll_id <- "tanzania-2015"
 source_path <- project_path("data", poll_id, "participants.dta")
 source_hash <- tools::md5sum(source_path)
 survey <- haven::read_dta(source_path) |>
+  dplyr::mutate(source_row = dplyr::row_number()) |>
   dplyr::filter(haven::as_factor(.data$sample) == "Citizens")
 baseline <- as.matrix(survey[paste0("H6", 1:9, 0)])
 follow_up <- as.matrix(survey[paste0("H6", 1:9, 1)])
@@ -92,8 +93,8 @@ read_analysis <- function(table_name) {
 }
 participants <- read_analysis("analysis_participants")
 stopifnot(
-  identical(participants$source_row, seq_len(nrow(survey))),
-  identical(participants$respondent_id, as.character(seq_len(nrow(survey)))),
+  identical(participants$source_row, survey$source_row),
+  identical(participants$respondent_id, as.character(survey$HHID)),
   identical(participants$cluster_id, as.character(survey$VillageID))
 )
 
@@ -197,7 +198,7 @@ panel_discrepancies <- which(historical_panel != paired_flag)
 stopifnot(
   length(panel_discrepancies) == 1L,
   survey$HHID[panel_discrepancies] == 240301,
-  participants$respondent_id[panel_discrepancies] == "1323",
+  participants$respondent_id[panel_discrepancies] == "240301",
   identical(participants$panel, paired_flag), sum(participants$panel) == 1857L
 )
 panel_summary <- tibble::tibble(
@@ -211,8 +212,16 @@ summary <- dplyr::bind_rows(score_summary, gain_summary, panel_summary) |>
     "approved", "not-adopted-zero-alternative"
   ), .before = 1L)
 stopifnot(identical(source_hash, tools::md5sum(source_path)))
-directory <- project_path("audit", "corrections", poll_id)
+args <- commandArgs(trailingOnly = TRUE)
+stopifnot(length(args) %in% c(0L, 2L))
+if (length(args) == 2L) stopifnot(args[[1L]] == "--output-dir")
+directory <- if (length(args) == 2L) {
+  args[[2L]]
+} else {
+  tempfile("tanzania-knowledge-review-")
+}
 fs::dir_create(directory)
+message("Review comparisons: ", directory)
 readr::write_csv(values, file.path(directory, "proposed_values.csv"))
 readr::write_csv(summary, file.path(directory, "summary.csv"))
 

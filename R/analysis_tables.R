@@ -235,6 +235,7 @@ analysis_control_sources <- function() {
     tanzania = haven::read_dta(project_path(
       "data", "tanzania-2015", "participants.dta"
     )) |>
+      dplyr::mutate(source_row = dplyr::row_number()) |>
       dplyr::filter(
         sample == "Citizens" | haven::as_factor(sample) == "Citizens"
       ),

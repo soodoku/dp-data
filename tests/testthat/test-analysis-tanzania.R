@@ -4,6 +4,7 @@ tanzania_test_source <- function() {
   haven::read_dta(project_path(
     "data", "tanzania-2015", "participants.dta"
   )) |>
+    dplyr::mutate(source_row = dplyr::row_number()) |>
     dplyr::filter(haven::as_factor(sample) == "Citizens")
 }
 
@@ -62,7 +63,8 @@ test_that("Tanzania keeps source people and requires both scores for panel", {
   survey <- tanzania_test_source()
   people <- analysis_tanzania_people(survey)
   expect_equal(nrow(people), 2002L)
-  expect_identical(people$respondent_id, as.character(seq_len(2002L)))
+  expect_identical(people$respondent_id, as.character(survey$HHID))
+  expect_true(all(people$identity_basis == "source-id"))
   expect_identical(people$source_row, seq_len(2002L))
   expect_equal(people$cluster_id, as.character(survey$VillageID))
   expect_equal(sum(people$female, na.rm = TRUE), 1052)
@@ -87,4 +89,53 @@ test_that("Tanzania keeps source people and requires both scores for panel", {
   expect_true(all(is.na(scores$n_items)))
   expect_true(all(is.na(scores$n_observed)))
   expect_equal(sum(!is.na(scores$score)), 3859L)
+})
+
+
+test_that("Tanzania native IDs and physical rows survive shuffled inputs", {
+  survey <- tanzania_test_source()
+  expected <- analysis_tanzania_people(survey)
+  order <- rev(seq_len(nrow(survey)))
+  reordered <- analysis_tanzania_people(survey[order, ])
+  expect_identical(reordered$respondent_id, rev(expected$respondent_id))
+  expect_identical(reordered$source_row, rev(expected$source_row))
+  expect_equal(reordered[order, ], expected, tolerance = 1e-12)
+  invalid <- survey
+  invalid$HHID[2] <- invalid$HHID[1]
+  expect_error(analysis_tanzania_people(invalid))
+  invalid <- survey
+  invalid$source_row[2] <- invalid$source_row[1]
+  expect_error(analysis_tanzania_people(invalid))
+  expect_error(analysis_tanzania_people(dplyr::select(survey, -"source_row")))
+})
+
+test_that("Tanzania IDs join the source attitude and weight exports", {
+  people <- analysis_tanzania_people(tanzania_test_source())
+  attitudes <- arrow::read_parquet(project_path(
+    "output", "tanzania_attitudes", "tanzania_attitude_responses.parquet"
+  )) |>
+    dplyr::filter(source_sample == "Citizens") |>
+    dplyr::distinct(source_row, source_unit_id)
+  weights <- arrow::read_parquet(project_path(
+    "output", "weights", "survey_weights.parquet"
+  )) |>
+    dplyr::filter(poll_id == "tanzania-2015") |>
+    dplyr::distinct(source_row, source_unit_id)
+  for (bridge in list(attitudes, weights)) {
+    actual <- dplyr::left_join(
+      people, bridge, by = c("respondent_id" = "source_unit_id"),
+      suffix = c("", "_source"), relationship = "one-to-one"
+    )
+    expect_equal(nrow(actual), 2002L)
+    expect_false(anyNA(actual$source_row_source))
+    expect_identical(actual$source_row, actual$source_row_source)
+  }
+  for (table in c("analysis_participants", "analysis_phase_participants")) {
+    exported <- arrow::read_parquet(project_path(
+      "output", "analysis", paste0(table, ".parquet")
+    )) |>
+      dplyr::filter(poll_id == "tanzania-2015", source_dataset == "control")
+    expect_setequal(exported$respondent_id, people$respondent_id)
+    expect_true(all(exported$identity_basis == "source-id"))
+  }
 })
