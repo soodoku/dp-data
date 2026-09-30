@@ -1,0 +1,577 @@
+{
+  "title": "Denmark departure verbatim responses",
+  "poll_id": "denmark-euro-2000",
+  "rows": 359,
+  "row_unit": "One original source record; original order retained.",
+  "unique_keys": [
+    "DELNR"
+  ],
+  "original_archive_path": "cdd/data/Denmark/data/t2.sav",
+  "original_hashes": {
+    "bytes": 157320,
+    "sha256": "9046fedd5abebedfc91107db35de8b6de04b4d4486c212879394182b51215771",
+    "md5": "ccea77fdb8ef8adf286a4720e47f2d4a"
+  },
+  "output_path": "data/denmark-euro-2000/source-materials/departure-open-responses.parquet",
+  "output_hashes": {
+    "bytes": 24968,
+    "sha256": "5484150597291123f92bc0336f9d7d60414d1b7939adf3457cc8c8ac89f6c3b2",
+    "md5": "1d1d947208d37231f9cb3c1375c67a64"
+  },
+  "transformation": "Column projection only, plus source_row; no row filtering, joins, value recoding or imputation.",
+  "omitted_fields": [
+    {
+      "name": "S1_2",
+      "source_label": "1. Danmark deltager p\u00e5 grund af sit forbehold ikke i den f\u00e6lles m\u00f8nt, euroen. Hvad vil du stemme til folkeafstemningen den 28. september om dansk deltagelse i den f\u00e6lles m\u00f8nt? Vil du stemme...?"
+    },
+    {
+      "name": "S1B_2",
+      "source_label": "1b. Hvis du skulle tage stilling for eller imod dansk deltagelse i den f\u00e6lles m\u00f8nt, euroen, hvad ville du s\u00e5 v\u00e6lge?"
+    },
+    {
+      "name": "S2_2",
+      "source_label": "2. Er det sandsynligt, at du vil \u00e6ndre holdning p\u00e5 baggrund af euro-debatten inden folkeafstemningen den 28. september?"
+    },
+    {
+      "name": "S3A_2",
+      "source_label": "3a. Medlemskab af EU er positivt for Danmark"
+    },
+    {
+      "name": "S3B_2",
+      "source_label": "3b. Det er en vigtig opgave for EU at f\u00e5 nye lande optaget i unionen hurtigst muligt"
+    },
+    {
+      "name": "S3C_2",
+      "source_label": "3c. Dansk deltagelse i den f\u00e6lles m\u00f8nt forringer dansk selvst\u00e6ndighed"
+    },
+    {
+      "name": "S3D_2",
+      "source_label": "3d. Dansk deltagelse i den f\u00e6lles m\u00f8nt giver bedre vilk\u00e5r for dansk erhvervsliv"
+    },
+    {
+      "name": "S3E_2",
+      "source_label": "3e. Dansk deltagelse i den f\u00e6lles m\u00f8nt er en trussel mod danskheden"
+    },
+    {
+      "name": "S3F_2",
+      "source_label": "3f. Dansk deltagelse i den f\u00e6lles m\u00f8nt giver en lavere rente i Danmark end i dag"
+    },
+    {
+      "name": "S3G_2",
+      "source_label": "3g. Dansk deltagelse i den f\u00e6lles m\u00f8nt vil medf\u00f8re forringelse i den danske velf\u00e6rdsmodel"
+    },
+    {
+      "name": "S3H_2",
+      "source_label": "3h. Dansk deltagelse i den f\u00e6lles m\u00f8nt giver mere indflydelse for Danmark p\u00e5 EUs beslutninger"
+    },
+    {
+      "name": "S3I_2",
+      "source_label": "3i. Det at have en dansk krone er vigtigere end en eventuel \u00f8konomisk gevinst ved deltagelse i den f\u00e6lles m\u00f8nt"
+    },
+    {
+      "name": "S3J_2",
+      "source_label": "3j. Euro-samarbejdet er et skridt mod Europas forenede stater"
+    },
+    {
+      "name": "S3K_2",
+      "source_label": "3k. Dansk deltagelse i den f\u00e6lles m\u00f8nt giver en \u00f8konomisk gevinst for Danmark"
+    },
+    {
+      "name": "S3L_2",
+      "source_label": "3l. Dansk deltagelse i den f\u00e6lles m\u00f8nt forringer l\u00f8nmodtagernes vilk\u00e5r"
+    },
+    {
+      "name": "S3M_2",
+      "source_label": "3m. Dansk deltagelse i den f\u00e6lles m\u00f8nt forbedrer de svage gruppers vilk\u00e5r"
+    },
+    {
+      "name": "S3N_2",
+      "source_label": "3n. Hvis Danmark g\u00e5r med i den f\u00e6lles m\u00f8nt, kan vi ikke melde os ud igen"
+    },
+    {
+      "name": "S3O_2",
+      "source_label": "3o. Euro-samarbejde underst\u00f8tter fred og stabilitet i Europa"
+    },
+    {
+      "name": "S3P_2",
+      "source_label": "3p. Euro-samarbejdet er udemokratisk"
+    },
+    {
+      "name": "S3Q_2",
+      "source_label": "3q. Alt i alt er det f\u00e6lles m\u00f8nt-samarbejde positivt for Danmark"
+    },
+    {
+      "name": "S3R_2",
+      "source_label": "3r. Danmark b\u00f8r vente med at tilslutte sig den f\u00e6lles m\u00f8nt"
+    },
+    {
+      "name": "S4_2",
+      "source_label": "4. Danmark kan som medlem af euro-samarbejdet blive id\u00f8mt b\u00f8der, hvis vi har et for stort underskud p\u00e5 statens finanser. Er det rigtigt eller forkert?"
+    },
+    {
+      "name": "S5_2",
+      "source_label": "5. Danmark kan selv bestemme rentens st\u00f8rrelse, hvis vi tilslutter os den f\u00e6lles m\u00f8nt? Er det rigtigt eller forkert?"
+    },
+    {
+      "name": "S6_2",
+      "source_label": "6. Danmark kan selv bestemme skatteniveauet, hvis vi tilslutter os den f\u00e6lles m\u00f8nt? Er det rigtigt eller forkert?"
+    },
+    {
+      "name": "S7_2",
+      "source_label": "7. Hvis vi stemmer ja ved folkeafstemningen den 28. september, vil den f\u00e6lles m\u00f8nt s\u00e5 v\u00e6re i oml\u00f8b i Danmark fra \u00e5r 2001, 2004, 2005 eller 2007?"
+    },
+    {
+      "name": "S8_2",
+      "source_label": "8. Hvis Danmark tilslutter sig den f\u00e6lles m\u00f8nt, vil den danske nationalbank s\u00e5 blive nedlagt, forts\u00e6tte stort set som i dag, eller bliver den en del af den Europ\u00e6iske Centralbank?"
+    },
+    {
+      "name": "S9_2",
+      "source_label": "9. Vil euro-m\u00f8nter f\u00e5 en national side?"
+    },
+    {
+      "name": "S10_2",
+      "source_label": "10. Er Danmark med i et valuta-samarbejde i dag, hvor landene hj\u00e6lper hinanden ved uro p\u00e5 valutamarkedet?"
+    },
+    {
+      "name": "S11_1_2",
+      "source_label": "Folkebev\u00e6gelsen mod unionen"
+    },
+    {
+      "name": "S11_2_2",
+      "source_label": "Junibev\u00e6gelsen"
+    },
+    {
+      "name": "S11_3_2",
+      "source_label": "Socialdemokratiet"
+    },
+    {
+      "name": "S11_4_2",
+      "source_label": "Det Radikale Venstre"
+    },
+    {
+      "name": "S11_5_2",
+      "source_label": "Det Konservative Folkeparti"
+    },
+    {
+      "name": "S11_6_2",
+      "source_label": "CentrumDemokraterne"
+    },
+    {
+      "name": "S11_7_2",
+      "source_label": "Socialistisk Folkeparti"
+    },
+    {
+      "name": "S11_8_2",
+      "source_label": "Dansk Folkeparti"
+    },
+    {
+      "name": "S11_9_2",
+      "source_label": "Kristeligt Folkeparti"
+    },
+    {
+      "name": "S11_10_2",
+      "source_label": "Venstre - Danmarks Liberale Parti"
+    },
+    {
+      "name": "S11_11_2",
+      "source_label": "Fremskridtspartiet"
+    },
+    {
+      "name": "S11_12_2",
+      "source_label": "Enhedslisten"
+    },
+    {
+      "name": "S11_13_2",
+      "source_label": "Frihed 2000"
+    },
+    {
+      "name": "S12A_2",
+      "source_label": "12a. Borgere som dig selv ikke har indflydelse p\u00e5 Folketingets og Regeringens beslutninger?"
+    },
+    {
+      "name": "S12B_2",
+      "source_label": "12b. Borgere som dig selv ikke har indflydelse p\u00e5 EUs beslutninger?"
+    },
+    {
+      "name": "S12C_2",
+      "source_label": "12c. Borgere som dig selv er kvalificeret til at deltage i en debat om euroen?"
+    },
+    {
+      "name": "S12D_2",
+      "source_label": "12d. Borgere som dig selv har en mening om politik, som er v\u00e6rd at lytte til?"
+    },
+    {
+      "name": "S12E_2",
+      "source_label": "12e. Manglende viden er grunden til, at andre borgere har en anden opfattelse af politik end dig selv?"
+    },
+    {
+      "name": "S12F_2",
+      "source_label": "12f. Andre borgere har gode argumenter for at have en anderledes opfattelse af politik end du selv har?"
+    },
+    {
+      "name": "S13A_2",
+      "source_label": "13a. I hvor h\u00f8j grad f\u00f8ler du dig velinformeret om euroen?"
+    },
+    {
+      "name": "S13B_2",
+      "source_label": "13b. I hvor h\u00f8j grad f\u00f8lger du med i den politiske debat om euroen?"
+    },
+    {
+      "name": "S13C_2",
+      "source_label": "13c. I hvor h\u00f8j grad er du politisk interesseret?"
+    },
+    {
+      "name": "S13D_2",
+      "source_label": "13d. I hvor h\u00f8j grad har du tillid til danske politikere?"
+    },
+    {
+      "name": "S14_2",
+      "source_label": "14. I din omgangskreds sker det s\u00e5 ofte, nu og da eller aldrig, at I taler om politiske forhold?"
+    },
+    {
+      "name": "S15_2",
+      "source_label": "15. Hvis du blev opfordret til at stille op p\u00e5 en liste til Europa-parlamentet, Folketinget, amts- eller kommunalbestyrelse ville du sige ja, overveje det eller sige nej?"
+    },
+    {
+      "name": "S16_2",
+      "source_label": "16. I politik tales der ofte om venstre og h\u00f8jre. Hvor vil du placere dig selv p\u00e5 en skala, hvor 0 er mest venstreorienteret og 10 er mest h\u00f8jreorienteret?-Politisk skala"
+    },
+    {
+      "name": "S17_2",
+      "source_label": "17. Hvilket parti ville du stemme p\u00e5, hvis der var folketingsvalg i morgen?"
+    },
+    {
+      "name": "S18A_2",
+      "source_label": "A siger"
+    },
+    {
+      "name": "S18B_2",
+      "source_label": "B siger"
+    },
+    {
+      "name": "S18C_2",
+      "source_label": "C siger"
+    },
+    {
+      "name": "S19_2",
+      "source_label": "19. Hvis du skulle v\u00e6lge mellem A, B eller C\u00b4s holdninger, hvem er du s\u00e5 mest enig med?"
+    },
+    {
+      "name": "S20_2",
+      "source_label": "20. Hvordan vil du vurdere udbyttet af din deltagelse p\u00e5 folkeh\u00f8ringen? Folkeh\u00f8ringen var for mig..."
+    },
+    {
+      "name": "S21_2",
+      "source_label": "21. Hvor meget l\u00e6rte du om euroen i forbindelse med folkeh\u00f8ringen?"
+    },
+    {
+      "name": "S22A_2",
+      "source_label": "22a. Oplysningsmaterialet"
+    },
+    {
+      "name": "S22B_2",
+      "source_label": "22b. At deltage i gruppediskussioner"
+    },
+    {
+      "name": "S22C_2",
+      "source_label": "22c. Svarene fra ekspertpanelet"
+    },
+    {
+      "name": "S22D_2",
+      "source_label": "22d. Svarene fra Europaparlamentspolitikerne"
+    },
+    {
+      "name": "S22E_2",
+      "source_label": "22e. Svarene fra Folketingspolitikerne"
+    },
+    {
+      "name": "S22F_2",
+      "source_label": "22f. Svarene fra de 4 top-politikere"
+    },
+    {
+      "name": "S22G_2",
+      "source_label": "22g. At m\u00f8des og diskutere med andre deltagere p\u00e5 folkeh\u00f8ringen uden for gruppediskussionerne"
+    },
+    {
+      "name": "S23A_2",
+      "source_label": "23a. Der var et h\u00f8jt informationsniveau p\u00e5 folkeh\u00f8ringen"
+    },
+    {
+      "name": "S23B_2",
+      "source_label": "23b. At v\u00e6re med til denne folkeh\u00f8ring har \u00f8get min forst\u00e5else for euro-sp\u00f8rgsm\u00e5let"
+    },
+    {
+      "name": "S23C_2",
+      "source_label": "23c. Folkeh\u00f8ringen tilf\u00f8jede ikke ret meget til min viden om euro-sp\u00f8rgsm\u00e5let"
+    },
+    {
+      "name": "S23D_2",
+      "source_label": "23d. Deltagelsen i folkeh\u00f8ringen har styrket min forst\u00e5else for s\u00e5vel ja-argumenter som nej-argumenter til euroen"
+    },
+    {
+      "name": "S23E_2",
+      "source_label": "23e. Der var et pres for at deltagerne skulle \u00e6ndre holdning i en bestemt retning"
+    },
+    {
+      "name": "S23F_2",
+      "source_label": "23f. Deltagelsen i folkeh\u00f8ringen har medf\u00f8rt at min holdning til euroen er blevet mere nuanceret"
+    },
+    {
+      "name": "S24_2",
+      "source_label": "24. Synes du at s\u00e5vel nej-siden som ja-siden var repr\u00e6senterede under panel-debatterne?"
+    },
+    {
+      "name": "S25A_2",
+      "source_label": "25a. Forsamlingen var for stor til at det var muligt at f\u00e5 svar p\u00e5 sp\u00f8rgsm\u00e5lene"
+    },
+    {
+      "name": "S25B_2",
+      "source_label": "25b. Formen med at deltagerne stillede sp\u00f8rgsm\u00e5l til politikere og eksperter var god"
+    },
+    {
+      "name": "S25C_2",
+      "source_label": "25c. Jeg ville foretr\u00e6kke et opl\u00e6g fra eksperter og politikere fremfor selv at stille sp\u00f8rgsm\u00e5l"
+    },
+    {
+      "name": "S25D_2",
+      "source_label": "25d. Ordstyrerne sikrede at alle kom til orde s\u00e5vel deltagere, politikere som eksperter"
+    },
+    {
+      "name": "S25E_2",
+      "source_label": "25e. Danmarks Radios tilstedev\u00e6relse var et forstyrrende element i panel-debatterne"
+    },
+    {
+      "name": "S26A_2",
+      "source_label": "26a. Diskussionerne var overfladiske"
+    },
+    {
+      "name": "S26B_2",
+      "source_label": "26b. Diskussionerne var konkrete"
+    },
+    {
+      "name": "S26C_2",
+      "source_label": "26c. Der var en positiv stemning i gruppen"
+    },
+    {
+      "name": "S26D_2",
+      "source_label": "26d. Der var enighed i gruppen fra starten i g\u00e5r"
+    },
+    {
+      "name": "S26E_2",
+      "source_label": "26e. Der var enighed i gruppen mod slutningen i dag"
+    },
+    {
+      "name": "S26F_2",
+      "source_label": "26f. Der var enighed i gruppen om m\u00e5den at diskutere p\u00e5"
+    },
+    {
+      "name": "S26G_2",
+      "source_label": "26g. Nogle f\u00e5 deltagere i gruppen dominerede diskussionerne"
+    },
+    {
+      "name": "S26H_2",
+      "source_label": "26h. Diskussionerne var livlige i gruppen fra starten i g\u00e5r"
+    },
+    {
+      "name": "S26I_2",
+      "source_label": "26i. Diskussionerne var livlige i gruppen mod slutningen af i dag"
+    },
+    {
+      "name": "S26J_2",
+      "source_label": "26j. Diskussionerne var pr\u00e6get af usikkerhed om faktuelle detaljer"
+    },
+    {
+      "name": "S26K_2",
+      "source_label": "26k. Diskussionerne var pr\u00e6get af lydh\u00f8rhed over for andres argumenter"
+    },
+    {
+      "name": "S26L_2",
+      "source_label": "26l. Der opstod alliancer mellem nogle af deltagerne"
+    },
+    {
+      "name": "S26M_2",
+      "source_label": "26m. Der opstod forst\u00e5else for andres argumenter selv om de var modsat ens egne"
+    },
+    {
+      "name": "S26N_2",
+      "source_label": "26n. Det var sv\u00e6rt at blive enige om hvilke sp\u00f8rgsm\u00e5l gruppen \u00f8nskede at stille p\u00e5 panel-debatterne"
+    },
+    {
+      "name": "S26O_2",
+      "source_label": "26o. Diskussionerne i gruppen handlede mere om EU generelt end euroen"
+    },
+    {
+      "name": "S26P_2",
+      "source_label": "26p. Der var for lidt tid til at diskutere"
+    },
+    {
+      "name": "S26Q_2",
+      "source_label": "26q. Gruppen var for stor til at alle kunne komme til orde"
+    },
+    {
+      "name": "S27A_2",
+      "source_label": "27a. Deltagerne i gruppen argumenterede ved at henvise til hvad der var bedst for deltagerne selv"
+    },
+    {
+      "name": "S27B_2",
+      "source_label": "27b. Deltagerne i gruppen argumenterede for en sag ved at henvise til almen retf\u00e6rdighed og generelle principper"
+    },
+    {
+      "name": "S27C_2",
+      "source_label": "27c. Deltagerne argumenterede for en sag ved at advare om negative konsekvenser ved et ja eller nej til euroen"
+    },
+    {
+      "name": "S27D_2",
+      "source_label": "27d. Deltagerne i gruppen argumenterede for hvad der var bedst og mest retf\u00e6rdigt for alle borgere"
+    },
+    {
+      "name": "S27E_2",
+      "source_label": "27e. Alle holdninger i gruppen blev betragtet som ligev\u00e6rdige"
+    },
+    {
+      "name": "S27F_2",
+      "source_label": "27f. Alle aspekter ved euro-debatten blev d\u00e6kket i gruppediskussionerne"
+    },
+    {
+      "name": "S27G_2",
+      "source_label": "27g. Mange af de andre gruppedeltageres argumenter var brugbare for min egen stillingtagen"
+    },
+    {
+      "name": "S28A_2",
+      "source_label": "28a. Gruppelederen informerede klart om form\u00e5l og hensigt med gruppediskussionerne"
+    },
+    {
+      "name": "S28B_2",
+      "source_label": "28b. Gruppelederen sikrede at alle kom til orde"
+    },
+    {
+      "name": "S28C_2",
+      "source_label": "28c. Gruppelederen fors\u00f8gte at p\u00e5virke diskussionerne med sine egne holdninger"
+    },
+    {
+      "name": "S28D_2",
+      "source_label": "28d. Gruppelederen favoriserede bestemte argumenter"
+    },
+    {
+      "name": "S28E_2",
+      "source_label": "28e. Gruppelederen bidrog til at gruppen belyste sp\u00f8rgsm\u00e5let om euroen fra flere vinkler"
+    },
+    {
+      "name": "S28F_2",
+      "source_label": "28f. Gruppelederen s\u00f8rgede for en positiv stemning i gruppen"
+    },
+    {
+      "name": "S28G_2",
+      "source_label": "28g. Gruppelederen var behj\u00e6lpelig med at f\u00e5 deltagernes syn frem"
+    },
+    {
+      "name": "S28H_2",
+      "source_label": "28h. Gruppelederen var for passiv"
+    },
+    {
+      "name": "S29_2",
+      "source_label": "29. Har du \u00e6ndret holdning p\u00e5 et eller flere punkter til euro-sp\u00f8rgsm\u00e5let siden i g\u00e5r formiddag?"
+    },
+    {
+      "name": "S31_2",
+      "source_label": "31. Vil du v\u00e6re villig til at argumentere for den holdning som du har givet udtryk for her i skemaet overfor andre?"
+    },
+    {
+      "name": "S32_2",
+      "source_label": "32. Kunne du t\u00e6nke dig at deltage i folkeh\u00f8ringer i fremtiden m\u00e5ske om andre emner?"
+    },
+    {
+      "name": "S33_2",
+      "source_label": "33. Vil du anbefale din omgangskreds at deltage i folkeh\u00f8ringer i fremtiden m\u00e5ske om andre emner?"
+    },
+    {
+      "name": "S34A_2",
+      "source_label": "34a. Folkeh\u00f8ringers resultater b\u00f8r v\u00e6re bindende for politiske beslutninger ogs\u00e5 selvom de g\u00e5r imod et flertal blandt politikerne"
+    },
+    {
+      "name": "S34B_2",
+      "source_label": "34b. Folkeh\u00f8ringers resultater b\u00f8r kun v\u00e6re en form for information blandt mange til politikerne"
+    },
+    {
+      "name": "S34C_2",
+      "source_label": "34c. Folkeh\u00f8ringer b\u00f8r ikke anvendes"
+    },
+    {
+      "name": "S34D_2",
+      "source_label": "34d. Som deltager i folkeh\u00f8ringer taler man ogs\u00e5 for borgere som ikke har mulighed for at deltage"
+    },
+    {
+      "name": "S34E_2",
+      "source_label": "34e. Som deltager i folkeh\u00f8ringer taler man kun for sig selv"
+    }
+  ],
+  "notes": "359 original source rows; DELNR matches current departure.parquet exactly. Four omitted questionnaire text fields restored as an additive source: S30_2 main euro-position reason, S35A/B/C_2 accounts of arguing about views with other citizens. Nonempty counts289/275/56/13; no scoring changes.",
+  "columns": [
+    {
+      "name": "source_row",
+      "parquet_type": "int32",
+      "source_label": null,
+      "source_variable_type": null,
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Original one-based row position; added without sorting or filtering."
+    },
+    {
+      "name": "DELNR",
+      "parquet_type": "double",
+      "source_label": "Deltagernr.",
+      "source_variable_type": "F11.0",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S30_2",
+      "parquet_type": "string",
+      "source_label": "30. Hvad er det vigtigste tema for din stillingtagen til euroen?",
+      "source_variable_type": "A255",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S35A_2",
+      "parquet_type": "string",
+      "source_label": "35. Til sidst: Vil du beskrive med egne ord, hvordan det p\u00e5virkede dig at skulle argumentere for dine holdninger med andre borgere i l\u00f8bet af denne weekend?",
+      "source_variable_type": "A255",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S35B_2",
+      "parquet_type": "string",
+      "source_label": "35. Til sidst: Vil du beskrive med egne ord, hvordan det p\u00e5virkede dig at skulle argumentere for dine holdninger med andre borgere i l\u00f8bet af denne weekend?",
+      "source_variable_type": "A255",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S35C_2",
+      "parquet_type": "string",
+      "source_label": "35. Til sidst: Vil du beskrive med egne ord, hvordan det p\u00e5virkede dig at skulle argumentere for dine holdninger med andre borgere i l\u00f8bet af denne weekend?",
+      "source_variable_type": "A255",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    }
+  ],
+  "verification": {
+    "row_count": true,
+    "original_order": true,
+    "all_retained_values_and_missingness_roundtrip_equal": true,
+    "ids_unique": true
+  }
+}

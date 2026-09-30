@@ -487,6 +487,51 @@
       "publication_status": "published",
       "notes": "Generated from data/shared/design/poll_details/appendix-poll-details-5-18-14-e.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Already cited across21 poll references; includes24 polls and four source-linked duration comments. Compared all14 DOCX table rows plus comments XML, and corresponding PDF texts. No executable code reads these appendices.",
       "relative_path": "../shared/design/poll_details/appendix-poll-details-5-18-14-e.pdf"
+    },
+    {
+      "artifact_id": "material-3b77da85d34efa53-uk-eu-1995",
+      "poll_id": "uk-eu-1995",
+      "artifact_type": "script",
+      "title": "Participant-scoped missing-to-zero reconstruction of the five-item exit knowledge total",
+      "location": "data/uk-eu-1995/scripts/exit-knowledge-cleaning.R",
+      "source_id": "material-3b77da85d34efa53",
+      "original_archive_path": "data/british_europe/Clean/ukeu_clean.R",
+      "sha256": "3b77da85d34efa53f8cb064cb322e8fe3a53f6f0189124a82dc0054ee7ebb525",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged historical coding evidence from the CDD archive; not executed by the modern pipeline. Participant-scoped missing-to-zero reconstruction of the five-item exit knowledge total. Small but meaningful missingness-scope provenance; not byte-identical and not assumed equivalent for nonparticipants.",
+      "relative_path": "scripts/exit-knowledge-cleaning.R"
+    },
+    {
+      "artifact_id": "uk-eu-1995-original-question-code-survey",
+      "poll_id": "uk-eu-1995",
+      "artifact_type": "data",
+      "title": "UK–EU original question-code survey misfiled under Europolis",
+      "location": "data/uk-eu-1995/source-materials/original-question-code-survey.sav",
+      "source_id": "uk-eu-1995-original-question-code-survey",
+      "original_archive_path": "cdd/data/eu_2009/MasterData/europe.sav",
+      "sha256": "a8222cba6acfe8765bce6b8ed6366f52fe6a0c45a86e89dc357f05a2451edb20",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "900 unique sn serials match UK–EU1995 caseid, not Europolis2009. Original q/r/qq/rr question-code versions, authored weights and original group assignments are retained unchanged. Sex1/2 maps exactly to public0/1; all234 positive groups agree. Field b21b records whether a telephone number was given/refused, not the telephone number itself. b22d is a numeric interviewer code despite label INTERVIEWER NAME; no text/contact columns occur. Current canonical inputs remain unchanged.",
+      "relative_path": "source-materials/original-question-code-survey.sav"
+    },
+    {
+      "artifact_id": "uk-eu-1995-original-question-code-survey-dictionary",
+      "poll_id": "uk-eu-1995",
+      "artifact_type": "codebook",
+      "title": "UK–EU original question-code survey misfiled under Europolis — source dictionary and provenance",
+      "location": "data/uk-eu-1995/source-materials/original-question-code-survey-dictionary.json",
+      "source_id": "uk-eu-1995-original-question-code-survey-dictionary",
+      "original_archive_path": "cdd/data/eu_2009/MasterData/europe.sav",
+      "sha256": "1cfc6bbbf5355d46b4114353ab532a937b49e60a889674710f06c1a346d2a4aa",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "900 unique sn serials match UK–EU1995 caseid, not Europolis2009. Original q/r/qq/rr question-code versions, authored weights and original group assignments are retained unchanged. Sex1/2 maps exactly to public0/1; all234 positive groups agree. Field b21b records whether a telephone number was given/refused, not the telephone number itself. b22d is a numeric interviewer code despite label INTERVIEWER NAME; no text/contact columns occur. Current canonical inputs remain unchanged.",
+      "relative_path": "source-materials/original-question-code-survey-dictionary.json"
     }
   ],
   "document_previews": [

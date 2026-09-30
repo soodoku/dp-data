@@ -587,6 +587,36 @@
       "publication_status": "published",
       "notes": "Generated from data/zeguo-2005/source-materials/questionnaire.doc. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
       "relative_path": "source-materials/questionnaire.pdf"
+    },
+    {
+      "artifact_id": "material-3c451d34e862b195-zeguo-2005",
+      "poll_id": "zeguo-2005",
+      "artifact_type": "script",
+      "title": "Early evaluation-item harmonization and demographic draft",
+      "location": "data/zeguo-2005/scripts/evaluation-recoding-draft.R",
+      "source_id": "material-3c451d34e862b195",
+      "original_archive_path": "data/China/2005/r_recode_eval - china 05.r",
+      "sha256": "3c451d34e862b1953708e9d15df22f847f8b76bafcc3141dc800438e3404412a",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged historical coding evidence from the CDD archive; not executed by the modern pipeline. Early evaluation-item harmonization and demographic draft. Blank baseline-knowledge configuration and imported placeholders mean this is not a runnable maintained builder.",
+      "relative_path": "scripts/evaluation-recoding-draft.R"
+    },
+    {
+      "artifact_id": "material-8f89e8cacb1e7cf0-zeguo-2005",
+      "poll_id": "zeguo-2005",
+      "artifact_type": "script",
+      "title": "Alternative evaluation draft with a different group-size expression",
+      "location": "data/zeguo-2005/scripts/evaluation-recoding-alternative.R",
+      "source_id": "material-8f89e8cacb1e7cf0",
+      "original_archive_path": "data/China/2005/r_recode_eval-china05.r",
+      "sha256": "8f89e8cacb1e7cf06a5f1936c34e602a56ce6c9e61ac416d9380c037ab614855",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged historical coding evidence from the CDD archive; not executed by the modern pipeline. Alternative evaluation draft with a different group-size expression. Keep as provenance only; current shared group-size calculations count people. No current recode change proposed.",
+      "relative_path": "scripts/evaluation-recoding-alternative.R"
     }
   ],
   "document_previews": [

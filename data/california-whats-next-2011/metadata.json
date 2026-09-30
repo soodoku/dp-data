@@ -456,6 +456,36 @@
       "publication_status": "published",
       "notes": "Generated from data/california-whats-next-2011/questionnaire-pre.doc. Original retained unchanged. See metadata/document_previews.csv for converter and verification details.",
       "relative_path": "questionnaire-pre.pdf"
+    },
+    {
+      "artifact_id": "material-e1901e3db1db0918-california-whats-next-2011",
+      "poll_id": "california-whats-next-2011",
+      "artifact_type": "script",
+      "title": "Authored information-driven-model analysis with eight-item exit battery, twelve policy composites, missingness choices and peer means",
+      "location": "data/california-whats-next-2011/scripts/information-driven-model-analysis.R",
+      "source_id": "material-e1901e3db1db0918",
+      "original_archive_path": "data/California/ca.idm/caforJim.R",
+      "sha256": "e1901e3db1db0918319d6e9831b219a51fb3bb4fe0c4104d82c891f75de39119",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged historical coding evidence from the CDD archive; not executed by the modern pipeline. Authored information-driven-model analysis with eight-item exit battery, twelve policy composites, missingness choices and peer means. Line181 repeats t3q2c in the indirect-initiative composite; some model formulas also show inconsistent source fields. This task does not endorse or repair those historical expressions.",
+      "relative_path": "scripts/information-driven-model-analysis.R"
+    },
+    {
+      "artifact_id": "material-7227dd389dd09d33-california-whats-next-2011",
+      "poll_id": "california-whats-next-2011",
+      "artifact_type": "script",
+      "title": "Attendance propensity-score subclassification and weighting",
+      "location": "data/california-whats-next-2011/scripts/attendance-propensity-weighting.R",
+      "source_id": "material-7227dd389dd09d33",
+      "original_archive_path": "data/California/ca.match/ca.match.R",
+      "sha256": "7227dd389dd09d330acd4511d754883463e3a69094f6fc76f31893d7cd62da55",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged historical coding evidence from the CDD archive; not executed by the modern pipeline. Attendance propensity-score subclassification and weighting.",
+      "relative_path": "scripts/attendance-propensity-weighting.R"
     }
   ],
   "document_previews": [

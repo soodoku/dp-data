@@ -1,0 +1,1470 @@
+{
+  "title": "Denmark original control follow-up survey",
+  "poll_id": "denmark-euro-2000",
+  "rows": 993,
+  "row_unit": "One original source record; original order retained.",
+  "unique_keys": [
+    "IP"
+  ],
+  "original_archive_path": "cdd/data/Denmark/data/t2ctrl.sav",
+  "original_hashes": {
+    "bytes": 208956,
+    "sha256": "28b1240088c6bc8b0f0ded7339f69aa499e2aeb7af11d907d98d303571cf14ae",
+    "md5": "cd2c8f7dcca1f889ae058dca9a3ace69"
+  },
+  "output_path": "data/denmark-euro-2000/source-materials/control-follow-up-survey.parquet",
+  "output_hashes": {
+    "bytes": 91864,
+    "sha256": "34f813d2df94f29e3d2e56681d37664ec534cc2ce391b222bc8f7775810e89a2",
+    "md5": "7878f6d467c325c3e139c2b067377c1a"
+  },
+  "transformation": "Column projection only, plus source_row; no row filtering, joins, value recoding or imputation.",
+  "omitted_fields": [
+    {
+      "name": "POSTNR",
+      "source_label": "postnr"
+    }
+  ],
+  "notes": "993 unique source IP identities have no direct equality overlap with public baseline IPNR. No individual linkage, random-assignment claim, or canonical phase scoring is implied. Original questionnaire responses, municipality/county codes and labels retained; postal code POSTNR omitted. CPR_KMNK is municipality code, not a personal civil-registration number.",
+  "columns": [
+    {
+      "name": "source_row",
+      "parquet_type": "int32",
+      "source_label": null,
+      "source_variable_type": null,
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Original one-based row position; added without sorting or filtering."
+    },
+    {
+      "name": "IP",
+      "parquet_type": "double",
+      "source_label": null,
+      "source_variable_type": "F11.0",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_01",
+      "parquet_type": "double",
+      "source_label": "1. K\u00f8n?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Mand",
+        "2.0": "Kvinde"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_02",
+      "parquet_type": "double",
+      "source_label": "2. I hvilket \u00e5r er du f\u00f8dt?",
+      "source_variable_type": "F8.2",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_03_01",
+      "parquet_type": "double",
+      "source_label": "Ingen b\u00f8rn",
+      "source_variable_type": "F8.2",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_03_02",
+      "parquet_type": "double",
+      "source_label": "B\u00f8rn, 0-1 \u00e5r",
+      "source_variable_type": "F8.2",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_03_03",
+      "parquet_type": "double",
+      "source_label": "B\u00f8rn, 2-5 \u00e5r",
+      "source_variable_type": "F8.2",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_03_04",
+      "parquet_type": "double",
+      "source_label": "B\u00f8rn, 6-15 \u00e5r",
+      "source_variable_type": "F8.2",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_03_05",
+      "parquet_type": "double",
+      "source_label": "Unge, 16-19 \u00e5r",
+      "source_variable_type": "F8.2",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_03_06",
+      "parquet_type": "double",
+      "source_label": "Unge, 20-30 \u00e5r",
+      "source_variable_type": "F8.2",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_03_07",
+      "parquet_type": "double",
+      "source_label": "Over 30 \u00e5r",
+      "source_variable_type": "F8.2",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_04",
+      "parquet_type": "double",
+      "source_label": "4. Hvad er din besk\u00e6ftigelsesm\u00e6ssige situation p\u00e5 nuv\u00e6rende tidspunkt?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Arbejder, ufagl\u00e6rt",
+        "2.0": "Arbejder, fagl\u00e6rt",
+        "3.0": "Funktion\u00e6r/tjenestemand (soldat)",
+        "4.0": "Selvst\u00e6ndig",
+        "5.0": "L\u00e6rling/elev",
+        "6.0": "Sk\u00e5ne-/puljejob",
+        "7.0": "Skoleelev/studerende",
+        "8.0": "Arbejdsl\u00f8s",
+        "9.0": "Pensionist/efterl\u00f8nsmodtager/f\u00f8rtidspensionist o.l.",
+        "10.0": "Gift uden selverhverv/hjemmeg\u00e5ende \u00e6gtef\u00e6lle",
+        "11.0": "Medhj\u00e6lpende \u00e6gtef\u00e6lle",
+        "12.0": "Vil ikke svare"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_04B",
+      "parquet_type": "double",
+      "source_label": "4b. Indenfor hvilket omr\u00e5de er du for tiden besk\u00e6ftiget?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Landbrug, jagt, fiskeri, skovbrug og r\u00e5stofudvinding",
+        "2.0": "Fremstillingsvirksomhed",
+        "3.0": "Bygge- og anl\u00e6gsvirksomhed",
+        "4.0": "Handel, service og reparationsvirksomhed",
+        "5.0": "Hotel- og restaurationsvirksomhed",
+        "6.0": "Transportvirksomhed m.v.",
+        "7.0": "Pengeinstitutter, finansierings- og forsikringsvirksomhed",
+        "8.0": "Fast ejendom, udlejning, forretningsservice m.v.",
+        "9.0": "Offentlig administration mv.",
+        "10.0": "Undervisning",
+        "11.0": "P\u00e6dagogik/b\u00f8rnepasning",
+        "12.0": "Sundhedsv\u00e6sen",
+        "13.0": "Andet",
+        "14.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_04C",
+      "parquet_type": "double",
+      "source_label": "4c. Er du ansat i offentlig- eller privat virksomhed eller er du selvst\u00e6ndig?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Selvst\u00e6ndige",
+        "2.0": "Privat",
+        "3.0": "Offentlig",
+        "4.0": "I \u00f8vrigt (fx. halvoffentlig/interesseorganisationer",
+        "5.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_05",
+      "parquet_type": "double",
+      "source_label": "5. Hvad er din sidst afsluttede uddannelse?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Ingen",
+        "2.0": "Folkeskole, mellemskole, realeksamen",
+        "3.0": "EFG/HG/Teknisk skole (1-\u00e5rige ungdomsuddannelse)",
+        "4.0": "HH/Studentereksamen/HF/HTX",
+        "5.0": "Erhvervsuddannelse (fagl\u00e6rt, h\u00e5ndv\u00e6rker, HK mm.)",
+        "6.0": "Kort videreg\u00e5ende uddannelse (1-2 \u00e5r)",
+        "7.0": "Mellemlang videreg\u00e5ende uddannelse (3-4 \u00e5r)",
+        "8.0": "Lang videreg\u00e5ende uddannelse (5 \u00e5r eller derover)",
+        "9.0": "Andet",
+        "10.0": "Vil ikke svare"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_06",
+      "parquet_type": "double",
+      "source_label": "6. Hvor mange indbyggere er der i den by, hvor du bor?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Bor p\u00e5 landet",
+        "2.0": "Under 1.000",
+        "3.0": "1.001 - 2.000",
+        "4.0": "2.001 - 10.000",
+        "5.0": "Over 10.000",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_07",
+      "parquet_type": "double",
+      "source_label": "7. Omtrent hvor stor var din husstands samlede \u00e5rlige indkomst f\u00f8r skat i 1999? ... Bare et cirkatal",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "\u00d8nsker at oplyse bel\u00f8b (noteres p\u00e5 n\u00e6ste side)",
+        "2.0": "Ved ikke",
+        "3.0": "Vil ikke svare"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_07B",
+      "parquet_type": "double",
+      "source_label": "7b. Husstandens samlede \u00e5rlige indkomst f\u00f8r skat i 1999?",
+      "source_variable_type": "F8.2",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_08",
+      "parquet_type": "double",
+      "source_label": "8. Danmark deltager p\u00e5 grund af sit forbehold ikke i den f\u00e6lles m\u00f8nt, euroen. Hvad vil du stemme til folkeafstemningen den 28. september om dansk deltagelse i den f\u00e6lles m\u00f8nt? Vil du stemme...?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "For, dansk deltagelse i den f\u00e6lles m\u00f8nt",
+        "2.0": "Imod, dansk deltagelse i den f\u00e6lles m\u00f8nt",
+        "3.0": "stemmer blankt",
+        "4.0": "Ikke stemme",
+        "5.0": "Ved ikke / Har du ikke besluttet dig"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_08B",
+      "parquet_type": "double",
+      "source_label": "8b. Hvis du skulle tage stilling for eller imod dansk deltagelse i den f\u00e6lles m\u00f8nt, euroen, hvad ville du s\u00e5 v\u00e6lge?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "For, dansk deltagelse i den f\u00e6lles m\u00f8nt",
+        "2.0": "Imod, dansk deltagelse i den f\u00e6lles m\u00f8nt",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_09",
+      "parquet_type": "double",
+      "source_label": "9. Er det sandsynligt, at du vil \u00e6ndre holdning p\u00e5 baggrund af euro-debatten inden folkeafstemningen den 28. september?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Meget usandsynligt",
+        "2.0": "Usandsynligt",
+        "3.0": "Hverken eller",
+        "4.0": "Sandsynligt",
+        "5.0": "Meget sandsynligt",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_01",
+      "parquet_type": "double",
+      "source_label": "10a) Medlemskab af EU er positivt for Danmark",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_02",
+      "parquet_type": "double",
+      "source_label": "10b) Det er en vigtig opgave for EU at f\u00e5 nye lande optaget i unionen hurtigst muligt",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_03",
+      "parquet_type": "double",
+      "source_label": "10c) Dansk deltagelse i den f\u00e6lles m\u00f8nt forringer dansk selvst\u00e6ndighed",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_04",
+      "parquet_type": "double",
+      "source_label": "10d) Dansk deltagelse i den f\u00e6lles m\u00f8nt giver bedre vilk\u00e5r for dansk erhvervsliv",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_05",
+      "parquet_type": "double",
+      "source_label": "10e) Dansk deltagelse i den f\u00e6lles m\u00f8nt er en trussel mod danskheden",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_06",
+      "parquet_type": "double",
+      "source_label": "10f) Dansk deltagelse i den f\u00e6lles m\u00f8nt giver en lavere rente i Danmark end i dag",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_07",
+      "parquet_type": "double",
+      "source_label": "10g) Dansk deltagelse i den f\u00e6lles m\u00f8nt vil medf\u00f8re forringelse i den danske velf\u00e6rdsmodel",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_08",
+      "parquet_type": "double",
+      "source_label": "10h) Dansk deltagelse i den f\u00e6lles m\u00f8nt giver mere indflydelse for Danmark p\u00e5 EUs beslutninger",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_09",
+      "parquet_type": "double",
+      "source_label": "10i) Det at have en dansk krone er vigtigere end en eventuel \u00f8konomisk gevinst ved deltagelse i den f\u00e6lles m\u00f8nt",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_10",
+      "parquet_type": "double",
+      "source_label": "10j) Eurosamarbejdet er et skridt mod Europas forenede stater",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_11",
+      "parquet_type": "double",
+      "source_label": "10k) Dansk deltagelse i den f\u00e6lles m\u00f8nt giver en \u00f8konomisk gevinst for Danmark",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_12",
+      "parquet_type": "double",
+      "source_label": "10l) Dansk deltagelse i den f\u00e6lles m\u00f8nt forringer l\u00f8nmodtagernes vilk\u00e5r",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_13",
+      "parquet_type": "double",
+      "source_label": "10m) Dansk deltagelse i den f\u00e6lles m\u00f8nt forbedrer de svage gruppers vilk\u00e5r",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_14",
+      "parquet_type": "double",
+      "source_label": "10n) Hvis Danmark g\u00e5r med i den f\u00e6lles m\u00f8nt, kan vi ikke melde os ud igen",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_15",
+      "parquet_type": "double",
+      "source_label": "10o) Eurosamarbejde underst\u00f8tter fred og stabilitet i Europa",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_16",
+      "parquet_type": "double",
+      "source_label": "10p) Eurosamarbejdet er udemokratisk",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_17",
+      "parquet_type": "double",
+      "source_label": "10q) Alt i alt er det f\u00e6lles m\u00f8ntsamarbejde positivt for Danmark",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_10_18",
+      "parquet_type": "double",
+      "source_label": "10r) Danmark b\u00f8r vente med at tilslutte sig den f\u00e6lles m\u00f8nt",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_11",
+      "parquet_type": "double",
+      "source_label": "11. Danmark kan som medlem af euro-samarbejdet blive id\u00f8mt b\u00f8der, hvis vi har et for stort underskud p\u00e5 statens finanser. Er det rigtigt eller forkert?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Det er rigtigt (korrekt svar)",
+        "2.0": "Det er forkert",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_12",
+      "parquet_type": "double",
+      "source_label": "12. Danmark kan selv bestemme rentens st\u00f8rrelse, hvis vi tilslutter os den f\u00e6lles m\u00f8nt? Er det rigtigt eller forkert?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Det er rigtigt",
+        "2.0": "Det er forkert (korrekt svar)",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_13",
+      "parquet_type": "double",
+      "source_label": "13. Danmark kan selv bestemme skatteniveauet, hvis vi tilslutter os den f\u00e6lles m\u00f8nt? Er det rigtigt eller forkert?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Det er rigtigt (korrekt svar)",
+        "2.0": "Det er forkert",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_14",
+      "parquet_type": "double",
+      "source_label": "14. Hvis vi stemmer ja ved folkeafstemningen den 28. september, vil den f\u00e6lles m\u00f8nt s\u00e5 v\u00e6re i oml\u00f8b i Danmark fra \u00e5r 2001, 2004, 2005 eller 2007?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "2001",
+        "2.0": "2004 (korrekt svar)",
+        "3.0": "2005",
+        "4.0": "2007",
+        "5.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_15",
+      "parquet_type": "double",
+      "source_label": "15. Hvis Danmark tilslutter sig den f\u00e6lles m\u00f8nt, vil den danske nationalbank s\u00e5 blive nedlagt, forts\u00e6tte stort set som i dag, eller bliver den en del af den Europ\u00e6iske Centralbank?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Bliver nedlagt",
+        "2.0": "Forts\u00e6tte stort set som i dag",
+        "3.0": "Bliver en del af den Europ\u00e6iske Centralbank (korrekt svar)",
+        "4.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_16",
+      "parquet_type": "double",
+      "source_label": "16. Vil euro-m\u00f8nter f\u00e5 en national side?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Ja (korrekt svar)",
+        "2.0": "Nej",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_17",
+      "parquet_type": "double",
+      "source_label": "17. Er Danmark med i et valuta-samarbejde i dag, hvor landene hj\u00e6lper hinanden ved uro p\u00e5 valutamarkedet?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Ja (korrekt svar)",
+        "2.0": "Nej",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_18_01",
+      "parquet_type": "double",
+      "source_label": "Folkebev\u00e6gelsen mod unionen",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Anbefaler et Ja",
+        "2.0": "Anbefaler et Nej",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_18_02",
+      "parquet_type": "double",
+      "source_label": "Junibev\u00e6gelsen",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Anbefaler et Ja",
+        "2.0": "Anbefaler et Nej",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_18_03",
+      "parquet_type": "double",
+      "source_label": "Socialdemokratiet",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Anbefaler et Ja",
+        "2.0": "Anbefaler et Nej",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_18_04",
+      "parquet_type": "double",
+      "source_label": "Det Radikale Venstre",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Anbefaler et Ja",
+        "2.0": "Anbefaler et Nej",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_18_05",
+      "parquet_type": "double",
+      "source_label": "Det Konservative Folkeparti",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Anbefaler et Ja",
+        "2.0": "Anbefaler et Nej",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_18_06",
+      "parquet_type": "double",
+      "source_label": "CentrumDemokraterne",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Anbefaler et Ja",
+        "2.0": "Anbefaler et Nej",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_18_07",
+      "parquet_type": "double",
+      "source_label": "Socialistisk Folkeparti",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Anbefaler et Ja",
+        "2.0": "Anbefaler et Nej",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_18_08",
+      "parquet_type": "double",
+      "source_label": "Dansk Folkeparti",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Anbefaler et Ja",
+        "2.0": "Anbefaler et Nej",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_18_09",
+      "parquet_type": "double",
+      "source_label": "Kristelig Folkeparti",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Anbefaler et Ja",
+        "2.0": "Anbefaler et Nej",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_18_10",
+      "parquet_type": "double",
+      "source_label": "Venstre  Danmarks Liberale Parti",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Anbefaler et Ja",
+        "2.0": "Anbefaler et Nej",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_18_11",
+      "parquet_type": "double",
+      "source_label": "Fremskridtspartiet",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Anbefaler et Ja",
+        "2.0": "Anbefaler et Nej",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_18_12",
+      "parquet_type": "double",
+      "source_label": "Enhedslisten",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Anbefaler et Ja",
+        "2.0": "Anbefaler et Nej",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_18_13",
+      "parquet_type": "double",
+      "source_label": "Frihed 2000",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Anbefaler et Ja",
+        "2.0": "Anbefaler et Nej",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_19_01",
+      "parquet_type": "double",
+      "source_label": "19a) Er du enig eller uenig i, at borgere som dig selv ikke har indflydelse p\u00e5 Folketingets og Regeringens beslutninger?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_19_02",
+      "parquet_type": "double",
+      "source_label": "19b) Er du enig eller uenig i, at borgere som dig selv ikke har indflydelse p\u00e5 EUs beslutninger?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_19_03",
+      "parquet_type": "double",
+      "source_label": "19c) Er du enig eller uenig i, at borgere som dig selv er kvalificeret til at deltage i en debat om euroen?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_19_04",
+      "parquet_type": "double",
+      "source_label": "19d) Er du enig eller uenig i, at borgere som dig selv har en mening om politik, som er v\u00e6rd at lytte til?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_19_05",
+      "parquet_type": "double",
+      "source_label": "19e) Er du enig eller uenig i, at manglende viden er grunden til at andre borgere har en anden opfattelse af politik end dig selv?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_19_06",
+      "parquet_type": "double",
+      "source_label": "19f) Er du enig eller uenig i, at andre borgere har gode argumenter for at have en anderledes opfattelse af politik end du selv har?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_20_01",
+      "parquet_type": "double",
+      "source_label": "20a) I hvor h\u00f8j grad f\u00f8ler du dig velinformeret om euroen?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "I meget h\u00f8j grad",
+        "2.0": "I h\u00f8j grad",
+        "3.0": "I nogen grad",
+        "4.0": "I ringe grad",
+        "5.0": "Slet ikke",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_20_02",
+      "parquet_type": "double",
+      "source_label": "20b) I hvor h\u00f8j grad f\u00f8lger du med i den politiske debat om euroen?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "I meget h\u00f8j grad",
+        "2.0": "I h\u00f8j grad",
+        "3.0": "I nogen grad",
+        "4.0": "I ringe grad",
+        "5.0": "Slet ikke",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_20_03",
+      "parquet_type": "double",
+      "source_label": "20c) I hvor h\u00f8j grad er du politisk interesseret?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "I meget h\u00f8j grad",
+        "2.0": "I h\u00f8j grad",
+        "3.0": "I nogen grad",
+        "4.0": "I ringe grad",
+        "5.0": "Slet ikke",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_20_04",
+      "parquet_type": "double",
+      "source_label": "20d) I hvor h\u00f8j grad har du tillid til danske politikere?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "I meget h\u00f8j grad",
+        "2.0": "I h\u00f8j grad",
+        "3.0": "I nogen grad",
+        "4.0": "I ringe grad",
+        "5.0": "Slet ikke",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_21",
+      "parquet_type": "double",
+      "source_label": "21. I din omgangskreds sker det s\u00e5 ofte, nu og da eller aldrig, at I taler om politiske forhold?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Ofte",
+        "2.0": "Nu og da",
+        "3.0": "Aldrig",
+        "4.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_22",
+      "parquet_type": "double",
+      "source_label": "22. Hvis du blev opfordret til at stille op p\u00e5 en liste til Europa-parlamentet, Folketinget, amts- eller kommunalbestyrelse ville du sige ja, overveje det eller sige nej?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Ja",
+        "2.0": "Overveje det",
+        "3.0": "Nej",
+        "4.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_23",
+      "parquet_type": "double",
+      "source_label": "23. I politik tales der ofte om venstre og h\u00f8jre. Hvor vil du placere dig selv p\u00e5 en skala, hvor 0 er mest venstreorienteret og 10 er mest h\u00f8jreorienteret?Politisk skala",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "0 (Venstre)",
+        "2.0": "1",
+        "3.0": "2",
+        "4.0": "3",
+        "5.0": "4",
+        "6.0": "5",
+        "7.0": "6",
+        "8.0": "7",
+        "9.0": "8",
+        "10.0": "9",
+        "11.0": "10 (H\u00f8jre)",
+        "12.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_24",
+      "parquet_type": "double",
+      "source_label": "24. Er du medlem af et politisk parti eller partipolitiske grupper?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Ja",
+        "2.0": "Nej",
+        "3.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_25",
+      "parquet_type": "double",
+      "source_label": "25. Hvilket parti ville du stemme p\u00e5, hvis der var folketingsvalg i morgen?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Socialdemokratiet",
+        "2.0": "Det Radikale Venstre",
+        "3.0": "Det Konservative Folkeparti",
+        "4.0": "CentrumDemokraterne",
+        "5.0": "Socialistisk Folkeparti",
+        "6.0": "Dansk Folkeparti",
+        "7.0": "Kristeligt Folkeparti",
+        "8.0": "Venstre - Danmarks Liberale Parti",
+        "9.0": "Fremskridtspartiet",
+        "10.0": "Enhedslisten",
+        "11.0": "Frihed 2000",
+        "12.0": "Andre",
+        "13.0": "Ville stemme blankt",
+        "14.0": "Vil ikke stemme",
+        "15.0": "Ved ikke",
+        "16.0": "Vil ikke svare"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_26",
+      "parquet_type": "double",
+      "source_label": "26. Hvilket parti stemte du p\u00e5 ved sidste folketingsvalg?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Socialdemokratiet",
+        "2.0": "Det Radikale Venstre",
+        "3.0": "Det Konservative Folkeparti",
+        "4.0": "CentrumDemokraterne",
+        "5.0": "Socialistisk Folkeparti",
+        "6.0": "Dansk Folkeparti",
+        "7.0": "Kristeligt Folkeparti",
+        "8.0": "Venstre - Danmarks Liberale Parti",
+        "9.0": "Fremskridtspartiet",
+        "10.0": "Enhedslisten",
+        "11.0": "Frihed 2000",
+        "12.0": "Andre",
+        "13.0": "Stemte blankt",
+        "14.0": "Stemte ikke",
+        "15.0": "Havde ikke stemmeret",
+        "16.0": "Ved ikke / kan ikke huske",
+        "17.0": "Vil ikke svare"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_27",
+      "parquet_type": "double",
+      "source_label": "27. Hvad stemte du ved den seneste EU-folkeafstemning om Amsterdamtraktaten?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Stemte du for dansk deltagelse",
+        "2.0": "Stemte du imod dansk deltagelse",
+        "3.0": "Stemte blankt",
+        "4.0": "Stemte ikke",
+        "5.0": "Havde ikke stemmeret",
+        "6.0": "Ved ikke / kan ikke huske",
+        "7.0": "Vil ikke svare"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_28_01",
+      "parquet_type": "double",
+      "source_label": "A siger: Demokrati burde f\u00f8rst og fremmest v\u00e6re en metode til at v\u00e6lge ledere, som skal tr\u00e6ffe de politiske beslutninger",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_28_02",
+      "parquet_type": "double",
+      "source_label": "B siger: Demokrati burde f\u00f8rst og fremmest v\u00e6re borgernes aktive deltagelse i en stor del af de politiske beslutninger",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_28_03",
+      "parquet_type": "double",
+      "source_label": "C siger: Demokrati burde f\u00f8rst og fremmest v\u00e6re en beskyttelse af borgerne mod for omfattende politiske beslutninger",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Helt enig",
+        "2.0": "Delvis enig",
+        "3.0": "Hverken enig eller uenig",
+        "4.0": "Delvis uenig",
+        "5.0": "Helt uenig",
+        "6.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_29",
+      "parquet_type": "double",
+      "source_label": "29. Hvis du skulle v\u00e6lge mellem A, B eller C\u00b4s holdninger, hvem er du s\u00e5 mest enig med?",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Mest enig med A",
+        "2.0": "Mest enig med B",
+        "3.0": "Mest enig med C",
+        "4.0": "Ikke enig med nogen af dem",
+        "5.0": "Ved ikke"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_30_01",
+      "parquet_type": "double",
+      "source_label": "30a) Talt med andre om politik",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Mindre grad",
+        "2.0": "Som s\u00e6dvanlig",
+        "3.0": "H\u00f8jere grad",
+        "4.0": "Ved ikke",
+        "5.0": "Ikke relevant"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_30_02",
+      "parquet_type": "double",
+      "source_label": "30b) L\u00e6st om politik i aviser",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Mindre grad",
+        "2.0": "Som s\u00e6dvanlig",
+        "3.0": "H\u00f8jere grad",
+        "4.0": "Ved ikke",
+        "5.0": "Ikke relevant"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_30_03",
+      "parquet_type": "double",
+      "source_label": "30c) Set nyhedsudsendelser p\u00e5 TV",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Mindre grad",
+        "2.0": "Som s\u00e6dvanlig",
+        "3.0": "H\u00f8jere grad",
+        "4.0": "Ved ikke",
+        "5.0": "Ikke relevant"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_30_04",
+      "parquet_type": "double",
+      "source_label": "30d) H\u00f8rt nyhedsudsendelser i radio",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Mindre grad",
+        "2.0": "Som s\u00e6dvanlig",
+        "3.0": "H\u00f8jere grad",
+        "4.0": "Ved ikke",
+        "5.0": "Ikke relevant"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_30_05",
+      "parquet_type": "double",
+      "source_label": "30e) Benyttede internettet til at finde informationer om euroen",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Mindre grad",
+        "2.0": "Som s\u00e6dvanlig",
+        "3.0": "H\u00f8jere grad",
+        "4.0": "Ved ikke",
+        "5.0": "Ikke relevant"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "S_30_06",
+      "parquet_type": "double",
+      "source_label": "30f) L\u00e6st kampagnemateriale fra partier og bev\u00e6gelser",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Mindre grad",
+        "2.0": "Som s\u00e6dvanlig",
+        "3.0": "H\u00f8jere grad",
+        "4.0": "Ved ikke",
+        "5.0": "Ikke relevant"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "KOM",
+      "parquet_type": "string",
+      "source_label": "Kommunenavn",
+      "source_variable_type": "A255",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "AMT",
+      "parquet_type": "string",
+      "source_label": "Amtsnavn",
+      "source_variable_type": "A50",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "AMT_1",
+      "parquet_type": "double",
+      "source_label": "Amt",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "K\u00f8benhavn",
+        "2.0": "Frederiksborg",
+        "3.0": "Roskilde",
+        "4.0": "Vestsj\u00e6lland",
+        "5.0": "Ribe",
+        "6.0": "Vejle",
+        "7.0": "Ringk\u00f8bing",
+        "8.0": "Viborg",
+        "9.0": "\u00c5rhus",
+        "10.0": "Nordjylland",
+        "11.0": "Storstr\u00f8m",
+        "12.0": "Bornholm",
+        "13.0": "Fyn",
+        "14.0": "S\u00f8nderjylland",
+        "15.0": "Kbh. Kommune",
+        "16.0": "Frb. Kommune"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "AMT_2",
+      "parquet_type": "double",
+      "source_label": "Landsdel",
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Kbh.Komm./Frb.Komm./Kbh.Amt/Frederiksborg",
+        "2.0": "Roskilde/Vestsj\u00e6lland/Storstr\u00f8m/Bornholm",
+        "3.0": "Fyn",
+        "4.0": "S\u00f8nderjylland/Ribe/Vejle",
+        "5.0": "Ringk\u00f8bing/Viborg/\u00c5rhus/Nordjylland"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "TOTAL",
+      "parquet_type": "double",
+      "source_label": null,
+      "source_variable_type": "F8.2",
+      "value_labels": {
+        "1.0": "Total"
+      },
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    },
+    {
+      "name": "CPR_KMNK",
+      "parquet_type": "double",
+      "source_label": "cpr_kmnkode",
+      "source_variable_type": "F11.0",
+      "value_labels": {},
+      "source_missing_ranges": [],
+      "source_missing_user_values": [],
+      "definition": "Source value retained without recoding."
+    }
+  ],
+  "verification": {
+    "row_count": true,
+    "original_order": true,
+    "all_retained_values_and_missingness_roundtrip_equal": true,
+    "ids_unique": true
+  }
+}
