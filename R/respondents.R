@@ -187,7 +187,7 @@ source_response_rows <- function(survey, people, inputs, items) {
     }
     classified <- ifelse(abs(value - round(value)) < 1e-8, round(value), value)
     code <- ifelse(is.na(text), as.character(classified), text)
-    missing <- is.na(value) & is.na(text)
+    missing <- is.na(value) & (is.na(text) | !nzchar(trimws(text)))
     dictionary_missing <- dictionary$missing_values[
       dictionary$source_column == field
     ]

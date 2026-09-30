@@ -16,7 +16,7 @@ test_that("all 23 deposited poll batteries have source-based builds", {
   })
 })
 
-test_that("redacted extracts expose only the reviewed text fields", {
+test_that("public extracts expose only the reviewed text fields", {
   sources <- read_metadata("survey_sources")
   excluded <- read_metadata("source_field_exclusions")
   purrr::walk(seq_len(nrow(sources)), function(i) {
@@ -26,9 +26,29 @@ test_that("redacted extracts expose only the reviewed text fields", {
     expect_length(intersect(names(survey), withheld), 0L)
     strings <- names(survey)[purrr::map_lgl(survey, is.character)]
     allowed <- switch(record$poll_id,
-      "btp-2007" = "Sgroup",
-      "michigan-2009" = paste0("t3q", c(38:42, 45:46)),
+      "btp-2007" = c("Sgroup", "race_other", "rm1", "rm2", "rm3"),
+      "michigan-2009" = c(paste0("t2q", 38:42),
+        paste0("t3q", c(38:42, 45:46))
+      ),
+      "nic-1996" = c("OCCUPAT1", "HSTPOTH", "SAQOTH"),
+      "california-whats-next-2011" = c("q64oth", "q70oth", "q72oth"),
+      "btp-health-education-2005" = c("q44post", "q45post"),
+      "san-mateo-2008" = c(
+        "Q1I", "Q2I", "Q3I", "Q4I", "Q7I", "Q8I", "Q9I",
+        "t2Q1I", "t2Q2I", "t2Q3I", "t2Q4I", "t2Q7I", "t2Q8I", "t2Q9I",
+        "Q128OTHER", "INTDATE", "QSTGRP", "SRVYINV"
+      ),
+      "northern-ireland-2007" = unlist(lapply(c("t2", "t3"), function(wave) {
+        unlist(lapply(18:21, function(question) {
+          c(paste0(wave, "q", question, "a", 1:5),
+            paste0(wave, "q", question, "b", 1:5)
+          )
+        }))
+      })),
       "nic2-2003" = c("stcd", "time", "qstcd"),
+      "btp-online-primaries-2004" = c(
+        "b1q38", "f1q49a", "f1q49b", "f1q49c", "f1q49d"
+      ),
       "btp-presidential-primaries-2004" = c(
         "b1q38", "f1q49a", "f1q49b", "f1q49c", "f1q49d"
       ),

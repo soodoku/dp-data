@@ -5752,6 +5752,20 @@ SPSS/Stata file; a search of the usable vault's 1,364 files and three ZIP
 inventories found no additional Climate 2021 source. The required fielded Word questionnaires
 remain the evidence needed to resolve those specific labels.
 
+The publisher's [supplementary appendix](../data/a1r-climate-2021/papers/a1r-climate-supplement.pdf)
+is now retained beside the paper, with its unchanged DOCX original. Appendix A2
+(PDF pp.2–3) identifies 845 treatment respondents and 574 controls who completed
+all three waves; these are a separate reported cohort, not a replacement for the
+962/671 immediate-post cohort. Appendix A4 (p.8) repeats NORC's 1,021 eligible
+post-survey invitees and 962 completers, and pp.8–9 describe the national and
+state weights. Appendix A5 (pp.10–17) reports item-level attitude comparisons
+using Weight 1; the later addendum documents group-diversity measures. None
+supplies Q17/Q18 answer options or missing-code labels: A5 ends at Q16C. The
+supplement therefore adds useful replication benchmarks but does not resolve
+the remaining knowledge-code gap. The already retained main paper, p.443,
+explicitly dates the third interview to October 2022 before the midterm election.
+No response, score, weight, group, sample or wave classification changes here.
+
 ### A1RC-04 — reproduce the climate report's attitude ratings (checked)
 
 The retained `data/a1r-climate-2021/reports/climate_results.pdf` reports 93
@@ -9839,3 +9853,47 @@ The fact that a field is textual does not establish that it is nonessential.
 Michigan's separately recovered arrival factual answers demonstrate the same
 classification failure. Future exclusions must state their actual purpose and
 be checked against questionnaire meaning, rather than dropping all text.
+
+The redundant Health/Education occupation-response Parquet and its dictionary
+have been removed after an independent comparison: all 454 by five projected
+values, missingness and both respondent IDs occur in the expanded survey, and
+all 840 original variable labels occur in its dictionary. The source hash,
+archive locator and original MD5 are retained with the canonical survey's
+provenance. No original survey version has been discarded by this cleanup.
+
+### X-24: Blank source text inflated observed-input counts
+
+The shared `source_response_rows()` importer treated a character field as missing
+only when its value was R `NA`. Literal empty strings and whitespace therefore
+counted as answered, although the questionnaire-presence rules correctly treated
+them as empty. Restoring NIC's three scientific text fields also exposed three
+missing questionnaire-presence dependencies for each of seven baseline-related
+measure definitions. Those twenty-one declarations are now explicit.
+
+Blank or whitespace-only text is classified as `system-missing`, with
+`missing_code = "system"`, across every poll. The literal `raw_text` is retained
+unchanged. Nonempty strings such as `NA` and `n/a` are not assigned a global
+meaning; their interpretation requires field-specific evidence.
+
+There are 4,494 blank source-response records under the expanded declarations:
+1,909 NIC records (`HSTPOTH`: 899; `OCCUPAT1`: 300; `SAQOTH`: 710) and 2,585
+Presidential Primaries records (`b1q38`: 409; `f1q49a:d`: 544 each). The NIC fields
+add 2,733 raw-source records: 1,909 blank and 824 nonempty. Existing Presidential
+Primaries records now correctly mark those 2,585 blanks as missing.
+
+Compared with the previous public build, the NIC declarations add three source
+fields to 6,377 measure records; the newly preserved nonempty answers raise
+observed-input counts in 4,795 of them, by 5,768 inputs altogether. The blank-text
+fix decreases observed-input counts in 4,693 Presidential Primaries measure
+records, by 15,510 inputs altogether. Compared instead with expanded NIC
+declarations processed by the old importer, it removes false observed inputs
+from 6,356 NIC records. The last comparison explains the bug; it is not the
+change from the public release.
+
+These counts describe available inputs, not knowledge correctness or attendance.
+Numeric measures, respondent identities, literal source answers and final
+questionnaire-presence decisions are unchanged from the previous public build.
+A regression includes actual empty, whitespace, missing and nonempty text, and
+fails with the old importer. The existing NIC phase-presence regression also
+protects the five absent baseline interviews against false positives from empty
+text; it passes after the shared correction and regenerated outputs.

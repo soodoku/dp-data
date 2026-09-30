@@ -368,7 +368,7 @@
       "rights_status": "owner-approved",
       "disclosure_status": "approved-redacted",
       "publication_status": "published",
-      "notes": "Reviewed source; archive path and hash retained; source license not inferred Seventeen questionnaire response fields across five polls restored from original sources under user approval to retain verbatim answers; contact and administrative exclusions remain explicit. No coding or imputation applied.",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred Seventeen questionnaire response fields across five polls restored from original sources under user approval to retain verbatim answers; contact and administrative exclusions remain explicit. No coding or imputation applied. Occupation q44post (422 nonempty) and job-duty q45post (407 nonempty) are retained directly with all 454 original HLM rows and both authored IDs (caseid_original and caseid). Supersedes the duplicate occupation-response projection and dictionary; all five projected fields and 840 source variable labels are preserved here and in variables.csv. Original HLM DTA MD5: 6b19f65d390017e166d3d60236474682; original SHA256 and archive locator remain in survey_sources.csv.",
       "relative_path": "survey.parquet"
     },
     {
@@ -700,36 +700,6 @@
       "publication_status": "published",
       "notes": "Unchanged historical coding evidence. Not executed by the modern build. See BTPHE-05/BTPGE-08 for independent component review.",
       "relative_path": "source-materials/historical-index-recoding.txt"
-    },
-    {
-      "artifact_id": "btp-health-education-2005-occupation-responses",
-      "poll_id": "btp-health-education-2005",
-      "artifact_type": "data",
-      "title": "BTP Health/Education occupation and job-duty verbatim responses",
-      "location": "data/btp-health-education-2005/source-materials/occupation-responses.parquet",
-      "source_id": "btp-health-education-2005-occupation-responses",
-      "original_archive_path": "cdd/data/BTP/2005/data/btp05_hlm.dta",
-      "sha256": "1dc9a92b40a7420d62d399a6ae9cba2423038f018b223e55776a918ed6877c52",
-      "rights_status": "owner-approved",
-      "disclosure_status": "approved-public",
-      "publication_status": "published",
-      "notes": "454 original HLM source rows. caseid_original retains the original survey identity; caseid retains the authored analysis ID. The selected scientific numeric fields already match current survey.parquet. q44post occupation and q45post job-duty responses are additionally preserved (422 and407 nonempty respectively). No username, city, ZIP or other contact columns are included; no score or cohort changes.",
-      "relative_path": "source-materials/occupation-responses.parquet"
-    },
-    {
-      "artifact_id": "btp-health-education-2005-occupation-responses-dictionary",
-      "poll_id": "btp-health-education-2005",
-      "artifact_type": "codebook",
-      "title": "BTP Health/Education occupation and job-duty verbatim responses — source dictionary and provenance",
-      "location": "data/btp-health-education-2005/source-materials/occupation-responses-dictionary.json",
-      "source_id": "btp-health-education-2005-occupation-responses-dictionary",
-      "original_archive_path": "cdd/data/BTP/2005/data/btp05_hlm.dta",
-      "sha256": "7eeb55f7b895e4dc3ef0928d544246ea2254299634d258cc5bbcff1c4c7153f0",
-      "rights_status": "owner-approved",
-      "disclosure_status": "approved-public",
-      "publication_status": "published",
-      "notes": "454 original HLM source rows. caseid_original retains the original survey identity; caseid retains the authored analysis ID. The selected scientific numeric fields already match current survey.parquet. q44post occupation and q45post job-duty responses are additionally preserved (422 and407 nonempty respectively). No username, city, ZIP or other contact columns are included; no score or cohort changes.",
-      "relative_path": "source-materials/occupation-responses-dictionary.json"
     },
     {
       "artifact_id": "btphe-2006-archive-cdd-fullfile",

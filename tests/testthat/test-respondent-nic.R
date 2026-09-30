@@ -13,9 +13,15 @@ test_that("NIC percentage scores use documented inclusive bounds", {
     names(survey)[match("GOVSAY2", names(survey)):
                     match("POLDEM2", names(survey))]
   )
+  source_form_observed <- function(fields) {
+    answers <- lapply(survey[fields], function(x) {
+      if (is.character(x)) !is.na(x) & nzchar(trimws(x)) else !is.na(x)
+    })
+    rowSums(as.data.frame(answers)) > 0L
+  }
   forms <- list(
-    rowSums(!is.na(survey[baseline_fields])) > 0L,
-    rowSums(!is.na(survey[exit_fields])) > 0L,
+    source_form_observed(baseline_fields),
+    source_form_observed(exit_fields),
     rep(TRUE, nrow(survey))
   )
   expect_equal(vapply(forms, function(x) sum(!x), integer(1)),
