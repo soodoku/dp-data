@@ -111,7 +111,9 @@ test_that("catalog arrival and exit fields trace literal raw source columns", {
 
 test_that("recovered Denmark follow-up preserves timing and is not exit", {
   waves <- analysis_wave_catalog()$analysis_survey_waves
-  follow_up <- dplyr::filter(waves, poll_id == "denmark-euro-2000", wave == "t3")
+  follow_up <- dplyr::filter(
+    waves, poll_id == "denmark-euro-2000", wave == "t3"
+  )
   expect_equal(nrow(follow_up), 1L)
   expect_equal(follow_up$wave_role, "follow_up")
   expect_equal(follow_up$availability, "source_exists_but_not_exported")
