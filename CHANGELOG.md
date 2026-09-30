@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Use Tanzania's original household identifiers consistently across canonical
+  knowledge, attitude and weight tables. Preserve physical source rows, all
+  scores and samples, and the IDs in frozen historical comparisons.
 - Identify code 98 as an unclassified nonanswer for four Climate baseline/exit
   knowledge fields using reproduced report means and nonanswer percentages.
   Raw answers, scores, samples and follow-up classifications are unchanged.
