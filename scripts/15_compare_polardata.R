@@ -28,9 +28,9 @@ reviewed_differences <- numerical |>
     .data$absolute_delta > 1e-10
   ) |>
   dplyr::select(
-    .data$poll_id, .data$pollgroup, .data$reference_kind,
-    .data$attitudes_sha256, .data$covariance_rank,
-    .data$source_genvar, .data$benchmark_genvar, .data$perturbation_upper
+    "poll_id", "pollgroup", "reference_kind",
+    "attitudes_sha256", "covariance_rank",
+    "source_genvar", "benchmark_genvar", "perturbation_upper"
   )
 if (nrow(reviewed_differences)) {
   cat("Verified numerical differences against approved values:\n")

@@ -14,16 +14,26 @@ read_reference_csv <- local({
   }
 })
 
-approved_cell_changes <- arrow::read_parquet(project_path(
-  "audit", "corrections", "approved_cell_changes.parquet"
-))
+read_approved_cell_changes <- local({
+  cache <- new.env(parent = emptyenv())
+  function() {
+    path <- project_path("audit", "corrections", "approved_cell_changes.parquet")
+    stamp <- file.info(path)[c("size", "mtime")]
+    saved <- cache[[path]]
+    if (is.null(saved) || !identical(saved$stamp, stamp)) {
+      saved <- list(stamp = stamp, data = arrow::read_parquet(path))
+      cache[[path]] <- saved
+    }
+    saved$data
+  }
+})
 
 approved_reference_values <- function(poll_id, field, caseid, historical,
                                       tolerance = 1e-10) {
   reference <- legacy_reference_values(
     poll_id, field, caseid, historical, tolerance
   )
-  changes <- approved_cell_changes |>
+  changes <- read_approved_cell_changes() |>
     dplyr::filter(.data$poll_id == .env$poll_id,
                   legacy_field == .env$field)
   if (!nrow(changes)) return(reference)
