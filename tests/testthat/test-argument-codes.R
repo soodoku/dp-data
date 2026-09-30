@@ -74,6 +74,7 @@ test_that("published labels retain reviewed original comma-separated sets", {
   expected <- tibble::tribble(
     ~respondent_id, ~wave, ~topic, ~side, ~slot, ~coder, ~raw_code,
     131201L, 2L, 21L, "b", 1L, "ch", "1,3",
+    131201L, 2L, 21L, "b", 1L, "la", "1,3",
     153008L, 2L, 20L, "b", 5L, "ch", " c4",
     256042L, 3L, 19L, "a", 1L, "la", " 4,5"
   )

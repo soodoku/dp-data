@@ -3528,6 +3528,52 @@ reason and evidence. The separate eight-item report-battery export also maps thi
 missing correctness. Fixed-denominator knowledge scores, attendance and all
 samples are unchanged.
 
+
+### CA-06: Archived eighth-item answer key conflicts with the final report
+
+The preserved `data/california-whats-next-2011/scripts/information-driven-model-analysis.R`,
+line 63, scores `t3q34 == 3` as correct. Departure questionnaire Q34 (printed
+pages 17–18) asks which category receives the largest share of spending in
+Governor Brown's most recent budget proposal. Code 2 is K–12 education;
+code 3 is Health and Human Services. The final report, Section A, Table 4
+“Knowledge Gains” (printed page 31), identifies K–12 education as correct and
+reports 307 correct departure answers. Among 412 flagged attendees, 307
+answered 2 and 37 answered 3: replaying the archived key reverses correctness
+for 344 people. Among the 396 selected arrival/departure records, the respective
+counts are 296 and 35, affecting 331 people. Maintained
+`metadata/california_knowledge_items.csv` already uses the correct key, 2.
+Preserve the archived script as historical evidence; no current score change
+is needed.
+
+### CA-07: Archived departure initiative index duplicates a question
+
+The same script, lines 178–181, describes the indirect-initiative index as
+`b,c,d,e` and constructs arrival `t2indirect` that way. Departure `t3indirect`
+instead averages `t3q2c,t3q2c,t3q2d,t3q2e`. Both preserved index drafts specify
+`b,c,d,e`. Q2b is “Allowing the Legislature to remove an initiative from the
+ballot by enacting it into law”; Q2c is “Allowing a simple majority of the
+State Legislature to place a countermeasure to an already qualified initiative
+on the ballot next to that initiative.” Replacing the duplicated c with b
+changes 301 of 412 attendee index values, or 287 of 396 selected values.
+For source row 23, ID 102, the raw 0–10 mean changes from 1 to 1.25.
+This is an archival implementation error supported by both drafts, the
+script comment, and its arrival formula. The maintained attitude export
+contains 27 individual telephone items, not these arrival/departure indices;
+no maintained index output requires correction.
+
+Three draft construct choices remain unresolved. Overall taxes lists
+`af,ag,ai,am`; an annotation considers dropping `am` to avoid overlap with
+openness to new taxes, but the script instead omits `ag`. Budget transparency
+and accountability lists `s,z,t,u`; an annotation questions whether `u` belongs
+here or in accountability, while the script includes it in both. Legislative
+reform lists `q,k,n,o`; an annotation suggests moving `n` to session limits,
+while the script retains it and reverses `q,k`. These require explicit
+construct decisions. The final report's individual-item results do not settle
+them. Direct verification of all 10,692 maintained attitude cells, including
+1,034 missing cells, covers the 27 telephone items; it does not establish
+correctness of every proposed California attitude index.
+
+
 ## Europolis 2009 — europolis-2009
 
 **EURO-01 — distributional parity is not a person link.** `GROUP_T1BIS == 1`
