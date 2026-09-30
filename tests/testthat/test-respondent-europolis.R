@@ -3,15 +3,20 @@ source(file.path(root, "R", "respondent_europolis.R"))
 
 test_that("Europolis is reconstructed from raw questions", {
   survey <- read_poll_survey("europolis-2009")
-  fields <- c(
-    "age1", "educ1", "birth1", "parentsbirth1", "sex1",
-    "V1Q21", "V3Q21", "V1Q11_1", "V3Q11_1",
-    paste0("V1Q", c(43, 44, 46, 47, 49, 50)),
-    paste0("V3Q", c(43, 44, 46, 47, 49, 50))
-  )
-  raw <- survey[, match(tolower(fields), tolower(names(survey)))]
+  inputs <- read_metadata("measure_inputs")
+  contracts <- read_metadata("respondent_sources")
+  identity <- contracts$id_column[contracts$poll_id == "europolis-2009"]
+  fields <- unique(c("source_row", identity, inputs$source_column[
+    inputs$poll_id == "europolis-2009"
+  ]))
+  positions <- match(tolower(fields), tolower(names(survey)))
+  expect_false(anyNA(positions))
+  raw <- survey[, positions]
   built <- build_europolis_individual(raw)
   expect_equal(built, build_europolis_individual(survey))
+  expect_equal(build_europolis_individual(raw[, rev(seq_len(ncol(raw)))]),
+    built
+  )
   birth_year <- as.numeric(unclass(survey$age1))
   expect_equal(sum(birth_year == 1900), 7L)
   expect_true(all(is.na(built$age[birth_year == 1900])))

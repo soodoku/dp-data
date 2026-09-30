@@ -163,7 +163,7 @@ test_that("group summaries use the final individual definitions", {
 })
 
 
-test_that("raw knowledge keys reproduce stored correctness and precision", {
+test_that("raw knowledge keys preserve scores in returned questionnaires", {
   survey <- read_poll_survey("uk-health-1998")
   for (wave in 1:2) {
     scores <- historical_health_items(survey, wave)
@@ -172,6 +172,14 @@ test_that("raw knowledge keys reproduce stored correctness and precision", {
       value[is.na(value)] <- 0
       value
     }, numeric(nrow(survey)))
+    if (wave == 2L) {
+      absent <- as.numeric(survey$manwkend) == 0
+      expect_setequal(as.numeric(survey$serial_m[absent]), c(3809, 4307))
+      post_fields <- paste0("soph", letters[1:6], "2")
+      expect_true(all(is.na(as.matrix(survey[absent, post_fields]))))
+      expect_true(all(stored[absent, ] == 0))
+      stored[absent, ] <- NA_real_
+    }
     expect_identical(scores, stored)
   }
   before <- rowMeans(historical_health_items(survey, 1L))
@@ -188,16 +196,23 @@ test_that("group gain conditions on unknown items and excludes self", {
   expect_error(historical_group_gain(corrected, 1:3))
   expect_error(historical_group_gain(corrected, c(1, NA, 1)))
   corrected[1, 1] <- NA_real_
+  expect_equal(historical_group_gain(corrected, rep(1, 3)), c(NA, .75, 0))
+  corrected[1, 1] <- 2
   expect_error(historical_group_gain(corrected, rep(1, 3)))
 })
 
 test_that("knowledge transformations preserve missing and zero cases", {
   rebuilt <- build_health_polardata()
-  expect_false(anyNA(rebuilt$grpgain))
-  expect_equal(sum(rebuilt$t1knowcor == 1), 12L)
-  expect_true(all(rebuilt$grpgain[rebuilt$t1knowcor == 1] == 0))
-  expect_true(all(rebuilt$knowgain2 >= 0))
-  expect_true(all(rebuilt$t1knowcor <= rebuilt$t1know))
+  absent <- rebuilt$caseid %in% c(3809, 4307)
+  expect_identical(is.na(rebuilt$grpgain), absent)
+  expect_identical(is.na(rebuilt$t1knowcor), absent)
+  expect_identical(is.na(rebuilt$knowgain2), absent)
+  expect_false(anyNA(rebuilt$t1know))
+  ceiling <- rebuilt$t1knowcor %in% 1
+  expect_equal(sum(ceiling), 12L)
+  expect_true(all(rebuilt$grpgain[ceiling] == 0))
+  expect_true(all(rebuilt$knowgain2[!absent] >= 0))
+  expect_true(all(rebuilt$t1knowcor[!absent] <= rebuilt$t1know[!absent]))
   expect_equal(
     historical_log_score(c(0, .00005, 1, NA)),
     c(log(.0001), log(.00005), 0, NA)

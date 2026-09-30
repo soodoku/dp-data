@@ -62,9 +62,10 @@ test_that("the historical nine-index battery excludes public works", {
   ]) - .5))
   built <- build_zeguo_individual(survey)
   expect_identical(built$attitude_extremity, expected)
-  survey$d2008 <- rep(10, nrow(survey))
-  survey$d2009 <- rep(10, nrow(survey))
-  survey$d2027 <- rep(10, nrow(survey))
+  observed <- questionnaire_form_evidence(survey, "zeguo-2005")$wave_observed
+  survey$d2008[observed %in% TRUE] <- 10
+  survey$d2009[observed %in% TRUE] <- 10
+  survey$d2027[observed %in% TRUE] <- 10
   changed <- build_zeguo_individual(survey)
   old_columns <- names(built)[!grepl("public_works", names(built))]
   expect_identical(changed[old_columns], built[old_columns])

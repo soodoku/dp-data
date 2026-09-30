@@ -52,7 +52,7 @@ build_btp_primaries_individual <- function(
     survey, "btp-presidential-primaries-2004"
   )
   unavailable <- presence$source_row[!presence$wave_observed %in% TRUE]
-  joint[survey$source_row %in% unavailable, ] <- NA_real_
+  joint[questionnaire_local_rows(survey) %in% unavailable, ] <- NA_real_
   knowledge <- tibble::tibble(
     knowledge_t1 = as_historical_float(rowMeans(before, na.rm = TRUE)),
     knowledge_t2 = as_historical_float(rowMeans(after, na.rm = TRUE)),

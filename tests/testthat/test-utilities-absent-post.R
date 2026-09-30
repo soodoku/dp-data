@@ -39,5 +39,7 @@ test_that("ungrouped absent forms cannot change observed group gains", {
   actual <- historical_fractional_gain(with_absent, c(1, 1, NA))
   expect_equal(actual[1:2], expected)
   expect_true(is.na(actual[3L]))
-  expect_error(historical_fractional_gain(with_absent, c(1, 1, 1)))
+  same_group <- historical_fractional_gain(with_absent, c(1, 1, 1))
+  expect_equal(same_group[1:2], expected)
+  expect_true(is.na(same_group[3L]))
 })

@@ -9116,3 +9116,40 @@ additional completion evidence establishes an unavailable questionnaire
 (whose score should be missing). Do not infer nonattendance from the empty
 answers alone. Raw responses and source identifiers are preserved under
 `data/san-mateo-2008/`; no new correction has been applied to this record.
+
+
+### X-22: Complete source-form dependencies and safe local subsets
+
+The full-questionnaire correction adds real dependencies beyond the scored
+knowledge items. The original input declarations omitted those fields, which
+made legitimate raw-only builds fail or depend on supplied column order.
+The shared source-form contract now uses registered original column order and
+labels; `metadata/measure_inputs.csv` lists all required question and return
+fields. Its 12,890 rows have unique poll/definition/source-column keys.
+This adds 9,345 dependencies: 8,493 for the reviewed forms and 852 for Zeguo's
+existing departure-availability rules. Primaries' authored correctness flags
+are excluded from presence evidence.
+
+All ten reviewed builders reproduce their full-source values with declared raw
+inputs, reversed columns, reversed rows and local subsets. A temporary local
+row index is allowed only inside an individual recode when the supplied data
+has no physical row field; it is not an identity crosswalk. Supplied missing or
+duplicate physical source rows still fail validation. Production cross-source
+joins retain their original identity checks.
+
+NIC's age correction formerly required the known mismatch and all five
+underage records to appear in every input subset. It now validates these exact
+approved anomalies when present, rejecting unreviewed mismatches or underage
+IDs. The full 911-row result is unchanged. The questionnaire-presence decisions
+are also unchanged by this dependency repair; only the typed provenance counts
+`n_source_fields` and `n_observed_fields` now reflect the complete inputs.
+
+The complete dependency export also expands `source_responses.parquet` from
+1,561,713 to 3,861,343 rows. All original keys and all eight original columns
+are unchanged. The 2,299,630 added rows cover 1,216 previously unexported
+poll/source-column combinations; independent replay matches every numeric or
+text value and its missingness to the registered public survey. All 1,027,858
+respondent-measure keys and numeric values are unchanged by this repair;
+96,984 input-count cells and 66,266 observed-input-count cells now reflect the
+expanded declarations. All seventeen analysis tables and the wide aggregate
+are byte-identical to the reviewed pre-refactor candidate.

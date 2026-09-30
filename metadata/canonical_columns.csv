@@ -121,8 +121,8 @@ respondent_measures,poll_id,string,FALSE,TRUE,poll id
 respondent_measures,respondent_id,string,FALSE,TRUE,respondent id
 respondent_measures,definition_id,string,FALSE,TRUE,definition id
 respondent_measures,value_numeric,float64,TRUE,FALSE,value numeric
-respondent_measures,n_source_fields,int32,FALSE,FALSE,n source fields
-respondent_measures,n_observed_fields,int32,FALSE,FALSE,Substantive input fields; not automatically the scoring denominator
+respondent_measures,n_source_fields,int32,FALSE,FALSE,Declared input fields including questionnaire-presence evidence; not the scoring denominator
+respondent_measures,n_observed_fields,int32,FALSE,FALSE,Declared inputs classified as answered including return indicators; not a count of quiz answers or evidence of attendance
 respondent_memberships,poll_id,string,FALSE,TRUE,poll id
 respondent_memberships,respondent_id,string,FALSE,TRUE,respondent id
 respondent_memberships,session_id,string,FALSE,TRUE,session id

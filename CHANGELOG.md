@@ -22,6 +22,13 @@
   means and learning opportunity from observed peers. Preserve BTP General
   Election's 299-person group cohort before its 248-person analytical selection.
 
+- Declare complete questionnaire-presence dependencies and use registered source
+  column order. Individual recodes support reordered inputs and local subsets
+  without changing reviewed values or weakening production identity checks.
+
+- Retain 2,299,630 additional raw questionnaire responses used by the presence
+  rules; every existing raw response and reviewed measure value is unchanged.
+
 ## 0.4.1
 
 - Preserve additional poll source versions and 13 unique historical scripts as

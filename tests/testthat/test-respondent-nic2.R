@@ -6,7 +6,7 @@ source(file.path(root, "R", "polardata_assembly.R"))
 source(file.path(root, "R", "polardata_nic2.R"))
 
 test_that("NIC2 uses raw questions and stable identities", {
-  survey <- haven::read_dta(project_path("data", "nic2-2003", "survey.dta"))
+  survey <- read_poll_survey("nic2-2003")
   fields <- c(
     "aid1",
     "aid2a_b",
@@ -125,7 +125,16 @@ test_that("NIC2 uses raw questions and stable identities", {
     "wrm4a_s",
     "wrm5"
   )
-  raw <- survey[, fields]
+  form_fields <- c(
+    names(survey)[match("fp1", names(survey)):
+                    match("isum", names(survey))],
+    names(survey)[match("qfp1", names(survey)):
+                    match("qisum", names(survey))],
+    names(survey)[match("eval1a", names(survey)):
+                    match("sq5b", names(survey))]
+  )
+  fields <- unique(c(fields, form_fields, "source_row"))
+  raw <- survey[, names(survey) %in% fields]
   built <- build_nic2_individual(raw)
   expect_equal(built, build_nic2_individual(survey))
   order <- rev(seq_len(nrow(raw)))
@@ -245,4 +254,47 @@ test_that("NIC2 identity inference rejects ambiguous or unmatched features", {
   historical$ppage[1] <- 500
   expect_error(nic2_identity_bridge(survey, historical))
   expect_error(nic2_identity_bridge(survey[c(1, 1), ], historical))
+})
+
+
+test_that("NIC2 form evidence preserves observed quizzes and main cohort", {
+  survey <- read_poll_survey("nic2-2003")
+  before_fields <- names(survey)[match("fp1", names(survey)):
+                                   match("isum", names(survey))]
+  after_fields <- c(
+    setdiff(names(survey)[match("qfp1", names(survey)):
+                            match("qisum", names(survey))], "qisum"),
+    names(survey)[match("eval1a", names(survey)):
+                    match("sq5b", names(survey))]
+  )
+  forms <- list(
+    rowSums(!is.na(survey[before_fields])) > 0L,
+    rowSums(!is.na(survey[after_fields])) > 0L
+  )
+  expect_equal(vapply(forms, function(x) sum(!x), integer(1)), c(612L, 541L))
+  expect_true(all(forms[[1]][survey$casetype == 1]))
+  expect_true(all(forms[[2]][survey$casetype == 1]))
+  keys <- c(aid3 = 1, wrm5 = 3, kno1_a = 4, kno1_b = 1, kno2_a = 3,
+    kno2_b = 4, kno3_a = 5, kno3_b = 1, wrm1_b = 1
+  )
+  values <- build_nic2_individual(survey)
+  for (wave in 1:2) {
+    prefix <- if (wave == 1L) "" else "q"
+    observed <- forms[[wave]]
+    items <- nic2_knowledge_items(survey, wave)
+    expect_true(all(is.na(items[!observed, ])))
+    for (stem in names(keys)) {
+      expected <- as.numeric(survey[[paste0(prefix, stem)]] %in% keys[[stem]])
+      expect_equal(items[observed, stem], expected[observed])
+    }
+    expect_equal(sum(is.na(values[[paste0("knowledge_t", wave)]])),
+      sum(!observed)
+    )
+    changed <- survey
+    row <- which(survey$casetype == 1)[1]
+    for (stem in c(names(keys), "wrm3_b", "wrm3_c")) {
+      changed[[paste0(prefix, stem)]][row] <- NA
+    }
+    expect_equal(unname(nic2_knowledge_items(changed, wave)[row, ]), rep(0, 11))
+  }
 })

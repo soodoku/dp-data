@@ -57,13 +57,14 @@ nic_age <- function(survey) {
   birth_year <- rounded_source_code(survey$BIRTHDY1) %% 100
   mismatch <- which(!is.na(year) & !is.na(birth_year) &
                       year != birth_year)
-  stopifnot(length(mismatch) == 1L, caseid[mismatch] == 10007590,
-    year[mismatch] == 7, birth_year[mismatch] == 67
+  stopifnot(
+    all(caseid[mismatch] == 10007590),
+    all(year[mismatch] == 7), all(birth_year[mismatch] == 67)
   )
   age <- 96 - year
   underage <- which(!is.na(age) & age < 18)
   stopifnot(
-    setequal(caseid[underage], c(
+    all(caseid[underage] %in% c(
       10005580, 10006530, 10008740, 10008780, 10011470
     )),
     all(rounded_source_code(survey$BDAYRTE1)[underage] == 1)

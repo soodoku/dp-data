@@ -58,7 +58,7 @@ test_that("Health completion evidence does not erase positive attendance", {
   expect_true(all(original$attended))
   survey <- read_poll_survey("uk-health-1998")
   row <- which(as.numeric(survey$serial_m) == 3809)
-  fields <- questionnaire_field_block(survey, "mtneed2", "dopint")
+  fields <- questionnaire_form_contract("uk-health-1998")$fields[[1]]
   expect_length(fields, 75L)
   expect_true(all(is.na(as.matrix(survey[row, fields]))))
   expect_equal(as.numeric(survey$manwkend[row]), 0)

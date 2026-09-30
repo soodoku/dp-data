@@ -3,135 +3,20 @@ source(file.path(root, "R", "respondent_tomorrows_europe.R"))
 
 test_that("tomorrows-europe uses raw questions independently of row order", {
   survey <- read_poll_survey("tomorrows-europe-2007")
-  fields <- c(
-    "age",
-    "v_q36",
-    "q11a_1",
-    "q11b_1",
-    "q11c_1",
-    "q12a_1",
-    "q12b_1",
-    "q12c_1",
-    "q12d_1",
-    "q13b_1",
-    "q15a_1",
-    "q15b_1",
-    "q15c_1",
-    "q15d_1",
-    "q16_1",
-    "q17_1",
-    "q18_1",
-    "q19_1",
-    "q1_1",
-    "q20_1",
-    "q21_1",
-    "q22_1",
-    "q23_1",
-    "q24_1",
-    "q33a_1",
-    "q33b_1",
-    "q35",
-    "q36",
-    "q39",
-    "q4_1",
-    "q7c_1",
-    "t2q1",
-    "t2q11a",
-    "t2q11b",
-    "t2q11c",
-    "t2q12a",
-    "t2q12b",
-    "t2q12c",
-    "t2q12d",
-    "t2q16a",
-    "t2q16b",
-    "t2q16c",
-    "t2q16f",
-    "t2q16j",
-    "t2q17a",
-    "t2q17b",
-    "t2q17c",
-    "t2q17d",
-    "t2q17e",
-    "t2q17f",
-    "t2q17g",
-    "t2q17h",
-    "t2q17i",
-    "t2q18a",
-    "t2q18b",
-    "t2q18c",
-    "t2q18d",
-    "t2q19",
-    "t2q20",
-    "t2q21",
-    "t2q22",
-    "t2q23",
-    "t2q24",
-    "t2q25",
-    "t2q26",
-    "t2q27",
-    "t2q36a",
-    "t2q36b",
-    "t2q4",
-    "t2q5a",
-    "t2q5b",
-    "t2q5c",
-    "t2q5d",
-    "t2q7a",
-    "t2q7c",
-    "t2q7d",
-    "t2q8",
-    "t3q1",
-    "t3q11a",
-    "t3q11b",
-    "t3q11c",
-    "t3q12a",
-    "t3q12b",
-    "t3q12c",
-    "t3q12d",
-    "t3q16a",
-    "t3q16b",
-    "t3q16c",
-    "t3q16f",
-    "t3q16j",
-    "t3q17a",
-    "t3q17b",
-    "t3q17c",
-    "t3q17d",
-    "t3q17e",
-    "t3q17f",
-    "t3q17g",
-    "t3q17h",
-    "t3q17i",
-    "t3q18a",
-    "t3q18b",
-    "t3q18c",
-    "t3q18d",
-    "t3q19",
-    "t3q20",
-    "t3q21",
-    "t3q22",
-    "t3q23",
-    "t3q24",
-    "t3q25",
-    "t3q26",
-    "t3q27",
-    "t3q36a",
-    "t3q36b",
-    "t3q4",
-    "t3q42",
-    "t3q5a",
-    "t3q5b",
-    "t3q5c",
-    "t3q5d",
-    "t3q7a",
-    "t3q7c",
-    "t3q7d",
-    "t3q8"
-  )
-  raw <- survey[, match(tolower(fields), tolower(names(survey)))]
+  inputs <- read_metadata("measure_inputs")
+  contracts <- read_metadata("respondent_sources")
+  identity <- contracts$id_column[contracts$poll_id == "tomorrows-europe-2007"]
+  fields <- unique(c("source_row", identity, inputs$source_column[
+    inputs$poll_id == "tomorrows-europe-2007"
+  ]))
+  positions <- match(tolower(fields), tolower(names(survey)))
+  expect_false(anyNA(positions))
+  raw <- survey[, positions]
   built <- build_tomorrow_individual(survey)
   expect_equal(build_tomorrow_individual(raw), built)
+  expect_equal(build_tomorrow_individual(raw[, rev(seq_len(ncol(raw)))]),
+    built
+  )
   order <- rev(seq_len(nrow(raw)))
   expect_equal(build_tomorrow_individual(raw[order, ]), built[order, ])
   raw[[match("q35", tolower(names(raw)))]][1] <- 777
@@ -218,14 +103,50 @@ test_that("tomorrows-europe matches every historical respondent target", {
     "eu.t3q11br" = "military_never_t3",
     "eu.t3q16jr" = "enlargement_limit_t3"
   )
+  source_rows <- match(as.character(benchmark$caseid), ids)
+  arrival_fields <- grep("^t2q[0-9]+[a-z]?(_[0-9]+)?$", names(survey),
+    ignore.case = TRUE, value = TRUE
+  )
+  exit_fields <- grep("^t3q[0-9]+[a-z]?(_[0-9]+)?$", names(survey),
+    ignore.case = TRUE, value = TRUE
+  )
+  arrival_missing <- rowSums(!is.na(survey[source_rows, arrival_fields])) == 0
+  exit_missing <- rowSums(!is.na(survey[source_rows, exit_fields])) == 0
+  expect_equal(length(arrival_fields), 142L)
+  expect_equal(length(exit_fields), 185L)
+  expect_setequal(benchmark$caseid[arrival_missing],
+    c(3522, 3495, 2824, 148, 1130, 1143, 1157)
+  )
+  expect_setequal(benchmark$caseid[exit_missing],
+    c(3522, 3495, 2824, 625, 516, 693, 374, 225, 148)
+  )
+  exit_dependent <- c("t1knowcor", "t1knowrcor", "t2know", "t2knowr",
+    "knowgain", "knowgainr", "knowgain2", "knowgainr2", "logpk", "tobitpk"
+  )
+  both_dependent <- c("t1knowcor2", "t12knowcor")
   corrected <- c("ppage", "educ4", "educ3")
   for (field in setdiff(names(mapping), c(
     "eu.mil_att_11_12_t3", "eu.free_trade_index_t3", corrected
   ))) {
-    expect_equal(
-      built[[mapping[[field]]]], as.numeric(benchmark[[field]]),
-      tolerance = 1e-10
+    expected <- as.numeric(benchmark[[field]])
+    unavailable <- if (field %in% exit_dependent) {
+      exit_missing
+    } else if (field %in% both_dependent) {
+      arrival_missing | exit_missing
+    } else if (field == "t12know") {
+      arrival_missing
+    } else {
+      rep(FALSE, nrow(benchmark))
+    }
+    expected[unavailable] <- NA_real_
+    expect_equal(built[[mapping[[field]]]], expected,
+      tolerance = 1e-10, info = field
     )
+    if (any(unavailable)) {
+      expect_true(all(is.na(built[[mapping[[field]]]][unavailable])),
+        info = field
+      )
+    }
   }
   source_rows <- match(as.character(benchmark$caseid), ids)
   education_code <- as.numeric(unclass(survey$q39))[source_rows]

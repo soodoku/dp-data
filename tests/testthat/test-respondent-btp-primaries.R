@@ -25,6 +25,7 @@ test_that("primaries reconstruction uses only original response fields", {
   expected <- build_btp_primaries_individual(survey)
   keep <- grepl("^(b1q|f1q|pp)", names(survey)) &
     !grepl("cor$|_r$", names(survey))
+  keep <- keep | names(survey) == "compf1"
   raw <- survey[, keep]
   expect_equal(build_btp_primaries_individual(raw), expected)
   order <- rev(seq_len(nrow(raw)))

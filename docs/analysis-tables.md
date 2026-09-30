@@ -472,3 +472,14 @@ questionnaires contain incorrect answers. BTP General Election retains its
 299-person source cohort for group calculations before exporting the selected
 248-person panel; a downstream recalculation on 248 people is a different
 population.
+
+Questionnaire-presence dependencies are listed in `metadata/measure_inputs.csv`
+alongside the question inputs. The shared form contract derives complete raw
+question blocks from the registered source dictionary, so changing the supplied
+column order cannot change which fields establish a returned questionnaire.
+Stored correctness flags and authored recodes do not establish presence.
+In `respondent_measures`, `n_source_fields` counts these declared dependencies;
+`n_observed_fields` counts dependencies classified as answered, including return
+indicators. Neither field is the number of knowledge items, a quiz denominator,
+or a standalone attendance indicator. Adding the explicit dependencies changes
+these provenance counts while leaving the reviewed measure values unchanged.
