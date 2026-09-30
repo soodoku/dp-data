@@ -5359,10 +5359,10 @@ battery still matches its deposit, a separate check from group membership.
 The paper's adjudicated argument codes, coder disagreements, response slots,
 administration universe and verbatim text are not replaceable by the upstream
 knowledge score. The questionnaire and coding scheme must be consulted for those
-constructs. A redacted numeric survey can match analytical fields while omitting
+constructs. The earlier redacted survey matched analytical fields while omitting
 80 verbatim fields; field coverage is a separate contract. Census workbooks and
 coding materials moved to the external vault retain their original bytes.
-The maintained paper now reads the public numeric survey, source roster and
+The maintained paper reads the public survey, source roster and
 `data/northern-ireland-2007/argument-codes.parquet`. The latter retains all
 65,760 coder-slot records for 274 respondents, including missing labels;
 `R/argument_codes.R` selects the 240 coder fields from the original `fin.csv`
@@ -5374,6 +5374,32 @@ The first-roster-row issue was subsequently corrected as described in NI-01.
 The old vault inventory remains historical provenance, not a required runtime
 input list.
 See [dp-nireland data documentation](../../dp-nireland/docs/data.md).
+
+**September 30: restore the approved original questionnaire text.**
+The public `survey.parquet` now retains all 528 original survey fields plus
+`source_row` (868 rows × 529 columns). The 80 restored fields are exactly
+`t2q18a1:t2q21b5` and `t3q18a1:t3q21b5`: five argument slots per side,
+four topics and two interviews. These are scientific questionnaire responses;
+no additional contact fields are introduced. The user explicitly authorized
+retaining these older verbatim responses. Exact original Stata bytes are also
+preserved at `source-materials/survey-original.dta` (SHA256
+`305c8646632cfc36ca55177771a89aa2aa38149f5ab394ec14428bf9ffa7fffa`).
+The archive locator now resolves to that public file, so this source needs no
+local vault. The modern Parquet import uses `lossless-parquet`, requires zero
+excluded fields, and retains original string content without trimming,
+recoding or adjudication. The source dictionary marks every field public.
+
+There are 3,423 nonempty argument responses: 1,340 at T2 from 110 people and
+2,083 at T3 from 231 people. Every person with nonempty text already has at
+least one recorded knowledge answer at that same interview. Thus none of these
+responses establishes a previously unknown questionnaire. The original
+attendance variables and membership roster are unchanged; text is not used to
+infer attendance. All 449 previously public fields (including `source_row`)
+match exactly, and all 80 restored strings match the original source.
+Rebuilding knowledge and all canonical analysis tables leaves all 57 output
+files byte-identical, including questionnaire presence, attendance, knowledge
+scores and analytical samples. This closes the raw-text preservation gap;
+`argument-codes.parquet` remains a distinct, unchanged table of coder labels.
 
 ### NI-03: Knowledge keys reproduce the paper; restore the first question's condition
 

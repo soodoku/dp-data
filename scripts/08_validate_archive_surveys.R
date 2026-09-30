@@ -19,7 +19,10 @@ purrr::walk(seq_len(nrow(sources)), function(row) {
   excluded <- poll_exclusions |>
     dplyr::filter(.data$poll_id == record$poll_id) |>
     dplyr::pull(.data$source_column)
-  if (record$transformation == "exclude-verbatim") {
+  if (record$transformation %in% c("exclude-verbatim", "lossless-parquet")) {
+    if (record$transformation == "lossless-parquet") {
+      stopifnot(length(excluded) == 0L)
+    }
     expected <- public_survey_extract(original, excluded)
     observed <- read_public_survey(record)
     stopifnot(identical(expected, observed))
@@ -43,7 +46,8 @@ purrr::walk(seq_len(nrow(sources)), function(row) {
   stopifnot(isTRUE(all.equal(
     dictionary, survey_dictionary(
       original, excluded,
-      parquet = record$transformation == "exclude-verbatim"
+      parquet = record$transformation %in%
+        c("exclude-verbatim", "lossless-parquet")
     ),
     check.attributes = FALSE
   )))
