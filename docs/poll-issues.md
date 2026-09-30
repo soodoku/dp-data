@@ -9574,6 +9574,48 @@ missing. Vermont code99 remains valid in percentage questions; monetary
 willingness-to-pay responses retain dollars without an invented upper endpoint.
 These additive exports do not redefine the historical composite attitude indices.
 
+**Source questionnaire presence, September 30.** The source attitude export
+previously obtained presence only through a canonical knowledge-score join.
+This left recorded questionnaires marked unknown when their respondents or
+interview waves were outside that analytical cohort. The shared postprocessor
+now uses substantive answers checked against the source scale, or explicitly
+recorded DK/refusal responses with a nonmissing raw code, to establish presence within the same poll, source file, physical source row
+and literal wave. It changes 125,840 presence flags across 3,284 source forms;
+15,890 raw missing items on those forms change from `source_missing` to `blank`.
+No raw response, numeric value, identity, timing, score, weight or cohort changes.
+An explicit absence that conflicts with a substantive answer stops the build.
+
+| Source | Newly established forms | Presence flags changed |
+| --- | ---: | ---: |
+| Denmark baseline | 1,328 | 47,808 |
+| Denmark arrival | 5 | 185 |
+| Denmark follow-up | 355 | 11,715 |
+| Denmark separate control questionnaire | 992 | 20,832 |
+| Vermont baseline | 604 | 45,300 |
+
+Direct checks against the five registered public source files reproduce all
+99,618 substantive answers establishing 3,279 forms, including source row and
+native respondent identifiers. Another five forms contain 78 explicit DK responses;
+each code and label matches the original source dictionary. Vermont's 604 corresponding arrival forms and
+604 exit forms contain no recorded attitude answers and remain unknown. The
+separate Denmark control questionnaire retains its literal `source_t2ctrl`
+identity and unassigned canonical timing; questionnaire presence does not
+establish when an interview occurred or whether someone attended deliberation.
+
+Five Denmark forms have only explicit DK responses among the exported attitude
+items: baseline `ipnr` 1475, 2210, 3183 and 3366 (source rows 582, 881, 1308 and
+1376), and control `IP` 11834 (row 671). Their recorded attitude cells number
+36, 1, 36, 2 and 3 respectively. Their explicit DK responses establish questionnaire presence while every
+attitude value remains missing. The baseline DK codes are field-specific 3, 5, 6, 12 and 15; the control
+items `S_08`, `S_08B` and `S_09` contain 5, 3 and 6, labeled respectively
+“Ved ikke / Har du ikke besluttet dig,” “Ved ikke” and “Ved ikke.” All five
+also contain source occupation, schooling, community-size and income answers.
+The retained control questionnaire pp.1–2 explicitly asks those background
+questions during that interview. These background answers provide additional corroboration, but the shared rule
+uses the recorded DK responses and contains no person-specific exceptions.
+A raw missing value, an invalid code or an ambiguous combined DK/NA category
+alone does not establish presence.
+
 Marousi's original identifier is wave-specific: `P_Q1_0` for telephone,
 `AR_CODE` for arrival and `F_CODE` for exit. The canonical bridge still follows
 the authored source-row alignment, with the sixteen conflicting departure IDs

@@ -183,7 +183,36 @@ testthat::test_that("transport preserves all source records and cells", {
   testthat::expect_equal(nrow(control), 993 * 21)
   testthat::expect_true(all(is.na(control$respondent_id)))
   testthat::expect_true(all(is.na(control$wave)))
-  testthat::expect_true(all(is.na(control$wave_observed)))
+  observed_control <- unique(control$source_row[
+    control$response_status %in% c("answered", "dk", "refused")
+  ])
+  testthat::expect_length(observed_control, 992L)
+  testthat::expect_true(all(control$wave_observed[
+    control$source_row %in% observed_control
+  ]))
+  testthat::expect_true(all(is.na(control$wave_observed[
+    !control$source_row %in% observed_control
+  ])))
+  dk_only <- denmark[
+    (denmark$source_wave == "t0" &
+       denmark$source_unit_id %in% c("1475", "2210", "3183", "3366")) |
+      (denmark$source_wave == "source_t2ctrl" &
+         denmark$source_unit_id == "11834"),
+  ]
+  testthat::expect_equal(nrow(dk_only), 165L)
+  testthat::expect_equal(sum(dk_only$response_status == "dk"), 78L)
+  testthat::expect_equal(sum(dk_only$response_status == "blank"), 87L)
+  testthat::expect_true(all(dk_only$wave_observed))
+  testthat::expect_true(all(is.na(dk_only$value)))
+  vermont <- responses[responses$poll_id == "vermont-energy-2007", ]
+  testthat::expect_true(all(vermont$wave_observed[
+    vermont$source_wave == "T1"
+  ]))
+  unlinked_later <- vermont$source_wave %in% c("T2", "T3") &
+    is.na(vermont$respondent_id)
+  testthat::expect_equal(sum(unlinked_later), 2L * 604L * 84L)
+  testthat::expect_true(all(is.na(vermont$wave_observed[unlinked_later])))
+  testthat::expect_true(all(is.na(vermont$raw_value[unlinked_later])))
   invalid <- responses[responses$response_status == "invalid_response", ]
   testthat::expect_equal(nrow(invalid), 40)
   testthat::expect_true(all(invalid$poll_id == "vermont-energy-2007"))
@@ -212,4 +241,60 @@ testthat::test_that("identity bridges reject ambiguous canonical source rows", {
   testthat::expect_error(source_attitude_identity(raw, spec,
     dplyr::bind_rows(people, people[1, ])
   ))
+})
+
+
+testthat::test_that("source answers establish presence outside the cohort", {
+  answers <- tibble::tibble(
+    poll_id = rep("example", 10),
+    source_id = c(rep("first", 8), "second", "first"),
+    source_row = c(1L, 1L, 2L, 2L, 3L, 3L, 4L, 4L, 1L, 1L),
+    source_unit_id = c("a", "a", "b", "b", "c", "c", "d", "d", "a", "a"),
+    source_wave = c(rep("before", 9), "after"),
+    raw_value = c(0, NA, 99, NA, NA, NA, NA, NA, NA, NA),
+    value = c(0, NA, NA, NA, 0.5, NA, NA, NA, NA, NA),
+    response_status = c("answered", "source_missing", "dk", "source_missing",
+      "source_missing", "source_missing", "absent_form", "absent_form",
+      "source_missing", "source_missing"
+    ),
+    wave_observed = c(rep(NA, 6), FALSE, FALSE, NA, NA)
+  )
+  actual <- source_attitude_presence(answers)
+  testthat::expect_identical(actual$wave_observed,
+    c(TRUE, TRUE, TRUE, TRUE, NA, NA, FALSE, FALSE, NA, NA)
+  )
+  testthat::expect_identical(actual$response_status,
+    replace(answers$response_status, c(2L, 4L), "blank")
+  )
+  retained <- setdiff(names(answers), c("wave_observed", "response_status"))
+  testthat::expect_identical(actual[retained], answers[retained])
+  order <- rev(seq_len(nrow(answers)))
+  testthat::expect_identical(
+    source_attitude_presence(answers[order, ])[order, ], actual
+  )
+  for (status in c("refused", "nonanswer", "not_asked", "invalid_response")) {
+    variant <- answers
+    variant$response_status[3] <- status
+    result <- source_attitude_presence(variant)
+    if (status == "refused") {
+      testthat::expect_true(all(result$wave_observed[3:4]))
+    } else {
+      testthat::expect_true(all(is.na(result$wave_observed[3:4])))
+    }
+  }
+  missing_code <- answers
+  missing_code$raw_value[3] <- NA_real_
+  testthat::expect_true(all(is.na(
+    source_attitude_presence(missing_code)$wave_observed[3:4]
+  )))
+  conflicting <- answers
+  conflicting$wave_observed[2] <- FALSE
+  testthat::expect_error(source_attitude_presence(conflicting),
+    "answers conflict with explicit absence"
+  )
+  conflicting <- answers
+  conflicting$source_unit_id[2] <- "another person"
+  testthat::expect_error(source_attitude_presence(conflicting),
+    "inconsistent native respondent identifiers"
+  )
 })

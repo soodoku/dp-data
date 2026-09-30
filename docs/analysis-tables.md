@@ -436,6 +436,15 @@ responses. The 271 Marousi responses whose scale is not established remain
 `unclassified_response`, with missing numeric values. Vermont's 40 out-of-range
 responses remain `invalid_response`; their original codes are retained.
 
+Questionnaire presence is also established directly from a reviewed substantive
+source answer or an explicitly recorded DK or refusal. The shared rule groups rows by poll, source file, physical source
+row and literal source wave, independently of membership in an analysis cohort.
+It fills unknown presence for every attitude item on that form and classifies
+raw missing items as blanks. Explicit absence conflicting with a substantive
+answer stops the build. Empty forms, ambiguous combined nonanswer codes, derived values and administrative
+identifiers do not supply positive evidence under this rule. Source-only people
+remain source-only, and an unassigned interview phase remains unassigned.
+
 `unit`, `minimum` and `maximum` describe the source scale. `normalized_value`
 is supplied only when a reviewed numeric scale has two fixed endpoints.
 Nominal categories are not converted into an ordered scale. Vermont's
