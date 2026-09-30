@@ -66,17 +66,17 @@ q62,double,haven_labelled|vctrs_vctr|double,float64,62 AGE GROUP,%8.0g,,,TRUE,Re
 q62age,double,numeric,float64,62 ACTUAL AGE,%8.0g,,,TRUE,Retained
 q63,double,haven_labelled|vctrs_vctr|double,float64,63 EMPLOYMENT STATUS,%8.0g,,,TRUE,Retained
 q64,double,haven_labelled|vctrs_vctr|double,float64,64 WHICH OF THE FOLLOWING BEST DESCRIBES YOUR EMPLOYMENT?,%8.0g,,,TRUE,Retained
-q64oth,character,character,,Phone: Name: 64 Which of the following best describes your employment? (READ LIS,%38s,,,FALSE,Excluded; see source_field_exclusions
+q64oth,character,character,string,Phone: Name: 64 Which of the following best describes your employment? (READ LIS,%38s,,,TRUE,Retained
 q65,double,haven_labelled|vctrs_vctr|double,float64,65 HOW OFTEN WOULD YOU SAY YOU ATTEND RELIGIOUS SERVICES?,%8.0g,,,TRUE,Retained
 q66,double,haven_labelled|vctrs_vctr|double,float64,66 ARE YOU CURRENTLY MARRIED AND LIVING WITH YOUR SPOUSE?,%8.0g,,,TRUE,Retained
 q67,double,haven_labelled|vctrs_vctr|double,float64,67 ARE YOU LIVING WITH A PARTNER?,%8.0g,,,TRUE,Retained
 q68,double,haven_labelled|vctrs_vctr|double,float64,68 HOW MANY CHILDREN DO YOU HAVE UNDER 18 LIVING AT HOME?,%8.0g,,,TRUE,Retained
 q69,double,haven_labelled|vctrs_vctr|double,float64,69 ANNUAL HOUSEHOLD INCOME,%8.0g,,,TRUE,Retained
 q70,double,haven_labelled|vctrs_vctr|double,float64,70 ETHNICITY,%8.0g,,,TRUE,Retained
-q70oth,character,character,,,%23s,,,FALSE,Excluded; see source_field_exclusions
+q70oth,character,character,string,,%23s,,,TRUE,Retained
 q71,double,haven_labelled|vctrs_vctr|double,float64,71 POLITICAL IDEOLOGY,%8.0g,,,TRUE,Retained
 q72,double,haven_labelled|vctrs_vctr|double,float64,72 PARTY AFFILIATION,%8.0g,,,TRUE,Retained
-q72oth,character,character,,,%18s,,,FALSE,Excluded; see source_field_exclusions
+q72oth,character,character,string,,%18s,,,TRUE,Retained
 q73,double,haven_labelled|vctrs_vctr|double,float64,73 GENDER,%8.0g,,,TRUE,Retained
 q74,double,haven_labelled|vctrs_vctr|double,float64,74 REGION,%8.0g,,,TRUE,Retained
 attend,double,haven_labelled|vctrs_vctr|double,float64,ATTENDANCE AS OF 6/24 PRIOR TO EVENT,%8.0g,,,TRUE,Retained

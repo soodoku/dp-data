@@ -9557,3 +9557,33 @@ attitude scoring. Field-specific checks reproduce the codebook frequencies;
 versus three. The printed block also contains a malformed cumulative-frequency
 entry. Preserve the explicit source meanings and actual raw counts; do not
 invent observations or change raw codes to reconcile the printing.
+
+
+### X-23: Questionnaire write-ins were incorrectly classified as nonessential text
+
+The original survey extraction mixed questionnaire answers with contact and
+administrative fields in one exclusion list. That classification concealed
+scientific source material. Under the user's approval to retain verbatim
+responses, seventeen fields have been restored unchanged to five poll surveys:
+
+| Poll | Restored fields | Meaning and evidence |
+| --- | --- | --- |
+| BTP 2007 | `race_other`, `rm1`, `rm2`, `rm3` | Original SAV dictionary: other race and specified Protestant, other Christian and other religion. |
+| BTP Online Primaries 2004 | `b1q38`, `f1q49a:d` | Original DTA dictionary: primary vote choice and identification of Clark, Kucinich, Sharpton and Gephardt. These are responses, not participant contact names. |
+| California 2011 | `q64oth`, `q70oth`, `q72oth` | Original DTA dictionary identifies employment, ethnicity and party affiliation for the corresponding numbered fields. The pre-questionnaire PDF pp. 8–9 asks employment specification, other ethnicity and party identification; printed numbers 65/71/73 differ from source 64/70/72. |
+| BTP Health/Education 2005 | `q44post`, `q45post` | Original DTA labels identify occupation and job-duty descriptions. The wider preserved source already carries these fields; the selected 454-person source now retains them too. |
+| NIC 1996 | `OCCUPAT1`, `HSTPOTH`, `SAQOTH` | Original SAV dictionary identifies occupation and two specified-other questionnaire responses. |
+
+Every existing public field, source row and respondent count is unchanged. The
+new columns match the original source strings exactly, including literal blank
+and nonanswer strings; no new category interpretation, correctness score or
+ethnicity classification is inferred. Their dictionaries now identify them as
+retained string fields. Participant contact fields and administrative identifiers
+remain separately excluded. Moderator names have not been adopted as discussion
+group identifiers. The original survey hashes and full source dimensions remain
+the lineage reference; hashes of the expanded public extracts are updated.
+
+The fact that a field is textual does not establish that it is nonessential.
+Michigan's separately recovered arrival factual answers demonstrate the same
+classification failure. Future exclusions must state their actual purpose and
+be checked against questionnaire meaning, rather than dropping all text.

@@ -135,7 +135,7 @@ b1q32_8,double,haven_labelled|vctrs_vctr|double,float64," now, using the same sc
 b1q33,double,haven_labelled|vctrs_vctr|double,float64, now we have some last questions about the upcoming election.who do you think wi,%8.0g,,,TRUE,Retained
 b1q34,double,haven_labelled|vctrs_vctr|double,float64, how close do you think the presidential vote will be?,%8.0g,,,TRUE,Retained
 b1q37,double,haven_labelled|vctrs_vctr|double,float64," if your state has a primary election, do you intend to vote?",%8.0g,,,TRUE,Retained
-b1q38,character,character,,who will you vote for in the primary,%44s,,,FALSE,Excluded; see source_field_exclusions
+b1q38,character,character,string,who will you vote for in the primary,%44s,,,TRUE,Retained
 b1q39,double,haven_labelled|vctrs_vctr|double,float64, we'd like to know how you intend to vote in the november presidential election.,%8.0g,,,TRUE,Retained
 b1q40,double,haven_labelled|vctrs_vctr|double,float64, how certain do you feel you will vote that way? are you:,%8.0g,,,TRUE,Retained
 b1q41a,double,haven_labelled|vctrs_vctr|double,float64," among the democrats, who would you most like to see win the nomination?",%8.0g,,,TRUE,Retained
@@ -274,10 +274,10 @@ f1q46,double,haven_labelled|vctrs_vctr|double,float64, which one of the democrat
 f1q47,double,haven_labelled|vctrs_vctr|double,float64," since president bush took office, would you say that the rate of unemployment i",%8.0g,,,TRUE,Retained
 f1q48,double,haven_labelled|vctrs_vctr|double,float64, so far the number of americans killed in action in iraq can be numbered as:,%8.0g,,,TRUE,Retained
 f1q49,double,haven_labelled|vctrs_vctr|double,float64," as far as you know, what is the bush administration's position on creating a ne",%8.0g,,,TRUE,Retained
-f1q49a,character,character,,identify this person:  clark,%90s,,,FALSE,Excluded; see source_field_exclusions
-f1q49b,character,character,,identify this person:  kucinich,%25s,,,FALSE,Excluded; see source_field_exclusions
-f1q49c,character,character,,identify this person:  sharpton,%37s,,,FALSE,Excluded; see source_field_exclusions
-f1q49d,character,character,,idenitfy this person:  gephardt,%33s,,,FALSE,Excluded; see source_field_exclusions
+f1q49a,character,character,string,identify this person:  clark,%90s,,,TRUE,Retained
+f1q49b,character,character,string,identify this person:  kucinich,%25s,,,TRUE,Retained
+f1q49c,character,character,string,identify this person:  sharpton,%37s,,,TRUE,Retained
+f1q49d,character,character,string,idenitfy this person:  gephardt,%33s,,,TRUE,Retained
 f1q50,double,haven_labelled|vctrs_vctr|double,float64, now we'd like you to think about some possible candidate match-ups in november.,%8.0g,,,TRUE,Retained
 f1q51,double,haven_labelled|vctrs_vctr|double,float64, suppose john kerry is the democratic nominee; would you vote for kerry or bush,%8.0g,,,TRUE,Retained
 f1q52,double,haven_labelled|vctrs_vctr|double,float64, now suppose john edwards is the democratic nominee; would you vote for edwards,%8.0g,,,TRUE,Retained

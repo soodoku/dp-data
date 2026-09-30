@@ -364,11 +364,11 @@
       "location": "data/btp-health-education-2005/survey.parquet",
       "source_id": "cdd-btp-health-education-2005-survey",
       "original_archive_path": "data/BTP/2005/data/btp05_hlm.dta",
-      "sha256": "4e673dbc67a6901e4fe506e99f4c39b6d21eb0bd8947e548f4c4450a582f1825",
+      "sha256": "45a793b8e6cc74f3f286cc95962e5b20274feabaaf9e31eed7587cf553857ba2",
       "rights_status": "owner-approved",
       "disclosure_status": "approved-redacted",
       "publication_status": "published",
-      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred Seventeen questionnaire response fields across five polls restored from original sources under user approval to retain verbatim answers; contact and administrative exclusions remain explicit. No coding or imputation applied.",
       "relative_path": "survey.parquet"
     },
     {
@@ -379,7 +379,7 @@
       "location": "data/btp-health-education-2005/variables.csv",
       "source_id": "cdd-btp-health-education-2005-survey-variables",
       "original_archive_path": "data/BTP/2005/data/btp05_hlm.dta",
-      "sha256": "9b9ace3749e7c41f755696256997a7375d6bb912dd31d47f6d6a376962b1f171",
+      "sha256": "4eddb3dd02f3a686b023ef860cb8bc1c0c66aa0f13c7497d9a9ddf86735b1164",
       "rights_status": "owner-approved",
       "disclosure_status": "approved-public",
       "publication_status": "published",

@@ -285,11 +285,11 @@
       "location": "data/california-whats-next-2011/survey.parquet",
       "source_id": "cdd-california-whats-next-2011-survey",
       "original_archive_path": "data/California/data/California_Merged_t1-t2-t3_6-28-11.dta",
-      "sha256": "2dc4c32d089805365e25b264264c0ae56608be391af7f23d0445d3c8a2d693c7",
+      "sha256": "60e47665ca00771169be5b0dc9a2d0ea856556f9f20aeb39e3bc5e67313eb935",
       "rights_status": "owner-approved",
       "disclosure_status": "approved-redacted",
       "publication_status": "published",
-      "notes": "Reviewed source; archive path and hash retained; source license not inferred",
+      "notes": "Reviewed source; archive path and hash retained; source license not inferred Seventeen questionnaire response fields across five polls restored from original sources under user approval to retain verbatim answers; contact and administrative exclusions remain explicit. No coding or imputation applied.",
       "relative_path": "survey.parquet"
     },
     {
@@ -300,7 +300,7 @@
       "location": "data/california-whats-next-2011/variables.csv",
       "source_id": "cdd-california-whats-next-2011-survey-variables",
       "original_archive_path": "data/California/data/California_Merged_t1-t2-t3_6-28-11.dta",
-      "sha256": "be11ff63f3b08e89eb82097da51ec3430110231d8f2b03d68d74961399cf8f61",
+      "sha256": "fb000aaee143572ed1b00d54ad7eed8803d99251ec37107bb35bd5484f12eb74",
       "rights_status": "owner-approved",
       "disclosure_status": "approved-public",
       "publication_status": "published",

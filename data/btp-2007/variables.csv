@@ -208,15 +208,15 @@ gender,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,Gende
 pid7,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,7 point Party ID,F1.0,8|9,,TRUE,Retained
 pid3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,3 point Party ID,F1.0,8|9,,TRUE,Retained
 race,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,Race,F2.0,98|99,,TRUE,Retained
-race_other,character,character,,Race - Other,A255,,,FALSE,Excluded; see source_field_exclusions
+race_other,character,character,string,Race - Other,A255,,,TRUE,Retained
 educ,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,Education,F1.0,8|9,,TRUE,Retained
 marstat,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,Martial Status,F1.0,8|9,,TRUE,Retained
 ideo5,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,Ideology,F1.0,8|9,,TRUE,Retained
 churatd,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,Church attendance,F1.0,8|9,,TRUE,Retained
 religion,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,Religious preference,F1.0,8|9,,TRUE,Retained
-rm1,character,character,,Religion - Protestant,A255,,,FALSE,Excluded; see source_field_exclusions
-rm2,character,character,,Religion - Other Christian,A255,,,FALSE,Excluded; see source_field_exclusions
-rm3,character,character,,Religion - Other,A255,,,FALSE,Excluded; see source_field_exclusions
+rm1,character,character,string,Religion - Protestant,A255,,,TRUE,Retained
+rm2,character,character,string,Religion - Other Christian,A255,,,TRUE,Retained
+rm3,character,character,string,Religion - Other,A255,,,TRUE,Retained
 polinterest,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,Level of interest in politics,F1.0,8|9,,TRUE,Retained
 income,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,Family income,F2.0,98|99,,TRUE,Retained
 inputstate,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,State of residence,F3.0,998|999,,TRUE,Retained

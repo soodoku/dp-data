@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Restore seventeen unchanged questionnaire write-in fields in five public poll
+  surveys; keep contact and administrative exclusions separate from answers.
+
 - Preserve Denmark's July 2003 dissertation draft and separate technical
   appendix in its poll folder, with their distinct source versions recorded.
 
