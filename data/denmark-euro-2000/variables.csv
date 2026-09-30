@@ -108,6 +108,6 @@ s_36,double,haven_labelled|vctrs_vctr|double,float64,"If you were to choose betw
 s_37,double,haven_labelled|vctrs_vctr|double,float64,Would you be interested in participating in such an event?,F8.2,,,TRUE,Retained
 s_38,double,haven_labelled|vctrs_vctr|double,float64,Write down if the respondent wishes to attend and needs to have the information mailed or wants to particiapte,F8.2,,,TRUE,Retained
 kmnkode,double,numeric,float64,kmnkode,F11.0,,,TRUE,Retained
-kommunen,character,character,,Kommunenavn,A255,,,FALSE,Excluded; see source_field_exclusions
-amt,character,character,,Amt,A50,,,FALSE,Excluded; see source_field_exclusions
+kommunen,character,character,string,Kommunenavn,A255,,,TRUE,Retained
+amt,character,character,string,Amt,A50,,,TRUE,Retained
 delnr,double,numeric,float64,Deltagernr.,F11.0,,,TRUE,Retained

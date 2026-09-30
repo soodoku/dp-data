@@ -1,69 +1,33 @@
 poll_id,source_column,reason
-btp-2007,screenname,Contact or nonessential text field retained only in local archive
-btp-2007,mod1,Contact or nonessential text field retained only in local archive
-btp-2007,mod2,Contact or nonessential text field retained only in local archive
-btp-2007,mod3,Contact or nonessential text field retained only in local archive
-btp-2007,mod4,Contact or nonessential text field retained only in local archive
-btp-health-education-2005,city,Contact or nonessential text field retained only in local archive
-btp-health-education-2005,zip,Contact or nonessential text field retained only in local archive
-btp-health-education-2005,username,Contact or nonessential text field retained only in local archive
-btp-online-primaries-2004,username,Contact or nonessential text field retained only in local archive
-btp-online-primaries-2004,transcriptname,Contact or nonessential text field retained only in local archive
-california-whats-next-2011,fname,Contact or nonessential text field retained only in local archive
-california-whats-next-2011,lname,Contact or nonessential text field retained only in local archive
-california-whats-next-2011,variabl0,Contact or nonessential text field retained only in local archive
-california-whats-next-2011,city,Contact or nonessential text field retained only in local archive
-california-whats-next-2011,zipcode,Contact or nonessential text field retained only in local archive
-california-whats-next-2011,phone,Contact or nonessential text field retained only in local archive
-california-whats-next-2011,email,Contact or nonessential text field retained only in local archive
-nic-1996,Q40_OTHE,Contact or nonessential text field retained only in local archive
-nic-1996,Q45_OTHE,Contact or nonessential text field retained only in local archive
-tomorrows-europe-2007,part,Contact or nonessential text field retained only in local archive
-tomorrows-europe-2007,source,Contact or nonessential text field retained only in local archive
-tomorrows-europe-2007,coder_name,Contact or nonessential text field retained only in local archive
+btp-2007,screenname,Respondent online discussion screen name; participant display identifier
+btp-health-education-2005,city,Respondent contact locality
+btp-health-education-2005,zip,Respondent contact postal code
+btp-health-education-2005,username,Respondent online account username; participant account identifier
+btp-online-primaries-2004,username,Respondent online account username; participant account identifier
+btp-online-primaries-2004,transcriptname,"Respondent transcript display name, predominantly first name and last initial; not a transcript filename or group identifier"
+california-whats-next-2011,fname,Respondent first name
+california-whats-next-2011,lname,Respondent last name
+california-whats-next-2011,variabl0,Respondent contact street address; original source variable label add
+california-whats-next-2011,city,Respondent contact locality
+california-whats-next-2011,zipcode,Respondent contact postal code
+california-whats-next-2011,phone,Respondent contact telephone number
+california-whats-next-2011,email,Respondent contact email address
 san-mateo-2008,CITY,Contact locality retained only in local archive
 san-mateo-2008,ZCODE,Contact postal code retained only in local archive
 san-mateo-2008,ALTPHN,Alternate telephone contact retained only in local archive
 san-mateo-2008,BSTTIM,Callback scheduling instructions retained only in local archive
 san-mateo-2008,COMMENT1,Recruitment comments include telephone/email contacts and callback instructions; retained only in local archive
 san-mateo-2008,PHNNUM,Telephone contact retained only in local archive
-michigan-2009,q26oth,Contact or nonessential text field retained only in local archive
-michigan-2009,q32oth,Contact or nonessential text field retained only in local archive
-michigan-2009,q40oth,Contact or nonessential text field retained only in local archive
-michigan-2009,q42oth,Contact or nonessential text field retained only in local archive
-michigan-2009,city,Contact or nonessential text field retained only in local archive
-michigan-2009,st,Contact or nonessential text field retained only in local archive
-michigan-2009,zipcode,Contact or nonessential text field retained only in local archive
-michigan-2009,fname,Contact or nonessential text field retained only in local archive
-michigan-2009,lname,Contact or nonessential text field retained only in local archive
-michigan-2009,variabl0,Contact or nonessential text field retained only in local archive
-michigan-2009,phone1,Contact or nonessential text field retained only in local archive
-michigan-2009,phone2,Contact or nonessential text field retained only in local archive
-michigan-2009,email,Contact or nonessential text field retained only in local archive
-michigan-2009,coder_initials_x,Contact or nonessential text field retained only in local archive
-michigan-2009,t3q16,Contact or nonessential text field retained only in local archive
-michigan-2009,t3q17,Contact or nonessential text field retained only in local archive
-michigan-2009,t3q18,Contact or nonessential text field retained only in local archive
-michigan-2009,t3q19,Contact or nonessential text field retained only in local archive
-michigan-2009,t3q47,Contact or nonessential text field retained only in local archive
-michigan-2009,t3q48,Contact or nonessential text field retained only in local archive
-michigan-2009,t3q49oth,Contact or nonessential text field retained only in local archive
-michigan-2009,coder_initials_y,Contact or nonessential text field retained only in local archive
-michigan-2009,t2filter_late,Contact or nonessential text field retained only in local archive
-michigan-2009,t2q16,Contact or nonessential text field retained only in local archive
-michigan-2009,t2q17,Contact or nonessential text field retained only in local archive
-michigan-2009,t2q18,Contact or nonessential text field retained only in local archive
-michigan-2009,t2q19,Contact or nonessential text field retained only in local archive
-michigan-2009,t2q26a,Contact or nonessential text field retained only in local archive
-michigan-2009,t2q33b,Contact or nonessential text field retained only in local archive
-michigan-2009,t2q49,Contact or nonessential text field retained only in local archive
-michigan-2009,t2q50,Contact or nonessential text field retained only in local archive
-michigan-2009,t2q51,Contact or nonessential text field retained only in local archive
-michigan-2009,t2q51oth,Contact or nonessential text field retained only in local archive
-michigan-2009,c135,Contact or nonessential text field retained only in local archive
-denmark-euro-2000,kommunen,Contact or nonessential text field retained only in local archive
-denmark-euro-2000,amt,Contact or nonessential text field retained only in local archive
-btp-presidential-primaries-2004,username,Direct personal identifier omitted from public raw-response projection.
-btp-presidential-primaries-2004,transcriptname,Direct personal identifier omitted from public raw-response projection.
-zeguo-2005,__,Direct personal identifier omitted from public raw-response projection.
-zeguo-2005,____np,Direct personal identifier omitted from public raw-response projection.
+michigan-2009,city,Respondent contact address: city
+michigan-2009,st,Respondent contact address: state
+michigan-2009,zipcode,Respondent contact address: ZIP code
+michigan-2009,fname,Respondent first name
+michigan-2009,lname,Respondent last name
+michigan-2009,variabl0,Respondent contact street address; matches recruiter ADD by idnum except one literal NA normalized to empty
+michigan-2009,phone1,Respondent contact telephone number
+michigan-2009,phone2,Alternate respondent contact telephone number
+michigan-2009,email,Respondent contact email address
+btp-presidential-primaries-2004,username,Respondent online account username; participant account identifier
+btp-presidential-primaries-2004,transcriptname,"Respondent transcript display name, predominantly first name and last initial; not a transcript filename or group identifier"
+zeguo-2005,__,Participant name at baseline; original source label participant name t1
+zeguo-2005,____np,Nonparticipant name; original source label non participants name

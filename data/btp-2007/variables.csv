@@ -182,10 +182,10 @@ S1,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,Discussio
 S2,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,Discussion group time - Week 2,F2.0,99,,TRUE,Retained
 S3,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,Discussion group time - Week 3,F2.0,99,,TRUE,Retained
 S4,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,Discussion group time - Week 4,F2.0,99,,TRUE,Retained
-mod1,character,character,,Week 1 moderator,A12,,,FALSE,Excluded; see source_field_exclusions
-mod2,character,character,,Week 2 moderator,A12,,,FALSE,Excluded; see source_field_exclusions
-mod3,character,character,,Week 3 moderator,A12,,,FALSE,Excluded; see source_field_exclusions
-mod4,character,character,,Week 4 moderator,A12,,,FALSE,Excluded; see source_field_exclusions
+mod1,character,character,string,Week 1 moderator,A12,,,TRUE,Retained
+mod2,character,character,string,Week 2 moderator,A12,,,TRUE,Retained
+mod3,character,character,string,Week 3 moderator,A12,,,TRUE,Retained
+mod4,character,character,string,Week 4 moderator,A12,,,TRUE,Retained
 w1visit,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,Number of visits to Week 1 readings,F1.0,99,,TRUE,Retained
 w2visit,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,Number of visits to Week 2 readings,F1.0,99,,TRUE,Retained
 w3visit,double,haven_labelled_spss|haven_labelled|vctrs_vctr|double,float64,Number of visits to Week 3 readings,F1.0,99,,TRUE,Retained

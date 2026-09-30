@@ -158,9 +158,9 @@ v_q34_1_1_,double,numeric,float64,Q34a_1  How much would you  think of yourself 
 q34b_1,double,haven_labelled|vctrs_vctr|double,float64,Q34b_1  How much would you  think of yourself as [name of your country],F5.0,,,TRUE,Retained
 v_q34_1_2_,double,numeric,float64,Q34b_1  How much would you  think of yourself as [name of your country] - Numeric,F2.0,,,TRUE,Retained
 wmid1,double,numeric,float64,WEIGHT,F15.4,,,TRUE,Retained
-part,character,character,,,A15,,,FALSE,Excluded; see source_field_exclusions
+part,character,character,string,,A15,,,TRUE,Retained
 invited,double,numeric,float64,Case source is id numbers_all.sav [DataSet2],F1.0,,,TRUE,Retained
-source,character,character,,,A15,,,FALSE,Excluded; see source_field_exclusions
+source,character,character,string,,A15,,,TRUE,Retained
 group_no,double,numeric,float64,,F10.2,,,TRUE,Retained
 t2q1,double,numeric,float64,,F10.2,,,TRUE,Retained
 t2q2,double,numeric,float64,,F10.2,,,TRUE,Retained
@@ -712,7 +712,7 @@ t3q51c,double,numeric,float64,,F2.0,,,TRUE,Retained
 t3q52a,double,numeric,float64,,F2.0,,,TRUE,Retained
 t3q52b,double,numeric,float64,,F2.0,,,TRUE,Retained
 t3q52c,double,numeric,float64,,F2.0,,,TRUE,Retained
-coder_name,character,character,,,A9,,,FALSE,Excluded; see source_field_exclusions
+coder_name,character,character,string,,A9,,,TRUE,Retained
 t3q1r,double,numeric,float64,,F8.2,,,TRUE,Retained
 t3q2r,double,numeric,float64,,F8.2,,,TRUE,Retained
 t3q4r,double,numeric,float64,,F8.2,,,TRUE,Retained

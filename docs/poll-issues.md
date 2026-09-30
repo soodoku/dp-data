@@ -5045,19 +5045,22 @@ extends Family Independence eligibility beyond 48 months, and the share of
 African American children in poverty. Authored keys are Republican, Democrat,
 Oregon (a), residence in a high-unemployment county (a), and about 40% (c).
 
-A full nine-item arrival battery is now recoverable, but its adoption remains
-pending. The maintained arrival battery still contains four placements.
+A full nine-item arrival battery is now implemented with user approval. The
+four- and six-item placement batteries remain separate measurements.
 Two written answers require an explicit interpretation: ID 1103's Senate
 answer `house of rep` is explicitly credited by the arrival recode in
 `historical-cdd-scripts:legacy/poll_scripts/mi.R`, lines 78–84; ID 1108's House
-answer `dec` is credited by its remaining-token catch-all, lines 86–91.
+answer `dec` is credited by its remaining-token catch-all, lines 86–91. The user
+approved withholding credit for both ambiguous tokens; neither is labeled DK.
 Neither is automatically a documented don't-know response. No independently
 stored numeric arrival recode settles them. With both credited, the nine-item
-arrival mean would be 41.630592%; without credit, 41.558442%. Both comparisons
-retain 308 scored people after the existing invalid placement at ID 501 and
-absent arrival ID 5000. The current four-placement mean is 59.253247%; adding
-facts changes the construct and 281 of those 308 scores. It does not correct
-or replace the telephone/departure nine-item comparison.
+arrival mean would be 41.630592%; without credit, 41.558442%. These earlier diagnostic comparisons used 308 people by propagating the
+invalid placement at ID 501 into the entire score. That is not the maintained
+fixed-denominator policy. The implemented score retains this observed form:
+ID 501 has four correct answers out of nine, while the invalid item has
+missing correctness and earns no credit. Only ID 5000 has an absent arrival
+form and a missing total. This gives 309 scored arrival respondents and a
+mean of 41.567781%. It does not replace the telephone/departure comparison.
 
 
 ## Denmark Euro 2000 — denmark-euro-2000
@@ -9976,3 +9979,195 @@ A regression includes actual empty, whitespace, missing and nonempty text, and
 fails with the old importer. The existing NIC phase-presence regression also
 protects the five absent baseline interviews against false positives from empty
 text; it passes after the shared correction and regenerated outputs.
+
+
+### X-25: Verified public source placement and remaining local source frontier
+
+The v0.4.3 source release is tagged at
+`b8e3e69a2ef94d15aaffa8e3208d0695bf4e53a9`; merged main has the identical tree
+at `5a74489`. The downloadable GitHub source ZIP has SHA256
+`00b853d068a2d7c22a8b12af175ba99e32e004c400fb2100d9097805a3548c0f`.
+All 1,272 tracked files were compared byte-for-byte with the independently
+reviewed candidate. A clean source archive without `.git` or `vault/` rebuilt
+all 57 output files byte-for-byte. This establishes public reproducibility of
+these outputs, not completion of every poll's substantive audit.
+
+Original scientific sources, questionnaires and reference documents belong
+under `data/<poll>/`; generated analytical tables belong under `output/`.
+Eight more exact vault duplicates were removed after matching their bytes and
+SHA256 values to both the local canonical poll file and the published release:
+Denmark's opinion-formation draft and appendix, Michigan's arrival DOC and
+original arrival XLS, Northern Ireland's original Stata survey, BTP National's
+original group-analysis script, Europolis's UK English arrival PDF, and the
+misfiled UK–EU original question-code survey. This brings the recorded cleanup
+to 211 files. None of these deletions removed a unique source version.
+
+A further search loaded 45 actual scientific SAV, DTA and serialized R files
+from the Denmark, Vermont and Bulgaria target folders and their archived
+counterparts, inspecting 6,596 field declarations. The directories of all
+three remaining vault ZIP archives were inspected (1,210 members). This bounded
+search found no participant-to-discussion-group roster for Denmark or Vermont
+and no Roma 2007 respondent data. It does not establish that every arbitrarily
+named file elsewhere in the vault is irrelevant.
+
+Vermont's original `VT-All (Rescaled).sav` contains 750 rows and a `GROUPID`
+field, but all 750 values are missing; the retained serialized merge has no
+discussion-group field. Denmark's actual baseline, archived arrival, departure,
+follow-up and separate control sources contain 1,702, 363, 359, 355 and 993
+rows, respectively; neither the inspected source fields nor serialized merges
+supply group assignments. Bulgaria's inspected archived recruitment,
+participant and control sources contain 1,035, 278 and 797 rows: they are the
+2002 crime study, not the Roma study.
+
+There is a specific external source lead for Denmark: the Danish National
+Archives catalog identifies DDA-9210, delivery 36809, DOI
+[10.5279/dk-sa-dda-9210](https://digidata.rigsarkivet.dk/aflevering/36809),
+for the August 26–27, 2000 poll by Kasper Møller Hansen and Vibeke Normann
+Andersen. The catalog offers an access application rather than a public data
+or dictionary download; no application has been submitted. Its existence does
+not prove that the deposited fields include discussion groups. The catalog
+states that publication requires written donor permission, so that condition
+would need attention before publishing newly obtained material.
+
+The [official Vermont event page](https://deliberation.stanford.edu/news/deliberative-pollingr-vermonts-energy-future)
+links reports and briefing materials, but no respondent roster.
+Stanford's [data page](https://deliberation.stanford.edu/tools-resources/data)
+offers a request form, not a downloadable group roster. No request has been
+submitted. An explicit Harvard Dataverse search for both Vermont and
+deliberative returned no datasets; that search result is not proof that no
+source holder has the data.
+
+
+### MI-05: Scientific answers were mistaken for nonessential text
+
+A source-to-questionnaire review found 21 more omitted Michigan response
+fields, one omitted late-arrival flag and three data-entry/unmapped source fields. Their character storage is not
+evidence that they are contacts. They are now restored unchanged in the public
+survey: 610 rows, 350 public fields, all 15,250 restored cells exactly matching
+`mifin.dta`. Every previously public cell and dictionary storage/label/missing
+attribute is unchanged. There are 4,557 nonempty restored responses, 16 late-arrival flags, 594
+staff-initial values and one unmapped `s` (5,168 nonempty restored values).
+Nonempty does not imply a substantive answer.
+
+| Restored field | Meaning | Nonempty source cells |
+| --- | --- | ---: |
+| `q26oth` | Education: other specification | 0 |
+| `q32oth` | Employment type: other specification | 3 |
+| `q40oth` | Ethnicity: other specification | 4 |
+| `q42oth` | Political party: other specification | 1 |
+| `t3q16` | Economic approach priority rank1:a greener,b knowledge/high tech,c manufacturing,d agriculture,e tourism | 291 |
+| `t3q17` | Economic approach priority rank2:a greener,b knowledge/high tech,c manufacturing,d agriculture,e tourism | 306 |
+| `t3q18` | Economic approach priority rank3:a greener,b knowledge/high tech,c manufacturing,d agriculture,e tourism | 304 |
+| `t3q19` | Economic approach priority rank4:a greener,b knowledge/high tech,c manufacturing,d agriculture,e tourism | 305 |
+| `t3q47` | Briefing material balance:a mostly balanced,b favored some positions,c do not know | 299 |
+| `t3q48` | Volunteering frequency:a once a week,b once a month,c few times a year,d not at all | 297 |
+| `t3q49oth` | Volunteering area:other specification | 47 |
+| `t2filter_late` | Late-arrival filter;definition beyond source header not established | 16 |
+| `t2q16` | Economic approach priority rank1:a greener,b knowledge/high tech,c manufacturing,d agriculture,e tourism | 292 |
+| `t2q17` | Economic approach priority rank2:a greener,b knowledge/high tech,c manufacturing,d agriculture,e tourism | 293 |
+| `t2q18` | Economic approach priority rank3:a greener,b knowledge/high tech,c manufacturing,d agriculture,e tourism | 296 |
+| `t2q19` | Economic approach priority rank4:a greener,b knowledge/high tech,c manufacturing,d agriculture,e tourism | 296 |
+| `t2q26a` | Share of a gasoline-tax increase for roads and bridges:0 none to10 all;99 no opinion | 300 |
+| `t2q33b` | How much volunteers outside government can improve services to those in need:0 not at all to10 very great deal;99 no opinion | 303 |
+| `t2q49` | Interest in politics/public affairs in the U.S.:a very,b somewhat,c not very,d not at all | 299 |
+| `t2q50` | Interest in politics/public affairs in Michigan:a very,b somewhat,c not very,d not at all | 300 |
+| `t2q51` | Party identification:a strong Republican,b not so strong Republican,c Independent leans Republican,d Independent,e Independent leans Democratic,f not so strong Democrat,g strong Democrat,h other | 290 |
+| `t2q51oth` | Party identification: other specification | 31 |
+
+Baseline other-write-ins are verified against the baseline instrument pp.5–7,
+the recruiter dictionary, and the original question crosswalk. Printed draft
+numbers for employment, ethnicity and party identification are Q34/Q42/Q44;
+the actual source fields are q32/q40/q42. Do not infer meaning from the suffix
+alone. Arrival priority ranks are on the arrival PDF p.4, gasoline-tax
+allocation on p.8, volunteer-service efficacy on p.10, and political interest
+and identification on pp.12–13. Exit priority ranks are on the departure
+PDF pp.4–5; briefing balance and volunteering are on p.13.
+
+The authored [original question crosswalk](../data/michigan-2009/questionnaires/question-crosswalk.xls)
+is retained unchanged, SHA256
+`9abef158fb251f04be2cba1e8164c1a6ef413b2589ac4d370cf62054c0a9f2eb`,
+with an [11-page PDF companion](../data/michigan-2009/questionnaires/question-crosswalk.pdf).
+Its 176 rows and six columns map wording across telephone, arrival and exit.
+The PDF uses a temporary print-layout copy with unchanged cell contents;
+all 3,754 source-text tokens are present, and pages1,6,11 were visually reviewed.
+It is historical mapping evidence, not proof that every draft form was fielded.
+
+Nine actual contact fields remain excluded, with specific reasons instead of
+a generic text label. Departure/arrival staff-initial fields are retained as
+source provenance, with 303/291 nonempty values. The unmapped c135 workbook
+column is retained with its single literal `s`; no questionnaire meaning is
+claimed. These three fields and the late-arrival flag have no scoring or
+questionnaire-presence role. Unknown meaning alone is not a reason to delete
+a harmless literal source field.
+
+### MI-06: Comparable factual and placement knowledge at arrival
+
+The user approved a nine-item arrival measure using the same five factual
+questions and four placements as the existing telephone/exit battery. The
+canonical `:knowledge` battery now contains t0, t1 and t2; the four-placement
+and six-placement batteries retain their distinct identities and values.
+Actual arrival fields t2q38–t2q42 are used, never telephone answers substituted
+for an absent arrival response.
+
+Explicit party spellings and their unambiguous variants are classified; the
+three multiple-choice keys are a, a and c. Literal raw text is preserved,
+including original capitalization and blanks. Field-specific labels distinguish
+correct, incorrect and DK answers. Seventeen textual responses remain
+unclassified and earn no credit, including `house of rep` and `dec`. They are
+not relabeled DK. Questionnaire absence remains distinct from an observed
+form containing blank answers.
+
+There are 310 selected people, 309 observed arrival forms and one absent form
+(ID5000). Correct counts for the five recovered facts are 116,149,22,42,94.
+The nine-item arrival mean is 41.567781%. Among the same 309 people, t0 and t2
+means are 34.124416% and 43.869112%: arrival minus telephone is7.443366
+percentage points, exit minus arrival2.301330, and exit minus telephone9.744696.
+These are unweighted matched measurement contrasts, not identified causal
+stage effects. The nine-item extension adds2,790 item rows and310 score rows;
+previous telephone/exit and placement scores remain unchanged. Existing
+fixed-denominator scoring gives invalid and unresolved answers no credit while
+preserving their missing/unclassified item semantics.
+
+
+### X-26: Complete the distinction between source provenance and contacts
+
+All remaining original-field exclusions were inspected against actual sources,
+dictionaries and relevant questionnaires. Eleven additional fields across four
+polls are retained unchanged; they add 5,912 nonempty literal values. Every
+previously public cell, original source row and dictionary attribute is
+unchanged. No respondent identity, invitation, attendance, scoring or
+questionnaire-presence rule is inferred from these additions.
+
+| Poll | Restored fields | Evidence and scope |
+| --- | --- | --- |
+| BTP 2007 | mod1–mod4 | Source labels explicitly identify Week1–4 moderators. Each field has301 populated values and8–9 moderator categories. All301 people are in20 source Sgroup groups; within each group/week the moderator mapping is unique. Forty respondents have different moderators across weeks. Preserve labels without turning moderator identity into a discussion-group identifier. |
+| NIC 1996 | Q40_OTHE, Q45_OTHE | Each contains one recorded other-moderator answer. The original labels say OTHER MODERATOR (VERBATIM); the codebook documents this response at lines55–57. These are questionnaire answers, not contact fields. |
+| Denmark Euro 2000 | kommunen, amt | Municipality and county names, each populated in1,641 rows. They map deterministically to the already public kmnkode across259 populated municipality codes; no finer address information is added. |
+| Tomorrow’s Europe | part, source, coder_name | part contains750 distinct P### identifiers, populated exactly where source invited==1. It is retained as a literal invitation identifier; it does not establish attendance or prove a new crosswalk. source has315 populated values/eight categories; coder_name has359/nine. The latter fields have no original definition establishing finer roles, so retain them as uninterpreted source/data-entry provenance. |
+
+The completed survey dimensions including source_row are BTP2007
+1,501×404, NIC911×429, Denmark1,702×113, and Tomorrow’s Europe3,550×1,626.
+NIC, Denmark and Tomorrow’s Europe now retain every original field under the
+lossless-parquet rule; BTP2007 retains only the respondent screenname exclusion.
+These dimensions concern the raw survey, not selected analytical samples.
+
+The remaining exclusions name actual respondent/contact identifiers rather
+than claiming that all character fields are nonessential. In the Presidential
+Primaries source, transcriptname is a participant display name, not a transcript
+filename or group header:248 populated values,240 distinct;237 have two tokens,
+and232 follow first-name/last-initial formatting. No independent public
+transcript-key contract was found. It remains excluded consistently with direct
+respondent names/account handles, while original speaker-time/word-count and
+group fields remain available. California’s variabl0 is labeled add and holds
+461 street addresses; its exclusion is retained. No written questionnaire
+answers are omitted merely because their storage type is character.
+
+
+The combined v0.4.4 candidate was compared with all57 v0.4.3 output files.
+Fifty are byte-identical. The changed Parquet cells consist of the new
+Michigan arrival rows (2,790 items and310 scores), 620 Michigan timing-evidence
+strings, one Michigan wave-catalog row, 36 Denmark source hashes in attitude
+definitions, and three weight-definition source hashes. The remaining changes
+are the corresponding manifests. No existing numerical respondent measure,
+knowledge or attitude score, item response, respondent identity, attendance
+classification, analytical cohort or survey weight changes.

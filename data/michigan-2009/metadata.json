@@ -265,7 +265,7 @@
       "location": "data/michigan-2009/survey.parquet",
       "source_id": "cdd-michigan-2009-survey",
       "original_archive_path": "data/Michigan/data/mifin.dta",
-      "sha256": "766cc0595d0a6295221ac8de09a79a71c6ecd5f97b9509684ff9417543ca291e",
+      "sha256": "fde189eb6736792f5745e3ddd7ca65ad2456ead3b799b18e11c8e5b33b673bfd",
       "rights_status": "owner-approved",
       "disclosure_status": "approved-redacted",
       "publication_status": "published",
@@ -280,7 +280,7 @@
       "location": "data/michigan-2009/variables.csv",
       "source_id": "cdd-michigan-2009-survey-variables",
       "original_archive_path": "data/Michigan/data/mifin.dta",
-      "sha256": "d740a2411c64e781919a7aeeb73af098c37e23d29281d651092320d113b66826",
+      "sha256": "717cb7607443aeecbad1a599db423b80ff208faa587b2b8f6909b6266cda78df",
       "rights_status": "owner-approved",
       "disclosure_status": "approved-public",
       "publication_status": "published",
@@ -436,6 +436,36 @@
       "publication_status": "published",
       "notes": "Exact archived arrival workbook:318 unique Participant IDs,135 columns,one sheet. Includes scientific questionnaire responses and political-identification free text; staff coder initials and late-arrival flag retained; no respondent names or contact fields. One unnamed column contains only a single s. Preserve as an earlier source version, not an analysis input: among309 current matched respondents,six literal uppercase NA strings in t2q38 (IDs221,910,913) and t2q39 (IDs718,910,913) became empty strings in authored mifin.dta. Nine workbook IDs fall outside the current310-person cohort; do not silently append them. Original cdd-data-20260923 archive SHA256 5dde554c16bd4bfdea5bf55962c3652b198df19d67646ad9d25df423d423992a. Respondent data workbook, not document-preview material.",
       "relative_path": "source-materials/arrival-response-workbook.xls"
+    },
+    {
+      "artifact_id": "mi-question-crosswalk",
+      "poll_id": "michigan-2009",
+      "artifact_type": "codebook",
+      "title": "Michigan question wording and wave-field crosswalk",
+      "location": "data/michigan-2009/questionnaires/question-crosswalk.xls",
+      "source_id": "mi-question-crosswalk",
+      "original_archive_path": "data/Michigan/data/Michigan Match.xls",
+      "sha256": "9abef158fb251f04be2cba1e8164c1a6ef413b2589ac4d370cf62054c0a9f2eb",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original authored crosswalk:176 rows and6 columns; maps questionnaire wording to telephone/arrival/exit source fields, including differing draft question numbers. Original XLS bytes unchanged. PDF generated from temporary print-layout copy, with unchanged cells; reviewed pages1,6,11. No respondent records or contact information.",
+      "relative_path": "questionnaires/question-crosswalk.xls"
+    },
+    {
+      "artifact_id": "mi-question-crosswalk-preview",
+      "poll_id": "michigan-2009",
+      "artifact_type": "codebook",
+      "title": "Michigan question crosswalk: readable PDF",
+      "location": "data/michigan-2009/questionnaires/question-crosswalk.pdf",
+      "source_id": "mi-question-crosswalk-preview",
+      "original_archive_path": "data/Michigan/data/Michigan Match.xls",
+      "sha256": "d98b6c63c285bc06b2dc582e1499bd9695fbb144d919d8d770dde933de1cb965",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original authored crosswalk:176 rows and6 columns; maps questionnaire wording to telephone/arrival/exit source fields, including differing draft question numbers. Original XLS bytes unchanged. PDF generated from temporary print-layout copy, with unchanged cells; reviewed pages1,6,11. No respondent records or contact information.",
+      "relative_path": "questionnaires/question-crosswalk.pdf"
     }
   ],
   "document_previews": [
@@ -486,6 +516,22 @@
       "distinct_word_coverage": null,
       "qa_notes": "Tracked revisions accepted in temporary DOCX only for clean-reading PDF. Original DOC exact bytes retained. Verified factual questions and a-e answers unchanged. Imported automatic numbering differs from data field IDs; use wording and page references. Source retains inherited Vermont title metadata.",
       "rebuild_command": "LibreOffice DOC-to-DOCX; standard accept_changes.py on temporary copy; LibreOffice PDF export"
+    },
+    {
+      "source_path": "data/michigan-2009/questionnaires/question-crosswalk.xls",
+      "preview_path": "data/michigan-2009/questionnaires/question-crosswalk.pdf",
+      "source_sha256": "9abef158fb251f04be2cba1e8164c1a6ef413b2589ac4d370cf62054c0a9f2eb",
+      "preview_sha256": "d98b6c63c285bc06b2dc582e1499bd9695fbb144d919d8d770dde933de1cb965",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "11",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-representative-pages",
+      "visual_pages": "1;6;11",
+      "source_token_coverage": "1.0",
+      "distinct_word_coverage": "1.0",
+      "qa_notes": "Temporary XLSX print-layout copy preserves all nonempty source cells; single horizontal page; A3 landscape. Original XLS unchanged. Question text and source-field mappings legible on sampled pages.",
+      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
   ]
 }

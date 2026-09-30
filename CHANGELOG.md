@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.4.4
+
+- Add the recovered nine-question Michigan arrival knowledge score alongside
+  separate party-placement batteries. Preserve original answers and classify
+  explicit DK responses separately; ambiguous text earns no credit.
+- Restore 21 Michigan questionnaire response fields and four source flags/provenance fields
+  without changing existing responses, scores, attendance or source rows.
+  Retain the original question crosswalk and a readable PDF companion.
+- Preserve moderator assignments/write-ins, municipality/county names, and
+  original invitation/source identifiers across four additional polls.
+  Keep source metadata separate from attendance and scoring rules.
+- Record the verified public rebuild and remaining local/external source gaps.
+
 ## 0.4.3
 
 - Establish observed questionnaire presence from recorded source answers:

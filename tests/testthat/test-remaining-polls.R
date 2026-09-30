@@ -26,11 +26,22 @@ test_that("public extracts expose only the reviewed text fields", {
     expect_length(intersect(names(survey), withheld), 0L)
     strings <- names(survey)[purrr::map_lgl(survey, is.character)]
     allowed <- switch(record$poll_id,
-      "btp-2007" = c("Sgroup", "race_other", "rm1", "rm2", "rm3"),
-      "michigan-2009" = c(paste0("t2q", 38:42),
-        paste0("t3q", c(38:42, 45:46))
+      "btp-2007" = c(
+        "Sgroup", "race_other", "rm1", "rm2", "rm3", paste0("mod", 1:4)
       ),
-      "nic-1996" = c("OCCUPAT1", "HSTPOTH", "SAQOTH"),
+      "michigan-2009" = c(paste0("t2q", 38:42),
+        paste0("t3q", c(38:42, 45:46)),
+        "q26oth", "q32oth", "q40oth", "q42oth",
+        paste0("t3q", c(16:19, 47:48)), "t3q49oth",
+        "coder_initials_x", "coder_initials_y", "t2filter_late",
+        paste0("t2q", 16:19), "t2q26a", "t2q33b",
+        "t2q49", "t2q50", "t2q51", "t2q51oth", "c135"
+      ),
+      "nic-1996" = c("OCCUPAT1", "HSTPOTH", "SAQOTH",
+        "Q40_OTHE", "Q45_OTHE"
+      ),
+      "denmark-euro-2000" = c("kommunen", "amt"),
+      "tomorrows-europe-2007" = c("part", "source", "coder_name"),
       "california-whats-next-2011" = c("q64oth", "q70oth", "q72oth"),
       "btp-health-education-2005" = c("q44post", "q45post"),
       "san-mateo-2008" = c(

@@ -86,7 +86,18 @@ analysis_arrival_items <- function(participants) {
       observed <- presence(source, phase)
       purrr::map(seq_along(columns), function(i) {
         raw <- source[[columns[i]]]
-        numeric <- suppressWarnings(as.numeric(as.character(raw)))
+        text_item <- poll == "michigan-2009" && is.character(raw)
+        numeric <- if (text_item) {
+          rep(NA_real_, length(raw))
+        } else {
+          suppressWarnings(as.numeric(as.character(raw)))
+        }
+        raw_text <- if (text_item) as.character(raw) else NA_character_
+        raw_code <- if (text_item) {
+          knowledge_raw_code(rep(poll, length(raw)), numeric, raw_text)
+        } else {
+          as.character(numeric)
+        }
         allowed <- switch(poll,
           "california-whats-next-2011" = c(0:5, 88, 98, 99),
           "europolis-2009" = c(1:5, 8, 9, 98, 99, 997:999),
@@ -102,12 +113,14 @@ analysis_arrival_items <- function(participants) {
           wave = phase, original_score_wave = unname(score_wave[phase]),
           item_id = ids[i], source_row = as.integer(source$source_row),
           source_column = columns[i], raw_value = numeric,
-          raw_text = NA_character_,
+          raw_text = raw_text,
           correct = dplyr::if_else(observed,
-            as.integer(numeric %in% as.numeric(correct_keys[[i]])), NA_integer_
+            as.integer(raw_code %in% correct_keys[[i]]), NA_integer_
           ),
           response_status = dplyr::case_when(
-            !observed ~ "wave_absent", is.na(numeric) ~ "source_missing",
+            !observed ~ "wave_absent",
+            is.na(numeric) & (is.na(raw_text) | !nzchar(trimws(raw_text))) ~
+              "source_missing",
             numeric %in% c(997, 998, 999) ~ "non_substantive", TRUE ~ "answered"
           ),
           wave_observed = observed
@@ -144,7 +157,19 @@ analysis_arrival_items <- function(participants) {
         )
       }) |>
         purrr::list_rbind()
-      return(dplyr::bind_rows(common, expanded))
+      arrival_keys <- list(
+        c("rep", "repbulican", "republican", "republicans", "repubs",
+          "gop", "rethuglican", "r", "rpublicans"),
+        c("d", "dem", "demo", "democrat", "democrats", "democratic",
+          "democrate", "dems", "democrates", "democratsithink",
+          "democratsnotsure", "demorcraticparty"),
+        "a", "a", "c"
+      )
+      full <- make_items(
+        arrival_data, fields, c(arrival_keys, keys[shared]),
+        item_ids, "t1", "knowledge"
+      )
+      return(dplyr::bind_rows(common, expanded, full))
     }
     common <- make_items(
       arrival_data, fields, keys, item_ids, "t1", "knowledge"
@@ -182,13 +207,15 @@ analysis_arrival_scores <- function(items) {
     dplyr::summarise(
       n_items = as.integer(dplyr::n()),
       n_observed = if (dplyr::first(wave_observed)) {
-        as.integer(sum(!is.na(raw_value)))
+        as.integer(sum(
+          !is.na(raw_value) | (!is.na(raw_text) & nzchar(trimws(raw_text)))
+        ))
       } else {
         0L
       },
       wave_observed = dplyr::first(wave_observed),
       n_correct = if (dplyr::first(wave_observed)) {
-        as.integer(sum(correct))
+        as.integer(sum(correct, na.rm = TRUE))
       } else {
         NA_integer_
       },

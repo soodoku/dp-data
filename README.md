@@ -153,7 +153,7 @@ The disclosure scan, survey import, archive comparison, and downstream source
 audit are also migration tools; they can be retired as their source-review work
 is completed.
 
-Northern Ireland's paper can run from the public source tree: it uses the numeric
+Northern Ireland's paper can run from the public source tree: it uses the complete original
 survey, headerless group roster, and `argument-codes.parquet` under
 `data/northern-ireland-2007/`. Coder labels retain all response slots and missing
 values; adjudication and scoring remain in dp-nireland. The extract excludes
@@ -171,7 +171,7 @@ verbatim responses and records the original source hash in the artifact catalog.
 | `datapackage.json` | Frictionless schemas for the tabular metadata |
 | `R/`, `scripts/` | Validation and build code |
 | `output/` | Typed Parquet products built from audited poll-level inputs |
-| `vault/` | Ignored local source archive, including restricted files |
+| `vault/` | Local originals awaiting source-version review or poll-folder preservation |
 
 Flat metadata registries remain CSV and are validated against the JSON schemas
 in `datapackage.json`. Nested poll metadata is generated as JSON from those
@@ -219,7 +219,8 @@ reading source documentation and does not feed numerical builds.
 each input in `metadata/source_files.csv`. Reference materials retain their
 source copyrights; `NOASSERTION` means no redistribution license has been
 established, not that the material is covered by the repository license.
-Restricted respondent files remain in the local vault. Exact historical CDD scripts are retained
+Original files with contact fields and unique sources awaiting review remain in
+the local vault. Exact historical CDD scripts are retained
 in Git history under the `historical-cdd-scripts` tag, not beside the maintained
 pipeline on `main`.
 
