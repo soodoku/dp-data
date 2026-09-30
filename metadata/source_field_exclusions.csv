@@ -21,30 +21,12 @@ nic-1996,Q45_OTHE,Contact or nonessential text field retained only in local arch
 tomorrows-europe-2007,part,Contact or nonessential text field retained only in local archive
 tomorrows-europe-2007,source,Contact or nonessential text field retained only in local archive
 tomorrows-europe-2007,coder_name,Contact or nonessential text field retained only in local archive
-san-mateo-2008,CITY,Contact or nonessential text field retained only in local archive
-san-mateo-2008,ZCODE,Contact or nonessential text field retained only in local archive
-san-mateo-2008,ALTPHN,Contact or nonessential text field retained only in local archive
-san-mateo-2008,BSTTIM,Contact or nonessential text field retained only in local archive
-san-mateo-2008,COMMENT1,Contact or nonessential text field retained only in local archive
-san-mateo-2008,SRVYINV,Contact or nonessential text field retained only in local archive
-san-mateo-2008,Q128OTHER,Contact or nonessential text field retained only in local archive
-san-mateo-2008,INTDATE,Contact or nonessential text field retained only in local archive
-san-mateo-2008,PHNNUM,Contact or nonessential text field retained only in local archive
-san-mateo-2008,QSTGRP,Contact or nonessential text field retained only in local archive
-san-mateo-2008,Q1I,Contact or nonessential text field retained only in local archive
-san-mateo-2008,Q2I,Contact or nonessential text field retained only in local archive
-san-mateo-2008,Q3I,Contact or nonessential text field retained only in local archive
-san-mateo-2008,Q4I,Contact or nonessential text field retained only in local archive
-san-mateo-2008,Q7I,Contact or nonessential text field retained only in local archive
-san-mateo-2008,Q8I,Contact or nonessential text field retained only in local archive
-san-mateo-2008,Q9I,Contact or nonessential text field retained only in local archive
-san-mateo-2008,t2Q1I,Contact or nonessential text field retained only in local archive
-san-mateo-2008,t2Q2I,Contact or nonessential text field retained only in local archive
-san-mateo-2008,t2Q3I,Contact or nonessential text field retained only in local archive
-san-mateo-2008,t2Q4I,Contact or nonessential text field retained only in local archive
-san-mateo-2008,t2Q7I,Contact or nonessential text field retained only in local archive
-san-mateo-2008,t2Q8I,Contact or nonessential text field retained only in local archive
-san-mateo-2008,t2Q9I,Contact or nonessential text field retained only in local archive
+san-mateo-2008,CITY,Contact locality retained only in local archive
+san-mateo-2008,ZCODE,Contact postal code retained only in local archive
+san-mateo-2008,ALTPHN,Alternate telephone contact retained only in local archive
+san-mateo-2008,BSTTIM,Callback scheduling instructions retained only in local archive
+san-mateo-2008,COMMENT1,Recruitment comments include telephone/email contacts and callback instructions; retained only in local archive
+san-mateo-2008,PHNNUM,Telephone contact retained only in local archive
 michigan-2009,q26oth,Contact or nonessential text field retained only in local archive
 michigan-2009,q32oth,Contact or nonessential text field retained only in local archive
 michigan-2009,q40oth,Contact or nonessential text field retained only in local archive

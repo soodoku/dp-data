@@ -9682,6 +9682,69 @@ answers alone. Raw responses and source identifiers are preserved under
 `data/san-mateo-2008/`; no new correction has been applied to this record.
 
 
+### SM-09: Preserve scientific source strings, dates and questionnaire headers
+
+Eighteen string columns were previously omitted under a blanket “contact or
+nonessential text” exclusion. They are now preserved unchanged in the existing
+`data/san-mateo-2008/survey.parquet`, with their source dictionary and hashes
+updated. The original `smdp 3-18-08.dta` has SHA256
+`f0cb462fee3760bacc8c81bcca58c61da54fad9637968cbc001880574ef1ef93`.
+All 1,806 rows and all 307 previously public columns match the earlier extract
+exactly. The 18 additions preserve 32,508 source cells, including empty strings;
+17,353 contain nonempty values. No trimming, category recoding or imputation is
+applied.
+
+Fourteen columns (`Q1I:Q4I`, `Q7I:Q9I` and their `t2` counterparts) contain
+13,490 nonempty authored attitude bins such as “1 to 3,” “4” and “5 to 7.”
+They are scientific derived fields, not interviewer notes or verbatim answers.
+The underlying baseline questions are in `questionnaire-pre.pdf`, pp. 1–3.
+These bins are preserved as coding evidence and never substituted for raw
+attitude answers. Most reproduce the corresponding numeric categories, but
+three source limitations make wholesale reconstruction inappropriate:
+
+- Baseline `Q3I` says “6 to 10” for 88 people whose numeric Q3 is missing,
+  even though Q3's offered substantive scale is 1–7.
+- `t2Q7I` is empty for every person, although 236 numeric t2Q7 answers are
+  within the offered 0–10 scale.
+- Participant 1411, source row 1683, has “1 to 3” in `t2Q2I` and `t2Q8I`
+  while both corresponding numeric answers are missing. The bins preserve
+  partial historical information but do not identify either exact answer.
+
+`Q128OTHER` contains 16 education responses, with 15 distinct strings, all
+paired with Q128 code 7 (“Other [specify]”). The baseline questionnaire, PDF
+p. 8, explicitly requests this text. These answers remain literal source
+responses; no education category is reassigned from them.
+
+`INTDATE` contains 1,806 valid eight-character dates spanning February 3 to
+March 6, 2008 (33 distinct dates), before the March 15–16 event. The original
+strings remain intact. `QSTGRP` contains questionnaire-header codes “1” and
+“2” for 938 and 868 people. The already-public `t2QSTGRP` contains 239 headers;
+237 match the baseline code, while participants 1377 and 1027 switch codes.
+Neither header is interpreted as the separately recorded small discussion
+`GRP`, and no undocumented meaning is assigned to this apparent form distinction.
+
+`SRVYINV` is also retained without interpretation. Its 235 nonempty values are
+single characters: 218 are “1” and the other 17 contain mixed digits, letters
+or a comma. All occur in source DISPOS categories 19/20, none among the 903
+DISPOS18 records. The questionnaire's invitation section (PDF pp. 9–11) names
+INVITE/INVITE2, but it does not establish an exact mapping to SRVYINV. The field
+therefore does not become an invitation-acceptance or attendance indicator.
+
+The six remaining exclusions are contact locality/postal code (`CITY`, `ZCODE`),
+telephone details (`ALTPHN`, `PHNNUM`), callback scheduling (`BSTTIM`), and mixed
+recruitment comments (`COMMENT1`) containing telephone/email details and callback
+instructions. Their exclusion reasons are explicit. The original archive remains
+available for further authorized review.
+
+No new person or questionnaire is inferred from the added strings. Exactly 238
+people have a nonempty post attitude bin, all already marked as participants.
+Participant 1467 has no nonempty post bins; the separate blank-form question
+in SM-08 remains pending. All scores, groups, source identities and attendance
+classifications remain unchanged. Physical source rows are the complete identity
+bridge: the original PARTICIPANTID is observed and unique for 710 people, while
+RESPNUM is not unique across the full file.
+
+
 ### X-22: Complete source-form dependencies and safe local subsets
 
 The full-questionnaire correction adds real dependencies beyond the scored

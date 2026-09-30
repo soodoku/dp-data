@@ -10,7 +10,7 @@ ZCODE,character,character,,Zipcode,%12s,,,FALSE,Excluded; see source_field_exclu
 ALTPHN,character,character,,,%45s,,,FALSE,Excluded; see source_field_exclusions
 BSTTIM,character,character,,,%68s,,,FALSE,Excluded; see source_field_exclusions
 COMMENT1,character,character,,,%244s,,,FALSE,Excluded; see source_field_exclusions
-SRVYINV,character,character,,,%22s,,,FALSE,Excluded; see source_field_exclusions
+SRVYINV,character,character,string,,%22s,,,TRUE,Retained
 Q1,double,haven_labelled|vctrs_vctr|double,float64,T1 More housing or restrict housing (Policy Scale),%10.0g,,,TRUE,Retained
 Q2,double,haven_labelled|vctrs_vctr|double,float64,T1 Already developed or open space? (policy scale),%10.0g,,,TRUE,Retained
 Q3,double,haven_labelled|vctrs_vctr|double,float64,T1 Attract jobs or minimize commuters? (policy scale),%10.0g,,,TRUE,Retained
@@ -67,7 +67,7 @@ Q25,double,haven_labelled|vctrs_vctr|double,float64,T1 Projected new homes by 20
 Q26,double,haven_labelled|vctrs_vctr|double,float64,T1 Perc of land that is open space? (PK),%10.0g,,,TRUE,Retained
 Q127,double,numeric,float64,Number of times at new housing meetings,%10.0g,,,TRUE,Retained
 Q128,double,haven_labelled|vctrs_vctr|double,float64,Education,%10.0g,,,TRUE,Retained
-Q128OTHER,character,character,,Education - Other,%18s,,,FALSE,Excluded; see source_field_exclusions
+Q128OTHER,character,character,string,Education - Other,%18s,,,TRUE,Retained
 Q129,double,numeric,float64,Year born,%10.0g,,,TRUE,Retained
 Q130A,double,haven_labelled|vctrs_vctr|double,float64,Employment status,%10.0g,,,TRUE,Retained
 Q130B,double,haven_labelled|vctrs_vctr|double,float64,Type of employer,%10.0g,,,TRUE,Retained
@@ -79,9 +79,9 @@ Q135,double,haven_labelled|vctrs_vctr|double,float64,Gender,%10.0g,,,TRUE,Retain
 Female,double,haven_labelled|vctrs_vctr|double,float64,"Female? 1=Yes, 2=Male",%10.0g,,,TRUE,Retained
 Q136,double,haven_labelled|vctrs_vctr|double,float64,Religious attendance,%10.0g,,,TRUE,Retained
 END,double,numeric,float64,,%10.0g,,,TRUE,Retained
-INTDATE,character,character,,,%8s,,,FALSE,Excluded; see source_field_exclusions
+INTDATE,character,character,string,,%8s,,,TRUE,Retained
 PHNNUM,character,character,,,%22s,,,FALSE,Excluded; see source_field_exclusions
-QSTGRP,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+QSTGRP,character,character,string,,%1s,,,TRUE,Retained
 Q14r,double,numeric,float64,,%10.0g,,,TRUE,Retained
 Q15r,double,numeric,float64,,%10.0g,,,TRUE,Retained
 Q16r,double,numeric,float64,,%10.0g,,,TRUE,Retained
@@ -108,13 +108,13 @@ Q23_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
 Q24_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
 Q25_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
 Q26_cor,double,numeric,float64,,%10.0g,,,TRUE,Retained
-Q1I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
-Q2I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
-Q3I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
-Q4I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
-Q7I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
-Q8I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
-Q9I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
+Q1I,character,character,string,,%7s,,,TRUE,Retained
+Q2I,character,character,string,,%7s,,,TRUE,Retained
+Q3I,character,character,string,,%7s,,,TRUE,Retained
+Q4I,character,character,string,,%7s,,,TRUE,Retained
+Q7I,character,character,string,,%7s,,,TRUE,Retained
+Q8I,character,character,string,,%7s,,,TRUE,Retained
+Q9I,character,character,string,,%7s,,,TRUE,Retained
 t2QSTGRP,double,numeric,float64,,%10.0g,,,TRUE,Retained
 t2Q1,double,haven_labelled|vctrs_vctr|double,float64,T2 More housing or restrict housing (Policy Scale),%10.0g,,,TRUE,Retained
 t2Q2,double,haven_labelled|vctrs_vctr|double,float64,T2 Already developed or open space? (policy scale),%10.0g,,,TRUE,Retained
@@ -286,13 +286,13 @@ t2Q17Gr,double,numeric,float64,,%10.0g,,,TRUE,Retained
 t2Q17H1r,double,numeric,float64,,%10.0g,,,TRUE,Retained
 t2Q17I1r,double,numeric,float64,,%10.0g,,,TRUE,Retained
 Q10r,double,numeric,float64,,%10.0g,,,TRUE,Retained
-t2Q1I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
-t2Q2I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
-t2Q3I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
-t2Q4I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
-t2Q7I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
-t2Q8I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
-t2Q9I,character,character,,,%7s,,,FALSE,Excluded; see source_field_exclusions
+t2Q1I,character,character,string,,%7s,,,TRUE,Retained
+t2Q2I,character,character,string,,%7s,,,TRUE,Retained
+t2Q3I,character,character,string,,%7s,,,TRUE,Retained
+t2Q4I,character,character,string,,%7s,,,TRUE,Retained
+t2Q7I,character,character,string,,%7s,,,TRUE,Retained
+t2Q8I,character,character,string,,%7s,,,TRUE,Retained
+t2Q9I,character,character,string,,%7s,,,TRUE,Retained
 t2Q17H2r,double,numeric,float64,,%10.0g,,,TRUE,Retained
 t2Q17I2r,double,numeric,float64,,%10.0g,,,TRUE,Retained
 t2Q18Gr,double,numeric,float64,,%10.0g,,,TRUE,Retained
