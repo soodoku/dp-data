@@ -239,9 +239,19 @@ test_that("definitions match historical or approved values by IDs", {
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "europolis-2009"
   ]), 1L)
+  eu_knowledge_fields <- c(
+    "t1knowcor", "t1knowrcor", "t2know", "t2knowr", "knowgain", "knowgain2",
+    "logpk", "tobitpk", "knowgainr", "knowgainr2"
+  )
+  eu_knowledge <- parity[
+    parity$poll_id == "uk-eu-1995" &
+      parity$legacy_field %in% eu_knowledge_fields,
+  ]
+  expect_setequal(eu_knowledge$legacy_field, eu_knowledge_fields)
+  expect_equal(eu_knowledge$missingness_differences, rep(14L, 10L))
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "uk-eu-1995"
-  ]), 14L)
+  ]), 14L + 14L * length(eu_knowledge_fields))
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "uk-general-election-1997"
   ]), 17L)

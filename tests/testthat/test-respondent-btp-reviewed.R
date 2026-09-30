@@ -180,6 +180,10 @@ test_that("San Mateo uses raw responses and stable historical IDs", {
     ),
     "Q128", "Q129", "Q131", "Q132", "Q135", "t2q37"
   )
+  contract <- questionnaire_form_contract("san-mateo-2008")
+  fields <- unique(c(
+    fields, unlist(contract$fields), unlist(contract$auxiliary), "source_row"
+  ))
   expect_equal(build_san_mateo_individual(survey[, fields]), expected)
   selected <- c(1806L, 1700L, 1L)
   expect_equal(

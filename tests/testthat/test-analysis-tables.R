@@ -275,8 +275,10 @@ test_that("analysis exports preserve keys and canonical question IDs", {
     "europolis-2009", "historical", "t2", 4036L, 6L,
     "new-haven-2004", "historical", "t2", 1L, 8L,
     "nic-1996", "historical", "t3", 911L - 387L, 11L,
+    "san-mateo-2008", "historical", "t2", 1567L, 8L,
     "swepco-1996", "historical", "t2", 1246L, 5L,
     "uk-crime-1994", "historical", "t2", 569L, 7L,
+    "uk-eu-1995", "historical", "t2", 662L, 5L,
     "uk-general-election-1997", "historical", "t2", 935L, 15L,
     "uk-health-1998", "cor_sood", "t2", 2L, 6L,
     "uk-health-1998", "historical", "t2", 2L, 6L,
@@ -320,6 +322,8 @@ test_that("historical comparisons retain the correct source-wave pairs", {
     )
   expected_unpaired <- tibble::tribble(
     ~dpnum, ~caseid,
+    1, 204, 1, 502, 1, 519, 1, 802, 1, 806, 1, 812, 1, 814,
+    1, 833, 1, 933, 1, 937, 1, 2132, 1, 3601, 1, 3611, 1, 3617,
     2, 3809, 2, 4307,
     7, 3522, 7, 3495, 7, 2824, 7, 625, 7, 516,
     7, 693, 7, 374, 7, 225, 7, 148,
