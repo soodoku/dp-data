@@ -1,3 +1,19 @@
+read_reference_csv <- local({
+  cache <- new.env(parent = emptyenv())
+  function(path) {
+    stamp <- file.info(path)[c("size", "mtime")]
+    saved <- cache[[path]]
+    if (is.null(saved) || !identical(saved$stamp, stamp)) {
+      saved <- list(
+        stamp = stamp,
+        data = readr::read_csv(path, show_col_types = FALSE)
+      )
+      cache[[path]] <- saved
+    }
+    saved$data
+  }
+})
+
 approved_cell_changes <- arrow::read_parquet(project_path(
   "audit", "corrections", "approved_cell_changes.parquet"
 ))
@@ -29,9 +45,9 @@ legacy_reference_values <- function(poll_id, field, caseid, historical,
     poll_id, field, caseid, historical, tolerance
   )
   if (field == "genvar") {
-    reviewed <- readr::read_csv(project_path(
+    reviewed <- read_reference_csv(project_path(
       "audit", "corrections", "shared-covariance", "approved_values.csv"
-    ), show_col_types = FALSE)
+    ))
     reviewed <- reviewed[reviewed$poll_id == poll_id &
                            reviewed$historical_present, ]
     if (!nrow(reviewed)) return(approved)
@@ -54,9 +70,9 @@ legacy_reference_values <- function(poll_id, field, caseid, historical,
   if (!field %in% c("grpgain", "grpgain2", "grpgainr", "loggain")) {
     return(approved)
   }
-  ceiling <- readr::read_csv(project_path(
+  ceiling <- read_reference_csv(project_path(
     "audit", "corrections", "shared-peer-opportunity", "approved_values.csv"
-  ), show_col_types = FALSE)
+  ))
   ceiling <- ceiling[ceiling$poll_id == poll_id &
                        ceiling$legacy_field == field, ]
   if (!nrow(ceiling)) return(approved)
@@ -82,10 +98,10 @@ approved_poll_reference_values <- function(poll_id, field, caseid, historical,
     } else {
       "shared-demographic-medians"
     }
-    approved <- readr::read_csv(project_path(
+    approved <- read_reference_csv(project_path(
       "audit", "corrections", correction,
       "approved_values.csv"
-    ), show_col_types = FALSE)
+    ))
     approved <- approved[approved$poll_id == poll_id &
                            approved$legacy_field == field, ]
     expected_caseid <- if (poll_id == "btp-general-election-2004") {
@@ -111,9 +127,9 @@ approved_poll_reference_values <- function(poll_id, field, caseid, historical,
     return(approved$approved_value)
   }
   if (field == "entropy") {
-    approved <- readr::read_csv(project_path(
+    approved <- read_reference_csv(project_path(
       "audit", "corrections", "shared-entropy", "approved_values.csv"
-    ), show_col_types = FALSE)
+    ))
     approved <- approved[approved$poll_id == poll_id &
                            approved$legacy_field == field, ]
     expected_caseid <- if (poll_id == "btp-general-election-2004") {
@@ -145,9 +161,9 @@ approved_poll_reference_values <- function(poll_id, field, caseid, historical,
     "ukhealth.t1avgdis", "ukhealth.t2avgdis",
     "attextreme", "meanxtreme", "avgsd", "genvar"
   )) {
-    approved <- readr::read_csv(project_path(
+    approved <- read_reference_csv(project_path(
       "audit", "corrections", poll_id, "folded_input_approved_values.csv"
-    ), show_col_types = FALSE)
+    ))
     approved <- approved[approved$legacy_field == field, ]
     stopifnot(
       nrow(approved) == 230L, !anyDuplicated(approved$caseid),
@@ -165,9 +181,9 @@ approved_poll_reference_values <- function(poll_id, field, caseid, historical,
     "ukeu.commies1r", "ukeu.favref1r", "attextreme",
     "meanxtreme", "avgsd", "genvar"
   )) {
-    approved <- readr::read_csv(project_path(
+    approved <- read_reference_csv(project_path(
       "audit", "corrections", poll_id, "baseline_scale_approved_values.csv"
-    ), show_col_types = FALSE) |>
+    )) |>
       dplyr::filter(
         cohort == "historical_participants", .data$field == .env$field
       )
@@ -189,10 +205,10 @@ approved_poll_reference_values <- function(poll_id, field, caseid, historical,
     paste0("nic1.t1att", 1:9), paste0("nic1.t2att", 1:9),
     "attextreme", "attextreme2", "meanxtreme", "avgsd", "avgsd2", "genvar"
   )) {
-    approved <- readr::read_csv(project_path(
+    approved <- read_reference_csv(project_path(
       "audit", "corrections", "nic-1996",
       "attitude_missing_approved_values.csv"
-    ), show_col_types = FALSE)
+    ))
     approved <- approved[approved$legacy_field == field, ]
     stopifnot(
       nrow(approved) == 466L, !anyDuplicated(approved$caseid),
@@ -213,9 +229,9 @@ approved_poll_reference_values <- function(poll_id, field, caseid, historical,
   if (poll_id == "nic-1996" && field %in% c(
     "ppage", "meanage", "mode", "attextreme2", "avgsd2"
   )) {
-    approved <- readr::read_csv(project_path(
+    approved <- read_reference_csv(project_path(
       "audit", "corrections", "nic-1996", "approved_values.csv"
-    ), show_col_types = FALSE)
+    ))
     approved <- approved[approved$legacy_field == field, ]
     stopifnot(
       nrow(approved) == 466L, !anyDuplicated(approved$caseid),
@@ -345,9 +361,9 @@ approved_poll_reference_values <- function(poll_id, field, caseid, historical,
     } else {
       "approved_values.csv"
     }
-    approved <- readr::read_csv(project_path(
+    approved <- read_reference_csv(project_path(
       "audit", "corrections", poll_id, filename
-    ), show_col_types = FALSE)
+    ))
     approved <- approved[approved$legacy_field == field, ]
     expected_caseid <- if (poll_id == "btp-general-election-2004") {
       union(caseid, btp_ge_approved_inclusions()$historical_caseid)
@@ -390,9 +406,9 @@ approved_poll_reference_values <- function(poll_id, field, caseid, historical,
     "t1knowlevelrcor"
   )
   if (poll_id == "uk-general-election-1997" && field %in% election_fields) {
-    approved <- readr::read_csv(project_path(
+    approved <- read_reference_csv(project_path(
       "audit", "corrections", "uk-general-election-1997", "approved_values.csv"
-    ), show_col_types = FALSE)
+    ))
     approved <- approved[approved$legacy_field == field, ]
     if (!nrow(approved)) {
       return(historical)
@@ -414,9 +430,9 @@ approved_poll_reference_values <- function(poll_id, field, caseid, historical,
   if (poll_id != "uk-crime-1994" || field != "ukcrime.rootcauset2") {
     return(historical)
   }
-  approved <- readr::read_csv(project_path(
+  approved <- read_reference_csv(project_path(
     "audit", "corrections", "uk-crime-1994", "respondent_comparison.csv"
-  ), show_col_types = FALSE)
+  ))
   stopifnot(
     nrow(approved) == 299L, !anyDuplicated(approved$caseid),
     setequal(as.character(caseid), as.character(approved$caseid))
@@ -451,10 +467,10 @@ historical_reference_people <- function(reference, poll_id) {
 }
 
 btp_ge_approved_inclusions <- function() {
-  added <- readr::read_csv(project_path(
+  added <- read_reference_csv(project_path(
     "audit", "corrections", "btp-general-election-2004",
     "approved_inclusions.csv"
-  ), show_col_types = FALSE)
+  ))
   stopifnot(
     nrow(added) == 2L, !anyDuplicated(added$historical_caseid),
     setequal(added$respondent_id, c(552, 585)),
