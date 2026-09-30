@@ -5135,6 +5135,66 @@ PDF pages 7 and 19, which distinguish recruitment, beginning-of-event and
 end-of-event measurements. Both the source and arrival build are public and
 require no local vault; X-02 gives the report comparisons and sample boundary.
 
+
+### DK-06: Follow-up instrument, keys and participant identities verified
+
+The preserved Danish arrival, departure, control and follow-up questionnaires
+are now in `data/denmark-euro-2000/questionnaires/`, with unchanged originals
+and readable PDFs. The follow-up introduction identifies telephone calls to
+event participants; the paper's Table 2 (PDF page 7) independently confirms
+the mode. The wave catalog now records telephone rather than unknown. Actual
+DATO dates remain November 27–December 18, 2000. IDs 245 and 310 have December
+18 dates, two days beyond the paper's stated endpoint; do not overwrite the
+recorded dates to match the summary.
+
+All seven factual follow-up keys are explicitly marked “korrekt svar” in the
+source dictionary. The original crosswalk and actual instrument establish:
+
+| Topic | Baseline | Arrival / departure | Follow-up | Correct code | Correct / 355 |
+|---|---|---|---|---:|---:|
+| Fiscal-deficit fines | s_18 | S4_1 / S4_2 | S15_3 | 1 | 290 |
+| Independent interest rates | s_19 | S5_1 / S5_2 | S16_3 | 2 | 293 |
+| Independent taxation | s_20 | S6_1 / S6_2 | S17_3 | 1 | 266 |
+| Euro circulation year | s_21 | S7_1 / S7_2 | S18_3 | 2 | 313 |
+| National Bank's role | s_22 | S8_1 / S8_2 | S19_3 | 3 | 240 |
+| National coin side | s_23 | S9_1 / S9_2 | S20_3 | 1 | 328 |
+| Existing currency cooperation | s_24 | S10_1 / S10_2 | S21_3 | 1 | 312 |
+
+Their percentages round to 82, 83, 75, 88, 68, 92 and 88, matching all seven
+follow-up entries in Table 9 (PDF page 19). The seventh factual question is
+not part of the inherited nine-item index. That index uses the first six
+facts and three party questions: Socialist People's Party `S22_7_3`, Christian
+People's Party `S22_9_3`, and Progress Party `S22_11_3`, all key 2. Their correct
+counts are 314, 266 and 306. Follow-up Q18 explicitly asks what would have
+happened if the September referendum had produced Yes; Q22 asks what the
+parties recommended at that referendum, rather than their current positions
+(follow-up PDF pages 8–9). ID 68 leaves the Christian People's Party item
+blank but has other answers: that is an observed-form item blank, not an
+absent questionnaire.
+
+A nine-item follow-up replay has mean 0.8187793 among all 355 respondents and
+0.8190476 among the 350 with departure records. These are verification
+calculations, not adopted production scores. Preserve the separate seven-fact
+and inherited nine-item definitions rather than silently exchanging batteries.
+
+Arrival and departure IDs together identify 364 people, matching the published
+event count. Arrival IDs 103, 120, 142, 166 and 281 have no departure record,
+but all return at follow-up and answer substantive retrospective participation
+questions. This supplies attendance evidence missing from DK-01–02; absent
+exit questionnaires do not establish nonattendance for these five. The paired
+359-person departure cohort remains unchanged. Nine departure respondents lack
+follow-up: 39, 94, 137, 159, 203, 270, 298, 353 and 359. The 993-person control
+file is a separate contemporaneous survey, not a linked randomized control
+panel.
+
+Independent replay found no discrepancies in 9,693 current knowledge item-wave
+cells or 120,554 source attitude responses across 164 definitions. All twenty
+Table 4 attitude means reproduce at printed integer precision using the
+paper's stated DK-midpoint convention and the 364-person arrival/departure
+union at recruitment. Current plain-missing exports use deliberately distinct
+semantics; this benchmark does not justify silently imputing their nonanswers.
+
+
 ## Northern Ireland 2007 — northern-ireland-2007
 
 **NI-01 — source roster versus paper reader (corrected downstream).** The
