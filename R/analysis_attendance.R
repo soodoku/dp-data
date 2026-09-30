@@ -1,3 +1,5 @@
+source(project_path("R", "source_new_haven.R"))
+
 analysis_attendance_sources <- function() {
   tibble::tibble(
     poll_id = c(
@@ -333,6 +335,13 @@ reconcile_analysis_presence <- function(
   )
 }
 
+btp_national_attendance <- function(survey) {
+  stopifnot("countmtg" %in% names(survey))
+  count <- as.numeric(survey$countmtg)
+  stopifnot(all(is.na(count) | count %in% 0:8))
+  dplyr::if_else(is.na(count), NA, count > 0)
+}
+
 analysis_attendance_contract <- function(
   participants, phase_participants, phase_scores,
   survey_reader = read_poll_survey, climate = NULL
@@ -368,6 +377,23 @@ analysis_attendance_contract <- function(
       "GROUP_T1BIS: 1 participant; 2 nonparticipant; 3 control; source labels"
     } else {
       "PART: 1 Participant; 2 Non-Participant; source codebook"
+    }
+  }
+  btp_rows <- which(people$poll_id == "btp-national-2003" &
+                      people$source_dataset %in% c("historical", "cor_sood"))
+  if (length(btp_rows)) {
+    survey <- survey_reader("btp-national-2003")
+    for (dataset in unique(people$source_dataset[btp_rows])) {
+      rows <- btp_rows[people$source_dataset[btp_rows] == dataset]
+      raw <- attendance_source_rows(people[rows, ], survey, "serial")
+      attended <- btp_national_attendance(raw)
+      known <- !is.na(attended)
+      people$attended[rows[known]] <- attended[known]
+      people$attendance_basis[rows[known]] <- "source_session_records"
+      people$attendance_evidence[rows[known]] <- paste(
+        "countmtg records sessions attended: zero means no attendance;",
+        "one or more establishes attendance; questionnaire answers retained"
+      )
     }
   }
   rows <- which(people$poll_id == "zeguo-2005" &

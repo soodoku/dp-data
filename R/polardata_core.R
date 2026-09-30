@@ -41,6 +41,7 @@ core_poll_profile <- function(survey, poll_id) {
   )
   group <- rounded_source_code(survey[[group_field]])
   group[group <= 0 & !is.na(group)] <- NA_real_
+  if (poll_id == "uk-eu-1995") group[group %in% 99] <- NA_real_
   if (poll_id == "uk-general-election-1997") {
     participant <- read_source_codes(survey, "partic", 0:1)
     group[participant != 1] <- NA_real_

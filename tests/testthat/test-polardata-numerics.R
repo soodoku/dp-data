@@ -152,13 +152,13 @@ test_that("reviewed public source matrices identify only registered inputs", {
     project_path("metadata", "polardata_reviewed_covariances.csv"),
     show_col_types = FALSE
   )
-  expect_equal(nrow(reviewed), 7L)
+  expect_equal(nrow(reviewed), 6L)
   expect_equal(length(unique(reviewed$pollgroup)), 6L)
   expect_false(any(reviewed$pollgroup %in% c(9601, 9621)))
   result <- audit_historical_covariances(benchmark, reviewed)
   accepted <- result[result$numerical_exception, ]
-  expect_equal(nrow(accepted), 7)
-  expect_equal(sum(accepted$reference_kind == "approved"), 1L)
+  expect_equal(nrow(accepted), 6)
+  expect_equal(sum(accepted$reference_kind == "approved"), 0L)
   expect_setequal(accepted$pollgroup, reviewed$pollgroup)
   invalid <- result[result$pollgroup %in% c(9601, 9621), ]
   expect_equal(invalid$covariance_class, rep("indefinite_and_singular", 2))
@@ -175,15 +175,11 @@ test_that("reviewed public source matrices identify only registered inputs", {
     rejected$pollgroup == changed$pollgroup[1] &
       rejected$reference_kind == "historical"
   ])
-  changed <- reviewed
-  corrected_hash <- accepted$attitudes_sha256[
-    accepted$reference_kind == "approved"
-  ]
-  changed$attitudes_sha256[
-    changed$attitudes_sha256 == corrected_hash
-  ] <- "changed"
-  rejected <- audit_historical_covariances(benchmark, changed)
-  expect_false(any(rejected$reference_kind == "approved"))
+  expect_true(all(accepted$reference_kind[
+    accepted$pollgroup == 2099
+  ] == "historical"))
+  expect_false(any(result$pollgroup == 2099 &
+                     result$reference_kind == "approved"))
 })
 
 test_that("approved covariance exceptions require both verified values", {

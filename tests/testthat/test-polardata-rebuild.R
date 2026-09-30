@@ -267,8 +267,11 @@ test_that("numerical exceptions cannot hide changed aggregate values", {
   expect_equal(sum(compare_historical_polardata(
     changed, reference, audit
   )$unexplained_differences), 1L)
-  group <- audit$pollgroup[which(audit$numerical_exception)[1]]
+  eligible <- audit$numerical_exception &
+    audit$pollgroup %in% data$pollgroup
+  group <- audit$pollgroup[which(eligible)[1]]
   row <- which(data$pollgroup == group)[1]
+  expect_false(is.na(row))
   data$genvar[[row]] <- 1
   parity <- compare_historical_polardata(data, reference, audit)
   expect_equal(sum(parity$unexplained_differences), 1L)

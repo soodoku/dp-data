@@ -920,6 +920,21 @@
       "publication_status": "published",
       "notes": "Unchanged Both_Waves_Final_Client.sav from the CDD source archive; same 674 respondents and 205 raw questionnaire fields as publication-survey.dta. Preserves exact recorded interview dates before Stata float32 rounding. Experimental/control labels are source labels, not evidence of randomized arm allocation. Does not replace the maintained 245-person source. Source rights retained.",
       "relative_path": "source-materials/master-survey.sav"
+    },
+    {
+      "artifact_id": "btp-national-group-level-analysis",
+      "poll_id": "btp-national-2003",
+      "artifact_type": "script",
+      "title": "BTP National authored group-analysis syntax",
+      "location": "data/btp-national-2003/scripts/group-level-analysis.do",
+      "source_id": "btp-national-group-level-analysis",
+      "original_archive_path": "data/us_fp_online/scripts/group_level_analysis.do",
+      "sha256": "75d4767ce053d2c898e10387e938216424a1a57a2e00460024bc51963ab2c87b",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged authored Stata script from cdd-data-20260923 bundle SHA2565dde554c16bd4bfdea5bf55962c3652b198df19d67646ad9d25df423d423992a; original archive inventory audit/cdd_archive_files.csv. Line 2 excludes treatment respondents with missing dpoll_n. Preserved as evidence for the historical group-analysis sample restriction; not the recovered final-file generation script and not executed by the modern build. Source rights retained.",
+      "relative_path": "scripts/group-level-analysis.do"
     }
   ],
   "document_previews": [

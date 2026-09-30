@@ -1,0 +1,17 @@
+source(file.path(root, "R", "respondent_parity.R"))
+
+test_that("reference caching preserves data and reloads changed files", {
+  path <- tempfile(fileext = ".csv")
+  on.exit(unlink(path), add = TRUE)
+  first <- tibble::tibble(caseid = c(1, 2), approved_value = c(NA, .5))
+  readr::write_csv(first, path)
+  expected <- readr::read_csv(path, show_col_types = FALSE)
+  expect_identical(read_reference_csv(path), expected)
+  expect_identical(read_reference_csv(path), expected)
+  second <- tibble::tibble(caseid = c(1, 2), approved_value = c(1000, 2000))
+  readr::write_csv(second, path)
+  expected <- readr::read_csv(path, show_col_types = FALSE)
+  expect_identical(read_reference_csv(path), expected)
+  unlink(path)
+  expect_error(read_reference_csv(path))
+})

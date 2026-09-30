@@ -1,14 +1,21 @@
+source(project_path("R", "source_new_haven.R"))
+
 new_haven_knowledge_items <- function(survey, wave) {
   keys <- c(
     `35` = 3, `36` = 2, `37` = 2, `39` = 3,
     `40` = 1, `41` = 1, `42` = 4, `43` = 1
   )
-  purrr::imap(keys, function(key, item) {
+  items <- purrr::imap(keys, function(key, item) {
     value <- read_source_codes(survey, paste0(wave, "_q", item), 0:6)
     as.numeric(value %in% key)
   }) |>
     tibble::as_tibble() |>
     as.matrix()
+  if (wave == "post") {
+    absent <- new_haven_departure_observed(survey) %in% FALSE
+    items[absent, ] <- NA_real_
+  }
+  items
 }
 
 new_haven_attitudes <- function(survey, wave) {

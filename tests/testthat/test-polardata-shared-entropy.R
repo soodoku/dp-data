@@ -39,8 +39,15 @@ test_that("shared entropy freezes all people against historical values", {
     expect_equal(actual$entropy[match(original$caseid, actual$caseid)],
                  expected, tolerance = 1e-10)
     expect_setequal(actual$caseid, frozen$caseid)
+    expected_frozen <- frozen$approved_value
+    if (poll == "uk-eu-1995") {
+      unknown <- frozen$caseid %in% c(1008, 3132, 4316, 5022)
+      expect_equal(sum(unknown), 4L)
+      expect_true(all(!is.na(expected_frozen[unknown])))
+      expected_frozen[unknown] <- NA_real_
+    }
     expect_equal(actual$entropy[match(frozen$caseid, actual$caseid)],
-                 frozen$approved_value, tolerance = 1e-10)
+                 expected_frozen, tolerance = 1e-10)
   }
   changed <- abs(approved$approved_value - approved$previous_value) > 1e-10
   expect_equal(sum(changed), 3436L)
@@ -86,9 +93,14 @@ test_that("shared entropy approval rejects altered historical inputs", {
     "audit", "corrections", "shared-entropy", "approved_values.csv"
   ), show_col_types = FALSE)
   frozen <- frozen[frozen$poll_id == "uk-eu-1995", ]
-  expect_equal(approved_reference_values(
+  expect_equal(legacy_reference_values(
     "uk-eu-1995", "entropy", frozen$caseid, frozen$historical_value
   ), frozen$approved_value)
+  reviewed <- frozen$approved_value
+  reviewed[frozen$caseid %in% c(1008, 3132, 4316, 5022)] <- NA_real_
+  expect_equal(approved_reference_values(
+    "uk-eu-1995", "entropy", frozen$caseid, frozen$historical_value
+  ), reviewed)
   altered <- frozen$historical_value
   altered[[1]] <- altered[[1]] + .01
   expect_error(approved_reference_values(

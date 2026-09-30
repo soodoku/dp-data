@@ -1,3 +1,18 @@
+source(project_path("R", "source_new_haven.R"))
+
+analysis_new_haven_presence <- function(survey) {
+  stopifnot(
+    all(c("source_row", "assigned") %in% names(survey)),
+    !anyNA(survey$source_row), !anyDuplicated(survey$source_row),
+    !anyNA(survey$assigned), !anyDuplicated(survey$assigned)
+  )
+  tibble::tibble(
+    source_row = survey$source_row,
+    respondent_id = as.character(survey$assigned),
+    departure_observed = new_haven_departure_observed(survey)
+  )
+}
+
 source(project_path("R", "source_monarchy.R"))
 source(project_path("R", "source_zeguo.R"))
 
@@ -197,6 +212,21 @@ analysis_phase_presence <- function(
   btp_polls <- intersect(unique(out$poll_id), c(
     "btp-national-2003", "btp-presidential-primaries-2004"
   ))
+  if (any(out$poll_id == "new-haven-2004")) {
+    survey <- read_poll_survey("new-haven-2004")
+    forms <- analysis_new_haven_presence(survey) |>
+      dplyr::mutate(poll_id = "new-haven-2004", wave = "t2") |>
+      dplyr::select(-"source_row")
+    out <- out |>
+      dplyr::left_join(forms,
+        by = c("poll_id", "respondent_id", "wave"),
+        relationship = "many-to-one"
+      ) |>
+      dplyr::mutate(wave_observed = dplyr::coalesce(
+        departure_observed, wave_observed
+      )) |>
+      dplyr::select(-"departure_observed")
+  }
   if (any(out$poll_id == "uk-monarchy-1996")) {
     forms <- analysis_monarchy_presence(
       read_poll_survey("uk-monarchy-1996")
@@ -298,6 +328,96 @@ analysis_phase_presence <- function(
       dplyr::select(-"form_observed")
   }
   out
+}
+
+bridge_analysis_phase_presence <- function(scores, participants) {
+  person_keys <- c("poll_id", "source_dataset", "respondent_id")
+  people <- participants |>
+    dplyr::filter(source_dataset %in% c("historical", "cor_sood"))
+  stopifnot(
+    !anyDuplicated(people[person_keys]), !anyNA(people$source_row),
+    !anyDuplicated(people[c("poll_id", "source_dataset", "source_row")])
+  )
+  historical <- people |>
+    dplyr::filter(source_dataset == "historical") |>
+    dplyr::transmute(
+      poll_id, source_row, historical_id = respondent_id,
+      original_id = historical_respondent_id,
+      historical_basis = identity_basis
+    )
+  bridge <- people |>
+    dplyr::filter(source_dataset == "cor_sood") |>
+    dplyr::left_join(historical,
+      by = c("poll_id", "source_row"), relationship = "one-to-one"
+    )
+  identity_rows <- bridge |>
+    dplyr::select("poll_id", "respondent_id", "source_row") |>
+    dplyr::left_join(
+      dplyr::select(historical, "poll_id", "historical_id", "source_row"),
+      by = c("poll_id", "respondent_id" = "historical_id"),
+      relationship = "one-to-one", suffix = c("", "_historical")
+    )
+  row_differs <- !is.na(identity_rows$source_row_historical) &
+    identity_rows$source_row != identity_rows$source_row_historical
+  if (any(row_differs)) {
+    stop("Questionnaire presence bridge has mismatched source rows.")
+  }
+  row_named <- startsWith(bridge$respondent_id, "source-row-")
+  row_name_differs <- row_named & bridge$respondent_id !=
+    paste0("source-row-", bridge$source_row)
+  if (any(row_name_differs)) {
+    stop("Questionnaire presence bridge has mismatched source rows.")
+  }
+  linked <- !is.na(bridge$historical_id)
+  row_id <- paste0("source-row-", bridge$source_row)
+  file_row <- bridge$historical_basis %in% "file-scoped-missing-id" &
+    bridge$respondent_id == row_id &
+    endsWith(bridge$historical_id, paste0(":", row_id))
+  agrees <- bridge$respondent_id == bridge$historical_id | file_row
+  if (any(linked & !agrees)) {
+    stop("Questionnaire presence bridge has mismatched source identities.")
+  }
+  original_known <- linked & !is.na(bridge$historical_respondent_id)
+  original_differs <- is.na(bridge$original_id) |
+    bridge$historical_respondent_id != bridge$original_id
+  if (any(original_known & original_differs)) {
+    stop("Questionnaire presence bridge has mismatched historical IDs.")
+  }
+  bridge <- bridge[linked, ]
+  linked_scores <- scores$source_dataset %in% c("historical", "cor_sood")
+  stopifnot(
+    !anyNA(scores$wave[linked_scores]),
+    !anyNA(scores$wave_role[linked_scores])
+  )
+  historical_scores <- scores |>
+    dplyr::filter(source_dataset == "historical") |>
+    dplyr::inner_join(
+      dplyr::select(people, dplyr::all_of(person_keys), "source_row"),
+      by = person_keys, relationship = "many-to-one"
+    ) |>
+    dplyr::summarise(
+      observed = any(wave_observed %in% TRUE),
+      absent = any(wave_observed %in% FALSE),
+      .by = c("poll_id", "source_row", "wave", "wave_role")
+    )
+  stopifnot(!any(historical_scores$observed & historical_scores$absent))
+  evidence <- bridge |>
+    dplyr::select(dplyr::all_of(person_keys), "source_row") |>
+    dplyr::inner_join(
+      dplyr::filter(historical_scores, observed),
+      by = c("poll_id", "source_row"), relationship = "one-to-many"
+    ) |>
+    dplyr::select(dplyr::all_of(person_keys), "wave", "wave_role", "observed")
+  matched <- scores |>
+    dplyr::left_join(evidence,
+      by = c(person_keys, "wave", "wave_role"), relationship = "many-to-one"
+    )
+  if (any(matched$wave_observed %in% FALSE & matched$observed %in% TRUE)) {
+    stop("Positive questionnaire evidence conflicts with explicit absence.")
+  }
+  fill <- is.na(matched$wave_observed) & matched$observed %in% TRUE
+  scores$wave_observed[fill] <- TRUE
+  scores
 }
 
 analysis_phase_scores <- function(scores, items, participants, sources,
@@ -425,5 +545,5 @@ analysis_phase_scores <- function(scores, items, participants, sources,
       by = c("poll_id", "source_dataset", "respondent_id")
     )) == 0L
   )
-  out
+  bridge_analysis_phase_presence(out, participants)
 }
