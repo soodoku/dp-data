@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.4.2
+## Unreleased
 
 - Preserve Denmark's July 2003 dissertation draft and separate technical
   appendix in its poll folder, with their distinct source versions recorded.
