@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Preserve Denmark's July 2003 dissertation draft and separate technical
+  appendix in its poll folder, with their distinct source versions recorded.
+
 - Document the missing Denmark and Vermont discussion-group rosters after
   searching source surveys, serialized objects, reports and assignment forms.
 - Remove nine exact vault duplicates verified against the published v0.4.2

@@ -5159,10 +5159,17 @@ respondent-to-group linkage. The assembly list identifies respondents with
 are substantive responses, not identifiers. Municipality, county and interview
 administration fields likewise cannot establish discussion-group membership.
 
-The vault book `Deliberative Democracy and Opinion Formation.pdf` (PDF page 180)
-reports twenty discussion groups. Its `Appendix-web.pdf` (PDF page 80, printed
-page 373) shows a moderator questionnaire headed `Gruppe-bogstav` (group letter),
-but no completed respondent-to-letter roster. The wider search covered 298
+Hansen's July 2003 dissertation draft is now preserved as
+`data/denmark-euro-2000/papers/deliberative-democracy-opinion-formation-draft-2003.pdf`.
+PDF page 180 (chapter page 6) reports twenty discussion groups. The separate
+technical appendix is retained as
+`data/denmark-euro-2000/reports/deliberative-democracy-opinion-formation-appendices.pdf`;
+its PDF page 80 (printed page 373) shows a moderator questionnaire headed
+`Gruppe-bogstav` (group letter), but no completed respondent-to-letter roster.
+The draft is Denmark's empirical study, not a cross-poll inventory; both
+original PDFs therefore belong in Denmark's folder. The appendix's PDF creation
+metadata dates that separate file version to May 2004; do not silently treat
+it as the identical July 2003 draft version. The wider search covered 298
 source schemas, the vault inventory, authored scripts and the historical group
 aggregate data; none supplied the missing linkage for Denmark or Vermont.
 Recover a `DELNR` to group-letter roster or completed assignment records. Retain
