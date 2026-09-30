@@ -6079,6 +6079,42 @@ across 1,275 source records remain identical. No other source opts into this
 encoding repair. The canonical item catalog gains seven definitions and the
 phase-item table gains 26,775 responses; other analytical outputs are unchanged.
 
+### MAR-04: Mayor-performance responses lack verified scale instructions
+
+The source attitude export retains 271 observed responses to two mayor-performance
+fields: 143 arrival answers in `AR_Q21` and 128 departure answers in `F_Q21`.
+Both fields are labeled “evaluation of mayor’s performance” but have no source
+value labels. Observed values range from 0 to 100; their raw means are 52.02797
+and 49.35938. Raw answers remain available. Their interpreted numeric and
+normalized values remain missing because the source does not establish the
+endpoints, direction or nonanswer codes.
+
+The retained [English questionnaire](../data/marousi-2006/questionnaires/marousi-questionnaire.pdf),
+page 4, does not establish this coding. Its Q19 asks about the mayor’s performance
+using five substantive positive-to-negative categories, plus nonanswers. A
+separate Q23 thermometer starts on page 4 and continues on page 5; its mayor
+component corresponds to `AR_Q22_5` and `F_Q22_5`. These are different source
+answers: Q21 disagrees with the adjacent mayor thermometer in 61 of 131 observed
+arrival pairs and 52 of 117 departure pairs. The report’s page 4 and the paper’s
+PDF page 16 establish thermometer scales for candidate ratings, not these Q21
+performance fields. Do not transfer their scale merely because both fields
+contain numbers between 0 and 100.
+
+A source-version check joined all 1,275 people by original telephone ID
+`P_Q1_0`. The five archived files `data_all_final.dta`, `data_all_final.sav`, `data_all_final2.sav`, `data_all_final_alice.dta`
+and `data_issue_priority.dta` under `vault/cdd/data/Greece/data/` agree exactly
+with the retained source on
+both Q21 fields: zero value or missingness differences. None supplies the
+missing labels, and the inspected authored analyses do not establish their
+recoding. This is a measurement-documentation gap, not evidence that the
+responses themselves are corrupt.
+
+Preserve the current unclassified status and original answers. The evidence
+needed to interpret these 271 answers is the actual arrival/departure Q21
+wording and coding instructions. A thermometer interpretation is plausible,
+but the observed distribution alone does not establish it. This review does
+not reopen the sixteen departure-ID disagreements retained by user instruction.
+
 ### TZ-01 — group assignment does not by itself establish treatment eligibility
 
 The retained `participants.dta` has 2,225 rows: 2,002 labelled citizens, 121
