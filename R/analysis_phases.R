@@ -127,8 +127,55 @@ analysis_monarchy_presence <- function(survey) {
   )
 }
 
+analysis_tanzania_presence <- function(survey) {
+  definitions <- read_metadata("tanzania_attitude_items")
+  roles <- read_metadata("analysis_phase_roles") |>
+    dplyr::filter(poll_id == "tanzania-2015", source_dataset == "control") |>
+    dplyr::arrange(score_wave)
+  stopifnot(
+    nrow(definitions) == 22L,
+    all(definitions$poll_id == "tanzania-2015"),
+    !anyDuplicated(definitions$pre_column),
+    !anyDuplicated(definitions$post_column),
+    all(definitions$lower < definitions$upper),
+    nrow(roles) == 2L, identical(roles$score_wave, c("t1", "t2")),
+    identical(roles$wave, c("t0", "t3")),
+    identical(roles$wave_role, c("pre_arrival", "follow_up")),
+    all(c("HHID", "sample", definitions$pre_column,
+          definitions$post_column) %in% names(survey)),
+    !anyNA(survey$HHID), !anyDuplicated(survey$HHID)
+  )
+  citizens <- survey[survey$sample %in% "Citizens", ]
+  purrr::map(seq_len(nrow(roles)), function(wave_index) {
+    fields <- if (wave_index == 1L) {
+      definitions$pre_column
+    } else {
+      definitions$post_column
+    }
+    answers <- purrr::map(seq_along(fields), function(item) {
+      values <- as.numeric(citizens[[fields[[item]]]])
+      missing_codes <- as.numeric(strsplit(
+        definitions$missing_codes[[item]], ";", fixed = TRUE
+      )[[1]])
+      stopifnot(!anyNA(missing_codes))
+      is.finite(values) & !values %in% missing_codes &
+        values >= definitions$lower[[item]] &
+        values <= definitions$upper[[item]]
+    })
+    observed <- rowSums(do.call(cbind, answers)) > 0L
+    tibble::tibble(
+      poll_id = "tanzania-2015", source_dataset = "control",
+      respondent_id = as.character(citizens$HHID),
+      wave = roles$score_wave[[wave_index]],
+      wave_observed = dplyr::if_else(observed, TRUE, NA)
+    )
+  }) |>
+    purrr::list_rbind()
+}
+
 analysis_phase_presence <- function(
-  scores, items, measures, definitions, targets, amr = NULL, participants = NULL
+  scores, items, measures, definitions, targets, amr = NULL,
+  participants = NULL, tanzania = NULL
 ) {
   responses <- arrow::read_parquet(project_path(
     "output", "respondent", "source_responses.parquet"
@@ -366,6 +413,38 @@ analysis_phase_presence <- function(
       )) |>
       dplyr::select(-"form_observed")
   }
+  if (any(scores$poll_id == "tanzania-2015")) {
+    if (is.null(tanzania)) {
+      tanzania <- haven::read_dta(project_path(
+        "data", "tanzania-2015", "participants.dta"
+      ))
+    }
+    keys <- c("poll_id", "source_dataset", "respondent_id", "wave")
+    expected <- scores |>
+      dplyr::filter(poll_id == "tanzania-2015") |>
+      dplyr::select(dplyr::all_of(keys))
+    forms <- analysis_tanzania_presence(tanzania)
+    stopifnot(
+      !anyDuplicated(expected[keys]),
+      nrow(dplyr::anti_join(expected, forms, by = keys)) == 0L
+    )
+    forms <- expected |>
+      dplyr::left_join(forms, by = keys, relationship = "one-to-one") |>
+      dplyr::left_join(
+        dplyr::filter(out, poll_id == "tanzania-2015"),
+        by = keys, relationship = "one-to-one", suffix = c("", "_existing")
+      )
+    stopifnot(!any(forms$wave_observed %in% TRUE &
+                     forms$wave_observed_existing %in% FALSE))
+    forms <- forms |>
+      dplyr::mutate(wave_observed = dplyr::coalesce(
+        wave_observed_existing, wave_observed
+      )) |>
+      dplyr::select(-"wave_observed_existing")
+    out <- dplyr::bind_rows(
+      dplyr::filter(out, poll_id != "tanzania-2015"), forms
+    )
+  }
   out
 }
 
@@ -468,7 +547,8 @@ analysis_phase_scores <- function(scores, items, participants, sources,
     "output", "respondent", "respondent_measures.parquet"
   ))
   presence <- analysis_phase_presence(
-    scores, items, measures, definitions, targets, sources$amr, participants
+    scores, items, measures, definitions, targets, sources$amr, participants,
+    tanzania = sources$tanzania
   )
   base <- scores |>
     dplyr::rename(original_score_wave = "wave") |>

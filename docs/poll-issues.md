@@ -6632,6 +6632,43 @@ directly to the citizen attitude and weight records for all 2,002 people. The
 review script writes fresh comparisons to a temporary directory unless an
 explicit `--output-dir` is supplied, preserving the archived row-ID comparisons.
 
+### TZ-08 — recognize questionnaires from actual policy answers
+
+The phase export previously left questionnaire presence unknown for all 4,004
+citizen interviews because Tanzania supplies deposited knowledge indices rather
+than the item rows used by the common presence routine. That omission did not
+mean the source lacked questionnaire answers. The 22 reviewed policy items in
+`metadata/tanzania_attitude_items.csv` establish positive form evidence for
+2,001 baseline and 1,858 follow-up interviews. A finite answer within its item's
+reviewed bounds, excluding its recorded nonanswer codes, is sufficient evidence.
+Derived knowledge indices, assignment flags, groups and weights are not evidence
+for this determination. A questionnaire containing only nonanswers would remain
+unknown under this rule; no such case occurs in the retained citizen source.
+
+The remaining one baseline and 144 follow-up interviews remain unknown. Each
+has all 109 wave-specific numeric H/X fields and the two wave-specific citizen
+and employment-sector fields missing. The 37 baseline and two follow-up policy
+cells containing −99 occur on forms with other substantive policy answers.
+Native household 240301 has follow-up answers but no baseline answers. Its arm,
+attendance, assignment and existing nonpanel status remain unchanged; observing
+a questionnaire does not establish participation in deliberation.
+
+Timing is unchanged. The working paper
+`data/tanzania-2015/papers/tanzania-working-paper.pdf`, PDF p.13 / printed p.12,
+§3.1, places baseline before the information video and subsequent invitation.
+PDF p.15 / printed p.14, §3.2, describes telephone follow-up measuring effects
+weeks rather than hours after treatment and split across multiple interviews.
+The canonical stages therefore remain pre-arrival t0 and follow-up t3. Presence
+means some questionnaire answers at that stage, not completion of every module.
+
+The correction changes exactly 3,859 `wave_observed` values from missing to true
+and the corresponding `questionnaire_presence_status` values from `unknown` to
+`observed`. All other phase-score cells are identical. All other 55 output files
+are byte-identical; only the phase-score Parquet and its manifest change. Source
+bytes, scalar knowledge and attitude scores, cohorts, attendance, weights and
+schooling definitions are preserved. Focused tests also reject out-of-range or
+sentinel-only answers as positive evidence and preserve genuine scale zeroes.
+
 ### NH-02 — Event year corrected; attendance needs reconciliation
 
 Farrar et al., *Disaggregating Deliberation's Effects*
