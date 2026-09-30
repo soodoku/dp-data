@@ -1,12 +1,17 @@
 # Changelog
 
-## Unreleased
+## 0.4.2
 
 - Restore Northern Ireland's literal argument-coder labels. CSV type inference
   had collapsed 176 comma-separated code sets; source whitespace is also retained.
   Respondent identities, missing slots and all knowledge outputs are unchanged.
-
-## 0.4.2
+- Preserve Denmark's four original questionnaires and readable PDF companions;
+  record the later follow-up's verified telephone mode without changing dates,
+  scores or cohorts. Preserve its wave crosswalk, two California index drafts
+  and Northern Ireland's version 16 coding guide in their poll folders.
+- Allow the full CI build and numerical audit up to 60 minutes. The previous
+  30-minute limit canceled a run after tests and lint passed, before its final
+  metadata verification could finish.
 
 - Use reviewed whole-questionnaire evidence in knowledge scoring. Preserve
   observed blank quizzes as zero; unavailable questionnaires have missing scores.
