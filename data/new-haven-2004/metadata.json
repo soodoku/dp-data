@@ -596,6 +596,21 @@
       "publication_status": "published",
       "notes": "Generated from data/shared/design/poll_details/appendix-poll-details-5-18-14-e.docx. Original retained unchanged. See metadata/document_previews.csv for converter and verification details. Cleanup review: Already cited across21 poll references; includes24 polls and four source-linked duration comments. Compared all14 DOCX table rows plus comments XML, and corresponding PDF texts. No executable code reads these appendices.",
       "relative_path": "../shared/design/poll_details/appendix-poll-details-5-18-14-e.pdf"
+    },
+    {
+      "artifact_id": "material-3640a672701e3723-new-haven-2004",
+      "poll_id": "new-haven-2004",
+      "artifact_type": "data",
+      "title": "New Haven2002 earlier recruitment ID/status crosswalk",
+      "location": "data/new-haven-2004/source-materials/recruitment-id-status-crosswalk.parquet",
+      "source_id": "material-3640a672701e3723",
+      "original_archive_path": "cdd/data/new_haven/questionnaire/Pre-Event Respondents with Questionnaire IDs.xls",
+      "sha256": "3640a672701e3723d7f6b559ad9814f1d584f17d17658264fffe4d24550892f0",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Deidentified extract of original workbook Source sheet;129uniqueassignedIDs,99Attendees/30Maybes. Recruitment labels are NOT confirmed completed attendance. All129 already amongcurrent132; current-only3083,3174,3241. Does not resolve reported133rd attendee. Retains original sheet-row identity and CATI linkage; contact/free-text fields omitted. No attendance/scoring/sample inference. Original workbook SHA256=ae07efe4616e7ee9373d2a6065ec48ff5e722a1fc887dbad8c9f5436c9f033fd. Source columns ASSIGNED_ID, CATI RESPNUM, STATUS; source_excel_row is original1-basedExcel row2:130. Schema source_excel_row:int32; assigned_id:string; cati_respondent_id:string; recruitment_status:string.",
+      "relative_path": "source-materials/recruitment-id-status-crosswalk.parquet"
     }
   ],
   "document_previews": [

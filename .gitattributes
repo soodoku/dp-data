@@ -29,3 +29,4 @@ data/*/scripts/** -text -whitespace
 data/*/other/** -text -whitespace
 data/celaya-2018/celaya.csv -text -whitespace
 data/shizuoka-2019/shizuoka.tsv -text -whitespace
+data/*/source-materials/** -text -whitespace

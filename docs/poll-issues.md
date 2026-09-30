@@ -8829,3 +8829,55 @@ for the successive reference values. The previous reference is main commit
 `07c67f3`; parity validation first checks all earlier approved corrections, then
 asserts each previous value before applying this new overlay. The table is
 a validation reference, never an input to the production recodes.
+
+
+### Recovered vault and Bulgaria archive materials, September 30, 2026
+
+The user-supplied Bulgaria archive contains the 2002 crime poll, not respondent
+data for the 2007 Roma poll. The unchanged original attendee exit and comparison
+surveys are retained in `data/bulgaria-crime-2002/`, alongside unique historical
+index drafts and the inequality report; every newly retained Word document has
+a readable PDF companion. Comparison-survey source rows 532 and 533 share ID537
+but differ on 69 fields. Preserve source-row identity; an ID-only join or
+deduplication would discard evidence.
+
+The inequality report independently corroborates the preserved civil-liberties
+Version E: N275, exit mean .446, change -.023, and p=.208 agree at printed
+precision. Its printed baseline .479 conflicts with the reconstructed .46887879
+and with its own reported difference. Preserve the original report and current
+reviewed definition. The report does not establish the missing final formula or
+its rationale. The Roma briefing in the new archive has different file bytes but
+identical extracted text to the retained briefing; it is not evidence of a new
+questionnaire or respondent source.
+
+Australia's recovered `source-materials/attendance-roster.sav` retains all
+1,220 source rows and five coded fields unchanged. The polling company's
+original SPSS syntax and an exact excerpt of the source-version notes (lines
+1–9) establish corrected January 2000 question values and the August 2000
+attendance update. This is preserved evidence, not an additional attendance
+recoding. The full correspondence file remains in the vault because its
+complete historical preservation has not been established.
+
+Vault cleanup removed 37 byte-identical local copies only after SHA256
+comparison to retained, tracked public poll files. Unmatched scientific data,
+unique scripts and archive members are not treated as disposable duplicates.
+
+The genuine Europolis 2009 master questionnaire is now retained as an unchanged
+XLS and a readable PDF in `data/europolis-2009/questionnaires/`. Its wave
+columns distinguish recruitment, arrival, departure, and post-election
+interviews; Q45/Q48/Q51 appear only at arrival and departure, corroborating the
+six-item common battery and nine-item event battery. The master does not
+establish the final printed form or resolve the anonymous deposited battery's
+person ordering. The earlier misfiled Tomorrow's Europe form remains excluded.
+
+New Haven's early recruitment crosswalk retains 129 respondents, including
+99 labeled Attendees and 30 labeled Maybes. These are original recruitment
+labels, not validated completion indicators. All 129 IDs occur in the current
+132-person source; IDs3083/3174/3241 occur only in the latter. This does not
+recover the report's 133rd attendee. The typed Parquet retains original Excel
+row, assigned ID, CATI respondent ID, and status; contact fields are excluded.
+The original workbook remains in the vault pending complete preservation.
+
+A further 87 FTP transfer logs and one temporary Word lock file were removed
+after checking their recorded hashes. The 29 analysis/import logs remain;
+they may contain scientific evidence.

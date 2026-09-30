@@ -214,6 +214,36 @@
       "local_artifact_id": "australia-jim-australia-indices-preview",
       "accessed": "2026-09-28",
       "notes": "Authored exploratory memo distinguishes empirical premises from policy preferences and proposes using the constitutional ranking. Not proof that all proposed indices were adopted. PDF preview of retained original."
+    },
+    {
+      "reference_id": "australia-1999-attendance-roster",
+      "poll_id": "australia-republic-1999",
+      "kind": "data",
+      "title": "Australia actual-attendance roster supplied August 2000",
+      "url": null,
+      "local_artifact_id": "australia-1999-attendance-roster",
+      "accessed": "2026-09-30",
+      "notes": "Exact original ozidpart_master.sav, 1220 rows and five numeric fields. Source label attend identifies actual DP attendance (356 yes, 864 no); likenon identifies 31 likely attendees who did not attend. bu#c is a delegate possible-problem flag; filter_$ is the original saved selection indicator. No personal contact fields. Optional source evidence only; existing scoring, attendance, samples and joins are unchanged."
+    },
+    {
+      "reference_id": "australia-1999-polling-company-survey",
+      "poll_id": "australia-republic-1999",
+      "kind": "script",
+      "title": "Original polling-company Australian republic survey syntax and inline data",
+      "url": null,
+      "local_artifact_id": "australia-1999-polling-company-survey",
+      "accessed": "2026-09-30",
+      "notes": "Exact original Australia_Master_1_Nov_1999.SPS, renamed from polling-company D991013.SPS. Original historical source syntax with 203 columns and 1220 inline respondent rows, not a maintained modern build script. Schema/data inspection found only numeric fields plus quoted numeric postcodes; BA# is permission-to-pass-name 1/2/3, not names. The public survey already retains postcode. No new scoring or source selection."
+    },
+    {
+      "reference_id": "australia-1999-source-version-notes-excerpt",
+      "poll_id": "australia-republic-1999",
+      "kind": "research-design",
+      "title": "Australian source-version and attendance provenance: opening notes excerpt",
+      "url": null,
+      "local_artifact_id": "australia-1999-source-version-notes-excerpt",
+      "accessed": "2026-09-30",
+      "notes": "Exact bytes of original files.txt lines 1-9 inclusive; retains the original-source filenames, corrected January 2000 version adding missing departure QD10/QE1, and August 2000 actual-attendance roster provenance. Remaining correspondence and frequency output are omitted. Original files.txt SHA256 3fa8a71c24c17cfc4ef9d6d8480e6f767b489c40188838c49a0b0faa1dc4bf22. This excerpt does not preserve the full original; original historical Git preservation is not yet established."
     }
   ],
   "material_coverage": [
@@ -598,6 +628,51 @@
       "publication_status": "published",
       "notes": "Authored exploratory memo distinguishes empirical premises from policy preferences and proposes using the constitutional ranking. Not proof that all proposed indices were adopted. PDF preview of retained original.",
       "relative_path": "codebooks/jim-australia-indices.pdf"
+    },
+    {
+      "artifact_id": "australia-1999-attendance-roster",
+      "poll_id": "australia-republic-1999",
+      "artifact_type": "data",
+      "title": "Australia actual-attendance roster supplied August 2000",
+      "location": "data/australia-republic-1999/source-materials/attendance-roster.sav",
+      "source_id": "australia-1999-attendance-roster",
+      "original_archive_path": "data/australia_republic/MasterData/Australia_DP/ozidpart_master.sav",
+      "sha256": "c31ce544d12dca6afbbe9748b517830294caae02c3905f1dab658742589c5217",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Exact original ozidpart_master.sav, 1220 rows and five numeric fields. Source label attend identifies actual DP attendance (356 yes, 864 no); likenon identifies 31 likely attendees who did not attend. bu#c is a delegate possible-problem flag; filter_$ is the original saved selection indicator. No personal contact fields. Optional source evidence only; existing scoring, attendance, samples and joins are unchanged.",
+      "relative_path": "source-materials/attendance-roster.sav"
+    },
+    {
+      "artifact_id": "australia-1999-polling-company-survey",
+      "poll_id": "australia-republic-1999",
+      "artifact_type": "script",
+      "title": "Original polling-company Australian republic survey syntax and inline data",
+      "location": "data/australia-republic-1999/source-materials/polling-company-survey-1999.sps",
+      "source_id": "australia-1999-polling-company-survey",
+      "original_archive_path": "data/australia_republic/MasterData/Australia_DP/Australia_Master_1_Nov_1999.SPS",
+      "sha256": "9452ba79f30ec62423b4311d9f2de8c461dae1e86ec83b37cc8381af4d2640c7",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Exact original Australia_Master_1_Nov_1999.SPS, renamed from polling-company D991013.SPS. Original historical source syntax with 203 columns and 1220 inline respondent rows, not a maintained modern build script. Schema/data inspection found only numeric fields plus quoted numeric postcodes; BA# is permission-to-pass-name 1/2/3, not names. The public survey already retains postcode. No new scoring or source selection.",
+      "relative_path": "source-materials/polling-company-survey-1999.sps"
+    },
+    {
+      "artifact_id": "australia-1999-source-version-notes-excerpt",
+      "poll_id": "australia-republic-1999",
+      "artifact_type": "research-design",
+      "title": "Australian source-version and attendance provenance: opening notes excerpt",
+      "location": "data/australia-republic-1999/source-materials/source-version-notes-excerpt.txt",
+      "source_id": "australia-1999-source-version-notes-excerpt",
+      "original_archive_path": "data/australia_republic/MasterData/Australia_DP/files.txt",
+      "sha256": "c07980fbd15753625c93e487790ffef9bf3f63e9321d738a9ef1a2fca75a751e",
+      "rights_status": "review-required",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Exact bytes of original files.txt lines 1-9 inclusive; retains the original-source filenames, corrected January 2000 version adding missing departure QD10/QE1, and August 2000 actual-attendance roster provenance. Remaining correspondence and frequency output are omitted. Original files.txt SHA256 3fa8a71c24c17cfc4ef9d6d8480e6f767b489c40188838c49a0b0faa1dc4bf22. This excerpt does not preserve the full original; original historical Git preservation is not yet established.",
+      "relative_path": "source-materials/source-version-notes-excerpt.txt"
     }
   ],
   "document_previews": [
