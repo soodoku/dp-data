@@ -17,7 +17,9 @@ read_reference_csv <- local({
 read_approved_cell_changes <- local({
   cache <- new.env(parent = emptyenv())
   function() {
-    path <- project_path("audit", "corrections", "approved_cell_changes.parquet")
+    path <- project_path(
+      "audit", "corrections", "approved_cell_changes.parquet"
+    )
     stamp <- file.info(path)[c("size", "mtime")]
     saved <- cache[[path]]
     if (is.null(saved) || !identical(saved$stamp, stamp)) {
