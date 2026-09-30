@@ -357,6 +357,21 @@
       "publication_status": "published",
       "notes": "Original May2022 deposit README. Identifies three anonymized datasets and directs readers to the paper appendix for survey wording; does not supply the withheld raw-to-derived cleaning code. Source URL: https://dataverse.harvard.edu/api/access/datafile/6277240",
       "relative_path": "design/replication-readme.txt"
+    },
+    {
+      "artifact_id": "tanzania-original-sub-hypotheses-artifact",
+      "poll_id": "tanzania-2015",
+      "artifact_type": "script",
+      "title": "Original deposited peer and moderator analysis script",
+      "location": "data/tanzania-2015/scripts/replication-sub-hypotheses.do",
+      "source_id": "tanzania-original-sub-hypotheses",
+      "original_archive_path": "Dataverse doi:10.7910/DVN/S3NRQL version 1.0:12 sub-hypotheses.do",
+      "sha256": "ada1595a8bfa8c42103b1c1c255694c6c8427eca39c3c6660bded6fac00bba57",
+      "rights_status": "public-license",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Original 8071 bytes retained unchanged as source evidence, not a production builder. Dataset version 1.0 released 2022-09-27; CC0-1.0. Lines 9-12 restrict to zdelib=1 before matching the group roster, establishing the 370-person analysis cohort without deleting the separate 371-person source roster. Lines 79-80 contain a dormant subgroup-item temporary-variable mismatch; line 58 defines educated using X1, whose source label is Political knowledge. See TZ-01 and TZ-06; no formulas adopted. Source URL: https://dataverse.harvard.edu/api/access/datafile/6277235",
+      "relative_path": "scripts/replication-sub-hypotheses.do"
     }
   ],
   "document_previews": []

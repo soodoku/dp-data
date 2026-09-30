@@ -6097,13 +6097,38 @@ section 3.2, says 401 were invited and 370 complied in 25 groups. Its 370
 therefore matches the intersection of the assignment and group files, while
 the extra group row has no verified treatment-arm status.
 
-The current `dp-distortions` out-of-sample reader explicitly retains all 371
-grouped rows, including the one with missing assignment. A future canonical
-upstream membership table should keep the literal group record and the
-assignment status as separate fields. Determine whether `240301` was a late
-attendee, a nonrandom participant, or an erroneous roster entry from the
-original event and randomization records before changing the analysis sample.
-Do not infer invitation or eligibility solely from a group number.
+The original analytical cohort is now established by the retained
+[peer and moderator analysis script](../data/tanzania-2015/scripts/replication-sub-hypotheses.do),
+lines 9–12. It first selects `zdelib == 1` and then matches `HHID` to the group
+file with `unmatched(none)`. That rule includes 370 people and excludes
+`240301`. The original script therefore does not treat every recorded group
+assignment as sufficient evidence of randomized-treatment eligibility.
+
+The deposited record remains useful source evidence. All 109 baseline `H` and
+`X` wave fields are missing for `240301`; 43 corresponding follow-up fields
+are observed, including all 22 retained policy items and all nine knowledge
+components. Its complete follow-up `H` response vector is unique among the
+citizens, so it is not an exact duplicate of another deposited respondent.
+Neither that uniqueness nor its two group numbers establishes actual attendance
+or supplies a missing randomization record.
+
+The current `dp-distortions` out-of-sample reader deliberately retains all 371
+rostered people. This is a different cohort from the original script's 370.
+Restricting to the latter would change round-one group 24 from 15 to 14 people
+and round-two group 13 from 14 to 13; the other 48 group-episode sizes would
+not change. Since the disputed person's baseline is entirely missing, all
+baseline group means, baseline observed-peer means and paired item samples
+would remain unchanged. Their 22 observed follow-up ratings affect 22 group-item
+means: removing this person would change those means by between −0.024603 and
++0.058608 on the normalized 0–1 scales. Among the 370 eligible people, 294
+follow-up leave-one-out item means across 27 people would change, by between
+−0.028388 and +0.068376. These are cohort comparisons, not adopted corrections.
+
+All 371 source roster rows and all answers remain preserved. Use a separately
+named eligibility rule when reproducing the authors' randomized cohort; do not
+delete the extra source record or infer attendance from its group number.
+Whether `240301` was a late attendee, a nonrandom participant or an erroneous
+roster entry still requires the original event and randomization records.
 
 ### TZ-02 — retain the observed sex field in the participant export (corrected)
 
@@ -6266,6 +6291,33 @@ mean directional polarization from −0.038309424 to −0.039400307; absolute
 polarization from −0.007626856 to −0.005084460; and gender domination from
 −0.005371478 to −0.007219525. These are item-set sensitivity comparisons,
 not new causal estimates. Analytical weighting remains undecided (X15).
+
+### TZ-06 — original subgroup syntax and education label need separate review
+
+The newly retained [original subgroup script](../data/tanzania-2015/scripts/replication-sub-hypotheses.do)
+is evidence of the authors' methods, not code used by the current build.
+Its item-level subgroup loop creates a variable named `temp` at line 79 but
+tries to sum `tempH...` at line 80. Those latter variables are neither created
+by the script nor present in the input dataset. Stata's `capture` suppresses
+the error, and the intended item-level subgroup means are not created.
+
+This does not affect the script's reported peer regressions: lines 185–188
+select the separate aggregate `H100`, `H200`, `H300` and `H400` leave-one-out
+means, whose temporary-variable names agree in lines 73–76. No current
+`dp-data` or `dp-distortions` builder executes this historical script or reads
+its missing item-level subgroup variables. The source is preserved unchanged;
+no production formula or output changes follow from this dormant error.
+
+A separate interpretation issue remains. Line 58 defines `educated` as being
+above the median of `X1`, but the deposited data label `X1` as “Political
+knowledge.” The working paper's peer-effects discussion instead describes
+education in terms of secondary schooling. These are distinct constructs;
+renaming or substituting one for the other is not a mechanical correction.
+The current Tanzania out-of-sample reader leaves education unavailable rather
+than adopting this variable as an education measure. A reviewed dictionary
+for the separate `school` field and clarification of the intended subgroup
+are needed before adding an education contrast. Neither the historical paper's
+estimates nor current source values are changed here.
 
 ### NH-02 — Event year corrected; attendance needs reconciliation
 
