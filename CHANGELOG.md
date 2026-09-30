@@ -2,6 +2,11 @@
 
 ## 0.4.3
 
+- Establish observed questionnaire presence from recorded source answers:
+  3,859 Tanzania baseline/follow-up records and 3,284 Denmark/Vermont source
+  forms. Preserve missing attitude values for DK/refusals, unknown empty
+  forms, literal interview timing, attendance, and all numerical scores.
+
 - Preserve the Climate publisher supplement and its PDF companion, including
   sample, weighting and attitude-comparison benchmarks.
 
