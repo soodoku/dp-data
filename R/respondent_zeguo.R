@@ -64,14 +64,45 @@ zeguo_attitudes <- function(survey, wave) {
   add_midpoint_imputed_variants(result, absent_form = absent)
 }
 
+zeguo_public_works <- function(survey, wave) {
+  stopifnot(wave %in% 1:2, length(wave) == 1L)
+  suffix <- if (wave == 1L) "" else "p"
+  fields <- paste0("d20", sprintf("%02d", c(8, 9, 25, 27)), suffix)
+  components <- purrr::map(fields, \(field) {
+    allowed <- switch(field, d2027 = c(0:10, 5.5),
+      d2008p = c(0:10, 6.5), 0:10
+    )
+    read_source_codes(survey, field, allowed)
+  })
+  value <- as_historical_float(rowMeans(as.data.frame(components),
+    na.rm = TRUE
+  )) / 10
+  value[is.nan(value)] <- NA_real_
+  absent <- if (wave == 2L) !zeguo_departure_observed(survey)
+  else rep(FALSE, nrow(survey))
+  add_midpoint_imputed_variants(
+    tibble::tibble(township_image_public_works = value),
+    absent_form = absent
+  )
+}
+
 build_zeguo_individual <- function(survey = read_poll_survey("zeguo-2005")) {
   before <- zeguo_knowledge_items(survey, "pre")
   after <- zeguo_knowledge_items(survey, "post")
   baseline <- zeguo_attitudes(survey, 1L)
   post <- zeguo_attitudes(survey, 2L)
+  historical_indices <- c(
+    "industrial_roads", "village_roads", "main_roads", "commercial_roads",
+    "wenchang_main_avenue", "other_parks", "township_image",
+    "cultural_heritage", "sewage"
+  )
   historical_baseline <- baseline |>
-    dplyr::select(dplyr::ends_with("_midpoint_imputed"))
+    dplyr::select(dplyr::all_of(paste0(
+      historical_indices, "_midpoint_imputed"
+    )))
   extremity <- rowMeans(abs(historical_baseline - .5))
+  baseline <- dplyr::bind_cols(baseline, zeguo_public_works(survey, 1L))
+  post <- dplyr::bind_cols(post, zeguo_public_works(survey, 2L))
   wave_names <- function(names, wave) {
     ifelse(endsWith(names, "_midpoint_imputed"),
       sub("_midpoint_imputed$", paste0("_t", wave, "_midpoint_imputed"), names),

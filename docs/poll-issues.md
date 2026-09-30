@@ -97,8 +97,9 @@ rules and selected waves against the available instruments, codebooks, original
 syntax and published benchmarks. Approved corrections are applied; unresolved
 choices and source gaps remain explicit. This is not a claim that every fielded
 questionnaire, raw-file merge, or variable in all 34 analytical polls has been
-verified. In particular, Zeguo's absence and definition findings and the utility
-attitude policies below remain open despite completed reconstruction.
+verified. Zeguo's departure absence and distinct Township Image definitions
+are now resolved as documented below. The utility attitude policies below
+remain open despite completed reconstruction.
 Substantive attitude corrections include UK Crime's post root-causes input,
 UK Election's tax question, UK–EU scale/nonanswer handling, UK Health's severity
 and input-order indices, Texas conservation/research inputs, Australia's
@@ -126,7 +127,7 @@ below retain the instrument evidence and numerical consequences.
 | NIC2 and BTP National | 18 | Nine pairs per poll checked against original versions and component rules. NIC2 security's explicitly selected complete-action rule is preserved with user approval; the older trade publication definition reproduces (NIC2-02). |
 | BTP Presidential Primaries | 3 | All main pairs checked; unconsidered responses excluded from substantive input counts without changing scores (PR-04). |
 | New Haven | 2 | Both main indices and the third summary index checked at Pre/Mid/Post; Mid follows the first discussion session, not arrival (NH-08). |
-| Zeguo | 9 | All indices checked against merged and raw source versions; original correction flags preserved. Unmatched departures and the Township Image alternative remain decisions (ZG-06–08). |
+| Zeguo | 9 | All nine historical indices checked against merged and raw source versions; original correction flags preserved. Departure absence corrected and both Township Image definitions retained under distinct names; source-version limits remain (ZG-06–08). |
 
 The table counts the main catalog once: the two Primaries catalog IDs share a
 source and are not two independent attitude studies. Evidence from a codebook
@@ -145,7 +146,7 @@ These are bounded next actions, not permission to recode:
 | NIC2 security | Resolved September 30 with user approval: preserve the complete four-action block explicitly marked “Use This One.” Retain the alternative and its comparison as evidence of a deliberate authored choice (NIC2-02). |
 | Climate discussion groups | ROOM alone yields 58 labels; ROOM × T2P_OPTION yields the original script's 105 groups. Forty-seven reused labels combine different schedules for 862 of 962 completers. Approved September 29: upstream now uses the original script’s room-plus-schedule identity (A1RC-05). |
 | Zeguo unmatched departures | Approved September 29 and implemented: 34 unmatched departures are missing in both attitude variants and post-dependent knowledge. All 233 historical people remain; observed blank quiz items still score zero. Do not borrow the unlinked NP32 block (ZG-07). |
-| Zeguo Township Image | Current Q25/Q31 and the paper's Q8/Q9/Q25/Q27 battery are different authored definitions. The alternative changes 161 baseline and 169 post scores, 160 extremities and all 233 repeated group summaries. Its 176-person means still do not exactly match the paper; preserve current values pending the definition decision (ZG-08). |
+| Zeguo Township Image | Both authored definitions are retained under distinct names: historical Q25/Q31 and optional public-works Q8/Q9/Q25/Q27. Plain and explicitly midpoint-imputed variants are available in respondent measures. Historical aggregates remain unchanged; the published means remain a source-version limitation (ZG-08). |
 | Published-result bridges | NIC2/BTP trade means and standard errors now reproduce under the older publication composite and cohort; current NAFTA-only scoring is preserved. BTPHE report percentages still need report-era sample/index/weight syntax (NIC2-02, BTPHE-06). |
 | Original source records | Bulgaria 2007 has no recovered respondent data. Other limits include Bulgaria Crime Version E syntax, earliest TE migration recoding, fielded-form versions, anonymous phase links, group rosters and Marousi's conflicting departure IDs. These require source evidence, not an arbitrary numerical choice. |
 | Analytical weights and downstream adoption | Supplied weights are retained but no universal weight is selected. Frozen downstream benchmarks still require explicit adoption and estimate comparisons; canonical baseline predictors do not define the full attitude inventory. |
@@ -7320,7 +7321,7 @@ absent, or authorize linking the two blocks by their shared storage row.
 
 ### ZG-08: Township Image has two authored definitions
 
-**Unresolved source-definition choice; no correction adopted.** The archived
+**Approved: retain both definitions under distinct names.** The archived
 `china_2005.r`, lines 129–130, explicitly selects `imaget1`/`imaget2`; the merged
 dictionary describes its image index as Q25 (Wenchang Park second stage) and Q31
 (Demonstrative Street). The current build reproduces that historical choice.
@@ -7332,8 +7333,9 @@ that four-project definition. Thus both versions are authored source evidence;
 the published title alone does not authorize silently replacing the historical
 construct.
 
-With the current float32(raw mean)/10 storage order and midpoint fallback
-preserved, adopting the published four-project definition would change 186
+The earlier replacement proposal was not adopted. With the current
+float32(raw mean)/10 storage order and midpoint fallback preserved, replacing
+the historical definition with the four-project definition would change 186
 baseline and 171 departure image values in the 269-person respondent layer,
 and 184 baseline extremities. In the main 233-person sample it would change
 161 `chi.t1att7`, 169 `chi.t2att7` and 160 `attextreme` values; `meanxtreme`,
@@ -7351,8 +7353,30 @@ paired observed means without midpoint substitution; they are not full-sample
 means. `published_index_comparison.csv` retains this discrepancy and the other
 nine-index comparisons. The appendix supports an alternative construct, while
 the unreproduced published means remain a separate source-version limitation.
-The user's choice between preserving the historical construct and adopting the
-published four-project definition is still required before a numerical change.
+The approved implementation instead retains `township_image_t1` and
+`township_image_t2` for the historical parks/street definition and adds
+`township_image_public_works_t1` and `township_image_public_works_t2` for the
+four-project definition. Each also has an explicitly named
+`_midpoint_imputed` variant. Plain scores average available components and
+remain missing when all components are missing; the imputed variants substitute
+0.5 only on an observed questionnaire. Both variants remain missing on the
+34 absent departure questionnaires. All four new measures are registered in
+`measure_definitions.csv` and exported through typed `respondent_measures`,
+adding 1,076 rows for the 269 source people. Registering the six previously
+unused source fields adds 1,614 raw-response rows without altering their values.
+
+The new scores use float32(raw mean)/10 and exactly reproduce the retained
+`image3t1`/`image3t2` summaries. This includes the documented merged-version
+ratings baseline p2/Q27=5.5 and departure p21/Q8=6.5; those specific field/wave
+exceptions preserve the authored source, not a blanket allowance for fractional
+category codes. Their original-versus-merged ambiguity remains documented in
+ZG-06. There are 45 all-component-missing baseline records and 26 observed
+all-component-missing departure records; only the explicitly imputed variants
+fill them. The historical nine-index attitude battery, extremity and group/poll
+summaries explicitly retain their existing definition. No historical values,
+source people, memberships or selected analysis attitudes are replaced. The
+optional public-works construct is available through respondent measures and
+is not silently added as a tenth index to downstream historical analyses.
 
 ### ZG-09: Preserve out-of-range knowledge codes as missing
 
