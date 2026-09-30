@@ -253,7 +253,16 @@ test_that("definitions match historical or approved values by IDs", {
   ]), 2L)
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "new-haven-2004"
-  ]), 132L)
+  ]), 132L + 12L)
+  new_haven_knowledge <- parity[
+    parity$poll_id == "new-haven-2004" & parity$legacy_field %in% c(
+      "t1knowcor", "t2know", "t1knowcor2", "t12knowcor", "t1knowrcor",
+      "t2knowr", "knowgain", "knowgain2", "logpk", "tobitpk",
+      "knowgainr", "knowgainr2"
+    ),
+  ]
+  expect_equal(nrow(new_haven_knowledge), 12L)
+  expect_equal(new_haven_knowledge$missingness_differences, rep(1L, 12L))
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "zeguo-2005"
   ]), 1L)

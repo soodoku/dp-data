@@ -101,7 +101,12 @@ test_that("resolved polls reproduce historical fields", {
           "minority", "pminority", "nh.t1endexp", "nh.t1manvol",
           "nh.t1volloc", "nh.t2endexp", "nh.t2manvol", "nh.t2volloc",
           "attextreme", "attextreme2", "meanxtreme", "avgsd",
-          "avgsd2", "genvar", "grpgain2"
+          "avgsd2", "genvar", "grpgain2", "t2know", "t2knowr",
+          "t1knowcor", "t1knowcor2", "t12knowcor", "t1knowrcor",
+          "knowgain", "knowgainr", "knowgain2", "knowgainr2",
+          "logpk", "tobitpk", "meant1knowcor", "meant1knowcor_ind",
+          "meant1knowrcor", "meant2know", "t1knowlevelcor",
+          "t1knowlevelrcor", "t2knowlevel", "grpgain", "grpgainr", "loggain"
         ),
         zeguo = c(
           "chi.t1att2", "chi.t1att5", "chi.t2att3", "chi.t2att5",

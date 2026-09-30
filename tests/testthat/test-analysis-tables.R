@@ -266,13 +266,13 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   expect_equal(
     sum(absent_items),
     414L + (911L - 387L) * 11L + 2246L * 5L + 43L * 7L + 10L * 5L +
-      34L * 4L + 599L * 9L
+      34L * 4L + 599L * 9L + 8L
   )
   expect_true(all(
     responses$poll_id[absent_items] %in%
       c("btp-general-election-2004", "nic-1996", "swepco-1996", "wtu-1996",
         "btp-online-primaries-2004", "california-whats-next-2011",
-        "zeguo-2005", "uk-monarchy-1996")
+        "zeguo-2005", "uk-monarchy-1996", "new-haven-2004")
   ))
   expect_true(all(is.na(responses$correct[absent_items])))
 })
@@ -304,7 +304,12 @@ test_that("historical panel scores match the existing aggregate export", {
       legacy, by = c("dpnum", "historical_respondent_id" = "caseid"),
       relationship = "many-to-one"
     )
-  expect_equal(nrow(panel), 2L * nrow(legacy))
+  unpaired <- legacy[is.na(legacy$t1know) | is.na(legacy$t2know), ]
+  expect_equal(unpaired$dpnum, 12)
+  expect_equal(unpaired$caseid, 910042)
+  expect_equal(nrow(panel), 2L * (nrow(legacy) - nrow(unpaired)))
+  expect_false(any(panel$poll_id == "new-haven-2004" &
+                     panel$historical_respondent_id == 910042))
   expect_equal(
     panel$score[panel$wave == "t1"],
     panel$t1know[panel$wave == "t1"], tolerance = 1e-7
