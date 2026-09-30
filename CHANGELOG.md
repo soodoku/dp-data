@@ -29,6 +29,10 @@
 - Retain 2,299,630 additional raw questionnaire responses used by the presence
   rules; every existing raw response and reviewed measure value is unchanged.
 
+- Apply 152 codebook-backed CPL nonanswer declarations through a shared
+  field-specific registry. Preserve substantive Other codes and dollar amounts;
+  raw values and reviewed scores remain unchanged.
+
 ## 0.4.1
 
 - Preserve additional poll source versions and 13 unique historical scripts as

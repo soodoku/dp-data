@@ -142,7 +142,7 @@ test_that("NIC2 uses raw questions and stable identities", {
   raw$sex[1] <- 2
   expect_error(build_nic2_individual(raw), "Unreviewed source codes in sex")
   expect_error(build_nic2_individual(survey[, names(survey) != "fp2a_a"]),
-    "Missing source field: fp2a_a"
+    "Missing questionnaire-presence fields: fp2a_a"
   )
 })
 

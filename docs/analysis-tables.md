@@ -483,3 +483,10 @@ In `respondent_measures`, `n_source_fields` counts these declared dependencies;
 indicators. Neither field is the number of knowledge items, a quiz denominator,
 or a standalone attendance indicator. Adding the explicit dependencies changes
 these provenance counts while leaving the reviewed measure values unchanged.
+
+`metadata/source_nonanswer_rules.csv` supplements source dictionaries where
+retained instruments establish field-specific codes that the original data
+file does not label. Each rule retains its code, reason and source line.
+`source_responses` keeps the raw value while distinguishing these documented
+nonanswers from answered values. A code is never missing merely because it is
+99 or 999 in another question.

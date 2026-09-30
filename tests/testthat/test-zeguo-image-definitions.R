@@ -96,15 +96,29 @@ test_that("public-works waves and variants reach typed respondent measures", {
       inputs$definition_id == definition$definition_id
     ]
     suffix <- if (definition$source_waves == "T1") "" else "p"
-    expect_setequal(fields, paste0("d20", sprintf("%02d", c(8, 9, 25, 27)),
-                                   suffix))
+    score_fields <- paste0("d20", sprintf("%02d", c(8, 9, 25, 27)), suffix)
+    required <- score_fields
+    if (definition$source_waves == "T2") {
+      form <- questionnaire_form_contract("zeguo-2005")
+      form <- form[form$original_wave == "T2", ]
+      required <- union(required, c(form$fields[[1]], form$auxiliary[[1]]))
+      expect_length(required, 36L)
+    }
+    expect_setequal(fields, required)
     rows <- tables$respondent_measures |>
       dplyr::filter(.data$definition_id == definition$definition_id)
     expect_equal(nrow(rows), 269L)
     expect_identical(rows$respondent_id, tables$people$respondent_id)
     expect_identical(rows$value_numeric, built[[definition$measure_id]])
-    expect_true(all(rows$n_source_fields == 4L))
+    expect_true(all(rows$n_source_fields == length(required)))
+    observed <- tables$source_responses |>
+      dplyr::filter(.data$source_column %in% required) |>
+      dplyr::summarise(
+        n = sum(.data$response_status == "answered"),
+        .by = "respondent_id"
+      )
     expect_equal(rows$n_observed_fields,
-                 as.integer(rowSums(!is.na(survey[fields]))))
+                 as.integer(observed$n[match(rows$respondent_id,
+                                             observed$respondent_id)]))
   }
 })

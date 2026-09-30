@@ -9153,3 +9153,32 @@ respondent-measure keys and numeric values are unchanged by this repair;
 96,984 input-count cells and 66,266 observed-input-count cells now reflect the
 expanded declarations. All seventeen analysis tables and the wide aggregate
 are byte-identical to the reviewed pre-refactor candidate.
+
+
+### CPL-12: Source nonanswers in the expanded questionnaire export
+
+The complete form dependencies exposed source fields beyond the previous
+22-field CPL policy subset. The retained `data/cpl-1996/codebook.txt`
+explicitly identifies 99 DK/refused, 999 missing/DK/refused, and some 98
+not-applicable responses by field. `metadata/source_nonanswer_rules.csv`
+now retains 152 declarations across 138 original fields with exact codebook
+line anchors: 111 DK, ten refusal, and 31 combined or not-applicable codes.
+The shared raw-response classifier consumes these declarations for any poll;
+it no longer relies on the old CPL-only policy-field list.
+
+This is deliberately not a blanket rule for 99 or 999. `READMAT == 99` is
+substantive Other, and `PAYWND2 == 99` is an ordinary dollar amount; both
+remain answered. Derived `KNOWA:G1/2 == 0` flags combine incorrect answers and
+DK, so those fourteen flags are excluded from the nonanswer registry. Their
+incorrect-answer values cannot be classified as DK from that combined label.
+
+The new rules correct 517 source-response statuses across 49 field/code
+combinations and decrease 852 observed-input counts. Original numeric/text
+responses and every reviewed numeric measure are unchanged. These are source
+annotation and completeness corrections, not revisions to knowledge keys or
+attitude scoring. Field-specific checks reproduce the codebook frequencies;
+`IM1CPL2` has two printed-frequency exceptions at lines 1336–1337: printed
+98 NA has three cases versus zero in the raw file, and printed 99 DK has one
+versus three. The printed block also contains a malformed cumulative-frequency
+entry. Preserve the explicit source meanings and actual raw counts; do not
+invent observations or change raw codes to reconcile the printing.

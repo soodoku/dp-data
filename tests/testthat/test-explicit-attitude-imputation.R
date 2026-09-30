@@ -40,6 +40,9 @@ test_that("all reconstructed plain attitudes retain all-missing inputs", {
       dplyr::pull(source_column) |>
       unique()
     expect_true(length(columns) > 0L, info = poll)
+    if (poll == "zeguo-2005") {
+      columns <- grep("^d20", columns, value = TRUE)
+    }
     survey <- read_poll_survey(poll)
     survey[columns] <- NA_real_
     built <- if (poll %in% utilities) {

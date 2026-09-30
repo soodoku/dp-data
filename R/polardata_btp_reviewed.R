@@ -52,13 +52,6 @@ reviewed_us_legacy_values <- function(measures) {
   )
 }
 
-reviewed_peer_component <- function(value, group, n_items) {
-  component <- as_historical_float(observed_peer_mean(value, group) / n_items)
-  component[value %in% 1] <- 0
-  component[is.na(value)] <- NA_real_
-  component
-}
-
 reviewed_us_group_gain <- function(before, after, group, knowledge_joint) {
   joint <- before * after
   components <- purrr::map(seq_len(ncol(joint)), function(item) {
