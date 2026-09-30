@@ -4641,6 +4641,19 @@ verified group roster is attached. This is a missing verified linkage, not proof
 that discussions had no groups. Search original session materials before making
 that assertion; do not substitute a single synthetic group.
 
+**Roster search, September 30, 2026.** The vault source
+`cdd/data/Vermont/data/VT-All (Rescaled).sav` contains `GROUPID`, but every
+one of its 750 values is system missing, including all 146 `PART == 1`
+respondents. Neither the maintained survey nor the retained `vt.rdata` object
+supplies a populated group identifier. `SHOUSE` identifies the polling company
+(NSON or OSR), and `TYPE` distinguishes long/short questionnaires and
+nonparticipants; neither is a discussion group. The final report (PDF page 10)
+states that participants were randomly assigned to thirteen groups. The exit
+questionnaire (final-report PDF page 32) has participant-number and group-number
+boxes, but the available copy is blank. Recover completed questionnaire headers
+or a `CASEID` to group-number roster. Keep all 146 current group assignments
+missing until that linkage is recovered.
+
 ### VT-03: The question catalog inherited incorrect choice labels (corrected)
 
 The baseline SAV dictionary attaches efficiency-program choices to `Q77`, the
@@ -5136,6 +5149,34 @@ end-of-event measurements. Both the source and arrival build are public and
 require no local vault; X-02 gives the report comparisons and sample boundary.
 
 
+### DK-07: Discussion-group linkage is still missing after source search
+
+The maintained 359-person departure cohort has no verified group assignments.
+The six retained SAV waves, six serialized survey objects (including the
+1,702-row, 510-column merged object), and assembly list were searched for a
+respondent-to-group linkage. The assembly list identifies respondents with
+`DELNR` but supplies no group roster. Ratings of group discussion and moderators
+are substantive responses, not identifiers. Municipality, county and interview
+administration fields likewise cannot establish discussion-group membership.
+
+Hansen's July 2003 dissertation draft is now preserved as
+`data/denmark-euro-2000/papers/deliberative-democracy-opinion-formation-draft-2003.pdf`.
+PDF page 180 (chapter page 6) reports twenty discussion groups. The separate
+technical appendix is retained as
+`data/denmark-euro-2000/reports/deliberative-democracy-opinion-formation-appendices.pdf`;
+its PDF page 80 (printed page 373) shows a moderator questionnaire headed
+`Gruppe-bogstav` (group letter), but no completed respondent-to-letter roster.
+The draft is Denmark's empirical study, not a cross-poll inventory; both
+original PDFs therefore belong in Denmark's folder. The appendix's PDF creation
+metadata dates that separate file version to May 2004; do not silently treat
+it as the identical July 2003 draft version. The wider search covered 298
+source schemas, the vault inventory, authored scripts and the historical group
+aggregate data; none supplied the missing linkage for Denmark or Vermont.
+Recover a `DELNR` to group-letter roster or completed assignment records. Retain
+all current Denmark group identifiers as missing; do not infer groups from
+administrative fields or manufacture one group for the whole poll.
+
+
 ### DK-06: Follow-up instrument, keys and participant identities verified
 
 The preserved Danish arrival, departure, control and follow-up questionnaires
@@ -5546,6 +5587,40 @@ programming and simple Word formats, plus SPSS/Stata/CSV data. The precise
 missing evidence is therefore a delivered questionnaire or labeled source
 file, rather than a claim that the study never documented these questions.
 No request has been sent. Do not borrow Q19–Q24’s labels for Q17/Q18.
+
+**September 30: code 98 resolved for initial and immediate-exit Q17/Q18.**
+The [detailed results](../data/a1r-climate-2021/reports/climate_results.pdf),
+PDF p.9, give the questions as which party controls the majority in the Senate
+(Q17) and House (Q18). Their distributions explicitly distinguish “NA.” from
+correct and incorrect responses. Among the 962 `P_DELEGATE == 1` respondents,
+using `WEIGHT1`, excluding code 98 at either interview uniquely reproduces both
+the paired means and the reported NA percentages; none of the other recorded
+codes (1, 2, 3 or 77) reproduces these quantities.
+
+| Item | Paired N after excluding 98 | Initial mean | Exit mean | Initial / exit NA percentages |
+| --- | ---: | ---: | ---: | --- |
+| Q17, Senate | 949 | 0.672462 | 0.692993 | 0.807207 / 0.023018 |
+| Q18, House | 948 | 0.751737 | 0.798802 | 1.168353 / 0.230697 |
+
+These round to the report's `.672/.693` and `.752/.799` means and
+`.8/.0` and `1.2/.2` NA percentages. The mapping from code 98 to the report's
+NA category is inferred from this joint numerical match, not from another
+question's code labels. The source does not establish whether these particular
+responses were skipped or refused, so the export uses `unclassified_nonanswer`,
+not `dk`, and preserves the report label `NA.`. The four field-specific rules
+cover 255 cells in each selected-item and phase-item table: `Q17` 92, `Q18` 134,
+`T2Q17` 13 and `T2Q18` 16. Previously their reason was `unreviewed_code` and
+source label was missing. Every raw code and correctness value remains unchanged;
+observed-form nonanswers still score zero under the approved scoring rule.
+No respondent, score denominator or analysis sample changes.
+
+The follow-up fields `T3Q17/T3Q18` retain their existing classification,
+including their 40 code-98 responses. Code 77's exact offered wording and the
+substantive option labels also remain unavailable. A renewed inventory confirms
+that the replication deposit's original data file is CSV, not a labeled
+SPSS/Stata file; a search of the usable vault's 1,364 files and three ZIP
+inventories found no additional Climate 2021 source. The required fielded Word questionnaires
+remain the evidence needed to resolve those specific labels.
 
 ### A1RC-04 — reproduce the climate report's attitude ratings (checked)
 
@@ -6079,6 +6154,42 @@ across 1,275 source records remain identical. No other source opts into this
 encoding repair. The canonical item catalog gains seven definitions and the
 phase-item table gains 26,775 responses; other analytical outputs are unchanged.
 
+### MAR-04: Mayor-performance responses lack verified scale instructions
+
+The source attitude export retains 271 observed responses to two mayor-performance
+fields: 143 arrival answers in `AR_Q21` and 128 departure answers in `F_Q21`.
+Both fields are labeled “evaluation of mayor’s performance” but have no source
+value labels. Observed values range from 0 to 100; their raw means are 52.02797
+and 49.35938. Raw answers remain available. Their interpreted numeric and
+normalized values remain missing because the source does not establish the
+endpoints, direction or nonanswer codes.
+
+The retained [English questionnaire](../data/marousi-2006/questionnaires/marousi-questionnaire.pdf),
+page 4, does not establish this coding. Its Q19 asks about the mayor’s performance
+using five substantive positive-to-negative categories, plus nonanswers. A
+separate Q23 thermometer starts on page 4 and continues on page 5; its mayor
+component corresponds to `AR_Q22_5` and `F_Q22_5`. These are different source
+answers: Q21 disagrees with the adjacent mayor thermometer in 61 of 131 observed
+arrival pairs and 52 of 117 departure pairs. The report’s page 4 and the paper’s
+PDF page 16 establish thermometer scales for candidate ratings, not these Q21
+performance fields. Do not transfer their scale merely because both fields
+contain numbers between 0 and 100.
+
+A source-version check joined all 1,275 people by original telephone ID
+`P_Q1_0`. The five archived files `data_all_final.dta`, `data_all_final.sav`, `data_all_final2.sav`, `data_all_final_alice.dta`
+and `data_issue_priority.dta` under `vault/cdd/data/Greece/data/` agree exactly
+with the retained source on
+both Q21 fields: zero value or missingness differences. None supplies the
+missing labels, and the inspected authored analyses do not establish their
+recoding. This is a measurement-documentation gap, not evidence that the
+responses themselves are corrupt.
+
+Preserve the current unclassified status and original answers. The evidence
+needed to interpret these 271 answers is the actual arrival/departure Q21
+wording and coding instructions. A thermometer interpretation is plausible,
+but the observed distribution alone does not establish it. This review does
+not reopen the sixteen departure-ID disagreements retained by user instruction.
+
 ### TZ-01 — group assignment does not by itself establish treatment eligibility
 
 The retained `participants.dta` has 2,225 rows: 2,002 labelled citizens, 121
@@ -6097,13 +6208,38 @@ section 3.2, says 401 were invited and 370 complied in 25 groups. Its 370
 therefore matches the intersection of the assignment and group files, while
 the extra group row has no verified treatment-arm status.
 
-The current `dp-distortions` out-of-sample reader explicitly retains all 371
-grouped rows, including the one with missing assignment. A future canonical
-upstream membership table should keep the literal group record and the
-assignment status as separate fields. Determine whether `240301` was a late
-attendee, a nonrandom participant, or an erroneous roster entry from the
-original event and randomization records before changing the analysis sample.
-Do not infer invitation or eligibility solely from a group number.
+The original analytical cohort is now established by the retained
+[peer and moderator analysis script](../data/tanzania-2015/scripts/replication-sub-hypotheses.do),
+lines 9–12. It first selects `zdelib == 1` and then matches `HHID` to the group
+file with `unmatched(none)`. That rule includes 370 people and excludes
+`240301`. The original script therefore does not treat every recorded group
+assignment as sufficient evidence of randomized-treatment eligibility.
+
+The deposited record remains useful source evidence. All 109 baseline `H` and
+`X` wave fields are missing for `240301`; 43 corresponding follow-up fields
+are observed, including all 22 retained policy items and all nine knowledge
+components. Its complete follow-up `H` response vector is unique among the
+citizens, so it is not an exact duplicate of another deposited respondent.
+Neither that uniqueness nor its two group numbers establishes actual attendance
+or supplies a missing randomization record.
+
+The current `dp-distortions` out-of-sample reader deliberately retains all 371
+rostered people. This is a different cohort from the original script's 370.
+Restricting to the latter would change round-one group 24 from 15 to 14 people
+and round-two group 13 from 14 to 13; the other 48 group-episode sizes would
+not change. Since the disputed person's baseline is entirely missing, all
+baseline group means, baseline observed-peer means and paired item samples
+would remain unchanged. Their 22 observed follow-up ratings affect 22 group-item
+means: removing this person would change those means by between −0.024603 and
++0.058608 on the normalized 0–1 scales. Among the 370 eligible people, 294
+follow-up leave-one-out item means across 27 people would change, by between
+−0.028388 and +0.068376. These are cohort comparisons, not adopted corrections.
+
+All 371 source roster rows and all answers remain preserved. Use a separately
+named eligibility rule when reproducing the authors' randomized cohort; do not
+delete the extra source record or infer attendance from its group number.
+Whether `240301` was a late attendee, a nonrandom participant or an erroneous
+roster entry still requires the original event and randomization records.
 
 ### TZ-02 — retain the observed sex field in the participant export (corrected)
 
@@ -6193,7 +6329,7 @@ is imposed on this standardized index.
 
 ### TZ-04 — panel membership requires both selected measurements
 
-Source `HHID == 240301`, canonical respondent `1323`, has missing baseline
+Source `HHID == 240301`, formerly canonical respondent `1323`, has missing baseline
 `H600` and observed follow-up `H601`, but `analysis_participants.panel` was true.
 The user-approved rule requires both selected measurements, reducing the panel
 count from 1,858 to 1,857 while retaining all 2,002 people and the observed
@@ -6203,6 +6339,12 @@ The shared paired-analysis rule is distinct from deleting a respondent from the
 source data. The same [review script](../scripts/review_tanzania_knowledge.R)
 checks this identity and records the old and corrected panel counts in the
 [audit summary](../audit/corrections/tanzania-2015/summary.csv).
+
+The canonical participant and score tables now use native `HHID` values as
+respondent IDs; this person is therefore `240301` in current outputs. Physical
+source row 1323 remains available, and the archived correction CSVs retain the
+row-based identifiers used when those comparisons were recorded. The identity
+change preserves every score, panel flag and source person; see TZ-07.
 
 ### TZ-05 — borrowing uses five categories; include it with the other policy items (corrected)
 
@@ -6266,6 +6408,85 @@ mean directional polarization from −0.038309424 to −0.039400307; absolute
 polarization from −0.007626856 to −0.005084460; and gender domination from
 −0.005371478 to −0.007219525. These are item-set sensitivity comparisons,
 not new causal estimates. Analytical weighting remains undecided (X15).
+
+### TZ-06 — original subgroup syntax and education label need separate review
+
+The newly retained [original subgroup script](../data/tanzania-2015/scripts/replication-sub-hypotheses.do)
+is evidence of the authors' methods, not code used by the current build.
+Its item-level subgroup loop creates a variable named `temp` at line 79 but
+tries to sum `tempH...` at line 80. Those latter variables are neither created
+by the script nor present in the input dataset. Stata's `capture` suppresses
+the error, and the intended item-level subgroup means are not created.
+
+This does not affect the script's reported peer regressions: lines 185–188
+select the separate aggregate `H100`, `H200`, `H300` and `H400` leave-one-out
+means, whose temporary-variable names agree in lines 73–76. No current
+`dp-data` or `dp-distortions` builder executes this historical script or reads
+its missing item-level subgroup variables. The source is preserved unchanged;
+no production formula or output changes follow from this dormant error.
+
+The education interpretation needs both documentary and numerical evidence.
+Line 58 defines `educated` as being above the median of `X1`. The deposited
+label calls X1 “Political knowledge,” whereas the preanalysis plan (PDF pages
+6–7) defines an education/general-knowledge index containing twelve factual
+questions, literacy and highest grade completed. The final report (PDF page 16,
+printed page 8) also describes knowledge/literacy and years of schooling. The
+plan is evidence of intended design; it does not establish the executed formula.
+
+Independent reconstruction establishes what the deposited X1 actually contains.
+For all 2,001 citizens with observed X1, standardize `X1010:X1120` against the
+1,000 baseline controls, average each person's available standardized components,
+and standardize that mean against the same controls. This twelve-fact-question
+calculation agrees with X1 to within 8.9e−16. Neither literacy `X1130` nor
+schooling `X1140` contributes. Thus the historical median flag separates people
+on a factual-knowledge index; it is not a verified schooling contrast.
+
+Those twelve factual components also retain 9,688 code −99 answers labeled
+“DON'T KNOW” and 151 code −96 answers labeled “OTHER” or “OTHER (SPECIFY)” as
+numbers in the deposited index, affecting 1,952 people. These are separate
+baseline questions from the nine policy-knowledge components corrected in TZ-03.
+As a diagnostic only, mapping these negatives to zero and recalibrating changes
+56 of the 370 original peer-cohort median classifications. Both versions classify
+185 as above the median. This demonstrates a measurement difference, not an
+approved new score or a revision of the historical paper.
+
+A schooling candidate is retained in `school`: 2,001 observed categorical codes
+match the recovered `L_SelfEducGrades` dictionary's categories. The plan identifies
+highest grade completed as source question `s4q2`; the report's Q14 appears on
+PDF page 73 (printed page 65). However, the dictionary is attached to transformed
+`X1140`, whose values range from 0 to 22 rather than the original grade codes,
+and the cleaning scripts that would establish the full lineage were withheld.
+Do not treat X1140 as the dictionary's raw categories or claim a verified conversion
+to years of schooling. Adult education and supplementary-course categories need
+explicit treatment before imposing an educational rank or median flag.
+
+The current out-of-sample reader leaves education unavailable, so no current
+education contrast changes. Preserve the raw school and knowledge evidence;
+adding a schooling contrast or changing the deposited general-knowledge index
+requires a separate reviewed decision. Source values and historical estimates
+remain unchanged here.
+
+### TZ-07 — use native household IDs consistently across typed exports
+
+The source has 2,225 unique, nonmissing `HHID` values. Tanzania's attitude and
+weight exports already use those native IDs, whereas the canonical knowledge
+exports formerly numbered the 2,002 citizens from 1 to 2,002 after filtering.
+A valid bridge was available through `source_row`: the citizens occupy the
+first 2,002 physical source rows. The previous numerical joins were therefore
+recoverable, but a direct join on respondent ID did not identify the same people.
+
+The canonical selected and phase participant/score tables now use `HHID` as
+`respondent_id` and identify this as `source-id` identity. Physical `source_row`
+is assigned before filtering to citizens and retained even when input rows are
+reordered. Historical comparison IDs remain unchanged in archived audit files;
+no historical respondent ID is invented for this source.
+
+This changes 12,012 identifier cells across four canonical tables and 4,004
+`identity_basis` cells in the two participant tables. Every score, missing value,
+participant, assignment, weight and group remains unchanged. Native IDs now join
+directly to the citizen attitude and weight records for all 2,002 people. The
+review script writes fresh comparisons to a temporary directory unless an
+explicit `--output-dir` is supplied, preserving the archived row-ID comparisons.
 
 ### NH-02 — Event year corrected; attendance needs reconciliation
 
@@ -9185,6 +9406,18 @@ preserved scripts, their loose vault copies were also deleted following SHA256
 checks against both the tracked poll files and merged commit
 `e92b9aa8e5aef75488ecda2887edae9a58cc9489`. The total is194 removed files.
 Unmatched scientific files remain.
+
+After publishing v0.4.2 at commit
+`336f88a940d77e5a714e7521cac7343298ece608`, nine further exact vault
+copies were removed: Australia's codebook, two California index drafts,
+Denmark's wave crosswalk and four questionnaires, and Northern Ireland's
+version-16 argument-coding guide. Every deletion followed byte and SHA256
+checks against both the tracked poll-folder original and the downloadable
+release; all eight Word originals have readable PDF companions. The public
+archive rebuilt all 57 output files byte-for-byte without Git history or the
+vault. This brings the cleanup described here to 203 files. Unique scientific
+sources, unresolved source versions and originals not yet preserved publicly
+remain in the vault.
 
 
 ### Shared full-questionnaire and peer-denominator correction, September 30, 2026

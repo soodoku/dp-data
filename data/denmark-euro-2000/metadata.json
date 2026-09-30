@@ -203,6 +203,26 @@
       "local_artifact_id": "material-63b8bfe9d098fd38-denmark-euro-2000",
       "accessed": "2026-09-24",
       "notes": "Public source downloaded 2026-09-24; SHA-256 63b8bfe9d098fd38f3fe9695b9ea4eea0d7b188c28e6cf73db8866a08f14f2a1"
+    },
+    {
+      "reference_id": "denmark-euro-2000-local-material-4527d0767beda3fa-denmark-euro-2000",
+      "poll_id": "denmark-euro-2000",
+      "kind": "paper",
+      "title": "Kasper M. Hansen: Deliberative Democracy and Opinion Formation (2003 dissertation draft)",
+      "url": null,
+      "local_artifact_id": "material-4527d0767beda3fa-denmark-euro-2000",
+      "accessed": "2026-09-30",
+      "notes": "Title page explicitly dates this PhD-dissertation draft July 1, 2003. General theory frames an empirical analysis of Denmark Euro 2000; this is poll-specific evidence, not a cross-poll source collection or the final published book. Chapter 8 section 8.2, PDF page 180 (chapter page 6), establishes twenty randomly composed discussion groups of 18-20 people. No participant-to-group assignments are supplied."
+    },
+    {
+      "reference_id": "denmark-euro-2000-local-material-4d85250bd8691408-denmark-euro-2000",
+      "poll_id": "denmark-euro-2000",
+      "kind": "event-report",
+      "title": "Denmark Euro: dissertation questionnaires and technical appendices",
+      "url": null,
+      "local_artifact_id": "material-4d85250bd8691408-denmark-euro-2000",
+      "accessed": "2026-09-30",
+      "notes": "Denmark-specific companion appendices with Danish recruitment, arrival, departure, follow-up and control questionnaires; an English recruitment translation; moderator and expert questionnaires; descriptive tables and the event program. Annotated aggregate response percentages and additional instruments make this distinct from the standalone questionnaire DOCs. PDF page 80 (printed 373) asks moderators for a group letter (Gruppe-bogstav), but that field is blank and no participant roster is included. The table of contents and body pagination differ; cite physical PDF pages alongside printed numbers. Retained as its own archived version; no assertion that it is identical to every separately retained instrument. PDF creation metadata dates the appendix May 3, 2004; it is a later archived version than the July 2003 dissertation draft."
     }
   ],
   "material_coverage": [
@@ -722,6 +742,36 @@
       "publication_status": "published",
       "notes": "Contemporaneous independent control telephone interview, not the participant follow-up. Questions11–17 supply the seven factual items; question18 party recommendations. Original archived Danish-language questionnaire; retained as version evidence alongside source labels and the questionnaire crosswalk, not proof of a fielded-version identity by filename alone. Original cdd-data-20260923 bundle SHA256 5dde554c16bd4bfdea5bf55962c3652b198df19d67646ad9d25df423d423992a. Generated PDF companion; original DOC remains byte-exact. See document_previews.csv for text and visual checks.",
       "relative_path": "questionnaires/contemporaneous-control-questionnaire-danish.pdf"
+    },
+    {
+      "artifact_id": "material-4527d0767beda3fa-denmark-euro-2000",
+      "poll_id": "denmark-euro-2000",
+      "artifact_type": "paper",
+      "title": "Kasper M. Hansen: Deliberative Democracy and Opinion Formation (2003 dissertation draft)",
+      "location": "data/denmark-euro-2000/papers/deliberative-democracy-opinion-formation-draft-2003.pdf",
+      "source_id": "material-4527d0767beda3fa",
+      "original_archive_path": "data/Denmark/Deliberative Democracy and Opinion Formation.pdf",
+      "sha256": "4527d0767beda3fa400cf9bab97fb34a31d3df0902f6ed564db0f78367c7d1b2",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Title page explicitly dates this PhD-dissertation draft July 1, 2003. General theory frames an empirical analysis of Denmark Euro 2000; this is poll-specific evidence, not a cross-poll source collection or the final published book. Chapter 8 section 8.2, PDF page 180 (chapter page 6), establishes twenty randomly composed discussion groups of 18-20 people. No participant-to-group assignments are supplied. Original cdd-data-20260923 bundle SHA256 5dde554c16bd4bfdea5bf55962c3652b198df19d67646ad9d25df423d423992a; original archived PDF preserved byte-exact.",
+      "relative_path": "papers/deliberative-democracy-opinion-formation-draft-2003.pdf"
+    },
+    {
+      "artifact_id": "material-4d85250bd8691408-denmark-euro-2000",
+      "poll_id": "denmark-euro-2000",
+      "artifact_type": "event-report",
+      "title": "Denmark Euro: dissertation questionnaires and technical appendices",
+      "location": "data/denmark-euro-2000/reports/deliberative-democracy-opinion-formation-appendices.pdf",
+      "source_id": "material-4d85250bd8691408",
+      "original_archive_path": "data/Denmark/Appendix-web.pdf",
+      "sha256": "4d85250bd86914080d18af8bec90ac8786730f52fc34b919bd2e6de0a46a5550",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Denmark-specific companion appendices with Danish recruitment, arrival, departure, follow-up and control questionnaires; an English recruitment translation; moderator and expert questionnaires; descriptive tables and the event program. Annotated aggregate response percentages and additional instruments make this distinct from the standalone questionnaire DOCs. PDF page 80 (printed 373) asks moderators for a group letter (Gruppe-bogstav), but that field is blank and no participant roster is included. The table of contents and body pagination differ; cite physical PDF pages alongside printed numbers. Retained as its own archived version; no assertion that it is identical to every separately retained instrument. Original cdd-data-20260923 bundle SHA256 5dde554c16bd4bfdea5bf55962c3652b198df19d67646ad9d25df423d423992a; original archived PDF preserved byte-exact. PDF creation metadata dates the appendix May 3, 2004; it is a later archived version than the July 2003 dissertation draft.",
+      "relative_path": "reports/deliberative-democracy-opinion-formation-appendices.pdf"
     }
   ],
   "document_previews": [

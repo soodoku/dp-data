@@ -154,8 +154,9 @@ discussion group when observed; `cluster_id` is the inference cluster and is a
 village in Tanzania. Missing values mean the fact was not established in the
 available source, not that it did not occur. `panel` requires both selected
 comparison scores and retains the original sample restrictions. It does not
-define eligibility for every phase contrast. Tanzania respondent `1323`
-(`HHID == 240301`) has only a follow-up score and is outside the paired panel;
+define eligibility for every phase contrast. Tanzania respondent `240301`
+(native `HHID`; row identifier `1323` in the earlier export) has only a
+follow-up score and is outside the paired panel;
 the person and observed follow-up remain. The corrected panel has 1,857 people.
 For Cor–Sood respondents, group IDs come from the reviewed
 `output/memberships.parquet` on the same `(poll_id, respondent_id)` key. That

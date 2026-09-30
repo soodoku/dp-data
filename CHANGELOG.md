@@ -1,5 +1,28 @@
 # Changelog
 
+## Unreleased
+
+- Preserve Denmark's July 2003 dissertation draft and separate technical
+  appendix in its poll folder, with their distinct source versions recorded.
+
+- Document the missing Denmark and Vermont discussion-group rosters after
+  searching source surveys, serialized objects, reports and assignment forms.
+- Remove nine exact vault duplicates verified against the published v0.4.2
+  poll-folder originals; retain unique and unresolved scientific sources.
+
+- Use Tanzania's original household identifiers consistently across canonical
+  knowledge, attitude and weight tables. Preserve physical source rows, all
+  scores and samples, and the IDs in frozen historical comparisons.
+- Identify code 98 as an unclassified nonanswer for four Climate baseline/exit
+  knowledge fields using reproduced report means and nonanswer percentages.
+  Raw answers, scores, samples and follow-up classifications are unchanged.
+- Preserve Tanzania's original peer-analysis script and document its 370-person
+  eligible cohort separately from the 371 source roster records. Establish the
+  deposited general-knowledge index's actual components without adopting it as
+  education or changing current numerical outputs.
+- Document Marousi's mayor-performance scale gap using five source versions
+  and the retained questionnaire; preserve all 271 raw responses.
+
 ## 0.4.2
 
 - Restore Northern Ireland's literal argument-coder labels. CSV type inference

@@ -68,15 +68,18 @@ analysis_tanzania_knowledge <- function(survey) {
 }
 
 analysis_tanzania_people <- function(survey) {
-  stopifnot(all(is.na(survey$male) | survey$male %in% 0:1))
+  stopifnot(
+    all(is.na(survey$male) | survey$male %in% 0:1),
+    "source_row" %in% names(survey), !anyNA(survey$source_row),
+    !anyDuplicated(survey$source_row), all(survey$source_row >= 1L)
+  )
   scores <- analysis_tanzania_knowledge(survey)
   dplyr::bind_cols(survey, scores) |>
-    dplyr::mutate(source_row = dplyr::row_number()) |>
     dplyr::transmute(
       poll_id = "tanzania-2015", source_dataset = "control",
-      respondent_id = as.character(source_row), source_row,
+      respondent_id = as.character(HHID), source_row,
       historical_respondent_id = NA_character_,
-      identity_basis = "filtered-file-row", arm = dplyr::case_when(
+      identity_basis = "source-id", arm = dplyr::case_when(
         zdelib == 1 ~ "deliberation", zoinfo == 1 ~ "information",
         zspill == 1 ~ "spillover", z == 0 ~ "control", TRUE ~ "other"
       ),
