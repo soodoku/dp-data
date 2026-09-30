@@ -64,7 +64,15 @@ test_that("NIC identifiers and generated flags do not establish an interview", {
   scores <- phase_presence_scores |>
     dplyr::filter(poll_id == "nic-1996", source_dataset == "historical",
                   respondent_id %in% ids, wave == "t1")
-  expect_equal(scores$score, rep(0, 5))
+  expect_true(all(is.na(scores$score)))
+  expect_true(all(is.na(scores$n_correct)))
+  expect_true(all(is.na(scores$n_observed)))
+  items <- phase_presence_items |>
+    dplyr::filter(poll_id == "nic-1996", source_dataset == "historical",
+                  respondent_id %in% ids, wave == "t1")
+  expect_equal(nrow(items), 5L * 11L)
+  expect_true(all(is.na(items$correct)))
+  expect_true(all(items$response_status == "source_missing"))
 })
 
 test_that("Denmark's observed questionnaire with a blank quiz retains zero", {

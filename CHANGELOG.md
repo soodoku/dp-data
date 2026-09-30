@@ -1,5 +1,49 @@
 # Changelog
 
+## 0.4.2
+
+- Restore Northern Ireland's literal argument-coder labels. CSV type inference
+  had collapsed 176 comma-separated code sets; source whitespace is also retained.
+  Respondent identities, missing slots and all knowledge outputs are unchanged.
+- Preserve Denmark's four original questionnaires and readable PDF companions;
+  record the later follow-up's verified telephone mode without changing dates,
+  scores or cohorts. Preserve its wave crosswalk, two California index drafts
+  and Northern Ireland's version 16 coding guide in their poll folders.
+- Allow the full CI build and numerical audit up to 60 minutes. The previous
+  30-minute limit canceled a run after tests and lint passed, before its final
+  metadata verification could finish.
+
+- Use reviewed whole-questionnaire evidence in knowledge scoring. Preserve
+  observed blank quizzes as zero; unavailable questionnaires have missing scores.
+- Retain verified attendance before inferring nonattendance from absent exits,
+  including Australia's nine attendees without exit questionnaires and two
+  UK Health attendees without completed post-event questionnaires.
+- Preserve Australia's original combined DP codebook and its readable PDF,
+  distinguishing it from the separate constitutional-referendum codebook.
+- Export 829 source-level attitude definitions and 1,039,910 response rows for
+  Denmark, Vermont, Marousi and America in One Room 2024. Retain all source
+  people, original identifiers, labels, units and documented interview phases.
+- Exclude 372 reviewed attitude nonanswers and 40 invalid Vermont responses
+  from numeric values. Preserve 271 Marousi responses with unverified scales
+  as unclassified raw responses, with missing numeric values.
+- Preserve Marousi's original identifiers separately for telephone, arrival
+  and exit while retaining the authored row bridge and its 16 unresolved
+  departure-ID conflicts.
+- Apply reviewed full-form masks across ten polls and calculate group knowledge
+  means and learning opportunity from observed peers. Preserve BTP General
+  Election's 299-person group cohort before its 248-person analytical selection.
+
+- Declare complete questionnaire-presence dependencies and use registered source
+  column order. Individual recodes support reordered inputs and local subsets
+  without changing reviewed values or weakening production identity checks.
+
+- Retain 2,299,630 additional raw questionnaire responses used by the presence
+  rules; every existing raw response and reviewed measure value is unchanged.
+
+- Apply 152 codebook-backed CPL nonanswer declarations through a shared
+  field-specific registry. Preserve substantive Other codes and dollar amounts;
+  raw values and reviewed scores remain unchanged.
+
 ## 0.4.1
 
 - Preserve additional poll source versions and 13 unique historical scripts as

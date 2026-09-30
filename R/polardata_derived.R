@@ -1,3 +1,10 @@
+reviewed_peer_component <- function(value, group, n_items) {
+  component <- as_historical_float(observed_peer_mean(value, group) / n_items)
+  component[value %in% 1] <- 0
+  component[is.na(value)] <- NA_real_
+  component
+}
+
 historical_group_summary <- function(value, group, statistic = mean) {
   stopifnot(length(value) == length(group))
   result <- rep(NA_real_, length(value))

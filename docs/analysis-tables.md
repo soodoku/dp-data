@@ -1,6 +1,6 @@
 # Canonical analysis tables
 
-`make analysis` writes fifteen typed Parquet tables and a checksum manifest to
+`make analysis` writes seventeen typed Parquet tables and a checksum manifest to
 `output/analysis/`. `make check` rebuilds them after the knowledge, respondent,
 and historical aggregate exports. Source files and reviewed metadata stay in
 `data/` and `metadata/`; downstream projects use the Parquet tables.
@@ -22,6 +22,8 @@ and historical aggregate exports. Source files and reviewed metadata stay in
 | `analysis_phase_attitudes` | One reviewed paired attitude item; `poll_id`, `attitude_id` |
 | `analysis_phase_attitude_responses` | One raw attitude answer; participant key, `attitude_id`, `wave_instance_id` |
 | `analysis_phase_item_responses` | One item answer with verified timing; participant key, `battery_id`, `wave_instance_id`, `item_id` |
+| `analysis_source_attitude_definitions` | One source attitude field and occasion; `source_id`, `source_column`, `source_wave` |
+| `analysis_source_attitude_responses` | One source-row response; `source_id`, `source_row`, `source_column` |
 
 There are respondent records for 33 polls and item responses for 31. The
 participant table covers the 21 reviewed historical surveys, 23 Cor–Sood
@@ -30,10 +32,11 @@ historical and Cor–Sood polls overlap. `source_dataset` distinguishes their
 separate person IDs; identical IDs across the deposits do not imply the same
 person. Northern Ireland is a verified exception: its Cor–Sood T1/T2 battery
 and the T3 survey use the same `cserial` respondent ID for 93 returning
-participants. Marousi retains authored item-correctness flags and Tanzania
-retains nine scored knowledge components in their source files. Neither has
-canonical item-response rows here: the complete raw question-and-answer mapping
-has not been established. Their scores remain available.
+participants. Marousi's recovered raw answers and authored correctness flags
+support the phase-item table; its selected item table remains unchanged.
+Tanzania retains nine scored knowledge components in its source file, but its
+original raw question-and-answer mapping has not been recovered. Its canonical
+handoff remains score-only.
 
 `item_id` uses `knowledge_001`, `knowledge_002`, and so on within each poll.
 The original baseline source field is `source_column_t1`; for the eight added
@@ -394,3 +397,96 @@ codes (`-8`) are invalid, and its source labels are retained. Climate's
 nonanswer labels are not independently recoverable, so labels remain null.
 No guessing adjustment, weights, attendance inference or group summaries are
 applied. Pre-event answers never depend on the person's post-event response.
+
+## Source-level attitudes
+
+`analysis_source_attitude_definitions` and `analysis_source_attitude_responses`
+preserve the reviewed attitude fields in four additional polls. Definitions
+are specific to a source field and interview occasion. They do not assert that
+similarly numbered questions across waves measure the same thing.
+
+| Poll | Definitions | Response rows |
+| --- | ---: | ---: |
+| Denmark 2000 | 164 | 120,554 |
+| Vermont 2007 | 243 | 182,250 |
+| Marousi 2006 | 248 | 316,200 |
+| America in One Room 2024 | 174 | 420,906 |
+| Total | 829 | 1,039,910 |
+
+Every source row is retained, including recruitment respondents and people
+outside the selected knowledge panels. `source_id` and `source_row` identify
+the physical record; `source_unit_id` preserves the original identifier for
+that wave. Definitions identify its column in `source_unit_id_column`.
+Canonical `source_dataset` and `respondent_id` are supplied only where the
+existing source bridge establishes a match. Denmark's separate control source
+has no established panel link or canonical interview occasion, so these fields
+remain missing rather than asserting that its identifiers match the main survey.
+
+Marousi uses `P_Q1_0` for telephone, `AR_CODE` for arrival and `F_CODE` for exit
+source identifiers. Its canonical identity continues to follow the existing
+authored row alignment. Sixteen conflicting departure identifiers remain
+visible; publishing the original wave identifiers does not resolve those links.
+
+`raw_value` and `source_response_label` preserve the source response.
+`response_status` distinguishes an answer, DK, refusal, other documented
+nonanswer, invalid response, blank observed form, absent form and missing source
+with unknown form presence. `value` is missing for all nonanswers and invalid
+responses. The 271 Marousi responses whose scale is not established remain
+`unclassified_response`, with missing numeric values. Vermont's 40 out-of-range
+responses remain `invalid_response`; their original codes are retained.
+
+`unit`, `minimum` and `maximum` describe the source scale. `normalized_value`
+is supplied only when a reviewed numeric scale has two fixed endpoints.
+Nominal categories are not converted into an ordered scale. Vermont's
+percentage responses keep a 0–100 scale, where 99 can be a genuine answer;
+dollar willingness-to-pay responses keep dollars and have no invented upper
+endpoint. Ratings, thermometers and monetary values are not pooled into a
+common attitude index. No midpoint imputation, weights or group summaries are
+applied in these tables.
+
+## Whole questionnaires and observed peers
+
+Questionnaire presence uses reviewed administrative indicators and the complete
+question blocks, including nonknowledge answers. An observed questionnaire with
+an unanswered quiz follows the knowledge rule: reviewed blanks and DK score
+zero. An absent or unavailable questionnaire has missing knowledge scores and
+item correctness. A questionnaire with no retained answers and no return
+indicator remains of unknown presence. Attendance is a separate variable;
+positive attendance evidence takes precedence over an absent exit questionnaire.
+
+A shared source-form helper now applies these rules to CPL, UK Crime, UK Health,
+UK General Election, Europolis, Tomorrow's Europe, BTP Presidential Primaries,
+NIC, NIC2 and Zeguo. Australia additionally uses its explicit original attendance
+and questionnaire-return classifications. Source-row joins are checked against
+respondent identity within each file; equal physical row numbers in two files
+are not a crosswalk.
+
+Group and poll knowledge summaries exclude unavailable scores. Leave-one-out
+peer means use the number of peers with an observed value for the relevant
+item or score, removing the focal respondent only when their value is observed.
+They remain missing if no peer value is observed. Peer learning opportunity
+also requires the focal response; unavailable focal questionnaires do not become
+zero opportunity. The reviewed zero-at-ceiling convention remains in force.
+These are summaries of observed peers, with no assumption that unavailable
+questionnaires contain incorrect answers. BTP General Election retains its
+299-person source cohort for group calculations before exporting the selected
+248-person panel; a downstream recalculation on 248 people is a different
+population.
+
+Questionnaire-presence dependencies are listed in `metadata/measure_inputs.csv`
+alongside the question inputs. The shared form contract derives complete raw
+question blocks from the registered source dictionary, so changing the supplied
+column order cannot change which fields establish a returned questionnaire.
+Stored correctness flags and authored recodes do not establish presence.
+In `respondent_measures`, `n_source_fields` counts these declared dependencies;
+`n_observed_fields` counts dependencies classified as answered, including return
+indicators. Neither field is the number of knowledge items, a quiz denominator,
+or a standalone attendance indicator. Adding the explicit dependencies changes
+these provenance counts while leaving the reviewed measure values unchanged.
+
+`metadata/source_nonanswer_rules.csv` supplements source dictionaries where
+retained instruments establish field-specific codes that the original data
+file does not label. Each rule retains its code, reason and source line.
+`source_responses` keeps the raw value while distinguishing these documented
+nonanswers from answered values. A code is never missing merely because it is
+99 or 999 in another question.

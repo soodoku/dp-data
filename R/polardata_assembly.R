@@ -56,10 +56,8 @@ historical_derived_columns <- function(values, group,
   result$meant2know <- average(values$t2know)
   result$meant1knowr <- average(values$t1knowr)
   result$meant1knowrcor <- average(values$t1knowrcor)
-  result$meant1know_ind <- (result$meant1know * result$groupsize -
-                              values$t1know) / (result$groupsize - 1)
-  result$meant1knowcor_ind <- (result$meant1knowcor * result$groupsize -
-                                 values$t1knowcor) / (result$groupsize - 1)
+  result$meant1know_ind <- observed_peer_mean(values$t1know, group)
+  result$meant1knowcor_ind <- observed_peer_mean(values$t1knowcor, group)
   result$t1knowlevelcor <- mean(values$t1knowcor, na.rm = TRUE)
   result$t2knowlevel <- mean(values$t2know, na.rm = TRUE)
   result$t1knowlevelrcor <- mean(values$t1knowrcor, na.rm = TRUE)

@@ -110,12 +110,13 @@ core_poll_profile <- function(survey, poll_id) {
 
 historical_fractional_gain <- function(corrected, group) {
   stopifnot(
-    nrow(corrected) == length(group),
-    !anyNA(corrected[!is.na(group), , drop = FALSE])
+    is.matrix(corrected), nrow(corrected) == length(group),
+    ncol(corrected) > 0L,
+    all(is.na(corrected) | abs(corrected) <= 1e-10 |
+          abs(corrected - 1) <= 1e-10)
   )
-  size <- historical_group_summary(rep(1, length(group)), group, sum)
   peer <- apply(corrected, 2, function(value) {
-    historical_group_summary(value, group) * size / (size - 1)
+    observed_peer_mean(value, group)
   })
   numerator <- rowSums((corrected == 0) * peer)
   gain <- numerator / (ncol(corrected) * (1 - rowMeans(corrected)))
@@ -135,9 +136,9 @@ build_core_derived <- function(survey, values, poll_id) {
     values, group,
     profile$attitudes[rows, ], arrival
   )
-  result$t1knowlevel <- mean(profile$poll_score)
+  result$t1knowlevel <- mean(profile$poll_score, na.rm = TRUE)
   if (poll_id %in% c("nic-1996", "wtu-1996", "swepco-1996")) {
-    result$t1knowlevel <- mean(profile$poll_score[rows])
+    result$t1knowlevel <- mean(profile$poll_score[rows], na.rm = TRUE)
   }
   joint <- profile$before[rows, , drop = FALSE] *
     profile$after[rows, , drop = FALSE]

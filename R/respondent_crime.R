@@ -35,12 +35,13 @@ crime_attitudes <- function(survey, wave) {
 
 crime_knowledge_items <- function(survey, wave) {
   key <- c(kw1 = 0, kw2 = 1, kw3 = 1, kw4 = 0, pkw1 = 0, pkw2 = 0, pkw3 = 0)
-  purrr::imap(key, function(correct, stem) {
+  items <- purrr::imap(key, function(correct, stem) {
     value <- read_source_codes(survey, paste0(stem, wave), c(0:1, 8:9))
     as.numeric(value %in% correct)
   }) |>
     tibble::as_tibble() |>
     as.matrix()
+  mask_reviewed_knowledge(items, survey, "uk-crime-1994", wave)
 }
 
 build_crime_individual <- function(survey = read_poll_survey("uk-crime-1994")) {

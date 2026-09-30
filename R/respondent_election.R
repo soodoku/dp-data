@@ -30,7 +30,8 @@ election_knowledge_items <- function(survey, wave) {
     names(items) <- paste0(stems, "_", party)
     tibble::as_tibble(items)
   }) |> purrr::list_cbind()
-  as.matrix(dplyr::bind_cols(facts, placements))
+  items <- as.matrix(dplyr::bind_cols(facts, placements))
+  mask_reviewed_knowledge(items, survey, "uk-general-election-1997", wave)
 }
 
 election_demographics <- function(survey) {

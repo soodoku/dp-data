@@ -54,12 +54,8 @@ reviewed_us_legacy_values <- function(measures) {
 
 reviewed_us_group_gain <- function(before, after, group, knowledge_joint) {
   joint <- before * after
-  size <- historical_group_summary(rep(1, length(group)), group, sum)
   components <- purrr::map(seq_len(ncol(joint)), function(item) {
-    total <- historical_group_summary(joint[, item], group, sum)
-    value <- as_historical_float(total / (size - 1) / ncol(joint))
-    value[joint[, item] == 1] <- 0
-    value
+    reviewed_peer_component(joint[, item], group, ncol(joint))
   }) |> do.call(what = cbind)
   original <- rep(0, nrow(components))
   for (item in seq_len(ncol(components))) {
@@ -68,7 +64,9 @@ reviewed_us_group_gain <- function(before, after, group, knowledge_joint) {
     original <- as_historical_float(original + value)
   }
   gain <- original * ncol(joint) / ((1 - knowledge_joint) * ncol(joint))
-  gain[is.nan(gain)] <- NA_real_
+  missing_peers <- rowSums(joint == 0 & is.na(components), na.rm = TRUE) > 0
+  unavailable_focal <- rowSums(!is.na(joint)) == 0L
+  gain[is.nan(gain) | missing_peers | unavailable_focal] <- NA_real_
   apply_peer_opportunity_ceiling(gain, joint, group)
 }
 

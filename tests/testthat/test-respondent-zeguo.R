@@ -8,12 +8,19 @@ zeguo_test_survey <- function() {
 test_that("Zeguo reconstruction ignores archived summary columns", {
   survey <- zeguo_test_survey()
   expected <- build_zeguo_individual(survey)
-  keep <- grepl("^(pre_|post_|d20[0-9][0-9]p?$)", names(survey)) |
-    names(survey) %in% c(
-      "p", "pp", "preandpost", "Age", "____1p", "Education", "Gender"
-    )
-  raw <- survey[, keep]
+  inputs <- read_metadata("measure_inputs")
+  contracts <- read_metadata("respondent_sources")
+  identity <- contracts$id_column[contracts$poll_id == "zeguo-2005"]
+  fields <- unique(c("source_row", identity, inputs$source_column[
+    inputs$poll_id == "zeguo-2005"
+  ]))
+  positions <- match(tolower(fields), tolower(names(survey)))
+  expect_false(anyNA(positions))
+  raw <- survey[, positions]
   expect_equal(build_zeguo_individual(raw), expected)
+  expect_equal(build_zeguo_individual(raw[, rev(seq_len(ncol(raw)))]),
+    expected
+  )
   order <- rev(seq_len(nrow(raw)))
   expect_equal(build_zeguo_individual(raw[order, ]), expected[order, ])
   expect_equal(build_zeguo_individual(raw[1:12, ]), expected[1:12, ])

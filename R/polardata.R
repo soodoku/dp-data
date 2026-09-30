@@ -48,12 +48,13 @@ health_polardata_demographics <- function(result, survey) {
 historical_group_gain <- function(corrected, group) {
   stopifnot(
     is.matrix(corrected), nrow(corrected) == length(group),
-    ncol(corrected) > 0L, !anyNA(group), all(corrected %in% c(0, 1))
+    ncol(corrected) > 0L, !anyNA(group),
+    all(is.na(corrected) | corrected %in% c(0, 1))
   )
   size <- ave(rep(1, length(group)), group, FUN = sum)
   stopifnot(all(size > 1))
   peer_means <- apply(corrected, 2, function(value) {
-    ave(value, group, FUN = mean) * size / (size - 1)
+    observed_peer_mean(value, group)
   })
   unknown <- 1 - corrected
   gain <- rowSums(unknown * peer_means) / rowSums(unknown)
@@ -65,20 +66,22 @@ health_polardata_knowledge <- function(result, survey) {
   before <- historical_health_items(survey, 1L)
   after <- historical_health_items(survey, 2L)
   corrected <- before * after
-  group_mean <- function(value) ave(value, result$pollgroup, FUN = mean)
+  group_mean <- function(value) {
+    historical_group_summary(value, result$pollgroup)
+  }
   result$grpgain <- historical_group_gain(corrected, result$pollgroup)
   result$meant1know <- group_mean(result$t1know)
   result$meant2know <- group_mean(result$t2know)
   result$meant1knowcor <- group_mean(result$t1knowcor)
-  result$t1knowlevel <- mean(result$t1know_rounded)
-  result$t1knowlevelcor <- mean(result$t1knowcor)
-  result$t2knowlevel <- mean(result$t2know)
-  result$meant1know_ind <- (
-    result$meant1know * result$groupsize - result$t1know
-  ) / (result$groupsize - 1)
-  result$meant1knowcor_ind <- (
-    result$meant1knowcor * result$groupsize - result$t1knowcor
-  ) / (result$groupsize - 1)
+  result$t1knowlevel <- mean(result$t1know_rounded, na.rm = TRUE)
+  result$t1knowlevelcor <- mean(result$t1knowcor, na.rm = TRUE)
+  result$t2knowlevel <- mean(result$t2know, na.rm = TRUE)
+  result$meant1know_ind <- observed_peer_mean(
+    result$t1know, result$pollgroup
+  )
+  result$meant1knowcor_ind <- observed_peer_mean(
+    result$t1knowcor, result$pollgroup
+  )
   result$loggain <- historical_log_score(result$grpgain)
   aliases <- c(
     t1knowr = "t1know", t2knowr = "t2know", t1knowrcor = "t1knowcor",

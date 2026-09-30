@@ -28,7 +28,7 @@ zeguo_knowledge_items <- function(survey, wave) {
     }
     scores[!zeguo_departure_observed(survey), ] <- NA_real_
   }
-  scores
+  mask_reviewed_knowledge(scores, survey, "zeguo-2005", wave)
 }
 
 zeguo_attitudes <- function(survey, wave) {

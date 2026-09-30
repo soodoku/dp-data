@@ -235,7 +235,7 @@ test_that("definitions match historical or approved values by IDs", {
   ))
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "tomorrows-europe-2007"
-  ]), 66L)
+  ]), 66L + 121L)
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "europolis-2009"
   ]), 1L)
@@ -269,7 +269,7 @@ test_that("definitions match historical or approved values by IDs", {
   # NIC-12 adds 1,159 attitude-index and 28 extremity missing values.
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "nic-1996"
-  ]), 4L + 1159L + 28L)
+  ]), 4L + 1159L + 28L + 72L)
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "btp-national-2003"
   ]), 245L)
@@ -282,9 +282,16 @@ test_that("definitions match historical or approved values by IDs", {
       "uk-general-election-1997",
       "australia-republic-1999", "btp-health-education-2005",
       "new-haven-2004", "zeguo-2005", "nic-1996",
-      "btp-national-2003", "bulgaria-crime-2002"
+      "btp-national-2003", "bulgaria-crime-2002", "uk-health-1998"
     )
   ]), 1L)
+  health_fields <- c("t1knowcor", "t2know", "t1knowrcor", "t2knowr",
+    "knowgain", "knowgain2", "logpk", "tobitpk", "knowgainr", "knowgainr2"
+  )
+  health <- parity[parity$poll_id == "uk-health-1998" &
+                     parity$legacy_field %in% health_fields, ]
+  expect_setequal(health$legacy_field, health_fields)
+  expect_equal(health$missingness_differences, rep(2L, 10L))
   expect_equal(sum(parity$value_differences[
     parity$poll_id == "uk-crime-1994"
   ]), 141L)
@@ -398,13 +405,14 @@ test_that("preserved cross-wave dependencies remain explicit", {
   expect_identical(changed$knowledge_t2, after$knowledge_t2)
   election <- read_poll_survey("uk-general-election-1997")
   before <- build_election_individual(election)
-  election$taxr2 <- rep(1, nrow(election))
+  completed <- as.numeric(election$partic) %in% 1
+  election$taxr2[completed] <- 1
   after <- build_election_individual(election)
-  expect_true(all(after$tax_t2 == 0))
+  expect_true(all(after$tax_t2[completed] == 0))
   expect_false(identical(before$tax_t2, after$tax_t2))
   expect_identical(before[names(before) != "tax_t2"],
                    after[names(after) != "tax_t2"])
-  election$taxret2 <- rep(1, nrow(election))
+  election$taxret2[completed] <- 1
   expect_identical(build_election_individual(election), after)
 })
 
@@ -490,7 +498,8 @@ test_that("UK Crime uses raw fields and preserves row order", {
 })
 
 test_that("UK Crime root causes uses post items without baseline reuse", {
-  survey <- read_poll_survey("uk-crime-1994")[1, ]
+  survey <- read_poll_survey("uk-crime-1994")
+  survey <- survey[which(as.numeric(survey$part) == 1)[1L], ]
   survey$morecop1 <- 1
   survey$timchld2 <- 5
   survey$violtv2 <- 5
@@ -609,7 +618,8 @@ test_that("UKGE-02 reproduces the nine published policy-attitude rows", {
 })
 
 test_that("UKGE-03 scores the post Labour wage placement from its own wave", {
-  survey <- read_poll_survey("uk-general-election-1997")[1, ]
+  survey <- read_poll_survey("uk-general-election-1997")
+  survey <- survey[which(as.numeric(survey$partic) == 1)[1L], ]
   survey$wagel1 <- 1
   survey$wagel2 <- 7
   expect_equal(unname(election_knowledge_items(survey, 2L)[, "wage_l"]), 1)
@@ -629,5 +639,6 @@ test_that("UKGE-03 agrees with deposited post correctness for attendees", {
   expect_equal(sum(selected), 275L)
   expect_equal(items[selected, "wage_l"], as.numeric(survey$wgel2cor[selected]))
   scores <- build_election_individual(survey)
-  expect_true(all(scores$knowledge_t2[!selected] == 0))
+  expect_true(all(is.na(scores$knowledge_t2[!selected])))
+  expect_true(all(is.na(items[!selected, ])))
 })

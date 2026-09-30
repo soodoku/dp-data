@@ -70,13 +70,9 @@ build_btp_primaries_derived <- function(survey, values) {
   before <- primaries_knowledge_items(survey, "b1")
   after <- primaries_knowledge_items(survey, "f1")
   joint <- before[rows, , drop = FALSE] * after[rows, , drop = FALSE]
-  stopifnot(!anyNA(joint))
-  size <- historical_group_summary(rep(1, length(rows)), group, sum)
   total <- rep(0, length(rows))
   for (item in seq_len(ncol(joint))) {
-    group_total <- historical_group_summary(joint[, item], group, sum)
-    component <- as_historical_float(group_total / (size - 1) / 7)
-    component[joint[, item] == 1] <- 0
+    component <- reviewed_peer_component(joint[, item], group, ncol(joint))
     total <- as_historical_float(total + component)
   }
   result$grpgain <- total * 7 / ((1 - values$t1knowcor) * 7)

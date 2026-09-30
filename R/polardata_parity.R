@@ -40,7 +40,14 @@ compare_historical_polardata <- function(rebuilt, reference, numerical_audit,
         all(abs(new_people$t2know -
                   added$post_knowledge_correct) <= tolerance),
         all(abs(new_people$attextreme -
-                  added$attitude_extremity) <= tolerance)
+                  added$attitude_extremity) <= tolerance),
+        all(abs(new_people$meant1know_ind -
+                  added$meant1know_ind) <= tolerance),
+        all(abs(new_people$meant1knowcor_ind -
+                  added$meant1knowcor_ind) <= tolerance),
+        all(abs(new_people$grpgain - added$grpgain) <= tolerance),
+        all(abs(new_people$grpgainr - added$grpgainr) <= tolerance),
+        all(abs(new_people$loggain - added$loggain) <= tolerance)
       )
       actual <- actual[actual$caseid %in% expected$caseid, ]
     } else {

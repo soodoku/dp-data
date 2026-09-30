@@ -1,3 +1,4 @@
+source(project_path("R", "source_questionnaire_presence.R"))
 source(project_path("R", "respondent_normalization.R"))
 source(project_path("R", "respondent_health.R"))
 source(project_path("R", "respondent_eu.R"))
@@ -152,6 +153,23 @@ source_response_rows <- function(survey, people, inputs, items) {
     "data", people$poll_id[[1]], "value-labels.csv"
   ), col_types = readr::cols(.default = readr::col_character()))
   nonanswer_codes <- source_nonanswer_codes(labels)
+  reviewed_nonanswers <- readr::read_csv(project_path(
+    "metadata", "source_nonanswer_rules.csv"
+  ), col_types = readr::cols(.default = readr::col_character()))
+  stopifnot(
+    !anyNA(reviewed_nonanswers),
+    !anyDuplicated(reviewed_nonanswers[c(
+      "poll_id", "source_column", "source_value"
+    )]),
+    all(reviewed_nonanswers$reason %in% c("dk", "refused", "nonanswer"))
+  )
+  reviewed_nonanswers <- reviewed_nonanswers[
+    reviewed_nonanswers$poll_id == people$poll_id[[1]],
+  ]
+  nonanswer_codes <- dplyr::bind_rows(nonanswer_codes,
+    reviewed_nonanswers |> dplyr::select("source_column", "source_value")
+  ) |>
+    dplyr::distinct()
   purrr::map(fields, function(field) {
     raw <- survey[[field]]
     value <- if (is.numeric(raw)) {
@@ -211,13 +229,6 @@ source_response_rows <- function(survey, people, inputs, items) {
     if (people$poll_id[[1]] == "new-haven-2004" &&
           grepl("^(pre|mid|post)_q(12|13|20|21|22|23)$", field)) {
       known_missing <- union(known_missing, c("0", "6"))
-    }
-    if (people$poll_id[[1]] == "cpl-1996" &&
-      grepl(paste0(
-        "^(resch|fedrch|addfac|reduce|lowinc|poor|renew|wind|",
-        "fuels|buypwr|compet)[12]$"
-      ), field)) {
-      known_missing <- union(known_missing, "99")
     }
     if (people$poll_id[[1]] == "tomorrows-europe-2007") {
       attitude_field <- grepl(paste0(

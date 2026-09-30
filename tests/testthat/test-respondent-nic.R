@@ -3,12 +3,31 @@ source(file.path(root, "R", "respondents.R"))
 test_that("NIC percentage scores use documented inclusive bounds", {
   survey <- read_poll_survey("nic-1996")
   stems <- c(WEDLOCK = "KNOWWED", AFDC = "KNOWAFD", UNEMP = "KNOWEMP")
+  baseline_fields <- setdiff(
+    names(survey)[match("AGE18UP1", names(survey)):
+                    match("POLDEM1", names(survey))], "PARTYST1"
+  )
+  exit_fields <- c(
+    names(survey)[match("NICWAS2", names(survey)):
+                    match("DISCBAL2", names(survey))],
+    names(survey)[match("GOVSAY2", names(survey)):
+                    match("POLDEM2", names(survey))]
+  )
+  forms <- list(
+    rowSums(!is.na(survey[baseline_fields])) > 0L,
+    rowSums(!is.na(survey[exit_fields])) > 0L,
+    rep(TRUE, nrow(survey))
+  )
+  expect_equal(vapply(forms, function(x) sum(!x), integer(1)),
+    c(6L, 279L, 0L)
+  )
   for (wave in 1:3) {
     built <- nic_knowledge_items(survey, wave)
     for (stem in names(stems)) {
       stored <- rounded_source_code(survey[[paste0(stems[[stem]], wave)]])
-      observed <- !is.na(stored)
+      observed <- !is.na(stored) & forms[[wave]]
       expect_equal(built[observed, stem], stored[observed])
+      expect_true(all(is.na(built[!forms[[wave]], stem])))
     }
   }
   survey$WEDLOCK1[1:5] <- c(24.9, 25, 40, 40.1, NA)
@@ -69,7 +88,16 @@ test_that("NIC respondent fields match historical or approved values", {
   missingness <- vapply(fields, function(field) {
     sum(is.na(rebuilt[[field]]) != is.na(reference[[field]]))
   }, integer(1))
-  expect_equal(sum(missingness), 1191L)
+  knowledge_fields <- c(
+    "t1know", "t1knowr", "t1knowcor", "t1knowrcor", "knowgain",
+    "knowgain2", "logpk", "tobitpk", "knowgainr", "knowgainr2",
+    "t12know", "t12knowcor", "t1knowcor2", "t2know", "t2knowr"
+  )
+  expect_equal(unname(missingness[knowledge_fields]),
+    c(rep(5L, 10), 6L, 6L, 10L, 0L, 0L)
+  )
+  expect_equal(sum(missingness[knowledge_fields]), 72L)
+  expect_equal(sum(missingness[setdiff(fields, knowledge_fields)]), 1191L)
 })
 
 test_that("NIC rejects a second missing historical identity", {
@@ -112,7 +140,44 @@ test_that("NIC age corrects the year typo and withholds unsupported ages", {
     survey,
     BYEAR = dplyr::if_else(.data$CASEID == 10007590, 67, .data$BYEAR)
   )
-  expect_error(nic_age(changed))
+  expect_equal(nic_age(changed), result)
+  mismatch <- which(!is.na(survey$BYEAR) & !is.na(survey$BIRTHDY1) &
+                      round(survey$BYEAR) != round(survey$BIRTHDY1) %% 100)
+  expect_length(mismatch, 1L)
+  expect_equal(caseid[mismatch], 10007590)
+  underage <- which(96 - survey$BYEAR < 18)
+  expect_setequal(caseid[underage], unknown)
+})
+
+test_that("NIC age accepts source subsets and rejects unreviewed anomalies", {
+  survey <- read_poll_survey("nic-1996")
+  expected <- nic_age(survey)
+  for (row in seq_len(nrow(survey))) {
+    expect_equal(nic_age(survey[row, ]), expected[row])
+  }
+  reversed <- rev(seq_len(nrow(survey)))
+  expect_equal(nic_age(survey[reversed, ]), expected[reversed])
+  rows <- c(1L, 23L, 240L, 710L, 755L, 775L)
+  expect_equal(nic_age(survey[rows, ]), expected[rows])
+
+  mismatch_row <- which(survey$CASEID == 10007590)
+  unexpected <- survey[mismatch_row, ]
+  unexpected$CASEID <- 10000001
+  expect_error(nic_age(unexpected))
+  unexpected <- survey[mismatch_row, ]
+  unexpected$BYEAR <- 8
+  expect_error(nic_age(unexpected))
+  unexpected <- survey[mismatch_row, ]
+  unexpected$BIRTHDY1 <- 66
+  expect_error(nic_age(unexpected))
+
+  underage_row <- which(survey$CASEID == 10005580)
+  unexpected <- survey[underage_row, ]
+  unexpected$CASEID <- 10000001
+  expect_error(nic_age(unexpected))
+  unexpected <- survey[underage_row, ]
+  unexpected$BDAYRTE1 <- 2
+  expect_error(nic_age(unexpected))
 })
 
 test_that("NIC exit extremity uses the exit spending answers", {
@@ -223,4 +288,45 @@ test_that("NIC attitude corrections match independently reviewed cells", {
       evidence$caseid, evidence$historical_value
     ), expected, tolerance = 1e-10)
   }
+})
+
+
+test_that("NIC unavailable forms do not erase observed blanks or later waves", {
+  survey <- read_poll_survey("nic-1996")
+  values <- build_nic_individual(survey)
+  absent_baseline <- c(1L, 23L, 240L, 710L, 755L, 775L)
+  selected <- !is.na(survey$RGROUP2)
+  expect_equal(sum(selected[absent_baseline]), 5L)
+  expect_true(all(is.na(survey$DATEDUN1[absent_baseline])))
+  expect_true(all(is.na(values$knowledge_t1[absent_baseline])))
+  expect_true(all(survey$PART[absent_baseline[selected[absent_baseline]]] == 1))
+  absent_exit_ids <- c(
+    10000400, 10000460, 10007580, 10007590, 10014282, 10014650
+  )
+  exit_rows <- match(absent_exit_ids, survey$CASEID)
+  expect_false(anyNA(exit_rows))
+  expect_true(all(is.na(values$knowledge_midterm[exit_rows])))
+  expect_true(all(survey$PART[exit_rows] == 1))
+  expect_equal(length(intersect(absent_baseline, exit_rows)), 1L)
+  for (stem in c("KNOWWED", "KNOWAFD", "KNOWEMP")) {
+    stored <- survey[[paste0(stem, 1)]][absent_baseline]
+    expect_equal(unname(as.numeric(stored)), rep(0, 6))
+    expect_equal(sum(stored[selected[absent_baseline]] == 0), 5L)
+  }
+
+  changed <- survey
+  raw_stems <- c(
+    "WEDLOCK", "AFDC", "UNEMP", "SPEND", "TRADE", "TROOPSA",
+    "TROOPSB", "TROOPSC", "TROOPSD", "POLREP", "POLDEM"
+  )
+  observed_row <- which(!is.na(survey$DATEDUN1) &
+                          !is.na(survey$AGE18UP1))[1]
+  for (stem in raw_stems) changed[[paste0(stem, 1)]][observed_row] <- NA
+  expect_equal(nic_knowledge_items(changed, 1L)[observed_row, ],
+    stats::setNames(rep(0, 11), colnames(nic_knowledge_items(survey, 1L)))
+  )
+  expect_equal(nic_knowledge_items(changed, 3L),
+    nic_knowledge_items(survey, 3L)
+  )
+  expect_equal(build_nic_individual(changed)$knowledge_t2, values$knowledge_t2)
 })

@@ -89,11 +89,12 @@ nic2_knowledge_items <- function(survey, wave) {
   items <- purrr::imap(closed, function(correct, stem) {
     as.numeric(read(stem, 1:7) %in% correct)
   })
-  cbind(
+  scores <- cbind(
     democratic = as.numeric(!is.na(democratic) & democratic > 5),
     republican = as.numeric(!is.na(republican) & republican < 5),
     as.matrix(tibble::as_tibble(items))
   )
+  mask_reviewed_knowledge(scores, survey, "nic2-2003", wave)
 }
 
 build_nic2_individual <- function(survey = read_poll_survey("nic2-2003")) {

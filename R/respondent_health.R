@@ -25,9 +25,10 @@ historical_health_items <- function(survey, wave) {
     }
     as.numeric(value %in% key[[item]])
   }, numeric(nrow(survey)))
-  matrix(values, nrow = nrow(survey), ncol = length(key),
+  items <- matrix(values, nrow = nrow(survey), ncol = length(key),
     dimnames = list(NULL, names(key))
   )
+  mask_reviewed_knowledge(items, survey, "uk-health-1998", wave)
 }
 
 historical_log_score <- function(value) {

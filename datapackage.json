@@ -2,7 +2,7 @@
   "name": "deliberative-poll-data",
   "title": "Deliberative Poll data",
   "description": "Source metadata and contracts for Deliberative Poll research data.",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "resources": [
     {
       "name": "oos_sources",
@@ -1283,6 +1283,38 @@
           },
           {
             "name": "response_reason",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "source_nonanswer_rules",
+      "path": "metadata/source_nonanswer_rules.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "source_column",
+            "type": "string"
+          },
+          {
+            "name": "source_value",
+            "type": "number"
+          },
+          {
+            "name": "reason",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
             "type": "string"
           }
         ]

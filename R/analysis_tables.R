@@ -1,3 +1,6 @@
+source(project_path("R", "source_australia.R"))
+source(project_path("R", "source_questionnaire_presence.R"))
+source(project_path("R", "analysis_source_attitudes.R"))
 source(project_path("R", "analysis_tanzania.R"))
 source(project_path("R", "analysis_knowledge_responses.R"))
 source(project_path("R", "analysis_phase_attitudes.R"))
@@ -630,11 +633,29 @@ analysis_control_items <- function(sources, catalog) {
     )
 }
 
-analysis_scores <- function(items, participants, marousi = NULL) {
+analysis_scores <- function(
+  items, participants, marousi = NULL, presence = NULL
+) {
+  if (is.null(presence)) {
+    items$presence_reviewed <- FALSE
+    items$form_observed <- NA
+  } else {
+    keys <- c("poll_id", "source_dataset", "respondent_id", "wave")
+    stopifnot(!anyDuplicated(presence[keys]))
+    items <- items |>
+      dplyr::left_join(
+        dplyr::mutate(presence, presence_reviewed = TRUE) |>
+          dplyr::rename(form_observed = wave_observed),
+        by = keys, relationship = "many-to-one"
+      )
+  }
   item_scores <- items |>
     dplyr::summarise(
       n_items = dplyr::n(),
-      wave_absent = all(response_status == "wave_absent"),
+      wave_absent = all(response_status == "wave_absent") |
+        any(presence_reviewed %in% TRUE & form_observed %in% FALSE),
+      form_unobserved = any(presence_reviewed %in% TRUE &
+                              !form_observed %in% TRUE),
       n_observed = dplyr::if_else(
         wave_absent, 0L,
         dplyr::if_else(
@@ -643,7 +664,8 @@ analysis_scores <- function(items, participants, marousi = NULL) {
         )
       ),
       n_correct = dplyr::if_else(
-        wave_absent, NA_integer_, as.integer(sum(correct == 1L, na.rm = TRUE))
+        wave_absent | form_unobserved, NA_integer_,
+        as.integer(sum(correct == 1L, na.rm = TRUE))
       ),
       .by = c(poll_id, source_dataset, respondent_id, wave)
     ) |>
@@ -693,7 +715,15 @@ build_analysis_tables <- function() {
     analysis_historical_items(catalog), analysis_cor_items(catalog),
     analysis_control_items(sources, catalog)
   )
-  scores <- analysis_scores(items, participants, sources$marousi)
+  reviewed_presence <- dplyr::bind_rows(
+    analysis_australia_presence(participants),
+    analysis_reviewed_presence(participants) |>
+      dplyr::select(-"evidence_basis")
+  )
+  items <- mask_reviewed_knowledge_items(items, reviewed_presence)
+  scores <- analysis_scores(items, participants, sources$marousi,
+    presence = reviewed_presence
+  )
   attitudes <- analysis_attitudes(participants)
   recruitment <- analysis_phase_recruitment(participants, sources)
   wave_catalog <- analysis_wave_catalog()
@@ -724,6 +754,7 @@ build_analysis_tables <- function() {
   phase_items <- analysis_phase_items(
     items, phase_evidence$scores, arrival_items, phase_evidence$participants
   ) |>
+    mask_reviewed_knowledge_items(analysis_te_arrival_presence(participants)) |>
     enrich_knowledge_responses(catalog)
   phase_scoring <- standardize_knowledge_scores(phase_items)
   stopifnot(nrow(phase_scoring$dk_correct_conflicts) == 0L)
@@ -751,6 +782,9 @@ build_analysis_tables <- function() {
   items <- scoring$items |>
     dplyr::select(-"wave_observed")
   phase_attitudes <- analysis_phase_attitudes(
+    phase_evidence$participants, phase_evidence$scores
+  )
+  source_attitudes <- analysis_source_attitudes(
     phase_evidence$participants, phase_evidence$scores
   )
   stopifnot(
@@ -792,6 +826,10 @@ build_analysis_tables <- function() {
     analysis_phase_attitude_responses =
       phase_attitudes$analysis_phase_attitude_responses,
     analysis_studies = wave_catalog$analysis_studies,
-    analysis_survey_waves = wave_catalog$analysis_survey_waves
+    analysis_survey_waves = wave_catalog$analysis_survey_waves,
+    analysis_source_attitude_definitions =
+      source_attitudes$analysis_source_attitude_definitions,
+    analysis_source_attitude_responses =
+      source_attitudes$analysis_source_attitude_responses
   )
 }
