@@ -108,7 +108,9 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   manifest <- readr::read_csv(
     file.path(directory, "manifest.csv"), show_col_types = FALSE
   )
-  expect_equal(nrow(manifest), 13L)
+  registered <- read_metadata("canonical_tables") |>
+    dplyr::filter(status == "current", startsWith(table, "analysis_"))
+  expect_setequal(manifest$table, registered$table)
   expect_true(all(file.exists(project_path(manifest$path))))
   expect_equal(
     vapply(project_path(manifest$path), digest::digest,
