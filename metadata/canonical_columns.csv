@@ -32,8 +32,8 @@ analysis_source_attitude_responses,respondent_id,string,TRUE,FALSE,Canonical res
 analysis_source_attitude_responses,raw_value,float64,TRUE,FALSE,Unchanged original numeric response including invalid and nonanswer codes
 analysis_source_attitude_responses,source_response_label,string,TRUE,FALSE,Original dictionary or verified questionnaire label for this response code
 analysis_source_attitude_responses,response_status,string,FALSE,FALSE,Answered dk refused nonanswer invalid_response unclassified_response absent_form blank or source_missing
-analysis_source_attitude_responses,value,float64,TRUE,FALSE,Substantive response in original units with documented nonanswers and invalid codes missing
-analysis_source_attitude_responses,normalized_value,float64,TRUE,FALSE,Zero-to-one response only when verified fixed endpoints exist and the measure is not nominal
+analysis_source_attitude_responses,source_scale_value,float64,TRUE,FALSE,Substantive response in original units with documented nonanswers and invalid codes missing; retains nominal categories and unbounded quantities
+analysis_source_attitude_responses,value,float64,TRUE,FALSE,Primary zero-to-one attitude response using documented fixed endpoints; null for nominal categories or quantities without a documented finite upper endpoint
 analysis_source_attitude_responses,wave_observed,bool,TRUE,FALSE,Reviewed questionnaire presence when independently established
 respondents,poll_id,string,FALSE,TRUE,Stable poll identifier
 respondents,respondent_id,string,FALSE,TRUE,Original survey ID or documented file-scoped row ID
@@ -86,16 +86,16 @@ knowledge_responses,item_id,string,FALSE,TRUE,Knowledge item identifier within p
 knowledge_responses,source_row,int32,FALSE,FALSE,One-based row in original survey
 knowledge_responses,source_column,string,FALSE,FALSE,Original survey variable
 knowledge_responses,raw_value,float64,TRUE,FALSE,Original numeric response including special missing codes
-knowledge_responses,correct,int32,TRUE,FALSE,Correct 1 or incorrect 0; non-substantive and system missing stay null
-knowledge_responses,response_status,string,FALSE,FALSE,answered or non_substantive or source_missing
+knowledge_responses,correct,int32,TRUE,FALSE,Conventional correctness: correct 1; incorrect and observed DK or blank 0; absent and invalid null
+knowledge_responses,response_status,string,FALSE,FALSE,Original response status or wave_absent; consult response_reason for reviewed nonanswer subtype
 knowledge_responses,missing_code,string,TRUE,FALSE,Original special missing code or system; null for substantive responses
 knowledge_scores,poll_id,string,FALSE,TRUE,Stable poll identifier
 knowledge_scores,respondent_id,string,FALSE,TRUE,Original survey ID or documented file-scoped row ID
 knowledge_scores,wave,int32,FALSE,TRUE,Source pre or post wave numbered 1 or 2
 knowledge_scores,n_items,int32,FALSE,FALSE,Full battery denominator
 knowledge_scores,n_observed,int32,FALSE,FALSE,Number of substantively answered items
-knowledge_scores,n_correct,int32,FALSE,FALSE,Number correct among all battery items
-knowledge_scores,score_zero_filled,float64,FALSE,FALSE,n_correct divided by n_items; missing responses count as zero only in this score
+knowledge_scores,n_correct,int32,TRUE,FALSE,Number correct among all battery items
+knowledge_scores,score,float64,TRUE,FALSE,Fixed-denominator conventional proportion correct within observed forms; unavailable questionnaire remains null
 knowledge_responses,raw_text,string,TRUE,FALSE,Original reviewed text response; null for numeric items
 people,poll_id,string,FALSE,TRUE,poll id
 people,respondent_id,string,FALSE,TRUE,respondent id
@@ -144,16 +144,15 @@ respondent_knowledge,source_row,int32,FALSE,FALSE,One-based row in the poll sour
 respondent_knowledge,item_id,string,FALSE,TRUE,Canonical knowledge item; consult knowledge_items for battery definition
 respondent_knowledge,wave,int32,FALSE,TRUE,Canonical knowledge wave 1 or 2; consult source item metadata for fieldwork wave
 respondent_knowledge,source_column,string,FALSE,FALSE,Original source variable scored under the canonical item definition
-respondent_knowledge,correct,int32,TRUE,FALSE,Correct 1 or incorrect 0; raw missingness preserved as null
-respondent_knowledge,correct_zero_filled,int32,FALSE,FALSE,Explicit fixed-denominator score: missing correctness counts as zero
-respondent_knowledge,response_status,string,FALSE,FALSE,Original canonical response status retained alongside zero-filled score
+respondent_knowledge,correct,int32,TRUE,FALSE,Conventional correctness: correct 1; incorrect and observed DK or blank 0; absent and invalid null
+respondent_knowledge,response_status,string,FALSE,FALSE,Original item response status with confirmed questionnaire absence identified
 historical_knowledge_items,poll_id,string,FALSE,TRUE,Stable poll identifier
 historical_knowledge_items,respondent_id,string,FALSE,TRUE,Canonical respondent identity in people
 historical_knowledge_items,historical_respondent_id,string,TRUE,FALSE,Historical aggregate ID; null where no transferable historical ID exists
 historical_knowledge_items,source_row,int32,FALSE,FALSE,One-based row in the poll source
 historical_knowledge_items,item_id,string,FALSE,TRUE,Item in the historical T1 and T2 score
 historical_knowledge_items,wave,int32,FALSE,TRUE,Historical score wave 1 or 2
-historical_knowledge_items,correct,int32,TRUE,FALSE,Historical item correctness; missing source answers remain null where the historical denominator varies
+historical_knowledge_items,correct,int32,TRUE,FALSE,Conventional correctness: correct 1; incorrect and observed DK or blank 0; absent and invalid null
 briefing_reading,poll_id,string,FALSE,TRUE,Stable poll identifier
 briefing_reading,respondent_id,string,FALSE,TRUE,Canonical respondent identity in people
 briefing_reading,historical_respondent_id,string,TRUE,FALSE,Historical aggregate ID; null where no transferable historical ID exists
@@ -169,7 +168,7 @@ analysis_participants,source_row,int32,FALSE,FALSE,One-based row in source file;
 analysis_participants,identity_basis,string,FALSE,FALSE,Source ID or file-scoped row identifier
 analysis_participants,arm,string,TRUE,FALSE,Observed treatment or participation category; not necessarily randomized; climate completed denotes all sessions and post survey; invited_noncompleter does not imply no attendance
 analysis_participants,assignment,string,TRUE,FALSE,Assigned or invited group where identified in the source
-analysis_participants,attended,bool,TRUE,FALSE,Event attendance classification; source evidence or explicitly marked absence inference; null when unresolved; see attendance_basis
+analysis_participants,attended,bool,TRUE,FALSE,Harmonized event attendance: verified empty immediate-post questionnaires imply false; source and prior attendance evidence are retained separately; null where unresolved or the questionnaire was not collected
 analysis_participants,panel,bool,FALSE,FALSE,"Selected analysis-panel membership, requiring both selected comparison scores; original sample restrictions retained. Not eligibility for every phase contrast"
 analysis_participants,small_group_id,string,TRUE,FALSE,Source discussion-group identifier where observed
 analysis_participants,cluster_id,string,TRUE,FALSE,Cluster for study inference; Tanzania uses village
@@ -243,7 +242,6 @@ california_knowledge_responses,poll_id,string,FALSE,FALSE,Stable poll identifier
 california_knowledge_responses,respondent_id,string,FALSE,TRUE,Original participant source ID
 california_knowledge_responses,source_row,int32,FALSE,FALSE,One-based source survey row
 california_knowledge_responses,paired,bool,FALSE,FALSE,Both arrival and departure questionnaires are observed
-california_knowledge_responses,wave_present,bool,FALSE,FALSE,At least one answer in the full wave questionnaire
 california_knowledge_responses,wave,int32,FALSE,TRUE,Arrival wave 2 or departure wave 3
 california_knowledge_responses,item_number,int32,FALSE,TRUE,Question number 27 through 34
 california_knowledge_responses,source_column,string,FALSE,FALSE,Wave-specific source column
@@ -253,12 +251,12 @@ california_knowledge_scores,poll_id,string,FALSE,FALSE,Stable poll identifier
 california_knowledge_scores,respondent_id,string,FALSE,TRUE,Original participant source ID
 california_knowledge_scores,source_row,int32,FALSE,FALSE,One-based source survey row
 california_knowledge_scores,paired,bool,FALSE,FALSE,Both arrival and departure questionnaires are observed
-california_knowledge_scores,wave_present,bool,FALSE,FALSE,At least one answer in the full wave questionnaire
+california_knowledge_scores,wave_observed,bool,FALSE,FALSE,At least one answer in the full wave questionnaire
 california_knowledge_scores,wave,int32,FALSE,TRUE,Arrival wave 2 or departure wave 3
 california_knowledge_scores,n_items,int32,FALSE,FALSE,Fixed denominator of eight factual questions
 california_knowledge_scores,n_answered,int32,FALSE,FALSE,Number with a recorded source answer
 california_knowledge_scores,n_correct,int32,TRUE,FALSE,Number answered correctly; null for absent questionnaire
-california_knowledge_scores,score_zero_filled,float64,TRUE,FALSE,Number correct divided by eight within an observed questionnaire; absent wave remains null
+california_knowledge_scores,score,float64,TRUE,FALSE,Number correct divided by eight within an observed questionnaire; absent wave remains null
 analysis_participants,age,float64,TRUE,FALSE,Baseline age in years; BTP 2007 uses survey year minus birth year
 analysis_participants,education,float64,TRUE,FALSE,Reviewed source-specific education grouping: 0; 0.5; 1; categories do not establish common credentials across polls
 analysis_participants,minority,float64,TRUE,FALSE,Source-derived historical minority indicator; missing where no reviewed harmonization exists
@@ -272,6 +270,7 @@ analysis_attitudes,maximum,float64,FALSE,FALSE,Baseline policy attitude; see doc
 analysis_attitudes,label,string,FALSE,FALSE,Baseline policy attitude; see docs/analysis-tables.md
 analysis_attitudes,evidence,string,FALSE,FALSE,Baseline policy attitude; see docs/analysis-tables.md
 analysis_attitudes,construction,string,FALSE,FALSE,Baseline policy attitude; see docs/analysis-tables.md
+analysis_attitudes,is_primary,bool,FALSE,FALSE,TRUE selects the plain missing-preserved definition; FALSE identifies an explicitly named midpoint-imputed alternative of the same construct
 analysis_attitude_responses,poll_id,string,FALSE,TRUE,Baseline policy attitude; see docs/analysis-tables.md
 analysis_attitude_responses,source_dataset,string,FALSE,TRUE,Baseline policy attitude; see docs/analysis-tables.md
 analysis_attitude_responses,respondent_id,string,FALSE,TRUE,Baseline policy attitude; see docs/analysis-tables.md
@@ -300,7 +299,7 @@ analysis_phase_participants,source_row,int32,FALSE,FALSE,One-based row in source
 analysis_phase_participants,identity_basis,string,FALSE,FALSE,Source ID or file-scoped row identifier
 analysis_phase_participants,arm,string,TRUE,FALSE,Observed treatment or participation category; not necessarily randomized; climate completed denotes all sessions and post survey; invited_noncompleter does not imply no attendance
 analysis_phase_participants,assignment,string,TRUE,FALSE,Assigned or invited group where identified in the source
-analysis_phase_participants,attended,bool,TRUE,FALSE,Event attendance classification; source evidence or explicitly marked absence inference; null when unresolved; see attendance_basis
+analysis_phase_participants,attended,bool,TRUE,FALSE,Harmonized event attendance: verified empty immediate-post questionnaires imply false; source and prior attendance evidence are retained separately; null where unresolved or the questionnaire was not collected
 analysis_phase_participants,panel,bool,FALSE,FALSE,"Selected analysis-panel membership, requiring both selected comparison scores; original sample restrictions retained. Not eligibility for every phase contrast"
 analysis_phase_participants,small_group_id,string,TRUE,FALSE,Source discussion-group identifier where observed
 analysis_phase_participants,cluster_id,string,TRUE,FALSE,Cluster for study inference; Tanzania uses village
@@ -439,10 +438,10 @@ tanzania_attitude_responses,response_status,string,FALSE,FALSE,answered nonrespo
 tanzania_attitude_responses,value,float64,TRUE,FALSE,Citizen response normalized using fixed source endpoints; no weighting
 analysis_participants,attendance_basis,string,FALSE,FALSE,source_indicator; source_session_records; observed_post_questionnaire; reviewed_attendance_evidence; historical_sample_membership; retained_source_classification; inferred_absent_post_questionnaire; or unknown
 analysis_phase_participants,attendance_basis,string,FALSE,FALSE,source_indicator; source_session_records; observed_post_questionnaire; reviewed_attendance_evidence; historical_sample_membership; retained_source_classification; inferred_absent_post_questionnaire; or unknown
-analysis_item_responses,knowledge_response,string,TRUE,FALSE,correct; incorrect; or dk for explicit do-not-know or cannot-say responses; null for other missingness or unrecoverable scored-only responses
+analysis_item_responses,knowledge_response,string,TRUE,FALSE,Correct or incorrect or dk; observed blank with zero credit is conventionally dk while response_reason preserves raw blankness; null for invalid unavailable or unrecoverable subtype
 analysis_item_responses,response_reason,string,FALSE,FALSE,Source response classification kept separate from correctness and questionnaire presence
 analysis_item_responses,source_response_label,string,TRUE,FALSE,Original source value label or explicitly documented answer label; null when unavailable
-analysis_phase_item_responses,knowledge_response,string,TRUE,FALSE,correct; incorrect; or dk for explicit do-not-know or cannot-say responses; null for other missingness or unrecoverable scored-only responses
+analysis_phase_item_responses,knowledge_response,string,TRUE,FALSE,Correct or incorrect or dk; observed blank with zero credit is conventionally dk while response_reason preserves raw blankness; null for invalid unavailable or unrecoverable subtype
 analysis_phase_item_responses,response_reason,string,FALSE,FALSE,Source response classification kept separate from correctness and questionnaire presence
 analysis_phase_item_responses,source_response_label,string,TRUE,FALSE,Original source value label or explicitly documented answer label; null when unavailable
 analysis_phase_attitudes,poll_id,string,FALSE,TRUE,poll id
@@ -469,3 +468,76 @@ analysis_phase_attitude_responses,source_response_label,string,TRUE,FALSE,Origin
 analysis_phase_attitude_responses,response_status,string,FALSE,FALSE,answered; non_substantive; invalid_response; blank; source_missing; absent_form
 analysis_phase_attitude_responses,wave_observed,bool,TRUE,FALSE,Independent source questionnaire presence; not inferred from item correctness or attendance
 analysis_phase_attitude_responses,value,float64,TRUE,FALSE,Offered substantive integer response normalized by fixed endpoints; all nonanswers missing; no midpoint imputation
+analysis_participants,attendance_before_post_rule,bool,TRUE,FALSE,Attendance classification from source evidence and existing cohort rules before applying the empty immediate-post questionnaire rule; not necessarily a literal source flag
+analysis_participants,attendance_basis_before_post_rule,string,FALSE,FALSE,Basis of attendance_before_post_rule before the harmonized post-questionnaire override
+analysis_participants,attendance_evidence_before_post_rule,string,FALSE,FALSE,Original attendance evidence retained before the harmonized post-questionnaire override
+analysis_phase_participants,attendance_before_post_rule,bool,TRUE,FALSE,Attendance classification from source evidence and existing cohort rules before applying the empty immediate-post questionnaire rule; not necessarily a literal source flag
+analysis_phase_participants,attendance_basis_before_post_rule,string,FALSE,FALSE,Basis of attendance_before_post_rule before the harmonized post-questionnaire override
+analysis_phase_participants,attendance_evidence_before_post_rule,string,FALSE,FALSE,Original attendance evidence retained before the harmonized post-questionnaire override
+knowledge_responses,knowledge_response,string,TRUE,FALSE,Correct or incorrect or dk; observed blank with zero credit is conventionally dk while response_reason preserves raw blankness; null for invalid unavailable or unrecoverable subtype
+knowledge_responses,response_reason,string,FALSE,FALSE,Reviewed response reason independent of conventional numeric correctness
+knowledge_responses,source_response_label,string,TRUE,FALSE,Original source response label retained verbatim
+knowledge_responses,wave_observed,bool,TRUE,FALSE,Source questionnaire observed; false absent; null unestablished
+knowledge_responses,correct_before_standardization,int32,TRUE,FALSE,Prior scorer output before shared response and questionnaire-presence standardization; not a raw answer
+respondent_knowledge,knowledge_response,string,TRUE,FALSE,Correct or incorrect or dk; observed blank with zero credit is conventionally dk while response_reason preserves raw blankness; null for invalid unavailable or unrecoverable subtype
+respondent_knowledge,response_reason,string,FALSE,FALSE,Reviewed response reason independent of conventional numeric correctness
+respondent_knowledge,source_response_label,string,TRUE,FALSE,Original source response label retained verbatim
+respondent_knowledge,wave_observed,bool,TRUE,FALSE,Source questionnaire observed; false absent; null unestablished
+respondent_knowledge,correct_before_standardization,int32,TRUE,FALSE,Prior scorer output before shared response and questionnaire-presence standardization; not a raw answer
+historical_knowledge_items,knowledge_response,string,TRUE,FALSE,Correct or incorrect or dk; observed blank with zero credit is conventionally dk while response_reason preserves raw blankness; null for invalid unavailable or unrecoverable subtype
+historical_knowledge_items,response_reason,string,FALSE,FALSE,Reviewed response reason independent of conventional numeric correctness
+historical_knowledge_items,source_response_label,string,TRUE,FALSE,Original source response label retained verbatim
+historical_knowledge_items,wave_observed,bool,TRUE,FALSE,Source questionnaire observed; false absent; null unestablished
+historical_knowledge_items,correct_before_standardization,int32,TRUE,FALSE,Prior scorer output before shared response and questionnaire-presence standardization; not a raw answer
+california_knowledge_responses,knowledge_response,string,TRUE,FALSE,Correct or incorrect or dk; observed blank with zero credit is conventionally dk while response_reason preserves raw blankness; null for invalid unavailable or unrecoverable subtype
+california_knowledge_responses,response_reason,string,FALSE,FALSE,Reviewed response reason independent of conventional numeric correctness
+california_knowledge_responses,source_response_label,string,TRUE,FALSE,Original source response label retained verbatim
+california_knowledge_responses,wave_observed,bool,TRUE,FALSE,Source questionnaire observed; false absent; null unestablished
+respondent_knowledge,raw_value,float64,TRUE,FALSE,Unmodified numeric source response including nonanswer codes
+respondent_knowledge,raw_text,string,TRUE,FALSE,Unmodified text source response
+historical_knowledge_items,raw_value,float64,TRUE,FALSE,Unmodified numeric source response including nonanswer codes
+historical_knowledge_items,raw_text,string,TRUE,FALSE,Unmodified text source response
+respondent_knowledge,missing_code,string,TRUE,FALSE,Original raw nonanswer code or system
+historical_knowledge_items,source_column,string,FALSE,FALSE,Literal original source variable for this historical wave
+historical_knowledge_items,response_status,string,FALSE,FALSE,Source scoring or questionnaire-presence status
+knowledge_scores,wave_observed,bool,TRUE,FALSE,Source questionnaire presence; unavailable forms have null counts and score
+california_knowledge_responses,response_status,string,FALSE,FALSE,Source answer or unavailable questionnaire status
+analysis_participants,participant,bool,TRUE,FALSE,Analytic participant: harmonized attendee with observed questionnaires at every collected t0/t1/t2 stage; uncollected stages and t3 attrition do not exclude; unresolved evidence is null
+analysis_participants,exclusion_reason,string,TRUE,FALSE,"Reason analytic participation is false or unresolved: nonattendee, missing_t0_questionnaire, missing_t1_questionnaire, missing_t2_questionnaire, attendance_unknown, questionnaire_presence_unknown; null for eligible participants"
+analysis_phase_participants,participant,bool,TRUE,FALSE,Analytic participant: harmonized attendee with observed questionnaires at every collected t0/t1/t2 stage; uncollected stages and t3 attrition do not exclude; unresolved evidence is null
+analysis_phase_participants,exclusion_reason,string,TRUE,FALSE,"Reason analytic participation is false or unresolved: nonattendee, missing_t0_questionnaire, missing_t1_questionnaire, missing_t2_questionnaire, attendance_unknown, questionnaire_presence_unknown; null for eligible participants"
+analysis_knowledge_flags,poll_id,string,FALSE,TRUE,Existing phase score identity: poll id
+analysis_knowledge_flags,source_dataset,string,FALSE,TRUE,Existing phase score identity: source dataset
+analysis_knowledge_flags,respondent_id,string,FALSE,TRUE,Existing phase score identity: respondent id
+analysis_knowledge_flags,battery_id,string,FALSE,TRUE,Existing phase score identity: battery id
+analysis_knowledge_flags,wave,string,FALSE,TRUE,Existing phase score identity: wave
+analysis_knowledge_flags,wave_instance_id,string,FALSE,TRUE,Existing phase score identity: wave instance id
+analysis_knowledge_flags,original_survey_wave,string,TRUE,FALSE,Literal source questionnaire wave
+analysis_knowledge_flags,wave_role,string,FALSE,FALSE,Canonical interview stage
+analysis_knowledge_flags,n_items,int32,TRUE,FALSE,Declared full battery size; null for score-only records
+analysis_knowledge_flags,wave_observed,bool,TRUE,FALSE,Independent questionnaire presence; unknown remains null
+analysis_knowledge_flags,score,float64,TRUE,FALSE,Unchanged existing phase knowledge score
+analysis_knowledge_flags,source_row,int32,FALSE,FALSE,Participant row within the source namespace
+analysis_knowledge_flags,attended,bool,TRUE,FALSE,Existing attendance classification unchanged
+analysis_knowledge_flags,participant,bool,TRUE,FALSE,Existing eligible-participant classification unchanged
+analysis_knowledge_flags,exclusion_reason,string,TRUE,FALSE,Existing participant eligibility reason
+analysis_knowledge_flags,n_item_rows,int32,TRUE,FALSE,Available canonical item records; null without item evidence
+analysis_knowledge_flags,n_blank,int32,TRUE,FALSE,Raw system blanks or explicitly recorded skips; excludes DK and refusal; null without item evidence
+analysis_knowledge_flags,n_system_blank,int32,TRUE,FALSE,Empty raw values classified source_missing or blank; null without item evidence
+analysis_knowledge_flags,n_recorded_blank,int32,TRUE,FALSE,Explicit source skip or blank code with nonempty raw response; null without item evidence
+analysis_knowledge_flags,n_dk,int32,TRUE,FALSE,Explicit source DK responses; not inferred from blankness; null without item evidence
+analysis_knowledge_flags,n_substantive,int32,TRUE,FALSE,Source responses classified answered; null without item evidence
+analysis_knowledge_flags,n_refused,int32,TRUE,FALSE,Explicit source refusals; null without item evidence
+analysis_knowledge_flags,n_unclassified_nonanswer,int32,TRUE,FALSE,Nonanswers whose subtype is not established; null without item evidence
+analysis_knowledge_flags,n_invalid,int32,TRUE,FALSE,Reviewed invalid response codes; null without item evidence
+analysis_knowledge_flags,n_scored_only,int32,TRUE,FALSE,Scored items without interpretable original response categories; null without item evidence
+analysis_knowledge_flags,n_unreviewed,int32,TRUE,FALSE,Source codes whose response semantics remain unreviewed; null without item evidence
+analysis_knowledge_flags,blank_item_ids,string,TRUE,FALSE,Pipe-separated item IDs with raw blanks
+analysis_knowledge_flags,blank_source_columns,string,TRUE,FALSE,Pipe-separated original columns with raw blanks
+analysis_knowledge_flags,blank_source_rows,string,TRUE,FALSE,Pipe-separated item source rows with raw blanks
+analysis_knowledge_flags,item_evidence,bool,FALSE,FALSE,At least one item record is available
+analysis_knowledge_flags,complete_item_evidence,bool,FALSE,FALSE,Available item rows equal the full declared battery size
+analysis_knowledge_flags,any_blank,bool,TRUE,FALSE,Any raw item blank in an observed form; null without interpretable evidence
+analysis_knowledge_flags,all_blank,bool,TRUE,FALSE,Every raw item blank in a complete observed battery; null for absent or incomplete evidence
+analysis_knowledge_flags,zero_score,bool,TRUE,FALSE,Observed finite phase score equals zero; null when unavailable
+analysis_knowledge_flags,zero_pattern,string,TRUE,FALSE,Raw explanation of zero score: all_blank; all_explicit_dk; some_substantive_answers; other_nonanswers_or_unresolved; unresolved_item_evidence

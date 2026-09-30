@@ -1,10 +1,6 @@
 knowledge_form_unavailable <- function(poll, observed) {
   stopifnot(length(poll) == length(observed), is.logical(observed))
-  # Preserve the pending returned-blank-form decision in SM-08.
-  unavailable <- !observed %in% TRUE
-  pending_poll <- poll == "san-mateo-2008"
-  unavailable[pending_poll] <- observed[pending_poll] %in% FALSE
-  unavailable
+  !observed %in% TRUE
 }
 
 mask_reviewed_knowledge_items <- function(items, presence) {
@@ -214,8 +210,7 @@ questionnaire_form_evidence <- function(survey, poll, waves = NULL) {
     }
     explicitly_absent <- switch(poll,
       "cpl-1996" = as.numeric(survey$part) %in% 2,
-      "san-mateo-2008" = as.numeric(survey$participant) %in% 0 &
-        is.na(survey$t2QSTGRP),
+      "san-mateo-2008" = !observed,
       "uk-eu-1995" = as.numeric(survey$part) %in% 0 & !observed,
       "uk-health-1998" = as.numeric(survey$manwkend) %in% 0,
       "uk-crime-1994" = as.numeric(survey$part) %in% 0,
@@ -249,6 +244,8 @@ questionnaire_form_evidence <- function(survey, poll, waves = NULL) {
       ),
       evidence_basis = dplyr::case_when(
         observed ~ "observed_full_questionnaire_answers",
+        poll == "san-mateo-2008" & explicitly_absent ~
+          "empty_post_questionnaire",
         explicitly_absent ~ "source_indicator_and_empty_questionnaire",
         form$wave == "arrival" ~
           "empty_arrival_form_administrative_missingness_possible",

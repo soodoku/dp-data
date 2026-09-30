@@ -276,10 +276,65 @@ test_that("definitions match historical or approved values by IDs", {
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "zeguo-2005"
   ]), 1L)
-  # NIC-12 adds 1,159 attitude-index and 28 extremity missing values.
+  nic <- read_poll_survey("nic-1996")
+  nic_forms <- questionnaire_form_contract("nic-1996")
+  no_answers <- function(fields) {
+    answered <- lapply(nic[fields], function(value) {
+      if (is.character(value)) !is.na(value) & nzchar(trimws(value))
+      else !is.na(value)
+    })
+    rowSums(do.call(cbind, answered)) == 0L
+  }
+  selected <- round(as.numeric(nic$PART)) == 1
+  missing_baseline <- no_answers(nic_forms$fields[[1]])
+  missing_exit <- no_answers(nic_forms$fields[[2]])
+  missing_followup <- round(as.numeric(nic$PART3)) != 1
+  expect_equal(nic$source_row[selected & missing_baseline],
+    c(1L, 23L, 240L, 710L, 775L)
+  )
+  expect_equal(nic$source_row[selected & missing_exit],
+    c(17L, 23L, 444L, 445L, 862L, 885L)
+  )
+  expect_equal(sum(selected & missing_followup), 79L)
+  missing_pair <- sum(selected & (missing_baseline | missing_followup))
+  missing_any <- missing_baseline | missing_exit | missing_followup
+  missing_all <- sum(selected & missing_any)
+  expect_equal(missing_pair, 79L)
+  expect_equal(missing_all, 83L)
+  nic_missing <- c(
+    t1know = 5L, t1knowr = 5L, t12know = 6L,
+    t2know = 79L, t2knowr = 79L,
+    t1knowcor2 = missing_all, t12knowcor = missing_all,
+    stats::setNames(rep(missing_pair, 8L), c(
+      "t1knowcor", "t1knowrcor", "knowgain", "knowgain2",
+      "logpk", "tobitpk", "knowgainr", "knowgainr2"
+    ))
+  )
+  nic_parity <- parity[parity$poll_id == "nic-1996", ]
+  expect_equal(nic_parity$missingness_differences[
+    match(names(nic_missing), nic_parity$legacy_field)
+  ], unname(nic_missing))
+  # Four age, 1,159 attitude-index and 28 extremity changes precede the
+  # source-form masks. Historical knowledge uses delayed source Time 3.
+  expect_equal(sum(nic_parity$missingness_differences),
+    4L + 1159L + 28L + sum(nic_missing)
+  )
+  san_mateo <- read_poll_survey("san-mateo-2008")
+  empty_post <- san_mateo[san_mateo$PARTICIPANTID %in% 1467, ]
+  post_fields <- questionnaire_form_contract("san-mateo-2008")$fields[[1]]
+  expect_equal(nrow(empty_post), 1L)
+  expect_true(all(vapply(empty_post[post_fields], function(value) {
+    all(is.na(value) | (is.character(value) & !nzchar(trimws(value))))
+  }, logical(1))))
+  san_mateo_parity <- parity[
+    parity$poll_id == "san-mateo-2008" &
+      parity$legacy_field %in% eu_knowledge_fields,
+  ]
+  expect_setequal(san_mateo_parity$legacy_field, eu_knowledge_fields)
+  expect_equal(san_mateo_parity$missingness_differences, rep(1L, 10L))
   expect_equal(sum(parity$missingness_differences[
-    parity$poll_id == "nic-1996"
-  ]), 4L + 1159L + 28L + 72L)
+    parity$poll_id == "san-mateo-2008"
+  ]), 10L)
   expect_equal(sum(parity$missingness_differences[
     parity$poll_id == "btp-national-2003"
   ]), 245L)
@@ -292,7 +347,8 @@ test_that("definitions match historical or approved values by IDs", {
       "uk-general-election-1997",
       "australia-republic-1999", "btp-health-education-2005",
       "new-haven-2004", "zeguo-2005", "nic-1996",
-      "btp-national-2003", "bulgaria-crime-2002", "uk-health-1998"
+      "btp-national-2003", "bulgaria-crime-2002", "uk-health-1998",
+      "san-mateo-2008"
     )
   ]), 1L)
   health_fields <- c("t1knowcor", "t2know", "t1knowrcor", "t2knowr",

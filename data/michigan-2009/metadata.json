@@ -533,5 +533,38 @@
       "qa_notes": "Temporary XLSX print-layout copy preserves all nonempty source cells; single horizontal page; A3 landscape. Original XLS unchanged. Question text and source-field mappings legible on sampled pages.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
-  ]
+  ],
+  "issues": {
+    "evidence_index": [
+      {
+        "issue_id": "MI-02",
+        "title": "MI-02: Nine shared items and the report's eleven items compare different waves",
+        "evidence_path": "../../docs/poll-issues.md#mi-02"
+      },
+      {
+        "issue_id": "MI-03",
+        "title": "MI-03: Preserve the single out-of-range arrival placement code",
+        "evidence_path": "../../docs/poll-issues.md#mi-03"
+      },
+      {
+        "issue_id": "MI-04",
+        "title": "MI-04: Five arrival factual responses were incorrectly excluded from the public source",
+        "evidence_path": "../../docs/poll-issues.md#mi-04"
+      },
+      {
+        "issue_id": "MI-05",
+        "title": "MI-05: Scientific answers were mistaken for nonessential text",
+        "evidence_path": "../../docs/poll-issues.md#mi-05"
+      },
+      {
+        "issue_id": "MI-06",
+        "title": "MI-06: Comparable factual and placement knowledge at arrival",
+        "evidence_path": "../../docs/poll-issues.md#mi-06"
+      }
+    ],
+    "reviewed_flags": [],
+    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "structured_register_path": "../../metadata/poll_issues.json",
+    "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
+  }
 }

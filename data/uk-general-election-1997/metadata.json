@@ -655,5 +655,23 @@
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
-  ]
+  ],
+  "issues": {
+    "evidence_index": [
+      {
+        "issue_id": "UKGE-03",
+        "title": "UKGE-03: Post Labour minimum-wage knowledge uses the baseline response",
+        "evidence_path": "../../docs/poll-issues.md#ukge-03"
+      },
+      {
+        "issue_id": "UKGE-05",
+        "title": "UKGE-05: Exclude a source nonparticipant from early group metrics",
+        "evidence_path": "../../docs/poll-issues.md#ukge-05"
+      }
+    ],
+    "reviewed_flags": [],
+    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "structured_register_path": "../../metadata/poll_issues.json",
+    "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
+  }
 }

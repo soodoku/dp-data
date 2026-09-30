@@ -365,5 +365,43 @@
       "qa_notes": "Original DOCX bytes retained. Body text and table content compared; representative tables and figures visually checked. Pagination differs: 28 physical PDF pages retain the source document's discontinuous printed page numbers. Narrow original table headings wrap; all values and footnotes remain readable. Original remains authoritative.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
-  ]
+  ],
+  "issues": {
+    "evidence_index": [
+      {
+        "issue_id": "A1RC-01",
+        "title": "A1RC-01 — label the published climate cohort as completed (corrected)",
+        "evidence_path": "../../docs/poll-issues.md#a1rc-01"
+      },
+      {
+        "issue_id": "A1RC-02",
+        "title": "A1RC-02 — retain observed climate-poll gender in the participant export (corrected)",
+        "evidence_path": "../../docs/poll-issues.md#a1rc-02"
+      },
+      {
+        "issue_id": "A1RC-03",
+        "title": "A1RC-03 — distinguish factual-item nonanswers from substantive responses (corrected)",
+        "evidence_path": "../../docs/poll-issues.md#a1rc-03"
+      },
+      {
+        "issue_id": "A1RC-04",
+        "title": "A1RC-04 — reproduce the climate report's attitude ratings (checked)",
+        "evidence_path": "../../docs/poll-issues.md#a1rc-04"
+      },
+      {
+        "issue_id": "A1RC-05",
+        "title": "A1RC-05 — restore the original room-plus-schedule group identity (approved)",
+        "evidence_path": "../../docs/poll-issues.md#a1rc-05"
+      },
+      {
+        "issue_id": "NEW-01",
+        "title": "NEW-01 — Newer-poll mode labels and reported sample totals",
+        "evidence_path": "../../docs/poll-issues.md#new-01"
+      }
+    ],
+    "reviewed_flags": [],
+    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "structured_register_path": "../../metadata/poll_issues.json",
+    "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
+  }
 }

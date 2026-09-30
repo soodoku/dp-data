@@ -25,7 +25,9 @@ san_mateo_knowledge <- function(survey, wave) {
   items <- purrr::imap(keys, function(correct, item) {
     field <- paste0(if (wave == 2L) "t2" else "", "Q", item)
     value <- btp_source_codes(survey, field, c(1:6, 8, 9))
-    as.numeric(value %in% correct)
+    score <- as.numeric(value %in% correct)
+    score[knowledge_invalid_codes("san-mateo-2008", field, value)] <- NA_real_
+    score
   }) |>
     tibble::as_tibble() |>
     as.matrix()

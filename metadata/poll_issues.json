@@ -1,0 +1,359 @@
+{
+  "schema_version": 1,
+  "interpretation": "Reviewed unusual observations are retained in the main data. Flags support sensitivity analyses; they do not establish false records or authorize recoding. Detailed evidence and all earlier issue entries remain in docs/poll-issues.md.",
+  "robustness": {
+    "status": "planned_downstream_analysis",
+    "table": "output/analysis/analysis_knowledge_flags.parquet",
+    "main_sample": "Retain observed all-zero knowledge scores and wholly blank knowledge batteries. Apply the separately approved whole-questionnaire participation rules.",
+    "comparisons": [
+      {
+        "id": "exclude_zero_exit",
+        "rule": "Exclude people whose observed knowledge score is zero at the exit endpoint of the selected battery and wave pair."
+      },
+      {
+        "id": "exclude_zero_either_endpoint",
+        "rule": "Exclude people whose observed knowledge score is zero at either endpoint of the selected battery and wave pair."
+      },
+      {
+        "id": "exclude_wholly_blank_exit",
+        "rule": "Exclude people whose complete knowledge battery is raw blank at the exit endpoint."
+      },
+      {
+        "id": "exclude_wholly_blank_either_endpoint",
+        "rule": "Exclude people whose complete knowledge battery is raw blank at either endpoint."
+      }
+    ],
+    "report": [
+      "poll-specific sample sizes",
+      "zero-score and wholly-blank shares",
+      "estimates and uncertainty before and after exclusion",
+      "changes in group coverage"
+    ],
+    "denominator": "Observed questionnaires with finite knowledge scores, within one source representation, battery and wave. Raw blank patterns require full item evidence; a missing questionnaire is never an observed zero.",
+    "warning": "An exit zero-score share above 10 percent warrants review, but is not an automatic exclusion threshold. Missing flags or unavailable item evidence must not be treated as negative evidence."
+  },
+  "issues": [
+    {
+      "issue_id": "SM-11",
+      "poll_id": "san-mateo-2008",
+      "title": "Blank knowledge batteries and zero scores",
+      "classification": "unusual_observation",
+      "decision": "retain_main_analysis",
+      "reviewed": "2026-09-30",
+      "evidence_anchor": "sm-11",
+      "observation": "Twenty-two wholly blank baseline batteries occur within otherwise answered questionnaires. Explicit DK codes are absent from all sixteen native knowledge fields despite DK response options.",
+      "interpretation": "Earlier conversion of DK to missing is plausible but unproven. Preserve raw blanks and distinguish them from source-recorded DK.",
+      "sources": [
+        {
+          "path": "data/san-mateo-2008/reports/san-mateo-results.pdf",
+          "locator": "PDF page 15 / printed page 12, Information Gains"
+        },
+        {
+          "path": "data/san-mateo-2008/questionnaire-pre.pdf",
+          "locator": "PDF pages 6–8, Q19–Q26"
+        }
+      ],
+      "publication_bridge": {
+        "n": 239,
+        "baseline_correct_counts": [
+          20,
+          7,
+          62,
+          97,
+          10,
+          21,
+          47,
+          14
+        ],
+        "exit_correct_counts": [
+          40,
+          46,
+          119,
+          139,
+          72,
+          46,
+          79,
+          65
+        ],
+        "item_percentages_reproduce": true,
+        "qualification": "The report used a nine-item denominator for its eight-item index; SM-03 corrects this. The current participant sample excludes the separately verified absent exit questionnaire of ID 1467, leaving 238."
+      },
+      "cohorts": {
+        "historical_239": {
+          "cohort_n": 239,
+          "baseline": {
+            "observed_n": 239,
+            "zero_n": 79,
+            "zero_rate_observed": 0.3305439330543933,
+            "wholly_blank_zero_n": 22,
+            "answered_zero_n": 57,
+            "unavailable_n": 0,
+            "historical_zero_without_form_mask_n": 79
+          },
+          "exit": {
+            "observed_n": 238,
+            "zero_n": 20,
+            "zero_rate_observed": 0.08403361344537816,
+            "wholly_blank_zero_n": 4,
+            "answered_zero_n": 16,
+            "unavailable_n": 1,
+            "historical_zero_without_form_mask_n": 21
+          },
+          "either": {
+            "zero_n": 90,
+            "zero_rate_cohort": 0.37656903765690375,
+            "any_wholly_blank_zero_n": 24,
+            "zero_without_either_blank_n": 66,
+            "both_waves_zero_n": 9
+          }
+        },
+        "corrected_238": {
+          "cohort_n": 238,
+          "baseline": {
+            "observed_n": 238,
+            "zero_n": 79,
+            "zero_rate_observed": 0.3319327731092437,
+            "wholly_blank_zero_n": 22,
+            "answered_zero_n": 57,
+            "unavailable_n": 0,
+            "historical_zero_without_form_mask_n": 79
+          },
+          "exit": {
+            "observed_n": 238,
+            "zero_n": 20,
+            "zero_rate_observed": 0.08403361344537816,
+            "wholly_blank_zero_n": 4,
+            "answered_zero_n": 16,
+            "unavailable_n": 0,
+            "historical_zero_without_form_mask_n": 20
+          },
+          "either": {
+            "zero_n": 90,
+            "zero_rate_cohort": 0.37815126050420167,
+            "any_wholly_blank_zero_n": 24,
+            "zero_without_either_blank_n": 66,
+            "both_waves_zero_n": 9
+          }
+        }
+      },
+      "footnote": "San Mateo retains observed questionnaires with blank knowledge batteries. The original file lacks explicit DK codes, so prior conversion to missing is possible but unverified; sensitivity analyses distinguish zero scores from wholly blank batteries.",
+      "n_items": 8
+    },
+    {
+      "issue_id": "ZG-10",
+      "poll_id": "zeguo-2005",
+      "title": "High share of zero exit knowledge scores",
+      "classification": "unusual_observation",
+      "decision": "retain_main_analysis",
+      "reviewed": "2026-09-30",
+      "evidence_anchor": "zg-10",
+      "observation": "Seventy-two of 235 matched respondents score zero at exit; 28 batteries are wholly blank and 44 have at least one recorded answer, including possible explicit DK responses.",
+      "interpretation": "The high zero-score share is unusual but does not establish false records. The blank-quiz people answered other exit questions, and source knowledge aliases reproduce original SPSS cells. A zero denotes no credited answers on a four-item battery. Battery length and response patterns must be considered when comparing polls.",
+      "sources": [
+        {
+          "path": "data/zeguo-2005/papers/china-zeguo-bjps.pdf",
+          "locator": "PDF page 8 / printed page 442, Table 5"
+        },
+        {
+          "path": "data/zeguo-2005/source-materials/questionnaire.pdf",
+          "locator": "PDF page 8, Q43–Q46"
+        },
+        {
+          "path": "data/zeguo-2005/source-materials/questionnaire-alternative.pdf",
+          "locator": "PDF page 8, Q43–Q46"
+        }
+      ],
+      "publication_bridge": {
+        "n": 235,
+        "baseline_correct_counts": [
+          48,
+          92,
+          99,
+          54
+        ],
+        "exit_correct_counts": [
+          74,
+          124,
+          116,
+          85
+        ],
+        "item_means_reproduce": true,
+        "retained_mean_baseline": 0.31170212765957445,
+        "retained_mean_exit": 0.42446808510638295,
+        "exclude_blank_exit_n": 207,
+        "exclude_blank_exit_mean_baseline": 0.32971014492753625,
+        "exclude_blank_exit_mean_exit": 0.48188405797101447,
+        "qualification": "Publication means use 235 matched questionnaires, whereas historical group analyses use 233. One of 28 blank exits, p36, has no historical group assignment. Retain the three approved Q45 source-reconciliation credits."
+      },
+      "cohorts": {
+        "matched_235": {
+          "cohort_n": 235,
+          "baseline": {
+            "observed_n": 235,
+            "zero_n": 83,
+            "zero_rate_observed": 0.35319148936170214,
+            "wholly_blank_zero_n": 23,
+            "answered_zero_n": 60,
+            "unavailable_n": 0,
+            "historical_zero_without_form_mask_n": 83
+          },
+          "exit": {
+            "observed_n": 235,
+            "zero_n": 72,
+            "zero_rate_observed": 0.30638297872340425,
+            "wholly_blank_zero_n": 28,
+            "answered_zero_n": 44,
+            "unavailable_n": 0,
+            "historical_zero_without_form_mask_n": 72
+          },
+          "either": {
+            "zero_n": 115,
+            "zero_rate_cohort": 0.48936170212765956,
+            "any_wholly_blank_zero_n": 46,
+            "zero_without_either_blank_n": 69,
+            "both_waves_zero_n": 40
+          }
+        },
+        "grouped_233": {
+          "cohort_n": 233,
+          "baseline": {
+            "observed_n": 233,
+            "zero_n": 82,
+            "zero_rate_observed": 0.351931330472103,
+            "wholly_blank_zero_n": 23,
+            "answered_zero_n": 59,
+            "unavailable_n": 0,
+            "historical_zero_without_form_mask_n": 82
+          },
+          "exit": {
+            "observed_n": 233,
+            "zero_n": 71,
+            "zero_rate_observed": 0.30472103004291845,
+            "wholly_blank_zero_n": 27,
+            "answered_zero_n": 44,
+            "unavailable_n": 0,
+            "historical_zero_without_form_mask_n": 71
+          },
+          "either": {
+            "zero_n": 114,
+            "zero_rate_cohort": 0.4892703862660944,
+            "any_wholly_blank_zero_n": 45,
+            "zero_without_either_blank_n": 69,
+            "both_waves_zero_n": 39
+          }
+        }
+      },
+      "footnote": "Zeguo retains72 zero exit knowledge scores among235 matched respondents (30.6%), including28 wholly blank batteries. Published knowledge means include these cases. Sensitivity analyses distinguish exclusion of all-zero scores from exclusion of wholly blank batteries.",
+      "n_items": 4
+    }
+  ],
+  "poll_prefixes": {
+    "UKC": [
+      "uk-crime-1994"
+    ],
+    "UKEU": [
+      "uk-eu-1995"
+    ],
+    "UKM": [
+      "uk-monarchy-1996"
+    ],
+    "UKGE": [
+      "uk-general-election-1997"
+    ],
+    "UKH": [
+      "uk-health-1998"
+    ],
+    "NIC": [
+      "nic-1996"
+    ],
+    "NIC2": [
+      "nic2-2003"
+    ],
+    "CPL": [
+      "cpl-1996"
+    ],
+    "WTU": [
+      "wtu-1996"
+    ],
+    "SWE": [
+      "swepco-1996"
+    ],
+    "AUS": [
+      "australia-republic-1999"
+    ],
+    "DK": [
+      "denmark-euro-2000"
+    ],
+    "BTP07": [
+      "btp-2007"
+    ],
+    "BTPGE": [
+      "btp-general-election-2004"
+    ],
+    "BTPHE": [
+      "btp-health-education-2005"
+    ],
+    "BTPOP": [
+      "btp-online-primaries-2004"
+    ],
+    "BTPN": [
+      "btp-national-2003"
+    ],
+    "PR": [
+      "btp-presidential-primaries-2004"
+    ],
+    "BGC": [
+      "bulgaria-crime-2002"
+    ],
+    "CA": [
+      "california-whats-next-2011"
+    ],
+    "EURO": [
+      "europolis-2009"
+    ],
+    "TE": [
+      "tomorrows-europe-2007"
+    ],
+    "VT": [
+      "vermont-energy-2007"
+    ],
+    "SM": [
+      "san-mateo-2008"
+    ],
+    "MI": [
+      "michigan-2009"
+    ],
+    "NI": [
+      "northern-ireland-2007"
+    ],
+    "NH": [
+      "new-haven-2004"
+    ],
+    "ZG": [
+      "zeguo-2005"
+    ],
+    "MAR": [
+      "marousi-2006"
+    ],
+    "TZ": [
+      "tanzania-2015"
+    ],
+    "A1R19": [
+      "america-in-one-room-2019"
+    ],
+    "A1R": [
+      "america-in-one-room-2019"
+    ],
+    "A1RC": [
+      "a1r-climate-2021"
+    ],
+    "AMR": [
+      "amr-2024"
+    ],
+    "NEW": [
+      "a1r-climate-2021",
+      "amr-2024"
+    ],
+    "X": []
+  }
+}

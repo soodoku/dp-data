@@ -65,7 +65,8 @@ build_historical_items <- function(people) {
       tibble::as_tibble(matrix) |>
         dplyr::mutate(source_row = identity$source_row) |>
         tidyr::pivot_longer(
-          -"source_row", names_to = "item_id", values_to = "correct"
+          -"source_row",
+          names_to = "item_id", values_to = "correct"
         ) |>
         dplyr::mutate(
           poll_id = poll_id,
@@ -83,7 +84,8 @@ build_historical_items <- function(people) {
           "source_row", "item_id", "wave", "correct"
         )
     }) |>
-      purrr::list_rbind()
+      purrr::list_rbind() |>
+      apply_knowledge_contract(survey, poll_id, "historical")
   }) |>
     purrr::list_rbind()
 }

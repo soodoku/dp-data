@@ -1,3 +1,5 @@
+source(project_path("R", "knowledge_contract.R"))
+
 knowledge_poll_ids <- function() {
   sources <- read_metadata("survey_sources")$poll_id
   sources[sources %in% read_metadata("knowledge_batteries")$poll_id]
@@ -250,7 +252,8 @@ build_poll_knowledge <- function(poll_id) {
     )
   stopifnot(nrow(raw) == nrow(participants) * nrow(items))
   responses <- score_knowledge_responses(raw, items) |>
-    apply_knowledge_overrides(poll_id, survey)
+    apply_knowledge_overrides(poll_id, survey) |>
+    apply_knowledge_contract(survey, poll_id)
   respondents <- participants |>
     dplyr::select(
       "poll_id", "respondent_id", "arm", "source_row", "battery_row", "female"
@@ -267,9 +270,12 @@ build_poll_knowledge <- function(poll_id) {
     dplyr::group_by(.data$poll_id, .data$respondent_id, .data$wave) |>
     dplyr::summarise(
       n_items = dplyr::n(),
-      n_observed = sum(!is.na(.data$correct)),
-      n_correct = sum(.data$correct, na.rm = TRUE),
-      score_zero_filled = .data$n_correct / .data$n_items,
+      n_observed = sum(!is.na(.data$correct_before_standardization)),
+      wave_observed = dplyr::first(.data$wave_observed),
+      n_correct = dplyr::if_else(wave_observed %in% TRUE,
+        sum(.data$correct, na.rm = TRUE), NA_integer_
+      ),
+      score = .data$n_correct / .data$n_items,
       .groups = "drop"
     )
   list(
@@ -294,6 +300,8 @@ read_knowledge_battery <- function(poll_id) {
 }
 
 compare_knowledge_batteries <- function(tables) {
+  tables$knowledge_responses$correct <-
+    tables$knowledge_responses$correct_before_standardization
   items <- read_metadata("knowledge_items")
   poll_ids <- unique(tables$respondents$poll_id)
   comparisons <- purrr::map(poll_ids, function(poll_id) {

@@ -700,5 +700,171 @@
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed. Chinese and English checked visually after system Fontconfig fix; no missing CJK glyphs in inspected pages.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
-  ]
+  ],
+  "issues": {
+    "evidence_index": [
+      {
+        "issue_id": "ZG-01",
+        "title": "ZG-01: Component joins and three item-coding overrides are explicit",
+        "evidence_path": "../../docs/poll-issues.md#zg-01"
+      },
+      {
+        "issue_id": "ZG-02",
+        "title": "ZG-02: Scale the village-road rating and use post-wave main roads",
+        "evidence_path": "../../docs/poll-issues.md#zg-02"
+      },
+      {
+        "issue_id": "ZG-03",
+        "title": "ZG-03: Two road indices make covariance numerically singular",
+        "evidence_path": "../../docs/poll-issues.md#zg-03"
+      },
+      {
+        "issue_id": "ZG-04",
+        "title": "ZG-04: One baseline age is 1; the paired departure age is 33",
+        "evidence_path": "../../docs/poll-issues.md#zg-04"
+      },
+      {
+        "issue_id": "ZG-05",
+        "title": "ZG-05: The Wenchang Main Avenue slot duplicates the main-roads index",
+        "evidence_path": "../../docs/poll-issues.md#zg-05"
+      },
+      {
+        "issue_id": "ZG-06",
+        "title": "ZG-06: All nine attitude batteries have been reconstructed and source versions compared",
+        "evidence_path": "../../docs/poll-issues.md#zg-06"
+      },
+      {
+        "issue_id": "ZG-07",
+        "title": "ZG-07: Thirty-four people have no matched participant departure questionnaire",
+        "evidence_path": "../../docs/poll-issues.md#zg-07"
+      },
+      {
+        "issue_id": "ZG-08",
+        "title": "ZG-08: Township Image has two authored definitions",
+        "evidence_path": "../../docs/poll-issues.md#zg-08"
+      },
+      {
+        "issue_id": "ZG-09",
+        "title": "ZG-09: Preserve out-of-range knowledge codes as missing",
+        "evidence_path": "../../docs/poll-issues.md#zg-09"
+      },
+      {
+        "issue_id": "ZG-10",
+        "title": "ZG-10: Many exit knowledge scores are zero, including wholly blank batteries",
+        "evidence_path": "../../docs/poll-issues.md#zg-10"
+      }
+    ],
+    "reviewed_flags": [
+      {
+        "issue_id": "ZG-10",
+        "poll_id": "zeguo-2005",
+        "title": "High share of zero exit knowledge scores",
+        "classification": "unusual_observation",
+        "decision": "retain_main_analysis",
+        "reviewed": "2026-09-30",
+        "evidence_anchor": "zg-10",
+        "observation": "Seventy-two of 235 matched respondents score zero at exit; 28 batteries are wholly blank and 44 have at least one recorded answer, including possible explicit DK responses.",
+        "interpretation": "The high zero-score share is unusual but does not establish false records. The blank-quiz people answered other exit questions, and source knowledge aliases reproduce original SPSS cells. A zero denotes no credited answers on a four-item battery. Battery length and response patterns must be considered when comparing polls.",
+        "sources": [
+          {
+            "path": "data/zeguo-2005/papers/china-zeguo-bjps.pdf",
+            "locator": "PDF page 8 / printed page 442, Table 5"
+          },
+          {
+            "path": "data/zeguo-2005/source-materials/questionnaire.pdf",
+            "locator": "PDF page 8, Q43–Q46"
+          },
+          {
+            "path": "data/zeguo-2005/source-materials/questionnaire-alternative.pdf",
+            "locator": "PDF page 8, Q43–Q46"
+          }
+        ],
+        "publication_bridge": {
+          "n": 235,
+          "baseline_correct_counts": [
+            48,
+            92,
+            99,
+            54
+          ],
+          "exit_correct_counts": [
+            74,
+            124,
+            116,
+            85
+          ],
+          "item_means_reproduce": true,
+          "retained_mean_baseline": 0.311702127659574,
+          "retained_mean_exit": 0.424468085106383,
+          "exclude_blank_exit_n": 207,
+          "exclude_blank_exit_mean_baseline": 0.329710144927536,
+          "exclude_blank_exit_mean_exit": 0.481884057971014,
+          "qualification": "Publication means use 235 matched questionnaires, whereas historical group analyses use 233. One of 28 blank exits, p36, has no historical group assignment. Retain the three approved Q45 source-reconciliation credits."
+        },
+        "cohorts": {
+          "matched_235": {
+            "cohort_n": 235,
+            "baseline": {
+              "observed_n": 235,
+              "zero_n": 83,
+              "zero_rate_observed": 0.353191489361702,
+              "wholly_blank_zero_n": 23,
+              "answered_zero_n": 60,
+              "unavailable_n": 0,
+              "historical_zero_without_form_mask_n": 83
+            },
+            "exit": {
+              "observed_n": 235,
+              "zero_n": 72,
+              "zero_rate_observed": 0.306382978723404,
+              "wholly_blank_zero_n": 28,
+              "answered_zero_n": 44,
+              "unavailable_n": 0,
+              "historical_zero_without_form_mask_n": 72
+            },
+            "either": {
+              "zero_n": 115,
+              "zero_rate_cohort": 0.48936170212766,
+              "any_wholly_blank_zero_n": 46,
+              "zero_without_either_blank_n": 69,
+              "both_waves_zero_n": 40
+            }
+          },
+          "grouped_233": {
+            "cohort_n": 233,
+            "baseline": {
+              "observed_n": 233,
+              "zero_n": 82,
+              "zero_rate_observed": 0.351931330472103,
+              "wholly_blank_zero_n": 23,
+              "answered_zero_n": 59,
+              "unavailable_n": 0,
+              "historical_zero_without_form_mask_n": 82
+            },
+            "exit": {
+              "observed_n": 233,
+              "zero_n": 71,
+              "zero_rate_observed": 0.304721030042918,
+              "wholly_blank_zero_n": 27,
+              "answered_zero_n": 44,
+              "unavailable_n": 0,
+              "historical_zero_without_form_mask_n": 71
+            },
+            "either": {
+              "zero_n": 114,
+              "zero_rate_cohort": 0.489270386266094,
+              "any_wholly_blank_zero_n": 45,
+              "zero_without_either_blank_n": 69,
+              "both_waves_zero_n": 39
+            }
+          }
+        },
+        "footnote": "Zeguo retains72 zero exit knowledge scores among235 matched respondents (30.6%), including28 wholly blank batteries. Published knowledge means include these cases. Sensitivity analyses distinguish exclusion of all-zero scores from exclusion of wholly blank batteries.",
+        "n_items": 4
+      }
+    ],
+    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "structured_register_path": "../../metadata/poll_issues.json",
+    "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
+  }
 }

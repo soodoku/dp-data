@@ -8,9 +8,12 @@ btp_source_codes <- function(survey, field, allowed) {
 }
 
 btp_float_knowledge <- function(before, after) {
-  baseline <- as_historical_float(rowMeans(before))
-  post <- as_historical_float(rowMeans(after))
-  joint <- as_historical_float(rowMeans(before * after))
+  baseline <- as_historical_float(score_knowledge(before))
+  post <- as_historical_float(score_knowledge(after))
+  joint <- as_historical_float(score_knowledge(
+    before * after,
+    rowSums(!is.na(before)) > 0L & rowSums(!is.na(after)) > 0L
+  ))
   tibble::tibble(
     knowledge_t1 = baseline, knowledge_t2 = post, knowledge_joint = joint,
     knowledge_gain = post - baseline, knowledge_gain_joint = post - joint,

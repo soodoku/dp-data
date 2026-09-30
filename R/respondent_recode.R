@@ -53,19 +53,38 @@ as_historical_float <- function(value) {
   readBin(bytes, what = "double", n = length(value), size = 4)
 }
 
-summarise_historical_knowledge <- function(before, after,
-                                           baseline = rowMeans(before)) {
+score_knowledge <- function(items, observed = NULL) {
+  stopifnot(
+    is.matrix(items), ncol(items) > 0L,
+    all(is.na(items) | items %in% 0:1)
+  )
+  if (is.null(observed)) observed <- rowSums(!is.na(items)) > 0L
+  stopifnot(
+    is.logical(observed), length(observed) == nrow(items),
+    all(observed %in% TRUE | rowSums(!is.na(items)) == 0L)
+  )
+  value <- rowSums(items == 1, na.rm = TRUE) / ncol(items)
+  value[!observed %in% TRUE] <- NA_real_
+  value
+}
+
+summarise_historical_knowledge <- function(
+  before, after,
+  baseline = score_knowledge(before, before_observed),
+  before_observed = NULL, after_observed = NULL) {
   stopifnot(
     identical(dim(before), dim(after)),
     all(is.na(before) | before %in% 0:1),
-    all(is.na(after) | after %in% 0:1),
-    all(rowSums(is.na(before)) %in% c(0L, ncol(before))),
-    all(rowSums(is.na(after)) %in% c(0L, ncol(after)))
+    all(is.na(after) | after %in% 0:1)
   )
+  if (is.null(before_observed)) before_observed <- rowSums(!is.na(before)) > 0L
+  if (is.null(after_observed)) after_observed <- rowSums(!is.na(after)) > 0L
   tibble::tibble(
     knowledge_t1 = baseline,
-    knowledge_t2 = rowMeans(after),
-    knowledge_joint = rowMeans(before * after)
+    knowledge_t2 = score_knowledge(after, after_observed),
+    knowledge_joint = score_knowledge(
+      before * after, before_observed & after_observed
+    )
   ) |>
     dplyr::mutate(
       knowledge_gain = .data$knowledge_t2 - .data$knowledge_t1,

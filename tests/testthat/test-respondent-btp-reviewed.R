@@ -245,14 +245,10 @@ test_that("Reviewed US polls reproduce historical values and missingness", {
       "san-mateo-2008" = as.numeric(san_mateo_historical_ids(survey, survey))
     )
     expected <- benchmark[benchmark$dpnum == case$number, ]
-    if (case$poll %in% c(
-      "btp-health-education-2005", "btp-general-election-2004"
-    )) {
-      for (field in names(mapping)) {
-        expected[[field]] <- approved_reference_values(
-          case$poll, field, expected$caseid, expected[[field]]
-        )
-      }
+    for (field in names(mapping)) {
+      expected[[field]] <- approved_reference_values(
+        case$poll, field, expected$caseid, expected[[field]]
+      )
     }
     index <- match(expected$caseid, ids)
     expect_false(anyNA(index))

@@ -1,5 +1,6 @@
 source(project_path("R", "source_australia.R"))
 source(project_path("R", "source_new_haven.R"))
+source(project_path("R", "source_questionnaire_presence.R"))
 
 analysis_attendance_sources <- function() {
   tibble::tibble(
@@ -343,12 +344,78 @@ btp_national_attendance <- function(survey) {
   dplyr::if_else(is.na(count), NA, count > 0)
 }
 
+analysis_post_form_evidence <- function(
+  people, scores, survey_reader = read_poll_survey
+) {
+  keys <- c("poll_id", "source_dataset", "respondent_id")
+  immediate <- if ("wave_role" %in% names(scores)) {
+    scores$wave_role == "post_deliberation"
+  } else {
+    scores$wave == "t2"
+  }
+  presence <- scores[immediate %in% TRUE, ] |>
+    dplyr::summarise(
+      absent_exit = any(wave_observed %in% FALSE),
+      observed_exit = any(wave_observed %in% TRUE),
+      .by = dplyr::all_of(keys)
+    )
+  stopifnot(!any(presence$absent_exit & presence$observed_exit))
+  unknown <- presence |>
+    dplyr::filter(!absent_exit, !observed_exit) |>
+    dplyr::inner_join(people, by = keys, relationship = "one-to-one")
+  if (nrow(unknown)) {
+    polls <- unique(unknown$poll_id)
+    supported <- read_metadata("respondent_sources")$poll_id
+    polls <- intersect(polls, supported)
+    # This bridge only returns reviewed full-form contracts. ACRS-only
+    # Australians and sources lacking an immediate wave are not such returns.
+    surveys <- stats::setNames(lapply(polls, survey_reader), polls)
+    reviewed <- analysis_reviewed_presence(unknown, surveys)
+    if (!is.null(reviewed)) {
+      empty <- reviewed |>
+        dplyr::filter(wave == "t2", !wave_observed %in% TRUE) |>
+        dplyr::select(dplyr::all_of(keys))
+      stopifnot(!anyDuplicated(empty[keys]))
+      position <- match(do.call(paste, empty[keys]),
+        do.call(paste, presence[keys])
+      )
+      stopifnot(!anyNA(position), !any(presence$observed_exit[position]))
+      presence$absent_exit[position] <- TRUE
+    }
+  }
+  ni <- people |>
+    dplyr::filter(poll_id == "northern-ireland-2007",
+      source_dataset == "control"
+    )
+  if (nrow(ni)) {
+    raw <- attendance_source_rows(
+      ni, survey_reader("northern-ireland-2007"), "cserial"
+    )
+    fields <- grep("^t2q[0-9]", names(raw), value = TRUE)
+    observed <- questionnaire_form_answers(raw, fields)
+    ni_presence <- ni |>
+      dplyr::select(dplyr::all_of(keys)) |>
+      dplyr::mutate(absent_exit = !observed, observed_exit = observed)
+    presence <- presence |>
+      dplyr::anti_join(ni_presence, by = keys) |>
+      dplyr::bind_rows(ni_presence)
+  }
+  presence
+}
+
 analysis_attendance_contract <- function(
   participants, phase_participants, phase_scores,
   survey_reader = read_poll_survey, climate = NULL
 ) {
   keys <- c("poll_id", "source_dataset", "respondent_id")
   people <- phase_participants
+  prior <- rep(FALSE, nrow(people))
+  if ("attendance_before_post_rule" %in% names(people)) {
+    prior <- !is.na(people$attendance_basis_before_post_rule)
+    people$attended[prior] <- people$attendance_before_post_rule[prior]
+    people$attendance_evidence[prior] <-
+      people$attendance_evidence_before_post_rule[prior]
+  }
   stopifnot(!anyDuplicated(people[keys]), !anyDuplicated(participants[keys]))
   people$attendance_basis <- dplyr::case_when(
     is.na(people$attended) ~ "unknown",
@@ -357,6 +424,10 @@ analysis_attendance_contract <- function(
       "reviewed_attendance_evidence",
     TRUE ~ "retained_source_classification"
   )
+  if ("attendance_basis_before_post_rule" %in% names(people)) {
+    people$attendance_basis[prior] <-
+      people$attendance_basis_before_post_rule[prior]
+  }
   australia_rows <- which(people$poll_id == "australia-republic-1999" &
                             people$source_dataset == "historical")
   if (length(australia_rows)) {
@@ -500,22 +571,21 @@ analysis_attendance_contract <- function(
       "Verified same-source row bridge:", bridge$attendance_evidence[fill]
     )
   }
-  exit_presence <- phase_scores |>
-    dplyr::filter(wave == "t2") |>
-    dplyr::summarise(
-      absent_exit = any(wave_observed %in% FALSE),
-      observed_exit = any(wave_observed %in% TRUE),
-      .by = dplyr::all_of(keys)
-    )
-  stopifnot(!any(exit_presence$absent_exit & exit_presence$observed_exit))
+  people$attendance_before_post_rule <- people$attended
+  people$attendance_basis_before_post_rule <- people$attendance_basis
+  people$attendance_evidence_before_post_rule <- people$attendance_evidence
+  exit_presence <- analysis_post_form_evidence(
+    people, phase_scores, survey_reader
+  )
   people <- people |>
     dplyr::left_join(exit_presence, by = keys, relationship = "one-to-one")
-  inferred <- is.na(people$attended) & people$absent_exit %in% TRUE
+  inferred <- !people$attended %in% FALSE & people$absent_exit %in% TRUE
   people$attended[inferred] <- FALSE
   people$attendance_basis[inferred] <- "inferred_absent_post_questionnaire"
   people$attendance_evidence[inferred] <- paste(
-    "Nonattendance inferred from an absent immediate post-deliberation",
-    "questionnaire; not a direct participation observation"
+    "Harmonized nonattendance: no answers in the immediate post-deliberation",
+    "questionnaire. Prior roster or session classification is retained",
+    "in attendance_before_post_rule and its evidence columns."
   )
   people <- people |>
     dplyr::select(-"absent_exit", -"observed_exit") |>
@@ -534,5 +604,9 @@ analysis_attendance_contract <- function(
   )
   participants$attended <- people$attended[position]
   participants$attendance_basis <- people$attendance_basis[position]
+  for (column in c(
+    "attendance_before_post_rule", "attendance_basis_before_post_rule",
+    "attendance_evidence_before_post_rule"
+  )) participants[[column]] <- people[[column]][position]
   list(participants = participants, phase_participants = people)
 }

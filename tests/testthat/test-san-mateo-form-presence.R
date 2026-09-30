@@ -7,8 +7,8 @@ test_that("San Mateo unavailable departure forms have missing knowledge", {
   )]
   raw_fields <- raw_fields[grepl("^t2[qQ]", raw_fields)]
   expect_length(raw_fields, 90L)
-  absent <- survey$participant == 0 & is.na(survey$t2QSTGRP)
-  expect_equal(sum(absent), 1567L)
+  absent <- rowSums(!is.na(as.matrix(survey[raw_fields]))) == 0L
+  expect_equal(sum(absent), 1568L)
   expect_true(all(is.na(as.matrix(survey[absent, raw_fields]))))
   expect_true(all(survey$t2Q19_cor[absent] == 0))
   expect_true(all(survey$t2pkind[absent] == 0))
@@ -19,7 +19,7 @@ test_that("San Mateo unavailable departure forms have missing knowledge", {
   expect_true(all(evidence$wave_observed[position[absent]] %in% FALSE))
   scored <- san_mateo_knowledge(survey, 2L)
   expect_true(all(is.na(scored[absent, ])))
-  expect_equal(sum(is.na(scored)), 1567L * 8L)
+  expect_equal(sum(is.na(scored)), 1568L * 8L)
   measures <- build_san_mateo_individual(survey)
   expected_missing <- c(
     "knowledge_t2", "knowledge_joint", "knowledge_gain",
@@ -40,17 +40,17 @@ test_that("San Mateo unavailable departure forms have missing knowledge", {
   expect_true(all(!current$panel[people]))
 })
 
-test_that("San Mateo preserves the unresolved header and observed blank quiz", {
+test_that("San Mateo headers cannot substitute for questionnaire answers", {
   survey <- read_poll_survey("san-mateo-2008")
   pending <- which(survey$PARTICIPANTID %in% 1467)
   expect_length(pending, 1L)
   expect_equal(survey$participant[pending], 1)
   expect_equal(survey$t2QSTGRP[pending], 1)
   evidence <- questionnaire_form_evidence(survey, "san-mateo-2008", "t2")
-  expect_true(is.na(evidence$wave_observed[
+  expect_false(evidence$wave_observed[
     match(survey$source_row[pending], evidence$source_row)
-  ]))
-  expect_true(all(san_mateo_knowledge(survey[pending, ], 2L) == 0))
+  ])
+  expect_true(all(is.na(san_mateo_knowledge(survey[pending, ], 2L))))
 
   observed <- which(survey$participant == 1 & !is.na(survey$t2Q1))[1L]
   blank <- survey[observed, ]
@@ -69,7 +69,7 @@ test_that("San Mateo preserves the unresolved header and observed blank quiz", {
 })
 
 
-test_that("San Mateo pending case survives the typed scoring pipeline", {
+test_that("San Mateo empty form retains identity without attendance or score", {
   survey <- read_poll_survey("san-mateo-2008")
   pending_row <- survey$source_row[survey$PARTICIPANTID %in% 1467]
   keys <- c("poll_id", "source_dataset", "respondent_id")
@@ -79,18 +79,18 @@ test_that("San Mateo pending case survives the typed scoring pipeline", {
     )) |>
       dplyr::filter(poll_id == "san-mateo-2008", source_row == pending_row)
     expect_equal(nrow(people), 2L)
-    expect_true(all(people$attended))
-    expect_true(all(people$panel))
+    expect_true(all(!people$attended))
+    expect_true(all(!people$panel))
     scores <- arrow::read_parquet(project_path(
       "output", "analysis", paste0(prefix, "_scores.parquet")
     )) |>
       dplyr::semi_join(people, by = keys) |>
       dplyr::filter(wave == "t2")
     expect_equal(nrow(scores), 2L)
-    expect_true(all(scores$score == 0))
-    expect_true(all(scores$n_correct == 0L))
+    expect_true(all(is.na(scores$score)))
+    expect_true(all(is.na(scores$n_correct)))
     if (prefix == "analysis_phase") {
-      expect_true(all(is.na(scores$wave_observed)))
+      expect_true(all(!scores$wave_observed))
     }
   }
 })

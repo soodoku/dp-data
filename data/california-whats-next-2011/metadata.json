@@ -613,5 +613,53 @@
       "qa_notes": "All pages visually checked; source body text and original annotation additions retained. Original documents unchanged; no contact fields found.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
-  ]
+  ],
+  "issues": {
+    "evidence_index": [
+      {
+        "issue_id": "CA-01",
+        "title": "CA-01: The available source and deposited battery use different samples",
+        "evidence_path": "../../docs/poll-issues.md#ca-01"
+      },
+      {
+        "issue_id": "CA-02",
+        "title": "CA-02: Party-control scoring is correct in the current knowledge build",
+        "evidence_path": "../../docs/poll-issues.md#ca-02"
+      },
+      {
+        "issue_id": "CA-03",
+        "title": "CA-03: The report's eight-question knowledge result is a different measure",
+        "evidence_path": "../../docs/poll-issues.md#ca-03"
+      },
+      {
+        "issue_id": "CA-04",
+        "title": "CA-04: Preserve arrival/exit respondents with no telephone baseline (corrected)",
+        "evidence_path": "../../docs/poll-issues.md#ca-04"
+      },
+      {
+        "issue_id": "CA-05",
+        "title": "CA-05: Preserve the single out-of-range departure knowledge code",
+        "evidence_path": "../../docs/poll-issues.md#ca-05"
+      },
+      {
+        "issue_id": "CA-06",
+        "title": "CA-06: Archived eighth-item answer key conflicts with the final report",
+        "evidence_path": "../../docs/poll-issues.md#ca-06"
+      },
+      {
+        "issue_id": "CA-07",
+        "title": "CA-07: Archived departure initiative index duplicates a question",
+        "evidence_path": "../../docs/poll-issues.md#ca-07"
+      },
+      {
+        "issue_id": "CA-08",
+        "title": "CA-08: Retained arrival and exit policy ratings were missing from typed outputs",
+        "evidence_path": "../../docs/poll-issues.md#ca-08"
+      }
+    ],
+    "reviewed_flags": [],
+    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "structured_register_path": "../../metadata/poll_issues.json",
+    "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
+  }
 }

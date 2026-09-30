@@ -869,5 +869,43 @@
       "qa_notes": "PDF companion to unchanged master XLS. Established scripts/16_build_document_previews.py prepare_workbook layout;16A3landscape pages. All source cell content retained; numeric0.6/0.7/0.8 serialization differs only in floating-point printed representation. Visually checked pages1,10,11,16; wavecolumns andall9knowledge question texts retained. List of Parties carried through; fonts/reflow may differ.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
-  ]
+  ],
+  "issues": {
+    "evidence_index": [
+      {
+        "issue_id": "EURO-02",
+        "title": "EURO-02: Aggregate identity is distinct from deposited-battery ordering",
+        "evidence_path": "../../docs/poll-issues.md#euro-02"
+      },
+      {
+        "issue_id": "EURO-03",
+        "title": "EURO-03: Structural missingness and demographic meaning are preserved",
+        "evidence_path": "../../docs/poll-issues.md#euro-03"
+      },
+      {
+        "issue_id": "EURO-04",
+        "title": "EURO-04: Unknown birthplace does not establish minority status (corrected)",
+        "evidence_path": "../../docs/poll-issues.md#euro-04"
+      },
+      {
+        "issue_id": "EURO-05",
+        "title": "EURO-05: Published knowledge results mostly reproduce; three baseline cells do not",
+        "evidence_path": "../../docs/poll-issues.md#euro-05"
+      },
+      {
+        "issue_id": "EURO-06",
+        "title": "EURO-06: Birth year 1900 is an unsupported age (corrected)",
+        "evidence_path": "../../docs/poll-issues.md#euro-06"
+      },
+      {
+        "issue_id": "EURO-07",
+        "title": "EURO-07: Make both attitude labels match the numeric direction",
+        "evidence_path": "../../docs/poll-issues.md#euro-07"
+      }
+    ],
+    "reviewed_flags": [],
+    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "structured_register_path": "../../metadata/poll_issues.json",
+    "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
+  }
 }

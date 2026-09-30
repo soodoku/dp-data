@@ -341,5 +341,33 @@
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
-  ]
+  ],
+  "issues": {
+    "evidence_index": [
+      {
+        "issue_id": "MAR-01",
+        "title": "MAR-01 — derived post knowledge zeros need an item-level and wave bridge",
+        "evidence_path": "../../docs/poll-issues.md#mar-01"
+      },
+      {
+        "issue_id": "MAR-02",
+        "title": "MAR-02 — Original source bridges the report; partial quizzes were zeroed as whole scores",
+        "evidence_path": "../../docs/poll-issues.md#mar-02"
+      },
+      {
+        "issue_id": "MAR-03",
+        "title": "MAR-03: Publish the original seven-item answers at each verified phase",
+        "evidence_path": "../../docs/poll-issues.md#mar-03"
+      },
+      {
+        "issue_id": "MAR-04",
+        "title": "MAR-04: Mayor-performance responses lack verified scale instructions",
+        "evidence_path": "../../docs/poll-issues.md#mar-04"
+      }
+    ],
+    "reviewed_flags": [],
+    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "structured_register_path": "../../metadata/poll_issues.json",
+    "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
+  }
 }

@@ -657,5 +657,58 @@
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
-  ]
+  ],
+  "issues": {
+    "evidence_index": [
+      {
+        "issue_id": "NIC-11",
+        "title": "NIC-11: Use immediate exit in the analysis pair and retain delayed follow-up",
+        "evidence_path": "../../docs/poll-issues.md#nic-11"
+      },
+      {
+        "issue_id": "NIC-03",
+        "title": "NIC-03: Correct birth-year conversion and event mode upstream",
+        "evidence_path": "../../docs/poll-issues.md#nic-03"
+      },
+      {
+        "issue_id": "NIC-05",
+        "title": "NIC-05: Shared peer-opportunity ceiling convention",
+        "evidence_path": "../../docs/poll-issues.md#nic-05"
+      },
+      {
+        "issue_id": "NIC-06",
+        "title": "NIC-06: Baseline Bosnia answer is date-dependent in the stated rule",
+        "evidence_path": "../../docs/poll-issues.md#nic-06"
+      },
+      {
+        "issue_id": "NIC-07",
+        "title": "NIC-07: Party-placement percentages need their own analysis definition",
+        "evidence_path": "../../docs/poll-issues.md#nic-07"
+      },
+      {
+        "issue_id": "NIC-08",
+        "title": "NIC-08: Correct the clear birth-year typo and withhold unsupported ages",
+        "evidence_path": "../../docs/poll-issues.md#nic-08"
+      },
+      {
+        "issue_id": "NIC-09",
+        "title": "NIC-09: Event-exit extremity and dispersion used three baseline answers",
+        "evidence_path": "../../docs/poll-issues.md#nic-09"
+      },
+      {
+        "issue_id": "NIC-10",
+        "title": "NIC-10: Cross-poll catalog mislabeled all nine spending questions (corrected)",
+        "evidence_path": "../../docs/poll-issues.md#nic-10"
+      },
+      {
+        "issue_id": "NIC-12",
+        "title": "NIC-12: Unknown spending attitudes are missing, not neutral (approved)",
+        "evidence_path": "../../docs/poll-issues.md#nic-12"
+      }
+    ],
+    "reviewed_flags": [],
+    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "structured_register_path": "../../metadata/poll_issues.json",
+    "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
+  }
 }

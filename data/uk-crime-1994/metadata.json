@@ -651,5 +651,33 @@
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
-  ]
+  ],
+  "issues": {
+    "evidence_index": [
+      {
+        "issue_id": "UKC-01",
+        "title": "UKC-01: Post-wave root-causes index substitutes baseline policing",
+        "evidence_path": "../../docs/poll-issues.md#ukc-01"
+      },
+      {
+        "issue_id": "UKC-02",
+        "title": "UKC-02: Knowledge sample and respondent-ID conventions",
+        "evidence_path": "../../docs/poll-issues.md#ukc-02"
+      },
+      {
+        "issue_id": "UKC-03",
+        "title": "UKC-03: Issue-specific knowledge fields are absent from the historical export",
+        "evidence_path": "../../docs/poll-issues.md#ukc-03"
+      },
+      {
+        "issue_id": "UKC-04",
+        "title": "UKC-04: All five attitude indices reproduce the published paired means",
+        "evidence_path": "../../docs/poll-issues.md#ukc-04"
+      }
+    ],
+    "reviewed_flags": [],
+    "shared_rules_path": "../../docs/poll-issues.md#cross-poll-issues-for-the-eventual-schema",
+    "structured_register_path": "../../metadata/poll_issues.json",
+    "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
+  }
 }

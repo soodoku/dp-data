@@ -3,8 +3,10 @@ source(project_path("R", "source_questionnaire_presence.R"))
 source(project_path("R", "analysis_source_attitudes.R"))
 source(project_path("R", "analysis_tanzania.R"))
 source(project_path("R", "analysis_knowledge_responses.R"))
+source(project_path("R", "analysis_knowledge_missingness.R"))
 source(project_path("R", "analysis_phase_attitudes.R"))
 source(project_path("R", "analysis_marousi_items.R"))
+source(project_path("R", "analysis_participation.R"))
 
 item_display_text <- function(values) {
   replacements <- c(
@@ -433,12 +435,9 @@ analysis_historical_items <- function(catalog) {
       item_id = canonical_item_id, source_row,
       source_column = NA_character_, raw_value = NA_real_,
       raw_text = NA_character_,
-      correct = as.integer(correct),
+      correct = as.integer(correct_before_standardization),
       response_status = dplyr::if_else(
-        poll_id %in% c(
-          "btp-general-election-2004", "swepco-1996", "wtu-1996", "zeguo-2005"
-        ) & is.na(correct),
-        "wave_absent", "scored"
+        wave_observed %in% FALSE, "wave_absent", "scored"
       )
     )
   dplyr::bind_rows(
@@ -514,7 +513,8 @@ analysis_cor_items <- function(catalog) {
       source_dataset = "cor_sood", respondent_id,
       wave = paste0("t", wave),
       item_id = canonical_item_id, source_row, source_column,
-      raw_value, raw_text, correct, response_status
+      raw_value, raw_text, correct = correct_before_standardization,
+      response_status
     )
 }
 
@@ -754,6 +754,11 @@ build_analysis_tables <- function() {
   )
   participants <- attendance$participants
   phase_evidence$participants <- attendance$phase_participants
+  participation <- analysis_participation(
+    participants, phase_evidence$participants, phase_evidence$scores
+  )
+  participants <- participation$participants
+  phase_evidence$participants <- participation$phase_participants
   phase_items <- analysis_phase_items(
     items, phase_evidence$scores, arrival_items, phase_evidence$participants
   ) |>
@@ -825,6 +830,9 @@ build_analysis_tables <- function() {
     analysis_phase_participants = phase_evidence$participants,
     analysis_phase_scores = phase_evidence$scores,
     analysis_phase_item_responses = phase_items,
+    analysis_knowledge_flags = knowledge_flags(
+      phase_items, phase_evidence$participants, phase_evidence$scores
+    ),
     analysis_phase_attitudes = phase_attitudes$analysis_phase_attitudes,
     analysis_phase_attitude_responses =
       phase_attitudes$analysis_phase_attitude_responses,

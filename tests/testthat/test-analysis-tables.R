@@ -175,9 +175,10 @@ test_that("analysis exports preserve keys and canonical question IDs", {
     people, poll_id == "america-in-one-room-2019",
     source_dataset == "control"
   )
-  expect_equal(sum(a1r_people$attended), 526L)
+  expect_equal(sum(a1r_people$attended), 523L)
+  expect_equal(sum(a1r_people$attendance_before_post_rule), 526L)
   expect_equal(sum(a1r_people$panel), 1367L)
-  expect_equal(sum(a1r_people$attended & !a1r_people$panel), 3L)
+  expect_equal(sum(a1r_people$attended & !a1r_people$panel), 0L)
   expect_true(all(!is.na(a1r_people$small_group_id[a1r_people$attended])))
   expect_true(all(a1r_people$arm[a1r_people$attended] == "attended"))
   expect_equal(sum(a1r_people$arm == "recruitment_nonattender"), 2215L)
@@ -204,15 +205,17 @@ test_that("analysis exports preserve keys and canonical question IDs", {
   expect_false(anyNA(climate_people$female))
   expect_equal(sum(climate_people$arm == "completed"), 962L)
   expect_equal(sum(climate_people$arm == "invited_noncompleter"), 7018L)
-  expect_equal(sum(climate_people$attended %in% TRUE), 962L + 184L)
-  expect_equal(sum(climate_people$attended %in% FALSE), 834L + 6834L)
+  expect_equal(sum(climate_people$attended %in% TRUE), 962L)
+  expect_equal(sum(climate_people$attended %in% FALSE), 834L + 6834L + 184L)
   expect_equal(sum(is.na(climate_people$attended)), 0L)
   expect_equal(sum(climate_people$panel), 1633L)
   noncompleters <- dplyr::filter(climate_people, arm == "invited_noncompleter")
-  expect_equal(sum(noncompleters$attended), 184L)
+  expect_equal(sum(noncompleters$attended), 0L)
+  expect_equal(sum(noncompleters$attendance_before_post_rule %in% TRUE), 184L)
+  expect_equal(sum(is.na(noncompleters$attendance_before_post_rule)), 6408L)
   inferred <- noncompleters$attendance_basis ==
     "inferred_absent_post_questionnaire"
-  expect_equal(sum(inferred), 6408L)
+  expect_equal(sum(inferred), 6408L + 184L)
   ni_people <- dplyr::filter(
     people, poll_id == "northern-ireland-2007",
     source_dataset == "control"
@@ -275,7 +278,8 @@ test_that("analysis exports preserve keys and canonical question IDs", {
     "europolis-2009", "historical", "t2", 4036L, 6L,
     "new-haven-2004", "historical", "t2", 1L, 8L,
     "nic-1996", "historical", "t3", 911L - 387L, 11L,
-    "san-mateo-2008", "historical", "t2", 1567L, 8L,
+    "san-mateo-2008", "cor_sood", "t2", 1L, 8L,
+    "san-mateo-2008", "historical", "t2", 1568L, 8L,
     "swepco-1996", "historical", "t2", 1246L, 5L,
     "uk-crime-1994", "historical", "t2", 569L, 7L,
     "uk-eu-1995", "historical", "t2", 662L, 5L,
@@ -291,6 +295,18 @@ test_that("analysis exports preserve keys and canonical question IDs", {
     dplyr::count(poll_id, source_dataset, wave)
   expect_equal(actual_absent, expected_absent)
   expect_true(all(is.na(responses$correct[absent_items])))
+  zeguo <- responses[responses$poll_id == "zeguo-2005", ]
+  invalid <- rep(FALSE, nrow(zeguo))
+  for (field in unique(zeguo$source_column)) {
+    take <- which(zeguo$source_column == field)
+    invalid[take] <- knowledge_invalid_codes(
+      "zeguo-2005", field, zeguo$raw_value[take]
+    )
+  }
+  expect_equal(sum(invalid), 13L)
+  expect_true(all(is.na(zeguo$correct[invalid])))
+  expect_true(all(zeguo$response_reason[invalid] == "invalid_response"))
+  expect_false(any(zeguo$response_status[invalid] == "wave_absent"))
 })
 
 test_that("historical comparisons retain the correct source-wave pairs", {
@@ -327,16 +343,28 @@ test_that("historical comparisons retain the correct source-wave pairs", {
     2, 3809, 2, 4307,
     7, 3522, 7, 3495, 7, 2824, 7, 625, 7, 516,
     7, 693, 7, 374, 7, 225, 7, 148,
-    12, 910042,
+    12, 910042, 17, 960156,
     20, NA_real_, 20, 10000460, 20, 10004670, 20, 10011680, 20, 10012790
   )
-  unpaired <- legacy[is.na(legacy$t1know) | is.na(legacy$t2know), ]
-  expect_equal(unpaired[c("dpnum", "caseid")], expected_unpaired)
   # NIC's selected exit is source wave 2; polardata's later score is wave 3.
   expected_excluded <- dplyr::bind_rows(expected_unpaired,
     tibble::tibble(dpnum = 20, caseid = c(
       10000400, 10007580, 10007590, 10014282, 10014650
     ))
+  )
+  nic_source <- read_poll_survey("nic-1996")
+  nic_absent <- nic_source |>
+    dplyr::filter(rounded_source_code(PART) == 1,
+      !rounded_source_code(PART3) %in% 1
+    ) |>
+    dplyr::transmute(dpnum = 20, caseid = rounded_source_code(CASEID))
+  expect_equal(nrow(nic_absent), 79L)
+  expect_false(anyDuplicated(nic_absent$caseid) > 0L)
+  expected_unpaired <- dplyr::bind_rows(expected_unpaired, nic_absent) |>
+    dplyr::distinct()
+  unpaired <- legacy[is.na(legacy$t1know) | is.na(legacy$t2know), ]
+  expect_equal(dplyr::arrange(unpaired[c("dpnum", "caseid")], dpnum, caseid),
+    dplyr::arrange(expected_unpaired, dpnum, caseid)
   )
   historical_people <- people |>
     dplyr::filter(source_dataset == "historical") |>

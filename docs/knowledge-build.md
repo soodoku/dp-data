@@ -94,16 +94,21 @@ correct codes (`correct_values`), incorrect codes, and non-substantive codes.
 Multiple codes use a pipe delimiter. An observed code
 outside these lists stops the build. In `knowledge_responses`, `raw_value`
 preserves the original numeric code; `raw_text` preserves reviewed written
-answers. `correct` stays null for non-substantive responses,
-and `missing_code` distinguishes source codes from a system missing value.
+answers. `knowledge_response` distinguishes correct, incorrect, and DK when
+the source permits it. Conventional numeric `correct` gives no credit to DK,
+refusal, or a blank answer on an observed form; invalid answers and unavailable
+forms remain missing. `response_reason` and `missing_code` retain the distinction
+between source codes and system missingness.
 Descriptions come from value-label dictionaries where available and the original
 codebooks otherwise. System-missing values in cleaned source files do not reveal
 which original nonresponse code was used.
 
-`knowledge_scores` provides `n_items`, `n_observed`, `n_correct`, and
-`score_zero_filled`. The last is the historical proportion-correct score:
-the numerator is the count correct and the denominator includes the entire
-battery. It does not overwrite the response-level missing values.
+`knowledge_scores` provides `n_items`, `n_observed`, `n_correct`, `wave_observed`,
+and `score`. The score uses the full battery denominator and the count of
+correct answers; it is missing when the questionnaire is unavailable.
+`correct_before_standardization` retains the previous item scorer output for
+comparison with the deposited batteries. It is audit provenance, not evidence
+that a questionnaire was completed. No unconditional zero-filled aliases remain.
 
 ## Northern Ireland group-file correction
 

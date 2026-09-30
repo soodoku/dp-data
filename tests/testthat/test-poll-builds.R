@@ -77,9 +77,11 @@ test_that("unreviewed response codes cannot silently become missing", {
 test_that("benchmark comparisons report an additional changed scored item", {
   tables <- pilot_tables()
   baseline <- compare_knowledge_batteries(tables)
-  row <- which(!is.na(tables$knowledge_responses$correct))[[1]]
-  tables$knowledge_responses$correct[[row]] <-
-    1L - tables$knowledge_responses$correct[[row]]
+  row <- which(!is.na(
+    tables$knowledge_responses$correct_before_standardization
+  ))[[1]]
+  tables$knowledge_responses$correct_before_standardization[[row]] <-
+    1L - tables$knowledge_responses$correct_before_standardization[[row]]
   audit <- compare_knowledge_batteries(tables)
   expect_equal(
     sum(audit$summary$item_differences, na.rm = TRUE),
@@ -94,18 +96,21 @@ test_that("responses preserve missing codes and scores declare filling", {
   missing <- responses$response_status != "answered"
   expect_true(any(responses$response_status == "source_missing"))
   expect_true(any(responses$response_status == "non_substantive"))
-  expect_true(all(is.na(responses$correct[missing])))
+  expect_true(all(is.na(responses$correct_before_standardization[missing])))
   expect_true(all(!is.na(responses$missing_code[missing])))
   expect_true(all(is.na(responses$missing_code[!missing])))
-  expect_true(all(responses$correct[!missing] %in% 0:1))
+  expect_true(all(responses$correct_before_standardization[!missing] %in% 0:1))
 
   expected <- responses |>
     dplyr::group_by(.data$poll_id, .data$respondent_id, .data$wave) |>
     dplyr::summarise(
       n_items = dplyr::n(),
-      n_observed = sum(!is.na(.data$correct)),
-      n_correct = sum(.data$correct == 1L, na.rm = TRUE),
-      score_zero_filled = .data$n_correct / .data$n_items,
+      n_observed = sum(!is.na(.data$correct_before_standardization)),
+      wave_observed = dplyr::first(.data$wave_observed),
+      n_correct = dplyr::if_else(wave_observed %in% TRUE,
+        sum(.data$correct == 1L, na.rm = TRUE), NA_integer_
+      ),
+      score = .data$n_correct / .data$n_items,
       .groups = "drop"
     )
   actual <- tables$knowledge_scores |>
@@ -123,7 +128,8 @@ test_that("Northern Ireland retains original questionnaire responses", {
     "data", "northern-ireland-2007", "source-materials", "survey-original.dta"
   )
   original <- haven::read_dta(original_path)
-  expect_identical(digest::digest(file = original_path, algo = "sha256"),
+  expect_identical(
+    digest::digest(file = original_path, algo = "sha256"),
     "305c8646632cfc36ca55177771a89aa2aa38149f5ab394ec14428bf9ffa7fffa"
   )
   expect_identical(record$transformation, "lossless-parquet")
@@ -215,8 +221,8 @@ test_that("UK Health keys agree with the original correctness variables", {
     answer_column <- sub("^soph", "answer", column)
     expect_equal(
       dplyr::if_else(
-        observed$response_status == "source_missing", NA_integer_,
-        tidyr::replace_na(observed$correct, 0L)
+        is.na(observed$raw_value), NA_integer_,
+        tidyr::replace_na(observed$correct_before_standardization, 0L)
       ),
       as.numeric(survey[[answer_column]])
     )
@@ -297,7 +303,7 @@ test_that("new poll keys agree with source correctness for answered items", {
         )
       scored_column <- sub("raw$", "", item$benchmark_column)
       expect_equal(
-        observed$correct,
+        observed$correct_before_standardization,
         as.numeric(survey[[scored_column]][observed$source_row])
       )
     })
@@ -317,7 +323,9 @@ test_that("Monarchy T2 uses R5C and the deposit demonstrably repeats Q5C", {
   observed <- built$knowledge_responses |>
     dplyr::filter(.data$item_id == "knowledge-3", .data$wave == 2) |>
     dplyr::arrange(.data$source_row)
-  expect_identical(observed$correct, score(source$R5C[people$source_row]))
+  expect_identical(observed$correct_before_standardization,
+    score(source$R5C[people$source_row])
+  )
   comparison <- compare_knowledge_batteries(built)
   expect_equal(nrow(comparison$differences), 58L)
   expect_setequal(comparison$differences$source_column, "R5C")
@@ -339,7 +347,7 @@ test_that("CPL retains explicit unknown codes and original respondent IDs", {
   unknown <- built$knowledge_responses |>
     dplyr::filter(.data$raw_value == 99)
   expect_equal(nrow(unknown), 759L)
-  expect_true(all(is.na(unknown$correct)))
+  expect_true(all(is.na(unknown$correct_before_standardization)))
   expect_true(all(unknown$missing_code == "99"))
   expect_true(all(unknown$response_status == "non_substantive"))
   expect_equal(
@@ -361,7 +369,7 @@ test_that("utility keys agree with original correctness fields", {
       observed <- built$knowledge_responses |>
         dplyr::filter(.data$source_column == item$source_column)
       expect_equal(
-        tidyr::replace_na(observed$correct, 0L),
+        tidyr::replace_na(observed$correct_before_standardization, 0L),
         as.numeric(source[[scored_column]][observed$source_row])
       )
     })
@@ -377,7 +385,7 @@ test_that("WTU includes the documented post-wave wholesale category", {
   wholesale <- built$knowledge_responses |>
     dplyr::filter(.data$source_column == "USE2", .data$raw_value == 4)
   expect_equal(nrow(wholesale), 2L)
-  expect_true(all(wholesale$correct == 0L))
+  expect_true(all(wholesale$correct_before_standardization == 0L))
   expect_setequal(wholesale$respondent_id, c("20000100", "20001180"))
 })
 
@@ -390,7 +398,7 @@ test_that("election scoring separates missing codes and party-placement keys", {
   responses <- built$knowledge_responses
   negative <- responses$raw_value %in% c(-8, -9)
   expect_true(any(negative))
-  expect_true(all(is.na(responses$correct[negative])))
+  expect_true(all(is.na(responses$correct_before_standardization[negative])))
   conservative <- grepl(
     "^(redstc|taxc|wagec|euc)[12]$", responses$source_column
   )
@@ -399,11 +407,11 @@ test_that("election scoring separates missing codes and party-placement keys", {
     responses$source_column
   )
   expect_equal(
-    responses$correct[conservative & !negative],
+    responses$correct_before_standardization[conservative & !negative],
     as.integer(responses$raw_value[conservative & !negative] < 4)
   )
   expect_equal(
-    responses$correct[other_party & !negative],
+    responses$correct_before_standardization[other_party & !negative],
     as.integer(responses$raw_value[other_party & !negative] > 4)
   )
   expect_identical(

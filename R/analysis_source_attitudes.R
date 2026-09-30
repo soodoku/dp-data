@@ -42,15 +42,15 @@ source_attitude_values <- function(raw, labels, minimum, maximum, unit,
     observed %in% TRUE ~ "blank",
     TRUE ~ "source_missing"
   )
-  value <- dplyr::if_else(status == "answered", raw, NA_real_)
+  source_scale_value <- dplyr::if_else(status == "answered", raw, NA_real_)
   normalized <- rep(NA_real_, length(raw))
   if (unit != "category" && !is.na(minimum) && !is.na(maximum)) {
     stopifnot(maximum > minimum)
-    normalized <- (value - minimum) / (maximum - minimum)
+    normalized <- (source_scale_value - minimum) / (maximum - minimum)
   }
   tibble::tibble(
     raw_value = raw, source_response_label = labels,
-    response_status = status, value, normalized_value = normalized,
+    response_status = status, source_scale_value, value = normalized,
     wave_observed = observed
   )
 }
@@ -479,8 +479,10 @@ analysis_source_attitudes <- function(participants = NULL, scores = NULL) {
     !anyDuplicated(definitions[c("source_id", "source_column", "source_wave")]),
     !anyDuplicated(responses[c("source_id", "source_row", "source_column")]),
     all(is.na(responses$value[responses$response_status != "answered"])),
-    all(is.na(responses$normalized_value) |
-          dplyr::between(responses$normalized_value, 0, 1))
+    all(is.na(responses$source_scale_value[
+      responses$response_status != "answered"
+    ])),
+    all(is.na(responses$value) | dplyr::between(responses$value, 0, 1))
   )
   list(
     analysis_source_attitude_definitions = definitions,

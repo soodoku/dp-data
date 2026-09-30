@@ -1,5 +1,6 @@
 source(file.path(root, "R", "analysis_tables.R"))
 source(file.path(root, "R", "analysis_phase_recruitment.R"))
+source(file.path(root, "R", "analysis_phases.R"))
 
 marousi_phase_fixture <- function() {
   participants <- arrow::read_parquet(project_path(
@@ -29,9 +30,24 @@ test_that("Marousi recruitment preserves existing people and the full frame", {
   )
   preserved <- marousi[match(existing$respondent_id, marousi$respondent_id), ]
   expect_identical(preserved, existing)
-  expect_equal(sum(marousi$attended %in% TRUE), 159L)
+  expect_equal(sum(marousi$attended %in% TRUE), 142L)
   expect_equal(sum(is.na(marousi$attended)), 1116L)
-  expect_false(any(marousi$attended %in% FALSE))
+  expect_equal(sum(marousi$attended %in% FALSE), 17L)
+  absent <- fixture$full$scores |>
+    dplyr::filter(wave == "t2", !wave_observed) |>
+    dplyr::pull(respondent_id)
+  expect_true(all(marousi$respondent_id[marousi$attended %in% FALSE] %in%
+                    absent))
+  phase_evidence <- analysis_attendance_evidence(
+    marousi, fixture$full$scores
+  )
+  finalized <- analysis_attendance_contract(existing,
+    phase_evidence$participants, phase_evidence$scores
+  )
+  expect_equal(sum(finalized$phase_participants$attended %in% TRUE &
+                     finalized$phase_participants$poll_id == "marousi-2006"),
+    138L
+  )
   expect_equal(sum(marousi$panel), 133L)
   extra <- marousi[!marousi$respondent_id %in% existing$respondent_id, ]
   expect_true(all(grepl("^source-[0-9]+$", extra$respondent_id)))

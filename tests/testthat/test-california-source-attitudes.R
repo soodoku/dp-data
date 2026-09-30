@@ -28,8 +28,8 @@ testthat::test_that("California policy transport preserves source occasions", {
   testthat::expect_true(all(definitions$minimum == 0))
   testthat::expect_true(all(definitions$maximum == 10))
   testthat::expect_true(all(definitions$unit == "rating"))
-  testthat::expect_identical(responses$value, responses$raw_value)
-  testthat::expect_identical(responses$normalized_value,
+  testthat::expect_identical(responses$source_scale_value, responses$raw_value)
+  testthat::expect_identical(responses$value,
     responses$raw_value / 10
   )
   native_counts <- c(T2 = 401L, T3 = 412L)
@@ -84,6 +84,10 @@ testthat::test_that("California policy transport preserves source occasions", {
       "output", "analysis", paste0(name, ".parquet")
     )) |>
       dplyr::filter(poll_id != poll)
+    if ("normalized_value" %in% names(prior)) {
+      prior <- prior |>
+        dplyr::rename(source_scale_value = value, value = normalized_value)
+    }
     retained <- built[[name]] |> dplyr::filter(poll_id != poll)
     testthat::expect_setequal(names(retained), names(prior))
     testthat::expect_identical(retained[names(prior)], prior)
@@ -123,7 +127,7 @@ testthat::test_that("California no opinion differs from a substantive middle", {
       c("answered", "answered", "answered", "dk", "blank",
         "invalid_response", "invalid_response")
     )
-    testthat::expect_equal(response$normalized_value,
+    testthat::expect_equal(response$value,
       c(0, 0.5, 1, rep(NA_real_, 4))
     )
   }

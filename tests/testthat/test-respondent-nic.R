@@ -22,10 +22,10 @@ test_that("NIC percentage scores use documented inclusive bounds", {
   forms <- list(
     source_form_observed(baseline_fields),
     source_form_observed(exit_fields),
-    rep(TRUE, nrow(survey))
+    rounded_source_code(survey$PART3) %in% 1L
   )
   expect_equal(vapply(forms, function(x) sum(!x), integer(1)),
-    c(6L, 279L, 0L)
+    c(6L, 279L, 524L)
   )
   for (wave in 1:3) {
     built <- nic_knowledge_items(survey, wave)
@@ -100,9 +100,9 @@ test_that("NIC respondent fields match historical or approved values", {
     "t12know", "t12knowcor", "t1knowcor2", "t2know", "t2knowr"
   )
   expect_equal(unname(missingness[knowledge_fields]),
-    c(rep(5L, 10), 6L, 6L, 10L, 0L, 0L)
+    c(5L, 5L, rep(79L, 8), 6L, 83L, 83L, 79L, 79L)
   )
-  expect_equal(sum(missingness[knowledge_fields]), 72L)
+  expect_equal(sum(missingness[knowledge_fields]), 972L)
   expect_equal(sum(missingness[setdiff(fields, knowledge_fields)]), 1191L)
 })
 

@@ -1,5 +1,6 @@
 source(file.path(root, "R", "respondents.R"))
 source(file.path(root, "R", "source_questionnaire_presence.R"))
+source(file.path(root, "R", "analysis_attendance.R"))
 
 questionnaire_analysis_people <- function() {
   arrow::read_parquet(project_path(
@@ -11,7 +12,7 @@ test_that("reviewed forms distinguish absent, unknown and returned forms", {
   expected <- tibble::tribble(
     ~poll, ~wave, ~observed, ~absent, ~unknown,
     "cpl-1996", "t2", 216L, 1030L, 0L,
-    "san-mateo-2008", "t2", 238L, 1567L, 1L,
+    "san-mateo-2008", "t2", 238L, 1568L, 0L,
     "uk-eu-1995", "t2", 224L, 662L, 14L,
     "uk-crime-1994", "t2", 300L, 569L, 0L,
     "uk-general-election-1997", "t2", 275L, 935L, 0L,
@@ -41,24 +42,28 @@ test_that("reviewed forms distinguish absent, unknown and returned forms", {
   keys <- c("poll_id", "source_dataset", "respondent_id", "wave")
   expect_equal(anyDuplicated(evidence[keys]), 0L)
   expect_equal(sum(evidence$poll_id == "san-mateo-2008" &
-                     is.na(evidence$wave_observed)), 2L)
+                     is.na(evidence$wave_observed)), 0L)
   expect_false(any(evidence$poll_id == "tomorrows-europe-2007" &
                      evidence$wave == "t1"))
   expect_identical(people, questionnaire_analysis_people())
 })
 
-test_that("Health completion evidence does not erase positive attendance", {
+test_that("Health empty forms and prior attendance are separate evidence", {
   people <- questionnaire_analysis_people()
   evidence <- analysis_reviewed_presence(people)
   missing_health <- evidence |>
     dplyr::filter(poll_id == "uk-health-1998", !wave_observed)
   expect_setequal(missing_health$respondent_id, c("3809", "4307"))
   expect_equal(nrow(missing_health), 4L)
-  original <- people |>
+  original <- arrow::read_parquet(project_path(
+    "output", "analysis", "analysis_phase_participants.parquet"
+  )) |>
     dplyr::semi_join(missing_health,
       by = c("poll_id", "source_dataset", "respondent_id")
     )
-  expect_true(all(original$attended))
+  updated <- analysis_attendance_contract(original, original, missing_health)
+  expect_true(all(updated$participants$attendance_before_post_rule))
+  expect_true(all(updated$participants$attended %in% FALSE))
   survey <- read_poll_survey("uk-health-1998")
   row <- which(as.numeric(survey$serial_m) == 3809)
   fields <- questionnaire_form_contract("uk-health-1998")$fields[[1]]

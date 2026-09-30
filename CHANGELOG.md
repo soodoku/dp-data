@@ -2,11 +2,29 @@
 
 ## 0.4.5
 
+- Retain unusual zero-score and wholly blank knowledge batteries, document
+  San Mateo and Zeguo publication comparisons, and add typed person/battery/wave
+  flags for downstream robustness checks. No zero-score exclusions are applied.
+- Add a structured issue register and stable links from each poll's generated
+  metadata to its detailed evidence. Require observed collected t0/t1/t2
+  questionnaires for participant eligibility while retaining all source records.
+- Classify observed knowledge blanks as conventionally DK-like while preserving
+  raw missingness reasons and distinguishing source-recorded DK. Keep individual
+  invalid codes distinct from absent questionnaires.
+- Apply the common post-questionnaire completion rule across polls: no actual
+  immediate-post answers means nonattendance; retain the prior classification
+  and its evidence separately. Uncollected waves do not imply nonattendance.
+- Standardize knowledge item exports with correct/incorrect/DK categories,
+  separate response reasons, raw answers, and nullable numeric correctness.
+  Remove unconditional zero filling of absent forms and invalid responses.
+- Make primary attitude values consistently 0–1 with original units retained
+  separately. Add 23 plain missing-preserved indices alongside their explicitly
+  named midpoint-imputed alternatives, with one primary definition per construct.
 - Keep knowledge missing for 1,567 unavailable San Mateo departure questionnaires;
-  preserve the separate pending blank-form interpretation for participant 1467.
+  apply the same absent-form rule to participant 1467 despite its administrative header.
 - Remove artificial UK–EU departure zeros for 676 unavailable questionnaires,
-  including 14 recorded attendees. Retain attendance and recompute dependent
-  knowledge, peer opportunity and poll summaries from observed questionnaires.
+  including 14 source-flagged attendees. Recompute dependent knowledge, peer
+  opportunity and poll summaries from observed questionnaires.
 - Publish California's 39 original policy ratings at arrival and exit in the
   typed source-attitude tables, preserving all 472 source records, native wave
   identifiers, raw values and explicitly classified missingness.
