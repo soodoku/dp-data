@@ -47,7 +47,7 @@ test_that("retained arrivals have scores with explicit battery scope", {
   ))
   expect_equal(missing_exports$battery_scope[
     missing_exports$poll_id == "michigan-2009"
-  ], "partial_party_placements_no_five_facts")
+  ], "shared_selected_nine_and_separate_placement_batteries")
   expect_false(any(waves$wave == "t1" & waves$poll_id == "new-haven-2004"))
   expect_false(any(waves$wave == "t1" & waves$poll_id == "nic-1996"))
   follow_up <- dplyr::filter(waves, poll_id == "tanzania-2015", wave == "t3")

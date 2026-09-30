@@ -107,13 +107,14 @@ Original survey labels and legacy score labels remain separate columns.
 
 `analysis_phase_item_responses` maps existing item responses to their documented
 survey occasions and adds the verified arrival batteries. California and Europolis
-retain both common and expanded batteries; Michigan has separate four-placement
-three-wave and six-placement arrival/exit batteries. Select `battery_id` explicitly
+retain both common and expanded batteries. Michigan retains a nine-question
+factual/placement battery across telephone, arrival and exit, alongside separate
+four-placement three-wave and six-placement arrival/exit batteries. Select `battery_id` explicitly
 before comparing phases. The source files retain people outside each existing
 analytical cohort, and California's separate eight-item output still covers its
 broader 412-person source cohort. Questionnaire absence yields null correctness
-and scores; blank items within an observed form score zero. Marousi remains
-score-only here. AMR now contributes 4,838 phase scores and 29,028 item responses:
+and scores; blank items within an observed form score zero. Marousi also
+retains its seven original item responses at each verified phase. AMR now contributes 4,838 phase scores and 29,028 item responses:
 2,419 people at both pre-invitation t0 and event-end t2. The version 2 paper
 establishes those occasions; no arrival measurement, exact interview dates or
 survey mode is inferred. All existing AMR answers and numerical scores are unchanged.
@@ -318,9 +319,10 @@ citation are carried in the typed table. A documented pre-start design does not
 assert that individual first-meeting timestamps were recovered.
 
 California, Europolis, Denmark, Vermont and Michigan's retained arrivals now
-have `availability = score_exported`. Michigan has only arrival placement items,
-not its five telephone factual questions; its four-item common and six-item
-arrival/exit batteries remain separate from the selected-wave nine-item battery.
+have `availability = score_exported`. Michigan uses five recovered arrival
+factual answers and four placements in the same nine-item battery as telephone
+and exit. Its four- and six-placement batteries remain separate constructs;
+no telephone response is substituted for an arrival answer.
 `battery_scope` records these distinctions. Exported coverage does not establish
 that every person completed every wave or that discussion-group IDs are known.
 

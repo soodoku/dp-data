@@ -25,7 +25,7 @@ test_that("added arrivals preserve question batteries and source identities", {
   counts <- common |>
     dplyr::summarise(n = sum(wave_observed), .by = poll_id) |>
     dplyr::pull(n)
-  expect_equal(counts, c(396L, 348L, 358L, 146L))
+  expect_equal(counts, c(396L, 348L, 358L, 146L, 309L))
   euro <- dplyr::filter(
     scores, poll_id == "europolis-2009",
     source_dataset == "cor_sood"
@@ -50,7 +50,7 @@ test_that("added arrivals preserve question batteries and source identities", {
   expect_equal(sum(ca$n_correct[ca$wave == "t1"]), 1900L)
   expect_equal(sum(ca$n_correct[ca$wave == "t2"]), 2430L)
   michigan <- dplyr::filter(scores, poll_id == "michigan-2009")
-  expect_setequal(michigan$n_items, c(4L, 6L))
+  expect_setequal(michigan$n_items, c(4L, 6L, 9L))
   expect_true(all(michigan$n_items[michigan$wave == "t0"] == 4L))
   four <- dplyr::filter(michigan, n_items == 4L)
   expect_equal(sum(four$wave == "t1" & four$wave_observed), 309L)

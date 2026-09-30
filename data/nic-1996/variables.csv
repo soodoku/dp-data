@@ -262,7 +262,7 @@ WCHANY,double,numeric,float64,WATCH ANY OF THE PBS BROADCAST,F9.2,,,TRUE,Retaine
 WCHPT1_2,double,numeric,float64,WATCH PARTS 1 & 2,F9.2,,,TRUE,Retained
 HOWMUCH1,double,numeric,float64,HOW MUCH OF PARTS 1 & 2,F9.2,,,TRUE,Retained
 MODPT1_2,double,numeric,float64,MODERATOR PARTS 1 & 2,F9.2,,,TRUE,Retained
-Q40_OTHE,character,character,,OTHER MODERATOR (VERBATIM),A60,,,FALSE,Excluded; see source_field_exclusions
+Q40_OTHE,character,character,string,OTHER MODERATOR (VERBATIM),A60,,,TRUE,Retained
 PANEL,double,numeric,float64,SAW PANEL OF EXPERTS,F9.2,,,TRUE,Retained
 FORBES,double,numeric,float64,SAW STEVE FORBES,F9.2,,,TRUE,Retained
 LUGAR,double,numeric,float64,SAW RICHARD LUGAR,F9.2,,,TRUE,Retained
@@ -274,7 +274,7 @@ ATTN,double,numeric,float64,HOW MUCH ATTENTION,F9.2,,,TRUE,Retained
 WCHDOC,double,numeric,float64,WATCH DOCUMENTARY,F9.2,,,TRUE,Retained
 HOWMUCH2,double,numeric,float64,HOW MUCH OF DOC.,F9.2,,,TRUE,Retained
 MODDOC,double,numeric,float64,MODERATOR DOCUMENTARY,F9.2,,,TRUE,Retained
-Q45_OTHE,character,character,,OTHER MODERATOR (VERBATIM),A60,,,FALSE,Excluded; see source_field_exclusions
+Q45_OTHE,character,character,string,OTHER MODERATOR (VERBATIM),A60,,,TRUE,Retained
 GOTBRF,double,numeric,float64,RECEIVED BRIEFING PAPER,F9.2,,,TRUE,Retained
 READBRF,double,numeric,float64,READ HOW MUCH OF BRIEF.PAP,F9.2,,,TRUE,Retained
 OD,double,numeric,float64,OTHER DOMESTIC,F9.2,,,TRUE,Retained

@@ -40,7 +40,7 @@ q23,double,numeric,float64,,%8.0g,,,TRUE,Retained
 q24,double,numeric,float64,,%8.0g,,,TRUE,Retained
 q25,double,numeric,float64,,%8.0g,,,TRUE,Retained
 q26,double,numeric,float64,,%8.0g,,,TRUE,Retained
-q26oth,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+q26oth,character,character,string,,%1s,,,TRUE,Retained
 q27by,double,numeric,float64,,%8.0g,,,TRUE,Retained
 q27aa,double,numeric,float64,,%8.0g,,,TRUE,Retained
 q27grp,double,numeric,float64,,%8.0g,,,TRUE,Retained
@@ -49,7 +49,7 @@ q29,double,numeric,float64,,%8.0g,,,TRUE,Retained
 q30,double,numeric,float64,,%8.0g,,,TRUE,Retained
 q31,double,numeric,float64,,%8.0g,,,TRUE,Retained
 q32,double,numeric,float64,,%8.0g,,,TRUE,Retained
-q32oth,character,character,,,%32s,,,FALSE,Excluded; see source_field_exclusions
+q32oth,character,character,string,,%32s,,,TRUE,Retained
 q33,double,numeric,float64,,%8.0g,,,TRUE,Retained
 q34,double,numeric,float64,,%8.0g,,,TRUE,Retained
 q35,double,numeric,float64,,%8.0g,,,TRUE,Retained
@@ -58,10 +58,10 @@ q37,double,numeric,float64,,%8.0g,,,TRUE,Retained
 q38,double,numeric,float64,,%8.0g,,,TRUE,Retained
 q39,double,numeric,float64,,%8.0g,,,TRUE,Retained
 q40,double,numeric,float64,,%8.0g,,,TRUE,Retained
-q40oth,character,character,,,%23s,,,FALSE,Excluded; see source_field_exclusions
+q40oth,character,character,string,,%23s,,,TRUE,Retained
 q41,double,numeric,float64,,%8.0g,,,TRUE,Retained
 q42,double,numeric,float64,,%8.0g,,,TRUE,Retained
-q42oth,character,character,,,%11s,,,FALSE,Excluded; see source_field_exclusions
+q42oth,character,character,string,,%11s,,,TRUE,Retained
 q43,double,numeric,float64,,%8.0g,,,TRUE,Retained
 q44,double,numeric,float64,,%8.0g,,,TRUE,Retained
 city,character,character,,,%19s,,,FALSE,Excluded; see source_field_exclusions
@@ -74,7 +74,7 @@ variabl0,character,character,,,%32s,,,FALSE,Excluded; see source_field_exclusion
 phone1,character,character,,,%12s,,,FALSE,Excluded; see source_field_exclusions
 phone2,character,character,,,%12s,,,FALSE,Excluded; see source_field_exclusions
 email,character,character,,,%32s,,,FALSE,Excluded; see source_field_exclusions
-coder_initials_x,character,character,,,%3s,,,FALSE,Excluded; see source_field_exclusions
+coder_initials_x,character,character,string,,%3s,,,TRUE,Retained
 group_number,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t3filter_early,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t3filter_bad,double,numeric,float64,,%8.0g,,,TRUE,Retained
@@ -97,10 +97,10 @@ t3q15b,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t3q15c,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t3q15d,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t3q15e,double,numeric,float64,,%8.0g,,,TRUE,Retained
-t3q16,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
-t3q17,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
-t3q18,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
-t3q19,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t3q16,character,character,string,,%1s,,,TRUE,Retained
+t3q17,character,character,string,,%1s,,,TRUE,Retained
+t3q18,character,character,string,,%1s,,,TRUE,Retained
+t3q19,character,character,string,,%1s,,,TRUE,Retained
 t3q20a,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t3q20b,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t3q20c,double,numeric,float64,,%8.0g,,,TRUE,Retained
@@ -213,8 +213,8 @@ t3q44g,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t3q44h,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t3q45,character,character,string,,%1s,,,TRUE,Retained
 t3q46,character,character,string,,%1s,,,TRUE,Retained
-t3q47,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
-t3q48,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t3q47,character,character,string,,%1s,,,TRUE,Retained
+t3q48,character,character,string,,%1s,,,TRUE,Retained
 t3q49a,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t3q49b,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t3q49c,double,numeric,float64,,%8.0g,,,TRUE,Retained
@@ -223,9 +223,9 @@ t3q49e,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t3q49f,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t3q49g,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t3q49h,double,numeric,float64,,%8.0g,,,TRUE,Retained
-t3q49oth,character,character,,,%144s,,,FALSE,Excluded; see source_field_exclusions
-coder_initials_y,character,character,,,%3s,,,FALSE,Excluded; see source_field_exclusions
-t2filter_late,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t3q49oth,character,character,string,,%144s,,,TRUE,Retained
+coder_initials_y,character,character,string,,%3s,,,TRUE,Retained
+t2filter_late,character,character,string,,%1s,,,TRUE,Retained
 t2q1,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q2,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q3,double,numeric,float64,,%8.0g,,,TRUE,Retained
@@ -245,10 +245,10 @@ t2q15b,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q15c,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q15d,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q15e,double,numeric,float64,,%8.0g,,,TRUE,Retained
-t2q16,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
-t2q17,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
-t2q18,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
-t2q19,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t2q16,character,character,string,,%1s,,,TRUE,Retained
+t2q17,character,character,string,,%1s,,,TRUE,Retained
+t2q18,character,character,string,,%1s,,,TRUE,Retained
+t2q19,character,character,string,,%1s,,,TRUE,Retained
 t2q20a,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q20b,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q20c,double,numeric,float64,,%8.0g,,,TRUE,Retained
@@ -294,7 +294,7 @@ t2q25q,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q25r,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q25s,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q25t,double,numeric,float64,,%8.0g,,,TRUE,Retained
-t2q26a,character,character,,,%2s,,,FALSE,Excluded; see source_field_exclusions
+t2q26a,character,character,string,,%2s,,,TRUE,Retained
 t2q26b,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q26c,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q27a,double,numeric,float64,,%8.0g,,,TRUE,Retained
@@ -318,7 +318,7 @@ t2q32e,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q32f,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q32g,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q33a,double,numeric,float64,,%8.0g,,,TRUE,Retained
-t2q33b,character,character,,,%2s,,,FALSE,Excluded; see source_field_exclusions
+t2q33b,character,character,string,,%2s,,,TRUE,Retained
 t2q33c,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q33d,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q33e,double,numeric,float64,,%8.0g,,,TRUE,Retained
@@ -352,8 +352,8 @@ t2q44,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q45,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q46,double,numeric,float64,,%8.0g,,,TRUE,Retained
 t2q47,double,numeric,float64,,%8.0g,,,TRUE,Retained
-t2q49,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
-t2q50,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
-t2q51,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
-t2q51oth,character,character,,,%58s,,,FALSE,Excluded; see source_field_exclusions
-c135,character,character,,,%1s,,,FALSE,Excluded; see source_field_exclusions
+t2q49,character,character,string,,%1s,,,TRUE,Retained
+t2q50,character,character,string,,%1s,,,TRUE,Retained
+t2q51,character,character,string,,%1s,,,TRUE,Retained
+t2q51oth,character,character,string,,%58s,,,TRUE,Retained
+c135,character,character,string,,%1s,,,TRUE,Retained
