@@ -36,9 +36,39 @@ attribute_text <- function(column, name) {
   if (is.null(value)) "" else paste(value, collapse = "|")
 }
 
+normalize_survey_labels <- function(data, label_encoding = NULL) {
+  if (is.null(label_encoding)) return(data)
+  stopifnot(is.character(label_encoding), length(label_encoding) == 1L)
+  if (is.na(label_encoding) || !nzchar(label_encoding)) return(data)
+  repair <- function(text) {
+    if (is.null(text)) return(text)
+    invalid <- !is.na(text) & !validUTF8(text)
+    if (!any(invalid)) return(text)
+    converted <- iconv(text[invalid], from = label_encoding, to = "UTF-8")
+    if (anyNA(converted) || !all(validUTF8(converted))) {
+      stop("Cannot convert survey labels from ", label_encoding)
+    }
+    text[invalid] <- converted
+    text
+  }
+  for (field in names(data)) {
+    column <- data[[field]]
+    attr(column, "label") <- repair(attr(column, "label", exact = TRUE))
+    labels <- attr(column, "labels", exact = TRUE)
+    if (!is.null(labels)) {
+      names(labels) <- repair(names(labels))
+      attr(column, "labels") <- labels
+    }
+    data[[field]] <- column
+  }
+  data
+}
+
 read_archive_survey <- function(record) {
   if (record$transformation %in% c("join-workbook", "join-zeguo")) {
-    return(read_joined_public_source(record))
+    return(normalize_survey_labels(
+      read_joined_public_source(record), record[["label_encoding"]]
+    ))
   }
   path <- archive_source_path(record$archive_path, record$source_sha256)
   data <- if (grepl("\\.sav$", path)) {
@@ -55,7 +85,7 @@ read_archive_survey <- function(record) {
   if (any(tagged > 0L)) {
     stop("Tagged missing values require an explicit export rule.")
   }
-  data
+  normalize_survey_labels(data, record[["label_encoding"]])
 }
 
 survey_dictionary <- function(data, excluded, parquet = FALSE) {
@@ -264,7 +294,8 @@ dictionary_prefix <- function(record) {
 
 read_public_survey <- function(record) {
   path <- project_path(record$public_path)
-  if (record$transformation == "exact-copy" && grepl("\\.sav$", path)) {
+  data <- if (record$transformation == "exact-copy" &&
+                grepl("\\.sav$", path)) {
     haven::read_sav(path, user_na = TRUE) |>
       dplyr::mutate(source_row = dplyr::row_number(), .before = 1)
   } else if (record$transformation == "exact-copy" && grepl("\\.dta$", path)) {
@@ -276,4 +307,5 @@ read_public_survey <- function(record) {
   } else {
     stop("No reviewed survey reader for ", record$poll_id)
   }
+  normalize_survey_labels(data, record[["label_encoding"]])
 }

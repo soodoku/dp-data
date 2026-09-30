@@ -1092,6 +1092,10 @@
           {
             "name": "review_note",
             "type": "string"
+          },
+          {
+            "name": "label_encoding",
+            "type": "string"
           }
         ]
       }
@@ -1279,6 +1283,90 @@
           },
           {
             "name": "response_reason",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "marousi_knowledge_items",
+      "path": "metadata/marousi_knowledge_items.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "string"
+          },
+          {
+            "name": "item_id",
+            "type": "string"
+          },
+          {
+            "name": "item_order",
+            "type": "number"
+          },
+          {
+            "name": "wave",
+            "type": "string"
+          },
+          {
+            "name": "original_survey_wave",
+            "type": "string"
+          },
+          {
+            "name": "source_column",
+            "type": "string"
+          },
+          {
+            "name": "authored_correct_column",
+            "type": "string"
+          },
+          {
+            "name": "correct_values",
+            "type": "number"
+          },
+          {
+            "name": "incorrect_values",
+            "type": "string"
+          },
+          {
+            "name": "missing_values",
+            "type": "string"
+          },
+          {
+            "name": "response_type",
+            "type": "string"
+          },
+          {
+            "name": "n_substantive_options",
+            "type": "number"
+          },
+          {
+            "name": "source_question_label",
+            "type": "string"
+          },
+          {
+            "name": "telephone_question_number",
+            "type": "number"
+          },
+          {
+            "name": "telephone_question_text",
+            "type": "string"
+          },
+          {
+            "name": "question_text_scope",
+            "type": "string"
+          },
+          {
+            "name": "correctness_basis",
+            "type": "string"
+          },
+          {
+            "name": "identity_basis",
             "type": "string"
           }
         ]

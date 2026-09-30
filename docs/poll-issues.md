@@ -5831,6 +5831,50 @@ Other polls' scores and the historical 21-poll polardata are unchanged. Current
 dp-learning excludes this `score_only` source; admitting it or fitting a new
 comparison is a separate downstream analysis decision.
 
+### MAR-03: Publish the original seven-item answers at each verified phase
+
+The phase-item export now retains all 1,275 original source rows, seven items
+and three phases: 26,775 rows. The selected 146-person score-only view and
+its historical IDs remain unchanged. The broader phase view retains 159 people
+with positive attendance evidence, 154 observed arrival forms and 138 observed
+exit forms. Telephone forms are observed for all 1,275 source records. The
+existing participant and score tables are unchanged; item availability does
+not automatically add people to a downstream analysis cohort.
+
+`metadata/marousi_knowledge_items.csv` identifies every raw response and authored
+correctness field, telephone question number, offered/source-coded responses,
+wave role and identity basis. The seven preserved source keys are 1/2/2/3/1/4/4.
+Every raw response and source correctness flag is checked against the public
+`data/marousi-2006/survey.sav`; recomputed phase scores agree within the original
+float32 tolerance. The retained telephone questionnaire supplies exact wording.
+Arrival/exit field labels identify matching topics but do not establish verbatim
+fielded wording or independently verify substantive factual keys.
+
+Raw answers, source labels, canonical correctness, DK and questionnaire presence
+are distinct fields. A declared DK is scored zero and labeled `dk`. Six telephone
+responses labeled only `na` are scored zero under the approved observed-form rule,
+with `unclassified_nonanswer` retained rather than inventing DK or refusal. An
+observed blank quiz item scores zero; an absent questionnaire has missing item
+correctness. Invalid nonmissing codes would remain missing. The mayor question
+asks for an open name: its two source-coded categories are not two offered
+choices and must not imply a 50 percent guessing probability.
+
+The authored row linkage is preserved. Sixteen departure IDs disagree with
+baseline IDs; matching departure IDs to other baseline rows changes sixteen
+scores and would move grouped arrival/exit gain from 2.547 to 2.088 percentage
+points while increasing the paired count from 129 to 130. Original wave returns
+or merge instructions are required before changing that linkage. Equal scores
+or a report target do not supply identity evidence.
+
+Marousi's original numeric SPSS source is unchanged. Four malformed variable
+labels and six value-label names contain legacy Windows-1252 bytes. A nullable
+`label_encoding` source setting now repairs only invalid UTF-8 label attributes,
+preserving valid strings, response values and all other attributes. The ordinary
+survey import recreates both UTF-8 dictionaries exactly; all 1,026 numeric fields
+across 1,275 source records remain identical. No other source opts into this
+encoding repair. The canonical item catalog gains seven definitions and the
+phase-item table gains 26,775 responses; other analytical outputs are unchanged.
+
 ### TZ-01 — group assignment does not by itself establish treatment eligibility
 
 The retained `participants.dta` has 2,225 rows: 2,002 labelled citizens, 121
@@ -8650,3 +8694,47 @@ bounds and all paired alternatives are in
 lists and codebooks omit FEDRCH while listing RESCH, REDUCE, JOBS, TAX and
 LOWINC, strengthening the evidence that their research index legitimately
 uses RESCH alone. Exact fielded forms remain unrecovered.
+
+### X-16: Repeated phase estimates can be aliases or inconsistent metadata
+
+The historical and Cor-Sood source views can describe the same people and
+question battery. Comparing aggregate scores alone does not establish an alias.
+The September 30 audit reconstructs respondent IDs from each primary survey,
+checks source rows and every raw item, and compares correctness, attendance,
+phase scores and group partitions. Six-item and expanded nine-item Europolis
+views each match exactly across the two sources. Six further paired batteries
+are exact aliases: BTP Health/Education (454), Bulgaria Crime (278), CPL (216),
+UK Crime (299), UK Election (275), and UK Health (228). The phase estimator
+selects one historical copy of each verified alias while preserving both source
+representations upstream. Removing aliases must not shift bootstrap seeds for
+retained estimates merely by renumbering estimation strata.
+
+Different numbers require explanation, not automatic deduplication. BTP General
+Election's historical view includes two people absent from the Cor-Sood view:
+source rows 74/80, original IDs 2526/91. Australia uses ten versus twelve items,
+NIC eight versus eleven, and UK Monarchy eight versus nine. These are different
+cohorts or batteries and remain distinct.
+
+WTU, SWEPCO and San Mateo require a presence correction rather than a recruitment
+explanation. Their differing paired counts (225/230, 225/232 and 214/238) come
+from the same raw source people. The Cor-Sood view leaves questionnaire presence
+unknown when the selected quiz is blank; the historical view has broader
+questionnaire evidence. The 5/7/24 extra people have observed scores and matching
+raw items. Verify the nonquiz evidence before harmonizing presence; apply the
+approved rule that blank knowledge items in an observed form score zero, while
+an absent form remains unmeasured. No presence correction is adopted by this
+alias-only selection change.
+
+Two matching-score copies also differ in group metadata. Tomorrow's Europe's
+`group_no` and `t3grp` disagree on source rows 1103, 1107, 1167, 3297 and 3451.
+The authored fields may distinguish assigned and realized groups; source syntax
+and group provenance must resolve that interpretation. UK–EU has four source
+records assigned code 99: the historical view clusters them as group 2099 while
+the Cor-Sood view leaves group missing. Establish the original unknown-group
+meaning before rebuilding shared group measures. Neither group difference is
+resolved by score agreement or by silently choosing the narrower sample.
+
+The source comparisons and primary-ID/item verification are retained in
+`audit/phase-source-aliases/`. These findings concern phase-source selection and
+metadata; they do not change individual knowledge scores or establish that all
+questionnaire definitions have been independently verified.
