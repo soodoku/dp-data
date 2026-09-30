@@ -84,7 +84,10 @@ tomorrow_knowledge_items <- function(survey, wave) {
     )
     allowed <- c(allowed, exceptions[[field]])
     value <- tomorrows_europe_codes(survey, field, allowed)
-    as.numeric(value %in% key[index])
+    correct <- as.numeric(value %in% key[index])
+    invalid <- knowledge_invalid_codes("tomorrows-europe-2007", field, value)
+    correct[invalid] <- NA_real_
+    correct
   })
   placement <- purrr::map(c("a", "b"), function(suffix) {
     field <- if (wave == 1L) paste0("q33", suffix, "_1") else
@@ -122,9 +125,16 @@ build_tomorrow_individual <- function(
     }) |> dplyr::bind_cols(),
     summarise_historical_knowledge(before, after),
     tibble::tibble(
-      knowledge_midterm = rowMeans(arrival),
-      knowledge_midterm_joint = rowMeans(arrival * after),
-      knowledge_joint_midterm = rowMeans(before * arrival * after),
+      knowledge_midterm = score_knowledge(arrival),
+      knowledge_midterm_joint = score_knowledge(
+        arrival * after,
+        rowSums(!is.na(arrival)) > 0L & rowSums(!is.na(after)) > 0L
+      ),
+      knowledge_joint_midterm = score_knowledge(
+        before * arrival * after,
+        rowSums(!is.na(before)) > 0L & rowSums(!is.na(arrival)) > 0L &
+          rowSums(!is.na(after)) > 0L
+      ),
       age = tomorrows_europe_age(survey),
       female = as.numeric(read("q35", 1:2) == 2), minority = NA_real_,
       education_four = education,

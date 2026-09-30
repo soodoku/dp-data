@@ -79,3 +79,16 @@ test_that("BTP source completion flags explain the omitted peer observations", {
   expect_identical(actual, expected)
   expect_true(all(is.na(actual[missing])))
 })
+
+test_that("invalid focal items do not become missed peer opportunities", {
+  items <- rbind(c(NA, 0), c(1, 1), c(0, 0))
+  knowledge <- c(0, 1, 0)
+  expect_equal(
+    reviewed_us_group_gain(items, items, rep(1, 3), knowledge),
+    c(.5, 0, .75)
+  )
+  items[1L, ] <- c(NA, 1)
+  expect_true(is.na(reviewed_us_group_gain(
+    items, items, rep(1, 3), c(.5, 1, 0)
+  )[1L]))
+})

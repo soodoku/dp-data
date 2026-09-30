@@ -1018,5 +1018,48 @@
       "qa_notes": "All pages rendered and visually inspected; question text, highlighting and tables are legible. Original DOC bytes unchanged; source-text token coverage includes field codes and is diagnostic.",
       "rebuild_command": "soffice -env:UserInstallation=file:///tmp/dp-attitude-previews --headless --convert-to pdf --outdir data/nic2-2003/codebooks data/nic2-2003/codebooks/foreign-policy-indices-february.doc"
     }
-  ]
+  ],
+  "issues": {
+    "evidence_index": [
+      {
+        "issue_id": "BTPN-01",
+        "title": "BTPN-01: Historical inclusion does not equal the attendance flag",
+        "evidence_path": "../../docs/poll-evidence.md#btpn-01"
+      },
+      {
+        "issue_id": "BTPN-02",
+        "title": "BTPN-02: Support components now use the instrument's full scale (corrected)",
+        "evidence_path": "../../docs/poll-evidence.md#btpn-02"
+      },
+      {
+        "issue_id": "BTPN-03",
+        "title": "BTPN-03: Eleven-item respondent knowledge and baseline calibration differ",
+        "evidence_path": "../../docs/poll-evidence.md#btpn-03"
+      },
+      {
+        "issue_id": "BTPN-04",
+        "title": "BTPN-04: Deliberate nested weighting preserved; version conflicts documented",
+        "evidence_path": "../../docs/poll-evidence.md#btpn-04"
+      },
+      {
+        "issue_id": "BTPN-05",
+        "title": "BTPN-05: Baseline political interest was omitted from the final aggregate",
+        "evidence_path": "../../docs/poll-evidence.md#btpn-05"
+      },
+      {
+        "issue_id": "BTPN-06",
+        "title": "BTPN-06: Terrorism and poverty catalog names were swapped (corrected)",
+        "evidence_path": "../../docs/poll-evidence.md#btpn-06"
+      },
+      {
+        "issue_id": "BTPN-07",
+        "title": "BTPN-07: Original dates and the wider source cohort (source preserved)",
+        "evidence_path": "../../docs/poll-evidence.md#btpn-07"
+      }
+    ],
+    "reviewed_flags": [],
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
+    "structured_register_path": "../../metadata/poll_issues.json",
+    "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
+  }
 }

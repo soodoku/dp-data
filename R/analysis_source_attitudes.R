@@ -42,15 +42,15 @@ source_attitude_values <- function(raw, labels, minimum, maximum, unit,
     observed %in% TRUE ~ "blank",
     TRUE ~ "source_missing"
   )
-  value <- dplyr::if_else(status == "answered", raw, NA_real_)
+  source_scale_value <- dplyr::if_else(status == "answered", raw, NA_real_)
   normalized <- rep(NA_real_, length(raw))
   if (unit != "category" && !is.na(minimum) && !is.na(maximum)) {
     stopifnot(maximum > minimum)
-    normalized <- (value - minimum) / (maximum - minimum)
+    normalized <- (source_scale_value - minimum) / (maximum - minimum)
   }
   tibble::tibble(
     raw_value = raw, source_response_label = labels,
-    response_status = status, value, normalized_value = normalized,
+    response_status = status, source_scale_value, value = normalized,
     wave_observed = observed
   )
 }
@@ -68,14 +68,36 @@ source_attitude_sources <- function() {
     "source_t2ctrl", "IP",
     "vermont-energy-2007", "survey.sav", "", "multiple", "CASEID",
     "marousi-2006", "survey.sav", "", "multiple", "P_Q1_0",
-    "amr-2024", "participants.csv", "", "multiple", "ID"
+    "amr-2024", "participants.csv", "", "multiple", "ID",
+    "california-whats-next-2011", "survey.parquet", "", "multiple", "id"
   )
 }
 
 source_attitude_dictionary <- function(specification) {
   directory <- project_path("data", specification$poll_id)
   prefix <- specification$dictionary
-  if (grepl("json$", prefix)) {
+  if (specification$poll_id == "california-whats-next-2011") {
+    items <- read_metadata("source_attitude_items") |>
+      dplyr::filter(poll_id == specification$poll_id)
+    stopifnot(
+      nrow(items) == 39L, !anyDuplicated(items$source_suffix),
+      setequal(items$source_suffix, c(letters, paste0("a", letters[1:13]))),
+      !anyNA(items$label), all(nzchar(items$label))
+    )
+    variables <- purrr::map(c("t2", "t3"), function(wave) {
+      tibble::tibble(
+        source_column = paste0(wave, "q2", items$source_suffix),
+        variable_label = items$label, evidence = items$evidence
+      )
+    }) |> purrr::list_rbind()
+    labels <- tidyr::expand_grid(
+      source_column = variables$source_column, source_value = c(0, 5, 10, 99)
+    ) |>
+      dplyr::mutate(value_label = c(
+        "Extremely undesirable", "Exactly in the middle",
+        "Extremely desirable", "No opinion"
+      )[match(source_value, c(0, 5, 10, 99))])
+  } else if (grepl("json$", prefix)) {
     contents <- jsonlite::fromJSON(file.path(directory, prefix),
       simplifyVector = FALSE
     )$columns
@@ -122,6 +144,7 @@ source_attitude_dictionary <- function(specification) {
 source_attitude_fields <- function(specification, dictionary) {
   fields <- dictionary$variables$source_column
   poll <- specification$poll_id
+  if (poll == "california-whats-next-2011") return(fields)
   if (poll == "amr-2024") {
     return(grep("^(proposal|statement|value|civic|disagree|trust)_", fields,
       value = TRUE
@@ -305,6 +328,7 @@ analysis_source_attitudes <- function(participants = NULL, scores = NULL) {
       } else {
         switch(spec$poll_id,
           "amr-2024" = paste0("Time", raw$Time),
+          "california-whats-next-2011" = toupper(substr(field, 1, 2)),
           "vermont-energy-2007" = if (grepl("T[23]$", field)) {
             sub(".*(T[23])$", "\\1", field)
           } else {
@@ -355,6 +379,17 @@ analysis_source_attitudes <- function(participants = NULL, scores = NULL) {
             paste(presence$source_dataset, presence$respondent_id)
           )]
         }
+        if (spec$poll_id == "california-whats-next-2011") {
+          form_fields <- grep(paste0("^", tolower(wave), "q"),
+            names(raw), value = TRUE
+          )
+          stopifnot(length(form_fields) > 0L)
+          answered_form <- rowSums(!is.na(raw[rows, form_fields])) > 0L
+          if (any(answered_form & observed %in% FALSE)) {
+            stop("California questionnaire answers conflict with absence.")
+          }
+          observed[is.na(observed) & answered_form] <- TRUE
+        }
         values <- as.numeric(raw[[field]][rows])
         source_labels <- labels$value_label[match(values, labels$source_value)]
         response <- source_attitude_values(
@@ -367,7 +402,11 @@ analysis_source_attitudes <- function(participants = NULL, scores = NULL) {
         attitude_id <- paste0("attitude_", substr(semantic, 1, 160), "_",
           tolower(field)
         )
-        evidence <- if (spec$poll_id == "amr-2024") {
+        evidence <- if (spec$poll_id == "california-whats-next-2011") {
+          dictionary$variables$evidence[
+            match(field, dictionary$variables$source_column)
+          ]
+        } else if (spec$poll_id == "amr-2024") {
           paste0(
             "data/amr-2024/codebooks/harmonized-codebook.xlsx; ",
             "data/amr-2024/questionnaires/survey-and-extended-data.pdf"
@@ -385,7 +424,9 @@ analysis_source_attitudes <- function(participants = NULL, scores = NULL) {
             }
           )
         }
-        id_column <- if (spec$poll_id == "marousi-2006") {
+        id_column <- if (spec$poll_id == "california-whats-next-2011") {
+          paste0(tolower(wave), "_ParticipantNumber")
+        } else if (spec$poll_id == "marousi-2006") {
           switch(wave, T1 = "P_Q1_0", T2 = "AR_CODE", T3 = "F_CODE")
         } else {
           spec$id_column
@@ -404,6 +445,8 @@ analysis_source_attitudes <- function(participants = NULL, scores = NULL) {
             "euro_and_democracy_attitudes"
           } else if (spec$poll_id == "vermont-energy-2007") {
             "electricity_preferences_and_beliefs"
+          } else if (spec$poll_id == "california-whats-next-2011") {
+            "government_reform_policy_desirability"
           } else if (grepl("^[AF][R_]*_?Q(25|26|28|29)", field)) {
             "event_evaluation"
           } else {
@@ -436,8 +479,10 @@ analysis_source_attitudes <- function(participants = NULL, scores = NULL) {
     !anyDuplicated(definitions[c("source_id", "source_column", "source_wave")]),
     !anyDuplicated(responses[c("source_id", "source_row", "source_column")]),
     all(is.na(responses$value[responses$response_status != "answered"])),
-    all(is.na(responses$normalized_value) |
-          dplyr::between(responses$normalized_value, 0, 1))
+    all(is.na(responses$source_scale_value[
+      responses$response_status != "answered"
+    ])),
+    all(is.na(responses$value) | dplyr::between(responses$value, 0, 1))
   )
   list(
     analysis_source_attitude_definitions = definitions,

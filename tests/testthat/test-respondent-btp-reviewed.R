@@ -180,6 +180,10 @@ test_that("San Mateo uses raw responses and stable historical IDs", {
     ),
     "Q128", "Q129", "Q131", "Q132", "Q135", "t2q37"
   )
+  contract <- questionnaire_form_contract("san-mateo-2008")
+  fields <- unique(c(
+    fields, unlist(contract$fields), unlist(contract$auxiliary), "source_row"
+  ))
   expect_equal(build_san_mateo_individual(survey[, fields]), expected)
   selected <- c(1806L, 1700L, 1L)
   expect_equal(
@@ -241,14 +245,10 @@ test_that("Reviewed US polls reproduce historical values and missingness", {
       "san-mateo-2008" = as.numeric(san_mateo_historical_ids(survey, survey))
     )
     expected <- benchmark[benchmark$dpnum == case$number, ]
-    if (case$poll %in% c(
-      "btp-health-education-2005", "btp-general-election-2004"
-    )) {
-      for (field in names(mapping)) {
-        expected[[field]] <- approved_reference_values(
-          case$poll, field, expected$caseid, expected[[field]]
-        )
-      }
+    for (field in names(mapping)) {
+      expected[[field]] <- approved_reference_values(
+        case$poll, field, expected$caseid, expected[[field]]
+      )
     }
     index <- match(expected$caseid, ids)
     expect_false(anyNA(index))

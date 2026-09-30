@@ -29,7 +29,8 @@ test_that("public extracts expose only the reviewed text fields", {
       "btp-2007" = c(
         "Sgroup", "race_other", "rm1", "rm2", "rm3", paste0("mod", 1:4)
       ),
-      "michigan-2009" = c(paste0("t2q", 38:42),
+      "michigan-2009" = c(
+        paste0("t2q", 38:42),
         paste0("t3q", c(38:42, 45:46)),
         "q26oth", "q32oth", "q40oth", "q42oth",
         paste0("t3q", c(16:19, 47:48)), "t3q49oth",
@@ -37,7 +38,8 @@ test_that("public extracts expose only the reviewed text fields", {
         paste0("t2q", 16:19), "t2q26a", "t2q33b",
         "t2q49", "t2q50", "t2q51", "t2q51oth", "c135"
       ),
-      "nic-1996" = c("OCCUPAT1", "HSTPOTH", "SAQOTH",
+      "nic-1996" = c(
+        "OCCUPAT1", "HSTPOTH", "SAQOTH",
         "Q40_OTHE", "Q45_OTHE"
       ),
       "denmark-euro-2000" = c("kommunen", "amt"),
@@ -51,7 +53,8 @@ test_that("public extracts expose only the reviewed text fields", {
       ),
       "northern-ireland-2007" = unlist(lapply(c("t2", "t3"), function(wave) {
         unlist(lapply(18:21, function(question) {
-          c(paste0(wave, "q", question, "a", 1:5),
+          c(
+            paste0(wave, "q", question, "a", 1:5),
             paste0(wave, "q", question, "b", 1:5)
           )
         }))
@@ -80,7 +83,7 @@ test_that("San Mateo uses original IDs and the source correctness fields", {
     r <- built$knowledge_responses |>
       dplyr::filter(.data$source_column == .env$column)
     expect_equal(
-      tidyr::replace_na(r$correct, 0L),
+      tidyr::replace_na(r$correct_before_standardization, 0L),
       as.numeric(source[[paste0(column, "_cor")]][r$source_row])
     )
   })
@@ -101,7 +104,7 @@ test_that("Michigan written answers preserve nonresponse and original text", {
       tolower(.data$raw_text) == "e"
     )
   expect_equal(nrow(unknown), 291L)
-  expect_true(all(is.na(unknown$correct)))
+  expect_true(all(is.na(unknown$correct_before_standardization)))
   expect_true(all(unknown$response_status == "non_substantive"))
   expect_true(all(is.na(unknown$raw_value)))
   expect_true(any(r$raw_text == "Republican", na.rm = TRUE))
@@ -128,19 +131,24 @@ test_that("Vermont follows the approved final-report renewables key", {
     .data$item_id == "knowledge-2",
     .data$response_status == "answered"
   )
-  expect_equal(efficiency$correct, as.integer(efficiency$raw_value == 3))
+  expect_equal(efficiency$correct_before_standardization,
+    as.integer(efficiency$raw_value == 3)
+  )
   renewables <- r |> dplyr::filter(
     .data$item_id == "knowledge-3",
     .data$response_status == "answered"
   )
   expect_equal(
-    renewables$correct, as.integer(renewables$raw_value == 3)
+    renewables$correct_before_standardization,
+    as.integer(renewables$raw_value == 3)
   )
   for (wave in 1:2) {
     answers <- renewables[renewables$wave == wave, ]
     expected <- if (wave == 1L) 16L else 41L
-    expect_equal(sum(answers$correct), expected)
-    expect_true(all(answers$correct[answers$raw_value == 2] == 0L))
+    expect_equal(sum(answers$correct_before_standardization), expected)
+    expect_true(all(
+      answers$correct_before_standardization[answers$raw_value == 2] == 0L
+    ))
   }
   expect_equal(nrow(built$groups), 0L)
   expect_equal(nrow(built$respondents), 146L)
@@ -225,7 +233,7 @@ test_that("sample differences and unordered comparisons do not invent links", {
   expect_true(all(comparison$differences$source_column == "t3q27"))
   expect_true(all(comparison$differences$raw_value == 3))
   expect_true(all(is.na(comparison$differences$deposited_correct)))
-  expect_true(all(comparison$differences$correct == 0L))
+  expect_true(all(comparison$differences$correct_before_standardization == 0L))
   expect_true(all(comparison$score_changes$changed_scores == 0L))
 
   built <- build_poll_knowledge("europolis-2009")
@@ -234,9 +242,11 @@ test_that("sample differences and unordered comparisons do not invent links", {
     comparison$summary$comparison_status, "unordered-exact-match"
   )
   expect_true(is.na(comparison$summary$item_differences))
-  row <- which(!is.na(built$knowledge_responses$correct))[[1]]
-  built$knowledge_responses$correct[[row]] <-
-    1L - built$knowledge_responses$correct[[row]]
+  row <- which(!is.na(
+    built$knowledge_responses$correct_before_standardization
+  ))[[1]]
+  built$knowledge_responses$correct_before_standardization[[row]] <-
+    1L - built$knowledge_responses$correct_before_standardization[[row]]
   expect_identical(
     compare_knowledge_batteries(built)$summary$comparison_status,
     "unordered-different"
@@ -257,23 +267,27 @@ test_that("California eight-item scores exclude departure nonparticipants", {
   expect_equal(sum(invalid), 1L)
   expect_true(all(is.na(responses$correct[invalid])))
   expect_false(any(scores$source_row %in% survey$source_row[excluded]))
-  expect_equal(sum(!scores$wave_present), 16L)
-  expect_true(all(is.na(scores$score_zero_filled[!scores$wave_present])))
-  expect_true(all(is.na(responses$correct[!responses$wave_present])))
+  expect_equal(sum(!scores$wave_observed), 16L)
+  expect_true(all(is.na(scores$score[!scores$wave_observed])))
+  expect_true(all(is.na(responses$correct[!responses$wave_observed])))
   expect_equal(sum(scores$paired), 792L)
   paired <- scores[scores$paired, ]
-  arrival <- paired$score_zero_filled[paired$wave == 2L]
-  departure <- paired$score_zero_filled[paired$wave == 3L]
+  arrival <- paired$score[paired$wave == 2L]
+  departure <- paired$score[paired$wave == 3L]
   expect_equal(round(mean(arrival) * 100, 1), 60.0)
   expect_equal(round(mean(departure) * 100, 1), 76.7)
   expect_true(all(scores$n_items == 8L))
   report <- audit_california_report(survey)
   expect_true(all(report$denominator == 417L))
   expect_true(all(report$nonparticipants == 5L))
-  expect_equal(report$n_correct[report$wave == 2L],
-               c(316L, 290L, 258L, 253L, 263L, 259L, 128L, 150L))
-  expect_equal(report$n_correct[report$wave == 3L],
-               c(355L, 334L, 339L, 362L, 292L, 330L, 206L, 307L))
+  expect_equal(
+    report$n_correct[report$wave == 2L],
+    c(316L, 290L, 258L, 253L, 263L, 259L, 128L, 150L)
+  )
+  expect_equal(
+    report$n_correct[report$wave == 3L],
+    c(355L, 334L, 339L, 362L, 292L, 330L, 206L, 307L)
+  )
   expect_equal(nrow(build_poll_knowledge(
     "california-whats-next-2011"
   )$respondents), 396L)
@@ -293,7 +307,7 @@ test_that("BTP refusal and absent gender remain missing", {
     r <- build_poll_knowledge(p)$knowledge_responses
     refused <- r |> dplyr::filter(.data$raw_value == -1)
     expect_gt(nrow(refused), 0L)
-    expect_true(all(is.na(refused$correct)))
+    expect_true(all(is.na(refused$correct_before_standardization)))
     expect_true(all(refused$missing_code == "-1"))
   })
   expect_equal(
@@ -318,7 +332,9 @@ test_that("BTP 2007 agrees with independently supplied correctness fields", {
   purrr::walk(unique(r$source_column), function(column) {
     item <- r |> dplyr::filter(.data$source_column == .env$column)
     expected <- as.numeric(survey[[paste0(column, "COR")]][item$source_row])
-    expect_equal(tidyr::replace_na(item$correct, 0L), expected)
+    expect_equal(
+      tidyr::replace_na(item$correct_before_standardization, 0L), expected
+    )
   })
 })
 
@@ -330,9 +346,11 @@ test_that("Australia preserves unknown flags and original missing codes", {
   purrr::walk(1:2, function(wave) {
     items <- changes |> dplyr::filter(.data$wave == .env$wave)
     flagged <- as.numeric(survey[[paste0("dkchg", wave)]][items$source_row])
-    expect_true(all(is.na(items$correct[which(flagged == 1)])))
+    expect_true(all(is.na(
+      items$correct_before_standardization[which(flagged == 1)]
+    )))
   })
   unknown <- r |> dplyr::filter(.data$raw_value == 99)
-  expect_true(all(is.na(unknown$correct)))
+  expect_true(all(is.na(unknown$correct_before_standardization)))
   expect_equal(sum(r$wave == 2 & r$raw_value == 99, na.rm = TRUE), 28L)
 })

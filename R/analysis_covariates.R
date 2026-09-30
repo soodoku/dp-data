@@ -110,7 +110,8 @@ add_analysis_covariates <- function(participants) {
     stopifnot(!anyNA(source_rows), !anyDuplicated(survey$source_row))
     out$ba[health_rows] <- health_degree_status(survey)[source_rows]
   }
-  add_analysis_median_flags(out)
+  add_analysis_median_flags(out) |>
+    add_source_covariates()
 }
 
 add_analysis_median_flags <- function(participants) {
@@ -193,4 +194,90 @@ add_analysis_a1r_median_flags <- function(participants, survey = NULL) {
   stopifnot(!anyNA(position))
   participants$education_above_median[selected] <- classification[position]
   participants
+}
+
+add_source_covariates <- function(
+  participants,
+  people = arrow::read_parquet(project_path(
+    "output", "respondent", "people.parquet"
+  )),
+  measures = arrow::read_parquet(project_path(
+    "output", "respondent", "respondent_measures.parquet"
+  )),
+  targets = read_metadata("polardata_targets"),
+  reading = arrow::read_parquet(project_path(
+    "output", "respondent", "briefing_reading.parquet"
+  ))
+) {
+  fields <- c(age = "ppage", female = "female", education = "educ3",
+    minority = "minority", extremity = "attextreme"
+  )
+  keys <- c("poll_id", "source_dataset", "respondent_id")
+  stopifnot(!anyDuplicated(participants[keys]),
+    !anyDuplicated(people[c("poll_id", "source_row")])
+  )
+  definitions <- targets |>
+    dplyr::filter(status == "implemented", legacy_field %in% fields) |>
+    dplyr::transmute(poll_id, definition_id = canonical_definition,
+      covariate = names(fields)[match(legacy_field, fields)]
+    )
+  stopifnot(!anyDuplicated(definitions[c("poll_id", "covariate")]))
+  reading_values <- reading |>
+    dplyr::transmute(poll_id, respondent_id,
+      covariate = "read_briefing", value_numeric = reading_score
+    )
+  values <- measures |>
+    dplyr::inner_join(definitions,
+      by = c("poll_id", "definition_id"), relationship = "many-to-one"
+    ) |>
+    dplyr::select("poll_id", "respondent_id", "covariate", "value_numeric") |>
+    dplyr::bind_rows(reading_values)
+  stopifnot(!anyDuplicated(values[c("poll_id", "respondent_id", "covariate")]))
+  values <- tidyr::pivot_wider(values,
+    names_from = "covariate", values_from = "value_numeric"
+  )
+  fields <- c(names(fields), "read_briefing")
+  source_identity <- people |>
+    dplyr::transmute(poll_id, source_row,
+      canonical_source_id = respondent_id, source_id, identity_basis
+    )
+  identity <- participants |>
+    dplyr::filter(source_dataset %in% c("historical", "cor_sood"),
+      poll_id %in% people$poll_id
+    ) |>
+    dplyr::select(dplyr::all_of(keys), "source_row") |>
+    dplyr::left_join(source_identity,
+      by = c("poll_id", "source_row"), relationship = "many-to-one"
+    )
+  fallback <- identity$source_dataset == "cor_sood" &
+    identity$respondent_id == paste0("source-row-", identity$source_row) &
+    identity$canonical_source_id == paste0(identity$source_id,
+      ":source-row-", identity$source_row
+    ) & identity$identity_basis != "unique-source-id"
+  stopifnot(!anyNA(identity$canonical_source_id),
+    all(identity$respondent_id == identity$canonical_source_id | fallback)
+  )
+  source_values <- identity |>
+    dplyr::left_join(values,
+      by = c("poll_id", "canonical_source_id" = "respondent_id"),
+      relationship = "many-to-one"
+    ) |>
+    dplyr::select(dplyr::all_of(c(keys, fields)))
+  result <- participants |>
+    dplyr::left_join(source_values, by = keys, relationship = "one-to-one",
+      suffix = c("", "_source")
+    )
+  for (field in fields) {
+    source_field <- paste0(field, "_source")
+    existing <- result[[field]]
+    available <- result[[source_field]]
+    both <- !is.na(existing) & !is.na(available)
+    stopifnot(all(abs(existing[both] - available[both]) < 1e-6))
+    result[[field]] <- dplyr::coalesce(existing, available)
+  }
+  result <- dplyr::select(result, -dplyr::all_of(paste0(fields, "_source")))
+  stopifnot(nrow(result) == nrow(participants),
+    identical(names(result), names(participants))
+  )
+  result
 }

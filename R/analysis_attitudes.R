@@ -100,6 +100,67 @@ analysis_attitudes <- function(participants) {
       )
   }) |>
     dplyr::bind_rows()
+  alternatives <- catalog |>
+    dplyr::filter(grepl("_midpoint_imputed$", attitude_id)) |>
+    dplyr::mutate(
+      imputed_attitude_id = attitude_id,
+      attitude_id = sub("_midpoint_imputed$", "", attitude_id),
+      source_column = sub("^att_", "", attitude_id)
+    ) |>
+    dplyr::left_join(
+      read_metadata("measure_definitions") |>
+        dplyr::select("poll_id", "measure_id", "definition_id"),
+      by = c("poll_id", "source_column" = "measure_id"),
+      relationship = "one-to-one"
+    )
+  stopifnot(!anyNA(alternatives$definition_id))
+  eligible <- historical |>
+    dplyr::left_join(
+      dplyr::distinct(index, poll_id, dpnum),
+      by = "dpnum", relationship = "many-to-one"
+    ) |>
+    dplyr::transmute(poll_id,
+      historical_respondent_id = as.character(caseid)
+    )
+  people <- participants |>
+    dplyr::filter(source_dataset == "historical") |>
+    dplyr::inner_join(eligible,
+      by = c("poll_id", "historical_respondent_id"),
+      relationship = "one-to-one"
+    ) |>
+    dplyr::select(dplyr::all_of(keys))
+  measures <- arrow::read_parquet(project_path(
+    "output", "respondent", "respondent_measures.parquet"
+  )) |>
+    dplyr::inner_join(
+      dplyr::select(alternatives, poll_id, attitude_id, definition_id),
+      by = c("poll_id", "definition_id"), relationship = "many-to-one"
+    ) |>
+    dplyr::inner_join(people,
+      by = c("poll_id", "respondent_id"), relationship = "many-to-one"
+    ) |>
+    dplyr::select(dplyr::all_of(keys), attitude_id, value = value_numeric)
+  plain_responses <- responses |>
+    dplyr::inner_join(
+      dplyr::select(alternatives, poll_id, imputed_attitude_id, attitude_id),
+      by = c("poll_id", "attitude_id" = "imputed_attitude_id"),
+      relationship = "many-to-one", suffix = c("_imputed", "")
+    ) |>
+    dplyr::select(dplyr::all_of(keys), attitude_id, wave) |>
+    dplyr::left_join(measures,
+      by = c(keys, "attitude_id"), relationship = "one-to-one"
+    )
+  plain_catalog <- alternatives |>
+    dplyr::mutate(
+      evidence = paste0("output/respondent/respondent_measures.parquet; ",
+        definition_id
+      ),
+      construction = "policy index preserving component missingness"
+    ) |>
+    dplyr::select(dplyr::all_of(names(catalog)))
+  catalog <- dplyr::bind_rows(catalog, plain_catalog) |>
+    dplyr::mutate(is_primary = !grepl("_midpoint_imputed$", attitude_id))
+  responses <- dplyr::bind_rows(responses, plain_responses)
   stopifnot(
     !anyDuplicated(catalog[c("poll_id", "attitude_id")]),
     !anyDuplicated(responses[c(keys, "attitude_id", "wave")]),

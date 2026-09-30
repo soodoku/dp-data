@@ -710,5 +710,58 @@
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
-  ]
+  ],
+  "issues": {
+    "evidence_index": [
+      {
+        "issue_id": "NH-02",
+        "title": "NH-02 — Event year corrected; attendance needs reconciliation",
+        "evidence_path": "../../docs/poll-evidence.md#nh-02"
+      },
+      {
+        "issue_id": "NH-03",
+        "title": "NH-03: The three-wave workbook supplies raw answers and an explicit ID bridge",
+        "evidence_path": "../../docs/poll-evidence.md#nh-03"
+      },
+      {
+        "issue_id": "NH-04",
+        "title": "NH-04: Airport scaling reviewed; age remains historical",
+        "evidence_path": "../../docs/poll-evidence.md#nh-04"
+      },
+      {
+        "issue_id": "NH-05",
+        "title": "NH-05: Historical interim attitude rules superseded by NH-08",
+        "evidence_path": "../../docs/poll-evidence.md#nh-05"
+      },
+      {
+        "issue_id": "NH-06",
+        "title": "NH-06: Race refusal is missing minority status (corrected)",
+        "evidence_path": "../../docs/poll-evidence.md#nh-06"
+      },
+      {
+        "issue_id": "NH-07",
+        "title": "NH-07: Historical airport index replaced an attainable 0.625 with 0.675",
+        "evidence_path": "../../docs/poll-evidence.md#nh-07"
+      },
+      {
+        "issue_id": "NH-08",
+        "title": "NH-08: Nonanswers in the three-wave attitude battery",
+        "evidence_path": "../../docs/poll-evidence.md#nh-08"
+      },
+      {
+        "issue_id": "NH-09",
+        "title": "NH-09: Attitude source statuses now exclude documented don't-know answers",
+        "evidence_path": "../../docs/poll-evidence.md#nh-09"
+      },
+      {
+        "issue_id": "NH-10",
+        "title": "NH-10: Zero is not an offered knowledge answer",
+        "evidence_path": "../../docs/poll-evidence.md#nh-10"
+      }
+    ],
+    "reviewed_flags": [],
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
+    "structured_register_path": "../../metadata/poll_issues.json",
+    "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
+  }
 }

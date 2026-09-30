@@ -855,5 +855,43 @@
       "qa_notes": "All pages inspected, with full-size knowledge-question review. No clipped response columns; source question wording, choices and ordering retained. Token differences reflect source soft hyphenation, field codes, and printed footers. Original intentionally blank pages and source font symbols retained. No dynamic date content found.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
-  ]
+  ],
+  "issues": {
+    "evidence_index": [
+      {
+        "issue_id": "DK-02",
+        "title": "DK-02: Independent factual keys and departure estimates agree (checked)",
+        "evidence_path": "../../docs/poll-evidence.md#dk-02"
+      },
+      {
+        "issue_id": "DK-03",
+        "title": "DK-03: Archived zero-filling copied baseline facts into departure columns",
+        "evidence_path": "../../docs/poll-evidence.md#dk-03"
+      },
+      {
+        "issue_id": "DK-04",
+        "title": "DK-04: The retained English questionnaire is an earlier instrument version",
+        "evidence_path": "../../docs/poll-evidence.md#dk-04"
+      },
+      {
+        "issue_id": "DK-05",
+        "title": "DK-05: Original arrival source preserved publicly and scored",
+        "evidence_path": "../../docs/poll-evidence.md#dk-05"
+      },
+      {
+        "issue_id": "DK-07",
+        "title": "DK-07: Discussion-group linkage is still missing after source search",
+        "evidence_path": "../../docs/poll-evidence.md#dk-07"
+      },
+      {
+        "issue_id": "DK-06",
+        "title": "DK-06: Follow-up instrument, keys and participant identities verified",
+        "evidence_path": "../../docs/poll-evidence.md#dk-06"
+      }
+    ],
+    "reviewed_flags": [],
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
+    "structured_register_path": "../../metadata/poll_issues.json",
+    "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
+  }
 }

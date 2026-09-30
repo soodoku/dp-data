@@ -13,9 +13,10 @@ link_respondent_knowledge <- function(people, responses) {
   result <- responses |>
     dplyr::transmute(
       poll_id, respondent_id, historical_respondent_id, source_row,
-      item_id, wave, source_column, correct,
-      correct_zero_filled = dplyr::coalesce(as.integer(correct), 0L),
-      response_status
+      item_id, wave, source_column, raw_value, raw_text, correct,
+      correct_before_standardization, response_status, missing_code,
+      wave_observed,
+      knowledge_response, response_reason, source_response_label
     )
   stopifnot(!anyDuplicated(result[c(
     "poll_id", "respondent_id", "item_id", "wave"

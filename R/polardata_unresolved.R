@@ -20,7 +20,7 @@ build_zeguo_derived <- function(survey, values) {
   result$grpgain <- historical_fractional_gain(before * after, group)
   result$grpgainr <- result$grpgain
   result$grpgain2 <- NA_real_
-  result$t1knowlevel <- mean(rowMeans(before))
+  result$t1knowlevel <- mean(score_knowledge(before))
   result$pollid <- 52
   result$pollgroup <- group
   result$country <- 6

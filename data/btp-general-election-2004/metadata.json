@@ -665,5 +665,43 @@
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
-  ]
+  ],
+  "issues": {
+    "evidence_index": [
+      {
+        "issue_id": "BTPGE-03",
+        "title": "BTPGE-03: Raw answers, rounding and the summary sample are now explicit",
+        "evidence_path": "../../docs/poll-evidence.md#btpge-03"
+      },
+      {
+        "issue_id": "BTPGE-04",
+        "title": "BTPGE-04: Baseline poll knowledge uses a larger calibration sample",
+        "evidence_path": "../../docs/poll-evidence.md#btpge-04"
+      },
+      {
+        "issue_id": "BTPGE-05",
+        "title": "BTPGE-05: Zero correct post answers do not mean the post wave is absent (corrected)",
+        "evidence_path": "../../docs/poll-evidence.md#btpge-05"
+      },
+      {
+        "issue_id": "BTPGE-06",
+        "title": "BTPGE-06: Attendance flag conflicts with recorded meetings",
+        "evidence_path": "../../docs/poll-evidence.md#btpge-06"
+      },
+      {
+        "issue_id": "BTPGE-07",
+        "title": "BTPGE-07: Explicitly absent questionnaires remain missing (corrected)",
+        "evidence_path": "../../docs/poll-evidence.md#btpge-07"
+      },
+      {
+        "issue_id": "BTPGE-08",
+        "title": "BTPGE-08: All six attitude placements reviewed against raw responses",
+        "evidence_path": "../../docs/poll-evidence.md#btpge-08"
+      }
+    ],
+    "reviewed_flags": [],
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
+    "structured_register_path": "../../metadata/poll_issues.json",
+    "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
+  }
 }

@@ -11,8 +11,10 @@ testthat::test_that("nonanswers do not erase valid percentages", {
     c(rep("answered", 3), rep("invalid_response", 2), "dk", "nonanswer",
       "absent_form", "blank", "source_missing")
   )
-  testthat::expect_equal(ratings$value, c(0, 5, 10, rep(NA_real_, 7)))
-  testthat::expect_equal(ratings$normalized_value[1:3], c(0, 0.5, 1))
+  testthat::expect_equal(ratings$source_scale_value,
+    c(0, 5, 10, rep(NA_real_, 7))
+  )
+  testthat::expect_equal(ratings$value[1:3], c(0, 0.5, 1))
   testthat::expect_identical(ratings$raw_value,
     c(0, 5, 10, 11, 0.5, 88, 99, NA, NA, NA)
   )
@@ -20,8 +22,8 @@ testthat::test_that("nonanswers do not erase valid percentages", {
     percent <- source_attitude_values(c(99, 888, 999),
       c(NA, "No opinion", "No answer"), 0, 100, unit
     )
-    testthat::expect_equal(percent$value, c(99, NA, NA))
-    testthat::expect_equal(percent$normalized_value, c(0.99, NA, NA))
+    testthat::expect_equal(percent$source_scale_value, c(99, NA, NA))
+    testthat::expect_equal(percent$value, c(0.99, NA, NA))
   }
   baseline <- source_attitude_values(c(88, 99),
     c("No Opinion/Don't Know", "No Answer/Refused"), 0, 10, "rating"
@@ -37,13 +39,13 @@ testthat::test_that("transport keeps currencies and nominal choices distinct", {
   currency <- source_attitude_values(c(0, 50, 8888, 9999),
     c(NA, NA, "Don't know", "Refused"), 0, NA_real_, "dollars_per_month"
   )
-  testthat::expect_equal(currency$value, c(0, 50, NA, NA))
-  testthat::expect_true(all(is.na(currency$normalized_value)))
+  testthat::expect_equal(currency$source_scale_value, c(0, 50, NA, NA))
+  testthat::expect_true(all(is.na(currency$value)))
   choice <- source_attitude_values(c(1, 3, 2), rep(NA_character_, 3),
     NA_real_, NA_real_, "category", categories = c(1, 3)
   )
-  testthat::expect_equal(choice$value, c(1, 3, NA))
-  testthat::expect_true(all(is.na(choice$normalized_value)))
+  testthat::expect_equal(choice$source_scale_value, c(1, 3, NA))
+  testthat::expect_true(all(is.na(choice$value)))
   unknown <- source_attitude_values(c(50, NA), c(NA, NA),
     NA_real_, NA_real_, "unverified"
   )
@@ -51,7 +53,7 @@ testthat::test_that("transport keeps currencies and nominal choices distinct", {
     c("unclassified_response", "source_missing")
   )
   testthat::expect_equal(unknown$raw_value, c(50, NA))
-  testthat::expect_true(all(is.na(unknown$value)))
+  testthat::expect_true(all(is.na(unknown$source_scale_value)))
 })
 
 testthat::test_that("transport preserves all source records and cells", {
@@ -66,8 +68,8 @@ testthat::test_that("transport preserves all source records and cells", {
   built <- analysis_source_attitudes(participants, scores)
   definitions <- built$analysis_source_attitude_definitions
   responses <- built$analysis_source_attitude_responses
-  testthat::expect_equal(nrow(definitions), 829)
-  testthat::expect_equal(nrow(responses), 1039910)
+  testthat::expect_equal(nrow(definitions), 907)
+  testthat::expect_equal(nrow(responses), 1076726)
   testthat::expect_identical(participants, original_participants)
   testthat::expect_identical(scores, original_scores)
   testthat::expect_false(anyDuplicated(
@@ -97,6 +99,9 @@ testthat::test_that("transport preserves all source records and cells", {
         info = paste(spec$poll_id, spec$path, field)
       )
       id_column <- spec$id_column
+      if (spec$poll_id == "california-whats-next-2011") {
+        id_column <- paste0(substr(field, 1, 2), "_ParticipantNumber")
+      }
       if (spec$poll_id == "marousi-2006") {
         id_column <- if (startsWith(field, "P_")) {
           "P_Q1_0"
@@ -148,10 +153,12 @@ testthat::test_that("transport preserves all source records and cells", {
     refused <- item[item$raw_value %in% 88, ]
     testthat::expect_equal(nrow(refused), expected_refusals[i])
     testthat::expect_true(all(refused$response_status == "refused"))
-    testthat::expect_true(all(is.na(refused$value)))
-    testthat::expect_equal(mean(item$value, na.rm = TRUE), expected_means[i])
+    testthat::expect_true(all(is.na(refused$source_scale_value)))
+    testthat::expect_equal(mean(item$source_scale_value, na.rm = TRUE),
+      expected_means[i]
+    )
     raw_mean <- mean(item$raw_value[item$raw_value %in% 0:10])
-    testthat::expect_equal(mean(item$normalized_value, na.rm = TRUE),
+    testthat::expect_equal(mean(item$value, na.rm = TRUE),
       raw_mean / 10
     )
   }
@@ -160,7 +167,7 @@ testthat::test_that("transport preserves all source records and cells", {
                          marousi$raw_value %in% 9, ]
   testthat::expect_equal(nrow(no_answer), 17)
   testthat::expect_true(all(no_answer$response_status == "nonanswer"))
-  testthat::expect_true(all(is.na(no_answer$value)))
+  testthat::expect_true(all(is.na(no_answer$source_scale_value)))
   denmark <- responses[responses$poll_id == "denmark-euro-2000", ]
   refused <- denmark[denmark$source_column == "s_32" &
                        denmark$raw_value %in% 16, ]
@@ -168,17 +175,19 @@ testthat::test_that("transport preserves all source records and cells", {
                               denmark$raw_value %in% 5, ]
   testthat::expect_equal(nrow(refused), 32)
   testthat::expect_true(all(refused$response_status == "refused"))
-  testthat::expect_true(all(is.na(refused$value)))
+  testthat::expect_true(all(is.na(refused$source_scale_value)))
   testthat::expect_equal(nrow(unknown_choice), 140)
   testthat::expect_true(all(unknown_choice$response_status == "dk"))
-  testthat::expect_true(all(is.na(unknown_choice$value)))
+  testthat::expect_true(all(is.na(unknown_choice$source_scale_value)))
   substantive <- denmark[(denmark$source_column == "s_32" &
                             denmark$raw_value %in% c(13, 14)) |
                            (denmark$source_column == "s_36" &
                               denmark$raw_value %in% 4), ]
   testthat::expect_equal(nrow(substantive), 66)
   testthat::expect_true(all(substantive$response_status == "answered"))
-  testthat::expect_identical(substantive$value, substantive$raw_value)
+  testthat::expect_identical(substantive$source_scale_value,
+    substantive$raw_value
+  )
   control <- responses[responses$source_wave == "source_t2ctrl", ]
   testthat::expect_equal(nrow(control), 993 * 21)
   testthat::expect_true(all(is.na(control$respondent_id)))
@@ -203,7 +212,7 @@ testthat::test_that("transport preserves all source records and cells", {
   testthat::expect_equal(sum(dk_only$response_status == "dk"), 78L)
   testthat::expect_equal(sum(dk_only$response_status == "blank"), 87L)
   testthat::expect_true(all(dk_only$wave_observed))
-  testthat::expect_true(all(is.na(dk_only$value)))
+  testthat::expect_true(all(is.na(dk_only$source_scale_value)))
   vermont <- responses[responses$poll_id == "vermont-energy-2007", ]
   testthat::expect_true(all(vermont$wave_observed[
     vermont$source_wave == "T1"
@@ -222,8 +231,8 @@ testthat::test_that("transport preserves all source records and cells", {
                        responses$response_status == "unclassified_response", ]
   testthat::expect_equal(nrow(unknown), 271)
   testthat::expect_setequal(unique(unknown$source_column), c("AR_Q21", "F_Q21"))
-  testthat::expect_true(all(is.na(unknown$value)))
-  testthat::expect_true(all(is.na(responses$value[
+  testthat::expect_true(all(is.na(unknown$source_scale_value)))
+  testthat::expect_true(all(is.na(responses$source_scale_value[
     responses$response_status != "answered"
   ])))
   valid_names <- grepl("^[a-z][a-z0-9_]*$", definitions$attitude_id)

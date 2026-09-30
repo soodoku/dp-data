@@ -1,7 +1,10 @@
 source(file.path(root, "R", "respondents.R"))
 
 test_that("UK EU uses the same substantive scale across waves", {
-  survey <- read_poll_survey("uk-eu-1995")[1:5, ]
+  survey <- read_poll_survey("uk-eu-1995")
+  observed <- as.numeric(survey$part) == 1 &
+    as.numeric(survey$releu2) %in% 1:5
+  survey <- survey[which(observed)[1:5], ]
   for (stem in c("commies", "favref")) {
     for (wave in 1:2) survey[[paste0(stem, wave)]] <- 1:5
   }

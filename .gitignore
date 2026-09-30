@@ -1,6 +1,6 @@
 /*.zip
 /.Rproj.user/
-/.Rhistory
+.Rhistory
 /build/
 /renv/library/
 /vault/

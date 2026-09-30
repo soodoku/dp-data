@@ -366,6 +366,9 @@ standardize_knowledge_scores <- function(
   ), names(items))]
   items$correct[change] <- 0L
   items$correct[invalid] <- NA_integer_
+  observed_blank <- wave_observed %in% TRUE & items$correct %in% 0L &
+    items$response_reason %in% c("blank", "source_missing")
+  items$knowledge_response[observed_blank] <- "dk"
   items$knowledge_response[items$response_reason %in% "invalid_response"] <-
     NA_character_
   conflicts <- items[items$knowledge_response %in% "dk" &

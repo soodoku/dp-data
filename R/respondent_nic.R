@@ -34,6 +34,11 @@ nic_knowledge_items <- function(survey, wave) {
     democratic = as.numeric(read("POLDEM", 1:8) %in% 1:3)
   )
   items <- as.matrix(tibble::as_tibble(c(open, closed, placements)))
+  if (wave == 3L) {
+    observed <- nic_source_codes(survey, "PART3", 0:1) %in% 1L
+    stopifnot(all(items[!observed, , drop = FALSE] == 0))
+    items[!observed, ] <- NA_real_
+  }
   mask_reviewed_knowledge(items, survey, "nic-1996", wave)
 }
 

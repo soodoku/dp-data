@@ -900,5 +900,43 @@
       "qa_notes": "Original DOC unchanged. All body text and frequency tables retained; source token coverage99.995%, sole missing distinct token is a Word PAGE field code. Reviewed opening, all symbolic-change pages, a later knowledge table and final page; no clipping observed.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
-  ]
+  ],
+  "issues": {
+    "evidence_index": [
+      {
+        "issue_id": "AUS-07",
+        "title": "AUS-07: Absent and unavailable questionnaires were scored as zero",
+        "evidence_path": "../../docs/poll-evidence.md#aus-07"
+      },
+      {
+        "issue_id": "AUS-02",
+        "title": "AUS-02: Aggregate knowledge uses a different battery and flag rule",
+        "evidence_path": "../../docs/poll-evidence.md#aus-02"
+      },
+      {
+        "issue_id": "AUS-03",
+        "title": "AUS-03: Extremity omissions and a cross-wave ranking typo",
+        "evidence_path": "../../docs/poll-evidence.md#aus-03"
+      },
+      {
+        "issue_id": "AUS-04",
+        "title": "AUS-04: Participant gains now join by source row",
+        "evidence_path": "../../docs/poll-evidence.md#aus-04"
+      },
+      {
+        "issue_id": "AUS-05",
+        "title": "AUS-05: Age refusal no longer counts as age 98 (approved correction)",
+        "evidence_path": "../../docs/poll-evidence.md#aus-05"
+      },
+      {
+        "issue_id": "AUS-06",
+        "title": "AUS-06: A first preference for the Queen survives an unanswered second choice",
+        "evidence_path": "../../docs/poll-evidence.md#aus-06"
+      }
+    ],
+    "reviewed_flags": [],
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
+    "structured_register_path": "../../metadata/poll_issues.json",
+    "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
+  }
 }

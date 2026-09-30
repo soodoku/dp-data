@@ -1,3 +1,8 @@
+knowledge_form_unavailable <- function(poll, observed) {
+  stopifnot(length(poll) == length(observed), is.logical(observed))
+  !observed %in% TRUE
+}
+
 mask_reviewed_knowledge_items <- function(items, presence) {
   if (is.null(presence) || !nrow(presence)) {
     return(items)
@@ -9,7 +14,7 @@ mask_reviewed_knowledge_items <- function(items, presence) {
   )
   reviewed <- !is.na(position)
   observed <- presence$wave_observed[position]
-  unobserved <- reviewed & !observed %in% TRUE
+  unobserved <- reviewed & knowledge_form_unavailable(items$poll_id, observed)
   stopifnot(all(is.na(items$correct[unobserved]) |
                   items$correct[unobserved] == 0L))
   items$correct[unobserved] <- NA_integer_
@@ -46,7 +51,9 @@ mask_reviewed_knowledge <- function(items, survey, poll, original_wave) {
   stopifnot(!anyDuplicated(evidence$source_row))
   position <- match(questionnaire_local_rows(survey), evidence$source_row)
   stopifnot(length(position) == nrow(items), !anyNA(position))
-  unavailable <- !evidence$wave_observed[position] %in% TRUE
+  unavailable <- knowledge_form_unavailable(
+    rep(poll, nrow(items)), evidence$wave_observed[position]
+  )
   stopifnot(all(is.na(items[unavailable, ]) | items[unavailable, ] == 0))
   items[unavailable, ] <- NA_real_
   items
@@ -100,6 +107,14 @@ questionnaire_form_contract <- function(poll) {
     "cpl-1996" = form(
       "T2", "t2",
       fields[grepl("2$", fields) & !startsWith(fields, "know")], "part"
+    ),
+    "san-mateo-2008" = {
+      answers <- block("t2Q1", "t2q42")
+      answers <- answers[grepl("^t2[qQ]", answers)]
+      form("T2", "t2", answers, c("participant", "t2QSTGRP"))
+    },
+    "uk-eu-1995" = form(
+      "T2", "t2", fields[grepl("SAQ2", labels, fixed = TRUE)], "part"
     ),
     "uk-health-1998" = form(
       "T2", "t2", block("mtneed2", "dopint"),
@@ -184,8 +199,19 @@ questionnaire_form_evidence <- function(survey, poll, waves = NULL) {
       ))
     }
     observed <- questionnaire_form_answers(survey, form$fields[[1]])
+    if (poll == "uk-eu-1995") {
+      answers <- survey[form$fields[[1]]]
+      answers[] <- lapply(answers, function(value) {
+        value <- as.numeric(value)
+        value[value == -1 & !is.na(value)] <- NA_real_
+        value
+      })
+      observed <- questionnaire_form_answers(answers, names(answers))
+    }
     explicitly_absent <- switch(poll,
       "cpl-1996" = as.numeric(survey$part) %in% 2,
+      "san-mateo-2008" = !observed,
+      "uk-eu-1995" = as.numeric(survey$part) %in% 0 & !observed,
       "uk-health-1998" = as.numeric(survey$manwkend) %in% 0,
       "uk-crime-1994" = as.numeric(survey$part) %in% 0,
       "uk-general-election-1997" = as.numeric(survey$partic) %in% 0,
@@ -218,6 +244,8 @@ questionnaire_form_evidence <- function(survey, poll, waves = NULL) {
       ),
       evidence_basis = dplyr::case_when(
         observed ~ "observed_full_questionnaire_answers",
+        poll == "san-mateo-2008" & explicitly_absent ~
+          "empty_post_questionnaire",
         explicitly_absent ~ "source_indicator_and_empty_questionnaire",
         form$wave == "arrival" ~
           "empty_arrival_form_administrative_missingness_possible",
@@ -256,7 +284,8 @@ questionnaire_dependencies <- function(definitions) {
 
 analysis_reviewed_presence <- function(participants, surveys = NULL) {
   supported <- c(
-    "cpl-1996", "uk-health-1998", "uk-crime-1994",
+    "cpl-1996", "san-mateo-2008", "uk-eu-1995",
+    "uk-health-1998", "uk-crime-1994",
     "uk-general-election-1997", "europolis-2009",
     "tomorrows-europe-2007", "btp-presidential-primaries-2004",
     "nic2-2003", "nic-1996", "zeguo-2005"

@@ -29,6 +29,15 @@ validate_metadata <- function() {
           knowledge_codes$response_reason %in% "invalid_response")
   )
 
+  source_attitudes <- read_metadata("source_attitude_items")
+  stopifnot(
+    !anyNA(source_attitudes),
+    !anyDuplicated(source_attitudes[c("poll_id", "source_suffix")]),
+    all(source_attitudes$poll_id %in% polls$poll_id),
+    all(nzchar(source_attitudes$label)),
+    all(nzchar(source_attitudes$evidence))
+  )
+
   assertr::verify(
     polls,
     !anyDuplicated(.data$poll_id),
@@ -387,6 +396,58 @@ validate_poll_documentation <- function(
   invisible(TRUE)
 }
 
+read_poll_issues <- function() {
+  register <- jsonlite::read_json(project_path("metadata", "poll_issues.json"))
+  issues <- register$issues
+  ids <- vapply(issues, function(issue) issue$issue_id, character(1))
+  polls <- read_metadata("polls")$poll_id
+  stopifnot(
+    identical(register$schema_version, 1L), !anyDuplicated(ids),
+    all(vapply(issues, function(issue) issue$poll_id %in% polls, logical(1))),
+    all(unlist(register$poll_prefixes) %in% polls)
+  )
+  for (issue in issues) {
+    stopifnot(
+      issue$classification == "unusual_observation",
+      issue$decision == "retain_main_analysis",
+      all(vapply(issue$sources, function(reference) {
+        file.exists(project_path(reference$path)) && nzchar(reference$locator)
+      }, logical(1)))
+    )
+  }
+  register
+}
+
+poll_issue_index <- function(register = read_poll_issues()) {
+  lines <- readLines(project_path("docs", "poll-evidence.md"), warn = FALSE)
+  headings <- grep(
+    "^#{2,3} [A-Z][A-Z0-9]*-[0-9]{2,4}([: /]| —)", lines, value = TRUE
+  )
+  entries <- purrr::map_dfr(headings, function(heading) {
+    title <- sub("^#+ ", "", heading)
+    leading <- sub(":.*$| —.*$", "", title)
+    ids <- stringr::str_extract_all(
+      leading, "\\b[A-Z][A-Z0-9]*-[0-9]{2,4}\\b"
+    )[[1]]
+    purrr::map_dfr(ids, function(id) {
+      prefix <- sub("-[0-9]+$", "", id)
+      stopifnot(prefix %in% names(register$poll_prefixes))
+      poll_ids <- unlist(register$poll_prefixes[[prefix]])
+      if (!length(poll_ids)) {
+        poll_ids <- NA_character_
+      }
+      anchor <- tolower(id)
+      stopifnot(paste0('<a id="', anchor, '"></a>') %in% lines)
+      tibble::tibble(
+        issue_id = id, poll_id = poll_ids, title = title,
+        evidence_path = paste0("../../docs/poll-evidence.md#", anchor)
+      )
+    })
+  })
+  stopifnot(!anyDuplicated(entries[c("issue_id", "poll_id")]))
+  entries
+}
+
 poll_documentation <- function(poll, artifacts, references, facts,
                                coverage, previews) {
   poll_id <- poll$poll_id[[1]]
@@ -401,6 +462,8 @@ poll_documentation <- function(poll, artifacts, references, facts,
     project_path(artifact_rows$location), project_path("data", poll_id)
   ))
   preview_rows <- previews[previews$source_path %in% artifact_rows$location, ]
+  issue_register <- read_poll_issues()
+  issue_index <- poll_issue_index(issue_register)
   list(
     catalog = as.list(poll[1, ]),
     interpretation = paste(
@@ -413,6 +476,22 @@ poll_documentation <- function(poll, artifacts, references, facts,
     references = reference_rows,
     material_coverage = coverage[coverage$poll_id == poll_id, ],
     artifacts = artifact_rows,
-    document_previews = preview_rows
+    document_previews = preview_rows,
+    issues = list(
+      evidence_index = issue_index[
+        issue_index$poll_id %in% poll_id,
+        c("issue_id", "title", "evidence_path")
+      ],
+      reviewed_flags = Filter(
+        function(issue) issue$poll_id == poll_id, issue_register$issues
+      ),
+      shared_rules_path = paste0(
+        "../../docs/poll-evidence.md#",
+        "cross-poll-issues-for-the-eventual-schema"
+      ),
+      structured_register_path = "../../metadata/poll_issues.json",
+      knowledge_flags_path =
+        "../../output/analysis/analysis_knowledge_flags.parquet"
+    )
   )
 }

@@ -37,10 +37,11 @@ test_that("scoring converts reviewed observed nonanswers only", {
   expect_identical(result$n_changed, 4L)
   expect_identical(result$changes$respondent_id, as.character(1:4))
   expect_identical(result$dk_correct_conflicts$respondent_id, "9")
-  expect_identical(
-    result$items[names(items) != "correct"],
-    items[names(items) != "correct"]
-  )
+  preserved <- setdiff(names(items), c("correct", "knowledge_response"))
+  expect_identical(result$items[preserved], items[preserved])
+  expect_identical(result$items$knowledge_response, c(
+    "dk", NA, "dk", "dk", NA, NA, NA, NA, "dk", "incorrect"
+  ))
   expect_equal(sum(items$correct, na.rm = TRUE), sum(result$items$correct,
     na.rm = TRUE
   ))
@@ -285,6 +286,44 @@ test_that("invalid knowledge codes remain missing even on observed forms", {
   expect_identical(result$items$knowledge_response, items$knowledge_response)
   expect_equal(result$n_changed, 2L)
   expect_identical(standardize_knowledge_scores(result$items)$n_changed, 0L)
+})
+
+test_that("observed blanks are DK-like without erasing raw missingness", {
+  items <- tibble::tibble(
+    correct = c(NA_integer_, 0L, NA_integer_, 0L, 1L, 0L),
+    knowledge_response = c(NA, NA, NA, NA, "correct", NA),
+    response_reason = c(
+      "source_missing", "blank", "source_missing", "source_missing",
+      "source_missing", "invalid_response"
+    ),
+    raw_value = c(rep(NA_real_, 5), 98),
+    wave_observed = c(TRUE, TRUE, FALSE, NA, TRUE, TRUE)
+  )
+  result <- standardize_knowledge_scores(items)$items
+  expect_identical(result$correct, c(0L, 0L, NA_integer_, 0L, 1L, NA_integer_))
+  expect_identical(result$knowledge_response,
+    c("dk", "dk", NA, NA, "correct", NA)
+  )
+  expect_identical(result$response_reason, items$response_reason)
+  expect_identical(result$raw_value, items$raw_value)
+  expect_identical(standardize_knowledge_scores(result)$items, result)
+})
+
+test_that("every observed blank export receives the shared DK-like category", {
+  items <- arrow::read_parquet(project_path(
+    "output", "analysis", "analysis_phase_item_responses.parquet"
+  ))
+  blank <- items |>
+    dplyr::filter(
+      wave_observed %in% TRUE, correct %in% 0L,
+      response_reason %in% c("blank", "source_missing")
+    )
+  expect_gt(dplyr::n_distinct(blank$poll_id), 10L)
+  expect_true(all(blank$knowledge_response %in% "dk"))
+  marousi <- dplyr::filter(blank, poll_id == "marousi-2006")
+  expect_equal(nrow(marousi), 78L)
+  expect_true(all(is.na(marousi$raw_value)))
+  expect_true(all(marousi$response_reason == "blank"))
 })
 
 

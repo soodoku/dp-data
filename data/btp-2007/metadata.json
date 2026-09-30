@@ -363,5 +363,18 @@
       "relative_path": "briefing-materials/citizenship-briefing.pdf"
     }
   ],
-  "document_previews": []
+  "document_previews": [],
+  "issues": {
+    "evidence_index": [
+      {
+        "issue_id": "BTP07-02",
+        "title": "BTP07-02: Fielded keys reproduce the weighted report (checked; no correction)",
+        "evidence_path": "../../docs/poll-evidence.md#btp07-02"
+      }
+    ],
+    "reviewed_flags": [],
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
+    "structured_register_path": "../../metadata/poll_issues.json",
+    "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
+  }
 }

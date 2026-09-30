@@ -132,14 +132,27 @@ test_that("Australian identity and main sample survive presence repair", {
   )
   historical_people <- result$participants$source_dataset == "historical"
   expect_equal(sum(historical_people & result$participants$attended %in% TRUE),
-    356L
+    347L
   )
   expect_equal(sum(historical_people & result$participants$attended %in% FALSE),
-    864L
+    873L
   )
   expect_equal(sum(historical_people & is.na(result$participants$attended)),
     3439L
   )
+  formerly_attended <- historical_people &
+    result$participants$attendance_before_post_rule %in% TRUE &
+    result$participants$attended %in% FALSE
+  expect_setequal(result$participants$respondent_id[formerly_attended],
+    as.character(c(59, 209, 475, 486, 502, 529, 659, 1229, 1571))
+  )
+  expect_true(all(result$participants$attendance_basis[formerly_attended] ==
+                    "inferred_absent_post_questionnaire"))
+  repeated <- analysis_attendance_contract(result$participants,
+    result$phase_participants, phase_scores,
+    survey_reader = function(poll) survey
+  )
+  expect_identical(repeated$participants, result$participants)
   unchanged <- setdiff(names(people), c("attended", "attendance_basis"))
   expect_identical(result$participants[unchanged], people[unchanged])
   no_group <- as.numeric(survey$group[result$participants$source_row]) %in% 100

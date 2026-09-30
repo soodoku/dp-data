@@ -15,7 +15,13 @@ test_that("New Haven distinguishes a zero placeholder form from a blank quiz", {
   expect_true(all(as.matrix(survey[absent, fields]) == 0))
   post <- new_haven_knowledge_items(survey, "post")
   expect_true(all(is.na(post[absent, ])))
-  expect_true(all(!is.na(post[!absent, ])))
+  invalid <- is.na(post) & !absent
+  expect_equal(sum(invalid), 22L)
+  expect_setequal(survey$assigned[rowSums(invalid) > 0L],
+    c(3157, 3189, 3217, 3221)
+  )
+  raw_items <- as.matrix(survey[paste0("post_q", colnames(post))])
+  expect_true(all(raw_items[invalid] == 0))
   built <- build_new_haven_individual(survey)
   dependent <- c(
     "knowledge_t2", "knowledge_joint", "knowledge_gain",
@@ -30,7 +36,11 @@ test_that("New Haven distinguishes a zero placeholder form from a blank quiz", {
   fixture$post_q1a[3] <- 1
   expect_identical(new_haven_departure_observed(fixture), c(FALSE, NA, TRUE))
   expect_equal(new_haven_knowledge_items(fixture, "post")[3, ],
-    stats::setNames(rep(0, 8), colnames(post))
+    stats::setNames(rep(NA_real_, 8), colnames(post))
+  )
+  fixture$post_q35[3] <- 5
+  expect_equal(unname(new_haven_knowledge_items(fixture, "post")[3, "35"]),
+    0
   )
   expect_error(new_haven_departure_observed(
     dplyr::select(survey, -"post_q52d")

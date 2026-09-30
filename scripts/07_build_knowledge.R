@@ -25,7 +25,15 @@ comparison <- compare_knowledge_batteries(tables)
 parity <- comparison$summary
 directory <- project_path("output")
 fs::dir_create(directory)
-manifest <- purrr::imap(tables, write_typed_export, directory = directory) |>
+manifest <- purrr::imap(tables, function(data, name) {
+  changed_schema <- name %in% c(
+    "knowledge_responses", "knowledge_scores",
+    "california_knowledge_responses", "california_knowledge_scores"
+  )
+  write_typed_export(data, name, directory,
+    schema_version = if (changed_schema) "2" else "1"
+  )
+}) |>
   purrr::list_rbind()
 readr::write_csv(manifest, file.path(directory, "manifest.csv"))
 readr::write_csv(parity, project_path("audit", "knowledge_parity.csv"))

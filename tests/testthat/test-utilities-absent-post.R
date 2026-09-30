@@ -26,9 +26,20 @@ test_that("Texas absence propagates through post scores and gains", {
   }
 })
 
-test_that("knowledge summaries reject partially missing scored batteries", {
-  before <- matrix(c(1, 0), nrow = 1L)
-  after <- matrix(c(NA, 0), nrow = 1L)
+test_that("knowledge summaries distinguish invalid items and absent forms", {
+  before <- rbind(c(1, 0), c(1, 0), c(1, 0))
+  after <- rbind(c(NA, 1), c(NA, 0), c(NA, NA))
+  original <- after
+  scores <- summarise_historical_knowledge(before, after)
+  expect_identical(after, original)
+  expect_equal(scores$knowledge_t1, rep(.5, 3))
+  expect_equal(scores$knowledge_t2, c(.5, 0, NA))
+  expect_equal(scores$knowledge_joint, c(0, 0, NA))
+  expect_equal(scores$knowledge_gain, c(0, -.5, NA))
+  expect_true(all(is.na(scores[3L, names(scores) != "knowledge_t1"])))
+  after[1L, 1L] <- .5
+  expect_error(summarise_historical_knowledge(before, after))
+  after[1L, 1L] <- 2
   expect_error(summarise_historical_knowledge(before, after))
 })
 

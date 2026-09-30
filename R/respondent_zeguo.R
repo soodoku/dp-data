@@ -28,6 +28,10 @@ zeguo_knowledge_items <- function(survey, wave) {
     }
     scores[!zeguo_departure_observed(survey), ] <- NA_real_
   }
+  for (field in fields) {
+    invalid <- knowledge_invalid_codes("zeguo-2005", field, survey[[field]])
+    scores[invalid, field] <- NA_real_
+  }
   mask_reviewed_knowledge(scores, survey, "zeguo-2005", wave)
 }
 

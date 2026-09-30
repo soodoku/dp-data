@@ -858,5 +858,43 @@
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
-  ]
+  ],
+  "issues": {
+    "evidence_index": [
+      {
+        "issue_id": "BTPHE-01",
+        "title": "BTPHE-01: Missing gender remains missing (corrected)",
+        "evidence_path": "../../docs/poll-evidence.md#btphe-01"
+      },
+      {
+        "issue_id": "BTPHE-02",
+        "title": "BTPHE-02: Funding index and float storage reproduce the original definition",
+        "evidence_path": "../../docs/poll-evidence.md#btphe-02"
+      },
+      {
+        "issue_id": "BTPHE-03",
+        "title": "BTPHE-03: Q15 calibration answer key (corrected)",
+        "evidence_path": "../../docs/poll-evidence.md#btphe-03"
+      },
+      {
+        "issue_id": "BTPHE-04",
+        "title": "BTPHE-04: Elementary-school achievement-gap answer key corrected",
+        "evidence_path": "../../docs/poll-evidence.md#btphe-04"
+      },
+      {
+        "issue_id": "BTPHE-05",
+        "title": "BTPHE-05: Correct four attitude labels; preserve all numeric definitions",
+        "evidence_path": "../../docs/poll-evidence.md#btphe-05"
+      },
+      {
+        "issue_id": "BTPHE-06",
+        "title": "BTPHE-06: Preserve the wider source and identify the report-sample gap",
+        "evidence_path": "../../docs/poll-evidence.md#btphe-06"
+      }
+    ],
+    "reviewed_flags": [],
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
+    "structured_register_path": "../../metadata/poll_issues.json",
+    "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
+  }
 }

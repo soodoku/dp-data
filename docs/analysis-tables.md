@@ -22,6 +22,7 @@ and historical aggregate exports. Source files and reviewed metadata stay in
 | `analysis_phase_attitudes` | One reviewed paired attitude item; `poll_id`, `attitude_id` |
 | `analysis_phase_attitude_responses` | One raw attitude answer; participant key, `attitude_id`, `wave_instance_id` |
 | `analysis_phase_item_responses` | One item answer with verified timing; participant key, `battery_id`, `wave_instance_id`, `item_id` |
+| `analysis_knowledge_flags` | One existing phase score with zero-score and raw-blank flags; participant key, `battery_id`, `wave`, `wave_instance_id` |
 | `analysis_source_attitude_definitions` | One source attitude field and occasion; `source_id`, `source_column`, `source_wave` |
 | `analysis_source_attitude_responses` | One source-row response; `source_id`, `source_row`, `source_column` |
 
@@ -83,7 +84,7 @@ unavailable. AMR's recovered questionnaire, expert answer table and harmonized
 codebooks supply all six items' options and keyed text. Its questionnaire Q21
 copies the preceding question's options, but the expert table and codebook agree
 on the infection-prevention options and key 5. Existing scoring is preserved;
-[Poll issues](poll-issues.md#amr-04--preserve-verified-phases-and-recovered-measurement-evidence-implemented)
+[Poll issues](poll-evidence.md#amr-04)
 records the source conflict and remaining evidence gaps.
 
 Attitude indices in the respondent layer distinguish missing-preserving values
@@ -140,10 +141,21 @@ survey are `completed`; the other 7,018 remain `invited_noncompleter`. Their
 for 426 with four observed zeros. The other 6,408 have no session records and
 no observed answers in the raw immediate post questionnaire; their nonattendance
 is inferred, with `attendance_basis = inferred_absent_post_questionnaire`.
-Positive session evidence takes precedence over an absent post questionnaire.
-Controls retain `attended = FALSE`, and documented completers retain
-`attended = TRUE`; assignment, completion category and panel inclusion do not
-change.
+Under the approved completion rule, all 7,018 invited noncompleters have
+`attended = FALSE` because they supplied no actual immediate-exit answers.
+The original 184 positive session classifications remain in
+`attendance_before_post_rule`, with their prior basis and evidence. Session
+records remain available as evidence of partial attendance; the harmonized
+flag denotes questionnaire-based completion. Assignment, source completion
+categories and panel restrictions remain distinct.
+
+`participant` identifies analytical eligibility: attendance must be true and
+every collected pre-arrival, arrival and immediate-exit questionnaire must be
+observed. A stage never collected by that study imposes no requirement.
+`exclusion_reason` explains missing collected stages or nonattendance. The
+source frame, scores and source attendance evidence remain available for
+attrition reporting; a missing knowledge battery within an otherwise observed
+questionnaire is not a missing questionnaire.
 AMR retains 1,280 attendees and 1,139 controls; the paper's 1,847 invited
 nonattenders are absent from its deposit. These rows therefore cannot identify
 a full invitation intention-to-treat effect. Its supplied weights apply within
@@ -238,10 +250,12 @@ has one row per canonical participant, measure, and wave, keyed by `poll_id`,
 covers baseline (`t1`) in 28 polls, including control respondents where present.
 Values are on a 0–1 scale; refusal, no-opinion, and out-of-range codes are missing.
 Single-item attitudes keep nonanswers missing. Historical composite indices may use
-explicitly named `_midpoint_imputed` variants; plain alternatives remain in
-`output/respondent/respondent_measures.parquet`. The canonical baseline catalog
-identifies every such variant by name and construction, rather than silently
-substituting a midpoint.
+explicitly named `_midpoint_imputed` variants. The canonical baseline catalog
+also includes the 23 corresponding plain indices from existing respondent
+measures. Select `is_primary == TRUE` for one plain definition per construct;
+imputed alternatives have `is_primary == FALSE`. Do not average both variants
+as separate measures. Their names and construction identify the treatment of
+missing components explicitly.
 
 The 21 earlier polls retain the existing policy indices and their documented
 construction in the rebuilt polardata. The seven additional polls use individual
@@ -328,12 +342,16 @@ that every person completed every wave or that discussion-group IDs are known.
 
 `analysis_phase_participants` adds `attendance_status`, `attendance_evidence`,
 and nullable `sessions_attended`. The common attendance helper runs after
-questionnaire presence is established. Unknown attendance becomes inferred
-nonattendance only when an immediate post-deliberation (`t2`) questionnaire is
-absent; missing knowledge items within a returned form and missing later (`t3`)
-follow-up do not trigger this rule. Positive attendance evidence is retained
-even when exit is absent. Explicit source indicators take precedence: CPL, WTU
-and SWEPCO use `PART`, and Europolis uses labeled `GROUP_T1BIS`. Zeguo uses a
+questionnaire presence is established. A person with no answers anywhere in the immediate post-deliberation (`t2`)
+questionnaire is classified as a nonattendee under the common completion rule,
+even if an earlier source flag records attendance. Missing knowledge items within
+a returned form and a missing later (`t3`) follow-up do not trigger this rule.
+Questionnaires not collected for a source cohort do not establish nonattendance.
+CPL, WTU and SWEPCO retain source `PART`, and Europolis retains labeled
+`GROUP_T1BIS`, as evidence before this harmonized rule. The fields
+`attendance_before_post_rule`, `attendance_basis_before_post_rule`, and
+`attendance_evidence_before_post_rule` preserve the prior source-based
+classification and its basis. Zeguo uses a
 matched onsite POST form, so p36 and p211 are attendees despite lacking groups,
 and p90 remains an attendee despite a blank knowledge battery.
 
@@ -404,7 +422,7 @@ applied. Pre-event answers never depend on the person's post-event response.
 ## Source-level attitudes
 
 `analysis_source_attitude_definitions` and `analysis_source_attitude_responses`
-preserve the reviewed attitude fields in four additional polls. Definitions
+preserve the reviewed attitude fields in five additional polls. Definitions
 are specific to a source field and interview occasion. They do not assert that
 similarly numbered questions across waves measure the same thing.
 
@@ -414,7 +432,8 @@ similarly numbered questions across waves measure the same thing.
 | Vermont 2007 | 243 | 182,250 |
 | Marousi 2006 | 248 | 316,200 |
 | America in One Room 2024 | 174 | 420,906 |
-| Total | 829 | 1,039,910 |
+| California 2011 | 78 | 36,816 |
+| Total | 907 | 1,076,726 |
 
 Every source row is retained, including recruitment respondents and people
 outside the selected knowledge panels. `source_id` and `source_row` identify
@@ -447,8 +466,10 @@ answer stops the build. Empty forms, ambiguous combined nonanswer codes, derived
 identifiers do not supply positive evidence under this rule. Source-only people
 remain source-only, and an unassigned interview phase remains unassigned.
 
-`unit`, `minimum` and `maximum` describe the source scale. `normalized_value`
-is supplied only when a reviewed numeric scale has two fixed endpoints.
+`unit`, `minimum` and `maximum` describe the source scale. `source_scale_value`
+preserves the cleaned answer in those original units; primary `value` is on 0–1
+only when a reviewed numeric scale has two fixed endpoints. `raw_value` retains
+the original numeric code, including source missing codes.
 Nominal categories are not converted into an ordered scale. Vermont's
 percentage responses keep a 0–100 scale, where 99 can be a genuine answer;
 dollar willingness-to-pay responses keep dollars and have no invented upper
@@ -463,8 +484,10 @@ question blocks, including nonknowledge answers. An observed questionnaire with
 an unanswered quiz follows the knowledge rule: reviewed blanks and DK score
 zero. An absent or unavailable questionnaire has missing knowledge scores and
 item correctness. A questionnaire with no retained answers and no return
-indicator remains of unknown presence. Attendance is a separate variable;
-positive attendance evidence takes precedence over an absent exit questionnaire.
+indicator remains of unknown presence. Attendance is a separate variable. For the harmonized completion definition,
+no actual immediate-post answers means nonattendance. Original attendance
+flags and session evidence remain available in the source and pre-rule
+provenance fields.
 
 A shared source-form helper now applies these rules to CPL, UK Crime, UK Health,
 UK General Election, Europolis, Tomorrow's Europe, BTP Presidential Primaries,
@@ -502,3 +525,43 @@ file does not label. Each rule retains its code, reason and source line.
 `source_responses` keeps the raw value while distinguishing these documented
 nonanswers from answered values. A code is never missing merely because it is
 99 or 999 in another question.
+
+
+California's source attitude rows retain 39 matched arrival/exit policy ratings
+in their documented 0–10 desirability units and as fixed-endpoint 0–1 values.
+Literal wave IDs and native respondent numbers are preserved separately for
+arrival and departure. The full 472-row source survives, including records
+without canonical participant links. Questionnaire presence is established from
+all recorded questionnaire answers; missing policy ratings never become neutral
+or incorrect responses. The question registry supplies retained report/form
+wording where the original source dictionaries omit it. See CA-08 in the poll
+issue ledger.
+
+Whole unavailable knowledge questionnaires remain distinct from zero-correct
+observed quizzes. UK–EU's −1/not-applicable departure forms and San Mateo's
+source nonparticipants without any departure questionnaire now follow this rule.
+Inferred nonattendance has its own explicit basis, with the prior classification
+retained separately. San Mateo participant 1467 has no post-questionnaire
+answers: its post score is missing and harmonized attendance is false (SM-08).
+
+## Unusual knowledge responses and robustness flags
+
+`analysis_knowledge_flags` preserves every phase-score key and score, alongside
+nullable `zero_score`, `any_blank`, `all_blank`, item-coverage counts and
+`zero_pattern`. A zero on an observed form is flagged without being discarded.
+An unavailable form has a null zero flag. Whole-battery blankness is established
+only when all item evidence is present; score-only sources retain an unresolved
+raw-response pattern. The `n_dk` count uses source-recorded DK reasons, so blanks
+classified as conventionally DK-like do not masquerade as explicit DK codes.
+The original response reasons and raw values remain available for guessing
+adjustment and missingness analysis.
+
+Join the flags for a selected pair of waves by respondent and battery to compare
+exclusion of zero exit scores, zeros at either endpoint, and wholly blank
+batteries. Do not mix source aliases or battery definitions, and report changes
+in respondent and group coverage. These are robustness samples, not upstream
+recoding decisions. `audit/knowledge_blanks.csv` gives separate source-frame,
+attendee and eligible-participant counts and zero-score rates; the respondent
+log identifies blank source fields. The structured
+[issue register](../metadata/poll_issues.json) and SM-11/ZG-10 document the unusual
+San Mateo and Zeguo patterns, their publication bridges and denominator differences.

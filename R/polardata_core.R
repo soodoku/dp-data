@@ -19,14 +19,7 @@ core_poll_constants <- function(poll_id) {
 }
 
 core_eu_knowledge <- function(survey, wave) {
-  key <- c(eusize = 1, swiss = 2, inctax = 2, elect = 1, ptyapp = 2)
-  purrr::imap(key, function(correct, stem) {
-    value <- eu_source_value(
-      survey, paste0(stem, wave),
-      if (wave == 1L) c(-1, 1, 2, 8, 9) else c(-1, 1, 2, 3, 9)
-    )
-    as.numeric(value %in% correct)
-  }) |> do.call(what = cbind)
+  eu_knowledge_items(survey, wave)
 }
 
 core_poll_profile <- function(survey, poll_id) {

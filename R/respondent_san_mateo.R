@@ -22,13 +22,16 @@ san_mateo_knowledge <- function(survey, wave) {
     `19` = 3, `20` = 5, `21` = 1, `22` = 3, `23` = 4,
     `24` = 3, `25` = 1, `26` = 5
   )
-  purrr::imap(keys, function(correct, item) {
+  items <- purrr::imap(keys, function(correct, item) {
     field <- paste0(if (wave == 2L) "t2" else "", "Q", item)
     value <- btp_source_codes(survey, field, c(1:6, 8, 9))
-    as.numeric(value %in% correct)
+    score <- as.numeric(value %in% correct)
+    score[knowledge_invalid_codes("san-mateo-2008", field, value)] <- NA_real_
+    score
   }) |>
     tibble::as_tibble() |>
     as.matrix()
+  mask_reviewed_knowledge(items, survey, "san-mateo-2008", wave)
 }
 
 san_mateo_historical_ids <- function(

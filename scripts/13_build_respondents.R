@@ -42,7 +42,14 @@ tables$briefing_reading <- build_briefing_reading(tables$people)
 validate_respondent_tables(tables)
 directory <- project_path("output", "respondent")
 fs::dir_create(directory)
-manifest <- purrr::imap(tables, write_typed_export, directory = directory) |>
+manifest <- purrr::imap(tables, function(data, name) {
+  changed_schema <- name %in% c(
+    "respondent_knowledge", "historical_knowledge_items"
+  )
+  write_typed_export(data, name, directory,
+    schema_version = if (changed_schema) "2" else "1"
+  )
+}) |>
   purrr::list_rbind()
 readr::write_csv(manifest, file.path(directory, "manifest.csv"))
 coverage <- contracts |>

@@ -14,7 +14,14 @@ test_that("historical item scores reproduce both respondent waves", {
   scores <- items |>
     dplyr::filter(!is.na(.data$historical_respondent_id)) |>
     dplyr::summarise(
-      score = mean(.data$correct, na.rm = TRUE),
+      score = if (!any(.data$wave_observed %in% TRUE)) {
+        NA_real_
+      } else if (dplyr::first(.data$poll_id) ==
+                   "btp-presidential-primaries-2004") {
+        mean(.data$correct_before_standardization, na.rm = TRUE)
+      } else {
+        sum(.data$correct, na.rm = TRUE) / dplyr::n()
+      },
       .by = c("poll_id", "historical_respondent_id", "wave")
     ) |>
     dplyr::left_join(aliases, by = "poll_id", relationship = "many-to-one") |>

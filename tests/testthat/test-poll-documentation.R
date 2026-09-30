@@ -35,7 +35,7 @@ test_that("every poll has generated metadata with resolvable source links", {
       poll, artifacts, references, facts, coverage, previews
     )
     encoded <- jsonlite::toJSON(expected,
-      auto_unbox = TRUE, na = "null", dataframe = "rows"
+      auto_unbox = TRUE, na = "null", dataframe = "rows", digits = NA
     )
     expected <- jsonlite::fromJSON(encoded, simplifyVector = FALSE)
     expect_equal(observed, expected)

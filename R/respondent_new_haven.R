@@ -6,8 +6,11 @@ new_haven_knowledge_items <- function(survey, wave) {
     `40` = 1, `41` = 1, `42` = 4, `43` = 1
   )
   items <- purrr::imap(keys, function(key, item) {
-    value <- read_source_codes(survey, paste0(wave, "_q", item), 0:6)
-    as.numeric(value %in% key)
+    field <- paste0(wave, "_q", item)
+    value <- read_source_codes(survey, field, 0:6)
+    correct <- as.numeric(value %in% key)
+    correct[knowledge_invalid_codes("new-haven-2004", field, value)] <- NA_real_
+    correct
   }) |>
     tibble::as_tibble() |>
     as.matrix()
@@ -40,7 +43,10 @@ build_new_haven_individual <- function(
   after <- new_haven_knowledge_items(survey, "post")
   arrival <- new_haven_knowledge_items(survey, "mid")
   arrival_attitudes <- new_haven_attitudes(survey, "mid")
-  knowledge <- summarise_historical_knowledge(before, after)
+  after_observed <- new_haven_departure_observed(survey)
+  knowledge <- summarise_historical_knowledge(before, after,
+    after_observed = after_observed
+  )
   baseline <- new_haven_attitudes(survey, "pre")
   post <- new_haven_attitudes(survey, "post")
   education <- recode_source_values(
@@ -72,9 +78,15 @@ build_new_haven_individual <- function(
       attitude_extremity = as_historical_float(rowMeans(
         as.data.frame(lapply(baseline, \(x) as_historical_float(abs(x - .5))))
       )),
-      knowledge_midterm = rowMeans(arrival),
-      knowledge_midterm_joint = rowMeans(arrival * after),
-      knowledge_joint_midterm = rowMeans(before * arrival * after),
+      knowledge_midterm = score_knowledge(arrival),
+      knowledge_midterm_joint = score_knowledge(
+        arrival * after, rowSums(!is.na(arrival)) > 0L & after_observed
+      ),
+      knowledge_joint_midterm = score_knowledge(
+        before * arrival * after,
+        rowSums(!is.na(before)) > 0L &
+          rowSums(!is.na(arrival)) > 0L & after_observed
+      ),
       attitude_extremity_midterm = as_historical_float(rowMeans(
         as.data.frame(lapply(
           arrival_attitudes,

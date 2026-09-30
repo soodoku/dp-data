@@ -32,7 +32,7 @@ reviewed_us_baseline_level <- function(poll_id, survey = NULL) {
     if (is.null(survey)) survey <- read_poll_survey(poll_id)
     items <- san_mateo_knowledge(survey, 1L)
     stopifnot(ncol(items) == 8L)
-    scores <- rowSums(items) / ncol(items)
+    scores <- score_knowledge(items)
   } else {
     stop("Unsupported reviewed US calibration: ", poll_id)
   }
@@ -63,7 +63,11 @@ reviewed_us_group_gain <- function(before, after, group, knowledge_joint) {
     value[is.na(value)] <- 0
     original <- as_historical_float(original + value)
   }
-  gain <- original * ncol(joint) / ((1 - knowledge_joint) * ncol(joint))
+  denominator <- (1 - knowledge_joint) * ncol(joint)
+  partial <- rowSums(!is.na(joint)) > 0L &
+    rowSums(!is.na(joint)) < ncol(joint)
+  denominator[partial] <- rowSums(joint == 0, na.rm = TRUE)[partial]
+  gain <- original * ncol(joint) / denominator
   missing_peers <- rowSums(joint == 0 & is.na(components), na.rm = TRUE) > 0
   unavailable_focal <- rowSums(!is.na(joint)) == 0L
   gain[is.nan(gain) | missing_peers | unavailable_focal] <- NA_real_

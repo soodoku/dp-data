@@ -90,9 +90,14 @@ test_that("US aggregates match approved values and exact covariance reviews", {
       )
     }
     if (poll == "san-mateo-2008") {
-      expected$t1knowlevel <- approved_reference_values(
-        poll, "t1knowlevel", expected$caseid, expected$t1knowlevel
-      )
+      for (field in c(
+        "t1knowlevel", "meant1knowcor", "meant2know", "meant1knowrcor",
+        "meant1knowcor_ind", "t1knowlevelcor", "t2knowlevel", "t1knowlevelrcor"
+      )) {
+        expected[[field]] <- approved_reference_values(
+          poll, field, expected$caseid, expected[[field]]
+        )
+      }
     }
     if (poll == "btp-health-education-2005") {
       for (field in c(

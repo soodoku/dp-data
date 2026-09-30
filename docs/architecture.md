@@ -259,11 +259,17 @@ identity table. It joins on poll and source row, asserts a unique person per
 source record, and exports canonical and historical respondent IDs with each
 item/wave. Anonymous battery row order is not a downstream identity contract.
 
-`correct` preserves missingness and `response_status` preserves its meaning.
-`correct_zero_filled` explicitly counts missing correctness as zero for the
-existing fixed-denominator scoring convention. Consumers choose that defined
-field instead of silently replacing missing responses themselves. This export
-does not create new answer keys or change sample membership. It covers the
+`knowledge_response` records `correct`, `incorrect`, or `dk` when the source
+permits that distinction. `response_reason` separately preserves refusal, blank,
+invalid response, absent form, and unresolved source codes. Primary `correct`
+is numeric: correct answers are 1; incorrect answers, DK and blanks on an
+observed form are 0; invalid answers and unavailable questionnaires are missing.
+`wave_observed` distinguishes completed questionnaires from missing or unresolved
+forms. Raw responses and labels remain available.
+`correct_before_standardization` preserves the prior scorer value for audit;
+it does not establish that an answer or questionnaire was observed.
+The unconditional zero-filled alias is removed. This export does not create
+new answer keys or change source membership. It covers the
 intersection of reconstructed source-person polls and existing knowledge builds.
 
 California 2011 also has an eight-question arrival/departure participant

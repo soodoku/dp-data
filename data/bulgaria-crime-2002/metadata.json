@@ -971,5 +971,28 @@
       "qa_notes": "Complete one-page table visually checked; all source text tokens retained. Temporary ODT page width changed from11in to13in and table left margin from-1.325in to0in to prevent clipping; ODT content text unchanged and original DOC bytes unchanged.",
       "rebuild_command": "Convert unchanged DOC to temporary ODT with LibreOffice; in styles.xml set page width13in; in content.xml set table left margin0in; render temporary ODT as PDF. See qa_notes; original DOC unchanged."
     }
-  ]
+  ],
+  "issues": {
+    "evidence_index": [
+      {
+        "issue_id": "BGC-06",
+        "title": "BGC-06: Unlabelled ethnicity remains unknown (approved correction)",
+        "evidence_path": "../../docs/poll-evidence.md#bgc-06"
+      },
+      {
+        "issue_id": "BGC-08",
+        "title": "BGC-08: Complete main attitude and summary-battery review",
+        "evidence_path": "../../docs/poll-evidence.md#bgc-08"
+      },
+      {
+        "issue_id": "BGC-07",
+        "title": "BGC-07: baseline precedes arrival (resolved 2026-09-28)",
+        "evidence_path": "../../docs/poll-evidence.md#bgc-07"
+      }
+    ],
+    "reviewed_flags": [],
+    "shared_rules_path": "../../docs/poll-evidence.md#cross-poll-issues-for-the-eventual-schema",
+    "structured_register_path": "../../metadata/poll_issues.json",
+    "knowledge_flags_path": "../../output/analysis/analysis_knowledge_flags.parquet"
+  }
 }

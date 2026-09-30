@@ -33,6 +33,7 @@ purrr::walk(seq_len(nrow(polls)), function(index) {
     facts, coverage, previews
   )
   jsonlite::write_json(document, file.path(directory, "metadata.json"),
-    auto_unbox = TRUE, pretty = TRUE, na = "null", dataframe = "rows"
+    auto_unbox = TRUE, pretty = TRUE, na = "null", dataframe = "rows",
+    digits = NA
   )
 })
