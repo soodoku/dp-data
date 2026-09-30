@@ -209,11 +209,12 @@ Restricted respondent files remain in the local vault. Exact historical CDD scri
 in Git history under the `historical-cdd-scripts` tag, not beside the maintained
 pipeline on `main`.
 
-The aggregate `polardata` and attitude-index files are validation targets, not
-inputs to the canonical build. Canonical long tables will be assembled from
-audited poll-level respondent, item, wave, group, and artifact records. Their
-released form can be typed Parquet, with small dictionaries and manifests kept
-as CSV for inspection and joins.
+The frozen aggregate `polardata` and attitude-index files are validation targets.
+The current aggregates are rebuilt from poll-level sources with approved
+corrections. Canonical respondent, item, wave, group, and score tables are
+released as typed Parquet. Small flat dictionaries and manifests remain CSV
+for inspection and joins; nested poll metadata uses JSON. Schema definitions
+validate types, required values, and keys before writing the Parquet files.
 
 ## Cor–Sood knowledge batteries
 
@@ -228,9 +229,9 @@ These files contain scored 0/1 item responses and `female`, but no original
 answer choices, respondent IDs, group assignments, or attitudes. A row number
 is only an index within that deposited CSV. The files can reproduce the
 knowledge-battery analysis; they cannot by themselves regenerate
-`polardata` or establish a respondent-level join to it. The original CDD
-survey files and scripts in the local vault must be audited poll by poll
-before the full aggregate is rebuilt. Published aggregates in
+`polardata` or establish a respondent-level join to it. The retained poll-level
+survey files and original coding evidence supply that linkage; the issue
+register records remaining source gaps. Published aggregates in
 `evidence/benchmarks/` remain comparison targets for the canonical build and
 explicit inputs to the historical linkage build.
 
