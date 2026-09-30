@@ -4,6 +4,9 @@
 
 - Restore seventeen unchanged questionnaire write-in fields in five public poll
   surveys; keep contact and administrative exclusions separate from answers.
+- Expand Climate’s typed baseline/exit attitudes from 72 to all 93 ratings
+  verified against the report. Preserve 370,188 additional response rows with
+  their original directions and missingness; existing values and samples are unchanged.
 
 - Preserve Denmark's July 2003 dissertation draft and separate technical
   appendix in its poll folder, with their distinct source versions recorded.

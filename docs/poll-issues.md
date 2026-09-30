@@ -7864,6 +7864,42 @@ source-based tests independently compare every raw and scaled paired response.
 No participant, attendance, group, knowledge score or historical aggregate
 changes. Downstream adoption of these paired attitudes is a separate comparison.
 
+**September 30: complete the report-verified initial/exit rating coverage.**
+The paired catalog now retains all 93 Climate ratings reported in
+`data/a1r-climate-2021/reports/climate_results.pdf`, rather than only the 72
+items selected by the earlier downstream reader. The added 21 items are
+Q13A:D (political efficacy), Q14A:E (views of people who disagree), Q15A:I
+(values), and Q16A:C (frequency of loneliness-related feelings); see PDF
+pp.7–9. Higher values retain greater agreement for Q13/Q14, greater importance
+for Q15, and greater frequency for Q16. Oppositely worded statements are not
+silently reversed or combined into a new construct. The report's grouped
+“Don't Know or Not Applicable” category does not establish distinct labels
+for individual administrative codes; those labels remain null.
+
+This adds 370,188 typed response rows (21 items × two waves × 8,814 source
+people). Of these, 174,719 baseline and 33,103 exit responses are substantive
+0–10 ratings, normalized by division by ten. Another 10,375 baseline and
+1,190 exit cells contain nonanswer codes and retain missing numeric values;
+150,801 missing exit responses retain their independently established
+`absent_form` status. All raw source codes are preserved. Each of the 21
+item-paired weighted before/after means and changes reproduces the report
+within its three-decimal rounding, extending the existing 93-item report
+check to the typed handoff. This verifies source transport; it does not select
+weights, constructs or a new downstream analytical sample.
+
+Every previously exported attitude value and row remains unchanged, as do
+all participant, group, knowledge, weight and historical aggregate outputs.
+The phase catalog contains 140 definitions across A1R 2019 (47) and Climate
+(93), and the paired response table contains 2,000,552 rows. No later-follow-up
+attitudes are added here. The Climate source retains 44 T3 counterparts of
+the previously exported 72 items, including 58,390 substantive answers and
+4,046 nonanswers among 1,419 source people. The authored preparation script
+explicitly uses 27 repeated policy items at T3 (lines249–317); the complete
+fielded follow-up questionnaire is still needed to establish all remaining
+wording and category labels without assuming that matching suffixes imply
+identical questions. The unresolved T3Q17/T3Q18 knowledge categories likewise
+remain unchanged.
+
 ## Cross-poll issues for the eventual schema
 
 ### X-01: Knowledge eligibility is not the respondent universe
