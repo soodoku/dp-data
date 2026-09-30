@@ -1,5 +1,30 @@
+approved_cell_changes <- arrow::read_parquet(project_path(
+  "audit", "corrections", "approved_cell_changes.parquet"
+))
+
 approved_reference_values <- function(poll_id, field, caseid, historical,
                                       tolerance = 1e-10) {
+  reference <- legacy_reference_values(
+    poll_id, field, caseid, historical, tolerance
+  )
+  changes <- approved_cell_changes |>
+    dplyr::filter(.data$poll_id == .env$poll_id,
+                  legacy_field == .env$field)
+  if (!nrow(changes)) return(reference)
+  positions <- match(changes$caseid, caseid)
+  stopifnot(
+    !anyDuplicated(changes$caseid), !anyDuplicated(caseid),
+    !anyNA(positions), all(changes$status == "approved"),
+    identical(is.na(reference[positions]), is.na(changes$previous_value)),
+    all(abs(reference[positions] - changes$previous_value) <= tolerance,
+        na.rm = TRUE)
+  )
+  reference[positions] <- changes$approved_value
+  reference
+}
+
+legacy_reference_values <- function(poll_id, field, caseid, historical,
+                                    tolerance = 1e-10) {
   approved <- approved_poll_reference_values(
     poll_id, field, caseid, historical, tolerance
   )

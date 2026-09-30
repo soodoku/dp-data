@@ -159,6 +159,13 @@ verbatim responses and records the original source hash in the artifact catalog.
 | `output/` | Typed Parquet products built from audited poll-level inputs |
 | `vault/` | Ignored local source archive, including restricted files |
 
+Flat metadata registries remain CSV and are validated against the JSON schemas
+in `datapackage.json`. Nested poll metadata is generated as JSON from those
+registries. Analysis products use typed Parquet; `metadata/canonical_columns.csv`
+defines each field’s type, nullability, key membership and meaning. Audit cell
+comparisons with many repeated rows can also use Parquet, with their keys and
+value semantics documented in the poll issue ledger.
+
 The architecture and migration order are documented in
 [`docs/architecture.md`](docs/architecture.md).
 

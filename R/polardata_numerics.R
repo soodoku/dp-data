@@ -110,7 +110,8 @@ audit_historical_covariances <- function(benchmark, reviewed = NULL) {
     survey <- read_poll_survey(poll_id)
     profile <- if (poll_id == "uk-eu-1995") {
       historical <- core_poll_profile(survey, poll_id)
-      # This diagnostic explains the frozen benchmark's original covariance.
+      # Explain the frozen benchmark, which pooled unknown group markers.
+      historical$group[rounded_source_code(survey$group) %in% 99] <- 2099
       for (stem in c("commies", "favref")) {
         historical$attitudes[[paste0("ukeu.", stem, "1r")]] <-
           (as.numeric(survey[[paste0(stem, "1")]]) - 1) / 8
