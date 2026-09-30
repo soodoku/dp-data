@@ -6378,16 +6378,46 @@ means, whose temporary-variable names agree in lines 73–76. No current
 its missing item-level subgroup variables. The source is preserved unchanged;
 no production formula or output changes follow from this dormant error.
 
-A separate interpretation issue remains. Line 58 defines `educated` as being
-above the median of `X1`, but the deposited data label `X1` as “Political
-knowledge.” The working paper's peer-effects discussion instead describes
-education in terms of secondary schooling. These are distinct constructs;
-renaming or substituting one for the other is not a mechanical correction.
-The current Tanzania out-of-sample reader leaves education unavailable rather
-than adopting this variable as an education measure. A reviewed dictionary
-for the separate `school` field and clarification of the intended subgroup
-are needed before adding an education contrast. Neither the historical paper's
-estimates nor current source values are changed here.
+The education interpretation needs both documentary and numerical evidence.
+Line 58 defines `educated` as being above the median of `X1`. The deposited
+label calls X1 “Political knowledge,” whereas the preanalysis plan (PDF pages
+6–7) defines an education/general-knowledge index containing twelve factual
+questions, literacy and highest grade completed. The final report (PDF page 16,
+printed page 8) also describes knowledge/literacy and years of schooling. The
+plan is evidence of intended design; it does not establish the executed formula.
+
+Independent reconstruction establishes what the deposited X1 actually contains.
+For all 2,001 citizens with observed X1, standardize `X1010:X1120` against the
+1,000 baseline controls, average each person's available standardized components,
+and standardize that mean against the same controls. This twelve-fact-question
+calculation agrees with X1 to within 8.9e−16. Neither literacy `X1130` nor
+schooling `X1140` contributes. Thus the historical median flag separates people
+on a factual-knowledge index; it is not a verified schooling contrast.
+
+Those twelve factual components also retain 9,688 code −99 answers labeled
+“DON'T KNOW” and 151 code −96 answers labeled “OTHER” or “OTHER (SPECIFY)” as
+numbers in the deposited index, affecting 1,952 people. These are separate
+baseline questions from the nine policy-knowledge components corrected in TZ-03.
+As a diagnostic only, mapping these negatives to zero and recalibrating changes
+56 of the 370 original peer-cohort median classifications. Both versions classify
+185 as above the median. This demonstrates a measurement difference, not an
+approved new score or a revision of the historical paper.
+
+A schooling candidate is retained in `school`: 2,001 observed categorical codes
+match the recovered `L_SelfEducGrades` dictionary's categories. The plan identifies
+highest grade completed as source question `s4q2`; the report's Q14 appears on
+PDF page 73 (printed page 65). However, the dictionary is attached to transformed
+`X1140`, whose values range from 0 to 22 rather than the original grade codes,
+and the cleaning scripts that would establish the full lineage were withheld.
+Do not treat X1140 as the dictionary's raw categories or claim a verified conversion
+to years of schooling. Adult education and supplementary-course categories need
+explicit treatment before imposing an educational rank or median flag.
+
+The current out-of-sample reader leaves education unavailable, so no current
+education contrast changes. Preserve the raw school and knowledge evidence;
+adding a schooling contrast or changing the deposited general-knowledge index
+requires a separate reviewed decision. Source values and historical estimates
+remain unchanged here.
 
 ### NH-02 — Event year corrected; attendance needs reconciliation
 
