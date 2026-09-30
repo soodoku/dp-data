@@ -1,3 +1,5 @@
+source(project_path("R", "source_australia.R"))
+source(project_path("R", "source_questionnaire_presence.R"))
 source(project_path("R", "source_new_haven.R"))
 
 analysis_new_haven_presence <- function(survey) {
@@ -126,7 +128,7 @@ analysis_monarchy_presence <- function(survey) {
 }
 
 analysis_phase_presence <- function(
-  scores, items, measures, definitions, targets, amr = NULL
+  scores, items, measures, definitions, targets, amr = NULL, participants = NULL
 ) {
   responses <- arrow::read_parquet(project_path(
     "output", "respondent", "source_responses.parquet"
@@ -209,6 +211,43 @@ analysis_phase_presence <- function(
       wave_observed, wave_observed_source
     )) |>
     dplyr::select(-"wave_observed_source")
+  if (!is.null(participants)) {
+    reviewed <- analysis_reviewed_presence(participants)
+    if (!is.null(reviewed)) {
+      reviewed <- reviewed |>
+        dplyr::select(-"evidence_basis") |>
+        dplyr::rename(reviewed_observed = "wave_observed") |>
+        dplyr::mutate(presence_reviewed = TRUE)
+      out <- out |>
+        dplyr::left_join(reviewed,
+          by = c("poll_id", "source_dataset", "respondent_id", "wave"),
+          relationship = "one-to-one"
+        ) |>
+        dplyr::mutate(wave_observed = dplyr::if_else(
+          presence_reviewed %in% TRUE, reviewed_observed, wave_observed
+        )) |>
+        dplyr::select(-"reviewed_observed", -"presence_reviewed")
+    }
+  }
+  if (any(out$poll_id == "australia-republic-1999")) {
+    people <- arrow::read_parquet(project_path(
+      "output", "respondent", "people.parquet"
+    )) |>
+      dplyr::filter(poll_id == "australia-republic-1999") |>
+      dplyr::mutate(source_dataset = "historical")
+    forms <- analysis_australia_presence(people) |>
+      dplyr::rename(departure_observed = wave_observed) |>
+      dplyr::mutate(presence_reviewed = TRUE)
+    out <- out |>
+      dplyr::left_join(forms,
+        by = c("poll_id", "source_dataset", "respondent_id", "wave"),
+        relationship = "one-to-one"
+      ) |>
+      dplyr::mutate(wave_observed = dplyr::if_else(
+        presence_reviewed %in% TRUE, departure_observed, wave_observed
+      )) |>
+      dplyr::select(-"departure_observed", -"presence_reviewed")
+  }
   btp_polls <- intersect(unique(out$poll_id), c(
     "btp-national-2003", "btp-presidential-primaries-2004"
   ))
@@ -429,7 +468,7 @@ analysis_phase_scores <- function(scores, items, participants, sources,
     "output", "respondent", "respondent_measures.parquet"
   ))
   presence <- analysis_phase_presence(
-    scores, items, measures, definitions, targets, sources$amr
+    scores, items, measures, definitions, targets, sources$amr, participants
   )
   base <- scores |>
     dplyr::rename(original_score_wave = "wave") |>
@@ -534,6 +573,32 @@ analysis_phase_scores <- function(scores, items, participants, sources,
     )
   if (!is.null(arrival_items)) {
     out <- dplyr::bind_rows(out, analysis_arrival_scores(arrival_items))
+  }
+  arrival_presence <- analysis_te_arrival_presence(participants)
+  if (!is.null(arrival_presence)) {
+    out <- out |>
+      dplyr::left_join(
+        arrival_presence |>
+          dplyr::select(-"evidence_basis") |>
+          dplyr::rename(arrival_observed = "wave_observed") |>
+          dplyr::mutate(arrival_reviewed = TRUE),
+        by = c("poll_id", "source_dataset", "respondent_id", "wave"),
+        relationship = "one-to-one"
+      ) |>
+      dplyr::mutate(
+        wave_observed = dplyr::if_else(
+          arrival_reviewed %in% TRUE, arrival_observed, wave_observed
+        ),
+        score = dplyr::if_else(
+          arrival_reviewed %in% TRUE & !arrival_observed %in% TRUE,
+          NA_real_, score
+        ),
+        n_correct = dplyr::if_else(
+          arrival_reviewed %in% TRUE & !arrival_observed %in% TRUE,
+          NA_integer_, n_correct
+        )
+      ) |>
+      dplyr::select(-"arrival_observed", -"arrival_reviewed")
   }
   stopifnot(
     !anyDuplicated(out[c(

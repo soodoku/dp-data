@@ -18,10 +18,7 @@ build_nic2_derived <- function(survey, values) {
   after <- nic2_knowledge_items(survey, 2L)[rows, ]
   joint <- before * after
   terms <- apply(joint, 2, function(value) {
-    total <- historical_group_summary(value, group, sum)
-    term <- as_historical_float(total / (result$groupsize - 1) / 11)
-    term[value == 1] <- 0
-    term
+    reviewed_peer_component(value, group, ncol(joint))
   })
   term_order <- c(11L, seq_len(10L))
   raw_gain <- rep(0, nrow(values))

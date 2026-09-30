@@ -117,10 +117,20 @@ test_that("intermediate items preserve arrival and within-event timing", {
   expect_true(all(grepl("^mid_q", nh$source_column)))
   expect_setequal(te$wave, "t1")
   observed <- te$wave_observed %in% TRUE
-  expect_equal(dplyr::n_distinct(te$respondent_id[observed]), 337L)
+  expect_equal(dplyr::n_distinct(te$respondent_id[observed]), 338L)
   expect_true(all(grepl("^t2q", te$source_column)))
   unknown <- is.na(te$wave_observed)
-  expect_equal(dplyr::n_distinct(te$respondent_id[unknown]), 3213L)
+  expect_equal(dplyr::n_distinct(te$respondent_id[unknown]), 3212L)
+  survey <- read_poll_survey("tomorrows-europe-2007")
+  returned <- survey[as.numeric(survey$v_b) == 1082, ]
+  expect_equal(returned$source_row, 3431L)
+  answered_fields <- paste0("t2q38", letters[4:15])
+  expect_equal(sum(!is.na(returned[answered_fields])), 12L)
+  blank_quiz <- dplyr::filter(te, respondent_id == "1082")
+  expect_equal(nrow(blank_quiz), 11L)
+  expect_true(all(is.na(blank_quiz$raw_value)))
+  expect_true(all(blank_quiz$wave_observed))
+  expect_true(all(blank_quiz$correct == 0L))
   placements <- dplyr::filter(te, source_column %in% c("t2q36a", "t2q36b"))
   expected <- with(placements, as.integer(
     ifelse(source_column == "t2q36a", raw_value %in% 6:10, raw_value %in% 0:4)

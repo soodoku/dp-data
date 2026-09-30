@@ -30,6 +30,12 @@ URLs, access dates and SHA-256 hashes; shared files have one physical copy under
 consume versioned variables and perform estimation. Existing downstream
 recodes, including those in the out-of-sample study, still need migration with
 explicit value comparisons; see the [migration inventory](docs/poll-issues.md#x-11-data-recoding-belongs-upstream-not-in-downstream-readers).
+Poll-specific surveys and reference materials belong under `data/<poll_id>/`,
+with questionnaires, codebooks, briefing materials, reports and papers in the
+appropriate poll folder. `data/shared/` is reserved for genuinely cross-poll
+materials. Derived typed tables belong under `output/`; original materials are
+retained separately so their evidence and the transformations remain traceable.
+
 Blank source license fields mean no license was recorded during this migration;
 they do not assign the repository license to third-party materials.
 
@@ -79,6 +85,14 @@ zero-to-one ordinal score.
 with the 129-row attitude-index catalog and a typed derived-measure table.
 Tomorrow's Europe also has explicit pre-arrival-to-exit and arrival-to-exit
 pairs in `output/polardata/attitude_contrasts.parquet`.
+
+`make analysis` also exports source-level attitudes for Denmark, Vermont,
+Marousi and America in One Room 2024: 829 definitions and 1,039,910 response
+rows, including recruitment and other source records outside the selected
+analysis panels. Raw codes, labels, source identities, interview phases and
+units remain available alongside valid numeric values. Percentage and dollar
+questions keep their units; unknown scales are not guessed. See the
+[analysis-table contract](docs/analysis-tables.md#source-level-attitudes).
 
 `make weights` preserves the 16 supplied weight columns from ten polls under
 `output/weights/`. Definitions retain source provenance and documented scope;

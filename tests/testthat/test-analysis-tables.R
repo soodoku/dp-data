@@ -263,21 +263,35 @@ test_that("analysis exports preserve keys and canonical question IDs", {
     scores$source_dataset == "historical" & !is.na(scores$score)
   ])))
   absent_items <- responses$response_status == "wave_absent"
-  expect_equal(
-    sum(absent_items),
-    414L + (911L - 387L) * 11L + 2246L * 5L + 43L * 7L + 10L * 5L +
-      34L * 4L + 599L * 9L + 8L
-  )
-  expect_true(all(
-    responses$poll_id[absent_items] %in%
-      c("btp-general-election-2004", "nic-1996", "swepco-1996", "wtu-1996",
-        "btp-online-primaries-2004", "california-whats-next-2011",
-        "zeguo-2005", "uk-monarchy-1996", "new-haven-2004")
-  ))
+  expected_absent <- tibble::tribble(
+    ~poll_id, ~source_dataset, ~wave, ~people, ~items,
+    "australia-republic-1999", "historical", "t2", 873L, 12L,
+    "btp-general-election-2004", "historical", "t1", 13L, 9L,
+    "btp-general-election-2004", "historical", "t2", 33L, 9L,
+    "btp-online-primaries-2004", "cor_sood", "t2", 43L, 7L,
+    "btp-presidential-primaries-2004", "historical", "t2", 129L, 7L,
+    "california-whats-next-2011", "cor_sood", "t1", 10L, 5L,
+    "cpl-1996", "historical", "t2", 1030L, 7L,
+    "europolis-2009", "historical", "t2", 4036L, 6L,
+    "new-haven-2004", "historical", "t2", 1L, 8L,
+    "nic-1996", "historical", "t3", 911L - 387L, 11L,
+    "swepco-1996", "historical", "t2", 1246L, 5L,
+    "uk-crime-1994", "historical", "t2", 569L, 7L,
+    "uk-general-election-1997", "historical", "t2", 935L, 15L,
+    "uk-health-1998", "cor_sood", "t2", 2L, 6L,
+    "uk-health-1998", "historical", "t2", 2L, 6L,
+    "uk-monarchy-1996", "historical", "t2", 599L, 9L,
+    "wtu-1996", "historical", "t2", 1000L, 5L,
+    "zeguo-2005", "historical", "t2", 34L, 4L
+  ) |>
+    dplyr::transmute(poll_id, source_dataset, wave, n = people * items)
+  actual_absent <- responses[absent_items, ] |>
+    dplyr::count(poll_id, source_dataset, wave)
+  expect_equal(actual_absent, expected_absent)
   expect_true(all(is.na(responses$correct[absent_items])))
 })
 
-test_that("historical panel scores match the existing aggregate export", {
+test_that("historical comparisons retain the correct source-wave pairs", {
   people <- arrow::read_parquet(project_path(
     "output", "analysis", "analysis_participants.parquet"
   ))
@@ -304,12 +318,49 @@ test_that("historical panel scores match the existing aggregate export", {
       legacy, by = c("dpnum", "historical_respondent_id" = "caseid"),
       relationship = "many-to-one"
     )
+  expected_unpaired <- tibble::tribble(
+    ~dpnum, ~caseid,
+    2, 3809, 2, 4307,
+    7, 3522, 7, 3495, 7, 2824, 7, 625, 7, 516,
+    7, 693, 7, 374, 7, 225, 7, 148,
+    12, 910042,
+    20, NA_real_, 20, 10000460, 20, 10004670, 20, 10011680, 20, 10012790
+  )
   unpaired <- legacy[is.na(legacy$t1know) | is.na(legacy$t2know), ]
-  expect_equal(unpaired$dpnum, 12)
-  expect_equal(unpaired$caseid, 910042)
-  expect_equal(nrow(panel), 2L * (nrow(legacy) - nrow(unpaired)))
-  expect_false(any(panel$poll_id == "new-haven-2004" &
-                     panel$historical_respondent_id == 910042))
+  expect_equal(unpaired[c("dpnum", "caseid")], expected_unpaired)
+  # NIC's selected exit is source wave 2; polardata's later score is wave 3.
+  expected_excluded <- dplyr::bind_rows(expected_unpaired,
+    tibble::tibble(dpnum = 20, caseid = c(
+      10000400, 10007580, 10007590, 10014282, 10014650
+    ))
+  )
+  historical_people <- people |>
+    dplyr::filter(source_dataset == "historical") |>
+    dplyr::mutate(caseid = as.numeric(historical_respondent_id)) |>
+    dplyr::left_join(sources, by = "poll_id", relationship = "many-to-one") |>
+    dplyr::inner_join(legacy[c("dpnum", "caseid")],
+      by = c("dpnum", "caseid"), relationship = "one-to-one"
+    )
+  excluded <- historical_people |>
+    dplyr::filter(!panel) |>
+    dplyr::select(dpnum, caseid)
+  expect_equal(dplyr::arrange(excluded, dpnum, caseid),
+    dplyr::arrange(expected_excluded, dpnum, caseid)
+  )
+  expect_equal(nrow(panel), 2L * (nrow(legacy) - nrow(expected_excluded)))
+  selected_scores <- scores |>
+    dplyr::semi_join(dplyr::filter(historical_people, panel),
+      by = c("poll_id", "source_dataset", "respondent_id")
+    ) |>
+    dplyr::filter(wave %in% c("t1", "t2"))
+  expect_false(anyNA(selected_scores$score))
+  nic_people <- dplyr::filter(historical_people, poll_id == "nic-1996", panel)
+  nic_scores <- scores |>
+    dplyr::semi_join(nic_people,
+      by = c("poll_id", "source_dataset", "respondent_id")
+    )
+  expect_equal(sum(nic_scores$wave == "t2"), 456L)
+  expect_equal(sum(is.na(nic_scores$score[nic_scores$wave == "t3"])), 73L)
   expect_equal(
     panel$score[panel$wave == "t1"],
     panel$t1know[panel$wave == "t1"], tolerance = 1e-7

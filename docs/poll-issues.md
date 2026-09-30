@@ -116,7 +116,7 @@ below retain the instrument evidence and numerical consequences.
 | UK Monarchy | 4 | Both waves checked against codebook/memo; paired benchmarks reproduced and catalog titles corrected (UKM-07). |
 | UK Election | 4 | Both waves checked; all eight published item means reproduced. The appendix's conflicting question names do not override the instrument and actual paired fields (UKGE-06). |
 | CPL, WTU, SWEPCO | 18 | Six pairs and seven-index baseline summaries per poll checked against original frequencies and codebooks. Exact fielded forms are not identified; missing-item fills and empirical calibration remain separate decisions (CPL-06). |
-| Australia | 2 | Main pairs and five original summary batteries checked; 33 of 34 printed item means reproduced. Queen-first correction adopted; exit form and knowledge-routing evidence remain incomplete (AUS-06). |
+| Australia | 2 | Main pairs and five original summary batteries checked; 33 of 34 printed item means reproduced. Queen-first correction adopted (AUS-06). The fielded initial checklist and combined DP codebook are retained; initial none/DK remains inseparable, and the literal exit form is unavailable (AUS-01/AUS-02). |
 | BTP General Election | 6 | All placements and source labels checked at both waves; absent forms and label/code distinctions preserved (BTPGE-08). |
 | BTP Health/Education | 11 | All 22 series checked and four titles corrected; the wider 360-attendee source still does not reproduce the report percentages (BTPHE-05/06). |
 | Bulgaria Crime | 12 | Both waves and the additional drug-legalization summary index checked. Version E civil-liberties syntax remains missing; preserve the executed definition (BGC-08). |
@@ -2374,7 +2374,8 @@ the combined build.
 ## Australia republic 1999 — australia-republic-1999
 
 **AUS-01 — existing missingness divergence; score parity.** There are 347 attendees
-in groups 1–24 out of 4,659 source rows; group 100 is inapplicable. The ten-item
+with exit questionnaires in groups 1–24 out of 4,659 source rows; nine further
+attendees did not return an exit questionnaire. Group 100 is inapplicable. The ten-item
 battery combines six factual items and four proposed-change questions. The
 wave-specific `dkchg` flag can override correctness on those four items while
 raw answers remain preserved. Sixteen T2 code-99 responses differ from the
@@ -2387,10 +2388,57 @@ fixed-denominator score already counts them as incorrect. This is not an
 unresolved score discrepancy. The routing issue is separate: baseline DKCHG=1
 combines none and don't know, whereas exit DKCHG=1 means nothing will change.
 All 52 flagged baseline respondents and 37 flagged exit respondents have four
-literal no codes, but the available file cannot establish whether these are
-answers or generated routing defaults. The retained constitutional-referendum
-study codebook concerns a different survey; it is not the fielded DP instrument.
+codes labeled no. The September 30 primary-material recheck below establishes
+that these are unselected checklist options, rather than four separately asked
+yes/no answers. The constitutional-referendum study codebook concerns a different
+survey; the newly recovered combined DP codebook provides the relevant evidence.
 Do not equate missing item answers and substantive no-change responses.
+
+**Primary-material recheck, September 30, 2026.** The fielded initial telephone
+questionnaire (`questionnaires/t1-questionnaire.doc` and PDF) asks C4 as a
+multiple-response checklist: which listed features would definitely change.
+Its fifth option combines none and don't know. The newly preserved combined
+DP codebook (`codebooks/deliberative-poll-codebook.doc` and PDF, pages51–55)
+documents the initial and exit questions and the polling company's substantive
+answer-key rationale; the older `codebook.doc` concerns the separate ACRS
+survey. The earliest supplied polling-company data already contain the
+unselected checklist indicators. All168 initial none/DK selections, including
+52 main attendees, have the fifth option selected and the four substantive
+options unselected. All37 main exit nothing-will-change selections have the
+same pattern in the original exit indicators. These were not four separately
+asked yes/no answers, and the modern pipeline did not manufacture the pattern.
+The initial data cannot separate none from don't know. Preserve the reviewed
+scoring until that substantive interpretation is explicitly decided; the
+fielded exit questionnaire itself has not been recovered.
+
+### AUS-07: Absent and unavailable questionnaires were scored as zero
+
+**Corrected under the shared missing-form rule, September 30, 2026.** The
+original `survey.sav` contains 1,220 telephone-survey records: `part` identifies
+356 attendees and 864 nonattendees. `partfull` distinguishes 347 attendees with
+exit questionnaires from nine attendees without them. The retained attendance
+roster independently agrees for all 1,220 original `caseid` values. The separate
+`caseid3` identifies the constitutional-referendum survey and is not the roster
+join key.
+
+All 873 documented absent exit questionnaires have code100 (not applicable)
+in all 66 labeled exit fields, totaling 57,618 original cells. Those codes remain
+unchanged. Their canonical knowledge scores are now missing; 6,984 artificial
+item correctness zeros become missing. Questionnaire absence is distinct from
+attendance: the nine documented attendees remain attendees.
+
+The additional 3,439 referendum-only records have no answers in any of the 74
+telephone-survey fields or 66 DP exit fields and no DP attendance classification.
+Their two DP knowledge scores are now missing, removing 6,878 artificial zero
+scores. Questionnaire presence and attendance remain unknown for these records;
+we do not infer nonattendance or assign their later referendum answers to DP
+interviews. All source records and raw answers are retained.
+
+The source evidence is joined within the historical source namespace, never by
+physical row across different files. All 347 main historical participants and
+all 694 Cor–Sood respondent-wave score rows remain unchanged. The shared score
+aggregation accepts reviewed form presence so that observed blank quizzes still
+score zero while absent or unavailable questionnaires have missing scores.
 
 ### AUS-02: Aggregate knowledge uses a different battery and flag rule
 
@@ -2421,8 +2469,12 @@ The latter includes two additional office-holder questions about Aden Ridgeway
 and Jennie George. Their correct-answer proportions reproduce the retained
 report's rounded 46/58 and 63/69 baseline/exit percentages. The original script
 also explicitly excludes a party question and discusses the change gate's
-reliability. These are documented battery choices; the unresolved part is the
-fielded QC4/WC4 routing instruction, not whether twelve columns are eleven.
+reliability. These are documented battery choices. The recovered initial
+checklist now establishes that the four binary fields indicate selected options,
+with a fifth option combining none and don't know. That combined category cannot
+be separated person by person. The remaining scoring choice concerns how to
+treat that category, not whether twelve columns are eleven; the literal fielded
+exit form is still unavailable.
 The source answers, individual scores and all 347 participants are unchanged; the corrected peer fields use definition
 version `aus-02-v3`. The review script preserves all previously approved
 Australia comparisons and records the corrected item count as well.
@@ -2465,9 +2517,10 @@ source contains 4,659 rows. It cannot establish these poll-specific question
 wordings or recodes. For these corrections we rely on the archived poll script,
 labels attached to this poll's `survey.sav`, its reconstructed indices, and the
 poll [paper](../data/australia-republic-1999/papers/adp5.pdf). The initial
-telephone questionnaire has now been recovered (AUS-06); the exit instrument
-and the exact source transformation behind the routing defaults remain needed
-to settle the separate AUS-01/AUS-02 routing question.
+telephone questionnaire and combined DP codebook have now been recovered
+(AUS-01). The original supplied indicators establish how checklist selections
+were stored. The literal exit instrument remains unavailable, and the initial
+combined none/DK category cannot be separated in the deposited answers.
 
 ### AUS-04: Participant gains now join by source row
 
@@ -2782,9 +2835,16 @@ attendance flag or group descriptor is changed here.
 Both `survey.dta` and the ID-matched `raw-responses.dta` carry the completion
 status `w4comsta`: 3 means follow-up only; 2 means baseline only (retained
 `value-labels.csv`, lines 201–205). Thirteen of the 299 selected-source people
-are follow-up only and have all 137 baseline questionnaire fields missing,
-including their baseline interview dates. Thirty-three are baseline only and
-have all 137 follow-up fields missing. These administrative flags independently
+are follow-up only and have all 97 baseline question fields and four interview
+administration fields missing. Thirty-three are baseline only and have all 100
+follow-up question fields and four interview administration fields missing.
+These counts come from the original variable labels in the ID-matched raw
+source, including attitudes and evaluations, not only the knowledge battery.
+The four administration fields record interview start, end, duration and type.
+There are no returned-form cases with all nine quiz fields system-missing.
+The earlier count of 137 was not an accurate count of original questionnaire
+fields. Some derived relevance fields contain values even when the actual form
+is absent, so all variables sharing a wave prefix cannot establish form presence. These administrative flags independently
 confirm absence of the questionnaire rather than merely absence of correct
 answers. All 46 have `dop4part=1`; missing interviews do not prove nonattendance.
 
@@ -8885,6 +8945,44 @@ they may contain scientific evidence.
 
 ### Further vault source-version evidence, September 30, 2026
 
+**Additional attitude audit.** All 129 historical index pairs across the 21
+modern poll builders were checked separately from knowledge scoring. Replacing
+13,578 explicitly labeled attitude nonanswer inputs with missing values changed
+no plain index scores. The 273 changed values were Australia's explicitly named
+midpoint-imputed variants, whose imputation is intentional and separately
+identified. The 29,244 index cells linked to reviewed unavailable questionnaires
+were already missing. In the America in One Room and climate phase tables,
+all 633,357 absent-form cells and five invalid responses remained missing.
+
+**Source-level exports implemented for the four additional polls.** Denmark,
+Vermont, Marousi and America in One Room 2024 now have 829 typed attitude
+definitions and 1,039,910 response rows in
+`analysis_source_attitude_definitions` and `analysis_source_attitude_responses`.
+All source people remain, including recruitment and source-only records outside
+the selected panels. These tables retain raw codes, labels, original identifiers,
+question wording, units, phase evidence and verified canonical links. They do
+not automatically create cross-wave pairs from matching question numbers.
+
+The response classification excludes 372 reviewed nonanswers from numeric
+values while retaining their source codes and labels. Vermont's 40 responses
+outside the reviewed scale are invalid and have missing numeric values.
+Marousi's 271 responses with unverified scales remain unclassified and numerically
+missing. Vermont code99 remains valid in percentage questions; monetary
+willingness-to-pay responses retain dollars without an invented upper endpoint.
+These additive exports do not redefine the historical composite attitude indices.
+
+Marousi's original identifier is wave-specific: `P_Q1_0` for telephone,
+`AR_CODE` for arrival and `F_CODE` for exit. The canonical bridge still follows
+the authored source-row alignment, with the sixteen conflicting departure IDs
+explicitly unresolved. Original source IDs are preserved without forcing those
+conflicts into a new person linkage. Denmark's separate control sample likewise
+remains source-only without an established main-panel crosswalk.
+
+This expands coverage rather than completing every source question. Bulgaria
+2007 still lacks respondent data, and Tanzania retains its separate 22-item
+attitude export. Unverified wording, units and person links remain evidence
+limitations rather than reasons to discard the raw source rows.
+
 Thirteen unique authored scripts now sit in the relevant poll folders as
 historical coding evidence. They are not part of the modern build. The two
 Brazil group-count implementations were independently evaluated on the retained
@@ -8940,4 +9038,81 @@ verification of missing completely at random.
 Subsequent vault cleanup removed46 scripts after SHA256 checks against the
 public historical-cdd-scripts tag, plus ten exact originals now retained in the
 merged poll folders. Together with37 earlier public duplicates and88 transfer
-logs/temporary files, this removes181 files. Unmatched scientific files remain.
+logs/temporary files, this removed181 files. After merging the thirteen newly
+preserved scripts, their loose vault copies were also deleted following SHA256
+checks against both the tracked poll files and merged commit
+`e92b9aa8e5aef75488ecda2887edae9a58cc9489`. The total is194 removed files.
+Unmatched scientific files remain.
+
+
+### Shared full-questionnaire and peer-denominator correction, September 30, 2026
+
+The source-form helper now checks complete questionnaire blocks and independent
+return indicators for CPL, UK Crime, UK Health, UK General Election, Europolis,
+Tomorrow's Europe, BTP Presidential Primaries, NIC, NIC2 and Zeguo. Known absent
+forms and unavailable forms no longer acquire zero knowledge scores through
+item scoring or aggregation. Unknown return status remains unknown when the
+source has no completed-form indicator. Observed forms with blank quiz answers
+still follow the conventional knowledge rule, with reviewed blanks and DK
+scoring zero. This does not apply the knowledge convention to attitudes.
+
+Attendance remains separate. Positive attendance evidence is retained even
+without an exit questionnaire. Australia uses its original `part` and `partfull`
+classifications (AUS-07); UK Health similarly retains its documented attendees
+whose post questionnaires are unavailable. Source-row matching is restricted to
+verified respondent identities and the correct file namespace.
+
+The shared group calculations now use observed peers for each item or score.
+A missing focal value is not subtracted from an observed group total; a missing
+peer is not counted as an incorrect answer. No observed peers yields a missing
+peer mean. Missing focal questionnaires yield missing learning opportunity,
+while the reviewed zero-at-ceiling convention remains unchanged. These changes
+propagate through the upstream group and poll summaries rather than requiring
+downstream readers to repair individual polls.
+
+BTP General Election's group population remains all 299 source respondents,
+before the historical 248-person analytical selection. Independent raw-source
+verification confirms that its thirteen unavailable baselines and thirty-three
+unavailable exits have no other questionnaire answers or interview records.
+The five observed baseline zero scores and four observed exit zero scores remain
+zero; the latter include the previously approved IDs552/585. Missing forms do
+not remove people from group membership or imply nonattendance. The corrected
+denominator is the number with the relevant observed measure within that
+299-person cohort, not the number appearing in the final analytical export.
+
+
+The final aggregate comparison against v0.4.1 records 5,671 changed cells across
+1,272 people: 917 cells in BTP General Election, 46 in New Haven, 2,182 in NIC,
+1,609 in Tomorrow's Europe and 917 in UK Health. These include dependent
+`loggain` changes from corrected peer opportunity. The approved-change ledger
+retains the original previous-value guards; the earlier BTP General Election
+inclusions, IDs552/585, remain checked separately in `approved_inclusions.csv`.
+These counts concern the existing wide aggregate, not the newly added source
+attitude rows or all canonical presence and attendance fields.
+
+The new attitude response table also corrects its Marousi original-ID column:
+225,990 wave-ID cells become missing where that wave has no source identifier,
+and 1,696 other cells change to the identifier recorded for that wave. This
+exposes the sixteen known departure-ID disagreements without changing canonical
+person joins or scores. Poll-specific original data and reference documents
+remain under `data/<poll_id>/`; reusable derived Parquet tables belong under
+`output/`, and only genuinely cross-poll evidence belongs under `data/shared/`.
+
+
+### SM-08: Participant 1467 and an empty departure form — consultation pending
+
+The retained San Mateo source marks `PARTICIPANTID == 1467` as
+`participant == 1` and records `t2QSTGRP == 1`, but all 102 substantive
+departure fields are missing. The group header is positive evidence that an
+identified departure form may exist; it does not establish that the person
+answered any questions. The source therefore differs from the 1,567 records
+with no departure answers, `participant == 0` and no departure group header.
+
+Keep the existing zero knowledge score and attendance classification for now.
+This record is deliberately excluded from the new unavailable-form masks.
+The question put to the user is whether the header should count as evidence
+of a returned blank form (whose blank knowledge answers score zero), or whether
+additional completion evidence establishes an unavailable questionnaire
+(whose score should be missing). Do not infer nonattendance from the empty
+answers alone. Raw responses and source identifiers are preserved under
+`data/san-mateo-2008/`; no new correction has been applied to this record.

@@ -723,6 +723,36 @@
       "publication_status": "published",
       "notes": "Generated PDF companion of data/shared/codebooks/historical-poll-inventory/inventory-notes.doc; the original is retained byte-exact. Converted using the shared scripts/16_build_document_previews.py. All 2 pages visually inspected; source text compared (382 source tokens). No source words or numbers missing; no clipping found.",
       "relative_path": "../shared/codebooks/historical-poll-inventory/inventory-notes.pdf"
+    },
+    {
+      "artifact_id": "material-f03607c2c5b34f82-australia-republic-1999",
+      "poll_id": "australia-republic-1999",
+      "artifact_type": "codebook",
+      "title": "Combined Australian Deliberative Poll codebook: initial, exit, and linked follow-up",
+      "location": "data/australia-republic-1999/codebooks/deliberative-poll-codebook.doc",
+      "source_id": "material-f03607c2c5b34f82",
+      "original_archive_path": "data/australia_republic/codebooks/ozcode.doc",
+      "sha256": "f03607c2c5b34f82052a6e8ef19e7ca2dac00366fa3b1ee3e8d9fa9344b50a45",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Unchanged authored DP codebook from CDD archive; distinct from the ACRS-only codebook. Documents QC4/WC4 multiple-response options, baseline combined none/don't-know and exit nothing-will-change labels, and David Briggs's answer-key rationale. Source versions and historical missing codes differ; preservation does not change scoring.",
+      "relative_path": "codebooks/deliberative-poll-codebook.doc"
+    },
+    {
+      "artifact_id": "material-f03607c2c5b34f82-pdf-australia-republic-1999",
+      "poll_id": "australia-republic-1999",
+      "artifact_type": "codebook",
+      "title": "Combined Australian Deliberative Poll codebook: initial, exit, and linked follow-up (PDF preview)",
+      "location": "data/australia-republic-1999/codebooks/deliberative-poll-codebook.pdf",
+      "source_id": "material-f03607c2c5b34f82-pdf",
+      "original_archive_path": null,
+      "sha256": "ec6843d6881597383483e952dbf2af4e38c815ca4460b7a3951e4b89bcd162b9",
+      "rights_status": "owner-approved",
+      "disclosure_status": "approved-public",
+      "publication_status": "published",
+      "notes": "Readable LibreOffice PDF preview of the unchanged combined DP codebook; original DOC retained. Relevant symbolic-change evidence appears on PDF pages51–55.",
+      "relative_path": "codebooks/deliberative-poll-codebook.pdf"
     }
   ],
   "document_previews": [
@@ -852,6 +882,22 @@
       "source_token_coverage": "1",
       "distinct_word_coverage": "1",
       "qa_notes": "All 2 pages visually inspected; source text compared (382 source tokens). No source words or numbers missing; no clipping found.",
+      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+    },
+    {
+      "source_path": "data/australia-republic-1999/codebooks/deliberative-poll-codebook.doc",
+      "preview_path": "data/australia-republic-1999/codebooks/deliberative-poll-codebook.pdf",
+      "source_sha256": "f03607c2c5b34f82052a6e8ef19e7ca2dac00366fa3b1ee3e8d9fa9344b50a45",
+      "preview_sha256": "ec6843d6881597383483e952dbf2af4e38c815ca4460b7a3951e4b89bcd162b9",
+      "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "pages": "150",
+      "text_check": "source-text-compared",
+      "visual_check": "passed-representative-pages",
+      "visual_pages": "1;51;52;53;54;55;75;150",
+      "source_token_coverage": "0.9999491921552688",
+      "distinct_word_coverage": "0.9996476391825229",
+      "qa_notes": "Original DOC unchanged. All body text and frequency tables retained; source token coverage99.995%, sole missing distinct token is a Word PAGE field code. Reviewed opening, all symbolic-change pages, a later knowledge table and final page; no clipping observed.",
       "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
     }
   ]

@@ -121,6 +121,9 @@ utility_knowledge_items <- function(survey, poll_id, wave) {
   })
   scored <- as.matrix(tibble::as_tibble(values))
   scored[utility_absent_form(survey, poll_id, wave), ] <- NA_real_
+  if (poll_id == "cpl-1996") {
+    scored <- mask_reviewed_knowledge(scored, survey, poll_id, wave)
+  }
   scored
 }
 

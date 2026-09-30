@@ -11,13 +11,14 @@ europolis_source_codes <- function(survey, field, allowed) {
 
 europolis_knowledge_items <- function(survey, wave) {
   key <- c(`43` = 2, `44` = 1, `46` = 2, `47` = 1, `49` = 4, `50` = 1)
-  purrr::imap(key, function(correct, question) {
+  items <- purrr::imap(key, function(correct, question) {
     field <- paste0("V", wave, "Q", question)
     value <- europolis_source_codes(survey, field, 1:5)
     as.numeric(value %in% correct)
   }) |>
     tibble::as_tibble() |>
     as.matrix()
+  mask_reviewed_knowledge(items, survey, "europolis-2009", wave)
 }
 
 build_europolis_individual <- function(

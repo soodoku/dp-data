@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.4.2
+
+- Use reviewed whole-questionnaire evidence in knowledge scoring. Preserve
+  observed blank quizzes as zero; unavailable questionnaires have missing scores.
+- Retain verified attendance before inferring nonattendance from absent exits,
+  including Australia's nine attendees without exit questionnaires and two
+  UK Health attendees without completed post-event questionnaires.
+- Preserve Australia's original combined DP codebook and its readable PDF,
+  distinguishing it from the separate constitutional-referendum codebook.
+- Export 829 source-level attitude definitions and 1,039,910 response rows for
+  Denmark, Vermont, Marousi and America in One Room 2024. Retain all source
+  people, original identifiers, labels, units and documented interview phases.
+- Exclude 372 reviewed attitude nonanswers and 40 invalid Vermont responses
+  from numeric values. Preserve 271 Marousi responses with unverified scales
+  as unclassified raw responses, with missing numeric values.
+- Preserve Marousi's original identifiers separately for telephone, arrival
+  and exit while retaining the authored row bridge and its 16 unresolved
+  departure-ID conflicts.
+- Apply reviewed full-form masks across ten polls and calculate group knowledge
+  means and learning opportunity from observed peers. Preserve BTP General
+  Election's 299-person group cohort before its 248-person analytical selection.
+
 ## 0.4.1
 
 - Preserve additional poll source versions and 13 unique historical scripts as

@@ -1,3 +1,4 @@
+source(project_path("R", "source_australia.R"))
 source(project_path("R", "source_new_haven.R"))
 
 analysis_attendance_sources <- function() {
@@ -356,6 +357,25 @@ analysis_attendance_contract <- function(
       "reviewed_attendance_evidence",
     TRUE ~ "retained_source_classification"
   )
+  australia_rows <- which(people$poll_id == "australia-republic-1999" &
+                            people$source_dataset == "historical")
+  if (length(australia_rows)) {
+    survey <- survey_reader("australia-republic-1999")
+    evidence <- australia_form_evidence(survey)
+    position <- match(people$source_row[australia_rows], evidence$source_row)
+    stopifnot(!anyNA(position))
+    attended <- evidence$attended[position]
+    known <- !is.na(attended)
+    rows <- australia_rows[known]
+    stopifnot(!any(!is.na(people$attended[rows]) &
+                     people$attended[rows] != attended[known]))
+    people$attended[rows] <- attended[known]
+    people$attendance_basis[rows] <- "source_indicator"
+    people$attendance_evidence[rows] <- paste(
+      "part records actual attendance; partfull distinguishes the nine",
+      "attendees without an exit questionnaire; roster joins original caseid"
+    )
+  }
   for (poll in c("cpl-1996", "wtu-1996", "swepco-1996", "europolis-2009")) {
     rows <- which(people$poll_id == poll &
                     people$source_dataset == "historical")
@@ -456,29 +476,6 @@ analysis_attendance_contract <- function(
       !any(check$wave_observed %in% FALSE & observed[found])
     )
   }
-  exit_presence <- phase_scores |>
-    dplyr::filter(wave == "t2") |>
-    dplyr::summarise(
-      absent_exit = any(wave_observed %in% FALSE),
-      observed_exit = any(wave_observed %in% TRUE),
-      .by = dplyr::all_of(keys)
-    )
-  stopifnot(!any(exit_presence$absent_exit & exit_presence$observed_exit))
-  people <- people |>
-    dplyr::left_join(exit_presence, by = keys, relationship = "one-to-one")
-  inferred <- is.na(people$attended) & people$absent_exit %in% TRUE
-  people$attended[inferred] <- FALSE
-  people$attendance_basis[inferred] <- "inferred_absent_post_questionnaire"
-  people$attendance_evidence[inferred] <- paste(
-    "Nonattendance inferred from an absent immediate post-deliberation",
-    "questionnaire; not a direct participation observation"
-  )
-  people <- people |>
-    dplyr::select(-"absent_exit", -"observed_exit") |>
-    dplyr::mutate(attendance_status = dplyr::case_when(
-      attended %in% TRUE ~ "attended",
-      attended %in% FALSE ~ "did_not_attend", TRUE ~ "unknown"
-    ))
   historical <- people |>
     dplyr::filter(source_dataset == "historical") |>
     dplyr::select(
@@ -502,10 +499,30 @@ analysis_attendance_contract <- function(
     people$attendance_evidence[cor_rows[fill]] <- paste(
       "Verified same-source row bridge:", bridge$attendance_evidence[fill]
     )
-    people$attendance_status[cor_rows[fill]] <- ifelse(
-      bridge$attended[fill], "attended", "did_not_attend"
-    )
   }
+  exit_presence <- phase_scores |>
+    dplyr::filter(wave == "t2") |>
+    dplyr::summarise(
+      absent_exit = any(wave_observed %in% FALSE),
+      observed_exit = any(wave_observed %in% TRUE),
+      .by = dplyr::all_of(keys)
+    )
+  stopifnot(!any(exit_presence$absent_exit & exit_presence$observed_exit))
+  people <- people |>
+    dplyr::left_join(exit_presence, by = keys, relationship = "one-to-one")
+  inferred <- is.na(people$attended) & people$absent_exit %in% TRUE
+  people$attended[inferred] <- FALSE
+  people$attendance_basis[inferred] <- "inferred_absent_post_questionnaire"
+  people$attendance_evidence[inferred] <- paste(
+    "Nonattendance inferred from an absent immediate post-deliberation",
+    "questionnaire; not a direct participation observation"
+  )
+  people <- people |>
+    dplyr::select(-"absent_exit", -"observed_exit") |>
+    dplyr::mutate(attendance_status = dplyr::case_when(
+      attended %in% TRUE ~ "attended",
+      attended %in% FALSE ~ "did_not_attend", TRUE ~ "unknown"
+    ))
   position <- match(
     do.call(paste, participants[keys]), do.call(paste, people[keys])
   )

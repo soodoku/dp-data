@@ -1,3 +1,4 @@
+source(project_path("R", "source_questionnaire_presence.R"))
 source(project_path("R", "respondent_normalization.R"))
 source(project_path("R", "respondent_health.R"))
 source(project_path("R", "respondent_eu.R"))

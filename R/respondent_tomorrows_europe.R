@@ -95,9 +95,10 @@ tomorrow_knowledge_items <- function(survey, wave) {
     value[value > 10 & !is.na(value)] <- NA_real_
     as.numeric(!is.na(value) & if (suffix == "a") value > 5 else value < 5)
   })
-  as.matrix(tibble::as_tibble(c(closed, placement),
+  items <- as.matrix(tibble::as_tibble(c(closed, placement),
     .name_repair = "unique_quiet"
   ))
+  mask_reviewed_knowledge(items, survey, "tomorrows-europe-2007", wave)
 }
 
 build_tomorrow_individual <- function(

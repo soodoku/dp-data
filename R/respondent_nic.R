@@ -33,7 +33,8 @@ nic_knowledge_items <- function(survey, wave) {
     republican = as.numeric(read("POLREP", 1:8) %in% 5:7),
     democratic = as.numeric(read("POLDEM", 1:8) %in% 1:3)
   )
-  as.matrix(tibble::as_tibble(c(open, closed, placements)))
+  items <- as.matrix(tibble::as_tibble(c(open, closed, placements)))
+  mask_reviewed_knowledge(items, survey, "nic-1996", wave)
 }
 
 nic_attitudes <- function(survey, wave) {
