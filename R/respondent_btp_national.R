@@ -31,7 +31,7 @@ btp_national_attitudes <- function(survey, wave) {
       rule
     )
   }
-  mean_items <- function(...) btp_health_mean(...)
+  mean_items <- function(...) calculate_float_mean(...)
   security_group <- mean_items(
     item("37a"), item("37b"), item("37e"),
     item("37f")

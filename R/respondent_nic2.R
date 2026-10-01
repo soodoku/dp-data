@@ -9,12 +9,6 @@ nic2_codes <- function(survey, field, allowed) {
   value
 }
 
-nic2_mean <- function(...) {
-  value <- rowMeans(cbind(...), na.rm = TRUE)
-  value[is.nan(value)] <- NA_real_
-  as_historical_float(value)
-}
-
 nic2_attitudes <- function(survey, wave) {
   prefix <- if (wave == 1L) "" else "q"
   read <- function(stem, allowed) {
@@ -44,20 +38,20 @@ nic2_attitudes <- function(survey, wave) {
       ten("int1b_c") + ten("int1b_d")
   ) / 4)
   tibble::tibble(
-    environment = nic2_mean(
+    environment = calculate_float_mean(
       ten("fp2a_a"), ordered("wrm2a_s", c(1, 1, .5, 0, 0, NA)),
       ordered("wrm2b_s", c(1, 1, .5, 0, 0, NA)), ten("wrm3_a")
     ),
-    security = nic2_mean(ten("fp2b_a"), ten("fp2b_c"), ten("fp2c_a"),
+    security = calculate_float_mean(ten("fp2b_a"), ten("fp2b_c"), ten("fp2c_a"),
       ten("aid2a_b"), security_actions
     ),
     human_rights = ten("fp2c_b"),
-    democracy = nic2_mean(paired("pair3"),
-      nic2_mean(ten("pdem1_a"), ten("pdem1_b"), ten("pdem1_c"),
+    democracy = calculate_float_mean(paired("pair3"),
+      calculate_float_mean(ten("pdem1_a"), ten("pdem1_b"), ten("pdem1_c"),
         ten("pdem2_a"), ten("pdem2_b"), ten("pdem2_c")
       ), ten("aid2a_c")
     ),
-    multilateralism = nic2_mean(four("fp4b_b"), five("wrm4a_s"),
+    multilateralism = calculate_float_mean(four("fp4b_b"), five("wrm4a_s"),
       (five("mact1_s") - five("mact4_s") + 1) / 2,
       (five("mact2_s") - five("mact5_s") + 1) / 2,
       ten("int1b_c"),
@@ -67,9 +61,9 @@ nic2_attitudes <- function(survey, wave) {
     ),
     internationalism = ordered("fp3a_s", c(0, .25, .5, .75, 1, NA)),
     foreign_aid = ordered("aid1", c(1, NA, 0, NA, .5)),
-    global_altruism = nic2_mean(ten("fp2b_d"), ten("fp2c_d"),
-      nic2_mean(ten("aid2b_a"), ten("aid2b_b")),
-      nic2_mean(four("fp4a_a"), ten("int1a_b")),
+    global_altruism = calculate_float_mean(ten("fp2b_d"), ten("fp2c_d"),
+      calculate_float_mean(ten("aid2b_a"), ten("aid2b_b")),
+      calculate_float_mean(four("fp4a_a"), ten("int1a_b")),
       paired("pair1"), paired("pair2")
     ),
     trade = ordered("trd2", c(0, NA, .5, NA, 1))

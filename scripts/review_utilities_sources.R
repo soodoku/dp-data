@@ -1,6 +1,5 @@
-for (module in c("paths", "metadata", "poll_sources", "source_utilities")) {
-  source(file.path("R", paste0(module, ".R")))
-}
+source("R/paths.R")
+load_project()
 
 historical <- arrow::read_parquet(project_path(
   "output", "respondent", "historical_knowledge_items.parquet"

@@ -1,5 +1,3 @@
-source(file.path(root, "R", "analysis_attendance.R"))
-
 test_that("paired eligibility preserves completed blank quizzes", {
   people <- tibble::tibble(
     poll_id = "example", source_dataset = "survey",

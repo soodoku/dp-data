@@ -1,9 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "respondent_parity.R"))
-source(file.path(root, "R", "polardata.R"))
-source(file.path(root, "R", "polardata_rebuild.R"))
-source(file.path(root, "R", "polardata_parity.R"))
-
 full_polardata <- function() {
   arrow::read_parquet(project_path("output", "polardata", "polardata.parquet"))
 }

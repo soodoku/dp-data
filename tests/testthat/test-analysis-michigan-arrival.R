@@ -1,8 +1,3 @@
-source(file.path(root, "R", "poll_adapters.R"))
-source(file.path(root, "R", "analysis_knowledge_responses.R"))
-source(file.path(root, "R", "analysis_arrivals.R"))
-
-
 test_that("Michigan arrival adds nine shared items without borrowing facts", {
   people <- arrow::read_parquet(project_path(
     "output", "analysis", "analysis_phase_participants.parquet"

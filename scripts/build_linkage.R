@@ -1,7 +1,5 @@
 source("R/paths.R")
-source("R/sources.R")
-source("R/metadata.R")
-source("R/linkage.R")
+load_project()
 
 verify_source_files()
 polardata <- read_polardata()

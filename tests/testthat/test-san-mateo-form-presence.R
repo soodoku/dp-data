@@ -1,5 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-
 test_that("San Mateo unavailable departure forms have missing knowledge", {
   survey <- read_poll_survey("san-mateo-2008")
   raw_fields <- names(survey)[seq.int(

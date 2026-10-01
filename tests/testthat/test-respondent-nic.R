@@ -1,5 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-
 test_that("NIC percentage scores use documented inclusive bounds", {
   survey <- read_poll_survey("nic-1996")
   stems <- c(WEDLOCK = "KNOWWED", AFDC = "KNOWAFD", UNEMP = "KNOWEMP")

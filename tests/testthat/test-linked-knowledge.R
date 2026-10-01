@@ -1,5 +1,3 @@
-source(project_path("R", "linked_knowledge.R"))
-
 testthat::test_that("item identity follows source keys, not row order", {
   people <- tibble::tibble(
     poll_id = "poll", source_row = c(2L, 1L),

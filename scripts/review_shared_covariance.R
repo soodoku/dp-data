@@ -1,9 +1,6 @@
 # X-15: distinguish invalid pairwise covariance from numerical roundoff.
-for (module in c(
-  "paths", "sources", "metadata", "poll_sources", "poll_adapters", "knowledge",
-  "exports", "respondents", "polardata", "polardata_rebuild",
-  "polardata_numerics"
-)) source(file.path("R", paste0(module, ".R")))
+source("R/paths.R")
+load_project()
 
 review_shared_covariance <- function() {
   shared_genvar <- historical_genvar

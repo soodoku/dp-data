@@ -1,13 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "respondent_btp_general.R"))
-source(file.path(root, "R", "respondent_btp_health.R"))
-source(file.path(root, "R", "respondent_btp_national.R"))
-source(file.path(root, "R", "respondent_parity.R"))
-source(file.path(root, "R", "polardata_derived.R"))
-source(file.path(root, "R", "polardata_assembly.R"))
-source(file.path(root, "R", "polardata_btp_reviewed.R"))
-source(file.path(root, "R", "polardata_btp_national.R"))
-
 national_test_source <- function() {
   survey <- haven::read_dta(
     project_path("data", "btp-national-2003", "survey.dta")

@@ -1,6 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "respondent_tomorrows_europe.R"))
-
 test_that("tomorrows-europe uses raw questions independently of row order", {
   survey <- read_poll_survey("tomorrows-europe-2007")
   inputs <- read_metadata("measure_inputs")

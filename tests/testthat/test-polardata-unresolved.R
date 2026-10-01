@@ -1,14 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "polardata.R"))
-source(file.path(root, "R", "respondent_parity.R"))
-for (name in c(
-  "respondent_new_haven", "respondent_btp_primaries",
-  "respondent_zeguo", "polardata_derived", "polardata_assembly",
-  "polardata_core", "polardata_btp_reviewed", "polardata_unresolved"
-)) {
-  source(file.path(root, "R", paste0(name, ".R")))
-}
-
 unresolved_test_fields <- function(poll) {
   fields <- c(
     ppage = "age", female = "female", minority = "minority",

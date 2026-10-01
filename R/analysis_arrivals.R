@@ -119,7 +119,7 @@ analysis_arrival_items <- function(participants) {
           ),
           response_status = dplyr::case_when(
             !observed ~ "wave_absent",
-            is.na(numeric) & (is.na(raw_text) | !nzchar(trimws(raw_text))) ~
+            is_response_empty(numeric, raw_text) ~
               "source_missing",
             numeric %in% c(997, 998, 999) ~ "non_substantive", TRUE ~ "answered"
           ),
@@ -208,7 +208,7 @@ analysis_arrival_scores <- function(items) {
       n_items = as.integer(dplyr::n()),
       n_observed = if (dplyr::first(wave_observed)) {
         as.integer(sum(
-          !is.na(raw_value) | (!is.na(raw_text) & nzchar(trimws(raw_text)))
+          !is_response_empty(raw_value, raw_text)
         ))
       } else {
         0L

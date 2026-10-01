@@ -1,5 +1,3 @@
-source(file.path(root, "R", "linkage.R"))
-
 test_that("the crosswalk conserves both poll universes", {
   root <- normalizePath(file.path(testthat::test_path(), "..", ".."))
   crosswalk <- read.csv(file.path(root, "output/linkage/poll_crosswalk.csv"))

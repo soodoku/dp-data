@@ -1,6 +1,3 @@
-source(file.path(root, "R", "analysis_knowledge_responses.R"))
-source(file.path(root, "R", "analysis_arrivals.R"))
-
 test_that("added arrivals preserve question batteries and source identities", {
   people <- arrow::read_parquet(project_path(
     "output", "analysis", "analysis_phase_participants.parquet"

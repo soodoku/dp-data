@@ -1,10 +1,7 @@
 europolis_source_codes <- function(survey, field, allowed) {
-  position <- match(tolower(field), tolower(names(survey)))
-  if (is.na(position)) stop("Missing source field: ", field)
-  value <- as.numeric(unclass(survey[[position]]))
-  if (any(!is.na(value) & !value %in% c(allowed, 997:999))) {
-    stop("Unreviewed source codes in ", field)
-  }
+  value <- read_source_codes_ignore_case(
+    survey, field, c(allowed, 997:999)
+  )
   value[value %in% 997:999] <- NA_real_
   value
 }

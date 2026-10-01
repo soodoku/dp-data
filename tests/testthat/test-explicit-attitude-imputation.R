@@ -1,5 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-
 test_that("all reconstructed plain attitudes retain all-missing inputs", {
   builders <- c(
     "uk-health-1998" = "build_health_individual",

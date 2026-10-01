@@ -1,5 +1,3 @@
-source(project_path("R", "analysis_attendance.R"))
-
 participation_presence <- function(people, scores) {
   keys <- c("poll_id", "source_dataset", "respondent_id", "wave")
   presence <- scores |>

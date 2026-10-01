@@ -1,7 +1,3 @@
-source(file.path(root, "R", "analysis_tables.R"))
-source(file.path(root, "R", "analysis_phases.R"))
-source(file.path(root, "R", "analysis_attendance.R"))
-
 australia_analysis_export <- function(name) {
   arrow::read_parquet(project_path(
     "output", "analysis", paste0(name, ".parquet")

@@ -1,8 +1,3 @@
-source(project_path("R", "respondent_health.R"))
-source(project_path("R", "respondent_normalization.R"))
-source(project_path("R", "respondent_parity.R"))
-source(project_path("R", "polardata_derived.R"))
-
 build_health_polardata <- function(
   survey = read_poll_survey("uk-health-1998")
 ) {

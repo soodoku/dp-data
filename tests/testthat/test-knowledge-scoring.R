@@ -1,5 +1,3 @@
-source(project_path("R", "respondents.R"))
-
 testthat::test_that("fixed batteries retain denominators and form status", {
   items <- rbind(c(1, NA, 0), c(NA, NA, NA), c(0, 0, 0), c(NA, NA, NA))
   observed <- c(TRUE, FALSE, TRUE, TRUE)

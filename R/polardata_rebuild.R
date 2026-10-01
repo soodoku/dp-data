@@ -1,12 +1,3 @@
-source(project_path("R", "polardata_derived.R"))
-source(project_path("R", "polardata_assembly.R"))
-source(project_path("R", "polardata_core.R"))
-source(project_path("R", "polardata_europe.R"))
-source(project_path("R", "polardata_btp_reviewed.R"))
-source(project_path("R", "polardata_nic2.R"))
-source(project_path("R", "polardata_unresolved.R"))
-source(project_path("R", "polardata_btp_national.R"))
-
 historical_poll_name <- function(poll_id) {
   names <- c(
     "uk-eu-1995" = "UK EU", "uk-health-1998" = "UK Health",

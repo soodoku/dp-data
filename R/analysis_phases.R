@@ -1,7 +1,3 @@
-source(project_path("R", "source_australia.R"))
-source(project_path("R", "source_questionnaire_presence.R"))
-source(project_path("R", "source_new_haven.R"))
-
 analysis_new_haven_presence <- function(survey) {
   stopifnot(
     all(c("source_row", "assigned") %in% names(survey)),
@@ -15,8 +11,6 @@ analysis_new_haven_presence <- function(survey) {
   )
 }
 
-source(project_path("R", "source_monarchy.R"))
-source(project_path("R", "source_zeguo.R"))
 
 analysis_phase_control_scores <- function(sources, roles) {
   specifications <- list(

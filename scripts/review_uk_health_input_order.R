@@ -1,8 +1,6 @@
 # UKH-03/07: independent raw-response reconstruction of the approved ordering.
-for (module in c(
-  "paths", "sources", "metadata", "poll_sources", "poll_adapters", "knowledge",
-  "exports", "respondents", "polardata", "polardata_rebuild"
-)) source(file.path("R", paste0(module, ".R")))
+source("R/paths.R")
+load_project()
 
 survey <- read_poll_survey("uk-health-1998")
 stopifnot(nrow(survey) == 230L, !anyDuplicated(survey$serial_m))

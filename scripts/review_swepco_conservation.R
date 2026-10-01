@@ -1,10 +1,6 @@
 # SWE-02 approved correction: replay the historical one-item T2 index.
-for (file in c(
-  "paths", "sources", "metadata", "poll_sources", "poll_adapters",
-  "knowledge", "exports", "respondents", "polardata", "polardata_rebuild"
-)) {
-  source(paste0("R/", file, ".R"))
-}
+source("R/paths.R")
+load_project()
 arguments <- commandArgs(trailingOnly = TRUE)
 stopifnot(length(arguments) <= 1L)
 directory <- if (length(arguments)) arguments[[1]] else tempfile("swe-review-")

@@ -1,6 +1,3 @@
-source(file.path(root, "R", "analysis_phases.R"))
-source(file.path(root, "R", "respondents.R"))
-
 test_that("Monarchy's source cohort and full post block establish absence", {
   survey <- read_poll_survey("uk-monarchy-1996")
   evidence <- analysis_monarchy_presence(survey)

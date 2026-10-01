@@ -1,5 +1,3 @@
-source(project_path("R", "knowledge_contract.R"))
-
 knowledge_poll_ids <- function() {
   sources <- read_metadata("survey_sources")$poll_id
   sources[sources %in% read_metadata("knowledge_batteries")$poll_id]

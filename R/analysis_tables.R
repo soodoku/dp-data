@@ -1,13 +1,3 @@
-source(project_path("R", "source_australia.R"))
-source(project_path("R", "source_questionnaire_presence.R"))
-source(project_path("R", "analysis_source_attitudes.R"))
-source(project_path("R", "analysis_tanzania.R"))
-source(project_path("R", "analysis_knowledge_responses.R"))
-source(project_path("R", "analysis_knowledge_missingness.R"))
-source(project_path("R", "analysis_phase_attitudes.R"))
-source(project_path("R", "analysis_marousi_items.R"))
-source(project_path("R", "analysis_participation.R"))
-
 item_display_text <- function(values) {
   replacements <- c(
     "gov general" = "Governor-General", "governor general" = "Governor-General",
@@ -773,12 +763,7 @@ build_analysis_tables <- function() {
   phase_scoring <- standardize_knowledge_scores(phase_items)
   stopifnot(nrow(phase_scoring$dk_correct_conflicts) == 0L)
   phase_items <- phase_scoring$items
-  presence <- phase_evidence$scores |>
-    dplyr::filter(grepl(":knowledge$", battery_id)) |>
-    dplyr::transmute(
-      poll_id, source_dataset, respondent_id,
-      wave = original_score_wave, wave_observed
-    )
+  presence <- select_comparison_presence(phase_evidence$scores)
   items <- items |>
     enrich_knowledge_responses(catalog) |>
     dplyr::left_join(presence,

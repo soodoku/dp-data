@@ -1,5 +1,3 @@
-source(project_path("R", "argument_codes.R"))
-
 test_that("coder extraction keeps all slots and excludes response text", {
   grid <- expand.grid(
     wave = 2:3, topic = 18:21, side = c("a", "b"), slot = 1:5,

@@ -1,5 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-
 test_that("blank text is missing without changing literal source answers", {
   survey <- read_poll_survey("nic-1996")[1:6, ]
   text <- c("", " \t ", NA_character_, "teacher", "NA", "n/a")

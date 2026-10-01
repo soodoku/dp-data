@@ -1,9 +1,5 @@
-for (file in c(
-  "paths", "sources", "metadata", "poll_sources", "poll_adapters",
-  "knowledge", "exports", "respondents", "polardata", "polardata_rebuild"
-)) {
-  source(paste0("R/", file, ".R"))
-}
+source("R/paths.R")
+load_project()
 
 survey <- read_poll_survey("australia-republic-1999")
 corrected <- build_historical_poll("australia-republic-1999")

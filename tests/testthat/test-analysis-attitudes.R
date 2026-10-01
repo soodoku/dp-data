@@ -1,5 +1,3 @@
-source(file.path(root, "R", "analysis_attitudes.R"))
-
 read_attitudes_export <- function(name) {
   arrow::read_parquet(file.path(root, "output", "analysis", name))
 }

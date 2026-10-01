@@ -1,5 +1,3 @@
-source(project_path("R", "analysis_source_attitudes.R"))
-
 testthat::test_that("nonanswers do not erase valid percentages", {
   ratings <- source_attitude_values(
     c(0, 5, 10, 11, 0.5, 88, 99, NA, NA, NA),

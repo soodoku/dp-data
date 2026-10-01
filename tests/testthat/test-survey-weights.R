@@ -1,5 +1,3 @@
-source(file.path(root, "R", "survey_weights.R"))
-
 test_that("supplied weights preserve every source row and numeric value", {
   tables <- build_survey_weight_tables()
   definitions <- tables$survey_weight_definitions

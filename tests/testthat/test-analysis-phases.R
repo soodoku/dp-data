@@ -1,5 +1,3 @@
-source(file.path(root, "R", "analysis_phases.R"))
-
 phase_export <- function(table) {
   arrow::read_parquet(project_path(
     "output", "analysis", paste0(table, ".parquet")

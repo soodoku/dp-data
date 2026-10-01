@@ -1,26 +1,18 @@
-source(project_path("R", "source_australia.R"))
-
-australia_source_codes <- function(survey, field, allowed) {
-  position <- match(tolower(field), tolower(names(survey)))
-  if (is.na(position)) stop("Missing source field: ", field)
-  value <- as.numeric(unclass(survey[[position]]))
-  if (any(!is.na(value) & !value %in% allowed)) {
-    stop("Unreviewed source codes in ", field)
-  }
-  value
-}
-
 australia_knowledge_items <- function(survey, wave) {
   keys <- c(qrole = 4, rempres = 2, ggrole = 4, presrol = 4,
     welfare = 3, busines = 1, ridgewy = 4, jgeorge = 4
   )
   closed <- purrr::imap(keys, function(correct, stem) {
-    value <- australia_source_codes(survey, paste0(stem, wave), c(1:5, 96:100))
+    value <- read_source_codes_ignore_case(
+      survey, paste0(stem, wave), c(1:5, 96:100)
+    )
     as.numeric(value == correct)
   })
   keys <- c(flagchg = 1, anthem = 1, wdroyal = 2, pargame = 1)
   symbolic <- purrr::imap(keys, function(correct, stem) {
-    value <- australia_source_codes(survey, paste0(stem, wave), c(1:2, 96:100))
+    value <- read_source_codes_ignore_case(
+      survey, paste0(stem, wave), c(1:2, 96:100)
+    )
     if (wave == 1L) {
       score <- as.numeric(value == correct)
       none_or_dk <- australia_checklist_none_or_dk(
@@ -38,15 +30,17 @@ australia_knowledge_items <- function(survey, wave) {
 
 australia_ranking <- function(survey, wave) {
   read <- function(stem) {
-    australia_source_codes(survey, paste0(stem, wave), c(1:3, 97, 99, 100))
+    read_source_codes_ignore_case(
+      survey, paste0(stem, wave), c(1:3, 97, 99, 100)
+    )
   }
   first <- read("firstop")
   second <- read("secop")
-  ties <- australia_source_codes(survey, paste0("tiesbr", wave),
+  ties <- read_source_codes_ignore_case(survey, paste0("tiesbr", wave),
     c(1:5, 97, 99, 100)
   )
   ties[ties > 5 & !is.na(ties)] <- NA_real_
-  head <- australia_source_codes(survey, paste0("headaus", wave),
+  head <- read_source_codes_ignore_case(survey, paste0("headaus", wave),
     c(1:5, 97, 99, 100)
   )
   head[head > 5 & !is.na(head)] <- NA_real_
@@ -89,7 +83,9 @@ australia_original_attitudes <- function(
   )
 ) {
   read <- function(stem, reverse = FALSE) {
-    value <- australia_source_codes(survey, paste0(stem, 1L), c(1:5, 94:103))
+    value <- read_source_codes_ignore_case(
+      survey, paste0(stem, 1L), c(1:5, 94:103)
+    )
     value[value > 5 & !is.na(value)] <- NA_real_
     if (reverse) (5 - value) / 4 else (value - 1) / 4
   }
@@ -122,7 +118,7 @@ australia_original_attitudes <- function(
 build_australia_individual <- function(
   survey = read_poll_survey("australia-republic-1999")) {
   read <- function(field, allowed) {
-    australia_source_codes(survey, field, allowed)
+    read_source_codes_ignore_case(survey, field, allowed)
   }
   before <- australia_knowledge_items(survey, 1L)
   after <- australia_knowledge_items(survey, 2L)

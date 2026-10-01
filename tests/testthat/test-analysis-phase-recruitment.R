@@ -1,7 +1,3 @@
-source(file.path(root, "R", "analysis_tables.R"))
-source(file.path(root, "R", "analysis_phase_recruitment.R"))
-source(file.path(root, "R", "analysis_phases.R"))
-
 marousi_phase_fixture <- function() {
   participants <- arrow::read_parquet(project_path(
     "output", "analysis", "analysis_participants.parquet"

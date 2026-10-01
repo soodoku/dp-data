@@ -1,5 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-
 test_that("CPL codebook nonanswers do not count as observed attitude inputs", {
   contract <- read_metadata("respondent_sources")
   built <- build_poll_respondents(contract[contract$poll_id == "cpl-1996", ])

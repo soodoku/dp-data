@@ -1,7 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "respondent_parity.R"))
-source(file.path(root, "R", "polardata_rebuild.R"))
-
 test_that("shared entropy freezes all people against historical values", {
   approved <- readr::read_csv(project_path(
     "audit", "corrections", "shared-entropy", "approved_values.csv"

@@ -1,5 +1,3 @@
-source(file.path(root, "R", "poll_sources.R"))
-
 test_that("label normalization repairs only invalid label bytes", {
   euro <- rawToChar(as.raw(0x80))
   apostrophe <- rawToChar(as.raw(0x92))

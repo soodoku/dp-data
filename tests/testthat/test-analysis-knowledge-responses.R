@@ -1,5 +1,3 @@
-source(project_path("R", "analysis_knowledge_responses.R"))
-
 test_that("knowledge nonanswers use exact meanings and retain distinctions", {
   labels <- c(
     "8. Don't know", "(can't choose)", "You couldn’t say",

@@ -1,5 +1,3 @@
-source(file.path(root, "R", "analysis_phases.R"))
-
 presence_bridge_fixture <- function() {
   people <- tibble::tibble(
     poll_id = "poll", source_dataset = c("historical", "cor_sood"),

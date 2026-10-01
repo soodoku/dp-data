@@ -1,5 +1,3 @@
-source(project_path("R", "respondent_normalization.R"))
-
 health_degree_status <- function(survey) {
   qualification <- as.numeric(survey$educb)
   stopifnot(

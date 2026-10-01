@@ -1,5 +1,5 @@
 source("R/paths.R")
-source("R/metadata.R")
+load_project()
 
 artifacts <- read_metadata("artifacts") |>
   dplyr::mutate(directory = dplyr::coalesce(.data$poll_id, "shared"))

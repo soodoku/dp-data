@@ -1,5 +1,3 @@
-source(project_path("R", "analysis_attitudes.R"))
-
 testthat::test_that("plain indices are primary and imputed values are stable", {
   directory <- project_path("output", "analysis")
   participants <- arrow::read_parquet(file.path(

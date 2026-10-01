@@ -1,6 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "briefing_reading.R"))
-
 test_that("briefing-reading export uses observed source responses", {
   reading <- arrow::read_parquet(project_path(
     "output", "respondent", "briefing_reading.parquet"

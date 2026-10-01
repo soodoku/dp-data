@@ -1,5 +1,3 @@
-source(project_path("R", "source_new_haven.R"))
-
 new_haven_knowledge_items <- function(survey, wave) {
   keys <- c(
     `35` = 3, `36` = 2, `37` = 2, `39` = 3,

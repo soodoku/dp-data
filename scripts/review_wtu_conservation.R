@@ -1,10 +1,6 @@
 # WTU-03 approved correction: replay the historical one-item T2 index.
-for (file in c(
-  "paths", "sources", "metadata", "poll_sources", "poll_adapters",
-  "knowledge", "exports", "respondents", "polardata", "polardata_rebuild"
-)) {
-  source(paste0("R/", file, ".R"))
-}
+source("R/paths.R")
+load_project()
 arguments <- commandArgs(trailingOnly = TRUE)
 stopifnot(length(arguments) <= 1L)
 directory <- if (length(arguments)) arguments[[1]] else tempfile("wtu-review-")
@@ -17,7 +13,7 @@ utility_attitudes <- function(survey, poll_id, wave) {
   if (poll_id == "wtu-1996" && wave == 2L) {
     reduce <- read_utility_value(survey, poll_id, "reduce2", 0:10)
     result$conservation_t2_midpoint_imputed <- dplyr::coalesce(
-      scale_historical_range(reduce, 3, 10), .5
+      rescale_historical_range(reduce, 3, 10), .5
     )
     result$conservation_t2_midpoint_imputed[
       utility_absent_form(survey, poll_id, wave)

@@ -1,5 +1,3 @@
-source(file.path(root, "R", "analysis_phase_attitudes.R"))
-
 test_that("phase attitudes retain raw codes and distinguish missingness", {
   raw <- c(0, 5, 10, 77, 98, -8, 11, 2.5, NA, NA, NA, 4)
   observed <- c(rep(TRUE, 9), FALSE, NA, FALSE)

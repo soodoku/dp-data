@@ -1,5 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-
 test_that("Bulgaria builds from raw answers without stored indices", {
   survey <- read_poll_survey("bulgaria-crime-2002")
   expected <- build_bulgaria_individual(survey)

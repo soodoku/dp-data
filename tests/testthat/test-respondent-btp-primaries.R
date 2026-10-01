@@ -1,6 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "respondent_btp_primaries.R"))
-
 primaries_test_survey <- function() {
   arrow::read_parquet(project_path("data", "btp-presidential-primaries-2004",
     "survey.parquet"

@@ -1,5 +1,3 @@
-source(file.path(root, "R", "polardata.R"))
-
 health_reference <- function() {
   readr::read_tsv(
     project_path("evidence", "benchmarks", "polardata.tab"),
@@ -230,7 +228,7 @@ test_that("polardata construction needs no benchmark or vault", {
   fs::dir_copy(project_path("R"), file.path(isolated, "R"))
   fs::dir_copy(project_path("metadata"), file.path(isolated, "metadata"))
   fs::dir_copy(project_path("data"), file.path(isolated, "data"))
-  script <- project_path("scripts", "12_build_polardata.R")
+  script <- project_path("scripts", "build_polardata.R")
   expect_false(dir.exists(file.path(isolated, "evidence")))
   expect_false(dir.exists(file.path(isolated, "vault")))
   withr::with_dir(isolated, source(script, local = new.env()))

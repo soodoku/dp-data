@@ -1,5 +1,6 @@
 # TZ-03 independent reconstruction and approved missing-component validation.
 source("R/paths.R")
+load_project()
 
 poll_id <- "tanzania-2015"
 source_path <- project_path("data", poll_id, "participants.dta")

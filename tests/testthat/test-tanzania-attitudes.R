@@ -1,5 +1,3 @@
-source(file.path(root, "R", "tanzania_attitudes.R"))
-
 test_that("Tanzania scales retain nonanswers and reject unreviewed codes", {
   values <- tanzania_attitude_scale(
     c(1, 3, 5, -99, -97, 98, 99, NA_real_, 20),

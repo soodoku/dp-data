@@ -1,6 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "attitude_catalog.R"))
-
 test_that("TE exit correction changes only seven catalog endpoints", {
   rebuilt <- arrow::read_parquet(project_path(
     "output", "polardata", "polardata.parquet"

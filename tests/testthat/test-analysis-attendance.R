@@ -1,5 +1,3 @@
-source(file.path(root, "R", "analysis_attendance.R"))
-
 attendance_inputs <- function() {
   list(
     participants = arrow::read_parquet(project_path(

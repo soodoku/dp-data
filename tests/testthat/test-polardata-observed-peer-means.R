@@ -1,7 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "polardata.R"))
-source(file.path(root, "R", "polardata_assembly.R"))
-
 test_that("shared assembly uses observed peers for each knowledge measure", {
   values <- tibble::tibble(
     female = c(0, 1, 0, 1, 0), minority = 0, educ4 = .5, ppage = .5,

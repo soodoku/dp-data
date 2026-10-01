@@ -1,7 +1,3 @@
-source(file.path(root, "R", "polardata_derived.R"))
-source(file.path(root, "R", "polardata_numerics.R"))
-source(file.path(root, "R", "polardata_parity.R"))
-
 test_that("covariance diagnostics distinguish singular and indefinite data", {
   singular <- cbind(seq_len(6), seq_len(6))
   result <- covariance_diagnostics(singular)

@@ -1,8 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "respondent_parity.R"))
-source(file.path(root, "R", "polardata.R"))
-source(file.path(root, "R", "polardata_rebuild.R"))
-
 test_that("European and Australian aggregates match every historical field", {
   polls <- c(
     "australia-republic-1999", "tomorrows-europe-2007", "europolis-2009"

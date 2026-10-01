@@ -1,5 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-
 test_that("Monarchy refusal correction preserves attendee ethnicity", {
   survey <- read_poll_survey("uk-monarchy-1996")
   built <- monarchy_demographics(survey)

@@ -1,5 +1,3 @@
-source(file.path(root, "R", "analysis_covariates.R"))
-
 test_that("analysis median flags retain upstream definitions and identities", {
   participants <- arrow::read_parquet(project_path(
     "output", "analysis", "analysis_participants.parquet"

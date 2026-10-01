@@ -1,7 +1,3 @@
-source(project_path("R", "respondents.R"))
-source(project_path("R", "historical_items.R"))
-source(project_path("R", "linked_knowledge.R"))
-
 testthat::test_that("knowledge preserves DK and respects form presence", {
   poll <- build_poll_knowledge("nic-1996")
   responses <- poll$knowledge_responses

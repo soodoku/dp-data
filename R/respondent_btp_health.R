@@ -23,12 +23,6 @@ btp_health_item <- function(survey, field, rule = "ten") {
   as_historical_float(answer)
 }
 
-btp_health_mean <- function(...) {
-  value <- rowMeans(cbind(...), na.rm = TRUE)
-  value[is.nan(value)] <- NA_real_
-  as_historical_float(value)
-}
-
 btp_health_alpha <- function(...) {
   items <- cbind(...)
   count <- rowSums(!is.na(items))
@@ -49,16 +43,16 @@ btp_health_attitudes <- function(survey, wave) {
   }
   tibble::tibble(
     reform = item("q3", "q3post", "reverse_binary"),
-    school_choice = btp_health_mean(
+    school_choice = calculate_float_mean(
       item("q7_a", "q7post_a"),
       item("q7_b", "q7post_b")
     ),
-    school_funding = btp_health_mean(
+    school_funding = calculate_float_mean(
       item("q7_c", "q7post_c"),
       item("q7_d", "q7post_d"), item("q7_e", "q7post_e"),
       item("q7_f", "q7post_f"), item("q8_f", "q8post_f")
     ),
-    standardized_testing = btp_health_mean(
+    standardized_testing = calculate_float_mean(
       1 - item("q4", "q4post", "three"), item("q5", "q5post_m")
     ),
     local_testing = item("q6", "q6post", "binary"),

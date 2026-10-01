@@ -1,5 +1,3 @@
-source(file.path(root, "R", "analysis_covariates.R"))
-
 test_that("Health degree status uses the separate degree question", {
   survey <- tibble::tibble(educb = c(0:12, -9, NA_real_))
   expect_equal(

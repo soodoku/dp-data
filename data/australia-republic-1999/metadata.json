@@ -263,7 +263,7 @@
       "url": null,
       "local_artifact_id": "uk-poll-inventory-notes-preview",
       "accessed": "2026-09-30",
-      "notes": "Generated PDF companion of data/shared/codebooks/historical-poll-inventory/inventory-notes.doc; the original is retained byte-exact. Converted using the shared scripts/16_build_document_previews.py. All 2 pages visually inspected; source text compared (382 source tokens). No source words or numbers missing; no clipping found. Page 1: 356 participants and nine missing exit questionnaires, leaving347 respondent records."
+      "notes": "Generated PDF companion of data/shared/codebooks/historical-poll-inventory/inventory-notes.doc; the original is retained byte-exact. Converted using the shared scripts/build_document_previews.py. All 2 pages visually inspected; source text compared (382 source tokens). No source words or numbers missing; no clipping found. Page 1: 356 participants and nine missing exit questionnaires, leaving347 respondent records."
     }
   ],
   "material_coverage": [
@@ -406,7 +406,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Genuine cross-poll coding evidence. Required build input read by scripts/12_build_polardata.R; 129 attitude targets plus header, canonical historical registry.",
+      "notes": "Cross-poll definition reference. Check the named poll and file version before interpreting formulas; crosswalk labels are not authoritative by themselves. Original source bytes retained; no change to scoring or sample membership. Source rights retained; repository code license does not apply. Cleanup review: Genuine cross-poll coding evidence. Required build input read by scripts/build_polardata.R; 129 attitude targets plus header, canonical historical registry.",
       "relative_path": "../shared/codebooks/attitude_indices/allpollindices.csv"
     },
     {
@@ -721,7 +721,7 @@
       "rights_status": "review-required",
       "disclosure_status": "approved-public",
       "publication_status": "published",
-      "notes": "Generated PDF companion of data/shared/codebooks/historical-poll-inventory/inventory-notes.doc; the original is retained byte-exact. Converted using the shared scripts/16_build_document_previews.py. All 2 pages visually inspected; source text compared (382 source tokens). No source words or numbers missing; no clipping found.",
+      "notes": "Generated PDF companion of data/shared/codebooks/historical-poll-inventory/inventory-notes.doc; the original is retained byte-exact. Converted using the shared scripts/build_document_previews.py. All 2 pages visually inspected; source text compared (382 source tokens). No source words or numbers missing; no clipping found.",
       "relative_path": "../shared/codebooks/historical-poll-inventory/inventory-notes.pdf"
     },
     {
@@ -770,7 +770,7 @@
       "source_token_coverage": "0.9820263130632964",
       "distinct_word_coverage": "0.9980276134122288",
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
-      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+      "rebuild_command": "python3 scripts/build_document_previews.py --report /tmp/dp-document-previews.json"
     },
     {
       "source_path": "data/australia-republic-1999/papers/adp5.doc",
@@ -786,7 +786,7 @@
       "source_token_coverage": "0.9968944099378882",
       "distinct_word_coverage": "0.9981191222570532",
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
-      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+      "rebuild_command": "python3 scripts/build_document_previews.py --report /tmp/dp-document-previews.json"
     },
     {
       "source_path": "data/shared/codebooks/knowledge_indices/appendix-a-9-14-14.docx",
@@ -802,7 +802,7 @@
       "source_token_coverage": "0.9927903871829106",
       "distinct_word_coverage": "1.0",
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
-      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+      "rebuild_command": "python3 scripts/build_document_previews.py --report /tmp/dp-document-previews.json"
     },
     {
       "source_path": "data/shared/codebooks/rosetta_stone/rosetta-stone.xls",
@@ -818,7 +818,7 @@
       "source_token_coverage": "0.9853896103896104",
       "distinct_word_coverage": "1.0",
       "qa_notes": "All sheets, cells, types and formulas preserved in temporary workbook; numeric display formatting and wrapped tokens can differ from raw text extraction. PDF is a static preview; original remains authoritative. No embedded charts or images were present. All 8 formulas checked against original cached values; maximum absolute recalculation difference 4.22e-15 (tolerance 1e-12). PDF cells with 0.00 format display two decimals; General-format precision depends on column width. Use original workbook for numeric values.",
-      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+      "rebuild_command": "python3 scripts/build_document_previews.py --report /tmp/dp-document-previews.json"
     },
     {
       "source_path": "data/shared/design/poll_details/appendix-poll-details-5-18-14-e.docx",
@@ -834,7 +834,7 @@
       "source_token_coverage": "0.9733542319749217",
       "distinct_word_coverage": "1.0",
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
-      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+      "rebuild_command": "python3 scripts/build_document_previews.py --report /tmp/dp-document-previews.json"
     },
     {
       "source_path": "data/australia-republic-1999/questionnaires/t1-questionnaire.doc",
@@ -882,7 +882,7 @@
       "source_token_coverage": "1",
       "distinct_word_coverage": "1",
       "qa_notes": "All 2 pages visually inspected; source text compared (382 source tokens). No source words or numbers missing; no clipping found.",
-      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+      "rebuild_command": "python3 scripts/build_document_previews.py --report /tmp/dp-document-previews.json"
     },
     {
       "source_path": "data/australia-republic-1999/codebooks/deliberative-poll-codebook.doc",
@@ -898,7 +898,7 @@
       "source_token_coverage": "0.9999491921552688",
       "distinct_word_coverage": "0.9996476391825229",
       "qa_notes": "Original DOC unchanged. All body text and frequency tables retained; source token coverage99.995%, sole missing distinct token is a Word PAGE field code. Reviewed opening, all symbolic-change pages, a later knowledge table and final page; no clipping observed.",
-      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+      "rebuild_command": "python3 scripts/build_document_previews.py --report /tmp/dp-document-previews.json"
     }
   ],
   "issues": {

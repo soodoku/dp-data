@@ -1,6 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "respondent_europolis.R"))
-
 test_that("Europolis is reconstructed from raw questions", {
   survey <- read_poll_survey("europolis-2009")
   inputs <- read_metadata("measure_inputs")

@@ -1,6 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "analysis_knowledge_missingness.R"))
-
 test_that("Australia's declared inputs reconstruct individual measures", {
   poll <- "australia-republic-1999"
   inputs <- read_metadata("measure_inputs") |>

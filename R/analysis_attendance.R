@@ -1,7 +1,3 @@
-source(project_path("R", "source_australia.R"))
-source(project_path("R", "source_new_haven.R"))
-source(project_path("R", "source_questionnaire_presence.R"))
-
 analysis_attendance_sources <- function() {
   tibble::tibble(
     poll_id = c(
@@ -258,13 +254,7 @@ reconcile_analysis_presence <- function(
 ) {
   person_keys <- c("poll_id", "source_dataset", "respondent_id")
   wave_keys <- c(person_keys, "wave")
-  presence <- phase_scores |>
-    dplyr::filter(grepl(":knowledge$", battery_id)) |>
-    dplyr::transmute(
-      poll_id, source_dataset, respondent_id, wave = original_score_wave,
-      wave_observed
-    )
-  stopifnot(!anyDuplicated(presence[wave_keys]))
+  presence <- select_comparison_presence(phase_scores)
   absence <- presence |>
     dplyr::filter(wave_observed %in% FALSE) |>
     dplyr::transmute(

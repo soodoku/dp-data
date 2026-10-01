@@ -1,5 +1,3 @@
-source(file.path(root, "R", "provenance.R"))
-
 test_that("checksum matches conserve files and retain duplicate locations", {
   files <- tibble::tibble(
     repository = "example", path = letters[1:4],
