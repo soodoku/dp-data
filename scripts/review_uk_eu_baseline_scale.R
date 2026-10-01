@@ -1,8 +1,6 @@
 # UKEU-02: reproduce historical values and verify the approved correction.
-for (module in c(
-  "paths", "sources", "metadata", "poll_sources", "poll_adapters", "knowledge",
-  "exports", "respondents", "polardata", "polardata_rebuild"
-)) source(file.path("R", paste0(module, ".R")))
+source("R/paths.R")
+load_project()
 
 poll_id <- "uk-eu-1995"
 source_path <- project_path("data", poll_id, "survey.sav")

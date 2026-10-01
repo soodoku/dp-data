@@ -1,12 +1,3 @@
-source(project_path("R", "analysis_knowledge_responses.R"))
-source(project_path("R", "source_questionnaire_presence.R"))
-source(project_path("R", "source_australia.R"))
-source(project_path("R", "source_new_haven.R"))
-source(project_path("R", "source_monarchy.R"))
-source(project_path("R", "source_zeguo.R"))
-source(project_path("R", "respondent_btp_general.R"))
-source(project_path("R", "analysis_attendance.R"))
-
 knowledge_source_presence <- function(items, survey, poll, source_dataset) {
   forms <- items |>
     dplyr::summarise(

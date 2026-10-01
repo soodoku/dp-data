@@ -1,6 +1,5 @@
 source("R/paths.R")
-source("R/sources.R")
-source("R/metadata.R")
+load_project()
 
 frictionless::read_package(project_path("datapackage.json")) |>
   frictionless::check_package()

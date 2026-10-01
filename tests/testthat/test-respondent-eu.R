@@ -1,5 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-
 test_that("UK EU uses the same substantive scale across waves", {
   survey <- read_poll_survey("uk-eu-1995")
   observed <- as.numeric(survey$part) == 1 &

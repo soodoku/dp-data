@@ -8,12 +8,6 @@ historical_health_response <- function(x, categories) {
   (x - 1) / (categories - 1)
 }
 
-historical_available_mean <- function(x) {
-  value <- rowMeans(x, na.rm = TRUE)
-  value[is.nan(value)] <- NA_real_
-  value
-}
-
 historical_health_items <- function(survey, wave) {
   key <- c(a = 0, b = 1, c = 1, d = 0, e = 0, f = 0)
   values <- vapply(names(key), function(item) {
@@ -29,11 +23,6 @@ historical_health_items <- function(survey, wave) {
     dimnames = list(NULL, names(key))
   )
   mask_reviewed_knowledge(items, survey, "uk-health-1998", wave)
-}
-
-historical_log_score <- function(value) {
-  value[!is.na(value) & value <= 0] <- .0001
-  log(value)
 }
 
 historical_health_precision <- function(value) {
@@ -108,10 +97,7 @@ health_individual_demographics <- function(result, survey) {
   result$ppage <- source_code("age", 18:110)
   school <- source_code("educa", c(-9, 0:4))
   result$educ4 <- c(0, .33, .66, 1, .66)[match(school, 0:4)]
-  result$educ3 <- ifelse(
-    result$educ4 %in% c(0, 1), result$educ4,
-    ifelse(is.na(result$educ4), NA_real_, .5)
-  )
+  result$educ3 <- collapse_historical_education(result$educ4)
   income <- source_code("income", c(-9, -8, -7, 1:16))
   income[income < 1] <- NA_real_
   result$hhincome <- (income - 1) / 15

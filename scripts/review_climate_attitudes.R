@@ -1,4 +1,5 @@
 source("R/paths.R")
+load_project()
 
 report <- project_path(
   "data", "a1r-climate-2021", "reports", "climate_results.pdf"

@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+- Share identical source-code readers, means and education recodes across poll
+  modules while retaining source-specific missingness and numeric precision.
+- Centralize project loading and use descriptive build-script names without
+  numeric prefixes. Keep shared arithmetic outside individual poll modules.
+- Reuse common response-emptiness and selected-wave presence helpers without
+  combining knowledge and attitude classification rules.
+
 ## 0.4.6
 
 - Align Australia's four shared checklist items across its ten- and twelve-item

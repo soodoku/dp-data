@@ -1,5 +1,3 @@
-source(file.path(root, "R", "analysis_covariates.R"))
-
 test_that("A1R median uses unique attendees without conditioning on outcomes", {
   survey <- tibble::tibble(
     CONDITION = c(1, 1, 1, 0, 1), GROUP = c(1, 2, 3, NA, NA),

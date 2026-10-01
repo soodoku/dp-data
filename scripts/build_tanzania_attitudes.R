@@ -1,10 +1,8 @@
 source("R/paths.R")
-source("R/metadata.R")
-source("R/exports.R")
-source("R/survey_weights.R")
+load_project()
 
-tables <- build_survey_weight_tables()
-directory <- project_path("output", "weights")
+tables <- build_tanzania_attitude_tables()
+directory <- project_path("output", "tanzania_attitudes")
 fs::dir_create(directory)
 manifest <- purrr::imap(tables, function(data, table_name) {
   write_typed_export(data, table_name, directory)

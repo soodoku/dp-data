@@ -293,7 +293,7 @@ enrich_knowledge_responses <- function(
     if ("wave_observed" %in% names(items)) {
       absent <- absent | items$wave_observed[rows] %in% FALSE
     }
-    raw_missing <- is.na(values) & (is.na(text) | !nzchar(trimws(text)))
+    raw_missing <- is_response_empty(values, text)
     scored_only <- is.na(items$source_column[rows]) |
       tolower(items$source_column[rows]) %in% labels$scored_fields
     nonanswer <- items$response_status[rows] == "non_substantive" |

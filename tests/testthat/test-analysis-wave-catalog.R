@@ -1,5 +1,3 @@
-source(file.path(root, "R", "analysis_wave_catalog.R"))
-
 test_that("published phase tables retain their declared Arrow types", {
   tables <- c(
     "analysis_studies", "analysis_survey_waves",

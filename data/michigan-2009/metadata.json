@@ -483,7 +483,7 @@
       "source_token_coverage": "0.9978260869565218",
       "distinct_word_coverage": "0.9937629937629938",
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed. Cover title MICHIGAN wraps its final letter in original fixed text box with current font metrics; all text retained.",
-      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+      "rebuild_command": "python3 scripts/build_document_previews.py --report /tmp/dp-document-previews.json"
     },
     {
       "source_path": "data/michigan-2009/questionnaire-pre.doc",
@@ -499,7 +499,7 @@
       "source_token_coverage": "0.998149005090236",
       "distinct_word_coverage": "0.9957356076759062",
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
-      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+      "rebuild_command": "python3 scripts/build_document_previews.py --report /tmp/dp-document-previews.json"
     },
     {
       "source_path": "data/michigan-2009/questionnaires/arrival-questionnaire.doc",
@@ -531,7 +531,7 @@
       "source_token_coverage": "1.0",
       "distinct_word_coverage": "1.0",
       "qa_notes": "Temporary XLSX print-layout copy preserves all nonempty source cells; single horizontal page; A3 landscape. Original XLS unchanged. Question text and source-field mappings legible on sampled pages.",
-      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+      "rebuild_command": "python3 scripts/build_document_previews.py --report /tmp/dp-document-previews.json"
     }
   ],
   "issues": {

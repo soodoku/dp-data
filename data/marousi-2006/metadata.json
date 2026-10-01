@@ -339,7 +339,7 @@
       "source_token_coverage": "1.0",
       "distinct_word_coverage": "1.0",
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed.",
-      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+      "rebuild_command": "python3 scripts/build_document_previews.py --report /tmp/dp-document-previews.json"
     }
   ],
   "issues": {

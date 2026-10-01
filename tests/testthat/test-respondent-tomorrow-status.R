@@ -1,5 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-
 test_that("TE nonanswers and literal waves survive source transport", {
   contract <- read_metadata("respondent_sources")
   built <- build_poll_respondents(contract[

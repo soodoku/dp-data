@@ -1,5 +1,3 @@
-source(project_path("R", "analysis_knowledge_missingness.R"))
-
 missingness_fixture <- function() {
   ids <- c("blank", "dk", "incorrect", "refused", "absent", "unknown",
            "score_only", "partial", "nonattendee", "positive_blank", "skipped")

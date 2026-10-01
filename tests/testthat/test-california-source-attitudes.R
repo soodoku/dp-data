@@ -1,5 +1,3 @@
-source(project_path("R", "analysis_source_attitudes.R"))
-
 testthat::test_that("California policy transport preserves source occasions", {
   raw <- arrow::read_parquet(project_path(
     "data", "california-whats-next-2011", "survey.parquet"

@@ -1,6 +1,5 @@
 source("R/paths.R")
-source("R/metadata.R")
-source("R/respondent_parity.R")
+load_project()
 
 read_export <- function(name) {
   arrow::read_parquet(project_path(

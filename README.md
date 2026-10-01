@@ -170,7 +170,8 @@ artifact catalog.
 | `metadata/` | Poll registry, source catalog, aliases, recodes, export contracts |
 | `metadata/items.csv` | Canonical knowledge-question catalog for the historical, Cor--Sood, and control-poll batteries; see [item catalog guide](docs/items.md) |
 | `datapackage.json` | Frictionless schemas for the tabular metadata |
-| `R/`, `scripts/` | Validation and build code |
+| `R/` | Shared recoding, poll-specific definitions, validation and export functions |
+| `scripts/` | Named build and comparison entry points used by the Makefile |
 | `output/` | Typed Parquet products built from audited poll-level inputs |
 | `vault/` | Local originals awaiting source-version review or poll-folder preservation |
 
@@ -180,6 +181,12 @@ registries. Analysis products use typed Parquet; `metadata/canonical_columns.csv
 defines each field’s type, nullability, key membership and meaning. Audit cell
 comparisons with many repeated rows can also use Parquet, with their keys and
 value semantics documented in the poll issue ledger.
+
+R modules define functions; build scripts load them through `load_project()`
+and call the relevant producer. Common readers and arithmetic belong in the
+shared recoding module. Poll modules retain their source columns, answer keys,
+missing codes and precision rules. Knowledge and attitude recoding have separate
+semantics. Group and poll summaries are calculated after respondent measures.
 
 The architecture and migration order are documented in
 [`docs/architecture.md`](docs/architecture.md).

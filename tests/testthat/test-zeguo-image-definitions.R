@@ -1,5 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-
 test_that("public-works image reproduces both authored source summaries", {
   survey <- read_poll_survey("zeguo-2005")
   observed <- zeguo_departure_observed(survey)

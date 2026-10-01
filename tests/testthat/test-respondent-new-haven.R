@@ -1,6 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "respondent_new_haven.R"))
-
 new_haven_test_survey <- function() {
   arrow::read_parquet(project_path("data", "new-haven-2004", "survey.parquet"))
 }

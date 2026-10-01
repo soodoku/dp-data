@@ -1,7 +1,3 @@
-source(file.path(root, "R", "analysis_phases.R"))
-source(file.path(root, "R", "analysis_attendance.R"))
-source(file.path(root, "R", "respondents.R"))
-
 test_that("New Haven distinguishes a zero placeholder form from a blank quiz", {
   survey <- read_poll_survey("new-haven-2004")
   evidence <- analysis_new_haven_presence(survey)

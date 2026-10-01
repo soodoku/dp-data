@@ -1,6 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "polardata_derived.R"))
-
 test_that("median classification keeps ties and missing observations intact", {
   expect_equal(above_reference_median(c(1, 2, 3, NA), c(1, 2, 2)),
                c(0, 0, 1, NA))

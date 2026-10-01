@@ -7,7 +7,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-SCRIPT = Path(__file__).resolve().parents[1] / "scripts/16_build_document_previews.py"
+SCRIPT = Path(__file__).resolve().parents[1] / "scripts/build_document_previews.py"
 spec = importlib.util.spec_from_file_location("document_previews", SCRIPT)
 previews = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(previews)

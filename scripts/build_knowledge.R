@@ -1,11 +1,5 @@
 source("R/paths.R")
-source("R/sources.R")
-source("R/metadata.R")
-source("R/poll_sources.R")
-source("R/poll_adapters.R")
-source("R/knowledge.R")
-source("R/california_knowledge.R")
-source("R/exports.R")
+load_project()
 
 verify_source_files()
 poll_ids <- knowledge_poll_ids()

@@ -10,6 +10,16 @@ read_source_codes <- function(survey, field, allowed) {
   value
 }
 
+read_source_codes_ignore_case <- function(survey, field, allowed) {
+  position <- match(tolower(field), tolower(names(survey)))
+  if (is.na(position)) stop("Missing source field: ", field)
+  value <- as.numeric(unclass(survey[[position]]))
+  if (any(!is.na(value) & !value %in% allowed)) {
+    stop("Unreviewed source codes in ", field)
+  }
+  value
+}
+
 recode_source_values <- function(survey, field, values, missing = numeric()) {
   codes <- seq_along(values)
   value <- read_source_codes(survey, field, c(codes, missing))
@@ -51,6 +61,28 @@ as_historical_float <- function(value) {
   # SPSS/Stata float storage is part of the historical numeric representation.
   bytes <- writeBin(as.numeric(value), raw(), size = 4)
   readBin(bytes, what = "double", n = length(value), size = 4)
+}
+
+historical_available_mean <- function(x) {
+  value <- rowMeans(x, na.rm = TRUE)
+  value[is.nan(value)] <- NA_real_
+  value
+}
+
+calculate_float_mean <- function(...) {
+  value <- rowMeans(cbind(...), na.rm = TRUE)
+  value[is.nan(value)] <- NA_real_
+  as_historical_float(value)
+}
+
+historical_log_score <- function(value) {
+  value[!is.na(value) & value <= 0] <- .0001
+  log(value)
+}
+
+rescale_historical_range <- function(value, lower, upper) {
+  stopifnot(length(lower) == 1L, length(upper) == 1L, upper > lower)
+  (value - lower) / (upper - lower)
 }
 
 score_knowledge <- function(items, observed = NULL) {

@@ -1,6 +1,3 @@
-source(file.path(root, "R", "analysis_phases.R"))
-
-
 test_that("Tanzania presence requires an actual substantive policy answer", {
   definitions <- read_metadata("tanzania_attitude_items")
   fields <- c(definitions$pre_column, definitions$post_column)

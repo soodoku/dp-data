@@ -1,6 +1,5 @@
 source("R/paths.R")
-source("R/metadata.R")
-source("R/provenance.R")
+load_project()
 
 args <- commandArgs(trailingOnly = TRUE)
 root <- if (length(args)) args[[1]] else dirname(project_path())

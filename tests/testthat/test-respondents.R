@@ -1,5 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-
 test_that("explicit nonanswer labels exclude ambiguous and substantive codes", {
   labels <- tibble::tribble(
     ~source_column, ~source_value, ~value_label,
@@ -216,7 +214,6 @@ test_that("UK EU keeps 238 historical attendees and 224 knowledge cases", {
   expect_error(build_eu_individual(survey), "Unreviewed")
 })
 
-source(file.path(root, "R", "respondent_parity.R"))
 
 test_that("definitions match historical or approved values by IDs", {
   measures <- respondent_export("respondent_measures")

@@ -1,5 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-
 presence_dependency_builders <- list(
   "cpl-1996" = function(survey) build_utility_individual(survey, "cpl-1996"),
   "san-mateo-2008" = build_san_mateo_individual,

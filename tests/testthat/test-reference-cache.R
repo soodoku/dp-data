@@ -1,5 +1,3 @@
-source(file.path(root, "R", "respondent_parity.R"))
-
 test_that("reference caching preserves data and reloads changed files", {
   path <- tempfile(fileext = ".csv")
   on.exit(unlink(path), add = TRUE)

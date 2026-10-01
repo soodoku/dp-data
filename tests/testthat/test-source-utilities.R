@@ -1,5 +1,3 @@
-source(file.path(root, "R", "source_utilities.R"))
-
 test_that("original Texas responses preserve substantive values", {
   for (poll in c("swepco-1996", "wtu-1996")) {
     path <- project_path(

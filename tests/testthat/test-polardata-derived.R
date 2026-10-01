@@ -1,5 +1,3 @@
-source(file.path(root, "R", "polardata_derived.R"))
-
 test_that("entropy uses all observed categories and answered denominators", {
   expect_equal(categorical_entropy(c(0, 1)), 1)
   expect_equal(categorical_entropy(c(0, 0, NA, NA)), 0)

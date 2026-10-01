@@ -1,5 +1,3 @@
-source(file.path(root, "R", "analysis_attendance.R"))
-
 health_attendance_fixture <- function() {
   people <- arrow::read_parquet(project_path(
     "output", "analysis", "analysis_phase_participants.parquet"

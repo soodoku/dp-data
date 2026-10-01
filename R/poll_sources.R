@@ -161,10 +161,8 @@ public_survey_extract <- function(data, excluded) {
 read_joined_public_source <- function(record) {
   directory <- project_path("data", record$poll_id, "source-materials")
   data <- if (record$transformation == "join-workbook") {
-    source(project_path("R", "source_new_haven.R"), local = TRUE)
     read_new_haven_workbook(file.path(directory, "survey-waves.xlsx"))
   } else if (record$transformation == "join-zeguo") {
-    source(project_path("R", "source_zeguo.R"), local = TRUE)
     read_zeguo_sources(directory)
   } else {
     stop("Unsupported public source join: ", record$poll_id)

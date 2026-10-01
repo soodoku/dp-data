@@ -1,10 +1,3 @@
-source(file.path(root, "R", "respondent_parity.R"))
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "respondent_nic2.R"))
-source(file.path(root, "R", "polardata_derived.R"))
-source(file.path(root, "R", "polardata_assembly.R"))
-source(file.path(root, "R", "polardata_nic2.R"))
-
 test_that("NIC2 uses raw questions and stable identities", {
   survey <- read_poll_survey("nic2-2003")
   fields <- c(

@@ -1,27 +1,3 @@
-source(project_path("R", "source_questionnaire_presence.R"))
-source(project_path("R", "respondent_normalization.R"))
-source(project_path("R", "respondent_health.R"))
-source(project_path("R", "respondent_eu.R"))
-source(project_path("R", "respondent_recode.R"))
-source(project_path("R", "respondent_harmonized.R"))
-source(project_path("R", "respondent_monarchy.R"))
-source(project_path("R", "respondent_election.R"))
-source(project_path("R", "respondent_utilities.R"))
-source(project_path("R", "respondent_crime.R"))
-source(project_path("R", "respondent_nic.R"))
-source(project_path("R", "respondent_bulgaria.R"))
-source(project_path("R", "respondent_australia.R"))
-source(project_path("R", "respondent_tomorrows_europe.R"))
-source(project_path("R", "respondent_europolis.R"))
-source(project_path("R", "respondent_btp_general.R"))
-source(project_path("R", "respondent_btp_health.R"))
-source(project_path("R", "respondent_btp_national.R"))
-source(project_path("R", "respondent_san_mateo.R"))
-source(project_path("R", "respondent_btp_primaries.R"))
-source(project_path("R", "respondent_nic2.R"))
-source(project_path("R", "respondent_new_haven.R"))
-source(project_path("R", "respondent_zeguo.R"))
-
 historical_nic2_ids <- function(survey) {
   bridge <- readr::read_csv(project_path(
     "data", "nic2-2003", "historical-ids.csv"

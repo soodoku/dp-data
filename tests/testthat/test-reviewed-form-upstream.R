@@ -1,8 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "source_questionnaire_presence.R"))
-source(file.path(root, "R", "polardata.R"))
-source(file.path(root, "R", "polardata_core.R"))
-
 test_that("reviewed unavailable questionnaires are missing at item decoding", {
   cases <- tibble::tribble(
     ~poll, ~wave, ~decoder, ~missing,

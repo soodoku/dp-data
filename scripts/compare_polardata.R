@@ -1,14 +1,5 @@
 source("R/paths.R")
-source("R/metadata.R")
-source("R/poll_sources.R")
-source("R/poll_adapters.R")
-source("R/knowledge.R")
-source("R/respondents.R")
-source("R/respondent_parity.R")
-source("R/polardata.R")
-source("R/polardata_rebuild.R")
-source("R/polardata_numerics.R")
-source("R/polardata_parity.R")
+load_project()
 
 rebuilt <- arrow::read_parquet(
   project_path("output", "polardata", "polardata.parquet")

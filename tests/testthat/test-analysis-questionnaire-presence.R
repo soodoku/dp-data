@@ -1,7 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "source_questionnaire_presence.R"))
-source(file.path(root, "R", "analysis_attendance.R"))
-
 questionnaire_analysis_people <- function() {
   arrow::read_parquet(project_path(
     "output", "analysis", "analysis_participants.parquet"

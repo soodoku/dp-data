@@ -1,5 +1,3 @@
-source(file.path(root, "R", "analysis_phases.R"))
-
 phase_presence_polls <- c(
   "nic-1996", "denmark-euro-2000", "btp-general-election-2004", "amr-2024",
   "btp-national-2003", "btp-presidential-primaries-2004"

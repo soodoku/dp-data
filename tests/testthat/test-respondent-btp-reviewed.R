@@ -1,9 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "respondent_btp_general.R"))
-source(file.path(root, "R", "respondent_btp_health.R"))
-source(file.path(root, "R", "respondent_parity.R"))
-source(file.path(root, "R", "respondent_san_mateo.R"))
-
 test_that("BTP election rejects absent and ambiguous joins", {
   survey <- read_poll_survey("btp-general-election-2004")
   raw <- haven::read_dta(project_path(

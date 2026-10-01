@@ -1,17 +1,7 @@
-tomorrows_europe_codes <- function(survey, field, allowed) {
-  position <- match(tolower(field), tolower(names(survey)))
-  if (is.na(position)) stop("Missing source field: ", field)
-  value <- as.numeric(unclass(survey[[position]]))
-  if (any(!is.na(value) & !value %in% allowed)) {
-    stop("Unreviewed source codes in ", field)
-  }
-  value
-}
-
 tomorrows_europe_age <- function(survey) {
-  age <- tomorrows_europe_codes(survey, "age", 18:120)
-  birth_year <- tomorrows_europe_codes(survey, "v_q36", 1900:2007)
-  age_band <- tomorrows_europe_codes(survey, "q36", 1:6)
+  age <- read_source_codes_ignore_case(survey, "age", 18:120)
+  birth_year <- read_source_codes_ignore_case(survey, "v_q36", 1900:2007)
+  age_band <- read_source_codes_ignore_case(survey, "q36", 1:6)
   observed <- !is.na(age)
   stopifnot(
     identical(is.na(age), is.na(birth_year)),
@@ -37,7 +27,7 @@ tomorrows_europe_attitudes <- function(survey, wave) {
       c(if (scale == 10) 0:10 else 1:5, 99)
     exceptions <- list(t2q11a = 8, t3q16a = 10, t3q18c = 55)
     allowed <- c(allowed, exceptions[[field]])
-    value <- tomorrows_europe_codes(survey, field, allowed)
+    value <- read_source_codes_ignore_case(survey, field, allowed)
     if (wave == 1L && scale == 10) value <- value - 1
     value[value > scale & !is.na(value)] <- NA_real_
     value <- if (scale == 10) value / 10 else (value - 1) / 4
@@ -83,7 +73,7 @@ tomorrow_knowledge_items <- function(survey, wave) {
       t2q24 = c(24, 1004), t2q27 = c(44, 1004)
     )
     allowed <- c(allowed, exceptions[[field]])
-    value <- tomorrows_europe_codes(survey, field, allowed)
+    value <- read_source_codes_ignore_case(survey, field, allowed)
     correct <- as.numeric(value %in% key[index])
     invalid <- knowledge_invalid_codes("tomorrows-europe-2007", field, value)
     correct[invalid] <- NA_real_
@@ -93,7 +83,7 @@ tomorrow_knowledge_items <- function(survey, wave) {
     field <- if (wave == 1L) paste0("q33", suffix, "_1") else
       paste0("t", wave, "q36", suffix)
     allowed <- if (wave == 1L) 1:13 else c(0:10, 24, 44, 99, 1004)
-    value <- tomorrows_europe_codes(survey, field, allowed)
+    value <- read_source_codes_ignore_case(survey, field, allowed)
     if (wave == 1L) value <- value - 1
     value[value > 10 & !is.na(value)] <- NA_real_
     as.numeric(!is.na(value) & if (suffix == "a") value > 5 else value < 5)
@@ -116,7 +106,7 @@ build_tomorrow_individual <- function(
     value
   }
   read <- function(field, allowed) {
-    tomorrows_europe_codes(survey, field, allowed)
+    read_source_codes_ignore_case(survey, field, allowed)
   }
   education <- c(0, .33, .66, 1, 1, 1, NA)[read("q39", 1:7)]
   dplyr::bind_cols(

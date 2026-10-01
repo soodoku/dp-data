@@ -1,5 +1,3 @@
-source(project_path("R", "analysis_marousi_items.R"))
-
 marousi_items_fixture <- local({
   fixture <- NULL
   function() {

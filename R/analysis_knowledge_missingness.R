@@ -6,8 +6,7 @@ knowledge_flags <- function(items, participants, scores) {
     !anyDuplicated(scores[form_keys]),
     !anyDuplicated(items[c(form_keys, "item_id")])
   )
-  raw_empty <- is.na(items$raw_value) &
-    (is.na(items$raw_text) | !nzchar(trimws(items$raw_text)))
+  raw_empty <- is_response_empty(items$raw_value, items$raw_text)
   source_known <- !is.na(items$source_column) & nzchar(items$source_column)
   items$system_blank <- source_known & raw_empty &
     items$response_reason %in% c("source_missing", "blank")

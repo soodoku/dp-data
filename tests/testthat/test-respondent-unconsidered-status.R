@@ -1,5 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-
 test_that("exact unconsidered labels exclude ambiguous codes", {
   labels <- tibble::tibble(
     source_column = c("a", "b", "c", "d", "e", "e", "f"),

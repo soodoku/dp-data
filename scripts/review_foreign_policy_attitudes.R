@@ -1,7 +1,7 @@
 # Reconstruct NIC2/BTP attitude indices and compare authored variants.
 # Run from the repository root. Outputs are review evidence only.
 source("R/paths.R")
-for (module in list.files("R", full.names = TRUE)) source(module)
+load_project()
 output <- file.path("audit", "foreign-policy-attitudes")
 dir.create(output, recursive = TRUE, showWarnings = FALSE)
 f32 <- function(x) {

@@ -1,4 +1,5 @@
 source("R/paths.R")
+load_project()
 
 vault <- project_path("vault", "cdd")
 if (!fs::dir_exists(vault)) {

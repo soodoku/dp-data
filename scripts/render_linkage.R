@@ -1,4 +1,5 @@
 source("R/paths.R")
+load_project()
 
 dir.create(project_path("output", "linkage", "tables"),
   recursive = TRUE,

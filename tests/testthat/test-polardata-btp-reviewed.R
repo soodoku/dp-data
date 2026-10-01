@@ -1,15 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "polardata.R"))
-source(file.path(root, "R", "respondent_btp_general.R"))
-source(file.path(root, "R", "respondent_btp_health.R"))
-source(file.path(root, "R", "respondent_parity.R"))
-source(file.path(root, "R", "respondent_san_mateo.R"))
-source(file.path(root, "R", "polardata_derived.R"))
-source(file.path(root, "R", "polardata_assembly.R"))
-source(file.path(root, "R", "polardata_btp_reviewed.R"))
-source(file.path(root, "R", "polardata_numerics.R"))
-source(file.path(root, "R", "polardata_parity.R"))
-
 test_that("US poll calibration preserves earlier scoring and sample vintages", {
   election <- tibble::as_tibble(setNames(
     rep(list(c(1, NA_real_)), 9),

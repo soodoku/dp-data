@@ -1,5 +1,3 @@
-source(project_path("R", "source_monarchy.R"))
-
 monarchy_attitudes <- function(survey, wave) {
   prefix <- if (wave == 1L) "Q" else "R"
   response <- function(stem, values, missing) {

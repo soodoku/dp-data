@@ -1,4 +1,5 @@
 source("R/paths.R")
+load_project()
 
 resources <- c(
   "oos_sources",

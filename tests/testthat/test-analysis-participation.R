@@ -1,6 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "analysis_participation.R"))
-
 test_that("eligibility requires collected stages, not later follow-up", {
   people <- tibble::tibble(
     poll_id = c(rep("arrival", 5), "no-arrival", "unresolved"),

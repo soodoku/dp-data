@@ -1,7 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "polardata.R"))
-source(file.path(root, "R", "polardata_btp_reviewed.R"))
-
 test_that("float components use observed peers and retain missing focal", {
   value <- c(0, 1, NA, 0, 0, NA)
   group <- c(1, 1, 1, 1, 2, 2)

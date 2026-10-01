@@ -1,5 +1,3 @@
-source(project_path("R", "source_zeguo.R"))
-
 zeguo_knowledge_items <- function(survey, wave) {
   fields <- paste0(wave, "_d304", 3:6)
   values <- purrr::map(fields, function(field) {

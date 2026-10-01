@@ -66,9 +66,7 @@ build_eu_individual <- function(survey = read_poll_survey("uk-eu-1995")) {
   result$educ4 <- c(0, 0, 0, .33, .33, .33, .66, .66, .66, .66, .66, 1,
     .66, NA_real_
   )[match(school, 0:13)]
-  result$educ3 <- ifelse(result$educ4 %in% c(0, 1), result$educ4,
-    ifelse(is.na(result$educ4), NA_real_, .5)
-  )
+  result$educ3 <- collapse_historical_education(result$educ4)
   interest <- eu_source_value(survey, "genint", c(-1, 1:4, 8, 9))
   result$t1polint <- c(0, .33, .66, 1)[match(interest, 1:4)]
   before <- eu_knowledge_items(survey, 1L)

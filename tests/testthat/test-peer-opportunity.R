@@ -1,8 +1,3 @@
-source(file.path(root, "R", "polardata.R"))
-source(file.path(root, "R", "respondent_recode.R"))
-source(file.path(root, "R", "polardata_core.R"))
-source(file.path(root, "R", "polardata_btp_reviewed.R"))
-
 test_that("knowing every scored item leaves no peer learning opportunity", {
   items <- rbind(c(1, 1), c(0, 1), c(0, 0))
   group <- rep(1, 3)

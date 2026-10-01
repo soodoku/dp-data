@@ -1,6 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "respondent_zeguo.R"))
-
 zeguo_test_survey <- function() {
   arrow::read_parquet(project_path("data", "zeguo-2005", "survey.parquet"))
 }

@@ -1,7 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "polardata.R"))
-source(file.path(root, "R", "polardata_rebuild.R"))
-
 test_that("Texas absence propagates through post scores and gains", {
   for (poll in c("swepco-1996", "wtu-1996")) {
     survey <- read_poll_survey(poll)

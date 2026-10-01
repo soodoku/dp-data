@@ -1,14 +1,6 @@
 # Independently reconstruct all BTP 2004/2005 attitude indices.
 source("R/paths.R")
-for (f in setdiff(
-  list.files("R",
-    full.names = TRUE,
-    pattern = "\\.R$"
-  ),
-  "R/paths.R"
-)) {
-  source(f)
-}
+load_project()
 h <- read_poll_survey("btp-health-education-2005")
 g <- read_poll_survey("btp-general-election-2004")
 graw <- haven::read_dta("data/btp-general-election-2004/raw-responses.dta")

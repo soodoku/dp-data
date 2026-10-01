@@ -1,10 +1,6 @@
 # NIC-12: compare midpoint imputation with the approved missing-answer rule.
-for (module in c(
-  "paths", "sources", "metadata", "poll_sources", "poll_adapters", "knowledge",
-  "exports", "respondents", "polardata", "polardata_rebuild"
-)) {
-  source(file.path("R", paste0(module, ".R")))
-}
+source("R/paths.R")
+load_project()
 
 survey <- read_poll_survey("nic-1996")
 stopifnot(nrow(survey) == 911L, !anyDuplicated(survey$source_row))

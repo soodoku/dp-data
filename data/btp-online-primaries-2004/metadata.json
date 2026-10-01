@@ -334,7 +334,7 @@
       "source_token_coverage": "0.9948843211355886",
       "distinct_word_coverage": "0.9949348769898697",
       "qa_notes": "Word pagination and line breaks can differ with converter fonts. Text coverage is diagnostic: source extractors include field codes, split runs and formatting artifacts that are not printed. 989 pages are expected: original compiled survey/codebook contents includes sections beginning at page983.",
-      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+      "rebuild_command": "python3 scripts/build_document_previews.py --report /tmp/dp-document-previews.json"
     }
   ],
   "issues": {

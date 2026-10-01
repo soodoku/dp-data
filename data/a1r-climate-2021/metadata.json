@@ -363,7 +363,7 @@
       "source_token_coverage": "0.9993899463152758",
       "distinct_word_coverage": "0.9995305164319249",
       "qa_notes": "Original DOCX bytes retained. Body text and table content compared; representative tables and figures visually checked. Pagination differs: 28 physical PDF pages retain the source document's discontinuous printed page numbers. Narrow original table headings wrap; all values and footnotes remain readable. Original remains authoritative.",
-      "rebuild_command": "python3 scripts/16_build_document_previews.py --report /tmp/dp-document-previews.json"
+      "rebuild_command": "python3 scripts/build_document_previews.py --report /tmp/dp-document-previews.json"
     }
   ],
   "issues": {

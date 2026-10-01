@@ -1,6 +1,3 @@
-source(file.path(root, "R", "analysis_attendance.R"))
-source(file.path(root, "R", "respondents.R"))
-
 attendance_contract_people <- function() {
   tibble::tibble(
     poll_id = "example", source_dataset = "historical",

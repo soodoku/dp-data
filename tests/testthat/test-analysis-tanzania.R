@@ -1,5 +1,3 @@
-source(file.path(root, "R", "analysis_tables.R"))
-
 tanzania_test_source <- function() {
   haven::read_dta(project_path(
     "data", "tanzania-2015", "participants.dta"

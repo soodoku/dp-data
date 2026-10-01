@@ -11,11 +11,6 @@ read_utility_value <- function(survey, poll_id, field, allowed) {
   value
 }
 
-scale_historical_range <- function(value, lower, upper) {
-  stopifnot(length(lower) == 1L, length(upper) == 1L, upper > lower)
-  (value - lower) / (upper - lower)
-}
-
 cpl_attitudes <- function(survey, wave) {
   response <- function(stem) {
     read_utility_value(survey, "cpl-1996", paste0(stem, wave),
@@ -25,7 +20,7 @@ cpl_attitudes <- function(survey, wave) {
   scale <- function(stem) {
     lower <- if (stem == "poor" || (stem == "fuels" && wave == 2L)) 1 else 0
     upper <- if (stem == "poor") 5 else 10
-    scale_historical_range(response(stem), lower, upper)
+    rescale_historical_range(response(stem), lower, upper)
   }
   average <- function(stems) {
     values <- purrr::map(stems, scale) |> rlang::set_names(stems)
@@ -80,12 +75,12 @@ utility_attitudes <- function(survey, poll_id, wave) {
   research_min <- if (wtu && wave == 2L) 1 else 0
   result <- tibble::tibble(
     imported_power = response("buypwr") / 10,
-    conservation = scale_historical_range(conservation, conservation_min, 10),
+    conservation = rescale_historical_range(conservation, conservation_min, 10),
     low_income_support = response("needto") / 10,
-    renewables = scale_historical_range(
+    renewables = rescale_historical_range(
       average(c("renew", "wind")), renewables_min, 10
     ),
-    research = scale_historical_range(
+    research = rescale_historical_range(
       average(c("fedrch", "resch")), research_min, 10
     ),
     fossil_fuels = response("fuels") / 10
@@ -94,7 +89,7 @@ utility_attitudes <- function(survey, poll_id, wave) {
     dplyr::rename_with(\(name) paste0(name, "_t", wave))
   fallback <- stats::setNames(rep(.5, ncol(result)), names(result))
   fallback[[paste0("research_t", wave)]] <-
-    scale_historical_range(5, research_min, 10)
+    rescale_historical_range(5, research_min, 10)
   add_midpoint_imputed_variants(
     result, fallback, utility_absent_form(survey, poll_id, wave)
   )
@@ -163,7 +158,7 @@ build_utility_individual <- function(survey, poll_id) {
   if (cpl) {
     # The historical export recalibrates conservation after computing extremity.
     attitudes$conservation_t1 <-
-      scale_historical_range(attitudes$conservation_t1, .05, 1)
+      rescale_historical_range(attitudes$conservation_t1, .05, 1)
   }
   knowledge <- summarise_historical_knowledge(
     utility_knowledge_items(survey, poll_id, 1L),

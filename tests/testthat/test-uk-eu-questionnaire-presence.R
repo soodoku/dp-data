@@ -1,5 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-
 test_that("UK EU nonapplicable post forms never become observed zero scores", {
   survey <- read_poll_survey("uk-eu-1995")
   dictionary <- readr::read_csv(project_path(

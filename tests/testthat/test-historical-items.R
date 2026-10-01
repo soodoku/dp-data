@@ -1,6 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "historical_items.R"))
-
 test_that("historical item scores reproduce both respondent waves", {
   items <- arrow::read_parquet(project_path(
     "output", "respondent", "historical_knowledge_items.parquet"

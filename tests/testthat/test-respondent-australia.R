@@ -1,6 +1,3 @@
-source(file.path(root, "R", "respondents.R"))
-source(file.path(root, "R", "respondent_australia.R"))
-
 test_that("australia uses raw questions independently of row order", {
   survey <- read_poll_survey("australia-republic-1999")
   fields <- c(
@@ -153,8 +150,8 @@ test_that("australia matches every historical respondent target", {
 
 test_that("Australia age refusals stay missing without changing attendance", {
   survey <- read_poll_survey("australia-republic-1999")
-  raw_age <- australia_source_codes(survey, "age", c(18:88, 98))
-  group <- australia_source_codes(survey, "group", c(1:24, 100))
+  raw_age <- read_source_codes_ignore_case(survey, "age", c(18:88, 98))
+  group <- read_source_codes_ignore_case(survey, "group", c(1:24, 100))
   ids <- as.numeric(unclass(survey[[
     match("caseid", tolower(names(survey)))
   ]]))
@@ -179,7 +176,9 @@ test_that("Australia age refusals stay missing without changing attendance", {
     memberships$sample_id == "historical-polardata" & memberships$included
   ]
   expect_setequal(included, as.character(ids[selected]))
-  expect_equal(australia_source_codes(survey, "age", c(18:88, 98)), raw_age)
+  expect_equal(
+    read_source_codes_ignore_case(survey, "age", c(18:88, 98)), raw_age
+  )
 })
 
 test_that("Queen first survives an unanswered second choice", {

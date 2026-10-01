@@ -1,6 +1,5 @@
 source("R/paths.R")
-source("R/metadata.R")
-source("R/poll_sources.R")
+load_project()
 
 sources <- dplyr::bind_rows(
   read_metadata("survey_sources"), read_metadata("survey_components")

@@ -1,9 +1,3 @@
-source(file.path(root, "R", "analysis_phase_recruitment.R"))
-source(file.path(root, "R", "analysis_phases.R"))
-source(file.path(root, "R", "analysis_poll_metadata.R"))
-source(file.path(root, "R", "analysis_tables.R"))
-source(file.path(root, "R", "analysis_attitudes.R"))
-
 test_that("documented nonanswers keep their codes and zero correctness", {
   for (name in c("analysis_item_responses", "analysis_phase_item_responses")) {
     items <- arrow::read_parquet(project_path(

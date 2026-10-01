@@ -1,10 +1,6 @@
 # AUS-06: retain Queen first when the second preference is missing.
-for (module in c(
-  "paths", "sources", "metadata", "poll_sources", "poll_adapters", "knowledge",
-  "exports", "respondents", "polardata", "polardata_rebuild"
-)) {
-  source(file.path("R", paste0(module, ".R")))
-}
+source("R/paths.R")
+load_project()
 
 poll_id <- "australia-republic-1999"
 survey <- read_poll_survey(poll_id)

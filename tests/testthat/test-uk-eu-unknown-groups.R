@@ -1,6 +1,3 @@
-source(project_path("R", "respondents.R"))
-source(project_path("R", "polardata_rebuild.R"))
-
 testthat::test_that("UK EU unknown groups retain attendees without a cluster", {
   survey <- read_poll_survey("uk-eu-1995")
   unknown <- as.numeric(survey$group) %in% 99

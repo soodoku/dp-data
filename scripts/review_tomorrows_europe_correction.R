@@ -1,10 +1,6 @@
 # TE-04 approved correction; replay the historical mixed-wave formula.
-for (file in c(
-  "paths", "sources", "metadata", "poll_sources", "poll_adapters",
-  "knowledge", "exports", "respondents", "polardata", "polardata_rebuild"
-)) {
-  source(paste0("R/", file, ".R"))
-}
+source("R/paths.R")
+load_project()
 arguments <- commandArgs(trailingOnly = TRUE)
 stopifnot(length(arguments) <= 1L)
 directory <- if (length(arguments)) arguments[[1]] else tempfile("te-review-")
@@ -17,7 +13,7 @@ tomorrows_europe_attitudes <- function(survey, wave) {
   result <- corrected_attitudes(survey, wave)
   if (wave == 3L) {
     item <- function(question, scale = 10, reverse = FALSE, source_wave = 3L) {
-      value <- tomorrows_europe_codes(
+      value <- read_source_codes_ignore_case(
         survey, paste0("t", source_wave, "q", question),
         c(if (scale == 10) 0:10 else 1:5, 99)
       )

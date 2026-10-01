@@ -1,5 +1,3 @@
-source(file.path(root, "R", "analysis_covariates.R"))
-
 source_covariate_fixture <- function() {
   people <- tibble::tibble(
     poll_id = "example", source_row = 1:2,

@@ -1,5 +1,6 @@
 # Compare the published Table 1 trade row with source-backed alternatives.
 source("R/paths.R")
+load_project()
 args <- commandArgs(trailingOnly = TRUE)
 stopifnot(length(args) <= 1L)
 out <- if (length(args)) {
