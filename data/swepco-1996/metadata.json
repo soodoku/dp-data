@@ -732,6 +732,31 @@
         "issue_id": "SWE-06",
         "title": "WTU-07 / SWE-06: Absent departure questionnaires and explicit imputation",
         "evidence_path": "../../docs/poll-evidence.md#swe-06"
+      },
+      {
+        "issue_id": "SWE-01",
+        "title": "SWE-01 — original portable missing codes recovered.",
+        "evidence_path": "../../docs/poll-evidence.md#swe-01"
+      },
+      {
+        "issue_id": "SWE-02",
+        "title": "SWE-02 — conservation's post component is absent under the script's name.",
+        "evidence_path": "../../docs/poll-evidence.md#swe-02"
+      },
+      {
+        "issue_id": "SWE-03",
+        "title": "SWE-03 — low-income index reflects an earlier, documented construct.",
+        "evidence_path": "../../docs/poll-evidence.md#swe-03"
+      },
+      {
+        "issue_id": "SWE-04",
+        "title": "SWE-04 — raw-scale research enters normalized extremity.",
+        "evidence_path": "../../docs/poll-evidence.md#swe-04"
+      },
+      {
+        "issue_id": "SWE-05",
+        "title": "SWE-05 — nonparticipants receive scores for absent post forms.",
+        "evidence_path": "../../docs/poll-evidence.md#swe-05"
       }
     ],
     "reviewed_flags": [],

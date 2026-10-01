@@ -901,6 +901,11 @@
         "issue_id": "EURO-07",
         "title": "EURO-07: Make both attitude labels match the numeric direction",
         "evidence_path": "../../docs/poll-evidence.md#euro-07"
+      },
+      {
+        "issue_id": "EURO-01",
+        "title": "EURO-01 — distributional parity is not a person link.",
+        "evidence_path": "../../docs/poll-evidence.md#euro-01"
       }
     ],
     "reviewed_flags": [],

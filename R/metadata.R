@@ -418,13 +418,27 @@ read_poll_issues <- function() {
   register
 }
 
-poll_issue_index <- function(register = read_poll_issues()) {
-  lines <- readLines(project_path("docs", "poll-evidence.md"), warn = FALSE)
-  headings <- grep(
-    "^#{2,3} [A-Z][A-Z0-9]*-[0-9]{2,4}([: /]| —)", lines, value = TRUE
+poll_issue_index <- function(register = read_poll_issues(), lines = NULL) {
+  if (is.null(lines)) {
+    lines <- readLines(project_path("docs", "poll-evidence.md"), warn = FALSE)
+  }
+  headed <- grep(
+    "^#{2,6} [A-Z][A-Z0-9]*-[0-9]{2,4}([: /]| —)", lines
   )
-  entries <- purrr::map_dfr(headings, function(heading) {
-    title <- sub("^#+ ", "", heading)
+  bold <- grep("^\\*\\*[A-Z][A-Z0-9]*-[0-9]{2,4}\\b", lines)
+  positions <- c(headed, bold)
+  entries <- purrr::map_dfr(positions, function(position) {
+    if (position %in% headed) {
+      title <- sub("^#+ ", "", lines[[position]])
+    } else {
+      title <- sub("^\\*\\*", "", lines[[position]])
+      while (!grepl("\\*\\*", title) && position < length(lines)) {
+        position <- position + 1L
+        title <- paste(title, lines[[position]])
+      }
+      stopifnot(grepl("\\*\\*", title))
+      title <- sub("\\*\\*.*$", "", title)
+    }
     leading <- sub(":.*$| —.*$", "", title)
     ids <- stringr::str_extract_all(
       leading, "\\b[A-Z][A-Z0-9]*-[0-9]{2,4}\\b"
@@ -444,8 +458,8 @@ poll_issue_index <- function(register = read_poll_issues()) {
       )
     })
   })
-  stopifnot(!anyDuplicated(entries[c("issue_id", "poll_id")]))
-  entries
+  # Headed entries precede bold repetitions of the same issue.
+  dplyr::distinct(entries, issue_id, poll_id, .keep_all = TRUE)
 }
 
 poll_documentation <- function(poll, artifacts, references, facts,

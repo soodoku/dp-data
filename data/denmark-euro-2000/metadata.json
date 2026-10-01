@@ -887,6 +887,11 @@
         "issue_id": "DK-06",
         "title": "DK-06: Follow-up instrument, keys and participant identities verified",
         "evidence_path": "../../docs/poll-evidence.md#dk-06"
+      },
+      {
+        "issue_id": "DK-01",
+        "title": "DK-01 — the deposited battery includes baseline-only rows and omits one departure respondent.",
+        "evidence_path": "../../docs/poll-evidence.md#dk-01"
       }
     ],
     "reviewed_flags": [],

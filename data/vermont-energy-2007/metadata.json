@@ -459,6 +459,11 @@
         "issue_id": "VT-03",
         "title": "VT-03: The question catalog inherited incorrect choice labels (corrected)",
         "evidence_path": "../../docs/poll-evidence.md#vt-03"
+      },
+      {
+        "issue_id": "VT-02",
+        "title": "VT-02 — group roster gap.",
+        "evidence_path": "../../docs/poll-evidence.md#vt-02"
       }
     ],
     "reviewed_flags": [],

@@ -595,6 +595,31 @@
         "issue_id": "UKEU-07",
         "title": "UKEU-07: Whole unavailable departure questionnaires were scored as zero",
         "evidence_path": "../../docs/poll-evidence.md#ukeu-07"
+      },
+      {
+        "issue_id": "UKEU-01",
+        "title": "UKEU-01 — preserve sample and unknown-group distinctions.",
+        "evidence_path": "../../docs/poll-evidence.md#ukeu-01"
+      },
+      {
+        "issue_id": "UKEU-02",
+        "title": "UKEU-02 — baseline nonanswers compressed two attitude scales (approved and implemented).",
+        "evidence_path": "../../docs/poll-evidence.md#ukeu-02"
+      },
+      {
+        "issue_id": "UKEU-03",
+        "title": "UKEU-03 — exclude post-wave “can't choose” and restore the substantive scale.",
+        "evidence_path": "../../docs/poll-evidence.md#ukeu-03"
+      },
+      {
+        "issue_id": "UKEU-04",
+        "title": "UKEU-04 — treat inapplicable post EU-scope responses as missing.",
+        "evidence_path": "../../docs/poll-evidence.md#ukeu-04"
+      },
+      {
+        "issue_id": "UKEU-05",
+        "title": "UKEU-05 — preserve unknown minority status for “Other.”",
+        "evidence_path": "../../docs/poll-evidence.md#ukeu-05"
       }
     ],
     "reviewed_flags": [],

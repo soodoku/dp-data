@@ -686,6 +686,21 @@
         "issue_id": "CPL-12",
         "title": "CPL-12: Source nonanswers in the expanded questionnaire export",
         "evidence_path": "../../docs/poll-evidence.md#cpl-12"
+      },
+      {
+        "issue_id": "CPL-01",
+        "title": "CPL-01 — preserve missing-code provenance across file versions.",
+        "evidence_path": "../../docs/poll-evidence.md#cpl-01"
+      },
+      {
+        "issue_id": "CPL-02",
+        "title": "CPL-02 — historical IDs and staged normalization.",
+        "evidence_path": "../../docs/poll-evidence.md#cpl-02"
+      },
+      {
+        "issue_id": "CPL-03",
+        "title": "CPL-03 — removed competition item still enters extremity.",
+        "evidence_path": "../../docs/poll-evidence.md#cpl-03"
       }
     ],
     "reviewed_flags": [],

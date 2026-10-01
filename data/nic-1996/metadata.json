@@ -704,6 +704,21 @@
         "issue_id": "NIC-12",
         "title": "NIC-12: Unknown spending attitudes are missing, not neutral (approved)",
         "evidence_path": "../../docs/poll-evidence.md#nic-12"
+      },
+      {
+        "issue_id": "NIC-01",
+        "title": "NIC-01 — one source-scoped fallback ID and battery definition.",
+        "evidence_path": "../../docs/poll-evidence.md#nic-01"
+      },
+      {
+        "issue_id": "NIC-02",
+        "title": "NIC-02 — eleven-item historical battery reconstructed separately.",
+        "evidence_path": "../../docs/poll-evidence.md#nic-02"
+      },
+      {
+        "issue_id": "NIC-04",
+        "title": "NIC-04 — missing historical identity and reconstruction coverage.",
+        "evidence_path": "../../docs/poll-evidence.md#nic-04"
       }
     ],
     "reviewed_flags": [],
