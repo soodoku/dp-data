@@ -1,3 +1,22 @@
+australia_checklist_none_or_dk <- function(
+  survey, source_columns, source_rows = NULL
+) {
+  field <- match("dkchg1", tolower(names(survey)))
+  if (is.na(field)) stop("Missing source field: dkchg1")
+  flags <- as.numeric(survey[[field]])
+  stopifnot(all(is.na(flags) | flags %in% 1:2))
+  position <- seq_len(nrow(survey))
+  if (!is.null(source_rows)) {
+    stopifnot(!anyNA(survey$source_row), !anyDuplicated(survey$source_row))
+    position <- match(source_rows, survey$source_row)
+    stopifnot(!anyNA(position))
+  }
+  stopifnot(length(source_columns) == length(position))
+  grepl("^(flagchg|anthem|wdroyal|pargame)1$", source_columns,
+    ignore.case = TRUE
+  ) & flags[position] %in% 1
+}
+
 australia_form_evidence <- function(survey) {
   stopifnot(all(c("source_row", "caseid", "part", "partfull") %in%
                   names(survey)),

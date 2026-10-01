@@ -72,10 +72,13 @@ Denmark's `T2_` prefix identifies the departure file.
 The source has 4,659 records. Groups 1 through 24 identify 347 attendees;
 group 100 is not applicable. `caseid` is the respondent ID. The ten-item
 battery combines six factual items and four proposed-change questions.
-The wave-specific `dkchg` flag marks an unknown response across those four
-change questions. Raw answers remain available even when the flag overrides
-their correctness. Sixteen T2 code-99 responses are missing rather than
-incorrect; zero-filled scores are unchanged.
+The initial `dkchg1` flag identifies a combined “None / Don't know” checklist
+choice. Under the approved AUS-08 convention, its four item scores are zero
+in both batteries, with raw indicators and the distinct `none_or_dk` reason
+preserved. The exit `dkchg2` option “Nothing will change” is a substantive
+answer, scored against the unchanged NO, NO, YES, NO key. It is not missing or
+DK. Sixteen T2 code-99 responses remain missing in the ten-item battery.
+See [AUS-08](poll-evidence.md#aus-08) for the source evidence and score changes.
 
 ### BTP 2007
 

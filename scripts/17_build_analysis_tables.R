@@ -29,7 +29,7 @@ manifest <- purrr::imap(tables, function(data, table_name) {
     analysis_attitude_responses = "2",
     analysis_phase_scores = "2",
     analysis_source_attitude_responses = "2",
-    analysis_knowledge_flags = "1",
+    analysis_knowledge_flags = "2",
     "1"
   )
   write_typed_export(data, table_name, directory, schema_version = version)

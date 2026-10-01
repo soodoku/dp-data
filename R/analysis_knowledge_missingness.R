@@ -23,6 +23,7 @@ knowledge_flags <- function(items, participants, scores) {
       n_blank = sum(blank), n_system_blank = sum(system_blank),
       n_recorded_blank = sum(recorded_blank),
       n_dk = sum(response_reason %in% "dk"),
+      n_none_or_dk = sum(response_reason %in% "none_or_dk"),
       n_substantive = sum(response_reason %in% "answered"),
       n_refused = sum(response_reason %in% "refused"),
       n_unclassified_nonanswer = sum(

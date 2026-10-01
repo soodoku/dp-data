@@ -1,3 +1,5 @@
+source(project_path("R", "source_australia.R"))
+
 australia_source_codes <- function(survey, field, allowed) {
   position <- match(tolower(field), tolower(names(survey)))
   if (is.na(position)) stop("Missing source field: ", field)
@@ -20,7 +22,12 @@ australia_knowledge_items <- function(survey, wave) {
   symbolic <- purrr::imap(keys, function(correct, stem) {
     value <- australia_source_codes(survey, paste0(stem, wave), c(1:2, 96:100))
     if (wave == 1L) {
-      as.numeric(value == correct)
+      score <- as.numeric(value == correct)
+      none_or_dk <- australia_checklist_none_or_dk(
+        survey, rep(paste0(stem, wave), nrow(survey))
+      ) & value %in% 1:2
+      score[none_or_dk] <- 0
+      score
     } else {
       value[value %in% c(96:98, 100)] <- NA_real_
       as.numeric(value == correct)
@@ -76,7 +83,11 @@ australia_ranking <- function(survey, wave) {
   )
 }
 
-australia_original_attitudes <- function(survey) {
+australia_original_attitudes <- function(
+  survey, indices = c(
+    "autonomy", "workability", "democracy", "tradition", "politicization"
+  )
+) {
   read <- function(stem, reverse = FALSE) {
     value <- australia_source_codes(survey, paste0(stem, 1L), c(1:5, 94:103))
     value[value > 5 & !is.na(value)] <- NA_real_
@@ -92,13 +103,20 @@ australia_original_attitudes <- function(survey) {
   workability <- c("pmpower", "polstab", "confron", "stweak",
     "repexp", "constrd"
   )
-  tibble::tibble(
-    autonomy = average(c("moreind", "stanwor", "qbritin")),
-    workability = average(workability, workability),
-    democracy = average(c("moredem", "quedem"), "quedem"),
-    tradition = average(c("brither", "preserv")),
-    politicization = average(c("prespol", "ppchpre"), "prespol")
+  items <- list(
+    autonomy = c("moreind", "stanwor", "qbritin"),
+    workability = workability, democracy = c("moredem", "quedem"),
+    tradition = c("brither", "preserv"),
+    politicization = c("prespol", "ppchpre")
   )
+  reverse <- list(workability = workability, democracy = "quedem",
+    politicization = "prespol"
+  )
+  stopifnot(!anyDuplicated(indices), all(indices %in% names(items)))
+  purrr::imap(items[indices], function(stems, index) {
+    average(stems, reverse[[index]])
+  }) |>
+    tibble::as_tibble()
 }
 
 build_australia_individual <- function(
@@ -116,10 +134,10 @@ build_australia_individual <- function(
   education <- c(0, .33, .66, 1, 1)[read("edulev", c(1:5, 98))]
   income <- c(.16, .33, .5, .66, .83, 1)[read("income", c(1:6, 97, 98))]
   age <- dplyr::na_if(read("age", c(18:88, 98)), 98)
-  attitudes <- australia_original_attitudes(survey)
   extremity_indices <- c(
     "workability", "democracy", "tradition", "politicization"
   )
+  attitudes <- australia_original_attitudes(survey, extremity_indices)
   extremity <- rowMeans(
     abs(as.matrix(attitudes[extremity_indices]) - .5), na.rm = TRUE
   )

@@ -934,6 +934,11 @@
         "evidence_path": "../../docs/poll-evidence.md#aus-06"
       },
       {
+        "issue_id": "AUS-08",
+        "title": "AUS-08: Distinguish initial none/DK from substantive exit no-change answers",
+        "evidence_path": "../../docs/poll-evidence.md#aus-08"
+      },
+      {
         "issue_id": "AUS-01",
         "title": "AUS-01 — existing missingness divergence; score parity.",
         "evidence_path": "../../docs/poll-evidence.md#aus-01"

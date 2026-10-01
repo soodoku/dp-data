@@ -60,7 +60,13 @@ Knowledge uses its own convention, separate from attitude imputation.
 “cannot say,” and equivalent documented labels map to `dk`. The original code
 and `source_response_label` are retained. `response_reason` distinguishes a
 blank, refusal, inapplicable question, absent questionnaire, and unresolved
-source code. Those cases are not relabeled `dk`. The reviewed response-code
+source code. Observed blanks with zero credit receive the conventional DK-like
+category while their raw blank reason remains distinct. Australia's initial
+combined “None / Don't know” option likewise receives zero credit and the DK-like
+category, with `response_reason = none_or_dk`; it does not establish literal DK.
+The post-event option “Nothing will change” is substantive and is scored against
+the existing answer key. Refusals, unavailable forms and invalid codes are not
+relabeled DK. The reviewed response-code
 dictionary can supply a `response_reason` without a label when an observed code
 is demonstrably outside the offered options; this preserves the absence of an
 original source label rather than inventing one. Where a source preserves only
@@ -72,8 +78,10 @@ which already count those nonanswers as zero. No guessing adjustment is imposed
 in this data layer.
 
 For `guess::fit_item_lca()` or `guess::fit_person_lca()`, map `correct` to 1,
-`incorrect` to 0, and `dk` to the explicit `"dk"` category, and pass
-`na_as = "missing"`. The package otherwise interprets `NA` as DK by default.
+`incorrect` to 0, and literal DK (`response_reason == "dk"`) to `"dk"`, and pass
+`na_as = "missing"`. Using the broader DK-like category for observed blanks or
+combined none/DK choices requires an explicit additional assumption; those
+responses cannot establish literal DK. The package otherwise interprets `NA` as DK by default.
 The binary correctness column cannot recover which zeros were explicit DK;
 use the trichotomy and retain the reason for excluded responses. Guessing
 adjustment and its assumptions remain downstream analysis choices.
@@ -553,6 +561,9 @@ An unavailable form has a null zero flag. Whole-battery blankness is established
 only when all item evidence is present; score-only sources retain an unresolved
 raw-response pattern. The `n_dk` count uses source-recorded DK reasons, so blanks
 classified as conventionally DK-like do not masquerade as explicit DK codes.
+The separate `n_none_or_dk` count identifies Australia's initial combined
+none/DK checklist choice. Its substantive exit “Nothing will change” option
+counts as an answered item, with correctness determined by the answer key.
 The original response reasons and raw values remain available for guessing
 adjustment and missingness analysis.
 

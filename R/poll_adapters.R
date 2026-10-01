@@ -137,28 +137,18 @@ apply_knowledge_overrides <- function(responses, poll_id, survey) {
   if (poll_id != "australia-republic-1999") {
     return(responses)
   }
-  flags <- survey |>
-    dplyr::select("source_row", "dkchg1", "dkchg2") |>
-    dplyr::mutate(dplyr::across(c("dkchg1", "dkchg2"), as.numeric)) |>
-    tidyr::pivot_longer(-"source_row", names_to = "flag", values_to = "dk") |>
-    dplyr::mutate(wave = as.integer(sub("dkchg", "", .data$flag))) |>
-    dplyr::select("source_row", "wave", "flag", "dk")
+  responses$none_or_dk <- australia_checklist_none_or_dk(
+    survey, responses$source_column, responses$source_row
+  ) & responses$raw_value %in% 1:2
   responses |>
-    dplyr::left_join(
-      flags, by = c("source_row", "wave"), relationship = "many-to-one"
-    ) |>
     dplyr::mutate(
-      override = grepl(
-        "^(flagchg|anthem|wdroyal|pargame)", .data$source_column
-      ) &
-        !is.na(.data$dk) & .data$dk == 1,
-      correct = dplyr::if_else(.data$override, NA_integer_, .data$correct),
+      correct = dplyr::if_else(.data$none_or_dk, 0L, .data$correct),
       response_status = dplyr::if_else(
-        .data$override, "non_substantive", .data$response_status
+        .data$none_or_dk, "non_substantive", .data$response_status
       ),
       missing_code = dplyr::if_else(
-        .data$override, paste0(.data$flag, "=1"), .data$missing_code
+        .data$none_or_dk, "dkchg1=1", .data$missing_code
       )
     ) |>
-    dplyr::select(-c("flag", "dk", "override"))
+    dplyr::select(-"none_or_dk")
 }

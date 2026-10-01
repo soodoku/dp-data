@@ -85,7 +85,7 @@ test_that("the index covers every primary issue and all analytical polls", {
     leading, "\\b[A-Z][A-Z0-9]*-[0-9]{2,4}\\b"
   )))
   expect_setequal(unique(index$issue_id), expected)
-  expect_equal(length(unique(index$issue_id)), 243L)
+  expect_equal(length(unique(index$issue_id)), 244L)
   expect_setequal(index$issue_id[index$poll_id %in% "uk-monarchy-1996"],
     sprintf("UKM-%02d", 1:8)
   )

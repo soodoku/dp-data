@@ -89,7 +89,7 @@ a common degree interpretation on different source qualifications.
 | Poll / issue | Current decision |
 | --- | --- |
 | UK–EU UKEU-02 | Approved and implemented: substantive five-point baseline scales, missing nonanswers and six rebuilt respondent/group fields. The retained review script and approved-value tables quantify the changes. |
-| Australia AUS-02 | Approved and implemented: match the peer denominator and `numitems` to the twelve items actually scored: 346 peer measures and logs change; individual knowledge scores do not. The separate routing ambiguity remains unresolved. |
+| Australia AUS-02 | Approved and implemented: match the peer denominator and `numitems` to the twelve items actually scored: 346 peer measures and logs change; individual knowledge scores do not in that count-only correction. AUS-08 resolves the subsequent shared checklist-scoring decision. |
 | NIC NIC-05 / shared peer opportunity | User clarified that the construct is opportunity to learn from peers: zero when the focal person knows all items or peers know none of the missed items. Implemented centrally across polls: 107 formerly missing ceiling measures become zero, NIC's existing zero remains zero, and absent interviews remain missing. |
 | Tanzania TZ-03/04 | Approved and implemented: treat the −99 component as missing, rebuild the existing baseline-control standardization, and require both scores for the panel flag. All observed scores remain available; one panel flag changes. |
 | SWEPCO SWE-05 / WTU WTU-06 | Approved and implemented upstream: 2,246 absent post scores and 11,230 post item-correctness cells per corresponding table become missing; six dependent respondent measures per person are missing. Baseline and attendee scores are unchanged. |
@@ -2525,7 +2525,7 @@ the combined build.
 
 <a id="aus-01"></a>
 
-**AUS-01 — existing missingness divergence; score parity.** There are 347 attendees
+**AUS-01 — existing missingness divergence; score parity.** The scoring decision below was superseded by the approved AUS-08 correction on October 1, 2026; the earlier evidence is retained. There are 347 attendees
 with exit questionnaires in groups 1–24 out of 4,659 source rows; nine further
 attendees did not return an exit questionnaire. Group 100 is inapplicable. The ten-item
 battery combines six factual items and four proposed-change questions. The
@@ -2598,7 +2598,7 @@ score zero while absent or unavailable questionnaires have missing scores.
 
 ### AUS-02: Aggregate knowledge uses a different battery and flag rule
 
-**Preserve / review.** The 347-person aggregate reconstruction uses 12 items,
+**Preserve / review (earlier assessment).** AUS-08 resolves the checklist-scoring decision on October 1, 2026; the separate count correction below remains in effect. The 347-person aggregate reconstruction uses 12 items,
 whereas AUS-01 concerns the separate ten-item deposited battery. The active
 preserved `aus_republic.R` applies `DKCHG1` to four symbolic-change items; its
 commented alternative omits the gate and exactly reproduces the aggregate.
@@ -11001,3 +11001,69 @@ post-event records and discussion-group assignments have not been recovered
 from those inspected materials. No numerical reconstruction is claimed for
 this poll. The user stopped further respondent-data searches; preserve the
 reports and this explicit source limitation without reopening that search.
+
+<a id="aus-08"></a>
+
+### AUS-08: Distinguish initial none/DK from substantive exit no-change answers
+
+**Approved and implemented October 1, 2026.** The user approved
+consistent treatment of the initial combined option and clarified that
+“nothing will change is not same as NA.” These are different source options,
+not interchangeable missing-value codes.
+
+The retained [initial telephone questionnaire](../data/australia-republic-1999/questionnaires/t1-questionnaire.pdf)
+asks C4 as a multiple-response checklist: if Australia becomes a republic,
+which features would definitely change? Its four substantive options are the
+Australian flag, national anthem, the word “Royal” in the names of the Royal
+Australian Navy and Royal Australian Air Force, and participation in the
+Commonwealth Games. The fifth option is “NONE / DON'T KNOW.” The combined
+[DP codebook](../data/australia-republic-1999/codebooks/deliberative-poll-codebook.pdf),
+pages 51–55, supplies the same checklist and the existing NO, NO, YES, NO key.
+The numerical indicators are 1 = unselected/NO and 2 = selected/YES.
+
+All 168 source people with initial `DKCHG1 = 1` have the four substantive
+options unselected. They include 52 of the 347 complete historical
+participants, two additional attendees without an exit form, and 114
+nonattendees. The combined initial category cannot be split into actual
+“none” and actual “don't know” answers. The approved convention gives all four
+items zero credit in both battery versions, while preserving the raw values
+and the distinct `none_or_dk` reason. This convention does not establish
+literal DK for guessing adjustment. Previously the ten-item battery applied
+the gate, whereas the twelve-item historical battery awarded three correct
+answers for the same four source indicators.
+
+At exit, `DKCHG2 = 1` is labeled “NOTHING WILL CHANGE.” All 37 affected
+participants also have the four options unselected. This is a substantive
+answer, scored against the unchanged key as correct, correct, incorrect,
+correct in both batteries. The ten-item gate previously discarded those
+three correct answers; the historical twelve-item version already scored
+them. The literal fielded exit form remains unavailable, so this distinction
+rests on the retained DP codebook and original source labels.
+
+The ten- and twelve-item denominators remain distinct because their factual
+batteries differ by two questions. Attendance, participants, groups, attitudes,
+demographics, raw answers and all other question keys remain unchanged. Absent
+forms remain missing; this correction concerns observed checklist answers.
+Rebuilds must verify the same four item results across both versions and
+recalculate dependent individual, group and poll measures centrally. Among
+the 347 participants, the expected twelve-item baseline mean decreases by
+3.746398 percentage points; the ten-item exit mean increases by 3.198847
+points. These are source-scoring comparisons, not a prediction of downstream
+model estimates.
+
+The rebuilt exports confirm those changes. All 6,940 shared participant-item
+rows agree across the two batteries. Comparing all 42 Parquet output tables
+with the preceding release confirms that raw answers, form presence, attendance,
+participant eligibility, groups, attitudes, demographics and all other polls
+are unchanged. All existing raw-response rows are identical; the source table
+also preserves 4,659 original `dkchg1` flag records that were not previously
+included in that handoff. Six affected individual definitions are versioned
+`aus-08-v2` and declare this flag as an input. Rebuilding from the declared
+inputs reproduces every individual measure. The individual builder reads only
+the four attitude indices needed for extremity, leaving the group builder's
+five-index definition intact. The knowledge-flags table adds a nullable integer
+`n_none_or_dk` count, distinct from literal `n_dk`. The approved-cell guard adds
+2,259 dependent Australia cells across 13 fields; every preceding guard row is
+preserved. Both respondent and aggregate comparisons have zero unexplained
+Australia differences. Focused scoring, dependency, metadata and respondent
+checks pass 1,614 assertions, without failures or skips.
