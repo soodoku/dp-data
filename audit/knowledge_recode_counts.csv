@@ -2,8 +2,7 @@ poll_id,source_column,raw_value,raw_text,correct,response_status,missing_code,re
 australia-republic-1999,anthem1,1,NA,0,non_substantive,dkchg1=1,52
 australia-republic-1999,anthem1,1,NA,1,answered,NA,212
 australia-republic-1999,anthem1,2,NA,0,answered,NA,83
-australia-republic-1999,anthem2,1,NA,0,non_substantive,dkchg2=1,37
-australia-republic-1999,anthem2,1,NA,1,answered,NA,299
+australia-republic-1999,anthem2,1,NA,1,answered,NA,336
 australia-republic-1999,anthem2,2,NA,0,answered,NA,7
 australia-republic-1999,anthem2,99,NA,0,non_substantive,99,4
 australia-republic-1999,busines1,1,NA,1,answered,NA,204
@@ -19,8 +18,7 @@ australia-republic-1999,busines2,99,NA,0,non_substantive,99,2
 australia-republic-1999,flagchg1,1,NA,0,non_substantive,dkchg1=1,52
 australia-republic-1999,flagchg1,1,NA,1,answered,NA,92
 australia-republic-1999,flagchg1,2,NA,0,answered,NA,203
-australia-republic-1999,flagchg2,1,NA,0,non_substantive,dkchg2=1,37
-australia-republic-1999,flagchg2,1,NA,1,answered,NA,278
+australia-republic-1999,flagchg2,1,NA,1,answered,NA,315
 australia-republic-1999,flagchg2,2,NA,0,answered,NA,28
 australia-republic-1999,flagchg2,99,NA,0,non_substantive,99,4
 australia-republic-1999,ggrole1,1,NA,0,answered,NA,9
@@ -38,8 +36,7 @@ australia-republic-1999,ggrole2,99,NA,0,non_substantive,99,2
 australia-republic-1999,pargame1,1,NA,0,non_substantive,dkchg1=1,52
 australia-republic-1999,pargame1,1,NA,1,answered,NA,214
 australia-republic-1999,pargame1,2,NA,0,answered,NA,81
-australia-republic-1999,pargame2,1,NA,0,non_substantive,dkchg2=1,37
-australia-republic-1999,pargame2,1,NA,1,answered,NA,284
+australia-republic-1999,pargame2,1,NA,1,answered,NA,321
 australia-republic-1999,pargame2,2,NA,0,answered,NA,22
 australia-republic-1999,pargame2,99,NA,0,non_substantive,99,4
 australia-republic-1999,presrol1,1,NA,0,answered,NA,5
@@ -79,8 +76,7 @@ australia-republic-1999,rempres2,99,NA,0,non_substantive,99,1
 australia-republic-1999,wdroyal1,1,NA,0,answered,NA,55
 australia-republic-1999,wdroyal1,1,NA,0,non_substantive,dkchg1=1,52
 australia-republic-1999,wdroyal1,2,NA,1,answered,NA,240
-australia-republic-1999,wdroyal2,1,NA,0,answered,NA,10
-australia-republic-1999,wdroyal2,1,NA,0,non_substantive,dkchg2=1,37
+australia-republic-1999,wdroyal2,1,NA,0,answered,NA,47
 australia-republic-1999,wdroyal2,2,NA,1,answered,NA,296
 australia-republic-1999,wdroyal2,99,NA,0,non_substantive,99,4
 australia-republic-1999,welfare1,1,NA,0,answered,NA,16

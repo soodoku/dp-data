@@ -154,9 +154,9 @@ uk-general-election-1997,ukbge.t2wage,minimum_wage_t2@historical-v1,275,259,0,0,
 uk-general-election-1997,ukbge.t2eu,european_union_t2@historical-v1,275,244,0,0,4.440892098500626e-16,0,1e-10
 uk-general-election-1997,bettered,higher_education@poll-median-v1,275,274,0,0,0,0,1e-10
 australia-republic-1999,readbrief,read_briefing@historical-v1,347,0,0,0,0,0,1e-10
-australia-republic-1999,t1know,knowledge_t1@historical-v1,347,347,0,0,3.3306690738754696e-16,0,1e-10
+australia-republic-1999,t1know,knowledge_t1@aus-08-v2,347,347,0,52,0.25000000000000033,0,1e-10
 australia-republic-1999,t1knowr,issue_knowledge@historical-v1,347,0,0,0,0,0,1e-10
-australia-republic-1999,t1knowcor,knowledge_joint@historical-v1,347,347,0,0,3.3306690738754696e-16,0,1e-10
+australia-republic-1999,t1knowcor,knowledge_joint@aus-08-v2,347,347,0,52,0.25000000000000033,0,1e-10
 australia-republic-1999,t2know,knowledge_t2@historical-v1,347,347,0,0,3.3306690738754696e-16,0,1e-10
 australia-republic-1999,ppage,age@aus05-v2,347,344,3,0,0,0,1e-10
 australia-republic-1999,educ4,education_four@historical-v1,347,347,0,0,0,0,1e-10
@@ -172,10 +172,10 @@ australia-republic-1999,t12knowcor,knowledge_midterm_joint@historical-v1,347,0,0
 australia-republic-1999,attextreme2,attitude_extremity_midterm@historical-v1,347,0,0,0,0,0,1e-10
 australia-republic-1999,t1knowrcor,issue_knowledge@historical-v1,347,0,0,0,0,0,1e-10
 australia-republic-1999,t2knowr,issue_knowledge@historical-v1,347,0,0,0,0,0,1e-10
-australia-republic-1999,knowgain,knowledge_gain@historical-v1,347,347,0,0,3.885780586188048e-16,0,1e-10
-australia-republic-1999,knowgain2,knowledge_gain_joint@historical-v1,347,347,0,0,3.885780586188048e-16,0,1e-10
-australia-republic-1999,logpk,log_knowledge_joint@historical-v1,347,347,0,0,4.884981308350689e-15,0,1e-10
-australia-republic-1999,tobitpk,high_knowledge_joint@historical-v1,347,347,0,0,0,0,1e-10
+australia-republic-1999,knowgain,knowledge_gain@aus-08-v2,347,347,0,52,0.2500000000000004,0,1e-10
+australia-republic-1999,knowgain2,knowledge_gain_joint@aus-08-v2,347,347,0,52,0.2500000000000004,0,1e-10
+australia-republic-1999,logpk,log_knowledge_joint@aus-08-v2,347,347,0,52,7.824046010856292,0,1e-10
+australia-republic-1999,tobitpk,high_knowledge_joint@aus-08-v2,347,347,0,18,1,0,1e-10
 australia-republic-1999,knowgainr,issue_knowledge@historical-v1,347,0,0,0,0,0,1e-10
 australia-republic-1999,knowgainr2,issue_knowledge@historical-v1,347,0,0,0,0,0,1e-10
 australia-republic-1999,educ3,education_three@historical-v1,347,347,0,0,0,0,1e-10

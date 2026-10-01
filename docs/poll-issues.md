@@ -35,7 +35,6 @@ completed respondent-level audits.
 
 | Topic | Current treatment | What would change it |
 |---|---|---|
-| Australia initial none/DK checklist | Preserve the authored symbolic-item scoring; the combined response cannot be separated retrospectively. | Decide how the combined option should enter the construct using the retained fielded checklist and combined DP codebook. See AUS-01 in the evidence. |
 | Utility empirical scales | Preserve historical wave calibrations; plain and imputed variants are separately named. Some source-only baseline values fall below zero. | Approve a common-endpoint definition and compare both waves and all dependent summaries; do not clamp values. See CPL-02/06 and WTU/SWEPCO evidence. |
 | Northern Ireland argument scoring | Preserve the authored treatment of opposite-side `c` codes and vague code 94. Literal transport is repaired. | Decide the directional/valid-argument definition using the coding guide and paper before changing downstream scoring ([NI-06](#ni-06)). |
 | Survey weights | Preserve supplied weights and their population/wave context. No universal weight is selected. | Specify the population and estimand for each weighted analysis. |
@@ -169,13 +168,14 @@ The detailed entry specifies which fields and versions each status covers.
 
 ### Australia republic 1999 — australia-republic-1999
 
-- <a id="aus-01"></a> **AUS-01 — Consultation.** The initial checklist combines none and DK. Preserve authored symbolic scoring; the retained DP instrument cannot separate those answers. [Evidence](poll-evidence.md#aus-01).
+- <a id="aus-01"></a> **AUS-01 — Superseded.** The initial checklist combines none and DK. The approved shared treatment is zero credit, preserving the combined source meaning rather than claiming explicit DK; AUS-08 records the decision. [Evidence](poll-evidence.md#aus-01).
 - <a id="aus-07"></a> **AUS-07 — Implemented.** [Absent and unavailable questionnaires were scored as zero](poll-evidence.md#aus-07).
 - <a id="aus-02"></a> **AUS-02 — Implemented.** [Aggregate knowledge uses a different battery and flag rule](poll-evidence.md#aus-02).
 - <a id="aus-03"></a> **AUS-03 — Implemented.** [Extremity omissions and a cross-wave ranking typo](poll-evidence.md#aus-03).
 - <a id="aus-04"></a> **AUS-04 — Implemented.** [Participant gains now join by source row](poll-evidence.md#aus-04).
 - <a id="aus-05"></a> **AUS-05 — Implemented.** [Age refusal no longer counts as age 98 (approved correction)](poll-evidence.md#aus-05).
 - <a id="aus-06"></a> **AUS-06 — Implemented.** [A first preference for the Queen survives an unanswered second choice](poll-evidence.md#aus-06).
+- <a id="aus-08"></a> **AUS-08 — Implemented.** Give the initial combined none/DK option zero credit in both batteries. Score the substantive post option “Nothing will change” against the existing key; it is not missing or DK. Preserve raw answers and the distinct ten- and twelve-item batteries. [Evidence](poll-evidence.md#aus-08).
 
 ### BTP 2007 — btp-2007
 

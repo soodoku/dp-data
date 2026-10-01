@@ -12,7 +12,13 @@ pilot_tables <- function() {
 test_that("survey comparisons report differences without imposing parity", {
   tables <- pilot_tables()
   audit <- compare_knowledge_batteries(tables)$summary
-  expect_equal(sum(audit$item_differences, na.rm = TRUE), 1212)
+  expect_equal(sum(audit$item_differences, na.rm = TRUE), 1568)
+  expect_equal(audit$item_differences[
+    audit$poll_id == "australia-republic-1999"
+  ], 372)
+  expect_equal(sum(audit$item_differences[
+    audit$poll_id != "australia-republic-1999"
+  ], na.rm = TRUE), 1196)
   expect_equal(sum(audit$female_differences, na.rm = TRUE), 2)
   expect_equal(nrow(tables$respondents), 6669L)
   expect_equal(nrow(tables$knowledge_responses), 103116L)
@@ -94,9 +100,14 @@ test_that("responses preserve missing codes and scores declare filling", {
   tables <- pilot_tables()
   responses <- tables$knowledge_responses
   missing <- responses$response_status != "answered"
+  combined <- responses$response_reason == "none_or_dk"
   expect_true(any(responses$response_status == "source_missing"))
   expect_true(any(responses$response_status == "non_substantive"))
-  expect_true(all(is.na(responses$correct_before_standardization[missing])))
+  expect_equal(sum(combined), 208L)
+  expect_true(all(responses$correct_before_standardization[combined] == 0L))
+  expect_true(all(is.na(
+    responses$correct_before_standardization[missing & !combined]
+  )))
   expect_true(all(!is.na(responses$missing_code[missing])))
   expect_true(all(is.na(responses$missing_code[!missing])))
   expect_true(all(responses$correct_before_standardization[!missing] %in% 0:1))

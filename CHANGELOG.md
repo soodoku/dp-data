@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.4.6
+
+- Align Australia's four shared checklist items across its ten- and twelve-item
+  knowledge batteries. Give the initial combined none/DK choice zero credit,
+  preserving its ambiguous source meaning. Treat the post option “Nothing will
+  change” as substantive and score it against the unchanged answer key.
+- Preserve literal DK separately from combined none/DK choices, including a
+  typed `n_none_or_dk` count in knowledge flags. Recompute dependent knowledge,
+  peer and poll measures centrally without changing questionnaire answers,
+  attendance, groups, attitudes or demographics.
+- Restore 52 previously omitted issue links in the poll metadata and concise
+  register, distinguishing respondent-backed polls from unavailable sources.
+
 ## 0.4.5
 
 - Carry reviewed respondent demographics and briefing measures into canonical

@@ -316,16 +316,23 @@ enrich_knowledge_responses <- function(
     reason[is.na(reason) & !raw_missing & reviewed_answer] <- "answered"
     reason[is.na(reason) & !raw_missing] <- "unreviewed_code"
     reason[is.na(reason) & raw_missing] <- "source_missing"
+    if (poll == "australia-republic-1999") {
+      survey <- read_poll_survey(poll)
+      none_or_dk <- australia_checklist_none_or_dk(
+        survey, items$source_column[rows], items$source_row[rows]
+      ) & classified %in% 1:2
+      reason[none_or_dk] <- "none_or_dk"
+    }
     reason[scored_only & !reason %in% c(
       "dk", "refused", "blank",
       "not_asked"
     )] <- "scored_only"
     reason[absent] <- "wave_absent"
     response <- rep(NA_character_, length(rows))
-    response[reason == "dk"] <- "dk"
+    response[reason %in% c("dk", "none_or_dk")] <- "dk"
     response[reason == "answered" & items$correct[rows] %in% 0L] <- "incorrect"
     response[!reason %in% c(
-      "dk", "refused", "blank", "not_asked",
+      "dk", "none_or_dk", "refused", "blank", "not_asked",
       "wave_absent", "invalid_response"
     ) &
       items$correct[rows] %in% 1L] <- "correct"
@@ -355,7 +362,7 @@ standardize_knowledge_scores <- function(
   )
   change <- is.na(items$correct) & wave_observed %in% TRUE &
     items$response_reason %in% c(
-      "dk", "refused", "blank", "source_missing",
+      "dk", "none_or_dk", "refused", "blank", "source_missing",
       "unclassified_nonanswer"
     )
   invalid <- items$response_reason %in% "invalid_response" &

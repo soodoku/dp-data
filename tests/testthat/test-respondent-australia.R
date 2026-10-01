@@ -7,6 +7,7 @@ test_that("australia uses raw questions independently of row order", {
     "moreind1", "stanwor1", "qbritin1", "moredem1", "quedem1",
     "brither1", "preserv1", "prespol1", "ppchpre1",
     "age",
+    "dkchg1",
     "anthem1",
     "anthem2",
     "busines1",
@@ -118,6 +119,16 @@ test_that("australia matches every historical respondent target", {
   approved <- readr::read_csv(project_path(
     "audit", "corrections", "australia-republic-1999", "approved_values.csv"
   ), show_col_types = FALSE)
+  initial_none_or_dk <- as.numeric(survey$dkchg1[
+    match(as.character(benchmark$caseid), ids)
+  ]) %in% 1
+  symbolic_post <- vapply(c("flagchg", "anthem", "pargame"), function(stem) {
+    as.numeric(survey[[paste0(stem, "2")]][
+      match(as.character(benchmark$caseid), ids)
+    ]) == 1
+  }, logical(nrow(benchmark)))
+  corrected_joint <- benchmark$t1knowcor -
+    initial_none_or_dk * rowSums(symbolic_post) / 12
   for (field in names(mapping)) {
     expected <- as.numeric(benchmark[[field]])
     if (field %in% c("attextreme", "aus.popparl2", "ppage",
@@ -127,6 +138,14 @@ test_that("australia matches every historical respondent target", {
         benchmark$caseid, correction$caseid
       )]
     }
+    if (field == "t1know") expected <- expected - initial_none_or_dk / 4
+    if (field == "t1knowcor") expected <- corrected_joint
+    if (field == "knowgain") expected <- expected + initial_none_or_dk / 4
+    if (field == "knowgain2") {
+      expected <- benchmark$t2know - corrected_joint
+    }
+    if (field == "logpk") expected <- historical_log_score(corrected_joint)
+    if (field == "tobitpk") expected <- as.numeric(corrected_joint > .6)
     expect_equal(built[[mapping[[field]]]], expected, tolerance = 1e-10,
                  info = field)
   }

@@ -525,7 +525,8 @@ analysis_knowledge_flags,n_item_rows,int32,TRUE,FALSE,Available canonical item r
 analysis_knowledge_flags,n_blank,int32,TRUE,FALSE,Raw system blanks or explicitly recorded skips; excludes DK and refusal; null without item evidence
 analysis_knowledge_flags,n_system_blank,int32,TRUE,FALSE,Empty raw values classified source_missing or blank; null without item evidence
 analysis_knowledge_flags,n_recorded_blank,int32,TRUE,FALSE,Explicit source skip or blank code with nonempty raw response; null without item evidence
-analysis_knowledge_flags,n_dk,int32,TRUE,FALSE,Explicit source DK responses; not inferred from blankness; null without item evidence
+analysis_knowledge_flags,n_dk,int32,TRUE,FALSE,Explicit source DK responses; excludes blanks and combined none/DK choices; null without item evidence
+analysis_knowledge_flags,n_none_or_dk,int32,TRUE,FALSE,Items routed from a combined none/DK source option; not explicit DK; null without item evidence
 analysis_knowledge_flags,n_substantive,int32,TRUE,FALSE,Source responses classified answered; null without item evidence
 analysis_knowledge_flags,n_refused,int32,TRUE,FALSE,Explicit source refusals; null without item evidence
 analysis_knowledge_flags,n_unclassified_nonanswer,int32,TRUE,FALSE,Nonanswers whose subtype is not established; null without item evidence

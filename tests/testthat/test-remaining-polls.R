@@ -338,7 +338,7 @@ test_that("BTP 2007 agrees with independently supplied correctness fields", {
   })
 })
 
-test_that("Australia preserves unknown flags and original missing codes", {
+test_that("Australia distinguishes initial none/DK from exit no change", {
   survey <- read_poll_survey("australia-republic-1999")
   r <- build_poll_knowledge("australia-republic-1999")$knowledge_responses
   changes <- r |>
@@ -346,9 +346,21 @@ test_that("Australia preserves unknown flags and original missing codes", {
   purrr::walk(1:2, function(wave) {
     items <- changes |> dplyr::filter(.data$wave == .env$wave)
     flagged <- as.numeric(survey[[paste0("dkchg", wave)]][items$source_row])
-    expect_true(all(is.na(
-      items$correct_before_standardization[which(flagged == 1)]
-    )))
+    selected <- items[which(flagged == 1), ]
+    expect_true(all(selected$raw_value == 1))
+    if (wave == 1L) {
+      expect_true(all(selected$correct_before_standardization == 0L))
+      expect_true(all(selected$response_reason == "none_or_dk"))
+      expect_true(all(selected$knowledge_response == "dk"))
+      expect_true(all(selected$missing_code == "dkchg1=1"))
+    } else {
+      expect_equal(selected$correct_before_standardization,
+        as.integer(selected$source_column != "wdroyal2")
+      )
+      expect_true(all(selected$response_reason == "answered"))
+      expect_true(all(selected$response_status == "answered"))
+      expect_true(all(is.na(selected$missing_code)))
+    }
   })
   unknown <- r |> dplyr::filter(.data$raw_value == 99)
   expect_true(all(is.na(unknown$correct_before_standardization)))
